@@ -606,12 +606,14 @@ select:focus,
 }
 
 .map-node.group {
+  z-index: 6;
   width: 126px;
   border-color: rgba(230, 196, 106, 0.36);
   cursor: pointer;
 }
 
 .map-node.taxon {
+  z-index: 1;
   width: 132px;
   border-color: var(--taxon-border, rgba(52, 69, 89, 0.95));
   background:
