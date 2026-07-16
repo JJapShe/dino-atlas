@@ -1,0 +1,166 @@
+{
+  "datasetId": "early_saurischian_herrerasaurus_v1",
+  "trigger": "early_saurischian_herrerasaurus",
+  "taxa": [
+    "Herrerasaurus ischigualastensis",
+    "early saurischian predator"
+  ],
+  "licensePolicy": "Only project-internal AI-generated images and hand-authored guides are allowed as sources. External museum/science material is reference-only, not training data.",
+  "items": [
+    {
+      "id": "herrerasaurus_compacthands_v2",
+      "role": "train_seed",
+      "source": "assets/dinosaurs/herrerasaurus-ischigualastensis-compacthands-imagegen-v2.png",
+      "caption": "early_saurischian_herrerasaurus, Herrerasaurus ischigualastensis, full body side profile, lightly built early saurischian predator, closed narrow carnivorous head, slim horizontal torso, full single tail, exactly two hind legs, dry three-toed feet, compact folded forelimbs longer than Tyrannosaurus arms, three main clawed hand digits with any outer digits tiny and vestigial, dry Late Triassic floodplain, no text, no watermark",
+      "strengths": [
+        "current app first candidate for the compact-hand Herrerasaurus gate",
+        "preserves closed head, dry side profile, full tail, two visible hind legs, and compact non-weight-bearing hands",
+        "reduces long dangling hook-hand risk from earlier candidates"
+      ],
+      "risks": [
+        "exact hand anatomy still needs close review against the three-main-digit plus tiny vestigial outer-digit target",
+        "toe anatomy is count-level rather than final"
+      ]
+    },
+    {
+      "id": "herrerasaurus_strict_compact_v1",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/herrerasaurus-ischigualastensis-strict-imagegen-alt-v1.png",
+      "caption": "review hold only, earlier Herrerasaurus compact-hand comparison with smaller scene scale and weaker dangling hand claws than v2, not a positive LoRA seed",
+      "strengths": [
+        "useful earlier compact-hand comparison source",
+        "keeps a closed head, full tail, and non-weight-bearing forelimb read"
+      ],
+      "risks": [
+        "smaller scene scale and dangling hand claws are weaker than the v2 first candidate",
+        "not final approval quality",
+        "unsafe as train_seed while v2 has the stronger compact-hand gate"
+      ]
+    },
+    {
+      "id": "herrerasaurus_bodylock_guide_v1",
+      "role": "control_reference",
+      "source": "assets/dinosaurs/herrerasaurus-ischigualastensis-bodylock-guide-v1.png",
+      "caption": "control reference only, Herrerasaurus body-lock guide, closed narrow head, compact folded forelimbs, three main clawed hand digits with tiny vestigial outer digits, exactly two hind legs, dry feet, full tail, no T. rex arm shrinkage, no long dangling hook hands",
+      "strengths": [
+        "locks the compact folded hand and early-saurischian body target before texture generation",
+        "useful as ControlNet, depth, line, or i2i guidance"
+      ],
+      "risks": [
+        "schematic guide, not suitable for direct LoRA training",
+        "visible guide markings are for QA and generation planning only"
+      ]
+    },
+    {
+      "id": "herrerasaurus_balancedhands_v2",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/herrerasaurus-ischigualastensis-balancedhands-imagegen-v2.png",
+      "caption": "review hold only, Herrerasaurus v2 comparison with good body and forelimb length but hand-count risk",
+      "strengths": [
+        "polished body and useful forelimb length comparison",
+        "keeps full tail and dry side-profile read"
+      ],
+      "risks": [
+        "close hand crop can read as too many long fingers",
+        "should not be treated as a positive seed unless the hand gate is re-reviewed"
+      ]
+    },
+    {
+      "id": "herrerasaurus_imagegen_v4_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/herrerasaurus-ischigualastensis-imagegen-v4-source-candidate.png",
+      "caption": "review hold only, project-owned Herrerasaurus ischigualastensis source candidate with Triassic red floodplain setting, narrow closed head, full side-profile body, two hind legs, and long tail; visible hand can read as too many equal long fingers",
+      "strengths": [
+        "project-owned source with a stronger Late Triassic floodplain scene",
+        "keeps narrow closed head, full side-profile body, long tail, and two hind legs",
+        "useful comparison for Herrerasaurus hand-count and forelimb-length review"
+      ],
+      "risks": [
+        "visible hand can read as four or more equal long fingers",
+        "not suitable as a train_seed until the three-main-digit plus tiny-outer-digit gate is manually approved",
+        "body remains close to generic early theropod and needs species-level review"
+      ]
+    },
+    {
+      "id": "herrerasaurus_imagegen_v5_long_hook_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/herrerasaurus-ischigualastensis-imagegen-v5-source-candidate.png",
+      "caption": "reject reference only, Herrerasaurus P2 candidate with good light early-saurischian body silhouette but long dangling hook hands",
+      "strengths": [
+        "keeps a useful slim body, narrow head, long tail, and two grounded hind legs",
+        "records a clear failure mode for overly visible hand prompts"
+      ],
+      "risks": [
+        "visible hands become long dangling hook claws",
+        "unsafe as a positive seed for compact folded forelimbs",
+        "must stay below the current v2 primary and the v6 review hold"
+      ]
+    },
+    {
+      "id": "herrerasaurus_imagegen_v6_compact_hand_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/herrerasaurus-ischigualastensis-imagegen-v6-source-candidate.png",
+      "caption": "review hold only, Herrerasaurus P2 candidate with closed narrow head, lightly built body, full tail, two grounded hind legs, and compact folded forelimbs",
+      "strengths": [
+        "best P2 candidate for compact folded forelimbs",
+        "preserves a narrow closed head, full single tail, and two-hind-leg stance",
+        "avoids the long dangling hook-hand drift seen in v5 and v7"
+      ],
+      "risks": [
+        "exact three-main-digit hand topology is still soft",
+        "do not promote or train from it until close hand crop review proves the digit target",
+        "v2 remains safer as the current train_seed"
+      ]
+    },
+    {
+      "id": "herrerasaurus_imagegen_v7_visible_hand_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/herrerasaurus-ischigualastensis-imagegen-v7-source-candidate.png",
+      "caption": "reject reference only, Herrerasaurus P2 candidate with visible hands that become too long, numerous, and equal-fingered",
+      "strengths": [
+        "useful hand-visibility failure comparison",
+        "keeps full body, long tail, and two grounded hind legs"
+      ],
+      "risks": [
+        "fingers become too long and too numerous/equal",
+        "hands are too large for the compact Herrerasaurus target",
+        "must stay out of train_seed material"
+      ]
+    },
+    {
+      "id": "herrerasaurus_longarms_ipcontrol_v1",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/herrerasaurus-ischigualastensis-longarms-ipcontrol-v1.png",
+      "caption": "reject reference only, Herrerasaurus long-arm IP-Control comparison with weaker head and hand read",
+      "strengths": [
+        "records an earlier whole-body route with readable tail and biped stance"
+      ],
+      "risks": [
+        "forelimbs and hands risk long dangling hook reads",
+        "head and identity are weaker than the selected compact-hand v2 candidate"
+      ]
+    },
+    {
+      "id": "herrerasaurus_closedjaw_headblend_v1",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/herrerasaurus-ischigualastensis-closedjaw-headblend-v1.png",
+      "caption": "review hold only, earlier closed-jaw head blend that preserves body structure but has weaker hand and species identity than v2",
+      "strengths": [
+        "useful closed-head comparison",
+        "preserves a single tail and two-hind-leg read"
+      ],
+      "risks": [
+        "hand anatomy and species read are weaker than the current v2 first candidate",
+        "not suitable as a direct positive without re-review"
+      ]
+    }
+  ],
+  "rejectCriteria": [
+    "tiny Tyrannosaurus-style two-finger arms",
+    "long dangling hook hands or four/five equally long human-like fingers",
+    "bulky Allosaurus or Tyrannosaurus body drift",
+    "Plateosaurus-like herbivore head or quadruped posture",
+    "extra legs, forelimbs touching ground, hidden feet, missing tail, or duplicate tail",
+    "open monster mouth, bird beak, feathers, wings, text, labels, logos, or watermarks"
+  ]
+}

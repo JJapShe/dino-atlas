@@ -1,0 +1,21 @@
+{
+  "taxonId": "brachiosaurus-altithorax",
+  "experiment": "p1_v9_v11_source_candidates",
+  "currentPrimary": "assets/dinosaurs/brachiosaurus-altithorax-tail-reduced-i2i-v4.png",
+  "selectedReviewHold": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v10-source-candidate.png",
+  "comparisonHolds": [
+    "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v9-source-candidate.png",
+    "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v11-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/brachiosaurus-p1-v9-v11-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/brachiosaurus-p1-v9-v11-crops.png",
+  "decision": "review_hold",
+  "reason": "V10 is the strongest fresh prompt-only Brachiosaurus source: it keeps high shoulders, visibly taller forelimbs, a rising neck, a side-profile body, and an exact four-leg count. Keep v4 first because v10's tail still trends long and thin enough to require close tail-base and diplodocid-drift review.",
+  "rejectIfPromoting": [
+    "tail becomes a long thin diplodocid whip or curls into a Diplodocus/Apatosaurus read",
+    "forelimbs and hind limbs become equal height or the shoulder drops near the hip line",
+    "foot crop hides toes, ground contact, or the four-leg count",
+    "skull becomes mammal-like, giraffe-like, toothed theropod-like, or too large",
+    "background or overlapping shadows create extra limb silhouettes"
+  ]
+}

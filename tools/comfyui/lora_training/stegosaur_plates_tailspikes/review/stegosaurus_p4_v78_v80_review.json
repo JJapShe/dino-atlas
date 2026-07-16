@@ -1,0 +1,23 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "p4_v78_v80_broad_plate_four_thagomizer_candidates",
+  "currentPrimary": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "selectedReviewHold": "assets/dinosaurs/stegosaurus-stenops-imagegen-v79-source-candidate.png",
+  "selectedPlateReference": "assets/dinosaurs/stegosaurus-stenops-imagegen-v78-source-candidate.png",
+  "selectedRejectReferences": [
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v78-source-candidate.png",
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v80-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/stegosaurus-p4-v78-v80-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-p4-v78-v80-crops.png",
+  "decision": "keep_current_v6",
+  "reason": "V79 is the closest fresh candidate because it combines broad separated dorsal plates with a near-four thagomizer read, but the lower overlapping tail spike remains ambiguous. V78 is valuable as a broad-plate target but clearly overcounts the tail spikes. V80 keeps a good silhouette but also risks an extra lower spike. Keep v6 first until the same image has broad separated plates and exactly four countable tail spikes.",
+  "rejectIfPromoting": [
+    "tail tip shows fewer or more than exactly four large spikes",
+    "any tail spike is duplicated by a lower shadow-like extra spur",
+    "plates read as leaves, fins, continuous sail panels, or armored shingles",
+    "plate row loses visible sky gaps between separate plates",
+    "legs or feet are hidden enough to block quadruped count",
+    "body drifts toward ankylosaur, turtle, sauropod, or theropod anatomy"
+  ]
+}

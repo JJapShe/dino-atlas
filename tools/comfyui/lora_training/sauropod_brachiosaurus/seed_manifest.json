@@ -1,0 +1,244 @@
+{
+  "datasetId": "sauropod_brachiosaurus_v1",
+  "trigger": "sauropod_brachiosaurus",
+  "taxa": [
+    "Brachiosaurus altithorax",
+    "high-shouldered brachiosaurid sauropod"
+  ],
+  "licensePolicy": "Only project-internal AI-generated images and hand-authored guides are allowed as sources. External museum/science material is reference-only, not training data.",
+  "items": [
+    {
+      "id": "brachiosaurus_imagegen_v16_short_tail_seed",
+      "role": "train_seed",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v16-source-candidate.png",
+      "caption": "sauropod_brachiosaurus, Brachiosaurus altithorax, full body side profile, shoulders visibly higher than hips, front limbs taller and straighter than hind limbs, trunk slopes downward from shoulder to hip, long neck rises forward-up from the shoulder, small non-predatory sauropod head, exactly four visible pillar feet on dry ground, short thick tapering tail, compact high-shouldered brachiosaurid body plan, no low-neck Apatosaurus body plan, no long Diplodocus whip tail, no text, no watermark",
+      "strengths": [
+        "current app first candidate after the P3 short-tail pass",
+        "combines taller forelimbs, high shoulders, sloping trunk, rising neck, four open feet, and a compact tail",
+        "best current antidote to repeated diplodocid whip-tail drift"
+      ],
+      "risks": [
+        "tail may be slightly over-short for final species-level approval",
+        "exact skull, toe, and tail-base details still need crop review"
+      ]
+    },
+    {
+      "id": "brachiosaurus_tail_reduced_i2i_v4_previous_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-tail-reduced-i2i-v4.png",
+      "caption": "review hold only, previous app first Brachiosaurus altithorax tail-reduced i2i candidate with high shoulders, taller forelimbs, rising neck, four open feet, and a less whip-like but still longer tail than v16",
+      "strengths": [
+        "previous app first candidate for the high-shoulder Brachiosaurus gate",
+        "preserves taller forelimbs, high shoulders, sloping trunk, rising neck, and four open feet",
+        "low-denoise tail-reduction pass reduced the long whip-tail risk from v3"
+      ],
+      "risks": [
+        "tail remains longer and thinner than the promoted v16 candidate",
+        "exact skull and toe details still need crop review"
+      ]
+    },
+    {
+      "id": "brachiosaurus_imagegen_v17_short_tail_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v17-source-candidate.png",
+      "caption": "review hold only, P3 Brachiosaurus altithorax prompt candidate with high shoulders, taller forelimbs, rising neck, four visible feet, and a shorter tail than the older P2 candidates, not as compact as v16",
+      "strengths": [
+        "clear high-shoulder body and taller-forelimb read",
+        "shorter tail than the v12-v14 prompt-only set",
+        "useful comparison for future short-tail conditioning"
+      ],
+      "risks": [
+        "tail remains less compact than v16",
+        "not suitable as train_seed while v16 gives a clearer short-tail gate",
+        "exact sauropod foot and skull proportions still need crop review"
+      ]
+    },
+    {
+      "id": "brachiosaurus_imagegen_v15_long_tail_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v15-source-candidate.png",
+      "caption": "review hold only, P3 Brachiosaurus altithorax prompt candidate with useful high-shoulder body plan but tail remains longer and more pointed than the promoted v16 seed",
+      "strengths": [
+        "keeps a useful high-shoulder and rising-neck Brachiosaurus read",
+        "full body and feet remain reviewable"
+      ],
+      "risks": [
+        "tail remains too long and pointed for promotion",
+        "should not outrank v16 for the short-tail gate"
+      ]
+    },
+    {
+      "id": "brachiosaurus_imagegen_v10_review_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v10-source-candidate.png",
+      "caption": "review hold only, prompt-only Brachiosaurus altithorax source candidate with high shoulders, visibly taller forelimbs, rising neck, side-profile body, exactly four visible pillar legs, and tail still requiring diplodocid-drift review",
+      "strengths": [
+        "strongest fresh prompt-only candidate in the v9-v11 set",
+        "keeps a clear high-shoulder Brachiosaurus silhouette and a countable four-leg stance"
+      ],
+      "risks": [
+        "tail remains long and thin enough for close diplodocid-drift review",
+        "exact skull, toe, and tail-base details are not final-quality"
+      ]
+    },
+    {
+      "id": "brachiosaurus_imagegen_v13_highshoulder_tailrisk_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v13-source-candidate.png",
+      "caption": "review hold only, prompt-only Brachiosaurus altithorax v13 source candidate with clear high shoulders, taller forelimbs, rising neck, side-profile body, and four visible feet, tail remains long and thin enough for diplodocid-drift risk, not a positive LoRA seed",
+      "strengths": [
+        "strong P2 high-shoulder and taller-forelimb read",
+        "rising neck, side-profile body, and four-foot stance are clear",
+        "useful comparison for future short-tail conditioning"
+      ],
+      "risks": [
+        "tail remains long and thin enough to drift toward Diplodocus/Apatosaurus",
+        "not suitable as train_seed until the short thick tail gate is solved",
+        "exact sauropod foot and skull proportions still need crop review"
+      ]
+    },
+    {
+      "id": "brachiosaurus_imagegen_v12_whip_tail_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v12-source-candidate.png",
+      "caption": "reject reference only, prompt-only Brachiosaurus v12 has strong high shoulders but a long thin diplodocid whip-tail read",
+      "strengths": [
+        "documents a strong high-shoulder and rising-neck prompt route"
+      ],
+      "risks": [
+        "tail reads too long and thin for the Brachiosaurus gate",
+        "unsafe as positive training material even though the shoulders are strong"
+      ]
+    },
+    {
+      "id": "brachiosaurus_imagegen_v14_long_tail_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v14-source-candidate.png",
+      "caption": "reject reference only, prompt-only Brachiosaurus v14 keeps high shoulders but the tail remains too long and pointed for promotion",
+      "strengths": [
+        "documents a high-shoulder prompt route with clear tall forelimbs"
+      ],
+      "risks": [
+        "tail is too long and pointed",
+        "unsafe as positive training material until short-tail conditioning is stronger"
+      ]
+    },
+    {
+      "id": "brachiosaurus_imagegen_v9_review_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v9-source-candidate.png",
+      "caption": "review hold only, prompt-only Brachiosaurus comparison candidate with good four-leg count and high shoulder signal but weaker short-tail target",
+      "strengths": [
+        "good four-leg count and full-body side-profile visibility",
+        "useful comparison for high shoulders and taller forelimbs"
+      ],
+      "risks": [
+        "tail reads longer and thinner than the body-lock target",
+        "should not outrank the current tail-reduced v4 candidate"
+      ]
+    },
+    {
+      "id": "brachiosaurus_imagegen_v11_tail_risk_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v11-source-candidate.png",
+      "caption": "reject reference only, prompt-only Brachiosaurus comparison whose long curling tail is useful as a diplodocid-drift warning",
+      "strengths": [
+        "records a high-shoulder prompt route"
+      ],
+      "risks": [
+        "tail tip curls longer and thinner than the Brachiosaurus gate allows",
+        "not suitable as a positive LoRA seed"
+      ]
+    },
+    {
+      "id": "brachiosaurus_highshoulder_bodylock_guide_v1",
+      "role": "control_reference",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-highshoulder-bodylock-guide-v1.png",
+      "caption": "control reference only, Brachiosaurus altithorax high-shoulder body-lock guide, shoulders higher than hips, taller forelimbs, sloping trunk, rising neck, small head, four pillar feet, shorter non-whip tail, anti-Apatosaurus silhouette guide",
+      "strengths": [
+        "locks the diagnostic high-shoulder and taller-forelimb target",
+        "useful as ControlNet, depth, line, or i2i guidance"
+      ],
+      "risks": [
+        "schematic guide, not suitable for direct LoRA training",
+        "surface detail is intentionally simplified"
+      ]
+    },
+    {
+      "id": "brachiosaurus_highshoulder_shorttail_v3",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-highshoulder-shorttail-imagegen-v3.png",
+      "caption": "review hold only, previous high-shoulder Brachiosaurus source candidate before tail-reduction i2i",
+      "strengths": [
+        "strong high-shoulder, taller-forelimb, rising-neck body plan",
+        "source structure for the selected v4 tail-reduced candidate"
+      ],
+      "risks": [
+        "tail remains longer and thinner than the selected v4 repair",
+        "should not outrank the current tail-reduced candidate"
+      ]
+    },
+    {
+      "id": "brachiosaurus_tallforelimb_shorttail_v3",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-tallforelimb-shorttail-imagegen-v3.png",
+      "caption": "review hold only, Brachiosaurus tall-forelimb v3 comparison with similar high-shoulder body plan",
+      "strengths": [
+        "useful comparison for taller forelimbs and rising neck",
+        "keeps a recognizable Brachiosaurus silhouette"
+      ],
+      "risks": [
+        "foot and tail-tip review is weaker than the selected v3 source and v4 repair",
+        "not promoted as first candidate"
+      ]
+    },
+    {
+      "id": "brachiosaurus_balancedneck_v2",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-balancedneck-imagegen-v2.png",
+      "caption": "review hold only, previous balanced-neck Brachiosaurus comparison with full body and open feet but weaker high-shoulder signal",
+      "strengths": [
+        "balanced full-body side profile and four open feet",
+        "useful historical comparison"
+      ],
+      "risks": [
+        "high shoulders and taller forelimbs are less immediate at app scale",
+        "can drift toward generic sauropod proportions"
+      ]
+    },
+    {
+      "id": "brachiosaurus_moderateneck_v2_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-moderateneck-comparison-v2.png",
+      "caption": "reject reference only, Brachiosaurus moderate-neck comparison that weakens the high-shoulder rising-neck identity gate",
+      "strengths": [
+        "documents a calmer neck route"
+      ],
+      "risks": [
+        "neck and shoulder signal are too muted for a clear Brachiosaurus target",
+        "not suitable as a positive seed"
+      ]
+    },
+    {
+      "id": "brachiosaurus_realvis_v2_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-realvis-v2.png",
+      "caption": "reject reference only, earlier RealVis Brachiosaurus comparison that is less reliable for the high-shoulder body gate",
+      "strengths": [
+        "records older naturalistic generation route"
+      ],
+      "risks": [
+        "high-shoulder and tail targets are weaker than current body-lock route",
+        "should not be used as a positive LoRA seed"
+      ]
+    }
+  ],
+  "rejectCriteria": [
+    "low Apatosaurus or Diplodocus body plan",
+    "equal-height front and rear limbs instead of taller forelimbs",
+    "horizontal low neck, missing high shoulder, or flat trunk line",
+    "long thin diplodocid whip tail or cropped tail",
+    "cropped feet, hidden feet, hoof-like feet, duplicate limbs, or unclear four-foot count",
+    "text, logo, signature, watermark, border, or lower-corner artifacts"
+  ]
+}

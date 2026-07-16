@@ -1,0 +1,34 @@
+{
+  "taxonId": "herrerasaurus-ischigualastensis",
+  "round": "herrera_closedjaw_head_blend_v1",
+  "date": "2026-06-23",
+  "goal": "Improve the current Herrerasaurus first image by preserving the stronger long-arm full-body candidate while replacing only the open, toothy head with the calmer closed-jaw comparison head.",
+  "inputs": {
+    "bodySource": "assets/dinosaurs/herrerasaurus-ischigualastensis-longarms-ipcontrol-v1.png",
+    "headSource": "assets/dinosaurs/herrerasaurus-ischigualastensis-closedjaw-refine-v1.png",
+    "script": "tools/comfyui/scripts/paint_herrerasaurus_closedjaw_head_blend.py"
+  },
+  "experiments": [
+    {
+      "prefix": "herrera_closedjaw_head_blend_v1",
+      "type": "local closed-jaw head blend",
+      "sheet": "tools/comfyui/lora_training/early_saurischian_herrerasaurus/review/herrera_closedjaw_head_blend_v1_rejected_contact_sheet.png",
+      "headCrops": "tools/comfyui/lora_training/early_saurischian_herrerasaurus/review/herrera_closedjaw_head_blend_v1_rejected_head_crops.png",
+      "finding": "Rejected. It preserved the stronger striped body and long forelimbs, but the source lower jaw remained as a faint ghost below the closed head."
+    },
+    {
+      "prefix": "herrera_closedjaw_head_blend_v2",
+      "type": "wider lower-jaw mask head blend",
+      "sheet": "tools/comfyui/lora_training/early_saurischian_herrerasaurus/review/herrera_closedjaw_head_blend_v2_contact_sheet.png",
+      "headCrops": "tools/comfyui/lora_training/early_saurischian_herrerasaurus/review/herrera_closedjaw_head_blend_v2_head_crops.png",
+      "selected": "tools/comfyui/outputs/herrera_closedjaw_head_blend_v2_v1a.png",
+      "finding": "Selected. The wider mask removes the ghost lower jaw while preserving the long-arm body, tail, legs, ground, and striped surface detail from the current primary."
+    }
+  ],
+  "decision": {
+    "promotedAsset": "assets/dinosaurs/herrerasaurus-ischigualastensis-closedjaw-headblend-v1.png",
+    "status": "count-level pass",
+    "reason": "This is a conservative local improvement over the previous first image: it fixes the open-mouth/head issue without changing the existing count-level full-body gate. Fingers, toes, and exact hand anatomy still need later reference-specific work.",
+    "nextRoute": "Use this as the app-first Herrerasaurus candidate; future work should target hand/foot detail with a focused early-saurischian guide or LoRA rather than broad whole-body regeneration."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "p3_v75_v77_broad_plate_prompt_candidates",
+  "currentPrimary": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "selectedReviewHold": "assets/dinosaurs/stegosaurus-stenops-imagegen-v77-source-candidate.png",
+  "selectedRejectReferences": [
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v75-source-candidate.png",
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v76-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/stegosaurus-p3-v75-v77-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-p3-v75-v77-crops.png",
+  "decision": "keep_current_v6",
+  "reason": "V77 is the most useful fresh comparison because it keeps strong broad separated plates and a good Stegosaurus body, but its tail still overcounts the thagomizer. V75 and V76 have similarly strong plate mass but clearly show too many tail spikes, and V76 also risks leaf-vein plate surfaces. Keep v6 first until broad separated plates and exactly four thagomizer spikes pass in the same image.",
+  "rejectIfPromoting": [
+    "tail tip shows fewer or more than exactly four large spikes",
+    "plates read as leaves, leaf veins, fins, or a connected sail",
+    "plate row becomes a single wall without visible gaps",
+    "legs or feet are hidden enough to block quadruped count",
+    "body drifts toward ankylosaur, turtle, sauropod, or theropod anatomy"
+  ]
+}

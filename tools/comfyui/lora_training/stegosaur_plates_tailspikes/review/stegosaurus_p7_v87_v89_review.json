@@ -1,0 +1,28 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "p7_v87_v89_alternating_plate_prompt_candidates",
+  "currentPrimary": "assets/dinosaurs/stegosaurus-stenops-imagegen-v86-source-candidate.png",
+  "selectedCandidate": "assets/dinosaurs/stegosaurus-stenops-imagegen-v86-source-candidate.png",
+  "reviewHolds": [
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v88-source-candidate.png",
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v89-source-candidate.png",
+    "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v84-source-candidate.png"
+  ],
+  "rejectReferences": [
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v87-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/stegosaurus-p7-v87-v89-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-p7-v87-v89-crops.png",
+  "decision": "keep_v86_first_add_v88_v89_holds_and_v87_reject",
+  "reason": "V86 remains the safest current app-first candidate. The P7 prompt-only candidates did not improve the alternating plate gate enough to justify promotion. V87 has a similar body/plate read but the tail can read as five thagomizer spikes. V88 keeps a near-four tail but the dorsal plates become larger, rounder, and more leaf/fan-like. V89 has a stable body and tail but does not beat v86 on plate topology and has tighter head framing.",
+  "nextRoute": "Keep v86 as the positive smoke-test seed. Use v88/v89 as review holds and v87 as a reject reference. The next useful route should be localized plate-row i2i or Stegosauridae-specific LoRA/control training that offsets plate bases without changing the reliable v86 tail.",
+  "rejectIfPromoting": [
+    "tail tip shows fewer or more than exactly four large thagomizer spikes",
+    "plates become leaf-like, fin-like, scalloped, or a single connected sail",
+    "plate bases read as one centered row with no alternating left-right offset",
+    "plate gaps close enough to become a comb or continuous ridge",
+    "head, feet, or tail tip are cropped or hidden",
+    "body drifts toward ankylosaur, turtle, sauropod, or generic low reptile"
+  ]
+}

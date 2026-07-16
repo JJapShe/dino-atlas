@@ -1,0 +1,61 @@
+{
+  "taxonId": "triceratops-horridus",
+  "experiment": "antirhino_lowdenoise_v24",
+  "sourceImage": "assets/dinosaurs/triceratops-horridus-allfeet-lora-i2i-comparison-v22.png",
+  "selectedRejectReference": "assets/dinosaurs/triceratops-horridus-antirhino-lowdenoise-reject-v24.png",
+  "contactSheet": "tools/comfyui/outputs/triceratops_antirhino_lowdenoise_v24-contact-sheet.png",
+  "reviewSheet": "assets/dinosaurs/triceratops-antirhino-lowdenoise-v24-rejection-sheet.png",
+  "cropSheet": "assets/dinosaurs/triceratops-antirhino-lowdenoise-v24-crops.png",
+  "decision": "reject_reference",
+  "reason": "Low-denoise RealVisXL i2i avoided the old rhinoceros-body failure, but it did not meaningfully improve toe anatomy over v22 and softened the head/eye read. Keep v22 as the app-facing first candidate and use v24 only as a route-limit reference.",
+  "outputs": [
+    {
+      "label": "toe_review_01 seed 2026070141 d0.24",
+      "image": "tools/comfyui/outputs/triceratops_antirhino_lowdenoise_v24_toe_review_01_seed2026070141_d24.png",
+      "variation": "dry open ground with front and rear toes visible, no mammal hooves, low dinosaur torso preserved",
+      "decision": "reject_reference"
+    },
+    {
+      "label": "toe_review_01 seed 2026070142 d0.24",
+      "image": "tools/comfyui/outputs/triceratops_antirhino_lowdenoise_v24_toe_review_01_seed2026070142_d24.png",
+      "variation": "dry open ground with front and rear toes visible, no mammal hooves, low dinosaur torso preserved",
+      "decision": "reject_reference"
+    },
+    {
+      "label": "toe_review_01 seed 2026070141 d0.30",
+      "image": "tools/comfyui/outputs/triceratops_antirhino_lowdenoise_v24_toe_review_01_seed2026070141_d30.png",
+      "variation": "dry open ground with front and rear toes visible, no mammal hooves, low dinosaur torso preserved",
+      "decision": "reject_reference"
+    },
+    {
+      "label": "toe_review_01 seed 2026070142 d0.30",
+      "image": "tools/comfyui/outputs/triceratops_antirhino_lowdenoise_v24_toe_review_01_seed2026070142_d30.png",
+      "variation": "dry open ground with front and rear toes visible, no mammal hooves, low dinosaur torso preserved",
+      "decision": "reject_reference"
+    },
+    {
+      "label": "anti_rhino_body_01 seed 2026070141 d0.24",
+      "image": "tools/comfyui/outputs/triceratops_antirhino_lowdenoise_v24_anti_rhino_body_01_seed2026070141_d24.png",
+      "variation": "long tail, low shoulder line, no rounded mammal barrel torso, no rhino shoulder hump",
+      "decision": "reject_reference"
+    },
+    {
+      "label": "anti_rhino_body_01 seed 2026070142 d0.24",
+      "image": "tools/comfyui/outputs/triceratops_antirhino_lowdenoise_v24_anti_rhino_body_01_seed2026070142_d24.png",
+      "variation": "long tail, low shoulder line, no rounded mammal barrel torso, no rhino shoulder hump",
+      "decision": "reject_reference"
+    },
+    {
+      "label": "anti_rhino_body_01 seed 2026070141 d0.30",
+      "image": "tools/comfyui/outputs/triceratops_antirhino_lowdenoise_v24_anti_rhino_body_01_seed2026070141_d30.png",
+      "variation": "long tail, low shoulder line, no rounded mammal barrel torso, no rhino shoulder hump",
+      "decision": "reject_reference"
+    },
+    {
+      "label": "anti_rhino_body_01 seed 2026070142 d0.30",
+      "image": "tools/comfyui/outputs/triceratops_antirhino_lowdenoise_v24_anti_rhino_body_01_seed2026070142_d30.png",
+      "variation": "long tail, low shoulder line, no rounded mammal barrel torso, no rhino shoulder hump",
+      "decision": "reject_reference"
+    }
+  ]
+}

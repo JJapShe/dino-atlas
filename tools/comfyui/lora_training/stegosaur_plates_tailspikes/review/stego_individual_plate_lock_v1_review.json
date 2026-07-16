@@ -1,0 +1,70 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "round": "stego_individual_plate_lock_v1",
+  "date": "2026-06-23",
+  "goal": "Respond to close review that the current Stegosaurus first image still fails the dorsal-plate recognition gate by forcing countable individual plates and a four-spike thagomizer over the relock candidate.",
+  "referenceGate": {
+    "required": [
+      "many separate bony dorsal plates",
+      "staggered alternating left-right plate read",
+      "largest plates over the hips and mid-back",
+      "smaller plates toward the neck and tail base",
+      "visible gaps between plates",
+      "four-spike thagomizer"
+    ],
+    "rejectIf": [
+      "few rounded dorsal plates",
+      "continuous sail or shell band",
+      "pasted guide plates",
+      "flat triangular background repair",
+      "tail spikes read as a second head"
+    ]
+  },
+  "inputs": {
+    "source": "assets/dinosaurs/stegosaurus-stenops-plate-relock-ipcontrol-v1.png",
+    "script": "tools/comfyui/scripts/paint_stego_individual_plate_lock.py"
+  },
+  "experiments": [
+    {
+      "prefix": "stego_individual_plate_lock_v1",
+      "type": "local individual plate graft",
+      "sheet": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_individual_plate_lock_v1_rejected_contact_sheet.png",
+      "plateCrops": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_individual_plate_lock_v1_rejected_plate_crops.png",
+      "tailCrops": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_individual_plate_lock_v1_rejected_tail_crops.png",
+      "finding": "Rejected. The plate count improves, but the old-plate cleanup becomes a broad artificial brown band along the back."
+    },
+    {
+      "prefix": "stego_individual_plate_lock_v2",
+      "type": "background-fill cleanup variant",
+      "sheet": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_individual_plate_lock_v2_rejected_contact_sheet.png",
+      "plateCrops": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_individual_plate_lock_v2_rejected_plate_crops.png",
+      "tailCrops": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_individual_plate_lock_v2_rejected_tail_crops.png",
+      "finding": "Rejected. The artificial back band is reduced, but the sky/tree repair reads as a visible triangular patch behind the plates."
+    },
+    {
+      "prefix": "stego_individual_plate_lock_v3",
+      "type": "tight inpaint-mask individual plate graft",
+      "sheet": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_individual_plate_lock_v3_rejected_contact_sheet.png",
+      "plateCrops": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_individual_plate_lock_v3_rejected_plate_crops.png",
+      "tailCrops": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_individual_plate_lock_v3_rejected_tail_crops.png",
+      "finding": "Rejected as app art. It is the clearest countable row from this local route, but the plates still read as pasted rounded blocks with a visible base band."
+    },
+    {
+      "prefix": "stego_individual_plate_refiner_v1",
+      "type": "SDXL refiner over v3 at low denoise",
+      "sheet": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_individual_plate_refiner_v1_rejected_contact_sheet.png",
+      "tested": {
+        "seed": 2026062931,
+        "denoise": [0.14, 0.22]
+      },
+      "finding": "Rejected. The refiner preserves the artificial plate bases, introduces lower-corner patches, and changes head/body detail without creating natural embedded Stegosaurus plates."
+    }
+  ],
+  "decision": {
+    "promotedAsset": "assets/dinosaurs/stegosaurus-stenops-lowbody-plate-thagomizer-reference-v1.png",
+    "promotedRole": "primary structure reference",
+    "status": "rejected route with guide-first app rollback",
+    "reason": "The current natural-scene candidates do not satisfy the dorsal-plate reference gate. The project-owned low-body plate/thagomizer reference is more honest as the first MVP image until a Stegosaurus-specific LoRA or focused local training set can solve plate integration.",
+    "nextRoute": "Install/test a compatible Stegosaurus LoRA if available, or train a small stegosaur_plates_tailspikes LoRA from cleared synthetic examples whose plates already look natural before i2i/refiner."
+  }
+}

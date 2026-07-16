@@ -1,0 +1,20 @@
+{
+  "taxonId": "triceratops-horridus",
+  "experiment": "toe_i2i_v18",
+  "sourceImage": "assets/dinosaurs/triceratops-horridus-lowbody-closedbeak-i2i-v9.png",
+  "outputImage": "assets/dinosaurs/triceratops-horridus-toe-i2i-comparison-v18.png",
+  "reviewSheet": "assets/dinosaurs/triceratops-toe-i2i-v18-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/triceratops-toe-i2i-v18-crops.png",
+  "promptId": "toe_review_01",
+  "seed": 2026070443,
+  "denoise": 0.18,
+  "decision": "anatomy_review_comparison",
+  "reasons": [
+    "closed-beak gate survives unlike v17",
+    "low elongated ceratopsian body and long tail remain close to v9",
+    "front and rear toes remain visible",
+    "not a clear upgrade over v9 for frill detail, toe clarity, or representative polish"
+  ],
+  "keepCurrentPrimary": "assets/dinosaurs/triceratops-horridus-lowbody-closedbeak-i2i-v9.png",
+  "nextRoute": "Keep v9 first. Use more localized toe or frill masking, or ceratopsian-specific LoRA/control, rather than whole-body i2i if the current beak/frill/body balance does not improve clearly."
+}

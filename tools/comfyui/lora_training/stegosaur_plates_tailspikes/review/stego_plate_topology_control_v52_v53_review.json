@@ -1,0 +1,39 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "plate_topology_control_v52_v53",
+  "currentPrimary": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "cleanGuide": "assets/dinosaurs/stegosaurus-stenops-plate-topology-guide-clean-v52.png",
+  "labeledGuideRejection": "assets/dinosaurs/stegosaurus-stenops-plate-topology-control-rejected-v52.png",
+  "cleanGuideRejection": "assets/dinosaurs/stegosaurus-stenops-clean-plate-topology-control-rejected-v53.png",
+  "reviewSheet": "assets/dinosaurs/stegosaurus-plate-topology-control-v52-v53-rejection-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-plate-topology-control-v52-v53-rejection-crops.png",
+  "decision": "diagnostic_only",
+  "v52": {
+    "sourceGuide": "assets/dinosaurs/stegosaurus-stenops-plate-topology-guide-v1.png",
+    "seeds": [
+      2026070301,
+      2026070302
+    ],
+    "strengths": [
+      0.5,
+      0.62
+    ],
+    "endPercent": 0.62,
+    "reason": "Labeled topology guide causes text and line artifacts in ControlNet outputs."
+  },
+  "v53": {
+    "sourceGuide": "assets/dinosaurs/stegosaurus-stenops-plate-topology-guide-clean-v52.png",
+    "seeds": [
+      2026070311,
+      2026070312
+    ],
+    "strengths": [
+      0.38,
+      0.5
+    ],
+    "endPercent": 0.58,
+    "reason": "Clean guide removes text bleed but still collapses separated plates into sail, comb, or spike-row reads."
+  },
+  "keepCurrentPrimary": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "nextRoute": "Do not use the plate topology guide as plain canny ControlNet alone. Use it as a reference/control layer combined with v6 image conditioning, or train/use a Stegosauridae plate LoRA before another promotion attempt."
+}

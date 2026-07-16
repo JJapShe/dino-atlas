@@ -1,0 +1,69 @@
+{
+  "taxonId": "velociraptor-mongoliensis",
+  "experiment": "identity_bodylock_v31_v32",
+  "currentPrimary": "assets/dinosaurs/velociraptor-mongoliensis-small-sickle-imagegen-v9.png",
+  "bodylockGuide": "assets/dinosaurs/velociraptor-mongoliensis-identity-bodylock-guide-clean-v1.png",
+  "footGuide": "assets/dinosaurs/velociraptor-mongoliensis-foot-topology-guide-v1.png",
+  "rejectionSheet": "assets/dinosaurs/velociraptor-identity-v31-v32-rejection-sheet.png",
+  "cropSheet": "assets/dinosaurs/velociraptor-identity-v31-v32-rejection-crops.png",
+  "decision": "diagnostic_only",
+  "routeSummary": [
+    "v31 used current v9 as style reference with clean identity body-lock line control; it lost feathered dromaeosaur identity and became scaly generic theropod-like",
+    "v32 used low-denoise i2i over current v9 with head/foot prompt pressure; it preserved the body better than v31 but did not improve attached second-toe sickle-claw proof",
+    "current v9 remains first; next useful route should use a curated dromaeosaur/foot mini-LoRA or multi-control workflow that locks foot topology without erasing plumage"
+  ],
+  "keepCurrentPrimary": "assets/dinosaurs/velociraptor-mongoliensis-small-sickle-imagegen-v9.png",
+  "rejectCriteriaConfirmed": [
+    "naked or scaly movie-raptor body",
+    "modern bird or generic theropod head drift",
+    "feet without visible attached raised second-toe sickle-claw proof"
+  ],
+  "v31Outputs": [
+    {
+      "seed": 2026070131,
+      "ipWeight": 0.24,
+      "controlStrength": 0.24,
+      "image": "tools/comfyui/ComfyUI/output/dino_atlas/velociraptor_identity_bodylock_v31_style_transfer_velociraptor-mongoliensis_iw24_cs24_00001_.png"
+    },
+    {
+      "seed": 2026070132,
+      "ipWeight": 0.24,
+      "controlStrength": 0.24,
+      "image": "tools/comfyui/ComfyUI/output/dino_atlas/velociraptor_identity_bodylock_v31_style_transfer_velociraptor-mongoliensis_iw24_cs24_00002_.png"
+    },
+    {
+      "seed": 2026070131,
+      "ipWeight": 0.24,
+      "controlStrength": 0.34,
+      "image": "tools/comfyui/ComfyUI/output/dino_atlas/velociraptor_identity_bodylock_v31_style_transfer_velociraptor-mongoliensis_iw24_cs34_00001_.png"
+    },
+    {
+      "seed": 2026070132,
+      "ipWeight": 0.24,
+      "controlStrength": 0.34,
+      "image": "tools/comfyui/ComfyUI/output/dino_atlas/velociraptor_identity_bodylock_v31_style_transfer_velociraptor-mongoliensis_iw24_cs34_00002_.png"
+    }
+  ],
+  "v32Outputs": [
+    {
+      "seed": 2026070141,
+      "denoise": 0.18,
+      "image": "tools/comfyui/outputs/velociraptor_headfoot_lowdenoise_v32_identity_bodylock_head_foot_01_seed2026070141_d18.png"
+    },
+    {
+      "seed": 2026070142,
+      "denoise": 0.18,
+      "image": "tools/comfyui/outputs/velociraptor_headfoot_lowdenoise_v32_identity_bodylock_head_foot_01_seed2026070142_d18.png"
+    },
+    {
+      "seed": 2026070141,
+      "denoise": 0.24,
+      "image": "tools/comfyui/outputs/velociraptor_headfoot_lowdenoise_v32_identity_bodylock_head_foot_01_seed2026070141_d24.png"
+    },
+    {
+      "seed": 2026070142,
+      "denoise": 0.24,
+      "image": "tools/comfyui/outputs/velociraptor_headfoot_lowdenoise_v32_identity_bodylock_head_foot_01_seed2026070142_d24.png"
+    }
+  ]
+}

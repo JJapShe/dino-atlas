@@ -1,0 +1,31 @@
+{
+  "datasetId": "dromaeosaur_feathered_v1",
+  "runId": "dromaeosaur_lora_seed_v1",
+  "date": "2026-06-22",
+  "source": "tools/comfyui/outputs/dromaeosaur_lora_seed_v1-results.json",
+  "contactSheet": "tools/comfyui/lora_training/dromaeosaur_feathered/review/dromaeosaur_lora_seed_v1_rejected_contact_sheet.png",
+  "reviewDecision": "reject_all_for_training",
+  "summary": "RealVisXL prompt-only outputs repeatedly drifted into naked or scaly generic theropods. They are useful as negative evidence for the pipeline, but must not enter the dromaeosaur_feathered LoRA seed set.",
+  "primaryRejectReasons": [
+    "weak or missing dense feather coverage",
+    "folded forelimb feathers not readable",
+    "generic scaly/movie-raptor body texture",
+    "sickle-claw cue absent or too weak",
+    "some poses drift toward oversized generic theropods"
+  ],
+  "reviewedPromptIds": [
+    "side_walk_dune_01",
+    "side_walk_dune_02",
+    "low_crouch_01",
+    "riverbed_01",
+    "open_step_01",
+    "folded_wing_close_01",
+    "tail_profile_01",
+    "cream_belly_01",
+    "feet_detail_01",
+    "small_scale_01",
+    "desert_scrub_01",
+    "neutral_reference_01"
+  ],
+  "nextRoute": "Use guide-first or IP-Adapter/ControlNet expansion from internally authored plumage guides and the current app candidates. Do not use prompt-only RealVisXL generations as training images for this dataset."
+}

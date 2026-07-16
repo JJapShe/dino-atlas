@@ -1,0 +1,33 @@
+{
+  "taxonId": "apatosaurus-ajax",
+  "round": "apato_edge_volume_v1",
+  "date": "2026-06-23",
+  "goal": "Improve the current Apatosaurus first image without changing its locked low-neck diplodocid silhouette by reducing pale edge/background-mask residue and adding a conservative contact-shadow/volume polish.",
+  "inputs": {
+    "source": "assets/dinosaurs/apatosaurus-ajax-lowneck-floodplain-v1.png",
+    "script": "tools/comfyui/scripts/paint_apatosaurus_edge_volume.py"
+  },
+  "experiments": [
+    {
+      "prefix": "apato_edge_volume_v1",
+      "type": "edge darkening and contact-shadow polish",
+      "sheet": "tools/comfyui/lora_training/sauropod_apatosaurus/review/apato_edge_volume_v1_rejected_contact_sheet.png",
+      "silhouetteCrops": "tools/comfyui/lora_training/sauropod_apatosaurus/review/apato_edge_volume_v1_rejected_silhouette_crops.png",
+      "finding": "Rejected. The body contrast and grounding improved, but the pass made stale background-mask residue behind the animal more visible."
+    },
+    {
+      "prefix": "apato_edge_volume_v2",
+      "type": "background-residue cleanup plus subtle contact shadow",
+      "sheet": "tools/comfyui/lora_training/sauropod_apatosaurus/review/apato_edge_volume_v2_contact_sheet.png",
+      "silhouetteCrops": "tools/comfyui/lora_training/sauropod_apatosaurus/review/apato_edge_volume_v2_silhouette_crops.png",
+      "selected": "tools/comfyui/outputs/apato_edge_volume_v2_v2b.png",
+      "finding": "Selected. The v2b pass is conservative: it preserves the full silhouette and low-neck anatomy while slightly softening background residue and improving the contact-shadow read without adding new anatomy drift."
+    }
+  ],
+  "decision": {
+    "promotedAsset": "assets/dinosaurs/apatosaurus-ajax-edge-volume-v1.png",
+    "status": "count-level pass",
+    "reason": "This is a small app-first improvement over the previous floodplain candidate. It does not solve body flatness completely, but it keeps the low-neck count gate intact and reduces the most visible compositing residue without requiring a risky full-body regeneration.",
+    "nextRoute": "For final-quality Apatosaurus, use a stronger sauropod-specific generation route or train a sauropod silhouette/background LoRA; keep local polish passes conservative so the low-neck diplodocid shape is not lost."
+  }
+}

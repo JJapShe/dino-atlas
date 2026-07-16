@@ -1,0 +1,48 @@
+{
+  "taxonId": "triceratops-horridus",
+  "experiment": "toe_claw_matte_i2i_v23",
+  "sourceImage": "assets/dinosaurs/triceratops-horridus-allfeet-lora-i2i-comparison-v22.png",
+  "maskImage": "assets/dinosaurs/triceratops-toe-claw-highlight-i2i-mask-v23.png",
+  "comparisonImage": "assets/dinosaurs/triceratops-horridus-toe-claw-matte-i2i-v23.png",
+  "reviewSheet": "assets/dinosaurs/triceratops-toe-claw-matte-i2i-v23-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/triceratops-toe-claw-matte-i2i-v23-crops.png",
+  "footCompareSheet": "assets/dinosaurs/triceratops-toe-claw-matte-i2i-v23-foot-compare.png",
+  "decision": "anatomy_review",
+  "lora": "TriceratopsXL0_4.safetensors",
+  "loraStrength": 0.04,
+  "clipStrength": 0.03,
+  "selectedLabel": "seed 2026071121 d0.07",
+  "editMode": "triceratops_matte_toe_claws",
+  "outputs": [
+    {
+      "label": "seed 2026071121 d0.04",
+      "image": "tools/comfyui/outputs/triceratops_toe_claw_matte_v23_custom_triceratops-horridus_seed2026071121_s04_d04.png"
+    },
+    {
+      "label": "seed 2026071122 d0.04",
+      "image": "tools/comfyui/outputs/triceratops_toe_claw_matte_v23_custom_triceratops-horridus_seed2026071122_s04_d04.png"
+    },
+    {
+      "label": "seed 2026071121 d0.07",
+      "image": "tools/comfyui/outputs/triceratops_toe_claw_matte_v23_custom_triceratops-horridus_seed2026071121_s04_d07.png"
+    },
+    {
+      "label": "seed 2026071122 d0.07",
+      "image": "tools/comfyui/outputs/triceratops_toe_claw_matte_v23_custom_triceratops-horridus_seed2026071122_s04_d07.png"
+    },
+    {
+      "label": "seed 2026071121 d0.10",
+      "image": "tools/comfyui/outputs/triceratops_toe_claw_matte_v23_custom_triceratops-horridus_seed2026071121_s04_d10.png"
+    },
+    {
+      "label": "seed 2026071122 d0.10",
+      "image": "tools/comfyui/outputs/triceratops_toe_claw_matte_v23_custom_triceratops-horridus_seed2026071122_s04_d10.png"
+    }
+  ],
+  "reasons": [
+    "tiny claw-tip masking preserves the v22 low body, long tail, closed beak, three horns, skull-attached frill, and all-feet topology",
+    "the selected output slightly reduces shiny claw highlights but should remain a comparison until human crop review confirms it beats v22",
+    "future toe edits should stay tip-local and must not reopen the rhino body or mouth/teeth gates"
+  ],
+  "keepCurrentPrimaryUntilReview": "assets/dinosaurs/triceratops-horridus-allfeet-lora-i2i-comparison-v22.png"
+}

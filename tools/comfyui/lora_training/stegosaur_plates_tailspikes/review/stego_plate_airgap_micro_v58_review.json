@@ -1,0 +1,20 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "plate_airgap_micro_i2i_v58",
+  "sourceImage": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "maskImage": "assets/dinosaurs/stegosaurus-plate-airgap-i2i-mask-v49.png",
+  "comparisonImage": "assets/dinosaurs/stegosaurus-stenops-plate-airgap-micro-comparison-v58.png",
+  "reviewSheet": "assets/dinosaurs/stegosaurus-plate-airgap-micro-v58-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-plate-airgap-micro-v58-crops.png",
+  "decision": "diagnostic_only",
+  "selectedSeed": 2026070859,
+  "selectedDenoise": 0.12,
+  "editMode": "stego_plate_air_gaps",
+  "reasons": [
+    "very low denoise preserves the current v6 body, feet, four tail spikes, and plate row",
+    "plate gaps and plate edges remain too similar to v6 to justify a primary replacement",
+    "the result confirms that narrow seam edits are useful as preservation controls but not enough to solve exact staggered two-row plate topology"
+  ],
+  "keepCurrentPrimary": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "nextRoute": "Use Stegosauridae-specific LoRA training or a stronger local plate-structure synthesis pass before naturalization; do not keep repeating micro seam edits unless a new mask explicitly changes near/far plate bases."
+}

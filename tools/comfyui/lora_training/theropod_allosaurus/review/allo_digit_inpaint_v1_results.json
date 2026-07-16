@@ -1,0 +1,46 @@
+[
+  {
+    "taxonId": "allosaurus-fragilis",
+    "sourceImage": "C:\\Users\\USER\\Documents\\dinosour\\assets\\dinosaurs\\allosaurus-fragilis-natural-fullbody-ipcontrol-v1.png",
+    "maskPreset": "allosaurus_hand_tight",
+    "seed": 2026063121,
+    "denoise": 0.18,
+    "lora": null,
+    "loraStrength": null,
+    "clipStrength": null,
+    "image": "C:\\Users\\USER\\Documents\\dinosour\\tools\\comfyui\\ComfyUI\\output\\dino_atlas\\allo_digit_inpaint_v1_allosaurus_hand_tight_allosaurus-fragilis_d18_00001_.png"
+  },
+  {
+    "taxonId": "allosaurus-fragilis",
+    "sourceImage": "C:\\Users\\USER\\Documents\\dinosour\\assets\\dinosaurs\\allosaurus-fragilis-natural-fullbody-ipcontrol-v1.png",
+    "maskPreset": "allosaurus_hand_tight",
+    "seed": 2026063122,
+    "denoise": 0.18,
+    "lora": null,
+    "loraStrength": null,
+    "clipStrength": null,
+    "image": "C:\\Users\\USER\\Documents\\dinosour\\tools\\comfyui\\ComfyUI\\output\\dino_atlas\\allo_digit_inpaint_v1_allosaurus_hand_tight_allosaurus-fragilis_d18_00002_.png"
+  },
+  {
+    "taxonId": "allosaurus-fragilis",
+    "sourceImage": "C:\\Users\\USER\\Documents\\dinosour\\assets\\dinosaurs\\allosaurus-fragilis-natural-fullbody-ipcontrol-v1.png",
+    "maskPreset": "allosaurus_hand_tight",
+    "seed": 2026063121,
+    "denoise": 0.26,
+    "lora": null,
+    "loraStrength": null,
+    "clipStrength": null,
+    "image": "C:\\Users\\USER\\Documents\\dinosour\\tools\\comfyui\\ComfyUI\\output\\dino_atlas\\allo_digit_inpaint_v1_allosaurus_hand_tight_allosaurus-fragilis_d26_00001_.png"
+  },
+  {
+    "taxonId": "allosaurus-fragilis",
+    "sourceImage": "C:\\Users\\USER\\Documents\\dinosour\\assets\\dinosaurs\\allosaurus-fragilis-natural-fullbody-ipcontrol-v1.png",
+    "maskPreset": "allosaurus_hand_tight",
+    "seed": 2026063122,
+    "denoise": 0.26,
+    "lora": null,
+    "loraStrength": null,
+    "clipStrength": null,
+    "image": "C:\\Users\\USER\\Documents\\dinosour\\tools\\comfyui\\ComfyUI\\output\\dino_atlas\\allo_digit_inpaint_v1_allosaurus_hand_tight_allosaurus-fragilis_d26_00002_.png"
+  }
+]

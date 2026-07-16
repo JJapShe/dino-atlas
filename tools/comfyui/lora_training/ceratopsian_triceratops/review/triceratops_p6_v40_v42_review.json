@@ -1,0 +1,26 @@
+{
+  "taxonId": "triceratops-horridus",
+  "experiment": "p6_v40_v42_lowbody_antirhino_prompt_candidates",
+  "previousPrimary": "assets/dinosaurs/triceratops-horridus-allfeet-lora-i2i-comparison-v22.png",
+  "selectedCandidate": "assets/dinosaurs/triceratops-horridus-imagegen-v41-source-candidate.png",
+  "comparisonReviewHolds": [
+    "assets/dinosaurs/triceratops-horridus-imagegen-v42-source-candidate.png",
+    "assets/dinosaurs/triceratops-horridus-imagegen-v40-source-candidate.png",
+    "assets/dinosaurs/triceratops-horridus-imagegen-v38-source-candidate.png"
+  ],
+  "selectedRejectReferences": [],
+  "reviewSheet": "assets/dinosaurs/triceratops-p6-v40-v42-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/triceratops-p6-v40-v42-crops.png",
+  "decision": "promote_v41_to_app_first_count_level_pass",
+  "reason": "V41 gives the strongest current anti-rhino Triceratops balance: a much lower elongated ceratopsian torso than v22/v38, a fully visible long tail, closed beak, skull-attached frill, exactly three facial horns, four visible dinosaur limbs, and separated non-hoofed toes. It is still not final approval because skull/frill proportion, exact toe anatomy, and the heavy forelimb posture need reference review. V42 is a useful low-body hold, but the wet-ground setting and head/frill read are weaker. V40 has a good head and feet but remains rounder and too close-framed.",
+  "nextRoute": "Use v41 as the new app-first count-level pass and add it as a project-owned smoke-test seed candidate only after human review. Future i2i should preserve v41 body length and tail while refining toe anatomy and reducing forelimb heaviness.",
+  "rejectIfPromoting": [
+    "torso, shoulder mass, or feet read as rhinoceros-like",
+    "body is a round barrel rather than low elongated ceratopsian form",
+    "frill attaches to shoulders, back, or torso instead of skull",
+    "mouth opens or teeth appear",
+    "horn count is not exactly two brow horns plus one nasal horn",
+    "feet become hoof-like or hide toe separation",
+    "tail is cropped, hidden, or short"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "p6_v84_v86_four_spike_separation_candidates",
+  "previousPrimary": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "promotedPrimary": "assets/dinosaurs/stegosaurus-stenops-imagegen-v86-source-candidate.png",
+  "selectedReviewHold": "assets/dinosaurs/stegosaurus-stenops-imagegen-v84-source-candidate.png",
+  "comparisonReviewHolds": [
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v82-source-candidate.png"
+  ],
+  "selectedRejectReferences": [
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v85-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/stegosaurus-p6-v84-v86-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-p6-v84-v86-crops.png",
+  "decision": "promote_v86_to_count_level_pass",
+  "reason": "V86 is the best current balance of a low quadrupedal Stegosaurus body, small head, broad separated dorsal plates, four visible planted feet, and an unambiguous four-spike thagomizer. V84 is useful four-spike review evidence but the mid plates are oversized and less natural. V85 is rejected because the tail weapon can read as three countable spikes. V82 remains a comparison hold because lower tail geometry can still read overlapped or duplicated.",
+  "remainingRisks": [
+    "alternating two-row plate topology is improved for first-card readability but still needs final reference review",
+    "plate surfaces and bases should be checked before final approval",
+    "far-side feet and exact toe shapes remain count-level rather than final"
+  ],
+  "rejectIfPromoting": [
+    "tail tip shows fewer or more than exactly four large spikes",
+    "any spike is duplicated by a lower shadow-like extra spur",
+    "plates read as leaves, fins, continuous sail panels, or armored shingles",
+    "plate row loses visible sky gaps between separate plates",
+    "legs or feet are hidden enough to block quadruped count",
+    "body drifts toward ankylosaur, turtle, sauropod, or theropod anatomy"
+  ]
+}

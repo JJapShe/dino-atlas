@@ -1,0 +1,22 @@
+{
+  "taxonId": "ankylosaurus-magniventris",
+  "experiment": "p9_v42_v44_armored_skull_color_variation",
+  "currentPrimary": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v40-source-candidate.png",
+  "selectedReviewHolds": [
+    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v43-source-candidate.png",
+    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v42-source-candidate.png",
+    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v44-source-candidate.png"
+  ],
+  "rejectReferences": [],
+  "reviewSheet": "assets/dinosaurs/ankylosaurus-p9-v42-v44-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/ankylosaurus-p9-v42-v44-crops.png",
+  "decision": "keep_v40_primary_add_v43_v42_v44_as_review_holds",
+  "reason": "P9 directly targets the user's lizard-head concern. V43 has the strongest new broad armored skull, cheek horns, rear skull-horn cues, dark color separation, four legs, and one attached tail club. V42 and V44 also improve color and cranial armor readability. None should be promoted yet because the dorsal osteoderm rows can read as too regular or plate-like, so v40 remains the count-level app primary until a stricter body-lock route preserves the improved skull without over-regularizing the back armor.",
+  "remainingRisks": [
+    "dorsal armor rows may look too regular or tiled rather than naturally varied osteoderms",
+    "skull horns need to remain cheek/rear skull horns rather than fantasy spikes",
+    "front foot toe counts are still review-level, not final proof",
+    "color variation must not hide the broad low body or single tail club"
+  ],
+  "nextRoute": "Use v43 as the head/color reference with the armor-tailclub guide as structure control. Apply low-denoise body-lock or ControlNet/i2i to preserve the broad blunt skull and cheek horns while softening the over-regular dorsal plate grid. Reject any output with lizard/crocodile head, missing/doubled club, six legs, turtle shell, fantasy spikes, or samey tan-brown collapse."
+}

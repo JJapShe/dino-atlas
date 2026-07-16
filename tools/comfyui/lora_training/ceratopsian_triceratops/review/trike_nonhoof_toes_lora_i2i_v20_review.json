@@ -1,0 +1,26 @@
+{
+  "taxonId": "triceratops-horridus",
+  "route": "local SDXL inpaint from v9 using tight foot-only mask plus weak TriceratopsXL LoRA",
+  "source": "assets/dinosaurs/triceratops-horridus-lowbody-closedbeak-i2i-v9.png",
+  "selectedCandidate": "assets/dinosaurs/triceratops-horridus-nonhoof-toes-lora-i2i-comparison-v20.png",
+  "mask": "assets/dinosaurs/triceratops-nonhoof-toes-i2i-mask-v19.png",
+  "lora": "TriceratopsXL0_4.safetensors",
+  "loraStrength": 0.08,
+  "clipStrength": 0.06,
+  "seed": 2026070446,
+  "denoise": 0.08,
+  "decision": "keep as anatomy-review comparison; do not replace v9 primary",
+  "passChecks": [
+    "low elongated ceratopsian body preserved",
+    "long single tail preserved",
+    "four visible limbs preserved",
+    "two brow horns, one nasal horn, closed beak, and skull-attached frill preserved",
+    "front foot keeps a slightly separated non-hoof toe read without body regression"
+  ],
+  "remainingRisks": [
+    "middle and rear feet are still not a decisive upgrade over v9 or v19",
+    "weak LoRA does not improve frill rim detail",
+    "representative polish and toe clarity are not strong enough to promote over v9"
+  ],
+  "nextRoute": "Use a targeted middle/rear-foot mask or ceratopsian-specific foot reference; do not promote toe-only LoRA outputs unless front, middle, and rear feet all improve without rhino body drift."
+}

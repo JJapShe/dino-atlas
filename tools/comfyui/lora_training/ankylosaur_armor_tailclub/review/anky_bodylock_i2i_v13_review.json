@@ -1,0 +1,20 @@
+{
+  "taxonId": "ankylosaurus-magniventris",
+  "experiment": "bodylock_i2i_v13",
+  "sourceImage": "assets/dinosaurs/ankylosaurus-magniventris-broadskull-singleclub-imagegen-v5.png",
+  "outputImage": "assets/dinosaurs/ankylosaurus-magniventris-bodylock-i2i-comparison-v13.png",
+  "reviewSheet": "assets/dinosaurs/ankylosaurus-review-options-v13.png",
+  "cropSheet": "assets/dinosaurs/ankylosaurus-bodylock-i2i-crops-v13.png",
+  "decision": "comparison_only",
+  "reasons": [
+    "preserves the low quadruped body, four visible feet, and a single attached tail club",
+    "remains a useful body-lock i2i comparison after v12 schedule prompts",
+    "skull and surface detail are softer than the current v5 representative",
+    "current v5 remains the stronger app-scale Ankylosaurus image"
+  ],
+  "keepCurrentPrimary": "assets/dinosaurs/ankylosaurus-magniventris-broadskull-singleclub-imagegen-v5.png",
+  "promptId": "armor_tailclub_bodylock_01",
+  "seed": 2026070544,
+  "denoise": 0.16,
+  "nextRoute": "Keep v5 first; use v13 as a low-denoise body-lock comparison while searching for a species-specific Ankylosauridae LoRA or stronger reference-conditioned route that tightens skull, toe, and armor-row anatomy without losing the club."
+}

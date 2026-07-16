@@ -1,0 +1,15 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "schedule_i2i_v47",
+  "sourceImage": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "outputImage": "assets/dinosaurs/stegosaurus-stenops-schedule-i2i-v6source-rejected-v47.png",
+  "reviewSheet": "assets/dinosaurs/stegosaurus-schedule-i2i-rejection-sheet-v47.png",
+  "decision": "rejected",
+  "reasons": [
+    "large lower-corner artifacts remain visible",
+    "tail spike count is not reliably exactly four",
+    "plate topology is not enough of an improvement over current v6"
+  ],
+  "keepCurrentPrimary": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "nextRoute": "Use stronger Stegosauridae LoRA or reference-conditioned ControlNet/i2i that locks two staggered plate rows and four thagomizer spikes without image-frame artifacts."
+}

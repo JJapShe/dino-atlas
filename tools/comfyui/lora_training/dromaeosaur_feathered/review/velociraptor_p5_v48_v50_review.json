@@ -1,0 +1,25 @@
+{
+  "taxonId": "velociraptor-mongoliensis",
+  "experiment": "p5_v48_v50_subtle_sickle_prompt_candidates",
+  "currentPrimary": "assets/dinosaurs/velociraptor-mongoliensis-small-sickle-imagegen-v9.png",
+  "selectedReviewHold": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v50-source-candidate.png",
+  "comparisonReviewHolds": [
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v48-source-candidate.png",
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v49-source-candidate.png",
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v47-source-candidate.png"
+  ],
+  "selectedRejectReferences": [],
+  "reviewSheet": "assets/dinosaurs/velociraptor-p5-v48-v50-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/velociraptor-p5-v48-v50-crops.png",
+  "decision": "keep_current_v9_with_v50_as_best_new_review_hold",
+  "reason": "V50 has the best P5 whole-body balance: a narrow toothy non-beak head, feathered dromaeosaur body, compact folded forelimbs, full stiff tail, and visible feet. It still stays below promotion because the raised second-toe claws remain large, dark, hook-like, and not final-proof as modest attached sickle toes. V48 has a useful head/body read but even stronger black hook drift. V49 slightly reduces claw size but hides one foot and makes the folded forelimb read wing-like. Keep v9 first until foot topology and non-wing forelimbs pass together.",
+  "nextRoute": "Use v50 as a whole-body review hold only. The next useful route is localized low-denoise foot i2i or stronger topology control that preserves v50 head/body/tail while reducing black hook claws into small attached raised second toes.",
+  "rejectIfPromoting": [
+    "head becomes bird-beaked, toothless, hawk-like, or rooster-like",
+    "forelimbs become spread wings or read as modern bird wings",
+    "sickle claw reads as detached crescent, giant hook, black talon, or eagle talon",
+    "feet do not show two walking toes plus one attached raised second toe",
+    "body becomes naked movie raptor, ostrich-like, or oversized monster raptor",
+    "tail is cropped, duplicated, soft, or hidden"
+  ]
+}

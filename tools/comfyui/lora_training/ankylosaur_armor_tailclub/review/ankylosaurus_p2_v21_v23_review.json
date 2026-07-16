@@ -1,0 +1,23 @@
+{
+  "taxonId": "ankylosaurus-magniventris",
+  "experiment": "p2_v21_v23_armor_tailclub_prompt_candidates",
+  "currentPrimary": "assets/dinosaurs/ankylosaurus-magniventris-allfeet-lora-i2i-v18.png",
+  "selectedReviewHold": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v22-source-candidate.png",
+  "comparisonReviewHolds": [
+    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v23-source-candidate.png",
+    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v21-source-candidate.png",
+    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v20-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/ankylosaurus-p2-v21-v23-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/ankylosaurus-p2-v21-v23-crops.png",
+  "decision": "review_hold",
+  "reason": "V22 is the best new prompt-only balance: it keeps a broad blunt skull, low rounded armor, four planted feet, and one attached oval tail club. It still stays below v18 because body and tail length can drift toward generic armored lizard. V23 improves the low broad armor read but has similar length risk. V21 has strong armor and club but skull-side projections can read as horns.",
+  "nextRoute": "Use v22/v23 as project-owned source holds for future i2i or LoRA expansion. The next route should shorten the body/tail proportions and preserve the attached club, broad skull, four sturdy feet, and low osteoderm rows together.",
+  "rejectIfPromoting": [
+    "body reads as crocodile, monitor lizard, pangolin, turtle, or armadillo",
+    "skull becomes long and narrow or develops horn-like side projections",
+    "tail club is missing, detached, doubled, soft, or replaced by spikes",
+    "armor becomes tall Stegosaurus-like plates or fantasy spikes",
+    "feet are hidden, extra limbs appear, or the animal becomes sprawled like a lizard"
+  ]
+}

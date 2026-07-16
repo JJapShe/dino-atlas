@@ -1,0 +1,35 @@
+{
+  "datasetId": "dromaeosaur_feathered_v1",
+  "runId": "dromaeosaur_reference_control_v1",
+  "date": "2026-06-22",
+  "createdReferences": [
+    {
+      "path": "tools/comfyui/lora_training/dromaeosaur_feathered/references/dromaeosaur_plumage_reference_v1.png",
+      "role": "reference_only",
+      "purpose": "Project-owned paintover to exaggerate body, neck, folded-forelimb, and dorsal feather signals on the current app candidate."
+    },
+    {
+      "path": "tools/comfyui/lora_training/dromaeosaur_feathered/references/dromaeosaur_feather_mass_guide_v1.png",
+      "role": "control_reference",
+      "purpose": "Hand-authored diagnostic control guide with explicit feather masses, folded wing-like forelimbs, long tail, and sickle-claw intent."
+    }
+  ],
+  "sourceRuns": [
+    "tools/comfyui/outputs/dromaeosaur_plumage_ref_ipcontrol_v1-results.json",
+    "tools/comfyui/outputs/dromaeosaur_feathermass_control_v1-results.json"
+  ],
+  "contactSheets": [
+    "tools/comfyui/lora_training/dromaeosaur_feathered/review/dromaeosaur_plumage_ref_ipcontrol_v1_rejected_contact_sheet.png",
+    "tools/comfyui/lora_training/dromaeosaur_feathered/review/dromaeosaur_feathermass_control_v1_rejected_contact_sheet.png"
+  ],
+  "reviewDecision": "reject_generated_outputs_for_training_keep_references",
+  "summary": "Project-owned feather references were created and tested through IP-Adapter + ControlNet. The references are useful infrastructure, but generated outputs still failed the dromaeosaur_feathered training gate because surface texture remained stripe/scaly, folded forelimb feathers were weak, and leg/grounding errors persisted in several candidates.",
+  "primaryRejectReasons": [
+    "generated surface texture still reads as stripes or scales rather than dense downy plumage",
+    "folded forelimb feathers remain too weak",
+    "raised sickle-claw cue remains unreliable",
+    "some candidates introduce extra limb or grounding artifacts",
+    "feather-mass guide can stabilize shape but does not force feather material in RealVisXL"
+  ],
+  "nextRoute": "Keep the project-owned references, but add either a feather-aware checkpoint/LoRA branch or a more direct image-editing step that turns the app candidate into convincing plumage before using it as a training seed."
+}

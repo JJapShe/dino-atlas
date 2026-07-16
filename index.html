@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dino Atlas MVP</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./styles.css?v=20260713-natural-pattern-density-v1" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Primary">
+        <div class="brand">
+          <div class="brand-mark">DA</div>
+          <div>
+            <p class="eyebrow">MVP</p>
+            <h1>Dino Atlas</h1>
+          </div>
+        </div>
+
+        <nav class="nav-tabs" aria-label="Views">
+          <button class="nav-tab active" data-view="atlas" type="button">
+            <span>계통도</span>
+          </button>
+          <button class="nav-tab" data-view="catalog" type="button">
+            <span>도감</span>
+          </button>
+          <button class="nav-tab" data-view="review" type="button">
+            <span>검수</span>
+          </button>
+          <button class="nav-tab" data-view="assetReview" type="button">
+            <span>이미지 검수</span>
+          </button>
+        </nav>
+
+        <section class="sidebar-panel">
+          <div class="panel-heading">
+            <span>필터</span>
+            <button class="ghost-button" id="resetFilters" type="button">초기화</button>
+          </div>
+          <label class="search-field">
+            <span>검색</span>
+            <input id="searchInput" type="search" placeholder="공룡명, 분류, 지역" />
+          </label>
+          <div class="filter-group">
+            <span class="field-label">식성</span>
+            <div class="segmented" id="dietFilter" role="group" aria-label="Diet filter">
+              <button class="active" data-diet="all" type="button">전체</button>
+              <button data-diet="육식" type="button">육식</button>
+              <button data-diet="초식" type="button">초식</button>
+            </div>
+          </div>
+          <div class="filter-group">
+            <span class="field-label">공룡지식 LV</span>
+            <div class="level-filter" id="levelFilter" role="group" aria-label="Knowledge level filter">
+              <button class="active" data-level="all" type="button">전체</button>
+              <button data-level="1" type="button">LV1</button>
+              <button data-level="2" type="button">LV2</button>
+              <button data-level="3" type="button">LV3</button>
+              <button data-level="4" type="button">LV4</button>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Dark Mode Prototype</p>
+            <h2 id="viewTitle">공룡 계통도 맵</h2>
+          </div>
+          <div class="metric-row">
+            <div class="metric">
+              <strong id="metricSpecies">0</strong>
+              <span>종</span>
+            </div>
+            <div class="metric">
+              <strong id="metricClades">0</strong>
+              <span>분기</span>
+            </div>
+            <div class="metric">
+              <strong id="metricLevels">-</strong>
+              <span>지식 LV</span>
+            </div>
+            <div class="metric">
+              <strong id="metricImages">0</strong>
+              <span>이미지 슬롯</span>
+            </div>
+          </div>
+        </header>
+
+        <section class="view active" id="atlasView" aria-label="Phylogeny view">
+          <section class="map-panel">
+            <div class="map-toolbar">
+              <div>
+                <p class="eyebrow">Phylogeny Map</p>
+                <h3>시대별 계통 지도</h3>
+              </div>
+              <div class="map-controls" aria-label="Map controls">
+                <button id="zoomOut" class="icon-button" type="button" title="축소" aria-label="축소"><span class="button-icon icon-minus" aria-hidden="true"></span></button>
+                <span id="zoomLevel">100%</span>
+                <button id="zoomIn" class="icon-button" type="button" title="확대" aria-label="확대"><span class="button-icon icon-plus" aria-hidden="true"></span></button>
+                <button id="resetMap" class="icon-button" type="button" title="맞춤" aria-label="맞춤"><span class="button-icon icon-reset" aria-hidden="true"></span></button>
+              </div>
+            </div>
+
+            <div class="map-stage">
+              <div class="phylo-viewport" id="mapViewport" tabindex="0" aria-label="Pan and zoom phylogeny map">
+                <div class="phylo-canvas" id="phyloCanvas">
+                  <svg class="tree-lines" id="treeLines" viewBox="0 0 1900 1180" aria-hidden="true"></svg>
+                  <div class="period-bands" id="periodBands"></div>
+                  <div class="map-nodes" id="mapNodes"></div>
+                </div>
+              </div>
+              <aside class="map-inspector" id="detailPanel" aria-label="Selected dinosaur detail"></aside>
+            </div>
+          </section>
+        </section>
+
+        <section class="view" id="catalogView" aria-label="Catalog view">
+          <div class="catalog-toolbar">
+            <div>
+              <p class="eyebrow">Cards</p>
+              <h3>대표 공룡 도감</h3>
+            </div>
+            <select id="periodSort" aria-label="Sort catalog">
+              <option value="updated">최근 이미지순</option>
+              <option value="name">이름순</option>
+              <option value="level">LV순</option>
+              <option value="period">시대순</option>
+              <option value="size">크기순</option>
+            </select>
+          </div>
+          <div class="card-grid" id="catalogGrid"></div>
+        </section>
+
+        <section class="view" id="reviewView" aria-label="Image review view">
+          <div class="review-layout">
+            <section class="queue-panel">
+              <div class="section-title">
+                <p class="eyebrow">Image QA</p>
+                <h3>후보 선택 보드</h3>
+              </div>
+              <div id="reviewQueue" class="review-list"></div>
+            </section>
+            <section class="workflow-panel">
+              <div class="section-title">
+                <p class="eyebrow">Candidate Detail</p>
+                <h3>후보 비교와 대표 선택</h3>
+              </div>
+              <div id="workflowSteps" class="workflow-steps"></div>
+            </section>
+          </div>
+        </section>
+
+        <section class="view" id="assetReviewView" aria-label="Asset image review workbench">
+          <iframe
+            id="assetReviewFrame"
+            class="asset-review-frame"
+            title="이미지 검수 워크벤치"
+            src="http://127.0.0.1:8792/"
+          ></iframe>
+        </section>
+      </main>
+    </div>
+
+    <div class="image-lightbox" id="imageLightbox" hidden aria-hidden="true">
+      <button class="lightbox-backdrop" data-lightbox-action="close" type="button" aria-label="닫기"></button>
+      <section class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+        <div class="lightbox-topbar">
+          <div>
+            <p class="eyebrow" id="lightboxKind">Image Review</p>
+            <h3 id="lightboxTitle">후보 이미지</h3>
+          </div>
+          <button class="lightbox-close icon-button" data-lightbox-action="close" type="button" aria-label="닫기"><span class="button-icon icon-close" aria-hidden="true"></span></button>
+        </div>
+        <div class="lightbox-stage">
+          <button class="lightbox-nav prev icon-button" data-lightbox-action="prev" type="button" aria-label="이전 이미지"><span class="button-icon icon-chevron-left" aria-hidden="true"></span></button>
+          <img id="lightboxImage" alt="" />
+          <button class="lightbox-nav next icon-button" data-lightbox-action="next" type="button" aria-label="다음 이미지"><span class="button-icon icon-chevron-right" aria-hidden="true"></span></button>
+        </div>
+        <div class="lightbox-caption">
+          <p id="lightboxBody"></p>
+          <span class="source-note" id="lightboxSource"></span>
+          <span class="lightbox-count" id="lightboxCount"></span>
+        </div>
+      </section>
+    </div>
+
+<script src="./gallery-slots.js?v=20260713-gallery-slots-v8"></script>
+<script src="./app.js?v=20260714-taxonomy-search-v1"></script>
+  </body>
+</html>

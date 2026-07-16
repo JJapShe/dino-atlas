@@ -1,0 +1,16 @@
+{
+  "taxonId": "triceratops-horridus",
+  "experiment": "p1_v25_source_candidate",
+  "currentPrimary": "assets/dinosaurs/triceratops-horridus-allfeet-lora-i2i-comparison-v22.png",
+  "selectedReviewHold": "assets/dinosaurs/triceratops-horridus-imagegen-v25-source-candidate.png",
+  "reviewSheet": "assets/dinosaurs/triceratops-p1-v25-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/triceratops-p1-v25-crops.png",
+  "decision": "review_hold",
+  "reason": "V25 improves full-body visibility, tail length, frill attachment, and foot review compared with many older prompt attempts, but the beak/mouth reads partly open and the heavy body still carries mild rhino risk. Keep v22 first and use v25 only as a source/reference candidate.",
+  "rejectIfPromoting": [
+    "mouth or beak reads open",
+    "body reads as rhinoceros or mammal torso",
+    "feet collapse into hooves",
+    "frill appears shoulder-attached instead of skull-attached"
+  ]
+}

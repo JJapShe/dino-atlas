@@ -1,0 +1,31 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "route": "v6 source, dorsal-plate-band inpaint, Dinosaur_Generator_v2.0 weak LoRA",
+  "source": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "selectedOutputs": [
+    "assets/dinosaurs/stegosaurus-stenops-plate-lora-i2i-rejected-v56.png",
+    "assets/dinosaurs/stegosaurus-stenops-plate-lora-i2i-rejected-v57.png"
+  ],
+  "lora": "Dinosaur_Generator_v2.0-000011.safetensors",
+  "loraStrength": 0.07,
+  "clipStrength": 0.04,
+  "seeds": [
+    2026070356,
+    2026070357,
+    2026070358,
+    2026070359
+  ],
+  "denoise": [
+    0.12,
+    0.18,
+    0.24,
+    0.3
+  ],
+  "decision": "diagnostic only; do not replace v6 primary",
+  "findings": [
+    "low denoise v56 mostly copies v6 and does not improve alternating two-row plate topology",
+    "higher denoise v57 begins to soften plate/body texture without creating clearer separated staggered rows",
+    "body, legs, and thagomizer mostly survive, but the key plate gate is not improved"
+  ],
+  "nextRoute": "Use a stegosaur-specific LoRA or explicit local plate paintover plus structure-aware refinement; weak generic dinosaur LoRA over the plate band is insufficient."
+}

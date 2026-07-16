@@ -1,0 +1,159 @@
+{
+  "datasetId": "sauropod_apatosaurus_v1",
+  "trigger": "sauropod_apatosaurus",
+  "taxa": [
+    "Apatosaurus ajax",
+    "low-neck diplodocid sauropod"
+  ],
+  "licensePolicy": "Only project-internal AI-generated images and hand-authored guides are allowed as sources. External museum/science material is reference-only, not training data.",
+  "items": [
+    {
+      "id": "apatosaurus_imagegen_v3",
+      "role": "train_seed",
+      "source": "assets/dinosaurs/apatosaurus-ajax-imagegen-v3-source-candidate.png",
+      "caption": "sauropod_apatosaurus, Apatosaurus ajax, full body side profile, very low forward-reaching neck almost horizontal, small blunt non-predatory head, deep heavy torso without high shoulder peak, front and rear pillar limbs of similar height, exactly four visible broad sauropod feet on dry ground, very long single horizontal tail fully in frame, no Brachiosaurus high shoulders, no text, no watermark",
+      "strengths": [
+        "current app first candidate for the low-neck Apatosaurus gate",
+        "low forward neck, long horizontal tail, low shoulder profile, and four visible pillar legs are clearer than the previous v2 seed",
+        "strong prompt-only source for checking anti-Brachiosaurus morphology"
+      ],
+      "risks": [
+        "exact sauropod foot shape still needs crop review",
+        "species-level skull proportions are count-level rather than final"
+      ]
+    },
+    {
+      "id": "apatosaurus_lowneck_bodylock_guide_v1",
+      "role": "control_reference",
+      "source": "assets/dinosaurs/apatosaurus-ajax-lowneck-bodylock-guide-v1.png",
+      "caption": "control reference only, Apatosaurus ajax low-neck body-lock guide, low forward neck, small blunt head, non-high-shouldered torso, similar front and rear pillar limb height, four open feet, long horizontal tail, anti-Brachiosaurus silhouette guide",
+      "strengths": [
+        "locks Apatosaurus-specific low neck and similar-height limb profile",
+        "useful as ControlNet, depth, line, or i2i guidance"
+      ],
+      "risks": [
+        "schematic guide, not suitable for direct LoRA training",
+        "surface detail is intentionally simplified"
+      ]
+    },
+    {
+      "id": "apatosaurus_smallhead_imagegen_v2",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/apatosaurus-ajax-smallhead-imagegen-v2.png",
+      "caption": "review hold only, previous Apatosaurus app first candidate with small blunt head, low neck, full tail, and reviewable open feet",
+      "strengths": [
+        "stable older low-neck source with useful skull and foot comparison value",
+        "keeps full horizontal tail and four visible pillar legs"
+      ],
+      "risks": [
+        "low-neck and anti-Brachiosaurus silhouette read is weaker than v3",
+        "should not outrank the new v3 prompt-only candidate"
+      ]
+    },
+    {
+      "id": "apatosaurus_imagegen_v4_review_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/apatosaurus-ajax-imagegen-v4-source-candidate.png",
+      "caption": "review hold only, fresh Apatosaurus source candidate with low neck and clean leg count but slightly heavier head and edge crop risk",
+      "strengths": [
+        "similar low-neck diplodocid body plan to v3",
+        "feet and four-leg count remain reviewable"
+      ],
+      "risks": [
+        "head and neck read slightly heavier than v3",
+        "tail and framing are weaker than the selected v3 candidate"
+      ]
+    },
+    {
+      "id": "apatosaurus_imagegen_v5_tail_risk",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/apatosaurus-ajax-imagegen-v5-source-candidate.png",
+      "caption": "review hold only, fresh Apatosaurus comparison with good low-neck body but tail-tip bend and rear-foot overlap risk",
+      "strengths": [
+        "preserves low-neck non-Brachiosaurus body plan",
+        "useful comparison for tail and rear-foot overlap review"
+      ],
+      "risks": [
+        "tail tip bends more than v3",
+        "rear foot overlap is weaker for count review"
+      ]
+    },
+    {
+      "id": "apatosaurus_openfeet_imagegen_v2",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/apatosaurus-ajax-openfeet-imagegen-v2.png",
+      "caption": "review hold only, Apatosaurus open-feet imagegen comparison with better foot hints but heavier head and neck than the selected candidate",
+      "strengths": [
+        "useful open-foot and toe-hint comparison",
+        "preserves low-neck sauropod body plan"
+      ],
+      "risks": [
+        "head and neck read slightly heavier than the selected small-head candidate",
+        "do not train from it until head proportions are re-reviewed"
+      ]
+    },
+    {
+      "id": "apatosaurus_lowneck_imagegen_v1",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/apatosaurus-ajax-lowneck-imagegen-v1.png",
+      "caption": "review hold only, previous strict low-neck Apatosaurus imagegen candidate with good low neck and tail but weaker feet",
+      "strengths": [
+        "keeps long low forward neck, small head, deep torso, full horizontal tail, and four visible pillar legs",
+        "useful low-neck comparison against newer candidates"
+      ],
+      "risks": [
+        "feet are more column-like and less reviewable",
+        "head is less clean than the selected v2 candidate"
+      ]
+    },
+    {
+      "id": "apatosaurus_edge_volume_v1",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/apatosaurus-ajax-edge-volume-v1.png",
+      "caption": "review hold only, conservative edge-volume polish over the low-neck Apatosaurus floodplain candidate",
+      "strengths": [
+        "preserves low-neck silhouette, long tail, four pillar legs, and side-profile body",
+        "records the safest local polish route before full regeneration"
+      ],
+      "risks": [
+        "body remains somewhat flat",
+        "feet are partly hidden by foreground rise",
+        "not a stronger positive seed than the current v2 imagegen candidate"
+      ]
+    },
+    {
+      "id": "apatosaurus_visual_highneck_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/apatosaurus-ajax.png",
+      "caption": "reject reference only, earlier Apatosaurus visual candidate with readable sauropod profile but neck rising too high for the low-neck Apatosaurus gate",
+      "strengths": [
+        "records an older naturalistic sauropod render"
+      ],
+      "risks": [
+        "neck rises too high and can drift toward generic sauropod or Brachiosaurus reads",
+        "not suitable as a positive Apatosaurus seed"
+      ]
+    },
+    {
+      "id": "apato_edge_volume_v1_rejected_sheet",
+      "role": "reject_reference",
+      "source": "tools/comfyui/lora_training/sauropod_apatosaurus/review/apato_edge_volume_v1_rejected_contact_sheet.png",
+      "caption": "reject reference only, Apatosaurus edge-volume v1 contact sheet rejected because the polish made stale background-mask residue more visible",
+      "strengths": [
+        "documents an unsafe local polish setting"
+      ],
+      "risks": [
+        "background-mask residue becomes more visible",
+        "should not be used as a positive LoRA seed"
+      ]
+    }
+  ],
+  "rejectCriteria": [
+    "high Brachiosaurus-like shoulders or front limbs taller than hind limbs",
+    "vertical neck, giraffe-like neck pose, or generic high-neck sauropod drift",
+    "hidden feet, cropped feet, hoof-like feet, or unclear four-foot count",
+    "cropped tail, duplicate tail, short tail, or tail missing from frame",
+    "predatory head, monster teeth, excessive spikes, or fantasy ornament",
+    "text, logo, signature, watermark, border, or lower-corner artifacts"
+  ]
+}

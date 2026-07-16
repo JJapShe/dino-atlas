@@ -1,0 +1,36 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "round": "stego_opaque_plate_seed_v1",
+  "date": "2026-06-23",
+  "goal": "Test whether an opaque synthetic plate and thagomizer seed can avoid the translucent-guide failure and be naturalized by RealVisXL i2i.",
+  "inputs": {
+    "source": "assets/dinosaurs/stegosaurus-stenops-plate-relock-ipcontrol-v1.png",
+    "script": "tools/comfyui/scripts/paint_stego_opaque_plate_seed.py"
+  },
+  "experiments": [
+    {
+      "prefix": "stego_opaque_plate_seed_v1",
+      "type": "local opaque synthetic seed",
+      "sheet": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_opaque_plate_seed_v1_rejected_contact_sheet.png",
+      "plateCrops": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_opaque_plate_seed_v1_rejected_plate_crops.png",
+      "tailCrops": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_opaque_plate_seed_v1_rejected_tail_crops.png",
+      "finding": "Rejected as a direct app candidate. It replaces the transparent guide failure with countable opaque plates and visible tail spikes, but the base becomes a thick artificial back band."
+    },
+    {
+      "prefix": "stego_opaque_plate_i2i_v1",
+      "type": "RealVisXL i2i over opaque seed v1b",
+      "sheet": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_opaque_plate_i2i_v1_rejected_contact_sheet.png",
+      "tested": {
+        "seeds": [2026062891, 2026062892],
+        "denoise": [0.28, 0.38, 0.48]
+      },
+      "finding": "Rejected. The model preserves the artificial back band and turns the plate row toward a shell or armored ridge instead of natural embedded Stegosaurus dorsal plates."
+    }
+  ],
+  "decision": {
+    "promotedAsset": null,
+    "status": "rejected",
+    "reason": "The opaque synthetic seed is clearer than the translucent route, but RealVisXL i2i still does not convert it into plausible Stegosaurus anatomy.",
+    "nextRoute": "Use opaque synthetic seeds only as LoRA/control training material after improving their base integration. Do not promote them directly or rely on plain i2i to solve plate integration."
+  }
+}

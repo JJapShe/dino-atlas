@@ -1,0 +1,45 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "plate_row_i2i_v69",
+  "sourceImage": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "mask": "assets/dinosaurs/stegosaurus-plate-row-i2i-mask-v69.png",
+  "selectedReviewHold": "assets/dinosaurs/stegosaurus-stenops-plate-row-i2i-v69.png",
+  "reviewSheet": "assets/dinosaurs/stegosaurus-plate-row-i2i-v69-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-plate-row-i2i-v69-crops.png",
+  "contactSheet": "tools/comfyui/outputs/stegosaurus_plate_row_v69-contact-sheet.png",
+  "decision": "review_hold",
+  "selectedSeed": 2026070170,
+  "selectedDenoise": 0.16,
+  "reason": "The custom v69 mask keeps the v6 body, legs, and four-spike thagomizer stable while slightly hardening the dorsal plate edges. It remains a review hold because the alternating two-row topology is still not clearly stronger than v6.",
+  "keepCurrentPrimary": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "outputs": [
+    {
+      "label": "seed 2026070169 d0.16",
+      "image": "tools/comfyui/outputs/stegosaurus_plate_row_v69_custom_stegosaurus-stenops_seed2026070169_d16.png",
+      "seed": 2026070169,
+      "denoise": 0.16,
+      "decision": "reject_reference"
+    },
+    {
+      "label": "seed 2026070170 d0.16",
+      "image": "tools/comfyui/outputs/stegosaurus_plate_row_v69_custom_stegosaurus-stenops_seed2026070170_d16.png",
+      "seed": 2026070170,
+      "denoise": 0.16,
+      "decision": "review_hold"
+    },
+    {
+      "label": "seed 2026070169 d0.22",
+      "image": "tools/comfyui/outputs/stegosaurus_plate_row_v69_custom_stegosaurus-stenops_seed2026070169_d22.png",
+      "seed": 2026070169,
+      "denoise": 0.22,
+      "decision": "reject_reference"
+    },
+    {
+      "label": "seed 2026070170 d0.22",
+      "image": "tools/comfyui/outputs/stegosaurus_plate_row_v69_custom_stegosaurus-stenops_seed2026070170_d22.png",
+      "seed": 2026070170,
+      "denoise": 0.22,
+      "decision": "reject_reference"
+    }
+  ]
+}

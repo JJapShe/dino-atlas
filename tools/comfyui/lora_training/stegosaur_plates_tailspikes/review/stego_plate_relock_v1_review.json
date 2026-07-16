@@ -1,0 +1,57 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "round": "stego_plate_relock_v1",
+  "date": "2026-06-23",
+  "goal": "Improve Stegosaurus atlas-scale recognition by making the dorsal row read more clearly as separate upright bony plates than the prior block-like plate-focused i2i candidate.",
+  "referenceGate": {
+    "mustHave": [
+      "separate upright dorsal plates",
+      "visible gaps between plates",
+      "smaller plates toward the neck and tail base",
+      "coherent side-profile body with one tail and four legs"
+    ],
+    "rejectIf": [
+      "single continuous sail",
+      "soft rounded fin ridge",
+      "round turtle-like body drift",
+      "head or neck distortion",
+      "tail-tip inpaint that does not create countable four-spike thagomizer"
+    ]
+  },
+  "inputs": {
+    "styleReference": "tools/comfyui/outputs/stego_plate_identity_control_v1_style_transfer_stegosaurus-stenops_seed2026062832_iw22_cs78.png",
+    "controlSource": "assets/dinosaurs/stegosaurus-stenops-lowbody-plate-thagomizer-reference-v1.png",
+    "previousPrimary": "assets/dinosaurs/stegosaurus-stenops-plate-focused-i2i-v1.png"
+  },
+  "experiments": [
+    {
+      "prefix": "stego_plate_relock_v1",
+      "type": "IP-Adapter + ControlNet",
+      "sheet": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_plate_relock_v1_contact_sheet.png",
+      "selected": {
+        "seed": 2026062841,
+        "ipWeight": 0.14,
+        "controlStrength": 0.68,
+        "asset": "assets/dinosaurs/stegosaurus-stenops-plate-relock-ipcontrol-v1.png"
+      },
+      "finding": "Selected because the dorsal row reads more clearly as separate upright plates than the prior block-like i2i candidate while keeping the body mostly coherent."
+    },
+    {
+      "prefix": "stego_relock_tailspike_v1",
+      "type": "tail-tip inpaint",
+      "sheet": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_relock_tailspike_v1_rejected_contact_sheet.png",
+      "finding": "Rejected because the narrow tail-tip inpaint did not create a clearly countable four-spike thagomizer."
+    }
+  ],
+  "decision": {
+    "promotedAsset": "assets/dinosaurs/stegosaurus-stenops-plate-relock-ipcontrol-v1.png",
+    "status": "anatomy review",
+    "reason": "Promoted as the app-first plate-recognition review candidate because the dorsal plates are easier to read than the previous first image.",
+    "remainingIssues": [
+      "too few large rounded plates instead of many varied kite or diamond plates",
+      "weak or missing four-spike thagomizer",
+      "needs Stegosaurus-specific plate and tail-spike model support before approval"
+    ],
+    "nextRoute": "Use a focused stegosaurian plate/thagomizer LoRA or a synthetic seed/control set that forces both varied plate count and four tail spikes in the same generation pass."
+  }
+}

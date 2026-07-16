@@ -1,0 +1,26 @@
+{
+  "taxonId": "ankylosaurus-magniventris",
+  "experiment": "allfeet_lora_i2i_v17_v18",
+  "sourceImage": "assets/dinosaurs/ankylosaurus-magniventris-broadskull-i2i-v14.png",
+  "maskImage": "assets/dinosaurs/ankylosaurus-allfeet-i2i-mask-v17.png",
+  "comparisonNoLora": "assets/dinosaurs/ankylosaurus-magniventris-allfeet-i2i-comparison-v17.png",
+  "promotedCandidate": "assets/dinosaurs/ankylosaurus-magniventris-allfeet-lora-i2i-v18.png",
+  "reviewSheet": "assets/dinosaurs/ankylosaurus-allfeet-lora-i2i-v17-v18-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/ankylosaurus-allfeet-lora-i2i-v17-v18-crops.png",
+  "decision": "promote_candidate_pending_app_review",
+  "selectedSeed": 2026070924,
+  "selectedDenoise": 0.18,
+  "lora": "Ankylosaurus_Dinosaur.safetensors",
+  "loraStrength": 0.06,
+  "clipStrength": 0.04,
+  "reasons": [
+    "v18 keeps the v14 broad low body, compact skull, dense osteoderm rows, thick tail, and attached oval tail club",
+    "v18 improves visible sturdy-foot and toe separation compared with v14 and the previous v16 foot comparison",
+    "the change is local to the feet, so skull, armor layout, and tail club remain stable"
+  ],
+  "remainingRisks": [
+    "exact toe count and foot proportions still need final reference review",
+    "the skull remains acceptable but could still be broader and blunter in a future head-specific pass"
+  ],
+  "previousPrimary": "assets/dinosaurs/ankylosaurus-magniventris-broadskull-i2i-v14.png"
+}

@@ -1,0 +1,33 @@
+{
+  "taxonId": "plateosaurus-engelhardti",
+  "experiment": "p2_v16_v18_hand_visibility_candidates",
+  "currentPrimary": "assets/dinosaurs/plateosaurus-engelhardti-singleforelimb-smallhand-imagegen-v3.png",
+  "candidateDecisions": [
+    {
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v16-source-candidate.png",
+      "decision": "review_hold",
+      "reason": "Best P2 candidate: strong full-body Plateosaurus read, exactly two grounded hind legs, lifted forelimbs, and visible thumb-claw cue; keep below v3 because the claws may be overlong and hook-like."
+    },
+    {
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v17-source-candidate.png",
+      "decision": "reject_reference",
+      "reason": "Hands are visible but too human-like, over-digited, and overbuilt; useful only as a failure reference for hand exaggeration."
+    },
+    {
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v18-source-candidate.png",
+      "decision": "review_hold",
+      "reason": "Clean two-hind-leg silhouette and full tail, but the neck trends too long and hand/thumb-claw anatomy remains too soft for promotion."
+    }
+  ],
+  "reviewSheet": "assets/dinosaurs/plateosaurus-p2-v16-v18-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/plateosaurus-p2-v16-v18-crops.png",
+  "decision": "keep_current_primary",
+  "reason": "P2 improves visible lifted hands compared with v3/v15, especially in v16, but none proves better small five-finger/thumb-claw anatomy without new risks. Keep v3 first and use v16/v18 as review holds, with v17 as a strict hand-overbuild reject reference.",
+  "rejectIfPromoting": [
+    "forelimbs touch the ground or read as weight-bearing front legs",
+    "overlapping arms create a six-leg or extra-limb read",
+    "hands become human-like, over-digited, or giant theropod hook claws",
+    "head becomes predator-like, toothy, sauropod-like, or generic lizard-like",
+    "tail, feet, hands, or ground contact are hidden enough to block count review"
+  ]
+}

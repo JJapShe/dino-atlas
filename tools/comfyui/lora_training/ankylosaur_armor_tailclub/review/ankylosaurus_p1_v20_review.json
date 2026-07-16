@@ -1,0 +1,17 @@
+{
+  "taxonId": "ankylosaurus-magniventris",
+  "experiment": "p1_v20_source_candidate",
+  "currentPrimary": "assets/dinosaurs/ankylosaurus-magniventris-allfeet-lora-i2i-v18.png",
+  "selectedReviewHold": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v20-source-candidate.png",
+  "reviewSheet": "assets/dinosaurs/ankylosaurus-p1-v20-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/ankylosaurus-p1-v20-crops.png",
+  "decision": "review_hold",
+  "reason": "V20 is a project-owned source candidate with exactly four visible legs, planted feet, dense low rounded armor rows, a thick tail, and one attached oval tail club. Keep it as review_hold rather than a positive seed because the skull and body can still read slightly long or generic-reptile-like at close review.",
+  "rejectIfPromoting": [
+    "skull reads as a long monitor-lizard or crocodile snout",
+    "body reads as generic lizard, pangolin, turtle, armadillo, or fantasy reptile",
+    "tail club is detached, doubled, or replaced by spikes",
+    "feet are hidden, hoof-like, or create extra-limb ambiguity",
+    "armor becomes tall Stegosaurus-like plates instead of low rounded osteoderms"
+  ]
+}

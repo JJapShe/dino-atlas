@@ -1,0 +1,26 @@
+{
+  "taxonId": "plateosaurus-engelhardti",
+  "experiment": "p4_v22_v25_color_pattern_no_six_leg_candidates",
+  "previousPrimary": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v20-source-candidate.png",
+  "selectedCandidate": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v25-source-candidate.png",
+  "colorReviewHolds": [
+    "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v23-source-candidate.png",
+    "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v22-source-candidate.png"
+  ],
+  "rejectReferences": [
+    "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v24-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/plateosaurus-p4-v22-v25-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/plateosaurus-p4-v22-v25-crops.png",
+  "decision": "promote_v25_for_color_separation_with_no_six_leg_gate_pending_human_review",
+  "reason": "V25 is the best P4 color-pattern balance: it separates Plateosaurus from the sandy/tan gallery with charcoal green-gray skin, cream speckles, and darker tail bands while preserving two grounded hind legs and short lifted forelimbs. V23 has the strongest red-clay color variation but keeps longer hook-risk fingers; v22 is useful olive/cream color evidence but also keeps long hands; v24 is rejected because hand length and hind-leg overlap are less safe.",
+  "nextRoute": "Use v25 as the current color-separated smoke-test seed. Future localized hand i2i should preserve the dark speckled color, two grounded hind legs, full tail, and lifted forelimbs while shortening the fingers and clarifying the larger thumb-claw cue.",
+  "rejectIfPromoting": [
+    "forelimbs touch the ground or read as weight-bearing front legs",
+    "overlapping arms create a six-leg or extra-limb read",
+    "hands become long dangling theropod hooks",
+    "color collapses back to plain sandy tan",
+    "head becomes predator-like, toothy, sauropod-like, or generic lizard-like",
+    "tail, feet, hands, or ground contact are hidden enough to block count review"
+  ]
+}

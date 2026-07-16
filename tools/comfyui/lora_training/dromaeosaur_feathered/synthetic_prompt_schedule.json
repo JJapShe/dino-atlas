@@ -1,0 +1,58 @@
+{
+  "datasetId": "dromaeosaur_feathered_v1",
+  "trigger": "dromaeosaur_feathered",
+  "purpose": "Generate project-owned synthetic candidates for review before adding them to a custom dromaeosaur LoRA dataset.",
+  "basePositive": "clean digital paleoart, modern dinosaur encyclopedia quality, project-owned synthetic training candidate, single adult Velociraptor mongoliensis, dromaeosaur_feathered, small turkey-sized feathered dromaeosaur, full body lateral side view, long stiff balancing tail, narrow toothed snout, dense downy body feathers, folded wing-like forelimbs held close to the ribs, two hind legs, raised enlarged sickle claw on the second toe when feet are visible, Late Cretaceous Mongolian desert, natural daylight, no text, no watermark",
+  "baseNegative": "naked scaly movie raptor, giant monster raptor, human-sized body, bird beak, modern bird body, spread wings, flying wings, extra legs, duplicate limbs, duplicate tail, missing tail, missing forelimbs, missing sickle claw, generic bird talons, hooves, text, logo, watermark, signature, border",
+  "reviewBeforeTraining": true,
+  "prompts": [
+    {
+      "id": "side_walk_dune_01",
+      "variation": "slow walking left-facing side profile on a low dune, both feet visible, one raised sickle claw clearly lifted"
+    },
+    {
+      "id": "side_walk_dune_02",
+      "variation": "right-facing side profile on sandy ground with sparse scrub, folded feathered arms visible against the ribs"
+    },
+    {
+      "id": "low_crouch_01",
+      "variation": "low cautious walking pose, tail held straight behind for balance, dense neck and hip feathers"
+    },
+    {
+      "id": "riverbed_01",
+      "variation": "dry riverbed edge, full body in frame, small scale emphasized by low shrubs, feet unobscured"
+    },
+    {
+      "id": "open_step_01",
+      "variation": "mid-step pose with the near foot lifted slightly, enlarged sickle claw raised off the ground"
+    },
+    {
+      "id": "folded_wing_close_01",
+      "variation": "three-quarter side view but still full body, folded wing-like forelimb feathers layered close to the torso"
+    },
+    {
+      "id": "tail_profile_01",
+      "variation": "long straight tail fully visible with no tail artifact, side profile, calm standing pose"
+    },
+    {
+      "id": "cream_belly_01",
+      "variation": "brown dorsal plumage and cream throat/belly, feather texture integrated naturally, no scales on arms"
+    },
+    {
+      "id": "feet_detail_01",
+      "variation": "slightly lower camera angle focused on full body and visible feet, two walking toes plus raised sickle claw"
+    },
+    {
+      "id": "small_scale_01",
+      "variation": "small animal scale in sparse Mongolian desert scrub, not a giant predator, full tail and feet visible"
+    },
+    {
+      "id": "desert_scrub_01",
+      "variation": "pale blue sky and dry scrubland, dense downy body feathers, folded arms, clean side silhouette"
+    },
+    {
+      "id": "neutral_reference_01",
+      "variation": "neutral educational reference pose, full body side profile, clear anatomy, restrained color, no dramatic action"
+    }
+  ]
+}

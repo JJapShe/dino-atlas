@@ -1,0 +1,332 @@
+{
+  "datasetId": "early_sauropodomorph_plateosaurus_v1",
+  "trigger": "early_sauropodomorph_plateosaurus",
+  "taxa": [
+    "Plateosaurus engelhardti",
+    "early sauropodomorph"
+  ],
+  "licensePolicy": "Only project-internal AI-generated images and hand-authored guides are allowed as sources. External museum/science material is reference-only, not training data.",
+  "items": [
+    {
+      "id": "plateosaurus_imagegen_v25_dark_speckled_color_seed",
+      "role": "train_seed",
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v25-source-candidate.png",
+      "caption": "early_sauropodomorph_plateosaurus, Plateosaurus engelhardti, full body side profile, low non-predatory herbivore head, long forward neck, deep torso, full single tail, exactly two large weight-bearing hind legs on dry ground, short lifted forelimbs off the ground, compact small hands with thumb-claw cue, charcoal green-gray dorsal skin, pale cream underside, dense cream speckles, darker tail bands, no six legs, no quadrupedal stance, no text, no watermark",
+      "strengths": [
+        "current app first candidate after P4 color-pattern crop review",
+        "adds strong gallery color separation with charcoal green-gray skin, cream speckles, and darker tail bands",
+        "keeps exactly two grounded hind legs and lifted forelimbs with no forelimb ground contact",
+        "preserves low herbivore head, forward neck, deep torso, and full tail"
+      ],
+      "risks": [
+        "exact five-finger hand topology and thumb-claw shape remain count-level rather than final",
+        "future hand-local i2i must not erase the dark speckled color pattern",
+        "needs final paleontology review before release approval"
+      ]
+    },
+    {
+      "id": "plateosaurus_imagegen_v27_best_p5_no_six_leg_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v27-source-candidate.png",
+      "caption": "review hold only, P5 Plateosaurus engelhardti no-six-leg candidate, blue-gray olive speckled body, rusty shoulder and hip patches, exactly two grounded hind legs, very short lifted forelimbs, no forelimb ground contact, hand and thumb-claw details partly fused and weak",
+      "strengths": [
+        "safest new P5 two-grounded-hind-leg silhouette",
+        "short lifted forelimbs avoid the weight-bearing front-leg and six-leg risks",
+        "blue-gray olive speckles and rusty patches add useful color variation"
+      ],
+      "risks": [
+        "hands are partly fused against the body and thumb-claw cue is weak",
+        "not a positive seed until localized hand topology improves",
+        "keep below v25 for app-first color/body balance"
+      ]
+    },
+    {
+      "id": "plateosaurus_imagegen_v28_moss_burgundy_color_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v28-source-candidate.png",
+      "caption": "review hold only, P5 Plateosaurus engelhardti moss-green and burgundy color candidate, two grounded hind legs, lifted forelimbs off the ground, dark tail bands, hands lengthen again and need rejection-gate review",
+      "strengths": [
+        "useful moss-green, cream-speckled, burgundy-throat color variation",
+        "full body, tail bands, and two grounded hind legs remain readable",
+        "forelimbs stay lifted off the ground"
+      ],
+      "risks": [
+        "hands lengthen toward hook-like fingers again",
+        "not safer than v25 or v27 for hand/thumb topology",
+        "review hold only, not positive training material"
+      ]
+    },
+    {
+      "id": "plateosaurus_imagegen_v26_hook_hand_color_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v26-source-candidate.png",
+      "caption": "reject reference only, P5 Plateosaurus engelhardti charcoal and copper color candidate with useful speckles and tail bands but long hook-like lifted hand fingers",
+      "strengths": [
+        "documents a charcoal/copper color route with strong tail bands"
+      ],
+      "risks": [
+        "forelimb fingers are too long and hook-like for Plateosaurus promotion",
+        "must stay out of positive LoRA training",
+        "use as a future rejection gate for hand-local i2i"
+      ]
+    },
+    {
+      "id": "plateosaurus_imagegen_v23_red_clay_color_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v23-source-candidate.png",
+      "caption": "review hold only, Plateosaurus P4 red-clay color candidate with strong rust-red dorsal color and dark flank spots, two grounded hind legs, lifted forelimbs, and hook-risk hand length",
+      "strengths": [
+        "strongest red-clay color separation from sandy-tan gallery defaults",
+        "keeps the no-six-leg silhouette and full tail"
+      ],
+      "risks": [
+        "fingers remain longer and more hook-like than v25",
+        "not safer than v25 for positive training"
+      ]
+    },
+    {
+      "id": "plateosaurus_imagegen_v22_olive_mottled_color_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v22-source-candidate.png",
+      "caption": "review hold only, Plateosaurus P4 olive and cream mottled candidate with useful tail bands, lifted forelimbs, and long hand-claw risk",
+      "strengths": [
+        "useful olive and cream mottled color variation",
+        "keeps full side body, full tail, and no-six-leg stance"
+      ],
+      "risks": [
+        "lifted hands still read too long and hook-like",
+        "not a positive seed until hand anatomy improves"
+      ]
+    },
+    {
+      "id": "plateosaurus_imagegen_v24_hook_hand_overlap_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v24-source-candidate.png",
+      "caption": "reject reference only, Plateosaurus P4 slate and ochre banded candidate with distinct color but unsafe long hook-like hands and weaker hind-leg overlap for the no-six-leg gate",
+      "strengths": [
+        "documents a distinct slate and ochre banded color attempt"
+      ],
+      "risks": [
+        "hands lengthen again into hook-like claws",
+        "hind-leg overlap is less safe for count-level review",
+        "must stay out of positive training material"
+      ]
+    },
+    {
+      "id": "plateosaurus_imagegen_v20_two_lifted_hands_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v20-source-candidate.png",
+      "caption": "review hold only, previous Plateosaurus v20 anatomy-first source with both short forelimbs lifted off the ground, exactly two grounded hind legs, low herbivore head, full tail, and plain sandy-tan color now superseded by v25 for gallery color separation",
+      "strengths": [
+        "previous app first candidate after P3 crop review",
+        "shows both lifted forelimbs more clearly than v3",
+        "keeps exactly two weight-bearing hind legs with no forelimb ground contact",
+        "preserves low herbivore head, forward neck, deep torso, and full tail"
+      ],
+      "risks": [
+        "plain sandy-tan color is less useful for gallery-wide species separation than v25",
+        "hand/finger and thumb-claw shapes may still be overlong or hook-like",
+        "exact five-finger hand topology remains count-level rather than final"
+      ]
+    },
+    {
+      "id": "plateosaurus_singleforelimb_smallhand_v3",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-singleforelimb-smallhand-imagegen-v3.png",
+      "caption": "review hold only, previous app-first Plateosaurus engelhardti v3 candidate, low non-predatory herbivore head, long forward neck, deep torso, full tail, exactly two grounded hind legs, one clearly lifted forelimb, far forelimb mostly hidden compared with v20",
+      "strengths": [
+        "previous app first candidate for the no-six-leg Plateosaurus gate",
+        "keeps low herbivore head, forward neck, full tail, two grounded hind legs, and one clearly lifted forelimb",
+        "reduces the large hook-hand and extra-limb risks from older attempts"
+      ],
+      "risks": [
+        "far forelimb is mostly hidden compared with v20",
+        "exact five-finger hand and thumb-claw topology remains count-level rather than final"
+      ]
+    },
+    {
+      "id": "plateosaurus_no_six_leg_bodylock_guide_v1",
+      "role": "control_reference",
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-bodylock-guide-v1.png",
+      "caption": "control reference only, Plateosaurus engelhardti no-six-leg body-lock guide, low herbivore head, long forward neck, full tail, exactly two weight-bearing hind legs, short lifted forelimbs, five-finger hands, larger thumb-claw cue, no quadrupedal stance",
+      "strengths": [
+        "explicitly locks hind-leg-dominant bipedal stance and lifted forelimbs",
+        "useful as ControlNet, line, depth, or i2i guidance before natural rendering"
+      ],
+      "risks": [
+        "schematic guide, not suitable for direct LoRA training",
+        "hand markings are QA targets rather than final texture"
+      ]
+    },
+    {
+      "id": "plateosaurus_thumbtip_micro_i2i_v14",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-thumbtip-micro-i2i-comparison-v14.png",
+      "caption": "review hold only, low-denoise thumb-tip i2i over the selected Plateosaurus v3 candidate, preserves no-six-leg body gate while testing a subtle thumb-claw cue",
+      "strengths": [
+        "preserves the v3 low head, full tail, two grounded hind legs, and lifted forelimb",
+        "documents the safest local hand-tip edit route so far"
+      ],
+      "risks": [
+        "edit is too subtle to prove a better five-finger hand",
+        "do not train from it until close crop review proves a real anatomical improvement"
+      ]
+    },
+    {
+      "id": "plateosaurus_imagegen_v19_hand_detail_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v19-source-candidate.png",
+      "caption": "review hold only, P3 Plateosaurus engelhardti candidate with good hand visibility, no six-leg drift, low herbivore head, full tail, and exactly two grounded hind legs, fingers and claws trend long and hook-like",
+      "strengths": [
+        "good hand visibility and no-six-leg body read",
+        "keeps low herbivore head, forward neck, full tail, and two grounded hind legs"
+      ],
+      "risks": [
+        "fingers and thumb claws trend long and hook-like",
+        "less suitable than v20 as a positive seed"
+      ]
+    },
+    {
+      "id": "plateosaurus_imagegen_v21_silhouette_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v21-source-candidate.png",
+      "caption": "review hold only, P3 Plateosaurus engelhardti candidate with clean body, tail, and two-grounded-hind-leg read, far forelimb remains weaker than v20",
+      "strengths": [
+        "clean side silhouette with low herbivore head, deep torso, full tail, and two grounded hind legs",
+        "useful no-six-leg comparison"
+      ],
+      "risks": [
+        "far forelimb remains weaker than v20",
+        "hand/thumb-claw anatomy is not clear enough for promotion"
+      ]
+    },
+    {
+      "id": "plateosaurus_imagegen_v15_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v15-source-candidate.png",
+      "caption": "review hold only, prompt-only Plateosaurus engelhardti candidate with low herbivore head, long forward neck, full tail, two large grounded hind legs, and short lifted forelimbs",
+      "strengths": [
+        "preserves the useful bipedal body gate with exactly two grounded hind legs",
+        "keeps a low non-predatory head, long neck, full tail, and lifted forelimb posture"
+      ],
+      "risks": [
+        "hands remain soft and do not prove five-finger thumb-claw anatomy",
+        "far forelimb is not clearly enough separated for final approval",
+        "should stay below v3 until crop review shows a decisive hand improvement"
+      ]
+    },
+    {
+      "id": "plateosaurus_imagegen_v16_hand_visibility_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v16-source-candidate.png",
+      "caption": "review hold only, Plateosaurus engelhardti P2 prompt-only candidate with readable side silhouette, low herbivore head, full single tail, exactly two grounded hind legs, lifted forelimbs, and visible thumb-claw cues",
+      "strengths": [
+        "best P2 hand-visibility candidate",
+        "keeps exactly two grounded hind legs with no six-leg read",
+        "shows lifted forelimbs and visible thumb-claw cues more clearly than v15"
+      ],
+      "risks": [
+        "thumb claws may be overlong and hook-like",
+        "not proven as small five-finger Plateosaurus hands",
+        "keep below v3 until crop review and reference checking reduce the hand exaggeration risk"
+      ]
+    },
+    {
+      "id": "plateosaurus_imagegen_v17_hand_overbuild_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v17-source-candidate.png",
+      "caption": "reject reference only, Plateosaurus P2 candidate with visible lifted hands that become too human-like, over-digited, and overbuilt",
+      "strengths": [
+        "records a useful failure mode for hand visibility prompts",
+        "body gate and two grounded hind legs are readable"
+      ],
+      "risks": [
+        "hands are too human-like",
+        "hands are over-digited and too large for a positive Plateosaurus seed",
+        "must stay out of train_seed material"
+      ]
+    },
+    {
+      "id": "plateosaurus_imagegen_v18_silhouette_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v18-source-candidate.png",
+      "caption": "review hold only, Plateosaurus P2 silhouette candidate with clean two-hind-leg stance, full tail, and lifted forelimbs",
+      "strengths": [
+        "clean two-grounded-hind-leg silhouette",
+        "keeps full single tail and lifted forelimb posture",
+        "useful as a safer silhouette comparison against hand-focused prompts"
+      ],
+      "risks": [
+        "neck trends too long and sauropod-like",
+        "hand and thumb-claw detail remains soft",
+        "not suitable as a positive seed until hand anatomy is clearer"
+      ]
+    },
+    {
+      "id": "plateosaurus_bodylock_control_v13",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-bodylock-control-comparison-v13.png",
+      "caption": "review hold only, body-lock ControlNet Plateosaurus comparison with lifted forelimbs and clean two-hind-leg silhouette",
+      "strengths": [
+        "clearer two-grounded-hind-leg silhouette than many older failures",
+        "forelimbs remain lifted rather than weight-bearing"
+      ],
+      "risks": [
+        "plain guide-like render is not representative quality",
+        "exact five-finger hand anatomy remains soft"
+      ]
+    },
+    {
+      "id": "plateosaurus_smallhand_thumbclaw_v3",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-smallhand-thumbclaw-imagegen-v3.png",
+      "caption": "review hold only, Plateosaurus v3 thumb-claw comparison with good body mass but larger hook-hand risk",
+      "strengths": [
+        "strong body and herbivore head comparison",
+        "useful for thumb-claw prompt testing"
+      ],
+      "risks": [
+        "lifted hands can read too long and hook-like",
+        "should stay below the selected v3 candidate"
+      ]
+    },
+    {
+      "id": "plateosaurus_forelimb_inpaint_v1_sixleg_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-forelimb-inpaint-v1.png",
+      "caption": "reject reference only, broad Plateosaurus forelimb inpaint that makes overlapping limbs read as extra legs and fails the no-six-leg gate",
+      "strengths": [
+        "records why broad forelimb edits are unsafe"
+      ],
+      "risks": [
+        "overlapping limbs read as extra legs",
+        "forelimb edit undermines the two-grounded-hind-leg body gate",
+        "must not be used as a positive LoRA seed"
+      ]
+    },
+    {
+      "id": "plateosaurus_controlnet_v2_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-controlnet-v2.png",
+      "caption": "reject reference only, earlier Plateosaurus ControlNet candidate with ambiguous tail, shadow, forelimb stance, and weak Plateosaurus identity",
+      "strengths": [
+        "documents older guide-conditioned route"
+      ],
+      "risks": [
+        "tail and shadow area are ambiguous",
+        "forelimb stance is unreliable",
+        "body drifts away from a confident Plateosaurus read"
+      ]
+    }
+  ],
+  "rejectCriteria": [
+    "six legs, duplicated limbs, or overlapping arms that read as extra legs",
+    "forelimbs touching the ground or quadrupedal stance",
+    "huge theropod hook hands instead of short lifted five-finger hands",
+    "predator head, sauropod head, generic lizard drift, or monster teeth",
+    "cropped tail, hidden feet, missing hind legs, or unclear ground contact",
+    "text, logo, signature, watermark, border, or lower-corner artifacts",
+    "color collapses back to plain sandy tan after v25 color promotion",
+    "hand-local edits erase the charcoal green-gray speckles or darker tail bands"
+  ]
+}

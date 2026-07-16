@@ -1,0 +1,48 @@
+{
+  "datasetId": "theropod_allosaurus",
+  "route": "threefinger_bodylock_control",
+  "trigger": "allosaurus atlas candidate",
+  "controlReferences": [
+    "assets/dinosaurs/allosaurus-fragilis-threefinger-bodylock-guide-v1.png",
+    "assets/dinosaurs/allosaurus-threefinger-bodylock-crops-v10.png",
+    "assets/dinosaurs/allosaurus-review-options-v10.png"
+  ],
+  "basePositive": "museum-quality realistic paleoart, full-body lateral side profile of Allosaurus fragilis, one animal, lower elongated allosaur skull, smooth low brow with no horns, medium non-weight-bearing forelimbs below the chest, exactly three clawed fingers per visible hand, lean Jurassic theropod torso, exactly two strong hind legs, dry three-toed theropod feet visible on ground, long single balancing tail fully in frame, Late Jurassic Morrison Formation dry floodplain, natural daylight, detailed pebbled skin",
+  "baseNegative": "Tyrannosaurus rex, massive tyrannosaur skull, tiny two-finger arms, two fingers, missing third finger, extra fingers, human-like hands, oversized hook claws, horned brow, fantasy horns, crest, monster spikes, hidden hands, cropped feet, cropped tail, extra legs, missing legs, duplicate tail, logo bar, source text, watermark, caption, label",
+  "passes": [
+    {
+      "id": "controlnet_threefinger_bodylock_low_denoise",
+      "mode": "i2i_controlnet",
+      "sourceImage": "assets/dinosaurs/allosaurus-fragilis-smoothbrow-threefinger-imagegen-v4.png",
+      "controlImage": "assets/dinosaurs/allosaurus-fragilis-threefinger-bodylock-guide-v1.png",
+      "denoiseRange": [0.2, 0.34],
+      "controlStrengthRange": [0.52, 0.76],
+      "promptFocus": "preserve the current natural scene while enforcing medium forelimbs and exactly three fingers without reviving horn-like brow bumps"
+    },
+    {
+      "id": "ipadapter_style_plus_threefinger_control",
+      "mode": "ipadapter_controlnet",
+      "styleReference": "assets/dinosaurs/allosaurus-fragilis-smoothbrow-threefinger-imagegen-v4.png",
+      "controlImage": "assets/dinosaurs/allosaurus-fragilis-threefinger-bodylock-guide-v1.png",
+      "denoiseRange": [0.3, 0.46],
+      "controlStrengthRange": [0.62, 0.86],
+      "promptFocus": "borrow the current v4 texture and daylight while enforcing lower skull, medium arms, three fingers, two hind legs, and long tail"
+    },
+    {
+      "id": "local_hand_brow_repair_probe",
+      "mode": "masked_i2i",
+      "sourceImage": "assets/dinosaurs/allosaurus-fragilis-smoothbrow-threefinger-imagegen-v4.png",
+      "maskTarget": "forelimb hands and brow ridge only",
+      "denoiseRange": [0.12, 0.26],
+      "promptFocus": "repair only hand separation or brow smoothness; reject if arm scale, head mass, or body texture shifts"
+    }
+  ],
+  "manualGate": [
+    "reject if either visible hand loses the third finger or reads as two-fingered",
+    "reject if arms shrink into T. rex proportions or enlarge into weight-bearing limbs",
+    "reject if brow bumps become horns, spikes, or a fantasy crest",
+    "reject if the skull becomes too massive and tyrannosaur-like",
+    "reject if feet, hands, or tail are cropped or too hidden to review",
+    "reject if source-like text, logo bars, captions, or watermarks appear"
+  ]
+}

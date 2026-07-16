@@ -1,0 +1,60 @@
+{
+  "taxonId": "velociraptor-mongoliensis",
+  "round": "velo_refined_plumage_sickle_v1",
+  "date": "2026-06-23",
+  "goal": "Incrementally improve the app-first Velociraptor candidate by strengthening feather mass and rear-foot sickle-claw cues without breaking the existing tail, two-leg stance, folded forelimbs, or side-profile silhouette.",
+  "referenceGate": {
+    "mustHave": [
+      "small feathered dromaeosaur body",
+      "long stiff tail",
+      "folded feathered forelimbs",
+      "two hind legs only",
+      "rear-foot raised sickle-claw cue when feet are visible"
+    ],
+    "rejectIf": [
+      "giant naked movie raptor",
+      "modern bird body or toothless beak",
+      "extra legs or floating feet",
+      "lost tail",
+      "ordinary lizard feet with no sickle-claw cue",
+      "oversized fantasy talons"
+    ]
+  },
+  "inputs": {
+    "baseCandidate": "assets/dinosaurs/velociraptor-mongoliensis-refined-plumage-v1.png",
+    "localGuideSelected": "tools/comfyui/outputs/velo_refined_plumage_sickle_v2_v2b.png",
+    "selectedComfyOutput": "tools/comfyui/ComfyUI/output/dino_atlas/velo_refined_plumage_sickle_refiner_v1_velociraptor-mongoliensis_d12_00001_.png"
+  },
+  "experiments": [
+    {
+      "prefix": "velo_refined_plumage_sickle_v2",
+      "type": "local guide paintover",
+      "sheet": "tools/comfyui/lora_training/dromaeosaur_feathered/review/velo_refined_plumage_sickle_v2_contact_sheet.png",
+      "cropSheet": "tools/comfyui/lora_training/dromaeosaur_feathered/review/velo_refined_plumage_sickle_v2_crop_sheet.png",
+      "selectedVariant": "v2b",
+      "finding": "The v2b local guide gives the clearest folded-arm/torso feather mass and rear-foot cue, but remains too visibly painted for direct app promotion."
+    },
+    {
+      "prefix": "velo_refined_plumage_sickle_refiner_v1",
+      "type": "low-denoise refiner",
+      "sheet": "tools/comfyui/lora_training/dromaeosaur_feathered/review/velo_refined_plumage_sickle_refiner_v1_contact_sheet.png",
+      "footCropSheet": "tools/comfyui/lora_training/dromaeosaur_feathered/review/velo_refined_plumage_sickle_refiner_v1_foot_crops.png",
+      "selected": {
+        "seed": 2026062841,
+        "denoise": 0.12,
+        "asset": "assets/dinosaurs/velociraptor-mongoliensis-plumage-sickle-refined-v1.png"
+      },
+      "rejectedDenoise": [
+        0.2,
+        0.28
+      ],
+      "finding": "Denoise 0.12 lightly naturalizes the local guide while preserving the coarse anatomy gate. Higher denoise values soften the rear-foot cue and make foot review weaker."
+    }
+  ],
+  "decision": {
+    "promotedAsset": "assets/dinosaurs/velociraptor-mongoliensis-plumage-sickle-refined-v1.png",
+    "status": "demoted to reject_reference after direct identity review",
+    "reason": "The pass is useful negative evidence for feather-mass and rear-foot experiments, but the head reads too bird-like and the rear-foot sickle cue is still not diagnostic enough for representative Velociraptor promotion.",
+    "remainingRisk": "Exact toe shape, raised second-toe claw anatomy, toothed non-beak head identity, and full dromaeosaur feather coverage still need a custom dromaeosaur LoRA or stronger reference-conditioned generation."
+  }
+}

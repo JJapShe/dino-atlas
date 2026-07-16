@@ -1,0 +1,19 @@
+{
+  "taxonId": "ankylosaurus-magniventris",
+  "experiment": "schedule_i2i_v12",
+  "sourceImage": "assets/dinosaurs/ankylosaurus-magniventris-broadskull-singleclub-imagegen-v5.png",
+  "outputs": [
+    "assets/dinosaurs/ankylosaurus-magniventris-schedule-i2i-osteoderm-comparison-v12.png",
+    "assets/dinosaurs/ankylosaurus-magniventris-schedule-i2i-cropready-comparison-v12.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/ankylosaurus-review-options-v12.png",
+  "cropSheet": "assets/dinosaurs/ankylosaurus-schedule-i2i-crops-v12.png",
+  "decision": "comparison_only",
+  "reasons": [
+    "the attached single tail club and broad low body survive",
+    "neither output clearly improves the current v5 primary",
+    "v5 remains the stronger app-scale representative read"
+  ],
+  "keepCurrentPrimary": "assets/dinosaurs/ankylosaurus-magniventris-broadskull-singleclub-imagegen-v5.png",
+  "nextRoute": "Use a stronger ankylosaurid LoRA or more local skull/club masking before replacing v5; avoid clean-corners postprocessing when it creates lower-frame blocks."
+}

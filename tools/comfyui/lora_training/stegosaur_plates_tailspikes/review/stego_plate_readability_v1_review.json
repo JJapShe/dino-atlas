@@ -1,0 +1,41 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "reviewDate": "2026-06-24",
+  "objective": "Replace the diagram-like first Stegosaurus image with the best current natural candidate whose dorsal plates read clearly as separate Stegosaurus plates.",
+  "selected": {
+    "asset": "assets/dinosaurs/stegosaurus-stenops-plate-readable-natural-v1.png",
+    "sourceOutput": "tools/comfyui/outputs/stego_tailref_combined_control_v1_style_transfer_stegosaurus-stenops_seed2026062721_iw07_cs66.png",
+    "method": "IP-Adapter + ControlNet, reference tailroom-thagomizer candidate, combined plate/thagomizer control reference",
+    "reason": "Best natural-render balance in the current pool: broad separated dorsal plates are readable at app scale, the body remains quadrupedal, and the tail-tip thagomizer is visible.",
+    "remainingRisk": "The two staggered plate rows are implied more than fully resolved, and the tail spikes are still weaker than the plate row."
+  },
+  "rejected": [
+    {
+      "asset": "assets/dinosaurs/stegosaurus-stenops-plate-priority-structure-v1.png",
+      "reason": "Good diagnostic guide but too flat and diagram-like for the app's first image."
+    },
+    {
+      "asset": "assets/dinosaurs/stegosaurus-stenops-plate-relock-ipcontrol-v1.png",
+      "reason": "Natural body is useful, but the dorsal row still collapses toward too few rounded plates."
+    },
+    {
+      "asset": "tools/comfyui/outputs/stego_dorsal_plate_inpaint_review_v1_stego_dorsal_plates_stegosaurus-stenops_seed2026064101_d28.png",
+      "reason": "Dorsal-plate inpaint preserved the body but reverted to a few large rounded plates."
+    },
+    {
+      "asset": "tools/comfyui/outputs/stego_plate_rebuild_relock_v1_v1a.png",
+      "reason": "Local rebuild made the plate count clear but looked like pasted opaque panels."
+    },
+    {
+      "asset": "tools/comfyui/outputs/stego_plate_readability_sweep_v1_style_transfer_stegosaurus-stenops_seed2026064301_iw06_cs70.png",
+      "reason": "New control sweep drifted toward armor-shell body construction and unusable leg proportions."
+    }
+  ],
+  "reviewSheets": {
+    "contactSheet": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_plate_readability_v1_contact_sheet.png",
+    "plateCrops": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_plate_readability_v1_plate_crops.png",
+    "appContactSheet": "assets/dinosaurs/stegosaurus-review-options-v37.png",
+    "appPlateCrops": "assets/dinosaurs/stegosaurus-plate-crops-v9.png"
+  },
+  "nextRecommendation": "For the next Stegosaurus pass, use the selected natural candidate as the visual reference but build a narrow, plate-only control/mask that adds explicit alternating-row depth without repainting the body or tail."
+}

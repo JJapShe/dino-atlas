@@ -1,0 +1,35 @@
+{
+  "datasetId": "stegosaur_plates_tailspikes_v1",
+  "runIds": [
+    "stego_clear_dorsal_plates_angular_v1",
+    "stego_clearplates_refine_v1",
+    "stego_clearplates_ipcontrol_v1",
+    "stego_plate_silhouette_angular_v1"
+  ],
+  "date": "2026-06-23",
+  "sourceImages": [
+    "assets/dinosaurs/stegosaurus-stenops-angular-plate-ipcontrol-v1.png",
+    "assets/dinosaurs/stegosaurus-stenops-bony-plates-lora-control-v1.png"
+  ],
+  "contactSheets": [
+    "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_clear_dorsal_plates_angular_v1_contact_sheet.png",
+    "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_clearplates_refine_v1_rejected_contact_sheet.png",
+    "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_clearplates_ipcontrol_v1_rejected_contact_sheet.png",
+    "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_plate_silhouette_angular_v1_rejected_contact_sheet.png"
+  ],
+  "reviewDecision": "reject_generated_outputs_for_training",
+  "summary": "Local clear-plate paintovers improved plate countability but remained too visibly composited. Refiner passes either preserved the pasted-plate look at low denoise or fused the row back into a connected ridge at higher denoise. IP-Adapter + ControlNet over the clear plate guide broke the body orientation or reinterpreted the guide as a shell/white ridge. The outputs are useful diagnostic references, but none should be promoted as app candidates or LoRA train_seed images.",
+  "primaryRejectReasons": [
+    "clear plate paintovers read as pasted slabs rather than integrated bony plates",
+    "refiner d0.16 and d0.22 preserve the graphic guide look too strongly",
+    "refiner d0.30 starts fusing plates back into a connected dorsal ridge",
+    "IP-Adapter + ControlNet outputs rotate the animal away from side profile or drift into shell/ridge anatomy",
+    "four-spike thagomizer is still not reliably preserved with the improved plate signal"
+  ],
+  "usefulFindings": [
+    "Broad, separated plate silhouettes are now easy to create as project-owned structure guides.",
+    "RealVisXL can preserve plate shapes only when the guide is too visible; once naturalized, it tends to erase or fuse the plates.",
+    "The next useful path is not another RealVisXL ControlNet pass from the same guide. Use a stronger direct image model output as a reviewed synthetic seed, a real Stegosaurus-compatible LoRA branch, or train the custom stegosaur_plates_tailspikes LoRA after collecting enough cleared examples."
+  ],
+  "nextRoute": "Keep clear-plate local outputs as control/reference material only. Do not add them to train_seed until the plate surfaces are integrated and the thagomizer is countable."
+}

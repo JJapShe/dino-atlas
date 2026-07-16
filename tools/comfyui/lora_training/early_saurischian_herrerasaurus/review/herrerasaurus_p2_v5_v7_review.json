@@ -1,0 +1,33 @@
+{
+  "taxonId": "herrerasaurus-ischigualastensis",
+  "experiment": "p2_v5_v7_compact_hand_candidates",
+  "currentPrimary": "assets/dinosaurs/herrerasaurus-ischigualastensis-compacthands-imagegen-v2.png",
+  "candidateDecisions": [
+    {
+      "source": "assets/dinosaurs/herrerasaurus-ischigualastensis-imagegen-v5-source-candidate.png",
+      "decision": "reject_reference",
+      "reason": "Good light early-saurischian body silhouette, but the visible hands become long dangling hook claws."
+    },
+    {
+      "source": "assets/dinosaurs/herrerasaurus-ischigualastensis-imagegen-v6-source-candidate.png",
+      "decision": "review_hold",
+      "reason": "Best P2 candidate: compact folded hands, closed narrow head, full tail, and two grounded hind legs; keep below v2 because exact three-main-digit topology is still soft."
+    },
+    {
+      "source": "assets/dinosaurs/herrerasaurus-ischigualastensis-imagegen-v7-source-candidate.png",
+      "decision": "reject_reference",
+      "reason": "Hand visibility improves, but the fingers are too long, too numerous/equal, and too large for a positive Herrerasaurus seed."
+    }
+  ],
+  "reviewSheet": "assets/dinosaurs/herrerasaurus-p2-v5-v7-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/herrerasaurus-p2-v5-v7-crops.png",
+  "decision": "keep_current_primary",
+  "reason": "V6 is the strongest P2 review hold, but the current v2 primary remains safer because it avoids long hook-hand drift. V5 and v7 are strict failure references for hand exaggeration.",
+  "rejectIfPromoting": [
+    "visible hand reads as four or five equal long fingers",
+    "forelimbs become long dangling hook claws or oversized Allosaurus-like hands",
+    "arms shrink into tiny Tyrannosaurus proportions",
+    "body becomes bulky Allosaurus or Tyrannosaurus-like",
+    "extra legs, tail duplication, or hidden feet block count review"
+  ]
+}

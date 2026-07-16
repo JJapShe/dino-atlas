@@ -1,0 +1,22 @@
+{
+  "deinocheirus-mirificus-feathered-golden-wetland-imagegen-v2.png": {
+    "status": "hold",
+    "note": "형태나 컬러는 좋으나 손톱이 짧음",
+    "updatedAt": "2026-07-05T13:12:53.412Z"
+  },
+  "deinocheirus-mirificus-feathered-profile-imagegen-v2.png": {
+    "status": "hold",
+    "note": "입이 저어새 같은 느낌이 적음. 다른 부분은 손톱만 좀 길면 문제 없을 것 같음",
+    "updatedAt": "2026-07-05T13:16:27.717Z"
+  },
+  "psittacosaurus-mongoliensis-large-tail-bristles-imagegen-v2.png": {
+    "status": "pass",
+    "note": "꼬리깃 표현이 잘 됨. 좀더 같은 길이로 촘촘하게 나도 될거 같음",
+    "updatedAt": "2026-07-05T13:16:49.125Z"
+  },
+  "citipati-osmolskae-djadokhta-nesting-ecology-imagegen-v1.png": {
+    "status": "reject",
+    "note": "구도는 좋으나 날개가 2중으로 나 있음. 이부분만 수정하면 좋을듯",
+    "updatedAt": "2026-07-05T13:18:19.362Z"
+  }
+}

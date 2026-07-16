@@ -1,0 +1,22 @@
+{
+  "taxonId": "velociraptor-mongoliensis",
+  "experiment": "p1_v36_v38_modest_sickle_prompt_candidates",
+  "currentPrimary": "assets/dinosaurs/velociraptor-mongoliensis-small-sickle-imagegen-v9.png",
+  "selectedReviewHold": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v38-source-candidate.png",
+  "comparisonRejects": [
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v36-source-candidate.png",
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v37-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/velociraptor-p1-v36-v38-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/velociraptor-p1-v36-v38-crops.png",
+  "decision": "review_hold",
+  "reason": "V38 is the best new prompt-only source for a subtler attached near-foot sickle cue while keeping the toothed snout, feathered body, folded forelimb, and full tail. Keep v9 first because v38 still needs crop proof for exact raised second-toe topology and the hand claws can read too hook-like. V36 and v37 are overcorrection references with oversized sickle claws.",
+  "rejectIfPromoting": [
+    "sickle claw reads as a detached crescent or giant hook",
+    "feet do not show two walking toes plus one attached raised second toe",
+    "head becomes bird-beaked, toothless, rooster-like, or hawk-like",
+    "forelimbs become spread wings or oversized dangling claws",
+    "tail is cropped, duplicated, soft, or hidden",
+    "extra legs, one-legged pose, hidden feet, text, or watermark"
+  ]
+}

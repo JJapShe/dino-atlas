@@ -1,0 +1,46 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "round": "stego_dorsal_plate_lock_v2_ipcontrol",
+  "date": "2026-06-25",
+  "objective": "Replace the current Stegosaurus first image after review found that its dorsal plates still do not read well enough.",
+  "selected": {
+    "asset": "assets/dinosaurs/stegosaurus-stenops-dorsal-plate-lock-v2-natural-v1.png",
+    "sourceOutput": "tools/comfyui/outputs/stego_dorsal_plate_lock_v2_natural_balance_style_transfer_stegosaurus-stenops_seed2026062504_iw12_cs66.png",
+    "method": "IP-Adapter + ControlNet using the new dorsal-plate-lock v2 guide",
+    "settings": {
+      "seed": 2026062504,
+      "ipWeight": 0.12,
+      "ipWeightType": "style transfer",
+      "controlStrength": 0.66,
+      "controlEnd": 0.78,
+      "checkpoint": "RealVisXL_V5.0_fp16.safetensors"
+    },
+    "reason": "The dorsal row now keeps broad, separate, countable plates at app scale instead of collapsing into a few rounded fins.",
+    "remainingRisk": "The far alternating row is still implied more than fully resolved, and the tail spikes are visible but not final paleoart quality."
+  },
+  "rejected": [
+    {
+      "asset": "assets/dinosaurs/stegosaurus-stenops-plate-readable-natural-v1.png",
+      "reason": "Previous first image remains natural, but the plates are too few, rounded, and fin-like for the new plate gate."
+    },
+    {
+      "asset": "tools/comfyui/outputs/stego_dorsal_plate_lock_v2_ipcontrol_style_transfer_stegosaurus-stenops_seed2026062504_iw08_cs74.png",
+      "reason": "Better plate lock, but the body and legs are more guide-like than the selected lower-strength pass."
+    },
+    {
+      "asset": "tools/comfyui/outputs/stego_dorsal_plate_lock_v2_natural_balance_style_transfer_stegosaurus-stenops_seed2026062506_iw12_cs66.png",
+      "reason": "More natural body but plate silhouettes become darker, thinner, and less broadly slab-like."
+    },
+    {
+      "asset": "tools/comfyui/outputs/stego_dorsal_plate_lock_v2_natural_balance_style_transfer_stegosaurus-stenops_seed2026062504_iw12_cs72.png",
+      "reason": "Close to selected but does not improve anatomy enough to offset the stronger control look."
+    }
+  ],
+  "reviewSheets": {
+    "contactSheet": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_dorsal_plate_lock_v2_ipcontrol_contact_sheet.png",
+    "plateCrops": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_dorsal_plate_lock_v2_ipcontrol_plate_crops.png",
+    "appContactSheet": "assets/dinosaurs/stegosaurus-review-options-v39.png",
+    "appPlateCrops": "assets/dinosaurs/stegosaurus-plate-crops-v11.png"
+  },
+  "nextRecommendation": "Keep the v2 selected candidate first for MVP, but do not call the Stegosaurus final until a dedicated stegosaur plate LoRA or higher-fidelity reference-conditioned workflow resolves the alternating two-row plates more naturally."
+}

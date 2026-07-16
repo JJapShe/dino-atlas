@@ -1,0 +1,21 @@
+{
+  "taxonId": "velociraptor-mongoliensis",
+  "experiment": "less_bird_head_i2i_v27",
+  "sourceImage": "assets/dinosaurs/velociraptor-mongoliensis-small-sickle-imagegen-v9.png",
+  "comparisonImage": "assets/dinosaurs/velociraptor-mongoliensis-less-bird-head-i2i-comparison-v27.png",
+  "maskImage": "assets/dinosaurs/velociraptor-less-bird-head-i2i-mask-v27.png",
+  "reviewSheet": "assets/dinosaurs/velociraptor-less-bird-head-i2i-v27-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/velociraptor-less-bird-head-i2i-v27-crops.png",
+  "decision": "comparison_only",
+  "selectedSeed": 2026070283,
+  "selectedDenoise": 0.1,
+  "mask": "custom head and front-neck polygon over v9",
+  "reasons": [
+    "v27 reduces the bright yellow modern-bird eye read compared with the current v9 image",
+    "v27 preserves the full body, folded hands, feet, and long tail because the mask is localized",
+    "v27 softens feather texture around the head and makes the snout read more generic reptile, so it should not replace v9",
+    "current v9 remains the stronger representative until a dromaeosaur-specific route improves the head without losing plumage or exact foot reviewability"
+  ],
+  "keepCurrentPrimary": "assets/dinosaurs/velociraptor-mongoliensis-small-sickle-imagegen-v9.png",
+  "nextRoute": "Use stronger dromaeosaur-specific conditioning or a custom reference-trained LoRA; keep localized masks, but require close head, feather, hand, foot, and tail crop gates before any promotion."
+}

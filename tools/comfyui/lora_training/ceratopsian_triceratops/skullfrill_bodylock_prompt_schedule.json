@@ -1,0 +1,47 @@
+{
+  "datasetId": "ceratopsian_triceratops_v1",
+  "trigger": "ceratopsian_triceratops",
+  "purpose": "Reference-conditioned expansion prompts for Triceratops after P10 confirmed v52-v54 are useful color references but still need stricter body-lock control for low elongated anti-rhino anatomy and skull-attached frill proof.",
+  "controlReference": "assets/dinosaurs/triceratops-horridus-skullfrill-bodylock-guide-v1.png",
+  "reviewBeforeTraining": true,
+  "passSummary": "body-lock i2i/control over v51 or v52 | preserve cool mottling | lower rounded torso | prove skull-attached frill and non-hoofed toes",
+  "rejectSummary": "Reject outputs if the frill attaches to the shoulder/back, the torso reads like a rhinoceros, feet become hoof-like, or the color collapses back to sandy brown.",
+  "basePositive": "scientific-educational paleoart, project-owned synthetic candidate, single adult Triceratops horridus, full body side profile, cool blue-gray or slate-gray pebbled skin with pale mottling and restrained natural frill color variation, exactly two long brow horns, one shorter nasal horn, large solid frill attached to the back of the skull, closed parrot-like beak, low elongated ceratopsian dinosaur body, long tapering dinosaur tail, four sturdy dinosaur limbs, separated non-hoofed toes or blunt claws on dry ground, Late Cretaceous North American floodplain, natural daylight",
+  "baseNegative": "same sandy-brown palette as other taxa, neon frill, ornamental fantasy fan frill, rhinoceros body, rhino shoulder hump, round mammal torso, cow body, buffalo body, elephant body, mammal hooves, horse legs, short tail, frill on shoulders, frill on back, dorsal sail, extra horns, cheek horns, missing nasal horn, open mouth, visible teeth, crocodile head, lizard head, hidden feet, cropped tail, extra legs, text, label, logo, watermark, signature",
+  "workflowNotes": [
+    "Use the controlReference as a line/depth/ControlNet guide rather than as a direct training image.",
+    "Start from the current v51 color-pattern candidate when preserving cool non-sandy species color matters; use v52 only as a color reference hold, and use v43 or the guide when anti-rhino anatomy is the main failure.",
+    "Do not promote v52-v54 into positive training until the rounded torso and skull/frill attachment pass the crop gate.",
+    "Reject outputs if the frill attaches to the shoulder/back, the torso reads like a rhinoceros, feet become hoof-like, or the color collapses back to sandy brown."
+  ],
+  "prompts": [
+    {
+      "id": "bodylock_side_profile_01",
+      "variation": "left-facing low long body, skull-attached frill clearly separated from the shoulder, long tail fully visible"
+    },
+    {
+      "id": "bodylock_side_profile_02",
+      "variation": "right-facing calm walking pose, closed parrot-like beak, three facial horns, four feet unobscured"
+    },
+    {
+      "id": "skull_frill_close_read_01",
+      "variation": "full body still in frame but skull and frill large enough to verify frill attachment and horn count"
+    },
+    {
+      "id": "toe_review_01",
+      "variation": "dry open ground with front and rear toes visible, no mammal hooves, low dinosaur torso preserved"
+    },
+    {
+      "id": "anti_rhino_body_01",
+      "variation": "long tail, low shoulder line, no rounded mammal barrel torso, no rhino shoulder hump"
+    },
+    {
+      "id": "neutral_reference_01",
+      "variation": "neutral educational reference pose, restrained cool blue-gray mottled color, exact anatomy review prioritized over dramatic action"
+    },
+    {
+      "id": "cool_color_frill_01",
+      "variation": "cool blue-gray body with pale mottling, muted natural frill edge spots, no neon fan color, three horns and non-hoofed toes preserved"
+    }
+  ]
+}

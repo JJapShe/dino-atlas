@@ -1,0 +1,562 @@
+{
+  "datasetId": "ankylosaur_armor_tailclub_v1",
+  "trigger": "ankylosaur_armor_tailclub",
+  "taxa": [
+    "Ankylosaurus magniventris",
+    "broad low ankylosaurid"
+  ],
+  "licensePolicy": "Only project-internal AI-generated images and hand-authored guides are allowed as sources. External museum/science material is reference-only, not training data.",
+  "items": [
+    {
+      "id": "ankylosaurus_imagegen_v40_armored_skull_color",
+      "role": "train_seed",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v40-source-candidate.png",
+      "caption": "ankylosaur_armor_tailclub, Ankylosaurus magniventris, project-owned imagegen source, red ochre and burnt umber natural color pattern, broad low heavily armored ankylosaurid, compact armored skull, fused cranial armor plates, cheek horns, rear skull-corner horn cues, very short neck, dense rounded osteoderm rows, four sturdy visible feet, one single fused oval bony tail club attached to tail tip, dry Late Cretaceous floodplain, no monitor lizard head, no crocodile body, no plain tan-brown monotone, no text, no watermark",
+      "strengths": [
+        "current app first candidate after P8 color and skull-identity review",
+        "breaks the samey brown gallery palette with a natural red-ochre pattern",
+        "stronger armored skull, cheek horn, and rear skull-corner horn read than v38",
+        "low rounded osteoderm rows, four feet, and one attached tail club remain readable"
+      ],
+      "risks": [
+        "not final approval; skull horn size and cranial armor layout still need reference review",
+        "toe details are count-level rather than final",
+        "red-ochre pattern should stay naturalistic and not drift into fantasy saturation",
+        "tail club attachment still needs close crop review"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v43_best_p9_armored_skull_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v43-source-candidate.png",
+      "caption": "review hold only, P9 Ankylosaurus magniventris armored-skull color candidate, short blunt helmet-like skull, cheek horns, rear skull-corner horn cues, dark olive black and ochre color separation, four sturdy legs, one attached tail club, dorsal osteoderm rows may be too regular or plate-like",
+      "strengths": [
+        "strongest P9 broad armored skull and cheek-horn read",
+        "darker palette separates Ankylosaurus from samey brown gallery candidates",
+        "four legs and one attached tail club remain visible"
+      ],
+      "risks": [
+        "dorsal osteoderm rows can read too regular or tiled",
+        "do not promote unless body-lock review softens the grid-like armor while preserving the skull",
+        "review hold only, not a positive LoRA seed"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v42_slate_blue_armor_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v42-source-candidate.png",
+      "caption": "review hold only, P9 Ankylosaurus magniventris slate-blue armored skull candidate, pale horn tips, cool color separation, visible cheek horns, four legs, one tail club, dorsal armor grid and oversized scute regularity need close review",
+      "strengths": [
+        "cool slate-blue armor adds useful color variety",
+        "skull armor and cheek horns are clearer than older smoother-head holds",
+        "single tail club and low body remain readable"
+      ],
+      "risks": [
+        "back armor can look like oversized grid plates",
+        "front body mass and toe details need review before any promotion",
+        "review hold only, not a positive LoRA seed"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v44_charcoal_russet_color_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v44-source-candidate.png",
+      "caption": "review hold only, P9 Ankylosaurus magniventris charcoal armor and russet flank color candidate, improved armored skull and cheek horns, one attached tail club, sunset lighting and regular armor rows require stricter body-lock review",
+      "strengths": [
+        "charcoal and russet color pattern is distinct from v40, v41, and tan-brown holds",
+        "broad armored skull and cheek horns are more readable than older lizard-head candidates",
+        "single attached tail club remains visible"
+      ],
+      "risks": [
+        "warm sunset lighting may make color comparison less neutral",
+        "regular back armor still risks tiled plate drift",
+        "review hold only, not a positive LoRA seed"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v39_dark_olive_skull_armor_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v39-source-candidate.png",
+      "caption": "review hold only, P8 Ankylosaurus magniventris dark olive and charcoal color candidate, stronger armored skull and cheek projections, dense osteoderms, one attached tail club, side-spike size and body mass need close review",
+      "strengths": [
+        "darker olive-charcoal palette adds useful gallery color variety",
+        "head armor and cheek projections read stronger than v38",
+        "tail club and armor rows remain visible"
+      ],
+      "risks": [
+        "side projections may become too spike-like",
+        "body mass and exact feet still need close review",
+        "keep below v40 until skull and body gates pass together"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v41_blue_gray_skull_horn_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v41-source-candidate.png",
+      "caption": "review hold only, P8 Ankylosaurus magniventris blue-gray color candidate, prominent skull horns and cool-toned camouflage, low body and attached club useful, horn size and head shape may be over-emphasized",
+      "strengths": [
+        "cool blue-gray palette is clearly distinct from the brown gallery cluster",
+        "prominent skull armor and horns address the lizard-head complaint",
+        "low body and attached tail club remain useful comparison evidence"
+      ],
+      "risks": [
+        "horns may be over-emphasized or fantasy-like at close review",
+        "head shape can still read less blunt than ideal",
+        "review hold only, not a positive seed unless horn-size risk is cleared"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v38_compact_tank_tailclub",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v38-source-candidate.png",
+      "caption": "review hold only, previous app first Ankylosaurus magniventris P7 source candidate, compact tank-like body, dense rounded osteoderms, four sturdy feet, one attached oval tail club, smoother head and samey brown palette weaker than v40",
+      "strengths": [
+        "previous app first candidate after P7 crop review",
+        "compact tank-like body reads stronger than v34",
+        "dense rounded osteoderm rows, four sturdy feet, and one attached oval tail club remain readable"
+      ],
+      "risks": [
+        "smoother head can still read too lizard-like compared with v40",
+        "samey sandy-brown palette is weaker for gallery variety",
+        "keep as comparison unless human review rejects v40 horn-size risk"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v34_bluntskull_armor_tailclub_previous_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v34-source-candidate.png",
+      "caption": "review hold only, previous app first Ankylosaurus magniventris P6 source candidate, broad blunt skull, low tank-like armored body, rounded osteoderms, four sturdy visible feet, one attached oval tail club, tail and body read longer than v38",
+      "strengths": [
+        "previous app first candidate after P6 crop review",
+        "broad blunt skull and compact tank-like body read stronger than v32",
+        "dense rounded osteoderm rows and low armor layout are clear",
+        "four sturdy feet and one attached oval tail club are visible"
+      ],
+      "risks": [
+        "tail and body read longer than promoted v38",
+        "exact skull proportions and side armor layout still need reference review",
+        "keep as comparison unless human review prefers v34's wider framing"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v37_compact_body_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v37-source-candidate.png",
+      "caption": "review hold only, P7 Ankylosaurus magniventris source candidate with compact armored body, low rounded osteoderms, four visible feet, and one attached oval club, framing tighter and head heavier than v38",
+      "strengths": [
+        "good compact armored body and attached club",
+        "dense rounded osteoderm rows remain readable",
+        "useful comparison for compact-body prompt direction"
+      ],
+      "risks": [
+        "framing is tighter than v38",
+        "head reads slightly heavier",
+        "keep outside positive training unless human review prefers it over v38"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v36_long_tail_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v36-source-candidate.png",
+      "caption": "review hold only, P7 Ankylosaurus magniventris source candidate with useful armor rows and attached tail club, tail and body proportions remain longer than v38",
+      "strengths": [
+        "useful armor row and attached tail club evidence",
+        "broad low armored body remains visible"
+      ],
+      "risks": [
+        "tail and body proportions remain longer than v38",
+        "less suitable than v38 for the compact ankylosaurid gate"
+      ]
+    },
+    {
+      "id": "ankylosaurus_broadskull_singleclub_v5",
+      "role": "train_seed",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-broadskull-singleclub-imagegen-v5.png",
+      "caption": "ankylosaur_armor_tailclub, Ankylosaurus magniventris, broad low heavily armored ankylosaurid quadruped, compact broad blunt armored skull, very short neck, squat body, dense rounded osteoderms and low bony armor rows, four sturdy visible feet with blunt toes, thick low tail, one single fused oval bony tail club attached directly to the tail tip, dry Late Cretaceous floodplain, no text, no watermark",
+      "strengths": [
+        "best current app-scale Ankylosaurus identity read",
+        "single attached tail club is clear",
+        "broad blunt skull and dense rounded armor rows are readable",
+        "four sturdy feet are visible"
+      ],
+      "risks": [
+        "exact skull proportions still need reference review",
+        "toe details and armor-row layout are count-level rather than final",
+        "body can still read slightly dome-like at close review"
+      ]
+    },
+    {
+      "id": "ankylosaurus_clearfeet_singleclub_v4",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-clearfeet-singleclub-imagegen-v4.png",
+      "caption": "review hold only, clear-feet single-club Ankylosaurus comparison with useful feet and tail club but longer body and lizard-drift risk, not a positive LoRA seed",
+      "strengths": [
+        "useful open-foot and tail-club comparison",
+        "keeps low armored body and dense osteoderm rows"
+      ],
+      "risks": [
+        "skull and body are less familiar than the v5 selected candidate",
+        "longer body and snout can drift toward generic armored lizard",
+        "unsafe as train_seed unless later crop review proves non-lizard Ankylosaurus identity"
+      ]
+    },
+    {
+      "id": "ankylosaurus_armor_tailclub_guide_v1",
+      "role": "control_reference",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-armor-tailclub-guide-v1.png",
+      "caption": "control reference only, Ankylosaurus magniventris structure guide, broad blunt wedge skull, very short neck, low squat armored body, rows of low rounded osteoderms, four sturdy planted feet, thick low tail, one single fused oval tail club attached to the tail tip, no tall plates, no crocodile body",
+      "strengths": [
+        "locks broad skull, low body, armor rows, feet, and attached single club in one guide",
+        "useful as ControlNet/depth/line guidance before texture generation",
+        "project-owned and copyright-safe"
+      ],
+      "risks": [
+        "diagram-like and not suitable for direct LoRA training",
+        "intentionally has visible control strokes"
+      ]
+    },
+    {
+      "id": "ankylosaurus_old_structure_reference",
+      "role": "control_reference",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris.png",
+      "caption": "control reference only, older broad low Ankylosaurus guide with tail-club intent and armored body shape",
+      "strengths": [
+        "records the earlier broad low armored target",
+        "useful comparison against newer natural candidates"
+      ],
+      "risks": [
+        "less explicit for armor-row layout, feet, and skull proportions",
+        "too stylized for direct training"
+      ]
+    },
+    {
+      "id": "ankylosaurus_hornrisk_v5",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-hornrisk-comparison-v5.png",
+      "caption": "holdout rejection, Ankylosaurus-like body with strong armor rows and tail club but risky horn-like skull side projections",
+      "strengths": [
+        "good armor and club comparison"
+      ],
+      "risks": [
+        "skull side projections can read as horns",
+        "must not be used as a positive training seed"
+      ]
+    },
+    {
+      "id": "ankylosaurus_lizard_drift_tailclub_surface",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-tailclub-surface-v1.png",
+      "caption": "holdout rejection, tail club present but generic lizard or crocodile body drift",
+      "strengths": [
+        "documents why tail-club presence alone is not enough"
+      ],
+      "risks": [
+        "body silhouette is not a broad low ankylosaurid",
+        "exclude from training positives"
+      ]
+    },
+    {
+      "id": "ankylosaurus_broadskull_i2i_v14",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-broadskull-i2i-v14.png",
+      "caption": "review hold only, localized broad-skull i2i over the v5 Ankylosaurus body gate, broad low armored ankylosaur body, compact skull read, rounded osteoderms, four feet, thick tail, single attached oval club",
+      "strengths": [
+        "preserves the v5 body, armor rows, feet, and attached tail club",
+        "head reads slightly shorter and broader than the v5 source"
+      ],
+      "risks": [
+        "exact skull proportions and armor layout still need human crop review",
+        "should not be trained as a positive until the body is confirmed non-lizard and non-crocodile"
+      ]
+    },
+    {
+      "id": "ankylosaurus_allfeet_lora_i2i_v18",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-allfeet-lora-i2i-v18.png",
+      "caption": "review hold only, all-visible-feet low-strength Ankylosaurus LoRA i2i over the v14 body/head gate, broad low armored body, compact skull, rounded osteoderms, thick low tail, single attached oval club, clearer sturdy feet and toe separation",
+      "strengths": [
+        "current app first candidate after all-feet i2i review",
+        "keeps broad low body, compact skull read, dense rounded armor rows, thick tail, and attached oval club",
+        "improves foot contact and toe separation"
+      ],
+      "risks": [
+        "exact toe count, skull breadth, and armor-row layout still need human crop review",
+        "do not train from it until the non-crocodile/non-lizard identity gate is manually approved"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v25_compact_skull_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v25-source-candidate.png",
+      "caption": "review hold only, prompt-only Ankylosaurus magniventris v25 source candidate, compact broad head cue, low rounded osteoderm rows, four grounded feet, thick low tail, one attached oval bony tail club, rear-leg separation and skull length need crop review, not a positive LoRA seed",
+      "strengths": [
+        "best P3 prompt-only balance of compact head, low armor rows, four grounded feet, and attached single tail club",
+        "tail club is clearly attached to the tail tip",
+        "armor rows are dense and reviewable"
+      ],
+      "risks": [
+        "rear legs and feet need close review for separation",
+        "skull can still read slightly long rather than fully broad/blunt",
+        "must stay outside positive LoRA training until a human crop gate approves full Ankylosaurus identity"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v28_armor_club_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v28-source-candidate.png",
+      "caption": "review hold only, prompt-only Ankylosaurus magniventris v28 source candidate with tank-like low armored body, dense rounded osteoderms, grounded feet, and one attached oval tail club, head side knobs and long-tail tendency need close review, not a positive LoRA seed",
+      "strengths": [
+        "best P4 prompt-only balance of tank-like body, low armor rows, grounded feet, and attached single club",
+        "tail club is clearly attached to the tail tip",
+        "armor rows are dense and readable at atlas scale"
+      ],
+      "risks": [
+        "skull side knobs can read horn-like at close review",
+        "tail remains longer than ideal for compact Ankylosaurus proportions",
+        "must stay outside positive LoRA training until compact ankylosaurid proportions pass crop review"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v32_compact_armor_tailclub_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v32-source-candidate.png",
+      "caption": "review hold only, prompt-only Ankylosaurus magniventris v32 source candidate with low tank-like armored body, dense rounded osteoderm rows, four sturdy feet, and one attached oval tail club, cheek knob and tail length need close review, not a positive LoRA seed",
+      "strengths": [
+        "strongest P5 immediate Ankylosaurus read for app review",
+        "low broad armored body and dense rounded osteoderms are clear",
+        "single attached oval tail club remains visible",
+        "four sturdy planted feet are readable"
+      ],
+      "risks": [
+        "cheek knob can still read horn-like at crop scale",
+        "tail remains longer than ideal for compact ankylosaurid proportions",
+        "must stay outside positive LoRA training until skull breadth, compact body, feet, and single club pass together"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v33_compact_body_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v33-source-candidate.png",
+      "caption": "review hold only, prompt-only Ankylosaurus magniventris v33 source candidate with strong low body, broad armor rows, four visible feet, and one attached oval club, tail remains long, not a positive LoRA seed",
+      "strengths": [
+        "strong low ankylosaurid body and dense rounded armor rows",
+        "four visible feet and an attached oval tail club are clear",
+        "useful comparison for compact-body prompting"
+      ],
+      "risks": [
+        "tail remains longer than ideal",
+        "skull/body balance is slightly less compact than v34",
+        "should stay outside positive LoRA training until compact proportions improve"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v35_broad_armor_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v35-source-candidate.png",
+      "caption": "review hold only, prompt-only Ankylosaurus magniventris v35 source candidate with dense broad armor and attached club, head reads slightly longer and framing is tighter than v34, not a positive LoRA seed",
+      "strengths": [
+        "dense rounded armor and low body mass are strong",
+        "attached oval tail club and sturdy feet remain visible",
+        "useful comparison for armor texture and low-body prompting"
+      ],
+      "risks": [
+        "head reads slightly longer than v34",
+        "tighter framing is less useful as a first-card representative",
+        "should remain review_hold until broad blunt skull and compact body beat v34"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v31_horn_risk_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v31-source-candidate.png",
+      "caption": "review hold only, prompt-only Ankylosaurus magniventris v31 source candidate with strong tank-like body and attached club but cheek knob horn-risk, not a positive LoRA seed",
+      "strengths": [
+        "strong low armored body and attached single club",
+        "rounded osteoderm rows are clear"
+      ],
+      "risks": [
+        "cheek knob can read as a horn",
+        "tail and body still need compactness review",
+        "unsafe as positive training material without skull correction"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v30_compact_armor_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v30-source-candidate.png",
+      "caption": "review hold only, prompt-only Ankylosaurus magniventris v30 source candidate with rounded armor and one attached club but lizard-head risk, not a positive LoRA seed",
+      "strengths": [
+        "good rounded armor and single attached club",
+        "useful comparison for compact-body prompting"
+      ],
+      "risks": [
+        "head still reads lizard-like at close crop scale",
+        "not suitable as train_seed until broad blunt skull identity passes"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v27_armor_club_secondary_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v27-source-candidate.png",
+      "caption": "review hold only, prompt-only Ankylosaurus magniventris v27 source candidate with strong armor rows and attached tail club, body and tail stretch toward lizard-like proportions, not a positive LoRA seed",
+      "strengths": [
+        "strong low rounded armor rows and visible attached oval club"
+      ],
+      "risks": [
+        "body and tail stretch toward generic armored lizard proportions",
+        "not suitable as a train_seed without compact-body correction"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v29_longbody_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v29-source-candidate.png",
+      "caption": "reject reference only, prompt-only Ankylosaurus v29 has useful blunt-head and armor cues but body and tail become too long and lizard-like",
+      "strengths": [
+        "documents a route with cleaner blunt-head and armor-row cues"
+      ],
+      "risks": [
+        "body and tail are too long for compact ankylosaurid proportions",
+        "unsafe as representative or positive training material"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v24_tailclub_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v24-source-candidate.png",
+      "caption": "review hold only, prompt-only Ankylosaurus magniventris v24 source candidate with clean attached tail club and broad low armored body, mild long-snout and long-body lizard drift risk, not a positive LoRA seed",
+      "strengths": [
+        "clean attached oval tail club",
+        "low armored body and four-foot read are useful for comparison"
+      ],
+      "risks": [
+        "snout and body can stretch toward generic armored lizard proportions",
+        "not suitable as a train_seed until skull breadth and compact body pass review"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v26_armor_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v26-source-candidate.png",
+      "caption": "review hold only, prompt-only Ankylosaurus magniventris v26 source candidate with useful low armor and blunt-head cue, rear feet and leg separation are too soft for representative promotion, not a positive LoRA seed",
+      "strengths": [
+        "useful low rounded armor texture",
+        "blunt-head read is stronger than many older prompt-only attempts"
+      ],
+      "risks": [
+        "rear feet and legs are not separated clearly enough",
+        "should not reinforce hidden-foot or fused-leg outputs in training"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v20_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v20-source-candidate.png",
+      "caption": "review hold only, project-owned imagegen Ankylosaurus magniventris source candidate, broad low armored quadruped, rounded osteoderm rows, four visible planted feet, thick low tail, one attached oval tail club, needs skull-breadth and non-lizard review before any positive LoRA use",
+      "strengths": [
+        "exactly four visible planted legs and reviewable feet",
+        "single attached oval tail club is clear",
+        "dense low rounded osteoderm rows are readable",
+        "project-owned source suitable for copyright-safe review"
+      ],
+      "risks": [
+        "skull and snout can still read slightly long at close crop scale",
+        "body may drift toward generic armored lizard if used without stronger structure control",
+        "not suitable as a train_seed until human review confirms broad blunt skull and ankylosaurid body plan"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v22_balanced_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v22-source-candidate.png",
+      "caption": "review hold only, prompt-only Ankylosaurus magniventris v22 source candidate with broad blunt skull, dense low rounded osteoderms, four planted feet, thick low tail, one attached oval bony tail club, mild long-body lizard risk, not a positive LoRA seed",
+      "strengths": [
+        "best new prompt-only balance of broad skull, low armor rows, four feet, and attached single club",
+        "tail club is clearly attached to the tail tip",
+        "armor rows and blunt toes are reviewable"
+      ],
+      "risks": [
+        "body and tail length can drift toward generic armored lizard at crop scale",
+        "should not replace v18 until compact ankylosaurid proportions are proven",
+        "must stay outside positive LoRA training until human crop review approves the full identity gate"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v23_low_armor_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v23-source-candidate.png",
+      "caption": "review hold only, prompt-only Ankylosaurus magniventris v23 source candidate with low broad armor body, dense rounded osteoderms, four feet, and one attached oval tail club, longer body and tail risk",
+      "strengths": [
+        "lowest and broadest new armor-body read from the P2 pass",
+        "single attached tail club and four feet remain visible"
+      ],
+      "risks": [
+        "longer body and tail can read monitor-lizard-like rather than compact ankylosaurid",
+        "not a train_seed until body length and skull breadth pass review"
+      ]
+    },
+    {
+      "id": "ankylosaurus_imagegen_v21_hornrisk_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v21-source-candidate.png",
+      "caption": "review hold only, prompt-only Ankylosaurus magniventris v21 source candidate with strong armor rows and attached tail club but skull-side horn or fantasy-spike risk",
+      "strengths": [
+        "strong armor rows and one attached tail club",
+        "useful comparison for tail club and osteoderm texture"
+      ],
+      "risks": [
+        "large skull-side projections can read as horns",
+        "unsafe as positive training material without head correction"
+      ]
+    },
+    {
+      "id": "ankylosaurus_bodylock_osteoderm_v19_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-bodylock-osteoderm-lowdenoise-reject-v19.png",
+      "caption": "reject reference only, low-denoise RealVisXL bodylock and osteoderm i2i over v18 that preserves the attached single tail club but does not improve skull breadth, foot clarity, or armor layout enough to replace v18",
+      "strengths": [
+        "records that whole-body low-denoise i2i can preserve the single attached tail club",
+        "keeps low rounded armor rows and four-limb count"
+      ],
+      "risks": [
+        "body and snout can lengthen toward generic lizard or monitor-lizard read",
+        "does not clearly improve feet, skull breadth, or armor layout over v18",
+        "not suitable as a positive LoRA seed or app representative"
+      ]
+    },
+    {
+      "id": "ankylosaurus_osteoderm_lora_i2i_v15",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-osteoderm-lora-i2i-comparison-v15.png",
+      "caption": "reject reference only, weak-LoRA osteoderm-band i2i that does not improve skull, armor, feet, and tail club together",
+      "strengths": [
+        "records a local armor-detail route"
+      ],
+      "risks": [
+        "surface detail improvement is not enough for Ankylosaurus identity",
+        "should not reinforce partial armor texture without whole-body proof"
+      ]
+    },
+    {
+      "id": "ankylosaurus_sturdy_toes_lora_i2i_v16",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/ankylosaurus-magniventris-sturdy-toes-lora-i2i-comparison-v16.png",
+      "caption": "reject reference only, weak-LoRA foot-only i2i that slightly improves feet but does not improve the full Ankylosaurus identity gate",
+      "strengths": [
+        "records a foot-mask route for comparison"
+      ],
+      "risks": [
+        "foot clarity alone is not enough for representative promotion",
+        "should not be treated as a positive sample without skull, armor, body, and tail-club gains together"
+      ]
+    }
+  ],
+  "rejectCriteria": [
+    "crocodile, monitor-lizard, pangolin, turtle, or armadillo body read",
+    "long narrow snout instead of broad blunt ankylosaurid skull",
+    "tall Stegosaurus-like plates or fantasy dorsal spikes",
+    "missing tail club, detached tail club, double club, mace spikes, or soft fluffy club",
+    "extra limbs, missing legs, hidden feet, hooves, or biped posture",
+    "text, logo, signature, border, or lower-corner artifacts"
+  ]
+}

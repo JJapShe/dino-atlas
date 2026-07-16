@@ -1,0 +1,23 @@
+{
+  "taxonId": "ankylosaurus-magniventris",
+  "experiment": "p4_v27_v29_compact_armor_tailclub_prompt_candidates",
+  "currentPrimary": "assets/dinosaurs/ankylosaurus-magniventris-allfeet-lora-i2i-v18.png",
+  "selectedReviewHold": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v28-source-candidate.png",
+  "secondaryReviewHold": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v27-source-candidate.png",
+  "selectedRejectReferences": [
+    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v29-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/ankylosaurus-p4-v27-v29-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/ankylosaurus-p4-v27-v29-crops.png",
+  "decision": "keep_current_v18_with_v28_review_hold",
+  "reason": "V28 is the strongest P4 prompt-only hold because it improves the tank-like armor silhouette, dense low osteoderms, grounded feet, and one attached oval tail club. It stays below final approval because the skull side knobs can read horn-like and the tail remains longer than ideal. V27 is useful armor/club evidence but stretches toward lizard proportions. V29 has cleaner blunt-head cues but is rejected for long body and tail drift.",
+  "nextRoute": "Use v28 as the next review hold for a low-denoise compact-body i2i or a curated ankylosaur LoRA branch. Do not promote until compact ankylosaurid proportions, broad blunt skull, low rounded armor, four sturdy feet, and a single attached club pass together.",
+  "rejectIfPromoting": [
+    "body reads as crocodile, monitor lizard, pangolin, turtle, armadillo, or rhinoceros",
+    "skull becomes long and narrow or develops horns/frill",
+    "tail is long and whip-like instead of short and thick",
+    "tail club is missing, detached, doubled, soft, spiked, or replaced by a paddle",
+    "armor becomes tall Stegosaurus plates or fantasy spikes",
+    "feet are hidden, fused, extra, or the animal reads as six-legged"
+  ]
+}

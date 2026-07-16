@@ -1,0 +1,23 @@
+{
+  "taxonId": "plateosaurus-engelhardti",
+  "experiment": "p3_v19_v21_two_lifted_forelimb_candidates",
+  "currentPrimary": "assets/dinosaurs/plateosaurus-engelhardti-singleforelimb-smallhand-imagegen-v3.png",
+  "selectedCandidate": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v20-source-candidate.png",
+  "comparisonReviewHolds": [
+    "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v19-source-candidate.png",
+    "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v21-source-candidate.png",
+    "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v16-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/plateosaurus-p3-v19-v21-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/plateosaurus-p3-v19-v21-crops.png",
+  "decision": "promote_v20_to_count_level_pass_pending_human_review",
+  "reason": "V20 is the best P3 balance because both short forelimbs are visible and lifted off the ground while only two large hind legs carry weight. It improves the far-forelimb visibility weakness of v3 without the six-leg or forelimb-ground-contact failure. It is not final because the hand/finger and thumb-claw shapes may still be overlong or hook-like.",
+  "nextRoute": "Use v20 as the next app-scale smoke-test source. Future localized hand i2i should preserve the v20 no-six-leg body while shortening the fingers and clarifying compact five-finger hands plus one larger thumb claw.",
+  "rejectIfPromoting": [
+    "forelimbs touch the ground or read as weight-bearing front legs",
+    "overlapping arms create a six-leg or extra-limb read",
+    "hands become human-like, over-digited, or giant theropod hook claws",
+    "head becomes predator-like, toothy, sauropod-like, or generic lizard-like",
+    "tail, feet, hands, or ground contact are hidden enough to block count review"
+  ]
+}

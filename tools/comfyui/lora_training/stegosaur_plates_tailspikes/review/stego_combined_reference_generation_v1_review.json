@@ -1,0 +1,44 @@
+{
+  "datasetId": "stegosaur_plates_tailspikes_v1",
+  "runIds": [
+    "stego_combined_ref_i2i_v1",
+    "stego_combined_ref_ipcontrol_v1",
+    "stego_tailref_combined_control_v1",
+    "stego_tailref_combined_midcontrol_v1"
+  ],
+  "date": "2026-06-23",
+  "inputReference": "assets/dinosaurs/stegosaurus-stenops-plate-thagomizer-reference-v1.png",
+  "selectedAppCandidate": "assets/dinosaurs/stegosaurus-stenops-plate-thagomizer-ipcontrol-v1.png",
+  "selectedSourceOutput": "tools/comfyui/ComfyUI/output/dino_atlas/stego_tailref_combined_midcontrol_v1_style_transfer_stegosaurus-stenops_iw07_cs72_00002_.png",
+  "selectedParameters": {
+    "referenceImage": "assets/dinosaurs/stegosaurus-stenops-tailroom-thagomizer-ipcontrol-v1.png",
+    "controlSource": "assets/dinosaurs/stegosaurus-stenops-plate-thagomizer-reference-v1.png",
+    "seed": 2026062732,
+    "ipWeight": 0.07,
+    "ipWeightType": "style transfer",
+    "controlStrength": 0.72,
+    "controlEnd": 0.76,
+    "checkpoint": "RealVisXL_V5.0_fp16.safetensors"
+  },
+  "contactSheets": [
+    "assets/dinosaurs/stegosaurus-review-options-v34.png",
+    "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_combined_ref_i2i_v1_contact_sheet.png",
+    "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_combined_ref_ipcontrol_v1_contact_sheet.png",
+    "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_tailref_combined_control_v1_contact_sheet.png",
+    "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_tailref_combined_midcontrol_v1_contact_sheet.png"
+  ],
+  "reviewDecision": "promote_selected_output_to_app_anatomy_review_only",
+  "summary": "The combined project-owned reference finally produced a rendered Stegosaurus candidate where broad dorsal plates and a visible four-spike thagomizer are present in the same app-facing image. The best route was low-weight IP-Adapter style transfer from the prior tail-room candidate plus moderate ControlNet strength from the combined plate/thagomizer guide. Direct low-denoise i2i preserved the guide too literally, while stronger ControlNet made the body and plate bases more shell-like.",
+  "primaryRejectReasons": [
+    "direct i2i outputs remain too flat and guide-like for app use",
+    "low ControlNet strength makes plates less reliable or keeps older rounded/decorative reads",
+    "high ControlNet strength improves plate and tail-spike count but can turn the torso into a shell-like body",
+    "selected output still needs body, limb placement, and plate-base review before approval"
+  ],
+  "usefulFindings": [
+    "The combined plate/thagomizer reference is a better ControlNet source than separate plate-only or tail-only guides.",
+    "For Stegosaurus, IP weight around 0.07 and ControlNet strength around 0.72 preserved more natural texture while keeping the four-spike thagomizer visible.",
+    "This output is useful for app comparison and user feedback, but it should stay out of train_seed until torso shape and limb placement are corrected."
+  ],
+  "nextRoute": "Use the selected app candidate as a visual feedback target only. For production quality, continue toward a Stegosaurus-compatible LoRA or a reviewed synthetic expansion that preserves broad separated plates without shell-like torso drift."
+}

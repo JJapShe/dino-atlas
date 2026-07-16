@@ -1,0 +1,23 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "plate_graft_v61_v63",
+  "decision": "keep_current_primary",
+  "currentPrimary": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "rejections": [
+    {
+      "asset": "assets/dinosaurs/stegosaurus-stenops-broad-plate-graft-guide-v61.png",
+      "reason": "Improves plate count as a structure guide, but the plates look pasted and flat."
+    },
+    {
+      "asset": "assets/dinosaurs/stegosaurus-stenops-plate-graft-naturalize-rejected-v62.png",
+      "reason": "Naturalization does not integrate the grafted plates; the body/plate boundary remains soft and artificial."
+    },
+    {
+      "asset": "assets/dinosaurs/stegosaurus-stenops-synthetic-platecount-rejected-v63.png",
+      "reason": "Prompt-only synthetic seed drifts into thin comb-like spines rather than broad separate Stegosaurus plates."
+    }
+  ],
+  "reviewSheet": "assets/dinosaurs/stegosaurus-plate-graft-v61-v63-rejection-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-plate-graft-v61-v63-rejection-crops.png",
+  "nextRoute": "Do not repeat plate graft naturalization or prompt-only plate-count sweeps. Build a Stegosauridae-specific LoRA or a stronger plate-structure training set before another naturalization pass."
+}

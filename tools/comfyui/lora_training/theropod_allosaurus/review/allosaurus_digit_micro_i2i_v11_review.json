@@ -1,0 +1,22 @@
+{
+  "taxonId": "allosaurus-fragilis",
+  "experiment": "digit_micro_i2i_v11",
+  "sourceImage": "assets/dinosaurs/allosaurus-fragilis-smoothbrow-threefinger-imagegen-v4.png",
+  "maskImage": "assets/dinosaurs/allosaurus-digit-micro-i2i-mask-v11.png",
+  "comparisonImage": "assets/dinosaurs/allosaurus-fragilis-digit-micro-i2i-comparison-v11.png",
+  "reviewSheet": "assets/dinosaurs/allosaurus-digit-micro-i2i-v11-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/allosaurus-digit-micro-i2i-v11-crops.png",
+  "decision": "comparison_only",
+  "selectedSeed": 2026070862,
+  "selectedDenoise": 0.1,
+  "selectedLabel": "seed 2026070862 d0.10",
+  "editMode": "allosaurus_digit_cues",
+  "maskPreset": "allosaurus_hand_foot_tight",
+  "reasons": [
+    "low-denoise hand and foot i2i preserves the v4 smooth brow, body, tail, and medium forelimb scale",
+    "the edit can be compared for three-finger and three-toed cues, but exact digits remain close-review material",
+    "current v4 remains first unless a future pass clearly improves hand and foot readability together without changing the brow or body"
+  ],
+  "keepCurrentPrimary": "assets/dinosaurs/allosaurus-fragilis-smoothbrow-threefinger-imagegen-v4.png",
+  "nextRoute": "Use structure-aware hand/foot masks or an allosaurid LoRA if exact three-finger hand separation and toe anatomy need stronger improvement; avoid whole-body rerenders that drift toward T. rex skull or two-finger arms."
+}

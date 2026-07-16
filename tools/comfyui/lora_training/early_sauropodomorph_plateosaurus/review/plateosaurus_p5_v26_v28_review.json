@@ -1,0 +1,25 @@
+{
+  "taxonId": "plateosaurus-engelhardti",
+  "experiment": "p5_v26_v28_no_six_leg_color_variation",
+  "currentPrimary": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v25-source-candidate.png",
+  "selectedReviewHolds": [
+    "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v27-source-candidate.png",
+    "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v28-source-candidate.png"
+  ],
+  "rejectReferences": [
+    "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v26-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/plateosaurus-p5-v26-v28-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/plateosaurus-p5-v26-v28-crops.png",
+  "decision": "keep_v25_primary_add_v27_v28_as_review_holds_reject_v26",
+  "reason": "P5 tests whether the Plateosaurus route can preserve the P4 color-separation gain while improving the no-six-leg and lifted-hand gates. V27 has the safest new two-grounded-hind-leg stance and shortest lifted forelimbs, but its hands are partly fused and the thumb-claw cue is weak. V28 adds useful moss-green and burgundy variation with no forelimb ground contact, but the hands lengthen again. V26 is rejected because the fingers become long hook-like claws despite useful charcoal/copper color.",
+  "nextRoute": "Keep v25 as the app-first color pass. Use v27 only as a no-six-leg/lifted-hand review reference, then run localized hand i2i or body-lock ControlNet over v25/v27 to shorten fingers, keep forelimbs off the ground, and preserve exactly two grounded hind legs.",
+  "rejectIfPromoting": [
+    "forelimbs touch the ground or become weight-bearing front legs",
+    "overlapping limbs create a six-leg or hidden-third-support read",
+    "hands become long theropod hooks",
+    "thumb-claw cue is absent or replaced by oversized predator claws",
+    "color collapses back to sandy tan",
+    "head becomes predator-like, toothy, sauropod-like, or generic lizard-like"
+  ]
+}

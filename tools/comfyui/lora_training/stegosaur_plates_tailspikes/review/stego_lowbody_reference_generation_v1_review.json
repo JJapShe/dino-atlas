@@ -1,0 +1,42 @@
+{
+  "datasetId": "stegosaur_plates_tailspikes_v1",
+  "runIds": [
+    "stego_lowbody_angularref_control_v1",
+    "stego_lowbody_newref_control_v1",
+    "stego_lowbody_tailref_control_v1"
+  ],
+  "date": "2026-06-23",
+  "inputReference": "assets/dinosaurs/stegosaurus-stenops-lowbody-plate-thagomizer-reference-v1.png",
+  "selectedAppCandidate": "assets/dinosaurs/stegosaurus-stenops-lowbody-plate-thagomizer-ipcontrol-v1.png",
+  "selectedSourceOutput": "tools/comfyui/ComfyUI/output/dino_atlas/stego_lowbody_angularref_control_v1_style_transfer_stegosaurus-stenops_iw06_cs76_00002_.png",
+  "selectedParameters": {
+    "referenceImage": "assets/dinosaurs/stegosaurus-stenops-angular-plate-ipcontrol-v1.png",
+    "controlSource": "assets/dinosaurs/stegosaurus-stenops-lowbody-plate-thagomizer-reference-v1.png",
+    "seed": 2026062752,
+    "ipWeight": 0.06,
+    "ipWeightType": "style transfer",
+    "controlStrength": 0.76,
+    "controlEnd": 0.76,
+    "checkpoint": "RealVisXL_V5.0_fp16.safetensors"
+  },
+  "contactSheets": [
+    "assets/dinosaurs/stegosaurus-review-options-v35.png",
+    "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_lowbody_angularref_control_v1_contact_sheet.png",
+    "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_lowbody_newref_control_v1_contact_sheet.png",
+    "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_lowbody_tailref_control_v1_contact_sheet.png"
+  ],
+  "reviewDecision": "promote_selected_output_to_app_anatomy_review_only",
+  "summary": "The low-body guide reduced the round shell-like torso introduced by the first combined plate/thagomizer candidate. The best result used the previous angular-plate candidate as a low-weight IP-Adapter source and the new low-body guide as ControlNet. Using the previous round-body candidate or tail-room candidate as style references reintroduced shell-like torsos or weakened the thagomizer.",
+  "primaryRejectReasons": [
+    "round-body style reference preserves the shell-like torso failure",
+    "tail-room reference naturalizes the scene but keeps a rounded body and small tail spikes",
+    "selected candidate still needs close review because tail spikes are small and some legs are hidden",
+    "plate separation is improved at atlas scale but still not final-approved"
+  ],
+  "usefulFindings": [
+    "A lower, longer body control target is more useful than simply increasing ControlNet strength on the first combined reference.",
+    "The angular-plate style source preserved a cleaner Stegosaurus body than the previous plate/thagomizer candidate.",
+    "Future Stegosaurus passes should avoid using shell-like candidates as style references unless the body is masked or repaired first."
+  ],
+  "nextRoute": "Keep the low-body candidate first for MVP comparison. For approval, refine the tail-spike count and plate separation without reintroducing shell-like torso drift, or train a focused stegosaurian LoRA from reviewed synthetic seeds."
+}

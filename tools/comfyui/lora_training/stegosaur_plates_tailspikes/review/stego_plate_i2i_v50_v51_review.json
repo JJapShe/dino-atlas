@@ -1,0 +1,29 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "source": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "v50": {
+    "route": "full dorsal plate-row local inpaint from v6",
+    "selectedDiagnostic": "assets/dinosaurs/stegosaurus-stenops-plate-row-i2i-rejected-v50.png",
+    "mask": "assets/dinosaurs/stegosaurus-plate-row-i2i-mask-v50.png",
+    "seed": 2026070354,
+    "denoise": 0.18,
+    "decision": "diagnostic only; reject as a primary because plate/body texture softens and does not beat v6"
+  },
+  "v51": {
+    "route": "stronger narrow air-gap inpaint from v6 using the v49 seam mask",
+    "selectedComparison": "assets/dinosaurs/stegosaurus-stenops-plate-airgap-i2i-comparison-v51.png",
+    "seed": 2026070356,
+    "denoise": 0.18,
+    "decision": "keep as anatomy-review comparison; do not replace v6 primary"
+  },
+  "passChecks": [
+    "v51 preserves the v6 low body, small head, feet, and four-spike thagomizer",
+    "v51 keeps the plate row mostly stable and slightly strengthens some gap/edge reads",
+    "v50 demonstrates that broad plate-row inpaint softens the body and is too blunt for promotion"
+  ],
+  "remainingRisks": [
+    "v51 does not clearly solve exact near/far two-row topology",
+    "v51 does not improve enough over v49 to replace v6",
+    "next route should use structure conditioning or a Stegosauridae LoRA rather than plain local inpaint"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "datasetId": "dromaeosaur_feathered_v1",
+  "trigger": "dromaeosaur_feathered",
+  "purpose": "Reference-conditioned expansion prompts for Velociraptor foot topology after prompt-only and foot-only i2i routes failed.",
+  "controlReference": "assets/dinosaurs/velociraptor-mongoliensis-foot-topology-guide-v1.png",
+  "reviewBeforeTraining": true,
+  "basePositive": "scientific-educational paleoart, project-owned synthetic candidate, single adult Velociraptor mongoliensis, small feathered dromaeosaur, full body lateral side view, narrow toothed non-beak snout, folded feathered forelimbs held close to the ribs, long stiff balancing tail, exactly two hind legs, dry Late Cretaceous Mongolian desert ground, each visible foot has two long walking toes touching the ground plus one raised enlarged second-toe sickle claw attached to the foot, no floating claw crescent",
+  "baseNegative": "modern bird head, bird beak, eagle talons, generic bird feet, floating detached claw, crescent claw separated from toe, oversized black hook talons, extra toes, extra legs, duplicate feet, hidden feet, missing tail, duplicate tail, spread wings, naked scaly movie raptor, giant monster raptor, text, labels, logo, watermark, signature",
+  "workflowNotes": [
+    "Use the controlReference as a line/depth/ControlNet guide rather than as a direct training image.",
+    "Keep denoise low to medium when starting from the current v9 candidate; raise structure strength before raising prompt intensity.",
+    "Reject outputs if the sickle claw is not visibly attached to the raised second toe, even when the overall silhouette looks good."
+  ],
+  "prompts": [
+    {
+      "id": "foot_topology_side_walk_01",
+      "variation": "left-facing side profile, near foot lifted slightly so the raised second-toe sickle claw is readable, far foot grounded with two walking toes visible"
+    },
+    {
+      "id": "foot_topology_side_walk_02",
+      "variation": "right-facing calm walking pose, both feet unobscured on dry sand, modest attached sickle claws held just above the ground"
+    },
+    {
+      "id": "foot_topology_low_camera_01",
+      "variation": "slightly lower camera angle but full body still in frame, feet large enough for toe review, long tail fully visible"
+    },
+    {
+      "id": "foot_topology_neutral_01",
+      "variation": "neutral reference stance with no dramatic action, folded arms and tail stable, two walking toes plus raised second toe on each visible foot"
+    },
+    {
+      "id": "foot_topology_feathered_01",
+      "variation": "dense downy body feathers and folded forelimb feathers, but feet remain unobscured and not hidden by plumage"
+    },
+    {
+      "id": "foot_topology_crop_ready_01",
+      "variation": "side-profile full body composed so front and rear feet can be cropped cleanly for review, no grass or stones covering toes"
+    }
+  ]
+}

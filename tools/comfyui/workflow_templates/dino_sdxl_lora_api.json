@@ -1,0 +1,75 @@
+{
+  "3": {
+    "class_type": "KSampler",
+    "inputs": {
+      "seed": 123456789,
+      "steps": 38,
+      "cfg": 4.8,
+      "sampler_name": "dpmpp_2m_sde_gpu",
+      "scheduler": "sgm_uniform",
+      "denoise": 1,
+      "model": ["10", 0],
+      "positive": ["6", 0],
+      "negative": ["7", 0],
+      "latent_image": ["5", 0]
+    }
+  },
+  "4": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": {
+      "ckpt_name": "sd_xl_base_1.0.safetensors"
+    }
+  },
+  "5": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": 1152,
+      "height": 768,
+      "batch_size": 1
+    }
+  },
+  "6": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": ["10", 1],
+      "text": "clean digital paleoart, modern dinosaur encyclopedia quality, non-signed image, no artist mark, professional natural history reconstruction, single adult Tyrannosaurus rex, only one animal, full body lateral side view, entire animal visible with clear margins, calm standing or slow walking pose, large deep skull, short two-fingered forelimbs, each visible hand has exactly two fingers, no third finger on either hand, powerful hind legs, long balancing tail, robust muscular torso, intact natural skin, subtle scales, believable soft tissue, Late Cretaceous open North American floodplain, sparse shrubs, open sky, clean daylight, balanced white balance, realistic earth tones, natural contrast, high fidelity but restrained detail, clean empty corners, no text, no logo, no watermark"
+    }
+  },
+  "7": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": ["10", 1],
+      "text": "text, labels, captions, writing, watermark, logo, signature, artist signature, artist name, initials, tiny letters, corner text, bottom right mark, copyright mark, border, multiple dinosaurs, two animals, duplicate dinosaur, baby dinosaur, herd, skeleton, exposed bones, visible ribs, rib cage, skull-only, fossil, xray, anatomical diagram, scientific diagram, blueprint, chart, parchment, paper background, museum skeleton, museum display, movie monster, fantasy dragon, kaiju, toy, plastic, cartoon, anime, roaring monster, attacking pose, dramatic sunset, cinematic orange lighting, horror lighting, incorrect limb count, extra head, extra tail, extra arms, extra fingers, three fingers, four fingers, five fingers, human-like hands, missing feet, broken feet, mangled hands, cropped body, cropped tail, cropped feet, out of frame, blurry, monochrome, grayscale, sepia, washed out colors, oversaturated neon colors, color cast, heavy fog, bloom, human rider, saddle"
+    }
+  },
+  "8": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": ["3", 0],
+      "vae": ["11", 0]
+    }
+  },
+  "9": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "filename_prefix": "dino_atlas/tyrannosaurus-rex_lora_v2",
+      "images": ["8", 0]
+    }
+  },
+  "10": {
+    "class_type": "LoraLoader",
+    "inputs": {
+      "model": ["4", 0],
+      "clip": ["4", 1],
+      "lora_name": "Dinosaur_Generator_v2.0-000011.safetensors",
+      "strength_model": 0.25,
+      "strength_clip": 0.15
+    }
+  },
+  "11": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "sdxl_vae.safetensors"
+    }
+  }
+}

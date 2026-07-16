@@ -1,0 +1,21 @@
+{
+  "taxonId": "velociraptor-mongoliensis",
+  "experiment": "head_micro_i2i_v29",
+  "sourceImage": "assets/dinosaurs/velociraptor-mongoliensis-small-sickle-imagegen-v9.png",
+  "comparisonImage": "assets/dinosaurs/velociraptor-mongoliensis-head-micro-i2i-comparison-v29.png",
+  "maskImage": "assets/dinosaurs/velociraptor-head-micro-i2i-mask-v29.png",
+  "reviewSheet": "assets/dinosaurs/velociraptor-head-micro-i2i-v29-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/velociraptor-head-micro-i2i-v29-crops.png",
+  "decision": "anatomy_review",
+  "selectedSeed": 2026070901,
+  "selectedDenoise": 0.09,
+  "mask": "velociraptor_head_snout",
+  "reasons": [
+    "v29 preserves the v9 body, folded forelimbs, long tail, two legs, and foot gates because the edit is localized to the head and snout",
+    "the selected output slightly reduces the modern-bird eye impression while keeping a toothed non-beak snout",
+    "the improvement is subtle and exact dromaeosaur skull/eye proportions still need reference review, so v9 remains primary for now",
+    "future promotion should require a crop gate that improves head identity without weakening the attached second-toe sickle-claw evidence"
+  ],
+  "keepCurrentPrimary": "assets/dinosaurs/velociraptor-mongoliensis-small-sickle-imagegen-v9.png",
+  "nextRoute": "Try a dromaeosaur-specific LoRA or stronger head reference conditioning, but keep the foot and tail locked unless the head crop clearly beats v9 and v27."
+}

@@ -1,0 +1,46 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "practicalfx_plate_lora_i2i_v64",
+  "sourceImage": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "maskImage": "assets/dinosaurs/stegosaurus-practicalfx-plate-lora-mask-v64.png",
+  "comparisonImage": "assets/dinosaurs/stegosaurus-stenops-practicalfx-plate-lora-rejected-v64.png",
+  "reviewSheet": "assets/dinosaurs/stegosaurus-practicalfx-plate-lora-v64-rejection-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-practicalfx-plate-lora-v64-rejection-crops.png",
+  "decision": "diagnostic_only",
+  "lora": "dinosaur_practical_fx.safetensors",
+  "loraStrength": 0.05,
+  "clipStrength": 0.03,
+  "selectedLabel": "seed 2026071111 d0.16",
+  "outputs": [
+    {
+      "label": "seed 2026071111 d0.10",
+      "image": "tools/comfyui/outputs/stegosaurus_practicalfx_plate_lora_v64_stego_dorsal_plates_stegosaurus-stenops_seed2026071111_s05_d10.png"
+    },
+    {
+      "label": "seed 2026071112 d0.10",
+      "image": "tools/comfyui/outputs/stegosaurus_practicalfx_plate_lora_v64_stego_dorsal_plates_stegosaurus-stenops_seed2026071112_s05_d10.png"
+    },
+    {
+      "label": "seed 2026071111 d0.16",
+      "image": "tools/comfyui/outputs/stegosaurus_practicalfx_plate_lora_v64_stego_dorsal_plates_stegosaurus-stenops_seed2026071111_s05_d16.png"
+    },
+    {
+      "label": "seed 2026071112 d0.16",
+      "image": "tools/comfyui/outputs/stegosaurus_practicalfx_plate_lora_v64_stego_dorsal_plates_stegosaurus-stenops_seed2026071112_s05_d16.png"
+    },
+    {
+      "label": "seed 2026071111 d0.22",
+      "image": "tools/comfyui/outputs/stegosaurus_practicalfx_plate_lora_v64_stego_dorsal_plates_stegosaurus-stenops_seed2026071111_s05_d22.png"
+    },
+    {
+      "label": "seed 2026071112 d0.22",
+      "image": "tools/comfyui/outputs/stegosaurus_practicalfx_plate_lora_v64_stego_dorsal_plates_stegosaurus-stenops_seed2026071112_s05_d22.png"
+    }
+  ],
+  "reasons": [
+    "the low-strength practical-fx LoRA preserves the v6 body, feet, tail, and thagomizer better than broad structural retries",
+    "plate-band crops remain too close to v6 or slightly soften the dorsal plates without proving a stronger two-row topology",
+    "this route does not solve the user-facing plate identity problem, so v6 remains the first candidate"
+  ],
+  "nextRoute": "Do not repeat generic/practical-fx plate-band LoRA at similar settings; Stegosaurus needs a species/clade LoRA or a reviewed plate-structure training set that can learn separate broad plates before naturalization."
+}

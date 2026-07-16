@@ -1,0 +1,33 @@
+{
+  "taxonId": "allosaurus-fragilis",
+  "experiment": "p2_v14_v16_three_finger_brow_candidates",
+  "currentPrimary": "assets/dinosaurs/allosaurus-fragilis-smoothbrow-threefinger-imagegen-v4.png",
+  "candidateDecisions": [
+    {
+      "source": "assets/dinosaurs/allosaurus-fragilis-imagegen-v14-source-candidate.png",
+      "decision": "reject_reference",
+      "reason": "Useful three-finger cue, but the skull and brow ornament read too high and horn-like for the smooth-brow Allosaurus gate."
+    },
+    {
+      "source": "assets/dinosaurs/allosaurus-fragilis-imagegen-v15-source-candidate.png",
+      "decision": "review_hold",
+      "reason": "Best P2 hand candidate with a clearer three-finger read and lower brow; keep below v4 because skull mass trends too heavy/Tyrannosaurus-like."
+    },
+    {
+      "source": "assets/dinosaurs/allosaurus-fragilis-imagegen-v16-source-candidate.png",
+      "decision": "reject_reference",
+      "reason": "Body and tail are usable, but brow/head detail and digit clarity remain too risky for positive training."
+    }
+  ],
+  "reviewSheet": "assets/dinosaurs/allosaurus-p2-v14-v16-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/allosaurus-p2-v14-v16-crops.png",
+  "decision": "keep_current_primary",
+  "reason": "V15 is a useful three-finger review hold, but none of the P2 candidates beats v4 on smooth brow, allosaur skull shape, medium forelimb scale, and exact three-finger anatomy together. Keep v14/v16 as reject references.",
+  "rejectIfPromoting": [
+    "visible hand reads as two, four, or five fingers instead of exactly three",
+    "brow ridges become raised horns, crown bumps, or fantasy crests",
+    "forelimbs shrink into tiny two-finger Tyrannosaurus arms",
+    "skull becomes deep and blocky like Tyrannosaurus",
+    "feet, hands, or tail are hidden enough to block count review"
+  ]
+}

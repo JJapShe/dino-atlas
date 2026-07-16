@@ -1,0 +1,65 @@
+{
+  "taxonId": "allosaurus-fragilis",
+  "round": "allo_digit_inpaint_v1",
+  "date": "2026-06-23",
+  "goal": "Improve the app-first Allosaurus candidate by strengthening the visible hand/claw cue without changing the full-body scene, tail, stance, or longer forelimb read.",
+  "referenceGate": {
+    "required": [
+      "single tail fully in frame",
+      "two main hind legs",
+      "longer forelimb cue than Tyrannosaurus",
+      "visible small theropod hand/claw separation",
+      "no extra limbs",
+      "natural scene continuity"
+    ],
+    "stillUnderReview": [
+      "exact three-finger anatomy",
+      "rear foot detail through grass",
+      "close paleontology review of hand and toe shapes"
+    ],
+    "rejectIf": [
+      "extra arm or leg",
+      "disconnected hand",
+      "hanging string-like fingers",
+      "oversized hook claws",
+      "changed body, head, legs, tail, or background"
+    ]
+  },
+  "inputs": {
+    "source": "assets/dinosaurs/allosaurus-fragilis-natural-fullbody-ipcontrol-v1.png",
+    "script": "tools/comfyui/scripts/run_inpaint_experiment.py",
+    "maskPreset": "allosaurus_hand_tight",
+    "editMode": "allosaurus_digit_cues"
+  },
+  "experiments": [
+    {
+      "prefix": "local allosaurus digit-cues paintover",
+      "type": "deterministic PIL paintover",
+      "finding": "Rejected before app promotion. The stronger version made the added fingers read as thin hanging strings or extra appendages, while the conservative version was too subtle to justify a first-image change."
+    },
+    {
+      "prefix": "allo_digit_inpaint_v1",
+      "type": "ComfyUI SDXL inpaint",
+      "sheet": "tools/comfyui/lora_training/theropod_allosaurus/review/allo_digit_inpaint_v1_contact_sheet.png",
+      "handCrops": "tools/comfyui/lora_training/theropod_allosaurus/review/allo_digit_inpaint_v1_hand_crops.png",
+      "currentCompareCrops": "tools/comfyui/lora_training/theropod_allosaurus/review/allo_digit_inpaint_v1_current_compare_crops.png",
+      "tested": {
+        "seeds": [2026063121, 2026063122],
+        "denoise": [0.18, 0.26],
+        "feather": 3
+      },
+      "selected": {
+        "seed": 2026063121,
+        "denoise": 0.18,
+        "asset": "assets/dinosaurs/allosaurus-fragilis-handcue-inpaint-v1.png"
+      },
+      "finding": "Selected as an incremental count-level improvement. It preserves the full-body scene and slightly clarifies the visible hand/claw separation. Higher denoise outputs over-smoothed or over-emphasized the hand."
+    }
+  ],
+  "decision": {
+    "promotedAsset": "assets/dinosaurs/allosaurus-fragilis-handcue-inpaint-v1.png",
+    "promotedRole": "count-level pass",
+    "status": "accepted as app-first incremental candidate, not final approval",
+    "reason": "The selected low-denoise hand-only inpaint improves the current first image without introducing obvious limb-count errors. Exact three-finger anatomy and rear-foot detail remain under review."
+  }
+}

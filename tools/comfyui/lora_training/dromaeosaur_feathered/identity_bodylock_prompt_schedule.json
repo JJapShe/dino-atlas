@@ -1,0 +1,50 @@
+{
+  "datasetId": "dromaeosaur_feathered_v1",
+  "trigger": "dromaeosaur_feathered",
+  "purpose": "Reference-conditioned expansion prompts for Velociraptor after v63 improved dark-speckled plumage and P10 added v68 as the best color/head review hold; v65/v68 remain source holds only until localized foot correction proves modest attached second-toe sickle claws.",
+  "controlReference": "assets/dinosaurs/velociraptor-mongoliensis-identity-bodylock-guide-clean-v1.png",
+  "secondaryControlReference": "assets/dinosaurs/velociraptor-mongoliensis-foot-topology-guide-v1.png",
+  "reviewBeforeTraining": true,
+  "basePositive": "scientific-educational paleoart, project-owned synthetic candidate, single adult Velociraptor mongoliensis, small feathered dromaeosaur, full body lateral side view, narrow elongated toothed non-beak dinosaur snout, compact folded feathered forelimbs held close to the ribs, dark charcoal and umber speckled body plumage, pale cream throat and belly, small rust-orange facial mask, narrow pale tail bands, long stiff balancing tail fully visible, exactly two hind legs, each visible foot has two walking toes touching the ground plus one attached modest raised second-toe sickle claw, dry Late Cretaceous Mongolian desert ground, natural daylight",
+  "baseNegative": "modern bird head, bird beak, duck beak, eagle head, generic bird body, spread wings, flying pose, naked scaly movie raptor, giant monster raptor, human-sized body, smooth generic theropod without plumage, floating detached claw, crescent claw separated from toe, oversized black hook talons, generic bird talons, extra toes, extra legs, duplicate feet, missing tail, duplicate tail, hidden feet, grass covering feet, text, labels, logo, watermark, signature, plain samey brown plumage, large wing fan forelimbs, color improvement with giant hook claws",
+  "workflowNotes": [
+    "Use v63 as the current natural-color base when texture and gallery distinction matter.",
+    "Use the clean controlReference as the main body/head/tail guide and the secondaryControlReference when the foot topology collapses.",
+    "Reject outputs whose head reads as a modern bird even if feathers look good.",
+    "Reject color-improved outputs if the folded forelimbs become wing fans or the sickle claw turns into a giant hook.",
+    "Treat v65 and v68 as possible foot-local source candidates, not train seeds, because their non-bird heads and colors are useful but the raised claws are still too large.",
+    "The next useful pass should be foot-local i2i/ControlNet over v63, v65, or v68 rather than another broad prompt-only color retry."
+  ],
+  "prompts": [
+    {
+      "id": "v63_foot_local_color_preserve_01",
+      "variation": "foot-local correction over the v63 dark-speckled plumage candidate, preserve rust face, compact folded arms, long stiff tail, and body color while making the raised second-toe claw modest and attached"
+    },
+    {
+      "id": "identity_bodylock_side_walk_01",
+      "variation": "left-facing full-body side profile, toothed snout and folded forelimbs clearly visible, feet unobscured on dry sand"
+    },
+    {
+      "id": "identity_bodylock_side_walk_02",
+      "variation": "right-facing calm walking pose, long stiff tail fully in frame, dense body feathers without spread wings"
+    },
+    {
+      "id": "identity_bodylock_head_foot_01",
+      "variation": "compose the animal so both the narrow toothed snout and the near foot sickle claw can be cropped cleanly for review"
+    },
+    {
+      "id": "identity_bodylock_folded_arm_01",
+      "variation": "folded feathered forelimbs held tight against the ribs, visible hand claws but no wing spread or flight pose"
+    },
+    {
+      "id": "identity_bodylock_low_camera_01",
+      "variation": "slightly lower camera angle but full body still in frame, feet large enough for toe review, no shrubs covering toes"
+    },
+    {
+      "id": "identity_bodylock_neutral_reference_01",
+      "variation": "neutral educational reference stance, restrained earth tones, clear side silhouette, no dramatic action"
+    }
+  ],
+  "passSummary": "foot-local i2i/control over v63, v65, or review-hold v68 | preserve dark speckled plumage and rust face | reduce hook-claw exaggeration",
+  "rejectSummary": "Reject outputs whose head reads as a modern bird, whose folded arms become wing fans, or whose sickle claw becomes a giant hook/detached crescent even if the color looks good."
+}

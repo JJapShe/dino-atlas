@@ -1,0 +1,21 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "plate_airgap_i2i_v49",
+  "sourceImage": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "maskImage": "assets/dinosaurs/stegosaurus-plate-airgap-i2i-mask-v49.png",
+  "comparisonImage": "assets/dinosaurs/stegosaurus-stenops-plate-airgap-i2i-comparison-v49.png",
+  "reviewSheet": "assets/dinosaurs/stegosaurus-plate-airgap-i2i-v49-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-plate-airgap-i2i-v49-crops.png",
+  "decision": "comparison_only",
+  "reasons": [
+    "narrow seam-mask i2i preserves the v6 body, feet, and four-spike thagomizer",
+    "plate gaps are slightly clearer, but the improvement is subtle",
+    "current v6 remains the stronger primary because it already has better app-scale plate and tail balance",
+    "future work should use a topology-aware mask or Stegosauridae LoRA rather than whole-body texture i2i"
+  ],
+  "keepCurrentPrimary": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "selectedSeed": 2026070352,
+  "selectedDenoise": 0.1,
+  "editMode": "stego_plate_air_gaps",
+  "nextRoute": "Try a hand-drawn near/far plate-base topology mask or Stegosauridae LoRA; do not promote subtle seam edits unless plate-row topology and four-spike tail readability improve together."
+}

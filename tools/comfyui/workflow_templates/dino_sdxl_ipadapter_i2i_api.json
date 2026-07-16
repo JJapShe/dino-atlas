@@ -1,0 +1,105 @@
+{
+  "3": {
+    "class_type": "KSampler",
+    "inputs": {
+      "seed": 123456789,
+      "steps": 38,
+      "cfg": 4.8,
+      "sampler_name": "dpmpp_2m_sde_gpu",
+      "scheduler": "sgm_uniform",
+      "denoise": 0.66,
+      "model": ["17", 0],
+      "positive": ["6", 0],
+      "negative": ["7", 0],
+      "latent_image": ["13", 0]
+    }
+  },
+  "4": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": {
+      "ckpt_name": "RealVisXL_V5.0_fp16.safetensors"
+    }
+  },
+  "6": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": ["4", 1],
+      "text": ""
+    }
+  },
+  "7": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": ["4", 1],
+      "text": ""
+    }
+  },
+  "8": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": ["3", 0],
+      "vae": ["11", 0]
+    }
+  },
+  "9": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "filename_prefix": "dino_atlas/ipadapter_i2i",
+      "images": ["8", 0]
+    }
+  },
+  "11": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "sdxl_vae.safetensors"
+    }
+  },
+  "12": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "dino_ipadapter/reference.png",
+      "upload": "image"
+    }
+  },
+  "13": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": ["18", 0],
+      "vae": ["11", 0]
+    }
+  },
+  "15": {
+    "class_type": "IPAdapterModelLoader",
+    "inputs": {
+      "ipadapter_file": "ip-adapter-plus_sdxl_vit-h.safetensors"
+    }
+  },
+  "16": {
+    "class_type": "CLIPVisionLoader",
+    "inputs": {
+      "clip_name": "CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors"
+    }
+  },
+  "17": {
+    "class_type": "IPAdapterAdvanced",
+    "inputs": {
+      "model": ["4", 0],
+      "ipadapter": ["15", 0],
+      "image": ["12", 0],
+      "weight": 0.55,
+      "weight_type": "style and composition",
+      "combine_embeds": "average",
+      "start_at": 0,
+      "end_at": 0.82,
+      "embeds_scaling": "V only",
+      "clip_vision": ["16", 0]
+    }
+  },
+  "18": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "dino_guides/velociraptor-mongoliensis_shape_plumage.png",
+      "upload": "image"
+    }
+  }
+}

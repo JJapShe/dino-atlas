@@ -1,0 +1,26 @@
+{
+  "taxonId": "triceratops-horridus",
+  "experiment": "p10_v52_v54_color_variation_bodylock_review",
+  "currentPrimary": "assets/dinosaurs/triceratops-horridus-imagegen-v51-source-candidate.png",
+  "reviewHolds": [
+    "assets/dinosaurs/triceratops-horridus-imagegen-v52-source-candidate.png",
+    "assets/dinosaurs/triceratops-horridus-imagegen-v53-source-candidate.png",
+    "assets/dinosaurs/triceratops-horridus-imagegen-v54-source-candidate.png",
+    "assets/dinosaurs/triceratops-horridus-imagegen-v43-source-candidate.png"
+  ],
+  "rejectReferences": [],
+  "reviewSheet": "assets/dinosaurs/triceratops-p10-v52-v54-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/triceratops-p10-v52-v54-crops.png",
+  "decision": "keep_v51_primary_add_v52_v54_as_color_pattern_holds",
+  "reason": "V52-v54 improve species-level color and pattern separation with cool mottling, teal/rust frill accents, and dark freckling. None should replace v51 yet because the torso remains high or rounded enough to risk rhinoceros-like body shortcuts, and the skull-frill attachment still needs stricter body-lock review.",
+  "nextRoute": "Use v52-v54 as color-reference holds only. The next Triceratops pass should use the skull-frill body-lock guide or low-denoise i2i over v51/v52, preserving cool palettes while lowering the torso, separating non-hoofed toes, and proving that the frill is attached to the skull rather than the shoulder.",
+  "rejectIfPromoting": [
+    "torso or shoulder mass reads as rhinoceros-like",
+    "body becomes a round mammal barrel rather than low elongated ceratopsian form",
+    "frill attaches to shoulders, back, or torso instead of skull",
+    "horn count is not exactly two brow horns plus one nasal horn",
+    "feet become hoof-like or toe separation is hidden",
+    "tail is cropped, hidden, or tiny",
+    "color/pattern looks good but masks anatomical failure"
+  ]
+}

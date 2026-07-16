@@ -1,0 +1,59 @@
+{
+  "taxonId": "velociraptor-mongoliensis",
+  "round": "velo_rear_sickle_cleanup_v1",
+  "date": "2026-06-23",
+  "goal": "Improve the app-first Velociraptor candidate by removing a vertical rear-foot artifact without changing the already acceptable tail, two-leg stance, folded forelimbs, side-profile body, or feather-mass read.",
+  "referenceGate": {
+    "required": [
+      "single long tail",
+      "two hind legs",
+      "folded forelimbs",
+      "small feathered dromaeosaur body",
+      "rear-foot cue must not read as a stray spike or plant stem",
+      "no extra limbs"
+    ],
+    "stillUnderReview": [
+      "exact raised second-toe sickle-claw anatomy",
+      "toe shape on both feet",
+      "full dromaeosaur feather coverage"
+    ],
+    "rejectIf": [
+      "extra leg or extra foot",
+      "duplicate tail",
+      "oversized monster talons",
+      "missing feet",
+      "changed body, head, tail, or feather pattern",
+      "rear-foot artifact preserved as a vertical spike"
+    ]
+  },
+  "inputs": {
+    "source": "assets/dinosaurs/velociraptor-mongoliensis-plumage-sickle-refined-v1.png",
+    "script": "tools/comfyui/scripts/run_inpaint_experiment.py",
+    "mask": "tools/comfyui/lora_training/dromaeosaur_feathered/review/velo_rear_sickle_cleanup_v1_mask.png",
+    "editMode": "velociraptor_sickle_claws"
+  },
+  "experiments": [
+    {
+      "prefix": "velo_rear_sickle_cleanup_v1",
+      "type": "ComfyUI SDXL custom-mask rear-foot inpaint",
+      "sheet": "tools/comfyui/lora_training/dromaeosaur_feathered/review/velo_rear_sickle_cleanup_v1_contact_sheet.png",
+      "rearFootCrops": "tools/comfyui/lora_training/dromaeosaur_feathered/review/velo_rear_sickle_cleanup_v1_rear_foot_crops.png",
+      "tested": {
+        "seeds": [2026063221, 2026063222],
+        "denoise": [0.14, 0.22, 0.30]
+      },
+      "selected": {
+        "seed": 2026063222,
+        "denoise": 0.22,
+        "asset": "assets/dinosaurs/velociraptor-mongoliensis-rearfoot-cleanup-v1.png"
+      },
+      "finding": "Selected as a count-level improvement. It removes the vertical rear-foot artifact while preserving the body, tail, legs, folded forelimbs, and current feather-mass read. Denoise 0.14 often preserved the artifact, while 0.30 over-softened the foot."
+    }
+  ],
+  "decision": {
+    "promotedAsset": "assets/dinosaurs/velociraptor-mongoliensis-rearfoot-cleanup-v1.png",
+    "promotedRole": "reject_reference",
+    "status": "demoted after direct identity review",
+    "reason": "The selected rear-foot-only inpaint removes a misleading vertical foot artifact without introducing obvious limb-count errors, but the head reads too bird-like and the raised second-toe sickle claw remains too weak for representative promotion or positive LoRA training."
+  }
+}

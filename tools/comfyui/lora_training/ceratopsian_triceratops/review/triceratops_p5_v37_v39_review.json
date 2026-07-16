@@ -1,0 +1,26 @@
+{
+  "taxonId": "triceratops-horridus",
+  "experiment": "p5_v37_v39_antirhino_prompt_candidates",
+  "currentPrimary": "assets/dinosaurs/triceratops-horridus-allfeet-lora-i2i-comparison-v22.png",
+  "selectedReviewHold": "assets/dinosaurs/triceratops-horridus-imagegen-v38-source-candidate.png",
+  "comparisonReviewHolds": [
+    "assets/dinosaurs/triceratops-horridus-imagegen-v39-source-candidate.png",
+    "assets/dinosaurs/triceratops-horridus-imagegen-v37-source-candidate.png",
+    "assets/dinosaurs/triceratops-horridus-imagegen-v35-source-candidate.png"
+  ],
+  "selectedRejectReferences": [],
+  "reviewSheet": "assets/dinosaurs/triceratops-p5-v37-v39-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/triceratops-p5-v37-v39-crops.png",
+  "decision": "keep_current_v22_with_v38_as_best_new_review_hold",
+  "reason": "V38 is the best P5 review hold because it has the strongest immediate Triceratops read among the new candidates: skull-attached frill, exactly three facial horns, closed beak, long tail, and separated toes. It still stays below promotion because the torso remains rounded/barrel-like and could still reinforce a mammal-body shortcut. V39 has strong head/frill identity but a heavier barrel body, while V37 keeps useful tail and toe visibility but the water scene and body volume are less atlas-clean. Keep v22 first until a crop gate proves low elongated ceratopsian torso, closed beak, skull frill, long tail, and non-hoofed toes together.",
+  "nextRoute": "Use v38 as a prompt/style source hold for the next skull-frill body-lock i2i or ceratopsian LoRA branch, but keep it outside positive training. The next attempt should target lower torso volume and more dinosaur-like limb posture without losing the strong head/frill/horn identity.",
+  "rejectIfPromoting": [
+    "torso, shoulder mass, or feet read as rhinoceros-like",
+    "body is a round barrel rather than low elongated ceratopsian form",
+    "frill attaches to shoulders, back, or torso instead of skull",
+    "mouth opens or teeth appear",
+    "horn count is not exactly two brow horns plus one nasal horn",
+    "feet become hoof-like or hide toe separation",
+    "tail is cropped, hidden, or short"
+  ]
+}

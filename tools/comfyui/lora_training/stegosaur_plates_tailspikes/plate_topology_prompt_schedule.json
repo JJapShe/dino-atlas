@@ -1,0 +1,51 @@
+{
+  "datasetId": "stegosaur_plates_tailspikes_v1",
+  "trigger": "stegosaur_plates_tailspikes",
+  "purpose": "Reference-conditioned Stegosaurus expansion after P11 confirmed prompt-only retries can improve bony plate material but still invent tail-parallel lower points, straight tail-spear extensions, or five-spike/radial thagomizers; next route should use tail-local ControlNet/inpaint before broader color polish.",
+  "controlReference": "assets/dinosaurs/stegosaurus-stenops-plate-topology-guide-v1.png",
+  "reviewBeforeTraining": true,
+  "passSummary": "tail-local i2i/inpaint over v92 or v100 | rounded tail base | exactly four upward spikes | preserve rough rust-red/pale-bone plate material",
+  "rejectSummary": "Reject if any spike or tail-point lies parallel to the ground, runs along the tail shaft, continues as a straight point beyond the spikes, forms a radial/five-spike cluster, or if plates share skin-like leather texture.",
+  "basePositive": "scientific-educational paleoart, project-owned synthetic candidate, single adult Stegosaurus stenops, full body lateral side view, low quadrupedal dinosaur, small low head, arched body, long tail fully in frame, many separate broad bony or keratin dorsal plates in two staggered alternating rows, plates visibly different from skin with rough matte bone texture, rust-red centers, pale chipped rims, dark cracked edges, visible gaps between individual plates, largest plates over hips and mid-back, smaller plates near neck and tail base, tail ends at a rounded thagomizer base with exactly four visible spikes rising upward in paired V shapes relative to the ground and horizon, both lower spikes still angled upward above the horizon rather than sideways along the tail shaft, no horizontal tail-point after the spike base, four planted feet, Late Jurassic dry floodplain, natural daylight",
+  "baseNegative": "plates same color or texture as skin, leather-like plates, single smooth sail, continuous scalloped fan, connected sawtooth wall, one straight row of identical roof teeth, rounded flower-petal plates, plant leaves, leaf veins, comb-like needle spines, missing dorsal plates, missing thagomizer, horizontal tail spikes, downward tail spikes, radial starburst thagomizer, compass-rose tail, fewer than four tail spikes, more than four tail spikes, tail cropped before spikes, second head on tail, face on tail, turtle shell, ankylosaur armor, sauropod long neck, theropod biped stance, extra legs, hidden feet, duplicate limbs, duplicate tail, text, labels, logo, watermark, signature, border, horizontal tail point continuing beyond thagomizer, three spikes plus small side nub, ground-parallel lower spike, lower spike along tail shaft, sideways lower spike, five-spike thagomizer, radial thagomizer cluster, starburst tail spikes",
+  "workflowNotes": [
+    "Use the controlReference as line/depth/ControlNet structure guidance, not as direct training art.",
+    "P9 v93-v96 showed prompt-only retries are not enough: use a tail-local mask/inpaint or ControlNet guide that ends the tail at a rounded spike base.",
+    "The two lower thagomizer spikes must still angle upward relative to the ground/horizon, not sideways along the tail shaft.",
+    "P10 v97-v99 showed that whole-body prompting still leaves lower spikes tail-parallel or overcorrects into five/radial spikes; do not promote these as positives.",
+    "P11 v100-v102 improved rough pale-bone/rust plate material, especially v100, but still failed the strict tail gate through five/radial count, straight tail-spear, or tail-parallel lower-point drift.",
+    "Reject outputs if any thagomizer spike or tail-point lies parallel to the ground or horizon.",
+    "Reject outputs if the thagomizer reads as three spikes plus a side nub, five-plus spikes, a radial starburst, or a continued pointed tail.",
+    "Reject outputs if the plate row becomes a single connected sail, a row of identical triangular teeth, or same-color leather-like skin flaps."
+  ],
+  "prompts": [
+    {
+      "id": "tail_local_upward_v_inpaint_01",
+      "variation": "tail-local inpaint/control pass over the current v92 body: preserve plates and body, replace only tail tip with a rounded base and exactly four countable spikes; both lower spikes must still rise upward above the horizon, not run along the tail shaft"
+    },
+    {
+      "id": "plate_topology_side_profile_01",
+      "variation": "left-facing full-body side profile, two staggered plate rows visible as near and far plates, clear sky gaps between individual plates"
+    },
+    {
+      "id": "plate_topology_side_profile_02",
+      "variation": "right-facing calm walking pose, largest alternating plates over hips and mid-back, smaller plates toward neck and tail base"
+    },
+    {
+      "id": "plate_topology_threequarter_01",
+      "variation": "very slight side angle while remaining mostly profile, near-row and far-row bases visible without becoming a rear view"
+    },
+    {
+      "id": "plate_topology_tailroom_01",
+      "variation": "extra negative space behind the tail; tail shaft ends at a rounded thagomizer base with exactly four spikes all rising 40-75 degrees above the ground/horizon, no horizontal tail point"
+    },
+    {
+      "id": "plate_topology_crop_ready_01",
+      "variation": "compose the animal with clear crops for dorsal plates, feet, and tail spikes, no grass or stones covering diagnostic anatomy"
+    },
+    {
+      "id": "plate_topology_texture_01",
+      "variation": "rough matte bony plate surfaces with rust-red centers, pale chipped rims, dark edge thickness, no same-color leather texture, no leaf veins, no glossy plastic or paper-cutout look"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "datasetId": "theropod_allosaurus_v1",
+  "trigger": "theropod_allosaurus",
+  "taxa": [
+    "Allosaurus fragilis",
+    "three-fingered allosaurid"
+  ],
+  "licensePolicy": "Only project-internal AI-generated images and hand-authored guides are allowed as sources. External museum/science material is reference-only, not training data.",
+  "items": [
+    {
+      "id": "allosaurus_smoothbrow_threefinger_v4",
+      "role": "train_seed",
+      "source": "assets/dinosaurs/allosaurus-fragilis-smoothbrow-threefinger-imagegen-v4.png",
+      "caption": "theropod_allosaurus, Allosaurus fragilis, full body side profile, large Jurassic allosaurid predator, lower elongated skull, smooth low brow with no horns or fantasy crest, medium non-weight-bearing forelimbs longer than Tyrannosaurus arms, exactly three clawed fingers per visible hand, two strong hind legs, dry three-toed feet, long single tail, open dry ground, no text, no watermark",
+      "strengths": [
+        "current app first candidate for the Allosaurus three-finger gate",
+        "preserves lower allosaur head, open dry feet, two-hind-leg stance, medium forelimbs, and long tail",
+        "reduces the horn-like brow risk from earlier candidates"
+      ],
+      "risks": [
+        "exact three-finger separation and claw length still need close crop review",
+        "toe anatomy is count-level rather than final"
+      ]
+    },
+    {
+      "id": "allosaurus_reviewable_threefinger_v3",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/allosaurus-fragilis-reviewable-threefinger-imagegen-v3.png",
+      "caption": "review hold only, Allosaurus v3 comparison with useful hand and foot review source but weaker brow and three-finger clarity than v4, not a positive LoRA seed",
+      "strengths": [
+        "useful earlier hand and foot review source",
+        "keeps medium Allosaurus forelimb scale better than T. rex-like outputs"
+      ],
+      "risks": [
+        "brow and hand clarity are weaker than the v4 first candidate",
+        "not final approval quality",
+        "unsafe as train_seed while v4 has the stronger smooth-brow three-finger gate"
+      ]
+    },
+    {
+      "id": "allosaurus_threefinger_bodylock_guide_v1",
+      "role": "control_reference",
+      "source": "assets/dinosaurs/allosaurus-fragilis-threefinger-bodylock-guide-v1.png",
+      "caption": "control reference only, Allosaurus fragilis three-finger body-lock guide, lower allosaur skull, no horn-like brow, medium forelimbs longer than Tyrannosaurus arms, exactly three clawed fingers per visible hand, two strong hind legs, long tail, no two-finger T. rex arms",
+      "strengths": [
+        "locks the three-finger hand and medium-arm target before texture generation",
+        "useful as ControlNet, depth, line, or i2i guidance"
+      ],
+      "risks": [
+        "schematic guide, not suitable for direct LoRA training",
+        "visible control markings are for QA and generation planning only"
+      ]
+    },
+    {
+      "id": "allosaurus_digit_micro_i2i_v11",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/allosaurus-fragilis-digit-micro-i2i-comparison-v11.png",
+      "caption": "review hold only, low-denoise hand and foot micro i2i over the v4 Allosaurus source",
+      "strengths": [
+        "preserves v4 smooth brow, body, tail, and medium forelimb scale",
+        "useful comparison evidence for three-finger and toe cues"
+      ],
+      "risks": [
+        "does not clearly improve exact hand and foot readability enough to replace v4",
+        "should not be used as a positive seed unless close crops prove improvement"
+      ]
+    },
+    {
+      "id": "allosaurus_imagegen_v13_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/allosaurus-fragilis-imagegen-v13-source-candidate.png",
+      "caption": "review hold only, project-owned Allosaurus fragilis source candidate with smooth low brow, full body side profile, medium forelimbs, long tail, and two hind legs; visible hand can read as four fingers so it is not a positive LoRA seed",
+      "strengths": [
+        "smooth-brow full-body Allosaurus read is stronger than the v12 horn-risk retry",
+        "medium forelimb scale and full tail are readable",
+        "project-owned source suitable for copyright-safe review"
+      ],
+      "risks": [
+        "visible hand can read as four fingers rather than exactly three",
+        "not suitable as a train_seed until the digit gate is manually approved",
+        "body and feet remain count-level rather than final"
+      ]
+    },
+    {
+      "id": "allosaurus_imagegen_v14_horn_brow_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/allosaurus-fragilis-imagegen-v14-source-candidate.png",
+      "caption": "reject reference only, Allosaurus P2 candidate with useful body and hand cue but high horn-like skull and brow ornament drift",
+      "strengths": [
+        "keeps a useful full-body allosaur silhouette",
+        "visible hand cue is useful for reviewing three-finger prompts"
+      ],
+      "risks": [
+        "skull and brow ornament drift too high and horn-like",
+        "unsafe for the smooth-brow Allosaurus gate",
+        "must not be used as positive LoRA data"
+      ]
+    },
+    {
+      "id": "allosaurus_imagegen_v15_threefinger_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/allosaurus-fragilis-imagegen-v15-source-candidate.png",
+      "caption": "review hold only, Allosaurus P2 candidate with clearer three-finger hand cue, medium forelimbs, lower brow, full tail, and two hind legs",
+      "strengths": [
+        "best P2 hand candidate",
+        "clearer fresh three-finger read than v13/v14/v16",
+        "preserves medium forelimbs, full tail, and two-hind-leg stance"
+      ],
+      "risks": [
+        "skull mass trends too heavy and Tyrannosaurus-like",
+        "not suitable as a train_seed until skull/brow and exact digit gates pass together",
+        "keep below the current v4 primary"
+      ]
+    },
+    {
+      "id": "allosaurus_imagegen_v16_brow_risk_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/allosaurus-fragilis-imagegen-v16-source-candidate.png",
+      "caption": "reject reference only, Allosaurus P2 candidate with useful body and tail but risky brow/head detail and unclear digits",
+      "strengths": [
+        "body and tail are useful comparison material",
+        "records another prompt-only brow-risk failure mode"
+      ],
+      "risks": [
+        "brow and head details remain too risky",
+        "digit clarity is not safe for the exact three-finger gate",
+        "must stay out of positive training"
+      ]
+    },
+    {
+      "id": "allosaurus_ridgehand_v4",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/allosaurus-fragilis-ridgehand-comparison-v4.png",
+      "caption": "review hold only, v4 comparison with hand and ridge risk",
+      "strengths": [
+        "documents a nearby prompt variant around the selected v4 candidate"
+      ],
+      "risks": [
+        "hand and brow/ridge read are weaker than the selected v4",
+        "not suitable as a positive training seed without re-review"
+      ]
+    },
+    {
+      "id": "allosaurus_imagegen_v12_horn_digit_reject",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/allosaurus-fragilis-imagegen-v12-source-candidate.png",
+      "caption": "reject reference only, project-owned Allosaurus prompt retry with useful body silhouette but horn-like brow bumps and ambiguous hand digit count",
+      "strengths": [
+        "documents a realistic full-body allosaur-like prompt route"
+      ],
+      "risks": [
+        "raised brow bumps can read as horns or fantasy crest",
+        "visible hand digit count is ambiguous and unsafe for the three-finger gate",
+        "must not be used as positive LoRA data"
+      ]
+    },
+    {
+      "id": "allosaurus_compacthands_v2",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/allosaurus-fragilis-compacthands-imagegen-v2.png",
+      "caption": "reject reference only, earlier compact-hand Allosaurus route with weaker species and hand-read balance than the current v4",
+      "strengths": [
+        "records why compact-hand prompting alone was not enough"
+      ],
+      "risks": [
+        "weaker hand and species identity balance than v4",
+        "should not reinforce T. rex-like arm shrinkage or ambiguous digit reads"
+      ]
+    }
+  ],
+  "rejectCriteria": [
+    "two-finger T. rex-like hands or tiny tyrannosaur arms",
+    "massive Tyrannosaurus skull proportions",
+    "horn-like brow spikes, fantasy crests, or monster theropod drift",
+    "hidden hands, cropped feet, missing tail, duplicate limbs, or extra legs",
+    "text, labels, logos, signatures, watermarks, or frame artifacts"
+  ]
+}

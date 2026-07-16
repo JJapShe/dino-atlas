@@ -1,0 +1,125 @@
+{
+  "3": {
+    "class_type": "KSampler",
+    "inputs": {
+      "seed": 123456789,
+      "steps": 40,
+      "cfg": 4.8,
+      "sampler_name": "dpmpp_2m_sde_gpu",
+      "scheduler": "sgm_uniform",
+      "denoise": 1,
+      "model": ["17", 0],
+      "positive": ["16", 0],
+      "negative": ["16", 1],
+      "latent_image": ["5", 0]
+    }
+  },
+  "4": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": {
+      "ckpt_name": "RealVisXL_V5.0_fp16.safetensors"
+    }
+  },
+  "5": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": 1152,
+      "height": 768,
+      "batch_size": 1
+    }
+  },
+  "6": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": ["4", 1],
+      "text": ""
+    }
+  },
+  "7": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": ["4", 1],
+      "text": ""
+    }
+  },
+  "8": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": ["3", 0],
+      "vae": ["11", 0]
+    }
+  },
+  "9": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "filename_prefix": "dino_atlas/ipadapter_controlnet",
+      "images": ["8", 0]
+    }
+  },
+  "11": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "sdxl_vae.safetensors"
+    }
+  },
+  "12": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "dino_ipadapter/reference.png",
+      "upload": "image"
+    }
+  },
+  "14": {
+    "class_type": "ControlNetLoader",
+    "inputs": {
+      "control_net_name": "mistoLine_rank256.safetensors"
+    }
+  },
+  "15": {
+    "class_type": "IPAdapterModelLoader",
+    "inputs": {
+      "ipadapter_file": "ip-adapter-plus_sdxl_vit-h.safetensors"
+    }
+  },
+  "16": {
+    "class_type": "ControlNetApplyAdvanced",
+    "inputs": {
+      "positive": ["6", 0],
+      "negative": ["7", 0],
+      "control_net": ["14", 0],
+      "image": ["18", 0],
+      "strength": 0.55,
+      "start_percent": 0,
+      "end_percent": 0.68,
+      "vae": ["11", 0]
+    }
+  },
+  "17": {
+    "class_type": "IPAdapterAdvanced",
+    "inputs": {
+      "model": ["4", 0],
+      "ipadapter": ["15", 0],
+      "image": ["12", 0],
+      "weight": 0.42,
+      "weight_type": "style transfer",
+      "combine_embeds": "average",
+      "start_at": 0,
+      "end_at": 0.72,
+      "embeds_scaling": "V only",
+      "clip_vision": ["19", 0]
+    }
+  },
+  "18": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "dino_ipadapter/control.png",
+      "upload": "image"
+    }
+  },
+  "19": {
+    "class_type": "CLIPVisionLoader",
+    "inputs": {
+      "clip_name": "CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors"
+    }
+  }
+}

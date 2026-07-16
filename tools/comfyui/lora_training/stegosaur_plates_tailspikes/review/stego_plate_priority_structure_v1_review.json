@@ -1,0 +1,56 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "round": "stego_plate_priority_structure_v1",
+  "date": "2026-06-23",
+  "goal": "Respond to review that Stegosaurus improves most if the dorsal plates are recognizable by making the first MVP image prioritize a clear separated plate row over natural-scene polish.",
+  "referenceGate": {
+    "required": [
+      "many separate flat bony dorsal plates",
+      "broad kite-shaped plate silhouettes",
+      "largest plates over the mid-back and hips",
+      "smaller plates toward the neck and tail base",
+      "visible gaps between plates",
+      "low quadrupedal Stegosaurus body",
+      "four-spike thagomizer"
+    ],
+    "rejectIf": [
+      "few rounded fins",
+      "continuous sail",
+      "shell-like ridge",
+      "plant-leaf plate read",
+      "plate row hides the body profile",
+      "tail spikes read as extra tails or a second head"
+    ]
+  },
+  "inputs": {
+    "script": "tools/comfyui/scripts/draw_stego_plate_priority_structure.py",
+    "previousPrimary": "assets/dinosaurs/stegosaurus-stenops-lowbody-plate-thagomizer-reference-v1.png",
+    "nearestNaturalComparison": "assets/dinosaurs/stegosaurus-stenops-plate-relock-ipcontrol-v1.png"
+  },
+  "experiments": [
+    {
+      "prefix": "stego_plate_priority_structure_v1_v1a",
+      "type": "local project-owned structure reference",
+      "finding": "Readable and balanced, but the lower broader variant has a stronger first-glance Stegosaurus plate silhouette."
+    },
+    {
+      "prefix": "stego_plate_priority_structure_v1_v1b",
+      "type": "local project-owned structure reference",
+      "asset": "assets/dinosaurs/stegosaurus-stenops-plate-priority-structure-v1.png",
+      "sheet": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_plate_priority_structure_v1_contact_sheet.png",
+      "plateCrops": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_plate_priority_structure_v1_plate_crops.png",
+      "finding": "Selected. The flat kite-shaped plates are countable, separated, and scaled from small neck/tail-base plates to larger mid-back plates while preserving a low body and four-spike thagomizer."
+    },
+    {
+      "prefix": "stego_plate_priority_structure_v1_v1c",
+      "type": "local project-owned structure reference",
+      "finding": "Readable but taller; it risks drifting toward a high triangular plate silhouette."
+    }
+  ],
+  "decision": {
+    "promotedAsset": "assets/dinosaurs/stegosaurus-stenops-plate-priority-structure-v1.png",
+    "promotedRole": "primary structure reference",
+    "status": "accepted as MVP structure reference, not final paleoart",
+    "reason": "The user review correctly identified dorsal plates as the blocking issue. Natural-scene candidates still collapse into too few rounded fins, so the app now leads with a clearer project-owned plate gate until a Stegosaurus-specific LoRA or stronger reference-conditioned route can naturalize the structure."
+  }
+}

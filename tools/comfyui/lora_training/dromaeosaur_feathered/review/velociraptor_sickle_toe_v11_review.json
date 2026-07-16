@@ -1,0 +1,24 @@
+{
+  "datasetId": "velociraptor_sickle_toe_v11",
+  "runId": "velociraptor_sickle_toe_v11",
+  "date": "2026-06-30",
+  "source": "tools/comfyui/outputs/velociraptor_sickle_toe_v11-results.json",
+  "contactSheet": "assets/dinosaurs/velociraptor-review-options-v17.png",
+  "cropSheet": "assets/dinosaurs/velociraptor-prompt-v11-rejection-crops.png",
+  "reviewDecision": "reject_all_for_candidate_and_training",
+  "summary": "Stricter whole-body prompt-only outputs reduced some oversized sickle-claw risk, but lost too much feathered dromaeosaur identity and drifted toward smooth generic theropods or bird-like legs. Keep the current v9 app candidate first.",
+  "primaryRejectReasons": [
+    "weak or missing dense feather coverage",
+    "smooth generic theropod body texture",
+    "bird-like leg or foot read",
+    "folded forelimb feather cue weakened",
+    "attached second-toe sickle anatomy still not reliable enough to justify replacing v9"
+  ],
+  "reviewedPromptIds": [
+    "attached_modest_sickle_side",
+    "toothed_snout_grounded_feet",
+    "small_scale_feathered_toes",
+    "reference_card_sickle_toe"
+  ],
+  "nextRoute": "Do not keep escalating prompt-only sickle-toe wording. Use a stronger foot-structure ControlNet/depth/line guide, a feather-aware route, or a custom dromaeosaur LoRA branch that locks toe topology before texture generation."
+}

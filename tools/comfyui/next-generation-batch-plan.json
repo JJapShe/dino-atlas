@@ -1,0 +1,426 @@
+{
+  "source": "tools/comfyui/outputs/generation-route-summary.json",
+  "variationSource": "app.js",
+  "reviewDashboard": "assets/dinosaurs/generation-route-dashboard-v1.png",
+  "items": [
+    {
+      "priority": 1,
+      "taxon": "velociraptor-mongoliensis",
+      "label": "Velociraptor",
+      "status": "count-level pass",
+      "whyFirst": "highest identity risk: toothed non-bird head, feathers, and attached sickle toe must survive together",
+      "focus": "dark-speckled plumage, toothed snout, modest attached sickle toe",
+      "primaryImage": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v63-source-candidate.png",
+      "primaryControlReference": "assets/dinosaurs/velociraptor-mongoliensis-identity-bodylock-guide-clean-v1.png",
+      "schedule": "tools/comfyui/lora_training/dromaeosaur_feathered/identity_bodylock_prompt_schedule.json",
+      "schedulePromptCount": 7,
+      "route": "Reference-conditioned expansion prompts for Velociraptor after v63 improved dark-speckled plumage and P10 added v68 as the best color/head review hold; v65/v68 remain source holds only until localized foot correction proves modest attached second-toe sickle claws.",
+      "visualVariationProfile": {
+        "color": "dark graphite and umber plumage with rust face accents",
+        "pattern": "fine speckles, barred tail, darker wing/arm feather edges",
+        "texture": "short filament feathers over body, tighter scaly feet",
+        "anatomy": "toothed narrow snout, folded forelimbs, modest attached second-toe sickle claw",
+        "avoid": "modern bird head, wing-fan arms, oversized detached hook claws"
+      },
+      "visualPromptAddendum": "species-specific color: dark graphite and umber plumage with rust face accents; pattern: fine speckles, barred tail, darker wing/arm feather edges; surface texture: short filament feathers over body, tighter scaly feet; signature anatomy: toothed narrow snout, folded forelimbs, modest attached second-toe sickle claw",
+      "negativePromptAddendum": "modern bird head, wing-fan arms, oversized detached hook claws",
+      "passSummary": "foot-local i2i/control over v63, v65, or review-hold v68 | preserve dark speckled plumage and rust face | reduce hook-claw exaggeration",
+      "rejectSummary": "Reject outputs whose head reads as a modern bird, whose folded arms become wing fans, or whose sickle claw becomes a giant hook/detached crescent even if the color looks good.",
+      "seedBase": 2026070200,
+      "prefix": "next_velociraptor_mongoliensis_v1",
+      "commands": {
+        "controlnetProbe": "python tools/comfyui/scripts/run_controlnet_experiment.py --taxon-id velociraptor-mongoliensis --source-image 'assets/dinosaurs/velociraptor-mongoliensis-identity-bodylock-guide-clean-v1.png' --seed 2026070201 --seed 2026070202 --strength 0.45 --strength 0.62 --end-percent 0.56 --end-percent 0.72 --prefix next_velociraptor_mongoliensis_v1_controlnet --clean-corners",
+        "scheduleProbe": "python tools/comfyui/scripts/run_lora_seed_schedule.py --schedule 'tools/comfyui/lora_training/dromaeosaur_feathered/identity_bodylock_prompt_schedule.json' --limit 3 --seed-base 2026070220 --prefix next_velociraptor_mongoliensis_v1_schedule",
+        "i2iProbe": "python tools/comfyui/scripts/run_schedule_i2i_experiment.py --schedule 'tools/comfyui/lora_training/dromaeosaur_feathered/identity_bodylock_prompt_schedule.json' --source-image 'assets/dinosaurs/velociraptor-mongoliensis-identity-bodylock-guide-clean-v1.png' --seed 2026070240 --seed 2026070241 --denoise 0.42 --denoise 0.56 --prefix next_velociraptor_mongoliensis_v1_schedule_i2i"
+      },
+      "manualGate": [
+        "do not auto-promote generated images",
+        "compare full body first, then crop-check signature anatomy",
+        "compare color, pattern, and surface texture against the species variation profile",
+        "reject immediately if the hard rejection rule is visible at thumbnail scale"
+      ],
+      "missingInputs": []
+    },
+    {
+      "priority": 2,
+      "taxon": "stegosaurus-stenops",
+      "label": "Stegosaurus",
+      "status": "count-level pass",
+      "whyFirst": "signature plates still need stricter two-row topology and four-spike tail verification",
+      "focus": "ground-relative upward V thagomizer, bony plates, alternating plates",
+      "primaryImage": "assets/dinosaurs/stegosaurus-stenops-imagegen-v92-source-candidate.png",
+      "primaryControlReference": "assets/dinosaurs/stegosaurus-stenops-plate-topology-guide-v1.png",
+      "schedule": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/plate_topology_prompt_schedule.json",
+      "schedulePromptCount": 7,
+      "route": "Reference-conditioned Stegosaurus expansion after P11 confirmed prompt-only retries can improve bony plate material but still invent tail-parallel lower points, straight tail-spear extensions, or five-spike/radial thagomizers; next route should use tail-local ControlNet/inpaint before broader color polish.",
+      "visualVariationProfile": {
+        "color": "muted green-gray body with pale bone, rust, or ochre dorsal plates",
+        "pattern": "plates visibly differ from skin; tail base may keep faint bands",
+        "texture": "rough keratin/bone plate material, pebbled body hide",
+        "anatomy": "alternating dorsal plates, small head, four legs, four upward V tail spikes",
+        "avoid": "skin-like leather plates, connected sail, radial/five-spike tail cluster"
+      },
+      "visualPromptAddendum": "species-specific color: muted green-gray body with pale bone, rust, or ochre dorsal plates; pattern: plates visibly differ from skin; tail base may keep faint bands; surface texture: rough keratin/bone plate material, pebbled body hide; signature anatomy: alternating dorsal plates, small head, four legs, four upward V tail spikes",
+      "negativePromptAddendum": "skin-like leather plates, connected sail, radial/five-spike tail cluster",
+      "passSummary": "tail-local i2i/inpaint over v92 or v100 | rounded tail base | exactly four upward spikes | preserve rough rust-red/pale-bone plate material",
+      "rejectSummary": "Reject if any spike or tail-point lies parallel to the ground, runs along the tail shaft, continues as a straight point beyond the spikes, forms a radial/five-spike cluster, or if plates share skin-like leather texture.",
+      "seedBase": 2026070300,
+      "prefix": "next_stegosaurus_stenops_v1",
+      "commands": {
+        "controlnetProbe": "python tools/comfyui/scripts/run_controlnet_experiment.py --taxon-id stegosaurus-stenops --source-image 'assets/dinosaurs/stegosaurus-stenops-plate-topology-guide-v1.png' --seed 2026070301 --seed 2026070302 --strength 0.45 --strength 0.62 --end-percent 0.56 --end-percent 0.72 --prefix next_stegosaurus_stenops_v1_controlnet --clean-corners",
+        "scheduleProbe": "python tools/comfyui/scripts/run_lora_seed_schedule.py --schedule 'tools/comfyui/lora_training/stegosaur_plates_tailspikes/plate_topology_prompt_schedule.json' --limit 3 --seed-base 2026070320 --prefix next_stegosaurus_stenops_v1_schedule",
+        "i2iProbe": "python tools/comfyui/scripts/run_schedule_i2i_experiment.py --schedule 'tools/comfyui/lora_training/stegosaur_plates_tailspikes/plate_topology_prompt_schedule.json' --source-image 'assets/dinosaurs/stegosaurus-stenops-plate-topology-guide-v1.png' --seed 2026070340 --seed 2026070341 --denoise 0.42 --denoise 0.56 --prefix next_stegosaurus_stenops_v1_schedule_i2i"
+      },
+      "manualGate": [
+        "do not auto-promote generated images",
+        "compare full body first, then crop-check signature anatomy",
+        "compare color, pattern, and surface texture against the species variation profile",
+        "reject immediately if the hard rejection rule is visible at thumbnail scale"
+      ],
+      "missingInputs": []
+    },
+    {
+      "priority": 3,
+      "taxon": "triceratops-horridus",
+      "label": "Triceratops",
+      "status": "count-level pass",
+      "whyFirst": "must keep the anti-rhinoceros gate: skull-attached frill, low body, long tail, and non-hoofed toes",
+      "focus": "cool color pattern, skull-attached frill, non-hoofed toes",
+      "primaryImage": "assets/dinosaurs/triceratops-horridus-imagegen-v51-source-candidate.png",
+      "primaryControlReference": "assets/dinosaurs/triceratops-horridus-skullfrill-bodylock-guide-v1.png",
+      "schedule": "tools/comfyui/lora_training/ceratopsian_triceratops/skullfrill_bodylock_prompt_schedule.json",
+      "schedulePromptCount": 7,
+      "route": "Reference-conditioned expansion prompts for Triceratops after P10 confirmed v52-v54 are useful color references but still need stricter body-lock control for low elongated anti-rhino anatomy and skull-attached frill proof.",
+      "visualVariationProfile": {
+        "color": "cool slate, teal gray, cream horn tips, restrained rust frill accents",
+        "pattern": "mottled face and frill freckles, broken flank spotting",
+        "texture": "matte hide with keratin horns and rough frill rim",
+        "anatomy": "three horns, skull-attached frill, low ceratopsian body, visible toes",
+        "avoid": "rhinoceros body, shoulder-attached frill, hoof feet, sandy-brown collapse"
+      },
+      "visualPromptAddendum": "species-specific color: cool slate, teal gray, cream horn tips, restrained rust frill accents; pattern: mottled face and frill freckles, broken flank spotting; surface texture: matte hide with keratin horns and rough frill rim; signature anatomy: three horns, skull-attached frill, low ceratopsian body, visible toes",
+      "negativePromptAddendum": "rhinoceros body, shoulder-attached frill, hoof feet, sandy-brown collapse",
+      "passSummary": "body-lock i2i/control over v51 or v52 | preserve cool mottling | lower rounded torso | prove skull-attached frill and non-hoofed toes",
+      "rejectSummary": "Reject outputs if the frill attaches to the shoulder/back, the torso reads like a rhinoceros, feet become hoof-like, or the color collapses back to sandy brown.",
+      "seedBase": 2026070400,
+      "prefix": "next_triceratops_horridus_v1",
+      "commands": {
+        "controlnetProbe": "python tools/comfyui/scripts/run_controlnet_experiment.py --taxon-id triceratops-horridus --source-image 'assets/dinosaurs/triceratops-horridus-skullfrill-bodylock-guide-v1.png' --seed 2026070401 --seed 2026070402 --strength 0.45 --strength 0.62 --end-percent 0.56 --end-percent 0.72 --prefix next_triceratops_horridus_v1_controlnet --clean-corners",
+        "scheduleProbe": "python tools/comfyui/scripts/run_lora_seed_schedule.py --schedule 'tools/comfyui/lora_training/ceratopsian_triceratops/skullfrill_bodylock_prompt_schedule.json' --limit 3 --seed-base 2026070420 --prefix next_triceratops_horridus_v1_schedule",
+        "i2iProbe": "python tools/comfyui/scripts/run_schedule_i2i_experiment.py --schedule 'tools/comfyui/lora_training/ceratopsian_triceratops/skullfrill_bodylock_prompt_schedule.json' --source-image 'assets/dinosaurs/triceratops-horridus-skullfrill-bodylock-guide-v1.png' --seed 2026070440 --seed 2026070441 --denoise 0.42 --denoise 0.56 --prefix next_triceratops_horridus_v1_schedule_i2i"
+      },
+      "manualGate": [
+        "do not auto-promote generated images",
+        "compare full body first, then crop-check signature anatomy",
+        "compare color, pattern, and surface texture against the species variation profile",
+        "reject immediately if the hard rejection rule is visible at thumbnail scale"
+      ],
+      "missingInputs": []
+    },
+    {
+      "priority": 4,
+      "taxon": "ankylosaurus-magniventris",
+      "label": "Ankylosaurus",
+      "status": "count-level pass",
+      "whyFirst": "tail club is present but broad ankylosaur skull/body identity and armor layout still need tightening",
+      "focus": "armored skull, color pattern, single attached tail club",
+      "primaryImage": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v40-source-candidate.png",
+      "primaryControlReference": "assets/dinosaurs/ankylosaurus-magniventris-armor-tailclub-guide-v1.png",
+      "schedule": "tools/comfyui/lora_training/ankylosaur_armor_tailclub/armor_tailclub_prompt_schedule.json",
+      "schedulePromptCount": 6,
+      "route": "Reference-conditioned expansion prompts for Ankylosaurus after v40 reached count-level quality and P9 added v43 as the best armored-skull/color review hold; v42/v44 are color holds only until body-lock review proves the dorsal armor is not too tiled.",
+      "visualVariationProfile": {
+        "color": "slate blue, olive gray armor, pale horn and osteoderm highlights",
+        "pattern": "irregular armor bands and asymmetrical mottling",
+        "texture": "low varied osteoderms, blunt bony skull plates, heavy tail club surface",
+        "anatomy": "broad armored skull, cheek horns, four short legs, single attached tail club",
+        "avoid": "smooth lizard/crocodile head, regular tiled shell, missing or split tail club"
+      },
+      "visualPromptAddendum": "species-specific color: slate blue, olive gray armor, pale horn and osteoderm highlights; pattern: irregular armor bands and asymmetrical mottling; surface texture: low varied osteoderms, blunt bony skull plates, heavy tail club surface; signature anatomy: broad armored skull, cheek horns, four short legs, single attached tail club",
+      "negativePromptAddendum": "smooth lizard/crocodile head, regular tiled shell, missing or split tail club",
+      "passSummary": "body-lock i2i/control over v40 with v43 skull-color reference | broad blunt armored skull | varied low osteoderms | one attached club",
+      "rejectSummary": "Reject outputs if the head reads as a smooth lizard/crocodile, the armor becomes an over-regular tiled shell, the color collapses to plain tan-brown, the tail club is missing/detached/split, or the animal gains extra legs.",
+      "seedBase": 2026070500,
+      "prefix": "next_ankylosaurus_magniventris_v1",
+      "commands": {
+        "controlnetProbe": "python tools/comfyui/scripts/run_controlnet_experiment.py --taxon-id ankylosaurus-magniventris --source-image 'assets/dinosaurs/ankylosaurus-magniventris-armor-tailclub-guide-v1.png' --seed 2026070501 --seed 2026070502 --strength 0.45 --strength 0.62 --end-percent 0.56 --end-percent 0.72 --prefix next_ankylosaurus_magniventris_v1_controlnet --clean-corners",
+        "scheduleProbe": "python tools/comfyui/scripts/run_lora_seed_schedule.py --schedule 'tools/comfyui/lora_training/ankylosaur_armor_tailclub/armor_tailclub_prompt_schedule.json' --limit 3 --seed-base 2026070520 --prefix next_ankylosaurus_magniventris_v1_schedule",
+        "i2iProbe": "python tools/comfyui/scripts/run_schedule_i2i_experiment.py --schedule 'tools/comfyui/lora_training/ankylosaur_armor_tailclub/armor_tailclub_prompt_schedule.json' --source-image 'assets/dinosaurs/ankylosaurus-magniventris-armor-tailclub-guide-v1.png' --seed 2026070540 --seed 2026070541 --denoise 0.42 --denoise 0.56 --prefix next_ankylosaurus_magniventris_v1_schedule_i2i"
+      },
+      "manualGate": [
+        "do not auto-promote generated images",
+        "compare full body first, then crop-check signature anatomy",
+        "compare color, pattern, and surface texture against the species variation profile",
+        "reject immediately if the hard rejection rule is visible at thumbnail scale"
+      ],
+      "missingInputs": []
+    },
+    {
+      "priority": 5,
+      "taxon": "plateosaurus-engelhardti",
+      "label": "Plateosaurus",
+      "status": "count-level pass",
+      "whyFirst": "six-leg and forelimb-ground-contact risks are still the main promotion blockers",
+      "focus": "dark speckled color, no-six-leg gate, lifted hands, thumb claw",
+      "primaryImage": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v25-source-candidate.png",
+      "primaryControlReference": "assets/dinosaurs/plateosaurus-engelhardti-bodylock-guide-v1.png",
+      "schedule": "tools/comfyui/lora_training/early_sauropodomorph_plateosaurus/bodylock_prompt_schedule.json",
+      "schedulePromptCount": 0,
+      "route": "Reference-conditioned Plateosaurus expansion after v25 improved gallery color separation and P5 added v27 as the safest no-six-leg/lifted-hand review hold; next route should preserve the dark speckled color while using v27 as a structure reference for shorter lifted forelimbs.",
+      "visualVariationProfile": {
+        "color": "charcoal green or blue-gray body with burgundy/copper neck hints",
+        "pattern": "cream speckles and restrained tail bands",
+        "texture": "fine dry scales, not glossy monster skin",
+        "anatomy": "two grounded hind legs, lifted compact forelimbs, visible thumb-claw cue",
+        "avoid": "six-leg read, forelimb ground contact, long theropod hook hands"
+      },
+      "visualPromptAddendum": "species-specific color: charcoal green or blue-gray body with burgundy/copper neck hints; pattern: cream speckles and restrained tail bands; surface texture: fine dry scales, not glossy monster skin; signature anatomy: two grounded hind legs, lifted compact forelimbs, visible thumb-claw cue",
+      "negativePromptAddendum": "six-leg read, forelimb ground contact, long theropod hook hands",
+      "passSummary": "hand-local i2i/control over v25 with v27 no-six-leg reference | preserve charcoal-green speckles and tail bands | exactly two grounded hind legs | lifted compact hands",
+      "rejectSummary": "Reject if any forelimb touches the ground, if the silhouette gains extra legs, if hands become long theropod hooks, or if the color collapses back to plain sandy tan.",
+      "seedBase": 2026070600,
+      "prefix": "next_plateosaurus_engelhardti_v1",
+      "commands": {
+        "controlnetProbe": "python tools/comfyui/scripts/run_controlnet_experiment.py --taxon-id plateosaurus-engelhardti --source-image 'assets/dinosaurs/plateosaurus-engelhardti-bodylock-guide-v1.png' --seed 2026070601 --seed 2026070602 --strength 0.45 --strength 0.62 --end-percent 0.56 --end-percent 0.72 --prefix next_plateosaurus_engelhardti_v1_controlnet --clean-corners",
+        "scheduleProbe": "python tools/comfyui/scripts/run_lora_seed_schedule.py --schedule 'tools/comfyui/lora_training/early_sauropodomorph_plateosaurus/bodylock_prompt_schedule.json' --limit 3 --seed-base 2026070620 --prefix next_plateosaurus_engelhardti_v1_schedule",
+        "i2iProbe": "python tools/comfyui/scripts/run_schedule_i2i_experiment.py --schedule 'tools/comfyui/lora_training/early_sauropodomorph_plateosaurus/bodylock_prompt_schedule.json' --source-image 'assets/dinosaurs/plateosaurus-engelhardti-bodylock-guide-v1.png' --seed 2026070640 --seed 2026070641 --denoise 0.42 --denoise 0.56 --prefix next_plateosaurus_engelhardti_v1_schedule_i2i"
+      },
+      "manualGate": [
+        "do not auto-promote generated images",
+        "compare full body first, then crop-check signature anatomy",
+        "compare color, pattern, and surface texture against the species variation profile",
+        "reject immediately if the hard rejection rule is visible at thumbnail scale"
+      ],
+      "missingInputs": []
+    },
+    {
+      "priority": 6,
+      "taxon": "tyrannosaurus-rex",
+      "label": "Tyrannosaurus rex",
+      "status": "count-level pass",
+      "whyFirst": "continue structure-guided polishing after higher-risk taxa",
+      "focus": "tiny arms, exactly two fingers, skull surface",
+      "primaryImage": "assets/dinosaurs/tyrannosaurus-rex-twofinger-hand-i2i-v4.png",
+      "primaryControlReference": "assets/dinosaurs/tyrannosaurus-rex-twofinger-bodylock-guide-v1.png",
+      "schedule": "tools/comfyui/lora_training/theropod_tyrannosaurus/twofinger_bodylock_prompt_schedule.json",
+      "schedulePromptCount": 0,
+      "route": "twofinger_bodylock_control",
+      "visualVariationProfile": {
+        "color": "charcoal olive, dark gray flank, pale lower jaw",
+        "pattern": "subtle dorsal striping and broken tail bands, not a uniform brown body",
+        "texture": "coarse pebbled hide with heavier skull scales",
+        "anatomy": "massive skull, deep chest, tiny two-finger forelimbs, counterbalancing tail",
+        "avoid": "generic giant lizard, three-finger hand, overly feathered raptor look"
+      },
+      "visualPromptAddendum": "species-specific color: charcoal olive, dark gray flank, pale lower jaw; pattern: subtle dorsal striping and broken tail bands, not a uniform brown body; surface texture: coarse pebbled hide with heavier skull scales; signature anatomy: massive skull, deep chest, tiny two-finger forelimbs, counterbalancing tail",
+      "negativePromptAddendum": "generic giant lizard, three-finger hand, overly feathered raptor look",
+      "passSummary": "controlnet_twofinger_bodylock_low_denoise | i2i_controlnet | denoise 0.18-0.32 | control 0.5-0.72",
+      "rejectSummary": "reject if either visible hand shows a third finger or ambiguous three claw tips",
+      "seedBase": 2026070700,
+      "prefix": "next_tyrannosaurus_rex_v1",
+      "commands": {
+        "controlnetProbe": "python tools/comfyui/scripts/run_controlnet_experiment.py --taxon-id tyrannosaurus-rex --source-image 'assets/dinosaurs/tyrannosaurus-rex-twofinger-bodylock-guide-v1.png' --seed 2026070701 --seed 2026070702 --strength 0.45 --strength 0.62 --end-percent 0.56 --end-percent 0.72 --prefix next_tyrannosaurus_rex_v1_controlnet --clean-corners",
+        "scheduleProbe": "python tools/comfyui/scripts/run_lora_seed_schedule.py --schedule 'tools/comfyui/lora_training/theropod_tyrannosaurus/twofinger_bodylock_prompt_schedule.json' --limit 3 --seed-base 2026070720 --prefix next_tyrannosaurus_rex_v1_schedule",
+        "i2iProbe": "python tools/comfyui/scripts/run_schedule_i2i_experiment.py --schedule 'tools/comfyui/lora_training/theropod_tyrannosaurus/twofinger_bodylock_prompt_schedule.json' --source-image 'assets/dinosaurs/tyrannosaurus-rex-twofinger-bodylock-guide-v1.png' --seed 2026070740 --seed 2026070741 --denoise 0.42 --denoise 0.56 --prefix next_tyrannosaurus_rex_v1_schedule_i2i"
+      },
+      "manualGate": [
+        "do not auto-promote generated images",
+        "compare full body first, then crop-check signature anatomy",
+        "compare color, pattern, and surface texture against the species variation profile",
+        "reject immediately if the hard rejection rule is visible at thumbnail scale"
+      ],
+      "missingInputs": []
+    },
+    {
+      "priority": 7,
+      "taxon": "allosaurus-fragilis",
+      "label": "Allosaurus",
+      "status": "count-level pass",
+      "whyFirst": "continue structure-guided polishing after higher-risk taxa",
+      "focus": "low skull, medium arms, three fingers",
+      "primaryImage": "assets/dinosaurs/allosaurus-fragilis-smoothbrow-threefinger-imagegen-v4.png",
+      "primaryControlReference": "assets/dinosaurs/allosaurus-fragilis-threefinger-bodylock-guide-v1.png",
+      "schedule": "tools/comfyui/lora_training/theropod_allosaurus/threefinger_bodylock_prompt_schedule.json",
+      "schedulePromptCount": 0,
+      "route": "threefinger_bodylock_control",
+      "visualVariationProfile": {
+        "color": "muted ochre, ash gray, and olive flank contrast",
+        "pattern": "low-contrast striping over hips and tail, light brow ridges",
+        "texture": "pebbled theropod skin with rough cranial ridges",
+        "anatomy": "long low skull, medium three-finger arms, balanced hind legs",
+        "avoid": "T. rex two-finger hands, oversized fantasy jaw, tiny forelimb proportions"
+      },
+      "visualPromptAddendum": "species-specific color: muted ochre, ash gray, and olive flank contrast; pattern: low-contrast striping over hips and tail, light brow ridges; surface texture: pebbled theropod skin with rough cranial ridges; signature anatomy: long low skull, medium three-finger arms, balanced hind legs",
+      "negativePromptAddendum": "T. rex two-finger hands, oversized fantasy jaw, tiny forelimb proportions",
+      "passSummary": "controlnet_threefinger_bodylock_low_denoise | i2i_controlnet | denoise 0.2-0.34 | control 0.52-0.76",
+      "rejectSummary": "reject if either visible hand loses the third finger or reads as two-fingered",
+      "seedBase": 2026070800,
+      "prefix": "next_allosaurus_fragilis_v1",
+      "commands": {
+        "controlnetProbe": "python tools/comfyui/scripts/run_controlnet_experiment.py --taxon-id allosaurus-fragilis --source-image 'assets/dinosaurs/allosaurus-fragilis-threefinger-bodylock-guide-v1.png' --seed 2026070801 --seed 2026070802 --strength 0.45 --strength 0.62 --end-percent 0.56 --end-percent 0.72 --prefix next_allosaurus_fragilis_v1_controlnet --clean-corners",
+        "scheduleProbe": "python tools/comfyui/scripts/run_lora_seed_schedule.py --schedule 'tools/comfyui/lora_training/theropod_allosaurus/threefinger_bodylock_prompt_schedule.json' --limit 3 --seed-base 2026070820 --prefix next_allosaurus_fragilis_v1_schedule",
+        "i2iProbe": "python tools/comfyui/scripts/run_schedule_i2i_experiment.py --schedule 'tools/comfyui/lora_training/theropod_allosaurus/threefinger_bodylock_prompt_schedule.json' --source-image 'assets/dinosaurs/allosaurus-fragilis-threefinger-bodylock-guide-v1.png' --seed 2026070840 --seed 2026070841 --denoise 0.42 --denoise 0.56 --prefix next_allosaurus_fragilis_v1_schedule_i2i"
+      },
+      "manualGate": [
+        "do not auto-promote generated images",
+        "compare full body first, then crop-check signature anatomy",
+        "compare color, pattern, and surface texture against the species variation profile",
+        "reject immediately if the hard rejection rule is visible at thumbnail scale"
+      ],
+      "missingInputs": []
+    },
+    {
+      "priority": 8,
+      "taxon": "herrerasaurus-ischigualastensis",
+      "label": "Herrerasaurus",
+      "status": "count-level pass",
+      "whyFirst": "continue structure-guided polishing after higher-risk taxa",
+      "focus": "compact hands, three main digits, two hind legs",
+      "primaryImage": "assets/dinosaurs/herrerasaurus-ischigualastensis-compacthands-imagegen-v2.png",
+      "primaryControlReference": "assets/dinosaurs/herrerasaurus-ischigualastensis-bodylock-guide-v1.png",
+      "schedule": "tools/comfyui/lora_training/early_saurischian_herrerasaurus/bodylock_prompt_schedule.json",
+      "schedulePromptCount": 0,
+      "route": "compact_hand_bodylock_control",
+      "visualVariationProfile": {
+        "color": "earth red, charcoal brown, and muted cream underside",
+        "pattern": "broken flank bars and tail bands",
+        "texture": "dry early-theropod scales with compact hand detail",
+        "anatomy": "lean early dinosaur body, three main hand digits, long tail, two hind legs",
+        "avoid": "tiny T. rex arms, four-legged stance, generic crocodile/lizard read"
+      },
+      "visualPromptAddendum": "species-specific color: earth red, charcoal brown, and muted cream underside; pattern: broken flank bars and tail bands; surface texture: dry early-theropod scales with compact hand detail; signature anatomy: lean early dinosaur body, three main hand digits, long tail, two hind legs",
+      "negativePromptAddendum": "tiny T. rex arms, four-legged stance, generic crocodile/lizard read",
+      "passSummary": "controlnet_compact_hand_bodylock_low_denoise | i2i_controlnet | denoise 0.18-0.32 | control 0.5-0.74",
+      "rejectSummary": "reject if arms shrink into tiny T. rex proportions",
+      "seedBase": 2026070900,
+      "prefix": "next_herrerasaurus_ischigualastensis_v1",
+      "commands": {
+        "controlnetProbe": "python tools/comfyui/scripts/run_controlnet_experiment.py --taxon-id herrerasaurus-ischigualastensis --source-image 'assets/dinosaurs/herrerasaurus-ischigualastensis-bodylock-guide-v1.png' --seed 2026070901 --seed 2026070902 --strength 0.45 --strength 0.62 --end-percent 0.56 --end-percent 0.72 --prefix next_herrerasaurus_ischigualastensis_v1_controlnet --clean-corners",
+        "scheduleProbe": "python tools/comfyui/scripts/run_lora_seed_schedule.py --schedule 'tools/comfyui/lora_training/early_saurischian_herrerasaurus/bodylock_prompt_schedule.json' --limit 3 --seed-base 2026070920 --prefix next_herrerasaurus_ischigualastensis_v1_schedule",
+        "i2iProbe": "python tools/comfyui/scripts/run_schedule_i2i_experiment.py --schedule 'tools/comfyui/lora_training/early_saurischian_herrerasaurus/bodylock_prompt_schedule.json' --source-image 'assets/dinosaurs/herrerasaurus-ischigualastensis-bodylock-guide-v1.png' --seed 2026070940 --seed 2026070941 --denoise 0.42 --denoise 0.56 --prefix next_herrerasaurus_ischigualastensis_v1_schedule_i2i"
+      },
+      "manualGate": [
+        "do not auto-promote generated images",
+        "compare full body first, then crop-check signature anatomy",
+        "compare color, pattern, and surface texture against the species variation profile",
+        "reject immediately if the hard rejection rule is visible at thumbnail scale"
+      ],
+      "missingInputs": []
+    },
+    {
+      "priority": 9,
+      "taxon": "coelophysis-bauri",
+      "label": "Coelophysis",
+      "status": "count-level pass",
+      "whyFirst": "continue structure-guided polishing after higher-risk taxa",
+      "focus": "slender S-neck, small hands, reviewable feet",
+      "primaryImage": "assets/dinosaurs/coelophysis-bauri-slenderneck-smallhands-imagegen-v3.png",
+      "primaryControlReference": "assets/dinosaurs/coelophysis-bauri-bodylock-guide-v1.png",
+      "schedule": "tools/comfyui/lora_training/small_theropod_coelophysis/bodylock_prompt_schedule.json",
+      "schedulePromptCount": 0,
+      "route": "bodylock_control",
+      "visualVariationProfile": {
+        "color": "sand gray, cool olive, and dark dorsal line",
+        "pattern": "thin flank striping, small speckles, lightly banded tail",
+        "texture": "dry fine scales on a very slender body",
+        "anatomy": "slender S-neck, narrow head, small hands, two long hind legs",
+        "avoid": "forelimbs touching ground, extra leg illusion, bulky raptor body"
+      },
+      "visualPromptAddendum": "species-specific color: sand gray, cool olive, and dark dorsal line; pattern: thin flank striping, small speckles, lightly banded tail; surface texture: dry fine scales on a very slender body; signature anatomy: slender S-neck, narrow head, small hands, two long hind legs",
+      "negativePromptAddendum": "forelimbs touching ground, extra leg illusion, bulky raptor body",
+      "passSummary": "controlnet_bodylock_low_denoise | i2i_controlnet | denoise 0.18-0.32 | control 0.48-0.72",
+      "rejectSummary": "reject if either forelimb touches the ground or reads as a third/fourth leg",
+      "seedBase": 2026071000,
+      "prefix": "next_coelophysis_bauri_v1",
+      "commands": {
+        "controlnetProbe": "python tools/comfyui/scripts/run_controlnet_experiment.py --taxon-id coelophysis-bauri --source-image 'assets/dinosaurs/coelophysis-bauri-bodylock-guide-v1.png' --seed 2026071001 --seed 2026071002 --strength 0.45 --strength 0.62 --end-percent 0.56 --end-percent 0.72 --prefix next_coelophysis_bauri_v1_controlnet --clean-corners",
+        "scheduleProbe": "python tools/comfyui/scripts/run_lora_seed_schedule.py --schedule 'tools/comfyui/lora_training/small_theropod_coelophysis/bodylock_prompt_schedule.json' --limit 3 --seed-base 2026071020 --prefix next_coelophysis_bauri_v1_schedule",
+        "i2iProbe": "python tools/comfyui/scripts/run_schedule_i2i_experiment.py --schedule 'tools/comfyui/lora_training/small_theropod_coelophysis/bodylock_prompt_schedule.json' --source-image 'assets/dinosaurs/coelophysis-bauri-bodylock-guide-v1.png' --seed 2026071040 --seed 2026071041 --denoise 0.42 --denoise 0.56 --prefix next_coelophysis_bauri_v1_schedule_i2i"
+      },
+      "manualGate": [
+        "do not auto-promote generated images",
+        "compare full body first, then crop-check signature anatomy",
+        "compare color, pattern, and surface texture against the species variation profile",
+        "reject immediately if the hard rejection rule is visible at thumbnail scale"
+      ],
+      "missingInputs": []
+    },
+    {
+      "priority": 10,
+      "taxon": "apatosaurus-ajax",
+      "label": "Apatosaurus",
+      "status": "count-level pass",
+      "whyFirst": "continue structure-guided polishing after higher-risk taxa",
+      "focus": "low neck, similar-height legs, full horizontal tail",
+      "primaryImage": "assets/dinosaurs/apatosaurus-ajax-imagegen-v3-source-candidate.png",
+      "primaryControlReference": "assets/dinosaurs/apatosaurus-ajax-lowneck-bodylock-guide-v1.png",
+      "schedule": "tools/comfyui/lora_training/sauropod_apatosaurus/bodylock_prompt_schedule.json",
+      "schedulePromptCount": 0,
+      "route": "lowneck_bodylock_control",
+      "visualVariationProfile": {
+        "color": "cool gray, olive, and dust-blue body with pale underside",
+        "pattern": "very subtle flank mottling and tail gradients",
+        "texture": "heavy matte sauropod hide with broad wrinkles",
+        "anatomy": "low long neck, level back, pillar legs, long horizontal whip tail",
+        "avoid": "high-shouldered Brachiosaurus silhouette, vertical neck, short tail"
+      },
+      "visualPromptAddendum": "species-specific color: cool gray, olive, and dust-blue body with pale underside; pattern: very subtle flank mottling and tail gradients; surface texture: heavy matte sauropod hide with broad wrinkles; signature anatomy: low long neck, level back, pillar legs, long horizontal whip tail",
+      "negativePromptAddendum": "high-shouldered Brachiosaurus silhouette, vertical neck, short tail",
+      "passSummary": "controlnet_lowneck_bodylock_low_denoise | i2i_controlnet | denoise 0.2-0.34 | control 0.55-0.78",
+      "rejectSummary": "reject if the silhouette drifts toward high-shouldered Brachiosaurus",
+      "seedBase": 2026071100,
+      "prefix": "next_apatosaurus_ajax_v1",
+      "commands": {
+        "controlnetProbe": "python tools/comfyui/scripts/run_controlnet_experiment.py --taxon-id apatosaurus-ajax --source-image 'assets/dinosaurs/apatosaurus-ajax-lowneck-bodylock-guide-v1.png' --seed 2026071101 --seed 2026071102 --strength 0.45 --strength 0.62 --end-percent 0.56 --end-percent 0.72 --prefix next_apatosaurus_ajax_v1_controlnet --clean-corners",
+        "scheduleProbe": "python tools/comfyui/scripts/run_lora_seed_schedule.py --schedule 'tools/comfyui/lora_training/sauropod_apatosaurus/bodylock_prompt_schedule.json' --limit 3 --seed-base 2026071120 --prefix next_apatosaurus_ajax_v1_schedule",
+        "i2iProbe": "python tools/comfyui/scripts/run_schedule_i2i_experiment.py --schedule 'tools/comfyui/lora_training/sauropod_apatosaurus/bodylock_prompt_schedule.json' --source-image 'assets/dinosaurs/apatosaurus-ajax-lowneck-bodylock-guide-v1.png' --seed 2026071140 --seed 2026071141 --denoise 0.42 --denoise 0.56 --prefix next_apatosaurus_ajax_v1_schedule_i2i"
+      },
+      "manualGate": [
+        "do not auto-promote generated images",
+        "compare full body first, then crop-check signature anatomy",
+        "compare color, pattern, and surface texture against the species variation profile",
+        "reject immediately if the hard rejection rule is visible at thumbnail scale"
+      ],
+      "missingInputs": []
+    },
+    {
+      "priority": 11,
+      "taxon": "brachiosaurus-altithorax",
+      "label": "Brachiosaurus",
+      "status": "count-level pass",
+      "whyFirst": "continue structure-guided polishing after higher-risk taxa",
+      "focus": "high shoulders, taller forelimbs, short thick tail",
+      "primaryImage": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v16-source-candidate.png",
+      "primaryControlReference": "assets/dinosaurs/brachiosaurus-altithorax-highshoulder-bodylock-guide-v1.png",
+      "schedule": "tools/comfyui/lora_training/sauropod_brachiosaurus/bodylock_prompt_schedule.json",
+      "schedulePromptCount": 0,
+      "route": "highshoulder_bodylock_control",
+      "visualVariationProfile": {
+        "color": "warm gray, moss green, and light tan underside",
+        "pattern": "soft vertical neck mottling and shoulder patches",
+        "texture": "thick folded hide on high shoulders and neck",
+        "anatomy": "tall forelimbs, high shoulders, upright neck, shorter thick tail",
+        "avoid": "low Diplodocus/Apatosaurus body plan, equal leg height, whip tail"
+      },
+      "visualPromptAddendum": "species-specific color: warm gray, moss green, and light tan underside; pattern: soft vertical neck mottling and shoulder patches; surface texture: thick folded hide on high shoulders and neck; signature anatomy: tall forelimbs, high shoulders, upright neck, shorter thick tail",
+      "negativePromptAddendum": "low Diplodocus/Apatosaurus body plan, equal leg height, whip tail",
+      "passSummary": "controlnet_bodylock_low_denoise | i2i_controlnet | denoise 0.22-0.34 | control 0.55-0.75",
+      "rejectSummary": "reject if the silhouette drifts toward low-shouldered Apatosaurus or Diplodocus",
+      "seedBase": 2026071200,
+      "prefix": "next_brachiosaurus_altithorax_v1",
+      "commands": {
+        "controlnetProbe": "python tools/comfyui/scripts/run_controlnet_experiment.py --taxon-id brachiosaurus-altithorax --source-image 'assets/dinosaurs/brachiosaurus-altithorax-highshoulder-bodylock-guide-v1.png' --seed 2026071201 --seed 2026071202 --strength 0.45 --strength 0.62 --end-percent 0.56 --end-percent 0.72 --prefix next_brachiosaurus_altithorax_v1_controlnet --clean-corners",
+        "scheduleProbe": "python tools/comfyui/scripts/run_lora_seed_schedule.py --schedule 'tools/comfyui/lora_training/sauropod_brachiosaurus/bodylock_prompt_schedule.json' --limit 3 --seed-base 2026071220 --prefix next_brachiosaurus_altithorax_v1_schedule",
+        "i2iProbe": "python tools/comfyui/scripts/run_schedule_i2i_experiment.py --schedule 'tools/comfyui/lora_training/sauropod_brachiosaurus/bodylock_prompt_schedule.json' --source-image 'assets/dinosaurs/brachiosaurus-altithorax-highshoulder-bodylock-guide-v1.png' --seed 2026071240 --seed 2026071241 --denoise 0.42 --denoise 0.56 --prefix next_brachiosaurus_altithorax_v1_schedule_i2i"
+      },
+      "manualGate": [
+        "do not auto-promote generated images",
+        "compare full body first, then crop-check signature anatomy",
+        "compare color, pattern, and surface texture against the species variation profile",
+        "reject immediately if the hard rejection rule is visible at thumbnail scale"
+      ],
+      "missingInputs": []
+    }
+  ],
+  "problems": []
+}

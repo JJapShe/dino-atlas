@@ -1,0 +1,20 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "texture_i2i_v48",
+  "sourceImage": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "outputImage": "assets/dinosaurs/stegosaurus-stenops-texture-i2i-comparison-v48.png",
+  "reviewSheet": "assets/dinosaurs/stegosaurus-texture-i2i-v48-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-texture-i2i-v48-crops.png",
+  "promptId": "plate_topology_texture_01",
+  "seed": 2026070351,
+  "denoise": 0.24,
+  "decision": "anatomy_review_comparison",
+  "reasons": [
+    "no lower-frame artifact like v47",
+    "natural enough to keep as a comparison image",
+    "does not clearly improve plate-row topology over the current v6 primary",
+    "thagomizer count is not more reliable than v6"
+  ],
+  "keepCurrentPrimary": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "nextRoute": "Keep v6 first. Use localized plate-row or tail-tip masking, or a stronger Stegosauridae LoRA/control route, rather than whole-body low-denoise i2i if the goal is exact two-row plates and four thagomizer spikes."
+}

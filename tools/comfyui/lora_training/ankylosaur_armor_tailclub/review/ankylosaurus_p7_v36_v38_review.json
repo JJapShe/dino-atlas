@@ -1,0 +1,28 @@
+{
+  "taxonId": "ankylosaurus-magniventris",
+  "experiment": "p7_v36_v38_compact_tank_tailclub_candidates",
+  "previousPrimary": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v34-source-candidate.png",
+  "selectedPrimary": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v38-source-candidate.png",
+  "selectedReviewHolds": [
+    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v37-source-candidate.png",
+    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v36-source-candidate.png",
+    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v32-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/ankylosaurus-p7-v36-v38-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/ankylosaurus-p7-v36-v38-crops.png",
+  "decision": "promote_v38_to_count_level_pass",
+  "reason": "V38 gives the best current compact Ankylosaurus read because the body is shorter and more tank-like than v34, the skull stays broad and blunt, low rounded osteoderm rows remain clear, four sturdy feet are reviewable, and the short thick tail ends in one attached oval club. V37 is a useful compact hold but is more tightly framed, while v36 keeps more long-tail/body risk.",
+  "remainingRisks": [
+    "exact skull proportions and side armor layout still need reference review",
+    "toe details are count-level rather than final",
+    "tail club shape and attachment need final close crop review"
+  ],
+  "rejectIfPromoting": [
+    "body reads as crocodile, monitor lizard, pangolin, turtle, armadillo, rhinoceros, or fantasy armored reptile",
+    "skull becomes long and narrow or develops horns/frill",
+    "tail is long and whip-like instead of short and thick",
+    "tail club is missing, detached, doubled, soft, spiked, or replaced by a paddle",
+    "armor becomes tall Stegosaurus plates or fantasy spikes",
+    "feet are hidden, fused, extra, or the animal reads as six-legged"
+  ]
+}

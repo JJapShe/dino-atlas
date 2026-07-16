@@ -1,0 +1,26 @@
+{
+  "taxonId": "velociraptor-mongoliensis",
+  "experiment": "p3_v42_v44_toothed_head_attached_sickle_prompt_candidates",
+  "currentPrimary": "assets/dinosaurs/velociraptor-mongoliensis-small-sickle-imagegen-v9.png",
+  "selectedReviewHold": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v43-source-candidate.png",
+  "comparisonReviewHolds": [
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v44-source-candidate.png",
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v39-source-candidate.png"
+  ],
+  "selectedRejectReferences": [
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v42-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/velociraptor-p3-v42-v44-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/velociraptor-p3-v42-v44-crops.png",
+  "decision": "keep_current_v9",
+  "reason": "V43 is the best P3 source hold because it keeps a toothy non-beak head, small feathered dromaeosaur body, long stiff tail, and attached modest sickle-claw cue. It stays below promotion because the folded forelimb can read too wing-like and the foot topology still does not prove both two walking toes plus one attached raised second toe. V44 has the most reviewable foot area but the near claw can read as an oversized hook. V42 keeps good head identity but the raised claws are too talon-like.",
+  "nextRoute": "Use v43 as a copyright-safe source hold for localized foot/forelimb i2i or ControlNet. Do not promote until the crop gate proves a toothed non-beak head, compact folded arms, two grounded walking toes plus one attached raised second-toe sickle claw, and no bird/wing/talon drift together.",
+  "rejectIfPromoting": [
+    "head becomes bird-beaked, toothless, hawk-like, or rooster-like",
+    "forelimbs become spread wings or read as modern bird wings",
+    "sickle claw reads as detached crescent, giant hook, or eagle talon",
+    "feet do not show two walking toes plus one attached raised second toe",
+    "body becomes naked movie raptor, ostrich-like, or oversized monster raptor",
+    "tail is cropped, duplicated, soft, or hidden"
+  ]
+}

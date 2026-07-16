@@ -1,0 +1,19 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "plate_base_offset_v59_v60",
+  "sourceImage": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "maskImage": "assets/dinosaurs/stegosaurus-plate-base-offset-mask-v59.png",
+  "comparisonImage": "assets/dinosaurs/stegosaurus-stenops-plate-base-offset-rejected-v60.png",
+  "reviewSheet": "assets/dinosaurs/stegosaurus-plate-base-offset-v59-v60-rejection-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-plate-base-offset-v59-v60-rejection-crops.png",
+  "decision": "diagnostic_only",
+  "selectedOutput": "v60 seed 2026070908 d0.34",
+  "editMode": "stego_alternating_plate_bases",
+  "reasons": [
+    "the localized base/gap mask preserves the v6 body, feet, tail, and four thagomizer spikes",
+    "low and higher denoise outputs remain visually close to v6 and do not create a reliable near/far two-row plate read",
+    "this confirms that simple base/gap masking is a preservation-safe diagnostic route, not a primary improvement route"
+  ],
+  "keepCurrentPrimary": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "nextRoute": "Move Stegosaurus improvement toward Stegosauridae-specific LoRA or explicit plate-structure synthesis followed by naturalization; avoid repeating narrow seam/base masks unless the mask supplies new plate geometry."
+}

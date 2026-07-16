@@ -1,0 +1,24 @@
+{
+  "taxonId": "triceratops-horridus",
+  "experiment": "p7_v43_v45_antirhino_familiar_triceratops_candidates",
+  "previousPrimary": "assets/dinosaurs/triceratops-horridus-imagegen-v41-source-candidate.png",
+  "selectedPrimary": "assets/dinosaurs/triceratops-horridus-imagegen-v43-source-candidate.png",
+  "comparisonReviewHolds": [
+    "assets/dinosaurs/triceratops-horridus-imagegen-v44-source-candidate.png",
+    "assets/dinosaurs/triceratops-horridus-imagegen-v45-source-candidate.png",
+    "assets/dinosaurs/triceratops-horridus-imagegen-v38-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/triceratops-p7-v43-v45-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/triceratops-p7-v43-v45-crops.png",
+  "decision": "promote_v43_to_app_first_count_level_pass",
+  "reason": "V43 gives the best current app-scale Triceratops read while keeping the anti-rhino gates: exactly two brow horns plus one nasal horn, a skull-attached frill, closed beak, long visible tail, four dinosaur limbs, and separated non-hoofed toes. V41 remains a strong low-body comparison, but v43 has a more familiar skull/frill/toe read. V44 is useful but rounder in the torso, and v45 keeps a long low body but has heavier head/mouth risk.",
+  "rejectIfPromoting": [
+    "torso, shoulder mass, or feet read as rhinoceros-like",
+    "body is a round mammal barrel rather than low elongated ceratopsian form",
+    "frill attaches to shoulders, back, or torso instead of skull",
+    "mouth opens or teeth appear",
+    "horn count is not exactly two brow horns plus one nasal horn",
+    "feet become hoof-like or hide toe separation",
+    "tail is cropped, hidden, or tiny"
+  ]
+}

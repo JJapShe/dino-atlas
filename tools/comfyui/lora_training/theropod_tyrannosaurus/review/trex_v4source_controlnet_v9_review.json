@@ -1,0 +1,17 @@
+{
+  "taxonId": "tyrannosaurus-rex",
+  "experiment": "v4source_controlnet_v9",
+  "sourceImage": "assets/dinosaurs/tyrannosaurus-rex-twofinger-hand-i2i-v4.png",
+  "outputImage": "assets/dinosaurs/tyrannosaurus-rex-v4source-controlnet-rejected-v9.png",
+  "reviewSheet": "assets/dinosaurs/tyrannosaurus-controlnet-v9-rejection-sheet.png",
+  "cropSheet": "assets/dinosaurs/tyrannosaurus-controlnet-v9-rejection-crops.png",
+  "decision": "rejected",
+  "reasons": [
+    "forelimbs enlarge toward allosaur-like arm scale",
+    "visible hand shape is less reliable for the exact two-finger gate",
+    "body color and setting drift away from the current v4 representative",
+    "no clear improvement over the current v4 primary"
+  ],
+  "keepCurrentPrimary": "assets/dinosaurs/tyrannosaurus-rex-twofinger-hand-i2i-v4.png",
+  "nextRoute": "Use local low-denoise hand masking or style-preserving i2i; do not promote whole-body ControlNet from the natural v4 source if it enlarges the arms."
+}

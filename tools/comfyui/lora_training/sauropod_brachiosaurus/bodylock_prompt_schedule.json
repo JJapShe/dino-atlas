@@ -1,0 +1,44 @@
+{
+  "datasetId": "sauropod_brachiosaurus",
+  "route": "highshoulder_bodylock_control",
+  "trigger": "brachiosaurus atlas candidate",
+  "controlReferences": [
+    "assets/dinosaurs/brachiosaurus-altithorax-highshoulder-bodylock-guide-v1.png",
+    "assets/dinosaurs/brachiosaurus-highshoulder-bodylock-crops-v8.png",
+    "assets/dinosaurs/brachiosaurus-review-options-v8.png"
+  ],
+  "basePositive": "museum-quality realistic paleoart, full-body lateral side profile of Brachiosaurus altithorax, one animal, high shoulders clearly above hips, front forelimbs visibly taller and straighter than hind limbs, trunk sloping downward from shoulder to hip, long neck rising forward-up from the shoulders, small non-predatory head with subtle nasal arch, compact heavy torso, exactly four pillar legs, all four broad sauropod feet visible on dry ground, short thick tapering tail fully in frame, Late Jurassic Morrison Formation dry conifer floodplain, natural daylight, detailed pebbled skin",
+  "baseNegative": "Apatosaurus, Diplodocus, Brontosaurus, diplodocid body, low shoulders, equal-height forelimbs and hind limbs, front legs shorter than hind legs, horizontal low neck, swan neck, giraffe, mammal, elephant hooves, long whip tail, extremely long thin tail, cropped tail tip, missing tail, hidden feet, water-covered feet, extra legs, missing legs, duplicate legs, two-legged sauropod, theropod head, predator teeth, fantasy spikes, armor, text, labels, logo, watermark",
+  "passes": [
+    {
+      "id": "controlnet_bodylock_low_denoise",
+      "mode": "i2i_controlnet",
+      "sourceImage": "assets/dinosaurs/brachiosaurus-altithorax-tail-reduced-i2i-v4.png",
+      "controlImage": "assets/dinosaurs/brachiosaurus-altithorax-highshoulder-bodylock-guide-v1.png",
+      "denoiseRange": [0.22, 0.34],
+      "controlStrengthRange": [0.55, 0.75],
+      "promptFocus": "preserve the current natural scene while strengthening shoulder-to-hip slope, taller front limbs, and short thick tail"
+    },
+    {
+      "id": "ipadapter_style_plus_bodylock",
+      "mode": "ipadapter_controlnet",
+      "styleReference": "assets/dinosaurs/brachiosaurus-altithorax-tail-reduced-i2i-v4.png",
+      "controlImage": "assets/dinosaurs/brachiosaurus-altithorax-highshoulder-bodylock-guide-v1.png",
+      "denoiseRange": [0.32, 0.46],
+      "controlStrengthRange": [0.65, 0.9],
+      "promptFocus": "use the guide silhouette as the body plan while borrowing the current scene texture and daylight"
+    },
+    {
+      "id": "prompt_only_rejection_probe",
+      "mode": "txt2img_probe",
+      "promptFocus": "only keep outputs that still show high shoulders above hips, front limbs taller than hind limbs, four reviewable feet, and a short non-whip tail"
+    }
+  ],
+  "manualGate": [
+    "reject if the silhouette drifts toward low-shouldered Apatosaurus or Diplodocus",
+    "reject if the tail becomes a long thin whip or is cropped",
+    "reject if forelimbs and hind limbs look equal height",
+    "reject if feet are hidden, water-covered, hoof-like, or too cropped to count",
+    "reject if prompt-only polish removes the high-shoulder Brachiosaurus identity"
+  ]
+}

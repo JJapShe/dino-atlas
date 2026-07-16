@@ -1,0 +1,69 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "round": "stego_lowbody_platefocused_i2i_v1",
+  "date": "2026-06-23",
+  "goal": "Improve atlas-scale Stegosaurus dorsal-plate readability after review found the current low-body candidate too weak in the plate row.",
+  "referenceGate": {
+    "mustHave": [
+      "many separate large dorsal plates",
+      "visible gaps between plates",
+      "staggered row read from side profile",
+      "smaller plates near neck and tail base"
+    ],
+    "rejectIf": [
+      "continuous sail",
+      "soft rounded fin ridge",
+      "thin comb-like spines",
+      "plant-leaf plates",
+      "shell-like armored back"
+    ]
+  },
+  "inputs": {
+    "baseCandidate": "assets/dinosaurs/stegosaurus-stenops-lowbody-plate-thagomizer-ipcontrol-v1.png",
+    "localGraft": "tools/comfyui/outputs/stego_lowbody_broad_plate_graft_v1_v1a.png",
+    "selectedSource": "tools/comfyui/outputs/stego_lowbody_broadplate_i2i_v1_stegosaurus-stenops_seed2026062812_d36.png"
+  },
+  "experiments": [
+    {
+      "prefix": "stego_lowbody_broad_plate_graft_v1",
+      "type": "local plate graft",
+      "sheet": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_lowbody_broad_plate_graft_v1_contact_sheet.png",
+      "finding": "Made separate plates unambiguous, but the output was too block-like and composited for direct final use."
+    },
+    {
+      "prefix": "stego_lowbody_plate_refiner_v1",
+      "type": "low-denoise refiner",
+      "sheet": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_lowbody_plate_refiner_v1_rejected_contact_sheet.png",
+      "finding": "Preserved the blocky plate shapes instead of turning them into convincing bony plate surfaces."
+    },
+    {
+      "prefix": "stego_lowbody_broadplate_i2i_v1",
+      "type": "RealVisXL i2i",
+      "sheet": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_lowbody_broadplate_i2i_v1_contact_sheet.png",
+      "selected": {
+        "seed": 2026062812,
+        "denoise": 0.36,
+        "asset": "assets/dinosaurs/stegosaurus-stenops-plate-focused-i2i-v1.png"
+      },
+      "finding": "Best plate-recognition tradeoff in this round. It keeps many large separate plates visible, but the plate surfaces remain too smooth and the thagomizer is weak."
+    },
+    {
+      "prefix": "stego_lowbody_plate_inpaint_v1",
+      "type": "plate-mask-only inpaint",
+      "sheet": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_lowbody_plate_inpaint_v1_rejected_contact_sheet.png",
+      "finding": "Did not materially improve the plate surfaces; mostly preserved or softened the rounded block read."
+    },
+    {
+      "prefix": "stego_plate_identity_control_v1",
+      "type": "IP-Adapter + ControlNet",
+      "sheet": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_plate_identity_control_v1_rejected_contact_sheet.png",
+      "finding": "Made the row more triangular/sail-like and reintroduced round-body drift, so it should not be promoted."
+    }
+  ],
+  "decision": {
+    "promotedAsset": "assets/dinosaurs/stegosaurus-stenops-plate-focused-i2i-v1.png",
+    "status": "anatomy review",
+    "reason": "Promoted as the app-first plate-focused review candidate because it improves dorsal-plate readability over the prior primary. It is not approved.",
+    "nextRoute": "Use a Stegosaurus or stegosaurian plate/thagomizer LoRA, or a stronger reference-conditioned generation route, before attempting approval."
+  }
+}

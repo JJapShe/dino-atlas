@@ -1,0 +1,50 @@
+{
+  "datasetId": "early_sauropodomorph_plateosaurus",
+  "route": "Reference-conditioned Plateosaurus expansion after v25 improved gallery color separation and P5 added v27 as the safest no-six-leg/lifted-hand review hold; next route should preserve the dark speckled color while using v27 as a structure reference for shorter lifted forelimbs.",
+  "trigger": "plateosaurus atlas candidate",
+  "controlReferences": [
+    "assets/dinosaurs/plateosaurus-engelhardti-bodylock-guide-v1.png",
+    "assets/dinosaurs/plateosaurus-bodylock-crops-v4.png",
+    "assets/dinosaurs/plateosaurus-review-options-v12.png"
+  ],
+  "passSummary": "hand-local i2i/control over v25 with v27 no-six-leg reference | preserve charcoal-green speckles and tail bands | exactly two grounded hind legs | lifted compact hands",
+  "rejectSummary": "Reject if any forelimb touches the ground, if the silhouette gains extra legs, if hands become long theropod hooks, or if the color collapses back to plain sandy tan.",
+  "basePositive": "museum-quality realistic paleoart, full-body lateral side profile of Plateosaurus engelhardti, one early sauropodomorph herbivore, low non-predatory herbivore head, long forward neck, deep torso, full single balancing tail in frame, bipedal hind-limb-dominant stance, exactly two large weight-bearing hind legs on dry ground, separated grounded feet, two short lifted forelimbs held off the ground, small five-finger hands with a larger thumb claw, charcoal green-gray dorsal skin, pale cream underside, dense small cream speckles across flanks, darker broken bands on tail and neck, Late Triassic dry floodplain, natural daylight, detailed pebbled skin",
+  "baseNegative": "six legs, extra legs, forelimbs touching ground, quadruped stance, front legs weight-bearing, overlapping arms that read as legs, duplicate forelimbs, giant hook claws, long dangling hand claws, plain sandy tan color, loss of dark speckles, theropod predator head, sharp carnivore teeth, Tyrannosaurus, Allosaurus, sauropod giant, long high giraffe neck, lizard quadruped, hidden feet, cropped feet, cropped tail, duplicate tail, logo bar, source text, watermark, caption, label",
+  "passes": [
+    {
+      "id": "controlnet_no_six_leg_bodylock_low_denoise",
+      "mode": "i2i_controlnet",
+      "sourceImage": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v25-source-candidate.png",
+      "controlImage": "assets/dinosaurs/plateosaurus-engelhardti-bodylock-guide-v1.png",
+      "denoiseRange": [0.18, 0.32],
+      "controlStrengthRange": [0.5, 0.74],
+      "promptFocus": "preserve the selected v25 dark speckled color and natural scene while using v27 as the no-six-leg/lifted-hand reference for exactly two grounded hind legs and lifted non-weight-bearing forelimbs"
+    },
+    {
+      "id": "ipadapter_style_plus_bodylock_control",
+      "mode": "ipadapter_controlnet",
+      "styleReference": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v25-source-candidate.png",
+      "controlImage": "assets/dinosaurs/plateosaurus-engelhardti-bodylock-guide-v1.png",
+      "denoiseRange": [0.28, 0.44],
+      "controlStrengthRange": [0.6, 0.84],
+      "promptFocus": "borrow the selected v25 charcoal-green speckled skin and v27 shorter lifted-forelimb cue while making both hands more reviewable without allowing six-leg drift"
+    },
+    {
+      "id": "localized_hand_and_ground_contact_probe",
+      "mode": "masked_i2i",
+      "sourceImage": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v25-source-candidate.png",
+      "maskTarget": "forelimb hands and ground-contact shadows only",
+      "denoiseRange": [0.1, 0.24],
+      "promptFocus": "clarify compact five-finger hands and thumb-claw cue while preserving the v25 color pattern, two grounded hind legs, and any shadow that proves forelimbs are off the ground"
+    }
+  ],
+  "manualGate": [
+    "reject if any forelimb touches the ground or reads as a weight-bearing leg",
+    "reject if the silhouette has more than two grounded hind legs",
+    "reject if hand claws become huge theropod hooks",
+    "reject if the head becomes predatory, lizard-like, or high-necked sauropod-like",
+    "reject if feet or tail are cropped or too hidden to review",
+    "reject if source-like text, logo bars, captions, or watermarks appear"
+  ]
+}

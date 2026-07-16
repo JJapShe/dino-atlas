@@ -1,0 +1,22 @@
+{
+  "taxonId": "brachiosaurus-altithorax",
+  "experiment": "p3_v15_v17_short_tail_prompt_candidates",
+  "previousPrimary": "assets/dinosaurs/brachiosaurus-altithorax-tail-reduced-i2i-v4.png",
+  "selectedPrimary": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v16-source-candidate.png",
+  "selectedReviewHolds": [
+    "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v17-source-candidate.png",
+    "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v15-source-candidate.png",
+    "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v13-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/brachiosaurus-p3-v15-v17-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/brachiosaurus-p3-v15-v17-crops.png",
+  "decision": "promote_v16",
+  "reason": "V16 is the first prompt-only Brachiosaurus candidate in this route to combine the high shoulder, taller forelimbs, rising neck, four visible pillar feet, and a visibly short thick tapering tail. V4 remains a useful i2i comparison, but v16 better solves the repeated diplodocid whip-tail failure. V15 and v17 stay as review holds because their body plans are useful, but their tails read longer or less compact than v16.",
+  "rejectIfPromoting": [
+    "tail becomes a long thin diplodocid whip or is cropped",
+    "forelimbs and hind limbs become equal height or shoulder drops near hip line",
+    "neck becomes low and horizontal like Apatosaurus/Diplodocus",
+    "feet are hidden, fused, hoof-like, or unclear enough to block four-leg review",
+    "head becomes crocodile-like, toothed, predator-like, or too large"
+  ]
+}

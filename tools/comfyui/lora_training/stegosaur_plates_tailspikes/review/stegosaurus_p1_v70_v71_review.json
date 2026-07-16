@@ -1,0 +1,18 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "p1_v70_v71_plate_topology_prompt_candidates",
+  "currentPrimary": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "selectedReviewHold": "assets/dinosaurs/stegosaurus-stenops-imagegen-v71-source-candidate.png",
+  "comparisonReviewHold": "assets/dinosaurs/stegosaurus-stenops-imagegen-v70-source-candidate.png",
+  "reviewSheet": "assets/dinosaurs/stegosaurus-p1-v70-v71-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-p1-v70-v71-crops.png",
+  "decision": "review_hold",
+  "reason": "V71 is the strongest new prompt-only plate-overlap candidate and reads slightly more like a staggered two-row plate arrangement than v70, but it does not safely beat v6 because the tail-spike count can collapse at crop scale. V70 has strong broad plates and visible tail spikes, but its plate bases still read mostly as a single row. Keep v6 first.",
+  "rejectIfPromoting": [
+    "dorsal plates read as a single connected sail or one decorative row",
+    "plates become leaf petals, flower petals, comb teeth, or feathers",
+    "tail has fewer or more than four countable thagomizer spikes",
+    "body drifts into ankylosaur, sauropod, theropod, turtle, or generic herbivore",
+    "feet, head, tail tip, or plate bases are hidden enough to block review"
+  ]
+}

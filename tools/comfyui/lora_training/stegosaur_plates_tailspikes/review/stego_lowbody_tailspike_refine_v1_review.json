@@ -1,0 +1,32 @@
+{
+  "datasetId": "stegosaur_plates_tailspikes_v1",
+  "runIds": [
+    "stego_lowbody_tailspike_guide_v1",
+    "stego_lowbody_tailspike_refine_v1",
+    "stego_lowbody_tailspike_strict_v1"
+  ],
+  "date": "2026-06-23",
+  "sourceCandidate": "assets/dinosaurs/stegosaurus-stenops-lowbody-plate-thagomizer-ipcontrol-v1.png",
+  "contactSheets": [
+    "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_lowbody_tailspike_guide_v1_contact_sheet.png",
+    "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_lowbody_tailspike_guide_v1_tail_crops.png",
+    "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_lowbody_tailspike_refine_v1_contact_sheet.png",
+    "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_lowbody_tailspike_refine_v1_tail_crops.png",
+    "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_lowbody_tailspike_strict_v1_contact_sheet.png",
+    "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_lowbody_tailspike_strict_v1_tail_crops.png"
+  ],
+  "reviewDecision": "no_app_promotion",
+  "summary": "The current low-body Stegosaurus primary already has the most natural tail-tip read among this loop. A local four-spike guide aligned correctly with the tail, but the added rear spikes stayed faint and translucent. Low-denoise refine preserved the image but did not make the fourth spike more countable. Strict inpaint over the original low-body candidate also changed too little to justify replacing the current primary.",
+  "primaryRejectReasons": [
+    "local guide variants are useful for review but read as subtle translucent overlays at crop scale",
+    "low-denoise refine outputs preserve the body but do not materially improve the tail-spike count",
+    "strict inpaint outputs stay too close to the source and do not add a clearer fourth spike",
+    "none of the outputs improve the current primary enough to offset new tail-tip uncertainty"
+  ],
+  "usefulFindings": [
+    "The low-body candidate should remain first for now because its body proportion is better than the round-body large-thagomizer candidate.",
+    "Tail-tip-only inpaint is too conservative at denoise 0.16 to 0.42 on this source and mask.",
+    "The next useful Stegosaurus route should use a stronger reference-conditioned tail target or a focused LoRA/synthetic expansion rather than another narrow tail-tip inpaint with the same mask."
+  ],
+  "nextRoute": "Keep the low-body app primary unchanged. If continuing Stegosaurus, test a stronger tail-specific control reference or train/review synthetic Stegosaurus tail-spike seeds; do not promote the v1 guide/refine/strict outputs."
+}

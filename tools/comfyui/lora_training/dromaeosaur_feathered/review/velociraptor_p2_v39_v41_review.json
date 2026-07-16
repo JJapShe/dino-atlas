@@ -1,0 +1,23 @@
+{
+  "taxonId": "velociraptor-mongoliensis",
+  "experiment": "p2_v39_v41_closed_scout_prompt_candidates",
+  "currentPrimary": "assets/dinosaurs/velociraptor-mongoliensis-small-sickle-imagegen-v9.png",
+  "selectedReviewHold": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v39-source-candidate.png",
+  "additionalReviewHold": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v41-source-candidate.png",
+  "selectedRejectReferences": [
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v40-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/velociraptor-p2-v39-v41-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/velociraptor-p2-v39-v41-crops.png",
+  "decision": "keep_current_v9",
+  "reason": "V39 is the best fresh whole-body balance because it keeps a closed toothed non-beak snout, dense feathers, folded forelimbs, and a restrained raised claw cue. It still does not prove two grounded walking toes plus one attached raised second-toe sickle claw on both feet. V41 is useful as a foot-visibility hold but the near claw risks reading as an oversized front hook. V40 is a reject reference because the open mouth and paired hook claws are too dramatic. Keep v9 first until head identity and exact foot topology pass together.",
+  "rejectIfPromoting": [
+    "sickle claw reads as a detached crescent or giant hook",
+    "feet do not show two walking toes plus one attached raised second toe",
+    "head becomes bird-beaked, toothless, rooster-like, or hawk-like",
+    "mouth/eye expression becomes too monster-like for a representative atlas image",
+    "forelimbs become spread wings or oversized dangling claws",
+    "tail is cropped, duplicated, soft, or hidden",
+    "extra legs, one-legged pose, hidden feet, text, or watermark"
+  ]
+}

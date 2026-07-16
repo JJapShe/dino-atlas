@@ -1,0 +1,26 @@
+{
+  "taxonId": "velociraptor-mongoliensis",
+  "experiment": "p4_v45_v47_closed_head_attached_sickle_prompt_candidates",
+  "currentPrimary": "assets/dinosaurs/velociraptor-mongoliensis-small-sickle-imagegen-v9.png",
+  "selectedReviewHold": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v47-source-candidate.png",
+  "comparisonReviewHolds": [
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v45-source-candidate.png",
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v43-source-candidate.png"
+  ],
+  "selectedRejectReferences": [
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v46-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/velociraptor-p4-v45-v47-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/velociraptor-p4-v45-v47-crops.png",
+  "decision": "keep_current_v9",
+  "reason": "V47 is the best P4 source hold because it keeps a closed toothy non-beak snout, feathered dromaeosaur body, folded forelimbs, long stiff tail, and an attached near-foot sickle-claw cue. It still stays below promotion because the sickle claw is slightly too large and the far-foot topology does not prove the full two-walking-toes plus one attached raised second-toe pattern. V45 is a useful secondary hold, while V46 is rejected as a positive source because its open mouth and paired hook claws risk reinforcing monster-like/talon outputs.",
+  "nextRoute": "Use v47 and v45 only as review holds for localized foot/forelimb i2i or ControlNet. Use v46 as a reject reference when training or prompting against open-mouth monster drift and oversized hook claws. Do not promote until the crop gate proves head identity, folded non-wing arms, exact foot topology, two hind legs, and a single tail together.",
+  "rejectIfPromoting": [
+    "head becomes bird-beaked, toothless, hawk-like, or rooster-like",
+    "forelimbs become spread wings or read as modern bird wings",
+    "sickle claw reads as detached crescent, giant hook, or eagle talon",
+    "feet do not show two walking toes plus one attached raised second toe",
+    "body becomes naked movie raptor, ostrich-like, or oversized monster raptor",
+    "tail is cropped, duplicated, soft, or hidden"
+  ]
+}

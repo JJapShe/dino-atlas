@@ -1,0 +1,49 @@
+{
+  "datasetId": "early_saurischian_herrerasaurus",
+  "route": "compact_hand_bodylock_control",
+  "trigger": "herrerasaurus atlas candidate",
+  "controlReferences": [
+    "assets/dinosaurs/herrerasaurus-ischigualastensis-bodylock-guide-v1.png",
+    "assets/dinosaurs/herrerasaurus-bodylock-crops-v3.png",
+    "assets/dinosaurs/herrerasaurus-review-options-v8.png"
+  ],
+  "basePositive": "museum-quality realistic paleoart, full-body lateral side profile of Herrerasaurus ischigualastensis, one lightly built early saurischian predator, closed narrow elongated carnivorous head, short-to-medium neck, slim horizontal torso, full single balancing tail in frame, exactly two hind legs, dry three-toed theropod feet visible on open ground, two compact folded non-weight-bearing forelimbs below the chest, hands with three main clawed digits and tiny vestigial outer digits, Late Triassic Ischigualasto dry floodplain, natural daylight, detailed pebbled skin",
+  "baseNegative": "Tyrannosaurus rex, massive tyrannosaur skull, tiny T. rex arms, allosaurus bulk, bulky large theropod, wide roaring mouth, monster gape, giant dangling hook claws, human-like hands, four or five equally long fingers, missing hands, forelimbs touching the ground, quadruped stance, extra legs, duplicate forearms, hidden hind leg, fused feet, hidden feet, cropped tail, duplicate tail, bird beak, feathers, wings, Plateosaurus herbivore face, logo bar, source text, watermark, caption, label",
+  "passes": [
+    {
+      "id": "controlnet_compact_hand_bodylock_low_denoise",
+      "mode": "i2i_controlnet",
+      "sourceImage": "assets/dinosaurs/herrerasaurus-ischigualastensis-compacthands-imagegen-v2.png",
+      "controlImage": "assets/dinosaurs/herrerasaurus-ischigualastensis-bodylock-guide-v1.png",
+      "denoiseRange": [0.18, 0.32],
+      "controlStrengthRange": [0.5, 0.74],
+      "promptFocus": "preserve the current natural scene while enforcing compact folded hands, three main digits with tiny outer vestigial digits, two hind legs, dry feet, and a full tail"
+    },
+    {
+      "id": "ipadapter_style_plus_bodylock_control",
+      "mode": "ipadapter_controlnet",
+      "styleReference": "assets/dinosaurs/herrerasaurus-ischigualastensis-compacthands-imagegen-v2.png",
+      "controlImage": "assets/dinosaurs/herrerasaurus-ischigualastensis-bodylock-guide-v1.png",
+      "denoiseRange": [0.28, 0.44],
+      "controlStrengthRange": [0.6, 0.84],
+      "promptFocus": "borrow the current v2 daylight and texture while making the hand anatomy more reviewable without shrinking arms into T. rex proportions"
+    },
+    {
+      "id": "localized_hand_foot_repair_probe",
+      "mode": "masked_i2i",
+      "sourceImage": "assets/dinosaurs/herrerasaurus-ischigualastensis-compacthands-imagegen-v2.png",
+      "maskTarget": "forelimb hands and hind feet only",
+      "denoiseRange": [0.1, 0.24],
+      "promptFocus": "repair only hand digit separation and dry three-toed feet; reject if arm length, head shape, torso bulk, or tail framing shifts"
+    }
+  ],
+  "manualGate": [
+    "reject if arms shrink into tiny T. rex proportions",
+    "reject if hand claws become long dangling hooks",
+    "reject if four or five equal long fingers dominate the hand instead of three main digits plus tiny vestigial outer digits",
+    "reject if forelimbs touch the ground or read as extra legs",
+    "reject if the head becomes massive, T. rex-like, bird-beaked, or wide-gaping",
+    "reject if feet or tail are cropped or too hidden to review",
+    "reject if source-like text, logo bars, captions, or watermarks appear"
+  ]
+}

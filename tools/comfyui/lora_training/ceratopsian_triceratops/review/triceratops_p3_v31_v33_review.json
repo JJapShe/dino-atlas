@@ -1,0 +1,24 @@
+{
+  "taxonId": "triceratops-horridus",
+  "experiment": "p3_v31_v33_antirhino_prompt_candidates",
+  "currentPrimary": "assets/dinosaurs/triceratops-horridus-allfeet-lora-i2i-comparison-v22.png",
+  "selectedReviewHold": "assets/dinosaurs/triceratops-horridus-imagegen-v33-source-candidate.png",
+  "selectedRejectReferences": [
+    "assets/dinosaurs/triceratops-horridus-imagegen-v31-source-candidate.png",
+    "assets/dinosaurs/triceratops-horridus-imagegen-v32-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/triceratops-p3-v31-v33-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/triceratops-p3-v31-v33-crops.png",
+  "decision": "keep_current_v22",
+  "reason": "V33 is the best fresh P3 comparison because it keeps a closed beak, skull-attached frill, exactly three facial horns, long tail, and visible toes. It still cannot replace v22 because the torso remains rounded and shoulder-heavy enough to carry rhinoceros risk. V31 and V32 are reject references: their head/frill cues are useful, but they reinforce the round mammal-body failure mode.",
+  "nextRoute": "Prompt-only retries still drift toward rhino-body proportions. The next useful route should use the skull-frill body-lock guide with local body-shape or i2i control, or a curated ceratopsian LoRA branch that separates low elongated torso and non-hoofed toe gates from horn/frill identity.",
+  "rejectIfPromoting": [
+    "torso, shoulder mass, or feet read as rhinoceros-like",
+    "body is a round barrel rather than low elongated ceratopsian form",
+    "frill attaches to shoulders, back, or torso instead of skull",
+    "mouth opens or teeth appear",
+    "horn count is not exactly two brow horns plus one nasal horn",
+    "feet become hoof-like or hide toe separation",
+    "tail is cropped, hidden, or short"
+  ]
+}

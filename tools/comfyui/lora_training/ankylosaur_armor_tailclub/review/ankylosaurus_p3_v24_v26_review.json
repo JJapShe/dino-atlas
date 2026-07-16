@@ -1,0 +1,24 @@
+{
+  "taxonId": "ankylosaurus-magniventris",
+  "experiment": "p3_v24_v26_broadskull_armor_tailclub_prompt_candidates",
+  "currentPrimary": "assets/dinosaurs/ankylosaurus-magniventris-allfeet-lora-i2i-v18.png",
+  "selectedReviewHold": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v25-source-candidate.png",
+  "comparisonReviewHolds": [
+    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v24-source-candidate.png",
+    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v26-source-candidate.png",
+    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v22-source-candidate.png",
+    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v23-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/ankylosaurus-p3-v24-v26-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/ankylosaurus-p3-v24-v26-crops.png",
+  "decision": "review_hold",
+  "reason": "V25 is the best P3 prompt-only hold because it most clearly combines a compact broad skull, low rounded osteoderm rows, four grounded feet, and a single attached oval tail club. It remains below final approval because rear-leg separation and exact ankylosaurid body compactness need human crop review. V24 keeps a clean club but has mild long-snout/long-body risk. V26 has useful low armor and blunt-head cues but needs rear-foot separation review.",
+  "nextRoute": "Use v25 as the next project-owned review hold for i2i or ControlNet passes. Do not promote or train until the crop gate confirms non-lizard proportions, four sturdy feet, rounded low armor, broad blunt skull, and one attached tail club together.",
+  "rejectIfPromoting": [
+    "body reads as crocodile, monitor lizard, pangolin, turtle, armadillo, or rhinoceros",
+    "skull becomes long and narrow or develops horns/frill",
+    "tail club is missing, detached, doubled, soft, spiked, or replaced by a paddle",
+    "armor becomes tall Stegosaurus plates or fantasy spikes",
+    "feet are hidden, fused, extra, or the animal reads as six-legged"
+  ]
+}

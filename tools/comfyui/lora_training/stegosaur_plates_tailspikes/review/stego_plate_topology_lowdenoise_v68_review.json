@@ -1,0 +1,64 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "plate_topology_lowdenoise_v68",
+  "sourceImage": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "selectedReviewHold": "assets/dinosaurs/stegosaurus-stenops-plate-topology-lowdenoise-v68.png",
+  "reviewSheet": "assets/dinosaurs/stegosaurus-plate-topology-lowdenoise-v68-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-plate-topology-lowdenoise-v68-crops.png",
+  "contactSheet": "tools/comfyui/outputs/stegosaurus_plate_topology_lowdenoise_v68-contact-sheet.png",
+  "decision": "review_hold",
+  "selectedSeed": 2026070162,
+  "selectedDenoise": 0.18,
+  "reason": "Low-denoise RealVisXL i2i from v6 keeps the recognizable Stegosaurus body and visible thagomizer while slightly naturalizing plate texture, but it does not prove a stronger staggered two-row plate topology than v6. Keep v6 first.",
+  "keepCurrentPrimary": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "outputs": [
+    {
+      "label": "plate_topology_side_profile_01 seed 2026070161 d0.18",
+      "image": "tools/comfyui/outputs/stegosaurus_plate_topology_lowdenoise_v68_plate_topology_side_profile_01_seed2026070161_d18.png",
+      "variation": "left-facing full-body side profile, two staggered plate rows visible as near and far plates, clear sky gaps between individual plates",
+      "decision": "reject_reference"
+    },
+    {
+      "label": "plate_topology_side_profile_01 seed 2026070162 d0.18",
+      "image": "tools/comfyui/outputs/stegosaurus_plate_topology_lowdenoise_v68_plate_topology_side_profile_01_seed2026070162_d18.png",
+      "variation": "left-facing full-body side profile, two staggered plate rows visible as near and far plates, clear sky gaps between individual plates",
+      "decision": "review_hold"
+    },
+    {
+      "label": "plate_topology_side_profile_01 seed 2026070161 d0.24",
+      "image": "tools/comfyui/outputs/stegosaurus_plate_topology_lowdenoise_v68_plate_topology_side_profile_01_seed2026070161_d24.png",
+      "variation": "left-facing full-body side profile, two staggered plate rows visible as near and far plates, clear sky gaps between individual plates",
+      "decision": "reject_reference"
+    },
+    {
+      "label": "plate_topology_side_profile_01 seed 2026070162 d0.24",
+      "image": "tools/comfyui/outputs/stegosaurus_plate_topology_lowdenoise_v68_plate_topology_side_profile_01_seed2026070162_d24.png",
+      "variation": "left-facing full-body side profile, two staggered plate rows visible as near and far plates, clear sky gaps between individual plates",
+      "decision": "reject_reference"
+    },
+    {
+      "label": "plate_topology_texture_01 seed 2026070161 d0.18",
+      "image": "tools/comfyui/outputs/stegosaurus_plate_topology_lowdenoise_v68_plate_topology_texture_01_seed2026070161_d18.png",
+      "variation": "rough matte bony plate surfaces with dark edge thickness, no leaf veins, no glossy plastic or paper-cutout look",
+      "decision": "reject_reference"
+    },
+    {
+      "label": "plate_topology_texture_01 seed 2026070162 d0.18",
+      "image": "tools/comfyui/outputs/stegosaurus_plate_topology_lowdenoise_v68_plate_topology_texture_01_seed2026070162_d18.png",
+      "variation": "rough matte bony plate surfaces with dark edge thickness, no leaf veins, no glossy plastic or paper-cutout look",
+      "decision": "reject_reference"
+    },
+    {
+      "label": "plate_topology_texture_01 seed 2026070161 d0.24",
+      "image": "tools/comfyui/outputs/stegosaurus_plate_topology_lowdenoise_v68_plate_topology_texture_01_seed2026070161_d24.png",
+      "variation": "rough matte bony plate surfaces with dark edge thickness, no leaf veins, no glossy plastic or paper-cutout look",
+      "decision": "reject_reference"
+    },
+    {
+      "label": "plate_topology_texture_01 seed 2026070162 d0.24",
+      "image": "tools/comfyui/outputs/stegosaurus_plate_topology_lowdenoise_v68_plate_topology_texture_01_seed2026070162_d24.png",
+      "variation": "rough matte bony plate surfaces with dark edge thickness, no leaf veins, no glossy plastic or paper-cutout look",
+      "decision": "reject_reference"
+    }
+  ]
+}

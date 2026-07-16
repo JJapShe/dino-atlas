@@ -1,0 +1,18 @@
+{
+  "taxonId": "triceratops-horridus",
+  "experiment": "schedule_i2i_v17",
+  "sourceImage": "assets/dinosaurs/triceratops-horridus-lowbody-closedbeak-i2i-v9.png",
+  "outputs": [
+    "assets/dinosaurs/triceratops-horridus-schedule-i2i-skullfrill-rejected-v17.png",
+    "assets/dinosaurs/triceratops-horridus-schedule-i2i-toereview-rejected-v17.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/triceratops-schedule-i2i-rejection-sheet-v17.png",
+  "decision": "rejected",
+  "reasons": [
+    "both low-denoise outputs reopen the closed-beak gate",
+    "visible teeth return in the mouth area",
+    "neither output is a clear improvement over the current v9 primary"
+  ],
+  "keepCurrentPrimary": "assets/dinosaurs/triceratops-horridus-lowbody-closedbeak-i2i-v9.png",
+  "nextRoute": "Use lower-strength local beak/frill masking or a ceratopsian-specific LoRA/ControlNet route; do not promote whole-body i2i if closed beak breaks."
+}

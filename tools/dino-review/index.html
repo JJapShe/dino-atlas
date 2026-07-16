@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dino Image Review</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b0d10;
+      --panel: #151a20;
+      --panel-2: #10141a;
+      --line: #2b333e;
+      --text: #edf2f7;
+      --muted: #91a0ae;
+      --accent: #6ec3b2;
+      --warn: #f0b85a;
+      --bad: #f46f78;
+      --good: #45d184;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      font-size: 14px;
+    }
+    body.zoom-open { overflow: hidden; }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 14px;
+      align-items: center;
+      padding: 14px 18px;
+      background: #0f1318;
+      border-bottom: 1px solid var(--line);
+    }
+    h1 {
+      margin: 0;
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+    .toolbar {
+      display: grid;
+      grid-template-columns: minmax(220px, 1fr) 190px 150px 140px 150px;
+      gap: 8px;
+      align-items: center;
+    }
+    input, select, textarea, button { font: inherit; }
+    input, select, textarea {
+      width: 100%;
+      min-height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--panel-2);
+      color: var(--text);
+      padding: 8px 10px;
+      outline: none;
+    }
+    button {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--panel);
+      color: var(--text);
+      min-height: 34px;
+      padding: 7px 10px;
+      cursor: pointer;
+    }
+    button:hover { border-color: var(--accent); }
+    main {
+      display: grid;
+      grid-template-columns: minmax(260px, 30vw) minmax(560px, 1fr);
+      gap: 16px;
+      padding: 16px 18px 22px;
+    }
+    .summary {
+      display: flex;
+      gap: 8px;
+      color: var(--muted);
+      flex-wrap: wrap;
+      margin-top: 6px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      min-height: 24px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--panel-2);
+      color: var(--muted);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(138px, 1fr));
+      gap: 10px;
+      align-content: start;
+    }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      overflow: hidden;
+      min-width: 0;
+      text-align: left;
+      padding: 0;
+    }
+    .card.active { border-color: var(--accent); }
+    .thumb {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      display: block;
+      background: #0f1318;
+    }
+    .meta {
+      padding: 8px;
+      display: grid;
+      gap: 6px;
+    }
+    .name {
+      font-size: 13px;
+      font-weight: 650;
+      line-height: 1.3;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      word-break: break-word;
+    }
+    .row {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .status-pass { color: var(--good); border-color: color-mix(in srgb, var(--good) 55%, var(--line)); }
+    .status-hold { color: var(--warn); border-color: color-mix(in srgb, var(--warn) 55%, var(--line)); }
+    .status-reject { color: var(--bad); border-color: color-mix(in srgb, var(--bad) 55%, var(--line)); }
+    aside {
+      position: sticky;
+      top: 82px;
+      align-self: start;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      overflow: hidden;
+      min-height: 320px;
+    }
+    .preview-button {
+      width: 100%;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: #080a0d;
+      display: block;
+      cursor: zoom-in;
+    }
+    .preview-button:hover { border: 0; }
+    .preview {
+      width: 100%;
+      max-height: 68vh;
+      object-fit: contain;
+      background: #080a0d;
+      display: block;
+    }
+    .detail {
+      padding: 14px;
+      display: grid;
+      gap: 12px;
+    }
+    .detail h2 {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.35;
+      word-break: break-word;
+    }
+    .actions {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+    .actions button[data-status="pass"].active { border-color: var(--good); color: var(--good); }
+    .actions button[data-status="hold"].active { border-color: var(--warn); color: var(--warn); }
+    .actions button[data-status="reject"].active { border-color: var(--bad); color: var(--bad); }
+    textarea {
+      min-height: 92px;
+      resize: vertical;
+      line-height: 1.45;
+    }
+    .save-row {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    .save-row button {
+      background: color-mix(in srgb, var(--accent) 26%, var(--panel));
+      border-color: color-mix(in srgb, var(--accent) 60%, var(--line));
+    }
+    .zoom {
+      position: fixed;
+      inset: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr) auto;
+      background: rgba(3, 5, 8, 0.96);
+    }
+    .zoom[hidden] { display: none; }
+    .zoom-bar,
+    .zoom-caption {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 14px;
+      border-color: var(--line);
+      background: rgba(10, 14, 18, 0.92);
+    }
+    .zoom-bar { border-bottom: 1px solid var(--line); }
+    .zoom-caption { border-top: 1px solid var(--line); }
+    .zoom-title,
+    .zoom-file {
+      min-width: 0;
+      font-weight: 650;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .zoom-stage {
+      display: grid;
+      place-items: center;
+      min-height: 0;
+      padding: 16px;
+    }
+    .zoom-stage img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      background: #05070a;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+    }
+    .muted { color: var(--muted); }
+    .mono { font-family: Consolas, "Cascadia Mono", monospace; }
+    @media (max-width: 980px) {
+      header { grid-template-columns: 1fr; }
+      .toolbar { grid-template-columns: 1fr 1fr; }
+      main { grid-template-columns: 1fr; }
+      aside { position: static; }
+    }
+    @media (max-width: 560px) {
+      .toolbar { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+      .actions { grid-template-columns: repeat(2, 1fr); }
+      .zoom-caption { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Dino Image Review</h1>
+      <div class="summary" id="summary"></div>
+    </div>
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="공룡명, 파일명 검색">
+      <select id="species"></select>
+      <select id="kind"></select>
+      <select id="status">
+        <option value="all">전체 상태</option>
+        <option value="unreviewed">미검수</option>
+        <option value="pass">통과</option>
+        <option value="hold">보류</option>
+        <option value="reject">반려</option>
+      </select>
+      <select id="sort">
+        <option value="recent">최근 생성순</option>
+        <option value="reviewed">최근 검수순</option>
+        <option value="status">검수 상태순</option>
+        <option value="species">공룡명순</option>
+        <option value="name">파일명순</option>
+        <option value="size">파일 크기순</option>
+      </select>
+    </div>
+  </header>
+  <main>
+    <section class="grid" id="grid"></section>
+    <aside id="detail"></aside>
+  </main>
+  <div class="zoom" id="zoom" hidden>
+    <div class="zoom-bar">
+      <div class="zoom-title" id="zoomTitle"></div>
+      <button id="zoomClose" type="button">닫기</button>
+    </div>
+    <div class="zoom-stage" id="zoomBackdrop">
+      <img id="zoomImage" alt="">
+    </div>
+    <div class="zoom-caption">
+      <div class="zoom-file mono" id="zoomFile"></div>
+      <div class="row" id="zoomTags"></div>
+    </div>
+  </div>
+  <script>
+    const key = new URLSearchParams(location.search).get("key") || "";
+    const fmt = new Intl.NumberFormat("ko-KR");
+    const KIND_LABELS = {
+      audit: "감사",
+      candidate: "후보",
+      controlnet: "컨트롤넷",
+      ecology: "생태 장면",
+      gallery: "갤러리",
+      i2i: "이미지 보정",
+      imagegen: "이미지 생성",
+      inpaint: "인페인트",
+      lora: "LoRA",
+      pattern: "무늬 변형",
+      reference: "참고",
+    };
+    const STATUS_LABELS = {
+      all: "전체 상태",
+      unreviewed: "미검수",
+      pass: "통과",
+      hold: "보류",
+      reject: "반려",
+    };
+    let images = [];
+    let selected = null;
+    let selectedStatus = "unreviewed";
+
+    const $ = (id) => document.getElementById(id);
+
+    function api(path) {
+      const sep = path.includes("?") ? "&" : "?";
+      return `${path}${key ? `${sep}key=${encodeURIComponent(key)}` : ""}`;
+    }
+
+    function imageUrl(image) {
+      const sep = image.url.includes("?") ? "&" : "?";
+      return api(`${image.url}${sep}v=${encodeURIComponent(`${image.updatedAt}-${image.sizeBytes}`)}`);
+    }
+
+    function statusOf(image) {
+      return image.review?.status || "unreviewed";
+    }
+
+    function bytes(value) {
+      if (value > 1024 * 1024) return `${(value / 1024 / 1024).toFixed(1)} MB`;
+      return `${Math.round(value / 1024)} KB`;
+    }
+
+    function rel(value) {
+      const ms = Date.now() - new Date(value).getTime();
+      if (ms < 3600000) return `${Math.max(1, Math.floor(ms / 60000))}분 전`;
+      if (ms < 86400000) return `${Math.floor(ms / 3600000)}시간 전`;
+      return `${Math.floor(ms / 86400000)}일 전`;
+    }
+
+    function statusPill(status) {
+      const cls = status === "pass" ? "status-pass" : status === "hold" ? "status-hold" : status === "reject" ? "status-reject" : "";
+      return `<span class="pill ${cls}">${STATUS_LABELS[status] || status}</span>`;
+    }
+
+    function kindLabel(kind) {
+      return KIND_LABELS[kind] || kind;
+    }
+
+    function filtered() {
+      const q = $("search").value.trim().toLowerCase();
+      const species = $("species").value;
+      const kind = $("kind").value;
+      const status = $("status").value;
+      const statusRank = { unreviewed: 0, hold: 1, reject: 2, pass: 3 };
+      return images.filter((image) => {
+        const hay = `${image.name} ${image.species} ${image.speciesLabel} ${image.kind} ${kindLabel(image.kind)}`.toLowerCase();
+        return (!q || hay.includes(q))
+          && (species === "all" || image.species === species)
+          && (kind === "all" || image.kind === kind)
+          && (status === "all" || statusOf(image) === status);
+      }).sort((a, b) => {
+        const sort = $("sort").value;
+        if (sort === "reviewed") return new Date(b.review?.updatedAt || 0) - new Date(a.review?.updatedAt || 0);
+        if (sort === "status") return statusRank[statusOf(a)] - statusRank[statusOf(b)] || new Date(b.updatedAt) - new Date(a.updatedAt);
+        if (sort === "species") return a.speciesLabel.localeCompare(b.speciesLabel, "ko") || a.name.localeCompare(b.name, "ko");
+        if (sort === "name") return a.name.localeCompare(b.name, "ko");
+        if (sort === "size") return b.sizeBytes - a.sizeBytes;
+        return new Date(b.updatedAt) - new Date(a.updatedAt);
+      });
+    }
+
+    function renderSummary(list) {
+      const counts = images.reduce((acc, image) => {
+        acc[statusOf(image)] = (acc[statusOf(image)] || 0) + 1;
+        return acc;
+      }, {});
+      $("summary").innerHTML = [
+        `<span class="pill">${fmt.format(list.length)}개 표시</span>`,
+        `<span class="pill">전체 ${fmt.format(images.length)}개</span>`,
+        `<span class="pill status-pass">통과 ${fmt.format(counts.pass || 0)}</span>`,
+        `<span class="pill status-hold">보류 ${fmt.format(counts.hold || 0)}</span>`,
+        `<span class="pill status-reject">반려 ${fmt.format(counts.reject || 0)}</span>`,
+      ].join("");
+    }
+
+    function renderGrid() {
+      const list = filtered();
+      renderSummary(list);
+      $("grid").innerHTML = list.map((image) => {
+        const active = selected?.id === image.id ? "active" : "";
+        const src = imageUrl(image);
+        return `<button class="card ${active}" data-id="${escapeHtml(image.id)}" type="button">
+          <img class="thumb" loading="lazy" src="${src}" alt="">
+          <div class="meta">
+            <div class="name">${escapeHtml(image.name)}</div>
+            <div class="row">${statusPill(statusOf(image))}<span class="pill">${escapeHtml(kindLabel(image.kind))}</span></div>
+            <div class="row"><span class="pill">${escapeHtml(image.speciesLabel)}</span><span class="pill">${bytes(image.sizeBytes)}</span><span class="pill">${rel(image.updatedAt)}</span></div>
+          </div>
+        </button>`;
+      }).join("");
+      document.querySelectorAll(".card").forEach((card) => {
+        card.addEventListener("click", () => selectImage(card.dataset.id));
+      });
+    }
+
+    function selectImage(id) {
+      selected = images.find((image) => image.id === id) || images[0] || null;
+      selectedStatus = selected ? statusOf(selected) : "unreviewed";
+      renderGrid();
+      renderDetail();
+    }
+
+    function renderDetail() {
+      if (!selected) {
+        $("detail").innerHTML = `<div class="detail"><p class="muted">선택된 이미지가 없습니다.</p></div>`;
+        return;
+      }
+      $("detail").innerHTML = `
+        <button class="preview-button" id="openZoom" type="button" title="크게 보기">
+          <img class="preview" src="${imageUrl(selected)}" alt="">
+        </button>
+        <div class="detail">
+          <h2>${escapeHtml(selected.name)}</h2>
+          <div class="row">
+            ${statusPill(statusOf(selected))}
+            <span class="pill">${escapeHtml(kindLabel(selected.kind))}</span>
+            <span class="pill">${escapeHtml(selected.speciesLabel)}</span>
+          </div>
+          <div class="muted mono">${escapeHtml(selected.id)}</div>
+          <div class="actions">
+            <button data-status="unreviewed" type="button">초기화</button>
+            <button data-status="pass" type="button">통과</button>
+            <button data-status="hold" type="button">보류</button>
+            <button data-status="reject" type="button">반려</button>
+          </div>
+          <textarea id="note" placeholder="검수 메모">${escapeHtml(selected.review?.note || "")}</textarea>
+          <div class="save-row">
+            <button id="save" type="button">저장</button>
+            <span class="muted" id="saveState">${selected.review?.updatedAt ? `${rel(selected.review.updatedAt)} 저장됨` : ""}</span>
+          </div>
+        </div>`;
+      document.querySelectorAll("[data-status]").forEach((button) => {
+        if (button.dataset.status === selectedStatus) button.classList.add("active");
+        button.addEventListener("click", () => {
+          selectedStatus = button.dataset.status;
+          document.querySelectorAll("[data-status]").forEach((node) => node.classList.remove("active"));
+          button.classList.add("active");
+        });
+      });
+      $("save").addEventListener("click", saveReview);
+      $("openZoom").addEventListener("click", openZoom);
+    }
+
+    function openZoom() {
+      if (!selected) return;
+      $("zoomTitle").textContent = selected.name;
+      $("zoomFile").textContent = selected.id;
+      $("zoomTags").innerHTML = [
+        statusPill(statusOf(selected)),
+        `<span class="pill">${escapeHtml(kindLabel(selected.kind))}</span>`,
+        `<span class="pill">${escapeHtml(selected.speciesLabel)}</span>`,
+      ].join("");
+      $("zoomImage").src = imageUrl(selected);
+      $("zoom").hidden = false;
+      document.body.classList.add("zoom-open");
+    }
+
+    function closeZoom() {
+      $("zoom").hidden = true;
+      $("zoomImage").removeAttribute("src");
+      document.body.classList.remove("zoom-open");
+    }
+
+    async function saveReview() {
+      $("saveState").textContent = "저장 중";
+      const res = await fetch(api("/api/review"), {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ id: selected.id, status: selectedStatus, note: $("note").value }),
+      });
+      if (!res.ok) {
+        $("saveState").textContent = "저장 실패";
+        return;
+      }
+      const data = await res.json();
+      selected.review = data.review;
+      const idx = images.findIndex((image) => image.id === selected.id);
+      if (idx >= 0) images[idx] = selected;
+      $("saveState").textContent = "저장됨";
+      renderGrid();
+      renderDetail();
+    }
+
+    function fillSelect(id, values, label) {
+      $(id).innerHTML = [
+        `<option value="all">${label}</option>`,
+        ...values.map((value) => {
+          const option = typeof value === "string"
+            ? { id: value, label: kindLabel(value) }
+            : value;
+          const suffix = option.count ? ` (${fmt.format(option.count)})` : "";
+          return `<option value="${escapeHtml(option.id)}">${escapeHtml(option.label)}${suffix}</option>`;
+        }),
+      ].join("");
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    async function init() {
+      const res = await fetch(api("/api/images"), { cache: "no-store" });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      images = data.images;
+      fillSelect("species", data.species, "전체 공룡");
+      fillSelect("kind", data.kinds, "전체 유형");
+      ["search", "species", "kind", "status", "sort"].forEach((id) => $(id).addEventListener("input", renderGrid));
+      selected = images[0] || null;
+      renderGrid();
+      renderDetail();
+    }
+
+    init().catch(() => {
+      $("summary").innerHTML = `<span class="pill status-reject">오프라인</span>`;
+    });
+
+    $("zoomClose").addEventListener("click", closeZoom);
+    $("zoomBackdrop").addEventListener("click", (event) => {
+      if (event.target.id === "zoomBackdrop") closeZoom();
+    });
+    window.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !$("zoom").hidden) closeZoom();
+    });
+  </script>
+</body>
+</html>

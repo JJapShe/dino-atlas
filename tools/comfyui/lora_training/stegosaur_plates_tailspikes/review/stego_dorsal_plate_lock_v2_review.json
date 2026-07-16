@@ -1,0 +1,35 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "round": "stego_dorsal_plate_lock_v2",
+  "date": "2026-06-25",
+  "objective": "Tighten the Stegosaurus dorsal-plate gate after review that the current first image still does not capture the plates well enough.",
+  "referenceGate": {
+    "required": [
+      "many individual broad bony dorsal plates",
+      "two visually staggered rows, with the far row offset behind the near row",
+      "largest plates over the mid-back and hips",
+      "smaller plates toward the neck and tail base",
+      "clear sky/background gaps between individual plates at app-card scale",
+      "low quadrupedal Stegosaurus body and four-spike thagomizer"
+    ],
+    "rejectIf": [
+      "few rounded fins",
+      "flower-petal or plant-leaf plates",
+      "single continuous sail",
+      "shell armor ridge",
+      "thin tail bristles instead of a clean tail shaft and four tail spikes"
+    ]
+  },
+  "selected": {
+    "asset": "assets/dinosaurs/stegosaurus-stenops-dorsal-plate-lock-v2-guide.png",
+    "role": "structure reference and next ControlNet source",
+    "reason": "The selected guide makes the alternating broad plate row readable before any natural-render polish is attempted."
+  },
+  "reviewSheets": {
+    "contactSheet": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_dorsal_plate_lock_v2_contact_sheet.png",
+    "plateCrops": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_dorsal_plate_lock_v2_plate_crops.png",
+    "appContactSheet": "assets/dinosaurs/stegosaurus-review-options-v38.png",
+    "appPlateCrops": "assets/dinosaurs/stegosaurus-plate-crops-v10.png"
+  },
+  "nextRecommendation": "Use this guide as the control source with low IP-Adapter weight. Do not promote a natural output unless the separate plate silhouettes remain visible at app-card scale."
+}

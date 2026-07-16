@@ -1,0 +1,17 @@
+{
+  "taxonId": "herrerasaurus-ischigualastensis",
+  "experiment": "p1_v4_source_candidate",
+  "currentPrimary": "assets/dinosaurs/herrerasaurus-ischigualastensis-compacthands-imagegen-v2.png",
+  "selectedReviewHold": "assets/dinosaurs/herrerasaurus-ischigualastensis-imagegen-v4-source-candidate.png",
+  "reviewSheet": "assets/dinosaurs/herrerasaurus-p1-v4-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/herrerasaurus-p1-v4-crops.png",
+  "decision": "review_hold",
+  "reason": "V4 improves the copyright-safe Triassic floodplain scene and keeps a full side-profile body, two hind legs, long tail, and narrow closed head. Keep v2 first because v4's hand can still read as too many equal long fingers rather than the three-main-digit plus tiny vestigial outer-digit target.",
+  "rejectIfPromoting": [
+    "visible hand reads as four or five equal long fingers",
+    "forelimbs touch the ground or become extra weight-bearing legs",
+    "arms shrink into tiny two-finger Tyrannosaurus proportions",
+    "body becomes bulky Allosaurus or Tyrannosaurus-like",
+    "head, feet, or tail are hidden enough to block count review"
+  ]
+}

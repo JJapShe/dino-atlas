@@ -1,0 +1,44 @@
+{
+  "datasetId": "sauropod_apatosaurus",
+  "route": "lowneck_bodylock_control",
+  "trigger": "apatosaurus atlas candidate",
+  "controlReferences": [
+    "assets/dinosaurs/apatosaurus-ajax-lowneck-bodylock-guide-v1.png",
+    "assets/dinosaurs/apatosaurus-lowneck-bodylock-crops-v3.png",
+    "assets/dinosaurs/apatosaurus-review-options-v6.png"
+  ],
+  "basePositive": "museum-quality realistic paleoart, full-body lateral side profile of Apatosaurus ajax, one animal, low forward-reaching neck held near horizontal, small blunt non-predatory sauropod head, deep heavy diplodocid torso, shoulders not high, front and rear pillar limbs of similar height, exactly four sturdy pillar legs, all four broad sauropod feet visible on dry ground, long single horizontal tail fully in frame, Late Jurassic Morrison Formation open dry floodplain, natural daylight, detailed pebbled skin",
+  "baseNegative": "Brachiosaurus, high shoulders, front legs taller than hind legs, vertical giraffe neck, swan neck, very high neck, tiny whip-body Diplodocus drift, hidden feet, water-covered feet, cropped feet, cropped tail tip, missing tail, extra legs, missing legs, duplicate legs, two-legged sauropod, theropod head, predator teeth, fantasy spikes, armor, text, labels, logo, watermark",
+  "passes": [
+    {
+      "id": "controlnet_lowneck_bodylock_low_denoise",
+      "mode": "i2i_controlnet",
+      "sourceImage": "assets/dinosaurs/apatosaurus-ajax-smallhead-imagegen-v2.png",
+      "controlImage": "assets/dinosaurs/apatosaurus-ajax-lowneck-bodylock-guide-v1.png",
+      "denoiseRange": [0.2, 0.34],
+      "controlStrengthRange": [0.55, 0.78],
+      "promptFocus": "preserve the current natural scene while reinforcing the low neck, similar-height pillar legs, visible feet, and long horizontal tail"
+    },
+    {
+      "id": "ipadapter_style_plus_lowneck_control",
+      "mode": "ipadapter_controlnet",
+      "styleReference": "assets/dinosaurs/apatosaurus-ajax-smallhead-imagegen-v2.png",
+      "controlImage": "assets/dinosaurs/apatosaurus-ajax-lowneck-bodylock-guide-v1.png",
+      "denoiseRange": [0.3, 0.46],
+      "controlStrengthRange": [0.62, 0.88],
+      "promptFocus": "use the guide silhouette as the body plan while borrowing the current dry-ground texture and daylight"
+    },
+    {
+      "id": "prompt_only_rejection_probe",
+      "mode": "txt2img_probe",
+      "promptFocus": "only keep outputs that still show a low forward neck, non-high shoulders, four visible feet, and a long single horizontal tail"
+    }
+  ],
+  "manualGate": [
+    "reject if the silhouette drifts toward high-shouldered Brachiosaurus",
+    "reject if the neck rises vertically or swan-like",
+    "reject if forelimbs become taller than hind limbs",
+    "reject if feet are hidden, water-covered, hoof-like, or too cropped to count",
+    "reject if the tail is cropped, duplicated, missing, or too short to read as Apatosaurus"
+  ]
+}

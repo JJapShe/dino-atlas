@@ -1,0 +1,74 @@
+{
+  "datasetId": "stegosaur_plates_tailspikes_v1",
+  "trigger": "stegosaur_plates_tailspikes",
+  "purpose": "Generate project-owned synthetic candidates for review before adding them to a custom Stegosaurus/stegosaurian LoRA dataset.",
+  "basePositive": "clean digital paleoart, modern dinosaur encyclopedia quality, project-owned synthetic training candidate, single adult Stegosaurus stenops, stegosaur_plates_tailspikes, full body lateral side view, quadrupedal dinosaur, small low head, arched body, long tail fully in frame, many separate broad angular bony dorsal plates in two staggered alternating rows, largest plates over hips and mid-back, smaller plates near neck and tail base, visible gaps between individual plates, tail ends in exactly four visible thagomizer spikes, Late Jurassic North American floodplain, natural daylight, no text, no watermark",
+  "baseNegative": "rounded flower-petal plates, plant leaves, leaf veins, single smooth sail, continuous scalloped fan, connected sawtooth wall, comb-like needle spines, missing dorsal plates, missing thagomizer, fewer than four tail spikes, more than four tail spikes, tail cropped before the spikes, second head on tail, face on tail, horned tail, turtle shell, ankylosaur shell, sauropod long neck, theropod biped stance, extra legs, duplicate limbs, duplicate tail, text, logo, watermark, signature, border",
+  "reviewBeforeTraining": true,
+  "prompts": [
+    {
+      "id": "side_profile_plate_gap_01",
+      "variation": "left-facing calm walking pose, clear sky gaps between broad dorsal plates, four thagomizer spikes visible at the tail tip"
+    },
+    {
+      "id": "side_profile_plate_gap_02",
+      "variation": "right-facing side profile on dry floodplain ground, staggered left-right plate row visible, tail tip fully in frame"
+    },
+    {
+      "id": "low_head_walk_01",
+      "variation": "small low head and rounded torso, slow walking pose, plates largest over the hips, smaller plates near the neck"
+    },
+    {
+      "id": "tailroom_thagomizer_01",
+      "variation": "extra room behind the tail so the four-spike thagomizer is countable, dorsal plates stay broad and separated"
+    },
+    {
+      "id": "tailroom_thagomizer_02",
+      "variation": "tail held slightly upward with exactly four long spikes, no spines along the tail shaft, full side profile"
+    },
+    {
+      "id": "plate_surface_01",
+      "variation": "matte brown rough bony plate surfaces with no leaf veins, visible dark edge thickness, natural scaled gray-brown skin"
+    },
+    {
+      "id": "plate_surface_02",
+      "variation": "subtle plate texture and blunt angular tips, no glossy plastic or flat paper cutout look"
+    },
+    {
+      "id": "jurassic_floodplain_01",
+      "variation": "Late Jurassic floodplain with sparse low vegetation and open sky, full body centered with head feet and tail uncropped"
+    },
+    {
+      "id": "neutral_reference_01",
+      "variation": "neutral educational reference pose, side profile, clear anatomy, restrained earth tones, no dramatic action"
+    },
+    {
+      "id": "mid_step_01",
+      "variation": "mid-step quadrupedal walking pose, four legs readable, dorsal plates remain separated from neck to tail base"
+    },
+    {
+      "id": "plate_count_01",
+      "variation": "many countable individual dorsal plates, varied sizes, no row of identical triangular roof teeth"
+    },
+    {
+      "id": "two_row_read_01",
+      "variation": "slight side angle still mostly profile, overlapping staggered two-row plate arrangement visible without becoming rear view"
+    },
+    {
+      "id": "dry_scrub_01",
+      "variation": "dry scrubland edge, low camera angle, tail and feet visible, no grass hiding the thagomizer"
+    },
+    {
+      "id": "soft_light_01",
+      "variation": "soft overcast daylight, clear silhouette, natural brown and gray palette, no high-contrast fantasy lighting"
+    },
+    {
+      "id": "juvenile_scale_avoid_01",
+      "variation": "adult robust body scale, not cute or baby-like, head small compared with body, tail long and tapering"
+    },
+    {
+      "id": "clean_tail_shaft_01",
+      "variation": "smooth tail shaft after the hip plates with no small spines along it, only the four tail-tip spikes"
+    }
+  ]
+}

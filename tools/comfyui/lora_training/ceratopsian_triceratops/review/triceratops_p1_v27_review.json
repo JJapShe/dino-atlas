@@ -1,0 +1,18 @@
+{
+  "taxonId": "triceratops-horridus",
+  "experiment": "p1_v26_v27_closed_beak_prompt_candidates",
+  "currentPrimary": "assets/dinosaurs/triceratops-horridus-allfeet-lora-i2i-comparison-v22.png",
+  "selectedReviewHold": "assets/dinosaurs/triceratops-horridus-imagegen-v27-source-candidate.png",
+  "comparisonReject": "assets/dinosaurs/triceratops-horridus-imagegen-v26-source-candidate.png",
+  "reviewSheet": "assets/dinosaurs/triceratops-p1-v27-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/triceratops-p1-v27-crops.png",
+  "decision": "review_hold",
+  "reason": "V27 gives the best new prompt-only closed-beak read while keeping a skull-attached frill, three facial horns, a long tail, and visible non-hoofed toes. Keep v22 first because v27 still has a rounded heavy torso and overlapping rear-leg read. V26 is useful as an open-beak rejection comparison.",
+  "rejectIfPromoting": [
+    "mouth seam reads open, black, toothy, or mammal-like",
+    "body becomes a rhinoceros torso, shoulder hump, or hoofed mammal",
+    "tail shortens or is hidden",
+    "frill separates from the skull or attaches to the shoulders",
+    "feet collapse into hooves, extra limbs, or hidden toe counts"
+  ]
+}

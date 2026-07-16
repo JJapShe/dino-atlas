@@ -1,0 +1,22 @@
+{
+  "taxonId": "plateosaurus-engelhardti",
+  "experiment": "thumbtip_micro_i2i_v14",
+  "sourceImage": "assets/dinosaurs/plateosaurus-engelhardti-singleforelimb-smallhand-imagegen-v3.png",
+  "maskImage": "assets/dinosaurs/plateosaurus-thumbtip-micro-i2i-mask-v14.png",
+  "comparisonImage": "assets/dinosaurs/plateosaurus-engelhardti-thumbtip-micro-i2i-comparison-v14.png",
+  "reviewSheet": "assets/dinosaurs/plateosaurus-thumbtip-micro-i2i-v14-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/plateosaurus-thumbtip-micro-i2i-v14-crops.png",
+  "decision": "comparison_only",
+  "selectedSeed": 2026070864,
+  "selectedDenoise": 0.1,
+  "selectedLabel": "seed 2026070864 d0.10",
+  "editMode": "plateosaurus_thumb_claw_tips",
+  "maskPreset": "plateosaurus_thumb_claw_tips",
+  "reasons": [
+    "low-denoise thumb-tip i2i preserves the v3 low herbivore head, full tail, two grounded hind legs, and lifted forelimb",
+    "the hand/thumb-claw cue can be compared against v3, but the edit is subtle and not a decisive representative upgrade",
+    "current v3 remains first because it keeps the strongest balance between hand visibility and no-six-leg risk"
+  ],
+  "keepCurrentPrimary": "assets/dinosaurs/plateosaurus-engelhardti-singleforelimb-smallhand-imagegen-v3.png",
+  "nextRoute": "Use a structure-aware hand topology mask or early-sauropodomorph LoRA if exact five-finger/thumb-claw anatomy must improve; avoid broad forelimb edits that create weight-bearing front limbs or six-leg reads."
+}

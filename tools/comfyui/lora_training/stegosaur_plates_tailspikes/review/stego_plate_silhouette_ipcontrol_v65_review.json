@@ -1,0 +1,56 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "plate_silhouette_ipcontrol_v65",
+  "currentPrimary": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "controlSource": "assets/dinosaurs/stegosaurus-stenops-plate-silhouette-control-v65.png",
+  "controlMask": "assets/dinosaurs/stegosaurus-plate-silhouette-control-mask-v65.png",
+  "controlReviewSheet": "assets/dinosaurs/stegosaurus-plate-silhouette-control-v65-review-sheet.png",
+  "lowControlRejection": "assets/dinosaurs/stegosaurus-stenops-plate-silhouette-ipcontrol-rejected-v65.png",
+  "highControlRejection": "assets/dinosaurs/stegosaurus-stenops-plate-silhouette-ipcontrol-highcontrol-rejected-v65.png",
+  "reviewSheet": "assets/dinosaurs/stegosaurus-plate-silhouette-ipcontrol-v65-rejection-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-plate-silhouette-ipcontrol-v65-rejection-crops.png",
+  "decision": "diagnostic_only",
+  "seeds": [
+    2026071201,
+    2026071202
+  ],
+  "ipWeight": 0.48,
+  "controlStrengths": [
+    0.26,
+    0.34
+  ],
+  "controlEnd": 0.46,
+  "outputs": [
+    {
+      "seed": 2026071201,
+      "ipWeight": 0.48,
+      "controlStrength": 0.26,
+      "image": "tools/comfyui/ComfyUI/output/dino_atlas/stegosaurus_plate_silhouette_ipcontrol_v65_style_transfer_stegosaurus-stenops_iw48_cs26_00001_.png"
+    },
+    {
+      "seed": 2026071202,
+      "ipWeight": 0.48,
+      "controlStrength": 0.26,
+      "image": "tools/comfyui/ComfyUI/output/dino_atlas/stegosaurus_plate_silhouette_ipcontrol_v65_style_transfer_stegosaurus-stenops_iw48_cs26_00002_.png"
+    },
+    {
+      "seed": 2026071201,
+      "ipWeight": 0.48,
+      "controlStrength": 0.34,
+      "image": "tools/comfyui/ComfyUI/output/dino_atlas/stegosaurus_plate_silhouette_ipcontrol_v65_style_transfer_stegosaurus-stenops_iw48_cs34_00001_.png"
+    },
+    {
+      "seed": 2026071202,
+      "ipWeight": 0.48,
+      "controlStrength": 0.34,
+      "image": "tools/comfyui/ComfyUI/output/dino_atlas/stegosaurus_plate_silhouette_ipcontrol_v65_style_transfer_stegosaurus-stenops_iw48_cs34_00002_.png"
+    }
+  ],
+  "reasons": [
+    "v65 control improves the local plate input compared with a plain cartoon guide, but IP-Control still drifts away from Stegosaurus body identity",
+    "generated plates become low combs, shoulder fans, or neck-frill-like rows instead of broad separated bony dorsal plates",
+    "the four-spike thagomizer gate fails, so none of the outputs can replace v6",
+    "future work needs a Stegosauridae-specific LoRA or reviewed plate-structure training set rather than more v6-reference IP-Control sweeps"
+  ],
+  "keepCurrentPrimary": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png"
+}

@@ -1,0 +1,45 @@
+{
+  "taxonId": "velociraptor-mongoliensis",
+  "experiment": "second_toe_topology_i2i_v30",
+  "sourceImage": "assets/dinosaurs/velociraptor-mongoliensis-small-sickle-imagegen-v9.png",
+  "maskImage": "assets/dinosaurs/velociraptor-second-toe-i2i-mask-v30.png",
+  "comparisonImage": "assets/dinosaurs/velociraptor-mongoliensis-second-toe-i2i-comparison-v30.png",
+  "reviewSheet": "assets/dinosaurs/velociraptor-second-toe-i2i-v30-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/velociraptor-second-toe-i2i-v30-crops.png",
+  "decision": "diagnostic_only",
+  "selectedLabel": "seed 2026071011 d0.10",
+  "editMode": "velociraptor_second_toe_topology",
+  "outputs": [
+    {
+      "label": "seed 2026071011 d0.06",
+      "image": "tools/comfyui/outputs/velociraptor_second_toe_topology_v30_custom_velociraptor-mongoliensis_seed2026071011_d06.png"
+    },
+    {
+      "label": "seed 2026071012 d0.06",
+      "image": "tools/comfyui/outputs/velociraptor_second_toe_topology_v30_custom_velociraptor-mongoliensis_seed2026071012_d06.png"
+    },
+    {
+      "label": "seed 2026071011 d0.10",
+      "image": "tools/comfyui/outputs/velociraptor_second_toe_topology_v30_custom_velociraptor-mongoliensis_seed2026071011_d10.png"
+    },
+    {
+      "label": "seed 2026071012 d0.10",
+      "image": "tools/comfyui/outputs/velociraptor_second_toe_topology_v30_custom_velociraptor-mongoliensis_seed2026071012_d10.png"
+    },
+    {
+      "label": "seed 2026071011 d0.14",
+      "image": "tools/comfyui/outputs/velociraptor_second_toe_topology_v30_custom_velociraptor-mongoliensis_seed2026071011_d14.png"
+    },
+    {
+      "label": "seed 2026071012 d0.14",
+      "image": "tools/comfyui/outputs/velociraptor_second_toe_topology_v30_custom_velociraptor-mongoliensis_seed2026071012_d14.png"
+    }
+  ],
+  "reasons": [
+    "the tight second-toe mask preserves the v9 whole body, head, feathered arms, tail, and leg count",
+    "the generated foot changes remain too subtle or smear the local toe detail rather than clearly proving attached second-toe topology",
+    "v9 remains the first candidate until a structure-aware foot route improves the sickle claw without toe drift"
+  ],
+  "keepCurrentPrimary": "assets/dinosaurs/velociraptor-mongoliensis-small-sickle-imagegen-v9.png",
+  "nextRoute": "Use a stronger line/depth foot control or dromaeosaur-specific conditioning; do not promote local foot edits unless close crops prove one raised second-toe claw is attached and walking toes remain grounded."
+}

@@ -1,0 +1,21 @@
+{
+  "taxonId": "triceratops-horridus",
+  "experiment": "p2_v28_v30_antirhino_prompt_candidates",
+  "currentPrimary": "assets/dinosaurs/triceratops-horridus-allfeet-lora-i2i-comparison-v22.png",
+  "selectedReviewHold": "assets/dinosaurs/triceratops-horridus-imagegen-v28-source-candidate.png",
+  "comparisonReviewHold": "assets/dinosaurs/triceratops-horridus-imagegen-v30-source-candidate.png",
+  "comparisonReject": "assets/dinosaurs/triceratops-horridus-imagegen-v29-source-candidate.png",
+  "reviewSheet": "assets/dinosaurs/triceratops-p2-v28-v30-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/triceratops-p2-v28-v30-crops.png",
+  "decision": "review_hold",
+  "reason": "V28 is the best new project-owned prompt candidate because it keeps exactly three facial horns, a skull-attached frill, a long tail, closed beak, and visible non-hoofed toes. It still does not replace v22 because the torso is rounded and mildly rhinoceros-like. V30 is similar but the frill rim is more decorative. V29 should be a reject reference because the body is rounder and shoulder-heavy.",
+  "nextRoute": "Use v28 or v30 only as source/reference holds. The next useful route should lock a lower elongated ceratopsian torso and toe topology, then preserve the strong head/frill/horn read with local i2i or a ceratopsian LoRA.",
+  "rejectIfPromoting": [
+    "torso, shoulder mass, or feet read as rhinoceros-like",
+    "frill attaches to shoulders, back, or torso instead of skull",
+    "mouth opens or teeth appear",
+    "horn count is not exactly two brow horns plus one nasal horn",
+    "feet become hoof-like or hide toe separation",
+    "tail is cropped, hidden, or short"
+  ]
+}

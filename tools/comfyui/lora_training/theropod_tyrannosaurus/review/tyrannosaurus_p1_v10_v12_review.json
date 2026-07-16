@@ -1,0 +1,21 @@
+{
+  "taxonId": "tyrannosaurus-rex",
+  "experiment": "p1_v10_v12_prompt_candidates",
+  "currentPrimary": "assets/dinosaurs/tyrannosaurus-rex-twofinger-hand-i2i-v4.png",
+  "selectedReviewHold": "assets/dinosaurs/tyrannosaurus-rex-imagegen-v12-source-candidate.png",
+  "selectedRejectReferences": [
+    "assets/dinosaurs/tyrannosaurus-rex-imagegen-v10-source-candidate.png",
+    "assets/dinosaurs/tyrannosaurus-rex-imagegen-v11-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/tyrannosaurus-p1-v10-v12-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/tyrannosaurus-p1-v10-v12-crops.png",
+  "decision": "keep_current_v4",
+  "reason": "V12 is the most useful fresh prompt-only comparison because the hand is more visible, but it enlarges the arm and exaggerates the fingers enough to risk allosaur-like drift. V10 and V11 keep good body silhouettes but the hands can read as long, ambiguous, or three-pronged. Keep the current v4 i2i seed first until a candidate proves tiny-arm scale and exactly two compact fingers together.",
+  "rejectIfPromoting": [
+    "forelimbs become medium-length or allosaur-like",
+    "visible hand shows a third finger, extra finger nub, or long dangling claws",
+    "hands are hidden enough to block two-finger review",
+    "skull develops horn-like brow spikes or fantasy crests",
+    "feet, tail, or hind-leg count are cropped or hidden"
+  ]
+}

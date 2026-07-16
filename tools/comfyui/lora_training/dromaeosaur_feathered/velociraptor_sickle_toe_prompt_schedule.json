@@ -1,0 +1,26 @@
+{
+  "datasetId": "velociraptor_sickle_toe_v11",
+  "trigger": "velociraptor sickle toe candidate",
+  "purpose": "Generate stricter whole-body Velociraptor candidates that keep a non-bird toothed snout and make the raised second-toe sickle claw look attached, modest, and grounded.",
+  "basePositive": "museum-quality realistic paleoart, full-body lateral side profile of Velociraptor mongoliensis, one small turkey-sized feathered dromaeosaur, Late Cretaceous Mongolian desert plain, long stiff straight tail held horizontally, narrow elongated dinosaur snout with visible small teeth, not a bird beak, dense brown downy body feathers, folded feathered forelimbs tucked close to the ribs with small clawed hands, exactly two hind legs, both feet visible on dry ground, three slender walking toes on each foot, one modest raised sickle claw attached to the second toe, the sickle claw is small and curved upward from the inner toe, natural daylight, full animal in frame",
+  "baseNegative": "modern bird head, bird beak, ostrich body, eagle talons, giant hook talons, oversized sickle claw, detached floating claw, claw crescent separated from toe, extra toe claws, generic bird feet, naked scaly movie raptor, giant monster raptor, human-sized body, spread wings, flying wings, missing forelimbs, missing feet, hidden feet, cropped feet, cropped tail, extra legs, duplicate limbs, duplicate tail, text, labels, logo, watermark, signature",
+  "reviewBeforeTraining": true,
+  "prompts": [
+    {
+      "id": "attached_modest_sickle_side",
+      "variation": "left-facing neutral walking side profile, near foot planted with two walking toes touching the ground and a small raised sickle claw visibly attached to the inner second toe"
+    },
+    {
+      "id": "toothed_snout_grounded_feet",
+      "variation": "closed narrow toothed dinosaur snout, folded feathered hands visible below the chest, both feet sharply visible on open dry ground with no floating claws"
+    },
+    {
+      "id": "small_scale_feathered_toes",
+      "variation": "small animal scale beside low desert shrubs, dense downy feathers, long stiff tail, modest second-toe sickle claw smaller than the walking toes"
+    },
+    {
+      "id": "reference_card_sickle_toe",
+      "variation": "clean educational reference pose, calm full-body side view, feet separated for anatomy review, sickle claw attached to the raised second toe rather than floating beside the foot"
+    }
+  ]
+}

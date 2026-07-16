@@ -1,0 +1,26 @@
+{
+  "taxonId": "triceratops-horridus",
+  "experiment": "p8_v46_v48_antirhino_prompt_review",
+  "selectedPrimary": "assets/dinosaurs/triceratops-horridus-imagegen-v43-source-candidate.png",
+  "reviewHolds": [
+    "assets/dinosaurs/triceratops-horridus-imagegen-v46-source-candidate.png",
+    "assets/dinosaurs/triceratops-horridus-imagegen-v48-source-candidate.png",
+    "assets/dinosaurs/triceratops-horridus-imagegen-v41-source-candidate.png"
+  ],
+  "rejectReferences": [
+    "assets/dinosaurs/triceratops-horridus-imagegen-v47-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/triceratops-p8-v46-v48-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/triceratops-p8-v46-v48-crops.png",
+  "decision": "keep_v43_first_add_v46_v48_holds_and_v47_reject",
+  "reason": "The P8 prompt pass did not produce a clear replacement for v43. V46 is a near-duplicate-style hold with useful familiar Triceratops cues, but its rounded torso and foot details do not clearly improve the current first candidate. V48 has a good full silhouette and long tail but still needs toe and body-mass review. V47 is kept as a reject reference because its foot and leg read is weaker despite a strong head and frill.",
+  "rejectIfPromoting": [
+    "torso, shoulder mass, or feet read as rhinoceros-like",
+    "body is a round mammal barrel rather than low elongated ceratopsian form",
+    "frill attaches to shoulders, back, or torso instead of skull",
+    "mouth opens or teeth appear",
+    "horn count is not exactly two brow horns plus one nasal horn",
+    "feet become hoof-like or hide toe separation",
+    "tail is cropped, hidden, or tiny"
+  ]
+}

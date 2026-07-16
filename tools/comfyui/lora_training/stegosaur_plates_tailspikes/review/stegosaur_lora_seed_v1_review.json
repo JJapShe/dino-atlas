@@ -1,0 +1,23 @@
+{
+  "datasetId": "stegosaur_plates_tailspikes_v1",
+  "runId": "stegosaur_lora_seed_v1",
+  "date": "2026-06-23",
+  "source": "tools/comfyui/outputs/stegosaur_lora_seed_v1-results.json",
+  "contactSheet": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stegosaur_lora_seed_v1_rejected_contact_sheet.png",
+  "reviewDecision": "reject_all_for_training",
+  "summary": "Prompt-only RealVisXL did not understand the Stegosaurus plate/thagomizer gate even with a strict trigger and negative prompt. The four smoke outputs drifted into theropod or generic dinosaur body plans, so none should enter the stegosaur_plates_tailspikes LoRA seed set.",
+  "primaryRejectReasons": [
+    "dorsal plates are weak, small, spiny, or missing instead of broad separated Stegosaurus plates",
+    "body plans drift toward theropod or generic bipedal dinosaurs",
+    "four-spike thagomizer is missing or not countable",
+    "quadrupedal Stegosaurus silhouette is not reliable",
+    "plate rows do not show clear broad alternating bony plates with visible gaps"
+  ],
+  "reviewedPromptIds": [
+    "side_profile_plate_gap_01",
+    "side_profile_plate_gap_02",
+    "low_head_walk_01",
+    "tailroom_thagomizer_01"
+  ],
+  "nextRoute": "Do not use prompt-only RealVisXL generations as training images for this dataset. Expand from reviewed internal plate/thagomizer guides and feature-specific candidates, or test an Illustrious-compatible branch with the public Stegosaurus LoRA only as a separate comparison route."
+}

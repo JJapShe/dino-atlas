@@ -1,0 +1,45 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "v6_clean_guide_ipcontrol_v54_v55",
+  "currentPrimary": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "referenceImage": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "controlGuide": "assets/dinosaurs/stegosaurus-stenops-plate-topology-guide-clean-v52.png",
+  "v54Rejection": "assets/dinosaurs/stegosaurus-stenops-v6-clean-guide-ipcontrol-rejected-v54.png",
+  "v55Rejection": "assets/dinosaurs/stegosaurus-stenops-v6-clean-guide-ipcontrol-rejected-v55.png",
+  "reviewSheet": "assets/dinosaurs/stegosaurus-v6-clean-guide-ipcontrol-v54-v55-rejection-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-v6-clean-guide-ipcontrol-v54-v55-rejection-crops.png",
+  "previousGuideOnlyGate": "assets/dinosaurs/stegosaurus-plate-topology-control-v52-v53-rejection-crops.png",
+  "decision": "diagnostic_only",
+  "v54": {
+    "seeds": [
+      2026070321,
+      2026070322
+    ],
+    "ipWeights": [
+      0.28,
+      0.38
+    ],
+    "controlStrengths": [
+      0.34
+    ],
+    "controlEnd": 0.56,
+    "reason": "Low IP-Control naturalizes the image but loses Stegosaurus plate and thagomizer identity."
+  },
+  "v55": {
+    "seeds": [
+      2026070323,
+      2026070324
+    ],
+    "ipWeights": [
+      0.55
+    ],
+    "controlStrengths": [
+      0.42,
+      0.54
+    ],
+    "controlEnd": 0.52,
+    "reason": "Higher reference weight preserves some texture, but plates fuse into fan/sail shapes and tail-spike evidence fails."
+  },
+  "keepCurrentPrimary": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "nextRoute": "A Stegosauridae plate LoRA or plate-row-specific conditioning is needed; v6+clean-guide IP-Control alone does not preserve natural representative quality and exact plate/thagomizer gates together."
+}

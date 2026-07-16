@@ -1,0 +1,809 @@
+{
+  "datasetId": "dromaeosaur_feathered_v1",
+  "trigger": "dromaeosaur_feathered",
+  "taxa": [
+    "Velociraptor mongoliensis",
+    "small feathered dromaeosaurid"
+  ],
+  "licensePolicy": "Only project-internal AI-generated images and hand-authored guides are allowed as sources. External museum/science material is reference-only, not training data.",
+  "items": [
+    {
+      "id": "velociraptor_imagegen_v63_dark_speckled_plumage_seed",
+      "role": "train_seed",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v63-source-candidate.png",
+      "caption": "dromaeosaur_feathered, Velociraptor mongoliensis, small feathered dromaeosaur, full body lateral side view, narrow elongated toothed non-beak dinosaur snout, compact folded feathered forelimbs held close to ribs, dark charcoal and umber speckled body plumage, pale cream throat and belly, small rust-orange facial mask, narrow pale tail bands, long stiff balancing tail fully visible, exactly two hind legs, visible feet with attached modest raised second-toe sickle claw cues, dry Late Cretaceous Mongolian desert ground, natural daylight, no text, no watermark",
+      "strengths": [
+        "current app first candidate after P8 crop review",
+        "stronger gallery color separation than previous v56",
+        "keeps a toothed non-beak head, compact folded arms, feathered body, long stiff tail, and two hind legs together"
+      ],
+      "risks": [
+        "exact two-walking-toes plus raised-second-toe topology is still count-level rather than final",
+        "near sickle claw can still look slightly hook-like in close crop",
+        "future foot-local i2i should preserve the v63 plumage while reducing hook exaggeration"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v65_nonbird_head_color_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v65-source-candidate.png",
+      "caption": "review hold only, P9 Velociraptor candidate with less bird-like toothed dromaeosaur head, long stiff tail, dark speckled plumage, rust facial streak, and useful full-body side silhouette, but the raised second-toe sickle claw remains too large for promotion",
+      "strengths": [
+        "best P9 candidate for non-bird head and full-tail side silhouette",
+        "useful dark speckled, cream-flecked, rust-face color comparison",
+        "possible source for a future foot-local i2i pass"
+      ],
+      "risks": [
+        "raised sickle claw still reads too large and hook-like in close crop",
+        "exact two-walking-toes plus attached raised second toe is not proven",
+        "keep outside positive LoRA training unless a localized foot pass fixes the toe gate"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v68_best_p10_color_head_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v68-source-candidate.png",
+      "caption": "review hold only, P10 Velociraptor candidate with non-bird toothed dromaeosaur head, dark speckled plumage, rust face, compact folded arms, barred tail, and less-overbuilt feet than v67/v69, but raised second-toe claw is still too large for promotion",
+      "strengths": [
+        "best P10 balance of toothed non-beak head, dark speckled plumage, folded arms, and barred tail",
+        "feet are less overbuilt than v67 and v69",
+        "useful color/head reference for future foot-local i2i or control"
+      ],
+      "risks": [
+        "raised second-toe sickle claw still reads too large and hook-like at crop scale",
+        "exact two grounded walking toes plus one modest attached raised toe is not proven",
+        "must stay outside positive LoRA training until foot topology is fixed"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v69_dark_freckle_color_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v69-source-candidate.png",
+      "caption": "review hold only, P10 Velociraptor candidate with stable dark freckled body, rust face, and long banded tail, but near raised claw grows into a large hook-like talon",
+      "strengths": [
+        "useful dark freckled color and long-tail reference",
+        "head remains toothed and less bird-beak-like",
+        "body plumage remains distinct from plain brown gallery candidates"
+      ],
+      "risks": [
+        "near sickle claw is too large and hook-like",
+        "foot topology remains unsafe for promotion",
+        "use only as secondary color/head reference"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v67_wing_hook_reject",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v67-source-candidate.png",
+      "caption": "reject reference only, P10 Velociraptor candidate with useful toothed head and speckled plumage but wing-fan-like forelimb and oversized hook sickle claws",
+      "strengths": [
+        "documents that good head/plumage can still hide wing and hook-claw failure",
+        "useful negative comparison for future prompt and i2i routes"
+      ],
+      "risks": [
+        "folded forelimb reads too much like a wing fan",
+        "both raised sickle claws become oversized hooks",
+        "unsafe as representative or positive training material"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v64_hook_wing_reject",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v64-source-candidate.png",
+      "caption": "reject reference only, P9 Velociraptor candidate with strong dark speckled color and toothed head but oversized hook-like raised claw and wing-fan forelimb risk",
+      "strengths": [
+        "documents a tempting color improvement failure mode",
+        "toothed head and dark plumage are useful for comparison"
+      ],
+      "risks": [
+        "near raised claw overbuilds into a large hook",
+        "folded forelimb can read as a broad wing fan",
+        "unsafe as positive training material"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v66_hand_claw_reject",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v66-source-candidate.png",
+      "caption": "reject reference only, P9 Velociraptor candidate with distinct rust-ground scene and dark speckled plumage but long hand-like forelimb fingers and oversized raised claws",
+      "strengths": [
+        "useful red-ground and rust-face color contrast reference",
+        "full body and tail remain visible"
+      ],
+      "risks": [
+        "forelimb fingers become too long and hand-like",
+        "raised toe claws remain oversized",
+        "unsafe as positive training material"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v60_cool_color_hook_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v60-source-candidate.png",
+      "caption": "review hold only, P8 Velociraptor candidate with cool slate-blue and charcoal plumage plus toothed head, but overbuilt hook-like feet",
+      "strengths": [
+        "useful cool-color comparison",
+        "toothed non-beak head remains readable"
+      ],
+      "risks": [
+        "both feet overbuild into large hook claws",
+        "unsafe as positive training material"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v61_rust_color_wing_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v61-source-candidate.png",
+      "caption": "review hold only, P8 Velociraptor candidate with useful rust plumage and barred tail color, but wing-fan forelimb and large claw risk",
+      "strengths": [
+        "useful warm rust and barred-tail color comparison",
+        "head remains mostly toothed and non-beak"
+      ],
+      "risks": [
+        "folded forelimb reads too wing-fan-like",
+        "sickle claw remains too large for positive training"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v62_dark_color_hook_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v62-source-candidate.png",
+      "caption": "review hold only, P8 Velociraptor candidate with strong dark speckled plumage, rust face, and toothed head, but dramatic hook-claw feet",
+      "strengths": [
+        "strong dark-color and rust-face comparison",
+        "toothed dromaeosaur head and compact arms are useful"
+      ],
+      "risks": [
+        "feet overcorrect into dramatic hook claws",
+        "unsafe as positive training material"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v56_previous_modest_toe_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v56-source-candidate.png",
+      "caption": "previous review hold only, Velociraptor mongoliensis v56 with toothed non-beak head, feathered body, folded forelimbs, long stiff tail, and modest attached raised-toe cues, demoted below v63 because its plain brown plumage is less distinct in the gallery",
+      "strengths": [
+        "previous app first candidate after P6 crop review",
+        "safe comparison for toothed head, folded forelimbs, long tail, and modest toe cue"
+      ],
+      "risks": [
+        "plain brown coloration is less distinct than v63",
+        "exact two-walking-toes plus raised-second-toe topology remains count-level rather than final"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v57_curled_claw_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v57-source-candidate.png",
+      "caption": "review hold only, P7 Velociraptor mongoliensis candidate with good feathered body, toothy non-beak head, full stiff tail, and clearer feet, but both raised claws trend curled and hook-like",
+      "strengths": [
+        "keeps a small feathered dromaeosaur body, toothed non-beak head, folded forelimbs, and full tail",
+        "foot area is clearer than v56 at thumbnail scale"
+      ],
+      "risks": [
+        "both raised sickle claws trend curled and hook-like",
+        "not safer than v56 for positive training",
+        "exact two-walking-toes plus one attached raised second-toe topology remains unresolved"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v59_head_hold_hook_risk_feet",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v59-source-candidate.png",
+      "caption": "review hold only, P7 Velociraptor mongoliensis candidate with good toothed head and side silhouette, but raised claws are too hook-like for promotion",
+      "strengths": [
+        "good toothed non-beak head and full feathered side silhouette",
+        "folded forelimbs and long tail remain readable"
+      ],
+      "risks": [
+        "raised claws are too hook-like and dramatic for promotion",
+        "foot topology does not beat v56",
+        "unsafe as a positive seed without localized foot correction"
+      ]
+    },
+    {
+      "id": "velociraptor_small_sickle_v9",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-small-sickle-imagegen-v9.png",
+      "caption": "review hold only, previous app-first Velociraptor mongoliensis v9 candidate with small feathered dromaeosaur body, toothy non-beak snout, folded forelimbs, long stiff tail, and restrained raised second-toe cue, now superseded by v56 for app-scale foot/head balance",
+      "strengths": [
+        "previous best app-scale compromise among toothed snout, feathered body, folded forelimbs, full tail, and smaller sickle-claw cue",
+        "one tail and two hind legs are readable",
+        "teeth reduce modern-bird beak drift"
+      ],
+      "risks": [
+        "head/forelimb and exact foot topology are softer than v56 in P6 crop review",
+        "exact toe anatomy still needs reference review",
+        "forelimb feather shape can still read wing-like at close crop",
+        "plumage texture and tail stiffness are count-level rather than final"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v54_clear_claw_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v54-source-candidate.png",
+      "caption": "review hold only, P6 Velociraptor mongoliensis candidate with good toothed head, feathered body, long tail, visible raised-toe claws, and slightly dramatic claw scale",
+      "strengths": [
+        "good head/body and foot visibility",
+        "raised second-toe claws are clearer than v53",
+        "useful comparison for visible but not black sickle-claw prompting"
+      ],
+      "risks": [
+        "claws remain slightly dramatic compared with v56",
+        "foot topology still needs close reference review",
+        "keep outside positive training unless human review prefers stronger claw visibility"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v55_clear_claw_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v55-source-candidate.png",
+      "caption": "review hold only, P6 Velociraptor mongoliensis candidate with visible raised toes but less balanced head/hand and claw scale than v56",
+      "strengths": [
+        "raised-toe cue is visible on both feet",
+        "full body, feathered form, and tail remain clear"
+      ],
+      "risks": [
+        "claw size is less controlled than v56",
+        "head and folded hand balance are less suitable for a first representative",
+        "keep as comparison only"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v53_subtle_toe_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v53-source-candidate.png",
+      "caption": "review hold only, P6 Velociraptor mongoliensis candidate with the smallest raised-toe scale but a too-faint second-toe cue for first-image use",
+      "strengths": [
+        "avoids large black hook-claw drift",
+        "keeps a full feathered dromaeosaur side profile and toothed head"
+      ],
+      "risks": [
+        "raised second-toe cue becomes too faint at app scale",
+        "foot topology cannot be proven clearly enough for promotion",
+        "use as subtle-claw comparison only"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v51_modest_claw_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v51-source-candidate.png",
+      "caption": "review hold only, P6 Velociraptor mongoliensis candidate with useful modest-claw direction but softer near-foot and forelimb detail than v56",
+      "strengths": [
+        "small-claw direction is useful",
+        "keeps full side-profile body, tail, and toothy head"
+      ],
+      "risks": [
+        "near foot and folded forelimb details are softer than v56",
+        "raised second-toe topology remains too ambiguous for promotion"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v52_hook_risk_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v52-source-candidate.png",
+      "caption": "review hold only, P6 Velociraptor mongoliensis candidate with useful toothy head/body cues but raised claws return to large hook shapes",
+      "strengths": [
+        "good toothy non-beak head and feathered body",
+        "documents the failure mode when asking for clearer raised claws"
+      ],
+      "risks": [
+        "sickle claws are too hook-like for promotion",
+        "unsafe as positive training material"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v38_modest_sickle_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v38-source-candidate.png",
+      "caption": "review hold only, prompt-only Velociraptor mongoliensis v38 candidate with toothed non-beak snout, feathered body, folded forelimbs, long stiff tail, and a subtler attached raised second-toe sickle cue on the near foot",
+      "strengths": [
+        "best new prompt-only source for a subtler attached sickle-toe cue",
+        "keeps a toothy non-beak snout, feathered body, folded forelimbs, and full tail better than the oversized-hook v36/v37 failures",
+        "useful as a visual reference for the next foot-topology ControlNet or i2i route"
+      ],
+      "risks": [
+        "near-foot crop is still not strong enough for final approval",
+        "far foot and exact two-walking-toes plus raised-second-toe topology are not proven",
+        "forelimb hand claws can read hook-like, so this must stay below v9 and outside positive LoRA training"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v39_closed_snout_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v39-source-candidate.png",
+      "caption": "review hold only, prompt-only Velociraptor mongoliensis v39 candidate with closed toothed non-beak snout, dense feathered body, folded forelimbs, long stiff tail, and restrained raised-claw cue, foot topology not final-proof",
+      "strengths": [
+        "best fresh whole-body balance from the v39-v41 pass",
+        "closed toothed snout reduces open-mouth monster and modern-bird-beak risk",
+        "dense plumage, folded forelimbs, long tail, and small body remain readable"
+      ],
+      "risks": [
+        "both feet still do not prove two grounded walking toes plus one attached raised second-toe sickle claw",
+        "raised claw cue is restrained enough that it can become ambiguous at crop scale",
+        "must stay below v9 and outside positive LoRA training until foot topology is solved"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v43_attached_claw_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v43-source-candidate.png",
+      "caption": "review hold only, prompt-only Velociraptor mongoliensis v43 candidate with toothy non-beak head, small feathered dromaeosaur body, long stiff tail, attached modest sickle-claw cue, folded forelimb may read wing-like and foot topology is not final-proof",
+      "strengths": [
+        "best P3 whole-body balance of toothed non-beak head, feathered body, stiff tail, and attached modest claw cue",
+        "useful as a copyright-safe source for localized foot or forelimb i2i",
+        "reduces modern bird head drift compared with older bird-like candidates"
+      ],
+      "risks": [
+        "folded forelimb can read too wing-like at crop scale",
+        "both feet still do not prove two grounded walking toes plus one attached raised second-toe sickle claw",
+        "must stay outside positive LoRA training until head, wing, and foot topology gates pass together"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v44_foot_visibility_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v44-source-candidate.png",
+      "caption": "review hold only, prompt-only Velociraptor mongoliensis v44 candidate with the most visible P3 foot/sickle area but oversized hook-like near claw risk",
+      "strengths": [
+        "foot and sickle-claw area is highly visible for crop review",
+        "body remains small and feathered with a long stiff tail"
+      ],
+      "risks": [
+        "near raised claw can read as an oversized hook rather than a modest attached second toe",
+        "unsafe as a positive seed without local foot correction"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v47_attached_sickle_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v47-source-candidate.png",
+      "caption": "review hold only, prompt-only Velociraptor mongoliensis v47 candidate with closed toothy non-beak snout, feathered dromaeosaur body, folded forelimbs, long stiff tail, and attached near-foot sickle-claw cue; claw remains slightly large and far-foot topology is not final-proof",
+      "strengths": [
+        "best P4 whole-body balance of closed toothed head, feathered body, folded forelimbs, stiff tail, and attached sickle cue",
+        "useful as a copyright-safe source hold for localized foot or forelimb i2i",
+        "reduces open-mouth and modern bird-head drift compared with several earlier candidates"
+      ],
+      "risks": [
+        "near sickle claw is still slightly too large for final promotion",
+        "far foot does not prove two grounded walking toes plus one attached raised second-toe sickle claw",
+        "must stay outside positive LoRA training until head, wing, and foot topology gates pass together"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v50_hook_risk_review_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v50-source-candidate.png",
+      "caption": "review hold only, prompt-only Velociraptor mongoliensis v50 candidate with strong toothed non-beak head, feathered dromaeosaur body, compact folded forelimbs, full stiff tail, and visible feet, but large dark hook-like sickle claws are not final-proof",
+      "strengths": [
+        "best P5 whole-body balance of toothed head, feathered body, folded forelimbs, and full stiff tail",
+        "useful as a copyright-safe source hold for localized foot i2i or topology control",
+        "reduces open-mouth and modern bird-head drift compared with several earlier candidates"
+      ],
+      "risks": [
+        "raised second-toe claws remain too large, dark, and hook-like for promotion",
+        "both feet still do not prove modest attached second-toe topology",
+        "must stay outside positive LoRA training until black-hook drift is corrected"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v48_black_hook_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v48-source-candidate.png",
+      "caption": "review hold only, prompt-only Velociraptor mongoliensis v48 candidate with useful toothed head and full feathered body, but oversized dark hook-like raised claws",
+      "strengths": [
+        "good toothy non-beak head and full-body side profile",
+        "visible feet and tail are useful for comparison"
+      ],
+      "risks": [
+        "both sickle claws read as oversized black hooks",
+        "unsafe as positive training material because it reinforces hook-claw overcorrection"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v49_wing_hiddenfoot_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v49-source-candidate.png",
+      "caption": "review hold only, prompt-only Velociraptor mongoliensis v49 candidate with slightly subtler sickle cue but wing-like forelimb and hidden-foot risk",
+      "strengths": [
+        "claw cue is slightly less extreme than v48",
+        "body and tail remain readable"
+      ],
+      "risks": [
+        "folded forelimb reads too wing-like at crop scale",
+        "one foot is too hidden to prove exact two-walking-toes plus raised-second-toe topology",
+        "unsafe as positive training material"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v45_attached_sickle_secondary_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v45-source-candidate.png",
+      "caption": "review hold only, prompt-only Velociraptor mongoliensis v45 candidate with good toothy head identity and visible attached sickle-claw cues; folded forelimb mass can still read wing-like and foot topology is not final-proof",
+      "strengths": [
+        "good toothed non-beak head identity and stable small feathered dromaeosaur body",
+        "visible foot and sickle-claw cues are useful for crop comparison"
+      ],
+      "risks": [
+        "rounded folded forelimb mass can still read too wing-like at crop scale",
+        "unsafe as a positive seed without exact toe-topology proof"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v46_openmouth_foot_diagnostic_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v46-source-candidate.png",
+      "caption": "reject reference only, prompt-only Velociraptor mongoliensis v46 candidate with useful foot visibility but open mouth and paired hook claws risk monster-like and oversized-talon drift",
+      "strengths": [
+        "documents a prompt route where foot and sickle-claw areas become highly visible"
+      ],
+      "risks": [
+        "open mouth and expression push toward monster-like presentation",
+        "paired raised hooks are too dramatic and could reinforce oversized talons",
+        "unsafe as positive training material"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v58_overbuilt_foot_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v58-source-candidate.png",
+      "caption": "reject reference only, P7 Velociraptor mongoliensis candidate with useful toothy head/body cues but crowded overbuilt feet, oversized claws, and unclear toe count",
+      "strengths": [
+        "records a prompt failure where the head/body remains usable while foot topology overbuilds"
+      ],
+      "risks": [
+        "feet become crowded and unclear in toe count",
+        "raised claws are oversized and duplicated-looking",
+        "unsafe as positive training material because it reinforces foot-count and hook-claw errors"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v41_front_hook_risk_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v41-source-candidate.png",
+      "caption": "review hold only, prompt-only Velociraptor v41 candidate with useful foot visibility and stable feathered body, but near raised claw can read as oversized front hook",
+      "strengths": [
+        "keeps a stable feathered dromaeosaur body and long tail",
+        "foot area is visible enough for close review"
+      ],
+      "risks": [
+        "near raised claw risks reading as a large front hook rather than modest attached second toe",
+        "not safe as positive training material"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v40_open_mouth_hook_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v40-source-candidate.png",
+      "caption": "reject reference only, prompt-only Velociraptor v40 shows visible raised claws but open mouth, eye expression, and paired hook claws are too dramatic",
+      "strengths": [
+        "documents a prompt route where raised claws become visible on both feet"
+      ],
+      "risks": [
+        "open mouth and eye expression become too monster-like for representative atlas use",
+        "paired hook claws are too dramatic and risk reinforcing oversized talons",
+        "unsafe as positive training material"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v42_hook_risk_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v42-source-candidate.png",
+      "caption": "reject reference only, prompt-only Velociraptor mongoliensis v42 candidate with useful toothy head and full body but raised claws look oversized and talon-like",
+      "strengths": [
+        "records a prompt route with good toothed head identity and full side-profile body"
+      ],
+      "risks": [
+        "raised claws can read as oversized talons or giant hooks",
+        "unsafe as positive training material because it reinforces the sickle-claw overcorrection failure"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v36_oversized_claw_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v36-source-candidate.png",
+      "caption": "reject reference only, prompt-only Velociraptor v36 overcorrected the sickle-toe requirement into giant hook-like claws",
+      "strengths": [
+        "keeps a toothy head and feathered dromaeosaur body for comparison"
+      ],
+      "risks": [
+        "raised sickle claws read as oversized hooks rather than attached second toes",
+        "unsafe as a positive sample because it would reinforce the exact failure mode under review"
+      ]
+    },
+    {
+      "id": "velociraptor_imagegen_v37_large_hook_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v37-source-candidate.png",
+      "caption": "reject reference only, prompt-only Velociraptor v37 keeps some head and body cues but turns both sickle claws into large decorative hooks",
+      "strengths": [
+        "records the result of asking for more visible attached second-toe claws"
+      ],
+      "risks": [
+        "both visible sickle claws are too large and decorative",
+        "foot topology remains unsafe for promotion or LoRA training"
+      ]
+    },
+    {
+      "id": "velociraptor_background_v1",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-background-v1.png",
+      "caption": "reject reference only, small feathered Velociraptor-like body that preserves side profile and tail but reads too modern-bird-like in the head for positive dromaeosaur training",
+      "strengths": [
+        "clean count-level body silhouette",
+        "one tail and two hind legs are readable",
+        "folded forelimbs stay close to the body"
+      ],
+      "risks": [
+        "head and beak silhouette read too modern-bird-like",
+        "sickle claw is weak",
+        "unsafe as train_seed because it would reinforce bird-head drift"
+      ]
+    },
+    {
+      "id": "velociraptor_featherband_v3",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-featherband-inpaint-v3.png",
+      "caption": "reject reference only, feather-band inpaint with useful body and tail continuity but bird-like head and weak raised second-toe sickle claw",
+      "strengths": [
+        "more explicit feather-band signal than the background candidate",
+        "keeps clean one-tail silhouette"
+      ],
+      "risks": [
+        "head still reads too bird-like for a positive Velociraptor seed",
+        "feet and sickle claw are still not strong enough",
+        "would reinforce weak diagnostic foot cues if used for LoRA training"
+      ]
+    },
+    {
+      "id": "velociraptor_ipadapter_clean_v2",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-ipadapter-clean-v2.png",
+      "caption": "reject reference only, clean side-profile dromaeosaur-like body that remains too bird-headed and weak-footed for positive training",
+      "strengths": [
+        "cleaner silhouette and legs",
+        "useful bridge between structure and feather cues"
+      ],
+      "risks": [
+        "head reads too toothless and bird-like",
+        "less dense feathering",
+        "foot anatomy remains too weak for raised second-toe training"
+      ]
+    },
+    {
+      "id": "velociraptor_shape_feathered_clean_v4",
+      "role": "control_reference",
+      "source": "tools/comfyui/ComfyUI/input/dino_guides/velociraptor-mongoliensis_shape_feathered_clean_v4.png",
+      "caption": "control reference only, small feathered dromaeosaur silhouette, long stiff tail, folded feathered forelimbs, two hind legs, raised sickle-claw intent, side profile",
+      "strengths": [
+        "hand-authored diagnostic silhouette",
+        "useful for ControlNet expansion"
+      ],
+      "risks": [
+        "too flat and guide-like for direct LoRA training"
+      ]
+    },
+    {
+      "id": "velociraptor_foot_topology_guide_v1",
+      "role": "control_reference",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-foot-topology-guide-v1.png",
+      "caption": "control reference only, Velociraptor mongoliensis foot topology guide, two long walking toes on each foot plus a raised second-toe sickle claw attached to the foot, full side-profile dromaeosaur body, long stiff tail, folded forelimbs, no floating claw crescents",
+      "strengths": [
+        "locks the raised second-toe sickle claw as attached foot anatomy",
+        "separates walking toes from the raised sickle toe",
+        "useful as ControlNet/depth/line guidance before texture generation"
+      ],
+      "risks": [
+        "diagram-like and not suitable for direct LoRA training",
+        "body and head are schematic rather than representative paleoart"
+      ]
+    },
+    {
+      "id": "velociraptor_identity_bodylock_guide_v1",
+      "role": "control_reference",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-identity-bodylock-guide-v1.png",
+      "caption": "control reference only, Velociraptor mongoliensis identity body-lock guide, narrow toothed non-beak snout, folded feathered forelimbs close to the ribs, dense body plumage, long stiff balancing tail, two hind legs, attached raised second-toe sickle claws on the feet, no bird beak, no spread wings, no floating claw crescents",
+      "strengths": [
+        "locks head, plumage, forelimb, tail, and foot identity cues in one guide",
+        "helps prevent bird-head and generic theropod drift before texture generation",
+        "useful as ControlNet/depth/line guidance together with the focused foot topology guide"
+      ],
+      "risks": [
+        "diagram-like and not suitable for direct LoRA training",
+        "visible red control strokes are intended for structure guidance and human QA only"
+      ]
+    },
+    {
+      "id": "velociraptor_feathered_v3_tailclean",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-feathered-v3-tailclean.png",
+      "caption": "holdout reference, feathered dromaeosaur body with visible feather intent and long tail",
+      "strengths": [
+        "stronger feather impression"
+      ],
+      "risks": [
+        "tail and limb artifacts make it unsafe for training"
+      ]
+    },
+    {
+      "id": "velociraptor_clean_controlnet_v1",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-clean-controlnet-v1.png",
+      "caption": "holdout reference, clean small dromaeosaur silhouette with folded forelimbs",
+      "strengths": [
+        "cleaner silhouette"
+      ],
+      "risks": [
+        "too stylized and feather signal is weak"
+      ]
+    },
+    {
+      "id": "velociraptor_modest_sickle_i2i_v25",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-modest-sickle-i2i-comparison-v25.png",
+      "caption": "holdout comparison only, localized modest sickle-claw i2i over the current v9 Velociraptor candidate",
+      "strengths": [
+        "preserves the v9 body, toothed snout, folded forelimbs, long tail, and two-leg stance",
+        "keeps the sickle-claw cue smaller than the oversized front-hook failures"
+      ],
+      "risks": [
+        "does not clearly improve attached second-toe topology over v9",
+        "should not be promoted without close foot-crop proof"
+      ]
+    },
+    {
+      "id": "velociraptor_less_bird_head_i2i_v27",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-less-bird-head-i2i-comparison-v27.png",
+      "caption": "holdout comparison only, localized head i2i intended to reduce modern-bird eye and beak drift while preserving the v9 body",
+      "strengths": [
+        "slightly reduces the bright modern-bird eye impression",
+        "keeps the main v9 body, tail, and foot gates intact"
+      ],
+      "risks": [
+        "softens head plumage and makes the snout more generic",
+        "does not beat v9 as a primary representative"
+      ]
+    },
+    {
+      "id": "velociraptor_head_micro_i2i_v29",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-head-micro-i2i-comparison-v29.png",
+      "caption": "holdout comparison only, very low-denoise head and snout micro edit over the current v9 Velociraptor candidate",
+      "strengths": [
+        "preserves v9 body, folded forelimbs, tail, two legs, and foot gates",
+        "slightly dampens the modern-bird head read"
+      ],
+      "risks": [
+        "head improvement is too subtle for promotion",
+        "does not address exact dromaeosaur skull proportions or sickle-toe topology"
+      ]
+    },
+    {
+      "id": "velociraptor_plumage_sickle_refined_v1",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-plumage-sickle-refined-v1.png",
+      "caption": "reject reference only, refined plumage and rear-foot sickle cue pass that was demoted after direct identity review because the head reads too bird-like and the raised second-toe claw is still not diagnostic",
+      "strengths": [
+        "records a useful feather-mass and rear-foot cleanup direction",
+        "preserves a simple side-profile body, single tail, and two-leg read"
+      ],
+      "risks": [
+        "head and eye read too modern-bird-like for representative Velociraptor",
+        "rear-foot claw cue is not clear enough to prove raised second-toe topology",
+        "unsafe as positive LoRA material because it would reinforce the bird-head failure mode"
+      ]
+    },
+    {
+      "id": "velociraptor_rearfoot_cleanup_v1",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-rearfoot-cleanup-v1.png",
+      "caption": "reject reference only, rear-foot cleanup i2i that removes a vertical artifact but worsens the bird-head read and still does not prove the attached raised second-toe sickle claw",
+      "strengths": [
+        "documents that narrow rear-foot cleanup can reduce one local artifact without adding obvious extra limbs",
+        "useful negative gate for judging whether local foot cleanup preserves identity"
+      ],
+      "risks": [
+        "toothless beak-like head contradicts the required narrow toothed dromaeosaur snout",
+        "distinctive raised second-toe sickle claw remains weak at app scale",
+        "do not promote or train from this image unless a later crop gate proves both head and foot identity"
+      ]
+    },
+    {
+      "id": "velociraptor_identity_controlnet_v23",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-identity-controlnet-rejected-v23.png",
+      "caption": "reject reference only, identity ControlNet probe that weakens plumage and sickle-toe evidence",
+      "strengths": [
+        "records a whole-body identity-control attempt for comparison"
+      ],
+      "risks": [
+        "weak feathered dromaeosaur identity",
+        "sickle-toe evidence is not reliable enough for training or promotion"
+      ]
+    },
+    {
+      "id": "velociraptor_identity_ipi2i_v24",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-v9-identity-ipi2i-rejected-v24.png",
+      "caption": "reject reference only, v9-source IP-Adapter i2i identity probe that collapses toward flat guide-like art",
+      "strengths": [
+        "preserves some structure from the identity guide"
+      ],
+      "risks": [
+        "too flat and guide-like for app-quality art",
+        "unsafe as LoRA seed because style drift would be reinforced"
+      ]
+    },
+    {
+      "id": "velociraptor_front_hook_rejected_v26",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-front-hook-rejected-v26.png",
+      "caption": "reject reference only, tight front-hook reduction i2i that lengthens the foot and toe read instead of proving attached second-toe topology",
+      "strengths": [
+        "useful negative evidence for overly local hook-reduction masks"
+      ],
+      "risks": [
+        "front foot becomes too long or ambiguous",
+        "does not prove one raised second-toe sickle claw attached to grounded walking toes"
+      ]
+    },
+    {
+      "id": "velociraptor_front_hook_micro_i2i_v28",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-front-hook-micro-i2i-comparison-v28.png",
+      "caption": "reject reference only, micro-denoise front-hook edit that preserves v9 but changes too little to solve the raised-claw gate",
+      "strengths": [
+        "confirms that very low-denoise local masking preserves the overall body"
+      ],
+      "risks": [
+        "does not visibly solve the oversized front-hook issue",
+        "should not be counted as anatomical improvement without foot-crop proof"
+      ]
+    },
+    {
+      "id": "velociraptor_second_toe_topology_i2i_v30",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-second-toe-i2i-comparison-v30.png",
+      "caption": "reject reference only, second-toe topology i2i with a tight local mask that preserves the body but does not solve the attached sickle-claw gate",
+      "strengths": [
+        "documents the strongest recent toe-topology attempt",
+        "keeps whole-body drift low because the mask is local"
+      ],
+      "risks": [
+        "front hook remains too strong",
+        "attached second-toe topology is still not proven",
+        "rear-toe detail can soften"
+      ]
+    },
+    {
+      "id": "velociraptor_identity_bodylock_v31_v32_rejection_sheet",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/velociraptor-identity-v31-v32-rejection-sheet.png",
+      "caption": "reject reference sheet, Velociraptor identity body-lock v31 and low-denoise head-foot v32 experiments that fail to improve the current v9 candidate",
+      "strengths": [
+        "documents why clean body-lock IP-Control and low-denoise head-foot i2i are unsafe as positive samples",
+        "keeps current v9, v31, v32, body-lock guide, and previous v30 foot failure together for review"
+      ],
+      "risks": [
+        "v31 loses feathered dromaeosaur identity and drifts toward scaly generic theropods",
+        "v32 preserves more of v9 but does not improve attached second-toe sickle-claw proof",
+        "contact sheet only, not an individual training image"
+      ]
+    }
+  ],
+  "rejectCriteria": [
+    "naked or scaly movie-raptor body",
+    "giant human-sized monster proportions",
+    "bird beak or modern bird body",
+    "spread flight wings",
+    "missing or duplicate tail",
+    "extra legs or duplicate rear limbs",
+    "feet without a raised sickle-claw cue when visible",
+    "text, logo, signature, border, or lower-corner artifacts",
+    "plumage collapses back to plain samey brown without species-level distinction",
+    "folded forelimbs become large wing fans while color improves",
+    "color-improved candidates with giant hook claws or detached crescent claws"
+  ]
+}

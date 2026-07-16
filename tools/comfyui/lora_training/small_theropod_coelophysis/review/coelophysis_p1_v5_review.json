@@ -1,0 +1,17 @@
+{
+  "taxonId": "coelophysis-bauri",
+  "experiment": "p1_v5_source_candidate",
+  "currentPrimary": "assets/dinosaurs/coelophysis-bauri-slenderneck-smallhands-imagegen-v3.png",
+  "selectedReviewHold": "assets/dinosaurs/coelophysis-bauri-imagegen-v5-source-candidate.png",
+  "reviewSheet": "assets/dinosaurs/coelophysis-p1-v5-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/coelophysis-p1-v5-crops.png",
+  "decision": "review_hold",
+  "reason": "V5 improves visible small forelimbs while keeping them off the ground, with two hind legs, dry feet, an S-curved neck, and a full tail. Keep v3 first because v5 reads slightly heavier in the head/body and exact hand/toe anatomy still needs close review.",
+  "rejectIfPromoting": [
+    "forelimbs touch the ground or read as extra legs",
+    "body becomes bulky raptor, Allosaurus, Tyrannosaurus, lizard, or sauropodomorph-like",
+    "head becomes bird-beaked or feathered",
+    "feet, small hands, or tail are hidden enough to block count review",
+    "scene becomes perched on a branch, log, or wet reed bank"
+  ]
+}

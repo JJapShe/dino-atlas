@@ -1,0 +1,26 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "p8_v90_v92_bony_plate_upward_v_thagomizer",
+  "previousPrimary": "assets/dinosaurs/stegosaurus-stenops-imagegen-v86-source-candidate.png",
+  "selectedCandidate": "assets/dinosaurs/stegosaurus-stenops-imagegen-v92-source-candidate.png",
+  "reviewHolds": [
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v90-source-candidate.png",
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v91-source-candidate.png",
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v86-source-candidate.png",
+    "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png"
+  ],
+  "rejectReferences": [],
+  "reviewSheet": "assets/dinosaurs/stegosaurus-p8-v90-v92-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-p8-v90-v92-crops.png",
+  "decision": "promote_v92_for_bony_plate_material_and_upward_v_tail_spikes",
+  "reason": "V92 is the best P8 response to the user review: the dorsal plates read as separate rust-red and pale-bone rough structures rather than same-color skin, and the thagomizer is closest to four countable spikes rising upward in paired V shapes. V90 and v91 remain review holds because their plate material is useful but the tail-spike count or angle is less safe. V86 remains as the previous body/tail comparison seed.",
+  "nextRoute": "Use v92 as the current app-first candidate and smoke-test seed. Future Stegosaurus passes should preserve its bony plate material and upward V-shaped paired thagomizer while improving exact staggered two-row plate bases and keeping all four feet natural.",
+  "rejectIfPromoting": [
+    "plates share the same leather-like color or texture as the skin",
+    "tail spikes lie horizontally along the ground instead of rising into paired V shapes",
+    "tail tip shows fewer or more than exactly four thagomizer spikes",
+    "tail spikes radiate as a starburst or compass-rose arrangement",
+    "plates become leaf-like, fin-like, scalloped, or a single connected sail",
+    "body drifts toward ankylosaur, turtle, crocodile, or generic low reptile"
+  ]
+}

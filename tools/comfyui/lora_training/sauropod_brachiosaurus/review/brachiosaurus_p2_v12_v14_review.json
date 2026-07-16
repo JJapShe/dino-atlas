@@ -1,0 +1,21 @@
+{
+  "taxonId": "brachiosaurus-altithorax",
+  "experiment": "p2_v12_v14_highshoulder_shorttail_prompt_candidates",
+  "currentPrimary": "assets/dinosaurs/brachiosaurus-altithorax-tail-reduced-i2i-v4.png",
+  "selectedReviewHold": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v13-source-candidate.png",
+  "selectedRejectReferences": [
+    "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v12-source-candidate.png",
+    "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v14-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/brachiosaurus-p2-v12-v14-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/brachiosaurus-p2-v12-v14-crops.png",
+  "decision": "keep_current_v4",
+  "reason": "V13 is the best fresh prompt-only hold because the high-shoulder silhouette, taller forelimbs, rising neck, and four-foot read stay clear. It does not replace v4 because the tail remains long and thin enough to drift toward a diplodocid sauropod. V12 and V14 document the same failure more strongly: good shoulders but an unsafe whip-tail read.",
+  "rejectIfPromoting": [
+    "tail becomes a long thin diplodocid whip or is cropped",
+    "forelimbs and hind limbs become equal height or shoulder drops near hip line",
+    "neck becomes low and horizontal like Apatosaurus/Diplodocus",
+    "feet are hidden, fused, or unclear enough to block four-leg review",
+    "head becomes crocodile-like, toothed, predator-like, or too large"
+  ]
+}

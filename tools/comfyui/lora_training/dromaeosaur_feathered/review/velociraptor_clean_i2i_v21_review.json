@@ -1,0 +1,30 @@
+{
+  "taxon": "velociraptor-mongoliensis",
+  "route": "next_velociraptor_mongoliensis_clean_i2i",
+  "sourceGuide": "assets/dinosaurs/velociraptor-mongoliensis-identity-bodylock-guide-clean-v1.png",
+  "outputs": [
+    {
+      "seed": 2026070242,
+      "denoise": 0.56,
+      "image": "assets/dinosaurs/velociraptor-mongoliensis-clean-i2i-rejected-d56-v21.png",
+      "decision": "diagnostic_only_rejected"
+    },
+    {
+      "seed": 2026070243,
+      "denoise": 0.68,
+      "image": "assets/dinosaurs/velociraptor-mongoliensis-clean-i2i-rejected-d68-v21.png",
+      "decision": "diagnostic_only_rejected"
+    }
+  ],
+  "contactSheet": "assets/dinosaurs/velociraptor-clean-i2i-rejection-sheet-v21.png",
+  "pass": [
+    "clean source removes text-label bleed seen in the previous low-denoise i2i smoke output",
+    "both outputs keep a readable side silhouette and single long tail"
+  ],
+  "fail": [
+    "dense feathered dromaeosaur body and folded feathered forelimbs are not preserved",
+    "raised second-toe sickle claw remains weak or non-diagnostic",
+    "higher denoise improves naturalism but drifts into a generic naked theropod"
+  ],
+  "nextAction": "Use the clean guide as the source for future structure control, but do not promote clean-guide i2i alone. The next useful Velociraptor path needs stronger dromaeosaur feather/foot conditioning, likely ControlNet plus a dromaeosaur LoRA or a prompt/template specialized for feathered dromaeosaurs."
+}

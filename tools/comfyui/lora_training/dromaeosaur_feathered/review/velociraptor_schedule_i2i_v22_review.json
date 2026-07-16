@@ -1,0 +1,36 @@
+{
+  "taxon": "velociraptor-mongoliensis",
+  "route": "next_velociraptor_mongoliensis_schedule_i2i_v22",
+  "script": "tools/comfyui/scripts/run_schedule_i2i_experiment.py",
+  "schedule": "tools/comfyui/lora_training/dromaeosaur_feathered/identity_bodylock_prompt_schedule.json",
+  "outputs": [
+    {
+      "promptId": "identity_bodylock_folded_arm_01",
+      "sourceImage": "assets/dinosaurs/velociraptor-mongoliensis-identity-bodylock-guide-clean-v1.png",
+      "seed": 2026070250,
+      "denoise": 0.62,
+      "image": "assets/dinosaurs/velociraptor-mongoliensis-schedule-i2i-clean-source-rejected-v22.png",
+      "decision": "diagnostic_only_rejected"
+    },
+    {
+      "promptId": "identity_bodylock_head_foot_01",
+      "sourceImage": "assets/dinosaurs/velociraptor-mongoliensis-small-sickle-imagegen-v9.png",
+      "seed": 2026070251,
+      "denoise": 0.34,
+      "image": "assets/dinosaurs/velociraptor-mongoliensis-schedule-i2i-v9source-rejected-v22.png",
+      "decision": "diagnostic_only_rejected"
+    }
+  ],
+  "contactSheet": "assets/dinosaurs/velociraptor-schedule-i2i-rejection-sheet-v22.png",
+  "pass": [
+    "schedule-specific dromaeosaur prompts now drive i2i instead of generic taxon prompts",
+    "both runs execute successfully and avoid source-label text bleed",
+    "v9-source route preserves a natural full-body desert scene"
+  ],
+  "fail": [
+    "clean-guide source still produces mostly naked generic theropod texture",
+    "v9-source low-denoise pass does not improve feathered forelimbs or attached second-toe sickle claw evidence",
+    "neither output beats the current v9 balance of head, tail, feathers, and restrained sickle claws"
+  ],
+  "nextAction": "Keep run_schedule_i2i_experiment.py for future guided i2i batches, but Velociraptor still needs stronger conditioning: dromaeosaur LoRA, foot-specific ControlNet, or a dedicated feather/foot source rather than plain i2i."
+}

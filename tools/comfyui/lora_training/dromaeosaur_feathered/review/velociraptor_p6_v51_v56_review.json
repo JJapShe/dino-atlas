@@ -1,0 +1,27 @@
+{
+  "taxonId": "velociraptor-mongoliensis",
+  "experiment": "p6_v51_v56_modest_sickle_prompt_candidates",
+  "currentPrimary": "assets/dinosaurs/velociraptor-mongoliensis-small-sickle-imagegen-v9.png",
+  "selectedCandidate": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v56-source-candidate.png",
+  "comparisonReviewHolds": [
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v54-source-candidate.png",
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v55-source-candidate.png",
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v53-source-candidate.png",
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v51-source-candidate.png",
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v52-source-candidate.png",
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v50-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/velociraptor-p6-v51-v56-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/velociraptor-p6-v51-v56-crops.png",
+  "decision": "promote_v56_to_count_level_pass_pending_human_review",
+  "reason": "V56 is the best P6 balance because it reduces the oversized black-hook failure while preserving a full-body feathered dromaeosaur, a toothy non-beak head, folded forelimbs, a full stiff tail, and two visible feet. It makes the attached raised second toes visible without the black-taloned v50/v52 look or the too-faint v53 cue. It is not final: the hand/forelimb crop still risks wing-hand ambiguity, and exact two walking toes plus raised second-toe topology remains count-level rather than reference-final. V54 and v55 are useful clear-claw holds but the claws are still more dramatic than v56. V51/v53 are subtle-toe holds, while v52 and v50 remain hook-risk holds.",
+  "nextRoute": "Use v56 as the next app-scale smoke-test source and LoRA review hold/seed candidate only after crop review. Future localized i2i should preserve v56 head/body/tail while sharpening the near foot into two grounded walking toes plus one small attached raised second toe.",
+  "rejectIfPromoting": [
+    "head becomes bird-beaked, hawk-like, chicken-like, or toothless",
+    "forelimbs become broad spread wings instead of folded feathered arms",
+    "sickle claw reads as detached crescent, giant hook, black talon, or eagle talon",
+    "feet do not show two walking toes plus one attached raised second toe",
+    "body becomes naked movie raptor, ostrich-like, or oversized monster raptor",
+    "tail is cropped, duplicated, soft, or hidden"
+  ]
+}

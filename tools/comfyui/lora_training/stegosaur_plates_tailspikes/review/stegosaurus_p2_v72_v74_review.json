@@ -1,0 +1,23 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "p2_v72_v74_broad_plate_prompt_candidates",
+  "currentPrimary": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "selectedPlateReviewHold": "assets/dinosaurs/stegosaurus-stenops-imagegen-v72-source-candidate.png",
+  "comparisonReviewHolds": [
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v73-source-candidate.png",
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v74-source-candidate.png",
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v71-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/stegosaurus-p2-v72-v74-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-p2-v72-v74-crops.png",
+  "decision": "review_hold",
+  "reason": "V72 is the strongest new broad-plate identity candidate and gives the clearest rough separated slab-like Stegosaurus plates, but its tail tip appears to overcount the thagomizer. V73 has cleaner plate gaps but undercounts tail spikes. V74 makes the tail weapon more visible but weakens representative side-profile posture and plate count. Keep v6 first.",
+  "nextRoute": "Use v72 as a plate-texture/plate-size visual target, but pair it with a tail-tip structure guide or local tail i2i. Do not promote any candidate unless broad separated plates and exactly four tail spikes pass in the same crop gate.",
+  "rejectIfPromoting": [
+    "tail has fewer or more than four countable thagomizer spikes",
+    "dorsal plates fuse into a single sail, fan, comb, or decorative leaf row",
+    "plate bases read as ankylosaur armor instead of upright Stegosaurus plates",
+    "body loses the low quadrupedal small-head Stegosaurus silhouette",
+    "feet, head, plate bases, or tail tip are hidden enough to block review"
+  ]
+}

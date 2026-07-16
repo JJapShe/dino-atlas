@@ -1,0 +1,44 @@
+{
+  "datasetId": "ankylosaur_armor_tailclub_v1",
+  "trigger": "ankylosaur_armor_tailclub",
+  "purpose": "Reference-conditioned expansion prompts for Ankylosaurus armored-skull, color-pattern, armor-row, foot, and attached tail-club control after v40 reached count-level quality and P9 added v43 as the best armored-skull/color review hold.",
+  "route": "Reference-conditioned expansion prompts for Ankylosaurus after v40 reached count-level quality and P9 added v43 as the best armored-skull/color review hold; v42/v44 are color holds only until body-lock review proves the dorsal armor is not too tiled.",
+  "passSummary": "body-lock i2i/control over v40 with v43 skull-color reference | broad blunt armored skull | varied low osteoderms | one attached club",
+  "rejectSummary": "Reject outputs if the head reads as a smooth lizard/crocodile, the armor becomes an over-regular tiled shell, the color collapses to plain tan-brown, the tail club is missing/detached/split, or the animal gains extra legs.",
+  "controlReference": "assets/dinosaurs/ankylosaurus-magniventris-armor-tailclub-guide-v1.png",
+  "reviewBeforeTraining": true,
+  "basePositive": "scientific-educational paleoart, project-owned synthetic candidate, single adult Ankylosaurus magniventris, broad low heavily armored ankylosaurid quadruped, compact broad blunt armored skull, fused cranial armor plates, cheek horns and small rear skull-corner horn cues, very short neck, squat low body, dense low rounded osteoderms and oval bony armor plates across back flanks hips and tail base, natural but distinct color pattern that is not plain tan-brown, exactly four short sturdy planted legs, visible blunt non-hoofed toes, thick low tail, exactly one single fused oval bony tail club attached directly to the tail tip, dry Late Cretaceous floodplain ground, natural daylight",
+  "baseNegative": "smooth lizard head, crocodile head, long narrow snout, monitor lizard body, generic lizard body, pangolin scales, turtle shell, armadillo mammal drift, tall Stegosaurus plates, tall dorsal spikes, fantasy mace spikes, oversized fantasy skull spikes, plain tan-brown monotone, neon colors, missing tail club, detached ball, double tail club, two balls on tail, soft fluffy club, extra legs, hidden feet, hooves, biped posture, cropped tail, cropped head, text, labels, logo, watermark, signature",
+  "workflowNotes": [
+    "Use the controlReference as a line/depth/ControlNet guide rather than as direct training art.",
+    "Start from v40 when preserving the current app-first body/color balance matters; use v43 only as a head/color review reference until a body-lock route proves the dorsal armor is not too tiled.",
+    "Reject outputs if the head reads as a smooth lizard, the color collapses to plain tan-brown, the tail club is missing/detached/split, or the body reads as crocodile/monitor lizard even when armor texture looks attractive.",
+    "Reject outputs with tall dorsal plates, over-regular tiled armor grids, or fantasy spikes; Ankylosaurus needs varied low rounded osteoderms, not a Stegosaurus row or a hard shell."
+  ],
+  "prompts": [
+    {
+      "id": "armor_tailclub_side_walk_01",
+      "variation": "left-facing full-body side profile, all four feet unobscured on dry ground, broad armored skull with cheek horns and attached single tail club clearly visible, muted red-ochre or olive-gray natural pattern"
+    },
+    {
+      "id": "armor_tailclub_side_walk_02",
+      "variation": "right-facing calm walking pose, very low squat body, dense low osteoderm rows, short thick tail with one fused oval club, distinct countershaded color pattern rather than plain sandy brown"
+    },
+    {
+      "id": "armor_tailclub_low_camera_01",
+      "variation": "slightly lower camera but full body still in frame, armored skull plates and side horns visible, feet and blunt toes large enough for review, no grass hiding the feet"
+    },
+    {
+      "id": "armor_tailclub_bodylock_01",
+      "variation": "neutral broadside reference stance using v40 body balance and v43 skull/color cues, armored skull, cheek horns, shoulders, hips, tail shaft, color pattern, and club aligned for easy crop review"
+    },
+    {
+      "id": "armor_tailclub_osteoderm_01",
+      "variation": "emphasize varied low rounded osteoderms and oval bony armor plates across the neck, shoulders, back, flanks, hips, and tail base, no tall plates and no over-regular grid shell"
+    },
+    {
+      "id": "armor_tailclub_crop_ready_01",
+      "variation": "compose the animal with clear negative space around skull, feet, and tail club so review crops can inspect each diagnostic feature"
+    }
+  ]
+}

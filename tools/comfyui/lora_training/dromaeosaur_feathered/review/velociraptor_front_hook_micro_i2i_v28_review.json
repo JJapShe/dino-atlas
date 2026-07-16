@@ -1,0 +1,23 @@
+{
+  "taxonId": "velociraptor-mongoliensis",
+  "experiment": "front_hook_micro_i2i_v28",
+  "sourceImage": "assets/dinosaurs/velociraptor-mongoliensis-small-sickle-imagegen-v9.png",
+  "maskImage": "assets/dinosaurs/velociraptor-front-hook-micro-i2i-mask-v28.png",
+  "comparisonImage": "assets/dinosaurs/velociraptor-mongoliensis-front-hook-micro-i2i-comparison-v28.png",
+  "reviewSheet": "assets/dinosaurs/velociraptor-front-hook-micro-i2i-v28-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/velociraptor-front-hook-micro-i2i-v28-crops.png",
+  "decision": "comparison_only",
+  "selectedSeed": 2026070860,
+  "selectedDenoise": 0.08,
+  "selectedLabel": "seed 2026070860 d0.08",
+  "editMode": "velociraptor_reduce_front_hook",
+  "maskPreset": "velociraptor_v9_front_hook_reduce_tight",
+  "reasons": [
+    "micro-denoise edits preserve the v9 full body, head, hands, tail, and rear foot",
+    "front-hook size changes are subtle and do not clearly improve the attached second-toe anatomy over v9",
+    "higher local denoise previously lengthened the foot/toe read in v26, so v28 is kept as comparison evidence",
+    "current v9 remains the primary until a structure-aware foot route improves the sickle claw without toe drift"
+  ],
+  "keepCurrentPrimary": "assets/dinosaurs/velociraptor-mongoliensis-small-sickle-imagegen-v9.png",
+  "nextRoute": "Build a hand-drawn second-toe topology mask or use a dromaeosaur-specific LoRA; simple front-hook reduction masks are too weak at low denoise and risky at higher denoise."
+}

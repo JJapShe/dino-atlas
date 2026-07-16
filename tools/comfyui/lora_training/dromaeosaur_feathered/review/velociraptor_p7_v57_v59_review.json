@@ -1,0 +1,29 @@
+{
+  "taxonId": "velociraptor-mongoliensis",
+  "experiment": "p7_v57_v59_modest_attached_sickle_prompt_candidates",
+  "currentPrimary": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v56-source-candidate.png",
+  "selectedCandidate": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v56-source-candidate.png",
+  "reviewHolds": [
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v57-source-candidate.png",
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v59-source-candidate.png",
+    "assets/dinosaurs/velociraptor-mongoliensis-small-sickle-imagegen-v9.png",
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v54-source-candidate.png",
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v55-source-candidate.png"
+  ],
+  "rejectReferences": [
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v58-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/velociraptor-p7-v57-v59-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/velociraptor-p7-v57-v59-crops.png",
+  "decision": "keep_v56_first_add_v57_v59_holds_and_v58_reject",
+  "reason": "V56 remains the safest current app-first candidate because the new P7 prompts do not beat its balance of toothed non-beak head, feathered dromaeosaur body, folded forelimbs, stiff tail, and modest attached raised-toe cues. V57 has a useful body and clearer foot area but both raised claws trend curled and hook-like. V58 is rejected because the feet become crowded, overbuilt, and unclear in toe count. V59 has a good toothed head and side silhouette but the raised claws again become too hook-like for promotion.",
+  "nextRoute": "Keep v56 as the positive smoke-test seed. Use v57/v59 as review holds for head/body and foot visibility, and use v58 as a reject reference for overbuilt feet. The next useful attempt should be localized foot i2i or a dromaeosaur-specific LoRA/ControlNet route that preserves v56 while making the near foot read as two grounded walking toes plus one small attached raised second toe.",
+  "rejectIfPromoting": [
+    "head reads as a modern bird, hawk, owl, parrot, or toothless beak",
+    "forelimbs become broad spread wings instead of folded feathered arms",
+    "sickle claw reads as a detached crescent, giant hook, black talon, or eagle talon",
+    "feet do not show two walking toes plus one attached raised second toe",
+    "toe count becomes crowded, duplicated, or mammal-like",
+    "tail is cropped, duplicated, soft, or hidden"
+  ]
+}

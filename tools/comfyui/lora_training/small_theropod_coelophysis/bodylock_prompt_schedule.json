@@ -1,0 +1,48 @@
+{
+  "datasetId": "small_theropod_coelophysis",
+  "route": "bodylock_control",
+  "trigger": "coelophysis atlas candidate",
+  "controlReferences": [
+    "assets/dinosaurs/coelophysis-bauri-bodylock-guide-v1.png",
+    "assets/dinosaurs/coelophysis-bodylock-crops-v4.png",
+    "assets/dinosaurs/coelophysis-review-options-v8.png"
+  ],
+  "basePositive": "museum-quality realistic paleoart, full-body lateral side profile of Coelophysis bauri, one small lightly built early theropod, narrow lightly toothed head, long S-curved neck, slim shallow torso, very long single balancing tail fully in frame, exactly two long hind legs, visible dry three-toed theropod feet on open ground, two short folded non-weight-bearing forelimbs below the chest, tiny three-finger grasping hands, Late Triassic dry floodplain, natural daylight, fine pebbled skin",
+  "baseNegative": "extra legs, six-legged silhouette, forelimbs touching the ground, duplicate forearms, giant dangling hook claws, oversized hands, four or five obvious long fingers, hidden feet, fused toes, cropped tail, duplicate tail, bird beak, feathers, wings, perched on branch, log, water, lizard quadruped, sauropodomorph herbivore, bulky raptor, Tyrannosaurus rex, Allosaurus, monster dinosaur, logo bar, source text, watermark, caption, label",
+  "passes": [
+    {
+      "id": "controlnet_bodylock_low_denoise",
+      "mode": "i2i_controlnet",
+      "sourceImage": "assets/dinosaurs/coelophysis-bauri-slenderneck-smallhands-imagegen-v3.png",
+      "controlImage": "assets/dinosaurs/coelophysis-bauri-bodylock-guide-v1.png",
+      "denoiseRange": [0.18, 0.32],
+      "controlStrengthRange": [0.48, 0.72],
+      "promptFocus": "preserve the current natural dry-ground scene while enforcing the S-neck, small folded hands, two hind legs, full tail, and visible feet"
+    },
+    {
+      "id": "ipadapter_style_plus_bodylock_control",
+      "mode": "ipadapter_controlnet",
+      "styleReference": "assets/dinosaurs/coelophysis-bauri-slenderneck-smallhands-imagegen-v3.png",
+      "controlImage": "assets/dinosaurs/coelophysis-bauri-bodylock-guide-v1.png",
+      "denoiseRange": [0.28, 0.44],
+      "controlStrengthRange": [0.58, 0.82],
+      "promptFocus": "borrow the current v3 daylight and texture while making the hands and feet more reviewable without changing the taxon identity"
+    },
+    {
+      "id": "localized_hand_foot_repair_probe",
+      "mode": "masked_i2i",
+      "sourceImage": "assets/dinosaurs/coelophysis-bauri-slenderneck-smallhands-imagegen-v3.png",
+      "maskTarget": "forelimb hands and hind feet only",
+      "denoiseRange": [0.1, 0.24],
+      "promptFocus": "repair only small three-finger hands and dry three-toed feet; reject if the forelimbs lengthen or the body silhouette shifts"
+    }
+  ],
+  "manualGate": [
+    "reject if either forelimb touches the ground or reads as a third/fourth leg",
+    "reject if hands become oversized hooks or human-like fingers",
+    "reject if the tail is cropped, duplicated, or hidden",
+    "reject if feet are hidden, fused, or too soft to review",
+    "reject if the head becomes bird-beaked, lizard-like, or bulky large-theropod shaped",
+    "reject if the scene adds source-like text, logo bars, captions, or watermarks"
+  ]
+}

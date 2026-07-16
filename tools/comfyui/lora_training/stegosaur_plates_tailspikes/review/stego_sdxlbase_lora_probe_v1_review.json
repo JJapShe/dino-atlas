@@ -1,0 +1,27 @@
+{
+  "datasetId": "stegosaur_plates_tailspikes_v1",
+  "runIds": [
+    "stegosaur_sdxlbase_seed_v1",
+    "stego_sdxlbase_dinogenv2_v1"
+  ],
+  "date": "2026-06-23",
+  "contactSheets": [
+    "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stegosaur_sdxlbase_seed_v1_rejected_contact_sheet.png",
+    "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_sdxlbase_dinogenv2_v1_rejected_contact_sheet.png"
+  ],
+  "reviewDecision": "reject_all_for_training_and_app",
+  "summary": "Switching from RealVisXL to the plain SDXL base checkpoint did not solve the Stegosaurus structure gate. Prompt-only SDXL base produced one rough quadrupedal plate-backed image but still missed the four-spike thagomizer, while most outputs drifted into theropod, rhinoceros, or generic monster body plans. Adding the generic Dinosaur Generator v2 SDXL LoRA over SDXL base made the drift worse, producing bipedal theropods or long-necked forms with only small comb-like back spines.",
+  "primaryRejectReasons": [
+    "dorsal plates collapse into small comb spines, a connected ridge, or generic monster back ornamentation",
+    "four-spike thagomizer is missing or not countable",
+    "many outputs become bipedal theropods rather than quadrupedal Stegosaurus",
+    "some SDXL base outputs drift toward rhinoceros or horned mammal/monster reads",
+    "generic Dinosaur Generator v2 does not encode Stegosaurus-specific plate/thagomizer anatomy"
+  ],
+  "usefulFindings": [
+    "The problem is not only RealVisXL naturalization; plain SDXL base still does not obey the Stegosaurus plate/thagomizer prompt reliably.",
+    "The generic SDXL dinosaur LoRA should remain a texture/diagnostic comparison only and should not be used for Stegosaurus anatomy control.",
+    "Future effort should focus on project-owned direct synthetic seeds, a real Stegosaurus-compatible LoRA branch, or the custom stegosaur_plates_tailspikes dataset instead of more broad checkpoint/LoRA probes."
+  ],
+  "nextRoute": "Do not add SDXL base or Dinosaur Generator v2 outputs to train_seed. Continue only with reviewed direct synthetic images, a species-compatible LoRA if installed, or a custom LoRA expansion from cleared plate/thagomizer references."
+}

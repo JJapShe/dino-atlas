@@ -1,0 +1,24 @@
+{
+  "datasetId": "sauropod_brachiosaurus",
+  "trigger": "brachiosaurus atlas candidate",
+  "basePositive": "museum-quality realistic paleoart, full-body lateral side profile of Brachiosaurus altithorax, one animal, head left and tail right, Late Jurassic Morrison Formation dry floodplain, very high shoulders, front legs clearly taller and longer than hind legs, trunk sloping downward from shoulders to hips, long rising neck, small nasal-arched head, compact heavy torso, exactly four pillar legs, all four feet visible on dry ground, short thick tapering tail fully in frame, natural daylight, detailed pebbled sauropod skin",
+  "baseNegative": "Apatosaurus, Diplodocus, Brontosaurus, diplodocid body, low shoulders, equal forelimbs and hind limbs, front legs shorter than hind legs, horizontal low neck, swan neck, giraffe, mammal, elephant feet with hooves, long whip tail, extremely long thin tail, tail cropped, missing tail tip, hidden feet, cropped feet, extra legs, missing legs, duplicate legs, two-legged sauropod, theropod head, predator teeth, spikes, armor, text, labels, logo, watermark",
+  "prompts": [
+    {
+      "id": "highshoulder_shorttail_profile",
+      "variation": "strong high-shoulder profile, front legs dominant, hips lower than shoulders, tail only about one third of body length and thick at the base"
+    },
+    {
+      "id": "compact_tail_fourfeet",
+      "variation": "clear four-foot stance on open dry ground, compact rounded hips, short non-whiplike tail tapering gently but ending fully inside the frame"
+    },
+    {
+      "id": "brachiosaurid_slope",
+      "variation": "classic brachiosaurid body slope, towering shoulders, long upward neck, small head with nasal arch, short tail balancing the rear body"
+    },
+    {
+      "id": "shorttail_reference_card",
+      "variation": "scientific educational side-view restoration, clean silhouette for anatomy review, all feet separated, shorter tail than Apatosaurus or Diplodocus"
+    }
+  ]
+}

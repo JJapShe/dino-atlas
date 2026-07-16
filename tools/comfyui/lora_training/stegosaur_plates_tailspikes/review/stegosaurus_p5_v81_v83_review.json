@@ -1,0 +1,22 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "p5_v81_v83_tail_count_locked_candidates",
+  "currentPrimary": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "selectedReviewHold": "assets/dinosaurs/stegosaurus-stenops-imagegen-v82-source-candidate.png",
+  "secondaryReviewHold": "assets/dinosaurs/stegosaurus-stenops-imagegen-v83-source-candidate.png",
+  "selectedRejectReferences": [
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v81-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/stegosaurus-p5-v81-v83-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-p5-v81-v83-crops.png",
+  "decision": "keep_current_v6",
+  "reason": "V82 is the best fresh candidate because the tail end most nearly resolves into four large thagomizer spikes while keeping broad separated plates. It stays review_hold because the lower right spike area can still be read as overlapping geometry, and the alternating two-row plate topology is not proven stronger than v6. V81 clearly overcounts the thagomizer. V83 keeps a useful body and plate read but still has lower-spike overlap risk.",
+  "rejectIfPromoting": [
+    "tail tip shows fewer or more than exactly four large spikes",
+    "any spike is duplicated by a lower shadow-like extra spur",
+    "plates read as leaves, fins, continuous sail panels, or armored shingles",
+    "plate row loses visible sky gaps between separate plates",
+    "legs or feet are hidden enough to block quadruped count",
+    "body drifts toward ankylosaur, turtle, sauropod, or theropod anatomy"
+  ]
+}

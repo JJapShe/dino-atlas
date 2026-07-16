@@ -1,0 +1,91 @@
+{
+  "3": {
+    "class_type": "KSampler",
+    "inputs": {
+      "seed": 123456789,
+      "steps": 38,
+      "cfg": 5.2,
+      "sampler_name": "dpmpp_2m_sde_gpu",
+      "scheduler": "sgm_uniform",
+      "denoise": 1,
+      "model": ["4", 0],
+      "positive": ["16", 0],
+      "negative": ["16", 1],
+      "latent_image": ["5", 0]
+    }
+  },
+  "4": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": {
+      "ckpt_name": "sd_xl_base_1.0.safetensors"
+    }
+  },
+  "5": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": 1152,
+      "height": 768,
+      "batch_size": 1
+    }
+  },
+  "6": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": ["4", 1],
+      "text": ""
+    }
+  },
+  "7": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": ["4", 1],
+      "text": ""
+    }
+  },
+  "8": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": ["3", 0],
+      "vae": ["11", 0]
+    }
+  },
+  "9": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "filename_prefix": "dino_atlas/controlnet",
+      "images": ["8", 0]
+    }
+  },
+  "11": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "sdxl_vae.safetensors"
+    }
+  },
+  "12": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "dino_control/velociraptor-mongoliensis_canny.png",
+      "upload": "image"
+    }
+  },
+  "14": {
+    "class_type": "ControlNetLoader",
+    "inputs": {
+      "control_net_name": "mistoLine_rank256.safetensors"
+    }
+  },
+  "16": {
+    "class_type": "ControlNetApplyAdvanced",
+    "inputs": {
+      "positive": ["6", 0],
+      "negative": ["7", 0],
+      "control_net": ["14", 0],
+      "image": ["12", 0],
+      "strength": 0.68,
+      "start_percent": 0,
+      "end_percent": 0.72,
+      "vae": ["11", 0]
+    }
+  }
+}

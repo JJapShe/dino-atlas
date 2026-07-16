@@ -1,0 +1,68 @@
+[
+  {
+    "taxonId": "velociraptor-mongoliensis",
+    "sourceImage": "C:\\Users\\USER\\Documents\\dinosour\\assets\\dinosaurs\\velociraptor-mongoliensis-plumage-sickle-refined-v1.png",
+    "maskPreset": "custom",
+    "seed": 2026063221,
+    "denoise": 0.14,
+    "lora": null,
+    "loraStrength": null,
+    "clipStrength": null,
+    "image": "C:\\Users\\USER\\Documents\\dinosour\\tools\\comfyui\\ComfyUI\\output\\dino_atlas\\velo_rear_sickle_cleanup_v1_custom_velociraptor-mongoliensis_d14_00001_.png"
+  },
+  {
+    "taxonId": "velociraptor-mongoliensis",
+    "sourceImage": "C:\\Users\\USER\\Documents\\dinosour\\assets\\dinosaurs\\velociraptor-mongoliensis-plumage-sickle-refined-v1.png",
+    "maskPreset": "custom",
+    "seed": 2026063222,
+    "denoise": 0.14,
+    "lora": null,
+    "loraStrength": null,
+    "clipStrength": null,
+    "image": "C:\\Users\\USER\\Documents\\dinosour\\tools\\comfyui\\ComfyUI\\output\\dino_atlas\\velo_rear_sickle_cleanup_v1_custom_velociraptor-mongoliensis_d14_00002_.png"
+  },
+  {
+    "taxonId": "velociraptor-mongoliensis",
+    "sourceImage": "C:\\Users\\USER\\Documents\\dinosour\\assets\\dinosaurs\\velociraptor-mongoliensis-plumage-sickle-refined-v1.png",
+    "maskPreset": "custom",
+    "seed": 2026063221,
+    "denoise": 0.22,
+    "lora": null,
+    "loraStrength": null,
+    "clipStrength": null,
+    "image": "C:\\Users\\USER\\Documents\\dinosour\\tools\\comfyui\\ComfyUI\\output\\dino_atlas\\velo_rear_sickle_cleanup_v1_custom_velociraptor-mongoliensis_d22_00001_.png"
+  },
+  {
+    "taxonId": "velociraptor-mongoliensis",
+    "sourceImage": "C:\\Users\\USER\\Documents\\dinosour\\assets\\dinosaurs\\velociraptor-mongoliensis-plumage-sickle-refined-v1.png",
+    "maskPreset": "custom",
+    "seed": 2026063222,
+    "denoise": 0.22,
+    "lora": null,
+    "loraStrength": null,
+    "clipStrength": null,
+    "image": "C:\\Users\\USER\\Documents\\dinosour\\tools\\comfyui\\ComfyUI\\output\\dino_atlas\\velo_rear_sickle_cleanup_v1_custom_velociraptor-mongoliensis_d22_00002_.png"
+  },
+  {
+    "taxonId": "velociraptor-mongoliensis",
+    "sourceImage": "C:\\Users\\USER\\Documents\\dinosour\\assets\\dinosaurs\\velociraptor-mongoliensis-plumage-sickle-refined-v1.png",
+    "maskPreset": "custom",
+    "seed": 2026063221,
+    "denoise": 0.3,
+    "lora": null,
+    "loraStrength": null,
+    "clipStrength": null,
+    "image": "C:\\Users\\USER\\Documents\\dinosour\\tools\\comfyui\\ComfyUI\\output\\dino_atlas\\velo_rear_sickle_cleanup_v1_custom_velociraptor-mongoliensis_d30_00001_.png"
+  },
+  {
+    "taxonId": "velociraptor-mongoliensis",
+    "sourceImage": "C:\\Users\\USER\\Documents\\dinosour\\assets\\dinosaurs\\velociraptor-mongoliensis-plumage-sickle-refined-v1.png",
+    "maskPreset": "custom",
+    "seed": 2026063222,
+    "denoise": 0.3,
+    "lora": null,
+    "loraStrength": null,
+    "clipStrength": null,
+    "image": "C:\\Users\\USER\\Documents\\dinosour\\tools\\comfyui\\ComfyUI\\output\\dino_atlas\\velo_rear_sickle_cleanup_v1_custom_velociraptor-mongoliensis_d30_00002_.png"
+  }
+]

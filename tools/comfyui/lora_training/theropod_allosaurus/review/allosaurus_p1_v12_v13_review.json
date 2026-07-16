@@ -1,0 +1,18 @@
+{
+  "taxonId": "allosaurus-fragilis",
+  "experiment": "p1_v12_v13_source_candidates",
+  "currentPrimary": "assets/dinosaurs/allosaurus-fragilis-smoothbrow-threefinger-imagegen-v4.png",
+  "selectedReviewHold": "assets/dinosaurs/allosaurus-fragilis-imagegen-v13-source-candidate.png",
+  "selectedRejectReference": "assets/dinosaurs/allosaurus-fragilis-imagegen-v12-source-candidate.png",
+  "reviewSheet": "assets/dinosaurs/allosaurus-p1-v12-v13-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/allosaurus-p1-v12-v13-crops.png",
+  "decision": "review_hold",
+  "reason": "V13 improves the smooth-brow full-body Allosaurus read compared with the v12 horn-risk candidate, but the hand can still read as four fingers. Keep v4 first, keep v13 as review_hold only, and keep v12 as a reject reference for horn-brow and ambiguous-digit drift.",
+  "rejectIfPromoting": [
+    "visible hand reads as four or five fingers instead of exactly three",
+    "brow ridges become raised horns, crown bumps, or fantasy crests",
+    "forelimbs shrink into tiny two-finger Tyrannosaurus arms",
+    "skull becomes deep and blocky like Tyrannosaurus",
+    "feet, hands, or tail are hidden enough to block count review"
+  ]
+}

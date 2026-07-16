@@ -1,0 +1,20 @@
+{
+  "taxon": "velociraptor-mongoliensis",
+  "route": "next_velociraptor_mongoliensis_smoke_schedule",
+  "sourceSchedule": "tools/comfyui/lora_training/dromaeosaur_feathered/identity_bodylock_prompt_schedule.json",
+  "promptId": "identity_bodylock_side_walk_01",
+  "seed": 2026070221,
+  "output": "assets/dinosaurs/velociraptor-mongoliensis-smoke-schedule-rejected-v20.png",
+  "contactSheet": "assets/dinosaurs/velociraptor-smoke-schedule-rejection-sheet-v20.png",
+  "decision": "diagnostic_only_rejected",
+  "pass": [
+    "ComfyUI schedule route executed successfully",
+    "full body, single tail, and toothed snout are visible"
+  ],
+  "fail": [
+    "body reads as mostly naked generic theropod rather than dense feathered dromaeosaur",
+    "folded forelimb feathering is not preserved",
+    "raised second-toe sickle claw is not reliably attached or diagnostic"
+  ],
+  "nextAction": "Do not promote prompt-schedule smoke outputs. Continue with the identity body-lock ControlNet/i2i route or a stronger dromaeosaur LoRA that preserves feathers and attached sickle-toe topology together."
+}

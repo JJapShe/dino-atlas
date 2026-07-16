@@ -1,0 +1,29 @@
+{
+  "taxonId": "triceratops-horridus",
+  "experiment": "p9_v49_v51_color_frill_pattern_review",
+  "previousPrimary": "assets/dinosaurs/triceratops-horridus-imagegen-v43-source-candidate.png",
+  "selectedCandidate": "assets/dinosaurs/triceratops-horridus-imagegen-v51-source-candidate.png",
+  "reviewHolds": [
+    "assets/dinosaurs/triceratops-horridus-imagegen-v49-source-candidate.png",
+    "assets/dinosaurs/triceratops-horridus-imagegen-v50-source-candidate.png",
+    "assets/dinosaurs/triceratops-horridus-imagegen-v43-source-candidate.png",
+    "assets/dinosaurs/triceratops-horridus-imagegen-v41-source-candidate.png"
+  ],
+  "rejectReferences": [],
+  "reviewSheet": "assets/dinosaurs/triceratops-p9-v49-v51-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/triceratops-p9-v49-v51-crops.png",
+  "decision": "promote_v51_for_cool_color_pattern_and_frill_identity",
+  "reason": "V51 is the best P9 balance between color differentiation and Triceratops identity. It adds a cooler blue-gray body with pale mottling, keeps the two brow horns, nasal horn, closed beak, skull-attached frill, long tail, four dinosaur limbs, and separated non-hoofed toes. V49 and v50 are useful review holds for dark speckle and rust-frill variants but do not beat v51 overall.",
+  "nextRoute": "Use v51 as the current app-first color-pattern smoke-test seed. Future passes should preserve its cool non-sandy palette while improving exact toe anatomy, low elongated anti-rhino torso, and frill/skull proportions through body-lock or localized foot/frill i2i.",
+  "rejectIfPromoting": [
+    "torso, shoulder mass, or feet read as rhinoceros-like",
+    "body becomes a round mammal barrel rather than low elongated ceratopsian form",
+    "frill attaches to shoulders, back, or torso instead of skull",
+    "mouth opens or teeth appear",
+    "horn count is not exactly two brow horns plus one nasal horn",
+    "feet become hoof-like or hide toe separation",
+    "tail is cropped, hidden, or tiny",
+    "color collapses back to the same sandy-brown palette as other taxa",
+    "frill color becomes a neon or ornamental fantasy fan"
+  ]
+}

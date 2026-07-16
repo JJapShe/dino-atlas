@@ -1,0 +1,31 @@
+{
+  "taxonId": "velociraptor-mongoliensis",
+  "experiment": "modest_sickle_i2i_v25",
+  "sourceImage": "assets/dinosaurs/velociraptor-mongoliensis-small-sickle-imagegen-v9.png",
+  "comparisonImage": "assets/dinosaurs/velociraptor-mongoliensis-modest-sickle-i2i-comparison-v25.png",
+  "rejectionImage": "assets/dinosaurs/velociraptor-mongoliensis-front-hook-rejected-v26.png",
+  "reviewSheet": "assets/dinosaurs/velociraptor-modest-sickle-i2i-v25-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/velociraptor-modest-sickle-i2i-v25-crops.png",
+  "rejectionCropSheet": "assets/dinosaurs/velociraptor-front-hook-v26-rejection-crops.png",
+  "decision": "comparison_only",
+  "reasons": [
+    "v25 preserves the v9 full-body silhouette, toothed non-beak snout, folded arms, and long tail",
+    "v25 keeps a modest sickle-claw cue but does not clearly improve foot anatomy over v9",
+    "v26 tighter front-hook reduction creates longer, less reliable toes and stays diagnostic only",
+    "current v9 remains the stronger representative until a localized foot route visibly improves attached second-toe topology without toe drift"
+  ],
+  "keepCurrentPrimary": "assets/dinosaurs/velociraptor-mongoliensis-small-sickle-imagegen-v9.png",
+  "v25": {
+    "maskPreset": "velociraptor_v9_sickle_claw_tips",
+    "editMode": "velociraptor_modest_sickle_toes",
+    "selectedSeed": 2026070280,
+    "selectedDenoise": 0.12
+  },
+  "v26": {
+    "maskPreset": "velociraptor_v9_front_hook_reduce_tight",
+    "editMode": "velociraptor_reduce_front_hook",
+    "selectedRejectedSeed": 2026070282,
+    "selectedRejectedDenoise": 0.1
+  },
+  "nextRoute": "Try a hand-drawn second-toe topology mask or dromaeosaur-specific LoRA; whole-body guide-source ControlNet/IP-i2i and simple hook-reduction masks have not improved v9."
+}

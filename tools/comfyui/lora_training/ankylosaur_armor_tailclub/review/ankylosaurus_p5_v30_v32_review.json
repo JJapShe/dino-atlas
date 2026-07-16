@@ -1,0 +1,22 @@
+{
+  "taxonId": "ankylosaurus-magniventris",
+  "experiment": "p5_v30_v32_compact_tank_tailclub_candidates",
+  "currentPrimary": "assets/dinosaurs/ankylosaurus-magniventris-allfeet-lora-i2i-v18.png",
+  "selectedReviewHold": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v32-source-candidate.png",
+  "secondaryReviewHolds": [
+    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v30-source-candidate.png",
+    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v31-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/ankylosaurus-p5-v30-v32-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/ankylosaurus-p5-v30-v32-crops.png",
+  "decision": "keep_current_v18_with_v32_review_hold",
+  "reason": "V32 is the strongest fresh candidate because it improves the low tank-like body, rounded osteoderm rows, planted feet, and one attached oval club while avoiding the longest-body drift from earlier prompt-only candidates. It stays review_hold because the cheek knob can still read horn-like and the tail remains longer than ideal for a compact ankylosaurid. V30 and V31 are useful comparison holds but retain lizard-head or horn-risk reads.",
+  "rejectIfPromoting": [
+    "body reads as crocodile, monitor lizard, pangolin, turtle, armadillo, or rhinoceros",
+    "skull becomes long and narrow or develops horns/frill",
+    "tail is long and whip-like instead of short and thick",
+    "tail club is missing, detached, doubled, soft, spiked, or replaced by a paddle",
+    "armor becomes tall Stegosaurus plates or fantasy spikes",
+    "feet are hidden, fused, extra, or the animal reads as six-legged"
+  ]
+}

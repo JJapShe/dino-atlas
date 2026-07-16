@@ -1,0 +1,32 @@
+{
+  "taxonId": "triceratops-horridus",
+  "reviewDate": "2026-06-24",
+  "objective": "Strengthen the Triceratops reference gate after reviewing that the current primary still has weak head and frill proportions, while avoiding the earlier rhinoceros-drift failure.",
+  "currentPrimaryKept": {
+    "asset": "assets/dinosaurs/triceratops-horridus-microhorn-inpaint-v1.png",
+    "reason": "Still the safest app-facing full-body candidate: it avoids the obvious rhinoceros body plan, keeps a long tail and four readable dinosaur limbs, and shows the brow horns, short nasal horn cue, closed beak, and skull-frill intent."
+  },
+  "newReferenceGuide": {
+    "asset": "assets/dinosaurs/triceratops-horridus-ceratopsian-reference-guide-v1.png",
+    "comfyInput": "tools/comfyui/ComfyUI/input/dino_guides/triceratops-horridus_ceratopsian_reference_v1.png",
+    "purpose": "Structure target for the next ControlNet, i2i, or mini-LoRA pass. It emphasizes a skull-attached frill behind the head, exactly two brow horns plus one shorter nasal horn, a closed beak, a long tail, four dinosaur limbs, and visible non-hoofed toes."
+  },
+  "newSweep": {
+    "prefix": "trike_ceratopsian_ref_ipcontrol_v1",
+    "method": "IP-Adapter + ControlNet using the current primary as a low-weight style reference and the new ceratopsian guide as the control source",
+    "seeds": [2026064401, 2026064402],
+    "ipWeights": [0.08, 0.14],
+    "controlStrengths": [0.62, 0.72],
+    "controlEnd": 0.7,
+    "selectedForPromotion": null,
+    "reasonRejected": "No output beat the current primary. The sweep drifted into lizard-like heads, frill/back structures, armor-like torsos, or rhino-like body mass."
+  },
+  "reviewSheets": {
+    "appContactSheet": "assets/dinosaurs/triceratops-review-options-v8.png",
+    "appHeadLegCrops": "assets/dinosaurs/triceratops-head-leg-crops-v8.png",
+    "referenceContactSheet": "tools/comfyui/lora_training/ceratopsian_triceratops/review/trike_ceratopsian_reference_guide_v1_contact_sheet.png",
+    "rejectedSweepContactSheet": "tools/comfyui/lora_training/ceratopsian_triceratops/review/trike_ceratopsian_ref_ipcontrol_v1_rejected_contact_sheet.png",
+    "rejectedSweepHeadLegCrops": "tools/comfyui/lora_training/ceratopsian_triceratops/review/trike_ceratopsian_ref_ipcontrol_v1_rejected_head_leg_crops.png"
+  },
+  "nextRecommendation": "Do not continue broad prompt-only or broad ControlNet sweeps for Triceratops. Use the new guide to build a small ceratopsian head/frill mini-LoRA or a narrower two-stage workflow: full-body structure first, then tiny head/frill masks that do not touch the legs or torso."
+}

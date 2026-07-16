@@ -1,0 +1,57 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "plate_texture_i2i_v66_v67",
+  "currentPrimary": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "selectedReviewHold": "assets/dinosaurs/stegosaurus-stenops-plate-texture-lowdenoise-v67.png",
+  "reviewSheet": "assets/dinosaurs/stegosaurus-plate-texture-i2i-v66-v67-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-plate-texture-i2i-v67-crops.png",
+  "v66RejectionSheet": "assets/dinosaurs/stegosaurus-plate-topology-clean-v66-rejection-sheet.png",
+  "v67ContactSheet": "tools/comfyui/outputs/stegosaurus_plate_texture_lowdenoise_v67-contact-sheet.png",
+  "decision": "review_hold",
+  "selectedSeed": 2026070121,
+  "selectedDenoise": 0.28,
+  "selectedLabel": "seed 2026070121 d0.28",
+  "routeSummary": [
+    "v66 used current v6 as style reference and the clean v52 topology guide as control; it generated obvious body or identity drift and should remain rejected",
+    "v67 used low-denoise i2i over current v6 with a rough bony plate texture prompt; it preserves body and tail count better than v66",
+    "v67 selected output is useful as a review hold because plate surface is rougher, but it does not yet prove a stronger staggered two-row topology than v6"
+  ],
+  "keepCurrentPrimary": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+  "nextRoute": "Use a Stegosauridae-specific LoRA or curated plate-structure seed expansion. Avoid higher-strength IP-Control from the clean topology guide unless a body-lock control is added.",
+  "v66Outputs": [
+    {
+      "seed": 2026070101,
+      "ipWeight": 0.28,
+      "controlStrength": 0.32,
+      "image": "tools/comfyui/ComfyUI/output/dino_atlas/stegosaurus_plate_topology_clean_v66_style_transfer_stegosaurus-stenops_iw28_cs32_00001_.png"
+    },
+    {
+      "seed": 2026070102,
+      "ipWeight": 0.28,
+      "controlStrength": 0.32,
+      "image": "tools/comfyui/ComfyUI/output/dino_atlas/stegosaurus_plate_topology_clean_v66_style_transfer_stegosaurus-stenops_iw28_cs32_00002_.png"
+    }
+  ],
+  "v67Outputs": [
+    {
+      "seed": 2026070121,
+      "denoise": 0.22,
+      "image": "tools/comfyui/outputs/stegosaurus_plate_texture_lowdenoise_v67_plate_topology_texture_01_seed2026070121_d22.png"
+    },
+    {
+      "seed": 2026070122,
+      "denoise": 0.22,
+      "image": "tools/comfyui/outputs/stegosaurus_plate_texture_lowdenoise_v67_plate_topology_texture_01_seed2026070122_d22.png"
+    },
+    {
+      "seed": 2026070121,
+      "denoise": 0.28,
+      "image": "tools/comfyui/outputs/stegosaurus_plate_texture_lowdenoise_v67_plate_topology_texture_01_seed2026070121_d28.png"
+    },
+    {
+      "seed": 2026070122,
+      "denoise": 0.28,
+      "image": "tools/comfyui/outputs/stegosaurus_plate_texture_lowdenoise_v67_plate_topology_texture_01_seed2026070122_d28.png"
+    }
+  ]
+}

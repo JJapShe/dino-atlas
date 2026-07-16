@@ -1,0 +1,25 @@
+{
+  "taxonId": "tyrannosaurus-rex",
+  "experiment": "p2_v13_v15_tiny_twofinger_prompt_candidates",
+  "currentPrimary": "assets/dinosaurs/tyrannosaurus-rex-twofinger-hand-i2i-v4.png",
+  "selectedReviewHold": "assets/dinosaurs/tyrannosaurus-rex-imagegen-v15-source-candidate.png",
+  "comparisonReviewHolds": [
+    "assets/dinosaurs/tyrannosaurus-rex-imagegen-v14-source-candidate.png",
+    "assets/dinosaurs/tyrannosaurus-rex-imagegen-v12-source-candidate.png"
+  ],
+  "selectedRejectReferences": [
+    "assets/dinosaurs/tyrannosaurus-rex-imagegen-v13-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/tyrannosaurus-p2-v13-v15-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/tyrannosaurus-p2-v13-v15-crops.png",
+  "decision": "keep_current_v4",
+  "reason": "V15 is the best P2 source hold because it preserves the tiny tucked forelimb scale better than v14 and v12. It still does not replace v4 because the hand digits can be too soft for exact two-finger proof. V14 makes the two fingers more visible but enlarges the arm/hand. V13 has a useful full-body T. rex read but the hand can look three-pronged.",
+  "nextRoute": "Use v15 only as a copyright-safe source hold for a localized hand i2i or ControlNet pass. Reject any result that gains visible fingers by making the arm allosaur-like, adding a third finger, hiding the feet, or weakening the massive T. rex body.",
+  "rejectIfPromoting": [
+    "forelimbs become medium-length or allosaur-like",
+    "visible hand shows a third finger, extra nub, or long dangling claws",
+    "hands are hidden enough to block two-finger review",
+    "feet, tail, or hind-leg count are cropped or hidden",
+    "jaw, brow, or pose becomes fantasy monster rather than naturalistic T. rex"
+  ]
+}

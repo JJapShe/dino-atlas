@@ -1,0 +1,17 @@
+{
+  "taxonId": "plateosaurus-engelhardti",
+  "experiment": "p1_v15_source_candidate",
+  "currentPrimary": "assets/dinosaurs/plateosaurus-engelhardti-singleforelimb-smallhand-imagegen-v3.png",
+  "selectedReviewHold": "assets/dinosaurs/plateosaurus-engelhardti-imagegen-v15-source-candidate.png",
+  "reviewSheet": "assets/dinosaurs/plateosaurus-p1-v15-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/plateosaurus-p1-v15-crops.png",
+  "decision": "review_hold",
+  "reason": "V15 preserves the useful low herbivore head, long forward neck, full tail, and exactly two large grounded hind legs. Keep v3 first because v15 still does not prove the far forelimb or exact five-finger/thumb-claw hand anatomy, and the hands remain too soft for final Plateosaurus approval.",
+  "rejectIfPromoting": [
+    "forelimbs touch the ground or read as weight-bearing front legs",
+    "overlapping arms create a six-leg or extra-limb read",
+    "hands become giant theropod hook claws instead of small grasping hands",
+    "head becomes predator-like, toothy, sauropod-like, or generic lizard-like",
+    "tail, feet, hands, or ground contact are hidden enough to block count review"
+  ]
+}

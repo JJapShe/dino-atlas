@@ -1,0 +1,25 @@
+{
+  "taxonId": "triceratops-horridus",
+  "experiment": "p4_v34_v36_antirhino_prompt_candidates",
+  "currentPrimary": "assets/dinosaurs/triceratops-horridus-allfeet-lora-i2i-comparison-v22.png",
+  "selectedReviewHold": "assets/dinosaurs/triceratops-horridus-imagegen-v35-source-candidate.png",
+  "secondaryReviewHold": "assets/dinosaurs/triceratops-horridus-imagegen-v34-source-candidate.png",
+  "selectedRejectReferences": [
+    "assets/dinosaurs/triceratops-horridus-imagegen-v36-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/triceratops-p4-v34-v36-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/triceratops-p4-v34-v36-crops.png",
+  "decision": "demote_app_status_to_reviewing_keep_current_v22",
+  "reason": "The app status should be reviewing, not approved. V35 is the best fresh P4 candidate because it improves the low elongated body, long tail, closed beak, three-horn read, and visible non-hoofed toes. It still stays below v22 because the torso and frill ornament are not fully reference-clean. V34 is a secondary review hold with useful skull/frill identity but a high rounded torso. V36 is a reject reference because the body returns to a rounded mammal-like mass despite useful feet and tail cues.",
+  "nextRoute": "Continue with skull-frill body-lock i2i or a curated ceratopsian LoRA branch. Prompt-only candidates now improve identity, but they do not fully solve low elongated torso, toe detail, and anti-rhino body proportions together.",
+  "rejectIfPromoting": [
+    "reviewStatus is marked approved before close crop review",
+    "torso, shoulder mass, or feet read as rhinoceros-like",
+    "body is a round barrel rather than low elongated ceratopsian form",
+    "frill attaches to shoulders, back, or torso instead of skull",
+    "mouth opens or teeth appear",
+    "horn count is not exactly two brow horns plus one nasal horn",
+    "feet become hoof-like or hide toe separation",
+    "tail is cropped, hidden, or short"
+  ]
+}

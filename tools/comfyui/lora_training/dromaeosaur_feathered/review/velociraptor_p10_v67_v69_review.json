@@ -1,0 +1,27 @@
+{
+  "taxonId": "velociraptor-mongoliensis",
+  "experiment": "p10_v67_v69_color_head_foot_review",
+  "currentPrimary": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v63-source-candidate.png",
+  "reviewHolds": [
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v68-source-candidate.png",
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v69-source-candidate.png",
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v65-source-candidate.png"
+  ],
+  "rejectReferences": [
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v67-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/velociraptor-p10-v67-v69-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/velociraptor-p10-v67-v69-crops.png",
+  "decision": "keep_v63_primary_add_v68_as_best_color_head_hold",
+  "reason": "V67-v69 keep the useful dark speckled plumage, rust facial mask, toothed non-beak head, and long stiff tail direction. V68 is the best P10 hold because its folded arms and head read are stable and its feet are less overbuilt than v67/v69. No P10 candidate replaces v63 because the raised second-toe sickle claws still read too large or hook-like at crop scale.",
+  "nextRoute": "Keep v63 primary. Use v68 as a color/head reference hold only, then run foot-local i2i/control from v63 or v68 with the foot topology guide. Do not promote a prettier render unless close crops prove two grounded walking toes plus one modest attached raised second-toe claw.",
+  "rejectIfPromoting": [
+    "head reads as modern bird, hawk, owl, rooster, or toothless beak",
+    "folded forelimbs become broad spread wings or long human-like hands",
+    "sickle claw reads as detached crescent, giant hook, black talon, or eagle talon",
+    "feet do not show two grounded walking toes plus one attached raised second toe",
+    "toe count becomes crowded, duplicated, or mammal-like",
+    "tail is cropped, duplicated, soft, or hidden",
+    "color improves but masks oversized hook-claw failure"
+  ]
+}

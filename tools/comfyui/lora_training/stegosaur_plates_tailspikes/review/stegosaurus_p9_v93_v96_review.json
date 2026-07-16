@@ -1,0 +1,26 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "p9_v93_v96_ground_relative_upward_v_thagomizer",
+  "currentPrimary": "assets/dinosaurs/stegosaurus-stenops-imagegen-v92-source-candidate.png",
+  "selectedCandidate": "assets/dinosaurs/stegosaurus-stenops-imagegen-v92-source-candidate.png",
+  "reviewHolds": [],
+  "rejectReferences": [
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v93-source-candidate.png",
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v94-source-candidate.png",
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v95-source-candidate.png",
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v96-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/stegosaurus-p9-v93-v96-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-p9-v93-v96-crops.png",
+  "decision": "keep_v92_first_reject_v93_v96_for_ground_relative_tail_spike_failures",
+  "reason": "The user clarified that the thagomizer must not be parallel to the ground; it must rise into an upward V relative to the ground/horizon. V93-v96 improve the bony plate material but fail the stricter tail gate: v93 keeps a horizontal lower tail extension, v94 undercounts the spikes, v95 reads as three spikes plus a horizontal tail point, and v96 reads as three spikes plus a small side nub. Keep v92 first as the current count-level pass, but do not treat it as final because far-side spike clarity and ground-relative angle still need a localized control/inpaint route.",
+  "nextRoute": "Use a tail-only ControlNet or inpaint guide with a rounded tail base and four upward spikes above the horizon. Reject any output where the tail shaft continues as a horizontal point beyond the thagomizer or where any spike lies parallel to the ground.",
+  "rejectIfPromoting": [
+    "any thagomizer spike lies parallel to the ground or horizon",
+    "tail shaft continues as a long straight point beyond the thagomizer",
+    "tail tip reads as three spikes plus a small side nub",
+    "tail tip reads as five or more spikes",
+    "spikes radiate in all directions instead of forming two upward V pairs",
+    "dorsal plates share the same leather-like color or texture as the skin"
+  ]
+}

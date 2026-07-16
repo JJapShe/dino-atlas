@@ -1,0 +1,33 @@
+{
+  "taxonId": "coelophysis-bauri",
+  "experiment": "p2_v6_v8_no_extra_leg_candidates",
+  "currentPrimary": "assets/dinosaurs/coelophysis-bauri-slenderneck-smallhands-imagegen-v3.png",
+  "candidateDecisions": [
+    {
+      "source": "assets/dinosaurs/coelophysis-bauri-imagegen-v6-source-candidate.png",
+      "decision": "review_hold",
+      "reason": "Best new P2 silhouette: slim Coelophysis body, S-curved neck, full tail, two grounded hind legs, and visible tucked forelimbs; keep below v3 because hand digits can still lengthen."
+    },
+    {
+      "source": "assets/dinosaurs/coelophysis-bauri-imagegen-v7-source-candidate.png",
+      "decision": "reject_reference",
+      "reason": "Body/head read heavier and forelimb hands become longer and more hook-like, increasing extra-limb and generic theropod drift risk."
+    },
+    {
+      "source": "assets/dinosaurs/coelophysis-bauri-imagegen-v8-source-candidate.png",
+      "decision": "review_hold",
+      "reason": "Clean two-hind-leg/no-extra-leg read with full tail and small off-ground forelimbs; keep below v3 because hand and toe details remain soft."
+    }
+  ],
+  "reviewSheet": "assets/dinosaurs/coelophysis-p2-v6-v8-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/coelophysis-p2-v6-v8-crops.png",
+  "decision": "keep_current_primary",
+  "reason": "V6 and v8 add useful project-owned review holds, but neither proves cleaner hand/toe anatomy than the current v3 primary. V7 is a strict reject reference for heavier body and long hook-hand drift.",
+  "rejectIfPromoting": [
+    "forelimbs touch the ground or read as extra legs",
+    "body becomes bulky raptor, Allosaurus, Tyrannosaurus, lizard, or sauropodomorph-like",
+    "head becomes bird-beaked or feathered",
+    "hands become oversized or long dangling hooks",
+    "feet, small hands, or tail are hidden enough to block count review"
+  ]
+}

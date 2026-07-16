@@ -1,0 +1,216 @@
+{
+  "datasetId": "theropod_tyrannosaurus_v1",
+  "trigger": "theropod_tyrannosaurus",
+  "taxa": [
+    "Tyrannosaurus rex",
+    "two-fingered tyrannosaurid"
+  ],
+  "licensePolicy": "Only project-internal AI-generated images and hand-authored guides are allowed as sources. External museum/science material is reference-only, not training data.",
+  "items": [
+    {
+      "id": "tyrannosaurus_twofinger_hand_i2i_v4",
+      "role": "train_seed",
+      "source": "assets/dinosaurs/tyrannosaurus-rex-twofinger-hand-i2i-v4.png",
+      "caption": "theropod_tyrannosaurus, Tyrannosaurus rex, full body side profile, massive deep skull, smooth low brow with no horns, robust torso, long heavy balancing tail, exactly two strong hind legs, dry three-toed feet, tiny chest-held forelimbs, exactly two short clawed fingers per visible hand, dry Late Cretaceous floodplain, natural daylight, no text, no watermark",
+      "strengths": [
+        "current app first candidate for the two-finger Tyrannosaurus gate",
+        "preserves massive skull, robust body, long heavy tail, two strong hind legs, and tiny arm scale",
+        "low-denoise hand i2i makes the two-finger cue slightly cleaner than the v3 source"
+      ],
+      "risks": [
+        "exact claw shape and two-finger separation still need close crop review",
+        "skull surface texture is count-level rather than final"
+      ]
+    },
+    {
+      "id": "tyrannosaurus_smoothbrow_twofinger_v3",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/tyrannosaurus-rex-smoothbrow-twofinger-imagegen-v3.png",
+      "caption": "review hold only, Tyrannosaurus v3 source with strong body and skull but weaker two-finger hand cue than the v4 repair, not a positive LoRA seed",
+      "strengths": [
+        "strong body, skull, tail, and hind-leg source for the current v4 hand repair",
+        "useful comparison for preserving the tyrannosaurid silhouette"
+      ],
+      "risks": [
+        "hand cue is weaker than the v4 repair",
+        "not final approval quality",
+        "unsafe as train_seed while the v4 hand repair has a cleaner two-finger cue"
+      ]
+    },
+    {
+      "id": "tyrannosaurus_imagegen_v12_visible_hand_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/tyrannosaurus-rex-imagegen-v12-source-candidate.png",
+      "caption": "review hold only, fresh prompt-only Tyrannosaurus comparison with more visible hand anatomy but enlarged forelimb scale and exaggerated two-finger risk",
+      "strengths": [
+        "most useful fresh prompt-only comparison for visible hand review",
+        "keeps a recognizable full-body Tyrannosaurus silhouette, heavy tail, and two-hind-leg stance"
+      ],
+      "risks": [
+        "forelimb scale is larger than the current v4 hand-i2i seed",
+        "two visible fingers are exaggerated enough to risk allosaur-like arm drift",
+        "should not be used as a positive seed"
+      ]
+    },
+    {
+      "id": "tyrannosaurus_imagegen_v15_tucked_hand_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/tyrannosaurus-rex-imagegen-v15-source-candidate.png",
+      "caption": "review hold only, prompt-only Tyrannosaurus rex v15 source candidate, tiny tucked chest-held forelimbs, massive deep skull, full side profile, two strong hind legs, long tail, two-finger hand cue remains too soft for final approval, not a positive LoRA seed",
+      "strengths": [
+        "best P2 prompt-only source for preserving tiny tucked T. rex arm scale",
+        "keeps a recognizable full-body Tyrannosaurus silhouette, two hind legs, and long tail",
+        "useful as a localized hand i2i or ControlNet source hold"
+      ],
+      "risks": [
+        "two-finger hand detail is still too soft to replace v4",
+        "should not be trained as a positive seed until exact two compact fingers are crop-proven"
+      ]
+    },
+    {
+      "id": "tyrannosaurus_imagegen_v18_tiny_arm_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/tyrannosaurus-rex-imagegen-v18-source-candidate.png",
+      "caption": "review hold only, prompt-only Tyrannosaurus rex v18 source candidate with the best P3 tiny chest-held forelimb scale, massive deep skull, robust torso, two strong hind legs, long tail, and crop-soft two-finger hand cue",
+      "strengths": [
+        "best P3 prompt-only balance of tiny T. rex arm scale and full-body silhouette",
+        "keeps massive skull, robust torso, two hind legs, dry feet, and long heavy tail",
+        "useful as a localized hand i2i or ControlNet source hold"
+      ],
+      "risks": [
+        "two-finger hand detail is still too small and crop-soft to replace v4",
+        "should not be trained as a positive seed until exact two compact fingers are crop-proven"
+      ]
+    },
+    {
+      "id": "tyrannosaurus_imagegen_v16_tiny_arm_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/tyrannosaurus-rex-imagegen-v16-source-candidate.png",
+      "caption": "review hold only, prompt-only Tyrannosaurus rex v16 source candidate with useful tiny-arm scale and full-body silhouette, but hand digits overlap shadow",
+      "strengths": [
+        "preserves a readable full-body T. rex profile with long tail and two hind legs",
+        "keeps forelimbs small enough for the tiny-arm gate",
+        "useful comparison for low-denoise hand repair"
+      ],
+      "risks": [
+        "hand digit crop overlaps shadow and does not prove exactly two compact fingers",
+        "not suitable as a positive seed without a later clearer localized hand pass"
+      ]
+    },
+    {
+      "id": "tyrannosaurus_imagegen_v14_visible_twofinger_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/tyrannosaurus-rex-imagegen-v14-source-candidate.png",
+      "caption": "review hold only, prompt-only Tyrannosaurus rex v14 source candidate with the clearest visible two-finger cue from P2, but forelimb and hand scale are too large for representative promotion",
+      "strengths": [
+        "clearest P2 prompt-only hand visibility",
+        "useful as a comparison for two-finger crop readability"
+      ],
+      "risks": [
+        "forelimb and hand scale can become too large and allosaur-like",
+        "not suitable as a positive LoRA seed unless a later local edit restores tiny arm scale"
+      ]
+    },
+    {
+      "id": "tyrannosaurus_twofinger_bodylock_guide_v1",
+      "role": "control_reference",
+      "source": "assets/dinosaurs/tyrannosaurus-rex-twofinger-bodylock-guide-v1.png",
+      "caption": "control reference only, Tyrannosaurus rex two-finger body-lock guide, massive skull, robust torso, long heavy tail, two strong hind legs, tiny chest-held forelimbs, exactly two short clawed fingers per visible hand, no three-finger hands, no allosaur arms",
+      "strengths": [
+        "locks the two-finger hand and tiny-arm target before texture generation",
+        "useful as ControlNet, depth, line, or i2i guidance"
+      ],
+      "risks": [
+        "schematic guide, not suitable for direct LoRA training",
+        "visible control markings are for QA and generation planning only"
+      ]
+    },
+    {
+      "id": "tyrannosaurus_controlnet_v9_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/tyrannosaurus-rex-v4source-controlnet-rejected-v9.png",
+      "caption": "reject reference only, whole-body ControlNet from the v4 Tyrannosaurus source that enlarges forelimbs toward Allosaurus-like arms and weakens the exact two-finger gate",
+      "strengths": [
+        "records a dramatic but unsafe whole-body ControlNet route"
+      ],
+      "risks": [
+        "forelimbs become too large and allosaur-like",
+        "visible hand shape is less reliable for exactly two fingers",
+        "scene and body color drift away from the selected representative"
+      ]
+    },
+    {
+      "id": "tyrannosaurus_imagegen_v10_long_hand_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/tyrannosaurus-rex-imagegen-v10-source-candidate.png",
+      "caption": "reject reference only, fresh prompt-only Tyrannosaurus comparison with good body silhouette but long ambiguous hand claws that can read as extra fingers",
+      "strengths": [
+        "records a prompt route that keeps the massive body, skull, legs, and tail"
+      ],
+      "risks": [
+        "visible hand can read as long, three-pronged, or extra-fingered",
+        "forelimb cue is less reliable than the v4 i2i seed"
+      ]
+    },
+    {
+      "id": "tyrannosaurus_imagegen_v11_long_arm_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/tyrannosaurus-rex-imagegen-v11-source-candidate.png",
+      "caption": "reject reference only, fresh prompt-only Tyrannosaurus comparison whose forelimb grows too long and hand shape is not crop-safe",
+      "strengths": [
+        "records a full-body side-profile prompt route"
+      ],
+      "risks": [
+        "forelimb grows too long for the tiny-arm Tyrannosaurus gate",
+        "hand shape remains ambiguous for the exact two-finger review"
+      ]
+    },
+    {
+      "id": "tyrannosaurus_imagegen_v13_three_prong_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/tyrannosaurus-rex-imagegen-v13-source-candidate.png",
+      "caption": "reject reference only, prompt-only Tyrannosaurus rex v13 source candidate with a usable body silhouette but hand can read as three-pronged or too claw-heavy",
+      "strengths": [
+        "records a route that preserves the full-body T. rex silhouette"
+      ],
+      "risks": [
+        "hand digit crop can read as three-pronged",
+        "should be used only as a negative gate for hand-count automation"
+      ]
+    },
+    {
+      "id": "tyrannosaurus_imagegen_v17_three_prong_arm_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/tyrannosaurus-rex-imagegen-v17-source-candidate.png",
+      "caption": "reject reference only, prompt-only Tyrannosaurus rex v17 source candidate with a polished full-body silhouette but hand can read as three-pronged and forelimb scale creeps larger",
+      "strengths": [
+        "records a visually polished prompt route that preserves the broad T. rex body, two hind legs, and long tail"
+      ],
+      "risks": [
+        "visible hand can read as three-pronged",
+        "forelimb scale starts drifting larger than the strict tiny-arm gate",
+        "should be used only as a negative gate for three-prong and allosaur-arm drift"
+      ]
+    },
+    {
+      "id": "tyrannosaurus_tuckedarms_lora_v1",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/tyrannosaurus-rex-tuckedarms-lora-v1.png",
+      "caption": "review hold only, earlier Tyrannosaurus LoRA candidate with tucked arm intent",
+      "strengths": [
+        "documents earlier LoRA route and tiny-arm intent"
+      ],
+      "risks": [
+        "not reliable enough for current two-finger representative promotion",
+        "should not be used as a positive seed unless re-reviewed against the v4 body and hand gate"
+      ]
+    }
+  ],
+  "rejectCriteria": [
+    "three-finger hands or ambiguous extra fingers",
+    "forelimbs enlarged toward Allosaurus-like medium arms",
+    "horn-like brow bumps, fantasy crests, or monster skull drift",
+    "hidden hands, cropped feet, missing tail, duplicate limbs, or extra legs",
+    "logo bars, text, signatures, watermarks, or source-like bottom artifacts"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "taxonId": "ankylosaurus-magniventris",
+  "experiment": "bodylock_osteoderm_lowdenoise_v19",
+  "sourceImage": "assets/dinosaurs/ankylosaurus-magniventris-allfeet-lora-i2i-v18.png",
+  "selectedRejectReference": "assets/dinosaurs/ankylosaurus-magniventris-bodylock-osteoderm-lowdenoise-reject-v19.png",
+  "contactSheet": "tools/comfyui/outputs/ankylosaurus_bodylock_osteoderm_lowdenoise_v19-contact-sheet.png",
+  "reviewSheet": "assets/dinosaurs/ankylosaurus-bodylock-osteoderm-lowdenoise-v19-rejection-sheet.png",
+  "cropSheet": "assets/dinosaurs/ankylosaurus-bodylock-osteoderm-lowdenoise-v19-crops.png",
+  "decision": "reject_reference",
+  "reason": "Whole-body low-denoise RealVisXL i2i from v18 preserves the attached single tail club but does not improve skull breadth, foot clarity, or armor layout enough to replace v18. Several outputs lengthen the body/snout and increase generic lizard-read risk.",
+  "outputs": [
+    {
+      "label": "armor_tailclub_bodylock_01 seed 2026070151 d0.22",
+      "image": "tools/comfyui/outputs/ankylosaurus_bodylock_osteoderm_lowdenoise_v19_armor_tailclub_bodylock_01_seed2026070151_d22.png",
+      "variation": "neutral broadside reference stance, skull, shoulders, hips, tail shaft, and club aligned for easy crop review",
+      "decision": "reject_reference"
+    },
+    {
+      "label": "armor_tailclub_bodylock_01 seed 2026070152 d0.22",
+      "image": "tools/comfyui/outputs/ankylosaurus_bodylock_osteoderm_lowdenoise_v19_armor_tailclub_bodylock_01_seed2026070152_d22.png",
+      "variation": "neutral broadside reference stance, skull, shoulders, hips, tail shaft, and club aligned for easy crop review",
+      "decision": "reject_reference"
+    },
+    {
+      "label": "armor_tailclub_bodylock_01 seed 2026070151 d0.30",
+      "image": "tools/comfyui/outputs/ankylosaurus_bodylock_osteoderm_lowdenoise_v19_armor_tailclub_bodylock_01_seed2026070151_d30.png",
+      "variation": "neutral broadside reference stance, skull, shoulders, hips, tail shaft, and club aligned for easy crop review",
+      "decision": "reject_reference"
+    },
+    {
+      "label": "armor_tailclub_bodylock_01 seed 2026070152 d0.30",
+      "image": "tools/comfyui/outputs/ankylosaurus_bodylock_osteoderm_lowdenoise_v19_armor_tailclub_bodylock_01_seed2026070152_d30.png",
+      "variation": "neutral broadside reference stance, skull, shoulders, hips, tail shaft, and club aligned for easy crop review",
+      "decision": "reject_reference"
+    },
+    {
+      "label": "armor_tailclub_osteoderm_01 seed 2026070151 d0.22",
+      "image": "tools/comfyui/outputs/ankylosaurus_bodylock_osteoderm_lowdenoise_v19_armor_tailclub_osteoderm_01_seed2026070151_d22.png",
+      "variation": "emphasize low rounded osteoderms and oval bony armor plates across the neck, shoulders, back, flanks, hips, and tail base, no tall plates",
+      "decision": "reject_reference"
+    },
+    {
+      "label": "armor_tailclub_osteoderm_01 seed 2026070152 d0.22",
+      "image": "tools/comfyui/outputs/ankylosaurus_bodylock_osteoderm_lowdenoise_v19_armor_tailclub_osteoderm_01_seed2026070152_d22.png",
+      "variation": "emphasize low rounded osteoderms and oval bony armor plates across the neck, shoulders, back, flanks, hips, and tail base, no tall plates",
+      "decision": "reject_reference"
+    },
+    {
+      "label": "armor_tailclub_osteoderm_01 seed 2026070151 d0.30",
+      "image": "tools/comfyui/outputs/ankylosaurus_bodylock_osteoderm_lowdenoise_v19_armor_tailclub_osteoderm_01_seed2026070151_d30.png",
+      "variation": "emphasize low rounded osteoderms and oval bony armor plates across the neck, shoulders, back, flanks, hips, and tail base, no tall plates",
+      "decision": "reject_reference"
+    },
+    {
+      "label": "armor_tailclub_osteoderm_01 seed 2026070152 d0.30",
+      "image": "tools/comfyui/outputs/ankylosaurus_bodylock_osteoderm_lowdenoise_v19_armor_tailclub_osteoderm_01_seed2026070152_d30.png",
+      "variation": "emphasize low rounded osteoderms and oval bony armor plates across the neck, shoulders, back, flanks, hips, and tail base, no tall plates",
+      "decision": "reject_reference"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "taxonId": "apatosaurus-ajax",
+  "experiment": "p1_v3_v5_source_candidates",
+  "previousPrimary": "assets/dinosaurs/apatosaurus-ajax-smallhead-imagegen-v2.png",
+  "selectedPrimary": "assets/dinosaurs/apatosaurus-ajax-imagegen-v3-source-candidate.png",
+  "reviewHolds": [
+    "assets/dinosaurs/apatosaurus-ajax-imagegen-v4-source-candidate.png",
+    "assets/dinosaurs/apatosaurus-ajax-imagegen-v5-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/apatosaurus-p1-v3-v5-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/apatosaurus-p1-v3-v5-crops.png",
+  "decision": "promote_v3_count_level_pass",
+  "reason": "V3 improves the low-neck Apatosaurus read over v2 by keeping the neck almost horizontal, the shoulders low, the full long tail in frame, and exactly four visible pillar legs without Brachiosaurus drift. Keep v2 as a supporting review hold because skull and foot detail remain count-level rather than final.",
+  "rejectIfPromoting": [
+    "neck rises into a vertical or Brachiosaurus-like pose",
+    "forelimbs become taller than hind limbs or shoulders peak above the hips",
+    "tail is cropped, duplicated, too short, or dragging on the ground",
+    "feet are hidden or shadows create extra limb silhouettes",
+    "head becomes predator-like, toothy, mammal-like, or too large"
+  ]
+}

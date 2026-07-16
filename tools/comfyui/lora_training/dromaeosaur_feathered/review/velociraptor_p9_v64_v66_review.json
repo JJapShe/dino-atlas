@@ -1,0 +1,27 @@
+{
+  "taxonId": "velociraptor-mongoliensis",
+  "experiment": "p9_v64_v66_nonbird_head_and_plumage_variation",
+  "currentPrimary": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v63-source-candidate.png",
+  "reviewHolds": [
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v65-source-candidate.png",
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v56-source-candidate.png"
+  ],
+  "rejectReferences": [
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v64-source-candidate.png",
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v66-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/velociraptor-p9-v64-v66-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/velociraptor-p9-v64-v66-crops.png",
+  "decision": "keep_v63_primary_add_v65_as_review_hold_reject_v64_v66",
+  "reason": "The P9 prompt-only pass improves species-level dark speckled and rust facial color variation, but none of v64-v66 beats v63 across the full identity gate. V65 has the best new non-bird toothed head and long stiff tail silhouette, but its raised sickle claw still reads too large for promotion. V64 overbuilds the claw and risks wing-fan forelimbs; v66 has useful color but long hand-like forelimb fingers and oversized raised claws.",
+  "nextRoute": "Use v65 only as a visual review hold and possible foot-local i2i source. The primary route remains v63 plus foot topology guide, with strict rejection for modern-bird head, wing-fan arms, detached or giant hook claws, and crowded toe counts.",
+  "rejectIfPromoting": [
+    "head reads as a modern bird, hawk, owl, rooster, or toothless beak",
+    "folded forelimbs become broad spread wings or long human-like hands",
+    "sickle claw reads as a detached crescent, giant hook, black talon, or eagle talon",
+    "feet do not show two grounded walking toes plus one attached raised second toe",
+    "toe count becomes crowded, duplicated, or mammal-like",
+    "tail is cropped, duplicated, soft, or hidden",
+    "plumage collapses back to plain samey brown without species-level distinction"
+  ]
+}

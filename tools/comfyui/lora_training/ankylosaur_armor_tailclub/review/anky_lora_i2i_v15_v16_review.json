@@ -1,0 +1,35 @@
+{
+  "taxonId": "ankylosaurus-magniventris",
+  "route": "v14 source, weak Ankylosaurus_Dinosaur LoRA, osteoderm-band v15 and foot-only v16 inpaint",
+  "source": "assets/dinosaurs/ankylosaurus-magniventris-broadskull-i2i-v14.png",
+  "selectedComparisons": [
+    "assets/dinosaurs/ankylosaurus-magniventris-osteoderm-lora-i2i-comparison-v15.png",
+    "assets/dinosaurs/ankylosaurus-magniventris-sturdy-toes-lora-i2i-comparison-v16.png"
+  ],
+  "lora": "Ankylosaurus_Dinosaur.safetensors",
+  "loraStrength": 0.08,
+  "clipStrength": 0.05,
+  "v15": {
+    "seed": 2026070747,
+    "denoise": 0.16,
+    "decision": "anatomy-review comparison; do not replace v14 primary"
+  },
+  "v16": {
+    "seed": 2026070750,
+    "denoise": 0.14,
+    "mask": "assets/dinosaurs/ankylosaurus-sturdy-toes-i2i-mask-v16.png",
+    "decision": "anatomy-review comparison; possible foot-read improvement but not enough to replace v14 yet"
+  },
+  "passChecks": [
+    "low armored body preserved",
+    "broad blunt skull preserved",
+    "single attached tail club preserved",
+    "four visible feet preserved at app scale"
+  ],
+  "remainingRisks": [
+    "v15 mostly preserves rather than improving armor layout",
+    "v16 may slightly improve toe readability but needs close reference review before promotion",
+    "exact toe count and armor-row layout still need final review"
+  ],
+  "nextRoute": "If continuing Ankylosaurus, use a tighter toe-tip mask or a reviewed ankylosaur foot reference; do not replace v14 unless feet and armor rows visibly improve together without weakening the skull or tail club."
+}

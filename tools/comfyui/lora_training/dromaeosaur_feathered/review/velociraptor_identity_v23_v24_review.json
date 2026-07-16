@@ -1,0 +1,34 @@
+{
+  "taxon": "velociraptor-mongoliensis",
+  "decision": "diagnostic_only_rejected",
+  "currentPrimary": "assets/dinosaurs/velociraptor-mongoliensis-small-sickle-imagegen-v9.png",
+  "outputs": [
+    {
+      "route": "identity_controlnet_v23",
+      "seed": 2026070201,
+      "strength": 0.5,
+      "endPercent": 0.64,
+      "image": "assets/dinosaurs/velociraptor-mongoliensis-identity-controlnet-rejected-v23.png",
+      "fail": [
+        "feathered dromaeosaur identity weakens",
+        "attached raised second-toe sickle claw is less clear than current v9",
+        "head and body read as a generic theropod instead of a feathered Velociraptor"
+      ]
+    },
+    {
+      "route": "v9_identity_ipadapter_i2i_v24",
+      "seed": 2026070261,
+      "denoise": 0.42,
+      "ipWeight": 0.38,
+      "image": "assets/dinosaurs/velociraptor-mongoliensis-v9-identity-ipi2i-rejected-v24.png",
+      "fail": [
+        "output collapses into flat guide-like art",
+        "not app-ready natural paleoart quality",
+        "does not improve the v9 head/feather/attached-sickle balance"
+      ]
+    }
+  ],
+  "reviewSheet": "assets/dinosaurs/velociraptor-identity-v23-v24-rejection-sheet.png",
+  "cropSheet": "assets/dinosaurs/velociraptor-identity-v23-v24-rejection-crops.png",
+  "nextAction": "Keep v9 as primary. Future attempts should preserve the v9 natural image and use a more localized foot/head mask or stronger dromaeosaur-specific conditioning; do not promote guide-source whole-body ControlNet or IP-i2i outputs that lose feathers or natural image quality."
+}

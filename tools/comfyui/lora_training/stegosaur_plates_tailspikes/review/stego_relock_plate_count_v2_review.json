@@ -1,0 +1,37 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "round": "stego_relock_plate_count_v2",
+  "date": "2026-06-23",
+  "goal": "Test whether a low-opacity local plate-count and thagomizer seed over the current relock candidate can be naturalized by the SDXL refiner.",
+  "inputs": {
+    "source": "assets/dinosaurs/stegosaurus-stenops-plate-relock-ipcontrol-v1.png",
+    "script": "tools/comfyui/scripts/paint_stego_relock_plate_count.py"
+  },
+  "experiments": [
+    {
+      "prefix": "stego_relock_plate_count_v1",
+      "type": "local plate-count and thagomizer overlay",
+      "finding": "Rejected before review export. The added plate row sat too high and read as a detached translucent guide arc rather than natural embedded dorsal plates."
+    },
+    {
+      "prefix": "stego_relock_plate_count_v2",
+      "type": "lower-opacity local plate-count and thagomizer overlay",
+      "sheet": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_relock_plate_count_v2_rejected_contact_sheet.png",
+      "plateCrops": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_relock_plate_count_v2_rejected_plate_crops.png",
+      "tailCrops": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_relock_plate_count_v2_rejected_tail_crops.png",
+      "finding": "Still rejected. The plate count cue is clearer, but the added plates remain translucent and detached from the back. The four-spike thagomizer is visible only as a graphic guide."
+    },
+    {
+      "prefix": "stego_relock_plate_count_refiner_v1",
+      "type": "SDXL refiner i2i over v2a/v2b at denoise 0.18 and 0.28",
+      "sheet": "tools/comfyui/lora_training/stegosaur_plates_tailspikes/review/stego_relock_plate_count_refiner_v1_rejected_contact_sheet.png",
+      "finding": "Rejected. The refiner preserved the translucent guide artifacts and introduced face/body drift instead of turning the overlays into natural bony plates and tail spikes."
+    }
+  ],
+  "decision": {
+    "promotedAsset": null,
+    "status": "rejected",
+    "reason": "Local translucent guide overlays plus low-denoise refiner are not enough to create a usable Stegosaurus candidate. The current app-first relock candidate remains better.",
+    "nextRoute": "Do not continue with translucent overlay seeds. Build a focused stegosaurian plate/thagomizer LoRA or a cleaner opaque synthetic training/control set where plate count and thagomizer are already natural-looking before refiner passes."
+  }
+}

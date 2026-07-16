@@ -1,0 +1,23 @@
+{
+  "taxonId": "triceratops-horridus",
+  "experiment": "allfeet_lora_i2i_v21_v22",
+  "sourceImage": "assets/dinosaurs/triceratops-horridus-lowbody-closedbeak-i2i-v9.png",
+  "maskImage": "assets/dinosaurs/triceratops-allfeet-i2i-mask-v21.png",
+  "comparisonNoLora": "assets/dinosaurs/triceratops-horridus-allfeet-i2i-comparison-v21.png",
+  "comparisonWeakLora": "assets/dinosaurs/triceratops-horridus-allfeet-lora-i2i-comparison-v22.png",
+  "reviewSheet": "assets/dinosaurs/triceratops-allfeet-lora-i2i-v21-v22-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/triceratops-allfeet-lora-i2i-v21-v22-crops.png",
+  "decision": "promote_candidate_pending_app_review",
+  "selectedSeed": 2026070914,
+  "selectedDenoise": 0.18,
+  "lora": "TriceratopsXL0_4.safetensors",
+  "loraStrength": 0.06,
+  "clipStrength": 0.04,
+  "reasons": [
+    "v22 improves toe separation across the visible feet more than v19/v20 while preserving the v9 anti-rhino body gate",
+    "closed beak, two brow horns, one nasal horn, skull-attached frill, low elongated body, and long tail remain stable",
+    "white claw highlights are more visible, so final promotion still needs close human review against the crop sheet"
+  ],
+  "keepComparisonGate": "assets/dinosaurs/triceratops-horridus-lowbody-closedbeak-i2i-v9.png",
+  "nextRoute": "If v22 is accepted manually, use it as the new Triceratops primary; otherwise keep v9 and try an even tighter toe-tip mask to reduce bright claw overemphasis."
+}

@@ -1,0 +1,22 @@
+{
+  "taxonId": "ankylosaurus-magniventris",
+  "route": "local SDXL inpaint from v5 using a tight head-only mask",
+  "source": "assets/dinosaurs/ankylosaurus-magniventris-broadskull-singleclub-imagegen-v5.png",
+  "selectedCandidate": "assets/dinosaurs/ankylosaurus-magniventris-broadskull-i2i-v14.png",
+  "mask": "assets/dinosaurs/ankylosaurus-broadskull-i2i-mask-v14.png",
+  "seed": 2026070645,
+  "denoise": 0.12,
+  "decision": "promote ahead of v5 as the first count-level candidate",
+  "passChecks": [
+    "broad low armored body preserved",
+    "dense low rounded osteoderm rows preserved",
+    "four visible sturdy feet preserved",
+    "thick low tail and single attached oval club preserved",
+    "head reads slightly shorter and more blunt than the v5 source"
+  ],
+  "remainingRisks": [
+    "species-level skull proportions still need reference review",
+    "toe detail remains only count-level rather than final",
+    "armor layout is strong at app scale but not scientifically audited plate-by-plate"
+  ]
+}

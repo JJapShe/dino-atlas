@@ -1,0 +1,846 @@
+{
+  "datasetId": "stegosaur_plates_tailspikes_v1",
+  "trigger": "stegosaur_plates_tailspikes",
+  "taxa": [
+    "Stegosaurus stenops",
+    "stegosaurian dinosaur"
+  ],
+  "licensePolicy": "Only project-internal AI-generated images and hand-authored guides are allowed as sources. External museum/science material is reference-only, not training data.",
+  "items": [
+    {
+      "id": "stegosaurus_imagegen_v92_bony_plate_upward_v_tail",
+      "role": "train_seed",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v92-source-candidate.png",
+      "caption": "stegosaur_plates_tailspikes, Stegosaurus stenops, full body side profile, low quadrupedal dinosaur, small low head, arched body, long tail, separate rough bony or keratin dorsal plates with rust-red centers and pale chipped rims, visible gaps between broad plates, larger plates over mid-back and hips, smaller plates near neck and tail base, four visible planted feet, tail ending in exactly four visible thagomizer spikes rising upward in paired V shapes relative to the ground or horizon, dry Late Jurassic floodplain, natural daylight, no text, no watermark",
+      "strengths": [
+        "current app first candidate after P8 crop review",
+        "best current separation between dark pebbled skin and rough rust-red/pale-bone dorsal plates",
+        "closest current upward paired-V thagomizer read with four countable spikes",
+        "full side-profile body, small head, long tail, and four feet remain readable"
+      ],
+      "risks": [
+        "P9 review clarified that any horizontal tail-point or ground-parallel lower spike should block final approval",
+        "exact staggered two-row plate bases still need final reference review",
+        "far-side thagomizer pair can still be improved for cleaner count proof",
+        "foot/toe anatomy remains count-level rather than final"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v100_bony_plate_material_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v100-source-candidate.png",
+      "caption": "review hold only, P11 Stegosaurus stenops candidate with strong rough opaque pale-bone and rust dorsal plate material clearly different from skin, but thagomizer can read as five spikes or a radial cluster instead of exactly four upward V spikes",
+      "strengths": [
+        "best P11 reference for rough bony or keratin plate material",
+        "plates are visibly different from body skin in color and texture",
+        "full low quadrupedal body, small head, tail, and feet remain reviewable"
+      ],
+      "risks": [
+        "thagomizer can overcount as five spikes or radial cluster",
+        "tail gate does not beat v92",
+        "keep outside positive LoRA training unless tail-local correction fixes exactly four upward spikes"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v101_tail_spear_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v101-source-candidate.png",
+      "caption": "reject reference only, P11 Stegosaurus stenops candidate with useful differentiated bony plate color but a straight tail-spear continuation and unclear exactly-four upward thagomizer count",
+      "strengths": [
+        "documents that plate color and bony texture can improve under prompt-only routing"
+      ],
+      "risks": [
+        "tail continues as a straight spear-like point beyond the thagomizer",
+        "four-spike upward V count is not proven",
+        "unsafe as positive training material"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v102_tail_parallel_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v102-source-candidate.png",
+      "caption": "reject reference only, P11 Stegosaurus stenops candidate with strong separated bony dorsal plates but lower tail point running too parallel to the tail or ground plus spear drift",
+      "strengths": [
+        "useful separated bony plate and color contrast comparison"
+      ],
+      "risks": [
+        "lower tail point runs too parallel to tail or ground",
+        "tail tip adds straight spear drift beyond the spike base",
+        "unsafe as positive training material"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v93_horizontal_tail_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v93-source-candidate.png",
+      "caption": "reject reference only, P9 Stegosaurus stenops candidate with useful bony plate material but a tail tip that still reads as a ground-parallel lower spike or continued horizontal tail point",
+      "strengths": [
+        "documents that prompt-only upward-V wording can preserve plate material"
+      ],
+      "risks": [
+        "horizontal tail extension fails the ground-relative upward-V thagomizer gate",
+        "unsafe as positive training material"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v94_thagomizer_undercount_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v94-source-candidate.png",
+      "caption": "reject reference only, P9 Stegosaurus stenops candidate that reduces horizontal lower-spike drift but reads closer to three large thagomizer spikes than four",
+      "strengths": [
+        "documents a partial reduction of flat lower spike drift"
+      ],
+      "risks": [
+        "four-spike count is not clear",
+        "unsafe as positive training material"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v95_horizontal_tailpoint_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v95-source-candidate.png",
+      "caption": "reject reference only, P9 Stegosaurus stenops candidate with clearer upward prongs but a small horizontal tail point continuing beyond the thagomizer",
+      "strengths": [
+        "documents clearer upward-prong direction from the strict prompt"
+      ],
+      "risks": [
+        "tail shaft continues as a horizontal point beyond the spikes",
+        "unsafe as positive training material"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v96_three_spike_nub_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v96-source-candidate.png",
+      "caption": "reject reference only, P9 Stegosaurus stenops rounded-tail-base attempt that reads as three spikes plus a small side nub instead of four countable upward spikes",
+      "strengths": [
+        "documents the best no-long-tail prompt attempt from P9"
+      ],
+      "risks": [
+        "tail reads as three spikes plus nub",
+        "unsafe as positive training material"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v97_lower_angle_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v97-source-candidate.png",
+      "caption": "reject reference only, P10 Stegosaurus stenops candidate with useful bony plate material but a rear lower thagomizer point that still reads too ground-parallel or tail-parallel rather than rising upward relative to the horizon",
+      "strengths": [
+        "documents that stricter upward-V wording can preserve body and bony plate material"
+      ],
+      "risks": [
+        "lower tail point still fails the ground-relative upward-V thagomizer gate",
+        "unsafe as positive training material"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v98_horizontal_tailpoint_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v98-source-candidate.png",
+      "caption": "reject reference only, P10 Stegosaurus stenops candidate with a clear upper V pair but a straight horizontal side point continuing along the tail shaft",
+      "strengths": [
+        "documents a prompt route with useful upper thagomizer direction and plate material"
+      ],
+      "risks": [
+        "tail shaft continues as a horizontal point beyond the spike base",
+        "lower pair is not safely angled upward relative to the ground",
+        "unsafe as positive training material"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v99_radial_count_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v99-source-candidate.png",
+      "caption": "reject reference only, P10 Stegosaurus stenops candidate with improved upward spike direction but a thagomizer that can read as five spikes or a radial cluster instead of exactly four paired upward V spikes",
+      "strengths": [
+        "best P10 evidence that the tail-spike direction can move upward relative to the ground"
+      ],
+      "risks": [
+        "spike count can read as five or radial/starburst rather than exactly four",
+        "unsafe as positive training material despite improved direction"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v90_bony_plate_lateral_tail_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v90-source-candidate.png",
+      "caption": "review hold only, P8 Stegosaurus stenops candidate with strong separate rust-red bony plate material and useful color separation, but one thagomizer spike reads too lateral compared with the requested upward V arrangement",
+      "strengths": [
+        "strong distinct bony/keratin plate color and texture compared with skin",
+        "low quadrupedal body, head, feet, and tail remain reviewable"
+      ],
+      "risks": [
+        "tail spike direction is too lateral or horizontal for the upward V gate",
+        "not safer than v92 for positive training"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v91_double_v_three_spike_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v91-source-candidate.png",
+      "caption": "review hold only, P8 Stegosaurus stenops candidate with good separate bony plate material and upward thagomizer direction, but the tail can read as only three visible spikes at crop scale",
+      "strengths": [
+        "good rough bony plate material with rust-red centers and pale rims",
+        "tail direction is closer to an upward V than earlier horizontal attempts"
+      ],
+      "risks": [
+        "fourth thagomizer spike is not clearly countable at crop scale",
+        "unsafe as a positive seed until all four spikes are visible"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v86_four_spike_separated_tail",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v86-source-candidate.png",
+      "caption": "previous review hold, Stegosaurus stenops v86 with broad separated dorsal plates, low quadrupedal body, small head, four visible feet, and a useful four-spike thagomizer read, but dorsal plates are too close to the skin color and can read leather-like compared with v92",
+      "strengths": [
+        "previous app first candidate after P6 crop review",
+        "useful broad separated dorsal plates, low body, and four-spike thagomizer comparison",
+        "stable full-body side profile with four visible feet and long tail"
+      ],
+      "risks": [
+        "dorsal plates are too similar to skin color and texture for the new bony-plate material gate",
+        "exact alternating two-row plate placement is still not final",
+        "far-side feet and toe shapes remain count-level rather than final"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v88_leaf_plate_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v88-source-candidate.png",
+      "caption": "review hold only, P7 Stegosaurus stenops candidate with near-four thagomizer read and stable low body, but dorsal plates become larger, rounder, and more leaf or fan-like than v86",
+      "strengths": [
+        "near-four tail-spike read and stable low quadrupedal body",
+        "full side profile, small head, feet, and tail remain reviewable"
+      ],
+      "risks": [
+        "dorsal plates are rounder and more leaf/fan-like than v86",
+        "plate bases still do not prove clearer alternating two-row topology",
+        "not safer than v86 for positive training"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v89_stable_tail_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v89-source-candidate.png",
+      "caption": "review hold only, P7 Stegosaurus stenops candidate with stable body and tail-spike read, but plates do not improve over v86 and head framing is tighter",
+      "strengths": [
+        "stable Stegosaurus body, long tail, and reviewable thagomizer area",
+        "useful comparison for tail stability while testing plate prompts"
+      ],
+      "risks": [
+        "dorsal plate topology does not beat v86",
+        "head and front framing are tighter than the current first candidate",
+        "not a positive seed unless later review prefers its tail stability"
+      ]
+    },
+    {
+      "id": "stegosaurus_alternatingplate_fourspike_v6",
+      "role": "train_seed",
+      "source": "assets/dinosaurs/stegosaurus-stenops-alternatingplate-fourspike-imagegen-v6.png",
+      "caption": "stegosaur_plates_tailspikes, Stegosaurus stenops, full body side profile, low quadrupedal dinosaur, small low head, arched body, long tail, broad separated bony dorsal plates in a staggered alternating two-row read, larger plates over mid-back and hips, smaller plates near neck and tail base, visible gaps between plates, four planted feet, tail ending in exactly four visible thagomizer spikes, dry Late Jurassic floodplain, natural daylight, no text, no watermark",
+      "strengths": [
+        "best current natural app-scale balance of plate row and thagomizer",
+        "four countable tail spikes are visible",
+        "low quadrupedal body, small head, and four feet remain readable",
+        "broad dorsal plates are more Stegosaurus-like than previous petal or comb routes"
+      ],
+      "risks": [
+        "exact alternating two-row placement is still not final",
+        "plate bases can still read like a single row at some scales",
+        "tail-spike count and foot details still need close reference review"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v84_four_spike_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v84-source-candidate.png",
+      "caption": "review hold only, prompt-only Stegosaurus stenops v84 candidate with broad separated dorsal plates and a strong exactly four-spike thagomizer read, oversized mid-plate risk, not a positive LoRA seed",
+      "strengths": [
+        "strong four-spike thagomizer read with separated spike tips",
+        "broad dorsal plates and low quadrupedal Stegosaurus body remain readable",
+        "useful comparison for future tail-count-locked prompting"
+      ],
+      "risks": [
+        "mid-back plates are oversized and less natural than v86",
+        "plate arrangement is not clearly stronger than the promoted v86 candidate",
+        "should stay as review evidence rather than a positive seed"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v85_three_spike_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v85-source-candidate.png",
+      "caption": "reject reference only, prompt-only Stegosaurus v85 has a usable body and broad plates but the tail weapon can read as only three countable thagomizer spikes",
+      "strengths": [
+        "documents a prompt route with broad separated dorsal plates and stable quadrupedal body"
+      ],
+      "risks": [
+        "tail weapon can read as three countable spikes instead of exactly four",
+        "unsafe as positive training material even though the plates are useful"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v87_five_spike_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v87-source-candidate.png",
+      "caption": "reject reference only, P7 Stegosaurus stenops candidate with a similar body and plate read to v86 but tail tip can read as five thagomizer spikes",
+      "strengths": [
+        "documents a prompt route that preserves the v86-like body and broad plate read"
+      ],
+      "risks": [
+        "tail tip can read as five countable spikes instead of exactly four",
+        "plate topology does not improve enough to offset the tail-count failure",
+        "unsafe as positive training material because it reinforces extra-spike drift"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v72_broad_plate_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v72-source-candidate.png",
+      "caption": "review hold only, prompt-only Stegosaurus stenops v72 candidate with strong broad separated upright bony dorsal plates, rough plate surfaces, visible sky gaps, low quadrupedal body, and long tail, thagomizer overcount risk, not a positive LoRA seed",
+      "strengths": [
+        "strongest new prompt-only candidate for broad rough separated Stegosaurus plate identity",
+        "low quadrupedal body, small head, long tail, and planted feet remain readable",
+        "useful as a visual target for future plate-texture and plate-size prompts"
+      ],
+      "risks": [
+        "tail tip appears to overcount the thagomizer rather than proving exactly four spikes",
+        "alternating two-row plate topology still needs crop proof",
+        "must stay below v6 and outside positive LoRA training until the tail gate is solved"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v77_broad_plate_overcount_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v77-source-candidate.png",
+      "caption": "review hold only, prompt-only Stegosaurus stenops v77 candidate with strong broad separated dorsal plates and low quadrupedal body, but thagomizer overcount risk, not a positive LoRA seed",
+      "strengths": [
+        "strong fresh broad-plate candidate with good separated plate mass",
+        "keeps a recognizable low quadrupedal Stegosaurus body and long tail",
+        "useful comparison for plate shape and sky-gap prompting"
+      ],
+      "risks": [
+        "tail tip still appears to overcount the thagomizer rather than proving exactly four spikes",
+        "plate surface can still drift toward leaf-like texture",
+        "must remain below v6 until plate and tail gates pass together"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v79_broad_plate_nearfour_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v79-source-candidate.png",
+      "caption": "review hold only, prompt-only Stegosaurus stenops v79 candidate with broad separated dorsal plates, low quadrupedal body, and near-four thagomizer read, lower tail overlap can still read as an extra spike, not a positive LoRA seed",
+      "strengths": [
+        "best P4 compromise between broad separated plate mass and a near-four tail read",
+        "keeps a recognizable low quadrupedal Stegosaurus body and small head",
+        "useful comparison for broad-plate prompting and tail-spike crop review"
+      ],
+      "risks": [
+        "lower thagomizer overlap can still read as an extra tail spike",
+        "not safe as a train_seed until exactly four tail spikes are unambiguous",
+        "must remain below v6 until broad plates and four tail spikes pass together"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v82_tail_count_locked_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v82-source-candidate.png",
+      "caption": "review hold only, prompt-only Stegosaurus stenops v82 candidate with broad separated dorsal plates, low quadrupedal body, and the clearest fresh near-four thagomizer read, lower right tail-spike overlap risk, not a positive LoRA seed",
+      "strengths": [
+        "clearest P5 candidate for a near-four large thagomizer read",
+        "keeps broad separated dorsal plates and a recognizable low quadrupedal Stegosaurus body",
+        "useful comparison for future tail-count-locked prompting"
+      ],
+      "risks": [
+        "lower right tail-spike geometry can still read as overlapping or duplicated",
+        "alternating two-row plate topology is not clearly stronger than v6",
+        "must remain below v6 and outside positive LoRA training until exact four-spike count is unambiguous"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v83_lower_overlap_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v83-source-candidate.png",
+      "caption": "review hold only, prompt-only Stegosaurus stenops v83 candidate with useful low side body, broad separated plates, and lower thagomizer overlap risk, not a positive LoRA seed",
+      "strengths": [
+        "keeps a stable side-profile Stegosaurus body and broad plate read",
+        "tail outline is useful as a comparison against v79 and v82"
+      ],
+      "risks": [
+        "lower thagomizer spike still overlaps enough to remain unsafe",
+        "tail count is not unambiguous at crop scale",
+        "must remain excluded from positive LoRA training"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v81_tail_overcount_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v81-source-candidate.png",
+      "caption": "reject reference only, prompt-only Stegosaurus v81 has useful broad plates but clearly overcounts the thagomizer as five or more spikes",
+      "strengths": [
+        "documents a prompt route that preserves broad separated dorsal plates"
+      ],
+      "risks": [
+        "thagomizer reads as five or more spikes",
+        "unsafe as positive training material even though the plates are useful"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v78_tail_overcount_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v78-source-candidate.png",
+      "caption": "reject reference only, prompt-only Stegosaurus v78 has strong broad separated plates but clearly overcounts the thagomizer",
+      "strengths": [
+        "documents a strong broad separated plate target with visible sky gaps"
+      ],
+      "risks": [
+        "thagomizer reads as five or more spikes",
+        "unsafe as positive training material even though the plates are strong"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v80_extra_spike_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v80-source-candidate.png",
+      "caption": "reject reference only, prompt-only Stegosaurus v80 has a good side silhouette and broad plates but can read as an extra lower thagomizer spike",
+      "strengths": [
+        "documents a useful side-profile silhouette and broad dorsal plate size"
+      ],
+      "risks": [
+        "tail tip can read as an added lower spike",
+        "plate topology is not stronger than v79",
+        "unsafe as positive training material"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v75_tail_overcount_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v75-source-candidate.png",
+      "caption": "reject reference only, prompt-only Stegosaurus v75 has strong broad plates but clearly overcounts tail spikes",
+      "strengths": [
+        "documents a prompt route that improves broad dorsal plate mass"
+      ],
+      "risks": [
+        "thagomizer clearly has too many spikes",
+        "unsafe as positive training material even though plates are strong"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v76_leaf_plate_overcount_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v76-source-candidate.png",
+      "caption": "reject reference only, prompt-only Stegosaurus v76 has broad plates but risks leaf-vein plate surfaces and too many tail spikes",
+      "strengths": [
+        "documents a prompt route with large separated plate silhouettes"
+      ],
+      "risks": [
+        "tail tip overcounts the thagomizer",
+        "plate surfaces show leaf-vein-like central lines",
+        "unsafe as positive training material"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v73_clean_plate_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v73-source-candidate.png",
+      "caption": "review hold only, prompt-only Stegosaurus stenops v73 candidate with clean broad plate gaps and bony plate surfaces, low quadrupedal body, but tail tip undercounts the four-spike thagomizer",
+      "strengths": [
+        "cleaner plate gaps and plate surface than many earlier prompt-only candidates",
+        "keeps a recognizable low Stegosaurus body"
+      ],
+      "risks": [
+        "tail reads closer to three visible spikes rather than exactly four",
+        "not a decisive improvement over v6 because the thagomizer gate fails"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v74_tail_count_diagnostic",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v74-source-candidate.png",
+      "caption": "reject reference only, prompt-only Stegosaurus v74 makes the tail weapon large and reviewable but weakens representative side-profile posture, leg read, and plate count",
+      "strengths": [
+        "documents a prompt route where the thagomizer target becomes large and visible"
+      ],
+      "risks": [
+        "pose and tail angle are too staged for a representative atlas image",
+        "leg read and plate count are weaker than v6 or v72",
+        "unsafe as positive training material because it may reinforce non-side-profile tail display"
+      ]
+    },
+    {
+      "id": "stegosaurus_plate_row_i2i_v69",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-plate-row-i2i-v69.png",
+      "caption": "review hold only, low-denoise custom dorsal-plate-row inpaint over the current v6 Stegosaurus candidate, stable quadrupedal body, small low head, broad separated dorsal plates with slightly harder edges, visible four-spike thagomizer, not a positive LoRA seed",
+      "strengths": [
+        "keeps the current v6 body, feet, tail, and four-spike thagomizer stable",
+        "slightly hardens dorsal plate edges without creating a single sail",
+        "useful as a comparison source for future plate-row mask experiments"
+      ],
+      "risks": [
+        "alternating two-row topology is still not clearly stronger than v6",
+        "plate improvement is subtle at atlas-card scale",
+        "unsafe as train_seed because it may reinforce the current one-row-looking plate bases"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v71_two_row_plate_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v71-source-candidate.png",
+      "caption": "review hold only, prompt-only Stegosaurus stenops candidate with stronger staggered two-row dorsal-plate overlap, low quadrupedal body, small low head, long tail, visible thagomizer, tail-spike count risk, not a positive LoRA seed",
+      "strengths": [
+        "strongest new prompt-only candidate for a staggered two-row dorsal-plate read",
+        "keeps a low quadrupedal Stegosaurus body, small head, long tail, and visible feet",
+        "useful comparison source for future plate topology or thagomizer-local routes"
+      ],
+      "risks": [
+        "tail-spike count can collapse at crop scale and may not prove exactly four spikes",
+        "plate bases still need reference review before any promotion",
+        "must stay below v6 until plate topology and four-spike thagomizer are both stronger in the same image"
+      ]
+    },
+    {
+      "id": "stegosaurus_imagegen_v70_broad_plate_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v70-source-candidate.png",
+      "caption": "review hold only, prompt-only Stegosaurus stenops candidate with broad separated dorsal plates, low quadrupedal body, small head, long tail, and visible thagomizer, mostly single-row plate-base risk, not a positive LoRA seed",
+      "strengths": [
+        "broad plate size and surface are useful at atlas-card scale",
+        "tail spikes remain more readable than many earlier prompt-only candidates",
+        "keeps the small low head, low quadrupedal body, and long tail"
+      ],
+      "risks": [
+        "dorsal plates still read mostly as one row rather than a proven alternating two-row topology",
+        "not a decisive improvement over the current v6 first candidate",
+        "must remain excluded from positive LoRA training until manually approved"
+      ]
+    },
+    {
+      "id": "stegosaurus_angular_plate_v1",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-angular-plate-ipcontrol-v1.png",
+      "caption": "review hold only, natural broad-plate Stegosaurus comparison with fused/scalloped plate bases and missing four-spike thagomizer, not a positive LoRA seed",
+      "strengths": [
+        "best current natural app-connected broad-plate signal",
+        "quadrupedal Stegosaurus body remains readable",
+        "natural background and skin texture are stronger than local guides"
+      ],
+      "risks": [
+        "plate bases are still too fused and scalloped",
+        "two-row alternation is only partially visible",
+        "four-spike thagomizer is missing",
+        "unsafe as train_seed because it reinforces a partial Stegosaurus without the tail-spike gate"
+      ]
+    },
+    {
+      "id": "stegosaurus_tailroom_thagomizer_v1",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-tailroom-thagomizer-ipcontrol-v1.png",
+      "caption": "review hold only, Stegosaurus thagomizer comparison with visible tail spikes but rounded decorative dorsal plates, not a positive LoRA seed",
+      "strengths": [
+        "best current rendered four-spike thagomizer cue",
+        "full tail end stays in frame",
+        "body is still a readable Stegosaurus-like quadruped"
+      ],
+      "risks": [
+        "dorsal plates are too rounded and decorative",
+        "plate surfaces can read as soft fins or petals",
+        "should not dominate the dataset without stronger plate-correct seeds",
+        "unsafe as train_seed because it can reinforce soft petal/fan-like plates"
+      ]
+    },
+    {
+      "id": "stegosaurus_angular_plate_guide_v1",
+      "role": "control_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-angular-plate-guide-v1.png",
+      "caption": "control reference only, Stegosaurus side profile with broad angular slab-like dorsal plates, larger plates over hips and mid-back, visible embedded sockets, long tail, quadrupedal body",
+      "strengths": [
+        "strongest local target for broad angular plate silhouettes",
+        "useful for ControlNet expansion and caption validation"
+      ],
+      "risks": [
+        "too composited and rock-like for direct LoRA training",
+        "tail spikes are absent"
+      ]
+    },
+    {
+      "id": "stegosaurus_tailroom_control_guide_v1",
+      "role": "control_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-tailroom-control-guide-v1.png",
+      "caption": "control reference only, Stegosaurus side profile with tail room and a large visible four-spike thagomizer, dorsal plates, quadrupedal body",
+      "strengths": [
+        "clearest project-owned four-spike thagomizer target",
+        "useful for ControlNet expansion where tail spikes must stay in frame"
+      ],
+      "risks": [
+        "guide-like flat style",
+        "can pull generated plates toward a decorative flat look"
+      ]
+    },
+    {
+      "id": "stegosaurus_plate_reference_guide_v1",
+      "role": "control_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-plate-reference-guide-v1.png",
+      "caption": "control reference only, Stegosaurus dorsal plate anatomy guide, separated broad bony plates in alternating rows, largest plates over the mid-back and hips, visible four-spike thagomizer",
+      "strengths": [
+        "project-owned anatomy target for plates plus thagomizer",
+        "good reference for caption wording and review gate"
+      ],
+      "risks": [
+        "diagrammatic guide, not natural image training data"
+      ]
+    },
+    {
+      "id": "stegosaurus_plate_thagomizer_reference_v1",
+      "role": "control_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-plate-thagomizer-reference-v1.png",
+      "caption": "control reference only, Stegosaurus side profile diagnostic target with many broad separated alternating dorsal plates and exactly four countable thagomizer spikes, quadrupedal body, small low head, long tail fully in frame",
+      "strengths": [
+        "clearest project-owned single-image target for both plate and thagomizer gates",
+        "useful as the next ControlNet/i2i reference and as a caption/review checklist anchor",
+        "keeps the thagomizer large and fully in frame while preserving broad separated plate rows"
+      ],
+      "risks": [
+        "intentionally guide-like rather than final paleoart",
+        "not suitable for direct LoRA training unless used only as a control/reference image"
+      ]
+    },
+    {
+      "id": "stegosaurus_plate_topology_guide_v1",
+      "role": "control_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-plate-topology-guide-v1.png",
+      "caption": "control reference only, Stegosaurus stenops plate topology guide, two staggered dorsal plate rows marked with red and blue sockets, visible gaps between individual broad bony plates, varied plate sizes with largest plates over mid-back and hips, low quadrupedal body, four planted feet, long tail with exactly four thagomizer spikes",
+      "strengths": [
+        "clearest project-owned guide for near-row and far-row plate topology",
+        "makes the two-row alternation reviewable before texture generation",
+        "also keeps the four-spike thagomizer and low quadrupedal body visible"
+      ],
+      "risks": [
+        "diagram-like and not suitable for direct LoRA training",
+        "visible colored sockets and control lines are intended for ControlNet and QA only"
+      ]
+    },
+    {
+      "id": "stegosaurus_plate_silhouette_control_v65",
+      "role": "control_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-plate-silhouette-control-v65.png",
+      "caption": "control reference only, Stegosaurus v6-photo-based side profile with overpainted broad separated dorsal plate silhouettes, low quadrupedal body, small low head, long tail, four planted feet, thagomizer kept in frame",
+      "strengths": [
+        "keeps the current v6 natural body, feet, tail, and thagomizer as the base image",
+        "documents a no-label plate silhouette target that is closer to natural v6 proportions than the clean cartoon topology guide",
+        "useful for future ControlNet/IP-Control comparisons and for caption validation around separated broad plates"
+      ],
+      "risks": [
+        "overpainted plates are still visibly composited and not suitable for direct LoRA training",
+        "paired v65 IP-Control generation drifted into generic herbivore bodies and comb/fan/neck-frill plate reads",
+        "should be used as a control/reference only until a Stegosauridae-specific LoRA or reviewed plate-structure set exists"
+      ]
+    },
+    {
+      "id": "stegosaurus_lowbody_plate_thagomizer_reference_v1",
+      "role": "control_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-lowbody-plate-thagomizer-reference-v1.png",
+      "caption": "control reference only, Stegosaurus side profile diagnostic target with a longer lower torso, clearer limb spacing, broad separated dorsal plates, and a visible four-spike thagomizer",
+      "strengths": [
+        "reduces the round shell-like torso bias from the first combined reference",
+        "keeps both plate and thagomizer gates in one project-owned guide",
+        "useful for ControlNet expansion where body proportions must stay lower and longer"
+      ],
+      "risks": [
+        "intentionally guide-like rather than final paleoart",
+        "blocky head and simplified legs are not suitable for direct LoRA training"
+      ]
+    },
+    {
+      "id": "stegosaurus_ipstrict_thagomizer_v1",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-ipstrict-thagomizer-v1.png",
+      "caption": "review hold, Stegosaurus-like side profile with a readable four-spike thagomizer and dorsal plate intent",
+      "strengths": [
+        "tail spike count is more readable than most model outputs"
+      ],
+      "risks": [
+        "body and plates are too flat or guide-like",
+        "not suitable for direct training without more review"
+      ]
+    },
+    {
+      "id": "stegosaurus_plate_thagomizer_ipcontrol_v1",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-plate-thagomizer-ipcontrol-v1.png",
+      "caption": "review hold, Stegosaurus stenops side profile with broad upright dorsal plates and a visible four-spike thagomizer, natural grassland scene",
+      "strengths": [
+        "clearest current app-facing output with both dorsal plate and four-spike thagomizer cues visible",
+        "uses the project-owned combined structure target as ControlNet input",
+        "more recognizable as Stegosaurus at atlas scale than the previous plate-only or tail-only candidates"
+      ],
+      "risks": [
+        "torso is too rounded and can read shell-like",
+        "plate bases remain somewhat fused into the back",
+        "limb placement and side-profile anatomy need review before any training promotion"
+      ]
+    },
+    {
+      "id": "stegosaurus_lowbody_plate_thagomizer_ipcontrol_v1",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-lowbody-plate-thagomizer-ipcontrol-v1.png",
+      "caption": "review hold, Stegosaurus stenops side profile with a longer lower torso, broad dorsal plates, and a visible thagomizer, natural grassland scene",
+      "strengths": [
+        "best current app-facing body proportion among the plate/thagomizer candidates",
+        "keeps broad dorsal plates and visible tail spikes while reducing shell-like torso drift",
+        "uses the low-body project-owned control target rather than external references"
+      ],
+      "risks": [
+        "tail spikes are smaller and need close count review",
+        "plate separation is still imperfect",
+        "hidden legs and exact limb placement need review before any training promotion"
+      ]
+    },
+    {
+      "id": "stegosaurus_plate_texture_lowdenoise_v67",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-plate-texture-lowdenoise-v67.png",
+      "caption": "review hold, low-denoise Stegosaurus texture i2i over the current v6 candidate, rougher matte bony dorsal plate surfaces, low quadrupedal body, small head, four planted feet, long tail with visible thagomizer spikes, natural dry floodplain scene",
+      "strengths": [
+        "preserves the current v6 body, feet, tail, and broad dorsal plate row better than the v66 IP-Control route",
+        "rougher bony plate surface is a useful comparison against the smoother v6 source",
+        "keeps the four-spike thagomizer readable enough for review"
+      ],
+      "risks": [
+        "does not clearly prove a stronger staggered two-row plate topology than v6",
+        "exact tail-spike count and foot anatomy still need crop review",
+        "should remain review_hold rather than train_seed until manually approved"
+      ]
+    },
+    {
+      "id": "stegosaurus_plate_topology_lowdenoise_v68",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/stegosaurus-stenops-plate-topology-lowdenoise-v68.png",
+      "caption": "review hold, low-denoise Stegosaurus plate-topology i2i over the current v6 candidate, naturalized plate texture, low quadrupedal body, small head, four planted feet, long tail with visible thagomizer spikes",
+      "strengths": [
+        "preserves the recognizable v6 Stegosaurus body, feet, tail, and visible thagomizer",
+        "slightly naturalizes plate and body texture compared with the sharper v6 source",
+        "useful as a direct comparison for low-denoise topology prompts"
+      ],
+      "risks": [
+        "does not prove a stronger staggered two-row plate topology than v6",
+        "tail-spike count and exact plate bases still need crop review",
+        "should stay below v6 until two-row plate placement is clearly solved"
+      ]
+    },
+    {
+      "id": "stegosaurus_plate_lock_rounded_reject",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-plate-lock-ipcontrol-v1.png",
+      "caption": "reject reference, rounded petal-like dorsal plates on a Stegosaurus-like body",
+      "strengths": [
+        "natural body and scene are useful for visual comparison"
+      ],
+      "risks": [
+        "rounded flower-petal plate read",
+        "missing four-spike thagomizer",
+        "do not train on this image"
+      ]
+    },
+    {
+      "id": "stegosaurus_topology_clean_v66_rejection_sheet",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-plate-topology-clean-v66-rejection-sheet.png",
+      "caption": "reject reference sheet, clean v52 topology guide plus IP-Control outputs that drift into generic herbivore body plans or lose reliable four-spike thagomizer evidence",
+      "strengths": [
+        "documents that the clean topology guide is not enough by itself",
+        "useful negative evidence before repeating higher-strength IP-Control"
+      ],
+      "risks": [
+        "body identity drifts away from Stegosaurus",
+        "thagomizer count becomes unreliable",
+        "contact sheet only, not an individual training image"
+      ]
+    },
+    {
+      "id": "stegosaurus_connected_plate_reject",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-strong-plates-ipcontrol-v1.png",
+      "caption": "reject reference, connected sawtooth sail-like dorsal plate row on a Stegosaurus-like body",
+      "strengths": [
+        "broad plate mass is visible"
+      ],
+      "risks": [
+        "plates read as a connected sail or wall",
+        "missing thagomizer",
+        "do not train on this image"
+      ]
+    },
+    {
+      "id": "stegosaurus_plate_silhouette_ipcontrol_low_reject_v65",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-plate-silhouette-ipcontrol-rejected-v65.png",
+      "caption": "reject reference, v65 plate silhouette IP-Control output with generic herbivore body drift, comb-like dorsal plates, and missing or unreliable four-spike thagomizer",
+      "strengths": [
+        "documents that a v6-photo-based plate silhouette control is still not enough by itself"
+      ],
+      "risks": [
+        "body no longer reads confidently as Stegosaurus",
+        "dorsal plates become low comb-like ridges instead of broad separated bony plates",
+        "four-spike thagomizer gate fails",
+        "do not train on this image"
+      ]
+    },
+    {
+      "id": "stegosaurus_plate_silhouette_ipcontrol_high_reject_v65",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-stenops-plate-silhouette-ipcontrol-highcontrol-rejected-v65.png",
+      "caption": "reject reference, higher-control v65 plate silhouette IP-Control output with front-heavy generic herbivore body, shoulder fan plates, neck-frill-like plate cluster, and no countable four-spike thagomizer",
+      "strengths": [
+        "documents the failure mode when plate control strength overpowers Stegosaurus body and tail identity"
+      ],
+      "risks": [
+        "front-heavy generic herbivore body drift",
+        "plates collapse into fan-like shoulder or neck-frill clusters",
+        "four-spike thagomizer is missing or unreadable",
+        "do not train on this image"
+      ]
+    },
+    {
+      "id": "stegosaurus_prompt_gate_failure_sheet_v1",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/stegosaurus-review-options-v32.png",
+      "caption": "reject reference sheet, prompt-only RealVisXL failures that drift into turtle, bird, hump-backed, or bipedal dinosaur forms",
+      "strengths": [
+        "documents failed prompt-only directions"
+      ],
+      "risks": [
+        "contact sheet only, not an individual training image",
+        "contains non-Stegosaurus failures",
+        "do not train on this image"
+      ]
+    }
+  ],
+  "rejectCriteria": [
+    "rounded flower-petal dorsal plates",
+    "plant leaves or leaf veins used as plates",
+    "single smooth sail or continuous scalloped fan",
+    "connected sawtooth wall of plates with only painted seam lines",
+    "thin comb-like spines instead of broad plates",
+    "missing dorsal plates",
+    "missing or cropped thagomizer when tail is visible",
+    "fewer or more than four tail spikes when the thagomizer is visible",
+    "second head, face, or horned head on the tail",
+    "turtle shell or ankylosaur armor shell",
+    "sauropod long-neck body drift",
+    "theropod biped body drift",
+    "extra legs, duplicate limbs, duplicate tails, text, logo, signature, border, or lower-corner artifacts",
+    "dorsal plates with the same leather-like color or texture as the skin",
+    "tail spikes lying flat or parallel to the ground instead of rising into paired upward V shapes",
+    "radial starburst or compass-rose thagomizer spikes",
+    "any thagomizer spike or tail-point lying parallel to the ground or horizon",
+    "tail shaft continuing as a straight horizontal point beyond the thagomizer",
+    "three upward spikes plus a small side nub instead of four countable upward spikes"
+  ],
+  "rejectionPatterns": [
+    "lower thagomizer spike lying along the tail shaft instead of rising upward relative to the ground",
+    "five-spike or radial thagomizer cluster even when the direction is more upward"
+  ]
+}

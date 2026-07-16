@@ -1,0 +1,603 @@
+{
+  "datasetId": "ceratopsian_triceratops_v1",
+  "trigger": "ceratopsian_triceratops",
+  "taxa": [
+    "Triceratops horridus",
+    "skull-frilled ceratopsian"
+  ],
+  "licensePolicy": "Only project-internal AI-generated images and hand-authored guides are allowed as sources. External museum/science material is reference-only, not training data.",
+  "items": [
+    {
+      "id": "triceratops_imagegen_v51_cool_color_frill",
+      "role": "train_seed",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v51-source-candidate.png",
+      "caption": "ceratopsian_triceratops, Triceratops horridus, project-owned imagegen source, full body side profile, cool blue-gray pebbled skin with pale mottling, subtle frill color variation, exactly two brow horns and one nasal horn, skull-attached frill, closed parrot-like beak, long full tail, four dinosaur limbs, visible separated non-hoofed toes, dry floodplain habitat, no rhinoceros body, no hooves, no text, no watermark",
+      "strengths": [
+        "current app first candidate after P9 color-pattern crop review",
+        "best current species-level color separation from the sandy-brown gallery palette",
+        "keeps the familiar Triceratops head/frill/horn read while retaining a long tail and visible toes"
+      ],
+      "risks": [
+        "not final approval; torso mass and skull/frill proportions still need close reference review",
+        "exact toe anatomy remains count-level rather than final",
+        "future body-lock passes should preserve the cool palette while lowering rhino-body risk"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v52_cool_blue_mottled_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v52-source-candidate.png",
+      "caption": "review hold only, P10 Triceratops horridus color-variation candidate with cool blue-black mottling, visible tail, three facial horns, skull frill, and separated toes, but rounded high torso and frill attachment still need stricter body-lock review",
+      "strengths": [
+        "useful cool blue mottled palette reference",
+        "tail and toe separation remain reviewable",
+        "keeps immediate Triceratops head, horn, and frill identity at app scale"
+      ],
+      "risks": [
+        "torso is still high and rounded enough to carry rhinoceros-body risk",
+        "frill/skull attachment needs close crop review before any promotion",
+        "must stay outside positive training until body-lock route proves low elongated ceratopsian form"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v53_teal_rust_frill_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v53-source-candidate.png",
+      "caption": "review hold only, P10 Triceratops horridus color-variation candidate with teal body, cream flank marks, and rust frill accents, useful as a palette reference but too barrel-bodied for promotion",
+      "strengths": [
+        "strongest P10 color and frill accent variation",
+        "cream flank marks and rust frill edge separate it from the sandy-brown gallery palette",
+        "three horn and long-tail cues remain visible"
+      ],
+      "risks": [
+        "body is the most barrel-like and rhinoceros-like of the P10 set",
+        "heavy shoulder mass could reinforce mammal-body shortcuts",
+        "must not be promoted or used as a train_seed without body correction"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v54_dark_freckle_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v54-source-candidate.png",
+      "caption": "review hold only, P10 Triceratops horridus candidate with dark freckled cool-gray pattern and visible toes, useful color reference but head/frill junction and rounded body mass still need anti-rhino review",
+      "strengths": [
+        "dark freckled cool-gray pattern gives useful app-scale separation",
+        "feet and toes remain visible enough for crop review",
+        "three facial horns and long tail remain readable"
+      ],
+      "risks": [
+        "head/frill junction could still drift toward shoulder attachment",
+        "rounded body mass remains unsafe for positive training",
+        "keep as color reference only until body-lock and toe gates improve"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v49_dark_speckle_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v49-source-candidate.png",
+      "caption": "review hold only, P9 Triceratops horridus candidate with strong dark mottling and frill spotting, useful color variation, but head/frill contrast is rougher than v51",
+      "strengths": [
+        "strong dark body mottling and useful frill spot pattern",
+        "three horns, skull-attached frill, long tail, and visible toes remain reviewable"
+      ],
+      "risks": [
+        "head/frill contrast is rougher at app scale than v51",
+        "not preferred as a positive seed unless later review prefers its darker pattern"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v50_rust_frill_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v50-source-candidate.png",
+      "caption": "review hold only, P9 Triceratops horridus candidate with a useful rust-red frill accent and stable head/frill cues, but body color is less distinct than v51",
+      "strengths": [
+        "warm rust frill accent is useful for future frill-color variation",
+        "keeps readable brow horns, nasal horn, skull-attached frill, and long tail"
+      ],
+      "risks": [
+        "body palette remains closer to existing earth-tone gallery candidates than v51",
+        "not preferred as a positive seed for the color-differentiation route"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v43_familiar_antirhino",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v43-source-candidate.png",
+      "caption": "previous review hold, Triceratops horridus v43 with familiar anti-rhino body, long full tail, exactly two brow horns and one nasal horn, skull-attached frill, closed beak, four dinosaur limbs, visible separated non-hoofed toes, but a tan-gray palette that is less distinct from other taxa than v51",
+      "strengths": [
+        "previous app first candidate after P7 crop review",
+        "strong familiar Triceratops read with head, frill, long tail, and toe gates intact",
+        "useful comparison for anti-rhino body and toe review"
+      ],
+      "risks": [
+        "tan-gray color palette is less distinct from the broader gallery than v51",
+        "torso mass and skull/frill proportions still need close reference review",
+        "exact toe anatomy remains imperfect"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v41_lowbody_antirhino_previous_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v41-source-candidate.png",
+      "caption": "review hold only, previous app first Triceratops horridus P6 source candidate, low elongated anti-rhino body, long tail, closed beak, skull-attached frill, exactly three facial horns, separated non-hoofed toes",
+      "strengths": [
+        "previous app first candidate after P6 crop review",
+        "lower longer anti-rhino body than v22 and v38",
+        "long full tail, closed beak, skull-attached frill, three facial horns, and visible toes remain readable"
+      ],
+      "risks": [
+        "head/frill/toe read is less immediate than v43 at app scale",
+        "exact toe anatomy and forelimb posture remain imperfect",
+        "keep as comparison unless human review prefers the lower body over v43"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v44_rounded_body_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v44-source-candidate.png",
+      "caption": "review hold only, P7 Triceratops horridus source candidate with strong horns, skull-attached frill, long tail, and non-hoofed toes, but body remains rounder and more mammal-barrel-like than v43",
+      "strengths": [
+        "good horn, frill, tail, and toe readability",
+        "useful app-scale comparison for anti-rhino prompts"
+      ],
+      "risks": [
+        "torso remains rounder and more mammal-barrel-like than v43",
+        "keep outside positive training until body shape is reviewed"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v45_mouth_risk_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v45-source-candidate.png",
+      "caption": "review hold only, P7 Triceratops horridus source candidate with useful low long body and tail but heavier head and mouth risk",
+      "strengths": [
+        "useful low long body and full-tail evidence",
+        "toe and horn cues remain readable"
+      ],
+      "risks": [
+        "head and mouth read are heavier and riskier than v43",
+        "should not be promoted or used as a positive seed without closer beak review"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v46_near_duplicate_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v46-source-candidate.png",
+      "caption": "review hold only, P8 Triceratops horridus prompt candidate, familiar skull-attached frill, exactly three facial horns, closed beak, long tail, visible non-hoofed toes, rounded torso and foot details do not beat v43",
+      "strengths": [
+        "fresh project-owned P8 prompt candidate",
+        "keeps a familiar Triceratops head, skull-attached frill, long tail, and visible toes",
+        "useful near-duplicate comparison for anti-rhino prompt stability"
+      ],
+      "risks": [
+        "rounded torso and exact foot details do not clearly improve v43",
+        "not suitable as a positive seed unless close reference review prefers it over v43",
+        "keep below current app first candidate"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v48_silhouette_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v48-source-candidate.png",
+      "caption": "review hold only, P8 Triceratops horridus prompt candidate, good full silhouette and long tail, closed beak, skull-attached frill, non-hoof toe and body-mass review still needed",
+      "strengths": [
+        "good full-body silhouette and long tail",
+        "closed beak, skull-attached frill, and three facial horns remain readable",
+        "useful comparison for future body-lock route"
+      ],
+      "risks": [
+        "toe separation and body mass do not clearly beat v43",
+        "exact foot anatomy still needs close reference review",
+        "review hold only, not a positive LoRA seed"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v47_foot_leg_reject",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v47-source-candidate.png",
+      "caption": "reject reference, P8 Triceratops horridus prompt candidate with useful head and frill cues but weaker leg and foot read plus rounded mammal-mass risk",
+      "strengths": [
+        "head, horns, and skull-attached frill are readable",
+        "documents a near-miss failure mode from the stricter anti-rhino prompt"
+      ],
+      "risks": [
+        "leg and foot read is weaker than v43",
+        "body still carries rounded mammal-mass risk",
+        "must not be promoted or used as a positive seed"
+      ]
+    },
+    {
+      "id": "triceratops_lowbody_closedbeak_v9",
+      "role": "train_seed",
+      "source": "assets/dinosaurs/triceratops-horridus-lowbody-closedbeak-i2i-v9.png",
+      "caption": "ceratopsian_triceratops, Triceratops horridus, full body side profile, low elongated ceratopsian dinosaur body, long tail, exactly two brow horns and one shorter nasal horn, skull-attached solid frill, closed parrot-like beak, four dinosaur limbs, visible non-hoofed toes, dry floodplain habitat, no text, no watermark",
+      "strengths": [
+        "best current body-lock and beak compromise",
+        "long dinosaur tail and low body are readable",
+        "skull-attached frill and three facial horns are clear"
+      ],
+      "risks": [
+        "exact beak closure still needs close review",
+        "frill rim ornament and toe anatomy are not final"
+      ]
+    },
+    {
+      "id": "triceratops_lowbody_toe_frame_v7",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-lowbody-toe-frame-imagegen-v7.png",
+      "caption": "review hold only, low long Triceratops body and toe-frame source with useful anti-rhino body shape but open-mouth risk, not a positive LoRA seed",
+      "strengths": [
+        "strong low-body and toe-frame source",
+        "useful long-tail body gate",
+        "skull-attached frill and three facial horns remain readable"
+      ],
+      "risks": [
+        "mouth reads more open than the v9 representative",
+        "exact frill rim ornament needs review",
+        "unsafe as train_seed because it can reinforce open-mouth/teeth drift"
+      ]
+    },
+    {
+      "id": "triceratops_skullfrill_bodylock_guide_v1",
+      "role": "control_reference",
+      "source": "assets/dinosaurs/triceratops-horridus-skullfrill-bodylock-guide-v1.png",
+      "caption": "control reference only, Triceratops horridus skull-frill body-lock guide, skull-attached frill, two brow horns, one nasal horn, closed beak target, low long dinosaur body, long tail, four limbs, non-hoofed toes, anti-rhinoceros body guide",
+      "strengths": [
+        "explicitly separates skull frill from shoulders and back",
+        "locks low elongated body and long tail",
+        "marks non-hoofed toes for ControlNet or review"
+      ],
+      "risks": [
+        "schematic guide, not suitable for direct LoRA training",
+        "surface detail is intentionally simplified"
+      ]
+    },
+    {
+      "id": "triceratops_ceratopsian_reference_guide_v1",
+      "role": "control_reference",
+      "source": "assets/dinosaurs/triceratops-horridus-ceratopsian-reference-guide-v1.png",
+      "caption": "control reference only, earlier Triceratops ceratopsian shape guide with skull frill, horns, low body, long tail, and four limbs",
+      "strengths": [
+        "useful older internal guide",
+        "keeps a non-rhinoceros educational silhouette"
+      ],
+      "risks": [
+        "weaker body-lock markings than the newer guide",
+        "too schematic for direct training"
+      ]
+    },
+    {
+      "id": "triceratops_closedbeak_v8_rhinorisk",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-closedbeak-rhinorisk-comparison-v8.png",
+      "caption": "review hold, Triceratops closed-beak comparison with rhinoceros-like body risk, rejected from training and promotion",
+      "strengths": [
+        "documents closed-beak prompt failure mode"
+      ],
+      "risks": [
+        "mammal-like torso drift",
+        "not suitable as training source"
+      ]
+    },
+    {
+      "id": "triceratops_allfeet_lora_i2i_v22",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-allfeet-lora-i2i-comparison-v22.png",
+      "caption": "review hold only, all-feet low-strength Triceratops LoRA i2i over the v9 anti-rhino body gate, low elongated ceratopsian body, long tail, closed beak, skull-attached frill, three facial horns, four limbs, more visible separated non-hoofed toes",
+      "strengths": [
+        "current app first candidate after all-feet i2i review",
+        "preserves low ceratopsian body, long tail, closed beak, skull-attached frill, and three facial horns",
+        "improves visible toe separation across front, middle, and rear feet"
+      ],
+      "risks": [
+        "exact non-hoof toe anatomy still needs human crop review",
+        "bright claw highlights can overstate toe/claw quality",
+        "do not train from it until the anti-rhino body and foot gate are manually approved"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v28_antirhino_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v28-source-candidate.png",
+      "caption": "review hold only, prompt-only Triceratops horridus v28 candidate with exactly two brow horns, one nasal horn, skull-attached frill, closed beak, long tail, visible non-hoofed toes, rounded torso rhinoceros risk, not a positive LoRA seed",
+      "strengths": [
+        "best new project-owned prompt candidate from the P2 anti-rhino pass",
+        "keeps the three facial horns, skull-attached frill, closed beak, long tail, and visible toes together",
+        "useful as a source/reference hold for future body-shape or toe-local routes"
+      ],
+      "risks": [
+        "torso and shoulder mass remain rounded enough to carry mild rhinoceros risk",
+        "frill rim ornament can read slightly decorative",
+        "must stay below v22 and outside positive LoRA training until low elongated body and toes pass crop review"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v33_antirhino_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v33-source-candidate.png",
+      "caption": "review hold only, prompt-only Triceratops horridus v33 candidate with closed beak, skull-attached frill, exactly three facial horns, long tail, visible toes, rounded shoulder-heavy torso rhinoceros risk, not a positive LoRA seed",
+      "strengths": [
+        "best fresh P3 comparison for closed beak, skull-attached frill, three horns, long tail, and visible toes",
+        "useful as a head/frill/tail source hold for future body-shape control"
+      ],
+      "risks": [
+        "torso remains rounded and shoulder-heavy enough to carry rhinoceros risk",
+        "body shape does not beat the current v22 anti-rhino gate",
+        "must stay outside positive LoRA training until low elongated body and non-hoofed toes pass together"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v35_antirhino_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v35-source-candidate.png",
+      "caption": "review hold only, prompt-only Triceratops horridus v35 candidate with longer anti-rhino body, long tail, closed beak, skull-attached frill, exactly three facial horns, visible non-hoofed toes, torso and frill ornament still need review, not a positive LoRA seed",
+      "strengths": [
+        "best fresh P4 compromise for anti-rhino body shape, long tail, closed beak, three horns, and visible toes",
+        "body is longer and less barrel-like than v33 or v36",
+        "useful as a prompt-only source hold for future body-lock i2i or ceratopsian LoRA expansion"
+      ],
+      "risks": [
+        "torso and shoulder mass still need close crop review before any promotion",
+        "frill ornament can read slightly decorative",
+        "must stay outside positive LoRA training until low elongated body and non-hoofed toes pass together"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v38_antirhino_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v38-source-candidate.png",
+      "caption": "review hold only, prompt-only Triceratops horridus v38 candidate with strong immediate Triceratops identity, skull-attached frill, exactly three facial horns, closed beak, long tail, visible separated toes, rounded barrel-like torso risk, not a positive LoRA seed",
+      "strengths": [
+        "best fresh P5 whole-body Triceratops read with strong skull-frill, horn, tail, and toe cues",
+        "closed beak and skull-attached frill are readable at app scale",
+        "useful as a source hold for future body-lock i2i or ceratopsian LoRA expansion"
+      ],
+      "risks": [
+        "torso remains rounded or barrel-like enough to reinforce mammal-body shortcuts",
+        "does not yet beat the current v22 anti-rhino body and foot gate",
+        "must stay outside positive LoRA training until low elongated body and non-hoofed toes pass together"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v42_lowbody_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v42-source-candidate.png",
+      "caption": "review hold only, prompt-only Triceratops horridus v42 candidate with useful low elongated body, long tail, closed beak, skull-attached frill, exactly three facial horns, and visible non-hoofed toes, not a positive LoRA seed",
+      "strengths": [
+        "useful low-body and long-tail evidence",
+        "major Triceratops head, horn, and frill cues remain readable"
+      ],
+      "risks": [
+        "wet-ground context is less clean for representative atlas use",
+        "head/frill read and foot topology are weaker than v41",
+        "keep outside positive training until close reference review"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v40_closeframe_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v40-source-candidate.png",
+      "caption": "review hold only, prompt-only Triceratops horridus v40 candidate with strong head/frill and visible toes, but rounder body and close framing, not a positive LoRA seed",
+      "strengths": [
+        "good skull-attached frill, horn, and toe visibility",
+        "closed beak remains readable"
+      ],
+      "risks": [
+        "body is rounder than v41 and still carries mild mammal-body risk",
+        "framing is too close for the preferred representative atlas slot",
+        "keep as comparison only"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v39_antirhino_secondary_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v39-source-candidate.png",
+      "caption": "review hold only, prompt-only Triceratops horridus v39 candidate with strong head/frill identity, exactly three horns, long tail, and visible toes, but heavier barrel-like body risk, not a positive LoRA seed",
+      "strengths": [
+        "useful skull-frill, horn-count, long-tail, and toe comparison",
+        "closed beak and Triceratops identity are strong at app scale"
+      ],
+      "risks": [
+        "body is more barrel-like and not promotion-safe",
+        "unsafe as positive training material without body-shape correction"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v37_antirhino_secondary_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v37-source-candidate.png",
+      "caption": "review hold only, prompt-only Triceratops horridus v37 candidate with useful tail and foot visibility plus solid head/frill identity, water-edge scene and rounded body volume remain weaker than v38, not a positive LoRA seed",
+      "strengths": [
+        "good tail and foot visibility for crop review",
+        "solid Triceratops head, horn, and frill identity"
+      ],
+      "risks": [
+        "water-edge scene is less atlas-clean for dry-foot review",
+        "rounded body volume remains an anti-rhino risk",
+        "unsafe as positive training material without body-shape correction"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v34_antirhino_secondary_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v34-source-candidate.png",
+      "caption": "review hold only, prompt-only Triceratops horridus v34 candidate with useful closed beak, skull-attached frill, three horns, and long tail, but high rounded torso risk, not a positive LoRA seed",
+      "strengths": [
+        "useful skull-frill, horn-count, closed-beak, and long-tail comparison"
+      ],
+      "risks": [
+        "torso remains too high and rounded",
+        "must stay below v35 and v22",
+        "unsafe as positive training material without body-shape correction"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v36_roundbody_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v36-source-candidate.png",
+      "caption": "reject reference only, prompt-only Triceratops v36 has useful feet and tail cues but returns to rounded mammal-like body mass",
+      "strengths": [
+        "documents a prompt route with visible toes and a long tail"
+      ],
+      "risks": [
+        "rounded mammal-like torso reinforces rhinoceros body drift",
+        "unsafe as representative or positive training material"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v31_bodyrisk_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v31-source-candidate.png",
+      "caption": "reject reference only, prompt-only Triceratops v31 keeps useful head and frill cues but has a shoulder-heavy barrel torso with rhinoceros-like body risk",
+      "strengths": [
+        "documents a prompt route that preserves skull-frill and horn identity"
+      ],
+      "risks": [
+        "shoulder and barrel torso reinforce rhinoceros drift",
+        "unsafe as representative or positive training material"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v32_roundbody_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v32-source-candidate.png",
+      "caption": "reject reference only, prompt-only Triceratops v32 shows long tail and toes but round mammal-like body mass reinforces rhino-body drift",
+      "strengths": [
+        "documents long-tail and toe visibility under a stricter anti-rhino prompt"
+      ],
+      "risks": [
+        "rounded torso and low head reinforce the rhinoceros body failure mode",
+        "unsafe as representative or positive training material"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v30_antirhino_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v30-source-candidate.png",
+      "caption": "review hold only, prompt-only Triceratops horridus v30 candidate with strong three-horn, skull-frill, long-tail, closed-beak, and toe visibility cues, rounded torso risk, not a positive LoRA seed",
+      "strengths": [
+        "keeps the required head/frill/horn/tail cues readable",
+        "visible feet and toes make it useful for comparison review"
+      ],
+      "risks": [
+        "rounded torso does not beat the current v22 anti-rhino body gate",
+        "frill rim reads more decorative than ideal",
+        "unsafe as train_seed without a later low-body crop gate"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v29_rhinobody_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v29-source-candidate.png",
+      "caption": "reject reference only, prompt-only Triceratops v29 with useful head, frill, horns, and tail but a round shoulder-heavy rhinoceros-like torso and hoof-risk feet",
+      "strengths": [
+        "records that the strict head/frill prompt can preserve horns, frill, closed beak, and long tail"
+      ],
+      "risks": [
+        "round shoulder-heavy torso reinforces rhinoceros drift",
+        "feet can read hoof-like at crop scale",
+        "must not be used as a representative or positive LoRA seed"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v25_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v25-source-candidate.png",
+      "caption": "review hold only, project-owned Triceratops horridus imagegen source candidate, full body side profile, long tail, skull-attached frill, two brow horns and one nasal horn, four limbs, visible separated non-hoofed toes, open-beak risk, not a positive LoRA seed",
+      "strengths": [
+        "good full-body visibility with long tail and inspectable feet",
+        "frill remains skull-attached and horn count is readable",
+        "useful comparison source for future beak-closing or toe-local routes"
+      ],
+      "risks": [
+        "beak/mouth reads partly open and fails the closed-beak gate",
+        "body remains heavy enough to carry mild rhinoceros risk",
+        "unsafe as train_seed unless a future local edit closes the beak without weakening tail, feet, or frill attachment"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v27_closedbeak_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v27-source-candidate.png",
+      "caption": "review hold only, prompt-only Triceratops horridus closed-beak source candidate with skull-attached frill, two brow horns, one nasal horn, long tail, four limbs, visible non-hoofed toes, rounded torso risk, not a positive LoRA seed",
+      "strengths": [
+        "best new prompt-only closed-beak read from the v26/v27 pass",
+        "keeps a readable skull-attached frill, exactly three facial horns, long tail, and visible toes",
+        "useful comparison source for future anti-rhino body i2i or ControlNet routes"
+      ],
+      "risks": [
+        "rounded heavy torso still carries rhinoceros or mammal-body risk",
+        "rear-leg overlap and exact toe anatomy need close review",
+        "must stay below v22 until a future crop gate proves low ceratopsian body, closed beak, tail, frill, and toes together"
+      ]
+    },
+    {
+      "id": "triceratops_toe_claw_matte_i2i_v23",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/triceratops-horridus-toe-claw-matte-i2i-v23.png",
+      "caption": "review hold only, tiny toe-claw highlight matte i2i over the v22 Triceratops candidate",
+      "strengths": [
+        "preserves the v22 body, head, horns, frill, tail, and four-limb count",
+        "slightly dampens shiny toe-claw highlights"
+      ],
+      "risks": [
+        "change is too subtle to prove better ceratopsian toe anatomy",
+        "must stay below v22 unless close crops prove a real anatomical improvement"
+      ]
+    },
+    {
+      "id": "triceratops_antirhino_lowdenoise_v24_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/triceratops-horridus-antirhino-lowdenoise-reject-v24.png",
+      "caption": "reject reference only, low-denoise RealVisXL anti-rhino i2i over v22 that preserves the broad ceratopsian body but does not improve non-hoof toe anatomy and softens the head-eye read",
+      "strengths": [
+        "documents that low-denoise whole-body i2i can avoid the old rhinoceros torso failure",
+        "preserves long tail, attached frill, three facial horns, and four-limb count"
+      ],
+      "risks": [
+        "does not clearly improve toe anatomy over v22",
+        "head and eye read become less natural than the current v22 candidate",
+        "not suitable as a positive LoRA seed or app representative"
+      ]
+    },
+    {
+      "id": "triceratops_imagegen_v26_openbeak_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/triceratops-horridus-imagegen-v26-source-candidate.png",
+      "caption": "reject reference only, prompt-only Triceratops candidate with good frill and tail but open black mouth gap and heavy rounded body risk",
+      "strengths": [
+        "records that strict anti-rhino prompting can preserve three horns, skull frill, long tail, and visible feet"
+      ],
+      "risks": [
+        "mouth reads open with a black gap",
+        "rounded body remains too mammal-like for promotion",
+        "must not be used as a positive LoRA seed"
+      ]
+    },
+    {
+      "id": "triceratops_schedule_i2i_v17_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/triceratops-horridus-schedule-i2i-toereview-rejected-v17.png",
+      "caption": "reject reference only, schedule+i2i Triceratops pass that keeps the low body but reopens the beak and shows teeth",
+      "strengths": [
+        "records that whole-body schedule+i2i can preserve some body structure"
+      ],
+      "risks": [
+        "open mouth and visible teeth violate the closed-beak gate",
+        "should not be used as a positive LoRA seed"
+      ]
+    }
+  ],
+  "rejectCriteria": [
+    "rhinoceros torso, rhino shoulder hump, cow or buffalo body",
+    "mammal hooves, horse legs, elephant feet",
+    "frill attached to shoulder, back, or torso instead of skull",
+    "missing nasal horn, extra horns, cheek horns",
+    "open monster mouth or visible teeth",
+    "short tail or hidden tail",
+    "extra legs, hidden feet, cropped anatomy",
+    "text, logo, signature, border, or lower-corner artifacts",
+    "color collapses back to the same sandy-brown palette as other taxa",
+    "frill color becomes neon or an ornamental fantasy fan"
+  ]
+}

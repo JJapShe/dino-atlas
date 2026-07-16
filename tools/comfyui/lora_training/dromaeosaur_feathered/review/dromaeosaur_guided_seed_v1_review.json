@@ -1,0 +1,29 @@
+{
+  "datasetId": "dromaeosaur_feathered_v1",
+  "runId": "dromaeosaur_guided_seed_v1",
+  "date": "2026-06-22",
+  "sourceRuns": [
+    "tools/comfyui/outputs/dromaeosaur_guided_seed_v1-results.json",
+    "tools/comfyui/outputs/dromaeosaur_guided_feather_inpaint_v1-results.json"
+  ],
+  "contactSheets": [
+    "tools/comfyui/lora_training/dromaeosaur_feathered/review/dromaeosaur_guided_seed_v1_rejected_contact_sheet.png",
+    "tools/comfyui/lora_training/dromaeosaur_feathered/review/dromaeosaur_guided_feather_inpaint_v1_rejected_contact_sheet.png"
+  ],
+  "method": {
+    "referenceImage": "assets/dinosaurs/velociraptor-mongoliensis-feathered-v3-tailclean.png",
+    "controlSource": "tools/comfyui/ComfyUI/input/dino_guides/velociraptor-mongoliensis_shape_feathered_clean_v4.png",
+    "workflow": "IP-Adapter + ControlNet, followed by feather-band inpaint on the most stable pose candidate"
+  },
+  "reviewDecision": "reject_all_for_training",
+  "summary": "Guide-first generation improved pose stability and kept more folded-arm feather intent than prompt-only RealVisXL, but the best outputs still read as striped/scaly generic theropods rather than densely feathered dromaeosaurs. The feather-band inpaint pass did not convert the texture into convincing plumage.",
+  "primaryRejectReasons": [
+    "body surface remains stripe/scaly instead of dense downy feathers",
+    "folded forelimb feathers are too weak for a LoRA concept seed",
+    "sickle-claw cue remains absent or unclear",
+    "some generated poses float above the ground or break leg anatomy",
+    "selected stable poses are too close to the existing weak app compromise"
+  ],
+  "useAs": "diagnostic_only",
+  "nextRoute": "Create stronger project-owned feather references before LoRA expansion: either hand-authored paintover/segmentation references, a ControlNet guide with explicit feather masses, or a different feather-aware checkpoint. Do not add these outputs to seed_manifest.json as train_seed."
+}

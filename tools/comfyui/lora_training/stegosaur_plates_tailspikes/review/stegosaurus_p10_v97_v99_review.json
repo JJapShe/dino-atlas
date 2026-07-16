@@ -1,0 +1,25 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "p10_v97_v99_ground_relative_upward_v_retry",
+  "currentPrimary": "assets/dinosaurs/stegosaurus-stenops-imagegen-v92-source-candidate.png",
+  "selectedCandidate": "assets/dinosaurs/stegosaurus-stenops-imagegen-v92-source-candidate.png",
+  "reviewHolds": [],
+  "rejectReferences": [
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v97-source-candidate.png",
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v98-source-candidate.png",
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v99-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/stegosaurus-p10-v97-v99-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-p10-v97-v99-crops.png",
+  "decision": "keep_v92_first_reject_v97_v99_for_tail_angle_or_count_failures",
+  "reason": "The user clarified that the thagomizer is not parallel to the ground and must rise into a V relative to the ground/horizon. V97 and v98 still leave a lower side point that reads too horizontal or tail-parallel. V99 moves the spikes upward better, but risks a five-spike or radial cluster read. Keep v92 first for now, but treat all prompt-only retries as evidence that the next route needs tail-local ControlNet/inpaint rather than more whole-body prompting.",
+  "nextRoute": "Use a tail-only mask/control guide over v92. End the tail in a rounded base and force exactly four countable spikes with every spike tip above the horizon; the two lower spikes must still angle upward, not sideways along the tail shaft.",
+  "rejectIfPromoting": [
+    "any spike lies parallel to the ground or horizon",
+    "any lower spike runs along the tail shaft",
+    "tail continues as a pointed horizontal extension beyond the spike base",
+    "spikes form a radial/starburst cluster instead of two upward V pairs",
+    "tail reads as three spikes plus a nub or five-plus spikes",
+    "dorsal plates share skin-like leather color or texture"
+  ]
+}

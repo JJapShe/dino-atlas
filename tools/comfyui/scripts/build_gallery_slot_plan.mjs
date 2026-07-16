@@ -1,0 +1,533 @@
+import fs from "node:fs";
+import path from "node:path";
+import vm from "node:vm";
+import { fileURLToPath } from "node:url";
+
+const HERE = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.resolve(HERE, "..", "..", "..");
+const APP_JS = path.join(ROOT, "app.js");
+const ASSET_ROOT = path.join(ROOT, "assets", "dinosaurs");
+const OUTPUT_DIR = path.join(ROOT, "tools", "comfyui", "outputs");
+const OUTPUT_JSON = path.join(OUTPUT_DIR, "gallery-slot-generation-plan.json");
+const OUTPUT_MD = path.join(OUTPUT_DIR, "gallery-slot-generation-plan.md");
+const OUTPUT_ASSIGNMENTS = path.join(ROOT, "gallery-slots.js");
+
+const SLOT_ROLES = [
+  { slot: 1, key: "representative", label: "representative full body", kind: "count-level pass" },
+  { slot: 2, key: "color-pattern", label: "color and pattern variant", kind: "review hold" },
+  { slot: 3, key: "habitat-ecology", label: "habitat and everyday ecology", kind: "anatomy review" },
+  { slot: 4, key: "identity-anatomy", label: "signature anatomy", kind: "anatomy review" },
+  { slot: 5, key: "interaction", label: "ecological interaction", kind: "anatomy review" },
+  { slot: 6, key: "social-growth-defense", label: "social, growth, or defense", kind: "anatomy review" },
+  { slot: 7, key: "alternate-habitat-behavior", label: "alternate habitat or behavior", kind: "anatomy review" },
+];
+
+const COMMON_REJECT = [
+  "extra legs or duplicated limbs",
+  "fused or missing limbs and hidden feet",
+  "extra or missing fingers where digit count is diagnostic",
+  "cropped, forked, or malformed tail",
+  "modern animal head or generic monitor-lizard/crocodile body",
+  "fantasy anatomy, text, logo, watermark, split panel, or excessive blood",
+];
+
+const FALLBACK_SWATCHES = {
+  "wannanosaurus-yansiensis": ["#30243b", "#555d3d", "#a8c94d", "#e5d5b5"],
+  "alaskacephale-gangloffi": ["#2b3a4b", "#a86c45", "#dce3df", "#403b3d"],
+  "sphaerotholus-goodwini": ["#45668e", "#c9d4c8", "#d4b37b", "#655064"],
+  "acrotholus-audeti": ["#2e5142", "#d8d0b6", "#303336", "#8c7652"],
+};
+
+const HABITATS = {
+  "arid-redbed": {
+    substrate: "oxidized red and ochre sediment",
+    vegetation: "sparse conifers, cycads, ferns, and muted gray-green scrub",
+    moisture: "dry to seasonally wet",
+    light: "neutral daylight with restrained warm reflected light",
+    backgroundPalette: ["#914f38", "#b98a63", "#66705a"],
+  },
+  "gobi-arid": {
+    substrate: "pale sand, buff rock, and dry wash gravel",
+    vegetation: "sparse low gray-green scrub",
+    moisture: "arid",
+    light: "clear neutral daylight without a global orange cast",
+    backgroundPalette: ["#c8aa77", "#8f795d", "#68725c"],
+  },
+  "conifer-fern-floodplain": {
+    substrate: "dark floodplain soil, leaf litter, and shallow water margins",
+    vegetation: "conifers, cycads, ferns, and horsetails",
+    moisture: "seasonally humid",
+    light: "soft neutral daylight with dappled canopy light",
+    backgroundPalette: ["#344d3d", "#6f7550", "#6c5b49"],
+  },
+  "coastal-lagoon": {
+    substrate: "mudflat, pale sediment, and shallow lagoon water",
+    vegetation: "coastal conifers, ferns, and low wetland plants",
+    moisture: "humid and brackish",
+    light: "neutral coastal daylight with controlled water reflection",
+    backgroundPalette: ["#607a7a", "#a68a65", "#61715b"],
+  },
+  "polar-forest": {
+    substrate: "cool dark soil, seasonal frost, and damp leaf litter",
+    vegetation: "high-latitude conifer and fern woodland",
+    moisture: "cool and seasonally wet",
+    light: "low-angle neutral daylight with restrained cool ambience",
+    backgroundPalette: ["#405264", "#35483f", "#c6cac2"],
+  },
+  marine: {
+    substrate: "open water, suspended sediment, and a distant seafloor or shoreline cue",
+    vegetation: "period-appropriate sparse marine vegetation only when justified",
+    moisture: "fully aquatic",
+    light: "neutral filtered daylight with the animal's body colors still readable",
+    backgroundPalette: ["#294c59", "#537b7b", "#9a9b82"],
+  },
+};
+
+function extractLiteral(source, name) {
+  const marker = `const ${name} =`;
+  const markerAt = source.indexOf(marker);
+  if (markerAt < 0) throw new Error(`Missing declaration: ${name}`);
+
+  let start = markerAt + marker.length;
+  while (/\s/.test(source[start])) start += 1;
+  while (source[start] !== "[" && source[start] !== "{") start += 1;
+
+  const open = source[start];
+  const close = open === "[" ? "]" : "}";
+  let depth = 0;
+  let quote = "";
+  let escaped = false;
+  let lineComment = false;
+  let blockComment = false;
+
+  for (let index = start; index < source.length; index += 1) {
+    const char = source[index];
+    const next = source[index + 1];
+    if (lineComment) {
+      if (char === "\n") lineComment = false;
+      continue;
+    }
+    if (blockComment) {
+      if (char === "*" && next === "/") {
+        blockComment = false;
+        index += 1;
+      }
+      continue;
+    }
+    if (quote) {
+      if (escaped) escaped = false;
+      else if (char === "\\") escaped = true;
+      else if (char === quote) quote = "";
+      continue;
+    }
+    if (char === "/" && next === "/") {
+      lineComment = true;
+      index += 1;
+      continue;
+    }
+    if (char === "/" && next === "*") {
+      blockComment = true;
+      index += 1;
+      continue;
+    }
+    if (char === '"' || char === "'" || char === "`") {
+      quote = char;
+      continue;
+    }
+    if (char === open) depth += 1;
+    if (char === close) {
+      depth -= 1;
+      if (depth === 0) return source.slice(start, index + 1);
+    }
+  }
+
+  throw new Error(`Unterminated declaration: ${name}`);
+}
+
+function loadLiteral(source, name) {
+  return vm.runInNewContext(`(${extractLiteral(source, name)})`, Object.create(null), {
+    timeout: 5000,
+  });
+}
+
+function normalizePath(value) {
+  return String(value || "").replaceAll("\\", "/");
+}
+
+function itemText(item) {
+  return `${item?.title || ""} ${item?.body || ""} ${item?.variant || ""} ${item?.source || ""} ${item?.src || ""}`.toLowerCase();
+}
+
+function itemLabelText(item) {
+  return `${item?.title || ""} ${item?.variant || ""} ${item?.source || ""} ${item?.src || ""}`.toLowerCase();
+}
+
+function internalSearchText(item) {
+  return `${item?.title || ""} ${item?.source || ""} ${item?.src || ""}`.toLowerCase();
+}
+
+function isInternalReviewCandidate(item) {
+  if (!item || typeof item !== "object") return true;
+  if (item.internalOnly) return true;
+  if (["diagnostic only", "reject reference", "structure reference", "primary structure reference"].includes(item.kind)) {
+    return true;
+  }
+  const searchable = internalSearchText(item);
+  if (/review[- ]?sheet|review[- ]?options|contact[- ]?sheet|crop(?:s| audit| gate)?|guide|manifest|comparison|diagnostic|rejected/.test(searchable)) {
+    return true;
+  }
+  if (/검수\s*(?:시트|보드)?|크롭|마스크|가이드|매니페스트|비교\s*시트|진단|탈락/.test(searchable)) {
+    return true;
+  }
+  return /(?:^|[-_/ ])mask(?:-v\d+)?(?:\.png)?(?:$|\s)/.test(searchable);
+}
+
+function hasRealImage(item) {
+  const relative = normalizePath(item?.src || item?.source);
+  return relative.startsWith("assets/dinosaurs/") && fs.existsSync(path.join(ROOT, relative));
+}
+
+function roleScore(item, roleKey) {
+  const text = itemText(item);
+  const labelText = itemLabelText(item);
+  const kind = item.kind || "";
+  const has = (pattern) => pattern.test(text);
+  const hasLabel = (pattern) => pattern.test(labelText);
+
+  if (roleKey === "representative") {
+    if (kind === "count-level pass") return 1000;
+    if (kind === "primary generated") return 900;
+    return kind === "review hold" && has(/full.?body|representative|source-candidate|대표|전신/) ? 120 : -1000;
+  }
+  if (roleKey === "color-pattern") {
+    let score = kind === "review hold" ? 45 : 0;
+    if (hasLabel(/pattern|palette|color|plumage|countershade|mottl|stripe|band|rosette|ocelli|saddle|mask-pattern|무늬|색상|배색|변이|변형/)) score += 90;
+    if (hasLabel(/ecology|attack|chase|defense|feeding|standoff|생태|공격|추격|방어|섭식|대치/)) score -= 70;
+    return score;
+  }
+  if (roleKey === "habitat-ecology") {
+    let score = kind === "anatomy review" ? 30 : kind === "review hold" ? 15 : 0;
+    if (hasLabel(/ecology|habitat|forage|browse|river|forest|floodplain|dune|seaway|lagoon|shore|wetland|woodland|roost|rest|trackway|서식|생태|먹이활동|채식|이동|휴식|발자국/)) score += 75;
+    if (hasLabel(/attack|bite|chase|defense|standoff|feeding|ambush|pursuit|harass|strike|pack.?hunt|공격|물기|추격|방어|대치|사체|매복|압박|사냥/)) score -= 100;
+    return score;
+  }
+  if (roleKey === "identity-anatomy") {
+    let score = kind === "anatomy review" ? 35 : 0;
+    if (hasLabel(/anatomy|identity|head|skull|crest|horn|frill|foot|feet|hand|claw|plate|armor|tail|club|dome|wing|flipper|neck|fullbody|구조|머리|두개골|볏|뿔|프릴|발|손|발톱|골판|갑옷|꼬리|돔|전신/)) score += 80;
+    if (hasLabel(/ecology|attack|bite|chase|defense|standoff|feeding|ambush|pursuit|harass|strike|escape|생태|공격|물기|추격|방어|대치|사체|매복|도주/)) score -= 110;
+    return score;
+  }
+  if (roleKey === "interaction") {
+    let score = kind === "anatomy review" ? 35 : 0;
+    if (hasLabel(/attack|bite|chase|defense|standoff|ambush|feeding|pursuit|harass|strike|dodge|escape|hunt|interaction|공격|추격|방어|대치|매복|섭식|도주/)) score += 90;
+    return score;
+  }
+  if (roleKey === "social-growth-defense") {
+    let score = kind === "anatomy review" ? 25 : 0;
+    if (hasLabel(/group|herd|pair|juvenile|display|social|nest|flock|pack|shield|protect|defense|무리|쌍|새끼|과시|보호|방어/)) score += 90;
+    return score;
+  }
+
+  let score = kind === "anatomy review" ? 30 : kind === "review hold" ? 20 : 0;
+  if (hasLabel(/ecology|habitat|forage|group|herd|display|defense|standoff|river|forest|dune|lagoon|생태|서식|무리|과시|방어/)) score += 55;
+  return score;
+}
+
+function roleThreshold(roleKey) {
+  return {
+    representative: 500,
+    "color-pattern": 70,
+    "habitat-ecology": 55,
+    "identity-anatomy": 55,
+    interaction: 70,
+    "social-growth-defense": 70,
+    "alternate-habitat-behavior": 40,
+  }[roleKey];
+}
+
+function selectCandidate(candidates, usedSources, role) {
+  const available = candidates.filter((item) => !usedSources.has(normalizePath(item.src)));
+  const explicit = available.filter(
+    (item) => Number(item.gallerySlot) === role.slot || item.galleryRole === role.key,
+  );
+  const unassigned = available.filter((item) => !item.gallerySlot && !item.galleryRole);
+  const ranked = (explicit.length ? explicit : unassigned)
+    .map((item) => ({ item, score: roleScore(item, role.key) }))
+    .sort((left, right) => right.score - left.score);
+  const best = ranked[0];
+  if (!best || (!explicit.length && best.score < roleThreshold(role.key))) return null;
+  usedSources.add(normalizePath(best.item.src));
+  return best;
+}
+
+function inferUnregisteredKind(source) {
+  const text = source.toLowerCase();
+  if (/pattern|palette|color|plumage|mottl|stripe|rosette|ocelli|saddle/.test(text)) return "review hold";
+  if (/ecology|attack|chase|defense|standoff|ambush|feeding|pursuit|escape|group|herd|display/.test(text)) return "anatomy review";
+  return "review hold";
+}
+
+function suggestUnregisteredSource(sources, roleKey) {
+  const ranked = sources
+    .map((source) => {
+      const item = {
+        kind: inferUnregisteredKind(source),
+        title: path.basename(source, path.extname(source)),
+        variant: "",
+        source,
+        src: source,
+      };
+      return { source, score: roleScore(item, roleKey) };
+    })
+    .sort((left, right) => right.score - left.score);
+  return ranked[0]?.score >= roleThreshold(roleKey) ? ranked[0] : null;
+}
+
+function habitatFor(dino, route) {
+  const text = `${dino.era} ${dino.region} ${dino.summary || ""} ${route?.focus || ""} ${route?.pass || ""}`.toLowerCase();
+  let key = "conifer-fern-floodplain";
+  if (/marine|seaway|ocean|sea |pliosaur|plesiosaur|ichthyosaur|mosasaur|해양|바다|수중/.test(text)) key = "marine";
+  else if (/polar|prince creek|alaska|high-latitude|극지|고위도/.test(text)) key = "polar-forest";
+  else if (/gobi|djadokhta|nemegt|dune|desert|sandstone|사구|사막|고비/.test(text)) key = "gobi-arid";
+  else if (/coast|lagoon|shore|mudflat|lias|해안|석호|갯벌/.test(text)) key = "coastal-lagoon";
+  else if (dino.era === "triassic" || /redbed|arid|los colorados|ischigualasto|적색층|반건조/.test(text)) key = "arid-redbed";
+  return { key, ...HABITATS[key] };
+}
+
+function paletteFor(dino, swatches, profile) {
+  const assigned = swatches[dino.id] || FALLBACK_SWATCHES[dino.id];
+  return {
+    swatches: assigned || ["#66736b", "#3e4a46", "#9fbf8d", "#d8bd79"],
+    source: swatches[dino.id] ? "app.js" : FALLBACK_SWATCHES[dino.id] ? "goal fallback" : "generic fallback",
+    canonicalColor: profile?.color || "",
+    patternTopology: profile?.pattern || "",
+    surface: profile?.texture || "",
+    allowedVariant: "slot 2 only",
+    avoid: profile?.avoid || "",
+  };
+}
+
+function makePrompt({ dino, role, identity, profile, route, palette, habitat, referenceSource }) {
+  const identityLines = [...(identity || []), profile?.anatomy || ""].filter(Boolean).join("; ");
+  const action = {
+    representative: "one animal in a calm strict full-body side or three-quarter view",
+    "color-pattern": "one animal in a calm full-body view showing the approved variant-b palette",
+    "habitat-ecology": "the canonical animal performing a normal everyday behavior in its representative habitat",
+    "identity-anatomy": "a readable full-body or focused view that clearly shows the taxon's most diagnostic anatomy",
+    interaction: "a non-graphic ecological interaction with period- and region-appropriate organisms, with bodies spatially separated",
+    "social-growth-defense": "a scientifically restrained social, growth, or defensive behavior scene",
+    "alternate-habitat-behavior": "a second plausible microhabitat or behavior scene without redesigning the animal",
+  }[role.key];
+  return [
+    "Use case: scientific-educational",
+    "Asset type: dinosaur atlas gallery image",
+    `Primary request: ${dino.name}, slot ${role.slot} ${role.label}; ${action}.`,
+    `Scene/backdrop: ${dino.period}, ${dino.region}; ${habitat.substrate}; ${habitat.vegetation}; ${habitat.moisture}.`,
+    `Subject: ${identityLines}`,
+    `Composition/framing: landscape; ${role.slot === 4 ? "diagnostic anatomy must remain readable" : "complete primary body from snout to tail tip when full body is requested"}; visible required limbs and feet.`,
+    `Lighting/mood: ${habitat.light}.`,
+    `Color palette: preserve ${palette.swatches.join(", ")}; ${palette.canonicalColor}; ${palette.patternTopology}.`,
+    `Materials/textures: ${palette.surface}.`,
+    `Input images: ${referenceSource ? `Image 1: canonical slot-1 identity, anatomy, color, and marking-placement reference at ${referenceSource}` : "none"}.`,
+    `Constraints: ${role.slot === 2 ? "variant-b may shift hues only within the approved profile" : "use canonical-a body color and marking placement"}; habitat color belongs in the background and localized dust, mud, moisture, or reflected light; no text, no labels, no watermark, no split panel.`,
+    `Avoid: ${profile?.avoid || ""}; ${route?.reject || ""}; ${COMMON_REJECT.join("; ")}.`,
+  ].join("\n");
+}
+
+function makePlanItem({ dino, samples, identities, profiles, routes, swatches, unregisteredAssets }) {
+  const identity = identities[dino.id] || [];
+  const profile = profiles[dino.id] || {};
+  const route = routes[dino.id] || {};
+  const palette = paletteFor(dino, swatches, profile);
+  const habitat = habitatFor(dino, route);
+  const candidates = (samples[dino.id] || []).filter((item) => !isInternalReviewCandidate(item) && hasRealImage(item));
+  const malformedSamples = (samples[dino.id] || [])
+    .map((item, index) => ({ item, index }))
+    .filter(({ item }) => !item || typeof item !== "object")
+    .map(({ item, index }) => ({ index, value: String(item || "") }));
+  const usedSources = new Set();
+  const roles = SLOT_ROLES.slice(0, dino.imageSlots);
+  const selected = [];
+
+  for (const role of roles) {
+    const picked = selectCandidate(candidates, usedSources, role);
+    selected.push({ role, picked });
+  }
+
+  const representative = selected.find(({ role }) => role.slot === 1)?.picked?.item;
+  const referenceSource = normalizePath(representative?.src || route.control || "");
+  const slots = selected.map(({ role, picked }) => {
+    const source = normalizePath(picked?.item?.src || "");
+    const suggestedUnregistered = source ? null : suggestUnregisteredSource(unregisteredAssets[dino.id] || [], role.key);
+    const status = source ? "manual-review" : suggestedUnregistered ? "manual-review-unregistered" : "generate";
+    return {
+      slot: role.slot,
+      role: role.key,
+      label: role.label,
+      expectedKind: role.kind,
+      status,
+      currentKind: picked?.item?.kind || "",
+      currentSource: source,
+      currentTitle: picked?.item?.title || "",
+      score: picked?.score ?? null,
+      suggestedUnregisteredSource: suggestedUnregistered?.source || "",
+      suggestedUnregisteredScore: suggestedUnregistered?.score ?? null,
+      referenceSource,
+      prompt: makePrompt({ dino, role, identity, profile, route, palette, habitat, referenceSource }),
+      negativePrompt: [profile.avoid, route.reject, ...COMMON_REJECT].filter(Boolean).join("; "),
+      passGate: [...identity, profile.anatomy].filter(Boolean),
+      rejectGate: [profile.avoid, route.reject, ...COMMON_REJECT].filter(Boolean),
+    };
+  });
+
+  return {
+    taxon: dino.id,
+    name: dino.name,
+    koreanName: dino.koreanName,
+    era: dino.era,
+    period: dino.period,
+    region: dino.region,
+    family: dino.family,
+    imageSlots: dino.imageSlots,
+    visibleCandidateCount: candidates.length,
+    paletteLock: palette,
+    habitatProfile: habitat,
+    identityChecklistMissing: !identities[dino.id],
+    malformedSamples,
+    unregisteredSpeciesAssets: unregisteredAssets[dino.id] || [],
+    slots,
+  };
+}
+
+function buildUnregisteredAssets(dinosaurs, samples) {
+  const files = fs.readdirSync(ASSET_ROOT, { withFileTypes: true }).filter((entry) => entry.isFile()).map((entry) => entry.name);
+  const registered = new Set(
+    Object.values(samples)
+      .flat()
+      .filter((item) => item && typeof item === "object")
+      .map((item) => path.basename(normalizePath(item.src || item.source)))
+      .filter(Boolean),
+  );
+  return Object.fromEntries(
+    dinosaurs.map((dino) => [
+      dino.id,
+      files.filter((name) => name.startsWith(`${dino.id}-`) && !registered.has(name)).map((name) => `assets/dinosaurs/${name}`),
+    ]),
+  );
+}
+
+function writeMarkdown(plan) {
+  const lines = [
+    "# Dino Atlas Gallery Slot Generation Plan",
+    "",
+    `Generated: ${plan.generatedAt}`,
+    "",
+    "## Summary",
+    "",
+    `- Taxa: ${plan.summary.taxa}`,
+    `- Target slots: ${plan.summary.targetSlots}`,
+    `- Slots with selected registered candidates: ${plan.summary.selectedRegistered}`,
+    `- Slots with suggested unregistered candidates: ${plan.summary.unregisteredReviewSlots}`,
+    `- Slots requiring generation: ${plan.summary.generateSlots}`,
+    `- Taxa with generation slots: ${plan.summary.taxaWithGenerateSlots}`,
+    `- Missing real asset paths: ${plan.summary.missingAssetPaths}`,
+    `- Missing identity checklists: ${plan.summary.missingIdentityChecklists}`,
+    `- Malformed sample values: ${plan.summary.malformedSampleValues}`,
+    "",
+    "## Generation Queue",
+    "",
+    "| Taxon | Slot | Role | Registered candidate | Suggested unregistered candidate |",
+    "|---|---:|---|---|---|",
+  ];
+  for (const taxon of plan.taxa) {
+    for (const slot of taxon.slots.filter((item) => item.status !== "manual-review")) {
+      lines.push(`| ${taxon.taxon} | ${slot.slot} | ${slot.role} | none | ${slot.suggestedUnregisteredSource || "none"} |`);
+    }
+  }
+  lines.push("", "## Data Hygiene", "");
+  for (const taxon of plan.taxa.filter((item) => item.identityChecklistMissing || item.malformedSamples.length)) {
+    lines.push(`- ${taxon.taxon}: identityMissing=${taxon.identityChecklistMissing}; malformedSamples=${taxon.malformedSamples.length}`);
+  }
+  lines.push("");
+  fs.writeFileSync(OUTPUT_MD, `${lines.join("\n")}\n`, "utf8");
+}
+
+function writeAssignments(plan) {
+  const assignments = Object.fromEntries(
+    plan.taxa.map((taxon) => [
+      taxon.taxon,
+      taxon.slots
+        .filter((slot) => slot.currentSource)
+        .map((slot) => ({
+          source: slot.currentSource,
+          gallerySlot: slot.slot,
+          galleryRole: slot.role,
+          phenotype: slot.slot === 2 ? "variant-b" : "canonical-a",
+          habitatKey: taxon.habitatProfile.key,
+          expectedKind: slot.expectedKind,
+        })),
+    ]),
+  );
+  const body = [
+    "// Generated by tools/comfyui/scripts/build_gallery_slot_plan.mjs.",
+    "// Existing candidates remain in generatedImageSamples; only assigned sources enter the final gallery.",
+    `window.gallerySlotAssignments = ${JSON.stringify(assignments, null, 2)};`,
+    "",
+  ].join("\n");
+  fs.writeFileSync(OUTPUT_ASSIGNMENTS, body, "utf8");
+}
+
+function main() {
+  const source = fs.readFileSync(APP_JS, "utf8");
+  const dinosaurs = loadLiteral(source, "dinosaurs");
+  const samples = loadLiteral(source, "generatedImageSamples");
+  const identities = loadLiteral(source, "identityChecklists");
+  const profiles = loadLiteral(source, "visualVariationProfiles");
+  const routes = loadLiteral(source, "generationRouteGuides");
+  const swatches = loadLiteral(source, "taxonPaletteSwatches");
+  const unregisteredAssets = buildUnregisteredAssets(dinosaurs, samples);
+  const taxa = dinosaurs.map((dino) => makePlanItem({
+    dino,
+    samples,
+    identities,
+    profiles,
+    routes,
+    swatches,
+    unregisteredAssets,
+  }));
+  const selectedRegistered = taxa.flatMap((taxon) => taxon.slots).filter((slot) => slot.currentSource).length;
+  const generateSlots = taxa.flatMap((taxon) => taxon.slots).filter((slot) => slot.status === "generate").length;
+  const unregisteredReviewSlots = taxa.flatMap((taxon) => taxon.slots).filter((slot) => slot.status === "manual-review-unregistered").length;
+  const missingPaths = Object.values(samples)
+    .flat()
+    .filter((item) => item && typeof item === "object")
+    .map((item) => normalizePath(item.src || item.source))
+    .filter((relative) => relative.startsWith("assets/dinosaurs/") && !fs.existsSync(path.join(ROOT, relative)));
+  const plan = {
+    schemaVersion: 1,
+    generatedAt: new Date().toISOString(),
+    source: "app.js",
+    goal: "tools/comfyui/dino-slot-aware-image-generation-goal.md",
+    summary: {
+      taxa: taxa.length,
+      targetSlots: taxa.reduce((total, taxon) => total + taxon.imageSlots, 0),
+      selectedRegistered,
+      unregisteredReviewSlots,
+      generateSlots,
+      taxaWithGenerateSlots: taxa.filter((taxon) => taxon.slots.some((slot) => slot.status === "generate")).length,
+      missingAssetPaths: new Set(missingPaths).size,
+      missingIdentityChecklists: taxa.filter((taxon) => taxon.identityChecklistMissing).length,
+      malformedSampleValues: taxa.reduce((total, taxon) => total + taxon.malformedSamples.length, 0),
+      unregisteredSpeciesAssets: taxa.reduce((total, taxon) => total + taxon.unregisteredSpeciesAssets.length, 0),
+    },
+    taxa,
+  };
+
+  fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+  fs.writeFileSync(OUTPUT_JSON, `${JSON.stringify(plan, null, 2)}\n`, "utf8");
+  writeMarkdown(plan);
+  writeAssignments(plan);
+  console.log(JSON.stringify(plan.summary, null, 2));
+}
+
+main();

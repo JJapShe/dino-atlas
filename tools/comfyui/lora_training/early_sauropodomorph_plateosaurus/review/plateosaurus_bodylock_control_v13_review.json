@@ -1,0 +1,17 @@
+{
+  "taxonId": "plateosaurus-engelhardti",
+  "experiment": "bodylock_control_v13",
+  "controlSource": "assets/dinosaurs/plateosaurus-engelhardti-bodylock-guide-v1.png",
+  "outputImage": "assets/dinosaurs/plateosaurus-engelhardti-bodylock-control-comparison-v13.png",
+  "reviewSheet": "assets/dinosaurs/plateosaurus-review-options-v13.png",
+  "cropSheet": "assets/dinosaurs/plateosaurus-bodylock-control-crops-v13.png",
+  "decision": "comparison_only",
+  "reasons": [
+    "the two-grounded-hind-leg silhouette is clearer than many older failures",
+    "lifted forelimbs do not touch the ground",
+    "the render is too plain/guide-like and exact five-finger hand anatomy remains soft",
+    "current v3 remains the stronger natural representative"
+  ],
+  "keepCurrentPrimary": "assets/dinosaurs/plateosaurus-engelhardti-singleforelimb-smallhand-imagegen-v3.png",
+  "nextRoute": "Try low-denoise i2i plus body-lock control from the v3 natural source, or local hand/shadow masking, instead of pure guide ControlNet if a representative replacement is needed."
+}

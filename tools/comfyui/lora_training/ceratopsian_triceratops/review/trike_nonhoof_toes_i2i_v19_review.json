@@ -1,0 +1,22 @@
+{
+  "taxonId": "triceratops-horridus",
+  "route": "local SDXL inpaint from v9 using a tight foot-only mask",
+  "source": "assets/dinosaurs/triceratops-horridus-lowbody-closedbeak-i2i-v9.png",
+  "selectedCandidate": "assets/dinosaurs/triceratops-horridus-nonhoof-toes-i2i-comparison-v19.png",
+  "mask": "assets/dinosaurs/triceratops-nonhoof-toes-i2i-mask-v19.png",
+  "seed": 2026070445,
+  "denoise": 0.1,
+  "decision": "keep as anatomy-review comparison; do not replace v9 primary",
+  "passChecks": [
+    "low elongated ceratopsian body preserved",
+    "long single tail preserved",
+    "four visible limbs preserved",
+    "two brow horns, one nasal horn, closed beak, and skull-attached frill preserved",
+    "front foot gets a slightly clearer separated-toe read than v9"
+  ],
+  "remainingRisks": [
+    "middle and rear feet are still not a decisive upgrade over v9",
+    "local toe edit does not improve frill rim detail",
+    "representative polish is not strong enough to promote over v9"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "taxonId": "stegosaurus-stenops",
+  "experiment": "p11_v100_v102_bony_plate_material_tail_gate",
+  "currentPrimary": "assets/dinosaurs/stegosaurus-stenops-imagegen-v92-source-candidate.png",
+  "selectedCandidate": "assets/dinosaurs/stegosaurus-stenops-imagegen-v92-source-candidate.png",
+  "reviewHolds": [
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v100-source-candidate.png"
+  ],
+  "rejectReferences": [
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v101-source-candidate.png",
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v102-source-candidate.png"
+  ],
+  "reviewSheet": "assets/dinosaurs/stegosaurus-p11-v100-v102-review-sheet.png",
+  "cropSheet": "assets/dinosaurs/stegosaurus-p11-v100-v102-crops.png",
+  "decision": "keep_v92_first_hold_v100_for_plate_material_reject_v101_v102_tail_failures",
+  "reason": "The P11 prompt-only pass improves dorsal-plate color and material separation, especially v100, where the plates read as rough opaque bone/keratin rather than skin. However, none of v100-v102 beats the thagomizer gate. V100 can read as five spikes or a radial cluster, v101 leaves a straight tail-spear continuation and undercount risk, and v102 leaves a tail-parallel lower point. Keep v92 first and use v100 only as a plate-material review hold.",
+  "nextRoute": "Use tail-local ControlNet/inpaint over v92 or v100 rather than another whole-body prompt-only retry. Preserve the rough pale-bone/rust plate material while forcing a rounded tail base and exactly four countable spikes, all rising upward relative to the ground/horizon.",
+  "rejectIfPromoting": [
+    "any spike lies parallel to the ground or horizon",
+    "any lower spike runs along the tail shaft",
+    "tail continues as a pointed horizontal spear beyond the spike base",
+    "spikes form a radial/starburst cluster instead of two upward V pairs",
+    "tail reads as three spikes plus a nub or five-plus spikes",
+    "dorsal plates share skin-like leather color or texture",
+    "plates become leaves, soft fins, a comb ridge, or a connected sail"
+  ]
+}

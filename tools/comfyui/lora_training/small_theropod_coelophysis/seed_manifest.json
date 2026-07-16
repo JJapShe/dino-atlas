@@ -1,0 +1,166 @@
+{
+  "datasetId": "small_theropod_coelophysis_v1",
+  "trigger": "small_theropod_coelophysis",
+  "taxa": [
+    "Coelophysis bauri",
+    "small lightly built early theropod"
+  ],
+  "licensePolicy": "Only project-internal AI-generated images and hand-authored guides are allowed as sources. External museum/science material is reference-only, not training data.",
+  "items": [
+    {
+      "id": "coelophysis_slenderneck_smallhands_v3",
+      "role": "train_seed",
+      "source": "assets/dinosaurs/coelophysis-bauri-slenderneck-smallhands-imagegen-v3.png",
+      "caption": "small_theropod_coelophysis, Coelophysis bauri, full body side profile, small lightly built early theropod, narrow lightly toothed head, long S-curved neck, slim shallow torso, very long single balancing tail, exactly two long hind legs, dry three-toed feet, two short folded forelimbs held off the ground with tiny three-finger grasping hands, dry Late Triassic floodplain, no feathers, no bird beak, no text, no watermark",
+      "strengths": [
+        "current app first candidate for the gracile Coelophysis gate",
+        "preserves long S-curved neck, narrow head, full tail, two visible hind legs, small tucked forelimbs, and dry ground",
+        "reduces oversized hand and bulky theropod drift from earlier candidates"
+      ],
+      "risks": [
+        "exact three-finger hands and three-toed feet still need close crop review",
+        "forelimbs can become too subtle at app scale"
+      ]
+    },
+    {
+      "id": "coelophysis_compacthands_v2",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/coelophysis-bauri-compacthands-imagegen-v2.png",
+      "caption": "review hold only, previous Coelophysis compact-hand comparison with useful dry-ground body but less gracile identity and weaker hand/rear-foot reads than v3, not a positive LoRA seed",
+      "strengths": [
+        "previous first candidate with useful dry-ground and compact-hand signals",
+        "keeps full tail and two-hind-leg read"
+      ],
+      "risks": [
+        "less gracile and less Coelophysis-like than the v3 first candidate",
+        "exact hand and rear-foot reads are weaker",
+        "unsafe as train_seed while v3 has the stronger slender-neck small-hand gate"
+      ]
+    },
+    {
+      "id": "coelophysis_bodylock_guide_v1",
+      "role": "control_reference",
+      "source": "assets/dinosaurs/coelophysis-bauri-bodylock-guide-v1.png",
+      "caption": "control reference only, Coelophysis body-lock guide, small lightly built early theropod, long S-curved neck, narrow head, full single tail, exactly two hind legs, dry feet, small folded forelimbs held off the ground, no extra legs, no forelimbs touching ground",
+      "strengths": [
+        "locks the small forelimb and no-extra-leg target before texture generation",
+        "useful as ControlNet, depth, line, or i2i guidance"
+      ],
+      "risks": [
+        "schematic guide, not suitable for direct LoRA training",
+        "visible guide markings are for QA and generation planning only"
+      ]
+    },
+    {
+      "id": "coelophysis_slenderneck_openfeet_v3",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/coelophysis-bauri-slenderneck-openfeet-imagegen-v3.png",
+      "caption": "review hold only, Coelophysis v3 comparison with strong dry-ground side profile but less clean hand and rear-foot reads",
+      "strengths": [
+        "strong side profile, narrow head, and long tail",
+        "useful open-foot comparison"
+      ],
+      "risks": [
+        "hand and rear-foot reads are less clean than the selected v3 small-hand candidate",
+        "not suitable as a positive seed without re-review"
+      ]
+    },
+    {
+      "id": "coelophysis_imagegen_v5_source_candidate",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/coelophysis-bauri-imagegen-v5-source-candidate.png",
+      "caption": "review hold only, project-owned Coelophysis bauri source candidate with visible small folded forelimbs held off the ground, long S-curved neck, full tail, two hind legs, and dry three-toed feet; body and head read slightly heavier than the v3 first candidate",
+      "strengths": [
+        "small tucked forelimbs are more visible than the current v3 first candidate",
+        "forelimbs stay off the ground and do not read as extra legs",
+        "keeps two hind legs, dry feet, long S-curved neck, and full tail"
+      ],
+      "risks": [
+        "head and torso can read slightly heavier than the selected v3 candidate",
+        "exact hand and toe counts remain close-review only",
+        "not suitable as a train_seed until gracile Coelophysis identity beats v3"
+      ]
+    },
+    {
+      "id": "coelophysis_imagegen_v6_gracile_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/coelophysis-bauri-imagegen-v6-source-candidate.png",
+      "caption": "review hold only, Coelophysis P2 candidate with slim small-theropod body, long S-curved neck, full tail, two grounded hind legs, and visible tucked off-ground forelimbs",
+      "strengths": [
+        "best P2 silhouette candidate",
+        "preserves a gracile Coelophysis-like body and long S-curved neck",
+        "keeps the two-hind-leg and full-tail gates while making tucked forelimbs visible"
+      ],
+      "risks": [
+        "hand digits can still lengthen slightly",
+        "exact three-finger hands and three-toed feet remain close-review only",
+        "do not promote or train from it until it proves cleaner hand/toe anatomy than v3"
+      ]
+    },
+    {
+      "id": "coelophysis_imagegen_v7_heavy_hand_rejected",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/coelophysis-bauri-imagegen-v7-source-candidate.png",
+      "caption": "reject reference only, Coelophysis P2 candidate with heavier head/body read and longer hook-like forelimb hands",
+      "strengths": [
+        "records a clear failure mode for visible forelimb prompting",
+        "keeps full body, tail, and two grounded hind legs"
+      ],
+      "risks": [
+        "forelimb hands become too long and hook-like",
+        "body/head read heavier than the selected v3 primary",
+        "unsafe as positive seed because it can encourage generic theropod or extra-limb drift"
+      ]
+    },
+    {
+      "id": "coelophysis_imagegen_v8_no_extra_leg_hold",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/coelophysis-bauri-imagegen-v8-source-candidate.png",
+      "caption": "review hold only, Coelophysis P2 candidate with clean two-hind-leg stance, full tail, and small off-ground forelimbs",
+      "strengths": [
+        "clean no-extra-leg silhouette",
+        "preserves full tail, two grounded hind legs, and small off-ground forelimbs",
+        "useful comparison for preventing forelimbs from becoming walking legs"
+      ],
+      "risks": [
+        "hand and toe detail remains soft",
+        "does not clearly beat v3 on exact finger and foot anatomy",
+        "should remain review_hold only"
+      ]
+    },
+    {
+      "id": "coelophysis_openlimbs_v2",
+      "role": "reject_reference",
+      "source": "assets/dinosaurs/coelophysis-bauri-openlimbs-imagegen-v2.png",
+      "caption": "reject reference only, Coelophysis open-limb comparison with longer hook-like forelimb hand risk",
+      "strengths": [
+        "records open-ground, full-tail, and foot-review route"
+      ],
+      "risks": [
+        "forelimb hands remain longer and more hook-like",
+        "can encourage forelimbs to read as extra limbs or oversized hands"
+      ]
+    },
+    {
+      "id": "coelophysis_forelimb_reference_guide_v1",
+      "role": "control_reference",
+      "source": "assets/dinosaurs/coelophysis-bauri-forelimb-reference-guide-v1.png",
+      "caption": "control reference only, older Coelophysis forelimb guide for small tucked hands held off the ground",
+      "strengths": [
+        "useful older guide for forelimb-as-extra-leg rejection",
+        "project-owned and safe for QA/reference conditioning"
+      ],
+      "risks": [
+        "older and less complete than the body-lock guide",
+        "not suitable as direct LoRA training art"
+      ]
+    }
+  ],
+  "rejectCriteria": [
+    "forelimbs touching ground or reading as extra legs",
+    "six-legged silhouettes, duplicate arms, duplicate tails, or hidden feet",
+    "large raptor, Tyrannosaurus, Allosaurus, lizard, or sauropodomorph body drift",
+    "bird beak, feathers, wings, swan-like neck, or bulky monster theropod proportions",
+    "oversized hands, long dangling hook claws, fused toes, cropped tail, text, labels, logos, or watermarks"
+  ]
+}

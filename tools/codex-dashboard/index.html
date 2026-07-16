@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Codex Session Dashboard</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0c0f14;
+      --panel: #151922;
+      --panel-2: #10141c;
+      --line: #2a3240;
+      --text: #e6edf5;
+      --muted: #8e9aad;
+      --good: #43d787;
+      --warn: #f2be5c;
+      --bad: #ff6b76;
+      --accent: #62a8ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      font-size: 14px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--line);
+      background: #0f131a;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    h1 {
+      margin: 0;
+      font-size: 17px;
+      font-weight: 650;
+      letter-spacing: 0;
+    }
+    .status {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--good);
+      box-shadow: 0 0 14px color-mix(in srgb, var(--good) 65%, transparent);
+    }
+    main {
+      padding: 18px 20px 24px;
+      display: grid;
+      gap: 16px;
+    }
+    .ticker {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(130px, 1fr));
+      gap: 10px;
+    }
+    .tile, .panel {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 8px;
+    }
+    .tile {
+      padding: 12px;
+      min-height: 78px;
+    }
+    .label {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    .value {
+      margin-top: 8px;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+    }
+    .sub {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(320px, 1.2fr) minmax(320px, 0.8fr);
+      gap: 16px;
+      align-items: start;
+    }
+    .panel h2 {
+      margin: 0;
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px;
+      font-weight: 650;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    th, td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: middle;
+    }
+    th {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+    }
+    td {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    tr:last-child td { border-bottom: 0; }
+    .name {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 52px;
+      height: 22px;
+      padding: 0 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 12px;
+      background: var(--panel-2);
+    }
+    .hot { color: var(--good); border-color: color-mix(in srgb, var(--good) 55%, var(--line)); }
+    .warn { color: var(--warn); }
+    .bad { color: var(--bad); }
+    .bar {
+      width: 100%;
+      height: 7px;
+      border-radius: 999px;
+      background: #263040;
+      overflow: hidden;
+      margin-top: 8px;
+    }
+    .bar > span {
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: var(--good);
+    }
+    .bar > span.warn { background: var(--warn); }
+    .bar > span.bad { background: var(--bad); }
+    .mono { font-family: Consolas, "Cascadia Mono", monospace; }
+    @media (max-width: 1100px) {
+      .ticker { grid-template-columns: repeat(3, minmax(130px, 1fr)); }
+      .grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 620px) {
+      header { align-items: flex-start; flex-direction: column; }
+      .ticker { grid-template-columns: repeat(2, minmax(120px, 1fr)); }
+      th:nth-child(3), td:nth-child(3), th:nth-child(4), td:nth-child(4) { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Codex Session Dashboard</h1>
+    <div class="status"><span class="dot"></span><span id="updated">loading</span></div>
+  </header>
+  <main>
+    <section class="ticker" id="ticker"></section>
+    <section class="grid">
+      <div class="panel">
+        <h2>Recent Sessions</h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 43%">Session</th>
+              <th style="width: 14%">State</th>
+              <th style="width: 15%">Tokens</th>
+              <th style="width: 12%">Tools</th>
+              <th style="width: 16%">Updated</th>
+            </tr>
+          </thead>
+          <tbody id="sessions"></tbody>
+        </table>
+      </div>
+      <div class="panel">
+        <h2>Live Processes</h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 18%">PID</th>
+              <th style="width: 22%">Kind</th>
+              <th style="width: 60%">Working Dir / Command</th>
+            </tr>
+          </thead>
+          <tbody id="processes"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script>
+    const accessKey = new URLSearchParams(location.search).get("key") || "";
+    const fmt = new Intl.NumberFormat("ko-KR");
+    const timeFmt = new Intl.DateTimeFormat("ko-KR", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+
+    function pctClass(value) {
+      if (value >= 90) return "bad";
+      if (value >= 70) return "warn";
+      return "";
+    }
+
+    function tile(label, value, sub, percent) {
+      const cls = typeof percent === "number" ? pctClass(percent) : "";
+      const bar = typeof percent === "number"
+        ? `<div class="bar"><span class="${cls}" style="width:${Math.max(0, Math.min(100, percent))}%"></span></div>`
+        : "";
+      return `<div class="tile"><div class="label">${label}</div><div class="value ${cls}">${value}</div><div class="sub">${sub || ""}</div>${bar}</div>`;
+    }
+
+    function relTime(value) {
+      if (!value) return "-";
+      const ms = Date.now() - new Date(value).getTime();
+      if (ms < 60_000) return "now";
+      if (ms < 3_600_000) return `${Math.floor(ms / 60_000)}m`;
+      if (ms < 86_400_000) return `${Math.floor(ms / 3_600_000)}h`;
+      return `${Math.floor(ms / 86_400_000)}d`;
+    }
+
+    function tokenTotal(session) {
+      return session.token?.info?.total_token_usage?.total_tokens || 0;
+    }
+
+    function render(data) {
+      document.getElementById("updated").textContent = `updated ${timeFmt.format(new Date(data.generatedAt))}`;
+      const primary = data.token?.rateLimits?.primary;
+      const secondary = data.token?.rateLimits?.secondary;
+      const total = data.token?.info?.total_token_usage?.total_tokens || 0;
+      const context = data.token?.info?.model_context_window || 0;
+
+      document.getElementById("ticker").innerHTML = [
+        tile("Live", data.summary.liveProcesses, `${data.summary.cliProcesses} cli / ${data.summary.wmuxProcesses} wmux`),
+        tile("Sessions", data.summary.sessions, `${data.summary.hotSessions} hot`),
+        tile("Tokens", fmt.format(total), context ? `${fmt.format(context)} context` : "latest snapshot"),
+        tile("5H Limit", primary ? `${primary.used_percent}%` : "-", primary ? `resets ${relTime(primary.resets_at * 1000)}` : "no snapshot", primary?.used_percent),
+        tile("Weekly", secondary ? `${secondary.used_percent}%` : "-", secondary ? `resets ${relTime(secondary.resets_at * 1000)}` : "no snapshot", secondary?.used_percent),
+        tile("Kernels", data.summary.kernels, "node kernels"),
+      ].join("");
+
+      document.getElementById("sessions").innerHTML = data.sessions.slice(0, 18).map((s) => {
+        const state = s.hot ? '<span class="pill hot">hot</span>' : '<span class="pill">idle</span>';
+        return `<tr title="${s.file}">
+          <td><div class="name"><span class="mono">${s.id.slice(0, 8)}</span><span>${escapeHtml(s.title)}</span></div><div class="sub">${escapeHtml(s.cwd || "")}</div></td>
+          <td>${state}</td>
+          <td>${fmt.format(tokenTotal(s))}</td>
+          <td>${fmt.format(s.toolCalls)}</td>
+          <td>${relTime(s.updatedAt)}</td>
+        </tr>`;
+      }).join("");
+
+      document.getElementById("processes").innerHTML = data.processes.slice(0, 22).map((p) => {
+        return `<tr title="${escapeHtml(p.command)}">
+          <td class="mono">${p.pid}</td>
+          <td><span class="pill">${escapeHtml(p.kind)}</span></td>
+          <td>${escapeHtml(p.cwd || p.command)}</td>
+        </tr>`;
+      }).join("");
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    async function refresh() {
+      try {
+        const query = accessKey ? `?key=${encodeURIComponent(accessKey)}` : "";
+        const res = await fetch(`/api/snapshot${query}`, { cache: "no-store" });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        render(await res.json());
+      } catch {
+        document.getElementById("updated").textContent = "offline";
+      }
+    }
+
+    refresh();
+    setInterval(refresh, 2500);
+  </script>
+</body>
+</html>

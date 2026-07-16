@@ -1,0 +1,22 @@
+# Local runtime installs and downloads
+tools/comfyui/.venv/
+tools/comfyui/ComfyUI/
+tools/comfyui/model_downloads/
+node_modules/
+
+# Large model weights
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+
+# Generated outputs and local logs
+tools/comfyui/*.log
+tools/comfyui/sample_prompt.json
+tools/comfyui/outputs/*
+!tools/comfyui/outputs/app-gallery-samples.json
+!tools/comfyui/outputs/generation-route-summary.json
+tools/comfyui/lora_training/**/materialized*/
+screenshots/
+__pycache__/
+*.pyc
