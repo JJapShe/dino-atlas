@@ -15969,7 +15969,7 @@ function getGalleryItems(dino) {
 function getFilteredDinosaurs() {
   const query = state.search.trim().toLowerCase();
   return dinosaurs.filter((dino) => {
-    const dietMatches = state.diet === "all" || dino.diet === state.diet;
+    const dietMatches = state.diet === "all" || dino.diet.includes(state.diet);
     const levelMatches =
       state.knowledgeLevel === "all" || dino.knowledgeLevel === Number(state.knowledgeLevel);
     const text = [
