@@ -520,6 +520,8 @@ select:focus,
   width: 2060px;
   height: 1260px;
   transform-origin: 0 0;
+  contain: layout paint style;
+  will-change: transform;
 }
 
 .period-bands,

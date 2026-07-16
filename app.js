@@ -4004,6 +4004,7 @@ const state = {
     x: 24,
     y: 16,
     dragging: false,
+    transformFrame: 0,
     startX: 0,
     startY: 0,
     originX: 0,
@@ -16876,11 +16877,27 @@ function applyPhyloFocusHighlight() {
   });
 }
 
-function applyMapTransform() {
+function applyMapTransform({ updateZoomLabel = true } = {}) {
   const canvas = $("#phyloCanvas");
   if (!canvas) return;
-  canvas.style.transform = `translate(${state.map.x}px, ${state.map.y}px) scale(${state.map.scale})`;
-  $("#zoomLevel").textContent = `${Math.round(state.map.scale * 100)}%`;
+  canvas.style.transform = `translate3d(${state.map.x}px, ${state.map.y}px, 0) scale(${state.map.scale})`;
+  if (updateZoomLabel) $("#zoomLevel").textContent = `${Math.round(state.map.scale * 100)}%`;
+}
+
+function scheduleMapPanTransform() {
+  if (state.map.transformFrame) return;
+  state.map.transformFrame = requestAnimationFrame(() => {
+    state.map.transformFrame = 0;
+    applyMapTransform({ updateZoomLabel: false });
+  });
+}
+
+function flushMapPanTransform() {
+  if (state.map.transformFrame) {
+    cancelAnimationFrame(state.map.transformFrame);
+    state.map.transformFrame = 0;
+  }
+  applyMapTransform({ updateZoomLabel: false });
 }
 
 function clampScale(scale) {
@@ -20809,19 +20826,21 @@ function bindMapEvents() {
     if (!state.map.dragging) return;
     state.map.x = state.map.originX + event.clientX - state.map.startX;
     state.map.y = state.map.originY + event.clientY - state.map.startY;
-    applyMapTransform();
+    scheduleMapPanTransform();
   });
 
   viewport.addEventListener("pointerup", (event) => {
     if (!state.map.dragging) return;
     state.map.dragging = false;
     viewport.classList.remove("dragging");
+    flushMapPanTransform();
     viewport.releasePointerCapture(event.pointerId);
   });
 
   const stopDragging = () => {
     state.map.dragging = false;
     viewport.classList.remove("dragging");
+    flushMapPanTransform();
   };
 
   viewport.addEventListener("pointercancel", stopDragging);
