@@ -861,7 +861,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/ceratosaurus-nasicornis-morrison-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
@@ -937,7 +937,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/dilophosaurus-wetherilli-frilled-popular-variant-imagegen-v1.png",
+      "source": "assets/dinosaurs/dilophosaurus-wetherilli-twincrest-no-frill-identity-imagegen-v2.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
@@ -1733,7 +1733,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/apatosaurus-ajax-lowneck-floodplain-v1.png",
+      "source": "assets/dinosaurs/apatosaurus-ajax-canonical-riverbank-ecology-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
@@ -1837,7 +1837,7 @@ window.gallerySlotAssignments = {
   ],
   "stegosaurus-stenops": [
     {
-      "source": "assets/dinosaurs/stegosaurus-stenops-imagegen-v92-source-candidate.png",
+      "source": "assets/dinosaurs/stegosaurus-stenops-copperplate-upward-v-thagomizer-representative-imagegen-v1.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
@@ -1845,7 +1845,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/stegosaurus-stenops-moss-plates-terracotta-mask-pattern-imagegen-v2.png",
+      "source": "assets/dinosaurs/stegosaurus-stenops-moss-terracotta-upward-v-pattern-imagegen-v3.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -1853,7 +1853,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/stegosaurus-stenops-rain-gully-lavender-plate-mosaic-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/stegosaurus-stenops-rain-gully-upward-v-ecology-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
@@ -1861,7 +1861,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/stegosaurus-stenops-plate-topology-lowdenoise-v68.png",
+      "source": "assets/dinosaurs/stegosaurus-stenops-alternating-plate-upward-v-identity-imagegen-v1.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
@@ -1869,7 +1869,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/stegosaurus-stenops-allosaurus-defense-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/stegosaurus-stenops-allosaurus-upward-v-defense-ecology-imagegen-v2.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
       "phenotype": "canonical-a",
@@ -1877,7 +1877,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/stegosaurus-stenops-adult-juvenile-fern-glade-social-imagegen-v2.png",
+      "source": "assets/dinosaurs/stegosaurus-stenops-adult-juvenile-upward-v-social-imagegen-v3.png",
       "gallerySlot": 6,
       "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
@@ -2143,7 +2143,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/tyrannosaurus-rex-ankylosaurus-soft-belly-scavenge-graphic-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/tyrannosaurus-rex-floodplain-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
@@ -2903,7 +2903,7 @@ window.gallerySlotAssignments = {
   ],
   "torosaurus-latus": [
     {
-      "source": "assets/dinosaurs/torosaurus-latus-elongated-frill-imagegen-v1.png",
+      "source": "assets/dinosaurs/torosaurus-latus-skin-covered-frill-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
@@ -2911,7 +2911,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/torosaurus-latus-copperfenestra-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/torosaurus-latus-copper-covered-fenestra-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -2919,7 +2919,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/torosaurus-latus-floodplain-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/torosaurus-latus-skin-covered-frill-floodplain-ecology-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
@@ -3033,7 +3033,7 @@ window.gallerySlotAssignments = {
   ],
   "chasmosaurus-belli": [
     {
-      "source": "assets/dinosaurs/chasmosaurus-belli-fenestrated-frill-imagegen-v1.png",
+      "source": "assets/dinosaurs/chasmosaurus-belli-skin-covered-frill-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
@@ -3041,7 +3041,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/chasmosaurus-belli-ochre-teal-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/chasmosaurus-belli-ochre-teal-covered-fenestra-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -3049,7 +3049,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/chasmosaurus-belli-floodplain-herd-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/chasmosaurus-belli-skin-covered-frill-herd-ecology-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
