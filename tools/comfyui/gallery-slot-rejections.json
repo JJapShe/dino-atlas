@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "reviewBatch": "2026-07-17-slot-audit",
+  "rejectedSources": {
+    "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
+      "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
+    },
+    "assets/dinosaurs/dilophosaurus-wetherilli-frilled-popular-variant-imagegen-v1.png": {
+      "reason": "Fictional neck frill fails the scientific identity gate."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-lowneck-floodplain-v1.png": {
+      "reason": "Flat legacy render and cool blue-gray phenotype fail the final ecology slot."
+    },
+    "assets/dinosaurs/tyrannosaurus-rex-ankylosaurus-soft-belly-scavenge-graphic-ecology-imagegen-v1.png": {
+      "reason": "Graphic carcass scene and two-primary-animal composition fail the everyday ecology role."
+    },
+    "assets/dinosaurs/stegosaurus-stenops-imagegen-v92-source-candidate.png": {
+      "reason": "Tail weapon does not prove four attached spikes in two upward V pairs."
+    },
+    "assets/dinosaurs/stegosaurus-stenops-moss-plates-terracotta-mask-pattern-imagegen-v2.png": {
+      "reason": "Tail spikes are not all attached and rising above the tail and ground line."
+    },
+    "assets/dinosaurs/stegosaurus-stenops-rain-gully-lavender-plate-mosaic-ecology-imagegen-v1.png": {
+      "reason": "Tail spikes drift toward horizontal spear geometry."
+    },
+    "assets/dinosaurs/stegosaurus-stenops-plate-topology-lowdenoise-v68.png": {
+      "reason": "Plate topology and strict four-spike upward V gate are not both proven."
+    },
+    "assets/dinosaurs/stegosaurus-stenops-allosaurus-defense-ecology-imagegen-v1.png": {
+      "reason": "Action pose obscures the exact four-spike upward V arrangement."
+    },
+    "assets/dinosaurs/stegosaurus-stenops-adult-juvenile-fern-glade-social-imagegen-v2.png": {
+      "reason": "Adult and juvenile tail weapons do not both pass the strict four-spike gate."
+    },
+    "assets/dinosaurs/torosaurus-latus-elongated-frill-imagegen-v1.png": {
+      "reason": "Literal open-air frill holes expose the background instead of skin-covered bony fenestrae."
+    },
+    "assets/dinosaurs/torosaurus-latus-copperfenestra-pattern-imagegen-v1.png": {
+      "reason": "Literal open-air frill holes expose the background instead of skin-covered bony fenestrae."
+    },
+    "assets/dinosaurs/torosaurus-latus-floodplain-ecology-imagegen-v1.png": {
+      "reason": "Literal open-air frill holes expose the background instead of skin-covered bony fenestrae."
+    },
+    "assets/dinosaurs/chasmosaurus-belli-fenestrated-frill-imagegen-v1.png": {
+      "reason": "Literal open-air frill holes expose the background instead of continuous frill skin."
+    },
+    "assets/dinosaurs/chasmosaurus-belli-ochre-teal-pattern-imagegen-v1.png": {
+      "reason": "Literal open-air frill holes expose the background instead of continuous frill skin."
+    },
+    "assets/dinosaurs/chasmosaurus-belli-floodplain-herd-ecology-imagegen-v1.png": {
+      "reason": "Literal open-air frill holes expose the background instead of continuous frill skin."
+    }
+  }
+}

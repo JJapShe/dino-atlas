@@ -11,6 +11,7 @@ const OUTPUT_DIR = path.join(ROOT, "tools", "comfyui", "outputs");
 const OUTPUT_JSON = path.join(OUTPUT_DIR, "gallery-slot-generation-plan.json");
 const OUTPUT_MD = path.join(OUTPUT_DIR, "gallery-slot-generation-plan.md");
 const OUTPUT_ASSIGNMENTS = path.join(ROOT, "gallery-slots.js");
+const VISUAL_DECISIONS = path.join(ROOT, "tools", "comfyui", "gallery-slot-visual-decisions.json");
 
 const SLOT_ROLES = [
   { slot: 1, key: "representative", label: "representative full body", kind: "count-level pass" },
@@ -154,6 +155,15 @@ function normalizePath(value) {
   return String(value || "").replaceAll("\\", "/");
 }
 
+function loadJsonIfPresent(file, fallback = {}) {
+  if (!fs.existsSync(file)) return fallback;
+  return JSON.parse(fs.readFileSync(file, "utf8"));
+}
+
+function visualDecisionFor(decisions, taxon, slot) {
+  return decisions?.taxa?.[taxon]?.[String(slot)] || null;
+}
+
 function itemText(item) {
   return `${item?.title || ""} ${item?.body || ""} ${item?.variant || ""} ${item?.source || ""} ${item?.src || ""}`.toLowerCase();
 }
@@ -245,7 +255,22 @@ function roleThreshold(roleKey) {
   }[roleKey];
 }
 
-function selectCandidate(candidates, usedSources, role) {
+function selectCandidate(candidates, usedSources, role, decision) {
+  if (decision?.status === "approved") {
+    const approvedSource = normalizePath(decision.source);
+    const item = candidates.find((candidate) => normalizePath(candidate.src || candidate.source) === approvedSource);
+    if (!item || usedSources.has(approvedSource)) {
+      return {
+        item: null,
+        score: null,
+        selectedBy: "visual-decision-error",
+        decisionError: item ? "approved source is assigned to more than one slot" : "approved source is unavailable",
+      };
+    }
+    usedSources.add(approvedSource);
+    return { item, score: null, selectedBy: "visual-decision" };
+  }
+
   const available = candidates.filter((item) => !usedSources.has(normalizePath(item.src)));
   const explicit = available.filter(
     (item) => Number(item.gallerySlot) === role.slot || item.galleryRole === role.key,
@@ -257,7 +282,7 @@ function selectCandidate(candidates, usedSources, role) {
   const best = ranked[0];
   if (!best || (!explicit.length && best.score < roleThreshold(role.key))) return null;
   usedSources.add(normalizePath(best.item.src));
-  return best;
+  return { ...best, selectedBy: explicit.length ? "explicit-slot-metadata" : "role-score" };
 }
 
 function inferUnregisteredKind(source) {
@@ -334,13 +359,17 @@ function makePrompt({ dino, role, identity, profile, route, palette, habitat, re
   ].join("\n");
 }
 
-function makePlanItem({ dino, samples, identities, profiles, routes, swatches, unregisteredAssets }) {
+function makePlanItem({ dino, samples, identities, profiles, routes, swatches, unregisteredAssets, decisions, rejectedSources }) {
   const identity = identities[dino.id] || [];
   const profile = profiles[dino.id] || {};
   const route = routes[dino.id] || {};
   const palette = paletteFor(dino, swatches, profile);
   const habitat = habitatFor(dino, route);
-  const candidates = (samples[dino.id] || []).filter((item) => !isInternalReviewCandidate(item) && hasRealImage(item));
+  const candidates = (samples[dino.id] || []).filter((item) => (
+    !isInternalReviewCandidate(item)
+    && hasRealImage(item)
+    && !rejectedSources.has(normalizePath(item.src || item.source))
+  ));
   const malformedSamples = (samples[dino.id] || [])
     .map((item, index) => ({ item, index }))
     .filter(({ item }) => !item || typeof item !== "object")
@@ -350,16 +379,21 @@ function makePlanItem({ dino, samples, identities, profiles, routes, swatches, u
   const selected = [];
 
   for (const role of roles) {
-    const picked = selectCandidate(candidates, usedSources, role);
-    selected.push({ role, picked });
+    const decision = visualDecisionFor(decisions, dino.id, role.slot);
+    const picked = selectCandidate(candidates, usedSources, role, decision);
+    selected.push({ role, picked, decision });
   }
 
   const representative = selected.find(({ role }) => role.slot === 1)?.picked?.item;
   const referenceSource = normalizePath(representative?.src || route.control || "");
-  const slots = selected.map(({ role, picked }) => {
+  const slots = selected.map(({ role, picked, decision }) => {
     const source = normalizePath(picked?.item?.src || "");
     const suggestedUnregistered = source ? null : suggestUnregisteredSource(unregisteredAssets[dino.id] || [], role.key);
-    const status = source ? "manual-review" : suggestedUnregistered ? "manual-review-unregistered" : "generate";
+    const decisionSource = normalizePath(decision?.source || "");
+    const approved = decision?.status === "approved" && source && source === decisionSource;
+    const status = decision?.status === "approved"
+      ? approved ? "approved" : "decision-error"
+      : source ? "manual-review" : suggestedUnregistered ? "manual-review-unregistered" : "generate";
     return {
       slot: role.slot,
       role: role.key,
@@ -370,6 +404,12 @@ function makePlanItem({ dino, samples, identities, profiles, routes, swatches, u
       currentSource: source,
       currentTitle: picked?.item?.title || "",
       score: picked?.score ?? null,
+      selectedBy: picked?.selectedBy || "",
+      decisionStatus: decision?.status || "unreviewed",
+      decisionSource,
+      decisionReason: decision?.reason || "",
+      reviewMethod: decision?.reviewMethod || "",
+      decisionError: picked?.decisionError || "",
       suggestedUnregisteredSource: suggestedUnregistered?.source || "",
       suggestedUnregisteredScore: suggestedUnregistered?.score ?? null,
       referenceSource,
@@ -426,6 +466,9 @@ function writeMarkdown(plan) {
     "",
     `- Taxa: ${plan.summary.taxa}`,
     `- Target slots: ${plan.summary.targetSlots}`,
+    `- Visually approved slots: ${plan.summary.approvedSlots}`,
+    `- Slots pending visual review: ${plan.summary.pendingVisualReview}`,
+    `- Visual decision errors: ${plan.summary.visualDecisionErrors}`,
     `- Slots with selected registered candidates: ${plan.summary.selectedRegistered}`,
     `- Slots with suggested unregistered candidates: ${plan.summary.unregisteredReviewSlots}`,
     `- Slots requiring generation: ${plan.summary.generateSlots}`,
@@ -440,8 +483,8 @@ function writeMarkdown(plan) {
     "|---|---:|---|---|---|",
   ];
   for (const taxon of plan.taxa) {
-    for (const slot of taxon.slots.filter((item) => item.status !== "manual-review")) {
-      lines.push(`| ${taxon.taxon} | ${slot.slot} | ${slot.role} | none | ${slot.suggestedUnregisteredSource || "none"} |`);
+    for (const slot of taxon.slots.filter((item) => item.status !== "approved")) {
+      lines.push(`| ${taxon.taxon} | ${slot.slot} | ${slot.role} | ${slot.currentSource || "none"} | ${slot.suggestedUnregisteredSource || "none"} |`);
     }
   }
   lines.push("", "## Data Hygiene", "");
@@ -457,7 +500,7 @@ function writeAssignments(plan) {
     plan.taxa.map((taxon) => [
       taxon.taxon,
       taxon.slots
-        .filter((slot) => slot.currentSource)
+        .filter((slot) => slot.status === "approved" && slot.currentSource)
         .map((slot) => ({
           source: slot.currentSource,
           gallerySlot: slot.slot,
@@ -485,6 +528,8 @@ function main() {
   const profiles = loadLiteral(source, "visualVariationProfiles");
   const routes = loadLiteral(source, "generationRouteGuides");
   const swatches = loadLiteral(source, "taxonPaletteSwatches");
+  const decisions = loadJsonIfPresent(VISUAL_DECISIONS, { taxa: {}, rejectedSources: {} });
+  const rejectedSources = new Set(Object.keys(decisions.rejectedSources || {}).map(normalizePath));
   const unregisteredAssets = buildUnregisteredAssets(dinosaurs, samples);
   const taxa = dinosaurs.map((dino) => makePlanItem({
     dino,
@@ -494,8 +539,13 @@ function main() {
     routes,
     swatches,
     unregisteredAssets,
+    decisions,
+    rejectedSources,
   }));
   const selectedRegistered = taxa.flatMap((taxon) => taxon.slots).filter((slot) => slot.currentSource).length;
+  const approvedSlots = taxa.flatMap((taxon) => taxon.slots).filter((slot) => slot.status === "approved").length;
+  const pendingVisualReview = taxa.flatMap((taxon) => taxon.slots).filter((slot) => !["approved", "decision-error"].includes(slot.status)).length;
+  const visualDecisionErrors = taxa.flatMap((taxon) => taxon.slots).filter((slot) => slot.status === "decision-error").length;
   const generateSlots = taxa.flatMap((taxon) => taxon.slots).filter((slot) => slot.status === "generate").length;
   const unregisteredReviewSlots = taxa.flatMap((taxon) => taxon.slots).filter((slot) => slot.status === "manual-review-unregistered").length;
   const missingPaths = Object.values(samples)
@@ -504,13 +554,16 @@ function main() {
     .map((item) => normalizePath(item.src || item.source))
     .filter((relative) => relative.startsWith("assets/dinosaurs/") && !fs.existsSync(path.join(ROOT, relative)));
   const plan = {
-    schemaVersion: 1,
+    schemaVersion: 2,
     generatedAt: new Date().toISOString(),
     source: "app.js",
     goal: "tools/comfyui/dino-slot-aware-image-generation-goal.md",
     summary: {
       taxa: taxa.length,
       targetSlots: taxa.reduce((total, taxon) => total + taxon.imageSlots, 0),
+      approvedSlots,
+      pendingVisualReview,
+      visualDecisionErrors,
       selectedRegistered,
       unregisteredReviewSlots,
       generateSlots,
@@ -519,6 +572,7 @@ function main() {
       missingIdentityChecklists: taxa.filter((taxon) => taxon.identityChecklistMissing).length,
       malformedSampleValues: taxa.reduce((total, taxon) => total + taxon.malformedSamples.length, 0),
       unregisteredSpeciesAssets: taxa.reduce((total, taxon) => total + taxon.unregisteredSpeciesAssets.length, 0),
+      rejectedSources: rejectedSources.size,
     },
     taxa,
   };

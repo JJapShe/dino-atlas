@@ -3903,6 +3903,16 @@
   - Used species-specific natural contrast: face or throat masks, pale bellies, irregular cloud saddles, armor marbling, and restrained shoulder marks. Avoided synthetic checker, leaf, chevron, repeated body-dot, and banded-tail patterns.
   - Final planner and validator result: 132 taxa, 472 target slots, 472 assigned, 0 missing, 0 duplicates, 0 out-of-range, 0 missing assets, and 0 wrong representative kinds.
 
+- `Original-size visual approval and anatomy repair pass 2026-07-17`
+  - Re-audited all 472 final slots across 22 contact sheets and inspected every flagged or replacement asset at original size. Added `gallery-slot-visual-decisions.json` so final assignments require an exact approved source rather than score-only selection.
+  - Reused 458 approved existing slots and selected 14 new reference-guided image-edit outputs: Dilophosaurus slot 4, Apatosaurus slot 3, all six Stegosaurus slots, all three Torosaurus slots, and all three Chasmosaurus slots.
+  - Replaced two additional failed slots with already registered assets: Ceratosaurus slot 3 now uses the Morrison riverside ecology image instead of the indigo-zebra palette drift, and Tyrannosaurus slot 3 uses the non-graphic floodplain scene instead of the two-animal carcass image.
+  - Recorded 16 rejected registered sources. Primary failures were a fictional Dilophosaurus neck frill, flat/cool Apatosaurus treatment, graphic Tyrannosaurus carcass composition, six Stegosaurus tail-weapon failures, and literal open-air Torosaurus/Chasmosaurus frill holes.
+  - Stegosaurus final gate: hard plate surfaces must differ from body skin; exactly four attached tail spikes form two left-right pairs; every spike rises above the tail and ground line in an upward V; horizontal, radial, fifth, detached, or spear-tip spikes fail.
+  - Torosaurus and Chasmosaurus final gate: paired bony fenestra locations may read as shallow fields under the integument, but small polygonal scales cover the entire frill continuously and no background may show through it.
+  - Palette repair: removed the Ceratosaurus indigo-zebra drift and restored Apatosaurus canonical tan/smoky-brown riverbank color. Habitat color remains localized to substrate, mud, moisture, and reflected light instead of replacing species body color.
+  - Planner and strict validator result: 132 taxa, 472 target slots, 472 visually approved and assigned, 0 pending review, 0 decision errors, 0 missing/duplicate/out-of-range slots, 0 missing candidates/assets, and 0 rejected-source selections.
+
 ## Reusable Output Contract
 
 For each added taxon, produce:
