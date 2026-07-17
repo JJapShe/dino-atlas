@@ -15934,6 +15934,17 @@ function openLightbox(items, index = 0) {
   renderLightbox();
 }
 
+function openDinoGalleryLightbox(dino, selectedImage = getPrimaryImage(dino)) {
+  const galleryItems = getGalleryItems(dino);
+  const lightboxItems = getLightboxItems(galleryItems);
+  const selectedIndex = lightboxItems.findIndex((item) => item.src === selectedImage?.src);
+  if (selectedIndex >= 0) {
+    openLightbox(galleryItems, selectedIndex);
+    return;
+  }
+  if (selectedImage?.src) openLightbox([selectedImage], 0);
+}
+
 function closeLightbox() {
   state.lightboxItems = [];
   state.lightboxIndex = 0;
@@ -17057,7 +17068,7 @@ function bindGalleryEvents(dino, galleryItems = []) {
   $$("[data-lightbox-context='primary']").forEach((button) => {
     button.addEventListener("click", () => {
       const primaryImage = getPrimaryImage(dino);
-      if (primaryImage?.src) openLightbox([primaryImage], 0);
+      if (primaryImage?.src) openDinoGalleryLightbox(dino, primaryImage);
     });
   });
 
@@ -17158,7 +17169,7 @@ function renderCatalog() {
         event.stopPropagation();
         const dino = getDinoById(card.dataset.id);
         const primaryImage = dino ? getPrimaryImage(dino) : null;
-        if (primaryImage?.src) openLightbox([primaryImage], 0);
+        if (dino && primaryImage?.src) openDinoGalleryLightbox(dino, primaryImage);
       };
       imageZoom.addEventListener("click", openImage);
       imageZoom.addEventListener("keydown", (event) => {
