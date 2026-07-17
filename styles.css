@@ -2321,7 +2321,6 @@ body.lightbox-open {
   }
 
   .lightbox-topbar > :not(.lightbox-close),
-  .lightbox-nav,
   .lightbox-caption {
     display: none;
   }
@@ -2342,6 +2341,23 @@ body.lightbox-open {
 
   .lightbox-stage img {
     border-radius: 0;
+  }
+
+  .lightbox-nav {
+    z-index: 1;
+    width: 40px;
+    height: 64px;
+    border-color: rgba(147, 164, 181, 0.34);
+    background: rgba(9, 13, 19, 0.72);
+    backdrop-filter: blur(8px);
+  }
+
+  .lightbox-nav.prev {
+    left: 8px;
+  }
+
+  .lightbox-nav.next {
+    right: 8px;
   }
 
   .main,
