@@ -20984,6 +20984,44 @@ function renderAll() {
 function bindMapEvents() {
   const viewport = $("#mapViewport");
   const mapNodes = $("#mapNodes");
+  const activePointers = new Map();
+  let pinching = false;
+  let pinchStartDistance = 0;
+  let pinchStartScale = state.map.scale;
+
+  const getPinchMetrics = () => {
+    const [first, second] = [...activePointers.values()];
+    if (!first || !second) return null;
+    const centerX = (first.clientX + second.clientX) / 2;
+    const centerY = (first.clientY + second.clientY) / 2;
+    return {
+      centerX,
+      centerY,
+      distance: Math.hypot(second.clientX - first.clientX, second.clientY - first.clientY),
+    };
+  };
+
+  const beginPinch = () => {
+    const metrics = getPinchMetrics();
+    if (!metrics || metrics.distance <= 0) return;
+    pinching = true;
+    pinchStartDistance = metrics.distance;
+    pinchStartScale = state.map.scale;
+    state.map.dragging = false;
+    viewport.classList.remove("dragging");
+    flushMapPanTransform();
+  };
+
+  const resumeDragWithRemainingPointer = () => {
+    const remainingPointer = [...activePointers.values()][0];
+    if (!remainingPointer) return;
+    state.map.dragging = true;
+    state.map.startX = remainingPointer.clientX;
+    state.map.startY = remainingPointer.clientY;
+    state.map.originX = state.map.x;
+    state.map.originY = state.map.y;
+    viewport.classList.add("dragging");
+  };
 
   mapNodes.addEventListener("click", (event) => {
     const node = event.target.closest(".map-node.taxon");
@@ -21015,18 +21053,37 @@ function bindMapEvents() {
     { passive: false },
   );
 
+  viewport.addEventListener("dblclick", (event) => {
+    event.preventDefault();
+  });
+
   viewport.addEventListener("pointerdown", (event) => {
     if (event.button !== 0 || event.target.closest(".map-node")) return;
+    activePointers.set(event.pointerId, { clientX: event.clientX, clientY: event.clientY });
+    viewport.setPointerCapture(event.pointerId);
+    if (activePointers.size === 2) {
+      beginPinch();
+      return;
+    }
     state.map.dragging = true;
     state.map.startX = event.clientX;
     state.map.startY = event.clientY;
     state.map.originX = state.map.x;
     state.map.originY = state.map.y;
     viewport.classList.add("dragging");
-    viewport.setPointerCapture(event.pointerId);
   });
 
   viewport.addEventListener("pointermove", (event) => {
+    if (activePointers.has(event.pointerId)) {
+      activePointers.set(event.pointerId, { clientX: event.clientX, clientY: event.clientY });
+    }
+    if (pinching) {
+      const metrics = getPinchMetrics();
+      if (metrics && pinchStartDistance > 0) {
+        zoomMap(pinchStartScale * (metrics.distance / pinchStartDistance), metrics.centerX, metrics.centerY);
+      }
+      return;
+    }
     if (!state.map.dragging) return;
     state.map.x = state.map.originX + event.clientX - state.map.startX;
     state.map.y = state.map.originY + event.clientY - state.map.startY;
@@ -21034,14 +21091,26 @@ function bindMapEvents() {
   });
 
   viewport.addEventListener("pointerup", (event) => {
-    if (!state.map.dragging) return;
-    state.map.dragging = false;
-    viewport.classList.remove("dragging");
-    flushMapPanTransform();
-    viewport.releasePointerCapture(event.pointerId);
+    activePointers.delete(event.pointerId);
+    if (viewport.hasPointerCapture(event.pointerId)) viewport.releasePointerCapture(event.pointerId);
+    if (pinching && activePointers.size < 2) {
+      pinching = false;
+      if (activePointers.size === 1) resumeDragWithRemainingPointer();
+    }
+    if (activePointers.size === 0) {
+      state.map.dragging = false;
+      viewport.classList.remove("dragging");
+      flushMapPanTransform();
+    }
   });
 
-  const stopDragging = () => {
+  const stopDragging = (event) => {
+    if (event?.pointerId !== undefined) activePointers.delete(event.pointerId);
+    if (pinching && activePointers.size < 2) {
+      pinching = false;
+      if (activePointers.size === 1) resumeDragWithRemainingPointer();
+    }
+    if (activePointers.size > 0) return;
     state.map.dragging = false;
     viewport.classList.remove("dragging");
     flushMapPanTransform();
