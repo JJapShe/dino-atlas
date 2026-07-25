@@ -49,6 +49,18 @@
     },
     "assets/dinosaurs/chasmosaurus-belli-floodplain-herd-ecology-imagegen-v1.png": {
       "reason": "Literal open-air frill holes expose the background instead of continuous frill skin."
+    },
+    "assets/dinosaurs/rhamphorhynchus-muensteri-longtail-vane-imagegen-v1.png": {
+      "reason": "Two parallel tail shafts leave the body, with one reading as attached to the wing base; Rhamphorhynchus must have one pelvis-origin tail."
+    },
+    "assets/dinosaurs/rhamphorhynchus-muensteri-slate-ochre-pattern-imagegen-v1.png": {
+      "reason": "Three separately readable wing membranes fail the strict two-wing pterosaur gate."
+    },
+    "assets/dinosaurs/rhamphorhynchus-muensteri-moonlit-ledge-takeoff-mint-plum-ecology-imagegen-v1.png": {
+      "reason": "Three separately readable hind limbs fail the strict two-hindlimb pterosaur gate."
+    },
+    "assets/dinosaurs/rhamphorhynchus-muensteri-longtail-vane-identity-imagegen-v2.png": {
+      "reason": "Three separately readable wing membranes and duplicated limb geometry fail the strict two-wing, two-hindlimb pterosaur gate."
     }
   }
 }

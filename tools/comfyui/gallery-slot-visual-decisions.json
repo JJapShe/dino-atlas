@@ -1299,48 +1299,48 @@
     "rhamphorhynchus-muensteri": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/rhamphorhynchus-muensteri-longtail-vane-imagegen-v1.png",
+        "source": "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-surface-strike-ecology-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Original-size and body-crop review confirms exactly two wing membranes, two hind limbs, one pelvis-origin tail, and one terminal diamond vane.",
+        "reviewMethod": "Original-size inspection plus targeted body and tail crops after owner anatomy correction",
+        "reviewBatch": "2026-07-26-rhamphorhynchus-recheck",
+        "reviewedAt": "2026-07-25T15:17:56.355Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/rhamphorhynchus-muensteri-slate-ochre-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/rhamphorhynchus-muensteri-bluehour-underside-celadon-coral-wing-ecology-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Targeted crop confirms exactly two wing membranes, two separate hind limbs, and one tail; celadon and coral coloring provides the intended pattern variation.",
+        "reviewMethod": "Original-size inspection plus targeted body and tail crops after owner anatomy correction",
+        "reviewBatch": "2026-07-26-rhamphorhynchus-recheck",
+        "reviewedAt": "2026-07-25T15:17:56.355Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/rhamphorhynchus-muensteri-lagoon-reflection-coral-wing-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-roost-takeoff-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Takeoff crop confirms two wings, two grounded hind limbs, and a single pelvis-origin tail with a terminal diamond vane.",
+        "reviewMethod": "Original-size inspection plus targeted body and tail crops after owner anatomy correction",
+        "reviewBatch": "2026-07-26-rhamphorhynchus-recheck",
+        "reviewedAt": "2026-07-25T15:17:56.355Z"
       },
       "4": {
         "status": "approved",
-        "source": "assets/dinosaurs/rhamphorhynchus-muensteri-longtail-vane-identity-imagegen-v2.png",
+        "source": "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-moonlit-bank-ecology-imagegen-v1.png",
         "role": "identity-anatomy",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Top-down crop keeps both wing membranes, both small hind limbs, one striped tail, and the diamond tail vane separately readable.",
+        "reviewMethod": "Original-size inspection plus targeted body and tail crops after owner anatomy correction",
+        "reviewBatch": "2026-07-26-rhamphorhynchus-recheck",
+        "reviewedAt": "2026-07-25T15:17:56.355Z"
       },
       "5": {
         "status": "approved",
-        "source": "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-surface-strike-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-fishing-ecology-imagegen-v1.png",
         "role": "interaction",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The fishing action preserves two wings and one uninterrupted long tail with a terminal vane; the dynamic pose remains an interaction-only anatomy review.",
+        "reviewMethod": "Original-size inspection plus targeted body and tail crops after owner anatomy correction",
+        "reviewBatch": "2026-07-26-rhamphorhynchus-recheck",
+        "reviewedAt": "2026-07-25T15:17:56.355Z"
       }
     },
     "pterodactylus-antiquus": {
@@ -4566,6 +4566,18 @@
     },
     "assets/dinosaurs/chasmosaurus-belli-floodplain-herd-ecology-imagegen-v1.png": {
       "reason": "Literal open-air frill holes expose the background instead of continuous frill skin."
+    },
+    "assets/dinosaurs/rhamphorhynchus-muensteri-longtail-vane-imagegen-v1.png": {
+      "reason": "Two parallel tail shafts leave the body, with one reading as attached to the wing base; Rhamphorhynchus must have one pelvis-origin tail."
+    },
+    "assets/dinosaurs/rhamphorhynchus-muensteri-slate-ochre-pattern-imagegen-v1.png": {
+      "reason": "Three separately readable wing membranes fail the strict two-wing pterosaur gate."
+    },
+    "assets/dinosaurs/rhamphorhynchus-muensteri-moonlit-ledge-takeoff-mint-plum-ecology-imagegen-v1.png": {
+      "reason": "Three separately readable hind limbs fail the strict two-hindlimb pterosaur gate."
+    },
+    "assets/dinosaurs/rhamphorhynchus-muensteri-longtail-vane-identity-imagegen-v2.png": {
+      "reason": "Three separately readable wing membranes and duplicated limb geometry fail the strict two-wing, two-hindlimb pterosaur gate."
     }
   }
 }

@@ -7018,23 +7018,23 @@ const generatedImageSamples = {
   ],
   "rhamphorhynchus-muensteri": [
     {
-      kind: "count-level pass",
-      title: "람포링쿠스 v1 긴 꼬리막 대표 후보",
-      body: "공룡이 아닌 익룡 대표 이미지 첫 시험 후보입니다. 졸른호펜의 작은 익룡답게 길고 좁은 이빨 달린 부리, 피크노섬유로 덮인 작은 몸통, 길고 좁은 날개막, 짧은 뒷다리, 마름모 꼬리막으로 끝나는 긴 꼬리를 유지합니다. 머리 실루엣과 날개 손가락 해부학은 익룡 기준으로 더 확인해야 하므로 시험 대표로 유지합니다.",
+      kind: "reject reference",
+      title: "람포링쿠스 v1 이중 꼬리축 탈락 기록",
+      body: "몸 뒤에서 두 개의 긴 꼬리축이 나란히 이어지며 하나는 날개 기부에 붙은 것처럼 보여 탈락한 기록입니다. 람포링쿠스는 골반 중앙에서 시작하는 단 하나의 뻣뻣한 꼬리와 끝의 마름모 꼬리막만 허용합니다.",
       source: "assets/dinosaurs/rhamphorhynchus-muensteri-longtail-vane-imagegen-v1.png",
-      variant: "긴 꼬리막 이미지 생성 v1",
+      variant: "이중 꼬리축 탈락 이미지 생성 v1",
       src: "assets/dinosaurs/rhamphorhynchus-muensteri-longtail-vane-imagegen-v1.png",
     },
     {
-      kind: "review hold",
-      title: "람포링쿠스 v1 슬레이트-오커 무늬 변이",
-      body: "같은 체형의 색/무늬 변이입니다. 슬레이트 청회색 날개막, 따뜻한 황토 갈색 몸, 옅은 크림색 배, 차콜 꼬리 띠, 녹슨빛 뺨 무늬, 옅은 몸통 반점을 사용합니다. 날개막 부착, 꼬리막, 새/박쥐 드리프트 방지 기준을 확인할 때까지 대표보다 아래에 둡니다.",
+      kind: "reject reference",
+      title: "람포링쿠스 v1 슬레이트-오커 제3 날개막 탈락 기록",
+      body: "슬레이트-오커 색 구성은 참고할 수 있지만, 앞쪽 큰 날개막과 등 뒤 날개막 사이에 별도의 세 번째 날개막이 생겨 탈락했습니다. 정확히 두 장의 날개막만 보여야 합니다.",
       source: "assets/dinosaurs/rhamphorhynchus-muensteri-slate-ochre-pattern-imagegen-v1.png",
-      variant: "슬레이트-오커 무늬 이미지 생성 v1",
+      variant: "슬레이트-오커 제3 날개막 탈락 이미지 생성 v1",
       src: "assets/dinosaurs/rhamphorhynchus-muensteri-slate-ochre-pattern-imagegen-v1.png",
     },
     {
-      kind: "review hold",
+      kind: "anatomy review",
       title: "람포링쿠스 v1 졸른호펜 물고기 사냥 생태",
       body: "후기 쥐라기 졸른호펜 석호에서 람포링쿠스가 얕은 물 위를 낮게 스치며 작은 온전한 물고기를 노리는 생태 장면입니다. 동작 자세 때문에 날개 손가락, 발, 꼬리막의 정밀 검수는 어려우므로 익룡 행동과 서식지 참고로만 사용합니다.",
       source: "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-fishing-ecology-imagegen-v1.png",
@@ -7052,17 +7052,17 @@ const generatedImageSamples = {
     {
       kind: "review hold",
       title: "람포링쿠스 블루아워 하부 셀라돈-산호 날개 생태",
-      body: "블루아워 석호 위를 낮게 나는 하부 시점의 익룡 후보입니다. 셀라돈색 날개막, 산호색 혈관선, 긴 이빨 부리, 피크노섬유 몸통, 긴 줄무늬 꼬리와 마름모 꼬리막이 넓게 드러납니다. 치열과 날개막 원근이 과장될 수 있으므로 대표보다 아래에 두고 야간 석호·날개막 패턴 참고로 사용합니다.",
+      body: "블루아워 석호 위를 낮게 나는 하부 시점의 익룡 후보입니다. 셀라돈색 날개막, 산호색 혈관선, 긴 이빨 부리, 피크노섬유 몸통, 정확히 두 장의 날개막과 두 뒷다리, 골반에서 시작하는 단일 꼬리와 마름모 꼬리막이 확인됩니다. 하부 원근이 강하므로 색·무늬 변이로 사용합니다.",
       source: "assets/dinosaurs/rhamphorhynchus-muensteri-bluehour-underside-celadon-coral-wing-ecology-imagegen-v1.png",
       variant: "블루아워 하부 셀라돈 산호 날개 생태 이미지 생성 v1",
       src: "assets/dinosaurs/rhamphorhynchus-muensteri-bluehour-underside-celadon-coral-wing-ecology-imagegen-v1.png",
     },
     {
-      kind: "review hold",
-      title: "람포링쿠스 월광 암반 민트-자두 이륙 생태",
-      body: "구름 낀 달빛 아래 석회암 암반에서 이륙하는 람포링쿠스 생태/패턴 후보입니다. 긴 이빨 부리, 좁은 날개막, 피크노섬유 몸통, 길게 휘어진 줄무늬 꼬리와 마름모 꼬리막이 크게 보이며 민트빛 날개막과 자두색 가장자리 워시가 기존 산호색 장면과 다른 야간 위장색을 제공합니다. 이륙 자세 때문에 발과 날개 손가락 해부는 대표 승격 전 별도 검수합니다.",
+      kind: "reject reference",
+      title: "람포링쿠스 월광 암반 세 뒷다리 탈락 기록",
+      body: "민트-자두색 날개막과 꼬리막은 유용하지만, 몸 아래에 접지 다리 두 개와 뒤로 뻗은 다리 하나가 함께 보여 뒷다리가 세 개로 읽힙니다. 정확히 두 개의 뒷다리 기준을 어겨 탈락했습니다.",
       source: "assets/dinosaurs/rhamphorhynchus-muensteri-moonlit-ledge-takeoff-mint-plum-ecology-imagegen-v1.png",
-      variant: "월광 암반 민트 자두 이륙 생태 이미지 생성 v1",
+      variant: "월광 암반 세 뒷다리 탈락 이미지 생성 v1",
       src: "assets/dinosaurs/rhamphorhynchus-muensteri-moonlit-ledge-takeoff-mint-plum-ecology-imagegen-v1.png",
     },
     {
@@ -7074,24 +7074,29 @@ const generatedImageSamples = {
       src: "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-roost-takeoff-ecology-imagegen-v1.png",
     },
     {
-      kind: "anatomy review",
-      title: "람포링쿠스 졸른호펜 수면 포식 상호작용",
-      body: "졸른호펜 석호 위에서 람포링쿠스가 작은 물고기를 향해 수면을 스치는 상호작용 장면입니다. 긴 이빨 부리, 피크노섬유 몸통, 네 번째 손가락이 지지하는 날개막, 보이는 발, 매우 긴 꼬리와 끝의 마름모 꼬리막을 함께 확인할 수 있어 행동 슬롯으로 등록합니다.",
+      kind: "count-level pass",
+      title: "람포링쿠스 졸른호펜 수면 포식 전신 대표",
+      body: "졸른호펜 석호 위에서 작은 물고기를 향해 수면을 스치는 전신 대표입니다. 길고 좁은 이빨 부리, 피크노섬유 몸통, 정확히 두 장의 넷째손가락 날개막, 정확히 두 개의 뒷다리, 골반에서 시작하는 단 하나의 긴 꼬리와 끝의 마름모 꼬리막이 모두 분리되어 읽힙니다.",
       source: "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-surface-strike-ecology-imagegen-v1.png",
-      variant: "졸른호펜 수면 포식 생태 이미지 생성 v1",
+      variant: "졸른호펜 수면 포식 전신 대표 이미지 생성 v1",
       src: "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-surface-strike-ecology-imagegen-v1.png",
     },
     {
-      kind: "anatomy review",
-      title: "람포링쿠스 긴 꼬리와 마름모 꼬리막 구조 전신",
-      body: "람포링쿠스의 좁고 이빨 달린 주둥이, 접힌 날개막과 보이는 발, 길고 뻣뻣한 꼬리 끝의 작은 마름모 꼬리막을 확인하는 구조 전신 후보입니다. 새 깃털이나 짧은 익룡꼬리로 바뀌지 않도록 몸의 짧은 섬유질과 단순한 날개막을 유지했습니다.",
+      kind: "reject reference",
+      title: "람포링쿠스 v2 제3 날개막 탈락 기록",
+      body: "몸 앞의 두 날개막과 별도로 몸 뒤쪽에 세 번째 날개막이 생기고 팔다리 구조도 중복되어 탈락했습니다. 정확히 두 장의 날개막과 두 개의 뒷다리만 허용합니다.",
       source: "assets/dinosaurs/rhamphorhynchus-muensteri-longtail-vane-identity-imagegen-v2.png",
-      variant: "긴 꼬리와 마름모 꼬리막 구조 이미지 생성 v2",
+      variant: "제3 날개막 탈락 이미지 생성 v2",
       src: "assets/dinosaurs/rhamphorhynchus-muensteri-longtail-vane-identity-imagegen-v2.png",
-      gallerySlot: 4,
-      galleryRole: "identity-anatomy",
-      phenotype: "canonical-a",
       edited: true,
+    },
+    {
+      kind: "anatomy review",
+      title: "람포링쿠스 졸른호펜 월광 석호 하강 전신",
+      body: "월광 아래 졸른호펜 석호로 하강하는 상부 시점 전신입니다. 정확히 두 장의 날개막, 두 개의 짧은 뒷다리, 골반에서 시작하는 단일 줄무늬 꼬리와 끝의 마름모 꼬리막이 서로 분리되어 보여 대체 서식지·행동 슬롯으로 사용합니다.",
+      source: "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-moonlit-bank-ecology-imagegen-v1.png",
+      variant: "졸른호펜 월광 석호 하강 전신 이미지 생성 v1",
+      src: "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-moonlit-bank-ecology-imagegen-v1.png",
     },
   ],
   "pterodactylus-antiquus": [
@@ -7204,6 +7209,14 @@ const generatedImageSamples = {
       source: "assets/dinosaurs/anhanguera-santanae-araripe-takeoff-ecology-imagegen-v1.png",
       variant: "아라리페 수면 이륙 생태 이미지 생성 v1",
       src: "assets/dinosaurs/anhanguera-santanae-araripe-takeoff-ecology-imagegen-v1.png",
+    },
+    {
+      kind: "anatomy review",
+      title: "안항구에라 로무알도 상공 활공 생태 v2",
+      body: "이른 아침 로무알도 석호 위를 한 개체가 넓게 활공하는 구도입니다. 위아래 턱끝의 낮은 볏, 이빨 달린 긴 주둥이, 짧은 꼬리, 네 번째 손가락 날개막과 두 발을 모두 프레임 안에 두어 기존 이륙 장면과 다른 상공 실루엣을 제공합니다.",
+      source: "assets/dinosaurs/anhanguera-santanae-romualdo-overhead-glide-ecology-imagegen-v2.png",
+      variant: "로무알도 상공 활공 생태 이미지 생성 v2",
+      src: "assets/dinosaurs/anhanguera-santanae-romualdo-overhead-glide-ecology-imagegen-v2.png",
     },
   ],
   "tapejara-wellnhoferi": [
@@ -7361,6 +7374,16 @@ const generatedImageSamples = {
       variant: "블루 라이어스 조간대 먹이활동 이미지 생성 v1",
       src: "assets/dinosaurs/dimorphodon-macronyx-blue-lias-tidepool-forage-ecology-imagegen-v1.png",
     },
+    {
+      kind: "anatomy review",
+      title: "Dimorphodon Blue Lias overhead glide v2",
+      body: "A full-body overhead glide view that keeps the oversized deep head, short broad wing membranes, exactly two visible feet, and one long tail with a small terminal vane readable together.",
+      source: "assets/dinosaurs/dimorphodon-macronyx-blue-lias-overhead-glide-imagegen-v2.png",
+      variant: "Blue Lias overhead glide imagegen v2",
+      src: "assets/dinosaurs/dimorphodon-macronyx-blue-lias-overhead-glide-imagegen-v2.png",
+      gallerySlot: 4,
+      galleryRole: "alternate-habitat-behavior",
+    },
   ],
   "eudimorphodon-ranzii": [
     {
@@ -7484,6 +7507,87 @@ const generatedImageSamples = {
       habitatKey: "open-marine",
       edited: true,
     },
+    {
+      kind: "anatomy review",
+      title: "Ichthyosaurus large-eye plump-body candidate A",
+      body: "Comparison candidate with a larger round orbital eye, deep chest, and softly rounded belly while retaining the narrow toothed snout, one dorsal fin, four paddled flippers, and vertical crescent tail.",
+      source: "assets/dinosaurs/ichthyosaurus-communis-large-eye-plump-body-imagegen-v3.png",
+      variant: "large-eye plump-body imagegen v3",
+      src: "assets/dinosaurs/ichthyosaurus-communis-large-eye-plump-body-imagegen-v3.png",
+      generatedAt: "2026-07-19T11:51:57Z",
+      gallerySlot: 5,
+      galleryRole: "identity-anatomy",
+      phenotype: "canonical-a",
+      habitatKey: "open-marine",
+      edited: true,
+    },
+    {
+      kind: "anatomy review",
+      title: "Ichthyosaurus oversized-eye compact-torso candidate B",
+      body: "Comparison candidate emphasizing the largest readable eye and the most compact, rounded torso. It remains a hydrodynamic ichthyosaur rather than shifting toward a whale or dolphin silhouette.",
+      source: "assets/dinosaurs/ichthyosaurus-communis-oversized-eye-compact-torso-imagegen-v4.png",
+      variant: "oversized-eye compact-torso imagegen v4",
+      src: "assets/dinosaurs/ichthyosaurus-communis-oversized-eye-compact-torso-imagegen-v4.png",
+      generatedAt: "2026-07-19T11:52:46Z",
+      gallerySlot: 6,
+      galleryRole: "identity-anatomy",
+      phenotype: "canonical-a",
+      habitatKey: "open-marine",
+      edited: true,
+    },
+    {
+      kind: "anatomy review",
+      title: "Ichthyosaurus round-eye deep-torso candidate C",
+      body: "Comparison candidate balancing a prominent round eye with a deep oval torso and stout shoulder. The four countable flippers and complete vertical tail fin are kept visible for anatomy review.",
+      source: "assets/dinosaurs/ichthyosaurus-communis-round-eye-deep-torso-imagegen-v5.png",
+      variant: "round-eye deep-torso imagegen v5",
+      src: "assets/dinosaurs/ichthyosaurus-communis-round-eye-deep-torso-imagegen-v5.png",
+      generatedAt: "2026-07-19T11:53:40Z",
+      gallerySlot: 7,
+      galleryRole: "identity-anatomy",
+      phenotype: "canonical-a",
+      habitatKey: "open-marine",
+      edited: true,
+    },
+    {
+      kind: "anatomy review",
+      title: "이크티오사우루스 해백합·암모나이트 암반 군락 생태",
+      body: "통통한 몸통과 큰 둥근 눈을 유지한 이크티오사우루스를 중심으로, 해백합과 해면이 있는 석회암 암반, 작은 어류 떼, 암모나이트를 함께 배치한 생태 참고 장면입니다. 주변 생물은 보조 요소로 두어 주둥이·네 지느러미·수직 꼬리지느러미를 계속 읽을 수 있게 했습니다.",
+      source: "assets/dinosaurs/ichthyosaurus-communis-crinoid-ammonite-reef-ecology-imagegen-v2.png",
+      variant: "해백합 암모나이트 암반 군락 생태 이미지 생성 v2",
+      src: "assets/dinosaurs/ichthyosaurus-communis-crinoid-ammonite-reef-ecology-imagegen-v2.png",
+      generatedAt: "2026-07-19T12:15:09Z",
+      galleryRole: "habitat-ecology",
+      phenotype: "canonical-a",
+      habitatKey: "reef-marine",
+      edited: true,
+    },
+    {
+      kind: "anatomy review",
+      title: "이크티오사우루스 벨렘나이트·물고기 외해 군집 생태",
+      body: "외해의 작은 물고기 떼, 벨렘나이트, 암모나이트와 함께 헤엄치는 생태 참고 장면입니다. 멀리 보이는 해양 파충류 실루엣은 배경 규모감만 주며, 큰 눈과 통통한 주 체형은 전경 개체에서 분명하게 유지합니다.",
+      source: "assets/dinosaurs/ichthyosaurus-communis-belemnite-fish-community-ecology-imagegen-v2.png",
+      variant: "벨렘나이트 물고기 외해 군집 생태 이미지 생성 v2",
+      src: "assets/dinosaurs/ichthyosaurus-communis-belemnite-fish-community-ecology-imagegen-v2.png",
+      generatedAt: "2026-07-19T12:16:13Z",
+      galleryRole: "habitat-ecology",
+      phenotype: "canonical-a",
+      habitatKey: "open-marine",
+      edited: true,
+    },
+    {
+      kind: "anatomy review",
+      title: "이크티오사우루스 얕은 연안 조개·해백합 군락 생태",
+      body: "햇살이 비치는 얕은 석회질 연안 바닥에서 조개, 해백합, 암모나이트, 작은 물고기 떼와 공존하는 장면입니다. 전경 해백합은 화면 가장자리만 살짝 감싸고, 이크티오사우루스의 완전한 머리·꼬리·네 지느러미 실루엣을 가리지 않게 구성했습니다.",
+      source: "assets/dinosaurs/ichthyosaurus-communis-coastal-shelf-crinoid-community-ecology-imagegen-v2.png",
+      variant: "얕은 연안 조개 해백합 군락 생태 이미지 생성 v2",
+      src: "assets/dinosaurs/ichthyosaurus-communis-coastal-shelf-crinoid-community-ecology-imagegen-v2.png",
+      generatedAt: "2026-07-19T12:17:19Z",
+      galleryRole: "habitat-ecology",
+      phenotype: "canonical-a",
+      habitatKey: "shallow-marine",
+      edited: true,
+    },
   ],
   "thalattosaurus-alexandrae": [
     {
@@ -7509,6 +7613,14 @@ const generatedImageSamples = {
       source: "assets/dinosaurs/thalattosaurus-alexandrae-shellbed-probing-ecology-imagegen-v1.png",
       variant: "조개층 탐색 먹이활동 이미지 생성 v1",
       src: "assets/dinosaurs/thalattosaurus-alexandrae-shellbed-probing-ecology-imagegen-v1.png",
+    },
+    {
+      kind: "anatomy review",
+      title: "탈라토사우루스 호셀커스 얕은 수로 유영 v2",
+      body: "흐린 날의 호셀커스 조간대 수로를 낮게 헤엄치는 한 개체입니다. 아래로 휜 긴 주둥이, 물갈퀴와 발가락이 읽히는 네 팔다리, 끝까지 이어지는 꼬리를 수면선 아래에서 함께 보여 주어 기존 조개층 탐색과 다른 유영 구도를 더합니다.",
+      source: "assets/dinosaurs/thalattosaurus-alexandrae-hosselkus-tidal-channel-ecology-imagegen-v2.png",
+      variant: "호셀커스 얕은 수로 유영 이미지 생성 v2",
+      src: "assets/dinosaurs/thalattosaurus-alexandrae-hosselkus-tidal-channel-ecology-imagegen-v2.png",
     },
   ],
   "placodus-gigas": [
@@ -7625,6 +7737,14 @@ const generatedImageSamples = {
       variant: "서부 내륙해 목 뻗기 먹이활동 이미지 생성 v1",
       src: "assets/dinosaurs/elasmosaurus-platyurus-seaway-neck-reach-ecology-imagegen-v1.png",
     },
+    {
+      kind: "anatomy review",
+      title: "엘라스모사우루스 서부 내륙해 상공 시점 유영 v2",
+      body: "얕은 서부 내륙해 해저 위를 한 개체가 가로지르는 상공 시점 장면입니다. 몸보다 훨씬 긴 목과 작은 머리, 짧은 꼬리, 몸에 붙은 네 개의 큰 노 지느러미를 한 프레임에서 분명히 보여 주어 기존 측면·목 뻗기 장면과 다른 해부 검수 구도를 제공합니다.",
+      source: "assets/dinosaurs/elasmosaurus-platyurus-western-interior-overhead-ecology-imagegen-v2.png",
+      variant: "서부 내륙해 상공 시점 유영 이미지 생성 v2",
+      src: "assets/dinosaurs/elasmosaurus-platyurus-western-interior-overhead-ecology-imagegen-v2.png",
+    },
   ],
   "kronosaurus-queenslandicus": [
     {
@@ -7689,6 +7809,16 @@ const generatedImageSamples = {
       source: "assets/dinosaurs/shonisaurus-popularis-triassic-cephalopod-cruise-ecology-imagegen-v1.png",
       variant: "트라이아스기 두족류 순항 생태 이미지 생성 v1",
       src: "assets/dinosaurs/shonisaurus-popularis-triassic-cephalopod-cruise-ecology-imagegen-v1.png",
+    },
+    {
+      kind: "anatomy review",
+      title: "Shonisaurus Nevada offshore cruise v2",
+      body: "A single giant shastasaurid in open water, with its long narrow snout, large eye, elongated body, four paddle limbs, and long continuous tail all visible without dolphin or whale drift.",
+      source: "assets/dinosaurs/shonisaurus-popularis-nevada-offshore-cruise-imagegen-v2.png",
+      variant: "Nevada offshore cruise imagegen v2",
+      src: "assets/dinosaurs/shonisaurus-popularis-nevada-offshore-cruise-imagegen-v2.png",
+      gallerySlot: 4,
+      galleryRole: "alternate-habitat-behavior",
     },
   ],
   "mosasaurus-hoffmannii": [
@@ -11272,6 +11402,14 @@ const generatedImageSamples = {
       variant: "네메그트 채식 생태 이미지 생성 v1",
       src: "assets/dinosaurs/therizinosaurus-cheloniformis-nemegt-browse-ecology-imagegen-v1.png",
     },
+    {
+      kind: "review hold",
+      title: "테리지노사우루스 네메그트 강변 채식 v2",
+      body: "네메그트 강변의 키 큰 식생을 뜯는 한 개체의 전신 장면입니다. 불룩한 깃털 몸, 긴 목과 작은 부리형 머리, 강한 뒷다리, 온전한 꼬리 및 가까운 손의 세 개 낫발톱을 또렷이 보여 주어 기존 다종 생태 장면과 다른 단독 형태 후보가 됩니다.",
+      source: "assets/dinosaurs/therizinosaurus-cheloniformis-nemegt-riverbank-browse-imagegen-v2.png",
+      variant: "네메그트 강변 채식 이미지 생성 v2",
+      src: "assets/dinosaurs/therizinosaurus-cheloniformis-nemegt-riverbank-browse-imagegen-v2.png",
+    },
   ],
   "mononykus-olecranus": [
     {
@@ -11298,6 +11436,14 @@ const generatedImageSamples = {
       variant: "네메그트 굴착 채집 생태 이미지 생성 v1",
       src: "assets/dinosaurs/mononykus-olecranus-nemegt-forage-ecology-imagegen-v1.png",
     },
+    {
+      kind: "review hold",
+      title: "모노니쿠스 네메그트 흰개미 둔덕 채집 v2",
+      body: "해질녘 네메그트 사구 가장자리에서 한 개체가 흰개미 둔덕을 살피는 전신 구도입니다. 짧은 깃털 몸, 긴 꼬리와 가느다란 뒷다리, 가까운 쪽의 단일 굴착 발톱을 선명하게 드러내 기존 다종 생태 장면과 다른 단독 행동 후보로 둡니다.",
+      source: "assets/dinosaurs/mononykus-olecranus-nemegt-termite-mound-forage-imagegen-v2.png",
+      variant: "네메그트 흰개미 둔덕 채집 이미지 생성 v2",
+      src: "assets/dinosaurs/mononykus-olecranus-nemegt-termite-mound-forage-imagegen-v2.png",
+    },
   ],
   "avimimus-portentosus": [
     {
@@ -11323,6 +11469,16 @@ const generatedImageSamples = {
       source: "assets/dinosaurs/avimimus-portentosus-nemegt-group-ecology-imagegen-v1.png",
       variant: "네메그트 무리 생태 이미지 생성 v1",
       src: "assets/dinosaurs/avimimus-portentosus-nemegt-group-ecology-imagegen-v1.png",
+    },
+    {
+      kind: "review hold",
+      title: "Avimimus Nemegt gravel walk v2",
+      body: "A clear solitary walking view that preserves the short toothless beak, rounded skull, compact folded feathered arms, long legs, three-toed feet, and long balance tail.",
+      source: "assets/dinosaurs/avimimus-portentosus-nemegt-gravel-walk-imagegen-v2.png",
+      variant: "Nemegt gravel walk imagegen v2",
+      src: "assets/dinosaurs/avimimus-portentosus-nemegt-gravel-walk-imagegen-v2.png",
+      gallerySlot: 4,
+      galleryRole: "alternate-habitat-behavior",
     },
   ],
   "oviraptor-philoceratops": [
@@ -11375,6 +11531,14 @@ const generatedImageSamples = {
       source: "assets/dinosaurs/citipati-osmolskae-djadokhta-nesting-ecology-imagegen-v1.png",
       variant: "자도흐타 포란 생태 이미지 생성 v1",
       src: "assets/dinosaurs/citipati-osmolskae-djadokhta-nesting-ecology-imagegen-v1.png",
+    },
+    {
+      kind: "review hold",
+      title: "시티파티 자도흐타 사구 보행 v2",
+      body: "해질녘 자도흐타 사구를 걷는 단독 전신 장면입니다. 높은 둥근 볏, 이빨 없는 짧은 부리, 접힌 팔깃과 작은 세 손가락, 세 발가락의 강한 뒷다리, 짧은 꼬리 부채를 모두 읽을 수 있어 기존 포란 장면과 다른 형태 검수 후보로 둡니다.",
+      source: "assets/dinosaurs/citipati-osmolskae-djadokhta-dune-walk-imagegen-v2.png",
+      variant: "자도흐타 사구 보행 이미지 생성 v2",
+      src: "assets/dinosaurs/citipati-osmolskae-djadokhta-dune-walk-imagegen-v2.png",
     },
   ],
   "khaan-mckennai": [
@@ -11900,8 +12064,8 @@ const generatedImageSamples = {
     },
     {
       kind: "count-level pass",
-      title: "벨로키랍토르 v69 어두운 반점 색상 보류",
-      body: "안정적인 어두운 반점 몸, 녹슨 얼굴, 긴 줄무늬 꼬리를 갖습니다. 가까운 들린 발톱이 아직 큰 갈고리 발톱으로 자라 보이므로 보조 색상/머리 참고로만 유지합니다.",
+      title: "벨로키랍토르 v69 사지·발가락 검수 통과 대표",
+      body: "전신 재검수에서 두 뒷다리만 보이고, 중복 발이나 융합 발가락 군집 없이 각 발의 분리된 지지 발가락과 붙어 올라간 둘째 낫발톱이 읽히는 현 대표입니다. 접힌 깃털 앞다리도 여분 팔다리 없이 유지하며, 어두운 반점 몸과 녹슨 얼굴, 긴 줄무늬 꼬리를 함께 보존합니다.",
       source: "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v69-source-candidate.png",
       variant: "어두운 반점 색상 보류 v69",
       src: "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v69-source-candidate.png",
@@ -13437,6 +13601,19 @@ const generatedImageSamples = {
       habitatKey: "hell-creek-floodplain",
       edited: true,
     },
+    {
+      kind: "anatomy review",
+      title: "토로사우루스 헬크리크 강변 채식 생태 v3",
+      body: "헬크리크 강변 식생을 뜯는 한 개체의 전신 장면입니다. 프릴의 골창 위치는 연속된 비늘 피부 아래의 옅은 타원형 영역으로만 읽히며, 배경이 관통하지 않는 긴 두개골 부착 프릴과 세 얼굴뿔, 네 다리와 긴 꼬리를 함께 확인합니다.",
+      source: "assets/dinosaurs/torosaurus-latus-hell-creek-browse-ecology-imagegen-v3.png",
+      variant: "헬크리크 강변 채식 생태 이미지 생성 v3",
+      src: "assets/dinosaurs/torosaurus-latus-hell-creek-browse-ecology-imagegen-v3.png",
+      gallerySlot: 4,
+      galleryRole: "alternate-habitat-behavior",
+      phenotype: "canonical-a",
+      habitatKey: "hell-creek-floodplain",
+      edited: true,
+    },
   ],
   "styracosaurus-albertensis": [
     {
@@ -13463,6 +13640,16 @@ const generatedImageSamples = {
       variant: "범람원 생태 이미지 생성 v1",
       src: "assets/dinosaurs/styracosaurus-albertensis-floodplain-ecology-imagegen-v1.png",
     },
+    {
+      kind: "review hold",
+      title: "Styracosaurus Dinosaur Park floodplain walk v2",
+      body: "A full-body floodplain walk retaining one prominent nasal horn, a solid frill with rear spikes, modest brow horns, four non-hoofed feet, and no frill openings.",
+      source: "assets/dinosaurs/styracosaurus-albertensis-dinosaur-park-floodplain-walk-imagegen-v2.png",
+      variant: "Dinosaur Park floodplain walk imagegen v2",
+      src: "assets/dinosaurs/styracosaurus-albertensis-dinosaur-park-floodplain-walk-imagegen-v2.png",
+      gallerySlot: 4,
+      galleryRole: "alternate-habitat-behavior",
+    },
   ],
   "centrosaurus-apertus": [
     {
@@ -13488,6 +13675,14 @@ const generatedImageSamples = {
       source: "assets/dinosaurs/centrosaurus-apertus-floodplain-herd-ecology-imagegen-v1.png",
       variant: "범람원 무리 생태 이미지 생성 v1",
       src: "assets/dinosaurs/centrosaurus-apertus-floodplain-herd-ecology-imagegen-v1.png",
+    },
+    {
+      kind: "review hold",
+      title: "켄트로사우루스 주디스리버 초지 보행 v2",
+      body: "주디스리버 범람원 초지를 걷는 한 개체의 전신 장면입니다. 크게 앞으로 굽는 코뿔 하나, 낮은 눈 위 돌기, 구멍 없는 짧은 프릴과 절제된 중앙 갈고리를 강조하고 네 발과 긴 꼬리를 온전히 보여 주어 기존 무리 장면과 다른 단독 형태 후보가 됩니다.",
+      source: "assets/dinosaurs/centrosaurus-apertus-judith-river-meadow-walk-imagegen-v2.png",
+      variant: "주디스리버 초지 보행 이미지 생성 v2",
+      src: "assets/dinosaurs/centrosaurus-apertus-judith-river-meadow-walk-imagegen-v2.png",
     },
   ],
   "pachyrhinosaurus-canadensis": [
@@ -14183,6 +14378,14 @@ const generatedImageSamples = {
       variant: "네메그트 무리 생태 이미지 생성 v1",
       src: "assets/dinosaurs/saurolophus-angustirostris-nemegt-herd-ecology-imagegen-v1.png",
     },
+    {
+      kind: "anatomy review",
+      title: "사우롤로푸스 네메그트 강변 소무리 생태 v2",
+      body: "네메그트 강변의 앞선 성체와 뒤의 두 동료를 분리해 배치한 소무리 장면입니다. 앞 개체는 단단한 가시형 볏, 오리주둥이, 네 발과 온전한 꼬리를 또렷이 보여 주며, 같은 종의 사회적 규모와 계절성 하천 구도를 추가합니다.",
+      source: "assets/dinosaurs/saurolophus-angustirostris-nemegt-riverbank-group-ecology-imagegen-v2.png",
+      variant: "네메그트 강변 소무리 생태 이미지 생성 v2",
+      src: "assets/dinosaurs/saurolophus-angustirostris-nemegt-riverbank-group-ecology-imagegen-v2.png",
+    },
   ],
   "edmontosaurus-annectens": [
     {
@@ -14209,6 +14412,14 @@ const generatedImageSamples = {
       variant: "헬크리크 무리 생태 이미지 생성 v1",
       src: "assets/dinosaurs/edmontosaurus-annectens-hellcreek-herd-ecology-imagegen-v1.png",
     },
+    {
+      kind: "review hold",
+      title: "에드몬토사우루스 헬크리크 우각호 보행 v2",
+      body: "안개 낀 헬크리크 우각호 가장자리를 건너는 단독 전신 장면입니다. 넓고 낮은 오리주둥이와 무볏 머리, 낮은 살성 등 능선, 네 발, 긴 꼬리를 모두 보이고 절제된 뒤쪽 꼬리 가시열과 청회색·크랜베리색 팔레트를 유지합니다.",
+      source: "assets/dinosaurs/edmontosaurus-annectens-hell-creek-oxbow-walk-imagegen-v2.png",
+      variant: "헬크리크 우각호 보행 이미지 생성 v2",
+      src: "assets/dinosaurs/edmontosaurus-annectens-hell-creek-oxbow-walk-imagegen-v2.png",
+    },
   ],
   "thescelosaurus-neglectus": [
     {
@@ -14234,6 +14445,16 @@ const generatedImageSamples = {
       source: "assets/dinosaurs/thescelosaurus-neglectus-hellcreek-forage-ecology-imagegen-v1.png",
       variant: "헬크리크 채식 생태 이미지 생성 v1",
       src: "assets/dinosaurs/thescelosaurus-neglectus-hellcreek-forage-ecology-imagegen-v1.png",
+    },
+    {
+      kind: "review hold",
+      title: "Thescelosaurus Hell Creek streambank walk v2",
+      body: "A single robust ornithischian at a wooded stream edge, retaining the low narrow beak, deep body, simple short forelimbs, strong hind legs, and stiff long tail without duckbill or dome drift.",
+      source: "assets/dinosaurs/thescelosaurus-neglectus-hell-creek-streambank-walk-imagegen-v2.png",
+      variant: "Hell Creek streambank walk imagegen v2",
+      src: "assets/dinosaurs/thescelosaurus-neglectus-hell-creek-streambank-walk-imagegen-v2.png",
+      gallerySlot: 4,
+      galleryRole: "alternate-habitat-behavior",
     },
   ],
   "pachycephalosaurus-wyomingensis": [
@@ -14346,6 +14567,16 @@ const generatedImageSamples = {
       source: "assets/dinosaurs/homalocephale-calathocercos-mudflat-crossing-ecology-imagegen-v1.png",
       variant: "진흙평원 이동 생태 이미지 생성 v1",
       src: "assets/dinosaurs/homalocephale-calathocercos-mudflat-crossing-ecology-imagegen-v1.png",
+    },
+    {
+      kind: "review hold",
+      title: "Homalocephale Gobi mudflat walk v2",
+      body: "A solitary small biped on a Gobi mudflat, preserving a low broad flat skull rather than a tall dome, short forelimbs, long hind legs, and one straight balance tail.",
+      source: "assets/dinosaurs/homalocephale-calathocercos-gobi-mudflat-walk-imagegen-v2.png",
+      variant: "Gobi mudflat walk imagegen v2",
+      src: "assets/dinosaurs/homalocephale-calathocercos-gobi-mudflat-walk-imagegen-v2.png",
+      gallerySlot: 4,
+      galleryRole: "alternate-habitat-behavior",
     },
   ],
   "tylocephale-gilmorei": [
@@ -15808,6 +16039,14 @@ const generatedImageSamples = {
       variant: "블루 라이어스 조수 웅덩이 생태 이미지 생성 v1",
       src: "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-tidepool-ecology-imagegen-v1.png",
     },
+    {
+      kind: "review hold",
+      title: "스켈리도사우루스 블루 라이어스 폭풍 뒤 장갑 보행 v2",
+      body: "비가 갠 블루 라이어스 해안 암반을 걷는 전신 후보입니다. 낮은 골편 줄, 네 발, 곤봉 없는 긴 꼬리를 모두 드러내고 폭풍회색 바탕과 와인색 옆구리 띠, 지의류빛 골편 끝을 유지해 기존 조수 웅덩이 생태와 다른 저지대 보행 구도를 제공합니다.",
+      source: "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-storm-armor-walk-imagegen-v2.png",
+      variant: "블루 라이어스 폭풍 뒤 장갑 보행 이미지 생성 v2",
+      src: "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-storm-armor-walk-imagegen-v2.png",
+    },
   ],
   "sauropelta-edwardsorum": [
     {
@@ -15943,8 +16182,56 @@ const generatedImageSamples = {
       variant: "웨식스 진흙길 섭식 생태 이미지 생성 v1",
       src: "assets/dinosaurs/polacanthus-foxii-wessex-mudtrack-browse-ecology-imagegen-v1.png",
     },
+    {
+      kind: "review hold",
+      title: "폴라칸투스 웨식스 비 갠 천골 방패 보행 v2",
+      body: "가벼운 비가 지난 웨식스 습지 가장자리를 가로지르는 전신 장면입니다. 허리 위의 넓은 천골 방패, 작은 낮은 골편, 보이는 네 발과 곤봉 없는 긴 꼬리를 분명히 두고 이끼빛 몸·블랙베리 방패·연한 방패 가장자리의 종 고유 패턴을 유지합니다.",
+      source: "assets/dinosaurs/polacanthus-foxii-wessex-rain-clearing-imagegen-v2.png",
+      variant: "웨식스 비 갠 천골 방패 보행 이미지 생성 v2",
+      src: "assets/dinosaurs/polacanthus-foxii-wessex-rain-clearing-imagegen-v2.png",
+    },
   ],
 };
+
+// 2026-07-19 limb and toe audit: keep only the single full-body Velociraptor
+// candidate that passed the two-hind-leg, no-duplicate-foot, and attached-sickle-claw gate.
+const approvedVelociraptorCandidateSources = new Set([
+  "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v69-source-candidate.png",
+]);
+generatedImageSamples["velociraptor-mongoliensis"] = generatedImageSamples[
+  "velociraptor-mongoliensis"
+].filter((item) => approvedVelociraptorCandidateSources.has(item.source || item.src));
+
+// Whole-atlas anatomy cleanup: these states are already explicit failure records,
+// while this source list is maintained by the completed gallery-slot audit.
+const structurallyRejectedCandidateKinds = new Set(["diagnostic only", "reject reference"]);
+const verifiedRejectedCandidateSources = new Set([
+  "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png",
+  "assets/dinosaurs/dilophosaurus-wetherilli-frilled-popular-variant-imagegen-v1.png",
+  "assets/dinosaurs/apatosaurus-ajax-lowneck-floodplain-v1.png",
+  "assets/dinosaurs/tyrannosaurus-rex-ankylosaurus-soft-belly-scavenge-graphic-ecology-imagegen-v1.png",
+  "assets/dinosaurs/stegosaurus-stenops-imagegen-v92-source-candidate.png",
+  "assets/dinosaurs/stegosaurus-stenops-moss-plates-terracotta-mask-pattern-imagegen-v2.png",
+  "assets/dinosaurs/stegosaurus-stenops-rain-gully-lavender-plate-mosaic-ecology-imagegen-v1.png",
+  "assets/dinosaurs/stegosaurus-stenops-plate-topology-lowdenoise-v68.png",
+  "assets/dinosaurs/stegosaurus-stenops-allosaurus-defense-ecology-imagegen-v1.png",
+  "assets/dinosaurs/stegosaurus-stenops-adult-juvenile-fern-glade-social-imagegen-v2.png",
+  "assets/dinosaurs/torosaurus-latus-elongated-frill-imagegen-v1.png",
+  "assets/dinosaurs/torosaurus-latus-copperfenestra-pattern-imagegen-v1.png",
+  "assets/dinosaurs/torosaurus-latus-floodplain-ecology-imagegen-v1.png",
+  "assets/dinosaurs/chasmosaurus-belli-fenestrated-frill-imagegen-v1.png",
+  "assets/dinosaurs/chasmosaurus-belli-ochre-teal-pattern-imagegen-v1.png",
+  "assets/dinosaurs/chasmosaurus-belli-floodplain-herd-ecology-imagegen-v1.png",
+  "assets/dinosaurs/rhamphorhynchus-muensteri-longtail-vane-imagegen-v1.png",
+  "assets/dinosaurs/rhamphorhynchus-muensteri-slate-ochre-pattern-imagegen-v1.png",
+  "assets/dinosaurs/rhamphorhynchus-muensteri-moonlit-ledge-takeoff-mint-plum-ecology-imagegen-v1.png",
+  "assets/dinosaurs/rhamphorhynchus-muensteri-longtail-vane-identity-imagegen-v2.png",
+]);
+
+function isStructurallyRejectedCandidate(item) {
+  const source = item?.source || item?.src || "";
+  return structurallyRejectedCandidateKinds.has(item?.kind) || verifiedRejectedCandidateSources.has(source);
+}
 
 const gallerySlotRoleLabels = {
   representative: "대표 전신",
@@ -16027,8 +16314,24 @@ function getCandidateKey(item) {
   return item?.source || item?.src || item?.title || "";
 }
 
+function getCandidateGeneratedTimestamp(item) {
+  const value = item?.generatedAt || item?.createdAt || item?.updatedAt || "";
+  const timestamp = Date.parse(value);
+  return Number.isFinite(timestamp) ? timestamp : 0;
+}
+
+function compareReviewCandidatesByLatest(a, b) {
+  const timestampDelta = getCandidateGeneratedTimestamp(b) - getCandidateGeneratedTimestamp(a);
+  if (timestampDelta) return timestampDelta;
+  const kindDelta = (anatomyCandidateRank[a.kind] ?? 4) - (anatomyCandidateRank[b.kind] ?? 4);
+  if (kindDelta) return kindDelta;
+  return getCandidateKey(a).localeCompare(getCandidateKey(b), "ko");
+}
+
 function getAllCandidates(dino) {
-  return [...(generatedImageSamples[dino.id] || [])].sort(
+  return [...(generatedImageSamples[dino.id] || [])]
+    .filter((item) => !isStructurallyRejectedCandidate(item))
+    .sort(
     (a, b) => (anatomyCandidateRank[a.kind] ?? 4) - (anatomyCandidateRank[b.kind] ?? 4),
   );
 }
@@ -17295,12 +17598,14 @@ function compareByRecentImageUpdate(a, b) {
 
 function compareByReviewQueueOrder(a, b, filterKey = state.reviewQueueKindFilter, sortKey = state.reviewSort) {
   const countDelta = getReviewCandidateCountByFilter(b, filterKey) - getReviewCandidateCountByFilter(a, filterKey);
+  const generatedAtDelta = getLatestReviewCandidateTimestamp(b) - getLatestReviewCandidateTimestamp(a);
   const rankDelta = getRecentImageUpdateRank(b) - getRecentImageUpdateRank(a);
   if (sortKey === "candidates" && countDelta) return countDelta;
   if (sortKey === "name") return a.koreanName.localeCompare(b.koreanName, "ko");
   if (sortKey === "level") {
     return a.knowledgeLevel - b.knowledgeLevel || a.koreanName.localeCompare(b.koreanName, "ko");
   }
+  if (generatedAtDelta) return generatedAtDelta;
   if (rankDelta) return rankDelta;
   if (countDelta) return countDelta;
   return a.koreanName.localeCompare(b.koreanName, "ko");
@@ -17533,8 +17838,8 @@ const identityChecklists = {
     "후기 쥐라기 졸른호펜의 공룡이 아닌 익룡, 공룡상목에 속하지 않음",
     "새, 박쥐, 용이 아닌 길고 좁은 이빨 달린 부리와 피크노섬유 몸통",
     "길어진 넷째 손가락이 지지하는 길고 좁은 날개막",
-    "선명한 마름모 꼬리막이 달린 매우 긴 뻣뻣한 꼬리",
-    "짧은 뒷다리와 석호 물고기 사냥 생태; 새 깃털, 박쥐 귀, 판타지 뿔, 잘린 날개, 잘린 꼬리, 여분 팔다리 금지",
+    "골반 중앙에서 한 번만 시작해 날개막과 합쳐지지 않는 매우 긴 뻣뻣한 단일 꼬리와 끝의 선명한 마름모 꼬리막",
+    "정확히 두 장의 날개막과 두 개의 뒷다리; 이중 꼬리축, 꼬리-날개막 융합, 새 깃털, 박쥐 귀, 판타지 뿔, 잘린 날개, 잘린 꼬리, 여분 날개막·여분 팔다리 금지",
   ],
   "pterodactylus-antiquus": [
     "후기 쥐라기 졸른호펜의 공룡이 아닌 짧은 꼬리 익룡, 공룡상목에 속하지 않음",
@@ -17615,7 +17920,7 @@ const identityChecklists = {
   ],
   "ichthyosaurus-communis": [
     "전기 쥐라기 공룡이 아닌 해양 파충류, 공룡상목에 속하지 않음",
-    "길고 좁은 이빨 달린 주둥이와 큰 둥근 눈을 가진 유선형 어룡 몸",
+    "길고 좁은 이빨 달린 주둥이, 눈에 띄게 큰 둥근 눈, 깊고 통통한 유선형 몸통을 가진 어룡 몸",
     "작은 삼각형 등지느러미, 네 개의 노 모양 지느러미 다리, 초승달형 수직 꼬리지느러미",
     "현대 돌고래, 상어, 고래, 물고기, 모사사우루스, 장경룡이 아닌 물고기 사냥 해양 생태",
     "포유류 숨구멍, 상어 아가미틈, 물고기 비늘, 긴 장경룡 목, 모사사우루스식 도마뱀 몸, 잘린 주둥이, 잘린 꼬리, 여분 지느러미, 과한 유혈 금지",
@@ -17933,8 +18238,8 @@ const identityChecklists = {
     "짙은 점무늬 깃털과 긴 줄무늬 꼬리",
     "몸과 접힌 앞다리에 깃털 신호",
     "긴 뻣뻣한 꼬리",
-    "둘째 발가락의 들어 올린 낫발톱",
-    "대표 후보는 정확히 두 개의 뒷다리만 보여야 하며 세 번째 걷는 다리나 융합된 정강이·발 아티팩트가 없어야 함",
+    "각 뒷발에서 분리되어 읽히는 지지 발가락과 몸에 붙은 들어 올린 둘째 발가락 낫발톱",
+    "접힌 앞다리 두 개와 뒷다리 두 개만 보여야 하며, 세 번째 걷는 다리·여분 앞다리·중복 발·융합 발가락 군집이 없어야 함",
   ],
   "triceratops-horridus": [
     "두 긴 눈썹뿔과 짧은 코뿔",
@@ -18488,8 +18793,8 @@ const visualVariationProfiles = {
     color: "슬레이트 청회색 또는 셀라돈 날개막, 민트빛 날개막, 자두색 가장자리 워시, 따뜻한 황토 갈색 몸, 옅은 크림색 목과 배, 은은한 녹슨빛 뺨 무늬, 산호색 날개 혈관선",
     pattern: "어두운 차콜 꼬리 띠, 희미한 옅은 몸통 반점, 낮은 대비의 날개-어깨 얼룩, 월광/블루아워 석호 반사에 맞춘 날개막 그림자, 보금자리 이륙 장면의 반투명 날개막 혈관선",
     texture: "고운 피크노섬유 몸 덮개, 가죽 같은 익룡 날개막, 각질성 이빨과 발톱, 물가 반사와 젖은 석회암 표면, 블루아워 안개, 달빛 암반과 얕은 조간대 반사",
-    anatomy: "졸른호펜의 작은 긴꼬리 익룡; 길고 좁은 이빨 달린 부리, 작은 몸통, 길고 좁은 넷째손가락 날개, 짧은 뒷다리, 매우 긴 뻣뻣한 꼬리, 마름모 꼬리막",
-    avoid: "공룡상목 라벨, 새 깃털, 새 부리, 박쥐 귀, 용 뿔, 판타지 가시, 짧은 꼬리, 빠진 꼬리막, 잘린 날개, 잘린 꼬리, 여분 팔다리, 수면 반사로 꼬리막이 사라지는 장면, 과한 유혈",
+    anatomy: "졸른호펜의 작은 긴꼬리 익룡; 길고 좁은 이빨 달린 부리, 작은 몸통, 정확히 두 장의 길고 좁은 넷째손가락 날개막, 정확히 두 개의 짧은 뒷다리, 골반 중앙에서 시작하는 매우 긴 뻣뻣한 단일 꼬리, 끝의 마름모 꼬리막",
+    avoid: "공룡상목 라벨, 새 깃털, 새 부리, 박쥐 귀, 용 뿔, 판타지 가시, 짧은 꼬리, 빠진 꼬리막, 잘린 날개, 잘린 꼬리, 이중 꼬리축, 날개 기부에서 시작하거나 날개막과 합쳐진 꼬리, 세 장 이상으로 갈라진 날개막, 세 개 이상으로 보이는 뒷다리, 여분 팔다리, 수면 반사로 꼬리막이 사라지는 장면, 과한 유혈",
   },
   "pterodactylus-antiquus": {
     color: "짙은 오베르진 회색 몸, 비취색 또는 보라색 날개막, 옅은 크림색 배, 산호색 날개 혈관선",
@@ -18572,7 +18877,7 @@ const visualVariationProfiles = {
     color: "짙은 인디고/페트롤 푸른 등, 슬레이트 회색 옆구리, 회청색 새벽 수면분할 반점, 황갈색 뺨 워시, 옅은 크림색 배, 오팔빛 반사와 은은한 구리빛 회색 뺨 무늬",
     pattern: "미세한 옅은 옆구리 반점, 어두운 끊어진 꼬리 띠, 낮은 대비의 역음영, 수면 아래에서 깨지는 오팔 반점, 탑다운 핀스트라이프, 벨렘나이트 사냥 장면의 회청색 점박이 위장",
     texture: "은은한 젖은 하이라이트가 있는 매끈한 해양 파충류 피부, 각질성 이빨, 노 모양 지느러미 다리 표면, 수면 분할 물결 왜곡, 얕은 바다 햇빛 무늬, 해안 절벽 아래 새벽 수면 반사",
-    anatomy: "전기 쥐라기 어룡; 길고 좁은 이빨 달린 주둥이, 큰 둥근 눈, 작고 유선형 몸, 작은 삼각형 등지느러미, 네 개의 노 모양 지느러미 다리, 초승달형 수직 꼬리지느러미",
+    anatomy: "전기 쥐라기 어룡; 길고 좁은 이빨 달린 주둥이, 눈에 띄게 큰 둥근 안와, 깊고 통통한 타원형 몸통과 둥근 배, 작은 삼각형 등지느러미, 네 개의 노 모양 지느러미 다리, 초승달형 수직 꼬리지느러미",
     avoid: "공룡상목 라벨, 현대 돌고래 숨구멍, 상어 아가미틈, 물고기 비늘, 고래 몸, 모사사우루스식 도마뱀 몸, 긴 장경룡 목, 잘린 주둥이, 잘린 꼬리, 여분 지느러미, 수면 경계로 지느러미 수가 검수 불가능한 장면, 과한 유혈",
   },
   "thalattosaurus-alexandrae": {
@@ -18877,12 +19182,12 @@ const visualVariationProfiles = {
     avoid: "티라노사우루스 렉스 복제 비율, 세 손가락 손, 과대화된 앞다리, 알로사우루스식 머리, 뿔, 가시, 잘린 꼬리, 가려진 발을 피합니다.",
   },
   "velociraptor-mongoliensis": {
-    legAudit: "2026-07-11 demoted v63 for a three-leg artifact and promoted v69 as the current representative; reject any dromaeosaur candidate with extra hind legs, duplicated feet, or fused toe clusters.",
+    legAudit: "2026-07-19 visual audit retained only v69. It passes the two-hind-leg, no-duplicate-foot, separated-toe, and attached raised second-claw gate; reject every candidate with extra limbs, duplicated feet, fused toe clusters, or detached oversized hooks.",
     color: "어두운 흑연색과 엄버색 깃털, 녹슨 얼굴 포인트",
     pattern: "고운 반점, 줄무늬 꼬리, 더 어두운 팔/날개깃 가장자리",
     texture: "몸 전체의 짧은 실모양 깃털과 더 조밀한 비늘 발",
-    anatomy: "이빨 있는 좁은 주둥이, 접힌 앞다리, 과하지 않고 붙어 있는 둘째 발가락 낫발톱",
-    avoid: "현대 새 같은 머리, 날개 부채처럼 펼친 팔, 과대하고 떨어져 보이는 갈고리 발톱",
+    anatomy: "이빨 있는 좁은 주둥이, 접힌 앞다리 두 개, 뒷다리 두 개, 분리되어 읽히는 지지 발가락, 과하지 않고 발에 붙은 들어 올린 둘째 발가락 낫발톱",
+    avoid: "현대 새 같은 머리, 날개 부채처럼 펼친 팔, 여분 팔다리, 세 번째 뒷다리, 중복 발, 융합 발가락 군집, 과대하거나 발에서 떨어져 보이는 갈고리 발톱",
   },
   "triceratops-horridus": {
     color: "차가운 슬레이트/틸 회색 몸, 코발트빛 프릴 음영, 크림색 뿔 끝, 절제된 녹슨색 프릴 줄무늬와 얼굴 포인트, 폭우 속 어두운 습지 톤",
@@ -19429,11 +19734,11 @@ const generationRouteGuides = {
     reject: "이족보행 조각류, 원시 용각형류 주자, 이빨 있는 수각류 포식자, 랩터 발톱 동물, 오리부리, 각룡류 목프릴, 후기 거대 기둥다리 용각류, 숨은 발, 잘린 꼬리, 여분 팔다리, 절제된 생태 장면을 넘는 과한 유혈이 있으면 탈락.",
   },
   "rhamphorhynchus-muensteri": {
-    focus: "후기 쥐라기 졸른호펜 람포링쿠스 익룡; 긴 이빨 부리, 길고 좁은 날개, 피크노섬유 몸통, 매우 긴 꼬리, 마름모 꼬리막, 새/박쥐/용 드리프트 방지",
-    route: "공룡이 아닌 긴꼬리 익룡 프롬프트로 이빨 부리, 좁은 날개막, 긴 뻣뻣한 꼬리, 마름모 꼬리막을 먼저 고정한 뒤 새/박쥐/용 드리프트를 검수합니다. 월광 석호 반사, 블루아워 하부 날개막, 달빛 암반 이륙, 보금자리 이륙 장면은 수면·이륙·하부 시점 참고로 쓰되 꼬리막과 날개 손가락이 흐려지지 않게 합니다.",
-    control: "assets/dinosaurs/rhamphorhynchus-muensteri-longtail-vane-imagegen-v1.png",
-    pass: "전신 측면, 이륙, 보금자리 암반, 또는 하부 날개막 구도 | 상위분류 익룡 | 길고 좁은 이빨 부리 | 작은 피크노섬유 몸통 | 길고 좁은 넷째손가락 날개막 | 짧은 뒷다리 | 매우 긴 뻣뻣한 전체 꼬리 | 선명한 마름모 꼬리막 | 졸른호펜 석호 배경 | 민트/자두 또는 산호 혈관선 날개막",
-    reject: "공룡상목으로 라벨링되거나 라우팅되면 탈락. 새, 박쥐, 용, 공룡처럼 보이거나 긴 꼬리/마름모 꼬리막을 잃거나, 새 깃털, 박쥐 귀, 판타지 뿔, 잘린 날개, 잘린 꼬리, 수면 반사로 꼬리막이 사라지거나, 여분 팔다리, 과한 유혈이 있으면 탈락.",
+    focus: "후기 쥐라기 졸른호펜 람포링쿠스 익룡; 긴 이빨 부리, 정확히 두 장의 좁은 날개막, 두 뒷다리, 골반에서 시작하는 단일 장꼬리, 마름모 꼬리막, 새/박쥐/용 드리프트 방지",
+    route: "공룡이 아닌 긴꼬리 익룡 프롬프트로 이빨 부리, 정확히 두 날개막과 두 뒷다리, 골반 중앙에서 시작해 날개와 분리되는 단일 뻣뻣한 꼬리, 마름모 꼬리막을 먼저 고정한 뒤 새/박쥐/용 드리프트를 검수합니다. 수면 포식 전신을 구조 제어 기준으로 사용하고, 블루아워 하부 날개막과 보금자리 이륙 장면은 색·행동 참고로만 사용합니다.",
+    control: "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-surface-strike-ecology-imagegen-v1.png",
+    pass: "전신 측면, 이륙, 보금자리 암반, 또는 하부 날개막 구도 | 상위분류 익룡 | 길고 좁은 이빨 부리 | 작은 피크노섬유 몸통 | 정확히 두 장의 길고 좁은 넷째손가락 날개막 | 정확히 두 개의 짧은 뒷다리 | 골반 중앙에서 시작해 날개막과 분리되는 단 하나의 매우 긴 뻣뻣한 꼬리 | 끝의 선명한 마름모 꼬리막 | 졸른호펜 석호 배경",
+    reject: "공룡상목으로 라벨링되거나 라우팅되면 탈락. 새, 박쥐, 용, 공룡처럼 보이거나 긴 꼬리/마름모 꼬리막을 잃거나, 새 깃털, 박쥐 귀, 판타지 뿔, 잘린 날개, 잘린 꼬리, 이중 꼬리축, 날개 기부에서 시작하거나 날개막과 합쳐진 꼬리, 세 장 이상으로 갈라진 날개막, 세 개 이상으로 보이는 뒷다리, 수면 반사로 꼬리막이 사라지거나, 여분 팔다리, 과한 유혈이 있으면 탈락.",
   },
   "pterodactylus-antiquus": {
     focus: "후기 쥐라기 졸른호펜 프테로닥틸루스 익룡; 짧은 꼬리, 긴 이빨 주둥이, 길어진 손허리뼈, 반쯤 열린 날개막, 람포링쿠스 긴꼬리 드리프트 방지",
@@ -19513,10 +19818,10 @@ const generationRouteGuides = {
     reject: "공룡상목으로 라벨링되거나 라우팅되면 탈락. 프테라노돈식 무치 부리와 큰 볏, 케찰코아틀루스식 거대 지상보행, 프테로닥틸루스식 짧은 꼬리, 람포링쿠스 단순 복제, 새 깃털, 새 부리, 박쥐 귀, 용 뿔, 숨은 발, 잘린 날개, 잘린 꼬리막, 여분 팔다리, 과한 유혈이 있으면 탈락.",
   },
   "ichthyosaurus-communis": {
-    focus: "전기 쥐라기 이크티오사우루스 해양 파충류; 길고 좁은 이빨 주둥이, 큰 둥근 눈, 네 개의 지느러미 다리, 등지느러미, 초승달 꼬리지느러미, 돌고래/상어/공룡 드리프트 방지",
-    route: "공룡이 아닌 해양 파충류 어룡 프롬프트로 유선형 몸, 네 지느러미 다리, 꼬리지느러미를 먼저 고정한 뒤 돌고래/상어/공룡 드리프트를 검수합니다. 수면 분할 장면은 환경과 역음영 참고로, 탑다운 장면은 얕은 바다 보호색과 핀스트라이프 참고로, 벨렘나이트 스트라이크는 먹이활동 참고로 두고 지느러미 수와 꼬리지느러미는 별도 검수합니다.",
+    focus: "전기 쥐라기 이크티오사우루스 해양 파충류; 길고 좁은 이빨 주둥이, 눈에 띄게 큰 둥근 눈, 깊고 통통한 몸통, 네 개의 지느러미 다리, 등지느러미, 초승달 꼬리지느러미, 돌고래/상어/공룡 드리프트 방지",
+    route: "공룡이 아닌 해양 파충류 어룡 프롬프트로 큰 둥근 눈과 깊고 통통한 타원형 몸통을 먼저 고정하고, 네 지느러미 다리와 수직 꼬리지느러미를 검수합니다. 몸통은 유선형을 유지하되 고래나 돌고래 체형으로 드리프트하지 않아야 합니다. 수면 분할 장면은 환경과 역음영 참고로, 탑다운 장면은 얕은 바다 보호색과 핀스트라이프 참고로, 벨렘나이트 스트라이크는 먹이활동 참고로 둡니다.",
     control: "assets/dinosaurs/ichthyosaurus-communis-streamlined-sideprofile-imagegen-v1.png",
-    pass: "전신 측면, 수면 분할, 탑다운 얕은 바다, 또는 벨렘나이트 사냥 구도 | 상위분류 해양 파충류 | 유선형 어룡 몸 | 길고 좁은 이빨 주둥이 | 큰 둥근 눈 | 작은 삼각형 등지느러미 | 네 개의 노 모양 지느러미 다리 | 초승달형 수직 꼬리지느러미 | 전기 쥐라기 얕은 바다 | 회청색 반점 또는 핀스트라이프 역음영",
+    pass: "전신 측면, 수면 분할, 탑다운 얕은 바다, 또는 벨렘나이트 사냥 구도 | 상위분류 해양 파충류 | 깊고 통통하지만 유선형인 어룡 몸 | 둥근 배와 넓은 어깨 | 길고 좁은 이빨 주둥이 | 눈에 띄게 큰 둥근 눈 | 작은 삼각형 등지느러미 | 네 개의 노 모양 지느러미 다리 | 초승달형 수직 꼬리지느러미 | 전기 쥐라기 얕은 바다 | 회청색 반점 또는 핀스트라이프 역음영",
     reject: "공룡상목으로 라벨링되거나 라우팅되면 탈락. 현대 돌고래, 상어, 고래, 물고기, 모사사우루스, 장경룡처럼 보이거나 숨구멍, 상어 아가미틈, 물고기 비늘, 긴 장경룡 목, 잘린 주둥이, 잘린 꼬리, 여분 지느러미, 수면 경계로 지느러미가 사라지는 장면, 과한 유혈이 있으면 탈락.",
   },
   "thalattosaurus-alexandrae": {
@@ -20094,12 +20399,12 @@ const generationRouteGuides = {
     reject: "높은 거대 돔, 긴 뒤통수 가시, 각룡류 프릴, 수각류 이빨, 오리주둥이, 숨은 발, 잘린 꼬리, 여분 팔다리가 있으면 탈락.",
   },
   "velociraptor-mongoliensis": {
-    legAudit: "2026-07-11 run a leg-count gate before promotion: two hind legs only, clear feet, no extra background leg copied from the stride pose.",
-    focus: "어두운 반점 깃털, 이빨 있는 주둥이, 과하지 않고 붙어 있는 낫발가락",
-    route: "v63이 어두운 반점 깃털을 개선하고 P10에서 v68이 최선의 색상/머리 검수 보류로 추가된 뒤의 벨로키랍토르 참고 기반 확장 경로입니다. v65/v68은 국소 발 보정이 절제된 붙은 둘째 발가락 낫발톱을 증명하기 전까지 원본 보류로만 둡니다.",
+    legAudit: "2026-07-19 run the limb-and-toe gate before promotion: exactly two forelimbs and two hind limbs, no duplicate feet, separated support toes, and one attached raised second-toe claw per visible foot.",
+    focus: "v69 기준의 어두운 반점 깃털, 이빨 있는 주둥이, 정확히 두 앞다리와 두 뒷다리, 과하지 않고 붙어 있는 낫발가락",
+    route: "v69 전신을 유일한 통과 기준으로 사용합니다. 먼저 두 앞다리·두 뒷다리와 발을 고정한 다음, 각 발의 분리된 지지 발가락과 붙어 올라간 둘째 낫발톱을 별도 검수합니다. 갈고리 크기나 발가락 수가 불명확한 후보는 색상·머리 품질과 관계없이 후보 목록에 넣지 않습니다.",
     control: "assets/dinosaurs/velociraptor-mongoliensis-identity-bodylock-guide-clean-v1.png",
-    pass: "v63, v65 또는 검수 보류 v68 위에서 발 주변 이미지-투-이미지/제어 적용 | 어두운 반점 깃털과 녹슨 얼굴 유지 | 갈고리 발톱 과장 줄이기",
-    reject: "색상이 좋아도 머리가 현대 새처럼 읽히거나, 접힌 팔이 날개 부채가 되거나, 낫발톱이 거대한 갈고리/떨어진 초승달처럼 되면 탈락.",
+    pass: "v69 위에서만 저노이즈 국소 보정 | 어두운 반점 깃털과 녹슨 얼굴 유지 | 정확히 두 앞다리와 두 뒷다리 | 중복 발 없음 | 분리된 지지 발가락 | 발에 붙은 작은 들린 둘째 낫발톱",
+    reject: "색상이 좋아도 머리가 현대 새처럼 읽히거나, 접힌 팔이 날개 부채가 되거나, 앞/뒷다리가 추가되거나, 발이 중복되거나, 발가락이 융합되거나, 낫발톱이 거대한 갈고리·떨어진 초승달처럼 되면 탈락.",
   },
   "stegosaurus-stenops": {
     tailAudit: "2026-07-17 strict gate passed by the six final slot images: exactly four attached tail spikes as two left-right pairs, all rising above the tail and ground line; any horizontal, radial, fifth, spear-tip, or detached spike fails.",
@@ -20425,6 +20730,13 @@ function getVisibleReviewCandidates(dino) {
   return getAllCandidates(dino).filter((item) => !isInternalReviewCandidate(item));
 }
 
+function getLatestReviewCandidateTimestamp(dino) {
+  return getVisibleReviewCandidates(dino).reduce(
+    (latest, item) => Math.max(latest, getCandidateGeneratedTimestamp(item)),
+    0,
+  );
+}
+
 function getFilteredReviewCandidates(candidates, filterKey = state.reviewCandidateKindFilter) {
   const matcher = candidateKindGroups[filterKey] || candidateKindGroups.all;
   return candidates.filter((item) => !isInternalReviewCandidate(item)).filter(matcher);
@@ -20432,7 +20744,7 @@ function getFilteredReviewCandidates(candidates, filterKey = state.reviewCandida
 
 function getCandidatesByKindFilter(dino, filterKey = state.reviewCandidateKindFilter) {
   const matcher = candidateKindGroups[filterKey] || candidateKindGroups.all;
-  return getVisibleReviewCandidates(dino).filter(matcher);
+  return getVisibleReviewCandidates(dino).filter(matcher).sort(compareReviewCandidatesByLatest);
 }
 
 function getReviewCandidateCountByFilter(dino, filterKey = state.reviewQueueKindFilter) {
@@ -20695,7 +21007,7 @@ function renderReview() {
     })
     .join("");
 
-  const candidates = getAllCandidates(selectedDino);
+  const candidates = [...getAllCandidates(selectedDino)].sort(compareReviewCandidatesByLatest);
   const manualSource = getManualCandidateSource(selectedDino);
   const currentPrimary = getPrimaryImage(selectedDino);
   const filteredCandidates = getFilteredReviewCandidates(candidates, state.reviewCandidateKindFilter);
@@ -20944,9 +21256,9 @@ function setView(view) {
     if (topDino) state.reviewSelectedId = topDino.id;
     state.reviewPreviewSource = "";
   }
-  if (view === "assetReview" && !state.assetReviewFrameLoaded) {
+  if (view === "assetReview") {
     const frame = $("#assetReviewFrame");
-    if (frame) frame.src = "http://127.0.0.1:8792/";
+    if (frame) frame.src = `http://127.0.0.1:8792/?atlasAudit=${Date.now()}`;
     state.assetReviewFrameLoaded = true;
   }
   state.view = view;

@@ -20,9 +20,19 @@ const EXCLUDED_KINDS = new Set([
   "guide",
   "mask",
   "rejected",
+  "reference",
   "review-options",
   "review-sheet",
   "split-panel-test",
+]);
+
+// The workbench is for reviewing actual dinosaur candidates.  Atlas guide,
+// comparison, and failure records stay in the asset archive but must never
+// reappear here just because their filename happens to look like an image.
+const REVIEWABLE_CANDIDATE_KINDS = new Set([
+  "count-level pass",
+  "review hold",
+  "anatomy review",
 ]);
 
 const SPECIES_ALIASES = {
@@ -109,6 +119,55 @@ function loadAtlasKoreanNames() {
 
 const ATLAS_KOREAN_NAMES = loadAtlasKoreanNames();
 
+function parseAppStringSet(source, name) {
+  const match = source.match(new RegExp(`const ${name} = new Set\\(\\[([\\s\\S]*?)\\]\\);`));
+  if (!match) return new Set();
+  return new Set([...match[1].matchAll(/"([^"]+)"/g)].map((item) => item[1]));
+}
+
+function loadAtlasCandidateManifest() {
+  const appFile = path.join(ROOT, "app.js");
+  try {
+    const source = fs.readFileSync(appFile, "utf8");
+    const start = source.indexOf("const generatedImageSamples = {");
+    const end = source.indexOf("\n};\n\n// 2026-07-19 limb and toe audit", start);
+    if (start < 0 || end < 0) throw new Error("candidate manifest not found");
+
+    const candidateKinds = new Map();
+    const rawCandidates = source.slice(start, end);
+    const entryMatcher = /^\s{4}\{\r?\n([\s\S]*?)^\s{4}\},/gm;
+    for (const entry of rawCandidates.matchAll(entryMatcher)) {
+      const kind = entry[1].match(/^\s*kind:\s*"([^"]+)",/m)?.[1];
+      const asset = entry[1].match(/^\s*source:\s*"(assets\/dinosaurs\/[^"]+)",/m)?.[1];
+      if (kind && asset) candidateKinds.set(asset, kind);
+    }
+
+    return {
+      candidateKinds,
+      approvedVelociraptorSources: parseAppStringSet(source, "approvedVelociraptorCandidateSources"),
+      rejectedSources: parseAppStringSet(source, "verifiedRejectedCandidateSources"),
+    };
+  } catch {
+    return {
+      candidateKinds: new Map(),
+      approvedVelociraptorSources: new Set(),
+      rejectedSources: new Set(),
+    };
+  }
+}
+
+function isAtlasVisibleCandidate(name, manifest = loadAtlasCandidateManifest()) {
+  const source = `assets/dinosaurs/${name}`;
+  const kind = manifest.candidateKinds.get(source);
+  if (!kind) return false;
+  if (!REVIEWABLE_CANDIDATE_KINDS.has(kind)) return false;
+  if (manifest.rejectedSources.has(source)) return false;
+  if (inferDinoGroup(name) === "velociraptor-mongoliensis" && !manifest.approvedVelociraptorSources.has(source)) {
+    return false;
+  }
+  return true;
+}
+
 function authorized(url) {
   return !ACCESS_KEY || url.searchParams.get("key") === ACCESS_KEY;
 }
@@ -146,8 +205,11 @@ function writeReviews(value) {
 
 function listImages() {
   const reviews = readReviews();
+  const manifest = loadAtlasCandidateManifest();
   return fs.readdirSync(ASSET_DIR, { withFileTypes: true })
     .filter((entry) => entry.isFile() && IMAGE_TYPES.has(path.extname(entry.name).toLowerCase()))
+    .filter((entry) => !EXCLUDED_KINDS.has(classify(entry.name)))
+    .filter((entry) => isAtlasVisibleCandidate(entry.name, manifest))
     .map((entry) => {
       const full = path.join(ASSET_DIR, entry.name);
       const stat = fs.statSync(full);
@@ -166,7 +228,6 @@ function listImages() {
         review: reviews[id] || null,
       };
     })
-    .filter((image) => !EXCLUDED_KINDS.has(image.kind))
     .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
 }
 
@@ -186,8 +247,9 @@ function classify(name) {
   if (lower.includes("crops")) return "crops";
   if (lower.includes("mask")) return "mask";
   if (lower.includes("guide")) return "guide";
+  if (lower.includes("reference")) return "reference";
   if (lower.includes("comparison")) return "comparison";
-  if (lower.includes("rejected")) return "rejected";
+  if (lower.includes("rejected") || lower.includes("rejection")) return "rejected";
   if (lower.includes("candidate")) return "candidate";
   if (lower.includes("ecology")) return "ecology";
   if (lower.includes("pattern")) return "pattern";
@@ -200,7 +262,7 @@ function classify(name) {
 }
 
 function isExcludedImageName(name) {
-  return EXCLUDED_KINDS.has(classify(name));
+  return EXCLUDED_KINDS.has(classify(name)) || !isAtlasVisibleCandidate(name);
 }
 
 function inferDinoGroup(name) {

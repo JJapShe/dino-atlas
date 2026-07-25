@@ -18,6 +18,12 @@
 
 ## Current Completed Step
 
+- `Rhamphorhynchus strict tail and membrane correction 2026-07-26`
+  - Rejected `rhamphorhynchus-muensteri-longtail-vane-imagegen-v1.png` because two parallel tail shafts leave the body and one reads as fused to the wing base.
+  - Kept `rhamphorhynchus-muensteri-longtail-vane-identity-imagegen-v2.png` rejected for a third wing membrane, and additionally rejected the slate-ochre variant for a third wing membrane and the moonlit-ledge takeoff scene for a third hind limb.
+  - Promoted `rhamphorhynchus-muensteri-solnhofen-surface-strike-ecology-imagegen-v1.png` as the representative after original-size and crop checks confirmed exactly two wing membranes, two hind limbs, one pelvis-origin tail, and one terminal diamond vane.
+  - Future generation must treat a doubled tail shaft, a tail starting from the wing base, or any tail-to-wing-membrane fusion as immediate rejection conditions.
+
 - `Button glyph centering pass 2026-07-11`
   - Normalized icon-style button centering for map zoom/reset controls, gallery previous/next controls, and lightbox close/previous/next controls by removing default button padding and forcing grid centering with `place-items: center`.
   - Cache keys updated to `20260711-button-centering-v1` for both `styles.css` and `app.js`.
