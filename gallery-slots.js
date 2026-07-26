@@ -775,7 +775,7 @@ window.gallerySlotAssignments = {
   ],
   "allosaurus-fragilis": [
     {
-      "source": "assets/dinosaurs/allosaurus-fragilis-smoothbrow-threefinger-imagegen-v4.png",
+      "source": "assets/dinosaurs/allosaurus-fragilis-morrison-lowhorn-threefinger-representative-imagegen-v1.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
@@ -783,7 +783,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/allosaurus-fragilis-graphite-olive-ocelli-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/allosaurus-fragilis-pointbar-petrol-violet-ocelli-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -791,9 +791,33 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/allosaurus-fragilis-morrison-stream-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/allosaurus-fragilis-misty-trackway-woodland-habitat-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/allosaurus-fragilis-threefinger-lowhorn-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/allosaurus-fragilis-stegosaurus-channel-coexistence-ecology-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/allosaurus-fragilis-separated-adult-subadult-growth-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"

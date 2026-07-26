@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-26-richness-six-slot-batch-8",
+  "reviewBatch": "2026-07-26-richness-six-slot-batch-9",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -121,6 +121,90 @@
     },
     "assets/dinosaurs/ankylosaurus-magniventris-tyrannosaurus-bilobed-club-strike-ecology-imagegen-v2.png": {
       "reason": "The oversized twin-ball club and entangled impact geometry fail stable anatomy review."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-apatosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct attack or chase geometry overlaps animals and obscures limb, hand, tail, or secondary-taxon counts; it is replaced by non-contact spatial coexistence."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-apatosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Carcass contact, blood, and overlapping bodies prevent stable limb, tail, and secondary-taxon anatomy review."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-brachiosaurus-harass-ecology-imagegen-v1.png": {
+      "reason": "Direct attack or chase geometry overlaps animals and obscures limb, hand, tail, or secondary-taxon counts; it is replaced by non-contact spatial coexistence."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-camarasaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct attack or chase geometry overlaps animals and obscures limb, hand, tail, or secondary-taxon counts; it is replaced by non-contact spatial coexistence."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-camarasaurus-graphic-pack-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Carcass contact, blood, and overlapping bodies prevent stable limb, tail, and secondary-taxon anatomy review."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-camarasaurus-intense-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Carcass contact, blood, and overlapping bodies prevent stable limb, tail, and secondary-taxon anatomy review."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-camptosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct attack or chase geometry overlaps animals and obscures limb, hand, tail, or secondary-taxon counts; it is replaced by non-contact spatial coexistence."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-camptosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Carcass contact, blood, and overlapping bodies prevent stable limb, tail, and secondary-taxon anatomy review."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-closedmouth-clean-v1.png": {
+      "reason": "The early shape-control image has ambiguous hand topology and a low-information flat body, so it no longer meets the countable three-finger gate."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-compacthands-imagegen-v2.png": {
+      "reason": "The compact hands remain too small and overlapped to verify three graded digits on both hands."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-diplodocus-harass-ecology-imagegen-v1.png": {
+      "reason": "Direct attack or chase geometry overlaps animals and obscures limb, hand, tail, or secondary-taxon counts; it is replaced by non-contact spatial coexistence."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-diplodocus-juvenile-bite-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct attack or chase geometry overlaps animals and obscures limb, hand, tail, or secondary-taxon counts; it is replaced by non-contact spatial coexistence."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-gargoyleosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct attack or chase geometry overlaps animals and obscures limb, hand, tail, or secondary-taxon counts; it is replaced by non-contact spatial coexistence."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-gargoyleosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Carcass contact, blood, and overlapping bodies prevent stable limb, tail, and secondary-taxon anatomy review."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-handcue-inpaint-v1.png": {
+      "reason": "The local edit leaves inconsistent hand and hind-foot geometry and a generic pale body."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-hesperosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct attack or chase geometry overlaps animals and obscures limb, hand, tail, or secondary-taxon counts; it is replaced by non-contact spatial coexistence."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-hesperosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Carcass contact, blood, and overlapping bodies prevent stable limb, tail, and secondary-taxon anatomy review."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-imagegen-v13-source-candidate.png": {
+      "reason": "A visible hand can read as four digits and the repeated broadside composition adds no stable role."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-imagegen-v15-source-candidate.png": {
+      "reason": "The skull and barrel torso drift toward Tyrannosaurus despite a partial three-finger cue."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-lowbrow-threefinger-imagegen-v3.png": {
+      "reason": "The paired brow projections remain too tall and the flat broadside duplicates the old candidate series."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-mediumarm-threefinger-imagegen-v3.png": {
+      "reason": "The open-mouth heavy skull and soft hand separation fail the revised A. fragilis identity gate."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-natural-fullbody-ipcontrol-v1.png": {
+      "reason": "The heavy torso and weak hand detail drift toward a generic tyrannosaur-like reconstruction."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-openfeet-imagegen-v1.png": {
+      "reason": "Open feet do not compensate for ambiguous hand count and exaggerated brow and dorsal texture."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-realvis-v2.png": {
+      "reason": "The tail is cropped and the oversized, unstable forelimb digits prevent full-body count review."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-reviewable-threefinger-imagegen-v3.png": {
+      "reason": "Tall horn-like brow projections and duplicated broadside framing fail the revised skull gate."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-stegosaurus-ambush-ecology-imagegen-v1.png": {
+      "reason": "The pursuit composition leaves both animals and the Stegosaurus thagomizer too entangled for stable counts; the separated channel scene replaces it."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-strict-imagegen-v1.png": {
+      "reason": "Overstated brow and dorsal ridging plus weak hand topology fail the revised reference gate."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-subtlebrow-imagegen-v2.png": {
+      "reason": "The head and torso drift toward Tyrannosaurus and both three-finger hands are not independently readable."
     }
   }
 }

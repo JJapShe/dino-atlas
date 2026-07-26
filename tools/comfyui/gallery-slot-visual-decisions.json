@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-26T07:12:06.474Z",
-  "reviewBatch": "2026-07-26-richness-six-slot-batch-8",
-  "reviewMethod": "Original-size full-frame inspection of skull, all four limbs, one tail, integrated club, torso armor, secondary animals, and motion geometry",
-  "targetSlots": 503,
+  "generatedAt": "2026-07-26T08:04:19.381Z",
+  "reviewBatch": "2026-07-26-richness-six-slot-batch-9",
+  "reviewMethod": "Primary-source anatomy gate plus original-size full-frame and isolated head, both-hand, hind-foot, tail, secondary-animal, and final four-spike crop review",
+  "targetSlots": 506,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -872,30 +872,57 @@
     "allosaurus-fragilis": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/allosaurus-fragilis-smoothbrow-threefinger-imagegen-v4.png",
+        "source": "assets/dinosaurs/allosaurus-fragilis-morrison-lowhorn-threefinger-representative-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Complete single adult with the A. fragilis low lacrimal-horn and S-curved cheek gate, two separated three-finger hands, two hind limbs, and one tail.",
+        "reviewMethod": "Primary-source anatomy gate plus original-size full-frame and isolated head, both-hand, hind-foot, tail, secondary-animal, and final four-spike crop review",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-9",
+        "reviewedAt": "2026-07-26T08:04:19.381Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/allosaurus-fragilis-graphite-olive-ocelli-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/allosaurus-fragilis-pointbar-petrol-violet-ocelli-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Corrected high-oblique variant preserves the canonical body and marking topology while both hands, both hind limbs, and the single tail remain countable.",
+        "reviewMethod": "Primary-source anatomy gate plus original-size full-frame and isolated head, both-hand, hind-foot, tail, secondary-animal, and final four-spike crop review",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-9",
+        "reviewedAt": "2026-07-26T08:04:19.381Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/allosaurus-fragilis-morrison-stream-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/allosaurus-fragilis-misty-trackway-woodland-habitat-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Distinct low woodland-edge trackway composition preserves one complete animal, two arms, two hind limbs, and one continuous tail.",
+        "reviewMethod": "Primary-source anatomy gate plus original-size full-frame and isolated head, both-hand, hind-foot, tail, secondary-animal, and final four-spike crop review",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-9",
+        "reviewedAt": "2026-07-26T08:04:19.381Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/allosaurus-fragilis-threefinger-lowhorn-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "Bright field-reference view clearly shows two low lacrimal horns and exactly three graded digits on each inward-facing hand.",
+        "reviewMethod": "Primary-source anatomy gate plus original-size full-frame and isolated head, both-hand, hind-foot, tail, secondary-animal, and final four-spike crop review",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-9",
+        "reviewedAt": "2026-07-26T08:04:19.381Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/allosaurus-fragilis-stegosaurus-channel-coexistence-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "Water separates both complete animals; the Allosaurus remains countable and the Stegosaurus has four legs, separated plates, one tail, and exactly four upward thagomizer spikes.",
+        "reviewMethod": "Primary-source anatomy gate plus original-size full-frame and isolated head, both-hand, hind-foot, tail, secondary-animal, and final four-spike crop review",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-9",
+        "reviewedAt": "2026-07-26T08:04:19.381Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/allosaurus-fragilis-separated-adult-subadult-growth-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Adult and subadult are spatially separated, independently countable, and presented only as a growth comparison without family or social claims.",
+        "reviewMethod": "Primary-source anatomy gate plus original-size full-frame and isolated head, both-hand, hind-foot, tail, secondary-animal, and final four-spike crop review",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-9",
+        "reviewedAt": "2026-07-26T08:04:19.381Z"
       }
     },
     "marshosaurus-bicentesimus": {
@@ -4917,6 +4944,90 @@
     },
     "assets/dinosaurs/triceratops-horridus-tyrannosaurus-horn-counterattack-ecology-imagegen-v1.png": {
       "reason": "The storm scene repeats horn penetration and blood, while the predator contact and tail silhouette are too entangled for stable interaction review."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-apatosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct attack or chase geometry overlaps animals and obscures limb, hand, tail, or secondary-taxon counts; it is replaced by non-contact spatial coexistence."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-apatosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Carcass contact, blood, and overlapping bodies prevent stable limb, tail, and secondary-taxon anatomy review."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-brachiosaurus-harass-ecology-imagegen-v1.png": {
+      "reason": "Direct attack or chase geometry overlaps animals and obscures limb, hand, tail, or secondary-taxon counts; it is replaced by non-contact spatial coexistence."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-camarasaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct attack or chase geometry overlaps animals and obscures limb, hand, tail, or secondary-taxon counts; it is replaced by non-contact spatial coexistence."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-camarasaurus-graphic-pack-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Carcass contact, blood, and overlapping bodies prevent stable limb, tail, and secondary-taxon anatomy review."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-camarasaurus-intense-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Carcass contact, blood, and overlapping bodies prevent stable limb, tail, and secondary-taxon anatomy review."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-camptosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct attack or chase geometry overlaps animals and obscures limb, hand, tail, or secondary-taxon counts; it is replaced by non-contact spatial coexistence."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-camptosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Carcass contact, blood, and overlapping bodies prevent stable limb, tail, and secondary-taxon anatomy review."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-closedmouth-clean-v1.png": {
+      "reason": "The early shape-control image has ambiguous hand topology and a low-information flat body, so it no longer meets the countable three-finger gate."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-compacthands-imagegen-v2.png": {
+      "reason": "The compact hands remain too small and overlapped to verify three graded digits on both hands."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-diplodocus-harass-ecology-imagegen-v1.png": {
+      "reason": "Direct attack or chase geometry overlaps animals and obscures limb, hand, tail, or secondary-taxon counts; it is replaced by non-contact spatial coexistence."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-diplodocus-juvenile-bite-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct attack or chase geometry overlaps animals and obscures limb, hand, tail, or secondary-taxon counts; it is replaced by non-contact spatial coexistence."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-gargoyleosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct attack or chase geometry overlaps animals and obscures limb, hand, tail, or secondary-taxon counts; it is replaced by non-contact spatial coexistence."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-gargoyleosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Carcass contact, blood, and overlapping bodies prevent stable limb, tail, and secondary-taxon anatomy review."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-handcue-inpaint-v1.png": {
+      "reason": "The local edit leaves inconsistent hand and hind-foot geometry and a generic pale body."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-hesperosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct attack or chase geometry overlaps animals and obscures limb, hand, tail, or secondary-taxon counts; it is replaced by non-contact spatial coexistence."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-hesperosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Carcass contact, blood, and overlapping bodies prevent stable limb, tail, and secondary-taxon anatomy review."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-imagegen-v13-source-candidate.png": {
+      "reason": "A visible hand can read as four digits and the repeated broadside composition adds no stable role."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-imagegen-v15-source-candidate.png": {
+      "reason": "The skull and barrel torso drift toward Tyrannosaurus despite a partial three-finger cue."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-lowbrow-threefinger-imagegen-v3.png": {
+      "reason": "The paired brow projections remain too tall and the flat broadside duplicates the old candidate series."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-mediumarm-threefinger-imagegen-v3.png": {
+      "reason": "The open-mouth heavy skull and soft hand separation fail the revised A. fragilis identity gate."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-natural-fullbody-ipcontrol-v1.png": {
+      "reason": "The heavy torso and weak hand detail drift toward a generic tyrannosaur-like reconstruction."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-openfeet-imagegen-v1.png": {
+      "reason": "Open feet do not compensate for ambiguous hand count and exaggerated brow and dorsal texture."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-realvis-v2.png": {
+      "reason": "The tail is cropped and the oversized, unstable forelimb digits prevent full-body count review."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-reviewable-threefinger-imagegen-v3.png": {
+      "reason": "Tall horn-like brow projections and duplicated broadside framing fail the revised skull gate."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-stegosaurus-ambush-ecology-imagegen-v1.png": {
+      "reason": "The pursuit composition leaves both animals and the Stegosaurus thagomizer too entangled for stable counts; the separated channel scene replaces it."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-strict-imagegen-v1.png": {
+      "reason": "Overstated brow and dorsal ridging plus weak hand topology fail the revised reference gate."
+    },
+    "assets/dinosaurs/allosaurus-fragilis-subtlebrow-imagegen-v2.png": {
+      "reason": "The head and torso drift toward Tyrannosaurus and both three-finger hands are not independently readable."
     }
   }
 }
