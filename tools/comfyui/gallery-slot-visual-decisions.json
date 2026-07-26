@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-26T08:57:09.224Z",
-  "reviewBatch": "2026-07-26-richness-six-slot-batch-10",
-  "reviewMethod": "D. altus/D. elderae primary-source gate plus original-size full-frame and isolated head, both-hand, hind-foot, tail, and secondary-animal crops",
-  "targetSlots": 509,
+  "generatedAt": "2026-07-26T09:49:42.120Z",
+  "reviewBatch": "2026-07-26-richness-six-slot-batch-11",
+  "reviewMethod": "T. rex primary-source skull, forelimb, integument, and lip gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, and secondary-animal inspection",
+  "targetSlots": 511,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -2580,39 +2580,57 @@
     "tyrannosaurus-rex": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/tyrannosaurus-rex-twofinger-hand-i2i-v4.png",
+        "source": "assets/dinosaurs/tyrannosaurus-rex-hell-creek-deepskull-twofinger-representative-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Deep broad-posterior skull, closed lipped mouth, exactly two tiny two-digit arms, two three-main-toe hind feet, and one complete tail passed original-size review.",
+        "reviewMethod": "T. rex primary-source skull, forelimb, integument, and lip gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, and secondary-animal inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-11",
+        "reviewedAt": "2026-07-26T09:49:42.120Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/tyrannosaurus-rex-obsidian-rust-lichen-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/tyrannosaurus-rex-pointbar-bluecharcoal-lichen-copper-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Corrected point-bar variant preserves the body lock and passes both hands, both three-main-toe feet, full tail, palette, and camera-diversity review.",
+        "reviewMethod": "T. rex primary-source skull, forelimb, integument, and lip gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, and secondary-animal inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-11",
+        "reviewedAt": "2026-07-26T09:49:42.120Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/tyrannosaurus-rex-floodplain-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/tyrannosaurus-rex-dawn-channel-crossing-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Corrected dawn channel scene preserves two digits on both hands, two independent feet, one tail, and a distinct low frontal habitat composition.",
+        "reviewMethod": "T. rex primary-source skull, forelimb, integument, and lip gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, and secondary-animal inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-11",
+        "reviewedAt": "2026-07-26T09:49:42.120Z"
       },
       "4": {
         "status": "approved",
-        "source": "assets/dinosaurs/tyrannosaurus-rex-smoothbrow-twofinger-imagegen-v3.png",
+        "source": "assets/dinosaurs/tyrannosaurus-rex-deepskull-twofinger-three-toe-anatomy-imagegen-v1.png",
         "role": "identity-anatomy",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Bright anatomy view passes the deep-skull, lipped-mouth, two-finger hand, three-main-toe foot, two-leg, and one-tail gates at original size.",
+        "reviewMethod": "T. rex primary-source skull, forelimb, integument, and lip gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, and secondary-animal inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-11",
+        "reviewedAt": "2026-07-26T09:49:42.120Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-braided-river-distance-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "Wide braided-river view keeps one complete Tyrannosaurus and three distant Edmontosaurus spatially separated with no contact, injury, or pursuit claim.",
+        "reviewMethod": "T. rex primary-source skull, forelimb, integument, and lip gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, and secondary-animal inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-11",
+        "reviewedAt": "2026-07-26T09:49:42.120Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/tyrannosaurus-rex-triceratops-misty-channel-standoff-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Water-corridor standoff keeps the two taxa separate and preserves a deep-skulled two-finger Tyrannosaurus plus a three-horned four-legged Triceratops without injury.",
+        "reviewMethod": "T. rex primary-source skull, forelimb, integument, and lip gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, and secondary-animal inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-11",
+        "reviewedAt": "2026-07-26T09:49:42.120Z"
       }
     },
     "spinosaurus-aegyptiacus": {
@@ -5097,6 +5115,57 @@
     },
     "assets/dinosaurs/dryosaurus-altus-upland-seep-periwinkle-pistachio-reflection-ecology-imagegen-v1.png": {
       "reason": "The very long neck, bird-like head, and ambiguous hand and foot digits fail the revised D. altus identity gate."
+    },
+    "assets/dinosaurs/tyrannosaurus-rex-ankylosaurus-tailclub-counterattack-ecology-imagegen-v1.png": {
+      "reason": "Direct injury contact and overlapping predator-prey geometry obscure stable feet, tail, and secondary-taxon anatomy."
+    },
+    "assets/dinosaurs/tyrannosaurus-rex-compact-twofinger-inpaint-v1.png": {
+      "reason": "The compact local edit retains a long shallow skull and weak hand and foot topology rather than the revised deep broad-skull body lock."
+    },
+    "assets/dinosaurs/tyrannosaurus-rex-controlnet-twofinger-v3.png": {
+      "reason": "Ambiguous hand branches, malformed or hidden feet, and a shallow head fail the revised countable-appendage gate."
+    },
+    "assets/dinosaurs/tyrannosaurus-rex-floodplain-ecology-imagegen-v1.png": {
+      "reason": "A long narrow Tarbosaurus-like head, weak hand and foot detail, and repeated broadside framing fail the new final habitat slot."
+    },
+    "assets/dinosaurs/tyrannosaurus-rex-imagegen-v12-source-candidate.png": {
+      "reason": "Oversized forelimbs and ambiguous extra hand branches fail the strict two-digit T. rex gate."
+    },
+    "assets/dinosaurs/tyrannosaurus-rex-imagegen-v14-source-candidate.png": {
+      "reason": "Readable fingers do not compensate for oversized arms, a narrow head, and unstable hind-foot anatomy."
+    },
+    "assets/dinosaurs/tyrannosaurus-rex-imagegen-v15-source-candidate.png": {
+      "reason": "Folded hands remain too soft to count and the long shallow skull drifts away from the deep T. rex profile."
+    },
+    "assets/dinosaurs/tyrannosaurus-rex-imagegen-v16-source-candidate.png": {
+      "reason": "Shadowed hands and weak feet cannot prove two digits and three main toes, while the composition duplicates older broadsides."
+    },
+    "assets/dinosaurs/tyrannosaurus-rex-imagegen-v18-source-candidate.png": {
+      "reason": "Tiny blurred hands and malformed foot detail fail original-size appendage review despite a usable overall silhouette."
+    },
+    "assets/dinosaurs/tyrannosaurus-rex-lora-v2.png": {
+      "reason": "The LoRA result reads as a generic long-headed reptilian theropod with unstable hands and feet rather than a deep-skulled T. rex."
+    },
+    "assets/dinosaurs/tyrannosaurus-rex-obsidian-rust-lichen-pattern-imagegen-v1.png": {
+      "reason": "Useful palette variation is outweighed by a shallow narrow skull, ambiguous hands, and soft hind-foot topology."
+    },
+    "assets/dinosaurs/tyrannosaurus-rex-smoothbrow-twofinger-imagegen-v3.png": {
+      "reason": "The flattened narrow head and weakly separated hand and foot digits fail the revised skull and count gates."
+    },
+    "assets/dinosaurs/tyrannosaurus-rex-triceratops-counterattack-ecology-imagegen-v1.png": {
+      "reason": "Direct horn contact, local injury, and overlapping bodies prevent stable non-graphic anatomy review."
+    },
+    "assets/dinosaurs/tyrannosaurus-rex-triceratops-graphic-flank-bite-ecology-imagegen-v1.png": {
+      "reason": "Visible blood, bite contact, and merged limbs and tails fail the non-contact educational interaction gate."
+    },
+    "assets/dinosaurs/tyrannosaurus-rex-tuckedarms-lora-v1.png": {
+      "reason": "Tucked arms are too hidden to verify two digits, and the long skull and unclear feet fail the revised body lock."
+    },
+    "assets/dinosaurs/tyrannosaurus-rex-twofinger-hand-i2i-v4.png": {
+      "reason": "The former representative has a shallow Tarbosaurus-like skull and unstable hind-foot anatomy, so clearer two fingers alone are insufficient."
+    },
+    "assets/dinosaurs/tyrannosaurus-rex-visible-twofinger-imagegen-v2.png": {
+      "reason": "Visible hands are paired with oversized arms, a long narrow skull, and weak foot geometry, failing the complete T. rex gate."
     }
   }
 }

@@ -2303,7 +2303,7 @@ window.gallerySlotAssignments = {
   ],
   "tyrannosaurus-rex": [
     {
-      "source": "assets/dinosaurs/tyrannosaurus-rex-twofinger-hand-i2i-v4.png",
+      "source": "assets/dinosaurs/tyrannosaurus-rex-hell-creek-deepskull-twofinger-representative-imagegen-v1.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
@@ -2311,7 +2311,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/tyrannosaurus-rex-obsidian-rust-lichen-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/tyrannosaurus-rex-pointbar-bluecharcoal-lichen-copper-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -2319,7 +2319,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/tyrannosaurus-rex-floodplain-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/tyrannosaurus-rex-dawn-channel-crossing-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
@@ -2327,9 +2327,25 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/tyrannosaurus-rex-smoothbrow-twofinger-imagegen-v3.png",
+      "source": "assets/dinosaurs/tyrannosaurus-rex-deepskull-twofinger-three-toe-anatomy-imagegen-v1.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-braided-river-distance-ecology-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/tyrannosaurus-rex-triceratops-misty-channel-standoff-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
