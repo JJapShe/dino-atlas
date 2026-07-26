@@ -18,6 +18,15 @@
 
 ## Current Completed Step
 
+- `Six-image richness batch 5: Kronosaurus tail correction and role rebuild 2026-07-26`
+  - Raised `Kronosaurus queenslandicus` from three to six approved slots while replacing two previously approved images that fail the stricter one-tail and four-paddle gate.
+  - The final role set balances a giant-skull lateral representative, a corrected bottlegreen/ivory ocelli pattern, a cold shell-shelf habitat cruise, a high-oblique four-paddle identity view, a dawn non-contact turtle approach, and a spatially separated adult/subadult depth comparison.
+  - Generated four new project assets. The previously unassigned dawn interaction was promoted only after original-size review confirmed two shoulder paddles, two hip paddles, one short unforked tail, and no contact wound.
+  - Rejected the old bottlegreen pattern because two parallel tail shafts leave the body, and rejected the old open-water turn because overlapping posterior appendages prevent a stable count of exactly four flippers and one tail. Both remain on disk as `diagnostic only` evidence and are hidden from 8792.
+  - Original-size crops confirm four paddles and one tail on every visible individual. The adult/subadult frame contains eight total paddles, two independent tails, no touching silhouettes, and no parental-care claim.
+  - Literature gates use Holland 2018 for the complete mandible and McHenry 2009 for the traditional `Kronosaurus` reconstruction. Noè and Gómez-Pérez 2022 proposed `Eiectus longmani` for the better-known Australian material, so the familiar project label is retained with an explicit taxonomic caveat.
+  - Validation: `app.js` syntax and strict gallery validation pass with 132 taxa, 495 target/assigned/approved slots, 17 taxa at the six-image published target, 237 remaining richness generation slots, 26 rejected sources, and every structural error count at 0. Static scan found 1449 declared asset refs with 0 real missing paths. The 8792 API exposes exactly six Kronosaurus images out of 848 visible files and hides both diagnostics; all four new assets return HTTP 200 with `no-store`. Browser QA renders six complete cards, keeps the growth-image fullscreen view inside both 1280x720 and 390x844 viewports without caption overlap or horizontal overflow, and reports 0 warnings or errors.
+
 - `Six-image richness batch 4: Mosasaurus full-gallery rebuild 2026-07-26`
   - Raised `Mosasaurus hoffmannii` from three to six approved gallery slots using six all-new assets rather than promoting the four structurally inconsistent legacy images.
   - The new role set balances an open-water lateral representative, an indigo/opal dorsal-oblique pattern view, a sunlit chalk-channel habitat view, a four-paddle identity view, a dynamic but non-contact fish-school turn, and a spatially separated adult/juvenile depth comparison.

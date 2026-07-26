@@ -1703,7 +1703,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/kronosaurus-queenslandicus-bottlegreen-ocelli-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/kronosaurus-queenslandicus-bottlegreen-ivory-ocelli-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -1711,9 +1711,33 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/kronosaurus-queenslandicus-openwater-turn-ecology-imagegen-v2.png",
+      "source": "assets/dinosaurs/kronosaurus-queenslandicus-eromanga-shell-shelf-habitat-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "marine",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/kronosaurus-queenslandicus-four-paddle-overhead-identity-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "marine",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/kronosaurus-queenslandicus-eromanga-dawn-ambush-ecology-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "marine",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/kronosaurus-queenslandicus-adult-subadult-depth-growth-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "marine",
       "expectedKind": "anatomy review"

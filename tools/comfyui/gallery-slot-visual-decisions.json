@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-17T04:56:32.666Z",
-  "reviewBatch": "2026-07-17-slot-audit",
-  "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-  "targetSlots": 492,
+  "generatedAt": "2026-07-26T05:13:46.226Z",
+  "reviewBatch": "2026-07-26-richness-six-slot-batch-5",
+  "reviewMethod": "Original-size full-frame inspection plus isolated skull, four-paddle, and single-tail crops",
+  "targetSlots": 495,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -1902,28 +1902,55 @@
         "status": "approved",
         "source": "assets/dinosaurs/kronosaurus-queenslandicus-eromanga-giant-skull-pliosaur-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Original-size review confirms one huge deep skull, short neck, exactly four paddle limbs, and one short continuous tail.",
+        "reviewMethod": "Original-size full-frame inspection plus isolated skull, four-paddle, and single-tail crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-5",
+        "reviewedAt": "2026-07-26T05:13:46.226Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/kronosaurus-queenslandicus-bottlegreen-ocelli-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/kronosaurus-queenslandicus-bottlegreen-ivory-ocelli-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Bottle-green and ivory ocelli variant preserves the giant-skull body plan, four separately rooted paddles, and one unforked tail.",
+        "reviewMethod": "Original-size full-frame inspection plus isolated skull, four-paddle, and single-tail crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-5",
+        "reviewedAt": "2026-07-26T05:13:46.226Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/kronosaurus-queenslandicus-openwater-turn-ecology-imagegen-v2.png",
+        "source": "assets/dinosaurs/kronosaurus-queenslandicus-eromanga-shell-shelf-habitat-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Calm Eromanga shell-shelf scene keeps the full animal readable with exactly four paddles and one short tail.",
+        "reviewMethod": "Original-size full-frame inspection plus isolated skull, four-paddle, and single-tail crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-5",
+        "reviewedAt": "2026-07-26T05:13:46.226Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/kronosaurus-queenslandicus-four-paddle-overhead-identity-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "High oblique anatomy view exposes two shoulder paddles, two hip paddles, and one pelvis-origin tail without overlap.",
+        "reviewMethod": "Original-size full-frame inspection plus isolated skull, four-paddle, and single-tail crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-5",
+        "reviewedAt": "2026-07-26T05:13:46.226Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/kronosaurus-queenslandicus-eromanga-dawn-ambush-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "Non-contact turtle approach shows four separated paddles and one tail; the multi-animal scene remains below the representative.",
+        "reviewMethod": "Original-size full-frame inspection plus isolated skull, four-paddle, and single-tail crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-5",
+        "reviewedAt": "2026-07-26T05:13:46.226Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/kronosaurus-queenslandicus-adult-subadult-depth-growth-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Separated adult and subadult each have exactly four paddles and one tail; wording does not claim parental care.",
+        "reviewMethod": "Original-size full-frame inspection plus isolated skull, four-paddle, and single-tail crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-5",
+        "reviewedAt": "2026-07-26T05:13:46.226Z"
       }
     },
     "shonisaurus-popularis": {
@@ -4770,6 +4797,12 @@
     },
     "assets/dinosaurs/sarahsaurus-aurifontanalis-dilophosaurus-hand-shove-defense-ecology-imagegen-v1.png": {
       "reason": "Multiple fingers become long therizinosaur-like scythe claws, and the predator-defense composition duplicates an existing interaction role."
+    },
+    "assets/dinosaurs/kronosaurus-queenslandicus-bottlegreen-ocelli-pattern-imagegen-v1.png": {
+      "reason": "Two parallel tail shafts leave the rear body, failing the strict one-tail pliosaur gate."
+    },
+    "assets/dinosaurs/kronosaurus-queenslandicus-openwater-turn-ecology-imagegen-v2.png": {
+      "reason": "Overlapping posterior appendages prevent a stable count of exactly four flippers and one tail."
     }
   }
 }

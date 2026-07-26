@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-17-slot-audit",
+  "reviewBatch": "2026-07-26-richness-six-slot-batch-5",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -73,6 +73,12 @@
     },
     "assets/dinosaurs/sarahsaurus-aurifontanalis-dilophosaurus-hand-shove-defense-ecology-imagegen-v1.png": {
       "reason": "Multiple fingers become long therizinosaur-like scythe claws, and the predator-defense composition duplicates an existing interaction role."
+    },
+    "assets/dinosaurs/kronosaurus-queenslandicus-bottlegreen-ocelli-pattern-imagegen-v1.png": {
+      "reason": "Two parallel tail shafts leave the rear body, failing the strict one-tail pliosaur gate."
+    },
+    "assets/dinosaurs/kronosaurus-queenslandicus-openwater-turn-ecology-imagegen-v2.png": {
+      "reason": "Overlapping posterior appendages prevent a stable count of exactly four flippers and one tail."
     }
   }
 }
