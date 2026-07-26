@@ -3,7 +3,7 @@
   "generatedAt": "2026-07-17T04:56:32.666Z",
   "reviewBatch": "2026-07-17-slot-audit",
   "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-  "targetSlots": 486,
+  "targetSlots": 489,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -3230,6 +3230,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/tarbosaurus-bataar-shallow-channel-two-finger-walk-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size full-frame and crop review confirmed two fingers on both readable hands, exactly two hind legs, visible feet, and one continuous tail in a distinct shallow-channel walk.",
+        "reviewMethod": "built-in image generation followed by original-size identity, hand-digit, hind-limb, foot, and tail inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-3",
+        "reviewedAt": "2026-07-26T04:14:26Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/tarbosaurus-bataar-saurolophus-river-standoff-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "Original-size review confirmed a complete primary Tarbosaurus with one readable two-fingered hand, exactly two hind legs and one tail, plus three spatially separated Saurolophus across the channel.",
+        "reviewMethod": "built-in image generation followed by original-size limb-count, body-separation, tail, and non-graphic interaction inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-3",
+        "reviewedAt": "2026-07-26T04:14:26Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/tarbosaurus-bataar-adult-juvenile-riverbar-growth-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size review confirmed two separated growth stages, each with exactly two hind legs and one unfused tail; every readable hand retains two fingers and the scene does not assert parental care.",
+        "reviewMethod": "built-in image generation followed by original-size limb-count, hand-digit, tail-separation, and growth-stage inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-3",
+        "reviewedAt": "2026-07-26T04:14:26Z"
       }
     },
     "velociraptor-mongoliensis": {

@@ -18,6 +18,14 @@
 
 ## Current Completed Step
 
+- `Six-image richness batch 3: Tarbosaurus anatomy, interaction, and growth 2026-07-26`
+  - Raised `Tarbosaurus bataar` from three to six approved gallery slots and reduced three generation-required richness slots.
+  - Added a shallow-channel identity walk with both tiny two-fingered hands readable, a wide non-contact river standoff with three spatially separated `Saurolophus angustirostris`, and a separated adult/juvenile growth comparison that does not assert parental care.
+  - Preserved the existing basalt-black, charcoal, bone-cream, turquoise-cheek, copper-rust-bar, and outer-tail-ring phenotype across all three new compositions.
+  - Original-size full-frame and crop review confirmed exactly two hind limbs per Tarbosaurus, two fingers on each readable hand, one continuous tail per individual, readable feet, and no body or tail fusion. Multi-animal scenes remain `anatomy review` below the representative.
+  - Primary-source checks used Hurum and Sabath 2003 for Tarbosaurus cranial comparison, Tsuihiji et al. 2011 for juvenile cranial anatomy, and Owocki et al. 2020 for a Nemegt hadrosaurid prey signal.
+  - Validation: `app.js` syntax and strict gallery validation pass with 132 taxa, 489 target/assigned/approved slots, 15 taxa at the six-image published target, 241 remaining richness generation slots, and every structural error count at 0. Static scan found 1439 declared asset refs with 0 real missing paths. The 8792 review API exposes exactly six Tarbosaurus images including all three new files; each new image returns HTTP 200 with `no-store`, renders at 1536x1024 natural size, and the growth scene opens at about 1248x832 without caption overlap.
+
 - `Six-image richness batch 2: role-diverse growth scenes and Brachiosaurus ecology 2026-07-26`
   - Raised `Heterodontosaurus tucki`, `Sarahsaurus aurifontanalis`, `Brachiosaurus altithorax`, and `Gargoyleosaurus parkpinorum` to six approved gallery slots.
   - Generated three role-distinct growth-stage scenes: misty floodplain Heterodontosaurus, seasonal-wash Sarahsaurus, and wet-woodland Gargoyleosaurus. Each scene keeps bodies spatially separated and verifies the required limb and single-tail counts at original size.
