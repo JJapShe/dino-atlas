@@ -2453,27 +2453,51 @@ window.gallerySlotAssignments = {
   ],
   "gallimimus-bullatus": [
     {
-      "source": "assets/dinosaurs/gallimimus-bullatus-toothless-beak-longlegs-imagegen-v1.png",
+      "source": "assets/dinosaurs/gallimimus-bullatus-nemegt-shortmanus-threetoe-representative-imagegen-v1.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "gobi-arid",
+      "habitatKey": "nemegt-fluvial-floodplain",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/gallimimus-bullatus-charcoal-teal-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/gallimimus-bullatus-wetseason-slate-celadon-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "gobi-arid",
+      "habitatKey": "nemegt-fluvial-floodplain",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/gallimimus-bullatus-nemegt-flock-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/gallimimus-bullatus-nemegt-lake-reflection-flock-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "gobi-arid",
+      "habitatKey": "nemegt-fluvial-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/gallimimus-bullatus-wetmargin-foodsearch-ecology-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "nemegt-fluvial-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/gallimimus-bullatus-saurolophus-river-coexistence-ecology-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "nemegt-fluvial-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/gallimimus-bullatus-adult-juvenile-floodplain-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "nemegt-fluvial-floodplain",
       "expectedKind": "anatomy review"
     }
   ],

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-26T12:20:44.061Z",
-  "reviewBatch": "2026-07-26-richness-six-slot-batch-13",
-  "reviewMethod": "Suchomimus primary-source skull, forelimb, ridge, gait, and Elrhaz habitat gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, and secondary-animal inspection",
-  "targetSlots": 517,
+  "generatedAt": "2026-07-26T13:31:55.209Z",
+  "reviewBatch": "2026-07-26-richness-six-slot-batch-14",
+  "reviewMethod": "Gallimimus primary-source skull, short-manus, limb-proportion, beak, and Nemegt habitat gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, and secondary-animal inspection",
+  "targetSlots": 520,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -2748,30 +2748,57 @@
     "gallimimus-bullatus": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/gallimimus-bullatus-toothless-beak-longlegs-imagegen-v1.png",
+        "source": "assets/dinosaurs/gallimimus-bullatus-nemegt-shortmanus-threetoe-representative-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The skeletal-reference-gated full body preserves the long dorsoventrally flattened toothless snout, forward-curving neck, two short three-finger hands, two long three-forward-toe feet without halluces, and one complete tail.",
+        "reviewMethod": "Primary-source identity comparison plus original-size full-frame and isolated head, both-hand, both-foot, and tail inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-14",
+        "reviewedAt": "2026-07-26T13:31:55.209Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/gallimimus-bullatus-charcoal-teal-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/gallimimus-bullatus-wetseason-slate-celadon-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The corrected rear-oblique wet-season view retains two three-finger hands, two three-forward-toe feet and one tail while adding a natural blue-slate, celadon, ivory, rust and cream-pinspot palette.",
+        "reviewMethod": "Primary-source identity comparison plus original-size full-frame and isolated head, both-hand, both-foot, and tail inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-14",
+        "reviewedAt": "2026-07-26T13:31:55.209Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/gallimimus-bullatus-nemegt-flock-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/gallimimus-bullatus-nemegt-lake-reflection-flock-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The retained wide shallow-floodplain action frame provides the only low-sun running-flock composition; all four bodies and tails remain separated, but splash-obscured digits keep it below representative status.",
+        "reviewMethod": "Original-size full-frame and foreground/midground animal inspection with explicit water-occlusion downgrade",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-14",
+        "reviewedAt": "2026-07-26T13:31:55.209Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/gallimimus-bullatus-wetmargin-foodsearch-ecology-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The lowered solitary food-search posture makes the flattened toothless snout, two three-finger hands, two dry three-forward-toe feet, and complete tail simultaneously readable without claiming proven filter-feeding.",
+        "reviewMethod": "Primary-source identity comparison plus original-size full-frame and isolated head, both-hand, both-foot, and tail inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-14",
+        "reviewedAt": "2026-07-26T13:31:55.209Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/gallimimus-bullatus-saurolophus-river-coexistence-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "The foreground Gallimimus preserves two three-finger hands, two three-main-toe feet and one tail, while a water corridor separates it from exactly two distant single-spike Saurolophus with no chase or contact.",
+        "reviewMethod": "Primary-source identity comparison plus original-size full-frame, main-animal appendage, and both secondary-animal inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-14",
+        "reviewedAt": "2026-07-26T13:31:55.209Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/gallimimus-bullatus-adult-juvenile-floodplain-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The corrected frame contains exactly one adult and one spatially separated juvenile; the adult has two three-finger forelimbs, two three-main-toe hind limbs and one tail, and the wording avoids a family or parental-care claim.",
+        "reviewMethod": "Primary-source identity comparison plus original-size full-frame and isolated adult hand, leg, foot, tail, and juvenile inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-14",
+        "reviewedAt": "2026-07-26T13:31:55.209Z"
       }
     },
     "deinocheirus-mirificus": {
@@ -5244,6 +5271,21 @@
     },
     "assets/dinosaurs/suchomimus-tenerensis-splitwater-petrol-opal-fishstrike-ecology-imagegen-v1.png": {
       "reason": "An oversized rounded back hump, unstable overlapping forelimb and hand geometry, and water-refraction-obscured feet fail the revised Suchomimus anatomy and non-diving ecology gate."
+    },
+    "assets/dinosaurs/gallimimus-bullatus-toothless-beak-longlegs-imagegen-v1.png": {
+      "reason": "The former representative repeats a generic brown broadside and has a more upright birdlike neck and less diagnostic flattened-snouted profile than the new skeletal-reference-gated representative."
+    },
+    "assets/dinosaurs/gallimimus-bullatus-charcoal-teal-pattern-imagegen-v1.png": {
+      "reason": "The former pattern repeats the representative's side-on dry-bank framing and does not add enough camera or habitat diversity to the revised six-role set."
+    },
+    "assets/dinosaurs/gallimimus-bullatus-nemegt-flock-ecology-imagegen-v1.png": {
+      "reason": "The crowded repeated-broadside herd and distant generic co-occurring animals prevent stable appendage review and are superseded by the spatially separated Saurolophus scene."
+    },
+    "assets/dinosaurs/gallimimus-bullatus-saltpan-coral-stripe-flock-ecology-imagegen-v1.png": {
+      "reason": "The visually useful running frame duplicates the retained lake-flock action role, while lifted and perspective-compressed feet and hands do not clear the revised count gate."
+    },
+    "assets/dinosaurs/gallimimus-bullatus-gypsum-black-lemon-pinspot-flock-ecology-imagegen-v1.png": {
+      "reason": "The black, lemon, cyan, and violet combination is too neon for the habitat-driven palette, and water-splash motion leaves foot and hand anatomy less stable than the new wet-season variant."
     }
   }
 }

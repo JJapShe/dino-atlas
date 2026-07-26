@@ -83,6 +83,13 @@ const HABITATS = {
     light: "clear neutral daylight with restrained water reflection and no global orange cast",
     backgroundPalette: ["#a66f50", "#587a7d", "#68725d"],
   },
+  "nemegt-fluvial-floodplain": {
+    substrate: "broad sandy point bars, dark wet silt, shallow meandering channels, and seasonal floodplain pools",
+    vegetation: "horsetails, low wetland plants, driftwood, and patches of riparian woodland",
+    moisture: "mesic seasonally wet river and floodplain system",
+    light: "soft neutral daylight with restrained water reflection and no global desert-orange cast",
+    backgroundPalette: ["#a58c69", "#607b74", "#4f604f"],
+  },
   "polar-forest": {
     substrate: "cool dark soil, seasonal frost, and damp leaf litter",
     vegetation: "high-latitude conifer and fern woodland",
@@ -328,6 +335,7 @@ function habitatFor(dino, route) {
   let key = "conifer-fern-floodplain";
   if (dino.id === "spinosaurus-aegyptiacus") key = "kem-kem-river-delta";
   else if (dino.id === "suchomimus-tenerensis") key = "elrhaz-river-system";
+  else if (dino.id === "gallimimus-bullatus") key = "nemegt-fluvial-floodplain";
   else if (/marine|seaway|ocean|sea |pliosaur|plesiosaur|ichthyosaur|mosasaur|해양|바다|수중/.test(text)) key = "marine";
   else if (/polar|prince creek|alaska|high-latitude|극지|고위도/.test(text)) key = "polar-forest";
   else if (/gobi|djadokhta|nemegt|dune|desert|sandstone|사구|사막|고비/.test(text)) key = "gobi-arid";

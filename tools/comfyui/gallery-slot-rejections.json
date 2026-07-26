@@ -322,6 +322,21 @@
     },
     "assets/dinosaurs/suchomimus-tenerensis-splitwater-petrol-opal-fishstrike-ecology-imagegen-v1.png": {
       "reason": "An oversized rounded back hump, unstable overlapping forelimb and hand geometry, and water-refraction-obscured feet fail the revised Suchomimus anatomy and non-diving ecology gate."
+    },
+    "assets/dinosaurs/gallimimus-bullatus-toothless-beak-longlegs-imagegen-v1.png": {
+      "reason": "The former representative repeats a generic brown broadside and has a more upright birdlike neck and less diagnostic flattened-snouted profile than the new skeletal-reference-gated representative."
+    },
+    "assets/dinosaurs/gallimimus-bullatus-charcoal-teal-pattern-imagegen-v1.png": {
+      "reason": "The former pattern repeats the representative's side-on dry-bank framing and does not add enough camera or habitat diversity to the revised six-role set."
+    },
+    "assets/dinosaurs/gallimimus-bullatus-nemegt-flock-ecology-imagegen-v1.png": {
+      "reason": "The crowded repeated-broadside herd and distant generic co-occurring animals prevent stable appendage review and are superseded by the spatially separated Saurolophus scene."
+    },
+    "assets/dinosaurs/gallimimus-bullatus-saltpan-coral-stripe-flock-ecology-imagegen-v1.png": {
+      "reason": "The visually useful running frame duplicates the retained lake-flock action role, while lifted and perspective-compressed feet and hands do not clear the revised count gate."
+    },
+    "assets/dinosaurs/gallimimus-bullatus-gypsum-black-lemon-pinspot-flock-ecology-imagegen-v1.png": {
+      "reason": "The black, lemon, cyan, and violet combination is too neon for the habitat-driven palette, and water-splash motion leaves foot and hand anatomy less stable than the new wet-season variant."
     }
   }
 }
