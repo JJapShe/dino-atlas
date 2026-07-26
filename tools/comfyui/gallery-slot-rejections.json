@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-26-richness-six-slot-batch-5",
+  "reviewBatch": "2026-07-26-richness-six-slot-batch-6",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -79,6 +79,15 @@
     },
     "assets/dinosaurs/kronosaurus-queenslandicus-openwater-turn-ecology-imagegen-v2.png": {
       "reason": "Overlapping posterior appendages prevent a stable count of exactly four flippers and one tail."
+    },
+    "assets/dinosaurs/pteranodon-longiceps-chalk-cliff-glide-imagegen-v1.png": {
+      "reason": "The crest rises like a vertical sword instead of a low posterior P. longiceps crest, and wrist digits read as detached appendages."
+    },
+    "assets/dinosaurs/pteranodon-longiceps-violet-coral-wing-pattern-imagegen-v1.png": {
+      "reason": "Folded wing membranes and limb geometry duplicate into an unstable count, while the crest is too upright."
+    },
+    "assets/dinosaurs/pteranodon-longiceps-seaway-fish-dip-ecology-imagegen-v1.png": {
+      "reason": "A near-vertical crest and overlapping wrist, hindlimb, and membrane structures fail stable two-wing and two-hindlimb review."
     }
   }
 }

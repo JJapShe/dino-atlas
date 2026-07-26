@@ -18,6 +18,15 @@
 
 ## Current Completed Step
 
+- `Six-image richness batch 6: Pteranodon crest and limb-count rebuild 2026-07-26`
+  - Rebuilt `Pteranodon longiceps` from three anatomy-unstable legacy images to six approved roles: Western Interior Seaway representative glide, dorsal color-pattern banking view, grounded chalk-ledge stance, ventral anatomy banking view, post-capture fish-carry ecology, and spatially separated adult/subadult glide.
+  - Kept a consistent slate-gray, ochre-crest, teal-throat, cream-underside, and blue-gray-wing phenotype while changing camera angle, pose, habitat framing, and role.
+  - Original-size full-frame and isolated beak, crest, wing, and hindlimb crops confirmed one long low posteriorly swept crest, a toothless beak, exactly two fourth-finger-supported wings, exactly two hind legs, and one very short tail or a safely hidden tail on every visible animal.
+  - Moved the former chalk-cliff glide, violet-coral pattern, and fish-dip ecology files to `diagnostic only`: their crests are too vertical, and their wrist, hindlimb, or membrane overlaps do not support stable appendage counts. The 8792 review server now hides all three with HTTP 410.
+  - The fish scene shows post-capture transport rather than asserting a debated surface-strike method. The two-animal image is labeled adult/subadult comparison only and does not claim sex, parenting, or family behavior.
+  - Literature gates use Bennett 1994 for `P. longiceps` systematics, Bennett 1993 for growth-stage context, Elgin et al. 2011 for the broader ankle-attached pterosaur wing membrane model, and Hone et al. 2018 for fish ecology and shark interaction evidence.
+  - Validation: `app.js` syntax and strict gallery validation pass with 132 taxa, 498 target/assigned/approved slots, 18 taxa at the six-image published target, 234 remaining richness generation slots, 29 rejected sources, and every structural error count at 0. Static scan found 1455 declared asset refs with 0 real missing paths. The 8792 API exposes exactly six Pteranodon images out of 851 visible files; all six return HTTP 200 with `no-store`, while the three diagnostics return HTTP 410. Browser QA renders all six cards without horizontal overflow at 1280x720 and 390x844, fits the representative fullscreen image and caption without overlap, and reports 0 warnings or errors.
+
 - `Six-image richness batch 5: Kronosaurus tail correction and role rebuild 2026-07-26`
   - Raised `Kronosaurus queenslandicus` from three to six approved slots while replacing two previously approved images that fail the stricter one-tail and four-paddle gate.
   - The final role set balances a giant-skull lateral representative, a corrected bottlegreen/ivory ocelli pattern, a cold shell-shelf habitat cruise, a high-oblique four-paddle identity view, a dawn non-contact turtle approach, and a spatially separated adult/subadult depth comparison.

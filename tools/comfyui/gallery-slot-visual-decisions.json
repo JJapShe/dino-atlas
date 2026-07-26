@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "generatedAt": "2026-07-26T05:13:46.226Z",
-  "reviewBatch": "2026-07-26-richness-six-slot-batch-5",
-  "reviewMethod": "Original-size full-frame inspection plus isolated skull, four-paddle, and single-tail crops",
-  "targetSlots": 495,
+  "reviewBatch": "2026-07-26-richness-six-slot-batch-6",
+  "reviewMethod": "Original-size full-frame inspection plus isolated beak, crest, two-wing, and two-hindlimb crops",
+  "targetSlots": 498,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -1583,30 +1583,57 @@
     "pteranodon-longiceps": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/pteranodon-longiceps-chalk-cliff-glide-imagegen-v1.png",
+        "source": "assets/dinosaurs/pteranodon-longiceps-western-seaway-glide-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "One adult preserves a closed toothless beak, low posterior crest, two complete wings, two separated hind legs, and one short pelvis-origin tail.",
+        "reviewMethod": "Original-size full-frame inspection plus isolated beak, crest, two-wing, and two-hindlimb crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-6",
+        "reviewedAt": "2026-07-26T05:41:46.512Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/pteranodon-longiceps-violet-coral-wing-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/pteranodon-longiceps-tidal-lagoon-dorsal-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Dorsal lagoon view keeps the same slate-ochre-teal phenotype while exposing two wings, two hind legs, and one short tail without overlap.",
+        "reviewMethod": "Original-size full-frame inspection plus isolated beak, crest, two-wing, and two-hindlimb crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-6",
+        "reviewedAt": "2026-07-26T05:41:46.512Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/pteranodon-longiceps-seaway-fish-dip-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/pteranodon-longiceps-chalk-ledge-quadrupedal-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Chalk-ledge posture shows exactly two wing forelimbs and two hind legs at four separate ground contacts, with compact folded membranes.",
+        "reviewMethod": "Original-size full-frame inspection plus isolated beak, crest, two-wing, and two-hindlimb crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-6",
+        "reviewedAt": "2026-07-26T05:41:46.512Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/pteranodon-longiceps-ventral-bank-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "Ventral bank isolates two fourth-finger wing membranes and two hind legs; the extremely short tail is fully hidden with no duplicate projection.",
+        "reviewMethod": "Original-size full-frame inspection plus isolated beak, crest, two-wing, and two-hindlimb crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-6",
+        "reviewedAt": "2026-07-26T05:41:46.512Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/pteranodon-longiceps-seaway-fish-carry-ecology-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "Non-graphic fish carry keeps two wings and two hind legs readable and avoids depicting a disputed capture technique.",
+        "reviewMethod": "Original-size full-frame inspection plus isolated beak, crest, two-wing, and two-hindlimb crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-6",
+        "reviewedAt": "2026-07-26T05:41:46.512Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/pteranodon-longiceps-adult-subadult-separated-glide-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "Separated adult and subadult each preserve exactly two wings and two hind legs; wording does not infer sex, care, or family behavior.",
+        "reviewMethod": "Original-size full-frame inspection plus isolated beak, crest, two-wing, and two-hindlimb crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-6",
+        "reviewedAt": "2026-07-26T05:41:46.512Z"
       }
     },
     "quetzalcoatlus-northropi": {
@@ -4803,6 +4830,15 @@
     },
     "assets/dinosaurs/kronosaurus-queenslandicus-openwater-turn-ecology-imagegen-v2.png": {
       "reason": "Overlapping posterior appendages prevent a stable count of exactly four flippers and one tail."
+    },
+    "assets/dinosaurs/pteranodon-longiceps-chalk-cliff-glide-imagegen-v1.png": {
+      "reason": "The crest rises like a vertical sword instead of a low posterior P. longiceps crest, and wrist digits read as detached appendages."
+    },
+    "assets/dinosaurs/pteranodon-longiceps-violet-coral-wing-pattern-imagegen-v1.png": {
+      "reason": "Folded wing membranes and limb geometry duplicate into an unstable count, while the crest is too upright."
+    },
+    "assets/dinosaurs/pteranodon-longiceps-seaway-fish-dip-ecology-imagegen-v1.png": {
+      "reason": "A near-vertical crest and overlapping wrist, hindlimb, and membrane structures fail stable two-wing and two-hindlimb review."
     }
   }
 }
