@@ -18,6 +18,14 @@
 
 ## Current Completed Step
 
+- `Six-image richness batch 10: Dryosaurus compact-neck and five-finger rebuild 2026-07-26`
+  - Raised `Dryosaurus altus` from three to six approved gallery slots and replaced every previously published role with a new anatomy-gated image.
+  - The final role set balances a compact-neck five-finger representative, a charcoal/teal/rust point-bar pattern variant, a low seasonal-channel fern-browsing habitat, a bright five-finger/three-main-toe anatomy reference, a channel-separated Allosaurus coexistence scene, and a predator-free post-fire tail-balance pivot.
+  - Original-size full frames and isolated head, both-hand, hind-foot, tail, and secondary-animal crops confirm exactly two small forelimbs with five digits on each readable hand, two long hind limbs with three main weight-bearing toes, and one complete pelvis-origin tail on the single-animal frames. The coexistence image keeps both species fully separated by a broad water corridor and makes no attack or pursuit claim.
+  - Demoted all fourteen legacy assets because their primary animals drift toward long-necked ornithomimids or bird-headed runners, their hand and foot digits are ambiguous, their chase scenes repeat or overlap bodies, or direct injury contact prevents stable review. The files remain archived but are rejected from 8792.
+  - Literature gates use Carpenter and Galton 2018 for the `D. altus`/`D. elderae` split and the shorter, taller anterior cervicals of `D. altus`; Gilmore 1925 is retained only for broad historical dryosaur cues because its complete specimen is now `D. elderae`; Butler et al. 2008 supports the three-main-toe dryosaurid foot gate.
+  - Validation: `app.js` syntax, both decision JSON parses, and the strict gallery-slot build pass with 132 taxa, 509 target/assigned/approved slots, 22 taxa at the six-image published target, 233 remaining richness generation slots, 82 rejected sources, and every structural error count at 0. Static scan found 1481 declared asset refs with 0 real missing paths. The 8792 API exposes all six new Dryosaurus files among 824 visible files total; every new asset returns HTTP 200 with `no-store`, while all fourteen demoted files return HTTP 410. Browser QA loads all six filtered cards, keeps the fullscreen representative and captions separate at 1280x720 and 390x844, has no horizontal overflow in either viewport, and reports 0 console errors.
+
 - `Six-image richness batch 9: Allosaurus low-horn and three-finger rebuild 2026-07-26`
   - Raised `Allosaurus fragilis` from three to six approved gallery slots and replaced every previously published role with a new anatomy-gated image.
   - The final role set balances a Morrison low-horn representative, a corrected-hand petrol/violet/cream point-bar pattern, a misty trackway woodland habitat, a close three-finger anatomy view, a channel-separated Stegosaurus coexistence scene, and a spatially separated adult/subadult growth comparison.

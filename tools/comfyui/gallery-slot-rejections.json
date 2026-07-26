@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-26-richness-six-slot-batch-9",
+  "reviewBatch": "2026-07-26-richness-six-slot-batch-10",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -205,6 +205,48 @@
     },
     "assets/dinosaurs/allosaurus-fragilis-subtlebrow-imagegen-v2.png": {
       "reason": "The head and torso drift toward Tyrannosaurus and both three-finger hands are not independently readable."
+    },
+    "assets/dinosaurs/dryosaurus-altus-beaked-ornithopod-imagegen-v1.png": {
+      "reason": "The long narrow neck, generic head, and weak hand and foot topology fail the revised D. altus species gate."
+    },
+    "assets/dinosaurs/dryosaurus-altus-burnt-floodplain-blue-pinstripe-ecology-imagegen-v1.png": {
+      "reason": "Repeated long-necked runners and small blurred background bodies prevent stable species and appendage review."
+    },
+    "assets/dinosaurs/dryosaurus-altus-ceratosaurus-escape-ecology-imagegen-v1.png": {
+      "reason": "The prey drifts toward a long-necked ornithomimid and the repeated chase composition obscures hands and feet."
+    },
+    "assets/dinosaurs/dryosaurus-altus-ceratosaurus-fern-sprint-defense-ecology-imagegen-v1.png": {
+      "reason": "The swan-like neck, bird-shaped head, and pursuit pose fail the compact D. altus and countable-hand gate."
+    },
+    "assets/dinosaurs/dryosaurus-altus-marshosaurus-escape-ecology-imagegen-v1.png": {
+      "reason": "Long-necked prey drift and pursuit dust make hand, foot, and species identity too unstable for a final slot."
+    },
+    "assets/dinosaurs/dryosaurus-altus-marshosaurus-fern-bank-dodge-ecology-imagegen-v1.png": {
+      "reason": "The prey reads as a generic long-necked runner and the predator chase duplicates a lower-information role."
+    },
+    "assets/dinosaurs/dryosaurus-altus-marshosaurus-kickback-defense-ecology-imagegen-v1.png": {
+      "reason": "Direct injury contact, overlapping limbs, and unstable predator-prey geometry fail the non-contact anatomy gate."
+    },
+    "assets/dinosaurs/dryosaurus-altus-morrison-ecology-imagegen-v1.png": {
+      "reason": "A crowded repeated-brown scene leaves the primary head, hands, and feet too generic for the revised species gate."
+    },
+    "assets/dinosaurs/dryosaurus-altus-moss-ochre-pattern-imagegen-v1.png": {
+      "reason": "The long neck, generic ornithopod head, and ambiguous digits fail the revised representative body lock."
+    },
+    "assets/dinosaurs/dryosaurus-altus-ornitholestes-defensive-sidestep-ecology-imagegen-v1.png": {
+      "reason": "The long-necked prey and repeated chase framing prevent stable D. altus hand, foot, and tail review."
+    },
+    "assets/dinosaurs/dryosaurus-altus-ornitholestes-escape-ecology-imagegen-v1.png": {
+      "reason": "The prey has ornithomimid-like neck and head proportions, while pursuit motion lowers appendage confidence."
+    },
+    "assets/dinosaurs/dryosaurus-altus-oxbow-reflection-periwinkle-pistachio-pinspot-ecology-imagegen-v1.png": {
+      "reason": "The colorful animal still reads as an ornithomimid with a long neck and bird-like head rather than D. altus."
+    },
+    "assets/dinosaurs/dryosaurus-altus-upland-seep-graphite-turquoise-ocelli-ecology-imagegen-v1.png": {
+      "reason": "The ostrich-like neck and head plus uncertain hand count override the otherwise useful habitat and palette."
+    },
+    "assets/dinosaurs/dryosaurus-altus-upland-seep-periwinkle-pistachio-reflection-ecology-imagegen-v1.png": {
+      "reason": "The very long neck, bird-like head, and ambiguous hand and foot digits fail the revised D. altus identity gate."
     }
   }
 }

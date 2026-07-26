@@ -3457,7 +3457,7 @@ window.gallerySlotAssignments = {
   ],
   "dryosaurus-altus": [
     {
-      "source": "assets/dinosaurs/dryosaurus-altus-beaked-ornithopod-imagegen-v1.png",
+      "source": "assets/dinosaurs/dryosaurus-altus-shortneck-fivefinger-representative-imagegen-v1.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
@@ -3465,7 +3465,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/dryosaurus-altus-moss-ochre-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/dryosaurus-altus-pointbar-charcoal-teal-chevron-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -3473,9 +3473,33 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/dryosaurus-altus-morrison-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/dryosaurus-altus-seasonal-channel-fern-browse-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/dryosaurus-altus-fivefinger-three-toe-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/dryosaurus-altus-allosaurus-braided-channel-distance-ecology-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/dryosaurus-altus-burnt-floodplain-tail-balance-pivot-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
