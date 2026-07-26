@@ -18,6 +18,14 @@
 
 ## Current Completed Step
 
+- `Six-image richness batch 4: Mosasaurus full-gallery rebuild 2026-07-26`
+  - Raised `Mosasaurus hoffmannii` from three to six approved gallery slots using six all-new assets rather than promoting the four structurally inconsistent legacy images.
+  - The new role set balances an open-water lateral representative, an indigo/opal dorsal-oblique pattern view, a sunlit chalk-channel habitat view, a four-paddle identity view, a dynamic but non-contact fish-school turn, and a spatially separated adult/juvenile depth comparison.
+  - Original-size full-frame and isolated crop review confirmed exactly four paddle limbs per animal, one continuous tail, a robust toothed mosasaurid skull, no dorsal fin, and a ventrally bent hypocercal tail with a longer lower lobe. The growth frame does not assert parental care.
+  - Moved the former chalk-sea broadside, petrol-opal pattern, fish-pursuit, and reef-cruise files to `diagnostic only` because their tails read as symmetric crescents, upper-heavy crescents, malformed ends, or plain tapers; the old fish-pursuit skull also drifts too narrow and crocodile-like.
+  - Literature gates use Street and Caldwell 2017 for `M. hoffmannii` cranial anatomy and Lindgren et al. 2013 for the broader derived-mosasaur hypocercal tail reconstruction. The latter is treated as a clade-level soft-tissue guide, not direct `M. hoffmannii` preservation.
+  - Validation: `app.js` syntax and strict gallery validation pass with 132 taxa, 492 target/assigned/approved slots, 16 taxa at the six-image published target, 239 remaining richness generation slots, and every structural error count at 0. Static scan found 1445 declared asset refs with 0 real missing paths. The 8792 review API exposes exactly six Mosasaurus images and hides all four diagnostic legacy files; every new image returns HTTP 200 with `no-store` and renders at 1536x1024 natural size. Fullscreen review fits without image/caption overlap at both 1280x720 and 390x844; the mobile overlay, stage, caption, and document remain exactly 390 px wide with no horizontal overflow.
+
 - `Six-image richness batch 3: Tarbosaurus anatomy, interaction, and growth 2026-07-26`
   - Raised `Tarbosaurus bataar` from three to six approved gallery slots and reduced three generation-required richness slots.
   - Added a shallow-channel identity walk with both tiny two-fingered hands readable, a wide non-contact river standoff with three spatially separated `Saurolophus angustirostris`, and a separated adult/juvenile growth comparison that does not assert parental care.

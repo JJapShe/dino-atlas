@@ -3,7 +3,7 @@
   "generatedAt": "2026-07-17T04:56:32.666Z",
   "reviewBatch": "2026-07-17-slot-audit",
   "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-  "targetSlots": 489,
+  "targetSlots": 492,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -1958,30 +1958,57 @@
     "mosasaurus-hoffmannii": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/mosasaurus-hoffmannii-chalk-sea-broadside-imagegen-v1.png",
+        "source": "assets/dinosaurs/mosasaurus-hoffmannii-chalk-escarpment-broadside-representative-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Robust skull, exactly four separate paddles, complete body, and asymmetric bilobed tail passed original-size review.",
+        "reviewMethod": "Original-size full-frame inspection plus isolated skull, four-paddle, and hypocercal-tail crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-4",
+        "reviewedAt": "2026-07-26T04:45:49.160Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/mosasaurus-hoffmannii-petrol-opal-pinstripe-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/mosasaurus-hoffmannii-indigo-opal-chain-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Distinct indigo-opal phenotype retains the same skull, exact four-paddle plan, and lower-lobe-dominant asymmetric tail.",
+        "reviewMethod": "Original-size full-frame inspection plus isolated skull, four-paddle, and hypocercal-tail crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-4",
+        "reviewedAt": "2026-07-26T04:45:49.160Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/mosasaurus-hoffmannii-chalk-reef-cruise-ecology-imagegen-v2.png",
+        "source": "assets/dinosaurs/mosasaurus-hoffmannii-sunlit-chalk-channel-habitat-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Low-angle chalk-channel habitat view keeps the full animal, four countable paddles, and complete asymmetric tail in frame.",
+        "reviewMethod": "Original-size full-frame inspection plus isolated skull, four-paddle, and hypocercal-tail crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-4",
+        "reviewedAt": "2026-07-26T04:45:49.160Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/mosasaurus-hoffmannii-four-paddle-hypocercal-identity-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "Three-quarter anatomy view shows two fore paddles, two hind paddles, a robust skull, and an uninterrupted hypocercal tail.",
+        "reviewMethod": "Original-size full-frame inspection plus isolated skull, four-paddle, and hypocercal-tail crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-4",
+        "reviewedAt": "2026-07-26T04:45:49.160Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/mosasaurus-hoffmannii-chalk-fish-turn-interaction-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "Non-contact fish pursuit preserves one Mosasaurus, four separate paddles, one tail, and a spatially separated prey school.",
+        "reviewMethod": "Original-size full-frame inspection plus isolated skull, four-paddle, and hypocercal-tail crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-4",
+        "reviewedAt": "2026-07-26T04:45:49.160Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/mosasaurus-hoffmannii-adult-juvenile-depth-growth-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Separated adult and juvenile each show four paddles and one complete tail; the caption avoids a parental-care claim.",
+        "reviewMethod": "Original-size full-frame inspection plus isolated skull, four-paddle, and hypocercal-tail crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-4",
+        "reviewedAt": "2026-07-26T04:45:49.160Z"
       }
     },
     "apatosaurus-ajax": {
