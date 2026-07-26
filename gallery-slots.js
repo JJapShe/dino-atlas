@@ -3053,7 +3053,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/triceratops-horridus-charcoal-oxblood-face-pattern-imagegen-v2.png",
+      "source": "assets/dinosaurs/triceratops-horridus-pointbar-petrol-rust-frill-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -3069,9 +3069,25 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/triceratops-horridus-toe-claw-matte-i2i-v23.png",
+      "source": "assets/dinosaurs/triceratops-horridus-hell-creek-adult-frill-feet-anatomy-imagegen-v2.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/triceratops-horridus-misty-channel-tyrannosaurus-standoff-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/triceratops-horridus-adult-subadult-separated-growth-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"

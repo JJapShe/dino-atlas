@@ -18,6 +18,15 @@
 
 ## Current Completed Step
 
+- `Six-image richness batch 7: Triceratops anti-rhino anatomy rebuild 2026-07-26`
+  - Raised `Triceratops horridus` from four to six approved gallery slots and replaced the two weakest published roles.
+  - The final role set balances the cool blue-gray v51 representative, a high-oblique charcoal/petrol/teal body with broad rust-ochre frill rays, the existing meadow habitat scene, a low three-quarter adult-frill and foot anatomy view, a wide non-contact Tyrannosaurus channel standoff, and a spatially separated adult/subadult growth comparison.
+  - Original-size full frames and isolated skull, frill, forefoot, hindfoot, predator, and growth-stage crops confirmed exactly two long brow horns and one short nasal horn, a solid skull-attached frill, four legs and one tail per Triceratops, five semi-supinated forefoot digits with I-III dominant and IV-V reduced where readable, and four hind-foot digits.
+  - Demoted the old charcoal/oxblood pattern for a rhinoceros-like barrel body and hoof-like three-part feet, and demoted toe-claw v23 because its five-digit improvement is unclear and its tan broadside role is redundant.
+  - Demoted both direct Tyrannosaurus-defense images because the brow horn visibly penetrates the predator and blood is present. The replacement keeps a water channel and open background between both animals; the growth comparison likewise separates both Triceratops with a dry channel and makes no sex, parenting, or family claim.
+  - Literature gates use Horner and Goodwin 2006 for ontogenetic brow-horn reorientation and frill-margin flattening, Scannella et al. 2014 for the lower/earlier Hell Creek placement of `T. horridus`, Farke et al. 2009 for restrained combat context, and Fujiwara 2009 for the semi-supinated five-digit manus with robust I-III and reduced IV-V.
+  - Validation: `app.js` syntax and strict gallery validation pass with 132 taxa, 500 target/assigned/approved slots, 19 taxa at the six-image published target, 234 remaining richness generation slots, 33 rejected sources, and every structural error count at 0. Static scan found 1459 declared asset refs with 0 real missing paths. The 8792 API exposes 46 reviewable Triceratops files among 851 visible files; all four new assets return HTTP 200 with `no-store`, while the four newly demoted diagnostics return HTTP 410. Browser QA renders all four new cards at 1536x1024 natural size, keeps the fullscreen image and caption separate at 1280x720 and 390x844, has no horizontal overflow, and reports 0 console messages.
+
 - `Six-image richness batch 6: Pteranodon crest and limb-count rebuild 2026-07-26`
   - Rebuilt `Pteranodon longiceps` from three anatomy-unstable legacy images to six approved roles: Western Interior Seaway representative glide, dorsal color-pattern banking view, grounded chalk-ledge stance, ventral anatomy banking view, post-capture fish-carry ecology, and spatially separated adult/subadult glide.
   - Kept a consistent slate-gray, ochre-crest, teal-throat, cream-underside, and blue-gray-wing phenotype while changing camera angle, pose, habitat framing, and role.

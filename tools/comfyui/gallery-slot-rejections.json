@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-26-richness-six-slot-batch-6",
+  "reviewBatch": "2026-07-26-richness-six-slot-batch-7",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -88,6 +88,18 @@
     },
     "assets/dinosaurs/pteranodon-longiceps-seaway-fish-dip-ecology-imagegen-v1.png": {
       "reason": "A near-vertical crest and overlapping wrist, hindlimb, and membrane structures fail stable two-wing and two-hindlimb review."
+    },
+    "assets/dinosaurs/triceratops-horridus-charcoal-oxblood-face-pattern-imagegen-v2.png": {
+      "reason": "The high barrel torso drifts toward a rhinoceros silhouette, and the simplified feet read as three-part hoof clusters rather than a stable ceratopsian manus and pes."
+    },
+    "assets/dinosaurs/triceratops-horridus-toe-claw-matte-i2i-v23.png": {
+      "reason": "The localized matte-claw edit does not clearly improve the five-digit forefoot, while its flat tan palette and bead-like adult frill rim duplicate a lower-information anatomy role."
+    },
+    "assets/dinosaurs/triceratops-horridus-tyrannosaurus-horn-defense-ecology-imagegen-v1.png": {
+      "reason": "A brow horn visibly penetrates the Tyrannosaurus chest with blood and merged contact geometry, failing the non-contact, non-graphic interaction gate."
+    },
+    "assets/dinosaurs/triceratops-horridus-tyrannosaurus-horn-counterattack-ecology-imagegen-v1.png": {
+      "reason": "The storm scene repeats horn penetration and blood, while the predator contact and tail silhouette are too entangled for stable interaction review."
     }
   }
 }

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-26T05:13:46.226Z",
-  "reviewBatch": "2026-07-26-richness-six-slot-batch-6",
-  "reviewMethod": "Original-size full-frame inspection plus isolated beak, crest, two-wing, and two-hindlimb crops",
-  "targetSlots": 498,
+  "generatedAt": "2026-07-26T06:19:15.675Z",
+  "reviewBatch": "2026-07-26-richness-six-slot-batch-7",
+  "reviewMethod": "Original-size full-frame inspection plus isolated skull, adult-frill, forefoot, hindfoot, predator, and growth-stage crops",
+  "targetSlots": 500,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -3411,36 +3411,54 @@
         "source": "assets/dinosaurs/triceratops-horridus-imagegen-v51-source-candidate.png",
         "role": "representative",
         "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reviewMethod": "Original-size full-frame inspection plus isolated skull, adult-frill, forefoot, hindfoot, predator, and growth-stage crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-7",
+        "reviewedAt": "2026-07-26T06:19:15.675Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/triceratops-horridus-charcoal-oxblood-face-pattern-imagegen-v2.png",
+        "source": "assets/dinosaurs/triceratops-horridus-pointbar-petrol-rust-frill-pattern-imagegen-v2.png",
         "role": "color-pattern",
         "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reviewMethod": "Original-size full-frame inspection plus isolated skull, adult-frill, forefoot, hindfoot, predator, and growth-stage crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-7",
+        "reviewedAt": "2026-07-26T06:19:15.675Z"
       },
       "3": {
         "status": "approved",
         "source": "assets/dinosaurs/triceratops-horridus-meadow-frill-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
         "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reviewMethod": "Original-size full-frame inspection plus isolated skull, adult-frill, forefoot, hindfoot, predator, and growth-stage crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-7",
+        "reviewedAt": "2026-07-26T06:19:15.675Z"
       },
       "4": {
         "status": "approved",
-        "source": "assets/dinosaurs/triceratops-horridus-toe-claw-matte-i2i-v23.png",
+        "source": "assets/dinosaurs/triceratops-horridus-hell-creek-adult-frill-feet-anatomy-imagegen-v2.png",
         "role": "identity-anatomy",
         "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reviewMethod": "Original-size full-frame inspection plus isolated skull, adult-frill, forefoot, hindfoot, predator, and growth-stage crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-7",
+        "reviewedAt": "2026-07-26T06:19:15.675Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/triceratops-horridus-misty-channel-tyrannosaurus-standoff-ecology-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
+        "reviewMethod": "Original-size full-frame inspection plus isolated skull, adult-frill, forefoot, hindfoot, predator, and growth-stage crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-7",
+        "reviewedAt": "2026-07-26T06:19:15.675Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/triceratops-horridus-adult-subadult-separated-growth-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
+        "reviewMethod": "Original-size full-frame inspection plus isolated skull, adult-frill, forefoot, hindfoot, predator, and growth-stage crops",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-7",
+        "reviewedAt": "2026-07-26T06:19:15.675Z"
       }
     },
     "torosaurus-latus": {
@@ -4839,6 +4857,18 @@
     },
     "assets/dinosaurs/pteranodon-longiceps-seaway-fish-dip-ecology-imagegen-v1.png": {
       "reason": "A near-vertical crest and overlapping wrist, hindlimb, and membrane structures fail stable two-wing and two-hindlimb review."
+    },
+    "assets/dinosaurs/triceratops-horridus-charcoal-oxblood-face-pattern-imagegen-v2.png": {
+      "reason": "The high barrel torso drifts toward a rhinoceros silhouette, and the simplified feet read as three-part hoof clusters rather than a stable ceratopsian manus and pes."
+    },
+    "assets/dinosaurs/triceratops-horridus-toe-claw-matte-i2i-v23.png": {
+      "reason": "The localized matte-claw edit does not clearly improve the five-digit forefoot, while its flat tan palette and bead-like adult frill rim duplicate a lower-information anatomy role."
+    },
+    "assets/dinosaurs/triceratops-horridus-tyrannosaurus-horn-defense-ecology-imagegen-v1.png": {
+      "reason": "A brow horn visibly penetrates the Tyrannosaurus chest with blood and merged contact geometry, failing the non-contact, non-graphic interaction gate."
+    },
+    "assets/dinosaurs/triceratops-horridus-tyrannosaurus-horn-counterattack-ecology-imagegen-v1.png": {
+      "reason": "The storm scene repeats horn penetration and blood, while the predator contact and tail silhouette are too entangled for stable interaction review."
     }
   }
 }
