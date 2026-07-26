@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-26T14:38:24.904Z",
-  "reviewBatch": "2026-07-26-richness-six-slot-batch-15",
-  "reviewMethod": "Velociraptor primary-source skull, postcrania, quill-knob, and Djadokhta habitat gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, juvenile, and secondary-animal inspection",
-  "targetSlots": 519,
+  "generatedAt": "2026-07-26T15:20:39.744Z",
+  "reviewBatch": "2026-07-26-richness-six-slot-batch-16",
+  "reviewMethod": "Parasaurolophus primary-description skull and manus, modern crest-neck, Dinosaur Park habitat, appendage-count, and cautious growth/co-occurrence gate plus original-size full-frame and isolated head, hand, foot, tail, juvenile, and secondary-animal inspection",
+  "targetSlots": 522,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -4164,30 +4164,57 @@
     "parasaurolophus-walkeri": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/parasaurolophus-walkeri-imagegen-v1-source-candidate.png",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-16",
+        "reviewedAt": "2026-07-26T15:20:39.744Z",
+        "source": "assets/dinosaurs/parasaurolophus-walkeri-dinosaurpark-lowcrest-mittenmanus-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The corrected representative passes the broad closed duckbill, one stout low long crest, thick neck, deep body, two mitten-manus forelimbs, two three-toed hind limbs, and one complete tail gates.",
+        "reviewMethod": "Parks skull and manus plus modern neck gate; original-size full frame and isolated crest, both forehands, both hind feet, and tail inspection"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/parasaurolophus-walkeri-oliveband-imagegen-v2.png",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-16",
+        "reviewedAt": "2026-07-26T15:20:39.744Z",
+        "source": "assets/dinosaurs/parasaurolophus-walkeri-petrol-celadon-russet-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing petrol, celadon, charcoal-chevron, and russet variant is visibly distinct while retaining the same low crest, thick neck, body proportions, four-limb count, corrected mitten forehands, and single tail.",
+        "reviewMethod": "Species and palette gate plus original-size full frame and isolated crest, forehand, hind-foot, and tail inspection"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/parasaurolophus-walkeri-canyonwash-highangle-herd-pattern-ecology-imagegen-v1.png",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-16",
+        "reviewedAt": "2026-07-26T15:20:39.744Z",
+        "source": "assets/dinosaurs/parasaurolophus-walkeri-abandoned-meander-browse-habitat-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The high-oblique browse scene places one intact animal in a low-gradient abandoned meander, wet silt, horsetail, fern, shrub, and conifer coastal plain without reusing the dry canyon or portrait composition.",
+        "reviewMethod": "Dinosaur Park coastal-plain gate plus original-size whole-animal, crest, four-limb, and single-tail inspection"
+      },
+      "4": {
+        "status": "approved",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-16",
+        "reviewedAt": "2026-07-26T15:20:39.744Z",
+        "source": "assets/dinosaurs/parasaurolophus-walkeri-lowcamera-mittenmanus-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "The bright low-camera frame gives the clearest low crest, thick neck, two compact mitten-like forehand pads, two separate three-main-toe hind feet, and one complete tail in the set.",
+        "reviewMethod": "Parks skull and both-manus gate plus original-size full frame and isolated head, both forehands, both hind feet, and tail inspection"
+      },
+      "5": {
+        "status": "approved",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-16",
+        "reviewedAt": "2026-07-26T15:20:39.744Z",
+        "source": "assets/dinosaurs/parasaurolophus-walkeri-gorgosaurus-channel-standoff-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "One Parasaurolophus and one distant Gorgosaurus remain fully separated by a broad channel in a non-contact observation scene; both bodies retain independent limb and tail silhouettes without an attack claim.",
+        "reviewMethod": "Dinosaur Park co-occurrence caution plus original-size primary crest, limbs, tail, channel separation, and isolated secondary-animal inspection"
+      },
+      "6": {
+        "status": "approved",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-16",
+        "reviewedAt": "2026-07-26T15:20:39.744Z",
+        "source": "assets/dinosaurs/parasaurolophus-walkeri-adult-juvenile-pointbar-growth-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The separated adult and smaller juvenile provide a cautious genus-level crest-growth comparison with two independent bodies, four limbs and one tail per animal, and no family, parenting, sex, or herd claim.",
+        "reviewMethod": "Parasaurolophus ontogeny caution plus original-size adult, juvenile, crest-stage, limb-count, and tail-separation inspection"
       }
     },
     "saurolophus-angustirostris": {
@@ -4942,27 +4969,6 @@
     }
   },
   "rejectedSources": {
-    "assets/dinosaurs/ankylosaurus-magniventris-bilobed-tailclub-imagegen-v45.png": {
-      "reason": "Projecting skull horns, repetitive cobblestone armor, and unstable club proportions fail the revised Ankylosaurus gate."
-    },
-    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v40-source-candidate.png": {
-      "reason": "Projecting skull corners and a smooth round-stone club fail the revised broad-skull and integrated-club gate."
-    },
-    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v43-source-candidate.png": {
-      "reason": "The tail terminus reads as two separated club balls and the torso armor is overly regular."
-    },
-    "assets/dinosaurs/ankylosaurus-magniventris-woodland-ecology-imagegen-v1.png": {
-      "reason": "A round-stone club and oversized repetitive torso bosses fail the revised anatomy gate."
-    },
-    "assets/dinosaurs/ankylosaurus-magniventris-moss-fen-bilobed-club-lichen-ecology-imagegen-v1.png": {
-      "reason": "Two giant separated club balls and a long lizard-like head fail the revised anatomy gate."
-    },
-    "assets/dinosaurs/ankylosaurus-magniventris-tyrannosaurus-tailclub-defense-ecology-imagegen-v1.png": {
-      "reason": "Direct injury contact plus unstable head and club anatomy fail the non-contact educational interaction gate."
-    },
-    "assets/dinosaurs/ankylosaurus-magniventris-tyrannosaurus-bilobed-club-strike-ecology-imagegen-v2.png": {
-      "reason": "The oversized twin-ball club and entangled impact geometry fail stable anatomy review."
-    },
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
     },
@@ -5061,6 +5067,27 @@
     },
     "assets/dinosaurs/triceratops-horridus-tyrannosaurus-horn-counterattack-ecology-imagegen-v1.png": {
       "reason": "The storm scene repeats horn penetration and blood, while the predator contact and tail silhouette are too entangled for stable interaction review."
+    },
+    "assets/dinosaurs/ankylosaurus-magniventris-bilobed-tailclub-imagegen-v45.png": {
+      "reason": "Projecting skull horns, repetitive cobblestone armor, and unstable club proportions fail the revised Ankylosaurus gate."
+    },
+    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v40-source-candidate.png": {
+      "reason": "Projecting skull corners and a smooth round-stone club fail the revised broad-skull and integrated-club gate."
+    },
+    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v43-source-candidate.png": {
+      "reason": "The tail terminus reads as two separated club balls and the torso armor is overly regular."
+    },
+    "assets/dinosaurs/ankylosaurus-magniventris-woodland-ecology-imagegen-v1.png": {
+      "reason": "A round-stone club and oversized repetitive torso bosses fail the revised anatomy gate."
+    },
+    "assets/dinosaurs/ankylosaurus-magniventris-moss-fen-bilobed-club-lichen-ecology-imagegen-v1.png": {
+      "reason": "Two giant separated club balls and a long lizard-like head fail the revised anatomy gate."
+    },
+    "assets/dinosaurs/ankylosaurus-magniventris-tyrannosaurus-tailclub-defense-ecology-imagegen-v1.png": {
+      "reason": "Direct injury contact plus unstable head and club anatomy fail the non-contact educational interaction gate."
+    },
+    "assets/dinosaurs/ankylosaurus-magniventris-tyrannosaurus-bilobed-club-strike-ecology-imagegen-v2.png": {
+      "reason": "The oversized twin-ball club and entangled impact geometry fail stable anatomy review."
     },
     "assets/dinosaurs/allosaurus-fragilis-apatosaurus-attack-ecology-imagegen-v1.png": {
       "reason": "Direct attack or chase geometry overlaps animals and obscures limb, hand, tail, or secondary-taxon counts; it is replaced by non-contact spatial coexistence."
@@ -5298,6 +5325,18 @@
     },
     "assets/dinosaurs/velociraptor-mongoliensis-pack-hunt-dune-chase-imagegen-v1.png": {
       "reason": "The unproven pack pursuit, motion-obscured feet, and repeated chase composition fail the revised anatomy and behavioral-caution gate."
+    },
+    "assets/dinosaurs/parasaurolophus-walkeri-imagegen-v1-source-candidate.png": {
+      "reason": "The former representative has a thin swan-like neck and a high hook-arched crest, so it fails the revised P. walkeri crest and neck gate."
+    },
+    "assets/dinosaurs/parasaurolophus-walkeri-oliveband-imagegen-v2.png": {
+      "reason": "The former pattern repeats the same thin-necked high-hook body and near-identical dry broadside composition instead of a stable P. walkeri variant."
+    },
+    "assets/dinosaurs/parasaurolophus-walkeri-canyonwash-highangle-herd-pattern-ecology-imagegen-v1.png": {
+      "reason": "The former habitat scene repeats dry canyon staging outside the wetter Dinosaur Park coastal-plain profile and multiplies swan-necked, high-crested animals with weak appendage detail."
+    },
+    "assets/dinosaurs/parasaurolophus-walkeri-ceratopsian-plain-imagegen-v2.png": {
+      "reason": "The former interaction uses an oversized upward-hooked crest, a thin neck, and generic ceratopsian scenery that does not clear the revised species-identity or cautious co-occurrence gate."
     }
   }
 }

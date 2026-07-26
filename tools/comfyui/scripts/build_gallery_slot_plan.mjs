@@ -90,6 +90,13 @@ const HABITATS = {
     light: "soft neutral daylight with restrained water reflection and no global desert-orange cast",
     backgroundPalette: ["#a58c69", "#607b74", "#4f604f"],
   },
+  "dinosaur-park-coastal-plain": {
+    substrate: "dark wet silt, broad point bars, low-gradient meandering channels, and abandoned channel margins",
+    vegetation: "horsetails, ferns, low broad-leaved angiosperm shrubs, and scattered conifers",
+    moisture: "humid marine-influenced coastal plain with seasonally active rivers",
+    light: "soft broken-cloud daylight with restrained cool water reflection and localized warm sunlight",
+    backgroundPalette: ["#566e65", "#84745d", "#4c5845"],
+  },
   "polar-forest": {
     substrate: "cool dark soil, seasonal frost, and damp leaf litter",
     vegetation: "high-latitude conifer and fern woodland",
@@ -337,6 +344,7 @@ function habitatFor(dino, route) {
   else if (dino.id === "suchomimus-tenerensis") key = "elrhaz-river-system";
   else if (dino.id === "gallimimus-bullatus") key = "nemegt-fluvial-floodplain";
   else if (dino.id === "velociraptor-mongoliensis") key = "gobi-arid";
+  else if (dino.id === "parasaurolophus-walkeri") key = "dinosaur-park-coastal-plain";
   else if (/marine|seaway|ocean|sea |pliosaur|plesiosaur|ichthyosaur|mosasaur|해양|바다|수중/.test(text)) key = "marine";
   else if (/polar|prince creek|alaska|high-latitude|극지|고위도/.test(text)) key = "polar-forest";
   else if (/gobi|djadokhta|nemegt|dune|desert|sandstone|사구|사막|고비/.test(text)) key = "gobi-arid";

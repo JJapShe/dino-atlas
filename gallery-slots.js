@@ -3721,27 +3721,51 @@ window.gallerySlotAssignments = {
   ],
   "parasaurolophus-walkeri": [
     {
-      "source": "assets/dinosaurs/parasaurolophus-walkeri-imagegen-v1-source-candidate.png",
+      "source": "assets/dinosaurs/parasaurolophus-walkeri-dinosaurpark-lowcrest-mittenmanus-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "dinosaur-park-coastal-plain",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/parasaurolophus-walkeri-oliveband-imagegen-v2.png",
+      "source": "assets/dinosaurs/parasaurolophus-walkeri-petrol-celadon-russet-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "dinosaur-park-coastal-plain",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/parasaurolophus-walkeri-canyonwash-highangle-herd-pattern-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/parasaurolophus-walkeri-abandoned-meander-browse-habitat-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "dinosaur-park-coastal-plain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/parasaurolophus-walkeri-lowcamera-mittenmanus-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "dinosaur-park-coastal-plain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/parasaurolophus-walkeri-gorgosaurus-channel-standoff-ecology-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "dinosaur-park-coastal-plain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/parasaurolophus-walkeri-adult-juvenile-pointbar-growth-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "dinosaur-park-coastal-plain",
       "expectedKind": "anatomy review"
     }
   ],

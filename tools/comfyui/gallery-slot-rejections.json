@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-26-richness-six-slot-batch-15",
+  "reviewBatch": "2026-07-26-richness-six-slot-batch-16",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -358,6 +358,18 @@
     },
     "assets/dinosaurs/velociraptor-mongoliensis-pack-hunt-dune-chase-imagegen-v1.png": {
       "reason": "The unproven pack pursuit, motion-obscured feet, and repeated chase composition fail the revised anatomy and behavioral-caution gate."
+    },
+    "assets/dinosaurs/parasaurolophus-walkeri-imagegen-v1-source-candidate.png": {
+      "reason": "The former representative has a thin swan-like neck and a high hook-arched crest, so it fails the revised P. walkeri crest and neck gate."
+    },
+    "assets/dinosaurs/parasaurolophus-walkeri-oliveband-imagegen-v2.png": {
+      "reason": "The former pattern repeats the same thin-necked high-hook body and near-identical dry broadside composition instead of a stable P. walkeri variant."
+    },
+    "assets/dinosaurs/parasaurolophus-walkeri-canyonwash-highangle-herd-pattern-ecology-imagegen-v1.png": {
+      "reason": "The former habitat scene repeats dry canyon staging outside the wetter Dinosaur Park coastal-plain profile and multiplies swan-necked, high-crested animals with weak appendage detail."
+    },
+    "assets/dinosaurs/parasaurolophus-walkeri-ceratopsian-plain-imagegen-v2.png": {
+      "reason": "The former interaction uses an oversized upward-hooked crest, a thin neck, and generic ceratopsian scenery that does not clear the revised species-identity or cautious co-occurrence gate."
     }
   }
 }
