@@ -18,6 +18,14 @@
 
 ## Current Completed Step
 
+- `Six-image richness batch 2: role-diverse growth scenes and Brachiosaurus ecology 2026-07-26`
+  - Raised `Heterodontosaurus tucki`, `Sarahsaurus aurifontanalis`, `Brachiosaurus altithorax`, and `Gargoyleosaurus parkpinorum` to six approved gallery slots.
+  - Generated three role-distinct growth-stage scenes: misty floodplain Heterodontosaurus, seasonal-wash Sarahsaurus, and wet-woodland Gargoyleosaurus. Each scene keeps bodies spatially separated and verifies the required limb and single-tail counts at original size.
+  - Promoted two existing Brachiosaurus ecology images only below the representative: one single-animal conifer browsing interaction and one separated adult/juvenile defense scene. Both retain the high-shouldered body and longer forelimbs; their subtle nasal mound remains a reason not to use them as the representative.
+  - Did not promote the existing Gargoyleosaurus and Heterodontosaurus predator-defense alternatives because they duplicate already approved predator interaction roles.
+  - Rejected `sarahsaurus-aurifontanalis-dilophosaurus-hand-shove-defense-ecology-imagegen-v1.png` because multiple fingers become long therizinosaur-like scythe claws. Sarahsaurus generation now requires one enlarged robust thumb claw per hand with shorter remaining fingers.
+  - Primary osteology correction: Heterodontosaurus should retain relatively long forelimbs and a five-digit hand with I–III dominant and IV–V reduced/divergent; the previous small-simple-forelimb wording was removed.
+
 - `Six-image richness batch 1: six promotions plus Acrotholus generation 2026-07-26`
   - Added a minimum-six richness audit to `build_gallery_slot_plan.mjs`: current published target 481, full minimum-six target 793, candidate-review expansion slots 52, unregistered suggestions 16, and generation-required slots 244 after this batch.
   - Promoted sixth, role-distinct scenes for `Coelophysis bauri`, `Plateosaurus engelhardti`, `Bagualosaurus agudoensis`, `Efraasia minor`, `Ichthyosaurus communis`, and `Camptosaurus dispar` only after original-size limb, tail, separation, and non-graphic interaction checks.

@@ -70,6 +70,9 @@
     },
     "assets/dinosaurs/sarahsaurus-aurifontanalis-dilophosaurus-arroyo-block-defense-ecology-imagegen-v1.png": {
       "reason": "Oversized therizinosaur-like hand claws and a weak Dilophosaurus crest identity fail the interaction slot."
+    },
+    "assets/dinosaurs/sarahsaurus-aurifontanalis-dilophosaurus-hand-shove-defense-ecology-imagegen-v1.png": {
+      "reason": "Multiple fingers become long therizinosaur-like scythe claws, and the predator-defense composition duplicates an existing interaction role."
     }
   }
 }

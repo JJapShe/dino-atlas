@@ -3,7 +3,7 @@
   "generatedAt": "2026-07-17T04:56:32.666Z",
   "reviewBatch": "2026-07-17-slot-audit",
   "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-  "targetSlots": 472,
+  "targetSlots": 486,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -858,6 +858,15 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/heterodontosaurus-tucki-misty-floodplain-growth-stage-pair-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size review confirmed two spatially separated growth stages, each with two grounded hind legs, two lifted forelimbs, and one continuous tail; the misty floodplain composition does not duplicate either predator scene. Exact five-digit relative lengths remain anatomy-review detail below the representative.",
+        "reviewMethod": "built-in image generation followed by original-size identity, limb-count, five-digit hand, tail, separation, and role-diversity inspection plus primary osteology cross-check",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-2",
+        "reviewedAt": "2026-07-26T03:49:27.000Z"
       }
     },
     "allosaurus-fragilis": {
@@ -1283,6 +1292,15 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/sarahsaurus-aurifontanalis-seasonal-wash-growth-stage-pair-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size review confirmed separated adult and subadult bodies, two hind legs and two forelimbs per animal, one continuous tail each, and restrained hands without therizinosaur-like multiple scythe claws.",
+        "reviewMethod": "built-in image generation followed by original-size identity, limb-count, hand-claw, tail, separation, and role-diversity inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-2",
+        "reviewedAt": "2026-07-26T03:49:27.000Z"
       }
     },
     "bellusaurus-sui": {
@@ -2098,6 +2116,24 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/brachiosaurus-altithorax-conifer-browse-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "Original-size review confirmed one complete high-shouldered body, longer forelimbs, four pillar legs, and one continuous tail in a clear plant-browsing interaction; the nasal mound remains secondary, so this does not replace the representative.",
+        "reviewMethod": "original-size identity, limb-count, tail, high-shoulder, and role-diversity inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-2",
+        "reviewedAt": "2026-07-26T03:49:27.000Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/brachiosaurus-altithorax-allosaurus-juvenile-defense-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size review confirmed a high-shouldered four-legged adult, a separate smaller brachiosaur, one tail per herbivore, and a spatially separated Allosaurus with no contact or gore; retained below the representative because the adult nasal mound is subtle.",
+        "reviewMethod": "original-size identity, limb-count, tail, body-separation, predator-separation, and non-graphic interaction inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-2",
+        "reviewedAt": "2026-07-26T03:49:27.000Z"
       }
     },
     "stegosaurus-stenops": {
@@ -2306,6 +2342,15 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/gargoyleosaurus-parkpinorum-woodland-growth-stage-pair-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size review confirmed two separated growth stages, four legs and one non-clubbed tail per animal, low armor rows, and a wet woodland composition distinct from the two Allosaurus defense candidates.",
+        "reviewMethod": "built-in image generation followed by original-size identity, limb-count, tail-club exclusion, separation, and role-diversity inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-2",
+        "reviewedAt": "2026-07-26T03:49:27.000Z"
       }
     },
     "sauropelta-edwardsorum": {
@@ -4668,6 +4713,9 @@
     },
     "assets/dinosaurs/sarahsaurus-aurifontanalis-dilophosaurus-arroyo-block-defense-ecology-imagegen-v1.png": {
       "reason": "Oversized therizinosaur-like hand claws and a weak Dilophosaurus crest identity fail the interaction slot."
+    },
+    "assets/dinosaurs/sarahsaurus-aurifontanalis-dilophosaurus-hand-shove-defense-ecology-imagegen-v1.png": {
+      "reason": "Multiple fingers become long therizinosaur-like scythe claws, and the predator-defense composition duplicates an existing interaction role."
     }
   }
 }
