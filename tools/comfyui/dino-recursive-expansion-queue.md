@@ -18,6 +18,14 @@
 
 ## Current Completed Step
 
+- `Six-image richness batch 8: Ankylosaurus broad-skull and integrated-club rebuild 2026-07-26`
+  - Raised `Ankylosaurus magniventris` from three to six approved gallery slots and replaced every previously approved role.
+  - The final role set balances a broad-skull single-club representative, a high-oblique petrol/lavender/russet point-bar pattern, an oxbow fern-browsing habitat, a broad-skull and ventrolateral-naris close reference, a separated two-Edmontosaurus coexistence scene, and a non-contact lateral tail-sweep study.
+  - Original-size review confirmed exactly four attached legs, one continuous tail, and one integrated terminal club on every full-body Ankylosaurus. The interaction keeps the locked primary body unobstructed and places both secondary animals across a visible water boundary; the motion study has no predator, impact, wound, or blood.
+  - Demoted v45 for projecting skull horns and repetitive cobblestone armor, v40 for a round-stone club, v43 for separated twin club balls, the woodland image for a round club and oversized bosses, the moss-fen image for twin balls and a lizard-like head, and both Tyrannosaurus-contact scenes for unstable impact geometry or injury.
+  - Literature gates use Arbour and Mallon 2017 for the flat caputegulae-covered skull, ventrolateral naris, compact skull corners, two cervical half-rings, four to five torso-armor rows, lack of giant pectoral spikes, and conservative approximately 8 m size; Arbour 2009 supplies the integrated stiff handle plus terminal knob and possible lateral swing.
+  - Validation: `app.js` syntax, both decision JSON parses, and the strict gallery-slot build pass with 132 taxa, 503 target/assigned/approved slots, 20 taxa at the six-image published target, 234 remaining richness generation slots, 40 rejected sources, and every structural error count at 0. Static scan found 1465 declared asset refs with 0 real missing paths. The 8792 API exposes all six new files among 41 reviewable Ankylosaurus files and 850 visible files total; every new asset returns HTTP 200 with `no-store`, while all seven demoted files return HTTP 410. Browser QA loads all six new cards at 1536x1024 natural size, keeps the fullscreen representative and caption separate at 1280x720 and 390x844, has no horizontal overflow in either viewport, and reports 0 console messages.
+
 - `Six-image richness batch 7: Triceratops anti-rhino anatomy rebuild 2026-07-26`
   - Raised `Triceratops horridus` from four to six approved gallery slots and replaced the two weakest published roles.
   - The final role set balances the cool blue-gray v51 representative, a high-oblique charcoal/petrol/teal body with broad rust-ochre frill rays, the existing meadow habitat scene, a low three-quarter adult-frill and foot anatomy view, a wide non-contact Tyrannosaurus channel standoff, and a spatially separated adult/subadult growth comparison.

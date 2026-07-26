@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-26T06:19:15.675Z",
-  "reviewBatch": "2026-07-26-richness-six-slot-batch-7",
-  "reviewMethod": "Original-size full-frame inspection plus isolated skull, adult-frill, forefoot, hindfoot, predator, and growth-stage crops",
-  "targetSlots": 500,
+  "generatedAt": "2026-07-26T07:12:06.474Z",
+  "reviewBatch": "2026-07-26-richness-six-slot-batch-8",
+  "reviewMethod": "Original-size full-frame inspection of skull, all four limbs, one tail, integrated club, torso armor, secondary animals, and motion geometry",
+  "targetSlots": 503,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -4743,34 +4743,82 @@
     "ankylosaurus-magniventris": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/ankylosaurus-magniventris-bilobed-tailclub-imagegen-v45.png",
+        "source": "assets/dinosaurs/ankylosaurus-magniventris-hell-creek-broadskull-singleclub-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Broad flat caputegulae-covered skull, compact corner bosses, four separated legs, one continuous tail, and one integrated club pass original-size review.",
+        "reviewMethod": "Original-size full-frame inspection against Arbour and Mallon 2017 plus Arbour 2009 gates",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-8",
+        "reviewedAt": "2026-07-26T07:12:06.474Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v43-source-candidate.png",
+        "source": "assets/dinosaurs/ankylosaurus-magniventris-pointbar-petrol-lavender-russet-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "High-oblique four-leg view preserves the single tail and club while adding a distinct petrol, lavender, russet, teal, and ochre palette.",
+        "reviewMethod": "Original-size full-frame inspection against the locked representative phenotype",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-8",
+        "reviewedAt": "2026-07-26T07:12:06.474Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/ankylosaurus-magniventris-woodland-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/ankylosaurus-magniventris-oxbow-fern-browse-ecology-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Low browsing pose retains four readable legs, one tail, one club, and the broad armored skull in a distinct oxbow woodland setting.",
+        "reviewMethod": "Original-size full-frame inspection against the locked representative phenotype",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-8",
+        "reviewedAt": "2026-07-26T07:12:06.474Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/ankylosaurus-magniventris-broadskull-ventrolateral-naris-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "Close study clearly shows a broad flat armored skull, irregular caputegulae, a small ventrolateral naris, and compact rather than projecting skull corners.",
+        "reviewMethod": "Original-size skull and anterior-neck inspection against Arbour and Mallon 2017",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-8",
+        "reviewedAt": "2026-07-26T07:12:06.474Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/ankylosaurus-magniventris-oxbow-edmontosaurus-coexistence-ecology-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "The locked four-leg Ankylosaurus remains unobstructed while two distant Edmontosaurus stay separated across the channel with no contact or fusion.",
+        "reviewMethod": "Original-size primary-animal and secondary-animal count inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-8",
+        "reviewedAt": "2026-07-26T07:12:06.474Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/ankylosaurus-magniventris-lateral-tail-sweep-defense-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "Non-contact motion study preserves exactly four braced legs, one continuous elevated tail, and one integrated terminal club.",
+        "reviewMethod": "Original-size limb, tail, club, and motion-blur inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-8",
+        "reviewedAt": "2026-07-26T07:12:06.474Z"
       }
     }
   },
   "rejectedSources": {
+    "assets/dinosaurs/ankylosaurus-magniventris-bilobed-tailclub-imagegen-v45.png": {
+      "reason": "Projecting skull horns, repetitive cobblestone armor, and unstable club proportions fail the revised Ankylosaurus gate."
+    },
+    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v40-source-candidate.png": {
+      "reason": "Projecting skull corners and a smooth round-stone club fail the revised broad-skull and integrated-club gate."
+    },
+    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v43-source-candidate.png": {
+      "reason": "The tail terminus reads as two separated club balls and the torso armor is overly regular."
+    },
+    "assets/dinosaurs/ankylosaurus-magniventris-woodland-ecology-imagegen-v1.png": {
+      "reason": "A round-stone club and oversized repetitive torso bosses fail the revised anatomy gate."
+    },
+    "assets/dinosaurs/ankylosaurus-magniventris-moss-fen-bilobed-club-lichen-ecology-imagegen-v1.png": {
+      "reason": "Two giant separated club balls and a long lizard-like head fail the revised anatomy gate."
+    },
+    "assets/dinosaurs/ankylosaurus-magniventris-tyrannosaurus-tailclub-defense-ecology-imagegen-v1.png": {
+      "reason": "Direct injury contact plus unstable head and club anatomy fail the non-contact educational interaction gate."
+    },
+    "assets/dinosaurs/ankylosaurus-magniventris-tyrannosaurus-bilobed-club-strike-ecology-imagegen-v2.png": {
+      "reason": "The oversized twin-ball club and entangled impact geometry fail stable anatomy review."
+    },
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
     },

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-26-richness-six-slot-batch-7",
+  "reviewBatch": "2026-07-26-richness-six-slot-batch-8",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -100,6 +100,27 @@
     },
     "assets/dinosaurs/triceratops-horridus-tyrannosaurus-horn-counterattack-ecology-imagegen-v1.png": {
       "reason": "The storm scene repeats horn penetration and blood, while the predator contact and tail silhouette are too entangled for stable interaction review."
+    },
+    "assets/dinosaurs/ankylosaurus-magniventris-bilobed-tailclub-imagegen-v45.png": {
+      "reason": "Projecting skull horns, repetitive cobblestone armor, and unstable club proportions fail the revised Ankylosaurus gate."
+    },
+    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v40-source-candidate.png": {
+      "reason": "Projecting skull corners and a smooth round-stone club fail the revised broad-skull and integrated-club gate."
+    },
+    "assets/dinosaurs/ankylosaurus-magniventris-imagegen-v43-source-candidate.png": {
+      "reason": "The tail terminus reads as two separated club balls and the torso armor is overly regular."
+    },
+    "assets/dinosaurs/ankylosaurus-magniventris-woodland-ecology-imagegen-v1.png": {
+      "reason": "A round-stone club and oversized repetitive torso bosses fail the revised anatomy gate."
+    },
+    "assets/dinosaurs/ankylosaurus-magniventris-moss-fen-bilobed-club-lichen-ecology-imagegen-v1.png": {
+      "reason": "Two giant separated club balls and a long lizard-like head fail the revised anatomy gate."
+    },
+    "assets/dinosaurs/ankylosaurus-magniventris-tyrannosaurus-tailclub-defense-ecology-imagegen-v1.png": {
+      "reason": "Direct injury contact plus unstable head and club anatomy fail the non-contact educational interaction gate."
+    },
+    "assets/dinosaurs/ankylosaurus-magniventris-tyrannosaurus-bilobed-club-strike-ecology-imagegen-v2.png": {
+      "reason": "The oversized twin-ball club and entangled impact geometry fail stable anatomy review."
     }
   }
 }
