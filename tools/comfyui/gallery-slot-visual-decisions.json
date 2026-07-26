@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-26T11:06:29.873Z",
-  "reviewBatch": "2026-07-26-richness-six-slot-batch-12",
-  "reviewMethod": "Spinosaurus primary-source skeletal, tail, gait, and Kem Kem habitat gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, and secondary-animal inspection",
-  "targetSlots": 514,
+  "generatedAt": "2026-07-26T12:20:44.061Z",
+  "reviewBatch": "2026-07-26-richness-six-slot-batch-13",
+  "reviewMethod": "Suchomimus primary-source skull, forelimb, ridge, gait, and Elrhaz habitat gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, and secondary-animal inspection",
+  "targetSlots": 517,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -2692,30 +2692,57 @@
     "suchomimus-tenerensis": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/suchomimus-tenerensis-lowridge-imagegen-v1.png",
+        "source": "assets/dinosaurs/suchomimus-tenerensis-elrhaz-longleg-threefinger-representative-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Original-size full frame and isolated head, both-hand, both-foot, ridge, and tail crops pass the long-snouted, retracted-naris, three-finger, long-leg, low-ridge, and one-tail gate.",
+        "reviewMethod": "Primary-source skull and skeleton comparison plus original-size full-frame and isolated head, both-hand, both-foot, ridge, and tail inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-13",
+        "reviewedAt": "2026-07-26T12:20:44.061Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/suchomimus-tenerensis-rivergreen-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/suchomimus-tenerensis-celadon-violet-mudflat-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing rainflat variant adds a distinct violet, celadon, lavender, and cinnabar phenotype while corrected hand and foot crops retain the three-digit and three-main-toe gates.",
+        "reviewMethod": "Primary-source identity comparison plus original-size full-frame and isolated head, both-hand, both-foot, ridge, and tail inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-13",
+        "reviewedAt": "2026-07-26T12:20:44.061Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/suchomimus-tenerensis-riverbank-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/suchomimus-tenerensis-elrhaz-dawn-shoreline-fishscan-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The high-oblique Elrhaz shoreline frame keeps both feet on exposed sand, separates intact fish from the snout, and preserves countable hands, feet, ridge, and tail without implying underwater pursuit.",
+        "reviewMethod": "Primary-source Elrhaz habitat comparison plus original-size full-frame and isolated head, both-hand, both-foot, ridge, tail, and fish inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-13",
+        "reviewedAt": "2026-07-26T12:20:44.061Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/suchomimus-tenerensis-threefinger-thumbclaw-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The bright open-sandbar reference preserves exactly two three-finger hands with enlarged digit-I claws, two three-main-toe feet, a retracted naris, low rear ridge, and one complete tail.",
+        "reviewMethod": "Primary-source skull and manual anatomy comparison plus original-size full-frame and isolated head, both-hand, both-foot, ridge, and tail inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-13",
+        "reviewedAt": "2026-07-26T12:20:44.061Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/suchomimus-tenerensis-nigersaurus-river-coexistence-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "The reframed wide scene gives the complete Suchomimus tail a clear margin and keeps a single short-necked Nigersaurus spatially separated across the channel with no contact or pursuit.",
+        "reviewMethod": "Primary-source Elrhaz fauna comparison plus original-size full-frame and isolated Suchomimus head, hands, feet, tail, and Nigersaurus inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-13",
+        "reviewedAt": "2026-07-26T12:20:44.061Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/suchomimus-tenerensis-poststorm-alert-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The single-animal post-storm alert frame preserves separated three-finger hands, three-main-toe feet, one tail, and the canonical phenotype while avoiding an unsupported courtship, social, or combat claim.",
+        "reviewMethod": "Primary-source identity comparison plus original-size full-frame and isolated head, both-hand, both-foot, ridge, and tail inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-13",
+        "reviewedAt": "2026-07-26T12:20:44.061Z"
       }
     },
     "gallimimus-bullatus": {
@@ -5205,6 +5232,18 @@
     },
     "assets/dinosaurs/spinosaurus-aegyptiacus-river-interaction-imagegen-v2.png": {
       "reason": "Long hind limbs, a shallow tail, and weak species identity in the background-heavy scene fail the revised Spinosaurus anatomy and composition gate."
+    },
+    "assets/dinosaurs/suchomimus-tenerensis-lowridge-imagegen-v1.png": {
+      "reason": "The former representative has a tip-adjacent crocodile-like naris, weak rear-hip ridge identity, and hand and far-foot geometry that do not clear the strict original-size count gate."
+    },
+    "assets/dinosaurs/suchomimus-tenerensis-rivergreen-pattern-imagegen-v1.png": {
+      "reason": "The repeated brown-slate broadside, ambiguous hand digits, weak far-foot separation, and indistinct low ridge fail the revised color and anatomy gate."
+    },
+    "assets/dinosaurs/suchomimus-tenerensis-riverbank-ecology-imagegen-v1.png": {
+      "reason": "The useful river setting does not compensate for ambiguous hand and foot counts, weak rear-hip ridge identity, and generic background animals."
+    },
+    "assets/dinosaurs/suchomimus-tenerensis-splitwater-petrol-opal-fishstrike-ecology-imagegen-v1.png": {
+      "reason": "An oversized rounded back hump, unstable overlapping forelimb and hand geometry, and water-refraction-obscured feet fail the revised Suchomimus anatomy and non-diving ecology gate."
     }
   }
 }

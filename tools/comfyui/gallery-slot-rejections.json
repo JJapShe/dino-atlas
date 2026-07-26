@@ -310,6 +310,18 @@
     },
     "assets/dinosaurs/spinosaurus-aegyptiacus-river-interaction-imagegen-v2.png": {
       "reason": "Long hind limbs, a shallow tail, and weak species identity in the background-heavy scene fail the revised Spinosaurus anatomy and composition gate."
+    },
+    "assets/dinosaurs/suchomimus-tenerensis-lowridge-imagegen-v1.png": {
+      "reason": "The former representative has a tip-adjacent crocodile-like naris, weak rear-hip ridge identity, and hand and far-foot geometry that do not clear the strict original-size count gate."
+    },
+    "assets/dinosaurs/suchomimus-tenerensis-rivergreen-pattern-imagegen-v1.png": {
+      "reason": "The repeated brown-slate broadside, ambiguous hand digits, weak far-foot separation, and indistinct low ridge fail the revised color and anatomy gate."
+    },
+    "assets/dinosaurs/suchomimus-tenerensis-riverbank-ecology-imagegen-v1.png": {
+      "reason": "The useful river setting does not compensate for ambiguous hand and foot counts, weak rear-hip ridge identity, and generic background animals."
+    },
+    "assets/dinosaurs/suchomimus-tenerensis-splitwater-petrol-opal-fishstrike-ecology-imagegen-v1.png": {
+      "reason": "An oversized rounded back hump, unstable overlapping forelimb and hand geometry, and water-refraction-obscured feet fail the revised Suchomimus anatomy and non-diving ecology gate."
     }
   }
 }

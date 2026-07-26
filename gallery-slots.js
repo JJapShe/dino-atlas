@@ -2403,27 +2403,51 @@ window.gallerySlotAssignments = {
   ],
   "suchomimus-tenerensis": [
     {
-      "source": "assets/dinosaurs/suchomimus-tenerensis-lowridge-imagegen-v1.png",
+      "source": "assets/dinosaurs/suchomimus-tenerensis-elrhaz-longleg-threefinger-representative-imagegen-v1.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "elrhaz-river-system",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/suchomimus-tenerensis-rivergreen-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/suchomimus-tenerensis-celadon-violet-mudflat-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "elrhaz-river-system",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/suchomimus-tenerensis-riverbank-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/suchomimus-tenerensis-elrhaz-dawn-shoreline-fishscan-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "elrhaz-river-system",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/suchomimus-tenerensis-threefinger-thumbclaw-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "elrhaz-river-system",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/suchomimus-tenerensis-nigersaurus-river-coexistence-ecology-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "elrhaz-river-system",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/suchomimus-tenerensis-poststorm-alert-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "elrhaz-river-system",
       "expectedKind": "anatomy review"
     }
   ],
