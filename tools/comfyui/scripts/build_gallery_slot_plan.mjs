@@ -22,6 +22,7 @@ const SLOT_ROLES = [
   { slot: 6, key: "social-growth-defense", label: "social, growth, or defense", kind: "anatomy review" },
   { slot: 7, key: "alternate-habitat-behavior", label: "alternate habitat or behavior", kind: "anatomy review" },
 ];
+const RICHNESS_MIN_IMAGES = 6;
 
 const COMMON_REJECT = [
   "extra legs or duplicated limbs",
@@ -186,7 +187,7 @@ function isInternalReviewCandidate(item) {
   if (/review[- ]?sheet|review[- ]?options|contact[- ]?sheet|crop(?:s| audit| gate)?|guide|manifest|comparison|diagnostic|rejected/.test(searchable)) {
     return true;
   }
-  if (/검수\s*(?:시트|보드)?|크롭|마스크|가이드|매니페스트|비교\s*시트|진단|탈락/.test(searchable)) {
+  if (/검수\s*(?:시트|보드)|크롭|마스크|가이드|매니페스트|비교\s*시트|진단|탈락/.test(searchable)) {
     return true;
   }
   return /(?:^|[-_/ ])mask(?:-v\d+)?(?:\.png)?(?:$|\s)/.test(searchable);
@@ -419,6 +420,39 @@ function makePlanItem({ dino, samples, identities, profiles, routes, swatches, u
       rejectGate: [profile.avoid, route.reject, ...COMMON_REJECT].filter(Boolean),
     };
   });
+  const richnessTarget = Math.min(SLOT_ROLES.length, Math.max(RICHNESS_MIN_IMAGES, dino.imageSlots));
+  const expansionSelected = [];
+  for (const role of SLOT_ROLES.slice(dino.imageSlots, richnessTarget)) {
+    expansionSelected.push({ role, picked: selectCandidate(candidates, usedSources, role, null) });
+  }
+  const expansionSlots = expansionSelected.map(({ role, picked }) => {
+    const source = normalizePath(picked?.item?.src || "");
+    const suggestedUnregistered = source ? null : suggestUnregisteredSource(unregisteredAssets[dino.id] || [], role.key);
+    const status = source
+      ? "candidate-review"
+      : suggestedUnregistered
+        ? "unregistered-review"
+        : "generate";
+    return {
+      slot: role.slot,
+      role: role.key,
+      label: role.label,
+      expectedKind: role.kind,
+      status,
+      currentKind: picked?.item?.kind || "",
+      currentSource: source,
+      currentTitle: picked?.item?.title || "",
+      score: picked?.score ?? null,
+      selectedBy: picked?.selectedBy || "",
+      suggestedUnregisteredSource: suggestedUnregistered?.source || "",
+      suggestedUnregisteredScore: suggestedUnregistered?.score ?? null,
+      referenceSource,
+      prompt: makePrompt({ dino, role, identity, profile, route, palette, habitat, referenceSource }),
+      negativePrompt: [profile.avoid, route.reject, ...COMMON_REJECT].filter(Boolean).join("; "),
+      passGate: [...identity, profile.anatomy].filter(Boolean),
+      rejectGate: [profile.avoid, route.reject, ...COMMON_REJECT].filter(Boolean),
+    };
+  });
 
   return {
     taxon: dino.id,
@@ -429,6 +463,7 @@ function makePlanItem({ dino, samples, identities, profiles, routes, swatches, u
     region: dino.region,
     family: dino.family,
     imageSlots: dino.imageSlots,
+    richnessTarget,
     visibleCandidateCount: candidates.length,
     paletteLock: palette,
     habitatProfile: habitat,
@@ -436,6 +471,7 @@ function makePlanItem({ dino, samples, identities, profiles, routes, swatches, u
     malformedSamples,
     unregisteredSpeciesAssets: unregisteredAssets[dino.id] || [],
     slots,
+    expansionSlots,
   };
 }
 
@@ -466,6 +502,11 @@ function writeMarkdown(plan) {
     "",
     `- Taxa: ${plan.summary.taxa}`,
     `- Target slots: ${plan.summary.targetSlots}`,
+    `- Richness target slots (minimum ${RICHNESS_MIN_IMAGES} per taxon): ${plan.summary.richnessTargetSlots}`,
+    `- Taxa already publishing at least ${RICHNESS_MIN_IMAGES} slots: ${plan.summary.taxaAtPublishedTarget}`,
+    `- Expansion slots ready for candidate review: ${plan.summary.expansionCandidateReviewSlots}`,
+    `- Expansion slots with unregistered suggestions: ${plan.summary.expansionUnregisteredReviewSlots}`,
+    `- Expansion slots requiring generation: ${plan.summary.expansionGenerateSlots}`,
     `- Visually approved slots: ${plan.summary.approvedSlots}`,
     `- Slots pending visual review: ${plan.summary.pendingVisualReview}`,
     `- Visual decision errors: ${plan.summary.visualDecisionErrors}`,
@@ -485,6 +526,16 @@ function writeMarkdown(plan) {
   for (const taxon of plan.taxa) {
     for (const slot of taxon.slots.filter((item) => item.status !== "approved")) {
       lines.push(`| ${taxon.taxon} | ${slot.slot} | ${slot.role} | ${slot.currentSource || "none"} | ${slot.suggestedUnregisteredSource || "none"} |`);
+    }
+  }
+  lines.push("", `## ${RICHNESS_MIN_IMAGES}-Image Richness Expansion Queue`, "");
+  lines.push(
+    "| Taxon | Current slots | Target | Slot | Role | Status | Registered candidate | Suggested unregistered candidate |",
+    "|---|---:|---:|---:|---|---|---|---|",
+  );
+  for (const taxon of plan.taxa) {
+    for (const slot of taxon.expansionSlots) {
+      lines.push(`| ${taxon.taxon} | ${taxon.imageSlots} | ${taxon.richnessTarget} | ${slot.slot} | ${slot.role} | ${slot.status} | ${slot.currentSource || "none"} | ${slot.suggestedUnregisteredSource || "none"} |`);
     }
   }
   lines.push("", "## Data Hygiene", "");
@@ -548,6 +599,7 @@ function main() {
   const visualDecisionErrors = taxa.flatMap((taxon) => taxon.slots).filter((slot) => slot.status === "decision-error").length;
   const generateSlots = taxa.flatMap((taxon) => taxon.slots).filter((slot) => slot.status === "generate").length;
   const unregisteredReviewSlots = taxa.flatMap((taxon) => taxon.slots).filter((slot) => slot.status === "manual-review-unregistered").length;
+  const expansionSlots = taxa.flatMap((taxon) => taxon.expansionSlots);
   const missingPaths = Object.values(samples)
     .flat()
     .filter((item) => item && typeof item === "object")
@@ -561,6 +613,13 @@ function main() {
     summary: {
       taxa: taxa.length,
       targetSlots: taxa.reduce((total, taxon) => total + taxon.imageSlots, 0),
+      richnessTargetSlots: taxa.reduce((total, taxon) => total + taxon.richnessTarget, 0),
+      taxaAtPublishedTarget: taxa.filter((taxon) => taxon.imageSlots >= RICHNESS_MIN_IMAGES).length,
+      taxaWithEnoughVisibleCandidates: taxa.filter((taxon) => taxon.visibleCandidateCount >= RICHNESS_MIN_IMAGES).length,
+      expansionCandidateReviewSlots: expansionSlots.filter((slot) => slot.status === "candidate-review").length,
+      expansionUnregisteredReviewSlots: expansionSlots.filter((slot) => slot.status === "unregistered-review").length,
+      expansionGenerateSlots: expansionSlots.filter((slot) => slot.status === "generate").length,
+      taxaWithExpansionGeneration: taxa.filter((taxon) => taxon.expansionSlots.some((slot) => slot.status === "generate")).length,
       approvedSlots,
       pendingVisualReview,
       visualDecisionErrors,

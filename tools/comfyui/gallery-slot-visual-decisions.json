@@ -106,6 +106,15 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/coelophysis-bauri-plateosaurus-rain-arroyo-pack-pressure-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size review confirmed separated animals, readable pack behavior, complete primary tails, and no duplicated primary limbs; retained as a multi-animal anatomy-review scene.",
+        "reviewMethod": "original-size inspection against identity, limb-count, tail, and interaction gates",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-1",
+        "reviewedAt": "2026-07-26T03:10:22.239Z"
       }
     },
     "eodromaeus-murphi": {
@@ -332,6 +341,15 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/plateosaurus-engelhardti-coelophysis-defense-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size review confirmed one balanced Plateosaurus with two grounded hind legs, two lifted forelimbs, one tail, and spatially separated Coelophysis figures.",
+        "reviewMethod": "original-size inspection against identity, limb-count, tail, and interaction gates",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-1",
+        "reviewedAt": "2026-07-26T03:10:22.239Z"
       }
     },
     "riojasaurus-incertus": {
@@ -605,6 +623,15 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/bagualosaurus-agudoensis-buriolestes-defensive-turn-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size review confirmed the robust herbivorous body, four non-hoofed supporting limbs, one continuous tail, and a spatially separated Buriolestes interaction.",
+        "reviewMethod": "original-size inspection against identity, limb-count, tail, and interaction gates",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-1",
+        "reviewedAt": "2026-07-26T03:10:22.239Z"
       }
     },
     "saturnalia-tupiniquim": {
@@ -746,6 +773,15 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/efraasia-minor-liliensternus-defensive-kick-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size review confirmed a single continuous tail, two hind limbs, two lifted forelimbs, and a separated Liliensternus in a distinct defensive composition.",
+        "reviewMethod": "original-size inspection against identity, limb-count, tail, and interaction gates",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-1",
+        "reviewedAt": "2026-07-26T03:10:22.239Z"
       }
     },
     "pisanosaurus-mertii": {
@@ -1716,6 +1752,15 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/ichthyosaurus-communis-belemnite-fish-community-ecology-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size review confirmed one streamlined body, four flippers, one vertical tail fin, a large eye, and a balanced period-appropriate fish, belemnite, and ammonite community.",
+        "reviewMethod": "original-size inspection against identity, appendage-count, tail-fin, and community-scene gates",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-1",
+        "reviewedAt": "2026-07-26T03:10:22.239Z"
       }
     },
     "thalattosaurus-alexandrae": {
@@ -3790,6 +3835,15 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/camptosaurus-dispar-ceratosaurus-tail-block-defense-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size review confirmed a readable beaked Camptosaurus with two hind limbs, two forelimbs, one continuous tail, and a separated Ceratosaurus in a non-graphic defensive scene.",
+        "reviewMethod": "original-size inspection against identity, limb-count, tail, and interaction gates",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-1",
+        "reviewedAt": "2026-07-26T03:10:22.239Z"
       }
     },
     "parasaurolophus-walkeri": {
@@ -4196,6 +4250,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/acrotholus-audeti-small-dome-fullbody-identity-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size review confirmed a moderate ivory dome, two lifted forelimbs, exactly two grounded hind legs, visible toes, and one continuous tail in a clear identity view.",
+        "reviewMethod": "built-in image generation followed by original-size identity, limb-count, foot, and tail inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-1",
+        "reviewedAt": "2026-07-26T03:10:22.239Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/acrotholus-audeti-postrain-theropod-watch-interaction-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "Original-size review confirmed the complete primary body and appendage count, one continuous tail, and a small spatially separated background theropod with no contact or gore.",
+        "reviewMethod": "built-in image generation followed by original-size identity, limb-count, separation, and interaction inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-1",
+        "reviewedAt": "2026-07-26T03:10:22.239Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/acrotholus-audeti-woodland-growth-stage-pair-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size review confirmed two separated growth stages, each with two hind legs, two small forelimbs, and one unfused tail, in a distinct forest-interior composition.",
+        "reviewMethod": "built-in image generation followed by original-size identity, limb-count, tail-separation, and growth-stage inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-1",
+        "reviewedAt": "2026-07-26T03:10:22.239Z"
       }
     },
     "amtocephale-gobiensis": {
@@ -4578,6 +4659,15 @@
     },
     "assets/dinosaurs/rhamphorhynchus-muensteri-longtail-vane-identity-imagegen-v2.png": {
       "reason": "Three separately readable wing membranes and duplicated limb geometry fail the strict two-wing, two-hindlimb pterosaur gate."
+    },
+    "assets/dinosaurs/hesperosaurus-mjosi-ceratosaurus-tailspike-impact-defense-ecology-imagegen-v1.png": {
+      "reason": "Prominent impalement, blood, and an obscured tail-spike contact fail the non-graphic educational ecology gate."
+    },
+    "assets/dinosaurs/thecodontosaurus-antiquus-liliensternus-defensive-sidestep-ecology-imagegen-v1.png": {
+      "reason": "The primary tail reads as two parallel distal shafts and the head drifts toward a predatory profile."
+    },
+    "assets/dinosaurs/sarahsaurus-aurifontanalis-dilophosaurus-arroyo-block-defense-ecology-imagegen-v1.png": {
+      "reason": "Oversized therizinosaur-like hand claws and a weak Dilophosaurus crest identity fail the interaction slot."
     }
   }
 }

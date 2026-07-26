@@ -61,6 +61,15 @@
     },
     "assets/dinosaurs/rhamphorhynchus-muensteri-longtail-vane-identity-imagegen-v2.png": {
       "reason": "Three separately readable wing membranes and duplicated limb geometry fail the strict two-wing, two-hindlimb pterosaur gate."
+    },
+    "assets/dinosaurs/hesperosaurus-mjosi-ceratosaurus-tailspike-impact-defense-ecology-imagegen-v1.png": {
+      "reason": "Prominent impalement, blood, and an obscured tail-spike contact fail the non-graphic educational ecology gate."
+    },
+    "assets/dinosaurs/thecodontosaurus-antiquus-liliensternus-defensive-sidestep-ecology-imagegen-v1.png": {
+      "reason": "The primary tail reads as two parallel distal shafts and the head drifts toward a predatory profile."
+    },
+    "assets/dinosaurs/sarahsaurus-aurifontanalis-dilophosaurus-arroyo-block-defense-ecology-imagegen-v1.png": {
+      "reason": "Oversized therizinosaur-like hand claws and a weak Dilophosaurus crest identity fail the interaction slot."
     }
   }
 }

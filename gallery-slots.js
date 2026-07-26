@@ -91,6 +91,14 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "arid-redbed",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/coelophysis-bauri-plateosaurus-rain-arroyo-pack-pressure-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "arid-redbed",
+      "expectedKind": "anatomy review"
     }
   ],
   "eodromaeus-murphi": [
@@ -290,6 +298,14 @@ window.gallerySlotAssignments = {
       "source": "assets/dinosaurs/plateosaurus-engelhardti-liliensternus-rain-gully-tail-block-ecology-imagegen-v1.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "arid-redbed",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/plateosaurus-engelhardti-coelophysis-defense-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "arid-redbed",
       "expectedKind": "anatomy review"
@@ -537,6 +553,14 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "arid-redbed",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/bagualosaurus-agudoensis-buriolestes-defensive-turn-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "arid-redbed",
+      "expectedKind": "anatomy review"
     }
   ],
   "saturnalia-tupiniquim": [
@@ -660,6 +684,14 @@ window.gallerySlotAssignments = {
       "source": "assets/dinosaurs/efraasia-minor-liliensternus-escape-ecology-imagegen-v1.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "arid-redbed",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/efraasia-minor-liliensternus-defensive-kick-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "arid-redbed",
       "expectedKind": "anatomy review"
@@ -1178,7 +1210,7 @@ window.gallerySlotAssignments = {
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
       "habitatKey": "coastal-lagoon",
-      "expectedKind": "review hold"
+      "expectedKind": "anatomy review"
     },
     {
       "source": "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-moonlit-bank-ecology-imagegen-v1.png",
@@ -1528,6 +1560,14 @@ window.gallerySlotAssignments = {
       "source": "assets/dinosaurs/ichthyosaurus-communis-fish-chase-ecology-imagegen-v1.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "marine",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/ichthyosaurus-communis-belemnite-fish-community-ecology-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "marine",
       "expectedKind": "anatomy review"
@@ -3389,6 +3429,14 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/camptosaurus-dispar-ceratosaurus-tail-block-defense-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
     }
   ],
   "parasaurolophus-walkeri": [
@@ -3750,6 +3798,30 @@ window.gallerySlotAssignments = {
       "source": "assets/dinosaurs/acrotholus-audeti-streambank-pair-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/acrotholus-audeti-small-dome-fullbody-identity-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/acrotholus-audeti-postrain-theropod-watch-interaction-ecology-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/acrotholus-audeti-woodland-growth-stage-pair-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"

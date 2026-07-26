@@ -18,6 +18,13 @@
 
 ## Current Completed Step
 
+- `Six-image richness batch 1: six promotions plus Acrotholus generation 2026-07-26`
+  - Added a minimum-six richness audit to `build_gallery_slot_plan.mjs`: current published target 481, full minimum-six target 793, candidate-review expansion slots 52, unregistered suggestions 16, and generation-required slots 244 after this batch.
+  - Promoted sixth, role-distinct scenes for `Coelophysis bauri`, `Plateosaurus engelhardti`, `Bagualosaurus agudoensis`, `Efraasia minor`, `Ichthyosaurus communis`, and `Camptosaurus dispar` only after original-size limb, tail, separation, and non-graphic interaction checks.
+  - Generated and registered three new `Acrotholus audeti` assets: one small-dome identity full body, one post-rain distant-theropod interaction, and one separated adult/subadult woodland growth comparison.
+  - Acrotholus generation used the approved bottle-green body, ivory dome, and broken dark saddle markings as a fixed reference; every promoted individual requires exactly two hind legs, two lifted forelimbs, and one pelvis-origin tail.
+  - Rejected or uncertain candidates do not count toward six: graphic blood, duplicated or ambiguous tails, extra limbs, body fusion, and role-duplicate scenes remain outside promotion.
+
 - `Rhamphorhynchus strict tail and membrane correction 2026-07-26`
   - Rejected `rhamphorhynchus-muensteri-longtail-vane-imagegen-v1.png` because two parallel tail shafts leave the body and one reads as fused to the wing base.
   - Kept `rhamphorhynchus-muensteri-longtail-vane-identity-imagegen-v2.png` rejected for a third wing membrane, and additionally rejected the slate-ochre variant for a third wing membrane and the moonlit-ledge takeoff scene for a third hind limb.
