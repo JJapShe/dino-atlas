@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-26-richness-six-slot-batch-12",
+  "reviewBatch": "2026-07-26-richness-six-slot-batch-15",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -337,6 +337,27 @@
     },
     "assets/dinosaurs/gallimimus-bullatus-gypsum-black-lemon-pinspot-flock-ecology-imagegen-v1.png": {
       "reason": "The black, lemon, cyan, and violet combination is too neon for the habitat-driven palette, and water-splash motion leaves foot and hand anatomy less stable than the new wet-season variant."
+    },
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v69-source-candidate.png": {
+      "reason": "The former representative is superseded because its three-ground-toe read plus a separate oversized hook no longer clears the stricter attached raised-second-toe gate."
+    },
+    "assets/dinosaurs/velociraptor-mongoliensis-dune-plumage-variant-imagegen-v1.png": {
+      "reason": "The retired pattern variant has unstable foot and forearm detail at original size and is redundant with the clearer cool-palette replacement."
+    },
+    "assets/dinosaurs/velociraptor-mongoliensis-restrained-sickle-imagegen-v6.png": {
+      "reason": "The old habitat frame does not preserve stable raised-second-toe topology on both reviewed feet and is replaced by a literature-gated interdune scene."
+    },
+    "assets/dinosaurs/velociraptor-mongoliensis-toothedhand-sickle-imagegen-v8.png": {
+      "reason": "Hand and foot anatomy are less stable than the new low-camera anatomy frame, so the older close study is no longer suitable for a published slot."
+    },
+    "assets/dinosaurs/velociraptor-mongoliensis-protoceratops-graphic-pack-feeding-ecology-imagegen-v1.png": {
+      "reason": "Visible gore, direct feeding contact, crowded animals, and merged appendages fail the non-graphic separated-interaction gate."
+    },
+    "assets/dinosaurs/velociraptor-mongoliensis-pack-hunt-desert-encircle-imagegen-v1.png": {
+      "reason": "The unproven pack-hunting frame crowds multiple bodies and obscures appendage counts while duplicating the interaction role."
+    },
+    "assets/dinosaurs/velociraptor-mongoliensis-pack-hunt-dune-chase-imagegen-v1.png": {
+      "reason": "The unproven pack pursuit, motion-obscured feet, and repeated chase composition fail the revised anatomy and behavioral-caution gate."
     }
   }
 }

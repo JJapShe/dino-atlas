@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-26T13:31:55.209Z",
-  "reviewBatch": "2026-07-26-richness-six-slot-batch-14",
-  "reviewMethod": "Gallimimus primary-source skull, short-manus, limb-proportion, beak, and Nemegt habitat gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, and secondary-animal inspection",
-  "targetSlots": 520,
+  "generatedAt": "2026-07-26T14:38:24.904Z",
+  "reviewBatch": "2026-07-26-richness-six-slot-batch-15",
+  "reviewMethod": "Velociraptor primary-source skull, postcrania, quill-knob, and Djadokhta habitat gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, juvenile, and secondary-animal inspection",
+  "targetSlots": 519,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -3469,66 +3469,57 @@
     "velociraptor-mongoliensis": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v69-source-candidate.png",
+        "source": "assets/dinosaurs/velociraptor-mongoliensis-djadokhta-raised-second-toe-representative-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The Djadokhta representative passes the long low toothed-snouted skull, forearm-feather, two-forelimb, two-hindlimb, attached raised-second-toe, and single stiff-tail gates in full-frame and isolated anatomy review.",
+        "reviewMethod": "Primary-source skull, postcrania, quill-knob, and Djadokhta gate plus original-size full-frame and isolated head, both-hand, both-foot, and tail inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-15",
+        "reviewedAt": "2026-07-26T14:38:24.904Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/velociraptor-mongoliensis-dune-plumage-variant-imagegen-v1.png",
+        "source": "assets/dinosaurs/velociraptor-mongoliensis-dawn-slate-celadon-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing dawn frame adds blue-slate, dusty celadon-gray, restrained aubergine, copper-rust, and off-white plumage variation while retaining the same skull, limb, raised-toe, and single-tail body lock.",
+        "reviewMethod": "Primary-source anatomy gate plus original-size full-frame and isolated head, both-hand, both-foot, and tail inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-15",
+        "reviewedAt": "2026-07-26T14:38:24.904Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/velociraptor-mongoliensis-restrained-sickle-imagegen-v6.png",
+        "source": "assets/dinosaurs/velociraptor-mongoliensis-interdune-trackway-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The low scent-and-track posture varies behavior and places one intact animal in a seasonally damp interdune swale without prey contact, reflective-limb duplication, or a hunting claim; the clearer near foot preserves the raised second toe.",
+        "reviewMethod": "Primary-source habitat gate plus original-size full-frame and isolated head, both-hand, both-foot, and tail inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-15",
+        "reviewedAt": "2026-07-26T14:38:24.904Z"
       },
       "4": {
         "status": "approved",
-        "source": "assets/dinosaurs/velociraptor-mongoliensis-toothedhand-sickle-imagegen-v8.png",
+        "source": "assets/dinosaurs/velociraptor-mongoliensis-lowcamera-raised-second-toe-anatomy-imagegen-v1.png",
         "role": "identity-anatomy",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The low foot-height camera gives the set's clearest view of two support toes and one attached raised second toe on both feet while preserving exactly two forelimbs, two hind limbs, one toothed head, and one complete tail.",
+        "reviewMethod": "Primary-source foot and manus gate plus original-size full-frame and isolated head, both-hand, both-foot, and tail inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-15",
+        "reviewedAt": "2026-07-26T14:38:24.904Z"
       },
       "5": {
         "status": "approved",
-        "source": "assets/dinosaurs/velociraptor-mongoliensis-protoceratops-graphic-pack-feeding-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/velociraptor-mongoliensis-protoceratops-standoff-ecology-imagegen-v1.png",
         "role": "interaction",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "One Velociraptor and one Protoceratops are widely separated in a non-contact, non-graphic standoff; isolated review keeps the primary animal's limbs and raised toe readable and the secondary animal at four legs plus one tail without reconstructing a combat outcome.",
+        "reviewMethod": "Primary-source co-occurrence gate plus original-size full-frame and isolated primary head, hands, feet, tail, and secondary-animal inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-15",
+        "reviewedAt": "2026-07-26T14:38:24.904Z"
       },
       "6": {
         "status": "approved",
-        "source": "assets/dinosaurs/velociraptor-mongoliensis-pack-hunt-desert-encircle-imagegen-v1.png",
+        "source": "assets/dinosaurs/velociraptor-mongoliensis-adult-juvenile-dune-growth-ecology-imagegen-v1.png",
         "role": "social-growth-defense",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
-      },
-      "7": {
-        "status": "approved",
-        "source": "assets/dinosaurs/velociraptor-mongoliensis-pack-hunt-dune-chase-imagegen-v1.png",
-        "role": "alternate-habitat-behavior",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The separated adult and smaller juvenile provide a restrained growth-stage comparison with two bodies, two heads, two tails, and four total hind limbs; the caption makes no family, parenting, sex, or pack-behavior claim.",
+        "reviewMethod": "Primary-source anatomy gate plus original-size full-frame and isolated adult, juvenile, both-foot, and tail-separation inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-15",
+        "reviewedAt": "2026-07-26T14:38:24.904Z"
       }
     },
     "triceratops-horridus": {
@@ -5286,6 +5277,27 @@
     },
     "assets/dinosaurs/gallimimus-bullatus-gypsum-black-lemon-pinspot-flock-ecology-imagegen-v1.png": {
       "reason": "The black, lemon, cyan, and violet combination is too neon for the habitat-driven palette, and water-splash motion leaves foot and hand anatomy less stable than the new wet-season variant."
+    },
+    "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v69-source-candidate.png": {
+      "reason": "The former representative is superseded because its three-ground-toe read plus a separate oversized hook no longer clears the stricter attached raised-second-toe gate."
+    },
+    "assets/dinosaurs/velociraptor-mongoliensis-dune-plumage-variant-imagegen-v1.png": {
+      "reason": "The retired pattern variant has unstable foot and forearm detail at original size and is redundant with the clearer cool-palette replacement."
+    },
+    "assets/dinosaurs/velociraptor-mongoliensis-restrained-sickle-imagegen-v6.png": {
+      "reason": "The old habitat frame does not preserve stable raised-second-toe topology on both reviewed feet and is replaced by a literature-gated interdune scene."
+    },
+    "assets/dinosaurs/velociraptor-mongoliensis-toothedhand-sickle-imagegen-v8.png": {
+      "reason": "Hand and foot anatomy are less stable than the new low-camera anatomy frame, so the older close study is no longer suitable for a published slot."
+    },
+    "assets/dinosaurs/velociraptor-mongoliensis-protoceratops-graphic-pack-feeding-ecology-imagegen-v1.png": {
+      "reason": "Visible gore, direct feeding contact, crowded animals, and merged appendages fail the non-graphic separated-interaction gate."
+    },
+    "assets/dinosaurs/velociraptor-mongoliensis-pack-hunt-desert-encircle-imagegen-v1.png": {
+      "reason": "The unproven pack-hunting frame crowds multiple bodies and obscures appendage counts while duplicating the interaction role."
+    },
+    "assets/dinosaurs/velociraptor-mongoliensis-pack-hunt-dune-chase-imagegen-v1.png": {
+      "reason": "The unproven pack pursuit, motion-obscured feet, and repeated chase composition fail the revised anatomy and behavioral-caution gate."
     }
   }
 }

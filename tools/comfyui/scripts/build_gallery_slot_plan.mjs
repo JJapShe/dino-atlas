@@ -336,6 +336,7 @@ function habitatFor(dino, route) {
   if (dino.id === "spinosaurus-aegyptiacus") key = "kem-kem-river-delta";
   else if (dino.id === "suchomimus-tenerensis") key = "elrhaz-river-system";
   else if (dino.id === "gallimimus-bullatus") key = "nemegt-fluvial-floodplain";
+  else if (dino.id === "velociraptor-mongoliensis") key = "gobi-arid";
   else if (/marine|seaway|ocean|sea |pliosaur|plesiosaur|ichthyosaur|mosasaur|해양|바다|수중/.test(text)) key = "marine";
   else if (/polar|prince creek|alaska|high-latitude|극지|고위도/.test(text)) key = "polar-forest";
   else if (/gobi|djadokhta|nemegt|dune|desert|sandstone|사구|사막|고비/.test(text)) key = "gobi-arid";

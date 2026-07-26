@@ -3099,59 +3099,51 @@ window.gallerySlotAssignments = {
   ],
   "velociraptor-mongoliensis": [
     {
-      "source": "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v69-source-candidate.png",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-djadokhta-raised-second-toe-representative-imagegen-v1.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "gobi-arid",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/velociraptor-mongoliensis-dune-plumage-variant-imagegen-v1.png",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-dawn-slate-celadon-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "gobi-arid",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/velociraptor-mongoliensis-restrained-sickle-imagegen-v6.png",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-interdune-trackway-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "gobi-arid",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/velociraptor-mongoliensis-toothedhand-sickle-imagegen-v8.png",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-lowcamera-raised-second-toe-anatomy-imagegen-v1.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "gobi-arid",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/velociraptor-mongoliensis-protoceratops-graphic-pack-feeding-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-protoceratops-standoff-ecology-imagegen-v1.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "gobi-arid",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/velociraptor-mongoliensis-pack-hunt-desert-encircle-imagegen-v1.png",
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-adult-juvenile-dune-growth-ecology-imagegen-v1.png",
       "gallerySlot": 6,
       "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
-      "expectedKind": "anatomy review"
-    },
-    {
-      "source": "assets/dinosaurs/velociraptor-mongoliensis-pack-hunt-dune-chase-imagegen-v1.png",
-      "gallerySlot": 7,
-      "galleryRole": "alternate-habitat-behavior",
-      "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "gobi-arid",
       "expectedKind": "anatomy review"
     }
   ],

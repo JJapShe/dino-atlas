@@ -2196,17 +2196,23 @@ const dinosaurs = [
     region: "몽골",
     length: 2.0,
     knowledgeLevel: 1,
-    imageSlots: 7,
-    reviewStatus: "검수중",
+    imageSlots: 6,
+    reviewStatus: "6장 해부 안정화",
     summary:
-      "작고 민첩한 수각류로, 깃털을 가진 모습과 낫 모양의 발톱이 복원 포인트입니다.",
+      "드자도흐타층의 소형 드로마에오사우루스류로, 길고 낮은 이빨 주둥이와 깃털 달린 앞다리, 들어 올린 둘째 발가락 낫발톱이 핵심입니다.",
     features: {
-      보행: "이족보행",
-      표피: "깃털 가능성 높음",
-      발: "두 번째 발가락의 큰 갈고리발톱",
-      체형: "가볍고 낮은 실루엣",
+      두개골: "길고 낮은 이빨 주둥이",
+      깃털: "전완 깃털 부착 흔적",
+      발: "들린 둘째 발가락의 낫발톱",
+      꼬리: "길고 뻣뻣한 균형 꼬리",
     },
-    sources: ["PBDB"],
+    sources: [
+      "Osborn 1924",
+      "Barsbold & Osmólska 1999",
+      "Norell & Makovicky 1999",
+      "Turner et al. 2007",
+      "Saneyoshi et al. 2021",
+    ],
   },
   {
     id: "triceratops-horridus",
@@ -4024,6 +4030,7 @@ const state = {
 };
 
 const recentImageUpdateTaxa = [
+  "velociraptor-mongoliensis",
   "gallimimus-bullatus",
   "suchomimus-tenerensis",
   "spinosaurus-aegyptiacus",
@@ -12181,6 +12188,60 @@ const generatedImageSamples = {
   ],
   "velociraptor-mongoliensis": [
     {
+      kind: "count-level pass",
+      title: "벨로키랍토르 드자도흐타 낫발가락 대표",
+      body: "두개골·후두골 문헌 도판을 구조 기준으로 삼아 만든 새 대표입니다. 긴 낮은 이빨 주둥이, 전완 깃털, 정확히 두 앞다리와 두 뒷다리, 각 발에 붙어 올라간 둘째 발가락, 한 줄로 이어진 뻣뻣한 꼬리를 전신과 확대 크롭에서 확인했습니다.",
+      source:
+        "assets/dinosaurs/velociraptor-mongoliensis-djadokhta-raised-second-toe-representative-imagegen-v1.png",
+      variant: "드자도흐타 낫발가락 대표 이미지 생성 v1",
+      src: "assets/dinosaurs/velociraptor-mongoliensis-djadokhta-raised-second-toe-representative-imagegen-v1.png",
+    },
+    {
+      kind: "review hold",
+      title: "벨로키랍토르 새벽 청회색·청자색 무늬 변형",
+      body: "같은 종의 긴 낮은 주둥이와 깃털·발 구조를 유지하면서 반대 방향 보행 구도, 청회색 등면, 잿빛 청자색 옆구리, 절제된 자주색 어깨와 녹슨 얼굴·꼬리 띠를 더한 색상 변형입니다. 움직이는 발은 전신과 확대 크롭에서 별도 검수했습니다.",
+      source:
+        "assets/dinosaurs/velociraptor-mongoliensis-dawn-slate-celadon-pattern-imagegen-v1.png",
+      variant: "새벽 청회색·청자색 무늬 이미지 생성 v1",
+      src: "assets/dinosaurs/velociraptor-mongoliensis-dawn-slate-celadon-pattern-imagegen-v1.png",
+    },
+    {
+      kind: "anatomy review",
+      title: "벨로키랍토르 간헐천 사구 발자국 추적",
+      body: "비가 지난 드자도흐타 사구 사이의 젖은 모래에서 작은 흔적을 살피는 비유혈 일상 생태 장면입니다. 반사 수면 없이 두 다리와 한 꼬리를 분리했고, 낮춘 머리와 움직이는 발 때문에 대표보다 아래의 해부 검수 자료로 둡니다.",
+      source:
+        "assets/dinosaurs/velociraptor-mongoliensis-interdune-trackway-ecology-imagegen-v1.png",
+      variant: "사구 사이 발자국 추적 생태 이미지 생성 v1",
+      src: "assets/dinosaurs/velociraptor-mongoliensis-interdune-trackway-ecology-imagegen-v1.png",
+    },
+    {
+      kind: "anatomy review",
+      title: "벨로키랍토르 발높이 둘째 발가락 해부",
+      body: "발높이 카메라로 두 보행 발가락과 발에 붙어 올라간 둘째 낫발가락을 크게 읽도록 만든 구조 비교입니다. 긴 이빨 주둥이, 접힌 전완 깃털, 정확히 두 앞다리·두 뒷다리와 한 꼬리를 유지하지만 근접 원근 때문에 대표가 아닌 해부 자료로 사용합니다.",
+      source:
+        "assets/dinosaurs/velociraptor-mongoliensis-lowcamera-raised-second-toe-anatomy-imagegen-v1.png",
+      variant: "발높이 둘째 발가락 해부 이미지 생성 v1",
+      src: "assets/dinosaurs/velociraptor-mongoliensis-lowcamera-raised-second-toe-anatomy-imagegen-v1.png",
+    },
+    {
+      kind: "anatomy review",
+      title: "벨로키랍토르와 프로토케라톱스 비접촉 대치",
+      body: "실제 공존과 유명한 전투 표본을 배경으로 하되, 결과를 재현하거나 공격을 주장하지 않고 두 동물을 넓은 빈 지면으로 분리한 비유혈 대치 장면입니다. 벨로키랍토르의 두 다리·두 발과 프로토케라톱스의 네 다리·한 꼬리를 각각 확대 검수했습니다.",
+      source:
+        "assets/dinosaurs/velociraptor-mongoliensis-protoceratops-standoff-ecology-imagegen-v1.png",
+      variant: "프로토케라톱스 비접촉 대치 생태 이미지 생성 v1",
+      src: "assets/dinosaurs/velociraptor-mongoliensis-protoceratops-standoff-ecology-imagegen-v1.png",
+    },
+    {
+      kind: "anatomy review",
+      title: "벨로키랍토르 성체·어린 개체 크기 비교",
+      body: "한 화면에 성체와 더 작은 어린 개체를 한 몸 길이 이상 떨어뜨려 배치한 성장 단계 비교입니다. 두 개체의 머리·몸·꼬리와 총 네 뒷다리가 서로 융합되지 않으며, 부모 돌봄이나 무리 행동을 증거로 주장하지 않습니다.",
+      source:
+        "assets/dinosaurs/velociraptor-mongoliensis-adult-juvenile-dune-growth-ecology-imagegen-v1.png",
+      variant: "성체·어린 개체 사구 성장 비교 이미지 생성 v1",
+      src: "assets/dinosaurs/velociraptor-mongoliensis-adult-juvenile-dune-growth-ecology-imagegen-v1.png",
+    },
+    {
       kind: "anatomy review",
       title: "Velociraptor graphic Protoceratops pack-feeding ecology review",
       body: "Graphic ecology review sample for judging stronger Djadokhta predator-prey scenes. Three feathered Velociraptor mongoliensis feed on a juvenile Protoceratops andrewsi at the throat, shoulder, and soft belly with visible blood on sand and muzzles. Keep review-only because multi-animal leg count, sickle-claw placement, and Protoceratops body shape need close audit.",
@@ -16463,10 +16524,14 @@ const generatedImageSamples = {
   ],
 };
 
-// 2026-07-19 limb and toe audit: keep only the single full-body Velociraptor
-// candidate that passed the two-hind-leg, no-duplicate-foot, and attached-sickle-claw gate.
+// 2026-07-19 limb and toe audit, rebuilt 2026-07-26: expose only the literature-gated Velociraptor set.
 const approvedVelociraptorCandidateSources = new Set([
-  "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v69-source-candidate.png",
+  "assets/dinosaurs/velociraptor-mongoliensis-djadokhta-raised-second-toe-representative-imagegen-v1.png",
+  "assets/dinosaurs/velociraptor-mongoliensis-dawn-slate-celadon-pattern-imagegen-v1.png",
+  "assets/dinosaurs/velociraptor-mongoliensis-interdune-trackway-ecology-imagegen-v1.png",
+  "assets/dinosaurs/velociraptor-mongoliensis-lowcamera-raised-second-toe-anatomy-imagegen-v1.png",
+  "assets/dinosaurs/velociraptor-mongoliensis-protoceratops-standoff-ecology-imagegen-v1.png",
+  "assets/dinosaurs/velociraptor-mongoliensis-adult-juvenile-dune-growth-ecology-imagegen-v1.png",
 ]);
 generatedImageSamples["velociraptor-mongoliensis"] = generatedImageSamples[
   "velociraptor-mongoliensis"
@@ -16510,6 +16575,13 @@ const verifiedRejectedCandidateSources = new Set([
   "assets/dinosaurs/gallimimus-bullatus-nemegt-flock-ecology-imagegen-v1.png",
   "assets/dinosaurs/gallimimus-bullatus-saltpan-coral-stripe-flock-ecology-imagegen-v1.png",
   "assets/dinosaurs/gallimimus-bullatus-gypsum-black-lemon-pinspot-flock-ecology-imagegen-v1.png",
+  "assets/dinosaurs/velociraptor-mongoliensis-imagegen-v69-source-candidate.png",
+  "assets/dinosaurs/velociraptor-mongoliensis-dune-plumage-variant-imagegen-v1.png",
+  "assets/dinosaurs/velociraptor-mongoliensis-restrained-sickle-imagegen-v6.png",
+  "assets/dinosaurs/velociraptor-mongoliensis-toothedhand-sickle-imagegen-v8.png",
+  "assets/dinosaurs/velociraptor-mongoliensis-protoceratops-graphic-pack-feeding-ecology-imagegen-v1.png",
+  "assets/dinosaurs/velociraptor-mongoliensis-pack-hunt-desert-encircle-imagegen-v1.png",
+  "assets/dinosaurs/velociraptor-mongoliensis-pack-hunt-dune-chase-imagegen-v1.png",
   "assets/dinosaurs/stegosaurus-stenops-imagegen-v92-source-candidate.png",
   "assets/dinosaurs/stegosaurus-stenops-moss-plates-terracotta-mask-pattern-imagegen-v2.png",
   "assets/dinosaurs/stegosaurus-stenops-rain-gully-lavender-plate-mosaic-ecology-imagegen-v1.png",
@@ -17033,7 +17105,7 @@ const taxonPaletteSwatches = {
   "almas-ukhaa": ["#c9a24a", "#3d3b2a", "#31b9c6", "#b83c56"],
   "gobivenator-mongoliensis": ["#78d66f", "#25334a", "#c76f3c", "#efe2bd"],
   "tarbosaurus-bataar": ["#48c7c7", "#1f2526", "#c36a38", "#efe0bd"],
-  "velociraptor-mongoliensis": ["#d79ae8", "#6a3f7d", "#f0d18a", "#2d4f59"],
+  "velociraptor-mongoliensis": ["#34363a", "#718d96", "#b66b48", "#e2d7bd"],
   "triceratops-horridus": ["#5fbfc4", "#244f52", "#d8c68b", "#8d5b40"],
   "torosaurus-latus": ["#d39a55", "#4f331f", "#7fb3a1", "#ead8a9"],
   "styracosaurus-albertensis": ["#dd7b70", "#3e4f64", "#f1b35e", "#eadbc0"],
@@ -18599,12 +18671,13 @@ const identityChecklists = {
     "성장 비교에서는 어린 개체가 성체보다 얕은 머리와 가는 몸·다리 비율을 보이며 두 개체의 팔다리와 꼬리가 서로 융합되지 않음",
   ],
   "velociraptor-mongoliensis": [
-    "새 부리처럼 보이지 않는 좁은 이빨 주둥이",
-    "짙은 점무늬 깃털과 긴 줄무늬 꼬리",
-    "몸과 접힌 앞다리에 깃털 신호",
-    "긴 뻣뻣한 꼬리",
-    "각 뒷발에서 분리되어 읽히는 지지 발가락과 몸에 붙은 들어 올린 둘째 발가락 낫발톱",
-    "접힌 앞다리 두 개와 뒷다리 두 개만 보여야 하며, 세 번째 걷는 다리·여분 앞다리·중복 발·융합 발가락 군집이 없어야 함",
+    "두개골 길이의 약 60%를 차지하는 길고 낮은 이빨 주둥이, 현대 새 부리 아님",
+    "몸 전체의 짧은 깃털과 전완에 붙은 긴 깃털, 비행 날개처럼 펼치지 않음",
+    "정확히 두 앞다리와 두 뒷다리, 읽히는 손마다 세 손가락",
+    "각 뒷발의 두 지지 발가락과 발에 붙어 올라간 둘째 발가락의 절제된 낫발톱",
+    "발목 안쪽 높이 붙은 작은 첫째 발가락, 추가 지면 접촉 발가락이나 떨어진 갈고리 아님",
+    "골반에서 이어져 한 끝으로 마무리되는 길고 뻣뻣한 꼬리",
+    "다중 개체 장면은 몸·팔다리·꼬리가 서로 닿거나 융합되지 않음",
   ],
   "triceratops-horridus": [
     "후기 백악기 헬크리크·랜스층의 대형 카스모사우루스아과 각룡류이며, T. horridus는 헬크리크층의 더 아래·이른 구간에서 주로 확인됨",
@@ -19556,12 +19629,12 @@ const visualVariationProfiles = {
     avoid: "티라노사우루스 렉스 복제 비율, 세 손가락 손, 과대화된 앞다리, 알로사우루스식 머리, 뿔, 가시, 잘린 꼬리, 가려진 발, 여분 다리, 중복 발, 다중 개체의 몸이나 꼬리 융합을 피합니다.",
   },
   "velociraptor-mongoliensis": {
-    legAudit: "2026-07-19 visual audit retained only v69. It passes the two-hind-leg, no-duplicate-foot, separated-toe, and attached raised second-claw gate; reject every candidate with extra limbs, duplicated feet, fused toe clusters, or detached oversized hooks.",
-    color: "어두운 흑연색과 엄버색 깃털, 녹슨 얼굴 포인트",
-    pattern: "고운 반점, 줄무늬 꼬리, 더 어두운 팔/날개깃 가장자리",
-    texture: "몸 전체의 짧은 실모양 깃털과 더 조밀한 비늘 발",
-    anatomy: "이빨 있는 좁은 주둥이, 접힌 앞다리 두 개, 뒷다리 두 개, 분리되어 읽히는 지지 발가락, 과하지 않고 발에 붙은 들어 올린 둘째 발가락 낫발톱",
-    avoid: "현대 새 같은 머리, 날개 부채처럼 펼친 팔, 여분 팔다리, 세 번째 뒷다리, 중복 발, 융합 발가락 군집, 과대하거나 발에서 떨어져 보이는 갈고리 발톱",
+    legAudit: "2026-07-26 전신과 머리·양손·양발·꼬리 확대 크롭에서 새 여섯 역할을 검수했습니다. 두 지지 발가락과 발에 붙어 올라간 둘째 발가락을 우선하고, 세 번째 지면 접촉 발가락·중복 발·분리된 갈고리·여분 팔다리는 탈락시킵니다.",
+    color: "대표는 흑연·엄버 깃털, 크림색 잔점과 목, 녹슨 얼굴 포인트; 변이는 청회색 등면, 잿빛 청자색 옆구리, 절제된 자주색 어깨와 구리빛 얼굴·꼬리 띠",
+    pattern: "대표는 고운 크림색 잔점과 어두운 꼬리 띠, 변이는 옅은 핀스폿과 구리빛 좁은 꼬리 띠를 사용해 같은 종 안의 두 위장을 구분합니다.",
+    texture: "몸 전체의 짧은 깃털, 전완에 붙은 깃축·깃판 구조, 더 조밀한 비늘 발과 각질 발톱",
+    anatomy: "길고 낮은 이빨 주둥이, 접힌 세 손가락 앞다리 두 개, 뒷다리 두 개, 두 지지 발가락, 발에 붙어 올라간 절제된 둘째 낫발가락, 한 끝의 뻣뻣한 꼬리",
+    avoid: "현대 새 머리·부리, 펼친 비행 날개, 세 번째 지면 접촉 발가락과 별도 거대 갈고리의 동시 노출, 여분 팔다리, 중복 발, 융합 발가락, 잘린 꼬리, 접촉·유혈 상호작용",
   },
   "triceratops-horridus": {
     color: "대표는 차가운 슬레이트·틸 회색 몸, 코발트 프릴 음영, 크림색 뿔과 배, 절제된 녹슨색 프릴 포인트; 무늬 변이는 차콜·페트롤 등면, 청록 옆구리, 황토·녹슨빛 프릴 방사 무늬",
@@ -20773,12 +20846,13 @@ const generationRouteGuides = {
     reject: "높은 거대 돔, 긴 뒤통수 가시, 각룡류 프릴, 수각류 이빨, 오리주둥이, 숨은 발, 잘린 꼬리, 여분 팔다리가 있으면 탈락.",
   },
   "velociraptor-mongoliensis": {
-    legAudit: "2026-07-19 run the limb-and-toe gate before promotion: exactly two forelimbs and two hind limbs, no duplicate feet, separated support toes, and one attached raised second-toe claw per visible foot.",
-    focus: "v69 기준의 어두운 반점 깃털, 이빨 있는 주둥이, 정확히 두 앞다리와 두 뒷다리, 과하지 않고 붙어 있는 낫발가락",
-    route: "v69 전신을 유일한 통과 기준으로 사용합니다. 먼저 두 앞다리·두 뒷다리와 발을 고정한 다음, 각 발의 분리된 지지 발가락과 붙어 올라간 둘째 낫발톱을 별도 검수합니다. 갈고리 크기나 발가락 수가 불명확한 후보는 색상·머리 품질과 관계없이 후보 목록에 넣지 않습니다.",
-    control: "assets/dinosaurs/velociraptor-mongoliensis-identity-bodylock-guide-clean-v1.png",
-    pass: "v69 위에서만 저노이즈 국소 보정 | 어두운 반점 깃털과 녹슨 얼굴 유지 | 정확히 두 앞다리와 두 뒷다리 | 중복 발 없음 | 분리된 지지 발가락 | 발에 붙은 작은 들린 둘째 낫발톱",
-    reject: "색상이 좋아도 머리가 현대 새처럼 읽히거나, 접힌 팔이 날개 부채가 되거나, 앞/뒷다리가 추가되거나, 발이 중복되거나, 발가락이 융합되거나, 낫발톱이 거대한 갈고리·떨어진 초승달처럼 되면 탈락.",
+    legAudit: "2026-07-26 승격 전 전신과 양발 확대 크롭을 함께 봅니다. 한 개체마다 앞다리 둘·뒷다리 둘·발 둘만 허용하고, 읽히는 발은 두 지지 발가락과 하나의 붙어 올라간 둘째 발가락으로 판독되어야 합니다.",
+    focus: "드자도흐타층 소형 깃털 드로마에오사우루스류 | 길고 낮은 이빨 주둥이 | 전완 깃털 | 두 지지 발가락과 붙어 올라간 둘째 낫발가락 | 길고 뻣뻣한 한 꼬리",
+    route: "새 대표를 몸·머리·깃털·발 비율의 기준으로 사용합니다. 먼저 한 개체의 두 앞다리·두 뒷다리·한 꼬리를 고정한 뒤 양발을 각각 확대해 두 지지 발가락과 붙은 둘째 낫발가락을 확인합니다. 다중 개체는 빈 지면으로 분리하고 접촉·무리사냥·부모 돌봄을 단정하지 않습니다.",
+    control:
+      "assets/dinosaurs/velociraptor-mongoliensis-djadokhta-raised-second-toe-representative-imagegen-v1.png",
+    pass: "길고 낮은 이빨 주둥이 | 몸과 전완의 깃털 | 정확히 두 앞다리와 두 뒷다리 | 읽히는 손마다 세 손가락 | 각 발의 두 지지 발가락과 붙어 올라간 절제된 둘째 낫발가락 | 한 끝의 온전한 꼬리 | 반건조 사구와 간헐적 습윤 지형",
+    reject: "현대 새 부리·머리, 펼친 비행 날개, 세 지지 발가락과 별도 갈고리의 동시 노출, 거대한 독수리 발톱, 떨어진 초승달, 여분 다리·발·꼬리, 융합 개체, 직접 접촉·상처·유혈이 있으면 탈락.",
   },
   "stegosaurus-stenops": {
     tailAudit: "2026-07-17 strict gate passed by the six final slot images: exactly four attached tail spikes as two left-right pairs, all rising above the tail and ground line; any horizontal, radial, fifth, spear-tip, or detached spike fails.",

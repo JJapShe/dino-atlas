@@ -130,8 +130,14 @@ function loadAtlasCandidateManifest() {
   try {
     const source = fs.readFileSync(appFile, "utf8");
     const start = source.indexOf("const generatedImageSamples = {");
-    const end = source.indexOf("\n};\n\n// 2026-07-19 limb and toe audit", start);
-    if (start < 0 || end < 0) throw new Error("candidate manifest not found");
+    const approvedSetStart = source.indexOf(
+      "const approvedVelociraptorCandidateSources",
+      start,
+    );
+    const end = source.lastIndexOf("\n};", approvedSetStart);
+    if (start < 0 || approvedSetStart < 0 || end <= start) {
+      throw new Error("candidate manifest not found");
+    }
 
     const candidateKinds = new Map();
     const rawCandidates = source.slice(start, end);
