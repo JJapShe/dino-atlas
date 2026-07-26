@@ -69,6 +69,13 @@ const HABITATS = {
     light: "neutral coastal daylight with controlled water reflection",
     backgroundPalette: ["#607a7a", "#a68a65", "#61715b"],
   },
+  "kem-kem-river-delta": {
+    substrate: "broad rust-red sandbars, rippled silt, and shallow freshwater-to-brackish channels",
+    vegetation: "horsetails, ferns, low early angiosperm scrub, and sparse conifers",
+    moisture: "seasonally wet braided river and delta plain",
+    light: "clear neutral daylight with controlled water reflection and no global orange cast",
+    backgroundPalette: ["#9b694c", "#55747a", "#67705a"],
+  },
   "polar-forest": {
     substrate: "cool dark soil, seasonal frost, and damp leaf litter",
     vegetation: "high-latitude conifer and fern woodland",
@@ -312,7 +319,8 @@ function suggestUnregisteredSource(sources, roleKey) {
 function habitatFor(dino, route) {
   const text = `${dino.era} ${dino.region} ${dino.summary || ""} ${route?.focus || ""} ${route?.pass || ""}`.toLowerCase();
   let key = "conifer-fern-floodplain";
-  if (/marine|seaway|ocean|sea |pliosaur|plesiosaur|ichthyosaur|mosasaur|해양|바다|수중/.test(text)) key = "marine";
+  if (dino.id === "spinosaurus-aegyptiacus") key = "kem-kem-river-delta";
+  else if (/marine|seaway|ocean|sea |pliosaur|plesiosaur|ichthyosaur|mosasaur|해양|바다|수중/.test(text)) key = "marine";
   else if (/polar|prince creek|alaska|high-latitude|극지|고위도/.test(text)) key = "polar-forest";
   else if (/gobi|djadokhta|nemegt|dune|desert|sandstone|사구|사막|고비/.test(text)) key = "gobi-arid";
   else if (/coast|lagoon|shore|mudflat|lias|해안|석호|갯벌/.test(text)) key = "coastal-lagoon";

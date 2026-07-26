@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-26T09:49:42.120Z",
-  "reviewBatch": "2026-07-26-richness-six-slot-batch-11",
-  "reviewMethod": "T. rex primary-source skull, forelimb, integument, and lip gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, and secondary-animal inspection",
-  "targetSlots": 511,
+  "generatedAt": "2026-07-26T11:06:29.873Z",
+  "reviewBatch": "2026-07-26-richness-six-slot-batch-12",
+  "reviewMethod": "Spinosaurus primary-source skeletal, tail, gait, and Kem Kem habitat gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, and secondary-animal inspection",
+  "targetSlots": 514,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -2636,30 +2636,57 @@
     "spinosaurus-aegyptiacus": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/spinosaurus-aegyptiacus-imagegen-v1-source-candidate.png",
+        "source": "assets/dinosaurs/spinosaurus-aegyptiacus-kemkem-shortleg-deeptail-threefinger-representative-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The Kem Kem representative passes the full-body and isolated head, both-hand, both-foot, and tail gate with two three-finger forelimbs, two short three-main-toe hind limbs, one tall sail, and one vertically deep tail.",
+        "reviewMethod": "Spinosaurus primary-source skeletal, tail, gait, and Kem Kem habitat gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, and secondary-animal inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-12",
+        "reviewedAt": "2026-07-26T11:06:29.873Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/spinosaurus-aegyptiacus-colorpose-imagegen-v2.png",
+        "source": "assets/dinosaurs/spinosaurus-aegyptiacus-rainflat-indigo-vermilion-turquoise-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing rainflat view adds a distinct indigo, sage, turquoise, and vermilion phenotype while retaining countable corrected hands, feet, one sail, and one deep tail.",
+        "reviewMethod": "Spinosaurus primary-source skeletal, tail, gait, and Kem Kem habitat gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, and secondary-animal inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-12",
+        "reviewedAt": "2026-07-26T11:06:29.873Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/spinosaurus-aegyptiacus-delta-sandbar-petrol-ochre-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/spinosaurus-aegyptiacus-dawn-shallow-channel-wading-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The high-oblique dawn channel scene preserves exposed feet, shortened hind limbs, a deep tail, and a separated fish school while limiting behavior to conservative shallow-water wading and ambush.",
+        "reviewMethod": "Spinosaurus primary-source skeletal, tail, gait, and Kem Kem habitat gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, and secondary-animal inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-12",
+        "reviewedAt": "2026-07-26T11:06:29.873Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/spinosaurus-aegyptiacus-shortleg-threefinger-deeptail-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The bright open-siltbar profile makes the two three-finger forelimbs, two short three-main-toe hind limbs, continuous sail, and single vertically deep tail independently readable.",
+        "reviewMethod": "Spinosaurus primary-source skeletal, tail, gait, and Kem Kem habitat gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, and secondary-animal inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-12",
+        "reviewedAt": "2026-07-26T11:06:29.873Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/spinosaurus-aegyptiacus-onchopristis-separated-channel-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "The wide Kem Kem coexistence scene keeps one Spinosaurus, one Onchopristis, and two distant pterosaurs spatially separated with no contact, wound, capture, or pursuit claim.",
+        "reviewMethod": "Spinosaurus primary-source skeletal, tail, gait, and Kem Kem habitat gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, and secondary-animal inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-12",
+        "reviewedAt": "2026-07-26T11:06:29.873Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/spinosaurus-aegyptiacus-sunrise-sail-display-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The low sunrise broadside varies camera and light while keeping all four limbs and one tail readable; wording treats the posture as a plausible alert or visual display rather than proven courtship.",
+        "reviewMethod": "Spinosaurus primary-source skeletal, tail, gait, and Kem Kem habitat gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, and secondary-animal inspection",
+        "reviewBatch": "2026-07-26-richness-six-slot-batch-12",
+        "reviewedAt": "2026-07-26T11:06:29.873Z"
       }
     },
     "suchomimus-tenerensis": {
@@ -5166,6 +5193,18 @@
     },
     "assets/dinosaurs/tyrannosaurus-rex-visible-twofinger-imagegen-v2.png": {
       "reason": "Visible hands are paired with oversized arms, a long narrow skull, and weak foot geometry, failing the complete T. rex gate."
+    },
+    "assets/dinosaurs/spinosaurus-aegyptiacus-imagegen-v1-source-candidate.png": {
+      "reason": "The former representative has long generic theropod hind limbs and a shallow cylindrical tail, failing the current shortened-leg and vertically deep-tail reconstruction gate."
+    },
+    "assets/dinosaurs/spinosaurus-aegyptiacus-colorpose-imagegen-v2.png": {
+      "reason": "The former pattern image retains the long-legged classic theropod body and shallow tail instead of the revised short-legged, deep-tailed Spinosaurus plan."
+    },
+    "assets/dinosaurs/spinosaurus-aegyptiacus-delta-sandbar-petrol-ochre-ecology-imagegen-v1.png": {
+      "reason": "The Kem Kem setting and palette are useful, but the long hind limbs and shallow cylindrical tail fail the revised whole-body anatomy gate."
+    },
+    "assets/dinosaurs/spinosaurus-aegyptiacus-river-interaction-imagegen-v2.png": {
+      "reason": "Long hind limbs, a shallow tail, and weak species identity in the background-heavy scene fail the revised Spinosaurus anatomy and composition gate."
     }
   }
 }

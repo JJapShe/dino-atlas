@@ -2353,27 +2353,51 @@ window.gallerySlotAssignments = {
   ],
   "spinosaurus-aegyptiacus": [
     {
-      "source": "assets/dinosaurs/spinosaurus-aegyptiacus-imagegen-v1-source-candidate.png",
+      "source": "assets/dinosaurs/spinosaurus-aegyptiacus-kemkem-shortleg-deeptail-threefinger-representative-imagegen-v1.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "kem-kem-river-delta",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/spinosaurus-aegyptiacus-colorpose-imagegen-v2.png",
+      "source": "assets/dinosaurs/spinosaurus-aegyptiacus-rainflat-indigo-vermilion-turquoise-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "kem-kem-river-delta",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/spinosaurus-aegyptiacus-delta-sandbar-petrol-ochre-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/spinosaurus-aegyptiacus-dawn-shallow-channel-wading-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "kem-kem-river-delta",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/spinosaurus-aegyptiacus-shortleg-threefinger-deeptail-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "kem-kem-river-delta",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/spinosaurus-aegyptiacus-onchopristis-separated-channel-ecology-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "kem-kem-river-delta",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/spinosaurus-aegyptiacus-sunrise-sail-display-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "kem-kem-river-delta",
       "expectedKind": "anatomy review"
     }
   ],

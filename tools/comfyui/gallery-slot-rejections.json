@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-26-richness-six-slot-batch-11",
+  "reviewBatch": "2026-07-26-richness-six-slot-batch-12",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -298,6 +298,18 @@
     },
     "assets/dinosaurs/tyrannosaurus-rex-visible-twofinger-imagegen-v2.png": {
       "reason": "Visible hands are paired with oversized arms, a long narrow skull, and weak foot geometry, failing the complete T. rex gate."
+    },
+    "assets/dinosaurs/spinosaurus-aegyptiacus-imagegen-v1-source-candidate.png": {
+      "reason": "The former representative has long generic theropod hind limbs and a shallow cylindrical tail, failing the current shortened-leg and vertically deep-tail reconstruction gate."
+    },
+    "assets/dinosaurs/spinosaurus-aegyptiacus-colorpose-imagegen-v2.png": {
+      "reason": "The former pattern image retains the long-legged classic theropod body and shallow tail instead of the revised short-legged, deep-tailed Spinosaurus plan."
+    },
+    "assets/dinosaurs/spinosaurus-aegyptiacus-delta-sandbar-petrol-ochre-ecology-imagegen-v1.png": {
+      "reason": "The Kem Kem setting and palette are useful, but the long hind limbs and shallow cylindrical tail fail the revised whole-body anatomy gate."
+    },
+    "assets/dinosaurs/spinosaurus-aegyptiacus-river-interaction-imagegen-v2.png": {
+      "reason": "Long hind limbs, a shallow tail, and weak species identity in the background-heavy scene fail the revised Spinosaurus anatomy and composition gate."
     }
   }
 }
