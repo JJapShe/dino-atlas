@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-27-richness-six-slot-batch-19",
+  "reviewBatch": "2026-07-27-richness-six-slot-batch-20",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -406,6 +406,15 @@
     },
     "assets/dinosaurs/therizinosaurus-cheloniformis-nemegt-browse-ecology-imagegen-v1.png": {
       "reason": "The multi-species ecology scene includes a secondary therizinosaur with an unsupported sail-like hump and unstable appendages, so it fails the strict identity gate."
+    },
+    "assets/dinosaurs/protoceratops-andrewsi-hornless-frill-imagegen-v1.png": {
+      "reason": "The former representative has an overly bulbous bulldog/rhinoceros torso, a vertical rounded frill, an oversized beak, and generalized forefeet and hind feet that do not clear the strict five-finger manus and four-toed pes gate."
+    },
+    "assets/dinosaurs/protoceratops-andrewsi-tealrust-pattern-imagegen-v1.png": {
+      "reason": "The former pattern repeats the same left-facing midday broadside and bulky body as the old representative, with weak forefoot-versus-hind-foot differentiation despite the teal tint."
+    },
+    "assets/dinosaurs/protoceratops-andrewsi-gobi-ecology-imagegen-v1.png": {
+      "reason": "The former ecology scene repeats the same body and angle across three animals, multiplying generalized feet and rounded frills while adding little role or composition diversity."
     }
   }
 }

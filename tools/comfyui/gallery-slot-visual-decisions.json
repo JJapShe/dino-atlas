@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-27T02:09:54.773Z",
-  "reviewBatch": "2026-07-27-richness-six-slot-batch-19",
-  "reviewMethod": "Therizinosaurus claw-straightness and uncertain-function literature gate; strict two-arm, three-claw-per-hand, two-leg, four-grounded-toe-per-foot, one-tail review; original-size full-frame and appendage-crop inspection",
-  "targetSlots": 529,
+  "generatedAt": "2026-07-27T03:11:40.595Z",
+  "reviewBatch": "2026-07-27-richness-six-slot-batch-20",
+  "reviewMethod": "Protoceratops adult limb, associated-track, and cranial-ontogeny literature gate; strict two-forelimb, five-finger-per-manus, two-hindlimb, four-functional-toe-per-pes, one-tail review; original-size full-frame and head, hand, foot, tail, adult, juvenile, and secondary-animal crop inspection",
+  "targetSlots": 532,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -3675,30 +3675,57 @@
     "protoceratops-andrewsi": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/protoceratops-andrewsi-hornless-frill-imagegen-v1.png",
+        "source": "assets/dinosaurs/protoceratops-andrewsi-djadokhta-fivefinger-fourtoe-representative-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Low adult quadruped preserves the short deep beaked skull, low nasal bump, shallow backward frill, exactly two forelimbs, two hind limbs, one tail, five fingers on both readable hands, and four toes on both readable feet.",
+        "reviewMethod": "Słowiak et al. 2019 adult limb gate plus Niedźwiedzki et al. 2012 associated-track gate; original-size full-frame and isolated head, two-hand, two-foot, and tail crops",
+        "reviewBatch": "2026-07-27-richness-six-slot-batch-20",
+        "reviewedAt": "2026-07-27T03:11:40.595Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/protoceratops-andrewsi-tealrust-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/protoceratops-andrewsi-bluehour-petrol-celadon-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Reverse-facing blue-hour scene adds petrol, celadon, cream, and russet variation while keeping exactly four limbs, one tail, and corrected four-toed hind feet; the far hand remains partly softened by perspective.",
+        "reviewMethod": "Original-size full-frame and isolated head, near-hand, two-foot, and tail review after targeted hind-foot correction; retained below representative rank because the far-hand digits are not independently countable",
+        "reviewBatch": "2026-07-27-richness-six-slot-batch-20",
+        "reviewedAt": "2026-07-27T03:11:40.595Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/protoceratops-andrewsi-gobi-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/protoceratops-andrewsi-interdune-browse-habitat-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "High-oblique single-animal view adds Djadokhta interdune browse and spatial context while preserving the four limbs and one tail; malformed three-toed generated tracks were removed from the final image.",
+        "reviewMethod": "Original-size full-frame and isolated appendage review against the adult limb and associated-track gates after removing misleading generated footprints",
+        "reviewBatch": "2026-07-27-richness-six-slot-batch-20",
+        "reviewedAt": "2026-07-27T03:11:40.595Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/protoceratops-andrewsi-fivefinger-fourtoe-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "Open low view passes exactly two forelimbs with five fingers per hand, two hind limbs with four broad functional toes per foot, and one pelvis-origin tail after targeted hind-foot correction.",
+        "reviewMethod": "Słowiak et al. 2019 and Niedźwiedzki et al. 2012 gates; original-size full-frame plus isolated two-hand, two-foot, head, and tail crops",
+        "reviewBatch": "2026-07-27-richness-six-slot-batch-20",
+        "reviewedAt": "2026-07-27T03:11:40.595Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/protoceratops-andrewsi-velociraptor-gully-coexistence-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "A broad runoff gully keeps the distant Velociraptor non-contact and subordinate while the foreground Protoceratops preserves exactly four limbs and one tail; rear-three-quarter perspective limits independent digit counts.",
+        "reviewMethod": "Original-size full-frame plus isolated primary, secondary-animal, head, appendage, and tail crops; no contact, attack outcome, pack behavior, or exact-digit claim",
+        "reviewBatch": "2026-07-27-richness-six-slot-batch-20",
+        "reviewedAt": "2026-07-27T03:11:40.595Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/protoceratops-andrewsi-adult-juvenile-dune-growth-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Spatially separated adult and juvenile compare the adult longer rostrum, wider frill, low nasal bump, and smaller relative orbit with the juvenile shorter rostrum, tiny low frill, absent nasal bump, and larger relative orbit.",
+        "reviewMethod": "Maiorino et al. 2015 cranial-ontogeny gate; original-size full-frame and isolated adult, juvenile, head, appendage, and tail crops; no sex, parentage, family, care, or herd claim",
+        "reviewBatch": "2026-07-27-richness-six-slot-batch-20",
+        "reviewedAt": "2026-07-27T03:11:40.595Z"
       }
     },
     "centrosaurus-apertus": {
@@ -5436,6 +5463,15 @@
     },
     "assets/dinosaurs/therizinosaurus-cheloniformis-nemegt-browse-ecology-imagegen-v1.png": {
       "reason": "The multi-species ecology scene includes a secondary therizinosaur with an unsupported sail-like hump and unstable appendages, so it fails the strict identity gate."
+    },
+    "assets/dinosaurs/protoceratops-andrewsi-hornless-frill-imagegen-v1.png": {
+      "reason": "The former representative has an overly bulbous bulldog/rhinoceros torso, a vertical rounded frill, an oversized beak, and generalized forefeet and hind feet that do not clear the strict five-finger manus and four-toed pes gate."
+    },
+    "assets/dinosaurs/protoceratops-andrewsi-tealrust-pattern-imagegen-v1.png": {
+      "reason": "The former pattern repeats the same left-facing midday broadside and bulky body as the old representative, with weak forefoot-versus-hind-foot differentiation despite the teal tint."
+    },
+    "assets/dinosaurs/protoceratops-andrewsi-gobi-ecology-imagegen-v1.png": {
+      "reason": "The former ecology scene repeats the same body and angle across three animals, multiplying generalized feet and rounded frills while adding little role or composition diversity."
     }
   }
 }
