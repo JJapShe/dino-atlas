@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-27T19:38:37.911Z",
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-24",
-  "reviewMethod": "Buriolestes original-description, revised-skeleton, and endocranial active-predator literature gate; strict two-forelimb, two-hindlimb, one-head, one-continuous-tail review for every primary animal; original-size inspection of all eight legacy files, full-frame contact sheets, and isolated head, both-hand, both-foot, limb-junction, tail, and secondary-animal crops; three principal forward pedal digits distinguished from a potentially subtle inner first digit, while exact manual digit count is not used as a species gate because the fossil manus is mostly unknown",
-  "targetSlots": 542,
+  "generatedAt": "2026-07-27T20:29:56.868Z",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-25",
+  "reviewMethod": "Ornitholestes redescription, holotype, forelimb-function, and Morrison-environment literature gate; strict two-forelimb, two-hindlimb, one-head, one-continuous-tail review for every primary animal; original-size inspection of all fourteen legacy files and all six selected files, full-frame contact sheets, and isolated head, both-hand, both-foot, pelvis-tail, and secondary-animal crops; three-finger hands treated as a conservative reconstruction because only part of the manus is preserved, trackways treated as environmental context rather than individual attribution, and filament covering treated as phylogenetic inference rather than direct skin evidence",
+  "targetSlots": 543,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -1060,48 +1060,57 @@
     "ornitholestes-hermanni": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/ornitholestes-hermanni-slender-coelurosaur-imagegen-v1.png",
+        "source": "assets/dinosaurs/ornitholestes-hermanni-shortneck-toothed-threefinger-representative-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The complete daylight profile corrects the legacy swan-neck and toothless-beak drift with a relatively short gently curved neck, compact trunk, low toothed skull, large orbit, exactly two flexed forelimbs, two hind limbs, three principal forward toes, and one continuous long tail.",
+        "reviewMethod": "Original-size full frame plus head, both-hand, both-foot, pelvis, and tail crops; the visible three-finger hands are accepted as a conservative reconstruction rather than a claim of a completely preserved manus",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-25",
+        "reviewedAt": "2026-07-27T20:29:56.868Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/ornitholestes-hermanni-slate-rust-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/ornitholestes-hermanni-bottlegreen-plum-saffron-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing blue-hour variant preserves the corrected short-necked toothed body plan, two arms, two legs, visible feet, and one tail while separating the palette with bottle green, charcoal, plum, saffron, ivory, and cinnamon.",
+        "reviewMethod": "Original-size full frame and head, hands, feet, pelvis, and tail crops; retained as a pattern hold because the darker reverse-facing perspective reduces far-foot detail",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-25",
+        "reviewedAt": "2026-07-27T20:29:56.868Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/ornitholestes-hermanni-morrison-trackway-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/ornitholestes-hermanni-postrain-crevasse-splay-trackway-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The high-oblique post-rain crevasse-splay view retains one complete short-necked animal with two arms, two legs, separated feet, and one tail while adding a distinct floodplain-process composition.",
+        "reviewMethod": "Original-size full frame plus head, hand, foot, pelvis, and tail crops; foreground tracks are accepted only as general environmental context and are not attributed to Ornitholestes or the pictured individual",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-25",
+        "reviewedAt": "2026-07-27T20:29:56.868Z"
       },
       "4": {
         "status": "approved",
-        "source": "assets/dinosaurs/ornitholestes-hermanni-slender-coelurosaur-identity-imagegen-v2.png",
+        "source": "assets/dinosaurs/ornitholestes-hermanni-shortneck-toothed-hand-foot-identity-imagegen-v1.png",
         "role": "identity-anatomy",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The bright low three-quarter view exposes the low toothed skull, short neck, both strongly flexed forelimbs, two separated hands, two feet, and the full tail more clearly than the legacy long-neck identity image.",
+        "reviewMethod": "Original-size full frame plus head, both-hand, both-foot, pelvis, and tail crops; manual digit count remains reconstruction-sensitive because the holotype preserves only part of the hand",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-25",
+        "reviewedAt": "2026-07-27T20:29:56.868Z"
       },
       "5": {
         "status": "approved",
-        "source": "assets/dinosaurs/ornitholestes-hermanni-dryosaurus-chase-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/ornitholestes-hermanni-dryosaurus-channel-coexistence-ecology-imagegen-v1.png",
         "role": "interaction",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The wide channel-separated scene keeps one complete primary Ornitholestes with two arms, two legs, readable feet, and one tail while replacing direct chase and injury with spatially separated Morrison-fauna context.",
+        "reviewMethod": "Original-size full frame plus primary head, hands, feet, tail, and distant Dryosaurus crop; no contact, pursuit, attack, injury, feeding, or documented species-level encounter is claimed, and the distant secondary animal is not used for exact limb review",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-25",
+        "reviewedAt": "2026-07-27T20:29:56.868Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/ornitholestes-hermanni-fallen-log-rain-alert-defense-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The low storm-break three-quarter frame shows one alert animal with a short neck, low toothed head, two separately flexed forelimbs, two fully planted hind limbs, readable feet, and one complete tail, with no attacker or contact scene.",
+        "reviewMethod": "Original-size full frame plus head, both-hand, both-foot, pelvis, and tail crops; the posture is explicitly an alert hypothesis and no social behavior, sex, growth stage, dominance, or documented defensive event is inferred",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-25",
+        "reviewedAt": "2026-07-27T20:29:56.868Z"
       }
     },
     "dilophosaurus-wetherilli": {
@@ -5631,6 +5640,48 @@
     },
     "assets/dinosaurs/buriolestes-schultzi-santa-maria-forage-ecology-imagegen-v1.png": {
       "reason": "The warm daylight small-prey scene is anatomically usable but duplicates the interaction and stream-margin roles; it is superseded by the better separated post-rain habitat, obsidian-opal dawn interaction, and storm-break alert set."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-dryosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "The former direct-attack frame uses a generic long-necked primary animal, unstable oversized hands, and a poorly resolved secondary body, so it fails both species identity and appendage review."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-dryosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The former carcass-feeding scene overstates a species-level interaction while retaining ornithomimid-like neck and head proportions, crowded hands, and a generic heavy carcass."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-dryosaurus-chase-ecology-imagegen-v1.png": {
+      "reason": "The former chase scene turns uncertain coexistence into direct pursuit and renders both animals as generic long-necked runners with weak hand and foot readability."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-enigmacursor-attack-ecology-imagegen-v1.png": {
+      "reason": "The former attack candidate combines contact and injury with a generic long-necked primary, oversized multi-digit hands, and a taxonomically weak secondary animal."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-enigmacursor-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The former feeding candidate relies on an unsupported named-species carcass association and obscures appendage identity around a long-necked, generalized predator body."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-enigmacursor-fern-hollow-flank-nip-ecology-imagegen-v1.png": {
+      "reason": "The tight flank-contact frame obscures appendage junctions, enlarges the primary hands toward dromaeosaur proportions, and gives the secondary animal a generic runner silhouette."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-morrison-trackway-ecology-imagegen-v1.png": {
+      "reason": "The former trackway image has an elongated swan-like neck, a small beak-like head, weakly separated multi-digit hands, and a track attribution that is too specific for the visible evidence."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-othnielosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "The former attack frame combines biting and injury with generic long-necked bodies, oversized hands, and poor species-level separation."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-othnielosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The former carcass scene makes an unsupported named-species feeding claim and retains a generalized long-necked predator with unstable hand detail."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-othnielosaurus-low-scrub-ambush-ecology-imagegen-v3.png": {
+      "reason": "Original-size review resolves oversized dromaeosaur-like hands with four or more apparent digits, while low scrub and motion obscure the secondary animal and tail junction."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-othnielosaurus-open-pursuit-ecology-imagegen-v2.png": {
+      "reason": "The former open pursuit repeats an unsupported chase, gives the primary a generalized long-necked runner head, and resolves the hands as oversized with more than three apparent digits."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-slate-rust-pattern-imagegen-v1.png": {
+      "reason": "The former pattern candidate is dominated by an ornithomimid-like swan neck, small beak-like head, weak teeth, and long bird-runner proportions despite its usable color contrast."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-slender-coelurosaur-identity-imagegen-v2.png": {
+      "reason": "The former identity view repeats the elongated neck and toothless bird-like head, so it is unsuitable as positive anatomy evidence even though the full body is visible."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-slender-coelurosaur-imagegen-v1.png": {
+      "reason": "The former representative has an elongated swan-like neck, small beak-like head, weak dentition, and ornithomimid runner proportions that conflict with the corrected redescription-based gate."
     }
   }
 }

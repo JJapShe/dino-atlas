@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-24",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-25",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -484,6 +484,48 @@
     },
     "assets/dinosaurs/buriolestes-schultzi-santa-maria-forage-ecology-imagegen-v1.png": {
       "reason": "The warm daylight small-prey scene is anatomically usable but duplicates the interaction and stream-margin roles; it is superseded by the better separated post-rain habitat, obsidian-opal dawn interaction, and storm-break alert set."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-dryosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "The former direct-attack frame uses a generic long-necked primary animal, unstable oversized hands, and a poorly resolved secondary body, so it fails both species identity and appendage review."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-dryosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The former carcass-feeding scene overstates a species-level interaction while retaining ornithomimid-like neck and head proportions, crowded hands, and a generic heavy carcass."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-dryosaurus-chase-ecology-imagegen-v1.png": {
+      "reason": "The former chase scene turns uncertain coexistence into direct pursuit and renders both animals as generic long-necked runners with weak hand and foot readability."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-enigmacursor-attack-ecology-imagegen-v1.png": {
+      "reason": "The former attack candidate combines contact and injury with a generic long-necked primary, oversized multi-digit hands, and a taxonomically weak secondary animal."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-enigmacursor-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The former feeding candidate relies on an unsupported named-species carcass association and obscures appendage identity around a long-necked, generalized predator body."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-enigmacursor-fern-hollow-flank-nip-ecology-imagegen-v1.png": {
+      "reason": "The tight flank-contact frame obscures appendage junctions, enlarges the primary hands toward dromaeosaur proportions, and gives the secondary animal a generic runner silhouette."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-morrison-trackway-ecology-imagegen-v1.png": {
+      "reason": "The former trackway image has an elongated swan-like neck, a small beak-like head, weakly separated multi-digit hands, and a track attribution that is too specific for the visible evidence."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-othnielosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "The former attack frame combines biting and injury with generic long-necked bodies, oversized hands, and poor species-level separation."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-othnielosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The former carcass scene makes an unsupported named-species feeding claim and retains a generalized long-necked predator with unstable hand detail."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-othnielosaurus-low-scrub-ambush-ecology-imagegen-v3.png": {
+      "reason": "Original-size review resolves oversized dromaeosaur-like hands with four or more apparent digits, while low scrub and motion obscure the secondary animal and tail junction."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-othnielosaurus-open-pursuit-ecology-imagegen-v2.png": {
+      "reason": "The former open pursuit repeats an unsupported chase, gives the primary a generalized long-necked runner head, and resolves the hands as oversized with more than three apparent digits."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-slate-rust-pattern-imagegen-v1.png": {
+      "reason": "The former pattern candidate is dominated by an ornithomimid-like swan neck, small beak-like head, weak teeth, and long bird-runner proportions despite its usable color contrast."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-slender-coelurosaur-identity-imagegen-v2.png": {
+      "reason": "The former identity view repeats the elongated neck and toothless bird-like head, so it is unsuitable as positive anatomy evidence even though the full body is visible."
+    },
+    "assets/dinosaurs/ornitholestes-hermanni-slender-coelurosaur-imagegen-v1.png": {
+      "reason": "The former representative has an elongated swan-like neck, small beak-like head, weak dentition, and ornithomimid runner proportions that conflict with the corrected redescription-based gate."
     }
   }
 }
