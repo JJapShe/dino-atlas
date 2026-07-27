@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-27-richness-six-slot-batch-21",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-22",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -430,6 +430,30 @@
     },
     "assets/dinosaurs/pachycephalosaurus-wyomingensis-hellcreek-interaction-imagegen-v2.png": {
       "reason": "Former interaction scene contains generalized and taxonomically weak background dinosaurs, repeats the old arid broadside composition, and does not provide a controlled coexistence comparison."
+    },
+    "assets/dinosaurs/scelidosaurus-harrisonii-blackberry-mint-osteoderm-pattern-imagegen-v1.png": {
+      "reason": "Former pattern variant uses a squat derived-ankylosaur silhouette, many flat circular coin-like tiles, a strongly ringed tail, and the same shoreline broadside framing as the old representative."
+    },
+    "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-armored-quadruped-imagegen-v1.png": {
+      "reason": "Former representative is overly low and tank-like, replaces the documented differentiated ridged armor with regular rounded tiles, and treats the marine fossil coast as the living habitat."
+    },
+    "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-storm-armor-walk-imagegen-v2.png": {
+      "reason": "Former storm walk repeats the old coastal broadside, keeps uniform rounded dorsal tiles and weak neck-collar differentiation, and adds little role diversity beyond the old representative."
+    },
+    "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-tidepool-ecology-imagegen-v1.png": {
+      "reason": "Former ecology scene depicts habitual shoreline tidepool life despite the marine unit recording deposition rather than direct living habitat, and both animals retain overly regular round-tile armor."
+    },
+    "assets/dinosaurs/scelidosaurus-harrisonii-sarcosaurus-armor-brace-defense-ecology-imagegen-v1.png": {
+      "reason": "Unregistered defense scene relies on an unsupported Sarcosaurus encounter, repeats direct predator staging, and obscures armor-row and foot review in a tight rear pose."
+    },
+    "assets/dinosaurs/scelidosaurus-harrisonii-sarcosaurus-shale-channel-armor-brace-ecology-imagegen-v1.png": {
+      "reason": "Unregistered shale-channel scene combines unsupported Sarcosaurus co-occurrence with a curled defensive pose, regular coin armor, and weak appendage readability."
+    },
+    "assets/dinosaurs/scelidosaurus-harrisonii-sarcosaurus-tidepool-shoulder-roll-defense-ecology-imagegen-v1.png": {
+      "reason": "Unregistered shoulder-roll scene crowds the foreground body, weakens tail and foot inspection, and again treats a speculative Sarcosaurus confrontation on the marine foreshore as ordinary ecology."
+    },
+    "assets/dinosaurs/scelidosaurus-harrisonii-stormchannel-lichen-wine-ecology-imagegen-v1.png": {
+      "reason": "Unregistered storm-channel view repeats the coastal depositional setting, places both bodies at anatomy-obscuring distance, and retains broad regular armor tiles instead of differentiated rows."
     }
   }
 }

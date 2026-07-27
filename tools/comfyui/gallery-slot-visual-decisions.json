@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-27T07:01:17.208Z",
-  "reviewBatch": "2026-07-27-richness-six-slot-batch-21",
-  "reviewMethod": "Pachycephalosaurus adult cranial, cranial-pathology, related-pachycephalosaur postcranial, and Hell Creek palaeosol literature gate; strict two-forelimb, two-hindlimb, one-tail and three-forward-weight-bearing-toe review; original-size full-frame, six-role contact-sheet, and head, arm, foot, and tail crops; no exact-hand or direct-combat claim",
-  "targetSlots": 535,
+  "generatedAt": "2026-07-27T18:30:12.504Z",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-22",
+  "reviewMethod": "Scelidosaurus cranial, postcranial, dermal-skeleton, locomotor, and Lias depositional-context literature gate; strict two-forelimb, two-hindlimb, one-tail review per animal; original-size full frames, seven-output contact sheet, and head, limb, tail, and secondary-animal crops; exact per-foot digit formula claimed only where readable; marine fossil deposit kept distinct from inferred terrestrial habitat",
+  "targetSlots": 538,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -2388,30 +2388,57 @@
     "scelidosaurus-harrisonii": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-armored-quadruped-imagegen-v1.png",
+        "source": "assets/dinosaurs/scelidosaurus-harrisonii-humid-island-ridged-armor-representative-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The complete adult preserves a barrel torso, moderately higher hips, a small closed beaked head with cranial osteoderm cues, separated neck and torso ridges, exactly two forelimbs, two hind limbs, and one ordinary tapering tail without club or terminal spikes.",
+        "reviewMethod": "Original-size full frame plus isolated head, four-limb, and tail crops against Norman 2020 cranial, postcranial, dermal, and locomotor gates; foot digits are readable enough for gross identity but are not used as an exact phalangeal-formula claim",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-22",
+        "reviewedAt": "2026-07-27T18:30:12.504Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/scelidosaurus-harrisonii-blackberry-mint-osteoderm-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/scelidosaurus-harrisonii-bluehour-petrol-celadon-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing blue-hour variant adds petrol, celadon, plum, ivory, rust, and tail-chevron color structure while retaining exactly four limbs, one tail, a beaked head, and separated ridged armor rather than the former flat coin-tile field.",
+        "reviewMethod": "Original-size full frame and head, limb, and tail crops; kept below representative rank because distant-foot digit separation is softened by the low three-quarter perspective",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-22",
+        "reviewedAt": "2026-07-27T18:30:12.504Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-tidepool-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/scelidosaurus-harrisonii-island-river-terrace-habitat-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The elevated river-terrace composition replaces the former tidepool-as-living-habitat framing; a channel separates two animals and the foreground individual retains exactly four distinct limbs and one complete tail on open gravel.",
+        "reviewMethod": "Original-size full frame plus foreground limb and tail crops; humid island river setting is labeled an inference from terrestrial ecology and adjacent-continent runoff rather than a direct reconstruction of the marine fossil bed",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-22",
+        "reviewedAt": "2026-07-27T18:30:12.504Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/scelidosaurus-harrisonii-three-row-tail-four-row-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The bright full-body view exposes the cranial and cervical osteoderm region, three principal torso-row concept, enlarged ventrolateral blades, four-row tail concept, exactly two forelimbs, two hind limbs, and one unclipped tapering tail.",
+        "reviewMethod": "Original and edited full-frame comparison plus head, limb, and tail crops; the edit rounded the cranial projections, but not every foot preserves the exact manual and pedal digit formula, so this remains armor-layout reference only",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-22",
+        "reviewedAt": "2026-07-27T18:30:12.504Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/scelidosaurus-harrisonii-dimorphodon-rivermouth-coexistence-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "A fallen trunk and broad depth gap isolate one small pterosaur from the complete foreground Scelidosaurus; the primary animal keeps four limbs and one tail, and no contact, pursuit, vigilance, or predation is depicted.",
+        "reviewMethod": "Original-size primary-animal, secondary-animal, limb, and tail crops; Dimorphodon is retained as cautious same-Lias terrestrial-vertebrate context rather than evidence of direct interaction at one site",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-22",
+        "reviewedAt": "2026-07-27T18:30:12.504Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/scelidosaurus-harrisonii-osteoderm-growth-sequence-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "A dry channel separates a mature and smaller individual; each has four limbs and one tail, while the smaller body uses lower, less differentiated armor and the adult uses larger collar and flank osteoderms.",
+        "reviewMethod": "Original-size two-animal full frame plus adult, smaller-individual, limb, and tail crops against Norman 2020 dermal growth observations; no sex, parentage, care, exact age, or social relationship is claimed",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-22",
+        "reviewedAt": "2026-07-27T18:30:12.504Z"
       }
     },
     "gargoyleosaurus-parkpinorum": {
@@ -5514,6 +5541,30 @@
     },
     "assets/dinosaurs/pachycephalosaurus-wyomingensis-hellcreek-interaction-imagegen-v2.png": {
       "reason": "Former interaction scene contains generalized and taxonomically weak background dinosaurs, repeats the old arid broadside composition, and does not provide a controlled coexistence comparison."
+    },
+    "assets/dinosaurs/scelidosaurus-harrisonii-blackberry-mint-osteoderm-pattern-imagegen-v1.png": {
+      "reason": "Former pattern variant uses a squat derived-ankylosaur silhouette, many flat circular coin-like tiles, a strongly ringed tail, and the same shoreline broadside framing as the old representative."
+    },
+    "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-armored-quadruped-imagegen-v1.png": {
+      "reason": "Former representative is overly low and tank-like, replaces the documented differentiated ridged armor with regular rounded tiles, and treats the marine fossil coast as the living habitat."
+    },
+    "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-storm-armor-walk-imagegen-v2.png": {
+      "reason": "Former storm walk repeats the old coastal broadside, keeps uniform rounded dorsal tiles and weak neck-collar differentiation, and adds little role diversity beyond the old representative."
+    },
+    "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-tidepool-ecology-imagegen-v1.png": {
+      "reason": "Former ecology scene depicts habitual shoreline tidepool life despite the marine unit recording deposition rather than direct living habitat, and both animals retain overly regular round-tile armor."
+    },
+    "assets/dinosaurs/scelidosaurus-harrisonii-sarcosaurus-armor-brace-defense-ecology-imagegen-v1.png": {
+      "reason": "Unregistered defense scene relies on an unsupported Sarcosaurus encounter, repeats direct predator staging, and obscures armor-row and foot review in a tight rear pose."
+    },
+    "assets/dinosaurs/scelidosaurus-harrisonii-sarcosaurus-shale-channel-armor-brace-ecology-imagegen-v1.png": {
+      "reason": "Unregistered shale-channel scene combines unsupported Sarcosaurus co-occurrence with a curled defensive pose, regular coin armor, and weak appendage readability."
+    },
+    "assets/dinosaurs/scelidosaurus-harrisonii-sarcosaurus-tidepool-shoulder-roll-defense-ecology-imagegen-v1.png": {
+      "reason": "Unregistered shoulder-roll scene crowds the foreground body, weakens tail and foot inspection, and again treats a speculative Sarcosaurus confrontation on the marine foreshore as ordinary ecology."
+    },
+    "assets/dinosaurs/scelidosaurus-harrisonii-stormchannel-lichen-wine-ecology-imagegen-v1.png": {
+      "reason": "Unregistered storm-channel view repeats the coastal depositional setting, places both bodies at anatomy-obscuring distance, and retains broad regular armor tiles instead of differentiated rows."
     }
   }
 }

@@ -111,6 +111,13 @@ const HABITATS = {
     light: "soft broken-cloud daylight with cool water reflection and localized neutral sunlight",
     backgroundPalette: ["#4f6257", "#7c725f", "#556b70"],
   },
+  "dorset-humid-island-river": {
+    substrate: "gravelly island river terraces, dark wet silt, shallow runoff channels, and low coastal uplands",
+    vegetation: "conifers, ferns, horsetails, and low cycadophytes",
+    moisture: "humid terrestrial island with seasonally active runoff",
+    light: "soft broken-cloud daylight with localized cool water reflection",
+    backgroundPalette: ["#53685d", "#7f7460", "#5b6f76"],
+  },
   "polar-forest": {
     substrate: "cool dark soil, seasonal frost, and damp leaf litter",
     vegetation: "high-latitude conifer and fern woodland",
@@ -361,6 +368,7 @@ function habitatFor(dino, route) {
   else if (dino.id === "parasaurolophus-walkeri") key = "dinosaur-park-coastal-plain";
   else if (dino.id === "edmontosaurus-annectens") key = "hell-creek-lance-fluvial-forest";
   else if (dino.id === "rhamphorhynchus-muensteri") key = "solnhofen-restricted-carbonate-lagoon";
+  else if (dino.id === "scelidosaurus-harrisonii") key = "dorset-humid-island-river";
   else if (/marine|seaway|ocean|sea |pliosaur|plesiosaur|ichthyosaur|mosasaur|해양|바다|수중/.test(text)) key = "marine";
   else if (/polar|prince creek|alaska|high-latitude|극지|고위도/.test(text)) key = "polar-forest";
   else if (/gobi|djadokhta|nemegt|dune|desert|sandstone|사구|사막|고비/.test(text)) key = "gobi-arid";

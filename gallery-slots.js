@@ -2131,27 +2131,51 @@ window.gallerySlotAssignments = {
   ],
   "scelidosaurus-harrisonii": [
     {
-      "source": "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-armored-quadruped-imagegen-v1.png",
+      "source": "assets/dinosaurs/scelidosaurus-harrisonii-humid-island-ridged-armor-representative-imagegen-v1.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "dorset-humid-island-river",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/scelidosaurus-harrisonii-blackberry-mint-osteoderm-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/scelidosaurus-harrisonii-bluehour-petrol-celadon-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "dorset-humid-island-river",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-tidepool-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/scelidosaurus-harrisonii-island-river-terrace-habitat-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "dorset-humid-island-river",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/scelidosaurus-harrisonii-three-row-tail-four-row-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "dorset-humid-island-river",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/scelidosaurus-harrisonii-dimorphodon-rivermouth-coexistence-ecology-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "dorset-humid-island-river",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/scelidosaurus-harrisonii-osteoderm-growth-sequence-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "dorset-humid-island-river",
       "expectedKind": "anatomy review"
     }
   ],

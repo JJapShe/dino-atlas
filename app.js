@@ -1417,7 +1417,7 @@ const dinosaurs = [
     region: "유럽",
     length: 4.0,
     knowledgeLevel: 3,
-    imageSlots: 3,
+    imageSlots: 6,
     reviewStatus: "신규 후보",
     summary:
       "영국 블루 라이어스 해안의 초기 장갑류입니다. 낮고 긴 사족보행 몸, 작은 초식형 머리, 등과 옆구리의 낮은 골편 줄, 긴 꼬리, 꼬리곤봉이나 스테고사우루스식 큰 골판이 없는 점을 중심으로 검수합니다.",
@@ -4040,6 +4040,7 @@ const state = {
     scale: 0.62,
     x: 24,
     y: 16,
+    fitted: false,
     dragging: false,
     transformFrame: 0,
     startX: 0,
@@ -4050,6 +4051,7 @@ const state = {
 };
 
 const recentImageUpdateTaxa = [
+  "scelidosaurus-harrisonii",
   "therizinosaurus-cheloniformis",
   "rhamphorhynchus-muensteri",
   "edmontosaurus-annectens",
@@ -4078,7 +4080,6 @@ const recentImageUpdateTaxa = [
   "quetzalcoatlus-northropi",
   "elasmosaurus-platyurus",
   "sauropelta-edwardsorum",
-  "scelidosaurus-harrisonii",
   "gargoyleosaurus-parkpinorum",
   "prenocephale-prenes",
   "goyocephale-lattimorei",
@@ -16466,35 +16467,52 @@ const generatedImageSamples = {
   "scelidosaurus-harrisonii": [
     {
       kind: "count-level pass",
-      title: "스켈리도사우루스 블루 라이어스 장갑 사족보행 대표 후보",
-      body: "전기 쥐라기 블루 라이어스 해안의 스켈리도사우루스 대표 후보입니다. 낮고 긴 사족보행 몸, 작은 초식성 머리, 등과 옆구리의 낮은 골편 줄, 보이는 네 발, 꼬리곤봉 없는 길고 끝가늘어진 꼬리를 카드 기준으로 둡니다.",
-      source: "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-armored-quadruped-imagegen-v1.png",
-      variant: "블루 라이어스 장갑 사족보행 이미지 생성 v1",
-      src: "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-armored-quadruped-imagegen-v1.png",
+      title: "스켈리도사우루스 습윤 섬 능선형 피갑 대표 후보",
+      body: "전기 쥐라기 도싯 인근 육상 섬의 스켈리도사우루스 대표 후보입니다. 배럴형 몸통, 뒷다리가 조금 더 긴 네 다리, 부리형 머리와 짧고 둥근 후두 골편, 목 고리 배열, 몸통의 분리된 능선형 골편, 곤봉 없이 가늘어지는 온전한 꼬리를 카드 기준으로 둡니다. 기존 원형 타일 갑옷과 해안 조수 웅덩이 복원은 대표에서 제외했습니다.",
+      source: "assets/dinosaurs/scelidosaurus-harrisonii-humid-island-ridged-armor-representative-imagegen-v1.png",
+      variant: "습윤 섬 능선형 피갑 대표 이미지 생성 v1",
+      src: "assets/dinosaurs/scelidosaurus-harrisonii-humid-island-ridged-armor-representative-imagegen-v1.png",
     },
     {
       kind: "review hold",
-      title: "스켈리도사우루스 블랙베리-민트 골편 무늬",
-      body: "블랙베리빛 등, 민트색 목과 옆구리, 황토색 뺨, 크림색 배, 밝은 골편 하이라이트와 검은 꼬리 띠를 넣은 같은 체형 색상 변이입니다. 색상 다양화 참고로 쓰되 골편 크기와 발 노출은 대표 후보로 재확인합니다.",
-      source: "assets/dinosaurs/scelidosaurus-harrisonii-blackberry-mint-osteoderm-pattern-imagegen-v1.png",
-      variant: "블랙베리-민트 골편 무늬 이미지 생성 v1",
-      src: "assets/dinosaurs/scelidosaurus-harrisonii-blackberry-mint-osteoderm-pattern-imagegen-v1.png",
+      title: "스켈리도사우루스 청색 시간 페트롤-청자색 무늬",
+      body: "대표와 반대 방향의 청색 시간 색상 변이입니다. 짙은 페트롤색 몸, 청자색 목과 배, 자두색 어깨 안장, 녹슨빛 밑동을 가진 상아색 골편 능선, 옆구리의 끊긴 크림색 대시와 꼬리 쉐브론을 사용합니다. 네 다리와 한 꼬리는 분리되지만 먼쪽 발가락은 원근으로 흐려 대표보다 아래에 둡니다.",
+      source: "assets/dinosaurs/scelidosaurus-harrisonii-bluehour-petrol-celadon-pattern-imagegen-v1.png",
+      variant: "청색 시간 페트롤-청자색 무늬 이미지 생성 v1",
+      src: "assets/dinosaurs/scelidosaurus-harrisonii-bluehour-petrol-celadon-pattern-imagegen-v1.png",
     },
     {
       kind: "anatomy review",
-      title: "스켈리도사우루스 블루 라이어스 조수 웅덩이 생태",
-      body: "석양의 해안 암반과 조수 웅덩이에서 스켈리도사우루스가 이동·먹이활동을 하는 생태 장면입니다. 젖은 암반, 해조류, 원경 개체가 있어 구도와 서식지 참고로 유용하지만, 해부 검수는 대표 전신 이미지를 우선합니다.",
-      source: "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-tidepool-ecology-imagegen-v1.png",
-      variant: "블루 라이어스 조수 웅덩이 생태 이미지 생성 v1",
-      src: "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-tidepool-ecology-imagegen-v1.png",
+      title: "스켈리도사우루스 습윤 섬 하천 단구 서식지",
+      body: "높은 사선 시점에서 습윤한 전기 쥐라기 섬의 망상 하천, 자갈 단구, 양치식물·속새·소철·성긴 침엽수를 함께 보여 줍니다. 전경과 원경의 두 개체는 물길로 분리되며, 전경 개체의 네 다리와 단일 꼬리가 온전히 드러납니다. 화석이 산출된 해양 이암을 실제 생활 조수 웅덩이로 오해하지 않도록 육상 서식지 추론으로 제한합니다.",
+      source: "assets/dinosaurs/scelidosaurus-harrisonii-island-river-terrace-habitat-imagegen-v1.png",
+      variant: "습윤 섬 하천 단구 서식지 이미지 생성 v1",
+      src: "assets/dinosaurs/scelidosaurus-harrisonii-island-river-terrace-habitat-imagegen-v1.png",
     },
     {
-      kind: "review hold",
-      title: "스켈리도사우루스 블루 라이어스 폭풍 뒤 장갑 보행 v2",
-      body: "비가 갠 블루 라이어스 해안 암반을 걷는 전신 후보입니다. 낮은 골편 줄, 네 발, 곤봉 없는 긴 꼬리를 모두 드러내고 폭풍회색 바탕과 와인색 옆구리 띠, 지의류빛 골편 끝을 유지해 기존 조수 웅덩이 생태와 다른 저지대 보행 구도를 제공합니다.",
-      source: "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-storm-armor-walk-imagegen-v2.png",
-      variant: "블루 라이어스 폭풍 뒤 장갑 보행 이미지 생성 v2",
-      src: "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-storm-armor-walk-imagegen-v2.png",
+      kind: "anatomy review",
+      title: "스켈리도사우루스 목 고리·몸통 3열·꼬리 4열 피갑 구조",
+      body: "밝은 개활지에서 짧고 둥근 후두 골편, 목의 부분 고리 배열, 몸통의 세 주요 골편 열과 가장 큰 배가쪽 잎모양 골편, 꼬리의 네 능선형 골편 열을 비교하는 전신 구조 후보입니다. 네 다리와 한 꼬리는 분명하지만 네 발 모두의 세부 지골 공식은 완전히 판독되지 않아 갑옷 배열과 몸 비율 참고로만 사용합니다.",
+      source: "assets/dinosaurs/scelidosaurus-harrisonii-three-row-tail-four-row-anatomy-imagegen-v1.png",
+      variant: "목 고리·몸통 3열·꼬리 4열 피갑 구조 이미지 생성 v1",
+      src: "assets/dinosaurs/scelidosaurus-harrisonii-three-row-tail-four-row-anatomy-imagegen-v1.png",
+      edited: true,
+    },
+    {
+      kind: "anatomy review",
+      title: "스켈리도사우루스와 디모르포돈 하구 공존",
+      body: "비가 갠 육상 섬 하구에서 전경 스켈리도사우루스와 쓰러진 침엽수에 앉은 원경 디모르포돈을 넓게 분리한 공존 장면입니다. 두 동물은 접촉·추격·관찰 행동을 하지 않습니다. 스켈리도사우루스의 네 다리와 꼬리는 분리되며, 작은 익룡은 같은 라이어스 지층군의 육상 척추동물 비교로만 둡니다.",
+      source: "assets/dinosaurs/scelidosaurus-harrisonii-dimorphodon-rivermouth-coexistence-ecology-imagegen-v1.png",
+      variant: "디모르포돈 하구 공존 이미지 생성 v1",
+      src: "assets/dinosaurs/scelidosaurus-harrisonii-dimorphodon-rivermouth-coexistence-ecology-imagegen-v1.png",
+    },
+    {
+      kind: "anatomy review",
+      title: "스켈리도사우루스 성체·미성숙 개체 골편 성장 비교",
+      body: "얕은 건기 수로 양쪽에 성체와 더 작은 미성숙 개체를 분리해 배치한 골편 성장 비교입니다. 성체는 발달한 목 고리와 큰 옆구리 골편을, 작은 개체는 더 낮고 덜 분화된 골편을 보입니다. 두 개체 모두 네 다리와 한 꼬리를 유지하며 성별, 부모·자식, 돌봄, 정확한 나이는 주장하지 않습니다.",
+      source: "assets/dinosaurs/scelidosaurus-harrisonii-osteoderm-growth-sequence-ecology-imagegen-v1.png",
+      variant: "성체·미성숙 개체 골편 성장 비교 이미지 생성 v1",
+      src: "assets/dinosaurs/scelidosaurus-harrisonii-osteoderm-growth-sequence-ecology-imagegen-v1.png",
     },
   ],
   "sauropelta-edwardsorum": [
@@ -16778,6 +16796,14 @@ const verifiedRejectedCandidateSources = new Set([
   "assets/dinosaurs/dryosaurus-altus-oxbow-reflection-periwinkle-pistachio-pinspot-ecology-imagegen-v1.png",
   "assets/dinosaurs/dryosaurus-altus-upland-seep-graphite-turquoise-ocelli-ecology-imagegen-v1.png",
   "assets/dinosaurs/dryosaurus-altus-upland-seep-periwinkle-pistachio-reflection-ecology-imagegen-v1.png",
+  "assets/dinosaurs/scelidosaurus-harrisonii-blackberry-mint-osteoderm-pattern-imagegen-v1.png",
+  "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-armored-quadruped-imagegen-v1.png",
+  "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-storm-armor-walk-imagegen-v2.png",
+  "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-tidepool-ecology-imagegen-v1.png",
+  "assets/dinosaurs/scelidosaurus-harrisonii-sarcosaurus-armor-brace-defense-ecology-imagegen-v1.png",
+  "assets/dinosaurs/scelidosaurus-harrisonii-sarcosaurus-shale-channel-armor-brace-ecology-imagegen-v1.png",
+  "assets/dinosaurs/scelidosaurus-harrisonii-sarcosaurus-tidepool-shoulder-roll-defense-ecology-imagegen-v1.png",
+  "assets/dinosaurs/scelidosaurus-harrisonii-stormchannel-lichen-wine-ecology-imagegen-v1.png",
 ]);
 
 function isStructurallyRejectedCandidate(item) {
@@ -17147,7 +17173,7 @@ const taxonPaletteAccents = {
   "lessemsaurus-sauropoides": { accent: "#a6ba64", bg: "rgba(42, 49, 32, 0.9)", border: "rgba(166, 186, 100, 0.48)" },
   "camptosaurus-dispar": { accent: "#5fae7d", bg: "rgba(30, 47, 38, 0.9)", border: "rgba(95, 174, 125, 0.48)" },
   "scutellosaurus-lawleri": { accent: "#b8cf62", bg: "rgba(42, 50, 32, 0.9)", border: "rgba(184, 207, 98, 0.48)" },
-  "scelidosaurus-harrisonii": { accent: "#8ec6b5", bg: "rgba(30, 43, 45, 0.9)", border: "rgba(142, 198, 181, 0.48)" },
+  "scelidosaurus-harrisonii": { accent: "#8fb4a1", bg: "rgba(34, 45, 43, 0.9)", border: "rgba(143, 180, 161, 0.48)" },
   "gargoyleosaurus-parkpinorum": { accent: "#72b7c9", bg: "rgba(31, 44, 47, 0.9)", border: "rgba(114, 183, 201, 0.48)" },
   "hesperosaurus-mjosi": { accent: "#d2a154", bg: "rgba(47, 43, 32, 0.9)", border: "rgba(210, 161, 84, 0.48)" },
   "sauropelta-edwardsorum": { accent: "#84c064", bg: "rgba(35, 49, 32, 0.9)", border: "rgba(132, 192, 100, 0.48)" },
@@ -17268,7 +17294,7 @@ const taxonPaletteSwatches = {
   "riojasaurus-incertus": ["#7fb163", "#46513c", "#bf6f42", "#ead5ad"],
   "lessemsaurus-sauropoides": ["#a6ba64", "#3f5061", "#c77a48", "#ead8b0"],
   "scutellosaurus-lawleri": ["#b8cf62", "#43543a", "#c4723f", "#ead7a5"],
-  "scelidosaurus-harrisonii": ["#8ec6b5", "#2f3d43", "#b68a62", "#ead9bd"],
+  "scelidosaurus-harrisonii": ["#27384a", "#4c6a64", "#a56f3f", "#d8cfb6"],
   "gargoyleosaurus-parkpinorum": ["#72b7c9", "#37464c", "#c87942", "#e5d1a7"],
   "hesperosaurus-mjosi": ["#d2a154", "#3f584d", "#b76445", "#efe0b8"],
   "sauropelta-edwardsorum": ["#84c064", "#22282d", "#b78958", "#ead8b8"],
@@ -17962,7 +17988,7 @@ function clampScale(scale) {
 
 function fitMapToViewport() {
   const viewport = $("#mapViewport");
-  if (!viewport) return;
+  if (!viewport || viewport.clientWidth <= 0 || viewport.clientHeight <= 0) return;
   const mapWidth = currentPhyloLayout.width || canvasSize.width;
   const mapHeight = currentPhyloLayout.height || canvasSize.height;
   const widthScale = (viewport.clientWidth - 36) / mapWidth;
@@ -17971,6 +17997,7 @@ function fitMapToViewport() {
   state.map.scale = scale;
   state.map.x = Math.round((viewport.clientWidth - mapWidth * scale) / 2);
   state.map.y = Math.round((viewport.clientHeight - mapHeight * scale) / 2);
+  state.map.fitted = true;
   applyMapTransform();
 }
 
@@ -19129,12 +19156,13 @@ const identityChecklists = {
     "꼬리곤봉, 스테고사우루스식 꼬리가시, 거북 등딱지가 없는 길고 유연한 꼬리",
   ],
   "scelidosaurus-harrisonii": [
-    "Pattern signature 2026-07-11: storm-gray low armor rows, wine side bars, lichen-yellow osteoderm tips, no club silhouette.",
-    "영국 블루 라이어스 전기 쥐라기 해안의 초기 장갑류",
-    "낮고 긴 사족보행 몸과 작은 초식성 머리",
-    "등과 옆구리를 따라 이어지는 낮은 골편 줄과 자갈무늬 피부",
-    "꼬리곤봉이나 스테고사우루스식 큰 등판이 없는 길고 끝가늘어진 꼬리",
-    "수각류 이빨, 각룡류 프릴, 큰 스테고사우루스 골판, 안킬로사우루스 꼬리곤봉, 거북 등딱지, 숨은 발, 잘린 꼬리, 단단한 등 갑옷을 뜯기는 공격 금지",
+    "2026-07-28 anatomy gate: use Norman 2020 cranial, postcranial, and dermal evidence; reject the former flat coin-tile armor and tidepool-as-habitat reconstruction.",
+    "전기 쥐라기 도싯 라이어스 해양층에서 산출되지만 생활 장면은 인접한 습윤 육상 섬과 하천 단구로 제한",
+    "배럴형 몸통, 뒷다리가 조금 더 긴 선택적 사족보행 체형, 정확히 두 앞다리·두 뒷다리·한 꼬리",
+    "작고 길며 낮은 부리형 머리, 각질 비늘로 덮인 두개골, 짧고 둥근 좌우 한 쌍의 후두 골편과 목의 부분 고리 배열",
+    "앞발은 짧고 벌어진 5지, 뒷발은 4지; 원근 때문에 지골 수가 흐리면 대표 승격 금지",
+    "몸통 양옆의 세 주요 능선형 골편 열과 가장 큰 배가쪽 잎모양 열, 열 사이의 작은 불규칙 골편, 꼬리를 두르는 네 골편 열",
+    "안킬로사우루스식 납작한 장갑차 몸·정규 타일 껍질·꼬리곤봉, 스테고사우루스식 큰 골판·꼬리가시, 거북 등딱지, 수각류 이빨, 숨은 발, 잘린 꼬리 금지",
   ],
   "sauropelta-edwardsorum": [
     "Pattern signature 2026-07-11: blackberry dorsal shield, malachite shoulder-spine bases, cream throat and flank pinstripes.",
@@ -19849,11 +19877,11 @@ const visualVariationProfiles = {
     avoid: "큰 스테고사우루스 등판, 꼬리가시, 안킬로사우루스 꼬리곤봉, 넓은 안킬로사우루스 껍질, 지나치게 크고 둥근 대형 골편 갑옷, 각룡 프릴, 포식자 이빨, 깃털, 가려진 발, 잘린 꼬리, 포식자가 단단한 등 골편을 뜯어먹는 구도 Pattern diversity gate 2026-07-11: avoid reusing the default spotted torso plus ringed tail recipe; this taxon must keep its assigned signature distinct from nearby ankylosaurian/pachycephalosaur taxa.",
   },
   "scelidosaurus-harrisonii": {
-    color: "젖은 슬레이트 회색 몸, 블랙베리빛 등, 민트색 목과 옆구리 워시, 황토색 뺨, 크림색 배, 밝은 골편 하이라이트",
-    pattern: "낮은 골편 행 하이라이트, 어두운 꼬리 띠, 해안 암반과 조수 웅덩이에 맞춘 차콜-민트 위장 얼룩, 절제된 뺨 패치 Species pattern signature 2026-07-11: storm-gray low armor rows, wine side bars, lichen-yellow osteoderm tips, no club silhouette.",
-    texture: "젖은 블루 라이어스 암반 위의 무광 자갈무늬 피부와 낮은 골질 골편, 해조류와 조수 웅덩이 반사",
-    anatomy: "전기 쥐라기 초기 장갑류; 낮고 긴 사족보행 몸, 작은 초식성 머리, 등과 옆구리의 낮은 골편 줄, 네 발 접지, 꼬리곤봉 없는 긴 꼬리",
-    avoid: "스테고사우루스식 큰 골판, 안킬로사우루스 꼬리곤봉, 거대한 백악기 장갑차 몸, 거북 등딱지, 악어식 벌어진 자세, 수각류 이빨, 각룡류 프릴, 숨은 발, 잘린 꼬리, 포식자가 단단한 등 골편을 뜯어먹는 구도 Pattern diversity gate 2026-07-11: avoid reusing the default spotted torso plus ringed tail recipe; this taxon must keep its assigned signature distinct from nearby ankylosaurian/pachycephalosaur taxa.",
+    color: "대표는 차콜청색·깊은 이끼색 몸, 지의류색 배, 절제된 와인색 뺨, 황토·뼈색 골편 능선; 변이는 페트롤청색·청자색·자두색 어깨 안장과 녹슨빛 골편 밑동",
+    pattern: "옆구리의 비대칭 끊긴 얼룩과 작은 대시, 몸 피부와 분명히 다른 골편 능선, 절제된 꼬리 쉐브론; 정규 원형 타일이나 전신 고리무늬 반복 금지",
+    texture: "무광 자갈무늬 피부, 각질 덮개가 있는 단단한 능선형·잎모양 골편, 주요 열 사이의 작은 불규칙 골편; 갑옷이 가죽 주름이나 거북 등딱지처럼 이어지지 않음",
+    anatomy: "배럴형 몸통과 조금 더 긴 뒷다리, 선택적 사족보행 체형, 5지 앞발·4지 뒷발, 부리형 낮은 머리와 둥근 후두 골편 한 쌍, 목 부분 고리, 몸통 세 주요 골편 열, 꼬리 네 골편 열, 곤봉 없는 단일 꼬리",
+    avoid: "안킬로사우루스식 납작한 장갑차 몸, 정규 동전 타일, 거대한 어깨가시, 꼬리곤봉, 스테고사우루스식 큰 골판·꼬리가시, 거북 등딱지, 악어식 벌어진 자세, 뾰족한 염소뿔, 수각류 이빨, 여분 팔다리, 숨은 발, 잘린 꼬리, 해양 조수 웅덩이를 실제 생활 서식지로 단정하는 장면",
   },
   "sauropelta-edwardsorum": {
     color: "차콜 검은 갑옷 등, 말라카이트 녹색 옆구리 얼룩, 따뜻한 황토색 얼굴과 어깨 가시, 옅은 크림색 배, 젖은 클로버리 습지 갈색",
@@ -20820,11 +20848,11 @@ const generationRouteGuides = {
     reject: "큰 스테고사우루스 등판, 꼬리가시, 안킬로사우루스 꼬리곤봉, 넓은 갑옷 껍질, 지나치게 크고 둥근 대형 골편 갑옷, 각룡 프릴, 포식자 이빨, 깃털, 가려진 발, 잘린 꼬리, 포식자가 등 골편을 물어뜯는 장면이 생기면 탈락",
   },
   "scelidosaurus-harrisonii": {
-    focus: "전기 쥐라기 블루 라이어스 스켈리도사우루스, 낮은 사족보행 초기 장갑류, 해안 암반 위장색, 낮은 골편 줄, 꼬리곤봉/큰 골판 드리프트 방지",
-    route: "blue_lias_scelidosaurus_low_osteoderm_quadruped_prompt_then_tidepool_camouflage_review",
-    control: "assets/dinosaurs/scelidosaurus-harrisonii-blue-lias-armored-quadruped-imagegen-v1.png",
-    pass: "전신 측면 구도 | 낮고 긴 사족보행 몸 | 작은 초식성 머리 | 등과 옆구리의 낮은 골편 줄 | 보이는 네 발 | 곤봉 없는 길고 끝가늘어진 꼬리 | 젖은 해안 암반과 조수 웅덩이 위장색",
-    reject: "스테고사우루스식 큰 골판, 안킬로사우루스 꼬리곤봉, 거대한 백악기 장갑차 몸, 거북 등딱지, 악어처럼 벌어진 자세, 수각류 이빨, 각룡류 프릴, 숨은 발, 잘린 꼬리, 포식자가 단단한 등 갑옷을 물어뜯는 장면이 있으면 탈락",
+    focus: "전기 쥐라기 도싯 스켈리도사우루스, 배럴형 몸과 조금 더 긴 뒷다리, 둥근 후두 골편, 목 고리, 몸통 3열·꼬리 4열 능선형 피갑, 해양 산출층과 육상 생활 서식지 구분",
+    route: "dorset_scelidosaurus_humid_island_barrel_body_occipital_pair_three_torso_rows_four_tail_rows_then_full_frame_head_limb_tail_crop_review",
+    control: "assets/dinosaurs/scelidosaurus-harrisonii-humid-island-ridged-armor-representative-imagegen-v1.png",
+    pass: "전신 3/4 구도 | 정확히 두 앞다리·두 뒷다리·한 꼬리 | 배럴형 몸과 조금 더 긴 뒷다리 | 부리형 낮은 머리와 짧고 둥근 후두 골편 한 쌍 | 목 부분 고리 | 몸통 세 주요 능선형 골편 열과 큰 배가쪽 열 | 꼬리 네 골편 열 | 곤봉 없이 가늘어지는 꼬리 | 육상 섬 하천 단구",
+    reject: "납작한 안킬로사우루스 장갑차 몸, 규칙적인 원형 타일 껍질, 거대한 어깨가시, 꼬리곤봉, 큰 스테고사우루스 골판·꼬리가시, 거북 등딱지, 악어식 벌어진 자세, 뾰족한 염소뿔, 수각류 이빨, 여분 팔다리, 발가락 수 드리프트, 숨은 발, 잘린 꼬리, 조수 웅덩이를 생활 서식지로 단정한 장면이 있으면 탈락",
   },
   "sauropelta-edwardsorum": {
     focus: "전기 백악기 클로버리 사우로펠타, 노도사우루스류 어깨 가시, 낮은 장갑 몸, 꼬리곤봉 없음, 습지 위장색과 수각류 대치 참고",
@@ -21880,6 +21908,7 @@ function setView(view) {
     $("#viewTitle").textContent = "이미지 검수 워크벤치";
   }
   renderAll();
+  if (view === "atlas" && !state.map.fitted) requestAnimationFrame(fitMapToViewport);
 }
 
 function renderAll() {
