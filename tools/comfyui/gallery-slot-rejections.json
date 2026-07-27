@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-26",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-27",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -559,6 +559,36 @@
     },
     "assets/dinosaurs/eodromaeus-murphi-threefinger-identity-imagegen-v2.png": {
       "reason": "The former identity image explicitly treats three fingers as the complete hand even though Eodromaeus preserves five manual digits with reduced IV and V."
+    },
+    "assets/dinosaurs/eoraptor-lunensis-ashpan-inkblue-turquoise-pinstripe-ecology-imagegen-v1.png": {
+      "reason": "The striking palette cannot rescue the vertically elongated bird-runner neck, generic head, and unclear outer manual digits."
+    },
+    "assets/dinosaurs/eoraptor-lunensis-chromogisaurus-redwash-attack-ecology-imagegen-v1.png": {
+      "reason": "The direct bite scene invents a named-species attack and crowds two generic long-necked bodies with unstable appendage silhouettes."
+    },
+    "assets/dinosaurs/eoraptor-lunensis-ischigualasto-trackway-ecology-imagegen-v1.png": {
+      "reason": "The former habitat frame repeats a vertical swan neck and generic raptor-like head while limb overlap prevents a clean outer-manus review."
+    },
+    "assets/dinosaurs/eoraptor-lunensis-panphagia-redmud-flank-bite-ecology-imagegen-v1.png": {
+      "reason": "The flank-bite composition overstates a named-species interaction and obscures hands, feet, and tail junctions in moving bodies."
+    },
+    "assets/dinosaurs/eoraptor-lunensis-pisanosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "The selected legacy interaction depicts an unsupported direct attack and retains elongated necks, generic anatomy, and crowded limb silhouettes."
+    },
+    "assets/dinosaurs/eoraptor-lunensis-pisanosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The carcass-feeding image conflicts with the strong herbivory signal in the described dentition and hides anatomy around an unsupported feeding claim."
+    },
+    "assets/dinosaurs/eoraptor-lunensis-pisanosaurus-open-pursuit-ecology-imagegen-v1.png": {
+      "reason": "The open-pursuit scene turns uncertain co-occurrence into chase behavior and makes the small moving bodies too distant for reliable anatomy review."
+    },
+    "assets/dinosaurs/eoraptor-lunensis-primitive-threefinger-identity-imagegen-v2.png": {
+      "reason": "The former identity image explicitly treats three fingers as the complete hand despite five preserved metacarpals, a probable rudimentary digit IV phalanx, and a phalanx-free digit V."
+    },
+    "assets/dinosaurs/eoraptor-lunensis-slate-copper-pattern-imagegen-v1.png": {
+      "reason": "The former pattern repeats the vertically elongated swan neck, generic birdlike head, and three-finger-only hand interpretation."
+    },
+    "assets/dinosaurs/eoraptor-lunensis-small-primitive-theropod-imagegen-v1.png": {
+      "reason": "The former representative is a generic long-necked raptor silhouette and labels Eoraptor as a small predatory theropod rather than reflecting the described basal-sauropodomorph anatomy and herbivory signal."
     }
   }
 }

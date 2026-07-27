@@ -153,7 +153,7 @@ window.gallerySlotAssignments = {
   ],
   "eoraptor-lunensis": [
     {
-      "source": "assets/dinosaurs/eoraptor-lunensis-small-primitive-theropod-imagegen-v1.png",
+      "source": "assets/dinosaurs/eoraptor-lunensis-robust-short-forelimb-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
@@ -161,7 +161,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/eoraptor-lunensis-slate-copper-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/eoraptor-lunensis-aubergine-turquoise-copper-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -169,7 +169,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/eoraptor-lunensis-ischigualasto-trackway-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/eoraptor-lunensis-postflood-fern-forage-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
@@ -177,7 +177,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/eoraptor-lunensis-primitive-threefinger-identity-imagegen-v2.png",
+      "source": "assets/dinosaurs/eoraptor-lunensis-reduced-outer-manus-anatomy-closeup-imagegen-v1.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
@@ -185,9 +185,17 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/eoraptor-lunensis-pisanosaurus-attack-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/eoraptor-lunensis-herrerasaurus-channel-coexistence-ecology-imagegen-v1.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "arid-redbed",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/eoraptor-lunensis-receding-flood-bank-movement-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "arid-redbed",
       "expectedKind": "anatomy review"

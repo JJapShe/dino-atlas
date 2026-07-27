@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-27T21:04:18.138Z",
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-26",
-  "reviewMethod": "Eodromaeus original-description, supplementary-material, measured-proportion, and Ischigualasto-environment literature gate; strict one-head, two-forelimb, two-hindlimb, and one-continuous-tail review for every primary animal; original-size inspection of all eleven legacy files and all selected files, full-frame contact sheets, and isolated head, both-hand, both-foot, pelvis-tail, and distant-secondary-animal crops; the documented five-digit manual formula 2-3-4-1-1 replaces the former three-finger-only interpretation, while whole-body frames are not claimed to resolve tiny digits IV and V and the close hand view remains anatomy review because perspective and soft-tissue proportions are generated",
-  "targetSlots": 544,
+  "generatedAt": "2026-07-27T21:29:43.792Z",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-27",
+  "reviewMethod": "Eoraptor original-description and 2013 osteology gate plus Ischigualasto stratigraphic context; original-size review of all ten legacy files and six selected files, six-role contact sheet, and isolated head, both-hand, both-foot, pelvis-tail, and distant-secondary-animal crops; strict one-head, two-forelimb, two-hindlimb, and one-continuous-tail review on every primary animal; the 2-3-4-(1)-0 manual formula replaces the former three-finger-only interpretation, while whole-body images do not claim to expose metacarpal V and the close hand remains anatomy review because soft-tissue proportions and perspective are generated",
+  "targetSlots": 545,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -176,48 +176,57 @@
     "eoraptor-lunensis": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/eoraptor-lunensis-small-primitive-theropod-imagegen-v1.png",
+        "source": "assets/dinosaurs/eoraptor-lunensis-robust-short-forelimb-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The complete neutral-daylight profile replaces the vertical swan neck and generic raptor body with a low subtriangular head, moderate neck, two short forelimbs, two robust hind limbs, readable feet, and one continuous tail.",
+        "reviewMethod": "Original-size full frame plus head, both-hand, both-foot, pelvis, and tail crops; accepted as count-level pass because every major body junction is readable, while the hidden metacarpal V is not claimed to resolve at whole-body scale",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-27",
+        "reviewedAt": "2026-07-27T21:29:43.792Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/eoraptor-lunensis-slate-copper-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/eoraptor-lunensis-aubergine-turquoise-copper-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The right-facing blue-hour variant preserves the corrected low head, moderate neck, two arms, two legs, and one tail while adding a clearly distinct aubergine, ink-blue, turquoise, copper, mint, and citron palette.",
+        "reviewMethod": "Original-size full frame plus head, hands, feet, pelvis, and tail crops; retained as review hold because low light and oblique hands are unsuitable for exact reduced-outer-digit review",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-27",
+        "reviewedAt": "2026-07-27T21:29:43.792Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/eoraptor-lunensis-ischigualasto-trackway-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/eoraptor-lunensis-postflood-fern-forage-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The high-oblique post-flood scene adds braided runoff, driftwood, and fern-horsetail context while retaining one complete primary animal with separated limbs, feet, and tail.",
+        "reviewMethod": "Original-size full frame plus head, hands, feet, pelvis, and tail crops; plant searching is labeled a cautious herbivory-based foraging hypothesis rather than directly preserved behavior",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-27",
+        "reviewedAt": "2026-07-27T21:29:43.792Z"
       },
       "4": {
         "status": "approved",
-        "source": "assets/dinosaurs/eoraptor-lunensis-primitive-threefinger-identity-imagegen-v2.png",
+        "source": "assets/dinosaurs/eoraptor-lunensis-reduced-outer-manus-anatomy-closeup-imagegen-v1.png",
         "role": "identity-anatomy",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The bright low three-quarter view visibly distinguishes three dominant functional fingers and a shorter fourth outer element without inventing a fifth free finger, replacing the former three-finger-complete-hand label.",
+        "reviewMethod": "Original-size full frame and enlarged near-hand crop; accepted only as anatomy review because generated soft tissue and close perspective cannot prove exact phalangeal lengths, and metacarpal V is internal rather than externally visible",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-27",
+        "reviewedAt": "2026-07-27T21:29:43.792Z"
       },
       "5": {
         "status": "approved",
-        "source": "assets/dinosaurs/eoraptor-lunensis-pisanosaurus-attack-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/eoraptor-lunensis-herrerasaurus-channel-coexistence-ecology-imagegen-v1.png",
         "role": "interaction",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The wide channel-separated scene keeps a complete foreground Eoraptor and a much larger distant Herrerasaurus-like silhouette while replacing bite and pursuit imagery with non-contact scale and fauna context.",
+        "reviewMethod": "Original-size full frame plus primary head, hands, feet, full tail, and distant secondary-animal crop; no encounter, gaze, pursuit, attack, injury, or feeding is claimed, and the distant animal is not used for close anatomy",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-27",
+        "reviewedAt": "2026-07-27T21:29:43.792Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/eoraptor-lunensis-receding-flood-bank-movement-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The cool post-storm movement frame retains one complete animal with two arms, two legs, readable feet, and one tail while adding a rear-side walking composition without an attacker or prey.",
+        "reviewMethod": "Original-size full frame plus head, both-hand, both-foot, pelvis, and tail crops; movement to a raised bank is explicitly an environmental-response hypothesis and not evidence of documented defense, sociality, sex, or growth stage",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-27",
+        "reviewedAt": "2026-07-27T21:29:43.792Z"
       }
     },
     "zupaysaurus-rougieri": {
@@ -5724,6 +5733,16 @@
     },
     "assets/dinosaurs/eodromaeus-murphi-threefinger-identity-imagegen-v2.png": {
       "reason": "The former identity image explicitly treats three fingers as the complete hand even though Eodromaeus preserves five manual digits with reduced IV and V."
-    }
+    },
+    "assets/dinosaurs/eoraptor-lunensis-ashpan-inkblue-turquoise-pinstripe-ecology-imagegen-v1.png": "The striking palette cannot rescue the vertically elongated bird-runner neck, generic head, and unclear outer manual digits.",
+    "assets/dinosaurs/eoraptor-lunensis-chromogisaurus-redwash-attack-ecology-imagegen-v1.png": "The direct bite scene invents a named-species attack and crowds two generic long-necked bodies with unstable appendage silhouettes.",
+    "assets/dinosaurs/eoraptor-lunensis-ischigualasto-trackway-ecology-imagegen-v1.png": "The former habitat frame repeats a vertical swan neck and generic raptor-like head while limb overlap prevents a clean outer-manus review.",
+    "assets/dinosaurs/eoraptor-lunensis-panphagia-redmud-flank-bite-ecology-imagegen-v1.png": "The flank-bite composition overstates a named-species interaction and obscures hands, feet, and tail junctions in moving bodies.",
+    "assets/dinosaurs/eoraptor-lunensis-pisanosaurus-attack-ecology-imagegen-v1.png": "The selected legacy interaction depicts an unsupported direct attack and retains elongated necks, generic anatomy, and crowded limb silhouettes.",
+    "assets/dinosaurs/eoraptor-lunensis-pisanosaurus-carcass-feeding-ecology-imagegen-v1.png": "The carcass-feeding image conflicts with the strong herbivory signal in the described dentition and hides anatomy around an unsupported feeding claim.",
+    "assets/dinosaurs/eoraptor-lunensis-pisanosaurus-open-pursuit-ecology-imagegen-v1.png": "The open-pursuit scene turns uncertain co-occurrence into chase behavior and makes the small moving bodies too distant for reliable anatomy review.",
+    "assets/dinosaurs/eoraptor-lunensis-primitive-threefinger-identity-imagegen-v2.png": "The former identity image explicitly treats three fingers as the complete hand despite five preserved metacarpals, a probable rudimentary digit IV phalanx, and a phalanx-free digit V.",
+    "assets/dinosaurs/eoraptor-lunensis-slate-copper-pattern-imagegen-v1.png": "The former pattern repeats the vertically elongated swan neck, generic birdlike head, and three-finger-only hand interpretation.",
+    "assets/dinosaurs/eoraptor-lunensis-small-primitive-theropod-imagegen-v1.png": "The former representative is a generic long-necked raptor silhouette and labels Eoraptor as a small predatory theropod rather than reflecting the described basal-sauropodomorph anatomy and herbivory signal."
   }
 }
