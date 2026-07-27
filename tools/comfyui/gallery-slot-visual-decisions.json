@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-27T00:22:31.752Z",
-  "reviewBatch": "2026-07-27-richness-six-slot-batch-17",
-  "reviewMethod": "Edmontosaurus 2025 mummy soft-crest, tail-spike, forehoof, three-hind-hoof and heel-pad gate; Campione and Evans skull-growth gate; Hell Creek-Lance habitat, appendage-count, and cautious growth/co-occurrence gate plus original-size full-frame inspection",
-  "targetSlots": 525,
+  "generatedAt": "2026-07-27T01:15:48.960Z",
+  "reviewBatch": "2026-07-27-richness-six-slot-batch-18",
+  "reviewMethod": "Rhamphorhynchus 2024 tail-vane and 2025 skull-tooth gate; strict two-wing, two-hindlimb, one-tail appendage count; skim-feeding caution; original-size full-frame inspection",
+  "targetSlots": 526,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -1380,48 +1380,57 @@
     "rhamphorhynchus-muensteri": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-surface-strike-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-diamondvane-count-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Original-size and body-crop review confirms exactly two wing membranes, two hind limbs, one pelvis-origin tail, and one terminal diamond vane.",
-        "reviewMethod": "Original-size inspection plus targeted body and tail crops after owner anatomy correction",
-        "reviewBatch": "2026-07-26-rhamphorhynchus-recheck",
-        "reviewedAt": "2026-07-25T15:17:56.355Z"
+        "reason": "Original-size review confirms a crestless long low skull, differentiated sparse teeth, two fourth-finger wings, two hind limbs, one pelvis-origin tail, and one large vertical elongated-diamond vane occupying roughly the distal fifth.",
+        "reviewMethod": "Original-size full-frame inspection against the 2024 tail-vane and 2025 skull-tooth literature gates",
+        "reviewBatch": "2026-07-27-richness-six-slot-batch-18",
+        "reviewedAt": "2026-07-27T01:15:48.960Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/rhamphorhynchus-muensteri-bluehour-underside-celadon-coral-wing-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/rhamphorhynchus-muensteri-petrol-celadon-kitevane-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Targeted crop confirms exactly two wing membranes, two separate hind limbs, and one tail; celadon and coral coloring provides the intended pattern variation.",
-        "reviewMethod": "Original-size inspection plus targeted body and tail crops after owner anatomy correction",
-        "reviewBatch": "2026-07-26-rhamphorhynchus-recheck",
-        "reviewedAt": "2026-07-25T15:17:56.355Z"
+        "reason": "The reverse-facing dorsal bank preserves two wings, two hind limbs, one tail and one large vertical vane while adding a distinct petrol, celadon, charcoal, and coral palette; rear overlap keeps it below representative rank.",
+        "reviewMethod": "Original-size full-frame inspection against the locked representative phenotype and appendage-count gate",
+        "reviewBatch": "2026-07-27-richness-six-slot-batch-18",
+        "reviewedAt": "2026-07-27T01:15:48.960Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-roost-takeoff-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/rhamphorhynchus-muensteri-squall-clearing-quadruped-habitat-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Takeoff crop confirms two wings, two grounded hind limbs, and a single pelvis-origin tail with a terminal diamond vane.",
-        "reviewMethod": "Original-size inspection plus targeted body and tail crops after owner anatomy correction",
-        "reviewBatch": "2026-07-26-rhamphorhynchus-recheck",
-        "reviewedAt": "2026-07-25T15:17:56.355Z"
+        "reason": "The post-squall limestone-shelf frame adds a grounded four-contact pose and distinct weather while retaining one tail and a large vane; folded membranes and relatively dense teeth keep it anatomy-review only.",
+        "reviewMethod": "Original-size grounded-pose, folded-wing, limb-count, tooth, tail, and habitat inspection",
+        "reviewBatch": "2026-07-27-richness-six-slot-batch-18",
+        "reviewedAt": "2026-07-27T01:15:48.960Z"
       },
       "4": {
         "status": "approved",
-        "source": "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-moonlit-bank-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/rhamphorhynchus-muensteri-underside-wing-ankle-tail-anatomy-imagegen-v1.png",
         "role": "identity-anatomy",
-        "reason": "Top-down crop keeps both wing membranes, both small hind limbs, one striped tail, and the diamond tail vane separately readable.",
-        "reviewMethod": "Original-size inspection plus targeted body and tail crops after owner anatomy correction",
-        "reviewBatch": "2026-07-26-rhamphorhynchus-recheck",
-        "reviewedAt": "2026-07-25T15:17:56.355Z"
+        "reason": "The bright underside view exposes both fourth-finger wing membranes, one pelvis-origin tail, and the large vertical vane; one hind limb overlaps the membrane, so it remains a structure reference rather than a count representative.",
+        "reviewMethod": "Original-size underside wing, ankle, membrane-overlap, tail-origin, and vane inspection",
+        "reviewBatch": "2026-07-27-richness-six-slot-batch-18",
+        "reviewedAt": "2026-07-27T01:15:48.960Z"
       },
       "5": {
         "status": "approved",
-        "source": "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-fishing-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/rhamphorhynchus-muensteri-aspidorhynchus-watergap-interaction-ecology-imagegen-v1.png",
         "role": "interaction",
-        "reason": "The fishing action preserves two wings and one uninterrupted long tail with a terminal vane; the dynamic pose remains an interaction-only anatomy review.",
-        "reviewMethod": "Original-size inspection plus targeted body and tail crops after owner anatomy correction",
-        "reviewBatch": "2026-07-26-rhamphorhynchus-recheck",
-        "reviewedAt": "2026-07-25T15:17:56.355Z"
+        "reason": "One unobstructed Rhamphorhynchus and one submerged Aspidorhynchus remain widely separated, preserving the primary two-wing, two-hindlimb, one-tail count without asserting contact, attack, capture, or fossil outcome.",
+        "reviewMethod": "Original-size primary-animal count, secondary-fish identity, water-gap, and non-contact behavior inspection",
+        "reviewBatch": "2026-07-27-richness-six-slot-batch-18",
+        "reviewedAt": "2026-07-27T01:15:48.960Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/rhamphorhynchus-muensteri-large-small-sizeclass-growth-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The large and small animals remain spatially separated and each retains two wings, two hind limbs, one tail and one vane; the frame supports size-class comparison only, not exact age, sex, parenting, or vane-stage diagnosis.",
+        "reviewMethod": "Original-size two-animal appendage count, separation, tail-vane, and conservative growth-claim inspection",
+        "reviewBatch": "2026-07-27-richness-six-slot-batch-18",
+        "reviewedAt": "2026-07-27T01:15:48.960Z"
       }
     },
     "pterodactylus-antiquus": {
@@ -5055,6 +5064,24 @@
     },
     "assets/dinosaurs/rhamphorhynchus-muensteri-longtail-vane-identity-imagegen-v2.png": {
       "reason": "Three separately readable wing membranes and duplicated limb geometry fail the strict two-wing, two-hindlimb pterosaur gate."
+    },
+    "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-surface-strike-ecology-imagegen-v1.png": {
+      "reason": "Jaw-dragging surface-strike framing overstates disputed skim-feeding, while the small tail vane and overly dense uniform teeth miss the updated literature gate."
+    },
+    "assets/dinosaurs/rhamphorhynchus-muensteri-bluehour-underside-celadon-coral-wing-ecology-imagegen-v1.png": {
+      "reason": "The undersized tail vane, dense uniform teeth, and another low lagoon-flight composition no longer clear the identity and diversity gate."
+    },
+    "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-roost-takeoff-ecology-imagegen-v1.png": {
+      "reason": "The undersized tail vane and dense uniform teeth fail the updated identity gate, and the takeoff framing duplicates existing flight roles."
+    },
+    "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-moonlit-bank-ecology-imagegen-v1.png": {
+      "reason": "The undersized tail vane, repetitive lagoon-flight framing, and distant extra taxon do not add a stable role under the rebuilt six-image set."
+    },
+    "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-fishing-ecology-imagegen-v1.png": {
+      "reason": "Overlapping hind limbs, an undersized tail vane, and dense uniform teeth prevent stable appendage and identity review."
+    },
+    "assets/dinosaurs/rhamphorhynchus-muensteri-lagoon-reflection-coral-wing-ecology-imagegen-v1.png": {
+      "reason": "The tail-to-wing-base connection and hind-limb count remain ambiguous at original size, matching the owner's earlier duplicate-tail concern."
     },
     "assets/dinosaurs/hesperosaurus-mjosi-ceratosaurus-tailspike-impact-defense-ecology-imagegen-v1.png": {
       "reason": "Prominent impalement, blood, and an obscured tail-spike contact fail the non-graphic educational ecology gate."

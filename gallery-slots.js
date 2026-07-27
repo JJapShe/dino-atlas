@@ -1229,43 +1229,51 @@ window.gallerySlotAssignments = {
   ],
   "rhamphorhynchus-muensteri": [
     {
-      "source": "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-surface-strike-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-diamondvane-count-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "solnhofen-restricted-carbonate-lagoon",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/rhamphorhynchus-muensteri-bluehour-underside-celadon-coral-wing-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/rhamphorhynchus-muensteri-petrol-celadon-kitevane-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "solnhofen-restricted-carbonate-lagoon",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-roost-takeoff-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/rhamphorhynchus-muensteri-squall-clearing-quadruped-habitat-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "solnhofen-restricted-carbonate-lagoon",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-moonlit-bank-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/rhamphorhynchus-muensteri-underside-wing-ankle-tail-anatomy-imagegen-v1.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "solnhofen-restricted-carbonate-lagoon",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-fishing-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/rhamphorhynchus-muensteri-aspidorhynchus-watergap-interaction-ecology-imagegen-v1.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "solnhofen-restricted-carbonate-lagoon",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/rhamphorhynchus-muensteri-large-small-sizeclass-growth-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "solnhofen-restricted-carbonate-lagoon",
       "expectedKind": "anatomy review"
     }
   ],

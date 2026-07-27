@@ -69,6 +69,13 @@ const HABITATS = {
     light: "neutral coastal daylight with controlled water reflection",
     backgroundPalette: ["#607a7a", "#a68a65", "#61715b"],
   },
+  "solnhofen-restricted-carbonate-lagoon": {
+    substrate: "pale lithographic-limestone shelves, shallow restricted marine channels, carbonate mud, and reef-bounded islands",
+    vegetation: "sparse island conifers, cycads, and low coastal vegetation",
+    moisture: "warm restricted marine lagoon with clearer surface water and potentially hypersaline, poorly oxygenated bottom water",
+    light: "neutral coastal daylight with restrained shallow-water reflection",
+    backgroundPalette: ["#6f8582", "#c0aa83", "#5f6f58"],
+  },
   "kem-kem-river-delta": {
     substrate: "broad rust-red sandbars, rippled silt, and shallow freshwater-to-brackish channels",
     vegetation: "horsetails, ferns, low early angiosperm scrub, and sparse conifers",
@@ -353,6 +360,7 @@ function habitatFor(dino, route) {
   else if (dino.id === "velociraptor-mongoliensis") key = "gobi-arid";
   else if (dino.id === "parasaurolophus-walkeri") key = "dinosaur-park-coastal-plain";
   else if (dino.id === "edmontosaurus-annectens") key = "hell-creek-lance-fluvial-forest";
+  else if (dino.id === "rhamphorhynchus-muensteri") key = "solnhofen-restricted-carbonate-lagoon";
   else if (/marine|seaway|ocean|sea |pliosaur|plesiosaur|ichthyosaur|mosasaur|해양|바다|수중/.test(text)) key = "marine";
   else if (/polar|prince creek|alaska|high-latitude|극지|고위도/.test(text)) key = "polar-forest";
   else if (/gobi|djadokhta|nemegt|dune|desert|sandstone|사구|사막|고비/.test(text)) key = "gobi-arid";

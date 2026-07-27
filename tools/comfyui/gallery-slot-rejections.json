@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-27-richness-six-slot-batch-17",
+  "reviewBatch": "2026-07-27-richness-six-slot-batch-18",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -61,6 +61,24 @@
     },
     "assets/dinosaurs/rhamphorhynchus-muensteri-longtail-vane-identity-imagegen-v2.png": {
       "reason": "Three separately readable wing membranes and duplicated limb geometry fail the strict two-wing, two-hindlimb pterosaur gate."
+    },
+    "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-surface-strike-ecology-imagegen-v1.png": {
+      "reason": "Jaw-dragging surface-strike framing overstates disputed skim-feeding, while the small tail vane and overly dense uniform teeth miss the updated literature gate."
+    },
+    "assets/dinosaurs/rhamphorhynchus-muensteri-bluehour-underside-celadon-coral-wing-ecology-imagegen-v1.png": {
+      "reason": "The undersized tail vane, dense uniform teeth, and another low lagoon-flight composition no longer clear the identity and diversity gate."
+    },
+    "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-roost-takeoff-ecology-imagegen-v1.png": {
+      "reason": "The undersized tail vane and dense uniform teeth fail the updated identity gate, and the takeoff framing duplicates existing flight roles."
+    },
+    "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-moonlit-bank-ecology-imagegen-v1.png": {
+      "reason": "The undersized tail vane, repetitive lagoon-flight framing, and distant extra taxon do not add a stable role under the rebuilt six-image set."
+    },
+    "assets/dinosaurs/rhamphorhynchus-muensteri-solnhofen-fishing-ecology-imagegen-v1.png": {
+      "reason": "Overlapping hind limbs, an undersized tail vane, and dense uniform teeth prevent stable appendage and identity review."
+    },
+    "assets/dinosaurs/rhamphorhynchus-muensteri-lagoon-reflection-coral-wing-ecology-imagegen-v1.png": {
+      "reason": "The tail-to-wing-base connection and hind-limb count remain ambiguous at original size, matching the owner's earlier duplicate-tail concern."
     },
     "assets/dinosaurs/hesperosaurus-mjosi-ceratosaurus-tailspike-impact-defense-ecology-imagegen-v1.png": {
       "reason": "Prominent impalement, blood, and an obscured tail-spike contact fail the non-graphic educational ecology gate."
