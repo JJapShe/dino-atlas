@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-27-richness-six-slot-batch-18",
+  "reviewBatch": "2026-07-27-richness-six-slot-batch-19",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -400,6 +400,12 @@
     },
     "assets/dinosaurs/edmontosaurus-annectens-hell-creek-oxbow-walk-imagegen-v2.png": {
       "reason": "The former oxbow walk retains a small horn-like cranial bump, separated clawed forefeet, and weak hoof anatomy under the revised mummy-based gate."
+    },
+    "assets/dinosaurs/therizinosaurus-cheloniformis-crimson-cobalt-pattern-imagegen-v1.png": {
+      "reason": "The superseded pattern repeats the representative's left-to-right broadside and bright midday mudflat instead of adding meaningful composition diversity."
+    },
+    "assets/dinosaurs/therizinosaurus-cheloniformis-nemegt-browse-ecology-imagegen-v1.png": {
+      "reason": "The multi-species ecology scene includes a secondary therizinosaur with an unsupported sail-like hump and unstable appendages, so it fails the strict identity gate."
     }
   }
 }
