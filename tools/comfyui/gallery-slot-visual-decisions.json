@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-27T22:02:03.988Z",
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-28",
-  "reviewMethod": "Zupaysaurus original description, cranial redescription, postcranial reassessment, later neotheropod body-size context, and Los Colorados sedimentology gate; original-size review of all thirteen legacy files and six selected files, a six-role contact sheet, and head, hands, feet, pelvis-tail, skull-ridge-teeth, and distant-secondary crops; strict one-head, two-forelimb, two-hindlimb, and one-continuous-tail review on each selected primary full-body animal; no complete hand is preserved, so exact manual digit count and full-body proportions remain conservative phylogenetic reconstruction rather than species-level claims",
-  "targetSlots": 546,
+  "generatedAt": "2026-07-27T22:39:16.689Z",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-29",
+  "reviewMethod": "Bonaparte & Pumares 1995 cranial and postcranial gate, later redescription and specimen-identity caveat, and Los Colorados sedimentology; original-size review of all eight legacy files and six selected files, a six-role contact sheet, and isolated skull, limb, tail, and secondary-animal crops; strict two-forelimb, two-hindlimb, and one-tail review on complete primary animals; gait, hand and foot soft tissue, low browsing, coexistence, and size-class relationship remain reconstruction hypotheses",
+  "targetSlots": 547,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -382,48 +382,57 @@
     "riojasaurus-incertus": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/riojasaurus-incertus-robust-quadruped-imagegen-v1.png",
+        "source": "assets/dinosaurs/riojasaurus-incertus-long-low-skull-robust-forelimb-representative-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Original-size full-frame and crop review confirms one low elongated head, two non-columnar forelimbs, two hind limbs, primitive separated forehands, and one continuous pelvis-origin tail; the quadrupedal pose remains a cautious reconstruction rather than an obligate-gait claim.",
+        "reviewMethod": "Bonaparte & Pumares 1995 cranial and postcranial gate, later redescription and specimen-identity caveat, and Los Colorados sedimentology; original-size review of all eight legacy files and six selected files, a six-role contact sheet, and isolated skull, limb, tail, and secondary-animal crops; strict two-forelimb, two-hindlimb, and one-tail review on complete primary animals; gait, hand and foot soft tissue, low browsing, coexistence, and size-class relationship remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-29",
+        "reviewedAt": "2026-07-27T22:39:16.689Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/riojasaurus-incertus-olive-sienna-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/riojasaurus-incertus-plum-petrol-celadon-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Reverse-facing blue-hour composition adds plum-slate, petrol, celadon, saffron, and coral variation while preserving four limbs and one tail; the lifted forelimb and rear-oblique perspective keep it below representative rank.",
+        "reviewMethod": "Bonaparte & Pumares 1995 cranial and postcranial gate, later redescription and specimen-identity caveat, and Los Colorados sedimentology; original-size review of all eight legacy files and six selected files, a six-role contact sheet, and isolated skull, limb, tail, and secondary-animal crops; strict two-forelimb, two-hindlimb, and one-tail review on complete primary animals; gait, hand and foot soft tissue, low browsing, coexistence, and size-class relationship remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-29",
+        "reviewedAt": "2026-07-27T22:39:16.689Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/riojasaurus-incertus-los-colorados-herd-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/riojasaurus-incertus-meandering-floodplain-low-browse-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "High-oblique view preserves a complete single animal with four limbs and one tail in a moderately sinuous channel and floodplain setting; low browsing is explicitly treated as a reconstruction hypothesis.",
+        "reviewMethod": "Bonaparte & Pumares 1995 cranial and postcranial gate, later redescription and specimen-identity caveat, and Los Colorados sedimentology; original-size review of all eight legacy files and six selected files, a six-role contact sheet, and isolated skull, limb, tail, and secondary-animal crops; strict two-forelimb, two-hindlimb, and one-tail review on complete primary animals; gait, hand and foot soft tissue, low browsing, coexistence, and size-class relationship remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-29",
+        "reviewedAt": "2026-07-27T22:39:16.689Z"
       },
       "4": {
         "status": "approved",
-        "source": "assets/dinosaurs/riojasaurus-incertus-robust-basal-sauropodomorph-identity-imagegen-v2.png",
+        "source": "assets/dinosaurs/riojasaurus-incertus-low-long-skull-conical-teeth-anatomy-imagegen-v1.png",
         "role": "identity-anatomy",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Close lateral review resolves one anterior nostril, one eye, one ear opening, a low elongated skull, broad antorbital region, thick cheek, subtle beak tip, and small rounded conical teeth without predator-tooth drift.",
+        "reviewMethod": "Bonaparte & Pumares 1995 cranial and postcranial gate, later redescription and specimen-identity caveat, and Los Colorados sedimentology; original-size review of all eight legacy files and six selected files, a six-role contact sheet, and isolated skull, limb, tail, and secondary-animal crops; strict two-forelimb, two-hindlimb, and one-tail review on complete primary animals; gait, hand and foot soft tissue, low browsing, coexistence, and size-class relationship remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-29",
+        "reviewedAt": "2026-07-27T22:39:16.689Z"
       },
       "5": {
         "status": "approved",
-        "source": "assets/dinosaurs/riojasaurus-incertus-zupaysaurus-defense-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/riojasaurus-incertus-coloradisaurus-channel-separated-coexistence-ecology-imagegen-v1.png",
         "role": "interaction",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The complete foreground Riojasaurus is separated by a broad channel from two distant Coloradisaurus-like silhouettes; the scene supplies fauna and scale context without asserting encounter, attack, or social behavior.",
+        "reviewMethod": "Bonaparte & Pumares 1995 cranial and postcranial gate, later redescription and specimen-identity caveat, and Los Colorados sedimentology; original-size review of all eight legacy files and six selected files, a six-role contact sheet, and isolated skull, limb, tail, and secondary-animal crops; strict two-forelimb, two-hindlimb, and one-tail review on complete primary animals; gait, hand and foot soft tissue, low browsing, coexistence, and size-class relationship remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-29",
+        "reviewedAt": "2026-07-27T22:39:16.689Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/riojasaurus-incertus-two-size-classes-separated-floodplain-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "A complete large foreground individual and a spatially separated smaller individual each retain four limbs and one tail; the caption limits interpretation to a size-class comparison and makes no age, sex, parentage, or family claim.",
+        "reviewMethod": "Bonaparte & Pumares 1995 cranial and postcranial gate, later redescription and specimen-identity caveat, and Los Colorados sedimentology; original-size review of all eight legacy files and six selected files, a six-role contact sheet, and isolated skull, limb, tail, and secondary-animal crops; strict two-forelimb, two-hindlimb, and one-tail review on complete primary animals; gait, hand and foot soft tissue, low browsing, coexistence, and size-class relationship remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-29",
+        "reviewedAt": "2026-07-27T22:39:16.689Z"
       }
     },
     "lessemsaurus-sauropoides": {
@@ -5765,6 +5774,30 @@
     "assets/dinosaurs/zupaysaurus-rougieri-riojasaurus-attack-ecology-imagegen-v1.png": "The direct attack scene contains unstable overlapping anatomy and asserts an unsupported Zupaysaurus-Riojasaurus predatory event.",
     "assets/dinosaurs/zupaysaurus-rougieri-riojasaurus-carcass-feeding-ecology-imagegen-v1.png": "The generated carcass and feeding posture are anatomically unreliable and overstate a named-species trophic relationship.",
     "assets/dinosaurs/zupaysaurus-rougieri-riojasaurus-open-pursuit-ecology-imagegen-v1.png": "The pursuit frame uses generic secondary anatomy, uncertain appendage counts, and an unsupported direct chase interpretation.",
-    "assets/dinosaurs/zupaysaurus-rougieri-teal-umber-pattern-imagegen-v1.png": "The former pattern is overly gracile and ostrich-like, repeats a vertically elongated neck and generic bird head, and does not show convincing low nasal ridges."
+    "assets/dinosaurs/zupaysaurus-rougieri-teal-umber-pattern-imagegen-v1.png": "The former pattern is overly gracile and ostrich-like, repeats a vertically elongated neck and generic bird head, and does not show convincing low nasal ridges.",
+    "assets/dinosaurs/riojasaurus-incertus-los-colorados-herd-ecology-imagegen-v1.png": {
+      "reason": "Repeated brown broadside animals drift toward generic sauropods and the crowded scene overstates herd behavior while reducing limb-count confidence."
+    },
+    "assets/dinosaurs/riojasaurus-incertus-olive-sienna-pattern-imagegen-v1.png": {
+      "reason": "Repeats the former representative's brown-green broadside body, short rounded head, and columnar foot treatment instead of providing a distinct credible pattern role."
+    },
+    "assets/dinosaurs/riojasaurus-incertus-robust-basal-sauropodomorph-identity-imagegen-v2.png": {
+      "reason": "Generic sauropod proportions, short head, and explicitly columnar legs conflict with the long low skull and non-columnar early-sauropodomorph limb gate."
+    },
+    "assets/dinosaurs/riojasaurus-incertus-robust-quadruped-imagegen-v1.png": {
+      "reason": "The former representative has a short rounded birdlike head, gracile upright neck, generic sauropod torso, and elephant-like feet that fail the revised identity gate."
+    },
+    "assets/dinosaurs/riojasaurus-incertus-storm-slope-blueblack-lime-ladder-ecology-imagegen-v1.png": {
+      "reason": "The palette variation does not rescue the vertical neck, generic sauropod silhouette, and weak low elongated skull identity."
+    },
+    "assets/dinosaurs/riojasaurus-incertus-zupaysaurus-defense-ecology-imagegen-v1.png": {
+      "reason": "Unsupported named-species defense behavior, overlapping multi-animal silhouettes, and generic Riojasaurus anatomy make this unsuitable for the reviewed gallery."
+    },
+    "assets/dinosaurs/riojasaurus-incertus-zupaysaurus-juvenile-shield-defense-ecology-imagegen-v1.png": {
+      "reason": "Asserts juvenile shielding and parent-like defense without evidence while crowded figures and appendages prevent reliable anatomy review."
+    },
+    "assets/dinosaurs/riojasaurus-incertus-zupaysaurus-tail-guard-defense-ecology-imagegen-v1.png": {
+      "reason": "Asserts a species-level tail-guard defense interaction and contains unstable overlapping bodies that weaken limb and tail verification."
+    }
   }
 }

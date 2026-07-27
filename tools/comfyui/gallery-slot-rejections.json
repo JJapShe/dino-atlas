@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-28",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-29",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -628,6 +628,30 @@
     },
     "assets/dinosaurs/zupaysaurus-rougieri-teal-umber-pattern-imagegen-v1.png": {
       "reason": "The former pattern is overly gracile and ostrich-like, repeats a vertically elongated neck and generic bird head, and does not show convincing low nasal ridges."
+    },
+    "assets/dinosaurs/riojasaurus-incertus-los-colorados-herd-ecology-imagegen-v1.png": {
+      "reason": "Repeated brown broadside animals drift toward generic sauropods and the crowded scene overstates herd behavior while reducing limb-count confidence."
+    },
+    "assets/dinosaurs/riojasaurus-incertus-olive-sienna-pattern-imagegen-v1.png": {
+      "reason": "Repeats the former representative's brown-green broadside body, short rounded head, and columnar foot treatment instead of providing a distinct credible pattern role."
+    },
+    "assets/dinosaurs/riojasaurus-incertus-robust-basal-sauropodomorph-identity-imagegen-v2.png": {
+      "reason": "Generic sauropod proportions, short head, and explicitly columnar legs conflict with the long low skull and non-columnar early-sauropodomorph limb gate."
+    },
+    "assets/dinosaurs/riojasaurus-incertus-robust-quadruped-imagegen-v1.png": {
+      "reason": "The former representative has a short rounded birdlike head, gracile upright neck, generic sauropod torso, and elephant-like feet that fail the revised identity gate."
+    },
+    "assets/dinosaurs/riojasaurus-incertus-storm-slope-blueblack-lime-ladder-ecology-imagegen-v1.png": {
+      "reason": "The palette variation does not rescue the vertical neck, generic sauropod silhouette, and weak low elongated skull identity."
+    },
+    "assets/dinosaurs/riojasaurus-incertus-zupaysaurus-defense-ecology-imagegen-v1.png": {
+      "reason": "Unsupported named-species defense behavior, overlapping multi-animal silhouettes, and generic Riojasaurus anatomy make this unsuitable for the reviewed gallery."
+    },
+    "assets/dinosaurs/riojasaurus-incertus-zupaysaurus-juvenile-shield-defense-ecology-imagegen-v1.png": {
+      "reason": "Asserts juvenile shielding and parent-like defense without evidence while crowded figures and appendages prevent reliable anatomy review."
+    },
+    "assets/dinosaurs/riojasaurus-incertus-zupaysaurus-tail-guard-defense-ecology-imagegen-v1.png": {
+      "reason": "Asserts a species-level tail-guard defense interaction and contains unstable overlapping bodies that weaken limb and tail verification."
     }
   }
 }

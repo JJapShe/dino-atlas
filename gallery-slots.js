@@ -337,7 +337,7 @@ window.gallerySlotAssignments = {
   ],
   "riojasaurus-incertus": [
     {
-      "source": "assets/dinosaurs/riojasaurus-incertus-robust-quadruped-imagegen-v1.png",
+      "source": "assets/dinosaurs/riojasaurus-incertus-long-low-skull-robust-forelimb-representative-imagegen-v1.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
@@ -345,7 +345,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/riojasaurus-incertus-olive-sienna-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/riojasaurus-incertus-plum-petrol-celadon-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -353,7 +353,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/riojasaurus-incertus-los-colorados-herd-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/riojasaurus-incertus-meandering-floodplain-low-browse-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
@@ -361,7 +361,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/riojasaurus-incertus-robust-basal-sauropodomorph-identity-imagegen-v2.png",
+      "source": "assets/dinosaurs/riojasaurus-incertus-low-long-skull-conical-teeth-anatomy-imagegen-v1.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
@@ -369,9 +369,17 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/riojasaurus-incertus-zupaysaurus-defense-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/riojasaurus-incertus-coloradisaurus-channel-separated-coexistence-ecology-imagegen-v1.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "arid-redbed",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/riojasaurus-incertus-two-size-classes-separated-floodplain-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "arid-redbed",
       "expectedKind": "anatomy review"
