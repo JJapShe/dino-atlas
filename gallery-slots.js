@@ -203,7 +203,7 @@ window.gallerySlotAssignments = {
   ],
   "zupaysaurus-rougieri": [
     {
-      "source": "assets/dinosaurs/zupaysaurus-rougieri-lowridge-theropod-imagegen-v1.png",
+      "source": "assets/dinosaurs/zupaysaurus-rougieri-long-low-skull-low-nasal-ridge-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
@@ -211,7 +211,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/zupaysaurus-rougieri-teal-umber-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/zupaysaurus-rougieri-olive-cobalt-celadon-saffron-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -219,7 +219,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/zupaysaurus-rougieri-los-colorados-drinking-ecology-imagegen-v2.png",
+      "source": "assets/dinosaurs/zupaysaurus-rougieri-seasonal-channel-floodplain-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
@@ -227,7 +227,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/zupaysaurus-rougieri-lowridge-identity-imagegen-v2.png",
+      "source": "assets/dinosaurs/zupaysaurus-rougieri-long-low-skull-tooth-profile-anatomy-imagegen-v1.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
@@ -235,9 +235,17 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/zupaysaurus-rougieri-riojasaurus-attack-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/zupaysaurus-rougieri-riojasaurus-separated-floodplain-coexistence-ecology-imagegen-v1.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "arid-redbed",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/zupaysaurus-rougieri-wet-levee-storm-movement-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "arid-redbed",
       "expectedKind": "anatomy review"

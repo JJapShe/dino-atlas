@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-27T21:29:43.792Z",
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-27",
-  "reviewMethod": "Eoraptor original-description and 2013 osteology gate plus Ischigualasto stratigraphic context; original-size review of all ten legacy files and six selected files, six-role contact sheet, and isolated head, both-hand, both-foot, pelvis-tail, and distant-secondary-animal crops; strict one-head, two-forelimb, two-hindlimb, and one-continuous-tail review on every primary animal; the 2-3-4-(1)-0 manual formula replaces the former three-finger-only interpretation, while whole-body images do not claim to expose metacarpal V and the close hand remains anatomy review because soft-tissue proportions and perspective are generated",
-  "targetSlots": 545,
+  "generatedAt": "2026-07-27T22:02:03.988Z",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-28",
+  "reviewMethod": "Zupaysaurus original description, cranial redescription, postcranial reassessment, later neotheropod body-size context, and Los Colorados sedimentology gate; original-size review of all thirteen legacy files and six selected files, a six-role contact sheet, and head, hands, feet, pelvis-tail, skull-ridge-teeth, and distant-secondary crops; strict one-head, two-forelimb, two-hindlimb, and one-continuous-tail review on each selected primary full-body animal; no complete hand is preserved, so exact manual digit count and full-body proportions remain conservative phylogenetic reconstruction rather than species-level claims",
+  "targetSlots": 546,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -232,48 +232,57 @@
     "zupaysaurus-rougieri": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/zupaysaurus-rougieri-lowridge-theropod-imagegen-v1.png",
+        "source": "assets/dinosaurs/zupaysaurus-rougieri-long-low-skull-low-nasal-ridge-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The neutral-daylight full body keeps a long low skull, only subtle low lateral nasal ridges, a low-carried neck, two forelimbs, two hind limbs, readable feet, and one continuous tail without tall-crest, horn, bird-head, or sickle-claw drift.",
+        "reviewMethod": "Original-size full frame plus head, both-hand, both-foot, and pelvis-tail crops; body and hand proportions remain conservative phylogenetic reconstructions because the postcranium is fragmentary and no complete hand is preserved",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-28",
+        "reviewedAt": "2026-07-27T22:02:03.988Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/zupaysaurus-rougieri-teal-umber-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/zupaysaurus-rougieri-olive-cobalt-celadon-saffron-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing overcast view preserves the selected body plan while replacing the former teal-umber repetition with an olive-graphite, cobalt-violet, celadon, and saffron pattern.",
+        "reviewMethod": "Original-size full frame plus head, both-hand, both-foot, and pelvis-tail crops; both arms, both legs, and the pelvis-origin tail are present, while oblique distant digits remain review-only rather than species-level hand evidence",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-28",
+        "reviewedAt": "2026-07-27T22:02:03.988Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/zupaysaurus-rougieri-los-colorados-drinking-ecology-imagegen-v2.png",
+        "source": "assets/dinosaurs/zupaysaurus-rougieri-seasonal-channel-floodplain-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The high-oblique post-rain channel crossing adds sandy bars, shallow water, red-mauve mud, floodplain deposits, and patchy vegetation without inventing prey, attack, drinking, or social behavior.",
+        "reviewMethod": "Original-size full frame plus head, both-hand, both-foot, and pelvis-tail crops; shallow water does not hide either foot, and the crossing posture is labeled a habitat and locomotion hypothesis",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-28",
+        "reviewedAt": "2026-07-27T22:02:03.988Z"
       },
       "4": {
         "status": "approved",
-        "source": "assets/dinosaurs/zupaysaurus-rougieri-lowridge-identity-imagegen-v2.png",
+        "source": "assets/dinosaurs/zupaysaurus-rougieri-long-low-skull-tooth-profile-anatomy-imagegen-v1.png",
         "role": "identity-anatomy",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The bright lateral life portrait isolates the long low narrow skull, oval orbit, many small teeth, modestly enlarged anterior dentary teeth, and very low nasal ridge without recreating the obsolete tall paired-crest interpretation.",
+        "reviewMethod": "Original-size full frame plus snout-ridge-teeth, orbit-cheek, and head-neck transition crops; it is approved as an anatomy-review identity reference, not proof of exact tooth count, tooth spacing, or soft tissue",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-28",
+        "reviewedAt": "2026-07-27T22:02:03.988Z"
       },
       "5": {
         "status": "approved",
-        "source": "assets/dinosaurs/zupaysaurus-rougieri-riojasaurus-attack-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/zupaysaurus-rougieri-riojasaurus-separated-floodplain-coexistence-ecology-imagegen-v1.png",
         "role": "interaction",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "A broad channel keeps the complete foreground Zupaysaurus spatially separate from two distant quadrupedal Riojasaurus silhouettes, replacing unsupported attack and carcass scenes with fauna and scale context.",
+        "reviewMethod": "Original-size full frame plus foreground head-hands, foreground feet-tail, and distant-secondary crops; no encounter, gaze, pursuit, attack, injury, feeding, or prey relation is claimed, and distant Riojasaurus are not used for detailed anatomy",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-28",
+        "reviewedAt": "2026-07-27T22:02:03.988Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/zupaysaurus-rougieri-wet-levee-storm-movement-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The solitary rear-side levee movement frame adds storm light and locomotor variety while retaining two arms, two legs, readable feet, and one continuous tail without an attacker, prey, or second individual.",
+        "reviewMethod": "Original-size full frame plus head-hands, both-foot, and pelvis-tail crops; movement before a rain shower is explicitly an environmental pose hypothesis and not evidence of defense, sociality, sex, or growth stage",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-28",
+        "reviewedAt": "2026-07-27T22:02:03.988Z"
       }
     },
     "liliensternus-liliensterni": {
@@ -5743,6 +5752,19 @@
     "assets/dinosaurs/eoraptor-lunensis-pisanosaurus-open-pursuit-ecology-imagegen-v1.png": "The open-pursuit scene turns uncertain co-occurrence into chase behavior and makes the small moving bodies too distant for reliable anatomy review.",
     "assets/dinosaurs/eoraptor-lunensis-primitive-threefinger-identity-imagegen-v2.png": "The former identity image explicitly treats three fingers as the complete hand despite five preserved metacarpals, a probable rudimentary digit IV phalanx, and a phalanx-free digit V.",
     "assets/dinosaurs/eoraptor-lunensis-slate-copper-pattern-imagegen-v1.png": "The former pattern repeats the vertically elongated swan neck, generic birdlike head, and three-finger-only hand interpretation.",
-    "assets/dinosaurs/eoraptor-lunensis-small-primitive-theropod-imagegen-v1.png": "The former representative is a generic long-necked raptor silhouette and labels Eoraptor as a small predatory theropod rather than reflecting the described basal-sauropodomorph anatomy and herbivory signal."
+    "assets/dinosaurs/eoraptor-lunensis-small-primitive-theropod-imagegen-v1.png": "The former representative is a generic long-necked raptor silhouette and labels Eoraptor as a small predatory theropod rather than reflecting the described basal-sauropodomorph anatomy and herbivory signal.",
+    "assets/dinosaurs/zupaysaurus-rougieri-coloradisaurus-arroyo-bite-pressure-ecology-imagegen-v1.png": "The direct bite scene uses generic unstable animals, obscures appendage counts, and asserts an unsupported named-species predatory interaction.",
+    "assets/dinosaurs/zupaysaurus-rougieri-coloradisaurus-saltpan-flank-contact-ecology-imagegen-v1.png": "The crowded flank-contact scene has weak species identity, unclear limb separation, and unsupported direct contact.",
+    "assets/dinosaurs/zupaysaurus-rougieri-coloradisaurus-stormbreak-carcass-feeding-ecology-imagegen-v1.png": "The carcass-feeding composition hides anatomy and overstates a named-species trophic event that is not directly evidenced.",
+    "assets/dinosaurs/zupaysaurus-rougieri-lessemsaurus-attack-ecology-imagegen-v1.png": "The supposed Lessemsaurus is rendered as an unstable generic animal, while contact and overlapping appendages prevent reliable anatomy review.",
+    "assets/dinosaurs/zupaysaurus-rougieri-lessemsaurus-carcass-feeding-ecology-imagegen-v1.png": "The generated carcass is taxonomically unreliable, body parts overlap, and the scene asserts unsupported feeding behavior.",
+    "assets/dinosaurs/zupaysaurus-rougieri-lessemsaurus-open-pursuit-ecology-imagegen-v1.png": "The pursuit frame repeats generic long-necked predator anatomy and misrepresents the secondary sauropodomorph while asserting unsupported chase behavior.",
+    "assets/dinosaurs/zupaysaurus-rougieri-los-colorados-drinking-ecology-imagegen-v2.png": "The former habitat image has a snake-like elongated head and neck, weak low-ridge identity, and water/pose overlap that prevents reliable appendage review.",
+    "assets/dinosaurs/zupaysaurus-rougieri-lowridge-identity-imagegen-v2.png": "The former identity image is a generic long-necked bird-runner silhouette with no convincing low lateral nasal ridges and an overconfident three-finger reconstruction.",
+    "assets/dinosaurs/zupaysaurus-rougieri-lowridge-theropod-imagegen-v1.png": "The former representative uses an elongated swan-like neck and generic raptor head while failing to communicate the corrected long low skull and subtle lateral nasal ridge.",
+    "assets/dinosaurs/zupaysaurus-rougieri-riojasaurus-attack-ecology-imagegen-v1.png": "The direct attack scene contains unstable overlapping anatomy and asserts an unsupported Zupaysaurus-Riojasaurus predatory event.",
+    "assets/dinosaurs/zupaysaurus-rougieri-riojasaurus-carcass-feeding-ecology-imagegen-v1.png": "The generated carcass and feeding posture are anatomically unreliable and overstate a named-species trophic relationship.",
+    "assets/dinosaurs/zupaysaurus-rougieri-riojasaurus-open-pursuit-ecology-imagegen-v1.png": "The pursuit frame uses generic secondary anatomy, uncertain appendage counts, and an unsupported direct chase interpretation.",
+    "assets/dinosaurs/zupaysaurus-rougieri-teal-umber-pattern-imagegen-v1.png": "The former pattern is overly gracile and ostrich-like, repeats a vertically elongated neck and generic bird head, and does not show convincing low nasal ridges."
   }
 }

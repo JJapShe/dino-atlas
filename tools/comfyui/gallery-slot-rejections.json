@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-27",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-28",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -589,6 +589,45 @@
     },
     "assets/dinosaurs/eoraptor-lunensis-small-primitive-theropod-imagegen-v1.png": {
       "reason": "The former representative is a generic long-necked raptor silhouette and labels Eoraptor as a small predatory theropod rather than reflecting the described basal-sauropodomorph anatomy and herbivory signal."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-coloradisaurus-arroyo-bite-pressure-ecology-imagegen-v1.png": {
+      "reason": "The direct bite scene uses generic unstable animals, obscures appendage counts, and asserts an unsupported named-species predatory interaction."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-coloradisaurus-saltpan-flank-contact-ecology-imagegen-v1.png": {
+      "reason": "The crowded flank-contact scene has weak species identity, unclear limb separation, and unsupported direct contact."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-coloradisaurus-stormbreak-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The carcass-feeding composition hides anatomy and overstates a named-species trophic event that is not directly evidenced."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-lessemsaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "The supposed Lessemsaurus is rendered as an unstable generic animal, while contact and overlapping appendages prevent reliable anatomy review."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-lessemsaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The generated carcass is taxonomically unreliable, body parts overlap, and the scene asserts unsupported feeding behavior."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-lessemsaurus-open-pursuit-ecology-imagegen-v1.png": {
+      "reason": "The pursuit frame repeats generic long-necked predator anatomy and misrepresents the secondary sauropodomorph while asserting unsupported chase behavior."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-los-colorados-drinking-ecology-imagegen-v2.png": {
+      "reason": "The former habitat image has a snake-like elongated head and neck, weak low-ridge identity, and water/pose overlap that prevents reliable appendage review."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-lowridge-identity-imagegen-v2.png": {
+      "reason": "The former identity image is a generic long-necked bird-runner silhouette with no convincing low lateral nasal ridges and an overconfident three-finger reconstruction."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-lowridge-theropod-imagegen-v1.png": {
+      "reason": "The former representative uses an elongated swan-like neck and generic raptor head while failing to communicate the corrected long low skull and subtle lateral nasal ridge."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-riojasaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "The direct attack scene contains unstable overlapping anatomy and asserts an unsupported Zupaysaurus-Riojasaurus predatory event."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-riojasaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The generated carcass and feeding posture are anatomically unreliable and overstate a named-species trophic relationship."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-riojasaurus-open-pursuit-ecology-imagegen-v1.png": {
+      "reason": "The pursuit frame uses generic secondary anatomy, uncertain appendage counts, and an unsupported direct chase interpretation."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-teal-umber-pattern-imagegen-v1.png": {
+      "reason": "The former pattern is overly gracile and ostrich-like, repeats a vertically elongated neck and generic bird head, and does not show convincing low nasal ridges."
     }
   }
 }
