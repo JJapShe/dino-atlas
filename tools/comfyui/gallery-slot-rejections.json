@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-27-richness-six-slot-batch-20",
+  "reviewBatch": "2026-07-27-richness-six-slot-batch-21",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -415,6 +415,21 @@
     },
     "assets/dinosaurs/protoceratops-andrewsi-gobi-ecology-imagegen-v1.png": {
       "reason": "The former ecology scene repeats the same body and angle across three animals, multiplying generalized feet and rounded frills while adding little role or composition diversity."
+    },
+    "assets/dinosaurs/pachycephalosaurus-wyomingensis-imagegen-v1-source-candidate.png": {
+      "reason": "Former representative has an overly bulbous generic ornithischian torso, hook-like underspecified hands, repeated dry broadside framing, and weaker separation of the adult dome from a generalized mascot silhouette."
+    },
+    "assets/dinosaurs/pachycephalosaurus-wyomingensis-umber-ultramarine-throat-pattern-imagegen-v3.png": {
+      "reason": "Former pattern variant loses the diagnostic posterior skull nodes, repeats a static broadside body, and has fused hook-like hands despite the isolated blue throat color."
+    },
+    "assets/dinosaurs/pachycephalosaurus-wyomingensis-rain-cutbank-ultramarine-dome-ecology-imagegen-v1.png": {
+      "reason": "Former habitat image uses a ringed-tail recipe and steep muddy pose that weakens appendage review; the new habitat role exposes all four limbs and retains the plain-tail population motif."
+    },
+    "assets/dinosaurs/pachycephalosaurus-wyomingensis-rainforest-blue-dome-social-display-ecology-imagegen-v1.png": {
+      "reason": "Former social scene combines two low, elongated heads, ringed tails, tight overlap, and near-contact behavior without a clear uncertainty gate."
+    },
+    "assets/dinosaurs/pachycephalosaurus-wyomingensis-hellcreek-interaction-imagegen-v2.png": {
+      "reason": "Former interaction scene contains generalized and taxonomically weak background dinosaurs, repeats the old arid broadside composition, and does not provide a controlled coexistence comparison."
     }
   }
 }
