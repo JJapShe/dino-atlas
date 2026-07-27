@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-27T19:05:25.968Z",
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-23",
-  "reviewMethod": "Deinocheirus complete-skeleton, original-forelimb, mesic-environment, and Nemegt co-occurrence literature gate; strict two-forelimb, two-hindlimb, one-tail review for every full-body primary animal and exactly three independently readable fingers per visible hand; original-size full frames, six-role contact sheet, and isolated head, both-hand, both-foot, tail, and secondary-animal crops; filament covering and tail tuft retained as conservative inference rather than direct skin evidence",
-  "targetSlots": 541,
+  "generatedAt": "2026-07-27T19:38:37.911Z",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-24",
+  "reviewMethod": "Buriolestes original-description, revised-skeleton, and endocranial active-predator literature gate; strict two-forelimb, two-hindlimb, one-head, one-continuous-tail review for every primary animal; original-size inspection of all eight legacy files, full-frame contact sheets, and isolated head, both-hand, both-foot, limb-junction, tail, and secondary-animal crops; three principal forward pedal digits distinguished from a potentially subtle inner first digit, while exact manual digit count is not used as a species gate because the fossil manus is mostly unknown",
+  "targetSlots": 542,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -536,46 +536,55 @@
         "status": "approved",
         "source": "assets/dinosaurs/buriolestes-schultzi-faunivorous-sauropodomorph-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The complete daylight profile retains a relatively large long low toothed skull, moderate neck, lightly built bipedal trunk, exactly two forelimbs, two long hind limbs with three principal forward toes and a subtle inner toe where readable, and one continuous balancing tail.",
+        "reviewMethod": "Original-size full frame plus head, both-hand, both-foot, limb-junction, and tail crops; hand digits are treated as a conservative reconstruction because the type forelimb lacks most of the manus",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-24",
+        "reviewedAt": "2026-07-27T19:38:37.911Z"
       },
       "2": {
         "status": "approved",
         "source": "assets/dinosaurs/buriolestes-schultzi-slate-rust-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing warm-light variant preserves the same long low head, moderate neck, two arms, two legs, visible feet, and one tail while adding a restrained slate, rust, cream-speckle, and broken-tail-band pattern.",
+        "reviewMethod": "Original-size full frame and hand, foot, head, and tail crops; accepted as a pattern hold rather than anatomical representative because perspective reduces the far-foot detail",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-24",
+        "reviewedAt": "2026-07-27T19:38:37.911Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/buriolestes-schultzi-santa-maria-forage-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/buriolestes-schultzi-postrain-stream-prey-tracking-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The wide post-rain stream-margin scene keeps one complete small early sauropodomorph with two separated forelimbs, two hind limbs, readable feet, and one tail; the tiny animal across the water remains below species-level detail and is only a cautious tracking context.",
+        "reviewMethod": "Original-size full frame plus head, hands, feet, tail, and distant-prey crop; no contact, chase, injury, prey identity, or documented event is claimed",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-24",
+        "reviewedAt": "2026-07-27T19:38:37.911Z"
       },
       "4": {
         "status": "approved",
         "source": "assets/dinosaurs/buriolestes-schultzi-bipedal-early-sauropodomorph-identity-imagegen-v2.png",
         "role": "identity-anatomy",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The neutral humid-setting profile clearly separates the relatively large low head, moderate neck, lightly built torso, two raised forelimbs, two long hind limbs, three principal forward toes with small inner-toe detail, and one uninterrupted tail.",
+        "reviewMethod": "Original-size full frame plus head, hand, both-foot, and tail crops; retained as structural reference because the closed mouth does not expose the diagnostic faunivorous dentition",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-24",
+        "reviewedAt": "2026-07-27T19:38:37.911Z"
       },
       "5": {
         "status": "approved",
-        "source": "assets/dinosaurs/buriolestes-schultzi-bagualosaurus-attack-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/buriolestes-schultzi-redbed-dawn-obsidian-opal-forage-ecology-imagegen-v1.png",
         "role": "interaction",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The wet redbed dawn frame adds an obsidian, opal-cream, muted teal, rust, and ochre palette while retaining one complete primary animal, exactly two arms, two legs, independently readable feet, and one tail; the tiny foreground vertebrate remains non-diagnostic.",
+        "reviewMethod": "Original-size full frame plus head, limb-junction, both-hand, both-foot, tail, and tiny-secondary-animal crops; tracking is presented as a cautious active-predator hypothesis, not a documented encounter",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-24",
+        "reviewedAt": "2026-07-27T19:38:37.911Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/buriolestes-schultzi-stormbreak-alert-defense-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The low three-quarter storm-break frame shows one alert animal with a long low head, two separately lifted forelimbs, two fully planted hind limbs, readable feet, and one complete tail, with no attacker or contact scene.",
+        "reviewMethod": "Original-size full frame plus head, both-hand, both-foot, limb-junction, and tail crops; the posture is explicitly a defensive-alert hypothesis and no social behavior is inferred",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-24",
+        "reviewedAt": "2026-07-27T19:38:37.911Z"
       }
     },
     "bagualosaurus-agudoensis": {
@@ -5610,6 +5619,18 @@
     },
     "assets/dinosaurs/deinocheirus-mirificus-nemegt-river-ecology-imagegen-v1.png": {
       "reason": "Former river ecology candidate uses a mostly bare primary animal with a distorted low head and overlapping appendages; the crowded generic background also weakens species-level interaction review."
+    },
+    "assets/dinosaurs/buriolestes-schultzi-bagualosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Former interaction candidate reverses the expected Buriolestes-to-Bagualosaurus size relationship, renders the secondary animal as a small generic quadruped, and stages a lightly wounded direct attack that exceeds the evidence."
+    },
+    "assets/dinosaurs/buriolestes-schultzi-bagualosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Former feeding candidate uses an oversized generic sauropod-like carcass, hides most secondary anatomy, and presents an unsupported species-level carcass association instead of a restrained faunivory hypothesis."
+    },
+    "assets/dinosaurs/buriolestes-schultzi-bagualosaurus-open-pursuit-ecology-imagegen-v1.png": {
+      "reason": "Unregistered pursuit scene keeps a generic large biped as Bagualosaurus, makes the Buriolestes body read as a small theropod, and turns uncertain co-occurrence into a direct chase."
+    },
+    "assets/dinosaurs/buriolestes-schultzi-santa-maria-forage-ecology-imagegen-v1.png": {
+      "reason": "The warm daylight small-prey scene is anatomically usable but duplicates the interaction and stream-margin roles; it is superseded by the better separated post-rain habitat, obsidian-opal dawn interaction, and storm-break alert set."
     }
   }
 }

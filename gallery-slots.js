@@ -489,7 +489,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/buriolestes-schultzi-santa-maria-forage-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/buriolestes-schultzi-postrain-stream-prey-tracking-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
@@ -505,9 +505,17 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/buriolestes-schultzi-bagualosaurus-attack-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/buriolestes-schultzi-redbed-dawn-obsidian-opal-forage-ecology-imagegen-v1.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "arid-redbed",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/buriolestes-schultzi-stormbreak-alert-defense-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "arid-redbed",
       "expectedKind": "anatomy review"

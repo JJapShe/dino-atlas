@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-23",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-24",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -472,6 +472,18 @@
     },
     "assets/dinosaurs/deinocheirus-mirificus-nemegt-river-ecology-imagegen-v1.png": {
       "reason": "Former river ecology candidate uses a mostly bare primary animal with a distorted low head and overlapping appendages; the crowded generic background also weakens species-level interaction review."
+    },
+    "assets/dinosaurs/buriolestes-schultzi-bagualosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Former interaction candidate reverses the expected Buriolestes-to-Bagualosaurus size relationship, renders the secondary animal as a small generic quadruped, and stages a lightly wounded direct attack that exceeds the evidence."
+    },
+    "assets/dinosaurs/buriolestes-schultzi-bagualosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Former feeding candidate uses an oversized generic sauropod-like carcass, hides most secondary anatomy, and presents an unsupported species-level carcass association instead of a restrained faunivory hypothesis."
+    },
+    "assets/dinosaurs/buriolestes-schultzi-bagualosaurus-open-pursuit-ecology-imagegen-v1.png": {
+      "reason": "Unregistered pursuit scene keeps a generic large biped as Bagualosaurus, makes the Buriolestes body read as a small theropod, and turns uncertain co-occurrence into a direct chase."
+    },
+    "assets/dinosaurs/buriolestes-schultzi-santa-maria-forage-ecology-imagegen-v1.png": {
+      "reason": "The warm daylight small-prey scene is anatomically usable but duplicates the interaction and stream-margin roles; it is superseded by the better separated post-rain habitat, obsidian-opal dawn interaction, and storm-break alert set."
     }
   }
 }
