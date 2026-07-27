@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-29",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-30",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -652,6 +652,36 @@
     },
     "assets/dinosaurs/riojasaurus-incertus-zupaysaurus-tail-guard-defense-ecology-imagegen-v1.png": {
       "reason": "Asserts a species-level tail-guard defense interaction and contains unstable overlapping bodies that weaken limb and tail verification."
+    },
+    "assets/dinosaurs/hesperosaurus-mjosi-allosaurus-defense-ecology-imagegen-v1.png": {
+      "reason": "The former direct-defense scene shows an unstable five-spike fan, generic tall plate proportions, and an unsupported named-species confrontation."
+    },
+    "assets/dinosaurs/hesperosaurus-mjosi-allosaurus-tailspike-counterturn-ecology-imagegen-v1.png": {
+      "reason": "Tail-spike count drifts upward and the heavy shell-like body reads as an ankylosaur rather than a low-plated stegosaur."
+    },
+    "assets/dinosaurs/hesperosaurus-mjosi-allosaurus-tailspike-counterturn-ecology-imagegen-v2.png": {
+      "reason": "Active overlap and heavy body proportions weaken the paired-spike and stegosaur identity gate, while the direct defensive counterturn remains unsupported behavior."
+    },
+    "assets/dinosaurs/hesperosaurus-mjosi-allosaurus-tailspike-impact-defense-ecology-imagegen-v1.png": {
+      "reason": "Direct impact staging obscures spike bases and overstates a named-species defensive event; it is not suitable for the reviewed educational gallery."
+    },
+    "assets/dinosaurs/hesperosaurus-mjosi-ceratosaurus-tailspike-standoff-defense-ecology-imagegen-v1.png": {
+      "reason": "The crowded standoff composition hides spike bases and relies on an unsupported direct named-species encounter rather than readable Hesperosaurus anatomy."
+    },
+    "assets/dinosaurs/hesperosaurus-mjosi-low-rounded-plates-imagegen-v1.png": {
+      "reason": "The former representative resolves only three obvious tail spikes and uses a generic high-domed stegosaur body, so it fails the revised four-spike identity gate."
+    },
+    "assets/dinosaurs/hesperosaurus-mjosi-morrison-browse-ecology-imagegen-v1.png": {
+      "reason": "The two animals repeat generic broadside bodies; the background animal has an incomplete spike set and the foreground spikes splay horizontally, preventing reliable anatomy promotion."
+    },
+    "assets/dinosaurs/hesperosaurus-mjosi-plate-keratin-rosette-integument-anatomy-imagegen-v1.png": {
+      "reason": "The first new integument attempt repeats many regular flower-like rosettes across the torso and overstates the unknown full-body arrangement; it was superseded by the sparse-rosette v2."
+    },
+    "assets/dinosaurs/hesperosaurus-mjosi-rounded-plates-paired-thagomizer-identity-imagegen-v2.png": {
+      "reason": "The former identity view shows an overbuilt domed body, taller plates, and an ambiguous extra terminal spike, failing the stricter low-plate and four-spike gate."
+    },
+    "assets/dinosaurs/hesperosaurus-mjosi-slate-rust-pattern-imagegen-v1.png": {
+      "reason": "The former pattern variant shows only three readable tail spikes and repeats the same broadside brown-green body instead of a reliable distinct color role."
     }
   }
 }

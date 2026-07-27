@@ -2111,7 +2111,7 @@ window.gallerySlotAssignments = {
   ],
   "hesperosaurus-mjosi": [
     {
-      "source": "assets/dinosaurs/hesperosaurus-mjosi-low-rounded-plates-imagegen-v1.png",
+      "source": "assets/dinosaurs/hesperosaurus-mjosi-broadskull-lowplates-fourspike-representative-imagegen-v1.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
@@ -2119,7 +2119,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/hesperosaurus-mjosi-slate-rust-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/hesperosaurus-mjosi-petrol-plum-grooved-plate-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -2127,7 +2127,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/hesperosaurus-mjosi-allosaurus-tailspike-counterturn-ecology-imagegen-v2.png",
+      "source": "assets/dinosaurs/hesperosaurus-mjosi-overbank-low-browse-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
@@ -2135,7 +2135,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/hesperosaurus-mjosi-rounded-plates-paired-thagomizer-identity-imagegen-v2.png",
+      "source": "assets/dinosaurs/hesperosaurus-mjosi-plate-keratin-sparse-rosette-integument-anatomy-imagegen-v2.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
@@ -2143,9 +2143,17 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/hesperosaurus-mjosi-allosaurus-defense-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/hesperosaurus-mjosi-allosaurus-channel-separated-coexistence-ecology-imagegen-v1.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/hesperosaurus-mjosi-rain-channel-fourspike-movement-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
