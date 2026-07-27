@@ -3797,27 +3797,51 @@ window.gallerySlotAssignments = {
   ],
   "edmontosaurus-annectens": [
     {
-      "source": "assets/dinosaurs/edmontosaurus-annectens-duckbill-crest-imagegen-v1.png",
+      "source": "assets/dinosaurs/edmontosaurus-annectens-lance-softcrest-hooves-representative-imagegen-v1.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "hell-creek-lance-fluvial-forest",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/edmontosaurus-annectens-green-rust-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/edmontosaurus-annectens-petrol-celadon-russet-pattern-imagegen-v3.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "hell-creek-lance-fluvial-forest",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/edmontosaurus-annectens-hellcreek-herd-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/edmontosaurus-annectens-hellcreek-floodrecession-browse-habitat-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "hell-creek-lance-fluvial-forest",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/edmontosaurus-annectens-forehoof-threehindhoof-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "hell-creek-lance-fluvial-forest",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/edmontosaurus-annectens-tyrannosaurus-channel-standoff-ecology-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "hell-creek-lance-fluvial-forest",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/edmontosaurus-annectens-adult-juvenile-drychannel-growth-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "hell-creek-lance-fluvial-forest",
       "expectedKind": "anatomy review"
     }
   ],

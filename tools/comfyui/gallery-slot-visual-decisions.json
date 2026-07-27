@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-26T15:20:39.744Z",
-  "reviewBatch": "2026-07-26-richness-six-slot-batch-16",
-  "reviewMethod": "Parasaurolophus primary-description skull and manus, modern crest-neck, Dinosaur Park habitat, appendage-count, and cautious growth/co-occurrence gate plus original-size full-frame and isolated head, hand, foot, tail, juvenile, and secondary-animal inspection",
-  "targetSlots": 522,
+  "generatedAt": "2026-07-27T00:22:31.752Z",
+  "reviewBatch": "2026-07-27-richness-six-slot-batch-17",
+  "reviewMethod": "Edmontosaurus 2025 mummy soft-crest, tail-spike, forehoof, three-hind-hoof and heel-pad gate; Campione and Evans skull-growth gate; Hell Creek-Lance habitat, appendage-count, and cautious growth/co-occurrence gate plus original-size full-frame inspection",
+  "targetSlots": 525,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -4249,30 +4249,57 @@
     "edmontosaurus-annectens": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/edmontosaurus-annectens-duckbill-crest-imagegen-v1.png",
+        "reviewBatch": "2026-07-27-richness-six-slot-batch-17",
+        "reviewedAt": "2026-07-27T00:22:31.752Z",
+        "source": "assets/dinosaurs/edmontosaurus-annectens-lance-softcrest-hooves-representative-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The representative passes the long low crestless skull, broad closed toothless bill, continuous low fleshy midline crest, close single tail-spike row, two compact forehoof supports, two three-wedge-hoof hind feet, and one complete tail gates.",
+        "reviewMethod": "2025 mummy and skull-growth gate plus original-size full-frame head, crest, forehand, hind-foot, limb-count, and tail inspection"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/edmontosaurus-annectens-green-rust-pattern-imagegen-v1.png",
+        "reviewBatch": "2026-07-27-richness-six-slot-batch-17",
+        "reviewedAt": "2026-07-27T00:22:31.752Z",
+        "source": "assets/dinosaurs/edmontosaurus-annectens-petrol-celadon-russet-pattern-imagegen-v3.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing petrol, celadon, russet, and bone variant is visibly distinct while retaining one crestless head, four attached limbs, one continuous fleshy crest and tail-spike row, and one complete tail; exact rear-oblique hoof margins remain lower-confidence review material.",
+        "reviewMethod": "Species, palette, body-count, and tail gate plus original-size full-frame inspection; kept below representative as review hold"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/edmontosaurus-annectens-hellcreek-herd-ecology-imagegen-v1.png",
+        "reviewBatch": "2026-07-27-richness-six-slot-batch-17",
+        "reviewedAt": "2026-07-27T00:22:31.752Z",
+        "source": "assets/dinosaurs/edmontosaurus-annectens-hellcreek-floodrecession-browse-habitat-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The high-oblique flood-recession browse scene places one intact animal in a meandering fluvial forest with wet silt, point bars, conifers, ferns, mosses, and low angiosperms instead of repeating a crowded generic herd.",
+        "reviewMethod": "Hell Creek-Lance fluvial-forest gate plus original-size whole-animal, four-limb, crest-line, and single-tail inspection"
+      },
+      "4": {
+        "status": "approved",
+        "reviewBatch": "2026-07-27-richness-six-slot-batch-17",
+        "reviewedAt": "2026-07-27T00:22:31.752Z",
+        "source": "assets/dinosaurs/edmontosaurus-annectens-forehoof-threehindhoof-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The bright low-camera frame gives the clearest two compact mitten-like forehoof supports and two planted hind feet with three broad wedge hoof caps each, together with a crestless broad bill, low continuous soft crest, close tail-spike row, and one tail.",
+        "reviewMethod": "2025 mummy forehoof, hind-hoof, heel-pad, soft-crest, and tail-spike gate plus original-size full-frame and foot inspection"
+      },
+      "5": {
+        "status": "approved",
+        "reviewBatch": "2026-07-27-richness-six-slot-batch-17",
+        "reviewedAt": "2026-07-27T00:22:31.752Z",
+        "source": "assets/dinosaurs/edmontosaurus-annectens-tyrannosaurus-channel-standoff-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "One foreground Edmontosaurus and one distant Tyrannosaurus remain fully separated by a broad water corridor; the primary animal has four attached limbs and one tail, while the secondary animal has two hind limbs and one tail without contact, injury, or attack-outcome claims.",
+        "reviewMethod": "Cautious co-occurrence and non-contact gate plus original-size primary and secondary animal, limb, tail, and water-separation inspection"
+      },
+      "6": {
+        "status": "approved",
+        "reviewBatch": "2026-07-27-richness-six-slot-batch-17",
+        "reviewedAt": "2026-07-27T00:22:31.752Z",
+        "source": "assets/dinosaurs/edmontosaurus-annectens-adult-juvenile-drychannel-growth-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The separated quadrupedal adult and bipedal late juvenile provide a cautious skull-proportion and size comparison with independent limb and tail silhouettes and no family, parenting, sex, or herd claim.",
+        "reviewMethod": "Campione and Evans skull-growth caution plus original-size adult, juvenile, limb-count, and tail-separation inspection"
       }
     },
     "thescelosaurus-neglectus": {
@@ -5337,6 +5364,18 @@
     },
     "assets/dinosaurs/parasaurolophus-walkeri-ceratopsian-plain-imagegen-v2.png": {
       "reason": "The former interaction uses an oversized upward-hooked crest, a thin neck, and generic ceratopsian scenery that does not clear the revised species-identity or cautious co-occurrence gate."
+    },
+    "assets/dinosaurs/edmontosaurus-annectens-duckbill-crest-imagegen-v1.png": {
+      "reason": "The former representative has separated claw-like forefeet and a narrow weak bill, so it fails the 2025 mitten-forehoof and broad closed-duckbill gate."
+    },
+    "assets/dinosaurs/edmontosaurus-annectens-green-rust-pattern-imagegen-v1.png": {
+      "reason": "The former pattern has a mammal-like shoulder hump, oversized sparse fantasy tail spines, separated clawed forefeet, and a generic lizard-like head."
+    },
+    "assets/dinosaurs/edmontosaurus-annectens-hellcreek-herd-ecology-imagegen-v1.png": {
+      "reason": "The crowded former herd scene has unstable merged appendage silhouettes, an excessive hump, and insufficient foot detail for a published habitat slot."
+    },
+    "assets/dinosaurs/edmontosaurus-annectens-hell-creek-oxbow-walk-imagegen-v2.png": {
+      "reason": "The former oxbow walk retains a small horn-like cranial bump, separated clawed forefeet, and weak hoof anatomy under the revised mummy-based gate."
     }
   }
 }

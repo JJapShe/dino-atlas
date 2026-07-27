@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-26-richness-six-slot-batch-16",
+  "reviewBatch": "2026-07-27-richness-six-slot-batch-17",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -370,6 +370,18 @@
     },
     "assets/dinosaurs/parasaurolophus-walkeri-ceratopsian-plain-imagegen-v2.png": {
       "reason": "The former interaction uses an oversized upward-hooked crest, a thin neck, and generic ceratopsian scenery that does not clear the revised species-identity or cautious co-occurrence gate."
+    },
+    "assets/dinosaurs/edmontosaurus-annectens-duckbill-crest-imagegen-v1.png": {
+      "reason": "The former representative has separated claw-like forefeet and a narrow weak bill, so it fails the 2025 mitten-forehoof and broad closed-duckbill gate."
+    },
+    "assets/dinosaurs/edmontosaurus-annectens-green-rust-pattern-imagegen-v1.png": {
+      "reason": "The former pattern has a mammal-like shoulder hump, oversized sparse fantasy tail spines, separated clawed forefeet, and a generic lizard-like head."
+    },
+    "assets/dinosaurs/edmontosaurus-annectens-hellcreek-herd-ecology-imagegen-v1.png": {
+      "reason": "The crowded former herd scene has unstable merged appendage silhouettes, an excessive hump, and insufficient foot detail for a published habitat slot."
+    },
+    "assets/dinosaurs/edmontosaurus-annectens-hell-creek-oxbow-walk-imagegen-v2.png": {
+      "reason": "The former oxbow walk retains a small horn-like cranial bump, separated clawed forefeet, and weak hoof anatomy under the revised mummy-based gate."
     }
   }
 }
