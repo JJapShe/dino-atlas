@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-25",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-26",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -526,6 +526,39 @@
     },
     "assets/dinosaurs/ornitholestes-hermanni-slender-coelurosaur-imagegen-v1.png": {
       "reason": "The former representative has an elongated swan-like neck, small beak-like head, weak dentition, and ornithomimid runner proportions that conflict with the corrected redescription-based gate."
+    },
+    "assets/dinosaurs/eodromaeus-murphi-ischigualasto-stream-ecology-imagegen-v1.png": {
+      "reason": "The former stream scene repeats the vertically elongated swan neck, birdlike head, and three-finger-only hand reconstruction while adding no distinct floodplain-process composition."
+    },
+    "assets/dinosaurs/eodromaeus-murphi-obsidian-lime-ladder-pattern-imagegen-v1.png": {
+      "reason": "Although the palette is distinct, the unregistered pattern retains an elongated bird-runner neck and hands that do not support the documented five-digit formula."
+    },
+    "assets/dinosaurs/eodromaeus-murphi-panphagia-ravine-flank-bite-ecology-imagegen-v1.png": {
+      "reason": "The direct flank-bite scene overstates a named-species encounter, crowds and multiplies hand silhouettes, and retains generic long-necked primary and secondary bodies."
+    },
+    "assets/dinosaurs/eodromaeus-murphi-panphagia-redmud-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The carcass scene makes an unsupported named-species feeding claim and obscures appendage junctions around generic long-necked bodies."
+    },
+    "assets/dinosaurs/eodromaeus-murphi-pisanosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "The direct attack image combines contact with unstable limbs and generalized long-necked animals, so neither taxon is reliable anatomy evidence."
+    },
+    "assets/dinosaurs/eodromaeus-murphi-pisanosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The registered carcass candidate is compositionally redundant, behaviorally over-specific, and unsuitable for positive limb or hand review."
+    },
+    "assets/dinosaurs/eodromaeus-murphi-pisanosaurus-chase-ecology-imagegen-v1.png": {
+      "reason": "The former selected chase turns uncertain coexistence into pursuit and repeats swan-necked, three-finger-only silhouettes with weak secondary anatomy."
+    },
+    "assets/dinosaurs/eodromaeus-murphi-pisanosaurus-coordinated-pursuit-ecology-imagegen-v1.png": {
+      "reason": "The coordinated-pursuit image implies pack behavior without evidence and multiplies small moving bodies whose limbs and tails cannot be audited reliably."
+    },
+    "assets/dinosaurs/eodromaeus-murphi-slate-rust-pattern-imagegen-v1.png": {
+      "reason": "The former pattern has a vertically elongated neck, small birdlike head, and three-finger-only hands despite its usable muted palette."
+    },
+    "assets/dinosaurs/eodromaeus-murphi-slender-early-theropod-imagegen-v1.png": {
+      "reason": "The former representative is dominated by a vertical swan neck, birdlike head, and an incorrect three-finger-only hand interpretation."
+    },
+    "assets/dinosaurs/eodromaeus-murphi-threefinger-identity-imagegen-v2.png": {
+      "reason": "The former identity image explicitly treats three fingers as the complete hand even though Eodromaeus preserves five manual digits with reduced IV and V."
     }
   }
 }

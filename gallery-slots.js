@@ -103,7 +103,7 @@ window.gallerySlotAssignments = {
   ],
   "eodromaeus-murphi": [
     {
-      "source": "assets/dinosaurs/eodromaeus-murphi-slender-early-theropod-imagegen-v1.png",
+      "source": "assets/dinosaurs/eodromaeus-murphi-low-skull-moderate-neck-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
@@ -111,7 +111,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/eodromaeus-murphi-slate-rust-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/eodromaeus-murphi-aubergine-turquoise-copper-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -119,7 +119,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/eodromaeus-murphi-ischigualasto-stream-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/eodromaeus-murphi-postflood-driftline-forage-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
@@ -127,7 +127,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/eodromaeus-murphi-threefinger-identity-imagegen-v2.png",
+      "source": "assets/dinosaurs/eodromaeus-murphi-five-digit-manus-anatomy-closeup-imagegen-v1.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
@@ -135,9 +135,17 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/eodromaeus-murphi-pisanosaurus-chase-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/eodromaeus-murphi-herrerasaurus-channel-coexistence-ecology-imagegen-v1.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "arid-redbed",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/eodromaeus-murphi-ash-gust-alert-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "arid-redbed",
       "expectedKind": "anatomy review"
