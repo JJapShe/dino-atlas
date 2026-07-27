@@ -2535,7 +2535,7 @@ window.gallerySlotAssignments = {
   ],
   "deinocheirus-mirificus": [
     {
-      "source": "assets/dinosaurs/deinocheirus-mirificus-feathered-profile-imagegen-v2.png",
+      "source": "assets/dinosaurs/deinocheirus-mirificus-tridactyl-broadfoot-anatomy-imagegen-v1.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
@@ -2543,7 +2543,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/deinocheirus-mirificus-indigo-saffron-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/deinocheirus-mirificus-bluehour-celadon-plum-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -2551,9 +2551,33 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/deinocheirus-mirificus-nemegt-river-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/deinocheirus-mirificus-rainwet-feathered-wetland-ecology-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/deinocheirus-mirificus-broadbill-tridactyl-forelimb-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/deinocheirus-mirificus-shaggy-river-forage-imagegen-v3.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/deinocheirus-mirificus-tarbosaurus-riverbank-defense-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"

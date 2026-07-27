@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-22",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-23",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -454,6 +454,24 @@
     },
     "assets/dinosaurs/scelidosaurus-harrisonii-stormchannel-lichen-wine-ecology-imagegen-v1.png": {
       "reason": "Unregistered storm-channel view repeats the coastal depositional setting, places both bodies at anatomy-obscuring distance, and retains broad regular armor tiles instead of differentiated rows."
+    },
+    "assets/dinosaurs/deinocheirus-mirificus-feathered-golden-wetland-imagegen-v2.png": {
+      "reason": "Former golden-hour variant has an insufficiently high neural-spine ridge, an overly modern duck-like head, and an extra or fused digit on the near hand, so it fails the strict three-finger gate."
+    },
+    "assets/dinosaurs/deinocheirus-mirificus-feathered-profile-imagegen-v2.png": {
+      "reason": "Former representative preserves the heavy profile and tail tuft but the near hand resolves into four digits at original size, so it cannot remain the count-level representative."
+    },
+    "assets/dinosaurs/deinocheirus-mirificus-feathered-wetland-imagegen-v2.png": {
+      "reason": "Former wetland variant has an exaggerated modern waterfowl-like bill and neck, a fan rising from the tail shaft rather than a compact terminal tuft, and weakly separated hand digits."
+    },
+    "assets/dinosaurs/deinocheirus-mirificus-hump-giant-claws-imagegen-v1.png": {
+      "reason": "Former count-level candidate is mostly bare-scaled, has a generic toothed-theropod-like head, overly therizinosaur-like scythe hands, and unstable finger and foot counts."
+    },
+    "assets/dinosaurs/deinocheirus-mirificus-indigo-saffron-pattern-imagegen-v1.png": {
+      "reason": "Former indigo pattern candidate is bare and lizard-like, carries oversized scythe hands with more than three visible digits, and drifts toward Therizinosaurus despite the useful palette."
+    },
+    "assets/dinosaurs/deinocheirus-mirificus-nemegt-river-ecology-imagegen-v1.png": {
+      "reason": "Former river ecology candidate uses a mostly bare primary animal with a distorted low head and overlapping appendages; the crowded generic background also weakens species-level interaction review."
     }
   }
 }

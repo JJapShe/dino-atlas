@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-27T18:30:12.504Z",
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-22",
-  "reviewMethod": "Scelidosaurus cranial, postcranial, dermal-skeleton, locomotor, and Lias depositional-context literature gate; strict two-forelimb, two-hindlimb, one-tail review per animal; original-size full frames, seven-output contact sheet, and head, limb, tail, and secondary-animal crops; exact per-foot digit formula claimed only where readable; marine fossil deposit kept distinct from inferred terrestrial habitat",
-  "targetSlots": 538,
+  "generatedAt": "2026-07-27T19:05:25.968Z",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-23",
+  "reviewMethod": "Deinocheirus complete-skeleton, original-forelimb, mesic-environment, and Nemegt co-occurrence literature gate; strict two-forelimb, two-hindlimb, one-tail review for every full-body primary animal and exactly three independently readable fingers per visible hand; original-size full frames, six-role contact sheet, and isolated head, both-hand, both-foot, tail, and secondary-animal crops; filament covering and tail tuft retained as conservative inference rather than direct skin evidence",
+  "targetSlots": 541,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -2840,30 +2840,57 @@
     "deinocheirus-mirificus": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/deinocheirus-mirificus-feathered-profile-imagegen-v2.png",
+        "source": "assets/dinosaurs/deinocheirus-mirificus-tridactyl-broadfoot-anatomy-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The complete neutral-daylight animal retains an elongated broad toothless snout and deep jaw, tall neural-spine ridge, heavy pelvis and torso, exactly two long forelimbs with three independently readable fingers per hand, two short stout hind limbs with three broad forward toes per foot, and one complete tuft-tipped tail.",
+        "reviewMethod": "Original-size full frame plus isolated head, both-hand, both-foot, and tail crops against Lee et al. 2014 and Osmolska and Roniewicz 1970; coarse body filaments and the compact tail tuft remain conservative close-relative and pygostyle-based inferences",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-23",
+        "reviewedAt": "2026-07-27T19:05:25.968Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/deinocheirus-mirificus-indigo-saffron-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/deinocheirus-mirificus-bluehour-celadon-plum-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing blue-hour individual adds celadon flank dashes and a restrained plum wash while preserving the canonical charcoal, ivory, rust, and cream placement; the corrected frame has exactly two separated three-finger hands, two three-toed feet, and one complete tail.",
+        "reviewMethod": "Original generation and targeted hand-only correction compared at full size, followed by isolated hand, foot, head, and tail crops; no non-hand anatomy or composition change was requested during the correction",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-23",
+        "reviewedAt": "2026-07-27T19:05:25.968Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/deinocheirus-mirificus-nemegt-river-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/deinocheirus-mirificus-rainwet-feathered-wetland-ecology-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The rain-wet mesic-floodplain scene retains one complete heavy-bodied animal, two independently readable three-finger hands, two hind limbs, and one tail while adding distinct weather and low frontal movement; shallow splash hides part of the toe detail, so it remains habitat reference rather than representative evidence.",
+        "reviewMethod": "Original-size full frame plus head, both-hand, splash-obscured foot, and tail crops; accepted for mesic habitat and wet-integument context while exact pedal detail is delegated to the representative slot",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-23",
+        "reviewedAt": "2026-07-27T19:05:25.968Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/deinocheirus-mirificus-broadbill-tridactyl-forelimb-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The focused continuous frame clearly exposes the closed elongated broad toothless bill, deep lower jaw, start of the tall rounded back ridge, exactly two separated forelimbs, and exactly three equally developed fingers and claws on each hand.",
+        "reviewMethod": "Original-size head and both-hand inspection against the complete-skull description and original tridactyl forelimb paper; hind body is intentionally outside the focused frame and is not used as full-body or pedal evidence",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-23",
+        "reviewedAt": "2026-07-27T19:05:25.968Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/deinocheirus-mirificus-shaggy-river-forage-imagegen-v3.png",
+        "role": "interaction",
+        "reason": "The foreground forager keeps two three-finger hands, two weight-bearing hind limbs, and one tail while distant hadrosaur-like silhouettes remain separated by water and depth; they are retained only as cautious Nemegt background context, not species-level anatomy or direct interaction evidence.",
+        "reviewMethod": "Original-size primary head, both hands, both feet, tail, and secondary-animal crops; aquatic-plant handling is presented as generic foraging and no filtering, herd, pursuit, or interspecific response is claimed",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-23",
+        "reviewedAt": "2026-07-27T19:05:25.968Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/deinocheirus-mirificus-tarbosaurus-riverbank-defense-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The foreground Deinocheirus displays two separated three-finger hands, two three-toed feet, and one complete tail while a small Tarbosaurus remains on the far bank across a broad river channel; the scene supplies defense and predator-context variety without contact or attack.",
+        "reviewMethod": "Original-size full frame plus primary head, both-hand, both-foot, tail, and distant-tyrannosaur crops; Tarbosaurus co-occurrence is formation-level context and the warning posture is explicitly hypothetical rather than a documented event",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-23",
+        "reviewedAt": "2026-07-27T19:05:25.968Z"
       }
     },
     "therizinosaurus-cheloniformis": {
@@ -5565,6 +5592,24 @@
     },
     "assets/dinosaurs/scelidosaurus-harrisonii-stormchannel-lichen-wine-ecology-imagegen-v1.png": {
       "reason": "Unregistered storm-channel view repeats the coastal depositional setting, places both bodies at anatomy-obscuring distance, and retains broad regular armor tiles instead of differentiated rows."
+    },
+    "assets/dinosaurs/deinocheirus-mirificus-feathered-golden-wetland-imagegen-v2.png": {
+      "reason": "Former golden-hour variant has an insufficiently high neural-spine ridge, an overly modern duck-like head, and an extra or fused digit on the near hand, so it fails the strict three-finger gate."
+    },
+    "assets/dinosaurs/deinocheirus-mirificus-feathered-profile-imagegen-v2.png": {
+      "reason": "Former representative preserves the heavy profile and tail tuft but the near hand resolves into four digits at original size, so it cannot remain the count-level representative."
+    },
+    "assets/dinosaurs/deinocheirus-mirificus-feathered-wetland-imagegen-v2.png": {
+      "reason": "Former wetland variant has an exaggerated modern waterfowl-like bill and neck, a fan rising from the tail shaft rather than a compact terminal tuft, and weakly separated hand digits."
+    },
+    "assets/dinosaurs/deinocheirus-mirificus-hump-giant-claws-imagegen-v1.png": {
+      "reason": "Former count-level candidate is mostly bare-scaled, has a generic toothed-theropod-like head, overly therizinosaur-like scythe hands, and unstable finger and foot counts."
+    },
+    "assets/dinosaurs/deinocheirus-mirificus-indigo-saffron-pattern-imagegen-v1.png": {
+      "reason": "Former indigo pattern candidate is bare and lizard-like, carries oversized scythe hands with more than three visible digits, and drifts toward Therizinosaurus despite the useful palette."
+    },
+    "assets/dinosaurs/deinocheirus-mirificus-nemegt-river-ecology-imagegen-v1.png": {
+      "reason": "Former river ecology candidate uses a mostly bare primary animal with a distorted low head and overlapping appendages; the crowded generic background also weakens species-level interaction review."
     }
   }
 }
