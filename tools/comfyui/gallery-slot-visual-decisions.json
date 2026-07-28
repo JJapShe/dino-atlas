@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-28T03:15:36.697Z",
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-35",
-  "reviewMethod": "Sachs 2005 holotype redescription and missing-element boundary; Sachs et al. 2013 maximum 72-cervical count; Zammit et al. 2008 straight-swimming and non-swan-neck flexibility gate; Muscutt et al. 2017 four-flipper propulsion context; Carpenter 1996 Sharon Springs black-shale environment; Hargrave 2007 Pteranodon occurrence in the lower Pierre Shale; original-size inspection of all four existing files and both new files; every selected individual was checked for one head, one continuous extremely long neck, exactly two foreflippers and two hindflippers, one compact torso, and one short unbranched tail; skin color, markings, feeding approach, turning, near-surface split-water moment, and same-frame fauna remain reconstruction hypotheses",
-  "targetSlots": 563,
+  "generatedAt": "2026-07-28T03:59:29.215Z",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-36",
+  "reviewMethod": "Blows 1987 incomplete-holotype and armour boundary; Blows and Honeysett 2014 fused sacral-shield mosaic, shield scale, and uncertain armour arrangement; Barrett et al. 2002 pitted irregular fused osteoderm texture; Insole and Hutt 1994 seasonal fluvial-floodplain-lacustrine mosaic; Sweetman and Insole 2010 sheetflood, abandoned-channel, oxbow, and plant-debris setting; Raven et al. 2020 taxonomic caution; original-size inspection of all four existing files, five generated attempts, four selected new files, targeted head, fused-shield, four-limb, tail, and secondary-fauna crops; every selected primary animal was checked for one head, exactly two forelimbs and two hindlimbs, four grounded feet, and one continuous no-club tail; head, forelimb, anterior armour, exact armour arrangement, skin, color, behavior, and same-frame fauna remain reconstruction hypotheses",
+  "targetSlots": 566,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -2704,30 +2704,57 @@
     "polacanthus-foxii": {
       "1": {
         "status": "approved",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-36",
+        "reviewedAt": "2026-07-28T03:59:29.215Z",
         "source": "assets/dinosaurs/polacanthus-foxii-wessex-sacral-shield-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Original-size review passed one small head, exactly two forelimbs and two hindlimbs with four grounded feet, one complete tapering tail without a club, and a low broad armoured body. The holotype lacks the head, neck, forelimbs, and anterior armour, so those regions remain conservative comparative reconstruction.",
+        "reviewMethod": "Blows 1987 evidence boundary plus full-frame, head, four-limb, armour, and no-club-tail inspection"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/polacanthus-foxii-blackberry-moss-sacral-pattern-imagegen-v1.png",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-36",
+        "reviewedAt": "2026-07-28T03:59:29.215Z",
+        "source": "assets/dinosaurs/polacanthus-foxii-dry-floodplain-blackberry-lichen-pattern-imagegen-v3.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Passed exactly four connected legs and four grounded feet, one complete no-club tail, and a diffuse blackberry, moss, charcoal, and cream pattern that varies across individual osteoderms without a bordered saddle or separate shield patch. All color remains hypothetical.",
+        "reviewMethod": "Batch-36 count gate plus original-size palette, pelvic-armour, and artifact inspection"
       },
       "3": {
         "status": "approved",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-36",
+        "reviewedAt": "2026-07-28T03:59:29.215Z",
         "source": "assets/dinosaurs/polacanthus-foxii-wessex-mudtrack-browse-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Original-size review passed the foreground animal with exactly four connected legs, four feet, and one continuous no-club tail. Low browsing and the tiny distant biped are reconstruction context and the distant silhouette is not used for species diagnosis.",
+        "reviewMethod": "Insole and Hutt 1994 habitat gate plus original-size primary-animal and distant-silhouette inspection"
+      },
+      "4": {
+        "status": "approved",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-36",
+        "reviewedAt": "2026-07-28T03:59:29.215Z",
+        "source": "assets/dinosaurs/polacanthus-foxii-wessex-fused-sacral-shield-dorsal-anatomy-imagegen-v3.png",
+        "role": "identity-anatomy",
+        "reason": "The elevated rear-oblique view independently exposes one head, exactly four legs and four feet, one complete no-club tail, and an integrated pitted mosaic of small osteoderms and restrained larger bosses over the pelvis. Exact soft-tissue boundaries and anterior armour remain inferred.",
+        "reviewMethod": "Blows and Honeysett 2014 and Barrett et al. 2002 shield-texture gate plus original-size dorsal and limb inspection"
+      },
+      "5": {
+        "status": "approved",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-36",
+        "reviewedAt": "2026-07-28T03:59:29.215Z",
+        "source": "assets/dinosaurs/polacanthus-foxii-sheetflood-distant-ornithischian-ecology-imagegen-v3.png",
+        "role": "interaction",
+        "reason": "Passed the complete foreground animal with four separately attached legs and one no-club tail while the single small bipedal ornithischian-like silhouette remains far across an abandoned channel. The atlas treats it only as formation-level fauna context, not a Hypsilophodon diagnosis or a documented encounter.",
+        "reviewMethod": "Sweetman and Insole 2010 sheetflood and abandoned-channel gate plus original-size foreground and secondary-fauna crops"
+      },
+      "6": {
+        "status": "approved",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-36",
+        "reviewedAt": "2026-07-28T03:59:29.215Z",
+        "source": "assets/dinosaurs/polacanthus-foxii-four-foot-braced-defense-ecology-imagegen-v3.png",
+        "role": "social-growth-defense",
+        "reason": "Replacement generation passed one head, two staggered forelegs, two staggered hindlegs, four separately readable grounded feet, and one complete no-club tail. The lowered braced posture has no visible attacker and remains a restrained defense hypothesis.",
+        "reviewMethod": "Original-size full-frame and four-foot inspection after rejecting the first three-leg-readable attempt"
       }
     },
     "tyrannosaurus-rex": {
@@ -6017,6 +6044,12 @@
     },
     "assets/dinosaurs/styracosaurus-albertensis-dinosaur-park-floodplain-walk-imagegen-v2.png": {
       "reason": "The later walk candidate still uses the same dark-slate and orange treatment, an excessive all-around spike crown, a forward-leaning nasal horn, and a rhinoceros-like head and torso, so it does not clear the revised adult skull gate."
+    },
+    "assets/dinosaurs/polacanthus-foxii-blackberry-moss-sacral-pattern-imagegen-v1.png": {
+      "reason": "The former pattern places a smooth, bounded rectangular plate over the pelvis like a decorative saddle, weakening the fused irregular sacral-shield anatomy despite an otherwise countable body."
+    },
+    "assets/dinosaurs/polacanthus-foxii-wessex-rain-clearing-imagegen-v2.png": {
+      "reason": "The former rain-clearing frame turns the pelvic shield into a smooth, pale-rimmed blanket or turtle-shell patch and reduces the rest of the armour toward a generic lizardlike body."
     }
   }
 }

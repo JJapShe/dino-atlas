@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-35",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-36",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -727,6 +727,12 @@
     },
     "assets/dinosaurs/styracosaurus-albertensis-dinosaur-park-floodplain-walk-imagegen-v2.png": {
       "reason": "The later walk candidate still uses the same dark-slate and orange treatment, an excessive all-around spike crown, a forward-leaning nasal horn, and a rhinoceros-like head and torso, so it does not clear the revised adult skull gate."
+    },
+    "assets/dinosaurs/polacanthus-foxii-blackberry-moss-sacral-pattern-imagegen-v1.png": {
+      "reason": "The former pattern places a smooth, bounded rectangular plate over the pelvis like a decorative saddle, weakening the fused irregular sacral-shield anatomy despite an otherwise countable body."
+    },
+    "assets/dinosaurs/polacanthus-foxii-wessex-rain-clearing-imagegen-v2.png": {
+      "reason": "The former rain-clearing frame turns the pelvic shield into a smooth, pale-rimmed blanket or turtle-shell patch and reduces the rest of the armour toward a generic lizardlike body."
     }
   }
 }

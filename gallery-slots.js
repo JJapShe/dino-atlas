@@ -2417,15 +2417,15 @@ window.gallerySlotAssignments = {
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "wessex-seasonal-floodplain",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/polacanthus-foxii-blackberry-moss-sacral-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/polacanthus-foxii-dry-floodplain-blackberry-lichen-pattern-imagegen-v3.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "wessex-seasonal-floodplain",
       "expectedKind": "review hold"
     },
     {
@@ -2433,7 +2433,31 @@ window.gallerySlotAssignments = {
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "wessex-seasonal-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/polacanthus-foxii-wessex-fused-sacral-shield-dorsal-anatomy-imagegen-v3.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "wessex-seasonal-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/polacanthus-foxii-sheetflood-distant-ornithischian-ecology-imagegen-v3.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "wessex-seasonal-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/polacanthus-foxii-four-foot-braced-defense-ecology-imagegen-v3.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "wessex-seasonal-floodplain",
       "expectedKind": "anatomy review"
     }
   ],
