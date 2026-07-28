@@ -976,22 +976,32 @@ const dinosaurs = [
     family: "Azhdarchidae",
     era: "cretaceous",
     period: "후기 백악기",
-    diet: "소형동물/어식",
+    diet: "소형동물 추정",
     region: "북아메리카",
     length: 10.0,
+    sizeLabel: "복원 날개폭",
+    sizeDisplay: "약 10 m",
     knowledgeLevel: 2,
-    imageSlots: 3,
-    reviewStatus: "익룡 시험",
+    imageSlots: 6,
+    reviewStatus: "자료 기반 비교 복원",
     summary:
-      "후기 백악기 북아메리카의 거대 아즈다르키드 익룡입니다. 공룡이 아니며, 이빨 없는 매우 긴 창 모양 부리, 긴 목, 작은 몸통, 접으면 다리 옆에 내려오는 거대한 날개막, 짧은 꼬리, 지상에서 네 발로 걷고 작은 먹이를 찾는 생태를 강조합니다. 프테라노돈식 바다 활공 전용 이미지나 새/박쥐 몸으로 흐르면 안 됩니다.",
+      "후기 백악기 텍사스의 거대 아즈다르키드 익룡으로, 공룡이 아닙니다. 완모식표본은 거대한 부분 왼쪽 날개이며 약 10m 수치는 결손 날개뼈를 계통학적으로 보완한 복원 날개폭입니다. 두개골과 몸통 대부분은 알려지지 않아 긴 무치악 머리·긴 목·네발 보행 전신은 비교 복원으로만 다룹니다. 거대 표본은 자벨리나층의 하천 퇴적상에서 드물게 발견되며, 강가 선호와 단독 생활은 가능한 해석이지 확정된 행동이 아닙니다.",
     features: {
       분류: "공룡이 아닌 후기 백악기 거대 아즈다르키드 익룡",
-      두개골: "이빨 없는 매우 긴 창 모양 부리와 낮고 길쭉한 머리",
-      자세: "날개를 접고 앞다리와 뒷다리로 지면을 짚는 네발 보행",
-      날개: "네 번째 손가락이 지지하는 거대한 접힌 날개막",
-      서식지: "자벨리나층 범람원과 건조한 강가에서 작은 동물을 찾는 지상 사냥 생태",
+      직접화석: "완모식표본은 거대한 부분 왼쪽 날개이며, 다른 거대 표본도 주로 날개와 다리의 단편",
+      크기: "계통학적 결손 보완으로 복원한 날개폭 약 10m; 몸길이 10m라는 뜻이 아님",
+      두개골: "Q. northropi 두개골은 알려지지 않아 무치악 장두형 머리와 무볏 형태는 보수적 아즈다르키드 비교 복원",
+      자세: "접힌 날개 앞다리와 뒷다리의 네발 보행 및 비행 개시는 주로 더 작은 표본과 가까운 익룡을 이용한 비교 복원",
+      날개: "네 번째 손가락이 지지하는 좌우 날개막 두 장과 뒷다리 두 개, 짧은 꼬리 한 개로 수량 고정",
+      서식지: "자벨리나층 내륙 하천 퇴적상; 강가 선호와 단독 생활은 적은 표본에 근거한 가설",
     },
-    sources: ["Javelina Formation", "Azhdarchidae", "PBDB"],
+    sources: [
+      "PBDB",
+      "Andres & Langston 2021",
+      "Padian et al. 2021",
+      "Lehman 2021",
+      "Thomas & McDavid 2025",
+    ],
   },
   {
     id: "dimorphodon-macronyx",
@@ -4157,6 +4167,7 @@ const state = {
 };
 
 const recentImageUpdateTaxa = [
+  "quetzalcoatlus-northropi",
   "lessemsaurus-sauropoides",
   "liliensternus-liliensterni",
   "apatosaurus-ajax",
@@ -4201,7 +4212,6 @@ const recentImageUpdateTaxa = [
   "darwinopterus-modularis",
   "thalattosaurus-alexandrae",
   "kronosaurus-queenslandicus",
-  "quetzalcoatlus-northropi",
   "sauropelta-edwardsorum",
   "gargoyleosaurus-parkpinorum",
   "prenocephale-prenes",
@@ -7587,27 +7597,51 @@ const generatedImageSamples = {
   "quetzalcoatlus-northropi": [
     {
       kind: "count-level pass",
-      title: "케찰코아틀루스 v1 자벨리나 지상 보행 대표 후보",
-      body: "후기 백악기 북아메리카의 거대 아즈다르키드 익룡 대표 후보입니다. 공룡이 아니며, 이빨 없는 매우 긴 창 모양 부리, 긴 목, 작은 몸통, 접힌 거대한 날개막, 짧은 꼬리, 네발 보행 자세를 기준으로 둡니다. 프테라노돈식 바다 활공 장면이나 새/박쥐 몸으로 흐르지 않는지 계속 검수합니다.",
-      source: "assets/dinosaurs/quetzalcoatlus-northropi-javelina-terrestrial-stalker-imagegen-v1.png",
-      variant: "자벨리나 지상 보행 아즈다르키드 이미지 생성 v1",
-      src: "assets/dinosaurs/quetzalcoatlus-northropi-javelina-terrestrial-stalker-imagegen-v1.png",
+      title: "케찰코아틀루스 v2 강가 접힌 날개 대표 후보",
+      body: "자벨리나층 내륙 하천 자갈톱을 걷는 단일 개체 대표 후보입니다. 접힌 네 번째 날개손가락을 포함한 앞날개 두 개, 뒷다리 두 개, 짧은 꼬리 한 개가 분리되어 보이고 큰 뒤쪽 볏은 없습니다. Q. northropi에서 직접 알려진 것은 주로 거대한 부분 왼쪽 날개이므로, 머리·목·몸통·피부·네발 자세는 보수적인 아즈다르키드 비교 복원입니다.",
+      source: "assets/dinosaurs/quetzalcoatlus-northropi-riparian-folded-wing-representative-imagegen-v2.png",
+      variant: "강가 접힌 날개 비교 복원 이미지 생성 v2",
+      src: "assets/dinosaurs/quetzalcoatlus-northropi-riparian-folded-wing-representative-imagegen-v2.png",
     },
     {
       kind: "review hold",
-      title: "케찰코아틀루스 v1 블랙베리-셀라돈 날개막 무늬",
-      body: "같은 아즈다르키드 체형의 색/무늬 변이 후보입니다. 검보라색 목과 등, 셀라돈 목 워시, 크림색 넓은 접힌 날개막, 산호색 혈관선, 어두운 다리 띠를 사용해 기존 프테라노돈 색과 구분합니다. 머리 볏이 살짝 과장될 수 있어 대표보다 아래에 둡니다.",
-      source: "assets/dinosaurs/quetzalcoatlus-northropi-blackberry-celadon-wing-pattern-imagegen-v1.png",
-      variant: "블랙베리-셀라돈 날개막 무늬 이미지 생성 v1",
-      src: "assets/dinosaurs/quetzalcoatlus-northropi-blackberry-celadon-wing-pattern-imagegen-v1.png",
+      title: "케찰코아틀루스 v2 인디고-비취 블루아워 무늬",
+      body: "대표와 반대 방향으로 걷는 블루아워 색 변이입니다. 인디고-블랙베리 등, 비취색 목 워시, 황토색 얼굴, 좁게 접힌 상아색 날개막, 다리의 어두운 띠를 유지하면서 구도와 시간대를 바꿨습니다. 색·무늬와 피부 질감은 화석으로 확인되지 않은 가설이라 대표보다 아래에 둡니다.",
+      source: "assets/dinosaurs/quetzalcoatlus-northropi-indigo-jade-bluehour-pattern-imagegen-v2.png",
+      variant: "인디고-비취 블루아워 무늬 이미지 생성 v2",
+      src: "assets/dinosaurs/quetzalcoatlus-northropi-indigo-jade-bluehour-pattern-imagegen-v2.png",
     },
     {
       kind: "anatomy review",
-      title: "케찰코아틀루스 v1 자벨리나 지상 먹이 탐색",
-      body: "건조한 자벨리나층 강가에서 케찰코아틀루스가 긴 부리를 낮춰 작은 동물 쪽으로 접근하는 지상 먹이활동 장면입니다. 낮은 시점과 접힌 날개막, 네발 보행은 구도 다양화에 유용하지만, 먹이 개체와 자세 때문에 발가락과 날개막 부착은 해부 검수 참고로만 둡니다.",
-      source: "assets/dinosaurs/quetzalcoatlus-northropi-javelina-ground-stalk-ecology-imagegen-v1.png",
-      variant: "자벨리나 지상 먹이 탐색 이미지 생성 v1",
-      src: "assets/dinosaurs/quetzalcoatlus-northropi-javelina-ground-stalk-ecology-imagegen-v1.png",
+      title: "케찰코아틀루스 v2 자벨리나 하천 고각도 서식지",
+      body: "자갈톱·얕은 하천·유목·회올리브색과 자주색 범람원 진흙·강가 수림을 고각도로 보여 주는 서식지 장면입니다. Q. northropi 거대 표본은 드물게 하천 퇴적상에서만 보고되므로, 더 작은 Q. lawsoni의 알칼리성 호수와 무리 생활 복원을 옮겨오지 않았습니다. 강가 선호와 단독 생활 자체도 적은 표본에 근거한 가설입니다.",
+      source: "assets/dinosaurs/quetzalcoatlus-northropi-stream-channel-high-oblique-habitat-ecology-imagegen-v2.png",
+      variant: "자벨리나 하천 고각도 서식지 이미지 생성 v2",
+      src: "assets/dinosaurs/quetzalcoatlus-northropi-stream-channel-high-oblique-habitat-ecology-imagegen-v2.png",
+    },
+    {
+      kind: "anatomy review",
+      title: "케찰코아틀루스 v2 왼쪽 날개 펼침 비교 해부",
+      body: "근거리의 왼쪽 날개 하나를 부분적으로 펴 어깨·위팔·팔꿈치·아래팔·손목·짧은 자유 손가락·길어진 네 번째 날개손가락과 한 장의 연속 날개막을 읽게 한 비교 해부 장면입니다. 반대쪽 날개는 접혀 있고 뒷다리는 두 개입니다. 부분 왼쪽 날개가 직접 화석의 핵심이지만, 살아 있는 날개막 모양과 전신 자세는 비교 복원입니다.",
+      source: "assets/dinosaurs/quetzalcoatlus-northropi-left-wing-stretch-comparative-anatomy-imagegen-v2.png",
+      variant: "왼쪽 날개 펼침 비교 해부 이미지 생성 v2",
+      src: "assets/dinosaurs/quetzalcoatlus-northropi-left-wing-stretch-comparative-anatomy-imagegen-v2.png",
+    },
+    {
+      kind: "anatomy review",
+      title: "케찰코아틀루스 v2 하천 건너 알라모사우루스 배경",
+      body: "전경의 단일 케찰코아틀루스와 원경의 단일 알라모사우루스를 넓은 하천으로 분리했습니다. 알라모사우루스는 자벨리나층 동물상 배경을 보여 줄 뿐, 두 종의 직접 만남·사냥·경계 행동을 입증하지 않습니다. 두 동물은 접촉하거나 겹치지 않으며 각각의 실루엣을 독립적으로 읽을 수 있습니다.",
+      source: "assets/dinosaurs/quetzalcoatlus-northropi-channel-separated-alamosaurus-context-ecology-imagegen-v2.png",
+      variant: "하천 건너 알라모사우루스 동물상 배경 이미지 생성 v2",
+      src: "assets/dinosaurs/quetzalcoatlus-northropi-channel-separated-alamosaurus-context-ecology-imagegen-v2.png",
+    },
+    {
+      kind: "anatomy review",
+      title: "케찰코아틀루스 v3 저고도 비행 개시 비교 복원",
+      body: "자갈톱을 막 떠난 단일 개체가 좌우 날개막 두 장, 뒷다리 두 개, 골반에서 이어지는 짧은 꼬리 한 개를 분리해 보이는 저고도 비행 장면입니다. Q. northropi의 결손 날개를 계통학적으로 보완한 약 10m 날개폭과 비교 익룡의 운동 범위를 시각화하며, 구체적인 이륙 방식은 직접 보존된 행동이 아니라 가설입니다.",
+      source: "assets/dinosaurs/quetzalcoatlus-northropi-low-launch-comparative-locomotion-imagegen-v3.png",
+      variant: "저고도 비행 개시 비교 복원 이미지 생성 v3",
+      src: "assets/dinosaurs/quetzalcoatlus-northropi-low-launch-comparative-locomotion-imagegen-v3.png",
     },
   ],
   "dimorphodon-macronyx": [
@@ -18533,7 +18567,7 @@ function renderDetail() {
     <p class="summary">${dino.summary}</p>
     <div class="fact-grid">
       <div class="fact"><span>분류 경로</span><strong>${getTaxonomyPath(dino)}</strong></div>
-      <div class="fact"><span>예상 길이</span><strong>${dino.length.toFixed(1)} m</strong></div>
+      <div class="fact"><span>${dino.sizeLabel || "예상 길이"}</span><strong>${dino.sizeDisplay || `${dino.length.toFixed(1)} m`}</strong></div>
       <div class="fact"><span>출처 메모</span><strong>${dino.sources.join(", ")}</strong></div>
       <div class="fact"><span>퀴즈 연결</span><strong>${level.description}</strong></div>
     </div>
@@ -18923,10 +18957,15 @@ const identityChecklists = {
   ],
   "quetzalcoatlus-northropi": [
     "후기 백악기 북아메리카의 공룡이 아닌 거대 아즈다르키드 익룡, 공룡상목에 속하지 않음",
-    "이빨 없는 매우 긴 창 모양 부리와 길고 낮은 머리, 프테라노돈식 큰 뒤쪽 볏 중심이 아님",
-    "긴 목과 작은 몸통, 짧은 꼬리, 접힌 날개막이 다리 옆으로 내려오는 네발 보행 자세",
-    "바다 위 활공 전용 프테라노돈이 아니라 자벨리나층 범람원에서 걷고 작은 먹이를 찾는 지상 생태",
-    "새 깃털, 새 부리, 박쥐 귀, 용 뿔, 이빨, 긴 람포링쿠스 꼬리, 물고기 사냥만 하는 해양 활공 구도, 여분 팔다리, 잘린 날개, 과한 유혈 금지",
+    "Q. northropi 완모식표본은 거대한 부분 왼쪽 날개이며 다른 거대 표본도 단편적이므로 두개골·목·몸통·완전한 다리 형태를 직접 화석처럼 단정하지 않음",
+    "약 10m는 결손 날개뼈 비율을 계통학적으로 보완한 복원 날개폭이며 몸길이 10m 또는 완전 골격 실측값이 아님",
+    "두개골은 알려지지 않아 이빨 없는 길고 낮은 머리와 무볏 형태는 보수적 아즈다르키드 비교 복원; Q. lawsoni 머리나 큰 프테라노돈식 뒤쪽 볏을 종 고유 특징으로 복제하지 않음",
+    "좌우 앞날개 정확히 두 개와 뒷다리 정확히 두 개; 각 날개는 어깨-위팔-팔꿈치-아래팔-손목-길어진 네 번째 날개손가락-연속 날개막 한 장으로 연결되고 별도 삼각 돛이나 여분 막이 없음",
+    "긴 목·작은 몸통·접힌 날개 네발 자세·짧은 꼬리는 비교 아즈다르키드 복원이며, 비행 장면에서도 좌우 날개 두 장·뒷다리 두 개·짧은 꼬리 한 개를 유지",
+    "거대 표본은 자벨리나층 하천 퇴적상에서 드물게 발견됨; 강가 선호와 단독 생활은 가능한 해석이지만 적은 표본에 근거한 가설",
+    "작은 Q. lawsoni의 알칼리성 폐하도 호수·무리 생활·가느다란 부리 먹이활동을 Q. northropi의 직접 생태로 옮기지 않음",
+    "2025년 계통분석은 거대형과 중형 Quetzalcoatlus를 서로 다른 계통으로 회수했으므로 Q. lawsoni 전신을 거대형에 기계적으로 확대 적용하지 않음",
+    "새 깃털, 새 부리, 박쥐 귀, 용 뿔, 이빨, 긴 람포링쿠스 꼬리와 꼬리막, 해양 프테라노돈 구도, 숨은 발, 중복 날개·다리·꼬리, 과한 유혈 금지",
   ],
   "dimorphodon-macronyx": [
     "전기 쥐라기 블루 라이어스의 공룡이 아닌 기초 익룡, 공룡상목에 속하지 않음",
@@ -19961,11 +20000,11 @@ const visualVariationProfiles = {
     avoid: "공룡상목 라벨, 이빨 달린 람포링쿠스/프테로닥틸루스식 주둥이, 수직 돛볏·포크형 볏·이중 볏, 긴 꼬리와 꼬리막, 새 깃털과 새 부리, 박쥐 귀, 용 뿔, 세 번째 날개막, 여분 뒷다리·발, 분리된 손목 손가락, 잘린 날개, 과한 유혈",
   },
   "quetzalcoatlus-northropi": {
-    color: "흑갈색 또는 검보라색 목과 등, 황토색 부리와 얼굴, 셀라돈 목 워시, 크림색 넓은 날개막, 녹슨 주황색 목 주머니 워시",
-    pattern: "어두운 다리 띠, 날개막의 산호색 혈관선, 등과 목의 작은 밝은 반점, 범람원 진흙과 마른 관목에 맞춘 낮은 대비 역음영",
-    texture: "고운 피크노섬유 몸 덮개, 각질성 무치 부리, 가죽 같은 거대한 접힌 날개막, 마른 자벨리나층 진흙과 강가 먼지",
-    anatomy: "후기 백악기 거대 아즈다르키드 익룡; 이빨 없는 매우 긴 창 모양 부리, 긴 목, 작은 몸통, 짧은 꼬리, 접힌 날개막, 앞다리와 뒷다리로 지면을 짚는 네발 보행",
-    avoid: "공룡상목 라벨, 프테라노돈식 바다 활공 전용 실루엣, 큰 뒤쪽 볏 중심, 이빨, 새 깃털, 새 부리, 박쥐 귀, 용 뿔, 긴 꼬리막, 열린 날개만 보이는 크롭, 숨은 발, 여분 팔다리, 과한 유혈",
+    color: "대표 개체는 차콜-블랙베리색 목과 등, 풍화된 황토색 부리와 얼굴, 셀라돈색 아랫목 워시, 절제된 녹슨 주황색 목 가장자리, 옅은 크림색 날개막을 유지; 색은 전부 복원 가설",
+    pattern: "어두운 종아리 띠, 어깨와 아랫목에만 제한한 작은 청록색 반점, 펼친 날개막의 옅은 산호색 혈관선과 자연스러운 역음영; 블루아워 변이는 인디고-비취 범위 안에서만 이동",
+    texture: "목과 몸통의 짧고 고운 피크노섬유, 매끈한 무치악 각질 부리, 얇고 가죽 같은 한 장짜리 날개막, 하천 자갈톱의 국소 먼지와 습기; 피부·연조직은 직접 보존되지 않은 비교 복원",
+    anatomy: "직접 근거의 중심은 거대한 부분 왼쪽 날개; 약 10m 복원 날개폭. 두개골과 몸통 대부분은 미상이며, 무볏 장두형 머리·긴 목·작은 몸통·짧은 꼬리·네발 보행은 보수적 아즈다르키드 비교 복원. 좌우 날개 두 개와 뒷다리 두 개의 수량을 항상 고정",
+    avoid: "Q. lawsoni 전신을 확정형으로 단순 확대, Q. lawsoni 알칼리성 호수 무리 생태 복제, 프테라노돈식 큰 뒤쪽 볏과 바다 활공 전용 실루엣, 이빨, 새 깃털과 새 부리, 박쥐식 여러 긴 손가락, 박쥐 귀, 용 뿔, 긴 꼬리막, 넓게 늘어진 별도 삼각 돛, 중복 날개·다리·꼬리, 숨은 발, 잘린 날개끝, 과한 유혈",
   },
   "dimorphodon-macronyx": {
     color: "짙은 오베르진 갈색 몸, 사프런 얼굴 패치, 비취빛 목 그림자, 크림색 꼬리막 가장자리",
@@ -20905,11 +20944,11 @@ const generationRouteGuides = {
     reject: "공룡상목으로 라벨링되거나 라우팅되면 탈락. 이빨, 수직 돛볏·포크형 볏·이중 볏, 람포링쿠스식 긴 꼬리와 꼬리막, 새 깃털과 새 부리, 박쥐 귀, 용 뿔, 세 번째 날개막, 세 번째 뒷다리나 발, 분리된 손목 손가락, 서로 겹쳐 수량을 셀 수 없는 다개체, 잘린 날개, 과한 유혈이 있으면 탈락.",
   },
   "quetzalcoatlus-northropi": {
-    focus: "후기 백악기 자벨리나층 케찰코아틀루스 익룡; 거대 아즈다르키드, 이빨 없는 긴 창 모양 부리, 긴 목, 접힌 날개막, 네발 지상 보행, 프테라노돈/새/박쥐 드리프트 방지",
-    route: "공룡이 아닌 거대 아즈다르키드 익룡 프롬프트로 지상 네발 보행, 이빨 없는 긴 부리, 긴 목, 접힌 날개막을 먼저 고정합니다. 블랙베리-셀라돈 변이는 색/날개막 참고로, 작은 동물 쪽으로 걷는 장면은 지상 먹이활동 참고로 사용하되 발가락과 날개막 부착을 별도 검수합니다.",
-    control: "assets/dinosaurs/quetzalcoatlus-northropi-javelina-terrestrial-stalker-imagegen-v1.png",
-    pass: "전신 지상 보행 또는 낮은 먹이 탐색 구도 | 상위분류 익룡 | 거대 아즈다르키드 | 이빨 없는 매우 긴 창 모양 부리 | 긴 목 | 작은 몸통 | 짧은 꼬리 | 네발 보행 | 접힌 거대한 날개막 | 자벨리나층 범람원과 강가 관목 배경",
-    reject: "공룡상목으로 라벨링되거나 라우팅되면 탈락. 프테라노돈식 바다 활공 복제, 큰 뒤쪽 볏 중심, 이빨 달린 익룡, 새 깃털, 새 부리, 박쥐 귀, 용 뿔, 긴 람포링쿠스 꼬리나 꼬리막, 숨은 발, 열린 날개 크롭, 여분 팔다리, 과한 유혈이 있으면 탈락.",
+    focus: "후기 백악기 자벨리나층 Q. northropi; 직접 근거는 거대한 부분 왼쪽 날개와 소수 거대 단편, 약 10m 복원 날개폭. 두개골·목·몸통·네발 보행은 비교 복원으로 표시하고 좌우 날개 두 개·뒷다리 두 개·짧은 꼬리 한 개를 고정",
+    route: "먼저 단일 전신에서 볏 없는 보수적 아즈다르키드 머리, 긴 목, 작은 몸통, 접힌 좌우 날개손가락, 앞날개 두 개와 뒷다리 두 개를 분리합니다. 같은 색 배치를 유지한 역방향 블루아워 변이, 하천 퇴적상 고각도 서식지, 직접 화석의 중심인 왼쪽 날개를 강조한 부분 펼침, 하천으로 분리한 알라모사우루스 동물상 배경, 두 날개·두 뒷다리·한 짧은 꼬리가 보이는 저고도 비행 가설을 각각 따로 생성합니다. 머리와 전신은 Q. lawsoni를 확정적으로 확대하지 않고, 호수·무리·먹이활동과 구체적 이륙 방식은 가설로만 설명합니다.",
+    control: "assets/dinosaurs/quetzalcoatlus-northropi-riparian-folded-wing-representative-imagegen-v2.png",
+    pass: "단일 전신 대표·역방향 색 변이·하천 고각도 서식지·왼쪽 날개 펼침·하천 분리 동물상·저고도 비행 | 상위분류 익룡 | 직접 근거와 비교 복원 분리 | 약 10m 복원 날개폭 | 큰 종 고유 볏을 단정하지 않는 무치악 장두형 비교 머리 | 좌우 날개 정확히 두 개 | 뒷다리 정확히 두 개 | 짧은 꼬리 한 개 | 자벨리나층 내륙 하천 자갈톱과 강가 수림",
+    reject: "공룡상목으로 라벨링되거나 몸길이 10m로 오해하면 탈락. Q. lawsoni 두개골·호수 무리 생태를 Q. northropi 직접 근거처럼 복제하거나, 프테라노돈식 큰 뒤쪽 볏·해양 활공, 이빨, 새 깃털과 새 부리, 박쥐식 여러 긴 손가락, 박쥐 귀, 용 뿔, 긴 람포링쿠스 꼬리나 꼬리막, 넓게 늘어진 별도 삼각 돛, 세 번째 날개, 세 번째 뒷다리, 중복 꼬리, 숨은 발, 겹쳐 수량을 셀 수 없는 개체, 잘린 날개끝, 과한 유혈이 있으면 탈락.",
   },
   "dimorphodon-macronyx": {
     focus: "전기 쥐라기 블루 라이어스 디모르포돈 익룡; 큰 깊은 머리, 짧은 이빨 턱, 비교적 짧고 넓은 날개막, 긴 꼬리와 작은 꼬리막, 새/박쥐/프테로닥틸루스 드리프트 방지",

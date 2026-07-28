@@ -188,6 +188,13 @@ const HABITATS = {
     light: "soft broken-cloud daylight with localized cool water reflection",
     backgroundPalette: ["#53685d", "#7f7460", "#5b6f76"],
   },
+  "javelina-riparian-stream-channel": {
+    substrate: "broad inland stream-channel sandstone and conglomerate, pale sand and gravel bars, driftwood, and adjacent olive-gray to muted-purple overbank mud",
+    vegetation: "riparian Javelinoxylon broadleaf trees, araucariacean conifers, ferns, low angiosperm scrub, and only sparse fan palms away from abandoned-channel lakes",
+    moisture: "warm dry subtropical fluvial corridor in a broad inland valley, with localized channel water and no marine setting",
+    light: "neutral broken-cloud daylight with restrained warm sediment reflection and readable animal colors",
+    backgroundPalette: ["#8b8069", "#66715f", "#6c5f67"],
+  },
   "polar-forest": {
     substrate: "cool dark soil, seasonal frost, and damp leaf litter",
     vegetation: "high-latitude conifer and fern woodland",
@@ -448,6 +455,7 @@ function habitatFor(dino, route) {
   else if (["camarasaurus-lentus", "apatosaurus-ajax"].includes(dino.id)) key = "morrison-seasonal-alluvial-plain";
   else if (dino.id === "monolophosaurus-jiangi") key = "shishugou-seasonal-alluvial-wetland";
   else if (dino.id === "dilophosaurus-wetherilli") key = "kayenta-silty-fluvial-aeolian-plain";
+  else if (dino.id === "quetzalcoatlus-northropi") key = "javelina-riparian-stream-channel";
   else if (/marine|seaway|ocean|sea |pliosaur|plesiosaur|ichthyosaur|mosasaur|해양|바다|수중/.test(text)) key = "marine";
   else if (/polar|prince creek|alaska|high-latitude|극지|고위도/.test(text)) key = "polar-forest";
   else if (/gobi|djadokhta|nemegt|dune|desert|sandstone|사구|사막|고비/.test(text)) key = "gobi-arid";

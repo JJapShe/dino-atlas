@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-44",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-45",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -985,7 +985,19 @@
     },
     "assets/dinosaurs/lessemsaurus-sauropoides-zupaysaurus-tail-block-defense-ecology-imagegen-v1.png": {
       "reason": "The tail-block scene turns formation-level coexistence into an unsupported defensive event and uses contact, dust, and overlap that obscure feet and tail continuity."
+    },
+    "assets/dinosaurs/quetzalcoatlus-northropi-javelina-terrestrial-stalker-imagegen-v1.png": {
+      "reason": "The former representative hangs broad triangular membranes beneath the body, leaves the folded wing-finger and forelimb topology ambiguous, and presents an unknown Q. northropi head and body too confidently."
+    },
+    "assets/dinosaurs/quetzalcoatlus-northropi-blackberry-celadon-wing-pattern-imagegen-v1.png": {
+      "reason": "The former pattern image adds an unsupported cranial crest and multiple detached triangular sail-like membranes and spikes, preventing a stable count of two connected pterosaur wings."
+    },
+    "assets/dinosaurs/quetzalcoatlus-northropi-javelina-ground-stalk-ecology-imagegen-v1.png": {
+      "reason": "The former feeding scene includes blade-like duplicate wing or membrane structures, obscures the folded-wing chain, and overstates a specific small-prey stalking behavior for the fragmentary giant species."
+    },
+    "assets/dinosaurs/quetzalcoatlus-northropi-low-launch-comparative-locomotion-imagegen-v2.png": {
+      "reason": "The first launch-tail edit leaves two thin parallel tail-like strands beneath the pelvis, so it fails the single-tail count gate despite otherwise stable wings and legs."
     }
   },
-  "generatedAt": "2026-07-28T11:28:19.481Z"
+  "generatedAt": "2026-07-28T12:22:14.895Z"
 }

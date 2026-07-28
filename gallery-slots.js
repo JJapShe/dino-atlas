@@ -1637,27 +1637,51 @@ window.gallerySlotAssignments = {
   ],
   "quetzalcoatlus-northropi": [
     {
-      "source": "assets/dinosaurs/quetzalcoatlus-northropi-javelina-terrestrial-stalker-imagegen-v1.png",
+      "source": "assets/dinosaurs/quetzalcoatlus-northropi-riparian-folded-wing-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "marine",
+      "habitatKey": "javelina-riparian-stream-channel",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/quetzalcoatlus-northropi-blackberry-celadon-wing-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/quetzalcoatlus-northropi-indigo-jade-bluehour-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "marine",
+      "habitatKey": "javelina-riparian-stream-channel",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/quetzalcoatlus-northropi-javelina-ground-stalk-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/quetzalcoatlus-northropi-stream-channel-high-oblique-habitat-ecology-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "marine",
+      "habitatKey": "javelina-riparian-stream-channel",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/quetzalcoatlus-northropi-left-wing-stretch-comparative-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "javelina-riparian-stream-channel",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/quetzalcoatlus-northropi-channel-separated-alamosaurus-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "javelina-riparian-stream-channel",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/quetzalcoatlus-northropi-low-launch-comparative-locomotion-imagegen-v3.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "javelina-riparian-stream-channel",
       "expectedKind": "anatomy review"
     }
   ],

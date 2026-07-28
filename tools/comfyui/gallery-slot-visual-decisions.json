@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-28T11:28:19.481Z",
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-44",
-  "reviewMethod": "Pol and Powell 2007 postcranial description, multi-individual association, incomplete manus and pes, and taxonomic caveat; McPhee et al. 2018 lessemsaurid size, non-columnar flexed-limb context, and missing reliable Lessemsaurus appendicular ratios; Arcucci et al. 2004 Los Colorados fluvial, floodplain, pond, crevasse-splay, vegetation-cover, and seasonally humid interpretation; original-size inspection of all six selected full frames, final six-role contact-sheet comparison, and isolated head, hand, limb, foot, tail, secondary-animal, and size-class crops; exact skull, complete digit formulas, gait, skin, colors, markings, vegetation arrangement, same-frame fauna, size-class identity, and weather response remain reconstruction hypotheses",
-  "targetSlots": 583,
+  "generatedAt": "2026-07-28T12:22:14.895Z",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-45",
+  "reviewMethod": "Andres and Langston 2021 giant partial-left-wing holotype, six fragmentary giant specimens, and approximately 10 m reconstructed wingspan; Padian et al. 2021 functional reconstruction based entirely on the smaller Q. lawsoni morph and explicit absence of Q. northropi skull and neck material; Lehman 2021 inland Javelina stream-channel facies, rare giant specimens, Alamosaurus-dominated formation fauna, and speculative riparian or solitary interpretation; Thomas and McDavid 2025 recovery of giant and moderately large Quetzalcoatlus species in separate clades; original-size inspection of all selected full frames, final six-role contact sheet, and isolated head, forewing, wrist, limb, foot, tail, and secondary-animal crops; exact skull, neck, torso, gait, launch mechanics, skin, colors, markings, plant arrangement, and same-frame behavior remain reconstruction hypotheses",
+  "targetSlots": 586,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -1837,30 +1837,57 @@
     "quetzalcoatlus-northropi": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/quetzalcoatlus-northropi-javelina-terrestrial-stalker-imagegen-v1.png",
+        "source": "assets/dinosaurs/quetzalcoatlus-northropi-riparian-folded-wing-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Neutral riparian full-body frame preserves one crestless conservative azhdarchid with exactly two connected folded forelimb wings, two separate hind limbs, and one short tail; the caption separates the directly known giant wing from the comparative head, body, skin, and quadrupedal posture.",
+        "reviewMethod": "Andres and Langston 2021 giant partial-left-wing holotype, six fragmentary giant specimens, and approximately 10 m reconstructed wingspan; Padian et al. 2021 functional reconstruction based entirely on the smaller Q. lawsoni morph and explicit absence of Q. northropi skull and neck material; Lehman 2021 inland Javelina stream-channel facies, rare giant specimens, Alamosaurus-dominated formation fauna, and speculative riparian or solitary interpretation; Thomas and McDavid 2025 recovery of giant and moderately large Quetzalcoatlus species in separate clades; original-size inspection of all selected full frames, final six-role contact sheet, and isolated head, forewing, wrist, limb, foot, tail, and secondary-animal crops; exact skull, neck, torso, gait, launch mechanics, skin, colors, markings, plant arrangement, and same-frame behavior remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-45",
+        "reviewedAt": "2026-07-28T12:22:14.895Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/quetzalcoatlus-northropi-blackberry-celadon-wing-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/quetzalcoatlus-northropi-indigo-jade-bluehour-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Reverse-facing blue-hour frame changes direction, weather, and hue while preserving the same crestless body proportions, narrow folded-wing topology, four-limb count, short tail, and limited shoulder and neck pattern placement; all colors remain explicitly hypothetical.",
+        "reviewMethod": "Andres and Langston 2021 giant partial-left-wing holotype, six fragmentary giant specimens, and approximately 10 m reconstructed wingspan; Padian et al. 2021 functional reconstruction based entirely on the smaller Q. lawsoni morph and explicit absence of Q. northropi skull and neck material; Lehman 2021 inland Javelina stream-channel facies, rare giant specimens, Alamosaurus-dominated formation fauna, and speculative riparian or solitary interpretation; Thomas and McDavid 2025 recovery of giant and moderately large Quetzalcoatlus species in separate clades; original-size inspection of all selected full frames, final six-role contact sheet, and isolated head, forewing, wrist, limb, foot, tail, and secondary-animal crops; exact skull, neck, torso, gait, launch mechanics, skin, colors, markings, plant arrangement, and same-frame behavior remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-45",
+        "reviewedAt": "2026-07-28T12:22:14.895Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/quetzalcoatlus-northropi-javelina-ground-stalk-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/quetzalcoatlus-northropi-stream-channel-high-oblique-habitat-ecology-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "High-oblique landscape shows one complete animal on a broad inland sandstone and conglomeratic stream bar with shallow channel water, driftwood, overbank mud, and riparian forest, matching the giant material's stream-channel facies rather than transferring Q. lawsoni lake and flock ecology.",
+        "reviewMethod": "Andres and Langston 2021 giant partial-left-wing holotype, six fragmentary giant specimens, and approximately 10 m reconstructed wingspan; Padian et al. 2021 functional reconstruction based entirely on the smaller Q. lawsoni morph and explicit absence of Q. northropi skull and neck material; Lehman 2021 inland Javelina stream-channel facies, rare giant specimens, Alamosaurus-dominated formation fauna, and speculative riparian or solitary interpretation; Thomas and McDavid 2025 recovery of giant and moderately large Quetzalcoatlus species in separate clades; original-size inspection of all selected full frames, final six-role contact sheet, and isolated head, forewing, wrist, limb, foot, tail, and secondary-animal crops; exact skull, neck, torso, gait, launch mechanics, skin, colors, markings, plant arrangement, and same-frame behavior remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-45",
+        "reviewedAt": "2026-07-28T12:22:14.895Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/quetzalcoatlus-northropi-left-wing-stretch-comparative-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "The near left wing forms one readable shoulder-humerus-elbow-forearm-wrist-elongated fourth-finger chain with one continuous membrane, while the opposite wing remains folded and exactly two hind legs remain separate; live membrane shape and complete posture are labeled comparative.",
+        "reviewMethod": "Andres and Langston 2021 giant partial-left-wing holotype, six fragmentary giant specimens, and approximately 10 m reconstructed wingspan; Padian et al. 2021 functional reconstruction based entirely on the smaller Q. lawsoni morph and explicit absence of Q. northropi skull and neck material; Lehman 2021 inland Javelina stream-channel facies, rare giant specimens, Alamosaurus-dominated formation fauna, and speculative riparian or solitary interpretation; Thomas and McDavid 2025 recovery of giant and moderately large Quetzalcoatlus species in separate clades; original-size inspection of all selected full frames, final six-role contact sheet, and isolated head, forewing, wrist, limb, foot, tail, and secondary-animal crops; exact skull, neck, torso, gait, launch mechanics, skin, colors, markings, plant arrangement, and same-frame behavior remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-45",
+        "reviewedAt": "2026-07-28T12:22:14.895Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/quetzalcoatlus-northropi-channel-separated-alamosaurus-context-ecology-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "One complete foreground Quetzalcoatlus and one distant Alamosaurus are separated by a broad stream with no contact, pursuit, overlap, or implied direct behavior; the secondary animal is formation-level context only.",
+        "reviewMethod": "Andres and Langston 2021 giant partial-left-wing holotype, six fragmentary giant specimens, and approximately 10 m reconstructed wingspan; Padian et al. 2021 functional reconstruction based entirely on the smaller Q. lawsoni morph and explicit absence of Q. northropi skull and neck material; Lehman 2021 inland Javelina stream-channel facies, rare giant specimens, Alamosaurus-dominated formation fauna, and speculative riparian or solitary interpretation; Thomas and McDavid 2025 recovery of giant and moderately large Quetzalcoatlus species in separate clades; original-size inspection of all selected full frames, final six-role contact sheet, and isolated head, forewing, wrist, limb, foot, tail, and secondary-animal crops; exact skull, neck, torso, gait, launch mechanics, skin, colors, markings, plant arrangement, and same-frame behavior remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-45",
+        "reviewedAt": "2026-07-28T12:22:14.895Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/quetzalcoatlus-northropi-low-launch-comparative-locomotion-imagegen-v3.png",
+        "role": "social-growth-defense",
+        "reason": "Low-altitude launch hypothesis shows exactly two continuous wing membranes, two independently readable hind legs and feet, and one single short pelvis-origin tail with all tips inside frame; the caption treats launch mechanics and the unpreserved body as comparative hypotheses.",
+        "reviewMethod": "Andres and Langston 2021 giant partial-left-wing holotype, six fragmentary giant specimens, and approximately 10 m reconstructed wingspan; Padian et al. 2021 functional reconstruction based entirely on the smaller Q. lawsoni morph and explicit absence of Q. northropi skull and neck material; Lehman 2021 inland Javelina stream-channel facies, rare giant specimens, Alamosaurus-dominated formation fauna, and speculative riparian or solitary interpretation; Thomas and McDavid 2025 recovery of giant and moderately large Quetzalcoatlus species in separate clades; original-size inspection of all selected full frames, final six-role contact sheet, and isolated head, forewing, wrist, limb, foot, tail, and secondary-animal crops; exact skull, neck, torso, gait, launch mechanics, skin, colors, markings, plant arrangement, and same-frame behavior remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-45",
+        "reviewedAt": "2026-07-28T12:22:14.895Z"
       }
     },
     "dimorphodon-macronyx": {
@@ -6455,6 +6482,18 @@
     },
     "assets/dinosaurs/lessemsaurus-sauropoides-zupaysaurus-tail-block-defense-ecology-imagegen-v1.png": {
       "reason": "The tail-block scene turns formation-level coexistence into an unsupported defensive event and uses contact, dust, and overlap that obscure feet and tail continuity."
+    },
+    "assets/dinosaurs/quetzalcoatlus-northropi-javelina-terrestrial-stalker-imagegen-v1.png": {
+      "reason": "The former representative hangs broad triangular membranes beneath the body, leaves the folded wing-finger and forelimb topology ambiguous, and presents an unknown Q. northropi head and body too confidently."
+    },
+    "assets/dinosaurs/quetzalcoatlus-northropi-blackberry-celadon-wing-pattern-imagegen-v1.png": {
+      "reason": "The former pattern image adds an unsupported cranial crest and multiple detached triangular sail-like membranes and spikes, preventing a stable count of two connected pterosaur wings."
+    },
+    "assets/dinosaurs/quetzalcoatlus-northropi-javelina-ground-stalk-ecology-imagegen-v1.png": {
+      "reason": "The former feeding scene includes blade-like duplicate wing or membrane structures, obscures the folded-wing chain, and overstates a specific small-prey stalking behavior for the fragmentary giant species."
+    },
+    "assets/dinosaurs/quetzalcoatlus-northropi-low-launch-comparative-locomotion-imagegen-v2.png": {
+      "reason": "The first launch-tail edit leaves two thin parallel tail-like strands beneath the pelvis, so it fails the single-tail count gate despite otherwise stable wings and legs."
     }
   }
 }
