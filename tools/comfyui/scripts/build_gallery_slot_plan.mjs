@@ -104,6 +104,13 @@ const HABITATS = {
     light: "neutral daylight, cool post-rain reflection, or restrained storm-front light without a global orange cast",
     backgroundPalette: ["#76584f", "#66746c", "#355c61"],
   },
+  "ischigualasto-la-pena-upper-floodplain": {
+    substrate: "greenish-gray and gray fine-grained overbank mud, pale sandy crevasse splays, rare tabular sandstone, shallow low-sinuosity channels, driftwood, and localized root halos",
+    vegetation: "open low conifers, sparse horsetails, ferns, and restrained seed-fern reconstructions with no modern grass, flowers, palms, or dense rainforest",
+    moisture: "seasonal La Pena floodplain with episodic overbank flow, locally wet post-rain mud, shallow channel water, and broad exposed splay surfaces",
+    light: "neutral broken-cloud daylight, cool blue-hour reflection, or restrained post-rain light without a global orange cast",
+    backgroundPalette: ["#777a70", "#b2a58c", "#526d67"],
+  },
   "los-colorados-seasonal-fluvial-floodplain": {
     substrate: "oxidized red sandstone and siltstone, moderately sinuous sand channels, broad overbank floodplain, shallow ponds, crevasse splays, pebbly bars, and scattered driftwood",
     vegetation: "important but patchy cover of araucarioid conifers, seed ferns, true ferns, horsetails, and low cycad-like plants with no modern grass or flowers",
@@ -456,6 +463,7 @@ function habitatFor(dino, route) {
   else if (dino.id === "suchomimus-tenerensis") key = "elrhaz-river-system";
   else if (dino.id === "psittacosaurus-mongoliensis") key = "khulsangol-alluvial-sheetflood";
   else if (dino.id === "liliensternus-liliensterni") key = "knollenmergel-vertisol-sheetflood";
+  else if (dino.id === "panphagia-protos") key = "ischigualasto-la-pena-upper-floodplain";
   else if (dino.id === "chromogisaurus-novasi") key = "ischigualasto-cancha-de-bochas-floodplain";
   else if (dino.id === "lessemsaurus-sauropoides") key = "los-colorados-seasonal-fluvial-floodplain";
   else if (dino.id === "ceratosaurus-nasicornis") key = "garden-park-felch-point-bar";

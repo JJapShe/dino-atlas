@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-28T16:39:41.106Z",
-  "reviewBatch": "2026-07-29-richness-six-slot-batch-47",
-  "reviewMethod": "Gilmore 1920 description of Ceratosaurus nasicornis USNM 4735, including the approximately 130 mm fore-aft by 70 mm high transversely compressed nasal horn core, low supraorbital projections, four metacarpals and partial phalanges, historical 2-3-3-1-0 manual reconstruction, and preserved dermal ossicles; Madsen and Welles 2000 comparison of the C. nasicornis skull and dorsal ossicles; Carpenter and Lindsey 2019 Garden Park geology; Evanoff and Carpenter 1998 Felch Quarry 1 lenticular arkosic point-bar and moderate-sinuosity stream interpretation; original-size inspection of all six selected frames plus focused representative, pattern, anatomy-hand, Stegosaurus-thagomizer, behavior-limb, foot and tail crops; horn sheath, complete hand formula, continuous median ossicle row, skin, colors, markings, exact plants, drinking behavior and same-frame fauna remain comparative or ecological hypotheses",
-  "targetSlots": 590,
+  "generatedAt": "2026-07-28T17:37:11.230Z",
+  "reviewBatch": "2026-07-29-richness-six-slot-batch-48",
+  "reviewMethod": "Martinez and Alcober 2009 description of the single incomplete associated immature PVSJ 874, approximately 1.30 m long, from 40 m above the base of the Ischigualasto Formation; directly preserved partial skull and lower jaws, three cervicals, dorsal and sacral material, 18 caudals, left scapula and pelvis, right tibia, astragalus, metatarsal III and partial pedal digits, with no complete skull, manus, femur or complete pes; Currie et al. 2009 greenish-gray fine-grained upper La Pena floodplain, crevasse-splay and channel context; original-size inspection of all six selected frames plus representative head, hand and foot crops, pattern limb crop, distant Eoraptor crop, behavior head-arm and foot crops, and a six-role contact sheet; complete skull, manus, femur, complete pes, full-body proportions, posture, skin, colors, markings, exact plants, omnivory, debris investigation and same-frame fauna remain comparative or ecological hypotheses",
+  "targetSlots": 591,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -568,48 +568,57 @@
     "panphagia-protos": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/panphagia-protos-small-sauropodomorph-imagegen-v1.png",
+        "source": "assets/dinosaurs/panphagia-protos-charcoal-mulberry-la-pena-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The complete neutral-daylight animal retains a small Eoraptor-like basal-sauropodomorph body, moderate rather than plateosaur-long neck, exactly two forelimbs, two hind limbs with separately readable feet, and one uninterrupted pelvis-origin tail.",
+        "reviewMethod": "Martinez and Alcober 2009 description of the single incomplete associated immature PVSJ 874, approximately 1.30 m long, from 40 m above the base of the Ischigualasto Formation; directly preserved partial skull and lower jaws, three cervicals, dorsal and sacral material, 18 caudals, left scapula and pelvis, right tibia, astragalus, metatarsal III and partial pedal digits, with no complete skull, manus, femur or complete pes; Currie et al. 2009 greenish-gray fine-grained upper La Pena floodplain, crevasse-splay and channel context; original-size inspection of all six selected frames plus representative head, hand and foot crops, pattern limb crop, distant Eoraptor crop, behavior head-arm and foot crops, and a six-role contact sheet; complete skull, manus, femur, complete pes, full-body proportions, posture, skin, colors, markings, exact plants, omnivory, debris investigation and same-frame fauna remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-48",
+        "reviewedAt": "2026-07-28T17:37:11.230Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/panphagia-protos-bluegray-copper-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/panphagia-protos-slate-terracotta-bluehour-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The edited reverse-facing blue-hour variant preserves exactly two forelimbs, two hind limbs and one tail while replacing the first draft's hand-like splayed hind feet; overlapping side-view toes keep it below anatomy-representative rank.",
+        "reviewMethod": "Martinez and Alcober 2009 description of the single incomplete associated immature PVSJ 874, approximately 1.30 m long, from 40 m above the base of the Ischigualasto Formation; directly preserved partial skull and lower jaws, three cervicals, dorsal and sacral material, 18 caudals, left scapula and pelvis, right tibia, astragalus, metatarsal III and partial pedal digits, with no complete skull, manus, femur or complete pes; Currie et al. 2009 greenish-gray fine-grained upper La Pena floodplain, crevasse-splay and channel context; original-size inspection of all six selected frames plus representative head, hand and foot crops, pattern limb crop, distant Eoraptor crop, behavior head-arm and foot crops, and a six-role contact sheet; complete skull, manus, femur, complete pes, full-body proportions, posture, skin, colors, markings, exact plants, omnivory, debris investigation and same-frame fauna remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-48",
+        "reviewedAt": "2026-07-28T17:37:11.230Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/panphagia-protos-ischigualasto-forage-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/panphagia-protos-la-pena-crevasse-splay-habitat-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The high-oblique environment-led frame separates one tiny complete animal from greenish-gray overbank mud, pale crevasse-splay sand, shallow channels and driftwood without asserting group or feeding behavior.",
+        "reviewMethod": "Martinez and Alcober 2009 description of the single incomplete associated immature PVSJ 874, approximately 1.30 m long, from 40 m above the base of the Ischigualasto Formation; directly preserved partial skull and lower jaws, three cervicals, dorsal and sacral material, 18 caudals, left scapula and pelvis, right tibia, astragalus, metatarsal III and partial pedal digits, with no complete skull, manus, femur or complete pes; Currie et al. 2009 greenish-gray fine-grained upper La Pena floodplain, crevasse-splay and channel context; original-size inspection of all six selected frames plus representative head, hand and foot crops, pattern limb crop, distant Eoraptor crop, behavior head-arm and foot crops, and a six-role contact sheet; complete skull, manus, femur, complete pes, full-body proportions, posture, skin, colors, markings, exact plants, omnivory, debris investigation and same-frame fauna remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-48",
+        "reviewedAt": "2026-07-28T17:37:11.230Z"
       },
       "4": {
         "status": "approved",
-        "source": "assets/dinosaurs/panphagia-protos-light-basal-sauropodomorph-identity-imagegen-v2.png",
+        "source": "assets/dinosaurs/panphagia-protos-naris-slender-jaw-anatomy-imagegen-v2.png",
         "role": "identity-anatomy",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The deliberate head-neck-shoulder crop provides a restrained partial-skull comparison with a modest oval naris and slender closed jaw, while the caption explicitly withholds complete skull, soft-tissue and hidden-dentition claims.",
+        "reviewMethod": "Martinez and Alcober 2009 description of the single incomplete associated immature PVSJ 874, approximately 1.30 m long, from 40 m above the base of the Ischigualasto Formation; directly preserved partial skull and lower jaws, three cervicals, dorsal and sacral material, 18 caudals, left scapula and pelvis, right tibia, astragalus, metatarsal III and partial pedal digits, with no complete skull, manus, femur or complete pes; Currie et al. 2009 greenish-gray fine-grained upper La Pena floodplain, crevasse-splay and channel context; original-size inspection of all six selected frames plus representative head, hand and foot crops, pattern limb crop, distant Eoraptor crop, behavior head-arm and foot crops, and a six-role contact sheet; complete skull, manus, femur, complete pes, full-body proportions, posture, skin, colors, markings, exact plants, omnivory, debris investigation and same-frame fauna remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-48",
+        "reviewedAt": "2026-07-28T17:37:11.230Z"
       },
       "5": {
         "status": "approved",
-        "source": "assets/dinosaurs/panphagia-protos-herrerasaurus-escape-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/panphagia-protos-eoraptor-channel-context-ecology-imagegen-v2.png",
         "role": "interaction",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The foreground Panphagia is intentionally cropped before its limbs, and one distant complete Eoraptor-like contemporary remains across a broad channel with no pursuit, contact or behavioral claim.",
+        "reviewMethod": "Martinez and Alcober 2009 description of the single incomplete associated immature PVSJ 874, approximately 1.30 m long, from 40 m above the base of the Ischigualasto Formation; directly preserved partial skull and lower jaws, three cervicals, dorsal and sacral material, 18 caudals, left scapula and pelvis, right tibia, astragalus, metatarsal III and partial pedal digits, with no complete skull, manus, femur or complete pes; Currie et al. 2009 greenish-gray fine-grained upper La Pena floodplain, crevasse-splay and channel context; original-size inspection of all six selected frames plus representative head, hand and foot crops, pattern limb crop, distant Eoraptor crop, behavior head-arm and foot crops, and a six-role contact sheet; complete skull, manus, femur, complete pes, full-body proportions, posture, skin, colors, markings, exact plants, omnivory, debris investigation and same-frame fauna remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-48",
+        "reviewedAt": "2026-07-28T17:37:11.230Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/panphagia-protos-flood-debris-investigation-behavior-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "The solitary closed-mouth debris-investigation hypothesis has one visible forelimb with its hand naturally occluded, the opposite forelimb hidden by the body, two separate hind limbs and feet, and one complete tail with no feeding assertion.",
+        "reviewMethod": "Martinez and Alcober 2009 description of the single incomplete associated immature PVSJ 874, approximately 1.30 m long, from 40 m above the base of the Ischigualasto Formation; directly preserved partial skull and lower jaws, three cervicals, dorsal and sacral material, 18 caudals, left scapula and pelvis, right tibia, astragalus, metatarsal III and partial pedal digits, with no complete skull, manus, femur or complete pes; Currie et al. 2009 greenish-gray fine-grained upper La Pena floodplain, crevasse-splay and channel context; original-size inspection of all six selected frames plus representative head, hand and foot crops, pattern limb crop, distant Eoraptor crop, behavior head-arm and foot crops, and a six-role contact sheet; complete skull, manus, femur, complete pes, full-body proportions, posture, skin, colors, markings, exact plants, omnivory, debris investigation and same-frame fauna remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-48",
+        "reviewedAt": "2026-07-28T17:37:11.230Z"
       }
     },
     "buriolestes-schultzi": {
@@ -6593,6 +6602,42 @@
     },
     "assets/dinosaurs/chromogisaurus-novasi-teal-copper-pattern-imagegen-v1.png": {
       "reason": "The former pattern repeats the same warm broadside lighting and old generic anatomy instead of maintaining the rebuilt mineral-teal individual across a genuinely different camera and weather condition."
+    },
+    "assets/dinosaurs/panphagia-protos-blackplum-lime-ladder-pattern-imagegen-v1.png": {
+      "reason": "Fantasy black-plum and lime ladder patterning overwhelms species identity and accompanies a generic long-necked, heavy early-sauropodomorph body."
+    },
+    "assets/dinosaurs/panphagia-protos-bluegray-copper-pattern-imagegen-v1.png": {
+      "reason": "The legacy broadside repeats plateosaur-like proportions and does not provide independently reliable hands, feet or a distinct composition."
+    },
+    "assets/dinosaurs/panphagia-protos-eodromaeus-ravine-tail-snap-defense-ecology-imagegen-v1.png": {
+      "reason": "A direct named-species tail-snap confrontation overstates behavior and overlapping motion prevents stable limb, foot and tail review."
+    },
+    "assets/dinosaurs/panphagia-protos-eodromaeus-root-snag-pivot-defense-ecology-imagegen-v1.png": {
+      "reason": "The speculative named-predator root-pivot scene obscures appendage attachments and repeats an unsupported active-defense narrative."
+    },
+    "assets/dinosaurs/panphagia-protos-eoraptor-ravine-tail-snap-defense-ecology-imagegen-v1.png": {
+      "reason": "Direct Eoraptor confrontation and tail-snap behavior are not evidenced, while the crowded ravine pose makes both animals structurally ambiguous."
+    },
+    "assets/dinosaurs/panphagia-protos-herrerasaurus-escape-ecology-imagegen-v1.png": {
+      "reason": "The chase framing asserts a named predator-prey event and motion obscures Panphagia hands, feet and conservative small-body proportions."
+    },
+    "assets/dinosaurs/panphagia-protos-herrerasaurus-scrub-dodge-ecology-imagegen-v1.png": {
+      "reason": "The repeated close pursuit and dodge narrative crowds the primary silhouette and cannot clear independent skull, limb and tail gates."
+    },
+    "assets/dinosaurs/panphagia-protos-herrerasaurus-tail-snap-defense-ecology-imagegen-v1.png": {
+      "reason": "Tail-snap defense against a named Herrerasaurus is behaviorally overconfident and the interaction prevents clean tail-base and limb-count review."
+    },
+    "assets/dinosaurs/panphagia-protos-ischigualasto-forage-ecology-imagegen-v1.png": {
+      "reason": "Multiple repetitive brown broadside animals make heads, hands and feet unreadable and overstate both group behavior and active herbivorous foraging."
+    },
+    "assets/dinosaurs/panphagia-protos-light-basal-sauropodomorph-identity-imagegen-v2.png": {
+      "reason": "The former anatomy candidate retains an elongated plateosaur-like neck and generic heavy body despite the limited approximately 1.3 m holotype evidence."
+    },
+    "assets/dinosaurs/panphagia-protos-ravine-shadow-blackplum-lime-ecology-imagegen-v1.png": {
+      "reason": "Dark ravine lighting, fantasy high-contrast colors and obscured appendages prevent original-size anatomy verification."
+    },
+    "assets/dinosaurs/panphagia-protos-small-sauropodomorph-imagegen-v1.png": {
+      "reason": "The former representative uses a long-necked, heavy plateosaur-like reconstruction with ambiguous hands and feet instead of a cautious small Eoraptor-like comparison."
     }
   }
 }

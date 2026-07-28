@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-29-richness-six-slot-batch-47",
+  "reviewBatch": "2026-07-29-richness-six-slot-batch-48",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-camptosaurus-attack-ecology-imagegen-v1.png": {
       "reason": "Direct named-species attack and body overlap prevent independent limb, hand, tail and prey-anatomy review and overstate a specific behavioral event."
@@ -1060,7 +1060,43 @@
     },
     "assets/dinosaurs/chromogisaurus-novasi-teal-copper-pattern-imagegen-v1.png": {
       "reason": "The former pattern repeats the same warm broadside lighting and old generic anatomy instead of maintaining the rebuilt mineral-teal individual across a genuinely different camera and weather condition."
+    },
+    "assets/dinosaurs/panphagia-protos-blackplum-lime-ladder-pattern-imagegen-v1.png": {
+      "reason": "Fantasy black-plum and lime ladder patterning overwhelms species identity and accompanies a generic long-necked, heavy early-sauropodomorph body."
+    },
+    "assets/dinosaurs/panphagia-protos-bluegray-copper-pattern-imagegen-v1.png": {
+      "reason": "The legacy broadside repeats plateosaur-like proportions and does not provide independently reliable hands, feet or a distinct composition."
+    },
+    "assets/dinosaurs/panphagia-protos-eodromaeus-ravine-tail-snap-defense-ecology-imagegen-v1.png": {
+      "reason": "A direct named-species tail-snap confrontation overstates behavior and overlapping motion prevents stable limb, foot and tail review."
+    },
+    "assets/dinosaurs/panphagia-protos-eodromaeus-root-snag-pivot-defense-ecology-imagegen-v1.png": {
+      "reason": "The speculative named-predator root-pivot scene obscures appendage attachments and repeats an unsupported active-defense narrative."
+    },
+    "assets/dinosaurs/panphagia-protos-eoraptor-ravine-tail-snap-defense-ecology-imagegen-v1.png": {
+      "reason": "Direct Eoraptor confrontation and tail-snap behavior are not evidenced, while the crowded ravine pose makes both animals structurally ambiguous."
+    },
+    "assets/dinosaurs/panphagia-protos-herrerasaurus-escape-ecology-imagegen-v1.png": {
+      "reason": "The chase framing asserts a named predator-prey event and motion obscures Panphagia hands, feet and conservative small-body proportions."
+    },
+    "assets/dinosaurs/panphagia-protos-herrerasaurus-scrub-dodge-ecology-imagegen-v1.png": {
+      "reason": "The repeated close pursuit and dodge narrative crowds the primary silhouette and cannot clear independent skull, limb and tail gates."
+    },
+    "assets/dinosaurs/panphagia-protos-herrerasaurus-tail-snap-defense-ecology-imagegen-v1.png": {
+      "reason": "Tail-snap defense against a named Herrerasaurus is behaviorally overconfident and the interaction prevents clean tail-base and limb-count review."
+    },
+    "assets/dinosaurs/panphagia-protos-ischigualasto-forage-ecology-imagegen-v1.png": {
+      "reason": "Multiple repetitive brown broadside animals make heads, hands and feet unreadable and overstate both group behavior and active herbivorous foraging."
+    },
+    "assets/dinosaurs/panphagia-protos-light-basal-sauropodomorph-identity-imagegen-v2.png": {
+      "reason": "The former anatomy candidate retains an elongated plateosaur-like neck and generic heavy body despite the limited approximately 1.3 m holotype evidence."
+    },
+    "assets/dinosaurs/panphagia-protos-ravine-shadow-blackplum-lime-ecology-imagegen-v1.png": {
+      "reason": "Dark ravine lighting, fantasy high-contrast colors and obscured appendages prevent original-size anatomy verification."
+    },
+    "assets/dinosaurs/panphagia-protos-small-sauropodomorph-imagegen-v1.png": {
+      "reason": "The former representative uses a long-necked, heavy plateosaur-like reconstruction with ambiguous hands and feet instead of a cautious small Eoraptor-like comparison."
     }
   },
-  "generatedAt": "2026-07-28T15:26:53.309Z"
+  "generatedAt": "2026-07-28T17:37:11.230Z"
 }

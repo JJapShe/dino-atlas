@@ -503,43 +503,51 @@ window.gallerySlotAssignments = {
   ],
   "panphagia-protos": [
     {
-      "source": "assets/dinosaurs/panphagia-protos-small-sauropodomorph-imagegen-v1.png",
+      "source": "assets/dinosaurs/panphagia-protos-charcoal-mulberry-la-pena-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "ischigualasto-la-pena-upper-floodplain",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/panphagia-protos-bluegray-copper-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/panphagia-protos-slate-terracotta-bluehour-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "ischigualasto-la-pena-upper-floodplain",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/panphagia-protos-ischigualasto-forage-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/panphagia-protos-la-pena-crevasse-splay-habitat-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "ischigualasto-la-pena-upper-floodplain",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/panphagia-protos-light-basal-sauropodomorph-identity-imagegen-v2.png",
+      "source": "assets/dinosaurs/panphagia-protos-naris-slender-jaw-anatomy-imagegen-v2.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "ischigualasto-la-pena-upper-floodplain",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/panphagia-protos-herrerasaurus-escape-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/panphagia-protos-eoraptor-channel-context-ecology-imagegen-v2.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
       "phenotype": "canonical-a",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "ischigualasto-la-pena-upper-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/panphagia-protos-flood-debris-investigation-behavior-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "ischigualasto-la-pena-upper-floodplain",
       "expectedKind": "anatomy review"
     }
   ],
