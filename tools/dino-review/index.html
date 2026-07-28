@@ -46,7 +46,7 @@
     }
     .toolbar {
       display: grid;
-      grid-template-columns: minmax(220px, 1fr) 190px 150px 140px 150px;
+      grid-template-columns: minmax(220px, 1fr) 190px 150px 140px 150px 38px;
       gap: 8px;
       align-items: center;
     }
@@ -71,6 +71,19 @@
       cursor: pointer;
     }
     button:hover { border-color: var(--accent); }
+    .refresh-button {
+      width: 38px;
+      min-width: 38px;
+      height: 36px;
+      min-height: 36px;
+      padding: 0;
+      font-size: 20px;
+      line-height: 1;
+    }
+    .refresh-button[aria-busy="true"] {
+      color: var(--accent);
+      cursor: wait;
+    }
     main {
       display: grid;
       grid-template-columns: minmax(260px, 30vw) minmax(560px, 1fr);
@@ -312,6 +325,7 @@
         <option value="name">파일명순</option>
         <option value="size">파일 크기순</option>
       </select>
+      <button class="refresh-button" id="refreshImages" type="button" title="최신 이미지 목록 불러오기" aria-label="이미지 목록 새로고침">&#x21bb;</button>
     </div>
   </header>
   <main>
@@ -357,6 +371,8 @@
     let images = [];
     let selected = null;
     let selectedStatus = "unreviewed";
+    let imageListSignature = "";
+    let refreshInFlight = false;
 
     const $ = (id) => document.getElementById(id);
 
@@ -368,6 +384,43 @@
     function imageUrl(image) {
       const sep = image.url.includes("?") ? "&" : "?";
       return api(`${image.url}${sep}v=${encodeURIComponent(`${image.updatedAt}-${image.sizeBytes}`)}`);
+    }
+
+    function hasUnsavedReview() {
+      const note = $("note");
+      if (!selected || !note) return false;
+      return note.value !== (selected.review?.note || "") || selectedStatus !== statusOf(selected);
+    }
+
+    function listSignature(list) {
+      return list.map((image) => [
+        image.id,
+        image.updatedAt,
+        image.sizeBytes,
+        image.kind,
+        image.species,
+        image.review?.status || "",
+        image.review?.updatedAt || "",
+      ].join(":")).join("|");
+    }
+
+    function currentFilterState() {
+      return {
+        search: $("search").value,
+        species: $("species").value,
+        kind: $("kind").value,
+        status: $("status").value,
+        sort: $("sort").value,
+      };
+    }
+
+    function restoreFilterState(state) {
+      Object.entries(state).forEach(([id, value]) => {
+        const control = $(id);
+        if (!control) return;
+        if (control.tagName === "SELECT" && ![...control.options].some((option) => option.value === value)) return;
+        control.value = value;
+      });
     }
 
     function statusOf(image) {
@@ -561,17 +614,56 @@
         .replaceAll('"', "&quot;");
     }
 
+    async function refreshImageList({ force = false, initial = false } = {}) {
+      if (refreshInFlight || (!force && (document.hidden || hasUnsavedReview()))) return;
+      refreshInFlight = true;
+      $("refreshImages").setAttribute("aria-busy", "true");
+      $("refreshImages").disabled = true;
+      const selectedId = selected?.id;
+      const draft = hasUnsavedReview() && selected
+        ? { id: selected.id, note: $("note").value, status: selectedStatus }
+        : null;
+      const filters = currentFilterState();
+
+      try {
+        const res = await fetch(api("/api/images"), { cache: "no-store" });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        $("refreshImages").title = "최신 이미지 목록 불러오기";
+        const nextSignature = listSignature(data.images);
+        if (!initial && nextSignature === imageListSignature) return;
+
+        images = data.images;
+        imageListSignature = nextSignature;
+        fillSelect("species", data.species, "전체 공룡");
+        fillSelect("kind", data.kinds, "전체 유형");
+        restoreFilterState(filters);
+        selected = images.find((image) => image.id === selectedId) || images[0] || null;
+        selectedStatus = selected ? statusOf(selected) : "unreviewed";
+        renderGrid();
+        renderDetail();
+
+        if (draft && selected?.id === draft.id) {
+          selectedStatus = draft.status;
+          renderDetail();
+          $("note").value = draft.note;
+        }
+        if (!$("zoom").hidden && selected) openZoom();
+      } catch (error) {
+        $("refreshImages").title = "새로고침 실패 - 다시 시도";
+        if (initial) throw error;
+      } finally {
+        refreshInFlight = false;
+        $("refreshImages").removeAttribute("aria-busy");
+        $("refreshImages").disabled = false;
+      }
+    }
+
     async function init() {
-      const res = await fetch(api("/api/images"), { cache: "no-store" });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const data = await res.json();
-      images = data.images;
-      fillSelect("species", data.species, "전체 공룡");
-      fillSelect("kind", data.kinds, "전체 유형");
+      await refreshImageList({ force: true, initial: true });
       ["search", "species", "kind", "status", "sort"].forEach((id) => $(id).addEventListener("input", renderGrid));
-      selected = images[0] || null;
-      renderGrid();
-      renderDetail();
+      $("refreshImages").addEventListener("click", () => refreshImageList({ force: true }));
+      window.setInterval(() => refreshImageList(), 10000);
     }
 
     init().catch(() => {
@@ -584,6 +676,9 @@
     });
     window.addEventListener("keydown", (event) => {
       if (event.key === "Escape" && !$("zoom").hidden) closeZoom();
+    });
+    document.addEventListener("visibilitychange", () => {
+      if (!document.hidden) refreshImageList();
     });
   </script>
 </body>
