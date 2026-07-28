@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-28T05:45:59.587Z",
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-38",
+  "generatedAt": "2026-07-28T06:41:34.229Z",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-39",
   "reviewMethod": "Marsh and Rowe 2020 paired nasolacrimal crest, robust premaxilla-maxilla contact, four-digit manus with phalangeal formula 2-3-4-1, clawed digits I-III and a reduced peg-like non-ungual digit IV, and four-toed pes with a reduced first digit; Priddy et al. 2021 and Luttrell 1993 Kayenta fluvial-aeolian and intermittent floodplain context; original-size inspection of all six selected generated images, final six-role contact sheet, and isolated head, both-hand, both-foot, pelvis, tail, and secondary-fauna crops; each complete primary animal was checked for one head, two separate crests, exactly two forelimbs and two hindlimbs, and one continuous tail; the failed representative hand-only edit was rejected because it erased the reduced fourth digit; exact colors, skin, crest sheath, posture, behavior, growth stage, vegetation, and live coexistence remain reconstruction hypotheses",
-  "targetSlots": 571,
+  "targetSlots": 572,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -1255,48 +1255,57 @@
     "monolophosaurus-jiangi": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/monolophosaurus-jiangi-singlecrest-theropod-imagegen-v1.png",
+        "source": "assets/dinosaurs/monolophosaurus-jiangi-single-midline-crest-representative-imagegen-v3.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Neutral post-rain full-body frame passes count-level review with one head, one continuous midline crest, one visible enlarged naris, two arms, two legs, and one complete tail; limbs and distal tail remain explicitly comparative because the holotype does not preserve them.",
+        "reviewMethod": "ImageGen output inspection at original size, six-image contact-sheet comparison, paper-figure anatomy comparison, and role-scoped gallery audit",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-39",
+        "reviewedAt": "2026-07-28T06:41:34.229Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/monolophosaurus-jiangi-saffron-slate-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/monolophosaurus-jiangi-cobalt-celadon-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Reverse-facing cool-dawn frame adds a distinct cobalt, celadon, navy, and copper palette while retaining the long low skull, single crest, large naris, two arms, two legs, and one tail; coloration is clearly treated as a reconstruction hypothesis.",
+        "reviewMethod": "ImageGen output inspection at original size, six-image contact-sheet comparison, paper-figure anatomy comparison, and role-scoped gallery audit",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-39",
+        "reviewedAt": "2026-07-28T06:41:34.229Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/monolophosaurus-jiangi-xinjiang-waterline-inspection-ecology-imagegen-v2.png",
+        "source": "assets/dinosaurs/monolophosaurus-jiangi-seasonal-sheetflood-habitat-ecology-imagegen-v3.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "High-oblique view communicates the seasonally wet-dry Shishugou alluvial and paludal mosaic without predation; the primary animal remains countable, with extra anatomy caution retained for the oblique feet and distance.",
+        "reviewMethod": "ImageGen output inspection at original size, six-image contact-sheet comparison, paper-figure anatomy comparison, and role-scoped gallery audit",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-39",
+        "reviewedAt": "2026-07-28T06:41:34.229Z"
       },
       "4": {
         "status": "approved",
-        "source": "assets/dinosaurs/monolophosaurus-jiangi-single-low-crest-identity-imagegen-v2.png",
+        "source": "assets/dinosaurs/monolophosaurus-jiangi-inflated-midline-crest-anatomy-imagegen-v3.png",
         "role": "identity-anatomy",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Deliberately cropped head study isolates one smooth thick midline crest and one visible enlarged naris without exposing an antorbital skull opening through living tissue; approved only for the anatomy-reference role, not as a full-body representative.",
+        "reviewMethod": "ImageGen output inspection at original size, six-image contact-sheet comparison, paper-figure anatomy comparison, and role-scoped gallery audit",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-39",
+        "reviewedAt": "2026-07-28T06:41:34.229Z"
       },
       "5": {
         "status": "approved",
-        "source": "assets/dinosaurs/monolophosaurus-jiangi-bellusaurus-attack-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/monolophosaurus-jiangi-distant-sauropod-paleochannel-ecology-imagegen-v2.png",
         "role": "interaction",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "A complete foreground Monolophosaurus is separated by water and distance from one deliberately generic sauropod; the frame makes no named-species, direct-association, pursuit, attack, or feeding claim and is retained as cautious fauna context.",
+        "reviewMethod": "ImageGen output inspection at original size, six-image contact-sheet comparison, paper-figure anatomy comparison, and role-scoped gallery audit",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-39",
+        "reviewedAt": "2026-07-28T06:41:34.229Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/monolophosaurus-jiangi-ash-squall-alert-ecology-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "Solitary ash-squall alert frame keeps one head, one crest, two arms, two legs, and one tail visible while providing a nonviolent environmental-response hypothesis distinct from the other five compositions.",
+        "reviewMethod": "ImageGen output inspection at original size, six-image contact-sheet comparison, paper-figure anatomy comparison, and role-scoped gallery audit",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-39",
+        "reviewedAt": "2026-07-28T06:41:34.229Z"
       }
     },
     "cetiosaurus-oxoniensis": {
@@ -6158,6 +6167,33 @@
     },
     "assets/dinosaurs/polacanthus-foxii-wessex-rain-clearing-imagegen-v2.png": {
       "reason": "The former rain-clearing frame turns the pelvic shield into a smooth, pale-rimmed blanket or turtle-shell patch and reduces the rest of the armour toward a generic lizardlike body."
+    },
+    "assets/dinosaurs/monolophosaurus-jiangi-bellusaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Named Bellusaurus attack action overstates direct association and behavior, obscures the primary anatomy, and is replaced by a separated non-interaction fauna-context frame."
+    },
+    "assets/dinosaurs/monolophosaurus-jiangi-bellusaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Named Bellusaurus carcass feeding implies unsupported prey identity and behavior while prioritizing gore over a readable Monolophosaurus body."
+    },
+    "assets/dinosaurs/monolophosaurus-jiangi-bellusaurus-moonlit-reedbend-ambush-ecology-imagegen-v2.png": {
+      "reason": "Moonlit named-species ambush is an unsupported direct interaction and hides the crest, hands, feet, and tail in low light and reeds."
+    },
+    "assets/dinosaurs/monolophosaurus-jiangi-bellusaurus-open-pursuit-ecology-imagegen-v1.png": {
+      "reason": "Named Bellusaurus pursuit overstates behavior and co-occurrence certainty and makes limb-count and crest review secondary to action."
+    },
+    "assets/dinosaurs/monolophosaurus-jiangi-bellusaurus-reed-ambush-ecology-imagegen-v1.png": {
+      "reason": "Reed ambush repeats an unsupported named prey interaction while vegetation and overlap prevent reliable inspection of the primary animal."
+    },
+    "assets/dinosaurs/monolophosaurus-jiangi-saffron-slate-pattern-imagegen-v1.png": {
+      "reason": "The former saffron-slate variant repeats the old ochre broadside palette and retains a generic short lizardlike head with a weak small naris."
+    },
+    "assets/dinosaurs/monolophosaurus-jiangi-singlecrest-theropod-imagegen-v1.png": {
+      "reason": "The former representative has a generic compact theropod head, insufficiently enlarged naris, weakly evidenced crest shape, and no explicit limb-preservation boundary."
+    },
+    "assets/dinosaurs/monolophosaurus-jiangi-single-low-crest-identity-imagegen-v2.png": {
+      "reason": "The former identity study undersells the thick pneumatized midline crest and enlarged naris and reads as a generic lizardlike theropod profile."
+    },
+    "assets/dinosaurs/monolophosaurus-jiangi-xinjiang-waterline-inspection-ecology-imagegen-v2.png": {
+      "reason": "The former waterline frame repeats an ochre broadside composition with a short generic head and weak crest while lacking the updated Shishugou environment and preservation caveats."
     }
   }
 }

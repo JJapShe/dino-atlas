@@ -1117,43 +1117,51 @@ window.gallerySlotAssignments = {
   ],
   "monolophosaurus-jiangi": [
     {
-      "source": "assets/dinosaurs/monolophosaurus-jiangi-singlecrest-theropod-imagegen-v1.png",
+      "source": "assets/dinosaurs/monolophosaurus-jiangi-single-midline-crest-representative-imagegen-v3.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "shishugou-seasonal-alluvial-wetland",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/monolophosaurus-jiangi-saffron-slate-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/monolophosaurus-jiangi-cobalt-celadon-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "shishugou-seasonal-alluvial-wetland",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/monolophosaurus-jiangi-xinjiang-waterline-inspection-ecology-imagegen-v2.png",
+      "source": "assets/dinosaurs/monolophosaurus-jiangi-seasonal-sheetflood-habitat-ecology-imagegen-v3.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "shishugou-seasonal-alluvial-wetland",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/monolophosaurus-jiangi-single-low-crest-identity-imagegen-v2.png",
+      "source": "assets/dinosaurs/monolophosaurus-jiangi-inflated-midline-crest-anatomy-imagegen-v3.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "shishugou-seasonal-alluvial-wetland",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/monolophosaurus-jiangi-bellusaurus-attack-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/monolophosaurus-jiangi-distant-sauropod-paleochannel-ecology-imagegen-v2.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "shishugou-seasonal-alluvial-wetland",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/monolophosaurus-jiangi-ash-squall-alert-ecology-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "shishugou-seasonal-alluvial-wetland",
       "expectedKind": "anatomy review"
     }
   ],

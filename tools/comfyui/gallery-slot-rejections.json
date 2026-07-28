@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-38",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-39",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -796,6 +796,33 @@
     },
     "assets/dinosaurs/polacanthus-foxii-wessex-rain-clearing-imagegen-v2.png": {
       "reason": "The former rain-clearing frame turns the pelvic shield into a smooth, pale-rimmed blanket or turtle-shell patch and reduces the rest of the armour toward a generic lizardlike body."
+    },
+    "assets/dinosaurs/monolophosaurus-jiangi-bellusaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Named Bellusaurus attack action overstates direct association and behavior, obscures the primary anatomy, and is replaced by a separated non-interaction fauna-context frame."
+    },
+    "assets/dinosaurs/monolophosaurus-jiangi-bellusaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Named Bellusaurus carcass feeding implies unsupported prey identity and behavior while prioritizing gore over a readable Monolophosaurus body."
+    },
+    "assets/dinosaurs/monolophosaurus-jiangi-bellusaurus-moonlit-reedbend-ambush-ecology-imagegen-v2.png": {
+      "reason": "Moonlit named-species ambush is an unsupported direct interaction and hides the crest, hands, feet, and tail in low light and reeds."
+    },
+    "assets/dinosaurs/monolophosaurus-jiangi-bellusaurus-open-pursuit-ecology-imagegen-v1.png": {
+      "reason": "Named Bellusaurus pursuit overstates behavior and co-occurrence certainty and makes limb-count and crest review secondary to action."
+    },
+    "assets/dinosaurs/monolophosaurus-jiangi-bellusaurus-reed-ambush-ecology-imagegen-v1.png": {
+      "reason": "Reed ambush repeats an unsupported named prey interaction while vegetation and overlap prevent reliable inspection of the primary animal."
+    },
+    "assets/dinosaurs/monolophosaurus-jiangi-saffron-slate-pattern-imagegen-v1.png": {
+      "reason": "The former saffron-slate variant repeats the old ochre broadside palette and retains a generic short lizardlike head with a weak small naris."
+    },
+    "assets/dinosaurs/monolophosaurus-jiangi-singlecrest-theropod-imagegen-v1.png": {
+      "reason": "The former representative has a generic compact theropod head, insufficiently enlarged naris, weakly evidenced crest shape, and no explicit limb-preservation boundary."
+    },
+    "assets/dinosaurs/monolophosaurus-jiangi-single-low-crest-identity-imagegen-v2.png": {
+      "reason": "The former identity study undersells the thick pneumatized midline crest and enlarged naris and reads as a generic lizardlike theropod profile."
+    },
+    "assets/dinosaurs/monolophosaurus-jiangi-xinjiang-waterline-inspection-ecology-imagegen-v2.png": {
+      "reason": "The former waterline frame repeats an ochre broadside composition with a short generic head and weak crest while lacking the updated Shishugou environment and preservation caveats."
     }
   }
 }

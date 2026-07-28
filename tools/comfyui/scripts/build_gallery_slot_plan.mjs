@@ -90,6 +90,13 @@ const HABITATS = {
     light: "neutral broken-cloud daylight or cool dawn with restrained water reflection and no global orange cast",
     backgroundPalette: ["#765866", "#a18e74", "#526b64"],
   },
+  "shishugou-seasonal-alluvial-wetland": {
+    substrate: "dark red calcareous overbank mud, pale low-sinuosity channels, shallow ponds, tuffaceous gray silt, local sheetflood deposits, and scattered silicified wood",
+    vegetation: "scattered conifers, cycads, ferns, and horsetails with no modern grass",
+    moisture: "warm to hot seasonally wet-dry alluvial, fluvial, and paludal wetland mosaic with episodic floods and local boggy substrates",
+    light: "neutral broken-cloud daylight or cool post-rain light with restrained water reflection and no global orange cast",
+    backgroundPalette: ["#765247", "#708487", "#53634c"],
+  },
   "coastal-lagoon": {
     substrate: "mudflat, pale sediment, and shallow lagoon water",
     vegetation: "coastal conifers, ferns, and low wetland plants",
@@ -415,6 +422,7 @@ function habitatFor(dino, route) {
   else if (dino.id === "scelidosaurus-harrisonii") key = "dorset-humid-island-river";
   else if (dino.id === "polacanthus-foxii") key = "wessex-seasonal-floodplain";
   else if (dino.id === "camarasaurus-lentus") key = "morrison-seasonal-alluvial-plain";
+  else if (dino.id === "monolophosaurus-jiangi") key = "shishugou-seasonal-alluvial-wetland";
   else if (dino.id === "dilophosaurus-wetherilli") key = "kayenta-silty-fluvial-aeolian-plain";
   else if (/marine|seaway|ocean|sea |pliosaur|plesiosaur|ichthyosaur|mosasaur|해양|바다|수중/.test(text)) key = "marine";
   else if (/polar|prince creek|alaska|high-latitude|극지|고위도/.test(text)) key = "polar-forest";
