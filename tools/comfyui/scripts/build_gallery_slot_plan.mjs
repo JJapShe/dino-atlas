@@ -48,6 +48,13 @@ const HABITATS = {
     light: "neutral daylight with restrained warm reflected light",
     backgroundPalette: ["#914f38", "#b98a63", "#66705a"],
   },
+  "lagarcito-inland-lake": {
+    substrate: "pale mineral silt, shallow freshwater channels, and low mud bars",
+    vegetation: "sparse low aquatic plants and distant dryland conifers",
+    moisture: "shallow perennial inland lake on a semiarid alluvial plain",
+    light: "clear neutral daylight with restrained cool freshwater reflection",
+    backgroundPalette: ["#6e888b", "#b6a98d", "#68705c"],
+  },
   "gobi-arid": {
     substrate: "pale sand, buff rock, and dry wash gravel",
     vegetation: "sparse low gray-green scrub",
@@ -368,6 +375,7 @@ function habitatFor(dino, route) {
   else if (dino.id === "parasaurolophus-walkeri") key = "dinosaur-park-coastal-plain";
   else if (dino.id === "edmontosaurus-annectens") key = "hell-creek-lance-fluvial-forest";
   else if (dino.id === "rhamphorhynchus-muensteri") key = "solnhofen-restricted-carbonate-lagoon";
+  else if (dino.id === "pterodaustro-guinazui") key = "lagarcito-inland-lake";
   else if (dino.id === "scelidosaurus-harrisonii") key = "dorset-humid-island-river";
   else if (/marine|seaway|ocean|sea |pliosaur|plesiosaur|ichthyosaur|mosasaur|해양|바다|수중/.test(text)) key = "marine";
   else if (/polar|prince creek|alaska|high-latitude|극지|고위도/.test(text)) key = "polar-forest";

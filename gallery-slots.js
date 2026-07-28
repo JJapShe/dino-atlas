@@ -1361,27 +1361,51 @@ window.gallerySlotAssignments = {
   ],
   "pterodaustro-guinazui": [
     {
-      "source": "assets/dinosaurs/pterodaustro-guinazui-lagarcito-filter-feeder-imagegen-v1.png",
+      "source": "assets/dinosaurs/pterodaustro-guinazui-upcurved-combjaw-fourlimb-representative-imagegen-v1.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "lagarcito-inland-lake",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/pterodaustro-guinazui-rose-mint-bristle-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/pterodaustro-guinazui-graphite-teal-rust-reverse-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "lagarcito-inland-lake",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/pterodaustro-guinazui-lagoon-filter-feeding-ecology-imagegen-v2.png",
+      "source": "assets/dinosaurs/pterodaustro-guinazui-lagarcito-inland-lake-wading-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "lagarcito-inland-lake",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/pterodaustro-guinazui-lower-comb-upper-peg-dentition-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "lagarcito-inland-lake",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/pterodaustro-guinazui-fish-channel-separated-fauna-ecology-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "lagarcito-inland-lake",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/pterodaustro-guinazui-separated-growth-stages-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "lagarcito-inland-lake",
       "expectedKind": "anatomy review"
     }
   ],

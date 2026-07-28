@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-27T23:56:25.063Z",
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-31",
-  "reviewMethod": "Lund et al. 2016 craniofacial, frill, postcranial, and integument gate; Sampson et al. 2013 original description; Gates and Sampson 2007 middle-unit Gryposaurus context; Ramezani et al. 2022 warm-subhumid alluvial setting; original-size inspection of all three legacy files and six selected files; a six-role contact sheet plus isolated head, horn, frill, limb, tail, skin, and secondary-animal crops; strict one-head, exactly-two-brow-horn, one-short-nasal-horn, four-leg, and one-tail review for every complete primary Nasutoceratops; color, horn sheath, frill soft tissue, low browsing, same-frame coexistence, channel crossing, and gait remain reconstruction hypotheses",
-  "targetSlots": 551,
+  "generatedAt": "2026-07-28T00:43:13.711Z",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-32",
+  "reviewMethod": "Chiappe et al. 2000 cranial and dentition gate; Chiappe et al. 1998 and Rivarola et al. 2004 inland shallow perennial-lake and fish context; Chinsamy et al. 2008 ontogenetic series; Codorniú 2005 tail gate; Codorniú et al. 2024 ankle and cautious wading gate; original-size inspection of all four legacy files, two superseded generated attempts, and six selected files; strict one-head, exactly-two-wing, exactly-two-hind-limb, one-tail, lower-jaw-only long-comb, and short-upper-tooth review for every complete primary Pterodaustro; color, wing posture, filter-feeding sweep, same-frame fish context, and separated growth-stage scene remain reconstruction hypotheses",
+  "targetSlots": 554,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -1528,30 +1528,57 @@
     "pterodaustro-guinazui": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/pterodaustro-guinazui-lagarcito-filter-feeder-imagegen-v1.png",
+        "source": "assets/dinosaurs/pterodaustro-guinazui-upcurved-combjaw-fourlimb-representative-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Original-size review confirms one crestless upcurved head, one lower-jaw-only long tooth comb, short upper peg teeth, exactly two fourth-finger wings, two separate hind limbs, and one modest slender tail without a vane.",
+        "reviewMethod": "Chiappe et al. 2000 cranial and dentition gate; Chiappe et al. 1998 and Rivarola et al. 2004 inland shallow perennial-lake and fish context; Chinsamy et al. 2008 ontogenetic series; Codorniú 2005 tail gate; Codorniú et al. 2024 ankle and cautious wading gate; original-size inspection of all four legacy files, two superseded generated attempts, and six selected files; strict one-head, exactly-two-wing, exactly-two-hind-limb, one-tail, lower-jaw-only long-comb, and short-upper-tooth review for every complete primary Pterodaustro; color, wing posture, filter-feeding sweep, same-frame fish context, and separated growth-stage scene remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-32",
+        "reviewedAt": "2026-07-28T00:43:13.711Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/pterodaustro-guinazui-rose-mint-bristle-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/pterodaustro-guinazui-graphite-teal-rust-reverse-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The right-facing blue-hour glide preserves the complete lower-only comb jaw, two wings, two hind limbs, and one tail while adding a controlled graphite, mineral-teal, ivory, rust-coral, and silver-speckle treatment; color remains hypothetical.",
+        "reviewMethod": "Chiappe et al. 2000 cranial and dentition gate; Chiappe et al. 1998 and Rivarola et al. 2004 inland shallow perennial-lake and fish context; Chinsamy et al. 2008 ontogenetic series; Codorniú 2005 tail gate; Codorniú et al. 2024 ankle and cautious wading gate; original-size inspection of all four legacy files, two superseded generated attempts, and six selected files; strict one-head, exactly-two-wing, exactly-two-hind-limb, one-tail, lower-jaw-only long-comb, and short-upper-tooth review for every complete primary Pterodaustro; color, wing posture, filter-feeding sweep, same-frame fish context, and separated growth-stage scene remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-32",
+        "reviewedAt": "2026-07-28T00:43:13.711Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/pterodaustro-guinazui-lagoon-filter-feeding-ecology-imagegen-v2.png",
+        "source": "assets/dinosaurs/pterodaustro-guinazui-lagarcito-inland-lake-wading-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The high-oblique wading frame cleanly separates two half-open wings, two planted hind limbs, one tail, and the lower-only tooth comb in a shallow inland freshwater lake; exact wing balance and jaw-sweeping posture remain hypotheses.",
+        "reviewMethod": "Chiappe et al. 2000 cranial and dentition gate; Chiappe et al. 1998 and Rivarola et al. 2004 inland shallow perennial-lake and fish context; Chinsamy et al. 2008 ontogenetic series; Codorniú 2005 tail gate; Codorniú et al. 2024 ankle and cautious wading gate; original-size inspection of all four legacy files, two superseded generated attempts, and six selected files; strict one-head, exactly-two-wing, exactly-two-hind-limb, one-tail, lower-jaw-only long-comb, and short-upper-tooth review for every complete primary Pterodaustro; color, wing posture, filter-feeding sweep, same-frame fish context, and separated growth-stage scene remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-32",
+        "reviewedAt": "2026-07-28T00:43:13.711Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/pterodaustro-guinazui-lower-comb-upper-peg-dentition-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The strict lateral close-up keeps the entire crestless upcurved skull and jaw pair in frame, with all long filament-like teeth rooted in the lower jaw groove and only short blunt teeth on the upper jaw.",
+        "reviewMethod": "Chiappe et al. 2000 cranial and dentition gate; Chiappe et al. 1998 and Rivarola et al. 2004 inland shallow perennial-lake and fish context; Chinsamy et al. 2008 ontogenetic series; Codorniú 2005 tail gate; Codorniú et al. 2024 ankle and cautious wading gate; original-size inspection of all four legacy files, two superseded generated attempts, and six selected files; strict one-head, exactly-two-wing, exactly-two-hind-limb, one-tail, lower-jaw-only long-comb, and short-upper-tooth review for every complete primary Pterodaustro; color, wing posture, filter-feeding sweep, same-frame fish context, and separated growth-stage scene remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-32",
+        "reviewedAt": "2026-07-28T00:43:13.711Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/pterodaustro-guinazui-fish-channel-separated-fauna-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "The high-oblique flight retains a complete one-head, two-wing, two-hind-limb, one-tail primary animal while a broad depth and water gap separates generalized small fish based on Lagarcito semionotid and pleuropholid records.",
+        "reviewMethod": "Chiappe et al. 2000 cranial and dentition gate; Chiappe et al. 1998 and Rivarola et al. 2004 inland shallow perennial-lake and fish context; Chinsamy et al. 2008 ontogenetic series; Codorniú 2005 tail gate; Codorniú et al. 2024 ankle and cautious wading gate; original-size inspection of all four legacy files, two superseded generated attempts, and six selected files; strict one-head, exactly-two-wing, exactly-two-hind-limb, one-tail, lower-jaw-only long-comb, and short-upper-tooth review for every complete primary Pterodaustro; color, wing posture, filter-feeding sweep, same-frame fish context, and separated growth-stage scene remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-32",
+        "reviewedAt": "2026-07-28T00:43:13.711Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/pterodaustro-guinazui-separated-growth-stages-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The large foreground and small middle-distance animals are separated by open water; each resolves one head, two wings, two hind limbs, one tail, and the lower-only comb jaw, visualizing the known size series without claiming parentage or care.",
+        "reviewMethod": "Chiappe et al. 2000 cranial and dentition gate; Chiappe et al. 1998 and Rivarola et al. 2004 inland shallow perennial-lake and fish context; Chinsamy et al. 2008 ontogenetic series; Codorniú 2005 tail gate; Codorniú et al. 2024 ankle and cautious wading gate; original-size inspection of all four legacy files, two superseded generated attempts, and six selected files; strict one-head, exactly-two-wing, exactly-two-hind-limb, one-tail, lower-jaw-only long-comb, and short-upper-tooth review for every complete primary Pterodaustro; color, wing posture, filter-feeding sweep, same-frame fish context, and separated growth-stage scene remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-32",
+        "reviewedAt": "2026-07-28T00:43:13.711Z"
       }
     },
     "anhanguera-santanae": {
@@ -5873,6 +5900,18 @@
     },
     "assets/dinosaurs/nasutoceratops-titusi-slate-teal-pattern-imagegen-v1.png": {
       "reason": "The former pattern image repeats the same left-facing broadside, camera height, floodplain background, and body treatment as the old representative, so it fails the required composition and role-diversity gate."
+    },
+    "assets/dinosaurs/pterodaustro-guinazui-lagarcito-filter-feeder-imagegen-v1.png": {
+      "reason": "The former representative reads as a birdlike quadruped with overlapping extra limb-like wing structures and does not cleanly separate exactly two wings from two hind limbs."
+    },
+    "assets/dinosaurs/pterodaustro-guinazui-lagarcito-lagoon-filter-feeding-ecology-imagegen-v1.png": {
+      "reason": "The former multi-animal lagoon scene contains folded or duplicated wing and limb geometry, malformed background animals, and incorrectly treats the inland perennial lake as a coastal lagoon."
+    },
+    "assets/dinosaurs/pterodaustro-guinazui-lagoon-filter-feeding-ecology-imagegen-v2.png": {
+      "reason": "The former ecology frame loses the pterosaur wing plan and reads primarily as a long-legged bird, so it fails both the two-wing gate and the non-avian body identity gate."
+    },
+    "assets/dinosaurs/pterodaustro-guinazui-rose-mint-bristle-pattern-imagegen-v1.png": {
+      "reason": "The former pattern image has overlapping extra limb and wing shapes, uses an overdominant flamingo-like rose palette, and does not preserve a countable pterodactyloid body."
     }
   }
 }

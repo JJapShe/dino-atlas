@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-31",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-32",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -691,6 +691,18 @@
     },
     "assets/dinosaurs/nasutoceratops-titusi-slate-teal-pattern-imagegen-v1.png": {
       "reason": "The former pattern image repeats the same left-facing broadside, camera height, floodplain background, and body treatment as the old representative, so it fails the required composition and role-diversity gate."
+    },
+    "assets/dinosaurs/pterodaustro-guinazui-lagarcito-filter-feeder-imagegen-v1.png": {
+      "reason": "The former representative reads as a birdlike quadruped with overlapping extra limb-like wing structures and does not cleanly separate exactly two wings from two hind limbs."
+    },
+    "assets/dinosaurs/pterodaustro-guinazui-lagarcito-lagoon-filter-feeding-ecology-imagegen-v1.png": {
+      "reason": "The former multi-animal lagoon scene contains folded or duplicated wing and limb geometry, malformed background animals, and incorrectly treats the inland perennial lake as a coastal lagoon."
+    },
+    "assets/dinosaurs/pterodaustro-guinazui-lagoon-filter-feeding-ecology-imagegen-v2.png": {
+      "reason": "The former ecology frame loses the pterosaur wing plan and reads primarily as a long-legged bird, so it fails both the two-wing gate and the non-avian body identity gate."
+    },
+    "assets/dinosaurs/pterodaustro-guinazui-rose-mint-bristle-pattern-imagegen-v1.png": {
+      "reason": "The former pattern image has overlapping extra limb and wing shapes, uses an overdominant flamingo-like rose palette, and does not preserve a countable pterodactyloid body."
     }
   }
 }
