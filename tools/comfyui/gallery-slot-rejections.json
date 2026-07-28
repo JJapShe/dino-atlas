@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-45",
+  "reviewBatch": "2026-07-29-richness-six-slot-batch-46",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -997,7 +997,34 @@
     },
     "assets/dinosaurs/quetzalcoatlus-northropi-low-launch-comparative-locomotion-imagegen-v2.png": {
       "reason": "The first launch-tail edit leaves two thin parallel tail-like strands beneath the pelvis, so it fails the single-tail count gate despite otherwise stable wings and legs."
+    },
+    "assets/dinosaurs/chromogisaurus-novasi-basalt-mint-ladder-pattern-imagegen-v1.png": {
+      "reason": "Unregistered legacy pattern repeats the old broadside staging and uses a separate mint-ladder phenotype instead of the rebuilt set's stable individual markings."
+    },
+    "assets/dinosaurs/chromogisaurus-novasi-eoraptor-basalt-root-dodge-defense-ecology-imagegen-v1.png": {
+      "reason": "The foreground primary head is partly obstructed and two similar early saurischians crowd the frame, making species identity, limb count and the claimed defensive event unreliable."
+    },
+    "assets/dinosaurs/chromogisaurus-novasi-herrerasaurus-escape-ecology-imagegen-v1.png": {
+      "reason": "The predator is a generic large theropod rather than a stable Herrerasaurus reconstruction, while pursuit motion obscures feet and overstates a species-level predator-prey event."
+    },
+    "assets/dinosaurs/chromogisaurus-novasi-herrerasaurus-scrub-dodge-ecology-imagegen-v1.png": {
+      "reason": "The generic large-theropod chase, repeated ochre broadside palette and shrub overlap prevent independent anatomy review and imply unsupported direct interaction."
+    },
+    "assets/dinosaurs/chromogisaurus-novasi-herrerasaurus-tailcheck-defense-ecology-imagegen-v1.png": {
+      "reason": "The primary tail intersects the secondary predator and turns formation-level coexistence into an unsupported contact defense event with ambiguous appendage continuity."
+    },
+    "assets/dinosaurs/chromogisaurus-novasi-ischigualasto-browse-ecology-imagegen-v1.png": {
+      "reason": "The crowded multi-animal browsing frame obscures feet, makes the foreground individual read partly quadrupedal and implies unsupported grouping and diet behavior."
+    },
+    "assets/dinosaurs/chromogisaurus-novasi-light-basal-sauropodomorph-identity-imagegen-v2.png": {
+      "reason": "The former identity frame is overly heavy and quadrupedal, presents an unpreserved head and forebody too confidently, and does not match the rebuilt posterior-evidence gate."
+    },
+    "assets/dinosaurs/chromogisaurus-novasi-slender-sauropodomorph-imagegen-v1.png": {
+      "reason": "The old representative is a generic brown broadside without the revised PVSJ 845 preservation limits, stable six-image phenotype, or original-size limb and tail audit."
+    },
+    "assets/dinosaurs/chromogisaurus-novasi-teal-copper-pattern-imagegen-v1.png": {
+      "reason": "The former pattern repeats the same warm broadside lighting and old generic anatomy instead of maintaining the rebuilt mineral-teal individual across a genuinely different camera and weather condition."
     }
   },
-  "generatedAt": "2026-07-28T12:22:14.895Z"
+  "generatedAt": "2026-07-28T15:26:53.309Z"
 }

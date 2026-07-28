@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-28T12:22:14.895Z",
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-45",
-  "reviewMethod": "Andres and Langston 2021 giant partial-left-wing holotype, six fragmentary giant specimens, and approximately 10 m reconstructed wingspan; Padian et al. 2021 functional reconstruction based entirely on the smaller Q. lawsoni morph and explicit absence of Q. northropi skull and neck material; Lehman 2021 inland Javelina stream-channel facies, rare giant specimens, Alamosaurus-dominated formation fauna, and speculative riparian or solitary interpretation; Thomas and McDavid 2025 recovery of giant and moderately large Quetzalcoatlus species in separate clades; original-size inspection of all selected full frames, final six-role contact sheet, and isolated head, forewing, wrist, limb, foot, tail, and secondary-animal crops; exact skull, neck, torso, gait, launch mechanics, skin, colors, markings, plant arrangement, and same-frame behavior remain reconstruction hypotheses",
-  "targetSlots": 586,
+  "generatedAt": "2026-07-28T15:26:53.309Z",
+  "reviewBatch": "2026-07-29-richness-six-slot-batch-46",
+  "reviewMethod": "Martinez, Apaldetti and Abelin 2013 complete preparation and revised diagnosis of PVSJ 845: three caudal vertebrae, chevron, scapulocoracoid glenoid, ilia, femora, tibiae, fibulae, metatarsal II and digit III phalanges, with no skull, cervical series or complete forelimb; Ezcurra 2010 type locality and original diagnosis; Currie et al. 2009 variegated Cancha de Bochas overbank mudstone, calcic paleosols, levee and crevasse-splay deposits, and rare high-sinuosity channels; original-size inspection of all six selected frames plus representative limb and tail, pattern limb, anatomy foot, rhynchosaur-context and storm-pose crops and a final six-role contact sheet; complete head, neck, forelimbs, body proportions, posture, diet, full tail, skin, colors, markings, exact plants, alert behavior and same-frame fauna remain comparative or ecological hypotheses",
+  "targetSlots": 587,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -512,48 +512,57 @@
     "chromogisaurus-novasi": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/chromogisaurus-novasi-slender-sauropodomorph-imagegen-v1.png",
+        "source": "assets/dinosaurs/chromogisaurus-novasi-mineral-teal-floodplain-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Neutral full-body frame shows one conservative small early sauropodomorph with exactly two raised forelimbs, two separated hind limbs and feet, and one uninterrupted pelvis-origin tail; the caption separates the preserved posterior skeleton from the comparative head, neck, hands, gait and total body proportions.",
+        "reviewMethod": "Martinez, Apaldetti and Abelin 2013 complete preparation and revised diagnosis of PVSJ 845: three caudal vertebrae, chevron, scapulocoracoid glenoid, ilia, femora, tibiae, fibulae, metatarsal II and digit III phalanges, with no skull, cervical series or complete forelimb; Ezcurra 2010 type locality and original diagnosis; Currie et al. 2009 variegated Cancha de Bochas overbank mudstone, calcic paleosols, levee and crevasse-splay deposits, and rare high-sinuosity channels; original-size inspection of all six selected frames plus representative limb and tail, pattern limb, anatomy foot, rhynchosaur-context and storm-pose crops and a final six-role contact sheet; complete head, neck, forelimbs, body proportions, posture, diet, full tail, skin, colors, markings, exact plants, alert behavior and same-frame fauna remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-46",
+        "reviewedAt": "2026-07-28T15:26:53.309Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/chromogisaurus-novasi-teal-copper-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/chromogisaurus-novasi-bluehour-reverse-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Reverse-facing post-rain blue-hour frame preserves the same animal proportions, limb and tail count, mineral-teal dorsal field, lichen flanks, cream underside, vermilion shoulder and hip patches, rear-flank flecks and distal tail bars while treating all integument and color as hypothetical.",
+        "reviewMethod": "Martinez, Apaldetti and Abelin 2013 complete preparation and revised diagnosis of PVSJ 845: three caudal vertebrae, chevron, scapulocoracoid glenoid, ilia, femora, tibiae, fibulae, metatarsal II and digit III phalanges, with no skull, cervical series or complete forelimb; Ezcurra 2010 type locality and original diagnosis; Currie et al. 2009 variegated Cancha de Bochas overbank mudstone, calcic paleosols, levee and crevasse-splay deposits, and rare high-sinuosity channels; original-size inspection of all six selected frames plus representative limb and tail, pattern limb, anatomy foot, rhynchosaur-context and storm-pose crops and a final six-role contact sheet; complete head, neck, forelimbs, body proportions, posture, diet, full tail, skin, colors, markings, exact plants, alert behavior and same-frame fauna remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-46",
+        "reviewedAt": "2026-07-28T15:26:53.309Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/chromogisaurus-novasi-ischigualasto-browse-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/chromogisaurus-novasi-crevasse-splay-high-oblique-habitat-ecology-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "High-oblique frame keeps one complete readable animal on variegated overbank mud and pale crevasse-splay silt beside a sinuous channel, matching the Cancha de Bochas fluvial and paleosol setting without adding a chase or unsupported group.",
+        "reviewMethod": "Martinez, Apaldetti and Abelin 2013 complete preparation and revised diagnosis of PVSJ 845: three caudal vertebrae, chevron, scapulocoracoid glenoid, ilia, femora, tibiae, fibulae, metatarsal II and digit III phalanges, with no skull, cervical series or complete forelimb; Ezcurra 2010 type locality and original diagnosis; Currie et al. 2009 variegated Cancha de Bochas overbank mudstone, calcic paleosols, levee and crevasse-splay deposits, and rare high-sinuosity channels; original-size inspection of all six selected frames plus representative limb and tail, pattern limb, anatomy foot, rhynchosaur-context and storm-pose crops and a final six-role contact sheet; complete head, neck, forelimbs, body proportions, posture, diet, full tail, skin, colors, markings, exact plants, alert behavior and same-frame fauna remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-46",
+        "reviewedAt": "2026-07-28T15:26:53.309Z"
       },
       "4": {
         "status": "approved",
-        "source": "assets/dinosaurs/chromogisaurus-novasi-light-basal-sauropodomorph-identity-imagegen-v2.png",
+        "source": "assets/dinosaurs/chromogisaurus-novasi-preserved-region-hindlimb-comparative-anatomy-imagegen-v2.png",
         "role": "identity-anatomy",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Intentional neck-base-to-tail life-study crop keeps two forelimbs, two cleanly separated hind limbs and feet, the pelvis, strong tail base and one continuous tail readable, focusing review on the directly represented ilium, femur, tibia, fibula, metatarsal, pedal and caudal regions without pretending that live soft tissue is preserved.",
+        "reviewMethod": "Martinez, Apaldetti and Abelin 2013 complete preparation and revised diagnosis of PVSJ 845: three caudal vertebrae, chevron, scapulocoracoid glenoid, ilia, femora, tibiae, fibulae, metatarsal II and digit III phalanges, with no skull, cervical series or complete forelimb; Ezcurra 2010 type locality and original diagnosis; Currie et al. 2009 variegated Cancha de Bochas overbank mudstone, calcic paleosols, levee and crevasse-splay deposits, and rare high-sinuosity channels; original-size inspection of all six selected frames plus representative limb and tail, pattern limb, anatomy foot, rhynchosaur-context and storm-pose crops and a final six-role contact sheet; complete head, neck, forelimbs, body proportions, posture, diet, full tail, skin, colors, markings, exact plants, alert behavior and same-frame fauna remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-46",
+        "reviewedAt": "2026-07-28T15:26:53.309Z"
       },
       "5": {
         "status": "approved",
-        "source": "assets/dinosaurs/chromogisaurus-novasi-herrerasaurus-escape-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/chromogisaurus-novasi-channel-separated-rhynchosaur-context-ecology-imagegen-v2.png",
         "role": "interaction",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "One complete foreground Chromogisaurus and one distant low rhynchosaur-like reptile are separated by a broad river with no contact, pursuit or overlap; the secondary animal is explicitly formation-level context rather than proof of a species-level encounter.",
+        "reviewMethod": "Martinez, Apaldetti and Abelin 2013 complete preparation and revised diagnosis of PVSJ 845: three caudal vertebrae, chevron, scapulocoracoid glenoid, ilia, femora, tibiae, fibulae, metatarsal II and digit III phalanges, with no skull, cervical series or complete forelimb; Ezcurra 2010 type locality and original diagnosis; Currie et al. 2009 variegated Cancha de Bochas overbank mudstone, calcic paleosols, levee and crevasse-splay deposits, and rare high-sinuosity channels; original-size inspection of all six selected frames plus representative limb and tail, pattern limb, anatomy foot, rhynchosaur-context and storm-pose crops and a final six-role contact sheet; complete head, neck, forelimbs, body proportions, posture, diet, full tail, skin, colors, markings, exact plants, alert behavior and same-frame fauna remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-46",
+        "reviewedAt": "2026-07-28T15:26:53.309Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/chromogisaurus-novasi-storm-gust-alert-behavior-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "Solitary storm-gust turn retains exactly two forelimbs, two hind limbs with one lifted foot, and one broad uninterrupted counterbalancing tail curve; no predator or social group is present, and the caption labels the alert turn as a behavioral hypothesis.",
+        "reviewMethod": "Martinez, Apaldetti and Abelin 2013 complete preparation and revised diagnosis of PVSJ 845: three caudal vertebrae, chevron, scapulocoracoid glenoid, ilia, femora, tibiae, fibulae, metatarsal II and digit III phalanges, with no skull, cervical series or complete forelimb; Ezcurra 2010 type locality and original diagnosis; Currie et al. 2009 variegated Cancha de Bochas overbank mudstone, calcic paleosols, levee and crevasse-splay deposits, and rare high-sinuosity channels; original-size inspection of all six selected frames plus representative limb and tail, pattern limb, anatomy foot, rhynchosaur-context and storm-pose crops and a final six-role contact sheet; complete head, neck, forelimbs, body proportions, posture, diet, full tail, skin, colors, markings, exact plants, alert behavior and same-frame fauna remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-46",
+        "reviewedAt": "2026-07-28T15:26:53.309Z"
       }
     },
     "panphagia-protos": {
@@ -6494,6 +6503,33 @@
     },
     "assets/dinosaurs/quetzalcoatlus-northropi-low-launch-comparative-locomotion-imagegen-v2.png": {
       "reason": "The first launch-tail edit leaves two thin parallel tail-like strands beneath the pelvis, so it fails the single-tail count gate despite otherwise stable wings and legs."
+    },
+    "assets/dinosaurs/chromogisaurus-novasi-basalt-mint-ladder-pattern-imagegen-v1.png": {
+      "reason": "Unregistered legacy pattern repeats the old broadside staging and uses a separate mint-ladder phenotype instead of the rebuilt set's stable individual markings."
+    },
+    "assets/dinosaurs/chromogisaurus-novasi-eoraptor-basalt-root-dodge-defense-ecology-imagegen-v1.png": {
+      "reason": "The foreground primary head is partly obstructed and two similar early saurischians crowd the frame, making species identity, limb count and the claimed defensive event unreliable."
+    },
+    "assets/dinosaurs/chromogisaurus-novasi-herrerasaurus-escape-ecology-imagegen-v1.png": {
+      "reason": "The predator is a generic large theropod rather than a stable Herrerasaurus reconstruction, while pursuit motion obscures feet and overstates a species-level predator-prey event."
+    },
+    "assets/dinosaurs/chromogisaurus-novasi-herrerasaurus-scrub-dodge-ecology-imagegen-v1.png": {
+      "reason": "The generic large-theropod chase, repeated ochre broadside palette and shrub overlap prevent independent anatomy review and imply unsupported direct interaction."
+    },
+    "assets/dinosaurs/chromogisaurus-novasi-herrerasaurus-tailcheck-defense-ecology-imagegen-v1.png": {
+      "reason": "The primary tail intersects the secondary predator and turns formation-level coexistence into an unsupported contact defense event with ambiguous appendage continuity."
+    },
+    "assets/dinosaurs/chromogisaurus-novasi-ischigualasto-browse-ecology-imagegen-v1.png": {
+      "reason": "The crowded multi-animal browsing frame obscures feet, makes the foreground individual read partly quadrupedal and implies unsupported grouping and diet behavior."
+    },
+    "assets/dinosaurs/chromogisaurus-novasi-light-basal-sauropodomorph-identity-imagegen-v2.png": {
+      "reason": "The former identity frame is overly heavy and quadrupedal, presents an unpreserved head and forebody too confidently, and does not match the rebuilt posterior-evidence gate."
+    },
+    "assets/dinosaurs/chromogisaurus-novasi-slender-sauropodomorph-imagegen-v1.png": {
+      "reason": "The old representative is a generic brown broadside without the revised PVSJ 845 preservation limits, stable six-image phenotype, or original-size limb and tail audit."
+    },
+    "assets/dinosaurs/chromogisaurus-novasi-teal-copper-pattern-imagegen-v1.png": {
+      "reason": "The former pattern repeats the same warm broadside lighting and old generic anatomy instead of maintaining the rebuilt mineral-teal individual across a genuinely different camera and weather condition."
     }
   }
 }

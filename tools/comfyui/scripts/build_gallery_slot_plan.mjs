@@ -90,6 +90,13 @@ const HABITATS = {
     light: "neutral overcast or post-rain daylight with cool water reflection and restrained warm soil bounce",
     backgroundPalette: ["#75554f", "#384a57", "#66917b"],
   },
+  "ischigualasto-cancha-de-bochas-floodplain": {
+    substrate: "variegated reddish-brown, greenish-gray, and mottled gray overbank mudstone, calcic paleosol nodules, levee and crevasse-splay silt, and rare high-sinuosity river-channel sand",
+    vegetation: "low herbaceous root-halo vegetation, sparse horsetails, and restrained low woody or seed-fern reconstructions with no modern grass, flowers, palms, or dense rainforest",
+    moisture: "dry seasonal floodplain with stable meandering to anastomosing channels, episodic overbank flow, and locally wet post-rain surfaces",
+    light: "neutral daylight, cool post-rain reflection, or restrained storm-front light without a global orange cast",
+    backgroundPalette: ["#76584f", "#66746c", "#355c61"],
+  },
   "los-colorados-seasonal-fluvial-floodplain": {
     substrate: "oxidized red sandstone and siltstone, moderately sinuous sand channels, broad overbank floodplain, shallow ponds, crevasse splays, pebbly bars, and scattered driftwood",
     vegetation: "important but patchy cover of araucarioid conifers, seed ferns, true ferns, horsetails, and low cycad-like plants with no modern grass or flowers",
@@ -442,6 +449,7 @@ function habitatFor(dino, route) {
   else if (dino.id === "suchomimus-tenerensis") key = "elrhaz-river-system";
   else if (dino.id === "psittacosaurus-mongoliensis") key = "khulsangol-alluvial-sheetflood";
   else if (dino.id === "liliensternus-liliensterni") key = "knollenmergel-vertisol-sheetflood";
+  else if (dino.id === "chromogisaurus-novasi") key = "ischigualasto-cancha-de-bochas-floodplain";
   else if (dino.id === "lessemsaurus-sauropoides") key = "los-colorados-seasonal-fluvial-floodplain";
   else if (["gallimimus-bullatus", "therizinosaurus-cheloniformis", "mononykus-olecranus"].includes(dino.id)) key = "nemegt-fluvial-floodplain";
   else if (dino.id === "velociraptor-mongoliensis") key = "gobi-arid";
