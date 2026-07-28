@@ -2715,27 +2715,51 @@ window.gallerySlotAssignments = {
   ],
   "mononykus-olecranus": [
     {
-      "source": "assets/dinosaurs/mononykus-olecranus-single-claw-feathered-imagegen-v1.png",
+      "source": "assets/dinosaurs/mononykus-olecranus-bilateral-monodigit-representative-imagegen-v3.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "nemegt-fluvial-floodplain",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/mononykus-olecranus-rust-teal-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/mononykus-olecranus-rust-petrol-reverse-pattern-imagegen-v3.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "nemegt-fluvial-floodplain",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/mononykus-olecranus-nemegt-forage-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/mononykus-olecranus-bugin-pointbar-driftwood-ecology-imagegen-v3.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "nemegt-fluvial-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/mononykus-olecranus-paired-monodigit-forelimb-anatomy-imagegen-v3.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "nemegt-fluvial-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/mononykus-olecranus-saurolophus-channel-separated-ecology-imagegen-v3.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "nemegt-fluvial-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/mononykus-olecranus-rainsquall-alert-ecology-imagegen-v3.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "nemegt-fluvial-floodplain",
       "expectedKind": "anatomy review"
     }
   ],

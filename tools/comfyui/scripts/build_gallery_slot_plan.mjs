@@ -377,7 +377,7 @@ function habitatFor(dino, route) {
   let key = "conifer-fern-floodplain";
   if (dino.id === "spinosaurus-aegyptiacus") key = "kem-kem-river-delta";
   else if (dino.id === "suchomimus-tenerensis") key = "elrhaz-river-system";
-  else if (["gallimimus-bullatus", "therizinosaurus-cheloniformis"].includes(dino.id)) key = "nemegt-fluvial-floodplain";
+  else if (["gallimimus-bullatus", "therizinosaurus-cheloniformis", "mononykus-olecranus"].includes(dino.id)) key = "nemegt-fluvial-floodplain";
   else if (dino.id === "velociraptor-mongoliensis") key = "gobi-arid";
   else if (dino.id === "parasaurolophus-walkeri") key = "dinosaur-park-coastal-plain";
   else if (dino.id === "styracosaurus-albertensis") key = "dinosaur-park-meander-belt";

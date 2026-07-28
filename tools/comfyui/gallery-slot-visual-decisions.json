@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-28T01:42:58.950Z",
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-33",
-  "reviewMethod": "Holmes et al. 2020 adult parietal-ornament variation gate; Brown et al. 2020 adult-subadult nasal-horn, postorbital-horncore, and p3-p5 ontogeny gate; Holmes and Ryan 2013 postcranial reference; Senter and Mackey 2023 tucked-elbow and non-pronated forearm gate; Mallon et al. 2012 upper Dinosaur Park assemblage context; Mayo et al. 2023 fluvial meander-belt habitat; original-size inspection of all four legacy files, two superseded representative attempts, and six selected files; targeted correction and reinspection of the distant Prosaurolophus crest; colors, soft tissue, low browsing, same-frame coexistence, and growth-stage coexistence remain reconstruction hypotheses",
-  "targetSlots": 557,
+  "generatedAt": "2026-07-28T02:40:26.296Z",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-34",
+  "reviewMethod": "Perle et al. 1994 holotype anatomy and preservation boundary; Senter 2005 and 2023 forelimb orientation and function caution; Leedham et al. 2026 digging-function feasibility; Schweitzer et al. 1999 close-relative filament evidence with Saitta et al. 2018 protein-interpretation caution; Fanti et al. 2024 Nemegt fluvial habitat; original-size inspection of all four legacy files, three superseded attempts, and six selected files; each selected primary animal was checked for one head, two short forelimbs, one functional claw per hand, two hind limbs, readable principal toes, and one pelvis-origin tail; skull, complete tail, filamentous covering, exact behavior, color, and same-frame coexistence remain reconstruction hypotheses",
+  "targetSlots": 560,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -3042,30 +3042,57 @@
     "mononykus-olecranus": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/mononykus-olecranus-single-claw-feathered-imagegen-v1.png",
+        "source": "assets/dinosaurs/mononykus-olecranus-bilateral-monodigit-representative-imagegen-v3.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Original-size inspection passed two extremely short robust forelimbs, one large functional claw on each readable hand, two hind limbs, three principal forward toes on each readable foot, and one continuous pelvis-origin tail. The closed head, complete tail, and filamentous covering remain conservative close-relative reconstruction rather than direct complete Mononykus preservation.",
+        "reviewMethod": "Perle et al. 1994 anatomy gate plus original-size full-frame, both-forelimb, both-hand, both-foot, and tail inspection",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-34",
+        "reviewedAt": "2026-07-28T02:40:26.296Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/mononykus-olecranus-rust-teal-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/mononykus-olecranus-rust-petrol-reverse-pattern-imagegen-v3.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Passed a distinct reverse-facing cool-dawn composition with oxidized-rust, petrol, charcoal, and ivory pattern separation while preserving two short forelimbs, one large claw per hand, two hind limbs, readable principal toes, and one continuous tail. Backlight and pattern keep it below the representative in the app.",
+        "reviewMethod": "Original-size full-frame and isolated appendage inspection against the batch-34 Mononykus identity gate",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-34",
+        "reviewedAt": "2026-07-28T02:40:26.296Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/mononykus-olecranus-nemegt-forage-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/mononykus-olecranus-bugin-pointbar-driftwood-ecology-imagegen-v3.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Passed high-oblique full-body and appendage-count review in a Bügiin Tsav point-bar and driftwood setting. No termites or feeding are shown; driftwood investigation and forelimb use remain explicitly hypothetical.",
+        "reviewMethod": "Perle et al. 1994 anatomy plus Fanti et al. 2024 habitat gate and original-size inspection",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-34",
+        "reviewedAt": "2026-07-28T02:40:26.296Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/mononykus-olecranus-paired-monodigit-forelimb-anatomy-imagegen-v3.png",
+        "role": "identity-anatomy",
+        "reason": "The front-three-quarter structure view clearly separates exactly two short robust forelimbs and one large functional claw on each hand while retaining two hind limbs, readable feet, and one tail. Soft-tissue shape remains reconstruction, not a literal myological diagram.",
+        "reviewMethod": "Perle et al. 1994 appendage anatomy plus Senter 2005 and 2023 posture gate with original-size both-hand inspection",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-34",
+        "reviewedAt": "2026-07-28T02:40:26.296Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/mononykus-olecranus-saurolophus-channel-separated-ecology-imagegen-v3.png",
+        "role": "interaction",
+        "reason": "Passed complete primary-animal count review and separates one distant Saurolophus across a broad channel, avoiding physical contact or a claimed encounter. The primary far foot is foreshortened and the background animal is not diagnostic, so the app keeps this at anatomy review.",
+        "reviewMethod": "Fanti et al. 2024 Nemegt assemblage and habitat context plus original-size primary and secondary animal inspection",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-34",
+        "reviewedAt": "2026-07-28T02:40:26.296Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/mononykus-olecranus-rainsquall-alert-ecology-imagegen-v3.png",
+        "role": "social-growth-defense",
+        "reason": "Passed a static broadside rain-squall composition with both feet planted, two short forelimbs, one large claw per hand, and one complete tail. Alert posture and weather response remain reconstruction and do not imply a predator or social event.",
+        "reviewMethod": "Batch-34 anatomy, count, composition, and artifact gate with original-size both-foot and both-hand inspection",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-34",
+        "reviewedAt": "2026-07-28T02:40:26.296Z"
       }
     },
     "avimimus-portentosus": {
@@ -5918,6 +5945,18 @@
     },
     "assets/dinosaurs/hesperosaurus-mjosi-slate-rust-pattern-imagegen-v1.png": {
       "reason": "The former pattern variant shows only three readable tail spikes and repeats the same broadside brown-green body instead of a reliable distinct color role."
+    },
+    "assets/dinosaurs/mononykus-olecranus-single-claw-feathered-imagegen-v1.png": {
+      "reason": "The former representative does not reliably expose both extremely short forelimbs and one functional claw on each hand, while its generic birdlike head and ostrichlike body weaken Mononykus identity."
+    },
+    "assets/dinosaurs/mononykus-olecranus-rust-teal-pattern-imagegen-v1.png": {
+      "reason": "The former pattern image repeats an ambiguous one-sided or overlapping forelimb arrangement and a generic feathered bird body, so bilateral monodactyl anatomy cannot be approved."
+    },
+    "assets/dinosaurs/mononykus-olecranus-nemegt-forage-ecology-imagegen-v1.png": {
+      "reason": "The former ecology frame contains malformed Saurolophus- and Therizinosaurus-like background animals, obscures or elongates the primary forelimbs, and overstates a specific feeding scene."
+    },
+    "assets/dinosaurs/mononykus-olecranus-nemegt-termite-mound-forage-imagegen-v2.png": {
+      "reason": "The former termite-mound frame shows only one reliably readable arm and claw, drifts toward a lizardlike head, and treats unsupported termite specialization as a concrete behavior."
     },
     "assets/dinosaurs/nasutoceratops-titusi-bullhorn-nasal-region-imagegen-v1.png": {
       "reason": "The former representative is a repetitive brown broadside with a tall generic frill and weak separation between the oversized narial region, short nasal horn, twisted brow-horn geometry, and documented fine shoulder tubercles; it is superseded by the stricter six-role rebuild."

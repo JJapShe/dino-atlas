@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-33",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-34",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -682,6 +682,18 @@
     },
     "assets/dinosaurs/hesperosaurus-mjosi-slate-rust-pattern-imagegen-v1.png": {
       "reason": "The former pattern variant shows only three readable tail spikes and repeats the same broadside brown-green body instead of a reliable distinct color role."
+    },
+    "assets/dinosaurs/mononykus-olecranus-single-claw-feathered-imagegen-v1.png": {
+      "reason": "The former representative does not reliably expose both extremely short forelimbs and one functional claw on each hand, while its generic birdlike head and ostrichlike body weaken Mononykus identity."
+    },
+    "assets/dinosaurs/mononykus-olecranus-rust-teal-pattern-imagegen-v1.png": {
+      "reason": "The former pattern image repeats an ambiguous one-sided or overlapping forelimb arrangement and a generic feathered bird body, so bilateral monodactyl anatomy cannot be approved."
+    },
+    "assets/dinosaurs/mononykus-olecranus-nemegt-forage-ecology-imagegen-v1.png": {
+      "reason": "The former ecology frame contains malformed Saurolophus- and Therizinosaurus-like background animals, obscures or elongates the primary forelimbs, and overstates a specific feeding scene."
+    },
+    "assets/dinosaurs/mononykus-olecranus-nemegt-termite-mound-forage-imagegen-v2.png": {
+      "reason": "The former termite-mound frame shows only one reliably readable arm and claw, drifts toward a lizardlike head, and treats unsupported termite specialization as a concrete behavior."
     },
     "assets/dinosaurs/nasutoceratops-titusi-bullhorn-nasal-region-imagegen-v1.png": {
       "reason": "The former representative is a repetitive brown broadside with a tall generic frill and weak separation between the oversized narial region, short nasal horn, twisted brow-horn geometry, and documented fine shoulder tubercles; it is superseded by the stricter six-role rebuild."
