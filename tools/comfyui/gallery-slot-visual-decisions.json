@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-28T02:40:26.296Z",
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-34",
-  "reviewMethod": "Perle et al. 1994 holotype anatomy and preservation boundary; Senter 2005 and 2023 forelimb orientation and function caution; Leedham et al. 2026 digging-function feasibility; Schweitzer et al. 1999 close-relative filament evidence with Saitta et al. 2018 protein-interpretation caution; Fanti et al. 2024 Nemegt fluvial habitat; original-size inspection of all four legacy files, three superseded attempts, and six selected files; each selected primary animal was checked for one head, two short forelimbs, one functional claw per hand, two hind limbs, readable principal toes, and one pelvis-origin tail; skull, complete tail, filamentous covering, exact behavior, color, and same-frame coexistence remain reconstruction hypotheses",
-  "targetSlots": 560,
+  "generatedAt": "2026-07-28T03:15:36.697Z",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-35",
+  "reviewMethod": "Sachs 2005 holotype redescription and missing-element boundary; Sachs et al. 2013 maximum 72-cervical count; Zammit et al. 2008 straight-swimming and non-swan-neck flexibility gate; Muscutt et al. 2017 four-flipper propulsion context; Carpenter 1996 Sharon Springs black-shale environment; Hargrave 2007 Pteranodon occurrence in the lower Pierre Shale; original-size inspection of all four existing files and both new files; every selected individual was checked for one head, one continuous extremely long neck, exactly two foreflippers and two hindflippers, one compact torso, and one short unbranched tail; skin color, markings, feeding approach, turning, near-surface split-water moment, and same-frame fauna remain reconstruction hypotheses",
+  "targetSlots": 563,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -2015,30 +2015,57 @@
     "elasmosaurus-platyurus": {
       "1": {
         "status": "approved",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-35",
+        "reviewedAt": "2026-07-28T03:15:36.697Z",
         "source": "assets/dinosaurs/elasmosaurus-platyurus-western-seaway-longneck-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Original-size inspection passed one small head, one continuous neck longer than the compact torso, exactly two foreflippers and two hindflippers, and one short unbranched tail with no dorsal or caudal fin. The incompletely known skull, limbs, and soft-tissue outline remain conservative comparative reconstruction.",
+        "reviewMethod": "Sachs 2005 and Sachs et al. 2013 evidence boundary plus full-frame, four-flipper, neck, and tail inspection"
       },
       "2": {
         "status": "approved",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-35",
+        "reviewedAt": "2026-07-28T03:15:36.697Z",
         "source": "assets/dinosaurs/elasmosaurus-platyurus-blackberry-mint-rosette-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Passed a deliberately distinct blackberry, mint, cream, and small coral facial accent while retaining the complete long-necked body, exactly four separately attached flippers, and one short tail. Color and rosettes remain unsupported soft-tissue hypotheses, so the app keeps this below the representative.",
+        "reviewMethod": "Batch-35 anatomy and count gate plus original-size palette and artifact inspection"
       },
       "3": {
         "status": "approved",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-35",
+        "reviewedAt": "2026-07-28T03:15:36.697Z",
         "source": "assets/dinosaurs/elasmosaurus-platyurus-seaway-neck-reach-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Passed a near-horizontal low-neck approach with exactly four countable flippers and a complete short tail. The feeding approach and seabed arrangement remain behavior and environment reconstruction rather than direct evidence.",
+        "reviewMethod": "Zammit et al. 2008 neck-posture gate plus original-size appendage and crop inspection"
+      },
+      "4": {
+        "status": "approved",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-35",
+        "reviewedAt": "2026-07-28T03:15:36.697Z",
+        "source": "assets/dinosaurs/elasmosaurus-platyurus-western-interior-overhead-ecology-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "The overhead view provides the clearest independent count of exactly two foreflippers and two hindflippers, with one continuous extreme neck, one compact torso, and one short tail all unobscured. Stroke phase is not treated as observed behavior.",
+        "reviewMethod": "Sachs et al. 2013 neck-count context and Muscutt et al. 2017 four-flipper comparison plus original-size top-view inspection"
+      },
+      "5": {
+        "status": "approved",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-35",
+        "reviewedAt": "2026-07-28T03:15:36.697Z",
+        "source": "assets/dinosaurs/elasmosaurus-platyurus-near-surface-pteranodon-ecology-imagegen-v3.png",
+        "role": "interaction",
+        "reason": "Passed a full near-surface split-water Elasmosaurus with exactly four countable flippers and complete head-to-tail framing. The snout remains below the air-water interface, so the atlas does not label this as observed breathing. Two tiny airborne silhouettes are spatially separated; Hargrave 2007 supports Pteranodon in the lower Pierre Shale, but the exact same-frame occurrence and silhouette-level identity remain reconstruction.",
+        "reviewMethod": "Hargrave 2007 formation-level fauna gate plus original-size primary-animal and secondary-silhouette inspection"
+      },
+      "6": {
+        "status": "approved",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-35",
+        "reviewedAt": "2026-07-28T03:15:36.697Z",
+        "source": "assets/dinosaurs/elasmosaurus-platyurus-sharon-springs-fish-turn-ecology-imagegen-v3.png",
+        "role": "social-growth-defense",
+        "reason": "Passed a low-oblique dark-seafloor maneuver with one complete head, extreme neck, exactly four separately readable flippers, compact body, and one short tail. The fish-school approach is a restrained behavior hypothesis and does not assert group hunting or defense.",
+        "reviewMethod": "Carpenter 1996 habitat gate plus original-size full-frame, four-flipper, neck, tail, and artifact inspection"
       }
     },
     "kronosaurus-queenslandicus": {

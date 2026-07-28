@@ -104,6 +104,13 @@ const HABITATS = {
     light: "soft neutral daylight with restrained water reflection and no global desert-orange cast",
     backgroundPalette: ["#a58c69", "#607b74", "#4f604f"],
   },
+  "sharon-springs-seaway": {
+    substrate: "dark organic-rich black shale, suspended fine sediment, and sparse inoceramid or ammonite shell debris",
+    vegetation: "no tropical coral reef; only sparse period-appropriate marine growth when justified",
+    moisture: "fully aquatic open Western Interior Seaway with oxygen-poor bottom water",
+    light: "cool filtered underwater daylight with localized warm surface light and readable slate-blue body color",
+    backgroundPalette: ["#243f4d", "#4f7478", "#34363d"],
+  },
   "dinosaur-park-coastal-plain": {
     substrate: "dark wet silt, broad point bars, low-gradient meandering channels, and abandoned channel margins",
     vegetation: "horsetails, ferns, low broad-leaved angiosperm shrubs, and scattered conifers",
