@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-27T23:23:20.785Z",
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-30",
-  "reviewMethod": "Carpenter et al. 2001 holotype armor gate, Christiansen & Tschopp 2010 integument gate, Hayashi et al. 2012 osteoderm histology, and Maidment et al. 2018 skull and size review; original-size inspection of all ten legacy files, one superseded new integument file, and six selected files; a six-role contact sheet plus isolated head, limb, plate, skin, tail-spike, and secondary-animal crops; strict four-leg, one-tail, and exactly-four-attached-tail-spike review for every complete primary Hesperosaurus; exact plate-row soft tissue, full-body rosette distribution, color, low browsing, coexistence, rain response, gait, and resting spike angle remain reconstruction hypotheses",
-  "targetSlots": 548,
+  "generatedAt": "2026-07-27T23:56:25.063Z",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-31",
+  "reviewMethod": "Lund et al. 2016 craniofacial, frill, postcranial, and integument gate; Sampson et al. 2013 original description; Gates and Sampson 2007 middle-unit Gryposaurus context; Ramezani et al. 2022 warm-subhumid alluvial setting; original-size inspection of all three legacy files and six selected files; a six-role contact sheet plus isolated head, horn, frill, limb, tail, skin, and secondary-animal crops; strict one-head, exactly-two-brow-horn, one-short-nasal-horn, four-leg, and one-tail review for every complete primary Nasutoceratops; color, horn sheath, frill soft tissue, low browsing, same-frame coexistence, channel crossing, and gait remain reconstruction hypotheses",
+  "targetSlots": 551,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -3993,30 +3993,57 @@
     "nasutoceratops-titusi": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/nasutoceratops-titusi-bullhorn-nasal-region-imagegen-v1.png",
+        "source": "assets/dinosaurs/nasutoceratops-titusi-hugenaris-twisted-browhorn-representative-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Original-size full-frame review confirms one short deep face with an oversized narial region, one short nasal horn, exactly two complete forward-curving twisted brow horns, one short scalloped skin-covered frill, two forelimbs, two hind limbs, and one continuous tail.",
+        "reviewMethod": "Lund et al. 2016 craniofacial, frill, postcranial, and integument gate; Sampson et al. 2013 original description; Gates and Sampson 2007 middle-unit Gryposaurus context; Ramezani et al. 2022 warm-subhumid alluvial setting; original-size inspection of all three legacy files and six selected files; a six-role contact sheet plus isolated head, horn, frill, limb, tail, skin, and secondary-animal crops; strict one-head, exactly-two-brow-horn, one-short-nasal-horn, four-leg, and one-tail review for every complete primary Nasutoceratops; color, horn sheath, frill soft tissue, low browsing, same-frame coexistence, channel crossing, and gait remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-31",
+        "reviewedAt": "2026-07-27T23:56:25.063Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/nasutoceratops-titusi-slate-teal-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/nasutoceratops-titusi-slate-teal-rust-reverse-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing post-rain walk preserves the representative horn, nose, frill, limb, and tail gates while adding a cooler slate, moss, rust, cream, and restrained teal treatment; color and gait remain hypothetical.",
+        "reviewMethod": "Lund et al. 2016 craniofacial, frill, postcranial, and integument gate; Sampson et al. 2013 original description; Gates and Sampson 2007 middle-unit Gryposaurus context; Ramezani et al. 2022 warm-subhumid alluvial setting; original-size inspection of all three legacy files and six selected files; a six-role contact sheet plus isolated head, horn, frill, limb, tail, skin, and secondary-animal crops; strict one-head, exactly-two-brow-horn, one-short-nasal-horn, four-leg, and one-tail review for every complete primary Nasutoceratops; color, horn sheath, frill soft tissue, low browsing, same-frame coexistence, channel crossing, and gait remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-31",
+        "reviewedAt": "2026-07-27T23:56:25.063Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/nasutoceratops-titusi-kaiparowits-herd-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/nasutoceratops-titusi-floodbasin-low-browse-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The high-oblique view places one intact primary animal in a warm-subhumid river, pond, and flood-basin mosaic; four legs are present without duplication, although one far forefoot is partly screened by vegetation and browsing remains a reconstruction hypothesis.",
+        "reviewMethod": "Lund et al. 2016 craniofacial, frill, postcranial, and integument gate; Sampson et al. 2013 original description; Gates and Sampson 2007 middle-unit Gryposaurus context; Ramezani et al. 2022 warm-subhumid alluvial setting; original-size inspection of all three legacy files and six selected files; a six-role contact sheet plus isolated head, horn, frill, limb, tail, skin, and secondary-animal crops; strict one-head, exactly-two-brow-horn, one-short-nasal-horn, four-leg, and one-tail review for every complete primary Nasutoceratops; color, horn sheath, frill soft tissue, low browsing, same-frame coexistence, channel crossing, and gait remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-31",
+        "reviewedAt": "2026-07-27T23:56:25.063Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/nasutoceratops-titusi-hugenaris-twisted-horn-shortfrill-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The close three-quarter view keeps both complete horn shafts and bases, one short nasal horn, the oversized narial region, vaulted forehead, full short scalloped frill, and small shoulder tubercles readable without open-air frill holes or armor-scale overstatement.",
+        "reviewMethod": "Lund et al. 2016 craniofacial, frill, postcranial, and integument gate; Sampson et al. 2013 original description; Gates and Sampson 2007 middle-unit Gryposaurus context; Ramezani et al. 2022 warm-subhumid alluvial setting; original-size inspection of all three legacy files and six selected files; a six-role contact sheet plus isolated head, horn, frill, limb, tail, skin, and secondary-animal crops; strict one-head, exactly-two-brow-horn, one-short-nasal-horn, four-leg, and one-tail review for every complete primary Nasutoceratops; color, horn sheath, frill soft tissue, low browsing, same-frame coexistence, channel crossing, and gait remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-31",
+        "reviewedAt": "2026-07-27T23:56:25.063Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/nasutoceratops-titusi-gryposaurus-channel-separated-fauna-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "The complete foreground Nasutoceratops retains four legs, one tail, and its cranial identity while a broad river separates one distant Gryposaurus; the scene is explicitly formation-level fauna context rather than a documented encounter.",
+        "reviewMethod": "Lund et al. 2016 craniofacial, frill, postcranial, and integument gate; Sampson et al. 2013 original description; Gates and Sampson 2007 middle-unit Gryposaurus context; Ramezani et al. 2022 warm-subhumid alluvial setting; original-size inspection of all three legacy files and six selected files; a six-role contact sheet plus isolated head, horn, frill, limb, tail, skin, and secondary-animal crops; strict one-head, exactly-two-brow-horn, one-short-nasal-horn, four-leg, and one-tail review for every complete primary Nasutoceratops; color, horn sheath, frill soft tissue, low browsing, same-frame coexistence, channel crossing, and gait remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-31",
+        "reviewedAt": "2026-07-27T23:56:25.063Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/nasutoceratops-titusi-postrain-channel-crossing-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The post-rain crossing resolves one lifted forefoot and three separately planted feet, two complete brow horns, one short nasal horn, and one full tail; channel crossing, gait, and weather response remain reconstruction hypotheses.",
+        "reviewMethod": "Lund et al. 2016 craniofacial, frill, postcranial, and integument gate; Sampson et al. 2013 original description; Gates and Sampson 2007 middle-unit Gryposaurus context; Ramezani et al. 2022 warm-subhumid alluvial setting; original-size inspection of all three legacy files and six selected files; a six-role contact sheet plus isolated head, horn, frill, limb, tail, skin, and secondary-animal crops; strict one-head, exactly-two-brow-horn, one-short-nasal-horn, four-leg, and one-tail review for every complete primary Nasutoceratops; color, horn sheath, frill soft tissue, low browsing, same-frame coexistence, channel crossing, and gait remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-31",
+        "reviewedAt": "2026-07-27T23:56:25.063Z"
       }
     },
     "utahceratops-gettyi": {
@@ -5837,6 +5864,15 @@
     },
     "assets/dinosaurs/hesperosaurus-mjosi-slate-rust-pattern-imagegen-v1.png": {
       "reason": "The former pattern variant shows only three readable tail spikes and repeats the same broadside brown-green body instead of a reliable distinct color role."
+    },
+    "assets/dinosaurs/nasutoceratops-titusi-bullhorn-nasal-region-imagegen-v1.png": {
+      "reason": "The former representative is a repetitive brown broadside with a tall generic frill and weak separation between the oversized narial region, short nasal horn, twisted brow-horn geometry, and documented fine shoulder tubercles; it is superseded by the stricter six-role rebuild."
+    },
+    "assets/dinosaurs/nasutoceratops-titusi-kaiparowits-herd-ecology-imagegen-v1.png": {
+      "reason": "The former herd frame repeats three near-identical brown broadside animals, makes background limb and horn counts unreliable, and overstates unsupported herd behavior."
+    },
+    "assets/dinosaurs/nasutoceratops-titusi-slate-teal-pattern-imagegen-v1.png": {
+      "reason": "The former pattern image repeats the same left-facing broadside, camera height, floodplain background, and body treatment as the old representative, so it fails the required composition and role-diversity gate."
     }
   }
 }

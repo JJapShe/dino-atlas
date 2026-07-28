@@ -3567,7 +3567,7 @@ window.gallerySlotAssignments = {
   ],
   "nasutoceratops-titusi": [
     {
-      "source": "assets/dinosaurs/nasutoceratops-titusi-bullhorn-nasal-region-imagegen-v1.png",
+      "source": "assets/dinosaurs/nasutoceratops-titusi-hugenaris-twisted-browhorn-representative-imagegen-v1.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
@@ -3575,7 +3575,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/nasutoceratops-titusi-slate-teal-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/nasutoceratops-titusi-slate-teal-rust-reverse-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -3583,9 +3583,33 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/nasutoceratops-titusi-kaiparowits-herd-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/nasutoceratops-titusi-floodbasin-low-browse-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/nasutoceratops-titusi-hugenaris-twisted-horn-shortfrill-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/nasutoceratops-titusi-gryposaurus-channel-separated-fauna-ecology-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/nasutoceratops-titusi-postrain-channel-crossing-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
