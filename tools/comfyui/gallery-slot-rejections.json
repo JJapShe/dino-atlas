@@ -1,9 +1,45 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-29-richness-six-slot-batch-46",
+  "reviewBatch": "2026-07-29-richness-six-slot-batch-47",
   "rejectedSources": {
+    "assets/dinosaurs/ceratosaurus-nasicornis-camptosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct named-species attack and body overlap prevent independent limb, hand, tail and prey-anatomy review and overstate a specific behavioral event."
+    },
+    "assets/dinosaurs/ceratosaurus-nasicornis-camptosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The named carcass-feeding scene prioritizes gore and speculative trophic contact over readable Ceratosaurus horn, hand, foot and dermal-ossicle anatomy."
+    },
+    "assets/dinosaurs/ceratosaurus-nasicornis-dryosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Merged predator-prey contact, motion and an unstable secondary animal make appendage counts unreliable and assert an unsupported species-level attack."
+    },
+    "assets/dinosaurs/ceratosaurus-nasicornis-dryosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The speculative named carcass and feeding pose obscure the primary hands and feet and do not add a stable identity or habitat role."
+    },
+    "assets/dinosaurs/ceratosaurus-nasicornis-dryosaurus-chase-ecology-imagegen-v1.png": {
+      "reason": "Repeated chase staging and motion obscure hands and feet, while the secondary runner and direct predator-prey event are not stable enough for the reviewed gallery."
+    },
+    "assets/dinosaurs/ceratosaurus-nasicornis-hesperosaurus-arroyo-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Named armored-dinosaur carcass feeding is behaviorally overconfident and the crowded anatomy does not preserve independently readable hands, feet, plates and tail-spike structure."
+    },
+    "assets/dinosaurs/ceratosaurus-nasicornis-hesperosaurus-tailspike-standoff-ecology-imagegen-v1.png": {
+      "reason": "The direct standoff overstates a named-species encounter and the close overlap prevents stable review of Ceratosaurus hands and the stegosaur tail-spike bases."
+    },
+    "assets/dinosaurs/ceratosaurus-nasicornis-low-nasal-horn-imagegen-v1.png": {
+      "reason": "The former representative uses a rhinoceros-like conical horn, a generic bulky allosauroid body, weak four-ray hands and a regular decorative dorsal bead row instead of conservative Ceratosaurus cues."
+    },
+    "assets/dinosaurs/ceratosaurus-nasicornis-moonlit-oxbow-aubergine-chartreuse-ecology-imagegen-v1.png": {
+      "reason": "Dark moonlight, chartreuse color drift and obscured appendages prevent original-size verification of the horn, hands, feet and tail."
+    },
+    "assets/dinosaurs/ceratosaurus-nasicornis-morrison-ecology-imagegen-v1.png": {
+      "reason": "The crowded mixed-fauna frame repeats a generic Morrison montage, obscures appendage counts and does not provide a species-specific Felch point-bar or anatomy role."
+    },
+    "assets/dinosaurs/ceratosaurus-nasicornis-plum-ocelli-chevron-pattern-imagegen-v1.png": {
+      "reason": "Giant fantasy ocelli, strong chevrons and zebra-like tail bars overwhelm the species identity, while the body and hand anatomy remain bulky and ambiguous."
+    },
+    "assets/dinosaurs/ceratosaurus-nasicornis-redface-pattern-imagegen-v1.png": {
+      "reason": "Although the face color is usable as a palette idea, the old broadside repeats generic anatomy and does not clear the revised nasal-blade, four-ray-hand and irregular-ossicle gate."
+    },
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
-      "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
+      "reason": "Heavy zebra striping, dark waterline lighting and weak appendage separation break the restrained palette and original-size anatomy gates."
     },
     "assets/dinosaurs/dilophosaurus-wetherilli-frilled-popular-variant-imagegen-v1.png": {
       "reason": "Fictional neck frill fails the scientific identity gate."

@@ -989,27 +989,51 @@ window.gallerySlotAssignments = {
   ],
   "ceratosaurus-nasicornis": [
     {
-      "source": "assets/dinosaurs/ceratosaurus-nasicornis-low-nasal-horn-imagegen-v1.png",
+      "source": "assets/dinosaurs/ceratosaurus-nasicornis-plum-pointbar-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "garden-park-felch-point-bar",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/ceratosaurus-nasicornis-plum-ocelli-chevron-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/ceratosaurus-nasicornis-indigo-bluehour-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "garden-park-felch-point-bar",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/ceratosaurus-nasicornis-morrison-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/ceratosaurus-nasicornis-gardenpark-pointbar-habitat-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "garden-park-felch-point-bar",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/ceratosaurus-nasicornis-four-digit-hand-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "garden-park-felch-point-bar",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/ceratosaurus-nasicornis-stegosaurus-channel-context-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "garden-park-felch-point-bar",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/ceratosaurus-nasicornis-horsetail-dawn-drinking-behavior-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "garden-park-felch-point-bar",
       "expectedKind": "anatomy review"
     }
   ],

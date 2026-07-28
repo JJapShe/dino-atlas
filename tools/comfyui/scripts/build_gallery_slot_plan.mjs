@@ -69,6 +69,13 @@ const HABITATS = {
     light: "soft neutral daylight with dappled canopy light",
     backgroundPalette: ["#344d3d", "#6f7550", "#6c5b49"],
   },
+  "garden-park-felch-point-bar": {
+    substrate: "pale coarse arkosic channel sand and gravel, a broad lenticular point bar, adjacent red-brown and greenish-gray overbank mud, shallow scour surfaces, and scattered driftwood",
+    vegetation: "open conifers, cycads, ferns, horsetails, and restrained low non-grass ground cover with no flowers or modern grass",
+    moisture: "seasonally active moderate-sinuosity stream and shifting point-bar system with damp post-rain sand, shallow channels, and drier floodplain patches",
+    light: "neutral daylight, cool blue-hour cloud light, or restrained dawn reflection without a global orange cast",
+    backgroundPalette: ["#a18f72", "#66705e", "#3a2f3d"],
+  },
   "wessex-seasonal-floodplain": {
     substrate: "muted red and purple oxidized floodplain mud, pale channel gravel, shallow abandoned channels, oxbows, and local sheetflood plant debris",
     vegetation: "scattered conifers, cycads, ferns, horsetails, and low non-grass scrub",
@@ -451,6 +458,7 @@ function habitatFor(dino, route) {
   else if (dino.id === "liliensternus-liliensterni") key = "knollenmergel-vertisol-sheetflood";
   else if (dino.id === "chromogisaurus-novasi") key = "ischigualasto-cancha-de-bochas-floodplain";
   else if (dino.id === "lessemsaurus-sauropoides") key = "los-colorados-seasonal-fluvial-floodplain";
+  else if (dino.id === "ceratosaurus-nasicornis") key = "garden-park-felch-point-bar";
   else if (["gallimimus-bullatus", "therizinosaurus-cheloniformis", "mononykus-olecranus"].includes(dino.id)) key = "nemegt-fluvial-floodplain";
   else if (dino.id === "velociraptor-mongoliensis") key = "gobi-arid";
   else if (dino.id === "parasaurolophus-walkeri") key = "dinosaur-park-coastal-plain";
