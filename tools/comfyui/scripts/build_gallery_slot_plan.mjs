@@ -90,6 +90,13 @@ const HABITATS = {
     light: "neutral overcast or post-rain daylight with cool water reflection and restrained warm soil bounce",
     backgroundPalette: ["#75554f", "#384a57", "#66917b"],
   },
+  "los-colorados-seasonal-fluvial-floodplain": {
+    substrate: "oxidized red sandstone and siltstone, moderately sinuous sand channels, broad overbank floodplain, shallow ponds, crevasse splays, pebbly bars, and scattered driftwood",
+    vegetation: "important but patchy cover of araucarioid conifers, seed ferns, true ferns, horsetails, and low cycad-like plants with no modern grass or flowers",
+    moisture: "seasonally humid to subhumid fluvial plain with episodic high precipitation, receding floods, and locally damp overbank surfaces",
+    light: "neutral broken-cloud or post-rain daylight with cool shallow-water reflection and restrained red-soil bounce",
+    backgroundPalette: ["#7d4f46", "#517375", "#53624d"],
+  },
   "morrison-seasonal-alluvial-plain": {
     substrate: "pale sand and gravel bars, red-gray overbank mud, shallow or abandoned channels, and scattered driftwood",
     vegetation: "scattered araucarian conifers, cycads, ferns, horsetails, and low non-grass ground cover",
@@ -428,6 +435,7 @@ function habitatFor(dino, route) {
   else if (dino.id === "suchomimus-tenerensis") key = "elrhaz-river-system";
   else if (dino.id === "psittacosaurus-mongoliensis") key = "khulsangol-alluvial-sheetflood";
   else if (dino.id === "liliensternus-liliensterni") key = "knollenmergel-vertisol-sheetflood";
+  else if (dino.id === "lessemsaurus-sauropoides") key = "los-colorados-seasonal-fluvial-floodplain";
   else if (["gallimimus-bullatus", "therizinosaurus-cheloniformis", "mononykus-olecranus"].includes(dino.id)) key = "nemegt-fluvial-floodplain";
   else if (dino.id === "velociraptor-mongoliensis") key = "gobi-arid";
   else if (dino.id === "parasaurolophus-walkeri") key = "dinosaur-park-coastal-plain";

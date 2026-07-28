@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-43",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-44",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -955,7 +955,37 @@
     },
     "assets/dinosaurs/liliensternus-liliensterni-trackway-ecology-imagegen-v1.png": {
       "reason": "The former trackway broadside uses a generic dry conifer backdrop, repeated brown palette, weak skull identity, and no independent hand or foot proof."
+    },
+    "assets/dinosaurs/lessemsaurus-sauropoides-bluegray-copper-pattern-imagegen-v1.png": {
+      "reason": "The former blue-gray and copper variant repeats a flat broadside, generic long-necked body, and nearly columnar feet without the new skull, manus, gait, and multi-individual caveats."
+    },
+    "assets/dinosaurs/lessemsaurus-sauropoides-charcoal-sulfur-gypsum-pattern-imagegen-v1.png": {
+      "reason": "The charcoal-sulfur gypsum broadside remains anatomically generic, repeats the same dry red staging, and does not preserve the rebuilt flexed-limb body lock or restrained short broad hand."
+    },
+    "assets/dinosaurs/lessemsaurus-sauropoides-giant-basal-sauropodomorph-identity-imagegen-v2.png": {
+      "reason": "The old identity frame drifts toward a true sauropod with a tall neck, simplified column-like limbs, and a generic head while presenting uncertain skull and gait features too confidently."
+    },
+    "assets/dinosaurs/lessemsaurus-sauropoides-los-colorados-group-ecology-imagegen-v1.png": {
+      "reason": "The former group scene crowds several similar bodies, obscures independent limb and tail counts, repeats a brown broadside composition, and implies unsupported social grouping."
+    },
+    "assets/dinosaurs/lessemsaurus-sauropoides-robust-basal-sauropodomorph-imagegen-v1.png": {
+      "reason": "The former representative uses a generic lizardlike head, nearly straight columnar legs, sauropod-like feet, and repetitive dry ochre staging without the new postcranial and specimen-association gate."
+    },
+    "assets/dinosaurs/lessemsaurus-sauropoides-saltplaya-gypsum-pomegranate-ecology-imagegen-v1.png": {
+      "reason": "The salt-playa and gypsum framing is not the best-supported Los Colorados setting, while the animal retains an overly upright neck and true-sauropod-like columnar proportions."
+    },
+    "assets/dinosaurs/lessemsaurus-sauropoides-storm-ledge-indigo-lavender-coral-lime-ecology-imagegen-v1.png": {
+      "reason": "The former storm-ledge image changes color but keeps the same broadside pose, generic sauropodiform head and feet, and weak separation between reconstructed and preserved anatomy."
+    },
+    "assets/dinosaurs/lessemsaurus-sauropoides-zupaysaurus-bite-repel-defense-ecology-imagegen-v1.png": {
+      "reason": "Direct bite-repel contact merges animals, blocks reliable limb counts, and overstates a specific predator-prey and defensive event not demonstrated by the fossil record."
+    },
+    "assets/dinosaurs/lessemsaurus-sauropoides-zupaysaurus-defense-ecology-imagegen-v1.png": {
+      "reason": "The adult-and-young defense framing implies age, parentage, grouping, and exact predation behavior while overlapping bodies and weakening anatomy review."
+    },
+    "assets/dinosaurs/lessemsaurus-sauropoides-zupaysaurus-tail-block-defense-ecology-imagegen-v1.png": {
+      "reason": "The tail-block scene turns formation-level coexistence into an unsupported defensive event and uses contact, dust, and overlap that obscure feet and tail continuity."
     }
   },
-  "generatedAt": "2026-07-28T10:43:32.604Z"
+  "generatedAt": "2026-07-28T11:28:19.481Z"
 }

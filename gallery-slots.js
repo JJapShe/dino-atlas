@@ -403,35 +403,51 @@ window.gallerySlotAssignments = {
   ],
   "lessemsaurus-sauropoides": [
     {
-      "source": "assets/dinosaurs/lessemsaurus-sauropoides-robust-basal-sauropodomorph-imagegen-v1.png",
+      "source": "assets/dinosaurs/lessemsaurus-sauropoides-flexed-limb-mineral-teal-representative-imagegen-v1.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "los-colorados-seasonal-fluvial-floodplain",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/lessemsaurus-sauropoides-bluegray-copper-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/lessemsaurus-sauropoides-reverse-bluehour-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "los-colorados-seasonal-fluvial-floodplain",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/lessemsaurus-sauropoides-los-colorados-group-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/lessemsaurus-sauropoides-crevasse-splay-habitat-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "los-colorados-seasonal-fluvial-floodplain",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/lessemsaurus-sauropoides-giant-basal-sauropodomorph-identity-imagegen-v2.png",
+      "source": "assets/dinosaurs/lessemsaurus-sauropoides-short-broad-manus-comparative-anatomy-imagegen-v1.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "los-colorados-seasonal-fluvial-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/lessemsaurus-sauropoides-channel-separated-zupaysaurus-context-ecology-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "los-colorados-seasonal-fluvial-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/lessemsaurus-sauropoides-separated-size-classes-storm-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "los-colorados-seasonal-fluvial-floodplain",
       "expectedKind": "anatomy review"
     }
   ],

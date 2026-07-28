@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-28T10:43:32.604Z",
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-43",
-  "reviewMethod": "Rauhut and Hungerbuhler 1998 specimen and cranial review, Botelho et al. 2017 incomplete-manus evidence, Schoch and Seegis 2014 Knollenmergel paleosol context, original-size inspection of all six selected full frames, final six-role contact-sheet comparison, and isolated head, hand, foot, secondary-animal, and size-class crops; exact skin, colors, markings, plant mix, posture, weather response, growth-stage association, and same-frame fauna remain reconstruction hypotheses",
-  "targetSlots": 581,
+  "generatedAt": "2026-07-28T11:28:19.481Z",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-44",
+  "reviewMethod": "Pol and Powell 2007 postcranial description, multi-individual association, incomplete manus and pes, and taxonomic caveat; McPhee et al. 2018 lessemsaurid size, non-columnar flexed-limb context, and missing reliable Lessemsaurus appendicular ratios; Arcucci et al. 2004 Los Colorados fluvial, floodplain, pond, crevasse-splay, vegetation-cover, and seasonally humid interpretation; original-size inspection of all six selected full frames, final six-role contact-sheet comparison, and isolated head, hand, limb, foot, tail, secondary-animal, and size-class crops; exact skull, complete digit formulas, gait, skin, colors, markings, vegetation arrangement, same-frame fauna, size-class identity, and weather response remain reconstruction hypotheses",
+  "targetSlots": 583,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -456,39 +456,57 @@
     "lessemsaurus-sauropoides": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/lessemsaurus-sauropoides-robust-basal-sauropodomorph-imagegen-v1.png",
+        "source": "assets/dinosaurs/lessemsaurus-sauropoides-flexed-limb-mineral-teal-representative-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Neutral post-rain side-oblique frame shows one complete deep-bodied non-sauropodan sauropodiform with exactly two forelimbs, two hindlimbs, flexed elbows and knees, short broad non-tubular hands, and one complete pelvis-origin tail; the skull and quadrupedal gait are explicitly comparative rather than direct fossil claims.",
+        "reviewMethod": "Pol and Powell 2007 postcranial description, multi-individual association, incomplete manus and pes, and taxonomic caveat; McPhee et al. 2018 lessemsaurid size, non-columnar flexed-limb context, and missing reliable Lessemsaurus appendicular ratios; Arcucci et al. 2004 Los Colorados fluvial, floodplain, pond, crevasse-splay, vegetation-cover, and seasonally humid interpretation; original-size inspection of all six selected full frames, final six-role contact-sheet comparison, and isolated head, hand, limb, foot, tail, secondary-animal, and size-class crops; exact skull, complete digit formulas, gait, skin, colors, markings, vegetation arrangement, same-frame fauna, size-class identity, and weather response remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-44",
+        "reviewedAt": "2026-07-28T11:28:19.481Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/lessemsaurus-sauropoides-bluegray-copper-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/lessemsaurus-sauropoides-reverse-bluehour-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Reverse-facing blue-hour frame changes direction, light, and hue while preserving the same body proportions and the same rib-dash and distal-tail-chevron topology; all four limbs and the full tail remain independently readable, and the color pattern is explicitly hypothetical.",
+        "reviewMethod": "Pol and Powell 2007 postcranial description, multi-individual association, incomplete manus and pes, and taxonomic caveat; McPhee et al. 2018 lessemsaurid size, non-columnar flexed-limb context, and missing reliable Lessemsaurus appendicular ratios; Arcucci et al. 2004 Los Colorados fluvial, floodplain, pond, crevasse-splay, vegetation-cover, and seasonally humid interpretation; original-size inspection of all six selected full frames, final six-role contact-sheet comparison, and isolated head, hand, limb, foot, tail, secondary-animal, and size-class crops; exact skull, complete digit formulas, gait, skin, colors, markings, vegetation arrangement, same-frame fauna, size-class identity, and weather response remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-44",
+        "reviewedAt": "2026-07-28T11:28:19.481Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/lessemsaurus-sauropoides-los-colorados-group-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/lessemsaurus-sauropoides-crevasse-splay-habitat-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "High-oblique view shifts emphasis to a receding-flood crevasse-splay, red silt bars, shallow channels, ponds, driftwood, and patchy vegetation while keeping one complete four-limbed animal on unobstructed dry ground.",
+        "reviewMethod": "Pol and Powell 2007 postcranial description, multi-individual association, incomplete manus and pes, and taxonomic caveat; McPhee et al. 2018 lessemsaurid size, non-columnar flexed-limb context, and missing reliable Lessemsaurus appendicular ratios; Arcucci et al. 2004 Los Colorados fluvial, floodplain, pond, crevasse-splay, vegetation-cover, and seasonally humid interpretation; original-size inspection of all six selected full frames, final six-role contact-sheet comparison, and isolated head, hand, limb, foot, tail, secondary-animal, and size-class crops; exact skull, complete digit formulas, gait, skin, colors, markings, vegetation arrangement, same-frame fauna, size-class identity, and weather response remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-44",
+        "reviewedAt": "2026-07-28T11:28:19.481Z"
       },
       "4": {
         "status": "approved",
-        "source": "assets/dinosaurs/lessemsaurus-sauropoides-giant-basal-sauropodomorph-identity-imagegen-v2.png",
+        "source": "assets/dinosaurs/lessemsaurus-sauropoides-short-broad-manus-comparative-anatomy-imagegen-v1.png",
         "role": "identity-anatomy",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Focused forequarter view isolates one flexed robust forelimb and one short broad planted hand with a modest gently curved medial thumb and progressively reduced outer digits; the caption states that only metacarpals I-II and digit I are preserved and that the complete five-digit appearance is a comparative reconstruction.",
+        "reviewMethod": "Pol and Powell 2007 postcranial description, multi-individual association, incomplete manus and pes, and taxonomic caveat; McPhee et al. 2018 lessemsaurid size, non-columnar flexed-limb context, and missing reliable Lessemsaurus appendicular ratios; Arcucci et al. 2004 Los Colorados fluvial, floodplain, pond, crevasse-splay, vegetation-cover, and seasonally humid interpretation; original-size inspection of all six selected full frames, final six-role contact-sheet comparison, and isolated head, hand, limb, foot, tail, secondary-animal, and size-class crops; exact skull, complete digit formulas, gait, skin, colors, markings, vegetation arrangement, same-frame fauna, size-class identity, and weather response remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-44",
+        "reviewedAt": "2026-07-28T11:28:19.481Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/lessemsaurus-sauropoides-channel-separated-zupaysaurus-context-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "A complete foreground Lessemsaurus and a small distant Zupaysaurus-like animal are separated by a broad channel with no contact, pursuit, defensive pose, injury, or merged silhouette; the scene represents formation-level fauna context rather than demonstrated behavior.",
+        "reviewMethod": "Pol and Powell 2007 postcranial description, multi-individual association, incomplete manus and pes, and taxonomic caveat; McPhee et al. 2018 lessemsaurid size, non-columnar flexed-limb context, and missing reliable Lessemsaurus appendicular ratios; Arcucci et al. 2004 Los Colorados fluvial, floodplain, pond, crevasse-splay, vegetation-cover, and seasonally humid interpretation; original-size inspection of all six selected full frames, final six-role contact-sheet comparison, and isolated head, hand, limb, foot, tail, secondary-animal, and size-class crops; exact skull, complete digit formulas, gait, skin, colors, markings, vegetation arrangement, same-frame fauna, size-class identity, and weather response remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-44",
+        "reviewedAt": "2026-07-28T11:28:19.481Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/lessemsaurus-sauropoides-separated-size-classes-storm-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Two widely separated Lessemsaurus size classes retain independent heads, four-limb sets, and tails under a pre-storm sky; duplicated elements and size differences in PVL 4822 support multiple individuals but not age, sex, kinship, grouping, or weather response, all of which remain hypotheses.",
+        "reviewMethod": "Pol and Powell 2007 postcranial description, multi-individual association, incomplete manus and pes, and taxonomic caveat; McPhee et al. 2018 lessemsaurid size, non-columnar flexed-limb context, and missing reliable Lessemsaurus appendicular ratios; Arcucci et al. 2004 Los Colorados fluvial, floodplain, pond, crevasse-splay, vegetation-cover, and seasonally humid interpretation; original-size inspection of all six selected full frames, final six-role contact-sheet comparison, and isolated head, hand, limb, foot, tail, secondary-animal, and size-class crops; exact skull, complete digit formulas, gait, skin, colors, markings, vegetation arrangement, same-frame fauna, size-class identity, and weather response remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-44",
+        "reviewedAt": "2026-07-28T11:28:19.481Z"
       }
     },
     "chromogisaurus-novasi": {
@@ -6407,6 +6425,36 @@
     },
     "assets/dinosaurs/liliensternus-liliensterni-trackway-ecology-imagegen-v1.png": {
       "reason": "The former trackway broadside uses a generic dry conifer backdrop, repeated brown palette, weak skull identity, and no independent hand or foot proof."
+    },
+    "assets/dinosaurs/lessemsaurus-sauropoides-bluegray-copper-pattern-imagegen-v1.png": {
+      "reason": "The former blue-gray and copper variant repeats a flat broadside, generic long-necked body, and nearly columnar feet without the new skull, manus, gait, and multi-individual caveats."
+    },
+    "assets/dinosaurs/lessemsaurus-sauropoides-charcoal-sulfur-gypsum-pattern-imagegen-v1.png": {
+      "reason": "The charcoal-sulfur gypsum broadside remains anatomically generic, repeats the same dry red staging, and does not preserve the rebuilt flexed-limb body lock or restrained short broad hand."
+    },
+    "assets/dinosaurs/lessemsaurus-sauropoides-giant-basal-sauropodomorph-identity-imagegen-v2.png": {
+      "reason": "The old identity frame drifts toward a true sauropod with a tall neck, simplified column-like limbs, and a generic head while presenting uncertain skull and gait features too confidently."
+    },
+    "assets/dinosaurs/lessemsaurus-sauropoides-los-colorados-group-ecology-imagegen-v1.png": {
+      "reason": "The former group scene crowds several similar bodies, obscures independent limb and tail counts, repeats a brown broadside composition, and implies unsupported social grouping."
+    },
+    "assets/dinosaurs/lessemsaurus-sauropoides-robust-basal-sauropodomorph-imagegen-v1.png": {
+      "reason": "The former representative uses a generic lizardlike head, nearly straight columnar legs, sauropod-like feet, and repetitive dry ochre staging without the new postcranial and specimen-association gate."
+    },
+    "assets/dinosaurs/lessemsaurus-sauropoides-saltplaya-gypsum-pomegranate-ecology-imagegen-v1.png": {
+      "reason": "The salt-playa and gypsum framing is not the best-supported Los Colorados setting, while the animal retains an overly upright neck and true-sauropod-like columnar proportions."
+    },
+    "assets/dinosaurs/lessemsaurus-sauropoides-storm-ledge-indigo-lavender-coral-lime-ecology-imagegen-v1.png": {
+      "reason": "The former storm-ledge image changes color but keeps the same broadside pose, generic sauropodiform head and feet, and weak separation between reconstructed and preserved anatomy."
+    },
+    "assets/dinosaurs/lessemsaurus-sauropoides-zupaysaurus-bite-repel-defense-ecology-imagegen-v1.png": {
+      "reason": "Direct bite-repel contact merges animals, blocks reliable limb counts, and overstates a specific predator-prey and defensive event not demonstrated by the fossil record."
+    },
+    "assets/dinosaurs/lessemsaurus-sauropoides-zupaysaurus-defense-ecology-imagegen-v1.png": {
+      "reason": "The adult-and-young defense framing implies age, parentage, grouping, and exact predation behavior while overlapping bodies and weakening anatomy review."
+    },
+    "assets/dinosaurs/lessemsaurus-sauropoides-zupaysaurus-tail-block-defense-ecology-imagegen-v1.png": {
+      "reason": "The tail-block scene turns formation-level coexistence into an unsupported defensive event and uses contact, dust, and overlap that obscure feet and tail continuity."
     }
   }
 }
