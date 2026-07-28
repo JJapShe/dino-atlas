@@ -3869,27 +3869,51 @@ window.gallerySlotAssignments = {
   ],
   "psittacosaurus-mongoliensis": [
     {
-      "source": "assets/dinosaurs/psittacosaurus-mongoliensis-large-tail-bristles-imagegen-v2.png",
+      "source": "assets/dinosaurs/psittacosaurus-mongoliensis-smallskull-jugalhorn-representative-imagegen-v1.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "khulsangol-alluvial-sheetflood",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/psittacosaurus-mongoliensis-large-bristle-pattern-imagegen-v3.png",
+      "source": "assets/dinosaurs/psittacosaurus-mongoliensis-plum-eucalyptus-gravelbar-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "khulsangol-alluvial-sheetflood",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/psittacosaurus-mongoliensis-scrub-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/psittacosaurus-mongoliensis-sheetflood-lowbrowse-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "khulsangol-alluvial-sheetflood",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/psittacosaurus-mongoliensis-fourdigit-fourtoe-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "khulsangol-alluvial-sheetflood",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/psittacosaurus-mongoliensis-harpymimus-channel-coexistence-ecology-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "khulsangol-alluvial-sheetflood",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/psittacosaurus-mongoliensis-adult-hatchling-growth-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "khulsangol-alluvial-sheetflood",
       "expectedKind": "anatomy review"
     }
   ],

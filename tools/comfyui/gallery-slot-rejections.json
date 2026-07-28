@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-40",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-42",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -886,7 +886,28 @@
     },
     "assets/dinosaurs/apatosaurus-ajax.png": {
       "reason": "The earliest visual candidate raises the neck too high, reads as a generic sauropod, and lacks reliable species-specific foot anatomy."
+    },
+    "assets/dinosaurs/psittacosaurus-mongoliensis-large-tail-bristles-imagegen-v2.png": {
+      "reason": "The former representative treats a large continuous bristle row as a P. mongoliensis identity cue even though the bristle-bearing specimen is identified only as Psittacosaurus sp.; the hand and foot topology is also weaker than the rebuilt set."
+    },
+    "assets/dinosaurs/psittacosaurus-mongoliensis-large-bristle-pattern-imagegen-v3.png": {
+      "reason": "The former pattern repeats the unsupported species-level bristle assumption and an exaggerated continuous porcupine-like row while lacking the new four-digit hand and four-toed foot audit."
+    },
+    "assets/dinosaurs/psittacosaurus-mongoliensis-ashfall-large-tail-bristles-ecology-imagegen-v2.png": {
+      "reason": "The former ashfall scene combines an unsupported volcanic setting for the Mongolian species with an exaggerated species-level bristle claim and weaker foot readability."
+    },
+    "assets/dinosaurs/psittacosaurus-mongoliensis-ash-burrow-lavender-celadon-bristles-ecology-imagegen-v1.png": {
+      "reason": "The former burrow scene overstates both burrow use and large tail bristles for P. mongoliensis and shifts attention away from the small skull, jugal horn, bipedal stance, and digit counts."
+    },
+    "assets/dinosaurs/psittacosaurus-mongoliensis-beaked-bristle-tail-imagegen-v1.png": {
+      "reason": "The earlier count-level candidate lacks an independent four-digit hand and four-toed foot proof and still uses the species-unresolved bristle specimen as a canonical cue."
+    },
+    "assets/dinosaurs/psittacosaurus-mongoliensis-tealcheek-pattern-imagegen-v1.png": {
+      "reason": "The older stylized teal-cheek variant has unstable hind-foot contact, weaker P. mongoliensis cranial identity, and repeats the unverified bristle cue."
+    },
+    "assets/dinosaurs/psittacosaurus-mongoliensis-scrub-ecology-imagegen-v1.png": {
+      "reason": "The former multi-animal scrub scene crowds three similar bodies, obscures hand and foot anatomy, implies an unsupported social grouping, and retains the old bristle assumption."
     }
   },
-  "generatedAt": "2026-07-28T08:52:38.076Z"
+  "generatedAt": "2026-07-28T09:45:08.805Z"
 }
