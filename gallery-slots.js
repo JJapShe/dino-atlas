@@ -1351,35 +1351,51 @@ window.gallerySlotAssignments = {
   ],
   "pterodactylus-antiquus": [
     {
-      "source": "assets/dinosaurs/pterodactylus-antiquus-shorttail-solnhofen-imagegen-v1.png",
+      "source": "assets/dinosaurs/pterodactylus-antiquus-shorttail-solnhofen-glide-representative-imagegen-v3.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "solnhofen-restricted-carbonate-lagoon",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/pterodactylus-antiquus-aubergine-jade-wing-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/pterodactylus-antiquus-violet-ochre-celadon-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "solnhofen-restricted-carbonate-lagoon",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/pterodactylus-antiquus-tidalflat-probe-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/pterodactylus-antiquus-stormwash-limestone-habitat-ecology-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "solnhofen-restricted-carbonate-lagoon",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/pterodactylus-antiquus-shorttail-solnhofen-identity-imagegen-v2.png",
+      "source": "assets/dinosaurs/pterodactylus-antiquus-ventral-wrist-webbed-foot-anatomy-imagegen-v2.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "solnhofen-restricted-carbonate-lagoon",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/pterodactylus-antiquus-lagoon-invertebrate-landing-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "solnhofen-restricted-carbonate-lagoon",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/pterodactylus-antiquus-bluehour-windlaunch-ecology-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "solnhofen-restricted-carbonate-lagoon",
       "expectedKind": "anatomy review"
     }
   ],

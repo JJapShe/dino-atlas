@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-39",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-40",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -823,6 +823,21 @@
     },
     "assets/dinosaurs/monolophosaurus-jiangi-xinjiang-waterline-inspection-ecology-imagegen-v2.png": {
       "reason": "The former waterline frame repeats an ochre broadside composition with a short generic head and weak crest while lacking the updated Shishugou environment and preservation caveats."
+    },
+    "assets/dinosaurs/pterodactylus-antiquus-aubergine-jade-wing-pattern-imagegen-v1.png": {
+      "reason": "The former pattern image uses an upright birdlike bipedal ground stance with both wings held as display panels, conflicting with the quadrupedal pterodactyloid ground-locomotion gate."
+    },
+    "assets/dinosaurs/pterodactylus-antiquus-clifflaunch-violet-coral-ecology-imagegen-v1.png": {
+      "reason": "The cliff-launch frame produces an ambiguous extra-looking lower wing panel and overlapping limb geometry, so exactly two forelimb-wings and two hindlimbs cannot be audited reliably."
+    },
+    "assets/dinosaurs/pterodactylus-antiquus-shorttail-solnhofen-identity-imagegen-v2.png": {
+      "reason": "The former identity image contains several detached upright triangular membrane structures and reads as a many-winged dragon rather than one pair of folded pterosaur wings."
+    },
+    "assets/dinosaurs/pterodactylus-antiquus-shorttail-solnhofen-imagegen-v1.png": {
+      "reason": "The former representative combines a birdlike bipedal walk with detached spear-shaped membrane panels and unclear wing-finger origins, preventing a reliable four-limb count."
+    },
+    "assets/dinosaurs/pterodactylus-antiquus-tidalflat-probe-ecology-imagegen-v1.png": {
+      "reason": "The tidal-flat frame again uses an upright bipedal winged-dinosaur posture and unstable raised-wing joints instead of a quadrupedal pterodactyloid ground stance."
     }
   }
 }

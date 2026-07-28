@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-28T06:41:34.229Z",
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-39",
-  "reviewMethod": "Marsh and Rowe 2020 paired nasolacrimal crest, robust premaxilla-maxilla contact, four-digit manus with phalangeal formula 2-3-4-1, clawed digits I-III and a reduced peg-like non-ungual digit IV, and four-toed pes with a reduced first digit; Priddy et al. 2021 and Luttrell 1993 Kayenta fluvial-aeolian and intermittent floodplain context; original-size inspection of all six selected generated images, final six-role contact sheet, and isolated head, both-hand, both-foot, pelvis, tail, and secondary-fauna crops; each complete primary animal was checked for one head, two separate crests, exactly two forelimbs and two hindlimbs, and one continuous tail; the failed representative hand-only edit was rejected because it erased the reduced fourth digit; exact colors, skin, crest sheath, posture, behavior, growth stage, vegetation, and live coexistence remain reconstruction hypotheses",
-  "targetSlots": 572,
+  "generatedAt": "2026-07-28T07:41:15.813Z",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-40",
+  "reviewMethod": "Smyth and Unwin 2024 taxonomic separation of Pterodactylus antiquus and Diopecephalus kochi plus skull distinctions; Augustin et al. 2022 elongated toothed rostrum, posterior tooth row, low mature crest, and elongated wing metacarpal; Smyth et al. 2025 quantitative pterodactyloid quadrupedal trackmaker context; Hone, Lauer, and Lauer 2025 direct Pterodactylus pedal webbing, scales, and claw sheaths; Bestwick et al. 2020 dental-microwear support for generalist invertebrate consumption; Munnecke et al. 2008 restricted Solnhofen carbonate-lagoon setting; original-size inspection of all six selected generated images, six-role contact-sheet comparison, and legacy five-image contact-sheet audit; every complete selected animal was checked for one head, exactly two forelimb-wings, two hindlimbs, and one very short tail; the landing interaction was locally corrected from three hindlimbs to two and rechecked; exact colors, markings, soft-tissue crest outline, posture, launch behavior, vegetation, and momentary ecology remain reconstruction hypotheses",
+  "targetSlots": 574,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -1517,39 +1517,57 @@
     "pterodactylus-antiquus": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/pterodactylus-antiquus-shorttail-solnhofen-imagegen-v1.png",
+        "source": "assets/dinosaurs/pterodactylus-antiquus-shorttail-solnhofen-glide-representative-imagegen-v3.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Clear oblique glide passes the representative count gate with one long toothed head, exactly two continuous fourth-finger wings, two separate webbed hind feet, and one centered very short tail; the low crest stays below Pteranodon or tapejarid proportions.",
+        "reviewMethod": "ImageGen output inspection at original size, six-image contact-sheet comparison, primary-literature anatomy comparison, and role-scoped gallery audit",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-40",
+        "reviewedAt": "2026-07-28T07:41:15.813Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/pterodactylus-antiquus-aubergine-jade-wing-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/pterodactylus-antiquus-violet-ochre-celadon-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Opposite-direction cool-dawn bank adds a distinct violet-gray, ochre, celadon, charcoal, and coral pattern while retaining the same two-wing, two-leg, short-tail body lock; coloration is explicitly hypothetical.",
+        "reviewMethod": "ImageGen output inspection at original size, six-image contact-sheet comparison, primary-literature anatomy comparison, and role-scoped gallery audit",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-40",
+        "reviewedAt": "2026-07-28T07:41:15.813Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/pterodactylus-antiquus-tidalflat-probe-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/pterodactylus-antiquus-stormwash-limestone-habitat-ecology-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "High-oblique post-storm frame shows a quadrupedal animal with two folded forelimb-wings, two webbed hind feet, and a short tail on pale lithographic limestone; folded hands remain role-limited to anatomy review rather than representative promotion.",
+        "reviewMethod": "ImageGen output inspection at original size, six-image contact-sheet comparison, primary-literature anatomy comparison, and role-scoped gallery audit",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-40",
+        "reviewedAt": "2026-07-28T07:41:15.813Z"
       },
       "4": {
         "status": "approved",
-        "source": "assets/dinosaurs/pterodactylus-antiquus-shorttail-solnhofen-identity-imagegen-v2.png",
+        "source": "assets/dinosaurs/pterodactylus-antiquus-ventral-wrist-webbed-foot-anatomy-imagegen-v2.png",
         "role": "identity-anatomy",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Ventral view isolates the two continuous wing membranes, both wrist clusters, two splayed webbed feet, and one short central tail without introducing extra forelimbs or a rear wing pair; approved as a structure reference.",
+        "reviewMethod": "ImageGen output inspection at original size, six-image contact-sheet comparison, primary-literature anatomy comparison, and role-scoped gallery audit",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-40",
+        "reviewedAt": "2026-07-28T07:41:15.813Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/pterodactylus-antiquus-lagoon-invertebrate-landing-ecology-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "Final corrected landing approach contains exactly two wings and two hindlegs, keeps one tiny generic crustacean spatially separate, and visualizes microwear-supported invertebrate foraging context without capture, attack, or fish-specialist behavior.",
+        "reviewMethod": "ImageGen output inspection at original size, six-image contact-sheet comparison, primary-literature anatomy comparison, and role-scoped gallery audit",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-40",
+        "reviewedAt": "2026-07-28T07:41:15.813Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/pterodactylus-antiquus-bluehour-windlaunch-ecology-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "Solitary blue-hour launch adds a distinct asymmetric movement and light condition while preserving two complete wings, two trailing webbed feet, one short tail, and a restrained mature crest; the exact wind response is labeled as a hypothesis.",
+        "reviewMethod": "ImageGen output inspection at original size, six-image contact-sheet comparison, primary-literature anatomy comparison, and role-scoped gallery audit",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-40",
+        "reviewedAt": "2026-07-28T07:41:15.813Z"
       }
     },
     "pterodaustro-guinazui": {
@@ -6194,6 +6212,21 @@
     },
     "assets/dinosaurs/monolophosaurus-jiangi-xinjiang-waterline-inspection-ecology-imagegen-v2.png": {
       "reason": "The former waterline frame repeats an ochre broadside composition with a short generic head and weak crest while lacking the updated Shishugou environment and preservation caveats."
+    },
+    "assets/dinosaurs/pterodactylus-antiquus-aubergine-jade-wing-pattern-imagegen-v1.png": {
+      "reason": "The former pattern image uses an upright birdlike bipedal ground stance with both wings held as display panels, conflicting with the quadrupedal pterodactyloid ground-locomotion gate."
+    },
+    "assets/dinosaurs/pterodactylus-antiquus-clifflaunch-violet-coral-ecology-imagegen-v1.png": {
+      "reason": "The cliff-launch frame produces an ambiguous extra-looking lower wing panel and overlapping limb geometry, so exactly two forelimb-wings and two hindlimbs cannot be audited reliably."
+    },
+    "assets/dinosaurs/pterodactylus-antiquus-shorttail-solnhofen-identity-imagegen-v2.png": {
+      "reason": "The former identity image contains several detached upright triangular membrane structures and reads as a many-winged dragon rather than one pair of folded pterosaur wings."
+    },
+    "assets/dinosaurs/pterodactylus-antiquus-shorttail-solnhofen-imagegen-v1.png": {
+      "reason": "The former representative combines a birdlike bipedal walk with detached spear-shaped membrane panels and unclear wing-finger origins, preventing a reliable four-limb count."
+    },
+    "assets/dinosaurs/pterodactylus-antiquus-tidalflat-probe-ecology-imagegen-v1.png": {
+      "reason": "The tidal-flat frame again uses an upright bipedal winged-dinosaur posture and unstable raised-wing joints instead of a quadrupedal pterodactyloid ground stance."
     }
   }
 }
