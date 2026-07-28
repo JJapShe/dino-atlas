@@ -421,7 +421,7 @@ function habitatFor(dino, route) {
   else if (dino.id === "pterodaustro-guinazui") key = "lagarcito-inland-lake";
   else if (dino.id === "scelidosaurus-harrisonii") key = "dorset-humid-island-river";
   else if (dino.id === "polacanthus-foxii") key = "wessex-seasonal-floodplain";
-  else if (dino.id === "camarasaurus-lentus") key = "morrison-seasonal-alluvial-plain";
+  else if (["camarasaurus-lentus", "apatosaurus-ajax"].includes(dino.id)) key = "morrison-seasonal-alluvial-plain";
   else if (dino.id === "monolophosaurus-jiangi") key = "shishugou-seasonal-alluvial-wetland";
   else if (dino.id === "dilophosaurus-wetherilli") key = "kayenta-silty-fluvial-aeolian-plain";
   else if (/marine|seaway|ocean|sea |pliosaur|plesiosaur|ichthyosaur|mosasaur|해양|바다|수중/.test(text)) key = "marine";

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-28T07:41:15.813Z",
+  "generatedAt": "2026-07-28T08:52:38.076Z",
   "reviewBatch": "2026-07-28-richness-six-slot-batch-40",
   "reviewMethod": "Smyth and Unwin 2024 taxonomic separation of Pterodactylus antiquus and Diopecephalus kochi plus skull distinctions; Augustin et al. 2022 elongated toothed rostrum, posterior tooth row, low mature crest, and elongated wing metacarpal; Smyth et al. 2025 quantitative pterodactyloid quadrupedal trackmaker context; Hone, Lauer, and Lauer 2025 direct Pterodactylus pedal webbing, scales, and claw sheaths; Bestwick et al. 2020 dental-microwear support for generalist invertebrate consumption; Munnecke et al. 2008 restricted Solnhofen carbonate-lagoon setting; original-size inspection of all six selected generated images, six-role contact-sheet comparison, and legacy five-image contact-sheet audit; every complete selected animal was checked for one head, exactly two forelimb-wings, two hindlimbs, and one very short tail; the landing interaction was locally corrected from three hindlimbs to two and rechecked; exact colors, markings, soft-tissue crest outline, posture, launch behavior, vegetation, and momentary ecology remain reconstruction hypotheses",
   "targetSlots": 574,
@@ -2257,39 +2257,57 @@
     "apatosaurus-ajax": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/apatosaurus-ajax-imagegen-v3-source-candidate.png",
+        "source": "assets/dinosaurs/apatosaurus-ajax-robust-lowneck-morrison-representative-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Neutral side view passes the representative count gate with one small square-snouted head, one exceptionally deep low-forward neck, exactly two forelegs and two hind legs, smooth nail-row-free forefeet, three-clawed hind feet, and one complete tapering tail.",
+        "reviewMethod": "ImageGen output inspection at original size, six-image contact-sheet comparison, primary-literature anatomy comparison, and role-scoped gallery audit",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-41",
+        "reviewedAt": "2026-07-28T08:52:38.076Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/apatosaurus-ajax-olive-clouds-cinnamon-nape-pattern-imagegen-v2.png",
+        "source": "assets/dinosaurs/apatosaurus-ajax-aubergine-olive-clouds-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Reverse-facing overcast woodland frame adds a distinct smoky olive, aubergine-cloud, cinnamon, celadon, and ivory phenotype while retaining the robust body lock, four separate feet, and a newly reframed complete tail tip; coloration is explicitly hypothetical.",
+        "reviewMethod": "ImageGen output inspection at original size, six-image contact-sheet comparison, primary-literature anatomy comparison, and role-scoped gallery audit",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-41",
+        "reviewedAt": "2026-07-28T08:52:38.076Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/apatosaurus-ajax-canonical-riverbank-ecology-imagegen-v2.png",
+        "source": "assets/dinosaurs/apatosaurus-ajax-seasonal-channel-lowbrowse-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "High-oblique post-rain floodplain view visualizes low browsing with the canonical individual, keeps all four feet above water and readable, and was locally corrected so each broad hind foot resolves to three inner claws.",
+        "reviewMethod": "ImageGen output inspection at original size, six-image contact-sheet comparison, primary-literature anatomy comparison, and role-scoped gallery audit",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-41",
+        "reviewedAt": "2026-07-28T08:52:38.076Z"
       },
       "4": {
         "status": "approved",
-        "source": "assets/dinosaurs/apatosaurus-ajax-openfeet-imagegen-v2.png",
+        "source": "assets/dinosaurs/apatosaurus-ajax-thumbclaw-threehindclaw-anatomy-imagegen-v1.png",
         "role": "identity-anatomy",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Low front three-quarter view clearly separates the smooth tubular manus and single medial thumb-claw cue from the broader three-clawed hind foot while retaining four limbs, the deep neck base, and the complete tail.",
+        "reviewMethod": "ImageGen output inspection at original size, six-image contact-sheet comparison, primary-literature anatomy comparison, and role-scoped gallery audit",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-41",
+        "reviewedAt": "2026-07-28T08:52:38.076Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/apatosaurus-ajax-distant-allosaurus-awareness-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "The adult and one distant Allosaurus remain spatially separated with no tail contact, wound, attack, or merged silhouette; the primary animal keeps four grounded limbs and one uninterrupted tail, and the encounter is labeled as a reconstruction hypothesis.",
+        "reviewMethod": "ImageGen output inspection at original size, six-image contact-sheet comparison, primary-literature anatomy comparison, and role-scoped gallery audit",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-41",
+        "reviewedAt": "2026-07-28T08:52:38.076Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/apatosaurus-ajax-adult-juvenile-bluehour-growth-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "Reframed blue-hour growth comparison contains exactly one adult and one separated juvenile, preserves four limbs and one complete tail per animal, restores the adult tail tip with clear frame margin, and avoids claiming direct evidence of family behavior.",
+        "reviewMethod": "ImageGen output inspection at original size, six-image contact-sheet comparison, primary-literature anatomy comparison, and role-scoped gallery audit",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-41",
+        "reviewedAt": "2026-07-28T08:52:38.076Z"
       }
     },
     "diplodocus-carnegiei": {
@@ -5492,7 +5510,7 @@
       "reason": "Legacy identity image confirms no frill but is superseded by the six-role set with clearer hand, foot, palette, and habitat review."
     },
     "assets/dinosaurs/apatosaurus-ajax-lowneck-floodplain-v1.png": {
-      "reason": "Flat legacy render and cool blue-gray phenotype fail the final ecology slot."
+      "reason": "Flat legacy render and pale mask-edge residue fail the final ecology and artifact gates."
     },
     "assets/dinosaurs/tyrannosaurus-rex-ankylosaurus-soft-belly-scavenge-graphic-ecology-imagegen-v1.png": {
       "reason": "Graphic carcass scene and two-primary-animal composition fail the everyday ecology role."
@@ -6227,6 +6245,54 @@
     },
     "assets/dinosaurs/pterodactylus-antiquus-tidalflat-probe-ecology-imagegen-v1.png": {
       "reason": "The tidal-flat frame again uses an upright bipedal winged-dinosaur posture and unstable raised-wing joints instead of a quadrupedal pterodactyloid ground stance."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-allosaurus-tail-defense-ecology-imagegen-v1.png": {
+      "reason": "The former defense image drives the tail through the Allosaurus body and combines that contact artifact with elephant-like forefoot nails, so neither interaction nor primary anatomy is reliable."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-canonical-riverbank-ecology-imagegen-v2.png": {
+      "reason": "The former riverbank image places a repeated row of elephant-like nails on the forefeet and uses an oversized generic head, failing the manus and cranial gates."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-edge-volume-v1.png": {
+      "reason": "The edge-volume render is visibly flat and mask-derived, and foreground occlusion prevents a clean audit of every foot."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-imagegen-v3-source-candidate.png": {
+      "reason": "The former representative retains a row of forward-facing forefoot nails and a comparatively tubular, under-muscled neck despite its otherwise readable silhouette."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-imagegen-v4-source-candidate.png": {
+      "reason": "The legacy v4 frame remains a generic low-neck sauropod with unstable foot construction and less diagnostic apatosaurine neck depth than the rebuilt set."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-imagegen-v5-source-candidate.png": {
+      "reason": "The legacy v5 frame carries a tail-tip and overlapping rear-foot risk and does not provide the new nail-row-free manus proof."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-lowneck-i2i-v1.png": {
+      "reason": "The low-neck i2i is a synthetic flat silhouette guide rather than publishable naturalistic paleoart and lacks trustworthy foot detail."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-lowneck-imagegen-v1.png": {
+      "reason": "The former low-neck generation leaves the feet as generic columnar masses and does not distinguish smooth manus from three-clawed hind feet."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-lowneck-ipcontrol-v1.png": {
+      "reason": "The IP-control scene drifts to a raised neck and hides or merges limbs, blocking the four-foot and low-neck gates."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-misty-oxbow-plum-celadon-reflection-ecology-imagegen-v1.png": {
+      "reason": "Water and reflection obscure the feet, so the required manus-versus-pes anatomy and exact limb count cannot be audited."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-olive-clouds-cinnamon-nape-pattern-imagegen-v2.png": {
+      "reason": "The former color variant places its tail tip against the frame and leaves far-foot anatomy ambiguous; the rebuilt reverse-facing v2 pattern replaces it."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-openfeet-imagegen-v2.png": {
+      "reason": "The former anatomy candidate gives the near forefoot three separate forward-facing toes, directly contradicting the tubular diplodocid manus gate."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-riverbank-ecology-imagegen-v1.png": {
+      "reason": "The older riverbank broadside uses generic elephant-like feet and does not clearly separate the forefoot and hindfoot constructions."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-smallhead-imagegen-v2.png": {
+      "reason": "Although the head is small, the former candidate retains ambiguous elephant-like forefeet and a less robust neck than the rebuilt canonical body."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-violet-oxbow-reflection-ecology-imagegen-v1.png": {
+      "reason": "The violet oxbow scene submerges and overlaps feet in reflective water, preventing a reliable four-foot and claw-count audit."
+    },
+    "assets/dinosaurs/apatosaurus-ajax.png": {
+      "reason": "The earliest visual candidate raises the neck too high, reads as a generic sauropod, and lacks reliable species-specific foot anatomy."
     }
   }
 }

@@ -2013,35 +2013,51 @@ window.gallerySlotAssignments = {
   ],
   "apatosaurus-ajax": [
     {
-      "source": "assets/dinosaurs/apatosaurus-ajax-imagegen-v3-source-candidate.png",
+      "source": "assets/dinosaurs/apatosaurus-ajax-robust-lowneck-morrison-representative-imagegen-v1.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "morrison-seasonal-alluvial-plain",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/apatosaurus-ajax-olive-clouds-cinnamon-nape-pattern-imagegen-v2.png",
+      "source": "assets/dinosaurs/apatosaurus-ajax-aubergine-olive-clouds-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "morrison-seasonal-alluvial-plain",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/apatosaurus-ajax-canonical-riverbank-ecology-imagegen-v2.png",
+      "source": "assets/dinosaurs/apatosaurus-ajax-seasonal-channel-lowbrowse-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "morrison-seasonal-alluvial-plain",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/apatosaurus-ajax-openfeet-imagegen-v2.png",
+      "source": "assets/dinosaurs/apatosaurus-ajax-thumbclaw-threehindclaw-anatomy-imagegen-v1.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "morrison-seasonal-alluvial-plain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/apatosaurus-ajax-distant-allosaurus-awareness-ecology-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "morrison-seasonal-alluvial-plain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/apatosaurus-ajax-adult-juvenile-bluehour-growth-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "morrison-seasonal-alluvial-plain",
       "expectedKind": "anatomy review"
     }
   ],

@@ -57,7 +57,7 @@
       "reason": "Legacy identity image confirms no frill but is superseded by the six-role set with clearer hand, foot, palette, and habitat review."
     },
     "assets/dinosaurs/apatosaurus-ajax-lowneck-floodplain-v1.png": {
-      "reason": "Flat legacy render and cool blue-gray phenotype fail the final ecology slot."
+      "reason": "Flat legacy render and pale mask-edge residue fail the final ecology and artifact gates."
     },
     "assets/dinosaurs/tyrannosaurus-rex-ankylosaurus-soft-belly-scavenge-graphic-ecology-imagegen-v1.png": {
       "reason": "Graphic carcass scene and two-primary-animal composition fail the everyday ecology role."
@@ -838,6 +838,55 @@
     },
     "assets/dinosaurs/pterodactylus-antiquus-tidalflat-probe-ecology-imagegen-v1.png": {
       "reason": "The tidal-flat frame again uses an upright bipedal winged-dinosaur posture and unstable raised-wing joints instead of a quadrupedal pterodactyloid ground stance."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-allosaurus-tail-defense-ecology-imagegen-v1.png": {
+      "reason": "The former defense image drives the tail through the Allosaurus body and combines that contact artifact with elephant-like forefoot nails, so neither interaction nor primary anatomy is reliable."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-canonical-riverbank-ecology-imagegen-v2.png": {
+      "reason": "The former riverbank image places a repeated row of elephant-like nails on the forefeet and uses an oversized generic head, failing the manus and cranial gates."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-edge-volume-v1.png": {
+      "reason": "The edge-volume render is visibly flat and mask-derived, and foreground occlusion prevents a clean audit of every foot."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-imagegen-v3-source-candidate.png": {
+      "reason": "The former representative retains a row of forward-facing forefoot nails and a comparatively tubular, under-muscled neck despite its otherwise readable silhouette."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-imagegen-v4-source-candidate.png": {
+      "reason": "The legacy v4 frame remains a generic low-neck sauropod with unstable foot construction and less diagnostic apatosaurine neck depth than the rebuilt set."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-imagegen-v5-source-candidate.png": {
+      "reason": "The legacy v5 frame carries a tail-tip and overlapping rear-foot risk and does not provide the new nail-row-free manus proof."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-lowneck-i2i-v1.png": {
+      "reason": "The low-neck i2i is a synthetic flat silhouette guide rather than publishable naturalistic paleoart and lacks trustworthy foot detail."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-lowneck-imagegen-v1.png": {
+      "reason": "The former low-neck generation leaves the feet as generic columnar masses and does not distinguish smooth manus from three-clawed hind feet."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-lowneck-ipcontrol-v1.png": {
+      "reason": "The IP-control scene drifts to a raised neck and hides or merges limbs, blocking the four-foot and low-neck gates."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-misty-oxbow-plum-celadon-reflection-ecology-imagegen-v1.png": {
+      "reason": "Water and reflection obscure the feet, so the required manus-versus-pes anatomy and exact limb count cannot be audited."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-olive-clouds-cinnamon-nape-pattern-imagegen-v2.png": {
+      "reason": "The former color variant places its tail tip against the frame and leaves far-foot anatomy ambiguous; the rebuilt reverse-facing v2 pattern replaces it."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-openfeet-imagegen-v2.png": {
+      "reason": "The former anatomy candidate gives the near forefoot three separate forward-facing toes, directly contradicting the tubular diplodocid manus gate."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-riverbank-ecology-imagegen-v1.png": {
+      "reason": "The older riverbank broadside uses generic elephant-like feet and does not clearly separate the forefoot and hindfoot constructions."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-smallhead-imagegen-v2.png": {
+      "reason": "Although the head is small, the former candidate retains ambiguous elephant-like forefeet and a less robust neck than the rebuilt canonical body."
+    },
+    "assets/dinosaurs/apatosaurus-ajax-violet-oxbow-reflection-ecology-imagegen-v1.png": {
+      "reason": "The violet oxbow scene submerges and overlaps feet in reflective water, preventing a reliable four-foot and claw-count audit."
+    },
+    "assets/dinosaurs/apatosaurus-ajax.png": {
+      "reason": "The earliest visual candidate raises the neck too high, reads as a generic sauropod, and lacks reliable species-specific foot anatomy."
     }
-  }
+  },
+  "generatedAt": "2026-07-28T08:52:38.076Z"
 }
