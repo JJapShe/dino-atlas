@@ -253,35 +253,51 @@ window.gallerySlotAssignments = {
   ],
   "liliensternus-liliensterni": [
     {
-      "source": "assets/dinosaurs/liliensternus-liliensterni-slender-basal-theropod-imagegen-v1.png",
+      "source": "assets/dinosaurs/liliensternus-liliensterni-low-skull-graphite-sage-representative-imagegen-v1.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "knollenmergel-vertisol-sheetflood",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/liliensternus-liliensterni-slate-rust-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/liliensternus-liliensterni-terracotta-bluehour-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "knollenmergel-vertisol-sheetflood",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/liliensternus-liliensterni-trackway-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/liliensternus-liliensterni-sheetflood-vertisol-habitat-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "knollenmergel-vertisol-sheetflood",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/liliensternus-liliensterni-european-basal-theropod-identity-imagegen-v2.png",
+      "source": "assets/dinosaurs/liliensternus-liliensterni-low-skull-three-finger-hand-anatomy-imagegen-v1.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "knollenmergel-vertisol-sheetflood",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/liliensternus-liliensterni-channel-separated-plateosaurus-context-ecology-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "knollenmergel-vertisol-sheetflood",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/liliensternus-liliensterni-separated-size-classes-storm-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "knollenmergel-vertisol-sheetflood",
       "expectedKind": "anatomy review"
     }
   ],

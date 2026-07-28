@@ -76,6 +76,20 @@ const HABITATS = {
     light: "neutral broken-cloud daylight with cool water reflection and no global orange cast",
     backgroundPalette: ["#75554f", "#8b7967", "#4f6657"],
   },
+  "khulsangol-alluvial-sheetflood": {
+    substrate: "pale alluvial gravel, sandy silt, debris-flow lobes, shallow sheet-flood channels, and low mud bars",
+    vegetation: "sparse conifers, cycads, ferns, horsetails, and low non-grass ground cover",
+    moisture: "seasonal alluvial debris-flow and sheet-flood plain with alternating wet and dry surfaces",
+    light: "neutral broken-cloud daylight with restrained shallow-water reflection and no global orange cast",
+    backgroundPalette: ["#8b7967", "#64796c", "#51405f"],
+  },
+  "knollenmergel-vertisol-sheetflood": {
+    substrate: "red-brown vertisol mud, polygonal desiccation cracks, shallow sheet-flood water, low channel bars, and scattered driftwood",
+    vegetation: "open low conifers, ferns, horsetails, and sparse non-grass ground cover with localized root-rich patches",
+    moisture: "semi-arid monsoonal alluvial plain with strong wet-dry cycles, periodic heavy rain, soil formation, and local sheet floods",
+    light: "neutral overcast or post-rain daylight with cool water reflection and restrained warm soil bounce",
+    backgroundPalette: ["#75554f", "#384a57", "#66917b"],
+  },
   "morrison-seasonal-alluvial-plain": {
     substrate: "pale sand and gravel bars, red-gray overbank mud, shallow or abandoned channels, and scattered driftwood",
     vegetation: "scattered araucarian conifers, cycads, ferns, horsetails, and low non-grass ground cover",
@@ -412,6 +426,8 @@ function habitatFor(dino, route) {
   let key = "conifer-fern-floodplain";
   if (dino.id === "spinosaurus-aegyptiacus") key = "kem-kem-river-delta";
   else if (dino.id === "suchomimus-tenerensis") key = "elrhaz-river-system";
+  else if (dino.id === "psittacosaurus-mongoliensis") key = "khulsangol-alluvial-sheetflood";
+  else if (dino.id === "liliensternus-liliensterni") key = "knollenmergel-vertisol-sheetflood";
   else if (["gallimimus-bullatus", "therizinosaurus-cheloniformis", "mononykus-olecranus"].includes(dino.id)) key = "nemegt-fluvial-floodplain";
   else if (dino.id === "velociraptor-mongoliensis") key = "gobi-arid";
   else if (dino.id === "parasaurolophus-walkeri") key = "dinosaur-park-coastal-plain";

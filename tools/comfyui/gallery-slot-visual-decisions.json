@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-28T09:45:08.805Z",
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-42",
-  "reviewMethod": "Sereno 2010 cranial anatomy and hatchling-to-adult series; You and Dodson 2004 four-digit manus and four-toed pes; Senter 2007 adult bipedality; Mayr et al. 2002 species-unresolved bristle specimen; Zorigt 2016 Khulsangol alluvial sheet-flood context; original-size inspection of all six selected generated images, six-role contact-sheet comparison, and isolated hand and foot crops; exact colors, markings, vegetation, posture, growth-stage coexistence, and Harpymimus same-frame encounter remain reconstruction hypotheses",
-  "targetSlots": 579,
+  "generatedAt": "2026-07-28T10:43:32.604Z",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-43",
+  "reviewMethod": "Rauhut and Hungerbuhler 1998 specimen and cranial review, Botelho et al. 2017 incomplete-manus evidence, Schoch and Seegis 2014 Knollenmergel paleosol context, original-size inspection of all six selected full frames, final six-role contact-sheet comparison, and isolated head, hand, foot, secondary-animal, and size-class crops; exact skin, colors, markings, plant mix, posture, weather response, growth-stage association, and same-frame fauna remain reconstruction hypotheses",
+  "targetSlots": 581,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -288,39 +288,57 @@
     "liliensternus-liliensterni": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/liliensternus-liliensterni-slender-basal-theropod-imagegen-v1.png",
+        "source": "assets/dinosaurs/liliensternus-liliensterni-low-skull-graphite-sage-representative-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Neutral side-oblique single animal passes the representative gate with one long low crestless head, a low muscular neck, exactly two off-ground forelimbs, two hindlimbs, readable three-forward-toe feet with a small medial first-toe cue, and one complete pelvis-origin tail.",
+        "reviewMethod": "Rauhut and Hungerbuhler 1998 specimen and cranial review, Botelho et al. 2017 incomplete-manus evidence, Schoch and Seegis 2014 Knollenmergel paleosol context, original-size inspection of all six selected full frames, final six-role contact-sheet comparison, and isolated head, hand, foot, secondary-animal, and size-class crops; exact skin, colors, markings, plant mix, posture, weather response, growth-stage association, and same-frame fauna remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-43",
+        "reviewedAt": "2026-07-28T10:43:32.604Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/liliensternus-liliensterni-slate-rust-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/liliensternus-liliensterni-terracotta-bluehour-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Reverse-facing blue-hour frame changes camera direction and light while preserving the canonical graphite, sage-teal, terracotta, ivory, and charcoal-bar placement; both feet and the full tail remain readable, and the color pattern is explicitly hypothetical.",
+        "reviewMethod": "Rauhut and Hungerbuhler 1998 specimen and cranial review, Botelho et al. 2017 incomplete-manus evidence, Schoch and Seegis 2014 Knollenmergel paleosol context, original-size inspection of all six selected full frames, final six-role contact-sheet comparison, and isolated head, hand, foot, secondary-animal, and size-class crops; exact skin, colors, markings, plant mix, posture, weather response, growth-stage association, and same-frame fauna remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-43",
+        "reviewedAt": "2026-07-28T10:43:32.604Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/liliensternus-liliensterni-trackway-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/liliensternus-liliensterni-sheetflood-vertisol-habitat-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "High-oblique shallow-sheet-flood crossing provides a distinct habitat composition with red-brown cracked vertisol, low conifers, ferns, and horsetails while keeping the single primary animal structurally separate from water and vegetation.",
+        "reviewMethod": "Rauhut and Hungerbuhler 1998 specimen and cranial review, Botelho et al. 2017 incomplete-manus evidence, Schoch and Seegis 2014 Knollenmergel paleosol context, original-size inspection of all six selected full frames, final six-role contact-sheet comparison, and isolated head, hand, foot, secondary-animal, and size-class crops; exact skin, colors, markings, plant mix, posture, weather response, growth-stage association, and same-frame fauna remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-43",
+        "reviewedAt": "2026-07-28T10:43:32.604Z"
       },
       "4": {
         "status": "approved",
-        "source": "assets/dinosaurs/liliensternus-liliensterni-european-basal-theropod-identity-imagegen-v2.png",
+        "source": "assets/dinosaurs/liliensternus-liliensterni-low-skull-three-finger-hand-anatomy-imagegen-v1.png",
         "role": "identity-anatomy",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Focused skull-and-hand view shows one long low crestless skull and one isolated near hand with exactly three conservative principal clawed fingers; the far arm and all feet are deliberately occluded or outside frame, and the incomplete fossil manus is stated rather than treated as a complete digit-formula proof.",
+        "reviewMethod": "Rauhut and Hungerbuhler 1998 specimen and cranial review, Botelho et al. 2017 incomplete-manus evidence, Schoch and Seegis 2014 Knollenmergel paleosol context, original-size inspection of all six selected full frames, final six-role contact-sheet comparison, and isolated head, hand, foot, secondary-animal, and size-class crops; exact skin, colors, markings, plant mix, posture, weather response, growth-stage association, and same-frame fauna remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-43",
+        "reviewedAt": "2026-07-28T10:43:32.604Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/liliensternus-liliensterni-channel-separated-plateosaurus-context-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "One foreground Liliensternus and one distant Plateosaurus-form animal are separated by a broad channel without contact, chase, injury, or merged silhouettes; the image represents same-fauna context rather than direct behavioral evidence.",
+        "reviewMethod": "Rauhut and Hungerbuhler 1998 specimen and cranial review, Botelho et al. 2017 incomplete-manus evidence, Schoch and Seegis 2014 Knollenmergel paleosol context, original-size inspection of all six selected full frames, final six-role contact-sheet comparison, and isolated head, hand, foot, secondary-animal, and size-class crops; exact skin, colors, markings, plant mix, posture, weather response, growth-stage association, and same-frame fauna remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-43",
+        "reviewedAt": "2026-07-28T10:43:32.604Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/liliensternus-liliensterni-separated-size-classes-storm-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Exactly two widely separated Liliensternus size classes retain independent heads, arms, legs, and tails under a pre-storm sky; the mixed syntype assemblage supports multiple individuals but not growth stage, kinship, grouping, or weather-response behavior, all of which remain hypotheses.",
+        "reviewMethod": "Rauhut and Hungerbuhler 1998 specimen and cranial review, Botelho et al. 2017 incomplete-manus evidence, Schoch and Seegis 2014 Knollenmergel paleosol context, original-size inspection of all six selected full frames, final six-role contact-sheet comparison, and isolated head, hand, foot, secondary-animal, and size-class crops; exact skin, colors, markings, plant mix, posture, weather response, growth-stage association, and same-frame fauna remain reconstruction hypotheses",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-43",
+        "reviewedAt": "2026-07-28T10:43:32.604Z"
       }
     },
     "plateosaurus-engelhardti": {
@@ -6341,6 +6359,54 @@
     },
     "assets/dinosaurs/psittacosaurus-mongoliensis-scrub-ecology-imagegen-v1.png": {
       "reason": "The former multi-animal scrub scene crowds three similar bodies, obscures hand and foot anatomy, implies an unsupported social grouping, and retains the old bristle assumption."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-efraasia-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct bite contact and overlapping bodies obscure limb counts and overstate a specific Efraasia predation event."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-efraasia-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Carcass feeding is behaviorally speculative, repeats the former violent-scene bias, and provides weaker species identity and limb visibility than the rebuilt set."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-efraasia-open-pursuit-ecology-imagegen-v2.png": {
+      "reason": "Open pursuit repeats a chase composition, leaves moving feet less auditable, and implies a specific predator-prey relationship without direct evidence."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-efraasia-ravine-trunk-bite-ecology-imagegen-v1.png": {
+      "reason": "The trunk-obstructed bite merges bodies and vegetation, blocking a reliable count of limbs, hands, and tails."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-european-basal-theropod-identity-imagegen-v2.png": {
+      "reason": "The older identity broadside uses a generic narrow lizardlike head, simplified hands, and repetitive brown staging without the new incomplete-skull and incomplete-manus caveats."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-plateosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct attack overlap obscures both animals and converts same-fauna association into an unsupported exact behavioral claim."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-plateosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The carcass scene repeats speculative feeding imagery and is less useful for anatomy, palette, or habitat review."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-plateosaurus-chase-ecology-imagegen-v1.png": {
+      "reason": "The chase frame repeats a flat predator-prey composition, uses motion to soften feet, and overstates the behavioral meaning of associated formation remains."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-plateosaurus-intense-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The stronger carcass-feeding intensity is unnecessary for the balanced atlas and prioritizes speculative gore over diagnostic anatomy."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-plateosaurus-rain-ravine-bite-ecology-imagegen-v1.png": {
+      "reason": "Rain, ravine clutter, and bite contact combine into an ambiguous overlap that prevents independent limb and tail review."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-slate-rust-pattern-imagegen-v1.png": {
+      "reason": "The former pattern is another generic brown broadside with weak palette separation and less reliable low-skull and hand identity than the rebuilt reverse-facing blue-hour variant."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-slender-basal-theropod-imagegen-v1.png": {
+      "reason": "The former representative is overly Coelophysis-like, uses a long swanlike neck and generic head, and lacks the new skull, hand, foot, and specimen-limit audit."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-thecodontosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct bite overlap and a small moving secondary animal obscure anatomy and imply a species-level predation event not demonstrated by fossils."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-thecodontosaurus-bristol-fissure-ambush-ecology-imagegen-v1.png": {
+      "reason": "The Bristol-fissure ambush conflates geographically and stratigraphically separated contexts and repeats an unsupported attack narrative."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-thecodontosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The carcass-feeding image is behaviorally and geographically speculative, visually repetitive, and less anatomy-readable than the new non-contact context scene."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-trackway-ecology-imagegen-v1.png": {
+      "reason": "The former trackway broadside uses a generic dry conifer backdrop, repeated brown palette, weak skull identity, and no independent hand or foot proof."
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-42",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-43",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -907,7 +907,55 @@
     },
     "assets/dinosaurs/psittacosaurus-mongoliensis-scrub-ecology-imagegen-v1.png": {
       "reason": "The former multi-animal scrub scene crowds three similar bodies, obscures hand and foot anatomy, implies an unsupported social grouping, and retains the old bristle assumption."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-efraasia-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct bite contact and overlapping bodies obscure limb counts and overstate a specific Efraasia predation event."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-efraasia-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Carcass feeding is behaviorally speculative, repeats the former violent-scene bias, and provides weaker species identity and limb visibility than the rebuilt set."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-efraasia-open-pursuit-ecology-imagegen-v2.png": {
+      "reason": "Open pursuit repeats a chase composition, leaves moving feet less auditable, and implies a specific predator-prey relationship without direct evidence."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-efraasia-ravine-trunk-bite-ecology-imagegen-v1.png": {
+      "reason": "The trunk-obstructed bite merges bodies and vegetation, blocking a reliable count of limbs, hands, and tails."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-european-basal-theropod-identity-imagegen-v2.png": {
+      "reason": "The older identity broadside uses a generic narrow lizardlike head, simplified hands, and repetitive brown staging without the new incomplete-skull and incomplete-manus caveats."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-plateosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct attack overlap obscures both animals and converts same-fauna association into an unsupported exact behavioral claim."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-plateosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The carcass scene repeats speculative feeding imagery and is less useful for anatomy, palette, or habitat review."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-plateosaurus-chase-ecology-imagegen-v1.png": {
+      "reason": "The chase frame repeats a flat predator-prey composition, uses motion to soften feet, and overstates the behavioral meaning of associated formation remains."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-plateosaurus-intense-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The stronger carcass-feeding intensity is unnecessary for the balanced atlas and prioritizes speculative gore over diagnostic anatomy."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-plateosaurus-rain-ravine-bite-ecology-imagegen-v1.png": {
+      "reason": "Rain, ravine clutter, and bite contact combine into an ambiguous overlap that prevents independent limb and tail review."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-slate-rust-pattern-imagegen-v1.png": {
+      "reason": "The former pattern is another generic brown broadside with weak palette separation and less reliable low-skull and hand identity than the rebuilt reverse-facing blue-hour variant."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-slender-basal-theropod-imagegen-v1.png": {
+      "reason": "The former representative is overly Coelophysis-like, uses a long swanlike neck and generic head, and lacks the new skull, hand, foot, and specimen-limit audit."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-thecodontosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct bite overlap and a small moving secondary animal obscure anatomy and imply a species-level predation event not demonstrated by fossils."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-thecodontosaurus-bristol-fissure-ambush-ecology-imagegen-v1.png": {
+      "reason": "The Bristol-fissure ambush conflates geographically and stratigraphically separated contexts and repeats an unsupported attack narrative."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-thecodontosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The carcass-feeding image is behaviorally and geographically speculative, visually repetitive, and less anatomy-readable than the new non-contact context scene."
+    },
+    "assets/dinosaurs/liliensternus-liliensterni-trackway-ecology-imagegen-v1.png": {
+      "reason": "The former trackway broadside uses a generic dry conifer backdrop, repeated brown palette, weak skull identity, and no independent hand or foot proof."
     }
   },
-  "generatedAt": "2026-07-28T09:45:08.805Z"
+  "generatedAt": "2026-07-28T10:43:32.604Z"
 }
