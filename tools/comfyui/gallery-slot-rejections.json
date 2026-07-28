@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-36",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-37",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -727,6 +727,21 @@
     },
     "assets/dinosaurs/styracosaurus-albertensis-dinosaur-park-floodplain-walk-imagegen-v2.png": {
       "reason": "The later walk candidate still uses the same dark-slate and orange treatment, an excessive all-around spike crown, a forward-leaning nasal horn, and a rhinoceros-like head and torso, so it does not clear the revised adult skull gate."
+    },
+    "assets/dinosaurs/camarasaurus-lentus-boxyhead-imagegen-v1.png": {
+      "reason": "The former representative has a low horizontal body, long low neck, small non-boxy head, and diplodocid-like silhouette, so it no longer clears the revised Camarasaurus identity gate."
+    },
+    "assets/dinosaurs/camarasaurus-lentus-copperpatch-pattern-imagegen-v1.png": {
+      "reason": "The former pattern repeats the same low long-necked body and weak box-skull identity while adding only a small copper patch, so it fails both anatomy and role-diversity gates."
+    },
+    "assets/dinosaurs/camarasaurus-lentus-morrison-ecology-imagegen-v1.png": {
+      "reason": "The former ecology image retains the same tiny head, long low neck, and whip-like silhouette, and its broadside framing adds little habitat or camera diversity."
+    },
+    "assets/dinosaurs/camarasaurus-lentus-storm-forest-aubergine-celadon-barred-ecology-imagegen-v1.png": {
+      "reason": "The former storm-forest candidate drifts toward a large ornithopod or horse-headed body, weakens the short deep skull, and uses an unstable very short neck."
+    },
+    "assets/dinosaurs/camarasaurus-lentus-allosaurus-juvenile-defense-ecology-imagegen-v1.png": {
+      "reason": "Although structurally stronger than the earlier legacy files, the direct defense scene repeats the brown palette, crowds multiple animals, and overstates an unproven adult-juvenile defense behavior."
     },
     "assets/dinosaurs/polacanthus-foxii-blackberry-moss-sacral-pattern-imagegen-v1.png": {
       "reason": "The former pattern places a smooth, bounded rectangular plate over the pelvis like a decorative saddle, weakening the fused irregular sacral-shield anatomy despite an otherwise countable body."

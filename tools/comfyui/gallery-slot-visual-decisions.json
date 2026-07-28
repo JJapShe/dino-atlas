@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-28T03:59:29.215Z",
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-36",
-  "reviewMethod": "Blows 1987 incomplete-holotype and armour boundary; Blows and Honeysett 2014 fused sacral-shield mosaic, shield scale, and uncertain armour arrangement; Barrett et al. 2002 pitted irregular fused osteoderm texture; Insole and Hutt 1994 seasonal fluvial-floodplain-lacustrine mosaic; Sweetman and Insole 2010 sheetflood, abandoned-channel, oxbow, and plant-debris setting; Raven et al. 2020 taxonomic caution; original-size inspection of all four existing files, five generated attempts, four selected new files, targeted head, fused-shield, four-limb, tail, and secondary-fauna crops; every selected primary animal was checked for one head, exactly two forelimbs and two hindlimbs, four grounded feet, and one continuous no-club tail; head, forelimb, anterior armour, exact armour arrangement, skin, color, behavior, and same-frame fauna remain reconstruction hypotheses",
-  "targetSlots": 566,
+  "generatedAt": "2026-07-28T04:58:40.144Z",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-37",
+  "reviewMethod": "Gilmore 1925 articulated skeleton; Button et al. 2014 adult skull and craniodental biomechanics; Tschopp et al. 2015 genus-level short robust skull, large external narial region, broad spatulate teeth, tubular manus with one pollex ungual, asymmetric pes with three claws, and track gauge; Carpenter et al. 2026 immature-to-adult proportional change; Morrison Formation fluvial and wet-dry palaeoenvironment literature; original-size inspection of five legacy files and all selected generated images; final six-role contact sheet plus isolated head, forefoot, hind-foot, four-limb, tail, and secondary-fauna review; each complete primary animal was checked for one head, exactly two forelimbs and two hindlimbs, and one continuous tail; exact colors, skin, external nostril placement, posture, behavior, and same-frame fauna remain reconstruction hypotheses",
+  "targetSlots": 569,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -2279,30 +2279,57 @@
     "camarasaurus-lentus": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/camarasaurus-lentus-boxyhead-imagegen-v1.png",
+        "source": "assets/dinosaurs/camarasaurus-lentus-morrison-box-skull-tubular-manus-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The neutral-daylight full body replaces the former low, long-necked diplodocid-like silhouette with a short deep head, thick neck, deep torso, shoulders no higher than the hips, exactly two forelimbs, two hindlimbs, and one medium non-whip tail.",
+        "reviewMethod": "Original-size full frame plus head and all-four-foot crops; both forefeet are tubular without an elephant-like nail row and show at most one medial pollex claw, while each hind foot separates three claws.",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-37",
+        "reviewedAt": "2026-07-28T04:58:40.144Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/camarasaurus-lentus-copperpatch-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/camarasaurus-lentus-aubergine-celadon-cloud-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing wet-ground variant preserves the rebuilt deep body, four grounded limbs, and one complete tail while clearly separating its aubergine, graphite, celadon, ivory, and restrained copper palette from the canonical daylight role.",
+        "reviewMethod": "Original-size full frame, head, limb, foot, and tail review; retained as review hold because exact skin colors and markings are hypothetical and one far hind foot is less diagnostic.",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-37",
+        "reviewedAt": "2026-07-28T04:58:40.144Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/camarasaurus-lentus-morrison-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/camarasaurus-lentus-high-oblique-seasonal-channel-browse-ecology-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The high-oblique view adds a pale sand-and-gravel channel, red-gray overbank mud, driftwood, conifers, cycads, ferns, and horsetails while retaining one complete short-headed primary with four limbs and one tail.",
+        "reviewMethod": "Original-size full frame plus head, limb, and tail crops; accepted as anatomy review because the feet are softened by perspective and low browsing is a behavior hypothesis rather than direct evidence.",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-37",
+        "reviewedAt": "2026-07-28T04:58:40.144Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/camarasaurus-lentus-box-skull-spatulate-teeth-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "The bright close view makes the short deep box-like head, broad blunt snout, one visible eye, one flesh-covered nostril, and broad spatulate crowns readable without adding an open bony narial hole.",
+        "reviewMethod": "Original-size head inspection against adult skull and craniodental references; exact external nostril placement, soft tissue, skin, and generated crown spacing remain reconstruction hypotheses.",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-37",
+        "reviewedAt": "2026-07-28T04:58:40.144Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/camarasaurus-lentus-channel-separated-allosauroid-context-ecology-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "The wide rear-oblique frame keeps one complete foreground Camarasaurus and one small distant theropod physically separated by a channel, replacing direct defense and attack staging with formation-level fauna context.",
+        "reviewMethod": "Original-size full frame plus primary four-limb and tail review and a distant-secondary crop; the theropod is non-diagnostic and the frame does not claim a proven encounter, gaze, pursuit, attack, or defense.",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-37",
+        "reviewedAt": "2026-07-28T04:58:40.144Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/camarasaurus-lentus-immature-large-head-short-neck-growth-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "The solitary immature frame uses a relatively larger head, shorter neck and tail, and more gracile limbs while retaining exactly two tubular forefeet, two hind feet with three claws, and one continuous tail.",
+        "reviewMethod": "Original-size full frame plus enlarged all-four-foot crop; accepted as anatomy review because the 5-8 m class proportions are literature-informed but the exact age, skin, color, and solitary moment are reconstructed.",
+        "reviewBatch": "2026-07-28-richness-six-slot-batch-37",
+        "reviewedAt": "2026-07-28T04:58:40.144Z"
       }
     },
     "brachiosaurus-altithorax": {
@@ -6044,6 +6071,21 @@
     },
     "assets/dinosaurs/styracosaurus-albertensis-dinosaur-park-floodplain-walk-imagegen-v2.png": {
       "reason": "The later walk candidate still uses the same dark-slate and orange treatment, an excessive all-around spike crown, a forward-leaning nasal horn, and a rhinoceros-like head and torso, so it does not clear the revised adult skull gate."
+    },
+    "assets/dinosaurs/camarasaurus-lentus-boxyhead-imagegen-v1.png": {
+      "reason": "The former representative has a low horizontal body, long low neck, small non-boxy head, and diplodocid-like silhouette, so it no longer clears the revised Camarasaurus identity gate."
+    },
+    "assets/dinosaurs/camarasaurus-lentus-copperpatch-pattern-imagegen-v1.png": {
+      "reason": "The former pattern repeats the same low long-necked body and weak box-skull identity while adding only a small copper patch, so it fails both anatomy and role-diversity gates."
+    },
+    "assets/dinosaurs/camarasaurus-lentus-morrison-ecology-imagegen-v1.png": {
+      "reason": "The former ecology image retains the same tiny head, long low neck, and whip-like silhouette, and its broadside framing adds little habitat or camera diversity."
+    },
+    "assets/dinosaurs/camarasaurus-lentus-storm-forest-aubergine-celadon-barred-ecology-imagegen-v1.png": {
+      "reason": "The former storm-forest candidate drifts toward a large ornithopod or horse-headed body, weakens the short deep skull, and uses an unstable very short neck."
+    },
+    "assets/dinosaurs/camarasaurus-lentus-allosaurus-juvenile-defense-ecology-imagegen-v1.png": {
+      "reason": "Although structurally stronger than the earlier legacy files, the direct defense scene repeats the brown palette, crowds multiple animals, and overstates an unproven adult-juvenile defense behavior."
     },
     "assets/dinosaurs/polacanthus-foxii-blackberry-moss-sacral-pattern-imagegen-v1.png": {
       "reason": "The former pattern places a smooth, bounded rectangular plate over the pelvis like a decorative saddle, weakening the fused irregular sacral-shield anatomy despite an otherwise countable body."

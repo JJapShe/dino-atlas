@@ -2033,27 +2033,51 @@ window.gallerySlotAssignments = {
   ],
   "camarasaurus-lentus": [
     {
-      "source": "assets/dinosaurs/camarasaurus-lentus-boxyhead-imagegen-v1.png",
+      "source": "assets/dinosaurs/camarasaurus-lentus-morrison-box-skull-tubular-manus-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "morrison-seasonal-alluvial-plain",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/camarasaurus-lentus-copperpatch-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/camarasaurus-lentus-aubergine-celadon-cloud-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "morrison-seasonal-alluvial-plain",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/camarasaurus-lentus-morrison-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/camarasaurus-lentus-high-oblique-seasonal-channel-browse-ecology-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "morrison-seasonal-alluvial-plain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/camarasaurus-lentus-box-skull-spatulate-teeth-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "morrison-seasonal-alluvial-plain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/camarasaurus-lentus-channel-separated-allosauroid-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "morrison-seasonal-alluvial-plain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/camarasaurus-lentus-immature-large-head-short-neck-growth-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "morrison-seasonal-alluvial-plain",
       "expectedKind": "anatomy review"
     }
   ],

@@ -76,6 +76,13 @@ const HABITATS = {
     light: "neutral broken-cloud daylight with cool water reflection and no global orange cast",
     backgroundPalette: ["#75554f", "#8b7967", "#4f6657"],
   },
+  "morrison-seasonal-alluvial-plain": {
+    substrate: "pale sand and gravel bars, red-gray overbank mud, shallow or abandoned channels, and scattered driftwood",
+    vegetation: "scattered araucarian conifers, cycads, ferns, horsetails, and low non-grass ground cover",
+    moisture: "strongly seasonal semi-arid to tropical wet-dry alluvial plain with fluctuating groundwater",
+    light: "neutral broken-cloud daylight with restrained cool channel reflection and no global orange cast",
+    backgroundPalette: ["#a18f72", "#6e7770", "#4f604d"],
+  },
   "coastal-lagoon": {
     substrate: "mudflat, pale sediment, and shallow lagoon water",
     vegetation: "coastal conifers, ferns, and low wetland plants",
@@ -400,6 +407,7 @@ function habitatFor(dino, route) {
   else if (dino.id === "pterodaustro-guinazui") key = "lagarcito-inland-lake";
   else if (dino.id === "scelidosaurus-harrisonii") key = "dorset-humid-island-river";
   else if (dino.id === "polacanthus-foxii") key = "wessex-seasonal-floodplain";
+  else if (dino.id === "camarasaurus-lentus") key = "morrison-seasonal-alluvial-plain";
   else if (/marine|seaway|ocean|sea |pliosaur|plesiosaur|ichthyosaur|mosasaur|해양|바다|수중/.test(text)) key = "marine";
   else if (/polar|prince creek|alaska|high-latitude|극지|고위도/.test(text)) key = "polar-forest";
   else if (/gobi|djadokhta|nemegt|dune|desert|sandstone|사구|사막|고비/.test(text)) key = "gobi-arid";
