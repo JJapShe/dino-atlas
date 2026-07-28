@@ -1025,35 +1025,51 @@ window.gallerySlotAssignments = {
   ],
   "dilophosaurus-wetherilli": [
     {
-      "source": "assets/dinosaurs/dilophosaurus-wetherilli-twincrest-broadside-imagegen-v1.png",
+      "source": "assets/dinosaurs/dilophosaurus-wetherilli-kayenta-twincrest-fourdigit-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "kayenta-silty-fluvial-aeolian-plain",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/dilophosaurus-wetherilli-rustcrest-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/dilophosaurus-wetherilli-petrol-violet-celadon-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "kayenta-silty-fluvial-aeolian-plain",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/dilophosaurus-wetherilli-kayenta-trackway-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/dilophosaurus-wetherilli-high-oblique-flashflood-habitat-ecology-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "kayenta-silty-fluvial-aeolian-plain",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/dilophosaurus-wetherilli-twincrest-no-frill-identity-imagegen-v2.png",
+      "source": "assets/dinosaurs/dilophosaurus-wetherilli-twincrest-fourdigit-hand-anatomy-imagegen-v2.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "kayenta-silty-fluvial-aeolian-plain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/dilophosaurus-wetherilli-channel-separated-sarahsaurus-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "kayenta-silty-fluvial-aeolian-plain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/dilophosaurus-wetherilli-subadult-dawn-growth-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "kayenta-silty-fluvial-aeolian-plain",
       "expectedKind": "anatomy review"
     }
   ],

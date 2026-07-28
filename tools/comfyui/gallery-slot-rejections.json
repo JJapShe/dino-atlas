@@ -1,12 +1,60 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-37",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-38",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
     },
     "assets/dinosaurs/dilophosaurus-wetherilli-frilled-popular-variant-imagegen-v1.png": {
       "reason": "Fictional neck frill fails the scientific identity gate."
+    },
+    "assets/dinosaurs/dilophosaurus-wetherilli-frilled-pop-variant-imagegen-v1.png": {
+      "reason": "Fictional neck frill fails the scientific identity gate."
+    },
+    "assets/dinosaurs/dilophosaurus-wetherilli-frilled-scutellosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Fictional neck frill plus a contact attack scene fails the scientific identity and clean-composition gates."
+    },
+    "assets/dinosaurs/dilophosaurus-wetherilli-kayenta-trackway-ecology-imagegen-v1.png": {
+      "reason": "Legacy ochre broadside repeats the old palette and does not provide a sufficiently readable four-digit hand audit."
+    },
+    "assets/dinosaurs/dilophosaurus-wetherilli-neck-frill-display-reference-imagegen-v1.png": {
+      "reason": "Prominent fictional neck frill fails the scientific identity gate."
+    },
+    "assets/dinosaurs/dilophosaurus-wetherilli-rustcrest-pattern-imagegen-v1.png": {
+      "reason": "Legacy rust-ochre palette repeats neighboring theropod imagery and the hands are not strong enough for the rebuilt six-slot set."
+    },
+    "assets/dinosaurs/dilophosaurus-wetherilli-sarahsaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct contact predation and crowded anatomy fail the non-graphic spatial-separation gate."
+    },
+    "assets/dinosaurs/dilophosaurus-wetherilli-sarahsaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Carcass feeding dominates the frame and prevents clean primary and secondary anatomy review."
+    },
+    "assets/dinosaurs/dilophosaurus-wetherilli-sarahsaurus-open-pursuit-ecology-imagegen-v2.png": {
+      "reason": "Unregistered pursuit scene makes live coexistence and predator-prey behavior more certain than the formation evidence allows."
+    },
+    "assets/dinosaurs/dilophosaurus-wetherilli-scutellosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct bite contact and motion make both animals structurally unreliable."
+    },
+    "assets/dinosaurs/dilophosaurus-wetherilli-scutellosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Carcass feeding and repeated ochre lighting fail the balanced everyday-ecology role."
+    },
+    "assets/dinosaurs/dilophosaurus-wetherilli-scutellosaurus-chase-ecology-imagegen-v1.png": {
+      "reason": "Chase motion and small overlapping subjects fail the limb-count and spatial-separation gates."
+    },
+    "assets/dinosaurs/dilophosaurus-wetherilli-scutellosaurus-slotwash-bite-ecology-imagegen-v1.png": {
+      "reason": "Unregistered bite scene combines direct contact with anatomy-obscuring motion."
+    },
+    "assets/dinosaurs/dilophosaurus-wetherilli-seitaad-dune-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Carcass feeding, dramatic warm light, and a speculative secondary animal fail the rebuilt formation-context role."
+    },
+    "assets/dinosaurs/dilophosaurus-wetherilli-seitaad-dune-edge-bite-ecology-imagegen-v1.png": {
+      "reason": "Direct bite contact and dust obscure limb and tail attachment."
+    },
+    "assets/dinosaurs/dilophosaurus-wetherilli-twincrest-broadside-imagegen-v1.png": {
+      "reason": "Legacy representative lacks the new original-size four-digit hand and reduced digit-IV audit."
+    },
+    "assets/dinosaurs/dilophosaurus-wetherilli-twincrest-no-frill-identity-imagegen-v2.png": {
+      "reason": "Legacy identity image confirms no frill but is superseded by the six-role set with clearer hand, foot, palette, and habitat review."
     },
     "assets/dinosaurs/apatosaurus-ajax-lowneck-floodplain-v1.png": {
       "reason": "Flat legacy render and cool blue-gray phenotype fail the final ecology slot."
