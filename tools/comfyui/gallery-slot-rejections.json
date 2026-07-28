@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-28-richness-six-slot-batch-32",
+  "reviewBatch": "2026-07-28-richness-six-slot-batch-33",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-twilight-river-indigo-zebra-ecology-imagegen-v1.png": {
       "reason": "Indigo zebra palette drift breaks the canonical Ceratosaurus phenotype."
@@ -703,6 +703,18 @@
     },
     "assets/dinosaurs/pterodaustro-guinazui-rose-mint-bristle-pattern-imagegen-v1.png": {
       "reason": "The former pattern image has overlapping extra limb and wing shapes, uses an overdominant flamingo-like rose palette, and does not preserve a countable pterodactyloid body."
+    },
+    "assets/dinosaurs/styracosaurus-albertensis-nasalhorn-frillspikes-imagegen-v1.png": {
+      "reason": "The former representative combines a forward-leaning nasal horn, too many evenly distributed long frill spikes, a rhinoceros-like heavy torso, and the same broadside composition and palette repeated across the legacy set."
+    },
+    "assets/dinosaurs/styracosaurus-albertensis-slateorange-pattern-imagegen-v1.png": {
+      "reason": "The former pattern repeats the same blue-gray and orange broadside, forward-leaning nasal horn, overbuilt spike crown, and rhino-like body instead of adding a reliable distinct role."
+    },
+    "assets/dinosaurs/styracosaurus-albertensis-floodplain-ecology-imagegen-v1.png": {
+      "reason": "The former ecology frame repeats the same broadside anatomy and palette while adding malformed near-identical background ceratopsians that weaken appendage review and overstate herd behavior."
+    },
+    "assets/dinosaurs/styracosaurus-albertensis-dinosaur-park-floodplain-walk-imagegen-v2.png": {
+      "reason": "The later walk candidate still uses the same dark-slate and orange treatment, an excessive all-around spike crown, a forward-leaning nasal horn, and a rhinoceros-like head and torso, so it does not clear the revised adult skull gate."
     }
   }
 }

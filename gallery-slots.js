@@ -3385,27 +3385,51 @@ window.gallerySlotAssignments = {
   ],
   "styracosaurus-albertensis": [
     {
-      "source": "assets/dinosaurs/styracosaurus-albertensis-nasalhorn-frillspikes-imagegen-v1.png",
+      "source": "assets/dinosaurs/styracosaurus-albertensis-recurved-nasalhorn-p3-p5-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "dinosaur-park-meander-belt",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/styracosaurus-albertensis-slateorange-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/styracosaurus-albertensis-cinnabar-turquoise-high-oblique-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "dinosaur-park-meander-belt",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/styracosaurus-albertensis-floodplain-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/styracosaurus-albertensis-meander-pointbar-low-browse-ecology-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "dinosaur-park-meander-belt",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/styracosaurus-albertensis-six-spike-frill-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "dinosaur-park-meander-belt",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/styracosaurus-albertensis-prosaurolophus-channel-coexistence-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "dinosaur-park-meander-belt",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/styracosaurus-albertensis-separated-adult-subadult-growth-ecology-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "dinosaur-park-meander-belt",
       "expectedKind": "anatomy review"
     }
   ],

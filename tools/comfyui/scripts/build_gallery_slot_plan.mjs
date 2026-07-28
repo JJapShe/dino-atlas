@@ -111,6 +111,13 @@ const HABITATS = {
     light: "soft broken-cloud daylight with restrained cool water reflection and localized warm sunlight",
     backgroundPalette: ["#566e65", "#84745d", "#4c5845"],
   },
+  "dinosaur-park-meander-belt": {
+    substrate: "dark wet silt, broad point bars, shallow swales, driftwood, and low-gradient meandering channels",
+    vegetation: "horsetails, ferns, low broad-leaved angiosperm shrubs, and scattered conifers",
+    moisture: "seasonally active fluvial meander belt upstream of the fluvial-marine transition",
+    light: "cool broken-cloud daylight with restrained water reflection and localized warm sunlight",
+    backgroundPalette: ["#596d63", "#766d5c", "#4e5c49"],
+  },
   "hell-creek-lance-fluvial-forest": {
     substrate: "meandering channels, flood-recession point bars, dark wet silt, oxbow margins, and shallow side channels",
     vegetation: "Pinaceae and cypress-like conifer canopy, ferns, mosses, low herbaceous angiosperms, and sparse cycads",
@@ -373,6 +380,7 @@ function habitatFor(dino, route) {
   else if (["gallimimus-bullatus", "therizinosaurus-cheloniformis"].includes(dino.id)) key = "nemegt-fluvial-floodplain";
   else if (dino.id === "velociraptor-mongoliensis") key = "gobi-arid";
   else if (dino.id === "parasaurolophus-walkeri") key = "dinosaur-park-coastal-plain";
+  else if (dino.id === "styracosaurus-albertensis") key = "dinosaur-park-meander-belt";
   else if (dino.id === "edmontosaurus-annectens") key = "hell-creek-lance-fluvial-forest";
   else if (dino.id === "rhamphorhynchus-muensteri") key = "solnhofen-restricted-carbonate-lagoon";
   else if (dino.id === "pterodaustro-guinazui") key = "lagarcito-inland-lake";
