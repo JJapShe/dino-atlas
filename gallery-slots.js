@@ -703,43 +703,51 @@ window.gallerySlotAssignments = {
   ],
   "thecodontosaurus-antiquus": [
     {
-      "source": "assets/dinosaurs/thecodontosaurus-antiquus-small-biped-sauropodomorph-imagegen-v1.png",
+      "source": "assets/dinosaurs/thecodontosaurus-antiquus-petrol-celadon-rhaetian-island-representative-imagegen-v3.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "bristol-rhaetian-limestone-island-archipelago",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/thecodontosaurus-antiquus-oxide-teal-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/thecodontosaurus-antiquus-mulberry-teal-bluehour-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "bristol-rhaetian-limestone-island-archipelago",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/thecodontosaurus-antiquus-bristol-fissure-forage-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/thecodontosaurus-antiquus-tytherington-limestone-island-habitat-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "bristol-rhaetian-limestone-island-archipelago",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/thecodontosaurus-antiquus-bristol-bipedal-sauropodomorph-identity-imagegen-v2.png",
+      "source": "assets/dinosaurs/thecodontosaurus-antiquus-short-dentary-thumbclaw-anatomy-imagegen-v2.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "bristol-rhaetian-limestone-island-archipelago",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/thecodontosaurus-antiquus-liliensternus-escape-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/thecodontosaurus-antiquus-coelophysoid-channel-context-ecology-imagegen-v2.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
       "phenotype": "canonical-a",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "bristol-rhaetian-limestone-island-archipelago",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/thecodontosaurus-antiquus-separated-sizeclasses-ecology-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "bristol-rhaetian-limestone-island-archipelago",
       "expectedKind": "anatomy review"
     }
   ],

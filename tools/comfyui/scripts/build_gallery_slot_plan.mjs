@@ -118,6 +118,13 @@ const HABITATS = {
     light: "neutral daylight, cool blue-hour reflection, warm low-angle context light, or restrained post-rain overcast without a global orange cast",
     backgroundPalette: ["#8b5147", "#304f4b", "#d4a36b"],
   },
+  "bristol-rhaetian-limestone-island-archipelago": {
+    substrate: "weathered Carboniferous Limestone palaeo-island pavement, low rounded ledges, shallow meteoric runoff channels, rain-fed pools, coastal rubble, and only narrow surface cracks; fossil-bearing fissures remain subsurface burial and depositional conduits rather than open living canyons",
+    vegetation: "patchy low conifers, cycads, seed ferns, true ferns, and restrained non-flowering ground cover with no modern grass, flowers, palms, broadleaf forest, or dense rainforest",
+    moisture: "small subtropical islands in a shallow Rhaetian sea with aerated rainwater runoff, local freshwater lenses, wet limestone after squalls, tidal shallows, and nearby low islands",
+    light: "neutral coastal overcast, cool blue-hour reflection, misty morning, or a restrained sunbreak after rain without a global orange cast",
+    backgroundPalette: ["#d8d3c3", "#587f83", "#254b50"],
+  },
   "los-colorados-seasonal-fluvial-floodplain": {
     substrate: "oxidized red sandstone and siltstone, moderately sinuous sand channels, broad overbank floodplain, shallow ponds, crevasse splays, pebbly bars, and scattered driftwood",
     vegetation: "important but patchy cover of araucarioid conifers, seed ferns, true ferns, horsetails, and low cycad-like plants with no modern grass or flowers",
@@ -472,6 +479,7 @@ function habitatFor(dino, route) {
   else if (dino.id === "liliensternus-liliensterni") key = "knollenmergel-vertisol-sheetflood";
   else if (dino.id === "panphagia-protos") key = "ischigualasto-la-pena-upper-floodplain";
   else if (dino.id === "saturnalia-tupiniquim") key = "santa-maria-alemoa-red-mudstone-floodplain";
+  else if (dino.id === "thecodontosaurus-antiquus") key = "bristol-rhaetian-limestone-island-archipelago";
   else if (dino.id === "chromogisaurus-novasi") key = "ischigualasto-cancha-de-bochas-floodplain";
   else if (dino.id === "lessemsaurus-sauropoides") key = "los-colorados-seasonal-fluvial-floodplain";
   else if (dino.id === "ceratosaurus-nasicornis") key = "garden-park-felch-point-bar";

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-29-richness-six-slot-batch-49",
+  "reviewBatch": "2026-07-29-richness-six-slot-batch-50",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-camptosaurus-attack-ecology-imagegen-v1.png": {
       "reason": "Direct named-species attack and body overlap prevent independent limb, hand, tail and prey-anatomy review and overstate a specific behavioral event."
@@ -167,8 +167,35 @@
     "assets/dinosaurs/hesperosaurus-mjosi-ceratosaurus-tailspike-impact-defense-ecology-imagegen-v1.png": {
       "reason": "Prominent impalement, blood, and an obscured tail-spike contact fail the non-graphic educational ecology gate."
     },
+    "assets/dinosaurs/thecodontosaurus-antiquus-bristol-bipedal-sauropodomorph-identity-imagegen-v2.png": {
+      "reason": "The old identity frame uses a generic long-necked ornithomimid-like body, open fan hands with long equal claws, and a dry conifer plain rather than the revised short-dentary, robust-thumb and limestone-island evidence gate."
+    },
+    "assets/dinosaurs/thecodontosaurus-antiquus-bristol-fissure-forage-ecology-imagegen-v1.png": {
+      "reason": "The multi-animal foraging claim is unsupported, individual hands and feet are unreadable, and the scene treats generic arid redbeds as the living habitat instead of a small Rhaetian limestone island."
+    },
+    "assets/dinosaurs/thecodontosaurus-antiquus-charcoal-citrine-fissure-pattern-imagegen-v1.png": {
+      "reason": "The unregistered pattern repeats the same gray-brown broadside, long hook hands, long-necked generic body, and a literal deep fissure corridor without adding a stable role."
+    },
     "assets/dinosaurs/thecodontosaurus-antiquus-liliensternus-defensive-sidestep-ecology-imagegen-v1.png": {
-      "reason": "The primary tail reads as two parallel distal shafts and the head drifts toward a predatory profile."
+      "reason": "The primary tail reads as two parallel distal shafts, the head drifts toward a predatory profile, and the named direct-defense encounter is behaviorally overconfident."
+    },
+    "assets/dinosaurs/thecodontosaurus-antiquus-liliensternus-escape-ecology-imagegen-v1.png": {
+      "reason": "The named pursuit overstates direct evidence, dust and motion hide appendage attachments, and the primary hand remains a long-hook generic reconstruction."
+    },
+    "assets/dinosaurs/thecodontosaurus-antiquus-liliensternus-fissure-scramble-defense-ecology-imagegen-v1.png": {
+      "reason": "The scramble scene places living animals in an open fissure, the primary forelimbs and feet overlap, and the distant predator identity is too generic for a direct species-level defense claim."
+    },
+    "assets/dinosaurs/thecodontosaurus-antiquus-liliensternus-fissure-wall-brace-defense-ecology-imagegen-v1.png": {
+      "reason": "The literal deep-fissure wall-brace habitat, long-necked body, enlarged hook hands and overlapping predator staging conflict with the revised island-surface and disarticulated-manus gate."
+    },
+    "assets/dinosaurs/thecodontosaurus-antiquus-oxide-teal-pattern-imagegen-v1.png": {
+      "reason": "The former pattern is another flat gray broadside with very long dangling fingers, repetitive tail bands and weak species-level separation from the old representative."
+    },
+    "assets/dinosaurs/thecodontosaurus-antiquus-petrol-celadon-rhaetian-island-representative-imagegen-v2.png": {
+      "reason": "The first rebuild representative preserved the body and habitat well, but original-size hand crops show two oversized hooks on one hand and no stable dominant thumb on the other, so it cannot serve as count-level control."
+    },
+    "assets/dinosaurs/thecodontosaurus-antiquus-small-biped-sauropodomorph-imagegen-v1.png": {
+      "reason": "The former representative has an ornithomimid-like head, long open hook hands, repetitive gray broadside staging and generic dry redbed habitat instead of the revised short-dentary and limestone-island reconstruction."
     },
     "assets/dinosaurs/sarahsaurus-aurifontanalis-dilophosaurus-arroyo-block-defense-ecology-imagegen-v1.png": {
       "reason": "Oversized therizinosaur-like hand claws and a weak Dilophosaurus crest identity fail the interaction slot."

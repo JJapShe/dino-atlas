@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-28T18:26:42.534Z",
-  "reviewBatch": "2026-07-29-richness-six-slot-batch-49",
-  "reviewMethod": "Bronzati, Muller and Langer 2019 cranial description of MCP-3845-PV: an estimated 89.5-103 mm skull less than two thirds of the 156 mm femur, 13 maxillary positions, approximately 21-22 dentary positions, mixed recurved and leaf-shaped crowns, and an at least partially faunivorous interpretation; Langer, Franca and Gabriel 2007 scapulocoracoid, humerus, radius and ulna evidence from two specimens, no carpals, metacarpals or manual phalanges, an unusually long olecranon, and only a tentative locomotor boundary between obligate biped and facultative quadruped; Langer 2003 near-complete pelvic and hindlimb description from three partial skeletons; Langer 2005 Waldsanga Alemoa local-fauna context with Hyperodapedon, aetosaurs and basal dinosaurs; original-size inspection of all six selected frames plus representative head, forelimb, feet and tail crops, pattern limb crop, habitat animal crop, reduced-skull and smooth-elbow crops, distant unarmored rhynchosaur crop, forelimb-support pose crop, and a six-role contact sheet; complete living skull outline, hands, habitual gait, skin, colors, markings, exact plants, diet, support behavior and same-frame fauna remain comparative or ecological hypotheses",
-  "targetSlots": 592,
+  "generatedAt": "2026-07-29T11:39:15.392Z",
+  "reviewBatch": "2026-07-29-richness-six-slot-batch-50",
+  "reviewMethod": "Ballell, Rayfield and Benton 2020 osteological redescription: more than 1000 disarticulated Tytherington specimens, straight spear-like crowns with coarse oblique serrations, metacarpals I-III, a robust curved digit-I ungual, more slender outer unguals, an unknown complete manual phalangeal formula, complete femora ranging from 12 to 22 cm, and an agile predominantly herbivorous biped with possible occasional faunivory; Ballell and Benton 2022 appendicular myology and bipedal reconstruction; Whiteside and Marshall 2008 small limestone islands, mixed freshwater-marine influence, meteoric runoff, short transport into fissure deposits, and island-surface rather than open-canyon habitat; original-size inspection of all six selected frames plus representative head, paired-hand, feet and tail crops, pattern head, hands, feet and tail crops, fauna primary and distant-taxon crops, size-class crops, and a six-role contact sheet; complete living skull outline, exact individual proportions assembled from disarticulated material, complete hands, skin, colors, markings, exact plants, same-frame coelophysoid contact, social grouping and size-class association remain comparative or ecological hypotheses",
+  "targetSlots": 593,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -792,48 +792,57 @@
     "thecodontosaurus-antiquus": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/thecodontosaurus-antiquus-small-biped-sauropodomorph-imagegen-v1.png",
+        "source": "assets/dinosaurs/thecodontosaurus-antiquus-petrol-celadon-rhaetian-island-representative-imagegen-v3.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The complete neutral-daylight animal preserves a relatively short low head, moderate neck, exactly two folded forelimbs with one dominant robust thumb ungual on each side, two long hind limbs with readable principal toes, and one uninterrupted pelvis-origin tail without ornithomimid, plateosaur, extra-limb or double-tail drift.",
+        "reviewMethod": "Ballell, Rayfield and Benton 2020 osteological redescription: more than 1000 disarticulated Tytherington specimens, straight spear-like crowns with coarse oblique serrations, metacarpals I-III, a robust curved digit-I ungual, more slender outer unguals, an unknown complete manual phalangeal formula, complete femora ranging from 12 to 22 cm, and an agile predominantly herbivorous biped with possible occasional faunivory; Ballell and Benton 2022 appendicular myology and bipedal reconstruction; Whiteside and Marshall 2008 small limestone islands, mixed freshwater-marine influence, meteoric runoff, short transport into fissure deposits, and island-surface rather than open-canyon habitat; original-size inspection of all six selected frames plus representative head, paired-hand, feet and tail crops, pattern head, hands, feet and tail crops, fauna primary and distant-taxon crops, size-class crops, and a six-role contact sheet; complete living skull outline, exact individual proportions assembled from disarticulated material, complete hands, skin, colors, markings, exact plants, same-frame coelophysoid contact, social grouping and size-class association remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-50",
+        "reviewedAt": "2026-07-29T11:39:15.392Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/thecodontosaurus-antiquus-oxide-teal-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/thecodontosaurus-antiquus-mulberry-teal-bluehour-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing blue-hour variant retains two forelimbs, two hind limbs and one tail while replacing the legacy gray broadside with a distinct mulberry, teal, celadon and coral phenotype; hand-tip overlap keeps it below anatomy-representative rank.",
+        "reviewMethod": "Ballell, Rayfield and Benton 2020 osteological redescription: more than 1000 disarticulated Tytherington specimens, straight spear-like crowns with coarse oblique serrations, metacarpals I-III, a robust curved digit-I ungual, more slender outer unguals, an unknown complete manual phalangeal formula, complete femora ranging from 12 to 22 cm, and an agile predominantly herbivorous biped with possible occasional faunivory; Ballell and Benton 2022 appendicular myology and bipedal reconstruction; Whiteside and Marshall 2008 small limestone islands, mixed freshwater-marine influence, meteoric runoff, short transport into fissure deposits, and island-surface rather than open-canyon habitat; original-size inspection of all six selected frames plus representative head, paired-hand, feet and tail crops, pattern head, hands, feet and tail crops, fauna primary and distant-taxon crops, size-class crops, and a six-role contact sheet; complete living skull outline, exact individual proportions assembled from disarticulated material, complete hands, skin, colors, markings, exact plants, same-frame coelophysoid contact, social grouping and size-class association remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-50",
+        "reviewedAt": "2026-07-29T11:39:15.392Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/thecodontosaurus-antiquus-bristol-fissure-forage-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/thecodontosaurus-antiquus-tytherington-limestone-island-habitat-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The high-oblique environment-led frame places one small smooth-backed animal on a wet limestone island surface among rain-fed pools, shallow marine water and nearby low islands, explicitly avoiding the rejected draft's dorsal spines and the legacy literal fissure-canyon habitat.",
+        "reviewMethod": "Ballell, Rayfield and Benton 2020 osteological redescription: more than 1000 disarticulated Tytherington specimens, straight spear-like crowns with coarse oblique serrations, metacarpals I-III, a robust curved digit-I ungual, more slender outer unguals, an unknown complete manual phalangeal formula, complete femora ranging from 12 to 22 cm, and an agile predominantly herbivorous biped with possible occasional faunivory; Ballell and Benton 2022 appendicular myology and bipedal reconstruction; Whiteside and Marshall 2008 small limestone islands, mixed freshwater-marine influence, meteoric runoff, short transport into fissure deposits, and island-surface rather than open-canyon habitat; original-size inspection of all six selected frames plus representative head, paired-hand, feet and tail crops, pattern head, hands, feet and tail crops, fauna primary and distant-taxon crops, size-class crops, and a six-role contact sheet; complete living skull outline, exact individual proportions assembled from disarticulated material, complete hands, skin, colors, markings, exact plants, same-frame coelophysoid contact, social grouping and size-class association remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-50",
+        "reviewedAt": "2026-07-29T11:39:15.392Z"
       },
       "4": {
         "status": "approved",
-        "source": "assets/dinosaurs/thecodontosaurus-antiquus-bristol-bipedal-sauropodomorph-identity-imagegen-v2.png",
+        "source": "assets/dinosaurs/thecodontosaurus-antiquus-short-dentary-thumbclaw-anatomy-imagegen-v2.png",
         "role": "identity-anatomy",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The deliberate head-neck-hand crop keeps the mouth closed, separates both forelimbs, and gives the near compact hand one deep curved thumb ungual with much slimmer outer tips while the caption explicitly withholds a complete manual formula.",
+        "reviewMethod": "Ballell, Rayfield and Benton 2020 osteological redescription: more than 1000 disarticulated Tytherington specimens, straight spear-like crowns with coarse oblique serrations, metacarpals I-III, a robust curved digit-I ungual, more slender outer unguals, an unknown complete manual phalangeal formula, complete femora ranging from 12 to 22 cm, and an agile predominantly herbivorous biped with possible occasional faunivory; Ballell and Benton 2022 appendicular myology and bipedal reconstruction; Whiteside and Marshall 2008 small limestone islands, mixed freshwater-marine influence, meteoric runoff, short transport into fissure deposits, and island-surface rather than open-canyon habitat; original-size inspection of all six selected frames plus representative head, paired-hand, feet and tail crops, pattern head, hands, feet and tail crops, fauna primary and distant-taxon crops, size-class crops, and a six-role contact sheet; complete living skull outline, exact individual proportions assembled from disarticulated material, complete hands, skin, colors, markings, exact plants, same-frame coelophysoid contact, social grouping and size-class association remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-50",
+        "reviewedAt": "2026-07-29T11:39:15.392Z"
       },
       "5": {
         "status": "approved",
-        "source": "assets/dinosaurs/thecodontosaurus-antiquus-liliensternus-escape-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/thecodontosaurus-antiquus-coelophysoid-channel-context-ecology-imagegen-v2.png",
         "role": "interaction",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "One complete foreground Thecodontosaurus and one much smaller distant coelophysoid-like contemporary remain separated across a broad channel with no overlap, contact, pursuit, attack or named-species certainty.",
+        "reviewMethod": "Ballell, Rayfield and Benton 2020 osteological redescription: more than 1000 disarticulated Tytherington specimens, straight spear-like crowns with coarse oblique serrations, metacarpals I-III, a robust curved digit-I ungual, more slender outer unguals, an unknown complete manual phalangeal formula, complete femora ranging from 12 to 22 cm, and an agile predominantly herbivorous biped with possible occasional faunivory; Ballell and Benton 2022 appendicular myology and bipedal reconstruction; Whiteside and Marshall 2008 small limestone islands, mixed freshwater-marine influence, meteoric runoff, short transport into fissure deposits, and island-surface rather than open-canyon habitat; original-size inspection of all six selected frames plus representative head, paired-hand, feet and tail crops, pattern head, hands, feet and tail crops, fauna primary and distant-taxon crops, size-class crops, and a six-role contact sheet; complete living skull outline, exact individual proportions assembled from disarticulated material, complete hands, skin, colors, markings, exact plants, same-frame coelophysoid contact, social grouping and size-class association remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-50",
+        "reviewedAt": "2026-07-29T11:39:15.392Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/thecodontosaurus-antiquus-separated-sizeclasses-ecology-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "The larger and smaller reconstructions occupy separate limestone terraces and depth planes, retain independent two-forelimb, two-hindlimb and one-tail body plans, and are captioned only as a cautious visualization of the 12-to-22 cm femoral range rather than a family, herd or associated pair.",
+        "reviewMethod": "Ballell, Rayfield and Benton 2020 osteological redescription: more than 1000 disarticulated Tytherington specimens, straight spear-like crowns with coarse oblique serrations, metacarpals I-III, a robust curved digit-I ungual, more slender outer unguals, an unknown complete manual phalangeal formula, complete femora ranging from 12 to 22 cm, and an agile predominantly herbivorous biped with possible occasional faunivory; Ballell and Benton 2022 appendicular myology and bipedal reconstruction; Whiteside and Marshall 2008 small limestone islands, mixed freshwater-marine influence, meteoric runoff, short transport into fissure deposits, and island-surface rather than open-canyon habitat; original-size inspection of all six selected frames plus representative head, paired-hand, feet and tail crops, pattern head, hands, feet and tail crops, fauna primary and distant-taxon crops, size-class crops, and a six-role contact sheet; complete living skull outline, exact individual proportions assembled from disarticulated material, complete hands, skin, colors, markings, exact plants, same-frame coelophysoid contact, social grouping and size-class association remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-50",
+        "reviewedAt": "2026-07-29T11:39:15.392Z"
       }
     },
     "efraasia-minor": {
@@ -5764,8 +5773,35 @@
     "assets/dinosaurs/hesperosaurus-mjosi-ceratosaurus-tailspike-impact-defense-ecology-imagegen-v1.png": {
       "reason": "Prominent impalement, blood, and an obscured tail-spike contact fail the non-graphic educational ecology gate."
     },
+    "assets/dinosaurs/thecodontosaurus-antiquus-bristol-bipedal-sauropodomorph-identity-imagegen-v2.png": {
+      "reason": "The old identity frame uses a generic long-necked ornithomimid-like body, open fan hands with long equal claws, and a dry conifer plain rather than the revised short-dentary, robust-thumb and limestone-island evidence gate."
+    },
+    "assets/dinosaurs/thecodontosaurus-antiquus-bristol-fissure-forage-ecology-imagegen-v1.png": {
+      "reason": "The multi-animal foraging claim is unsupported, individual hands and feet are unreadable, and the scene treats generic arid redbeds as the living habitat instead of a small Rhaetian limestone island."
+    },
+    "assets/dinosaurs/thecodontosaurus-antiquus-charcoal-citrine-fissure-pattern-imagegen-v1.png": {
+      "reason": "The unregistered pattern repeats the same gray-brown broadside, long hook hands, long-necked generic body, and a literal deep fissure corridor without adding a stable role."
+    },
     "assets/dinosaurs/thecodontosaurus-antiquus-liliensternus-defensive-sidestep-ecology-imagegen-v1.png": {
-      "reason": "The primary tail reads as two parallel distal shafts and the head drifts toward a predatory profile."
+      "reason": "The primary tail reads as two parallel distal shafts, the head drifts toward a predatory profile, and the named direct-defense encounter is behaviorally overconfident."
+    },
+    "assets/dinosaurs/thecodontosaurus-antiquus-liliensternus-escape-ecology-imagegen-v1.png": {
+      "reason": "The named pursuit overstates direct evidence, dust and motion hide appendage attachments, and the primary hand remains a long-hook generic reconstruction."
+    },
+    "assets/dinosaurs/thecodontosaurus-antiquus-liliensternus-fissure-scramble-defense-ecology-imagegen-v1.png": {
+      "reason": "The scramble scene places living animals in an open fissure, the primary forelimbs and feet overlap, and the distant predator identity is too generic for a direct species-level defense claim."
+    },
+    "assets/dinosaurs/thecodontosaurus-antiquus-liliensternus-fissure-wall-brace-defense-ecology-imagegen-v1.png": {
+      "reason": "The literal deep-fissure wall-brace habitat, long-necked body, enlarged hook hands and overlapping predator staging conflict with the revised island-surface and disarticulated-manus gate."
+    },
+    "assets/dinosaurs/thecodontosaurus-antiquus-oxide-teal-pattern-imagegen-v1.png": {
+      "reason": "The former pattern is another flat gray broadside with very long dangling fingers, repetitive tail bands and weak species-level separation from the old representative."
+    },
+    "assets/dinosaurs/thecodontosaurus-antiquus-petrol-celadon-rhaetian-island-representative-imagegen-v2.png": {
+      "reason": "The first rebuild representative preserved the body and habitat well, but original-size hand crops show two oversized hooks on one hand and no stable dominant thumb on the other, so it cannot serve as count-level control."
+    },
+    "assets/dinosaurs/thecodontosaurus-antiquus-small-biped-sauropodomorph-imagegen-v1.png": {
+      "reason": "The former representative has an ornithomimid-like head, long open hook hands, repetitive gray broadside staging and generic dry redbed habitat instead of the revised short-dentary and limestone-island reconstruction."
     },
     "assets/dinosaurs/sarahsaurus-aurifontanalis-dilophosaurus-arroyo-block-defense-ecology-imagegen-v1.png": {
       "reason": "Oversized therizinosaur-like hand claws and a weak Dilophosaurus crest identity fail the interaction slot."
