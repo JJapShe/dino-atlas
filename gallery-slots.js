@@ -971,43 +971,51 @@ window.gallerySlotAssignments = {
   ],
   "megalosaurus-bucklandii": [
     {
-      "source": "assets/dinosaurs/megalosaurus-bucklandii-longskull-theropod-imagegen-v1.png",
+      "source": "assets/dinosaurs/megalosaurus-bucklandii-ironblue-taynton-representative-imagegen-v3.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "stonesfield-carbonate-island-shallow-shelf",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/megalosaurus-bucklandii-bluegray-umber-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/megalosaurus-bucklandii-aubergine-celadon-bluehour-pattern-imagegen-v3.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "stonesfield-carbonate-island-shallow-shelf",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/megalosaurus-bucklandii-oxfordshire-trackway-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/megalosaurus-bucklandii-stonesfield-carbonate-island-stormwash-habitat-imagegen-v3.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "stonesfield-carbonate-island-shallow-shelf",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/megalosaurus-bucklandii-english-megalosauroid-identity-imagegen-v2.png",
+      "source": "assets/dinosaurs/megalosaurus-bucklandii-known-jaw-robust-forelimb-anatomy-imagegen-v3.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "stonesfield-carbonate-island-shallow-shelf",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/megalosaurus-bucklandii-cetiosaurus-attack-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/megalosaurus-bucklandii-channel-separated-sauropod-context-ecology-imagegen-v3.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "stonesfield-carbonate-island-shallow-shelf",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/megalosaurus-bucklandii-postrain-runoff-investigation-ecology-imagegen-v3.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "stonesfield-carbonate-island-shallow-shelf",
       "expectedKind": "anatomy review"
     }
   ],

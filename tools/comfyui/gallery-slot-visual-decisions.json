@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-29T12:24:59.773Z",
-  "reviewBatch": "2026-07-29-richness-six-slot-batch-51",
-  "reviewMethod": "Upchurch and Martin 2003 lectotype review: fragmentary dorsal and sacral material, about 30 anterior-to-middle caudals, pectoral and pelvic girdles, humeri, ulnae, partial metacarpals, femora, tibiae and fibulae; absent skull, complete manus, pedes, complete neck and distal tail; one large and at least two smaller disarticulated individuals without evidence of a social group; limb-proportion and manus gate: humerus about 1236-1260 mm versus 1615 mm femur, short metacarpals in a U-shaped near-vertical arc rather than elongated camarasauromorph columns, shoulder not raised into a brachiosaur silhouette; Allen and Kaye 1973 plus BGS Forest Marble Formation context: green-grey calcareous mud, tidal channels, bioclastic and oolitic limestone shoals and channel fills, shallow marine margins and local coastal swamp; original-size inspection of all six selected 1672x941 images and a six-role contact sheet; representative, pattern and anatomy frames retain exactly two forelimbs, two hindlimbs and one tail; multi-animal frames keep every body spatially separated; living skull outline, complete hands and feet, neck length, distal tail, skin, colors, markings, exact vegetation, same-frame megalosaurid association and size-class coexistence remain comparative or ecological hypotheses",
-  "targetSlots": 594,
+  "generatedAt": "2026-07-29T23:33:23.735Z",
+  "reviewBatch": "2026-07-30-richness-six-slot-batch-52",
+  "reviewMethod": "Benson 2010 review of Megalosaurus bucklandii: lectotype right dentary OUMNH J.13505 with 13-14 tooth positions, unexpanded third alveolus and symphysis, straight dorsal outline, shallow lateral neurovascular groove, tall unfused interdental plates, two Meckelian foramina and a shallow Meckelian groove; referred non-articulated maxillary, jugal, mandibular, axial, pectoral, forelimb, pelvic and hindlimb material but no complete skull, radius, manus, complete pes, articulated skeleton or distal tail; robust humeri, one ulna and one ungual support only a conservative medium forelimb while the living head, hand and foot formulas remain comparative; Natural History Museum approximately 6 m estimate and unknown feather condition; Stonesfield GCR fawn-grey calcareous sand and silt plus shell-fragmental and oolitic limestone on a high-energy shallow carbonate shelf, with terrestrial remains reworked by storms rather than proof of aquatic habitat; original-size inspection of all six selected 1672x941 images and focused full-body, head, forelimb, foot, tail and secondary-animal crops; complete primary animals retain exactly two forelimbs, two hindlimbs and one pelvis-origin tail, the distant generalized sauropod-form remains channel-separated, and complete skull outline, manus, pes, integument, colors, markings, exact vegetation, same-frame fauna and runoff investigation remain comparative or ecological hypotheses",
+  "targetSlots": 595,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -1092,48 +1092,57 @@
     "megalosaurus-bucklandii": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/megalosaurus-bucklandii-longskull-theropod-imagegen-v1.png",
+        "source": "assets/dinosaurs/megalosaurus-bucklandii-ironblue-taynton-representative-imagegen-v3.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Neutral full-body frame preserves exactly two medium forelimbs, two grounded hindlimbs and one pelvis-origin tail with a restrained iron-blue, oxblood, ochre and limestone palette. The robust body and arms remain compatible with known material while the complete head, hands and feet are explicitly comparative.",
+        "reviewMethod": "Benson 2010 lectotype dentary and referred-bone boundary; Natural History Museum approximately 6 m estimate and unknown feathers; Stonesfield GCR storm-reworked shallow carbonate-shelf context; original-size review of six 1672x941 selected frames plus focused head, limb, foot, tail and distant-fauna crops; complete skull, manus, pes, integument, color, behavior and same-frame fauna remain hypotheses",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-52",
+        "reviewedAt": "2026-07-29T23:33:23.735Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/megalosaurus-bucklandii-bluegray-umber-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/megalosaurus-bucklandii-aubergine-celadon-bluehour-pattern-imagegen-v3.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Reverse-facing blue-hour frame supplies a distinct aubergine, celadon, sienna and sparse saffron pattern while retaining two forelimbs, two hindlimbs and one tail. Its integument and complete digit formulas remain hypothetical, so the app keeps it below representative rank.",
+        "reviewMethod": "Benson 2010 lectotype dentary and referred-bone boundary; Natural History Museum approximately 6 m estimate and unknown feathers; Stonesfield GCR storm-reworked shallow carbonate-shelf context; original-size review of six 1672x941 selected frames plus focused head, limb, foot, tail and distant-fauna crops; complete skull, manus, pes, integument, color, behavior and same-frame fauna remain hypotheses",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-52",
+        "reviewedAt": "2026-07-29T23:33:23.735Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/megalosaurus-bucklandii-oxfordshire-trackway-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/megalosaurus-bucklandii-stonesfield-carbonate-island-stormwash-habitat-imagegen-v3.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "High-oblique habitat frame prioritizes a low carbonate-island surface, calcareous storm-wash bars, shallow runoff and adjacent shelf water while keeping one small dinosaur on exposed land. It avoids assigning a trackway to Megalosaurus or treating the marine depositional bed as an aquatic lifestyle.",
+        "reviewMethod": "Benson 2010 lectotype dentary and referred-bone boundary; Natural History Museum approximately 6 m estimate and unknown feathers; Stonesfield GCR storm-reworked shallow carbonate-shelf context; original-size review of six 1672x941 selected frames plus focused head, limb, foot, tail and distant-fauna crops; complete skull, manus, pes, integument, color, behavior and same-frame fauna remain hypotheses",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-52",
+        "reviewedAt": "2026-07-29T23:33:23.735Z"
       },
       "4": {
         "status": "approved",
-        "source": "assets/dinosaurs/megalosaurus-bucklandii-english-megalosauroid-identity-imagegen-v2.png",
+        "source": "assets/dinosaurs/megalosaurus-bucklandii-known-jaw-robust-forelimb-anatomy-imagegen-v3.png",
         "role": "identity-anatomy",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Focused head, dentary and upper-forelimb comparison enlarges the directly informed jaw and robust humerus-ulna region while deliberately hiding the unsupported complete manus behind limestone. The living skull envelope remains labeled as comparative rather than diagnostic.",
+        "reviewMethod": "Benson 2010 lectotype dentary and referred-bone boundary; Natural History Museum approximately 6 m estimate and unknown feathers; Stonesfield GCR storm-reworked shallow carbonate-shelf context; original-size review of six 1672x941 selected frames plus focused head, limb, foot, tail and distant-fauna crops; complete skull, manus, pes, integument, color, behavior and same-frame fauna remain hypotheses",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-52",
+        "reviewedAt": "2026-07-29T23:33:23.735Z"
       },
       "5": {
         "status": "approved",
-        "source": "assets/dinosaurs/megalosaurus-bucklandii-cetiosaurus-attack-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/megalosaurus-bucklandii-channel-separated-sauropod-context-ecology-imagegen-v3.png",
         "role": "interaction",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Foreground Megalosaurus and one distant generalized sauropod-form occupy separate land surfaces across a broad channel without gaze, pursuit, contact or named-species predation. The primary animal keeps independently readable paired limbs and a single tail.",
+        "reviewMethod": "Benson 2010 lectotype dentary and referred-bone boundary; Natural History Museum approximately 6 m estimate and unknown feathers; Stonesfield GCR storm-reworked shallow carbonate-shelf context; original-size review of six 1672x941 selected frames plus focused head, limb, foot, tail and distant-fauna crops; complete skull, manus, pes, integument, color, behavior and same-frame fauna remain hypotheses",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-52",
+        "reviewedAt": "2026-07-29T23:33:23.735Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/megalosaurus-bucklandii-postrain-runoff-investigation-ecology-imagegen-v3.png",
+        "role": "social-growth-defense",
+        "reason": "Solitary post-rain runoff investigation replaces an unsupported attack or group scene. Both hind feet are planted, two forelimbs and one tail remain separate, and the drinking or inspection interpretation is explicitly treated as a behavioral hypothesis.",
+        "reviewMethod": "Benson 2010 lectotype dentary and referred-bone boundary; Natural History Museum approximately 6 m estimate and unknown feathers; Stonesfield GCR storm-reworked shallow carbonate-shelf context; original-size review of six 1672x941 selected frames plus focused head, limb, foot, tail and distant-fauna crops; complete skull, manus, pes, integument, color, behavior and same-frame fauna remain hypotheses",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-52",
+        "reviewedAt": "2026-07-29T23:33:23.735Z"
       }
     },
     "ceratosaurus-nasicornis": {
@@ -5617,6 +5626,36 @@
     }
   },
   "rejectedSources": {
+    "assets/dinosaurs/megalosaurus-bucklandii-bluegray-umber-pattern-imagegen-v1.png": {
+      "reason": "Generic gray-brown broadside theropod, weak dentary and robust-forelimb identity cues, and repetitive palette do not support the rebuilt six-role gallery."
+    },
+    "assets/dinosaurs/megalosaurus-bucklandii-cetiosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct named-species attack overstates uncertain association, merges bodies, and prevents independent limb, foot and tail review."
+    },
+    "assets/dinosaurs/megalosaurus-bucklandii-cetiosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Named carcass feeding is behaviorally overconfident and prioritizes speculative trophic contact over readable primary anatomy."
+    },
+    "assets/dinosaurs/megalosaurus-bucklandii-cetiosaurus-open-pursuit-ecology-imagegen-v2.png": {
+      "reason": "Repeated open pursuit asserts unsupported species-level predation and motion makes both animals' appendage counts unreliable."
+    },
+    "assets/dinosaurs/megalosaurus-bucklandii-cetiosaurus-quarry-slope-bite-attempt-ecology-imagegen-v1.png": {
+      "reason": "A named bite attempt and close overlap obscure limbs and tails while presenting a speculative event as if directly evidenced."
+    },
+    "assets/dinosaurs/megalosaurus-bucklandii-english-megalosauroid-identity-imagegen-v2.png": {
+      "reason": "Bulky tyrannosaur-like head and barrel body overstate a complete skull and articulated body plan that are not preserved for Megalosaurus."
+    },
+    "assets/dinosaurs/megalosaurus-bucklandii-foggy-quarry-inkblack-chalkbar-ecology-imagegen-v1.png": {
+      "reason": "Dark fog and generic quarry staging reduce hand, foot and tail readability and add no evidence-bounded Stonesfield habitat role."
+    },
+    "assets/dinosaurs/megalosaurus-bucklandii-inkblack-chalkbar-pattern-imagegen-v1.png": {
+      "reason": "The fantasy-like high-contrast bar pattern and generic theropod silhouette repeat weak identity cues without improving anatomy."
+    },
+    "assets/dinosaurs/megalosaurus-bucklandii-longskull-theropod-imagegen-v1.png": {
+      "reason": "Former representative treats a complete long skull and digit formulas too confidently, uses a generic theropod body, and lacks the documented evidence boundary."
+    },
+    "assets/dinosaurs/megalosaurus-bucklandii-oxfordshire-trackway-ecology-imagegen-v1.png": {
+      "reason": "The scene assigns a nondiagnostic trackway to Megalosaurus and obscures anatomy in a generic lagoon composition."
+    },
     "assets/dinosaurs/ceratosaurus-nasicornis-camptosaurus-attack-ecology-imagegen-v1.png": {
       "reason": "Direct named-species attack and body overlap prevent independent limb, hand, tail and prey-anatomy review and overstate a specific behavioral event."
     },

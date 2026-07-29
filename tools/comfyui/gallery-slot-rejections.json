@@ -1,7 +1,37 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-29-richness-six-slot-batch-51",
+  "reviewBatch": "2026-07-30-richness-six-slot-batch-52",
   "rejectedSources": {
+    "assets/dinosaurs/megalosaurus-bucklandii-bluegray-umber-pattern-imagegen-v1.png": {
+      "reason": "Generic gray-brown broadside theropod, weak dentary and robust-forelimb identity cues, and repetitive palette do not support the rebuilt six-role gallery."
+    },
+    "assets/dinosaurs/megalosaurus-bucklandii-cetiosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "Direct named-species attack overstates uncertain association, merges bodies, and prevents independent limb, foot and tail review."
+    },
+    "assets/dinosaurs/megalosaurus-bucklandii-cetiosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "Named carcass feeding is behaviorally overconfident and prioritizes speculative trophic contact over readable primary anatomy."
+    },
+    "assets/dinosaurs/megalosaurus-bucklandii-cetiosaurus-open-pursuit-ecology-imagegen-v2.png": {
+      "reason": "Repeated open pursuit asserts unsupported species-level predation and motion makes both animals' appendage counts unreliable."
+    },
+    "assets/dinosaurs/megalosaurus-bucklandii-cetiosaurus-quarry-slope-bite-attempt-ecology-imagegen-v1.png": {
+      "reason": "A named bite attempt and close overlap obscure limbs and tails while presenting a speculative event as if directly evidenced."
+    },
+    "assets/dinosaurs/megalosaurus-bucklandii-english-megalosauroid-identity-imagegen-v2.png": {
+      "reason": "Bulky tyrannosaur-like head and barrel body overstate a complete skull and articulated body plan that are not preserved for Megalosaurus."
+    },
+    "assets/dinosaurs/megalosaurus-bucklandii-foggy-quarry-inkblack-chalkbar-ecology-imagegen-v1.png": {
+      "reason": "Dark fog and generic quarry staging reduce hand, foot and tail readability and add no evidence-bounded Stonesfield habitat role."
+    },
+    "assets/dinosaurs/megalosaurus-bucklandii-inkblack-chalkbar-pattern-imagegen-v1.png": {
+      "reason": "The fantasy-like high-contrast bar pattern and generic theropod silhouette repeat weak identity cues without improving anatomy."
+    },
+    "assets/dinosaurs/megalosaurus-bucklandii-longskull-theropod-imagegen-v1.png": {
+      "reason": "Former representative treats a complete long skull and digit formulas too confidently, uses a generic theropod body, and lacks the documented evidence boundary."
+    },
+    "assets/dinosaurs/megalosaurus-bucklandii-oxfordshire-trackway-ecology-imagegen-v1.png": {
+      "reason": "The scene assigns a nondiagnostic trackway to Megalosaurus and obscures anatomy in a generic lagoon composition."
+    },
     "assets/dinosaurs/ceratosaurus-nasicornis-camptosaurus-attack-ecology-imagegen-v1.png": {
       "reason": "Direct named-species attack and body overlap prevent independent limb, hand, tail and prey-anatomy review and overstate a specific behavioral event."
     },

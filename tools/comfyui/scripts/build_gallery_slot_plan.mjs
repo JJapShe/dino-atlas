@@ -132,6 +132,13 @@ const HABITATS = {
     light: "neutral coastal overcast after rain, cool blue-hour reflection, soft morning cloud light, or restrained late-afternoon sunbreak without a global orange cast",
     backgroundPalette: ["#8c948b", "#d4cfbb", "#526f76"],
   },
+  "stonesfield-carbonate-island-shallow-shelf": {
+    substrate: "low emergent limestone-island surface beside fawn and grey laminated calcareous sand and silt, shell-fragmental and oolitic limestone, pale storm-wash bars, shallow runoff channels, and adjacent high-energy carbonate-shelf water; the fossil bed records reworked terrestrial remains rather than an aquatic dinosaur habitat",
+    vegetation: "patchy conifers, cycads, ginkgophytes, seed ferns, true ferns, horsetails, and restrained non-flowering ground cover with no modern grass, flowers, palms, broadleaf forest, or dense rainforest",
+    moisture: "Bathonian coastal-island reconstruction beside a high-energy shallow carbonate shelf, with storm runoff and strand material transported or reworked into the Stonesfield Slate depositional setting",
+    light: "neutral broken-cloud coastal daylight, cool blue-hour reflection, or restrained post-storm sunbreak without a global orange cast",
+    backgroundPalette: ["#9a9486", "#4f7178", "#6a3b49"],
+  },
   "los-colorados-seasonal-fluvial-floodplain": {
     substrate: "oxidized red sandstone and siltstone, moderately sinuous sand channels, broad overbank floodplain, shallow ponds, crevasse splays, pebbly bars, and scattered driftwood",
     vegetation: "important but patchy cover of araucarioid conifers, seed ferns, true ferns, horsetails, and low cycad-like plants with no modern grass or flowers",
@@ -488,6 +495,7 @@ function habitatFor(dino, route) {
   else if (dino.id === "saturnalia-tupiniquim") key = "santa-maria-alemoa-red-mudstone-floodplain";
   else if (dino.id === "thecodontosaurus-antiquus") key = "bristol-rhaetian-limestone-island-archipelago";
   else if (dino.id === "cetiosaurus-oxoniensis") key = "forest-marble-coastal-tidal-mosaic";
+  else if (dino.id === "megalosaurus-bucklandii") key = "stonesfield-carbonate-island-shallow-shelf";
   else if (dino.id === "chromogisaurus-novasi") key = "ischigualasto-cancha-de-bochas-floodplain";
   else if (dino.id === "lessemsaurus-sauropoides") key = "los-colorados-seasonal-fluvial-floodplain";
   else if (dino.id === "ceratosaurus-nasicornis") key = "garden-park-felch-point-bar";
