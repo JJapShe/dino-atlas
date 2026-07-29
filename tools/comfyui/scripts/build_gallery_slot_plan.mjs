@@ -111,6 +111,13 @@ const HABITATS = {
     light: "neutral broken-cloud daylight, cool blue-hour reflection, or restrained post-rain light without a global orange cast",
     backgroundPalette: ["#777a70", "#b2a58c", "#526d67"],
   },
+  "santa-maria-alemoa-red-mudstone-floodplain": {
+    substrate: "reddish massive Alemoa mudstone, broad distal-to-proximal floodplain surfaces, shallow ephemeral runoff channels, restrained pale sandy splays, driftwood, and local wet red-clay margins",
+    vegetation: "open low conifers, sparse horsetails, ferns, and restrained seed-fern reconstructions with no modern grass, flowers, palms, broadleaf forest, or dense rainforest",
+    moisture: "seasonal southern Brazil floodplain with alternating dry red mud, brief overbank flow, shallow post-rain pools, and locally damp channel margins",
+    light: "neutral daylight, cool blue-hour reflection, warm low-angle context light, or restrained post-rain overcast without a global orange cast",
+    backgroundPalette: ["#8b5147", "#304f4b", "#d4a36b"],
+  },
   "los-colorados-seasonal-fluvial-floodplain": {
     substrate: "oxidized red sandstone and siltstone, moderately sinuous sand channels, broad overbank floodplain, shallow ponds, crevasse splays, pebbly bars, and scattered driftwood",
     vegetation: "important but patchy cover of araucarioid conifers, seed ferns, true ferns, horsetails, and low cycad-like plants with no modern grass or flowers",
@@ -464,6 +471,7 @@ function habitatFor(dino, route) {
   else if (dino.id === "psittacosaurus-mongoliensis") key = "khulsangol-alluvial-sheetflood";
   else if (dino.id === "liliensternus-liliensterni") key = "knollenmergel-vertisol-sheetflood";
   else if (dino.id === "panphagia-protos") key = "ischigualasto-la-pena-upper-floodplain";
+  else if (dino.id === "saturnalia-tupiniquim") key = "santa-maria-alemoa-red-mudstone-floodplain";
   else if (dino.id === "chromogisaurus-novasi") key = "ischigualasto-cancha-de-bochas-floodplain";
   else if (dino.id === "lessemsaurus-sauropoides") key = "los-colorados-seasonal-fluvial-floodplain";
   else if (dino.id === "ceratosaurus-nasicornis") key = "garden-park-felch-point-bar";

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-29-richness-six-slot-batch-48",
+  "reviewBatch": "2026-07-29-richness-six-slot-batch-49",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-camptosaurus-attack-ecology-imagegen-v1.png": {
       "reason": "Direct named-species attack and body overlap prevent independent limb, hand, tail and prey-anatomy review and overstate a specific behavioral event."
@@ -1096,7 +1096,34 @@
     },
     "assets/dinosaurs/panphagia-protos-small-sauropodomorph-imagegen-v1.png": {
       "reason": "The former representative uses a long-necked, heavy plateosaur-like reconstruction with ambiguous hands and feet instead of a cautious small Eoraptor-like comparison."
+    },
+    "assets/dinosaurs/saturnalia-tupiniquim-blackberry-mint-lattice-pattern-imagegen-v1.png": {
+      "reason": "The high-contrast lattice and tail bands overwhelm identity, while the generic long-necked broadside body and overlapping digits do not meet the reduced-skull, forelimb, foot, or posture evidence gate."
+    },
+    "assets/dinosaurs/saturnalia-tupiniquim-bluegray-copper-pattern-imagegen-v1.png": {
+      "reason": "The former pattern repeats the same long-necked broadside staging and generic blue-gray sauropodomorph proportions without a stable reduced skull, readable feet, or distinct composition."
+    },
+    "assets/dinosaurs/saturnalia-tupiniquim-graceful-bipedal-sauropodomorph-identity-imagegen-v2.png": {
+      "reason": "The old identity frame uses an overlong upright neck, very lightly built arms, and a generic obligate-biped reconstruction that ignores the preserved robust forearm and uncertain locomotor boundary."
+    },
+    "assets/dinosaurs/saturnalia-tupiniquim-gracile-biped-imagegen-v1.png": {
+      "reason": "The former representative is a repetitive brown broadside with a long neck, indistinct reduced-skull cue, unsupported fixed herbivore-biped framing, and weak original-size hand and foot evidence."
+    },
+    "assets/dinosaurs/saturnalia-tupiniquim-herrerasaurus-escape-ecology-imagegen-v1.png": {
+      "reason": "The named predator pursuit overstates a direct species-level event, repeats the old broadside body, and motion and overlap prevent reliable foot, hand, and tail review."
+    },
+    "assets/dinosaurs/saturnalia-tupiniquim-herrerasaurus-hindkick-defense-ecology-imagegen-v1.png": {
+      "reason": "The contact hind-kick scene is behaviorally overconfident, the predator is generic, and the crowded impact pose obscures appendage continuity and can make the primary limbs read as duplicated."
+    },
+    "assets/dinosaurs/saturnalia-tupiniquim-herrerasaurus-rootvault-sidestep-defense-ecology-imagegen-v1.png": {
+      "reason": "Root, water, and predator overlap hide the primary hands and feet, while the direct sidestep-defense claim is unsupported and the body remains too plateosaur-like."
+    },
+    "assets/dinosaurs/saturnalia-tupiniquim-herrerasaurus-scrub-dodge-ecology-imagegen-v1.png": {
+      "reason": "The repeated close pursuit and scrub-dodge narrative uses a generic theropod, obscures appendage attachments, and does not independently preserve the reduced skull or uncertain forelimb posture."
+    },
+    "assets/dinosaurs/saturnalia-tupiniquim-santa-maria-forage-ecology-imagegen-v1.png": {
+      "reason": "Multiple similar brown animals and an explicit herbivorous-foraging claim conflict with the revised partially faunivorous evidence and make individual skull, hand, foot, and tail review unreliable."
     }
   },
-  "generatedAt": "2026-07-28T17:37:11.230Z"
+  "generatedAt": "2026-07-28T18:26:42.534Z"
 }

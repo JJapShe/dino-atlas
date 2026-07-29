@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-28T17:37:11.230Z",
-  "reviewBatch": "2026-07-29-richness-six-slot-batch-48",
-  "reviewMethod": "Martinez and Alcober 2009 description of the single incomplete associated immature PVSJ 874, approximately 1.30 m long, from 40 m above the base of the Ischigualasto Formation; directly preserved partial skull and lower jaws, three cervicals, dorsal and sacral material, 18 caudals, left scapula and pelvis, right tibia, astragalus, metatarsal III and partial pedal digits, with no complete skull, manus, femur or complete pes; Currie et al. 2009 greenish-gray fine-grained upper La Pena floodplain, crevasse-splay and channel context; original-size inspection of all six selected frames plus representative head, hand and foot crops, pattern limb crop, distant Eoraptor crop, behavior head-arm and foot crops, and a six-role contact sheet; complete skull, manus, femur, complete pes, full-body proportions, posture, skin, colors, markings, exact plants, omnivory, debris investigation and same-frame fauna remain comparative or ecological hypotheses",
-  "targetSlots": 591,
+  "generatedAt": "2026-07-28T18:26:42.534Z",
+  "reviewBatch": "2026-07-29-richness-six-slot-batch-49",
+  "reviewMethod": "Bronzati, Muller and Langer 2019 cranial description of MCP-3845-PV: an estimated 89.5-103 mm skull less than two thirds of the 156 mm femur, 13 maxillary positions, approximately 21-22 dentary positions, mixed recurved and leaf-shaped crowns, and an at least partially faunivorous interpretation; Langer, Franca and Gabriel 2007 scapulocoracoid, humerus, radius and ulna evidence from two specimens, no carpals, metacarpals or manual phalanges, an unusually long olecranon, and only a tentative locomotor boundary between obligate biped and facultative quadruped; Langer 2003 near-complete pelvic and hindlimb description from three partial skeletons; Langer 2005 Waldsanga Alemoa local-fauna context with Hyperodapedon, aetosaurs and basal dinosaurs; original-size inspection of all six selected frames plus representative head, forelimb, feet and tail crops, pattern limb crop, habitat animal crop, reduced-skull and smooth-elbow crops, distant unarmored rhynchosaur crop, forelimb-support pose crop, and a six-role contact sheet; complete living skull outline, hands, habitual gait, skin, colors, markings, exact plants, diet, support behavior and same-frame fauna remain comparative or ecological hypotheses",
+  "targetSlots": 592,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -736,48 +736,57 @@
     "saturnalia-tupiniquim": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/saturnalia-tupiniquim-gracile-biped-imagegen-v1.png",
+        "source": "assets/dinosaurs/saturnalia-tupiniquim-bottlegreen-brickred-waldsanga-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The complete neutral-daylight animal retains a conspicuously reduced low skull, moderate neck, exactly two substantial forelimbs, two longer hind limbs with both feet readable, and one uninterrupted pelvis-origin tail without plateosaur or theropod drift.",
+        "reviewMethod": "Bronzati, Muller and Langer 2019 cranial description of MCP-3845-PV: an estimated 89.5-103 mm skull less than two thirds of the 156 mm femur, 13 maxillary positions, approximately 21-22 dentary positions, mixed recurved and leaf-shaped crowns, and an at least partially faunivorous interpretation; Langer, Franca and Gabriel 2007 scapulocoracoid, humerus, radius and ulna evidence from two specimens, no carpals, metacarpals or manual phalanges, an unusually long olecranon, and only a tentative locomotor boundary between obligate biped and facultative quadruped; Langer 2003 near-complete pelvic and hindlimb description from three partial skeletons; Langer 2005 Waldsanga Alemoa local-fauna context with Hyperodapedon, aetosaurs and basal dinosaurs; original-size inspection of all six selected frames plus representative head, forelimb, feet and tail crops, pattern limb crop, habitat animal crop, reduced-skull and smooth-elbow crops, distant unarmored rhynchosaur crop, forelimb-support pose crop, and a six-role contact sheet; complete living skull outline, hands, habitual gait, skin, colors, markings, exact plants, diet, support behavior and same-frame fauna remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-49",
+        "reviewedAt": "2026-07-28T18:26:42.534Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/saturnalia-tupiniquim-bluegray-copper-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/saturnalia-tupiniquim-aubergine-turquoise-bluehour-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing blue-hour variant preserves the reduced skull, two forelimbs, two hind limbs and one tail while replacing the legacy blue-gray broadside with a distinct aubergine, turquoise, copper and cream phenotype; side-view toe overlap keeps it below anatomy-representative rank.",
+        "reviewMethod": "Bronzati, Muller and Langer 2019 cranial description of MCP-3845-PV: an estimated 89.5-103 mm skull less than two thirds of the 156 mm femur, 13 maxillary positions, approximately 21-22 dentary positions, mixed recurved and leaf-shaped crowns, and an at least partially faunivorous interpretation; Langer, Franca and Gabriel 2007 scapulocoracoid, humerus, radius and ulna evidence from two specimens, no carpals, metacarpals or manual phalanges, an unusually long olecranon, and only a tentative locomotor boundary between obligate biped and facultative quadruped; Langer 2003 near-complete pelvic and hindlimb description from three partial skeletons; Langer 2005 Waldsanga Alemoa local-fauna context with Hyperodapedon, aetosaurs and basal dinosaurs; original-size inspection of all six selected frames plus representative head, forelimb, feet and tail crops, pattern limb crop, habitat animal crop, reduced-skull and smooth-elbow crops, distant unarmored rhynchosaur crop, forelimb-support pose crop, and a six-role contact sheet; complete living skull outline, hands, habitual gait, skin, colors, markings, exact plants, diet, support behavior and same-frame fauna remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-49",
+        "reviewedAt": "2026-07-28T18:26:42.534Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/saturnalia-tupiniquim-santa-maria-forage-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/saturnalia-tupiniquim-alemoa-mudstone-crevasse-splay-habitat-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The high-oblique environment-led frame places one small complete animal in an expansive red-mudstone floodplain with shallow runoff and restrained pale splay reconstruction, avoiding group and feeding claims.",
+        "reviewMethod": "Bronzati, Muller and Langer 2019 cranial description of MCP-3845-PV: an estimated 89.5-103 mm skull less than two thirds of the 156 mm femur, 13 maxillary positions, approximately 21-22 dentary positions, mixed recurved and leaf-shaped crowns, and an at least partially faunivorous interpretation; Langer, Franca and Gabriel 2007 scapulocoracoid, humerus, radius and ulna evidence from two specimens, no carpals, metacarpals or manual phalanges, an unusually long olecranon, and only a tentative locomotor boundary between obligate biped and facultative quadruped; Langer 2003 near-complete pelvic and hindlimb description from three partial skeletons; Langer 2005 Waldsanga Alemoa local-fauna context with Hyperodapedon, aetosaurs and basal dinosaurs; original-size inspection of all six selected frames plus representative head, forelimb, feet and tail crops, pattern limb crop, habitat animal crop, reduced-skull and smooth-elbow crops, distant unarmored rhynchosaur crop, forelimb-support pose crop, and a six-role contact sheet; complete living skull outline, hands, habitual gait, skin, colors, markings, exact plants, diet, support behavior and same-frame fauna remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-49",
+        "reviewedAt": "2026-07-28T18:26:42.534Z"
       },
       "4": {
         "status": "approved",
-        "source": "assets/dinosaurs/saturnalia-tupiniquim-graceful-bipedal-sauropodomorph-identity-imagegen-v2.png",
+        "source": "assets/dinosaurs/saturnalia-tupiniquim-reduced-skull-elbow-anatomy-imagegen-v2.png",
         "role": "identity-anatomy",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The deliberate head-neck-shoulder crop provides a restrained reduced-skull comparison and one smooth skin-covered elbow contour; the far forelimb is fully occluded and the visible arm is cropped above the wholly unknown manus rather than inventing fingers.",
+        "reviewMethod": "Bronzati, Muller and Langer 2019 cranial description of MCP-3845-PV: an estimated 89.5-103 mm skull less than two thirds of the 156 mm femur, 13 maxillary positions, approximately 21-22 dentary positions, mixed recurved and leaf-shaped crowns, and an at least partially faunivorous interpretation; Langer, Franca and Gabriel 2007 scapulocoracoid, humerus, radius and ulna evidence from two specimens, no carpals, metacarpals or manual phalanges, an unusually long olecranon, and only a tentative locomotor boundary between obligate biped and facultative quadruped; Langer 2003 near-complete pelvic and hindlimb description from three partial skeletons; Langer 2005 Waldsanga Alemoa local-fauna context with Hyperodapedon, aetosaurs and basal dinosaurs; original-size inspection of all six selected frames plus representative head, forelimb, feet and tail crops, pattern limb crop, habitat animal crop, reduced-skull and smooth-elbow crops, distant unarmored rhynchosaur crop, forelimb-support pose crop, and a six-role contact sheet; complete living skull outline, hands, habitual gait, skin, colors, markings, exact plants, diet, support behavior and same-frame fauna remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-49",
+        "reviewedAt": "2026-07-28T18:26:42.534Z"
       },
       "5": {
         "status": "approved",
-        "source": "assets/dinosaurs/saturnalia-tupiniquim-herrerasaurus-escape-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/saturnalia-tupiniquim-hyperodapedon-channel-context-ecology-imagegen-v3.png",
         "role": "interaction",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The foreground Saturnalia is intentionally cropped before its limbs, while one distant smooth-skinned broad-beaked rhynchosaur-like contemporary remains across a wide channel with no pursuit, contact or behavioral claim.",
+        "reviewMethod": "Bronzati, Muller and Langer 2019 cranial description of MCP-3845-PV: an estimated 89.5-103 mm skull less than two thirds of the 156 mm femur, 13 maxillary positions, approximately 21-22 dentary positions, mixed recurved and leaf-shaped crowns, and an at least partially faunivorous interpretation; Langer, Franca and Gabriel 2007 scapulocoracoid, humerus, radius and ulna evidence from two specimens, no carpals, metacarpals or manual phalanges, an unusually long olecranon, and only a tentative locomotor boundary between obligate biped and facultative quadruped; Langer 2003 near-complete pelvic and hindlimb description from three partial skeletons; Langer 2005 Waldsanga Alemoa local-fauna context with Hyperodapedon, aetosaurs and basal dinosaurs; original-size inspection of all six selected frames plus representative head, forelimb, feet and tail crops, pattern limb crop, habitat animal crop, reduced-skull and smooth-elbow crops, distant unarmored rhynchosaur crop, forelimb-support pose crop, and a six-role contact sheet; complete living skull outline, hands, habitual gait, skin, colors, markings, exact plants, diet, support behavior and same-frame fauna remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-49",
+        "reviewedAt": "2026-07-28T18:26:42.534Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/saturnalia-tupiniquim-forelimb-support-hypothesis-behavior-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "The solitary post-rain support-pose hypothesis retains exactly two forelimbs, two longer hind limbs with separate feet, and one complete tail; uncertain hands are partly buried in soft mud, and the caption explicitly withholds habitual quadrupedalism and debris-investigation claims.",
+        "reviewMethod": "Bronzati, Muller and Langer 2019 cranial description of MCP-3845-PV: an estimated 89.5-103 mm skull less than two thirds of the 156 mm femur, 13 maxillary positions, approximately 21-22 dentary positions, mixed recurved and leaf-shaped crowns, and an at least partially faunivorous interpretation; Langer, Franca and Gabriel 2007 scapulocoracoid, humerus, radius and ulna evidence from two specimens, no carpals, metacarpals or manual phalanges, an unusually long olecranon, and only a tentative locomotor boundary between obligate biped and facultative quadruped; Langer 2003 near-complete pelvic and hindlimb description from three partial skeletons; Langer 2005 Waldsanga Alemoa local-fauna context with Hyperodapedon, aetosaurs and basal dinosaurs; original-size inspection of all six selected frames plus representative head, forelimb, feet and tail crops, pattern limb crop, habitat animal crop, reduced-skull and smooth-elbow crops, distant unarmored rhynchosaur crop, forelimb-support pose crop, and a six-role contact sheet; complete living skull outline, hands, habitual gait, skin, colors, markings, exact plants, diet, support behavior and same-frame fauna remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-49",
+        "reviewedAt": "2026-07-28T18:26:42.534Z"
       }
     },
     "thecodontosaurus-antiquus": {
@@ -6638,6 +6647,33 @@
     },
     "assets/dinosaurs/panphagia-protos-small-sauropodomorph-imagegen-v1.png": {
       "reason": "The former representative uses a long-necked, heavy plateosaur-like reconstruction with ambiguous hands and feet instead of a cautious small Eoraptor-like comparison."
+    },
+    "assets/dinosaurs/saturnalia-tupiniquim-blackberry-mint-lattice-pattern-imagegen-v1.png": {
+      "reason": "The high-contrast lattice and tail bands overwhelm identity, while the generic long-necked broadside body and overlapping digits do not meet the reduced-skull, forelimb, foot, or posture evidence gate."
+    },
+    "assets/dinosaurs/saturnalia-tupiniquim-bluegray-copper-pattern-imagegen-v1.png": {
+      "reason": "The former pattern repeats the same long-necked broadside staging and generic blue-gray sauropodomorph proportions without a stable reduced skull, readable feet, or distinct composition."
+    },
+    "assets/dinosaurs/saturnalia-tupiniquim-graceful-bipedal-sauropodomorph-identity-imagegen-v2.png": {
+      "reason": "The old identity frame uses an overlong upright neck, very lightly built arms, and a generic obligate-biped reconstruction that ignores the preserved robust forearm and uncertain locomotor boundary."
+    },
+    "assets/dinosaurs/saturnalia-tupiniquim-gracile-biped-imagegen-v1.png": {
+      "reason": "The former representative is a repetitive brown broadside with a long neck, indistinct reduced-skull cue, unsupported fixed herbivore-biped framing, and weak original-size hand and foot evidence."
+    },
+    "assets/dinosaurs/saturnalia-tupiniquim-herrerasaurus-escape-ecology-imagegen-v1.png": {
+      "reason": "The named predator pursuit overstates a direct species-level event, repeats the old broadside body, and motion and overlap prevent reliable foot, hand, and tail review."
+    },
+    "assets/dinosaurs/saturnalia-tupiniquim-herrerasaurus-hindkick-defense-ecology-imagegen-v1.png": {
+      "reason": "The contact hind-kick scene is behaviorally overconfident, the predator is generic, and the crowded impact pose obscures appendage continuity and can make the primary limbs read as duplicated."
+    },
+    "assets/dinosaurs/saturnalia-tupiniquim-herrerasaurus-rootvault-sidestep-defense-ecology-imagegen-v1.png": {
+      "reason": "Root, water, and predator overlap hide the primary hands and feet, while the direct sidestep-defense claim is unsupported and the body remains too plateosaur-like."
+    },
+    "assets/dinosaurs/saturnalia-tupiniquim-herrerasaurus-scrub-dodge-ecology-imagegen-v1.png": {
+      "reason": "The repeated close pursuit and scrub-dodge narrative uses a generic theropod, obscures appendage attachments, and does not independently preserve the reduced skull or uncertain forelimb posture."
+    },
+    "assets/dinosaurs/saturnalia-tupiniquim-santa-maria-forage-ecology-imagegen-v1.png": {
+      "reason": "Multiple similar brown animals and an explicit herbivorous-foraging claim conflict with the revised partially faunivorous evidence and make individual skull, hand, foot, and tail review unreliable."
     }
   }
 }

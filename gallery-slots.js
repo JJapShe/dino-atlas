@@ -653,43 +653,51 @@ window.gallerySlotAssignments = {
   ],
   "saturnalia-tupiniquim": [
     {
-      "source": "assets/dinosaurs/saturnalia-tupiniquim-gracile-biped-imagegen-v1.png",
+      "source": "assets/dinosaurs/saturnalia-tupiniquim-bottlegreen-brickred-waldsanga-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "santa-maria-alemoa-red-mudstone-floodplain",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/saturnalia-tupiniquim-bluegray-copper-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/saturnalia-tupiniquim-aubergine-turquoise-bluehour-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "santa-maria-alemoa-red-mudstone-floodplain",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/saturnalia-tupiniquim-santa-maria-forage-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/saturnalia-tupiniquim-alemoa-mudstone-crevasse-splay-habitat-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "santa-maria-alemoa-red-mudstone-floodplain",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/saturnalia-tupiniquim-graceful-bipedal-sauropodomorph-identity-imagegen-v2.png",
+      "source": "assets/dinosaurs/saturnalia-tupiniquim-reduced-skull-elbow-anatomy-imagegen-v2.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "santa-maria-alemoa-red-mudstone-floodplain",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/saturnalia-tupiniquim-herrerasaurus-escape-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/saturnalia-tupiniquim-hyperodapedon-channel-context-ecology-imagegen-v3.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
       "phenotype": "canonical-a",
-      "habitatKey": "arid-redbed",
+      "habitatKey": "santa-maria-alemoa-red-mudstone-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/saturnalia-tupiniquim-forelimb-support-hypothesis-behavior-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "santa-maria-alemoa-red-mudstone-floodplain",
       "expectedKind": "anatomy review"
     }
   ],
