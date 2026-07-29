@@ -1255,43 +1255,51 @@ window.gallerySlotAssignments = {
   ],
   "cetiosaurus-oxoniensis": [
     {
-      "source": "assets/dinosaurs/cetiosaurus-oxoniensis-robust-early-sauropod-imagegen-v1.png",
+      "source": "assets/dinosaurs/cetiosaurus-oxoniensis-bottlegreen-forest-marble-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "forest-marble-coastal-tidal-mosaic",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/cetiosaurus-oxoniensis-bluegray-copper-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/cetiosaurus-oxoniensis-blackberry-bluehour-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "forest-marble-coastal-tidal-mosaic",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/cetiosaurus-oxoniensis-oxfordshire-group-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/cetiosaurus-oxoniensis-forest-marble-tidal-mosaic-habitat-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "forest-marble-coastal-tidal-mosaic",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/cetiosaurus-oxoniensis-robust-english-early-sauropod-identity-imagegen-v2.png",
+      "source": "assets/dinosaurs/cetiosaurus-oxoniensis-short-metacarpal-limb-proportions-anatomy-imagegen-v2.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "forest-marble-coastal-tidal-mosaic",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/cetiosaurus-oxoniensis-megalosaurus-escape-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/cetiosaurus-oxoniensis-channel-separated-megalosaurid-context-ecology-imagegen-v2.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "forest-marble-coastal-tidal-mosaic",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/cetiosaurus-oxoniensis-separated-sizeclasses-ecology-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "forest-marble-coastal-tidal-mosaic",
       "expectedKind": "anatomy review"
     }
   ],

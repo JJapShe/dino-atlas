@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-29T11:39:15.392Z",
-  "reviewBatch": "2026-07-29-richness-six-slot-batch-50",
-  "reviewMethod": "Ballell, Rayfield and Benton 2020 osteological redescription: more than 1000 disarticulated Tytherington specimens, straight spear-like crowns with coarse oblique serrations, metacarpals I-III, a robust curved digit-I ungual, more slender outer unguals, an unknown complete manual phalangeal formula, complete femora ranging from 12 to 22 cm, and an agile predominantly herbivorous biped with possible occasional faunivory; Ballell and Benton 2022 appendicular myology and bipedal reconstruction; Whiteside and Marshall 2008 small limestone islands, mixed freshwater-marine influence, meteoric runoff, short transport into fissure deposits, and island-surface rather than open-canyon habitat; original-size inspection of all six selected frames plus representative head, paired-hand, feet and tail crops, pattern head, hands, feet and tail crops, fauna primary and distant-taxon crops, size-class crops, and a six-role contact sheet; complete living skull outline, exact individual proportions assembled from disarticulated material, complete hands, skin, colors, markings, exact plants, same-frame coelophysoid contact, social grouping and size-class association remain comparative or ecological hypotheses",
-  "targetSlots": 593,
+  "generatedAt": "2026-07-29T12:24:59.773Z",
+  "reviewBatch": "2026-07-29-richness-six-slot-batch-51",
+  "reviewMethod": "Upchurch and Martin 2003 lectotype review: fragmentary dorsal and sacral material, about 30 anterior-to-middle caudals, pectoral and pelvic girdles, humeri, ulnae, partial metacarpals, femora, tibiae and fibulae; absent skull, complete manus, pedes, complete neck and distal tail; one large and at least two smaller disarticulated individuals without evidence of a social group; limb-proportion and manus gate: humerus about 1236-1260 mm versus 1615 mm femur, short metacarpals in a U-shaped near-vertical arc rather than elongated camarasauromorph columns, shoulder not raised into a brachiosaur silhouette; Allen and Kaye 1973 plus BGS Forest Marble Formation context: green-grey calcareous mud, tidal channels, bioclastic and oolitic limestone shoals and channel fills, shallow marine margins and local coastal swamp; original-size inspection of all six selected 1672x941 images and a six-role contact sheet; representative, pattern and anatomy frames retain exactly two forelimbs, two hindlimbs and one tail; multi-animal frames keep every body spatially separated; living skull outline, complete hands and feet, neck length, distal tail, skin, colors, markings, exact vegetation, same-frame megalosaurid association and size-class coexistence remain comparative or ecological hypotheses",
+  "targetSlots": 594,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -1410,48 +1410,57 @@
     "cetiosaurus-oxoniensis": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/cetiosaurus-oxoniensis-robust-early-sauropod-imagegen-v1.png",
+        "source": "assets/dinosaurs/cetiosaurus-oxoniensis-bottlegreen-forest-marble-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The single complete animal keeps a deep horizontal torso, shoulders no higher than the hips, exactly two forelimbs, two hindlimbs and one uninterrupted heavy tail; the conservative closed-mouth head and compact mud-set feet avoid claiming missing skull and complete-foot anatomy.",
+        "reviewMethod": "Upchurch and Martin 2003 lectotype review: fragmentary dorsal and sacral material, about 30 anterior-to-middle caudals, pectoral and pelvic girdles, humeri, ulnae, partial metacarpals, femora, tibiae and fibulae; absent skull, complete manus, pedes, complete neck and distal tail; one large and at least two smaller disarticulated individuals without evidence of a social group; limb-proportion and manus gate: humerus about 1236-1260 mm versus 1615 mm femur, short metacarpals in a U-shaped near-vertical arc rather than elongated camarasauromorph columns, shoulder not raised into a brachiosaur silhouette; Allen and Kaye 1973 plus BGS Forest Marble Formation context: green-grey calcareous mud, tidal channels, bioclastic and oolitic limestone shoals and channel fills, shallow marine margins and local coastal swamp; original-size inspection of all six selected 1672x941 images and a six-role contact sheet; representative, pattern and anatomy frames retain exactly two forelimbs, two hindlimbs and one tail; multi-animal frames keep every body spatially separated; living skull outline, complete hands and feet, neck length, distal tail, skin, colors, markings, exact vegetation, same-frame megalosaurid association and size-class coexistence remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-51",
+        "reviewedAt": "2026-07-29T12:24:59.773Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/cetiosaurus-oxoniensis-bluegray-copper-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/cetiosaurus-oxoniensis-blackberry-bluehour-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The blue-hour variant preserves the same four-limb, one-tail body plan while replacing the repetitive gray-brown set with a distinct blackberry, mineral-blue, celadon and restrained coral phenotype; all pigmentation remains explicitly hypothetical.",
+        "reviewMethod": "Upchurch and Martin 2003 lectotype review: fragmentary dorsal and sacral material, about 30 anterior-to-middle caudals, pectoral and pelvic girdles, humeri, ulnae, partial metacarpals, femora, tibiae and fibulae; absent skull, complete manus, pedes, complete neck and distal tail; one large and at least two smaller disarticulated individuals without evidence of a social group; limb-proportion and manus gate: humerus about 1236-1260 mm versus 1615 mm femur, short metacarpals in a U-shaped near-vertical arc rather than elongated camarasauromorph columns, shoulder not raised into a brachiosaur silhouette; Allen and Kaye 1973 plus BGS Forest Marble Formation context: green-grey calcareous mud, tidal channels, bioclastic and oolitic limestone shoals and channel fills, shallow marine margins and local coastal swamp; original-size inspection of all six selected 1672x941 images and a six-role contact sheet; representative, pattern and anatomy frames retain exactly two forelimbs, two hindlimbs and one tail; multi-animal frames keep every body spatially separated; living skull outline, complete hands and feet, neck length, distal tail, skin, colors, markings, exact vegetation, same-frame megalosaurid association and size-class coexistence remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-51",
+        "reviewedAt": "2026-07-29T12:24:59.773Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/cetiosaurus-oxoniensis-oxfordshire-group-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/cetiosaurus-oxoniensis-forest-marble-tidal-mosaic-habitat-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The high-oblique environment-led frame makes the green-grey tidal channels, shell-rich limestone shoals, mudflat and coastal vegetation more important than the single small animal, without inventing a herd or inland conifer plain.",
+        "reviewMethod": "Upchurch and Martin 2003 lectotype review: fragmentary dorsal and sacral material, about 30 anterior-to-middle caudals, pectoral and pelvic girdles, humeri, ulnae, partial metacarpals, femora, tibiae and fibulae; absent skull, complete manus, pedes, complete neck and distal tail; one large and at least two smaller disarticulated individuals without evidence of a social group; limb-proportion and manus gate: humerus about 1236-1260 mm versus 1615 mm femur, short metacarpals in a U-shaped near-vertical arc rather than elongated camarasauromorph columns, shoulder not raised into a brachiosaur silhouette; Allen and Kaye 1973 plus BGS Forest Marble Formation context: green-grey calcareous mud, tidal channels, bioclastic and oolitic limestone shoals and channel fills, shallow marine margins and local coastal swamp; original-size inspection of all six selected 1672x941 images and a six-role contact sheet; representative, pattern and anatomy frames retain exactly two forelimbs, two hindlimbs and one tail; multi-animal frames keep every body spatially separated; living skull outline, complete hands and feet, neck length, distal tail, skin, colors, markings, exact vegetation, same-frame megalosaurid association and size-class coexistence remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-51",
+        "reviewedAt": "2026-07-29T12:24:59.773Z"
       },
       "4": {
         "status": "approved",
-        "source": "assets/dinosaurs/cetiosaurus-oxoniensis-robust-english-early-sauropod-identity-imagegen-v2.png",
+        "source": "assets/dinosaurs/cetiosaurus-oxoniensis-short-metacarpal-limb-proportions-anatomy-imagegen-v2.png",
         "role": "identity-anatomy",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The deliberate torso-and-limb crop shows exactly four separated limbs, relatively shorter forelimbs, a non-brachiosaur shoulder line and compact forefeet while withholding the unknown head and distal tail; captions avoid treating visible toes as a fossil digit formula.",
+        "reviewMethod": "Upchurch and Martin 2003 lectotype review: fragmentary dorsal and sacral material, about 30 anterior-to-middle caudals, pectoral and pelvic girdles, humeri, ulnae, partial metacarpals, femora, tibiae and fibulae; absent skull, complete manus, pedes, complete neck and distal tail; one large and at least two smaller disarticulated individuals without evidence of a social group; limb-proportion and manus gate: humerus about 1236-1260 mm versus 1615 mm femur, short metacarpals in a U-shaped near-vertical arc rather than elongated camarasauromorph columns, shoulder not raised into a brachiosaur silhouette; Allen and Kaye 1973 plus BGS Forest Marble Formation context: green-grey calcareous mud, tidal channels, bioclastic and oolitic limestone shoals and channel fills, shallow marine margins and local coastal swamp; original-size inspection of all six selected 1672x941 images and a six-role contact sheet; representative, pattern and anatomy frames retain exactly two forelimbs, two hindlimbs and one tail; multi-animal frames keep every body spatially separated; living skull outline, complete hands and feet, neck length, distal tail, skin, colors, markings, exact vegetation, same-frame megalosaurid association and size-class coexistence remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-51",
+        "reviewedAt": "2026-07-29T12:24:59.773Z"
       },
       "5": {
         "status": "approved",
-        "source": "assets/dinosaurs/cetiosaurus-oxoniensis-megalosaurus-escape-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/cetiosaurus-oxoniensis-channel-separated-megalosaurid-context-ecology-imagegen-v2.png",
         "role": "interaction",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "One complete foreground Cetiosaurus and one small distant generalized megalosaurid-form animal remain separated by a broad tidal channel with no contact, pursuit, attack or exact species-level association claim.",
+        "reviewMethod": "Upchurch and Martin 2003 lectotype review: fragmentary dorsal and sacral material, about 30 anterior-to-middle caudals, pectoral and pelvic girdles, humeri, ulnae, partial metacarpals, femora, tibiae and fibulae; absent skull, complete manus, pedes, complete neck and distal tail; one large and at least two smaller disarticulated individuals without evidence of a social group; limb-proportion and manus gate: humerus about 1236-1260 mm versus 1615 mm femur, short metacarpals in a U-shaped near-vertical arc rather than elongated camarasauromorph columns, shoulder not raised into a brachiosaur silhouette; Allen and Kaye 1973 plus BGS Forest Marble Formation context: green-grey calcareous mud, tidal channels, bioclastic and oolitic limestone shoals and channel fills, shallow marine margins and local coastal swamp; original-size inspection of all six selected 1672x941 images and a six-role contact sheet; representative, pattern and anatomy frames retain exactly two forelimbs, two hindlimbs and one tail; multi-animal frames keep every body spatially separated; living skull outline, complete hands and feet, neck length, distal tail, skin, colors, markings, exact vegetation, same-frame megalosaurid association and size-class coexistence remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-51",
+        "reviewedAt": "2026-07-29T12:24:59.773Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/cetiosaurus-oxoniensis-separated-sizeclasses-ecology-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "The large and smaller reconstructions occupy separate limestone shoals and depth planes, each with four legs and one tail, and are framed only as a cautious size-class visualization rather than a family, herd or associated pair.",
+        "reviewMethod": "Upchurch and Martin 2003 lectotype review: fragmentary dorsal and sacral material, about 30 anterior-to-middle caudals, pectoral and pelvic girdles, humeri, ulnae, partial metacarpals, femora, tibiae and fibulae; absent skull, complete manus, pedes, complete neck and distal tail; one large and at least two smaller disarticulated individuals without evidence of a social group; limb-proportion and manus gate: humerus about 1236-1260 mm versus 1615 mm femur, short metacarpals in a U-shaped near-vertical arc rather than elongated camarasauromorph columns, shoulder not raised into a brachiosaur silhouette; Allen and Kaye 1973 plus BGS Forest Marble Formation context: green-grey calcareous mud, tidal channels, bioclastic and oolitic limestone shoals and channel fills, shallow marine margins and local coastal swamp; original-size inspection of all six selected 1672x941 images and a six-role contact sheet; representative, pattern and anatomy frames retain exactly two forelimbs, two hindlimbs and one tail; multi-animal frames keep every body spatially separated; living skull outline, complete hands and feet, neck length, distal tail, skin, colors, markings, exact vegetation, same-frame megalosaurid association and size-class coexistence remain comparative or ecological hypotheses",
+        "reviewBatch": "2026-07-29-richness-six-slot-batch-51",
+        "reviewedAt": "2026-07-29T12:24:59.773Z"
       }
     },
     "sarahsaurus-aurifontanalis": {
@@ -5773,6 +5782,30 @@
     "assets/dinosaurs/hesperosaurus-mjosi-ceratosaurus-tailspike-impact-defense-ecology-imagegen-v1.png": {
       "reason": "Prominent impalement, blood, and an obscured tail-spike contact fail the non-graphic educational ecology gate."
     },
+    "assets/dinosaurs/cetiosaurus-oxoniensis-bluegray-copper-pattern-imagegen-v1.png": {
+      "reason": "The old pattern repeats the same gray-brown broadside and generalized round-headed sauropod silhouette without adding a distinct composition or evidence-bounded identity."
+    },
+    "assets/dinosaurs/cetiosaurus-oxoniensis-megalosaurus-bite-repel-defense-ecology-imagegen-v1.png": {
+      "reason": "Direct bite contact, overlapping animals, and occluded feet prevent independent limb and tail review while overstating a named predator-prey event."
+    },
+    "assets/dinosaurs/cetiosaurus-oxoniensis-megalosaurus-escape-ecology-imagegen-v1.png": {
+      "reason": "The named pursuit is unsupported, motion staging obscures appendage attachments, and the primary animal repeats the same generic gray sauropod design."
+    },
+    "assets/dinosaurs/cetiosaurus-oxoniensis-megalosaurus-quarry-tail-barrier-defense-ecology-imagegen-v1.png": {
+      "reason": "The quarry confrontation merges predator and tail geometry, hides multiple feet, and turns an uncertain fauna association into a specific defensive behavior."
+    },
+    "assets/dinosaurs/cetiosaurus-oxoniensis-megalosaurus-tail-guard-defense-ecology-imagegen-v1.png": {
+      "reason": "The close confrontation and tail-contact staging duplicate an unsupported attack-defense role and leave both animals' appendage counts less reliable than the new channel-separated context."
+    },
+    "assets/dinosaurs/cetiosaurus-oxoniensis-oxfordshire-group-ecology-imagegen-v1.png": {
+      "reason": "A coordinated group is not supported by the disarticulated Bletchingdon size classes, while overlapping gray animals prevent stable individual limb review."
+    },
+    "assets/dinosaurs/cetiosaurus-oxoniensis-robust-early-sauropod-imagegen-v1.png": {
+      "reason": "The former representative has a generalized rounded lizard-like head, repetitive gray-brown broadside staging, and weak Forest Marble habitat identity."
+    },
+    "assets/dinosaurs/cetiosaurus-oxoniensis-robust-english-early-sauropod-identity-imagegen-v2.png": {
+      "reason": "The old identity frame still presents an overconfident rounded living skull and generic sauropod proportions despite the missing skull, complete manus, pes, neck series, and distal tail."
+    },
     "assets/dinosaurs/thecodontosaurus-antiquus-bristol-bipedal-sauropodomorph-identity-imagegen-v2.png": {
       "reason": "The old identity frame uses a generic long-necked ornithomimid-like body, open fan hands with long equal claws, and a dry conifer plain rather than the revised short-dentary, robust-thumb and limestone-island evidence gate."
     },
@@ -6277,29 +6310,75 @@
     "assets/dinosaurs/eodromaeus-murphi-threefinger-identity-imagegen-v2.png": {
       "reason": "The former identity image explicitly treats three fingers as the complete hand even though Eodromaeus preserves five manual digits with reduced IV and V."
     },
-    "assets/dinosaurs/eoraptor-lunensis-ashpan-inkblue-turquoise-pinstripe-ecology-imagegen-v1.png": "The striking palette cannot rescue the vertically elongated bird-runner neck, generic head, and unclear outer manual digits.",
-    "assets/dinosaurs/eoraptor-lunensis-chromogisaurus-redwash-attack-ecology-imagegen-v1.png": "The direct bite scene invents a named-species attack and crowds two generic long-necked bodies with unstable appendage silhouettes.",
-    "assets/dinosaurs/eoraptor-lunensis-ischigualasto-trackway-ecology-imagegen-v1.png": "The former habitat frame repeats a vertical swan neck and generic raptor-like head while limb overlap prevents a clean outer-manus review.",
-    "assets/dinosaurs/eoraptor-lunensis-panphagia-redmud-flank-bite-ecology-imagegen-v1.png": "The flank-bite composition overstates a named-species interaction and obscures hands, feet, and tail junctions in moving bodies.",
-    "assets/dinosaurs/eoraptor-lunensis-pisanosaurus-attack-ecology-imagegen-v1.png": "The selected legacy interaction depicts an unsupported direct attack and retains elongated necks, generic anatomy, and crowded limb silhouettes.",
-    "assets/dinosaurs/eoraptor-lunensis-pisanosaurus-carcass-feeding-ecology-imagegen-v1.png": "The carcass-feeding image conflicts with the strong herbivory signal in the described dentition and hides anatomy around an unsupported feeding claim.",
-    "assets/dinosaurs/eoraptor-lunensis-pisanosaurus-open-pursuit-ecology-imagegen-v1.png": "The open-pursuit scene turns uncertain co-occurrence into chase behavior and makes the small moving bodies too distant for reliable anatomy review.",
-    "assets/dinosaurs/eoraptor-lunensis-primitive-threefinger-identity-imagegen-v2.png": "The former identity image explicitly treats three fingers as the complete hand despite five preserved metacarpals, a probable rudimentary digit IV phalanx, and a phalanx-free digit V.",
-    "assets/dinosaurs/eoraptor-lunensis-slate-copper-pattern-imagegen-v1.png": "The former pattern repeats the vertically elongated swan neck, generic birdlike head, and three-finger-only hand interpretation.",
-    "assets/dinosaurs/eoraptor-lunensis-small-primitive-theropod-imagegen-v1.png": "The former representative is a generic long-necked raptor silhouette and labels Eoraptor as a small predatory theropod rather than reflecting the described basal-sauropodomorph anatomy and herbivory signal.",
-    "assets/dinosaurs/zupaysaurus-rougieri-coloradisaurus-arroyo-bite-pressure-ecology-imagegen-v1.png": "The direct bite scene uses generic unstable animals, obscures appendage counts, and asserts an unsupported named-species predatory interaction.",
-    "assets/dinosaurs/zupaysaurus-rougieri-coloradisaurus-saltpan-flank-contact-ecology-imagegen-v1.png": "The crowded flank-contact scene has weak species identity, unclear limb separation, and unsupported direct contact.",
-    "assets/dinosaurs/zupaysaurus-rougieri-coloradisaurus-stormbreak-carcass-feeding-ecology-imagegen-v1.png": "The carcass-feeding composition hides anatomy and overstates a named-species trophic event that is not directly evidenced.",
-    "assets/dinosaurs/zupaysaurus-rougieri-lessemsaurus-attack-ecology-imagegen-v1.png": "The supposed Lessemsaurus is rendered as an unstable generic animal, while contact and overlapping appendages prevent reliable anatomy review.",
-    "assets/dinosaurs/zupaysaurus-rougieri-lessemsaurus-carcass-feeding-ecology-imagegen-v1.png": "The generated carcass is taxonomically unreliable, body parts overlap, and the scene asserts unsupported feeding behavior.",
-    "assets/dinosaurs/zupaysaurus-rougieri-lessemsaurus-open-pursuit-ecology-imagegen-v1.png": "The pursuit frame repeats generic long-necked predator anatomy and misrepresents the secondary sauropodomorph while asserting unsupported chase behavior.",
-    "assets/dinosaurs/zupaysaurus-rougieri-los-colorados-drinking-ecology-imagegen-v2.png": "The former habitat image has a snake-like elongated head and neck, weak low-ridge identity, and water/pose overlap that prevents reliable appendage review.",
-    "assets/dinosaurs/zupaysaurus-rougieri-lowridge-identity-imagegen-v2.png": "The former identity image is a generic long-necked bird-runner silhouette with no convincing low lateral nasal ridges and an overconfident three-finger reconstruction.",
-    "assets/dinosaurs/zupaysaurus-rougieri-lowridge-theropod-imagegen-v1.png": "The former representative uses an elongated swan-like neck and generic raptor head while failing to communicate the corrected long low skull and subtle lateral nasal ridge.",
-    "assets/dinosaurs/zupaysaurus-rougieri-riojasaurus-attack-ecology-imagegen-v1.png": "The direct attack scene contains unstable overlapping anatomy and asserts an unsupported Zupaysaurus-Riojasaurus predatory event.",
-    "assets/dinosaurs/zupaysaurus-rougieri-riojasaurus-carcass-feeding-ecology-imagegen-v1.png": "The generated carcass and feeding posture are anatomically unreliable and overstate a named-species trophic relationship.",
-    "assets/dinosaurs/zupaysaurus-rougieri-riojasaurus-open-pursuit-ecology-imagegen-v1.png": "The pursuit frame uses generic secondary anatomy, uncertain appendage counts, and an unsupported direct chase interpretation.",
-    "assets/dinosaurs/zupaysaurus-rougieri-teal-umber-pattern-imagegen-v1.png": "The former pattern is overly gracile and ostrich-like, repeats a vertically elongated neck and generic bird head, and does not show convincing low nasal ridges.",
+    "assets/dinosaurs/eoraptor-lunensis-ashpan-inkblue-turquoise-pinstripe-ecology-imagegen-v1.png": {
+      "reason": "The striking palette cannot rescue the vertically elongated bird-runner neck, generic head, and unclear outer manual digits."
+    },
+    "assets/dinosaurs/eoraptor-lunensis-chromogisaurus-redwash-attack-ecology-imagegen-v1.png": {
+      "reason": "The direct bite scene invents a named-species attack and crowds two generic long-necked bodies with unstable appendage silhouettes."
+    },
+    "assets/dinosaurs/eoraptor-lunensis-ischigualasto-trackway-ecology-imagegen-v1.png": {
+      "reason": "The former habitat frame repeats a vertical swan neck and generic raptor-like head while limb overlap prevents a clean outer-manus review."
+    },
+    "assets/dinosaurs/eoraptor-lunensis-panphagia-redmud-flank-bite-ecology-imagegen-v1.png": {
+      "reason": "The flank-bite composition overstates a named-species interaction and obscures hands, feet, and tail junctions in moving bodies."
+    },
+    "assets/dinosaurs/eoraptor-lunensis-pisanosaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "The selected legacy interaction depicts an unsupported direct attack and retains elongated necks, generic anatomy, and crowded limb silhouettes."
+    },
+    "assets/dinosaurs/eoraptor-lunensis-pisanosaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The carcass-feeding image conflicts with the strong herbivory signal in the described dentition and hides anatomy around an unsupported feeding claim."
+    },
+    "assets/dinosaurs/eoraptor-lunensis-pisanosaurus-open-pursuit-ecology-imagegen-v1.png": {
+      "reason": "The open-pursuit scene turns uncertain co-occurrence into chase behavior and makes the small moving bodies too distant for reliable anatomy review."
+    },
+    "assets/dinosaurs/eoraptor-lunensis-primitive-threefinger-identity-imagegen-v2.png": {
+      "reason": "The former identity image explicitly treats three fingers as the complete hand despite five preserved metacarpals, a probable rudimentary digit IV phalanx, and a phalanx-free digit V."
+    },
+    "assets/dinosaurs/eoraptor-lunensis-slate-copper-pattern-imagegen-v1.png": {
+      "reason": "The former pattern repeats the vertically elongated swan neck, generic birdlike head, and three-finger-only hand interpretation."
+    },
+    "assets/dinosaurs/eoraptor-lunensis-small-primitive-theropod-imagegen-v1.png": {
+      "reason": "The former representative is a generic long-necked raptor silhouette and labels Eoraptor as a small predatory theropod rather than reflecting the described basal-sauropodomorph anatomy and herbivory signal."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-coloradisaurus-arroyo-bite-pressure-ecology-imagegen-v1.png": {
+      "reason": "The direct bite scene uses generic unstable animals, obscures appendage counts, and asserts an unsupported named-species predatory interaction."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-coloradisaurus-saltpan-flank-contact-ecology-imagegen-v1.png": {
+      "reason": "The crowded flank-contact scene has weak species identity, unclear limb separation, and unsupported direct contact."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-coloradisaurus-stormbreak-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The carcass-feeding composition hides anatomy and overstates a named-species trophic event that is not directly evidenced."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-lessemsaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "The supposed Lessemsaurus is rendered as an unstable generic animal, while contact and overlapping appendages prevent reliable anatomy review."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-lessemsaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The generated carcass is taxonomically unreliable, body parts overlap, and the scene asserts unsupported feeding behavior."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-lessemsaurus-open-pursuit-ecology-imagegen-v1.png": {
+      "reason": "The pursuit frame repeats generic long-necked predator anatomy and misrepresents the secondary sauropodomorph while asserting unsupported chase behavior."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-los-colorados-drinking-ecology-imagegen-v2.png": {
+      "reason": "The former habitat image has a snake-like elongated head and neck, weak low-ridge identity, and water/pose overlap that prevents reliable appendage review."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-lowridge-identity-imagegen-v2.png": {
+      "reason": "The former identity image is a generic long-necked bird-runner silhouette with no convincing low lateral nasal ridges and an overconfident three-finger reconstruction."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-lowridge-theropod-imagegen-v1.png": {
+      "reason": "The former representative uses an elongated swan-like neck and generic raptor head while failing to communicate the corrected long low skull and subtle lateral nasal ridge."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-riojasaurus-attack-ecology-imagegen-v1.png": {
+      "reason": "The direct attack scene contains unstable overlapping anatomy and asserts an unsupported Zupaysaurus-Riojasaurus predatory event."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-riojasaurus-carcass-feeding-ecology-imagegen-v1.png": {
+      "reason": "The generated carcass and feeding posture are anatomically unreliable and overstate a named-species trophic relationship."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-riojasaurus-open-pursuit-ecology-imagegen-v1.png": {
+      "reason": "The pursuit frame uses generic secondary anatomy, uncertain appendage counts, and an unsupported direct chase interpretation."
+    },
+    "assets/dinosaurs/zupaysaurus-rougieri-teal-umber-pattern-imagegen-v1.png": {
+      "reason": "The former pattern is overly gracile and ostrich-like, repeats a vertically elongated neck and generic bird head, and does not show convincing low nasal ridges."
+    },
     "assets/dinosaurs/riojasaurus-incertus-los-colorados-herd-ecology-imagegen-v1.png": {
       "reason": "Repeated brown broadside animals drift toward generic sauropods and the crowded scene overstates herd behavior while reducing limb-count confidence."
     },

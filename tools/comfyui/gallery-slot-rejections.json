@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-29-richness-six-slot-batch-50",
+  "reviewBatch": "2026-07-29-richness-six-slot-batch-51",
   "rejectedSources": {
     "assets/dinosaurs/ceratosaurus-nasicornis-camptosaurus-attack-ecology-imagegen-v1.png": {
       "reason": "Direct named-species attack and body overlap prevent independent limb, hand, tail and prey-anatomy review and overstate a specific behavioral event."
@@ -166,6 +166,30 @@
     },
     "assets/dinosaurs/hesperosaurus-mjosi-ceratosaurus-tailspike-impact-defense-ecology-imagegen-v1.png": {
       "reason": "Prominent impalement, blood, and an obscured tail-spike contact fail the non-graphic educational ecology gate."
+    },
+    "assets/dinosaurs/cetiosaurus-oxoniensis-bluegray-copper-pattern-imagegen-v1.png": {
+      "reason": "The old pattern repeats the same gray-brown broadside and generalized round-headed sauropod silhouette without adding a distinct composition or evidence-bounded identity."
+    },
+    "assets/dinosaurs/cetiosaurus-oxoniensis-megalosaurus-bite-repel-defense-ecology-imagegen-v1.png": {
+      "reason": "Direct bite contact, overlapping animals, and occluded feet prevent independent limb and tail review while overstating a named predator-prey event."
+    },
+    "assets/dinosaurs/cetiosaurus-oxoniensis-megalosaurus-escape-ecology-imagegen-v1.png": {
+      "reason": "The named pursuit is unsupported, motion staging obscures appendage attachments, and the primary animal repeats the same generic gray sauropod design."
+    },
+    "assets/dinosaurs/cetiosaurus-oxoniensis-megalosaurus-quarry-tail-barrier-defense-ecology-imagegen-v1.png": {
+      "reason": "The quarry confrontation merges predator and tail geometry, hides multiple feet, and turns an uncertain fauna association into a specific defensive behavior."
+    },
+    "assets/dinosaurs/cetiosaurus-oxoniensis-megalosaurus-tail-guard-defense-ecology-imagegen-v1.png": {
+      "reason": "The close confrontation and tail-contact staging duplicate an unsupported attack-defense role and leave both animals' appendage counts less reliable than the new channel-separated context."
+    },
+    "assets/dinosaurs/cetiosaurus-oxoniensis-oxfordshire-group-ecology-imagegen-v1.png": {
+      "reason": "A coordinated group is not supported by the disarticulated Bletchingdon size classes, while overlapping gray animals prevent stable individual limb review."
+    },
+    "assets/dinosaurs/cetiosaurus-oxoniensis-robust-early-sauropod-imagegen-v1.png": {
+      "reason": "The former representative has a generalized rounded lizard-like head, repetitive gray-brown broadside staging, and weak Forest Marble habitat identity."
+    },
+    "assets/dinosaurs/cetiosaurus-oxoniensis-robust-english-early-sauropod-identity-imagegen-v2.png": {
+      "reason": "The old identity frame still presents an overconfident rounded living skull and generic sauropod proportions despite the missing skull, complete manus, pes, neck series, and distal tail."
     },
     "assets/dinosaurs/thecodontosaurus-antiquus-bristol-bipedal-sauropodomorph-identity-imagegen-v2.png": {
       "reason": "The old identity frame uses a generic long-necked ornithomimid-like body, open fan hands with long equal claws, and a dry conifer plain rather than the revised short-dentary, robust-thumb and limestone-island evidence gate."
