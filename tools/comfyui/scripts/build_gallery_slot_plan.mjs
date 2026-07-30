@@ -189,6 +189,13 @@ const HABITATS = {
     light: "neutral coastal daylight with controlled water reflection",
     backgroundPalette: ["#607a7a", "#a68a65", "#61715b"],
   },
+  "blue-lias-coastal-lowland": {
+    substrate: "rain-darkened low-relief coastal plain, shallow runoff channels, pale limestone gravel, dark mudstone, driftwood, and only a distant marine shelf or low shoreline",
+    vegetation: "patchy conifers, ferns, horsetails, cycads, and low non-grass ground cover as restrained reconstruction, with no modern flowers, lawn, palms, or seabird colony",
+    moisture: "humid post-rain coastal-lowland mosaic adjacent to the Lower Lias marine depositional setting; exact terrestrial habitat use remains a reconstruction hypothesis",
+    light: "neutral broken-cloud daylight, cool dawn, or restrained sunbreak with natural wet-surface reflection and no global teal, green, or orange cast",
+    backgroundPalette: ["#596963", "#70818b", "#a89672"],
+  },
   "smoky-hill-open-seaway": {
     substrate: "open pale blue-green carbonate-rich Western Interior Seaway water, low swells, suspended chalk mud, and only a very distant low shoreline when needed",
     vegetation: "no foreground vegetation, modern grass, flowers, palms, or seabird colony; distant land cover remains indistinct",
@@ -525,6 +532,7 @@ function habitatFor(dino, route) {
   else if (["oviraptor-philoceratops", "citipati-osmolskae"].includes(dino.id)) key = "djadokhta-semiarid-dune";
   else if (dino.id === "dsungaripterus-weii") key = "wuerho-shallow-delta-lake-margin";
   else if (dino.id === "nyctosaurus-gracilis") key = "smoky-hill-open-seaway";
+  else if (dino.id === "dimorphodon-macronyx") key = "blue-lias-coastal-lowland";
   else if (dino.id === "velociraptor-mongoliensis") key = "gobi-arid";
   else if (dino.id === "parasaurolophus-walkeri") key = "dinosaur-park-coastal-plain";
   else if (dino.id === "styracosaurus-albertensis") key = "dinosaur-park-meander-belt";

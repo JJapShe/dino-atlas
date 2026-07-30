@@ -1903,27 +1903,51 @@ window.gallerySlotAssignments = {
   ],
   "dimorphodon-macronyx": [
     {
-      "source": "assets/dinosaurs/dimorphodon-macronyx-blue-lias-bighead-tailvane-imagegen-v1.png",
+      "source": "assets/dinosaurs/dimorphodon-macronyx-moss-charcoal-neutral-glide-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "blue-lias-coastal-lowland",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/dimorphodon-macronyx-aubergine-saffron-wing-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/dimorphodon-macronyx-smoky-amber-dawn-bank-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "blue-lias-coastal-lowland",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/dimorphodon-macronyx-blue-lias-tidepool-forage-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/dimorphodon-macronyx-coastal-lowland-after-rain-habitat-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "blue-lias-coastal-lowland",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/dimorphodon-macronyx-heterodont-wrist-anatomy-detail-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "blue-lias-coastal-lowland",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/dimorphodon-macronyx-runoff-channel-distant-reptile-interaction-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "blue-lias-coastal-lowland",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/dimorphodon-macronyx-firm-ground-folded-wing-locomotion-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "blue-lias-coastal-lowland",
       "expectedKind": "anatomy review"
     }
   ],

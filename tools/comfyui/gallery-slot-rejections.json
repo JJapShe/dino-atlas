@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-30-richness-six-slot-batch-62",
+  "reviewBatch": "2026-07-31-richness-six-slot-batch-63",
   "rejectedSources": {
     "assets/dinosaurs/nyctosaurus-gracilis-niobrara-forked-crest-imagegen-v1.png": {
       "reason": "Free clawed appendages project from the wing margins, limb and membrane topology is confused, and a genus-level mature branching crest is incorrectly fixed onto the N. gracilis representative."
@@ -1325,8 +1325,17 @@
     "assets/dinosaurs/saturnalia-tupiniquim-santa-maria-forage-ecology-imagegen-v1.png": {
       "reason": "Multiple similar brown animals and an explicit herbivorous-foraging claim conflict with the revised partially faunivorous evidence and make individual skull, hand, foot, and tail review unreliable."
     },
+    "assets/dinosaurs/dimorphodon-macronyx-blue-lias-bighead-tailvane-imagegen-v1.png": {
+      "reason": "The inflated monitor-lizard-like head, oversized scales, exaggerated unsupported terminal tail vane, and unclear wing topology fail the Dimorphodon skull, soft-tissue-evidence, and paired-wing gates."
+    },
+    "assets/dinosaurs/dimorphodon-macronyx-aubergine-saffron-wing-pattern-imagegen-v1.png": {
+      "reason": "The generic long low snout and nearly uniform tooth row lose the huge external naris, deep crestless skull, and strongly heterodont anterior-versus-posterior dentition required for Dimorphodon identity."
+    },
+    "assets/dinosaurs/dimorphodon-macronyx-blue-lias-tidepool-forage-ecology-imagegen-v1.png": {
+      "reason": "A generic long-snouted head, oversized unsupported tail vane, and overconfident modern tide-pool foraging scene fail both the taxon-identity gate and the distinction between Blue Lias depositional context and inferred living habitat."
+    },
     "assets/dinosaurs/dimorphodon-macronyx-blue-lias-overhead-glide-imagegen-v2.png": {
-      "reason": "The long low head and generic rhamphorhynchid silhouette lose the deep short Dimorphodon skull cue, so the image fails the taxon-identity gate despite a readable wing membrane."
+      "reason": "The long low generic rhamphorhynchid head, birdlike or confused wing topology, and asserted terminal vane lose the deep large-naris heterodont Dimorphodon identity and paired fourth-finger wing structure."
     },
     "assets/dinosaurs/diplodocus-carnegiei-allosaurus-tail-defense-ecology-imagegen-v1.png": {
       "reason": "The primary sauropod has a severely shortened neck and generic body proportions, while the secondary theropod anatomy is unstable; the scene fails Diplodocus identity and independent-anatomy review."

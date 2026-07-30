@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-30T15:10:47.467Z",
-  "reviewBatch": "2026-07-30-richness-six-slot-batch-62",
-  "reviewMethod": "Batch 62 Williston 1903 public-domain specimen-plate review, Unwin 2003 nyctosaurid diagnosis review, Bennett 2003 crest-scope review, Hattin 1982 Smoky Hill depositional review, Bestwick et al. 2018 diet-evidence review, and original-size inspection of all selected Nyctosaurus assets for crest scope, edentulous beak, loss of free manual digits I-III, three-phalange wing finger, paired wings and hindlimbs, short tail, palette continuity, open-seaway habitat, role balance, and artifact gates.",
-  "targetSlots": 678,
+  "generatedAt": "2026-07-30T16:43:28.189Z",
+  "reviewBatch": "2026-07-31-richness-six-slot-batch-63",
+  "reviewMethod": "Batch 63 Ezcurra 2016 Dimorphodon cranial and heterodont-dentition review, Witton 2015 terrestrial-competence and appendage review, Sangster 2021/2022 current osteology scope, Pugh et al. 2014 Blue Lias depositional-context review, Bestwick et al. 2018 diet-evidence review, and original-size inspection of every selected Dimorphodon frame for large naris, crestless deep skull, anterior and posterior tooth differentiation, paired wing forelimbs, three free wrist digits when readable, paired hindlimbs, a single pelvis-origin tail without an asserted vane, palette continuity, cautious habitat and behavior language, role balance, crop intent, and artifact gates.",
+  "targetSlots": 681,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -2136,30 +2136,57 @@
     "dimorphodon-macronyx": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/dimorphodon-macronyx-blue-lias-bighead-tailvane-imagegen-v1.png",
+        "source": "assets/dinosaurs/dimorphodon-macronyx-moss-charcoal-neutral-glide-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The neutral full-body glide keeps one crestless deep skull with a very large lateral naris, visibly differentiated long anterior and smaller posterior teeth, exactly two continuous wing forelimbs, two separate hind legs and feet, and one tapering pelvis-origin tail without an asserted terminal vane.",
+        "reviewMethod": "Batch 63 original-size full-frame plus isolated head, tooth row, both wing attachments, both hindlimbs, feet and tail inspection against Ezcurra 2016 and the local Witton 2015 skeletal reference.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-63",
+        "reviewedAt": "2026-07-30T16:43:28.189Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/dimorphodon-macronyx-aubergine-saffron-wing-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/dimorphodon-macronyx-smoky-amber-dawn-bank-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing dawn bank preserves the same large-naris heterodont skull, two wings, two hind legs and one tail while making smoky blue-gray membranes, asymmetric pale amber marbling and restrained rust accents readable without synthetic repeated markings.",
+        "reviewMethod": "Batch 63 original-size comparison with slot 1 for skull and tooth identity, paired appendages, one-tail topology, phenotype color zones, pattern continuity, crop safety, and text or watermark artifacts.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-63",
+        "reviewedAt": "2026-07-30T16:43:28.189Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/dimorphodon-macronyx-blue-lias-tidepool-forage-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/dimorphodon-macronyx-coastal-lowland-after-rain-habitat-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The high-oblique composition keeps one independently readable animal over a rain-darkened coastal-lowland mosaic with a distant marine context, avoiding the former modern tide-pool and grassy-cliff certainty.",
+        "reviewMethod": "Batch 63 original-size anatomy inspection and environmental comparison with Pugh et al. 2014; the Lower Lias marine shelf is treated as depositional context, while exposed landform, vegetation and terrestrial habitat use remain reconstruction hypotheses.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-63",
+        "reviewedAt": "2026-07-30T16:43:28.189Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/dimorphodon-macronyx-heterodont-wrist-anatomy-detail-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "The intentional head-to-planted-wrist crop clearly separates long sharp anterior teeth from small closely packed posterior teeth, retains the huge external naris, and shows exactly three free wrist digits beside the folded elongated fourth wing finger.",
+        "reviewMethod": "Batch 63 original-size head, jaw, tooth-row and planted-wrist inspection against Ezcurra 2016 and Witton 2015. Pelvis, tail and distal hindlimbs are intentionally outside frame and excluded from this image's count claim.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-63",
+        "reviewedAt": "2026-07-30T16:43:28.189Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/dimorphodon-macronyx-runoff-channel-distant-reptile-interaction-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "Exactly one Dimorphodon and one much smaller unidentified lepidosaur-like animal are separated by a runoff channel and depth; the primary retains two wings, two hind legs and one tail, and there is no chase, capture, bite or body contact.",
+        "reviewMethod": "Batch 63 original-size inspection of both isolated animals, appendage and tail topology, spatial separation, and artifact gates plus Bestwick et al. 2018 diet-evidence review; coexistence and dietary relevance remain explicit hypotheses.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-63",
+        "reviewedAt": "2026-07-30T16:43:28.189Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/dimorphodon-macronyx-firm-ground-folded-wing-locomotion-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "The strict lateral firm-ground pose resolves four ground contacts, two hind legs and one pelvis-origin tail; one folded wing is fully readable and the far folded wing is anatomically occluded rather than duplicated or detached.",
+        "reviewMethod": "Batch 63 original-size inspection of head, planted wrists, hind feet, folded membrane attachment and single-tail continuity against Witton 2015. Firm-ground quadrupedal locomotion is approved only as a functional reconstruction hypothesis.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-63",
+        "reviewedAt": "2026-07-30T16:43:28.189Z"
       }
     },
     "eudimorphodon-ranzii": {
@@ -7681,8 +7708,17 @@
     "assets/dinosaurs/saturnalia-tupiniquim-santa-maria-forage-ecology-imagegen-v1.png": {
       "reason": "Multiple similar brown animals and an explicit herbivorous-foraging claim conflict with the revised partially faunivorous evidence and make individual skull, hand, foot, and tail review unreliable."
     },
+    "assets/dinosaurs/dimorphodon-macronyx-blue-lias-bighead-tailvane-imagegen-v1.png": {
+      "reason": "The inflated monitor-lizard-like head, oversized scales, exaggerated unsupported terminal tail vane, and unclear wing topology fail the Dimorphodon skull, soft-tissue-evidence, and paired-wing gates."
+    },
+    "assets/dinosaurs/dimorphodon-macronyx-aubergine-saffron-wing-pattern-imagegen-v1.png": {
+      "reason": "The generic long low snout and nearly uniform tooth row lose the huge external naris, deep crestless skull, and strongly heterodont anterior-versus-posterior dentition required for Dimorphodon identity."
+    },
+    "assets/dinosaurs/dimorphodon-macronyx-blue-lias-tidepool-forage-ecology-imagegen-v1.png": {
+      "reason": "A generic long-snouted head, oversized unsupported tail vane, and overconfident modern tide-pool foraging scene fail both the taxon-identity gate and the distinction between Blue Lias depositional context and inferred living habitat."
+    },
     "assets/dinosaurs/dimorphodon-macronyx-blue-lias-overhead-glide-imagegen-v2.png": {
-      "reason": "The long low head and generic rhamphorhynchid silhouette lose the deep short Dimorphodon skull cue, so the image fails the taxon-identity gate despite a readable wing membrane."
+      "reason": "The long low generic rhamphorhynchid head, birdlike or confused wing topology, and asserted terminal vane lose the deep large-naris heterodont Dimorphodon identity and paired fourth-finger wing structure."
     },
     "assets/dinosaurs/diplodocus-carnegiei-allosaurus-tail-defense-ecology-imagegen-v1.png": {
       "reason": "The primary sauropod has a severely shortened neck and generic body proportions, while the secondary theropod anatomy is unstable; the scene fails Diplodocus identity and independent-anatomy review."
