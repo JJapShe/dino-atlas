@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-30T07:00:25.777Z",
-  "reviewBatch": "2026-07-30-richness-six-slot-batch-56",
-  "reviewMethod": "Original-size inspection of seventeen promoted built-in imagegen outputs, one selected existing candidate, three rejected generation drafts, and thirteen superseded, anatomically unstable, or role-redundant project assets; exact species identity, appendage count, pelvis-origin tail continuity, palette consistency, habitat fit, subject separation, composition balance, and text or watermark artifact gates.",
-  "targetSlots": 633,
+  "generatedAt": "2026-07-30T09:13:24.882Z",
+  "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+  "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+  "targetSlots": 648,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -1800,30 +1800,57 @@
     "anhanguera-santanae": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/anhanguera-santanae-romualdo-jawcrest-imagegen-v1.png",
+        "source": "assets/dinosaurs/anhanguera-santanae-lowcrest-lagoon-glide-representative-imagegen-v3.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The conservative Romualdo anhanguerid silhouette keeps the crest low and anterior, preserves a toothed narrow rostrum, two connected wings, two hindlimbs and a short tail; the historical species remains explicitly treated as a nomen dubium.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/anhanguera-santanae-indigo-coral-wing-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/anhanguera-santanae-indigo-celadon-storm-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Indigo and celadon wing membranes create a distinct palette while the anterior crest, toothed rostrum, paired wings, paired hindlimbs and short tail remain readable.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/anhanguera-santanae-araripe-takeoff-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/anhanguera-santanae-romualdo-overhead-glide-ecology-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The overhead lagoon glide adds a clearly different camera and habitat role; both wings remain body-connected and no extra membrane, limb or tail is visible.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/anhanguera-santanae-folded-wing-quadruped-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The grounded frame clearly separates the two folded forelimb-wings and two hindlimbs while retaining the low anterior crest, toothed rostrum and short tail needed for a conservative anhanguerid comparison.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/anhanguera-santanae-fish-channel-foraging-interaction-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "The fish-channel scene adds non-graphic ecological context without merging prey into the jaw or creating extra wings or legs; exact foraging behavior remains a reconstruction hypothesis.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/anhanguera-santanae-separated-formation-growth-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The larger and smaller pterosaurs are spatially separated with independent paired wings and hindlimbs; size difference is useful for comparison but age and association are not presented as observed behavior.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
       }
     },
     "tapejara-wellnhoferi": {
@@ -2200,30 +2227,57 @@
     "placodus-gigas": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/placodus-gigas-tethys-durophage-fullbody-imagegen-v1.png",
+        "source": "assets/dinosaurs/placodus-gigas-three-premaxillary-teeth-representative-imagegen-v3.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The broad low skull, restricted stout anterior teeth, barrel trunk, four limbs, single tapering tail and one modest dorsal osteoderm row read as Placodus rather than a predatory marine reptile or turtle.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/placodus-gigas-blackberry-jade-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/placodus-gigas-blackberry-jade-rust-closed-mouth-pattern-imagegen-v3.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Blackberry, jade and rust form a distinct tidal palette while the closed mouth prevents a false fang row and the broad skull, four limbs, tail and single dorsal row remain stable.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/placodus-gigas-shellfish-forage-ecology-imagegen-v2.png",
+        "source": "assets/dinosaurs/placodus-gigas-four-foot-benthic-forage-habitat-imagegen-v3.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The benthic tidal composition exposes four separate feet and one tail against an appropriate shallow marine floor; the exact feeding target is left uncertain rather than asserted.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/placodus-gigas-closed-mouth-skull-osteoderm-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "The closed-mouth forequarter view prioritizes the broad skull, thick neck and single midline osteoderm row without generating an unsupported carnivorous tooth series.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/placodus-gigas-fish-school-tidal-entry-interaction-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "A separated fish school supplies marine-community context while the Placodus body remains complete and non-predatory; no direct prey capture or settled diet is claimed.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/placodus-gigas-separated-adult-subadult-growth-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Two differently sized individuals are separated enough to audit four limbs and one tail on each; ontogenetic stage and social association remain reconstruction hypotheses.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
       }
     },
     "plesiosaurus-dolichodeirus": {
@@ -2567,28 +2621,55 @@
         "status": "approved",
         "source": "assets/dinosaurs/diplodocus-carnegiei-lowbody-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The full body keeps a small head, low forward neck, level lightweight trunk, four supporting limbs and one exceptionally long tapering tail inside frame.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
       },
       "2": {
         "status": "approved",
         "source": "assets/dinosaurs/diplodocus-carnegiei-teal-saddle-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Teal-gray skin, rust saddle marks and restrained tail rings vary the palette without changing the low diplodocid body or duplicating limbs and tail.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
       },
       "3": {
         "status": "approved",
         "source": "assets/dinosaurs/diplodocus-carnegiei-morrison-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The Morrison floodplain and spatially separated background fauna add ecosystem scale while the primary Diplodocus remains readable; co-occurrence in one instant is not asserted.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/diplodocus-carnegiei-twilight-mudflat-violet-mint-tailrings-ecology-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The broad twilight profile makes the low neck, horizontal trunk and uninterrupted pelvis-to-tip tail especially easy to compare; reflected feet are not used for digit diagnosis.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/diplodocus-carnegiei-distant-allosaurus-tail-posture-interaction-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "The distant allosauroid stays physically separate from the complete primary body, providing fauna context without claiming contact, pursuit or proven tail-strike behavior.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/diplodocus-carnegiei-separated-adult-juvenile-growth-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Adult and smaller individual are non-overlapping with independently readable limbs and tails; age, grouping and exact proportional change are labeled as hypotheses.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
       }
     },
     "camarasaurus-lentus": {
@@ -3044,28 +3125,55 @@
         "status": "approved",
         "source": "assets/dinosaurs/borealopelta-markmitchelli-alberta-nodosaurid-armor-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The low broad nodosaurid body, armored head and trunk, long shoulder spines, four feet and single unclubbed tail remain complete and readable.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
       },
       "2": {
         "status": "approved",
         "source": "assets/dinosaurs/borealopelta-markmitchelli-oxblood-slate-armor-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Oxblood dorsal armor, slate flanks and pale underside vary the surface treatment inside the fossil-supported reddish countershading range without obscuring armor order.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
       },
       "3": {
         "status": "approved",
         "source": "assets/dinosaurs/borealopelta-markmitchelli-forest-fern-browse-ecology-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The fern-rich woodland edge adds an everyday habitat and browsing composition while all four limbs, shoulder spines and the unclubbed tail stay visible.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/borealopelta-markmitchelli-countershaded-armor-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The clear side lighting separates reddish dorsal armor from the lighter underside and makes the armored skull, neck rings and long parascapular spines easy to inspect.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/borealopelta-markmitchelli-distant-theropod-standoff-interaction-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "The distant theropod is physically separated from the complete armored body, avoiding armor contact or a claimed attack while adding cautious fauna context.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/borealopelta-markmitchelli-separated-adult-subadult-growth-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Two separated sizes retain independent four-limb, shoulder-spine and unclubbed-tail anatomy; exact age, association and armor color change remain hypothetical.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
       }
     },
     "edmontonia-rugosidens": {
@@ -3604,30 +3712,57 @@
     "oviraptor-philoceratops": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/oviraptor-philoceratops-crested-beak-imagegen-v1.png",
+        "source": "assets/dinosaurs/oviraptor-philoceratops-robust-lowcrest-rostrum-representative-imagegen-v3.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The corrected animal is compact and robust, with a low crest, relatively elongate deep toothless rostrum, two three-fingered arms, two legs and one short feathered tail instead of a gracile modern-bird silhouette.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/oviraptor-philoceratops-jade-vermilion-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/oviraptor-philoceratops-aubergine-sage-robust-pattern-imagegen-v3.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Aubergine and sage provide a clearly different palette while the same robust low-crested, elongate-rostrum body and paired three-fingered arms remain readable.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/oviraptor-philoceratops-djadokhta-nest-ecology-imagegen-v2.png",
+        "source": "assets/dinosaurs/oviraptor-philoceratops-djadokhta-interdune-habitat-imagegen-v3.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The interdune frame adds a distinct Djadokhta semi-arid habitat and moving pose without introducing a high Citipati-like crest or modern-bird proportions.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/oviraptor-philoceratops-three-finger-hand-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The cropped anatomy view clearly shows three fingers on one forelimb together with the low crest and elongate toothless rostrum; hidden hindlimbs and tail are explicitly excluded from whole-body count claims.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/oviraptor-philoceratops-elongate-egg-brooding-interaction-imagegen-v3.png",
+        "role": "interaction",
+        "reason": "The nest uses elongate oviraptorid-style eggs and a low brooding posture rather than an egg-thief attack; species-specific behavior is explicitly treated as a group-level inference.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/oviraptor-philoceratops-separated-adult-subadult-growth-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Adult and smaller individual are separated for independent limb and tail review; age, association, crest growth and plumage change remain reconstruction hypotheses.",
+        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+        "reviewedAt": "2026-07-30T09:13:24.882Z"
       }
     },
     "citipati-osmolskae": {
@@ -5968,6 +6103,81 @@
     }
   },
   "rejectedSources": {
+    "assets/dinosaurs/anhanguera-santanae-romualdo-jawcrest-imagegen-v1.png": {
+      "reason": "The crest rises behind the orbit instead of remaining a low anterior jaw-tip structure, and the wing attachment is too weak for a conservative Romualdo anhanguerid reconstruction."
+    },
+    "assets/dinosaurs/anhanguera-santanae-indigo-coral-wing-pattern-imagegen-v1.png": {
+      "reason": "The domed orbital crest and unstable folded wing and limb relationship drift away from the low anterior jaw-crest and four-limbed pterosaur anatomy gate."
+    },
+    "assets/dinosaurs/anhanguera-santanae-araripe-takeoff-ecology-imagegen-v1.png": {
+      "reason": "A rear-orbital crest replaces the required low anterior jaw-tip crest, while one hindlimb merges into the launch silhouette and cannot pass independent appendage review."
+    },
+    "assets/dinosaurs/placodus-gigas-tethys-durophage-fullbody-imagegen-v1.png": {
+      "reason": "The animal reads as a generic giant lizard or salamander and does not reliably show Placodus's broad crushing skull, restricted anterior teeth, or single dorsal osteoderm row."
+    },
+    "assets/dinosaurs/placodus-gigas-blackberry-jade-pattern-imagegen-v1.png": {
+      "reason": "The color treatment is usable, but the underlying body remains a generic lizard with weak Placodus dentition and dorsal-row identity, so palette variation cannot rescue the anatomy."
+    },
+    "assets/dinosaurs/placodus-gigas-shellfish-forage-ecology-imagegen-v2.png": {
+      "reason": "The shell-bed frame again produces a generic salamander-like reptile without a reliable broad Placodus skull, restricted crushing dentition, or one-row dorsal osteoderm cue."
+    },
+    "assets/dinosaurs/placodus-gigas-chisel-incisor-single-osteoderm-representative-imagegen-v2.png": {
+      "reason": "Too many exposed pointed teeth form a carnivorous fang row rather than Placodus's few stout anterior teeth and broad posterior crushing dentition."
+    },
+    "assets/dinosaurs/placodus-gigas-chisel-incisor-forequarter-anatomy-imagegen-v1.png": {
+      "reason": "The open mouth displays an unmistakable predator-like series of sharp fangs, directly failing the restricted anterior-tooth and durophagous skull gate."
+    },
+    "assets/dinosaurs/placodus-gigas-shellbed-feeding-ecology-imagegen-v1.png": {
+      "reason": "The primary body reads as a generic monitor lizard with weak Placodus skull, trunk and marine-reptile identity, so the shell-bed feeding scene cannot pass the anatomy gate."
+    },
+    "assets/dinosaurs/oviraptor-philoceratops-crested-beak-imagegen-v1.png": {
+      "reason": "The tall modern-bird head profile, thin neck and gracile body drift toward a generic avian or Avimimus-like animal instead of the conservative robust Oviraptor holotype reconstruction."
+    },
+    "assets/dinosaurs/oviraptor-philoceratops-jade-vermilion-pattern-imagegen-v1.png": {
+      "reason": "The bright palette sits on the same overly gracile modern-bird body with an unstable tall crest, so it cannot serve as a same-body Oviraptor variation."
+    },
+    "assets/dinosaurs/oviraptor-philoceratops-djadokhta-nest-ecology-imagegen-v2.png": {
+      "reason": "The primary animal is too modern-bird-like, the eggs are round rather than elongate oviraptorid-style eggs, and the background ceratopsian identity is unreliable."
+    },
+    "assets/dinosaurs/borealopelta-markmitchelli-misty-bank-standoff-ecology-imagegen-v1.png": {
+      "reason": "Oversized random spikes cover the neck, torso and tail instead of preserving Borealopelta's ordered armor and shoulder-spine distribution, making the taxon identity unreliable."
+    },
+    "assets/dinosaurs/edmontonia-rugosidens-tyrannosaurid-shoulder-spike-standoff-ecology-imagegen-v1.png": {
+      "reason": "The primary animal drifts to an overdomed generic ankylosaur with unstable armor proportions, while the close predator also has weak anatomy; the scene fails independent species review."
+    },
+    "assets/dinosaurs/homalocephale-calathocercos-gobi-mudflat-walk-imagegen-v2.png": {
+      "reason": "The inflated body, raised dome and implausible horn row erase the low broad skull and lightly built bipedal Homalocephale identity despite a readable full-body silhouette."
+    },
+    "assets/dinosaurs/saurolophus-angustirostris-nemegt-riverbank-group-ecology-imagegen-v2.png": {
+      "reason": "The anatomy is broadly readable, but the compact riverbank group repeats the existing herd and water-margin role; the new isolated anatomy, channel-separated coexistence and ontogeny frames provide a more balanced six-slot set."
+    },
+    "assets/dinosaurs/bellusaurus-sui-monolophosaurus-duststorm-herd-shield-defense-ecology-imagegen-v1.png": {
+      "reason": "A named Monolophosaurus dust-storm attack and herd-shield response overstate direct interaction and social behavior while crowding the primary anatomy."
+    },
+    "assets/dinosaurs/bellusaurus-sui-monolophosaurus-escape-ecology-imagegen-v1.png": {
+      "reason": "The direct named-species pursuit is speculative, repeats a broadside chase composition, and makes independent limb and tail review unreliable."
+    },
+    "assets/dinosaurs/bellusaurus-sui-monolophosaurus-herd-shield-defense-ecology-imagegen-v1.png": {
+      "reason": "The herd-shield defense treats a hydraulically accumulated juvenile bonebed as evidence of coordinated social behavior and obscures appendage counts."
+    },
+    "assets/dinosaurs/bellusaurus-sui-monolophosaurus-tail-barrier-defense-ecology-imagegen-v1.png": {
+      "reason": "Named predator contact and a coordinated tail barrier are unsupported behavioral claims, with overlapping bodies that prevent clean anatomy review."
+    },
+    "assets/dinosaurs/bellusaurus-sui-shishugou-group-ecology-imagegen-v1.png": {
+      "reason": "The crowded group scene overstates gregariousness from a transported juvenile assemblage and adds little species-specific anatomy."
+    },
+    "assets/dinosaurs/bellusaurus-sui-shishugou-pebblebar-blackberry-jade-rosette-ecology-imagegen-v1.png": {
+      "reason": "The lizard- or ornithopod-like head, weak short-necked sauropod body plan, and decorative rosettes fail the Bellusaurus identity gate."
+    },
+    "assets/dinosaurs/bellusaurus-sui-short-necked-young-sauropod-identity-imagegen-v2.png": {
+      "reason": "The long monitor-lizard-like head, stubby neck and elephant-like feet do not match the evidence-bounded juvenile Bellusaurus reconstruction."
+    },
+    "assets/dinosaurs/bellusaurus-sui-shortneck-sauropod-imagegen-v1.png": {
+      "reason": "The former representative has a generic long lizard head, repetitive ochre broadside staging and elephant-like nail rows."
+    },
+    "assets/dinosaurs/bellusaurus-sui-slate-olive-pattern-imagegen-v1.png": {
+      "reason": "The palette variant repeats the same generic broadside body, long lizard-like head and unstable elephant-like feet without improving identity."
+    },
     "assets/dinosaurs/megalosaurus-bucklandii-bluegray-umber-pattern-imagegen-v1.png": {
       "reason": "Generic gray-brown broadside theropod, weak dentary and robust-forelimb identity cues, and repetitive palette do not support the rebuilt six-role gallery."
     },
@@ -7180,11 +7390,50 @@
     "assets/dinosaurs/diplodocus-carnegiei-allosaurus-juvenile-shield-defense-ecology-imagegen-v1.png": {
       "reason": "The short-necked generic sauropod body and overlapping defensive staging do not preserve the elongated Diplodocus profile or reliable limb and tail attachments."
     },
+    "assets/dinosaurs/torosaurus-latus-hell-creek-browse-ecology-imagegen-v3.png": {
+      "reason": "The animal is broadly readable, but the same lateral browse pose, palette and floodplain framing repeat the existing three Torosaurus views without adding the diagnostic rear-frill or under-skin fenestra information needed for a balanced six-slot set."
+    },
+    "assets/dinosaurs/sphaerotholus-buchholtzae-rain-arroyo-pair-ecology-imagegen-v4.png": {
+      "reason": "The pair is readable, but it duplicates the existing two-animal water-margin habitat role and adds no independent anatomy, interaction or growth-stage evidence."
+    },
+    "assets/dinosaurs/stygimoloch-spinifer-misty-backwater-pair-ecology-imagegen-v2.png": {
+      "reason": "The misty pair repeats the existing paired woodland habitat composition, while the large dome and restrained posterior spikes add weak diagnostic value for a separate interaction slot."
+    },
+    "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-escape-ecology-imagegen-v1.png": {
+      "reason": "The primary animal has a broad heavy trunk and oversized pebble osteoderms, reading as a small ankylosaur-like quadruped instead of a lightly built primarily bipedal Scutellosaurus."
+    },
+    "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-armor-turn-defense-ecology-imagegen-v1.png": {
+      "reason": "The primary animal is a squat armored quadruped with a continuous shell-like osteoderm field, which fails the slender bipedal body plan and tiny scattered osteoderm gate."
+    },
     "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-dust-branch-armor-dodge-ecology-imagegen-v1.png": {
       "reason": "The primary animal is rendered as a squat heavily armored ankylosaur-like quadruped instead of a lightly built Scutellosaurus with sparse small osteoderms."
     },
     "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-scrub-dodge-defense-ecology-imagegen-v1.png": {
       "reason": "Excessive armor, broad low body, and quadrupedal drift erase the small lightly built Scutellosaurus identity, so the action scene cannot be promoted."
+    },
+    "assets/dinosaurs/scutellosaurus-lawleri-armored-biped-imagegen-v1.png": {
+      "reason": "The former representative has a heavy trunk and oversized regularly spaced pebble osteoderms, so it does not preserve the lightly built primarily bipedal body plan or tiny scattered armor of Scutellosaurus."
+    },
+    "assets/dinosaurs/scutellosaurus-lawleri-rust-olive-pattern-imagegen-v1.png": {
+      "reason": "The former pattern image combines a heavy torso, oversized pebble osteoderms, and repeated tail rings, all of which overpower the slender body plan and sparse small-osteoderm identity."
+    },
+    "assets/dinosaurs/scutellosaurus-lawleri-kayenta-forage-ecology-imagegen-v1.png": {
+      "reason": "The scene depicts three squat quadrupedal animals with continuous shell-like armor instead of lightly built primarily bipedal Scutellosaurus individuals with tiny scattered osteoderms."
+    },
+    "assets/dinosaurs/scutellosaurus-lawleri-slotwash-teal-osteoderm-pattern-ecology-imagegen-v1.png": {
+      "reason": "Large bead-like osteoderms, black-and-white tail rings, and a heavy body make this read as a stylized armored quadruped rather than a conservative Scutellosaurus reconstruction."
+    },
+    "assets/dinosaurs/plesiosaurus-dolichodeirus-splitwater-petrol-rosette-ecology-imagegen-v1.png": {
+      "reason": "The animal is structurally readable, but the split-water surfacing composition duplicates the selected storm-shale environmental role and adds no independent anatomy or interaction evidence to the six-image set."
+    },
+    "assets/dinosaurs/plesiosaurus-dolichodeirus-splitwater-petrol-jade-ecology-imagegen-v1.png": {
+      "reason": "Only three paddle surfaces are independently readable in the split-water view, and the elongated lizard-like head plus repeated surfacing composition do not clear the four-paddle identity or diversity gates."
+    },
+    "assets/dinosaurs/plesiosaurus-dolichodeirus-mauve-rosette-bank-ecology-imagegen-v1.png": {
+      "reason": "At least five paddle-like surfaces are readable around the torso, so the image fails the strict two-forepaddle, two-hindpaddle anatomy gate despite a complete neck and tail."
+    },
+    "assets/dinosaurs/microraptor-gui-canopy-launch-indigo-emerald-ecology-imagegen-v1.png": {
+      "reason": "The launch frame repeats the selected airborne role, while the two hindwing surfaces do not attach cleanly to the two legs and instead read as extra torso- or tail-rooted feather fans."
     }
   }
 }

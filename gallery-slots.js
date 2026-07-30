@@ -1603,27 +1603,51 @@ window.gallerySlotAssignments = {
   ],
   "anhanguera-santanae": [
     {
-      "source": "assets/dinosaurs/anhanguera-santanae-romualdo-jawcrest-imagegen-v1.png",
+      "source": "assets/dinosaurs/anhanguera-santanae-lowcrest-lagoon-glide-representative-imagegen-v3.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/anhanguera-santanae-indigo-coral-wing-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/anhanguera-santanae-indigo-celadon-storm-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/anhanguera-santanae-araripe-takeoff-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/anhanguera-santanae-romualdo-overhead-glide-ecology-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/anhanguera-santanae-folded-wing-quadruped-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/anhanguera-santanae-fish-channel-foraging-interaction-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/anhanguera-santanae-separated-formation-growth-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
     }
   ],
@@ -1961,7 +1985,7 @@ window.gallerySlotAssignments = {
   ],
   "placodus-gigas": [
     {
-      "source": "assets/dinosaurs/placodus-gigas-tethys-durophage-fullbody-imagegen-v1.png",
+      "source": "assets/dinosaurs/placodus-gigas-three-premaxillary-teeth-representative-imagegen-v3.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
@@ -1969,7 +1993,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/placodus-gigas-blackberry-jade-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/placodus-gigas-blackberry-jade-rust-closed-mouth-pattern-imagegen-v3.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -1977,9 +2001,33 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/placodus-gigas-shellfish-forage-ecology-imagegen-v2.png",
+      "source": "assets/dinosaurs/placodus-gigas-four-foot-benthic-forage-habitat-imagegen-v3.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "marine",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/placodus-gigas-closed-mouth-skull-osteoderm-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "marine",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/placodus-gigas-fish-school-tidal-entry-interaction-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "marine",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/placodus-gigas-separated-adult-subadult-growth-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "marine",
       "expectedKind": "anatomy review"
@@ -2306,6 +2354,30 @@ window.gallerySlotAssignments = {
       "source": "assets/dinosaurs/diplodocus-carnegiei-morrison-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/diplodocus-carnegiei-twilight-mudflat-violet-mint-tailrings-ecology-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/diplodocus-carnegiei-distant-allosaurus-tail-posture-interaction-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/diplodocus-carnegiei-separated-adult-juvenile-growth-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
@@ -2732,6 +2804,30 @@ window.gallerySlotAssignments = {
       "source": "assets/dinosaurs/borealopelta-markmitchelli-forest-fern-browse-ecology-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/borealopelta-markmitchelli-countershaded-armor-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/borealopelta-markmitchelli-distant-theropod-standoff-interaction-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/borealopelta-markmitchelli-separated-adult-subadult-growth-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
@@ -3215,7 +3311,7 @@ window.gallerySlotAssignments = {
   ],
   "oviraptor-philoceratops": [
     {
-      "source": "assets/dinosaurs/oviraptor-philoceratops-crested-beak-imagegen-v1.png",
+      "source": "assets/dinosaurs/oviraptor-philoceratops-robust-lowcrest-rostrum-representative-imagegen-v3.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
@@ -3223,7 +3319,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/oviraptor-philoceratops-jade-vermilion-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/oviraptor-philoceratops-aubergine-sage-robust-pattern-imagegen-v3.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -3231,9 +3327,33 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/oviraptor-philoceratops-djadokhta-nest-ecology-imagegen-v2.png",
+      "source": "assets/dinosaurs/oviraptor-philoceratops-djadokhta-interdune-habitat-imagegen-v3.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/oviraptor-philoceratops-three-finger-hand-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/oviraptor-philoceratops-elongate-egg-brooding-interaction-imagegen-v3.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/oviraptor-philoceratops-separated-adult-subadult-growth-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"

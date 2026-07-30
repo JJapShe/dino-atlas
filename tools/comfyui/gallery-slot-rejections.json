@@ -1,9 +1,42 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-30-richness-six-slot-batch-56",
+  "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
   "rejectedSources": {
+    "assets/dinosaurs/anhanguera-santanae-romualdo-jawcrest-imagegen-v1.png": {
+      "reason": "The crest rises behind the orbit instead of remaining a low anterior jaw-tip structure, and the wing attachment is too weak for a conservative Romualdo anhanguerid reconstruction."
+    },
+    "assets/dinosaurs/anhanguera-santanae-indigo-coral-wing-pattern-imagegen-v1.png": {
+      "reason": "The domed orbital crest and unstable folded wing and limb relationship drift away from the low anterior jaw-crest and four-limbed pterosaur anatomy gate."
+    },
+    "assets/dinosaurs/anhanguera-santanae-araripe-takeoff-ecology-imagegen-v1.png": {
+      "reason": "A rear-orbital crest replaces the required low anterior jaw-tip crest, while one hindlimb merges into the launch silhouette and cannot pass independent appendage review."
+    },
+    "assets/dinosaurs/placodus-gigas-tethys-durophage-fullbody-imagegen-v1.png": {
+      "reason": "The animal reads as a generic giant lizard or salamander and does not reliably show Placodus's broad crushing skull, restricted anterior teeth, or single dorsal osteoderm row."
+    },
+    "assets/dinosaurs/placodus-gigas-blackberry-jade-pattern-imagegen-v1.png": {
+      "reason": "The color treatment is usable, but the underlying body remains a generic lizard with weak Placodus dentition and dorsal-row identity, so palette variation cannot rescue the anatomy."
+    },
+    "assets/dinosaurs/placodus-gigas-shellfish-forage-ecology-imagegen-v2.png": {
+      "reason": "The shell-bed frame again produces a generic salamander-like reptile without a reliable broad Placodus skull, restricted crushing dentition, or one-row dorsal osteoderm cue."
+    },
+    "assets/dinosaurs/placodus-gigas-chisel-incisor-single-osteoderm-representative-imagegen-v2.png": {
+      "reason": "Too many exposed pointed teeth form a carnivorous fang row rather than Placodus's few stout anterior teeth and broad posterior crushing dentition."
+    },
+    "assets/dinosaurs/placodus-gigas-chisel-incisor-forequarter-anatomy-imagegen-v1.png": {
+      "reason": "The open mouth displays an unmistakable predator-like series of sharp fangs, directly failing the restricted anterior-tooth and durophagous skull gate."
+    },
     "assets/dinosaurs/placodus-gigas-shellbed-feeding-ecology-imagegen-v1.png": {
       "reason": "The primary body reads as a generic monitor lizard with weak Placodus skull, trunk and marine-reptile identity, so the shell-bed feeding scene cannot pass the anatomy gate."
+    },
+    "assets/dinosaurs/oviraptor-philoceratops-crested-beak-imagegen-v1.png": {
+      "reason": "The tall modern-bird head profile, thin neck and gracile body drift toward a generic avian or Avimimus-like animal instead of the conservative robust Oviraptor holotype reconstruction."
+    },
+    "assets/dinosaurs/oviraptor-philoceratops-jade-vermilion-pattern-imagegen-v1.png": {
+      "reason": "The bright palette sits on the same overly gracile modern-bird body with an unstable tall crest, so it cannot serve as a same-body Oviraptor variation."
+    },
+    "assets/dinosaurs/oviraptor-philoceratops-djadokhta-nest-ecology-imagegen-v2.png": {
+      "reason": "The primary animal is too modern-bird-like, the eggs are round rather than elongate oviraptorid-style eggs, and the background ceratopsian identity is unreliable."
     },
     "assets/dinosaurs/borealopelta-markmitchelli-misty-bank-standoff-ecology-imagegen-v1.png": {
       "reason": "Oversized random spikes cover the neck, torso and tail instead of preserving Borealopelta's ordered armor and shoulder-spine distribution, making the taxon identity unreliable."
@@ -1302,5 +1335,5 @@
       "reason": "The launch frame repeats the selected airborne role, while the two hindwing surfaces do not attach cleanly to the two legs and instead read as extra torso- or tail-rooted feather fans."
     }
   },
-  "generatedAt": "2026-07-30T07:00:25.777Z"
+  "generatedAt": "2026-07-30T09:13:24.882Z"
 }
