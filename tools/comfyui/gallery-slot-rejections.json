@@ -1,7 +1,16 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-30-richness-six-slot-batch-61",
+  "reviewBatch": "2026-07-30-richness-six-slot-batch-62",
   "rejectedSources": {
+    "assets/dinosaurs/nyctosaurus-gracilis-niobrara-forked-crest-imagegen-v1.png": {
+      "reason": "Free clawed appendages project from the wing margins, limb and membrane topology is confused, and a genus-level mature branching crest is incorrectly fixed onto the N. gracilis representative."
+    },
+    "assets/dinosaurs/nyctosaurus-gracilis-aubergine-mint-wing-pattern-imagegen-v1.png": {
+      "reason": "Obvious clawed hands grow from both wing edges, a tail spike is added, and the giant crest is fixed, so the color variant fails the nyctosaurid manual-digit-loss gate."
+    },
+    "assets/dinosaurs/nyctosaurus-gracilis-niobrara-updraft-glide-ecology-imagegen-v1.png": {
+      "reason": "Free forelimb elements, incompletely readable hindlimbs, a fixed giant crest, and a modern grassy chalk-cliff coast fail both the anatomy and open-seaway habitat gates."
+    },
     "assets/dinosaurs/dsungaripterus-weii-tugulu-upturned-toothless-front-crusher-v2-imagegen-v1.png": {
       "reason": "The former representative exaggerates the rostrum into a large hook, carries pointed teeth along most of the jaw instead of a long toothless front and posterior blunt teeth, and presents unstable detached-looking folded membranes."
     },

@@ -1753,27 +1753,51 @@ window.gallerySlotAssignments = {
   ],
   "nyctosaurus-gracilis": [
     {
-      "source": "assets/dinosaurs/nyctosaurus-gracilis-niobrara-forked-crest-imagegen-v1.png",
+      "source": "assets/dinosaurs/nyctosaurus-gracilis-crestless-seaway-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "smoky-hill-open-seaway",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/nyctosaurus-gracilis-aubergine-mint-wing-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/nyctosaurus-gracilis-celadon-dorsal-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "smoky-hill-open-seaway",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/nyctosaurus-gracilis-niobrara-updraft-glide-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/nyctosaurus-gracilis-western-interior-seaway-habitat-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "smoky-hill-open-seaway",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/nyctosaurus-gracilis-clawless-three-phalange-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "smoky-hill-open-seaway",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/nyctosaurus-gracilis-fish-shoal-hypothesis-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "smoky-hill-open-seaway",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/nyctosaurus-gracilis-crestless-mature-genus-display-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "smoky-hill-open-seaway",
       "expectedKind": "anatomy review"
     }
   ],

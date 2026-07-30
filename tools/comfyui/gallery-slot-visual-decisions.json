@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-30T14:12:07.351Z",
-  "reviewBatch": "2026-07-30-richness-six-slot-batch-61",
-  "reviewMethod": "Batch 61 Chen et al. 2020 cranial-figure review, Song et al. 2024 postcranial abstract review, Xing et al. 2021 Wuerho habitat review, and original-size inspection of all selected Dsungaripterus assets for toothless-rostrum length, posterior blunt dentition, crest profile, four-limb topology, attached wing membranes, short tail, role balance, palette continuity, habitat fit, and artifact gates.",
-  "targetSlots": 675,
+  "generatedAt": "2026-07-30T15:10:47.467Z",
+  "reviewBatch": "2026-07-30-richness-six-slot-batch-62",
+  "reviewMethod": "Batch 62 Williston 1903 public-domain specimen-plate review, Unwin 2003 nyctosaurid diagnosis review, Bennett 2003 crest-scope review, Hattin 1982 Smoky Hill depositional review, Bestwick et al. 2018 diet-evidence review, and original-size inspection of all selected Nyctosaurus assets for crest scope, edentulous beak, loss of free manual digits I-III, three-phalange wing finger, paired wings and hindlimbs, short tail, palette continuity, open-seaway habitat, role balance, and artifact gates.",
+  "targetSlots": 678,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -1968,30 +1968,57 @@
     "nyctosaurus-gracilis": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/nyctosaurus-gracilis-niobrara-forked-crest-imagegen-v1.png",
+        "source": "assets/dinosaurs/nyctosaurus-gracilis-crestless-seaway-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The crestless full-body animal has a long straight edentulous beak, two wing forelimbs with smooth clawless wrist margins, three visibly articulated long wing-finger segments, two separate hind legs and feet, and one very short tail.",
+        "reviewMethod": "Batch 62 original-size full-frame plus isolated head, both wrist margins, wing-finger segment chains, hind feet and tail inspection against Williston 1903 plates and the manual-digit-loss and three-phalange diagnosis in Unwin 2003.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-62",
+        "reviewedAt": "2026-07-30T15:10:47.467Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/nyctosaurus-gracilis-aubergine-mint-wing-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/nyctosaurus-gracilis-celadon-dorsal-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "A dorsal banking view preserves the crestless skull and four-limb topology while making the charcoal-blue body, muted celadon membranes, irregular low-contrast mottling, ochre face accent and ivory beak readable without synthetic stripes or dots.",
+        "reviewMethod": "Batch 62 original-size comparison with slot 1 for skull silhouette, clawless wrists, paired wings and feet, short tail, canonical color zones, pattern continuity, crop safety, and text or watermark artifacts.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-62",
+        "reviewedAt": "2026-07-30T15:10:47.467Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/nyctosaurus-gracilis-niobrara-updraft-glide-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/nyctosaurus-gracilis-western-interior-seaway-habitat-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The wide composition keeps one readable crestless animal over open pale carbonate-rich seaway water and a distant low horizon, avoiding the former modern grassy chalk-cliff coast.",
+        "reviewMethod": "Batch 62 original-size anatomy inspection and habitat comparison against Hattin 1982's broad Western Interior Seaway, offshore carbonate-mud and low-terrigenous-input setting; exact water color and distant shoreline remain reconstruction choices.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-62",
+        "reviewedAt": "2026-07-30T15:10:47.467Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/nyctosaurus-gracilis-clawless-three-phalange-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "The clean side-to-dorsal view keeps both wrist margins smooth and free of manual claws while the elongated wing support resolves as three long articulated phalangeal segments; the crestless beak, two hind feet and short tail remain readable.",
+        "reviewMethod": "Batch 62 original-size comparison with Williston 1903 forelimb, sternum and wing-phalange plates plus Unwin 2003 for loss of manual digits I-III and reduction of the wing finger to three phalanges.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-62",
+        "reviewedAt": "2026-07-30T15:10:47.467Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/nyctosaurus-gracilis-fish-shoal-hypothesis-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "A single crestless animal remains fully separated from the underwater fish shoal with closed beak above the surface, preserving all limb and tail gates without asserting a capture or skimming mechanism.",
+        "reviewMethod": "Batch 62 original-size full-frame and anatomy inspection plus Bestwick et al. 2018 diet-evidence review; approved only as a clearly labeled piscivory and surface-scanning hypothesis.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-62",
+        "reviewedAt": "2026-07-30T15:10:47.467Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/nyctosaurus-gracilis-crestless-mature-genus-display-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "Two fully separated animals contrast the crestless N. gracilis representative phenotype with one mature genus-level Nyctosaurus bearing an open branching bony crest; neither animal overlaps, and no unsupported soft-tissue sail fills the crest fork.",
+        "reviewMethod": "Batch 62 original-size inspection of both isolated animals for crest assignment, open fork, absent crest sail, edentulous beaks, paired wings and hind feet, short tails, and artifact gates, with Bennett 2003 used only for the genus-level mature crest and late-ontogenetic display hypothesis.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-62",
+        "reviewedAt": "2026-07-30T15:10:47.467Z"
       }
     },
     "pteranodon-longiceps": {
@@ -6346,6 +6373,15 @@
     }
   },
   "rejectedSources": {
+    "assets/dinosaurs/nyctosaurus-gracilis-niobrara-forked-crest-imagegen-v1.png": {
+      "reason": "Free clawed appendages project from the wing margins, limb and membrane topology is confused, and a genus-level mature branching crest is incorrectly fixed onto the N. gracilis representative."
+    },
+    "assets/dinosaurs/nyctosaurus-gracilis-aubergine-mint-wing-pattern-imagegen-v1.png": {
+      "reason": "Obvious clawed hands grow from both wing edges, a tail spike is added, and the giant crest is fixed, so the color variant fails the nyctosaurid manual-digit-loss gate."
+    },
+    "assets/dinosaurs/nyctosaurus-gracilis-niobrara-updraft-glide-ecology-imagegen-v1.png": {
+      "reason": "Free forelimb elements, incompletely readable hindlimbs, a fixed giant crest, and a modern grassy chalk-cliff coast fail both the anatomy and open-seaway habitat gates."
+    },
     "assets/dinosaurs/dsungaripterus-weii-tugulu-upturned-toothless-front-crusher-v2-imagegen-v1.png": {
       "reason": "The former representative exaggerates the rostrum into a large hook, carries pointed teeth along most of the jaw instead of a long toothless front and posterior blunt teeth, and presents unstable detached-looking folded membranes."
     },
