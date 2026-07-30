@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dino Image Review</title>
   <style>
+    @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css");
+
     :root {
       color-scheme: dark;
       --bg: #0b0d10;
@@ -17,25 +19,35 @@
       --warn: #f0b85a;
       --bad: #f46f78;
       --good: #45d184;
+      --list-pane-width: 52vw;
+      --card-min-width: 218px;
     }
     * { box-sizing: border-box; }
+    html,
     body {
+      width: 100%;
+      height: 100%;
+    }
+    body {
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr);
+      min-width: 320px;
       margin: 0;
+      overflow: hidden;
       background: var(--bg);
       color: var(--text);
-      font-family: "Segoe UI", system-ui, sans-serif;
+      font-family: "Pretendard", "Segoe UI", system-ui, sans-serif;
       font-size: 14px;
     }
     body.zoom-open { overflow: hidden; }
     header {
-      position: sticky;
-      top: 0;
       z-index: 5;
       display: grid;
-      grid-template-columns: 1fr auto;
+      grid-template-columns: minmax(210px, auto) minmax(0, 1fr);
       gap: 14px;
       align-items: center;
-      padding: 14px 18px;
+      min-width: 0;
+      padding: 12px 16px;
       background: #0f1318;
       border-bottom: 1px solid var(--line);
     }
@@ -46,9 +58,16 @@
     }
     .toolbar {
       display: grid;
-      grid-template-columns: minmax(220px, 1fr) 190px 150px 140px 150px 38px;
+      grid-template-columns:
+        minmax(170px, 1fr)
+        minmax(160px, 0.9fr)
+        minmax(120px, 0.62fr)
+        minmax(116px, 0.58fr)
+        minmax(136px, 0.7fr)
+        38px;
       gap: 8px;
       align-items: center;
+      min-width: 0;
     }
     input, select, textarea, button { font: inherit; }
     input, select, textarea {
@@ -86,9 +105,172 @@
     }
     main {
       display: grid;
-      grid-template-columns: minmax(260px, 30vw) minmax(560px, 1fr);
-      gap: 16px;
-      padding: 16px 18px 22px;
+      grid-template-columns:
+        minmax(420px, var(--list-pane-width))
+        8px
+        minmax(420px, 1fr);
+      min-width: 0;
+      min-height: 0;
+      overflow: hidden;
+    }
+    body.detail-collapsed main {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    body.detail-collapsed .pane-resizer,
+    body.detail-collapsed #detail {
+      display: none;
+    }
+    .browser-pane {
+      position: relative;
+      min-width: 0;
+      min-height: 0;
+      overflow-x: hidden;
+      overflow-y: auto;
+      padding: 0 14px 20px;
+      scrollbar-gutter: stable;
+    }
+    .browser-pane-toolbar {
+      position: sticky;
+      z-index: 4;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      min-height: 52px;
+      margin: 0 -14px 12px;
+      padding: 8px 14px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(11, 13, 16, 0.96);
+      backdrop-filter: blur(12px);
+    }
+    .browser-pane-title {
+      display: flex;
+      align-items: baseline;
+      gap: 9px;
+      min-width: 0;
+    }
+    .browser-pane-title strong {
+      font-size: 14px;
+      white-space: nowrap;
+    }
+    .list-status {
+      overflow: hidden;
+      color: var(--muted);
+      font-size: 12px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .browser-actions,
+    .density-control {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      flex: 0 0 auto;
+    }
+    .density-control {
+      padding: 3px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--panel-2);
+    }
+    .density-control button,
+    .panel-toggle {
+      display: grid;
+      width: 32px;
+      min-width: 32px;
+      height: 30px;
+      min-height: 30px;
+      place-items: center;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+    }
+    .density-control button:hover,
+    .density-control button.active,
+    .panel-toggle:hover {
+      border-color: transparent;
+      background: rgba(110, 195, 178, 0.13);
+      color: var(--text);
+    }
+    .density-control button.active {
+      box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 60%, var(--line));
+    }
+    .density-icon {
+      display: grid;
+      width: 16px;
+      height: 14px;
+      grid-template-columns: repeat(var(--density-columns, 2), 1fr);
+      gap: 2px;
+    }
+    .density-icon::before {
+      grid-column: 1 / -1;
+      width: 100%;
+      height: 100%;
+      content: "";
+      background:
+        repeating-linear-gradient(
+          90deg,
+          currentColor 0 3px,
+          transparent 3px calc(3px + var(--density-gap, 2px))
+        ),
+        repeating-linear-gradient(
+          0deg,
+          currentColor 0 3px,
+          transparent 3px 5px
+        );
+      opacity: 0.9;
+    }
+    .density-icon.comfortable {
+      --density-gap: 3px;
+    }
+    .density-icon.large {
+      --density-gap: 5px;
+    }
+    .panel-icon {
+      position: relative;
+      display: block;
+      width: 17px;
+      height: 14px;
+      border: 1px solid currentColor;
+      border-radius: 2px;
+    }
+    .panel-icon::after {
+      position: absolute;
+      top: 1px;
+      right: 4px;
+      bottom: 1px;
+      border-left: 1px solid currentColor;
+      content: "";
+    }
+    .pane-resizer {
+      position: relative;
+      z-index: 3;
+      min-width: 8px;
+      background: #0f1318;
+      cursor: col-resize;
+      touch-action: none;
+    }
+    .pane-resizer::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 2px;
+      height: 54px;
+      border-radius: 2px;
+      background: var(--line);
+      content: "";
+      transform: translate(-50%, -50%);
+    }
+    .pane-resizer:hover::after,
+    .pane-resizer:focus-visible::after,
+    body.resizing-panes .pane-resizer::after {
+      background: var(--accent);
+    }
+    body.resizing-panes {
+      cursor: col-resize;
+      user-select: none;
     }
     .summary {
       display: flex;
@@ -113,23 +295,31 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(138px, 1fr));
-      gap: 10px;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--card-min-width)), 1fr));
+      gap: 12px;
       align-content: start;
     }
+    main[data-density="compact"] { --card-min-width: 174px; }
+    main[data-density="comfortable"] { --card-min-width: 218px; }
+    main[data-density="large"] { --card-min-width: 332px; }
     .card {
       border: 1px solid var(--line);
-      border-radius: 8px;
+      border-radius: 6px;
       background: var(--panel);
       overflow: hidden;
       min-width: 0;
       text-align: left;
       padding: 0;
+      content-visibility: auto;
+      contain-intrinsic-size: 260px;
     }
-    .card.active { border-color: var(--accent); }
+    .card.active {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 64%, transparent);
+    }
     .thumb {
       width: 100%;
-      aspect-ratio: 4 / 3;
+      aspect-ratio: 16 / 10;
       object-fit: cover;
       display: block;
       background: #0f1318;
@@ -140,15 +330,76 @@
       gap: 6px;
       min-width: 0;
     }
-    .name {
-      font-size: 13px;
-      font-weight: 650;
-      line-height: 1.3;
+    .card-heading {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 7px;
+      align-items: start;
+    }
+    .card-name-block {
+      display: grid;
+      min-width: 0;
+      gap: 2px;
+    }
+    .card-species {
+      min-width: 0;
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 750;
+      line-height: 1.28;
       overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-break: keep-all;
+    }
+    .card-scientific {
+      overflow: hidden;
+      color: var(--muted);
+      font-size: 11px;
+      font-style: italic;
+      line-height: 1.3;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .card-kind {
+      overflow: hidden;
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 700;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .file-name {
+      overflow: hidden;
+      color: var(--muted);
+      font-family: Consolas, "Cascadia Mono", monospace;
+      font-size: 10px;
+      line-height: 1.35;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
-      word-break: break-word;
+      overflow-wrap: anywhere;
+    }
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 10px;
+    }
+    main[data-density="compact"] .meta {
+      gap: 4px;
+      padding: 7px;
+    }
+    main[data-density="compact"] .card-species {
+      font-size: 12px;
+    }
+    main[data-density="compact"] .file-name {
+      -webkit-line-clamp: 1;
+    }
+    main[data-density="compact"] .card-heading .pill {
+      display: none;
     }
     .row {
       display: flex;
@@ -160,22 +411,51 @@
     .card .pill {
       min-width: 0;
       max-width: 100%;
-      white-space: normal;
-      overflow-wrap: anywhere;
+      overflow: hidden;
       text-align: center;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     .status-pass { color: var(--good); border-color: color-mix(in srgb, var(--good) 55%, var(--line)); }
     .status-hold { color: var(--warn); border-color: color-mix(in srgb, var(--warn) 55%, var(--line)); }
     .status-reject { color: var(--bad); border-color: color-mix(in srgb, var(--bad) 55%, var(--line)); }
     aside {
-      position: sticky;
-      top: 82px;
-      align-self: start;
-      border: 1px solid var(--line);
-      border-radius: 8px;
+      position: relative;
+      min-width: 0;
+      min-height: 0;
+      overflow-x: hidden;
+      overflow-y: auto;
+      border-left: 1px solid var(--line);
       background: var(--panel);
-      overflow: hidden;
-      min-height: 320px;
+      scrollbar-gutter: stable;
+    }
+    .detail-pane-bar {
+      position: sticky;
+      z-index: 3;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 44px;
+      padding: 6px 12px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(21, 26, 32, 0.96);
+      backdrop-filter: blur(12px);
+    }
+    .detail-pane-bar strong {
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .detail-close {
+      display: grid;
+      width: 32px;
+      min-width: 32px;
+      height: 30px;
+      min-height: 30px;
+      place-items: center;
+      padding: 0;
+      font-size: 20px;
+      line-height: 1;
     }
     .preview-button {
       width: 100%;
@@ -189,7 +469,8 @@
     .preview-button:hover { border: 0; }
     .preview {
       width: 100%;
-      max-height: 68vh;
+      min-height: 300px;
+      max-height: 62vh;
       object-fit: contain;
       background: #080a0d;
       display: block;
@@ -201,9 +482,15 @@
     }
     .detail h2 {
       margin: 0;
-      font-size: 16px;
+      font-size: 20px;
       line-height: 1.35;
       word-break: break-word;
+    }
+    .detail-file-name {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
     }
     .detail .mono { overflow-wrap: anywhere; }
     .actions {
@@ -227,6 +514,25 @@
     .save-row button {
       background: color-mix(in srgb, var(--accent) 26%, var(--panel));
       border-color: color-mix(in srgb, var(--accent) 60%, var(--line));
+    }
+    .load-more {
+      display: block;
+      width: min(100%, 420px);
+      min-height: 42px;
+      margin: 18px auto 0;
+      color: var(--accent);
+    }
+    .load-more[hidden] {
+      display: none;
+    }
+    .empty-state {
+      grid-column: 1 / -1;
+      display: grid;
+      min-height: 220px;
+      place-items: center;
+      border: 1px dashed var(--line);
+      border-radius: 6px;
+      color: var(--muted);
     }
     .zoom {
       position: fixed;
@@ -285,15 +591,75 @@
     }
     .muted { color: var(--muted); }
     .mono { font-family: Consolas, "Cascadia Mono", monospace; }
-    @media (max-width: 980px) {
+    @media (max-width: 1180px) {
       header { grid-template-columns: 1fr; }
-      .toolbar { grid-template-columns: 1fr 1fr; }
-      main { grid-template-columns: 1fr; }
-      aside { position: static; }
+      .toolbar { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      main {
+        grid-template-columns:
+          minmax(380px, var(--list-pane-width))
+          8px
+          minmax(360px, 1fr);
+      }
+    }
+    @media (max-width: 820px) {
+      body {
+        display: block;
+        height: auto;
+        min-height: 100dvh;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+      header {
+        position: sticky;
+        top: 0;
+      }
+      main,
+      body.detail-collapsed main {
+        display: block;
+        min-height: calc(100dvh - 154px);
+        overflow: visible;
+      }
+      .browser-pane {
+        min-height: calc(100dvh - 154px);
+        overflow: visible;
+      }
+      .pane-resizer {
+        display: none;
+      }
+      aside,
+      body.detail-collapsed #detail {
+        position: fixed;
+        z-index: 12;
+        inset: 0;
+        display: none;
+        border: 0;
+        background: var(--panel);
+      }
+      body.detail-open {
+        overflow: hidden;
+      }
+      body.detail-open #detail {
+        display: block;
+      }
+      .detail-pane-bar {
+        min-height: 52px;
+      }
+      .preview {
+        min-height: 240px;
+        max-height: 56vh;
+      }
     }
     @media (max-width: 560px) {
       .toolbar { grid-template-columns: 1fr; }
-      .grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+      .browser-pane-toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .browser-actions {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .grid { grid-template-columns: 1fr; }
       .actions { grid-template-columns: repeat(2, 1fr); }
       .zoom-caption { align-items: flex-start; flex-direction: column; }
       .zoom-caption .row { width: 100%; min-width: 0; }
@@ -328,8 +694,44 @@
       <button class="refresh-button" id="refreshImages" type="button" title="최신 이미지 목록 불러오기" aria-label="이미지 목록 새로고침">&#x21bb;</button>
     </div>
   </header>
-  <main>
-    <section class="grid" id="grid"></section>
+  <main id="reviewWorkspace" data-density="comfortable">
+    <section class="browser-pane" id="browserPane" aria-label="이미지 목록">
+      <div class="browser-pane-toolbar">
+        <div class="browser-pane-title">
+          <strong>이미지 목록</strong>
+          <span class="list-status" id="listStatus"></span>
+        </div>
+        <div class="browser-actions">
+          <div class="density-control" role="group" aria-label="카드 크기">
+            <button data-density="compact" type="button" title="작은 카드" aria-label="작은 카드">
+              <span class="density-icon compact" aria-hidden="true"></span>
+            </button>
+            <button class="active" data-density="comfortable" type="button" title="보통 카드" aria-label="보통 카드">
+              <span class="density-icon comfortable" aria-hidden="true"></span>
+            </button>
+            <button data-density="large" type="button" title="큰 카드" aria-label="큰 카드">
+              <span class="density-icon large" aria-hidden="true"></span>
+            </button>
+          </div>
+          <button class="panel-toggle" id="toggleDetail" type="button" title="상세 패널 접기" aria-label="상세 패널 접기" aria-pressed="false">
+            <span class="panel-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+      <section class="grid" id="grid" aria-live="polite"></section>
+      <button class="load-more" id="loadMore" type="button" hidden></button>
+    </section>
+    <div
+      class="pane-resizer"
+      id="paneResizer"
+      role="separator"
+      aria-label="목록과 상세 패널 너비 조절"
+      aria-orientation="vertical"
+      aria-valuemin="35"
+      aria-valuemax="70"
+      aria-valuenow="52"
+      tabindex="0"
+    ></div>
     <aside id="detail"></aside>
   </main>
   <div class="zoom" id="zoom" hidden>
@@ -373,8 +775,164 @@
     let selectedStatus = "unreviewed";
     let imageListSignature = "";
     let refreshInFlight = false;
+    const REVIEW_LAYOUT_KEY = "dino-review-layout-v2";
+    const LIST_BATCH_SIZE = 120;
+    let visibleLimit = LIST_BATCH_SIZE;
+    let lastFilterSignature = "";
+    let layoutState = loadLayoutState();
 
     const $ = (id) => document.getElementById(id);
+
+    function clamp(value, minimum, maximum) {
+      return Math.min(maximum, Math.max(minimum, value));
+    }
+
+    function loadLayoutState() {
+      const defaults = {
+        density: "comfortable",
+        detailCollapsed: false,
+        listPaneWidth: Math.round(window.innerWidth * 0.52),
+      };
+      try {
+        const saved = JSON.parse(localStorage.getItem(REVIEW_LAYOUT_KEY) || "{}");
+        return {
+          density: ["compact", "comfortable", "large"].includes(saved.density)
+            ? saved.density
+            : defaults.density,
+          detailCollapsed: Boolean(saved.detailCollapsed),
+          listPaneWidth: Number.isFinite(saved.listPaneWidth)
+            ? saved.listPaneWidth
+            : defaults.listPaneWidth,
+        };
+      } catch {
+        return defaults;
+      }
+    }
+
+    function saveLayoutState() {
+      try {
+        localStorage.setItem(REVIEW_LAYOUT_KEY, JSON.stringify(layoutState));
+      } catch {
+        // Layout preferences are optional when storage is unavailable.
+      }
+    }
+
+    function isNarrowLayout() {
+      return window.matchMedia("(max-width: 820px)").matches;
+    }
+
+    function listPaneBounds() {
+      const width = $("reviewWorkspace")?.clientWidth || window.innerWidth;
+      const compactDesktop = window.innerWidth <= 1180;
+      const minimum = compactDesktop ? 380 : 420;
+      const detailMinimum = compactDesktop ? 360 : 420;
+      return {
+        minimum: Math.min(minimum, Math.max(280, width - detailMinimum)),
+        maximum: Math.max(minimum, width - detailMinimum - 8),
+        width,
+      };
+    }
+
+    function updateDetailToggle() {
+      const button = $("toggleDetail");
+      if (!button) return;
+      const visible = isNarrowLayout()
+        ? document.body.classList.contains("detail-open")
+        : !layoutState.detailCollapsed;
+      button.setAttribute("aria-pressed", String(visible));
+      button.setAttribute("aria-label", visible ? "상세 패널 접기" : "상세 패널 열기");
+      button.title = visible ? "상세 패널 접기" : "상세 패널 열기";
+    }
+
+    function setListPaneWidth(nextWidth, { persist = true } = {}) {
+      const bounds = listPaneBounds();
+      layoutState.listPaneWidth = clamp(Math.round(nextWidth), bounds.minimum, bounds.maximum);
+      document.documentElement.style.setProperty("--list-pane-width", `${layoutState.listPaneWidth}px`);
+      const percent = Math.round((layoutState.listPaneWidth / bounds.width) * 100);
+      $("paneResizer")?.setAttribute("aria-valuenow", String(percent));
+      if (persist) saveLayoutState();
+    }
+
+    function setDensity(density) {
+      if (!["compact", "comfortable", "large"].includes(density)) return;
+      layoutState.density = density;
+      $("reviewWorkspace").dataset.density = density;
+      document.querySelectorAll(".density-control [data-density]").forEach((button) => {
+        button.classList.toggle("active", button.dataset.density === density);
+      });
+      saveLayoutState();
+    }
+
+    function setDetailCollapsed(collapsed) {
+      layoutState.detailCollapsed = Boolean(collapsed);
+      document.body.classList.toggle("detail-collapsed", layoutState.detailCollapsed);
+      if (layoutState.detailCollapsed) document.body.classList.remove("detail-open");
+      updateDetailToggle();
+      saveLayoutState();
+    }
+
+    function openDetailPane() {
+      if (isNarrowLayout()) {
+        document.body.classList.add("detail-open");
+        document.body.classList.remove("detail-collapsed");
+      } else {
+        setDetailCollapsed(false);
+      }
+      updateDetailToggle();
+    }
+
+    function closeDetailPane() {
+      if (isNarrowLayout()) {
+        document.body.classList.remove("detail-open");
+      } else {
+        setDetailCollapsed(true);
+      }
+      updateDetailToggle();
+    }
+
+    function applyLayoutState() {
+      setDensity(layoutState.density);
+      setListPaneWidth(layoutState.listPaneWidth, { persist: false });
+      document.body.classList.toggle("detail-collapsed", layoutState.detailCollapsed);
+      if (!isNarrowLayout()) document.body.classList.remove("detail-open");
+      updateDetailToggle();
+    }
+
+    function setupPaneResizer() {
+      const resizer = $("paneResizer");
+      if (!resizer) return;
+      let startX = 0;
+      let startWidth = 0;
+
+      resizer.addEventListener("pointerdown", (event) => {
+        if (isNarrowLayout()) return;
+        startX = event.clientX;
+        startWidth = layoutState.listPaneWidth;
+        document.body.classList.add("resizing-panes");
+        resizer.setPointerCapture(event.pointerId);
+      });
+      resizer.addEventListener("pointermove", (event) => {
+        if (!document.body.classList.contains("resizing-panes")) return;
+        setListPaneWidth(startWidth + event.clientX - startX, { persist: false });
+      });
+      const stopResize = (event) => {
+        if (!document.body.classList.contains("resizing-panes")) return;
+        document.body.classList.remove("resizing-panes");
+        if (resizer.hasPointerCapture(event.pointerId)) resizer.releasePointerCapture(event.pointerId);
+        saveLayoutState();
+      };
+      resizer.addEventListener("pointerup", stopResize);
+      resizer.addEventListener("pointercancel", stopResize);
+      resizer.addEventListener("keydown", (event) => {
+        if (!["ArrowLeft", "ArrowRight"].includes(event.key)) return;
+        event.preventDefault();
+        const direction = event.key === "ArrowLeft" ? -1 : 1;
+        setListPaneWidth(layoutState.listPaneWidth + direction * (event.shiftKey ? 64 : 24));
+      });
+      resizer.addEventListener("dblclick", () => {
+        setListPaneWidth(listPaneBounds().width * 0.52);
+      });
+    }
 
     function api(path) {
       const sep = path.includes("?") ? "&" : "?";
@@ -448,6 +1006,13 @@
       return KIND_LABELS[kind] || kind;
     }
 
+    function splitSpeciesLabel(label) {
+      const match = String(label || "").match(/^(.*?)\s*\((.+)\)$/);
+      return match
+        ? { common: match[1], scientific: match[2] }
+        : { common: String(label || ""), scientific: "" };
+    }
+
     function filtered() {
       const q = $("search").value.trim().toLowerCase();
       const species = $("species").value;
@@ -485,48 +1050,79 @@
       ].join("");
     }
 
-    function renderGrid() {
+    function renderGrid({ resetLimit = false } = {}) {
       const list = filtered();
+      const filterSignature = JSON.stringify(currentFilterState());
+      const shouldResetList = resetLimit || filterSignature !== lastFilterSignature;
+      if (shouldResetList) {
+        visibleLimit = LIST_BATCH_SIZE;
+        lastFilterSignature = filterSignature;
+      }
+      const visible = list.slice(0, visibleLimit);
       renderSummary(list);
-      $("grid").innerHTML = list.map((image) => {
+      $("listStatus").textContent = `${fmt.format(visible.length)} / ${fmt.format(list.length)}`;
+      $("loadMore").hidden = visible.length >= list.length;
+      $("loadMore").textContent = `${fmt.format(Math.min(LIST_BATCH_SIZE, list.length - visible.length))}장 더 보기`;
+      $("grid").innerHTML = visible.length ? visible.map((image) => {
         const active = selected?.id === image.id ? "active" : "";
         const src = imageUrl(image);
-        return `<button class="card ${active}" data-id="${escapeHtml(image.id)}" type="button">
-          <img class="thumb" loading="lazy" src="${src}" alt="">
+        const status = statusOf(image);
+        const species = splitSpeciesLabel(image.speciesLabel);
+        return `<button class="card ${active}" data-id="${escapeHtml(image.id)}" type="button" aria-label="${escapeHtml(`${image.speciesLabel}, ${kindLabel(image.kind)}, ${STATUS_LABELS[status] || status}`)}">
+          <img class="thumb" loading="lazy" src="${src}" alt="${escapeHtml(image.speciesLabel)}">
           <div class="meta">
-            <div class="name">${escapeHtml(image.name)}</div>
-            <div class="row">${statusPill(statusOf(image))}<span class="pill">${escapeHtml(kindLabel(image.kind))}</span></div>
-            <div class="row"><span class="pill">${escapeHtml(image.speciesLabel)}</span><span class="pill">${bytes(image.sizeBytes)}</span><span class="pill">${rel(image.updatedAt)}</span></div>
+            <div class="card-heading">
+              <div class="card-name-block">
+                <div class="card-species">${escapeHtml(species.common)}</div>
+                ${species.scientific ? `<div class="card-scientific">${escapeHtml(species.scientific)}</div>` : ""}
+              </div>
+              ${statusPill(status)}
+            </div>
+            <div class="card-kind">${escapeHtml(kindLabel(image.kind))}</div>
+            <div class="file-name" title="${escapeHtml(image.name)}">${escapeHtml(image.name)}</div>
+            <div class="card-footer"><span>${bytes(image.sizeBytes)}</span><span>${rel(image.updatedAt)}</span></div>
           </div>
         </button>`;
-      }).join("");
+      }).join("") : `<div class="empty-state">조건에 맞는 이미지가 없습니다.</div>`;
       document.querySelectorAll(".card").forEach((card) => {
-        card.addEventListener("click", () => selectImage(card.dataset.id));
+        card.addEventListener("click", () => selectImage(card.dataset.id, { openDetail: true }));
       });
+      if (shouldResetList) $("browserPane").scrollTop = 0;
     }
 
-    function selectImage(id) {
+    function selectImage(id, { openDetail = false } = {}) {
       selected = images.find((image) => image.id === id) || images[0] || null;
       selectedStatus = selected ? statusOf(selected) : "unreviewed";
       renderGrid();
       renderDetail();
+      if (openDetail) openDetailPane();
     }
 
     function renderDetail() {
       if (!selected) {
-        $("detail").innerHTML = `<div class="detail"><p class="muted">선택된 이미지가 없습니다.</p></div>`;
+        $("detail").innerHTML = `
+          <div class="detail-pane-bar">
+            <strong>선택 이미지</strong>
+            <button class="detail-close" id="closeDetail" type="button" title="상세 패널 접기" aria-label="상세 패널 접기">&#x2715;</button>
+          </div>
+          <div class="detail"><p class="muted">선택된 이미지가 없습니다.</p></div>`;
+        $("closeDetail").addEventListener("click", closeDetailPane);
         return;
       }
       $("detail").innerHTML = `
+        <div class="detail-pane-bar">
+          <strong>선택 이미지</strong>
+          <button class="detail-close" id="closeDetail" type="button" title="상세 패널 접기" aria-label="상세 패널 접기">&#x2715;</button>
+        </div>
         <button class="preview-button" id="openZoom" type="button" title="크게 보기">
-          <img class="preview" src="${imageUrl(selected)}" alt="">
+          <img class="preview" src="${imageUrl(selected)}" alt="${escapeHtml(selected.speciesLabel)}">
         </button>
         <div class="detail">
-          <h2>${escapeHtml(selected.name)}</h2>
+          <h2>${escapeHtml(selected.speciesLabel)}</h2>
+          <div class="detail-file-name mono">${escapeHtml(selected.name)}</div>
           <div class="row">
             ${statusPill(statusOf(selected))}
             <span class="pill">${escapeHtml(kindLabel(selected.kind))}</span>
-            <span class="pill">${escapeHtml(selected.speciesLabel)}</span>
           </div>
           <div class="muted mono">${escapeHtml(selected.id)}</div>
           <div class="actions">
@@ -551,6 +1147,7 @@
       });
       $("save").addEventListener("click", saveReview);
       $("openZoom").addEventListener("click", openZoom);
+      $("closeDetail").addEventListener("click", closeDetailPane);
     }
 
     function openZoom() {
@@ -660,9 +1257,33 @@
     }
 
     async function init() {
+      applyLayoutState();
+      setupPaneResizer();
       await refreshImageList({ force: true, initial: true });
-      ["search", "species", "kind", "status", "sort"].forEach((id) => $(id).addEventListener("input", renderGrid));
+      ["search", "species", "kind", "status", "sort"].forEach((id) => {
+        $(id).addEventListener("input", () => renderGrid({ resetLimit: true }));
+      });
+      document.querySelectorAll(".density-control [data-density]").forEach((button) => {
+        button.addEventListener("click", () => setDensity(button.dataset.density));
+      });
+      $("toggleDetail").addEventListener("click", () => {
+        if (isNarrowLayout()) {
+          if (document.body.classList.contains("detail-open")) closeDetailPane();
+          else openDetailPane();
+          return;
+        }
+        setDetailCollapsed(!layoutState.detailCollapsed);
+      });
+      $("loadMore").addEventListener("click", () => {
+        visibleLimit += LIST_BATCH_SIZE;
+        renderGrid();
+      });
       $("refreshImages").addEventListener("click", () => refreshImageList({ force: true }));
+      window.addEventListener("resize", () => {
+        setListPaneWidth(layoutState.listPaneWidth, { persist: false });
+        if (!isNarrowLayout()) document.body.classList.remove("detail-open");
+        updateDetailToggle();
+      });
       window.setInterval(() => refreshImageList(), 10000);
     }
 
@@ -675,7 +1296,12 @@
       if (event.target.id === "zoomBackdrop") closeZoom();
     });
     window.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && !$("zoom").hidden) closeZoom();
+      if (event.key !== "Escape") return;
+      if (!$("zoom").hidden) {
+        closeZoom();
+        return;
+      }
+      if (document.body.classList.contains("detail-open")) closeDetailPane();
     });
     document.addEventListener("visibilitychange", () => {
       if (!document.hidden) refreshImageList();
