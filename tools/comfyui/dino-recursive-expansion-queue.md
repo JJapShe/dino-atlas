@@ -3862,10 +3862,15 @@
   - Superseded and rejected: `citipati-osmolskae-tall-crest-feathered-imagegen-v1.png`, `citipati-osmolskae-cobalt-saffron-pattern-imagegen-v1.png`, `citipati-osmolskae-djadokhta-nesting-ecology-imagegen-v1.png`, and `citipati-osmolskae-djadokhta-dune-walk-imagegen-v2.png` must not be reused as positive controls.
 
 - `Khaan mckennai`
-  - Representative: `assets/dinosaurs/khaan-mckennai-crestless-feathered-imagegen-v1.png`
-  - Pattern variant: `assets/dinosaurs/khaan-mckennai-magenta-teal-pattern-imagegen-v1.png`
-  - Ecology scene: `assets/dinosaurs/khaan-mckennai-djadokhta-pair-ecology-imagegen-v1.png`
-  - Key guardrail: small crestless oviraptorid with deep short toothless beak, low rounded skull with no cranial crest, folded three-finger forelimbs, slender legs, visible feet, and short tail fan; no Citipati short deep rectangular skull or low broad integrated crest, no Oviraptor low crest, no Mononykus single giant hand claw, no Gallimimus ostrich body, no teeth.
+  - Representative: `assets/dinosaurs/khaan-mckennai-rounded-skull-slitted-naris-representative-imagegen-v2.png`
+  - Pattern variant: `assets/dinosaurs/khaan-mckennai-smoky-gray-dawn-walk-pattern-imagegen-v2.png`
+  - Ecology scene: `assets/dinosaurs/khaan-mckennai-postrain-interdune-forage-habitat-imagegen-v2.png`
+  - Anatomy reference: `assets/dinosaurs/khaan-mckennai-three-digit-hands-slitted-naris-anatomy-imagegen-v2.png`
+  - Social context: `assets/dinosaurs/khaan-mckennai-adjacent-adults-social-context-imagegen-v2.png`
+  - Community context: `assets/dinosaurs/khaan-mckennai-distant-protoceratopsid-community-imagegen-v2.png`
+  - Key guardrail: small gracile crestless oviraptorid with a rounded skull roof and nearly vertical occiput, posterodorsally slanted slitlike external naris, broad toothless beak, exactly two three-digit hands when readable, two hind legs and feet, and one approximately 28-caudal tail. Plumage, color and a modest tail fan are comparative hypotheses. No Citipati rectangular skull or integrated crest, Oviraptor crest, modern bird or ostrich body, round pinhole nostril, Mononykus single giant hand claw, dromaeosaur sickle claw, teeth, extra digits, limbs or tails.
+  - Behavior boundary: the adjacent adult specimens do not establish a pair bond, sex, courtship or mating, and a distant hornless protoceratopsid is broad regional context rather than named `Protoceratops andrewsi` or direct interaction.
+  - Superseded and rejected: `khaan-mckennai-crestless-feathered-imagegen-v1.png`, `khaan-mckennai-magenta-teal-pattern-imagegen-v1.png`, and `khaan-mckennai-djadokhta-pair-ecology-imagegen-v1.png` must not be reused as positive controls.
 
 - `Conchoraptor gracilis`
   - Representative: `assets/dinosaurs/conchoraptor-gracilis-crestless-beak-imagegen-v1.png`
@@ -4516,6 +4521,19 @@
   - Validation: 132 taxa, 687 assigned and visually approved slots, 97 taxa at six images, 35 taxa and 105 richness-generation slots remaining, 468 rejected sources, and every strict verifier error count at zero. Static scanning found 1,867 unique concrete dinosaur references with no missing path.
   - HTTP and browser validation: all six new assets returned 200 with local byte-size parity on both `8020` and `8792`, the review API exposed 887 images and exactly six current Darwinopterus files, and all three predecessors returned 410. At 1280x720 the Atlas common lightbox moved from 1/6 to 2/6 with decoded 1672x941 images; internal review groups were candidate-only 1, representative 1, reference 4, and all 6, with all navigation 1/6 to 2/6 and reference navigation 1/4 to 2/4.
   - The independent review page rendered six decoded 1672x941 cards with no rejected filename or horizontal overflow. With the inspector open, the expandable phylogeny retained 147 visible nodes, 132 taxon cards, zero node overlap, zero era-label overlap, zero page overflow, and no viewport/inspector or navigator/inspector intersection. Browser console logs were empty.
+
+- `Khaan mckennai six-image osteology-led rebuild 2026-07-31`
+  - Rebuilt `Khaan mckennai` as six balanced roles: neutral representative, reverse-facing dawn color-pattern, post-rain interdune habitat, hand-and-skull anatomy, channel-separated regional community, and two spatially separated adults as a social-context hypothesis.
+  - Built `assets/dinosaurs/curated/reference-library/khaan-mckennai/` with a CC BY 2.0 holotype photograph, two CC BY 4.0 tail figures from Persons et al. 2015, two CC BY 4.0 Ukhaa Tolgod facies figures from Dingus et al. 2008, and a README that separates direct anatomy from inference.
+  - Anchored the identity gate to Balanoff and Norell 2012: small gracile crestless oviraptorid; rounded skull roof ending in a nearly vertical occiput; no enlarged nasal crest; narrow posterodorsally slanted external naris; broad edentulous beak; exactly two three-digit hands with digit II longest; exactly two hind limbs and feet; and one approximately 28-vertebra tail.
+  - Kept feathers, smoky warm-gray/copper-russet/berry/blue-green color, a modest comparative tail fan, diet, exact living surface, and behavior explicitly reconstructive. The two nearby adult skeletons support proximity only, not pair bonding, courtship, sex, mating, family structure, or stable sociality. The distant hornless protoceratopsid remains unidentified regional context.
+  - Built-in ImageGen source mapping: representative `call_SHDX8cG5EumdtSmDyigO2AYm.png`, pattern `call_9WpfBRUK6lwQJsHJhOB4zN0f.png`, habitat `call_Zp6CimicnGY7WwWtpth2av0r.png`, anatomy `call_BDqdRoUqJixw4AJ0Shxvfp6l.png`, community `call_NQnG6mVNKFhWnxGOAbCFhh8a.png`, and adjacent adults `call_6u7nihsyDLmjRNiG7pvLuIkT.png`. Only species-prefixed v2 copies under `assets/dinosaurs/` are app references.
+  - Rejected six generation intermediates for round nostrils, generic bird heads, extra or reduced hand digits, or extra-looking hands. Rejected the three former project images for crest and head drift, unstable limb or tail counts, generic oviraptorid anatomy, and overconfident ecology; all three now return HTTP 410 from the review server.
+  - Original-size inspection confirmed six unique 1672x941 files. The representative hand crop and all complete-body frames were checked for two arms, two hind limbs, two feet, one pelvis-origin tail, a crestless head, a narrow slitted naris, and no fused or duplicated animal anatomy.
+  - Validation: 132 taxa, 690 assigned and visually approved slots, 98 taxa at six images, 34 taxa and 102 richness-generation slots remaining, 471 rejected sources, and every strict verifier error count at zero. Static scanning found 1,875 unique dinosaur references including two runtime templates, with all 1,873 concrete paths present.
+  - HTTP and browser validation: all six new assets returned 200 with local byte-size parity on both `8020` and `8792`, the review API exposed 890 images and exactly six current Khaan files, and all three predecessors returned 410. The independent review page rendered six decoded 1672x941 cards; its full-screen image was contained in the 1280x720 viewport with no horizontal overflow.
+  - Atlas catalog and map galleries opened the representative at 1/6 and advanced to the pattern image at 2/6. Internal review groups remained scoped at candidate-only 1, representative 1, reference 4, and all 6; candidate and representative lightboxes stayed at 1/1, reference navigation moved from 1/4 to 2/4, and all navigation moved from 1/6 to 2/6.
+  - Expandable-map regression check at 1280x720 retained 147 visible nodes and 132 taxa with zero node overlap, zero era-label overlap, zero page overflow, and no viewport/inspector or navigator/inspector intersection. Catalog cards and both browser tabs had no overflow, warning, or error.
 
 For each added taxon, produce:
 

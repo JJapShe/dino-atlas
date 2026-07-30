@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-30T19:15:10.241Z",
-  "reviewBatch": "2026-07-31-richness-six-slot-batch-65",
-  "reviewMethod": "Batch 65 Lü et al. 2010 ZMNH M8782 holotype review, Wang et al. 2010 restrictive taxonomic comparison, Cheng et al. 2017 premaxillary-crest review, Cheng et al. 2025 current Darwinopterus comparison, Linglongta age and Tiaojishan flora-context review, and original-size inspection of every selected Darwinopterus frame for the low longitudinal crest, one confluent nasoantorbital opening, well-spaced anteriorly larger teeth, paired fourth-finger wing forelimbs, exactly three free wrist digits when readable, paired hindlimbs, one long stiff tail without an asserted terminal vane, palette continuity, cautious habitat and behavior language, role balance, crop intent, and artifact gates.",
-  "targetSlots": 687,
+  "generatedAt": "2026-07-30T20:22:01.448Z",
+  "reviewBatch": "2026-07-31-richness-six-slot-batch-66",
+  "reviewMethod": "Batch 66 Balanoff and Norell 2012 Khaan osteology review, Clark et al. 2001 type-species context, Dingus et al. 2008 Ukhaa Tolgod eolian and interdune context, Persons et al. 2015 adjacent-adult and chevron-uncertainty review, and original-size inspection of every selected Khaan frame for the rounded crestless skull, posterodorsally slanted slitlike naris, broad toothless beak, exactly two three-digit hands when readable, paired hindlimbs, one continuous tail, restrained comparative plumage and tail fan, palette continuity, cautious habitat and behavior language, role balance, crop intent, secondary-animal separation, and artifact gates.",
+  "targetSlots": 690,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -4040,30 +4040,57 @@
     "khaan-mckennai": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/khaan-mckennai-crestless-feathered-imagegen-v1.png",
+        "source": "assets/dinosaurs/khaan-mckennai-rounded-skull-slitted-naris-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The original-size full-body frame resolves a rounded crestless skull, nearly vertical occiput, posterodorsally slanted slitlike naris, broad toothless beak, two separate three-digit hands, two hind legs and feet, and one continuous tail without extra appendages.",
+        "reviewMethod": "Batch 66 original-size full-frame plus isolated both-hand inspection against Balanoff and Norell 2012; plumage, color and modest tail fan remain comparative oviraptorosaur reconstruction.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-66",
+        "reviewedAt": "2026-07-30T20:22:01.448Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/khaan-mckennai-magenta-teal-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/khaan-mckennai-smoky-gray-dawn-walk-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing dawn walk preserves the representative's rounded crestless skull, slitlike naris, broad beak, paired hindlimbs, one tail and low-saturation gray, charcoal, copper, ivory, berry and blue-green phenotype; the visible near hand has three digits and the far hand is naturally occluded.",
+        "reviewMethod": "Batch 66 original-size comparison with the representative for phenotype continuity, visible-digit count, paired hindlimbs, tail continuity, restrained natural color zoning and absence of synthetic spots, rings or checker patterns.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-66",
+        "reviewedAt": "2026-07-30T20:22:01.448Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/khaan-mckennai-djadokhta-pair-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/khaan-mckennai-postrain-interdune-forage-habitat-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The high-oblique post-rain frame keeps one readable rounded-skulled Khaan with two hind feet, one tail and a three-digit reaching hand against reddish dune, interdune and temporary-wash cues; no count claim is made for the partly shadowed far hand.",
+        "reviewMethod": "Batch 66 original-size head, reaching-hand, hind-foot and tail inspection plus Dingus et al. 2008 eolian and interdune context review; exact foraging, rainfall moment, vegetation and living surface remain reconstruction hypotheses.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-66",
+        "reviewedAt": "2026-07-30T20:22:01.448Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/khaan-mckennai-three-digit-hands-slitted-naris-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "The intentional head-to-wrist crop clearly resolves the rounded crestless skull, slitlike slanted naris, broad toothless beak and exactly three clawed digits on each hand without duplicate arms or fingers.",
+        "reviewMethod": "Batch 66 original-size cranial and both-hand inspection against the Khaan skull and manus descriptions in Balanoff and Norell 2012; no foot or tail-count claim is made because those structures lie outside the intentional crop.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-66",
+        "reviewedAt": "2026-07-30T20:22:01.448Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/khaan-mckennai-distant-protoceratopsid-community-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "The main full-body Khaan retains the rounded crestless skull, one clearly three-digit near hand, two hind legs and feet, and one tail; the far arm is occluded by view angle, while one distant hornless low-frilled protoceratopsid remains spatially separate with four legs and one tail.",
+        "reviewMethod": "Batch 66 original-size primary-animal and secondary-animal inspection; the background animal is limited to broad undescribed Ukhaa Tolgod protoceratopsid community context and is not identified as Protoceratops andrewsi or treated as direct association.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-66",
+        "reviewedAt": "2026-07-30T20:22:01.448Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/khaan-mckennai-adjacent-adults-social-context-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "Two similar-sized adults remain fully separated with the same rounded crestless head, palette, paired hindlimbs and single-tail topology; no contact, mating, pair-bond, sex or courtship action is depicted.",
+        "reviewMethod": "Batch 66 original-size subject-separation, foreground-hand, foot and tail inspection against the approximately 20 cm same-bedding-plane context of MPC-D 100/1127 and 100/1002 in Persons et al. 2015; social interpretation remains explicitly uncertain.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-66",
+        "reviewedAt": "2026-07-30T20:22:01.448Z"
       }
     },
     "conchoraptor-gracilis": {
@@ -6454,6 +6481,15 @@
     }
   },
   "rejectedSources": {
+    "assets/dinosaurs/khaan-mckennai-crestless-feathered-imagegen-v1.png": {
+      "reason": "The former representative uses a long generic modern-bird neck and body, a narrow birdlike head, and weak Khaan skull and broad-beak cues, so the old approval is superseded."
+    },
+    "assets/dinosaurs/khaan-mckennai-magenta-teal-pattern-imagegen-v1.png": {
+      "reason": "The former pattern repeats the generic birdlike head and body while a high-saturation magenta-teal treatment overwhelms the rounded-skull, slit-naris and restrained natural-palette gates."
+    },
+    "assets/dinosaurs/khaan-mckennai-djadokhta-pair-ecology-imagegen-v1.png": {
+      "reason": "Both primary animals read as generic birds and the horned or frilled background animals are taxonomically unstable, so neither Khaan anatomy nor cautious Ukhaa Tolgod community context can be verified."
+    },
     "assets/dinosaurs/nyctosaurus-gracilis-niobrara-forked-crest-imagegen-v1.png": {
       "reason": "Free clawed appendages project from the wing margins, limb and membrane topology is confused, and a genus-level mature branching crest is incorrectly fixed onto the N. gracilis representative."
     },

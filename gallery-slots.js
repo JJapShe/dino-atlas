@@ -3603,27 +3603,51 @@ window.gallerySlotAssignments = {
   ],
   "khaan-mckennai": [
     {
-      "source": "assets/dinosaurs/khaan-mckennai-crestless-feathered-imagegen-v1.png",
+      "source": "assets/dinosaurs/khaan-mckennai-rounded-skull-slitted-naris-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "djadokhta-semiarid-dune",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/khaan-mckennai-magenta-teal-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/khaan-mckennai-smoky-gray-dawn-walk-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "djadokhta-semiarid-dune",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/khaan-mckennai-djadokhta-pair-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/khaan-mckennai-postrain-interdune-forage-habitat-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "djadokhta-semiarid-dune",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/khaan-mckennai-three-digit-hands-slitted-naris-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "djadokhta-semiarid-dune",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/khaan-mckennai-distant-protoceratopsid-community-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "djadokhta-semiarid-dune",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/khaan-mckennai-adjacent-adults-social-context-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "djadokhta-semiarid-dune",
       "expectedKind": "anatomy review"
     }
   ],
