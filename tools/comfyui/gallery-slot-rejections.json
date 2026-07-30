@@ -1,7 +1,16 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-30-richness-six-slot-batch-60",
+  "reviewBatch": "2026-07-30-richness-six-slot-batch-61",
   "rejectedSources": {
+    "assets/dinosaurs/dsungaripterus-weii-tugulu-upturned-toothless-front-crusher-v2-imagegen-v1.png": {
+      "reason": "The former representative exaggerates the rostrum into a large hook, carries pointed teeth along most of the jaw instead of a long toothless front and posterior blunt teeth, and presents unstable detached-looking folded membranes."
+    },
+    "assets/dinosaurs/dsungaripterus-weii-indigo-auburn-wing-pattern-imagegen-v1.png": {
+      "reason": "Large rectangular teeth invade the toothless anterior jaw, the hook tip is exaggerated, and extra sail-like membrane surfaces make the same-body color variant anatomically unsafe."
+    },
+    "assets/dinosaurs/dsungaripterus-weii-redbed-shellfish-probe-ecology-imagegen-v1.png": {
+      "reason": "The long crocodile-like head, needle teeth along the jaw, and ambiguous wing and limb topology contradict the toothless-rostrum, posterior-crusher, and four-limb Dsungaripterus gates."
+    },
     "assets/dinosaurs/citipati-osmolskae-tall-crest-feathered-imagegen-v1.png": {
       "reason": "The former representative has a parrot- or cassowary-like head, an unsupported tall casque and a long modern-bird tail instead of Citipati's short deep skull, low broad crest and short tail."
     },
@@ -1362,5 +1371,5 @@
       "reason": "The launch frame repeats the selected airborne role, while the two hindwing surfaces do not attach cleanly to the two legs and instead read as extra torso- or tail-rooted feather fans."
     }
   },
-  "generatedAt": "2026-07-30T13:19:25.684Z"
+  "generatedAt": "2026-07-30T14:12:07.351Z"
 }

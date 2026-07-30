@@ -1703,27 +1703,51 @@ window.gallerySlotAssignments = {
   ],
   "dsungaripterus-weii": [
     {
-      "source": "assets/dinosaurs/dsungaripterus-weii-tugulu-upturned-toothless-front-crusher-v2-imagegen-v1.png",
+      "source": "assets/dinosaurs/dsungaripterus-weii-toothless-upturned-rostrum-posterior-crusher-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "wuerho-shallow-delta-lake-margin",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/dsungaripterus-weii-indigo-auburn-wing-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/dsungaripterus-weii-iron-red-turquoise-wing-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "wuerho-shallow-delta-lake-margin",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/dsungaripterus-weii-redbed-shellfish-probe-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/dsungaripterus-weii-wuerho-semiarid-lake-margin-ecology-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "wuerho-shallow-delta-lake-margin",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/dsungaripterus-weii-toothless-sheath-posterior-oval-teeth-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "wuerho-shallow-delta-lake-margin",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/dsungaripterus-weii-single-bivalve-durophagy-hypothesis-interaction-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "wuerho-shallow-delta-lake-margin",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/dsungaripterus-weii-separated-adult-subadult-crest-growth-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "wuerho-shallow-delta-lake-margin",
       "expectedKind": "anatomy review"
     }
   ],

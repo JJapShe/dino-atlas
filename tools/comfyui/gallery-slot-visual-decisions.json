@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-30T13:19:25.684Z",
-  "reviewBatch": "2026-07-30-richness-six-slot-batch-60",
-  "reviewMethod": "Batch 60 original-size inspection of all selected Citipati assets, including short deep skull identity, vertical premaxilla, low broad crest, appendage count, tail continuity, nest evidence, role balance, habitat fit, palette variation, and text or watermark artifact gates.",
-  "targetSlots": 672,
+  "generatedAt": "2026-07-30T14:12:07.351Z",
+  "reviewBatch": "2026-07-30-richness-six-slot-batch-61",
+  "reviewMethod": "Batch 61 Chen et al. 2020 cranial-figure review, Song et al. 2024 postcranial abstract review, Xing et al. 2021 Wuerho habitat review, and original-size inspection of all selected Dsungaripterus assets for toothless-rostrum length, posterior blunt dentition, crest profile, four-limb topology, attached wing membranes, short tail, role balance, palette continuity, habitat fit, and artifact gates.",
+  "targetSlots": 675,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -1912,30 +1912,57 @@
     "dsungaripterus-weii": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/dsungaripterus-weii-tugulu-upturned-toothless-front-crusher-v2-imagegen-v1.png",
+        "source": "assets/dinosaurs/dsungaripterus-weii-toothless-upturned-rostrum-posterior-crusher-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The full body preserves a long gently upturned toothless upper and lower rostrum, a posterior row of low rounded crusher teeth, an elongated conservative sagittal crest, two planted wing forelimbs, two hindlimbs, two attached folded membranes, and one very short tail.",
+        "reviewMethod": "Batch 61 original-size full-frame inspection plus isolated skull, dentition, forelimb-wing, hind-foot, and tail review against Chen et al. 2020; exact tooth count is resolved in the dedicated anatomy slot rather than claimed from the representative.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-61",
+        "reviewedAt": "2026-07-30T14:12:07.351Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/dsungaripterus-weii-indigo-auburn-wing-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/dsungaripterus-weii-iron-red-turquoise-wing-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The same anatomy is retained under cool overcast light while oxidized iron-red crest and neck, muted turquoise throat and membranes, charcoal body, warm ivory sheath, and sparse irregular flecks provide a controlled naturalistic variant.",
+        "reviewMethod": "Batch 61 original-size comparison against slot 1 for skull silhouette, toothless-to-toothed boundary, four limbs, two attached membranes, short tail, canonical palette zones, low-contrast pattern, and text or watermark artifacts.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-61",
+        "reviewedAt": "2026-07-30T14:12:07.351Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/dsungaripterus-weii-redbed-shellfish-probe-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/dsungaripterus-weii-wuerho-semiarid-lake-margin-ecology-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "A single readable animal is placed in a broad shallow-lake and delta-margin composition with exposed silt, gravel bars and sparse low vegetation; the jaw boundary, four limbs, paired membranes and short tail remain visible without a speculative prey action.",
+        "reviewMethod": "Batch 61 original-size anatomy inspection and habitat comparison against the shallow lacustrine and deltaic Wuerho Tugulu setting summarized by Xing et al. 2021; exact vegetation and weather remain reconstruction hypotheses.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-61",
+        "reviewedAt": "2026-07-30T14:12:07.351Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/dsungaripterus-weii-toothless-sheath-posterior-oval-teeth-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "The strict lateral close-up separates the long empty keratin-covered upper and lower rostrum from short posterior rows of approximately 14 blunt oval teeth and keeps the elongated sagittal crest profile fully visible.",
+        "reviewMethod": "Batch 61 original-size comparison with Chen et al. 2020 figures 2-4 for toothless-rostrum extent, sheath-edge boundary, posterior tooth restriction, blunt crown shape, approximate visible count, size gradient, eye placement, and conservative crest height.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-61",
+        "reviewedAt": "2026-07-30T14:12:07.351Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/dsungaripterus-weii-single-bivalve-durophagy-hypothesis-interaction-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "The lowered adult retains the long toothless tip, posterior rounded dentition, four limbs, paired folded membranes and short tail while investigating one small shell; the prey item and motion are explicitly treated as a hard-object-feeding hypothesis.",
+        "reviewMethod": "Batch 61 original-size full-frame and head, tooth, shell, forelimb-wing, hind-foot, and tail inspection; approved only as anatomy review because the exact tooth count and the depicted bivalve interaction are not direct behavioral evidence.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-61",
+        "reviewedAt": "2026-07-30T14:12:07.351Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/dsungaripterus-weii-separated-adult-subadult-crest-growth-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "The adult and smaller individual are fully separated and both retain the same toothless-front and posterior-tooth identity, four-limb pterosaur plan, attached folded membranes and short tail; size stage, crest growth and co-occurrence remain reconstruction hypotheses.",
+        "reviewMethod": "Batch 61 original-size inspection of both isolated animals for subject separation, skull identity, limb count, membrane attachment, tail count, palette continuity, and artifact gates; no care, pair bond, sex or coordinated social behavior is claimed.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-61",
+        "reviewedAt": "2026-07-30T14:12:07.351Z"
       }
     },
     "nyctosaurus-gracilis": {
@@ -6319,6 +6346,15 @@
     }
   },
   "rejectedSources": {
+    "assets/dinosaurs/dsungaripterus-weii-tugulu-upturned-toothless-front-crusher-v2-imagegen-v1.png": {
+      "reason": "The former representative exaggerates the rostrum into a large hook, carries pointed teeth along most of the jaw instead of a long toothless front and posterior blunt teeth, and presents unstable detached-looking folded membranes."
+    },
+    "assets/dinosaurs/dsungaripterus-weii-indigo-auburn-wing-pattern-imagegen-v1.png": {
+      "reason": "Large rectangular teeth invade the toothless anterior jaw, the hook tip is exaggerated, and extra sail-like membrane surfaces make the same-body color variant anatomically unsafe."
+    },
+    "assets/dinosaurs/dsungaripterus-weii-redbed-shellfish-probe-ecology-imagegen-v1.png": {
+      "reason": "The long crocodile-like head, needle teeth along the jaw, and ambiguous wing and limb topology contradict the toothless-rostrum, posterior-crusher, and four-limb Dsungaripterus gates."
+    },
     "assets/dinosaurs/anhanguera-santanae-romualdo-jawcrest-imagegen-v1.png": {
       "reason": "The crest rises behind the orbit instead of remaining a low anterior jaw-tip structure, and the wing attachment is too weak for a conservative Romualdo anhanguerid reconstruction."
     },
