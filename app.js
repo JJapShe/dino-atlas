@@ -3535,7 +3535,7 @@ const phyloLayoutMetrics = Object.freeze({
   taxonRowGap: 14,
   treeStartX: 40,
   groupColumnGap: 26,
-  groupRailGap: 64,
+  groupRailGap: 96,
   canvasPadding: 56,
   groupVerticalGap: 18,
 });
@@ -19940,95 +19940,18 @@ function getEraPackColumnCount(taxaCount, sharedColumns, layout) {
   );
 }
 
-function estimatePhyloPackDimensions(taxaCountByEra, sharedColumns, taxonGridX) {
-  const nodeWidth = getNodeWidth({ type: "taxon" });
-  const nodeHeight = getNodeHeight();
-  let widestColumns = 1;
-  let height = 0;
-  let lastBottomPad = 0;
-
-  eras.forEach((era) => {
-    const layout = phyloEraPackLayouts[era.id] || {
-      minimumColumns: 4,
-      topPad: 100,
-      bottomPad: 28,
-      rowGap: phyloLayoutMetrics.taxonRowGap,
-    };
-    const taxaCount = taxaCountByEra.get(era.id) || 0;
-    const columns = getEraPackColumnCount(taxaCount, sharedColumns, layout);
-    const rows = taxaCount ? Math.ceil(taxaCount / columns) : 0;
-    const requiredHeight =
-      layout.topPad +
-      rows * nodeHeight +
-      Math.max(0, rows - 1) * layout.rowGap +
-      layout.bottomPad;
-    height += Math.max(taxaCount ? 164 : 112, requiredHeight);
-    widestColumns = Math.max(widestColumns, columns);
-    lastBottomPad = layout.bottomPad;
-  });
-
-  const width =
-    taxonGridX +
-    widestColumns * nodeWidth +
-    Math.max(0, widestColumns - 1) * phyloLayoutMetrics.taxonColumnGap +
-    phyloLayoutMetrics.canvasPadding;
-  const trailingCanvasPad = Math.max(
-    0,
-    phyloLayoutMetrics.canvasPadding - lastBottomPad,
-  );
-
-  return {
-    width: Math.max(canvasSize.width, width),
-    height: Math.max(canvasSize.height, height + trailingCanvasPad),
-  };
-}
-
-function getResponsiveEraPackColumns(taxaCountByEra, taxonGridX) {
-  const viewport = $("#mapViewport");
-  const viewportWidth = Math.max(320, viewport?.clientWidth || window.innerWidth || 1280);
-  const viewportHeight = Math.max(320, viewport?.clientHeight || window.innerHeight || 720);
+function getScalableEraPackColumns(taxaCountByEra) {
   const maximumTaxaCount = Math.max(
     1,
     ...eras.map((era) => taxaCountByEra.get(era.id) || 0),
   );
-  const minimumCandidate = Math.min(4, maximumTaxaCount);
-  const maximumCandidate = Math.min(28, maximumTaxaCount);
-  let bestColumns = minimumCandidate;
-  let bestScale = -1;
-  let bestAspectMismatch = Number.POSITIVE_INFINITY;
-  const viewportAspect = viewportWidth / viewportHeight;
-
-  for (
-    let candidate = minimumCandidate;
-    candidate <= maximumCandidate;
-    candidate += 1
-  ) {
-    const dimensions = estimatePhyloPackDimensions(
-      taxaCountByEra,
-      candidate,
-      taxonGridX,
-    );
-    const fitScale = Math.min(
-      viewportWidth / dimensions.width,
-      viewportHeight / dimensions.height,
-    );
-    const aspectMismatch = Math.abs(
-      Math.log(dimensions.width / dimensions.height / viewportAspect),
-    );
-    const scaleImproved = fitScale > bestScale + 0.001;
-    const scaleTied = Math.abs(fitScale - bestScale) <= 0.001;
-
-    if (
-      scaleImproved ||
-      (scaleTied && aspectMismatch < bestAspectMismatch)
-    ) {
-      bestColumns = candidate;
-      bestScale = fitScale;
-      bestAspectMismatch = aspectMismatch;
-    }
-  }
-
-  return bestColumns;
+  const minimumColumns = Math.min(8, maximumTaxaCount);
+  const maximumColumns = Math.min(24, maximumTaxaCount);
+  const contentDrivenColumns = Math.ceil(Math.sqrt(maximumTaxaCount * 1.6));
+  return Math.max(
+    1,
+    Math.min(maximumColumns, Math.max(minimumColumns, contentDrivenColumns)),
+  );
 }
 
 function buildDynamicPhyloEras(nodes, filteredIds, taxonGridX) {
@@ -20043,7 +19966,7 @@ function buildDynamicPhyloEras(nodes, filteredIds, taxonGridX) {
     taxaCountByEra.set(eraId, (taxaCountByEra.get(eraId) || 0) + 1);
   });
 
-  const sharedColumns = getResponsiveEraPackColumns(taxaCountByEra, taxonGridX);
+  const sharedColumns = getScalableEraPackColumns(taxaCountByEra);
   let top = 0;
   return eras.map((era) => {
     const layout = phyloEraPackLayouts[era.id] || {
@@ -20691,29 +20614,29 @@ function renderMapScopeControls() {
 
 function getReadableMapScale() {
   const viewport = $("#mapViewport");
-  if (!viewport) return 0.76;
+  if (!viewport) return 0.86;
   const targetCardWidth = state.map.expanded
     ? state.map.inspectorCollapsed
-      ? 142
-      : 130
+      ? 156
+      : 144
     : viewport.clientWidth < 520
-      ? 122
+      ? 132
       : state.map.inspectorCollapsed
-        ? 132
-        : 120;
+        ? 150
+        : 138;
   return clampScale(targetCardWidth / phyloLayoutMetrics.taxonWidth);
 }
 
 function getAllMapBrowseScale() {
   const viewport = $("#mapViewport");
-  if (!viewport) return 0.68;
+  if (!viewport) return 0.82;
   const targetCardWidth = state.map.expanded
-    ? 124
+    ? 146
     : viewport.clientWidth < 520
-      ? 112
+      ? 124
       : state.map.inspectorCollapsed
-        ? 118
-        : 108;
+        ? 142
+        : 132;
   return clampScale(targetCardWidth / phyloLayoutMetrics.taxonWidth);
 }
 
@@ -20788,7 +20711,10 @@ function fitMapScope(
       x += Math.min(24 - gridLeft, availableShift);
     }
   } else if (nextScope !== "all" && selectedNode && selectedDino?.era === nextScope) {
-    const margin = 44;
+    const margin = Math.max(
+      16,
+      Math.round(phyloLayoutMetrics.taxonColumnGap * scale),
+    );
     const selectedLeft = x + selectedNode.x * scale;
     const selectedRight = x + (selectedNode.x + getNodeWidth(selectedNode)) * scale;
     const selectedTop = y + selectedNode.y * scale;
@@ -20894,7 +20820,7 @@ function setMapExpanded(expanded) {
 }
 
 function fitMapToViewport() {
-  fitMapScope("all", { allowOverview: true });
+  fitMapScope("all");
 }
 
 function zoomMap(nextScale, originX, originY) {
