@@ -3387,7 +3387,7 @@ window.gallerySlotAssignments = {
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "djadokhta-semiarid-dune",
       "expectedKind": "count-level pass"
     },
     {
@@ -3395,7 +3395,7 @@ window.gallerySlotAssignments = {
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "djadokhta-semiarid-dune",
       "expectedKind": "review hold"
     },
     {
@@ -3403,7 +3403,7 @@ window.gallerySlotAssignments = {
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "djadokhta-semiarid-dune",
       "expectedKind": "anatomy review"
     },
     {
@@ -3411,7 +3411,7 @@ window.gallerySlotAssignments = {
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "djadokhta-semiarid-dune",
       "expectedKind": "anatomy review"
     },
     {
@@ -3419,7 +3419,7 @@ window.gallerySlotAssignments = {
       "gallerySlot": 5,
       "galleryRole": "interaction",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "djadokhta-semiarid-dune",
       "expectedKind": "anatomy review"
     },
     {
@@ -3427,33 +3427,57 @@ window.gallerySlotAssignments = {
       "gallerySlot": 6,
       "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "djadokhta-semiarid-dune",
       "expectedKind": "anatomy review"
     }
   ],
   "citipati-osmolskae": [
     {
-      "source": "assets/dinosaurs/citipati-osmolskae-tall-crest-feathered-imagegen-v1.png",
+      "source": "assets/dinosaurs/citipati-osmolskae-vertical-premaxilla-deepbeak-lowcrest-representative-imagegen-v1.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "djadokhta-semiarid-dune",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/citipati-osmolskae-cobalt-saffron-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/citipati-osmolskae-petrol-saffron-cream-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "djadokhta-semiarid-dune",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/citipati-osmolskae-djadokhta-nesting-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/citipati-osmolskae-ukhaa-tolgod-interdune-wash-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "djadokhta-semiarid-dune",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/citipati-osmolskae-two-three-finger-hands-deepbeak-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "djadokhta-semiarid-dune",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/citipati-osmolskae-elongate-egg-ring-brooding-interaction-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "djadokhta-semiarid-dune",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/citipati-osmolskae-separated-adult-subadult-growth-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "djadokhta-semiarid-dune",
       "expectedKind": "anatomy review"
     }
   ],

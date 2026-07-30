@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-30T12:02:54.215Z",
-  "reviewBatch": "2026-07-30-richness-six-slot-batch-59",
-  "reviewMethod": "Batch 59 original-size inspection of all selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
-  "targetSlots": 669,
+  "generatedAt": "2026-07-30T13:19:25.684Z",
+  "reviewBatch": "2026-07-30-richness-six-slot-batch-60",
+  "reviewMethod": "Batch 60 original-size inspection of all selected Citipati assets, including short deep skull identity, vertical premaxilla, low broad crest, appendage count, tail continuity, nest evidence, role balance, habitat fit, palette variation, and text or watermark artifact gates.",
+  "targetSlots": 672,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -3849,30 +3849,57 @@
     "citipati-osmolskae": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/citipati-osmolskae-tall-crest-feathered-imagegen-v1.png",
+        "source": "assets/dinosaurs/citipati-osmolskae-vertical-premaxilla-deepbeak-lowcrest-representative-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The full body preserves an almost rectangular short deep skull, near-vertical premaxilla, low integrated crest ridge, deep toothless beak, two independently readable three-fingered hands, two hindlimbs and one short pelvis-origin tail.",
+        "reviewMethod": "Batch 60 original-size Citipati identity, skull-profile, bilateral-hand, limb-count, tail-continuity, palette, habitat, composition, and artifact inspection.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-60",
+        "reviewedAt": "2026-07-30T13:19:25.684Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/citipati-osmolskae-cobalt-saffron-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/citipati-osmolskae-petrol-saffron-cream-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Muted petrol and storm-blue forelimbs, saffron throat, cream underside and restrained rust cheek provide a distinct naturalistic palette while the same short deep head, low crest, paired hands and short tail remain readable.",
+        "reviewMethod": "Batch 60 original-size Citipati identity, skull-profile, bilateral-hand, limb-count, tail-continuity, palette, habitat, composition, and artifact inspection.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-60",
+        "reviewedAt": "2026-07-30T13:19:25.684Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/citipati-osmolskae-djadokhta-nesting-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/citipati-osmolskae-ukhaa-tolgod-interdune-wash-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "A single animal in a post-rain interdune wash adds a distinct habitat and trackway composition without secondary animals, while both arms, both legs and the one short tail remain independently reviewable.",
+        "reviewMethod": "Batch 60 original-size Citipati identity, skull-profile, bilateral-hand, limb-count, tail-continuity, palette, habitat, composition, and artifact inspection.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-60",
+        "reviewedAt": "2026-07-30T13:19:25.684Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/citipati-osmolskae-two-three-finger-hands-deepbeak-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The high frontal three-quarter view makes both forelimbs and exactly three clawed fingers on each hand separately countable, together with both feet, the short deep beak and one short tail.",
+        "reviewMethod": "Batch 60 original-size Citipati identity, skull-profile, bilateral-hand, limb-count, tail-continuity, palette, habitat, composition, and artifact inspection.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-60",
+        "reviewedAt": "2026-07-30T13:19:25.684Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/citipati-osmolskae-elongate-egg-ring-brooding-interaction-imagegen-v1.png",
+        "role": "ecological-interaction",
+        "reason": "The brooding pose uses a radial ring of elongated paired eggs with an open center and forelimbs around the rim, matching direct Citipati nest evidence while remaining explicitly lower-ranked for folded-limb anatomy.",
+        "reviewMethod": "Batch 60 original-size Citipati nest-evidence, egg-shape, subject-count, limb-attachment, tail-continuity, composition, and artifact inspection.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-60",
+        "reviewedAt": "2026-07-30T13:19:25.684Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/citipati-osmolskae-separated-adult-subadult-growth-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Adult and smaller individual are completely separated and retain the same short deep skull, low crest, palette zones and short tail; age stage, social association and plumage change remain reconstruction hypotheses.",
+        "reviewMethod": "Batch 60 original-size Citipati subject-separation, skull identity, appendage count, tail continuity, growth-hypothesis, palette, habitat, and artifact inspection.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-60",
+        "reviewedAt": "2026-07-30T13:19:25.684Z"
       }
     },
     "khaan-mckennai": {
@@ -6327,6 +6354,18 @@
     },
     "assets/dinosaurs/oviraptor-philoceratops-djadokhta-nest-ecology-imagegen-v2.png": {
       "reason": "The primary animal is too modern-bird-like, the eggs are round rather than elongate oviraptorid-style eggs, and the background ceratopsian identity is unreliable."
+    },
+    "assets/dinosaurs/citipati-osmolskae-tall-crest-feathered-imagegen-v1.png": {
+      "reason": "The former representative has a parrot- or cassowary-like head, an unsupported tall casque and a long modern-bird tail instead of Citipati's short deep skull, low broad crest and short tail."
+    },
+    "assets/dinosaurs/citipati-osmolskae-cobalt-saffron-pattern-imagegen-v1.png": {
+      "reason": "A tall casque, hidden hands, long tail, modern-bird silhouette and artificial face mask make the underlying anatomy unsuitable for a same-body Citipati color variation."
+    },
+    "assets/dinosaurs/citipati-osmolskae-djadokhta-nesting-ecology-imagegen-v1.png": {
+      "reason": "Modern-bird flight-wing anatomy, round chicken-like eggs and unreliable generic horned background animals contradict the direct Citipati nest evidence and independent appendage gate."
+    },
+    "assets/dinosaurs/citipati-osmolskae-djadokhta-dune-walk-imagegen-v2.png": {
+      "reason": "The walking animal remains cassowary-like, with a tall crest, long neck and long tail rather than the short deep skull, low crest, robust body and short tail required for Citipati."
     },
     "assets/dinosaurs/borealopelta-markmitchelli-misty-bank-standoff-ecology-imagegen-v1.png": {
       "reason": "Oversized random spikes cover the neck, torso and tail instead of preserving Borealopelta's ordered armor and shoulder-spine distribution, making the taxon identity unreliable."

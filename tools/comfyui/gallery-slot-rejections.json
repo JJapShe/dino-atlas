@@ -1,7 +1,19 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-30-richness-six-slot-batch-59",
+  "reviewBatch": "2026-07-30-richness-six-slot-batch-60",
   "rejectedSources": {
+    "assets/dinosaurs/citipati-osmolskae-tall-crest-feathered-imagegen-v1.png": {
+      "reason": "The former representative has a parrot- or cassowary-like head, an unsupported tall casque and a long modern-bird tail instead of Citipati's short deep skull, low broad crest and short tail."
+    },
+    "assets/dinosaurs/citipati-osmolskae-cobalt-saffron-pattern-imagegen-v1.png": {
+      "reason": "A tall casque, hidden hands, long tail, modern-bird silhouette and artificial face mask make the underlying anatomy unsuitable for a same-body Citipati color variation."
+    },
+    "assets/dinosaurs/citipati-osmolskae-djadokhta-nesting-ecology-imagegen-v1.png": {
+      "reason": "Modern-bird flight-wing anatomy, round chicken-like eggs and unreliable generic horned background animals contradict the direct Citipati nest evidence and independent appendage gate."
+    },
+    "assets/dinosaurs/citipati-osmolskae-djadokhta-dune-walk-imagegen-v2.png": {
+      "reason": "The walking animal remains cassowary-like, with a tall crest, long neck and long tail rather than the short deep skull, low crest, robust body and short tail required for Citipati."
+    },
     "assets/dinosaurs/tapejara-wellnhoferi-lagoon-fruit-forage-ecology-imagegen-v1.png": {
       "reason": "The former ecology candidate carries a long pterodactyloid tail that contradicts the very short Tapejara tail gate, so its crest and habitat strengths cannot preserve species identity."
     },
@@ -1350,5 +1362,5 @@
       "reason": "The launch frame repeats the selected airborne role, while the two hindwing surfaces do not attach cleanly to the two legs and instead read as extra torso- or tail-rooted feather fans."
     }
   },
-  "generatedAt": "2026-07-30T12:02:54.215Z"
+  "generatedAt": "2026-07-30T13:19:25.684Z"
 }

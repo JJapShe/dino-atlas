@@ -63,6 +63,13 @@ const HABITATS = {
     light: "clear neutral daylight without a global orange cast",
     backgroundPalette: ["#c8aa77", "#8f795d", "#68725c"],
   },
+  "djadokhta-semiarid-dune": {
+    substrate: "buff to muted red aeolian sand, low dunes, firm interdune silt, and episodic wash gravel",
+    vegetation: "very sparse low gray-green non-grass scrub with open ground",
+    moisture: "semiarid dune field with rare rain-fed interdune washes",
+    light: "clear neutral daylight or cool post-rain light without a global desert-orange cast",
+    backgroundPalette: ["#b79a72", "#8a6650", "#64706a"],
+  },
   "conifer-fern-floodplain": {
     substrate: "dark floodplain soil, leaf litter, and shallow water margins",
     vegetation: "conifers, cycads, ferns, and horsetails",
@@ -501,6 +508,7 @@ function habitatFor(dino, route) {
   else if (dino.id === "lessemsaurus-sauropoides") key = "los-colorados-seasonal-fluvial-floodplain";
   else if (dino.id === "ceratosaurus-nasicornis") key = "garden-park-felch-point-bar";
   else if (["gallimimus-bullatus", "therizinosaurus-cheloniformis", "mononykus-olecranus"].includes(dino.id)) key = "nemegt-fluvial-floodplain";
+  else if (["oviraptor-philoceratops", "citipati-osmolskae"].includes(dino.id)) key = "djadokhta-semiarid-dune";
   else if (dino.id === "velociraptor-mongoliensis") key = "gobi-arid";
   else if (dino.id === "parasaurolophus-walkeri") key = "dinosaur-park-coastal-plain";
   else if (dino.id === "styracosaurus-albertensis") key = "dinosaur-park-meander-belt";

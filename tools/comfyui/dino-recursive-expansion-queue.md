@@ -1390,7 +1390,7 @@
 - `Oviraptorosaur mojibake profile/route restoration batch 2026-07-10`
   - Restored literal `?` mojibake damage in `visualVariationProfiles` and `generationRouteGuides` user-facing fields for six oviraptorosaur taxa: `Oviraptor philoceratops`, `Citipati osmolskae`, `Khaan mckennai`, `Elmisaurus rarus`, `Nomingia gobiensis`, and `Caudipteryx zoui`. `Conchoraptor gracilis` was already restored in the previous pass and was included in validation.
   - Preserved every existing `route`, `control`, image asset path, sample ordering, representative/review/reference status, and gallery asset. No image promotion, deletion, replacement, or new generation was performed.
-  - Re-established Korean identity and drift guardrails: Oviraptor low crest and deep toothless beak, Citipati high rounded crest, Khaan crestless low rounded skull, Elmisaurus long-legged caenagnathid proportions, Nomingia pygostyle short tail fan, and Caudipteryx short forelimb feathers plus clear tail fan.
+  - Re-established Korean identity and drift guardrails. This archival note is superseded for Citipati: use its short deep rectangular skull, near-vertical premaxilla and low broad integrated crest, not the former high rounded crest assumption. Oviraptor keeps a low crest and deep toothless beak, Khaan a crestless low rounded skull, Elmisaurus long-legged caenagnathid proportions, Nomingia a pygostyle short tail fan, and Caudipteryx short forelimb feathers plus a clear tail fan.
   - Validation: `app.js` compiled with `vm.Script`; targeted oviraptorosaur profile/guide mojibake scan now reports 0 damaged rows across all seven oviraptorosaur taxa. Broad damaged profile/guide UI rows dropped from 489 to 441. Static asset validation found 1549 unique real `assets/dinosaurs/` refs and 0 missing real files. Local static server on `http://127.0.0.1:8010/` returned HTTP 200 for `app.js` and all seven touched oviraptorosaur representative/control assets. `git diff --check -- app.js tools/comfyui/dino-recursive-expansion-queue.md` passed with only the existing LF-to-CRLF warning for `app.js`.
   - Follow-up target: continue mojibake restoration with the remaining high-damage feathered theropod and troodontid blocks: `Almas`, `Sinovenator`, `Byronosaurus`, `Sinornithosaurus`, `Zanabazar`, `Microraptor`, `Gobivenator`, `Saurornithoides`, `Adasaurus`, and `Velociraptor`.
 
@@ -1449,7 +1449,7 @@
 - `Theropoda oviraptorosaur profile and route Korean cleanup batch 2026-07-10`
   - Localized `visualVariationProfiles` and `generationRouteGuides` user-facing profile/focus/pass/reject text for seven oviraptorosaur taxa: `Oviraptor philoceratops`, `Citipati osmolskae`, `Khaan mckennai`, `Conchoraptor gracilis`, `Elmisaurus rarus`, `Nomingia gobiensis`, and `Caudipteryx zoui`.
   - Preserved every existing `route`, `control`, image asset path, sample ordering, representative/review/reference status, and gallery asset. No image promotion, deletion, replacement, or new generation was performed.
-  - Refined Korean identity and drift guardrails across the oviraptorosaur batch: Oviraptor low crest and deep toothless beak, Citipati tall rounded crest, Khaan and Conchoraptor crestless skull differences, Elmisaurus long-legged caenagnathid proportions, Nomingia pygostyle short tail fan, and Caudipteryx short forelimb feathers plus tail fan without modern-bird drift.
+  - Refined Korean identity and drift guardrails across the oviraptorosaur batch. The former Citipati tall-rounded-crest wording is superseded by its short deep rectangular skull, near-vertical premaxilla and low broad integrated crest. Oviraptor keeps a low crest and deep toothless beak, Khaan and Conchoraptor retain their crestless skull differences, Elmisaurus long-legged caenagnathid proportions, Nomingia a pygostyle short tail fan, and Caudipteryx short forelimb feathers plus a tail fan without modern-bird drift.
   - Validation: `app.js` compiled with `vm.Script`; targeted scan found 0 remaining detected English rows in the seven taxa's localized profile/guide user-facing fields after excluding route/control/tool markers. Static asset validation found 1549 unique real `assets/dinosaurs/` refs and 0 missing real files. Local static server on `http://127.0.0.1:8010/` returned HTTP 200 for `app.js` and all seven touched representative control assets. `git diff --check -- app.js tools/comfyui/dino-recursive-expansion-queue.md` passed with only the existing LF-to-CRLF warning for `app.js`.
   - Follow-up target: continue theropod grouped cleanup with dromaeosaurids, troodontids, tyrannosaurids, and remaining one-off theropod guide rows; then return to generated-sample localization for taxa such as `Camarasaurus lentus` whose sample titles/bodies still contain English review copy.
 
@@ -3855,34 +3855,35 @@
   - Key guardrail: small feathered oviraptorid with deep short toothless beak, low cranial crest, folded three-finger forelimbs, strong legs, and modest tail fan; no egg-stealing representative trope, no giant cassowary crest, no Mononykus single giant hand claw, no Gallimimus ostrich body, no teeth.
 
 - `Citipati osmolskae`
-  - Representative: `assets/dinosaurs/citipati-osmolskae-tall-crest-feathered-imagegen-v1.png`
-  - Pattern variant: `assets/dinosaurs/citipati-osmolskae-cobalt-saffron-pattern-imagegen-v1.png`
-  - Ecology scene: `assets/dinosaurs/citipati-osmolskae-djadokhta-nesting-ecology-imagegen-v1.png`
-  - Key guardrail: small feathered oviraptorid with deep short toothless beak, high rounded cranial crest taller than Oviraptor, folded three-finger forelimbs, strong legs, visible feet, and short tail fan; no low-crest Oviraptor clone, no giant cassowary helmet, no modern parrot body, no Mononykus single giant hand claw, no Gallimimus ostrich body, no teeth.
+  - Representative: `assets/dinosaurs/citipati-osmolskae-vertical-premaxilla-deepbeak-lowcrest-representative-imagegen-v1.png`
+  - Pattern variant: `assets/dinosaurs/citipati-osmolskae-petrol-saffron-cream-pattern-imagegen-v1.png`
+  - Ecology scene: `assets/dinosaurs/citipati-osmolskae-ukhaa-tolgod-interdune-wash-ecology-imagegen-v1.png`
+  - Key guardrail: robust feathered oviraptorid with an almost rectangular short deep skull, near-vertical edentulous premaxilla, deep toothless beak, and low broad integrated nasal/premaxillary crest; exactly two three-fingered forelimbs, two hind legs with visible feet, and one short tail. Reject a tall cassowary-like casque, modern parrot or ostrich body, long neck, long tail, hidden hands, extra fingers/limbs/tails, teeth, giant sickle claws, or round chicken-like eggs.
+  - Superseded and rejected: `citipati-osmolskae-tall-crest-feathered-imagegen-v1.png`, `citipati-osmolskae-cobalt-saffron-pattern-imagegen-v1.png`, `citipati-osmolskae-djadokhta-nesting-ecology-imagegen-v1.png`, and `citipati-osmolskae-djadokhta-dune-walk-imagegen-v2.png` must not be reused as positive controls.
 
 - `Khaan mckennai`
   - Representative: `assets/dinosaurs/khaan-mckennai-crestless-feathered-imagegen-v1.png`
   - Pattern variant: `assets/dinosaurs/khaan-mckennai-magenta-teal-pattern-imagegen-v1.png`
   - Ecology scene: `assets/dinosaurs/khaan-mckennai-djadokhta-pair-ecology-imagegen-v1.png`
-  - Key guardrail: small crestless oviraptorid with deep short toothless beak, low rounded skull with no cranial crest, folded three-finger forelimbs, slender legs, visible feet, and short tail fan; no Citipati high crest, no Oviraptor low crest, no Mononykus single giant hand claw, no Gallimimus ostrich body, no teeth.
+  - Key guardrail: small crestless oviraptorid with deep short toothless beak, low rounded skull with no cranial crest, folded three-finger forelimbs, slender legs, visible feet, and short tail fan; no Citipati short deep rectangular skull or low broad integrated crest, no Oviraptor low crest, no Mononykus single giant hand claw, no Gallimimus ostrich body, no teeth.
 
 - `Conchoraptor gracilis`
   - Representative: `assets/dinosaurs/conchoraptor-gracilis-crestless-beak-imagegen-v1.png`
   - Pattern variant: `assets/dinosaurs/conchoraptor-gracilis-slate-vermilion-pattern-imagegen-v1.png`
   - Ecology scene: `assets/dinosaurs/conchoraptor-gracilis-baruungoyot-forage-ecology-imagegen-v1.png`
-  - Key guardrail: small crestless oviraptorid with low rounded skull, strong toothless beak, compact feathered body, folded three-finger forelimbs, long slender legs, visible feet, and short tail fan; no Citipati high crest, no Oviraptor low crest, no Khaan magenta-teal clone, no Mononykus single giant hand claw, no Gallimimus ostrich body, no teeth.
+  - Key guardrail: small crestless oviraptorid with low rounded skull, strong toothless beak, compact feathered body, folded three-finger forelimbs, long slender legs, visible feet, and short tail fan; no Citipati short deep rectangular skull or low broad integrated crest, no Oviraptor low crest, no Khaan magenta-teal clone, no Mononykus single giant hand claw, no Gallimimus ostrich body, no teeth.
 
 - `Elmisaurus rarus`
   - Representative: `assets/dinosaurs/elmisaurus-rarus-longlegged-crest-imagegen-v1.png`
   - Pattern variant: `assets/dinosaurs/elmisaurus-rarus-green-saffron-pattern-imagegen-v1.png`
   - Ecology scene: `assets/dinosaurs/elmisaurus-rarus-nemegt-forage-ecology-imagegen-v1.png`
-  - Key guardrail: small caenagnathid oviraptorosaur with lightweight long-legged body, toothless beak, low narrow cranial crest or nasal ridge, folded three-finger forelimbs, visible feet, and long balancing tail; no Oviraptoridae clone, no Conchoraptor rounded crestless head, no Citipati tall dome crest, no Gallimimus ostrich body, no Mononykus single giant hand claw, no teeth.
+  - Key guardrail: small caenagnathid oviraptorosaur with lightweight long-legged body, toothless beak, low narrow cranial crest or nasal ridge, folded three-finger forelimbs, visible feet, and long balancing tail; no Oviraptoridae clone, no Conchoraptor rounded crestless head, no Citipati short deep rectangular skull or low broad integrated crest, no Gallimimus ostrich body, no Mononykus single giant hand claw, no teeth.
 
 - `Nomingia gobiensis`
   - Representative: `assets/dinosaurs/nomingia-gobiensis-pygostyle-tailfan-imagegen-v1.png`
   - Pattern variant: `assets/dinosaurs/nomingia-gobiensis-bluegreen-copper-pattern-imagegen-v1.png`
   - Ecology scene: `assets/dinosaurs/nomingia-gobiensis-bugin-tsav-shorttail-ecology-imagegen-v2.png`
-  - Key guardrail: small caenagnathid oviraptorosaur with conservative short toothless beak, folded three-finger forelimbs, long slender legs, visible feet, and a short pygostyle-supported tail fan; no Elmisaurus long-tail clone, no Citipati tall dome crest, no cassowary helmet, no Gallimimus ostrich body, no Mononykus single giant hand claw, no teeth.
+  - Key guardrail: small caenagnathid oviraptorosaur with conservative short toothless beak, folded three-finger forelimbs, long slender legs, visible feet, and a short pygostyle-supported tail fan; no Elmisaurus long-tail clone, no Citipati short deep rectangular skull or low broad integrated crest, no cassowary helmet, no Gallimimus ostrich body, no Mononykus single giant hand claw, no teeth.
 
 - `Caudipteryx zoui`
   - Representative: `assets/dinosaurs/caudipteryx-zoui-wing-tailfan-imagegen-v1.png`
@@ -4285,7 +4286,7 @@
 
 - `Oviraptorid trio visible Korean cleanup 2026-07-10`
   - Localized visible generated sample titles, bodies, variants, identity checklists, visual variation profiles, and generation route focus/pass/reject text for `Oviraptor philoceratops`, `Citipati osmolskae`, and `Conchoraptor gracilis`.
-  - Preserved identity gates: Oviraptor keeps the deep short toothless beak, low subtle cranial crest, compact feathered body, folded three-finger forelimbs, visible three-toed feet, and long balancing tail; Citipati keeps the taller rounded cranial crest, deep toothless beak, compact feathered body, short tail fan, and folded forelimbs; Conchoraptor stays a smaller crestless oviraptorid with a low rounded skull, strong toothless beak, long slender hind legs, and short tail fan.
+  - Preserved identity gates. This archival summary is superseded for Citipati: it now uses an almost rectangular short deep skull, near-vertical premaxilla, deep toothless beak and low broad integrated crest rather than a taller rounded crest. Oviraptor keeps the deep short toothless beak, low subtle cranial crest, compact feathered body, folded three-finger forelimbs, visible three-toed feet, and long balancing tail; Conchoraptor stays a smaller crestless oviraptorid with a low rounded skull, strong toothless beak, long slender hind legs, and short tail fan.
   - Clarified ecology roles: Oviraptor nesting, Citipati brooding, and Conchoraptor foraging scenes remain behavior/anatomy review material below representative single-body candidates because multiple animals, nests, or background taxa make exact anatomy harder to audit.
   - Validation: target visible value English scan for the three taxa leaves only stable species IDs and the `1.5m` unit; `app.js` syntax ok; static asset refs 1183 with missing refs 0.
 
@@ -4424,6 +4425,16 @@
   - Edmontonia now requires both main shoulder spikes to be readable in the anatomy slot, four independent feet, irregular nodosaurid armor, and one long tapering tail without a club. The blue-black armor, oxblood shoulder-spike bases, pale hip band, and horn-colored tips remain consistent across compositions.
   - Validation: 132 taxa, 669 assigned and visually approved slots, 91 taxa at six images, 41 taxa and 123 generation slots remaining; strict verifier errors all zero; 1,540 unique `app.js` asset references with zero missing; all seven new assets returned HTTP 200; both rejected predecessors returned HTTP 410.
   - Browser validation at 1280x720 showed six ordered Atlas images and six review-page candidates for each taxon, Tapejara lightbox navigation from 1/6 to 2/6, Edmontonia anatomy at 4/6 with a 1672x941 decoded image, and zero Atlas/review console warnings or errors.
+
+- `Citipati six-image evidence-led rebuild 2026-07-30`
+  - Rebuilt `Citipati osmolskae` as six balanced roles: representative, same-body color-pattern, habitat-ecology, identity-anatomy, evidence-led brooding interaction, and separated adult-subadult growth comparison.
+  - Used Clark, Norell & Rowe 2002 (`American Museum Novitates 3364`) for the nearly rectangular short deep skull, near-vertical premaxilla, edentulous deep beak and low broad nasal/premaxillary crest, and Norell et al. 2018 (`American Museum Novitates 3899`) for the IGM 100/979 and IGM 100/1004 brooding posture and elongate paired egg-ring evidence.
+  - Added six original-size-reviewed 1672x941 project assets. The representative and anatomy views keep two separate three-fingered hands, two hind legs and feet, and one short tail readable; the nest and two-individual scenes stay in `anatomy review` because occlusion and inferred behavior are less suitable for card promotion.
+  - Rejected four former Citipati images: tall-crest feathered, cobalt-saffron pattern, Djadokhta nesting, and Djadokhta dune-walk. Their cassowary/parrot-like tall casque, long neck or tail, hidden hands, modern flight-wing drift, round chicken-like eggs, or unreliable background animals fail the revised identity gate.
+  - Locked the phenotype to charcoal-brown body feathers, muted petrol/storm-blue arm feathers, saffron throat, cream belly and restrained rusty cheek accents; avoided modern-bird face masks, regular stripes, dots and a tall casque.
+  - Added a dedicated `djadokhta-semiarid-dune` planner profile and assigned both Citipati and Oviraptor to it, preventing the old generic conifer-fern floodplain fallback from leaking into later background generation. All six Citipati and six Oviraptor assignments now carry the corrected habitat key.
+  - Validation: 132 taxa, 672 assigned and visually approved slots, 92 taxa at six images, 40 taxa and 120 generation slots remaining; strict verifier errors all zero; 1,839 unique `app.js` asset references with zero missing; all six new assets returned HTTP 200 on both Atlas and review image routes, while all four rejected predecessors returned HTTP 410 on review.
+  - Browser validation at 1280x720 showed six ordered Atlas images with the representative first, common lightbox navigation from 1/6 to 2/6, six 1672x941 review-page cards with all four rejected filenames absent, 147 visible phylogeny nodes with zero overlap, zero page-level horizontal overflow, zero map/navigator vertical intersection, and no Atlas/review console warnings or errors.
 
 For each added taxon, produce:
 
