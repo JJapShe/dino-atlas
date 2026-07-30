@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-31-richness-six-slot-batch-63",
+  "reviewBatch": "2026-07-31-richness-six-slot-batch-65",
   "rejectedSources": {
     "assets/dinosaurs/nyctosaurus-gracilis-niobrara-forked-crest-imagegen-v1.png": {
       "reason": "Free clawed appendages project from the wing margins, limb and membrane topology is confused, and a genus-level mature branching crest is incorrectly fixed onto the N. gracilis representative."
@@ -1346,6 +1346,15 @@
     "assets/dinosaurs/eudimorphodon-ranzii-triassic-lagoon-skim-ecology-imagegen-v1.png": {
       "reason": "Separate birdlike arms beneath oversized vertical wing sails, a generic skull, an unsupported terminal vane, and overconfident skimming behavior fail the paired-wing and evidence-bounded ecology gates."
     },
+    "assets/dinosaurs/darwinopterus-modularis-tiaojishan-longtail-transition-imagegen-v2.png": {
+      "reason": "The former representative lacks the diagnostic low longitudinal premaxillary crest, carries a bird- or theropod-like deep torso, leaves the forelimb-wing topology ambiguous, and fixes a terminal diamond vane that is not directly evidenced for the D. modularis holotype."
+    },
+    "assets/dinosaurs/darwinopterus-modularis-plum-celadon-wing-pattern-imagegen-v1.png": {
+      "reason": "A generic birdlike crestless head, deep torso, extra-looking forelimb or membrane surfaces, regular tail banding, and an unsupported terminal vane make the image unsafe as a same-body Darwinopterus color variation."
+    },
+    "assets/dinosaurs/darwinopterus-modularis-tiaojishan-lake-launch-ecology-imagegen-v1.png": {
+      "reason": "The diagnostic low crest and confluent nasoantorbital opening are unreadable, the wing underside forms separate arm- or membrane-like structures, and the scene overstates launch and feeding behavior while fixing an unsupported terminal vane."
+    },
     "assets/dinosaurs/diplodocus-carnegiei-allosaurus-tail-defense-ecology-imagegen-v1.png": {
       "reason": "The primary sauropod has a severely shortened neck and generic body proportions, while the secondary theropod anatomy is unstable; the scene fails Diplodocus identity and independent-anatomy review."
     },
@@ -1398,5 +1407,5 @@
       "reason": "The launch frame repeats the selected airborne role, while the two hindwing surfaces do not attach cleanly to the two legs and instead read as extra torso- or tail-rooted feather fans."
     }
   },
-  "generatedAt": "2026-07-30T14:12:07.351Z"
+  "generatedAt": "2026-07-30T19:15:10.241Z"
 }

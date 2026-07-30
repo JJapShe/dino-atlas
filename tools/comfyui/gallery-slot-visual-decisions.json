@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-30T16:43:28.189Z",
-  "reviewBatch": "2026-07-31-richness-six-slot-batch-63",
-  "reviewMethod": "Batch 63 Ezcurra 2016 Dimorphodon cranial and heterodont-dentition review, Witton 2015 terrestrial-competence and appendage review, Sangster 2021/2022 current osteology scope, Pugh et al. 2014 Blue Lias depositional-context review, Bestwick et al. 2018 diet-evidence review, and original-size inspection of every selected Dimorphodon frame for large naris, crestless deep skull, anterior and posterior tooth differentiation, paired wing forelimbs, three free wrist digits when readable, paired hindlimbs, a single pelvis-origin tail without an asserted vane, palette continuity, cautious habitat and behavior language, role balance, crop intent, and artifact gates.",
-  "targetSlots": 681,
+  "generatedAt": "2026-07-30T19:15:10.241Z",
+  "reviewBatch": "2026-07-31-richness-six-slot-batch-65",
+  "reviewMethod": "Batch 65 Lü et al. 2010 ZMNH M8782 holotype review, Wang et al. 2010 restrictive taxonomic comparison, Cheng et al. 2017 premaxillary-crest review, Cheng et al. 2025 current Darwinopterus comparison, Linglongta age and Tiaojishan flora-context review, and original-size inspection of every selected Darwinopterus frame for the low longitudinal crest, one confluent nasoantorbital opening, well-spaced anteriorly larger teeth, paired fourth-finger wing forelimbs, exactly three free wrist digits when readable, paired hindlimbs, one long stiff tail without an asserted terminal vane, palette continuity, cautious habitat and behavior language, role balance, crop intent, and artifact gates.",
+  "targetSlots": 687,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -2248,30 +2248,57 @@
     "darwinopterus-modularis": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/darwinopterus-modularis-tiaojishan-longtail-transition-imagegen-v2.png",
+        "source": "assets/dinosaurs/darwinopterus-modularis-olive-violet-neutral-glide-representative-imagegen-v3.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The original-size neutral glide resolves a long low skull with a restrained longitudinal premaxillary crest, one confluent nasoantorbital opening, well-spaced anteriorly larger teeth, two fourth-finger wing forelimbs, two separate hind legs and one long stiff tapering tail without an unsupported terminal vane.",
+        "reviewMethod": "Batch 65 original-size full-body and head-crop inspection against the ZMNH M8782 holotype description in Lü et al. 2010 and crest reconstruction in Cheng et al. 2017; filament and membrane appearance remain pterosaur-wide reconstruction.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-65",
+        "reviewedAt": "2026-07-30T19:15:10.241Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/darwinopterus-modularis-plum-celadon-wing-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/darwinopterus-modularis-violet-ash-dawn-pattern-imagegen-v3.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing dawn view preserves the same crested single-fenestra skull, paired wing and hindlimb topology, and one vane-free tail while adding broad asymmetric violet, graphite and ash marbling without synthetic spots, rings or repeated stripes.",
+        "reviewMethod": "Batch 65 original-size comparison with the representative for phenotype continuity, complete appendage count, tail continuity, low-crest identity, and natural non-repeating pattern gates; coloration remains explicitly hypothetical.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-65",
+        "reviewedAt": "2026-07-30T19:15:10.241Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/darwinopterus-modularis-tiaojishan-lake-launch-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/darwinopterus-modularis-postrain-volcaniclastic-forest-habitat-imagegen-v3.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The high-oblique post-rain view keeps one complete crested animal with two wings, two hind legs and one vane-free tail against ash-dark tuffaceous ground, runoff, ginkgophyte, bennettitalean, fern and irregular-conifer cues rather than a generic modern pine shore.",
+        "reviewMethod": "Batch 65 original-size appendage and tail inspection plus Linglongta volcaniclastic and Tiaojishan flora-context review; exact perch, flight path, plant association and living surface remain reconstruction hypotheses.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-65",
+        "reviewedAt": "2026-07-30T19:15:10.241Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/darwinopterus-modularis-single-fenestra-three-digit-wrist-anatomy-imagegen-v3.png",
+        "role": "identity-anatomy",
+        "reason": "The intentional head-to-wrist crop clearly resolves the low longitudinal crest, one confluent nasoantorbital opening, well-spaced anteriorly larger teeth, exactly three small free wrist digits and the separate elongated fourth wing finger without a second arm or duplicate membrane.",
+        "reviewMethod": "Batch 65 original-size head and wrist inspection against Lü et al. 2010 and Cheng et al. 2017; no distal limb or tail-count claim is made because those structures lie outside the intentional crop.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-65",
+        "reviewedAt": "2026-07-30T19:15:10.241Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/darwinopterus-modularis-fallen-ginkgo-distant-paravian-community-imagegen-v3.png",
+        "role": "interaction",
+        "reason": "The main pterosaur preserves two planted wing wrists, two separate hind feet, one long tapering vane-free tail and the diagnostic crested single-fenestra head; the distant feathered paravian remains spatially separate with no contact, pursuit or predation claim.",
+        "reviewMethod": "Batch 65 original-size four-contact, head, tail and secondary-animal separation inspection; same-region co-occurrence is presented only as a Yanliao community reconstruction, not direct interaction evidence.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-65",
+        "reviewedAt": "2026-07-30T19:15:10.241Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/darwinopterus-modularis-low-angle-ventral-ascent-imagegen-v3.png",
+        "role": "social-growth-defense",
+        "reason": "The low-angle ascent view independently separates two continuous fourth-finger wings, two hind legs, one long stiff vane-free tail and a pale ventral surface while retaining the low crested skull and avoiding extra arms, membranes or duplicated joints.",
+        "reviewMethod": "Batch 65 original-size ventral count and attachment inspection against the holotype-led gate; ascent attitude and exact flight behavior remain functional reconstruction hypotheses.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-65",
+        "reviewedAt": "2026-07-30T19:15:10.241Z"
       }
     },
     "ichthyosaurus-communis": {

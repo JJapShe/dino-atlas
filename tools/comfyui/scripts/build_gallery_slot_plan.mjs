@@ -84,6 +84,13 @@ const HABITATS = {
     light: "soft neutral daylight with dappled canopy light",
     backgroundPalette: ["#344d3d", "#6f7550", "#6c5b49"],
   },
+  "linglongta-volcaniclastic-forest": {
+    substrate: "ash-dark volcaniclastic forest floor, tuffaceous ledges, narrow runoff channels, damp clearings, and small palaeolake margins; do not turn the fossil lake bottom into the animal's only living surface",
+    vegetation: "ginkgophytes and czekanowskiale foliage, Bennettitales, Nilssoniales, tree and ground ferns, horsetails, and scattered irregular conifers with no grass, flowers, palms, or modern pine plantation",
+    moisture: "warm humid seasonal Yanliao forest mosaic near the Linglongta palaeolake system; exact perch, ground use, and flight location remain reconstruction hypotheses",
+    light: "neutral broken-cloud daylight, cool dawn, or restrained post-rain sunbreak with natural wet ash and water reflection and no global teal, green, or orange cast",
+    backgroundPalette: ["#5d6047", "#4b4559", "#b9823f"],
+  },
   "garden-park-felch-point-bar": {
     substrate: "pale coarse arkosic channel sand and gravel, a broad lenticular point bar, adjacent red-brown and greenish-gray overbank mud, shallow scour surfaces, and scattered driftwood",
     vegetation: "open conifers, cycads, ferns, horsetails, and restrained low non-grass ground cover with no flowers or modern grass",
@@ -541,6 +548,7 @@ function habitatFor(dino, route) {
   else if (dino.id === "nyctosaurus-gracilis") key = "smoky-hill-open-seaway";
   else if (dino.id === "dimorphodon-macronyx") key = "blue-lias-coastal-lowland";
   else if (dino.id === "eudimorphodon-ranzii") key = "zorzino-carbonate-island";
+  else if (dino.id === "darwinopterus-modularis") key = "linglongta-volcaniclastic-forest";
   else if (dino.id === "velociraptor-mongoliensis") key = "gobi-arid";
   else if (dino.id === "parasaurolophus-walkeri") key = "dinosaur-park-coastal-plain";
   else if (dino.id === "styracosaurus-albertensis") key = "dinosaur-park-meander-belt";

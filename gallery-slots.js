@@ -2003,27 +2003,51 @@ window.gallerySlotAssignments = {
   ],
   "darwinopterus-modularis": [
     {
-      "source": "assets/dinosaurs/darwinopterus-modularis-tiaojishan-longtail-transition-imagegen-v2.png",
+      "source": "assets/dinosaurs/darwinopterus-modularis-olive-violet-neutral-glide-representative-imagegen-v3.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "linglongta-volcaniclastic-forest",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/darwinopterus-modularis-plum-celadon-wing-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/darwinopterus-modularis-violet-ash-dawn-pattern-imagegen-v3.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "linglongta-volcaniclastic-forest",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/darwinopterus-modularis-tiaojishan-lake-launch-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/darwinopterus-modularis-postrain-volcaniclastic-forest-habitat-imagegen-v3.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "linglongta-volcaniclastic-forest",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/darwinopterus-modularis-single-fenestra-three-digit-wrist-anatomy-imagegen-v3.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "linglongta-volcaniclastic-forest",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/darwinopterus-modularis-fallen-ginkgo-distant-paravian-community-imagegen-v3.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "linglongta-volcaniclastic-forest",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/darwinopterus-modularis-low-angle-ventral-ascent-imagegen-v3.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "linglongta-volcaniclastic-forest",
       "expectedKind": "anatomy review"
     }
   ],
