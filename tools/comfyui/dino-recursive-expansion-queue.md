@@ -4395,6 +4395,11 @@
 
 ## Reusable Output Contract
 
+- `Scalable phylogeny workspace follow-up 2026-07-30`
+  - Kept the deterministic era-band packing and automatic canvas growth introduced for the 132-taxon atlas, with the detail inspector outside the map interaction layer and collapsed by default.
+  - Added a compact one-row toolbar for expanded landscape screens up to 600 px tall so era navigation and pan/zoom controls no longer consume a third of the map viewport.
+  - Browser validation at 1920x1080, 390x844, 844x390, and 667x375 found 147 visible group/taxon nodes, zero node overlaps, zero page-level horizontal overflow, and no map/inspector intersection. At 667x375 expanded landscape, the toolbar is 56 px high and the map keeps 319 px of viewport height.
+
 For each added taxon, produce:
 
 - `assets/dinosaurs/{id}-...-imagegen-v1.png` files.
