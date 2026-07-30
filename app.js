@@ -19630,7 +19630,6 @@ function resolvePhyloNodeCollisions(nodes, filteredIds) {
 const phyloEraPackLayouts = {
   triassic: {
     columns: 7,
-    maxColumns: 10,
     targetRows: 4,
     targetAspect: 2,
     topPad: 100,
@@ -19639,7 +19638,6 @@ const phyloEraPackLayouts = {
   },
   jurassic: {
     columns: 8,
-    maxColumns: 12,
     targetRows: 4,
     targetAspect: 2,
     topPad: 100,
@@ -19648,8 +19646,7 @@ const phyloEraPackLayouts = {
   },
   cretaceous: {
     columns: 10,
-    maxColumns: 18,
-    targetRows: 5,
+    targetRows: 7,
     targetAspect: 2,
     topPad: 100,
     bottomPad: 28,
@@ -20129,6 +20126,119 @@ function renderMapNodes() {
 
 }
 
+function renderMapNavigator() {
+  const navigatorCanvas = $("#mapNavigatorCanvas");
+  if (!navigatorCanvas) return;
+
+  const filteredIds = getFilteredIdSet();
+  const layoutWidth = currentPhyloLayout.width || canvasSize.width;
+  const layoutHeight = currentPhyloLayout.height || canvasSize.height;
+  const eraRects = (currentPhyloLayout.eras || eras)
+    .map(
+      (era) =>
+        `<rect class="map-navigator-era ${era.id}" x="0" y="${era.top}" width="${layoutWidth}" height="${era.height}"></rect>`,
+    )
+    .join("");
+  const groupRects = currentPhyloLayout.nodes
+    .filter((node) => node.type === "group" && !node.hiddenByLayout)
+    .map(
+      (node) =>
+        `<rect class="map-navigator-group" x="${node.x}" y="${node.y}" width="${getNodeWidth(node)}" height="${getNodeHeight()}" rx="8"></rect>`,
+    )
+    .join("");
+  const taxonRects = currentPhyloLayout.nodes
+    .filter(
+      (node) =>
+        node.type === "taxon" &&
+        filteredIds.has(node.speciesId) &&
+        !node.hiddenByLayout,
+    )
+    .map((node) => {
+      const dino = getDinoById(node.speciesId);
+      const accent = dino ? getTaxonPalette(dino).accent : "#55d6be";
+      return `<rect class="map-navigator-taxon" x="${node.x}" y="${node.y}" width="${getNodeWidth(node)}" height="${getNodeHeight()}" rx="7" fill="${accent}"></rect>`;
+    })
+    .join("");
+
+  navigatorCanvas.setAttribute("viewBox", `0 0 ${layoutWidth} ${layoutHeight}`);
+  navigatorCanvas.innerHTML = `
+    ${eraRects}
+    <line class="map-navigator-grid-rail" x1="${currentPhyloLayout.taxonGridX}" y1="0" x2="${currentPhyloLayout.taxonGridX}" y2="${layoutHeight}"></line>
+    ${groupRects}
+    ${taxonRects}
+  `;
+  updateMapNavigatorViewport();
+}
+
+function updateMapNavigatorViewport() {
+  const viewport = $("#mapViewport");
+  const navigatorWindow = $("#mapNavigatorWindow");
+  if (!viewport || !navigatorWindow || state.map.scale <= 0) return;
+
+  const layoutWidth = currentPhyloLayout.width || canvasSize.width;
+  const layoutHeight = currentPhyloLayout.height || canvasSize.height;
+  const left = Math.max(0, Math.min(layoutWidth, -state.map.x / state.map.scale));
+  const top = Math.max(0, Math.min(layoutHeight, -state.map.y / state.map.scale));
+  const right = Math.max(
+    left,
+    Math.min(layoutWidth, (viewport.clientWidth - state.map.x) / state.map.scale),
+  );
+  const bottom = Math.max(
+    top,
+    Math.min(layoutHeight, (viewport.clientHeight - state.map.y) / state.map.scale),
+  );
+
+  navigatorWindow.style.left = `${(left / layoutWidth) * 100}%`;
+  navigatorWindow.style.top = `${(top / layoutHeight) * 100}%`;
+  navigatorWindow.style.width = `${Math.max(0, ((right - left) / layoutWidth) * 100)}%`;
+  navigatorWindow.style.height = `${Math.max(0, ((bottom - top) / layoutHeight) * 100)}%`;
+}
+
+function clampFreeMapPosition() {
+  const viewport = $("#mapViewport");
+  if (!viewport || viewport.clientWidth <= 0 || viewport.clientHeight <= 0) return;
+
+  const scaledWidth = currentPhyloLayout.width * state.map.scale;
+  const scaledHeight = currentPhyloLayout.height * state.map.scale;
+  const horizontalReach = Math.max(72, viewport.clientWidth * 0.46);
+  const verticalReach = Math.max(64, viewport.clientHeight * 0.46);
+
+  if (scaledWidth <= viewport.clientWidth) {
+    state.map.x = (viewport.clientWidth - scaledWidth) / 2;
+  } else {
+    const minimumX = viewport.clientWidth - scaledWidth - horizontalReach;
+    state.map.x = Math.max(minimumX, Math.min(horizontalReach, state.map.x));
+  }
+
+  if (scaledHeight <= viewport.clientHeight) {
+    state.map.y = (viewport.clientHeight - scaledHeight) / 2;
+  } else {
+    const minimumY = viewport.clientHeight - scaledHeight - verticalReach;
+    state.map.y = Math.max(minimumY, Math.min(verticalReach, state.map.y));
+  }
+}
+
+function centerMapFromNavigator(clientX, clientY) {
+  const viewport = $("#mapViewport");
+  const navigatorTrack = $("#mapNavigatorTrack");
+  if (!viewport || !navigatorTrack) return;
+
+  const rect = navigatorTrack.getBoundingClientRect();
+  if (rect.width <= 0 || rect.height <= 0) return;
+  const ratioX = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+  const ratioY = Math.max(0, Math.min(1, (clientY - rect.top) / rect.height));
+  const logicalX = ratioX * currentPhyloLayout.width;
+  const logicalY = ratioY * currentPhyloLayout.height;
+
+  state.map.scope = "all";
+  state.map.frameMode = "free";
+  state.map.x = viewport.clientWidth / 2 - logicalX * state.map.scale;
+  state.map.y = viewport.clientHeight / 2 - logicalY * state.map.scale;
+  clampFreeMapPosition();
+  applyMapTransform();
+  renderMapScopeControls();
+}
+
 function getPhyloFocusSpeciesIds(focusId) {
   if (!focusId || !currentPhyloLayout?.nodeMap?.has(focusId)) return new Set();
   const ids = new Set();
@@ -20180,12 +20290,13 @@ function applyMapTransform({ updateZoomLabel = true } = {}) {
   if (!canvas) return;
   const renderedTaxonWidth = phyloLayoutMetrics.taxonWidth * state.map.scale;
   canvas.style.transform = `translate3d(${state.map.x}px, ${state.map.y}px, 0) scale(${state.map.scale})`;
-  canvas.classList.toggle("is-overview", renderedTaxonWidth < 84);
+  canvas.classList.toggle("is-overview", renderedTaxonWidth < 96);
   canvas.classList.toggle(
     "is-compact",
-    renderedTaxonWidth >= 84 && renderedTaxonWidth < 126,
+    renderedTaxonWidth >= 96 && renderedTaxonWidth < 126,
   );
   if (updateZoomLabel) $("#zoomLevel").textContent = `${Math.round(state.map.scale * 100)}%`;
+  updateMapNavigatorViewport();
 }
 
 function scheduleMapPanTransform() {
@@ -20201,6 +20312,7 @@ function flushMapPanTransform() {
     cancelAnimationFrame(state.map.transformFrame);
     state.map.transformFrame = 0;
   }
+  clampFreeMapPosition();
   applyMapTransform({ updateZoomLabel: false });
 }
 
@@ -20225,7 +20337,7 @@ function applyMapUiState() {
 }
 
 function clampScale(scale) {
-  return Math.max(0.12, Math.min(1.8, scale));
+  return Math.max(0.06, Math.min(1.8, scale));
 }
 
 function renderMapScopeControls() {
@@ -20409,6 +20521,11 @@ function refitCurrentMapFrame({ minimumScale } = {}) {
     fitMapScope("all", { preserveMode: true, allowOverview: true });
     return;
   }
+  if (state.map.frameMode === "free") {
+    clampFreeMapPosition();
+    applyMapTransform();
+    return;
+  }
   fitMapScope(state.map.scope, { minimumScale, preserveMode: true });
 }
 
@@ -20451,7 +20568,7 @@ function setMapExpanded(expanded) {
 }
 
 function fitMapToViewport() {
-  fitMapScope("all", { minimumScale: getAllMapBrowseScale() });
+  fitMapScope("all", { allowOverview: true });
 }
 
 function zoomMap(nextScale, originX, originY) {
@@ -20465,6 +20582,8 @@ function zoomMap(nextScale, originX, originY) {
   state.map.scale = scale;
   state.map.x = px - rect.left - mapX * scale;
   state.map.y = py - rect.top - mapY * scale;
+  state.map.frameMode = "free";
+  clampFreeMapPosition();
   applyMapTransform();
 }
 
@@ -20482,6 +20601,7 @@ function renderPhyloMap() {
   renderPeriodBands();
   renderTreeLines();
   renderMapNodes();
+  renderMapNavigator();
   applyMapTransform();
   renderMapScopeControls();
 }
@@ -24491,10 +24611,12 @@ function refitAtlasAfterFilter() {
 function bindMapEvents() {
   const viewport = $("#mapViewport");
   const mapNodes = $("#mapNodes");
+  const mapNavigator = $("#mapNavigator");
   const activePointers = new Map();
   let pinching = false;
   let pinchStartDistance = 0;
   let pinchStartScale = state.map.scale;
+  let navigatorPointerId = null;
 
   const getPinchMetrics = () => {
     const [first, second] = [...activePointers.values()];
@@ -24540,11 +24662,15 @@ function bindMapEvents() {
       return;
     }
     if (!node) return;
+    const shouldFocusAfterSelect = state.map.frameMode === "overview";
     state.selectedId = node.dataset.id;
     state.map.scope = getDinoById(state.selectedId)?.era || state.map.scope;
     state.phyloFocusId = "";
     state.galleryIndex = 0;
     renderAll();
+    if (shouldFocusAfterSelect) {
+      requestAnimationFrame(() => focusSelectedMapNode());
+    }
   });
 
   $("#zoomOut").addEventListener("click", () => zoomMap(state.map.scale - 0.12));
@@ -24554,12 +24680,47 @@ function bindMapEvents() {
   $("#mapEraControls").addEventListener("click", (event) => {
     const button = event.target.closest("[data-map-scope]");
     if (!button) return;
+    if (button.dataset.mapScope === "all") {
+      fitMapToViewport();
+      return;
+    }
     fitMapScope(button.dataset.mapScope);
   });
   $("#toggleMapInspector").addEventListener("click", () =>
     setMapInspectorCollapsed(!state.map.inspectorCollapsed, { userInitiated: true }),
   );
   $("#toggleMapExpand").addEventListener("click", () => setMapExpanded(!state.map.expanded));
+
+  const moveFromNavigator = (event) => {
+    if (navigatorPointerId !== event.pointerId) return;
+    centerMapFromNavigator(event.clientX, event.clientY);
+  };
+
+  const stopNavigatorDrag = (event) => {
+    if (navigatorPointerId !== event.pointerId) return;
+    if (mapNavigator.hasPointerCapture(event.pointerId)) {
+      mapNavigator.releasePointerCapture(event.pointerId);
+    }
+    navigatorPointerId = null;
+    mapNavigator.classList.remove("dragging");
+  };
+
+  mapNavigator.addEventListener("pointerdown", (event) => {
+    if (event.button !== 0) return;
+    event.preventDefault();
+    navigatorPointerId = event.pointerId;
+    mapNavigator.setPointerCapture(event.pointerId);
+    mapNavigator.classList.add("dragging");
+    centerMapFromNavigator(event.clientX, event.clientY);
+  });
+  mapNavigator.addEventListener("pointermove", moveFromNavigator);
+  mapNavigator.addEventListener("pointerup", stopNavigatorDrag);
+  mapNavigator.addEventListener("pointercancel", stopNavigatorDrag);
+  mapNavigator.addEventListener("keydown", (event) => {
+    if (event.key !== "Enter" && event.key !== " ") return;
+    event.preventDefault();
+    fitMapToViewport();
+  });
 
   viewport.addEventListener(
     "wheel",
@@ -24603,6 +24764,7 @@ function bindMapEvents() {
       return;
     }
     if (!state.map.dragging) return;
+    state.map.frameMode = "free";
     state.map.x = state.map.originX + event.clientX - state.map.startX;
     state.map.y = state.map.originY + event.clientY - state.map.startY;
     scheduleMapPanTransform();
@@ -24648,6 +24810,8 @@ function bindMapEvents() {
     if (event.key === "ArrowDown") state.map.y -= panAmount;
     if (["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"].includes(event.key)) {
       event.preventDefault();
+      state.map.frameMode = "free";
+      clampFreeMapPosition();
       applyMapTransform();
     }
   });

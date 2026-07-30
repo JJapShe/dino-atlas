@@ -4410,6 +4410,12 @@
   - Added a compact one-row toolbar for expanded landscape screens up to 600 px tall so era navigation and pan/zoom controls no longer consume a third of the map viewport.
   - Browser validation at 1920x1080, 390x844, 844x390, and 667x375 found 147 visible group/taxon nodes, zero node overlaps, zero page-level horizontal overflow, and no map/inspector intersection. At 667x375 expanded landscape, the toolbar is 56 px high and the map keeps 319 px of viewport height.
 
+- `Scalable phylogeny overview and navigator follow-up 2026-07-30`
+  - Split the 132-taxon map into a true whole-atlas overview and a readable browse scale: `전체` and reset now fit the complete dynamic canvas, while era and selected-taxon actions restore 122-143 px rendered cards.
+  - Removed fixed era column caps, kept Cretaceous at a stable seven-row target, and let later additions extend the canvas horizontally instead of shrinking or colliding with existing cards. The current all-filter canvas is 3228x1630 px.
+  - Added a separate 44 px full-atlas navigator below the viewport, with era bands, clade/taxon markers, and a live viewport rectangle. It supports click/drag repositioning without covering map cards and hides in expanded landscape screens up to 600 px tall.
+  - Browser validation at 1280x720, 1920x1080, 390x844, and expanded 844x390 found 147 visible group/taxon nodes, zero node overlaps, zero page-level horizontal overflow, and no navigator/map intersection. Whole-atlas overview scales were 31%, 51%, 10%, and 18% respectively; expanded 844x390 retained a 334 px map viewport below its 56 px toolbar.
+
 - `Tapejara and Edmontonia six-image enrichment 2026-07-30`
   - Expanded `Tapejara wellnhoferi` and `Edmontonia rugosidens` from three published slots to six balanced roles each: representative, color-pattern, habitat-ecology, identity-anatomy, interaction, and social-growth-defense.
   - Added seven original-size-reviewed project assets: four Tapejara short-tail/four-limb/crab-observation/growth scenes and three Edmontonia paired-shoulder-spike/channel-separated-Gorgosaurus/growth scenes.

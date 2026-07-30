@@ -480,13 +480,13 @@ select:focus,
 }
 
 body[data-active-view="atlas"] .main {
-  gap: 8px;
+  grid-template-rows: minmax(0, 1fr);
+  gap: 0;
   padding: 10px;
 }
 
 body[data-active-view="atlas"] .topbar {
-  min-height: 46px;
-  justify-content: flex-end;
+  display: none;
 }
 
 body[data-active-view="atlas"] .topbar > :first-child {
@@ -645,6 +645,15 @@ body[data-active-view="atlas"] .metric span {
   min-height: 0;
 }
 
+.map-workspace {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) 44px;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: #0b1017;
+}
+
 .phylo-viewport {
   position: relative;
   overflow: hidden;
@@ -664,6 +673,99 @@ body[data-active-view="atlas"] .metric span {
   cursor: grabbing;
 }
 
+.map-navigator {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  outline: none;
+  background: #080d13;
+  color: var(--text);
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.map-navigator:hover {
+  background: #0b1119;
+}
+
+.map-navigator:focus-visible {
+  box-shadow: inset 0 0 0 2px rgba(85, 214, 190, 0.72);
+}
+
+.map-navigator.dragging {
+  cursor: grabbing;
+}
+
+.map-navigator-track {
+  position: absolute;
+  inset: 6px 10px;
+  display: block;
+  overflow: hidden;
+  border: 1px solid rgba(147, 164, 181, 0.22);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.map-navigator-canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.map-navigator-era {
+  stroke: rgba(238, 248, 245, 0.12);
+  stroke-width: 3;
+  vector-effect: non-scaling-stroke;
+}
+
+.map-navigator-era.triassic {
+  fill: rgba(85, 214, 190, 0.12);
+}
+
+.map-navigator-era.jurassic {
+  fill: rgba(230, 196, 106, 0.12);
+}
+
+.map-navigator-era.cretaceous {
+  fill: rgba(125, 183, 255, 0.11);
+}
+
+.map-navigator-grid-rail {
+  stroke: rgba(238, 248, 245, 0.28);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.map-navigator-group {
+  fill: rgba(230, 196, 106, 0.72);
+}
+
+.map-navigator-taxon {
+  opacity: 0.82;
+}
+
+.map-navigator-window {
+  position: absolute;
+  z-index: 2;
+  min-width: 18px;
+  min-height: 6px;
+  border: 2px solid rgba(238, 248, 245, 0.92);
+  border-radius: 3px;
+  background: rgba(85, 214, 190, 0.12);
+  box-shadow:
+    0 0 0 1px rgba(7, 11, 17, 0.82),
+    0 0 14px rgba(85, 214, 190, 0.22);
+  pointer-events: none;
+}
+
 .phylo-canvas {
   position: absolute;
   left: 0;
@@ -677,31 +779,30 @@ body[data-active-view="atlas"] .metric span {
 }
 
 .phylo-canvas.is-overview .map-node.taxon {
-  place-content: center;
-  gap: 0;
-  padding: 8px;
+  padding: 0;
+  border-width: 2px;
   background:
-    linear-gradient(135deg, var(--taxon-accent, var(--accent)), var(--taxon-wash-alt, rgba(230, 196, 106, 0.62))),
+    linear-gradient(135deg, var(--taxon-accent, var(--accent)), var(--taxon-wash-alt, rgba(230, 196, 106, 0.72))),
     var(--taxon-bg, rgba(15, 22, 31, 0.94));
-  box-shadow:
-    inset 0 0 0 1px rgba(238, 248, 245, 0.12),
-    0 8px 18px rgba(0, 0, 0, 0.18);
+  box-shadow: none;
 }
 
 .phylo-canvas.is-overview .map-node.taxon .node-kind,
 .phylo-canvas.is-overview .map-node.taxon .node-meta,
-.phylo-canvas.is-overview .map-node.taxon .node-palette {
+.phylo-canvas.is-overview .map-node.taxon .node-palette,
+.phylo-canvas.is-overview .map-node.taxon strong {
   display: none;
 }
 
-.phylo-canvas.is-overview .map-node.taxon strong {
-  display: -webkit-box;
-  max-height: 38px;
-  color: rgba(247, 250, 249, 0.94);
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-  -webkit-line-clamp: 2;
+.phylo-canvas.is-overview .map-node.taxon::before {
+  width: 100%;
+  border-radius: 6px;
+  background: linear-gradient(
+    135deg,
+    var(--taxon-accent, var(--accent)),
+    var(--taxon-wash-alt, rgba(230, 196, 106, 0.72))
+  );
+  opacity: 0.8;
 }
 
 .phylo-canvas.is-overview .map-node.taxon.active {
@@ -716,14 +817,22 @@ body[data-active-view="atlas"] .metric span {
 }
 
 .phylo-canvas.is-overview .map-node.group {
-  place-content: center;
-  padding: 10px;
-  text-align: center;
+  padding: 0;
+  border-width: 2px;
+  background: rgba(230, 196, 106, 0.58);
+  box-shadow: none;
 }
 
 .phylo-canvas.is-overview .map-node.group strong {
-  font-size: 15px;
-  -webkit-line-clamp: 2;
+  display: none;
+}
+
+.phylo-canvas.is-overview .period-label strong {
+  font-size: 42px;
+}
+
+.phylo-canvas.is-overview .period-label span {
+  font-size: 20px;
 }
 
 .phylo-canvas.is-overview .tree-line.taxon-branch:not(.active) {
@@ -1086,6 +1195,7 @@ body.map-expanded-open {
 }
 
 .map-panel.map-expanded .map-stage,
+.map-panel.map-expanded .map-workspace,
 .map-panel.map-expanded .phylo-viewport {
   min-height: 0;
 }
@@ -2603,8 +2713,7 @@ body.lightbox-open {
     padding-right: 0;
   }
 
-  .map-stage,
-  .phylo-viewport {
+  .map-workspace {
     min-height: 640px;
   }
 
@@ -2619,6 +2728,7 @@ body.lightbox-open {
   }
 
   .map-panel.map-expanded .map-stage,
+  .map-panel.map-expanded .map-workspace,
   .map-panel.map-expanded .phylo-viewport {
     min-height: 0;
   }
@@ -2845,8 +2955,7 @@ body.lightbox-open {
     min-width: 42px;
   }
 
-  .map-stage,
-  .phylo-viewport {
+  .map-workspace {
     min-height: 620px;
   }
 
@@ -2936,5 +3045,13 @@ body.lightbox-open {
   .map-panel.map-expanded .map-era-controls button,
   .map-panel.map-expanded .map-controls button {
     min-height: 36px;
+  }
+
+  .map-panel.map-expanded .map-workspace {
+    grid-template-rows: minmax(0, 1fr);
+  }
+
+  .map-panel.map-expanded .map-navigator {
+    display: none;
   }
 }
