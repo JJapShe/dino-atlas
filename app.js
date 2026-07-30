@@ -4233,6 +4233,7 @@ const state = {
     inspectorBeforeExpand: false,
     inspectorAutoCollapsed: false,
     inspectorUserSet: false,
+    layoutFrame: 0,
     dragging: false,
     transformFrame: 0,
     startX: 0,
@@ -19232,15 +19233,25 @@ function renderMetrics() {
 function renderPeriodBands() {
   const layoutHeight = currentPhyloLayout.height || canvasSize.height;
   const layoutEras = currentPhyloLayout.eras || eras;
+  const filteredIds = getFilteredIdSet();
   $("#periodBands").innerHTML = layoutEras
     .map((era, index) => {
       const nextEra = layoutEras[index + 1];
       const height = nextEra ? era.height : Math.max(era.height, layoutHeight - era.top);
+      const visibleTaxaCount = currentPhyloLayout.nodes.filter(
+        (node) =>
+          node.type === "taxon" &&
+          filteredIds.has(node.speciesId) &&
+          getDinoById(node.speciesId)?.era === era.id,
+      ).length;
       return `
         <section class="period-band ${era.id}" style="top: ${era.top}px; height: ${height}px;">
           <div class="period-label">
-            <strong>${era.label}</strong>
-            <span>${era.range}</span>
+            <span class="period-label-copy">
+              <strong>${era.label}</strong>
+              <span class="period-range">${era.range}</span>
+            </span>
+            <span class="period-count">${visibleTaxaCount}종</span>
           </div>
         </section>
       `;
@@ -19788,25 +19799,19 @@ function resolvePhyloNodeCollisions(nodes, filteredIds) {
 
 const phyloEraPackLayouts = {
   triassic: {
-    columns: 7,
-    targetRows: 4,
-    targetAspect: 2,
+    minimumColumns: 4,
     topPad: 100,
     bottomPad: 28,
     rowGap: phyloLayoutMetrics.taxonRowGap,
   },
   jurassic: {
-    columns: 8,
-    targetRows: 4,
-    targetAspect: 2,
+    minimumColumns: 4,
     topPad: 100,
     bottomPad: 28,
     rowGap: phyloLayoutMetrics.taxonRowGap,
   },
   cretaceous: {
-    columns: 10,
-    targetRows: 7,
-    targetAspect: 2,
+    minimumColumns: 4,
     topPad: 100,
     bottomPad: 28,
     rowGap: phyloLayoutMetrics.taxonRowGap,
@@ -19849,25 +19854,103 @@ function orderPhyloEraTaxa(taxa) {
   return taxa.slice().sort(comparePhyloEraTaxa);
 }
 
-function getEraPackColumns(taxaCount, layout) {
-  const minimumColumns = Math.max(1, layout.columns);
-  const maximumColumns = Math.max(minimumColumns, layout.maxColumns || taxaCount);
-  const nodeWidth = getNodeWidth({ type: "taxon" }) + phyloLayoutMetrics.taxonColumnGap;
-  const nodeHeight = getNodeHeight() + layout.rowGap;
-  const adaptiveColumns = Math.ceil(
-    Math.sqrt(Math.max(1, taxaCount) * (layout.targetAspect || 2) * (nodeHeight / nodeWidth)),
+function getEraPackColumnCount(taxaCount, sharedColumns, layout) {
+  if (!taxaCount) return 1;
+  return Math.min(
+    taxaCount,
+    Math.max(layout.minimumColumns || 1, sharedColumns),
   );
-  const rowLimitedColumns = Math.ceil(
-    Math.max(1, taxaCount) / Math.max(1, layout.targetRows || 5),
+}
+
+function estimatePhyloPackDimensions(taxaCountByEra, sharedColumns, taxonGridX) {
+  const nodeWidth = getNodeWidth({ type: "taxon" });
+  const nodeHeight = getNodeHeight();
+  let widestColumns = 1;
+  let height = 0;
+  let lastBottomPad = 0;
+
+  eras.forEach((era) => {
+    const layout = phyloEraPackLayouts[era.id] || {
+      minimumColumns: 4,
+      topPad: 100,
+      bottomPad: 28,
+      rowGap: phyloLayoutMetrics.taxonRowGap,
+    };
+    const taxaCount = taxaCountByEra.get(era.id) || 0;
+    const columns = getEraPackColumnCount(taxaCount, sharedColumns, layout);
+    const rows = taxaCount ? Math.ceil(taxaCount / columns) : 0;
+    const requiredHeight =
+      layout.topPad +
+      rows * nodeHeight +
+      Math.max(0, rows - 1) * layout.rowGap +
+      layout.bottomPad;
+    height += Math.max(taxaCount ? 164 : 112, requiredHeight);
+    widestColumns = Math.max(widestColumns, columns);
+    lastBottomPad = layout.bottomPad;
+  });
+
+  const width =
+    taxonGridX +
+    widestColumns * nodeWidth +
+    Math.max(0, widestColumns - 1) * phyloLayoutMetrics.taxonColumnGap +
+    phyloLayoutMetrics.canvasPadding;
+  const trailingCanvasPad = Math.max(
+    0,
+    phyloLayoutMetrics.canvasPadding - lastBottomPad,
   );
-  return Math.max(
+
+  return {
+    width: Math.max(canvasSize.width, width),
+    height: Math.max(canvasSize.height, height + trailingCanvasPad),
+  };
+}
+
+function getResponsiveEraPackColumns(taxaCountByEra, taxonGridX) {
+  const viewport = $("#mapViewport");
+  const viewportWidth = Math.max(320, viewport?.clientWidth || window.innerWidth || 1280);
+  const viewportHeight = Math.max(320, viewport?.clientHeight || window.innerHeight || 720);
+  const maximumTaxaCount = Math.max(
     1,
-    Math.min(
-      Math.max(minimumColumns, adaptiveColumns, rowLimitedColumns),
-      maximumColumns,
-      Math.max(1, taxaCount),
-    ),
+    ...eras.map((era) => taxaCountByEra.get(era.id) || 0),
   );
+  const minimumCandidate = Math.min(4, maximumTaxaCount);
+  const maximumCandidate = Math.min(28, maximumTaxaCount);
+  let bestColumns = minimumCandidate;
+  let bestScale = -1;
+  let bestAspectMismatch = Number.POSITIVE_INFINITY;
+  const viewportAspect = viewportWidth / viewportHeight;
+
+  for (
+    let candidate = minimumCandidate;
+    candidate <= maximumCandidate;
+    candidate += 1
+  ) {
+    const dimensions = estimatePhyloPackDimensions(
+      taxaCountByEra,
+      candidate,
+      taxonGridX,
+    );
+    const fitScale = Math.min(
+      viewportWidth / dimensions.width,
+      viewportHeight / dimensions.height,
+    );
+    const aspectMismatch = Math.abs(
+      Math.log(dimensions.width / dimensions.height / viewportAspect),
+    );
+    const scaleImproved = fitScale > bestScale + 0.001;
+    const scaleTied = Math.abs(fitScale - bestScale) <= 0.001;
+
+    if (
+      scaleImproved ||
+      (scaleTied && aspectMismatch < bestAspectMismatch)
+    ) {
+      bestColumns = candidate;
+      bestScale = fitScale;
+      bestAspectMismatch = aspectMismatch;
+    }
+  }
+
+  return bestColumns;
 }
 
 function buildDynamicPhyloEras(nodes, filteredIds, taxonGridX) {
@@ -19882,17 +19965,17 @@ function buildDynamicPhyloEras(nodes, filteredIds, taxonGridX) {
     taxaCountByEra.set(eraId, (taxaCountByEra.get(eraId) || 0) + 1);
   });
 
+  const sharedColumns = getResponsiveEraPackColumns(taxaCountByEra, taxonGridX);
   let top = 0;
   return eras.map((era) => {
     const layout = phyloEraPackLayouts[era.id] || {
-      columns: 6,
-      targetRows: 5,
+      minimumColumns: 4,
       topPad: 100,
       bottomPad: 28,
       rowGap: phyloLayoutMetrics.taxonRowGap,
     };
     const taxaCount = taxaCountByEra.get(era.id) || 0;
-    const columns = getEraPackColumns(taxaCount, layout);
+    const columns = getEraPackColumnCount(taxaCount, sharedColumns, layout);
     const rows = taxaCount ? Math.ceil(taxaCount / columns) : 0;
     const requiredHeight =
       layout.topPad +
@@ -20693,7 +20776,10 @@ function setMapInspectorCollapsed(collapsed, { userInitiated = false } = {}) {
   if (userInitiated) state.map.inspectorUserSet = true;
   applyMapUiState();
   renderMapScopeControls();
-  requestAnimationFrame(() => refitCurrentMapFrame());
+  requestAnimationFrame(() => {
+    renderPhyloMap();
+    refitCurrentMapFrame();
+  });
 }
 
 function syncResponsiveMapInspector() {
@@ -20723,7 +20809,10 @@ function setMapExpanded(expanded) {
   if (!nextExpanded) syncResponsiveMapInspector();
   applyMapUiState();
   renderMapScopeControls();
-  requestAnimationFrame(() => refitCurrentMapFrame());
+  requestAnimationFrame(() => {
+    renderPhyloMap();
+    refitCurrentMapFrame();
+  });
 }
 
 function fitMapToViewport() {
@@ -24750,9 +24839,9 @@ function setView(view) {
   if (view === "assetReview") {
     $("#viewTitle").textContent = "이미지 검수 워크벤치";
   }
-  renderAll();
   syncResponsiveMapInspector();
   applyMapUiState();
+  renderAll();
   if (view === "atlas" && !state.map.fitted) {
     requestAnimationFrame(() => fitMapScope(getSelectedDino().era));
   }
@@ -24988,7 +25077,12 @@ function bindMapEvents() {
   window.addEventListener("resize", () => {
     syncResponsiveMapInspector();
     applyMapUiState();
-    requestAnimationFrame(() => refitCurrentMapFrame({ minimumScale: state.map.scale }));
+    if (state.map.layoutFrame) cancelAnimationFrame(state.map.layoutFrame);
+    state.map.layoutFrame = requestAnimationFrame(() => {
+      state.map.layoutFrame = 0;
+      renderPhyloMap();
+      refitCurrentMapFrame({ minimumScale: state.map.scale });
+    });
   });
 }
 

@@ -828,11 +828,15 @@ body[data-active-view="atlas"] .metric span {
 }
 
 .phylo-canvas.is-overview .period-label strong {
-  font-size: 42px;
+  font-size: 36px;
 }
 
-.phylo-canvas.is-overview .period-label span {
-  font-size: 20px;
+.phylo-canvas.is-overview .period-label .period-range {
+  font-size: 16px;
+}
+
+.phylo-canvas.is-overview .period-label .period-count {
+  font-size: 14px;
 }
 
 .phylo-canvas.is-overview .tree-line.taxon-branch:not(.active) {
@@ -911,22 +915,46 @@ body[data-active-view="atlas"] .metric span {
 .period-label {
   position: absolute;
   left: var(--phylo-grid-x);
-  top: 18px;
+  top: 14px;
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
   pointer-events: none;
+}
+
+.period-label-copy {
+  display: grid;
+  min-width: 0;
+  gap: 4px;
 }
 
 .period-label strong {
   display: block;
   color: var(--text);
   font-size: 28px;
+  line-height: 1.08;
 }
 
-.period-label span {
+.period-label .period-range {
   display: block;
-  margin-top: 6px;
   color: var(--muted);
   font-size: 13px;
   font-weight: 700;
+  line-height: 1.2;
+}
+
+.period-label .period-count {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 9px;
+  border: 1px solid rgba(147, 164, 181, 0.24);
+  border-radius: 6px;
+  background: rgba(7, 12, 18, 0.68);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1;
 }
 
 .tree-lines {
