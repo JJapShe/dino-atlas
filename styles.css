@@ -106,6 +106,56 @@ button {
   transform: rotate(-12deg);
 }
 
+.icon-target::before {
+  inset: 2px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
+
+.icon-target::after {
+  top: 6px;
+  left: 6px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.icon-panel::before {
+  inset: 1px;
+  border: 2px solid currentColor;
+  border-radius: 2px;
+}
+
+.icon-panel::after {
+  top: 3px;
+  bottom: 3px;
+  right: 5px;
+  width: 2px;
+  border-radius: 2px;
+  background: currentColor;
+}
+
+.icon-expand::before,
+.icon-expand::after {
+  width: 7px;
+  height: 7px;
+}
+
+.icon-expand::before {
+  top: 1px;
+  left: 1px;
+  border-top: 2px solid currentColor;
+  border-left: 2px solid currentColor;
+}
+
+.icon-expand::after {
+  right: 1px;
+  bottom: 1px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+}
+
 .icon-chevron-left,
 .icon-chevron-right {
   width: 16px;
@@ -468,6 +518,7 @@ select:focus,
 .map-controls {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -476,6 +527,12 @@ select:focus,
   min-width: 40px;
   padding: 0;
   color: var(--text);
+}
+
+.map-controls button[aria-pressed="true"] {
+  border-color: rgba(85, 214, 190, 0.66);
+  background: rgba(85, 214, 190, 0.14);
+  color: var(--accent);
 }
 
 #zoomLevel {
@@ -489,7 +546,7 @@ select:focus,
 .map-stage {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) clamp(420px, 34vw, 620px);
+  grid-template-columns: minmax(0, 1fr) clamp(380px, 31vw, 520px);
   align-items: stretch;
   min-height: 0;
 }
@@ -784,6 +841,35 @@ select:focus,
   background: rgba(10, 15, 22, 0.9);
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
   backdrop-filter: blur(18px);
+}
+
+.map-panel.inspector-collapsed .map-stage {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.map-panel.inspector-collapsed .map-inspector {
+  display: none;
+}
+
+body.map-expanded-open {
+  overflow: hidden;
+}
+
+.map-panel.map-expanded {
+  position: fixed;
+  z-index: 90;
+  inset: 12px;
+  width: auto;
+  height: auto;
+  min-height: 0;
+  border-color: rgba(85, 214, 190, 0.42);
+  background: #0b1017;
+  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.72);
+}
+
+.map-panel.map-expanded .map-stage,
+.map-panel.map-expanded .phylo-viewport {
+  min-height: 0;
 }
 
 .inspector-header {
@@ -2215,7 +2301,7 @@ body.lightbox-open {
   }
 
   .map-stage {
-    grid-template-columns: minmax(0, 1fr) clamp(520px, 34vw, 680px);
+    grid-template-columns: minmax(0, 1fr) clamp(420px, 28vw, 600px);
   }
 
   .gallery-image {
@@ -2279,6 +2365,17 @@ body.lightbox-open {
 
   .map-stage {
     grid-template-columns: 1fr;
+  }
+
+  .map-panel.map-expanded {
+    inset: 0;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .map-panel.map-expanded .map-stage,
+  .map-panel.map-expanded .phylo-viewport {
+    min-height: 0;
   }
 
   .map-inspector {
@@ -2381,10 +2478,18 @@ body.lightbox-open {
 
   .map-controls {
     width: 100%;
+    gap: 6px;
+  }
+
+  .map-controls button {
+    width: 36px;
+    min-width: 36px;
+    min-height: 36px;
   }
 
   #zoomLevel {
     flex: 1;
+    min-width: 42px;
   }
 
   .map-stage,
