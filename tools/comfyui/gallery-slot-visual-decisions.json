@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-30T04:19:10.773Z",
-  "reviewBatch": "2026-07-30-richness-six-slot-batch-55",
-  "reviewMethod": "Original-size inspection of eleven promoted built-in imagegen outputs, five rejected generation drafts, and nine existing expansion candidates; exact species identity, limb count, pelvis-origin tail continuity, palette consistency, habitat fit, subject separation, composition balance, and text or watermark artifact gates.",
-  "targetSlots": 618,
+  "generatedAt": "2026-07-30T07:00:25.777Z",
+  "reviewBatch": "2026-07-30-richness-six-slot-batch-56",
+  "reviewMethod": "Original-size inspection of seventeen promoted built-in imagegen outputs, one selected existing candidate, three rejected generation drafts, and thirteen superseded, anatomically unstable, or role-redundant project assets; exact species identity, appendage count, pelvis-origin tail continuity, palette consistency, habitat fit, subject separation, composition balance, and text or watermark artifact gates.",
+  "targetSlots": 633,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -2253,6 +2253,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/plesiosaurus-dolichodeirus-four-paddle-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "The overhead anatomy view cleanly exposes exactly two forepaddles and two hindpaddles, one small head on a single continuous long neck, one compact torso, and one short unbranched tail.",
+        "reviewMethod": "Original-size full-frame inspection with independent neck, four-paddle, and single-tail count gates",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-56",
+        "reviewedAt": "2026-07-30T06:45:40.970Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/plesiosaurus-dolichodeirus-storm-shale-habitat-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "A storm-lit shale-water setting adds environmental contrast while the solitary animal retains exactly four separately attached paddles, one uninterrupted neck, and one complete short tail; weather and water depth remain reconstruction hypotheses.",
+        "reviewMethod": "Original-size appendage, crop, habitat, and artifact inspection with no same-frame species claim",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-56",
+        "reviewedAt": "2026-07-30T06:45:40.970Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/plesiosaurus-dolichodeirus-coordinated-stroke-ecology-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "The oblique stroke frame preserves an X-like set of exactly four paddle surfaces, a single long neck, and one unbranched tail without overlap; the coordinated stroke phase is an illustrative locomotion hypothesis, not observed behavior.",
+        "reviewMethod": "Original-size four-paddle attachment, neck, tail, motion, and artifact inspection",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-56",
+        "reviewedAt": "2026-07-30T06:45:40.970Z"
       }
     },
     "elasmosaurus-platyurus": {
@@ -2394,6 +2421,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/shonisaurus-popularis-nevada-offshore-cruise-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "The complete giant shastasaurid silhouette preserves a long narrow toothless-looking rostrum, deep torso, exactly four paddles, and one continuous tail without a dolphin-like dorsal fin; soft-tissue outline remains comparative reconstruction.",
+        "reviewMethod": "Original-size rostrum, four-paddle, dorsal-profile, tail-continuity, and crop inspection",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-56",
+        "reviewedAt": "2026-07-30T06:45:40.970Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/shonisaurus-popularis-surface-silhouette-depth-ecology-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "A near-surface depth composition adds scale while keeping the primary animal complete with exactly four paddles and one tail; distant fish remain subordinate silhouettes and no specific prey or feeding event is asserted.",
+        "reviewMethod": "Original-size primary appendage count, surface separation, secondary-subject hierarchy, and artifact inspection",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-56",
+        "reviewedAt": "2026-07-30T06:45:40.970Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/shonisaurus-popularis-separated-size-classes-ecology-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "A foreground adult and smaller distant individual are spatially separated; the adult independently passes four paddles and one tail, while the size contrast is presented as an illustrative size-class reconstruction without a parental-care claim.",
+        "reviewMethod": "Original-size adult anatomy, separated-subject, scale-comparison, and artifact inspection",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-56",
+        "reviewedAt": "2026-07-30T06:45:40.970Z"
       }
     },
     "mosasaurus-hoffmannii": {
@@ -2764,30 +2818,57 @@
     "scutellosaurus-lawleri": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/scutellosaurus-lawleri-armored-biped-imagegen-v1.png",
+        "source": "assets/dinosaurs/scutellosaurus-lawleri-slender-biped-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The replacement representative is a small lightly built primary biped with exactly two forelimbs, two hind limbs, one pelvis-origin tail, a narrow head, long hind legs, and only tiny sparse osteoderms instead of a continuous armor shell.",
+        "reviewMethod": "Original-size full-frame inspection against the slender-biped, four-limb, single-tail, and sparse-small-osteoderm gates",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-56",
+        "reviewedAt": "2026-07-30T06:45:40.970Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/scutellosaurus-lawleri-rust-olive-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/scutellosaurus-lawleri-petrol-copper-bluehour-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing petrol, muted teal, and copper phenotype adds controlled variation while preserving exactly four limbs, one tail, a lightweight bipedal silhouette, and sparse tiny osteoderms with no repeated tail rings.",
+        "reviewMethod": "Original-size anatomy, appendage count, palette separation, no-tail-ring, and artifact inspection",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-56",
+        "reviewedAt": "2026-07-30T06:45:40.970Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/scutellosaurus-lawleri-kayenta-forage-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/scutellosaurus-lawleri-seasonal-channel-forage-ecology-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The solitary seasonal-channel frame keeps a complete lightly built biped with exactly two arms, two legs, and one tail visible against a restrained Kayenta setting; foraging posture and vegetation remain reconstruction hypotheses.",
+        "reviewMethod": "Original-size full-body, four-limb, tail, habitat, and artifact inspection",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-56",
+        "reviewedAt": "2026-07-30T06:45:40.970Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/scutellosaurus-lawleri-small-osteoderm-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "An elevated rear three-quarter view independently resolves the slender torso, long hind limbs, two small forelimbs, one continuous tail, and scattered low osteoderms without ankylosaur-like plates or a shell.",
+        "reviewMethod": "Original-size rear-oblique silhouette, limb attachment, tail continuity, and osteoderm-scale inspection",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-56",
+        "reviewedAt": "2026-07-30T06:45:40.970Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/scutellosaurus-lawleri-terrain-separated-theropod-ecology-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "The foreground Scutellosaurus remains complete and countable while terrain separates a distant generalized theropod silhouette; no Dilophosaurus identity, direct pursuit, contact, or observed predator-prey event is claimed.",
+        "reviewMethod": "Original-size primary anatomy, subject-separation, secondary-silhouette, hypothesis-boundary, and artifact inspection",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-56",
+        "reviewedAt": "2026-07-30T06:45:40.970Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/scutellosaurus-lawleri-solitary-scrub-turn-ecology-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "The solitary scrub-turn composition provides a non-contact alert or directional-change hypothesis while retaining exactly two arms, two long hind limbs, one continuous tail, and tiny scattered osteoderms.",
+        "reviewMethod": "Original-size turning-pose anatomy, appendage count, tail, sparse-armor, and artifact inspection",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-56",
+        "reviewedAt": "2026-07-30T06:45:40.970Z"
       }
     },
     "scelidosaurus-harrisonii": {
@@ -3779,6 +3860,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/microraptor-gui-hindwing-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "The anatomy view independently shows two feathered forewing surfaces, two long feathered hindwing surfaces rooted on the legs, both feet with enlarged second-toe sickle claws, and one continuous tail ending in a single fan.",
+        "reviewMethod": "Original-size four-limb-wing, two-foot, sickle-claw, single-tail, and tail-fan inspection",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-56",
+        "reviewedAt": "2026-07-30T06:45:40.970Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/microraptor-gui-trunk-separated-fauna-ecology-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "A tree trunk and depth separate the complete foreground Microraptor from one distant generalized animal silhouette; no named taxon, contact, predation, or observed same-frame event is asserted.",
+        "reviewMethod": "Original-size primary four-wing and tail anatomy plus spatial-separation and hypothesis-boundary inspection",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-56",
+        "reviewedAt": "2026-07-30T06:45:40.970Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/microraptor-gui-controlled-glide-ecology-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "The airborne frame preserves two forewing and two hindwing surfaces, both feet with readable sickle claws, one uninterrupted tail, and one tail fan; glide posture is presented as a locomotor reconstruction rather than direct observation.",
+        "reviewMethod": "Original-size airborne four-wing, foot-claw, tail, silhouette, and artifact inspection",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-56",
+        "reviewedAt": "2026-07-30T06:45:40.970Z"
       }
     },
     "sinornithosaurus-millenii": {
@@ -4208,6 +4316,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/torosaurus-latus-skin-covered-frill-rear-anatomy-imagegen-v3.png",
+        "role": "identity-anatomy",
+        "reason": "The rear-oblique view makes the broad elongate frill and its continuously skin-covered surface readable without literal open holes, while retaining two brow horns, one nasal horn, exactly four feet, and one tail.",
+        "reviewMethod": "Original-size rear-frill, continuous-skin, three-horn, four-foot, and single-tail inspection",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-56",
+        "reviewedAt": "2026-07-30T06:45:40.970Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/torosaurus-latus-channel-separated-fauna-ecology-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "The foreground Torosaurus independently passes the solid skin-covered frill, horn, four-limb, and single-tail gates while a channel separates only generalized distant herbivore silhouettes; no named species or direct interaction is claimed.",
+        "reviewMethod": "Original-size primary anatomy, terrain separation, secondary-silhouette, and hypothesis-boundary inspection",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-56",
+        "reviewedAt": "2026-07-30T06:45:40.970Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/torosaurus-latus-solitary-rain-mud-turn-ecology-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "The solitary rain-and-mud turning pose adds movement and weather variation while preserving a solid skin-covered frill, exactly four legs, one tail, and a non-contact behavior hypothesis.",
+        "reviewMethod": "Original-size frill-surface, four-leg, tail, turning-pose, weather, and artifact inspection",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-56",
+        "reviewedAt": "2026-07-30T06:45:40.970Z"
       }
     },
     "styracosaurus-albertensis": {

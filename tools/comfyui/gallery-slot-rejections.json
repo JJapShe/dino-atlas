@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-30-richness-six-slot-batch-55",
+  "reviewBatch": "2026-07-30-richness-six-slot-batch-56",
   "rejectedSources": {
     "assets/dinosaurs/placodus-gigas-shellbed-feeding-ecology-imagegen-v1.png": {
       "reason": "The primary body reads as a generic monitor lizard with weak Placodus skull, trunk and marine-reptile identity, so the shell-bed feeding scene cannot pass the anatomy gate."
@@ -1256,12 +1256,51 @@
     "assets/dinosaurs/diplodocus-carnegiei-allosaurus-juvenile-shield-defense-ecology-imagegen-v1.png": {
       "reason": "The short-necked generic sauropod body and overlapping defensive staging do not preserve the elongated Diplodocus profile or reliable limb and tail attachments."
     },
+    "assets/dinosaurs/torosaurus-latus-hell-creek-browse-ecology-imagegen-v3.png": {
+      "reason": "The animal is broadly readable, but the same lateral browse pose, palette and floodplain framing repeat the existing three Torosaurus views without adding the diagnostic rear-frill or under-skin fenestra information needed for a balanced six-slot set."
+    },
+    "assets/dinosaurs/sphaerotholus-buchholtzae-rain-arroyo-pair-ecology-imagegen-v4.png": {
+      "reason": "The pair is readable, but it duplicates the existing two-animal water-margin habitat role and adds no independent anatomy, interaction or growth-stage evidence."
+    },
+    "assets/dinosaurs/stygimoloch-spinifer-misty-backwater-pair-ecology-imagegen-v2.png": {
+      "reason": "The misty pair repeats the existing paired woodland habitat composition, while the large dome and restrained posterior spikes add weak diagnostic value for a separate interaction slot."
+    },
+    "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-escape-ecology-imagegen-v1.png": {
+      "reason": "The primary animal has a broad heavy trunk and oversized pebble osteoderms, reading as a small ankylosaur-like quadruped instead of a lightly built primarily bipedal Scutellosaurus."
+    },
+    "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-armor-turn-defense-ecology-imagegen-v1.png": {
+      "reason": "The primary animal is a squat armored quadruped with a continuous shell-like osteoderm field, which fails the slender bipedal body plan and tiny scattered osteoderm gate."
+    },
     "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-dust-branch-armor-dodge-ecology-imagegen-v1.png": {
       "reason": "The primary animal is rendered as a squat heavily armored ankylosaur-like quadruped instead of a lightly built Scutellosaurus with sparse small osteoderms."
     },
     "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-scrub-dodge-defense-ecology-imagegen-v1.png": {
       "reason": "Excessive armor, broad low body, and quadrupedal drift erase the small lightly built Scutellosaurus identity, so the action scene cannot be promoted."
+    },
+    "assets/dinosaurs/scutellosaurus-lawleri-armored-biped-imagegen-v1.png": {
+      "reason": "The former representative has a heavy trunk and oversized regularly spaced pebble osteoderms, so it does not preserve the lightly built primarily bipedal body plan or tiny scattered armor of Scutellosaurus."
+    },
+    "assets/dinosaurs/scutellosaurus-lawleri-rust-olive-pattern-imagegen-v1.png": {
+      "reason": "The former pattern image combines a heavy torso, oversized pebble osteoderms, and repeated tail rings, all of which overpower the slender body plan and sparse small-osteoderm identity."
+    },
+    "assets/dinosaurs/scutellosaurus-lawleri-kayenta-forage-ecology-imagegen-v1.png": {
+      "reason": "The scene depicts three squat quadrupedal animals with continuous shell-like armor instead of lightly built primarily bipedal Scutellosaurus individuals with tiny scattered osteoderms."
+    },
+    "assets/dinosaurs/scutellosaurus-lawleri-slotwash-teal-osteoderm-pattern-ecology-imagegen-v1.png": {
+      "reason": "Large bead-like osteoderms, black-and-white tail rings, and a heavy body make this read as a stylized armored quadruped rather than a conservative Scutellosaurus reconstruction."
+    },
+    "assets/dinosaurs/plesiosaurus-dolichodeirus-splitwater-petrol-rosette-ecology-imagegen-v1.png": {
+      "reason": "The animal is structurally readable, but the split-water surfacing composition duplicates the selected storm-shale environmental role and adds no independent anatomy or interaction evidence to the six-image set."
+    },
+    "assets/dinosaurs/plesiosaurus-dolichodeirus-splitwater-petrol-jade-ecology-imagegen-v1.png": {
+      "reason": "Only three paddle surfaces are independently readable in the split-water view, and the elongated lizard-like head plus repeated surfacing composition do not clear the four-paddle identity or diversity gates."
+    },
+    "assets/dinosaurs/plesiosaurus-dolichodeirus-mauve-rosette-bank-ecology-imagegen-v1.png": {
+      "reason": "At least five paddle-like surfaces are readable around the torso, so the image fails the strict two-forepaddle, two-hindpaddle anatomy gate despite a complete neck and tail."
+    },
+    "assets/dinosaurs/microraptor-gui-canopy-launch-indigo-emerald-ecology-imagegen-v1.png": {
+      "reason": "The launch frame repeats the selected airborne role, while the two hindwing surfaces do not attach cleanly to the two legs and instead read as extra torso- or tail-rooted feather fans."
     }
   },
-  "generatedAt": "2026-07-30T04:19:10.773Z"
+  "generatedAt": "2026-07-30T07:00:25.777Z"
 }

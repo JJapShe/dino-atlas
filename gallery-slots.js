@@ -2009,6 +2009,30 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "marine",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/plesiosaurus-dolichodeirus-four-paddle-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "marine",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/plesiosaurus-dolichodeirus-storm-shale-habitat-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "marine",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/plesiosaurus-dolichodeirus-coordinated-stroke-ecology-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "marine",
+      "expectedKind": "anatomy review"
     }
   ],
   "elasmosaurus-platyurus": [
@@ -2132,6 +2156,30 @@ window.gallerySlotAssignments = {
       "source": "assets/dinosaurs/shonisaurus-popularis-triassic-cephalopod-cruise-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "marine",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/shonisaurus-popularis-nevada-offshore-cruise-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "marine",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/shonisaurus-popularis-surface-silhouette-depth-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "marine",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/shonisaurus-popularis-separated-size-classes-ecology-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "marine",
       "expectedKind": "anatomy review"
@@ -2465,7 +2513,7 @@ window.gallerySlotAssignments = {
   ],
   "scutellosaurus-lawleri": [
     {
-      "source": "assets/dinosaurs/scutellosaurus-lawleri-armored-biped-imagegen-v1.png",
+      "source": "assets/dinosaurs/scutellosaurus-lawleri-slender-biped-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
@@ -2473,7 +2521,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/scutellosaurus-lawleri-rust-olive-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/scutellosaurus-lawleri-petrol-copper-bluehour-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -2481,9 +2529,33 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/scutellosaurus-lawleri-kayenta-forage-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/scutellosaurus-lawleri-seasonal-channel-forage-ecology-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/scutellosaurus-lawleri-small-osteoderm-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/scutellosaurus-lawleri-terrain-separated-theropod-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/scutellosaurus-lawleri-solitary-scrub-turn-ecology-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
@@ -3373,6 +3445,30 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/microraptor-gui-hindwing-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/microraptor-gui-trunk-separated-fauna-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/microraptor-gui-controlled-glide-ecology-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
     }
   ],
   "sinornithosaurus-millenii": [
@@ -3754,6 +3850,30 @@ window.gallerySlotAssignments = {
       "source": "assets/dinosaurs/torosaurus-latus-skin-covered-frill-floodplain-ecology-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/torosaurus-latus-skin-covered-frill-rear-anatomy-imagegen-v3.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/torosaurus-latus-channel-separated-fauna-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/torosaurus-latus-solitary-rain-mud-turn-ecology-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
