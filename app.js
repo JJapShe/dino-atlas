@@ -3537,16 +3537,16 @@ const eras = [
 ];
 
 const phyloLayoutMetrics = Object.freeze({
-  taxonWidth: 176,
-  groupWidth: 164,
-  nodeHeight: 82,
-  taxonColumnGap: 24,
-  taxonRowGap: 18,
+  taxonWidth: 184,
+  groupWidth: 174,
+  nodeHeight: 86,
+  taxonColumnGap: 30,
+  taxonRowGap: 24,
   treeStartX: 40,
-  groupColumnGap: 32,
-  groupRailGap: 152,
-  canvasPadding: 64,
-  groupVerticalGap: 24,
+  groupColumnGap: 38,
+  groupRailGap: 196,
+  canvasPadding: 76,
+  groupVerticalGap: 30,
 });
 
 const canvasSize = {
@@ -20821,10 +20821,10 @@ function applyMapTransform({ updateZoomLabel = true } = {}) {
   if (!canvas) return;
   const renderedTaxonWidth = phyloLayoutMetrics.taxonWidth * state.map.scale;
   canvas.style.transform = `translate3d(${state.map.x}px, ${state.map.y}px, 0) scale(${state.map.scale})`;
-  canvas.classList.toggle("is-overview", renderedTaxonWidth < 108);
+  canvas.classList.toggle("is-overview", renderedTaxonWidth < 112);
   canvas.classList.toggle(
     "is-compact",
-    renderedTaxonWidth >= 108 && renderedTaxonWidth < 144,
+    renderedTaxonWidth >= 112 && renderedTaxonWidth < 150,
   );
   if (updateZoomLabel) $("#zoomLevel").textContent = `${Math.round(state.map.scale * 100)}%`;
   updateMapNavigatorViewport();
@@ -20917,13 +20917,13 @@ function getReadableMapScale() {
   if (!viewport) return 0.86;
   const targetCardWidth = state.map.expanded
     ? state.map.inspectorCollapsed
-      ? 168
-      : 156
+      ? 196
+      : 188
     : viewport.clientWidth < 520
-      ? 140
+      ? 156
       : state.map.inspectorCollapsed
-        ? 162
-        : 150;
+        ? 180
+        : 176;
   return clampScale(targetCardWidth / phyloLayoutMetrics.taxonWidth);
 }
 
@@ -20931,12 +20931,12 @@ function getAllMapBrowseScale() {
   const viewport = $("#mapViewport");
   if (!viewport) return 0.82;
   const targetCardWidth = state.map.expanded
-    ? 162
+    ? 184
     : viewport.clientWidth < 520
-      ? 132
+      ? 148
       : state.map.inspectorCollapsed
-        ? 156
-        : 146;
+        ? 172
+        : 168;
   return clampScale(targetCardWidth / phyloLayoutMetrics.taxonWidth);
 }
 
@@ -21075,24 +21075,23 @@ function refitCurrentMapFrame({ minimumScale } = {}) {
   fitMapScope(state.map.scope, { minimumScale, preserveMode: true });
 }
 
+function refreshMapUiFrame() {
+  renderPhyloMap();
+  refitCurrentMapFrame();
+}
+
 function setMapInspectorCollapsed(collapsed, { userInitiated = false } = {}) {
   state.map.inspectorCollapsed = Boolean(collapsed);
   if (userInitiated) state.map.inspectorUserSet = true;
   applyMapUiState();
   renderMapScopeControls();
-  requestAnimationFrame(() => {
-    renderPhyloMap();
-    refitCurrentMapFrame();
-  });
+  refreshMapUiFrame();
 }
 
 function setAtlasSidebarExpanded(expanded) {
   state.map.sidebarExpanded = Boolean(expanded);
   applyMapUiState();
-  requestAnimationFrame(() => {
-    renderPhyloMap();
-    refitCurrentMapFrame();
-  });
+  refreshMapUiFrame();
 }
 
 function syncResponsiveMapInspector() {
@@ -21122,10 +21121,7 @@ function setMapExpanded(expanded) {
   if (!nextExpanded) syncResponsiveMapInspector();
   applyMapUiState();
   renderMapScopeControls();
-  requestAnimationFrame(() => {
-    renderPhyloMap();
-    refitCurrentMapFrame();
-  });
+  refreshMapUiFrame();
 }
 
 function fitMapToViewport() {
@@ -25136,8 +25132,21 @@ function bindLightboxEvents() {
   });
 }
 
+function fitInitialAtlasFrame(attempt = 0) {
+  requestAnimationFrame(() => {
+    if (state.view !== "atlas" || state.map.fitted) return;
+    const viewport = $("#mapViewport");
+    if ((!viewport || viewport.clientWidth <= 0 || viewport.clientHeight <= 0) && attempt < 4) {
+      fitInitialAtlasFrame(attempt + 1);
+      return;
+    }
+    fitMapScope(getSelectedDino().era);
+  });
+}
+
 function setView(view) {
   if (view !== "atlas" && state.map.expanded) setMapExpanded(false);
+  if (view !== "atlas") state.map.sidebarExpanded = false;
   if (view === "review") {
     const topDino = getTopReviewDino(state.reviewQueueKindFilter);
     if (topDino) state.reviewSelectedId = topDino.id;
@@ -25174,7 +25183,12 @@ function setView(view) {
   applyMapUiState();
   renderAll();
   if (view === "atlas" && !state.map.fitted) {
-    requestAnimationFrame(() => fitMapScope(getSelectedDino().era));
+    const viewport = $("#mapViewport");
+    if (viewport?.clientWidth > 0 && viewport.clientHeight > 0) {
+      fitMapScope(getSelectedDino().era);
+    } else {
+      fitInitialAtlasFrame();
+    }
   }
 }
 
@@ -25275,6 +25289,8 @@ function bindMapEvents() {
   $("#toggleAtlasSidebar").addEventListener("click", () =>
     setAtlasSidebarExpanded(!state.map.sidebarExpanded),
   );
+  $("#closeAtlasSidebar").addEventListener("click", () => setAtlasSidebarExpanded(false));
+  $("#atlasSidebarScrim").addEventListener("click", () => setAtlasSidebarExpanded(false));
   $("#toggleMapExpand").addEventListener("click", () => setMapExpanded(!state.map.expanded));
 
   const moveFromNavigator = (event) => {
@@ -25403,6 +25419,10 @@ function bindMapEvents() {
   });
 
   document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && state.map.sidebarExpanded && !state.lightboxItems.length) {
+      setAtlasSidebarExpanded(false);
+      return;
+    }
     if (event.key === "Escape" && state.map.expanded && !state.lightboxItems.length) {
       setMapExpanded(false);
     }

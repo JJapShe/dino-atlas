@@ -4535,6 +4535,12 @@
   - Atlas catalog and map galleries opened the representative at 1/6 and advanced to the pattern image at 2/6. Internal review groups remained scoped at candidate-only 1, representative 1, reference 4, and all 6; candidate and representative lightboxes stayed at 1/1, reference navigation moved from 1/4 to 2/4, and all navigation moved from 1/6 to 2/6.
   - Expandable-map regression check at 1280x720 retained 147 visible nodes and 132 taxa with zero node overlap, zero era-label overlap, zero page overflow, and no viewport/inspector or navigator/inspector intersection. Catalog cards and both browser tabs had no overflow, warning, or error.
 
+- `Scalable atlas workspace pass 2026-07-31`
+  - Increased the logical taxon card to 184x86 and group card to 174x86, widened taxon gaps, and reserved a 196 px rail between the deepest clade card and the first taxon column. New taxa now grow the dynamic canvas instead of forcing existing cards below the readable-size floor.
+  - Kept the atlas in a compact 88 px navigation rail through desktop and intermediate widths. At 720 px and below it becomes a 58 px top rail, while search and filters open in a dismissible drawer instead of pushing the map several hundred pixels down the page.
+  - Normal browsing renders cards at 180 px on desktop/intermediate layouts and 156 px on portrait mobile. Full-screen mode raises the target to 196 px, and the landscape full-screen layout uses a 56 px toolbar with a 334 px map viewport at 844x390.
+  - Browser validation covered 1440x900, 1024x768, 390x844, 844x390, and the narrow 667x375 landscape edge. The current 147 visible nodes retained zero node overlap; the logical clade-to-taxon rail gap was 196 px; page overflow stayed zero; filter drawer open/close, full-screen, zoom, and drag-pan remained functional. Opening dinosaur information now keeps a 386 px-tall map viewport at 1024x768, a 377 px-tall map viewport at 390x844, and a non-overlapping 301x256 map beside the inspector at 667x375.
+
 For each added taxon, produce:
 
 - `assets/dinosaurs/{id}-...-imagegen-v1.png` files.

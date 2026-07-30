@@ -5,17 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dino Atlas MVP</title>
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="./styles.css?v=20260731-expandable-atlas-shell-v22" />
+    <link rel="stylesheet" href="./styles.css?v=20260731-scalable-atlas-workspace-v29" />
   </head>
   <body data-active-view="atlas">
     <div class="app-shell">
       <aside class="sidebar" id="primarySidebar" aria-label="Primary">
         <div class="brand">
           <div class="brand-mark">DA</div>
-          <div>
+          <div class="brand-copy">
             <p class="eyebrow">MVP</p>
             <h1>Dino Atlas</h1>
           </div>
+          <button
+            class="icon-button sidebar-drawer-close"
+            id="closeAtlasSidebar"
+            type="button"
+            title="탐색 패널 닫기"
+            aria-label="탐색 패널 닫기"
+          >
+            <span class="button-icon icon-close" aria-hidden="true"></span>
+          </button>
         </div>
 
         <nav class="nav-tabs" aria-label="Views">
@@ -63,6 +72,13 @@
           </div>
         </section>
       </aside>
+      <button
+        class="atlas-sidebar-scrim"
+        id="atlasSidebarScrim"
+        type="button"
+        aria-label="탐색 패널 닫기"
+        tabindex="-1"
+      ></button>
 
       <main class="main">
         <header class="topbar">
@@ -230,6 +246,6 @@
     </div>
 
 <script src="./gallery-slots.js?v=20260731-richness-batch66-khaan-v2"></script>
-    <script src="./app.js?v=20260731-richness-batch66-khaan-v2"></script>
+    <script src="./app.js?v=20260731-scalable-atlas-workspace-v29"></script>
   </body>
 </html>
