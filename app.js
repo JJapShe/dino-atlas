@@ -4154,14 +4154,17 @@ const state = {
   knowledgeLevel: "all",
   sort: "updated",
   map: {
-    scale: 0.62,
+    scale: 0.72,
     x: 24,
     y: 16,
     fitted: false,
+    scope: "cretaceous",
+    frameMode: "scope",
     expanded: false,
     inspectorCollapsed: false,
     inspectorBeforeExpand: false,
     inspectorAutoCollapsed: false,
+    inspectorUserSet: false,
     dragging: false,
     transformFrame: 0,
     startX: 0,
@@ -18545,9 +18548,33 @@ function resolvePhyloNodeCollisions(nodes, filteredIds) {
 }
 
 const phyloEraPackLayouts = {
-  triassic: { columns: 7, baseX: 820, topPad: 78, bottomPad: 18, rowGap: 8 },
-  jurassic: { columns: 8, baseX: 520, topPad: 46, bottomPad: 18, rowGap: 8 },
-  cretaceous: { columns: 10, baseX: 500, topPad: 42, bottomPad: 18, rowGap: 8 },
+  triassic: {
+    columns: 7,
+    maxColumns: 7,
+    targetAspect: 2,
+    baseX: 820,
+    topPad: 78,
+    bottomPad: 18,
+    rowGap: 8,
+  },
+  jurassic: {
+    columns: 8,
+    maxColumns: 24,
+    targetAspect: 2,
+    baseX: 520,
+    topPad: 46,
+    bottomPad: 18,
+    rowGap: 8,
+  },
+  cretaceous: {
+    columns: 10,
+    maxColumns: 32,
+    targetAspect: 2,
+    baseX: 500,
+    topPad: 42,
+    bottomPad: 18,
+    rowGap: 8,
+  },
 };
 
 const phyloEraCladeOrder = [
@@ -18610,15 +18637,26 @@ function interleavePhyloEraTaxa(taxa) {
 }
 
 function getEraPackColumns(taxaCount, layout) {
-  return Math.max(1, Math.min(Math.max(1, layout.columns), Math.max(1, taxaCount)));
+  const minimumColumns = Math.max(1, layout.columns);
+  const maximumColumns = Math.max(minimumColumns, layout.maxColumns || taxaCount);
+  const nodeWidth = getNodeWidth({ type: "taxon" }) + 12;
+  const nodeHeight = getNodeHeight() + layout.rowGap;
+  const adaptiveColumns = Math.ceil(
+    Math.sqrt(Math.max(1, taxaCount) * (layout.targetAspect || 2) * (nodeHeight / nodeWidth)),
+  );
+  return Math.max(
+    1,
+    Math.min(Math.max(minimumColumns, adaptiveColumns), maximumColumns, Math.max(1, taxaCount)),
+  );
 }
 
-function buildDynamicPhyloEras(nodes) {
+function buildDynamicPhyloEras(nodes, filteredIds) {
   const nodeHeight = getNodeHeight();
   const taxaCountByEra = new Map();
 
   nodes.forEach((node) => {
     if (node.type !== "taxon") return;
+    if (filteredIds && !filteredIds.has(node.speciesId)) return;
     const eraId = getDinoById(node.speciesId)?.era;
     if (!eraId) return;
     taxaCountByEra.set(eraId, (taxaCountByEra.get(eraId) || 0) + 1);
@@ -18665,7 +18703,7 @@ function shiftPhyloGroupsIntoDynamicEras(nodes, eraBands) {
   return nodes;
 }
 
-function packTaxaIntoEraBands(nodes, eraBands) {
+function packTaxaIntoEraBands(nodes, eraBands, filteredIds) {
   const nodeWidth = getNodeWidth({ type: "taxon" });
   const nodeHeight = getNodeHeight();
   const columnGap = 12;
@@ -18673,6 +18711,7 @@ function packTaxaIntoEraBands(nodes, eraBands) {
 
   nodes.forEach((node) => {
     if (node.type !== "taxon") return;
+    if (filteredIds && !filteredIds.has(node.speciesId)) return;
     const eraId = getDinoById(node.speciesId)?.era;
     if (!eraId || !getPhyloEraBand(eraId, eraBands)) return;
     if (!taxaByEra.has(eraId)) taxaByEra.set(eraId, []);
@@ -18698,14 +18737,18 @@ function packTaxaIntoEraBands(nodes, eraBands) {
 
 function buildPhyloLayout() {
   const { nodes, edges } = getAugmentedPhyloData();
-  const eraBands = buildDynamicPhyloEras(nodes);
+  const filteredIds = getFilteredIdSet();
+  const eraBands = buildDynamicPhyloEras(nodes, filteredIds);
   const shiftedNodes = shiftPhyloGroupsIntoDynamicEras(nodes, eraBands);
-  const laidOutNodes = packTaxaIntoEraBands(shiftedNodes, eraBands);
-  const maxX = laidOutNodes.reduce(
+  const laidOutNodes = packTaxaIntoEraBands(shiftedNodes, eraBands, filteredIds);
+  const visibleNodes = laidOutNodes.filter(
+    (node) => node.type !== "taxon" || filteredIds.has(node.speciesId),
+  );
+  const maxX = visibleNodes.reduce(
     (max, node) => Math.max(max, node.x + getNodeWidth(node) + 48),
     0,
   );
-  const maxY = laidOutNodes.reduce(
+  const maxY = visibleNodes.reduce(
     (max, node) => Math.max(max, node.y + getNodeHeight() + 24),
     0,
   );
@@ -18814,7 +18857,7 @@ function renderMapNodes() {
         ? `type="button" data-id="${node.speciesId}"`
         : `type="button" data-phylo-focus="${node.id}" aria-label="${node.label} 계통 강조"`;
       const renderedAttrs = isTaxon
-        ? `type="button" data-id="${node.speciesId}"`
+        ? `type="button" data-id="${node.speciesId}" aria-label="${dino.koreanName} · ${dino.period}" title="${dino.koreanName} · ${dino.period}"`
         : `type="button" data-phylo-focus="${node.id}" aria-label="${node.label} clade focus"`;
       return `
         <${tag} class="${classes}" ${renderedAttrs} style="${paletteStyle}left: ${node.x}px; top: ${node.y}px;">
@@ -18876,6 +18919,7 @@ function applyMapTransform({ updateZoomLabel = true } = {}) {
   const canvas = $("#phyloCanvas");
   if (!canvas) return;
   canvas.style.transform = `translate3d(${state.map.x}px, ${state.map.y}px, 0) scale(${state.map.scale})`;
+  canvas.classList.toggle("is-overview", state.map.scale < 0.46);
   if (updateZoomLabel) $("#zoomLevel").textContent = `${Math.round(state.map.scale * 100)}%`;
 }
 
@@ -18905,48 +18949,181 @@ function applyMapUiState() {
   panel.classList.toggle("map-expanded", state.map.expanded);
   document.body.classList.toggle("map-expanded-open", state.map.expanded);
 
+  const selectedName = getSelectedDino()?.koreanName || "선택 공룡";
+  const inspectorAction = state.map.inspectorCollapsed ? "정보 열기" : "정보 접기";
   inspectorButton.setAttribute("aria-pressed", String(state.map.inspectorCollapsed));
-  inspectorButton.setAttribute(
-    "aria-label",
-    state.map.inspectorCollapsed ? "정보 패널 열기" : "정보 패널 접기",
-  );
-  inspectorButton.title = state.map.inspectorCollapsed ? "정보 패널 열기" : "정보 패널 접기";
+  inspectorButton.setAttribute("aria-label", `${selectedName} ${inspectorAction}`);
+  inspectorButton.title = `${selectedName} ${inspectorAction}`;
   expandButton.setAttribute("aria-pressed", String(state.map.expanded));
   expandButton.setAttribute("aria-label", state.map.expanded ? "지도 확장 닫기" : "지도 확장");
   expandButton.title = state.map.expanded ? "지도 확장 닫기" : "지도 확장";
 }
 
 function clampScale(scale) {
-  return Math.max(0.24, Math.min(1.8, scale));
+  return Math.max(0.12, Math.min(1.8, scale));
 }
 
-function focusSelectedMapNode({ minimumScale = 0.58 } = {}) {
+function renderMapScopeControls() {
+  const filtered = getFilteredDinosaurs();
+  const counts = filtered.reduce(
+    (result, dino) => {
+      result.all += 1;
+      if (Object.prototype.hasOwnProperty.call(result, dino.era)) result[dino.era] += 1;
+      return result;
+    },
+    { all: 0, triassic: 0, jurassic: 0, cretaceous: 0 },
+  );
+
+  $$("[data-map-scope]").forEach((button) => {
+    const scope = button.dataset.mapScope;
+    const active = state.map.scope === scope;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+    const count = button.querySelector(".map-era-count");
+    if (count) count.textContent = counts[scope] ?? 0;
+  });
+
+  const selected = getSelectedDino();
+  const inspectorButton = $("#toggleMapInspector");
+  if (selected && inspectorButton) {
+    const action = state.map.inspectorCollapsed ? "정보 열기" : "정보 접기";
+    inspectorButton.title = `${selected.koreanName} ${action}`;
+    inspectorButton.setAttribute("aria-label", `${selected.koreanName} ${action}`);
+  }
+}
+
+function getReadableMapScale() {
+  const viewport = $("#mapViewport");
+  if (!viewport) return 0.68;
+  if (state.map.expanded) return state.map.inspectorCollapsed ? 0.82 : 0.72;
+  if (viewport.clientWidth < 520) return 0.72;
+  return state.map.inspectorCollapsed ? 0.76 : 0.66;
+}
+
+function getMapScopeBounds(scope) {
+  if (scope === "all") {
+    return {
+      x: 0,
+      y: 0,
+      width: currentPhyloLayout.width || canvasSize.width,
+      height: currentPhyloLayout.height || canvasSize.height,
+    };
+  }
+
+  const era = getPhyloEraBand(scope, currentPhyloLayout.eras || eras);
+  const filteredIds = getFilteredIdSet();
+  const scopedNodes = currentPhyloLayout.nodes.filter(
+    (node) =>
+      node.type === "taxon" &&
+      filteredIds.has(node.speciesId) &&
+      getDinoById(node.speciesId)?.era === scope,
+  );
+  if (!era || !scopedNodes.length) return getMapScopeBounds("all");
+
+  const left = Math.min(...scopedNodes.map((node) => node.x));
+  const right = Math.max(...scopedNodes.map((node) => node.x + getNodeWidth(node)));
+  const horizontalPad = 56;
+  const verticalPad = 18;
+  return {
+    x: Math.max(0, left - horizontalPad),
+    y: Math.max(0, era.top + verticalPad),
+    width: right - left + horizontalPad * 2,
+    height: Math.max(getNodeHeight(), era.height - verticalPad * 2),
+  };
+}
+
+function fitMapScope(scope, { minimumScale, preserveMode = false } = {}) {
+  const viewport = $("#mapViewport");
+  if (!viewport || viewport.clientWidth <= 0 || viewport.clientHeight <= 0) return;
+  const nextScope = ["all", "triassic", "jurassic", "cretaceous"].includes(scope) ? scope : "all";
+  const bounds = getMapScopeBounds(nextScope);
+  const widthScale = (viewport.clientWidth - 40) / bounds.width;
+  const heightScale = (viewport.clientHeight - 40) / bounds.height;
+  let scale = clampScale(Math.min(widthScale, heightScale, nextScope === "all" ? 0.72 : 0.96));
+  if (nextScope !== "all") {
+    scale = clampScale(Math.max(scale, minimumScale ?? getReadableMapScale()));
+  }
+
+  let x = Math.round(viewport.clientWidth / 2 - (bounds.x + bounds.width / 2) * scale);
+  let y = Math.round(viewport.clientHeight / 2 - (bounds.y + bounds.height / 2) * scale);
+  const selectedNode = currentPhyloLayout.nodeMap.get(state.selectedId);
+  const selectedDino = getSelectedDino();
+  if (nextScope !== "all" && selectedNode && selectedDino?.era === nextScope) {
+    const margin = 44;
+    const selectedLeft = x + selectedNode.x * scale;
+    const selectedRight = x + (selectedNode.x + getNodeWidth(selectedNode)) * scale;
+    const selectedTop = y + selectedNode.y * scale;
+    const selectedBottom = y + (selectedNode.y + getNodeHeight()) * scale;
+    if (selectedLeft < margin) x += margin - selectedLeft;
+    if (selectedRight > viewport.clientWidth - margin) {
+      x -= selectedRight - (viewport.clientWidth - margin);
+    }
+    if (selectedTop < margin) y += margin - selectedTop;
+    if (selectedBottom > viewport.clientHeight - margin) {
+      y -= selectedBottom - (viewport.clientHeight - margin);
+    }
+  }
+
+  state.map.scope = nextScope;
+  if (!preserveMode) state.map.frameMode = "scope";
+  state.map.scale = scale;
+  state.map.x = Math.round(x);
+  state.map.y = Math.round(y);
+  state.map.fitted = true;
+  applyMapTransform();
+  renderMapScopeControls();
+}
+
+function focusSelectedMapNode({ minimumScale } = {}) {
   const viewport = $("#mapViewport");
   const selectedNode = currentPhyloLayout.nodeMap.get(state.selectedId);
   if (!viewport || !selectedNode || viewport.clientWidth <= 0 || viewport.clientHeight <= 0) return;
 
-  const scale = clampScale(Math.max(state.map.scale, minimumScale));
+  const selected = getSelectedDino();
+  const scale = clampScale(Math.max(state.map.scale, minimumScale ?? getReadableMapScale()));
   const centerX = selectedNode.x + getNodeWidth(selectedNode) / 2;
   const centerY = selectedNode.y + getNodeHeight() / 2;
+  if (selected?.era) state.map.scope = selected.era;
+  state.map.frameMode = "selection";
   state.map.scale = scale;
   state.map.x = Math.round(viewport.clientWidth / 2 - centerX * scale);
   state.map.y = Math.round(viewport.clientHeight / 2 - centerY * scale);
   state.map.fitted = true;
   applyMapTransform();
+  renderMapScopeControls();
+}
+
+function refitCurrentMapFrame({ minimumScale } = {}) {
+  if (state.map.frameMode === "selection") {
+    focusSelectedMapNode({ minimumScale });
+    return;
+  }
+  fitMapScope(state.map.scope, { minimumScale, preserveMode: true });
 }
 
 function setMapInspectorCollapsed(collapsed, { userInitiated = false } = {}) {
   state.map.inspectorCollapsed = Boolean(collapsed);
-  if (userInitiated) state.map.inspectorAutoCollapsed = false;
+  if (userInitiated) state.map.inspectorUserSet = true;
   applyMapUiState();
-  requestAnimationFrame(() => focusSelectedMapNode({ minimumScale: state.map.expanded ? 0.62 : 0.58 }));
+  renderMapScopeControls();
+  requestAnimationFrame(() => refitCurrentMapFrame());
+}
+
+function syncResponsiveMapInspector() {
+  const panel = $("#atlasView .map-panel");
+  if (!panel || state.map.expanded || state.map.inspectorUserSet) return;
+  const shouldCollapse = window.innerWidth <= 1380 || panel.clientWidth < 1120;
+  if (state.map.inspectorCollapsed === shouldCollapse) return;
+  state.map.inspectorCollapsed = shouldCollapse;
+  applyMapUiState();
+  renderMapScopeControls();
 }
 
 function setMapExpanded(expanded) {
   const nextExpanded = Boolean(expanded);
   if (state.map.expanded === nextExpanded) return;
 
-  if (nextExpanded && window.matchMedia("(max-width: 1100px)").matches) {
+  if (nextExpanded) {
     state.map.inspectorBeforeExpand = state.map.inspectorCollapsed;
     state.map.inspectorCollapsed = true;
     state.map.inspectorAutoCollapsed = true;
@@ -18956,23 +19133,14 @@ function setMapExpanded(expanded) {
   }
 
   state.map.expanded = nextExpanded;
+  if (!nextExpanded) syncResponsiveMapInspector();
   applyMapUiState();
-  requestAnimationFrame(() => focusSelectedMapNode({ minimumScale: nextExpanded ? 0.62 : 0.58 }));
+  renderMapScopeControls();
+  requestAnimationFrame(() => refitCurrentMapFrame());
 }
 
 function fitMapToViewport() {
-  const viewport = $("#mapViewport");
-  if (!viewport || viewport.clientWidth <= 0 || viewport.clientHeight <= 0) return;
-  const mapWidth = currentPhyloLayout.width || canvasSize.width;
-  const mapHeight = currentPhyloLayout.height || canvasSize.height;
-  const widthScale = (viewport.clientWidth - 36) / mapWidth;
-  const heightScale = (viewport.clientHeight - 36) / mapHeight;
-  const scale = clampScale(Math.min(widthScale, heightScale, 0.72));
-  state.map.scale = scale;
-  state.map.x = Math.round((viewport.clientWidth - mapWidth * scale) / 2);
-  state.map.y = Math.round((viewport.clientHeight - mapHeight * scale) / 2);
-  state.map.fitted = true;
-  applyMapTransform();
+  fitMapScope("all");
 }
 
 function zoomMap(nextScale, originX, originY) {
@@ -18992,12 +19160,19 @@ function zoomMap(nextScale, originX, originY) {
 function renderPhyloMap() {
   const selected = getSelectedDino();
   state.selectedId = selected.id;
+  if (
+    state.map.scope !== "all" &&
+    !getFilteredDinosaurs().some((dino) => dino.era === state.map.scope)
+  ) {
+    state.map.scope = selected.era;
+  }
   currentPhyloLayout = buildPhyloLayout();
   applyPhyloCanvasSize();
   renderPeriodBands();
   renderTreeLines();
   renderMapNodes();
   applyMapTransform();
+  renderMapScopeControls();
 }
 
 function renderDetail() {
@@ -22956,8 +23131,11 @@ function setView(view) {
     $("#viewTitle").textContent = "이미지 검수 워크벤치";
   }
   renderAll();
+  syncResponsiveMapInspector();
   applyMapUiState();
-  if (view === "atlas" && !state.map.fitted) requestAnimationFrame(() => focusSelectedMapNode());
+  if (view === "atlas" && !state.map.fitted) {
+    requestAnimationFrame(() => fitMapScope(getSelectedDino().era));
+  }
 }
 
 function renderAll() {
@@ -22966,6 +23144,11 @@ function renderAll() {
   renderDetail();
   renderCatalog();
   renderReview();
+}
+
+function refitAtlasAfterFilter() {
+  if (state.view !== "atlas") return;
+  requestAnimationFrame(() => refitCurrentMapFrame());
 }
 
 function bindMapEvents() {
@@ -23021,6 +23204,7 @@ function bindMapEvents() {
     }
     if (!node) return;
     state.selectedId = node.dataset.id;
+    state.map.scope = getDinoById(state.selectedId)?.era || state.map.scope;
     state.phyloFocusId = "";
     state.galleryIndex = 0;
     renderAll();
@@ -23030,6 +23214,11 @@ function bindMapEvents() {
   $("#zoomIn").addEventListener("click", () => zoomMap(state.map.scale + 0.12));
   $("#focusMapSelection").addEventListener("click", () => focusSelectedMapNode());
   $("#resetMap").addEventListener("click", fitMapToViewport);
+  $("#mapEraControls").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-map-scope]");
+    if (!button) return;
+    fitMapScope(button.dataset.mapScope);
+  });
   $("#toggleMapInspector").addEventListener("click", () =>
     setMapInspectorCollapsed(!state.map.inspectorCollapsed, { userInitiated: true }),
   );
@@ -23133,8 +23322,9 @@ function bindMapEvents() {
   });
 
   window.addEventListener("resize", () => {
+    syncResponsiveMapInspector();
     applyMapUiState();
-    requestAnimationFrame(() => focusSelectedMapNode({ minimumScale: state.map.scale }));
+    requestAnimationFrame(() => refitCurrentMapFrame({ minimumScale: state.map.scale }));
   });
 }
 
@@ -23153,6 +23343,7 @@ function bindEvents() {
   $("#searchInput").addEventListener("input", (event) => {
     state.search = event.target.value;
     renderAll();
+    refitAtlasAfterFilter();
   });
 
   $("#dietFilter").addEventListener("click", (event) => {
@@ -23161,6 +23352,7 @@ function bindEvents() {
     state.diet = button.dataset.diet;
     $$("#dietFilter button").forEach((item) => item.classList.toggle("active", item === button));
     renderAll();
+    refitAtlasAfterFilter();
   });
 
   $("#levelFilter").addEventListener("click", (event) => {
@@ -23169,6 +23361,7 @@ function bindEvents() {
     state.knowledgeLevel = button.dataset.level;
     $$("#levelFilter button").forEach((item) => item.classList.toggle("active", item === button));
     renderAll();
+    refitAtlasAfterFilter();
   });
 
   $("#periodSort").addEventListener("change", (event) => {
@@ -23190,6 +23383,7 @@ function bindEvents() {
       button.classList.toggle("active", button.dataset.level === "all"),
     );
     renderAll();
+    refitAtlasAfterFilter();
   });
 
   bindMapEvents();

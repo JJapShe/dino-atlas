@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dino Atlas MVP</title>
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="./styles.css?v=20260730-scalable-phylogeny-layout-v1" />
+    <link rel="stylesheet" href="./styles.css?v=20260730-scalable-phylogeny-layout-v7" />
   </head>
   <body>
     <div class="app-shell">
@@ -93,9 +93,27 @@
         <section class="view active" id="atlasView" aria-label="Phylogeny view">
           <section class="map-panel">
             <div class="map-toolbar">
-              <div>
+              <div class="map-toolbar-heading">
                 <p class="eyebrow">Phylogeny Map</p>
                 <h3>시대별 계통 지도</h3>
+              </div>
+              <div class="map-era-controls" id="mapEraControls" role="group" aria-label="시대 구간 이동">
+                <button class="active" data-map-scope="all" type="button" aria-pressed="true">
+                  <span>전체</span>
+                  <strong class="map-era-count">0</strong>
+                </button>
+                <button data-map-scope="triassic" type="button" aria-pressed="false">
+                  <span>트라이아스기</span>
+                  <strong class="map-era-count">0</strong>
+                </button>
+                <button data-map-scope="jurassic" type="button" aria-pressed="false">
+                  <span>쥐라기</span>
+                  <strong class="map-era-count">0</strong>
+                </button>
+                <button data-map-scope="cretaceous" type="button" aria-pressed="false">
+                  <span>백악기</span>
+                  <strong class="map-era-count">0</strong>
+                </button>
               </div>
               <div class="map-controls" aria-label="Map controls">
                 <button id="zoomOut" class="icon-button" type="button" title="축소" aria-label="축소"><span class="button-icon icon-minus" aria-hidden="true"></span></button>
@@ -192,6 +210,6 @@
     </div>
 
 <script src="./gallery-slots.js?v=20260730-richness-batch53-bellusaurus-v1"></script>
-    <script src="./app.js?v=20260730-richness-batch53-bellusaurus-v1"></script>
+    <script src="./app.js?v=20260730-scalable-phylogeny-layout-v7"></script>
   </body>
 </html>

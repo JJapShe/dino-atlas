@@ -510,9 +510,64 @@ select:focus,
 }
 
 .map-toolbar {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
   min-height: 76px;
   padding: 18px;
   border-bottom: 1px solid var(--line);
+}
+
+.map-toolbar-heading {
+  min-width: 138px;
+}
+
+.map-era-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  gap: 5px;
+}
+
+.map-era-controls button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 36px;
+  gap: 7px;
+  padding: 0 9px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.map-era-controls button:hover {
+  border-color: var(--line-strong);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.map-era-controls button.active {
+  border-color: rgba(85, 214, 190, 0.64);
+  background: rgba(85, 214, 190, 0.12);
+  color: var(--text);
+}
+
+.map-era-count {
+  min-width: 22px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--accent);
+  font-size: 10px;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .map-controls {
@@ -579,6 +634,42 @@ select:focus,
   transform-origin: 0 0;
   contain: layout paint style;
   will-change: transform;
+}
+
+.phylo-canvas.is-overview .map-node.taxon {
+  gap: 0;
+  padding: 0;
+  background:
+    linear-gradient(135deg, var(--taxon-accent, var(--accent)), var(--taxon-wash-alt, rgba(230, 196, 106, 0.62))),
+    var(--taxon-bg, rgba(15, 22, 31, 0.94));
+  box-shadow:
+    inset 0 0 0 1px rgba(238, 248, 245, 0.12),
+    0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.phylo-canvas.is-overview .map-node.taxon > * {
+  opacity: 0;
+}
+
+.phylo-canvas.is-overview .map-node.taxon.active {
+  box-shadow:
+    inset 0 0 0 4px rgba(238, 248, 245, 0.86),
+    0 0 0 3px var(--taxon-accent, var(--accent));
+}
+
+.phylo-canvas.is-overview .map-node.group .node-kind,
+.phylo-canvas.is-overview .map-node.group > span:last-child {
+  display: none;
+}
+
+.phylo-canvas.is-overview .map-node.group {
+  padding: 8px;
+  text-align: center;
+}
+
+.phylo-canvas.is-overview .map-node.group strong {
+  font-size: 12px;
+  -webkit-line-clamp: 2;
 }
 
 .period-bands,
@@ -709,6 +800,15 @@ select:focus,
     linear-gradient(90deg, var(--taxon-border, rgba(85, 214, 190, 0.34)), transparent 42%),
     var(--taxon-bg, rgba(18, 42, 45, 0.96));
   color: var(--text);
+}
+
+.map-node.taxon.active {
+  z-index: 5;
+  filter: brightness(1.12) saturate(1.08);
+  box-shadow:
+    inset 0 0 0 2px rgba(238, 248, 245, 0.72),
+    0 0 0 2px var(--taxon-accent, var(--accent)),
+    0 16px 34px rgba(0, 0, 0, 0.34);
 }
 
 .map-node.focus-matched {
@@ -2291,6 +2391,29 @@ body.lightbox-open {
   }
 }
 
+@media (max-width: 1240px) {
+  .map-toolbar {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .map-era-controls {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-top: 8px;
+    scrollbar-width: none;
+  }
+
+  .map-era-controls::-webkit-scrollbar {
+    display: none;
+  }
+
+  .map-controls {
+    justify-self: end;
+  }
+}
+
 @media (min-width: 1500px) {
   .app-shell {
     grid-template-columns: 292px minmax(0, 1fr);
@@ -2469,6 +2592,28 @@ body.lightbox-open {
     flex-direction: column;
   }
 
+  .map-toolbar {
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+  }
+
+  .map-toolbar-heading,
+  .map-era-controls,
+  .map-controls {
+    width: 100%;
+  }
+
+  .map-era-controls {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .map-controls {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: stretch;
+  }
+
   .metric-row,
   .card-grid,
   .fact-grid {
@@ -2479,6 +2624,13 @@ body.lightbox-open {
   .map-controls {
     width: 100%;
     gap: 6px;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .map-controls::-webkit-scrollbar {
+    display: none;
   }
 
   .map-controls button {
@@ -2488,7 +2640,7 @@ body.lightbox-open {
   }
 
   #zoomLevel {
-    flex: 1;
+    flex: 0 0 42px;
     min-width: 42px;
   }
 
