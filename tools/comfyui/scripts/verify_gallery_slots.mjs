@@ -10,6 +10,7 @@ const ASSIGNMENTS_JS = path.join(ROOT, "gallery-slots.js");
 const ASSET_ROOT = path.join(ROOT, "assets", "dinosaurs");
 const OUTPUT = path.join(ROOT, "tools", "comfyui", "outputs", "gallery-slot-validation.json");
 const DECISIONS_JSON = path.join(ROOT, "tools", "comfyui", "gallery-slot-visual-decisions.json");
+const REJECTIONS_JSON = path.join(ROOT, "tools", "comfyui", "gallery-slot-rejections.json");
 
 function extractLiteral(source, name) {
   const marker = `const ${name} =`;
@@ -66,7 +67,13 @@ const assignments = loadAssignments();
 const decisions = fs.existsSync(DECISIONS_JSON)
   ? JSON.parse(fs.readFileSync(DECISIONS_JSON, "utf8"))
   : { taxa: {}, rejectedSources: {} };
-const rejectedSources = new Set(Object.keys(decisions.rejectedSources || {}).map((source) => String(source).replaceAll("\\", "/")));
+const rejectionManifest = fs.existsSync(REJECTIONS_JSON)
+  ? JSON.parse(fs.readFileSync(REJECTIONS_JSON, "utf8"))
+  : { rejectedSources: {} };
+const rejectedSources = new Set([
+  ...Object.keys(decisions.rejectedSources || {}),
+  ...Object.keys(rejectionManifest.rejectedSources || {}),
+].map((source) => String(source).replaceAll("\\", "/")));
 const missingSlots = [];
 const duplicateSlots = [];
 const outOfRangeSlots = [];

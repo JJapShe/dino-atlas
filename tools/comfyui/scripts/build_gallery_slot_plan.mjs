@@ -12,6 +12,7 @@ const OUTPUT_JSON = path.join(OUTPUT_DIR, "gallery-slot-generation-plan.json");
 const OUTPUT_MD = path.join(OUTPUT_DIR, "gallery-slot-generation-plan.md");
 const OUTPUT_ASSIGNMENTS = path.join(ROOT, "gallery-slots.js");
 const VISUAL_DECISIONS = path.join(ROOT, "tools", "comfyui", "gallery-slot-visual-decisions.json");
+const REJECTIONS_JSON = path.join(ROOT, "tools", "comfyui", "gallery-slot-rejections.json");
 
 const SLOT_ROLES = [
   { slot: 1, key: "representative", label: "representative full body", kind: "count-level pass" },
@@ -571,6 +572,8 @@ function makePlanItem({ dino, samples, identities, profiles, routes, swatches, u
     && hasRealImage(item)
     && !rejectedSources.has(normalizePath(item.src || item.source))
   ));
+  const availableUnregisteredAssets = (unregisteredAssets[dino.id] || [])
+    .filter((source) => !rejectedSources.has(normalizePath(source)));
   const malformedSamples = (samples[dino.id] || [])
     .map((item, index) => ({ item, index }))
     .filter(({ item }) => !item || typeof item !== "object")
@@ -589,7 +592,7 @@ function makePlanItem({ dino, samples, identities, profiles, routes, swatches, u
   const referenceSource = normalizePath(representative?.src || route.control || "");
   const slots = selected.map(({ role, picked, decision }) => {
     const source = normalizePath(picked?.item?.src || "");
-    const suggestedUnregistered = source ? null : suggestUnregisteredSource(unregisteredAssets[dino.id] || [], role.key);
+    const suggestedUnregistered = source ? null : suggestUnregisteredSource(availableUnregisteredAssets, role.key);
     const decisionSource = normalizePath(decision?.source || "");
     const approved = decision?.status === "approved" && source && source === decisionSource;
     const status = decision?.status === "approved"
@@ -627,7 +630,7 @@ function makePlanItem({ dino, samples, identities, profiles, routes, swatches, u
   }
   const expansionSlots = expansionSelected.map(({ role, picked }) => {
     const source = normalizePath(picked?.item?.src || "");
-    const suggestedUnregistered = source ? null : suggestUnregisteredSource(unregisteredAssets[dino.id] || [], role.key);
+    const suggestedUnregistered = source ? null : suggestUnregisteredSource(availableUnregisteredAssets, role.key);
     const status = source
       ? "candidate-review"
       : suggestedUnregistered
@@ -669,7 +672,7 @@ function makePlanItem({ dino, samples, identities, profiles, routes, swatches, u
     habitatProfile: habitat,
     identityChecklistMissing: !identities[dino.id],
     malformedSamples,
-    unregisteredSpeciesAssets: unregisteredAssets[dino.id] || [],
+    unregisteredSpeciesAssets: availableUnregisteredAssets,
     slots,
     expansionSlots,
   };
@@ -780,7 +783,11 @@ function main() {
   const routes = loadLiteral(source, "generationRouteGuides");
   const swatches = loadLiteral(source, "taxonPaletteSwatches");
   const decisions = loadJsonIfPresent(VISUAL_DECISIONS, { taxa: {}, rejectedSources: {} });
-  const rejectedSources = new Set(Object.keys(decisions.rejectedSources || {}).map(normalizePath));
+  const rejectionManifest = loadJsonIfPresent(REJECTIONS_JSON, { rejectedSources: {} });
+  const rejectedSources = new Set([
+    ...Object.keys(decisions.rejectedSources || {}),
+    ...Object.keys(rejectionManifest.rejectedSources || {}),
+  ].map(normalizePath));
   const unregisteredAssets = buildUnregisteredAssets(dinosaurs, samples);
   const taxa = dinosaurs.map((dino) => makePlanItem({
     dino,
