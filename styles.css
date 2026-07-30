@@ -217,11 +217,16 @@ button {
 }
 
 .app-shell {
+  --sidebar-width: 248px;
   display: grid;
-  grid-template-columns: 248px minmax(0, 1fr);
+  grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
   height: 100vh;
   min-height: 640px;
   overflow: hidden;
+}
+
+body[data-active-view="atlas"] .app-shell {
+  --sidebar-width: 224px;
 }
 
 .sidebar {
@@ -474,6 +479,40 @@ select:focus,
   font-size: 12px;
 }
 
+body[data-active-view="atlas"] .main {
+  gap: 8px;
+  padding: 10px;
+}
+
+body[data-active-view="atlas"] .topbar {
+  min-height: 46px;
+  justify-content: flex-end;
+}
+
+body[data-active-view="atlas"] .topbar > :first-child {
+  display: none;
+}
+
+body[data-active-view="atlas"] .metric-row {
+  width: min(100%, 460px);
+  grid-template-columns: repeat(4, minmax(74px, 1fr));
+  gap: 6px;
+}
+
+body[data-active-view="atlas"] .metric {
+  min-height: 46px;
+  padding: 6px 10px;
+}
+
+body[data-active-view="atlas"] .metric strong {
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+body[data-active-view="atlas"] .metric span {
+  font-size: 10px;
+}
+
 .view {
   display: none;
   min-height: 0;
@@ -513,8 +552,8 @@ select:focus,
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
-  min-height: 68px;
-  padding: 14px 16px;
+  min-height: 64px;
+  padding: 10px 14px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -629,7 +668,7 @@ select:focus,
   position: absolute;
   left: 0;
   top: 0;
-  --phylo-grid-x: 840px;
+  --phylo-grid-x: 960px;
   width: 2060px;
   height: 1260px;
   transform-origin: 0 0;
@@ -687,6 +726,14 @@ select:focus,
   -webkit-line-clamp: 2;
 }
 
+.phylo-canvas.is-overview .tree-line.taxon-branch:not(.active) {
+  opacity: 0;
+}
+
+.phylo-canvas.is-overview .tree-line.clade-branch:not(.active) {
+  opacity: 0.34;
+}
+
 .phylo-canvas.is-compact .map-node.taxon {
   place-content: center;
   padding: 7px 10px 8px 13px;
@@ -719,6 +766,10 @@ select:focus,
 
 .phylo-canvas.is-compact .map-node.group strong {
   font-size: 14px;
+}
+
+.phylo-canvas.is-compact .tree-line.taxon-branch:not(.active) {
+  opacity: 0.06;
 }
 
 .period-bands,
@@ -779,9 +830,24 @@ select:focus,
   stroke: rgba(147, 164, 181, 0.32);
   stroke-width: 2;
   stroke-linecap: round;
+  transition:
+    opacity 160ms ease,
+    stroke 160ms ease;
+}
+
+.tree-line.clade-branch {
+  opacity: 0.72;
+  stroke: rgba(147, 164, 181, 0.44);
+  stroke-width: 2.2;
+}
+
+.tree-line.taxon-branch {
+  opacity: 0.13;
+  stroke-width: 1.4;
 }
 
 .tree-line.active {
+  opacity: 1;
   stroke: rgba(85, 214, 190, 0.78);
   stroke-width: 3;
 }
@@ -797,8 +863,8 @@ select:focus,
   align-content: center;
   gap: 2px;
   min-width: 0;
-  height: 68px;
-  padding: 6px 8px 7px 11px;
+  height: 76px;
+  padding: 7px 10px 8px 13px;
   border: 1px solid rgba(52, 69, 89, 0.95);
   border-radius: 8px;
   background: rgba(15, 22, 31, 0.94);
@@ -808,14 +874,14 @@ select:focus,
 
 .map-node.group {
   z-index: 6;
-  width: 136px;
+  width: 150px;
   border-color: rgba(230, 196, 106, 0.36);
   cursor: pointer;
 }
 
 .map-node.taxon {
   z-index: 1;
-  width: 148px;
+  width: 168px;
   border-color: var(--taxon-border, rgba(52, 69, 89, 0.95));
   background:
     linear-gradient(135deg, var(--taxon-wash, rgba(85, 214, 190, 0.3)), transparent 58%),
@@ -905,7 +971,7 @@ select:focus,
   display: block;
   min-width: 0;
   color: var(--taxon-accent, var(--accent));
-  font-size: 7px;
+  font-size: 8px;
   font-weight: 900;
   letter-spacing: 0;
   line-height: 1.1;
@@ -917,7 +983,7 @@ select:focus,
   min-width: 0;
   overflow: hidden;
   color: var(--text);
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.18;
   max-height: 26px;
   text-overflow: clip;
@@ -932,7 +998,7 @@ select:focus,
   min-width: 0;
   overflow: hidden;
   color: var(--subtle);
-  font-size: 8px;
+  font-size: 9px;
   line-height: 1.25;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -950,10 +1016,10 @@ select:focus,
 }
 
 .map-node .level-badge {
-  min-height: 14px;
+  min-height: 16px;
   flex: 0 0 auto;
   padding: 0 4px;
-  font-size: 8px;
+  font-size: 9px;
 }
 
 .map-node .node-palette {
@@ -2468,7 +2534,8 @@ body.lightbox-open {
 
 @media (min-width: 1500px) {
   .app-shell {
-    grid-template-columns: 268px minmax(0, 1fr);
+    --sidebar-width: 268px;
+    grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
   }
 
   .main {
