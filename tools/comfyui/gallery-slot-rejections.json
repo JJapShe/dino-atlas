@@ -1,7 +1,10 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-30-richness-six-slot-batch-58",
+  "reviewBatch": "2026-07-30-richness-six-slot-batch-59",
   "rejectedSources": {
+    "assets/dinosaurs/tapejara-wellnhoferi-lagoon-fruit-forage-ecology-imagegen-v1.png": {
+      "reason": "The former ecology candidate carries a long pterodactyloid tail that contradicts the very short Tapejara tail gate, so its crest and habitat strengths cannot preserve species identity."
+    },
     "assets/dinosaurs/centrosaurus-apertus-nasalhorn-frillhook-imagegen-v1.png": {
       "reason": "The former representative reduces the paired medial P1 and lateral P2 arrangement to an inaccurate single central hook, and its adult nasal horn does not reliably preserve the published procurved orientation."
     },
@@ -1347,5 +1350,5 @@
       "reason": "The launch frame repeats the selected airborne role, while the two hindwing surfaces do not attach cleanly to the two legs and instead read as extra torso- or tail-rooted feather fans."
     }
   },
-  "generatedAt": "2026-07-30T11:12:15.098Z"
+  "generatedAt": "2026-07-30T12:02:54.215Z"
 }

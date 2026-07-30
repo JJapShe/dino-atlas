@@ -4410,6 +4410,15 @@
   - Added a compact one-row toolbar for expanded landscape screens up to 600 px tall so era navigation and pan/zoom controls no longer consume a third of the map viewport.
   - Browser validation at 1920x1080, 390x844, 844x390, and 667x375 found 147 visible group/taxon nodes, zero node overlaps, zero page-level horizontal overflow, and no map/inspector intersection. At 667x375 expanded landscape, the toolbar is 56 px high and the map keeps 319 px of viewport height.
 
+- `Tapejara and Edmontonia six-image enrichment 2026-07-30`
+  - Expanded `Tapejara wellnhoferi` and `Edmontonia rugosidens` from three published slots to six balanced roles each: representative, color-pattern, habitat-ecology, identity-anatomy, interaction, and social-growth-defense.
+  - Added seven original-size-reviewed project assets: four Tapejara short-tail/four-limb/crab-observation/growth scenes and three Edmontonia paired-shoulder-spike/channel-separated-Gorgosaurus/growth scenes.
+  - Rejected the former Tapejara fruit-forage scene because its long tail contradicts the very short pterodactyloid tail gate. Kept the prior Edmontonia close standoff rejected and used a shallow channel to separate the new distant Gorgosaurus interaction.
+  - Tapejara text now treats frugivory/herbivory as a dietary hypothesis, while its identity gate requires a short downturned toothless rostrum, high median crest, two forelimb wings, two hindlimbs, and one very short tail.
+  - Edmontonia now requires both main shoulder spikes to be readable in the anatomy slot, four independent feet, irregular nodosaurid armor, and one long tapering tail without a club. The blue-black armor, oxblood shoulder-spike bases, pale hip band, and horn-colored tips remain consistent across compositions.
+  - Validation: 132 taxa, 669 assigned and visually approved slots, 91 taxa at six images, 41 taxa and 123 generation slots remaining; strict verifier errors all zero; 1,540 unique `app.js` asset references with zero missing; all seven new assets returned HTTP 200; both rejected predecessors returned HTTP 410.
+  - Browser validation at 1280x720 showed six ordered Atlas images and six review-page candidates for each taxon, Tapejara lightbox navigation from 1/6 to 2/6, Edmontonia anatomy at 4/6 with a 1672x941 decoded image, and zero Atlas/review console warnings or errors.
+
 For each added taxon, produce:
 
 - `assets/dinosaurs/{id}-...-imagegen-v1.png` files.

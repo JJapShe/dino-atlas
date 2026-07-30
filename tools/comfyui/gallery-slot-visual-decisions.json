@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-30T09:13:24.882Z",
-  "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
-  "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
-  "targetSlots": 648,
+  "generatedAt": "2026-07-30T12:02:54.215Z",
+  "reviewBatch": "2026-07-30-richness-six-slot-batch-59",
+  "reviewMethod": "Batch 59 original-size inspection of all selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
+  "targetSlots": 669,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -1859,27 +1859,54 @@
         "source": "assets/dinosaurs/tapejara-wellnhoferi-santana-sailcrest-quadruped-imagegen-v1.png",
         "role": "representative",
         "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reviewMethod": "Batch 59 original-size inspection of the complete six-image Tapejara set",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-59",
+        "reviewedAt": "2026-07-30T11:51:16.315Z"
       },
       "2": {
         "status": "approved",
         "source": "assets/dinosaurs/tapejara-wellnhoferi-blackberry-celadon-crest-pattern-imagegen-v1.png",
         "role": "color-pattern",
         "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reviewMethod": "Batch 59 original-size inspection of the complete six-image Tapejara set",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-59",
+        "reviewedAt": "2026-07-30T11:51:16.315Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/tapejara-wellnhoferi-lagoon-fruit-forage-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/tapejara-wellnhoferi-shorttail-lagoon-fruit-forage-ecology-imagegen-v2.png",
         "role": "habitat-ecology",
         "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reviewMethod": "Batch 59 original-size inspection of the complete six-image Tapejara set",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-59",
+        "reviewedAt": "2026-07-30T11:51:16.315Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/tapejara-wellnhoferi-four-limb-shorttail-wingfold-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
+        "reviewMethod": "Batch 59 original-size inspection of the complete six-image Tapejara set",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-59",
+        "reviewedAt": "2026-07-30T11:51:16.315Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/tapejara-wellnhoferi-romualdo-crab-observation-interaction-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
+        "reviewMethod": "Batch 59 original-size inspection of the complete six-image Tapejara set",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-59",
+        "reviewedAt": "2026-07-30T11:51:16.315Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/tapejara-wellnhoferi-separated-adult-subadult-crest-ontogeny-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
+        "reviewMethod": "Batch 59 original-size inspection of the complete six-image Tapejara set",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-59",
+        "reviewedAt": "2026-07-30T11:51:16.315Z"
       }
     },
     "dsungaripterus-weii": {
@@ -3209,27 +3236,54 @@
         "source": "assets/dinosaurs/edmontonia-rugosidens-dinosaur-park-shoulder-spike-nodosaurid-imagegen-v1.png",
         "role": "representative",
         "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reviewMethod": "Batch 59 original-size inspection of the complete six-image Edmontonia set",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-59",
+        "reviewedAt": "2026-07-30T12:02:54.215Z"
       },
       "2": {
         "status": "approved",
         "source": "assets/dinosaurs/edmontonia-rugosidens-blueblack-oxblood-armor-pattern-imagegen-v1.png",
         "role": "color-pattern",
         "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reviewMethod": "Batch 59 original-size inspection of the complete six-image Edmontonia set",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-59",
+        "reviewedAt": "2026-07-30T12:02:54.215Z"
       },
       "3": {
         "status": "approved",
         "source": "assets/dinosaurs/edmontonia-rugosidens-fern-browse-ecology-imagegen-v2.png",
         "role": "habitat-ecology",
         "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reviewMethod": "Batch 59 original-size inspection of the complete six-image Edmontonia set",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-59",
+        "reviewedAt": "2026-07-30T12:02:54.215Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/edmontonia-rugosidens-paired-shoulder-spikes-no-club-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "High frontal three-quarter inspection shows the paired main shoulder spikes together with four independent feet and one fully continuous unclubbed tail.",
+        "reviewMethod": "Batch 59 original-size inspection of the complete six-image Edmontonia set",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-59",
+        "reviewedAt": "2026-07-30T12:02:54.215Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/edmontonia-rugosidens-channel-separated-gorgosaurus-defense-interaction-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "The foreground Edmontonia keeps four readable feet, paired shoulder armor and an unclubbed tail while a shallow channel cleanly separates the distant Gorgosaurus.",
+        "reviewMethod": "Batch 59 original-size inspection of the complete six-image Edmontonia set",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-59",
+        "reviewedAt": "2026-07-30T12:02:54.215Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/edmontonia-rugosidens-separated-adult-subadult-armor-growth-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Adult and subadult remain spatially separated, each retaining a complete four-limb body and one tapering unclubbed tail; growth proportions remain explicitly hypothetical.",
+        "reviewMethod": "Batch 59 original-size inspection of the complete six-image Edmontonia set",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-59",
+        "reviewedAt": "2026-07-30T12:02:54.215Z"
       }
     },
     "polacanthus-foxii": {
