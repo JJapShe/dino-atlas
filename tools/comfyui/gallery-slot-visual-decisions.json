@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-30T03:21:12.569Z",
-  "reviewBatch": "2026-07-30-richness-six-slot-batch-54",
-  "reviewMethod": "Original-size inspection of three built-in imagegen outputs and seventeen existing expansion candidates; exact species identity, limb count, pelvis-origin tail continuity, palette consistency, habitat fit, subject separation, composition, and artifact gates; five failed candidates rejected for taxon drift or body-plan error.",
-  "targetSlots": 603,
+  "generatedAt": "2026-07-30T04:19:10.773Z",
+  "reviewBatch": "2026-07-30-richness-six-slot-batch-55",
+  "reviewMethod": "Original-size inspection of eleven promoted built-in imagegen outputs, five rejected generation drafts, and nine existing expansion candidates; exact species identity, limb count, pelvis-origin tail continuity, palette consistency, habitat fit, subject separation, composition balance, and text or watermark artifact gates.",
+  "targetSlots": 618,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -2929,6 +2929,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/sauropelta-edwardsorum-shoulder-spine-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "The isolated low nodosaurid preserves a small wedge-shaped head, ordered low oval osteoderms, a limited sequence of laterally projecting neck and shoulder spines, four separately attached legs, and one long tapering tail with no club.",
+        "reviewMethod": "Original-size full-frame, head, armor-row, shoulder-spine, four-foot, pelvis, tail-tip, crop, palette, and artifact inspection against Ostrom 1970 and Carpenter 1984.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-55",
+        "reviewedAt": "2026-07-30T04:19:10.773Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/sauropelta-edwardsorum-cloverly-theropod-standoff-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "The primary nodosaurid retains prominent shoulder spines, four legs, and a non-clubbed tail while the theropod remains distant and noncontact; the image is retained only as low-ranked defensive ecology review material.",
+        "reviewMethod": "Original-size primary-body, armor, limb-count, tail-club absence, secondary-animal separation, contact, crop, and artifact review; no bite, attack outcome, or evidenced standoff behavior is claimed.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-55",
+        "reviewedAt": "2026-07-30T04:19:10.773Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/sauropelta-edwardsorum-solitary-shoulder-brace-ecology-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "The solitary broadside turn keeps a low armored profile, one clearly presented lateral shoulder spine row, four independently readable legs and feet, and a complete tapering tail without club, stegosaur plates, or random all-over spikes.",
+        "reviewMethod": "Original-size head, armor topology, shoulder-spine, four-limb, foot, tail, ground-contact, crop, palette, and text-artifact review; the defensive turn remains hypothetical.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-55",
+        "reviewedAt": "2026-07-30T04:19:10.773Z"
       }
     },
     "borealopelta-markmitchelli": {
@@ -3464,6 +3491,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/avimimus-portentosus-nemegt-gravel-walk-imagegen-v2.png",
+        "role": "alternate-habitat-behavior",
+        "reason": "The solitary animal retains a short toothless beak, compact feathered oviraptorosaur torso, two folded forelimbs, two long scaled hindlimbs, ordinary grounded feet, and one complete feathered balance tail without Mononykus or flight-wing drift.",
+        "reviewMethod": "Original-size full-frame inspection against Funston et al. 2017 cranial evidence plus forelimb, hindlimb, foot, tail, crop, and artifact checks; feather extent remains a soft-tissue hypothesis.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-55",
+        "reviewedAt": "2026-07-30T04:19:10.773Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/avimimus-portentosus-distant-formation-fauna-ecology-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "The foreground Avimimus shows two distinct folded feathered arms, two grounded legs, and one complete tail while a single herbivore silhouette remains small, distant, and noncontact across open gravel.",
+        "reviewMethod": "Original-size head, both-arm, both-foot, tail, distant-animal, separation, palette, and watermark review; no named-species interaction or pursuit claim.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-55",
+        "reviewedAt": "2026-07-30T04:19:10.773Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/avimimus-portentosus-folded-arm-dust-gust-ecology-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "Front three-quarter staging makes both small folded forelimbs, both scaled legs and feet, and the complete pelvis-origin feathered tail separately readable; the body remains terrestrial and avoids modern flight-wing, perching, and single-claw drift.",
+        "reviewMethod": "Original-size bilateral-arm, leg-count, foot, tail, dust-occlusion, crop, palette, and artifact review after rejecting the first draft whose far forelimb was not independently visible.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-55",
+        "reviewedAt": "2026-07-30T04:19:10.773Z"
       }
     },
     "oviraptor-philoceratops": {
@@ -4919,6 +4973,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/saurolophus-angustirostris-spike-crest-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "The isolated adult preserves a broad toothless duck bill, one short solid crest rising dorsally and backward, a deep hadrosaur torso, all four legs and feet, and one complete stiff tail without a long tubular crest or crestless-head drift.",
+        "reviewMethod": "Original-size full-frame, skull, crest, four-foot, pelvis, tail-tip, crop, palette, and artifact inspection against Bell 2011 cranial osteology.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-55",
+        "reviewedAt": "2026-07-30T04:19:10.773Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/saurolophus-angustirostris-channel-separated-fauna-ecology-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "A complete foreground Saurolophus retains its compact spike crest, four limbs, visible feet, and one tail while a single distant theropod remains fully separated by a broad braided channel with no pursuit, contact, injury, or gaze interaction.",
+        "reviewMethod": "Original-size primary and distant-animal, crest, limb-count, foot, tail, channel-separation, crop, palette, and artifact review; co-occurrence is contextual rather than an event claim.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-55",
+        "reviewedAt": "2026-07-30T04:19:10.773Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/saurolophus-angustirostris-separated-ontogeny-ecology-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "The adult's full short spike crest and the smaller animal's incipient crest remain clearly different across open water, while each retains four independent limbs and one complete tail; the image is a cautious size and crest-growth comparison.",
+        "reviewMethod": "Original-size adult and juvenile crest-profile, body, four-limb, tail, separation, palette, crop, and artifact review against Bell 2011 and perinatal evidence in PMCID PMC4605499; no parentage or care claim.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-55",
+        "reviewedAt": "2026-07-30T04:19:10.773Z"
       }
     },
     "edmontosaurus-annectens": {
@@ -5004,6 +5085,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/thescelosaurus-neglectus-hell-creek-streambank-walk-imagegen-v2.png",
+        "role": "alternate-habitat-behavior",
+        "reason": "The solitary streambank animal preserves a low narrow beaked head, deep compact torso, two short forelimbs, two strong hindlimbs, readable ordinary feet, and one uninterrupted pelvis-origin tail without duckbill, dome, horn, or raptor-claw drift.",
+        "reviewMethod": "Original-size full-frame inspection against Boyd 2014 cranial anatomy plus independent limb, foot, pelvis, tail, crop, palette, and artifact checks.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-55",
+        "reviewedAt": "2026-07-30T04:19:10.773Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/thescelosaurus-neglectus-channel-separated-fauna-ecology-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "A complete foreground Thescelosaurus retains the low beak, four attached limbs, visible feet, and one complete tail while a single tiny herbivore remains fully separated across a broad channel; the corrected frame contains no signature or pseudo-text.",
+        "reviewMethod": "Original-size primary and distant-animal inspection, exact limb and tail continuity review, channel-separation gate, and bottom-left artifact recheck after localized imagegen cleanup.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-55",
+        "reviewedAt": "2026-07-30T04:19:10.773Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/thescelosaurus-neglectus-separated-size-classes-ecology-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "The larger and smaller animals occupy separate banks and depth planes, share the same low-beaked robust body and palette topology, and each retains independent limbs and one complete tail; the image is used only as a cautious size-class comparison.",
+        "reviewMethod": "Original-size two-animal silhouette, appendage, tail, body-separation, and palette review; no parentage, care, herd, or exact growth-stage claim.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-55",
+        "reviewedAt": "2026-07-30T04:19:10.773Z"
       }
     },
     "pachycephalosaurus-wyomingensis": {
@@ -5089,6 +5197,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/stegoceras-validum-moderate-dome-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "The solitary biped keeps a small beaked skull with a low-to-moderate smooth dome, low posterior nodes, two small forelimbs, two grounded hindlimbs, and one uninterrupted balance tail without giant Pachycephalosaurus, horn, or quadrupedal drift.",
+        "reviewMethod": "Original-size full-frame, dome-height, posterior-node, both-arm, both-foot, tail, crop, palette, and artifact inspection against Schott et al. 2011 and preserved Stegoceras postcrania.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-55",
+        "reviewedAt": "2026-07-30T04:19:10.773Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/stegoceras-validum-woodland-pair-display-ecology-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "Two complete animals remain separated by open ground with independent domed heads, limbs, feet, and tails; distinct muted color treatments add social-context variety without contact, headbutting, sex, dominance, or courtship claims.",
+        "reviewMethod": "Original-size two-animal identity, limb, tail, body-separation, palette, crop, and artifact review; retained below representative rank because social interpretation is not evidenced.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-55",
+        "reviewedAt": "2026-07-30T04:19:10.773Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/stegoceras-validum-separated-dome-growth-ecology-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "The larger animal's modest rounded dome and the smaller animal's flatter skull roof remain visibly distinct across a channel, with matching species palette and independent limbs and tails; the frame illustrates ontogenetic contrast without a family claim.",
+        "reviewMethod": "Original-size adult and juvenile skull-profile, body, appendage, tail, separation, palette, and artifact review after two localized dome corrections, using Schott et al. 2011 as the ontogenetic gate.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-55",
+        "reviewedAt": "2026-07-30T04:19:10.773Z"
       }
     },
     "homalocephale-calathocercos": {

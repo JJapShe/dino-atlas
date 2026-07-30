@@ -1,7 +1,22 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-30-richness-six-slot-batch-54",
+  "reviewBatch": "2026-07-30-richness-six-slot-batch-55",
   "rejectedSources": {
+    "assets/dinosaurs/placodus-gigas-shellbed-feeding-ecology-imagegen-v1.png": {
+      "reason": "The primary body reads as a generic monitor lizard with weak Placodus skull, trunk and marine-reptile identity, so the shell-bed feeding scene cannot pass the anatomy gate."
+    },
+    "assets/dinosaurs/borealopelta-markmitchelli-misty-bank-standoff-ecology-imagegen-v1.png": {
+      "reason": "Oversized random spikes cover the neck, torso and tail instead of preserving Borealopelta's ordered armor and shoulder-spine distribution, making the taxon identity unreliable."
+    },
+    "assets/dinosaurs/edmontonia-rugosidens-tyrannosaurid-shoulder-spike-standoff-ecology-imagegen-v1.png": {
+      "reason": "The primary animal drifts to an overdomed generic ankylosaur with unstable armor proportions, while the close predator also has weak anatomy; the scene fails independent species review."
+    },
+    "assets/dinosaurs/homalocephale-calathocercos-gobi-mudflat-walk-imagegen-v2.png": {
+      "reason": "The inflated body, raised dome and implausible horn row erase the low broad skull and lightly built bipedal Homalocephale identity despite a readable full-body silhouette."
+    },
+    "assets/dinosaurs/saurolophus-angustirostris-nemegt-riverbank-group-ecology-imagegen-v2.png": {
+      "reason": "The anatomy is broadly readable, but the compact riverbank group repeats the existing herd and water-margin role; the new isolated anatomy, channel-separated coexistence and ontogeny frames provide a more balanced six-slot set."
+    },
     "assets/dinosaurs/bellusaurus-sui-monolophosaurus-duststorm-herd-shield-defense-ecology-imagegen-v1.png": {
       "reason": "A named Monolophosaurus dust-storm attack and herd-shield response overstate direct interaction and social behavior while crowding the primary anatomy."
     },
@@ -1248,5 +1263,5 @@
       "reason": "Excessive armor, broad low body, and quadrupedal drift erase the small lightly built Scutellosaurus identity, so the action scene cannot be promoted."
     }
   },
-  "generatedAt": "2026-07-30T03:21:12.569Z"
+  "generatedAt": "2026-07-30T04:19:10.773Z"
 }

@@ -2613,6 +2613,30 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/sauropelta-edwardsorum-shoulder-spine-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/sauropelta-edwardsorum-cloverly-theropod-standoff-ecology-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/sauropelta-edwardsorum-solitary-shoulder-brace-ecology-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
     }
   ],
   "borealopelta-markmitchelli": [
@@ -3088,6 +3112,30 @@ window.gallerySlotAssignments = {
       "source": "assets/dinosaurs/avimimus-portentosus-nemegt-group-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/avimimus-portentosus-nemegt-gravel-walk-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/avimimus-portentosus-distant-formation-fauna-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/avimimus-portentosus-folded-arm-dust-gust-ecology-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
@@ -4393,6 +4441,30 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/saurolophus-angustirostris-spike-crest-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/saurolophus-angustirostris-channel-separated-fauna-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/saurolophus-angustirostris-separated-ontogeny-ecology-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
     }
   ],
   "edmontosaurus-annectens": [
@@ -4469,6 +4541,30 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/thescelosaurus-neglectus-hell-creek-streambank-walk-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/thescelosaurus-neglectus-channel-separated-fauna-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/thescelosaurus-neglectus-separated-size-classes-ecology-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
     }
   ],
   "pachycephalosaurus-wyomingensis": [
@@ -4542,6 +4638,30 @@ window.gallerySlotAssignments = {
       "source": "assets/dinosaurs/stegoceras-validum-cutbank-social-display-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/stegoceras-validum-moderate-dome-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/stegoceras-validum-woodland-pair-display-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/stegoceras-validum-separated-dome-growth-ecology-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
