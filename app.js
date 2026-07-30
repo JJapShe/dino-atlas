@@ -3485,9 +3485,22 @@ const eras = [
   },
 ];
 
+const phyloLayoutMetrics = Object.freeze({
+  taxonWidth: 148,
+  groupWidth: 136,
+  nodeHeight: 68,
+  taxonColumnGap: 16,
+  taxonRowGap: 12,
+  treeStartX: 40,
+  groupColumnGap: 24,
+  taxonGridX: 840,
+  canvasPadding: 56,
+  groupVerticalGap: 16,
+});
+
 const canvasSize = {
-  width: 2060,
-  height: 1260,
+  width: 1960,
+  height: 720,
 };
 
 const phyloNodes = [
@@ -4179,7 +4192,7 @@ const state = {
     scope: "cretaceous",
     frameMode: "scope",
     expanded: false,
-    inspectorCollapsed: false,
+    inspectorCollapsed: true,
     inspectorBeforeExpand: false,
     inspectorAutoCollapsed: false,
     inspectorUserSet: false,
@@ -18261,11 +18274,13 @@ function renderPeriodBands() {
 }
 
 function getNodeWidth(node) {
-  return node.type === "group" ? 126 : 132;
+  return node.type === "group"
+    ? phyloLayoutMetrics.groupWidth
+    : phyloLayoutMetrics.taxonWidth;
 }
 
 function getNodeHeight() {
-  return 64;
+  return phyloLayoutMetrics.nodeHeight;
 }
 
 const taxonPaletteAccents = {
@@ -18799,30 +18814,30 @@ function resolvePhyloNodeCollisions(nodes, filteredIds) {
 const phyloEraPackLayouts = {
   triassic: {
     columns: 7,
-    maxColumns: 7,
+    maxColumns: 8,
     targetAspect: 2,
-    baseX: 820,
-    topPad: 78,
-    bottomPad: 18,
-    rowGap: 8,
+    baseX: phyloLayoutMetrics.taxonGridX,
+    topPad: 92,
+    bottomPad: 24,
+    rowGap: phyloLayoutMetrics.taxonRowGap,
   },
   jurassic: {
     columns: 8,
-    maxColumns: 24,
+    maxColumns: 10,
     targetAspect: 2,
-    baseX: 520,
-    topPad: 46,
-    bottomPad: 18,
-    rowGap: 8,
+    baseX: phyloLayoutMetrics.taxonGridX,
+    topPad: 92,
+    bottomPad: 24,
+    rowGap: phyloLayoutMetrics.taxonRowGap,
   },
   cretaceous: {
     columns: 10,
-    maxColumns: 32,
+    maxColumns: 12,
     targetAspect: 2,
-    baseX: 500,
-    topPad: 42,
-    bottomPad: 18,
-    rowGap: 8,
+    baseX: phyloLayoutMetrics.taxonGridX,
+    topPad: 92,
+    bottomPad: 24,
+    rowGap: phyloLayoutMetrics.taxonRowGap,
   },
 };
 
@@ -18858,37 +18873,14 @@ function comparePhyloEraTaxa(a, b) {
   );
 }
 
-function interleavePhyloEraTaxa(taxa) {
-  const buckets = new Map();
-
-  taxa
-    .slice()
-    .sort(comparePhyloEraTaxa)
-    .forEach((node) => {
-      const clade = getDinoById(node.speciesId)?.clade || "other";
-      if (!buckets.has(clade)) buckets.set(clade, []);
-      buckets.get(clade).push(node);
-    });
-
-  const clades = [...buckets.keys()].sort(
-    (left, right) => getPhyloCladeOrderIndex(left) - getPhyloCladeOrderIndex(right) || left.localeCompare(right),
-  );
-  const ordered = [];
-
-  while (ordered.length < taxa.length) {
-    clades.forEach((clade) => {
-      const next = buckets.get(clade)?.shift();
-      if (next) ordered.push(next);
-    });
-  }
-
-  return ordered;
+function orderPhyloEraTaxa(taxa) {
+  return taxa.slice().sort(comparePhyloEraTaxa);
 }
 
 function getEraPackColumns(taxaCount, layout) {
   const minimumColumns = Math.max(1, layout.columns);
   const maximumColumns = Math.max(minimumColumns, layout.maxColumns || taxaCount);
-  const nodeWidth = getNodeWidth({ type: "taxon" }) + 12;
+  const nodeWidth = getNodeWidth({ type: "taxon" }) + phyloLayoutMetrics.taxonColumnGap;
   const nodeHeight = getNodeHeight() + layout.rowGap;
   const adaptiveColumns = Math.ceil(
     Math.sqrt(Math.max(1, taxaCount) * (layout.targetAspect || 2) * (nodeHeight / nodeWidth)),
@@ -18915,10 +18907,10 @@ function buildDynamicPhyloEras(nodes, filteredIds) {
   return eras.map((era) => {
     const layout = phyloEraPackLayouts[era.id] || {
       columns: 6,
-      baseX: 520,
-      topPad: 42,
-      bottomPad: 18,
-      rowGap: 8,
+      baseX: phyloLayoutMetrics.taxonGridX,
+      topPad: 92,
+      bottomPad: 24,
+      rowGap: phyloLayoutMetrics.taxonRowGap,
     };
     const taxaCount = taxaCountByEra.get(era.id) || 0;
     const columns = getEraPackColumns(taxaCount, layout);
@@ -18928,10 +18920,11 @@ function buildDynamicPhyloEras(nodes, filteredIds) {
       rows * nodeHeight +
       Math.max(0, rows - 1) * layout.rowGap +
       layout.bottomPad;
+    const minimumEraHeight = taxaCount ? 164 : 112;
     const dynamicEra = {
       ...era,
       top,
-      height: Math.max(era.height, requiredHeight),
+      height: Math.max(minimumEraHeight, requiredHeight),
       pack: { ...layout, columns },
     };
     top += dynamicEra.height;
@@ -18955,7 +18948,7 @@ function shiftPhyloGroupsIntoDynamicEras(nodes, eraBands) {
 function packTaxaIntoEraBands(nodes, eraBands, filteredIds) {
   const nodeWidth = getNodeWidth({ type: "taxon" });
   const nodeHeight = getNodeHeight();
-  const columnGap = 12;
+  const columnGap = phyloLayoutMetrics.taxonColumnGap;
   const taxaByEra = new Map();
 
   nodes.forEach((node) => {
@@ -18973,7 +18966,7 @@ function packTaxaIntoEraBands(nodes, eraBands, filteredIds) {
     const columns = layout.columns;
     const top = era.top + layout.topPad;
 
-    interleavePhyloEraTaxa(taxa).forEach((node, index) => {
+    orderPhyloEraTaxa(taxa).forEach((node, index) => {
       const row = Math.floor(index / columns);
       const column = index % columns;
       node.x = layout.baseX + column * (nodeWidth + columnGap);
@@ -18984,31 +18977,187 @@ function packTaxaIntoEraBands(nodes, eraBands, filteredIds) {
   return nodes;
 }
 
+function getPhyloGroupDepth(groupId, parentsByChild, nodeMap, cache, visiting = new Set()) {
+  if (cache.has(groupId)) return cache.get(groupId);
+  if (visiting.has(groupId)) return 0;
+  visiting.add(groupId);
+  const parentGroups = (parentsByChild.get(groupId) || []).filter(
+    (parentId) => nodeMap.get(parentId)?.type === "group",
+  );
+  const depth = parentGroups.length
+    ? Math.max(
+        ...parentGroups.map(
+          (parentId) =>
+            getPhyloGroupDepth(parentId, parentsByChild, nodeMap, cache, visiting) + 1,
+        ),
+      )
+    : 0;
+  visiting.delete(groupId);
+  cache.set(groupId, depth);
+  return depth;
+}
+
+function getVisiblePhyloDescendants(
+  groupId,
+  childrenByParent,
+  nodeMap,
+  filteredIds,
+  cache,
+  visiting = new Set(),
+) {
+  if (cache.has(groupId)) return cache.get(groupId);
+  if (visiting.has(groupId)) return new Set();
+  visiting.add(groupId);
+  const descendants = new Set();
+
+  (childrenByParent.get(groupId) || []).forEach((childId) => {
+    const child = nodeMap.get(childId);
+    if (!child) return;
+    if (child.type === "taxon") {
+      if (filteredIds.has(child.speciesId)) descendants.add(child.speciesId);
+      return;
+    }
+    getVisiblePhyloDescendants(
+      child.id,
+      childrenByParent,
+      nodeMap,
+      filteredIds,
+      cache,
+      visiting,
+    ).forEach((speciesId) => descendants.add(speciesId));
+  });
+
+  visiting.delete(groupId);
+  cache.set(groupId, descendants);
+  return descendants;
+}
+
+function distributePhyloGroupColumn(groups, layoutHeight) {
+  const nodeHeight = getNodeHeight();
+  const minimumY = phyloLayoutMetrics.canvasPadding;
+  const maximumY = Math.max(
+    minimumY,
+    layoutHeight - nodeHeight - phyloLayoutMetrics.canvasPadding,
+  );
+  const step = nodeHeight + phyloLayoutMetrics.groupVerticalGap;
+  const ordered = groups
+    .filter((node) => !node.hiddenByLayout)
+    .sort((left, right) => left.desiredY - right.desiredY || left.label.localeCompare(right.label));
+  if (!ordered.length) return;
+
+  ordered.forEach((node, index) => {
+    const previous = ordered[index - 1];
+    node.y = Math.max(
+      minimumY,
+      Math.min(maximumY, node.desiredY),
+      previous ? previous.y + step : minimumY,
+    );
+  });
+
+  const overflow = ordered[ordered.length - 1].y - maximumY;
+  if (overflow > 0) {
+    ordered.forEach((node) => {
+      node.y -= overflow;
+    });
+  }
+
+  for (let index = ordered.length - 2; index >= 0; index -= 1) {
+    ordered[index].y = Math.min(ordered[index].y, ordered[index + 1].y - step);
+  }
+
+  if (ordered[0].y < minimumY) {
+    const shift = minimumY - ordered[0].y;
+    ordered.forEach((node) => {
+      node.y += shift;
+    });
+  }
+}
+
+function layoutPhyloGroupRail(nodes, edges, filteredIds, layoutHeight) {
+  const nodeMap = new Map(nodes.map((node) => [node.id, node]));
+  const childrenByParent = new Map();
+  const parentsByChild = new Map();
+
+  edges.forEach(([from, to]) => {
+    if (!childrenByParent.has(from)) childrenByParent.set(from, []);
+    if (!parentsByChild.has(to)) parentsByChild.set(to, []);
+    childrenByParent.get(from).push(to);
+    parentsByChild.get(to).push(from);
+  });
+
+  const descendantCache = new Map();
+  const depthCache = new Map();
+  const groupsByDepth = new Map();
+
+  nodes
+    .filter((node) => node.type === "group")
+    .forEach((node) => {
+      const descendants = getVisiblePhyloDescendants(
+        node.id,
+        childrenByParent,
+        nodeMap,
+        filteredIds,
+        descendantCache,
+      );
+      const centers = [...descendants]
+        .map((speciesId) => nodeMap.get(speciesId))
+        .filter(Boolean)
+        .map((taxon) => taxon.y + getNodeHeight() / 2)
+        .sort((left, right) => left - right);
+      const depth = getPhyloGroupDepth(node.id, parentsByChild, nodeMap, depthCache);
+      const midpoint = centers.length
+        ? (centers[0] + centers[centers.length - 1]) / 2
+        : phyloLayoutMetrics.canvasPadding + getNodeHeight() / 2;
+
+      node.hiddenByLayout = centers.length === 0;
+      node.desiredY = midpoint - getNodeHeight() / 2;
+      node.x =
+        phyloLayoutMetrics.treeStartX +
+        depth * (getNodeWidth(node) + phyloLayoutMetrics.groupColumnGap);
+
+      if (!groupsByDepth.has(depth)) groupsByDepth.set(depth, []);
+      groupsByDepth.get(depth).push(node);
+    });
+
+  groupsByDepth.forEach((groups) => distributePhyloGroupColumn(groups, layoutHeight));
+  return nodes;
+}
+
 function buildPhyloLayout() {
   const { nodes, edges } = getAugmentedPhyloData();
   const filteredIds = getFilteredIdSet();
   const eraBands = buildDynamicPhyloEras(nodes, filteredIds);
-  const shiftedNodes = shiftPhyloGroupsIntoDynamicEras(nodes, eraBands);
-  const laidOutNodes = packTaxaIntoEraBands(shiftedNodes, eraBands, filteredIds);
+  const laidOutTaxa = packTaxaIntoEraBands(nodes, eraBands, filteredIds);
+  const eraHeight = eraBands.reduce((height, era) => Math.max(height, era.top + era.height), 0);
+  const layoutHeight = Math.ceil(Math.max(canvasSize.height, eraHeight));
+  const laidOutNodes = layoutPhyloGroupRail(
+    laidOutTaxa,
+    edges,
+    filteredIds,
+    layoutHeight,
+  );
   const visibleNodes = laidOutNodes.filter(
-    (node) => node.type !== "taxon" || filteredIds.has(node.speciesId),
+    (node) =>
+      (node.type !== "taxon" || filteredIds.has(node.speciesId)) &&
+      !node.hiddenByLayout,
   );
   const maxX = visibleNodes.reduce(
-    (max, node) => Math.max(max, node.x + getNodeWidth(node) + 48),
+    (max, node) =>
+      Math.max(max, node.x + getNodeWidth(node) + phyloLayoutMetrics.canvasPadding),
     0,
   );
   const maxY = visibleNodes.reduce(
-    (max, node) => Math.max(max, node.y + getNodeHeight() + 24),
+    (max, node) =>
+      Math.max(max, node.y + getNodeHeight() + phyloLayoutMetrics.canvasPadding),
     0,
   );
-  const eraHeight = eraBands.reduce((height, era) => Math.max(height, era.top + era.height), 0);
   return {
     nodes: laidOutNodes,
     edges,
     nodeMap: new Map(laidOutNodes.map((node) => [node.id, node])),
     eras: eraBands,
     width: Math.ceil(Math.max(canvasSize.width, maxX)),
-    height: Math.ceil(Math.max(canvasSize.height, eraHeight, maxY)),
+    height: Math.ceil(Math.max(layoutHeight, maxY)),
   };
 }
 
@@ -19018,22 +19167,23 @@ function applyPhyloCanvasSize() {
   if (!canvas || !lines) return;
   canvas.style.width = `${currentPhyloLayout.width}px`;
   canvas.style.height = `${currentPhyloLayout.height}px`;
+  canvas.style.setProperty("--phylo-grid-x", `${phyloLayoutMetrics.taxonGridX}px`);
   lines.setAttribute("viewBox", `0 0 ${currentPhyloLayout.width} ${currentPhyloLayout.height}`);
 }
 
-function getNodeCenter(id) {
-  const node = currentPhyloLayout.nodeMap.get(id);
-  return {
-    x: node.x + getNodeWidth(node) / 2,
-    y: node.y + getNodeHeight() / 2,
-  };
-}
-
 function edgePath(fromId, toId) {
-  const from = getNodeCenter(fromId);
-  const to = getNodeCenter(toId);
-  const midX = from.x + (to.x - from.x) * 0.54;
-  return `M ${from.x} ${from.y} C ${midX} ${from.y}, ${midX} ${to.y}, ${to.x} ${to.y}`;
+  const fromNode = currentPhyloLayout.nodeMap.get(fromId);
+  const toNode = currentPhyloLayout.nodeMap.get(toId);
+  const forward = toNode.x >= fromNode.x;
+  const fromX = fromNode.x + (forward ? getNodeWidth(fromNode) : 0);
+  const toX = toNode.x + (forward ? 0 : getNodeWidth(toNode));
+  const fromY = fromNode.y + getNodeHeight() / 2;
+  const toY = toNode.y + getNodeHeight() / 2;
+  const horizontalDistance = Math.abs(toX - fromX);
+  const bend = Math.max(34, horizontalDistance * 0.46);
+  const fromControlX = forward ? fromX + bend : fromX - bend;
+  const toControlX = forward ? toX - bend : toX + bend;
+  return `M ${fromX} ${fromY} C ${fromControlX} ${fromY}, ${toControlX} ${toY}, ${toX} ${toY}`;
 }
 
 function collectActiveEdges(targetId, active = new Set()) {
@@ -19050,9 +19200,16 @@ function renderTreeLines() {
   const filteredIds = getFilteredIdSet();
   const activeEdges = collectActiveEdges(state.selectedId);
   $("#treeLines").innerHTML = currentPhyloLayout.edges
-    .filter(([, to]) => {
+    .filter(([from, to]) => {
+      const sourceNode = currentPhyloLayout.nodeMap.get(from);
       const targetNode = currentPhyloLayout.nodeMap.get(to);
-      return targetNode.type !== "taxon" || filteredIds.has(targetNode.speciesId);
+      if (!sourceNode || !targetNode || sourceNode.hiddenByLayout || targetNode.hiddenByLayout) {
+        return false;
+      }
+      return (
+        (sourceNode.type !== "taxon" || filteredIds.has(sourceNode.speciesId)) &&
+        (targetNode.type !== "taxon" || filteredIds.has(targetNode.speciesId))
+      );
     })
     .map(([from, to]) => {
       const className = activeEdges.has(`${from}:${to}`) ? "tree-line active" : "tree-line";
@@ -19069,7 +19226,8 @@ function renderMapNodes() {
       const isTaxon = node.type === "taxon";
       const dino = isTaxon ? getDinoById(node.speciesId) : null;
       const level = isTaxon ? getKnowledgeLevel(dino.knowledgeLevel) : null;
-      const hidden = isTaxon && !filteredIds.has(node.speciesId);
+      const hidden =
+        node.hiddenByLayout || (isTaxon && !filteredIds.has(node.speciesId));
       const active = isTaxon && state.selectedId === node.speciesId;
       const groupActive = !isTaxon && state.phyloFocusId === node.id;
       const focusMatched = isTaxon && focusSpeciesIds.has(node.speciesId);
@@ -19168,7 +19326,11 @@ function applyMapTransform({ updateZoomLabel = true } = {}) {
   const canvas = $("#phyloCanvas");
   if (!canvas) return;
   canvas.style.transform = `translate3d(${state.map.x}px, ${state.map.y}px, 0) scale(${state.map.scale})`;
-  canvas.classList.toggle("is-overview", state.map.scale < 0.46);
+  canvas.classList.toggle("is-overview", state.map.scale < 0.5);
+  canvas.classList.toggle(
+    "is-compact",
+    state.map.scale >= 0.5 && state.map.scale < 0.78,
+  );
   if (updateZoomLabel) $("#zoomLevel").textContent = `${Math.round(state.map.scale * 100)}%`;
 }
 
@@ -19249,6 +19411,14 @@ function getReadableMapScale() {
   return state.map.inspectorCollapsed ? 0.76 : 0.66;
 }
 
+function getAllMapBrowseScale() {
+  const viewport = $("#mapViewport");
+  if (!viewport) return 0.58;
+  if (state.map.expanded) return 0.64;
+  if (viewport.clientWidth < 520) return 0.62;
+  return state.map.inspectorCollapsed ? 0.58 : 0.54;
+}
+
 function getMapScopeBounds(scope) {
   if (scope === "all") {
     return {
@@ -19281,15 +19451,22 @@ function getMapScopeBounds(scope) {
   };
 }
 
-function fitMapScope(scope, { minimumScale, preserveMode = false } = {}) {
+function fitMapScope(
+  scope,
+  { minimumScale, preserveMode = false, allowOverview = false } = {},
+) {
   const viewport = $("#mapViewport");
   if (!viewport || viewport.clientWidth <= 0 || viewport.clientHeight <= 0) return;
   const nextScope = ["all", "triassic", "jurassic", "cretaceous"].includes(scope) ? scope : "all";
   const bounds = getMapScopeBounds(nextScope);
   const widthScale = (viewport.clientWidth - 40) / bounds.width;
   const heightScale = (viewport.clientHeight - 40) / bounds.height;
+  const overviewMode =
+    allowOverview || (preserveMode && state.map.frameMode === "overview");
   let scale = clampScale(Math.min(widthScale, heightScale, nextScope === "all" ? 0.72 : 0.96));
-  if (nextScope !== "all") {
+  if (nextScope === "all" && !overviewMode) {
+    scale = clampScale(Math.max(scale, minimumScale ?? getAllMapBrowseScale()));
+  } else if (nextScope !== "all") {
     scale = clampScale(Math.max(scale, minimumScale ?? getReadableMapScale()));
   }
 
@@ -19297,7 +19474,22 @@ function fitMapScope(scope, { minimumScale, preserveMode = false } = {}) {
   let y = Math.round(viewport.clientHeight / 2 - (bounds.y + bounds.height / 2) * scale);
   const selectedNode = currentPhyloLayout.nodeMap.get(state.selectedId);
   const selectedDino = getSelectedDino();
-  if (nextScope !== "all" && selectedNode && selectedDino?.era === nextScope) {
+  if (nextScope === "all" && !overviewMode && selectedNode) {
+    x = Math.round(
+      viewport.clientWidth / 2 -
+        (selectedNode.x + getNodeWidth(selectedNode) / 2) * scale,
+    );
+    y = Math.round(
+      viewport.clientHeight / 2 -
+        (selectedNode.y + getNodeHeight() / 2) * scale,
+    );
+    const gridLeft = x + phyloLayoutMetrics.taxonGridX * scale;
+    if (gridLeft < 24) {
+      const selectedRight = x + (selectedNode.x + getNodeWidth(selectedNode)) * scale;
+      const availableShift = Math.max(0, viewport.clientWidth - 44 - selectedRight);
+      x += Math.min(24 - gridLeft, availableShift);
+    }
+  } else if (nextScope !== "all" && selectedNode && selectedDino?.era === nextScope) {
     const margin = 44;
     const selectedLeft = x + selectedNode.x * scale;
     const selectedRight = x + (selectedNode.x + getNodeWidth(selectedNode)) * scale;
@@ -19314,7 +19506,7 @@ function fitMapScope(scope, { minimumScale, preserveMode = false } = {}) {
   }
 
   state.map.scope = nextScope;
-  if (!preserveMode) state.map.frameMode = "scope";
+  if (!preserveMode) state.map.frameMode = overviewMode ? "overview" : "scope";
   state.map.scale = scale;
   state.map.x = Math.round(x);
   state.map.y = Math.round(y);
@@ -19347,6 +19539,10 @@ function refitCurrentMapFrame({ minimumScale } = {}) {
     focusSelectedMapNode({ minimumScale });
     return;
   }
+  if (state.map.frameMode === "overview") {
+    fitMapScope("all", { preserveMode: true, allowOverview: true });
+    return;
+  }
   fitMapScope(state.map.scope, { minimumScale, preserveMode: true });
 }
 
@@ -19361,7 +19557,7 @@ function setMapInspectorCollapsed(collapsed, { userInitiated = false } = {}) {
 function syncResponsiveMapInspector() {
   const panel = $("#atlasView .map-panel");
   if (!panel || state.map.expanded || state.map.inspectorUserSet) return;
-  const shouldCollapse = window.innerWidth <= 1380 || panel.clientWidth < 1120;
+  const shouldCollapse = window.innerWidth <= 2160 || panel.clientWidth < 1700;
   if (state.map.inspectorCollapsed === shouldCollapse) return;
   state.map.inspectorCollapsed = shouldCollapse;
   applyMapUiState();
@@ -19389,7 +19585,7 @@ function setMapExpanded(expanded) {
 }
 
 function fitMapToViewport() {
-  fitMapScope("all");
+  fitMapScope("all", { allowOverview: true });
 }
 
 function zoomMap(nextScale, originX, originY) {

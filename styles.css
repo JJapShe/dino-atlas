@@ -218,7 +218,7 @@ button {
 
 .app-shell {
   display: grid;
-  grid-template-columns: 268px minmax(0, 1fr);
+  grid-template-columns: 248px minmax(0, 1fr);
   height: 100vh;
   min-height: 640px;
   overflow: hidden;
@@ -227,9 +227,9 @@ button {
 .sidebar {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 18px;
   overflow: auto;
-  padding: 22px;
+  padding: 18px;
   border-right: 1px solid var(--line);
   background: rgba(11, 15, 21, 0.86);
   backdrop-filter: blur(18px);
@@ -439,11 +439,11 @@ select:focus,
 .main {
   display: grid;
   grid-template-rows: auto minmax(0, 1fr);
-  gap: 18px;
+  gap: 14px;
   min-width: 0;
   height: 100vh;
   overflow: hidden;
-  padding: 22px;
+  padding: 16px;
 }
 
 .topbar {
@@ -513,8 +513,8 @@ select:focus,
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
-  min-height: 76px;
-  padding: 18px;
+  min-height: 68px;
+  padding: 14px 16px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -629,6 +629,7 @@ select:focus,
   position: absolute;
   left: 0;
   top: 0;
+  --phylo-grid-x: 840px;
   width: 2060px;
   height: 1260px;
   transform-origin: 0 0;
@@ -637,8 +638,9 @@ select:focus,
 }
 
 .phylo-canvas.is-overview .map-node.taxon {
+  place-content: center;
   gap: 0;
-  padding: 0;
+  padding: 8px;
   background:
     linear-gradient(135deg, var(--taxon-accent, var(--accent)), var(--taxon-wash-alt, rgba(230, 196, 106, 0.62))),
     var(--taxon-bg, rgba(15, 22, 31, 0.94));
@@ -647,8 +649,20 @@ select:focus,
     0 8px 18px rgba(0, 0, 0, 0.18);
 }
 
-.phylo-canvas.is-overview .map-node.taxon > * {
-  opacity: 0;
+.phylo-canvas.is-overview .map-node.taxon .node-kind,
+.phylo-canvas.is-overview .map-node.taxon .node-meta,
+.phylo-canvas.is-overview .map-node.taxon .node-palette {
+  display: none;
+}
+
+.phylo-canvas.is-overview .map-node.taxon strong {
+  display: -webkit-box;
+  max-height: 38px;
+  color: rgba(247, 250, 249, 0.94);
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  -webkit-line-clamp: 2;
 }
 
 .phylo-canvas.is-overview .map-node.taxon.active {
@@ -663,13 +677,48 @@ select:focus,
 }
 
 .phylo-canvas.is-overview .map-node.group {
-  padding: 8px;
+  place-content: center;
+  padding: 10px;
   text-align: center;
 }
 
 .phylo-canvas.is-overview .map-node.group strong {
-  font-size: 12px;
+  font-size: 15px;
   -webkit-line-clamp: 2;
+}
+
+.phylo-canvas.is-compact .map-node.taxon {
+  place-content: center;
+  padding: 7px 10px 8px 13px;
+}
+
+.phylo-canvas.is-compact .map-node.taxon .node-kind,
+.phylo-canvas.is-compact .map-node.taxon .node-meta,
+.phylo-canvas.is-compact .map-node.taxon .node-palette {
+  display: none;
+}
+
+.phylo-canvas.is-compact .map-node.taxon strong {
+  max-height: 38px;
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: center;
+  -webkit-line-clamp: 2;
+}
+
+.phylo-canvas.is-compact .map-node.group .node-kind,
+.phylo-canvas.is-compact .map-node.group > span:last-child {
+  display: none;
+}
+
+.phylo-canvas.is-compact .map-node.group {
+  place-content: center;
+  padding: 9px;
+  text-align: center;
+}
+
+.phylo-canvas.is-compact .map-node.group strong {
+  font-size: 14px;
 }
 
 .period-bands,
@@ -701,8 +750,9 @@ select:focus,
 
 .period-label {
   position: absolute;
-  left: 26px;
-  top: 24px;
+  left: var(--phylo-grid-x);
+  top: 18px;
+  pointer-events: none;
 }
 
 .period-label strong {
@@ -728,6 +778,7 @@ select:focus,
   fill: none;
   stroke: rgba(147, 164, 181, 0.32);
   stroke-width: 2;
+  stroke-linecap: round;
 }
 
 .tree-line.active {
@@ -746,8 +797,8 @@ select:focus,
   align-content: center;
   gap: 2px;
   min-width: 0;
-  height: 64px;
-  padding: 5px 7px 6px 10px;
+  height: 68px;
+  padding: 6px 8px 7px 11px;
   border: 1px solid rgba(52, 69, 89, 0.95);
   border-radius: 8px;
   background: rgba(15, 22, 31, 0.94);
@@ -757,14 +808,14 @@ select:focus,
 
 .map-node.group {
   z-index: 6;
-  width: 126px;
+  width: 136px;
   border-color: rgba(230, 196, 106, 0.36);
   cursor: pointer;
 }
 
 .map-node.taxon {
   z-index: 1;
-  width: 132px;
+  width: 148px;
   border-color: var(--taxon-border, rgba(52, 69, 89, 0.95));
   background:
     linear-gradient(135deg, var(--taxon-wash, rgba(85, 214, 190, 0.3)), transparent 58%),
@@ -866,7 +917,7 @@ select:focus,
   min-width: 0;
   overflow: hidden;
   color: var(--text);
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.18;
   max-height: 26px;
   text-overflow: clip;
@@ -958,11 +1009,12 @@ body.map-expanded-open {
 .map-panel.map-expanded {
   position: fixed;
   z-index: 90;
-  inset: 12px;
+  inset: 0;
   width: auto;
   height: auto;
   min-height: 0;
-  border-color: rgba(85, 214, 190, 0.42);
+  border: 0;
+  border-radius: 0;
   background: #0b1017;
   box-shadow: 0 28px 90px rgba(0, 0, 0, 0.72);
 }
@@ -2416,11 +2468,11 @@ body.lightbox-open {
 
 @media (min-width: 1500px) {
   .app-shell {
-    grid-template-columns: 292px minmax(0, 1fr);
+    grid-template-columns: 268px minmax(0, 1fr);
   }
 
   .main {
-    padding: 28px;
+    padding: 20px;
   }
 
   .map-stage {
@@ -2437,11 +2489,12 @@ body.lightbox-open {
     height: auto;
     min-height: 100vh;
     overflow: visible;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .sidebar {
     position: static;
+    min-width: 0;
     overflow: visible;
     border-right: 0;
     border-bottom: 1px solid var(--line);
@@ -2449,6 +2502,8 @@ body.lightbox-open {
 
   .main {
     display: block;
+    width: 100%;
+    min-width: 0;
     height: auto;
     overflow: visible;
     padding: 28px;
@@ -2459,7 +2514,7 @@ body.lightbox-open {
   }
 
   .nav-tabs {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .review-layout,
@@ -2582,7 +2637,62 @@ body.lightbox-open {
 
   .main,
   .sidebar {
-    padding: 18px;
+    padding: 14px;
+  }
+
+  .sidebar {
+    gap: 12px;
+  }
+
+  .nav-tabs {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+  }
+
+  .nav-tabs::-webkit-scrollbar,
+  .sidebar-panel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-tab {
+    min-height: 38px;
+    flex: 0 0 88px;
+    justify-content: center;
+    padding: 0 10px;
+  }
+
+  .sidebar-panel {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 12px;
+    box-shadow: none;
+    scrollbar-width: none;
+  }
+
+  .sidebar-panel .panel-heading {
+    order: 4;
+    flex: 0 0 auto;
+  }
+
+  .sidebar-panel .panel-heading > span {
+    display: none;
+  }
+
+  .sidebar-panel .search-field {
+    flex: 0 0 200px;
+  }
+
+  .sidebar-panel .filter-group {
+    flex: 0 0 224px;
+  }
+
+  .sidebar-panel .segmented {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .topbar,
@@ -2595,9 +2705,14 @@ body.lightbox-open {
   .map-toolbar {
     grid-template-columns: minmax(0, 1fr);
     width: 100%;
+    gap: 8px;
+    padding: 10px 12px;
   }
 
-  .map-toolbar-heading,
+  .map-toolbar-heading {
+    display: none;
+  }
+
   .map-era-controls,
   .map-controls {
     width: 100%;
@@ -2605,20 +2720,39 @@ body.lightbox-open {
 
   .map-era-controls {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 1;
+    padding-top: 0;
   }
 
   .map-controls {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2;
     justify-self: stretch;
   }
 
-  .metric-row,
   .card-grid,
   .fact-grid {
     grid-template-columns: 1fr;
     width: 100%;
+  }
+
+  .metric-row {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: 100%;
+    gap: 6px;
+  }
+
+  .metric {
+    min-height: 58px;
+    padding: 8px;
+  }
+
+  .metric strong {
+    font-size: 18px;
+  }
+
+  .metric span {
+    font-size: 10px;
   }
 
   .map-controls {
