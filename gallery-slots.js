@@ -3653,27 +3653,51 @@ window.gallerySlotAssignments = {
   ],
   "conchoraptor-gracilis": [
     {
-      "source": "assets/dinosaurs/conchoraptor-gracilis-crestless-beak-imagegen-v1.png",
+      "source": "assets/dinosaurs/conchoraptor-gracilis-flat-skull-nuchal-step-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "khulsan-baruungoyot-aeolian-interdune",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/conchoraptor-gracilis-slate-vermilion-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/conchoraptor-gracilis-charcoal-rust-dawn-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "khulsan-baruungoyot-aeolian-interdune",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/conchoraptor-gracilis-baruungoyot-forage-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/conchoraptor-gracilis-postrain-khulsan-interdune-habitat-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "khulsan-baruungoyot-aeolian-interdune",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/conchoraptor-gracilis-three-digit-hands-nuchal-step-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "khulsan-baruungoyot-aeolian-interdune",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/conchoraptor-gracilis-distant-ankylosaur-community-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "khulsan-baruungoyot-aeolian-interdune",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/conchoraptor-gracilis-separated-individuals-social-context-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "khulsan-baruungoyot-aeolian-interdune",
       "expectedKind": "anatomy review"
     }
   ],

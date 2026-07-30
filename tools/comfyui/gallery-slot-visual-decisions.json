@@ -4096,30 +4096,57 @@
     "conchoraptor-gracilis": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/conchoraptor-gracilis-crestless-beak-imagegen-v1.png",
+        "source": "assets/dinosaurs/conchoraptor-gracilis-flat-skull-nuchal-step-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The single complete adult preserves a flat crestless skull roof, abrupt posterior nuchal step, robust cheek, vertical-front broad beak, two three-digit hands, two hindlimbs and feet, and one compact pelvis-origin tail.",
+        "reviewMethod": "Batch 67 original-size whole-frame and hand-count inspection against Foster, Norell and Balanoff 2025 cranial, premaxillary, jugal and postcranial figures; feathers and color remain comparative reconstruction.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-67",
+        "reviewedAt": "2026-07-30T22:14:22.995Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/conchoraptor-gracilis-slate-vermilion-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/conchoraptor-gracilis-charcoal-rust-dawn-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing dawn walk retains the representative's charcoal, buff, rust and ochre marking topology and the same flat-roofed head, paired three-digit hands, paired feet and single short tail without synthetic pattern drift.",
+        "reviewMethod": "Batch 67 original-size same-individual palette, head-profile, hand-count, hindlimb and tail comparison against slot 1.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-67",
+        "reviewedAt": "2026-07-30T22:14:22.995Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/conchoraptor-gracilis-baruungoyot-forage-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/conchoraptor-gracilis-postrain-khulsan-interdune-habitat-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "One complete animal remains readable within a broad red-sandstone dune and damp interdune reconstruction, with two three-digit hands, two hindlimbs and feet, and one short tail; no food or unsupported feeding action is shown.",
+        "reviewMethod": "Batch 67 original-size appendage-count and habitat inspection against the well-sorted red sandstone, aeolian dune and interdune depositional interpretation in Foster, Norell and Balanoff 2025; post-rain surface water is labeled hypothetical.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-67",
+        "reviewedAt": "2026-07-30T22:14:22.995Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/conchoraptor-gracilis-three-digit-hands-nuchal-step-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "The intentional head-to-hand crop clearly resolves the flat crestless roof, abrupt posterior step, broad vertical-front beak, robust cheek, and exactly three separately clawed digits on each of two non-overlapping hands.",
+        "reviewMethod": "Batch 67 original-size head and six-total-hand-digit inspection against the 2025 cranium, premaxilla and jugal comparisons; no distal foot or tail claim is made from the crop.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-67",
+        "reviewedAt": "2026-07-30T22:14:22.995Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/conchoraptor-gracilis-distant-ankylosaur-community-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "The foreground Conchoraptor passes the flat-skull, two-arm, three-digit-per-hand, two-leg, two-foot and one-short-tail gates; one low armored herbivore remains distant, hornless, spatially separated and non-interacting.",
+        "reviewMethod": "Batch 67 original-size whole-frame plus dedicated foreground-hand and distant-herbivore crops; the background animal was checked for one head, four supporting legs, one tail club and no physical contact, and remains an unidentified community hypothesis.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-67",
+        "reviewedAt": "2026-07-30T22:14:22.995Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/conchoraptor-gracilis-separated-individuals-social-context-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "Two same-phenotype adults are fully separated on different ground levels; both retain one flat-roofed head, two forelimbs with three digits per hand, two hindlimbs and feet, and one compact tail without contact or pair-bond staging.",
+        "reviewMethod": "Batch 67 original-size whole-frame plus enlarged foreground-hand and background-individual inspection; the joint Khulsan burial context from Foster, Norell and Balanoff 2025 is treated only as cautious proximity context, not social, sex or reproductive evidence.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-67",
+        "reviewedAt": "2026-07-30T22:14:22.995Z"
       }
     },
     "elmisaurus-rarus": {
@@ -6481,6 +6508,15 @@
     }
   },
   "rejectedSources": {
+    "assets/dinosaurs/conchoraptor-gracilis-crestless-beak-imagegen-v1.png": {
+      "reason": "The former representative has a generic rounded modern-bird head rather than the flat roof and abrupt nuchal step, unreliable four-like hand digits, and an overlong tail."
+    },
+    "assets/dinosaurs/conchoraptor-gracilis-slate-vermilion-pattern-imagegen-v1.png": {
+      "reason": "The former pattern repeats the rounded generic bird head and long tail while neither hand resolves the required three-digit topology."
+    },
+    "assets/dinosaurs/conchoraptor-gracilis-baruungoyot-forage-ecology-imagegen-v1.png": {
+      "reason": "Generic birdlike primary animals, unidentified shell- or fruit-like food, unstable horned background animals, and unreliable appendage counts make both the anatomy and feeding claim unsafe."
+    },
     "assets/dinosaurs/khaan-mckennai-crestless-feathered-imagegen-v1.png": {
       "reason": "The former representative uses a long generic modern-bird neck and body, a narrow birdlike head, and weak Khaan skull and broad-beak cues, so the old approval is superseded."
     },

@@ -70,6 +70,13 @@ const HABITATS = {
     light: "clear neutral daylight or cool post-rain light without a global desert-orange cast",
     backgroundPalette: ["#b79a72", "#8a6650", "#64706a"],
   },
+  "khulsan-baruungoyot-aeolian-interdune": {
+    substrate: "well-sorted red aeolian sandstone, broad dune slopes, firm interdune surfaces, wind ripples, and shallow episodic runoff channels",
+    vegetation: "very sparse low gray-green non-grass Mesozoic plants with broad open ground",
+    moisture: "arid dune field with interdune deposits and rare post-rain water films; dune-collapse evidence is taphonomic context rather than behavior",
+    light: "neutral overcast, restrained dawn, or cool post-rain light with localized red-earth reflection and no global orange cast",
+    backgroundPalette: ["#9a654f", "#6f6258", "#6b7464"],
+  },
   "wuerho-shallow-delta-lake-margin": {
     substrate: "gray-green and pale yellow sandstone, muted red to reddish-brown mudstone, shallow distributary bars, gravelly splays, and exposed firm lake-margin silt",
     vegetation: "sparse low horsetails, ferns, and restrained non-grass Mesozoic ground plants with broad open shoreline",
@@ -544,6 +551,7 @@ function habitatFor(dino, route) {
   else if (dino.id === "ceratosaurus-nasicornis") key = "garden-park-felch-point-bar";
   else if (["gallimimus-bullatus", "therizinosaurus-cheloniformis", "mononykus-olecranus"].includes(dino.id)) key = "nemegt-fluvial-floodplain";
   else if (["oviraptor-philoceratops", "citipati-osmolskae", "khaan-mckennai"].includes(dino.id)) key = "djadokhta-semiarid-dune";
+  else if (dino.id === "conchoraptor-gracilis") key = "khulsan-baruungoyot-aeolian-interdune";
   else if (dino.id === "dsungaripterus-weii") key = "wuerho-shallow-delta-lake-margin";
   else if (dino.id === "nyctosaurus-gracilis") key = "smoky-hill-open-seaway";
   else if (dino.id === "dimorphodon-macronyx") key = "blue-lias-coastal-lowland";
