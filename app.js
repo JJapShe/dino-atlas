@@ -3530,16 +3530,16 @@ const eras = [
 ];
 
 const phyloLayoutMetrics = Object.freeze({
-  taxonWidth: 168,
-  groupWidth: 150,
-  nodeHeight: 76,
-  taxonColumnGap: 18,
-  taxonRowGap: 14,
+  taxonWidth: 176,
+  groupWidth: 164,
+  nodeHeight: 82,
+  taxonColumnGap: 24,
+  taxonRowGap: 18,
   treeStartX: 40,
-  groupColumnGap: 26,
-  groupRailGap: 96,
-  canvasPadding: 56,
-  groupVerticalGap: 18,
+  groupColumnGap: 32,
+  groupRailGap: 152,
+  canvasPadding: 64,
+  groupVerticalGap: 24,
 });
 
 const canvasSize = {
@@ -4241,6 +4241,7 @@ const state = {
     inspectorBeforeExpand: false,
     inspectorAutoCollapsed: false,
     inspectorUserSet: false,
+    sidebarExpanded: false,
     layoutFrame: 0,
     dragging: false,
     transformFrame: 0,
@@ -20025,20 +20026,20 @@ function resolvePhyloNodeCollisions(nodes, filteredIds) {
 const phyloEraPackLayouts = {
   triassic: {
     minimumColumns: 4,
-    topPad: 100,
-    bottomPad: 28,
+    topPad: 116,
+    bottomPad: 32,
     rowGap: phyloLayoutMetrics.taxonRowGap,
   },
   jurassic: {
     minimumColumns: 4,
-    topPad: 100,
-    bottomPad: 28,
+    topPad: 116,
+    bottomPad: 32,
     rowGap: phyloLayoutMetrics.taxonRowGap,
   },
   cretaceous: {
     minimumColumns: 4,
-    topPad: 100,
-    bottomPad: 28,
+    topPad: 116,
+    bottomPad: 32,
     rowGap: phyloLayoutMetrics.taxonRowGap,
   },
 };
@@ -20118,8 +20119,8 @@ function buildDynamicPhyloEras(nodes, filteredIds, taxonGridX) {
   return eras.map((era) => {
     const layout = phyloEraPackLayouts[era.id] || {
       minimumColumns: 4,
-      topPad: 100,
-      bottomPad: 28,
+      topPad: 116,
+      bottomPad: 32,
       rowGap: phyloLayoutMetrics.taxonRowGap,
     };
     const taxaCount = taxaCountByEra.get(era.id) || 0;
@@ -20680,10 +20681,10 @@ function applyMapTransform({ updateZoomLabel = true } = {}) {
   if (!canvas) return;
   const renderedTaxonWidth = phyloLayoutMetrics.taxonWidth * state.map.scale;
   canvas.style.transform = `translate3d(${state.map.x}px, ${state.map.y}px, 0) scale(${state.map.scale})`;
-  canvas.classList.toggle("is-overview", renderedTaxonWidth < 96);
+  canvas.classList.toggle("is-overview", renderedTaxonWidth < 108);
   canvas.classList.toggle(
     "is-compact",
-    renderedTaxonWidth >= 96 && renderedTaxonWidth < 126,
+    renderedTaxonWidth >= 108 && renderedTaxonWidth < 144,
   );
   if (updateZoomLabel) $("#zoomLevel").textContent = `${Math.round(state.map.scale * 100)}%`;
   updateMapNavigatorViewport();
@@ -20708,22 +20709,34 @@ function flushMapPanTransform() {
 
 function applyMapUiState() {
   const panel = $("#atlasView .map-panel");
+  const shell = $(".app-shell");
+  const sidebarButton = $("#toggleAtlasSidebar");
   const inspectorButton = $("#toggleMapInspector");
   const expandButton = $("#toggleMapExpand");
-  if (!panel || !inspectorButton || !expandButton) return;
+  if (!panel || !shell || !sidebarButton || !inspectorButton || !expandButton) return;
 
   panel.classList.toggle("inspector-collapsed", state.map.inspectorCollapsed);
   panel.classList.toggle("map-expanded", state.map.expanded);
+  shell.classList.toggle(
+    "atlas-sidebar-expanded",
+    state.view === "atlas" && state.map.sidebarExpanded,
+  );
   document.body.classList.toggle("map-expanded-open", state.map.expanded);
 
   const selectedName = getSelectedDino()?.koreanName || "선택 공룡";
+  const sidebarAction = state.map.sidebarExpanded ? "탐색 패널 접기" : "탐색 패널 열기";
   const inspectorAction = state.map.inspectorCollapsed ? "정보 열기" : "정보 접기";
+  sidebarButton.setAttribute("aria-expanded", String(state.map.sidebarExpanded));
+  sidebarButton.setAttribute("aria-label", sidebarAction);
+  sidebarButton.title = sidebarAction;
   inspectorButton.setAttribute("aria-pressed", String(state.map.inspectorCollapsed));
   inspectorButton.setAttribute("aria-label", `${selectedName} ${inspectorAction}`);
   inspectorButton.title = `${selectedName} ${inspectorAction}`;
   expandButton.setAttribute("aria-pressed", String(state.map.expanded));
   expandButton.setAttribute("aria-label", state.map.expanded ? "지도 확장 닫기" : "지도 확장");
   expandButton.title = state.map.expanded ? "지도 확장 닫기" : "지도 확장";
+  const expandLabel = expandButton.querySelector(".map-control-label");
+  if (expandLabel) expandLabel.textContent = state.map.expanded ? "닫기" : "전체 화면";
 }
 
 function clampScale(scale) {
@@ -20764,13 +20777,13 @@ function getReadableMapScale() {
   if (!viewport) return 0.86;
   const targetCardWidth = state.map.expanded
     ? state.map.inspectorCollapsed
-      ? 156
-      : 144
+      ? 168
+      : 156
     : viewport.clientWidth < 520
-      ? 132
+      ? 140
       : state.map.inspectorCollapsed
-        ? 150
-        : 138;
+        ? 162
+        : 150;
   return clampScale(targetCardWidth / phyloLayoutMetrics.taxonWidth);
 }
 
@@ -20778,12 +20791,12 @@ function getAllMapBrowseScale() {
   const viewport = $("#mapViewport");
   if (!viewport) return 0.82;
   const targetCardWidth = state.map.expanded
-    ? 146
+    ? 162
     : viewport.clientWidth < 520
-      ? 124
+      ? 132
       : state.map.inspectorCollapsed
-        ? 142
-        : 132;
+        ? 156
+        : 146;
   return clampScale(targetCardWidth / phyloLayoutMetrics.taxonWidth);
 }
 
@@ -20809,8 +20822,8 @@ function getMapScopeBounds(scope) {
 
   const left = Math.min(...scopedNodes.map((node) => node.x));
   const right = Math.max(...scopedNodes.map((node) => node.x + getNodeWidth(node)));
-  const horizontalPad = 56;
-  const verticalPad = 18;
+  const horizontalPad = 72;
+  const verticalPad = 24;
   return {
     x: Math.max(0, left - horizontalPad),
     y: Math.max(0, era.top + verticalPad),
@@ -20933,10 +20946,19 @@ function setMapInspectorCollapsed(collapsed, { userInitiated = false } = {}) {
   });
 }
 
+function setAtlasSidebarExpanded(expanded) {
+  state.map.sidebarExpanded = Boolean(expanded);
+  applyMapUiState();
+  requestAnimationFrame(() => {
+    renderPhyloMap();
+    refitCurrentMapFrame();
+  });
+}
+
 function syncResponsiveMapInspector() {
   const panel = $("#atlasView .map-panel");
   if (!panel || state.map.expanded || state.map.inspectorUserSet) return;
-  const shouldCollapse = window.innerWidth <= 2160 || panel.clientWidth < 1700;
+  const shouldCollapse = true;
   if (state.map.inspectorCollapsed === shouldCollapse) return;
   state.map.inspectorCollapsed = shouldCollapse;
   applyMapUiState();
@@ -25101,6 +25123,9 @@ function bindMapEvents() {
   });
   $("#toggleMapInspector").addEventListener("click", () =>
     setMapInspectorCollapsed(!state.map.inspectorCollapsed, { userInitiated: true }),
+  );
+  $("#toggleAtlasSidebar").addEventListener("click", () =>
+    setAtlasSidebarExpanded(!state.map.sidebarExpanded),
   );
   $("#toggleMapExpand").addEventListener("click", () => setMapExpanded(!state.map.expanded));
 
