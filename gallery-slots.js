@@ -1363,43 +1363,51 @@ window.gallerySlotAssignments = {
   ],
   "bellusaurus-sui": [
     {
-      "source": "assets/dinosaurs/bellusaurus-sui-shortneck-sauropod-imagegen-v1.png",
+      "source": "assets/dinosaurs/bellusaurus-sui-mineralteal-shishugou-representative-imagegen-v3.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "shishugou-seasonal-alluvial-wetland",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/bellusaurus-sui-slate-olive-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/bellusaurus-sui-aubergine-celadon-bluehour-pattern-imagegen-v3.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "shishugou-seasonal-alluvial-wetland",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/bellusaurus-sui-shishugou-group-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/bellusaurus-sui-high-oblique-seasonal-wetland-habitat-imagegen-v3.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "shishugou-seasonal-alluvial-wetland",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/bellusaurus-sui-short-necked-young-sauropod-identity-imagegen-v2.png",
+      "source": "assets/dinosaurs/bellusaurus-sui-juvenile-boxy-skull-cranial-anatomy-imagegen-v3.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "shishugou-seasonal-alluvial-wetland",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/bellusaurus-sui-monolophosaurus-escape-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/bellusaurus-sui-channel-separated-theropod-context-ecology-imagegen-v3.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "shishugou-seasonal-alluvial-wetland",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/bellusaurus-sui-separated-juvenile-sizeclasses-ecology-imagegen-v3.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "shishugou-seasonal-alluvial-wetland",
       "expectedKind": "anatomy review"
     }
   ],

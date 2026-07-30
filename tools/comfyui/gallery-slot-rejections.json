@@ -1,7 +1,34 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-30-richness-six-slot-batch-52",
+  "reviewBatch": "2026-07-30-richness-six-slot-batch-53",
   "rejectedSources": {
+    "assets/dinosaurs/bellusaurus-sui-monolophosaurus-duststorm-herd-shield-defense-ecology-imagegen-v1.png": {
+      "reason": "A named Monolophosaurus dust-storm attack and herd-shield response overstate direct interaction and social behavior while crowding the primary anatomy."
+    },
+    "assets/dinosaurs/bellusaurus-sui-monolophosaurus-escape-ecology-imagegen-v1.png": {
+      "reason": "The direct named-species pursuit is speculative, repeats a broadside chase composition, and makes independent limb and tail review unreliable."
+    },
+    "assets/dinosaurs/bellusaurus-sui-monolophosaurus-herd-shield-defense-ecology-imagegen-v1.png": {
+      "reason": "The herd-shield defense treats a hydraulically accumulated juvenile bonebed as evidence of coordinated social behavior and obscures appendage counts."
+    },
+    "assets/dinosaurs/bellusaurus-sui-monolophosaurus-tail-barrier-defense-ecology-imagegen-v1.png": {
+      "reason": "Named predator contact and a coordinated tail barrier are unsupported behavioral claims, with overlapping bodies that prevent clean anatomy review."
+    },
+    "assets/dinosaurs/bellusaurus-sui-shishugou-group-ecology-imagegen-v1.png": {
+      "reason": "The crowded group scene overstates gregariousness from a transported juvenile assemblage and adds little species-specific anatomy."
+    },
+    "assets/dinosaurs/bellusaurus-sui-shishugou-pebblebar-blackberry-jade-rosette-ecology-imagegen-v1.png": {
+      "reason": "The lizard- or ornithopod-like head, weak short-necked sauropod body plan, and decorative rosettes fail the Bellusaurus identity gate."
+    },
+    "assets/dinosaurs/bellusaurus-sui-short-necked-young-sauropod-identity-imagegen-v2.png": {
+      "reason": "The long monitor-lizard-like head, stubby neck and elephant-like feet do not match the evidence-bounded juvenile Bellusaurus reconstruction."
+    },
+    "assets/dinosaurs/bellusaurus-sui-shortneck-sauropod-imagegen-v1.png": {
+      "reason": "The former representative has a generic long lizard head, repetitive ochre broadside staging and elephant-like nail rows."
+    },
+    "assets/dinosaurs/bellusaurus-sui-slate-olive-pattern-imagegen-v1.png": {
+      "reason": "The palette variant repeats the same generic broadside body, long lizard-like head and unstable elephant-like feet without improving identity."
+    },
     "assets/dinosaurs/megalosaurus-bucklandii-bluegray-umber-pattern-imagegen-v1.png": {
       "reason": "Generic gray-brown broadside theropod, weak dentary and robust-forelimb identity cues, and repetitive palette do not support the rebuilt six-role gallery."
     },
