@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-30T02:00:20.309Z",
-  "reviewBatch": "2026-07-30-richness-six-slot-batch-53",
-  "reviewMethod": "Moore et al. 2018 Bellusaurus composite juvenile skull and monospecific bonebed evidence; Dong 1990 juvenile postcranial measurements and hydraulic-transport boundary; Eberth et al. 2010 seasonal Shishugou alluvial, fluvial and wetland setting; original-size inspection of all six selected 1536x1024 images plus full-body, head, limb, foot, pelvis, tail and secondary-animal crops; complete primary animals retain exactly two forelimbs, two hindlimbs and one pelvis-origin tail, while complete living body proportions, hands, feet, skin, colors, markings, exact plants, social behavior, growth association and same-frame fauna remain comparative or ecological hypotheses",
-  "targetSlots": 596,
+  "generatedAt": "2026-07-30T03:21:12.569Z",
+  "reviewBatch": "2026-07-30-richness-six-slot-batch-54",
+  "reviewMethod": "Original-size inspection of three built-in imagegen outputs and seventeen existing expansion candidates; exact species identity, limb count, pelvis-origin tail continuity, palette consistency, habitat fit, subject separation, composition, and artifact gates; five failed candidates rejected for taxon drift or body-plan error.",
+  "targetSlots": 603,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -928,6 +928,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/pisanosaurus-mertii-beaked-biped-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "A complete isolated primary animal preserves a low beaked head, light bipedal body, exactly two forelimbs, two hindlimbs, visible feet, and one uninterrupted pelvis-origin tail; restrained olive-brown patterning remains consistent with the canonical phenotype.",
+        "reviewMethod": "Original-size inspection of three built-in imagegen outputs and seventeen existing expansion candidates; exact species identity, limb count, pelvis-origin tail continuity, palette consistency, habitat fit, subject separation, composition, and artifact gates; five failed candidates rejected for taxon drift or body-plan error.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-54",
+        "reviewedAt": "2026-07-30T03:21:12.569Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/pisanosaurus-mertii-herrerasaurus-escape-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "The small beaked primary animal remains visually separate from the distant theropod, with a readable bipedal silhouette, complete tail, no body fusion, and no wound or gore; the named interaction remains an ecological hypothesis.",
+        "reviewMethod": "Original-size inspection of three built-in imagegen outputs and seventeen existing expansion candidates; exact species identity, limb count, pelvis-origin tail continuity, palette consistency, habitat fit, subject separation, composition, and artifact gates; five failed candidates rejected for taxon drift or body-plan error.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-54",
+        "reviewedAt": "2026-07-30T03:21:12.569Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/pisanosaurus-mertii-eodromaeus-defensive-turn-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The primary Pisanosaurus retains its beaked head, light body, two forelimbs, two hindlimbs, and single complete balancing tail during a separated evasive turn; the defensive behavior is explicitly presented as hypothetical.",
+        "reviewMethod": "Original-size inspection of three built-in imagegen outputs and seventeen existing expansion candidates; exact species identity, limb count, pelvis-origin tail continuity, palette consistency, habitat fit, subject separation, composition, and artifact gates; five failed candidates rejected for taxon drift or body-plan error.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-54",
+        "reviewedAt": "2026-07-30T03:21:12.569Z"
       }
     },
     "heterodontosaurus-tucki": {
@@ -1087,6 +1114,15 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/marshosaurus-bicentesimus-separated-adult-subadult-ecology-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "Adult and smaller comparison animal are separated by depth and terrain, each with a lean hornless theropod profile, exactly two forelimbs, two hindlimbs, visible feet, and one complete tail; matching charcoal-rust markings support a controlled growth comparison without asserting social care.",
+        "reviewMethod": "Original-size inspection of three built-in imagegen outputs and seventeen existing expansion candidates; exact species identity, limb count, pelvis-origin tail continuity, palette consistency, habitat fit, subject separation, composition, and artifact gates; five failed candidates rejected for taxon drift or body-plan error.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-54",
+        "reviewedAt": "2026-07-30T03:21:12.569Z"
       }
     },
     "megalosaurus-bucklandii": {
@@ -1358,6 +1394,15 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/dracovenator-regenti-separated-adult-subadult-ecology-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "The separated adult and smaller animal preserve low nasal swellings, ochre-charcoal pattern continuity, exactly two forelimbs, two hindlimbs, visible feet, and one complete tail each; spatial separation prevents body fusion and the caption avoids unsupported group behavior.",
+        "reviewMethod": "Original-size inspection of three built-in imagegen outputs and seventeen existing expansion candidates; exact species identity, limb count, pelvis-origin tail continuity, palette consistency, habitat fit, subject separation, composition, and artifact gates; five failed candidates rejected for taxon drift or body-plan error.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-54",
+        "reviewedAt": "2026-07-30T03:21:12.569Z"
       }
     },
     "monolophosaurus-jiangi": {
@@ -4668,6 +4713,15 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/enigmacursor-mollyborthwickae-ornitholestes-log-vault-defense-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The small beaked runner remains the clear primary subject, with two forelimbs, two hindlimbs, a single continuous tail, and terrain separation from the distant theropod; the action is retained only as a cautious defensive ecology hypothesis.",
+        "reviewMethod": "Original-size inspection of three built-in imagegen outputs and seventeen existing expansion candidates; exact species identity, limb count, pelvis-origin tail continuity, palette consistency, habitat fit, subject separation, composition, and artifact gates; five failed candidates rejected for taxon drift or body-plan error.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-54",
+        "reviewedAt": "2026-07-30T03:21:12.569Z"
       }
     },
     "othnielosaurus-consors": {
@@ -4715,6 +4769,15 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/othnielosaurus-consors-ornitholestes-hind-kick-defense-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The small beaked biped has readable forelimb and hindlimb attachments, one complete balancing tail, and no body merger with the separated theropod; the kick-like pose is labelled as a hypothetical defensive scene rather than direct behavioral evidence.",
+        "reviewMethod": "Original-size inspection of three built-in imagegen outputs and seventeen existing expansion candidates; exact species identity, limb count, pelvis-origin tail continuity, palette consistency, habitat fit, subject separation, composition, and artifact gates; five failed candidates rejected for taxon drift or body-plan error.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-54",
+        "reviewedAt": "2026-07-30T03:21:12.569Z"
       }
     },
     "camptosaurus-dispar": {
@@ -6837,6 +6900,21 @@
     },
     "assets/dinosaurs/saturnalia-tupiniquim-santa-maria-forage-ecology-imagegen-v1.png": {
       "reason": "Multiple similar brown animals and an explicit herbivorous-foraging claim conflict with the revised partially faunivorous evidence and make individual skull, hand, foot, and tail review unreliable."
+    },
+    "assets/dinosaurs/dimorphodon-macronyx-blue-lias-overhead-glide-imagegen-v2.png": {
+      "reason": "The long low head and generic rhamphorhynchid silhouette lose the deep short Dimorphodon skull cue, so the image fails the taxon-identity gate despite a readable wing membrane."
+    },
+    "assets/dinosaurs/diplodocus-carnegiei-allosaurus-tail-defense-ecology-imagegen-v1.png": {
+      "reason": "The primary sauropod has a severely shortened neck and generic body proportions, while the secondary theropod anatomy is unstable; the scene fails Diplodocus identity and independent-anatomy review."
+    },
+    "assets/dinosaurs/diplodocus-carnegiei-allosaurus-juvenile-shield-defense-ecology-imagegen-v1.png": {
+      "reason": "The short-necked generic sauropod body and overlapping defensive staging do not preserve the elongated Diplodocus profile or reliable limb and tail attachments."
+    },
+    "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-dust-branch-armor-dodge-ecology-imagegen-v1.png": {
+      "reason": "The primary animal is rendered as a squat heavily armored ankylosaur-like quadruped instead of a lightly built Scutellosaurus with sparse small osteoderms."
+    },
+    "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-scrub-dodge-defense-ecology-imagegen-v1.png": {
+      "reason": "Excessive armor, broad low body, and quadrupedal drift erase the small lightly built Scutellosaurus identity, so the action scene cannot be promoted."
     }
   }
 }

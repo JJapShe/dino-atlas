@@ -30,6 +30,9 @@ ROLE_LABELS = {
 }
 
 STATUS_COLORS = {
+    "approved": (112, 118, 119),
+    "candidate-review": (48, 122, 88),
+    "unregistered-review": (185, 124, 45),
     "manual-review": (48, 122, 88),
     "manual-review-unregistered": (185, 124, 45),
     "generate": (164, 67, 61),
@@ -104,21 +107,31 @@ def make_sheet(taxa, sheet_index):
 
     for row_index, taxon in enumerate(taxa):
         y = HEADER_H + GAP + row_index * (CELL_H + GAP)
+        display_slots = {slot["slot"]: slot for slot in taxon["slots"]}
+        for slot in taxon.get("expansionSlots", []):
+            display_slots.setdefault(slot["slot"], slot)
+
         draw.rectangle((GAP, y, LABEL_W - GAP, y + CELL_H), fill=(31, 36, 37))
         draw.text((22, y + 16), shorten(taxon["taxon"], 34), fill=(235, 232, 220), font=fonts["body_bold"])
         draw.text((22, y + 42), shorten(taxon.get("name"), 35), fill=(160, 176, 172), font=fonts["small"])
         draw.text((22, y + 64), f"{taxon['period']} / {taxon['region']}", fill=(137, 157, 152), font=fonts["small"])
-        draw.text((22, y + 88), f"slots {taxon['imageSlots']} / candidates {taxon['visibleCandidateCount']}", fill=(191, 189, 173), font=fonts["small"])
+        draw.text(
+            (22, y + 88),
+            f"published {taxon['imageSlots']} / target {taxon.get('richnessTarget', taxon['imageSlots'])} / candidates {taxon['visibleCandidateCount']}",
+            fill=(191, 189, 173),
+            font=fonts["small"],
+        )
         for swatch_index, color in enumerate(taxon["paletteLock"]["swatches"]):
             x0 = 22 + swatch_index * 50
             draw.rectangle((x0, y + 119, x0 + 40, y + 145), fill=color)
-        missing = [slot["slot"] for slot in taxon["slots"] if slot["status"] == "generate"]
+        missing = [slot["slot"] for slot in display_slots.values() if slot["status"] == "generate"]
         draw.text((22, y + 164), f"generate: {','.join(map(str, missing)) or 'none'}", fill=(221, 122, 105) if missing else (100, 195, 145), font=fonts["small"])
 
         for slot_index in range(MAX_SLOTS):
             x = LABEL_W + slot_index * (CELL_W + GAP)
-            if slot_index < len(taxon["slots"]):
-                cell = make_slot_cell(taxon["slots"][slot_index], fonts)
+            slot = display_slots.get(slot_index + 1)
+            if slot:
+                cell = make_slot_cell(slot, fonts)
                 sheet.paste(cell, (x, y))
             else:
                 draw.rectangle((x, y, x + CELL_W, y + CELL_H), fill=(24, 27, 28))

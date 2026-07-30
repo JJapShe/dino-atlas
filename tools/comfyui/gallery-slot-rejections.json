@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-30-richness-six-slot-batch-53",
+  "reviewBatch": "2026-07-30-richness-six-slot-batch-54",
   "rejectedSources": {
     "assets/dinosaurs/bellusaurus-sui-monolophosaurus-duststorm-herd-shield-defense-ecology-imagegen-v1.png": {
       "reason": "A named Monolophosaurus dust-storm attack and herd-shield response overstate direct interaction and social behavior while crowding the primary anatomy."
@@ -1231,7 +1231,22 @@
     },
     "assets/dinosaurs/saturnalia-tupiniquim-santa-maria-forage-ecology-imagegen-v1.png": {
       "reason": "Multiple similar brown animals and an explicit herbivorous-foraging claim conflict with the revised partially faunivorous evidence and make individual skull, hand, foot, and tail review unreliable."
+    },
+    "assets/dinosaurs/dimorphodon-macronyx-blue-lias-overhead-glide-imagegen-v2.png": {
+      "reason": "The long low head and generic rhamphorhynchid silhouette lose the deep short Dimorphodon skull cue, so the image fails the taxon-identity gate despite a readable wing membrane."
+    },
+    "assets/dinosaurs/diplodocus-carnegiei-allosaurus-tail-defense-ecology-imagegen-v1.png": {
+      "reason": "The primary sauropod has a severely shortened neck and generic body proportions, while the secondary theropod anatomy is unstable; the scene fails Diplodocus identity and independent-anatomy review."
+    },
+    "assets/dinosaurs/diplodocus-carnegiei-allosaurus-juvenile-shield-defense-ecology-imagegen-v1.png": {
+      "reason": "The short-necked generic sauropod body and overlapping defensive staging do not preserve the elongated Diplodocus profile or reliable limb and tail attachments."
+    },
+    "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-dust-branch-armor-dodge-ecology-imagegen-v1.png": {
+      "reason": "The primary animal is rendered as a squat heavily armored ankylosaur-like quadruped instead of a lightly built Scutellosaurus with sparse small osteoderms."
+    },
+    "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-scrub-dodge-defense-ecology-imagegen-v1.png": {
+      "reason": "Excessive armor, broad low body, and quadrupedal drift erase the small lightly built Scutellosaurus identity, so the action scene cannot be promoted."
     }
   },
-  "generatedAt": "2026-07-28T18:26:42.534Z"
+  "generatedAt": "2026-07-30T03:21:12.569Z"
 }

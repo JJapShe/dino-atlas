@@ -825,6 +825,30 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "arid-redbed",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/pisanosaurus-mertii-beaked-biped-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "arid-redbed",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/pisanosaurus-mertii-herrerasaurus-escape-ecology-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "arid-redbed",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/pisanosaurus-mertii-eodromaeus-defensive-turn-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "arid-redbed",
+      "expectedKind": "anatomy review"
     }
   ],
   "heterodontosaurus-tucki": [
@@ -964,6 +988,14 @@ window.gallerySlotAssignments = {
       "source": "assets/dinosaurs/marshosaurus-bicentesimus-dryosaurus-attack-ecology-imagegen-v1.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/marshosaurus-bicentesimus-separated-adult-subadult-ecology-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
@@ -1206,6 +1238,14 @@ window.gallerySlotAssignments = {
       "source": "assets/dinosaurs/dracovenator-regenti-heterodontosaurus-chase-ecology-imagegen-v1.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/dracovenator-regenti-separated-adult-subadult-ecology-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
@@ -4169,6 +4209,14 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/enigmacursor-mollyborthwickae-ornitholestes-log-vault-defense-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
     }
   ],
   "othnielosaurus-consors": [
@@ -4208,6 +4256,14 @@ window.gallerySlotAssignments = {
       "source": "assets/dinosaurs/othnielosaurus-consors-ornitholestes-escape-ecology-imagegen-v1.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/othnielosaurus-consors-ornitholestes-hind-kick-defense-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
