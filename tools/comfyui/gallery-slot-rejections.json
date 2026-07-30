@@ -1,7 +1,19 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
+  "reviewBatch": "2026-07-30-richness-six-slot-batch-58",
   "rejectedSources": {
+    "assets/dinosaurs/centrosaurus-apertus-nasalhorn-frillhook-imagegen-v1.png": {
+      "reason": "The former representative reduces the paired medial P1 and lateral P2 arrangement to an inaccurate single central hook, and its adult nasal horn does not reliably preserve the published procurved orientation."
+    },
+    "assets/dinosaurs/centrosaurus-apertus-ochre-teal-pattern-imagegen-v1.png": {
+      "reason": "The old palette candidate places tall upright hooks without a stable medial-P1 versus lateral-P2 order or curvature, so color variation cannot rescue the diagnostic frill anatomy."
+    },
+    "assets/dinosaurs/centrosaurus-apertus-floodplain-herd-ecology-imagegen-v1.png": {
+      "reason": "The primary and background animals lose the diagnostic adult P1 and P2 processes, and the crowded herd framing adds unreliable secondary anatomy without a clean individual review path."
+    },
+    "assets/dinosaurs/centrosaurus-apertus-judith-river-meadow-walk-imagegen-v2.png": {
+      "reason": "The adult nasal horn curves backward, the brow bosses are oversized, and a single central frill knob replaces the paired P1 and P2 ornament map."
+    },
     "assets/dinosaurs/anhanguera-santanae-romualdo-jawcrest-imagegen-v1.png": {
       "reason": "The crest rises behind the orbit instead of remaining a low anterior jaw-tip structure, and the wing attachment is too weak for a conservative Romualdo anhanguerid reconstruction."
     },
@@ -1335,5 +1347,5 @@
       "reason": "The launch frame repeats the selected airborne role, while the two hindwing surfaces do not attach cleanly to the two legs and instead read as extra torso- or tail-rooted feather fans."
     }
   },
-  "generatedAt": "2026-07-30T09:13:24.882Z"
+  "generatedAt": "2026-07-30T11:12:15.098Z"
 }

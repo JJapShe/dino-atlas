@@ -1981,6 +1981,30 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "marine",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/thalattosaurus-alexandrae-four-webbed-feet-overhead-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "marine",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/thalattosaurus-alexandrae-shellbed-foraging-interaction-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "marine",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/thalattosaurus-alexandrae-separated-size-classes-growth-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "marine",
+      "expectedKind": "anatomy review"
     }
   ],
   "placodus-gigas": [
@@ -3513,6 +3537,30 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/caudipteryx-zoui-symmetric-forewing-tailfan-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/caudipteryx-zoui-jehol-invertebrate-forage-interaction-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/caudipteryx-zoui-restrained-feather-display-behavior-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
     }
   ],
   "adasaurus-mongoliensis": [
@@ -3638,6 +3686,30 @@ window.gallerySlotAssignments = {
       "source": "assets/dinosaurs/anchiornis-huxleyi-tiaojishan-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/anchiornis-huxleyi-four-limb-feather-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/anchiornis-huxleyi-fallen-conifer-beetle-forage-interaction-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/anchiornis-huxleyi-fallen-branch-startle-display-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
@@ -4101,7 +4173,7 @@ window.gallerySlotAssignments = {
   ],
   "centrosaurus-apertus": [
     {
-      "source": "assets/dinosaurs/centrosaurus-apertus-nasalhorn-frillhook-imagegen-v1.png",
+      "source": "assets/dinosaurs/centrosaurus-apertus-procurved-nasalhorn-p1-p2-representative-imagegen-v1.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
@@ -4109,7 +4181,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/centrosaurus-apertus-ochre-teal-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/centrosaurus-apertus-moss-ochre-teal-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -4117,9 +4189,33 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/centrosaurus-apertus-floodplain-herd-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/centrosaurus-apertus-postrain-forest-edge-browse-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/centrosaurus-apertus-medial-p1-p2-frillhook-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/centrosaurus-apertus-channel-separated-hadrosaurid-interaction-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/centrosaurus-apertus-separated-adult-subadult-ontogeny-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
@@ -4402,6 +4498,30 @@ window.gallerySlotAssignments = {
       "source": "assets/dinosaurs/leptoceratops-gracilis-woodland-ecology-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/leptoceratops-gracilis-low-solid-frill-four-foot-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/leptoceratops-gracilis-channel-separated-hadrosaurid-interaction-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/leptoceratops-gracilis-separated-adult-subadult-growth-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"

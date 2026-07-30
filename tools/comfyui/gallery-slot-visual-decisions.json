@@ -2222,6 +2222,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/thalattosaurus-alexandrae-four-webbed-feet-overhead-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size review confirmed one down-curved rostrum, one long low trunk, exactly four separated short limbs with toe-bearing webbed feet, and one continuous tapering tail without ichthyosaur, plesiosaur, mosasaur, or crocodilian drift.",
+        "reviewMethod": "Batch 58 original-size inspection against species identity, appendage count, foot separation, tail continuity, palette, habitat, composition, and text or watermark artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-58",
+        "reviewedAt": "2026-07-30T10:16:19.033Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/thalattosaurus-alexandrae-shellbed-foraging-interaction-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "Original-size review confirmed one complete Thalattosaurus with four separated limbs and one tail beside a discrete shell bed, while the distant fish remain spatially separate and the non-graphic foraging inference does not hide anatomy.",
+        "reviewMethod": "Batch 58 original-size inspection against species identity, appendage count, subject separation, ecological restraint, palette, habitat, composition, and artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-58",
+        "reviewedAt": "2026-07-30T10:16:19.033Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/thalattosaurus-alexandrae-separated-size-classes-growth-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size review confirmed two spatially separated same-species size classes, each with one head, four limbs, four feet, and one unbranched tail; the scene is framed as a cautious size comparison rather than evidence of parental care.",
+        "reviewMethod": "Batch 58 original-size inspection against per-animal appendage count, body separation, tail continuity, growth-claim restraint, palette, habitat, and artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-58",
+        "reviewedAt": "2026-07-30T10:16:19.033Z"
       }
     },
     "placodus-gigas": {
@@ -3937,6 +3964,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/caudipteryx-zoui-symmetric-forewing-tailfan-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size review confirmed one complete compact Caudipteryx with two separated short forelimbs, three exposed fingers per hand, two hindlimbs and feet, one short tail, and one symmetric terminal feather fan without duplicate anatomy.",
+        "reviewMethod": "Batch 58 original-size inspection against species identity, appendage and digit count, forelimb-feather symmetry, tail-fan continuity, palette, habitat, composition, and artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-58",
+        "reviewedAt": "2026-07-30T10:29:13.556Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/caudipteryx-zoui-jehol-invertebrate-forage-interaction-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "Original-size review confirmed one complete animal with two forelimbs, two hindlimbs and feet, and one tail fan; discrete plant propagules and beetles remain spatially separate and are framed only as cautious foraging possibilities.",
+        "reviewMethod": "Batch 58 original-size inspection against species identity, appendage count, prop separation, ecological-claim restraint, palette, habitat, composition, and artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-58",
+        "reviewedAt": "2026-07-30T10:29:13.556Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/caudipteryx-zoui-restrained-feather-display-behavior-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size review confirmed one animal with exactly two forelimb feather fans, two separated hindlimbs and feet, and one continuous short tail with one fan; concealed hands are excluded from digit claims and the pose is not labeled as courtship or parental behavior.",
+        "reviewMethod": "Batch 58 original-size inspection against species identity, visible appendage count, concealed-hand caveat, behavioral-claim restraint, palette, habitat, composition, and artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-58",
+        "reviewedAt": "2026-07-30T10:29:13.556Z"
       }
     },
     "adasaurus-mongoliensis": {
@@ -4080,6 +4134,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/anchiornis-huxleyi-four-limb-feather-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size review confirmed one complete Anchiornis with two shoulder-attached forelimb feather surfaces, two pelvis-attached hindlimb feather surfaces and feet, and one continuous long tail; partly feather-covered fingers are explicitly excluded from digit claims.",
+        "reviewMethod": "Batch 58 original-size inspection against species identity, visible appendage count and attachment, four-limb feather separation, tail continuity, evidence-based palette, habitat, composition, and artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-58",
+        "reviewedAt": "2026-07-30T10:41:41.464Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/anchiornis-huxleyi-fallen-conifer-beetle-forage-interaction-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "Original-size review confirmed one complete animal with two forelimbs, two hindlimbs and separate feet, four limb-feather surfaces, and one tail; the beetle remains discrete from the mouth and feet and is framed only as a possible foraging target.",
+        "reviewMethod": "Batch 58 original-size inspection against species identity, appendage attachment and count, beetle separation, feeding-claim restraint, evidence-based palette, habitat, and artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-58",
+        "reviewedAt": "2026-07-30T10:41:41.464Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/anchiornis-huxleyi-fallen-branch-startle-display-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size review confirmed one grounded animal with exactly two separated forelimb fans, two hindlimbs and feet with their feather surfaces, and one continuous tail; the pose is labeled only as a possible startle or defensive display without courtship, sex, flight, or predator-contact claims.",
+        "reviewMethod": "Batch 58 original-size inspection against species identity, appendage count and separation, tail continuity, behavioral-claim restraint, evidence-based palette, habitat, composition, and artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-58",
+        "reviewedAt": "2026-07-30T10:41:41.464Z"
       }
     },
     "sinovenator-changii": {
@@ -4595,30 +4676,57 @@
     "centrosaurus-apertus": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/centrosaurus-apertus-nasalhorn-frillhook-imagegen-v1.png",
+        "source": "assets/dinosaurs/centrosaurus-apertus-procurved-nasalhorn-p1-p2-representative-imagegen-v1.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Original-size review confirmed one complete adult with a procurved nasal horn, low brow bosses, paired medial P1 hooks and smaller lateral P2 hooks, exactly four limbs and feet, and one tail without Triceratops, Styracosaurus, or rhinoceros drift.",
+        "reviewMethod": "Batch 58 primary-source ornament map review plus original-size inspection of adult horn orientation, P1/P2 position and curvature, appendage count, tail continuity, palette, habitat, composition, and artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-58",
+        "reviewedAt": "2026-07-30T11:12:15.098Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/centrosaurus-apertus-ochre-teal-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/centrosaurus-apertus-moss-ochre-teal-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Original-size review confirmed the corrected adult ornament map and four-limbed full body while the reversed composition and restrained moss, ochre, teal, rust, charcoal, and ivory placements provide a distinct but coherent variant-b palette.",
+        "reviewMethod": "Batch 58 primary-source ornament map review plus original-size inspection of anatomy lock, appendage count, regional color placement, palette restraint, background separation, and artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-58",
+        "reviewedAt": "2026-07-30T11:12:15.098Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/centrosaurus-apertus-floodplain-herd-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/centrosaurus-apertus-postrain-forest-edge-browse-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Original-size review confirmed one complete corrected adult with all four feet above visible ground, one tail, and unobscured horn and frill ornament while the post-rain woodland-edge browsing pose avoids unsupported herd behavior.",
+        "reviewMethod": "Batch 58 primary-source ornament map review plus original-size inspection of appendage visibility, vegetation clearance, browsing-claim restraint, localized wet-surface color, habitat, and artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-58",
+        "reviewedAt": "2026-07-30T11:12:15.098Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/centrosaurus-apertus-medial-p1-p2-frillhook-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size review and primary-source comparison confirmed the central notch, paired medial P1 hooks curving rostroventrally over the frill, one smaller inward-curled P2 immediately lateral to each P1, one procurved nasal horn, and only low brow bosses.",
+        "reviewMethod": "Batch 58 original-size inspection against Frederickson and Tumarkin-Deratzian 2014 and Demers-Potvin and Larsson 2023 for P1/P2 locus, direction, relative size, nasal-horn ontogeny, skin-covered frill presentation, and artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-58",
+        "reviewedAt": "2026-07-30T11:12:15.098Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/centrosaurus-apertus-channel-separated-hadrosaurid-interaction-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "Original-size review confirmed one complete corrected adult with four limbs and feet and one tail, while the distant hadrosaurid remains across a broad channel on a separate depth plane and is framed only as cautious faunal coexistence.",
+        "reviewMethod": "Batch 58 original-size inspection against primary species ornament, appendage and tail count, channel and depth separation, interaction-claim restraint, palette, habitat, and artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-58",
+        "reviewedAt": "2026-07-30T11:12:15.098Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/centrosaurus-apertus-separated-adult-subadult-ontogeny-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size review confirmed two spatially separated size stages with four limbs and feet and one tail each; the adult has a procurved horn and developed P1/P2 while the subadult has a short near-straight horn and low undeveloped frill processes, without family or care claims.",
+        "reviewMethod": "Batch 58 original-size inspection against published craniofacial ontogeny, per-animal appendage count, body and tail separation, growth-claim restraint, palette continuity, habitat, and artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-58",
+        "reviewedAt": "2026-07-30T11:12:15.098Z"
       }
     },
     "pachyrhinosaurus-canadensis": {
@@ -4934,6 +5042,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/leptoceratops-gracilis-low-solid-frill-four-foot-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size review confirmed one hornless basal ceratopsian with a low short solid skull-attached frill, exactly four independently readable limbs and non-hoof feet, and one continuous long tail without Protoceratops, ceratopsid, rhinoceros, or lizard drift.",
+        "reviewMethod": "Batch 58 original-size inspection against skull and frill identity, horn and fenestra absence, appendage and foot count, tail continuity, palette, habitat, composition, and artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-58",
+        "reviewedAt": "2026-07-30T10:50:31.339Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/leptoceratops-gracilis-channel-separated-hadrosaurid-interaction-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "Original-size review confirmed one complete primary Leptoceratops with a low frill, four limbs and feet, and one tail; the distant hadrosaurid remains across the channel on a separate depth plane and is framed only as cautious faunal coexistence.",
+        "reviewMethod": "Batch 58 original-size inspection against primary species identity, appendage count, channel and depth separation, interaction-claim restraint, palette, habitat, and artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-58",
+        "reviewedAt": "2026-07-30T10:50:31.339Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/leptoceratops-gracilis-separated-adult-subadult-growth-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size review confirmed two spatially separated Leptoceratops size classes, each with a low solid frill, four limbs and feet, and one unbranched tail; the scene is a scale comparison and makes no family, herd, or parental-care claim.",
+        "reviewMethod": "Batch 58 original-size inspection against per-animal skull identity, appendage and foot count, body and tail separation, growth-claim restraint, palette, habitat, and artifact gates.",
+        "reviewBatch": "2026-07-30-richness-six-slot-batch-58",
+        "reviewedAt": "2026-07-30T10:50:31.339Z"
       }
     },
     "dryosaurus-altus": {

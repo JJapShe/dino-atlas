@@ -9,6 +9,7 @@ const ROOT = path.resolve(__dirname, "..", "..");
 const ASSET_DIR = path.join(ROOT, "assets", "dinosaurs");
 const DATA_DIR = path.join(__dirname, "data");
 const REVIEW_FILE = path.join(DATA_DIR, "reviews.json");
+const REJECTION_FILE = path.join(ROOT, "tools", "comfyui", "gallery-slot-rejections.json");
 
 const IMAGE_TYPES = new Set([".png", ".jpg", ".jpeg", ".webp"]);
 const EXCLUDED_KINDS = new Set([
@@ -125,6 +126,15 @@ function parseAppStringSet(source, name) {
   return new Set([...match[1].matchAll(/"([^"]+)"/g)].map((item) => item[1]));
 }
 
+function loadRejectedSources() {
+  try {
+    const data = JSON.parse(fs.readFileSync(REJECTION_FILE, "utf8"));
+    return new Set(Object.keys(data.rejectedSources || {}));
+  } catch {
+    return new Set();
+  }
+}
+
 function loadAtlasCandidateManifest() {
   const appFile = path.join(ROOT, "app.js");
   try {
@@ -148,10 +158,15 @@ function loadAtlasCandidateManifest() {
       if (kind && asset) candidateKinds.set(asset, kind);
     }
 
+    const rejectedSources = parseAppStringSet(source, "verifiedRejectedCandidateSources");
+    for (const rejectedSource of loadRejectedSources()) {
+      rejectedSources.add(rejectedSource);
+    }
+
     return {
       candidateKinds,
       approvedVelociraptorSources: parseAppStringSet(source, "approvedVelociraptorCandidateSources"),
-      rejectedSources: parseAppStringSet(source, "verifiedRejectedCandidateSources"),
+      rejectedSources,
     };
   } catch {
     return {
