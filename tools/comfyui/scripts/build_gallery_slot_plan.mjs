@@ -189,6 +189,13 @@ const HABITATS = {
     light: "neutral coastal daylight with controlled water reflection",
     backgroundPalette: ["#607a7a", "#a68a65", "#61715b"],
   },
+  "zorzino-carbonate-island": {
+    substrate: "low pale limestone and dolomite island surfaces, sheltered freshwater reservoirs, shallow runoff channels, exposed carbonate ledges, and a distant warm intraplatform sea; do not depict the anoxic fossil-basin bottom as a living surface",
+    vegetation: "irregular sparse Triassic conifers, cycads, seed ferns, true ferns, and horsetails with no modern grass, flowers, palms, pine plantation, or dense rainforest",
+    moisture: "freshwater-bearing ephemeral carbonate islands surrounded by an intraplatform marine basin; exact island use and surface ecology remain regional reconstruction hypotheses",
+    light: "neutral broken-cloud daylight, cool dawn, or restrained post-rain sunbreak with natural freshwater and pale-stone reflection and no global teal or orange cast",
+    backgroundPalette: ["#8b948a", "#667f7d", "#c8b895"],
+  },
   "blue-lias-coastal-lowland": {
     substrate: "rain-darkened low-relief coastal plain, shallow runoff channels, pale limestone gravel, dark mudstone, driftwood, and only a distant marine shelf or low shoreline",
     vegetation: "patchy conifers, ferns, horsetails, cycads, and low non-grass ground cover as restrained reconstruction, with no modern flowers, lawn, palms, or seabird colony",
@@ -533,6 +540,7 @@ function habitatFor(dino, route) {
   else if (dino.id === "dsungaripterus-weii") key = "wuerho-shallow-delta-lake-margin";
   else if (dino.id === "nyctosaurus-gracilis") key = "smoky-hill-open-seaway";
   else if (dino.id === "dimorphodon-macronyx") key = "blue-lias-coastal-lowland";
+  else if (dino.id === "eudimorphodon-ranzii") key = "zorzino-carbonate-island";
   else if (dino.id === "velociraptor-mongoliensis") key = "gobi-arid";
   else if (dino.id === "parasaurolophus-walkeri") key = "dinosaur-park-coastal-plain";
   else if (dino.id === "styracosaurus-albertensis") key = "dinosaur-park-meander-belt";

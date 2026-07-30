@@ -1953,27 +1953,51 @@ window.gallerySlotAssignments = {
   ],
   "eudimorphodon-ranzii": [
     {
-      "source": "assets/dinosaurs/eudimorphodon-ranzii-triassic-tailvane-multicusped-imagegen-v1.png",
+      "source": "assets/dinosaurs/eudimorphodon-ranzii-claret-seaglass-neutral-glide-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "zorzino-carbonate-island",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/eudimorphodon-ranzii-aubergine-celadon-wing-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/eudimorphodon-ranzii-seaglass-limestone-dawn-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "zorzino-carbonate-island",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/eudimorphodon-ranzii-triassic-lagoon-skim-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/eudimorphodon-ranzii-postrain-carbonate-island-habitat-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "coastal-lagoon",
+      "habitatKey": "zorzino-carbonate-island",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/eudimorphodon-ranzii-heterodont-three-digit-wrist-anatomy-detail-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "zorzino-carbonate-island",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/eudimorphodon-ranzii-clear-channel-distant-fish-shoal-interaction-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "zorzino-carbonate-island",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/eudimorphodon-ranzii-firm-limestone-quadrupedal-rest-hypothesis-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "zorzino-carbonate-island",
       "expectedKind": "anatomy review"
     }
   ],

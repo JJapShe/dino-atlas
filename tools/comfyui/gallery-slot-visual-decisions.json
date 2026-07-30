@@ -2192,30 +2192,57 @@
     "eudimorphodon-ranzii": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/eudimorphodon-ranzii-triassic-tailvane-multicusped-imagegen-v1.png",
+        "source": "assets/dinosaurs/eudimorphodon-ranzii-claret-seaglass-neutral-glide-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "One crestless long low head, separated skull openings, differentiated anterior and posterior teeth, exactly two wing forelimbs, two hind limbs, and one tapering tail without a terminal vane are readable in a neutral low glide.",
+        "reviewMethod": "Batch 64 original-size inspection against MCSNB 2888 holotype photographs and Dalla Vecchia 2009 jaw anatomy, with direct-versus-reconstructed regions separated.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-64",
+        "reviewedAt": "2026-07-30T17:35:16.014Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/eudimorphodon-ranzii-aubergine-celadon-wing-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/eudimorphodon-ranzii-seaglass-limestone-dawn-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing dawn view retains two wings, two hind limbs, one vane-free tail, and the same claret, sea-glass, copper, and parchment phenotype with asymmetric limestone marbling rather than dots or tail rings.",
+        "reviewMethod": "Batch 64 original-size inspection of complete-body counts, wing attachment, tail continuity, and palette topology against the selected representative.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-64",
+        "reviewedAt": "2026-07-30T17:35:16.014Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/eudimorphodon-ranzii-triassic-lagoon-skim-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/eudimorphodon-ranzii-postrain-carbonate-island-habitat-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The high-oblique frame keeps one complete readable pterosaur with two wings, two separated hind feet and one tail while distinguishing a freshwater-bearing carbonate island from the distant intraplatform sea.",
+        "reviewMethod": "Batch 64 original-size anatomy inspection plus Renesto 2006 regional palaeoenvironment review; exact living surface, vegetation, and flight location remain reconstruction hypotheses.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-64",
+        "reviewedAt": "2026-07-30T17:35:16.014Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/eudimorphodon-ranzii-heterodont-three-digit-wrist-anatomy-detail-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "The intentional crop resolves separate skull openings, a few large anterior fangs followed by much smaller posterior teeth, exactly three free wrist digits, and a separate elongated fourth wing finger with continuous membrane.",
+        "reviewMethod": "Batch 64 original-size inspection against the MCSNB 2888 skull and Dalla Vecchia 2009 Figure 11A; pelvis, tail, and hind limbs are outside frame and are not claimed by this slot.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-64",
+        "reviewedAt": "2026-07-30T17:35:16.014Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/eudimorphodon-ranzii-clear-channel-distant-fish-shoal-interaction-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "One pterosaur with two wings, two hind legs and one vane-free tail remains spatially separated from a single fish shoal, with no contact, capture, skimming, or overlapping anatomy.",
+        "reviewMethod": "Batch 64 original-size count and artifact inspection plus Bestwick et al. 2018 diet-evidence review; fish consumption is supported but the exact capture technique remains unknown.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-64",
+        "reviewedAt": "2026-07-30T17:35:16.014Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/eudimorphodon-ranzii-firm-limestone-quadrupedal-rest-hypothesis-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "The clean side view separates two planted wing wrists and two hind feet as exactly four ground contacts, with intact folded membranes, one long tapering tail, and no terminal vane or extra appendage.",
+        "reviewMethod": "Batch 64 original-size inspection of wrist, hind-foot, folded-wing, and tail topology against Witton 2015; firm-substrate use and exact resting posture remain functional reconstruction hypotheses.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-64",
+        "reviewedAt": "2026-07-30T17:35:16.014Z"
       }
     },
     "darwinopterus-modularis": {

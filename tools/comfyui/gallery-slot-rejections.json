@@ -1337,6 +1337,15 @@
     "assets/dinosaurs/dimorphodon-macronyx-blue-lias-overhead-glide-imagegen-v2.png": {
       "reason": "The long low generic rhamphorhynchid head, birdlike or confused wing topology, and asserted terminal vane lose the deep large-naris heterodont Dimorphodon identity and paired fourth-finger wing structure."
     },
+    "assets/dinosaurs/eudimorphodon-ranzii-triassic-tailvane-multicusped-imagegen-v1.png": {
+      "reason": "The monitor-lizard-like pebbly head, ambiguous forelimb-wing topology, unsupported terminal tail vane, and modern-looking shore fail the MCSNB 2888 skull and evidence-boundary gates."
+    },
+    "assets/dinosaurs/eudimorphodon-ranzii-aubergine-celadon-wing-pattern-imagegen-v1.png": {
+      "reason": "Artificial turquoise dots and tail rings, overlapping extra-looking appendages, a generic birdlike head, and an unsupported terminal vane fail the species identity, count, and pattern gates."
+    },
+    "assets/dinosaurs/eudimorphodon-ranzii-triassic-lagoon-skim-ecology-imagegen-v1.png": {
+      "reason": "Separate birdlike arms beneath oversized vertical wing sails, a generic skull, an unsupported terminal vane, and overconfident skimming behavior fail the paired-wing and evidence-bounded ecology gates."
+    },
     "assets/dinosaurs/diplodocus-carnegiei-allosaurus-tail-defense-ecology-imagegen-v1.png": {
       "reason": "The primary sauropod has a severely shortened neck and generic body proportions, while the secondary theropod anatomy is unstable; the scene fails Diplodocus identity and independent-anatomy review."
     },
