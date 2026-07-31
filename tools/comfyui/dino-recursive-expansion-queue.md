@@ -4737,6 +4737,12 @@ For each added taxon, produce:
 
 ## Recent Expansion Notes
 
+- `Gobivenator mongoliensis six-image moderate-snout expansion 2026-08-01`
+  - Kept the established representative, graphite-copper variation, and ecology reference, then added a moss-copper full-body anatomy frame, a blue-hour olive unbanded-tail variation, and a post-rain dry-wash regional-context frame.
+  - The direct identity gate follows Tsuihiji et al. 2014 within the limits of a soft-tissue reconstruction: a small Djadokhta troodontid with a low narrow moderately elongate toothed skull, large eye, compact forelimbs with three fingers, long thin hind limbs, three readable support toes with a modest raised digit-II claw, and one stiff tail. Feather extent, palette, markings, weather, habitat moment, and behaviour remain reconstruction hypotheses.
+  - Original-size review of all additions resolves one head, two forelimbs, two hind limbs, traceable readable digits where exposed, and a single continuous tail. The ecology scene keeps generic ceratopsian-like animals separated in the distance; it makes no claim about species, encounter, grouping, predation, or behaviour.
+  - Built-in ImageGen source mapping: anatomy `exec-9051f646-6dcf-40cc-ae87-26d621c9a93f.png`, pattern `exec-e79f9996-d4e0-49b8-af40-8a0bdf4a4329.png`, context `exec-0c9239e8-80b6-41ac-ac3e-62a3542de06b.png`. Only the species-prefixed project copies under `assets/dinosaurs/` are app references.
+
 - `Utahceratops gettyi six-image notched-frill expansion 2026-08-01`
   - Kept the established representative, moss-rust pattern, and Kaiparowits herd reference, then added a slate-moss full-side color variation, a high three-quarter rear frill-structure reference, and a post-rain channel group reference.
   - The direct identity gate follows Sampson et al. 2010: a large posteriorly placed nasal horn, short rounded lateral supraorbital horncores, and an elongated frill with a deep median embayment. The additional images were checked against long Nasutoceratops-style bull horns, Kosmoceratops-style hooked ornament, Pentaceratops-style tall pentagon, open Torosaurus/Chasmosaurus window drift, nasal-boss drift, rhino proportions, hoofed feet, duplicated limbs, and extra tails.

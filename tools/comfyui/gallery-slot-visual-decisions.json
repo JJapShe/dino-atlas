@@ -4848,6 +4848,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/gobivenator-mongoliensis-moss-copper-fullbody-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size inspection confirms one low narrow moderately elongate skull, two forelimbs with three readable fingers, two hind limbs, three support toes with a modest raised digit-II claw, and one continuous tail; colours remain comparative reconstruction.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against the Gobivenator mongoliensis description by Tsuihiji et al. 2014",
+        "reviewBatch": "2026-08-01-richness-batch-84-gobivenator",
+        "reviewedAt": "2026-08-01T08:00:00.000Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/gobivenator-mongoliensis-blue-hour-olive-pattern-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "Original-size inspection confirms one head, two forelimbs, two hind limbs, readable three-toed feet with modest raised digit-II claws, and one unbanded tail; palette and lighting are reconstruction-only variation.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against the Gobivenator mongoliensis description by Tsuihiji et al. 2014",
+        "reviewBatch": "2026-08-01-richness-batch-84-gobivenator",
+        "reviewedAt": "2026-08-01T08:00:00.000Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/gobivenator-mongoliensis-dry-wash-ceratopsian-context-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "The foreground animal retains one head, two forelimbs, two hind limbs, readable feet, and one continuous tail; distant generic ceratopsian-like animals are spatial context only, not a species or behavior claim.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against the Gobivenator mongoliensis description by Tsuihiji et al. 2014",
+        "reviewBatch": "2026-08-01-richness-batch-84-gobivenator",
+        "reviewedAt": "2026-08-01T08:00:00.000Z"
       }
     },
     "tarbosaurus-bataar": {
