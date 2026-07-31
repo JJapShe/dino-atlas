@@ -6951,6 +6951,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/sphaerotholus-buchholtzae-ochre-riverbank-fullbody-imagegen-v4.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size inspection confirms a rounded dome, two forelimbs, two hind limbs, visible feet, and one continuous tail.",
+        "reviewMethod": "Original-size inspection",
+        "reviewBatch": "2026-08-01-richness-batch-90-sphaerotholus-buchholtzae",
+        "reviewedAt": "2026-08-01T14:30:00.000Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/sphaerotholus-buchholtzae-creek-fern-browse-ecology-imagegen-v4.png",
+        "role": "interaction",
+        "reason": "Original-size inspection confirms one readable animal with a compact dome, two forelimbs, two hind limbs, and one tail in a Hell Creek creek setting.",
+        "reviewMethod": "Original-size inspection",
+        "reviewBatch": "2026-08-01-richness-batch-90-sphaerotholus-buchholtzae",
+        "reviewedAt": "2026-08-01T14:30:00.000Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/sphaerotholus-buchholtzae-riverbank-growth-stage-ecology-imagegen-v5.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size inspection confirms two spatially separated animals; each has a rounded dome, two forelimbs, two hind limbs, and one continuous tail.",
+        "reviewMethod": "Original-size inspection",
+        "reviewBatch": "2026-08-01-richness-batch-90-sphaerotholus-buchholtzae",
+        "reviewedAt": "2026-08-01T14:30:00.000Z"
       }
     },
     "stygimoloch-spinifer": {

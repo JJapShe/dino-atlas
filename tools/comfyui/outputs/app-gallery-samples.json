@@ -1,6 +1,6 @@
 {
   "taxa": 132,
-  "images": 1687,
+  "images": 1689,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -12252,11 +12252,27 @@
       },
       {
         "kind": "anatomy review",
-        "title": "스파에로톨루스 비 갠 건천 물가 장면",
-        "body": "비가 그친 키틀랜드층 건천의 얕은 물가에서 두 성체가 서로 거리를 두고 접근하는 생태 변형입니다. 앞 개체는 사암색 돔과 크랜베리 목테두리, 청회색 몸통과 밝은 크림색 배를 유지하고, 뒤 개체는 이끼빛 회색과 녹슨 갈색 안면색으로 분리했습니다. 접촉·충돌 없이 배색과 환경 구도 비교에만 사용합니다.",
-        "source": "assets/dinosaurs/sphaerotholus-buchholtzae-rain-arroyo-pair-ecology-imagegen-v4.png",
-        "variant": "비 갠 건천 물가 생태 이미지 생성 v4",
-        "src": "assets/dinosaurs/sphaerotholus-buchholtzae-rain-arroyo-pair-ecology-imagegen-v4.png"
+        "title": "Sphaerotholus buchholtzae v4 creek full body",
+        "body": "Original-size comparison with a rounded dome, two forelimbs, two hind limbs, and one tail.",
+        "source": "assets/dinosaurs/sphaerotholus-buchholtzae-ochre-riverbank-fullbody-imagegen-v4.png",
+        "variant": "ochre riverbank full body v4",
+        "src": "assets/dinosaurs/sphaerotholus-buchholtzae-ochre-riverbank-fullbody-imagegen-v4.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Sphaerotholus buchholtzae v5 adult juvenile riverbank",
+        "body": "Original-size comparison confirms two spatially separated animals; each has two forelimbs, two hind limbs, and one continuous tail.",
+        "source": "assets/dinosaurs/sphaerotholus-buchholtzae-riverbank-growth-stage-ecology-imagegen-v5.png",
+        "variant": "adult juvenile riverbank growth stage v5",
+        "src": "assets/dinosaurs/sphaerotholus-buchholtzae-riverbank-growth-stage-ecology-imagegen-v5.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Sphaerotholus buchholtzae v4 creek browse",
+        "body": "Single-animal creek habitat context; compact dome, limbs, and tail checked at original size.",
+        "source": "assets/dinosaurs/sphaerotholus-buchholtzae-creek-fern-browse-ecology-imagegen-v4.png",
+        "variant": "creek fern browse v4",
+        "src": "assets/dinosaurs/sphaerotholus-buchholtzae-creek-fern-browse-ecology-imagegen-v4.png"
       },
       {
         "kind": "review hold",
