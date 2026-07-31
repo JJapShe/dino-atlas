@@ -4577,6 +4577,13 @@
   - Layout validation: 1280x720 rendered five full-width browser columns and 1920x1080 rendered eight, while 390x844 rendered one column and a fixed 390x844 detail surface. Card overlap and page horizontal overflow remained zero at all three widths; the narrow open/close cycle preserved the full-width browser state after returning to desktop.
   - Image and browser validation: the focused `Elmisaurus` strip exposed all six decoded 1536x1024 images, full-screen next navigation stayed within that six-image species set, 1:1 mode resolved the exact 1536x1024 bitmap, and browser warning logs were empty.
 
+- `Resizable atlas inspector pass 2026-07-31`
+  - Added a dedicated 10 px separator between the phylogeny workspace and dinosaur information panel. Desktop users can drag it, use Left/Right with optional Shift, jump to the minimum or maximum with Home/End, or double-click it to restore the 360 px default.
+  - The chosen information-panel width is stored independently from temporary responsive clamping. The desktop range is 320-680 px while retaining at least 520 px for the map; a 390 px mobile visit can temporarily clamp the hidden separator without replacing the saved desktop preference.
+  - At 1100 px and below the separator is removed from layout and the existing stacked map/detail composition remains authoritative. Entering map full-screen still starts map-only, while reopening information in full-screen restores the saved non-overlapping split.
+  - Browser validation: 1440x900 drag changed the inspector from 320 to 521 px and survived reload, keyboard minimum and maximum reached 320 and 680 px, double-click restored the compact desktop default, and full-screen provided a 1440x785 map-only viewport or a non-overlapping adjustable split. The 1024x768 and 390x844 stacked layouts had zero map/detail intersection, zero page overflow, and zero node-card overlap.
+  - Static validation: `atlas-layout.js` and `app.js` passed Node syntax checks, all three new or cache-busted HTTP resources returned 200, the strict gallery verifier reported 132 taxa and 699 approved slots with every error count at zero, and 1,894 unique dinosaur asset references had zero missing concrete files.
+
 For each added taxon, produce:
 
 - `assets/dinosaurs/{id}-...-imagegen-v1.png` files.

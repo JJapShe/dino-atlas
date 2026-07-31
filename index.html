@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dino Atlas MVP</title>
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="./styles.css?v=20260731-scalable-atlas-workspace-v29" />
+    <link rel="stylesheet" href="./styles.css?v=20260731-resizable-atlas-workspace-v30" />
   </head>
   <body data-active-view="atlas">
     <div class="app-shell">
@@ -170,6 +170,18 @@
                   </span>
                 </button>
               </div>
+              <button
+                class="map-inspector-resizer"
+                id="mapInspectorResizer"
+                type="button"
+                role="separator"
+                aria-label="지도와 정보 패널 너비 조절"
+                aria-orientation="vertical"
+                aria-valuemin="320"
+                aria-valuemax="680"
+                aria-valuenow="360"
+                title="드래그해서 지도와 정보 패널 너비 조절"
+              ></button>
               <aside class="map-inspector" id="detailPanel" aria-label="Selected dinosaur detail"></aside>
             </div>
           </section>
@@ -247,5 +259,6 @@
 
 <script src="./gallery-slots.js?v=20260731-richness-batch68-elmisaurus-v2"></script>
     <script src="./app.js?v=20260731-richness-batch68-elmisaurus-v2"></script>
+    <script src="./atlas-layout.js?v=20260731-resizable-inspector-v1"></script>
   </body>
 </html>
