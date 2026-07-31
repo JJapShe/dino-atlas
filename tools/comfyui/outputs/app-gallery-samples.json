@@ -1,6 +1,6 @@
 {
   "taxa": 132,
-  "images": 1701,
+  "images": 1704,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -12429,6 +12429,30 @@
         "source": "assets/dinosaurs/platytholus-clemensi-fern-forage-bipedal-ecology-imagegen-v2.png",
         "variant": "양치식물 하층 이족 먹이활동 생태 이미지 생성 v2",
         "src": "assets/dinosaurs/platytholus-clemensi-fern-forage-bipedal-ecology-imagegen-v2.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Platytholus clemensi v3 flat dome full body",
+        "body": "Original-size inspection confirms a broad low flat dome, two forelimbs, two hind limbs, visible feet, and one continuous unbanded tail.",
+        "source": "assets/dinosaurs/platytholus-clemensi-hell-creek-flat-dome-fullbody-identity-imagegen-v3.png",
+        "variant": "Hell Creek flat dome full body v3",
+        "src": "assets/dinosaurs/platytholus-clemensi-hell-creek-flat-dome-fullbody-identity-imagegen-v3.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Platytholus clemensi v3 fern browse",
+        "body": "Original-size inspection confirms one full animal with a low flat dome, two forelimbs, two hind limbs, visible feet, and one unbanded tail in a non-graphic fern browse scene.",
+        "source": "assets/dinosaurs/platytholus-clemensi-hell-creek-fern-browse-ecology-imagegen-v3.png",
+        "variant": "Hell Creek fern browse v3",
+        "src": "assets/dinosaurs/platytholus-clemensi-hell-creek-fern-browse-ecology-imagegen-v3.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Platytholus clemensi v3 channel growth stage",
+        "body": "Original-size inspection confirms a full adult with a low flat dome, two forelimbs, two hind limbs, visible feet, and one unbranched tail; the smaller animal is separate across the channel.",
+        "source": "assets/dinosaurs/platytholus-clemensi-hell-creek-channel-growth-stage-ecology-imagegen-v3.png",
+        "variant": "Hell Creek channel growth stage v3",
+        "src": "assets/dinosaurs/platytholus-clemensi-hell-creek-channel-growth-stage-ecology-imagegen-v3.png"
       },
       {
         "kind": "review hold",

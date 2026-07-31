@@ -7144,6 +7144,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/platytholus-clemensi-hell-creek-flat-dome-fullbody-identity-imagegen-v3.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size inspection confirms a broad low flat dome, two forelimbs, two hind limbs, visible feet, and one continuous unbanded tail.",
+        "reviewMethod": "Original-size inspection",
+        "reviewBatch": "2026-08-01-richness-batch-95-platytholus",
+        "reviewedAt": "2026-08-01T18:40:00.000Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/platytholus-clemensi-hell-creek-fern-browse-ecology-imagegen-v3.png",
+        "role": "interaction",
+        "reason": "Original-size inspection confirms one full animal with a low flat dome, two forelimbs, two hind limbs, visible feet, and one unbanded tail in a non-graphic fern browse scene.",
+        "reviewMethod": "Original-size inspection",
+        "reviewBatch": "2026-08-01-richness-batch-95-platytholus",
+        "reviewedAt": "2026-08-01T18:40:00.000Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/platytholus-clemensi-hell-creek-channel-growth-stage-ecology-imagegen-v3.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size inspection confirms a full adult with a low flat dome, two forelimbs, two hind limbs, visible feet, and one unbranched tail; the smaller animal is separate across the channel.",
+        "reviewMethod": "Original-size inspection",
+        "reviewBatch": "2026-08-01-richness-batch-95-platytholus",
+        "reviewedAt": "2026-08-01T18:40:00.000Z"
       }
     },
     "hanssuesia-sternbergi": {
