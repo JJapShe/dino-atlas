@@ -6525,6 +6525,30 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/sinocephale-bexelli-inner-mongolia-low-dome-fullbody-identity-imagegen-v4.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "gobi-arid",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/sinocephale-bexelli-inner-mongolia-shrub-browse-ecology-imagegen-v4.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "gobi-arid",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/sinocephale-bexelli-inner-mongolia-channel-growth-stage-ecology-imagegen-v4.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "gobi-arid",
+      "expectedKind": "anatomy review"
     }
   ],
   "ankylosaurus-magniventris": [

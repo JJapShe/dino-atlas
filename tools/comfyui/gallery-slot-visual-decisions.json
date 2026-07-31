@@ -7312,6 +7312,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/sinocephale-bexelli-inner-mongolia-low-dome-fullbody-identity-imagegen-v4.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size inspection confirms a bipedal adult with a low dome, two forelimbs, two hind limbs, visible feet, and one continuous tail.",
+        "reviewMethod": "Original-size inspection",
+        "reviewBatch": "2026-08-01-richness-batch-98-sinocephale",
+        "reviewedAt": "2026-08-01T20:00:00.000Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/sinocephale-bexelli-inner-mongolia-shrub-browse-ecology-imagegen-v4.png",
+        "role": "interaction",
+        "reason": "Original-size inspection confirms one bipedal adult with a low dome, two forelimbs, two hind limbs, visible feet, and one tail in a dry shrub browse scene.",
+        "reviewMethod": "Original-size inspection",
+        "reviewBatch": "2026-08-01-richness-batch-98-sinocephale",
+        "reviewedAt": "2026-08-01T20:00:00.000Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/sinocephale-bexelli-inner-mongolia-channel-growth-stage-ecology-imagegen-v4.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size inspection confirms a bipedal adult with two forelimbs, two hind limbs, visible feet, and one unbranched tail; the smaller animal is separate in the background.",
+        "reviewMethod": "Original-size inspection",
+        "reviewBatch": "2026-08-01-richness-batch-98-sinocephale",
+        "reviewedAt": "2026-08-01T20:00:00.000Z"
       }
     },
     "ankylosaurus-magniventris": {

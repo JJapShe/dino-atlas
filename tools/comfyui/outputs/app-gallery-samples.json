@@ -1,6 +1,6 @@
 {
   "taxa": 132,
-  "images": 1710,
+  "images": 1713,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -12579,6 +12579,30 @@
         "source": "assets/dinosaurs/sinocephale-bexelli-dune-trackway-ecology-imagegen-v1.png",
         "variant": "사구 발자국 이동 생태 이미지 생성 v1",
         "src": "assets/dinosaurs/sinocephale-bexelli-dune-trackway-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Sinocephale bexelli v4 low dome biped",
+        "body": "Original-size inspection confirms a bipedal adult with a low dome, two forelimbs, two hind limbs, visible feet, and one continuous tail.",
+        "source": "assets/dinosaurs/sinocephale-bexelli-inner-mongolia-low-dome-fullbody-identity-imagegen-v4.png",
+        "variant": "Inner Mongolia low dome biped full body v4",
+        "src": "assets/dinosaurs/sinocephale-bexelli-inner-mongolia-low-dome-fullbody-identity-imagegen-v4.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Sinocephale bexelli v4 shrub browse",
+        "body": "Original-size inspection confirms one bipedal adult with a low dome, two forelimbs, two hind limbs, visible feet, and one tail in a dry shrub browse scene.",
+        "source": "assets/dinosaurs/sinocephale-bexelli-inner-mongolia-shrub-browse-ecology-imagegen-v4.png",
+        "variant": "Inner Mongolia shrub browse v4",
+        "src": "assets/dinosaurs/sinocephale-bexelli-inner-mongolia-shrub-browse-ecology-imagegen-v4.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Sinocephale bexelli v4 channel growth stage",
+        "body": "Original-size inspection confirms a bipedal adult with two forelimbs, two hind limbs, visible feet, and one unbranched tail; the smaller animal is separate in the background.",
+        "source": "assets/dinosaurs/sinocephale-bexelli-inner-mongolia-channel-growth-stage-ecology-imagegen-v4.png",
+        "variant": "Inner Mongolia channel growth stage v4",
+        "src": "assets/dinosaurs/sinocephale-bexelli-inner-mongolia-channel-growth-stage-ecology-imagegen-v4.png"
       },
       {
         "kind": "review hold",
