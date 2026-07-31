@@ -7200,6 +7200,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/hanssuesia-sternbergi-dinosaur-park-low-dome-fullbody-identity-imagegen-v3.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size inspection confirms a low rounded dome with blunt brow and rear-rim nodes, two forelimbs, two hind limbs, visible feet, and one continuous tail.",
+        "reviewMethod": "Original-size inspection",
+        "reviewBatch": "2026-08-01-richness-batch-96-hanssuesia",
+        "reviewedAt": "2026-08-01T19:05:00.000Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/hanssuesia-sternbergi-dinosaur-park-fern-browse-ecology-imagegen-v3.png",
+        "role": "interaction",
+        "reason": "Original-size inspection confirms one full animal with a low rounded dome, blunt rim nodes, two forelimbs, two hind limbs, visible feet, and one tail in a calm browse scene.",
+        "reviewMethod": "Original-size inspection",
+        "reviewBatch": "2026-08-01-richness-batch-96-hanssuesia",
+        "reviewedAt": "2026-08-01T19:05:00.000Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/hanssuesia-sternbergi-dinosaur-park-channel-growth-stage-ecology-imagegen-v3.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size inspection confirms a full adult with a low rounded dome, two forelimbs, two hind limbs, visible feet, and one unbranched tail; the smaller animal is separate across the channel.",
+        "reviewMethod": "Original-size inspection",
+        "reviewBatch": "2026-08-01-richness-batch-96-hanssuesia",
+        "reviewedAt": "2026-08-01T19:05:00.000Z"
       }
     },
     "ornatotholus-browni": {

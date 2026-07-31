@@ -1,6 +1,6 @@
 {
   "taxa": 132,
-  "images": 1704,
+  "images": 1707,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -12479,6 +12479,30 @@
         "source": "assets/dinosaurs/hanssuesia-sternbergi-cutbank-pair-display-ecology-imagegen-v1.png",
         "variant": "절벽 하천가 쌍 개체 과시 생태 이미지 생성 v1",
         "src": "assets/dinosaurs/hanssuesia-sternbergi-cutbank-pair-display-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Hanssuesia sternbergi v3 low dome full body",
+        "body": "Original-size inspection confirms a low rounded dome with blunt brow and rear-rim nodes, two forelimbs, two hind limbs, visible feet, and one continuous tail.",
+        "source": "assets/dinosaurs/hanssuesia-sternbergi-dinosaur-park-low-dome-fullbody-identity-imagegen-v3.png",
+        "variant": "Dinosaur Park low dome full body v3",
+        "src": "assets/dinosaurs/hanssuesia-sternbergi-dinosaur-park-low-dome-fullbody-identity-imagegen-v3.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Hanssuesia sternbergi v3 fern browse",
+        "body": "Original-size inspection confirms one full animal with a low rounded dome, blunt rim nodes, visible feet, two forelimbs, two hind limbs, and one tail in a calm fern-browse scene.",
+        "source": "assets/dinosaurs/hanssuesia-sternbergi-dinosaur-park-fern-browse-ecology-imagegen-v3.png",
+        "variant": "Dinosaur Park fern browse v3",
+        "src": "assets/dinosaurs/hanssuesia-sternbergi-dinosaur-park-fern-browse-ecology-imagegen-v3.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Hanssuesia sternbergi v3 channel growth stage",
+        "body": "Original-size inspection confirms a full adult with a low rounded dome, blunt rim nodes, two forelimbs, two hind limbs, visible feet, and one unbranched tail; the smaller animal is separate across the channel.",
+        "source": "assets/dinosaurs/hanssuesia-sternbergi-dinosaur-park-channel-growth-stage-ecology-imagegen-v3.png",
+        "variant": "Dinosaur Park channel growth stage v3",
+        "src": "assets/dinosaurs/hanssuesia-sternbergi-dinosaur-park-channel-growth-stage-ecology-imagegen-v3.png"
       },
       {
         "kind": "review hold",
