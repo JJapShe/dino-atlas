@@ -6472,6 +6472,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/wannanosaurus-yansiensis-blackberry-olive-tiny-fullbody-imagegen-v3.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size inspection confirms a very small, lightly built biped with a low simple skull, long narrow tail, two hind legs, and no extra limbs or tails. Fern scale preserves its tiny body size.",
+        "reviewMethod": "Original-size anatomy inspection for body scale, skull profile, limb count, tail continuity, and species identity",
+        "reviewBatch": "2026-08-01-richness-batch-85-wannanosaurus",
+        "reviewedAt": "2026-08-01T10:20:00.000Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/wannanosaurus-yansiensis-moss-lakeside-context-imagegen-v3.png",
+        "role": "interaction",
+        "reason": "Original-size inspection confirms the foreground animal retains the small low-skulled pachycephalosaurian silhouette; the distant generic small herbivore is contextual only and does not claim a species interaction.",
+        "reviewMethod": "Original-size anatomy and composition inspection for foreground identity, limb count, tail continuity, and contextual-animal separation",
+        "reviewBatch": "2026-08-01-richness-batch-85-wannanosaurus",
+        "reviewedAt": "2026-08-01T10:20:00.000Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/wannanosaurus-yansiensis-slate-apricot-lakeshore-anatomy-imagegen-v3.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size inspection confirms a very small biped with a low simple skull, two hind legs, long narrow tail, and a distinct slate-and-apricot comparison palette without anatomy or artifact failures.",
+        "reviewMethod": "Original-size anatomy inspection for size reference, skull profile, limb count, tail continuity, palette separation, and species identity",
+        "reviewBatch": "2026-08-01-richness-batch-85-wannanosaurus",
+        "reviewedAt": "2026-08-01T10:20:00.000Z"
       }
     },
     "alaskacephale-gangloffi": {

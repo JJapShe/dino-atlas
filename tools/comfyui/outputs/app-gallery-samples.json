@@ -1,6 +1,6 @@
 {
   "taxa": 132,
-  "images": 1675,
+  "images": 1678,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -11823,12 +11823,36 @@
         "src": "assets/dinosaurs/wannanosaurus-yansiensis-lakemargin-microherd-ecology-imagegen-v1.png"
       },
       {
+        "kind": "anatomy review",
+        "title": "완나노사우루스 v3 블랙베리 올리브 초소형 전신",
+        "body": "큰 양치식물과 함께 크기를 읽을 수 있게 한 전신 해부 참고입니다. 낮고 단순한 머리, 양손의 다섯 손가락, 가는 두 뒷다리의 세 지지 발가락, 가는 단일 꼬리를 원본 크기로 확인했습니다. 색은 비교 재구성입니다.",
+        "source": "assets/dinosaurs/wannanosaurus-yansiensis-blackberry-olive-tiny-fullbody-imagegen-v3.png",
+        "variant": "블랙베리 올리브 초소형 전신 이미지 생성 v3",
+        "src": "assets/dinosaurs/wannanosaurus-yansiensis-blackberry-olive-tiny-fullbody-imagegen-v3.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "완나노사우루스 v3 이끼빛 호숫가 맥락",
+        "body": "전경의 작은 완나노사우루스와 멀리 물가의 일반화한 작은 초식동물을 분리한 환경 맥락입니다. 배경 동물은 종, 만남, 무리 또는 행동의 증거가 아니며 전경의 낮은 머리, 팔다리, 꼬리를 원본 크기로 확인했습니다.",
+        "source": "assets/dinosaurs/wannanosaurus-yansiensis-moss-lakeside-context-imagegen-v3.png",
+        "variant": "이끼빛 호숫가 맥락 이미지 생성 v3",
+        "src": "assets/dinosaurs/wannanosaurus-yansiensis-moss-lakeside-context-imagegen-v3.png"
+      },
+      {
         "kind": "review hold",
         "title": "완나노사우루스 블랙베리 등빛-올리브 옆구리 변형",
         "body": "초소형의 낮은머리 체형을 유지한 채 블랙베리색 등빛이 올리브 옆구리로 불규칙하게 옅어지고, 어깨 위에만 작은 라임색 점을 제한한 변형입니다. 밝은 배와 단색의 짧은 꼬리로 기본 점박이·줄무늬 꼬리 조합을 피했습니다.",
         "source": "assets/dinosaurs/wannanosaurus-yansiensis-blackberry-olive-flecks-pattern-imagegen-v2.png",
         "variant": "블랙베리 등빛-올리브 옆구리 이미지 생성 v2",
         "src": "assets/dinosaurs/wannanosaurus-yansiensis-blackberry-olive-flecks-pattern-imagegen-v2.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "완나노사우루스 v3 슬레이트 살구빛 호숫가 변이",
+        "body": "작은 체구와 낮은 머리를 유지한 색 변이입니다. 슬레이트 푸른 등, 살구빛 목과 배, 작은 옅은 어깨 점만 달리했으며 가는 단색 꼬리를 유지합니다.",
+        "source": "assets/dinosaurs/wannanosaurus-yansiensis-slate-apricot-lakeshore-anatomy-imagegen-v3.png",
+        "variant": "슬레이트 살구빛 호숫가 무늬 이미지 생성 v3",
+        "src": "assets/dinosaurs/wannanosaurus-yansiensis-slate-apricot-lakeshore-anatomy-imagegen-v3.png"
       }
     ],
     "alaskacephale-gangloffi": [
