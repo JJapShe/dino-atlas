@@ -1,6 +1,6 @@
 {
   "taxa": 132,
-  "images": 1634,
+  "images": 1640,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -11786,27 +11786,75 @@
     "goyocephale-lattimorei": [
       {
         "kind": "count-level pass",
-        "title": "고요케팔레 고비 납작머리 대표 후보",
-        "body": "고요케팔레의 낮은 머리형 후두류 대표 후보입니다. 높은 돔 대신 낮고 넓은 두개골, 작은 부리형 머리, 가벼운 이족보행 몸과 긴 꼬리를 우선합니다.",
-        "source": "assets/dinosaurs/goyocephale-lattimorei-gobi-flathead-imagegen-v1.png",
-        "variant": "고비 납작머리 이미지 생성 v1",
-        "src": "assets/dinosaurs/goyocephale-lattimorei-gobi-flathead-imagegen-v1.png"
+        "title": "고요케팔레 v2 낮은 탁자형 머리·긴 꼬리 전신 대표",
+        "body": "Boro Khovil 붉은 사암 지표를 걷는 단독 개체입니다. 높은 돔 대신 낮고 넓은 탁자형 머리, 눈 뒤와 뒤쪽 가장자리에 집중된 결절, 가벼운 몸, 두 앞다리와 두 손, 두 뒷다리와 두 발, 골반에서 한 끝으로 이어지는 긴 꼬리를 원본 크기로 확인했습니다. 손가락의 정확한 수와 비율은 표본에 완전한 손이 없어 비교 복원으로만 다룹니다.",
+        "source": "assets/dinosaurs/goyocephale-lattimorei-table-skull-gracile-representative-imagegen-v2.png",
+        "variant": "낮은 탁자형 머리·긴 꼬리 전신 대표 이미지 생성 v2",
+        "src": "assets/dinosaurs/goyocephale-lattimorei-table-skull-gracile-representative-imagegen-v2.png"
       },
       {
         "kind": "anatomy review",
-        "title": "고요케팔레 붉은 건천 발자국길 장면",
-        "body": "고비의 붉은 건천 주변을 이동하는 생태 장면입니다. 발자국길과 서식지 참고로 사용하되, 낮은 두개골 검수는 대표 이미지를 우선합니다.",
-        "source": "assets/dinosaurs/goyocephale-lattimorei-redwash-trackway-ecology-imagegen-v1.png",
-        "variant": "붉은 건천 생태 이미지 생성 v1",
-        "src": "assets/dinosaurs/goyocephale-lattimorei-redwash-trackway-ecology-imagegen-v1.png"
+        "title": "고요케팔레 v1 Boro Khovil 붉은 사암 서식지",
+        "body": "붉은 사암층, 얕은 빗물 유출로, 성긴 침엽수와 낮은 비꽃식물 식생을 넓게 보여 주는 단독 개체 장면입니다. 동물은 중경에 작게 두어 환경 비중을 높였습니다. 정확한 연대·기후·식생 배치와 살아 있는 지표는 직접 보존되지 않았으며, 네메그트층·자도흐타층·바룬고요트층 또는 특정 동물상으로 확정하지 않습니다.",
+        "source": "assets/dinosaurs/goyocephale-lattimorei-boro-khovil-red-sandstone-habitat-imagegen-v1.png",
+        "variant": "Boro Khovil 붉은 사암 서식지 이미지 생성 v1",
+        "src": "assets/dinosaurs/goyocephale-lattimorei-boro-khovil-red-sandstone-habitat-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "고요케팔레 v1 낮은 탁자형 지붕·뒤쪽 결절 근접",
+        "body": "머리·목·어깨를 의도적으로 크게 자른 구조 참고입니다. 높은 돔 없이 낮은 지붕, 비교적 긴 얕은 주둥이, 거의 매끈한 중앙부와 눈 뒤·인상골 뒤쪽에 제한된 결절, 한 눈과 한 콧구멍을 확인합니다. 입술 사이의 작은 송곳니형 끝은 이형치를 암시할 뿐 정확한 치아 수를 증명하지 않으며, 화면 밖 손·발·꼬리 수는 주장하지 않습니다.",
+        "source": "assets/dinosaurs/goyocephale-lattimorei-table-skull-rear-nodes-anatomy-imagegen-v1.png",
+        "variant": "낮은 탁자형 지붕·뒤쪽 결절 근접 이미지 생성 v1",
+        "src": "assets/dinosaurs/goyocephale-lattimorei-table-skull-rear-nodes-anatomy-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "고요케팔레 v1 낮은 양치식생 먹이 탐색 가설",
+        "body": "머리를 낮춰 양치류 주변을 살피는 단독 개체 장면입니다. 한 머리·두 앞다리와 두 손·두 뒷다리와 두 발·한 긴 꼬리가 서로 분리되어 읽히고, 중앙 두개골 지붕은 낮게 두면서 큰 결절은 눈 뒤쪽에 제한했습니다. 식물 선택·섭식 여부·자세·피부색은 모두 복원 가설이며 식성이나 먹이 종류를 직접 입증하지 않습니다.",
+        "source": "assets/dinosaurs/goyocephale-lattimorei-low-fern-foraging-hypothesis-imagegen-v1.png",
+        "variant": "낮은 양치식생 먹이 탐색 가설 이미지 생성 v1",
+        "src": "assets/dinosaurs/goyocephale-lattimorei-low-fern-foraging-hypothesis-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "고요케팔레 v1 긴 힘줄 꼬리·빠른 보행 자세",
+        "body": "낮은 측면 시점에서 빠르게 걷는 자세를 비교하는 단독 개체입니다. 두 앞다리와 두 손, 지면을 딛는 한 발과 들어 올린 한 발, 세 주축 발가락, 골반에서 한 끝으로 이어지는 긴 꼬리를 확인했습니다. 거의 이어진 32개 꼬리 중심체와 힘줄은 긴 꼬리의 근거이지만 실제 속도·보행 단계·연부조직 강성은 복원입니다.",
+        "source": "assets/dinosaurs/goyocephale-lattimorei-tendon-tail-brisk-walk-anatomy-imagegen-v1.png",
+        "variant": "긴 힘줄 꼬리·빠른 보행 자세 이미지 생성 v1",
+        "src": "assets/dinosaurs/goyocephale-lattimorei-tendon-tail-brisk-walk-anatomy-imagegen-v1.png"
       },
       {
         "kind": "review hold",
-        "title": "고요케팔레 모래빛-돌회색 돔 변형",
-        "body": "납작하고 낮은 두개골과 모래빛 몸통은 유지하되, 큰 구름 반점은 없앴습니다. 돌회색 돔이 목 뒤의 옅은 슬레이트 등안개로 흐려지고, 눈 아래의 작은 황토 뺨과 옅은 주둥이·목이 연결되는 v4입니다.",
+        "title": "고요케팔레 v1 자두회색·지의류색 푸른시간 무늬",
+        "body": "대표와 반대 방향으로 걷는 푸른시간 변이입니다. 자두회색 등과 머리, 지의류색 옆구리, 구리빛 얼굴·목, 아마빛 아래면을 넓고 불규칙한 색면으로 나눠 대표의 숯빛 황토색과 구분했습니다. 한 머리·두 뒷다리·두 발·한 꼬리는 읽히지만 먼쪽 앞다리와 손은 겹쳐 보여 무늬 비교용 검토 단계로 유지합니다.",
+        "source": "assets/dinosaurs/goyocephale-lattimorei-plum-lichen-bluehour-pattern-imagegen-v1.png",
+        "variant": "자두회색·지의류색 푸른시간 무늬 이미지 생성 v1",
+        "src": "assets/dinosaurs/goyocephale-lattimorei-plum-lichen-bluehour-pattern-imagegen-v1.png"
+      },
+      {
+        "kind": "reject reference",
+        "title": "고요케팔레 기존 무거운 조반류형 대표 탈락 기록",
+        "body": "무겁고 일반적인 조각류 같은 몸, 이마 앞쪽까지 이어지는 구슬형 결절과 큰 부리 때문에 낮은 탁자형 머리와 가벼운 후두류 정체성이 흐려 대표에서 제외했습니다.",
+        "source": "assets/dinosaurs/goyocephale-lattimorei-gobi-flathead-imagegen-v1.png",
+        "variant": "무거운 몸·전두부 구슬 결절 대표 탈락 참고",
+        "src": "assets/dinosaurs/goyocephale-lattimorei-gobi-flathead-imagegen-v1.png"
+      },
+      {
+        "kind": "reject reference",
+        "title": "고요케팔레 기존 모래빛·돌회색 무늬 탈락 기록",
+        "body": "색 구분은 나아졌지만 몸이 여전히 무겁고 일반적이며 손·발과 낮은 탁자형 두개골의 종 고유 단서가 약해, 색감만으로 구조 불확실성을 덮을 수 없어 무늬 슬롯에서 제외했습니다.",
         "source": "assets/dinosaurs/goyocephale-lattimorei-sand-stonecap-ochre-cheek-pattern-imagegen-v4.png",
-        "variant": "모래빛-돌회색 돔 이미지 생성 v4",
+        "variant": "무거운 몸·약한 종 정체성 무늬 탈락 참고",
         "src": "assets/dinosaurs/goyocephale-lattimorei-sand-stonecap-ochre-cheek-pattern-imagegen-v4.png"
+      },
+      {
+        "kind": "reject reference",
+        "title": "고요케팔레 기존 복제 다개체·발자국길 탈락 기록",
+        "body": "세 개체가 복제처럼 반복되고 규칙 점무늬와 꼬리띠가 강하며, 직접 근거가 없는 협곡형 붉은 건천과 종 특정 발자국길을 확정적으로 보여 주어 생태 참고에서도 제외했습니다.",
+        "source": "assets/dinosaurs/goyocephale-lattimorei-redwash-trackway-ecology-imagegen-v1.png",
+        "variant": "복제 다개체·규칙 무늬·발자국길 탈락 참고",
+        "src": "assets/dinosaurs/goyocephale-lattimorei-redwash-trackway-ecology-imagegen-v1.png"
       }
     ],
     "sphaerotholus-buchholtzae": [

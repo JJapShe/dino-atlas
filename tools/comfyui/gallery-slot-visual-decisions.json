@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-31T05:39:15.652Z",
-  "reviewBatch": "2026-07-31-richness-six-slot-batch-73",
-  "reviewMethod": "Batch 73 Xu, Wang and Wu 1999 holotype anatomy; Xu and Wu 2001 cranial evidence; Turner et al. 2012 dromaeosaurid context; venom-hypothesis challenge; linked source and license audit; six-image contact sheet; enlarged head, hand, foot, digit-II claw, tail, and secondary-animal crops; CC BY skeletal comparison; and original-size inspection for a low narrow skull, large orbit, two long forelimbs with three-fingered hands, two hind limbs and independent feet, attached moderate digit-II claws, one pelvis-origin stiff tail, filamentous rather than modern-wing integument, stable phenotype, Sihetun tuff-lake-margin setting, spatial separation, cautious evidence and behavior language, role balance, and artifact gates.",
-  "targetSlots": 711,
+  "generatedAt": "2026-07-31T06:37:01.139Z",
+  "reviewBatch": "2026-07-31-richness-six-slot-batch-74",
+  "reviewMethod": "Batch 74 Perle, Maryanska and Osmolska 1982 holotype, locality, horizon, skull, dentition, caudal, forelimb, and pedal evidence; Schott et al. 2011 flat-headed ontogeny and taxonomic caution; linked source and license audit; CC BY article plates and CC BY 3.0 skeletal comparison; six-image contact sheet; and original-size inspection for one head, two forelimbs, two hind limbs, one pelvis-origin tail, a low centrally depressed tablelike skull roof, rear-weighted squamosal nodes, no high dome, conservative heterodonty language, three main pedal rays, non-recurved pedal claws, hand reconstruction uncertainty, stable phenotype, Boro Khovil red-sandstone uncertainty, role balance, and artifact gates.",
+  "targetSlots": 714,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -6412,30 +6412,57 @@
     "goyocephale-lattimorei": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/goyocephale-lattimorei-gobi-flathead-imagegen-v1.png",
+        "source": "assets/dinosaurs/goyocephale-lattimorei-table-skull-gracile-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The neutral whole-body frame replaces the heavy generic former representative with a low tablelike skull, rear-weighted nodes, gracile body, two forelimbs and hands, two hind limbs and feet, three main pedal rays, and one complete long tail.",
+        "reviewMethod": "Batch 74 original-size full-frame, head, forelimb, hand, hind-limb, foot, pelvis, and tail inspection against the 1982 holotype plates and CC BY skeletal comparison; exact manual digit anatomy remains comparative.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-74",
+        "reviewedAt": "2026-07-31T06:37:01.139Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/goyocephale-lattimorei-sand-stonecap-ochre-cheek-pattern-imagegen-v4.png",
+        "source": "assets/dinosaurs/goyocephale-lattimorei-plum-lichen-bluehour-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing blue-hour frame separates plum-slate, lichen, copper, and flax fields without regular tail rings while retaining the low skull, two hind limbs, two feet, and one long tail; partial far-forelimb overlap keeps the app rank at review hold.",
+        "reviewMethod": "Batch 74 original-size inspection of skull height, node placement, visible limbs, feet, complete tail, phenotype continuity, natural palette separation, and compositional distinction from the daylight representative.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-74",
+        "reviewedAt": "2026-07-31T06:37:01.139Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/goyocephale-lattimorei-redwash-trackway-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/goyocephale-lattimorei-boro-khovil-red-sandstone-habitat-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "A wide red-sandstone sheet, shallow runoff, sparse conifers, ferns, and broad open ground add a distinct habitat role while the single mid-distance animal remains a readable low-headed, long-tailed silhouette.",
+        "reviewMethod": "Batch 74 original-size animal and environmental inspection; accepted as cautious Boro Khovil context without assigning a precise age, formation, climate, flora, living surface, or confirmed fauna.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-74",
+        "reviewedAt": "2026-07-31T06:37:01.139Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/goyocephale-lattimorei-table-skull-rear-nodes-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The deliberate head-neck-shoulder crop isolates a low roof, shallow elongate snout, mostly subdued central surface, and stronger nodes behind the eye and at the rear skull margin; no limb, tail, or exact tooth-count claim is inferred from the crop.",
+        "reviewMethod": "Batch 74 original-size skull-roof, snout, eye, naris, rear-node, mouth, and neck inspection against the 1982 cranial description and plates, with generated soft tissue and exposed tooth detail retained as reconstruction.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-74",
+        "reviewedAt": "2026-07-31T06:37:01.139Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/goyocephale-lattimorei-low-fern-foraging-hypothesis-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "The corrected low-foraging frame preserves one head, two forelimbs and hands, two hind limbs and feet, and one long tail while reducing the first draft's broad pebble-like skull ornament to a low central roof and rear-weighted nodes.",
+        "reviewMethod": "Batch 74 original-size full-body, head, hand, foot, pelvis, tail, and plant-overlap inspection; feeding, plant choice, posture, skin, and color remain reconstruction hypotheses.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-74",
+        "reviewedAt": "2026-07-31T06:37:01.139Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/goyocephale-lattimorei-tendon-tail-brisk-walk-anatomy-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The low lateral movement study keeps two forelimbs and hands, two hind limbs and feet, three principal toes on the readable feet, and one long pelvis-origin tail while providing a distinct locomotor composition.",
+        "reviewMethod": "Batch 74 original-size limb, hand, foot, toe, pelvis, and tail inspection; the 32 preserved caudal centra and tendons support a long tail, but exact gait, speed, soft-tissue stiffness, and behavior are not claimed.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-74",
+        "reviewedAt": "2026-07-31T06:37:01.139Z"
       }
     },
     "sphaerotholus-buchholtzae": {
@@ -6963,6 +6990,15 @@
     },
     "assets/dinosaurs/sinornithosaurus-millenii-yixian-forest-ecology-imagegen-v1.png": {
       "reason": "The former ecology frame uses duplicated-looking foreground animals with overlapping appendages and an inappropriate horned or frilled background animal, so neither the anatomy nor the regional-fauna context is reliable."
+    },
+    "assets/dinosaurs/goyocephale-lattimorei-gobi-flathead-imagegen-v1.png": {
+      "reason": "The former representative has a generic heavy ornithopod-like body, a large beak, and bead-like ornament extending across the frontal region, so it fails the low table-skull and gracile Goyocephale identity gate."
+    },
+    "assets/dinosaurs/goyocephale-lattimorei-sand-stonecap-ochre-cheek-pattern-imagegen-v4.png": {
+      "reason": "The palette is improved, but the underlying body remains heavy and generic while the hands, feet, and low table-skull identity are too weak for a reliable same-species color slot."
+    },
+    "assets/dinosaurs/goyocephale-lattimorei-redwash-trackway-ecology-imagegen-v1.png": {
+      "reason": "Three cloned-looking animals, regular spots and tail bands, and an unsupported species-specific trackway and canyon narrative make both the anatomy and Boro Khovil environmental claim unreliable."
     },
     "assets/dinosaurs/chasmosaurus-belli-fenestrated-frill-imagegen-v1.png": {
       "reason": "Literal open-air frill holes expose the background instead of continuous frill skin."
