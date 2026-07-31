@@ -1,6 +1,6 @@
 {
   "taxa": 132,
-  "images": 1681,
+  "images": 1684,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -11923,12 +11923,36 @@
         "src": "assets/dinosaurs/foraminacephale-brevis-cutbank-display-ecology-imagegen-v1.png"
       },
       {
+        "kind": "anatomy review",
+        "title": "포라미나케팔레 v3 밤색 모래빛 낮은 돔 전신",
+        "body": "공룡공원층 하안에서 작은 체급을 읽을 수 있게 한 전신 해부 비교입니다. 낮고 둥근 돔, 작은 부리형 머리, 두 짧은 앞다리, 두 뒷다리, 단일 꼬리를 원본 크기로 확인했습니다. 색은 비교 재구성입니다.",
+        "source": "assets/dinosaurs/foraminacephale-brevis-chestnut-sand-lowdome-fullbody-imagegen-v3.png",
+        "variant": "밤색 모래빛 낮은 돔 전신 이미지 생성 v3",
+        "src": "assets/dinosaurs/foraminacephale-brevis-chestnut-sand-lowdome-fullbody-imagegen-v3.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "포라미나케팔레 v3 절벽 말꼬리풀 먹이활동",
+        "body": "늦은 오후 범람원에서 말꼬리풀을 뜯는 단일 개체의 환경 맥락입니다. 행동은 재구성이며, 낮은 돔과 한 개체의 팔다리·꼬리를 원본 크기로 확인했습니다.",
+        "source": "assets/dinosaurs/foraminacephale-brevis-cutbank-horsetail-browse-ecology-imagegen-v3.png",
+        "variant": "절벽 말꼬리풀 먹이활동 이미지 생성 v3",
+        "src": "assets/dinosaurs/foraminacephale-brevis-cutbank-horsetail-browse-ecology-imagegen-v3.png"
+      },
+      {
         "kind": "review hold",
         "title": "포라미나케팔레 청회색 돔-이끼빛 몸통 변형",
         "body": "낮은 둥근 돔을 청회색의 옅은 마모 무늬로, 몸통을 이끼빛 단색으로 분리했습니다. 녹슨 주황 점은 앞다리 위 어깨에만 작은 성좌처럼 제한하고, 목·배와 꼬리는 밝은 단색으로 두어 전신 점박이와 꼬리 띠를 없앴습니다.",
         "source": "assets/dinosaurs/foraminacephale-brevis-bluegray-moss-shoulder-dots-pattern-imagegen-v2.png",
         "variant": "청회색 돔-이끼빛 몸통 이미지 생성 v2",
         "src": "assets/dinosaurs/foraminacephale-brevis-bluegray-moss-shoulder-dots-pattern-imagegen-v2.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "포라미나케팔레 v3 라벤더 멀베리 초승달 변이",
+        "body": "라벤더 회색 돔, 멀베리빛 목덜미, 올리브 황갈색 몸통과 엉덩이의 작은 크림 초승달만 분리한 비교 변이입니다. 기존 청회색·이끼색 무늬와 겹치지 않으며 꼬리는 단색으로 유지했습니다.",
+        "source": "assets/dinosaurs/foraminacephale-brevis-lavender-mulberry-crescent-variant-imagegen-v3.png",
+        "variant": "라벤더 멀베리 초승달 변이 이미지 생성 v3",
+        "src": "assets/dinosaurs/foraminacephale-brevis-lavender-mulberry-crescent-variant-imagegen-v3.png"
       }
     ],
     "colepiocephale-lambei": [

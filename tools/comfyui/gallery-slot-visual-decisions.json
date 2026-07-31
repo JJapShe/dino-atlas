@@ -6584,6 +6584,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/foraminacephale-brevis-chestnut-sand-lowdome-fullbody-imagegen-v3.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size inspection confirms a small lightly built biped with a low rounded dome, small beak-like head, two forelimbs, two hind limbs, separated feet, and one continuous narrow tail. The dome is not high, horned, or spiked.",
+        "reviewMethod": "Original-size anatomy inspection for dome profile, limb count, foot separation, tail continuity, body scale, and species identity",
+        "reviewBatch": "2026-08-01-richness-batch-87-foraminacephale",
+        "reviewedAt": "2026-08-01T12:10:00.000Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/foraminacephale-brevis-cutbank-horsetail-browse-ecology-imagegen-v3.png",
+        "role": "interaction",
+        "reason": "Original-size inspection confirms one readable browsing animal with a low rounded dome, two forelimbs, two hind limbs, clear feet, and a single continuous tail. The scene contains no secondary animal requiring a separate anatomy decision.",
+        "reviewMethod": "Original-size anatomy and composition inspection for dome profile, limb count, tail continuity, full-body visibility, and single-animal scene integrity",
+        "reviewBatch": "2026-08-01-richness-batch-87-foraminacephale",
+        "reviewedAt": "2026-08-01T12:10:00.000Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/foraminacephale-brevis-lavender-mulberry-crescent-variant-imagegen-v3.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size inspection confirms a low rounded dome, two forelimbs, two hind limbs, separated feet, and one tail. The lavender, mulberry, and small cream hip-crescent palette is distinct from the existing blue-gray and moss treatment.",
+        "reviewMethod": "Original-size anatomy inspection for dome profile, limb count, foot separation, tail continuity, palette separation, and species identity",
+        "reviewBatch": "2026-08-01-richness-batch-87-foraminacephale",
+        "reviewedAt": "2026-08-01T12:10:00.000Z"
       }
     },
     "colepiocephale-lambei": {

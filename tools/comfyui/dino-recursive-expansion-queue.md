@@ -4737,6 +4737,12 @@ For each added taxon, produce:
 
 ## Recent Expansion Notes
 
+- `Foraminacephale brevis six-image low-dome expansion 2026-08-01`
+  - Kept the existing Dinosaur Park representative, blue-gray moss pattern, and cutbank display reference. Added a chestnut-sand whole-body anatomy frame, lavender-mulberry hip-crescent comparison pattern, and a single-animal cutbank horsetail browsing ecology frame.
+  - The direct gate keeps a small lightly built biped with a low rounded dome, short beak-like head, two forelimbs, two hind limbs, one continuous narrow tail, and no high dome, horns, spikes, frill, or oversized Pachycephalosaurus drift. Exact colours and browsing behavior remain comparative reconstructions.
+  - Original-size inspection of all three additions resolves one head, two forelimbs, two hind limbs, clear feet, and one pelvis-origin tail. The ecology frame holds one animal only, so it carries habitat context without a companion or interaction claim.
+  - Built-in ImageGen source mapping: anatomy `exec-12457393-3243-4b39-86fd-12966e8a9a17.png`, pattern `exec-d31f6c1b-f8ce-4027-adb8-77f6f82f62e5.png`, and ecology `exec-04787a3a-739b-46ee-97f8-b1763068a1c5.png`. Only species-prefixed project copies under `assets/dinosaurs/` are app references.
+
 - `Alaskacephale gangloffi six-image polar-dome expansion 2026-08-01`
   - Kept the existing Prince Creek representative, midnight-copper pattern, and polar-forest ecology image. Added a charcoal-ochre whole-body anatomy frame, a wine-red and sage comparison pattern, and a single-animal polar-stream browsing ecology frame.
   - The direct gate keeps a medium-small, lightly built biped with a thick rounded dome, small beak-like head, two forelimbs, two hind limbs, one continuous tail, and no horns, spikes, or oversized Pachycephalosaurus drift. Exact skin colours and behavior remain comparative reconstructions.
