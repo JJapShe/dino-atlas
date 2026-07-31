@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-31-richness-six-slot-batch-75",
+  "reviewBatch": "2026-07-31-richness-six-slot-batch-76",
   "rejectedSources": {
     "assets/dinosaurs/nyctosaurus-gracilis-niobrara-forked-crest-imagegen-v1.png": {
       "reason": "Free clawed appendages project from the wing margins, limb and membrane topology is confused, and a genus-level mature branching crest is incorrectly fixed onto the N. gracilis representative."
@@ -301,6 +301,15 @@
     },
     "assets/dinosaurs/sinovenator-changii-yixian-lakemargin-ecology-imagegen-v1.png": {
       "reason": "Repeated foreground animals, under-audited appendages, and an overly generic lake-margin setting prevent reliable anatomy, population, or Lujiatun environmental use."
+    },
+    "assets/dinosaurs/saurornithoides-mongoliensis-large-eye-troodontid-imagegen-v1.png": {
+      "reason": "The former representative has broad modern-bird-like arm fans, ambiguous hands and feet, no reliably readable I-IV toe formula, and a generic short-headed troodontid identity."
+    },
+    "assets/dinosaurs/saurornithoides-mongoliensis-violet-turquoise-pattern-imagegen-v1.png": {
+      "reason": "The former pattern image nearly duplicates the rejected representative, retains unstable appendage topology and broad wing-like arms, and adds regular tail markings that weaken same-species continuity."
+    },
+    "assets/dinosaurs/saurornithoides-mongoliensis-djadokhta-ecology-imagegen-v1.png": {
+      "reason": "Cloned foreground animals, repeated background fauna, broad wing-like forelimbs, under-audited feet, and a generic modern-desert setting fail both the strict anatomy and Djadokhta environment gates."
     },
     "assets/dinosaurs/chasmosaurus-belli-fenestrated-frill-imagegen-v1.png": {
       "reason": "Literal open-air frill holes expose the background instead of continuous frill skin."

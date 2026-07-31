@@ -4103,7 +4103,7 @@ window.gallerySlotAssignments = {
   ],
   "saurornithoides-mongoliensis": [
     {
-      "source": "assets/dinosaurs/saurornithoides-mongoliensis-large-eye-troodontid-imagegen-v1.png",
+      "source": "assets/dinosaurs/saurornithoides-mongoliensis-bayan-zag-four-digit-wading-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
@@ -4111,7 +4111,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/saurornithoides-mongoliensis-violet-turquoise-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/saurornithoides-mongoliensis-juniper-indigo-bluehour-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -4119,9 +4119,33 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/saurornithoides-mongoliensis-djadokhta-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/saurornithoides-mongoliensis-djadokhta-interdune-lacustrine-habitat-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/saurornithoides-mongoliensis-round-orbit-toothed-rostrum-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/saurornithoides-mongoliensis-digit-ii-four-digit-pes-anatomy-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/saurornithoides-mongoliensis-protoceratops-gully-coexistence-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"

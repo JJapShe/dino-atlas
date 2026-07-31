@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-31T07:41:55.196Z",
-  "reviewBatch": "2026-07-31-richness-six-slot-batch-75",
-  "reviewMethod": "Batch 75 Xu et al. 2002 original description, Yin, Pei and Zhou 2018 cranial evidence, Yu et al. 2024 braincase and articulated-skeleton evidence, linked source and license audit, CC0 silhouette comparison, six-image contact sheet, enlarged hand and foot crops, and original-size inspection for one shallow triangular toothed head, two long forelimbs with three-fingered hands, two hind limbs, an exact visible I-IV foot with a raised moderate digit-II claw, one pelvis-origin tail, direct-versus-comparative integument boundaries, Lujiatun fluvial volcaniclastic context, cautious resting-posture language, role balance, and artifact gates.",
-  "targetSlots": 717,
+  "generatedAt": "2026-07-31T08:39:03.038Z",
+  "reviewBatch": "2026-07-31-richness-six-slot-batch-76",
+  "reviewMethod": "Batch 76 Norell et al. 2009 holotype skull, pelvis, hind-limb, and left-pes evidence; Osborn 1924 historical description; Lefeld 1971 Djadokhta geology; BHL source and CC BY-NC-SA 4.0 audit; six-image contact sheet; enlarged hand and foot crops; and original-size inspection for one long low rounded toothed head, two comparative forelimbs, two hind limbs, an exact visible I-IV foot with a raised moderate digit-II claw, one pelvis-origin tail, direct-versus-comparative reconstruction boundaries, aeolian-interdune-lacustrine context, role balance, and artifact gates.",
+  "targetSlots": 720,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -4600,30 +4600,57 @@
     "saurornithoides-mongoliensis": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/saurornithoides-mongoliensis-large-eye-troodontid-imagegen-v1.png",
+        "source": "assets/dinosaurs/saurornithoides-mongoliensis-bayan-zag-four-digit-wading-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The representative preserves the long low rounded toothed rostrum, large round orbit, one head, two comparative forelimbs, two hind limbs, one continuous tail, and one exact lifted I-IV foot while the supporting foot remains submerged.",
+        "reviewMethod": "Batch 76 original-size head, hand, lifted-foot, supporting-leg, tail-origin, tail-tip, palette, background, and artifact inspection against Norell et al. 2009 figures 3 and 20.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-76",
+        "reviewedAt": "2026-07-31T08:39:03.038Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/saurornithoides-mongoliensis-violet-turquoise-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/saurornithoides-mongoliensis-juniper-indigo-bluehour-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing blue-hour variant retains the same skull and body identity, two three-fingered hands, two hind limbs, one continuous tail, and a readable I-IV lifted foot while adding a distinct irregular juniper-indigo-plum palette without regular tail bars.",
+        "reviewMethod": "Batch 76 original-size head, both hands, crossed-leg separation, lifted-foot topology, supporting-foot occlusion, tail continuity, palette, and pattern inspection.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-76",
+        "reviewedAt": "2026-07-31T08:39:03.038Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/saurornithoides-mongoliensis-djadokhta-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/saurornithoides-mongoliensis-djadokhta-interdune-lacustrine-habitat-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The high oblique habitat frame adds a distinct scale and composition role with one complete Saurornithoides silhouette in aeolian sandstone, pale interdune sand, and a shallow lacustrine margin instead of a generic dark floodplain.",
+        "reviewMethod": "Batch 76 original-size silhouette, single-animal count, tail continuity, horizon, bedding, water-margin, vegetation-density, and modern-object inspection against Lefeld 1971.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-76",
+        "reviewedAt": "2026-07-31T08:39:03.038Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/saurornithoides-mongoliensis-round-orbit-toothed-rostrum-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The head close-up isolates the rounded long low rostrum, large round orbit, straight lower cheek line, and numerous small teeth without a beak, owl facial disk, deep dromaeosaur skull, or duplicate head.",
+        "reviewMethod": "Batch 76 original-size snout-tip, naris, tooth row, orbit, jugal line, neck exit, background, and artifact inspection against Norell et al. 2009 figure 3 and skull description.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-76",
+        "reviewedAt": "2026-07-31T08:39:03.038Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/saurornithoides-mongoliensis-digit-ii-four-digit-pes-anatomy-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "The isolated living left foot contains exactly four connected digits: a small rear hallux I, raised digit II with a moderate claw, and only two forward digits III-IV, with no fifth digit or duplicated leg.",
+        "reviewMethod": "Batch 76 original-size digit-origin, joint, claw, scale, lower-leg, shadow, and artifact inspection against Norell et al. 2009 figure 20 and pes description.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-76",
+        "reviewedAt": "2026-07-31T08:39:03.038Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/saurornithoides-mongoliensis-protoceratops-gully-coexistence-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The non-contact ecology frame contains exactly one Saurornithoides and one distant Protoceratops on separated benches, with no attack, animal fusion, duplicated body, or unsupported documented-encounter claim.",
+        "reviewMethod": "Batch 76 original-size species identity, animal count, gully separation, foreground appendage, both tail-tip, distant frill, contact, narrative, and artifact inspection.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-76",
+        "reviewedAt": "2026-07-31T08:39:03.038Z"
       }
     },
     "zanabazar-junior": {
@@ -7035,6 +7062,15 @@
     },
     "assets/dinosaurs/sinovenator-changii-yixian-lakemargin-ecology-imagegen-v1.png": {
       "reason": "Repeated foreground animals, under-audited appendages, and an overly generic lake-margin setting prevent reliable anatomy, population, or Lujiatun environmental use."
+    },
+    "assets/dinosaurs/saurornithoides-mongoliensis-large-eye-troodontid-imagegen-v1.png": {
+      "reason": "The former representative has broad modern-bird-like arm fans, ambiguous hands and feet, no reliably readable I-IV toe formula, and a generic short-headed troodontid identity."
+    },
+    "assets/dinosaurs/saurornithoides-mongoliensis-violet-turquoise-pattern-imagegen-v1.png": {
+      "reason": "The former pattern image nearly duplicates the rejected representative, retains unstable appendage topology and broad wing-like arms, and adds regular tail markings that weaken same-species continuity."
+    },
+    "assets/dinosaurs/saurornithoides-mongoliensis-djadokhta-ecology-imagegen-v1.png": {
+      "reason": "Cloned foreground animals, repeated background fauna, broad wing-like forelimbs, under-audited feet, and a generic modern-desert setting fail both the strict anatomy and Djadokhta environment gates."
     },
     "assets/dinosaurs/chasmosaurus-belli-fenestrated-frill-imagegen-v1.png": {
       "reason": "Literal open-air frill holes expose the background instead of continuous frill skin."
