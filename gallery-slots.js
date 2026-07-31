@@ -5653,7 +5653,7 @@ window.gallerySlotAssignments = {
   ],
   "homalocephale-calathocercos": [
     {
-      "source": "assets/dinosaurs/homalocephale-calathocercos-flat-skull-imagegen-v1.png",
+      "source": "assets/dinosaurs/homalocephale-calathocercos-low-flat-teal-fullbody-imagegen-v4.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
@@ -5661,7 +5661,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/homalocephale-calathocercos-honey-slate-marbling-pattern-imagegen-v3.png",
+      "source": "assets/dinosaurs/homalocephale-calathocercos-umber-coral-browse-pattern-imagegen-v4.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -5669,9 +5669,33 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/homalocephale-calathocercos-mudflat-crossing-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/homalocephale-calathocercos-charcoal-flatcap-overcast-anatomy-imagegen-v4.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/homalocephale-calathocercos-shallow-cap-high-angle-structure-imagegen-v4.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/homalocephale-calathocercos-plum-channel-hadrosaur-context-imagegen-v4.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/homalocephale-calathocercos-olive-apricot-bluehour-pattern-imagegen-v4.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"

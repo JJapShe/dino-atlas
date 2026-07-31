@@ -4737,6 +4737,12 @@ For each added taxon, produce:
 
 ## Recent Expansion Notes
 
+- `Homalocephale calathocercos six-image low-flat-skull rebuild 2026-08-01`
+  - Replaced the prior tall-dome and ornament-drift set with six new low-flat-skull reconstructions: teal representative, umber-coral colour variation, charcoal overcast anatomy frame, elevated skull-roof structure frame, channel-separated generic hadrosaur context, and olive-apricot blue-hour variation.
+  - The direct gate follows Maryanska and Osmolska 1974 within the limits of reconstruction: a small lightly built biped with a low broad smooth skull roof rather than a high pachycephalosaur dome, no cranial horns or spikes, short forelimbs, long hind limbs, three readable support toes, and one straight tail. Exact skin, colour, markings, behaviour and habitat moment remain comparative reconstruction hypotheses.
+  - Original-size inspection resolves a single unornamented head, two forelimbs, two hind limbs, readable feet, and one continuous tail in all six. The distant hadrosaur-like animal is generic environmental context only and does not establish a named species, encounter, grouping, predation, or behaviour.
+  - Built-in ImageGen source mapping: teal `exec-741ed97f-e16b-4b35-a60c-cd3a517022ee.png`, umber `exec-fe5f9273-2352-4975-9c71-e79309a583a7.png`, charcoal `exec-e14109bc-3111-430d-ac48-47f8137c7594.png`, elevated `exec-4b1ddd3b-38ee-4681-8532-1967228a38ee.png`, context `exec-b2997171-dfeb-40f0-8cc9-b98619ab209a.png`, blue hour `exec-8cff807c-9351-4176-97fb-50bf90099144.png`. Only the species-prefixed project copies under `assets/dinosaurs/` are app references.
+
 - `Gobivenator mongoliensis six-image moderate-snout expansion 2026-08-01`
   - Kept the established representative, graphite-copper variation, and ecology reference, then added a moss-copper full-body anatomy frame, a blue-hour olive unbanded-tail variation, and a post-rain dry-wash regional-context frame.
   - The direct identity gate follows Tsuihiji et al. 2014 within the limits of a soft-tissue reconstruction: a small Djadokhta troodontid with a low narrow moderately elongate toothed skull, large eye, compact forelimbs with three fingers, long thin hind limbs, three readable support toes with a modest raised digit-II claw, and one stiff tail. Feather extent, palette, markings, weather, habitat moment, and behaviour remain reconstruction hypotheses.

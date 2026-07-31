@@ -6336,30 +6336,57 @@
     "homalocephale-calathocercos": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/homalocephale-calathocercos-flat-skull-imagegen-v1.png",
+        "source": "assets/dinosaurs/homalocephale-calathocercos-low-flat-teal-fullbody-imagegen-v4.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Original-size inspection confirms a low broad smooth skull roof without ornament, two five-fingered forelimbs, two hind limbs with three support toes, and one tail; colour remains comparative reconstruction.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against Maryanska and Osmolska 1974",
+        "reviewBatch": "2026-08-01-richness-batch-84-homalocephale",
+        "reviewedAt": "2026-08-01T09:00:00.000Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/homalocephale-calathocercos-honey-slate-marbling-pattern-imagegen-v3.png",
+        "source": "assets/dinosaurs/homalocephale-calathocercos-umber-coral-browse-pattern-imagegen-v4.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Original-size inspection confirms an unornamented low skull, two forelimbs, two hind limbs, readable feet, and one plain tail; palette is variation only.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against Maryanska and Osmolska 1974",
+        "reviewBatch": "2026-08-01-richness-batch-84-homalocephale",
+        "reviewedAt": "2026-08-01T09:00:00.000Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/homalocephale-calathocercos-mudflat-crossing-ecology-imagegen-v1.png",
-        "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "source": "assets/dinosaurs/homalocephale-calathocercos-charcoal-flatcap-overcast-anatomy-imagegen-v4.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size inspection confirms a low broad smooth skull roof, two five-fingered forelimbs, two hind limbs, readable three-toed feet, and one tail.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against Maryanska and Osmolska 1974",
+        "reviewBatch": "2026-08-01-richness-batch-84-homalocephale",
+        "reviewedAt": "2026-08-01T09:00:00.000Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/homalocephale-calathocercos-shallow-cap-high-angle-structure-imagegen-v4.png",
+        "role": "identity-anatomy",
+        "reason": "Elevated view keeps the smooth low broad skull roof, two forelimbs, two hind limbs, readable feet, and one tail visible without cranial ornament.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against Maryanska and Osmolska 1974",
+        "reviewBatch": "2026-08-01-richness-batch-84-homalocephale",
+        "reviewedAt": "2026-08-01T09:00:00.000Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/homalocephale-calathocercos-plum-channel-hadrosaur-context-imagegen-v4.png",
+        "role": "social-growth-defense",
+        "reason": "Foreground Homalocephale retains its low unornamented skull, coherent limbs, readable feet, and one tail; distant generic hadrosaur-like animal is environmental context only.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against Maryanska and Osmolska 1974",
+        "reviewBatch": "2026-08-01-richness-batch-84-homalocephale",
+        "reviewedAt": "2026-08-01T09:00:00.000Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/homalocephale-calathocercos-olive-apricot-bluehour-pattern-imagegen-v4.png",
+        "role": "interaction",
+        "reason": "Original-size inspection confirms low unornamented skull, two forelimbs, two hind limbs, readable three-toed feet, and a single unbanded tail; palette is variation only.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against Maryanska and Osmolska 1974",
+        "reviewBatch": "2026-08-01-richness-batch-84-homalocephale",
+        "reviewedAt": "2026-08-01T09:00:00.000Z"
       }
     },
     "tylocephale-gilmorei": {
