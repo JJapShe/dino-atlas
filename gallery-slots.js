@@ -5975,6 +5975,30 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/sphaerotholus-goodwini-charcoal-russet-dome-fullbody-imagegen-v4.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/sphaerotholus-goodwini-arroyo-fern-browse-ecology-imagegen-v4.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/sphaerotholus-goodwini-cobalt-violet-ochre-variant-imagegen-v4.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
     }
   ],
   "acrotholus-audeti": [
