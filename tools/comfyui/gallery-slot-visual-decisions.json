@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-31T06:37:01.139Z",
-  "reviewBatch": "2026-07-31-richness-six-slot-batch-74",
-  "reviewMethod": "Batch 74 Perle, Maryanska and Osmolska 1982 holotype, locality, horizon, skull, dentition, caudal, forelimb, and pedal evidence; Schott et al. 2011 flat-headed ontogeny and taxonomic caution; linked source and license audit; CC BY article plates and CC BY 3.0 skeletal comparison; six-image contact sheet; and original-size inspection for one head, two forelimbs, two hind limbs, one pelvis-origin tail, a low centrally depressed tablelike skull roof, rear-weighted squamosal nodes, no high dome, conservative heterodonty language, three main pedal rays, non-recurved pedal claws, hand reconstruction uncertainty, stable phenotype, Boro Khovil red-sandstone uncertainty, role balance, and artifact gates.",
-  "targetSlots": 714,
+  "generatedAt": "2026-07-31T07:41:55.196Z",
+  "reviewBatch": "2026-07-31-richness-six-slot-batch-75",
+  "reviewMethod": "Batch 75 Xu et al. 2002 original description, Yin, Pei and Zhou 2018 cranial evidence, Yu et al. 2024 braincase and articulated-skeleton evidence, linked source and license audit, CC0 silhouette comparison, six-image contact sheet, enlarged hand and foot crops, and original-size inspection for one shallow triangular toothed head, two long forelimbs with three-fingered hands, two hind limbs, an exact visible I-IV foot with a raised moderate digit-II claw, one pelvis-origin tail, direct-versus-comparative integument boundaries, Lujiatun fluvial volcaniclastic context, cautious resting-posture language, role balance, and artifact gates.",
+  "targetSlots": 717,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -4544,30 +4544,57 @@
     "sinovenator-changii": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/sinovenator-changii-yixian-troodontid-imagegen-v1.png",
+        "source": "assets/dinosaurs/sinovenator-changii-lujiatun-four-digit-wading-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The left-facing wading frame preserves one shallow toothed head, two three-fingered forelimbs, two hind limbs, one complete long tail, and one lifted foot with exactly four separated digits: a small rear I, raised moderate II, and two forward III-IV; the supporting foot is submerged rather than ambiguously reconstructed.",
+        "reviewMethod": "Batch 75 original-size full-frame plus enlarged hand and lifted-foot inspection against the 2002, 2018, and 2024 fossil evidence; short filaments, palette, and exact water state remain comparative reconstruction.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-75",
+        "reviewedAt": "2026-07-31T07:41:55.196Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/sinovenator-changii-slate-jade-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/sinovenator-changii-aubergine-celadon-bluehour-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing blue-hour frame retains the same shallow skull, long arms, two legs and one tail while separating an aubergine-celadon-copper palette without regular tail bands; its lifted foot contains four visible digits and the far foot remains behind the gravel ridge.",
+        "reviewMethod": "Batch 75 original-size body, hand, lifted-foot, hidden-foot boundary, tail, palette, and phenotype-continuity inspection; color and pattern remain hypotheses, so the app rank stays review hold.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-75",
+        "reviewedAt": "2026-07-31T07:41:55.196Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/sinovenator-changii-yixian-lakemargin-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/sinovenator-changii-lujiatun-braided-runoff-habitat-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "A single small mid-distance animal and a wide gray tuffaceous braided-runoff surface provide a distinct Lujiatun habitat role without repeating animals or asserting a generic deep-lake ecosystem.",
+        "reviewMethod": "Batch 75 original-size animal, tail, terrain, water, vegetation, and composition inspection; the distant scale deliberately makes no fine hand or foot-digit claim.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-75",
+        "reviewedAt": "2026-07-31T07:41:55.196Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/sinovenator-changii-large-orbit-dense-teeth-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The head-and-neck crop isolates a shallow compressed toothed rostrum, large orbit and naris, and dense small teeth while avoiding a modern bird beak or deep dromaeosaurid skull.",
+        "reviewMethod": "Batch 75 original-size skull, orbit, naris, tooth row, jaw, and neck inspection against the 2002 and 2018 cranial descriptions; generated soft tissue makes no distal-limb or tail claim.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-75",
+        "reviewedAt": "2026-07-31T07:41:55.196Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/sinovenator-changii-digit-ii-four-digit-foot-anatomy-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "The living foot close-up shows exactly four separated digits: a small posteromedial hallux I, one raised digit II with a moderate enlarged claw, and two grounded digits III-IV; no third grounded forward toe or fifth digit is present.",
+        "reviewMethod": "Batch 75 original-size count and attachment audit against the short slender metatarsal II, subarctometatarsalian foot, and enlarged distal digit-II claw evidence; it remains a living soft-tissue reconstruction rather than a footprint.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-75",
+        "reviewedAt": "2026-07-31T07:41:55.196Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/sinovenator-changii-curled-resting-posture-hypothesis-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The elevated resting reconstruction retains one head, two folded forelimbs, two folded hind limbs, and one pelvis-origin tail making a single continuous curve, adding a distinct posture without duplicating appendages.",
+        "reviewMethod": "Batch 75 original-size limb, pelvis, tail-origin, tail-tip, overlap, and posture inspection against articulated IVPP V20378; rest is reconstructed cautiously and is not promoted as proof of sleep behavior.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-75",
+        "reviewedAt": "2026-07-31T07:41:55.196Z"
       }
     },
     "saurornithoides-mongoliensis": {
@@ -6999,6 +7026,15 @@
     },
     "assets/dinosaurs/goyocephale-lattimorei-redwash-trackway-ecology-imagegen-v1.png": {
       "reason": "Three cloned-looking animals, regular spots and tail bands, and an unsupported species-specific trackway and canyon narrative make both the anatomy and Boro Khovil environmental claim unreliable."
+    },
+    "assets/dinosaurs/sinovenator-changii-yixian-troodontid-imagegen-v1.png": {
+      "reason": "The former representative shows modern-bird-like arm fans and a five-digit-looking near foot with three grounded forward toes plus a raised digit II and a rear hallux, so it fails the strict Sinovenator appendage gate."
+    },
+    "assets/dinosaurs/sinovenator-changii-slate-jade-pattern-imagegen-v1.png": {
+      "reason": "The former color variant retains unstable foot topology, broad bird-like arm feather fans, and regular tail markings, so its palette cannot rescue the underlying anatomy."
+    },
+    "assets/dinosaurs/sinovenator-changii-yixian-lakemargin-ecology-imagegen-v1.png": {
+      "reason": "Repeated foreground animals, under-audited appendages, and an overly generic lake-margin setting prevent reliable anatomy, population, or Lujiatun environmental use."
     },
     "assets/dinosaurs/chasmosaurus-belli-fenestrated-frill-imagegen-v1.png": {
       "reason": "Literal open-air frill holes expose the background instead of continuous frill skin."

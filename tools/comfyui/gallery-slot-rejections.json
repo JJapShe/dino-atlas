@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-31-richness-six-slot-batch-74",
+  "reviewBatch": "2026-07-31-richness-six-slot-batch-75",
   "rejectedSources": {
     "assets/dinosaurs/nyctosaurus-gracilis-niobrara-forked-crest-imagegen-v1.png": {
       "reason": "Free clawed appendages project from the wing margins, limb and membrane topology is confused, and a genus-level mature branching crest is incorrectly fixed onto the N. gracilis representative."
@@ -292,6 +292,15 @@
     },
     "assets/dinosaurs/goyocephale-lattimorei-redwash-trackway-ecology-imagegen-v1.png": {
       "reason": "Three cloned-looking animals, regular spots and tail bands, and an unsupported species-specific trackway and canyon narrative make both the anatomy and Boro Khovil environmental claim unreliable."
+    },
+    "assets/dinosaurs/sinovenator-changii-yixian-troodontid-imagegen-v1.png": {
+      "reason": "The former representative shows modern-bird-like arm fans and a five-digit-looking near foot with three grounded forward toes plus a raised digit II and a rear hallux, so it fails the strict Sinovenator appendage gate."
+    },
+    "assets/dinosaurs/sinovenator-changii-slate-jade-pattern-imagegen-v1.png": {
+      "reason": "The former color variant retains unstable foot topology, broad bird-like arm feather fans, and regular tail markings, so its palette cannot rescue the underlying anatomy."
+    },
+    "assets/dinosaurs/sinovenator-changii-yixian-lakemargin-ecology-imagegen-v1.png": {
+      "reason": "Repeated foreground animals, under-audited appendages, and an overly generic lake-margin setting prevent reliable anatomy, population, or Lujiatun environmental use."
     },
     "assets/dinosaurs/chasmosaurus-belli-fenestrated-frill-imagegen-v1.png": {
       "reason": "Literal open-air frill holes expose the background instead of continuous frill skin."

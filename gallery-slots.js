@@ -4053,27 +4053,51 @@ window.gallerySlotAssignments = {
   ],
   "sinovenator-changii": [
     {
-      "source": "assets/dinosaurs/sinovenator-changii-yixian-troodontid-imagegen-v1.png",
+      "source": "assets/dinosaurs/sinovenator-changii-lujiatun-four-digit-wading-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "lujiatun-fluvial-volcaniclastic",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/sinovenator-changii-slate-jade-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/sinovenator-changii-aubergine-celadon-bluehour-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "lujiatun-fluvial-volcaniclastic",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/sinovenator-changii-yixian-lakemargin-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/sinovenator-changii-lujiatun-braided-runoff-habitat-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "lujiatun-fluvial-volcaniclastic",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/sinovenator-changii-large-orbit-dense-teeth-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "lujiatun-fluvial-volcaniclastic",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/sinovenator-changii-digit-ii-four-digit-foot-anatomy-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "lujiatun-fluvial-volcaniclastic",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/sinovenator-changii-curled-resting-posture-hypothesis-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "lujiatun-fluvial-volcaniclastic",
       "expectedKind": "anatomy review"
     }
   ],

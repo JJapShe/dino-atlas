@@ -1,6 +1,6 @@
 {
   "taxa": 132,
-  "images": 1640,
+  "images": 1643,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -8394,27 +8394,51 @@
     "sinovenator-changii": [
       {
         "kind": "count-level pass",
-        "title": "시노베나토르 v1 이셴 트로오돈류 대표 후보",
-        "body": "이셴층 기초 트로오돈류 확장을 위한 내장 이미지 생성 후보입니다. 매우 작고 가볍게 깃털 난 트로오돈류 실루엣, 크고 또렷한 눈, 낮고 가느다란 두개골, 좁고 가볍게 이빨이 있는 비조류 주둥이, 작은 손이 달린 긴 앞다리, 길고 가느다란 다리, 보이는 세 발가락 발, 작게 들어 올린 둘째 발가락 발톱, 긴 뻣뻣한 균형 꼬리를 유지합니다. 앞다리 깃이 다소 풍성하므로 미크로랍토르식 네 날개 드리프트 방지 가드를 유지합니다.",
-        "source": "assets/dinosaurs/sinovenator-changii-yixian-troodontid-imagegen-v1.png",
-        "variant": "이셴 트로오돈류 이미지 생성 v1",
-        "src": "assets/dinosaurs/sinovenator-changii-yixian-troodontid-imagegen-v1.png"
+        "title": "시노베나토르 v2 루자툰 네 발가락 대표",
+        "body": "얕은 삼각형 이빨 주둥이, 큰 눈과 외비공, 두 개의 긴 앞다리와 손마다 세 손가락, 두 뒷다리, 한 줄기의 긴 꼬리를 보이는 대표 후보입니다. 들어 올린 가까운 발은 작은 뒤쪽 I번, 확대됐지만 과장되지 않은 II번 발톱, 나란히 내려온 III·IV번으로 정확히 네 발가락을 분리했습니다. 반대 발끝은 탁한 얕은 물에 숨겨 보이지 않는 발가락을 추측해 추가하지 않았습니다. 짧은 몸 덮개와 색은 직접 화석 증거가 아닌 비교 복원입니다.",
+        "source": "assets/dinosaurs/sinovenator-changii-lujiatun-four-digit-wading-representative-imagegen-v2.png",
+        "variant": "루자툰 네 발가락 도하 대표 이미지 생성 v2",
+        "src": "assets/dinosaurs/sinovenator-changii-lujiatun-four-digit-wading-representative-imagegen-v2.png"
       },
       {
         "kind": "anatomy review",
-        "title": "시노베나토르 v1 이셴 호숫가 생태 참고",
-        "body": "전경의 시노베나토르 두 마리가 쓰러진 나무 근처에서 먹이를 찾고, 멀리에는 제홀식 배경 동물이 분리되어 크기감을 주는 비유혈 이셴 호숫가 생태 장면입니다. 여러 개체와 다소 풍성한 앞다리 깃 때문에 개별 해부 검수가 어려우므로 대표 그림이 아니라 생태계/참고 자료로 사용합니다.",
-        "source": "assets/dinosaurs/sinovenator-changii-yixian-lakemargin-ecology-imagegen-v1.png",
-        "variant": "이셴 호숫가 생태 참고 이미지 생성 v1",
-        "src": "assets/dinosaurs/sinovenator-changii-yixian-lakemargin-ecology-imagegen-v1.png"
+        "title": "시노베나토르 루자툰 분기형 유수로 서식지",
+        "body": "회색 화산쇄설성 자갈과 얕은 분기형 유수로를 넓게 보여 주는 서식지 역할입니다. 한 개체만 중거리에서 배치해 크기와 지형 비율을 읽게 했으며, 작은 실루엣 때문에 손가락이나 발가락 수를 판정하는 자료로는 사용하지 않습니다. 정확한 날씨와 식생 밀도는 복원 가설입니다.",
+        "source": "assets/dinosaurs/sinovenator-changii-lujiatun-braided-runoff-habitat-imagegen-v1.png",
+        "variant": "루자툰 분기형 유수로 서식지 이미지 생성 v1",
+        "src": "assets/dinosaurs/sinovenator-changii-lujiatun-braided-runoff-habitat-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "시노베나토르 큰 안와와 촘촘한 이빨 두개골 참고",
+        "body": "얕고 압축된 주둥이, 큰 안와, 큰 외비공과 촘촘한 작은 이빨을 분리해 보는 머리·목 구조 참고입니다. 살아 있는 연조직과 눈·피부·몸 덮개 색은 생성 복원이며, 이 크롭에서는 팔다리나 꼬리 수를 주장하지 않습니다.",
+        "source": "assets/dinosaurs/sinovenator-changii-large-orbit-dense-teeth-anatomy-imagegen-v1.png",
+        "variant": "큰 안와와 촘촘한 이빨 두개골 구조 이미지 생성 v1",
+        "src": "assets/dinosaurs/sinovenator-changii-large-orbit-dense-teeth-anatomy-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "시노베나토르 I-IV번 네 발가락 구조 참고",
+        "body": "한쪽 하퇴와 발만 확대한 보수적 생체 구조 참고입니다. 작은 뒤쪽 I번, 들어 올린 II번과 적당히 확대된 발톱, 지면을 딛는 III·IV번으로 총 네 발가락만 보입니다. 화석의 짧고 가는 둘째 중족골과 확대된 II번 발톱을 시각화했지만 실제 연조직 발자국은 아닙니다.",
+        "source": "assets/dinosaurs/sinovenator-changii-digit-ii-four-digit-foot-anatomy-imagegen-v1.png",
+        "variant": "I-IV번 네 발가락 구조 이미지 생성 v1",
+        "src": "assets/dinosaurs/sinovenator-changii-digit-ii-four-digit-foot-anatomy-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "시노베나토르 말린 휴식 자세 복원 가설",
+        "body": "IVPP V20378의 관절된 말린 자세를 참고해 다리를 접고 머리를 앞다리 가까이에 낮춘 한 개체를 복원했습니다. 골반에서 시작해 한 번 크게 휘는 꼬리 한 줄기와 두 앞다리·두 뒷다리를 확인했지만, 이 자세가 실제 수면 행동을 증명한다고 해석하지 않습니다.",
+        "source": "assets/dinosaurs/sinovenator-changii-curled-resting-posture-hypothesis-imagegen-v1.png",
+        "variant": "말린 휴식 자세 복원 가설 이미지 생성 v1",
+        "src": "assets/dinosaurs/sinovenator-changii-curled-resting-posture-hypothesis-imagegen-v1.png"
       },
       {
         "kind": "review hold",
-        "title": "시노베나토르 v1 슬레이트-옥색 무늬 변이",
-        "body": "같은 체형의 색/무늬 변이입니다. 깊은 슬레이트 블루 등, 옅은 아이보리색 배, 사프란색 눈 고리, 산호빛 녹슨색 뺨 줄, 옥색 어깨 반점, 얇은 흰 옆구리 반점, 검은 꼬리 띠, 부드러운 라벤더색 팔깃 가장자리를 사용합니다. 과시색과 깃 범위는 추정이므로 대표보다 아래에 두되, 시노베나토르를 사우로르니토이데스·자나바자르·바이로노사우루스·미크로랍토르와 분리하는 참고로 사용합니다.",
-        "source": "assets/dinosaurs/sinovenator-changii-slate-jade-pattern-imagegen-v1.png",
-        "variant": "슬레이트-옥색 무늬 이미지 생성 v1",
-        "src": "assets/dinosaurs/sinovenator-changii-slate-jade-pattern-imagegen-v1.png"
+        "title": "시노베나토르 v2 가지색-청자색 청색 시간대 변이",
+        "body": "대표와 같은 낮은 두개골과 가벼운 체형을 반대 방향 구도와 가지색·자두색 등, 청자색 배, 구리빛 뺨, 절제된 청록 목 반점으로 바꾼 색상 가설입니다. 들어 올린 발은 I·II·III·IV 네 발가락만 보이고 반대 발끝은 자갈 둔덕 뒤에 숨었습니다. 손마다 세 손가락, 두 앞다리, 두 뒷다리와 한 꼬리를 확인했지만 색과 무늬는 추정이므로 대표보다 아래에 둡니다.",
+        "source": "assets/dinosaurs/sinovenator-changii-aubergine-celadon-bluehour-pattern-imagegen-v2.png",
+        "variant": "가지색 청자색 청색 시간대 무늬 이미지 생성 v2",
+        "src": "assets/dinosaurs/sinovenator-changii-aubergine-celadon-bluehour-pattern-imagegen-v2.png"
       }
     ],
     "saurornithoides-mongoliensis": [

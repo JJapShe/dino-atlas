@@ -98,6 +98,13 @@ const HABITATS = {
     light: "neutral broken-cloud daylight, restrained blue hour, or localized post-rain reflection without a global teal, gray, or orange cast",
     backgroundPalette: ["#41484a", "#68725a", "#8b6a52"],
   },
+  "lujiatun-fluvial-volcaniclastic": {
+    substrate: "lowest-Yixian Lujiatun gray volcaniclastic silt, tuffaceous gravel, shallow braided runoff, and low fluvial bars; do not replace the documented fluvial setting with a generic deep lake or a living-animal eruption",
+    vegetation: "restrained open conifers, sparse horsetails, ferns, and low non-grass Mesozoic ground plants with wide exposed ash-silt and gravel patches; exact local plant density remains reconstructive",
+    moisture: "a cautious fluvial volcaniclastic surface mosaic with shallow silty channels, damp flats, and drier gravel bars; burial facies do not preserve Sinovenator soft tissue",
+    light: "neutral overcast daylight, readable cool blue hour, or soft dawn without a global teal, brown, or orange cast",
+    backgroundPalette: ["#4a4e50", "#747567", "#ad8b70"],
+  },
   "boro-khovil-red-sandstone-uncertain": {
     substrate: "Upper Cretaceous red sandstone at Boro Khovil, exposed firm sheets, shallow rain-runoff channels, weathered slabs, and sparse gravel; the precise age, formation assignment, climate, and original living surface remain uncertain",
     vegetation: "restrained open conifers, ferns, horsetails, and low non-grass Mesozoic ground plants presented as reconstruction rather than a documented Boro Khovil flora",
@@ -582,6 +589,7 @@ function habitatFor(dino, route) {
   else if (dino.id === "conchoraptor-gracilis") key = "khulsan-baruungoyot-aeolian-interdune";
   else if (dino.id === "dsungaripterus-weii") key = "wuerho-shallow-delta-lake-margin";
   else if (dino.id === "sinornithosaurus-millenii") key = "sihetun-yixian-tuff-lake-margin";
+  else if (dino.id === "sinovenator-changii") key = "lujiatun-fluvial-volcaniclastic";
   else if (dino.id === "goyocephale-lattimorei") key = "boro-khovil-red-sandstone-uncertain";
   else if (dino.id === "nyctosaurus-gracilis") key = "smoky-hill-open-seaway";
   else if (dino.id === "dimorphodon-macronyx") key = "blue-lias-coastal-lowland";
