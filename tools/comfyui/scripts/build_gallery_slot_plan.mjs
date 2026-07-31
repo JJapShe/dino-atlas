@@ -574,7 +574,7 @@ function habitatFor(dino, route) {
   else if (dino.id === "pachyrhinosaurus-canadensis") key = "horseshoe-canyon-fluvial-coalplain";
   else if (dino.id === "velociraptor-mongoliensis") key = "gobi-arid";
   else if (dino.id === "parasaurolophus-walkeri") key = "dinosaur-park-coastal-plain";
-  else if (dino.id === "styracosaurus-albertensis") key = "dinosaur-park-meander-belt";
+  else if (["styracosaurus-albertensis", "chasmosaurus-belli"].includes(dino.id)) key = "dinosaur-park-meander-belt";
   else if (dino.id === "edmontosaurus-annectens") key = "hell-creek-lance-fluvial-forest";
   else if (["rhamphorhynchus-muensteri", "pterodactylus-antiquus"].includes(dino.id)) key = "solnhofen-restricted-carbonate-lagoon";
   else if (dino.id === "pterodaustro-guinazui") key = "lagarcito-inland-lake";

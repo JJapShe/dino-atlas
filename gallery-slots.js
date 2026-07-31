@@ -4585,27 +4585,51 @@ window.gallerySlotAssignments = {
   ],
   "chasmosaurus-belli": [
     {
-      "source": "assets/dinosaurs/chasmosaurus-belli-skin-covered-frill-representative-imagegen-v2.png",
+      "source": "assets/dinosaurs/chasmosaurus-belli-broad-shallow-embayment-representative-imagegen-v3.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "dinosaur-park-meander-belt",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/chasmosaurus-belli-ochre-teal-covered-fenestra-pattern-imagegen-v2.png",
+      "source": "assets/dinosaurs/chasmosaurus-belli-violet-reed-bluehour-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "dinosaur-park-meander-belt",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/chasmosaurus-belli-skin-covered-frill-herd-ecology-imagegen-v2.png",
+      "source": "assets/dinosaurs/chasmosaurus-belli-dinosaur-park-meander-habitat-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "dinosaur-park-meander-belt",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/chasmosaurus-belli-skin-covered-frill-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "dinosaur-park-meander-belt",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/chasmosaurus-belli-channel-separated-crested-hadrosaurid-ecology-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "dinosaur-park-meander-belt",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/chasmosaurus-belli-adult-juvenile-channel-growth-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "dinosaur-park-meander-belt",
       "expectedKind": "anatomy review"
     }
   ],

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-31T03:10:08.495Z",
-  "reviewBatch": "2026-07-31-richness-six-slot-batch-71",
-  "reviewMethod": "Batch 71 Barsbold 1983 original description; Kubota and Barsbold 2006 reexamination abstract; Turner, Makovicky, and Norell 2012 revised diagnosis and posterior skull, pelvis, sacrum, and pes figures; Napoli et al. 2021 comparison; linked source and license audit; six-image contact sheet; enlarged head, hand, foot, tail, and secondary-animal crops; and original-size inspection for one low toothed head, two arms, readable three-fingered hands, two legs, two coherent feet, one complete tail, a small digit-II ungual rather than a giant sickle, stable phenotype, Nemegt setting, spatial separation, cautious evidence and behavior language, role balance, and artifact gates.",
-  "targetSlots": 705,
+  "generatedAt": "2026-07-31T04:28:17.140Z",
+  "reviewBatch": "2026-07-31-richness-six-slot-batch-72",
+  "reviewMethod": "Batch 72 Campbell et al. 2016 revised Chasmosaurus diagnosis; Maidment and Barrett 2011 skull and postcranial reference; Currie et al. 2016 juvenile evidence; Bell et al. 2022 and Enriquez et al. 2025 body-skin evidence; Holmes et al. 2026 Cryptarcus reassignment; linked source and license audit; six-image contact sheet; enlarged frill, head, foot, tail, juvenile, and secondary-animal crops; and original-size inspection for a posteriorly broad shield-like adult frill, straight or shallow posterior embayment, paired fenestra fields under continuous reconstructed skin, modest variable horns, four independent limbs and feet, one complete tail, stable phenotype, Dinosaur Park meander setting, spatial separation, cautious evidence and behavior language, role balance, and artifact gates.",
+  "targetSlots": 708,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -5139,30 +5139,57 @@
     "chasmosaurus-belli": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/chasmosaurus-belli-skin-covered-frill-representative-imagegen-v2.png",
+        "source": "assets/dinosaurs/chasmosaurus-belli-broad-shallow-embayment-representative-imagegen-v3.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The neutral daylight whole-body view replaces the former narrow vertical frill and rhinoceros-heavy body with a posteriorly broad shield, straight to shallow posterior embayment, paired muted fenestra fields under continuous skin, modest horns, four independent feet, and one complete tail.",
+        "reviewMethod": "Batch 72 original-size full frame plus frill, head, all four feet, pelvis, and tail inspection against the C. belli adult evidence and count gates.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-72",
+        "reviewedAt": "2026-07-31T04:28:17.140Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/chasmosaurus-belli-ochre-teal-covered-fenestra-pattern-imagegen-v2.png",
+        "source": "assets/dinosaurs/chasmosaurus-belli-violet-reed-bluehour-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing blue-hour frame preserves the rebuilt frill, horn, body, limb, foot, and tail plan while separating smoky violet, reed green, coral, saffron clay, dusty turquoise, and plum fields without target rings, regular stripes, or a global cast.",
+        "reviewMethod": "Batch 72 original-size inspection of frill geometry, visible appendages, complete tail, pattern continuity, phenotype match, and compositional distinction from the daylight representative.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-72",
+        "reviewedAt": "2026-07-31T04:28:17.140Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/chasmosaurus-belli-skin-covered-frill-herd-ecology-imagegen-v2.png",
+        "source": "assets/dinosaurs/chasmosaurus-belli-dinosaur-park-meander-habitat-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "A wide meandering channel, point bar, overbank silt, driftwood, horsetails, ferns, and open conifer woodland add a distinct Dinosaur Park setting while the middle-distance animal retains a coherent head, broad frill, four limbs and feet, and one tail.",
+        "reviewMethod": "Batch 72 original-size inspection of the primary animal and environmental elements; accepted as habitat context without claiming exact season, water level, plant placement, locality, or behavior.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-72",
+        "reviewedAt": "2026-07-31T04:28:17.140Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/chasmosaurus-belli-skin-covered-frill-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The high three-quarter identity view isolates the posteriorly broad frill, shallow posterior embayment, low rim ornament, modest horns, and two muted oval fenestra fields without open-air holes; the whole-body attachment and visible feet remain coherent.",
+        "reviewMethod": "Batch 72 original-size frill, skull-attachment, horn, near-foot, far-foot, pelvis, and tail inspection against Campbell et al. 2016; accepted as a life reconstruction aid because complete frill skin and color are not directly preserved.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-72",
+        "reviewedAt": "2026-07-31T04:28:17.140Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/chasmosaurus-belli-channel-separated-crested-hadrosaurid-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "The foreground Chasmosaurus remains fully readable while one distant generic crested hadrosaurid stays across a broad channel, adding regional community context without a species identification, contact, pursuit, predation, or outcome claim.",
+        "reviewMethod": "Batch 72 original-size primary and secondary animal inspection for spatial separation, independent bodies, foreground appendage counts, complete tails, phenotype continuity, and cautious generic-hadrosaurid language.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-72",
+        "reviewedAt": "2026-07-31T04:28:17.140Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/chasmosaurus-belli-adult-juvenile-channel-growth-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "An adult and smaller juvenile remain independently readable across a side channel and driftwood barrier; the juvenile has a shorter higher skull and narrower unembayed frill, while the scene is limited to a cautious visual growth comparison.",
+        "reviewMethod": "Batch 72 original-size per-animal head, frill, limb, foot, pelvis, and tail inspection against Currie et al. 2016, with no exact-age, parentage, kinship, care, herd, sex, or coordinated-behavior claim.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-72",
+        "reviewedAt": "2026-07-31T04:28:17.140Z"
       }
     },
     "pentaceratops-sternbergii": {
@@ -6909,6 +6936,15 @@
     },
     "assets/dinosaurs/chasmosaurus-belli-floodplain-herd-ecology-imagegen-v1.png": {
       "reason": "Literal open-air frill holes expose the background instead of continuous frill skin."
+    },
+    "assets/dinosaurs/chasmosaurus-belli-skin-covered-frill-representative-imagegen-v2.png": {
+      "reason": "The former representative has a tall narrow slab-like frill, a rhinoceros-heavy body, and a repetitive broadside composition instead of the posteriorly broad shallow-embayment C. belli gate."
+    },
+    "assets/dinosaurs/chasmosaurus-belli-ochre-teal-covered-fenestra-pattern-imagegen-v2.png": {
+      "reason": "The former pattern repeats the same narrow vertical frill, rhinoceros-like body, forest broadside, and target-like fenestra fields, so it does not provide a stable same-species variation."
+    },
+    "assets/dinosaurs/chasmosaurus-belli-skin-covered-frill-herd-ecology-imagegen-v2.png": {
+      "reason": "The former ecology frame multiplies narrow-frilled rhinoceros-like bodies whose appendages cannot all be counted independently and overstates an unsupported cohesive herd movement."
     },
     "assets/dinosaurs/rhamphorhynchus-muensteri-longtail-vane-imagegen-v1.png": {
       "reason": "Two parallel tail shafts leave the body, with one reading as attached to the wing base; Rhamphorhynchus must have one pelvis-origin tail."

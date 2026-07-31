@@ -1,6 +1,6 @@
 {
   "taxa": 132,
-  "images": 1622,
+  "images": 1628,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -10438,51 +10438,99 @@
     "chasmosaurus-belli": [
       {
         "kind": "count-level pass",
-        "title": "카스모사우루스 피부로 덮인 긴 프릴 대표 승인본",
-        "body": "긴 프릴의 쌍을 이룬 뼈창 위치를 얕은 타원형 영역으로 남기되 작은 다각형 비늘 피부가 프릴 전체를 연속해서 덮는 대표 승인본입니다. 짧은 눈썹뿔, 작은 코뿔, 가벼운 각룡류 몸, 네 다리와 긴 꼬리를 유지합니다.",
-        "source": "assets/dinosaurs/chasmosaurus-belli-skin-covered-frill-representative-imagegen-v2.png",
-        "variant": "피부로 덮인 긴 프릴 대표 이미지 생성 v2",
-        "src": "assets/dinosaurs/chasmosaurus-belli-skin-covered-frill-representative-imagegen-v2.png"
+        "title": "카스모사우루스 v3 넓은 프릴·얕은 뒤쪽 파임 대표",
+        "body": "공룡공원층 점사주에 선 성체 한 개체의 중립 전신입니다. 뒤로 넓어지는 방패형 프릴, 곧거나 얕게 파인 뒤쪽 가장자리, 피부 아래의 두 타원형 골창 영역, 작은 코뿔과 절제된 눈썹뿔을 유지합니다. 한 머리·두 앞다리·두 뒷다리·서로 분리된 네 발·골반에서 이어지는 한 꼬리를 원본 크기로 확인했으며 프릴 피부와 색은 복원입니다.",
+        "source": "assets/dinosaurs/chasmosaurus-belli-broad-shallow-embayment-representative-imagegen-v3.png",
+        "variant": "넓은 프릴·얕은 뒤쪽 파임 대표 이미지 생성 v3",
+        "src": "assets/dinosaurs/chasmosaurus-belli-broad-shallow-embayment-representative-imagegen-v3.png"
       },
       {
         "kind": "anatomy review",
-        "title": "카스모사우루스 피부로 덮인 프릴 무리 생태 승인본",
-        "body": "공룡공원층식 범람원에서 주 개체와 배경 무리가 이동하는 canonical-a 생태 장면입니다. 개체들이 서로 융합되지 않고, 주 개체의 긴 프릴은 작은 비늘 피부가 빈틈없이 덮어 배경이 비치는 구멍이 없습니다.",
-        "source": "assets/dinosaurs/chasmosaurus-belli-skin-covered-frill-herd-ecology-imagegen-v2.png",
-        "variant": "피부로 덮인 프릴 무리 생태 이미지 생성 v2",
-        "src": "assets/dinosaurs/chasmosaurus-belli-skin-covered-frill-herd-ecology-imagegen-v2.png"
+        "title": "카스모사우루스 v1 공룡공원층 곡류·점사주 서식지",
+        "body": "굽이치는 얕은 수로, 모래·실트 점사주, 유목, 속새·양치와 열린 침엽수림을 넓게 보여 주는 서식지 장면입니다. 중경 한 개체의 한 머리·네 다리·네 발·한 꼬리를 확인했습니다. 정확한 수위·계절·식생 배치와 이 장소의 이용 방식은 공룡공원층 퇴적 환경을 바탕으로 한 복원입니다.",
+        "source": "assets/dinosaurs/chasmosaurus-belli-dinosaur-park-meander-habitat-imagegen-v1.png",
+        "variant": "공룡공원층 곡류·점사주 서식지 이미지 생성 v1",
+        "src": "assets/dinosaurs/chasmosaurus-belli-dinosaur-park-meander-habitat-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "카스모사우루스 v1 피부로 이어진 넓은 프릴 구조",
+        "body": "높은 앞사선에서 뒤로 넓어지는 프릴과 얕은 뒤쪽 파임을 크게 보여 줍니다. 뼈의 큰 골창 한 쌍은 피부 아래의 타원형 색·질감 영역으로만 읽히고 배경이 관통하지 않습니다. 보이는 네 발과 한 꼬리를 확대 확인했지만, 프릴 전체 피부와 타원형 색 배치는 직접 보존물이 아닌 보수적인 생체 복원입니다.",
+        "source": "assets/dinosaurs/chasmosaurus-belli-skin-covered-frill-anatomy-imagegen-v1.png",
+        "variant": "피부로 이어진 넓은 프릴 구조 이미지 생성 v1",
+        "src": "assets/dinosaurs/chasmosaurus-belli-skin-covered-frill-anatomy-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "카스모사우루스 v1 수로 너머 볏 하드로사우루스류 동물상",
+        "body": "전경 카스모사우루스와 맞은편 점사주의 먼 볏 있는 하드로사우루스류 비교 실루엣을 넓은 수로로 완전히 분리했습니다. 전경 개체의 한 머리·네 다리·네 발·한 꼬리를 확인했고 배경 동물도 독립된 한 몸으로 읽힙니다. 배경 동물의 종과 실제 조우·추격·포식 관계를 뜻하지 않습니다.",
+        "source": "assets/dinosaurs/chasmosaurus-belli-channel-separated-crested-hadrosaurid-ecology-imagegen-v1.png",
+        "variant": "수로 너머 볏 하드로사우루스류 동물상 이미지 생성 v1",
+        "src": "assets/dinosaurs/chasmosaurus-belli-channel-separated-crested-hadrosaurid-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "카스모사우루스 v1 수로·유목으로 분리된 성체와 어린 개체",
+        "body": "약 4.7m 성체와 더 짧고 높은 머리·좁은 프릴을 가진 작은 개체를 측수로와 유목으로 분리한 성장 비교 장면입니다. 두 동물은 각각 독립된 머리·몸·네 다리·한 꼬리로 읽힙니다. UALVP 52613의 어린 개체 단서를 참고했지만 정확한 나이·크기 비율·동시 행동·부모 관계·혈연·돌봄을 주장하지 않습니다.",
+        "source": "assets/dinosaurs/chasmosaurus-belli-adult-juvenile-channel-growth-imagegen-v1.png",
+        "variant": "수로·유목으로 분리된 성체와 어린 개체 이미지 생성 v1",
+        "src": "assets/dinosaurs/chasmosaurus-belli-adult-juvenile-channel-growth-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "카스모사우루스 v1 보랏빛 회색·갈대 녹색 푸른시간 무늬",
+        "body": "대표와 같은 넓은 프릴과 절제된 뿔을 반대 방향의 푸른시간 보행으로 보여 줍니다. 그을린 보랏빛 회색 등, 넓은 갈대 녹색 옆구리, 짙은 자두색 뺨, 사프란빛 점토와 먼지 청록색 프릴을 불규칙한 큰 색면으로 나눴습니다. 네 다리·네 발·한 꼬리를 확인했으며 규칙적인 고리·점·표적 무늬는 쓰지 않았습니다.",
+        "source": "assets/dinosaurs/chasmosaurus-belli-violet-reed-bluehour-pattern-imagegen-v1.png",
+        "variant": "보랏빛 회색·갈대 녹색 푸른시간 무늬 이미지 생성 v1",
+        "src": "assets/dinosaurs/chasmosaurus-belli-violet-reed-bluehour-pattern-imagegen-v1.png"
       },
       {
         "kind": "reject reference",
-        "title": "카스모사우루스 구멍 큰 프릴 대표 후보 v1",
-        "body": "내장 이미지 생성 대표 후보입니다. 카스모사우루스 정체성 게이트인 두 큰 타원형 구멍이 있는 긴 두개골 부착 프릴, 짧거나 중간 정도의 눈썹뿔, 작은 코뿔, 토로사우루스보다 작고 가벼운 낮은 각룡류 몸, 보이는 긴 꼬리, 마른 지면의 발굽 아닌 발가락을 보존합니다. 눈썹뿔과 프릴 가장자리 돌기가 이상적인 기준보다 약간 강하므로 검수 상태로 둡니다.",
+        "title": "카스모사우루스 기존 열린 프릴 구멍 대표 탈락 기록",
+        "body": "프릴의 골창을 배경이 그대로 보이는 열린 구멍으로 만들고 눈썹뿔과 가장자리 돌기를 과장해 생체 프릴 복원 기준에서 제외했습니다.",
         "source": "assets/dinosaurs/chasmosaurus-belli-fenestrated-frill-imagegen-v1.png",
-        "variant": "구멍 큰 프릴 이미지 생성 v1",
+        "variant": "열린 프릴 구멍 대표 탈락 참고",
         "src": "assets/dinosaurs/chasmosaurus-belli-fenestrated-frill-imagegen-v1.png"
       },
       {
         "kind": "reject reference",
-        "title": "카스모사우루스 황토-청록 무늬 변형 v1",
-        "body": "이끼 황토색 몸, 청록 회색 얼굴 패치, 프릴 구멍 주변의 녹슨색 잔반점, 또렷한 구멍 큰 프릴, 작은 코뿔, 긴 꼬리, 보이는 발을 가진 색상/무늬 변형입니다. 눈썹뿔이 더 길게 읽혀 트리케라톱스식 드리프트 검수가 필요하므로 대표 아래에 둡니다.",
+        "title": "카스모사우루스 기존 열린 프릴 구멍 무늬 탈락 기록",
+        "body": "프릴을 관통하는 열린 구멍과 긴 눈썹뿔이 종 고유의 넓고 얕은 프릴 형태보다 강하게 읽혀 같은 종의 색 변이로 사용하지 않습니다.",
         "source": "assets/dinosaurs/chasmosaurus-belli-ochre-teal-pattern-imagegen-v1.png",
-        "variant": "황토-청록 무늬 이미지 생성 v1",
+        "variant": "열린 프릴 구멍·긴 눈썹뿔 무늬 탈락 참고",
         "src": "assets/dinosaurs/chasmosaurus-belli-ochre-teal-pattern-imagegen-v1.png"
       },
       {
         "kind": "reject reference",
-        "title": "카스모사우루스 범람원 무리 생태 장면 v1",
-        "body": "후기 백악기 범람원에서 주 개체 카스모사우루스와 먼 배경 무리가 함께 있는 생태 장면입니다. 여러 개체에서 길고 구멍 큰 프릴 실루엣을 유지하지만, 배경 개체와 젖은 지면 때문에 정확한 뿔, 발, 프릴 가장자리 검수는 부차화되어 해부학 검수로 둡니다.",
+        "title": "카스모사우루스 기존 열린 프릴 구멍 무리 탈락 기록",
+        "body": "프릴 창이 열린 구멍으로 반복되고 젖은 지면과 겹치는 여러 개체 때문에 각 동물의 뿔·발·꼬리를 독립적으로 검수하기 어려워 생태 참고에서도 제외했습니다.",
         "source": "assets/dinosaurs/chasmosaurus-belli-floodplain-herd-ecology-imagegen-v1.png",
-        "variant": "범람원 무리 생태 이미지 생성 v1",
+        "variant": "열린 프릴 구멍·불안정한 무리 탈락 참고",
         "src": "assets/dinosaurs/chasmosaurus-belli-floodplain-herd-ecology-imagegen-v1.png"
       },
       {
-        "kind": "review hold",
-        "title": "카스모사우루스 황토·청록 프릴 무늬 승인본",
-        "body": "대표 개체의 가벼운 체형과 짧은 뿔을 유지하면서 황토색 몸, 청록 회색 얼굴, 구리빛 프릴 패치를 적용한 variant-b입니다. 뼈창 영역은 피부 아래의 색·윤곽 변화로만 보이고 프릴을 관통하지 않습니다.",
+        "kind": "reject reference",
+        "title": "카스모사우루스 기존 세로 프릴 대표 탈락 기록",
+        "body": "프릴이 뒤로 넓어지는 방패보다 높고 좁은 세로 판처럼 서며 몸통이 코뿔소처럼 무겁고 기존 측면 구도를 반복해 대표에서 제외했습니다.",
+        "source": "assets/dinosaurs/chasmosaurus-belli-skin-covered-frill-representative-imagegen-v2.png",
+        "variant": "좁은 세로 프릴·코뿔소형 몸 대표 탈락 참고",
+        "src": "assets/dinosaurs/chasmosaurus-belli-skin-covered-frill-representative-imagegen-v2.png"
+      },
+      {
+        "kind": "reject reference",
+        "title": "카스모사우루스 기존 황토·청록 무늬 탈락 기록",
+        "body": "대표와 같은 좁은 세로 프릴·코뿔소형 체형·숲 측면 구도를 되풀이하고 골창 위치가 표적 같은 규칙 무늬로 읽혀 안정적인 변이에서 제외했습니다.",
         "source": "assets/dinosaurs/chasmosaurus-belli-ochre-teal-covered-fenestra-pattern-imagegen-v2.png",
-        "variant": "황토·청록 피부 덮인 프릴 무늬 이미지 생성 v2",
+        "variant": "세로 프릴·표적형 골창 무늬 탈락 참고",
         "src": "assets/dinosaurs/chasmosaurus-belli-ochre-teal-covered-fenestra-pattern-imagegen-v2.png"
+      },
+      {
+        "kind": "reject reference",
+        "title": "카스모사우루스 기존 복제형 무리 탈락 기록",
+        "body": "높고 좁은 프릴과 무거운 몸이 여러 개체에 반복되고 배경 동물의 다리·발·꼬리 수를 안정적으로 셀 수 없으며, 직접 근거가 없는 무리 이동을 강하게 보여 생태 슬롯에서 제외했습니다.",
+        "source": "assets/dinosaurs/chasmosaurus-belli-skin-covered-frill-herd-ecology-imagegen-v2.png",
+        "variant": "복제형 프릴·불안정한 무리 탈락 참고",
+        "src": "assets/dinosaurs/chasmosaurus-belli-skin-covered-frill-herd-ecology-imagegen-v2.png"
       }
     ],
     "pentaceratops-sternbergii": [

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-31-richness-six-slot-batch-71",
+  "reviewBatch": "2026-07-31-richness-six-slot-batch-72",
   "rejectedSources": {
     "assets/dinosaurs/nyctosaurus-gracilis-niobrara-forked-crest-imagegen-v1.png": {
       "reason": "Free clawed appendages project from the wing margins, limb and membrane topology is confused, and a genus-level mature branching crest is incorrectly fixed onto the N. gracilis representative."
@@ -283,6 +283,15 @@
     },
     "assets/dinosaurs/chasmosaurus-belli-floodplain-herd-ecology-imagegen-v1.png": {
       "reason": "Literal open-air frill holes expose the background instead of continuous frill skin."
+    },
+    "assets/dinosaurs/chasmosaurus-belli-skin-covered-frill-representative-imagegen-v2.png": {
+      "reason": "The former representative has a tall narrow slab-like frill, a rhinoceros-heavy body, and a repetitive broadside composition instead of the posteriorly broad shallow-embayment C. belli gate."
+    },
+    "assets/dinosaurs/chasmosaurus-belli-ochre-teal-covered-fenestra-pattern-imagegen-v2.png": {
+      "reason": "The former pattern repeats the same narrow vertical frill, rhinoceros-like body, forest broadside, and target-like fenestra fields, so it does not provide a stable same-species variation."
+    },
+    "assets/dinosaurs/chasmosaurus-belli-skin-covered-frill-herd-ecology-imagegen-v2.png": {
+      "reason": "The former ecology frame multiplies narrow-frilled rhinoceros-like bodies whose appendages cannot all be counted independently and overstates an unsupported cohesive herd movement."
     },
     "assets/dinosaurs/rhamphorhynchus-muensteri-longtail-vane-imagegen-v1.png": {
       "reason": "Two parallel tail shafts leave the body, with one reading as attached to the wing base; Rhamphorhynchus must have one pelvis-origin tail."
@@ -1437,5 +1446,5 @@
       "reason": "The former ecology frame combines bird-like heads, broad wing-fan arms, overlapping appendages, repetitive color treatment, and several animals whose heads, legs, feet, and tails cannot be audited independently."
     }
   },
-  "generatedAt": "2026-07-31T03:10:08.495Z"
+  "generatedAt": "2026-07-31T04:28:17.140Z"
 }
