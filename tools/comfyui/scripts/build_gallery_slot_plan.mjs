@@ -91,6 +91,13 @@ const HABITATS = {
     light: "soft neutral daylight with dappled canopy light",
     backgroundPalette: ["#344d3d", "#6f7550", "#6c5b49"],
   },
+  "sihetun-yixian-tuff-lake-margin": {
+    substrate: "dark tuffaceous and ash-rich banks, firm volcaniclastic silt, shallow runoff channels, exposed lake-margin flats, and scattered weathered wood; do not stage the fossil lake bottom as the animal's only living surface",
+    vegetation: "open irregular conifers, ferns, horsetails, cycadophyte foliage, and low non-grass Mesozoic ground plants with broad readable gaps",
+    moisture: "seasonally humid Sihetun lake-margin and alluvial-volcaniclastic mosaic; pyroclastic burial is taphonomic context rather than a living-animal eruption scene",
+    light: "neutral broken-cloud daylight, restrained blue hour, or localized post-rain reflection without a global teal, gray, or orange cast",
+    backgroundPalette: ["#41484a", "#68725a", "#8b6a52"],
+  },
   "linglongta-volcaniclastic-forest": {
     substrate: "ash-dark volcaniclastic forest floor, tuffaceous ledges, narrow runoff channels, damp clearings, and small palaeolake margins; do not turn the fossil lake bottom into the animal's only living surface",
     vegetation: "ginkgophytes and czekanowskiale foliage, Bennettitales, Nilssoniales, tree and ground ferns, horsetails, and scattered irregular conifers with no grass, flowers, palms, or modern pine plantation",
@@ -567,6 +574,7 @@ function habitatFor(dino, route) {
   else if (["oviraptor-philoceratops", "citipati-osmolskae", "khaan-mckennai"].includes(dino.id)) key = "djadokhta-semiarid-dune";
   else if (dino.id === "conchoraptor-gracilis") key = "khulsan-baruungoyot-aeolian-interdune";
   else if (dino.id === "dsungaripterus-weii") key = "wuerho-shallow-delta-lake-margin";
+  else if (dino.id === "sinornithosaurus-millenii") key = "sihetun-yixian-tuff-lake-margin";
   else if (dino.id === "nyctosaurus-gracilis") key = "smoky-hill-open-seaway";
   else if (dino.id === "dimorphodon-macronyx") key = "blue-lias-coastal-lowland";
   else if (dino.id === "eudimorphodon-ranzii") key = "zorzino-carbonate-island";

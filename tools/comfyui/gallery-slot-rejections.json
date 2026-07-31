@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-31-richness-six-slot-batch-72",
+  "reviewBatch": "2026-07-31-richness-six-slot-batch-73",
   "rejectedSources": {
     "assets/dinosaurs/nyctosaurus-gracilis-niobrara-forked-crest-imagegen-v1.png": {
       "reason": "Free clawed appendages project from the wing margins, limb and membrane topology is confused, and a genus-level mature branching crest is incorrectly fixed onto the N. gracilis representative."
@@ -274,6 +274,15 @@
     },
     "assets/dinosaurs/torosaurus-latus-floodplain-ecology-imagegen-v1.png": {
       "reason": "Literal open-air frill holes expose the background instead of skin-covered bony fenestrae."
+    },
+    "assets/dinosaurs/sinornithosaurus-millenii-feathered-dromaeosaurid-imagegen-v1.png": {
+      "reason": "The former representative repeats a generic lakeside broadside, expands the forelimb covering into modern-bird-like fans, and leaves overlapping hands under-audited instead of preserving a clear long-arm three-finger filamentous-body gate."
+    },
+    "assets/dinosaurs/sinornithosaurus-millenii-rufous-black-pattern-imagegen-v1.png": {
+      "reason": "The former pattern repeats the same lakeside broadside and broad bird-like arm fans while adding regular tail bands and overlapping hands, so it does not provide a stable evidence-led same-species variation."
+    },
+    "assets/dinosaurs/sinornithosaurus-millenii-yixian-forest-ecology-imagegen-v1.png": {
+      "reason": "The former ecology frame uses duplicated-looking foreground animals with overlapping appendages and an inappropriate horned or frilled background animal, so neither the anatomy nor the regional-fauna context is reliable."
     },
     "assets/dinosaurs/chasmosaurus-belli-fenestrated-frill-imagegen-v1.png": {
       "reason": "Literal open-air frill holes expose the background instead of continuous frill skin."

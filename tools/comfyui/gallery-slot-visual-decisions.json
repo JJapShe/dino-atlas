@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-31T04:28:17.140Z",
-  "reviewBatch": "2026-07-31-richness-six-slot-batch-72",
-  "reviewMethod": "Batch 72 Campbell et al. 2016 revised Chasmosaurus diagnosis; Maidment and Barrett 2011 skull and postcranial reference; Currie et al. 2016 juvenile evidence; Bell et al. 2022 and Enriquez et al. 2025 body-skin evidence; Holmes et al. 2026 Cryptarcus reassignment; linked source and license audit; six-image contact sheet; enlarged frill, head, foot, tail, juvenile, and secondary-animal crops; and original-size inspection for a posteriorly broad shield-like adult frill, straight or shallow posterior embayment, paired fenestra fields under continuous reconstructed skin, modest variable horns, four independent limbs and feet, one complete tail, stable phenotype, Dinosaur Park meander setting, spatial separation, cautious evidence and behavior language, role balance, and artifact gates.",
-  "targetSlots": 708,
+  "generatedAt": "2026-07-31T05:39:15.652Z",
+  "reviewBatch": "2026-07-31-richness-six-slot-batch-73",
+  "reviewMethod": "Batch 73 Xu, Wang and Wu 1999 holotype anatomy; Xu and Wu 2001 cranial evidence; Turner et al. 2012 dromaeosaurid context; venom-hypothesis challenge; linked source and license audit; six-image contact sheet; enlarged head, hand, foot, digit-II claw, tail, and secondary-animal crops; CC BY skeletal comparison; and original-size inspection for a low narrow skull, large orbit, two long forelimbs with three-fingered hands, two hind limbs and independent feet, attached moderate digit-II claws, one pelvis-origin stiff tail, filamentous rather than modern-wing integument, stable phenotype, Sihetun tuff-lake-margin setting, spatial separation, cautious evidence and behavior language, role balance, and artifact gates.",
+  "targetSlots": 711,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -4432,30 +4432,57 @@
     "sinornithosaurus-millenii": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/sinornithosaurus-millenii-feathered-dromaeosaurid-imagegen-v1.png",
+        "source": "assets/dinosaurs/sinornithosaurus-millenii-longarm-filament-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The low horizontal whole-body view replaces the former bird-winged broadside with a low narrow toothed skull, large eye, two long forelimbs, three traceable fingers per hand, two independent hind limbs and feet, attached moderate digit-II claws, filamentous body cover, and one complete stiff tail.",
+        "reviewMethod": "Batch 73 original-size full frame plus enlarged head, both hands, both feet, digit-II claws, pelvis, and tail inspection against Xu, Wang and Wu 1999 and the CC BY skeletal comparison.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-73",
+        "reviewedAt": "2026-07-31T05:39:15.652Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/sinornithosaurus-millenii-rufous-black-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/sinornithosaurus-millenii-plum-lichen-bluehour-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing blue-hour frame preserves the representative skull, long-arm, three-finger, foot-claw, and tail plan while separating plum-slate, lichen green, copper, and flax fields without regular tail rings or a uniform global blue cast.",
+        "reviewMethod": "Batch 73 original-size inspection of the full frame, both hands, both feet, attached digit-II claws, complete tail, phenotype continuity, and compositional distinction from the daylight representative.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-73",
+        "reviewedAt": "2026-07-31T05:39:15.652Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/sinornithosaurus-millenii-yixian-forest-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/sinornithosaurus-millenii-sihetun-tuff-bank-habitat-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "A wide dark tuff bank, shallow runoff channel, lake margin, open conifers, ferns, and horsetails add a distinct Sihetun setting while the middle-distance animal retains one head, two forelimbs, two hind limbs and feet, and one tail.",
+        "reviewMethod": "Batch 73 original-size animal and environmental inspection; accepted as habitat context without claiming exact water level, season, plant placement, locality, eruption, or behavior.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-73",
+        "reviewedAt": "2026-07-31T05:39:15.652Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/sinornithosaurus-millenii-low-skull-filament-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The deliberate head-neck-shoulder crop isolates the low narrow toothed skull, large orbit, restrained antorbital region, and fine neck filaments without an enlarged venom fang; no distal appendage or tail count is inferred from this crop.",
+        "reviewMethod": "Batch 73 original-size skull, eye, jaw, dentition, neck filament, and shoulder inspection against the primary cranial references; accepted only for the anatomy visible inside the intentional crop.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-73",
+        "reviewedAt": "2026-07-31T05:39:15.652Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/sinornithosaurus-millenii-channel-separated-feathered-theropod-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "The foreground Sinornithosaurus remains fully readable while one distant generic small feathered theropod stays across a broad channel, adding regional-fauna context without a species identification, contact, pursuit, predation, or outcome claim.",
+        "reviewMethod": "Batch 73 original-size primary and secondary animal inspection for spatial separation, independent bodies, foreground limb and foot counts, attached digit-II claws, complete tails, and cautious generic-fauna language.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-73",
+        "reviewedAt": "2026-07-31T05:39:15.652Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/sinornithosaurus-millenii-separated-adults-variation-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Two color-varied conspecific adults remain independently readable across a channel and driftwood barrier, providing a cautious intraspecific appearance comparison without presenting a pair, family, sex, kinship, herd, or coordinated behavior.",
+        "reviewMethod": "Batch 73 original-size per-animal head, forelimb, hind-limb, foot, pelvis, and tail inspection, with all color, association, sex, kinship, and behavior interpretations kept reconstructive.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-73",
+        "reviewedAt": "2026-07-31T05:39:15.652Z"
       }
     },
     "anchiornis-huxleyi": {
@@ -6927,6 +6954,15 @@
     },
     "assets/dinosaurs/torosaurus-latus-floodplain-ecology-imagegen-v1.png": {
       "reason": "Literal open-air frill holes expose the background instead of skin-covered bony fenestrae."
+    },
+    "assets/dinosaurs/sinornithosaurus-millenii-feathered-dromaeosaurid-imagegen-v1.png": {
+      "reason": "The former representative repeats a generic lakeside broadside, expands the forelimb covering into modern-bird-like fans, and leaves overlapping hands under-audited instead of preserving a clear long-arm three-finger filamentous-body gate."
+    },
+    "assets/dinosaurs/sinornithosaurus-millenii-rufous-black-pattern-imagegen-v1.png": {
+      "reason": "The former pattern repeats the same lakeside broadside and broad bird-like arm fans while adding regular tail bands and overlapping hands, so it does not provide a stable evidence-led same-species variation."
+    },
+    "assets/dinosaurs/sinornithosaurus-millenii-yixian-forest-ecology-imagegen-v1.png": {
+      "reason": "The former ecology frame uses duplicated-looking foreground animals with overlapping appendages and an inappropriate horned or frilled background animal, so neither the anatomy nor the regional-fauna context is reliable."
     },
     "assets/dinosaurs/chasmosaurus-belli-fenestrated-frill-imagegen-v1.png": {
       "reason": "Literal open-air frill holes expose the background instead of continuous frill skin."
