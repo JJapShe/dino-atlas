@@ -6696,6 +6696,10 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {"status":"approved","source":"assets/dinosaurs/sphaerotholus-goodwini-charcoal-russet-dome-fullbody-imagegen-v4.png","role":"identity-anatomy","reason":"Original-size inspection confirms one small biped with a thick near-spherical rough dome, two forelimbs, two hind limbs, separated feet, and one continuous tail.","reviewMethod":"Original-size anatomy inspection","reviewBatch":"2026-08-01-richness-batch-89-sphaerotholus","reviewedAt":"2026-08-01T14:00:00.000Z"},
+      "5": {"status":"approved","source":"assets/dinosaurs/sphaerotholus-goodwini-arroyo-fern-browse-ecology-imagegen-v4.png","role":"interaction","reason":"Original-size inspection confirms one readable browsing animal with a thick dome, two forelimbs, two hind limbs, and one continuous tail; no secondary animal is present.","reviewMethod":"Original-size anatomy inspection","reviewBatch":"2026-08-01-richness-batch-89-sphaerotholus","reviewedAt":"2026-08-01T14:00:00.000Z"},
+      "6": {"status":"approved","source":"assets/dinosaurs/sphaerotholus-goodwini-cobalt-violet-ochre-variant-imagegen-v4.png","role":"social-growth-defense","reason":"Original-size inspection confirms a thick rounded dome, two forelimbs, two hind limbs, separated feet, one tail, and a palette distinct from the opal-crown variation.","reviewMethod":"Original-size anatomy inspection","reviewBatch":"2026-08-01-richness-batch-89-sphaerotholus","reviewedAt":"2026-08-01T14:00:00.000Z"}
       }
     },
     "acrotholus-audeti": {

@@ -3191,8 +3191,8 @@ const dinosaurs = [
     region: "북아메리카",
     length: 2.0,
     knowledgeLevel: 2,
-    imageSlots: 3,
-    reviewStatus: "신규 후보",
+    imageSlots: 6,
+    reviewStatus: "6장 원본 확대 검수 완료",
     summary:
       "커틀랜드 계열로 다루는 돔머리 후두류입니다. 구형에 가까운 두꺼운 머리돔, 작은 앞다리, 안정적인 뒷다리와 긴 꼬리를 함께 읽히게 합니다.",
     features: {
@@ -18111,6 +18111,9 @@ const generatedImageSamples = {
       variant: "건조 골짜기 과시 생태 이미지 생성 v1",
       src: "assets/dinosaurs/sphaerotholus-goodwini-arroyo-display-ecology-imagegen-v1.png",
     },
+    { kind: "anatomy review", title: "Sphaerotholus v4 full body", body: "Original-size anatomy comparison: rounded dome, two forelimbs, two hind limbs, and one tail.", source: "assets/dinosaurs/sphaerotholus-goodwini-charcoal-russet-dome-fullbody-imagegen-v4.png", variant: "charcoal russet full body v4", src: "assets/dinosaurs/sphaerotholus-goodwini-charcoal-russet-dome-fullbody-imagegen-v4.png", gallerySlot: 4, galleryRole: "identity-anatomy", phenotype: "canonical-a", habitatKey: "kirtland-arroyo-woodland" },
+    { kind: "anatomy review", title: "Sphaerotholus v4 arroyo browse", body: "Single-animal habitat context; dome, limbs, and tail checked at original size.", source: "assets/dinosaurs/sphaerotholus-goodwini-arroyo-fern-browse-ecology-imagegen-v4.png", variant: "arroyo browse v4", src: "assets/dinosaurs/sphaerotholus-goodwini-arroyo-fern-browse-ecology-imagegen-v4.png", gallerySlot: 5, galleryRole: "interaction", phenotype: "canonical-a", habitatKey: "kirtland-arroyo-woodland" },
+    { kind: "review hold", title: "Sphaerotholus v4 cobalt violet variant", body: "Cobalt dome and violet-brown color comparison with a small ochre hip patch.", source: "assets/dinosaurs/sphaerotholus-goodwini-cobalt-violet-ochre-variant-imagegen-v4.png", variant: "cobalt violet ochre variant v4", src: "assets/dinosaurs/sphaerotholus-goodwini-cobalt-violet-ochre-variant-imagegen-v4.png", gallerySlot: 6, galleryRole: "social-growth-defense", phenotype: "variant-b", habitatKey: "kirtland-arroyo-woodland" },
   ],
   "acrotholus-audeti": [
     {
