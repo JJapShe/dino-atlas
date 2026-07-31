@@ -4570,6 +4570,13 @@
   - HTTP and browser validation: all six new assets returned 200 on both `8020` and the review server's `/image/` route on `8792`; the refreshed review API exposed 896 images and exactly six current `Elmisaurus` files. Atlas navigation moved from representative 1/6 to pattern 2/6; internal review groups remained candidate-only 1, representative 1, reference 4 and all 6, with category-scoped navigation staying at 1/4 to 2/4 and 1/6 to 2/6.
   - The independent review page rendered six decoded 1536x1024 cards with no rejected filename, card overlap, card overflow or page overflow. Its full-screen image remained contained in the 1280x720 viewport. The phylogeny retained 147 visible nodes and 132 taxa with zero node overlap and zero page overflow at both 1280x720 and 390x844, and both browser pages had empty logs.
 
+- `Scalable 8792 review workspace pass 2026-07-31`
+  - Changed the independent review workbench to open as a full-width image browser. The current 896-image library renders 120-card batches without forcing every card into a permanent half-width list pane.
+  - Selecting a desktop card now opens a full-width focused review surface with a large preview, a same-species filmstrip, previous/next controls, and the existing decision form. Reviewers can switch back to the resizable split view or close the detail pane without losing the selected image.
+  - Full-screen inspection now uses the whole viewport, keeps navigation scoped to the selected species, and adds an explicit 1:1 original-pixel mode. Escape returns from full-screen to review and from focused review to the split workspace.
+  - Layout validation: 1280x720 rendered five full-width browser columns and 1920x1080 rendered eight, while 390x844 rendered one column and a fixed 390x844 detail surface. Card overlap and page horizontal overflow remained zero at all three widths; the narrow open/close cycle preserved the full-width browser state after returning to desktop.
+  - Image and browser validation: the focused `Elmisaurus` strip exposed all six decoded 1536x1024 images, full-screen next navigation stayed within that six-image species set, 1:1 mode resolved the exact 1536x1024 bitmap, and browser warning logs were empty.
+
 For each added taxon, produce:
 
 - `assets/dinosaurs/{id}-...-imagegen-v1.png` files.

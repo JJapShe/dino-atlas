@@ -21,6 +21,7 @@
       --good: #45d184;
       --list-pane-width: 52vw;
       --card-min-width: 218px;
+      --detail-review-width: clamp(320px, 29vw, 430px);
     }
     * { box-sizing: border-box; }
     html,
@@ -119,6 +120,18 @@
     body.detail-collapsed .pane-resizer,
     body.detail-collapsed #detail {
       display: none;
+    }
+    body.detail-focused main {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    body.detail-focused .browser-pane,
+    body.detail-focused .pane-resizer {
+      display: none;
+    }
+    body.detail-focused #detail {
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr);
+      border-left: 0;
     }
     .browser-pane {
       position: relative;
@@ -296,6 +309,8 @@
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--card-min-width)), 1fr));
+      grid-auto-flow: row;
+      grid-auto-rows: max-content;
       gap: 12px;
       align-content: start;
     }
@@ -303,6 +318,8 @@
     main[data-density="comfortable"] { --card-min-width: 218px; }
     main[data-density="large"] { --card-min-width: 332px; }
     .card {
+      display: grid;
+      grid-template-rows: auto minmax(112px, 1fr);
       border: 1px solid var(--line);
       border-radius: 6px;
       background: var(--panel);
@@ -311,7 +328,9 @@
       text-align: left;
       padding: 0;
       content-visibility: auto;
-      contain-intrinsic-size: 260px;
+      contain: layout paint style;
+      contain-intrinsic-size: auto 316px;
+      isolation: isolate;
     }
     .card.active {
       border-color: var(--accent);
@@ -392,6 +411,10 @@
       gap: 4px;
       padding: 7px;
     }
+    main[data-density="compact"] .card {
+      grid-template-rows: auto minmax(88px, 1fr);
+      contain-intrinsic-size: auto 244px;
+    }
     main[data-density="compact"] .card-species {
       font-size: 12px;
     }
@@ -446,6 +469,21 @@
       color: var(--muted);
       font-size: 12px;
     }
+    .detail-pane-actions {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      min-width: 0;
+    }
+    .detail-position {
+      min-width: 42px;
+      color: var(--muted);
+      font-size: 11px;
+      font-variant-numeric: tabular-nums;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .detail-action,
     .detail-close {
       display: grid;
       width: 32px;
@@ -456,6 +494,24 @@
       padding: 0;
       font-size: 20px;
       line-height: 1;
+    }
+    .detail-action {
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .detail-action:hover,
+    .detail-action[aria-pressed="true"] {
+      color: var(--text);
+      background: rgba(110, 195, 178, 0.13);
+    }
+    .detail-action:disabled {
+      opacity: 0.34;
+      cursor: default;
+    }
+    .detail-layout,
+    .detail-preview-column {
+      min-width: 0;
+      min-height: 0;
     }
     .preview-button {
       width: 100%;
@@ -474,6 +530,53 @@
       object-fit: contain;
       background: #080a0d;
       display: block;
+    }
+    .species-strip {
+      display: none;
+      min-width: 0;
+      gap: 8px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding: 10px 12px;
+      border-top: 1px solid var(--line);
+      background: #0d1116;
+      scrollbar-gutter: stable;
+    }
+    .species-strip button {
+      position: relative;
+      width: 132px;
+      min-width: 132px;
+      height: 82px;
+      min-height: 82px;
+      overflow: hidden;
+      padding: 0;
+      border-radius: 5px;
+      background: #080a0d;
+    }
+    .species-strip button.active {
+      border-color: var(--accent);
+      box-shadow: inset 0 0 0 1px var(--accent);
+    }
+    .species-strip img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .species-strip .strip-kind {
+      position: absolute;
+      right: 4px;
+      bottom: 4px;
+      left: 4px;
+      overflow: hidden;
+      padding: 3px 5px;
+      border-radius: 3px;
+      background: rgba(4, 7, 10, 0.78);
+      color: var(--text);
+      font-size: 9px;
+      font-weight: 700;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     .detail {
       padding: 14px;
@@ -515,6 +618,38 @@
       background: color-mix(in srgb, var(--accent) 26%, var(--panel));
       border-color: color-mix(in srgb, var(--accent) 60%, var(--line));
     }
+    body.detail-focused .detail-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) var(--detail-review-width);
+      min-height: 0;
+      overflow: hidden;
+    }
+    body.detail-focused .detail-preview-column {
+      display: grid;
+      grid-template-rows: minmax(0, 1fr) 103px;
+      overflow: hidden;
+      background: #080a0d;
+    }
+    body.detail-focused .preview-button {
+      height: 100%;
+      min-height: 0;
+    }
+    body.detail-focused .preview {
+      height: 100%;
+      min-height: 0;
+      max-height: none;
+    }
+    body.detail-focused .species-strip {
+      display: flex;
+    }
+    body.detail-focused .detail {
+      align-content: start;
+      overflow-x: hidden;
+      overflow-y: auto;
+      padding: 20px;
+      border-left: 1px solid var(--line);
+      scrollbar-gutter: stable;
+    }
     .load-more {
       display: block;
       width: min(100%, 420px);
@@ -541,8 +676,7 @@
       max-width: 100vw;
       min-width: 0;
       z-index: 20;
-      display: grid;
-      grid-template-rows: auto minmax(0, 1fr) auto;
+      display: block;
       overflow: hidden;
       background: rgba(3, 5, 8, 0.96);
     }
@@ -551,17 +685,48 @@
     .zoom-bar,
     .zoom-caption {
       display: flex;
+      position: absolute;
+      z-index: 3;
       align-items: center;
       justify-content: space-between;
       min-width: 0;
-      max-width: 100vw;
       gap: 12px;
-      padding: 12px 14px;
-      border-color: var(--line);
-      background: rgba(10, 14, 18, 0.92);
+      padding: 9px 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: rgba(10, 14, 18, 0.88);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.26);
+      backdrop-filter: blur(14px);
     }
-    .zoom-bar { border-bottom: 1px solid var(--line); }
-    .zoom-caption { border-top: 1px solid var(--line); }
+    .zoom-bar {
+      top: 12px;
+      right: 12px;
+      left: 12px;
+    }
+    .zoom-caption {
+      right: 12px;
+      bottom: 12px;
+      left: 12px;
+    }
+    .zoom-tools {
+      display: flex;
+      flex: 0 0 auto;
+      align-items: center;
+      gap: 6px;
+    }
+    .zoom-tools button {
+      min-width: 40px;
+      min-height: 34px;
+      padding: 5px 9px;
+    }
+    .zoom-count {
+      min-width: 48px;
+      color: var(--muted);
+      font-size: 12px;
+      font-variant-numeric: tabular-nums;
+      text-align: center;
+      white-space: nowrap;
+    }
     .zoom-title,
     .zoom-file {
       width: 100%;
@@ -573,10 +738,12 @@
       white-space: nowrap;
     }
     .zoom-stage {
+      position: absolute;
+      inset: 0;
       display: grid;
       place-items: center;
       min-height: 0;
-      padding: 16px;
+      padding: 12px 68px;
       overflow: hidden;
     }
     .zoom-stage img {
@@ -585,9 +752,46 @@
       min-width: 0;
       min-height: 0;
       object-fit: contain;
-      background: #05070a;
-      border: 1px solid var(--line);
-      border-radius: 6px;
+      background: transparent;
+      cursor: zoom-in;
+    }
+    .zoom.actual-size .zoom-stage {
+      display: block;
+      overflow: auto;
+      padding: 70px 76px;
+    }
+    .zoom.actual-size .zoom-stage img {
+      display: block;
+      width: auto;
+      height: auto;
+      max-width: none;
+      max-height: none;
+      margin: auto;
+      cursor: zoom-out;
+    }
+    .zoom-nav {
+      position: absolute;
+      z-index: 4;
+      top: 50%;
+      display: grid;
+      width: 48px;
+      min-width: 48px;
+      height: 58px;
+      min-height: 58px;
+      place-items: center;
+      padding: 0;
+      border-color: rgba(145, 160, 174, 0.38);
+      background: rgba(10, 14, 18, 0.76);
+      font-size: 32px;
+      line-height: 1;
+      transform: translateY(-50%);
+      backdrop-filter: blur(10px);
+    }
+    .zoom-nav.prev { left: 12px; }
+    .zoom-nav.next { right: 12px; }
+    .zoom-nav:disabled {
+      opacity: 0.28;
+      cursor: default;
     }
     .muted { color: var(--muted); }
     .mono { font-family: Consolas, "Cascadia Mono", monospace; }
@@ -638,8 +842,28 @@
       body.detail-open {
         overflow: hidden;
       }
-      body.detail-open #detail {
+      body.detail-open #detail,
+      body.detail-focused #detail {
         display: block;
+      }
+      body.detail-focused {
+        overflow: hidden;
+      }
+      body.detail-focused .detail-layout {
+        display: block;
+        height: calc(100dvh - 52px);
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+      body.detail-focused .detail-preview-column {
+        display: grid;
+        height: min(62dvh, 560px);
+        grid-template-rows: minmax(0, 1fr) 96px;
+      }
+      body.detail-focused .detail {
+        overflow: visible;
+        border-top: 1px solid var(--line);
+        border-left: 0;
       }
       .detail-pane-bar {
         min-height: 52px;
@@ -661,8 +885,40 @@
       }
       .grid { grid-template-columns: 1fr; }
       .actions { grid-template-columns: repeat(2, 1fr); }
-      .zoom-caption { align-items: flex-start; flex-direction: column; }
-      .zoom-caption .row { width: 100%; min-width: 0; }
+      .zoom-title,
+      .zoom-file {
+        display: none;
+      }
+      .zoom-bar {
+        left: 8px;
+        right: 8px;
+        top: 8px;
+        justify-content: flex-end;
+      }
+      .zoom-caption {
+        right: 8px;
+        bottom: 8px;
+        left: 8px;
+        justify-content: center;
+      }
+      .zoom-caption .row {
+        width: auto;
+        min-width: 0;
+      }
+      .zoom-stage {
+        padding: 8px 46px;
+      }
+      .zoom.actual-size .zoom-stage {
+        padding: 62px 52px;
+      }
+      .zoom-nav {
+        width: 38px;
+        min-width: 38px;
+        height: 50px;
+        min-height: 50px;
+      }
+      .zoom-nav.prev { left: 6px; }
+      .zoom-nav.next { right: 6px; }
     }
   </style>
 </head>
@@ -737,11 +993,17 @@
   <div class="zoom" id="zoom" hidden>
     <div class="zoom-bar">
       <div class="zoom-title" id="zoomTitle"></div>
-      <button id="zoomClose" type="button">닫기</button>
+      <div class="zoom-tools">
+        <span class="zoom-count" id="zoomCount"></span>
+        <button id="zoomActual" type="button" title="원본 크기로 보기" aria-label="원본 크기로 보기" aria-pressed="false">1:1</button>
+        <button id="zoomClose" type="button">닫기</button>
+      </div>
     </div>
     <div class="zoom-stage" id="zoomBackdrop">
       <img id="zoomImage" alt="">
     </div>
+    <button class="zoom-nav prev" id="zoomPrev" type="button" aria-label="이전 이미지">&lsaquo;</button>
+    <button class="zoom-nav next" id="zoomNext" type="button" aria-label="다음 이미지">&rsaquo;</button>
     <div class="zoom-caption">
       <div class="zoom-file mono" id="zoomFile"></div>
       <div class="row" id="zoomTags"></div>
@@ -775,7 +1037,8 @@
     let selectedStatus = "unreviewed";
     let imageListSignature = "";
     let refreshInFlight = false;
-    const REVIEW_LAYOUT_KEY = "dino-review-layout-v2";
+    let zoomActualSize = false;
+    const REVIEW_LAYOUT_KEY = "dino-review-layout-v3";
     const LIST_BATCH_SIZE = 120;
     let visibleLimit = LIST_BATCH_SIZE;
     let lastFilterSignature = "";
@@ -790,7 +1053,8 @@
     function loadLayoutState() {
       const defaults = {
         density: "comfortable",
-        detailCollapsed: false,
+        detailCollapsed: true,
+        detailFocused: false,
         listPaneWidth: Math.round(window.innerWidth * 0.52),
       };
       try {
@@ -799,7 +1063,14 @@
           density: ["compact", "comfortable", "large"].includes(saved.density)
             ? saved.density
             : defaults.density,
-          detailCollapsed: Boolean(saved.detailCollapsed),
+          detailCollapsed:
+            typeof saved.detailCollapsed === "boolean"
+              ? saved.detailCollapsed
+              : defaults.detailCollapsed,
+          detailFocused:
+            typeof saved.detailFocused === "boolean"
+              ? saved.detailFocused
+              : defaults.detailFocused,
           listPaneWidth: Number.isFinite(saved.listPaneWidth)
             ? saved.listPaneWidth
             : defaults.listPaneWidth,
@@ -837,8 +1108,8 @@
       const button = $("toggleDetail");
       if (!button) return;
       const visible = isNarrowLayout()
-        ? document.body.classList.contains("detail-open")
-        : !layoutState.detailCollapsed;
+        ? document.body.classList.contains("detail-open") || layoutState.detailFocused
+        : !layoutState.detailCollapsed || layoutState.detailFocused;
       button.setAttribute("aria-pressed", String(visible));
       button.setAttribute("aria-label", visible ? "상세 패널 접기" : "상세 패널 열기");
       button.title = visible ? "상세 패널 접기" : "상세 패널 열기";
@@ -865,18 +1136,31 @@
 
     function setDetailCollapsed(collapsed) {
       layoutState.detailCollapsed = Boolean(collapsed);
+      if (layoutState.detailCollapsed) layoutState.detailFocused = false;
       document.body.classList.toggle("detail-collapsed", layoutState.detailCollapsed);
+      document.body.classList.toggle("detail-focused", layoutState.detailFocused);
       if (layoutState.detailCollapsed) document.body.classList.remove("detail-open");
       updateDetailToggle();
       saveLayoutState();
     }
 
-    function openDetailPane() {
+    function setDetailFocused(focused) {
+      layoutState.detailFocused = Boolean(focused);
+      if (layoutState.detailFocused) layoutState.detailCollapsed = false;
+      document.body.classList.toggle("detail-collapsed", layoutState.detailCollapsed);
+      document.body.classList.toggle("detail-focused", layoutState.detailFocused);
+      if (!isNarrowLayout()) document.body.classList.remove("detail-open");
+      updateDetailToggle();
+      saveLayoutState();
+      renderDetail();
+    }
+
+    function openDetailPane({ preferFocus = false } = {}) {
       if (isNarrowLayout()) {
         document.body.classList.add("detail-open");
-        document.body.classList.remove("detail-collapsed");
       } else {
-        setDetailCollapsed(false);
+        if (preferFocus) setDetailFocused(true);
+        else setDetailCollapsed(false);
       }
       updateDetailToggle();
     }
@@ -884,6 +1168,7 @@
     function closeDetailPane() {
       if (isNarrowLayout()) {
         document.body.classList.remove("detail-open");
+        if (layoutState.detailFocused) setDetailFocused(false);
       } else {
         setDetailCollapsed(true);
       }
@@ -893,7 +1178,9 @@
     function applyLayoutState() {
       setDensity(layoutState.density);
       setListPaneWidth(layoutState.listPaneWidth, { persist: false });
+      if (layoutState.detailCollapsed) layoutState.detailFocused = false;
       document.body.classList.toggle("detail-collapsed", layoutState.detailCollapsed);
+      document.body.classList.toggle("detail-focused", layoutState.detailFocused);
       if (!isNarrowLayout()) document.body.classList.remove("detail-open");
       updateDetailToggle();
     }
@@ -1091,11 +1378,33 @@
     }
 
     function selectImage(id, { openDetail = false } = {}) {
+      const preferFocus = openDetail && !isNarrowLayout() && layoutState.detailCollapsed;
       selected = images.find((image) => image.id === id) || images[0] || null;
       selectedStatus = selected ? statusOf(selected) : "unreviewed";
       renderGrid();
       renderDetail();
-      if (openDetail) openDetailPane();
+      if (openDetail) openDetailPane({ preferFocus });
+    }
+
+    function getSelectedSpeciesImages() {
+      if (!selected) return [];
+      const filteredSpecies = filtered().filter((image) => image.species === selected.species);
+      if (filteredSpecies.some((image) => image.id === selected.id)) return filteredSpecies;
+      return images
+        .filter((image) => image.species === selected.species)
+        .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
+    }
+
+    function moveSelection(direction) {
+      const items = getSelectedSpeciesImages();
+      if (items.length < 2 || !selected) return;
+      const currentIndex = Math.max(0, items.findIndex((image) => image.id === selected.id));
+      const nextIndex = (currentIndex + direction + items.length) % items.length;
+      selected = items[nextIndex];
+      selectedStatus = statusOf(selected);
+      renderGrid();
+      renderDetail();
+      if (!$("zoom").hidden) renderZoom();
     }
 
     function renderDetail() {
@@ -1109,32 +1418,62 @@
         $("closeDetail").addEventListener("click", closeDetailPane);
         return;
       }
+      const speciesImages = getSelectedSpeciesImages();
+      const selectedIndex = Math.max(
+        0,
+        speciesImages.findIndex((image) => image.id === selected.id),
+      );
+      const navigationDisabled = speciesImages.length < 2 ? "disabled" : "";
+      const focusTitle = layoutState.detailFocused ? "분할 보기" : "상세 화면 확장";
+      const strip = speciesImages.map((image) => `
+        <button
+          class="${image.id === selected.id ? "active" : ""}"
+          data-detail-image="${escapeHtml(image.id)}"
+          type="button"
+          title="${escapeHtml(image.name)}"
+          aria-label="${escapeHtml(`${kindLabel(image.kind)} 이미지 선택`)}"
+        >
+          <img loading="lazy" src="${imageUrl(image)}" alt="${escapeHtml(image.speciesLabel)}">
+          <span class="strip-kind">${escapeHtml(kindLabel(image.kind))}</span>
+        </button>
+      `).join("");
       $("detail").innerHTML = `
         <div class="detail-pane-bar">
           <strong>선택 이미지</strong>
-          <button class="detail-close" id="closeDetail" type="button" title="상세 패널 접기" aria-label="상세 패널 접기">&#x2715;</button>
+          <div class="detail-pane-actions">
+            <span class="detail-position">${selectedIndex + 1} / ${speciesImages.length}</span>
+            <button class="detail-action" id="previousDetail" type="button" title="이전 이미지" aria-label="이전 이미지" ${navigationDisabled}>&lsaquo;</button>
+            <button class="detail-action" id="nextDetail" type="button" title="다음 이미지" aria-label="다음 이미지" ${navigationDisabled}>&rsaquo;</button>
+            <button class="detail-action" id="toggleDetailFocus" type="button" title="${focusTitle}" aria-label="${focusTitle}" aria-pressed="${layoutState.detailFocused}">&#x26F6;</button>
+            <button class="detail-close" id="closeDetail" type="button" title="상세 패널 접기" aria-label="상세 패널 접기">&#x2715;</button>
+          </div>
         </div>
-        <button class="preview-button" id="openZoom" type="button" title="크게 보기">
-          <img class="preview" src="${imageUrl(selected)}" alt="${escapeHtml(selected.speciesLabel)}">
-        </button>
-        <div class="detail">
-          <h2>${escapeHtml(selected.speciesLabel)}</h2>
-          <div class="detail-file-name mono">${escapeHtml(selected.name)}</div>
-          <div class="row">
-            ${statusPill(statusOf(selected))}
-            <span class="pill">${escapeHtml(kindLabel(selected.kind))}</span>
+        <div class="detail-layout">
+          <div class="detail-preview-column">
+            <button class="preview-button" id="openZoom" type="button" title="크게 보기">
+              <img class="preview" src="${imageUrl(selected)}" alt="${escapeHtml(selected.speciesLabel)}">
+            </button>
+            <div class="species-strip" aria-label="같은 공룡 이미지">${strip}</div>
           </div>
-          <div class="muted mono">${escapeHtml(selected.id)}</div>
-          <div class="actions">
-            <button data-status="unreviewed" type="button">초기화</button>
-            <button data-status="pass" type="button">통과</button>
-            <button data-status="hold" type="button">보류</button>
-            <button data-status="reject" type="button">반려</button>
-          </div>
-          <textarea id="note" placeholder="검수 메모">${escapeHtml(selected.review?.note || "")}</textarea>
-          <div class="save-row">
-            <button id="save" type="button">저장</button>
-            <span class="muted" id="saveState">${selected.review?.updatedAt ? `${rel(selected.review.updatedAt)} 저장됨` : ""}</span>
+          <div class="detail">
+            <h2>${escapeHtml(selected.speciesLabel)}</h2>
+            <div class="detail-file-name mono">${escapeHtml(selected.name)}</div>
+            <div class="row">
+              ${statusPill(statusOf(selected))}
+              <span class="pill">${escapeHtml(kindLabel(selected.kind))}</span>
+            </div>
+            <div class="muted mono">${escapeHtml(selected.id)}</div>
+            <div class="actions">
+              <button data-status="unreviewed" type="button">초기화</button>
+              <button data-status="pass" type="button">통과</button>
+              <button data-status="hold" type="button">보류</button>
+              <button data-status="reject" type="button">반려</button>
+            </div>
+            <textarea id="note" placeholder="검수 메모">${escapeHtml(selected.review?.note || "")}</textarea>
+            <div class="save-row">
+              <button id="save" type="button">저장</button>
+              <span class="muted" id="saveState">${selected.review?.updatedAt ? `${rel(selected.review.updatedAt)} 저장됨` : ""}</span>
+            </div>
           </div>
         </div>`;
       document.querySelectorAll("[data-status]").forEach((button) => {
@@ -1148,25 +1487,69 @@
       $("save").addEventListener("click", saveReview);
       $("openZoom").addEventListener("click", openZoom);
       $("closeDetail").addEventListener("click", closeDetailPane);
+      $("previousDetail").addEventListener("click", () => moveSelection(-1));
+      $("nextDetail").addEventListener("click", () => moveSelection(1));
+      $("toggleDetailFocus").addEventListener("click", () =>
+        setDetailFocused(!layoutState.detailFocused),
+      );
+      document.querySelectorAll("[data-detail-image]").forEach((button) => {
+        button.addEventListener("click", () => selectImage(button.dataset.detailImage));
+      });
+      if (layoutState.detailFocused) {
+        requestAnimationFrame(() => {
+          document.querySelector(".species-strip button.active")?.scrollIntoView({
+            block: "nearest",
+            inline: "center",
+          });
+        });
+      }
     }
 
-    function openZoom() {
+    function renderZoom() {
       if (!selected) return;
+      const items = getSelectedSpeciesImages();
+      const index = Math.max(0, items.findIndex((image) => image.id === selected.id));
       $("zoomTitle").textContent = selected.name;
       $("zoomFile").textContent = selected.id;
+      $("zoomCount").textContent = `${index + 1} / ${items.length}`;
       $("zoomTags").innerHTML = [
         statusPill(statusOf(selected)),
         `<span class="pill">${escapeHtml(kindLabel(selected.kind))}</span>`,
         `<span class="pill">${escapeHtml(selected.speciesLabel)}</span>`,
       ].join("");
       $("zoomImage").src = imageUrl(selected);
+      $("zoomImage").alt = selected.speciesLabel;
+      $("zoomPrev").disabled = items.length < 2;
+      $("zoomNext").disabled = items.length < 2;
+    }
+
+    function setZoomActualSize(actualSize) {
+      zoomActualSize = Boolean(actualSize);
+      $("zoom").classList.toggle("actual-size", zoomActualSize);
+      $("zoomActual").setAttribute("aria-pressed", String(zoomActualSize));
+      $("zoomActual").textContent = zoomActualSize ? "맞춤" : "1:1";
+      $("zoomActual").title = zoomActualSize ? "화면에 맞추기" : "원본 크기로 보기";
+      $("zoomActual").setAttribute(
+        "aria-label",
+        zoomActualSize ? "화면에 맞추기" : "원본 크기로 보기",
+      );
+      if (!zoomActualSize) {
+        $("zoomBackdrop").scrollTo({ left: 0, top: 0 });
+      }
+    }
+
+    function openZoom() {
+      if (!selected) return;
+      renderZoom();
       $("zoom").hidden = false;
       document.body.classList.add("zoom-open");
+      setZoomActualSize(false);
     }
 
     function closeZoom() {
       $("zoom").hidden = true;
       $("zoomImage").removeAttribute("src");
+      setZoomActualSize(false);
       document.body.classList.remove("zoom-open");
     }
 
@@ -1245,7 +1628,7 @@
           renderDetail();
           $("note").value = draft.note;
         }
-        if (!$("zoom").hidden && selected) openZoom();
+        if (!$("zoom").hidden && selected) renderZoom();
       } catch (error) {
         $("refreshImages").title = "새로고침 실패 - 다시 시도";
         if (initial) throw error;
@@ -1292,13 +1675,23 @@
     });
 
     $("zoomClose").addEventListener("click", closeZoom);
+    $("zoomPrev").addEventListener("click", () => moveSelection(-1));
+    $("zoomNext").addEventListener("click", () => moveSelection(1));
+    $("zoomActual").addEventListener("click", () => setZoomActualSize(!zoomActualSize));
+    $("zoomImage").addEventListener("click", () => setZoomActualSize(!zoomActualSize));
     $("zoomBackdrop").addEventListener("click", (event) => {
       if (event.target.id === "zoomBackdrop") closeZoom();
     });
     window.addEventListener("keydown", (event) => {
-      if (event.key !== "Escape") return;
       if (!$("zoom").hidden) {
-        closeZoom();
+        if (event.key === "Escape") closeZoom();
+        if (event.key === "ArrowLeft") moveSelection(-1);
+        if (event.key === "ArrowRight") moveSelection(1);
+        return;
+      }
+      if (event.key !== "Escape") return;
+      if (layoutState.detailFocused) {
+        setDetailFocused(false);
         return;
       }
       if (document.body.classList.contains("detail-open")) closeDetailPane();
