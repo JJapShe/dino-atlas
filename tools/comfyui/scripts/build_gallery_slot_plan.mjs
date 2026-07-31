@@ -563,7 +563,7 @@ function habitatFor(dino, route) {
   else if (dino.id === "chromogisaurus-novasi") key = "ischigualasto-cancha-de-bochas-floodplain";
   else if (dino.id === "lessemsaurus-sauropoides") key = "los-colorados-seasonal-fluvial-floodplain";
   else if (dino.id === "ceratosaurus-nasicornis") key = "garden-park-felch-point-bar";
-  else if (["gallimimus-bullatus", "therizinosaurus-cheloniformis", "mononykus-olecranus", "elmisaurus-rarus"].includes(dino.id)) key = "nemegt-fluvial-floodplain";
+  else if (["gallimimus-bullatus", "therizinosaurus-cheloniformis", "mononykus-olecranus", "elmisaurus-rarus", "adasaurus-mongoliensis"].includes(dino.id)) key = "nemegt-fluvial-floodplain";
   else if (["oviraptor-philoceratops", "citipati-osmolskae", "khaan-mckennai"].includes(dino.id)) key = "djadokhta-semiarid-dune";
   else if (dino.id === "conchoraptor-gracilis") key = "khulsan-baruungoyot-aeolian-interdune";
   else if (dino.id === "dsungaripterus-weii") key = "wuerho-shallow-delta-lake-margin";

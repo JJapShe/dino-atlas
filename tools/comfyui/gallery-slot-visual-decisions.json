@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-31T02:04:21.268Z",
-  "reviewBatch": "2026-07-31-richness-six-slot-batch-70",
-  "reviewMethod": "Batch 70 Sternberg 1950 original description; Fiorillo and Tykoski 2012 and 2013 boss, frill, and ontogeny comparison; Loewen et al. 2024 frill-position comparison; licensed skull and frill references; six-image contact sheet; enlarged head, foot, tail, and secondary-animal crops; and original-size inspection for one normal visible eye, matte nostril, broad low fused nasal and supraorbital boss complex, conservative skin-covered frill, P. canadensis P2/P3 ornament, four limbs and feet, one tail, stable phenotype, Horseshoe Canyon setting, spatial separation, cautious ecology language, role balance, and artifact gates.",
-  "targetSlots": 702,
+  "generatedAt": "2026-07-31T03:10:08.495Z",
+  "reviewBatch": "2026-07-31-richness-six-slot-batch-71",
+  "reviewMethod": "Batch 71 Barsbold 1983 original description; Kubota and Barsbold 2006 reexamination abstract; Turner, Makovicky, and Norell 2012 revised diagnosis and posterior skull, pelvis, sacrum, and pes figures; Napoli et al. 2021 comparison; linked source and license audit; six-image contact sheet; enlarged head, hand, foot, tail, and secondary-animal crops; and original-size inspection for one low toothed head, two arms, readable three-fingered hands, two legs, two coherent feet, one complete tail, a small digit-II ungual rather than a giant sickle, stable phenotype, Nemegt setting, spatial separation, cautious evidence and behavior language, role balance, and artifact gates.",
+  "targetSlots": 705,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -4320,30 +4320,57 @@
     "adasaurus-mongoliensis": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/adasaurus-mongoliensis-reduced-sickleclaw-imagegen-v1.png",
+        "source": "assets/dinosaurs/adasaurus-mongoliensis-reduced-digit-ii-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The neutral daylight whole-body view replaces the former bird-like head and wing-fan arms with a low toothed dromaeosaurid profile, two attached arms with readable three-fingered hands, two legs and feet, one complete tail, and no enlarged sickle claw.",
+        "reviewMethod": "Batch 71 original-size full frame plus head, both hands, both feet, pelvis, and tail inspection against the Adasaurus evidence and count gates.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-71",
+        "reviewedAt": "2026-07-31T03:10:08.495Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/adasaurus-mongoliensis-indigo-copper-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/adasaurus-mongoliensis-soot-indigo-dusty-teal-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing blue-hour frame preserves the locked body and appendage plan while separating soot-indigo, dusty teal, flax, muted copper, and plum-petrol fields without regular tail rings, stripes, dots, or a uniform color cast.",
+        "reviewMethod": "Batch 71 original-size inspection of head, hands, feet, complete tail, pattern continuity, phenotype match, and compositional distinction from the daylight representative.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-71",
+        "reviewedAt": "2026-07-31T03:10:08.495Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/adasaurus-mongoliensis-nemegt-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/adasaurus-mongoliensis-nemegt-pointbar-habitat-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "A wide seasonal channel, sandy point bar, wet silt, driftwood, sparse horsetails and ferns, and open conifer woodland add a distinct Nemegt habitat while one unobscured middle-distance animal retains coherent head, limbs, feet, and tail.",
+        "reviewMethod": "Batch 71 original-size inspection of the primary animal and environmental elements; accepted as habitat context without claiming exact season, water level, plant placement, or behavior.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-71",
+        "reviewedAt": "2026-07-31T03:10:08.495Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/adasaurus-mongoliensis-reduced-digit-ii-foot-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The low three-quarter identity view keeps the whole animal connected while the near foot separates a small high digit I, a slightly elevated digit II with an ungual comparable to the other claws, and the two principal weight-bearing forward digits without inventing a giant sickle.",
+        "reviewMethod": "Batch 71 original-size foot and attachment inspection against Turner et al. 2012; accepted as a life reconstruction aid rather than a labeled skeletal measurement plate or behavior claim.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-71",
+        "reviewedAt": "2026-07-31T03:10:08.495Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/adasaurus-mongoliensis-saurolophus-channel-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "The foreground Adasaurus remains fully readable while one distant crested hadrosaur silhouette stays across a broad channel, adding regional community context without contact, pursuit, predation, or outcome claims.",
+        "reviewMethod": "Batch 71 original-size primary and secondary animal inspection for spatial separation, independent bodies, foreground appendage counts, complete tails, phenotype continuity, and cautious comparative-hadrosaur language.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-71",
+        "reviewedAt": "2026-07-31T03:10:08.495Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/adasaurus-mongoliensis-separated-adults-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Two adults remain independently readable on driftwood- and channel-separated point bars, with stable species cues and restrained individual color variation; both tails end inside the frame and the scene records proximity only.",
+        "reviewMethod": "Batch 71 original-size per-animal head, arm, hand, leg, foot, pelvis, and tail inspection with the side channel and driftwood checked for silhouette fusion or duplicated appendages.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-71",
+        "reviewedAt": "2026-07-31T03:10:08.495Z"
       }
     },
     "microraptor-gui": {

@@ -3853,27 +3853,51 @@ window.gallerySlotAssignments = {
   ],
   "adasaurus-mongoliensis": [
     {
-      "source": "assets/dinosaurs/adasaurus-mongoliensis-reduced-sickleclaw-imagegen-v1.png",
+      "source": "assets/dinosaurs/adasaurus-mongoliensis-reduced-digit-ii-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "nemegt-fluvial-floodplain",
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/adasaurus-mongoliensis-indigo-copper-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/adasaurus-mongoliensis-soot-indigo-dusty-teal-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "nemegt-fluvial-floodplain",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/adasaurus-mongoliensis-nemegt-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/adasaurus-mongoliensis-nemegt-pointbar-habitat-imagegen-v1.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
-      "habitatKey": "conifer-fern-floodplain",
+      "habitatKey": "nemegt-fluvial-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/adasaurus-mongoliensis-reduced-digit-ii-foot-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "nemegt-fluvial-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/adasaurus-mongoliensis-saurolophus-channel-ecology-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "nemegt-fluvial-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/adasaurus-mongoliensis-separated-adults-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "nemegt-fluvial-floodplain",
       "expectedKind": "anatomy review"
     }
   ],

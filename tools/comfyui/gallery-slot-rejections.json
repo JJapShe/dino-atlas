@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-31-richness-six-slot-batch-70",
+  "reviewBatch": "2026-07-31-richness-six-slot-batch-71",
   "rejectedSources": {
     "assets/dinosaurs/nyctosaurus-gracilis-niobrara-forked-crest-imagegen-v1.png": {
       "reason": "Free clawed appendages project from the wing margins, limb and membrane topology is confused, and a genus-level mature branching crest is incorrectly fixed onto the N. gracilis representative."
@@ -1426,7 +1426,16 @@
     },
     "assets/dinosaurs/pachyrhinosaurus-canadensis-floodplain-herd-ecology-imagegen-v1.png": {
       "reason": "The herd frame multiplies the same rounded ball-shaped boss and unsupported generic frill knobs across several partially obscured animals, so neither species identity nor independent appendage counts can be reviewed reliably."
+    },
+    "assets/dinosaurs/adasaurus-mongoliensis-reduced-sickleclaw-imagegen-v1.png": {
+      "reason": "The former representative has a rounded modern bird or turkey-like head, broad wing-fan forelimbs, and weak hand and reduced digit-II readability, so it cannot anchor Adasaurus identity."
+    },
+    "assets/dinosaurs/adasaurus-mongoliensis-indigo-copper-pattern-imagegen-v1.png": {
+      "reason": "The former pattern frame repeats a modern bird-like head and broad wing-fan arms, adds regular tail rings and leg bars, and does not preserve a readable reduced digit-II ungual."
+    },
+    "assets/dinosaurs/adasaurus-mongoliensis-nemegt-ecology-imagegen-v1.png": {
+      "reason": "The former ecology frame combines bird-like heads, broad wing-fan arms, overlapping appendages, repetitive color treatment, and several animals whose heads, legs, feet, and tails cannot be audited independently."
     }
   },
-  "generatedAt": "2026-07-31T02:04:21.268Z"
+  "generatedAt": "2026-07-31T03:10:08.495Z"
 }
