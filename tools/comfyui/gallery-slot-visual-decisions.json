@@ -4736,6 +4736,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/byronosaurus-jaffei-slender-unserrated-tooth-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size review passed one head, the very long low narrow snout, a subtle straight tooth line, two hind limbs, three readable support toes with modest raised digit-II claws, and one tail. Feather extent and fine appendage detail remain comparative reconstruction.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against Makovicky et al. 2003 Byronosaurus skull gate",
+        "reviewBatch": "2026-08-01-richness-batch-83-byronosaurus",
+        "reviewedAt": "2026-08-01T06:00:00.000Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/byronosaurus-jaffei-ash-sage-unbanded-pattern-imagegen-v2.png",
+        "role": "color-pattern",
+        "reason": "Original-size review passed the slender low-skulled profile, two legs, readable three-toed feet with small raised digit-II claws, and one continuous unbanded tail. The ash and sage coloration is a reconstruction variation.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against Makovicky et al. 2003 Byronosaurus skull gate",
+        "reviewBatch": "2026-08-01-richness-batch-83-byronosaurus",
+        "reviewedAt": "2026-08-01T06:00:00.000Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/byronosaurus-jaffei-channel-separated-ceratopsian-ecology-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "Original-size review passed the foreground animal's long low skull, two hind limbs, readable support toes, modest raised digit-II claw, and one tail. The channel-separated generic ceratopsian is environmental context only, not an interaction or species claim.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against Makovicky et al. 2003 Byronosaurus skull gate",
+        "reviewBatch": "2026-08-01-richness-batch-83-byronosaurus",
+        "reviewedAt": "2026-08-01T06:00:00.000Z"
       }
     },
     "almas-ukhaa": {

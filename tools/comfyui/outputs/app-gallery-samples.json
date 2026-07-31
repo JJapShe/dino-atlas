@@ -1,6 +1,6 @@
 {
   "taxa": 132,
-  "images": 1661,
+  "images": 1664,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -8559,12 +8559,36 @@
         "src": "assets/dinosaurs/byronosaurus-jaffei-ukhaa-tolgod-ecology-imagegen-v1.png"
       },
       {
+        "kind": "anatomy review",
+        "title": "바이로노사우루스 v2 가는 무톱니 주둥이 전신 비교",
+        "body": "작고 가벼운 전신에서 큰 눈, 매우 낮고 긴 가는 두개골, 은근한 곧은 무톱니 이빨선, 접힌 앞다리, 세 지지 발가락과 작게 들린 둘째 발가락 발톱, 한 개의 긴 꼬리를 비교합니다. 몸 덮개와 정확한 손·발 연조직은 보존된 두개골과 단편적 후두개골을 바탕으로 한 비교 복원입니다.",
+        "source": "assets/dinosaurs/byronosaurus-jaffei-slender-unserrated-tooth-anatomy-imagegen-v2.png",
+        "variant": "가는 무톱니 주둥이 전신 비교 이미지 생성 v2",
+        "src": "assets/dinosaurs/byronosaurus-jaffei-slender-unserrated-tooth-anatomy-imagegen-v2.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "바이로노사우루스 v2 수로 분리 각룡류 맥락",
+        "body": "전경의 바이로노사우루스와 먼 둑의 일반적인 작은 각룡류형 동물을 얕은 수로로 분리한 우하 톨고드 지역 맥락 장면입니다. 전경 개체의 긴 주둥이·두 다리·보이는 발가락·한 꼬리를 비교하되, 원경 동물의 종 판정이나 실제 조우·추격·포식 관계는 주장하지 않습니다.",
+        "source": "assets/dinosaurs/byronosaurus-jaffei-channel-separated-ceratopsian-ecology-imagegen-v2.png",
+        "variant": "수로 분리 각룡류 맥락 이미지 생성 v2",
+        "src": "assets/dinosaurs/byronosaurus-jaffei-channel-separated-ceratopsian-ecology-imagegen-v2.png"
+      },
+      {
         "kind": "review hold",
         "title": "바이로노사우루스 v1 남색-비취 무늬 변이",
         "body": "같은 체형의 색상/무늬 변이입니다. 한밤 남색 등, 옅은 진주색 배, 비취색 눈테, 자홍색 목 초승달 무늬, 탄 오렌지색 어깨 안장 무늬, 검은 접힌 앞다리 깃 가장자리, 청록 옆구리 반점, 크림색/짙은 보라색 꼬리 띠를 사용합니다. 둘째 발가락 발톱이 조금 강조되어 보여 대표보다 아래에 두되, 바이로노사우루스를 사우로르니토이데스와 자나바자르에서 구분하는 참고로 활용합니다.",
         "source": "assets/dinosaurs/byronosaurus-jaffei-indigo-jade-pattern-imagegen-v1.png",
         "variant": "남색 비취 무늬 이미지 생성 v1",
         "src": "assets/dinosaurs/byronosaurus-jaffei-indigo-jade-pattern-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "바이로노사우루스 v2 재빛-세이지 무늬 변이",
+        "body": "새벽 모래언덕의 차분한 재빛 등, 옅은 배, 세이지색 어깨 점과 계피색 뺨 강조를 적용한 색·무늬 변이입니다. 가는 몸, 낮고 긴 주둥이, 접힌 앞다리, 세 지지 발가락과 작은 들린 둘째 발가락 발톱, 한 꼬리를 유지하며 생체 색은 복원 가설로 둡니다.",
+        "source": "assets/dinosaurs/byronosaurus-jaffei-ash-sage-unbanded-pattern-imagegen-v2.png",
+        "variant": "재빛-세이지 무늬 변이 이미지 생성 v2",
+        "src": "assets/dinosaurs/byronosaurus-jaffei-ash-sage-unbanded-pattern-imagegen-v2.png"
       }
     ],
     "almas-ukhaa": [
