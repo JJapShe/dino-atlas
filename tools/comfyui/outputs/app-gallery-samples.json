@@ -1,6 +1,6 @@
 {
   "taxa": 132,
-  "images": 1695,
+  "images": 1698,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -12197,6 +12197,30 @@
         "source": "assets/dinosaurs/gravitholus-albertae-riverbank-head-display-ecology-imagegen-v1.png",
         "variant": "강둑 과시 생태 이미지 생성 v1",
         "src": "assets/dinosaurs/gravitholus-albertae-riverbank-head-display-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Gravitholus albertae v4 heavy dome full body",
+        "body": "Original-size inspection confirms a proportionate heavy dome, two forelimbs, two hind limbs, visible feet, and one continuous plain tail.",
+        "source": "assets/dinosaurs/gravitholus-albertae-oldman-heavy-dome-fullbody-identity-imagegen-v4.png",
+        "variant": "Oldman heavy dome full body v4",
+        "src": "assets/dinosaurs/gravitholus-albertae-oldman-heavy-dome-fullbody-identity-imagegen-v4.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Gravitholus albertae v4 horsetail browse",
+        "body": "Original-size inspection confirms one full animal, visible feet, two forelimbs, two hind limbs, and one plain tail during a non-graphic horsetail browse.",
+        "source": "assets/dinosaurs/gravitholus-albertae-oldman-horsetail-browse-ecology-imagegen-v4.png",
+        "variant": "Oldman horsetail browse v4",
+        "src": "assets/dinosaurs/gravitholus-albertae-oldman-horsetail-browse-ecology-imagegen-v4.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Gravitholus albertae v4 channel growth stage",
+        "body": "Original-size inspection confirms a fully readable adult with two forelimbs, two hind limbs, visible feet, and one unbranched tail; the smaller animal is spatially separate across the channel.",
+        "source": "assets/dinosaurs/gravitholus-albertae-oldman-channel-growth-stage-ecology-imagegen-v4.png",
+        "variant": "Oldman channel growth stage v4",
+        "src": "assets/dinosaurs/gravitholus-albertae-oldman-channel-growth-stage-ecology-imagegen-v4.png"
       },
       {
         "kind": "review hold",
