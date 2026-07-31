@@ -1,6 +1,6 @@
 {
   "taxa": 132,
-  "images": 1664,
+  "images": 1667,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -8609,12 +8609,36 @@
         "src": "assets/dinosaurs/almas-ukhaa-djadokhta-ecology-imagegen-v1.png"
       },
       {
+        "kind": "anatomy review",
+        "title": "Almas v2 short deep skull post-rain anatomy view",
+        "body": "A comparative reconstruction centered on the short, relatively deep skull outline of the holotype. The large eye, compact non-avian jaw, folded forelimbs, two hind limbs, readable feet, and one tail are inspected at original size; hand, feather, and color details remain comparative reconstruction.",
+        "source": "assets/dinosaurs/almas-ukhaa-short-deep-skull-postrain-anatomy-imagegen-v2.png",
+        "variant": "short deep skull post-rain anatomy view imagegen v2",
+        "src": "assets/dinosaurs/almas-ukhaa-short-deep-skull-postrain-anatomy-imagegen-v2.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Almas v2 channel-separated generic ceratopsian context",
+        "body": "A context scene separating the foreground Almas from a distant generic small ceratopsian-type animal across a shallow channel. It makes no claim about the distant animal's species, a real encounter, grouping, pursuit, or predation; the foreground Almas remains the anatomy comparison subject.",
+        "source": "assets/dinosaurs/almas-ukhaa-channel-separated-ceratopsian-context-imagegen-v2.png",
+        "variant": "channel-separated generic ceratopsian context imagegen v2",
+        "src": "assets/dinosaurs/almas-ukhaa-channel-separated-ceratopsian-context-imagegen-v2.png"
+      },
+      {
         "kind": "review hold",
         "title": "알마스 v1 가지색-청록 무늬 변이",
         "body": "같은 체형의 색/무늬 변이입니다. 깊은 가지색 등, 옅은 크림색 배, 청록색 눈 고리, 사프란색 목 패치, 진홍색 어깨 안장 무늬, 검은 접힌 팔깃 끝, 민트색 옆구리 반점, 아이보리/차콜 꼬리 띠를 사용합니다. 들어 올린 발가락 발톱이 조금 강조되어 읽히므로 대표보다 아래에 두되, 알마스를 바이로노사우루스·사우로르니토이데스·자나바자르와 분리하는 참고로 사용합니다.",
         "source": "assets/dinosaurs/almas-ukhaa-aubergine-turquoise-pattern-imagegen-v1.png",
         "variant": "가지색-청록 무늬 이미지 생성 v1",
         "src": "assets/dinosaurs/almas-ukhaa-aubergine-turquoise-pattern-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "Almas v2 ash apricot unbanded tail pattern variant",
+        "body": "A palette-only comparison with an ash-gray back, muted apricot throat and underside, and small blue flank flecks. It deliberately removes tail rings and retains a short snout, large eye, two legs, modest raised second-toe claw, and one tail.",
+        "source": "assets/dinosaurs/almas-ukhaa-ash-apricot-unbanded-pattern-imagegen-v2.png",
+        "variant": "ash apricot unbanded tail pattern variant imagegen v2",
+        "src": "assets/dinosaurs/almas-ukhaa-ash-apricot-unbanded-pattern-imagegen-v2.png"
       }
     ],
     "gobivenator-mongoliensis": [
