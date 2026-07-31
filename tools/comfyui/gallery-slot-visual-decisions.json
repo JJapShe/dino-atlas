@@ -6416,6 +6416,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/tylocephale-gilmorei-charcoal-celadon-tall-dome-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size inspection confirms one very tall smooth dome, short rear knob, two forelimbs, two hind limbs, readable three-toed feet, and one unbanded tail.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against Tylocephale high-dome identity gate",
+        "reviewBatch": "2026-08-01-richness-batch-84-tylocephale",
+        "reviewedAt": "2026-08-01T10:00:00.000Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/tylocephale-gilmorei-dry-wash-ceratopsian-context-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "Foreground Tylocephale retains the high smooth dome, coherent limbs, readable feet, and one tail; distant generic ceratopsian-like animal is environmental context only.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against Tylocephale high-dome identity gate",
+        "reviewBatch": "2026-08-01-richness-batch-84-tylocephale",
+        "reviewedAt": "2026-08-01T10:00:00.000Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/tylocephale-gilmorei-aubergine-porcelain-bluehour-pattern-imagegen-v2.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size inspection confirms one high smooth dome, two forelimbs, two hind limbs, readable feet, and one unbanded tail; palette is variation only.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against Tylocephale high-dome identity gate",
+        "reviewBatch": "2026-08-01-richness-batch-84-tylocephale",
+        "reviewedAt": "2026-08-01T10:00:00.000Z"
       }
     },
     "wannanosaurus-yansiensis": {

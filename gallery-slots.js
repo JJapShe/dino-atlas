@@ -5725,6 +5725,30 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "gobi-arid",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/tylocephale-gilmorei-charcoal-celadon-tall-dome-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "gobi-arid",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/tylocephale-gilmorei-dry-wash-ceratopsian-context-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "gobi-arid",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/tylocephale-gilmorei-aubergine-porcelain-bluehour-pattern-imagegen-v2.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "gobi-arid",
+      "expectedKind": "anatomy review"
     }
   ],
   "wannanosaurus-yansiensis": [

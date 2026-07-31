@@ -1,6 +1,6 @@
 {
   "taxa": 132,
-  "images": 1672,
+  "images": 1675,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -11773,12 +11773,36 @@
         "src": "assets/dinosaurs/tylocephale-gilmorei-drywash-display-ecology-imagegen-v1.png"
       },
       {
+        "kind": "anatomy review",
+        "title": "틸로케팔레 v2 차콜 셀라돈 높은 돔 해부",
+        "body": "매우 높고 매끈한 둥근 돔과 짧은 뒤통수 혹을 전신에서 확인하는 해부 참고입니다. 양손의 다섯 손가락, 두 뒷다리의 세 지지 발가락, 단일 꼬리를 원본 크기로 확인했으며 색은 비교 재구성입니다.",
+        "source": "assets/dinosaurs/tylocephale-gilmorei-charcoal-celadon-tall-dome-anatomy-imagegen-v2.png",
+        "variant": "차콜 셀라돈 높은 돔 해부 이미지 생성 v2",
+        "src": "assets/dinosaurs/tylocephale-gilmorei-charcoal-celadon-tall-dome-anatomy-imagegen-v2.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "틸로케팔레 v2 건천 각룡류형 맥락",
+        "body": "전경의 틸로케팔레와 멀리 떨어진 일반화한 작은 각룡류형 동물을 건천으로 분리한 환경 맥락입니다. 배경은 종, 만남, 무리, 포식 또는 행동의 증거가 아니며 전경 개체의 높은 돔과 팔다리, 꼬리를 원본 크기로 확인했습니다.",
+        "source": "assets/dinosaurs/tylocephale-gilmorei-dry-wash-ceratopsian-context-imagegen-v2.png",
+        "variant": "건천 각룡류형 맥락 이미지 생성 v2",
+        "src": "assets/dinosaurs/tylocephale-gilmorei-dry-wash-ceratopsian-context-imagegen-v2.png"
+      },
+      {
         "kind": "review hold",
         "title": "틸로케팔레 가지색 돔-자연 등안장 변형",
         "body": "매우 높은 둥근 돔과 짧은 뒤통수 혹을 유지하면서, 가지색 돔과 따뜻한 갈색 등안장이 옆구리에서 불규칙하게 옅어지도록 다듬었습니다. 도자기빛 목과 배, 단색 꼬리는 남기되 청록 눈선 같은 장식적 경계는 제거한 v3입니다.",
         "source": "assets/dinosaurs/tylocephale-gilmorei-aubergine-umber-natural-saddle-pattern-imagegen-v3.png",
         "variant": "가지색 돔-자연 등안장 이미지 생성 v3",
         "src": "assets/dinosaurs/tylocephale-gilmorei-aubergine-umber-natural-saddle-pattern-imagegen-v3.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "틸로케팔레 v2 가지색 도자기빛 황혼 변이",
+        "body": "높은 돔과 짧은 뒤통수 혹을 유지한 황혼 색 변이입니다. 가지색 돔, 도자기빛 목과 배, 시에나 옆구리와 가는 청록 눈선만 달리했으며 단색 꼬리를 유지합니다.",
+        "source": "assets/dinosaurs/tylocephale-gilmorei-aubergine-porcelain-bluehour-pattern-imagegen-v2.png",
+        "variant": "가지색 도자기빛 황혼 무늬 이미지 생성 v2",
+        "src": "assets/dinosaurs/tylocephale-gilmorei-aubergine-porcelain-bluehour-pattern-imagegen-v2.png"
       }
     ],
     "wannanosaurus-yansiensis": [
