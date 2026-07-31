@@ -5551,6 +5551,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/agujaceratops-mariscalensis-heartnotch-fullbody-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size review passed the two long brow horns, one shorter flattened nasal horn, skull-attached notched frill, four limbs with non-hoofed toes, and one continuous tail. Frill skin, colors, and keratin contours remain conservative reconstruction.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against Forster et al. 1993 and Dalman et al. 2017 Agujaceratops horn-and-frill gate",
+        "reviewBatch": "2026-08-01-richness-batch-82-agujaceratops",
+        "reviewedAt": "2026-08-01T04:20:00.000Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/agujaceratops-mariscalensis-bluehour-heartnotch-pattern-imagegen-v2.png",
+        "role": "color-pattern",
+        "reason": "Original-size review passed two long brow horns, one shorter nasal horn, the posterior notch on a skull-attached frill, four legs, non-hoofed feet, and one tail. The blue-gray and plum palette is a reconstruction variation, not preserved coloration.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against Forster et al. 1993 and Dalman et al. 2017 Agujaceratops horn-and-frill gate",
+        "reviewBatch": "2026-08-01-richness-batch-82-agujaceratops",
+        "reviewedAt": "2026-08-01T04:20:00.000Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/agujaceratops-mariscalensis-channel-separated-hadrosaur-ecology-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "Original-size review passed the foreground Agujaceratops head, two brow horns, one nasal horn, notched skull-attached frill, four limbs, one tail, and spatial separation from the distant generic hadrosaurid. The regional animal is context only, not an interaction or species claim.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against Forster et al. 1993 and Dalman et al. 2017 Agujaceratops horn-and-frill gate",
+        "reviewBatch": "2026-08-01-richness-batch-82-agujaceratops",
+        "reviewedAt": "2026-08-01T04:20:00.000Z"
       }
     },
     "psittacosaurus-mongoliensis": {
