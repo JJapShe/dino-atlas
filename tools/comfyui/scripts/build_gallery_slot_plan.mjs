@@ -252,6 +252,13 @@ const HABITATS = {
     light: "soft neutral daylight with restrained water reflection and no global desert-orange cast",
     backgroundPalette: ["#a58c69", "#607b74", "#4f604f"],
   },
+  "bugin-tsav-point-bar": {
+    substrate: "pale bluish-gray fine sandstone point bars with cross-bedded channel sand, localized muted dark-red mudstone lenses, shallow sinuous side channels, ripple marks, gravel patches, and scattered driftwood",
+    vegetation: "sparse horsetails and ferns along damp margins, low cycads, and irregular open conifers with no modern grass, flowers, palms, shrubland, or pine plantation",
+    moisture: "seasonal meandering-river and point-bar system reconstructed from the Bugin Tsav holotype's channel and point-bar deposits; exact water level and living-surface use remain hypotheses",
+    light: "neutral broken-cloud daylight, cool post-rain dawn, or restrained misty sunbreak with localized water reflection and red-mud bounce but no global teal, purple, or orange cast",
+    backgroundPalette: ["#aab1ad", "#7d4e49", "#53675f"],
+  },
   "sharon-springs-seaway": {
     substrate: "dark organic-rich black shale, suspended fine sediment, and sparse inoceramid or ammonite shell debris",
     vegetation: "no tropical coral reef; only sparse period-appropriate marine growth when justified",

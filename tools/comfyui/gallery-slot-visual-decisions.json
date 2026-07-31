@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-30T20:22:01.448Z",
-  "reviewBatch": "2026-07-31-richness-six-slot-batch-66",
-  "reviewMethod": "Batch 66 Balanoff and Norell 2012 Khaan osteology review, Clark et al. 2001 type-species context, Dingus et al. 2008 Ukhaa Tolgod eolian and interdune context, Persons et al. 2015 adjacent-adult and chevron-uncertainty review, and original-size inspection of every selected Khaan frame for the rounded crestless skull, posterodorsally slanted slitlike naris, broad toothless beak, exactly two three-digit hands when readable, paired hindlimbs, one continuous tail, restrained comparative plumage and tail fan, palette continuity, cautious habitat and behavior language, role balance, crop intent, secondary-animal separation, and artifact gates.",
-  "targetSlots": 690,
+  "generatedAt": "2026-07-31T00:36:26.533Z",
+  "reviewBatch": "2026-07-31-richness-six-slot-batch-69",
+  "reviewMethod": "Batch 69 Barsbold et al. 2000 Nomingia holotype tail, pelvis, and hindlimb review; Funston et al. 2021 Elmisaurus synonymy and evidence-boundary review; six-image contact sheet; dedicated enlarged hand, foot, tail, and secondary-animal crops; and original-size inspection for one head and torso, visible three-fingered near hands, paired hindlimbs and feet, one pelvis-origin tail, restrained inferred terminal fan, stable phenotype, Bugin Tsav point-bar context, spatially separated secondary animals, cautious behavior language, role balance, and artifact gates.",
+  "targetSlots": 699,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -4208,30 +4208,57 @@
     "nomingia-gobiensis": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/nomingia-gobiensis-pygostyle-tailfan-imagegen-v1.png",
+        "source": "assets/dinosaurs/nomingia-gobiensis-24-caudal-pygostyle-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The single broadside animal keeps one low deep comparative head, one compact torso, one readable three-fingered near hand, two independently attached hindlimbs and feet, and one pelvis-origin tail that tapers into a small integrated terminal fan without modern-bird or extra-appendage drift.",
+        "reviewMethod": "Batch 69 original-size frame plus enlarged near-hand, both-feet, tail-base, and terminal-fan crops against the Barsbold et al. 2000 tail, pelvis, and hindlimb figures and the Funston et al. 2021 synonymy boundary.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-69",
+        "reviewedAt": "2026-07-31T00:36:26.533Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/nomingia-gobiensis-bluegreen-copper-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/nomingia-gobiensis-graphite-copper-pointbar-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing dawn frame preserves the same graphite-violet, blue-gray, copper, and petrol phenotype in broad irregular fields while retaining one readable three-fingered near hand, paired hindlimbs and feet, and one compact-fan tail.",
+        "reviewMethod": "Batch 69 original-size comparison to the representative plus enlarged hand, feet, and fan crops; regular dots, rings, bars, checker patterns, black-white banding, and global color casts were absent.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-69",
+        "reviewedAt": "2026-07-31T00:36:26.533Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/nomingia-gobiensis-bugin-tsav-shorttail-ecology-imagegen-v2.png",
+        "source": "assets/dinosaurs/nomingia-gobiensis-bugin-tsav-pointbar-walk-imagegen-v3.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The environmental frame adds pale fine-sand point bars, localized red mud lenses, shallow channels, ripple marks, driftwood, horsetails, ferns, cycads, and open conifers while the single walking animal retains one three-fingered near hand, two hindlimbs and feet, and one continuous tail.",
+        "reviewMethod": "Batch 69 original-size whole-frame and appendage crops, with the Bugin Tsav channel and point-bar description checked against Barsbold et al. 2000; gait, water level, and vegetation remain reconstruction hypotheses.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-69",
+        "reviewedAt": "2026-07-31T00:36:26.533Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/nomingia-gobiensis-pelvis-pygostyle-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The rear three-quarter crop clearly isolates one broad pelvis, two hindlimbs and feet, and one tail from base to small terminal fan; the forelimb tips are not used for a digit-count claim and overlapping rear-view toes are described conservatively.",
+        "reviewMethod": "Batch 69 original-size tail and pelvis frame plus enlarged feet and terminal-fan crops against Barsbold et al. 2000 figures 1-4; the under-feather pygostyle and fan outline remain external soft-tissue inferences.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-69",
+        "reviewedAt": "2026-07-31T00:36:26.533Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/nomingia-gobiensis-channel-separated-tarbosaurus-context-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "A broad channel fully separates the foreground Nomingia from one small distant Tarbosaurus; the primary animal retains its readable near hand, two hindlimbs, two feet, and one tail, while the background taxon remains a non-contact regional-fauna silhouette.",
+        "reviewMethod": "Batch 69 original-size whole-frame plus foreground hand-foot and distant-Tarbosaurus crops; no chase, attack, vigilance, prey relationship, physical contact, or merged anatomy is asserted.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-69",
+        "reviewedAt": "2026-07-31T00:36:26.533Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/nomingia-gobiensis-separated-conspecific-proximity-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The foreground and background Nomingia are separated by a channel and long driftwood; each has one head, one torso, paired hindlimbs and feet, one tail, and one compact fan, while only the foreground readable hand carries a three-digit claim.",
+        "reviewMethod": "Batch 69 original-size whole-frame plus foreground hand-foot and background-individual crops; depth-based size difference is treated only as cautious co-presence, not age, sex, courtship, pairing, family, or stable sociality.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-69",
+        "reviewedAt": "2026-07-31T00:36:26.533Z"
       }
     },
     "caudipteryx-zoui": {

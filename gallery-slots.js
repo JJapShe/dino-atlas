@@ -3753,7 +3753,7 @@ window.gallerySlotAssignments = {
   ],
   "nomingia-gobiensis": [
     {
-      "source": "assets/dinosaurs/nomingia-gobiensis-pygostyle-tailfan-imagegen-v1.png",
+      "source": "assets/dinosaurs/nomingia-gobiensis-24-caudal-pygostyle-representative-imagegen-v2.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
@@ -3761,7 +3761,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/nomingia-gobiensis-bluegreen-copper-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/nomingia-gobiensis-graphite-copper-pointbar-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -3769,9 +3769,33 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/nomingia-gobiensis-bugin-tsav-shorttail-ecology-imagegen-v2.png",
+      "source": "assets/dinosaurs/nomingia-gobiensis-bugin-tsav-pointbar-walk-imagegen-v3.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/nomingia-gobiensis-pelvis-pygostyle-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/nomingia-gobiensis-channel-separated-tarbosaurus-context-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/nomingia-gobiensis-separated-conspecific-proximity-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"

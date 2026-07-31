@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-31-richness-six-slot-batch-65",
+  "reviewBatch": "2026-07-31-richness-six-slot-batch-69",
   "rejectedSources": {
     "assets/dinosaurs/nyctosaurus-gracilis-niobrara-forked-crest-imagegen-v1.png": {
       "reason": "Free clawed appendages project from the wing margins, limb and membrane topology is confused, and a genus-level mature branching crest is incorrectly fixed onto the N. gracilis representative."
@@ -1405,7 +1405,19 @@
     },
     "assets/dinosaurs/microraptor-gui-canopy-launch-indigo-emerald-ecology-imagegen-v1.png": {
       "reason": "The launch frame repeats the selected airborne role, while the two hindwing surfaces do not attach cleanly to the two legs and instead read as extra torso- or tail-rooted feather fans."
+    },
+    "assets/dinosaurs/nomingia-gobiensis-pygostyle-tailfan-imagegen-v1.png": {
+      "reason": "The former representative has a modern ostrich- or bird-like head and tubular neck-body transition, overlapping hands, and an overconfident terminal fan that do not respect the holotype's postcranial evidence boundary."
+    },
+    "assets/dinosaurs/nomingia-gobiensis-bluegreen-copper-pattern-imagegen-v1.png": {
+      "reason": "The former pattern image retains a modern bird-like head, hides the hands, and uses a large circular black-and-white banded fan instead of the rebuilt set's restrained low-saturation phenotype and small inferred fan."
+    },
+    "assets/dinosaurs/nomingia-gobiensis-bugin-tsav-shorttail-ecology-imagegen-v2.png": {
+      "reason": "Both foreground animals have modern bird- or ostrich-like heads, obscured hands and feet, large circular patterned fans, and an overconfident seed-foraging scene that fails anatomy, soft-tissue, and behavior boundaries."
+    },
+    "assets/dinosaurs/nomingia-gobiensis-bugin-tsav-forage-ecology-imagegen-v1.png": {
+      "reason": "Five repetitive long-necked bird-like animals, hidden or overlapping appendages, long generic tails, and an unsupported feeding-group narrative prevent independent Nomingia identity and count review."
     }
   },
-  "generatedAt": "2026-07-30T19:15:10.241Z"
+  "generatedAt": "2026-07-31T00:36:26.533Z"
 }
