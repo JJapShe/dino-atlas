@@ -4737,6 +4737,12 @@ For each added taxon, produce:
 
 ## Recent Expansion Notes
 
+- `Alaskacephale gangloffi six-image polar-dome expansion 2026-08-01`
+  - Kept the existing Prince Creek representative, midnight-copper pattern, and polar-forest ecology image. Added a charcoal-ochre whole-body anatomy frame, a wine-red and sage comparison pattern, and a single-animal polar-stream browsing ecology frame.
+  - The direct gate keeps a medium-small, lightly built biped with a thick rounded dome, small beak-like head, two forelimbs, two hind limbs, one continuous tail, and no horns, spikes, or oversized Pachycephalosaurus drift. Exact skin colours and behavior remain comparative reconstructions.
+  - Original-size inspection of the three additions resolves one head, two forelimbs, two hind limbs, separate feet, and one pelvis-origin tail in each full-body frame. The ecology scene has no secondary animal, so it supplies habitat context without a species or interaction claim.
+  - Built-in ImageGen source mapping: anatomy `exec-1419869b-648b-4d5a-92e6-6212eca49831.png`, pattern `exec-71be1011-1afa-47f5-9856-47a80edccb27.png`, and stream ecology `exec-5b4b53c5-7c66-451b-b4fd-aaead8439c9b.png`. Only species-prefixed project copies under `assets/dinosaurs/` are app references.
+
 - `Homalocephale calathocercos six-image low-flat-skull rebuild 2026-08-01`
   - Replaced the prior tall-dome and ornament-drift set with six new low-flat-skull reconstructions: teal representative, umber-coral colour variation, charcoal overcast anatomy frame, elevated skull-roof structure frame, channel-separated generic hadrosaur context, and olive-apricot blue-hour variation.
   - The direct gate follows Maryanska and Osmolska 1974 within the limits of reconstruction: a small lightly built biped with a low broad smooth skull roof rather than a high pachycephalosaur dome, no cranial horns or spikes, short forelimbs, long hind limbs, three readable support toes, and one straight tail. Exact skin, colour, markings, behaviour and habitat moment remain comparative reconstruction hypotheses.

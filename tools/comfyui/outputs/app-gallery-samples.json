@@ -1,6 +1,6 @@
 {
   "taxa": 132,
-  "images": 1678,
+  "images": 1681,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -11873,12 +11873,36 @@
         "src": "assets/dinosaurs/alaskacephale-gangloffi-polar-forest-forage-ecology-imagegen-v1.png"
       },
       {
+        "kind": "anatomy review",
+        "title": "알라스카케팔레 v3 숯빛 황토 고위도 전신",
+        "body": "고위도 범람원 숲에서 비율을 읽을 수 있게 한 전신 해부 비교입니다. 두껍지만 과장되지 않은 둥근 돔, 작은 부리형 머리, 두 짧은 앞다리, 두 뒷다리, 단일 꼬리를 원본 크기로 확인했습니다. 색은 비교 재구성입니다.",
+        "source": "assets/dinosaurs/alaskacephale-gangloffi-charcoal-ochre-polar-fullbody-imagegen-v3.png",
+        "variant": "숯빛 황토 고위도 전신 이미지 생성 v3",
+        "src": "assets/dinosaurs/alaskacephale-gangloffi-charcoal-ochre-polar-fullbody-imagegen-v3.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "알라스카케팔레 v3 극지 하천 먹이활동",
+        "body": "초가을 프린스 크리크 하천가에서 양치식물을 뜯는 단일 개체의 환경 맥락입니다. 행동은 재구성이며, 한 개체의 둥근 돔, 팔다리, 꼬리를 원본 크기로 확인했습니다.",
+        "source": "assets/dinosaurs/alaskacephale-gangloffi-polar-stream-browse-ecology-imagegen-v3.png",
+        "variant": "극지 하천 먹이활동 이미지 생성 v3",
+        "src": "assets/dinosaurs/alaskacephale-gangloffi-polar-stream-browse-ecology-imagegen-v3.png"
+      },
+      {
         "kind": "review hold",
         "title": "알라스카케팔레 심야빛 등망토-구리 패널 변형",
         "body": "고위도 숲의 세로 그림자처럼 보이는 넓은 구리빛 옆구리 패널을 심야빛 등망토 아래에 두고, 목과 배는 서리빛으로 밝게 분리했습니다. 꼬리는 끝만 짙어지는 단색으로 유지해 고리무늬를 제거한 비교 후보입니다.",
         "source": "assets/dinosaurs/alaskacephale-gangloffi-midnight-copper-panels-pattern-imagegen-v2.png",
         "variant": "심야빛 등망토-구리 패널 이미지 생성 v2",
         "src": "assets/dinosaurs/alaskacephale-gangloffi-midnight-copper-panels-pattern-imagegen-v2.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "알라스카케팔레 v3 와인빛 세이지 돔 변이",
+        "body": "회색으로 풍화된 돔, 와인빛 어깨 망토, 세이지빛 옆구리와 옅은 엉덩이 갈매기 무늬만 분리한 비교 변이입니다. 기존 남색·구리 패널과 겹치지 않으며 꼬리는 단색으로 유지했습니다.",
+        "source": "assets/dinosaurs/alaskacephale-gangloffi-winered-sage-dome-variant-imagegen-v3.png",
+        "variant": "와인빛 세이지 돔 변이 이미지 생성 v3",
+        "src": "assets/dinosaurs/alaskacephale-gangloffi-winered-sage-dome-variant-imagegen-v3.png"
       }
     ],
     "foraminacephale-brevis": [

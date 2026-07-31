@@ -6528,6 +6528,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/alaskacephale-gangloffi-charcoal-ochre-polar-fullbody-imagegen-v3.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size inspection confirms a compact biped with a thick rounded cranial dome, small beak-like head, two forelimbs, two hind limbs, separate feet, and one continuous tail. The dome is not horned, spiked, or oversized.",
+        "reviewMethod": "Original-size anatomy inspection for cranial-dome profile, limb count, foot separation, tail continuity, body proportion, and species identity",
+        "reviewBatch": "2026-08-01-richness-batch-86-alaskacephale",
+        "reviewedAt": "2026-08-01T11:05:00.000Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/alaskacephale-gangloffi-polar-stream-browse-ecology-imagegen-v3.png",
+        "role": "interaction",
+        "reason": "Original-size inspection confirms one readable browsing animal with a thick rounded dome, two forelimbs, two hind limbs, and a single continuous tail. The habitat scene contains no unreviewable secondary animals.",
+        "reviewMethod": "Original-size anatomy and composition inspection for dome profile, limb count, tail continuity, full-body visibility, and single-animal scene integrity",
+        "reviewBatch": "2026-08-01-richness-batch-86-alaskacephale",
+        "reviewedAt": "2026-08-01T11:05:00.000Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/alaskacephale-gangloffi-winered-sage-dome-variant-imagegen-v3.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size inspection confirms a low thick rounded dome, small beak-like head, two forelimbs, two hind limbs, separate feet, and one tail. The wine-red and sage palette is distinct from the existing navy and copper treatment.",
+        "reviewMethod": "Original-size anatomy inspection for dome profile, limb count, foot separation, tail continuity, palette separation, and species identity",
+        "reviewBatch": "2026-08-01-richness-batch-86-alaskacephale",
+        "reviewedAt": "2026-08-01T11:05:00.000Z"
       }
     },
     "foraminacephale-brevis": {

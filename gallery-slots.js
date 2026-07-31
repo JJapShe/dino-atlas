@@ -5825,6 +5825,30 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "polar-forest",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/alaskacephale-gangloffi-charcoal-ochre-polar-fullbody-imagegen-v3.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "polar-forest",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/alaskacephale-gangloffi-polar-stream-browse-ecology-imagegen-v3.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "polar-forest",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/alaskacephale-gangloffi-winered-sage-dome-variant-imagegen-v3.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "polar-forest",
+      "expectedKind": "anatomy review"
     }
   ],
   "foraminacephale-brevis": [
