@@ -259,6 +259,13 @@ const HABITATS = {
     light: "neutral broken-cloud daylight, cool post-rain dawn, or restrained misty sunbreak with localized water reflection and red-mud bounce but no global teal, purple, or orange cast",
     backgroundPalette: ["#aab1ad", "#7d4e49", "#53675f"],
   },
+  "horseshoe-canyon-fluvial-coalplain": {
+    substrate: "pale fluvial sand and point bars, dark silty overbank surfaces, thin coal-rich layers, low cutbanks, shallow branching channels, and scattered driftwood",
+    vegetation: "scattered conifers, low broad-leaved angiosperm shrubs, ferns, and horsetails with broad open ground and no modern grass lawn, palms, or giant flowers",
+    moisture: "humid coastal-plain and fluvial-deltaic mosaic with fresh to brackish channels, wet backswamps, seasonally exposed bars, and variable drainage; exact water level and animal use remain hypotheses",
+    light: "neutral broken-cloud daylight, cool post-rain blue hour, or clear soft morning light with localized water reflection and no global orange, teal, purple, or sepia cast",
+    backgroundPalette: ["#a89a7d", "#4d585a", "#66704b"],
+  },
   "sharon-springs-seaway": {
     substrate: "dark organic-rich black shale, suspended fine sediment, and sparse inoceramid or ammonite shell debris",
     vegetation: "no tropical coral reef; only sparse period-appropriate marine growth when justified",
@@ -564,6 +571,7 @@ function habitatFor(dino, route) {
   else if (dino.id === "dimorphodon-macronyx") key = "blue-lias-coastal-lowland";
   else if (dino.id === "eudimorphodon-ranzii") key = "zorzino-carbonate-island";
   else if (dino.id === "darwinopterus-modularis") key = "linglongta-volcaniclastic-forest";
+  else if (dino.id === "pachyrhinosaurus-canadensis") key = "horseshoe-canyon-fluvial-coalplain";
   else if (dino.id === "velociraptor-mongoliensis") key = "gobi-arid";
   else if (dino.id === "parasaurolophus-walkeri") key = "dinosaur-park-coastal-plain";
   else if (dino.id === "styracosaurus-albertensis") key = "dinosaur-park-meander-belt";

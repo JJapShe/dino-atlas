@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-31T00:36:26.533Z",
-  "reviewBatch": "2026-07-31-richness-six-slot-batch-69",
-  "reviewMethod": "Batch 69 Barsbold et al. 2000 Nomingia holotype tail, pelvis, and hindlimb review; Funston et al. 2021 Elmisaurus synonymy and evidence-boundary review; six-image contact sheet; dedicated enlarged hand, foot, tail, and secondary-animal crops; and original-size inspection for one head and torso, visible three-fingered near hands, paired hindlimbs and feet, one pelvis-origin tail, restrained inferred terminal fan, stable phenotype, Bugin Tsav point-bar context, spatially separated secondary animals, cautious behavior language, role balance, and artifact gates.",
-  "targetSlots": 699,
+  "generatedAt": "2026-07-31T02:04:21.268Z",
+  "reviewBatch": "2026-07-31-richness-six-slot-batch-70",
+  "reviewMethod": "Batch 70 Sternberg 1950 original description; Fiorillo and Tykoski 2012 and 2013 boss, frill, and ontogeny comparison; Loewen et al. 2024 frill-position comparison; licensed skull and frill references; six-image contact sheet; enlarged head, foot, tail, and secondary-animal crops; and original-size inspection for one normal visible eye, matte nostril, broad low fused nasal and supraorbital boss complex, conservative skin-covered frill, P. canadensis P2/P3 ornament, four limbs and feet, one tail, stable phenotype, Horseshoe Canyon setting, spatial separation, cautious ecology language, role balance, and artifact gates.",
+  "targetSlots": 702,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -5056,30 +5056,57 @@
     "pachyrhinosaurus-canadensis": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/pachyrhinosaurus-canadensis-nasalboss-imagegen-v1.png",
+        "source": "assets/dinosaurs/pachyrhinosaurus-canadensis-fused-boss-p3-representative-imagegen-v3.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The daylight three-quarter whole-body view replaces the former ball-shaped boss with a broad low rough nasal and supraorbital boss complex, preserves a short rounded skin-covered frill with the selected P3 pair, and resolves four limbs, four feet, and one tail.",
+        "reviewMethod": "Batch 70 original-size full frame plus head, near-forefoot, hindfoot, pelvis, and tail inspection against the P. canadensis craniofacial and appendage gates.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-70",
+        "reviewedAt": "2026-07-31T02:04:21.268Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/pachyrhinosaurus-canadensis-umber-teal-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/pachyrhinosaurus-canadensis-spruce-oxblood-bluehour-pattern-imagegen-v3.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The reverse-facing blue-hour view keeps the rebuilt boss and frill silhouette while separating deep spruce, muted lichen, oxblood, ochre, and charcoal fields without stripes, rings, or fluorescent accents.",
+        "reviewMethod": "Batch 70 original-size inspection of craniofacial silhouette, visible appendages, eye and nostril separation, pattern continuity, and distinction from the daylight representative.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-70",
+        "reviewedAt": "2026-07-31T02:04:21.268Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/pachyrhinosaurus-canadensis-floodplain-herd-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/pachyrhinosaurus-canadensis-horseshoe-canyon-coalplain-habitat-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "A wide coal-rich floodplain, conifer margin, fern cover, driftwood, and shallow channels add a distinct Horseshoe Canyon setting while the unobscured primary animal retains the locked boss, frill, body, limb, and tail plan.",
+        "reviewMethod": "Batch 70 original-size inspection of the primary animal and environmental elements; the scene is retained as habitat context without claiming a specific behavior or exact locality.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-70",
+        "reviewedAt": "2026-07-31T02:04:21.268Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/pachyrhinosaurus-canadensis-fused-boss-p2-p3-head-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The high three-quarter anatomy view isolates the broad rough nasal boss, closely adjacent low supraorbital bosses, narrow intervening grooves, short skin-covered frill, large lateral P3 pair, and smaller inward-curving P2 pair without inventing a median horn.",
+        "reviewMethod": "Batch 70 original-size craniofacial inspection against the licensed skull cast and frill-position diagram; accepted as a soft-tissue reconstruction aid, not a one-to-one skeletal measurement plate.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-70",
+        "reviewedAt": "2026-07-31T02:04:21.268Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/pachyrhinosaurus-canadensis-channel-separated-albertosaurus-context-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "The primary Pachyrhinosaurus remains fully readable on the near bank while a distant Albertosaurus is kept across a channel, adding regionally plausible coexistence context without contact, attack, or predator-prey outcome claims.",
+        "reviewMethod": "Batch 70 original-size primary and secondary animal inspection for spatial separation, readable counts, silhouette distinction, phenotype continuity, and cautious coexistence language.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-70",
+        "reviewedAt": "2026-07-31T02:04:21.268Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/pachyrhinosaurus-canadensis-separated-conspecific-terraces-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Two adults remain independently readable on channel-separated terraces with matching species cues and stable palette; the frame records proximity only and does not infer mating, kinship, hierarchy, or coordinated behavior.",
+        "reviewMethod": "Batch 70 original-size per-animal head, limb, foot, pelvis, and tail inspection with driftwood and channel separation checked for fusion or duplicated appendages.",
+        "reviewBatch": "2026-07-31-richness-six-slot-batch-70",
+        "reviewedAt": "2026-07-31T02:04:21.268Z"
       }
     },
     "chasmosaurus-belli": {

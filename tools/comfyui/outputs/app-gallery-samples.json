@@ -1,6 +1,6 @@
 {
   "taxa": 132,
-  "images": 1610,
+  "images": 1616,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -10316,27 +10316,75 @@
     "pachyrhinosaurus-canadensis": [
       {
         "kind": "count-level pass",
-        "title": "파키리노사우루스 코 보스 대표 후보 v1",
-        "body": "내장 이미지 생성 대표 후보입니다. 파키리노사우루스 정체성 게이트인 긴 코뿔 대신 두껍고 거친 코 보스, 작은 눈 위 보스, 절제된 가장자리 장식이 있는 짧고 단단한 두개골 부착 프릴, 토로사우루스식 프릴 구멍 없음, 낮은 각룡류 몸, 보이는 긴 꼬리, 마른 지면의 발굽 아닌 발가락을 보존합니다. 정확한 프릴 장식 형태와 발가락 해부는 검수 상태로 둡니다.",
-        "source": "assets/dinosaurs/pachyrhinosaurus-canadensis-nasalboss-imagegen-v1.png",
-        "variant": "코 보스 이미지 생성 v1",
-        "src": "assets/dinosaurs/pachyrhinosaurus-canadensis-nasalboss-imagegen-v1.png"
+        "title": "파키리노사우루스 v3 융합 보스·P2/P3 대표",
+        "body": "호스슈캐니언 점사주에 선 성체 한 개체입니다. 낮고 넓은 코 보스, 좁은 홈으로 거의 맞닿은 눈 위 보스, 한쪽에 정상 위치의 눈 하나와 작은 무광 콧구멍 하나, 피부로 이어진 짧은 프릴, 후외측의 큰 P3 한 쌍과 중앙 가까운 작은 안굽이 갈고리 한 쌍을 원본 크기로 확인했습니다. 두 앞다리·두 뒷다리·분리된 네 발·골반에서 이어지는 한 꼬리가 보이며, 앞발의 축소 바깥 발가락 수는 원근상 단정하지 않습니다.",
+        "source": "assets/dinosaurs/pachyrhinosaurus-canadensis-fused-boss-p3-representative-imagegen-v3.png",
+        "variant": "융합 보스와 P2/P3 대표 이미지 생성 v3",
+        "src": "assets/dinosaurs/pachyrhinosaurus-canadensis-fused-boss-p3-representative-imagegen-v3.png"
       },
       {
         "kind": "anatomy review",
-        "title": "파키리노사우루스 범람원 무리 생태 장면 v1",
-        "body": "후기 백악기 범람원에서 주 개체 파키리노사우루스와 먼 무리가 함께 있는 생태 장면입니다. 무리 전체에서 긴 코뿔 없는 코 보스 얼굴 실루엣을 유지하지만, 여러 개체와 젖은 지면 때문에 정확한 발가락과 프릴 가장자리 검수는 부차화되어 해부학 검수로 둡니다.",
-        "source": "assets/dinosaurs/pachyrhinosaurus-canadensis-floodplain-herd-ecology-imagegen-v1.png",
-        "variant": "범람원 무리 생태 이미지 생성 v1",
-        "src": "assets/dinosaurs/pachyrhinosaurus-canadensis-floodplain-herd-ecology-imagegen-v1.png"
+        "title": "파키리노사우루스 v2 호스슈캐니언 석탄질 하천평야",
+        "body": "얕은 분기 수로, 옅은 모래 점사주, 어두운 실트·석탄질 층, 유목과 소철이 아닌 침엽수·속씨식물 관목·양치·속새를 넓게 보여 주는 서식지 장면입니다. 한 개체의 낮은 보스 머리, P2/P3 프릴 배열, 네 다리·네 발·한 꼬리와 정상 눈·작은 콧구멍을 확인했습니다. 정확한 식생 배치·수위·날씨는 지층 환경을 바탕으로 한 복원입니다.",
+        "source": "assets/dinosaurs/pachyrhinosaurus-canadensis-horseshoe-canyon-coalplain-habitat-imagegen-v2.png",
+        "variant": "호스슈캐니언 석탄질 하천평야 이미지 생성 v2",
+        "src": "assets/dinosaurs/pachyrhinosaurus-canadensis-horseshoe-canyon-coalplain-habitat-imagegen-v2.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "파키리노사우루스 v1 융합 보스·P2/P3 머리 해부",
+        "body": "높은 사선에서 콧등을 넓게 덮는 낮은 코 보스, 거의 맞닿은 눈 위 보스, 정상 위치의 눈 하나, 피부로 이어진 짧은 프릴과 좌우 대응하는 큰 P3 한 쌍·작은 안굽이 갈고리 한 쌍을 크게 확인합니다. 두개골 보스와 프릴 장식은 직접·비교 골격 근거이고 색·피부·각질 길이는 생체 복원입니다.",
+        "source": "assets/dinosaurs/pachyrhinosaurus-canadensis-fused-boss-p2-p3-head-anatomy-imagegen-v1.png",
+        "variant": "융합 보스와 P2/P3 머리 해부 이미지 생성 v1",
+        "src": "assets/dinosaurs/pachyrhinosaurus-canadensis-fused-boss-p2-p3-head-anatomy-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "파키리노사우루스 v1 알베르토사우루스 수로 분리 동물상",
+        "body": "전경 파키리노사우루스와 맞은편 둑의 작은 알베르토사우루스를 넓은 수로로 완전히 분리했습니다. 전경 개체의 한 눈·한 콧구멍, 보스·프릴 배열, 네 다리·네 발·한 꼬리를 확인하고, 배경 포식자는 한 머리·두 뒷다리·한 꼬리의 먼 실루엣만 주장합니다. 같은 호스슈캐니언 동물상 맥락이며 실제 조우·추격·포식 관계를 뜻하지 않습니다.",
+        "source": "assets/dinosaurs/pachyrhinosaurus-canadensis-channel-separated-albertosaurus-context-imagegen-v1.png",
+        "variant": "알베르토사우루스 수로 분리 동물상 이미지 생성 v1",
+        "src": "assets/dinosaurs/pachyrhinosaurus-canadensis-channel-separated-albertosaurus-context-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "파키리노사우루스 v1 분리된 두 성체 근접 맥락",
+        "body": "같은 형태와 색 규칙의 성체 두 개체를 얕은 측수로와 긴 유목으로 서로 다른 모래 단에 분리했습니다. 전경 개체의 한 눈, 보스·프릴, 네 다리·네 발·한 꼬리를 확인하며 배경 개체는 독립된 한 몸과 네 다리·한 꼬리의 원거리 실루엣만 사용합니다. 함께 보이는 가설 장면일 뿐 무리·짝·성별·구애·우열·이동을 뜻하지 않습니다.",
+        "source": "assets/dinosaurs/pachyrhinosaurus-canadensis-separated-conspecific-terraces-imagegen-v1.png",
+        "variant": "분리된 두 성체 근접 맥락 이미지 생성 v1",
+        "src": "assets/dinosaurs/pachyrhinosaurus-canadensis-separated-conspecific-terraces-imagegen-v1.png"
       },
       {
         "kind": "review hold",
-        "title": "파키리노사우루스 엄버-청록 무늬 변형 v1",
-        "body": "청록 회색 등, 따뜻한 엄버색 옆구리, 숯빛 안장무늬, 크림-황갈색 코 보스, 구리색 볼 패치, 프릴 반점, 어두운 꼬리 띠를 가진 색상/무늬 변형입니다. 프릴 가장자리 혹이 더 장식적으로 읽혀 켄트로사우루스와 스티라코사우루스 드리프트 비교가 필요하므로 대표 아래에 둡니다.",
+        "title": "파키리노사우루스 v3 가문비회색·적갈색 푸른시간 무늬",
+        "body": "대표와 같은 몸·머리·프릴 배열을 반대 방향의 비 온 뒤 푸른시간 보행으로 보여 줍니다. 가문비빛 청회색 등, 지의류색 옆구리, 옅은 사암색 아랫면, 절제된 적갈색 볼·프릴 패치와 풍화 황토색 보스를 유지하되 넓고 불규칙한 색면만 바꿨습니다. 정상 눈 하나와 작은 콧구멍, 네 다리·네 발·한 꼬리를 확대 확인했습니다.",
+        "source": "assets/dinosaurs/pachyrhinosaurus-canadensis-spruce-oxblood-bluehour-pattern-imagegen-v3.png",
+        "variant": "가문비회색·적갈색 푸른시간 무늬 이미지 생성 v3",
+        "src": "assets/dinosaurs/pachyrhinosaurus-canadensis-spruce-oxblood-bluehour-pattern-imagegen-v3.png"
+      },
+      {
+        "kind": "reject reference",
+        "title": "파키리노사우루스 기존 둥근 코 보스 대표 탈락 기록",
+        "body": "코 보스가 콧등을 넓게 덮는 낮은 구조가 아니라 밝은 둥근 공처럼 돌출되고, P. canadensis의 큰 P3 한 쌍과 작은 안굽이 갈고리 한 쌍 대신 낮은 프릴 가장자리 혹만 반복되어 종 판정 기준을 통과하지 못했습니다.",
+        "source": "assets/dinosaurs/pachyrhinosaurus-canadensis-nasalboss-imagegen-v1.png",
+        "variant": "둥근 공형 보스와 종 비특이 프릴 탈락 참고",
+        "src": "assets/dinosaurs/pachyrhinosaurus-canadensis-nasalboss-imagegen-v1.png"
+      },
+      {
+        "kind": "reject reference",
+        "title": "파키리노사우루스 기존 엄버·청록 무늬 탈락 기록",
+        "body": "둥근 밝은 코 공, 구슬처럼 반복된 프릴 가장자리, 사라진 P2/P3 배열과 규칙적인 꼬리 띠 때문에 같은 종의 안정적 무늬 변이로 사용할 수 없습니다.",
         "source": "assets/dinosaurs/pachyrhinosaurus-canadensis-umber-teal-pattern-imagegen-v1.png",
-        "variant": "엄버-청록 무늬 이미지 생성 v1",
+        "variant": "둥근 보스와 구슬 프릴 무늬 탈락 참고",
         "src": "assets/dinosaurs/pachyrhinosaurus-canadensis-umber-teal-pattern-imagegen-v1.png"
+      },
+      {
+        "kind": "reject reference",
+        "title": "파키리노사우루스 기존 범람원 무리 탈락 기록",
+        "body": "전경과 배경 개체에 둥근 밝은 코 공과 종 비특이 프릴이 반복되고, 배경 여러 개체의 머리·다리·꼬리 수를 원본 크기에서 안정적으로 검수하기 어려워 무리 생태 근거로 사용하지 않습니다.",
+        "source": "assets/dinosaurs/pachyrhinosaurus-canadensis-floodplain-herd-ecology-imagegen-v1.png",
+        "variant": "종 비특이 다개체 무리 탈락 참고",
+        "src": "assets/dinosaurs/pachyrhinosaurus-canadensis-floodplain-herd-ecology-imagegen-v1.png"
       }
     ],
     "chasmosaurus-belli": [

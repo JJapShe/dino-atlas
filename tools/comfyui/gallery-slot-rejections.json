@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-31-richness-six-slot-batch-69",
+  "reviewBatch": "2026-07-31-richness-six-slot-batch-70",
   "rejectedSources": {
     "assets/dinosaurs/nyctosaurus-gracilis-niobrara-forked-crest-imagegen-v1.png": {
       "reason": "Free clawed appendages project from the wing margins, limb and membrane topology is confused, and a genus-level mature branching crest is incorrectly fixed onto the N. gracilis representative."
@@ -1417,7 +1417,16 @@
     },
     "assets/dinosaurs/nomingia-gobiensis-bugin-tsav-forage-ecology-imagegen-v1.png": {
       "reason": "Five repetitive long-necked bird-like animals, hidden or overlapping appendages, long generic tails, and an unsupported feeding-group narrative prevent independent Nomingia identity and count review."
+    },
+    "assets/dinosaurs/pachyrhinosaurus-canadensis-nasalboss-imagegen-v1.png": {
+      "reason": "The former representative turns the nasal boss into a bright rounded ball and replaces the diagnostic low fused nasal and supraorbital bosses plus P. canadensis frill ornament with generic bead-like knobs."
+    },
+    "assets/dinosaurs/pachyrhinosaurus-canadensis-umber-teal-pattern-imagegen-v1.png": {
+      "reason": "The former pattern image repeats a globular horn-like nasal boss, generic radial frill spikes, and a rhino-like head profile instead of the broad low rough boss complex and restrained P2/P3 arrangement required for P. canadensis."
+    },
+    "assets/dinosaurs/pachyrhinosaurus-canadensis-floodplain-herd-ecology-imagegen-v1.png": {
+      "reason": "The herd frame multiplies the same rounded ball-shaped boss and unsupported generic frill knobs across several partially obscured animals, so neither species identity nor independent appendage counts can be reviewed reliably."
     }
   },
-  "generatedAt": "2026-07-31T00:36:26.533Z"
+  "generatedAt": "2026-07-31T02:04:21.268Z"
 }
