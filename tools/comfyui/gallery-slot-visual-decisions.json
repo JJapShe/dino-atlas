@@ -7088,6 +7088,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/stygimoloch-spinifer-low-dome-rear-spikes-fullbody-identity-imagegen-v3.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size inspection confirms a low dome, two attached posterior skull spikes, two forelimbs, two hind limbs, visible feet, and one continuous tail.",
+        "reviewMethod": "Original-size inspection",
+        "reviewBatch": "2026-08-01-richness-batch-94-stygimoloch",
+        "reviewedAt": "2026-08-01T18:00:00.000Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/stygimoloch-spinifer-hell-creek-horsetail-browse-ecology-imagegen-v3.png",
+        "role": "interaction",
+        "reason": "Original-size inspection confirms one full animal with a low dome, rearward spikes, two forelimbs, two hind limbs, visible feet, and one tail in a non-graphic browse scene.",
+        "reviewMethod": "Original-size inspection",
+        "reviewBatch": "2026-08-01-richness-batch-94-stygimoloch",
+        "reviewedAt": "2026-08-01T18:00:00.000Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/stygimoloch-spinifer-hell-creek-channel-growth-stage-ecology-imagegen-v3.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size inspection confirms a full adult with a low dome, rearward spikes, two forelimbs, two hind limbs, visible feet, and one unbranched tail; the smaller animal is separate across the channel.",
+        "reviewMethod": "Original-size inspection",
+        "reviewBatch": "2026-08-01-richness-batch-94-stygimoloch",
+        "reviewedAt": "2026-08-01T18:00:00.000Z"
       }
     },
     "platytholus-clemensi": {

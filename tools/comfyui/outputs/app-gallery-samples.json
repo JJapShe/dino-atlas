@@ -1,6 +1,6 @@
 {
   "taxa": 132,
-  "images": 1698,
+  "images": 1701,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -12379,6 +12379,30 @@
         "source": "assets/dinosaurs/stygimoloch-spinifer-misty-backwater-pair-ecology-imagegen-v2.png",
         "variant": "안개 낀 물가 비접촉 대치 생태 이미지 생성 v2",
         "src": "assets/dinosaurs/stygimoloch-spinifer-misty-backwater-pair-ecology-imagegen-v2.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Stygimoloch spinifer v3 low dome rear spikes",
+        "body": "Original-size inspection confirms a low dome, two attached posterior skull spikes, two forelimbs, two hind limbs, visible feet, and one continuous tail.",
+        "source": "assets/dinosaurs/stygimoloch-spinifer-low-dome-rear-spikes-fullbody-identity-imagegen-v3.png",
+        "variant": "Hell Creek low dome rear spikes full body v3",
+        "src": "assets/dinosaurs/stygimoloch-spinifer-low-dome-rear-spikes-fullbody-identity-imagegen-v3.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Stygimoloch spinifer v3 horsetail browse",
+        "body": "Original-size inspection confirms one full animal with a low dome, rearward spikes, visible feet, two forelimbs, two hind limbs, and one tail in a non-graphic browse scene.",
+        "source": "assets/dinosaurs/stygimoloch-spinifer-hell-creek-horsetail-browse-ecology-imagegen-v3.png",
+        "variant": "Hell Creek horsetail browse v3",
+        "src": "assets/dinosaurs/stygimoloch-spinifer-hell-creek-horsetail-browse-ecology-imagegen-v3.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Stygimoloch spinifer v3 channel growth stage",
+        "body": "Original-size inspection confirms a full adult with a low dome, rearward spikes, two forelimbs, two hind limbs, visible feet, and one unbranched tail; the smaller animal is separate across the channel.",
+        "source": "assets/dinosaurs/stygimoloch-spinifer-hell-creek-channel-growth-stage-ecology-imagegen-v3.png",
+        "variant": "Hell Creek channel growth stage v3",
+        "src": "assets/dinosaurs/stygimoloch-spinifer-hell-creek-channel-growth-stage-ecology-imagegen-v3.png"
       },
       {
         "kind": "review hold",
