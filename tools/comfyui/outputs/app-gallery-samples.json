@@ -1,6 +1,6 @@
 {
   "taxa": 132,
-  "images": 1684,
+  "images": 1687,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -11973,12 +11973,36 @@
         "src": "assets/dinosaurs/colepiocephale-lambei-drychannel-forage-ecology-imagegen-v1.png"
       },
       {
+        "kind": "anatomy review",
+        "title": "콜레피오케팔레 v3 청록 점토빛 낮은 돔 전신",
+        "body": "포어모스트 하안에서 작은 체급을 읽는 전신 해부 비교입니다. 낮고 넓은 돔 지붕, 작은 부리형 머리, 두 짧은 앞다리, 두 뒷다리, 단일 꼬리를 원본 크기로 확인했습니다.",
+        "source": "assets/dinosaurs/colepiocephale-lambei-teal-clay-lowdome-fullbody-imagegen-v3.png",
+        "variant": "청록 점토빛 낮은 돔 전신 이미지 생성 v3",
+        "src": "assets/dinosaurs/colepiocephale-lambei-teal-clay-lowdome-fullbody-imagegen-v3.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "콜레피오케팔레 v3 새벽 물가 먹이활동",
+        "body": "고요한 포어모스트 물가에서 양치식물을 뜯는 단일 개체의 환경 맥락입니다. 행동은 재구성이며, 한 개체의 낮은 돔과 팔다리·꼬리를 원본 크기로 확인했습니다.",
+        "source": "assets/dinosaurs/colepiocephale-lambei-dawn-bank-browse-ecology-imagegen-v3.png",
+        "variant": "새벽 물가 먹이활동 이미지 생성 v3",
+        "src": "assets/dinosaurs/colepiocephale-lambei-dawn-bank-browse-ecology-imagegen-v3.png"
+      },
+      {
         "kind": "review hold",
         "title": "콜레피오케팔레 자두색 등-옥빛 목-엉덩이 초승달 변형",
         "body": "낮고 넓은 돔과 짧은 몸통을 유지하면서 자두색 등망토, 옥빛 목 패치, 엉덩이의 단일 크림 초승달을 분리했습니다. 꼬리는 단색으로 두어 기존의 점박이·꼬리 띠 반복을 피한 비교 후보입니다.",
         "source": "assets/dinosaurs/colepiocephale-lambei-plum-jade-hip-crescent-pattern-imagegen-v2.png",
         "variant": "자두색 등-옥빛 목-엉덩이 초승달 이미지 생성 v2",
         "src": "assets/dinosaurs/colepiocephale-lambei-plum-jade-hip-crescent-pattern-imagegen-v2.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "콜레피오케팔레 v3 스모크 블루 벽돌빛 초승달 변이",
+        "body": "스모크 블루 돔, 벽돌빛 목덜미, 옅은 올리브 베이지 몸통과 엉덩이의 작은 초승달만 분리한 비교 변이입니다. 기존 자두·옥빛 처리와 겹치지 않으며 꼬리는 단색입니다.",
+        "source": "assets/dinosaurs/colepiocephale-lambei-smokeblue-brick-crescent-variant-imagegen-v3.png",
+        "variant": "스모크 블루 벽돌빛 초승달 변이 이미지 생성 v3",
+        "src": "assets/dinosaurs/colepiocephale-lambei-smokeblue-brick-crescent-variant-imagegen-v3.png"
       }
     ],
     "sphaerotholus-goodwini": [

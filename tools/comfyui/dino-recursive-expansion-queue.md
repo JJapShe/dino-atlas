@@ -4737,6 +4737,11 @@ For each added taxon, produce:
 
 ## Recent Expansion Notes
 
+- `Colepiocephale lambei six-image low-broad-dome expansion 2026-08-01`
+  - Added teal-clay whole-body anatomy, smoke-blue and brick-red comparison pattern, and a single-animal dawn-bank ecology frame to the existing three-image set.
+  - Original-size review confirms a very small lightly built biped, low broad dome roof, two forelimbs, two hind limbs, clear feet, and one continuous tail in all additions. The ecology frame does not claim an interaction or companion.
+  - Built-in ImageGen source mapping: anatomy `exec-6723a8c7-a3a9-4e9d-a12d-646a746b4820.png`, pattern `exec-e2c481d0-8726-4602-8798-b1c30e82d40e.png`, ecology `exec-f1c1f7cc-3343-4a81-9648-15b2a7a7f3e4.png`; only species-prefixed project copies are used by the app.
+
 - `Foraminacephale brevis six-image low-dome expansion 2026-08-01`
   - Kept the existing Dinosaur Park representative, blue-gray moss pattern, and cutbank display reference. Added a chestnut-sand whole-body anatomy frame, lavender-mulberry hip-crescent comparison pattern, and a single-animal cutbank horsetail browsing ecology frame.
   - The direct gate keeps a small lightly built biped with a low rounded dome, short beak-like head, two forelimbs, two hind limbs, one continuous narrow tail, and no high dome, horns, spikes, frill, or oversized Pachycephalosaurus drift. Exact colours and browsing behavior remain comparative reconstructions.

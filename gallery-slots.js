@@ -5925,6 +5925,30 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/colepiocephale-lambei-teal-clay-lowdome-fullbody-imagegen-v3.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/colepiocephale-lambei-dawn-bank-browse-ecology-imagegen-v3.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/colepiocephale-lambei-smokeblue-brick-crescent-variant-imagegen-v3.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
     }
   ],
   "sphaerotholus-goodwini": [

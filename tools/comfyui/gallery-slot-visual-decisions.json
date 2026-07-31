@@ -6640,6 +6640,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/colepiocephale-lambei-teal-clay-lowdome-fullbody-imagegen-v3.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size inspection confirms a very small biped with a low broad dome roof, small beak-like head, two forelimbs, two hind limbs, separated feet, and one continuous tail. The dome is not high, horned, or spiked.",
+        "reviewMethod": "Original-size anatomy inspection for low-dome profile, limb count, foot separation, tail continuity, small body scale, and species identity",
+        "reviewBatch": "2026-08-01-richness-batch-88-colepiocephale",
+        "reviewedAt": "2026-08-01T13:00:00.000Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/colepiocephale-lambei-dawn-bank-browse-ecology-imagegen-v3.png",
+        "role": "interaction",
+        "reason": "Original-size inspection confirms one readable browsing animal with a low broad dome roof, two forelimbs, two hind limbs, and a single continuous tail. No secondary animal is present.",
+        "reviewMethod": "Original-size anatomy and composition inspection for low-dome profile, limb count, tail continuity, full-body visibility, and single-animal scene integrity",
+        "reviewBatch": "2026-08-01-richness-batch-88-colepiocephale",
+        "reviewedAt": "2026-08-01T13:00:00.000Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/colepiocephale-lambei-smokeblue-brick-crescent-variant-imagegen-v3.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size inspection confirms a low broad dome roof, two forelimbs, two hind limbs, separated feet, and one tail. The smoke-blue and brick-red palette differs from the existing plum and jade treatment.",
+        "reviewMethod": "Original-size anatomy inspection for low-dome profile, limb count, foot separation, tail continuity, palette separation, and species identity",
+        "reviewBatch": "2026-08-01-richness-batch-88-colepiocephale",
+        "reviewedAt": "2026-08-01T13:00:00.000Z"
       }
     },
     "sphaerotholus-goodwini": {
