@@ -888,6 +888,9 @@ body[data-active-view="atlas"] .metric span {
   left: 0;
   top: 0;
   --phylo-grid-x: 1258px;
+  --phylo-taxon-width: 212px;
+  --phylo-group-width: 188px;
+  --phylo-node-height: 98px;
   width: 2060px;
   height: 1260px;
   transform-origin: 0 0;
@@ -1138,29 +1141,29 @@ body[data-active-view="atlas"] .metric span {
   align-content: center;
   gap: 2px;
   min-width: 0;
-  height: 86px;
-  padding: 9px 12px 10px 15px;
+  height: var(--phylo-node-height);
+  padding: 11px 14px 12px 17px;
   border: 1px solid rgba(52, 69, 89, 0.95);
   border-radius: 8px;
   background: rgba(15, 22, 31, 0.94);
   color: var(--muted);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.18);
 }
 
 .map-node.group {
   z-index: 6;
-  width: 174px;
+  width: var(--phylo-group-width);
   border-color: rgba(230, 196, 106, 0.36);
   background: rgba(19, 23, 30, 0.98);
   box-shadow:
     inset 3px 0 0 rgba(230, 196, 106, 0.32),
-    0 14px 28px rgba(0, 0, 0, 0.24);
+    0 8px 18px rgba(0, 0, 0, 0.22);
   cursor: pointer;
 }
 
 .map-node.taxon {
   z-index: 1;
-  width: 184px;
+  width: var(--phylo-taxon-width);
   border-color: var(--taxon-border, rgba(52, 69, 89, 0.95));
   background:
     linear-gradient(135deg, var(--taxon-wash, rgba(85, 214, 190, 0.3)), transparent 58%),
@@ -1169,7 +1172,7 @@ body[data-active-view="atlas"] .metric span {
     var(--taxon-bg, rgba(15, 22, 31, 0.94));
   box-shadow:
     inset 0 0 0 1px var(--taxon-wash, rgba(85, 214, 190, 0.18)),
-    0 14px 28px rgba(0, 0, 0, 0.18);
+    0 7px 16px rgba(0, 0, 0, 0.18);
   cursor: pointer;
 }
 
@@ -1204,7 +1207,7 @@ body[data-active-view="atlas"] .metric span {
   box-shadow:
     inset 0 0 0 2px rgba(238, 248, 245, 0.72),
     0 0 0 2px var(--taxon-accent, var(--accent)),
-    0 16px 34px rgba(0, 0, 0, 0.34);
+    0 10px 22px rgba(0, 0, 0, 0.3);
 }
 
 .map-node.focus-matched {
@@ -1217,7 +1220,7 @@ body[data-active-view="atlas"] .metric span {
   box-shadow:
     inset 0 0 0 1px var(--taxon-wash, rgba(85, 214, 190, 0.24)),
     0 0 0 2px rgba(238, 248, 245, 0.14),
-    0 14px 32px rgba(0, 0, 0, 0.28);
+    0 9px 20px rgba(0, 0, 0, 0.26);
 }
 
 .dino-card.focus-matched {
@@ -1415,6 +1418,28 @@ body.map-expanded-open {
 .map-panel.map-expanded .map-workspace,
 .map-panel.map-expanded .phylo-viewport {
   min-height: 0;
+}
+
+.map-panel.map-expanded .map-toolbar {
+  grid-template-columns: minmax(0, 1fr) auto;
+  min-height: 56px;
+  padding-block: 7px;
+}
+
+.map-panel.map-expanded .map-toolbar-heading {
+  display: none;
+}
+
+.map-panel.map-expanded .map-era-controls {
+  justify-content: flex-start;
+}
+
+.map-panel.map-expanded .map-workspace {
+  grid-template-rows: minmax(0, 1fr) 38px;
+}
+
+.map-panel.map-expanded .map-navigator {
+  height: 38px;
 }
 
 .map-panel.map-expanded #toggleAtlasSidebar {

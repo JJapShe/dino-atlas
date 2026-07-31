@@ -3567,21 +3567,24 @@ const eras = [
 ];
 
 const phyloLayoutMetrics = Object.freeze({
-  taxonWidth: 184,
-  groupWidth: 174,
-  nodeHeight: 86,
-  taxonColumnGap: 30,
-  taxonRowGap: 24,
+  taxonWidth: 212,
+  groupWidth: 188,
+  nodeHeight: 98,
+  taxonColumnGap: 38,
+  taxonRowGap: 32,
   treeStartX: 40,
-  groupColumnGap: 38,
-  groupRailGap: 196,
-  canvasPadding: 76,
-  groupVerticalGap: 30,
+  groupColumnGap: 44,
+  groupRailGap: 236,
+  canvasPadding: 88,
+  groupVerticalGap: 38,
+  preferredEraRows: 5,
+  minimumSharedColumns: 8,
+  maximumSharedColumns: 32,
 });
 
 const canvasSize = {
-  width: 1960,
-  height: 720,
+  width: 2280,
+  height: 840,
 };
 
 const phyloNodes = [
@@ -20608,21 +20611,21 @@ function resolvePhyloNodeCollisions(nodes, filteredIds) {
 
 const phyloEraPackLayouts = {
   triassic: {
-    minimumColumns: 4,
-    topPad: 116,
-    bottomPad: 32,
+    minimumColumns: 6,
+    topPad: 132,
+    bottomPad: 40,
     rowGap: phyloLayoutMetrics.taxonRowGap,
   },
   jurassic: {
-    minimumColumns: 4,
-    topPad: 116,
-    bottomPad: 32,
+    minimumColumns: 6,
+    topPad: 132,
+    bottomPad: 40,
     rowGap: phyloLayoutMetrics.taxonRowGap,
   },
   cretaceous: {
-    minimumColumns: 4,
-    topPad: 116,
-    bottomPad: 32,
+    minimumColumns: 6,
+    topPad: 132,
+    bottomPad: 40,
     rowGap: phyloLayoutMetrics.taxonRowGap,
   },
 };
@@ -20676,9 +20679,17 @@ function getScalableEraPackColumns(taxaCountByEra) {
     1,
     ...eras.map((era) => taxaCountByEra.get(era.id) || 0),
   );
-  const minimumColumns = Math.min(8, maximumTaxaCount);
-  const maximumColumns = Math.min(24, maximumTaxaCount);
-  const contentDrivenColumns = Math.ceil(Math.sqrt(maximumTaxaCount * 1.6));
+  const minimumColumns = Math.min(
+    phyloLayoutMetrics.minimumSharedColumns,
+    maximumTaxaCount,
+  );
+  const maximumColumns = Math.min(
+    phyloLayoutMetrics.maximumSharedColumns,
+    maximumTaxaCount,
+  );
+  const contentDrivenColumns = Math.ceil(
+    maximumTaxaCount / phyloLayoutMetrics.preferredEraRows,
+  );
   return Math.max(
     1,
     Math.min(maximumColumns, Math.max(minimumColumns, contentDrivenColumns)),
@@ -20701,9 +20712,9 @@ function buildDynamicPhyloEras(nodes, filteredIds, taxonGridX) {
   let top = 0;
   return eras.map((era) => {
     const layout = phyloEraPackLayouts[era.id] || {
-      minimumColumns: 4,
-      topPad: 116,
-      bottomPad: 32,
+      minimumColumns: 6,
+      topPad: 132,
+      bottomPad: 40,
       rowGap: phyloLayoutMetrics.taxonRowGap,
     };
     const taxaCount = taxaCountByEra.get(era.id) || 0;
@@ -20988,6 +20999,9 @@ function applyPhyloCanvasSize() {
   canvas.style.width = `${currentPhyloLayout.width}px`;
   canvas.style.height = `${currentPhyloLayout.height}px`;
   canvas.style.setProperty("--phylo-grid-x", `${currentPhyloLayout.taxonGridX}px`);
+  canvas.style.setProperty("--phylo-taxon-width", `${phyloLayoutMetrics.taxonWidth}px`);
+  canvas.style.setProperty("--phylo-group-width", `${phyloLayoutMetrics.groupWidth}px`);
+  canvas.style.setProperty("--phylo-node-height", `${phyloLayoutMetrics.nodeHeight}px`);
   lines.setAttribute("viewBox", `0 0 ${currentPhyloLayout.width} ${currentPhyloLayout.height}`);
 }
 
@@ -21357,29 +21371,29 @@ function renderMapScopeControls() {
 
 function getReadableMapScale() {
   const viewport = $("#mapViewport");
-  if (!viewport) return 0.86;
+  if (!viewport) return 0.94;
   const targetCardWidth = state.map.expanded
     ? state.map.inspectorCollapsed
-      ? 196
-      : 188
+      ? 224
+      : 214
     : viewport.clientWidth < 520
-      ? 156
+      ? 176
       : state.map.inspectorCollapsed
-        ? 180
-        : 176;
+        ? 206
+        : 198;
   return clampScale(targetCardWidth / phyloLayoutMetrics.taxonWidth);
 }
 
 function getAllMapBrowseScale() {
   const viewport = $("#mapViewport");
-  if (!viewport) return 0.82;
+  if (!viewport) return 0.9;
   const targetCardWidth = state.map.expanded
-    ? 184
+    ? 210
     : viewport.clientWidth < 520
-      ? 148
+      ? 166
       : state.map.inspectorCollapsed
-        ? 172
-        : 168;
+        ? 196
+        : 188;
   return clampScale(targetCardWidth / phyloLayoutMetrics.taxonWidth);
 }
 

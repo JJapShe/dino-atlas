@@ -4541,6 +4541,13 @@
   - Normal browsing renders cards at 180 px on desktop/intermediate layouts and 156 px on portrait mobile. Full-screen mode raises the target to 196 px, and the landscape full-screen layout uses a 56 px toolbar with a 334 px map viewport at 844x390.
   - Browser validation covered 1440x900, 1024x768, 390x844, 844x390, and the narrow 667x375 landscape edge. The current 147 visible nodes retained zero node overlap; the logical clade-to-taxon rail gap was 196 px; page overflow stayed zero; filter drawer open/close, full-screen, zoom, and drag-pan remained functional. Opening dinosaur information now keeps a 386 px-tall map viewport at 1024x768, a 377 px-tall map viewport at 390x844, and a non-overlapping 301x256 map beside the inspector at 667x375.
 
+- `Horizontal-growth atlas readability pass 2026-07-31`
+  - Raised taxon cards to 212x98 and clade cards to 188x98, expanded the gaps to 38x32, and increased the protected clade-to-taxon rail to 236 px. Reduced external shadows so visual effects remain inside the expanded spacing instead of bleeding into the next card.
+  - Made the JavaScript layout metrics the runtime source for the CSS card width and height variables. Future card-size changes now update positioning and rendered dimensions together.
+  - Replaced square-root packing with a five-row preference and up to 32 shared columns. At 132 taxa, the Cretaceous band is 16 columns by 5 rows and the canvas grows to 5442x1638 rather than shrinking cards or extending the three-era stack indefinitely.
+  - Normal desktop cards render at 206x95 and full-screen cards at 224x104. Portrait mobile keeps 176x81 in normal browsing and 224x104 in full-screen, with the existing zoom, pan, era controls, and navigator preserved.
+  - Browser validation covered 1440x900, 1024x768, 390x844, and 844x390. All four sizes retained zero node overlap, zero era-label overlap, zero toolbar overlap, zero page overflow, and no page errors; full-screen viewports reached 806, 671, 707, and 334 px tall respectively.
+
 - `Conchoraptor gracilis six-image osteology-led rebuild 2026-07-31`
   - Rebuilt `Conchoraptor gracilis` as six balanced roles: neutral representative, reverse-facing dawn color-pattern, post-rain Khulsan interdune habitat, head-and-both-hands anatomy crop, distant unidentified ankylosaurid community hypothesis, and two spatially separated adults as cautious proximity context.
   - Built `assets/dinosaurs/curated/reference-library/conchoraptor-gracilis/` with Foster, Norell and Balanoff 2025 and Meade et al. 2024 CC BY 4.0 PDFs, four 2025 fossil-figure crops, one 2024 cranial-model crop, and a README that separates direct anatomy, comparative reconstruction, taphonomy and behavior.
