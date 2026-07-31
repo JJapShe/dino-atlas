@@ -5468,6 +5468,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/utahceratops-gettyi-slate-moss-lateral-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "reason": "Original-size review passed the large rear-positioned nasal horn, short blunt lateral brow horns, deeply notched elongated frill, four legs, one tail, non-hoofed toes, and the stable moss/slate/brick/cream palette.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against Sampson et al. 2010 Utahceratops horn-and-frill gate",
+        "reviewBatch": "2026-08-01-richness-batch-80-utahceratops",
+        "reviewedAt": "2026-08-01T01:14:00.000Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/utahceratops-gettyi-deep-notch-frill-rear-structure-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size rear-view review passed one continuous tail, four legs, the deep central frill notch, low simple marginal bumps, and no open frill window. It remains structure reference because only part of the face is visible.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against Sampson et al. 2010 Utahceratops horn-and-frill gate",
+        "reviewBatch": "2026-08-01-richness-batch-80-utahceratops",
+        "reviewedAt": "2026-08-01T01:14:00.000Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/utahceratops-gettyi-postrain-channel-group-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size review passed the foreground animal's large nasal horn, short lateral brow horns, deeply notched frill, four readable legs, one tail, non-hoofed toes, and separated background conspecifics. Group behavior remains a reconstruction hypothesis.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against Sampson et al. 2010 Utahceratops horn-and-frill gate",
+        "reviewBatch": "2026-08-01-richness-batch-80-utahceratops",
+        "reviewedAt": "2026-08-01T01:14:00.000Z"
       }
     },
     "agujaceratops-mariscalensis": {

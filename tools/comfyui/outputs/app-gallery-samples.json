@@ -1,6 +1,6 @@
 {
   "taxa": 132,
-  "images": 1652,
+  "images": 1655,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -10797,12 +10797,36 @@
         "src": "assets/dinosaurs/utahceratops-gettyi-kaiparowits-herd-ecology-imagegen-v1.png"
       },
       {
+        "kind": "anatomy review",
+        "title": "유타케라톱스 깊은 중앙 패임 프릴 후면 구조 v1",
+        "body": "높은 사선 후면 전신 구도에서 길게 이어진 프릴의 깊은 중앙 패임과 낮고 단순한 가장자리 돌기를 우선 확인하는 구조 참고 이미지입니다. 한쪽 눈썹뿔과 코뿔은 부분적으로만 보이므로 대표 후보가 아닌 프릴 비교 자료로 유지합니다.",
+        "source": "assets/dinosaurs/utahceratops-gettyi-deep-notch-frill-rear-structure-imagegen-v1.png",
+        "variant": "깊은 중앙 패임 프릴 후면 구조 이미지 생성 v1",
+        "src": "assets/dinosaurs/utahceratops-gettyi-deep-notch-frill-rear-structure-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "유타케라톱스 비 갠 뒤 수로 무리 장면 v1",
+        "body": "비가 갠 카이파로위츠 범람원의 얕은 수로 앞에 전신 주 개체를 두고, 멀리 떨어진 두 동종 개체를 배치한 생태 참고 장면입니다. 전경 개체의 큰 코뿔, 짧은 옆돌출 눈썹뿔, 패인 프릴, 네 다리와 한 꼬리를 원본 크기에서 확인했으며, 무리 행동 자체는 복원 가설로만 취급합니다.",
+        "source": "assets/dinosaurs/utahceratops-gettyi-postrain-channel-group-ecology-imagegen-v1.png",
+        "variant": "비 갠 뒤 수로 무리 생태 이미지 생성 v1",
+        "src": "assets/dinosaurs/utahceratops-gettyi-postrain-channel-group-ecology-imagegen-v1.png"
+      },
+      {
         "kind": "review hold",
         "title": "유타케라톱스 이끼색-녹슨색 무늬 변형 v1",
         "body": "이끼 녹색 어깨, 슬레이트색 옆구리, 녹슨 붉은 볼 패치, 크림색 코뿔, 옅은 황토색 프릴 가장자리, 짧은 옆돌출 눈썹뿔, 길고 패인 프릴을 가진 색상/무늬 변형입니다. 색 대비와 가장자리 장식이 코스모케라톱스식 갈고리 장식으로 흐르지 않는지 일반 검수가 필요하므로 대표 아래에 둡니다.",
         "source": "assets/dinosaurs/utahceratops-gettyi-moss-rust-pattern-imagegen-v1.png",
         "variant": "이끼색-녹슨색 무늬 이미지 생성 v1",
         "src": "assets/dinosaurs/utahceratops-gettyi-moss-rust-pattern-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "유타케라톱스 슬레이트-이끼 측면 무늬 후보 v1",
+        "body": "큰 코뿔, 짧고 둥근 옆돌출 눈썹뿔, 중앙이 깊게 패인 긴 프릴, 하나의 긴 꼬리와 네 다리를 전신 측면에서 읽는 색상·무늬 보강 후보입니다. 기존 이끼 녹색·슬레이트 회색·벽돌 붉은색·크림색 체계를 유지하되, 대표 순위는 바꾸지 않습니다.",
+        "source": "assets/dinosaurs/utahceratops-gettyi-slate-moss-lateral-pattern-imagegen-v1.png",
+        "variant": "슬레이트-이끼 측면 무늬 이미지 생성 v1",
+        "src": "assets/dinosaurs/utahceratops-gettyi-slate-moss-lateral-pattern-imagegen-v1.png"
       }
     ],
     "agujaceratops-mariscalensis": [

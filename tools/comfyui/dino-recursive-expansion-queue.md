@@ -4734,3 +4734,11 @@ For each added taxon, produce:
 - `visualVariationProfiles[id]` entry.
 - `generationRouteGuides[id]` entry.
 - Verification notes with syntax, asset paths, card render, gallery count, review lightbox category count, and phylogeny overlap count.
+
+## Recent Expansion Notes
+
+- `Utahceratops gettyi six-image notched-frill expansion 2026-08-01`
+  - Kept the established representative, moss-rust pattern, and Kaiparowits herd reference, then added a slate-moss full-side color variation, a high three-quarter rear frill-structure reference, and a post-rain channel group reference.
+  - The direct identity gate follows Sampson et al. 2010: a large posteriorly placed nasal horn, short rounded lateral supraorbital horncores, and an elongated frill with a deep median embayment. The additional images were checked against long Nasutoceratops-style bull horns, Kosmoceratops-style hooked ornament, Pentaceratops-style tall pentagon, open Torosaurus/Chasmosaurus window drift, nasal-boss drift, rhino proportions, hoofed feet, duplicated limbs, and extra tails.
+  - Built-in ImageGen source mapping: lateral pattern `exec-b6cf992d-f5c4-4439-b060-a6e692429421.png`, rear frill structure `exec-1d4eb50b-7d77-41d5-a83f-1cc6be474b64.png`, post-rain channel reference `exec-dd147964-dd7d-4572-9055-3ee619cfbd4f.png`. Only the species-prefixed project copies under `assets/dinosaurs/` are used by the app.
+  - Original-size review resolves one tail and four coherent limbs in each complete foreground animal. The rear image is intentionally a lower-ranked structure reference because it only partially shows the face; the group scene remains a lower-ranked ecology reference because spacing and behavior are reconstructive.
