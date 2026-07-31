@@ -1,6 +1,6 @@
 {
   "taxa": 132,
-  "images": 1649,
+  "images": 1652,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -10695,6 +10695,30 @@
         "source": "assets/dinosaurs/kosmoceratops-richardsoni-kaiparowits-herd-ecology-imagegen-v1.png",
         "variant": "카이파로위츠 무리 생태 생성 v1",
         "src": "assets/dinosaurs/kosmoceratops-richardsoni-kaiparowits-herd-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "코스모케라톱스 양쪽 눈썹뿔 구조 전신 v1",
+        "body": "사선 정면 전신에서 바깥으로 벌어진 긴 눈썹뿔 두 개와 짧은 코뿔 하나를 각각 분리해 판독하는 구조 후보입니다. 짧고 넓은 프릴은 두개골에 직접 붙고 피부로 연속되며, 가장자리의 굵은 갈고리형 장식뿔은 앞으로·바깥으로 굽습니다. 네 다리와 한 꼬리도 원본 크기에서 분리해 확인합니다.",
+        "source": "assets/dinosaurs/kosmoceratops-richardsoni-bilateral-browhorn-anatomy-imagegen-v1.png",
+        "variant": "양쪽 눈썹뿔 구조 이미지 생성 v1",
+        "src": "assets/dinosaurs/kosmoceratops-richardsoni-bilateral-browhorn-anatomy-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "코스모케라톱스 물길 분리 하드로사우루스류 맥락 v1",
+        "body": "카이파로위츠 물길 앞의 단독 코스모케라톱스와, 넓은 물 건너의 이름 없는 하드로사우루스류 실루엣을 분리한 지층군 맥락입니다. 주 개체는 두 긴 눈썹뿔, 작은 코뿔, 갈고리형 프릴 장식, 네 다리와 한 꼬리를 읽을 수 있고, 원경 동물은 종 동정이나 직접 상호작용을 주장하지 않습니다.",
+        "source": "assets/dinosaurs/kosmoceratops-richardsoni-channel-separated-hadrosaurid-ecology-imagegen-v1.png",
+        "variant": "물길 분리 하드로사우루스류 맥락 이미지 생성 v1",
+        "src": "assets/dinosaurs/kosmoceratops-richardsoni-channel-separated-hadrosaurid-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "코스모케라톱스 정면 프릴·뿔 판독 v1",
+        "body": "약한 사선 정면 구도에서 짧고 넓은 불투명 프릴의 갈고리형 가장자리, 좌우로 나뉜 긴 눈썹뿔 두 개, 중앙의 짧은 코뿔 하나를 함께 보여 주는 진단 장면입니다. 정면 시점의 형태 판독을 위한 복원이며, 피부색과 정확한 행동은 직접 증거로 취급하지 않습니다.",
+        "source": "assets/dinosaurs/kosmoceratops-richardsoni-front-frill-anatomy-imagegen-v1.png",
+        "variant": "정면 프릴·뿔 판독 이미지 생성 v1",
+        "src": "assets/dinosaurs/kosmoceratops-richardsoni-front-frill-anatomy-imagegen-v1.png"
       },
       {
         "kind": "review hold",
