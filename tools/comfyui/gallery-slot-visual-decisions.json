@@ -6864,6 +6864,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/prenocephale-prenes-nemegt-low-dome-fullbody-identity-imagegen-v6.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size inspection confirms a moderate low dome, two forelimbs, two hind limbs, visible feet, and one continuous tail.",
+        "reviewMethod": "Original-size inspection",
+        "reviewBatch": "2026-08-01-richness-batch-92-prenocephale",
+        "reviewedAt": "2026-08-01T16:30:00.000Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/prenocephale-prenes-nemegt-horsetail-browse-ecology-imagegen-v6.png",
+        "role": "interaction",
+        "reason": "Original-size inspection confirms one full animal with two forelimbs, two hind limbs, visible feet, and one tail in a horsetail browse scene.",
+        "reviewMethod": "Original-size inspection",
+        "reviewBatch": "2026-08-01-richness-batch-92-prenocephale",
+        "reviewedAt": "2026-08-01T16:30:00.000Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/prenocephale-prenes-nemegt-channel-growth-stage-ecology-imagegen-v6.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size inspection confirms two separated animals; each has two forelimbs, two hind limbs, and one unbranched continuous tail.",
+        "reviewMethod": "Original-size inspection",
+        "reviewBatch": "2026-08-01-richness-batch-92-prenocephale",
+        "reviewedAt": "2026-08-01T16:30:00.000Z"
       }
     },
     "gravitholus-albertae": {

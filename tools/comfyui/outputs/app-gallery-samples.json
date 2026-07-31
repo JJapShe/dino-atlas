@@ -1,6 +1,6 @@
 {
   "taxa": 132,
-  "images": 1692,
+  "images": 1695,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -12147,6 +12147,30 @@
         "source": "assets/dinosaurs/prenocephale-prenes-nemegt-parallel-display-ecology-imagegen-v1.png",
         "variant": "네메그트 과시 생태 이미지 생성 v1",
         "src": "assets/dinosaurs/prenocephale-prenes-nemegt-parallel-display-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Prenocephale prenes v6 low dome full body",
+        "body": "Original-size inspection confirms a moderate low dome, two forelimbs, two hind limbs, visible feet, and one continuous tail.",
+        "source": "assets/dinosaurs/prenocephale-prenes-nemegt-low-dome-fullbody-identity-imagegen-v6.png",
+        "variant": "Nemegt low dome full body v6",
+        "src": "assets/dinosaurs/prenocephale-prenes-nemegt-low-dome-fullbody-identity-imagegen-v6.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Prenocephale prenes v6 horsetail browse",
+        "body": "Original-size inspection confirms the full animal, visible feet, one tail, and a non-graphic horsetail browse interaction.",
+        "source": "assets/dinosaurs/prenocephale-prenes-nemegt-horsetail-browse-ecology-imagegen-v6.png",
+        "variant": "Nemegt horsetail browse v6",
+        "src": "assets/dinosaurs/prenocephale-prenes-nemegt-horsetail-browse-ecology-imagegen-v6.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Prenocephale prenes v6 channel growth stage",
+        "body": "Original-size inspection confirms two separated animals; each has two forelimbs, two hind limbs, and one unbranched tail.",
+        "source": "assets/dinosaurs/prenocephale-prenes-nemegt-channel-growth-stage-ecology-imagegen-v6.png",
+        "variant": "Nemegt channel growth stage v6",
+        "src": "assets/dinosaurs/prenocephale-prenes-nemegt-channel-growth-stage-ecology-imagegen-v6.png"
       },
       {
         "kind": "review hold",
