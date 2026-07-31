@@ -4680,6 +4680,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/zanabazar-junior-modest-raised-secondtoe-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size review passed one continuous tail, two hind limbs, three support toes per readable foot, a modest raised digit-II claw, the large-eyed low elongated skull, and the robust troodontid profile. Soft tissue and exact digit detail remain comparative reconstruction.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against Norell et al. 2009 Zanabazar skull and Nemegt context gate",
+        "reviewBatch": "2026-08-01-richness-batch-81-zanabazar",
+        "reviewedAt": "2026-08-01T02:10:00.000Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/zanabazar-junior-channel-separated-tyrannosaurid-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "Original-size review passed the foreground animal's one tail, two hind limbs, readable support toes, modest raised digit-II claw, and large-eyed robust troodontid profile. The channel-separated distant theropod is environmental context only, not an interaction or species claim.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against Norell et al. 2009 Zanabazar skull and Nemegt context gate",
+        "reviewBatch": "2026-08-01-richness-batch-81-zanabazar",
+        "reviewedAt": "2026-08-01T02:10:00.000Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/zanabazar-junior-driftwood-separated-adults-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "Original-size review passed one integrated tail and two hind limbs on the foreground animal, with three readable support toes and a modest raised digit-II claw. The separated adult is an appearance comparison only; age, sex, kinship, grouping, and behavior remain reconstruction hypotheses.",
+        "reviewMethod": "2026-08-01 original-size individual inspection against Norell et al. 2009 Zanabazar skull and Nemegt context gate",
+        "reviewBatch": "2026-08-01-richness-batch-81-zanabazar",
+        "reviewedAt": "2026-08-01T02:10:00.000Z"
       }
     },
     "byronosaurus-jaffei": {
