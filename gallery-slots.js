@@ -6075,6 +6075,30 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "gobi-arid",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/amtocephale-gobiensis-baynshire-thick-dome-fullbody-identity-imagegen-v3.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "gobi-arid",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/amtocephale-gobiensis-drywash-scrub-browse-ecology-imagegen-v3.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "gobi-arid",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/amtocephale-gobiensis-terrace-growth-stage-ecology-imagegen-v4.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "gobi-arid",
+      "expectedKind": "anatomy review"
     }
   ],
   "prenocephale-prenes": [

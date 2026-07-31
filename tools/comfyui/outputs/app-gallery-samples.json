@@ -1,6 +1,6 @@
 {
   "taxa": 132,
-  "images": 1689,
+  "images": 1692,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -12097,6 +12097,30 @@
         "source": "assets/dinosaurs/amtocephale-gobiensis-rainplain-group-ecology-imagegen-v1.png",
         "variant": "비 온 평원 작은 무리 생태 이미지 생성 v1",
         "src": "assets/dinosaurs/amtocephale-gobiensis-rainplain-group-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Amtocephale gobiensis v3 thick dome full body",
+        "body": "Original-size inspection confirms a short blunt head, moderate thick dome, two forelimbs, two hind limbs, and one tail.",
+        "source": "assets/dinosaurs/amtocephale-gobiensis-baynshire-thick-dome-fullbody-identity-imagegen-v3.png",
+        "variant": "Baynshire thick dome full body v3",
+        "src": "assets/dinosaurs/amtocephale-gobiensis-baynshire-thick-dome-fullbody-identity-imagegen-v3.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Amtocephale gobiensis v3 dry wash scrub browse",
+        "body": "Original-size inspection confirms the full animal, visible feet, one tail, and a non-graphic browse interaction with sparse scrub.",
+        "source": "assets/dinosaurs/amtocephale-gobiensis-drywash-scrub-browse-ecology-imagegen-v3.png",
+        "variant": "dry wash scrub browse v3",
+        "src": "assets/dinosaurs/amtocephale-gobiensis-drywash-scrub-browse-ecology-imagegen-v3.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "Amtocephale gobiensis v4 terrace growth stage",
+        "body": "Original-size inspection confirms two separated animals; each has two forelimbs, two hind limbs, and one unbranched tail.",
+        "source": "assets/dinosaurs/amtocephale-gobiensis-terrace-growth-stage-ecology-imagegen-v4.png",
+        "variant": "terrace growth stage v4",
+        "src": "assets/dinosaurs/amtocephale-gobiensis-terrace-growth-stage-ecology-imagegen-v4.png"
       },
       {
         "kind": "review hold",
