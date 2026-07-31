@@ -1,6 +1,6 @@
 {
   "taxa": 132,
-  "images": 1646,
+  "images": 1649,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -10645,6 +10645,30 @@
         "source": "assets/dinosaurs/pentaceratops-sternbergii-floodplain-herd-ecology-imagegen-v1.png",
         "variant": "범람원 무리 생태 이미지 생성 v1",
         "src": "assets/dinosaurs/pentaceratops-sternbergii-floodplain-herd-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "펜타케라톱스 후방 사선 오각형 프릴 구조 v1",
+        "body": "주 개체를 뒤쪽 사선에서 읽는 구조 장면입니다. 두개골 바로 뒤에서 시작하는 높고 각진 오각형 프릴, 위쪽 뾰족한 윤곽과 완만한 가장자리 돌기, 긴 눈썹뿔 두 개와 작은 코뿔 하나, 낮은 사족보행 몸, 서로 분리된 네 다리와 단일 꼬리를 함께 보입니다. 프릴의 외피색과 가장자리 각질 범위는 복원 가설이며, 토로사우루스식 열린 타원 구멍이나 트리케라톱스식 넓고 둥근 방패는 사용하지 않습니다.",
+        "source": "assets/dinosaurs/pentaceratops-sternbergii-rear-frill-anatomy-imagegen-v1.png",
+        "variant": "후방 사선 오각형 프릴 구조 이미지 생성 v1",
+        "src": "assets/dinosaurs/pentaceratops-sternbergii-rear-frill-anatomy-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "펜타케라톱스 물길 분리 하드로사우루스류 맥락 v1",
+        "body": "산후안 분지의 얕은 물길 앞에 선 펜타케라톱스와, 물 건너 작은 하드로사우루스류 실루엣을 넓게 분리한 동물상 맥락입니다. 주 개체는 두개골 부착 오각형 프릴, 긴 눈썹뿔 두 개, 작은 코뿔 하나, 네 다리와 한 꼬리를 원본 크기로 판독하며, 원경 동물은 종 동정이나 직접 상호작용을 주장하지 않는 지층군 배경입니다.",
+        "source": "assets/dinosaurs/pentaceratops-sternbergii-channel-separated-hadrosaurid-ecology-imagegen-v1.png",
+        "variant": "물길 분리 하드로사우루스류 맥락 이미지 생성 v1",
+        "src": "assets/dinosaurs/pentaceratops-sternbergii-channel-separated-hadrosaurid-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "펜타케라톱스 비 갠 뒤 단독 경계 회전 v1",
+        "body": "비가 갠 뒤 젖은 이회암과 얕은 웅덩이 사이에서 한 성체가 소리를 살피며 몸을 돌린 자세입니다. 높은 오각형 프릴은 어깨가 아니라 두개골에서 이어지고, 긴 눈썹뿔 두 개, 작은 코뿔 하나, 네 개의 분리된 체중지지 다리와 골반에서 이어지는 한 꼬리를 보입니다. 경계 자세와 피부색은 행동·외피 복원이며 공격이나 사회 행동을 뜻하지 않습니다.",
+        "source": "assets/dinosaurs/pentaceratops-sternbergii-postrain-alert-turn-ecology-imagegen-v1.png",
+        "variant": "비 갠 뒤 단독 경계 회전 이미지 생성 v1",
+        "src": "assets/dinosaurs/pentaceratops-sternbergii-postrain-alert-turn-ecology-imagegen-v1.png"
       },
       {
         "kind": "review hold",

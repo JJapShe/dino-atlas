@@ -2611,8 +2611,8 @@ const dinosaurs = [
     region: "북아메리카",
     length: 6.8,
     knowledgeLevel: 2,
-    imageSlots: 3,
-    reviewStatus: "검수중",
+    imageSlots: 6,
+    reviewStatus: "6장 역할 확장 검수",
     summary:
       "높고 각진 오각형 프릴과 긴 눈썹뿔, 작은 코뿔을 가진 카스모사우루스아과 각룡류입니다. 트리케라톱스식 넓고 둥근 프릴이나 토로사우루스식 긴 타원 구멍 프릴로 흐르지 않게 검수합니다.",
     features: {
@@ -16376,6 +16376,30 @@ const generatedImageSamples = {
       variant: "범람원 무리 생태 이미지 생성 v1",
       src: "assets/dinosaurs/pentaceratops-sternbergii-floodplain-herd-ecology-imagegen-v1.png",
     },
+    {
+      kind: "anatomy review",
+      title: "펜타케라톱스 후방 사선 오각형 프릴 구조 v1",
+      body: "주 개체를 뒤쪽 사선에서 읽는 구조 장면입니다. 두개골 바로 뒤에서 시작하는 높고 각진 오각형 프릴, 위쪽 뾰족한 윤곽과 완만한 가장자리 돌기, 긴 눈썹뿔 두 개와 작은 코뿔 하나, 낮은 사족보행 몸, 서로 분리된 네 다리와 단일 꼬리를 함께 보입니다. 프릴의 외피색과 가장자리 각질 범위는 복원 가설이며, 토로사우루스식 열린 타원 구멍이나 트리케라톱스식 넓고 둥근 방패는 사용하지 않습니다.",
+      source: "assets/dinosaurs/pentaceratops-sternbergii-rear-frill-anatomy-imagegen-v1.png",
+      variant: "후방 사선 오각형 프릴 구조 이미지 생성 v1",
+      src: "assets/dinosaurs/pentaceratops-sternbergii-rear-frill-anatomy-imagegen-v1.png",
+    },
+    {
+      kind: "anatomy review",
+      title: "펜타케라톱스 물길 분리 하드로사우루스류 맥락 v1",
+      body: "산후안 분지의 얕은 물길 앞에 선 펜타케라톱스와, 물 건너 작은 하드로사우루스류 실루엣을 넓게 분리한 동물상 맥락입니다. 주 개체는 두개골 부착 오각형 프릴, 긴 눈썹뿔 두 개, 작은 코뿔 하나, 네 다리와 한 꼬리를 원본 크기로 판독하며, 원경 동물은 종 동정이나 직접 상호작용을 주장하지 않는 지층군 배경입니다.",
+      source: "assets/dinosaurs/pentaceratops-sternbergii-channel-separated-hadrosaurid-ecology-imagegen-v1.png",
+      variant: "물길 분리 하드로사우루스류 맥락 이미지 생성 v1",
+      src: "assets/dinosaurs/pentaceratops-sternbergii-channel-separated-hadrosaurid-ecology-imagegen-v1.png",
+    },
+    {
+      kind: "anatomy review",
+      title: "펜타케라톱스 비 갠 뒤 단독 경계 회전 v1",
+      body: "비가 갠 뒤 젖은 이회암과 얕은 웅덩이 사이에서 한 성체가 소리를 살피며 몸을 돌린 자세입니다. 높은 오각형 프릴은 어깨가 아니라 두개골에서 이어지고, 긴 눈썹뿔 두 개, 작은 코뿔 하나, 네 개의 분리된 체중지지 다리와 골반에서 이어지는 한 꼬리를 보입니다. 경계 자세와 피부색은 행동·외피 복원이며 공격이나 사회 행동을 뜻하지 않습니다.",
+      source: "assets/dinosaurs/pentaceratops-sternbergii-postrain-alert-turn-ecology-imagegen-v1.png",
+      variant: "비 갠 뒤 단독 경계 회전 이미지 생성 v1",
+      src: "assets/dinosaurs/pentaceratops-sternbergii-postrain-alert-turn-ecology-imagegen-v1.png",
+    },
   ],
   "kosmoceratops-richardsoni": [
     {
@@ -22507,6 +22531,7 @@ const identityChecklists = {
     "트리케라톱스식 넓고 둥근 프릴 복제 아님",
     "토로사우루스식 길쭉한 타원 구멍 프릴 복제 아님",
     "낮은 사족보행 몸, 긴 꼬리, 발굽처럼 보이지 않는 발",
+    "원본 크기에서 프릴은 두개골에서 시작하고, 눈썹뿔 두 개·작은 코뿔 하나·서로 분리된 네 다리·골반에서 이어지는 한 꼬리를 각각 확인",
   ],
   "chasmosaurus-belli": [
     "성체 프릴은 뒤로 갈수록 넓어져 눈확 부근 두개골 폭의 두 배를 넘는 직사각형·삼각형 방패 형태",
@@ -23587,8 +23612,8 @@ const visualVariationProfiles = {
     color: "차분한 슬레이트 회색, 짙은 이끼 녹색, 따뜻한 시에나색 옆구리, 옅은 황갈색 배면, 크림색 뿔과 부리, 절제된 구리색 프릴 포인트",
     pattern: "큰 오각형 프릴 패치, 끊어진 옆구리 얼룩, 청록 회색 얼굴 패치, 숯빛 꼬리 띠, 옅은 황토색 반점",
     texture: "각질 눈썹뿔, 코뿔, 부리, 거친 오각형 프릴 가장자리가 있는 무광 자갈질 각룡류 피부",
-    anatomy: "높고 각진 오각형 두개골 부착 프릴, 긴 눈썹뿔 두 개, 작은 코뿔 하나, 은은한 볼쪽 또는 광대뿔 돌기 단서, 낮은 각룡류 몸, 긴 꼬리, 발굽 아닌 발가락",
-    avoid: "토로사우루스식 타원 프릴 창 복제, 넓고 둥근 트리케라톱스 프릴 복제, 카스모사우루스식 짧은 뿔 드리프트, 파키리노사우루스식 코 혹, 센트로사우루스식 큰 코뿔 지배, 스티라코사우루스식 가시 부채, 코뿔소 몸, 어깨에 붙은 프릴, 발굽 발",
+    anatomy: "높고 각진 오각형 두개골 부착 프릴, 정확히 두 개의 긴 눈썹뿔과 하나의 작은 코뿔, 은은한 볼쪽 또는 광대뿔 돌기 단서, 낮은 각룡류 몸, 서로 분리된 네 다리와 발굽 아닌 발가락, 골반에서 이어지는 긴 꼬리 하나",
+    avoid: "토로사우루스식 타원 프릴 창 복제, 넓고 둥근 트리케라톱스 프릴 복제, 카스모사우루스식 짧은 뿔 드리프트, 파키리노사우루스식 코 혹, 센트로사우루스식 큰 코뿔 지배, 스티라코사우루스식 가시 부채, 코뿔소 몸, 어깨에 붙은 프릴, 발굽 발, 여분·가림·융합 다리, 잘리거나 갈라진 꼬리",
   },
   "chasmosaurus-belli": {
     color: "대표는 셀라돈 회색·풍화 버드나무색 몸, 차콜 올리브 등 안장, 옅은 석회색 배, 절제된 뽕나무색 뺨, 벽돌 장미·청록색 프릴과 풍화 황토색 가장자리, 무광 아이보리 뿔·부리; 변이는 그을린 보랏빛 회색·짙은 청회색 등, 갈대 녹색 옆구리, 산호색 어깨, 사프란 점토·먼지 청록 프릴과 짙은 자두색 뺨",
@@ -24564,10 +24589,10 @@ const generationRouteGuides = {
   },
   "pentaceratops-sternbergii": {
     focus: "높은 오각형 프릴, 긴 눈썹뿔, 작은 코뿔, 볼쪽/광대뿔 돌기 단서, 트리케라톱스와 토로사우루스식 드리프트 방지",
-    route: "ceratopsid_pentagonal_frill_prompt_then_horn_frill_and_jugal_review",
+    route: "대표와 색상 변이를 기준으로, 후방 사선 오각형 프릴 구조, 넓은 물길로 분리한 하드로사우루스류 동물상 맥락, 비 갠 뒤 단독 경계 회전을 역할별로 사용합니다. 전신은 원본 크기의 프릴·뿔·네 발·꼬리 크롭을 통과해야 하며, 원경 동물·행동·외피색은 직접 증거보다 강하게 단정하지 않습니다.",
     control: "",
-    pass: "전신 측면 프롬프트 | 높고 각진 오각형 두개골 부착 프릴 | 긴 눈썹뿔 두 개 | 작은 코뿔 하나 | 은은한 볼쪽 또는 광대뿔 돌기 단서 | 낮은 각룡류 몸 | 긴 꼬리 | 마른 지면의 보이는 발굽 아닌 발가락",
-    reject: "넓고 둥근 트리케라톱스 복제가 되거나, 토로사우루스식 타원 프릴 창 복제가 되거나, 오각형 프릴을 잃거나, 파키리노사우루스식 코 혹, 스티라코사우루스식 가시 부채, 코뿔소 몸, 발굽 발, 숨은 발, 어깨에 붙은 프릴, 잘린 꼬리가 생기면 탈락",
+    pass: "원본 크기 전신·프릴·뿔·네 발·꼬리 검수 | 높고 각진 오각형 두개골 부착 프릴 | 긴 눈썹뿔 정확히 두 개 | 작은 코뿔 정확히 하나 | 은은한 볼쪽 또는 광대뿔 돌기 단서 | 낮은 각룡류 몸 | 서로 분리된 네 발과 발굽 아닌 발가락 | 골반에서 이어지는 긴 꼬리 하나",
+    reject: "넓고 둥근 트리케라톱스 복제가 되거나, 토로사우루스식 타원 프릴 창 복제가 되거나, 오각형 프릴을 잃거나, 눈썹뿔이 둘이 아니거나 코뿔이 하나가 아니거나, 파키리노사우루스식 코 혹, 스티라코사우루스식 가시 부채, 코뿔소 몸, 발굽 발, 숨거나 겹친·여분 다리, 어깨에 붙은 프릴, 잘리거나 갈라진 꼬리가 생기면 탈락",
   },
   "chasmosaurus-belli": {
     focus: "C. belli 성체의 뒤로 넓어지는 방패형 프릴·곧거나 얕게 파인 뒤쪽 막대·피부 아래 큰 골창 한 쌍·가변적이지만 절제된 눈썹뿔을 고정하고 세로 판 프릴·열린 창·트리케라톱스·토로사우루스·코뿔소 드리프트를 차단",

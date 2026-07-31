@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-31T10:34:20.143Z",
-  "reviewBatch": "2026-07-31-bilateral-hand-audit-batch-77",
-  "reviewMethod": "Batch 77 original-size re-audit of all six registered Deinocheirus images and all six registered Therizinosaurus images, using separate left-hand and right-hand crops rather than a combined total. Any hand with two or fewer, four or more, fused, overlapping, hidden, or otherwise uncountable digits fails. Six false positives were rejected and six replacements independently passed left hand three plus right hand three, with feet, limb count, tail, species identity, composition, and artifacts checked in the same pass.",
-  "targetSlots": 720,
+  "generatedAt": "2026-07-31T11:10:38.113Z",
+  "reviewBatch": "2026-07-31-richness-batch-78-pentaceratops",
+  "reviewMethod": "Batch 78 original-size review of three Pentaceratops sternbergii expansion images. Each selected image was checked for a skull-attached tall angular pentagonal frill, exactly two long brow horns, one small nasal horn, a cheek or jugal cue where readable, four separately readable limbs and non-hoof feet, one continuous tail, role diversity, palette stability, formation context, and absence of Triceratops, Torosaurus, rhino, or artifact drift.",
+  "targetSlots": 723,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -5300,6 +5300,33 @@
         "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
         "reviewBatch": "2026-07-17-slot-audit",
         "reviewedAt": "2026-07-17T04:56:32.666Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/pentaceratops-sternbergii-rear-frill-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The rear-oblique whole-body view keeps the frill attached directly to the skull and preserves a tall angular pentagonal outline, two brow horns, a small nasal horn, four separated legs, non-hoof feet, and one continuous tail without broad Triceratops or open Torosaurus drift.",
+        "reviewMethod": "Original-size full frame plus frill, horn, face, all-four-limb, foot, and tail inspection; frill colors and exact integument remain reconstruction",
+        "reviewBatch": "2026-07-31-richness-batch-78-pentaceratops",
+        "reviewedAt": "2026-07-31T11:10:38.113Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/pentaceratops-sternbergii-channel-separated-hadrosaurid-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "The foreground Pentaceratops is fully readable with the angular pentagonal skull frill, two brow horns, small nasal horn, four feet, and one tail; the one distant hadrosaurid silhouette is separated by a broad water channel and remains only formation-fauna context.",
+        "reviewMethod": "Original-size foreground frill, horn, limb, foot, tail, and distant-animal separation inspection; no species-level identity or direct interaction is claimed for the background animal",
+        "reviewBatch": "2026-07-31-richness-batch-78-pentaceratops",
+        "reviewedAt": "2026-07-31T11:10:38.113Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/pentaceratops-sternbergii-postrain-alert-turn-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The solitary post-rain turn uses a distinct elevated rear-left composition while keeping a skull-attached pentagonal frill, two brow horns, one small nasal horn, four separated weight-bearing limbs, visible non-hoof feet, and one continuous tail. The alert pose remains a behavioral reconstruction.",
+        "reviewMethod": "Original-size full frame plus frill, horn, all-four-limb, foot, and tail inspection; posture and skin color remain reconstruction",
+        "reviewBatch": "2026-07-31-richness-batch-78-pentaceratops",
+        "reviewedAt": "2026-07-31T11:10:38.113Z"
       }
     },
     "kosmoceratops-richardsoni": {
