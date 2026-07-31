@@ -25998,6 +25998,8 @@ function bindMapEvents() {
   let pinchStartDistance = 0;
   let pinchStartScale = state.map.scale;
   let navigatorPointerId = null;
+  let suppressMapNodeClick = false;
+  let mapPanMoved = false;
 
   const getPinchMetrics = () => {
     const [first, second] = [...activePointers.values()];
@@ -26034,6 +26036,11 @@ function bindMapEvents() {
   };
 
   mapNodes.addEventListener("click", (event) => {
+    if (suppressMapNodeClick) {
+      suppressMapNodeClick = false;
+      event.preventDefault();
+      return;
+    }
     const node = event.target.closest(".map-node.taxon");
     const groupNode = event.target.closest(".map-node.group");
     if (groupNode) {
@@ -26122,8 +26129,13 @@ function bindMapEvents() {
     event.preventDefault();
   });
 
+  // The cards cover much of the dense desktop map. Let a drag start on them,
+  // then reserve a short stationary press for the normal card-selection click.
+  viewport.addEventListener("dragstart", (event) => event.preventDefault());
+
   viewport.addEventListener("pointerdown", (event) => {
-    if (event.button !== 0 || event.target.closest(".map-node")) return;
+    if (event.button !== 0) return;
+    event.preventDefault();
     activePointers.set(event.pointerId, { clientX: event.clientX, clientY: event.clientY });
     viewport.setPointerCapture(event.pointerId);
     if (activePointers.size === 2) {
@@ -26135,6 +26147,7 @@ function bindMapEvents() {
     state.map.startY = event.clientY;
     state.map.originX = state.map.x;
     state.map.originY = state.map.y;
+    mapPanMoved = false;
     viewport.classList.add("dragging");
   });
 
@@ -26150,6 +26163,9 @@ function bindMapEvents() {
       return;
     }
     if (!state.map.dragging) return;
+    if (Math.hypot(event.clientX - state.map.startX, event.clientY - state.map.startY) > 4) {
+      mapPanMoved = true;
+    }
     state.map.frameMode = "free";
     state.map.x = state.map.originX + event.clientX - state.map.startX;
     state.map.y = state.map.originY + event.clientY - state.map.startY;
@@ -26164,6 +26180,14 @@ function bindMapEvents() {
       if (activePointers.size === 1) resumeDragWithRemainingPointer();
     }
     if (activePointers.size === 0) {
+      if (mapPanMoved) {
+        suppressMapNodeClick = true;
+        // The synthetic click following this pointer release belongs to the pan.
+        // Clear the guard before a later, intentional card click can be swallowed.
+        window.setTimeout(() => {
+          suppressMapNodeClick = false;
+        }, 0);
+      }
       state.map.dragging = false;
       viewport.classList.remove("dragging");
       flushMapPanTransform();

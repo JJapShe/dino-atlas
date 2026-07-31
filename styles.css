@@ -784,6 +784,22 @@ body[data-active-view="atlas"] .metric span {
   cursor: grab;
   overscroll-behavior: contain;
   touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.phylo-viewport,
+.phylo-viewport * {
+  -webkit-user-drag: none;
+}
+
+.phylo-viewport .map-node {
+  cursor: grab;
+}
+
+.phylo-viewport.dragging,
+.phylo-viewport.dragging .map-node {
+  cursor: grabbing;
 }
 
 .phylo-viewport.dragging {
