@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-31-richness-six-slot-batch-76",
+  "reviewBatch": "2026-07-31-bilateral-hand-audit-batch-77",
   "rejectedSources": {
     "assets/dinosaurs/nyctosaurus-gracilis-niobrara-forked-crest-imagegen-v1.png": {
       "reason": "Free clawed appendages project from the wing margins, limb and membrane topology is confused, and a genus-level mature branching crest is incorrectly fixed onto the N. gracilis representative."
@@ -737,6 +737,15 @@
     "assets/dinosaurs/therizinosaurus-cheloniformis-nemegt-browse-ecology-imagegen-v1.png": {
       "reason": "The multi-species ecology scene includes a secondary therizinosaur with an unsupported sail-like hump and unstable appendages, so it fails the strict identity gate."
     },
+    "assets/dinosaurs/therizinosaurus-cheloniformis-petrol-celadon-dawn-pattern-imagegen-v2.png": {
+      "reason": "The former pattern image has only two readable long claws on one hand and five claws across both hands, so it fails the revised independent left-hand three plus right-hand three gate."
+    },
+    "assets/dinosaurs/therizinosaurus-cheloniformis-tarbosaurus-watergap-interaction-ecology-imagegen-v1.png": {
+      "reason": "Both foreground hands resolve as two long claws at original size; water separation and composition cannot compensate for failure of the bilateral three-claw gate."
+    },
+    "assets/dinosaurs/therizinosaurus-cheloniformis-adult-subadult-sizeclass-growth-ecology-imagegen-v1.png": {
+      "reason": "The foreground adult resolves as three claws on one hand and two on the other, while both subadult hands resolve as two; the entire multi-animal frame fails independent appendage review."
+    },
     "assets/dinosaurs/protoceratops-andrewsi-hornless-frill-imagegen-v1.png": {
       "reason": "The former representative has an overly bulbous bulldog/rhinoceros torso, a vertical rounded frill, an oversized beak, and generalized forefeet and hind feet that do not clear the strict five-finger manus and four-toed pes gate."
     },
@@ -802,6 +811,15 @@
     },
     "assets/dinosaurs/deinocheirus-mirificus-nemegt-river-ecology-imagegen-v1.png": {
       "reason": "Former river ecology candidate uses a mostly bare primary animal with a distorted low head and overlapping appendages; the crowded generic background also weakens species-level interaction review."
+    },
+    "assets/dinosaurs/deinocheirus-mirificus-bluehour-celadon-plum-pattern-imagegen-v1.png": {
+      "reason": "Both hands resolve as only two fingers and claws at original size, contradicting the former metadata claim and failing the independent left-hand three plus right-hand three gate."
+    },
+    "assets/dinosaurs/deinocheirus-mirificus-rainwet-feathered-wetland-ecology-imagegen-v2.png": {
+      "reason": "Each hand resolves as four fingers and claws at original size, so the rain habitat image fails the exact bilateral three-finger gate."
+    },
+    "assets/dinosaurs/deinocheirus-mirificus-shaggy-river-forage-imagegen-v3.png": {
+      "reason": "The far hand exposes only two readable claws and the supposed third digit is obscured by vegetation; an ambiguous hand cannot pass the strict bilateral crop gate."
     },
     "assets/dinosaurs/buriolestes-schultzi-bagualosaurus-attack-ecology-imagegen-v1.png": {
       "reason": "Former interaction candidate reverses the expected Buriolestes-to-Bagualosaurus size relationship, renders the secondary animal as a small generic quadruped, and stages a lightly wounded direct attack that exceeds the evidence."
@@ -1482,5 +1500,5 @@
       "reason": "The former ecology frame combines bird-like heads, broad wing-fan arms, overlapping appendages, repetitive color treatment, and several animals whose heads, legs, feet, and tails cannot be audited independently."
     }
   },
-  "generatedAt": "2026-07-31T04:28:17.140Z"
+  "generatedAt": "2026-07-31T10:34:20.143Z"
 }

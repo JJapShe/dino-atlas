@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-31T08:39:03.038Z",
-  "reviewBatch": "2026-07-31-richness-six-slot-batch-76",
-  "reviewMethod": "Batch 76 Norell et al. 2009 holotype skull, pelvis, hind-limb, and left-pes evidence; Osborn 1924 historical description; Lefeld 1971 Djadokhta geology; BHL source and CC BY-NC-SA 4.0 audit; six-image contact sheet; enlarged hand and foot crops; and original-size inspection for one long low rounded toothed head, two comparative forelimbs, two hind limbs, an exact visible I-IV foot with a raised moderate digit-II claw, one pelvis-origin tail, direct-versus-comparative reconstruction boundaries, aeolian-interdune-lacustrine context, role balance, and artifact gates.",
+  "generatedAt": "2026-07-31T10:34:20.143Z",
+  "reviewBatch": "2026-07-31-bilateral-hand-audit-batch-77",
+  "reviewMethod": "Batch 77 original-size re-audit of all six registered Deinocheirus images and all six registered Therizinosaurus images, using separate left-hand and right-hand crops rather than a combined total. Any hand with two or fewer, four or more, fused, overlapping, hidden, or otherwise uncountable digits fails. Six false positives were rejected and six replacements independently passed left hand three plus right hand three, with feet, limb count, tail, species identity, composition, and artifacts checked in the same pass.",
   "targetSlots": 720,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
@@ -3713,21 +3713,21 @@
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/deinocheirus-mirificus-bluehour-celadon-plum-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/deinocheirus-mirificus-bilateral-tridactyl-bluehour-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "The reverse-facing blue-hour individual adds celadon flank dashes and a restrained plum wash while preserving the canonical charcoal, ivory, rust, and cream placement; the corrected frame has exactly two separated three-finger hands, two three-toed feet, and one complete tail.",
-        "reviewMethod": "Original generation and targeted hand-only correction compared at full size, followed by isolated hand, foot, head, and tail crops; no non-hand anatomy or composition change was requested during the correction",
-        "reviewBatch": "2026-07-28-richness-six-slot-batch-23",
-        "reviewedAt": "2026-07-27T19:05:25.968Z"
+        "reason": "The reverse-facing blue-hour individual preserves the charcoal, ivory, rust, celadon, and plum placement while separate original-size crops show exactly three independent digits and claws on the left hand and three on the right; both feet retain three broad principal toes and the tail remains singular.",
+        "reviewMethod": "Original-size full frame plus separate left-hand, right-hand, left-foot, right-foot, head, and tail crops under the batch 77 bilateral 3+3 gate",
+        "reviewBatch": "2026-07-31-bilateral-hand-audit-batch-77",
+        "reviewedAt": "2026-07-31T10:34:20.143Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/deinocheirus-mirificus-rainwet-feathered-wetland-ecology-imagegen-v2.png",
+        "source": "assets/dinosaurs/deinocheirus-mirificus-bilateral-tridactyl-rainwet-habitat-imagegen-v3.png",
         "role": "habitat-ecology",
-        "reason": "The rain-wet mesic-floodplain scene retains one complete heavy-bodied animal, two independently readable three-finger hands, two hind limbs, and one tail while adding distinct weather and low frontal movement; shallow splash hides part of the toe detail, so it remains habitat reference rather than representative evidence.",
-        "reviewMethod": "Original-size full frame plus head, both-hand, splash-obscured foot, and tail crops; accepted for mesic habitat and wet-integument context while exact pedal detail is delegated to the representative slot",
-        "reviewBatch": "2026-07-28-richness-six-slot-batch-23",
-        "reviewedAt": "2026-07-27T19:05:25.968Z"
+        "reason": "The solitary rain-wet habitat scene retains the heavy body, high back ridge, broad toothless snout, two forelimbs, two hind limbs, and one tail; separately cropped hands each expose exactly three independent digits and claws, and both feet expose three broad principal toes.",
+        "reviewMethod": "Original-size full frame plus separate left-hand, right-hand, both-foot, head, and tail crops under the batch 77 bilateral 3+3 gate; wet integument and exact behavior remain reconstruction",
+        "reviewBatch": "2026-07-31-bilateral-hand-audit-batch-77",
+        "reviewedAt": "2026-07-31T10:34:20.143Z"
       },
       "4": {
         "status": "approved",
@@ -3740,12 +3740,12 @@
       },
       "5": {
         "status": "approved",
-        "source": "assets/dinosaurs/deinocheirus-mirificus-shaggy-river-forage-imagegen-v3.png",
+        "source": "assets/dinosaurs/deinocheirus-mirificus-bilateral-tridactyl-river-forage-imagegen-v4.png",
         "role": "interaction",
-        "reason": "The foreground forager keeps two three-finger hands, two weight-bearing hind limbs, and one tail while distant hadrosaur-like silhouettes remain separated by water and depth; they are retained only as cautious Nemegt background context, not species-level anatomy or direct interaction evidence.",
-        "reviewMethod": "Original-size primary head, both hands, both feet, tail, and secondary-animal crops; aquatic-plant handling is presented as generic foraging and no filtering, herd, pursuit, or interspecific response is claimed",
-        "reviewBatch": "2026-07-28-richness-six-slot-batch-23",
-        "reviewedAt": "2026-07-27T19:05:25.968Z"
+        "reason": "The single-animal river-edge forage hypothesis keeps aquatic plants below rather than across the hands; separate crops expose exactly three digits and claws on each hand, both feet retain three broad principal toes, and one tail continues from the pelvis.",
+        "reviewMethod": "Original-size full frame plus separate left-hand, right-hand, both-foot, head, plant-contact, and tail crops under the batch 77 bilateral 3+3 gate; no filtering or specific feeding mechanism is claimed",
+        "reviewBatch": "2026-07-31-bilateral-hand-audit-batch-77",
+        "reviewedAt": "2026-07-31T10:34:20.143Z"
       },
       "6": {
         "status": "approved",
@@ -3769,12 +3769,12 @@
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/therizinosaurus-cheloniformis-petrol-celadon-dawn-pattern-imagegen-v2.png",
+        "source": "assets/dinosaurs/therizinosaurus-cheloniformis-bilateral-triclaw-petrol-dawn-pattern-imagegen-v3.png",
         "role": "color-pattern",
-        "reason": "Reverse-direction dawn pattern separates the role from the representative while preserving exactly three claws per hand, four grounded toes per foot, two legs, and one tail.",
-        "reviewMethod": "Original-size full-frame and isolated hand, foot, and tail inspection against the 2023 claw-function gate and derived-therizinosaurid appendage checklist",
-        "reviewBatch": "2026-07-27-richness-six-slot-batch-19",
-        "reviewedAt": "2026-07-27T02:09:54.773Z"
+        "reason": "The reverse-direction petrol, celadon, crimson, cobalt, and gold dawn pattern remains distinct from the representative; separate original-size crops show exactly three long claws on the left hand and three on the right, with four support toes on each readable foot and one tail.",
+        "reviewMethod": "Original-size full frame plus separate left-hand, right-hand, both-foot, head, and tail crops under the batch 77 bilateral 3+3 gate and derived-therizinosaurid foot gate",
+        "reviewBatch": "2026-07-31-bilateral-hand-audit-batch-77",
+        "reviewedAt": "2026-07-31T10:34:20.143Z"
       },
       "3": {
         "status": "approved",
@@ -3796,21 +3796,21 @@
       },
       "5": {
         "status": "approved",
-        "source": "assets/dinosaurs/therizinosaurus-cheloniformis-tarbosaurus-watergap-interaction-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/therizinosaurus-cheloniformis-bilateral-triclaw-tarbosaurus-watergap-ecology-imagegen-v2.png",
         "role": "interaction",
-        "reason": "Wide water-gap coexistence keeps Tarbosaurus non-contact and subordinate while the foreground Therizinosaurus passes the strict hand, foot, limb, and tail count.",
-        "reviewMethod": "Original-size full-frame plus isolated foreground appendage crop after targeted hand and foot count corrections",
-        "reviewBatch": "2026-07-27-richness-six-slot-batch-19",
-        "reviewedAt": "2026-07-27T02:09:54.773Z"
+        "reason": "The foreground Therizinosaurus is spatially separated from the distant Tarbosaurus by a wide water gap; separate crops show exactly three long claws on each foreground hand, four support toes on each readable foot, two legs, and one tail.",
+        "reviewMethod": "Original-size full frame plus separate foreground left-hand, right-hand, both-foot, tail, and distant-animal crops under the batch 77 bilateral 3+3 gate; coexistence and posture remain hypothetical",
+        "reviewBatch": "2026-07-31-bilateral-hand-audit-batch-77",
+        "reviewedAt": "2026-07-31T10:34:20.143Z"
       },
       "6": {
         "status": "approved",
-        "source": "assets/dinosaurs/therizinosaurus-cheloniformis-adult-subadult-sizeclass-growth-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/therizinosaurus-cheloniformis-bilateral-triclaw-poststorm-defense-imagegen-v1.png",
         "role": "social-growth-defense",
-        "reason": "Spatially separated adult and subadult provide a restrained size-class comparison; the foreground adult passes three claws per hand, four grounded toes per foot, two legs, and one tail.",
-        "reviewMethod": "Original-size full-frame plus isolated adult and subadult crops after targeted appendage-count corrections; no age, sex, parentage, or care claim",
-        "reviewBatch": "2026-07-27-richness-six-slot-batch-19",
-        "reviewedAt": "2026-07-27T02:09:54.773Z"
+        "reason": "The replacement uses one adult in a post-storm alert or defensive posture, avoiding the former multi-animal count failure; separate crops show exactly three long claws on each hand, four support toes on each readable foot, two legs, and one continuous tail.",
+        "reviewMethod": "Original-size full frame plus separate left-hand, right-hand, both-foot, head, and tail crops under the batch 77 bilateral 3+3 gate; defense posture is a reconstruction rather than documented behavior",
+        "reviewBatch": "2026-07-31-bilateral-hand-audit-batch-77",
+        "reviewedAt": "2026-07-31T10:34:20.143Z"
       }
     },
     "mononykus-olecranus": {
@@ -7498,6 +7498,15 @@
     "assets/dinosaurs/therizinosaurus-cheloniformis-nemegt-browse-ecology-imagegen-v1.png": {
       "reason": "The multi-species ecology scene includes a secondary therizinosaur with an unsupported sail-like hump and unstable appendages, so it fails the strict identity gate."
     },
+    "assets/dinosaurs/therizinosaurus-cheloniformis-petrol-celadon-dawn-pattern-imagegen-v2.png": {
+      "reason": "The former pattern image has only two readable long claws on one hand and five claws across both hands, so it fails the revised independent left-hand three plus right-hand three gate."
+    },
+    "assets/dinosaurs/therizinosaurus-cheloniformis-tarbosaurus-watergap-interaction-ecology-imagegen-v1.png": {
+      "reason": "Both foreground hands resolve as two long claws at original size; water separation and composition cannot compensate for failure of the bilateral three-claw gate."
+    },
+    "assets/dinosaurs/therizinosaurus-cheloniformis-adult-subadult-sizeclass-growth-ecology-imagegen-v1.png": {
+      "reason": "The foreground adult resolves as three claws on one hand and two on the other, while both subadult hands resolve as two; the entire multi-animal frame fails independent appendage review."
+    },
     "assets/dinosaurs/protoceratops-andrewsi-hornless-frill-imagegen-v1.png": {
       "reason": "The former representative has an overly bulbous bulldog/rhinoceros torso, a vertical rounded frill, an oversized beak, and generalized forefeet and hind feet that do not clear the strict five-finger manus and four-toed pes gate."
     },
@@ -7563,6 +7572,15 @@
     },
     "assets/dinosaurs/deinocheirus-mirificus-nemegt-river-ecology-imagegen-v1.png": {
       "reason": "Former river ecology candidate uses a mostly bare primary animal with a distorted low head and overlapping appendages; the crowded generic background also weakens species-level interaction review."
+    },
+    "assets/dinosaurs/deinocheirus-mirificus-bluehour-celadon-plum-pattern-imagegen-v1.png": {
+      "reason": "Both hands resolve as only two fingers and claws at original size, contradicting the former metadata claim and failing the independent left-hand three plus right-hand three gate."
+    },
+    "assets/dinosaurs/deinocheirus-mirificus-rainwet-feathered-wetland-ecology-imagegen-v2.png": {
+      "reason": "Each hand resolves as four fingers and claws at original size, so the rain habitat image fails the exact bilateral three-finger gate."
+    },
+    "assets/dinosaurs/deinocheirus-mirificus-shaggy-river-forage-imagegen-v3.png": {
+      "reason": "The far hand exposes only two readable claws and the supposed third digit is obscured by vegetation; an ambiguous hand cannot pass the strict bilateral crop gate."
     },
     "assets/dinosaurs/buriolestes-schultzi-bagualosaurus-attack-ecology-imagegen-v1.png": {
       "reason": "Former interaction candidate reverses the expected Buriolestes-to-Bagualosaurus size relationship, renders the secondary animal as a small generic quadruped, and stages a lightly wounded direct attack that exceeds the evidence."

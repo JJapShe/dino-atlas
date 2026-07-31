@@ -3311,7 +3311,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/deinocheirus-mirificus-bluehour-celadon-plum-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/deinocheirus-mirificus-bilateral-tridactyl-bluehour-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -3319,7 +3319,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/deinocheirus-mirificus-rainwet-feathered-wetland-ecology-imagegen-v2.png",
+      "source": "assets/dinosaurs/deinocheirus-mirificus-bilateral-tridactyl-rainwet-habitat-imagegen-v3.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
@@ -3335,7 +3335,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/deinocheirus-mirificus-shaggy-river-forage-imagegen-v3.png",
+      "source": "assets/dinosaurs/deinocheirus-mirificus-bilateral-tridactyl-river-forage-imagegen-v4.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
       "phenotype": "canonical-a",
@@ -3361,7 +3361,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/therizinosaurus-cheloniformis-petrol-celadon-dawn-pattern-imagegen-v2.png",
+      "source": "assets/dinosaurs/therizinosaurus-cheloniformis-bilateral-triclaw-petrol-dawn-pattern-imagegen-v3.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -3385,7 +3385,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/therizinosaurus-cheloniformis-tarbosaurus-watergap-interaction-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/therizinosaurus-cheloniformis-bilateral-triclaw-tarbosaurus-watergap-ecology-imagegen-v2.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
       "phenotype": "canonical-a",
@@ -3393,7 +3393,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/therizinosaurus-cheloniformis-adult-subadult-sizeclass-growth-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/therizinosaurus-cheloniformis-bilateral-triclaw-poststorm-defense-imagegen-v1.png",
       "gallerySlot": 6,
       "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
