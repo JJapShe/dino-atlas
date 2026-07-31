@@ -3361,7 +3361,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/therizinosaurus-cheloniformis-bilateral-triclaw-petrol-dawn-pattern-imagegen-v3.png",
+      "source": "assets/dinosaurs/therizinosaurus-cheloniformis-bilateral-triclaw-petrol-dawn-pattern-imagegen-v4.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -3385,7 +3385,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/therizinosaurus-cheloniformis-bilateral-triclaw-tarbosaurus-watergap-ecology-imagegen-v2.png",
+      "source": "assets/dinosaurs/therizinosaurus-cheloniformis-bilateral-triclaw-tarbosaurus-watergap-ecology-imagegen-v4.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
       "phenotype": "canonical-a",

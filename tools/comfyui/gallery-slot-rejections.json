@@ -740,6 +740,15 @@
     "assets/dinosaurs/therizinosaurus-cheloniformis-petrol-celadon-dawn-pattern-imagegen-v2.png": {
       "reason": "The former pattern image has only two readable long claws on one hand and five claws across both hands, so it fails the revised independent left-hand three plus right-hand three gate."
     },
+    "assets/dinosaurs/therizinosaurus-cheloniformis-bilateral-triclaw-petrol-dawn-pattern-imagegen-v3.png": {
+      "reason": "User-triggered 2026-08-01 re-check found a hand that still resolves as only two independently readable long claws; the prior 3+3 approval is withdrawn."
+    },
+    "assets/dinosaurs/therizinosaurus-cheloniformis-bilateral-triclaw-tarbosaurus-watergap-ecology-imagegen-v2.png": {
+      "reason": "User-triggered 2026-08-01 re-check found the left hand resolves as only two independently readable long claws; water separation cannot compensate for failure of the bilateral 3+3 gate."
+    },
+    "assets/dinosaurs/therizinosaurus-cheloniformis-bilateral-triclaw-tarbosaurus-watergap-ecology-imagegen-v3.png": {
+      "reason": "The first 2026-08-01 water-gap replacement still leaves the left hand ambiguously two-clawed at original size, so it is excluded before publication."
+    },
     "assets/dinosaurs/therizinosaurus-cheloniformis-tarbosaurus-watergap-interaction-ecology-imagegen-v1.png": {
       "reason": "Both foreground hands resolve as two long claws at original size; water separation and composition cannot compensate for failure of the bilateral three-claw gate."
     },

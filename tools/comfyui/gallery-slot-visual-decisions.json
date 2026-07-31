@@ -3769,12 +3769,12 @@
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/therizinosaurus-cheloniformis-bilateral-triclaw-petrol-dawn-pattern-imagegen-v3.png",
+        "source": "assets/dinosaurs/therizinosaurus-cheloniformis-bilateral-triclaw-petrol-dawn-pattern-imagegen-v4.png",
         "role": "color-pattern",
-        "reason": "The reverse-direction petrol, celadon, crimson, cobalt, and gold dawn pattern remains distinct from the representative; separate original-size crops show exactly three long claws on the left hand and three on the right, with four support toes on each readable foot and one tail.",
-        "reviewMethod": "Original-size full frame plus separate left-hand, right-hand, both-foot, head, and tail crops under the batch 77 bilateral 3+3 gate and derived-therizinosaurid foot gate",
-        "reviewBatch": "2026-07-31-bilateral-hand-audit-batch-77",
-        "reviewedAt": "2026-07-31T10:34:20.143Z"
+        "reason": "The petrol dawn pattern remains distinct from the representative; both hands are separated from the torso and show exactly three independently readable long claws, with two hind feet and one tail also visible.",
+        "reviewMethod": "User-triggered 2026-08-01 original-size re-audit: each hand was inspected independently and must retain three separate connected claws with no occlusion or merged digit",
+        "reviewBatch": "2026-08-01-therizinosaurus-bilateral-replacement",
+        "reviewedAt": "2026-08-01T00:00:00.000Z"
       },
       "3": {
         "status": "approved",
@@ -3796,12 +3796,12 @@
       },
       "5": {
         "status": "approved",
-        "source": "assets/dinosaurs/therizinosaurus-cheloniformis-bilateral-triclaw-tarbosaurus-watergap-ecology-imagegen-v2.png",
+        "source": "assets/dinosaurs/therizinosaurus-cheloniformis-bilateral-triclaw-tarbosaurus-watergap-ecology-imagegen-v4.png",
         "role": "interaction",
-        "reason": "The foreground Therizinosaurus is spatially separated from the distant Tarbosaurus by a wide water gap; separate crops show exactly three long claws on each foreground hand, four support toes on each readable foot, two legs, and one tail.",
-        "reviewMethod": "Original-size full frame plus separate foreground left-hand, right-hand, both-foot, tail, and distant-animal crops under the batch 77 bilateral 3+3 gate; coexistence and posture remain hypothetical",
-        "reviewBatch": "2026-07-31-bilateral-hand-audit-batch-77",
-        "reviewedAt": "2026-07-31T10:34:20.143Z"
+        "reason": "The foreground Therizinosaurus is spatially separated from the distant Tarbosaurus by a wide water gap; both foreground hands are held against open water and each has exactly three independently readable long claws, plus two legs and one tail.",
+        "reviewMethod": "User-triggered 2026-08-01 original-size re-audit: separate left-hand and right-hand checks require exactly three readable connected claws each; coexistence and posture remain hypothetical",
+        "reviewBatch": "2026-08-01-therizinosaurus-bilateral-replacement",
+        "reviewedAt": "2026-08-01T00:00:00.000Z"
       },
       "6": {
         "status": "approved",

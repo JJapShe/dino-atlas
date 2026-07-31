@@ -18,6 +18,12 @@
 
 ## Current Completed Step
 
+- `Therizinosaurus cheloniformis bilateral-claw correction 2026-08-01`
+  - User re-check rejected the prior `petrol-dawn-pattern v3` and `Tarbosaurus water-gap v2`: a hand in each still resolved as only two independently readable long claws. The initial water-gap v3 retry was also rejected before publication for an ambiguous left hand.
+  - Replaced slot 2 with `therizinosaurus-cheloniformis-bilateral-triclaw-petrol-dawn-pattern-imagegen-v4.png` and slot 5 with `therizinosaurus-cheloniformis-bilateral-triclaw-tarbosaurus-watergap-ecology-imagegen-v4.png`. The water-gap replacement preserves the stable three-claw-per-hand pose from the structure image and changes only the setting plus the distant, non-contact Tarbosaurus context.
+  - All three false positives are in the rejection manifest and retired from visible review. The gate remains bilateral and independent: exactly three connected, countable long claws per hand, with any two, four, fused, overlapping, hidden, or uncountable claw set rejected.
+  - Validation: `132` taxa and `726/726` approved slots, with zero missing candidates/assets, decision mismatches, or rejected selections. Both v4 files return `200` from `8020` and `8792`; the filtered review page loads only the two v4 files and reports no console errors.
+
 - `Kosmoceratops richardsoni six-image hooked-frill and Kaiparowits expansion 2026-07-31`
   - Raised `Kosmoceratops richardsoni` from three to six balanced gallery roles. The original representative, color/pattern variant, and herd habitat remain; the new roles are a bilateral-browhorn full-body structure view, one water-channel-separated generic hadrosaurid formation-context scene, and a near-frontal frill diagnostic view. The first rear-oblique generation was intentionally not copied because one brow horn was hidden, and a second same-angle draft was not promoted because it repeated the composition too closely.
   - The identity gate now requires a short broad skull-attached frill with numerous hooked marginal processes, exactly two separately readable lateral brow horns, one short nasal horn, four separated non-hoof feet, and one pelvis-origin tail. A small caudally positioned parietal fenestra is a bone-level feature under reconstructed continuous skin, not a large transparent opening. Tall pentagonal, broad rounded, or large-windowed frills; radiating Styracosaurus spikes; a Pachyrhinosaurus nasal boss; rhinoceros anatomy; missing or duplicated limbs; and a hidden brow horn are explicit failures.
