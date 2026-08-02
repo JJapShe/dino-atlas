@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-02-lv1-portrait-ecology-batch-1",
+  "createdAt": "2026-08-02T08:24:18.961Z",
+  "purpose": "Add portrait-oriented alternate habitat and behavior scenes to familiar LV1 taxa while pairing them with exact-taxon LV2 contemporaries.",
+  "targetAudience": "ages 5-14",
+  "galleryPolicy": {
+    "slot": 7,
+    "role": "alternate-habitat-behavior",
+    "status": "anatomy review only",
+    "representativePromotion": "prohibited until a separate stricter anatomy review passes",
+    "interactionSafety": "non-graphic, spatially separated, no unsupported chase, kill, family, or pack claim"
+  },
+  "copyrightSafety": {
+    "sourcePolicy": "Only original image-generation outputs and project-internal approved identity assets were used as visual inputs.",
+    "externalEvidenceUse": "External links were used for factual anatomy, formation, and cooccurrence research only, not as artwork inputs or style references.",
+    "styleConstraint": "Every prompt explicitly prohibited imitation of a named artist.",
+    "licenseStatus": "Generated project assets; distribution remains governed by the project's terms and the image-generation account terms. No third-party artwork license is asserted."
+  },
+  "workflow": {
+    "generator": "OpenAI built-in image generation",
+    "mode": "prompt-to-image followed by anatomy-correction image edits for Tarbosaurus-Saurolophus and Allosaurus-Camarasaurus",
+    "seed": "not exposed by generator",
+    "selectionRule": "Only reviewed selections were copied from the generated output area into assets/dinosaurs; two initially copied v2 candidates failed an independent anatomy gate, were removed from the project asset tree, and were replaced by reviewed v3 edits."
+  },
+  "records": {
+    "velociraptor-mongoliensis": {
+      "companionTaxon": "protoceratops-andrewsi",
+      "focalLevel": 1,
+      "companionLevel": 2,
+      "projectAsset": "assets/dinosaurs/velociraptor-mongoliensis-protoceratops-dustfront-portrait-ecology-imagegen-v2.png",
+      "dimensions": "1003x1568",
+      "generatorCallId": "exec-81f274a1-79ac-4f2f-8ca7-529d232667d6",
+      "generatedAt": "2026-08-02T08:10:50.249Z",
+      "prompt": "Create a portrait-oriented 4:5 museum-grade naturalistic paleoart illustration for a children's dinosaur atlas (ages 5-14), scientifically cautious and non-graphic. Scene: Late Cretaceous Djadokhta Formation, Mongolia, at the edge of red sandstone dunes as a light dust gust begins. Use a strong diagonal composition: one Velociraptor mongoliensis in the lower-left foreground, quarter-turn side view, and one Protoceratops andrewsi in the upper-right midground. Both animals must be completely visible from snout to tail tip with every limb and foot readable, separated by a large safe distance, alert but not attacking. Velociraptor: small roughly 2 m feathered dromaeosaur, narrow toothed non-beak snout, folded feathered forelimbs with small three-fingered hands, long stiff banded feathered tail, one clearly raised second-toe sickle claw on each foot, athletic but not giant. Protoceratops: sheep-sized hornless basal ceratopsian, parrot-like beak, modest solid skull-attached frill, low quadrupedal stance, long visible tail, non-hoofed toes; absolutely no large horns or ornate spikes. Warm ochre and muted slate palette, natural light, readable silhouettes, child-friendly quiet tension. No contact, no wrestling, no chasing, no wounds, no blood, no carcass, no roaring monster pose, no extra limbs or digits, no cropped tails, no text, no labels, no watermark. Do not imitate any named artist.",
+      "referenceInputs": [],
+      "scientificContext": {
+        "formation": "Djadokhta Formation",
+        "localityOrMember": "formation-level reconstruction; the fossil pose and exact locality are not recreated",
+        "cooccurrenceConfidence": "very high; exact taxa are preserved together",
+        "interactionEvidence": "direct fighting fossil exists, but this illustration intentionally depicts only non-contact awareness",
+        "evidenceSources": [
+          "https://www.amnh.org/explore/ology/ology-cards/038-fighting-dinosaurs"
+        ]
+      },
+      "review": {
+        "status": "approved for S7 as anatomy review; not representative",
+        "method": "Original-size full-frame visual inspection against both taxa's identity checklists.",
+        "passed": [
+          "two complete and spatially separated silhouettes",
+          "feathered Velociraptor with a low toothed snout, folded forelimbs, raised sickle-claw cue, and full stiff tail",
+          "hornless low Protoceratops with a modest solid frill, beak, four limbs, and full tail",
+          "no contact, injury, blood, carcass, extra animal, crop, text, or watermark"
+        ],
+        "remainingRisks": [
+          "small hand and exact toe counts remain lower-confidence at scene scale",
+          "must remain anatomy review and must not replace the representative"
+        ]
+      }
+    },
+    "tyrannosaurus-rex": {
+      "companionTaxon": "edmontosaurus-annectens",
+      "focalLevel": 1,
+      "companionLevel": 2,
+      "projectAsset": "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-misty-meadow-pause-portrait-ecology-imagegen-v2.png",
+      "dimensions": "1003x1568",
+      "generatorCallId": "exec-d8d5aedc-109a-420b-bae6-1e77105b9a00",
+      "generatedAt": "2026-08-02T08:14:41.358Z",
+      "prompt": "Create a portrait-oriented 4:5 museum-grade naturalistic paleoart illustration for a children's dinosaur atlas (ages 5-14), scientifically cautious and non-graphic. Scene: latest Cretaceous Hell Creek Formation floodplain at cool misty dawn, with a shallow wet meadow, low flowering shrubs, ferns and scattered conifers. Compose vertically: one adult Edmontosaurus annectens in the lower foreground turns its head while pausing at the meadow edge; one adult Tyrannosaurus rex is fully visible in the upper midground at a brush line, also stopped. Keep clear open ground between them and show both entire bodies from snout to tail tip with all feet visible. Tyrannosaurus: massive deep skull, deep torso, extremely small forelimbs with exactly two fingers on each hand, two powerful grounded hind legs, three-toed feet, long heavy tail; no allosaur horns, no oversized arms. Edmontosaurus: large crestless hadrosaur with a broad low duck-billed skull, no tube crest, deep torso, quadrupedal-capable grounded limbs, low restrained fleshy midline ridge along neck/trunk and tiny restrained rear tail spike row, full tail and feet. Quiet ecological awareness rather than combat, cool teal-gray and russet palette, strong depth and readable silhouettes. No pursuit, no attack, no bite, no contact, no wound, no blood, no carcass, no roaring, no extra limbs or fingers, no cropped tails, no text, no labels, no watermark. Do not imitate any named artist.",
+      "referenceInputs": [],
+      "scientificContext": {
+        "formation": "Hell Creek Formation",
+        "localityOrMember": "formation-level reconstruction; the cited specimen locality is not depicted",
+        "cooccurrenceConfidence": "high for formation-level exact-taxon cooccurrence",
+        "interactionEvidence": "an embedded tyrannosaurid tooth and feeding damage establish contact, but attack versus scavenging is unresolved and is not illustrated",
+        "evidenceSources": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC12922588/"
+        ]
+      },
+      "review": {
+        "status": "approved for S7 as anatomy review; not representative",
+        "method": "Original-size full-frame visual inspection against both taxa's identity checklists.",
+        "passed": [
+          "two complete and spatially separated silhouettes",
+          "deep-skulled robust Tyrannosaurus with very small forelimbs, two hind limbs, visible feet, and full heavy tail",
+          "crestless broad-billed Edmontosaurus with a deep body, four limbs, and full tail",
+          "no pursuit, contact, injury, blood, carcass, crop, text, or watermark"
+        ],
+        "remainingRisks": [
+          "Tyrannosaurus finger count is small at scene scale",
+          "Edmontosaurus soft-tissue ridge and rear tail-spike placement require continued review",
+          "must remain anatomy review and must not replace the representative"
+        ]
+      }
+    },
+    "tarbosaurus-bataar": {
+      "companionTaxon": "saurolophus-angustirostris",
+      "focalLevel": 1,
+      "companionLevel": 2,
+      "projectAsset": "assets/dinosaurs/tarbosaurus-bataar-saurolophus-rearward-crest-river-portrait-ecology-imagegen-v3.png",
+      "dimensions": "1122x1402",
+      "generatorCallId": "exec-67b983d6-c65d-467d-8fd4-ddedb0e0e217",
+      "generatedAt": "2026-08-02T08:51:17.788Z",
+      "prompt": "Edit this existing portrait paleoart image while preserving the exact river-separated composition, lighting, landscape, full-body framing, and the distant Tarbosaurus. Correct ONLY the foreground Saurolophus angustirostris anatomy. Replace its current unicorn-like forehead horn with a scientifically cautious Saurolophus skull: a broad low duck-billed muzzle and ONE short solid spike-like crest that grows continuously from the REAR TOP of the skull and angles distinctly backward, nearly following the skull roof. It must not be vertical, conical, detached, nasal, or Parasaurolophus-like. Keep exactly two forelimbs, two hind limbs, four grounded feet, and one complete stiff tail, all separated and uncropped. Exactly two dinosaurs total. No attack, blood, carcass, text, labels, watermark, or named-artist imitation. Naturalistic museum paleoart for ages 5-14.",
+      "referenceInputs": [
+        "rejected generated composition exec-bd07c940-9d7f-4bc0-aa98-de0953761e15; its temporary project v2 copy was removed after the anatomy gate"
+      ],
+      "scientificContext": {
+        "formation": "Nemegt Formation",
+        "localityOrMember": "Bugin Tsav evidence context; the fossil site is not literally depicted",
+        "cooccurrenceConfidence": "high for exact-taxon formation cooccurrence and feeding-trace association",
+        "interactionEvidence": "published traces support scavenging, not a demonstrated live chase or kill; the scene shows avoidance only",
+        "evidenceSources": [
+          "https://www.app.pan.pl/archive/published/app55/app20090133.pdf"
+        ]
+      },
+      "review": {
+        "status": "approved for S7 as anatomy review; not representative",
+        "method": "Original-size full-frame visual inspection after rejecting the crowded first attempt, rejecting the unicorn-crested v2, and editing only the Saurolophus anatomy in v3.",
+        "passed": [
+          "exactly two complete and spatially separated silhouettes with a river between them",
+          "long-skulled Tarbosaurus with tiny forelimbs, grounded hind limbs, visible feet, and full heavy tail",
+          "deep-bodied Saurolophus with a broader low bill and one solid crest continuously attached to the rear skull and swept backward, grounded limbs, and full tail",
+          "no pursuit, contact, injury, blood, carcass, crop, text, or watermark"
+        ],
+        "remainingRisks": [
+          "Tarbosaurus finger count is small at scene scale",
+          "exact Saurolophus toe counts remain lower-confidence at scene scale",
+          "must remain anatomy review and must not replace the representative"
+        ]
+      }
+    },
+    "allosaurus-fragilis": {
+      "companionTaxon": "camarasaurus-lentus",
+      "focalLevel": 1,
+      "companionLevel": 2,
+      "projectAsset": "assets/dinosaurs/allosaurus-fragilis-camarasaurus-boxskull-channel-portrait-ecology-imagegen-v3.png",
+      "dimensions": "1003x1568",
+      "generatorCallId": "exec-63566d11-e9f0-40e0-b681-fc1769abd952",
+      "generatedAt": "2026-08-02T08:52:09.413Z",
+      "prompt": "Edit this existing portrait paleoart image while preserving the exact channel-separated composition, lighting, landscape, full-body framing, and foreground Allosaurus. Correct ONLY the background Camarasaurus lentus anatomy. Make the Camarasaurus head visibly larger and characteristically SHORT, DEEP, and BOXY with a blunt broad muzzle and large nasal region; make the neck COMPACT, THICK, and only moderately long, not a long slender generic sauropod neck. Keep a deep robust torso, level or low shoulders, exactly four sturdy columnar legs with visible grounded feet, and one complete medium non-whip tail. Smooth back only: no spines, armor, plates, hump, or osteoderms. Exactly two dinosaurs total, spatially separated. No chase, blood, carcass, text, labels, watermark, or named-artist imitation. Naturalistic museum paleoart for ages 5-14.",
+      "referenceInputs": [
+        "rejected generated composition exec-a3d768fc-95ff-4af8-9768-5f435d46886f; its temporary project v2 copy was removed after the anatomy gate",
+        "parent v2 was generated from assets/dinosaurs/allosaurus-fragilis-morrison-lowhorn-threefinger-representative-imagegen-v1.png and assets/dinosaurs/camarasaurus-lentus-morrison-box-skull-tubular-manus-representative-imagegen-v2.png"
+      ],
+      "scientificContext": {
+        "formation": "Morrison Formation, Brushy Basin Member",
+        "localityOrMember": "Carnegie Quarry fauna; exact fossil positions are not depicted",
+        "cooccurrenceConfidence": "high for exact-taxon quarry cooccurrence",
+        "interactionEvidence": "cooccurrence only; no direct behavior is inferred",
+        "evidenceSources": [
+          "https://www.nps.gov/dino/learn/nature/dinosaurs-of-dinosaur.htm"
+        ]
+      },
+      "review": {
+        "status": "approved for S7 as anatomy review; not representative",
+        "method": "Original-size full-frame visual inspection after rejecting the generic first attempt, rejecting long-necked v2, and editing only the Camarasaurus anatomy in v3.",
+        "passed": [
+          "exactly two complete and spatially separated silhouettes with a channel between them",
+          "athletic low-skulled Allosaurus with medium forelimbs, visible compact fingers, grounded hind limbs, and full tail",
+          "smooth-backed robust Camarasaurus with a visibly larger short-deep boxy head, compact thick neck, four columnar limbs, level shoulders, and full non-whip tail",
+          "no pursuit, contact, injury, blood, carcass, crop, text, or watermark"
+        ],
+        "remainingRisks": [
+          "exact Allosaurus finger count and Camarasaurus foot anatomy remain lower-confidence at scene scale",
+          "must remain anatomy review and must not replace the representative"
+        ]
+      }
+    }
+  },
+  "rejectedAttempts": [
+    {
+      "taxonPair": "tarbosaurus-bataar + saurolophus-angustirostris",
+      "generatorCallId": "exec-40e42220-607b-4ef7-9b25-42c6136da3ba",
+      "generatedAt": "2026-08-02T08:12:02.243Z",
+      "generatedSourceBasename": "exec-40e42220-607b-4ef7-9b25-42c6136da3ba.png",
+      "copiedToProject": false,
+      "reason": "Crowded three-hadrosaur composition caused overlap, small anatomy, and edge-crop risk; regenerated as exactly two separated animals."
+    },
+    {
+      "taxonPair": "allosaurus-fragilis + camarasaurus-lentus",
+      "generatorCallId": "exec-edb2dc3c-9809-4e8e-adc5-44d997433d94",
+      "generatedAt": "2026-08-02T08:17:45.549Z",
+      "generatedSourceBasename": "exec-edb2dc3c-9809-4e8e-adc5-44d997433d94.png",
+      "copiedToProject": false,
+      "reason": "Camarasaurus drifted toward a generic long-neck with dorsal projections; regenerated from project-internal approved identity references with a smooth back and stronger skull-neck constraints."
+    },
+    {
+      "taxonPair": "tarbosaurus-bataar + saurolophus-angustirostris",
+      "generatorCallId": "exec-bd07c940-9d7f-4bc0-aa98-de0953761e15",
+      "generatedAt": "2026-08-02T08:20:22.185Z",
+      "generatedSourceBasename": "exec-bd07c940-9d7f-4bc0-aa98-de0953761e15.png",
+      "copiedToProjectDuringReview": true,
+      "retainedInProject": false,
+      "reason": "Independent anatomy re-review found a tall unicorn-like Saurolophus forehead horn that violated the rear-skull swept-crest gate; the project v2 copy was removed and replaced by an edited v3."
+    },
+    {
+      "taxonPair": "allosaurus-fragilis + camarasaurus-lentus",
+      "generatorCallId": "exec-a3d768fc-95ff-4af8-9768-5f435d46886f",
+      "generatedAt": "2026-08-02T08:21:31.657Z",
+      "generatedSourceBasename": "exec-a3d768fc-95ff-4af8-9768-5f435d46886f.png",
+      "copiedToProjectDuringReview": true,
+      "retainedInProject": false,
+      "reason": "Independent anatomy re-review found a small narrow head and overly long generic sauropod neck that violated the Camarasaurus box-skull and compact-neck gate; the project v2 copy was removed and replaced by an edited v3."
+    }
+  ]
+}

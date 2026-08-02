@@ -24,6 +24,7 @@ const SLOT_ROLES = [
   { slot: 7, key: "alternate-habitat-behavior", label: "alternate habitat or behavior", kind: "anatomy review" },
 ];
 const RICHNESS_MIN_IMAGES = 6;
+const LEVEL_ONE_RICHNESS_TARGET = 7;
 
 const COMMON_REJECT = [
   "extra legs or duplicated limbs",
@@ -421,6 +422,14 @@ function loadJsonIfPresent(file, fallback = {}) {
   return JSON.parse(fs.readFileSync(file, "utf8"));
 }
 
+function loadAssignmentsIfPresent(file) {
+  if (!fs.existsSync(file)) return {};
+  const source = fs.readFileSync(file, "utf8");
+  const marker = "window.gallerySlotAssignments =";
+  if (!source.includes(marker)) return {};
+  return loadLiteral(source.replace(marker, "const gallerySlotAssignments ="), "gallerySlotAssignments");
+}
+
 function visualDecisionFor(decisions, taxon, slot) {
   return decisions?.taxa?.[taxon]?.[String(slot)] || null;
 }
@@ -702,6 +711,7 @@ function makePlanItem({ dino, samples, identities, profiles, routes, swatches, u
       currentKind: picked?.item?.kind || "",
       currentSource: source,
       currentTitle: picked?.item?.title || "",
+      currentHabitatKey: picked?.item?.habitatKey || "",
       score: picked?.score ?? null,
       selectedBy: picked?.selectedBy || "",
       decisionStatus: decision?.status || "unreviewed",
@@ -718,7 +728,10 @@ function makePlanItem({ dino, samples, identities, profiles, routes, swatches, u
       rejectGate: [profile.avoid, route.reject, ...COMMON_REJECT].filter(Boolean),
     };
   });
-  const richnessTarget = Math.min(SLOT_ROLES.length, Math.max(RICHNESS_MIN_IMAGES, dino.imageSlots));
+  const richnessTarget = Math.min(
+    SLOT_ROLES.length,
+    Math.max(RICHNESS_MIN_IMAGES, dino.imageSlots, dino.knowledgeLevel === 1 ? LEVEL_ONE_RICHNESS_TARGET : 0),
+  );
   const expansionSelected = [];
   for (const role of SLOT_ROLES.slice(dino.imageSlots, richnessTarget)) {
     expansionSelected.push({ role, picked: selectCandidate(candidates, usedSources, role, null) });
@@ -760,6 +773,7 @@ function makePlanItem({ dino, samples, identities, profiles, routes, swatches, u
     period: dino.period,
     region: dino.region,
     family: dino.family,
+    knowledgeLevel: dino.knowledgeLevel,
     imageSlots: dino.imageSlots,
     richnessTarget,
     visibleCandidateCount: candidates.length,
@@ -800,7 +814,8 @@ function writeMarkdown(plan) {
     "",
     `- Taxa: ${plan.summary.taxa}`,
     `- Target slots: ${plan.summary.targetSlots}`,
-    `- Richness target slots (minimum ${RICHNESS_MIN_IMAGES} per taxon): ${plan.summary.richnessTargetSlots}`,
+    `- Richness target slots (minimum ${RICHNESS_MIN_IMAGES} per taxon; LV1 target ${LEVEL_ONE_RICHNESS_TARGET}): ${plan.summary.richnessTargetSlots}`,
+    `- LV1 taxa publishing ${LEVEL_ONE_RICHNESS_TARGET} slots: ${plan.summary.levelOneAtPublishedTarget}/${plan.summary.levelOneTaxa}`,
     `- Taxa already publishing at least ${RICHNESS_MIN_IMAGES} slots: ${plan.summary.taxaAtPublishedTarget}`,
     `- Expansion slots ready for candidate review: ${plan.summary.expansionCandidateReviewSlots}`,
     `- Expansion slots with unregistered suggestions: ${plan.summary.expansionUnregisteredReviewSlots}`,
@@ -826,7 +841,7 @@ function writeMarkdown(plan) {
       lines.push(`| ${taxon.taxon} | ${slot.slot} | ${slot.role} | ${slot.currentSource || "none"} | ${slot.suggestedUnregisteredSource || "none"} |`);
     }
   }
-  lines.push("", `## ${RICHNESS_MIN_IMAGES}-Image Richness Expansion Queue`, "");
+  lines.push("", `## Richness Expansion Queue (minimum ${RICHNESS_MIN_IMAGES}; LV1 target ${LEVEL_ONE_RICHNESS_TARGET})`, "");
   lines.push(
     "| Taxon | Current slots | Target | Slot | Role | Status | Registered candidate | Suggested unregistered candidate |",
     "|---|---:|---:|---:|---|---|---|---|",
@@ -844,20 +859,29 @@ function writeMarkdown(plan) {
   fs.writeFileSync(OUTPUT_MD, `${lines.join("\n")}\n`, "utf8");
 }
 
-function writeAssignments(plan) {
+function writeAssignments(plan, existingAssignments) {
+  const existingBySource = new Map(
+    Object.values(existingAssignments)
+      .flat()
+      .filter((assignment) => assignment?.source)
+      .map((assignment) => [normalizePath(assignment.source), assignment]),
+  );
   const assignments = Object.fromEntries(
     plan.taxa.map((taxon) => [
       taxon.taxon,
       taxon.slots
         .filter((slot) => slot.status === "approved" && slot.currentSource)
-        .map((slot) => ({
-          source: slot.currentSource,
-          gallerySlot: slot.slot,
-          galleryRole: slot.role,
-          phenotype: slot.slot === 2 ? "variant-b" : "canonical-a",
-          habitatKey: taxon.habitatProfile.key,
-          expectedKind: slot.expectedKind,
-        })),
+        .map((slot) => {
+          const existing = existingBySource.get(normalizePath(slot.currentSource));
+          return {
+            source: slot.currentSource,
+            gallerySlot: slot.slot,
+            galleryRole: slot.role,
+            phenotype: existing?.phenotype || (slot.slot === 2 ? "variant-b" : "canonical-a"),
+            habitatKey: existing?.habitatKey || slot.currentHabitatKey || taxon.habitatProfile.key,
+            expectedKind: slot.expectedKind,
+          };
+        }),
     ]),
   );
   const body = [
@@ -879,6 +903,7 @@ function main() {
   const swatches = loadLiteral(source, "taxonPaletteSwatches");
   const decisions = loadJsonIfPresent(VISUAL_DECISIONS, { taxa: {}, rejectedSources: {} });
   const rejectionManifest = loadJsonIfPresent(REJECTIONS_JSON, { rejectedSources: {} });
+  const existingAssignments = loadAssignmentsIfPresent(OUTPUT_ASSIGNMENTS);
   const rejectedSources = new Set([
     ...Object.keys(decisions.rejectedSources || {}),
     ...Object.keys(rejectionManifest.rejectedSources || {}),
@@ -916,6 +941,10 @@ function main() {
       taxa: taxa.length,
       targetSlots: taxa.reduce((total, taxon) => total + taxon.imageSlots, 0),
       richnessTargetSlots: taxa.reduce((total, taxon) => total + taxon.richnessTarget, 0),
+      levelOneTaxa: taxa.filter((taxon) => taxon.knowledgeLevel === 1).length,
+      levelOneAtPublishedTarget: taxa.filter(
+        (taxon) => taxon.knowledgeLevel === 1 && taxon.imageSlots >= LEVEL_ONE_RICHNESS_TARGET,
+      ).length,
       taxaAtPublishedTarget: taxa.filter((taxon) => taxon.imageSlots >= RICHNESS_MIN_IMAGES).length,
       taxaWithEnoughVisibleCandidates: taxa.filter((taxon) => taxon.visibleCandidateCount >= RICHNESS_MIN_IMAGES).length,
       expansionCandidateReviewSlots: expansionSlots.filter((slot) => slot.status === "candidate-review").length,
@@ -941,7 +970,7 @@ function main() {
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
   fs.writeFileSync(OUTPUT_JSON, `${JSON.stringify(plan, null, 2)}\n`, "utf8");
   writeMarkdown(plan);
-  writeAssignments(plan);
+  writeAssignments(plan, existingAssignments);
   console.log(JSON.stringify(plan.summary, null, 2));
 }
 

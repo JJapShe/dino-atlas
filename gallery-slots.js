@@ -949,6 +949,14 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/allosaurus-fragilis-camarasaurus-boxskull-channel-portrait-ecology-imagegen-v3.png",
+      "gallerySlot": 7,
+      "galleryRole": "alternate-habitat-behavior",
+      "phenotype": "canonical-a",
+      "habitatKey": "morrison-carnegie-braided-channel",
+      "expectedKind": "anatomy review"
     }
   ],
   "marshosaurus-bicentesimus": [
@@ -3149,6 +3157,14 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-misty-meadow-pause-portrait-ecology-imagegen-v2.png",
+      "gallerySlot": 7,
+      "galleryRole": "alternate-habitat-behavior",
+      "phenotype": "canonical-a",
+      "habitatKey": "hell-creek-misty-wet-meadow",
+      "expectedKind": "anatomy review"
     }
   ],
   "spinosaurus-aegyptiacus": [
@@ -4399,6 +4415,14 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/tarbosaurus-bataar-saurolophus-rearward-crest-river-portrait-ecology-imagegen-v3.png",
+      "gallerySlot": 7,
+      "galleryRole": "alternate-habitat-behavior",
+      "phenotype": "canonical-a",
+      "habitatKey": "nemegt-braided-river-avoidance",
+      "expectedKind": "anatomy review"
     }
   ],
   "velociraptor-mongoliensis": [
@@ -4448,6 +4472,14 @@ window.gallerySlotAssignments = {
       "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "gobi-arid",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-protoceratops-dustfront-portrait-ecology-imagegen-v2.png",
+      "gallerySlot": 7,
+      "galleryRole": "alternate-habitat-behavior",
+      "phenotype": "canonical-a",
+      "habitatKey": "djadokhta-dust-front",
       "expectedKind": "anatomy review"
     }
   ],

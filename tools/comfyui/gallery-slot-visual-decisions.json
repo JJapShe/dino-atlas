@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-31T12:06:31.000Z",
-  "reviewBatch": "2026-07-31-richness-batch-79-kosmoceratops",
-  "reviewMethod": "Batch 79 original-size review of three Kosmoceratops richardsoni expansion images. Each selected image was checked for a short broad skull-attached frill with small caudal fenestrae covered by continuous skin rather than a large open or transparent window, two separate long lateral brow horns, one short nasal horn, hooked marginal ornament, four separately readable limbs and non-hoof feet, one continuous tail, role diversity, palette stability, formation context, and absence of Triceratops, Pentaceratops, Torosaurus, rhino, or artifact drift.",
-  "targetSlots": 726,
+  "generatedAt": "2026-08-02T08:52:50.309Z",
+  "reviewBatch": "2026-08-02-lv1-portrait-ecology-batch-1",
+  "reviewMethod": "Batch 1 original-size full-frame review of four portrait LV1-LV2 ecology scenes against both taxa's identity checklists, complete body and limb separation, formation-level evidence, non-graphic behavior limits, role diversity, and representative-promotion prohibition. An independent second gate rejected the Saurolophus unicorn-like crest and generic long-necked Camarasaurus v2 candidates; anatomy-corrected v3 edits were re-reviewed before approval. Remaining scene-scale uncertainties keep every selection at anatomy-review status.",
+  "targetSlots": 796,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -1067,6 +1067,15 @@
         "reviewMethod": "Primary-source anatomy gate plus original-size full-frame and isolated head, both-hand, hind-foot, tail, secondary-animal, and final four-spike crop review",
         "reviewBatch": "2026-07-26-richness-six-slot-batch-9",
         "reviewedAt": "2026-07-26T08:04:19.381Z"
+      },
+      "7": {
+        "status": "approved",
+        "source": "assets/dinosaurs/allosaurus-fragilis-camarasaurus-boxskull-channel-portrait-ecology-imagegen-v3.png",
+        "role": "alternate-habitat-behavior",
+        "reason": "Approved only as an anatomy-review S7 portrait after rejecting v2: the channel separates two complete exact-taxon Carnegie Quarry silhouettes, Allosaurus retains its low skull, medium arms and full tail, and the edited Camarasaurus now has a visibly larger short-deep boxy head, compact thick neck, smooth robust body, four legs and non-whip tail. Scene-scale digits remain an explicit review risk, so this cannot replace a representative.",
+        "reviewMethod": "Original-size full-frame inspection against both identity checklists after rejecting the generic first attempt and long-necked v2; the v3 edit, project-internal approved identity references, and NPS exact-taxon Carnegie Quarry records were cross-checked",
+        "reviewBatch": "2026-08-02-lv1-portrait-ecology-batch-1",
+        "reviewedAt": "2026-08-02T08:52:50.309Z"
       }
     },
     "marshosaurus-bicentesimus": {
@@ -3531,6 +3540,15 @@
         "reviewMethod": "T. rex primary-source skull, forelimb, integument, and lip gate plus original-size full-frame and isolated head, both-hand, both-foot, tail, and secondary-animal inspection",
         "reviewBatch": "2026-07-26-richness-six-slot-batch-11",
         "reviewedAt": "2026-07-26T09:49:42.120Z"
+      },
+      "7": {
+        "status": "approved",
+        "source": "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-misty-meadow-pause-portrait-ecology-imagegen-v2.png",
+        "role": "alternate-habitat-behavior",
+        "reason": "Approved only as an anatomy-review S7 portrait: open meadow separates two complete animals, Tyrannosaurus retains the deep skull, robust torso, tiny arms, two hind limbs and full tail, and Edmontosaurus retains a crestless broad bill, deep body, four limbs and full tail. Small finger detail and Edmontosaurus soft-tissue ridge placement remain review risks, and no attack or scavenging event is claimed.",
+        "reviewMethod": "Original-size full-frame inspection against both identity checklists plus the Hell Creek exact-taxon contact evidence; non-contact composition, full tails, visible feet, and representative-promotion prohibition were checked",
+        "reviewBatch": "2026-08-02-lv1-portrait-ecology-batch-1",
+        "reviewedAt": "2026-08-02T08:24:18.961Z"
       }
     },
     "spinosaurus-aegyptiacus": {
@@ -4931,6 +4949,15 @@
         "reviewMethod": "built-in image generation followed by original-size limb-count, hand-digit, tail-separation, and growth-stage inspection",
         "reviewBatch": "2026-07-26-richness-six-slot-batch-3",
         "reviewedAt": "2026-07-26T04:14:26Z"
+      },
+      "7": {
+        "status": "approved",
+        "source": "assets/dinosaurs/tarbosaurus-bataar-saurolophus-rearward-crest-river-portrait-ecology-imagegen-v3.png",
+        "role": "alternate-habitat-behavior",
+        "reason": "Approved only as an anatomy-review S7 portrait after the crowded first attempt and unicorn-crested v2 were rejected: exactly two complete animals are separated by a river, Tarbosaurus retains a long skull, tiny arms, grounded hind limbs and full tail, and the edited Saurolophus now has a broader low bill and one solid crest attached to the rear skull and swept backward, plus grounded limbs and a full tail. Scene-scale digits remain an explicit review risk, so this cannot replace a representative.",
+        "reviewMethod": "Original-size full-frame inspection against both identity checklists after the v3 anatomy edit plus the Bugin Tsav feeding-trace paper; exact animal count, body separation, rear-skull crest attachment, full tails, visible feet, non-pursuit behavior, and representative-promotion prohibition were checked",
+        "reviewBatch": "2026-08-02-lv1-portrait-ecology-batch-1",
+        "reviewedAt": "2026-08-02T08:52:50.309Z"
       }
     },
     "velociraptor-mongoliensis": {
@@ -4987,6 +5014,15 @@
         "reviewMethod": "Primary-source anatomy gate plus original-size full-frame and isolated adult, juvenile, both-foot, and tail-separation inspection",
         "reviewBatch": "2026-07-26-richness-six-slot-batch-15",
         "reviewedAt": "2026-07-26T14:38:24.904Z"
+      },
+      "7": {
+        "status": "approved",
+        "source": "assets/dinosaurs/velociraptor-mongoliensis-protoceratops-dustfront-portrait-ecology-imagegen-v2.png",
+        "role": "alternate-habitat-behavior",
+        "reason": "Approved only as an anatomy-review S7 portrait: wide sand and a dust front separate two complete animals, Velociraptor retains feathering, a low toothed snout, folded forelimbs, raised sickle-claw cues and a full stiff tail, while Protoceratops remains hornless with a modest solid frill, low four-legged body and full tail. Scene-scale hand and toe counts remain review risks, and the famous fossil pose is not recreated.",
+        "reviewMethod": "Original-size full-frame inspection against both identity checklists plus the AMNH Fighting Dinosaurs record; full silhouettes, spatial separation, non-contact behavior, tail continuity, and representative-promotion prohibition were checked",
+        "reviewBatch": "2026-08-02-lv1-portrait-ecology-batch-1",
+        "reviewedAt": "2026-08-02T08:24:18.961Z"
       }
     },
     "triceratops-horridus": {
