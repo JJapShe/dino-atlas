@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dino Atlas MVP</title>
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="./styles.css?v=20260802-familiarity-levels-v1" />
+    <link rel="stylesheet" href="./styles.css?v=20260802-classification-tabs-v1" />
   </head>
   <body data-active-view="atlas">
     <div class="app-shell">
@@ -118,6 +118,33 @@
                 <input id="mapQuickSearch" type="search" placeholder="공룡명·분류·지역 빠른 검색" autocomplete="off" />
               </label>
             </div>
+            <nav
+              class="classification-strip atlas-classification-strip"
+              data-classification-tabs
+              aria-label="분류군별 계통도 보기"
+            >
+              <button class="active" data-classification="all" type="button" aria-pressed="true">
+                <span>전체</span><strong data-classification-count>0</strong>
+              </button>
+              <button data-classification="theropoda" type="button" aria-pressed="false">
+                <span>수각류</span><strong data-classification-count>0</strong>
+              </button>
+              <button data-classification="sauropodomorpha" type="button" aria-pressed="false">
+                <span>용각형류</span><strong data-classification-count>0</strong>
+              </button>
+              <button data-classification="ornithischia" type="button" aria-pressed="false">
+                <span>조반류</span><strong data-classification-count>0</strong>
+              </button>
+              <button data-classification="pterosauria" type="button" aria-pressed="false">
+                <span>익룡</span><strong data-classification-count>0</strong>
+              </button>
+              <button data-classification="marine-reptilia" type="button" aria-pressed="false">
+                <span>바다 파충류</span><strong data-classification-count>0</strong>
+              </button>
+              <button data-classification="early-dinosaur" type="button" aria-pressed="false">
+                <span>초기 공룡</span><strong data-classification-count>0</strong>
+              </button>
+            </nav>
             <div class="map-toolbar">
               <div class="map-toolbar-heading">
                 <p class="eyebrow">Phylogeny Map</p>
@@ -212,6 +239,33 @@
               <option value="size">크기순</option>
             </select>
           </div>
+          <nav
+            class="classification-strip catalog-classification-strip"
+            data-classification-tabs
+            aria-label="분류군별 도감 보기"
+          >
+            <button class="active" data-classification="all" type="button" aria-pressed="true">
+              <span>전체</span><strong data-classification-count>0</strong>
+            </button>
+            <button data-classification="theropoda" type="button" aria-pressed="false">
+              <span>수각류</span><strong data-classification-count>0</strong>
+            </button>
+            <button data-classification="sauropodomorpha" type="button" aria-pressed="false">
+              <span>용각형류</span><strong data-classification-count>0</strong>
+            </button>
+            <button data-classification="ornithischia" type="button" aria-pressed="false">
+              <span>조반류</span><strong data-classification-count>0</strong>
+            </button>
+            <button data-classification="pterosauria" type="button" aria-pressed="false">
+              <span>익룡</span><strong data-classification-count>0</strong>
+            </button>
+            <button data-classification="marine-reptilia" type="button" aria-pressed="false">
+              <span>바다 파충류</span><strong data-classification-count>0</strong>
+            </button>
+            <button data-classification="early-dinosaur" type="button" aria-pressed="false">
+              <span>초기 공룡</span><strong data-classification-count>0</strong>
+            </button>
+          </nav>
           <div class="card-grid" id="catalogGrid"></div>
         </section>
 
@@ -269,7 +323,7 @@
     </div>
 
 <script src="./gallery-slots.js?v=20260801-almas-six-slot-v1"></script>
-<script src="./app.js?v=20260802-familiarity-levels-v1"></script>
+<script src="./app.js?v=20260802-classification-tabs-v1"></script>
     <script src="./atlas-layout.js?v=20260731-resizable-inspector-v1"></script>
   </body>
 </html>

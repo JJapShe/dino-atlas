@@ -4284,6 +4284,7 @@ const state = {
   search: "",
   diet: "all",
   knowledgeLevel: "all",
+  classification: "all",
   sort: "updated",
   map: {
     mode: "timeline",
@@ -4308,6 +4309,26 @@ const state = {
     originY: 0,
   },
 };
+
+const ornithischianClassificationClades = new Set([
+  "Ornithischia",
+  "Ornithopoda",
+  "Ceratopsia",
+  "Thyreophora",
+  "Ankylosauria",
+  "Pachycephalosauria",
+  "Neornithischia",
+]);
+
+const classificationGroups = Object.freeze([
+  { id: "all", label: "전체" },
+  { id: "theropoda", label: "수각류" },
+  { id: "sauropodomorpha", label: "용각형류" },
+  { id: "ornithischia", label: "조반류" },
+  { id: "pterosauria", label: "익룡" },
+  { id: "marine-reptilia", label: "바다 파충류" },
+  { id: "early-dinosaur", label: "초기 공룡" },
+]);
 
 const timelinePeriodOrder = Object.freeze([
   { id: "middle-triassic", label: "중기 트라이아스기", era: "triassic" },
@@ -21130,30 +21151,73 @@ function getGalleryItems(dino) {
   });
 }
 
-function getFilteredDinosaurs() {
+function matchesClassification(dino, classification = state.classification) {
+  if (classification === "all") return true;
+  if (classification === "theropoda") return dino.clade === "Theropoda";
+  if (classification === "sauropodomorpha") return dino.clade === "Sauropodomorpha";
+  if (classification === "ornithischia") {
+    return ornithischianClassificationClades.has(dino.clade);
+  }
+  if (classification === "pterosauria") return dino.rootClade === "Pterosauria";
+  if (classification === "marine-reptilia") return dino.rootClade === "Marine Reptilia";
+  if (classification === "early-dinosaur") return dino.clade === "Saurischia";
+  return false;
+}
+
+function matchesNonClassificationFilters(dino) {
   const query = state.search.trim().toLowerCase();
-  return dinosaurs.filter((dino) => {
-    const dietMatches = state.diet === "all" || dino.diet.includes(state.diet);
-    const levelMatches =
-      state.knowledgeLevel === "all" || dino.knowledgeLevel === Number(state.knowledgeLevel);
-    const text = [
-      dino.name,
-      dino.koreanName,
-      dino.rootClade,
-      dino.clade,
-      dino.family,
-      cladeMeta[dino.clade],
-      ...(taxonomySearchAliases[dino.rootClade] || []),
-      ...(taxonomySearchAliases[dino.clade] || []),
-      dino.period,
-      dino.region,
-      getKnowledgeLevel(dino.knowledgeLevel).short,
-      getKnowledgeLevel(dino.knowledgeLevel).label,
-    ]
-      .join(" ")
-      .toLowerCase();
-    return dietMatches && levelMatches && (!query || text.includes(query));
+  const dietMatches = state.diet === "all" || dino.diet.includes(state.diet);
+  const levelMatches =
+    state.knowledgeLevel === "all" || dino.knowledgeLevel === Number(state.knowledgeLevel);
+  const text = [
+    dino.name,
+    dino.koreanName,
+    dino.rootClade,
+    dino.clade,
+    dino.family,
+    cladeMeta[dino.clade],
+    ...(taxonomySearchAliases[dino.rootClade] || []),
+    ...(taxonomySearchAliases[dino.clade] || []),
+    dino.period,
+    dino.region,
+    getKnowledgeLevel(dino.knowledgeLevel).short,
+    getKnowledgeLevel(dino.knowledgeLevel).label,
+  ]
+    .join(" ")
+    .toLowerCase();
+  return dietMatches && levelMatches && (!query || text.includes(query));
+}
+
+function getFilteredDinosaurs() {
+  return dinosaurs.filter(
+    (dino) => matchesNonClassificationFilters(dino) && matchesClassification(dino),
+  );
+}
+
+function renderClassificationTabs() {
+  const baseMatches = dinosaurs.filter(matchesNonClassificationFilters);
+  const counts = new Map(
+    classificationGroups.map((group) => [
+      group.id,
+      baseMatches.filter((dino) => matchesClassification(dino, group.id)).length,
+    ]),
+  );
+
+  $$('[data-classification-tabs] [data-classification]').forEach((button) => {
+    const active = button.dataset.classification === state.classification;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+    const count = button.querySelector("[data-classification-count]");
+    if (count) count.textContent = counts.get(button.dataset.classification) ?? 0;
   });
+}
+
+function centerActiveClassificationTab(strip, behavior = "smooth") {
+  if (!strip) return;
+  const button = strip.querySelector(`[data-classification="${state.classification}"]`);
+  if (!button) return;
+  const targetLeft = button.offsetLeft - (strip.clientWidth - button.offsetWidth) / 2;
+  strip.scrollTo({ left: Math.max(0, targetLeft), behavior });
 }
 
 function getDinoById(id) {
@@ -27201,6 +27265,15 @@ function setView(view) {
   syncResponsiveMapInspector();
   applyMapUiState();
   renderAll();
+  requestAnimationFrame(() => {
+    const activeStrip =
+      view === "atlas"
+        ? $(".atlas-classification-strip")
+        : view === "catalog"
+          ? $(".catalog-classification-strip")
+          : null;
+    centerActiveClassificationTab(activeStrip, "auto");
+  });
   if (view === "atlas" && state.map.mode === "tree" && !state.map.fitted) {
     const viewport = $("#mapViewport");
     if (viewport?.clientWidth > 0 && viewport.clientHeight > 0) {
@@ -27212,6 +27285,7 @@ function setView(view) {
 }
 
 function renderAll() {
+  renderClassificationTabs();
   renderMetrics();
   if (state.map.mode === "tree") {
     renderPhyloMap();
@@ -27564,6 +27638,17 @@ function bindEvents() {
     refitAtlasAfterFilter();
   });
 
+  $$('[data-classification-tabs]').forEach((tabs) => {
+    tabs.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-classification]");
+      if (!button) return;
+      state.classification = button.dataset.classification;
+      renderAll();
+      refitAtlasAfterFilter();
+      requestAnimationFrame(() => centerActiveClassificationTab(tabs));
+    });
+  });
+
   $("#periodSort").addEventListener("change", (event) => {
     state.sort = event.target.value;
     renderCatalog();
@@ -27573,6 +27658,7 @@ function bindEvents() {
     state.search = "";
     state.diet = "all";
     state.knowledgeLevel = "all";
+    state.classification = "all";
     state.sort = "updated";
     $("#searchInput").value = "";
     $("#mapQuickSearch").value = "";
