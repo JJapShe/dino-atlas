@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-02-almas-short-deep-skull-coherence-1",
+  "taxonId": "almas-ukhaa",
+  "taxonName": "Almas ukhaa",
+  "createdAt": "2026-08-02T13:07:05.575Z",
+  "requestedVisualTrait": "Replace the visually inconsistent first three gallery images with one coherent short, relatively deep subtriangular skull direction while keeping representative, palette-variant, and ecology roles separate.",
+  "audienceBoundary": "Natural-history paleoart for ages 5-14. Ecology remains non-graphic and no speculative behavior is presented as a fossil fact.",
+  "evidenceBoundary": {
+    "direct": [
+      "Pei et al. 2017 describe the holotype as a nearly complete articulated cranium with partial postcranium.",
+      "The skull is short, relatively deep, and subtriangular in lateral view, with a length-to-depth ratio near 2.5:1, a large orbit, an elongated naris, and small teeth.",
+      "The preserved postcranium supports a small body, long lower legs, and an arctometatarsalian metatarsus."
+    ],
+    "comparativeOrInferred": [
+      "Two compact folded forelimbs, living hand and toe appearance, digit-II presentation, full distal tail, and complete body outline use close-troodontid comparison.",
+      "Short layered filament covering is a conservative comparative reconstruction, not direct Almas integument evidence."
+    ],
+    "hypothetical": [
+      "Olive, cream, aubergine, turquoise, saffron, crimson, and fleck patterns are artistic hypotheses.",
+      "The exact Djadokhta scene, simultaneous fauna, nest-side placement, grouping, movement, and behavior are visual hypotheses."
+    ]
+  },
+  "copyrightSafety": {
+    "externalArtworkUsed": false,
+    "externalImagesUsed": false,
+    "projectOwnedGeneratedReferencesOnly": true,
+    "namedArtistImitation": false,
+    "licenseStatus": "Generated project assets; no third-party artwork license is asserted.",
+    "paperUse": "Pei et al. 2017 was used for factual anatomy constraints only; no figure or published artwork was copied into the generated assets."
+  },
+  "sources": [
+    {
+      "title": "Osteology of a New Late Cretaceous Troodontid Specimen from Ukhaa Tolgod, Mongolia",
+      "authors": "Pei et al.",
+      "year": 2017,
+      "publisher": "American Museum Novitates",
+      "issue": "3889",
+      "doi": "https://doi.org/10.1206/3889.1",
+      "pdf": "https://bioone.org/journals/american-museum-novitates/volume-2017/issue-3889/3889.1/Osteology-of-a-New-Late-Cretaceous-Troodontid-Specimen-from-Ukhaa/10.1206/3889.1.pdf",
+      "retrievedAt": "2026-08-02T12:23:24.635Z",
+      "use": "Factual skull and preserved-postcranium constraints only"
+    }
+  ],
+  "promptEncoding": "Join each promptLines array with LF. The arrays preserve the final prompt text used for each approved generator output.",
+  "records": {
+    "representative": {
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "generatedAt": "2026-08-02T12:53:09.108Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Reference-guided edit after rejecting a three-leg first draft and an owl-round second draft; third pass corrected skull ratio and separated the forelimbs.",
+      "seed": "not exposed by generator",
+      "callId": "exec-c7bc5fdc-64ae-4e45-9fcf-a54a467fb7c9",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-c7bc5fdc-64ae-4e45-9fcf-a54a467fb7c9.png",
+      "approvedProjectPath": "assets/dinosaurs/almas-ukhaa-short-deep-skull-olive-unbanded-representative-imagegen-v2.png",
+      "sha256": "D3F998932BF50B0CD06744E21B1A4E14DD3FF141C5F7DFD575F1A775BADAA124",
+      "bytes": 2955195,
+      "dimensions": "1536x1024",
+      "referenceImages": [
+        "private rejected draft exec-2849ef2f-c285-498f-a4c8-f0222487c787.png used only as the edit target",
+        "assets/dinosaurs/almas-ukhaa-ash-apricot-unbanded-pattern-imagegen-v2.png used only to prevent an owl-round skull"
+      ],
+      "promptLines": [
+        "Use case: precise-object-edit",
+        "Asset type: Dino Atlas Almas ukhaa S1 representative-candidate scientific anatomy correction, third pass",
+        "",
+        "Input images:",
+        "- Image 1 is the current S1 candidate and the ONLY edit target.",
+        "- Image 2 is a project-owned Almas ukhaa comparison used only to prevent an over-round, owl-like skull. Do not copy its wet setting, gray colors, pose, hidden arm, or exaggerated raised toe.",
+        "",
+        "Primary request:",
+        "Preserve Image 1's bright Djadokhta desert, camera, full-body framing, animal position, olive-brown/cream colors, pale flecks, orange cheek mark, small lightly built torso, exactly two long hind limbs, exactly two feet, modest digit-II claws, one long unbanded tail, lighting, and ground shadow. Make only the head-proportion and forelimb-separation corrections below.",
+        "",
+        "1. HEAD PROPORTION:",
+        "Lengthen the bony skull and snout moderately and lower the crown slightly so the visible lateral skull forms a SHORT BUT RELATIVELY DEEP SUBTRIANGULAR outline whose bony length is approximately 2.4-2.5 times its depth. The head must be visibly longer and less round than in Image 1, yet still much shorter and deeper than the old long low dromaeosaur-like S1. Keep a large orbit but reduce the glossy eyeball diameter slightly and avoid a circular owl/juvenile-bird head. Keep a small lightly toothed non-avian jaw, a subtly elongated external naris, and a restrained low brow contour. No toothless bird beak, facial disk, or needle snout. Shorten and smooth only the outer crown feathers as needed so the feather silhouette follows the more angular subtriangular skull rather than forming a round ball.",
+        "",
+        "2. TWO SEPARATE FORELIMBS:",
+        "Image 1's two folded forelimbs overlap too tightly. Repose them into exactly TWO compact, clearly separate forelimbs with a visible strip of empty background/body-negative-space between their distal hands. Keep both attached naturally at the shoulder girdle. Place the nearer forelimb slightly rearward and the farther forelimb slightly forward/lower so each arm and hand can be traced independently from shoulder to wrist. Each hand should show three small separate clawed digits where readable, but do not enlarge the arms or turn them into diagnostic evidence. Use short layered feather covering only; no long primary flight feathers, spread wings, or large fan shapes.",
+        "",
+        "COUNT LOCK:",
+        "Exactly one animal, one head, exactly two forelimbs, exactly two hind limbs, exactly two feet, exactly one tail. Do not add, remove, fuse, or reposition either hind limb. Preserve both grounded outer feet and all tail geometry. No third leg, third foot, extra arm, floating hand, duplicated digits, or missing tail.",
+        "",
+        "STRICT SCENE LOCK:",
+        "Do not change the body length, hips, belly, leg positions, pose, camera, crop, environment, vegetation, weather, palette, markings, or lighting except for the localized head and forelimb corrections.",
+        "",
+        "Style:",
+        "Naturalistic museum-grade scientific paleoart for ages 5-14, count-level representative candidate. Feather distribution, hands, feet, tail completion, and colors remain reconstruction hypotheses.",
+        "",
+        "Constraints:",
+        "No other animals, text, caption, logo, signature, border, watermark, modern grass, flowers, owl face, long dromaeosaur snout, oversized wing fans, regular tail bands, giant sickle claws, or extra anatomy."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-02T13:07:05.575Z",
+        "method": "Independent original-size science and visual review of the skull ratio, orbit, tooth line, forelimb separation, two hind limbs and feet, pelvis-tail join, tail tip, and extra-anatomy artifacts.",
+        "result": "Approved as the sole representative. Short relatively deep subtriangular skull, natural large orbit, small teeth, two separate forelimbs, two hind limbs and feet, and one unbanded tail pass. Hands, toes, distal tail, integument, and color remain comparative or hypothetical."
+      }
+    },
+    "color-pattern": {
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved",
+      "generatedAt": "2026-08-02T12:57:04.911Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Palette-only edit of the anatomy-approved S1 representative control.",
+      "seed": "not exposed by generator",
+      "callId": "exec-4eaaac6d-5a9b-47f1-8129-4b3496c203d2",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-4eaaac6d-5a9b-47f1-8129-4b3496c203d2.png",
+      "approvedProjectPath": "assets/dinosaurs/almas-ukhaa-short-deep-skull-aubergine-unbanded-pattern-imagegen-v2.png",
+      "sha256": "6EC730E5F3D5DA05360A0778477CAB9D81225EB25BC3EEBBF2E6F68F6A303C9A",
+      "bytes": 2875706,
+      "dimensions": "1536x1024",
+      "referenceImages": [
+        "assets/dinosaurs/almas-ukhaa-short-deep-skull-olive-unbanded-representative-imagegen-v2.png",
+        "assets/dinosaurs/almas-ukhaa-aubergine-turquoise-pattern-imagegen-v1.png used only as a palette reference"
+      ],
+      "promptLines": [
+        "Use case: precise-object-edit",
+        "Asset type: Dino Atlas Almas ukhaa S2 color-pattern variant derived from the anatomy-approved S1 representative control",
+        "",
+        "Input images:",
+        "- Image 1 is the anatomy-approved third-pass Almas ukhaa S1 representative control and the ONLY edit target. Its skull, eye size, teeth, limbs, hands, feet, tail, pose, framing, environment, and feather geometry are locked.",
+        "- Image 2 is the old S2 image used ONLY as a color-palette reference. Do not copy its old long low skull, oversized wing-like arm feathers, regular tail bands, or animal geometry.",
+        "",
+        "Primary request:",
+        "Recolor only the feathers, eye ring, and small facial markings of the Almas ukhaa in Image 1. Preserve Image 1's exact short relatively deep subtriangular skull, large natural orbit, small toothed non-avian jaw, two clearly separated compact forelimbs and hands, two hind limbs, two feet, one complete unbanded tail, body proportions, pose, animal placement, bright Djadokhta desert background, light, and shadow.",
+        "",
+        "Required hypothetical palette:",
+        "- deep muted aubergine over crown, neck, back, hips, and upper tail",
+        "- pale warm cream throat, belly, and lower tail edge",
+        "- restrained turquoise eye ring",
+        "- small muted saffron cheek/throat accent",
+        "- one subdued crimson shoulder patch",
+        "- charcoal tips on the compact forelimb feather covering",
+        "- sparse irregular mint and cream flecks on flanks and proximal tail",
+        "",
+        "Tail lock:",
+        "The tail remains completely UNBANDED. No black-and-white rings, no regular stripes, no repeated chevrons. Use a continuous aubergine tail with sparse irregular flecks only.",
+        "",
+        "Absolute anatomy lock:",
+        "Do not change skull length or depth, eye size, naris, tooth line, neck, torso, forelimb positions, hand count, finger shapes, feather lengths, hind-limb positions, foot count, toes, tail shape, pose, camera, crop, animal number, background, weather, lighting, or shadows. Exactly one animal, one head, two forelimbs, two hind limbs, two feet, and one tail.",
+        "",
+        "Style:",
+        "Match Image 1's naturalistic museum scientific-paleoart rendering. Colors are an artistic hypothesis for a 5-14 audience; vivid but not neon.",
+        "",
+        "Constraints:",
+        "No text, caption, logo, signature, border, watermark, extra animals, changed plants, added or removed anatomy, third leg, third foot, long dromaeosaur snout, owl face, spread wings, long primary flight feathers, regular tail bands, or giant sickle claw."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-02T13:07:05.575Z",
+        "method": "Original-size comparison with S1 for identical anatomy, appendage count, tail continuity, unbanded pattern, and edit artifacts.",
+        "result": "Approved only as color-pattern review hold. Anatomy matches S1 and the tail remains unbanded; the palette is not promoted as fossil evidence."
+      }
+    },
+    "habitat-ecology": {
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "kind": "anatomy review",
+      "status": "approved",
+      "generatedAt": "2026-08-02T12:58:49.555Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Ecology-scene identity edit using the approved S1 skull and compact-forelimb control after one superseded long-low-head draft.",
+      "seed": "not exposed by generator",
+      "callId": "exec-18ced6cb-dfc1-4039-aa20-d96a7c095d7c",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-18ced6cb-dfc1-4039-aa20-d96a7c095d7c.png",
+      "approvedProjectPath": "assets/dinosaurs/almas-ukhaa-short-deep-skull-djadokhta-ecology-imagegen-v2.png",
+      "sha256": "B32470530A518A8CAE79EED8F6AAEFDBE9F829203B3D39C2701D9D775904A080",
+      "bytes": 3448678,
+      "dimensions": "1536x1024",
+      "referenceImages": [
+        "private superseded draft exec-e57440ab-5e69-45dc-9095-b0c3eb16b6c5.png used only as the edit target",
+        "assets/dinosaurs/almas-ukhaa-short-deep-skull-olive-unbanded-representative-imagegen-v2.png"
+      ],
+      "promptLines": [
+        "Use case: precise-object-edit",
+        "Asset type: Dino Atlas Almas ukhaa S3 ecology coherence correction, second pass",
+        "",
+        "Input images:",
+        "- Image 1 is the current S3 Djadokhta ecology candidate and the ONLY edit target.",
+        "- Image 2 is the anatomy-approved S1 representative control. Use only its Almas ukhaa skull proportions, eye scale, small toothed non-avian jaw, separated compact forelimbs, and olive-brown/cream unbanded population motif.",
+        "",
+        "Primary request:",
+        "Preserve Image 1's entire wide ecology scene, camera, sky, rocks, channel, plants, all distant animals and nest-area elements, foreground animal locations, scale, running/walking poses, leg positions, feet, tail paths, shadows, and spacing. Make localized identity corrections only to the HEADS and FORELIMBS of the TWO foreground Almas ukhaa individuals.",
+        "",
+        "For EACH foreground Almas:",
+        "1. Adjust the head to match Image 2: a short but not round, relatively deep SUBTRIANGULAR skull with visible lateral length roughly 2.3-2.5 times its depth; a large but natural orbit; a small lightly toothed non-avian jaw; subtly elongated naris; no owl facial disk and no toothless bird beak.",
+        "2. Replace the tightly overlapping arm-feather mass with exactly TWO compact, individually traceable folded forelimbs attached to the shoulder girdle, slightly staggered so both arms can be recognized. Use short layered feather covering only. At this ecological distance, individual finger claims need not be emphasized, but no arm may duplicate, fuse, float, or become a spread wing.",
+        "3. Preserve the olive-brown back, cream throat and belly, sparse irregular pale flecks, small muted orange cheek patch, and completely unbanded tail.",
+        "",
+        "Absolute count and scene lock:",
+        "Keep exactly two foreground Almas total. EACH remains with exactly one head, two forelimbs, two hind limbs, two feet, and one complete tail. Do not change, add, remove, or move any hind limb or tail. Keep every existing distant background animal unchanged; do not add or delete animals. Preserve all silhouettes and the broad empty ground between the foreground pair.",
+        "",
+        "Role boundary:",
+        "This is S3 habitat-ecology / anatomy-review material only, never a representative or proof of flocking, nesting behavior, species interaction, or exact co-occurrence. Feather distribution, hands, feet, tails, colors, and behavior remain reconstruction hypotheses.",
+        "",
+        "Style:",
+        "Naturalistic museum-grade scientific paleoart matching Image 1, suitable for ages 5-14.",
+        "",
+        "Constraints:",
+        "No text, caption, logo, signature, border, watermark, blood, wounds, attack, new animals, modern grass, flowers, long dromaeosaur snouts, round owl heads, spread wings, long primary flight feathers, regular tail bands, giant sickle claws, third legs, third feet, extra arms, cropped tails, or changed background animals."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-02T13:07:05.575Z",
+        "method": "Original-size inspection of both foreground heads, four forelimbs, four hind limbs and feet, two pelvis-tail joins and tips, inter-animal separation, and preserved background context.",
+        "result": "Approved only as habitat-ecology anatomy review. Both foreground animals match the S1 head direction and pass count-level appendage review; exact fauna identity, co-occurrence, grouping, nesting, and behavior are not claimed."
+      }
+    }
+  },
+  "rejectedAttempts": [
+    {
+      "role": "representative",
+      "callId": "exec-70ce5c05-d92c-43ec-aa6c-0c5e79131151",
+      "generatedAt": "2026-08-02T12:42:17.331Z",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-70ce5c05-d92c-43ec-aa6c-0c5e79131151.png",
+      "sha256": "A11BCB6B284DB7C8E492A73739B23D0698746D1E2C317B00752E33526BE87B7D",
+      "bytes": 2959852,
+      "dimensions": "1536x1024",
+      "copiedToProject": false,
+      "reason": "Rejected immediately because the animal had three hind legs and three feet."
+    },
+    {
+      "role": "representative",
+      "callId": "exec-2849ef2f-c285-498f-a4c8-f0222487c787",
+      "generatedAt": "2026-08-02T12:43:57.684Z",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-2849ef2f-c285-498f-a4c8-f0222487c787.png",
+      "sha256": "6C85E2D7D27C4DB0525024623C9EC244F3B1C39EFB2289C07C83D94694032B7D",
+      "bytes": 3003299,
+      "dimensions": "1536x1024",
+      "copiedToProject": false,
+      "reason": "The leg count was corrected, but the skull became too round and owl-like and the two forelimbs overlapped too tightly for a representative."
+    },
+    {
+      "role": "color-pattern",
+      "callId": "exec-89345218-2999-4d98-b781-3be0adf61e78",
+      "generatedAt": "2026-08-02T12:45:35.124Z",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-89345218-2999-4d98-b781-3be0adf61e78.png",
+      "sha256": "76DACF24AEEF9F89B407E77A046AFAEDF2B033E97B9DD30AD067B359338364F8",
+      "bytes": 3048419,
+      "dimensions": "1536x1024",
+      "copiedToProject": false,
+      "reason": "Rejected because the edit retained too much of the old long, low S2 skull identity and did not match the new representative direction."
+    },
+    {
+      "role": "color-pattern",
+      "callId": "exec-3d552016-63a1-4839-8366-c9d456a8df7e",
+      "generatedAt": "2026-08-02T12:47:40.723Z",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-3d552016-63a1-4839-8366-c9d456a8df7e.png",
+      "sha256": "FAAA3192B098906238C1C63490911B9E20BD403526C75AD091FE4FDE70070172",
+      "bytes": 2721480,
+      "dimensions": "1536x1024",
+      "copiedToProject": false,
+      "reason": "Superseded because it inherited the rejected round-head representative control."
+    },
+    {
+      "role": "habitat-ecology",
+      "callId": "exec-e57440ab-5e69-45dc-9095-b0c3eb16b6c5",
+      "generatedAt": "2026-08-02T12:49:12.255Z",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-e57440ab-5e69-45dc-9095-b0c3eb16b6c5.png",
+      "sha256": "642C70FCD6D479F784C525083E9EB0C499A267A4F8B04A5393ABE5EB224EC100",
+      "bytes": 3532632,
+      "dimensions": "1536x1024",
+      "copiedToProject": false,
+      "reason": "Superseded because the foreground heads and tightly overlapped forelimbs did not yet match the final anatomy-approved S1 control."
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-02T12:24:15.220Z",
-  "reviewBatch": "2026-08-02-yutyrannus-cold-breath-richness-1",
-  "reviewMethod": "Original-size full-frame review of all six Yutyrannus slots against the Xu et al. 2012 skull, manus, pes, tail, and filament gates. S4-S6 were checked for corrected continuous crests, readable limbs and tails, separated multi-animal silhouettes, visible-breath clarity, and age-appropriate non-graphic blood limits. White color, pattern placement, camouflage, breath, weather, prey, pursuit, blood placement, growth-stage pairing, exact locality, and seasonal use remain explicit reconstruction hypotheses.",
+  "generatedAt": "2026-08-02T13:07:05.575Z",
+  "reviewBatch": "2026-08-02-almas-short-deep-skull-coherence-1",
+  "reviewMethod": "Original-size review of the three replaced Almas slots against Pei et al. 2017 and the approved short, relatively deep subtriangular skull direction. S1 was independently checked for the head gate plus exactly two separated forelimbs, two hind limbs and feet, and one pelvis-origin tail; S2 retains that anatomy as a palette-only variant; S3 keeps both foreground Almas countable but remains an ecology reference. Hand and toe detail, complete distal tail, integument, color, exact co-occurrence, and behavior remain explicit comparative or reconstruction hypotheses. A three-hind-leg draft and later long-low or owl-round head drafts were rejected before project copying.",
   "targetSlots": 803,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
@@ -4786,30 +4786,30 @@
     "almas-ukhaa": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/almas-ukhaa-short-snouted-troodontid-imagegen-v1.png",
+        "source": "assets/dinosaurs/almas-ukhaa-short-deep-skull-olive-unbanded-representative-imagegen-v2.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The short, relatively deep subtriangular head, large natural orbit, small-toothed non-avian jaw, small body, long lower legs, exactly two separated forelimbs, two hind limbs and feet, and one pelvis-origin tail passed independent original-size review. Hand and toe detail, complete distal tail, feathers, and color remain comparative reconstruction.",
+        "reviewMethod": "Independent original-size science and visual inspection against Pei et al. 2017, including head ratio, orbit, tooth line, both forelimbs, both hind limbs and feet, pelvis-tail join, tail tip, artifacts, and the explicit three-leg rejection",
+        "reviewBatch": "2026-08-02-almas-short-deep-skull-coherence-1",
+        "reviewedAt": "2026-08-02T13:07:05.575Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/almas-ukhaa-aubergine-turquoise-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/almas-ukhaa-short-deep-skull-aubergine-unbanded-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "The approved S1 head, body, pose, two forelimbs, two hind limbs and feet, one complete unbanded tail, and clean silhouette are retained while only the hypothetical palette changes; it remains below the representative as a color-pattern review hold.",
+        "reviewMethod": "Original-size comparison with the approved S1 control for silhouette, limb and foot count, head ratio, tail continuity, unbanded pattern, and edit artifacts",
+        "reviewBatch": "2026-08-02-almas-short-deep-skull-coherence-1",
+        "reviewedAt": "2026-08-02T13:07:05.575Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/almas-ukhaa-djadokhta-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/almas-ukhaa-short-deep-skull-djadokhta-ecology-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Both foreground Almas retain the approved short-and-deep head direction and each resolves as two forelimbs, two hind limbs and feet, and one unbanded tail. Three distant generic ceratopsian-like animals and one nest-side oviraptor-like animal remain unnamed visual context, not evidence of exact species, co-occurrence, or behavior.",
+        "reviewMethod": "Original-size multi-animal inspection of each foreground head, forelimb and hind-limb count, feet, pelvis-tail join, tail tip, animal separation, and background-context preservation",
+        "reviewBatch": "2026-08-02-almas-short-deep-skull-coherence-1",
+        "reviewedAt": "2026-08-02T13:07:05.575Z"
       },
       "4": {
         "status": "approved",

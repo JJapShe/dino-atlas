@@ -1,6 +1,6 @@
 {
-  "taxa": 132,
-  "images": 1713,
+  "taxa": 133,
+  "images": 1724,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -2031,6 +2031,14 @@
         "source": "assets/dinosaurs/allosaurus-fragilis-separated-adult-subadult-growth-imagegen-v1.png",
         "variant": "성체 아성체 분리 성장 비교 이미지 생성 v1",
         "src": "assets/dinosaurs/allosaurus-fragilis-separated-adult-subadult-growth-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "알로사우루스·카마라사우루스 세로 수로 공존",
+        "body": "모리슨층 카네기 채석장에 함께 기록된 알로사우루스와 카마라사우루스를 물길 양쪽에 완전히 분리한 4:5 세로 장면입니다. 공존 기록만 반영하며 사냥이나 직접 상호작용을 주장하지 않습니다. 알로사우루스의 낮고 긴 머리·중간 길이 세 손가락 팔·온전한 꼬리와, v2 탈락 뒤 교정한 카마라사우루스의 짧고 깊은 머리·굵고 짧은 목·네 기둥형 다리·비채찍형 꼬리를 검토합니다. 장면 크기의 손가락과 발 세부는 계속 해부 검토 대상으로 둡니다.",
+        "source": "assets/dinosaurs/allosaurus-fragilis-camarasaurus-boxskull-channel-portrait-ecology-imagegen-v3.png",
+        "variant": "카마라사우루스 상자형 머리 교정 수로 분리 세로 생태 이미지 생성 v3",
+        "src": "assets/dinosaurs/allosaurus-fragilis-camarasaurus-boxskull-channel-portrait-ecology-imagegen-v3.png"
       },
       {
         "kind": "anatomy review",
@@ -4556,6 +4564,14 @@
       },
       {
         "kind": "anatomy review",
+        "title": "티라노사우루스·에드몬토사우루스 안개 초지 정지",
+        "body": "헬크리크층의 안개 낀 습지 초지에서 두 동물이 빈 지면을 사이에 두고 멈춘 4:5 세로 장면입니다. 에드몬토사우루스 화석의 티라노사우루스류 섭식 흔적은 공존 근거로만 사용하며, 이 장면은 추격·공격·사냥 성공을 재현하지 않습니다. 티라노사우루스의 깊은 머리·작은 두 손가락 팔·온전한 발과 꼬리, 에드몬토사우루스의 볏 없는 넓은 부리·깊은 몸통·네 사지·온전한 꼬리를 확인하되 연조직 등 능선은 계속 검토합니다.",
+        "source": "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-misty-meadow-pause-portrait-ecology-imagegen-v2.png",
+        "variant": "에드몬토사우루스 안개 초지 분리 세로 생태 이미지 생성 v2",
+        "src": "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-misty-meadow-pause-portrait-ecology-imagegen-v2.png"
+      },
+      {
+        "kind": "anatomy review",
         "title": "티라노사우루스 초기 두 손가락 비교 후보",
         "body": "구형 후보 중 두 손가락 단서와 전신 꼬리 연결이 비교적 읽히는 한 장만 비교군으로 남겼습니다. 새 대표보다 머리가 길고 낮게 보이고 발 세부도 약하므로 슬롯에는 배정하지 않으며, 새 깊은 두개골·입술·양손·양발 기준을 대조하는 낮은 우선순위 참고로만 사용합니다.",
         "source": "assets/dinosaurs/tyrannosaurus-rex-twofinger-imagegen-v1.png",
@@ -4577,6 +4593,56 @@
         "source": "assets/dinosaurs/tyrannosaurus-rex-dawn-channel-crossing-ecology-imagegen-v1.png",
         "variant": "새벽 얕은 수로 횡단 생태 이미지 생성 v1",
         "src": "assets/dinosaurs/tyrannosaurus-rex-dawn-channel-crossing-ecology-imagegen-v1.png"
+      }
+    ],
+    "yutyrannus-huali": [
+      {
+        "kind": "count-level pass",
+        "title": "유티란누스 이셴층 회백색 필라멘트 대표",
+        "body": "한 마리의 완전한 전신을 원본 크기로 검수했습니다. 큰 외비공과 거친 정중선 볏, 티라노사우루스 렉스보다 긴 두 앞다리와 각 손의 세 손가락, 세 주 발가락이 읽히는 두 발, 골반에서 한 끝으로 이어지는 꼬리, 목부터 꼬리까지 이어지는 긴 단순 필라멘트를 확인했습니다. 아이보리·회백색·슬레이트 얼룩과 보호색 기능은 화석 색 증거가 아닌 복원 가설입니다.",
+        "source": "assets/dinosaurs/yutyrannus-huali-yixian-white-mottled-feathered-representative-imagegen-v1.png",
+        "variant": "이셴층 흰 얼룩 필라멘트 대표 이미지 생성 v1",
+        "src": "assets/dinosaurs/yutyrannus-huali-yixian-white-mottled-feathered-representative-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "유티란누스 냉온대 이셴 호숫가 화산회 수로",
+        "body": "냉온대 이셴층 호숫가의 얕고 투명한 화산회 수로를 걷는 넓은 생태 장면입니다. 교정본에서 톱니처럼 과장된 볏을 낮고 이어진 정중선 능선으로 바꾸고, 한 머리·두 세 손가락 팔·두 세 주 발가락 발·한 꼬리·긴 단순 필라멘트를 원본 크기로 확인했습니다. 다른 동물이나 직접 사냥은 넣지 않았으며 먼 화산 연무는 넓은 환경 표현일 뿐 동시 분화를 뜻하지 않습니다.",
+        "source": "assets/dinosaurs/yutyrannus-huali-cool-conifer-ashplain-ecology-imagegen-v1.png",
+        "variant": "냉온대 침엽수 호숫가 화산회 수로 생태 이미지 생성 v1",
+        "src": "assets/dinosaurs/yutyrannus-huali-cool-conifer-ashplain-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "유티란누스 차가운 새벽 입김·세 손가락 해부",
+        "body": "차가운 새벽의 단독 전신 해부 장면입니다. 낮고 넓게 이어지는 거친 정중선 볏, 큰 외비공, 두 개의 발달한 팔과 각 손의 세 손가락, 두 발의 세 주 발가락, 한 개의 완전한 꼬리와 긴 단순 필라멘트를 원본 크기로 확인했습니다. 작은 입김은 냉온대 환경을 이해하기 위한 순간적 복원 가설이며 특정 기온·계절이나 영구 설원을 뜻하지 않습니다.",
+        "source": "assets/dinosaurs/yutyrannus-huali-cold-dawn-breath-threefinger-anatomy-imagegen-v1.png",
+        "variant": "차가운 새벽 입김 세 손가락 해부 이미지 생성 v1",
+        "src": "assets/dinosaurs/yutyrannus-huali-cold-dawn-breath-threefinger-anatomy-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "유티란누스 차가운 새벽 비접촉 추격",
+        "body": "화산회 강변에서 이름을 붙이지 않은 작은 초식공룡형 동물을 뒤쫓는 비접촉 장면입니다. 두 동물은 넓은 빈 지면으로 분리되고 먹잇감에는 상처가 없습니다. 유티란누스의 입김과 흰 주둥이·목 깃털의 소량 적갈색 얼룩은 추운 공기와 직전 행동을 표현한 가설이며, 열린 상처·사체·절단·과도한 피는 없습니다. 먼쪽 손가락과 발가락은 단독 해부 장면보다 판독성이 낮아 대표가 아닌 행동 참고로만 둡니다.",
+        "source": "assets/dinosaurs/yutyrannus-huali-cold-breath-bloodfleck-unnamed-herbivore-hunt-ecology-imagegen-v1.png",
+        "variant": "차가운 새벽 입김 소량 혈흔 비접촉 추격 이미지 생성 v1",
+        "src": "assets/dinosaurs/yutyrannus-huali-cold-breath-bloodfleck-unnamed-herbivore-hunt-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "유티란누스 성체·아성체 냉온대 성장 비교",
+        "body": "크기가 다른 두 유티란누스를 차가운 호숫가의 넓은 공간에 떨어뜨려 놓은 성장 단계 비교입니다. 원기재에는 서로 다른 성장 단계의 세 표본이 포함되지만, 두 개체가 동시에 함께 있었다는 뜻은 아닙니다. 각 개체의 두 세 손가락 팔, 두 세 주 발가락 발, 한 꼬리, 연속적인 낮은 정중선 볏과 긴 단순 필라멘트를 확인했으며, 두 입김과 흰 무늬·동시 배치는 모두 복원 가설입니다.",
+        "source": "assets/dinosaurs/yutyrannus-huali-cold-lakemargin-adult-subadult-growth-ecology-imagegen-v1.png",
+        "variant": "냉온대 호숫가 성체 아성체 성장 비교 이미지 생성 v1",
+        "src": "assets/dinosaurs/yutyrannus-huali-cold-lakemargin-adult-subadult-growth-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "유티란누스 애시화이트·슬레이트 보호 무늬",
+        "body": "대표와 반대 방향의 화산회 자갈 둔덕 전신으로, 더 큰 애시화이트 면과 불규칙한 슬레이트·회갈색 끊긴 안장 얼룩을 비교합니다. 두 긴 팔, 두 발, 한 개의 온전한 꼬리와 전신 필라멘트는 유지되지만 먼쪽 손의 세 번째 손가락은 대표 이미지보다 판독성이 낮아 무늬용 검토 후보로만 둡니다. 흰색과 보호색 해석은 복원 가설입니다.",
+        "source": "assets/dinosaurs/yutyrannus-huali-ash-white-slate-countershading-pattern-imagegen-v1.png",
+        "variant": "애시화이트 슬레이트 보호 무늬 이미지 생성 v1",
+        "src": "assets/dinosaurs/yutyrannus-huali-ash-white-slate-countershading-pattern-imagegen-v1.png"
       }
     ],
     "spinosaurus-aegyptiacus": [
@@ -8594,48 +8660,48 @@
     "almas-ukhaa": [
       {
         "kind": "count-level pass",
-        "title": "알마스 v1 짧은주둥이 트로오돈류 대표 후보",
-        "body": "우하 톨고드/자도흐타 트로오돈류 확장을 위한 내장 이미지 생성 후보입니다. 작고 가볍게 지어진 깃털 트로오돈류 실루엣, 큰 눈, 낮고 좁은 두개골, 바이로노사우루스보다 짧은 주둥이, 가볍게 이빨이 있는 비조류 주둥이, 접힌 깃털 앞다리, 길고 가느다란 다리, 보이는 세 발가락 발, 작고 정교하게 들어 올린 둘째 발가락 발톱, 긴 뻣뻣한 균형 꼬리를 유지합니다. 정확한 두개골 비율은 최종 골격 증거가 아니라 수량 단계 검수로 둡니다.",
-        "source": "assets/dinosaurs/almas-ukhaa-short-snouted-troodontid-imagegen-v1.png",
-        "variant": "짧은주둥이 트로오돈류 이미지 생성 v1",
-        "src": "assets/dinosaurs/almas-ukhaa-short-snouted-troodontid-imagegen-v1.png"
+        "title": "알마스 짧고 깊은 머리 대표",
+        "body": "Pei 등(2017)의 거의 완전한 두개골을 기준으로 짧고 비교적 깊은 아삼각형 머리, 큰 안와, 작은 이빨이 있는 비조류 턱과 긴 아래다리를 맞춘 대표 그림입니다. 원본 크기에서 앞다리 2개, 뒷다리 2개와 발 2개, 골반에서 이어지는 꼬리 1개를 따로 확인했습니다. 손·발가락 세부, 꼬리 전체, 깃털과 올리브색 무늬는 비교 복원입니다.",
+        "source": "assets/dinosaurs/almas-ukhaa-short-deep-skull-olive-unbanded-representative-imagegen-v2.png",
+        "variant": "짧고 깊은 머리 올리브 무고리 대표 이미지 생성 v2",
+        "src": "assets/dinosaurs/almas-ukhaa-short-deep-skull-olive-unbanded-representative-imagegen-v2.png"
       },
       {
         "kind": "anatomy review",
-        "title": "알마스 v1 자도흐타 생태 참고",
-        "body": "전경의 알마스 두 마리와 멀리 떨어진 프로토케라톱스, 둥지 언덕 근처의 오비랍토르형 동물이 보이는 비유혈 자도흐타/우하 톨고드 생태 장면입니다. 여러 동물 구도 때문에 개별 발 배열 검수가 어려우므로 대표 그림이 아니라 생태계/참고 자료로 사용합니다.",
-        "source": "assets/dinosaurs/almas-ukhaa-djadokhta-ecology-imagegen-v1.png",
-        "variant": "자도흐타 생태 참고 이미지 생성 v1",
-        "src": "assets/dinosaurs/almas-ukhaa-djadokhta-ecology-imagegen-v1.png"
+        "title": "알마스 자도흐타 생태 참고",
+        "body": "대표와 같은 짧고 비교적 깊은 머리 방향의 알마스 두 마리를 전경에 둔 자도흐타 반건조 모래언덕 장면입니다. 각 알마스의 앞다리 2개, 뒷다리 2개와 발 2개, 꼬리 1개를 원본 크기에서 확인했습니다. 뒤쪽의 작은 각룡형 동물 세 마리와 둥지 곁 오비랍토르형 동물 한 마리는 이름·동시 출현·행동을 확정하지 않는 지역 생태 비교 요소입니다.",
+        "source": "assets/dinosaurs/almas-ukhaa-short-deep-skull-djadokhta-ecology-imagegen-v2.png",
+        "variant": "짧고 깊은 머리 자도흐타 생태 이미지 생성 v2",
+        "src": "assets/dinosaurs/almas-ukhaa-short-deep-skull-djadokhta-ecology-imagegen-v2.png"
       },
       {
         "kind": "anatomy review",
-        "title": "Almas v2 short deep skull post-rain anatomy view",
-        "body": "A comparative reconstruction centered on the short, relatively deep skull outline of the holotype. The large eye, compact non-avian jaw, folded forelimbs, two hind limbs, readable feet, and one tail are inspected at original size; hand, feather, and color details remain comparative reconstruction.",
+        "title": "알마스 비 온 뒤 짧고 깊은 머리 비교",
+        "body": "모식표본의 짧고 비교적 깊은 두개골 윤곽을 중심으로 만든 비교복원입니다. 큰 안와, 작은 이빨이 있는 비조류 턱, 앞다리 2개, 뒷다리 2개와 발 2개, 꼬리 1개를 원본 크기에서 확인했습니다. 살아 있을 때의 손·발가락과 둘째발가락 발톱, 완전한 꼬리 끝, 깃털과 색은 가까운 친척을 따른 비교복원입니다.",
         "source": "assets/dinosaurs/almas-ukhaa-short-deep-skull-postrain-anatomy-imagegen-v2.png",
         "variant": "short deep skull post-rain anatomy view imagegen v2",
         "src": "assets/dinosaurs/almas-ukhaa-short-deep-skull-postrain-anatomy-imagegen-v2.png"
       },
       {
         "kind": "anatomy review",
-        "title": "Almas v2 channel-separated generic ceratopsian context",
-        "body": "A context scene separating the foreground Almas from a distant generic small ceratopsian-type animal across a shallow channel. It makes no claim about the distant animal's species, a real encounter, grouping, pursuit, or predation; the foreground Almas remains the anatomy comparison subject.",
+        "title": "알마스 물길 너머 작은 각룡형 지역 참고",
+        "body": "전경의 알마스와 멀리 있는 이름 미정의 작은 각룡형 동물을 얕은 물길로 분리한 지역 맥락 그림입니다. 먼 동물의 정확한 종, 실제 만남, 무리, 추격이나 포식은 주장하지 않으며 전경 알마스만 해부 비교 대상으로 둡니다.",
         "source": "assets/dinosaurs/almas-ukhaa-channel-separated-ceratopsian-context-imagegen-v2.png",
         "variant": "channel-separated generic ceratopsian context imagegen v2",
         "src": "assets/dinosaurs/almas-ukhaa-channel-separated-ceratopsian-context-imagegen-v2.png"
       },
       {
         "kind": "review hold",
-        "title": "알마스 v1 가지색-청록 무늬 변이",
-        "body": "같은 체형의 색/무늬 변이입니다. 깊은 가지색 등, 옅은 크림색 배, 청록색 눈 고리, 사프란색 목 패치, 진홍색 어깨 안장 무늬, 검은 접힌 팔깃 끝, 민트색 옆구리 반점, 아이보리/차콜 꼬리 띠를 사용합니다. 들어 올린 발가락 발톱이 조금 강조되어 읽히므로 대표보다 아래에 두되, 알마스를 바이로노사우루스·사우로르니토이데스·자나바자르와 분리하는 참고로 사용합니다.",
-        "source": "assets/dinosaurs/almas-ukhaa-aubergine-turquoise-pattern-imagegen-v1.png",
-        "variant": "가지색-청록 무늬 이미지 생성 v1",
-        "src": "assets/dinosaurs/almas-ukhaa-aubergine-turquoise-pattern-imagegen-v1.png"
+        "title": "알마스 가지색 무고리 무늬 변이",
+        "body": "대표 그림과 같은 머리·몸·자세를 유지하고 색만 가지색, 청록색, 사프란색 계열로 바꾼 비교 그림입니다. 꼬리에는 규칙적인 띠를 넣지 않았고 앞다리 2개, 뒷다리 2개와 발 2개, 꼬리 1개를 확인했습니다. 색과 무늬는 화석 증거가 아니므로 대표보다 낮은 검토 보류로 둡니다.",
+        "source": "assets/dinosaurs/almas-ukhaa-short-deep-skull-aubergine-unbanded-pattern-imagegen-v2.png",
+        "variant": "짧고 깊은 머리 가지색 무고리 무늬 이미지 생성 v2",
+        "src": "assets/dinosaurs/almas-ukhaa-short-deep-skull-aubergine-unbanded-pattern-imagegen-v2.png"
       },
       {
         "kind": "review hold",
-        "title": "Almas v2 ash apricot unbanded tail pattern variant",
-        "body": "A palette-only comparison with an ash-gray back, muted apricot throat and underside, and small blue flank flecks. It deliberately removes tail rings and retains a short snout, large eye, two legs, modest raised second-toe claw, and one tail.",
+        "title": "알마스 잿빛·살구색 무고리 변이",
+        "body": "잿빛 등, 낮은 채도의 살구색 목과 배, 작은 파란 옆구리 반점만 바꾼 색 비교복원입니다. 규칙적인 꼬리 띠를 피하고 짧고 비교적 깊은 머리 방향, 큰 안와, 앞다리 2개, 뒷다리 2개와 발 2개, 꼬리 1개를 유지합니다. 살아 있을 때의 발가락과 둘째발가락 발톱, 완전한 꼬리 끝과 색은 화석 직접 증거가 아닙니다.",
         "source": "assets/dinosaurs/almas-ukhaa-ash-apricot-unbanded-pattern-imagegen-v2.png",
         "variant": "ash apricot unbanded tail pattern variant imagegen v2",
         "src": "assets/dinosaurs/almas-ukhaa-ash-apricot-unbanded-pattern-imagegen-v2.png"
@@ -8733,6 +8799,14 @@
         "src": "assets/dinosaurs/tarbosaurus-bataar-adult-juvenile-riverbar-growth-ecology-imagegen-v1.png"
       },
       {
+        "kind": "anatomy review",
+        "title": "타르보사우루스·사우롤로푸스 강 건너 회피",
+        "body": "네메그트층의 강 양쪽에 타르보사우루스와 사우롤로푸스를 한 마리씩 완전히 분리한 4:5 세로 장면입니다. 사우롤로푸스 뼈의 타르보사우루스 섭식 흔적은 공존 근거지만 사냥 장면의 증거는 아니므로 추격이나 접촉을 그리지 않았습니다. 타르보사우루스의 좁고 긴 머리·작은 두 손가락 팔·온전한 발과 꼬리, v2 탈락 뒤 교정한 사우롤로푸스의 넓고 낮은 부리와 뒤통수에서 뒤로 기운 단단한 볏을 검토합니다. 작은 손가락·발가락은 계속 해부 검토 대상으로 둡니다.",
+        "source": "assets/dinosaurs/tarbosaurus-bataar-saurolophus-rearward-crest-river-portrait-ecology-imagegen-v3.png",
+        "variant": "사우롤로푸스 뒤통수 볏 교정 강 건너 회피 세로 생태 이미지 생성 v3",
+        "src": "assets/dinosaurs/tarbosaurus-bataar-saurolophus-rearward-crest-river-portrait-ecology-imagegen-v3.png"
+      },
+      {
         "kind": "review hold",
         "title": "타르보사우루스 v1 현무암-녹슨빛 무늬 변이",
         "body": "같은 체형의 팔레트 변이입니다. 현무암 검은 등, 옅은 크림색 배, 청록색 뺨 포인트, 구리빛 녹슨 옆구리 줄무늬, 오프화이트 꼬리 띠를 사용합니다. 손, 두개골, 발을 확인할 때까지 대표보다 아래에 두되, 갈색 위주의 티라노사우루스 카드와 구분하는 색감으로 활용합니다.",
@@ -8792,6 +8866,14 @@
         "body": "한 화면에 성체와 더 작은 어린 개체를 한 몸 길이 이상 떨어뜨려 배치한 성장 단계 비교입니다. 두 개체의 머리·몸·꼬리와 총 네 뒷다리가 서로 융합되지 않으며, 부모 돌봄이나 무리 행동을 증거로 주장하지 않습니다.",
         "variant": "성체·어린 개체 사구 성장 비교 이미지 생성 v1",
         "src": "assets/dinosaurs/velociraptor-mongoliensis-adult-juvenile-dune-growth-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "벨로키랍토르·프로토케라톱스 먼지 전선 대치",
+        "body": "드자도흐타층의 직접 전투 화석으로 함께 확인되는 두 종을 넓은 빈 모래와 먼지띠로 분리한 4:5 세로 장면입니다. 실제 표본의 자세나 싸움의 결과를 재현하지 않고, 서로 알아챈 비접촉 순간만 보여 줍니다. 벨로키랍토르의 깃털·길고 낮은 이빨 주둥이·접힌 앞다리·들린 둘째 낫발톱·뻣뻣한 꼬리와 프로토케라톱스의 무각 부리·적당한 프릴·낮은 네 다리·긴 꼬리를 원본 크기로 검토했습니다.",
+        "source": "assets/dinosaurs/velociraptor-mongoliensis-protoceratops-dustfront-portrait-ecology-imagegen-v2.png",
+        "variant": "프로토케라톱스 먼지 전선 분리 세로 생태 이미지 생성 v2",
+        "src": "assets/dinosaurs/velociraptor-mongoliensis-protoceratops-dustfront-portrait-ecology-imagegen-v2.png"
       },
       {
         "kind": "anatomy review",
@@ -11065,6 +11147,14 @@
         "source": "assets/dinosaurs/psittacosaurus-mongoliensis-adult-hatchling-growth-ecology-imagegen-v1.png",
         "variant": "성체 부화 직후 유체 성장 비교 이미지 생성 v1",
         "src": "assets/dinosaurs/psittacosaurus-mongoliensis-adult-hatchling-growth-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "프시타코사우루스속 꼬리 강모 화석 참고",
+        "body": "꼬리 강모가 직접 보존된 SMF R 4970은 P. mongoliensis가 아니라 Psittacosaurus sp.까지만 확인됩니다. 이 7번 이미지는 기존 P. mongoliensis 대표 체형을 유지한 교육용 비교 위에, 화석에서 확인되는 꼬리 등쪽 기부~중간 구간의 길고 원통형인 강모 한 줄만 제한적으로 더했습니다. 강모는 등·엉덩이·꼬리 끝에 퍼지지 않으며, P. mongoliensis의 필수 특징이나 해당 표본의 정확한 생김새로 단정하지 않습니다.",
+        "source": "assets/dinosaurs/psittacosaurus-mongoliensis-genus-tail-bristle-anatomy-imagegen-v1.png",
+        "variant": "프시타코사우루스속 꼬리 강모 화석 참고 이미지 생성 v1",
+        "src": "assets/dinosaurs/psittacosaurus-mongoliensis-genus-tail-bristle-anatomy-imagegen-v1.png"
       },
       {
         "kind": "review hold",
