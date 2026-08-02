@@ -998,7 +998,7 @@ const dinosaurs = [
     sizeDisplay: "약 10 m",
     knowledgeLevel: 1,
     imageSlots: 6,
-    reviewStatus: "자료 기반 비교 복원",
+    reviewStatus: "6장 발목 연결 익막 검수 완료 · 부착 방식은 비교 가설",
     summary:
       "후기 백악기 텍사스의 거대 아즈다르키드 익룡으로, 공룡이 아닙니다. 완모식표본은 거대한 부분 왼쪽 날개이며 약 10m 수치는 결손 날개뼈를 계통학적으로 보완한 복원 날개폭입니다. 두개골과 몸통 대부분은 알려지지 않아 긴 무치악 머리·긴 목·네발 보행 전신은 비교 복원으로만 다룹니다. 거대 표본은 자벨리나층의 하천 퇴적상에서 드물게 발견되며, 강가 선호와 단독 생활은 가능한 해석이지 확정된 행동이 아닙니다.",
     features: {
@@ -1418,7 +1418,7 @@ const dinosaurs = [
     length: 19.0,
     knowledgeLevel: 1,
     imageSlots: 6,
-    reviewStatus: "대기",
+    reviewStatus: "6장 갤러리 배정 · 대표 해부학 최종 재검수 필요",
     summary:
       "앞다리가 상대적으로 길어 어깨가 높게 보이는 용각류이며 높은 곳의 식물을 먹는 장면에 적합합니다. 머리 위쪽의 높은 콧구멍과 둥근 코혹 실루엣도 구분 포인트입니다.",
     features: {
@@ -4316,7 +4316,7 @@ const state = {
   diet: "all",
   knowledgeLevel: "all",
   classification: "all",
-  sort: "updated",
+  sort: "level",
   map: {
     mode: "timeline",
     scale: 0.72,
@@ -8422,6 +8422,23 @@ const generatedImageSamples = {
       source: "assets/dinosaurs/quetzalcoatlus-northropi-ventral-ankle-membrane-representative-imagegen-v3.png",
       variant: "복면 양쪽 발목 익막 비교 복원 이미지 생성 v3",
       src: "assets/dinosaurs/quetzalcoatlus-northropi-ventral-ankle-membrane-representative-imagegen-v3.png",
+      generatedAt: "2026-08-02T13:52:18.1454606Z",
+      gallerySlot: 1,
+      galleryRole: "representative",
+      phenotype: "canonical-a",
+      habitatKey: "javelina-inland-stream",
+      sourceAttribution: "OpenAI built-in image generation; project-owned generated Quetzalcoatlus controls only",
+      licenseRecord: "Generated project asset; no external artwork or paper figures used; cited studies supplied factual constraints only",
+      generationPromptRecord: "tools/comfyui/quetzalcoatlus-ankle-membrane-correction-20260802.json#records/S1/promptSummary",
+      generationSeed: "not exposed by generator",
+      generationWorkflow: "OpenAI built-in image generation, iterative reference-guided anatomy correction",
+      reviewStatus: "approved as sole representative; ankle attachment remains a comparative soft-tissue hypothesis",
+      evidenceSources: [
+        "https://doi.org/10.1080/02724634.2021.1907587",
+        "https://doi.org/10.4202/app.2009.0145",
+        "https://doi.org/10.1080/02724634.2020.1780247",
+      ],
+      metadataRecord: "tools/comfyui/quetzalcoatlus-ankle-membrane-correction-20260802.json",
     },
     {
       kind: "review hold",
@@ -8430,6 +8447,23 @@ const generatedImageSamples = {
       source: "assets/dinosaurs/quetzalcoatlus-northropi-indigo-jade-ventral-ankle-pattern-imagegen-v3.png",
       variant: "인디고-비취 복면 발목 익막 무늬 이미지 생성 v3",
       src: "assets/dinosaurs/quetzalcoatlus-northropi-indigo-jade-ventral-ankle-pattern-imagegen-v3.png",
+      generatedAt: "2026-08-02T13:53:47.4416841Z",
+      gallerySlot: 2,
+      galleryRole: "color-pattern",
+      phenotype: "variant-b",
+      habitatKey: "javelina-inland-stream",
+      sourceAttribution: "OpenAI built-in image generation; project-owned generated Quetzalcoatlus controls only",
+      licenseRecord: "Generated project asset; no external artwork or paper figures used; cited studies supplied factual constraints only",
+      generationPromptRecord: "tools/comfyui/quetzalcoatlus-ankle-membrane-correction-20260802.json#records/S2/promptSummary",
+      generationSeed: "not exposed by generator",
+      generationWorkflow: "OpenAI built-in image generation, palette-only reference-guided edit",
+      reviewStatus: "approved as color-pattern review hold; anatomy matches S1 and color remains hypothetical",
+      evidenceSources: [
+        "https://doi.org/10.1080/02724634.2021.1907587",
+        "https://doi.org/10.4202/app.2009.0145",
+        "https://doi.org/10.1080/02724634.2020.1780247",
+      ],
+      metadataRecord: "tools/comfyui/quetzalcoatlus-ankle-membrane-correction-20260802.json",
     },
     {
       kind: "anatomy review",
@@ -8438,6 +8472,23 @@ const generatedImageSamples = {
       source: "assets/dinosaurs/quetzalcoatlus-northropi-postrain-stream-ventral-habitat-ecology-imagegen-v3.png",
       variant: "비 뒤 자벨리나 하천 복면 서식지 이미지 생성 v3",
       src: "assets/dinosaurs/quetzalcoatlus-northropi-postrain-stream-ventral-habitat-ecology-imagegen-v3.png",
+      generatedAt: "2026-08-02T13:55:16.0251107Z",
+      gallerySlot: 3,
+      galleryRole: "habitat-ecology",
+      phenotype: "canonical-a",
+      habitatKey: "javelina-inland-stream",
+      sourceAttribution: "OpenAI built-in image generation; project-owned generated Quetzalcoatlus controls only",
+      licenseRecord: "Generated project asset; no external artwork or paper figures used; cited studies supplied factual constraints only",
+      generationPromptRecord: "tools/comfyui/quetzalcoatlus-ankle-membrane-correction-20260802.json#records/S3/promptSummary",
+      generationSeed: "not exposed by generator",
+      generationWorkflow: "OpenAI built-in image generation, reference-guided habitat variation",
+      reviewStatus: "approved as habitat-ecology anatomy review; exact habitat and weather remain hypotheses",
+      evidenceSources: [
+        "https://doi.org/10.1080/02724634.2021.1907587",
+        "https://doi.org/10.4202/app.2009.0145",
+        "https://doi.org/10.1080/02724634.2020.1780247",
+      ],
+      metadataRecord: "tools/comfyui/quetzalcoatlus-ankle-membrane-correction-20260802.json",
     },
     {
       kind: "anatomy review",
@@ -8446,6 +8497,23 @@ const generatedImageSamples = {
       source: "assets/dinosaurs/quetzalcoatlus-northropi-bilateral-ankle-attachment-anatomy-imagegen-v3.png",
       variant: "양쪽 하퇴·발목 익막 근접 해부 이미지 생성 v3",
       src: "assets/dinosaurs/quetzalcoatlus-northropi-bilateral-ankle-attachment-anatomy-imagegen-v3.png",
+      generatedAt: "2026-08-02T13:56:34.4459353Z",
+      gallerySlot: 4,
+      galleryRole: "identity-anatomy",
+      phenotype: "structure-reference",
+      habitatKey: "javelina-inland-stream",
+      sourceAttribution: "OpenAI built-in image generation; project-owned generated Quetzalcoatlus controls only",
+      licenseRecord: "Generated project asset; no external artwork or paper figures used; cited studies supplied factual constraints only",
+      generationPromptRecord: "tools/comfyui/quetzalcoatlus-ankle-membrane-correction-20260802.json#records/S4/promptSummary",
+      generationSeed: "not exposed by generator",
+      generationWorkflow: "OpenAI built-in image generation, reference-guided diagnostic crop",
+      reviewStatus: "approved only as an anatomy-review structure reference; intentional crop prohibits representative use",
+      evidenceSources: [
+        "https://doi.org/10.1080/02724634.2021.1907587",
+        "https://doi.org/10.4202/app.2009.0145",
+        "https://doi.org/10.1080/02724634.2020.1780247",
+      ],
+      metadataRecord: "tools/comfyui/quetzalcoatlus-ankle-membrane-correction-20260802.json",
     },
     {
       kind: "anatomy review",
@@ -8454,6 +8522,23 @@ const generatedImageSamples = {
       source: "assets/dinosaurs/quetzalcoatlus-northropi-alamosaurus-separated-ventral-ecology-imagegen-v3.png",
       variant: "하천 분리 용각류 배경 복면 생태 이미지 생성 v3",
       src: "assets/dinosaurs/quetzalcoatlus-northropi-alamosaurus-separated-ventral-ecology-imagegen-v3.png",
+      generatedAt: "2026-08-02T13:57:55.3308231Z",
+      gallerySlot: 5,
+      galleryRole: "interaction",
+      phenotype: "canonical-a",
+      habitatKey: "javelina-inland-stream",
+      sourceAttribution: "OpenAI built-in image generation; project-owned generated Quetzalcoatlus controls only",
+      licenseRecord: "Generated project asset; no external artwork or paper figures used; cited studies supplied factual constraints only",
+      generationPromptRecord: "tools/comfyui/quetzalcoatlus-ankle-membrane-correction-20260802.json#records/S5/promptSummary",
+      generationSeed: "not exposed by generator",
+      generationWorkflow: "OpenAI built-in image generation, separated formation-context ecology edit",
+      reviewStatus: "approved as interaction-role anatomy review; distant sauropod and exact co-occurrence remain uncertain context",
+      evidenceSources: [
+        "https://doi.org/10.1080/02724634.2021.1907587",
+        "https://doi.org/10.4202/app.2009.0145",
+        "https://doi.org/10.1080/02724634.2020.1780247",
+      ],
+      metadataRecord: "tools/comfyui/quetzalcoatlus-ankle-membrane-correction-20260802.json",
     },
     {
       kind: "anatomy review",
@@ -8462,6 +8547,24 @@ const generatedImageSamples = {
       source: "assets/dinosaurs/quetzalcoatlus-northropi-ankle-attached-final-approach-locomotion-imagegen-v4.png",
       variant: "양쪽 발목 익막 뒷발 착지 직전 비교 복원 이미지 생성 v4",
       src: "assets/dinosaurs/quetzalcoatlus-northropi-ankle-attached-final-approach-locomotion-imagegen-v4.png",
+      generatedAt: "2026-08-02T13:59:31.8960391Z",
+      gallerySlot: 6,
+      galleryRole: "social-growth-defense",
+      phenotype: "canonical-a",
+      habitatKey: "javelina-inland-stream",
+      sourceAttribution: "OpenAI built-in image generation; project-owned generated Quetzalcoatlus controls only",
+      licenseRecord: "Generated project asset; no external artwork or paper figures used; cited studies supplied factual constraints only",
+      generationPromptRecord: "tools/comfyui/quetzalcoatlus-ankle-membrane-correction-20260802.json#records/S6/promptSummary",
+      generationSeed: "not exposed by generator",
+      generationWorkflow: "OpenAI built-in image generation, reference-guided final-approach locomotion variation",
+      reviewStatus: "approved as locomotion anatomy review in the fixed S6 slot; not evidence of social behavior, growth, or defense",
+      evidenceSources: [
+        "https://doi.org/10.1080/02724634.2021.1907587",
+        "https://doi.org/10.4202/app.2009.0145",
+        "https://doi.org/10.1080/02724634.2020.1780247",
+        "https://doi.org/10.1098/rspb.2009.1161",
+      ],
+      metadataRecord: "tools/comfyui/quetzalcoatlus-ankle-membrane-correction-20260802.json",
     },
   ],
   "dimorphodon-macronyx": [
@@ -14496,6 +14599,15 @@ const generatedImageSamples = {
       galleryRole: "representative",
       phenotype: "canonical-a",
       habitatKey: "djadokhta-semiarid-dune",
+      generatedAt: "2026-08-02T12:53:09.108Z",
+      sourceAttribution: "OpenAI built-in image generation; project-owned generated Almas controls only",
+      licenseRecord: "Generated project asset; no external artwork used; Pei et al. 2017 supplied factual anatomy constraints only",
+      generationPromptRecord: "tools/comfyui/almas-ukhaa-short-deep-skull-coherence-batch-20260802.json#records/representative/promptLines",
+      generationSeed: "not exposed by generator",
+      generationWorkflow: "OpenAI built-in image generation, reference-guided anatomy correction after two rejected drafts",
+      reviewStatus: "approved as sole representative; distal digits, tail completion, integument, and color remain reconstructed",
+      evidenceSources: ["https://doi.org/10.1206/3889.1"],
+      metadataRecord: "tools/comfyui/almas-ukhaa-short-deep-skull-coherence-batch-20260802.json",
     },
     {
       kind: "review hold",
@@ -14508,6 +14620,15 @@ const generatedImageSamples = {
       galleryRole: "color-pattern",
       phenotype: "variant-b",
       habitatKey: "djadokhta-semiarid-dune",
+      generatedAt: "2026-08-02T12:57:04.911Z",
+      sourceAttribution: "OpenAI built-in image generation; project-owned generated Almas controls only",
+      licenseRecord: "Generated project asset; no external artwork used; Pei et al. 2017 supplied factual anatomy constraints only",
+      generationPromptRecord: "tools/comfyui/almas-ukhaa-short-deep-skull-coherence-batch-20260802.json#records/color-pattern/promptLines",
+      generationSeed: "not exposed by generator",
+      generationWorkflow: "OpenAI built-in image generation, palette-only edit of the approved S1 control",
+      reviewStatus: "approved as color-pattern review hold; anatomy matches S1 and palette remains hypothetical",
+      evidenceSources: ["https://doi.org/10.1206/3889.1"],
+      metadataRecord: "tools/comfyui/almas-ukhaa-short-deep-skull-coherence-batch-20260802.json",
     },
     {
       kind: "anatomy review",
@@ -14520,6 +14641,15 @@ const generatedImageSamples = {
       galleryRole: "habitat-ecology",
       phenotype: "canonical-a",
       habitatKey: "djadokhta-semiarid-dune",
+      generatedAt: "2026-08-02T12:58:49.555Z",
+      sourceAttribution: "OpenAI built-in image generation; project-owned generated Almas controls only",
+      licenseRecord: "Generated project asset; no external artwork used; Pei et al. 2017 supplied factual anatomy constraints only",
+      generationPromptRecord: "tools/comfyui/almas-ukhaa-short-deep-skull-coherence-batch-20260802.json#records/habitat-ecology/promptLines",
+      generationSeed: "not exposed by generator",
+      generationWorkflow: "OpenAI built-in image generation, ecology-scene identity correction from the approved S1 control",
+      reviewStatus: "approved as habitat-ecology anatomy review; exact fauna, grouping, nesting, and behavior remain unclaimed",
+      evidenceSources: ["https://doi.org/10.1206/3889.1"],
+      metadataRecord: "tools/comfyui/almas-ukhaa-short-deep-skull-coherence-batch-20260802.json",
     },
     {
       kind: "anatomy review",
@@ -22076,7 +22206,7 @@ function renderTimelineBrowse() {
               <span class="timeline-card-name">${escapeHtml(dino.name)}</span>
               <span class="timeline-card-meta">
                 <span>${escapeHtml(dino.family)}</span>
-                <span class="level-badge level-${dino.knowledgeLevel}">${escapeHtml(level.short)}</span>
+                <span class="level-badge level-${dino.knowledgeLevel}" title="${escapeHtml(level.description)}" aria-label="${escapeHtml("친숙도 " + level.short + " " + level.label)}">${escapeHtml(level.short)}</span>
               </span>
               ${renderDinoPaletteSwatches(dino, "palette-strip timeline-palette")}
             </button>
@@ -22777,7 +22907,7 @@ function renderMapNodes() {
           <strong>${dino.koreanName}</strong>
           <div class="node-meta">
             <span>${dino.name} / ${dino.family}</span>
-            <span class="level-badge level-${dino.knowledgeLevel}">${level.short}</span>
+            <span class="level-badge level-${dino.knowledgeLevel}" title="${escapeHtml(level.description)}" aria-label="${escapeHtml("친숙도 " + level.short + " " + level.label)}">${level.short}</span>
           </div>
           ${renderDinoPaletteSwatches(dino, "palette-strip node-palette")}
         `
@@ -23417,7 +23547,7 @@ function renderDetail() {
     </section>
     ${visualProfilePanel}
     <div class="kicker-row">
-      <span class="level-badge level-${dino.knowledgeLevel}">${level.short} · ${level.label}</span>
+      <span class="level-badge level-${dino.knowledgeLevel}" title="${escapeHtml(level.description)}" aria-label="${escapeHtml("친숙도 " + level.short + " " + level.label)}">${level.short} · ${level.label}</span>
       <span class="pill">${dino.period}</span>
       <span class="pill">${dino.diet}</span>
       <span class="pill">${dino.region}</span>
@@ -23520,7 +23650,7 @@ function sortDinosaurs(list) {
     if (state.sort === "updated") return compareByRecentImageUpdate(a, b);
     if (state.sort === "size") return b.length - a.length;
     if (state.sort === "level") return a.knowledgeLevel - b.knowledgeLevel || a.koreanName.localeCompare(b.koreanName, "ko");
-    if (state.sort === "period") return a.period.localeCompare(b.period, "ko");
+    if (state.sort === "period") return compareTimelineDinosaurs(a, b);
     if (state.sort === "name") return a.koreanName.localeCompare(b.koreanName, "ko");
     return compareByRecentImageUpdate(a, b);
   });
@@ -23549,7 +23679,7 @@ function renderCatalog() {
             </div>
             ${renderDinoPaletteSwatches(dino, "palette-strip compact")}
             <div class="kicker-row">
-              <span class="level-badge level-${dino.knowledgeLevel}">${level.short}</span>
+              <span class="level-badge level-${dino.knowledgeLevel}" title="${escapeHtml(level.description)}" aria-label="${escapeHtml("친숙도 " + level.short + " " + level.label)}">${level.short}</span>
               <span class="pill">${dino.period}</span>
               <span class="pill">${dino.diet}</span>
             </div>
@@ -28049,7 +28179,7 @@ function bindEvents() {
     state.diet = "all";
     state.knowledgeLevel = "all";
     state.classification = "all";
-    state.sort = "updated";
+    state.sort = "level";
     $("#searchInput").value = "";
     $("#mapQuickSearch").value = "";
     $("#periodSort").value = state.sort;
