@@ -21,8 +21,16 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Check out source
+      - name: Check out deploy sources only
         uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            index.html
+            app.js
+            gallery-slots.js
+            styles.css
+            atlas-layout.js
+          sparse-checkout-cone-mode: false
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
@@ -32,7 +40,7 @@ jobs:
           ASSET_BASE: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/assets/dinosaurs/
         run: |
           mkdir -p _site
-          cp index.html app.js gallery-slots.js styles.css _site/
+          cp index.html app.js gallery-slots.js styles.css atlas-layout.js _site/
           python3 - <<'PY'
           import os
           from pathlib import Path
