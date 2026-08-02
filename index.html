@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dino Atlas MVP</title>
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="./styles.css?v=20260801-map-card-pan-v1" />
+    <link rel="stylesheet" href="./styles.css?v=20260802-timeline-lightbox-v3" />
   </head>
   <body data-active-view="atlas">
     <div class="app-shell">
@@ -107,7 +107,17 @@
         </header>
 
         <section class="view active" id="atlasView" aria-label="Phylogeny view">
-          <section class="map-panel">
+          <section class="map-panel mode-timeline">
+            <div class="atlas-mode-bar">
+              <div class="map-mode-controls" id="mapModeControls" role="group" aria-label="계통도 표시 방식">
+                <button class="active" data-map-mode="timeline" type="button" aria-pressed="true">시대별 찾기</button>
+                <button data-map-mode="tree" type="button" aria-pressed="false">전체 계통</button>
+              </div>
+              <label class="map-quick-search">
+                <span class="sr-only">계통도 빠른 검색</span>
+                <input id="mapQuickSearch" type="search" placeholder="공룡명·분류·지역 빠른 검색" autocomplete="off" />
+              </label>
+            </div>
             <div class="map-toolbar">
               <div class="map-toolbar-heading">
                 <p class="eyebrow">Phylogeny Map</p>
@@ -145,6 +155,7 @@
 
             <div class="map-stage">
               <div class="map-workspace">
+                <div class="timeline-browser" id="timelineBrowse" aria-label="시대별 공룡 찾기"></div>
                 <div class="phylo-viewport" id="mapViewport" tabindex="0" aria-label="Pan and zoom phylogeny map">
                   <div class="phylo-canvas" id="phyloCanvas">
                     <svg class="tree-lines" id="treeLines" viewBox="0 0 1900 1180" aria-hidden="true"></svg>
@@ -244,9 +255,9 @@
           </div>
           <button class="lightbox-close icon-button" data-lightbox-action="close" type="button" aria-label="닫기"><span class="button-icon icon-close" aria-hidden="true"></span></button>
         </div>
-        <div class="lightbox-stage">
+        <div class="lightbox-stage" role="group" aria-label="확대 이미지: 두 손가락으로 확대하고 한 번 탭하면 이전·다음 버튼을 잠시 숨깁니다.">
           <button class="lightbox-nav prev icon-button" data-lightbox-action="prev" type="button" aria-label="이전 이미지"><span class="button-icon icon-chevron-left" aria-hidden="true"></span></button>
-          <img id="lightboxImage" alt="" />
+          <img id="lightboxImage" alt="" draggable="false" />
           <button class="lightbox-nav next icon-button" data-lightbox-action="next" type="button" aria-label="다음 이미지"><span class="button-icon icon-chevron-right" aria-hidden="true"></span></button>
         </div>
         <div class="lightbox-caption">
@@ -258,7 +269,7 @@
     </div>
 
 <script src="./gallery-slots.js?v=20260801-almas-six-slot-v1"></script>
-  <script src="./app.js?v=20260801-hanssuesia-six-slot-v1"></script>
+<script src="./app.js?v=20260802-timeline-lightbox-v3"></script>
     <script src="./atlas-layout.js?v=20260731-resizable-inspector-v1"></script>
   </body>
 </html>

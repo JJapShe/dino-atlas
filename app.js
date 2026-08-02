@@ -4275,12 +4275,18 @@ const state = {
   assetReviewFrameLoaded: false,
   lightboxItems: [],
   lightboxIndex: 0,
+  lightboxView: {
+    scale: 1,
+    x: 0,
+    y: 0,
+  },
   phyloFocusId: "",
   search: "",
   diet: "all",
   knowledgeLevel: "all",
   sort: "updated",
   map: {
+    mode: "timeline",
     scale: 0.72,
     x: 24,
     y: 16,
@@ -4302,6 +4308,18 @@ const state = {
     originY: 0,
   },
 };
+
+const timelinePeriodOrder = Object.freeze([
+  { id: "middle-triassic", label: "중기 트라이아스기", era: "triassic" },
+  { id: "late-triassic", label: "후기 트라이아스기", era: "triassic" },
+  { id: "early-jurassic", label: "전기 쥐라기", era: "jurassic" },
+  { id: "middle-jurassic", label: "중기 쥐라기", era: "jurassic" },
+  { id: "middle-late-jurassic", label: "중기-후기 쥐라기 전환기", era: "jurassic" },
+  { id: "early-late-jurassic", label: "후기 쥐라기 초기(옥스퍼드절)", era: "jurassic" },
+  { id: "late-jurassic", label: "후기 쥐라기", era: "jurassic" },
+  { id: "early-cretaceous", label: "전기 백악기", era: "cretaceous" },
+  { id: "late-cretaceous", label: "후기 백악기", era: "cretaceous" },
+]);
 
 const recentImageUpdateTaxa = [
   "khaan-mckennai",
@@ -20963,6 +20981,78 @@ function getLightboxItems(items) {
   return items.map(getLightboxItem).filter(Boolean);
 }
 
+const lightboxMaxScale = 4;
+const lightboxNavRestoreDelay = 2200;
+let lightboxNavRestoreTimer = 0;
+
+function setLightboxNavigationHidden(hidden, { autoRestore = false } = {}) {
+  const lightbox = $("#imageLightbox");
+  if (!lightbox) return;
+  if (lightboxNavRestoreTimer) {
+    window.clearTimeout(lightboxNavRestoreTimer);
+    lightboxNavRestoreTimer = 0;
+  }
+
+  lightbox.classList.toggle("nav-temporarily-hidden", Boolean(hidden));
+  $$(".lightbox-nav").forEach((button) => {
+    if (hidden) {
+      button.setAttribute("aria-hidden", "true");
+      button.tabIndex = -1;
+    } else {
+      button.removeAttribute("aria-hidden");
+      button.removeAttribute("tabindex");
+    }
+  });
+  if (hidden && autoRestore) {
+    lightboxNavRestoreTimer = window.setTimeout(() => {
+      lightbox.classList.remove("nav-temporarily-hidden");
+      $$(".lightbox-nav").forEach((button) => {
+        button.removeAttribute("aria-hidden");
+        button.removeAttribute("tabindex");
+      });
+      lightboxNavRestoreTimer = 0;
+    }, lightboxNavRestoreDelay);
+  }
+}
+
+function clampLightboxView(scale, x, y) {
+  const stage = $(".lightbox-stage");
+  const image = $("#lightboxImage");
+  if (!stage || !image) return { x: 0, y: 0 };
+  const maxX = Math.max(0, (image.offsetWidth * scale - stage.clientWidth) / 2);
+  const maxY = Math.max(0, (image.offsetHeight * scale - stage.clientHeight) / 2);
+  return {
+    x: Math.max(-maxX, Math.min(maxX, x)),
+    y: Math.max(-maxY, Math.min(maxY, y)),
+  };
+}
+
+function applyLightboxImageTransform() {
+  const lightbox = $("#imageLightbox");
+  const image = $("#lightboxImage");
+  if (!lightbox || !image) return;
+  const { scale, x, y } = state.lightboxView;
+  image.style.transform = `translate3d(${x}px, ${y}px, 0) scale(${scale})`;
+  lightbox.classList.toggle("image-zoomed", scale > 1.01);
+}
+
+function setLightboxView(scale, x, y) {
+  const nextScale = Math.max(1, Math.min(lightboxMaxScale, scale));
+  const clamped = clampLightboxView(nextScale, x, y);
+  state.lightboxView.scale = nextScale;
+  state.lightboxView.x = clamped.x;
+  state.lightboxView.y = clamped.y;
+  applyLightboxImageTransform();
+}
+
+function resetLightboxView() {
+  state.lightboxView.scale = 1;
+  state.lightboxView.x = 0;
+  state.lightboxView.y = 0;
+  $("#imageLightbox")?.classList.remove("lightbox-gesturing");
+  applyLightboxImageTransform();
+}
+
 function renderLightbox() {
   const lightbox = $("#imageLightbox");
   if (!lightbox) return;
@@ -20987,6 +21077,8 @@ function openLightbox(items, index = 0) {
   if (!lightboxItems.length) return;
   state.lightboxItems = lightboxItems;
   state.lightboxIndex = Math.max(0, Math.min(index, lightboxItems.length - 1));
+  resetLightboxView();
+  setLightboxNavigationHidden(false);
   renderLightbox();
 }
 
@@ -21004,6 +21096,8 @@ function openDinoGalleryLightbox(dino, selectedImage = getPrimaryImage(dino)) {
 function closeLightbox() {
   state.lightboxItems = [];
   state.lightboxIndex = 0;
+  resetLightboxView();
+  setLightboxNavigationHidden(false);
   renderLightbox();
 }
 
@@ -21011,6 +21105,8 @@ function moveLightbox(delta) {
   const total = state.lightboxItems.length;
   if (!total) return;
   state.lightboxIndex = (state.lightboxIndex + delta + total) % total;
+  resetLightboxView();
+  setLightboxNavigationHidden(false);
   renderLightbox();
 }
 
@@ -21457,6 +21553,129 @@ function renderDinoPaletteSwatches(dino, className = "palette-strip") {
         .join("")}
     </div>
   `;
+}
+
+function getTimelinePeriodMeta(period, eraId) {
+  const knownPeriod = timelinePeriodOrder.find((item) => item.label === period);
+  if (knownPeriod) {
+    return {
+      ...knownPeriod,
+      order: timelinePeriodOrder.indexOf(knownPeriod),
+    };
+  }
+
+  const eraIndex = Math.max(0, eras.findIndex((era) => era.id === eraId));
+  return {
+    id: `other-${eraId || "unknown"}`,
+    label: period || "시기 미상",
+    era: eraId,
+    order: eraIndex * 100 + 90,
+  };
+}
+
+function compareTimelineDinosaurs(a, b) {
+  const periodA = getTimelinePeriodMeta(a.period, a.era);
+  const periodB = getTimelinePeriodMeta(b.period, b.era);
+  return (
+    periodA.order - periodB.order ||
+    getPhyloCladeOrderIndex(a.clade) - getPhyloCladeOrderIndex(b.clade) ||
+    a.clade.localeCompare(b.clade) ||
+    a.family.localeCompare(b.family) ||
+    a.koreanName.localeCompare(b.koreanName, "ko") ||
+    a.id.localeCompare(b.id)
+  );
+}
+
+function getTimelineBrowseDinosaurs() {
+  const filtered = getFilteredDinosaurs();
+  if (
+    filtered.length > 0 &&
+    state.map.scope !== "all" &&
+    !filtered.some((dino) => dino.era === state.map.scope)
+  ) {
+    state.map.scope = filtered[0].era;
+  }
+
+  return filtered
+    .filter((dino) => state.map.scope === "all" || dino.era === state.map.scope)
+    .sort(compareTimelineDinosaurs);
+}
+
+function renderTimelineBrowse() {
+  const container = $("#timelineBrowse");
+  if (!container) return;
+
+  const visibleDinosaurs = getTimelineBrowseDinosaurs();
+  if (
+    visibleDinosaurs.length > 0 &&
+    !visibleDinosaurs.some((dino) => dino.id === state.selectedId)
+  ) {
+    state.selectedId = visibleDinosaurs[0].id;
+    state.galleryIndex = 0;
+  }
+
+  if (visibleDinosaurs.length === 0) {
+    container.innerHTML = `
+      <div class="timeline-empty">
+        <strong>조건에 맞는 공룡이 없습니다</strong>
+        <span>검색어나 필터를 바꿔 보세요.</span>
+      </div>
+    `;
+    return;
+  }
+
+  const grouped = new Map();
+  visibleDinosaurs.forEach((dino) => {
+    const meta = getTimelinePeriodMeta(dino.period, dino.era);
+    const group = grouped.get(meta.label) || { meta, dinosaurs: [] };
+    group.dinosaurs.push(dino);
+    grouped.set(meta.label, group);
+  });
+
+  container.innerHTML = [...grouped.values()]
+    .sort((a, b) => a.meta.order - b.meta.order)
+    .map(({ meta, dinosaurs: periodDinosaurs }) => {
+      const eraLabel = getEraLabel(meta.era) || "지질시대";
+      const cards = periodDinosaurs
+        .map((dino) => {
+          const level = getKnowledgeLevel(dino.knowledgeLevel);
+          const active = dino.id === state.selectedId;
+          return `
+            <button
+              class="timeline-card ${active ? "active" : ""}"
+              data-timeline-id="${escapeHtml(dino.id)}"
+              type="button"
+              aria-pressed="${String(active)}"
+              aria-label="${escapeHtml(`${dino.koreanName} · ${dino.period}`)}"
+              style="${getDinoPaletteStyle(dino)}"
+            >
+              <span class="timeline-card-kind">${escapeHtml(dino.clade)}</span>
+              <strong>${escapeHtml(dino.koreanName)}</strong>
+              <span class="timeline-card-name">${escapeHtml(dino.name)}</span>
+              <span class="timeline-card-meta">
+                <span>${escapeHtml(dino.family)}</span>
+                <span class="level-badge level-${dino.knowledgeLevel}">${escapeHtml(level.short)}</span>
+              </span>
+              ${renderDinoPaletteSwatches(dino, "palette-strip timeline-palette")}
+            </button>
+          `;
+        })
+        .join("");
+
+      return `
+        <section class="timeline-period-section" data-timeline-period="${escapeHtml(meta.id)}">
+          <header class="timeline-period-heading">
+            <div>
+              <p class="eyebrow">${escapeHtml(eraLabel)}</p>
+              <h3>${escapeHtml(meta.label)}</h3>
+            </div>
+            <span class="timeline-period-count">${periodDinosaurs.length}종</span>
+          </header>
+          <div class="timeline-grid">${cards}</div>
+        </section>
+      `;
+    })
+    .join("");
 }
 
 const phyloAutoLayouts = {
@@ -22360,6 +22579,8 @@ function applyMapUiState() {
   const expandButton = $("#toggleMapExpand");
   if (!panel || !shell || !sidebarButton || !inspectorButton || !expandButton) return;
 
+  panel.classList.toggle("mode-timeline", state.map.mode === "timeline");
+  panel.classList.toggle("mode-tree", state.map.mode === "tree");
   panel.classList.toggle("inspector-collapsed", state.map.inspectorCollapsed);
   panel.classList.toggle("map-expanded", state.map.expanded);
   shell.classList.toggle(
@@ -22382,6 +22603,19 @@ function applyMapUiState() {
   expandButton.title = state.map.expanded ? "지도 확장 닫기" : "지도 확장";
   const expandLabel = expandButton.querySelector(".map-control-label");
   if (expandLabel) expandLabel.textContent = state.map.expanded ? "닫기" : "전체 화면";
+}
+
+function renderMapModeControls() {
+  $$('[data-map-mode]').forEach((button) => {
+    const active = button.dataset.mapMode === state.map.mode;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
+
+  const quickSearch = $("#mapQuickSearch");
+  const sidebarSearch = $("#searchInput");
+  if (quickSearch && quickSearch.value !== state.search) quickSearch.value = state.search;
+  if (sidebarSearch && sidebarSearch.value !== state.search) sidebarSearch.value = state.search;
 }
 
 function clampScale(scale) {
@@ -22415,6 +22649,29 @@ function renderMapScopeControls() {
     inspectorButton.title = `${selected.koreanName} ${action}`;
     inspectorButton.setAttribute("aria-label", `${selected.koreanName} ${action}`);
   }
+}
+
+function setMapMode(mode) {
+  const nextMode = mode === "tree" ? "tree" : "timeline";
+  if (state.map.mode === nextMode) return;
+
+  state.map.mode = nextMode;
+  if (nextMode === "timeline" && state.map.expanded) {
+    setMapExpanded(false);
+  } else {
+    applyMapUiState();
+  }
+
+  renderMapModeControls();
+  if (nextMode === "timeline") {
+    renderTimelineBrowse();
+    renderMapScopeControls();
+    renderDetail();
+    return;
+  }
+
+  renderPhyloMap();
+  requestAnimationFrame(() => refitCurrentMapFrame());
 }
 
 function getReadableMapScale() {
@@ -22581,8 +22838,12 @@ function refitCurrentMapFrame({ minimumScale } = {}) {
 }
 
 function refreshMapUiFrame() {
-  renderPhyloMap();
-  refitCurrentMapFrame();
+  if (state.map.mode === "tree") {
+    renderPhyloMap();
+    refitCurrentMapFrame();
+    return;
+  }
+  renderTimelineBrowse();
 }
 
 function setMapInspectorCollapsed(collapsed, { userInitiated = false } = {}) {
@@ -26649,7 +26910,84 @@ function bindReviewEvents(selectedDino) {
 
 function bindLightboxEvents() {
   const lightbox = $("#imageLightbox");
-  if (!lightbox) return;
+  const stage = $(".lightbox-stage");
+  const image = $("#lightboxImage");
+  if (!lightbox || !stage || !image) return;
+
+  const activePointers = new Map();
+  let pinching = false;
+  let pinchStartDistance = 0;
+  let pinchStartScale = 1;
+  let pinchStartX = 0;
+  let pinchStartY = 0;
+  let pinchStartCenterOffsetX = 0;
+  let pinchStartCenterOffsetY = 0;
+  let panPointerId = null;
+  let panStartClientX = 0;
+  let panStartClientY = 0;
+  let panOriginX = 0;
+  let panOriginY = 0;
+  let tapStartX = 0;
+  let tapStartY = 0;
+  let pointerStartedOnImage = false;
+  let gestureMoved = false;
+  let hadPinch = false;
+
+  const getPinchMetrics = () => {
+    const [first, second] = [...activePointers.values()];
+    if (!first || !second) return null;
+    return {
+      centerX: (first.clientX + second.clientX) / 2,
+      centerY: (first.clientY + second.clientY) / 2,
+      distance: Math.hypot(second.clientX - first.clientX, second.clientY - first.clientY),
+    };
+  };
+
+  const beginPan = (pointerId, pointer) => {
+    if (!pointer || state.lightboxView.scale <= 1.01) {
+      panPointerId = null;
+      return;
+    }
+    panPointerId = pointerId;
+    panStartClientX = pointer.clientX;
+    panStartClientY = pointer.clientY;
+    panOriginX = state.lightboxView.x;
+    panOriginY = state.lightboxView.y;
+    lightbox.classList.add("lightbox-gesturing");
+  };
+
+  const beginPinch = () => {
+    const metrics = getPinchMetrics();
+    if (!metrics || metrics.distance <= 0) return;
+    const stageRect = stage.getBoundingClientRect();
+    pinching = true;
+    hadPinch = true;
+    gestureMoved = true;
+    pinchStartDistance = metrics.distance;
+    pinchStartScale = state.lightboxView.scale;
+    pinchStartX = state.lightboxView.x;
+    pinchStartY = state.lightboxView.y;
+    pinchStartCenterOffsetX = metrics.centerX - (stageRect.left + stageRect.width / 2);
+    pinchStartCenterOffsetY = metrics.centerY - (stageRect.top + stageRect.height / 2);
+    panPointerId = null;
+    lightbox.classList.add("lightbox-gesturing");
+    setLightboxNavigationHidden(true);
+  };
+
+  const finishGesture = ({ cancelled = false } = {}) => {
+    activePointers.clear();
+    pinching = false;
+    panPointerId = null;
+    pointerStartedOnImage = false;
+    lightbox.classList.remove("lightbox-gesturing");
+    if (cancelled) {
+      setLightboxNavigationHidden(false);
+    } else if (hadPinch || (gestureMoved && state.lightboxView.scale > 1.01)) {
+      setLightboxNavigationHidden(true, { autoRestore: true });
+    }
+    hadPinch = false;
+    gestureMoved = false;
+  };
 
   lightbox.addEventListener("click", (event) => {
     const button = event.target.closest("[data-lightbox-action]");
@@ -26660,17 +26998,162 @@ function bindLightboxEvents() {
     if (action === "next") moveLightbox(1);
   });
 
+  image.addEventListener("dragstart", (event) => event.preventDefault());
+  image.addEventListener("load", () => {
+    const clamped = clampLightboxView(
+      state.lightboxView.scale,
+      state.lightboxView.x,
+      state.lightboxView.y,
+    );
+    state.lightboxView.x = clamped.x;
+    state.lightboxView.y = clamped.y;
+    applyLightboxImageTransform();
+  });
+
+  stage.addEventListener("pointerdown", (event) => {
+    if (
+      event.pointerType !== "touch" ||
+      event.target.closest("[data-lightbox-action]")
+    ) {
+      return;
+    }
+    const startsOnImage = event.target === image;
+    if (!startsOnImage && activePointers.size === 0) return;
+
+    event.preventDefault();
+    if (activePointers.size === 0) {
+      tapStartX = event.clientX;
+      tapStartY = event.clientY;
+      pointerStartedOnImage = startsOnImage;
+      gestureMoved = false;
+      hadPinch = false;
+    }
+    activePointers.set(event.pointerId, {
+      clientX: event.clientX,
+      clientY: event.clientY,
+    });
+    try {
+      stage.setPointerCapture(event.pointerId);
+    } catch {
+      // Synthetic QA events may not own a native pointer capture.
+    }
+
+    if (activePointers.size === 2) {
+      beginPinch();
+    } else if (activePointers.size === 1) {
+      beginPan(event.pointerId, activePointers.get(event.pointerId));
+    }
+  });
+
+  stage.addEventListener("pointermove", (event) => {
+    if (!activePointers.has(event.pointerId)) return;
+    event.preventDefault();
+    activePointers.set(event.pointerId, {
+      clientX: event.clientX,
+      clientY: event.clientY,
+    });
+
+    if (pinching) {
+      const metrics = getPinchMetrics();
+      if (!metrics || pinchStartDistance <= 0) return;
+      const stageRect = stage.getBoundingClientRect();
+      const nextScale = Math.max(
+        1,
+        Math.min(lightboxMaxScale, pinchStartScale * (metrics.distance / pinchStartDistance)),
+      );
+      const scaleRatio = nextScale / pinchStartScale;
+      const currentCenterOffsetX = metrics.centerX - (stageRect.left + stageRect.width / 2);
+      const currentCenterOffsetY = metrics.centerY - (stageRect.top + stageRect.height / 2);
+      const nextX =
+        currentCenterOffsetX - (pinchStartCenterOffsetX - pinchStartX) * scaleRatio;
+      const nextY =
+        currentCenterOffsetY - (pinchStartCenterOffsetY - pinchStartY) * scaleRatio;
+      setLightboxView(nextScale, nextX, nextY);
+      return;
+    }
+
+    const pointer = activePointers.get(event.pointerId);
+    if (panPointerId === event.pointerId && state.lightboxView.scale > 1.01) {
+      const deltaX = pointer.clientX - panStartClientX;
+      const deltaY = pointer.clientY - panStartClientY;
+      if (Math.hypot(deltaX, deltaY) > 6) gestureMoved = true;
+      setLightboxView(
+        state.lightboxView.scale,
+        panOriginX + deltaX,
+        panOriginY + deltaY,
+      );
+      return;
+    }
+
+    if (Math.hypot(pointer.clientX - tapStartX, pointer.clientY - tapStartY) > 8) {
+      gestureMoved = true;
+    }
+  });
+
+  stage.addEventListener("pointerup", (event) => {
+    if (!activePointers.has(event.pointerId)) return;
+    event.preventDefault();
+    activePointers.delete(event.pointerId);
+    if (stage.hasPointerCapture(event.pointerId)) stage.releasePointerCapture(event.pointerId);
+
+    if (pinching && activePointers.size < 2) {
+      pinching = false;
+      const remaining = [...activePointers.entries()][0];
+      if (remaining) beginPan(remaining[0], remaining[1]);
+    }
+    if (activePointers.size > 0) return;
+
+    lightbox.classList.remove("lightbox-gesturing");
+    panPointerId = null;
+    if (!gestureMoved && !hadPinch && pointerStartedOnImage) {
+      const shouldHide = !lightbox.classList.contains("nav-temporarily-hidden");
+      setLightboxNavigationHidden(shouldHide, { autoRestore: shouldHide });
+    } else if (hadPinch || (gestureMoved && state.lightboxView.scale > 1.01)) {
+      setLightboxNavigationHidden(true, { autoRestore: true });
+    }
+    pointerStartedOnImage = false;
+    hadPinch = false;
+    gestureMoved = false;
+  });
+
+  const cancelPointer = (event) => {
+    if (!activePointers.has(event.pointerId)) return;
+    activePointers.delete(event.pointerId);
+    if (stage.hasPointerCapture(event.pointerId)) stage.releasePointerCapture(event.pointerId);
+    if (pinching && activePointers.size < 2) {
+      pinching = false;
+      const remaining = [...activePointers.entries()][0];
+      if (remaining) beginPan(remaining[0], remaining[1]);
+    }
+    if (activePointers.size === 0) finishGesture({ cancelled: true });
+  };
+
+  stage.addEventListener("pointercancel", cancelPointer);
+  stage.addEventListener("lostpointercapture", cancelPointer);
+
   window.addEventListener("keydown", (event) => {
     if (!state.lightboxItems.length) return;
     if (event.key === "Escape") closeLightbox();
     if (event.key === "ArrowLeft") moveLightbox(-1);
     if (event.key === "ArrowRight") moveLightbox(1);
   });
+
+  window.addEventListener("resize", () => {
+    if (!state.lightboxItems.length) return;
+    const clamped = clampLightboxView(
+      state.lightboxView.scale,
+      state.lightboxView.x,
+      state.lightboxView.y,
+    );
+    state.lightboxView.x = clamped.x;
+    state.lightboxView.y = clamped.y;
+    applyLightboxImageTransform();
+  });
 }
 
 function fitInitialAtlasFrame(attempt = 0) {
   requestAnimationFrame(() => {
-    if (state.view !== "atlas" || state.map.fitted) return;
+    if (state.view !== "atlas" || state.map.mode !== "tree" || state.map.fitted) return;
     const viewport = $("#mapViewport");
     if ((!viewport || viewport.clientWidth <= 0 || viewport.clientHeight <= 0) && attempt < 4) {
       fitInitialAtlasFrame(attempt + 1);
@@ -26718,7 +27201,7 @@ function setView(view) {
   syncResponsiveMapInspector();
   applyMapUiState();
   renderAll();
-  if (view === "atlas" && !state.map.fitted) {
+  if (view === "atlas" && state.map.mode === "tree" && !state.map.fitted) {
     const viewport = $("#mapViewport");
     if (viewport?.clientWidth > 0 && viewport.clientHeight > 0) {
       fitMapScope(getSelectedDino().era);
@@ -26730,14 +27213,20 @@ function setView(view) {
 
 function renderAll() {
   renderMetrics();
-  renderPhyloMap();
+  if (state.map.mode === "tree") {
+    renderPhyloMap();
+  } else {
+    renderTimelineBrowse();
+    renderMapScopeControls();
+  }
+  renderMapModeControls();
   renderDetail();
   renderCatalog();
   renderReview();
 }
 
 function refitAtlasAfterFilter() {
-  if (state.view !== "atlas") return;
+  if (state.view !== "atlas" || state.map.mode !== "tree") return;
   requestAnimationFrame(() => refitCurrentMapFrame());
 }
 
@@ -26752,6 +27241,25 @@ function bindMapEvents() {
   let navigatorPointerId = null;
   let suppressMapNodeClick = false;
   let mapPanMoved = false;
+
+  $("#mapModeControls").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-map-mode]");
+    if (!button) return;
+    setMapMode(button.dataset.mapMode);
+  });
+
+  $("#timelineBrowse").addEventListener("click", (event) => {
+    const card = event.target.closest("[data-timeline-id]");
+    if (!card) return;
+    state.selectedId = card.dataset.timelineId;
+    state.galleryIndex = 0;
+    state.map.inspectorCollapsed = false;
+    state.map.inspectorUserSet = true;
+    renderTimelineBrowse();
+    renderDetail();
+    applyMapUiState();
+    renderMapScopeControls();
+  });
 
   const getPinchMetrics = () => {
     const [first, second] = [...activePointers.values()];
@@ -26820,6 +27328,14 @@ function bindMapEvents() {
   $("#mapEraControls").addEventListener("click", (event) => {
     const button = event.target.closest("[data-map-scope]");
     if (!button) return;
+    if (state.map.mode === "timeline") {
+      state.map.scope = button.dataset.mapScope;
+      renderTimelineBrowse();
+      renderDetail();
+      renderMapScopeControls();
+      $("#timelineBrowse").scrollTop = 0;
+      return;
+    }
     if (button.dataset.mapScope === "all") {
       fitMapToViewport();
       return;
@@ -26994,10 +27510,20 @@ function bindMapEvents() {
     if (state.map.layoutFrame) cancelAnimationFrame(state.map.layoutFrame);
     state.map.layoutFrame = requestAnimationFrame(() => {
       state.map.layoutFrame = 0;
-      renderPhyloMap();
-      refitCurrentMapFrame({ minimumScale: state.map.scale });
+      if (state.map.mode === "tree") {
+        renderPhyloMap();
+        refitCurrentMapFrame({ minimumScale: state.map.scale });
+      } else {
+        renderTimelineBrowse();
+      }
     });
   });
+}
+
+function setAtlasSearch(value) {
+  state.search = value;
+  renderAll();
+  refitAtlasAfterFilter();
 }
 
 function bindEvents() {
@@ -27013,9 +27539,11 @@ function bindEvents() {
   });
 
   $("#searchInput").addEventListener("input", (event) => {
-    state.search = event.target.value;
-    renderAll();
-    refitAtlasAfterFilter();
+    setAtlasSearch(event.target.value);
+  });
+
+  $("#mapQuickSearch").addEventListener("input", (event) => {
+    setAtlasSearch(event.target.value);
   });
 
   $("#dietFilter").addEventListener("click", (event) => {
@@ -27047,6 +27575,7 @@ function bindEvents() {
     state.knowledgeLevel = "all";
     state.sort = "updated";
     $("#searchInput").value = "";
+    $("#mapQuickSearch").value = "";
     $("#periodSort").value = state.sort;
     $$("#dietFilter button").forEach((button) =>
       button.classList.toggle("active", button.dataset.diet === "all"),
