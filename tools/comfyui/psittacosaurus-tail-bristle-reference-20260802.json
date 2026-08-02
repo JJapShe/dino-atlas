@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-02-psittacosaurus-tail-bristle-reference-1",
+  "createdAt": "2026-08-02T11:10:58.899Z",
+  "purpose": "Restore one visible genus-level Psittacosaurus tail-bristle reference without treating the soft-tissue specimen as a diagnostic feature of Psittacosaurus mongoliensis.",
+  "targetAudience": "ages 5-14",
+  "projectAsset": "assets/dinosaurs/psittacosaurus-mongoliensis-genus-tail-bristle-anatomy-imagegen-v1.png",
+  "dimensions": "1536x1024",
+  "sha256": "3D85016971F8BBE8185F144DF42A32EA1AE7171931408EEB522ED91B34F044B3",
+  "galleryPolicy": {
+    "slot": 7,
+    "role": "alternate-habitat-behavior",
+    "kind": "anatomy review",
+    "status": "genus-level soft-tissue reference only",
+    "representativePromotion": "prohibited; the existing P. mongoliensis representative remains unchanged",
+    "taxonomicLabel": "Psittacosaurus sp. specimen SMF R 4970; not securely assignable to P. mongoliensis"
+  },
+  "copyrightSafety": {
+    "sourcePolicy": "The visual lineage originated from a project-internal approved generated representative and passed through two rejected corrective intermediates. External papers were factual anatomy references only, not artwork inputs.",
+    "styleConstraint": "Every prompt prohibited text, watermark, and named-artist imitation.",
+    "licenseStatus": "Generated project asset; no third-party artwork license is asserted."
+  },
+  "workflow": {
+    "generator": "OpenAI built-in image generation",
+    "mode": "reference-assisted anatomy-correction image edit",
+    "seed": "not exposed by generator",
+    "approvedGeneratorCallId": "exec-e2ed2b3a-36cd-490a-a931-2a7750429d47",
+    "approvedGeneratedAt": "2026-08-02T11:09:54.672Z",
+    "referenceInputs": [
+      "assets/dinosaurs/psittacosaurus-mongoliensis-smallskull-jugalhorn-representative-imagegen-v1.png",
+      "rejected edit exec-0c6af716-0cba-4ae0-9013-3534c6e28f08",
+      "rejected edit exec-6d14112a-66f6-40ce-a373-63900f5c4b13"
+    ],
+    "selectionRule": "Only the third, original-size reviewed result was copied into assets/dinosaurs; the two rejected attempts remain outside the project asset tree."
+  },
+  "scientificContext": {
+    "specimen": "SMF R 4970",
+    "taxonomicConfidence": "Psittacosaurus sp.; species-level assignment remains uncertain",
+    "softTissueEvidence": "Long cylindrical bristle-like structures are directly preserved on the dorsal proximal tail; later work places the row approximately across caudal vertebrae 5-19.",
+    "reconstructionLimit": "The reference shows the preserved placement as a genus-level possibility and does not make bristles mandatory for P. mongoliensis.",
+    "evidenceSources": [
+      "https://www.miketaylor.org.uk/tmp/papers/gmayr43.pdf",
+      "https://research-information.bris.ac.uk/files/99863297/Psittacosaur_bristles_revision.pdf",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC9374759/"
+    ]
+  },
+  "approvedPrompt": "Precise final visibility edit. Preserve absolutely everything in this approved image, including the exact animal, anatomy, bipedal pose, all limbs and digits, head, skin, colors, background, tail shape, and the current bristle row start and end positions. Change ONLY the existing tail bristles: make them about 35-45 percent longer and modestly thicker so they remain clearly visible in a mobile gallery thumbnail. Keep about 12-16 sparse cylindrical bristles, with the central bristles longest and the first and last shorter, gently leaning rearward with blunt or softly tapered tips. Keep the row strictly on the proximal-to-middle dorsal tail exactly where it is now, behind the pelvis and ending before the distal tail half. Do not add bristles to the back, hips, pelvis, distal tail, or tail tip. Do not turn them into triangular spikes, porcupine spines, a continuous mohawk, feathers, or a fan. No other changes, no text, no watermark.",
+  "review": {
+    "status": "approved for S7 as anatomy review; not representative",
+    "method": "Original-size comparison against the approved representative, Psittacosaurus identity checklist, and the documented SMF R 4970 bristle zone.",
+    "passed": [
+      "approved small-skull, jugal-horn, bipedal body identity is preserved",
+      "one complete animal with two lifted forelimbs, two grounded hind limbs, and one full tail",
+      "a visible but limited bristle row begins behind the pelvis on the proximal tail and ends before the distal half",
+      "no back, hip, neck, limb, or tail-tip bristles; no full-tail fan or porcupine-spine drift",
+      "no text, label, watermark, additional animal, crop, or representative promotion"
+    ],
+    "remainingRisks": [
+      "exact bristle number, live flexibility, color, and display function remain reconstruction hypotheses",
+      "the source specimen is Psittacosaurus sp., so the image must remain explicitly genus-level and must not replace the P. mongoliensis representative"
+    ]
+  },
+  "rejectedAttempts": [
+    {
+      "generatorCallId": "exec-0c6af716-0cba-4ae0-9013-3534c6e28f08",
+      "generatedAt": "2026-08-02T11:07:19.921Z",
+      "copiedToProject": false,
+      "reason": "Several bristles extended forward over the sacrum and hip instead of remaining on the tail."
+    },
+    {
+      "generatorCallId": "exec-6d14112a-66f6-40ce-a373-63900f5c4b13",
+      "generatedAt": "2026-08-02T11:08:42.929Z",
+      "copiedToProject": false,
+      "reason": "Placement passed, but the row was too thin and short to remain legible in the mobile gallery."
+    }
+  ]
+}

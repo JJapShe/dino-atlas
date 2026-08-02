@@ -18,6 +18,11 @@
 
 ## Current Completed Step
 
+- `Psittacosaurus mongoliensis genus-level tail-bristle reference correction 2026-08-02`
+  - User review found zero visible tail-bristle examples across the six published images. The representative stays unchanged, and the gallery gains only one lower-ranked S7 anatomy reference rather than making bristles a mandatory species cue.
+  - `psittacosaurus-mongoliensis-genus-tail-bristle-anatomy-imagegen-v1.png` preserves the approved small-skull, jugal-horn, bipedal body and confines a sparse visible bristle row to the dorsal proximal-to-middle tail behind the pelvis. Back, hip, distal-tail, tail-tip, full-body, mohawk, and porcupine-spine spread remain automatic failures.
+  - The card and caption explicitly state that SMF R 4970 is `Psittacosaurus sp.` and is not securely assignable to `P. mongoliensis`; S7 cannot replace the representative. Prompt, workflow, source lineage, generation time, rejected attempts, SHA-256, evidence, and anatomy review are recorded in `tools/comfyui/psittacosaurus-tail-bristle-reference-20260802.json`.
+
 - `Therizinosaurus cheloniformis bilateral-claw correction 2026-08-01`
   - User re-check rejected the prior `petrol-dawn-pattern v3` and `Tarbosaurus water-gap v2`: a hand in each still resolved as only two independently readable long claws. The initial water-gap v3 retry was also rejected before publication for an ambiguous left hand.
   - Replaced slot 2 with `therizinosaurus-cheloniformis-bilateral-triclaw-petrol-dawn-pattern-imagegen-v4.png` and slot 5 with `therizinosaurus-cheloniformis-bilateral-triclaw-tarbosaurus-watergap-ecology-imagegen-v4.png`. The water-gap replacement preserves the stable three-claw-per-hand pose from the structure image and changes only the setting plus the distant, non-contact Tarbosaurus context.

@@ -1,6 +1,6 @@
 # Dinosaur Anatomy Audit
 
-Last updated: 2026-07-31
+Last updated: 2026-08-02
 
 This audit checks the current app-connected gallery images against a stricter anatomy gate. The goal is to prevent visually pleasing but structurally wrong renders from entering the suitable-candidate pool.
 
@@ -38,6 +38,8 @@ Every candidate must clear these before it can be treated as suitable:
 - taxon-specific traits: T. rex two fingers, Allosaurus longer three-finger forelimbs, Velociraptor feathering and sickle-claw cue, Triceratops three horns, beak, skull-attached frill, and non-hoofed ceratopsian body, Stegosaurus dorsal plates and four-spike thagomizer, Ankylosaurus low armor and tail club, sauropod shoulder/neck profile
 
 ## Reference Notes
+
+- 2026-08-02 Psittacosaurus tail-bristle visibility correction: a user review correctly found that all six published `Psittacosaurus mongoliensis` gallery images omitted the famous tail bristles. The omission came from an overcorrection: SMF R 4970 is securely identified only as `Psittacosaurus sp.`, so the earlier porcupine-like species-level reconstructions remain rejected, but removing the soft-tissue evidence from the gallery entirely made an important genus-level fossil cue invisible. The existing small-skull, jugal-horn, bipedal representative remains unchanged. `psittacosaurus-mongoliensis-genus-tail-bristle-anatomy-imagegen-v1.png` is approved only as S7 `anatomy review`, explicitly labelled as a genus-level, species-uncertain reference and prohibited from representative promotion. Original-size review keeps a sparse visible row behind the pelvis on the dorsal proximal-to-middle tail, approximately the caudal 5-19 zone discussed for the specimen, ending before the distal half with no back, hip, or tail-tip mohawk spread. Exact bristle count, flexibility, color, display function, and assignment to `P. mongoliensis` remain unproven. Sources: [Mayr et al. 2002](https://www.miketaylor.org.uk/tmp/papers/gmayr43.pdf), [Mayr et al. 2016](https://research-information.bris.ac.uk/files/99863297/Psittacosaur_bristles_revision.pdf), and [Bell et al. 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC9374759/).
 
 - 2026-08-01 Therizinosaurus bilateral hand correction: user review overruled the prior batch-77 approval for `therizinosaurus-cheloniformis-bilateral-triclaw-petrol-dawn-pattern-imagegen-v3.png` and `therizinosaurus-cheloniformis-bilateral-triclaw-tarbosaurus-watergap-ecology-imagegen-v2.png`; each still had a hand that resolved as only two independent long claws at original size. The first water-gap retry (`...watergap-ecology-imagegen-v3.png`) was also excluded before publication for the same ambiguous left hand. The replacements are `...petrol-dawn-pattern-imagegen-v4.png` and `...tarbosaurus-watergap-ecology-imagegen-v4.png`. Both must show three connected, separately countable long claws on each hand; the water-gap version was made by conservatively transferring only the setting and distant Tarbosaurus context from the stable `straight-triclaw-fourtoe-anatomy-imagegen-v1.png` hand structure. Any two, four, fused, overlapping, hidden, or uncountable claws on either hand is an automatic rejection.
 

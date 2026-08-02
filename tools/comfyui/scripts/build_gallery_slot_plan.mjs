@@ -717,6 +717,7 @@ function makePlanItem({ dino, samples, identities, profiles, routes, swatches, u
       decisionStatus: decision?.status || "unreviewed",
       decisionSource,
       decisionReason: decision?.reason || "",
+      decisionPhenotype: decision?.phenotype || "",
       reviewMethod: decision?.reviewMethod || "",
       decisionError: picked?.decisionError || "",
       suggestedUnregisteredSource: suggestedUnregistered?.source || "",
@@ -877,7 +878,7 @@ function writeAssignments(plan, existingAssignments) {
             source: slot.currentSource,
             gallerySlot: slot.slot,
             galleryRole: slot.role,
-            phenotype: existing?.phenotype || (slot.slot === 2 ? "variant-b" : "canonical-a"),
+            phenotype: slot.decisionPhenotype || existing?.phenotype || (slot.slot === 2 ? "variant-b" : "canonical-a"),
             habitatKey: existing?.habitatKey || slot.currentHabitatKey || taxon.habitatProfile.key,
             expectedKind: slot.expectedKind,
           };

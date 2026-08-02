@@ -5131,6 +5131,14 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "khulsangol-alluvial-sheetflood",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/psittacosaurus-mongoliensis-genus-tail-bristle-anatomy-imagegen-v1.png",
+      "gallerySlot": 7,
+      "galleryRole": "alternate-habitat-behavior",
+      "phenotype": "genus-soft-tissue-reference",
+      "habitatKey": "smf-r4970-tail-bristle-reference",
+      "expectedKind": "anatomy review"
     }
   ],
   "leptoceratops-gracilis": [

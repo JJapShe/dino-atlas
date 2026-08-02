@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-02T08:52:50.309Z",
-  "reviewBatch": "2026-08-02-lv1-portrait-ecology-batch-1",
-  "reviewMethod": "Batch 1 original-size full-frame review of four portrait LV1-LV2 ecology scenes against both taxa's identity checklists, complete body and limb separation, formation-level evidence, non-graphic behavior limits, role diversity, and representative-promotion prohibition. An independent second gate rejected the Saurolophus unicorn-like crest and generic long-necked Camarasaurus v2 candidates; anatomy-corrected v3 edits were re-reviewed before approval. Remaining scene-scale uncertainties keep every selection at anatomy-review status.",
-  "targetSlots": 796,
+  "generatedAt": "2026-08-02T11:13:54.476Z",
+  "reviewBatch": "2026-08-02-psittacosaurus-tail-bristle-reference-1",
+  "reviewMethod": "Original-size comparison of one Psittacosaurus tail-bristle correction against the unchanged approved P. mongoliensis representative and the documented SMF R 4970 bristle zone. Approval is limited to S7 anatomy review as an explicitly genus-level Psittacosaurus sp. soft-tissue reference; representative promotion and a species-level bristle claim remain prohibited.",
+  "targetSlots": 797,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -5751,6 +5751,16 @@
         "reviewMethod": "Sereno 2010 cranial anatomy and hatchling-to-adult series; You and Dodson 2004 four-digit manus and four-toed pes; Senter 2007 adult bipedality; Mayr et al. 2002 species-unresolved bristle specimen; Zorigt 2016 Khulsangol alluvial sheet-flood context; original-size inspection of all six selected generated images, six-role contact-sheet comparison, and isolated hand and foot crops; exact colors, markings, vegetation, posture, growth-stage coexistence, and Harpymimus same-frame encounter remain reconstruction hypotheses",
         "reviewBatch": "2026-07-28-richness-six-slot-batch-42",
         "reviewedAt": "2026-07-28T09:45:08.805Z"
+      },
+      "7": {
+        "status": "approved",
+        "source": "assets/dinosaurs/psittacosaurus-mongoliensis-genus-tail-bristle-anatomy-imagegen-v1.png",
+        "role": "alternate-habitat-behavior",
+        "phenotype": "genus-soft-tissue-reference",
+        "reason": "Approved only as an S7 genus-level anatomy reference: the unchanged P. mongoliensis representative body remains complete, while a sparse visible bristle row is confined behind the pelvis to the dorsal proximal-to-middle tail and ends before the distal half. SMF R 4970 is identified only as Psittacosaurus sp., so this image is not a P. mongoliensis identity cue or representative candidate.",
+        "reviewMethod": "Original-size full-frame comparison against the approved representative plus Mayr et al. 2002, Mayr et al. 2016, and Bell et al. 2022; checked body and limb preservation, mobile-scale bristle visibility, bristle start and end position, absence of back/hip/tail-tip spread, and explicit taxonomic limitation",
+        "reviewBatch": "2026-08-02-psittacosaurus-tail-bristle-reference-1",
+        "reviewedAt": "2026-08-02T11:13:54.476Z"
       }
     },
     "leptoceratops-gracilis": {
