@@ -1861,7 +1861,7 @@ window.gallerySlotAssignments = {
   ],
   "quetzalcoatlus-northropi": [
     {
-      "source": "assets/dinosaurs/quetzalcoatlus-northropi-riparian-folded-wing-representative-imagegen-v2.png",
+      "source": "assets/dinosaurs/quetzalcoatlus-northropi-ventral-ankle-membrane-representative-imagegen-v3.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
@@ -1869,7 +1869,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/quetzalcoatlus-northropi-indigo-jade-bluehour-pattern-imagegen-v2.png",
+      "source": "assets/dinosaurs/quetzalcoatlus-northropi-indigo-jade-ventral-ankle-pattern-imagegen-v3.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -1877,7 +1877,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/quetzalcoatlus-northropi-stream-channel-high-oblique-habitat-ecology-imagegen-v2.png",
+      "source": "assets/dinosaurs/quetzalcoatlus-northropi-postrain-stream-ventral-habitat-ecology-imagegen-v3.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
@@ -1885,7 +1885,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/quetzalcoatlus-northropi-left-wing-stretch-comparative-anatomy-imagegen-v2.png",
+      "source": "assets/dinosaurs/quetzalcoatlus-northropi-bilateral-ankle-attachment-anatomy-imagegen-v3.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
       "phenotype": "canonical-a",
@@ -1893,7 +1893,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/quetzalcoatlus-northropi-channel-separated-alamosaurus-context-ecology-imagegen-v2.png",
+      "source": "assets/dinosaurs/quetzalcoatlus-northropi-alamosaurus-separated-ventral-ecology-imagegen-v3.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
       "phenotype": "canonical-a",
@@ -1901,7 +1901,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/quetzalcoatlus-northropi-low-launch-comparative-locomotion-imagegen-v3.png",
+      "source": "assets/dinosaurs/quetzalcoatlus-northropi-ankle-attached-final-approach-locomotion-imagegen-v4.png",
       "gallerySlot": 6,
       "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",

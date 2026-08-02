@@ -3558,51 +3558,51 @@
     "quetzalcoatlus-northropi": [
       {
         "kind": "count-level pass",
-        "title": "케찰코아틀루스 v2 강가 접힌 날개 대표 후보",
-        "body": "자벨리나층 내륙 하천 자갈톱을 걷는 단일 개체 대표 후보입니다. 접힌 네 번째 날개손가락을 포함한 앞날개 두 개, 뒷다리 두 개, 짧은 꼬리 한 개가 분리되어 보이고 큰 뒤쪽 볏은 없습니다. Q. northropi에서 직접 알려진 것은 주로 거대한 부분 왼쪽 날개이므로, 머리·목·몸통·피부·네발 자세는 보수적인 아즈다르키드 비교 복원입니다.",
-        "source": "assets/dinosaurs/quetzalcoatlus-northropi-riparian-folded-wing-representative-imagegen-v2.png",
-        "variant": "강가 접힌 날개 비교 복원 이미지 생성 v2",
-        "src": "assets/dinosaurs/quetzalcoatlus-northropi-riparian-folded-wing-representative-imagegen-v2.png"
+        "title": "케찰코아틀루스 v3 양쪽 발목 익막 대표 후보",
+        "body": "자벨리나층 내륙 하천 위를 활공하는 단일 개체를 배쪽에서 본 대표 후보입니다. 각 손목의 짧은 자유 손가락 세 개와 긴 네 번째 날개손가락, 좌우 날개막 두 장, 뒷다리 두 개, 매우 짧은 꼬리 한 개가 분리됩니다. 각 주익막이 같은 쪽 하퇴·발목까지 이어지는 형태는 Elgin형 보수 비교 가설이며, Q. northropi에서 직접 보존된 연조직이나 정확한 꼬리막 윤곽은 아닙니다.",
+        "source": "assets/dinosaurs/quetzalcoatlus-northropi-ventral-ankle-membrane-representative-imagegen-v3.png",
+        "variant": "복면 양쪽 발목 익막 비교 복원 이미지 생성 v3",
+        "src": "assets/dinosaurs/quetzalcoatlus-northropi-ventral-ankle-membrane-representative-imagegen-v3.png"
       },
       {
         "kind": "anatomy review",
-        "title": "케찰코아틀루스 v2 자벨리나 하천 고각도 서식지",
-        "body": "자갈톱·얕은 하천·유목·회올리브색과 자주색 범람원 진흙·강가 수림을 고각도로 보여 주는 서식지 장면입니다. Q. northropi 거대 표본은 드물게 하천 퇴적상에서만 보고되므로, 더 작은 Q. lawsoni의 알칼리성 호수와 무리 생활 복원을 옮겨오지 않았습니다. 강가 선호와 단독 생활 자체도 적은 표본에 근거한 가설입니다.",
-        "source": "assets/dinosaurs/quetzalcoatlus-northropi-stream-channel-high-oblique-habitat-ecology-imagegen-v2.png",
-        "variant": "자벨리나 하천 고각도 서식지 이미지 생성 v2",
-        "src": "assets/dinosaurs/quetzalcoatlus-northropi-stream-channel-high-oblique-habitat-ecology-imagegen-v2.png"
+        "title": "케찰코아틀루스 v3 비 뒤 자벨리나 하천 서식지",
+        "body": "비가 갠 뒤의 자갈톱·얕은 물길·유목·범람원 진흙·강가 수림을 넓게 보여 주는 서식지 장면입니다. 대표와 같은 양쪽 발목 익막 구조를 유지하지만, 강가 선호와 단독 생활은 적은 표본에 근거한 가설이며 작은 Q. lawsoni의 호수·무리 생태를 거대종의 직접 증거로 옮기지 않습니다.",
+        "source": "assets/dinosaurs/quetzalcoatlus-northropi-postrain-stream-ventral-habitat-ecology-imagegen-v3.png",
+        "variant": "비 뒤 자벨리나 하천 복면 서식지 이미지 생성 v3",
+        "src": "assets/dinosaurs/quetzalcoatlus-northropi-postrain-stream-ventral-habitat-ecology-imagegen-v3.png"
       },
       {
         "kind": "anatomy review",
-        "title": "케찰코아틀루스 v2 왼쪽 날개 펼침 비교 해부",
-        "body": "근거리의 왼쪽 날개 하나를 부분적으로 펴 어깨·위팔·팔꿈치·아래팔·손목·짧은 자유 손가락·길어진 네 번째 날개손가락과 한 장의 연속 날개막을 읽게 한 비교 해부 장면입니다. 반대쪽 날개는 접혀 있고 뒷다리는 두 개입니다. 부분 왼쪽 날개가 직접 화석의 핵심이지만, 살아 있는 날개막 모양과 전신 자세는 비교 복원입니다.",
-        "source": "assets/dinosaurs/quetzalcoatlus-northropi-left-wing-stretch-comparative-anatomy-imagegen-v2.png",
-        "variant": "왼쪽 날개 펼침 비교 해부 이미지 생성 v2",
-        "src": "assets/dinosaurs/quetzalcoatlus-northropi-left-wing-stretch-comparative-anatomy-imagegen-v2.png"
+        "title": "케찰코아틀루스 v3 양쪽 하퇴·발목 익막 근접 해부",
+        "body": "아랫몸통과 두 뒷다리를 가까이 보며 좌우 주익막의 뒤 가장자리가 각각 같은 쪽 하퇴·발목까지 이어지는지를 비교하는 구조 참고 이미지입니다. 머리·손목·날개끝이 의도적으로 잘린 진단 구도이므로 대표로 사용하지 않습니다. 정확한 부착 위치와 축소된 꼬리막 윤곽은 Elgin형 익룡 비교 복원이지 Q. northropi 직접 연조직 증거가 아닙니다.",
+        "source": "assets/dinosaurs/quetzalcoatlus-northropi-bilateral-ankle-attachment-anatomy-imagegen-v3.png",
+        "variant": "양쪽 하퇴·발목 익막 근접 해부 이미지 생성 v3",
+        "src": "assets/dinosaurs/quetzalcoatlus-northropi-bilateral-ankle-attachment-anatomy-imagegen-v3.png"
       },
       {
         "kind": "anatomy review",
-        "title": "케찰코아틀루스 v2 하천 건너 알라모사우루스 배경",
-        "body": "전경의 단일 케찰코아틀루스와 원경의 단일 알라모사우루스를 넓은 하천으로 분리했습니다. 알라모사우루스는 자벨리나층 동물상 배경을 보여 줄 뿐, 두 종의 직접 만남·사냥·경계 행동을 입증하지 않습니다. 두 동물은 접촉하거나 겹치지 않으며 각각의 실루엣을 독립적으로 읽을 수 있습니다.",
-        "source": "assets/dinosaurs/quetzalcoatlus-northropi-channel-separated-alamosaurus-context-ecology-imagegen-v2.png",
-        "variant": "하천 건너 알라모사우루스 동물상 배경 이미지 생성 v2",
-        "src": "assets/dinosaurs/quetzalcoatlus-northropi-channel-separated-alamosaurus-context-ecology-imagegen-v2.png"
+        "title": "케찰코아틀루스 v3 하천 건너 용각류 배경",
+        "body": "전경의 단일 케찰코아틀루스와 원경의 알라모사우루스형 용각류를 넓은 하천으로 분리했습니다. 배경 동물은 자벨리나층 동물상 맥락을 위한 불확실한 실루엣일 뿐 종 식별이나 직접 만남·사냥·경계 행동을 입증하지 않습니다. 두 동물은 접촉하거나 겹치지 않습니다.",
+        "source": "assets/dinosaurs/quetzalcoatlus-northropi-alamosaurus-separated-ventral-ecology-imagegen-v3.png",
+        "variant": "하천 분리 용각류 배경 복면 생태 이미지 생성 v3",
+        "src": "assets/dinosaurs/quetzalcoatlus-northropi-alamosaurus-separated-ventral-ecology-imagegen-v3.png"
       },
       {
         "kind": "anatomy review",
-        "title": "케찰코아틀루스 v3 저고도 비행 개시 비교 복원",
-        "body": "자갈톱을 막 떠난 단일 개체가 좌우 날개막 두 장, 뒷다리 두 개, 골반에서 이어지는 짧은 꼬리 한 개를 분리해 보이는 저고도 비행 장면입니다. Q. northropi의 결손 날개를 계통학적으로 보완한 약 10m 날개폭과 비교 익룡의 운동 범위를 시각화하며, 구체적인 이륙 방식은 직접 보존된 행동이 아니라 가설입니다.",
-        "source": "assets/dinosaurs/quetzalcoatlus-northropi-low-launch-comparative-locomotion-imagegen-v3.png",
-        "variant": "저고도 비행 개시 비교 복원 이미지 생성 v3",
-        "src": "assets/dinosaurs/quetzalcoatlus-northropi-low-launch-comparative-locomotion-imagegen-v3.png"
+        "title": "케찰코아틀루스 v4 뒷발 착지 직전 비교 복원",
+        "body": "자갈톱에 닿기 직전 두 뒷발을 골반 아래로 모아 먼저 내리는 단일 개체입니다. 뒷발 우선 착지 순서는 익룡 보행렬과 모순되지 않지만, Q. northropi의 정확한 날개 각도·발 간격·착륙 동작은 직접 보존된 행동이 아닌 비교 가설입니다. 양쪽 주익막은 각각 같은 쪽 발목까지 이어집니다.",
+        "source": "assets/dinosaurs/quetzalcoatlus-northropi-ankle-attached-final-approach-locomotion-imagegen-v4.png",
+        "variant": "양쪽 발목 익막 뒷발 착지 직전 비교 복원 이미지 생성 v4",
+        "src": "assets/dinosaurs/quetzalcoatlus-northropi-ankle-attached-final-approach-locomotion-imagegen-v4.png"
       },
       {
         "kind": "review hold",
-        "title": "케찰코아틀루스 v2 인디고-비취 블루아워 무늬",
-        "body": "대표와 반대 방향으로 걷는 블루아워 색 변이입니다. 인디고-블랙베리 등, 비취색 목 워시, 황토색 얼굴, 좁게 접힌 상아색 날개막, 다리의 어두운 띠를 유지하면서 구도와 시간대를 바꿨습니다. 색·무늬와 피부 질감은 화석으로 확인되지 않은 가설이라 대표보다 아래에 둡니다.",
-        "source": "assets/dinosaurs/quetzalcoatlus-northropi-indigo-jade-bluehour-pattern-imagegen-v2.png",
-        "variant": "인디고-비취 블루아워 무늬 이미지 생성 v2",
-        "src": "assets/dinosaurs/quetzalcoatlus-northropi-indigo-jade-bluehour-pattern-imagegen-v2.png"
+        "title": "케찰코아틀루스 v3 인디고-비취 복면 무늬",
+        "body": "대표의 해부 구조를 잠그고 블루아워 조명과 인디고-비취 계열 색만 바꾼 변이입니다. 양쪽 주익막은 각각 같은 쪽 발목까지 이어지고 각 손목의 자유 손가락은 세 개로 유지됩니다. 색·혈관형 무늬·피부 질감은 화석 증거가 아닌 가설이므로 대표보다 아래에 둡니다.",
+        "source": "assets/dinosaurs/quetzalcoatlus-northropi-indigo-jade-ventral-ankle-pattern-imagegen-v3.png",
+        "variant": "인디고-비취 복면 발목 익막 무늬 이미지 생성 v3",
+        "src": "assets/dinosaurs/quetzalcoatlus-northropi-indigo-jade-ventral-ankle-pattern-imagegen-v3.png"
       }
     ],
     "dimorphodon-macronyx": [

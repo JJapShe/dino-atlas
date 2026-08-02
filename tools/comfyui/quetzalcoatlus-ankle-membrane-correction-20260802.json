@@ -1,0 +1,427 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-02-quetzalcoatlus-ankle-membrane-correction-1",
+  "taxonId": "quetzalcoatlus-northropi",
+  "taxonName": "Quetzalcoatlus northropi",
+  "createdAt": "2026-08-02T14:09:28.5887759Z",
+  "requestedVisualTrait": "Replace the detached or pelvis-ending wing-membrane topology with a clearly readable bilateral reconstruction in which each brachiopatagium remains one continuous sheet from the elongated fourth wing finger to the same-side lower leg or ankle, while labeling that attachment as an Elgin-type comparative hypothesis rather than preserved Quetzalcoatlus soft tissue.",
+  "audienceBoundary": "Natural-history paleoart for ages 5-14. Anatomy hypotheses are labeled, ecology is non-graphic, and no behavior or soft-tissue reconstruction is presented as direct fossil evidence.",
+  "evidenceBoundary": {
+    "direct": [
+      "Andres and Langston 2021 constrain Q. northropi primarily from the giant partial wing and other incomplete skeletal material; these fossils do not preserve a complete living wing membrane or its exact posterior attachment.",
+      "The exact Q. northropi head, neck, torso, skin, colors, complete feet, tail outline, and flight posture remain incompletely known or unknown."
+    ],
+    "comparativeOrInferred": [
+      "Elgin, Hone, and Frey 2011 argue from pterosaur soft-tissue specimens that a conservative brachiopatagium reconstruction reaches the lower leg or ankle; this batch uses that Elgin-type arrangement as a deliberately visible comparative hypothesis.",
+      "Padian et al. 2021 provide Quetzalcoatlus functional reconstruction and a competing interpretation in which a hindlimb membrane attachment would not be useful with bird-like retracted hind limbs in flight; the ankle connection is therefore not treated as settled specifically for Quetzalcoatlus.",
+      "The Crayssac landing trackway described by Mazin, Billon-Bruyat, and Padian 2009 supports a small pterodactyloid touching down on paired hind feet before placing the forelimbs, but it is not Q. northropi and is used only as comparative locomotor context for S6."
+    ],
+    "hypothetical": [
+      "The precise lower-leg or ankle attachment point, membrane curvature, central pelvic membrane, short tail soft tissue, and in-flight leg spacing are reconstruction hypotheses.",
+      "The charcoal, cream, indigo, jade, ochre, coral-vein patterning, lighting, weather, Javelina stream scene, distant sauropod, and exact approach behavior are artistic or ecological hypotheses."
+    ]
+  },
+  "copyrightSafety": {
+    "externalArtworkUsed": false,
+    "externalImagesUsed": false,
+    "projectOwnedGeneratedReferencesOnly": true,
+    "paperFiguresUsed": false,
+    "namedArtistImitation": false,
+    "licenseStatus": "Generated project assets; no third-party artwork license is asserted.",
+    "paperUse": "The cited papers were used only for factual anatomy, uncertainty, and locomotion constraints. No published plate, figure, reconstruction, photograph, or external artwork was supplied to the generator or imitated.",
+    "appReferencePolicy": "Only approved species-prefixed copies under assets/dinosaurs are eligible for app references. Files under .codex/generated_images are provenance records only and are never app asset paths."
+  },
+  "sources": [
+    {
+      "title": "Morphology and Taxonomy of Quetzalcoatlus Lawson 1975 (Pterodactyloidea: Azhdarchoidea)",
+      "authors": "Andres and Langston",
+      "year": 2021,
+      "publisher": "Journal of Vertebrate Paleontology",
+      "doi": "https://doi.org/10.1080/02724634.2021.1907587",
+      "repositoryLink": "https://bioone.org/journals/journal-of-vertebrate-paleontology/volume-41/issue-sp1/02724634.2021.1907587/Morphology-and-Taxonomy-of-Quetzalcoatlus-Lawson-1975-Pterodactyloidea-Azhdarchoidea/10.1080/02724634.2021.1907587.pdf",
+      "retrievedAt": "2026-08-02",
+      "use": "Direct giant-species skeletal boundary, taxonomy, and explicit separation of preserved anatomy from complete-body reconstruction"
+    },
+    {
+      "title": "The extent of the pterosaur flight membrane",
+      "authors": "Elgin, Hone, and Frey",
+      "year": 2011,
+      "publisher": "Acta Palaeontologica Polonica",
+      "doi": "https://doi.org/10.4202/app.2009.0145",
+      "url": "https://www.app.pan.pl/article/item/app20090145.html",
+      "retrievedAt": "2026-08-02",
+      "use": "Comparative lower-leg or ankle brachiopatagium hypothesis; not direct Quetzalcoatlus soft tissue"
+    },
+    {
+      "title": "Functional morphology of Quetzalcoatlus Lawson 1975 (Pterodactyloidea: Azhdarchoidea)",
+      "authors": "Padian et al.",
+      "year": 2021,
+      "publisher": "Journal of Vertebrate Paleontology",
+      "doi": "https://doi.org/10.1080/02724634.2020.1780247",
+      "retrievedAt": "2026-08-02",
+      "use": "Quetzalcoatlus comparative functional anatomy and the alternative view that a hindlimb membrane attachment is not useful in a bird-like retracted flight posture"
+    },
+    {
+      "title": "First record of a pterosaur landing trackway",
+      "authors": "Mazin, Billon-Bruyat, and Padian",
+      "year": 2009,
+      "publisher": "Proceedings of the Royal Society B",
+      "doi": "https://doi.org/10.1098/rspb.2009.1161",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2817294/",
+      "retrievedAt": "2026-08-02",
+      "use": "Crayssac comparative evidence for paired hind-foot contact before forelimb placement during landing; not Quetzalcoatlus-specific behavior"
+    }
+  ],
+  "generationDefaults": {
+    "generator": "OpenAI built-in image generation",
+    "seed": "not exposed by generator",
+    "useCase": "scientific-educational",
+    "assetType": "Dino Atlas gallery image",
+    "outputDimensions": "1536x1024",
+    "referencePolicy": "Project-owned generated anchors only; no external artwork and no paper figure input.",
+    "commonAnatomyLock": "One Q. northropi comparative reconstruction with a long toothless spear-like beak, long neck, compact torso, exactly two forelimb wings, exactly two hind limbs and feet, and one very short tail. Each wrist has three short free fingers plus one elongated fourth wing finger. Each left and right brachiopatagium is one uninterrupted sheet and its posterior edge visibly reaches the same-side lower leg or ankle. Keep the two membranes bilaterally separate and readable; do not fuse them across the pelvis.",
+    "commonReject": "Reject detached panels, free-hanging U-shaped sails, membranes ending at the pelvis, rod-like folded wings without a body connection, upward or duplicated wing fingers, more or fewer than three free wrist fingers, needle-like projections, hidden or missing hind limbs, dinosaur-like pillar legs, extra limbs, long pointed tail, bird feathers, bat ears, teeth, giant fantasy crest, text, watermark, border, signature, or graphic gore."
+  },
+  "promptEncoding": "Each promptSummary records the final role-specific scene, anatomy lock, role boundary, and reject constraints in reproducible form. Seeds were not exposed by the generator.",
+  "records": {
+    "S1": {
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "generatedAt": "2026-08-02T13:52:18.1454606Z",
+      "generator": "OpenAI built-in image generation",
+      "seed": "not exposed by generator",
+      "workflow": "Iterative reference-guided correction from project-owned generated Quetzalcoatlus anchors after rejecting detached, pelvis-ending, missing-leg, and malformed-hand attempts.",
+      "callId": "exec-018254c4-e8a2-4b15-8186-212f7c6adea4",
+      "generatedSourceBasename": "exec-018254c4-e8a2-4b15-8186-212f7c6adea4.png",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-018254c4-e8a2-4b15-8186-212f7c6adea4.png",
+      "approvedProjectPath": "assets/dinosaurs/quetzalcoatlus-northropi-ventral-ankle-membrane-representative-imagegen-v3.png",
+      "sha256": "3CE89324184420BED6E5F5035825F5289EA2CBFC5550425297224703E2A97256",
+      "bytes": 2440942,
+      "dimensions": "1536x1024",
+      "referenceImages": [
+        "Project-owned generated Quetzalcoatlus identity and correction anchors only",
+        "Private superseded draft exec-4e92c8bc-5358-4451-b9f3-19ace19982b0.png used only as an iterative correction target"
+      ],
+      "promptSummary": {
+        "scene": "Create one complete adult Q. northropi comparative reconstruction gliding directly toward and slightly above the camera over a broad inland Javelina-style stream channel in neutral daylight. Use a symmetric ventral view, keep both wingtips, both hands, both legs, both feet, and the very short tail inside a 3:2 landscape frame, and leave enough background around the silhouette for a catalog representative.",
+        "anatomy": "Apply the common anatomy lock strictly. Make both cream brachiopatagia continuous from each elongated fourth wing finger along the same side of the torso to the lower leg or ankle. Show exactly three short free fingers at each wrist, two separate hind limbs with readable feet, and no detached central sail. Treat the lower-leg or ankle attachment as an Elgin-type comparative hypothesis because exact Q. northropi soft tissue is unknown.",
+        "appearance": "Use a restrained charcoal body, weathered ochre toothless beak, muted jade throat wash, thin coral-toned membrane vasculature, short pycnofiber-like body covering, and natural museum-grade texture. Colors and soft tissues remain hypothetical.",
+        "roleBoundary": "This is the sole count-level representative candidate; require full-frame appendage count and bilateral membrane-attachment readability.",
+        "avoid": "Apply the common reject list; especially reject a membrane ending at the pelvis, free U-shaped hanging sails, upward wing fingers, a missing leg, more than three free wrist fingers, or a long tail."
+      },
+      "review": {
+        "method": "Original-size bilateral trace from each wingtip through the fourth wing finger and membrane to the same-side lower leg or ankle, plus hand, leg, foot, tail, crop, and extra-anatomy count.",
+        "result": "Approved as the sole representative. The Elgin-type ankle attachment is visually readable on both sides and remains labeled as comparative rather than direct Quetzalcoatlus soft-tissue evidence."
+      }
+    },
+    "S2": {
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved",
+      "generatedAt": "2026-08-02T13:53:47.4416841Z",
+      "generator": "OpenAI built-in image generation",
+      "seed": "not exposed by generator",
+      "workflow": "Palette and blue-hour lighting variation derived from the anatomy-approved S1 project-owned control without changing topology.",
+      "callId": "exec-09392d58-aa4d-40f9-9904-5b6607d0eedd",
+      "generatedSourceBasename": "exec-09392d58-aa4d-40f9-9904-5b6607d0eedd.png",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-09392d58-aa4d-40f9-9904-5b6607d0eedd.png",
+      "approvedProjectPath": "assets/dinosaurs/quetzalcoatlus-northropi-indigo-jade-ventral-ankle-pattern-imagegen-v3.png",
+      "sha256": "A642EB680DE62E89E46B788518757F4785CBA2FAA235491A6125C023BB7C430C",
+      "bytes": 2479449,
+      "dimensions": "1536x1024",
+      "referenceImages": [
+        "assets/dinosaurs/quetzalcoatlus-northropi-ventral-ankle-membrane-representative-imagegen-v3.png"
+      ],
+      "promptSummary": {
+        "scene": "Preserve S1's exact centered ventral glide, stream-channel composition, body geometry, appendage count, membrane edges, and crop. Change only the time to blue hour with a low warm horizon and cool clouded sky.",
+        "anatomy": "Lock S1 pixel-level anatomy as closely as possible: exactly two continuous same-side lower-leg or ankle-attached membranes, three short free fingers at each wrist, two hind limbs and feet, and one very short tail. Do not redraw or relocate any joint, limb, finger, membrane edge, or tail.",
+        "appearance": "Shift the body to deep indigo and blackberry, retain a restrained jade throat wash, cool the cream membranes slightly, and preserve sparse coral vascular lines. Keep colors vivid enough for children but naturalistic and explicitly hypothetical.",
+        "roleBoundary": "Color-pattern review hold only; it must not outrank S1 or imply preserved coloration.",
+        "avoid": "Apply the common reject list and reject any palette edit that changes anatomy, hides an ankle junction, adds neon saturation, or turns vein lines into regular decorative bands."
+      },
+      "review": {
+        "method": "Original-size comparison with S1 for unchanged bilateral ankle junctions, three free fingers per wrist, limb count, tail length, and absence of edit-induced topology drift.",
+        "result": "Approved only as color-pattern review hold. Anatomy matches S1; color and lighting remain artistic hypotheses."
+      }
+    },
+    "S3": {
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "kind": "anatomy review",
+      "status": "approved",
+      "generatedAt": "2026-08-02T13:55:16.0251107Z",
+      "generator": "OpenAI built-in image generation",
+      "seed": "not exposed by generator",
+      "workflow": "Post-rain habitat variation generated from the anatomy-approved S1 project-owned control.",
+      "callId": "exec-cb681e28-56ca-402f-a98c-5611bd2897ac",
+      "generatedSourceBasename": "exec-cb681e28-56ca-402f-a98c-5611bd2897ac.png",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-cb681e28-56ca-402f-a98c-5611bd2897ac.png",
+      "approvedProjectPath": "assets/dinosaurs/quetzalcoatlus-northropi-postrain-stream-ventral-habitat-ecology-imagegen-v3.png",
+      "sha256": "798EDD2BA85DD96D632EF8381606EFF458C59310A2CDAE232EEC3CFBB43510E6",
+      "bytes": 2952359,
+      "dimensions": "1536x1024",
+      "referenceImages": [
+        "assets/dinosaurs/quetzalcoatlus-northropi-ventral-ankle-membrane-representative-imagegen-v3.png"
+      ],
+      "promptSummary": {
+        "scene": "Show one complete Q. northropi in the same readable ventral glide above a post-rain inland stream bar. Expand habitat cues with shallow braided water, wet gravel, driftwood, floodplain mud, riparian conifers and ferns, broken clouds, and warm clearing light while keeping the subject large enough for anatomy review.",
+        "anatomy": "Preserve S1's exact bilateral same-side lower-leg or ankle membrane attachment, wrist finger formula, two hind limbs and feet, compact torso, long toothless beak, long neck, and very short tail. Keep both ankle junctions unobscured by water, vegetation, shadow, or motion blur.",
+        "appearance": "Retain the restrained charcoal, ochre, jade, cream, and fine coral-vein palette under moist post-rain lighting; no change to the anatomy control.",
+        "roleBoundary": "Habitat-ecology anatomy review only. The stream-channel setting is formation-informed, but exact weather, river position, solitary flight, and habitat preference are hypotheses.",
+        "avoid": "Apply the common reject list; no other animals, hidden feet, rain blur, vegetation crossing the membrane-to-ankle junction, modern flowers, or proof-like claims about behavior."
+      },
+      "review": {
+        "method": "Original-size review of both membrane-to-ankle junctions, all limbs and feet, the full tail, habitat separation, and absence of environmental occlusion.",
+        "result": "Approved as habitat-ecology anatomy review. The anatomy control remains readable; habitat and weather remain hypotheses."
+      }
+    },
+    "S4": {
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "kind": "anatomy review",
+      "status": "approved",
+      "statusNote": "Structure reference only; never a representative because the diagnostic crop intentionally excludes the head, wrists, and wingtips.",
+      "generatedAt": "2026-08-02T13:56:34.4459353Z",
+      "generator": "OpenAI built-in image generation",
+      "seed": "not exposed by generator",
+      "workflow": "Diagnostic ventral crop derived from the anatomy-approved S1 project-owned control.",
+      "callId": "exec-7c81285b-ca82-46b6-ab1b-418d25b87576",
+      "generatedSourceBasename": "exec-7c81285b-ca82-46b6-ab1b-418d25b87576.png",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-7c81285b-ca82-46b6-ab1b-418d25b87576.png",
+      "approvedProjectPath": "assets/dinosaurs/quetzalcoatlus-northropi-bilateral-ankle-attachment-anatomy-imagegen-v3.png",
+      "sha256": "8E9AD38642C5296473227F1C8CF7FEC9271B623E147B4561B36F48DE0FFBB311",
+      "bytes": 2770439,
+      "dimensions": "1536x1024",
+      "referenceImages": [
+        "assets/dinosaurs/quetzalcoatlus-northropi-ventral-ankle-membrane-representative-imagegen-v3.png"
+      ],
+      "promptSummary": {
+        "scene": "Create a tight symmetric ventral diagnostic crop centered on the lower torso, pelvis, both hind limbs, both feet, and the posterior margins of both wing membranes. Deliberately crop the head, wrists, and wingtips so the two same-side lower-leg or ankle junctions fill the frame against a softly defocused stream background.",
+        "anatomy": "Show one left and one right brachiopatagium as separate uninterrupted sheets reaching the corresponding lower leg or ankle. Keep two legs, two complete feet, a very short midline tail, natural negative space between the legs, and no membrane fused across the pelvis. Label this geometry as an Elgin-type comparison, not Q. northropi preserved soft tissue.",
+        "appearance": "Use the same neutral charcoal, cream, muted leg bands, and fine coral membrane vasculature as S1 with clear museum-reference lighting.",
+        "roleBoundary": "Identity-anatomy structure reference only. The intentional crop prevents representative or count-level promotion.",
+        "avoid": "Apply the common reject list; especially reject asymmetrical attachments, a central bat-like tail sail, membrane edges ending above the knee, fused legs, missing feet, or added genital detail."
+      },
+      "review": {
+        "method": "Original-size close inspection of both ipsilateral membrane-to-lower-leg or ankle contacts, pelvic separation, leg and foot count, tail, and crop boundary.",
+        "result": "Approved only as an anatomy-review structure reference. It demonstrates the selected hypothesis but cannot establish actual Quetzalcoatlus soft-tissue attachment."
+      }
+    },
+    "S5": {
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "kind": "anatomy review",
+      "status": "approved",
+      "generatedAt": "2026-08-02T13:57:55.3308231Z",
+      "generator": "OpenAI built-in image generation",
+      "seed": "not exposed by generator",
+      "workflow": "Separated formation-context ecology edit derived from the anatomy-approved S1 project-owned control.",
+      "callId": "exec-ed169218-38b2-4697-8a5c-63dbe8b2c279",
+      "generatedSourceBasename": "exec-ed169218-38b2-4697-8a5c-63dbe8b2c279.png",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-ed169218-38b2-4697-8a5c-63dbe8b2c279.png",
+      "approvedProjectPath": "assets/dinosaurs/quetzalcoatlus-northropi-alamosaurus-separated-ventral-ecology-imagegen-v3.png",
+      "sha256": "2A40E56ABC05AF22A6D35352403A0A933246767F57E0DC600E4EB66291FE9078",
+      "bytes": 2433284,
+      "dimensions": "1536x1024",
+      "referenceImages": [
+        "assets/dinosaurs/quetzalcoatlus-northropi-ventral-ankle-membrane-representative-imagegen-v3.png"
+      ],
+      "promptSummary": {
+        "scene": "Preserve S1's complete foreground ventral glide and add one small distant Alamosaurus-like sauropod silhouette on the far bank, separated from the pterosaur by a broad stream and strong depth gap. Keep the animals non-overlapping, calm, and behaviorally unrelated.",
+        "anatomy": "Lock the foreground Q. northropi to S1: two continuous ipsilateral lower-leg or ankle-attached membranes, three free fingers at each wrist, two hind limbs and feet, and one very short tail. Keep the distant sauropod generic and too remote for unsupported species-level anatomy claims.",
+        "appearance": "Retain the daylight charcoal, ochre, jade, and cream foreground palette and neutral Javelina-style channel environment.",
+        "roleBoundary": "Interaction-slot anatomy review only. The secondary animal is uncertain formation-level context, not evidence of encounter, predation, flocking, or exact co-occurrence.",
+        "avoid": "Apply the common reject list; no contact, chase, attack, alarm display, overlap, shared shadow, scale comparison claim, or detailed invented sauropod anatomy."
+      },
+      "review": {
+        "method": "Original-size foreground membrane and appendage audit plus confirmation that the distant secondary animal remains separated, non-overlapping, and context-only.",
+        "result": "Approved as interaction-role anatomy review. Foreground anatomy passes the selected hypothesis; the distant sauropod and co-occurrence remain uncertain context."
+      }
+    },
+    "S6": {
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "kind": "anatomy review",
+      "status": "approved",
+      "generatedAt": "2026-08-02T13:59:31.8960391Z",
+      "generator": "OpenAI built-in image generation",
+      "seed": "not exposed by generator",
+      "workflow": "Final-approach locomotion variation derived from the anatomy-approved S1 project-owned control and constrained by Crayssac comparative landing evidence.",
+      "callId": "exec-5df80dc4-060b-4bdc-a431-9f46311d1d2d",
+      "generatedSourceBasename": "exec-5df80dc4-060b-4bdc-a431-9f46311d1d2d.png",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-5df80dc4-060b-4bdc-a431-9f46311d1d2d.png",
+      "approvedProjectPath": "assets/dinosaurs/quetzalcoatlus-northropi-ankle-attached-final-approach-locomotion-imagegen-v4.png",
+      "sha256": "44D2F07DC3E201366B6FAA8557473C871C41B054EF5F0772CF8FD7EDE34AF30F",
+      "bytes": 2531140,
+      "dimensions": "1536x1024",
+      "referenceImages": [
+        "assets/dinosaurs/quetzalcoatlus-northropi-ventral-ankle-membrane-representative-imagegen-v3.png"
+      ],
+      "promptSummary": {
+        "scene": "Show one Q. northropi on final approach immediately before touching a gravel stream bar, viewed from low front-ventral angle. Hold both wings open, lower both hind feet nearly parallel beneath the hips, keep a small dust cue below without contact, and preserve the complete silhouette inside frame.",
+        "anatomy": "Maintain the common anatomy lock while moving only the hind limbs into a controlled feet-first approach. Both membranes must still visibly reach the corresponding lower leg or ankle without tearing, detaching, or fusing; show three short free wrist fingers per side, two feet, and one very short tail.",
+        "behaviorBoundary": "Use the Crayssac small-pterodactyloid hindfeet-first landing sequence only as comparative inspiration. Do not claim that Q. northropi used this exact wing angle, foot spacing, speed, or landing sequence, and do not use or imitate the paper's figures.",
+        "roleBoundary": "Locomotion anatomy review in the fixed social-growth-defense slot; never representative and not evidence of social behavior, growth, or defense.",
+        "avoid": "Apply the common reject list; no ground collision, running takeoff, forelimb-first touchdown, crossed or missing feet, motion-blurred ankle junctions, duplicated toes, or dramatic crash."
+      },
+      "review": {
+        "method": "Original-size review of both ankle-attached membrane edges under the changed leg pose, paired hind-foot readability, wrist finger count, tail, ground clearance, and non-graphic locomotion framing.",
+        "result": "Approved as locomotion anatomy review. The pose is compatible with comparative Crayssac landing evidence but remains a Q. northropi behavior hypothesis."
+      }
+    }
+  },
+  "rejectedAttempts": [
+    {
+      "attemptGroup": "shared-body-control",
+      "disposition": "rejected",
+      "callId": "exec-c8a16890-e47e-47fe-b172-17965dab928b",
+      "generatedAt": "2026-08-02T13:29:16.0750964Z",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-c8a16890-e47e-47fe-b172-17965dab928b.png",
+      "sha256": "6B97A7978992714F89EFED2341B7B743DA8FA00EE67DDD05C81EF5367CC10542",
+      "bytes": 3335370,
+      "dimensions": "1536x1024",
+      "copiedToProject": false,
+      "reason": "Rejected because the membranes formed giant U-shaped hanging sails and the elongated wing fingers pointed upward, failing coherent pterosaur wing topology."
+    },
+    {
+      "attemptGroup": "shared-body-control",
+      "disposition": "rejected",
+      "callId": "exec-d1d41db6-a568-46f9-8899-09304f443f67",
+      "generatedAt": "2026-08-02T13:30:43.0186449Z",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-d1d41db6-a568-46f9-8899-09304f443f67.png",
+      "sha256": "BD5E27EAAC8E05FFEF6CD092FE85CC1271D3A85B5EE18D3DEC5B43D237D57DF0",
+      "bytes": 3190520,
+      "dimensions": "1536x1024",
+      "copiedToProject": false,
+      "reason": "Rejected because the folded membranes were compact but had no readable hindlimb attachment and the legs read as dinosaur-like support columns."
+    },
+    {
+      "attemptGroup": "shared-body-control",
+      "disposition": "rejected",
+      "callId": "exec-efee2bbc-002b-459e-9ee6-6f428ec7a42c",
+      "generatedAt": "2026-08-02T13:32:03.6522228Z",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-efee2bbc-002b-459e-9ee6-6f428ec7a42c.png",
+      "sha256": "F247CF565325A5CF1969AC1EA166924EE706DA361499F3A824038A48EE792FA0",
+      "bytes": 3667931,
+      "dimensions": "1536x1024",
+      "copiedToProject": false,
+      "reason": "Rejected because the targeted correction still left the wing membrane visually detached from the posterior body and hindlimb."
+    },
+    {
+      "attemptGroup": "shared-body-control",
+      "disposition": "rejected",
+      "callId": "exec-bc65d937-1e3e-4aef-a32c-f7a766bcb8e5",
+      "generatedAt": "2026-08-02T13:35:01.5524948Z",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-bc65d937-1e3e-4aef-a32c-f7a766bcb8e5.png",
+      "sha256": "248B5D293FBB50E0AFBF711E938982FE4474B9088EA0F444E186F41067B7E7C0",
+      "bytes": 2973799,
+      "dimensions": "1536x1024",
+      "copiedToProject": false,
+      "reason": "Rejected because the ventral-flight membranes terminated at the pelvis instead of remaining readable to the lower legs or ankles."
+    },
+    {
+      "attemptGroup": "shared-body-control",
+      "disposition": "rejected",
+      "callId": "exec-df03370f-ea3d-47cb-ba81-1d80a268b2a3",
+      "generatedAt": "2026-08-02T13:36:25.7599975Z",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-df03370f-ea3d-47cb-ba81-1d80a268b2a3.png",
+      "sha256": "6707DE4162E218BF536C31A08B8C04255BFE11D49C4F921C75300EB69B121718",
+      "bytes": 3537364,
+      "dimensions": "1536x1024",
+      "copiedToProject": false,
+      "reason": "Rejected because one hind limb was lost or obscured, preventing a bilateral membrane-to-leg audit."
+    },
+    {
+      "attemptGroup": "shared-body-control",
+      "disposition": "rejected",
+      "callId": "exec-d6a46610-2d35-4688-a609-67b8a6508d43",
+      "generatedAt": "2026-08-02T13:37:56.6556763Z",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-d6a46610-2d35-4688-a609-67b8a6508d43.png",
+      "sha256": "3C31C69DA8138C286BC38819C2153902F23A4172CB1D6A616BD85820B8CE110C",
+      "bytes": 2576440,
+      "dimensions": "1536x1024",
+      "copiedToProject": false,
+      "reason": "Rejected as a final anchor because the ankle connection was readable but each wrist showed four free hand projections with needle-like tips."
+    },
+    {
+      "attemptGroup": "shared-body-control",
+      "disposition": "rejected",
+      "callId": "exec-4e92c8bc-5358-4451-b9f3-19ace19982b0",
+      "generatedAt": "2026-08-02T13:50:57.0498812Z",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-4e92c8bc-5358-4451-b9f3-19ace19982b0.png",
+      "sha256": "C134B5FCD1B51EA10BB46E00BF465C64B8E35D3D372AC771F4B2ADB241F438B2",
+      "bytes": 2502377,
+      "dimensions": "1536x1024",
+      "copiedToProject": false,
+      "reason": "Rejected as the final representative because the wrists reached three free fingers but retained needle-like tips and the tail was too long and pointed."
+    },
+    {
+      "attemptGroup": "older-anchor-derivative",
+      "intendedRole": "color-pattern",
+      "disposition": "superseded",
+      "callId": "exec-f59283a0-12d4-4743-a07b-9667876d7ef5",
+      "generatedAt": "2026-08-02T13:39:26.0224505Z",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-f59283a0-12d4-4743-a07b-9667876d7ef5.png",
+      "sha256": "53F82163047388CEF6F496ED4B11E407D33C2841D62B3C10DB398FFB8A349828",
+      "bytes": 2465938,
+      "dimensions": "1536x1024",
+      "copiedToProject": false,
+      "reason": "Superseded and not copied because this blue-hour derivative inherited the older rejected shared anchor before the wrist and tail corrections."
+    },
+    {
+      "attemptGroup": "older-anchor-derivative",
+      "intendedRole": "habitat-ecology",
+      "disposition": "superseded",
+      "callId": "exec-2a5a30b3-cadc-4161-8cc5-d780e31b0c00",
+      "generatedAt": "2026-08-02T13:41:11.8527750Z",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-2a5a30b3-cadc-4161-8cc5-d780e31b0c00.png",
+      "sha256": "9A9A7CBE482A76616697D92520C56DC714A0CD3C1F29C5280DBACC06D9F1F0BD",
+      "bytes": 2701508,
+      "dimensions": "1536x1024",
+      "copiedToProject": false,
+      "reason": "Superseded and not copied because this stream-habitat derivative inherited the older rejected shared anchor before the wrist and tail corrections."
+    },
+    {
+      "attemptGroup": "older-anchor-derivative",
+      "intendedRole": "identity-anatomy",
+      "disposition": "superseded",
+      "callId": "exec-846e766a-b82f-4aa8-bbcd-85c9235cf926",
+      "generatedAt": "2026-08-02T13:42:38.4391066Z",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-846e766a-b82f-4aa8-bbcd-85c9235cf926.png",
+      "sha256": "4C8137DDA5CB5FC119630A9DCB6E7C0BAB57A990374B6B405DDF311B8CC70462",
+      "bytes": 2682685,
+      "dimensions": "1536x1024",
+      "copiedToProject": false,
+      "reason": "Superseded and not copied because this close anatomy derivative inherited the older rejected shared anchor before the wrist and tail corrections."
+    },
+    {
+      "attemptGroup": "older-anchor-derivative",
+      "intendedRole": "interaction",
+      "disposition": "superseded",
+      "callId": "exec-72530e59-7cd6-48ee-88d3-c863a6eb6367",
+      "generatedAt": "2026-08-02T13:43:49.0652356Z",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-72530e59-7cd6-48ee-88d3-c863a6eb6367.png",
+      "sha256": "DB1E12FA7212FE3E316A2AD2B847C66758835726B3433DD02142357143E02A1F",
+      "bytes": 2503554,
+      "dimensions": "1536x1024",
+      "copiedToProject": false,
+      "reason": "Superseded and not copied because this separated-sauropod derivative inherited the older rejected shared anchor before the wrist and tail corrections."
+    },
+    {
+      "attemptGroup": "older-anchor-derivative",
+      "intendedRole": "social-growth-defense",
+      "disposition": "superseded",
+      "callId": "exec-ff440334-9064-4573-97b6-974147093d15",
+      "generatedAt": "2026-08-02T13:45:46.8651015Z",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-ff440334-9064-4573-97b6-974147093d15.png",
+      "sha256": "2B975DD8FA173FBC4CC49162D69B73CF896F738A66D2DA61C40E8436452EBD64",
+      "bytes": 2773159,
+      "dimensions": "1536x1024",
+      "copiedToProject": false,
+      "reason": "Superseded and not copied because this final-approach derivative inherited the older rejected shared anchor before the wrist and tail corrections."
+    }
+  ]
+}

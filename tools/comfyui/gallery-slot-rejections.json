@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-07-31-bilateral-hand-audit-batch-77",
+  "reviewBatch": "2026-08-02-quetzalcoatlus-ankle-membrane-correction-1",
   "rejectedSources": {
     "assets/dinosaurs/nyctosaurus-gracilis-niobrara-forked-crest-imagegen-v1.png": {
       "reason": "Free clawed appendages project from the wing margins, limb and membrane topology is confused, and a genus-level mature branching crest is incorrectly fixed onto the N. gracilis representative."
@@ -1306,6 +1306,24 @@
     },
     "assets/dinosaurs/quetzalcoatlus-northropi-low-launch-comparative-locomotion-imagegen-v2.png": {
       "reason": "The first launch-tail edit leaves two thin parallel tail-like strands beneath the pelvis, so it fails the single-tail count gate despite otherwise stable wings and legs."
+    },
+    "assets/dinosaurs/quetzalcoatlus-northropi-riparian-folded-wing-representative-imagegen-v2.png": {
+      "reason": "Both folded wing membranes collapse into detached narrow strips beside the forelimbs and lack posterior continuity to the body and same-side hind limbs or ankles, so the former representative fails the continuous-wing gate."
+    },
+    "assets/dinosaurs/quetzalcoatlus-northropi-indigo-jade-bluehour-pattern-imagegen-v2.png": {
+      "reason": "The blue-hour variant repeats the detached narrow-strip folded wings with no posterior membrane continuity to the same-side hind limbs or ankles, so color variation cannot preserve it as an approved candidate."
+    },
+    "assets/dinosaurs/quetzalcoatlus-northropi-stream-channel-high-oblique-habitat-ecology-imagegen-v2.png": {
+      "reason": "The habitat frame retains the same detached narrow folded-wing strips, which end without posterior continuity to the body and same-side hind limbs or ankles despite the smaller subject scale."
+    },
+    "assets/dinosaurs/quetzalcoatlus-northropi-left-wing-stretch-comparative-anatomy-imagegen-v2.png": {
+      "reason": "The stretched near membrane ends in a free triangular tip instead of continuing to the same-side ankle, while the far folded wing remains detached from the torso and hind limb, so the anatomy reference fails bilateral continuity."
+    },
+    "assets/dinosaurs/quetzalcoatlus-northropi-channel-separated-alamosaurus-context-ecology-imagegen-v2.png": {
+      "reason": "The foreground animal repeats the detached narrow-strip folded wings with no posterior continuity to the same-side hind limbs or ankles; separated fauna context does not cure the primary anatomy failure."
+    },
+    "assets/dinosaurs/quetzalcoatlus-northropi-low-launch-comparative-locomotion-imagegen-v3.png": {
+      "reason": "Both flight membranes terminate at the torso or hip rather than continuing to their same-side ankles, so the image fails the explicit bilateral ankle-continuity gate despite stable limb and tail counts."
     },
     "assets/dinosaurs/chromogisaurus-novasi-basalt-mint-ladder-pattern-imagegen-v1.png": {
       "reason": "Unregistered legacy pattern repeats the old broadside staging and uses a separate mint-ladder phenotype instead of the rebuilt set's stable individual markings."

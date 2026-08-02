@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-02T13:07:05.575Z",
-  "reviewBatch": "2026-08-02-almas-short-deep-skull-coherence-1",
-  "reviewMethod": "Original-size review of the three replaced Almas slots against Pei et al. 2017 and the approved short, relatively deep subtriangular skull direction. S1 was independently checked for the head gate plus exactly two separated forelimbs, two hind limbs and feet, and one pelvis-origin tail; S2 retains that anatomy as a palette-only variant; S3 keeps both foreground Almas countable but remains an ecology reference. Hand and toe detail, complete distal tail, integument, color, exact co-occurrence, and behavior remain explicit comparative or reconstruction hypotheses. A three-hind-leg draft and later long-low or owl-round head drafts were rejected before project copying.",
+  "generatedAt": "2026-08-02T14:09:44.808Z",
+  "reviewBatch": "2026-08-02-quetzalcoatlus-ankle-membrane-correction-1",
+  "reviewMethod": "Original-size review of all six replacement Quetzalcoatlus slots, including full-frame wing, hind-limb, foot and tail counts; wrist crops distinguishing three free manual digits I-III from wing digit IV; bilateral same-side lower-leg and ankle membrane continuity; complete rounded wing tips; and explicit role separation. S1 alone is the count-level representative, S2 remains review hold, S3-S6 remain anatomy review, and S4 is structure-reference only. The lower-leg or ankle attachment is an Elgin-type conservative comparison hypothesis; exact Quetzalcoatlus wing soft tissue, uropatagium, colors and behavior remain unknown or reconstructed.",
   "targetSlots": 803,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
@@ -2089,57 +2089,69 @@
     "quetzalcoatlus-northropi": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/quetzalcoatlus-northropi-riparian-folded-wing-representative-imagegen-v2.png",
+        "source": "assets/dinosaurs/quetzalcoatlus-northropi-ventral-ankle-membrane-representative-imagegen-v3.png",
         "role": "representative",
-        "reason": "Neutral riparian full-body frame preserves one crestless conservative azhdarchid with exactly two connected folded forelimb wings, two separate hind limbs, and one short tail; the caption separates the directly known giant wing from the comparative head, body, skin, and quadrupedal posture.",
-        "reviewMethod": "Andres and Langston 2021 giant partial-left-wing holotype, six fragmentary giant specimens, and approximately 10 m reconstructed wingspan; Padian et al. 2021 functional reconstruction based entirely on the smaller Q. lawsoni morph and explicit absence of Q. northropi skull and neck material; Lehman 2021 inland Javelina stream-channel facies, rare giant specimens, Alamosaurus-dominated formation fauna, and speculative riparian or solitary interpretation; Thomas and McDavid 2025 recovery of giant and moderately large Quetzalcoatlus species in separate clades; original-size inspection of all selected full frames, final six-role contact sheet, and isolated head, forewing, wrist, limb, foot, tail, and secondary-animal crops; exact skull, neck, torso, gait, launch mechanics, skin, colors, markings, plant arrangement, and same-frame behavior remain reconstruction hypotheses",
-        "reviewBatch": "2026-07-28-richness-six-slot-batch-45",
-        "reviewedAt": "2026-07-28T12:22:14.895Z"
+        "reason": "Ventral full-body flight frame shows one animal with exactly two continuous wings, two hind legs and feet, one rounded short tail, three free digits at each wrist distinct from wing digit IV, and each brachiopatagium joining the same-side lower leg and ankle; both rounded wing tips and all feet remain inside frame without duplication or penetration.",
+        "reviewOutcome": "count-level pass; approved as the sole representative card candidate after independent visual audit",
+        "reviewMethod": "Original-size review of the final project copy and generated source, including full-frame limb and tail counts, bilateral wrist crops distinguishing free digits I-III from wing digit IV, bilateral ankle and foot crops, rounded wingtip framing, and same-side membrane-to-ankle continuity; exact skull, soft-tissue attachment, reduced tail membrane, skin, color, and flight behavior remain comparative hypotheses because Q. northropi is fragmentary.",
+        "reviewBatch": "2026-08-02-quetzalcoatlus-ankle-membrane-correction-1",
+        "batchId": "2026-08-02-quetzalcoatlus-ankle-membrane-correction-1",
+        "reviewedAt": "2026-08-02T14:09:44.808Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/quetzalcoatlus-northropi-indigo-jade-bluehour-pattern-imagegen-v2.png",
+        "source": "assets/dinosaurs/quetzalcoatlus-northropi-indigo-jade-ventral-ankle-pattern-imagegen-v3.png",
         "role": "color-pattern",
-        "reason": "Reverse-facing blue-hour frame changes direction, weather, and hue while preserving the same crestless body proportions, narrow folded-wing topology, four-limb count, short tail, and limited shoulder and neck pattern placement; all colors remain explicitly hypothetical.",
-        "reviewMethod": "Andres and Langston 2021 giant partial-left-wing holotype, six fragmentary giant specimens, and approximately 10 m reconstructed wingspan; Padian et al. 2021 functional reconstruction based entirely on the smaller Q. lawsoni morph and explicit absence of Q. northropi skull and neck material; Lehman 2021 inland Javelina stream-channel facies, rare giant specimens, Alamosaurus-dominated formation fauna, and speculative riparian or solitary interpretation; Thomas and McDavid 2025 recovery of giant and moderately large Quetzalcoatlus species in separate clades; original-size inspection of all selected full frames, final six-role contact sheet, and isolated head, forewing, wrist, limb, foot, tail, and secondary-animal crops; exact skull, neck, torso, gait, launch mechanics, skin, colors, markings, plant arrangement, and same-frame behavior remain reconstruction hypotheses",
-        "reviewBatch": "2026-07-28-richness-six-slot-batch-45",
-        "reviewedAt": "2026-07-28T12:22:14.895Z"
+        "reason": "Blue-hour palette variant preserves the representative's two wings, two hind legs and feet, one short tail, three free digits per wrist, rounded complete wing tips, and bilateral same-side membrane-to-ankle continuity while changing only hypothetical color and lighting.",
+        "reviewOutcome": "review hold; approved only as a color-pattern variant below the representative",
+        "reviewMethod": "Original-size review of the final project copy and generated source, including full-frame limb and tail counts, bilateral wrist crops distinguishing free digits I-III from wing digit IV, bilateral ankle and foot crops, rounded wingtip framing, and same-side membrane-to-ankle continuity; exact skull, soft-tissue attachment, reduced tail membrane, skin, color, and flight behavior remain comparative hypotheses because Q. northropi is fragmentary.",
+        "reviewBatch": "2026-08-02-quetzalcoatlus-ankle-membrane-correction-1",
+        "batchId": "2026-08-02-quetzalcoatlus-ankle-membrane-correction-1",
+        "reviewedAt": "2026-08-02T14:09:44.808Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/quetzalcoatlus-northropi-stream-channel-high-oblique-habitat-ecology-imagegen-v2.png",
+        "source": "assets/dinosaurs/quetzalcoatlus-northropi-postrain-stream-ventral-habitat-ecology-imagegen-v3.png",
         "role": "habitat-ecology",
-        "reason": "High-oblique landscape shows one complete animal on a broad inland sandstone and conglomeratic stream bar with shallow channel water, driftwood, overbank mud, and riparian forest, matching the giant material's stream-channel facies rather than transferring Q. lawsoni lake and flock ecology.",
-        "reviewMethod": "Andres and Langston 2021 giant partial-left-wing holotype, six fragmentary giant specimens, and approximately 10 m reconstructed wingspan; Padian et al. 2021 functional reconstruction based entirely on the smaller Q. lawsoni morph and explicit absence of Q. northropi skull and neck material; Lehman 2021 inland Javelina stream-channel facies, rare giant specimens, Alamosaurus-dominated formation fauna, and speculative riparian or solitary interpretation; Thomas and McDavid 2025 recovery of giant and moderately large Quetzalcoatlus species in separate clades; original-size inspection of all selected full frames, final six-role contact sheet, and isolated head, forewing, wrist, limb, foot, tail, and secondary-animal crops; exact skull, neck, torso, gait, launch mechanics, skin, colors, markings, plant arrangement, and same-frame behavior remain reconstruction hypotheses",
-        "reviewBatch": "2026-07-28-richness-six-slot-batch-45",
-        "reviewedAt": "2026-07-28T12:22:14.895Z"
+        "reason": "Post-rain stream-channel frame keeps one fully readable animal with two wings, two hind legs and feet, one short tail, three free digits per wrist, rounded complete tips, and each wing membrane connected to the same-side ankle; the riparian setting remains a habitat hypothesis rather than direct behavior evidence.",
+        "reviewOutcome": "anatomy review; approved only as a habitat-ecology reference",
+        "reviewMethod": "Original-size review of the final project copy and generated source, including full-frame limb and tail counts, bilateral wrist crops distinguishing free digits I-III from wing digit IV, bilateral ankle and foot crops, rounded wingtip framing, and same-side membrane-to-ankle continuity; exact skull, soft-tissue attachment, reduced tail membrane, skin, habitat preference, and solitary behavior remain comparative hypotheses because Q. northropi is fragmentary.",
+        "reviewBatch": "2026-08-02-quetzalcoatlus-ankle-membrane-correction-1",
+        "batchId": "2026-08-02-quetzalcoatlus-ankle-membrane-correction-1",
+        "reviewedAt": "2026-08-02T14:09:44.808Z"
       },
       "4": {
         "status": "approved",
-        "source": "assets/dinosaurs/quetzalcoatlus-northropi-left-wing-stretch-comparative-anatomy-imagegen-v2.png",
+        "source": "assets/dinosaurs/quetzalcoatlus-northropi-bilateral-ankle-attachment-anatomy-imagegen-v3.png",
         "role": "identity-anatomy",
-        "reason": "The near left wing forms one readable shoulder-humerus-elbow-forearm-wrist-elongated fourth-finger chain with one continuous membrane, while the opposite wing remains folded and exactly two hind legs remain separate; live membrane shape and complete posture are labeled comparative.",
-        "reviewMethod": "Andres and Langston 2021 giant partial-left-wing holotype, six fragmentary giant specimens, and approximately 10 m reconstructed wingspan; Padian et al. 2021 functional reconstruction based entirely on the smaller Q. lawsoni morph and explicit absence of Q. northropi skull and neck material; Lehman 2021 inland Javelina stream-channel facies, rare giant specimens, Alamosaurus-dominated formation fauna, and speculative riparian or solitary interpretation; Thomas and McDavid 2025 recovery of giant and moderately large Quetzalcoatlus species in separate clades; original-size inspection of all selected full frames, final six-role contact sheet, and isolated head, forewing, wrist, limb, foot, tail, and secondary-animal crops; exact skull, neck, torso, gait, launch mechanics, skin, colors, markings, plant arrangement, and same-frame behavior remain reconstruction hypotheses",
-        "reviewBatch": "2026-07-28-richness-six-slot-batch-45",
-        "reviewedAt": "2026-07-28T12:22:14.895Z"
+        "reason": "Intentional ventral close-up clearly shows two separate hind legs and feet, one short tail, and each posterior wing-membrane edge meeting the same-side lower leg and ankle without crossing, duplication, or penetration; head, wrists, and wing tips are deliberately outside frame.",
+        "reviewOutcome": "anatomy review; structure reference only and not eligible for representative promotion",
+        "reviewMethod": "Original-size structure-crop review centered on both membrane-to-ankle junctions, two hind limbs, two four-toed feet, and one short tail; head, wrists, and wing tips are intentionally out of frame and therefore cannot provide full-body representative count evidence, while exact soft-tissue attachment and reduced tail-membrane outline remain comparative hypotheses.",
+        "reviewBatch": "2026-08-02-quetzalcoatlus-ankle-membrane-correction-1",
+        "batchId": "2026-08-02-quetzalcoatlus-ankle-membrane-correction-1",
+        "reviewedAt": "2026-08-02T14:09:44.808Z"
       },
       "5": {
         "status": "approved",
-        "source": "assets/dinosaurs/quetzalcoatlus-northropi-channel-separated-alamosaurus-context-ecology-imagegen-v2.png",
+        "source": "assets/dinosaurs/quetzalcoatlus-northropi-alamosaurus-separated-ventral-ecology-imagegen-v3.png",
         "role": "interaction",
-        "reason": "One complete foreground Quetzalcoatlus and one distant Alamosaurus are separated by a broad stream with no contact, pursuit, overlap, or implied direct behavior; the secondary animal is formation-level context only.",
-        "reviewMethod": "Andres and Langston 2021 giant partial-left-wing holotype, six fragmentary giant specimens, and approximately 10 m reconstructed wingspan; Padian et al. 2021 functional reconstruction based entirely on the smaller Q. lawsoni morph and explicit absence of Q. northropi skull and neck material; Lehman 2021 inland Javelina stream-channel facies, rare giant specimens, Alamosaurus-dominated formation fauna, and speculative riparian or solitary interpretation; Thomas and McDavid 2025 recovery of giant and moderately large Quetzalcoatlus species in separate clades; original-size inspection of all selected full frames, final six-role contact sheet, and isolated head, forewing, wrist, limb, foot, tail, and secondary-animal crops; exact skull, neck, torso, gait, launch mechanics, skin, colors, markings, plant arrangement, and same-frame behavior remain reconstruction hypotheses",
-        "reviewBatch": "2026-07-28-richness-six-slot-batch-45",
-        "reviewedAt": "2026-07-28T12:22:14.895Z"
+        "reason": "Foreground Quetzalcoatlus retains two wings, two hind legs and feet, one short tail, three free digits per wrist, rounded complete tips, and bilateral same-side ankle attachments; the distant separated sauropod supplies formation context without contact, overlap, or direct-interaction claims.",
+        "reviewOutcome": "anatomy review; approved only as separated fauna-context ecology",
+        "reviewMethod": "Original-size review of the final project copy and generated source, including full-frame limb and tail counts, bilateral wrist and ankle crops, rounded wingtip framing, membrane-to-ankle continuity, and separation of the distant secondary animal; exact skull, soft-tissue attachment, sauropod identity, co-occurrence, and behavior remain comparative hypotheses.",
+        "reviewBatch": "2026-08-02-quetzalcoatlus-ankle-membrane-correction-1",
+        "batchId": "2026-08-02-quetzalcoatlus-ankle-membrane-correction-1",
+        "reviewedAt": "2026-08-02T14:09:44.808Z"
       },
       "6": {
         "status": "approved",
-        "source": "assets/dinosaurs/quetzalcoatlus-northropi-low-launch-comparative-locomotion-imagegen-v3.png",
+        "source": "assets/dinosaurs/quetzalcoatlus-northropi-ankle-attached-final-approach-locomotion-imagegen-v4.png",
         "role": "social-growth-defense",
-        "reason": "Low-altitude launch hypothesis shows exactly two continuous wing membranes, two independently readable hind legs and feet, and one single short pelvis-origin tail with all tips inside frame; the caption treats launch mechanics and the unpreserved body as comparative hypotheses.",
-        "reviewMethod": "Andres and Langston 2021 giant partial-left-wing holotype, six fragmentary giant specimens, and approximately 10 m reconstructed wingspan; Padian et al. 2021 functional reconstruction based entirely on the smaller Q. lawsoni morph and explicit absence of Q. northropi skull and neck material; Lehman 2021 inland Javelina stream-channel facies, rare giant specimens, Alamosaurus-dominated formation fauna, and speculative riparian or solitary interpretation; Thomas and McDavid 2025 recovery of giant and moderately large Quetzalcoatlus species in separate clades; original-size inspection of all selected full frames, final six-role contact sheet, and isolated head, forewing, wrist, limb, foot, tail, and secondary-animal crops; exact skull, neck, torso, gait, launch mechanics, skin, colors, markings, plant arrangement, and same-frame behavior remain reconstruction hypotheses",
-        "reviewBatch": "2026-07-28-richness-six-slot-batch-45",
-        "reviewedAt": "2026-07-28T12:22:14.895Z"
+        "reason": "Final-approach frame independently preserves two complete rounded-tip wings, two hind legs and feet, one short tail, three free digits per wrist, and both membranes continuing to their same-side ankles without crossing, duplicated appendages, penetration, or crop loss.",
+        "reviewOutcome": "anatomy review; approved only as comparative locomotion reference",
+        "reviewMethod": "Original-size review of the final project copy and generated source, including full-frame limb and tail counts, bilateral wrist crops distinguishing free digits I-III from wing digit IV, bilateral ankle and foot crops, rounded wingtip framing, and same-side membrane-to-ankle continuity; exact skull, soft-tissue attachment, reduced tail membrane, foot spacing, wing angle, and landing sequence remain comparative hypotheses.",
+        "reviewBatch": "2026-08-02-quetzalcoatlus-ankle-membrane-correction-1",
+        "batchId": "2026-08-02-quetzalcoatlus-ankle-membrane-correction-1",
+        "reviewedAt": "2026-08-02T14:09:44.808Z"
       }
     },
     "dimorphodon-macronyx": {
