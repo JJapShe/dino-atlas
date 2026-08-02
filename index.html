@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dino Atlas MVP</title>
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="./styles.css?v=20260802-timeline-lightbox-v3" />
+    <link rel="stylesheet" href="./styles.css?v=20260802-familiarity-levels-v1" />
   </head>
   <body data-active-view="atlas">
     <div class="app-shell">
@@ -61,8 +61,8 @@
             </div>
           </div>
           <div class="filter-group">
-            <span class="field-label">공룡지식 LV</span>
-            <div class="level-filter" id="levelFilter" role="group" aria-label="Knowledge level filter">
+            <span class="field-label">도감 친숙도</span>
+            <div class="level-filter" id="levelFilter" role="group" aria-label="도감 친숙도 필터">
               <button class="active" data-level="all" type="button">전체</button>
               <button data-level="1" type="button">LV1</button>
               <button data-level="2" type="button">LV2</button>
@@ -97,7 +97,7 @@
             </div>
             <div class="metric">
               <strong id="metricLevels">-</strong>
-              <span>지식 LV</span>
+              <span>친숙도 LV</span>
             </div>
             <div class="metric">
               <strong id="metricImages">0</strong>
@@ -207,7 +207,7 @@
             <select id="periodSort" aria-label="Sort catalog">
               <option value="updated">최근 이미지순</option>
               <option value="name">이름순</option>
-              <option value="level">LV순</option>
+              <option value="level">친숙도순</option>
               <option value="period">시대순</option>
               <option value="size">크기순</option>
             </select>
@@ -269,7 +269,7 @@
     </div>
 
 <script src="./gallery-slots.js?v=20260801-almas-six-slot-v1"></script>
-<script src="./app.js?v=20260802-timeline-lightbox-v3"></script>
+<script src="./app.js?v=20260802-familiarity-levels-v1"></script>
     <script src="./atlas-layout.js?v=20260731-resizable-inspector-v1"></script>
   </body>
 </html>

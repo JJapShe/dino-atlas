@@ -10,7 +10,7 @@ const dinosaurs = [
     diet: "육식",
     region: "남아메리카",
     length: 6.0,
-    knowledgeLevel: 4,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "대기",
     summary:
@@ -34,7 +34,7 @@ const dinosaurs = [
     diet: "육식",
     region: "북아메리카",
     length: 3.0,
-    knowledgeLevel: 3,
+    knowledgeLevel: 2,
     imageSlots: 6,
     reviewStatus: "검수중",
     summary:
@@ -58,7 +58,7 @@ const dinosaurs = [
     diet: "육식",
     region: "남아메리카",
     length: 1.77,
-    knowledgeLevel: 3,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "신규 후보",
     summary:
@@ -83,7 +83,7 @@ const dinosaurs = [
     diet: "초식 중심",
     region: "남아메리카",
     length: 1.3,
-    knowledgeLevel: 4,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "해부학 재검수",
     summary:
@@ -155,7 +155,7 @@ const dinosaurs = [
     diet: "육식",
     region: "유럽",
     length: 5.0,
-    knowledgeLevel: 3,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -180,7 +180,7 @@ const dinosaurs = [
     diet: "초식",
     region: "유럽",
     length: 8.0,
-    knowledgeLevel: 3,
+    knowledgeLevel: 2,
     imageSlots: 6,
     reviewStatus: "대기",
     summary:
@@ -204,7 +204,7 @@ const dinosaurs = [
     diet: "초식",
     region: "남아메리카",
     length: 10.0,
-    knowledgeLevel: 3,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "해부학 재검수",
     summary:
@@ -236,7 +236,7 @@ const dinosaurs = [
     diet: "초식",
     region: "남아메리카",
     length: 9.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 검수 세트",
     summary:
@@ -412,7 +412,7 @@ const dinosaurs = [
     diet: "초식",
     region: "유럽",
     length: 3.0,
-    knowledgeLevel: 3,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "신규 후보",
     summary:
@@ -461,7 +461,7 @@ const dinosaurs = [
     diet: "초식",
     region: "남부 아프리카",
     length: 1.2,
-    knowledgeLevel: 4,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "신규 후보",
     summary:
@@ -487,7 +487,7 @@ const dinosaurs = [
     diet: "육식",
     region: "북아메리카",
     length: 8.5,
-    knowledgeLevel: 2,
+    knowledgeLevel: 1,
     imageSlots: 6,
     reviewStatus: "6장 해부 안정화",
     summary:
@@ -536,7 +536,7 @@ const dinosaurs = [
     diet: "육식",
     region: "유럽",
     length: 6.0,
-    knowledgeLevel: 4,
+    knowledgeLevel: 2,
     imageSlots: 6,
     reviewStatus: "6장 검수 세트",
     summary:
@@ -611,7 +611,7 @@ const dinosaurs = [
     diet: "육식",
     region: "북아메리카",
     length: 6.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 1,
     imageSlots: 6,
     reviewStatus: "6장 문헌 검수",
     summary:
@@ -635,7 +635,7 @@ const dinosaurs = [
     diet: "육식",
     region: "남부 아프리카",
     length: 5.5,
-    knowledgeLevel: 3,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "신규 후보",
     summary:
@@ -660,7 +660,7 @@ const dinosaurs = [
     diet: "육식",
     region: "아시아",
     length: 5.0,
-    knowledgeLevel: 3,
+    knowledgeLevel: 2,
     imageSlots: 6,
     reviewStatus: "6장 검수 완료",
     summary:
@@ -685,7 +685,7 @@ const dinosaurs = [
     diet: "초식",
     region: "유럽",
     length: 16.0,
-    knowledgeLevel: 4,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6장 검수 세트",
     summary:
@@ -735,7 +735,7 @@ const dinosaurs = [
     diet: "초식",
     region: "아시아",
     length: 5.0,
-    knowledgeLevel: 3,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 검수 세트",
     summary:
@@ -761,7 +761,7 @@ const dinosaurs = [
     diet: "어식/소형동물",
     region: "유럽",
     length: 1.2,
-    knowledgeLevel: 3,
+    knowledgeLevel: 2,
     imageSlots: 6,
     reviewStatus: "6장 문헌 검수",
     summary:
@@ -787,7 +787,7 @@ const dinosaurs = [
     diet: "무척추동물 중심 잡식",
     region: "유럽",
     length: 0.8,
-    knowledgeLevel: 3,
+    knowledgeLevel: 1,
     imageSlots: 6,
     reviewStatus: "6장 검수 완료",
     summary:
@@ -814,7 +814,7 @@ const dinosaurs = [
     diet: "여과섭식/소형수생동물",
     region: "남아메리카",
     length: 2.5,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "해부학 재검수",
     summary:
@@ -849,7 +849,7 @@ const dinosaurs = [
     diet: "어식/해안 포식",
     region: "남아메리카",
     length: 4.5,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -905,7 +905,7 @@ const dinosaurs = [
     diet: "경질 먹이 가설",
     region: "아시아",
     length: 3.5,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6장 문헌 검수 완료",
     summary:
@@ -936,7 +936,7 @@ const dinosaurs = [
     diet: "어식 가설/해상 활공",
     region: "북아메리카",
     length: 2.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "문헌·해부 재검수",
     summary:
@@ -968,7 +968,7 @@ const dinosaurs = [
     diet: "소형 어류·두족류 추정",
     region: "북아메리카",
     length: 6.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 1,
     imageSlots: 6,
     reviewStatus: "6장 해부 안정화",
     summary:
@@ -996,7 +996,7 @@ const dinosaurs = [
     length: 10.0,
     sizeLabel: "복원 날개폭",
     sizeDisplay: "약 10 m",
-    knowledgeLevel: 2,
+    knowledgeLevel: 1,
     imageSlots: 6,
     reviewStatus: "자료 기반 비교 복원",
     summary:
@@ -1057,7 +1057,7 @@ const dinosaurs = [
     diet: "어식/소형동물",
     region: "유럽",
     length: 1.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6장 해부 검수",
     summary:
@@ -1084,7 +1084,7 @@ const dinosaurs = [
     diet: "소형동물 추정",
     region: "아시아",
     length: 0.9,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "근거 검수 6장",
     summary:
@@ -1110,7 +1110,7 @@ const dinosaurs = [
     diet: "어식",
     region: "유럽",
     length: 2.0,
-    knowledgeLevel: 3,
+    knowledgeLevel: 2,
     imageSlots: 6,
     reviewStatus: "신규 후보",
     summary:
@@ -1136,7 +1136,7 @@ const dinosaurs = [
     diet: "어식/저서동물",
     region: "북아메리카",
     length: 3.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6슬롯 해부 검수 완료",
     summary:
@@ -1162,7 +1162,7 @@ const dinosaurs = [
     diet: "패류/저서동물",
     region: "유럽",
     length: 2.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -1194,7 +1194,7 @@ const dinosaurs = [
     diet: "어식",
     region: "유럽",
     length: 3.5,
-    knowledgeLevel: 3,
+    knowledgeLevel: 2,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -1282,7 +1282,7 @@ const dinosaurs = [
     diet: "어식/두족류",
     region: "북아메리카",
     length: 15.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -1308,7 +1308,7 @@ const dinosaurs = [
     diet: "어식/대형 해양 포식",
     region: "유럽",
     length: 12.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 1,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -1333,7 +1333,7 @@ const dinosaurs = [
     diet: "초식",
     region: "북아메리카",
     length: 21.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 1,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -1360,7 +1360,7 @@ const dinosaurs = [
     diet: "초식",
     region: "북아메리카",
     length: 26.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 1,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -1416,7 +1416,7 @@ const dinosaurs = [
     diet: "초식",
     region: "북아메리카",
     length: 19.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 1,
     imageSlots: 6,
     reviewStatus: "대기",
     summary:
@@ -1544,7 +1544,7 @@ const dinosaurs = [
     diet: "초식",
     region: "북아메리카",
     length: 3.5,
-    knowledgeLevel: 3,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "신규 후보",
     summary:
@@ -1569,7 +1569,7 @@ const dinosaurs = [
     diet: "초식",
     region: "북아메리카",
     length: 5.2,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "수정됨",
     summary:
@@ -1598,7 +1598,7 @@ const dinosaurs = [
     diet: "초식",
     region: "북아메리카",
     length: 5.5,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -1623,7 +1623,7 @@ const dinosaurs = [
     diet: "초식",
     region: "북아메리카",
     length: 6.6,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6슬롯 해부 검수 완료",
     summary:
@@ -1652,7 +1652,7 @@ const dinosaurs = [
     diet: "초식",
     region: "유럽",
     length: 5.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -1814,7 +1814,7 @@ const dinosaurs = [
     diet: "초식",
     region: "몽골",
     length: 10.0,
-    knowledgeLevel: 3,
+    knowledgeLevel: 1,
     imageSlots: 6,
     reviewStatus: "6장 양손 3+3 재검수",
     summary:
@@ -1844,7 +1844,7 @@ const dinosaurs = [
     diet: "잡식/식충 추정",
     region: "몽골",
     length: 1.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6장 해부 안정화",
     summary:
@@ -1879,7 +1879,7 @@ const dinosaurs = [
     diet: "잡식",
     region: "몽골/중국",
     length: 1.5,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "수정됨",
     summary:
@@ -1935,7 +1935,7 @@ const dinosaurs = [
     diet: "잡식",
     region: "몽골",
     length: 3.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6슬롯 해부 검수 완료",
     summary:
@@ -1964,7 +1964,7 @@ const dinosaurs = [
     diet: "잡식",
     region: "몽골",
     length: 1.8,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -1995,7 +1995,7 @@ const dinosaurs = [
     diet: "잡식",
     region: "몽골",
     length: 1.5,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "논문 근거 6장",
     summary:
@@ -2022,7 +2022,7 @@ const dinosaurs = [
     diet: "잡식",
     region: "몽골",
     length: 2.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "논문 근거 6장",
     summary:
@@ -2050,7 +2050,7 @@ const dinosaurs = [
     diet: "잡식",
     region: "몽골",
     length: 1.7,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "논문 근거 6장",
     summary:
@@ -2077,7 +2077,7 @@ const dinosaurs = [
     diet: "잡식",
     region: "중국",
     length: 1.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6슬롯 해부 검수 완료",
     summary:
@@ -2101,7 +2101,7 @@ const dinosaurs = [
     diet: "육식",
     region: "몽골",
     length: 2.4,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 원본 해부 검수 완료",
     summary:
@@ -2154,7 +2154,7 @@ const dinosaurs = [
     diet: "육식",
     region: "중국",
     length: 1.2,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6장 원본 해부 검수 완료",
     summary:
@@ -2185,7 +2185,7 @@ const dinosaurs = [
     diet: "육식/곤충식",
     region: "중국",
     length: 0.5,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6슬롯 해부 검수 완료",
     summary:
@@ -2209,7 +2209,7 @@ const dinosaurs = [
     diet: "육식",
     region: "중국",
     length: 1.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 해부 검수 완료",
     summary:
@@ -2233,7 +2233,7 @@ const dinosaurs = [
     diet: "육식",
     region: "몽골",
     length: 2.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6장 해부 검수 완료",
     summary:
@@ -2257,7 +2257,7 @@ const dinosaurs = [
     diet: "육식",
     region: "몽골",
     length: 2.3,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -2281,7 +2281,7 @@ const dinosaurs = [
     diet: "육식",
     region: "몽골",
     length: 1.5,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -2305,7 +2305,7 @@ const dinosaurs = [
     diet: "육식",
     region: "몽골",
     length: 1.2,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -2329,7 +2329,7 @@ const dinosaurs = [
     diet: "육식",
     region: "몽골",
     length: 1.6,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -2353,7 +2353,7 @@ const dinosaurs = [
     diet: "육식",
     region: "몽골",
     length: 10.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 1,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -2578,7 +2578,7 @@ const dinosaurs = [
     diet: "초식",
     region: "북아메리카",
     length: 4.7,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6장 원본 해부 검수 완료",
     summary:
@@ -2634,7 +2634,7 @@ const dinosaurs = [
     diet: "초식",
     region: "북아메리카",
     length: 4.5,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6장 역할 확장 검수",
     summary:
@@ -2689,7 +2689,7 @@ const dinosaurs = [
     diet: "초식",
     region: "북아메리카",
     length: 6.5,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -2713,7 +2713,7 @@ const dinosaurs = [
     diet: "초식",
     region: "북아메리카",
     length: 5.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -2761,7 +2761,7 @@ const dinosaurs = [
     diet: "초식",
     region: "북아메리카",
     length: 2.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6슬롯 해부 검수 완료",
     summary:
@@ -2785,7 +2785,7 @@ const dinosaurs = [
     diet: "초식",
     region: "북아메리카",
     length: 3.5,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6장 해부 안정화",
     summary:
@@ -2860,7 +2860,7 @@ const dinosaurs = [
     diet: "초식",
     region: "북아메리카",
     length: 5.0,
-    knowledgeLevel: 3,
+    knowledgeLevel: 2,
     imageSlots: 6,
     reviewStatus: "신규 후보",
     summary:
@@ -2936,7 +2936,7 @@ const dinosaurs = [
     diet: "초식",
     region: "북아메리카",
     length: 12.0,
-    knowledgeLevel: 1,
+    knowledgeLevel: 2,
     imageSlots: 6,
     reviewStatus: "6장 문헌 검수",
     summary:
@@ -2960,7 +2960,7 @@ const dinosaurs = [
     diet: "초식",
     region: "북아메리카",
     length: 3.6,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "수정됨",
     summary:
@@ -2987,7 +2987,7 @@ const dinosaurs = [
     diet: "초식/잡식",
     region: "북아메리카",
     length: 4.5,
-    knowledgeLevel: 2,
+    knowledgeLevel: 1,
     imageSlots: 6,
     reviewStatus: "6장 문헌 검수",
     summary:
@@ -3018,7 +3018,7 @@ const dinosaurs = [
     diet: "초식/잡식",
     region: "북아메리카",
     length: 2.4,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "수정됨",
     summary:
@@ -3046,7 +3046,7 @@ const dinosaurs = [
     diet: "초식/잡식",
     region: "아시아",
     length: 1.8,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -3070,7 +3070,7 @@ const dinosaurs = [
     diet: "초식/잡식",
     region: "아시아",
     length: 2.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -3094,7 +3094,7 @@ const dinosaurs = [
     diet: "초식/잡식",
     region: "아시아",
     length: 0.6,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -3118,7 +3118,7 @@ const dinosaurs = [
     diet: "초식/잡식",
     region: "북아메리카",
     length: 2.5,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -3142,7 +3142,7 @@ const dinosaurs = [
     diet: "초식/잡식",
     region: "북아메리카",
     length: 1.5,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -3166,7 +3166,7 @@ const dinosaurs = [
     diet: "초식/잡식",
     region: "북아메리카",
     length: 1.2,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -3190,7 +3190,7 @@ const dinosaurs = [
     diet: "초식/잡식",
     region: "북아메리카",
     length: 2.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -3214,7 +3214,7 @@ const dinosaurs = [
     diet: "초식/잡식",
     region: "북아메리카",
     length: 1.8,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "신규 후보",
     summary:
@@ -3238,7 +3238,7 @@ const dinosaurs = [
     diet: "초식/잡식",
     region: "아시아",
     length: 1.5,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -3262,7 +3262,7 @@ const dinosaurs = [
     diet: "초식/잡식",
     region: "아시아",
     length: 2.4,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -3286,7 +3286,7 @@ const dinosaurs = [
     diet: "초식/잡식",
     region: "북아메리카",
     length: 2.5,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -3310,7 +3310,7 @@ const dinosaurs = [
     diet: "초식/잡식",
     region: "아시아",
     length: 1.8,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6장 원본 해부 검수 완료",
     summary:
@@ -3338,7 +3338,7 @@ const dinosaurs = [
     diet: "초식/잡식",
     region: "북아메리카",
     length: 2.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "신규 후보",
     summary:
@@ -3386,7 +3386,7 @@ const dinosaurs = [
     diet: "초식/잡식",
     region: "북아메리카",
     length: 2.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료",
     summary:
@@ -3410,7 +3410,7 @@ const dinosaurs = [
     diet: "초식/잡식",
     region: "북아메리카",
     length: 2.4,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료 · 분류 검토",
     summary:
@@ -3434,7 +3434,7 @@ const dinosaurs = [
     diet: "초식/잡식",
     region: "북아메리카",
     length: 2.2,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료 · 분류 검토",
     summary:
@@ -3458,7 +3458,7 @@ const dinosaurs = [
     diet: "초식/잡식",
     region: "동아시아",
     length: 2.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 4,
     imageSlots: 6,
     reviewStatus: "6장 원본 확대 검수 완료 · 분류 검토",
     summary:
@@ -3482,7 +3482,7 @@ const dinosaurs = [
     diet: "초식",
     region: "북아메리카",
     length: 8.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 1,
     imageSlots: 6,
     reviewStatus: "6장 해부 안정화",
     summary:
@@ -3533,23 +3533,23 @@ const taxonomySearchAliases = {
 const knowledgeLevels = {
   1: {
     short: "LV1",
-    label: "유명 공룡",
-    description: "대부분 한 번쯤 들어본 대표 공룡",
+    label: "스타",
+    description: "5~14세가 이름이나 실루엣을 쉽게 알아보는 대표 생물",
   },
   2: {
     short: "LV2",
-    label: "익숙한 도감",
-    description: "공룡 도감이나 전시에서 자주 만나는 공룡",
+    label: "도감 단골",
+    description: "완구·영상·박물관·어린이 도감에서 자주 만나는 생물",
   },
   3: {
     short: "LV3",
-    label: "탐험 단계",
-    description: "조금 깊게 들어가면 보이는 공룡",
+    label: "탐험가",
+    description: "공룡과 고생물을 좋아하면 한 단계 더 찾아보게 되는 생물",
   },
   4: {
     short: "LV4",
-    label: "매니아",
-    description: "초기 공룡과 전문 분류에 가까운 공룡",
+    label: "연구자",
+    description: "희귀하거나 가까운 친척과 구별해 보는 전문 생물",
   },
 };
 
@@ -23005,7 +23005,7 @@ function renderDetail() {
       <div class="fact"><span>분류 경로</span><strong>${getTaxonomyPath(dino)}</strong></div>
       <div class="fact"><span>${dino.sizeLabel || "예상 길이"}</span><strong>${dino.sizeDisplay || `${dino.length.toFixed(1)} m`}</strong></div>
       <div class="fact"><span>출처 메모</span><strong>${dino.sources.join(", ")}</strong></div>
-      <div class="fact"><span>퀴즈 연결</span><strong>${level.description}</strong></div>
+      <div class="fact"><span>친숙도 안내</span><strong>${level.description}</strong></div>
     </div>
     <div class="feature-list">${featureRows}</div>
   `;
