@@ -4327,7 +4327,7 @@ const classificationGroups = Object.freeze([
   { id: "ornithischia", label: "조반류" },
   { id: "pterosauria", label: "익룡" },
   { id: "marine-reptilia", label: "바다 파충류" },
-  { id: "early-dinosaur", label: "초기 공룡" },
+  { id: "early-dinosaur", label: "초기 용반류" },
 ]);
 
 const timelinePeriodOrder = Object.freeze([

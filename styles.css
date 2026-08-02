@@ -27,7 +27,7 @@
 }
 
 body {
-  min-width: 320px;
+  min-width: 0;
   min-height: 100vh;
   margin: 0;
   color: var(--text);
@@ -3587,7 +3587,7 @@ body.lightbox-open {
   }
 
   .classification-strip button {
-    min-height: 34px;
+    min-height: 42px;
     padding-inline: 9px;
     font-size: 11px;
   }
