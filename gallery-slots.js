@@ -3167,6 +3167,32 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     }
   ],
+  "yutyrannus-huali": [
+    {
+      "source": "assets/dinosaurs/yutyrannus-huali-yixian-white-mottled-feathered-representative-imagegen-v1.png",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "phenotype": "canonical-a",
+      "habitatKey": "sihetun-yixian-tuff-lake-margin",
+      "expectedKind": "count-level pass"
+    },
+    {
+      "source": "assets/dinosaurs/yutyrannus-huali-ash-white-slate-countershading-pattern-imagegen-v1.png",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "phenotype": "variant-b",
+      "habitatKey": "sihetun-yixian-tuff-lake-margin",
+      "expectedKind": "review hold"
+    },
+    {
+      "source": "assets/dinosaurs/yutyrannus-huali-cool-conifer-ashplain-ecology-imagegen-v1.png",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "sihetun-yixian-tuff-lake-margin",
+      "expectedKind": "anatomy review"
+    }
+  ],
   "spinosaurus-aegyptiacus": [
     {
       "source": "assets/dinosaurs/spinosaurus-aegyptiacus-kemkem-shortleg-deeptail-threefinger-representative-imagegen-v1.png",

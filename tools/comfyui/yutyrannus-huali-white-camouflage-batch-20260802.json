@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-02-yutyrannus-huali-white-camouflage-1",
+  "taxonId": "yutyrannus-huali",
+  "taxonName": "Yutyrannus huali",
+  "createdAt": "2026-08-02T11:47:19.583Z",
+  "requestedVisualTrait": "Ivory and ash-white disruptive feather pattern interpreted as hypothetical camouflage",
+  "evidenceBoundary": {
+    "direct": [
+      "A large basal tyrannosauroid represented by three nearly complete skeletons from the Lower Cretaceous Yixian Formation",
+      "Three-fingered manus and typical theropod pes",
+      "A pneumatic premaxillary-nasal midline crest with low dorsal prominences",
+      "Long filamentous integument preserved at the neck, upper-limb region, pelvis, leg, and tail across the three specimens"
+    ],
+    "inferred": [
+      "Broad body coverage reconstructed by combining the preserved integument regions of all three specimens",
+      "Formation-level cool-temperate lake-margin, forest, volcanic-ash, and volcanic-terrain context",
+      "Exact soft-tissue outline of the crest and unpreserved body regions"
+    ],
+    "hypothetical": [
+      "White, ivory, slate-gray, and taupe colors",
+      "Pattern placement and camouflage function",
+      "Seasonal molt or seasonal white plumage",
+      "The exact quarry, member, weather, and moment depicted"
+    ]
+  },
+  "copyrightSafety": {
+    "externalArtworkUsed": false,
+    "externalImagesUsedAsGenerationInput": false,
+    "projectGeneratedReferenceOnly": true,
+    "note": "External publications were used only for factual anatomy, age, climate, and environment constraints. No published reconstruction, fossil plate, or third-party artwork was copied or supplied to the generator."
+  },
+  "sources": [
+    {
+      "url": "https://www.nature.com/articles/nature10906",
+      "citation": "Xu et al. 2012. A gigantic feathered dinosaur from the Lower Cretaceous of China. Nature 484:92-95. doi:10.1038/nature10906",
+      "use": "Taxonomy, size, skull crest, hands, feet, specimens, and filamentous integument",
+      "rightsUse": "Factual reference only; no figure or artwork copied"
+    },
+    {
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnature10906/MediaObjects/41586_2012_BFnature10906_MOESM18_ESM.pdf",
+      "citation": "Xu et al. 2012 supplementary information",
+      "use": "Specimen, locality, measurement, and ontogeny boundaries",
+      "rightsUse": "Factual reference only; no figure or artwork copied"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3069172/",
+      "citation": "Amiot et al. 2011. Oxygen isotopes of East Asian dinosaurs reveal exceptionally cold Early Cretaceous climates. PNAS 108:5179-5183.",
+      "use": "Cool-temperate climate context and rejection of a permanent snowfield claim",
+      "rightsUse": "Factual reference only; no figure or artwork copied"
+    },
+    {
+      "url": "https://academic.oup.com/nsr/article/8/6/nwab063/6223474",
+      "citation": "Zhong et al. 2021. High-precision geochronological constraints on the duration of the Yixian Formation.",
+      "use": "Formation-level age context",
+      "rightsUse": "Factual reference only; no figure or artwork copied"
+    },
+    {
+      "url": "https://www.nature.com/articles/ncomms4151",
+      "citation": "Jiang et al. 2014. Volcanic and lacustrine context of the Jehol Biota.",
+      "use": "Conservative volcanic-ash and lake-margin environment context",
+      "rightsUse": "Factual reference only; no figure or artwork copied"
+    }
+  ],
+  "promptEncoding": "Each prompt array is the exact ordered set of lines supplied to the generator, joined with newline characters.",
+  "records": {
+    "representative": {
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "generatedAt": "2026-08-02T11:39:30.000Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "prompt-to-image",
+      "seed": "not exposed by generator",
+      "callId": "exec-a8b8a5a9-b8ce-4082-a5eb-a4a574beaec6",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-a8b8a5a9-b8ce-4082-a5eb-a4a574beaec6.png",
+      "approvedProjectPath": "assets/dinosaurs/yutyrannus-huali-yixian-white-mottled-feathered-representative-imagegen-v1.png",
+      "sha256": "A6315488E1F590E2C80DC17AA0F8C58021A17BE8CBFE4E3B1580F4FB85AB076D",
+      "bytes": 3456114,
+      "dimensions": "1536x1024",
+      "referenceImages": [],
+      "prompt": [
+        "Create an original, copyright-safe scientific paleoart image for a children's dinosaur atlas (ages 5-14), landscape 3:2 composition, no text, no labels, no watermark, no split panel.",
+        "SUBJECT: Exactly one adult Yutyrannus huali, fully visible from snout to tail tip, standing calmly in a clear left-facing three-quarter side view. Show a large but relatively lightly built basal tyrannosauroid, about 9 m long. The head is large and somewhat long rather than the extremely deep, broad skull of Tyrannosaurus rex. Include a conspicuous but anatomically restrained rough, pneumatic midline crest along the premaxilla and nasal region, with a few low dorsal prominences; do not turn it into a tall sail or paired horn. Show one large nostril on the visible side. Keep the mouth closed or only slightly parted, non-graphic.",
+        "ANATOMY GATES: exactly one head; exactly two well-developed forelimbs, longer than T. rex arms; each visible hand must have exactly three distinct clawed fingers, with both hands readable and separated from the chest; exactly two strong hind limbs; both feet visible and grounded, each with three main forward weight-bearing toes; no raised dromaeosaur sickle claw; exactly one long continuous balancing tail connected to the pelvis and entirely inside the frame. No duplicated, fused, hidden, or extra limbs, digits, heads, or tails.",
+        "INTEGUMENT: extensive long, simple filamentous plumage across neck, torso, upper arms, thighs, and tail, reading as shaggy protofeathers rather than mammal fur. Individual filaments may be long and soft, especially on the neck and tail, but there must be no modern bird flight feathers, no wing fans, no tail fan, and no naked scaly T. rex body.",
+        "COLOR AND PATTERN: a clearly visible hypothetical camouflage scheme requested for the atlas: pale ivory and cool ash-white plumage broken by irregular soft-edged slate-gray and muted taupe patches across the back, flanks, shoulders, and tail, with a lighter throat and belly. The white areas should form natural disruptive mottling, not zebra stripes, polka dots, a panda mask, or pure featureless snow-white. This color and camouflage function are an artistic hypothesis; do not imply fossil color evidence.",
+        "SETTING: Early Cretaceous Yixian Formation-inspired cool-temperate lakeshore and volcanic ash plain in Liaoning, China: sparse conifers and ginkgo-like trees, low ferns and horsetails, dark gray tuffaceous soil, a quiet lake edge, faint distant volcanic hills. No modern grass, no flowers, no permanent snowfield, no blizzard, no ice-age landscape. Neutral broken-cloud daylight with cool lake reflection; natural educational realism, clean readable silhouette, detailed but not cinematic-horror, not a movie monster.",
+        "COMPOSITION: the dinosaur occupies roughly 70% of the width but leaves safe margin around snout, crest, feet, and tail tip. Keep all anatomy unobstructed by plants, mist, rocks, or foreground objects. Original scientific paleoart, realistic materials and proportions, approachable rather than aggressive."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-02T11:47:19.583Z",
+        "method": "Original-size full-frame inspection of head, both hands, both feet, pelvis-tail connection, feather texture, pattern, and background",
+        "result": "Passed as the sole representative. One head, two three-fingered hands, two three-toed feet, one complete tail, extensive filamentous integument, and a readable white-gray hypothetical pattern are present."
+      }
+    },
+    "color-pattern": {
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved-for-gallery-not-representative",
+      "generatedAt": "2026-08-02T11:41:54.000Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "reference-guided edit",
+      "seed": "not exposed by generator",
+      "callId": "exec-832b1964-ffa9-40cd-ad24-585340a1a25e",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fc23c-ba59-7542-84c5-3555bba8a455/exec-832b1964-ffa9-40cd-ad24-585340a1a25e.png",
+      "approvedProjectPath": "assets/dinosaurs/yutyrannus-huali-ash-white-slate-countershading-pattern-imagegen-v1.png",
+      "sha256": "F09F594F6BF399135190C5D3BD82D314D200863554FC6F20C9F5CB2A03369CFA",
+      "bytes": 3205821,
+      "dimensions": "1536x1024",
+      "referenceImages": [
+        "assets/dinosaurs/yutyrannus-huali-yixian-white-mottled-feathered-representative-imagegen-v1.png"
+      ],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas S2 color-pattern gallery candidate",
+        "Primary request: Create one anatomically conservative color-pattern variant of Yutyrannus huali, using the supplied approved representative as the edit target and strict body/anatomy lock. Change the animal's facing direction, camera angle, surface coloration, pattern scale, and immediate terrain while preserving the same individual body plan.",
+        "Input image: Image 1 is the project-owned approved Yutyrannus huali representative and edit target/body-lock reference.",
+        "Scene/backdrop: a cool Early Cretaceous Yixian-style conifer woodland margin on a dry mound of pale volcanic-ash gravel and dark pebbles; this is ash and gravel, not snow. Keep the habitat secondary and period-appropriate, with no modern grass.",
+        "Subject: one complete adult Yutyrannus huali. Preserve a large basal tyrannosauroid body; a long continuous coat of simple shaggy filamentous feathers over neck, torso, arms, thighs, and tail; a rough but low and restrained midline cranial crest; exactly two long forelimbs, each with exactly three separate clawed fingers; exactly two strong hind limbs, each foot showing three main weight-bearing toes; and exactly one long, uncut, untufted tail.",
+        "Composition/framing: landscape 3:2. The animal faces right, shown in a clean full-body broadside or mild rear three-quarter view. Head at right, tail extending left. Keep the entire skull, both long arms and both three-finger hands, both legs and both three-toed feet, pelvis, and complete tail tip inside the frame with generous edge clearance. Stagger the limbs naturally so every limb can be counted. Calm standing or slow walking pose.",
+        "Lighting/mood: neutral cool overcast daylight with soft ash-reflected fill, documentary paleoart, clear anatomical readability, no dramatic action.",
+        "Color palette: ivory and warm gray-white feather base, with substantially larger ash-white patches than the reference plus irregular broken slate-gray and muted taupe saddle-shaped blotches across neck, shoulders, flanks, hips, and proximal tail. The pattern should read clearly as a plausible camouflage hypothesis against pale ash gravel, not as direct fossil color evidence. Use asymmetrical, natural-edged patches; avoid regular stripes, rings, polka dots, or a uniform pure-white coat.",
+        "Materials/textures: long simple filamentous feather coat, matte scaly lower legs and feet, subtle rough keratin on claws and the restrained midline crest, granular volcanic ash and pebble substrate.",
+        "Constraints: preserve the approved reference's species identity and proportions; one animal only; no text, labels, logo, frame, signature, or watermark.",
+        "Avoid: snowfield, snowfall, ice, blizzard, fantasy white glow, modern grass, flight feathers, bird wings, spread wings, tail fan, tail tuft, T. rex-style tiny two-finger arms, missing or fused fingers, dromaeosaur sickle claws, bird beak, mammalian fur, porcupine quills, exaggerated horn row or tall fantasy crest, hidden feet, cropped tail, forked tail, extra limbs, duplicated feet, fused anatomy, prey, attack, blood, text, logo, watermark."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-02T11:47:19.583Z",
+        "method": "Original-size full-frame inspection of directional variation, both arms, feet, tail, crest, feather texture, and pattern",
+        "result": "Accepted only as the color-pattern slot. The full body, legs, feet, tail, filaments, and white-slate pattern pass; the far hand's third digit is less separable than in the representative, so this image must not be promoted to representative."
+      }
+    },
+    "habitat-ecology": {
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "kind": "anatomy review",
+      "status": "approved-for-gallery-not-representative",
+      "generatedAt": "2026-08-02T11:44:04.000Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "reference-guided generation followed by a localized crest correction",
+      "seed": "not exposed by generator",
+      "callId": "exec-dca769c6-0ffe-4133-93dd-d9daac89e312",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fc23c-9e01-7142-abca-b01a92f6d325/exec-dca769c6-0ffe-4133-93dd-d9daac89e312.png",
+      "approvedProjectPath": "assets/dinosaurs/yutyrannus-huali-cool-conifer-ashplain-ecology-imagegen-v1.png",
+      "sha256": "7B87477E572450A67809080B82CA96C69793EB309E1C73DC865890BD26B63718",
+      "bytes": 3358742,
+      "dimensions": "1536x1024",
+      "referenceImages": [
+        "assets/dinosaurs/yutyrannus-huali-yixian-white-mottled-feathered-representative-imagegen-v1.png"
+      ],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas S3 habitat-ecology gallery candidate",
+        "Primary request: Create a new wide environmental scene using Image 1 as the strict identity reference for one adult Yutyrannus huali. Show the same white-camouflage individual calmly walking through or attentively inspecting an ankle-shallow volcanic-ash channel at the margin of a quiet Yixian Formation lake.",
+        "Input images: Image 1 is the approved representative and strict subject-identity reference. Preserve its recognizable skull profile, eye, off-white to pale-gray long filamentous feather coat, smoky charcoal-gray irregular mottling, restrained dark facial accents, body proportions, and overall natural-history realism. Do not copy its original pose or framing.",
+        "Scene/backdrop: an Early Cretaceous cool-temperate Yixian Formation lake margin with a shallow braided channel over fine gray volcanic ash and small stones; still lake water beyond; mixed conifers and ginkgoalean trees; low ferns and horsetails; distant subdued volcanic terrain. No other animals.",
+        "Style/medium: highly detailed, scientifically grounded natural-history paleoart with realistic animal anatomy, water, vegetation, and atmospheric depth; not a fantasy creature and not a modern wildlife photo composite.",
+        "Composition/framing: wide landscape habitat view. The single Yutyrannus is smaller in frame than in Image 1 so the habitat is clearly readable, but remains the unambiguous subject. Show the entire animal continuously from snout to the single tail tip, all within frame with generous margins. Calm three-quarter side view, moving left-to-right with the head slightly lowered toward the water. Both arms are held clear of the torso and fully visible. Both legs and both feet are fully visible through exceptionally clear ankle-shallow water; no mud, plants, rocks, splashes, or reflections may hide any hand, finger, foot, or toe.",
+        "Lighting/mood: cold diffuse overcast daylight, quiet and observant, soft blue-gray atmosphere, no dramatic attack or chase.",
+        "Color palette: preserve the reference animal's off-white, pale gray, charcoal, and muted taupe mottling; cool slate-gray ash and water; restrained green conifers, ginkgo foliage, ferns, and horsetails.",
+        "Anatomy constraints: exactly one Yutyrannus huali; a large early-diverging tyrannosauroid with a large but not T. rex-blocky skull; one restrained low-to-moderate rugose midline nasal-premaxillary crest, not a row of exaggerated horns; a large external naris; relatively long functional forelimbs; exactly two arms and exactly three separate clawed fingers on each hand, all six fingers visibly countable; exactly two hind legs and three main forward weight-bearing toes on each foot, all six main toes visibly countable; one long balancing tail; long simple shaggy filamentous feathers across neck, upper arms, trunk, hips, legs, and tail, with the same white-and-gray mottled identity as Image 1.",
+        "Ecology constraints: depict only a cautious walking or water-inspection moment. Do not imply an exact quarry, direct predation, pack behavior, or proven co-occurrence with another species.",
+        "Avoid: no modern grass, no flowers, no broadleaf meadow, no permanent snowfield, no falling snow, no blizzard; no other animals; no prey, carcass, hunting, roaring, running, or combat; no pennaceous flight feathers, no wings, no tail fan, no mammal fur; no T. rex-style tiny two-fingered arms; no dromaeosaur sickle claws; no missing, fused, duplicated, or extra fingers, toes, limbs, heads, or tails; no cropped snout or tail tip; no anatomy hidden by water or vegetation; no fantasy spikes; no text, caption, logo, border, signature, or watermark."
+      ],
+      "correctionPrompt": [
+        "Use case: precise-object-edit",
+        "Asset type: Dino Atlas S3 habitat-ecology gallery candidate correction",
+        "Primary request: Edit Image 2 only to correct the Yutyrannus head crest. Preserve the complete habitat scene, composition, camera, animal pose, full-body framing, off-white and smoky-gray mottled feather identity, lighting, water, vegetation, and every other anatomical feature exactly as they are.",
+        "Input images: Image 1 is the approved Yutyrannus identity reference. Image 2 is the edit target and must remain otherwise unchanged.",
+        "Precise crest correction: replace the current saw-toothed row of separate pointed triangular spikes along the snout and skull roof with one restrained, low-to-moderate, continuous rugose midline nasal-premaxillary crest. It should read as a single gently uneven bony ridge integrated into the skull profile, with only subtle low prominences, never as horns, plates, or a fantasy spike row. Preserve the large external naris, eye, jaws, and skull proportions.",
+        "Invariant anatomy: keep exactly one head, exactly two long forelimbs, exactly three separate visible clawed fingers on each hand, exactly two hind legs, exactly three main forward weight-bearing toes on each foot, and one long complete tail. Keep all hands, fingers, feet, toes, snout, and tail tip fully visible and unobscured. Keep the long simple filamentous feather coat; no pennaceous flight feathers, wings, or tail fan.",
+        "Constraints: do not change the dinosaur's scale, position, direction, behavior, white camouflage pattern, surroundings, cold overcast light, or clear shallow channel. No other animals, modern grass, flowers, snow, hunting, text, logo, signature, or watermark."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-02T11:47:19.583Z",
+        "method": "Original-size full-frame inspection after a targeted crest correction, including head, both hands, both feet through clear shallow water, pelvis-tail connection, filaments, vegetation, and secondary-fauna absence",
+        "result": "Passed for the habitat-ecology slot. The corrected crest is continuous and restrained; all required appendages and the complete tail are readable; the scene avoids secondary animals, snow, modern grass, and direct predation. Distant volcanic haze is generic formation-level context, not a claim of simultaneous eruption."
+      }
+    }
+  },
+  "rejectedAttempts": [
+    {
+      "role": "habitat-ecology",
+      "callId": "exec-0fa3b210-3e96-4eaa-a960-3d32c44426dd",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fc23c-9e01-7142-abca-b01a92f6d325/exec-0fa3b210-3e96-4eaa-a960-3d32c44426dd.png",
+      "copiedToProject": false,
+      "reason": "The first habitat generation exaggerated the midline crest into a saw-toothed row of separate triangular spikes. It was retained only as the private edit target and never copied into assets/dinosaurs."
+    }
+  ]
+}

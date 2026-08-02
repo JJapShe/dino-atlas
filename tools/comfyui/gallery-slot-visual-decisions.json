@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-02T11:13:54.476Z",
-  "reviewBatch": "2026-08-02-psittacosaurus-tail-bristle-reference-1",
-  "reviewMethod": "Original-size comparison of one Psittacosaurus tail-bristle correction against the unchanged approved P. mongoliensis representative and the documented SMF R 4970 bristle zone. Approval is limited to S7 anatomy review as an explicitly genus-level Psittacosaurus sp. soft-tissue reference; representative promotion and a species-level bristle claim remain prohibited.",
-  "targetSlots": 797,
+  "generatedAt": "2026-08-02T11:47:19.583Z",
+  "reviewBatch": "2026-08-02-yutyrannus-white-camouflage-1",
+  "reviewMethod": "Original-size full-frame review of the Yutyrannus representative, same-body white-gray pattern variant, and corrected Yixian habitat scene against the Xu et al. 2012 skull, manus, pes, tail, and filament gates. White color, pattern placement, camouflage function, exact locality, and seasonal use remain explicit reconstruction hypotheses.",
+  "targetSlots": 800,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -7441,6 +7441,35 @@
         "reviewMethod": "Original-size limb, tail, club, and motion-blur inspection",
         "reviewBatch": "2026-07-26-richness-six-slot-batch-8",
         "reviewedAt": "2026-07-26T07:12:06.474Z"
+      }
+    },
+    "yutyrannus-huali": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/yutyrannus-huali-yixian-white-mottled-feathered-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Original-size review passed one complete adult, one large-naris head with a rough restrained midline crest, exactly two developed forelimbs with three readable fingers per hand, exactly two hind limbs with three main forward toes per foot, one continuous tail, and long simple filamentous integument. White-gray color and camouflage function remain hypothetical.",
+        "reviewMethod": "Xu et al. 2012 identity boundary plus original-size head, both-hand, both-foot, pelvis-tail, filament, pattern, and artifact inspection",
+        "reviewBatch": "2026-08-02-yutyrannus-white-camouflage-1",
+        "reviewedAt": "2026-08-02T11:47:19.583Z"
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/yutyrannus-huali-ash-white-slate-countershading-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "reason": "The opposite-facing full body preserves two developed arms, two grounded three-toed feet, one complete tail, and extensive filamentous integument while clearly varying the ash-white, slate, and taupe disruption pattern. The far hand's third digit is less separable than in S1, so this remains a review-hold pattern slot and cannot outrank the representative.",
+        "reviewMethod": "Reference-guided same-body comparison plus original-size direction, limbs, feet, tail, crest, filament, volcanic-ash substrate, and pattern inspection",
+        "reviewBatch": "2026-08-02-yutyrannus-white-camouflage-1",
+        "reviewedAt": "2026-08-02T11:47:19.583Z"
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/yutyrannus-huali-cool-conifer-ashplain-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "reason": "After rejecting the saw-toothed crest draft, the localized correction passed one continuous restrained midline ridge, both three-fingered hands, both three-toed feet visible through clear shallow water, one complete tail, long simple filaments, and a formation-level cool-temperate lake-margin scene without other animals, snow, or direct predation.",
+        "reviewMethod": "Original-size pre/post crest comparison plus head, both-hand, both-foot, shallow-water, tail, filament, vegetation, and secondary-fauna inspection",
+        "reviewBatch": "2026-08-02-yutyrannus-white-camouflage-1",
+        "reviewedAt": "2026-08-02T11:47:19.583Z"
       }
     }
   },

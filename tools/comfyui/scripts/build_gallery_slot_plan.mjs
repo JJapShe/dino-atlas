@@ -597,7 +597,9 @@ function habitatFor(dino, route) {
   else if (["oviraptor-philoceratops", "citipati-osmolskae", "khaan-mckennai"].includes(dino.id)) key = "djadokhta-semiarid-dune";
   else if (dino.id === "conchoraptor-gracilis") key = "khulsan-baruungoyot-aeolian-interdune";
   else if (dino.id === "dsungaripterus-weii") key = "wuerho-shallow-delta-lake-margin";
-  else if (dino.id === "sinornithosaurus-millenii") key = "sihetun-yixian-tuff-lake-margin";
+  else if (["sinornithosaurus-millenii", "yutyrannus-huali"].includes(dino.id)) {
+    key = "sihetun-yixian-tuff-lake-margin";
+  }
   else if (dino.id === "sinovenator-changii") key = "lujiatun-fluvial-volcaniclastic";
   else if (dino.id === "goyocephale-lattimorei") key = "boro-khovil-red-sandstone-uncertain";
   else if (dino.id === "nyctosaurus-gracilis") key = "smoky-hill-open-seaway";
