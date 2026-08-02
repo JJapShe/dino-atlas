@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-02T11:47:19.583Z",
-  "reviewBatch": "2026-08-02-yutyrannus-white-camouflage-1",
-  "reviewMethod": "Original-size full-frame review of the Yutyrannus representative, same-body white-gray pattern variant, and corrected Yixian habitat scene against the Xu et al. 2012 skull, manus, pes, tail, and filament gates. White color, pattern placement, camouflage function, exact locality, and seasonal use remain explicit reconstruction hypotheses.",
-  "targetSlots": 800,
+  "generatedAt": "2026-08-02T12:24:15.220Z",
+  "reviewBatch": "2026-08-02-yutyrannus-cold-breath-richness-1",
+  "reviewMethod": "Original-size full-frame review of all six Yutyrannus slots against the Xu et al. 2012 skull, manus, pes, tail, and filament gates. S4-S6 were checked for corrected continuous crests, readable limbs and tails, separated multi-animal silhouettes, visible-breath clarity, and age-appropriate non-graphic blood limits. White color, pattern placement, camouflage, breath, weather, prey, pursuit, blood placement, growth-stage pairing, exact locality, and seasonal use remain explicit reconstruction hypotheses.",
+  "targetSlots": 803,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -7470,6 +7470,33 @@
         "reviewMethod": "Original-size pre/post crest comparison plus head, both-hand, both-foot, shallow-water, tail, filament, vegetation, and secondary-fauna inspection",
         "reviewBatch": "2026-08-02-yutyrannus-white-camouflage-1",
         "reviewedAt": "2026-08-02T11:47:19.583Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/yutyrannus-huali-cold-dawn-breath-threefinger-anatomy-imagegen-v1.png",
+        "role": "identity-anatomy",
+        "reason": "The cold-dawn full body passed one head with a large naris and a single low continuous rough midline ridge, two developed three-fingered forelimbs, two grounded three-main-toe feet, one complete pelvis-origin tail, long simple filaments, and one compact visible-breath plume. Breath, weather, white pattern, and camouflage are reconstruction hypotheses, and the image is not a representative promotion.",
+        "reviewMethod": "Original-size inspection after two crest corrections: full frame plus head-ridge, both hands, both feet, pelvis-tail, filament, breath, and snow-exclusion checks",
+        "reviewBatch": "2026-08-02-yutyrannus-cold-breath-richness-1",
+        "reviewedAt": "2026-08-02T12:24:15.220Z"
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/yutyrannus-huali-cold-breath-bloodfleck-unnamed-herbivore-hunt-ecology-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "The separated non-contact pursuit scene passed one complete Yutyrannus, one complete unnamed generic herbivorous morphotype, a continuous low crest, visible breath, and only tiny dark rusty-red-brown feather marks. There is no wound, carcass, torn tissue, dismemberment, blood pool, spray, or gore. The prey identity, association, pursuit, prior contact, blood placement, breath, and climate moment are hypothetical, and distant digits keep this below representative rank.",
+        "reviewMethod": "Original-size full frame plus predator head, hands, feet, tail, breath, blood-mark, prey-beak, separation, overlap, injury, and gore-exclusion inspection",
+        "reviewBatch": "2026-08-02-yutyrannus-cold-breath-richness-1",
+        "reviewedAt": "2026-08-02T12:24:15.220Z"
+      },
+      "6": {
+        "status": "approved",
+        "source": "assets/dinosaurs/yutyrannus-huali-cold-lakemargin-adult-subadult-growth-ecology-imagegen-v1.png",
+        "role": "social-growth-defense",
+        "reason": "The adult-left and smaller subadult-right comparison passed two separated complete Yutyrannus silhouettes, two corrected low continuous crests, readable developed three-fingered arms and three-main-toe feet, two complete tails, long simple filaments, and compact breath from each animal. Their simultaneous placement, size-stage interpretation, white pattern, breath, weather, and any social relationship remain hypotheses; no family, pack, or cooperative behavior is claimed.",
+        "reviewMethod": "Original-size corrected-draft inspection: both heads and crests, four hands, four feet, two pelvis-tail joins, body separation, breath separation, filament, and snow-exclusion checks",
+        "reviewBatch": "2026-08-02-yutyrannus-cold-breath-richness-1",
+        "reviewedAt": "2026-08-02T12:24:15.220Z"
       }
     }
   },

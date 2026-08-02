@@ -1,0 +1,286 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-02-yutyrannus-huali-cold-breath-richness-1",
+  "taxonId": "yutyrannus-huali",
+  "taxonName": "Yutyrannus huali",
+  "createdAt": "2026-08-02T12:24:15.220Z",
+  "requestedVisualTrait": "Three lower-ranked gallery additions showing cold-air breath, a restrained non-graphic hunt cue on white plumage, and a separated adult-subadult comparison",
+  "audienceBoundary": "Designed for ages 5-14. The hunt scene contains only a few tiny dark rusty-red-brown feather marks and one faint smudge; no visible wound, torn tissue, exposed muscle, organs, dismemberment, carcass, blood pool, arterial spray, wet gore, dripping blood, or graphic injury is allowed.",
+  "evidenceBoundary": {
+    "direct": [
+      "Three nearly complete Yutyrannus huali specimens from the Lower Cretaceous Yixian Formation represent at least two ontogenetic stages",
+      "A three-fingered manus, typical theropod pes, large external naris, pneumatic premaxillary-nasal midline crest, and long filamentous integument are described in the original publication",
+      "The largest specimen was estimated at about 9 m and roughly 1414 kg in the supplementary information"
+    ],
+    "inferred": [
+      "Formation-level cool-temperate lake-margin, forest, volcanic-ash, and volcanic-terrain context",
+      "Broad filament coverage reconstructed by combining preserved regions from the three specimens",
+      "A low continuous rough crest silhouette used to avoid unsupported repeated horn-like or saw-toothed projections"
+    ],
+    "hypothetical": [
+      "White, ivory, gray, slate, and taupe colors, pattern placement, camouflage function, and seasonal use",
+      "Visible breath, exact weather, air temperature, season, and the depicted moment",
+      "The unnamed generic herbivorous morphotype, its exact co-occurrence, pursuit, target choice, prior contact, and blood placement",
+      "The adult-subadult simultaneous scene and any social, family, pack, or cooperative meaning",
+      "Exact quarry, member, lakeshore location, vegetation arrangement, and volcanic view"
+    ]
+  },
+  "copyrightSafety": {
+    "externalArtworkUsed": false,
+    "externalImagesUsedAsGenerationInput": false,
+    "projectGeneratedReferenceOnly": true,
+    "note": "External publications supplied factual anatomy, age, climate, and environment constraints only. No published reconstruction, fossil plate, or third-party artwork was copied or supplied to the generator. All visual inputs were project-owned generated Yutyrannus assets or private drafts from this batch."
+  },
+  "sources": [
+    {
+      "url": "https://www.nature.com/articles/nature10906",
+      "citation": "Xu et al. 2012. A gigantic feathered dinosaur from the Lower Cretaceous of China. Nature 484:92-95. doi:10.1038/nature10906",
+      "use": "Taxonomy, Yixian occurrence, specimens, growth stages, skull, naris, crest, hands, feet, and filamentous integument",
+      "rightsUse": "Factual reference only; no figure or reconstruction used as visual input"
+    },
+    {
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnature10906/MediaObjects/41586_2012_BFnature10906_MOESM18_ESM.pdf",
+      "citation": "Xu et al. 2012 supplementary information for Yutyrannus huali",
+      "use": "Quarry uncertainty, measurements, mass estimate, and ontogenetic limitations",
+      "rightsUse": "Factual reference only; no figure used as visual input"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3069172/",
+      "citation": "Amiot et al. 2011. Oxygen isotope evidence for semi-aquatic habits among spinosaurid theropods. PNAS supplementary climatic context used by the project for Jehol mean-air-temperature discussion",
+      "use": "Broad cool-temperate climate context, not proof of the weather in any depicted moment",
+      "rightsUse": "Factual reference only"
+    },
+    {
+      "url": "https://academic.oup.com/nsr/article/8/6/nwab063/6223474",
+      "citation": "Zhong et al. 2021. Terrestrial environment and volcanism of the Early Cretaceous Jehol Biota",
+      "use": "Formation-level volcanic and lacustrine environmental context",
+      "rightsUse": "Factual reference only"
+    },
+    {
+      "url": "https://www.nature.com/articles/ncomms4151",
+      "citation": "Jiang et al. 2014. A gigantic feathered dinosaur context reference for the Yixian Formation ecosystem",
+      "use": "Broad Yixian environmental context only",
+      "rightsUse": "Factual reference only"
+    },
+    {
+      "url": "https://www.nature.com/articles/21872",
+      "citation": "Swisher et al. 1999. Cretaceous age for the feathered dinosaurs of Liaoning, China",
+      "use": "Broad lower Yixian lacustrine biota context",
+      "rightsUse": "Factual reference only"
+    }
+  ],
+  "promptEncoding": "Each prompt or correctionPrompt array preserves the exact ordered text blocks supplied to the generator. Blocks are joined using the record's promptJoin value; line breaks inside a block are preserved.",
+  "records": {
+    "identity-anatomy": {
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "kind": "anatomy review",
+      "status": "approved",
+      "generatedAt": "2026-08-02T12:14:18.581Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Reference-guided generation followed by two targeted crest corrections",
+      "seed": "not exposed by generator",
+      "callId": "exec-054770dc-d2bc-46d1-be52-34858882beeb",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fc23c-dd1f-7d73-bd40-d8513fd76799/exec-054770dc-d2bc-46d1-be52-34858882beeb.png",
+      "approvedProjectPath": "assets/dinosaurs/yutyrannus-huali-cold-dawn-breath-threefinger-anatomy-imagegen-v1.png",
+      "sha256": "4573A3291F8C1EC2C02DF564D7E0CFA15DA82E43A344AA3EACD6F943E8715E99",
+      "bytes": 2821309,
+      "dimensions": "1536x1024",
+      "referenceImages": [
+        "assets/dinosaurs/yutyrannus-huali-yixian-white-mottled-feathered-representative-imagegen-v1.png",
+        "private batch drafts used only as edit targets"
+      ],
+      "promptJoin": "\\n\\n",
+      "prompt": [
+        "Use case: scientific-educational\nAsset type: Dino Atlas S4 identity-anatomy gallery candidate for ages 5-14",
+        "Primary request: Generate a NEW original natural-history paleoart scene of exactly one adult Yutyrannus huali at cold dawn. This is a new composition, not an edit or replica of Image 1. Anatomical readability has priority over drama.",
+        "Input image role: Image 1 is ONLY a project-owned reference for the animal's overall basal-tyrannosauroid body proportions and its hypothetical ivory, cool white, gray, and muted taupe mottled color family. DO NOT preserve or copy Image 1's triangular saw-toothed spike row on the snout and skull roof. Reconstruct the head crest from the anatomy instructions below.",
+        "Scene/backdrop: Early Cretaceous Yixian Formation-inspired cool-temperate lake-margin and volcanic-ash plain in Liaoning, China at cold blue-gray dawn. Sparse irregular conifers, ginkgo-like trees, low ferns and horsetails, dark tuffaceous soil, faint lake mist and subdued distant volcanic terrain. This is cool volcanic terrain, NOT a snowfield. No falling snow, no blizzard, no ice-age landscape, no modern grass, no flowers.",
+        "Subject and head identity: one large but relatively lightly built basal tyrannosauroid, about 9 m long, with a large yet not extremely deep T. rex-like skull and one clearly visible large external naris. The skull roof must carry ONE rough but continuous LOW-TO-MODERATE median premaxillary-nasal ridge integrated into the skull profile. It may be gently uneven and rugose, but it must remain one connected ridge. Absolutely no separate triangular spikes, no serrated saw-tooth crest, no horn row, no paired horns, no plates, and no tall sail.",
+        "Composition/framing: landscape 3:2. Full animal visible from snout to tail tip in a calm front three-quarter / anterolateral view, approaching diagonally at a slow walk or standing alert. Keep the head, both arms and hands, both legs and feet, pelvis, and complete tail inside the frame with generous clearance. Stagger limbs naturally so every appendage and digit can be counted. The face and median ridge must be readable. Show a small natural plume of visible breath vapor at the nostrils or slightly parted mouth, but keep it translucent and away from the eye, naris, jawline, hands, and body silhouette.",
+        "Anatomy gates: exactly one head; exactly TWO well-developed forelimbs, distinctly longer and more functional than Tyrannosaurus rex arms; each hand must show exactly THREE separate, connected, clawed fingers, all six fingers readable and neither hand hidden against the chest. Exactly TWO strong hind limbs; both feet fully visible and grounded, each foot showing exactly THREE main forward weight-bearing toes, all six main toes readable. No enlarged raised dromaeosaur sickle claw. Exactly ONE long continuous balancing tail connected to the pelvis, uncut and untufted. No duplicated, fused, missing, hidden, or extra limbs, digits, heads, or tails.",
+        "Integument: extensive long, simple filamentous plumage across neck, torso, upper arms, thighs, and tail, reading as shaggy protofeathers. Keep individual filaments simple and hairlike without becoming mammalian fur. No modern pennaceous flight feathers, no bird wings, no spread wing fans, no tail fan, no porcupine quills, and no naked scaly T. rex body.",
+        "Color and pattern: preserve only the reference's broad hypothetical palette and proportions: ivory and cool ash-white long filaments broken by irregular soft-edged slate-gray and muted taupe mottling, with a lighter throat and belly. The pattern is an artistic hypothesis, not fossil color evidence. Avoid zebra stripes, regular rings, polka dots, panda mask, or featureless pure white.",
+        "Lighting/mood/style: cold diffuse dawn light, quiet documentary museum paleoart, realistic anatomy and materials, clear educational silhouette, approachable and non-aggressive. The visible breath establishes cold air without implying a permanent snowy climate.",
+        "Constraints: exactly one animal; no prey, no hunting, no attack, no carcass, no wounds, no blood, no other animals; no roaring monster pose; no text, caption, label, logo, border, signature, or watermark; do not imitate any named artist.",
+        "Critical reject conditions: any triangular or saw-toothed crest; any isolated spike or horn on the premaxilla/nasal midline; hidden or uncountable hands, fingers, feet, or toes; two-finger T. rex arms; bird wings or flight feathers; raised sickle claw; cropped tail; extra anatomy; snowfield or falling snow."
+      ],
+      "correctionPrompts": [
+        {
+          "callId": "exec-49dc526e-0293-4c33-b7b2-0cb16d5fb261",
+          "promptJoin": "\\n\\n",
+          "prompt": [
+            "Use case: precise-object-edit\nAsset type: Dino Atlas S4 identity-anatomy candidate correction",
+            "Primary request: Edit Image 1 only in two localized ways: (1) correct the Yutyrannus skull crest, and (2) add a small visible breath plume. Preserve the entire existing composition, camera angle, full-body framing, animal scale and pose, white-gray-taupe mottled filament colors, cold dawn lighting, lake-margin environment, and all appendages exactly as they are.",
+            "CRITICAL CREST CORRECTION: Completely remove the row of separate pointed triangular spikes and saw teeth along the snout and skull roof. Replace it with ONE connected, continuous, rough-textured LOW-TO-MODERATE median premaxillary-nasal bony ridge integrated smoothly into the skull profile. Its silhouette must be a mostly continuous low raised strip with a gently irregular or softly undulating top edge, never a sequence of peaks. No isolated points, no triangular teeth, no serrations, no horn row, no paired horns, no plates, no tall sail. Preserve the large external naris, eye, jaw, skull length, and facial proportions.",
+            "BREATH: add one small translucent pale breath-vapor cloud emerging naturally forward from the visible nostril or slightly parted mouth. It must be clearly visible against the cool background but must not cover the naris, eye, jaw outline, crest, neck, hands, or body. Do not turn it into smoke, fire, or a large fog bank.",
+            "Invariant anatomy: exactly one animal and one head; exactly two well-developed forelimbs; exactly three separate connected clawed fingers on each hand; exactly two hind limbs; exactly three main forward weight-bearing toes on each foot; exactly one complete continuous pelvis-origin tail. Keep every hand, finger, foot, toe, snout, and tail tip fully visible. Preserve the long simple shaggy filamentous integument. No flight feathers, wings, tail fan, sickle claw, extra anatomy, or missing anatomy.",
+            "Constraints: no other changes; no other animals, prey, hunting, attack, wounds, blood, snowfield, falling snow, modern grass, text, logo, signature, or watermark."
+          ]
+        },
+        {
+          "callId": "exec-054770dc-d2bc-46d1-be52-34858882beeb",
+          "promptJoin": "\\n\\n",
+          "prompt": [
+            "Use case: precise-object-edit\nAsset type: Dino Atlas S4 identity-anatomy crest correction, second strict pass",
+            "Primary request: Edit ONLY the skull midline crest of Image 1. Preserve every other pixel-level subject and scene property as closely as possible: full-body framing, three-quarter pose, visible breath, face, large naris, eye, jaws, all arms, all fingers, all legs, all toes, complete tail, white-gray-taupe filament pattern, dawn lighting, lake, vegetation, and background.",
+            "MANDATORY SHAPE CHANGE: Remove EVERY separate bump, bead, knob, point, triangular projection, rounded projection, notch, and repeated segment currently running along the top of the snout and skull. There must be ZERO individually countable protrusions and ZERO saw-tooth rhythm.",
+            "Replace them with ONE SINGLE ELONGATED, LOW, BROAD, CONTINUOUS MEDIAN PREMAXILLARY-NASAL RIDGE. It must look like one connected shallow bony keel or long low mound integrated into the skull, extending continuously along the midline of the premaxilla and nasal region. Its outer silhouette should be UNBROKEN, nearly flat to smoothly convex, with one gentle rise and fall at most. The surface may be finely rough, pebbled, or rugose, but the top outline cannot be scalloped, beaded, serrated, spiky, or divided. Think one continuous low rough ridge, not a row of anything. No horns, no plates, no spikes, no separate peaks, no paired structures, no tall crest.",
+            "Preserve the small translucent visible breath cloud exactly. Preserve the large external naris, eye, skull length, and jawline. Do not change the head size or add ornament elsewhere.",
+            "Invariant anatomy: exactly one animal; two well-developed forelimbs with three distinct connected clawed fingers on each hand; two hind limbs with three main forward weight-bearing toes on each foot; one continuous complete tail; long simple filamentous integument. No flight feathers, wings, tail fan, sickle claw, extra anatomy, hidden anatomy, other animals, prey, blood, snow, text, logo, signature, or watermark.",
+            "Reject the edit internally if any individual bump or repeated crest segment remains visible."
+          ]
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-02T12:24:15.220Z",
+        "method": "Original-size full-frame inspection after two targeted crest corrections, including head ridge, large naris, both hands, both feet, pelvis-tail junction, filaments, breath, and background",
+        "result": "Approved for S4 anatomy review. One complete animal, two readable three-fingered arms, two three-main-toe feet, one full tail, long simple filaments, a single low continuous rough ridge, and compact visible breath pass. Not promoted to representative."
+      }
+    },
+    "interaction-hunt": {
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "kind": "anatomy review",
+      "status": "approved",
+      "generatedAt": "2026-08-02T12:14:43.441Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Reference-guided generation followed by a targeted prey-identity and mild-blood correction",
+      "seed": "not exposed by generator",
+      "callId": "exec-6a692de4-5924-4550-8cd4-474dbb4c15c1",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fc23c-9e01-7142-abca-b01a92f6d325/exec-6a692de4-5924-4550-8cd4-474dbb4c15c1.png",
+      "approvedProjectPath": "assets/dinosaurs/yutyrannus-huali-cold-breath-bloodfleck-unnamed-herbivore-hunt-ecology-imagegen-v1.png",
+      "sha256": "8AA652212A5EB4F566E32E0F03DD0C6CB5BDF86A7BDF2AF5DEC979DD02C98D62",
+      "bytes": 3618769,
+      "dimensions": "1536x1024",
+      "referenceImages": [
+        "assets/dinosaurs/yutyrannus-huali-yixian-white-mottled-feathered-representative-imagegen-v1.png",
+        "private batch draft used only as the edit target"
+      ],
+      "promptJoin": "\\n\\n",
+      "prompt": [
+        "USE CASE\nScientific-educational paleoart for Dino Atlas. Create one wide landscape S5 interaction / hunt scene intended only as an anatomy-review gallery candidate, not as a representative specimen reconstruction.",
+        "REFERENCE HANDLING\nUse Image 1 only as the strict identity, general body-proportion, long filamentous feather-covering, and white/off-white with smoky gray mottling reference for the adult Yutyrannus huali. Do not reproduce the reference image's triangular, tooth-like, saw-edged crest. Correct that feature: the Yutyrannus must have ONE LOW, CONTINUOUS, ROUGHENED PREMAXILLARY-NASAL MIDLINE RIDGE along the top of the snout, with no row of spikes, no separate triangular plates, no twin horns, and no allosaur-like brow horns.",
+        "SCENE AND COMPOSITION\nA cold dawn on a broad volcanic-ash riverbank beside a shallow lake-fed stream in a formation-level Early Cretaceous Yixian landscape. Show exactly two animals:\n1) one adult Yutyrannus pursuing\n2) one much smaller, unnamed, generic contemporaneous herbivorous dinosaur morphotype.\nThe prey must have no species label and must not imply a precisely documented predator-prey association. It may read as a compact small bipedal basal ornithischian / basal ceratopsian-like herbivore, but keep it generic and plausible rather than fantastical.",
+        "Use a wide, low, lateral three-quarter view with the animals moving in the same direction. Both animals must be completely visible from snout to tail tip and feet. Do not let their bodies, limbs, tails, shadows, or breath clouds overlap. Place a conspicuous band of empty ash-and-gravel ground between them, approximately one to two lengths of the small herbivore. The Yutyrannus is behind and the herbivore is safely ahead; no physical contact, no bite, no fall, no collision, no carcass.",
+        "YUTYRANNUS IDENTITY AND COUNT-LEVEL ANATOMY\n- Basal tyrannosauroid proportions, about 9 m as an adult: long low body and tail, large but not deep-boxed tyrannosaurid head, visible large naris, athletic rather than obese.\n- Exactly two developed forelimbs, moderately long for a tyrannosauroid. Make both hands readable if possible, with exactly THREE separate clawed fingers per hand.\n- Exactly two hindlimbs. Make each foot readable if possible, with THREE main forward weight-bearing toes; no enlarged raptor sickle claw.\n- Exactly one long continuous tail, fully inside the frame.\n- Extensive long, simple, shaggy filamentous feathers across neck, torso, hips, arms and tail. No pennaceous wings, no primary flight feathers, no tail fan.\n- White and off-white camouflage-like plumage with irregular smoky gray mottling, matching the reference's overall color logic. Treat this coloration as an artistic hypothesis, not fossil evidence.\n- Preserve the single low continuous rough midline nasal ridge described above.",
+        "COLD-BREATH AND MILD NON-GRAPHIC BLOOD CUES\nMake the adult Yutyrannus's exhaled breath clearly visible as a compact pale condensation plume emerging from the nostrils and slightly open mouth, separated from both bodies.\nOn the WHITE feathers of the muzzle, throat/neck, and upper chest only, show a very small amount of dark reddish-brown staining: a few tiny droplets and one faint irregular smudge. Keep the total area minimal and subdued. No visible source wound.\nSTRICTLY NO open wound, cut, torn flesh, exposed muscle, organs, dismemberment, severed parts, carcass, blood pool, arterial spray, wet gore, excessive blood, or graphic injury on either animal. The small herbivore must be uninjured.",
+        "ENVIRONMENT, LIGHT, AND STYLE\nMuseum-grade naturalistic digital paleoart with crisp readable anatomy, realistic weight and motion, and restrained cinematic dawn light. Cool blue-gray air, faint warm horizon, damp charcoal ash, gravel, shallow water, volcanic tuff banks, distant low volcanic slopes, conifers, ginkgo-like trees, ferns and horsetails. Breath visibility and the cool atmosphere are reconstruction choices. No modern grass lawn, no flowering meadow, no modern mammals, no permanent snowfield, no blizzard.\nKeep the background quieter than the animals. The result must remain suitable for ages 5-14: exciting but clearly non-graphic.",
+        "OUTPUT\nWide landscape composition, high detail, no crop of either animal, no text, no caption, no species label, no logo, no watermark, no border."
+      ],
+      "correctionPrompt": {
+        "callId": "exec-6a692de4-5924-4550-8cd4-474dbb4c15c1",
+        "promptJoin": "\\n\\n",
+        "prompt": [
+          "TARGETED CORRECTION EDIT\nImage 1 is the approved Yutyrannus identity/color control. Image 2 is the draft scene to edit. Preserve Image 2's wide cold-dawn volcanic-ash riverbank composition, camera, lighting, full-body framing, large empty-ground separation, running poses, clearly visible Yutyrannus breath, white/off-white smoky-gray plumage, and non-graphic tone. Make only the following corrections while preserving the adult Yutyrannus anatomy.",
+          "1. REPLACE THE SMALL ANIMAL SO IT CLEARLY READS AS AN UNNAMED HERBIVOROUS DINOSAUR, NOT A SMALL THEROPOD.\nCreate one generic small bipedal basal ornithischian / basal ceratopsian-like herbivore morphotype: compact deep torso, short deep skull, a clear toothless keratinous beak at the front of the mouth, closed mouth, modest cheeks, no exposed carnivore teeth, no predatory snout, no grasping raptor hands, no sickle claw, no wings. Keep it plausible, uninjured, unnamed, and without distinctive species-level ornamentation. It must remain fully visible, safely ahead, moving in the same direction, and separated from Yutyrannus by the same conspicuous band of empty ash-and-gravel ground. No overlap, contact, bite, fall, collision, or carcass.",
+          "2. MAKE THE REQUIRED MINIMAL BLOOD CUE LEGIBLE BUT STILL VERY SUBDUED.\nOn the adult Yutyrannus's WHITE muzzle feathers, WHITE throat/neck feathers, and WHITE upper-chest feathers only, add a few tiny DARK RUSTY RED-BROWN pinhead droplets plus one faint irregular reddish-brown smudge. The marks should be visible at full resolution but occupy only a tiny area. No source wound is visible. Strictly no open wound, cut, torn flesh, exposed muscle, organs, dismemberment, severed parts, carcass, blood pool, arterial spray, wet gore, dripping blood, or excessive blood. The small herbivore has no blood or injury.",
+          "PRESERVE THESE YUTYRANNUS FEATURES\nExactly two developed forelimbs; exactly three separate fingers on each readable hand; exactly two hindlimbs; three main forward weight-bearing toes on each readable foot; no raptor sickle claw; exactly one complete tail; long simple filamentous body feathers, no wings and no tail fan; large naris; athletic basal-tyrannosauroid proportions. Preserve ONE LOW, CONTINUOUS, ROUGHENED PREMAXILLARY-NASAL MIDLINE RIDGE, never triangular tooth-like plates, separate spikes, saw teeth, twin horns, or allosaur brow horns.",
+          "Keep exactly two animals total, both completely in frame. Preserve the compact pale breath plume emerging from the Yutyrannus nostrils and slightly open mouth, and keep it separate from both bodies. Museum-grade scientific naturalism suitable for ages 5-14. No text, label, logo, watermark, border, modern grass lawn, flowers, mammals, permanent snowfield, or blizzard."
+        ]
+      },
+      "review": {
+        "reviewedAt": "2026-08-02T12:24:15.220Z",
+        "method": "Original-size full-frame inspection plus predator head, hands, feet, tail, breath, blood-mark, prey-beak, animal separation, overlap, injury, and gore-exclusion checks",
+        "result": "Approved for S5 anatomy-review interaction. The animals are complete and separated; the smaller animal reads as an unnamed generic herbivorous morphotype; the visible breath is clear; the only blood cue is a few subdued dark rusty-red-brown feather marks. No graphic injury is present. Distant digits keep the image below representative rank."
+      }
+    },
+    "social-growth-defense": {
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "kind": "anatomy review",
+      "status": "approved",
+      "generatedAt": "2026-08-02T12:14:27.661Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Reference-guided generation followed by a targeted two-head crest correction",
+      "seed": "not exposed by generator",
+      "callId": "exec-b821717a-af01-41b6-9660-307a2665ca84",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fc23c-ba59-7542-84c5-3555bba8a455/exec-b821717a-af01-41b6-9660-307a2665ca84.png",
+      "approvedProjectPath": "assets/dinosaurs/yutyrannus-huali-cold-lakemargin-adult-subadult-growth-ecology-imagegen-v1.png",
+      "sha256": "1C857520DCC722D4415E2D7522432DA9E66A65D854EF3E6DA9A8DCD3FA238F8C",
+      "bytes": 3122358,
+      "dimensions": "1536x1024",
+      "referenceImages": [
+        "assets/dinosaurs/yutyrannus-huali-yixian-white-mottled-feathered-representative-imagegen-v1.png",
+        "assets/dinosaurs/yutyrannus-huali-cool-conifer-ashplain-ecology-imagegen-v1.png",
+        "private batch draft used only as the edit target"
+      ],
+      "promptJoin": "\\n",
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas S6 social-growth-defense anatomy-review gallery scene",
+        "Primary request: Generate one wide, non-graphic educational growth-stage comparison scene with exactly two Yutyrannus huali individuals of clearly different size. Use the supplied approved images only as project-owned color, body-plan, integument, habitat, and corrected-crest references. Do not imply that the two individuals are a family, a social group, or cooperative hunters.",
+        "Input images: Image 1 is the approved representative for body proportions, long filamentous plumage, and hypothetical white-gray palette, but its discrete triangular sawtooth head spikes must NOT be preserved. Image 2 is the approved ecology reference for the lower, continuous, rough midline cranial ridge and cool Yixian lakeshore habitat.",
+        "Scene/backdrop: a frost-free but cold, misty Early Cretaceous Yixian Formation conifer-lake margin. Dark volcanic-ash gravel, damp gray pebbles, still lake water, low fog over the water, sparse period-appropriate ferns and horsetails, and distant conifer woodland. No snow, frost coating, ice, snowfall, blizzard, or modern grass.",
+        "Subjects: exactly two Yutyrannus huali, one adult and one smaller subadult at about two-thirds the adult's linear size. Both are complete, anatomically conservative basal tyrannosauroids with a less massive head than Tyrannosaurus rex, one large visible external nostril per visible side, a LOW CONTINUOUS ROUGH MIDLINE RIDGE over the premaxillary-nasal region with no separate triangular teeth, spikes, horns, or tall crest, long simple filamentous feathers over neck, torso, upper arms, thighs, and tail, and white-gray hypothetical camouflage patterns.",
+        "Composition/framing: landscape 3:2 wide environmental scene. Place the larger adult fully on the left half and the smaller subadult fully on the right half, at approximately the same ground depth so the size comparison is readable. Separate them with a broad empty strip of shallow lake-margin water and ash gravel. They walk calmly in different directions and look away from one another; no contact, attention, pursuit, guarding, or coordinated behavior. Keep both full silhouettes, both skulls, both pairs of forelimbs and hands, both pairs of hind limbs and feet, both pelvises, and both complete tail tips entirely inside the frame with generous clearance. No body, limb, tail, breath, or silhouette overlap between individuals. Stagger each animal's limbs so they can be counted.",
+        "Anatomy invariant for EACH individual: exactly one head; exactly two long, developed forelimbs; EACH visible hand has exactly three separate clawed fingers; exactly two strong hind limbs; EACH visible foot has exactly three main forward-facing weight-bearing toes and no raised dromaeosaur sickle claw; exactly one long continuous feathered tail, uncut, unforked, with no fan or tuft; long simple filamentous integument, not flight feathers, wings, or mammalian fur.",
+        "Breath and weather: a small, clearly visible but translucent puff of breath exits the nostril/mouth region of EACH animal in the cold damp air. Keep both breath plumes compact and separate from faces, crests, limbs, and each other; breath must not resemble smoke, fire, or a speech bubble.",
+        "Color palette: both animals share an ivory, cool gray-white, slate-gray, and muted taupe palette with irregular broken camouflage patches. Let the subadult have slightly softer, smaller patches while retaining the same general population motif. White coloration and camouflage function are explicitly a reconstruction hypothesis, not direct fossil color evidence.",
+        "Style/medium: naturalistic scientific paleoart, documentary realism, neutral anatomy-first rendering, fine readable feather filaments, matte scales on lower legs and feet, restrained atmospheric depth.",
+        "Lighting/mood: cold neutral overcast daylight, soft lake mist, calm observation, no cinematic attack or danger.",
+        "Constraints: exactly two Yutyrannus huali and no other animal; fully readable anatomy; no text, labels, age captions, logo, border, signature, or watermark.",
+        "Avoid: preserving or recreating the triangular sawtooth crest from Image 1; separate horn-like head spikes; tall crest; T. rex-style extremely deep broad skull; tiny two-finger arms; missing, fused, hidden, or extra fingers; dromaeosaur sickle claws; flight feathers; bird wings; spread wings; tail fan; tail tuft; mammalian fur; porcupine quills; snowfield; snow; frost; ice; blizzard; modern grass; prey; hunting; blood; wounds; carcass; threat display; touching; facing each other; family, parent-young, pack, herd, or cooperative-hunting composition; overlapping bodies, limbs, tails, breath plumes, or silhouettes; hidden feet; cropped or forked tails; extra animals; extra, duplicated, or fused limbs; text, logo, watermark."
+      ],
+      "correctionPrompt": {
+        "callId": "exec-b821717a-af01-41b6-9660-307a2665ca84",
+        "promptJoin": "\\n",
+        "prompt": [
+          "Use case: scientific-educational",
+          "Asset type: Dino Atlas S6 social-growth-defense anatomy-review correction",
+          "Primary request: Edit Image 1 with one targeted anatomical correction only: replace the discrete triangular sawtooth crest on BOTH Yutyrannus huali heads with a low, continuous, rough midline premaxillary-nasal ridge. Preserve the entire approved draft scene and all other anatomy, poses, sizes, spacing, weather, breath, plumage, patterns, lighting, terrain, and framing.",
+          "Input images: Image 1 is the generated S6 draft and edit target. Image 2 is the approved Yutyrannus ecology reference showing the intended low continuous rough midline ridge.",
+          "Exact crest correction for EACH animal: remove every separate triangular tooth, spike, horn, bead, plate, or serration along the top of the snout and skull. Rebuild that region as ONE connected low-to-medium-height rough ridge with an irregular gently undulating top edge, broad continuous base, and no gaps between units. It follows the midline over the premaxillary-nasal region only, then fades smoothly before the rear skull. It is not a row of spikes, not paired horns, not a comb, and not a tall sail.",
+          "Preserve exactly: two spatially separated Yutyrannus huali, larger adult left and smaller subadult right, both full-body and moving in different directions; broad empty water-and-ash-gravel separation; no overlap; each with one head, two long developed forelimbs and three separate fingers on every visible hand, two strong hind limbs and three main forward toes on every visible foot, one complete tail, and long simple filamentous feathers; visible compact breath plume from each; ivory, gray-white, slate, and muted taupe hypothetical camouflage; cold frost-free misty Yixian conifer lakeshore; no snow or modern grass.",
+          "Constraints: localized crest correction only. Keep all limbs, fingers, toes, tails, faces, breath plumes, body outlines, and silhouettes unobscured. No text, logo, signature, or watermark.",
+          "Avoid: any triangular sawtooth head row, separate spikes, horns, beads, plates, tall crest, or paired crests; changing the animals' number, size, anatomy, positions, direction, or patterns; hiding fingers or feet; adding or removing limbs; cropped or forked tails; flight feathers, wings, tail fans, sickle claws, mammalian fur, snow, frost, other animals, interaction, hunting, blood, family or pack implication, text, logo, watermark."
+        ]
+      },
+      "review": {
+        "reviewedAt": "2026-08-02T12:24:15.220Z",
+        "method": "Original-size corrected-draft inspection of both heads and ridges, four hands, four feet, two pelvis-tail joins, separated silhouettes, two breath plumes, filament texture, and background",
+        "result": "Approved for S6 anatomy-review growth comparison. Both animals are complete and separated with corrected continuous crests, readable developed arms and feet, complete tails, simple filaments, and distinct breath plumes. The pairing is not promoted as evidence of family, pack, or cooperative behavior."
+      }
+    }
+  },
+  "rejectedAttempts": [
+    {
+      "role": "identity-anatomy",
+      "callId": "exec-1cd294cb-a1d5-4d5a-aea2-b27721a9863e",
+      "generatedAt": "2026-08-02T12:09:41.296Z",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fc23c-dd1f-7d73-bd40-d8513fd76799/exec-1cd294cb-a1d5-4d5a-aea2-b27721a9863e.png",
+      "sha256": "BA57C26A0F931942D15ECFD926F611FF6C46757BFD3EF125B555AF82463A3309",
+      "copiedToProject": false,
+      "reason": "Rejected before project copying because the crest became a repeated triangular saw-toothed row and the breath cue was weak."
+    },
+    {
+      "role": "identity-anatomy",
+      "callId": "exec-49dc526e-0293-4c33-b7b2-0cb16d5fb261",
+      "generatedAt": "2026-08-02T12:11:11.141Z",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fc23c-dd1f-7d73-bd40-d8513fd76799/exec-49dc526e-0293-4c33-b7b2-0cb16d5fb261.png",
+      "sha256": "7EF987D0D1CA303EE0EDCB01C8A414066BF18DE57F8DF2E4D82FD1168F20418E",
+      "copiedToProject": false,
+      "reason": "Rejected before project copying because bead-like repeated crest projections remained after the first correction."
+    },
+    {
+      "role": "interaction",
+      "callId": "exec-bb81d71a-dd3b-4a17-ac18-fa4f7e92fd6a",
+      "generatedAt": "2026-08-02T12:12:56.078Z",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fc23c-9e01-7142-abca-b01a92f6d325/exec-bb81d71a-dd3b-4a17-ac18-fa4f7e92fd6a.png",
+      "sha256": "C3D0CED26C4518888763B2255C2585FC1017B9399EB1C59B0B60B535D670AC3A",
+      "bytes": 3391984,
+      "copiedToProject": false,
+      "reason": "Rejected before project copying because the small animal read as a theropod and the requested minimal dark rusty-red-brown feather cue was unclear."
+    },
+    {
+      "role": "social-growth-defense",
+      "callId": "exec-71f75ab6-ff04-4974-ac99-50d664118c8b",
+      "generatedAt": "2026-08-02T12:11:52.170Z",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fc23c-ba59-7542-84c5-3555bba8a455/exec-71f75ab6-ff04-4974-ac99-50d664118c8b.png",
+      "sha256": "FD2548ACB6AABF9E3C213471D370A059A7708BAF34F48196CC706461E49A84A6",
+      "bytes": 3097517,
+      "copiedToProject": false,
+      "reason": "Rejected before project copying because the adult retained a discrete triangular saw-toothed crest row."
+    }
+  ]
+}

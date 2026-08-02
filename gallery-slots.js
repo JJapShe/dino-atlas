@@ -3191,6 +3191,30 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "sihetun-yixian-tuff-lake-margin",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/yutyrannus-huali-cold-dawn-breath-threefinger-anatomy-imagegen-v1.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "phenotype": "canonical-a",
+      "habitatKey": "sihetun-yixian-tuff-lake-margin",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/yutyrannus-huali-cold-breath-bloodfleck-unnamed-herbivore-hunt-ecology-imagegen-v1.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "phenotype": "canonical-a",
+      "habitatKey": "sihetun-yixian-tuff-lake-margin",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/yutyrannus-huali-cold-lakemargin-adult-subadult-growth-ecology-imagegen-v1.png",
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "phenotype": "canonical-a",
+      "habitatKey": "sihetun-yixian-tuff-lake-margin",
+      "expectedKind": "anatomy review"
     }
   ],
   "spinosaurus-aegyptiacus": [
