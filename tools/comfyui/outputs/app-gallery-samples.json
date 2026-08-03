@@ -1,6 +1,6 @@
 {
   "taxa": 133,
-  "images": 1738,
+  "images": 1740,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -4633,6 +4633,14 @@
         "source": "assets/dinosaurs/tyrannosaurus-rex-dawn-channel-crossing-ecology-imagegen-v1.png",
         "variant": "새벽 얕은 수로 횡단 생태 이미지 생성 v1",
         "src": "assets/dinosaurs/tyrannosaurus-rex-dawn-channel-crossing-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "ecosystem scene review",
+        "title": "충돌 뒤 흐려지는 헬크리크의 하늘",
+        "body": "상부 헬크리크에서 알려진 티라노사우루스와 에드몬토사우루스를 아주 낮은 지평선 아래 서로 반대 방향으로 멀리 분리하고, 넓고 어두운 하늘을 주인공으로 둔 생태 탭 전용 복원입니다. 두 종이 충돌 뒤 같은 순간·장소에 있었다거나 서로를 보며 달아났다는 뜻은 아니며, 창백한 원반은 충돌 천체가 아니라 먼지에 흐려진 태양입니다. 장면 축척에서 손가락·발굽이 작게 보이므로 종 대표나 해부 슬롯으로 승격하지 않습니다.",
+        "source": "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-annectens-kpg-dim-sky-separated-context-imagegen-v1.png",
+        "variant": "K-Pg 먼지 하늘 분리 동물상 이미지 생성 v1",
+        "src": "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-annectens-kpg-dim-sky-separated-context-imagegen-v1.png"
       }
     ],
     "yutyrannus-huali": [
@@ -11747,6 +11755,14 @@
         "source": "assets/dinosaurs/edmontosaurus-annectens-petrol-celadon-russet-pattern-imagegen-v3.png",
         "variant": "페트롤 셀라돈 벽돌빛 무늬 이미지 생성 v3",
         "src": "assets/dinosaurs/edmontosaurus-annectens-petrol-celadon-russet-pattern-imagegen-v3.png"
+      },
+      {
+        "kind": "ecosystem scene review",
+        "title": "충돌 뒤 흐려지는 헬크리크의 하늘",
+        "body": "상부 헬크리크에서 알려진 에드몬토사우루스와 티라노사우루스를 아주 낮은 지평선 아래 서로 반대 방향으로 멀리 분리하고, 넓고 어두운 하늘을 주인공으로 둔 생태 탭 전용 복원입니다. 두 종이 충돌 뒤 같은 순간·장소에 있었다거나 서로를 보며 달아났다는 뜻은 아니며, 창백한 원반은 충돌 천체가 아니라 먼지에 흐려진 태양입니다. 장면 축척에서 미튼형 앞손과 뒷발굽이 작게 보이므로 종 대표나 해부 슬롯으로 승격하지 않습니다.",
+        "source": "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-annectens-kpg-dim-sky-separated-context-imagegen-v1.png",
+        "variant": "K-Pg 먼지 하늘 분리 동물상 이미지 생성 v1",
+        "src": "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-annectens-kpg-dim-sky-separated-context-imagegen-v1.png"
       }
     ],
     "thescelosaurus-neglectus": [

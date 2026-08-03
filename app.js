@@ -10016,6 +10016,23 @@ const generatedImageSamples = {
       variant: "구형 두 손가락 전신 비교 이미지 생성 v1",
       src: "assets/dinosaurs/tyrannosaurus-rex-twofinger-imagegen-v1.png",
     },
+    {
+      kind: "ecosystem scene review",
+      title: "충돌 뒤 흐려지는 헬크리크의 하늘",
+      body: "상부 헬크리크에서 알려진 티라노사우루스와 에드몬토사우루스를 아주 낮은 지평선 아래 서로 반대 방향으로 멀리 분리하고, 넓고 어두운 하늘을 주인공으로 둔 생태 탭 전용 복원입니다. 두 종이 충돌 뒤 같은 순간·장소에 있었다거나 서로를 보며 달아났다는 뜻은 아니며, 창백한 원반은 충돌 천체가 아니라 먼지에 흐려진 태양입니다. 장면 축척에서 손가락·발굽이 작게 보이므로 종 대표나 해부 슬롯으로 승격하지 않습니다.",
+      source: "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-annectens-kpg-dim-sky-separated-context-imagegen-v1.png",
+      variant: "K-Pg 먼지 하늘 분리 동물상 이미지 생성 v1",
+      src: "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-annectens-kpg-dim-sky-separated-context-imagegen-v1.png",
+      ecosystemSceneId: "tyrannosaurus-edmontosaurus-kpg-dim-sky",
+      sourceAttribution: "OpenAI built-in image generation; project-owned taxon references and project-generated composition source only",
+      licenseRecord: "Generated project asset; external research supplied factual constraints only",
+      generationPromptRecord: "tools/comfyui/kpg-dim-sky-ecosystem-scene-20260803.json#prompts/correction",
+      generationSeed: "not exposed by generator",
+      generationWorkflow: "OpenAI built-in prompt-to-image followed by local content correction; Triceratops removed after upper-Hell-Creek taxonomic audit",
+      reviewStatus: "scene-scale anatomy, ecology, composition and responsive review supported; published for ecosystem use only",
+      metadataRecord: "tools/comfyui/kpg-dim-sky-ecosystem-scene-20260803.json",
+      representativeEligible: false,
+    },
   ],
   "yutyrannus-huali": [
     {
@@ -18302,6 +18319,23 @@ const generatedImageSamples = {
       phenotype: "canonical-a",
       habitatKey: "hell-creek-lance-fluvial-forest",
     },
+    {
+      kind: "ecosystem scene review",
+      title: "충돌 뒤 흐려지는 헬크리크의 하늘",
+      body: "상부 헬크리크에서 알려진 에드몬토사우루스와 티라노사우루스를 아주 낮은 지평선 아래 서로 반대 방향으로 멀리 분리하고, 넓고 어두운 하늘을 주인공으로 둔 생태 탭 전용 복원입니다. 두 종이 충돌 뒤 같은 순간·장소에 있었다거나 서로를 보며 달아났다는 뜻은 아니며, 창백한 원반은 충돌 천체가 아니라 먼지에 흐려진 태양입니다. 장면 축척에서 미튼형 앞손과 뒷발굽이 작게 보이므로 종 대표나 해부 슬롯으로 승격하지 않습니다.",
+      source: "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-annectens-kpg-dim-sky-separated-context-imagegen-v1.png",
+      variant: "K-Pg 먼지 하늘 분리 동물상 이미지 생성 v1",
+      src: "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-annectens-kpg-dim-sky-separated-context-imagegen-v1.png",
+      ecosystemSceneId: "tyrannosaurus-edmontosaurus-kpg-dim-sky",
+      sourceAttribution: "OpenAI built-in image generation; project-owned taxon references and project-generated composition source only",
+      licenseRecord: "Generated project asset; external research supplied factual constraints only",
+      generationPromptRecord: "tools/comfyui/kpg-dim-sky-ecosystem-scene-20260803.json#prompts/correction",
+      generationSeed: "not exposed by generator",
+      generationWorkflow: "OpenAI built-in prompt-to-image followed by local content correction; Triceratops removed after upper-Hell-Creek taxonomic audit",
+      reviewStatus: "scene-scale anatomy, ecology, composition and responsive review supported; published for ecosystem use only",
+      metadataRecord: "tools/comfyui/kpg-dim-sky-ecosystem-scene-20260803.json",
+      representativeEligible: false,
+    },
   ],
   "thescelosaurus-neglectus": [
     {
@@ -21969,6 +22003,10 @@ const ecosystemDiversityTagLabels = Object.freeze({
   "trace-only": "흔적만 표시",
   "parallel-rhythm": "평행 보행 리듬",
   "diagonal-crossing": "대각선 교차",
+  "sky-dominant": "하늘 중심",
+  "low-horizon": "낮은 지평선",
+  "outward-axis": "바깥 방향 분리",
+  "asymmetric-void": "비대칭 빈 공간",
 });
 
 function getEcosystemParticipantCertaintyLabel(value) {
@@ -26195,7 +26233,7 @@ const visualVariationProfiles = {
     pattern: "목과 옆구리의 끊어진 이끼 얼룩, 작은 구리색 반점, 엉덩이의 희미한 눈무늬와 낮은 대비 꼬리 띠; 모든 장면을 갈색 broadside로 반복하지 않음",
     texture: "작은 다각형 비늘, 두개골의 조금 굵은 비늘과 낮은 눈뒤 돌기, 무광 각질 발톱, 젖은 실트나 마른 모래가 부분적으로 묻은 발",
     anatomy: "옆에서 깊고 뒤쪽이 매우 넓은 두개골과 좁아지는 주둥이, 닫힌 입의 입술, 매우 작은 두 손가락 앞다리 두 개, 세 주 발가락을 가진 뒷다리 두 개, 한 개의 완전한 꼬리",
-    avoid: "타르보사우루스식 길고 좁은 머리, 알로사우루스식 눈물뼈 뿔과 긴 세 손가락 팔, 악어처럼 계속 노출된 이빨, 무거운 전신 깃털, 숨거나 융합된 발, 네 발 이상, 잘린 꼬리, 두 갈래 꼬리, 동물끼리 겹친 상처 장면",
+    avoid: "타르보사우루스식 길고 좁은 머리, 알로사우루스식 눈물뼈 뿔과 긴 세 손가락 팔, 악어처럼 계속 노출된 이빨, 무거운 전신 깃털, 숨거나 융합된 발, 네 발 이상, 잘린 꼬리, 두 갈래 꼬리, 동물끼리 겹친 상처 장면. K-Pg 하늘 장면의 창백한 태양을 운석으로 바꾸거나 두 동물을 같은 방향의 추격·집단 도주로 묶지 않으며, 하늘 중심 구도를 일반 갤러리에 반복하거나 대표로 승격하지 않음",
   },
   "yutyrannus-huali": {
     color: "대표는 아이보리·차가운 회백색 바탕에 슬레이트 회색과 낮은 채도의 회갈색 패치, 옅은 목·배; 변이는 더 큰 애시화이트 면과 차콜빛 끊긴 등 안장으로 구분합니다. S5의 주둥이·목 소량 적갈색 얼룩을 포함해 모든 색·보호색·혈흔 위치는 직접 증거가 없는 가설입니다.",
@@ -26492,7 +26530,7 @@ const visualVariationProfiles = {
     pattern: "대표형의 낮은 대비 옆구리 얼룩과 꼬리 띠, 변이형의 어두운 세로 번짐과 엉덩이 띠를 사용하되 모든 장면에 같은 줄무늬 공식을 복제하지 않습니다.",
     texture: "1~4mm 고운 자갈무늬 비늘, 얇고 주름진 옆구리 피부, 목·몸통을 잇는 부드러운 살성 중앙 능선, 꼬리의 촘촘한 한 줄 가시, 쐐기형 발굽과 살성 뒤꿈치 패드",
     anatomy: "길고 낮은 무볏 두개골, 넓은 닫힌 무치 부리, 깊은 몸통, 두 미튼형 앞손, 각 세 쐐기형 발굽을 가진 두 뒷발, 한 끝으로 이어지는 긴 꼬리를 갖춘 E. annectens입니다.",
-    avoid: "관형·골질 머리 볏, 들소·낙타형 거대 어깨 혹, 골질 피부 돛, 성긴 거대 판타지 가시, 벌어진 도마뱀 앞손과 날카로운 앞발톱, 뒷발의 두 개·네 개 이상 발굽, 코뿔소·코끼리형 발, 보이는 이빨, 빠지거나 여분인 팔다리, 두 갈래 꼬리",
+    avoid: "관형·골질 머리 볏, 들소·낙타형 거대 어깨 혹, 골질 피부 돛, 성긴 거대 판타지 가시, 벌어진 도마뱀 앞손과 날카로운 앞발톱, 뒷발의 두 개·네 개 이상 발굽, 코뿔소·코끼리형 발, 보이는 이빨, 빠지거나 여분인 팔다리, 두 갈래 꼬리. K-Pg 하늘 장면의 창백한 태양을 운석으로 바꾸거나 티라노사우루스와 같은 방향의 추격·집단 도주로 묶지 않으며, 하늘 중심 구도를 일반 갤러리에 반복하거나 대표로 승격하지 않음",
   },
   "thescelosaurus-neglectus": {
     color: "슬레이트 청회색 등, 옅은 크림색 배, 차분한 벽돌 붉은색 얼굴과 엉덩이 패치, 어두운 꼬리 띠, 변형용 선택적 청록색 볼 반점",
@@ -27180,10 +27218,10 @@ const generationRouteGuides = {
   },
   "tyrannosaurus-rex": {
     focus: "타르보사우루스보다 깊고 뒤쪽이 매우 넓은 티라노사우루스 두개골, 정확히 두 손가락인 매우 작은 양팔, 발마다 세 주 발가락, 한 개의 온전한 꼬리, 닫힌 입의 입술과 비늘 외피",
-    route: "새 헬크리크 대표 이미지를 체형 컨트롤로 사용하고 단독 무늬·수로 횡단·밝은 해부 장면을 역할별로 생성합니다. 승격 전에는 원본 크기의 머리, 양손, 양발, 꼬리를 각각 잘라 확인하며 다중 개체 장면은 두 동물의 몸과 꼬리가 물길로 분리된 경우에만 낮은 우선순위 참고로 둡니다.",
+    route: "새 헬크리크 대표 이미지를 체형 컨트롤로 사용하고 단독 무늬·수로 횡단·밝은 해부 장면을 역할별로 생성합니다. 승격 전에는 원본 크기의 머리, 양손, 양발, 꼬리를 각각 잘라 확인하며 다중 개체 장면은 두 동물의 몸과 꼬리가 물길로 분리된 경우에만 낮은 우선순위 참고로 둡니다. K-Pg 장면은 낮은 지평선과 비대칭 빈 하늘을 주인공으로 한 생태 탭 전용 구도이며, 같은 날·장소·반응을 주장하지 않고 대표 후보에서 제외합니다.",
     control: "assets/dinosaurs/tyrannosaurus-rex-hell-creek-deepskull-twofinger-representative-imagegen-v1.png",
-    pass: "옆에서 깊고 뒤쪽이 넓으며 주둥이로 좁아지는 두개골 | 닫힌 입의 입술 | 가슴에 붙은 매우 작은 앞다리 정확히 두 개 | 읽히는 손마다 정확히 두 손가락 | 강한 뒷다리 정확히 두 개 | 발마다 세 주 발가락 | 골반에서 한 끝으로 이어지는 꼬리 하나 | 작은 다각형 비늘 | 머리·양손·양발·꼬리 원본 크롭 통과",
-    reject: "타르보사우루스식 길고 얕은 머리, 알로사우루스식 뿔 또는 긴 팔, 세 손가락이나 갈라진 손, 가려진 발·융합된 발가락·여분 다리, 악어처럼 계속 노출된 이빨, 무거운 전신 깃털, 잘리거나 두 갈래인 꼬리, 접촉·피·겹침 때문에 개체 수와 해부 구조를 셀 수 없는 장면이면 탈락",
+    pass: "옆에서 깊고 뒤쪽이 넓으며 주둥이로 좁아지는 두개골 | 닫힌 입의 입술 | 가슴에 붙은 매우 작은 앞다리 정확히 두 개 | 읽히는 손마다 정확히 두 손가락 | 강한 뒷다리 정확히 두 개 | 발마다 세 주 발가락 | 골반에서 한 끝으로 이어지는 꼬리 하나 | 작은 다각형 비늘 | 머리·양손·양발·꼬리 원본 크롭 통과 | 생태 탭 장면은 고유 compositionKey와 넓은 빈 공간으로 상대 동물과 분리",
+    reject: "타르보사우루스식 길고 얕은 머리, 알로사우루스식 뿔 또는 긴 팔, 세 손가락이나 갈라진 손, 가려진 발·융합된 발가락·여분 다리, 악어처럼 계속 노출된 이빨, 무거운 전신 깃털, 잘리거나 두 갈래인 꼬리, 접촉·피·겹침 때문에 개체 수와 해부 구조를 셀 수 없는 장면이면 탈락. K-Pg 장면은 운석·화구·폭발·불길·추격·동시 집단 도주로 바꾸거나 종 대표로 승격하면 탈락",
   },
   "yutyrannus-huali": {
     focus: "이셴층의 대형 초기 티라노사우루스상과, 큰 외비공과 거친 정중선 볏, 발달한 세 손가락 양팔, 세 주 발가락 양발, 한 꼬리, 길고 단순한 전신 필라멘트 깃털; 회백색 보호색은 가설",
@@ -27467,10 +27505,10 @@ const generationRouteGuides = {
   },
   "edmontosaurus-annectens": {
     focus: "후기 마스트리히트절 E. annectens의 길고 낮은 무볏 두개골, 넓은 무치 부리, 랜스층 미라로 확인된 연속 살성 등선·한 줄 꼬리 가시·앞손과 뒷발의 발굽형 연조직",
-    route: "2025년 랜스층 미라의 등선·꼬리 가시·발굽 연조직과 Campione & Evans의 성장별 두개골 비율을 먼저 적용합니다. 새 대표 v1을 체형·대표 배색 기준으로 사용하고 역할마다 시점·날씨·수로 위치를 바꾸되, 두 미튼형 앞손, 세 쐐기형 발굽의 두 뒷발, 한 꼬리를 잠급니다. 세로 쌍 장면은 상대 동물과 빈 지면으로 분리하고 추격·접촉을 단정하지 않으며, 엉덩이 앞에는 얇고 연속된 연조직 능선만, 작은 꼬리 돌기열은 엉덩이 뒤에만 둡니다.",
+    route: "2025년 랜스층 미라의 등선·꼬리 가시·발굽 연조직과 Campione & Evans의 성장별 두개골 비율을 먼저 적용합니다. 새 대표 v1을 체형·대표 배색 기준으로 사용하고 역할마다 시점·날씨·수로 위치를 바꾸되, 두 미튼형 앞손, 세 쐐기형 발굽의 두 뒷발, 한 꼬리를 잠급니다. 세로 쌍 장면은 상대 동물과 빈 지면으로 분리하고 추격·접촉을 단정하지 않으며, 엉덩이 앞에는 얇고 연속된 연조직 능선만, 작은 꼬리 돌기열은 엉덩이 뒤에만 둡니다. K-Pg 장면은 낮은 지평선과 비대칭 빈 하늘을 주인공으로 한 생태 탭 전용 구도이며, 같은 날·장소·반응을 주장하지 않고 대표 후보에서 제외합니다.",
     control: "assets/dinosaurs/edmontosaurus-annectens-lance-softcrest-hooves-representative-imagegen-v1.png",
-    pass: "길고 낮은 무볏 두개골 | 넓고 닫힌 무치 오리주둥이 | 목·몸통의 연속적인 낮은 살성 중앙 능선 | 엉덩이 뒤 하나의 촘촘한 꼬리 가시열 | 정확히 두 미튼형 앞손과 발굽 끝 접지 | 정확히 두 뒷다리와 각 뒷발 세 넓은 쐐기형 발굽·뒤꿈치 패드 | 한 끝의 온전한 꼬리 | 헬크리크·랜스 곡류 수로·포인트바·침엽수·양치류·이끼·낮은 속씨식물",
-    reject: "관형·골질 머리 볏, 들소·낙타형 거대 혹, 골질 피부 돛, 성긴 거대 꼬리 가시, 벌어진 도마뱀 손가락이나 날카로운 앞발톱, 뒷발의 발굽 수 오류, 코끼리·코뿔소형 발, 빠지거나 여분인 팔다리, 중복 발, 두 갈래·잘린 꼬리가 있으면 탈락.",
+    pass: "길고 낮은 무볏 두개골 | 넓고 닫힌 무치 오리주둥이 | 목·몸통의 연속적인 낮은 살성 중앙 능선 | 엉덩이 뒤 하나의 촘촘한 꼬리 가시열 | 정확히 두 미튼형 앞손과 발굽 끝 접지 | 정확히 두 뒷다리와 각 뒷발 세 넓은 쐐기형 발굽·뒤꿈치 패드 | 한 끝의 온전한 꼬리 | 헬크리크·랜스 곡류 수로·포인트바·침엽수·양치류·이끼·낮은 속씨식물 | 생태 탭 장면은 고유 compositionKey와 넓은 빈 공간으로 상대 동물과 분리",
+    reject: "관형·골질 머리 볏, 들소·낙타형 거대 혹, 골질 피부 돛, 성긴 거대 꼬리 가시, 벌어진 도마뱀 손가락이나 날카로운 앞발톱, 뒷발의 발굽 수 오류, 코끼리·코뿔소형 발, 빠지거나 여분인 팔다리, 중복 발, 두 갈래·잘린 꼬리가 있으면 탈락. K-Pg 장면은 운석·화구·폭발·불길·추격·동시 집단 도주로 바꾸거나 종 대표로 승격하면 탈락",
   },
   "thescelosaurus-neglectus": {
     focus: "작고 튼튼한 헬크리크 조반류, 낮고 좁은 부리형 머리, 뻣뻣한 꼬리, 강한 뒷다리, 하드로사우르와 후두류 드리프트 방지",

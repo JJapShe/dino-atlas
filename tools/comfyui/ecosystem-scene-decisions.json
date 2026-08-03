@@ -337,6 +337,36 @@
         "status": "published",
         "eligible": true
       }
+    },
+    "tyrannosaurus-edmontosaurus-kpg-dim-sky": {
+      "asset": "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-annectens-kpg-dim-sky-separated-context-imagegen-v1.png",
+      "compositionKey": "portrait-lowupward-kpg-skyfield-separated-fauna",
+      "representativeEligible": false,
+      "labelBoundary": "The pale disc is the obscured Sun, not the impactor; the animals are formation-fauna context and are not shown chasing or escaping together.",
+      "gates": {
+        "anatomy": {
+          "status": "supported",
+          "evidence": "tools/comfyui/kpg-dim-sky-ecosystem-scene-20260803.json#review/anatomy",
+          "scope": "scene-scale one Edmontosaurus plus one Tyrannosaurus; small digits are non-diagnostic"
+        },
+        "ecology": {
+          "status": "supported",
+          "evidence": "tools/comfyui/kpg-dim-sky-ecosystem-scene-20260803.json#review/ecology",
+          "scope": "upper Hell Creek fauna plus generalized post-impact atmospheric effects; exact shared moment, response and timing not claimed"
+        },
+        "responsive": {
+          "status": "supported",
+          "evidence": "2026-08-03 root QA passed at 1440x1000, 390x844, 320x700 and 844x390: card/lightbox decode, contain, no overflow, isolated filtering, tap-hide and image-only pinch"
+        },
+        "publication": {
+          "status": "published",
+          "evidence": "anatomy, ecology, composition, label-boundary and responsive gates supported; representative promotion prohibited"
+        }
+      },
+      "publication": {
+        "status": "published",
+        "eligible": true
+      }
     }
   }
 }

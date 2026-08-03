@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "tyrannosaurus-edmontosaurus-kpg-dim-sky",
+  "title": "충돌 뒤 흐려지는 헬크리크의 하늘",
+  "useCase": "scientific-educational ecosystem environment-event scene",
+  "audienceAgeRange": "5-14",
+  "projectAsset": "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-annectens-kpg-dim-sky-separated-context-imagegen-v1.png",
+  "seed": "not exposed by generator",
+  "generator": "OpenAI built-in image generation",
+  "copyrightSafety": {
+    "status": "project-owned generated asset",
+    "note": "The approved image and its source candidate are new built-in generations. Only project-owned Dino Atlas images were used as taxon and composition references. Research papers supplied factual constraints only; no external artwork or paper figure pixels were used."
+  },
+  "participants": [
+    {
+      "taxonId": "edmontosaurus-annectens",
+      "scientificName": "Edmontosaurus annectens",
+      "count": 1,
+      "sceneRole": "upper Hell Creek formation-fauna context",
+      "exactBoundaryDayPlacement": false
+    },
+    {
+      "taxonId": "tyrannosaurus-rex",
+      "scientificName": "Tyrannosaurus rex",
+      "count": 1,
+      "sceneRole": "upper Hell Creek formation-fauna context",
+      "exactBoundaryDayPlacement": false
+    }
+  ],
+  "asset": {
+    "sourceGenerationPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-5def78a1-c39d-410e-a3d2-45e7c1d77d2f.png",
+    "approvedCorrectionPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-f0708efb-4cf8-44d4-b27e-c8510b1c1981.png",
+    "projectPath": "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-annectens-kpg-dim-sky-separated-context-imagegen-v1.png",
+    "width": 1122,
+    "height": 1402,
+    "orientation": "portrait",
+    "bytes": 1950997,
+    "sha256": "da07f508ff58d26a9323f3b54de5fd74fcca48c300c85bf6e1053398f54f3ad6"
+  },
+  "composition": {
+    "compositionKey": "portrait-lowupward-kpg-skyfield-separated-fauna",
+    "family": "skyfield-negative-space",
+    "camera": "extremely low upward-looking portrait with the horizon confined to the lower quarter",
+    "spatialSignature": "a dim particulate sky fills roughly seventy percent of the frame while a small Edmontosaurus remains at lower center-left and a separated Tyrannosaurus occupies lower right on an outward-facing axis",
+    "variationIntent": "make the environmental sky and asymmetric empty field the main subject instead of repeating side-profile lineups, high-oblique rivers, foreground-versus-background confrontations, S-curves, mist layers or centered action"
+  },
+  "referenceImages": [
+    {
+      "path": "assets/dinosaurs/triceratops-horridus-imagegen-v51-source-candidate.png",
+      "role": "initial source-generation identity reference only",
+      "resultBoundary": "The resulting Triceratops was removed completely after a stratigraphic audit found that the exact T. horridus label was not conservative for an uppermost Hell Creek boundary scene."
+    },
+    {
+      "path": "assets/dinosaurs/edmontosaurus-annectens-lance-softcrest-hooves-representative-imagegen-v1.png",
+      "role": "Edmontosaurus anatomy and identity only"
+    },
+    {
+      "path": "assets/dinosaurs/tyrannosaurus-rex-hell-creek-deepskull-twofinger-representative-imagegen-v1.png",
+      "role": "Tyrannosaurus anatomy and identity only"
+    },
+    {
+      "path": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-5def78a1-c39d-410e-a3d2-45e7c1d77d2f.png",
+      "role": "project-generated composition source for the local removal correction",
+      "resultBoundary": "Metadata provenance only; the app never references this staging path."
+    }
+  ],
+  "workflow": {
+    "provider": "OpenAI built-in image_gen",
+    "mode": "prompt-to-image followed by local content correction",
+    "model": "built-in tool model not exposed",
+    "seed": "not exposed by generator",
+    "generationDate": "2026-08-03",
+    "sourceCallId": "exec-5def78a1-c39d-410e-a3d2-45e7c1d77d2f",
+    "approvedCallId": "exec-f0708efb-4cf8-44d4-b27e-c8510b1c1981",
+    "rejectedMacroCallId": "exec-22f7a743-7489-4986-ac84-5f9212f71f13",
+    "iterationHistory": [
+      {
+        "callId": "exec-5def78a1-c39d-410e-a3d2-45e7c1d77d2f",
+        "status": "rejected-as-direct-catalog-candidate",
+        "reason": "The skyfield composition passed, but exact Triceratops horridus placement was not conservative for the uppermost Hell Creek boundary scene."
+      },
+      {
+        "callId": "exec-f0708efb-4cf8-44d4-b27e-c8510b1c1981",
+        "status": "approved-for-ecosystem-scene-scale-review",
+        "reason": "The Triceratops was completely removed, leaving exactly one separated Edmontosaurus and one Tyrannosaurus under a unique sky-dominant composition."
+      },
+      {
+        "callId": "exec-22f7a743-7489-4986-ac84-5f9212f71f13",
+        "status": "rejected",
+        "reason": "The alternative macro-evidence composition was unique, but the generated impact spherules read as glossy millimetre-to-centimetre beads rather than 0.3-1.4 mm particles."
+      }
+    ]
+  },
+  "prompts": {
+    "source": "CREATE A NEW COPYRIGHT-SAFE, ANATOMY-LED EDUCATIONAL PALEOART SCENE. Use reference image 1 only for Triceratops horridus identity, reference 2 only for Edmontosaurus annectens identity, and reference 3 only for Tyrannosaurus rex identity. Do not copy any reference camera, pose, background, lighting, or full composition. VERTICAL 4:5 COMPOSITION, designed for both phone and desktop. This is a cautious hypothetical Hell Creek environmental scene during the early atmospheric disturbance after the Chicxulub impact, NOT the impact moment. Do not show the asteroid, a fireball, crater, explosion, shockwave, tsunami, volcano, lava, wall of fire, or burning animals. The environment is the subject: a vast dim amber-charcoal particulate sky fills about 70 percent of the frame, with diffuse obscured sunlight, fine suspended dust, and gust-bent ferns and conifer branches. Keep the horizon very low, near the bottom quarter. No S-curve river, no opposed banks, no concentric terrain, no misty depth layers, no framing log, no overhead view. EXACTLY THREE DINOSAURS TOTAL, one of each species and no others. All three are fully separated by broad empty ground, at different horizontal positions and slightly different depths, forming a loose broken triangle rather than a lineup or confrontation. No eye contact, no chase, no attack, no family or herd behavior, no blood, no wounds, no carcass. LOWER LEFT: exactly one Triceratops horridus, small in frame, rear three-quarter walking calmly toward the left edge. Preserve a low long four-legged body, exactly four legs, one tail, two long brow horns, one short nasal horn, closed beak, and a solid skull-attached frill without holes or a spike crown. LOWER CENTER FARTHER BACK: exactly one Edmontosaurus annectens, smaller, rear three-quarter walking away on a separate patch. Preserve one long low crestless duck-billed head, a broad closed beak, modest low soft-tissue midline ridge rather than a bony crest or sail, exactly four limbs, and one long tail. LOWER RIGHT: exactly one Tyrannosaurus rex, small-to-medium in frame, rear three-quarter moving toward the right edge without looking at the herbivores. Preserve a deep broad tyrannosaur skull, lips over closed teeth, exactly two strong hind legs, two tiny chest-held arms with exactly two fingers on each readable hand, and one continuous heavy tail. CAMERA AND SPATIAL GRAMMAR: extremely low upward-looking wide camera, skyfield-negative-space composition, the three animals occupy only the bottom 25 to 30 percent and none exceeds 24 percent of frame height. Asymmetric empty sky dominates. Natural museum-grade digital paleoart, restrained non-sensational colors, readable silhouettes, complete bodies inside frame, no text, labels, borders, diagrams, logos, or watermark.",
+    "correction": "STRICT LOCAL CONTENT CORRECTION of reference image 1. Preserve its vertical 4:5 canvas, enormous amber-charcoal dusty sky, tiny obscured sun, low horizon, restrained color, ground texture, conifers, low upward camera, skyfield-negative-space composition, and the existing separated Edmontosaurus and Tyrannosaurus positions as closely as possible. REMOVE the entire Triceratops at lower left, including its head, horns, frill, body, all four legs, tail, shadow, and any ghost fragments. Reconstruct that entire lower-left area as empty open Hell Creek floodplain with low ferns, broken twigs, and undisturbed ground consistent with the rest of the scene. Do not replace it with any animal, skull, carcass, track, rock shaped like an animal, or large tree. FINAL EXACT ANIMAL COUNT: TWO DINOSAURS TOTAL AND NO OTHERS. 1) Exactly one Edmontosaurus annectens remains in the lower center-left far midground, clearly separated, rear three-quarter walking calmly toward the left/away. Use reference image 2 only for identity: long low crestless duck-billed head, broad closed beak, modest low soft-tissue midline ridge rather than a bony crest or sail, exactly four limbs, one continuous tail. It must not look back at the predator. 2) Exactly one Tyrannosaurus rex remains in the lower right, rear three-quarter walking calmly toward the right edge. Use reference image 3 only for identity: deep broad tyrannosaur skull, closed lips over teeth, exactly two strong hind legs, exactly two tiny chest-held arms with exactly two fingers on each readable hand, one continuous heavy tail. It must not look at or approach the Edmontosaurus. Keep broad empty ground between both animals. No chase, attack, eye contact, threat posture, herd, family, running, blood, wounds, carcass, asteroid, meteor, fireball, crater, explosion, shockwave, tsunami, volcano, lava, flames, or burning forest. The sky is an educational hypothetical post-impact atmospheric disturbance, not the impact moment. No text, labels, borders, logos, or watermark.",
+    "rejectedMacroSummary": "Ground-skimming macro evidence scene with millimetric spherules, a shallow puddle, one distant Edmontosaurus and one Tyrannosaurus; rejected because the particles rendered as oversized glossy beads."
+  },
+  "evidence": {
+    "sources": [
+      {
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0016574",
+        "use": "upper Hell Creek census recording Tyrannosaurus and Edmontosaurus"
+      },
+      {
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0025186",
+        "use": "Edmontosaurus annectens late Maastrichtian taxonomic context"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41561-023-01290-4",
+        "use": "fine silicate dust and modelled post-impact darkness, cooling and photosynthetic effects"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41586-022-04446-1",
+        "use": "boreal spring timing and distinction between immediate effects and the following impact winter"
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4104892/",
+        "use": "stratigraphic Triceratops morphospecies change supporting removal of the exact T. horridus label from this boundary scene"
+      }
+    ],
+    "supportedClaim": "Tyrannosaurus and Edmontosaurus belong to the upper Hell Creek fauna, and the Chicxulub impact produced atmospheric dust and other agents capable of strongly reducing sunlight and altering climate.",
+    "claimBoundary": "The exact shared location, date, survival interval, sky colour, dust density, visible Sun and animal responses are reconstructed. The scene does not show the impactor or prove that these individuals witnessed, fled, interacted, or survived a specific interval after the impact."
+  },
+  "license": {
+    "type": "generated-project-asset",
+    "label": "Generated project asset",
+    "copyrightSafety": "new built-in generations using project-owned references only",
+    "use": "Dino Atlas ecosystem catalog subject to separate anatomy, ecology, composition and responsive gates"
+  },
+  "review": {
+    "overall": "approved for published ecosystem environment-event use; never representative",
+    "anatomy": {
+      "status": "passed-for-scene-scale",
+      "verdict": "Independent original-size review found exactly one Edmontosaurus and one Tyrannosaurus with separated heads, bodies, hind limbs and tails and no duplicated or fused body parts. Small digits are not treated as diagnostic evidence."
+    },
+    "ecology": {
+      "status": "passed-with-temporal-and-behavior-boundary",
+      "verdict": "The fauna and post-impact atmospheric effects are supported separately; their combination, spacing, poses, sky and timing remain an explicit educational reconstruction."
+    },
+    "composition": {
+      "status": "passed",
+      "verdict": "Sky-dominant negative space, an extremely low horizon and two outward-facing lower-zone animals form a new visual grammar unlike the existing eleven catalog scenes."
+    },
+    "contentSafety": {
+      "status": "passed",
+      "verdict": "No impactor, explosion, fire, pursuit, attack, injury, blood, carcass, panic, text or watermark is visible."
+    },
+    "rejectedAlternatives": {
+      "initialThreeTaxonCandidate": "rejected because exact T. horridus placement was not conservative at the boundary",
+      "macroSpheruleCandidate": "rejected because the particles were visibly oversized and bead-like"
+    },
+    "representativeEligible": false,
+    "responsive": {
+      "status": "passed",
+      "evidence": "2026-08-03 root QA passed at 1440x1000, 390x844, 320x700 and 844x390: card/lightbox decode at 1122x1402, contain, no horizontal overflow, isolated search/lightbox, tap-hide and image-only pinch."
+    },
+    "publication": "published for ecosystem catalog only; representative promotion prohibited"
+  }
+}
