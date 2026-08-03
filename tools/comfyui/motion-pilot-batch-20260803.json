@@ -9,6 +9,8 @@
     "representativePromotion": "prohibited",
     "galleryPromotion": "prohibited",
     "autoplay": "prohibited",
+    "biologicalMotion": "prohibited in M0",
+    "sceneRoles": ["solo", "ecology-activity", "interspecies-interaction"],
     "publicRequires": ["motion", "responsive", "publication"]
   },
   "copyrightSafety": {
@@ -43,6 +45,7 @@
   "samples": {
     "yutyrannus-huali-cold-breath-ambient-m0-v1": {
       "taxonId": "yutyrannus-huali",
+      "sceneRole": "solo",
       "sourcePoster": "assets/dinosaurs/yutyrannus-huali-yixian-white-mottled-feathered-representative-imagegen-v1.png",
       "projectAsset": "assets/motion/yutyrannus-huali-white-feather-cold-breath-ambient-m0-v1.mp4",
       "motionClass": "environment-only",
@@ -69,6 +72,7 @@
     },
     "tyrannosaurus-rex-ground-mist-ambient-m0-v1": {
       "taxonId": "tyrannosaurus-rex",
+      "sceneRole": "solo",
       "sourcePoster": "assets/dinosaurs/tyrannosaurus-rex-hell-creek-deepskull-twofinger-representative-imagegen-v1.png",
       "projectAsset": "assets/motion/tyrannosaurus-rex-hell-creek-ground-mist-ambient-m0-v1.mp4",
       "motionClass": "environment-only",
@@ -95,6 +99,7 @@
     },
     "brachiosaurus-altithorax-skylight-ambient-m0-v1": {
       "taxonId": "brachiosaurus-altithorax",
+      "sceneRole": "solo",
       "sourcePoster": "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-fullbody-imagegen-v18.png",
       "projectAsset": "assets/motion/brachiosaurus-altithorax-high-shoulder-skylight-ambient-m0-v1.mp4",
       "motionClass": "environment-only",

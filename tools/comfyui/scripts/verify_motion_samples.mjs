@@ -8,12 +8,20 @@ import { fileURLToPath } from "node:url";
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..", "..", "..");
 const CATALOG_PATH = path.join(ROOT, "motion-samples.js");
-const METADATA_PATH = path.join(ROOT, "tools", "comfyui", "motion-pilot-batch-20260803.json");
+const METADATA_RELATIVE_PATHS = [
+  "tools/comfyui/motion-pilot-batch-20260803.json",
+  "tools/comfyui/motion-scene-role-batch-20260803.json",
+];
+const METADATA_PATHS = METADATA_RELATIVE_PATHS.map((relativePath) => path.join(ROOT, ...relativePath.split("/")));
 const EXPECTED_IDS = [
   "yutyrannus-huali-cold-breath-ambient-m0-v1",
   "tyrannosaurus-rex-ground-mist-ambient-m0-v1",
   "brachiosaurus-altithorax-skylight-ambient-m0-v1",
+  "psittacosaurus-mongoliensis-water-shimmer-solo-m0-v1",
+  "maiasaura-peeblesorum-nesting-ground-pollen-ecology-m0-v1",
+  "velociraptor-protoceratops-dustfront-interaction-m0-v1",
 ];
+const ALLOWED_SCENE_ROLES = new Set(["solo", "ecology-activity", "interspecies-interaction"]);
 const errors = [];
 const warnings = [];
 
@@ -172,24 +180,39 @@ function calculateMotionQa(first, second, width, effectZone, protectedExclusionZ
 }
 
 const catalogSource = fs.readFileSync(CATALOG_PATH, "utf8");
-const metadataSource = fs.readFileSync(METADATA_PATH, "utf8");
+const metadataSources = METADATA_PATHS.map((metadataPath) => fs.readFileSync(metadataPath, "utf8"));
 const sandbox = { window: {} };
 new vm.Script(catalogSource, { filename: CATALOG_PATH }).runInNewContext(sandbox);
 const catalog = sandbox.window.motionSampleCatalog;
-const metadata = JSON.parse(metadataSource);
+const metadataBatches = metadataSources.map((source, index) => ({
+  relativePath: METADATA_RELATIVE_PATHS[index],
+  metadata: JSON.parse(source),
+}));
 
 if (!catalog || typeof catalog !== "object") throw new Error("motionSampleCatalog was not exported");
 if (/\.codex[\\/]generated_images/i.test(catalogSource)) fail("catalog: generator-area path leak");
-if (/\.codex[\\/]generated_images/i.test(metadataSource)) fail("metadata: generator-area path leak");
-if (catalog.schemaVersion !== 1 || metadata.schemaVersion !== 1) fail("schemaVersion must be 1");
-if (catalog.policy?.tier !== "M0" || metadata.policy?.tier !== "M0") fail("policy tier must be M0");
-for (const policy of [catalog.policy, metadata.policy]) {
+for (const [index, metadataSource] of metadataSources.entries()) {
+  if (/\.codex[\\/]generated_images/i.test(metadataSource)) {
+    fail(`${METADATA_RELATIVE_PATHS[index]}: generator-area path leak`);
+  }
+}
+if (catalog.schemaVersion !== 1 || metadataBatches.some(({ metadata }) => metadata.schemaVersion !== 1)) {
+  fail("schemaVersion must be 1");
+}
+if (catalog.policy?.tier !== "M0" || metadataBatches.some(({ metadata }) => metadata.policy?.tier !== "M0")) {
+  fail("policy tier must be M0");
+}
+for (const policy of [catalog.policy, ...metadataBatches.map(({ metadata }) => metadata.policy)]) {
   if (policy?.representativePromotion !== "prohibited") fail("representative promotion must be prohibited");
   if (policy?.galleryPromotion !== "prohibited") fail("gallery promotion must be prohibited");
   if (policy?.autoplay !== "prohibited") fail("autoplay must be prohibited");
+  if (policy?.biologicalMotion !== "prohibited in M0") fail("biological motion must be prohibited in M0");
+  if (JSON.stringify(policy?.sceneRoles) !== JSON.stringify([...ALLOWED_SCENE_ROLES])) {
+    fail("sceneRoles policy must match the M0 allowlist");
+  }
 }
 
-const motionQaThresholds = metadata.workflow?.motionQaThresholds;
+const motionQaThresholds = metadataBatches[0]?.metadata?.workflow?.motionQaThresholds;
 const requiredMotionQaThresholds = [
   "significantChannelDifferenceFloor",
   "significantChangeEnergyInsideEffectZoneMinPercent",
@@ -201,6 +224,11 @@ if (!motionQaThresholds || requiredMotionQaThresholds.some(
   (field) => !Number.isFinite(motionQaThresholds[field]) || motionQaThresholds[field] < 0,
 )) {
   fail("metadata: complete non-negative motion QA thresholds are required");
+}
+for (const { relativePath, metadata } of metadataBatches.slice(1)) {
+  if (JSON.stringify(metadata.workflow?.motionQaThresholds) !== JSON.stringify(motionQaThresholds)) {
+    fail(`${relativePath}: motion QA thresholds must match the primary M0 batch`);
+  }
 }
 
 const samples = Array.isArray(catalog.samples) ? catalog.samples : [];
@@ -221,6 +249,9 @@ for (const sample of samples) {
   if (sample.tier !== "M0" || sample.motionClass !== "environment-only") {
     fail(`${owner}: must remain an M0 environment-only sample`);
   }
+  if (!ALLOWED_SCENE_ROLES.has(sample.sceneRole) || !isNonEmptyString(sample.sceneRoleLabel)) {
+    fail(`${owner}: valid sceneRole and sceneRoleLabel are required`);
+  }
   if (sample.representativeEligible !== false || sample.galleryEligible !== false) {
     fail(`${owner}: representative and gallery eligibility must both be false`);
   }
@@ -240,7 +271,8 @@ for (const sample of samples) {
   const posterPath = projectPath(sample.poster, `${owner}: poster`);
   if (posterPath && !fs.existsSync(posterPath)) fail(`${owner}: missing poster ${sample.poster}`);
   const videoPath = projectPath(sample.src, `${owner}: video`);
-  const record = metadata.samples?.[sample.id];
+  const metadataBatch = metadataBatches.find(({ metadata }) => metadata.samples?.[sample.id]);
+  const record = metadataBatch?.metadata?.samples?.[sample.id];
   if (!record) {
     fail(`${owner}: missing metadata record`);
     continue;
@@ -248,7 +280,8 @@ for (const sample of samples) {
   if (record.sourcePoster !== sample.poster || record.projectAsset !== sample.src) {
     fail(`${owner}: catalog and metadata paths differ`);
   }
-  if (record.motionClass !== sample.motionClass || record.review?.representativeEligible !== false
+  if (record.motionClass !== sample.motionClass || record.sceneRole !== sample.sceneRole
+    || record.review?.representativeEligible !== false
     || record.review?.galleryEligible !== false) {
     fail(`${owner}: catalog and metadata role gates differ`);
   }
@@ -256,7 +289,7 @@ for (const sample of samples) {
     fail(`${owner}: prompt and motion-layer records are required`);
   }
   const metadataRecord = sample.provenance?.metadataRecord || "";
-  if (metadataRecord !== `tools/comfyui/motion-pilot-batch-20260803.json#/samples/${sample.id}`) {
+  if (metadataRecord !== `${metadataBatch.relativePath}#/samples/${sample.id}`) {
     fail(`${owner}: invalid metadataRecord pointer`);
   }
   for (const gate of ["anatomy", "motion", "responsive", "publication"]) {
@@ -274,7 +307,7 @@ for (const sample of samples) {
     if (sample.review?.motion?.status !== "supported" || sample.review?.responsive?.status !== "supported") {
       fail(`${owner}: published without motion and responsive support`);
     }
-    if (!isNonEmptyString(metadata.workflow?.commands?.[sample.id])) {
+    if (!isNonEmptyString(metadataBatch.metadata.workflow?.commands?.[sample.id])) {
       fail(`${owner}: published without an exact workflow command`);
     }
     const motionQa = record.motionQa;
@@ -403,7 +436,7 @@ for (const sample of samples) {
           calculated.significantChangeEnergyInsideEffectZonePercent -
           recorded.significantChangeEnergyInsideEffectZonePercent
         ) > 0.05) {
-        fail(`${owner}: recorded motionQa metrics do not match decoded comparison frames`);
+        fail(`${owner}: recorded motionQa metrics do not match decoded comparison frames (${JSON.stringify(calculated)})`);
       }
       if (calculated.significantChangeEnergyInsideEffectZonePercent <
         motionQaThresholds.significantChangeEnergyInsideEffectZoneMinPercent ||
@@ -416,8 +449,10 @@ for (const sample of samples) {
   }
 }
 
-const orphanMetadata = Object.keys(metadata.samples || {}).filter((id) => !ids.includes(id));
-if (orphanMetadata.length) fail(`metadata: orphan samples ${orphanMetadata.join(", ")}`);
+for (const { relativePath, metadata } of metadataBatches) {
+  const orphanMetadata = Object.keys(metadata.samples || {}).filter((id) => !ids.includes(id));
+  if (orphanMetadata.length) fail(`${relativePath}: orphan samples ${orphanMetadata.join(", ")}`);
+}
 
 const report = {
   schemaVersion: catalog.schemaVersion,

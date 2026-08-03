@@ -22647,9 +22647,12 @@ function getMotionSampleCatalog() {
   const isDraftPreview =
     ["localhost", "127.0.0.1"].includes(window.location.hostname) &&
     new URLSearchParams(window.location.search).get("motionPreview") === "draft";
+  const allowedSceneRoles = new Set(["solo", "ecology-activity", "interspecies-interaction"]);
   const hasSafeRole = (sample) =>
     sample?.tier === "M0" &&
     sample?.motionClass === "environment-only" &&
+    allowedSceneRoles.has(sample?.sceneRole) &&
+    typeof sample?.sceneRoleLabel === "string" && sample.sceneRoleLabel.length > 0 &&
     sample?.representativeEligible === false &&
     sample?.galleryEligible === false &&
     isSafeMotionPosterSource(sample?.poster) &&
@@ -22691,7 +22694,7 @@ function renderMotionSampleCard(sample, playbackPreference) {
       : "자동재생 없음 · 눌러서 5초 재생";
   const published = sample.review?.publication?.status === "published";
   return `
-    <article class="motion-sample-card ${published ? "is-published" : "is-draft"}" data-motion-sample="${escapeHtml(sample.id)}">
+    <article class="motion-sample-card ${published ? "is-published" : "is-draft"}" data-motion-sample="${escapeHtml(sample.id)}" data-motion-scene-role="${escapeHtml(sample.sceneRole)}">
       <div class="motion-sample-media">
         <video
           id="motionVideo-${escapeHtml(sample.id)}"
@@ -22710,6 +22713,7 @@ function renderMotionSampleCard(sample, playbackPreference) {
           눌러서 재생
         </button>
         <span class="motion-tier-badge">M0 · 환경만 움직임</span>
+        <span class="motion-scene-badge">${escapeHtml(sample.sceneRoleLabel)}</span>
       </div>
       <div class="motion-sample-body">
         <div class="motion-sample-title-row">
@@ -22721,8 +22725,9 @@ function renderMotionSampleCard(sample, playbackPreference) {
         </div>
         <p>${escapeHtml(sample.description)}</p>
         <dl class="motion-sample-facts">
+          <div><dt>장면 유형</dt><dd>${escapeHtml(sample.sceneRoleLabel)}</dd></div>
           <div><dt>움직이는 부분</dt><dd>${escapeHtml(sample.motionLabel)}</dd></div>
-          <div><dt>고정 규칙</dt><dd>공룡 몸체·카메라 고정</dd></div>
+          <div><dt>고정 규칙</dt><dd>공룡·알·카메라 고정</dd></div>
         </dl>
         <p class="motion-playback-note" data-motion-status role="status" aria-live="polite" aria-atomic="true">${escapeHtml(playbackNote)}</p>
         <div class="motion-sample-footer">
@@ -22781,9 +22786,11 @@ function renderMotionSamples() {
     return;
   }
   const playbackPreference = getMotionPlaybackPreference();
+  const sceneRoleLabels = [...new Set(samples.map((sample) => sample.sceneRoleLabel))];
+  const sceneRoleSummary = sceneRoleLabels.join(" · ");
   summary.textContent = isDraftPreview
-    ? `로컬 초안 ${samples.length}개 · 파일과 검수 상태를 확인하는 미리보기입니다.`
-    : `검수 완료 샘플 ${samples.length}개 · 모두 클릭할 때만 재생됩니다.`;
+    ? `로컬 초안 포함 ${samples.length}개 · ${sceneRoleSummary} 장면을 비교하는 미리보기입니다.`
+    : `검수 완료 샘플 ${samples.length}개 · ${sceneRoleSummary} · 모두 클릭할 때만 재생됩니다.`;
   grid.innerHTML = samples.map((sample) => renderMotionSampleCard(sample, playbackPreference)).join("");
   syncMotionSamplePlaybackEvents();
 }
