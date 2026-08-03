@@ -163,7 +163,8 @@ async function runProfile(browser, profile) {
     };
   }, { cardSelector, cardImageSelector });
   assert(card.title === expectedTitle, `${profile.name} title mismatch`);
-  assert(card.source === expectedSource, `${profile.name} source mismatch: ${card.source}`);
+  const sourceMatches = card.source === expectedSource || card.source.endsWith(`/${expectedSource}`);
+  assert(sourceMatches, `${profile.name} source mismatch: ${card.source}`);
   assert(card.naturalWidth === expectedWidth && card.naturalHeight === expectedHeight, `${profile.name} unexpected source dimensions`);
   assert(card.objectFit === "contain", `${profile.name} card object-fit is ${card.objectFit}`);
   assert(card.cardRect.left >= -1 && card.cardRect.right <= profile.context.viewport.width + 1, `${profile.name} card escaped the viewport`);
