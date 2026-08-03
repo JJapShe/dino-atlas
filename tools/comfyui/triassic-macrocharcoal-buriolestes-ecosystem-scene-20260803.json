@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "buriolestes-candelaria-macrocharcoal-wildfire-composite",
+  "title": "숯 기록에서 출발한 칸델라리아 산불 풍경",
+  "useCase": "scientific-educational ecosystem environment-event scene",
+  "audienceAgeRange": "5-14",
+  "projectAsset": "assets/dinosaurs/buriolestes-schultzi-candelaria-macrocharcoal-wildfire-composite-ecology-imagegen-v1.png",
+  "seed": "not exposed by generator",
+  "generator": "OpenAI built-in image generation",
+  "copyrightSafety": {
+    "status": "project-owned generated asset",
+    "note": "The approved image is a new built-in generation. Two project-owned Buriolestes images were used only as anatomy and identity references. Research papers supplied factual constraints only; no external artwork, site photograph or paper-figure pixels were used."
+  },
+  "participants": [
+    {
+      "taxonId": "buriolestes-schultzi",
+      "scientificName": "Buriolestes schultzi",
+      "count": 1,
+      "sceneRole": "separate-locality sequence-fauna context",
+      "certainty": "Buriol outcrop occurrence high; presence at the cited Pinheiro Machado charcoal locality is unsupported and not claimed"
+    }
+  ],
+  "asset": {
+    "sourceGenerationPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-15577188-552d-4ec0-a08c-c2f4c174a599.png",
+    "projectPath": "assets/dinosaurs/buriolestes-schultzi-candelaria-macrocharcoal-wildfire-composite-ecology-imagegen-v1.png",
+    "width": 1536,
+    "height": 1024,
+    "orientation": "landscape",
+    "bytes": 3581621,
+    "sha256": "6c9c782bca45cbe75d39809ad3b4a93b5442302fbc80800e072156ccfa07c325"
+  },
+  "composition": {
+    "compositionKey": "landscape-charcoal-foreground-diagonal-runoff",
+    "family": "charcoal-evidence-mosaic",
+    "camera": "low-to-mid oblique landscape habitat-observation view",
+    "spatialSignature": "a dark triangular macro-charcoal field occupies the lower-left foreground, a wet red-mud runoff strip crosses diagonally through the center, and one small Buriolestes remains isolated in the right midground",
+    "variationIntent": "make the evidence-bearing ground mosaic the subject instead of repeating centered broadside animals, opposed riverbanks, pursuit, high-oblique rings, mist layers, vertical skyfields or trackway plates",
+    "repeatGuard": "Do not reuse the lower-left charcoal wedge plus diagonal runoff plus small right-midground animal grammar for another taxon."
+  },
+  "workflow": {
+    "provider": "OpenAI built-in image_gen",
+    "mode": "prompt-to-image with two anatomy-only local references",
+    "model": "built-in tool model not exposed",
+    "seed": "not exposed by generator",
+    "generationDate": "2026-08-03",
+    "sourceCallId": "exec-15577188-552d-4ec0-a08c-c2f4c174a599",
+    "generationCalls": 1,
+    "iterationHistory": [
+      {
+        "callId": "exec-15577188-552d-4ec0-a08c-c2f4c174a599",
+        "status": "approved-for-ecosystem-scene-review",
+        "reason": "Independent original-size anatomy and age-safety review passed exactly one Buriolestes and non-graphic macro-charcoal aftermath; independent composition review found a distinct evidence-mosaic grammar."
+      }
+    ]
+  },
+  "referenceImages": [
+    {
+      "path": "assets/dinosaurs/buriolestes-schultzi-faunivorous-sauropodomorph-imagegen-v1.png",
+      "role": "Buriolestes anatomy and identity only",
+      "copyRestrictions": "do not copy pose, background, camera, lighting, color arrangement or composition"
+    },
+    {
+      "path": "assets/dinosaurs/buriolestes-schultzi-bipedal-early-sauropodomorph-identity-imagegen-v2.png",
+      "role": "Buriolestes anatomy and identity only",
+      "copyRestrictions": "do not copy pose, background, camera, lighting, color arrangement or composition"
+    }
+  ],
+  "prompt": "CREATE A NEW COPYRIGHT-SAFE, ANATOMY-LED EDUCATIONAL PALEOART SCENE FOR AGES 5–14.\n\nUse both supplied project-owned Buriolestes schultzi images ONLY as anatomy and species-identity references. Do not copy their pose, background, lighting, camera, color arrangement, or composition. Create a genuinely new landscape composition.\n\nSCIENTIFIC AND CLAIM BOUNDARY:\nThis is a cautious generalized Candelária Sequence post-wildfire educational reconstruction from Carnian southern Brazil. Macro-charcoal supports recurrent wildfire somewhere in the broader sequence, while Buriolestes is known from the Buriol site; DO NOT imply this exact individual witnessed a documented fire, or that the charcoal and fossil came from the same outcrop or event. Show an AFTERMATH habitat only.\n\nLANDSCAPE 3:2 OR 16:10, designed to crop safely on desktop and mobile. The ENVIRONMENT is the main subject. Use a low-to-mid oblique camera looking across a patchwork floodplain, not a broadside animal portrait.\n\nCOMPOSITION FAMILY: AFTERMATH MOSAIC.\n- A large triangular wedge of dark, matte, broken charcoal-like Triassic plant fragments enters from the LOWER LEFT foreground and occupies roughly 35% of the frame.\n- A narrow wet red-mud refuge strip cuts DIAGONALLY from lower center toward the upper left/center, creating a strong crossing axis rather than a horizontal river.\n- Pale post-rain haze and patches of surviving or recovering Triassic vegetation occupy the distant LEFT and upper background.\n- Put EXACTLY ONE small Buriolestes on the RIGHT-THIRD MIDGROUND, no more than 16–20% of frame height, walking calmly on a diagonal away-and-right axis. It must not be centered, posed as a side-profile specimen, staring at camera, fleeing, hunting, or interacting.\n- Leave broad negative space between the charcoal foreground and the animal. The dinosaur should reward discovery rather than dominate the first glance.\n- No S-curve river, no opposed-bank confrontation, no centered lineup, no symmetrical framing, no mist-layer procession, no high overhead concentric rings, no sky-dominant composition, no framing log, no close-up portrait.\n\nBURI OLESTES ANATOMY:\nExactly one complete Buriolestes schultzi and no other animals. Preserve a small, light, bipedal early sauropodomorph with a comparatively large LONG, LOW, TOOTHED skull—not a blunt herbivore head; a moderately long neck, light torso, exactly TWO small forelimbs held free of the ground, exactly TWO long hind limbs, visible non-hoofed feet with three principal forward toes and a small inner toe only if naturally readable, and exactly ONE long continuous balancing tail connected cleanly to the pelvis and fully inside frame. Hands are incompletely known, so keep them small and readable without emphasizing or claiming a diagnostic finger count. No extra, fused, hidden, or duplicate limbs; no split or cropped tail; no raptor sickle claw; no feathers; no crest; no horns; no tyrannosaur head or tiny tyrannosaur arms; no quadrupedal prosauropod posture; no huge giraffe neck.\n\nHABITAT AND FIRE EVIDENCE:\nCharcoal must look like irregular matte charred wood and plant fragments mixed into damp sediment, NOT glossy beads, gemstones, coal briquettes, modern lumber, or glowing embers. No active flame wall, burning trees, smoke plume, lava, volcano, meteor, explosion, scorched animal, panic, injury, blood, carcass, or sensational disaster imagery. Use plausible Triassic conifers, seed ferns and horsetail-like plants; no grass, flowers, palms, modern broadleaf forest, or modern animals.\n\nSTYLE:\nNatural museum-grade digital paleoart, restrained earthy red, charcoal, muted olive and pale grey palette, subtle atmospheric light after rain, crisp enough to read the diagonal habitat structure and the small animal silhouette. Complete body inside frame. No text, labels, borders, diagram arrows, logos, or watermark.",
+  "evidence": {
+    "sources": [
+      {
+        "url": "https://doi.org/10.1016/j.jsames.2017.12.018",
+        "use": "macro-charcoal in two basal sandstone-siltstone facies and recurrent wildfire interpretation for the Pinheiro Machado/Arroio Moirão Graben Candelária Sequence section"
+      },
+      {
+        "url": "https://doi.org/10.1016/j.cub.2016.09.040",
+        "use": "Buriolestes original description and Buriol locality"
+      },
+      {
+        "url": "https://www.app.pan.pl/archive/published/app62/app003692017.html",
+        "use": "Buriol outcrop and Candelária Sequence stratigraphic context"
+      }
+    ],
+    "supportedClaim": "Macro-charcoal supports recurrent wildfire during deposition of one Candelária Sequence section, and Buriolestes is known from the separate Buriol outcrop within the broader Carnian sequence context.",
+    "claimBoundary": "This is a Carnian sequence- and region-scale educational composite. Buriolestes is not recorded at the cited charcoal locality. The exact bed correlation, fire age, same event, shared place, postfire interval, wet runoff, charcoal freshness, recovering vegetation, pose and behavior are unresolved or reconstructed. The scene does not claim that this animal witnessed, fled or survived immediately after a documented wildfire."
+  },
+  "license": {
+    "type": "generated-project-asset",
+    "label": "Generated project asset",
+    "copyrightSafety": "new built-in generation using project-owned anatomy references only",
+    "use": "Dino Atlas ecosystem catalog subject to separate anatomy, ecology, composition and responsive gates"
+  },
+  "review": {
+    "overall": "approved for published ecosystem environment-event use; never representative",
+    "anatomy": {
+      "status": "passed-for-scene-scale",
+      "verdict": "Independent original-size review found exactly one Buriolestes with one head, a long low skull profile, moderate neck, light bipedal body, two separated forelimbs, two hind limbs, naturally grounded feet and one continuous tail. Tiny digits are non-diagnostic and the scene is not an anatomy plate."
+    },
+    "ecology": {
+      "status": "passed-with-locality-and-event-boundary",
+      "verdict": "The macro-charcoal and Buriolestes occurrences are supported separately; their different localities, lack of bed correlation, shared frame, postfire interval and all animal behavior are explicit reconstruction."
+    },
+    "composition": {
+      "status": "passed",
+      "verdict": "The charcoal-heavy lower-left triangle, central diagonal runoff, three-material ground mosaic and small right-midground animal create a unique environment-first composition family. The animal is near-broadside at small scale, so this grammar must not be reused for later scenes."
+    },
+    "contentSafety": {
+      "status": "passed",
+      "verdict": "No active flame, smoke plume, panic, pursuit, injury, blood, carcass, gore, text or watermark is visible; independent review found it suitable for ages 5–14."
+    },
+    "representativeEligible": false,
+    "responsive": {
+      "status": "passed",
+      "evidence": "2026-08-03 root QA passed at 1440x1000, 390x844, 320x700 and 844x390: 1536x1024 card/lightbox decode, contain, no horizontal overflow, isolated filtering, tap-hide and image-only pinch."
+    },
+    "publication": "published ecosystem catalog only",
+    "publicationNote": "Anatomy, ecology, composition, locality boundary, age-safety and responsive gates passed; representative promotion remains prohibited."
+  }
+}

@@ -1,6 +1,6 @@
 {
   "taxa": 133,
-  "images": 1740,
+  "images": 1741,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -1153,6 +1153,14 @@
         "source": "assets/dinosaurs/buriolestes-schultzi-slate-rust-pattern-imagegen-v1.png",
         "variant": "슬레이트-러스트 무늬 이미지 생성 v1",
         "src": "assets/dinosaurs/buriolestes-schultzi-slate-rust-pattern-imagegen-v1.png"
+      },
+      {
+        "kind": "ecosystem scene review",
+        "title": "숯 기록에서 출발한 칸델라리아 산불 풍경",
+        "body": "피녜이루 마샤두의 숯 화석 기록과 별도 상주앙두폴레지니 부리올 산지의 부리올레스테스를 시대·지역 수준으로 묶은 생태 탭 전용 교육 복원입니다. 좌하단 숯 전경, 중앙 대각선 물길, 우측 중경의 작은 개체가 만드는 환경 중심 모자이크 구도로 기존 측면 전신·대치·강변 장면과 구분합니다. 같은 노두·층준·화재나 직접 목격·도주·화재 직후 생존을 뜻하지 않으며, 손발 세부가 작은 장면 축척이므로 종 대표나 해부 슬롯으로 승격하지 않습니다.",
+        "source": "assets/dinosaurs/buriolestes-schultzi-candelaria-macrocharcoal-wildfire-composite-ecology-imagegen-v1.png",
+        "variant": "칸델라리아 거시 숯 지역 합성 생태 이미지 생성 v1",
+        "src": "assets/dinosaurs/buriolestes-schultzi-candelaria-macrocharcoal-wildfire-composite-ecology-imagegen-v1.png"
       }
     ],
     "bagualosaurus-agudoensis": [

@@ -6,8 +6,14 @@ const expectedTitle = process.argv[4] || "충돌 뒤 흐려지는 헬크리크�
 const expectedSource =
   process.argv[5] ||
   "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-annectens-kpg-dim-sky-separated-context-imagegen-v1.png";
+const expectedWidth = Number(process.argv[6] || 1122);
+const expectedHeight = Number(process.argv[7] || 1402);
 const chromeExecutable =
   process.env.CHROME_PATH || "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
+
+if (!Number.isInteger(expectedWidth) || expectedWidth <= 0 || !Number.isInteger(expectedHeight) || expectedHeight <= 0) {
+  throw new Error("Expected image dimensions must be positive integers");
+}
 
 const profiles = [
   { name: "desktop", context: { viewport: { width: 1440, height: 1000 } } },
@@ -158,7 +164,7 @@ async function runProfile(browser, profile) {
   }, { cardSelector, cardImageSelector });
   assert(card.title === expectedTitle, `${profile.name} title mismatch`);
   assert(card.source === expectedSource, `${profile.name} source mismatch: ${card.source}`);
-  assert(card.naturalWidth === 1122 && card.naturalHeight === 1402, `${profile.name} unexpected source dimensions`);
+  assert(card.naturalWidth === expectedWidth && card.naturalHeight === expectedHeight, `${profile.name} unexpected source dimensions`);
   assert(card.objectFit === "contain", `${profile.name} card object-fit is ${card.objectFit}`);
   assert(card.cardRect.left >= -1 && card.cardRect.right <= profile.context.viewport.width + 1, `${profile.name} card escaped the viewport`);
   assert(card.bodyOverflowX <= 1, `${profile.name} card page overflowed ${card.bodyOverflowX}px`);
@@ -186,7 +192,7 @@ async function runProfile(browser, profile) {
     };
   });
   assert(lightbox.title === expectedTitle && lightbox.count === "1 / 1", `${profile.name} lightbox scope mismatch`);
-  assert(lightbox.naturalWidth === 1122 && lightbox.naturalHeight === 1402, `${profile.name} lightbox source did not decode`);
+  assert(lightbox.naturalWidth === expectedWidth && lightbox.naturalHeight === expectedHeight, `${profile.name} lightbox source did not decode`);
   assert(lightbox.objectFit === "contain", `${profile.name} lightbox object-fit is ${lightbox.objectFit}`);
   assert(lightbox.imageRect.left >= lightbox.stageRect.left - 1 && lightbox.imageRect.right <= lightbox.stageRect.right + 1, `${profile.name} lightbox image escaped horizontally`);
   assert(lightbox.imageRect.top >= lightbox.stageRect.top - 1 && lightbox.imageRect.bottom <= lightbox.stageRect.bottom + 1, `${profile.name} lightbox image escaped vertically`);

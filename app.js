@@ -5735,6 +5735,23 @@ const generatedImageSamples = {
       variant: "폭풍 뒤 경계 자세 가설 이미지 생성 v1",
       src: "assets/dinosaurs/buriolestes-schultzi-stormbreak-alert-defense-ecology-imagegen-v1.png",
     },
+    {
+      kind: "ecosystem scene review",
+      title: "숯 기록에서 출발한 칸델라리아 산불 풍경",
+      body: "피녜이루 마샤두의 숯 화석 기록과 별도 상주앙두폴레지니 부리올 산지의 부리올레스테스를 시대·지역 수준으로 묶은 생태 탭 전용 교육 복원입니다. 좌하단 숯 전경, 중앙 대각선 물길, 우측 중경의 작은 개체가 만드는 환경 중심 모자이크 구도로 기존 측면 전신·대치·강변 장면과 구분합니다. 같은 노두·층준·화재나 직접 목격·도주·화재 직후 생존을 뜻하지 않으며, 손발 세부가 작은 장면 축척이므로 종 대표나 해부 슬롯으로 승격하지 않습니다.",
+      source: "assets/dinosaurs/buriolestes-schultzi-candelaria-macrocharcoal-wildfire-composite-ecology-imagegen-v1.png",
+      variant: "칸델라리아 거시 숯 지역 합성 생태 이미지 생성 v1",
+      src: "assets/dinosaurs/buriolestes-schultzi-candelaria-macrocharcoal-wildfire-composite-ecology-imagegen-v1.png",
+      ecosystemSceneId: "buriolestes-candelaria-macrocharcoal-wildfire-composite",
+      sourceAttribution: "OpenAI built-in image generation; two project-owned Buriolestes identity references only",
+      licenseRecord: "Generated project asset; external research supplied factual constraints only",
+      generationPromptRecord: "tools/comfyui/triassic-macrocharcoal-buriolestes-ecosystem-scene-20260803.json#prompt",
+      generationSeed: "not exposed by generator",
+      generationWorkflow: "OpenAI built-in prompt-to-image followed by independent anatomy, composition, scientific-boundary and age-safety review",
+      reviewStatus: "scene-scale anatomy, ecology, composition, locality boundary and responsive review supported; published for ecosystem use only",
+      metadataRecord: "tools/comfyui/triassic-macrocharcoal-buriolestes-ecosystem-scene-20260803.json",
+      representativeEligible: false,
+    },
   ],
   "bagualosaurus-agudoensis": [
     {
@@ -22007,6 +22024,10 @@ const ecosystemDiversityTagLabels = Object.freeze({
   "low-horizon": "낮은 지평선",
   "outward-axis": "바깥 방향 분리",
   "asymmetric-void": "비대칭 빈 공간",
+  "charcoal-foreground": "숯화 식물 전경",
+  "diagonal-runoff": "대각선 물길",
+  "material-mosaic": "환경 재질 모자이크",
+  "small-context-animal": "작은 환경 맥락 동물",
 });
 
 function getEcosystemParticipantCertaintyLabel(value) {
@@ -26784,7 +26805,7 @@ const visualVariationProfiles = {
     pattern: "기본형의 작은 크림색 옆구리 반점과 끊어진 어두운 꼬리 띠, 녹슨 얼굴 마스크; 새벽 변이의 불규칙한 오팔색 옆구리 빗금과 고대비 꼬리 고리는 한 장에만 제한",
     texture: "각질성 이빨과 절제된 손발톱이 있는 고운 무광 자갈무늬 초기 용각형류 비늘; 비나 진흙은 발과 배 아래에만 국소적으로 반영",
     anatomy: "비교적 큰 길고 낮은 이빨 있는 두개골, 적당한 길이의 목, 가벼운 이족보행 몸, 두 앞다리, 두 긴 뒷다리, 세 주된 앞쪽 발가락과 작을 수 있는 안쪽 첫째 발가락, 한 개의 긴 균형 꼬리를 가진 카르니안 동물식성 초기 용각형류; 손가락 수는 보존 불확실",
-    avoid: "손가락 수를 종 진단처럼 과도하게 확정하는 표현, 일반 수각류/랩터 몸, 깃털, 볏, 뿔, 티라노사우루스식 거대 두개골이나 작은 팔, 뭉툭한 초식 머리, 랩터식 낫발톱, 숨은 발, 잘린 꼬리, 여분 팔다리, 직접 증거처럼 단정한 사회·공격 행동과 과한 유혈",
+    avoid: "손가락 수를 종 진단처럼 과도하게 확정하는 표현, 일반 수각류/랩터 몸, 깃털, 볏, 뿔, 티라노사우루스식 거대 두개골이나 작은 팔, 뭉툭한 초식 머리, 랩터식 낫발톱, 숨은 발, 잘린 꼬리, 여분 팔다리, 직접 증거처럼 단정한 사회·공격 행동과 과한 유혈. 거시 숯 장면은 피녜이루 마샤두 숯 산지와 부리올 산지를 동일시하거나 직접 목격·도주·화재 직후 생존을 주장하지 않고, 좌하단 숯 전경과 대각선 물길 모자이크를 다른 갤러리에 반복하거나 종 대표로 승격하지 않음",
   },
   "bagualosaurus-agudoensis": {
     color: "이끼빛 녹갈색 또는 청회색 등 안장 무늬, 따뜻한 올리브나 황토색 옆구리, 구리빛 뺨과 어깨 패치, 크림색 배",
@@ -27120,10 +27141,10 @@ const generationRouteGuides = {
   },
   "buriolestes-schultzi": {
     focus: "브라질 남부 카르니안 부리올레스테스, 동물식성 초기 용각형류, 비교적 큰 길고 낮은 이빨 두개골, 보존 불완전한 손, 세 주된 앞쪽 발가락, 수각류/랩터 드리프트 방지",
-    route: "triassic_southern_brazil_buriolestes_faunivorous_sauropodomorph_prompt_then_skull_limb_tail_review",
+    route: "triassic_southern_brazil_buriolestes_faunivorous_sauropodomorph_prompt_then_skull_limb_tail_review_then_macrocharcoal_composite_locality_boundary_gate",
     control: "assets/dinosaurs/buriolestes-schultzi-faunivorous-sauropodomorph-imagegen-v1.png",
     pass: "전신 구도 | 카르니안의 작은 동물식성 초기 용각형류 | 비교적 큰 길고 낮은 이빨 두개골 | 적당한 길이의 목 | 가벼운 이족보행 몸 | 두 앞다리 | 두 긴 뒷다리 | 세 주된 앞쪽 발가락과 작을 수 있는 안쪽 첫째 발가락 | 끝까지 이어지는 한 개의 긴 균형 꼬리 | 브라질 남부 붉은 지층의 계절성 하천 환경",
-    reject: "손가락 수를 확정 진단처럼 쓰거나 일반 수각류, 랩터, 티라노사우루스, 깃털 동물, 볏이나 뿔 있는 포식자, 뭉툭한 초식 머리 용각형류로 흐르는 경우, 낫발톱, 숨은 발, 잘린·갈라진 꼬리, 여분·융합 팔다리, 직접 증거처럼 단정한 사회·공격 행동이나 과한 유혈이 있으면 탈락.",
+    reject: "손가락 수를 확정 진단처럼 쓰거나 일반 수각류, 랩터, 티라노사우루스, 깃털 동물, 볏이나 뿔 있는 포식자, 뭉툭한 초식 머리 용각형류로 흐르는 경우, 낫발톱, 숨은 발, 잘린·갈라진 꼬리, 여분·융합 팔다리, 직접 증거처럼 단정한 사회·공격 행동이나 과한 유혈이 있으면 탈락. 거시 숯 장면에서 피녜이루 마샤두와 부리올 산지를 같은 노두·층준·화재로 합치거나, 직접 목격·도주·화재 직후 생존을 단정하거나, 숯 전경·대각선 물길 구도를 다시 복제하면 탈락.",
   },
   "bagualosaurus-agudoensis": {
     focus: "브라질 남부 후기 트라이아스기 바구알로사우루스, 튼튼한 초식성 초기 용각형류, 작고 뭉툭한 머리, 중간 길이 목, 부리올레스테스/거대 용각류 드리프트 방지",

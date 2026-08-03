@@ -367,6 +367,36 @@
         "status": "published",
         "eligible": true
       }
+    },
+    "buriolestes-candelaria-macrocharcoal-wildfire-composite": {
+      "asset": "assets/dinosaurs/buriolestes-schultzi-candelaria-macrocharcoal-wildfire-composite-ecology-imagegen-v1.png",
+      "compositionKey": "landscape-charcoal-foreground-diagonal-runoff",
+      "representativeEligible": false,
+      "labelBoundary": "The macro-charcoal locality near Pinheiro Machado and the Buriolestes-bearing Buriol outcrop are different localities; no shared bed, wildfire, direct witnessing, flight or immediate postfire survival is claimed.",
+      "gates": {
+        "anatomy": {
+          "status": "supported",
+          "evidence": "tools/comfyui/triassic-macrocharcoal-buriolestes-ecosystem-scene-20260803.json#review/anatomy",
+          "scope": "scene-scale one Buriolestes with paired forelimbs, paired hind limbs and one continuous tail; small digits are non-diagnostic"
+        },
+        "ecology": {
+          "status": "supported",
+          "evidence": "tools/comfyui/triassic-macrocharcoal-buriolestes-ecosystem-scene-20260803.json#review/ecology",
+          "scope": "Carnian sequence/region-scale composite of evidence from separate localities; exact bed, event, timing and behavior not claimed"
+        },
+        "responsive": {
+          "status": "supported",
+          "evidence": "2026-08-03 root QA passed at 1440x1000, 390x844, 320x700 and 844x390: 1536x1024 decode, contain, no overflow, isolated filtering, tap-hide and image-only pinch"
+        },
+        "publication": {
+          "status": "published",
+          "evidence": "anatomy, ecology, composition, locality boundary, age-safety and responsive gates supported; representative promotion prohibited"
+        }
+      },
+      "publication": {
+        "status": "published",
+        "eligible": true
+      }
     }
   }
 }
