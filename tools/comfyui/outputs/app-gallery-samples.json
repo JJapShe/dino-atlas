@@ -1,6 +1,6 @@
 {
   "taxa": 133,
-  "images": 1741,
+  "images": 1743,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -307,6 +307,14 @@
         "source": "assets/dinosaurs/eoraptor-lunensis-herrerasaurus-cancha-de-bochas-high-oblique-concentric-coexistence-imagegen-v1.png",
         "variant": "고각도 동심원 지형 공존 이미지 생성 v1",
         "src": "assets/dinosaurs/eoraptor-lunensis-herrerasaurus-cancha-de-bochas-high-oblique-concentric-coexistence-imagegen-v1.png"
+      },
+      {
+        "kind": "ecosystem scene review",
+        "title": "에오랍토르·크로모기사우루스 풍화 화산재 띠 층서 비교",
+        "body": "같은 칸차 데 보차스 층원에서 알려졌지만 같은 뼈층에서 함께 나온 것은 확인되지 않은 두 종을, 풍화되어 끊긴 오래된 화산재성 층이 드러난 가상 단면에 배치한 생태 갤러리 전용 층서 비교 복원입니다. 밝은 띠는 현재 분화나 내리는 화산재가 아니며, 같은 순간·같은 노두·직접 조우를 뜻하지 않습니다. 장면 축척의 손발과 원경 크로모기사우루스 머리·목·손은 종 대표 근거로 사용하지 않습니다.",
+        "source": "assets/dinosaurs/eoraptor-lunensis-chromogisaurus-cancha-de-bochas-weathered-ash-bank-stratigraphic-context-imagegen-v1.png",
+        "variant": "풍화 화산재 띠 층서 비교 이미지 생성 v1",
+        "src": "assets/dinosaurs/eoraptor-lunensis-chromogisaurus-cancha-de-bochas-weathered-ash-bank-stratigraphic-context-imagegen-v1.png"
       }
     ],
     "eodromaeus-murphi": [
@@ -1005,6 +1013,14 @@
         "source": "assets/dinosaurs/chromogisaurus-novasi-bluehour-reverse-pattern-imagegen-v2.png",
         "variant": "비 갠 블루아워 동일 무늬 이미지 생성 v2",
         "src": "assets/dinosaurs/chromogisaurus-novasi-bluehour-reverse-pattern-imagegen-v2.png"
+      },
+      {
+        "kind": "ecosystem scene review",
+        "title": "크로모기사우루스·에오랍토르 풍화 화산재 띠 층서 비교",
+        "body": "같은 칸차 데 보차스 층원에서 알려졌지만 같은 뼈층에서 함께 나온 것은 확인되지 않은 두 종을, 풍화되어 끊긴 오래된 화산재성 층이 드러난 가상 단면에 배치한 생태 갤러리 전용 층서 비교 복원입니다. 밝은 띠는 현재 분화나 내리는 화산재가 아니며, 같은 순간·같은 노두·직접 조우를 뜻하지 않습니다. 원경 크로모기사우루스의 머리·목·손과 장면 축척 손발은 종 대표 근거로 사용하지 않습니다.",
+        "source": "assets/dinosaurs/eoraptor-lunensis-chromogisaurus-cancha-de-bochas-weathered-ash-bank-stratigraphic-context-imagegen-v1.png",
+        "variant": "풍화 화산재 띠 층서 비교 이미지 생성 v1",
+        "src": "assets/dinosaurs/eoraptor-lunensis-chromogisaurus-cancha-de-bochas-weathered-ash-bank-stratigraphic-context-imagegen-v1.png"
       }
     ],
     "panphagia-protos": [

@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "eoraptor-chromogisaurus-cancha-de-bochas-weathered-ash-bank",
+  "title": "풍화된 화산재 띠가 드러난 칸차 데 보차스 층서 풍경",
+  "useCase": "scientific-educational ecosystem stratigraphic-comparison scene",
+  "audienceAgeRange": "5-14",
+  "projectAsset": "assets/dinosaurs/eoraptor-lunensis-chromogisaurus-cancha-de-bochas-weathered-ash-bank-stratigraphic-context-imagegen-v1.png",
+  "seed": "not exposed by generator",
+  "generator": "OpenAI built-in image generation",
+  "copyrightSafety": {
+    "status": "project-owned generated asset",
+    "note": "The approved image is a new built-in generation followed by a targeted built-in correction. Four project-owned taxon images were used only as anatomy and identity references, and the first generated candidate was used only as the correction target. Research papers supplied factual constraints only; no external artwork, site photograph, paper figure, or copyrighted paleoart pixels were used."
+  },
+  "participants": [
+    {
+      "taxonId": "eoraptor-lunensis",
+      "scientificName": "Eoraptor lunensis",
+      "count": 1,
+      "sceneRole": "near-field same-member stratigraphic comparison",
+      "certainty": "Cancha de Bochas Member occurrence high; exact bed, outcrop, position, color and simultaneous presence unsupported"
+    },
+    {
+      "taxonId": "chromogisaurus-novasi",
+      "scientificName": "Chromogisaurus novasi",
+      "count": 1,
+      "sceneRole": "distant same-member stratigraphic comparison",
+      "certainty": "Cancha de Bochas Member occurrence high; exact bed, outcrop, position, color and simultaneous presence unsupported; skull, neck and hand are comparative reconstruction"
+    }
+  ],
+  "asset": {
+    "sourceGenerationPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-fb2729b3-1fbb-4925-b26e-3f8d94f8642e.png",
+    "projectPath": "assets/dinosaurs/eoraptor-lunensis-chromogisaurus-cancha-de-bochas-weathered-ash-bank-stratigraphic-context-imagegen-v1.png",
+    "width": 1672,
+    "height": 941,
+    "orientation": "landscape",
+    "bytes": 3281881,
+    "sha256": "e140b999fd1c6c5c7e1f8be1962d96e1f0d68156caff28db7ef0ea4f590108bb"
+  },
+  "composition": {
+    "compositionKey": "landscape-raking-bankface-weathered-ash-lenses",
+    "family": "geology-led-lateral-section",
+    "camera": "low lateral raking view along a natural eroded bankface with the horizon constrained to the upper 15 percent",
+    "spatialSignature": "the weathered bankface fills the left and center, low-contrast altered-ash lenses cross the middle with erosion gaps, one Eoraptor occupies the lower-right middle ground, and one much smaller Chromogisaurus stands on a separate upper-right shelf beyond a shadowed notch",
+    "variationIntent": "make lateral geology and a two-step right-side discovery path the subject instead of repeating rivers, wetlands, opposed banks, pursuit diagonals, centered broadside animals, upper-lower stacks, skyfields or plan-view track plates",
+    "repeatGuard": "Do not reuse the left-dominant bankface plus horizontal ash-lens band plus same-direction lower-right and upper-right taxon placement for another ecosystem scene."
+  },
+  "workflow": {
+    "provider": "OpenAI built-in image_gen",
+    "mode": "prompt-to-image with four anatomy-only local references followed by a targeted layer-only correction",
+    "model": "built-in tool model not exposed",
+    "seed": "not exposed by generator",
+    "generationDate": "2026-08-03",
+    "sourceCallId": "exec-ebf7fac8-95f7-4d09-b154-349959b34e0c",
+    "approvedCallId": "exec-fb2729b3-1fbb-4925-b26e-3f8d94f8642e",
+    "generationCalls": 2,
+    "iterationHistory": [
+      {
+        "callId": "exec-ebf7fac8-95f7-4d09-b154-349959b34e0c",
+        "path": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-ebf7fac8-95f7-4d09-b154-349959b34e0c.png",
+        "status": "review-hold",
+        "reason": "Anatomy, composition and age-safety passed, but the nearly continuous bright-white band risked reading as an exact time-marker or painted line and strengthened a same-bed coexistence inference."
+      },
+      {
+        "callId": "exec-fb2729b3-1fbb-4925-b26e-3f8d94f8642e",
+        "path": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-fb2729b3-1fbb-4925-b26e-3f8d94f8642e.png",
+        "status": "approved-for-ecosystem-scene-review",
+        "reason": "The old altered-ash layer was reduced to thinner, lower-contrast, weathered and interrupted lenses; independent anatomy, composition, age-safety and conditional same-member ecology reviews passed with an explicit public boundary."
+      }
+    ]
+  },
+  "referenceImages": [
+    {
+      "path": "assets/dinosaurs/eoraptor-lunensis-robust-short-forelimb-representative-imagegen-v2.png",
+      "role": "Eoraptor body proportion and project identity only",
+      "copyRestrictions": "do not copy pose, background, camera, lighting, vegetation, color arrangement or composition"
+    },
+    {
+      "path": "assets/dinosaurs/eoraptor-lunensis-reduced-outer-manus-anatomy-closeup-imagegen-v1.png",
+      "role": "Eoraptor relative functional-versus-reduced manual digit arrangement only",
+      "copyRestrictions": "do not treat generated phalanx lengths as fossil measurement and do not copy pose, background, camera, lighting or composition"
+    },
+    {
+      "path": "assets/dinosaurs/chromogisaurus-novasi-mineral-teal-floodplain-representative-imagegen-v2.png",
+      "role": "Chromogisaurus project identity and conservative postcranial proportion only",
+      "copyRestrictions": "do not treat the reconstructed skull, neck, hand, color or whole-body ratio as direct fossil evidence; do not copy pose, background, camera or composition"
+    },
+    {
+      "path": "assets/dinosaurs/chromogisaurus-novasi-preserved-region-hindlimb-comparative-anatomy-imagegen-v2.png",
+      "role": "Chromogisaurus pelvis, hindlimb, foot connection and tail origin only",
+      "copyRestrictions": "do not use the intentionally cropped head framing or infer exact hand, complete foot or total tail proportions"
+    }
+  ],
+  "prompts": {
+    "source": "Use case: scientific-educational\nAsset type: Dino Atlas ecosystem gallery scene for ages 5–14\nPrimary request: Create a brand-new evidence-conscious Late Triassic Ischigualasto ecosystem reconstruction centered on a natural eroded bankface and an old exposed volcanic-ash-derived bentonite ribbon, with exactly two living dinosaurs and no interaction claim.\n\nInput images and roles:\nImage 1: Eoraptor lunensis body-proportion and color-identity reference only.\nImage 2: Eoraptor hand-structure reference only.\nImage 3: Chromogisaurus novasi project identity and postcranial proportion reference only.\nImage 4: Chromogisaurus preserved-region hindlimb and tail structure reference only.\nDo not copy any reference pose, background, camera, lighting, vegetation, or composition. Do not collage or directly reproduce reference pixels.\n\nScene/backdrop: Cancha de Bochas Member-inspired fluvial-overbank exposure in the Ischigualasto Formation. A natural weathered bankface occupies the left and central 60 percent of the image. A thin pale gray old bentonite/altered-ash ribbon runs almost horizontally across the middle of the bank and is interrupted once by a narrow erosion notch around the right two-thirds. Sparse low Triassic vegetation and muted red-brown paleosol textures. Narrow horizon only in the top 15 percent. No river, pool, stream, wetland, or active eruption.\n\nSubjects: exactly two dinosaurs total.\n1) Exactly one Eoraptor lunensis in the lower-right middle ground, only about 18–22 percent of image width, walking calmly toward the right in a three-quarter rear view, not a broadside hero pose. Full animal visible with uncut tail, both hind feet clearly separated, both small forelimbs visible and not touching the ground. Compact basal sauropodomorph build, low skull, moderately long neck but never swan-necked, robust torso, short forelimbs; five-fingered hands with outer digits reduced rather than three equally dominant fingers.\n2) Exactly one Chromogisaurus novasi far away on a stable upper-right shelf, only about 5–7 percent of image height, a clean separated silhouette moving in the same general direction but not looking at Eoraptor. Keep it distant because skull, neck, and hand details are poorly constrained; show only a modest slender basal sauropodomorph silhouette with a continuous uncut tail and two separated hind limbs.\n\nStyle/medium: naturalistic museum-grade paleoart, realistic but not cinematic spectacle, clear educational readability, original project-safe imagery.\nComposition/framing: 16:9 landscape, low lateral raking camera looking along the eroded bankface. The geology is the primary subject and the two animals form a right-side two-step discovery path. Keep broad negative space across the left bank and ash ribbon. No centered animal, no S-curve river, no diagonal chase axis, no opposing face-off, no top-down view.\nLighting/mood: calm soft late-afternoon side light that reveals sediment layers; neutral atmospheric depth; no disaster mood.\nColor palette: weathered ochre, muted terracotta, pale gray ash ribbon, restrained sage plants; natural animal colors consistent with the references but not copied pixel-for-pixel.\nConstraints: exact animal count two; one Eoraptor and one distant Chromogisaurus; all limbs anatomically connected; no extra, fused, hidden, or amputated limbs; no split or cropped tails; no footprints; no carcass; no blood; no text; no labels; no border; no watermark.\nEvidence boundary: The member-level setting and altered-ash layers are evidence-based, but the exact exposed bank shape, two animals being alive together, their positions, colors, behavior, weather, and moment are reconstructed. Do not imply that either animal witnessed an eruption or occupied the exact same ash bed or day.\nAvoid: visible volcano or crater, eruption, falling ash, smoke plume, lava, panic, fleeing, chase, attack, herd or pack behavior, animals looking at each other, additional animals, eggs, nests, bones, modern grass, flowers, mammals, birds, broadside lineup, giant central dinosaur, raptor sickle claws, bird beaks, theropod monster heads, Plateosaurus-heavy bulk, quadrupedal lizard sprawl.",
+    "correction": "Use case: precise-object-edit\nInput images: Image 1 is the edit target and current Dino Atlas ecosystem candidate.\nPrimary request: Change only the exposed pale altered-ash/bentonite layer and the narrow erosion separation near the right side so the old geological layer looks naturally weathered, thin, discontinuous, and lower-contrast instead of a continuous painted white stripe.\n\nRequired edit:\n- Replace the current nearly continuous bright-white horizontal line with several irregular thin pale gray-to-buff bentonite lenses embedded in the same bankface.\n- Keep the layer at approximately the same middle height, but break it naturally in at least three places with weathered sediment, small slumps, and erosion.\n- Make the most important break near the right two-thirds a deeper shadowed erosion notch that visually separates the lower foreground surface from the distant upper-right shelf, without turning it into a river or canyon.\n- The layer must read as an old exposed and altered deposit, never fresh falling ash, paint, a road marking, or a perfectly precise time line.\n\nCritical invariants:\n- Preserve the exact 16:9 framing, low lateral raking camera, overall bankface geometry, horizon, lighting, vegetation, color balance, and broad negative space.\n- Preserve exactly the same two dinosaurs only: the lower-right Eoraptor and the distant upper-right Chromogisaurus.\n- Do not add, remove, resize, move, restyle, blur, or anatomically alter either dinosaur. Keep every existing head, neck, body, both forelimbs, both hind limbs, feet, and each single continuous tail unchanged.\n- Keep both animals facing generally right, separated in depth, not looking at or interacting with each other.\n- No extra animals, footprints, bones, water, smoke, volcano, falling ash, fire, text, labels, borders, or watermark.\n- This is an educational composite scene; do not add any visual cue implying simultaneous eruption, panic, chase, herd, or a shared exact bed."
+  },
+  "evidence": {
+    "sources": [
+      {
+        "url": "https://doi.org/10.1016/j.jsames.2008.10.004",
+        "use": "Ischigualasto Formation fluvial and overbank architecture, paleosols, and altered volcanic-ash/tuffaceous stratigraphic horizons"
+      },
+      {
+        "url": "https://doi.org/10.1080/14772019.2010.484650",
+        "use": "Chromogisaurus novasi original description, Cancha de Bochas Member occurrence, and incomplete postcranial evidence boundary"
+      },
+      {
+        "url": "https://doi.org/10.1080/02724634.2013.820113",
+        "use": "Eoraptor lunensis redescription and Ischigualasto/Cancha de Bochas context"
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3088398/",
+        "use": "Cancha de Bochas Member fauna and stratigraphic context; same member does not establish a shared fossil bed"
+      }
+    ],
+    "supportedClaim": "Both named taxa are documented from the Cancha de Bochas Member, and the member contains documented altered volcanic-ash or tuffaceous stratigraphic horizons. No shared fossil bed or direct association between the two taxa is established.",
+    "claimBoundary": "The weathered band is a generalized older lithified tuffaceous or ash-bearing horizon exposed by erosion, not an active eruption, falling ash, or proof that either taxon occurs on that exact bed. The combined frame is a same-member stratigraphic comparison and does not claim the same moment, locality, encounter, interaction, ancestor-descendant relation, or shared response. Exact outcrop shape, band thickness, color and continuity, erosional relief, animal positions, simultaneous life appearance, weather and vegetation are reconstructed."
+  },
+  "license": {
+    "type": "generated-project-asset",
+    "label": "Generated project asset",
+    "copyrightSafety": "new built-in generation and correction using project-owned anatomy references and project-generated correction source only",
+    "use": "Dino Atlas ecosystem catalog subject to separate anatomy, ecology, composition and responsive gates"
+  },
+  "review": {
+    "overall": "approved for published ecosystem stratigraphic-comparison use; never representative",
+    "anatomy": {
+      "status": "passed-for-scene-scale",
+      "verdict": "Independent original-size review found exactly one Eoraptor and one Chromogisaurus. Each reads with one head, paired forelimbs, paired hind limbs and one continuous tail; no extra, fused, missing or cropped limbs or split tails are visible. Eoraptor hand and foot digits and all distant Chromogisaurus head, hand and foot details remain non-diagnostic."
+    },
+    "ecology": {
+      "status": "passed-with-same-member-stratigraphic-comparison-boundary",
+      "verdict": "Independent review accepted the corrected lower-contrast weathered layer only when the public card states that the taxa are a same-member comparison, not a shared bed, outcrop, moment or encounter, and that the exposed band is old altered material rather than an active eruption."
+    },
+    "composition": {
+      "status": "passed",
+      "verdict": "Independent comparison against all 13 published scenes found a new geology-led lateral-section family: a left-dominant bankface, interrupted near-horizontal lenses and a same-direction lower-right/upper-right two-step discovery path."
+    },
+    "contentSafety": {
+      "status": "passed",
+      "verdict": "Exactly two calm separated animals are visible with no contact, pursuit, panic, eruption, smoke, falling ash, injury, blood, carcass, text or watermark; independent review found the scene suitable for ages 5–14."
+    },
+    "representativeEligible": false,
+    "responsive": {
+      "status": "passed",
+      "evidence": "2026-08-03 root QA passed at 1440x1000, 390x844, 320x700 and 844x390: 1672x941 card/lightbox decode, contain, no horizontal overflow, isolated filtering, authored public boundary, distinct Korean composition tags, tap-hide and image-only pinch. Atlas 8020 and review 8792 returned HTTP 200 for the 3,281,881-byte approved asset; 8792 indexed it among 1,011 images across 134 species groups."
+    },
+    "publication": "published ecosystem catalog only",
+    "publicationNote": "Anatomy, ecology, composition, same-member claim boundary, age-safety and responsive gates passed; representative promotion remains prohibited."
+  }
+}

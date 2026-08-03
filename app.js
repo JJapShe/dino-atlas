@@ -4841,6 +4841,22 @@ const generatedImageSamples = {
       reviewStatus: "ecosystem anatomy, ecology, and responsive review supported; catalog published; never representative",
       metadataRecord: "tools/comfyui/triassic-concentric-ecosystem-scene-20260803.json",
     },
+    {
+      kind: "ecosystem scene review",
+      title: "에오랍토르·크로모기사우루스 풍화 화산재 띠 층서 비교",
+      body: "같은 칸차 데 보차스 층원에서 알려졌지만 같은 뼈층에서 함께 나온 것은 확인되지 않은 두 종을, 풍화되어 끊긴 오래된 화산재성 층이 드러난 가상 단면에 배치한 생태 갤러리 전용 층서 비교 복원입니다. 밝은 띠는 현재 분화나 내리는 화산재가 아니며, 같은 순간·같은 노두·직접 조우를 뜻하지 않습니다. 장면 축척의 손발과 원경 크로모기사우루스 머리·목·손은 종 대표 근거로 사용하지 않습니다.",
+      source: "assets/dinosaurs/eoraptor-lunensis-chromogisaurus-cancha-de-bochas-weathered-ash-bank-stratigraphic-context-imagegen-v1.png",
+      variant: "풍화 화산재 띠 층서 비교 이미지 생성 v1",
+      src: "assets/dinosaurs/eoraptor-lunensis-chromogisaurus-cancha-de-bochas-weathered-ash-bank-stratigraphic-context-imagegen-v1.png",
+      sourceAttribution: "OpenAI built-in image generation and targeted correction; project anatomy references only",
+      licenseRecord: "Generated project asset; external research used only as factual evidence",
+      generationPromptRecord: "tools/comfyui/triassic-ischigualasto-weathered-ash-bank-ecosystem-scene-20260803.json#prompts/source",
+      generationSeed: "not exposed by generator",
+      generationWorkflow: "OpenAI built-in prompt-to-image with four anatomy-only project references, followed by layer-only correction",
+      reviewStatus: "ecosystem anatomy, ecology, composition, age-safety, and responsive review supported; catalog published; never representative",
+      metadataRecord: "tools/comfyui/triassic-ischigualasto-weathered-ash-bank-ecosystem-scene-20260803.json",
+      representativeEligible: false,
+    },
   ],
   "eodromaeus-murphi": [
     {
@@ -5581,6 +5597,22 @@ const generatedImageSamples = {
       source: "assets/dinosaurs/chromogisaurus-novasi-storm-gust-alert-behavior-imagegen-v2.png",
       variant: "폭풍 전선 돌풍 경계 행동 이미지 생성 v2",
       src: "assets/dinosaurs/chromogisaurus-novasi-storm-gust-alert-behavior-imagegen-v2.png",
+    },
+    {
+      kind: "ecosystem scene review",
+      title: "크로모기사우루스·에오랍토르 풍화 화산재 띠 층서 비교",
+      body: "같은 칸차 데 보차스 층원에서 알려졌지만 같은 뼈층에서 함께 나온 것은 확인되지 않은 두 종을, 풍화되어 끊긴 오래된 화산재성 층이 드러난 가상 단면에 배치한 생태 갤러리 전용 층서 비교 복원입니다. 밝은 띠는 현재 분화나 내리는 화산재가 아니며, 같은 순간·같은 노두·직접 조우를 뜻하지 않습니다. 원경 크로모기사우루스의 머리·목·손과 장면 축척 손발은 종 대표 근거로 사용하지 않습니다.",
+      source: "assets/dinosaurs/eoraptor-lunensis-chromogisaurus-cancha-de-bochas-weathered-ash-bank-stratigraphic-context-imagegen-v1.png",
+      variant: "풍화 화산재 띠 층서 비교 이미지 생성 v1",
+      src: "assets/dinosaurs/eoraptor-lunensis-chromogisaurus-cancha-de-bochas-weathered-ash-bank-stratigraphic-context-imagegen-v1.png",
+      sourceAttribution: "OpenAI built-in image generation and targeted correction; project anatomy references only",
+      licenseRecord: "Generated project asset; external research used only as factual evidence",
+      generationPromptRecord: "tools/comfyui/triassic-ischigualasto-weathered-ash-bank-ecosystem-scene-20260803.json#prompts/source",
+      generationSeed: "not exposed by generator",
+      generationWorkflow: "OpenAI built-in prompt-to-image with four anatomy-only project references, followed by layer-only correction",
+      reviewStatus: "ecosystem anatomy, ecology, composition, age-safety, and responsive review supported; catalog published; never representative",
+      metadataRecord: "tools/comfyui/triassic-ischigualasto-weathered-ash-bank-ecosystem-scene-20260803.json",
+      representativeEligible: false,
     },
   ],
   "panphagia-protos": [
@@ -21969,6 +22001,8 @@ const ecosystemParticipantRoleLabels = Object.freeze({
   "secondary-subject": "함께 등장",
   "formation-fauna": "같은 지층 동물상",
   "trackmaker-analogue": "발자국 주인 비교 후보",
+  "near-field stratigraphic comparison": "근경 층서 비교",
+  "distant stratigraphic comparison": "원경 층서 비교",
 });
 
 const ecosystemCertaintyLabels = Object.freeze({
@@ -22028,6 +22062,10 @@ const ecosystemDiversityTagLabels = Object.freeze({
   "diagonal-runoff": "대각선 물길",
   "material-mosaic": "환경 재질 모자이크",
   "small-context-animal": "작은 환경 맥락 동물",
+  "geology-dominant": "지질 중심",
+  "lateral-section": "옆면 지층",
+  "horizontal-strata": "수평 지층",
+  "same-direction-depth-discovery": "같은 방향 원근",
 });
 
 function getEcosystemParticipantCertaintyLabel(value) {
@@ -26791,7 +26829,7 @@ const visualVariationProfiles = {
     pattern: "뒤 옆구리의 성긴 작은 크림색 점과 꼬리 뒤쪽 네 곳의 희미한 차콜 띠; 여섯 장에서 같은 위치 규칙을 유지하고 시간대는 따로 변화",
     texture: "화석 피부가 알려지지 않았음을 전제로 한 고운 무광 자갈무늬 비교 피복, 젖은 장면에서도 유광 도마뱀 피부를 피함",
     anatomy: "직접 자료는 꼬리·견갑대 일부·골반·뒷다리·발 일부에 한정됩니다. 전신에서는 작은 가벼운 이족 몸, 두 짧은 앞다리, 두 강한 뒷다리, 보이는 발과 한 꼬리를 보수적으로 연결하되 머리·목·손·전체 꼬리와 자세는 근연 초기 용각형류 비교 복원으로 표시합니다.",
-    avoid: "두개골·목·손·식성을 종 고유의 화석 사실처럼 단정, 묵직한 플라테오사우루스 복제, 거대 기둥다리 용각류, 수각류 포식자 머리, 도마뱀식 사족 벌어짐, 발굽, 랩터 낫발톱, 여분·융합 팔다리, 갈라진 꼬리, 접촉 공격·육아·무리 행동 단정",
+    avoid: "두개골·목·손·식성을 종 고유의 화석 사실처럼 단정, 묵직한 플라테오사우루스 복제, 거대 기둥다리 용각류, 수각류 포식자 머리, 도마뱀식 사족 벌어짐, 발굽, 랩터 낫발톱, 여분·융합 팔다리, 갈라진 꼬리, 접촉 공격·육아·무리 행동 단정. 풍화 화산재 띠 층서 비교 장면은 동일 층원을 동일 뼈층·같은 순간·같은 노두·직접 조우로 확대하거나 현재 분화·낙진처럼 설명하지 않고, 왼쪽 제방과 수평 지층 띠 및 우측 같은 방향의 근·원경 배치를 다른 장면에 반복하거나 종 대표로 승격하지 않음",
   },
   "panphagia-protos": {
     color: "대표형은 차콜-가문비색 등, 차분한 멀버리 옆구리, 이끼빛 셀라돈 아래쪽과 상아색 배; 변이형은 폭풍빛 슬레이트 등, 테라코타 어깨, 옅은 세이지 옆구리와 오래된 금빛 점이며 색소는 모두 가설",
@@ -26840,7 +26878,7 @@ const visualVariationProfiles = {
     pattern: "대표형의 불규칙한 차콜 안장과 성긴 크림 점, 변이형의 비대칭 청록 어깨 반점과 구리빛 목 띠; 모든 장면에서 같은 꼬리 고리와 점 배열을 복제하지 않음",
     texture: "직접 피부 화석을 주장하지 않는 고운 무광 비늘과 국소적인 진흙·물기·먼지; 깃털·날개·골판·가시는 사용하지 않음",
     anatomy: "약 1.2-1.3m, 약 12.3cm 낮은 삼각형 머리, 9개 목뼈의 중간 길이 낮은 목, 짧고 강건한 두 앞다리와 2-3-4-(1)-0 손, 경골이 대퇴골보다 조금 긴 두 뒷다리, 세 주요 앞발가락과 작은 첫째 발가락, 약 60cm로 추정하는 한 개 꼬리",
-    avoid: "수직 백조 목, 새 머리·강한 부리·코엘로피시스형 극세 목, 대형 수각류 머리, 세 손가락만을 완전한 손으로 표시, 네 개 또는 다섯 개의 동일한 기능성 손가락, 낫발톱, 추가·융합·누락 사지, 갈라지거나 잘린 꼬리, 직접 공격·추격·사체 섭식·무리 사냥 장면",
+    avoid: "수직 백조 목, 새 머리·강한 부리·코엘로피시스형 극세 목, 대형 수각류 머리, 세 손가락만을 완전한 손으로 표시, 네 개 또는 다섯 개의 동일한 기능성 손가락, 낫발톱, 추가·융합·누락 사지, 갈라지거나 잘린 꼬리, 직접 공격·추격·사체 섭식·무리 사냥 장면. 풍화 화산재 띠 층서 비교 장면은 동일 층원을 동일 뼈층·같은 순간·같은 노두·직접 조우로 확대하거나 현재 분화·낙진처럼 설명하지 않고, 왼쪽 제방과 수평 지층 띠 및 우측 같은 방향의 근·원경 배치를 다른 장면에 반복하거나 종 대표로 승격하지 않음",
   },
   "ornitholestes-hermanni": {
     color: "대표형은 철빛 차콜 등, 녹슨 갈색 어깨·엉덩이 띠, 뼈색 배와 작은 페트롤 눈가; 변이형은 짙은 보틀그린·차콜 몸, 플럼색 등 안장, 샤프란 반점, 상아색 배와 시나몬 눈가",
@@ -27162,7 +27200,7 @@ const generationRouteGuides = {
   },
   "chromogisaurus-novasi": {
     focus: "칸차 데 보차스의 작은 기초 용각형류, PVSJ 845의 꼬리·견갑대 일부·골반·뒷다리·발 직접 자료와 두개골·목·완전한 앞다리 결손을 분리하고 네 팔다리와 한 꼬리를 원본 크기로 검수",
-    route: "triassic_ischigualasto_chromogisaurus_postcranial_evidence_prompt_then_limb_tail_review",
+    route: "triassic_ischigualasto_chromogisaurus_postcranial_evidence_prompt_then_limb_tail_review; 새 풍화 화산재 띠 장면은 에오랍토르와 같은 칸차 데 보차스 층원 비교용 생태 탭 전용 검수본이며 같은 뼈층·노두·순간·직접 조우·현재 분화를 주장하지 않고, 원경 머리·목·손과 장면 축척 손발을 종 대표 근거로 사용하지 않음",
     control: "assets/dinosaurs/chromogisaurus-novasi-mineral-teal-floodplain-representative-imagegen-v2.png",
     pass: "전신 또는 의도된 보존부위 근접 구도 | 작은 가벼운 이족형 비교 실루엣 | 낮은 비교 머리와 적당히 긴 목 | 짧게 든 두 앞다리 | 곧고 강한 두 뒷다리 | 세 주요 앞쪽 발가락이 읽히는 발 | 골반에서 한 줄로 이어지는 한 꼬리 | 붉은갈색·녹회색 범람원과 곡류 하천",
     reject: "두개골·목·손·식성을 직접 화석 특징처럼 단정하거나 플라테오사우루스, 거대 용각류, 수각류, 도마뱀으로 흐르는 경우, 발굽, 랩터 낫발톱, 숨은 발, 여분·융합 팔다리, 갈라지거나 잘린 꼬리, 직접 접촉 공격·육아·무리 행동, 현대 식생이 있으면 탈락.",
@@ -27740,7 +27778,7 @@ const generationRouteGuides = {
   },
   "eoraptor-lunensis": {
     focus: "약 1.2-1.3m 이스치구알라스토 기초 용각형류, 약 12.3cm 낮은 삼각형 머리, 중간 길이 낮은 목, 짧고 강건한 앞다리, 손 공식 2-3-4-(1)-0, 조금 긴 경골, 세 주요 앞발가락과 작은 첫째 발가락, 한 개 긴 꼬리, 초식 중심 치열",
-    route: "triassic_ischigualasto_eoraptor_basal_sauropodomorph_prompt_then_low_skull_moderate_neck_reduced_outer_manus_both_feet_tail_review; 새 Cancha de Bochas 고각도 동심원 장면은 헤레라사우루스와 위아래·반대 이동축으로 분리한 생태 탭 전용 검수본이며 실제 조우·추격·포식을 주장하지 않고 장면 축척 손발을 대표 근거로 사용하지 않음",
+    route: "triassic_ischigualasto_eoraptor_basal_sauropodomorph_prompt_then_low_skull_moderate_neck_reduced_outer_manus_both_feet_tail_review; 새 Cancha de Bochas 고각도 동심원 장면은 헤레라사우루스와 위아래·반대 이동축으로 분리한 생태 탭 전용 검수본이며 실제 조우·추격·포식을 주장하지 않고 장면 축척 손발을 대표 근거로 사용하지 않음; 새 풍화 화산재 띠 장면은 크로모기사우루스와 같은 층원 비교용 생태 탭 전용 검수본이며 같은 뼈층·노두·순간·직접 조우·현재 분화를 주장하지 않고 왼쪽 지질 제방 중심 문법을 다른 장면에 반복하거나 종 대표로 승격하지 않음",
     control: "assets/dinosaurs/eoraptor-lunensis-robust-short-forelimb-representative-imagegen-v2.png",
     pass: "약 1.2-1.3m 전신 | 약 12.3cm 낮은 삼각형 머리와 큰 안와 | 9개 목뼈의 중간 길이 낮은 S자형 목 | 정확히 두 짧고 강건한 앞다리 | 세 기능성 수지와 축소 IV, 자유 수지 없는 V | 정확히 두 뒷다리 | 세 주요 앞발가락과 작은 첫째 발가락 | 골반에서 하나로 이어지는 약 60cm 추정 꼬리",
     reject: "수직 백조 목, 새 부리 머리, 코엘로피시스·벨로시랩터·에오드로마이우스 복제, 세 손가락을 완전한 손으로 단정, 네다섯 개 동일 길이 손가락, 거대한 발톱·낫발톱, 추가·융합·누락 사지, 다리에서 시작하거나 갈라진 꼬리, 직접 공격·추격·상처·사체·무리 사냥 장면이면 탈락",

@@ -397,6 +397,36 @@
         "status": "published",
         "eligible": true
       }
+    },
+    "eoraptor-chromogisaurus-cancha-de-bochas-weathered-ash-bank": {
+      "asset": "assets/dinosaurs/eoraptor-lunensis-chromogisaurus-cancha-de-bochas-weathered-ash-bank-stratigraphic-context-imagegen-v1.png",
+      "compositionKey": "landscape-raking-bankface-weathered-ash-lenses",
+      "representativeEligible": false,
+      "labelBoundary": "Both taxa are same-member stratigraphic comparison subjects, not a shared fossil bed, outcrop, moment or encounter; the weathered band is old altered material and not an active eruption or falling ash.",
+      "gates": {
+        "anatomy": {
+          "status": "supported",
+          "evidence": "tools/comfyui/triassic-ischigualasto-weathered-ash-bank-ecosystem-scene-20260803.json#review/anatomy",
+          "scope": "scene-scale one Eoraptor plus one distant Chromogisaurus; small digits and distant Chromogisaurus head, neck and hand details are non-diagnostic"
+        },
+        "ecology": {
+          "status": "supported",
+          "evidence": "tools/comfyui/triassic-ischigualasto-weathered-ash-bank-ecosystem-scene-20260803.json#review/ecology",
+          "scope": "same-member stratigraphic comparison and generalized weathered altered-ash exposure only; no shared bed, outcrop, exact age, active eruption, simultaneous life appearance or interaction claim"
+        },
+        "responsive": {
+          "status": "supported",
+          "evidence": "2026-08-03 root QA passed at 1440x1000, 390x844, 320x700 and 844x390: 1672x941 card/lightbox decode, contain, no overflow, isolated filtering, authored public boundary, distinct Korean composition tags, tap-hide and image-only pinch"
+        },
+        "publication": {
+          "status": "published",
+          "evidence": "anatomy, ecology, composition, age-safety and responsive gates supported; same-member boundary is public; representative promotion prohibited"
+        }
+      },
+      "publication": {
+        "status": "published",
+        "eligible": true
+      }
     }
   }
 }

@@ -2,7 +2,7 @@
 // representative dinosaur cards: every scene remains in a separate review lane.
 window.ecosystemSceneCatalog = {
   schemaVersion: 1,
-  generatedAt: "2026-08-03T05:45:00.000Z",
+  generatedAt: "2026-08-03T09:49:24.000Z",
   policy: {
     targetAudience: "ages 5-14",
     representativePromotion: "prohibited; ecosystem scenes are never representative-card candidates",
@@ -26,6 +26,7 @@ window.ecosystemSceneCatalog = {
       sceneIds: [
         "eoraptor-herrerasaurus-cancha-de-bochas",
         "buriolestes-candelaria-macrocharcoal-wildfire-composite",
+        "eoraptor-chromogisaurus-cancha-de-bochas-weathered-ash-bank",
       ],
     },
     {
@@ -976,6 +977,99 @@ window.ecosystemSceneCatalog = {
         ecology: { status: "supported", note: "The reported four-plus-one crossing pattern is supported; exact makers, measurements, simultaneity, behavior and order are excluded." },
         responsive: { status: "supported", note: "2026-08-03 root QA passed at 1440x900, 390x844, 320x700 and 844x390: trace readability, decode, contain, no horizontal overflow, filters, scoped lightbox, tap-hide and image-only pinch regression." },
         publication: { status: "published", note: "Trace topology, evidence boundary, composition and responsive gates are supported; representative and exact-trackmaker promotion remain prohibited." },
+      },
+      publication: { status: "published", eligible: true },
+    },
+    {
+      id: "eoraptor-chromogisaurus-cancha-de-bochas-weathered-ash-bank",
+      timeBinId: "late-triassic",
+      sceneType: "environment-event",
+      title: "풍화된 화산재 띠가 드러난 칸차 데 보차스 층서 풍경",
+      summary: "같은 칸차 데 보차스 층원에서 알려졌지만 같은 뼈층에서 함께 나온 것은 확인되지 않은 에오랍토르와 크로모기사우루스를, 풍화되어 끊긴 오래된 화산재성 층이 드러난 가상 단면에 배치했습니다. 밝은 띠는 현재 분화나 내리는 화산재가 아니며, 같은 순간·같은 노두·직접 조우를 뜻하지 않습니다.",
+      asset: {
+        src: "assets/dinosaurs/eoraptor-lunensis-chromogisaurus-cancha-de-bochas-weathered-ash-bank-stratigraphic-context-imagegen-v1.png",
+        width: 1672,
+        height: 941,
+        bytes: 3281881,
+        sha256: "e140b999fd1c6c5c7e1f8be1962d96e1f0d68156caff28db7ef0ea4f590108bb",
+        orientation: "landscape",
+      },
+      formation: {
+        name: "Ischigualasto Formation, Cancha de Bochas Member",
+        context: "same-member stratigraphic comparison with a generalized weathered tuffaceous or altered-ash exposure; not a literal fossil outcrop or shared bed",
+        ageRangeMa: { older: 233.0, younger: 225.0 },
+        resolution: "same member only; exact bed, outcrop, relative age, animal positions and shared moment unresolved",
+      },
+      participants: [
+        {
+          taxonId: "eoraptor-lunensis",
+          scientificName: "Eoraptor lunensis",
+          role: "near-field stratigraphic comparison",
+          certainty: "Cancha de Bochas Member occurrence high; exact bed and depicted position unsupported",
+        },
+        {
+          taxonId: "chromogisaurus-novasi",
+          scientificName: "Chromogisaurus novasi",
+          role: "distant stratigraphic comparison",
+          certainty: "Cancha de Bochas Member occurrence high; exact bed and depicted position unsupported; skull, neck and hand are comparative reconstruction",
+        },
+      ],
+      compositionKey: "landscape-raking-bankface-weathered-ash-lenses",
+      compositionLabel: "침식 제방을 비껴 읽는 풍화 지층",
+      composition: {
+        key: "landscape-raking-bankface-weathered-ash-lenses",
+        label: "침식 제방을 비껴 읽는 풍화 지층",
+        family: "geology-led-lateral-section",
+        orientation: "landscape",
+        camera: "low lateral raking view along a natural eroded bankface with the horizon constrained to the upper 15 percent",
+        spatialLayout: "the weathered bankface fills the left and center, low-contrast altered-ash lenses cross the middle with erosion gaps, one Eoraptor occupies the lower-right middle ground, and one much smaller Chromogisaurus stands on a separate upper-right shelf beyond a shadowed notch",
+        diversityTags: ["geology-dominant", "lateral-section", "horizontal-strata", "same-direction-depth-discovery"],
+      },
+      epistemic: {
+        known: [
+          "Both named taxa are documented from the Cancha de Bochas Member, but no shared fossil bed or direct association is established.",
+          "Stratigraphic work documents altered volcanic-ash, bentonitic or tuffaceous horizons within the member.",
+        ],
+        reconstructed: [
+          "Exact outcrop shape, exposed-band thickness, color and continuity, erosional relief, animal positions, simultaneous life appearance, weather and vegetation are reconstructed.",
+        ],
+        boundary: "The weathered band is a generalized older lithified tuffaceous or ash-bearing horizon exposed by erosion, not an active eruption, falling ash, or proof that either taxon occurs on that exact bed. The combined frame is a same-member stratigraphic comparison and does not claim the same moment, locality, encounter, interaction, ancestor-descendant relation, or shared response.",
+      },
+      displayEpistemic: {
+        known: [
+          "에오랍토르와 크로모기사우루스는 모두 칸차 데 보차스 층원에서 알려졌지만, 같은 뼈층에서 함께 나온 것은 확인되지 않았어요.",
+          "이 층원에는 오래된 화산재가 변질된 응회질·벤토나이트성 지층 기록이 남아 있어요.",
+        ],
+        reconstructed: [
+          "노두 모양과 밝은 띠의 두께·색·끊김, 침식 지형, 두 동물의 위치와 색, 같은 화면의 순간, 날씨와 식생은 학습용으로 복원했어요.",
+        ],
+        boundary: "같은 층원에서 알려졌지만 같은 뼈층에서 함께 나온 것은 확인되지 않은 두 동물을, 풍화되어 끊긴 오래된 화산재성 층이 드러난 가상 단면에 배치한 층서 비교 복원입니다. 밝은 띠는 현재 분화나 내리는 화산재가 아니며, 같은 순간·같은 노두·직접 조우를 뜻하지 않습니다.",
+        context: "오래된 화산재성 지층을 읽는 층서 비교 복원",
+        participantHeading: "같은 층원 비교 동물",
+      },
+      evidence: [
+        { url: "https://doi.org/10.1016/j.jsames.2008.10.004", use: "formation architecture, overbank and paleosol context, and altered-ash or tuffaceous horizons" },
+        { url: "https://doi.org/10.1080/14772019.2010.484650", use: "Chromogisaurus Cancha de Bochas occurrence and incomplete postcranial evidence boundary" },
+        { url: "https://doi.org/10.1080/02724634.2013.820113", use: "Eoraptor redescription and Cancha de Bochas context" },
+        { url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3088398/", use: "member fauna and stratigraphic context without a shared-bed claim" },
+      ],
+      provenance: {
+        sourceAttribution: "OpenAI built-in image generation using four project-owned taxon references for anatomy and identity only, followed by a targeted correction using the project-generated first candidate; no external artwork or paper-figure pixels used.",
+        license: "Generated project asset; distribution follows project and image-generation account terms. Research sources support factual constraints only and are not image references.",
+        metadataRecord: "tools/comfyui/triassic-ischigualasto-weathered-ash-bank-ecosystem-scene-20260803.json#",
+        promptRecord: "tools/comfyui/triassic-ischigualasto-weathered-ash-bank-ecosystem-scene-20260803.json#prompts/source",
+        correctionPromptRecord: "tools/comfyui/triassic-ischigualasto-weathered-ash-bank-ecosystem-scene-20260803.json#prompts/correction",
+        prompt: "tools/comfyui/triassic-ischigualasto-weathered-ash-bank-ecosystem-scene-20260803.json#prompts/source",
+        seed: "not exposed by generator",
+        workflow: "prompt-to-image with four anatomy-only project references followed by a layer-only correction; independent anatomy, ecology, composition and age-safety review",
+        generator: "OpenAI built-in image generation",
+      },
+      representativeEligible: false,
+      gates: {
+        anatomy: { status: "supported", note: "Independent original-size scene-scale review passed exactly one Eoraptor and one Chromogisaurus with paired forelimbs, paired hind limbs and one continuous tail each; small digits and distant Chromogisaurus details remain non-diagnostic." },
+        ecology: { status: "supported", note: "Same-member occurrence and altered-ash-bearing stratigraphy are supported; the public card explicitly excludes a shared bed, outcrop, moment, eruption, encounter or interaction." },
+        responsive: { status: "supported", note: "2026-08-03 root QA passed at 1440x1000, 390x844, 320x700 and 844x390: 1672x941 card/lightbox decode, contain, no overflow, isolated filtering, authored public boundary, distinct Korean composition tags, tap-hide and image-only pinch." },
+        publication: { status: "published", note: "Anatomy, ecology, composition, age-safety and responsive gates are supported; the same-member boundary is public and representative promotion is prohibited." },
       },
       publication: { status: "published", eligible: true },
     },
