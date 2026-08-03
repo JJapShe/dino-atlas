@@ -22,6 +22,7 @@ const SCENE_TYPES = new Set([
   "predation-tension",
   "herd-growth",
   "environment-event",
+  "trace-evidence",
 ]);
 const SUPPORT_STATUSES = new Set(["supported", "pending", "blocked"]);
 const errors = [];
@@ -155,6 +156,12 @@ if (catalog.schemaVersion !== 1) fail("catalog: schemaVersion must be 1");
 if (decisions.schemaVersion !== 1) fail("decisions: schemaVersion must be 1");
 if (!Array.isArray(catalog.timeBins)) fail("catalog: timeBins must be an array");
 if (!Array.isArray(catalog.scenes)) fail("catalog: scenes must be an array");
+const catalogSceneTypeIds = Array.isArray(catalog.sceneTypes)
+  ? catalog.sceneTypes.map((item) => item?.id)
+  : [];
+if (JSON.stringify(catalogSceneTypeIds) !== JSON.stringify([...SCENE_TYPES])) {
+  fail("catalog: sceneTypes must match the verifier scene-type order");
+}
 
 const timeBins = Array.isArray(catalog.timeBins) ? catalog.timeBins : [];
 const scenes = Array.isArray(catalog.scenes) ? catalog.scenes : [];
@@ -285,6 +292,12 @@ for (const scene of scenes) {
     || !Array.isArray(scene.epistemic?.reconstructed) || scene.epistemic.reconstructed.length < 1
     || !isNonEmptyString(scene.epistemic?.boundary)) {
     fail(`${owner}: known/reconstructed/boundary metadata is incomplete`);
+  }
+  if (scene.sceneType === "trace-evidence") {
+    const traceEvidence = scene.traceEvidence || {};
+    for (const field of ["bodiesShown", "exactTaxonClaim", "simultaneousCrossingClaim", "interactionClaim"]) {
+      if (traceEvidence[field] !== false) fail(`${owner}: traceEvidence.${field} must be false`);
+    }
   }
   if (!Array.isArray(scene.evidence) || scene.evidence.length < 1) {
     fail(`${owner}: evidence is required`);

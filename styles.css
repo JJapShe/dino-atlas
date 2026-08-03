@@ -2660,6 +2660,10 @@ button.dummy-image:disabled {
   --scene-accent: #7db7ff;
 }
 
+.ecosystem-card.scene-trace-evidence {
+  --scene-accent: #c6a66a;
+}
+
 .ecosystem-card-image {
   position: relative;
   display: grid;

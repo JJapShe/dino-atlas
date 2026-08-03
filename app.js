@@ -7562,6 +7562,22 @@ const generatedImageSamples = {
       src: "assets/dinosaurs/megalosaurus-bucklandii-english-megalosauroid-identity-imagegen-v2.png",
       edited: true,
     },
+    {
+      kind: "ecosystem scene review",
+      title: "듀어스 팜 교차 발자국길 구조 복원",
+      body: "듀어스 팜에서 보고된 네 용각류형 보행렬과 한 대형 수각류형 보행렬의 교차 구조를 수직 조감으로 읽는 학습용 흔적 장면입니다. 메갈로사우루스는 지역의 대형 수각류 비교 후보일 뿐 정확한 발자국 주인이 아니며, 같은 순간의 만남·추격·사냥이나 보행 순서를 주장하지 않습니다. 공룡 몸이 없어 종 대표나 몸 해부 자료로 승격하지 않습니다.",
+      source: "assets/dinosaurs/cetiosaurus-oxoniensis-megalosaurus-bucklandii-analogue-crossing-trackways-trace-evidence-imagegen-hybrid-v1.png",
+      variant: "듀어스 팜 교차 흔적 증거 복원 이미지 생성 하이브리드 v1",
+      src: "assets/dinosaurs/cetiosaurus-oxoniensis-megalosaurus-bucklandii-analogue-crossing-trackways-trace-evidence-imagegen-hybrid-v1.png",
+      sourceAttribution: "OpenAI built-in image generation plus project-authored SVG/Sharp topology overlay; no external artwork or site-photo pixels",
+      licenseRecord: "Generated and project-authored hybrid asset",
+      generationPromptRecord: "tools/comfyui/middle-jurassic-dewars-crossing-trackways-ecosystem-scene-20260803.json#prompt",
+      generationSeed: "not exposed by generator",
+      generationWorkflow: "generated naturalized mud/track base plus project-authored exact trace topology overlay",
+      reviewStatus: "ecosystem trace, ecology, composition and responsive review supported; exact trackmaker and body-anatomy claims prohibited; catalog published",
+      metadataRecord: "tools/comfyui/middle-jurassic-dewars-crossing-trackways-ecosystem-scene-20260803.json",
+      representativeEligible: false,
+    },
   ],
   "cetiosaurus-oxoniensis": [
     {
@@ -7657,6 +7673,22 @@ const generatedImageSamples = {
       variant: "튼튼한 영국 초기 용각류 구조 이미지 생성 v2",
       src: "assets/dinosaurs/cetiosaurus-oxoniensis-robust-english-early-sauropod-identity-imagegen-v2.png",
       edited: true,
+    },
+    {
+      kind: "ecosystem scene review",
+      title: "듀어스 팜 교차 발자국길 구조 복원",
+      body: "듀어스 팜에서 보고된 네 용각류형 보행렬과 한 대형 수각류형 보행렬의 교차 구조를 수직 조감으로 읽는 학습용 흔적 장면입니다. 케티오사우루스는 지역의 용각류 비교 후보일 뿐 정확한 발자국 주인이 아니며, 실제 무리 이동·동시 통과·추격이나 보행 순서를 주장하지 않습니다. 공룡 몸이 없어 종 대표나 몸 해부 자료로 승격하지 않습니다.",
+      source: "assets/dinosaurs/cetiosaurus-oxoniensis-megalosaurus-bucklandii-analogue-crossing-trackways-trace-evidence-imagegen-hybrid-v1.png",
+      variant: "듀어스 팜 교차 흔적 증거 복원 이미지 생성 하이브리드 v1",
+      src: "assets/dinosaurs/cetiosaurus-oxoniensis-megalosaurus-bucklandii-analogue-crossing-trackways-trace-evidence-imagegen-hybrid-v1.png",
+      sourceAttribution: "OpenAI built-in image generation plus project-authored SVG/Sharp topology overlay; no external artwork or site-photo pixels",
+      licenseRecord: "Generated and project-authored hybrid asset",
+      generationPromptRecord: "tools/comfyui/middle-jurassic-dewars-crossing-trackways-ecosystem-scene-20260803.json#prompt",
+      generationSeed: "not exposed by generator",
+      generationWorkflow: "generated naturalized mud/track base plus project-authored exact trace topology overlay",
+      reviewStatus: "ecosystem trace, ecology, composition and responsive review supported; exact trackmaker and body-anatomy claims prohibited; catalog published",
+      metadataRecord: "tools/comfyui/middle-jurassic-dewars-crossing-trackways-ecosystem-scene-20260803.json",
+      representativeEligible: false,
     },
   ],
   "sarahsaurus-aurifontanalis": [
@@ -17518,6 +17550,22 @@ const generatedImageSamples = {
       variant: "성체·유체 성장 비교 이미지 생성 v1",
       src: "assets/dinosaurs/protoceratops-andrewsi-adult-juvenile-dune-growth-ecology-imagegen-v1.png",
     },
+    {
+      kind: "ecosystem scene review",
+      title: "어린 프로토케라톱스 네 마리의 사구 평원 집합",
+      body: "가까이 보존된 네 어린 개체의 집합 근거를, 서로 다른 방향으로 먹이를 찾는 비대칭 세로 장면으로 풀었습니다. 화면의 먼 다섯째 동물은 깃털과 발 세부가 부족해 종을 알 수 없는 작은 수각류로만 다룹니다. 가족·부모 돌봄·영구 무리·공동 방어·공격을 주장하지 않으며 대표 이미지로 승격하지 않습니다.",
+      source: "assets/dinosaurs/protoceratops-andrewsi-four-juvenile-aggregation-distant-theropod-herd-growth-imagegen-v1.png",
+      variant: "네 어린 개체 집합과 먼 미확정 수각류 이미지 생성 v1",
+      src: "assets/dinosaurs/protoceratops-andrewsi-four-juvenile-aggregation-distant-theropod-herd-growth-imagegen-v1.png",
+      sourceAttribution: "OpenAI built-in image generation; project-owned references only",
+      licenseRecord: "Generated project asset; external research used only as factual evidence",
+      generationPromptRecord: "tools/comfyui/protoceratops-juvenile-aggregation-ecosystem-scene-20260803.json#prompt",
+      generationSeed: "not exposed by generator",
+      generationWorkflow: "prompt-to-image with animal-count, anatomy, composition and taxonomic-label review",
+      reviewStatus: "ecosystem anatomy, ecology, composition and responsive review supported; distant animal approved only as unidentified small-theropod context; catalog published",
+      metadataRecord: "tools/comfyui/protoceratops-juvenile-aggregation-ecosystem-scene-20260803.json",
+      representativeEligible: false,
+    },
   ],
   "psittacosaurus-mongoliensis": [
     {
@@ -21854,6 +21902,7 @@ const ecosystemSceneTypeLabels = Object.freeze({
   "predation-tension": "포식 긴장",
   "herd-growth": "무리·성장",
   "environment-event": "환경 사건",
+  "trace-evidence": "발자국·흔적",
 });
 
 const ecosystemParticipantRoleLabels = Object.freeze({
@@ -21868,6 +21917,7 @@ const ecosystemParticipantRoleLabels = Object.freeze({
   "primary-subject": "주요 등장",
   "secondary-subject": "함께 등장",
   "formation-fauna": "같은 지층 동물상",
+  "trackmaker-analogue": "발자국 주인 비교 후보",
 });
 
 const ecosystemCertaintyLabels = Object.freeze({
@@ -21911,6 +21961,14 @@ const ecosystemDiversityTagLabels = Object.freeze({
   "vertical-frieze": "세로 기둥 프리즈",
   "long-lens": "긴 초점거리",
   "edge-separated": "양끝 분리",
+  "juvenile-arc": "어린 개체 호형 배치",
+  "deep-horizon": "깊은 지평선",
+  "open-corridor": "열린 시선 통로",
+  "separated-context": "멀리 분리된 맥락",
+  orthographic: "수직 조감",
+  "trace-only": "흔적만 표시",
+  "parallel-rhythm": "평행 보행 리듬",
+  "diagonal-crossing": "대각선 교차",
 });
 
 function getEcosystemParticipantCertaintyLabel(value) {
@@ -22025,6 +22083,10 @@ function getEcosystemSearchText(scene, timeBin) {
     ...(scene.epistemic?.known || []),
     ...(scene.epistemic?.reconstructed || []),
     scene.epistemic?.boundary,
+    ...(scene.displayEpistemic?.known || []),
+    ...(scene.displayEpistemic?.reconstructed || []),
+    scene.displayEpistemic?.boundary,
+    scene.displayEpistemic?.context,
     ...participants,
   ]
     .filter(Boolean)
@@ -22122,6 +22184,19 @@ function syncEcosystemFilterButtons() {
 }
 
 function getEcosystemDisplayEpistemic(scene) {
+  const authored = scene.displayEpistemic;
+  if (
+    Array.isArray(authored?.known) && authored.known.length > 0 &&
+    Array.isArray(authored?.reconstructed) && authored.reconstructed.length > 0 &&
+    authored.boundary && authored.context
+  ) {
+    return {
+      known: authored.known,
+      reconstructed: authored.reconstructed,
+      boundary: authored.boundary,
+      context: authored.context,
+    };
+  }
   const participantNames = (scene.participants || [])
     .map((participant) => getDinoById(participant.taxonId)?.koreanName || participant.scientificName)
     .filter(Boolean);
@@ -22219,6 +22294,7 @@ function renderEcosystemCard(scene, timeBins) {
   const imageSource = scene.asset?.src || "";
   const publicationReady = scene.publication?.status === "published" && scene.publication?.eligible;
   const evidenceCount = Array.isArray(scene.evidence) ? scene.evidence.length : 0;
+  const participantHeading = scene.displayEpistemic?.participantHeading || "함께 등장하는 동물";
   return `
     <article class="ecosystem-card scene-${escapeHtml(sceneType)}" data-ecosystem-card="${escapeHtml(scene.id)}">
       <button class="ecosystem-card-image ${imageSource ? "can-zoom" : "is-missing"}" data-ecosystem-scene="${escapeHtml(scene.id)}" type="button" ${imageSource ? "" : "disabled"} aria-label="${escapeHtml(scene.title)} 이미지 크게 보기">
@@ -22250,7 +22326,7 @@ function renderEcosystemCard(scene, timeBins) {
           </div>
         </dl>
         <section class="ecosystem-participants" aria-label="장면 참여 동물">
-          <h5>함께 등장하는 동물</h5>
+          <h5>${escapeHtml(participantHeading)}</h5>
           <ul>${(scene.participants || []).map(renderEcosystemParticipant).join("") || "<li>참여 동물 검토 중</li>"}</ul>
         </section>
         <div class="ecosystem-evidence-grid">
@@ -25881,14 +25957,14 @@ const visualVariationProfiles = {
     pattern: "대표는 넓고 끊어진 등 안장과 드문 황토색 옆구리 막대, 변이는 낮은 대비의 청록색 사선 막대와 희소한 상아색 반점; 전신에 같은 갈색 줄무늬를 반복하지 않음",
     texture: "고운 무광 자갈무늬 비늘과 절제된 각질 이빨·발톱, 석회질 먼지나 젖은 진흙은 발과 배 아래에만 국한; 피부와 깃털 유무는 알려지지 않음",
     anatomy: "확인된 13~14개 치아 자리의 곧은 아래턱 치골과 튼튼한 상완골·척골을 우선하고, 완전한 두개골·요골·손·발·관절된 전신·꼬리 끝은 비교 복원; 완전한 장면에서는 두 팔·두 다리·한 꼬리를 유지",
-    avoid: "완전한 머리·세 손가락·세 발가락·비늘을 화석으로 확정하는 설명, 티라노사우루스식 거대 머리와 작은 팔, 알로사우루스식 두꺼운 눈썹, 케라토사우루스 코뿔, 딜로포사우루스 쌍 볏·목도리, 수중 생활, 종 특정 발자국, 직접 케티오사우루스 공격·사체, 숨은 발, 잘린 꼬리, 여분 팔다리·꼬리, 과한 유혈",
+    avoid: "완전한 머리·세 손가락·세 발가락·비늘을 화석으로 확정하는 설명, 티라노사우루스식 거대 머리와 작은 팔, 알로사우루스식 두꺼운 눈썹, 케라토사우루스 코뿔, 딜로포사우루스 쌍 볏·목도리, 수중 생활, 종 특정 발자국, 듀어스 팜 수각류형 흔적을 메갈로사우루스가 남긴 것으로 확정, 직접 케티오사우루스 공격·사체, 숨은 발, 잘린 꼬리, 여분 팔다리·꼬리, 과한 유혈",
   },
   "cetiosaurus-oxoniensis": {
     color: "대표는 깊은 병녹색 등, 광물 청회색 옆구리, 석회암색 배와 절제된 버건디 어깨·엉덩이 패치; 변이는 블랙베리색 등과 청자색 배를 사용",
     pattern: "작은 석회암색 반점과 낮은 대비의 어깨 워시, 변이에서만 뒤쪽 꼬리에 넓고 흐린 숯색 띠; 몸 전체를 같은 갈색 줄무늬로 반복하지 않음",
     texture: "젖은 녹회색 석회질 진흙이 아랫다리에 묻은 무광 자갈무늬 피부와 옅은 복부 역음영",
     anatomy: "두개골과 완전한 손발은 미상인 튼튼한 초기 진용각류; 깊은 수평 몸통, 중간 길이의 두꺼운 목, 어깨가 엉덩이보다 높지 않은 네 다리, 짧은 중수골 기둥, 길고 무거운 점감형 한 꼬리",
-    avoid: "확정적인 종 고유 머리나 콧등, 코끼리 발굽, 길게 벌어진 손가락, 브라키오사우루스식 높은 어깨, 디플로도쿠스식 채찍 꼬리, 카마라사우루스식 각진 두개골, 티타노사우루스 갑옷, 이족보행 자세, 직접 포식 접촉, 가족·무리 단정, 숨은 발, 잘린 꼬리, 여분 팔다리, 이중 꼬리, 과한 유혈",
+    avoid: "확정적인 종 고유 머리나 콧등, 코끼리 발굽, 길게 벌어진 손가락, 브라키오사우루스식 높은 어깨, 디플로도쿠스식 채찍 꼬리, 카마라사우루스식 각진 두개골, 티타노사우루스 갑옷, 이족보행 자세, 듀어스 팜 용각류형 흔적을 케티오사우루스가 남긴 것으로 확정, 직접 포식 접촉, 가족·무리 단정, 숨은 발, 잘린 꼬리, 여분 팔다리, 이중 꼬리, 과한 유혈",
   },
   "sarahsaurus-aurifontanalis": {
     color: "따뜻한 올리브 갈색 몸, 변형에서 청회색 등 안장 무늬, 황토빛 황갈색 옆구리, 옅은 크림색 배, 차분한 녹슨빛/구리빛 어깨와 엉덩이 패치, 카옌타 붉은 협곡 보호색",
@@ -26338,7 +26414,7 @@ const visualVariationProfiles = {
     pattern: "옆구리의 성긴 후추점, 한쪽 볼의 적갈색 블록, 얇은 프릴 가장자리 색, 꼬리 쪽의 부드러운 띠; 여섯 장 모두 같은 개체군 모티프를 유지하되 방향·날씨·시점은 반복하지 않음",
     texture: "고운 무광 자갈질 비늘, 각질 앵무새형 부리, 납작한 삼각형 앞손 발톱과 작고 둥근 뒷발 발톱",
     anatomy: "약 2 m의 낮은 성체 사족보행 몸, 짧고 깊은 부리형 머리, 낮은 코 융기, 옆으로 발달한 광대, 뒤로 뻗는 중간 크기 피부 덮인 프릴, 두 앞다리와 손마다 다섯 손가락, 두 뒷다리와 발마다 네 기능성 발가락, 꼬리 하나",
-    avoid: "트리케라톱스식 뿔, 스티라코사우루스식 가시, 외부로 열린 프릴 창, 수직 반원형 프릴, 코뿔소·불도그 몸, 이구아나 머리, 거대 부리, 앞뒤가 같은 다섯 발가락 도마뱀발, 세 발가락 뒷발, 네 손가락 앞손, 여분 팔다리, 숨은 발, 잘린·갈라진 꼬리",
+    avoid: "트리케라톱스식 뿔, 스티라코사우루스식 가시, 외부로 열린 프릴 창, 수직 반원형 프릴, 코뿔소·불도그 몸, 이구아나 머리, 거대 부리, 앞뒤가 같은 다섯 발가락 도마뱀발, 세 발가락 뒷발, 네 손가락 앞손, 여분 팔다리, 숨은 발, 잘린·갈라진 꼬리, 어린 개체를 대칭 원형 방어진이나 중앙 일렬 구도로 묶기, 먼 비진단 수각류를 벨로키랍토르로 확정",
   },
   "psittacosaurus-mongoliensis": {
     color: "대표형은 짙은 자두색-차콜 등 안장, 채도를 낮춘 유칼립투스색 옆구리, 따뜻한 황토색 배, 산호색 뺨, 상아색 부리; 변이형은 같은 배치를 유지하되 청회색 옆구리와 남색 꼬리 기부 대비를 강화",
@@ -26831,14 +26907,14 @@ const generationRouteGuides = {
   },
   "megalosaurus-bucklandii": {
     focus: "Benson 2010의 오른쪽 아래턱 치골 OUMNH J.13505와 분리된 상완골·척골·골반·뒷다리 증거; 완전한 두개골·요골·손·발·관절된 전신·꼬리 끝의 비보존 경계; Stonesfield의 폭풍 재퇴적 얕은 탄산염 대륙붕 맥락",
-    route: "stonesfield_megalosaurus_known_dentary_and_robust_forelimb_control_then_original_size_head_both_arms_both_feet_pelvis_tail_review; skull_manus_pes_integument_and_behavior_explicitly_comparative",
+    route: "stonesfield_megalosaurus_known_dentary_and_robust_forelimb_control_then_original_size_head_both_arms_both_feet_pelvis_tail_review; skull_manus_pes_integument_and_behavior_explicitly_comparative; dewars_trace_scene_uses_orthographic_four_sauropod_corridors_plus_one_crossing_theropod_trail_with_megalosaurus_as_analogue_only",
     control: "assets/dinosaurs/megalosaurus-bucklandii-ironblue-taynton-representative-imagegen-v3.png",
     pass: "단일 개체 대표 전신 | 약 6m급 메갈로사우루스류 | 튼튼한 중간 길이 팔 | 정확히 두 앞다리와 두 뒷다리 | 골반에서 한 번 시작하는 긴 한 꼬리 | 직접 알려진 아래턱·상완부 단서와 비교 복원된 머리·손·발의 구분 | 탄산염 섬 육상 표면과 폭풍 유출수 | 공격·사체 없는 역할 분리",
     reject: "완전한 두개골·손·발을 확정 해부로 제시, 티라노사우루스식 거대 머리나 작은 팔, 알로사우루스식 눈썹뿔, 케라토사우루스 코뿔, 딜로포사우루스 쌍 볏·목도리, 수중 생활, 메갈로사우루스가 남긴 것으로 단정한 발자국, 직접 케티오사우루스 공격·추격·사체, 여분 팔다리·손가락·꼬리, 손처럼 벌어진 뒷발, 숨은 발, 잘린 꼬리, 과한 유혈이 있으면 탈락",
   },
   "cetiosaurus-oxoniensis": {
     focus: "바토니아절 Forest Marble의 Cetiosaurus oxoniensis; 두개골·완전한 손발·꼬리 끝 미상, 상완골보다 긴 대퇴골, 짧은 중수골 U자형 앞발 기둥, 어깨가 높지 않은 튼튼한 초기 진용각류",
-    route: "forest_marble_cetiosaurus_lectotype_limb_ratio_control_then_skull_manus_pes_uncertainty_review",
+    route: "forest_marble_cetiosaurus_lectotype_limb_ratio_control_then_skull_manus_pes_uncertainty_review; dewars_trace_scene_uses_orthographic_four_two_rail_sauropod_corridors_plus_one_crossing_theropod_trail_with_cetiosaurus_as_analogue_only",
     control: "assets/dinosaurs/cetiosaurus-oxoniensis-bottlegreen-forest-marble-representative-imagegen-v2.png",
     pass: "단일 개체 전신 | 깊은 수평 몸통 | 중간 길이의 두꺼운 목 | 보수적인 작은 머리 | 정확히 두 앞다리와 두 뒷다리 | 상완골보다 긴 대퇴골 | 짧고 반기둥형인 중수골 앞발 | 어깨가 엉덩이보다 높지 않음 | 골반에서 한 번 시작하는 길고 무거운 한 꼬리 | 녹회색 갯벌·조수로·석회암 사주의 Forest Marble 서식지",
     reject: "확정적인 볏·콧등·종 고유 머리, 코끼리 발굽, 긴 손가락, 브라키오사우루스식 높은 어깨, 디플로도쿠스식 채찍 꼬리, 카마라사우루스식 각진 머리, 티타노사우루스 갑옷, 이족보행, 직접 공격·접촉, 무리·가족 단정, 숨은 발, 잘린 꼬리, 여분 팔다리, 이중 꼬리, 과한 유혈",
@@ -27314,10 +27390,10 @@ const generationRouteGuides = {
   },
   "protoceratops-andrewsi": {
     focus: "성체 사지골격과 연관 발자국으로 고정한 비각룡과 각룡류; 뒤로 뻗는 프릴·낮은 코 융기·두 앞손의 5지·두 뒷발의 기능성 4지·한 꼬리",
-    route: "5지 손·4지 발 해부 이미지를 수량 기준으로 사용하고 대표형의 세이지·청회색·크림색·적갈색 모티프를 유지합니다. 변이·서식지·공존·성장 장면은 방향, 카메라 높이, 날씨, 개체 수를 바꾸되 원본 크기의 양손·양발·꼬리를 다시 확인합니다. 성장 장면은 성체/유체 두개골 비율만 비교하고 성별·가족·돌봄을 주장하지 않습니다.",
+    route: "5지 손·4지 발 해부 이미지를 수량 기준으로 사용하고 대표형의 세이지·청회색·크림색·적갈색 모티프를 유지합니다. 변이·서식지·공존·성장 장면은 방향, 카메라 높이, 날씨, 개체 수를 바꾸되 원본 크기의 양손·양발·꼬리를 다시 확인합니다. 성장 장면은 성체/유체 두개골 비율만 비교하고 성별·가족·돌봄을 주장하지 않습니다. 네 유체 집합 장면은 정확히 네 개체를 비대칭 호형·서로 다른 깊이와 방향·열린 중앙 통로로 배치하고, 먼 비진단 수각류는 종 미확정 맥락으로만 표시합니다.",
     control: "assets/dinosaurs/protoceratops-andrewsi-fivefinger-fourtoe-anatomy-imagegen-v1.png",
     pass: "전신과 꼬리 끝이 한 화면에 있음 | 낮은 성체 사족보행 몸 | 짧고 깊은 앵무새형 부리 머리 | 낮은 코 융기 | 옆으로 발달한 광대 | 뒤로 뻗는 중간 크기 피부 덮인 프릴 | 앞다리 정확히 두 개 | 앞손마다 다섯 손가락과 납작한 삼각형 끝 | 뒷다리 정확히 두 개 | 뒷발마다 네 개의 넓은 기능성 발가락과 작은 둥근 발톱 | 골반에서 이어지는 꼬리 정확히 하나 | 양손·양발·꼬리 원본 크롭 통과",
-    reject: "긴 얼굴뿔·눈썹뿔, 프릴 가시·외부 창·수직 반원형 방패, 코뿔소·불도그 몸, 이구아나 머리, 거대 마코앵무 부리, 네 손가락 앞손, 세 발가락 또는 다섯 발가락 뒷발, 앞뒤가 같은 도마뱀발, 여분·융합 팔다리, 가려진 발, 잘린·갈라진 꼬리, 성장 차이를 성별·가족·부모 돌봄으로 확정하면 탈락",
+    reject: "긴 얼굴뿔·눈썹뿔, 프릴 가시·외부 창·수직 반원형 방패, 코뿔소·불도그 몸, 이구아나 머리, 거대 마코앵무 부리, 네 손가락 앞손, 세 발가락 또는 다섯 발가락 뒷발, 앞뒤가 같은 도마뱀발, 여분·융합 팔다리, 가려진 발, 잘린·갈라진 꼬리, 성장 차이를 성별·가족·부모 돌봄으로 확정, 유체 네 마리를 대칭 방어 원형이나 중앙 일렬로 반복, 비진단 원경 수각류를 벨로키랍토르로 표기하면 탈락",
   },
   "psittacosaurus-mongoliensis": {
     focus: "P. mongoliensis의 작은 상대 두개골·높은 콧구멍·피라미드형 광대뿔·매우 짧은 수평 뒤통수 선반·성체 이족보행·4지 손·4지 발·한 꼬리를 먼저 고정하고 종 미확정 강모를 필수 특징에서 제외",

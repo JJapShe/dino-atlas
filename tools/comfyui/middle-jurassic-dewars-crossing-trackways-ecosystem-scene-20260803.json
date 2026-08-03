@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "dewars-farm-sauropod-theropod-crossing-trackways",
+  "title": "듀어스 팜의 교차 발자국길 구조 복원",
+  "useCase": "scientific-educational trace-evidence reconstruction",
+  "audienceAgeRange": "5-14",
+  "projectAsset": "assets/dinosaurs/cetiosaurus-oxoniensis-megalosaurus-bucklandii-analogue-crossing-trackways-trace-evidence-imagegen-hybrid-v1.png",
+  "seed": "not exposed by generator",
+  "generator": "OpenAI built-in image generation",
+  "copyrightSafety": {
+    "status": "project-owned generated and authored hybrid asset",
+    "note": "The mud and first naturalized track plate are new built-in generations. Track topology and the final nine tridactyl impressions are project-authored SVG/Sharp overlays. No third-party artwork or site photography was used as an image reference."
+  },
+  "participants": [
+    {
+      "taxonId": "cetiosaurus-oxoniensis",
+      "scientificName": "Cetiosaurus oxoniensis",
+      "sceneRole": "regional sauropod trackmaker analogue only",
+      "exactTrackmaker": false
+    },
+    {
+      "taxonId": "megalosaurus-bucklandii",
+      "scientificName": "Megalosaurus bucklandii",
+      "sceneRole": "regional large-theropod trackmaker analogue only",
+      "exactTrackmaker": false
+    }
+  ],
+  "asset": {
+    "sourceNaturalizedGenerationPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-117813d7-761a-4bdf-8405-949834f3d2d6.png",
+    "projectPath": "assets/dinosaurs/cetiosaurus-oxoniensis-megalosaurus-bucklandii-analogue-crossing-trackways-trace-evidence-imagegen-hybrid-v1.png",
+    "width": 1672,
+    "height": 941,
+    "orientation": "landscape",
+    "bytes": 4097161,
+    "sha256": "5c15e00136927b675158907086140d77fe9db9e4d17f8ebe2253e9ce90fd9c95"
+  },
+  "composition": {
+    "compositionKey": "landscape-orthographic-crossing-trackways",
+    "family": "evidence-led-plan-view",
+    "camera": "strict overhead orthographic evidence view",
+    "spatialSignature": "four vertically oriented wide two-rail sauropod corridors span the frame while one nine-print tridactyl trail crosses diagonally without a clear superimposed order",
+    "variationIntent": "replace body-centered encounter staging with a trace-only plan view, repeated path rhythm, negative mud channels and a single diagonal counter-axis"
+  },
+  "workflow": {
+    "provider": "OpenAI built-in image_gen plus project-authored SVG/Sharp topology",
+    "mode": "hybrid evidence reconstruction",
+    "model": "built-in tool model not exposed",
+    "seed": "not exposed by generator",
+    "generationDate": "2026-08-03",
+    "naturalizedCallId": "exec-117813d7-761a-4bdf-8405-949834f3d2d6",
+    "emptyMudCallId": "exec-654b6dd5-3501-4b55-bbe1-2ccef066885c",
+    "structureGuide": "tools/comfyui/trackway-orthographic-structure-guide-v1.svg",
+    "compositionScript": "tools/comfyui/scripts/compose_trackway_evidence_plate.mjs",
+    "iterationHistory": [
+      {
+        "callId": "exec-012cf3f8-f5cd-4f18-9736-140d309c972c",
+        "status": "rejected",
+        "reason": "single-line sauropod topology and malformed small prints"
+      },
+      {
+        "callId": "exec-3bf855a6-f5d6-43fc-869f-44f7c5383945",
+        "status": "rejected",
+        "reason": "four paths remained single-file rather than paired rails"
+      },
+      {
+        "callId": "exec-14e36aa7-180a-4512-923f-c6ccbe8c5db4",
+        "status": "rejected",
+        "reason": "two-rail grouping remained ambiguous"
+      },
+      {
+        "callId": "exec-a783f685-443d-4c98-a8f0-6ac5f04993a6",
+        "status": "rejected",
+        "reason": "natural texture passed but all four sauropod trackways collapsed to centerlines"
+      },
+      {
+        "callId": "exec-117813d7-761a-4bdf-8405-949834f3d2d6",
+        "status": "approved-as-generated-base",
+        "reason": "naturalized eight-rail sauropod topology retained; diagonal prints were missing and were restored with an authored nine-print overlay"
+      }
+    ]
+  },
+  "prompt": "STRICT TEXTURE-ONLY NATURALIZATION EDIT of an evidence reconstruction. The reference is the locked topology authority. Preserve EVERY footprint's position, count, grouping, direction, and overhead 16:9 framing. It contains exactly FOUR sauropod trackway corridors. Each corridor has exactly TWO laterally separated parallel rails (total eight rails), with an untouched central mud strip visible between its left and right rail. Each rail has four alternating manus-pes sets: a large oval hind-foot impression and a smaller crescent forefoot impression just ahead. Preserve the half-stride left/right staggering. Also preserve exactly ONE diagonal theropod trail of nine large, separated tridactyl prints. Do not merge rails, delete prints, add prints, change any trail, or turn them into four single centerlines. Change ONLY rendering quality: make the diagram-like impressions look physically pressed into the same wet Middle Jurassic limestone mud, with irregular compressed rims, subtle slumped edges, shallow pooled water, displaced silt, and varied natural depth. Reduce graphic outlines and repeated stamp appearance while keeping the topology unambiguous. Strict vertical orthographic plan view. No dinosaur bodies, people, labels, arrows, text, horizon, modern tire marks, or fossil slab. Evidence-led, natural museum reconstruction, copyright-safe original.",
+  "overlayWorkflow": "The generated naturalized base retained four sauropod corridors with two rails each but omitted the crossing theropod trail. The project-authored compose_trackway_evidence_plate.mjs script added exactly nine broad tridactyl impressions on one diagonal path. The overlay does not reproduce surveyed footprint coordinates or claim track order.",
+  "traceEvidence": {
+    "bodiesShown": false,
+    "exactTaxonClaim": false,
+    "simultaneousCrossingClaim": false,
+    "interactionClaim": false,
+    "observed": [
+      "four sauropod-type trackways were reported at the Dewars Farm site",
+      "one large theropod-type trackway was reported crossing the area"
+    ],
+    "reconstructed": [
+      "exact footprint shape, depth, spacing, wetness, lighting and plan-view arrangement"
+    ],
+    "notClaimed": [
+      "Cetiosaurus or Megalosaurus as exact trackmakers",
+      "survey-accurate coordinates or stride measurements",
+      "simultaneous passage, a chase, a hunt, herd behavior or which trackway came first"
+    ]
+  },
+  "evidence": {
+    "sources": [
+      {
+        "url": "https://www.ox.ac.uk/news/2025-01-02-major-new-footprint-discoveries-britain-s-dinosaur-highway",
+        "use": "reported Dewars Farm tracksite, Middle Jurassic age and four sauropod trackways crossed by a large theropod trackway"
+      },
+      {
+        "url": "https://www.ox.ac.uk/news/2026-06-25-return-to-the-dinosaur-highway",
+        "use": "updated Oxford account and cautious regional Cetiosaurus/Megalosaurus comparison language"
+      }
+    ],
+    "supportedClaim": "The educational plate may show four broad sauropod-type trackways and one crossing large-theropod-type trackway.",
+    "claimBoundary": "Cetiosaurus and Megalosaurus are regional body-plan analogues, not identified trackmakers. The plate is not a photogrammetric site map and does not establish timing, encounter, chase, herd movement or track order."
+  },
+  "license": {
+    "type": "generated-and-project-authored-hybrid-asset",
+    "label": "Generated project asset with authored evidence overlay",
+    "copyrightSafety": "new built-in generation plus project-authored vector topology; no external artwork or site photo pixels used",
+    "use": "Dino Atlas trace-evidence catalog subject to separate review gates"
+  },
+  "review": {
+    "overall": "approved for trace-evidence ecosystem review; never a body-anatomy reference or representative image",
+    "trace": {
+      "status": "passed",
+      "verdict": "Exactly four two-rail sauropod corridors and one nine-print diagonal tridactyl trail are readable; no clear superimposition claims an order."
+    },
+    "anatomy": {
+      "status": "not-applicable-bodies-absent",
+      "verdict": "No dinosaur bodies are shown. Review covers trace topology only."
+    },
+    "ecology": {
+      "status": "passed-with-attribution-boundary",
+      "verdict": "The reported four-plus-one crossing pattern is supported; exact makers, measurements, simultaneity and behavior are excluded."
+    },
+    "composition": {
+      "status": "passed",
+      "verdict": "Strict orthographic trace-only plan view creates a unique evidence-led composition family unlike all body-centered scenes."
+    },
+    "contentSafety": {
+      "status": "passed",
+      "verdict": "No bodies, attack, blood, carcass, text, watermark or modern object is visible."
+    },
+    "representativeEligible": false,
+    "responsive": {
+      "status": "passed",
+      "evidence": "2026-08-03 root QA at 1440x900, 390x844, 320x700 and 844x390; reduced-size trace readability, decode, contain, no horizontal overflow, filters, scoped lightbox, tap-hide and image-only pinch regression passed."
+    },
+    "publication": "published ecosystem catalog"
+  }
+}

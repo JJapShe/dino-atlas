@@ -277,6 +277,66 @@
         "status": "published",
         "eligible": true
       }
+    },
+    "protoceratops-juvenile-aggregation-djadokhta": {
+      "asset": "assets/dinosaurs/protoceratops-andrewsi-four-juvenile-aggregation-distant-theropod-herd-growth-imagegen-v1.png",
+      "compositionKey": "portrait-juvenile-arc-horizon-separated-context",
+      "representativeEligible": false,
+      "labelBoundary": "The fifth animal is unidentified small-theropod context and must not be labelled Velociraptor.",
+      "gates": {
+        "anatomy": {
+          "status": "supported",
+          "evidence": "tools/comfyui/protoceratops-juvenile-aggregation-ecosystem-scene-20260803.json#review/anatomy",
+          "scope": "four juvenile Protoceratops only; distant theropod excluded from taxonomic identification"
+        },
+        "ecology": {
+          "status": "supported",
+          "evidence": "tools/comfyui/protoceratops-juvenile-aggregation-ecosystem-scene-20260803.json#review/ecology",
+          "scope": "four-juvenile aggregation; no family, permanent herd, defense, attack, or exact distant-taxon claim"
+        },
+        "responsive": {
+          "status": "supported",
+          "evidence": "2026-08-03 root QA passed at 1440x900, 390x844, 320x700 and 844x390: decode, contain, no overflow, filters, scoped lightbox, tap-hide and image-only pinch regression"
+        },
+        "publication": {
+          "status": "published",
+          "evidence": "anatomy, ecology, composition, label boundary and responsive gates supported; representative promotion remains prohibited"
+        }
+      },
+      "publication": {
+        "status": "published",
+        "eligible": true
+      }
+    },
+    "dewars-farm-sauropod-theropod-crossing-trackways": {
+      "asset": "assets/dinosaurs/cetiosaurus-oxoniensis-megalosaurus-bucklandii-analogue-crossing-trackways-trace-evidence-imagegen-hybrid-v1.png",
+      "compositionKey": "landscape-orthographic-crossing-trackways",
+      "representativeEligible": false,
+      "labelBoundary": "Cetiosaurus and Megalosaurus are regional trackmaker analogues, not exact trackmaker identifications.",
+      "gates": {
+        "anatomy": {
+          "status": "supported",
+          "evidence": "tools/comfyui/middle-jurassic-dewars-crossing-trackways-ecosystem-scene-20260803.json#review/trace",
+          "scope": "trace topology only; no dinosaur bodies or body-anatomy claim"
+        },
+        "ecology": {
+          "status": "supported",
+          "evidence": "tools/comfyui/middle-jurassic-dewars-crossing-trackways-ecosystem-scene-20260803.json#review/ecology",
+          "scope": "four-plus-one crossing pattern; no exact maker, measurement, simultaneity, pursuit, herd, or track-order claim"
+        },
+        "responsive": {
+          "status": "supported",
+          "evidence": "2026-08-03 root QA passed at 1440x900, 390x844, 320x700 and 844x390: trace readability, decode, contain, no overflow, filters, scoped lightbox, tap-hide and image-only pinch regression"
+        },
+        "publication": {
+          "status": "published",
+          "evidence": "trace, ecology, evidence boundary, composition and responsive gates supported; exact-trackmaker and representative promotion remain prohibited"
+        }
+      },
+      "publication": {
+        "status": "published",
+        "eligible": true
+      }
     }
   }
 }

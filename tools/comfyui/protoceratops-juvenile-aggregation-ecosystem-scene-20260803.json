@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "protoceratops-juvenile-aggregation-djadokhta",
+  "title": "사구 평원의 어린 프로토케라톱스 네 마리",
+  "useCase": "scientific-educational ecosystem scene",
+  "audienceAgeRange": "5-14",
+  "projectAsset": "assets/dinosaurs/protoceratops-andrewsi-four-juvenile-aggregation-distant-theropod-herd-growth-imagegen-v1.png",
+  "seed": "not exposed by generator",
+  "generator": "OpenAI built-in image generation",
+  "copyrightSafety": {
+    "status": "project-owned generated asset",
+    "note": "The approved image is a new built-in generation. Project-owned images were used only as anatomy and composition references; no external artwork pixels or composition were copied."
+  },
+  "participants": [
+    {
+      "taxonId": "protoceratops-andrewsi",
+      "scientificName": "Protoceratops andrewsi",
+      "count": 4,
+      "sceneRole": "four juvenile-sized foreground and near-midground animals"
+    }
+  ],
+  "unresolvedContextFauna": {
+    "visible": true,
+    "label": "unidentified small theropod",
+    "boundary": "The distant animal lacks enough diagnostic feather, hand, and pedal detail for a genus- or species-level identification. It must not be labelled Velociraptor in the public catalog."
+  },
+  "asset": {
+    "sourceGenerationPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-07938abd-2f26-4afc-83de-5164fadd0941.png",
+    "projectPath": "assets/dinosaurs/protoceratops-andrewsi-four-juvenile-aggregation-distant-theropod-herd-growth-imagegen-v1.png",
+    "width": 1024,
+    "height": 1536,
+    "orientation": "portrait",
+    "bytes": 3093577,
+    "sha256": "f314971200009e363964880a659b21c7e5d89e8acc2a623c9d3b8b9a10d7f251"
+  },
+  "composition": {
+    "compositionKey": "portrait-juvenile-arc-horizon-separated-context",
+    "family": "nearfield-arc-depth",
+    "camera": "low-to-moderate field-observation portrait with deep horizon",
+    "spatialSignature": "four juveniles form a loose asymmetric lower-field arc, a broad empty path rises through the center-right, and one unidentified small theropod remains isolated in the upper-left far midground",
+    "variationIntent": "add a portrait herd-growth composition without a centered lineup, defensive ring, mirrored poses, close confrontation, or the riverbank and forest formulas already used elsewhere"
+  },
+  "workflow": {
+    "provider": "OpenAI built-in image_gen",
+    "mode": "prompt-to-image with project-owned anatomy and composition references",
+    "model": "built-in tool model not exposed",
+    "seed": "not exposed by generator",
+    "generationDate": "2026-08-03",
+    "approvedCallId": "exec-07938abd-2f26-4afc-83de-5164fadd0941",
+    "iterationHistory": [
+      {
+        "callId": "exec-616aab36-78f8-43a1-81a1-8148b552eb7e",
+        "status": "rejected",
+        "reason": "high-oblique symmetric ring, adult-like frills, and tail cropping"
+      },
+      {
+        "callId": "exec-840a4f9c-e763-4e62-a13b-5561856c3016",
+        "status": "hold",
+        "reason": "four-juvenile composition passed, but the distant theropod was not taxonomically legible"
+      },
+      {
+        "callId": "exec-fe8b1895-8959-4c46-b62b-7f1f2c8ec613",
+        "status": "rejected-for-velociraptor-label",
+        "reason": "distant silhouette remained too generic for Velociraptor"
+      },
+      {
+        "callId": "exec-1e25919f-c029-4842-b580-b7c12abf15d4",
+        "status": "rejected-for-velociraptor-label",
+        "reason": "localized edit did not add diagnostic feather cues"
+      },
+      {
+        "callId": "exec-07938abd-2f26-4afc-83de-5164fadd0941",
+        "status": "approved-with-label-boundary",
+        "reason": "exactly four anatomically stable juveniles and a distinct asymmetric portrait composition; distant animal published only as an unidentified small theropod"
+      }
+    ]
+  },
+  "referenceImages": [
+    {
+      "path": "assets/dinosaurs/velociraptor-mongoliensis-djadokhta-raised-second-toe-representative-imagegen-v1.png",
+      "role": "anatomy-only attempt for the distant theropod",
+      "resultBoundary": "The generated result did not retain diagnostic feather detail, so the public scene does not identify the animal as Velociraptor."
+    }
+  ],
+  "prompt": "CREATE A NEW COPYRIGHT-SAFE ANATOMY-LED PALEOART SCENE, using reference 1 only for its unusual portrait spatial design and reference 2 for Velociraptor feather/anatomy cues. Portrait 2:3 composition. Exact animal count is mandatory: FOUR juvenile Protoceratops and ONE Velociraptor mongoliensis, no other animals. Place the four small juvenile Protoceratops as a loose asymmetrical broken crescent across the lower half, at four different depths and orientations, with clear space between every body, full tails and all four limbs visible where perspective allows. They are calmly foraging/walking, not forming a defensive ring. Place the single Velociraptor alone in the upper-left FAR MIDGROUND, clearly separated but large enough to identify, roughly 18–22 percent of image width. It walks left in crisp side profile and does not look at the juveniles: fully feathered compact body, wing-like feathered forelimbs held close, low narrow head, long stiff feathered tail, two long legs, one subtle raised second toe. Preserve a broad empty S-shaped visual corridor from lower center to upper right, a low-to-moderate ground-level camera, deep landscape layers, and large quiet sky. No centered lineup, no mirrored poses, no eye-line confrontation, no chase, no attack, no blood, no adult Protoceratops, no nest, no parenting, no text or border. Naturalistic museum-grade digital paleoart with restrained colors.",
+  "evidence": {
+    "sources": [
+      {
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0113306",
+        "use": "four associated mid-sized juvenile Protoceratops andrewsi individuals and limits on inferring permanent sociality"
+      },
+      {
+        "url": "https://www.amnh.org/explore/ology/ology-cards/038-fighting-dinosaurs",
+        "use": "Djadokhta fauna context and the separately known Protoceratops-Velociraptor association; not identification of the distant silhouette"
+      }
+    ],
+    "supportedClaim": "A specimen preserving four similarly sized juvenile Protoceratops supports a juvenile aggregation example.",
+    "claimBoundary": "The living spacing, foraging poses, color, weather, terrain and distant small theropod are reconstructed. The image does not show evidence of siblings, parents, a permanent herd, coordinated defense, an attack, or an identifiable Velociraptor."
+  },
+  "license": {
+    "type": "generated-project-asset",
+    "label": "Generated project asset",
+    "copyrightSafety": "new built-in generation using project references only",
+    "use": "Dino Atlas ecosystem catalog subject to separate review gates"
+  },
+  "review": {
+    "overall": "approved for ecosystem catalog herd-growth review with a generic distant-theropod label; never representative",
+    "anatomy": {
+      "status": "passed-for-scene-scale-protoceratops",
+      "verdict": "Exactly four juvenile Protoceratops are visible, separated, complete in frame, and free of duplicate limbs or body fusion."
+    },
+    "distantTheropod": {
+      "status": "passed-only-as-unidentified-context",
+      "verdict": "The fifth animal is spatially clear but lacks diagnostic feather and pedal detail; genus- and species-level labels are prohibited."
+    },
+    "ecology": {
+      "status": "passed-with-claim-boundary",
+      "verdict": "The four-juvenile association is evidence-based; family, permanent-herd, defense and encounter claims are excluded."
+    },
+    "composition": {
+      "status": "passed",
+      "verdict": "Portrait depth, asymmetric lower-field arc, distant upper-left context and an open central-right corridor form a distinct nearfield-arc-depth family."
+    },
+    "contentSafety": {
+      "status": "passed",
+      "verdict": "No attack, chase, contact, blood, carcass, nest, threat display, text or watermark is visible."
+    },
+    "representativeEligible": false,
+    "responsive": {
+      "status": "passed",
+      "evidence": "2026-08-03 root QA at 1440x900, 390x844, 320x700 and 844x390; decode, contain, no horizontal overflow, filters, scoped lightbox, tap-hide and image-only pinch regression passed."
+    },
+    "publication": "published ecosystem catalog"
+  }
+}
