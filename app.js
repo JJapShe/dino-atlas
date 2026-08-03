@@ -22248,7 +22248,184 @@ function renderEcosystems() {
         <strong>${scenes.length ? "조건에 맞는 장면이 없습니다." : "생태 장면을 준비하고 있습니다."}</strong>
         <span>${scenes.length ? "검색어나 시대·장면 유형 필터를 바꿔 보세요." : "승인된 프로젝트 자산과 근거 기록이 연결되면 여기에 표시됩니다."}</span>
       </div>
-    `;
+  `;
+}
+
+function getMotionSampleCatalog() {
+  const catalog = window.motionSampleCatalog;
+  if (!catalog || !Array.isArray(catalog.samples)) {
+    return { policy: {}, samples: [], isDraftPreview: false };
+  }
+  const isDraftPreview =
+    ["localhost", "127.0.0.1"].includes(window.location.hostname) &&
+    new URLSearchParams(window.location.search).get("motionPreview") === "draft";
+  const hasSafeRole = (sample) =>
+    sample?.tier === "M0" &&
+    sample?.motionClass === "environment-only" &&
+    sample?.representativeEligible === false &&
+    sample?.galleryEligible === false &&
+    /^assets\/dinosaurs\/[a-z0-9][a-z0-9.-]*\.png$/i.test(sample?.poster || "") &&
+    /^assets\/motion\/[a-z0-9][a-z0-9.-]*-m0-v[0-9]+\.mp4$/i.test(sample?.src || "");
+  const isPublished = (sample) =>
+    sample?.review?.motion?.status === "supported" &&
+    sample?.review?.responsive?.status === "supported" &&
+    sample?.review?.publication?.status === "published" &&
+    /^[a-f0-9]{64}$/.test(sample?.file?.sha256 || "") &&
+    Number.isFinite(sample?.file?.bytes) && sample.file.bytes > 0 &&
+    Number.isFinite(sample?.file?.width) && sample.file.width > 0 &&
+    Number.isFinite(sample?.file?.height) && sample.file.height > 0 &&
+    Number.isFinite(sample?.file?.durationSeconds) && sample.file.durationSeconds > 0 &&
+    Number.isFinite(sample?.file?.fps) && sample.file.fps > 0 &&
+    typeof sample?.file?.codec === "string" && sample.file.codec.length > 0;
+  const samples = catalog.samples.filter(
+    (sample) => hasSafeRole(sample) && (isDraftPreview || isPublished(sample)),
+  );
+  return { policy: catalog.policy || {}, samples, isDraftPreview };
+}
+
+function getMotionPlaybackPreference() {
+  return {
+    reducedMotion: window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches || false,
+    saveData: Boolean(navigator.connection?.saveData),
+  };
+}
+
+function getMotionReviewLabel(sample) {
+  return sample.review?.publication?.status === "published" ? "M0 공개 검수 완료" : "M0 로컬 검토용";
+}
+
+function renderMotionSampleCard(sample, playbackPreference) {
+  const conservativeLoading = playbackPreference.reducedMotion || playbackPreference.saveData;
+  const playbackNote = playbackPreference.saveData
+    ? "데이터 절약 설정 · 눌러야 파일을 불러옵니다"
+    : playbackPreference.reducedMotion
+      ? "움직임 줄이기 설정 · 직접 재생만 합니다"
+      : "자동재생 없음 · 눌러서 5초 재생";
+  const published = sample.review?.publication?.status === "published";
+  return `
+    <article class="motion-sample-card ${published ? "is-published" : "is-draft"}" data-motion-sample="${escapeHtml(sample.id)}">
+      <div class="motion-sample-media">
+        <video
+          id="motionVideo-${escapeHtml(sample.id)}"
+          data-motion-video="${escapeHtml(sample.id)}"
+          data-motion-src="${escapeHtml(sample.src)}"
+          poster="${escapeHtml(sample.poster)}"
+          preload="${conservativeLoading ? "none" : "metadata"}"
+          muted
+          playsinline
+          controlslist="nodownload noremoteplayback"
+          disablepictureinpicture
+          aria-label="${escapeHtml(sample.title)} 움직임 샘플"
+        ></video>
+        <button class="motion-play-button" data-motion-play="${escapeHtml(sample.id)}" type="button" aria-controls="motionVideo-${escapeHtml(sample.id)}">
+          <span aria-hidden="true">▶</span>
+          눌러서 재생
+        </button>
+        <span class="motion-tier-badge">M0 · 환경만 움직임</span>
+      </div>
+      <div class="motion-sample-body">
+        <div class="motion-sample-title-row">
+          <div>
+            <p class="eyebrow">${escapeHtml(sample.scientificName)}</p>
+            <h4>${escapeHtml(sample.title)}</h4>
+          </div>
+          <span class="motion-review-badge ${published ? "ready" : "pending"}">${escapeHtml(getMotionReviewLabel(sample))}</span>
+        </div>
+        <p>${escapeHtml(sample.description)}</p>
+        <dl class="motion-sample-facts">
+          <div><dt>움직이는 부분</dt><dd>${escapeHtml(sample.motionLabel)}</dd></div>
+          <div><dt>고정 규칙</dt><dd>공룡 몸체·카메라 고정</dd></div>
+        </dl>
+        <p class="motion-playback-note" data-motion-status role="status" aria-live="polite" aria-atomic="true">${escapeHtml(playbackNote)}</p>
+        <div class="motion-sample-footer">
+          <span>대표·갤러리 승격 불가</span>
+          <a href="${escapeHtml(sample.src)}" target="_blank" rel="noopener">동영상 파일 열기</a>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function syncMotionSamplePlaybackEvents() {
+  $$('[data-motion-video]').forEach((video) => {
+    const card = video.closest("[data-motion-sample]");
+    const button = card?.querySelector("[data-motion-play]");
+    const status = card?.querySelector("[data-motion-status]");
+    if (!card || !button || !status) return;
+    video.defaultMuted = true;
+    video.muted = true;
+    video.addEventListener("play", () => {
+      const transferFocus = document.activeElement === button;
+      card.classList.add("is-playing");
+      button.hidden = true;
+      status.textContent = "재생 중 · 소리 없음 · 공룡 몸체 고정";
+      if (transferFocus) video.focus({ preventScroll: true });
+    });
+    const markPaused = () => {
+      card.classList.remove("is-playing");
+      button.hidden = false;
+      button.innerHTML = '<span aria-hidden="true">▶</span> 다시 재생';
+      status.textContent = video.ended ? "재생 완료 · 원본 포스터로 돌아갈 수 있습니다" : "일시 정지됨";
+    };
+    video.addEventListener("pause", markPaused);
+    video.addEventListener("ended", markPaused);
+    video.addEventListener("error", () => {
+      card.classList.remove("is-playing");
+      card.classList.add("has-error");
+      button.hidden = false;
+      button.disabled = true;
+      button.textContent = "파일 준비 중";
+      status.textContent = "동영상 파일을 아직 불러올 수 없습니다. 포스터 이미지는 그대로 볼 수 있습니다.";
+    });
+  });
+}
+
+function renderMotionSamples() {
+  const lane = $("#motionSampleLane");
+  const grid = $("#motionSampleGrid");
+  const summary = $("#motionSampleSummary");
+  if (!lane || !grid || !summary) return;
+  const { samples, isDraftPreview } = getMotionSampleCatalog();
+  lane.hidden = samples.length === 0;
+  if (!samples.length) {
+    grid.innerHTML = "";
+    summary.textContent = "";
+    return;
+  }
+  const playbackPreference = getMotionPlaybackPreference();
+  summary.textContent = isDraftPreview
+    ? `로컬 초안 ${samples.length}개 · 파일과 검수 상태를 확인하는 미리보기입니다.`
+    : `검수 완료 샘플 ${samples.length}개 · 모두 클릭할 때만 재생됩니다.`;
+  grid.innerHTML = samples.map((sample) => renderMotionSampleCard(sample, playbackPreference)).join("");
+  syncMotionSamplePlaybackEvents();
+}
+
+async function toggleMotionSample(button) {
+  const card = button.closest("[data-motion-sample]");
+  const video = card?.querySelector("[data-motion-video]");
+  const status = card?.querySelector("[data-motion-status]");
+  if (!video || !status || button.disabled) return;
+  if (!video.paused) {
+    video.pause();
+    return;
+  }
+  $$('[data-motion-video]').forEach((otherVideo) => {
+    if (otherVideo !== video && !otherVideo.paused) otherVideo.pause();
+  });
+  if (!video.getAttribute("src")) {
+    video.src = video.dataset.motionSrc;
+    video.load();
+  }
+  video.controls = true;
+  video.tabIndex = 0;
+  video.muted = true;
+  status.textContent = "동영상을 불러오는 중입니다.";
+  try {
+    await video.play();
+  } catch (error) {
+    button.hidden = false;
+    status.textContent = "브라우저 재생 버튼을 한 번 더 눌러 주세요.";
+  }
 }
 
 function getGalleryItems(dino) {
@@ -28486,6 +28663,7 @@ function renderAll() {
   renderDetail();
   renderCatalog();
   renderEcosystems();
+  renderMotionSamples();
   renderReview();
 }
 
@@ -28845,6 +29023,12 @@ function bindEvents() {
     const button = event.target.closest("[data-ecosystem-scene]");
     if (!button) return;
     openFilteredEcosystemScene(button.dataset.ecosystemScene);
+  });
+
+  $("#motionSampleGrid")?.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-motion-play]");
+    if (!button) return;
+    toggleMotionSample(button);
   });
 
   $("#searchInput").addEventListener("input", (event) => {

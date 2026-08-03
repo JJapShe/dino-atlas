@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "batchId": "motion-pilot-batch-20260803",
+  "useCase": "scientific-educational Dino Atlas M0 motion pilot",
+  "audienceAgeRange": "5-14",
+  "policy": {
+    "tier": "M0",
+    "scope": "environment-only ambient motion over a fixed approved still",
+    "representativePromotion": "prohibited",
+    "galleryPromotion": "prohibited",
+    "autoplay": "prohibited",
+    "publicRequires": ["motion", "responsive", "publication"]
+  },
+  "copyrightSafety": {
+    "status": "project-owned derivative motion assets",
+    "note": "Each pilot derives only from its named project-owned generated still and a locally composited abstract environmental layer; no external footage or artwork is used."
+  },
+  "workflow": {
+    "generator": "local FFmpeg compositing",
+    "generatorVersion": "FFmpeg 8.1.1",
+    "seed": "not applicable; deterministic filter graph",
+    "targetContainer": "MP4",
+    "targetVideoCodec": "H.264",
+    "targetPixelFormat": "yuv420p",
+    "targetDurationSeconds": 5,
+    "targetFps": 24,
+    "targetDimensions": { "width": 960, "height": 640 },
+    "audio": "none",
+    "motionRule": "Keep the source still fixed. Animate only an isolated breath, ground-mist, or sky-light environmental layer.",
+    "motionQaThresholds": {
+      "significantChannelDifferenceFloor": 3,
+      "significantChangeEnergyInsideEffectZoneMinPercent": 95,
+      "protectedRegionMeanMax": 0.3,
+      "protectedRegionP99Max": 3,
+      "protectedRegionMaxMax": 13
+    },
+    "commands": {
+      "yutyrannus-huali-cold-breath-ambient-m0-v1": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/comfyui/scripts/build_motion_pilots.ps1 -Sample yutyrannus",
+      "tyrannosaurus-rex-ground-mist-ambient-m0-v1": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/comfyui/scripts/build_motion_pilots.ps1 -Sample tyrannosaurus",
+      "brachiosaurus-altithorax-skylight-ambient-m0-v1": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/comfyui/scripts/build_motion_pilots.ps1 -Sample brachiosaurus"
+    }
+  },
+  "samples": {
+    "yutyrannus-huali-cold-breath-ambient-m0-v1": {
+      "taxonId": "yutyrannus-huali",
+      "sourcePoster": "assets/dinosaurs/yutyrannus-huali-yixian-white-mottled-feathered-representative-imagegen-v1.png",
+      "projectAsset": "assets/motion/yutyrannus-huali-white-feather-cold-breath-ambient-m0-v1.mp4",
+      "motionClass": "environment-only",
+      "motionLayer": "localized cold-breath plume near the mouth",
+      "prompt": "M0 ambient-motion test: preserve every source-still anatomy pixel and composite only a subtle localized cold-breath plume; no body, head, limb, feather, camera, or background deformation.",
+      "file": { "sha256": "501c7fedc826ce49f97c687ff98250d63c0d66551024fbf651e215c38dbcdc3e", "bytes": 278194, "width": 960, "height": 640, "durationSeconds": 5, "fps": 24, "codec": "h264" },
+      "motionQa": {
+        "comparisonFrames": [0, 24],
+        "effectZone": { "x": [0, 110], "y": [85, 190] },
+        "protectedExclusionZone": { "x": [0, 130], "y": [75, 205] },
+        "protectedRegionDifference": { "mean": 0.067, "p99": 2, "max": 12 },
+        "significantChangeEnergyInsideEffectZonePercent": 99.11,
+        "visualStatus": "pass",
+        "note": "Two breath pulses remain left of the muzzle and are visible at mobile width without altering the animal."
+      },
+      "review": {
+        "anatomy": { "status": "poster-inherited", "note": "Not new anatomy evidence." },
+        "motion": { "status": "supported", "note": "Localized visibility and fixed-body checks passed; significant change is 99.11% inside the breath zone." },
+        "responsive": { "status": "supported", "note": "Passed at 1440x900, 390x844, and 844x390 on 2026-08-03." },
+        "publication": { "status": "published", "note": "File, motion, responsive, accessibility, and provenance gates passed on 2026-08-03." },
+        "representativeEligible": false,
+        "galleryEligible": false
+      }
+    },
+    "tyrannosaurus-rex-ground-mist-ambient-m0-v1": {
+      "taxonId": "tyrannosaurus-rex",
+      "sourcePoster": "assets/dinosaurs/tyrannosaurus-rex-hell-creek-deepskull-twofinger-representative-imagegen-v1.png",
+      "projectAsset": "assets/motion/tyrannosaurus-rex-hell-creek-ground-mist-ambient-m0-v1.mp4",
+      "motionClass": "environment-only",
+      "motionLayer": "low moving ground mist",
+      "prompt": "M0 ambient-motion test: preserve every source-still anatomy pixel and composite only low ground mist isolated below the animal; no body, head, limb, camera, or background deformation.",
+      "file": { "sha256": "d117470c403e29c2f2d394277e1e3ccf155cea23557ae2340004cf0bfd5309c7", "bytes": 220780, "width": 960, "height": 640, "durationSeconds": 5, "fps": 24, "codec": "h264" },
+      "motionQa": {
+        "comparisonFrames": [0, 72],
+        "effectZone": { "x": [580, 960], "y": [385, 530] },
+        "protectedExclusionZone": { "x": [550, 960], "y": [360, 550] },
+        "protectedRegionDifference": { "mean": 0.0296, "p99": 1, "max": 6 },
+        "significantChangeEnergyInsideEffectZonePercent": 99.59,
+        "visualStatus": "pass",
+        "note": "Mist stays in the right foreground, clear of the head, feet, tail underside, and body silhouette."
+      },
+      "review": {
+        "anatomy": { "status": "poster-inherited", "note": "Not new anatomy evidence." },
+        "motion": { "status": "supported", "note": "Ground isolation and fixed-body checks passed; significant change is 99.59% inside the mist zone." },
+        "responsive": { "status": "supported", "note": "Passed at 1440x900, 390x844, and 844x390 on 2026-08-03." },
+        "publication": { "status": "published", "note": "File, motion, responsive, accessibility, and provenance gates passed on 2026-08-03." },
+        "representativeEligible": false,
+        "galleryEligible": false
+      }
+    },
+    "brachiosaurus-altithorax-skylight-ambient-m0-v1": {
+      "taxonId": "brachiosaurus-altithorax",
+      "sourcePoster": "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-fullbody-imagegen-v18.png",
+      "projectAsset": "assets/motion/brachiosaurus-altithorax-high-shoulder-skylight-ambient-m0-v1.mp4",
+      "motionClass": "environment-only",
+      "motionLayer": "slow sky-light and upper-atmosphere haze",
+      "prompt": "M0 ambient-motion test: preserve every source-still anatomy pixel, especially the high shoulders and rounded nasal mound/high nostril cue, and composite only subtle upper-frame sky-light and haze; no body, head, limb, camera, or background deformation.",
+      "file": { "sha256": "1fc75a90a54d9c497afdc9892f27041dbad246d7d0fc2dc7acb8efc11c3f3362", "bytes": 307698, "width": 960, "height": 640, "durationSeconds": 5, "fps": 24, "codec": "h264" },
+      "motionQa": {
+        "comparisonFrames": [0, 72],
+        "effectZone": { "x": [340, 760], "y": [0, 230] },
+        "protectedExclusionZone": { "x": [320, 790], "y": [0, 250] },
+        "protectedRegionDifference": { "mean": 0.0458, "p99": 2, "max": 13 },
+        "significantChangeEnergyInsideEffectZonePercent": 99.65,
+        "visualStatus": "pass",
+        "note": "Sky-light remains above and right of the neck; the rounded nasal mound, high nostril, and high-shouldered body plan remain untouched."
+      },
+      "review": {
+        "anatomy": { "status": "poster-inherited", "note": "High shoulders and nasal mound remain inherited from the fixed poster; not new anatomy evidence." },
+        "motion": { "status": "supported", "note": "Sky isolation and fixed-body checks passed; significant change is 99.65% inside the sky-light zone." },
+        "responsive": { "status": "supported", "note": "Passed at 1440x900, 390x844, and 844x390 on 2026-08-03." },
+        "publication": { "status": "published", "note": "File, motion, responsive, accessibility, and provenance gates passed on 2026-08-03." },
+        "representativeEligible": false,
+        "galleryEligible": false
+      }
+    }
+  }
+}
