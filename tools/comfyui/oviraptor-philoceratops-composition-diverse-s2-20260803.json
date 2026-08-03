@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-03-oviraptor-composition-diversity-1",
+  "taxonId": "oviraptor-philoceratops",
+  "taxonName": "Oviraptor philoceratops",
+  "createdAt": "2026-08-03T13:18:58.452Z",
+  "audience": "Korean Dino Atlas users ages 5-14",
+  "requestedVisualTrait": "Replace a recolor-like slot-2 duplicate with an anatomy-locked but direction, camera, action, and background-diverse color-pattern image",
+  "evidenceBoundary": {
+    "direct": [
+      "AMNH FR 6517 is the crushed and incomplete holotype basis for Oviraptor philoceratops.",
+      "The holotype comparison supports a relatively longer anterior mandible and a conservative distinction from the shorter, deeper Citipati skull.",
+      "The preserved forelimb material and broader oviraptorid anatomy support paired three-fingered hands."
+    ],
+    "inferred": [
+      "The complete body outline, dense plumage, arm feathers, tail fan, exact hind limbs, and full-body proportions combine the incomplete holotype with conservative oviraptorid comparison.",
+      "The red dune scarp and rare post-rain interdune runoff are formation-level habitat reconstruction rather than a fossilized moment."
+    ],
+    "hypothetical": [
+      "Aubergine, sage, sand, and rust colors, all marking placement, soft-tissue details, weather, lighting, gait, and exact scene."
+    ]
+  },
+  "copyrightSafety": {
+    "externalArtworkUsed": false,
+    "externalImagesUsedAsGenerationInput": false,
+    "projectGeneratedReferenceOnly": true,
+    "licenseRecord": "Original project-generated bitmap asset. Papers and library records were used only for factual anatomy constraints; no figure, fossil plate, reconstruction, or named-artist style was supplied to the generator or copied.",
+    "appPathPolicy": "Only the approved species-prefixed project copy under assets/dinosaurs is referenced by app.js and gallery-slots.js. Rejected private drafts are identified only by generator call ID."
+  },
+  "sources": [
+    {
+      "url": "https://www.biodiversitylibrary.org/bibliography/91154",
+      "citation": "Clark, Norell and Rowe 2002. Cranial anatomy of Citipati osmolskae and a reinterpretation of the holotype of Oviraptor philoceratops. American Museum Novitates 3364.",
+      "use": "Conservative holotype skull and mandible proportions, incomplete preservation, and separation from Citipati",
+      "rightsUse": "Factual reference only; no figure or artwork copied"
+    },
+    {
+      "url": "https://doi.org/10.1126/science.266.5186.779",
+      "citation": "Norell et al. 1994. A theropod dinosaur embryo and the affinities of the Flaming Cliffs dinosaur eggs. Science 266:779-782.",
+      "use": "Oviraptorid reproductive and egg context only; not evidence for this individual scene",
+      "rightsUse": "Factual reference only; no figure or artwork copied"
+    }
+  ],
+  "promptRecordProvenance": "The generator did not embed prompts or seeds in the PNG. Call IDs and ordered semantic constraints were preserved from the working session; the arrays below are normalized reconstructions, not claimed as byte-for-byte transcripts.",
+  "record": {
+    "gallerySlot": 2,
+    "galleryRole": "color-pattern",
+    "kind": "review hold",
+    "status": "approved-for-gallery-not-representative",
+    "representativeEligible": false,
+    "generatedAt": "2026-08-03T13:12:10.5655413Z",
+    "generator": "OpenAI built-in image generation",
+    "workflow": "reference-guided prompt-to-image followed by two precise head-and-hand correction passes",
+    "seed": "not exposed by generator",
+    "callId": "exec-a8633ce8-2aeb-4d17-9ac7-47a55156ec5f",
+    "sourceDraftCallId": "exec-b476df0d-2503-4c03-b926-d525ba371ce6",
+    "intermediateCorrectionCallId": "exec-78e208aa-1632-44fb-81f8-f540349447d7",
+    "approvedProjectPath": "assets/dinosaurs/oviraptor-philoceratops-postrain-rill-rear-three-quarter-aubergine-sage-pattern-imagegen-v1.png",
+    "sha256": "CA7EA42694F8A58060BE3C3CAE75B5E6CB4DB284AF71502C076BEF64D3E89359",
+    "bytes": 3103926,
+    "dimensions": "1536x1024",
+    "compositionKey": "right-facing-rear-three-quarter-postrain-rill-crossing",
+    "referenceImages": [
+      "assets/dinosaurs/oviraptor-philoceratops-robust-lowcrest-rostrum-representative-imagegen-v3.png"
+    ],
+    "initialPrompt": [
+      "Use case: scientific-educational Dino Atlas gallery image for Korean children ages 5-14.",
+      "Input image: use the approved Oviraptor philoceratops representative only for conservative species identity, anatomy, proportions, and body-relative marking topology; do not copy its pose, camera, silhouette placement, dry ground, horizon, shrubs, or background composition.",
+      "Primary request: exactly one robust, fully feathered Oviraptor philoceratops with a relatively elongate deep toothless rostrum, low restrained midline crest, short compact body, exactly two forelimbs with exactly three fingers on each hand, exactly two hind limbs with three main toes per foot, and one short pelvis-origin feathered tail.",
+      "Composition: landscape, complete animal in a right-facing rear three-quarter walking view from a slightly elevated left-rear camera. Cross a shallow diagonal post-rain runoff rill beneath an oblique red dune scarp. Keep every limb connection, both hands, both feet, the pelvis-tail connection, and tail tip readable. This must differ from slot 1 in facing direction, camera azimuth, camera height, action, subject placement, wet foreground, horizon, and background structure; a horizontal mirror does not qualify.",
+      "Environment: Late Cretaceous Djadokhta Formation semiarid dune field after rare rain, firm interdune silt, localized wet runoff and sparse low non-grass scrub. No modern lawn or lush forest.",
+      "Palette: approved variant-b with an aubergine dorsum, restrained sage shoulder and arm-feather fields, pale sandy belly, subtle rust throat, matte gray beak, and low-contrast irregular plumage transitions. No global color filter or regular tail rings.",
+      "Style: original copyright-safe naturalistic museum paleoart, anatomically conservative, realistic weight, child-friendly and non-cartoon, no named-artist imitation.",
+      "Avoid: modern parrot, owl, cassowary, or ostrich head; short strongly hooked modern-bird beak; Citipati-like short deep rectangular skull or tall broad crest; swan neck; gracile Avimimus body; teeth; one-claw hand; sickle claw; extra, missing, fused, or hidden limbs, fingers, feet, or tails; text, logo, watermark, split panel, blood, or wounds."
+    ],
+    "firstCorrectionPrompt": [
+      "Use case: precise anatomy edit of the generated Oviraptor slot-2 candidate.",
+      "Inputs: the new rear-three-quarter scene is the edit target; the approved representative is an identity and head-proportion reference only.",
+      "Correct the head toward a relatively longer and deeper toothless Oviraptor rostrum with a low restrained crest, smaller less avian eye impression, and no modern parrot hook. Correct both visible hands so each belongs to one forelimb and carries exactly three separate fingers.",
+      "Preserve the full canvas, opposite-facing rear-three-quarter pose, diagonal wet rill, dune scarp, palette, exactly two forelimbs, exactly two hind limbs, two feet, one pelvis-origin short tail, and all uncited scene details."
+    ],
+    "finalCorrectionPrompt": [
+      "Use case: final precise hand and head cleanup on the corrected Oviraptor slot-2 candidate.",
+      "Keep the existing rear-three-quarter composition, animal count, body, background, light, palette, wet rill, four limb attachments, two feet, and one tail unchanged.",
+      "On each forelimb show exactly three and only three independently readable fingers with no fourth digit, fused claw, duplicated claw, or detached appendage. Keep the relatively elongate deep toothless rostrum and low restrained crest; reduce any remaining round modern-bird or parrot impression without turning the head into Citipati.",
+      "No crop, no new animal, no extra limb, no missing foot, no forked tail, no text, logo, watermark, wound, or blood."
+    ],
+    "review": {
+      "reviewedAt": "2026-08-03T13:18:58.452Z",
+      "method": "Original-size primary review plus independent bilateral-hand, limb-count, foot, tail-continuity, skull-profile, crest, palette, camera, action, wet-ground, horizon, and background-layout comparison against S1",
+      "result": "PASS for S2 review hold only. Both hands read as three-fingered; two forelimbs, two hind limbs, two feet, and one short tail are present. The lower crest and relatively elongate toothless rostrum are acceptable, while a residual avian impression keeps the image permanently below representative status."
+    },
+    "replacementAudit": {
+      "structuralSimilarity": 0.393,
+      "matchMode": "mirrored",
+      "colorMeanDistance": 94.848,
+      "targetedFailThreshold": 0.75,
+      "targetedFailureCount": 0
+    }
+  },
+  "retiredSlotAsset": {
+    "path": "assets/dinosaurs/oviraptor-philoceratops-aubergine-sage-robust-pattern-imagegen-v3.png",
+    "status": "diagnostic-only-rejected-from-assignment",
+    "reason": "Near-direct recolor of S1 with the same left-facing broadside pose, dune horizon, shrub placement, silhouette scale, and camera distance.",
+    "baselineAudit": {
+      "structuralSimilarity": 0.863,
+      "matchMode": "direct",
+      "colorMeanDistance": 84.677
+    }
+  },
+  "rejectedAttempts": [
+    {
+      "callId": "exec-b476df0d-2503-4c03-b926-d525ba371ce6",
+      "copiedToProject": false,
+      "reason": "Composition diversity passed, but the head read as a round modern parrot with a short strongly hooked beak and the near hand had oversized unstable fingers."
+    },
+    {
+      "callId": "exec-78e208aa-1632-44fb-81f8-f540349447d7",
+      "copiedToProject": false,
+      "reason": "The rostrum and crest improved, but the near hand read as four fingers and the modern-bird impression remained too strong."
+    }
+  ],
+  "atlasAuditSnapshot": {
+    "script": "tools/comfyui/scripts/audit_gallery_composition_similarity.cjs",
+    "taxa": 134,
+    "atlasAssignedImages": 808,
+    "auditedUniqueImages": 268,
+    "representativePatternPairs": 134,
+    "nextHighSimilarityPairs": [
+      "Herrerasaurus S1-S2 direct 0.980",
+      "Dsungaripterus S1-S2 direct 0.902",
+      "Almas S1-S2 direct 0.886"
+    ],
+    "nextChildFacingPriorityPairs": [
+      "Quetzalcoatlus LV1 S1-S2 direct 0.600",
+      "Velociraptor LV1 S1-S2 mirrored 0.597",
+      "Spinosaurus LV1 S1-S2 mirrored 0.595",
+      "Dilophosaurus LV1 S1-S2 mirrored 0.580",
+      "Parasaurolophus LV1 S1-S2 mirrored 0.579"
+    ],
+    "policy": "Process one taxon at a time. Anatomy approval and composition diversity are separate gates; no replacement may be promoted to representative merely for scoring lower."
+  }
+}

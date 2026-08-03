@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewBatch": "2026-08-02-quetzalcoatlus-ankle-membrane-correction-1",
+  "reviewBatch": "2026-08-03-oviraptor-composition-diversity-1",
   "rejectedSources": {
     "assets/dinosaurs/brachiosaurus-altithorax-slate-moss-pattern-imagegen-v1.png": {
       "reason": "The former S2 keeps four limbs and one tail but the torso high point drifts toward the pelvis, forelimb dominance is weak, and the flat head with a low forward nostril loses the rounded nasal mound and high-nostril Brachiosaurus identity gate. It is retained only as a diagnostic negative and must not be assigned or used as a positive anatomy control."
@@ -85,6 +85,9 @@
     },
     "assets/dinosaurs/oviraptor-philoceratops-djadokhta-nest-ecology-imagegen-v2.png": {
       "reason": "The primary animal is too modern-bird-like, the eggs are round rather than elongate oviraptorid-style eggs, and the background ceratopsian identity is unreliable."
+    },
+    "assets/dinosaurs/oviraptor-philoceratops-aubergine-sage-robust-pattern-imagegen-v3.png": {
+      "reason": "The anatomically usable former S2 is retired because it is a near-direct recolor of S1, repeating the same left-facing broadside body pose, dune horizon, shrub placement, and camera distance instead of providing meaningful composition diversity."
     },
     "assets/dinosaurs/borealopelta-markmitchelli-misty-bank-standoff-ecology-imagegen-v1.png": {
       "reason": "Oversized random spikes cover the neck, torso and tail instead of preserving Borealopelta's ordered armor and shoulder-spine distribution, making the taxon identity unreliable."
@@ -1530,5 +1533,5 @@
       "reason": "The former ecology frame combines bird-like heads, broad wing-fan arms, overlapping appendages, repetitive color treatment, and several animals whose heads, legs, feet, and tails cannot be audited independently."
     }
   },
-  "generatedAt": "2026-07-31T10:34:20.143Z"
+  "generatedAt": "2026-08-03T13:18:58.452Z"
 }

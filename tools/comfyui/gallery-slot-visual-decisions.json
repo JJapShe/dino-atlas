@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-03T12:25:05.482Z",
-  "reviewBatch": "2026-08-03-maiasaura-initial-gallery-1",
-  "reviewMethod": "Original-size primary and independent review of the new Maiasaura S1-S3 set, including low transverse crest, broad bill, exact limb-hand-foot-tail topology, palette and composition separation, portrait nesting-ground staging, copyright safety, and explicit evidence-versus-reconstruction boundaries. Only S1 is representative-eligible.",
+  "generatedAt": "2026-08-03T13:18:58.452Z",
+  "reviewBatch": "2026-08-03-oviraptor-composition-diversity-1",
+  "reviewMethod": "Original-size primary and independent comparison of Oviraptor S1, the retired recolor-like S2, and the replacement S2, including low-crest and elongate-rostrum identity, bilateral three-fingered hands, two hind limbs, one short tail, palette separation, rear-three-quarter camera separation, background-layout diversity, and artifact review. The replacement remains review hold and is not representative-eligible.",
   "targetSlots": 808,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
@@ -3971,12 +3971,12 @@
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/oviraptor-philoceratops-aubergine-sage-robust-pattern-imagegen-v3.png",
+        "source": "assets/dinosaurs/oviraptor-philoceratops-postrain-rill-rear-three-quarter-aubergine-sage-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Aubergine and sage provide a clearly different palette while the same robust low-crested, elongate-rostrum body and paired three-fingered arms remain readable.",
-        "reviewMethod": "Batch 57 original-size inspection of all six selected assets for each target taxon, including species identity, appendage count, tail continuity, role balance, habitat fit, subject separation, palette variation, and text or watermark artifact gates.",
-        "reviewBatch": "2026-07-30-richness-six-slot-batch-57",
-        "reviewedAt": "2026-07-30T09:13:24.882Z"
+        "reason": "The replacement preserves the conservative low crest, relatively elongate deep toothless rostrum, robust body, two three-fingered arms, two hind limbs, and one short tail while replacing the retired S1-like broadside with an opposite-facing rear-three-quarter post-rain rill composition and separated aubergine-sage palette.",
+        "reviewMethod": "Original-size full-frame inspection plus head, both hands, both feet, pelvis-tail, palette, camera direction, silhouette, horizon, runoff channel, vegetation layout, and artifact comparison against S1 and the retired S2.",
+        "reviewBatch": "2026-08-03-oviraptor-composition-diversity-1",
+        "reviewedAt": "2026-08-03T13:18:58.452Z"
       },
       "3": {
         "status": "approved",
@@ -7646,6 +7646,9 @@
     },
     "assets/dinosaurs/oviraptor-philoceratops-djadokhta-nest-ecology-imagegen-v2.png": {
       "reason": "The primary animal is too modern-bird-like, the eggs are round rather than elongate oviraptorid-style eggs, and the background ceratopsian identity is unreliable."
+    },
+    "assets/dinosaurs/oviraptor-philoceratops-aubergine-sage-robust-pattern-imagegen-v3.png": {
+      "reason": "The anatomically usable former S2 is retired because it is a near-direct recolor of S1, repeating the same left-facing broadside body pose, dune horizon, shrub placement, and camera distance instead of providing meaningful composition diversity."
     },
     "assets/dinosaurs/citipati-osmolskae-tall-crest-feathered-imagegen-v1.png": {
       "reason": "The former representative has a parrot- or cassowary-like head, an unsupported tall casque and a long modern-bird tail instead of Citipati's short deep skull, low broad crest and short tail."

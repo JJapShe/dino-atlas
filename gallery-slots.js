@@ -3581,11 +3581,11 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/oviraptor-philoceratops-aubergine-sage-robust-pattern-imagegen-v3.png",
+      "source": "assets/dinosaurs/oviraptor-philoceratops-postrain-rill-rear-three-quarter-aubergine-sage-pattern-imagegen-v1.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
-      "habitatKey": "djadokhta-semiarid-dune",
+      "habitatKey": "djadokhta-postrain-interdune-rill",
       "expectedKind": "review hold"
     },
     {

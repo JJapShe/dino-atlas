@@ -16,7 +16,7 @@ const REJECTIONS_JSON = path.join(ROOT, "tools", "comfyui", "gallery-slot-reject
 
 const SLOT_ROLES = [
   { slot: 1, key: "representative", label: "representative full body", kind: "count-level pass" },
-  { slot: 2, key: "color-pattern", label: "color and pattern variant", kind: "review hold" },
+  { slot: 2, key: "color-pattern", label: "color, pattern, and composition variant", kind: "review hold" },
   { slot: 3, key: "habitat-ecology", label: "habitat and everyday ecology", kind: "anatomy review" },
   { slot: 4, key: "identity-anatomy", label: "signature anatomy", kind: "anatomy review" },
   { slot: 5, key: "interaction", label: "ecological interaction", kind: "anatomy review" },
@@ -33,6 +33,13 @@ const COMMON_REJECT = [
   "cropped, forked, or malformed tail",
   "modern animal head or generic monitor-lizard/crocodile body",
   "fantasy anatomy, text, logo, watermark, split panel, or excessive blood",
+];
+
+const SLOT_TWO_COMPOSITION_REJECT = [
+  "direct recolor or near-copy of slot 1",
+  "same pose or same silhouette as slot 1",
+  "identical camera, framing, or background arrangement as slot 1",
+  "horizontal mirror as the only variation",
 ];
 
 const FALLBACK_SWATCHES = {
@@ -641,10 +648,11 @@ function paletteFor(dino, swatches, profile) {
 }
 
 function makePrompt({ dino, role, identity, profile, route, palette, habitat, referenceSource }) {
+  const isColorPattern = role.slot === 2;
   const identityLines = [...(identity || []), profile?.anatomy || ""].filter(Boolean).join("; ");
   const action = {
     representative: "one animal in a calm strict full-body side or three-quarter view",
-    "color-pattern": "one animal in a calm full-body view showing the approved variant-b palette",
+    "color-pattern": "one animal showing the approved variant-b palette in a clearly different full-body composition from slot 1",
     "habitat-ecology": "the canonical animal performing a normal everyday behavior in its representative habitat",
     "identity-anatomy": "a readable full-body or focused view that clearly shows the taxon's most diagnostic anatomy",
     interaction: "a non-graphic ecological interaction with period- and region-appropriate organisms, with bodies spatially separated",
@@ -657,12 +665,12 @@ function makePrompt({ dino, role, identity, profile, route, palette, habitat, re
     `Primary request: ${dino.name}, slot ${role.slot} ${role.label}; ${action}.`,
     `Scene/backdrop: ${dino.period}, ${dino.region}; ${habitat.substrate}; ${habitat.vegetation}; ${habitat.moisture}.`,
     `Subject: ${identityLines}`,
-    `Composition/framing: landscape; ${role.slot === 4 ? "diagnostic anatomy must remain readable" : "complete primary body from snout to tail tip when full body is requested"}; visible required limbs and feet.`,
+    `Composition/framing: landscape; ${role.slot === 4 ? "diagnostic anatomy must remain readable" : "complete primary body from snout to tail tip when full body is requested"}; visible required limbs and feet.${isColorPattern ? " Change at least three of stance or action, camera azimuth, camera height, facing direction, subject scale or placement, and foreground/background arrangement relative to slot 1; a horizontal mirror alone does not qualify." : ""}`,
     `Lighting/mood: ${habitat.light}.`,
     `Color palette: preserve ${palette.swatches.join(", ")}; ${palette.canonicalColor}; ${palette.patternTopology}.`,
     `Materials/textures: ${palette.surface}.`,
-    `Input images: ${referenceSource ? `Image 1: canonical slot-1 identity, anatomy, color, and marking-placement reference at ${referenceSource}` : "none"}.`,
-    `Constraints: ${role.slot === 2 ? "variant-b may shift hues only within the approved profile" : "use canonical-a body color and marking placement"}; habitat color belongs in the background and localized dust, mud, moisture, or reflected light; no text, no labels, no watermark, no split panel.`,
+    `Input images: ${referenceSource ? isColorPattern ? `Image 1: canonical slot-1 identity and anatomical-proportion reference only at ${referenceSource}; preserve body-relative marking topology, but do not copy its pose, silhouette, camera, framing, or background layout` : `Image 1: canonical slot-1 identity, anatomy, color, and marking-placement reference at ${referenceSource}` : "none"}.`,
+    `Constraints: ${isColorPattern ? "variant-b hues must stay within the approved profile; preserve taxon identity and body-relative marking topology, but do not directly recolor, near-copy, or mirror slot 1" : "use canonical-a body color and marking placement"}; habitat color belongs in the background and localized dust, mud, moisture, or reflected light; no text, no labels, no watermark, no split panel.`,
     `Avoid: ${profile?.avoid || ""}; ${route?.reject || ""}; ${COMMON_REJECT.join("; ")}.`,
   ].join("\n");
 }
@@ -728,9 +736,19 @@ function makePlanItem({ dino, samples, identities, profiles, routes, swatches, u
       suggestedUnregisteredScore: suggestedUnregistered?.score ?? null,
       referenceSource,
       prompt: makePrompt({ dino, role, identity, profile, route, palette, habitat, referenceSource }),
-      negativePrompt: [profile.avoid, route.reject, ...COMMON_REJECT].filter(Boolean).join("; "),
+      negativePrompt: [
+        profile.avoid,
+        route.reject,
+        ...(role.slot === 2 ? SLOT_TWO_COMPOSITION_REJECT : []),
+        ...COMMON_REJECT,
+      ].filter(Boolean).join("; "),
       passGate: [...identity, profile.anatomy].filter(Boolean),
-      rejectGate: [profile.avoid, route.reject, ...COMMON_REJECT].filter(Boolean),
+      rejectGate: [
+        profile.avoid,
+        route.reject,
+        ...(role.slot === 2 ? SLOT_TWO_COMPOSITION_REJECT : []),
+        ...COMMON_REJECT,
+      ].filter(Boolean),
     };
   });
   const richnessTarget = Math.min(
@@ -764,9 +782,19 @@ function makePlanItem({ dino, samples, identities, profiles, routes, swatches, u
       suggestedUnregisteredScore: suggestedUnregistered?.score ?? null,
       referenceSource,
       prompt: makePrompt({ dino, role, identity, profile, route, palette, habitat, referenceSource }),
-      negativePrompt: [profile.avoid, route.reject, ...COMMON_REJECT].filter(Boolean).join("; "),
+      negativePrompt: [
+        profile.avoid,
+        route.reject,
+        ...(role.slot === 2 ? SLOT_TWO_COMPOSITION_REJECT : []),
+        ...COMMON_REJECT,
+      ].filter(Boolean).join("; "),
       passGate: [...identity, profile.anatomy].filter(Boolean),
-      rejectGate: [profile.avoid, route.reject, ...COMMON_REJECT].filter(Boolean),
+      rejectGate: [
+        profile.avoid,
+        route.reject,
+        ...(role.slot === 2 ? SLOT_TWO_COMPOSITION_REJECT : []),
+        ...COMMON_REJECT,
+      ].filter(Boolean),
     };
   });
 
