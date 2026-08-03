@@ -22251,6 +22251,15 @@ function renderEcosystems() {
   `;
 }
 
+function isSafeMotionPosterSource(source) {
+  return (
+    /^assets\/dinosaurs\/[a-z0-9][a-z0-9.-]*\.png$/i.test(source || "") ||
+    /^https:\/\/raw\.githubusercontent\.com\/JJapShe\/dino-atlas\/[a-f0-9]{40}\/assets\/dinosaurs\/[a-z0-9][a-z0-9.-]*\.png$/i.test(
+      source || "",
+    )
+  );
+}
+
 function getMotionSampleCatalog() {
   const catalog = window.motionSampleCatalog;
   if (!catalog || !Array.isArray(catalog.samples)) {
@@ -22264,7 +22273,7 @@ function getMotionSampleCatalog() {
     sample?.motionClass === "environment-only" &&
     sample?.representativeEligible === false &&
     sample?.galleryEligible === false &&
-    /^assets\/dinosaurs\/[a-z0-9][a-z0-9.-]*\.png$/i.test(sample?.poster || "") &&
+    isSafeMotionPosterSource(sample?.poster) &&
     /^assets\/motion\/[a-z0-9][a-z0-9.-]*-m0-v[0-9]+\.mp4$/i.test(sample?.src || "");
   const isPublished = (sample) =>
     sample?.review?.motion?.status === "supported" &&
@@ -28603,7 +28612,14 @@ function setView(view, { historyMode = "replace" } = {}) {
   }
   if (view === "assetReview") {
     const frame = $("#assetReviewFrame");
-    if (frame) frame.src = `http://127.0.0.1:8792/?atlasAudit=${Date.now()}`;
+    const localReviewHost = ["localhost", "127.0.0.1"].includes(window.location.hostname);
+    if (frame && localReviewHost) {
+      frame.removeAttribute("srcdoc");
+      frame.src = `http://127.0.0.1:8792/?atlasAudit=${Date.now()}`;
+    } else if (frame) {
+      frame.src = "about:blank";
+      frame.srcdoc = `<!doctype html><meta charset="utf-8"><style>body{margin:0;background:#0b1118;color:#dce8ef;font:14px/1.6 system-ui,sans-serif}main{display:grid;min-height:100vh;place-content:center;padding:24px;text-align:center}strong{font-size:18px}p{max-width:42ch;color:#91a3af}</style><main><strong>로컬 이미지 검수 전용 화면</strong><p>이 워크벤치는 Dino Atlas를 로컬에서 실행하고 8792 검수 서버를 켰을 때만 연결됩니다.</p></main>`;
+    }
     state.assetReviewFrameLoaded = true;
   }
   state.view = view;
