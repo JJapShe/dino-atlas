@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "early-jurassic-kayenta-scutellosaurus-dilophosaurus-groundlevel-frieze-v1",
+  "title": "Kayenta silty-facies separated fauna frieze",
+  "projectAsset": "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-kayenta-groundlevel-longlens-frieze-coexistence-imagegen-v1.png",
+  "seed": "not exposed by generator",
+  "generator": "OpenAI built-in image generation",
+  "copyrightSafety": {
+    "status": "project-owned generated asset",
+    "note": "Local project images were used only as anatomy references; no external artwork composition or pixels were copied."
+  },
+  "taxa": [
+    "Scutellosaurus lawleri",
+    "Dilophosaurus wetherilli"
+  ],
+  "period": "Early Jurassic",
+  "formation": "Kayenta Formation",
+  "faciesContext": "red silty floodplain and dune-margin reconstruction",
+  "generatedAt": "2026-08-03T02:20:25.6216971Z",
+  "workflow": {
+    "provider": "OpenAI built-in imagegen",
+    "mode": "generate with local anatomy references",
+    "useCase": "scientific-educational",
+    "assetType": "Dino Atlas ecosystem gallery paleoart",
+    "iteration": 1,
+    "targetedRetryUsed": false,
+    "seed": {
+      "status": "not_exposed",
+      "value": null
+    }
+  },
+  "referenceImages": [
+    {
+      "path": "assets/dinosaurs/scutellosaurus-lawleri-slender-biped-representative-imagegen-v2.png",
+      "taxon": "Scutellosaurus lawleri",
+      "role": "anatomy-only species identity reference",
+      "allowedUse": "slender mostly bipedal body, low beaked head, short forelimbs, long hindlimbs, sparse small osteoderms, complete long tail",
+      "excludedUse": "composition, pose, camera, backdrop, lighting, palette, markings, or object placement"
+    },
+    {
+      "path": "assets/dinosaurs/dilophosaurus-wetherilli-kayenta-twincrest-fourdigit-representative-imagegen-v2.png",
+      "taxon": "Dilophosaurus wetherilli",
+      "role": "anatomy-only species identity reference",
+      "allowedUse": "long low robust skull, two separate parallel nasolacrimal crests, four-digit hand boundary, bipedal body, complete long tail",
+      "excludedUse": "composition, pose, camera, backdrop, lighting, palette, markings, or object placement"
+    }
+  ],
+  "prompt": "Use case: scientific-educational\nAsset type: Dino Atlas ecosystem gallery paleoart, brand-new 16:9 landscape scene for ages 5–14\nInput images: Image 1 is anatomy-only reference for Scutellosaurus lawleri; Image 2 is anatomy-only reference for Dilophosaurus wetherilli. Preserve only the species identity and body-plan cues described below. Do NOT copy either reference image's composition, pose, camera, backdrop, lighting, color pattern, or object placement.\nPrimary request: Create a completely new, realistic, non-graphic Early Jurassic Kayenta Formation fauna-context reconstruction with exactly two animals total: exactly one Scutellosaurus lawleri and exactly one Dilophosaurus wetherilli. This illustrates formation-level fauna context in the Kayenta silty facies only; it must not imply the two individuals shared one exact bed or a documented real encounter.\nScene/backdrop: red silty floodplain at the edge of low aeolian dunes, broad dry sediment flats with a few shallow damp patches, sparse period-appropriate ferns, horsetails and low cycad-like plants, and several tall narrow conifer trunks. No modern grass, flowers, mammals, birds, people, buildings, labels, bones, carcasses, or extra animals.\nStyle/medium: high-quality realistic scientific paleoart, natural surface texture and restrained educational clarity, not a movie poster, not fantasy, not dramatic combat.\nComposition/framing: strict 16:9 horizontal landscape; ground-height camera and long telephoto-lens compression; transverse side-view frieze rather than a conventional centered broadside. Tall vertical conifer trunks and plant columns divide the picture into three clearly readable zones. Place the Dilophosaurus near the far-left edge in the middle distance, walking calmly leftward and looking left, with its entire body isolated against open terrain. Place the Scutellosaurus near the far-right edge in the nearer plane, walking calmly rightward while foraging and looking right, with its entire body isolated against open terrain. They face outward away from one another, do not look at each other, and occupy different depth planes. Keep a very broad empty central stretch of red land between them. No chase, attack, stalking, defensive display, contact, overlap, blood, wound, corpse, feeding on animals, or visual eyeline between species. Exactly two animals—no distant silhouettes.\nScale: Dilophosaurus is visibly and unmistakably much larger in actual body size than the very small Scutellosaurus, even though they occupy different depth planes. Do not equalize them.\nScutellosaurus anatomy: very small, slender, lightly built, mostly bipedal herbivore; low small beaked head with no carnivore teeth; exactly two short forelimbs fully visible and separated; exactly two long hindlimbs with both complete feet fully visible and separated; tiny sparse scattered seed-sized oval osteoderms only across back and flanks; one long complete balancing tail visible from pelvis to tip. No large plates, spikes, club, continuous shell, heavy ankylosaur armor, broad quadrupedal body, or four-footed pose.\nDilophosaurus anatomy: much larger bipedal theropod with long low robust skull; exactly two separate parallel nasolacrimal crests, never fused; no neck frill and no venom display; exactly two forelimbs, both fully visible and spatially separated. If hands are readable, each hand has three functional clawed fingers plus one tiny non-clawed peg-like digit IV—never three-only, never four large claws, never five digits, and palms face inward rather than down. Exactly two strong hindlimbs with both complete feet fully visible and separated; one complete long balancing tail visible from pelvis to tip. No single crest, horn, tyrannosaur head or tiny two-finger arms.\nVisibility gate: every limb, every foot, each animal's pelvis-to-tip tail, both Dilophosaurus crests, and both species' full silhouettes are entirely inside the frame, unobscured by plants or terrain, non-overlapping and countable. No limb or tail may be cropped by any frame edge. Keep generous breathing room around both animals despite their near-edge placement.\nLighting/mood: clear warm late-afternoon sidelight with gentle cool shadows, calm observational mood, high detail on anatomy, enough depth separation for both animals to remain readable.\nColor palette: muted iron-red and rose-brown sediment, dusty sage and deep conifer green vegetation, restrained natural animal colors distinct from the references.\nConstraints: exactly 2 animals; full bodies; no text, caption, logo, border, or watermark; no gore; no fantasy anatomy; no motion blur; no foreground plant crossing any limb, foot, head, crest, or tail.",
+  "sourceGenerationPath": "C:/Users/USER/.codex/generated_images/019fc569-d84a-77b2-abdd-6143addd60b7/exec-51b314b5-6671-4ba3-9fae-02826fb38ab4.png",
+  "projectPath": "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-kayenta-groundlevel-longlens-frieze-coexistence-imagegen-v1.png",
+  "dimensions": {
+    "width": 1672,
+    "height": 941,
+    "aspectRatio": 1.7768331562,
+    "orientation": "landscape"
+  },
+  "byteLength": 2837221,
+  "sha256": "fe643e98e890b23d62ad97ec811935838372378df16ffdccc22bce58d00ceb29",
+  "composition": {
+    "compositionKey": "landscape-groundlevel-longlens-vertical-frieze",
+    "family": "transverse separated-fauna frieze",
+    "camera": "ground-height long-telephoto landscape view",
+    "spatialSignature": "Dilophosaurus at far-left middle distance facing outward left; Scutellosaurus at far-right near plane facing outward right; broad empty red-silt center; vertical conifer trunks and plant columns divide three zones; no gaze, pursuit, contact, or silhouette overlap",
+    "diversityPurpose": "Adds an outward-facing, long-lens, three-zone environmental frieze distinct from centered broadside, face-off, pursuit, attack, portrait, and high-oblique ecosystem scenes."
+  },
+  "evidenceSources": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8292774/",
+      "citation": "Breeden et al. 2021",
+      "role": "Scutellosaurus body-plan and osteoderm evidence",
+      "sourceType": "primary research article"
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/journal-of-paleontology/article/comprehensive-anatomical-and-phylogenetic-evaluation-of-dilophosaurus-wetherilli-dinosauria-theropoda-with-descriptions-of-new-specimens-from-the-kayenta-formation-of-northern-arizona/39C2921EDC6E951AC9F94A22158CA4E5",
+      "citation": "Marsh and Rowe 2020",
+      "role": "Dilophosaurus cranial, crest, manus, pes, and Kayenta Formation evidence",
+      "sourceType": "primary open-access monograph"
+    }
+  ],
+  "claimBoundary": {
+    "claimLevel": "formation-level fauna context",
+    "supportedClaim": "Both named taxa occur in the Kayenta Formation; the picture uses a conservative red silty floodplain and dune-margin setting to visualize broad formation-level context.",
+    "notClaimed": [
+      "same individual bed or horizon",
+      "a directly fossil-documented encounter",
+      "predator-prey interaction",
+      "mutual awareness",
+      "documented behavior, exact vegetation, skin, color, or markings"
+    ],
+    "sameBedAsserted": false,
+    "encounterAsserted": false,
+    "interactionAsserted": false
+  },
+  "license": {
+    "label": "generated project asset",
+    "copyrightSafety": "new built-in Imagegen output; local reference images used only for anatomy and species identity, with composition and palette copying explicitly prohibited",
+    "externalArtworkCopied": false
+  },
+  "review": {
+    "overall": "approved for ecosystem catalog anatomy and ecology review; never representative",
+    "anatomy": {
+      "verdict": "pass-with-cautions",
+      "status": "approved anatomy review candidate",
+      "checks": [
+        "exactly one Scutellosaurus and one Dilophosaurus",
+        "Scutellosaurus remains small, slender, mostly bipedal, low-beaked, sparsely osteodermed, and long-tailed",
+        "Dilophosaurus is visibly larger with a long low robust skull and two separate parallel crests",
+        "each animal shows exactly two forelimbs, two hindlimbs, both feet, and one complete pelvis-origin tail",
+        "no large plates, shell, tail club, neck frill, venom display, fused single crest, extra limb, split tail, or cropped appendage"
+      ],
+      "cautions": [
+        "The reduced non-ungual fourth manual digit of Dilophosaurus is not equally unambiguous on both small scene-scale hands.",
+        "Far-side toe separation and Scutellosaurus osteoderm size should not be treated as a close anatomical reference.",
+        "Retain as a multi-animal anatomy-review ecosystem scene, never as a representative card image."
+      ]
+    },
+    "ecology": {
+      "verdict": "pass",
+      "checks": [
+        "formation-level context only",
+        "different depth planes and outward gaze",
+        "no pursuit, attack, contact, blood, wound, carcass, or documented-encounter claim",
+        "period-appropriate non-flowering vegetation and no modern grass"
+      ]
+    },
+    "composition": {
+      "verdict": "pass",
+      "checks": [
+        "approximately 16:9 landscape output",
+        "ground-height long-lens transverse frieze",
+        "three-zone division by vertical conifer trunks and plant columns",
+        "broad empty center and non-overlapping edge-weighted animals",
+        "distinct from centered broadside, face-off, pursuit, and high-oblique composition families"
+      ]
+    },
+    "contentSafety": {
+      "verdict": "pass",
+      "audience": "ages 5–14",
+      "graphicContent": false,
+      "textOrWatermarkDetected": false
+    }
+  },
+  "representativeEligible": false,
+  "publication": {
+    "status": "published",
+    "reason": "Anatomy, ecology, composition, and 2026-08-03 root responsive QA passed; ecosystem catalog only and never representative.",
+    "responsiveEvidence": "Playwright QA at 1440x900, 390x844, 320x700, and 844x390; contain, loading, filters, scoped lightbox, touch zoom, focus, and history passed."
+  }
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dino Atlas MVP</title>
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="./styles.css?v=20260803-knowledge-level-audit-v1" />
+    <link rel="stylesheet" href="./styles.css?v=20260803-ecosystem-gallery-mvp-v1" />
   </head>
   <body data-active-view="atlas">
     <div class="app-shell">
@@ -33,6 +33,9 @@
           </button>
           <button class="nav-tab" data-view="catalog" type="button">
             <span>도감</span>
+          </button>
+          <button class="nav-tab" data-view="ecosystems" type="button">
+            <span>생태</span>
           </button>
           <button class="nav-tab" data-view="review" type="button">
             <span>검수</span>
@@ -276,6 +279,58 @@
           <div class="card-grid" id="catalogGrid"></div>
         </section>
 
+        <section class="view" id="ecosystemsView" aria-label="시대별 생태 갤러리">
+          <section class="ecosystem-shell">
+            <header class="ecosystem-intro">
+              <div>
+                <p class="eyebrow">Ecosystem Scenes</p>
+                <h3>시대별 생태 갤러리</h3>
+                <p>같은 시기와 지층에서 살았던 동물들을 한 장면으로 살펴봅니다. 직접 근거와 복원 상상은 카드에서 나누어 표시합니다.</p>
+              </div>
+              <button class="ghost-button" id="resetEcosystemFilters" type="button">생태 필터 초기화</button>
+            </header>
+
+            <div class="ecosystem-controls" aria-label="생태 장면 필터">
+              <label class="ecosystem-search search-field">
+                <span>장면 검색</span>
+                <input id="ecosystemSearchInput" type="search" placeholder="공룡명, 지층, 시대, 장면" autocomplete="off" />
+              </label>
+
+              <div class="ecosystem-filter-block">
+                <span class="field-label">시대</span>
+                <div class="ecosystem-chip-row" id="ecosystemEraFilters" role="group" aria-label="생태 시대 필터">
+                  <button class="active" data-ecosystem-era="all" type="button" aria-pressed="true">전체</button>
+                  <button data-ecosystem-era="triassic" type="button" aria-pressed="false">트라이아스기</button>
+                  <button data-ecosystem-era="jurassic" type="button" aria-pressed="false">쥐라기</button>
+                  <button data-ecosystem-era="cretaceous" type="button" aria-pressed="false">백악기</button>
+                </div>
+              </div>
+
+              <div class="ecosystem-filter-block">
+                <span class="field-label">세부 시기</span>
+                <div class="ecosystem-chip-row" id="ecosystemTimeFilters" role="group" aria-label="생태 세부 시기 필터"></div>
+              </div>
+
+              <div class="ecosystem-filter-block ecosystem-type-filter">
+                <span class="field-label">장면 유형</span>
+                <div class="ecosystem-chip-row" id="ecosystemTypeFilters" role="group" aria-label="생태 장면 유형 필터">
+                  <button class="active" data-ecosystem-type="all" type="button" aria-pressed="true">전체</button>
+                  <button data-ecosystem-type="coexistence" type="button" aria-pressed="false">공존</button>
+                  <button data-ecosystem-type="predation-tension" type="button" aria-pressed="false">포식 긴장</button>
+                  <button data-ecosystem-type="herd-growth" type="button" aria-pressed="false">무리·성장</button>
+                  <button data-ecosystem-type="environment-event" type="button" aria-pressed="false">환경 사건</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="ecosystem-results-heading">
+              <p id="ecosystemResultSummary" aria-live="polite">장면을 불러오는 중입니다.</p>
+              <span>오래된 시기 → 새로운 시기</span>
+            </div>
+            <div class="ecosystem-grid" id="ecosystemGrid"></div>
+          </section>
+        </section>
+
         <section class="view" id="reviewView" aria-label="Image review view">
           <div class="review-layout">
             <section class="queue-panel">
@@ -308,7 +363,7 @@
 
     <div class="image-lightbox" id="imageLightbox" hidden aria-hidden="true">
       <button class="lightbox-backdrop" data-lightbox-action="close" type="button" aria-label="닫기"></button>
-      <section class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+      <section class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" tabindex="-1">
         <div class="lightbox-topbar">
           <div>
             <p class="eyebrow" id="lightboxKind">Image Review</p>
@@ -330,7 +385,8 @@
     </div>
 
   <script src="./gallery-slots.js?v=20260803-lv1-portrait-composition-v1"></script>
-  <script src="./app.js?v=20260803-lv1-portrait-composition-v1"></script>
+  <script src="./ecosystem-scenes.js?v=20260803-ecosystem-gallery-mvp-v1"></script>
+  <script src="./app.js?v=20260803-ecosystem-gallery-mvp-v1"></script>
     <script src="./atlas-layout.js?v=20260731-resizable-inspector-v1"></script>
   </body>
 </html>

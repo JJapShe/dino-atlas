@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "late-triassic-cancha-de-bochas-eoraptor-herrerasaurus-concentric-coexistence-v1",
+  "title": "Cancha de Bochas 동심원 고토양 공존 장면",
+  "useCase": "scientific-educational",
+  "audienceAgeRange": "5-14",
+  "projectAsset": "assets/dinosaurs/eoraptor-lunensis-herrerasaurus-cancha-de-bochas-high-oblique-concentric-coexistence-imagegen-v1.png",
+  "seed": "not exposed by generator",
+  "generator": "OpenAI built-in image generation",
+  "copyrightSafety": {
+    "status": "project-owned generated asset",
+    "note": "Local project images were used only as anatomy references; no external artwork composition or pixels were copied."
+  },
+  "participants": [
+    {
+      "taxonId": "eoraptor-lunensis",
+      "scientificName": "Eoraptor lunensis",
+      "count": 1,
+      "sceneRole": "upper-frame independent walker"
+    },
+    {
+      "taxonId": "herrerasaurus-ischigualastensis",
+      "scientificName": "Herrerasaurus ischigualastensis",
+      "count": 1,
+      "sceneRole": "lower-frame independent walker or pause"
+    }
+  ],
+  "asset": {
+    "sourceGenerationPath": "C:/Users/USER/.codex/generated_images/019fc569-990c-7891-b1bd-791830834d4e/exec-47f5cc0f-58b0-4223-be82-ae45bc8a51ea.png",
+    "projectPath": "assets/dinosaurs/eoraptor-lunensis-herrerasaurus-cancha-de-bochas-high-oblique-concentric-coexistence-imagegen-v1.png",
+    "width": 1122,
+    "height": 1402,
+    "aspect": "near-exact 4:5 portrait",
+    "bytes": 3476030,
+    "sha256": "3461013156e1b114398851e77c989a0a5d057b30b0e84784c7156db4dd219cb7"
+  },
+  "composition": {
+    "compositionKey": "portrait-high-oblique-concentric-paleosol",
+    "family": "environment-led geometric separation",
+    "camera": "high diagonal near-top-down portrait field-observation view",
+    "spatialSignature": "one small Eoraptor in the upper third facing upper-left; one visibly larger Herrerasaurus in the lower third facing lower-right; a broad empty band and concentric paleosol rings separate their silhouettes",
+    "variationIntent": "break from riverbank, forest S-curve, chase, side-profile lineup, and eye-level encounter compositions"
+  },
+  "workflow": {
+    "provider": "OpenAI built-in image_gen",
+    "mode": "generate with anatomy-only local references",
+    "model": "built-in tool model not exposed",
+    "seed": "not exposed",
+    "seedStatus": "not exposed by built-in workflow",
+    "generationCalls": 1,
+    "targetedRetryUsed": false,
+    "generatedAt": "2026-08-03T02:20:04.2468297Z"
+  },
+  "referenceImages": [
+    {
+      "path": "assets/dinosaurs/eoraptor-lunensis-robust-short-forelimb-representative-imagegen-v2.png",
+      "role": "anatomy-only reference for Eoraptor body plan, robust short forelimbs, feet, and continuous tail",
+      "copyRestrictions": "do not copy composition, pose, palette, lighting, or background"
+    },
+    {
+      "path": "assets/dinosaurs/herrerasaurus-ischigualastensis-compacthands-imagegen-v2.png",
+      "role": "anatomy-only reference for Herrerasaurus size, long low head, non-tiny forelimbs, compact hands, and continuous tail",
+      "copyRestrictions": "do not copy composition, pose, palette, lighting, or background"
+    }
+  ],
+  "prompt": "Use case: scientific-educational\nAsset type: Dino Atlas period-subdivided ecosystem gallery image for children ages 5-14\nPrimary request: Create a completely new, realistic but non-graphic 4:5 portrait paleoart scene of exactly two dinosaurs coexisting in the Late Triassic Cancha de Bochas Member of the Ischigualasto Formation seasonal floodplain. This visualizes same-stratigraphic-member coexistence only; it must not imply an observed interaction.\nInput images: Image 1 is anatomy-only reference for Eoraptor lunensis. Image 2 is anatomy-only reference for Herrerasaurus ischigualastensis. Do not copy either reference's composition, pose, color scheme, lighting, or background.\nScene/backdrop: Dry seasonal Ischigualasto floodplain viewed from a high diagonal, near-top-down angle. Make the land itself visually distinctive: concentric ring-like paleosol patterns surrounding a shallow circular depression, sparse low vegetation, patches of cracked sediment, muted oxidized ochre, dusty sage and mineral gray. No modern grass, flowers, or dense forest.\nSubject placement and spatial signature: Exactly two animals total. Put one Eoraptor in the upper third of the portrait frame and one visibly larger Herrerasaurus in the lower third. Separate them with a broad, clearly empty band of patterned ground. Their body axes and travel directions must be different: Eoraptor walks toward the upper-left, Herrerasaurus pauses or walks toward the lower-right. They do not look at each other. No converging movement, pursuit, attack, eye-line crossing, contact, blood, carcass, prey, eggs, nests, or other animals.\nEoraptor anatomy: 1.2-1.3 meter small early saurischian, low triangular head, moderate low S-shaped neck (not long or swan-like), lightly built torso, exactly two short robust forelimbs visibly separate from the body, exactly two hindlimbs, each hind foot readable with three main forward toes plus a small first toe when perspective allows, and one long continuous balancing tail. No beak, no raptor sickle claw, no dromaeosaur look, no feathers, no extra limbs, no fused limbs.\nHerrerasaurus anatomy: visibly much larger than Eoraptor, long low predatory head, moderately deep trunk, exactly two non-tiny forelimbs visibly separate from the torso, compact hands with three main fingers readable, exactly two strong hindlimbs, two complete feet, and one long continuous balancing tail. No Tyrannosaurus-style tiny arms, no giant head, no extra limbs, no fused limbs.\nComposition/framing: Portrait 4:5. High oblique/near-top-down scientific field-observation camera. Both animals must be completely inside the frame with generous padding. Every silhouette must be isolated against open ground. All four limbs per animal category as applicable—both forelimbs, both hindlimbs, every foot, both hands, and each full tail tip—must be visible and unoccluded. No cropping, foreground occlusion, dust cloud, motion blur, extreme foreshortening, overlapping bodies, or vegetation covering anatomy.\nStyle/medium: Highly polished natural-history museum paleoart, anatomically legible, realistic skin texture, restrained natural colors, age-appropriate for 5-14, no gore.\nLighting/mood: Clear warm late-afternoon light with short soft shadows that help separate each limb from the ground; calm observational mood.\nText: none.\nConstraints: Exactly two animals and no more. Preserve species size contrast. All anatomy and silhouettes fully visible. The circular paleosol geometry is environmental, not a decorative frame around the animals.\nAvoid: text, labels, watermark, border, infographic arrows, fantasy anatomy, extra toes dominating, duplicated limbs, missing limbs, merged feet, broken tails, chase narrative, combat, threat display, direct interaction, dramatic cinematic confrontation.",
+  "evidence": {
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3088398/",
+    "sourceTitle": "A new herrerasaurid (Dinosauria, Saurischia) from the Upper Triassic Ischigualasto Formation of northwestern Argentina",
+    "formation": "Ischigualasto Formation",
+    "member": "Cancha de Bochas Member",
+    "supportedClaim": "The cited paper reports several Herrerasaurus ischigualastensis specimens and Eoraptor lunensis among dinosaurs recovered from the same level in the lowest Cancha de Bochas Member; it describes the member as well-drained floodplain mudstones interbedded with high-sinuosity channel sandstones.",
+    "claimBoundary": "The image may communicate broad same-member and cited same-level coexistence. It does not claim these two individual animals met, watched, hunted, chased, or otherwise interacted. The concentric paleosol rings, shallow circular depression, exact spacing, colors, weather, and simultaneous moment are cautious environmental and artistic reconstruction rather than direct observations from the source."
+  },
+  "license": {
+    "type": "generated-project-asset",
+    "label": "Generated project asset",
+    "copyrightSafety": "new built-in generation using project references for anatomy only; no external artwork composition copied",
+    "use": "Dino Atlas project use subject to project review gates"
+  },
+  "review": {
+    "overall": "approved for ecosystem catalog anatomy and ecology review; never representative",
+    "anatomy": {
+      "status": "pass-for-ecosystem-anatomy-review",
+      "verdict": "Exactly two animals; Eoraptor is visibly smaller and preserves a low triangular head, short paired forelimbs, paired hindlimbs, readable feet, and a complete tail; Herrerasaurus is larger and preserves a long low head, paired non-tiny forelimbs with compact hands, paired strong hindlimbs, complete feet, and a complete tail. Both silhouettes remain inside the frame.",
+      "risks": [
+        "The high camera and intentional size contrast make Eoraptor's individual fingers and small first toes less legible than in a dedicated single-animal anatomy plate.",
+        "Herrerasaurus hand digits and far-side foot details are readable at original size but remain small; do not use this scene as a hand or pedal anatomy reference."
+      ]
+    },
+    "ecology": {
+      "status": "pass-with-claim-boundary",
+      "verdict": "Same-level coexistence is supported by the cited Cancha de Bochas source; broad empty ground, opposing travel directions, and no eye-line contact avoid implying a specific encounter or behavior."
+    },
+    "composition": {
+      "status": "pass",
+      "verdict": "High-oblique near-top-down camera, central concentric paleosol geometry, asymmetric upper/lower placement, opposing axes, and generous negative ground provide a distinct composition family and keep both animals easy to find."
+    },
+    "contentSafety": {
+      "status": "pass",
+      "verdict": "No attack, chase, contact, blood, carcass, gore, text, or watermark is visible."
+    },
+    "representativeEligible": false,
+    "responsive": {
+      "status": "passed",
+      "evidence": "2026-08-03 root Playwright QA at 1440x900, 390x844, 320x700, and 844x390; contain, loading, filters, scoped lightbox, touch zoom, focus, and history passed."
+    },
+    "publication": "published ecosystem catalog",
+    "publicationNote": "Anatomy, ecology, composition, and responsive gates passed; never eligible to replace a species representative."
+  }
+}

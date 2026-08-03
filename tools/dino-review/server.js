@@ -34,6 +34,7 @@ const REVIEWABLE_CANDIDATE_KINDS = new Set([
   "count-level pass",
   "review hold",
   "anatomy review",
+  "ecosystem scene review",
 ]);
 
 const SPECIES_ALIASES = {

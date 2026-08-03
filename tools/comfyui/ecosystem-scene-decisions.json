@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-08-03T02:30:00.000Z",
+  "policy": {
+    "catalogDraftAllowedWhenResponsivePending": true,
+    "publishedRequires": [
+      "anatomy",
+      "ecology",
+      "responsive"
+    ],
+    "representativePromotion": "prohibited",
+    "compositionDiversity": {
+      "uniqueCompositionKeyRequired": true,
+      "uniqueCompositionFamilyRequired": true,
+      "uniqueCameraSpatialSignatureRequired": true,
+      "note": "A new scene must add a materially different camera, leading line, depth split, or subject scale rather than merely renaming a repeated broadside composition."
+    }
+  },
+  "scenes": {
+    "eoraptor-herrerasaurus-cancha-de-bochas": {
+      "asset": "assets/dinosaurs/eoraptor-lunensis-herrerasaurus-cancha-de-bochas-high-oblique-concentric-coexistence-imagegen-v1.png",
+      "compositionKey": "portrait-high-oblique-concentric-paleosol",
+      "representativeEligible": false,
+      "gates": {
+        "anatomy": {
+          "status": "supported",
+          "evidence": "tools/comfyui/triassic-concentric-ecosystem-scene-20260803.json#review/anatomy",
+          "scope": "ecosystem catalog anatomy-review only; small scene-scale digits remain lower-confidence"
+        },
+        "ecology": {
+          "status": "supported",
+          "evidence": "tools/comfyui/triassic-concentric-ecosystem-scene-20260803.json#evidence",
+          "scope": "same cited low-member level only; no meeting or direct behavior"
+        },
+        "responsive": {
+          "status": "supported",
+          "evidence": "2026-08-03 root Playwright QA passed at 1440x900, 390x844, 320x700, and 844x390: contain, loading, filters, scoped lightbox, touch zoom, focus, and history"
+        },
+        "publication": {
+          "status": "published",
+          "evidence": "anatomy, ecology, and responsive gates supported; representative promotion remains prohibited"
+        }
+      },
+      "publication": {
+        "status": "published",
+        "eligible": true
+      }
+    },
+    "scutellosaurus-dilophosaurus-kayenta": {
+      "asset": "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-kayenta-groundlevel-longlens-frieze-coexistence-imagegen-v1.png",
+      "compositionKey": "landscape-groundlevel-longlens-vertical-frieze",
+      "representativeEligible": false,
+      "gates": {
+        "anatomy": {
+          "status": "supported",
+          "evidence": "tools/comfyui/early-jurassic-frieze-ecosystem-scene-20260803.json#review/anatomy",
+          "scope": "ecosystem catalog anatomy-review only; tiny manual and pedal details remain lower-confidence"
+        },
+        "ecology": {
+          "status": "supported",
+          "evidence": "tools/comfyui/early-jurassic-frieze-ecosystem-scene-20260803.json#claimBoundary",
+          "scope": "formation/facies context only; no shared bed or direct behavior"
+        },
+        "responsive": {
+          "status": "supported",
+          "evidence": "2026-08-03 root Playwright QA passed at 1440x900, 390x844, 320x700, and 844x390: contain, loading, filters, scoped lightbox, touch zoom, focus, and history"
+        },
+        "publication": {
+          "status": "published",
+          "evidence": "anatomy, ecology, and responsive gates supported; representative promotion remains prohibited"
+        }
+      },
+      "publication": {
+        "status": "published",
+        "eligible": true
+      }
+    },
+    "allosaurus-camarasaurus-morrison": {
+      "asset": "assets/dinosaurs/allosaurus-fragilis-camarasaurus-boxskull-channel-portrait-ecology-imagegen-v3.png",
+      "compositionKey": "portrait-stacked-river-terraces",
+      "representativeEligible": false,
+      "gates": {
+        "anatomy": {
+          "status": "supported",
+          "evidence": "tools/comfyui/lv1-portrait-ecology-batch-20260802.json#records/allosaurus-fragilis/review",
+          "scope": "ecosystem catalog anatomy-review only"
+        },
+        "ecology": {
+          "status": "supported",
+          "evidence": "tools/comfyui/lv1-portrait-ecology-batch-20260802.json#records/allosaurus-fragilis/scientificContext",
+          "scope": "quarry cooccurrence only; no direct behavior"
+        },
+        "responsive": {
+          "status": "supported",
+          "evidence": "2026-08-03 root Playwright QA passed at 1440x900, 390x844, 320x700, and 844x390: contain, loading, filters, scoped lightbox, touch zoom, focus, and history"
+        },
+        "publication": {
+          "status": "published",
+          "evidence": "anatomy, ecology, and responsive gates supported; representative promotion remains prohibited"
+        }
+      },
+      "publication": {
+        "status": "published",
+        "eligible": true
+      }
+    },
+    "yutyrannus-yixian-ash-channel": {
+      "asset": "assets/dinosaurs/yutyrannus-huali-cool-conifer-ashplain-ecology-imagegen-v1.png",
+      "compositionKey": "landscape-single-subject-shallow-channel",
+      "representativeEligible": false,
+      "gates": {
+        "anatomy": {
+          "status": "supported",
+          "evidence": "tools/comfyui/yutyrannus-huali-white-camouflage-batch-20260802.json#records/habitat-ecology/review",
+          "scope": "ecosystem catalog habitat-ecology only"
+        },
+        "ecology": {
+          "status": "supported",
+          "evidence": "tools/comfyui/yutyrannus-huali-white-camouflage-batch-20260802.json#evidenceBoundary",
+          "scope": "formation-level climate, lake, and volcanic-ash context; exact moment reconstructed"
+        },
+        "responsive": {
+          "status": "supported",
+          "evidence": "2026-08-03 root Playwright QA passed at 1440x900, 390x844, 320x700, and 844x390: contain, loading, filters, scoped lightbox, touch zoom, focus, and history"
+        },
+        "publication": {
+          "status": "published",
+          "evidence": "anatomy, ecology, and responsive gates supported; representative promotion remains prohibited"
+        }
+      },
+      "publication": {
+        "status": "published",
+        "eligible": true
+      }
+    },
+    "velociraptor-protoceratops-djadokhta": {
+      "asset": "assets/dinosaurs/velociraptor-mongoliensis-protoceratops-dustfront-portrait-ecology-imagegen-v2.png",
+      "compositionKey": "portrait-dustfront-counterdiagonal",
+      "representativeEligible": false,
+      "gates": {
+        "anatomy": {
+          "status": "supported",
+          "evidence": "tools/comfyui/lv1-portrait-ecology-batch-20260802.json#records/velociraptor-mongoliensis/review",
+          "scope": "ecosystem catalog anatomy-review only"
+        },
+        "ecology": {
+          "status": "supported",
+          "evidence": "tools/comfyui/lv1-portrait-ecology-batch-20260802.json#records/velociraptor-mongoliensis/scientificContext",
+          "scope": "direct exact-taxon fossil association; new pose and attack sequence not claimed"
+        },
+        "responsive": {
+          "status": "supported",
+          "evidence": "2026-08-03 root Playwright QA passed at 1440x900, 390x844, 320x700, and 844x390: contain, loading, filters, scoped lightbox, touch zoom, focus, and history"
+        },
+        "publication": {
+          "status": "published",
+          "evidence": "anatomy, ecology, and responsive gates supported; representative promotion remains prohibited"
+        }
+      },
+      "publication": {
+        "status": "published",
+        "eligible": true
+      }
+    },
+    "tarbosaurus-saurolophus-nemegt": {
+      "asset": "assets/dinosaurs/tarbosaurus-bataar-saurolophus-rearward-crest-river-portrait-ecology-imagegen-v3.png",
+      "compositionKey": "portrait-scurve-river-opposed-banks",
+      "representativeEligible": false,
+      "gates": {
+        "anatomy": {
+          "status": "supported",
+          "evidence": "tools/comfyui/lv1-portrait-ecology-batch-20260802.json#records/tarbosaurus-bataar/review",
+          "scope": "ecosystem catalog anatomy-review only"
+        },
+        "ecology": {
+          "status": "supported",
+          "evidence": "tools/comfyui/lv1-portrait-ecology-batch-20260802.json#records/tarbosaurus-bataar/scientificContext",
+          "scope": "formation and feeding-trace association; live chase or kill not claimed"
+        },
+        "responsive": {
+          "status": "supported",
+          "evidence": "2026-08-03 root Playwright QA passed at 1440x900, 390x844, 320x700, and 844x390: contain, loading, filters, scoped lightbox, touch zoom, focus, and history"
+        },
+        "publication": {
+          "status": "published",
+          "evidence": "anatomy, ecology, and responsive gates supported; representative promotion remains prohibited"
+        }
+      },
+      "publication": {
+        "status": "published",
+        "eligible": true
+      }
+    },
+    "tyrannosaurus-edmontosaurus-hell-creek": {
+      "asset": "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-misty-meadow-pause-portrait-ecology-imagegen-v2.png",
+      "compositionKey": "portrait-misty-wetland-depth-layers",
+      "representativeEligible": false,
+      "gates": {
+        "anatomy": {
+          "status": "supported",
+          "evidence": "tools/comfyui/lv1-portrait-ecology-batch-20260802.json#records/tyrannosaurus-rex/review",
+          "scope": "ecosystem catalog anatomy-review only"
+        },
+        "ecology": {
+          "status": "supported",
+          "evidence": "tools/comfyui/lv1-portrait-ecology-batch-20260802.json#records/tyrannosaurus-rex/scientificContext",
+          "scope": "formation overlap and contact evidence; attack versus scavenging unresolved"
+        },
+        "responsive": {
+          "status": "supported",
+          "evidence": "2026-08-03 root Playwright QA passed at 1440x900, 390x844, 320x700, and 844x390: contain, loading, filters, scoped lightbox, touch zoom, focus, and history"
+        },
+        "publication": {
+          "status": "published",
+          "evidence": "anatomy, ecology, and responsive gates supported; representative promotion remains prohibited"
+        }
+      },
+      "publication": {
+        "status": "published",
+        "eligible": true
+      }
+    },
+    "triceratops-edmontosaurus-lower-hell-creek": {
+      "asset": "assets/dinosaurs/triceratops-horridus-edmontosaurus-lower-hellcreek-portrait-ecology-imagegen-v2.png",
+      "compositionKey": "portrait-high-oblique-channel-depth-diagonal",
+      "representativeEligible": false,
+      "gates": {
+        "anatomy": {
+          "status": "supported",
+          "evidence": "tools/comfyui/lv1-portrait-coexistence-batch-20260803.json#records/triceratops-horridus/review",
+          "scope": "ecosystem catalog anatomy-review only"
+        },
+        "ecology": {
+          "status": "supported",
+          "evidence": "tools/comfyui/lv1-portrait-coexistence-batch-20260803.json#records/triceratops-horridus/scientificContext",
+          "scope": "approximate lower-formation overlap; exact meeting not claimed"
+        },
+        "responsive": {
+          "status": "supported",
+          "evidence": "2026-08-03 root Playwright QA passed at 1440x900, 390x844, 320x700, and 844x390: contain, loading, filters, scoped lightbox, touch zoom, focus, and history"
+        },
+        "publication": {
+          "status": "published",
+          "evidence": "anatomy, ecology, and responsive gates supported; representative promotion remains prohibited"
+        }
+      },
+      "publication": {
+        "status": "published",
+        "eligible": true
+      }
+    },
+    "parasaurolophus-centrosaurus-lower-dinosaur-park": {
+      "asset": "assets/dinosaurs/parasaurolophus-walkeri-centrosaurus-forest-scurve-portrait-ecology-imagegen-v3.png",
+      "compositionKey": "portrait-low-forest-scurve-zdepth",
+      "representativeEligible": false,
+      "gates": {
+        "anatomy": {
+          "status": "supported",
+          "evidence": "tools/comfyui/lv1-portrait-coexistence-batch-20260803.json#records/parasaurolophus-walkeri/review",
+          "scope": "ecosystem catalog anatomy-review only"
+        },
+        "ecology": {
+          "status": "supported",
+          "evidence": "tools/comfyui/lv1-portrait-coexistence-batch-20260803.json#records/parasaurolophus-walkeri/scientificContext",
+          "scope": "approximate lower-formation overlap; exact meeting not claimed"
+        },
+        "responsive": {
+          "status": "supported",
+          "evidence": "2026-08-03 root Playwright QA passed at 1440x900, 390x844, 320x700, and 844x390: contain, loading, filters, scoped lightbox, touch zoom, focus, and history"
+        },
+        "publication": {
+          "status": "published",
+          "evidence": "anatomy, ecology, and responsive gates supported; representative promotion remains prohibited"
+        }
+      },
+      "publication": {
+        "status": "published",
+        "eligible": true
+      }
+    }
+  }
+}

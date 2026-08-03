@@ -4305,6 +4305,12 @@ const state = {
   reviewCandidateKindFilter: "usable",
   reviewSort: "updated",
   assetReviewFrameLoaded: false,
+  ecosystem: {
+    search: "",
+    era: "all",
+    timeBin: "all",
+    sceneType: "all",
+  },
   lightboxItems: [],
   lightboxIndex: 0,
   lightboxView: {
@@ -4820,6 +4826,21 @@ const generatedImageSamples = {
       src: "assets/dinosaurs/herrerasaurus-ischigualastensis-territorial-display-ecology-imagegen-v1.png",
       edited: true,
     },
+    {
+      kind: "ecosystem scene review",
+      title: "헤레라사우루스·에오랍토르 고각도 동심원 공존 복원",
+      body: "Cancha de Bochas Member의 같은 낮은 층준에서 보고된 두 종을 위아래로 멀리 분리한 생태 갤러리 전용 장면입니다. 동심원형 고토양과 반대 이동축으로 기존 수로 대각선 구도를 반복하지 않으며, 실제 조우·응시·추격·포식은 주장하지 않습니다. 작은 손·발 세부는 장면 축척 한계가 있어 종 대표로 승격하지 않습니다.",
+      source: "assets/dinosaurs/eoraptor-lunensis-herrerasaurus-cancha-de-bochas-high-oblique-concentric-coexistence-imagegen-v1.png",
+      variant: "고각도 동심원 지형 공존 이미지 생성 v1",
+      src: "assets/dinosaurs/eoraptor-lunensis-herrerasaurus-cancha-de-bochas-high-oblique-concentric-coexistence-imagegen-v1.png",
+      sourceAttribution: "OpenAI built-in image generation; project anatomy references only",
+      licenseRecord: "Generated project asset; external research used only as factual evidence",
+      generationPromptRecord: "tools/comfyui/triassic-concentric-ecosystem-scene-20260803.json#prompt",
+      generationSeed: "not exposed by generator",
+      generationWorkflow: "OpenAI built-in image generation with two anatomy-only project references",
+      reviewStatus: "ecosystem anatomy, ecology, and responsive review supported; catalog published; never representative",
+      metadataRecord: "tools/comfyui/triassic-concentric-ecosystem-scene-20260803.json",
+    },
   ],
   "eodromaeus-murphi": [
     {
@@ -4919,6 +4940,21 @@ const generatedImageSamples = {
       source: "assets/dinosaurs/eoraptor-lunensis-receding-flood-bank-movement-ecology-imagegen-v1.png",
       variant: "범람수 높은 둑 이동 가설 이미지 생성 v1",
       src: "assets/dinosaurs/eoraptor-lunensis-receding-flood-bank-movement-ecology-imagegen-v1.png",
+    },
+    {
+      kind: "ecosystem scene review",
+      title: "에오랍토르·헤레라사우루스 고각도 동심원 공존 복원",
+      body: "Cancha de Bochas Member의 같은 낮은 층준에서 보고된 두 종을 위아래로 멀리 분리한 생태 갤러리 전용 장면입니다. 동심원형 고토양과 반대 이동축으로 기존 수로 대각선 구도를 반복하지 않으며, 실제 조우·응시·추격·포식은 주장하지 않습니다. 작은 손·발 세부는 장면 축척 한계가 있어 종 대표로 승격하지 않습니다.",
+      source: "assets/dinosaurs/eoraptor-lunensis-herrerasaurus-cancha-de-bochas-high-oblique-concentric-coexistence-imagegen-v1.png",
+      variant: "고각도 동심원 지형 공존 이미지 생성 v1",
+      src: "assets/dinosaurs/eoraptor-lunensis-herrerasaurus-cancha-de-bochas-high-oblique-concentric-coexistence-imagegen-v1.png",
+      sourceAttribution: "OpenAI built-in image generation; project anatomy references only",
+      licenseRecord: "Generated project asset; external research used only as factual evidence",
+      generationPromptRecord: "tools/comfyui/triassic-concentric-ecosystem-scene-20260803.json#prompt",
+      generationSeed: "not exposed by generator",
+      generationWorkflow: "OpenAI built-in image generation with two anatomy-only project references",
+      reviewStatus: "ecosystem anatomy, ecology, and responsive review supported; catalog published; never representative",
+      metadataRecord: "tools/comfyui/triassic-concentric-ecosystem-scene-20260803.json",
     },
   ],
   "zupaysaurus-rougieri": [
@@ -7266,6 +7302,21 @@ const generatedImageSamples = {
       phenotype: "subadult-a",
       habitatKey: "kayenta-silty-fluvial-aeolian-plain",
       edited: true,
+    },
+    {
+      kind: "ecosystem scene review",
+      title: "딜로포사우루스·스쿠텔로사우루스 세 구역 프리즈 공존 복원",
+      body: "카옌타층 동물상 두 종을 화면 양끝과 서로 다른 깊이에 놓은 생태 갤러리 전용 장면입니다. 지면 높이 긴 초점거리와 세로 나무 기둥으로 세 구역을 만들고 두 동물은 바깥쪽을 향해 실제 조우·추격을 주장하지 않습니다. 작은 제4손가락과 먼 발가락은 장면 축척 한계가 있어 종 대표로 승격하지 않습니다.",
+      source: "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-kayenta-groundlevel-longlens-frieze-coexistence-imagegen-v1.png",
+      variant: "지면 높이 세 구역 프리즈 공존 이미지 생성 v1",
+      src: "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-kayenta-groundlevel-longlens-frieze-coexistence-imagegen-v1.png",
+      sourceAttribution: "OpenAI built-in image generation; project anatomy references only",
+      licenseRecord: "Generated project asset; external research used only as factual evidence",
+      generationPromptRecord: "tools/comfyui/early-jurassic-frieze-ecosystem-scene-20260803.json#prompt",
+      generationSeed: "not exposed by generator",
+      generationWorkflow: "OpenAI built-in image generation with two anatomy-only project references",
+      reviewStatus: "ecosystem anatomy, ecology, and responsive review supported; catalog published; never representative",
+      metadataRecord: "tools/comfyui/early-jurassic-frieze-ecosystem-scene-20260803.json",
     },
   ],
   "dracovenator-regenti": [
@@ -20616,6 +20667,21 @@ const generatedImageSamples = {
       phenotype: "canonical-a",
       habitatKey: "kayenta-rain-wash",
     },
+    {
+      kind: "ecosystem scene review",
+      title: "스쿠텔로사우루스·딜로포사우루스 세 구역 프리즈 공존 복원",
+      body: "카옌타층 동물상 두 종을 화면 양끝과 서로 다른 깊이에 놓은 생태 갤러리 전용 장면입니다. 지면 높이 긴 초점거리와 세로 나무 기둥으로 세 구역을 만들고 두 동물은 바깥쪽을 향해 실제 조우·추격을 주장하지 않습니다. 작은 골편과 먼 발가락은 장면 축척 한계가 있어 종 대표로 승격하지 않습니다.",
+      source: "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-kayenta-groundlevel-longlens-frieze-coexistence-imagegen-v1.png",
+      variant: "지면 높이 세 구역 프리즈 공존 이미지 생성 v1",
+      src: "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-kayenta-groundlevel-longlens-frieze-coexistence-imagegen-v1.png",
+      sourceAttribution: "OpenAI built-in image generation; project anatomy references only",
+      licenseRecord: "Generated project asset; external research used only as factual evidence",
+      generationPromptRecord: "tools/comfyui/early-jurassic-frieze-ecosystem-scene-20260803.json#prompt",
+      generationSeed: "not exposed by generator",
+      generationWorkflow: "OpenAI built-in image generation with two anatomy-only project references",
+      reviewStatus: "ecosystem anatomy, ecology, and responsive review supported; catalog published; never representative",
+      metadataRecord: "tools/comfyui/early-jurassic-frieze-ecosystem-scene-20260803.json",
+    },
   ],
   "scelidosaurus-harrisonii": [
     {
@@ -21595,6 +21661,7 @@ function getLightboxItems(items) {
 const lightboxMaxScale = 4;
 const lightboxNavRestoreDelay = 2200;
 let lightboxNavRestoreTimer = 0;
+let lightboxReturnFocus = null;
 
 function setLightboxNavigationHidden(hidden, { autoRestore = false } = {}) {
   const lightbox = $("#imageLightbox");
@@ -21686,11 +21753,20 @@ function renderLightbox() {
 function openLightbox(items, index = 0) {
   const lightboxItems = getLightboxItems(items);
   if (!lightboxItems.length) return;
+  lightboxReturnFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
   state.lightboxItems = lightboxItems;
   state.lightboxIndex = Math.max(0, Math.min(index, lightboxItems.length - 1));
   resetLightboxView();
   setLightboxNavigationHidden(false);
+  const appShell = $(".app-shell");
+  if (appShell) {
+    appShell.inert = true;
+    appShell.setAttribute("aria-hidden", "true");
+  }
   renderLightbox();
+  requestAnimationFrame(() => {
+    $(".lightbox-close")?.focus();
+  });
 }
 
 function openDinoGalleryLightbox(dino, selectedImage = getPrimaryImage(dino)) {
@@ -21705,11 +21781,21 @@ function openDinoGalleryLightbox(dino, selectedImage = getPrimaryImage(dino)) {
 }
 
 function closeLightbox() {
+  const returnFocus = lightboxReturnFocus;
+  lightboxReturnFocus = null;
   state.lightboxItems = [];
   state.lightboxIndex = 0;
   resetLightboxView();
   setLightboxNavigationHidden(false);
   renderLightbox();
+  const appShell = $(".app-shell");
+  if (appShell) {
+    appShell.inert = false;
+    appShell.removeAttribute("aria-hidden");
+  }
+  if (returnFocus?.isConnected) {
+    requestAnimationFrame(() => returnFocus.focus());
+  }
 }
 
 function moveLightbox(delta) {
@@ -21719,6 +21805,450 @@ function moveLightbox(delta) {
   resetLightboxView();
   setLightboxNavigationHidden(false);
   renderLightbox();
+}
+
+const ecosystemSceneTypeLabels = Object.freeze({
+  coexistence: "공존",
+  "predation-tension": "포식 긴장",
+  "herd-growth": "무리·성장",
+  "environment-event": "환경 사건",
+});
+
+const ecosystemParticipantRoleLabels = Object.freeze({
+  focal: "중심 개체",
+  context: "맥락 개체",
+  primary: "주요 등장",
+  foreground: "전경",
+  background: "원경",
+  predator: "포식자",
+  prey: "잠재 먹잇감",
+  herbivore: "초식동물",
+  "primary-subject": "주요 등장",
+  "secondary-subject": "함께 등장",
+  "formation-fauna": "같은 지층 동물상",
+});
+
+const ecosystemCertaintyLabels = Object.freeze({
+  high: "근거 높음",
+  moderate: "근거 중간",
+  low: "근거 낮음",
+});
+
+const ecosystemDiversityTagLabels = Object.freeze({
+  "stacked-depth": "층층이 깊이",
+  "negative-space-channel": "빈 수로 중심",
+  "foreground-predator": "전경 포식자",
+  "cloud-heavy-sky": "넓은 하늘",
+  "single-subject": "한 개체 환경",
+  "wide-environment": "넓은 서식지",
+  "shallow-water": "얕은 물길",
+  "horizontal-layers": "가로 지층",
+  "counter-diagonal": "엇갈린 대각선",
+  "dust-front": "먼지 전선",
+  "open-negative-space": "넓은 빈 공간",
+  "small-bodied-pair": "작은 두 개체",
+  "s-curve-leading-line": "S자 동선",
+  "opposed-banks": "마주 보는 강안",
+  "foreground-herbivore": "전경 초식동물",
+  "high-view": "높은 시점",
+  "layered-depth": "겹친 거리층",
+  mist: "안개",
+  "wetland-reflection": "습지 반사",
+  "high-oblique": "높은 사선",
+  "channel-depth": "수로 원근",
+  "close-foreground": "가까운 전경",
+  "scale-contrast": "크기 대비",
+  "low-camera": "낮은 시점",
+  "s-curve-trail": "S자 숲길",
+  "horizontal-log": "가로 통나무",
+  "forest-frame": "숲 프레임",
+  "z-depth": "Z자 깊이",
+  "concentric-ground": "동심원 지형",
+  "upper-lower-split": "위아래 분리",
+  "opposed-directions": "반대 이동축",
+  "vertical-frieze": "세로 기둥 프리즈",
+  "long-lens": "긴 초점거리",
+  "edge-separated": "양끝 분리",
+});
+
+function getEcosystemParticipantCertaintyLabel(value) {
+  const certainty = String(value || "").toLowerCase();
+  if (!certainty) return "";
+  const confidence = certainty.includes("very high")
+    ? "근거 매우 높음"
+    : certainty.includes("moderate-high")
+      ? "근거 중간 이상"
+      : certainty.includes("high")
+        ? "근거 높음"
+        : certainty.includes("moderate")
+          ? "근거 중간"
+          : certainty.includes("low")
+            ? "근거 낮음"
+            : ecosystemCertaintyLabels[certainty] || "근거 범위 검토됨";
+  return certainty.includes("hypothetical") ? `${confidence} · 일부 복원 상상` : confidence;
+}
+
+function getEcosystemCatalog() {
+  const catalog = window.ecosystemSceneCatalog;
+  const allScenes = Array.isArray(catalog?.scenes) ? catalog.scenes : [];
+  const previewDrafts =
+    ["127.0.0.1", "localhost"].includes(window.location.hostname) &&
+    new URLSearchParams(window.location.search).get("ecosystemPreview") === "draft";
+  return {
+    schemaVersion: catalog?.schemaVersion || "unavailable",
+    timeBins: Array.isArray(catalog?.timeBins) ? catalog.timeBins : [],
+    scenes: allScenes.filter(
+      (scene) =>
+        previewDrafts ||
+        (scene.publication?.status === "published" && scene.publication?.eligible === true),
+    ),
+    previewDrafts,
+  };
+}
+
+function getEcosystemSceneType(scene) {
+  return Object.prototype.hasOwnProperty.call(ecosystemSceneTypeLabels, scene?.sceneType)
+    ? scene.sceneType
+    : "coexistence";
+}
+
+function getEcosystemTimeBin(scene, timeBins = getEcosystemCatalog().timeBins) {
+  return timeBins.find((timeBin) => timeBin.id === scene?.timeBinId) || null;
+}
+
+function getFiniteAge(value, fallback = -Infinity) {
+  const age = Number(value);
+  return Number.isFinite(age) ? age : fallback;
+}
+
+function getEcosystemAgeRange(scene, timeBin = getEcosystemTimeBin(scene)) {
+  const formationRange = scene?.formation?.ageRangeMa;
+  const binRange = timeBin?.ageRangeMa;
+  return {
+    older: getFiniteAge(formationRange?.older, getFiniteAge(binRange?.older)),
+    younger: getFiniteAge(formationRange?.younger, getFiniteAge(binRange?.younger)),
+  };
+}
+
+function getEcosystemAgeLabel(scene, timeBin = getEcosystemTimeBin(scene)) {
+  const { older, younger } = getEcosystemAgeRange(scene, timeBin);
+  if (!Number.isFinite(older) || !Number.isFinite(younger)) return "연대 범위 검토 중";
+  return `${older}–${younger} Ma`;
+}
+
+function compareEcosystemTimeBinsOldestFirst(left, right) {
+  const olderDelta =
+    getFiniteAge(right?.ageRangeMa?.older) - getFiniteAge(left?.ageRangeMa?.older);
+  if (olderDelta) return olderDelta;
+  return getFiniteAge(right?.ageRangeMa?.younger) - getFiniteAge(left?.ageRangeMa?.younger);
+}
+
+function compareEcosystemScenesOldestFirst(left, right, timeBins, sourceOrder) {
+  const leftBin = getEcosystemTimeBin(left, timeBins);
+  const rightBin = getEcosystemTimeBin(right, timeBins);
+  const binOlderDelta =
+    getFiniteAge(rightBin?.ageRangeMa?.older) - getFiniteAge(leftBin?.ageRangeMa?.older);
+  if (binOlderDelta) return binOlderDelta;
+  const leftRange = getEcosystemAgeRange(left, leftBin);
+  const rightRange = getEcosystemAgeRange(right, rightBin);
+  const formationOlderDelta = rightRange.older - leftRange.older;
+  if (formationOlderDelta) return formationOlderDelta;
+  const formationYoungerDelta = rightRange.younger - leftRange.younger;
+  if (formationYoungerDelta) return formationYoungerDelta;
+  return (sourceOrder.get(left.id) ?? 0) - (sourceOrder.get(right.id) ?? 0);
+}
+
+function getEcosystemSearchText(scene, timeBin) {
+  const participants = (scene.participants || []).flatMap((participant) => [
+    participant.taxonId,
+    participant.scientificName,
+    getDinoById(participant.taxonId)?.koreanName,
+    participant.role,
+    participant.certainty,
+  ]);
+  return [
+    scene.id,
+    scene.title,
+    scene.summary,
+    scene.sceneType,
+    timeBin?.label,
+    getEraLabel(timeBin?.era),
+    scene.formation?.name,
+    scene.formation?.context,
+    scene.formation?.resolution,
+    scene.composition?.label,
+    scene.composition?.camera,
+    scene.composition?.spatialLayout,
+    ...(scene.composition?.diversityTags || []),
+    ...(scene.epistemic?.known || []),
+    ...(scene.epistemic?.reconstructed || []),
+    scene.epistemic?.boundary,
+    ...participants,
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .normalize("NFKC")
+    .toLowerCase();
+}
+
+function getFilteredEcosystemScenes() {
+  const { scenes, timeBins } = getEcosystemCatalog();
+  const sourceOrder = new Map(scenes.map((scene, index) => [scene.id, index]));
+  const normalizedSearch = state.ecosystem.search.normalize("NFKC").trim().toLowerCase();
+  return scenes
+    .filter((scene) => {
+      const timeBin = getEcosystemTimeBin(scene, timeBins);
+      if (!timeBin) return false;
+      if (state.ecosystem.era !== "all" && timeBin.era !== state.ecosystem.era) return false;
+      if (state.ecosystem.timeBin !== "all" && scene.timeBinId !== state.ecosystem.timeBin) {
+        return false;
+      }
+      if (
+        state.ecosystem.sceneType !== "all" &&
+        getEcosystemSceneType(scene) !== state.ecosystem.sceneType
+      ) {
+        return false;
+      }
+      return !normalizedSearch || getEcosystemSearchText(scene, timeBin).includes(normalizedSearch);
+    })
+    .sort((left, right) =>
+      compareEcosystemScenesOldestFirst(left, right, timeBins, sourceOrder),
+    );
+}
+
+function getRelevantEcosystemTimeBins() {
+  const { scenes, timeBins } = getEcosystemCatalog();
+  return timeBins
+    .filter((timeBin) => state.ecosystem.era === "all" || timeBin.era === state.ecosystem.era)
+    .filter((timeBin) => scenes.some((scene) => scene.timeBinId === timeBin.id))
+    .sort(compareEcosystemTimeBinsOldestFirst);
+}
+
+function renderEcosystemTimeFilters() {
+  const container = $("#ecosystemTimeFilters");
+  if (!container) return;
+  const { scenes } = getEcosystemCatalog();
+  const relevantBins = getRelevantEcosystemTimeBins();
+  if (
+    state.ecosystem.timeBin !== "all" &&
+    !relevantBins.some((timeBin) => timeBin.id === state.ecosystem.timeBin)
+  ) {
+    state.ecosystem.timeBin = "all";
+  }
+  container.innerHTML = [
+    `<button data-ecosystem-time="all" type="button">세부 시기 전체</button>`,
+    ...relevantBins.map((timeBin) => {
+      const count = scenes.filter((scene) => scene.timeBinId === timeBin.id).length;
+      return `<button data-ecosystem-time="${escapeHtml(timeBin.id)}" type="button">${escapeHtml(timeBin.label)} <strong>${count}</strong></button>`;
+    }),
+  ].join("");
+}
+
+function syncEcosystemFilterButtons() {
+  const { scenes, timeBins } = getEcosystemCatalog();
+  const sceneCountByEra = new Map();
+  const sceneCountByType = new Map();
+  for (const scene of scenes) {
+    const era = getEcosystemTimeBin(scene, timeBins)?.era;
+    if (era) sceneCountByEra.set(era, (sceneCountByEra.get(era) || 0) + 1);
+    const sceneType = getEcosystemSceneType(scene);
+    sceneCountByType.set(sceneType, (sceneCountByType.get(sceneType) || 0) + 1);
+  }
+  $$("[data-ecosystem-era]").forEach((button) => {
+    const active = button.dataset.ecosystemEra === state.ecosystem.era;
+    const available =
+      button.dataset.ecosystemEra === "all" || sceneCountByEra.has(button.dataset.ecosystemEra);
+    button.hidden = !available;
+    button.disabled = !available;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
+  $$("[data-ecosystem-time]").forEach((button) => {
+    const active = button.dataset.ecosystemTime === state.ecosystem.timeBin;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
+  $$("[data-ecosystem-type]").forEach((button) => {
+    const active = button.dataset.ecosystemType === state.ecosystem.sceneType;
+    const available =
+      button.dataset.ecosystemType === "all" || sceneCountByType.has(button.dataset.ecosystemType);
+    button.hidden = !available;
+    button.disabled = !available;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
+}
+
+function getEcosystemDisplayEpistemic(scene) {
+  const participantNames = (scene.participants || [])
+    .map((participant) => getDinoById(participant.taxonId)?.koreanName || participant.scientificName)
+    .filter(Boolean);
+  const joinedNames = participantNames.join("·") || "등장 동물";
+  const formationName = scene.formation?.name || "해당 지층";
+  const known =
+    participantNames.length > 1
+      ? [`${joinedNames}의 화석 자료를 ${formationName}의 같은 시대·지층 범위에서 비교했습니다.`]
+      : [`${joinedNames}의 화석과 ${formationName}의 환경 자료를 바탕으로 했습니다.`];
+  const reconstructed = ["몸 색, 자세, 거리, 날씨와 주변 풍경은 자료를 바탕으로 상상해 그렸습니다."];
+  if (scene.sceneType === "predation-tension") {
+    reconstructed.push("서로 경계하거나 쫓고 쫓기는 듯한 순간은 직접 관찰된 사실이 아닙니다.");
+  }
+  if (scene.sceneType === "environment-event") {
+    reconstructed.push("화산재·안개·물길 같은 환경의 정확한 모습과 시점은 복원 가설입니다.");
+  }
+  return {
+    known,
+    reconstructed,
+    boundary:
+      participantNames.length > 1
+        ? "같은 시대·지층에서 발견됐다는 사실만으로 두 동물이 실제로 만나거나 이렇게 행동했다고 단정할 수는 없습니다."
+        : "지층의 환경 자료는 참고할 수 있지만, 이 개체의 정확한 날씨·장소·행동을 직접 본 기록은 아닙니다.",
+    context:
+      participantNames.length > 1
+        ? "같은 시대·지층 범위의 공존 복원"
+        : "지층의 기후·환경 자료를 바탕으로 한 복원",
+  };
+}
+
+function getEcosystemDiversityTagLabel(tag) {
+  return ecosystemDiversityTagLabels[tag] || "구도 변주";
+}
+
+function renderEcosystemParticipant(participant) {
+  const dino = getDinoById(participant.taxonId);
+  const displayName = dino?.koreanName || participant.scientificName || participant.taxonId;
+  const scientificName = participant.scientificName || dino?.name || "";
+  const role = ecosystemParticipantRoleLabels[participant.role] || participant.role || "등장 동물";
+  const certainty = getEcosystemParticipantCertaintyLabel(participant.certainty);
+  return `
+    <li>
+      <span><strong>${escapeHtml(displayName)}</strong>${scientificName && scientificName !== displayName ? `<em>${escapeHtml(scientificName)}</em>` : ""}</span>
+      <small>${escapeHtml([role, certainty].filter(Boolean).join(" · "))}</small>
+    </li>
+  `;
+}
+
+function renderEcosystemEpistemicList(items, fallback) {
+  const values = Array.isArray(items) ? items.filter(Boolean) : [];
+  if (!values.length) return `<li>${escapeHtml(fallback)}</li>`;
+  return values.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+}
+
+function getEcosystemLightboxItem(scene, timeBins) {
+  const timeBin = getEcosystemTimeBin(scene, timeBins);
+  const displayEpistemic = getEcosystemDisplayEpistemic(scene);
+  const known = displayEpistemic.known.join(" · ");
+  const reconstructed = displayEpistemic.reconstructed.join(" · ");
+  return {
+    src: scene.asset?.src,
+    kind: `${ecosystemSceneTypeLabels[getEcosystemSceneType(scene)]} · ${timeBin?.label || "시기 검토 중"}`,
+    title: scene.title,
+    body: [
+      scene.summary,
+      known ? `알 수 있는 것: ${known}` : "",
+      reconstructed ? `그림으로 상상한 것: ${reconstructed}` : "",
+      displayEpistemic.boundary,
+    ]
+      .filter(Boolean)
+      .join(" "),
+    source: [scene.formation?.name, "생성 이미지 · 검수 기록 연결됨"].filter(Boolean).join(" · "),
+  };
+}
+
+function openFilteredEcosystemScene(sceneId) {
+  const { timeBins } = getEcosystemCatalog();
+  const filteredItems = getFilteredEcosystemScenes()
+    .filter((scene) => scene.asset?.src)
+    .map((scene) => ({ scene, lightboxItem: getEcosystemLightboxItem(scene, timeBins) }));
+  const selectedIndex = filteredItems.findIndex(({ scene }) => scene.id === sceneId);
+  if (selectedIndex < 0) return;
+  openLightbox(
+    filteredItems.map(({ lightboxItem }) => lightboxItem),
+    selectedIndex,
+  );
+}
+
+function renderEcosystemCard(scene, timeBins) {
+  const timeBin = getEcosystemTimeBin(scene, timeBins);
+  const sceneType = getEcosystemSceneType(scene);
+  const compositionLabel = scene.composition?.label || "구도 정보 검토 중";
+  const diversityTags = (scene.composition?.diversityTags || []).slice(0, 3);
+  const displayEpistemic = getEcosystemDisplayEpistemic(scene);
+  const imageSource = scene.asset?.src || "";
+  const publicationReady = scene.publication?.status === "published" && scene.publication?.eligible;
+  const evidenceCount = Array.isArray(scene.evidence) ? scene.evidence.length : 0;
+  return `
+    <article class="ecosystem-card scene-${escapeHtml(sceneType)}" data-ecosystem-card="${escapeHtml(scene.id)}">
+      <button class="ecosystem-card-image ${imageSource ? "can-zoom" : "is-missing"}" data-ecosystem-scene="${escapeHtml(scene.id)}" type="button" ${imageSource ? "" : "disabled"} aria-label="${escapeHtml(scene.title)} 이미지 크게 보기">
+        ${imageSource ? `<img src="${escapeHtml(imageSource)}" alt="${escapeHtml(scene.title)} 생태 복원 장면" loading="lazy" />` : "<span>이미지 검수 대기</span>"}
+        <span class="ecosystem-image-action">이미지 크게 보기</span>
+      </button>
+      <div class="ecosystem-card-body">
+        <div class="ecosystem-card-heading">
+          <div>
+            <p class="eyebrow">${escapeHtml(getEraLabel(timeBin?.era))} · ${escapeHtml(timeBin?.label || "세부 시기 검토 중")} · ${escapeHtml(getEcosystemAgeLabel(scene, timeBin))}</p>
+            <h4>${escapeHtml(scene.title)}</h4>
+          </div>
+          <span class="ecosystem-review-badge ${publicationReady ? "ready" : "pending"}">${publicationReady ? "공개 검수 완료" : "검토용 장면"}</span>
+        </div>
+        <div class="ecosystem-badge-row">
+          <span class="ecosystem-type-badge">${escapeHtml(ecosystemSceneTypeLabels[sceneType])}</span>
+          <span class="ecosystem-composition-badge" title="${escapeHtml(`구도 다양성: ${compositionLabel}`)}">구도 · ${escapeHtml(compositionLabel)}</span>
+          ${diversityTags.map((tag) => `<span class="ecosystem-diversity-tag">${escapeHtml(getEcosystemDiversityTagLabel(tag))}</span>`).join("")}
+        </div>
+        <p class="ecosystem-summary">${escapeHtml(scene.summary || "장면 설명을 준비하고 있습니다.")}</p>
+        <dl class="ecosystem-context">
+          <div>
+            <dt>지층</dt>
+            <dd>${escapeHtml(scene.formation?.name || "지층 검토 중")}</dd>
+          </div>
+          <div>
+            <dt>장면 범위</dt>
+            <dd>${escapeHtml(displayEpistemic.context)}</dd>
+          </div>
+        </dl>
+        <section class="ecosystem-participants" aria-label="장면 참여 동물">
+          <h5>함께 등장하는 동물</h5>
+          <ul>${(scene.participants || []).map(renderEcosystemParticipant).join("") || "<li>참여 동물 검토 중</li>"}</ul>
+        </section>
+        <div class="ecosystem-evidence-grid">
+          <section class="ecosystem-evidence known">
+            <h5>알 수 있는 것</h5>
+            <ul>${renderEcosystemEpistemicList(displayEpistemic.known, "지층과 화석 근거를 정리하고 있습니다.")}</ul>
+          </section>
+          <section class="ecosystem-evidence reconstructed">
+            <h5>그림으로 상상한 것</h5>
+            <ul>${renderEcosystemEpistemicList(displayEpistemic.reconstructed, "복원 가정 범위를 정리하고 있습니다.")}</ul>
+          </section>
+        </div>
+        <p class="ecosystem-boundary"><strong>근거 경계</strong>${escapeHtml(displayEpistemic.boundary)} <span>근거 ${evidenceCount}건</span></p>
+      </div>
+    </article>
+  `;
+}
+
+function renderEcosystems() {
+  const grid = $("#ecosystemGrid");
+  const summary = $("#ecosystemResultSummary");
+  if (!grid || !summary) return;
+  const { scenes, timeBins } = getEcosystemCatalog();
+  renderEcosystemTimeFilters();
+  syncEcosystemFilterButtons();
+  const filteredScenes = getFilteredEcosystemScenes();
+  const distinctCompositions = new Set(
+    filteredScenes.map((scene) => scene.composition?.key).filter(Boolean),
+  ).size;
+  summary.textContent = scenes.length
+    ? `현재 조건 ${filteredScenes.length}장 · 전체 ${scenes.length}장 · 서로 다른 구도 ${distinctCompositions}종`
+    : "생태 장면 데이터가 아직 연결되지 않았습니다.";
+  grid.innerHTML = filteredScenes.length
+    ? filteredScenes.map((scene) => renderEcosystemCard(scene, timeBins)).join("")
+    : `
+      <div class="ecosystem-empty">
+        <strong>${scenes.length ? "조건에 맞는 장면이 없습니다." : "생태 장면을 준비하고 있습니다."}</strong>
+        <span>${scenes.length ? "검색어나 시대·장면 유형 필터를 바꿔 보세요." : "승인된 프로젝트 자산과 근거 기록이 연결되면 여기에 표시됩니다."}</span>
+      </div>
+    `;
 }
 
 function getGalleryItems(dino) {
@@ -26590,7 +27120,7 @@ const generationRouteGuides = {
   },
   "scutellosaurus-lawleri": {
     focus: "전기 쥐라기 소형 기초 장갑류, 작은 방패형 골편, 가벼운 이족보행 몸, 슬롯 워시와 붉은 관목지 위장색, 도주/관목 회피 방어, 스테고사우루스/안킬로사우루스 드리프트 방지",
-    route: "새 대표 전신으로 작은 머리, 가는 이족보행 몸, 두 짧은 앞다리, 두 긴 뒷다리와 한 꼬리를 먼저 고정합니다. 작은 골편은 씨앗 크기로 흩어 두고, 청색시간 변이·계절 수로·상부 사선·지형 분리 동물상·비 뒤 선회 역할로 확장하되 큰 자갈 골편, 연속 껍질, 꼬리 고리무늬 또는 사족보행 드리프트는 즉시 제외합니다.",
+    route: "새 대표 전신으로 작은 머리, 가는 이족보행 몸, 두 짧은 앞다리, 두 긴 뒷다리와 한 꼬리를 먼저 고정합니다. 작은 골편은 씨앗 크기로 흩어 두고, 청색시간 변이·계절 수로·상부 사선·지형 분리 동물상·비 뒤 선회 역할로 확장하되 큰 자갈 골편, 연속 껍질, 꼬리 고리무늬 또는 사족보행 드리프트는 즉시 제외합니다. 새 카옌타 세 구역 프리즈는 딜로포사우루스와 양끝·반대 방향·비접촉으로 분리한 생태 탭 전용 검수본이며 장면 축척의 골편·발가락을 종 대표 근거로 사용하지 않습니다.",
     control: "assets/dinosaurs/scutellosaurus-lawleri-slender-biped-representative-imagegen-v2.png",
     pass: "전신 프롬프트 | 작고 가벼운 몸 | 주로 이족보행 | 낮은 부리형 초식 머리 | 등과 옆구리의 작은 타원형 골편 | 청록색/크림색 작은 골편 하이라이트 | 긴 균형 꼬리 | 마른 지면 또는 얕은 물길에서 발 보이기 | 방어 장면은 관목 회피·도주·몸 돌리기 중심",
     reject: "큰 스테고사우루스 등판, 꼬리가시, 안킬로사우루스 꼬리곤봉, 넓은 갑옷 껍질, 지나치게 크고 둥근 대형 골편 갑옷, 각룡 프릴, 포식자 이빨, 깃털, 가려진 발, 잘린 꼬리, 포식자가 등 골편을 물어뜯는 장면이 생기면 탈락",
@@ -26804,7 +27334,7 @@ const generationRouteGuides = {
   },
   "herrerasaurus-ischigualastensis": {
     focus: "작은 손, 세 주요 손가락, 두 뒷다리",
-    route: "compact_hand_bodylock_control",
+    route: "compact_hand_bodylock_control; 새 Cancha de Bochas 고각도 동심원 장면은 에오랍토르와 위아래·반대 이동축으로 분리한 생태 탭 전용 검수본이며 실제 조우·추격·포식을 주장하지 않고 장면 축척 손발을 대표 근거로 사용하지 않음",
     control: "assets/dinosaurs/herrerasaurus-ischigualastensis-bodylock-guide-v1.png",
     pass: "작은 손 바디락 저노이즈 제어 | 이미지-투-이미지 제어 | 노이즈 0.18-0.32 | 제어 0.5-0.74",
     reject: "팔이 티라노사우루스식 작은 비율로 줄어들면 탈락",
@@ -26846,7 +27376,7 @@ const generationRouteGuides = {
   },
   "eoraptor-lunensis": {
     focus: "약 1.2-1.3m 이스치구알라스토 기초 용각형류, 약 12.3cm 낮은 삼각형 머리, 중간 길이 낮은 목, 짧고 강건한 앞다리, 손 공식 2-3-4-(1)-0, 조금 긴 경골, 세 주요 앞발가락과 작은 첫째 발가락, 한 개 긴 꼬리, 초식 중심 치열",
-    route: "triassic_ischigualasto_eoraptor_basal_sauropodomorph_prompt_then_low_skull_moderate_neck_reduced_outer_manus_both_feet_tail_review",
+    route: "triassic_ischigualasto_eoraptor_basal_sauropodomorph_prompt_then_low_skull_moderate_neck_reduced_outer_manus_both_feet_tail_review; 새 Cancha de Bochas 고각도 동심원 장면은 헤레라사우루스와 위아래·반대 이동축으로 분리한 생태 탭 전용 검수본이며 실제 조우·추격·포식을 주장하지 않고 장면 축척 손발을 대표 근거로 사용하지 않음",
     control: "assets/dinosaurs/eoraptor-lunensis-robust-short-forelimb-representative-imagegen-v2.png",
     pass: "약 1.2-1.3m 전신 | 약 12.3cm 낮은 삼각형 머리와 큰 안와 | 9개 목뼈의 중간 길이 낮은 S자형 목 | 정확히 두 짧고 강건한 앞다리 | 세 기능성 수지와 축소 IV, 자유 수지 없는 V | 정확히 두 뒷다리 | 세 주요 앞발가락과 작은 첫째 발가락 | 골반에서 하나로 이어지는 약 60cm 추정 꼬리",
     reject: "수직 백조 목, 새 부리 머리, 코엘로피시스·벨로시랩터·에오드로마이우스 복제, 세 손가락을 완전한 손으로 단정, 네다섯 개 동일 길이 손가락, 거대한 발톱·낫발톱, 추가·융합·누락 사지, 다리에서 시작하거나 갈라진 꼬리, 직접 공격·추격·상처·사체·무리 사냥 장면이면 탈락",
@@ -26860,7 +27390,7 @@ const generationRouteGuides = {
   },
   "dilophosaurus-wetherilli": {
     focus: "Marsh & Rowe 2020 기준의 분리된 비골-누골 볏 두 개, 견고한 주둥이, 네 손가락 손 공식 2-3-4-1, 세 주된 앞쪽 발가락과 작은 첫째발가락, 두 팔·두 다리·한 꼬리",
-    route: "jurassic_kayenta_dilophosaurus_twin_nasolacrimal_crest_prompt_then_original_size_head_both_hands_both_feet_pelvis_tail_review; digit_iv_single_peg_non_ungual; no_frill_no_venom",
+    route: "jurassic_kayenta_dilophosaurus_twin_nasolacrimal_crest_prompt_then_original_size_head_both_hands_both_feet_pelvis_tail_review; digit_iv_single_peg_non_ungual; no_frill_no_venom; 새 카옌타 세 구역 프리즈는 스쿠텔로사우루스와 양끝·반대 방향·비접촉으로 분리한 생태 탭 전용 검수본이며 장면 축척의 제4손가락·먼 발가락을 종 대표 근거로 사용하지 않음",
     control: "assets/dinosaurs/dilophosaurus-wetherilli-kayenta-twincrest-fourdigit-representative-imagegen-v2.png",
     pass: "한 개체 전신 | 길고 낮은 견고한 두개골 | 서로 분리된 평행 볏 두 개 | 정확히 두 앞다리 | 손마다 세 기능성 발톱 손가락과 작은 못 모양 비발톱 IV | 정확히 두 뒷다리 | 세 주된 앞쪽 발가락과 작은 안쪽 I | 골반에서 하나로 이어지는 온전한 긴 꼬리 | 목도리·독 분사 없음",
     reject: "볏이 하나·셋 이상이거나 융합, 목도리·독 분사, 단일 코뿔, 알로사우루스형 눈썹, 티라노사우루스형 머리·팔, 손가락 셋만 보임, 네 개의 큰 손발톱이나 다섯 손가락, 손바닥 엎침, 여분·융합·누락 사지, 숨은 발, 두 꼬리·갈라진 꼬리·잘린 꼬리, 접촉·상처·유혈이면 탈락.",
@@ -27827,9 +28357,38 @@ function bindLightboxEvents() {
 
   window.addEventListener("keydown", (event) => {
     if (!state.lightboxItems.length) return;
-    if (event.key === "Escape") closeLightbox();
-    if (event.key === "ArrowLeft") moveLightbox(-1);
-    if (event.key === "ArrowRight") moveLightbox(1);
+    if (event.key === "Tab") {
+      const focusable = $$('[data-lightbox-action]:not([disabled]):not([tabindex="-1"])').filter(
+        (element) => !element.closest("[hidden]") && element.getClientRects().length > 0,
+      );
+      if (!focusable.length) {
+        event.preventDefault();
+        $(".lightbox-panel")?.focus();
+        return;
+      }
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+      return;
+    }
+    if (event.key === "Escape") {
+      event.preventDefault();
+      closeLightbox();
+    }
+    if (event.key === "ArrowLeft") {
+      event.preventDefault();
+      moveLightbox(-1);
+    }
+    if (event.key === "ArrowRight") {
+      event.preventDefault();
+      moveLightbox(1);
+    }
   });
 
   window.addEventListener("resize", () => {
@@ -27857,7 +28416,7 @@ function fitInitialAtlasFrame(attempt = 0) {
   });
 }
 
-function setView(view) {
+function setView(view, { historyMode = "replace" } = {}) {
   if (view !== "atlas" && state.map.expanded) setMapExpanded(false);
   if (view !== "atlas") state.map.sidebarExpanded = false;
   if (view === "review") {
@@ -27876,26 +28435,26 @@ function setView(view) {
   $$(".view").forEach((panel) => panel.classList.remove("active"));
   $(`#${view}View`).classList.add("active");
   if (window.location.hash !== `#${view}`) {
-    history.replaceState(null, "", `#${view}`);
+    if (historyMode === "push") history.pushState(null, "", `#${view}`);
+    else history.replaceState(null, "", `#${view}`);
   }
 
-  const titles = {
-    atlas: "공룡 계통도 맵",
-    catalog: "대표 공룡 도감",
-    review: "이미지 검수 화면",
-  };
   $("#viewTitle").textContent = {
     atlas: "공룡 계통도 맵",
     catalog: "대표 공룡 도감",
+    ecosystems: "시대별 생태 갤러리",
     review: "이미지 검수 화면",
-  }[view];
-  if (view === "assetReview") {
-    $("#viewTitle").textContent = "이미지 검수 워크벤치";
-  }
+    assetReview: "이미지 검수 워크벤치",
+  }[view] || "Dino Atlas";
   syncResponsiveMapInspector();
   applyMapUiState();
   renderAll();
   requestAnimationFrame(() => {
+    const activeTab = $(`.nav-tab[data-view="${view}"]`);
+    const navTabs = activeTab?.closest(".nav-tabs");
+    if (activeTab && navTabs && navTabs.scrollWidth > navTabs.clientWidth + 1) {
+      activeTab.scrollIntoView({ block: "nearest", inline: "center" });
+    }
     const activeStrip =
       view === "atlas"
         ? $(".atlas-classification-strip")
@@ -27926,6 +28485,7 @@ function renderAll() {
   renderMapModeControls();
   renderDetail();
   renderCatalog();
+  renderEcosystems();
   renderReview();
 }
 
@@ -28232,14 +28792,59 @@ function setAtlasSearch(value) {
 
 function bindEvents() {
   $$(".nav-tab").forEach((tab) => {
-    tab.addEventListener("click", () => setView(tab.dataset.view));
+    tab.addEventListener("click", () => setView(tab.dataset.view, { historyMode: "push" }));
   });
 
   window.addEventListener("hashchange", () => {
     const nextView = window.location.hash.replace("#", "");
-    if (["atlas", "catalog", "review", "assetReview"].includes(nextView) && nextView !== state.view) {
+    if (
+      ["atlas", "catalog", "ecosystems", "review", "assetReview"].includes(nextView) &&
+      nextView !== state.view
+    ) {
       setView(nextView);
     }
+  });
+
+  $("#ecosystemSearchInput").addEventListener("input", (event) => {
+    state.ecosystem.search = event.target.value;
+    renderEcosystems();
+  });
+
+  $("#ecosystemEraFilters").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-ecosystem-era]");
+    if (!button) return;
+    state.ecosystem.era = button.dataset.ecosystemEra;
+    state.ecosystem.timeBin = "all";
+    renderEcosystems();
+  });
+
+  $("#ecosystemTimeFilters").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-ecosystem-time]");
+    if (!button) return;
+    state.ecosystem.timeBin = button.dataset.ecosystemTime;
+    renderEcosystems();
+  });
+
+  $("#ecosystemTypeFilters").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-ecosystem-type]");
+    if (!button) return;
+    state.ecosystem.sceneType = button.dataset.ecosystemType;
+    renderEcosystems();
+  });
+
+  $("#resetEcosystemFilters").addEventListener("click", () => {
+    state.ecosystem.search = "";
+    state.ecosystem.era = "all";
+    state.ecosystem.timeBin = "all";
+    state.ecosystem.sceneType = "all";
+    $("#ecosystemSearchInput").value = "";
+    renderEcosystems();
+  });
+
+  $("#ecosystemGrid").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-ecosystem-scene]");
+    if (!button) return;
+    openFilteredEcosystemScene(button.dataset.ecosystemScene);
   });
 
   $("#searchInput").addEventListener("input", (event) => {
@@ -28308,7 +28913,7 @@ function bindEvents() {
 }
 
 const initialView = window.location.hash.replace("#", "");
-if (["atlas", "catalog", "review"].includes(initialView)) {
+if (["atlas", "catalog", "ecosystems", "review", "assetReview"].includes(initialView)) {
   state.view = initialView;
 }
 
