@@ -2,6 +2,9 @@
   "schemaVersion": 1,
   "reviewBatch": "2026-08-02-quetzalcoatlus-ankle-membrane-correction-1",
   "rejectedSources": {
+    "assets/dinosaurs/brachiosaurus-altithorax-slate-moss-pattern-imagegen-v1.png": {
+      "reason": "The former S2 keeps four limbs and one tail but the torso high point drifts toward the pelvis, forelimb dominance is weak, and the flat head with a low forward nostril loses the rounded nasal mound and high-nostril Brachiosaurus identity gate. It is retained only as a diagnostic negative and must not be assigned or used as a positive anatomy control."
+    },
     "assets/dinosaurs/nyctosaurus-gracilis-niobrara-forked-crest-imagegen-v1.png": {
       "reason": "Free clawed appendages project from the wing margins, limb and membrane topology is confused, and a genus-level mature branching crest is incorrectly fixed onto the N. gracilis representative."
     },

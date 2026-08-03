@@ -8,32 +8,47 @@
   "licensePolicy": "Only project-internal AI-generated images and hand-authored guides are allowed as sources. External museum/science material is reference-only, not training data.",
   "items": [
     {
-      "id": "brachiosaurus_imagegen_v16_short_tail_seed",
+      "id": "brachiosaurus_nasal_mound_fullbody_v18_train_seed",
       "role": "train_seed",
-      "source": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v16-source-candidate.png",
-      "caption": "sauropod_brachiosaurus, Brachiosaurus altithorax, full body side profile, shoulders visibly higher than hips, front limbs taller and straighter than hind limbs, trunk slopes downward from shoulder to hip, long neck rises forward-up from the shoulder, small non-predatory sauropod head, exactly four visible pillar feet on dry ground, short thick tapering tail, compact high-shouldered brachiosaurid body plan, no low-neck Apatosaurus body plan, no long Diplodocus whip tail, no text, no watermark",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-fullbody-imagegen-v18.png",
+      "caption": "sauropod_brachiosaurus, Brachiosaurus altithorax, full adult body, shoulders visibly higher than hips, front limbs taller than hind limbs, trunk descends from shoulder to pelvis, long neck rises from the high shoulder, small head with a rounded fleshy nasal mound and high-set nostril, exactly two forelimbs and two hind limbs, one pelvis-origin robust tapering tail, no low generic sauropod body, no flat head, no low forward nostril, no extra limbs, no text, no watermark",
       "strengths": [
-        "current app first candidate after the P3 short-tail pass",
-        "combines taller forelimbs, high shoulders, sloping trunk, rising neck, four open feet, and a compact tail",
-        "best current antidote to repeated diplodocid whip-tail drift"
+        "sole 2026-08-03 representative and full-body anatomy control",
+        "combines the high shoulder, longer forelimb, descending back, nasal mound, high nostril, four-limb, and one-tail gates",
+        "project-internal AI-generated source with an exact file hash in the gallery closure audit"
       ],
       "risks": [
-        "tail may be slightly over-short for final species-level approval",
-        "exact skull, toe, and tail-base details still need crop review"
+        "historical generation prompt, call ID, and seed were not recorded and must not be invented",
+        "nostril size and exact soft-tissue profile remain reconstruction choices"
+      ]
+    },
+    {
+      "id": "brachiosaurus_imagegen_v16_short_tail_seed",
+      "role": "review_hold",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v16-source-candidate.png",
+      "caption": "review hold only, historical short-tail Brachiosaurus body comparison with high shoulders and four visible feet but an insufficiently rounded nasal mound and weak high-nostril cue",
+      "strengths": [
+        "useful high-shoulder, longer-forelimb, four-foot, and compact-tail body comparison",
+        "documents the earlier antidote to repeated diplodocid whip-tail drift"
+      ],
+      "risks": [
+        "flat generic head does not preserve the current rounded nasal mound and high-nostril identity gate",
+        "must not be used as a positive train seed or outrank v18",
+        "tail may be slightly over-short and exact toe details remain unresolved"
       ]
     },
     {
       "id": "brachiosaurus_tail_reduced_i2i_v4_previous_hold",
       "role": "review_hold",
       "source": "assets/dinosaurs/brachiosaurus-altithorax-tail-reduced-i2i-v4.png",
-      "caption": "review hold only, previous app first Brachiosaurus altithorax tail-reduced i2i candidate with high shoulders, taller forelimbs, rising neck, four open feet, and a less whip-like but still longer tail than v16",
+      "caption": "review hold only, previous app first Brachiosaurus altithorax tail-reduced i2i candidate with high shoulders, taller forelimbs, rising neck, four open feet, and a less whip-like but still longer tail than the historical v16 short-tail comparison",
       "strengths": [
         "previous app first candidate for the high-shoulder Brachiosaurus gate",
         "preserves taller forelimbs, high shoulders, sloping trunk, rising neck, and four open feet",
         "low-denoise tail-reduction pass reduced the long whip-tail risk from v3"
       ],
       "risks": [
-        "tail remains longer and thinner than the promoted v16 candidate",
+        "tail remains longer and thinner than the historical v16 short-tail comparison",
         "exact skull and toe details still need crop review"
       ]
     },
@@ -41,15 +56,15 @@
       "id": "brachiosaurus_imagegen_v17_short_tail_hold",
       "role": "review_hold",
       "source": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v17-source-candidate.png",
-      "caption": "review hold only, P3 Brachiosaurus altithorax prompt candidate with high shoulders, taller forelimbs, rising neck, four visible feet, and a shorter tail than the older P2 candidates, not as compact as v16",
+      "caption": "review hold only, P3 Brachiosaurus altithorax prompt candidate with high shoulders, taller forelimbs, rising neck, four visible feet, and a shorter tail than the older P2 candidates, not as compact as the historical v16 short-tail comparison",
       "strengths": [
         "clear high-shoulder body and taller-forelimb read",
         "shorter tail than the v12-v14 prompt-only set",
         "useful comparison for future short-tail conditioning"
       ],
       "risks": [
-        "tail remains less compact than v16",
-        "not suitable as train_seed while v16 gives a clearer short-tail gate",
+        "tail remains less compact than the historical v16 short-tail comparison",
+        "not suitable as train_seed because it does not match the current v18 nasal-mound and high-nostril identity gate",
         "exact sauropod foot and skull proportions still need crop review"
       ]
     },
@@ -57,14 +72,14 @@
       "id": "brachiosaurus_imagegen_v15_long_tail_hold",
       "role": "review_hold",
       "source": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v15-source-candidate.png",
-      "caption": "review hold only, P3 Brachiosaurus altithorax prompt candidate with useful high-shoulder body plan but tail remains longer and more pointed than the promoted v16 seed",
+      "caption": "review hold only, P3 Brachiosaurus altithorax prompt candidate with useful high-shoulder body plan but a tail longer and more pointed than the historical v16 short-tail comparison and without the current v18 head gate",
       "strengths": [
         "keeps a useful high-shoulder and rising-neck Brachiosaurus read",
         "full body and feet remain reviewable"
       ],
       "risks": [
         "tail remains too long and pointed for promotion",
-        "should not outrank v16 for the short-tail gate"
+        "should not outrank v18 for the combined full-body and head identity gate"
       ]
     },
     {

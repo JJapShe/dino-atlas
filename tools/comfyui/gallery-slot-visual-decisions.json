@@ -2950,48 +2950,52 @@
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/brachiosaurus-altithorax-slate-moss-pattern-imagegen-v1.png",
+        "source": "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-slate-moss-rearthreequarter-pattern-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Retained only as a replace-first color-pattern review hold, not an anatomy pass. Four limbs and one tail are present, but the high point drifts toward the pelvis, forelimb dominance is weak, and the flat head with a forward low nostril loses the rounded nasal mound and high nostril identity cues.",
-        "reviewMethod": "Original-size six-slot inspection for shoulder height, limb proportion, nasal mound, nostril position, four-limb count, pelvis-tail continuity, occlusion, and multi-animal separation",
-        "reviewBatch": "2026-08-03-brachiosaurus-gallery-anatomy-audit-1",
-        "reviewedAt": "2026-08-03T01:12:00.000Z"
+        "reason": "Passed the high-shoulder, longer-forelimb, four-limb, short robust tail, rounded nasal mound, and high-nostril gates. The rear three-quarter crosslit palette study is distinct from S1 and is approved only for the color-pattern slot.",
+        "reviewMethod": "Original-size primary inspection plus independent second-pass anatomy and composition audit",
+        "reviewBatch": "2026-08-03-brachiosaurus-gallery-closure-2",
+        "reviewedAt": "2026-08-03T04:17:41.573Z"
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/brachiosaurus-altithorax-canopy-lowangle-lichen-pattern-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/brachiosaurus-altithorax-tailclear-canopy-window-habitat-ecology-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Retained only as habitat and composition anatomy review. The high front body, long forelimbs, and four limbs read well, but the small upturned head does not resolve the nasal mound and high nostril cue and the tail tip is hidden by foreground vegetation.",
-        "reviewMethod": "Original-size six-slot inspection for shoulder height, limb proportion, nasal mound, nostril position, four-limb count, pelvis-tail continuity, occlusion, and multi-animal separation",
-        "reviewBatch": "2026-08-03-brachiosaurus-gallery-anatomy-audit-1",
-        "reviewedAt": "2026-08-03T01:12:00.000Z"
+        "reason": "Passed as a dedicated vertical habitat view: high shoulders, longer forelimbs, four separated limbs, nasal mound, high nostril and one naturally tapering tail are visible, with open background between the tail tip and framing trunk.",
+        "reviewMethod": "Original-size primary inspection plus independent second-pass anatomy, tail-clearance, and portrait-composition audit",
+        "reviewBatch": "2026-08-03-brachiosaurus-gallery-closure-2",
+        "reviewedAt": "2026-08-03T04:17:41.573Z"
       },
       "4": {
         "status": "approved",
-        "source": "assets/dinosaurs/brachiosaurus-altithorax-highshoulder-shorttail-imagegen-v3.png",
+        "source": "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-head-reference-imagegen-v19.png",
         "role": "identity-anatomy",
-        "reason": "Retained only as structural anatomy review. High shoulders, longer forelimbs, four limbs, and one tail are clear, but the nasal mound and high nostril cue are weak and the tail is longer and more slender than the filename suggests.",
-        "reviewMethod": "Original-size six-slot inspection for shoulder height, limb proportion, nasal mound, nostril position, four-limb count, pelvis-tail continuity, occlusion, and multi-animal separation",
-        "reviewBatch": "2026-08-03-brachiosaurus-gallery-anatomy-audit-1",
-        "reviewedAt": "2026-08-03T01:12:00.000Z"
+        "subrole": "identity-head-detail",
+        "claimBoundary": "Head-only identity detail; no representative, full-body, shoulder, limb-count, foot, or tail claim.",
+        "reason": "Passed only as an identity head detail. The rounded fleshy nasal mound, natural high left-right nostril pair, one visible eye and closed mouth are clear. It is not a full-body, limb-count, tail, or representative pass.",
+        "reviewMethod": "Original-size head inspection with explicit head-only scope and independent duplicate-opening review",
+        "reviewBatch": "2026-08-03-brachiosaurus-gallery-closure-2",
+        "reviewedAt": "2026-08-03T04:17:41.573Z"
       },
       "5": {
         "status": "approved",
-        "source": "assets/dinosaurs/brachiosaurus-altithorax-conifer-browse-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/brachiosaurus-altithorax-tailclear-conifer-browse-longlens-ecology-imagegen-v2.png",
         "role": "interaction",
-        "reason": "Retained only as browsing-ecology anatomy review. High shoulders, forelimb dominance, four limbs, and one tail are readable, while the small lateral head leaves the nasal mound and high nostril cue unresolved and the tail remains long and slender.",
-        "reviewMethod": "Original-size six-slot inspection for shoulder height, limb proportion, nasal mound, nostril position, four-limb count, pelvis-tail continuity, occlusion, and multi-animal separation",
-        "reviewBatch": "2026-08-03-brachiosaurus-gallery-anatomy-audit-1",
-        "reviewedAt": "2026-08-03T01:12:00.000Z"
+        "reason": "Passed the body, head, limb-count and tail gates. The ground-level long-lens S-curve and isolated mouth-to-branch contact add a distinct browsing interaction without vegetation obscuring anatomy.",
+        "reviewMethod": "Original-size primary inspection plus independent second-pass anatomy, branch-contact, and composition audit",
+        "reviewBatch": "2026-08-03-brachiosaurus-gallery-closure-2",
+        "reviewedAt": "2026-08-03T04:17:41.573Z"
       },
       "6": {
         "status": "approved",
-        "source": "assets/dinosaurs/brachiosaurus-altithorax-allosaurus-juvenile-defense-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/brachiosaurus-altithorax-two-individual-spacing-size-variation-imagegen-v2.png",
         "role": "social-growth-defense",
-        "reason": "Retained only as multi-animal defense ecology review. The adult generally shows forelimb dominance, four limbs, and one tail, but its nasal mound is subtle; the smaller animal overlaps the adult legs so its limbs and tail cannot all be traced independently. No parentage, care, or observed defense behavior is claimed.",
-        "reviewMethod": "Original-size six-slot inspection for shoulder height, limb proportion, nasal mound, nostril position, four-limb count, pelvis-tail continuity, occlusion, and multi-animal separation",
-        "reviewBatch": "2026-08-03-brachiosaurus-gallery-anatomy-audit-1",
-        "reviewedAt": "2026-08-03T01:12:00.000Z"
+        "subrole": "two-individual-spacing",
+        "claimBoundary": "Two spatially separated individuals only; no age, growth stage, kinship, family, herd, protection, defense, or parentage claim. Apparent size may reflect perspective.",
+        "reason": "Passed as a role-limited two-individual spacing scene. Both non-overlapping bodies independently pass the head, shoulder, limb-count and tail gates. Apparent size is affected by perspective, so growth stage, age, kinship, herd, protection and parentage are not claimed.",
+        "reviewMethod": "Original-size primary inspection plus independent per-individual anatomy, separation, framing, and claim-boundary audit",
+        "reviewBatch": "2026-08-03-brachiosaurus-gallery-closure-2",
+        "reviewedAt": "2026-08-03T04:17:41.573Z"
       }
     },
     "stegosaurus-stenops": {

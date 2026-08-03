@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "auditId": "2026-08-03-brachiosaurus-gallery-closure-2",
+  "taxonId": "brachiosaurus-altithorax",
+  "taxonName": "Brachiosaurus altithorax",
+  "reviewedAt": "2026-08-03T04:17:41.573Z",
+  "audienceBoundary": "Natural-history gallery for ages 5-14. S1 alone is representative-eligible. S4 is a head-detail pass only. S6 shows two spatially separated individuals and must not be described as a family, parent-young pair, herd, defense, or observed growth series.",
+  "licensePolicy": "Only project-internal AI-generated controls were supplied to image generation. No external artwork was copied or used as an image input. Institutional pages remain anatomy context only.",
+  "identityGate": [
+    "shoulders visibly higher than hips with the trunk descending toward the pelvis in every full-body subject",
+    "forelimbs visibly longer than hind limbs in every full-body subject",
+    "small head with a rounded nasal mound and high-set nostril cue",
+    "exactly two forelimbs, two hind limbs, and one pelvis-origin tail for every full-body subject",
+    "avoid a low generic sauropod body, flat head, forward low nostril, duplicate facial openings, and a long slender diplodocid whip tail",
+    "role-limited close-ups must state which full-body gates are not assessed"
+  ],
+  "sources": [
+    {
+      "title": "Brachiosaurus",
+      "publisher": "Natural History Museum, London",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/brachiosaurus.html",
+      "use": "Institutional identity cross-check; not an image-generation input"
+    },
+    {
+      "title": "The first Brachiosaurus",
+      "publisher": "Field Museum",
+      "url": "https://www.fieldmuseum.org/blog/first-brachiosaurus",
+      "use": "Institutional historical and anatomy context; not an image-generation input"
+    },
+    {
+      "title": "Dino Atlas Brachiosaurus reference checklist",
+      "path": "tools/comfyui/reference-checklist.md#brachiosaurus-altithorax",
+      "use": "Project high-shoulder, forelimb, nasal-mound, nostril, limb-count, tail, and composition gate"
+    }
+  ],
+  "reviewMethod": "Original-size manual inspection by the primary workflow plus independent second-pass inspection. Each full-body subject was checked for shoulder line, forelimb dominance, four independently traceable limbs, one continuous tail, nasal mound, high nostril, cropping, and occlusion. Composition keys, camera families, and spatial signatures were compared across all six slots.",
+  "summary": {
+    "pass": 6,
+    "hold": 0,
+    "fail": 0,
+    "representativePromotion": "S1 retained as the sole representative; S2-S6 remain role-limited gallery images",
+    "uniqueCompositionKeys": 6,
+    "uniqueCameraFamilies": 6,
+    "uniqueSpatialSignatures": 6,
+    "replacedSlots": [2, 3, 5, 6],
+    "repurposedSlots": [4]
+  },
+  "slots": {
+    "S1": {
+      "galleryRole": "representative",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-fullbody-imagegen-v18.png",
+      "dimensions": "1536x1024",
+      "bytes": 3292330,
+      "sha256": "274866f397e23568d644e77415bc784813ec1b89b89d3e2009f6925fe4152858",
+      "result": "PASS",
+      "representativeEligible": true,
+      "anatomyScope": "full-body",
+      "compositionKey": "landscape-low-front-threequarter-single",
+      "cameraFamily": "low-front-threequarter-natural",
+      "spatialSignature": "single animal centered with head-left rise and tail-right recession",
+      "reason": "High shoulders, descending back line, longer forelimbs, rounded nasal mound, high-set nostril cue, exactly four limbs, and one pelvis-origin tail are readable.",
+      "provenance": {
+        "generator": "OpenAI image generation",
+        "callId": null,
+        "seed": null,
+        "seedAvailability": "not recorded in the historical generation pass",
+        "prompt": null,
+        "workflow": "historical project-internal generated asset; original generation record unavailable",
+        "sourceLicense": "project-internal AI-generated asset"
+      }
+    },
+    "S2": {
+      "galleryRole": "color-pattern",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-slate-moss-rearthreequarter-pattern-imagegen-v2.png",
+      "dimensions": "1536x1024",
+      "bytes": 2615187,
+      "sha256": "2c127862e11df56f441b66fd3f949cc48ffb7040b30f1c4ca41f93a8f53aa9a5",
+      "result": "PASS",
+      "representativeEligible": false,
+      "anatomyScope": "full-body",
+      "compositionKey": "landscape-rear-threequarter-crosslight-palette",
+      "cameraFamily": "eye-height-rear-threequarter-mild-telephoto",
+      "spatialSignature": "head upper-right and short tail lower-left across an open diagonal floodplain",
+      "reason": "The rear three-quarter palette study preserves high shoulders, longer forelimbs, four separated limbs, one short robust tail, and a repaired rounded nasal mound with a high nostril. It is compositionally distinct from S1.",
+      "provenance": {
+        "generator": "OpenAI image generation",
+        "seed": null,
+        "seedAvailability": "not exposed by the generator",
+        "sourceLicense": "project-internal AI-generated controls and output",
+        "workflow": "new rear-three-quarter generation, tail-only correction, then head-only nasal-mound correction",
+        "steps": [
+          {
+            "callId": "exec-086f022d-8b57-4eee-bc0a-1f6866db9ffe",
+            "inputAssets": [
+              "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-fullbody-imagegen-v18.png",
+              "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-head-reference-imagegen-v19.png"
+            ],
+            "prompt": "Create a new rear three-quarter Brachiosaurus palette study with the head at upper-right, tail at lower-left, four separated feet, high shoulders, longer forelimbs, a rounded nasal mound, high nostril, and a slate blue-gray plus moss-green pattern on an open Morrison floodplain."
+          },
+          {
+            "callId": "exec-23f0c093-34ac-48c5-938d-a845a92bead5",
+            "inputAssets": ["generated step exec-086f022d-8b57-4eee-bc0a-1f6866db9ffe"],
+            "prompt": "Preserve the rear-three-quarter candidate and replace only the long slender tail with one shorter, deeper, muscular pelvis-origin tail ending in open ground."
+          },
+          {
+            "callId": "exec-028e1c58-09fb-4c14-865e-1015976e4caf",
+            "inputAssets": [
+              "generated step exec-23f0c093-34ac-48c5-938d-a845a92bead5",
+              "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-head-reference-imagegen-v19.png"
+            ],
+            "prompt": "Preserve the accepted body, tail, limbs, palette, and composition; repair only the small head so a natural rounded fleshy nasal mound and one visible high-set nostril read at gallery size without duplicate openings."
+          }
+        ]
+      }
+    },
+    "S3": {
+      "galleryRole": "habitat-ecology",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-tailclear-canopy-window-habitat-ecology-imagegen-v2.png",
+      "dimensions": "1003x1568",
+      "bytes": 2735985,
+      "sha256": "b69c7fabc4c75271277a57ee12a1c79a5ff633322daa02c0ef3fd23eb4ac9229",
+      "result": "PASS",
+      "representativeEligible": false,
+      "anatomyScope": "full-body",
+      "compositionKey": "portrait-lowangle-canopy-window-diagonal",
+      "cameraFamily": "portrait-lowangle-wide-canopy-window",
+      "spatialSignature": "tail lower-left to neck upper-right inside two non-overlapping framing trunks",
+      "reason": "The dedicated vertical scene preserves the full animal, high shoulders, longer forelimbs, four separated limbs, nasal mound, high nostril, and a naturally tapering tail with visible clearance from the left trunk.",
+      "provenance": {
+        "generator": "OpenAI image generation",
+        "seed": null,
+        "seedAvailability": "not exposed by the generator",
+        "sourceLicense": "project-internal AI-generated controls and output",
+        "workflow": "new vertical generation followed by an environment-only trunk-clearance edit from the untouched-animal branch",
+        "steps": [
+          {
+            "callId": "exec-4d03739c-7132-430f-aa5f-ad620f529e56",
+            "inputAssets": [
+              "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-fullbody-imagegen-v18.png",
+              "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-head-reference-imagegen-v19.png"
+            ],
+            "prompt": "Create a dedicated vertical low-angle Brachiosaurus habitat scene framed by two conifer trunks, with the whole animal running diagonally from lower-left tail to upper-right head, four visible feet, high shoulders, a rounded nasal mound, and no vegetation crossing the body."
+          },
+          {
+            "callId": "exec-f7cea8e8-9aec-42a9-b256-3c262d544804",
+            "inputAssets": ["generated step exec-4d03739c-7132-430f-aa5f-ad620f529e56"],
+            "prompt": "Preserve the dinosaur exactly and shift only the left foreground trunk outward so an open strip of background separates the unchanged natural tail tip from the tree."
+          }
+        ]
+      }
+    },
+    "S4": {
+      "galleryRole": "identity-anatomy",
+      "roleVariant": "identity-head-detail",
+      "gallerySubrole": "identity-head-detail",
+      "claimBoundary": "Head-only identity detail; no representative, full-body, shoulder, limb-count, foot, or tail claim.",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-head-reference-imagegen-v19.png",
+      "dimensions": "1536x1024",
+      "bytes": 2951536,
+      "sha256": "c7ff03cb5166c44edb88695fbc01265c4a763496e82307e55a2f6b5ac5db4ad2",
+      "result": "PASS",
+      "representativeEligible": false,
+      "anatomyScope": "head-only",
+      "notAssessed": ["shoulder height", "forelimb-to-hind-limb ratio", "four-limb count", "tail count and length"],
+      "compositionKey": "landscape-closeup-head-threequarter-nasal-mound",
+      "cameraFamily": "closeup-head-threequarter",
+      "spatialSignature": "large head and upper neck fill the left-center with the rounded mound isolated against sky",
+      "reason": "Within the head-detail role, one rounded fleshy nasal mound, a spatially natural left-right pair of high nostrils, one visible eye, and a closed mouth are clear. It is prohibited from implying a full-body pass.",
+      "provenance": {
+        "generator": "OpenAI image generation",
+        "callId": null,
+        "seed": null,
+        "seedAvailability": "not recorded in the historical generation pass",
+        "prompt": null,
+        "workflow": "historical project-internal generated head-reference asset; original generation record unavailable",
+        "sourceLicense": "project-internal AI-generated asset"
+      }
+    },
+    "S5": {
+      "galleryRole": "interaction",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-tailclear-conifer-browse-longlens-ecology-imagegen-v2.png",
+      "dimensions": "1536x1024",
+      "bytes": 2713955,
+      "sha256": "da6157e222805dd4beda5285fb22e9842d65beb9f8f0ee4dcbcaa5874961f79a",
+      "result": "PASS",
+      "representativeEligible": false,
+      "anatomyScope": "full-body",
+      "compositionKey": "landscape-groundlevel-longlens-browse-scurve",
+      "cameraFamily": "groundlevel-longlens-compressed-layers",
+      "spatialSignature": "short tail lower-left, high torso left-center, neck arcs to an isolated branch tip at upper-right",
+      "reason": "The long-lens browse scene preserves the body and facial identity gates, all four separated limbs, one robust tail, and clear mouth-to-branch contact without foliage hiding anatomy.",
+      "provenance": {
+        "generator": "OpenAI image generation",
+        "callId": "exec-547ce888-afd0-46ae-9b3f-d618e776d0cb",
+        "seed": null,
+        "seedAvailability": "not exposed by the generator",
+        "sourceLicense": "project-internal AI-generated controls and output",
+        "workflow": "single new image generation with local full-body and head anatomy controls",
+        "inputAssets": [
+          "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-fullbody-imagegen-v18.png",
+          "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-head-reference-imagegen-v19.png"
+        ],
+        "prompt": "Create a ground-level long-lens Brachiosaurus browse scene with a tail-to-neck S-curve, four independently traceable feet, high shoulders, longer forelimbs, one short robust tail, a rounded nasal mound and high nostril, and only a conifer branch tip touching the mouth without hiding anatomy."
+      }
+    },
+    "S6": {
+      "galleryRole": "social-growth-defense",
+      "roleVariant": "two-individual-spacing",
+      "gallerySubrole": "two-individual-spacing",
+      "claimBoundary": "Two spatially separated individuals only; no age, growth stage, kinship, family, herd, protection, defense, or parentage claim. Apparent size may reflect perspective.",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-two-individual-spacing-size-variation-imagegen-v2.png",
+      "dimensions": "1536x1024",
+      "bytes": 3350529,
+      "sha256": "2e200c62558aa534755e3656f147a1d6c936c21549f36b5013df04ff0d896c38",
+      "result": "PASS",
+      "representativeEligible": false,
+      "anatomyScope": "two-full-bodies",
+      "compositionKey": "landscape-moderate-oblique-separated-size-variation-triangle",
+      "cameraFamily": "moderately-elevated-oblique-two-subject",
+      "spatialSignature": "larger individual lower-left and smaller distant individual upper-right separated by a broad empty diagonal corridor",
+      "reason": "Both spatially separated individuals independently preserve the head, shoulder, limb-count, and tail gates. Perspective contributes to apparent size, so age, growth stage, family, herd, protection, and parentage are not claimed.",
+      "provenance": {
+        "generator": "OpenAI image generation",
+        "callId": "exec-545b5919-83a5-4648-acc1-be6ac22e4f0b",
+        "seed": null,
+        "seedAvailability": "not exposed by the generator",
+        "sourceLicense": "project-internal AI-generated controls and output",
+        "workflow": "single regenerated two-subject scene after rejecting a distant, identity-unreadable first attempt",
+        "inputAssets": [
+          "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-fullbody-imagegen-v18.png",
+          "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-head-reference-imagegen-v19.png"
+        ],
+        "prompt": "Create a moderately elevated oblique scene with two non-overlapping Brachiosaurus individuals, each large enough to inspect with four separated limbs, one robust tail, high shoulders, longer forelimbs, a rounded nasal mound and high nostril, placed lower-left and upper-right around a broad empty diagonal corridor. Do not imply family, herd, protection, or observed growth."
+      }
+    }
+  }
+}

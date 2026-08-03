@@ -2619,7 +2619,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/brachiosaurus-altithorax-slate-moss-pattern-imagegen-v1.png",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-slate-moss-rearthreequarter-pattern-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
       "phenotype": "variant-b",
@@ -2627,7 +2627,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/brachiosaurus-altithorax-canopy-lowangle-lichen-pattern-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-tailclear-canopy-window-habitat-ecology-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
@@ -2635,15 +2635,17 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/brachiosaurus-altithorax-highshoulder-shorttail-imagegen-v3.png",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-head-reference-imagegen-v19.png",
       "gallerySlot": 4,
       "galleryRole": "identity-anatomy",
+      "gallerySubrole": "identity-head-detail",
+      "claimBoundary": "Head-only identity detail; no representative, full-body, shoulder, limb-count, foot, or tail claim.",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/brachiosaurus-altithorax-conifer-browse-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-tailclear-conifer-browse-longlens-ecology-imagegen-v2.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
       "phenotype": "canonical-a",
@@ -2651,9 +2653,11 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/brachiosaurus-altithorax-allosaurus-juvenile-defense-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-two-individual-spacing-size-variation-imagegen-v2.png",
       "gallerySlot": 6,
       "galleryRole": "social-growth-defense",
+      "gallerySubrole": "two-individual-spacing",
+      "claimBoundary": "Two spatially separated individuals only; no age, growth stage, kinship, family, herd, protection, defense, or parentage claim. Apparent size may reflect perspective.",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
       "expectedKind": "anatomy review"

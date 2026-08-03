@@ -720,6 +720,8 @@ function makePlanItem({ dino, samples, identities, profiles, routes, swatches, u
       decisionSource,
       decisionReason: decision?.reason || "",
       decisionPhenotype: decision?.phenotype || "",
+      decisionSubrole: decision?.subrole || "",
+      decisionClaimBoundary: decision?.claimBoundary || "",
       reviewMethod: decision?.reviewMethod || "",
       decisionError: picked?.decisionError || "",
       suggestedUnregisteredSource: suggestedUnregistered?.source || "",
@@ -876,10 +878,14 @@ function writeAssignments(plan, existingAssignments) {
         .filter((slot) => slot.status === "approved" && slot.currentSource)
         .map((slot) => {
           const existing = existingBySource.get(normalizePath(slot.currentSource));
+          const gallerySubrole = slot.decisionSubrole || existing?.gallerySubrole || "";
+          const claimBoundary = slot.decisionClaimBoundary || existing?.claimBoundary || "";
           return {
             source: slot.currentSource,
             gallerySlot: slot.slot,
             galleryRole: slot.role,
+            ...(gallerySubrole ? { gallerySubrole } : {}),
+            ...(claimBoundary ? { claimBoundary } : {}),
             phenotype: slot.decisionPhenotype || existing?.phenotype || (slot.slot === 2 ? "variant-b" : "canonical-a"),
             habitatKey: existing?.habitatKey || slot.currentHabitatKey || taxon.habitatProfile.key,
             expectedKind: slot.expectedKind,

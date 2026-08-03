@@ -1,6 +1,6 @@
 {
   "taxa": 133,
-  "images": 1727,
+  "images": 1735,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -299,6 +299,14 @@
         "source": "assets/dinosaurs/herrerasaurus-ischigualastensis-charcoal-russet-mottling-pattern-imagegen-v3.png",
         "variant": "숯빛-적갈색 파편 얼룩 이미지 생성 v3",
         "src": "assets/dinosaurs/herrerasaurus-ischigualastensis-charcoal-russet-mottling-pattern-imagegen-v3.png"
+      },
+      {
+        "kind": "ecosystem scene review",
+        "title": "헤레라사우루스·에오랍토르 고각도 동심원 공존 복원",
+        "body": "Cancha de Bochas Member의 같은 낮은 층준에서 보고된 두 종을 위아래로 멀리 분리한 생태 갤러리 전용 장면입니다. 동심원형 고토양과 반대 이동축으로 기존 수로 대각선 구도를 반복하지 않으며, 실제 조우·응시·추격·포식은 주장하지 않습니다. 작은 손·발 세부는 장면 축척 한계가 있어 종 대표로 승격하지 않습니다.",
+        "source": "assets/dinosaurs/eoraptor-lunensis-herrerasaurus-cancha-de-bochas-high-oblique-concentric-coexistence-imagegen-v1.png",
+        "variant": "고각도 동심원 지형 공존 이미지 생성 v1",
+        "src": "assets/dinosaurs/eoraptor-lunensis-herrerasaurus-cancha-de-bochas-high-oblique-concentric-coexistence-imagegen-v1.png"
       }
     ],
     "eodromaeus-murphi": [
@@ -399,6 +407,14 @@
         "source": "assets/dinosaurs/eoraptor-lunensis-aubergine-turquoise-copper-pattern-imagegen-v1.png",
         "variant": "자주-청록-구리빛 블루아워 변이 이미지 생성 v1",
         "src": "assets/dinosaurs/eoraptor-lunensis-aubergine-turquoise-copper-pattern-imagegen-v1.png"
+      },
+      {
+        "kind": "ecosystem scene review",
+        "title": "에오랍토르·헤레라사우루스 고각도 동심원 공존 복원",
+        "body": "Cancha de Bochas Member의 같은 낮은 층준에서 보고된 두 종을 위아래로 멀리 분리한 생태 갤러리 전용 장면입니다. 동심원형 고토양과 반대 이동축으로 기존 수로 대각선 구도를 반복하지 않으며, 실제 조우·응시·추격·포식은 주장하지 않습니다. 작은 손·발 세부는 장면 축척 한계가 있어 종 대표로 승격하지 않습니다.",
+        "source": "assets/dinosaurs/eoraptor-lunensis-herrerasaurus-cancha-de-bochas-high-oblique-concentric-coexistence-imagegen-v1.png",
+        "variant": "고각도 동심원 지형 공존 이미지 생성 v1",
+        "src": "assets/dinosaurs/eoraptor-lunensis-herrerasaurus-cancha-de-bochas-high-oblique-concentric-coexistence-imagegen-v1.png"
       }
     ],
     "zupaysaurus-rougieri": [
@@ -2613,6 +2629,14 @@
         "source": "assets/dinosaurs/dilophosaurus-wetherilli-petrol-violet-celadon-pattern-imagegen-v2.png",
         "variant": "페트롤·보라·청자색 무늬 이미지 생성 v2",
         "src": "assets/dinosaurs/dilophosaurus-wetherilli-petrol-violet-celadon-pattern-imagegen-v2.png"
+      },
+      {
+        "kind": "ecosystem scene review",
+        "title": "딜로포사우루스·스쿠텔로사우루스 세 구역 프리즈 공존 복원",
+        "body": "카옌타층 동물상 두 종을 화면 양끝과 서로 다른 깊이에 놓은 생태 갤러리 전용 장면입니다. 지면 높이 긴 초점거리와 세로 나무 기둥으로 세 구역을 만들고 두 동물은 바깥쪽을 향해 실제 조우·추격을 주장하지 않습니다. 작은 제4손가락과 먼 발가락은 장면 축척 한계가 있어 종 대표로 승격하지 않습니다.",
+        "source": "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-kayenta-groundlevel-longlens-frieze-coexistence-imagegen-v1.png",
+        "variant": "지면 높이 세 구역 프리즈 공존 이미지 생성 v1",
+        "src": "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-kayenta-groundlevel-longlens-frieze-coexistence-imagegen-v1.png"
       }
     ],
     "dracovenator-regenti": [
@@ -10141,12 +10165,36 @@
         "src": "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-fullbody-imagegen-v18.png"
       },
       {
-        "kind": "count-level pass",
-        "title": "브라키오사우루스 v16 짧은 꼬리 후보",
-        "body": "직접 크롭 검수 뒤 승격한 P3 짧은 꼬리 프롬프트 후보입니다. 눈에 띄게 높은 어깨, 더 긴 앞다리, 어깨에서 엉덩이로 내려가는 몸통 경사, 길게 솟는 목, 작은 비포식성 머리, 검수 가능한 네 기둥형 발, 짧고 굵게 가늘어지는 꼬리를 결합해 반복되던 브라키오사우루스 꼬리 실패를 개선합니다. 남은 검수 위험은 꼬리가 약간 과하게 짧을 수 있고, 두개골/발가락/꼬리 밑 비율은 최종 승인 전에 참고 확인이 필요하다는 점입니다.",
-        "source": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v16-source-candidate.png",
-        "variant": "짧은 꼬리 이미지 생성 v16",
-        "src": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v16-source-candidate.png"
+        "kind": "anatomy review",
+        "title": "브라키오사우루스 세로형 캐노피 창 서식지",
+        "body": "모바일 세로 보기용으로 새로 만든 낮은 시점의 숲 장면입니다. 동물은 아래 왼쪽 꼬리에서 위 오른쪽 머리로 대각선을 이루며, 좌우 나무는 프레임 역할만 하고 머리·네 발·꼬리를 가리지 않습니다. 원본 감사에서 코혹과 높은 콧구멍, 높은 어깨, 긴 앞다리, 네 다리와 자연스럽게 끝나는 한 꼬리를 확인했습니다.",
+        "source": "assets/dinosaurs/brachiosaurus-altithorax-tailclear-canopy-window-habitat-ecology-imagegen-v2.png",
+        "variant": "세로형 캐노피 창 서식지 이미지 생성 v2",
+        "src": "assets/dinosaurs/brachiosaurus-altithorax-tailclear-canopy-window-habitat-ecology-imagegen-v2.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "브라키오사우루스 v19 코혹 머리 상세",
+        "body": "둥글고 살집 있는 하나의 비강 융기와 그 위의 자연스러운 좌우 높은 콧구멍을 보여 주는 3/4 머리 근접 장면입니다. S4 머리 구조 역할만 통과했으며, 높은 어깨·앞다리 비율·사지 수·꼬리를 보여 주는 전신 통과나 대표 적격을 뜻하지 않습니다.",
+        "source": "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-head-reference-imagegen-v19.png",
+        "variant": "코혹 머리 참고 이미지 생성 v19",
+        "src": "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-head-reference-imagegen-v19.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "브라키오사우루스 장망원 침엽수 섭식",
+        "body": "짧은 꼬리에서 몸통과 목을 지나 가지 끝으로 이어지는 S자 흐름의 장망원 섭식 장면입니다. 가지는 입 끝에만 닿고 눈·코혹·콧구멍·사지·꼬리를 가리지 않습니다. 높은 어깨, 긴 앞다리, 네 다리와 한 꼬리를 독립 확인했으며, 관찰된 개체 행동 전체가 아니라 가능한 가지 섭식 복원으로만 설명합니다.",
+        "source": "assets/dinosaurs/brachiosaurus-altithorax-tailclear-conifer-browse-longlens-ecology-imagegen-v2.png",
+        "variant": "장망원 침엽수 섭식 이미지 생성 v2",
+        "src": "assets/dinosaurs/brachiosaurus-altithorax-tailclear-conifer-browse-longlens-ecology-imagegen-v2.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "브라키오사우루스 개방지의 분리된 두 개체",
+        "body": "높은 사선 시점에서 두 개체를 넓은 빈 통로로 분리한 장면입니다. 두 동물 모두 머리, 높은 어깨, 긴 앞다리, 네 다리와 한 꼬리를 각각 추적할 수 있습니다. 화면의 크기 차이는 거리와 원근에도 영향을 받으므로 성체·아성체, 부모·새끼, 가족, 무리, 보호 또는 성장 단계의 직접 증거로 설명하지 않습니다.",
+        "source": "assets/dinosaurs/brachiosaurus-altithorax-two-individual-spacing-size-variation-imagegen-v2.png",
+        "variant": "두 개체 간격·크기 변이 이미지 생성 v2",
+        "src": "assets/dinosaurs/brachiosaurus-altithorax-two-individual-spacing-size-variation-imagegen-v2.png"
       },
       {
         "kind": "anatomy review",
@@ -10175,7 +10223,7 @@
       {
         "kind": "anatomy review",
         "title": "브라키오사우루스 P3 v15-v17 검수 시트",
-        "body": "승격된 v16을 이전 v4 1순위 후보, 새 v15/v17, 이전 v13, 높은 어깨 바디락 가이드와 비교하는 검수 보드입니다. 짧은 꼬리 개선이 높은 어깨 브라키오사우루스 체형을 잃지 않았는지 확인하는 데 씁니다.",
+        "body": "당시 P3에서 우선 승격됐던 v16을 이전 v4 1순위 후보, v15/v17, 이전 v13, 높은 어깨 바디락 가이드와 비교한 역사적 검수 보드입니다. 현재 양성 기준은 둥근 비강 융기와 높은 콧구멍까지 통과한 v18이며, 이 보드는 짧은 꼬리 개선 과정을 추적하는 비교 기록으로만 씁니다.",
         "source": "assets/dinosaurs/brachiosaurus-p3-v15-v17-review-sheet.png",
         "variant": "P3 v15-v17 검수 시트",
         "src": "assets/dinosaurs/brachiosaurus-p3-v15-v17-review-sheet.png"
@@ -10230,8 +10278,8 @@
       },
       {
         "kind": "anatomy review",
-        "title": "브라키오사우루스 로라 시드 기준 보드",
-        "body": "브라키오사우루스 용각류 로라 경로의 매니페스트 검수 보드입니다. 현재 v16을 긍정 시드로 승격하고, 이전 v4, v17/v15, v13/v10/v9, 높은 어깨 제어 가이드, 꼬리 위험 탈락본은 검수용으로 분리해 둡니다.",
+        "title": "브라키오사우루스 이전 로라 시드 기준 보드",
+        "body": "v16을 우선 시드로 두었던 이전 단계의 역사적 매니페스트 검수 보드입니다. 2026-08-03 재감사 뒤 v16은 코혹·높은 콧구멍 미달로 검수 보류가 되었고, 현재 유일한 양성 전신 시드는 v18입니다. 이 보드는 v4, v17/v15, v13/v10/v9와 꼬리 위험 실패를 비교하는 과정 기록으로만 사용합니다.",
         "source": "tools/comfyui/lora_training/sauropod_brachiosaurus/review/brachiosaurus_seed_manifest_sheet_v4.png",
         "variant": "로라 시드 매니페스트 v4",
         "src": "tools/comfyui/lora_training/sauropod_brachiosaurus/review/brachiosaurus_seed_manifest_sheet_v4.png"
@@ -10342,14 +10390,6 @@
       },
       {
         "kind": "structure reference",
-        "title": "브라키오사우루스 v19 코혹 머리 참고",
-        "body": "갤러리 크기에서 둥글고 살집 있는 코혹과 높은 콧구멍 구멍이 보이도록 따로 생성한 머리와 목 참고 이미지입니다. 대표 전신 이미지가 아니라 머리 단서 검수용 참고로 사용합니다.",
-        "source": "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-head-reference-imagegen-v19.png",
-        "variant": "코혹 머리 참고 이미지 생성 v19",
-        "src": "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-head-reference-imagegen-v19.png"
-      },
-      {
-        "kind": "structure reference",
         "title": "브라키오사우루스 높은 어깨 바디락 가이드",
         "body": "다음 컨트롤넷/이미지-투-이미지 경로를 위한 프로젝트 보유 구조 가이드입니다. 브라키오사우루스 특유의 높은 어깨, 눈에 띄게 긴 앞다리, 어깨에서 엉덩이로 내려가는 몸통 경사, 솟는 목, 작은 머리, 네 기둥형 발, 더 짧고 채찍형이 아닌 꼬리를 고정합니다. 최종 고생물화가 아니라 제어 참고로 취급합니다.",
         "source": "assets/dinosaurs/brachiosaurus-altithorax-highshoulder-bodylock-guide-v1.png",
@@ -10363,6 +10403,14 @@
         "source": "assets/dinosaurs/brachiosaurus-review-options-v8.png",
         "variant": "높은 어깨 바디락 검수 v8",
         "src": "assets/dinosaurs/brachiosaurus-review-options-v8.png"
+      },
+      {
+        "kind": "diagnostic only",
+        "title": "브라키오사우루스 슬레이트-이끼 변이 교체 우선",
+        "body": "슬레이트 청회색과 이끼 녹색을 시험한 색상·무늬 변이입니다. 2026-08-03 원본 크기 재감사에서 네 다리와 한 꼬리는 확인했지만 몸통 최고점이 골반 쪽으로 읽히고 앞다리 우세가 약해 일반 용각류로 흐르며, 머리도 납작하고 콧구멍이 앞쪽에 있어 둥근 비강 융기와 높은 콧구멍 단서를 잃었습니다. 색 슬롯의 교체 우선 보류본이며 후속 생성의 형태 참고로 쓰지 않습니다.",
+        "source": "assets/dinosaurs/brachiosaurus-altithorax-slate-moss-pattern-imagegen-v1.png",
+        "variant": "슬레이트-이끼 무늬 이미지 생성 v1",
+        "src": "assets/dinosaurs/brachiosaurus-altithorax-slate-moss-pattern-imagegen-v1.png"
       },
       {
         "kind": "diagnostic only",
@@ -10390,16 +10438,24 @@
       },
       {
         "kind": "review hold",
-        "title": "브라키오사우루스 슬레이트-이끼 변이 교체 우선",
-        "body": "슬레이트 청회색과 이끼 녹색을 시험한 색상·무늬 변이입니다. 2026-08-03 원본 크기 재감사에서 네 다리와 한 꼬리는 확인했지만 몸통 최고점이 골반 쪽으로 읽히고 앞다리 우세가 약해 일반 용각류로 흐르며, 머리도 납작하고 콧구멍이 앞쪽에 있어 둥근 비강 융기와 높은 콧구멍 단서를 잃었습니다. 색 슬롯의 교체 우선 보류본이며 후속 생성의 형태 참고로 쓰지 않습니다.",
-        "source": "assets/dinosaurs/brachiosaurus-altithorax-slate-moss-pattern-imagegen-v1.png",
-        "variant": "슬레이트-이끼 무늬 이미지 생성 v1",
-        "src": "assets/dinosaurs/brachiosaurus-altithorax-slate-moss-pattern-imagegen-v1.png"
+        "title": "브라키오사우루스 후면 3/4 슬레이트-이끼 무늬",
+        "body": "대표의 정면 3/4과 겹치지 않는 후면 3/4 색상 연구입니다. 독립 원본 감사에서 높은 어깨와 긴 앞다리, 뒤로 낮아지는 등선, 네 다리, 짧고 굵은 한 꼬리, 수선된 둥근 비강 융기와 높은 콧구멍을 확인했습니다. 색·무늬 슬롯 전용이며 대표로 승격하지 않습니다.",
+        "source": "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-slate-moss-rearthreequarter-pattern-imagegen-v2.png",
+        "variant": "후면 3/4 슬레이트-이끼 무늬 이미지 생성 v2",
+        "src": "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-slate-moss-rearthreequarter-pattern-imagegen-v2.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "브라키오사우루스 v16 짧은 꼬리 비교 보류",
+        "body": "높은 어깨와 짧은 꼬리 비교에는 유용하지만, 2026-08-03 최종 기준에서 둥근 비강 융기와 높은 콧구멍을 충분히 보존하지 못해 양성 해부학 시드와 count-level pass에서 강등했습니다. 전신 비교 자료로만 남기며 대표나 갤러리 슬롯에 배정하지 않습니다.",
+        "source": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v16-source-candidate.png",
+        "variant": "짧은 꼬리 이미지 생성 v16",
+        "src": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v16-source-candidate.png"
       },
       {
         "kind": "review hold",
         "title": "브라키오사우루스 이전 v4 꼬리 축소 이미지-투-이미지 보류",
-        "body": "긍정 비교로 보존한 이전 1순위 후보입니다. 긴 앞다리, 높은 어깨, 몸통 경사, 솟는 목, 작은 머리, 네 개의 열린 발로 v3의 강한 브라키오사우루스 인상을 유지하지만, 현재 v16이 짧고 굵은 꼬리 기준을 더 명확히 제공합니다.",
+        "body": "비교용으로 보존한 이전 1순위 후보입니다. 긴 앞다리, 높은 어깨, 몸통 경사, 솟는 목, 작은 머리, 네 개의 열린 발로 v3의 강한 브라키오사우루스 인상을 유지합니다. v16은 역사적 짧은 꼬리 비교본일 뿐이며, 현재 양성 전신 기준은 코혹과 높은 콧구멍까지 통과한 v18입니다.",
         "source": "assets/dinosaurs/brachiosaurus-altithorax-tail-reduced-i2i-v4.png",
         "variant": "이전 1순위 꼬리 축소 이미지-투-이미지 v4",
         "src": "assets/dinosaurs/brachiosaurus-altithorax-tail-reduced-i2i-v4.png"
@@ -10407,7 +10463,7 @@
       {
         "kind": "review hold",
         "title": "브라키오사우루스 v17 보조 짧은 꼬리 보류",
-        "body": "보조 보류로 둔 새 P3 프롬프트 전용 후보입니다. 높은 어깨 몸, 긴 앞다리, 솟는 목, 이전 P2 후보보다 짧은 꼬리를 보이지만, 꼬리가 승격된 v16만큼 조밀하게 읽히지는 않습니다.",
+        "body": "보조 보류로 둔 P3 프롬프트 전용 후보입니다. 높은 어깨 몸, 긴 앞다리, 솟는 목, 이전 P2 후보보다 짧은 꼬리를 보이지만 역사적 v16 짧은 꼬리 비교본보다도 꼬리가 덜 조밀합니다. 코혹과 높은 콧구멍 기준을 통과하지 못해 현재 v18 양성 시드 아래에 둡니다.",
         "source": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v17-source-candidate.png",
         "variant": "보조 짧은 꼬리 보류 v17",
         "src": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v17-source-candidate.png"
@@ -10415,7 +10471,7 @@
       {
         "kind": "review hold",
         "title": "브라키오사우루스 v15 긴 꼬리 보류",
-        "body": "비교 증거로 둔 새 P3 프롬프트 전용 후보입니다. 유용한 높은 어깨 브라키오사우루스 체형을 보존하지만, 꼬리가 v16을 대체하기에는 여전히 너무 길고 뾰족합니다.",
+        "body": "비교 증거로 둔 P3 프롬프트 전용 후보입니다. 유용한 높은 어깨 브라키오사우루스 체형을 보존하지만, 꼬리가 역사적 v16 짧은 꼬리 비교본보다 길고 뾰족하며 코혹·높은 콧구멍 기준도 통과하지 못해 현재 v18 양성 시드를 대체하지 않습니다.",
         "source": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v15-source-candidate.png",
         "variant": "긴 꼬리 보류 v15",
         "src": "assets/dinosaurs/brachiosaurus-altithorax-imagegen-v15-source-candidate.png"
@@ -13827,6 +13883,14 @@
         "source": "assets/dinosaurs/scutellosaurus-lawleri-slotwash-teal-osteoderm-pattern-ecology-imagegen-v1.png",
         "variant": "이전 슬롯 워시 과장 골편 진단",
         "src": "assets/dinosaurs/scutellosaurus-lawleri-slotwash-teal-osteoderm-pattern-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "ecosystem scene review",
+        "title": "스쿠텔로사우루스·딜로포사우루스 세 구역 프리즈 공존 복원",
+        "body": "카옌타층 동물상 두 종을 화면 양끝과 서로 다른 깊이에 놓은 생태 갤러리 전용 장면입니다. 지면 높이 긴 초점거리와 세로 나무 기둥으로 세 구역을 만들고 두 동물은 바깥쪽을 향해 실제 조우·추격을 주장하지 않습니다. 작은 골편과 먼 발가락은 장면 축척 한계가 있어 종 대표로 승격하지 않습니다.",
+        "source": "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-kayenta-groundlevel-longlens-frieze-coexistence-imagegen-v1.png",
+        "variant": "지면 높이 세 구역 프리즈 공존 이미지 생성 v1",
+        "src": "assets/dinosaurs/scutellosaurus-lawleri-dilophosaurus-kayenta-groundlevel-longlens-frieze-coexistence-imagegen-v1.png"
       }
     ],
     "scelidosaurus-harrisonii": [
