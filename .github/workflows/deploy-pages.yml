@@ -30,6 +30,7 @@ jobs:
             gallery-slots.js
             ecosystem-scenes.js
             motion-samples.js
+            motion-m1-samples.js
             styles.css
             atlas-layout.js
             assets/motion/
@@ -43,14 +44,14 @@ jobs:
           ASSET_BASE: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/assets/dinosaurs/
         run: |
           mkdir -p _site/assets/motion
-          cp index.html app.js gallery-slots.js ecosystem-scenes.js motion-samples.js styles.css atlas-layout.js _site/
-          cp assets/motion/*.mp4 _site/assets/motion/
+          cp index.html app.js gallery-slots.js ecosystem-scenes.js motion-samples.js motion-m1-samples.js styles.css atlas-layout.js _site/
+          cp -R assets/motion/. _site/assets/motion/
           python3 - <<'PY'
           import os
           from pathlib import Path
 
           base = os.environ["ASSET_BASE"]
-          for name in ("app.js", "gallery-slots.js", "ecosystem-scenes.js", "motion-samples.js"):
+          for name in ("app.js", "gallery-slots.js", "ecosystem-scenes.js", "motion-samples.js", "motion-m1-samples.js"):
               path = Path("_site") / name
               path.write_text(
                   path.read_text(encoding="utf-8").replace("assets/dinosaurs/", base),

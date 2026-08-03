@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "batchId": "motion-m1-pilot-batch-20260803",
+  "useCase": "scientific-educational Dino Atlas controlled M1 biological micro-motion pilot",
+  "audienceAgeRange": "5-14",
+  "policy": {
+    "tier": "M1",
+    "scope": "controlled biological micro-motion over an approved fixed still",
+    "representativePromotion": "prohibited",
+    "galleryPromotion": "prohibited",
+    "autoplay": "prohibited",
+    "locomotion": "prohibited in M1",
+    "allowedMotion": ["natural blink", "sub-degree rigid head-and-neck tilt"],
+    "publicRequires": ["frameAnatomy", "motionPlausibility", "backgroundIntegrity", "responsive", "publication"]
+  },
+  "copyrightSafety": {
+    "status": "project-owned derivative motion asset",
+    "note": "The pilot derives only from the named project-owned generated still and a project-generated closed-eye patch. No external footage or artwork is used. The eye patch is a motion-production component and is not a gallery or representative candidate."
+  },
+  "workflow": {
+    "generator": "OpenAI built-in image edit for one closed-eye patch plus local deterministic FFmpeg compositing",
+    "imageEdit": {
+      "generatorCallId": "exec-f46cf32b-77e6-46df-82f3-189fbdfdbf5d",
+      "seed": "not exposed by generator",
+      "inputProjectAsset": "assets/dinosaurs/oviraptor-philoceratops-robust-lowcrest-rostrum-representative-imagegen-v3.png",
+      "approvedProjectOverlay": "assets/motion/m1/overlays/oviraptor-philoceratops-closed-eye-overlay-imagegen-v1.png",
+      "usageBoundary": "Only a soft 64x56 eye-region patch was retained. The full edited frame is not referenced or promoted.",
+      "prompt": "Scientific educational paleoart image edit. Change only the visible Oviraptor eye to a natural closed blink. Preserve the low crest, comparatively long deep toothless beak, nostril, skull silhouette, feather texture and color, neck, torso, both arms and three-finger hands, both legs and feet, single tail, pose, ground, vegetation, sky, lighting, camera, and framing exactly. No other change, no text, no watermark."
+    },
+    "compositor": "FFmpeg 8.1.1",
+    "compositorSeed": "not applicable; deterministic filter graph",
+    "targetContainer": "MP4",
+    "targetVideoCodec": "H.264",
+    "targetPixelFormat": "yuv420p",
+    "targetDurationSeconds": 5,
+    "targetFps": 24,
+    "targetDimensions": { "width": 960, "height": 640 },
+    "audio": "none",
+    "motionRule": "Composite two brief closed-eye fades, mask the original head-and-neck region, and rotate that rigid region by at most 0.014 radians. Keep the torso, limbs, hands, feet, tail, ground, background, lighting, and camera fixed.",
+    "motionQaThresholds": {
+      "significantChannelDifferenceFloor": 3,
+      "headZoneSignificantEnergyMin": 10000,
+      "blinkEyeZoneSignificantEnergyMin": 1000,
+      "significantChangeEnergyInsideHeadZoneMinPercent": 95,
+      "significantChangeEnergyInsideEyeZoneMinPercent": 35,
+      "protectedRegionMeanMax": 0.3,
+      "protectedRegionP99Max": 3,
+      "protectedRegionMaxMax": 20,
+      "returnFrameMeanMax": 0.5
+    },
+    "commands": {
+      "oviraptor-philoceratops-blink-headtilt-biological-m1-v1": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/comfyui/scripts/build_motion_m1_pilot.ps1 -Sample oviraptor"
+    }
+  },
+  "samples": {
+    "oviraptor-philoceratops-blink-headtilt-biological-m1-v1": {
+      "taxonId": "oviraptor-philoceratops",
+      "sceneRole": "solo",
+      "sourcePoster": "assets/dinosaurs/oviraptor-philoceratops-robust-lowcrest-rostrum-representative-imagegen-v3.png",
+      "motionOverlay": "assets/motion/m1/overlays/oviraptor-philoceratops-closed-eye-overlay-imagegen-v1.png",
+      "maskSource": "tools/comfyui/motion_masks/oviraptor-philoceratops-head-neck-biological-m1-v1.svg",
+      "projectAsset": "assets/motion/m1/oviraptor-philoceratops-blink-headtilt-biological-m1-v1.mp4",
+      "motionClass": "biological-micro",
+      "motionLayer": "two natural blinks plus a rigid head-and-neck tilt with 0.014-radian maximum amplitude",
+      "lockedRegions": "torso below the neck, both arms and hands, both legs and feet, single tail, ground, vegetation, sky, lighting, and camera",
+      "identityCuesPreserved": [
+        "low conservative crest",
+        "comparatively long deep toothless beak",
+        "short robust feathered torso",
+        "two arms with three-finger hands",
+        "two hind limbs with visible feet",
+        "one short tail"
+      ],
+      "evidenceBoundary": "Blink timing and the small head tilt are plausible reconstruction choices, not direct fossil evidence or a claim about a documented Oviraptor behavior. The M1 video cannot upgrade anatomy, gallery, or representative status.",
+      "scienceReferences": [
+        "Clark, Norell & Rowe 2002, American Museum Novitates 3364",
+        "AMNH FR 6517"
+      ],
+      "file": { "sha256": "86689a99269e1300b447b35ab801991506e37b518ff4437f877e428704773b52", "bytes": 338341, "width": 960, "height": 640, "durationSeconds": 5, "fps": 24, "codec": "h264" },
+      "sourceFiles": {
+        "poster": { "sha256": "b582b01d66f8343e6b778a980d06a21d0ad6414253fe3b06c57a5aad431a51aa", "bytes": 3164408, "width": 1536, "height": 1024 },
+        "overlay": { "sha256": "a7ac3b6f9b3602cbad4c8bae830aa25f977f1facecd9ff8d7379a73b904030b9", "bytes": 11005, "width": 64, "height": 56 }
+      },
+      "motionQa": {
+        "blinkComparisonFrames": [21, 24],
+        "tiltComparisonFrames": [0, 30],
+        "returnComparisonFrames": [0, 119],
+        "eyeZone": { "x": [190, 275], "y": [35, 125] },
+        "headZone": { "x": [120, 350], "y": [10, 335] },
+        "protectedExclusionZone": { "x": [105, 370], "y": [0, 350] },
+        "calculated": {
+          "blink": {
+            "significantEnergyInsideZone": 141408,
+            "significantChangeEnergyInsideZonePercent": 80.17,
+            "protectedRegionDifference": { "mean": 0.0036, "p99": 0, "max": 5 }
+          },
+          "tilt": {
+            "significantEnergyInsideZone": 1316174,
+            "significantChangeEnergyInsideZonePercent": 99.85,
+            "protectedRegionDifference": { "mean": 0.0423, "p99": 2, "max": 10 }
+          },
+          "returnFrameMeanDifference": 0.3248
+        },
+        "visualStatus": "pass",
+        "visualCheckpoints": [0, 24, 27, 30, 60, 75, 90, 119],
+        "note": "Original-resolution full-frame and head-crop contact sheets passed manual review on 2026-08-03. The blink reads naturally, the head and neck move as one restrained unit, and no extra limb, digit, tail, seam, camera move, or background deformation is visible. Decoded QA places 80.17% of blink change inside the eye zone and 99.85% of tilt change inside the head zone; protected-region mean differences are 0.0036 and 0.0423."
+      },
+      "review": {
+        "anatomy": { "status": "poster-inherited", "note": "The approved S1 still-image anatomy verdict is inherited; motion is not anatomy evidence." },
+        "frameAnatomy": { "status": "supported", "note": "Eight full-frame and head-crop checkpoints preserve every listed identity and count cue." },
+        "motionPlausibility": { "status": "supported", "note": "Two brief blinks and a rigid sub-degree head-and-neck tilt read as restrained micro-motion; 80.17% of blink change stays in the eye zone and 99.85% of tilt change stays in the head zone." },
+        "backgroundIntegrity": { "status": "supported", "note": "The body below the neck, ground, vegetation, sky, and camera remain locked outside the declared mask; protected-region mean differences are 0.0036 for blink and 0.0423 for tilt." },
+        "responsive": { "status": "supported", "note": "Click-to-play, muted inline playback, cross-lane pause, poster fallback, and no horizontal overflow passed at 1440x900, 390x844, 844x390, and 320x700 on 2026-08-03." },
+        "publication": { "status": "published", "note": "M1 pilot passed file, frame-anatomy, motion-locality, background-integrity, responsive, accessibility, and provenance gates on 2026-08-03." },
+        "representativeEligible": false,
+        "galleryEligible": false
+      }
+    }
+  }
+}

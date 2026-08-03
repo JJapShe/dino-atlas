@@ -3269,6 +3269,31 @@ button.dummy-image:disabled {
   text-decoration: underline;
 }
 
+.motion-sample-lane--m1 {
+  border-top-color: rgba(235, 151, 82, 0.34);
+}
+
+.motion-sample-lane--m1 .motion-sample-grid {
+  grid-template-columns: minmax(0, 680px);
+  justify-content: start;
+}
+
+.motion-sample-lane--m1 .motion-sample-card {
+  border-color: rgba(235, 151, 82, 0.3);
+  background:
+    linear-gradient(150deg, rgba(235, 151, 82, 0.09), transparent 46%),
+    rgba(22, 20, 25, 0.9);
+}
+
+.motion-sample-lane--m1 .motion-tier-badge {
+  border-color: rgba(235, 151, 82, 0.48);
+  color: #f4bd87;
+}
+
+.motion-sample-lane--m1 .motion-playback-note {
+  color: #f4bd87 !important;
+}
+
 .review-layout {
   display: grid;
   grid-template-columns: minmax(380px, 0.95fr) minmax(360px, 1.05fr);

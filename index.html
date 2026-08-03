@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dino Atlas MVP</title>
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="./styles.css?v=20260803-ecosystem-evidence-v2" />
+    <link rel="stylesheet" href="./styles.css?v=20260803-biological-m1-v1" />
   </head>
   <body data-active-view="atlas">
     <div class="app-shell">
@@ -342,6 +342,19 @@
               <p class="motion-sample-summary" id="motionSampleSummary" aria-live="polite"></p>
               <div class="motion-sample-grid" id="motionSampleGrid"></div>
             </section>
+
+            <section class="motion-sample-lane motion-sample-lane--m1" id="motionM1SampleLane" aria-labelledby="motionM1SampleTitle" hidden>
+              <header class="motion-sample-heading">
+                <div>
+                  <p class="eyebrow">M1 Biological Motion</p>
+                  <h3 id="motionM1SampleTitle">공룡 몸체 움직임 실험</h3>
+                  <p>승인된 정지화면의 해부학을 유지하면서 눈깜빡임·고개 움직임처럼 작은 생물학적 동작만 시험합니다. 걷기나 공격 같은 큰 행동은 아직 넣지 않으며, 눌렀을 때만 5초 동안 재생됩니다.</p>
+                </div>
+                <span class="motion-role-lock">대표·갤러리 승격 금지</span>
+              </header>
+              <p class="motion-sample-summary" id="motionM1SampleSummary" aria-live="polite"></p>
+              <div class="motion-sample-grid" id="motionM1SampleGrid"></div>
+            </section>
           </section>
         </section>
 
@@ -401,7 +414,8 @@
   <script src="./gallery-slots.js?v=20260803-composition-diversity-v1"></script>
   <script src="./ecosystem-scenes.js?v=20260803-candelaria-charcoal-v1"></script>
   <script src="./motion-samples.js?v=20260803-motion-scene-roles-v1"></script>
-  <script src="./app.js?v=20260803-motion-scene-roles-v1"></script>
+  <script src="./motion-m1-samples.js?v=20260803-biological-m1-v1"></script>
+  <script src="./app.js?v=20260803-biological-m1-v1"></script>
     <script src="./atlas-layout.js?v=20260731-resizable-inspector-v1"></script>
   </body>
 </html>
