@@ -25,11 +25,11 @@ Dino Atlas의 `knowledgeLevel`은 5~14세 사용자가 공룡과 앱에 함께 �
 
 ## 2026-08-03 기준선
 
-- 대상 생물: 133종
-- 분포: LV1 19종 / LV2 27종 / LV3 39종 / LV4 48종
-- 2026-08-02 기준선 이후 변경: 4종
+- 대상 생물: 134종
+- 분포: LV1 19종 / LV2 28종 / LV3 39종 / LV4 48종
+- 2026-08-02 기준선 이후 변경: 기존 4종 재분류와 마이아사우라 1종 신규 수록
 - 대표 지역 판단: 한국 어린이 콘텐츠에서 노출이 높은 타르보사우루스는 LV1
 - 재검토 조건: 사용자 검색·열람 데이터, 연령별 테스트, 전시·교육 콘텐츠의 유의미한 변화가 생기면 종별 근거를 다시 검토한다.
 - 최초 전면 재분류 기록: [`knowledge-level-reclassification-2026-08-02.md`](knowledge-level-reclassification-2026-08-02.md)
-- 133종 재감사와 최신 근거: [`knowledge-level-audit-2026-08-03.md`](knowledge-level-audit-2026-08-03.md)
-- 133종 종별 편집 근거표: [`knowledge-level-evidence-2026-08-03.md`](knowledge-level-evidence-2026-08-03.md) / [JSON](knowledge-level-evidence-2026-08-03.json)
+- 134종 재감사와 최신 근거: [`knowledge-level-audit-2026-08-03.md`](knowledge-level-audit-2026-08-03.md)
+- 134종 종별 편집 근거표: [`knowledge-level-evidence-2026-08-03.md`](knowledge-level-evidence-2026-08-03.md) / [JSON](knowledge-level-evidence-2026-08-03.json)

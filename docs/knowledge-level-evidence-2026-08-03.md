@@ -1,8 +1,8 @@
-# 133개 분류군 지식 레벨 근거표
+# 134개 분류군 지식 레벨 근거표
 
 - 기준일: 2026-08-03
 - 대상: 한국어권 5~14세 Dino Atlas 사용자
-- 행 수: 133개 분류군
+- 행 수: 134개 분류군
 - 기준 문서: [도감 친숙도 LV 판정 기준](knowledge-level-rubric.md)
 - 기계 판독본: [`knowledge-level-evidence-2026-08-03.json`](knowledge-level-evidence-2026-08-03.json)
 
@@ -132,36 +132,37 @@ knowledgeLevel을 읽기 난이도나 학술적 중요도가 아니라 어린이
 | 106 | 에니그마쿠르소르 | *Enigmacursor mollyborthwickae*<br><code>enigmacursor-mollyborthwickae</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 에니그마쿠르소르(Enigmacursor mollyborthwickae)는 최근 세분된 모리슨층 소형 조반류의 전문 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
 | 107 | 오트니엘로사우루스 | *Othnielosaurus consors*<br><code>othnielosaurus-consors</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 오트니엘로사우루스(Othnielosaurus consors)는 모리슨층 소형 조반류 분류사를 깊게 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
 | 108 | 캄프토사우루스 | *Camptosaurus dispar*<br><code>camptosaurus-dispar</code> | LV3 | 관심 확장 후 인지 | 주제별 자료에서 간헐적 | 안내 필요 | 보조 분류군 | 캄프토사우루스(Camptosaurus dispar)는 쥐라기 조각류를 관심 있게 확장할 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다. |
-| 109 | 파라사우롤로푸스 | *Parasaurolophus walkeri*<br><code>parasaurolophus-walkeri</code> | LV1 | 상징적 | 여러 어린이 채널에서 반복 | 이름·실루엣 즉시 접근 | 대표 아이콘 | 파라사우롤로푸스(Parasaurolophus walkeri)는 뒤로 길게 뻗은 관 모양 볏의 대표 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다. |
-| 110 | 사우롤로푸스 | *Saurolophus angustirostris*<br><code>saurolophus-angustirostris</code> | LV2 | 높음 | 어린이 도감에서 반복 | 특징 단서로 접근 | 주요 단골 | 사우롤로푸스(Saurolophus angustirostris)는 단단한 머리 볏의 하드로사우루스류 도감 단골이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다. |
-| 111 | 에드몬토사우루스 | *Edmontosaurus annectens*<br><code>edmontosaurus-annectens</code> | LV2 | 높음 | 어린이 도감에서 반복 | 특징 단서로 접근 | 주요 단골 | 에드몬토사우루스(Edmontosaurus annectens)는 후기 백악기 대형 오리주둥이 공룡의 도감 단골이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다. |
-| 112 | 테스켈로사우루스 | *Thescelosaurus neglectus*<br><code>thescelosaurus-neglectus</code> | LV3 | 관심 확장 후 인지 | 주제별 자료에서 간헐적 | 안내 필요 | 보조 분류군 | 테스켈로사우루스(Thescelosaurus neglectus)는 작은 후기 백악기 조각류를 탐색할 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다. |
-| 113 | 파키케팔로사우루스 | *Pachycephalosaurus wyomingensis*<br><code>pachycephalosaurus-wyomingensis</code> | LV1 | 상징적 | 여러 어린이 채널에서 반복 | 이름·실루엣 즉시 접근 | 대표 아이콘 | 파키케팔로사우루스(Pachycephalosaurus wyomingensis)는 두꺼운 돔 머리로 즉시 알아보는 대표 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다. |
-| 114 | 스테고케라스 | *Stegoceras validum*<br><code>stegoceras-validum</code> | LV3 | 관심 확장 후 인지 | 주제별 자료에서 간헐적 | 안내 필요 | 보조 분류군 | 스테고케라스(Stegoceras validum)는 작은 돔 머리 공룡 비교에서 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다. |
-| 115 | 호말로케팔레 | *Homalocephale calathocercos*<br><code>homalocephale-calathocercos</code> | LV3 | 관심 확장 후 인지 | 주제별 자료에서 간헐적 | 안내 필요 | 보조 분류군 | 호말로케팔레(Homalocephale calathocercos)는 납작한 머리 후두류 논의를 볼 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다. |
-| 116 | 틸로케팔레 | *Tylocephale gilmorei*<br><code>tylocephale-gilmorei</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 틸로케팔레(Tylocephale gilmorei)는 고비 후두류를 세분할 때 만나는 희소 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
-| 117 | 완나노사우루스 | *Wannanosaurus yansiensis*<br><code>wannanosaurus-yansiensis</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 완나노사우루스(Wannanosaurus yansiensis)는 작은 기초 후두류를 깊게 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
-| 118 | 알라스카케팔레 | *Alaskacephale gangloffi*<br><code>alaskacephale-gangloffi</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 알라스카케팔레(Alaskacephale gangloffi)는 알래스카 후두류를 별도로 다루는 전문 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
-| 119 | 포라미나케팔레 | *Foraminacephale brevis*<br><code>foraminacephale-brevis</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 포라미나케팔레(Foraminacephale brevis)는 북미 후두류 돔 구조를 세분할 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
-| 120 | 콜레피오케팔레 | *Colepiocephale lambei*<br><code>colepiocephale-lambei</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 콜레피오케팔레(Colepiocephale lambei)는 후두류 분류표를 깊게 볼 때 만나는 전문 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
-| 121 | 스파에로톨루스 | *Sphaerotholus goodwini*<br><code>sphaerotholus-goodwini</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 스파에로톨루스(Sphaerotholus goodwini)는 스파에로톨루스 종 구분을 깊게 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
-| 122 | 아크로톨루스 | *Acrotholus audeti*<br><code>acrotholus-audeti</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 아크로톨루스(Acrotholus audeti)는 작은 후두류 화석 기록을 전문적으로 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
-| 123 | 암토케팔레 | *Amtocephale gobiensis*<br><code>amtocephale-gobiensis</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 암토케팔레(Amtocephale gobiensis)는 고비 후두류 돔 비교에서 만나는 전문 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
-| 124 | 프레노케팔레 | *Prenocephale prenes*<br><code>prenocephale-prenes</code> | LV3 | 관심 확장 후 인지 | 주제별 자료에서 간헐적 | 안내 필요 | 보조 분류군 | 프레노케팔레(Prenocephale prenes)는 둥근 돔의 아시아 후두류를 탐색할 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다. |
-| 125 | 그라비톨루스 | *Gravitholus albertae*<br><code>gravitholus-albertae</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 그라비톨루스(Gravitholus albertae)는 알버타 후두류 분류 논의를 깊게 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
-| 126 | 고요케팔레 | *Goyocephale lattimorei*<br><code>goyocephale-lattimorei</code> | LV3 | 관심 확장 후 인지 | 주제별 자료에서 간헐적 | 안내 필요 | 보조 분류군 | 고요케팔레(Goyocephale lattimorei)는 아시아 후두류 비교를 관심 있게 볼 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다. |
-| 127 | 스파에로톨루스 부크홀차이 | *Sphaerotholus buchholtzae*<br><code>sphaerotholus-buchholtzae</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 스파에로톨루스 부크홀차이(Sphaerotholus buchholtzae)는 스파에로톨루스 속의 종 단위 비교에서 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
-| 128 | 스티기몰로크 | *Stygimoloch spinifer*<br><code>stygimoloch-spinifer</code> | LV2 | 높음 | 어린이 도감에서 반복 | 특징 단서로 접근 | 주요 단골 | 스티기몰로크(Stygimoloch spinifer)는 뿔 달린 돔 머리 이미지로 대중 콘텐츠에 반복 노출되는 이름이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다. |
-| 129 | 플라티톨루스 | *Platytholus clemensi*<br><code>platytholus-clemensi</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 플라티톨루스(Platytholus clemensi)는 후두류 신종과 분류 연구를 깊게 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
-| 130 | 한수에시아 | *Hanssuesia sternbergi*<br><code>hanssuesia-sternbergi</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 한수에시아(Hanssuesia sternbergi)는 후두류 분류사를 전문적으로 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
-| 131 | 오르나토톨루스 | *Ornatotholus browni*<br><code>ornatotholus-browni</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 오르나토톨루스(Ornatotholus browni)는 후두류 유효성 논의를 깊게 볼 때 만나는 전문 이름이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
-| 132 | 시노케팔레 | *Sinocephale bexelli*<br><code>sinocephale-bexelli</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 시노케팔레(Sinocephale bexelli)는 중국 후두류 분류사를 세분할 때 만나는 희소 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
-| 133 | 안킬로사우루스 | *Ankylosaurus magniventris*<br><code>ankylosaurus-magniventris</code> | LV1 | 상징적 | 여러 어린이 채널에서 반복 | 이름·실루엣 즉시 접근 | 대표 아이콘 | 안킬로사우루스(Ankylosaurus magniventris)는 꼬리 곤봉과 장갑으로 즉시 알아보는 대표 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다. |
+| 109 | 마이아사우라 | *Maiasaura peeblesorum*<br><code>maiasaura-peeblesorum</code> | LV2 | 높음 | 어린이 도감에서 반복 | 특징 단서로 접근 | 주요 단골 | 마이아사우라(Maiasaura peeblesorum)는 ‘착한 엄마 공룡’ 별명과 둥지 이야기로 어린이 도감에서 반복되는 종이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다. |
+| 110 | 파라사우롤로푸스 | *Parasaurolophus walkeri*<br><code>parasaurolophus-walkeri</code> | LV1 | 상징적 | 여러 어린이 채널에서 반복 | 이름·실루엣 즉시 접근 | 대표 아이콘 | 파라사우롤로푸스(Parasaurolophus walkeri)는 뒤로 길게 뻗은 관 모양 볏의 대표 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다. |
+| 111 | 사우롤로푸스 | *Saurolophus angustirostris*<br><code>saurolophus-angustirostris</code> | LV2 | 높음 | 어린이 도감에서 반복 | 특징 단서로 접근 | 주요 단골 | 사우롤로푸스(Saurolophus angustirostris)는 단단한 머리 볏의 하드로사우루스류 도감 단골이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다. |
+| 112 | 에드몬토사우루스 | *Edmontosaurus annectens*<br><code>edmontosaurus-annectens</code> | LV2 | 높음 | 어린이 도감에서 반복 | 특징 단서로 접근 | 주요 단골 | 에드몬토사우루스(Edmontosaurus annectens)는 후기 백악기 대형 오리주둥이 공룡의 도감 단골이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다. |
+| 113 | 테스켈로사우루스 | *Thescelosaurus neglectus*<br><code>thescelosaurus-neglectus</code> | LV3 | 관심 확장 후 인지 | 주제별 자료에서 간헐적 | 안내 필요 | 보조 분류군 | 테스켈로사우루스(Thescelosaurus neglectus)는 작은 후기 백악기 조각류를 탐색할 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다. |
+| 114 | 파키케팔로사우루스 | *Pachycephalosaurus wyomingensis*<br><code>pachycephalosaurus-wyomingensis</code> | LV1 | 상징적 | 여러 어린이 채널에서 반복 | 이름·실루엣 즉시 접근 | 대표 아이콘 | 파키케팔로사우루스(Pachycephalosaurus wyomingensis)는 두꺼운 돔 머리로 즉시 알아보는 대표 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다. |
+| 115 | 스테고케라스 | *Stegoceras validum*<br><code>stegoceras-validum</code> | LV3 | 관심 확장 후 인지 | 주제별 자료에서 간헐적 | 안내 필요 | 보조 분류군 | 스테고케라스(Stegoceras validum)는 작은 돔 머리 공룡 비교에서 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다. |
+| 116 | 호말로케팔레 | *Homalocephale calathocercos*<br><code>homalocephale-calathocercos</code> | LV3 | 관심 확장 후 인지 | 주제별 자료에서 간헐적 | 안내 필요 | 보조 분류군 | 호말로케팔레(Homalocephale calathocercos)는 납작한 머리 후두류 논의를 볼 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다. |
+| 117 | 틸로케팔레 | *Tylocephale gilmorei*<br><code>tylocephale-gilmorei</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 틸로케팔레(Tylocephale gilmorei)는 고비 후두류를 세분할 때 만나는 희소 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
+| 118 | 완나노사우루스 | *Wannanosaurus yansiensis*<br><code>wannanosaurus-yansiensis</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 완나노사우루스(Wannanosaurus yansiensis)는 작은 기초 후두류를 깊게 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
+| 119 | 알라스카케팔레 | *Alaskacephale gangloffi*<br><code>alaskacephale-gangloffi</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 알라스카케팔레(Alaskacephale gangloffi)는 알래스카 후두류를 별도로 다루는 전문 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
+| 120 | 포라미나케팔레 | *Foraminacephale brevis*<br><code>foraminacephale-brevis</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 포라미나케팔레(Foraminacephale brevis)는 북미 후두류 돔 구조를 세분할 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
+| 121 | 콜레피오케팔레 | *Colepiocephale lambei*<br><code>colepiocephale-lambei</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 콜레피오케팔레(Colepiocephale lambei)는 후두류 분류표를 깊게 볼 때 만나는 전문 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
+| 122 | 스파에로톨루스 | *Sphaerotholus goodwini*<br><code>sphaerotholus-goodwini</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 스파에로톨루스(Sphaerotholus goodwini)는 스파에로톨루스 종 구분을 깊게 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
+| 123 | 아크로톨루스 | *Acrotholus audeti*<br><code>acrotholus-audeti</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 아크로톨루스(Acrotholus audeti)는 작은 후두류 화석 기록을 전문적으로 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
+| 124 | 암토케팔레 | *Amtocephale gobiensis*<br><code>amtocephale-gobiensis</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 암토케팔레(Amtocephale gobiensis)는 고비 후두류 돔 비교에서 만나는 전문 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
+| 125 | 프레노케팔레 | *Prenocephale prenes*<br><code>prenocephale-prenes</code> | LV3 | 관심 확장 후 인지 | 주제별 자료에서 간헐적 | 안내 필요 | 보조 분류군 | 프레노케팔레(Prenocephale prenes)는 둥근 돔의 아시아 후두류를 탐색할 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다. |
+| 126 | 그라비톨루스 | *Gravitholus albertae*<br><code>gravitholus-albertae</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 그라비톨루스(Gravitholus albertae)는 알버타 후두류 분류 논의를 깊게 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
+| 127 | 고요케팔레 | *Goyocephale lattimorei*<br><code>goyocephale-lattimorei</code> | LV3 | 관심 확장 후 인지 | 주제별 자료에서 간헐적 | 안내 필요 | 보조 분류군 | 고요케팔레(Goyocephale lattimorei)는 아시아 후두류 비교를 관심 있게 볼 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다. |
+| 128 | 스파에로톨루스 부크홀차이 | *Sphaerotholus buchholtzae*<br><code>sphaerotholus-buchholtzae</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 스파에로톨루스 부크홀차이(Sphaerotholus buchholtzae)는 스파에로톨루스 속의 종 단위 비교에서 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
+| 129 | 스티기몰로크 | *Stygimoloch spinifer*<br><code>stygimoloch-spinifer</code> | LV2 | 높음 | 어린이 도감에서 반복 | 특징 단서로 접근 | 주요 단골 | 스티기몰로크(Stygimoloch spinifer)는 뿔 달린 돔 머리 이미지로 대중 콘텐츠에 반복 노출되는 이름이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다. |
+| 130 | 플라티톨루스 | *Platytholus clemensi*<br><code>platytholus-clemensi</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 플라티톨루스(Platytholus clemensi)는 후두류 신종과 분류 연구를 깊게 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
+| 131 | 한수에시아 | *Hanssuesia sternbergi*<br><code>hanssuesia-sternbergi</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 한수에시아(Hanssuesia sternbergi)는 후두류 분류사를 전문적으로 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
+| 132 | 오르나토톨루스 | *Ornatotholus browni*<br><code>ornatotholus-browni</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 오르나토톨루스(Ornatotholus browni)는 후두류 유효성 논의를 깊게 볼 때 만나는 전문 이름이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
+| 133 | 시노케팔레 | *Sinocephale bexelli*<br><code>sinocephale-bexelli</code> | LV4 | 전문 탐색 | 일반 입문 자료 노출 제한 | 전문 종명 중심 | 희소·전문 분류군 | 시노케팔레(Sinocephale bexelli)는 중국 후두류 분류사를 세분할 때 만나는 희소 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다. |
+| 134 | 안킬로사우루스 | *Ankylosaurus magniventris*<br><code>ankylosaurus-magniventris</code> | LV1 | 상징적 | 여러 어린이 채널에서 반복 | 이름·실루엣 즉시 접근 | 대표 아이콘 | 안킬로사우루스(Ankylosaurus magniventris)는 꼬리 곤봉과 장갑으로 즉시 알아보는 대표 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다. |
 
 ## 현재 분포
 
 - LV1: 19종
-- LV2: 27종
+- LV2: 28종
 - LV3: 39종
 - LV4: 48종
 

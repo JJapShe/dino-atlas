@@ -1,6 +1,6 @@
 {
-  "taxa": 133,
-  "images": 1743,
+  "taxa": 134,
+  "images": 1746,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -11597,6 +11597,32 @@
         "source": "assets/dinosaurs/camptosaurus-dispar-stormbar-jade-coral-ladder-ecology-imagegen-v1.png",
         "variant": "폭풍 모래톱 비취-산호 사다리무늬 생태 이미지 생성 v1",
         "src": "assets/dinosaurs/camptosaurus-dispar-stormbar-jade-coral-ladder-ecology-imagegen-v1.png"
+      }
+    ],
+    "maiasaura-peeblesorum": [
+      {
+        "kind": "count-level pass",
+        "title": "마이아사우라 낮은 횡방향 볏 대표 전신",
+        "body": "투메디슨층의 밝은 실트 지대를 걷는 성체 대표 전신입니다. 넓고 닫힌 무치 오리주둥이, 눈 위 두개골 지붕을 가로지르는 낮고 넓은 고형 볏, 깊은 몸통, 정확히 두 미튼형 앞손과 두 뒷다리, 각 뒷발의 세 넓은 주발가락, 골반에서 한 끝으로 이어지는 꼬리를 원본 크기로 확인했습니다.",
+        "source": "assets/dinosaurs/maiasaura-peeblesorum-low-transverse-crest-representative-imagegen-v1.png",
+        "variant": "낮은 횡방향 볏 대표 이미지 생성 v1",
+        "src": "assets/dinosaurs/maiasaura-peeblesorum-low-transverse-crest-representative-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "‘착한 엄마 공룡’ 마이아사우라의 산란지",
+        "body": "둥지·알과 집단 산란지 화석을 바탕으로 성체와 여러 알을 한 화면에 둔 상징적 가설 장면입니다. 성체는 둥지와 넓은 빈 지면으로 분리되어 바깥을 바라보며, 직접 급식·접촉·알 돌보기 행동을 하지 않습니다. 이 성체가 이 둥지를 지켰거나 실제 어미였다는 직접 증거는 아니며, ‘착한 엄마 공룡’이라는 익숙한 별명과 산란지 증거를 과장 없이 연결한 세로형 참고 이미지입니다.",
+        "source": "assets/dinosaurs/maiasaura-peeblesorum-two-medicine-nesting-ground-egg-hypothesis-portrait-imagegen-v1.png",
+        "variant": "투메디슨 산란지 알 둥지 가설 세로 이미지 생성 v1",
+        "src": "assets/dinosaurs/maiasaura-peeblesorum-two-medicine-nesting-ground-egg-hypothesis-portrait-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "마이아사우라 셀라돈·블랙베리 대각선 무늬 변이",
+        "body": "대표의 측면 보행과 달리 머리를 낮춘 전방 삼사분면 대각선 구도입니다. 흑연빛 등 안장, 청자빛 옆구리, 블랙베리색 얼굴과 목, 상아색 배를 사용해 대표 배색과 분리했습니다. 낮고 넓은 볏, 미튼형 앞손, 세 주발가락의 두 뒷발과 한 꼬리는 유지하지만 색·행동·원근 변형 슬롯이므로 대표로 승격하지 않습니다.",
+        "source": "assets/dinosaurs/maiasaura-peeblesorum-celadon-blackberry-diagonal-pattern-imagegen-v1.png",
+        "variant": "셀라돈 블랙베리 전방 삼사분면 무늬 이미지 생성 v1",
+        "src": "assets/dinosaurs/maiasaura-peeblesorum-celadon-blackberry-diagonal-pattern-imagegen-v1.png"
       }
     ],
     "parasaurolophus-walkeri": [

@@ -75,19 +75,19 @@ for (const dino of dinosaurs) {
   }
 }
 
-if (dinosaurs.length !== 133) fail(`Expected 133 taxa, found ${dinosaurs.length}`);
+if (dinosaurs.length !== 134) fail(`Expected 134 taxa, found ${dinosaurs.length}`);
 
 const levelSnapshot = dinosaurs
   .map((dino) => `${dino.id}:${dino.knowledgeLevel}`)
   .sort()
   .join("\n");
 const levelSnapshotSha256 = createHash("sha256").update(levelSnapshot).digest("hex");
-const expectedLevelSnapshotSha256 = "bed270283f81b80c521d16aaff01002e506a984ba78b01317f322978555c5a17";
+const expectedLevelSnapshotSha256 = "46107cd22769f360f5736e8e46834270d86e8e2c0c11cdd43b68ac3b224ecf3c";
 if (levelSnapshotSha256 !== expectedLevelSnapshotSha256) {
   fail(`Level snapshot hash mismatch: ${levelSnapshotSha256}`);
 }
 
-const expectedDistribution = { 1: 19, 2: 27, 3: 39, 4: 48 };
+const expectedDistribution = { 1: 19, 2: 28, 3: 39, 4: 48 };
 for (const [level, expected] of Object.entries(expectedDistribution)) {
   if (distribution[level] !== expected) {
     fail(`LV${level} expected ${expected}, found ${distribution[level]}`);
@@ -216,6 +216,7 @@ if (!Array.isArray(evidence?.taxa)) {
 
 const expectedLevels = {
   "camptosaurus-dispar": 3,
+  "maiasaura-peeblesorum": 2,
   "pentaceratops-sternbergii": 3,
   "rhamphorhynchus-muensteri": 3,
   "tapejara-wellnhoferi": 3,
@@ -268,8 +269,8 @@ const appCacheDate = html.match(/app\.js\?v=(\d{8})-[^"']+/)?.[1] || "";
 if (stylesCacheDate < "20260803" || appCacheDate < "20260803") {
   fail("Knowledge-level release cache keys are stale");
 }
-if (!rubric.includes("대상 생물: 133종") || !rubric.includes("LV2 27종 / LV3 39종")) {
-  fail("Rubric baseline does not match the audited 133-taxon distribution");
+if (!rubric.includes("대상 생물: 134종") || !rubric.includes("LV2 28종 / LV3 39종")) {
+  fail("Rubric baseline does not match the audited 134-taxon distribution");
 }
 if (
   !rubric.includes("knowledge-level-evidence-2026-08-03.md") ||
@@ -277,7 +278,10 @@ if (
 ) {
   fail("Rubric does not link to both per-taxon evidence artifacts");
 }
-if (!audit.includes("변경: 4종") || !audit.includes("최종 분포: LV1 19 / LV2 27 / LV3 39 / LV4 48")) {
+if (
+  !audit.includes("변경: 기존 4종 재분류, 친숙 미수록종 마이아사우라 1종 신규 수록") ||
+  !audit.includes("최종 분포: LV1 19 / LV2 28 / LV3 39 / LV4 48")
+) {
   fail("Audit summary does not match the expected decision set");
 }
 

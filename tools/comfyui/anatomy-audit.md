@@ -1,6 +1,6 @@
 # Dinosaur Anatomy Audit
 
-Last updated: 2026-08-02
+Last updated: 2026-08-03
 
 This audit checks the current app-connected gallery images against a stricter anatomy gate. The goal is to prevent visually pleasing but structurally wrong renders from entering the suitable-candidate pool.
 
@@ -38,6 +38,8 @@ Every candidate must clear these before it can be treated as suitable:
 - taxon-specific traits: T. rex two fingers, Allosaurus longer three-finger forelimbs, Velociraptor feathering and sickle-claw cue, Triceratops three horns, beak, skull-attached frill, and non-hoofed ceratopsian body, Stegosaurus dorsal plates and four-spike thagomizer, Ankylosaurus low armor and tail club, sauropod shoulder/neck profile
 
 ## Reference Notes
+
+- 2026-08-03 Maiasaura initial gallery: S1 `maiasaura-peeblesorum-low-transverse-crest-representative-imagegen-v1.png` must show a broad closed toothless bill, a low broad transverse solid crest across the skull roof rather than a long tube, backward spike, tall helmet, or crestless head, exactly two compact mitten forehands, two hind feet with three broad main toes each, and one complete pelvis-origin tail. S2 may vary color, perspective, and a low feeding pose but cannot replace S1. S3 is a 4:5 nesting-ground hypothesis with one adult separated from a foreground nest by broad empty ground and no direct care action. [Horner 1983](https://doi.org/10.1080/02724634.1983.10011954) anchors the skull and crest; [Horner and Makela 1979](https://doi.org/10.1038/282296a0), [Horner 1982](https://doi.org/10.1038/297675a0), and [Prieto-Márquez and Guenther 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC5960587/) support nests, colonial nesting, and perinatal specimens. Adult attendance, maternity, guarding, feeding, colors, plants, weather, egg appearance, egg count, and the exact scene remain reconstruction, and S3 is prohibited from representative promotion.
 
 - 2026-08-03 Brachiosaurus gallery closure: replaced the failed generic-sauropod S2 and the four former HOLD slots with a role-balanced six-image set. S1 `brachiosaurus-altithorax-nasal-mound-fullbody-imagegen-v18.png` remains the sole representative. S2 is a rear-three-quarter slate/moss palette study, S3 is a dedicated vertical low-angle canopy-window scene, S4 reuses v19 only as a close head-detail view, S5 is a ground-level long-lens conifer browse, and S6 is a moderately elevated scene with two spatially separated individuals. Independent original-size review passed every full-body subject for high shoulders, longer forelimbs, a descending back line, a rounded nasal mound and high nostril, exactly four independently traceable limbs, and one pelvis-origin non-whip tail. S4 does not claim a full-body pass. S6 does not support age, growth stage, family, parentage, herd, protection, or defense claims because perspective contributes to apparent size. The six composition keys, camera families, and spatial signatures are unique. V16 is demoted from `count-level pass` and positive LoRA seed because its head lacks the current nasal-mound/high-nostril gate. Exact prompts or summaries, call IDs, seed availability, workflow, source/license policy, hashes, dimensions, and review decisions are in `brachiosaurus-gallery-closure-20260803.json`.
 

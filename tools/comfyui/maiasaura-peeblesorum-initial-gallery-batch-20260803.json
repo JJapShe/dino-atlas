@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-03-maiasaura-peeblesorum-initial-gallery-1",
+  "taxonId": "maiasaura-peeblesorum",
+  "taxonName": "Maiasaura peeblesorum",
+  "createdAt": "2026-08-03T12:25:05.482Z",
+  "audience": "Korean Dino Atlas users ages 5-14",
+  "requestedVisualTrait": "Three role-separated, anatomy-led initial gallery images including one restrained portrait-native 'good mother dinosaur' nesting-ground hypothesis",
+  "evidenceBoundary": {
+    "direct": [
+      "Maiasaura peeblesorum is a saurolophine hadrosaurid from the Campanian Two Medicine Formation.",
+      "The skull has a broad toothless hadrosaur bill and a low, broad, solid transverse crest across the skull roof rather than a long hollow tube or tall helmet.",
+      "Nests and nest-bound juveniles are documented, and repeated nesting horizons support colonial nesting and site fidelity.",
+      "Perinatal specimens provide direct evidence for very young Maiasaura anatomy and growth-stage comparison."
+    ],
+    "inferred": [
+      "Complete soft-tissue body outline, mitten-pad shape, skin texture, and full adult proportions combine Maiasaura bones with broader hadrosaur evidence.",
+      "The exact upland-floodplain plants, ash-rich walking surface, weather, and light are formation-level reconstructions.",
+      "The representative and pattern images show plausible calm walking or low browsing rather than fossilized behavior."
+    ],
+    "hypothetical": [
+      "All colors, pattern placement, skin appearance, and individual markings.",
+      "The portrait scene's adult-nest association, maternity, attendance, guarding implication, egg appearance, egg count, and exact moment.",
+      "The familiar Korean framing '착한 엄마 공룡' is a child-facing cultural label, not direct proof of feeding or maternal attendance."
+    ]
+  },
+  "copyrightSafety": {
+    "externalArtworkUsed": false,
+    "externalImagesUsedAsGenerationInput": false,
+    "projectGeneratedReferenceOnly": true,
+    "licenseRecord": "Original project-generated bitmap assets. External papers and museum pages were used only for factual constraints; no figure, fossil plate, reconstruction, or named-artist style was supplied to the generator or copied.",
+    "appPathPolicy": "Only the three approved species-prefixed project copies under assets/dinosaurs are referenced. No .codex/generated_images path is used by app.js or gallery-slots.js."
+  },
+  "sources": [
+    {
+      "url": "https://doi.org/10.1080/02724634.1983.10011954",
+      "citation": "Horner 1983. Cranial osteology and morphology of the type specimen of Maiasaura peeblesorum.",
+      "use": "Low broad transverse solid crest, bill, skull identity, and separation from hollow- or helmet-crested hadrosaurs",
+      "rightsUse": "Factual reference only; no figure or artwork copied"
+    },
+    {
+      "url": "https://doi.org/10.1038/282296a0",
+      "citation": "Horner and Makela 1979. Nest of juveniles provides evidence of family structure among dinosaurs.",
+      "use": "Nest and nest-bound juvenile evidence and the boundary between fossils and reconstructed care",
+      "rightsUse": "Factual reference only; no figure or artwork copied"
+    },
+    {
+      "url": "https://doi.org/10.1038/297675a0",
+      "citation": "Horner 1982. Evidence of colonial nesting and site fidelity among ornithischian dinosaurs.",
+      "use": "Colonial nesting and nesting-ground context",
+      "rightsUse": "Factual reference only; no figure or artwork copied"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5960587/",
+      "citation": "Prieto-Márquez and Guenther 2018. Perinatal specimens of Maiasaura peeblesorum.",
+      "use": "Perinatal anatomy and cautious growth-stage language",
+      "rightsUse": "Factual reference only; no figure or artwork copied"
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/paleobiology/article/maiasaura-a-model-organism-for-extinct-vertebrate-population-biology-a-large-sample-statistical-assessment-of-growth-dynamics-and-survivorship/288407BA0A91914480A0531529F050EF",
+      "citation": "Woodward et al. 2015. Maiasaura, a model organism for extinct vertebrate population biology.",
+      "use": "Growth and population context; no direct behavior claim",
+      "rightsUse": "Factual reference only; no figure or artwork copied"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8667728/",
+      "citation": "Phylogenetic nomenclature of Ornithischia and hadrosaurid clades.",
+      "use": "Hadrosauridae and saurolophine classification context",
+      "rightsUse": "Factual reference only; no figure or artwork copied"
+    },
+    {
+      "url": "https://home.nps.gov/articles/mesozoic-egg-mountain-dawson-2014.htm",
+      "citation": "National Park Service. Egg Mountain and Maiasaura educational interpretation.",
+      "use": "Accessible public explanation of nesting evidence and the historical 'good mother lizard' interpretation",
+      "rightsUse": "Factual reference only; no figure or artwork copied"
+    }
+  ],
+  "promptEncoding": "Each prompt array is the exact ordered set of lines supplied to the generator, joined with newline characters.",
+  "records": {
+    "representative": {
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-03T12:05:48.362Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "prompt-to-image followed by a precise-object edit",
+      "seed": "not exposed by generator",
+      "callId": "exec-355df73b-bf39-407e-8720-91097e709a77",
+      "sourceCallId": "exec-46ca4064-9622-4d2d-abdd-0290f141da20",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-355df73b-bf39-407e-8720-91097e709a77.png",
+      "approvedProjectPath": "assets/dinosaurs/maiasaura-peeblesorum-low-transverse-crest-representative-imagegen-v1.png",
+      "sha256": "9DFD43F42BD3F9368399F09103AA926EE199D7279A6ABFABAC2112C0C24208B7",
+      "bytes": 3309147,
+      "dimensions": "1536x1024",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas gallery representative image for Korean children ages 5-14",
+        "Primary request: Create a new original, copyright-safe naturalistic paleoart reconstruction of one adult Maiasaura peeblesorum. This must be a strict full-body identity image, not based on or imitating any named artist or existing artwork.",
+        "Scene/backdrop: Late Cretaceous Campanian Two Medicine Formation upland floodplain in Montana, a shallow dry braided wash with weathered volcanic-ash-rich sediment, sparse conifers, ferns, horsetails, and low flowering shrubs. No modern grass lawn.",
+        "Subject: exactly ONE adult Maiasaura peeblesorum. A large saurolophine hadrosaur with a moderately elongated face, broad closed toothless duck bill, and the diagnostic short solid transverse crest rising vertically above the skull roof between the eyes. The crest is compact and low, never a long tube, backward spike, tall helmet, or fan. Thick neck, deep barrel-shaped hadrosaur torso, robust hind limbs, shorter weight-bearing forelimbs, compact padded mitten-like forehands, three broad main toes on each hind foot, and one long stiff tail held clear of the ground. Exactly two forelimbs, exactly two hind limbs, two separate forehands, two separate hind feet, one head, and one continuous tail.",
+        "Style/medium: polished museum-quality natural-history illustration, anatomically conservative, realistic skin and weight, child-friendly and non-cartoon, no dramatic monster styling.",
+        "Composition/framing: landscape. Low eye-level lateral three-quarter view, walking calmly left-to-right across the wash. Show the complete animal from bill to tail tip with generous empty margin. Stagger all four limbs so every limb and foot connection is readable; no limb overlap with the body, vegetation, rocks, or shadows. Keep the head, crest, hands, feet, pelvis, and tail base sharply readable at thumbnail scale.",
+        "Lighting/mood: clear neutral morning light, calm observational mood, no heavy fog, dust cloud, motion blur, or extreme rim light.",
+        "Color palette: smoky indigo-gray dorsum and limbs, muted mulberry side field, warm apricot shoulder patch, pale flax underside. Irregular soft-edged flank dapples only; no regular tail rings. Matte pebbled skin, restrained keratin on bill and nails.",
+        "Constraints: no text, labels, borders, infographic, split panel, logo, watermark, signature, blood, wounds, nest, eggs, juveniles, herd, predator, active eruption, falling ash, fantasy anatomy, or named-artist imitation.",
+        "Avoid: Parasaurolophus tubular crest, Saurolophus backward spike, Corythosaurus helmet, Lambeosaurus hatchet crest, Edmontosaurus crestless head, Iguanodon thumb spike, Triceratops frill or horns, theropod teeth, visible separated clawed fingers, elephant feet, rhinoceros proportions, lizard sprawl, modern bird plumage, dorsal sail, dorsal spikes, extra or fused limbs, missing feet, duplicated toes, cropped or forked tail."
+      ],
+      "correctionPrompt": [
+        "Use case: precise-object-edit",
+        "Asset type: corrected scientific-educational Dino Atlas representative for ages 5-14",
+        "Input images: Image 1 is the edit target.",
+        "Primary request: Correct ONLY three anatomical problems on the Maiasaura peeblesorum while preserving the exact canvas, full-body framing, background, lighting, body proportions, skin texture, palette, and one continuous tail.",
+        "Correction 1 — skull crest: replace the high rounded vertical knob with Maiasaura's diagnostic LOW, BROAD, TRANSVERSE SOLID crest across the skull roof between and just above the eyes. In side view it must read as a short shallow wide ridge, not a tall horn, cylinder, dome, tube, backward spike, helmet, or fan. Keep the broad closed toothless duck bill.",
+        "Correction 2 — limb count: remove the thin dangling extra appendage under the middle of the belly. The final animal must have EXACTLY FOUR LIMBS TOTAL: exactly two forelimbs attached at the shoulder/chest and exactly two hind limbs attached at the pelvis. No fifth limb, dewlap spike, genital-like protrusion, duplicated leg, or detached appendage.",
+        "Correction 3 — forehands: reshape both forehands as compact weight-bearing hadrosaur padded mitten-like hands with the central digits bound in one soft-tissue unit. Do not show separated clawed fingers, elephant toenails, or multiple splayed toes. Keep both forelimb connections and both compact forehands readable.",
+        "Invariants: one adult only; one head; exactly two forelimbs; exactly two hind limbs; two separate hind feet with three broad main toes; one pelvis-origin tail ending inside frame; no cropped extremities. Keep every limb spatially separated enough to count.",
+        "Constraints: no text, label, border, split panel, logo, watermark, signature, nest, eggs, juveniles, predator, blood, wounds, fantasy anatomy, or named-artist imitation."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-03T12:05:48.362Z",
+        "method": "Original-size primary inspection plus independent head, crest, limb-count, bilateral mitten, bilateral three-toed-foot, and tail-continuity audit",
+        "result": "PASS as the sole representative. The corrected crest is low and transverse; exactly four limbs, two compact mitten forehands, two three-main-toe hind feet, and one complete tail are readable."
+      }
+    },
+    "color-pattern": {
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-03T12:12:01.638Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "reference-guided prompt-to-image",
+      "seed": "not exposed by generator",
+      "callId": "exec-bde84e71-2a04-41ce-a8b5-95c4af4f130b",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-bde84e71-2a04-41ce-a8b5-95c4af4f130b.png",
+      "approvedProjectPath": "assets/dinosaurs/maiasaura-peeblesorum-celadon-blackberry-diagonal-pattern-imagegen-v1.png",
+      "sha256": "187C2F87125614FC626461FD09598E83D6E3175A9C54FD6B6370123E6C7F886B",
+      "bytes": 3213976,
+      "dimensions": "1536x1024",
+      "referenceImages": [
+        "assets/dinosaurs/maiasaura-peeblesorum-low-transverse-crest-representative-imagegen-v1.png"
+      ],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas same-species color-pattern and composition variant for ages 5-14",
+        "Input images: Image 1 is the approved Maiasaura anatomy and body-identity reference only. Preserve the species and proportions, but create a substantially different pose, camera angle, background, and approved variant-b palette.",
+        "Primary request: exactly ONE adult Maiasaura peeblesorum with a broad closed toothless duck bill, LOW BROAD TRANSVERSE solid crest across the skull roof above the eyes, deep hadrosaur torso, exactly two forelimbs with smooth padded mitten hands, exactly two hind limbs with exactly three broad main toes on each foot, and one complete stiff tail.",
+        "Composition/framing: landscape. Use a strong diagonal FRONT THREE-QUARTER view, not a lateral side view. Place the head and chest in the lower-right foreground as the animal reaches gently down toward a low fern; angle the torso away toward the upper-left, with the complete tail receding to the left and remaining fully inside frame. All four limb-body connections and all four feet must remain clearly visible and spatially separated despite perspective. The two forehands must be smooth single mitten units with no individual finger grooves or nails. No thin extra appendage under the belly.",
+        "Scene/backdrop: firm elevated silt-and-gravel terrace of the Campanian Two Medicine Formation, sparse conifers and horsetails, a shallow dry channel far below, no modern grass and no wet mud obscuring feet.",
+        "Color palette: clearly different approved variant-b. REMOVE the orange/apricot shoulder patch entirely. Use a graphite-charcoal dorsal saddle, muted blue-celadon flanks, a restrained blackberry face and throat wash, and warm ivory belly. Preserve only the species' soft irregular flank-dapple topology in low-contrast pale sage; keep the tail unbanded. No global color filter.",
+        "Style/medium: original polished naturalistic museum paleoart, anatomically conservative, realistic pebbled skin and body weight, child-friendly, no named-artist imitation.",
+        "Lighting/mood: clear diffuse afternoon light, calm feeding behavior, high silhouette readability.",
+        "Constraints: no text, label, border, split panel, logo, watermark, signature, nest, egg, juvenile, herd, predator, blood, wounds, eruption, or falling ash.",
+        "Avoid: side-profile walking pose, lifted marching foreleg, orange shoulder patch, tall rounded crest, long tube, backward spike, helmet/fan crest, crestless head, Iguanodon thumb spike, teeth, splayed fingers, elephant toenails, four-toed hind feet, lizard sprawl, dorsal sail/spines, tail rings, extra/fused/missing limbs, duplicated feet, cropped or forked tail."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-03T12:12:01.638Z",
+        "method": "Original-size primary inspection and independent S1 comparison of identity, hands, feet, tail, palette, pose, perspective, and compositionKey",
+        "result": "PASS for S2 only. The low crest, broad bill, four limbs, two mitten hands, two three-toed feet, and one tail remain readable; palette, feeding pose, and front-three-quarter diagonal composition are distinct from S1."
+      }
+    },
+    "habitat-ecology": {
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "gallerySubrole": "nesting-ground-hypothesis",
+      "kind": "anatomy review",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-03T12:25:05.482Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "reference-guided generation followed by a precise bilateral-forehand edit",
+      "seed": "not exposed by generator",
+      "callId": "exec-151345fa-fdec-43d2-93f3-9a634503902b",
+      "sourceCallId": "exec-335f3d80-eefa-4269-8d6c-41b5e1549fd5",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-151345fa-fdec-43d2-93f3-9a634503902b.png",
+      "approvedProjectPath": "assets/dinosaurs/maiasaura-peeblesorum-two-medicine-nesting-ground-egg-hypothesis-portrait-imagegen-v1.png",
+      "sha256": "3C4E211F17D2C9CE4399A76C8EAA11B0974BBDE39E7634900DDF5D86A5C030FD",
+      "bytes": 2882242,
+      "dimensions": "1122x1402",
+      "referenceImages": [
+        "assets/dinosaurs/maiasaura-peeblesorum-low-transverse-crest-representative-imagegen-v1.png"
+      ],
+      "promptOutputDivergence": "The source prompt requested eight eggs, but the rendered scene contains nine. The app caption intentionally says only '여러 알'; egg count is not presented as a biological fact.",
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: portrait-native Dino Atlas nesting-ground hypothesis scene for Korean children ages 5-14",
+        "Input image: Image 1 is the approved adult Maiasaura peeblesorum identity, anatomy, body-proportion, palette, and marking reference. Create a new original scene and pose; do not copy its background or exact composition.",
+        "Primary request: create one warm but scientifically restrained symbolic “good mother dinosaur” image using exactly ONE adult Maiasaura and ONE shallow nest containing exactly EIGHT separate, intact eggs. There are NO juveniles, hatchlings, predators, or other animals. The adult stands calmly one full body length upslope and behind the nest, full body visible, head raised and looking outward across the floodplain rather than down at the eggs. No touching, feeding, brooding, sheltering, cuddling, or anthropomorphic smile. This is a nesting-ground reconstruction, not direct proof that this exact adult guarded this exact nest.",
+        "Adult anatomy: preserve Image 1’s broad closed toothless duck bill; LOW, SMOOTH, BROAD TRANSVERSE SOLID crest across the rear skull roof; thick neck; deep hadrosaur torso; exactly TWO forelimbs attached at the chest with compact padded mitten-like hands; exactly TWO hind limbs attached at the pelvis with exactly THREE broad main toes per hind foot; and exactly ONE complete pelvis-origin stiff tail. Exactly four limbs total. No dangling appendage, fused feet, hidden limb attachment, extra claw, or forked tail.",
+        "Composition: PORTRAIT 4:5 mobile-first framing. The nest and eight clearly separated eggs occupy the lower foreground. A broad band of empty silt creates distance. The complete adult occupies the upper-middle background at a gentle rear three-quarter angle, from bill through all four feet to tail tip, with generous margins. Use a quiet triangular depth composition, not a horizontal broadside card.",
+        "Environment: Campanian Two Medicine Formation upland floodplain in Montana; compact ash-rich silt, low ferns and horsetails around—not covering—the nest, sparse irregular conifers, distant weathered badlands. No modern grass, no active eruption, no falling ash.",
+        "Style: original, copyright-safe, polished museum natural-history paleoart; anatomy-led, realistic weight and pebbled skin, warm and child-friendly without cartoon sentimentality, no named-artist imitation.",
+        "Lighting/palette: soft neutral-gold morning light. Adult retains smoky indigo-gray dorsum, muted mulberry side field, warm apricot shoulder patch, pale flax underside, irregular soft flank dapples, unbanded tail. Eggs are muted off-white with natural soil staining.",
+        "Constraints: exactly one animal total; exactly one adult Maiasaura; exactly one nest; exactly eight eggs. No juveniles, broken shells, embryos, text, labels, border, split panel, logo, watermark, signature, predator, combat, wounds, blood, carcass, gore, herd, modern animal, direct maternal-care claim, or fantasy anatomy."
+      ],
+      "correctionPrompt": [
+        "Use case: precise-object-edit",
+        "Asset type: corrected portrait Dino Atlas nesting-ground hypothesis scene",
+        "Input images: Image 1 is the approved Maiasaura hand-anatomy reference. Image 2 is the EDIT TARGET.",
+        "Primary request: Edit Image 2 ONLY at the adult Maiasaura's two forehands. Preserve every other pixel-level scene choice as closely as possible: vertical 4:5 canvas, one adult, exact pose, head, low transverse crest, broad bill, neck, torso, two forelimb attachments, two hind limbs and feet, one tail, landscape, lighting, nest position, and all NINE existing eggs. Do not add, remove, move, hatch, or change any egg. Do not add any animal.",
+        "Hand correction: replace each long dangling primate-like separated-finger hand with a SHORT, COMPACT, WEIGHT-BEARING HADROSAUR MITTEN. On each forelimb, central digits II–IV must be bound inside one smooth narrow soft-tissue pad, forming one continuous hoof-like mitten silhouette. No independently dangling fingers, no splayed claws, no knuckles, no human or ape hand, no elephant toenails. Keep both forehands distinct from each other and clearly attached to their existing forelimbs. They may hang naturally in the current walking pose, but each must read as a single compact pad shorter than the current finger cluster.",
+        "Strict invariants: exactly one adult animal; exactly two forelimbs and two corrected mitten forehands; exactly two hind limbs and two three-main-toe hind feet; exactly one complete tail; exactly one nest with nine intact eggs; no juveniles; no text, logo, watermark, border, blood, predator, feeding, touching, brooding, or guarding action."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-03T12:25:05.482Z",
+        "method": "Original-size primary and independent audit after eggs-only rebuilding and bilateral mitten correction, covering animal count, crest, bill, both hands, both feet, tail, nest separation, behavior boundary, and 4:5 mobile readability",
+        "result": "PASS only for S3 habitat-ecology/anatomy-review. Exactly one adult, two compact mitten forehands, two three-main-toe hind feet, one tail, a separate nest, and no direct care action are readable. It is prohibited from representative promotion."
+      }
+    }
+  },
+  "rejectedAttempts": [
+    {
+      "role": "representative",
+      "callId": "exec-46ca4064-9622-4d2d-abdd-0290f141da20",
+      "copiedToProject": false,
+      "reason": "Tall rounded crest, a thin fifth appendage below the belly, and elephant-like forehands. Used only as the private correction target."
+    },
+    {
+      "role": "color-pattern",
+      "callId": "exec-a2dc2dd2-6250-4f3c-b3c0-086e53376783",
+      "copiedToProject": false,
+      "reason": "Inherited the uncorrected head and appendage errors from the first representative reference and remained too close in pose."
+    },
+    {
+      "role": "color-pattern",
+      "callId": "exec-e5e4b5c0-83ce-4431-b00c-22f954bd0483",
+      "copiedToProject": false,
+      "reason": "Species identity and four-limb count were plausible, but hands and toes were soft and the palette and pose did not separate enough from S1."
+    },
+    {
+      "role": "habitat-ecology",
+      "callId": "exec-3e274d61-0248-4f50-ac0c-96f53069c6a4",
+      "copiedToProject": false,
+      "reason": "Adult extra claw-like appendage, oversized helmet-like crest, ambiguous juvenile limbs, and a looming direct-care pose."
+    },
+    {
+      "role": "habitat-ecology",
+      "callId": "exec-27abe114-5924-41f3-ad0d-52ee6b00dd31",
+      "copiedToProject": false,
+      "reason": "Behavioral distance and 4:5 composition improved, but the bill, mitten hands, hind toes, and juvenile appendages remained too ambiguous for anatomy review."
+    },
+    {
+      "role": "habitat-ecology",
+      "callId": "exec-c2354524-1abc-4026-82a7-0176d9d3b145",
+      "copiedToProject": false,
+      "reason": "Adult anatomy passed, but both nestlings had fused or untraceable folded limbs; retained outside the project only as a composition study."
+    },
+    {
+      "role": "habitat-ecology",
+      "callId": "exec-335f3d80-eefa-4269-8d6c-41b5e1549fd5",
+      "copiedToProject": false,
+      "reason": "Eggs-only composition and behavior boundary passed, but both adult forehands were long, separated, primate-like finger clusters. Used only as the private bilateral-hand correction target."
+    }
+  ]
+}

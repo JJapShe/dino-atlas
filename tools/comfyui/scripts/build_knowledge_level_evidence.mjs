@@ -190,6 +190,7 @@ const editorialCues = Object.freeze({
   "enigmacursor-mollyborthwickae": "최근 세분된 모리슨층 소형 조반류의 전문 종",
   "othnielosaurus-consors": "모리슨층 소형 조반류 분류사를 깊게 볼 때 만나는 종",
   "camptosaurus-dispar": "쥐라기 조각류를 관심 있게 확장할 때 안내되는 종",
+  "maiasaura-peeblesorum": "‘착한 엄마 공룡’ 별명과 둥지 이야기로 어린이 도감에서 반복되는 종",
   "parasaurolophus-walkeri": "뒤로 길게 뻗은 관 모양 볏의 대표 아이콘",
   "saurolophus-angustirostris": "단단한 머리 볏의 하드로사우루스류 도감 단골",
   "edmontosaurus-annectens": "후기 백악기 대형 오리주둥이 공룡의 도감 단골",
@@ -301,11 +302,11 @@ const json = `${JSON.stringify(artifact, null, 2)}\n`;
 fs.writeFileSync(JSON_OUT, json, "utf8");
 
 const markdown = [
-  "# 133개 분류군 지식 레벨 근거표",
+  `# ${taxa.length}개 분류군 지식 레벨 근거표`,
   "",
   "- 기준일: 2026-08-03",
   "- 대상: 한국어권 5~14세 Dino Atlas 사용자",
-  "- 행 수: 133개 분류군",
+  `- 행 수: ${taxa.length}개 분류군`,
   "- 기준 문서: [도감 친숙도 LV 판정 기준](knowledge-level-rubric.md)",
   "- 기계 판독본: [`knowledge-level-evidence-2026-08-03.json`](knowledge-level-evidence-2026-08-03.json)",
   "",

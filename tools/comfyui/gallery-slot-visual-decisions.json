@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-03T01:48:59.7551613Z",
-  "reviewBatch": "2026-08-03-lv1-portrait-coexistence-composition-batch-2",
-  "reviewMethod": "Original-size primary and independent review of two new LV1 S7 portrait coexistence scenes, including exact two-animal counts, complete limb-foot-tail silhouettes, species identity cues, non-contact separation, formation-level claim boundaries, and deliberately distinct compositionKey values. Both remain anatomy review only and are prohibited from representative promotion.",
-  "targetSlots": 805,
+  "generatedAt": "2026-08-03T12:25:05.482Z",
+  "reviewBatch": "2026-08-03-maiasaura-initial-gallery-1",
+  "reviewMethod": "Original-size primary and independent review of the new Maiasaura S1-S3 set, including low transverse crest, broad bill, exact limb-hand-foot-tail topology, palette and composition separation, portrait nesting-ground staging, copyright safety, and explicit evidence-versus-reconstruction boundaries. Only S1 is representative-eligible.",
+  "targetSlots": 808,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -7531,6 +7531,37 @@
         "reviewMethod": "Original-size corrected-draft inspection: both heads and crests, four hands, four feet, two pelvis-tail joins, body separation, breath separation, filament, and snow-exclusion checks",
         "reviewBatch": "2026-08-02-yutyrannus-cold-breath-richness-1",
         "reviewedAt": "2026-08-02T12:24:15.220Z"
+      }
+    },
+    "maiasaura-peeblesorum": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/maiasaura-peeblesorum-low-transverse-crest-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "The corrected full body passed one broad closed toothless bill, one low broad transverse solid crest, exactly two compact mitten forehands, two three-main-toe hind feet, and one complete pelvis-origin tail. It is the sole representative-eligible image in the initial set.",
+        "reviewMethod": "Original-size primary inspection plus independent species-identity, four-limb, bilateral-hand, bilateral-foot, and complete-tail audit after targeted crest, extra-appendage, and forehand correction",
+        "reviewBatch": "2026-08-03-maiasaura-initial-gallery-1",
+        "reviewedAt": "2026-08-03T12:05:48.362Z"
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/maiasaura-peeblesorum-celadon-blackberry-diagonal-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "reason": "The diagonal front-three-quarter feeding frame passed the Maiasaura head, crest, mitten, three-toed-foot, four-limb, and single-tail gates while adding a distinct graphite, celadon, blackberry, and ivory palette. It remains a review-hold color and composition variant, never a representative replacement.",
+        "reviewMethod": "Original-size full-frame inspection plus independent comparison against S1 for species identity, bilateral appendages, tail continuity, palette separation, pose, camera, and composition diversity",
+        "reviewBatch": "2026-08-03-maiasaura-initial-gallery-1",
+        "reviewedAt": "2026-08-03T12:12:01.638Z"
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/maiasaura-peeblesorum-two-medicine-nesting-ground-egg-hypothesis-portrait-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "gallerySubrole": "nesting-ground-hypothesis",
+        "claimBoundary": "Evidence supports nests, eggs, nest-bound juveniles, and colonial nesting. The depicted adult-nest association, maternity, attendance, guarding, palette, vegetation, weather, egg count, and exact moment are reconstructed; the scene must not imply direct feeding or proven maternal behavior and cannot be promoted to representative.",
+        "reason": "The corrected 4:5 portrait passed exactly one adult, two compact mitten forehands, two three-main-toe hind feet, one complete tail, a separate foreground nest, broad empty-ground separation, and no contact, feeding, brooding, or direct guarding action. It is approved only as an anatomy-review habitat scene.",
+        "reviewMethod": "Original-size primary and independent audit after an eggs-only composition rebuild and bilateral forehand correction, including adult anatomy, animal count, egg-nest separation, empty-ground distance, behavior boundary, and mobile portrait readability",
+        "reviewBatch": "2026-08-03-maiasaura-initial-gallery-1",
+        "reviewedAt": "2026-08-03T12:25:05.482Z"
       }
     }
   },

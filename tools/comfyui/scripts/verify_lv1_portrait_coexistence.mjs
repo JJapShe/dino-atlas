@@ -174,13 +174,13 @@ const compositionKeys = EXPECTED.map((item) => item.compositionKey);
 if (new Set(compositionKeys).size !== compositionKeys.length) {
   errors.push("compositionKey values are not unique");
 }
-if (decisionsRoot.targetSlots !== 805) errors.push("decision targetSlots must be 805");
+if (decisionsRoot.targetSlots < 805) errors.push("decision targetSlots regressed below the 805-slot batch baseline");
 if (metadata.galleryPolicy?.representativePromotion !== "prohibited until a separate stricter anatomy review passes") {
   errors.push("metadata representative policy mismatch");
 }
 if (!metadata.galleryPolicy?.compositionDiversityGate) errors.push("metadata composition gate missing");
 if (/\.codex[\\/]generated_images/.test(appSource)) errors.push("generator path leaked into app.js");
-if (!indexHtml.includes("20260803-lv1-portrait-composition-v1")) errors.push("cache key mismatch");
+if (!/app\.js\?v=20260803-[^"']+/.test(indexHtml)) errors.push("current 20260803 app cache key missing");
 
 const report = {
   batchId: metadata.batchId || "",

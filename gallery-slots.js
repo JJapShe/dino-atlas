@@ -5453,6 +5453,33 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     }
   ],
+  "maiasaura-peeblesorum": [
+    {
+      "source": "assets/dinosaurs/maiasaura-peeblesorum-low-transverse-crest-representative-imagegen-v1.png",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "phenotype": "canonical-a",
+      "habitatKey": "two-medicine-upland-floodplain",
+      "expectedKind": "count-level pass"
+    },
+    {
+      "source": "assets/dinosaurs/maiasaura-peeblesorum-celadon-blackberry-diagonal-pattern-imagegen-v1.png",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "phenotype": "variant-b",
+      "habitatKey": "two-medicine-upland-floodplain",
+      "expectedKind": "review hold"
+    },
+    {
+      "source": "assets/dinosaurs/maiasaura-peeblesorum-two-medicine-nesting-ground-egg-hypothesis-portrait-imagegen-v1.png",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "claimBoundary": "Evidence supports nests, eggs, nest-bound juveniles, and colonial nesting. The depicted adult-nest association, maternity, attendance, guarding, palette, vegetation, weather, egg count, and exact moment are reconstructed; the scene must not imply direct feeding or proven maternal behavior and cannot be promoted to representative.",
+      "phenotype": "canonical-a",
+      "habitatKey": "two-medicine-nesting-ground",
+      "expectedKind": "anatomy review"
+    }
+  ],
   "parasaurolophus-walkeri": [
     {
       "source": "assets/dinosaurs/parasaurolophus-walkeri-dinosaurpark-lowcrest-mittenmanus-representative-imagegen-v2.png",
