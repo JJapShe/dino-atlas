@@ -761,7 +761,7 @@ const dinosaurs = [
     diet: "어식/소형동물",
     region: "유럽",
     length: 1.2,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6장 문헌 검수",
     summary:
@@ -875,7 +875,7 @@ const dinosaurs = [
     diet: "초식 가능성(가설)",
     region: "남아메리카",
     length: 3.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6슬롯 해부 검수 완료",
     summary:
@@ -2490,7 +2490,7 @@ const dinosaurs = [
     imageSlots: 6,
     reviewStatus: "해부학 재검수",
     summary:
-      "후기 캄파니아기 상부 Dinosaur Park 층의 켄트로사우루스아과 각룡류입니다. 성체의 뒤쪽으로 완만히 휘는 큰 코뿔 하나, 낮고 둥근 눈 위 돌기, 좌우 p3-p5의 긴 프릴 가시 세 쌍을 핵심으로 검수합니다.",
+      "후기 캄파니아기 상부 Dinosaur Park 층의 센트로사우루스아과 각룡류입니다. 성체의 뒤쪽으로 완만히 휘는 큰 코뿔 하나, 낮고 둥근 눈 위 돌기, 좌우 p3-p5의 긴 프릴 가시 세 쌍을 핵심으로 검수합니다.",
     features: {
       코뿔: "성체에서도 뒤쪽으로 완만히 휘는 큰 코뿔 하나",
       눈위: "긴 눈썹뿔 대신 낮고 둥근 눈 위 돌기",
@@ -2542,7 +2542,8 @@ const dinosaurs = [
   {
     id: "centrosaurus-apertus",
     name: "Centrosaurus apertus",
-    koreanName: "켄트로사우루스",
+    koreanName: "센트로사우루스",
+    aliases: ["켄트로사우루스"],
     clade: "Ornithischia",
     family: "Ceratopsidae",
     era: "cretaceous",
@@ -2641,7 +2642,7 @@ const dinosaurs = [
     diet: "초식",
     region: "북아메리카",
     length: 6.8,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "6장 역할 확장 검수",
     summary:
@@ -2891,7 +2892,7 @@ const dinosaurs = [
     diet: "초식",
     region: "북아메리카",
     length: 5.0,
-    knowledgeLevel: 2,
+    knowledgeLevel: 3,
     imageSlots: 6,
     reviewStatus: "신규 후보",
     summary:
@@ -16670,7 +16671,7 @@ const generatedImageSamples = {
   "centrosaurus-apertus": [
     {
       kind: "count-level pass",
-      title: "켄트로사우루스 앞굽은 코뿔·P1/P2 전신 대표",
+      title: "센트로사우루스 앞굽은 코뿔·P1/P2 전신 대표",
       body: "성체 한 개체의 전신을 이용해 앞으로 굽는 코뿔 하나, 낮은 눈 위 돌기, 중앙선 바로 좌우의 큰 P1 갈고리 한 쌍과 그 바깥의 더 작은 안굽은 P2 한 쌍, 두 앞다리·두 뒷다리·네 발과 한 꼬리를 확인합니다. 프릴은 피부로 이어진 짧은 실체형 표면이며 중앙 갈고리 하나나 스티라코사우루스식 방사형 가시로 단순화하지 않습니다.",
       source: "assets/dinosaurs/centrosaurus-apertus-procurved-nasalhorn-p1-p2-representative-imagegen-v1.png",
       variant: "앞굽은 코뿔·P1/P2 전신 대표 이미지 생성 v1",
@@ -16682,7 +16683,7 @@ const generatedImageSamples = {
     },
     {
       kind: "review hold",
-      title: "켄트로사우루스 이끼·황토·청록 무늬 변이",
+      title: "센트로사우루스 이끼·황토·청록 무늬 변이",
       body: "같은 성체 해부 구조에 이끼·지의류색 바탕, 절제된 황토색 어깨 안장, 꼬리 기부의 끊긴 차콜 띠, 작은 청록색 뺨 패치와 녹슨색 프릴 가장자리를 적용한 무늬 변이입니다. 두 P1과 두 P2, 앞으로 굽는 코뿔과 네 발은 유지하며 정확한 체색은 복원 가설로 둡니다.",
       source: "assets/dinosaurs/centrosaurus-apertus-moss-ochre-teal-pattern-imagegen-v1.png",
       variant: "이끼·황토·청록 무늬 이미지 생성 v1",
@@ -16694,7 +16695,7 @@ const generatedImageSamples = {
     },
     {
       kind: "anatomy review",
-      title: "켄트로사우루스 비 온 뒤 숲 가장자리 저층 섭식",
+      title: "센트로사우루스 비 온 뒤 숲 가장자리 저층 섭식",
       body: "비가 갠 공룡공원층 숲 가장자리에서 한 성체가 낮은 양치류와 속새 쪽으로 부리를 내린 일상 생태 장면입니다. 입 안에 먹이를 넣지 않아 특정 식물 섭취를 단정하지 않고, 두 앞다리·두 뒷다리와 네 발, 한 꼬리, 성체 P1/P2 배열을 젖은 식생과 겹치지 않게 확인했습니다.",
       source: "assets/dinosaurs/centrosaurus-apertus-postrain-forest-edge-browse-ecology-imagegen-v1.png",
       variant: "비 온 뒤 숲 가장자리 저층 섭식 이미지 생성 v1",
@@ -16706,7 +16707,7 @@ const generatedImageSamples = {
     },
     {
       kind: "anatomy review",
-      title: "켄트로사우루스 중앙 P1·P2 프릴 구조",
+      title: "센트로사우루스 중앙 P1·P2 프릴 구조",
       body: "높은 정면 사선에서 중앙 홈 바로 좌우의 큰 P1 두 개가 앞·아래로 프릴 위를 덮고, 그 바깥의 더 작은 P2 두 개가 중앙 쪽으로 굽는 순서를 보여 줍니다. 하나의 앞굽은 코뿔, 낮은 눈 위 돌기, 피부로 이어진 프릴 표면과 두 앞다리·두 앞발을 함께 확인하며, 측면의 낮은 돌기는 P3 이후의 작은 가장자리 장식으로 둡니다.",
       source: "assets/dinosaurs/centrosaurus-apertus-medial-p1-p2-frillhook-anatomy-imagegen-v1.png",
       variant: "중앙 P1·P2 프릴 구조 이미지 생성 v1",
@@ -16718,7 +16719,7 @@ const generatedImageSamples = {
     },
     {
       kind: "anatomy review",
-      title: "켄트로사우루스 수로 분리 하드로사우루스류 공존",
+      title: "센트로사우루스 수로 분리 하드로사우루스류 공존",
       body: "넓은 수로의 가까운 둑을 걷는 한 성체와 반대편 먼 둑의 하드로사우루스류 한 개체를 완전히 분리한 장면입니다. 주 개체는 두 앞다리·두 뒷다리·네 발과 한 꼬리, 앞으로 굽는 코뿔과 성체 P1/P2를 유지합니다. 같은 화면 배치는 지층 동물상 공존 복원일 뿐 직접 만남이나 상호작용의 증거가 아닙니다.",
       source: "assets/dinosaurs/centrosaurus-apertus-channel-separated-hadrosaurid-interaction-imagegen-v1.png",
       variant: "수로 분리 하드로사우루스류 공존 이미지 생성 v1",
@@ -16730,7 +16731,7 @@ const generatedImageSamples = {
     },
     {
       kind: "anatomy review",
-      title: "켄트로사우루스 분리된 성체·아성체 두개 장식 성장",
+      title: "센트로사우루스 분리된 성체·아성체 두개 장식 성장",
       body: "서로 다른 마른 진흙 지면에 성체와 더 작은 아성체를 떨어뜨려 둔 성장 단계 비교입니다. 성체는 앞굽은 큰 코뿔과 발달한 P1/P2를, 아성체는 짧고 거의 곧은 코뿔과 낮은 P1/P2 돌기만 보이며 두 개체는 각각 네 팔다리·네 발·한 꼬리를 유지합니다. 함께 보이는 것은 성장 비교 구성일 뿐 가족군, 무리나 부모 돌봄의 증거가 아닙니다.",
       source: "assets/dinosaurs/centrosaurus-apertus-separated-adult-subadult-ontogeny-imagegen-v1.png",
       variant: "분리된 성체·아성체 두개 장식 성장 이미지 생성 v1",
@@ -16742,7 +16743,7 @@ const generatedImageSamples = {
     },
     {
       kind: "count-level pass",
-      title: "켄트로사우루스 큰 코뿔/프릴 갈고리 대표 후보 v1",
+      title: "센트로사우루스 큰 코뿔/프릴 갈고리 대표 후보 v1",
       body: "구형 비교용 탈락 후보입니다. 코뿔이 성체의 앞굽은 방향을 충분히 유지하지 못하고 프릴 장식이 중앙 갈고리 하나로 단순화되어, 중앙선 바로 좌우의 P1 한 쌍과 그 바깥 P2 한 쌍이라는 성체 배열을 통과하지 못했습니다.",
       source: "assets/dinosaurs/centrosaurus-apertus-nasalhorn-frillhook-imagegen-v1.png",
       variant: "큰 코뿔/프릴 갈고리 이미지 생성 v1",
@@ -16750,7 +16751,7 @@ const generatedImageSamples = {
     },
     {
       kind: "review hold",
-      title: "켄트로사우루스 황토-청록 무늬 변형 v1",
+      title: "센트로사우루스 황토-청록 무늬 변형 v1",
       body: "구형 비교용 탈락 후보입니다. 색 배치는 참고 가능하지만 큰 프릴 돌기가 세로로 솟고 P1/P2의 중앙-바깥 순서와 굽는 방향이 안정적이지 않아, 새 무늬 슬롯으로 대체했습니다.",
       source: "assets/dinosaurs/centrosaurus-apertus-ochre-teal-pattern-imagegen-v1.png",
       variant: "황토-청록 무늬 이미지 생성 v1",
@@ -16758,7 +16759,7 @@ const generatedImageSamples = {
     },
     {
       kind: "anatomy review",
-      title: "켄트로사우루스 범람원 무리 생태 장면 v1",
+      title: "센트로사우루스 범람원 무리 생태 장면 v1",
       body: "구형 비교용 탈락 후보입니다. 주 개체와 배경 무리에서 성체 P1/P2 갈고리가 사라지고 코뿔 방향과 배경 개체 해부가 불안정해, 일상 생태 슬롯에서 제외했습니다.",
       source: "assets/dinosaurs/centrosaurus-apertus-floodplain-herd-ecology-imagegen-v1.png",
       variant: "범람원 무리 생태 이미지 생성 v1",
@@ -16766,7 +16767,7 @@ const generatedImageSamples = {
     },
     {
       kind: "review hold",
-      title: "켄트로사우루스 주디스리버 초지 보행 v2",
+      title: "센트로사우루스 주디스리버 초지 보행 v2",
       body: "구형 비교용 탈락 후보입니다. 코뿔이 뒤쪽으로 휘고 눈 위 돌기가 과장됐으며 프릴 중앙에 단일 돌기만 있어 성체 Centrosaurus의 P1/P2 배열을 통과하지 못했습니다.",
       source: "assets/dinosaurs/centrosaurus-apertus-judith-river-meadow-walk-imagegen-v2.png",
       variant: "주디스리버 초지 보행 이미지 생성 v2",
@@ -21658,6 +21659,7 @@ function matchesNonClassificationFilters(dino) {
   const text = [
     dino.name,
     dino.koreanName,
+    ...(dino.aliases || []),
     dino.rootClade,
     dino.clade,
     dino.family,
@@ -24437,7 +24439,7 @@ const identityChecklists = {
   ],
   "styracosaurus-albertensis": [
     "문헌 기준: Holmes et al. 2020 두개골 변이, Brown et al. 2020 성장 단계, Holmes & Ryan 2013 후두골격, Senter & Mackey 2023 앞다리 자세",
-    "성체의 코뿔은 하나이며 크게 자라지만 끝이 뒤쪽 프릴 방향으로 완만히 휘고, 켄트로사우루스식 앞굽이 코뿔로 바뀌지 않음",
+    "성체의 코뿔은 하나이며 크게 자라지만 끝이 뒤쪽 프릴 방향으로 완만히 휘고, 센트로사우루스식 앞굽이 코뿔로 바뀌지 않음",
     "눈 위 돌기는 성장 전반에 낮고 둥글며 성체에서 더 흡수되므로 트리케라톱스식 긴 눈썹뿔이 없음",
     "큰 프릴 가시는 보통 좌우 p3-p5의 세 개씩 여섯 개이며 뒤쪽·뒤가쪽으로 뻗고, p1-p2 크기와 방향은 개체 변이가 큼",
     "살아 있는 프릴은 피부로 이어져 외부로 열린 창이 보이지 않으며, 긴 가시는 원형 판타지 왕관이 아니라 뒤쪽 가장자리에 집중됨",
@@ -25463,7 +25465,7 @@ const visualVariationProfiles = {
     pattern: "어깨와 옆구리의 성긴 이끼색 끊김 얼룩, 진사색 프릴의 네다섯 개 좁은 청록 방사 막대, 무늬 없는 꼬리; 여섯 장은 같은 개체군 모티프를 유지하되 방향·시점·날씨·개체 수를 반복하지 않음",
     texture: "무광 자갈질 비늘, 각질 홈이 있는 코뿔과 프릴 가시, 연속된 비늘 피부로 덮인 프릴, 젖은 장면에서만 하단 다리에 국소 실트",
     anatomy: "뒤로 완만히 휘는 큰 코뿔 하나, 낮고 둥근 눈 위 돌기, 좌우 p3-p5의 긴 가시 세 쌍과 작은 p1-p2, 두개골에 붙은 피부 덮인 프릴, 낮고 긴 몸, 네 다리와 한 꼬리, 몸 가까운 팔꿈치와 교차 회내하지 않은 아래팔",
-    avoid: "앞쪽으로 굽은 켄트로사우루스식 코뿔, 트리케라톱스식 긴 눈썹뿔, 열린 프릴 창, 좌우 세 쌍을 넘는 긴 가시 왕관, 코뿔소형 몸과 포유류 코, 어깨 부착 프릴, 발굽발, 여분 다리·발·얼굴뿔, 잘린·갈라진 꼬리, 개체 융합",
+    avoid: "앞쪽으로 굽은 센트로사우루스식 코뿔, 트리케라톱스식 긴 눈썹뿔, 열린 프릴 창, 좌우 세 쌍을 넘는 긴 가시 왕관, 코뿔소형 몸과 포유류 코, 어깨 부착 프릴, 발굽발, 여분 다리·발·얼굴뿔, 잘린·갈라진 꼬리, 개체 융합",
   },
   "protoceratops-andrewsi": {
     color: "대표형은 마른 세이지·청회색 몸, 광물성 크림색 배와 부리, 절제된 적갈색 볼과 프릴 테두리, 차콜 점무늬; 변이형은 짙은 페트롤 등, 청자회색 옆구리, 녹슨빛 볼, 옅은 반점과 인디고 꼬리 띠",
@@ -26441,7 +26443,7 @@ const generationRouteGuides = {
     route: "새 대표 측면 전신으로 뒤굽이 코뿔, 근측 p3-p5 세 가시, 낮은 눈 위 돌기, 네 다리와 한 꼬리를 먼저 고정합니다. 좌우 전체 가시 수는 뒤쪽 고각 구조 참고에서 세 쌍으로 확인하고, 같은 흑연·이끼·진사·광물 청록 개체군 모티프를 고각 무늬, 포인트바 채식, 수로 분리 동물상, 공간 분리 성장 비교에 유지합니다. 다개체 장면은 머리·다리·꼬리를 개체별로 다시 세고 접촉 행동을 주장하지 않습니다.",
     control: "assets/dinosaurs/styracosaurus-albertensis-recurved-nasalhorn-p3-p5-representative-imagegen-v2.png",
     pass: "전신 측면·고각 무늬·저각 채식·뒤쪽 프릴 구조·수로 분리 공존·성체/아성체 비교 | 성체의 뒤로 완만히 휘는 코뿔 하나 | 낮고 둥근 눈 위 돌기 | 좌우 p3-p5 긴 가시 세 쌍 | 작은 p1-p2 변이 | 피부로 덮여 배경이 관통하지 않는 프릴 | 낮고 긴 사족보행 몸 | 정확히 두 앞다리·두 뒷다리·한 꼬리 | 몸 가까운 팔꿈치와 교차 회내하지 않은 아래팔 | 저경사 하천·포인트바·범람원",
-    reject: "앞쪽으로 굽은 코뿔, 긴 트리케라톱스식 눈썹뿔, 켄트로사우루스식 큰 p1-p2 갈고리, 열린 프릴 창, 세 쌍보다 많거나 적은 긴 가시, 원형 판타지 왕관, 코뿔소형 가슴·포유류 코, 발굽발·코끼리발, 여분 다리·중복 발·얼굴뿔, 숨은 발, 잘린·갈라진 꼬리, 개체 융합, 직접 접촉·상처·유혈이 생기면 탈락",
+    reject: "앞쪽으로 굽은 코뿔, 긴 트리케라톱스식 눈썹뿔, 센트로사우루스식 큰 p1-p2 갈고리, 열린 프릴 창, 세 쌍보다 많거나 적은 긴 가시, 원형 판타지 왕관, 코뿔소형 가슴·포유류 코, 발굽발·코끼리발, 여분 다리·중복 발·얼굴뿔, 숨은 발, 잘린·갈라진 꼬리, 개체 융합, 직접 접촉·상처·유혈이 생기면 탈락",
   },
   "protoceratops-andrewsi": {
     focus: "성체 사지골격과 연관 발자국으로 고정한 비각룡과 각룡류; 뒤로 뻗는 프릴·낮은 코 융기·두 앞손의 5지·두 뒷발의 기능성 4지·한 꼬리",
