@@ -10,6 +10,8 @@ const APP_JS = path.join(ROOT, "app.js");
 const INDEX_HTML = path.join(ROOT, "index.html");
 const RUBRIC = path.join(ROOT, "docs", "knowledge-level-rubric.md");
 const AUDIT = path.join(ROOT, "docs", "knowledge-level-audit-2026-08-03.md");
+const EVIDENCE_JSON = path.join(ROOT, "docs", "knowledge-level-evidence-2026-08-03.json");
+const EVIDENCE_MARKDOWN = path.join(ROOT, "docs", "knowledge-level-evidence-2026-08-03.md");
 
 function extractLiteral(source, name) {
   const marker = `const ${name} =`;
@@ -53,6 +55,8 @@ const source = fs.readFileSync(APP_JS, "utf8");
 const html = fs.readFileSync(INDEX_HTML, "utf8");
 const rubric = fs.readFileSync(RUBRIC, "utf8");
 const audit = fs.readFileSync(AUDIT, "utf8");
+const evidence = JSON.parse(fs.readFileSync(EVIDENCE_JSON, "utf8"));
+const evidenceMarkdown = fs.readFileSync(EVIDENCE_MARKDOWN, "utf8");
 const dinosaurs = vm.runInNewContext(`(${extractLiteral(source, "dinosaurs")})`, Object.create(null), {
   timeout: 5000,
 });
@@ -87,6 +91,126 @@ const expectedDistribution = { 1: 19, 2: 27, 3: 39, 4: 48 };
 for (const [level, expected] of Object.entries(expectedDistribution)) {
   if (distribution[level] !== expected) {
     fail(`LV${level} expected ${expected}, found ${distribution[level]}`);
+  }
+}
+
+const expectedEvidenceSignals = {
+  1: {
+    familiarity: "iconic",
+    bookExposure: "cross-channel-recurring",
+    namingAccessibility: "immediate",
+    catalogStatus: "major-icon",
+  },
+  2: {
+    familiarity: "well-known",
+    bookExposure: "recurring",
+    namingAccessibility: "recognizable-with-cue",
+    catalogStatus: "major-recurring",
+  },
+  3: {
+    familiarity: "interest-led",
+    bookExposure: "occasional",
+    namingAccessibility: "needs-guidance",
+    catalogStatus: "supporting",
+  },
+  4: {
+    familiarity: "specialist",
+    bookExposure: "limited",
+    namingAccessibility: "specialist-name",
+    catalogStatus: "minor-specialist",
+  },
+};
+
+if (evidence?.schemaVersion !== 1) fail(`Evidence schemaVersion expected 1, found ${evidence?.schemaVersion}`);
+if (evidence?.baselineDate !== "2026-08-03") {
+  fail(`Evidence baselineDate expected 2026-08-03, found ${evidence?.baselineDate || "missing"}`);
+}
+if (!Array.isArray(evidence?.limitations) || evidence.limitations.length < 4) {
+  fail("Evidence limitations must describe at least four rubric boundaries");
+}
+if (!Array.isArray(evidence?.taxa)) {
+  fail("Evidence taxa must be an array");
+} else {
+  if (evidence.taxa.length !== dinosaurs.length) {
+    fail(`Evidence expected ${dinosaurs.length} rows, found ${evidence.taxa.length}`);
+  }
+
+  const evidenceById = new Map();
+  for (const row of evidence.taxa) {
+    if (!row?.id) {
+      fail("Evidence row without id");
+      continue;
+    }
+    if (evidenceById.has(row.id)) fail(`Duplicate evidence id: ${row.id}`);
+    evidenceById.set(row.id, row);
+
+    const dino = byId.get(row.id);
+    if (!dino) {
+      fail(`Evidence id is not in app.js: ${row.id}`);
+      continue;
+    }
+    if (row.knowledgeLevel !== dino.knowledgeLevel) {
+      fail(`Evidence level mismatch: ${row.id}=LV${row.knowledgeLevel}, app.js=LV${dino.knowledgeLevel}`);
+    }
+    if (row.scientificName !== dino.name) {
+      fail(`Evidence scientific name mismatch: ${row.id}`);
+    }
+    if (row.koreanName !== dino.koreanName) {
+      fail(`Evidence Korean name mismatch: ${row.id}`);
+    }
+    if (!Number.isInteger(row.order) || row.order < 1 || row.order > dinosaurs.length) {
+      fail(`Evidence order is invalid: ${row.id}=${row.order}`);
+    }
+    if (typeof row.editorialCue !== "string" || row.editorialCue.trim().length < 8) {
+      fail(`Evidence editorial cue is missing or too short: ${row.id}`);
+    }
+    if (typeof row.rationale !== "string" || row.rationale.trim().length < 30) {
+      fail(`Evidence rationale is missing or too short: ${row.id}`);
+    }
+    if (!row.rationale?.includes(row.koreanName) || !row.rationale?.includes(`LV${row.knowledgeLevel}`)) {
+      fail(`Evidence rationale must identify the taxon and level: ${row.id}`);
+    }
+
+    const expectedSignals = expectedEvidenceSignals[dino.knowledgeLevel];
+    if (!row.signals || typeof row.signals !== "object") {
+      fail(`Evidence signals are missing: ${row.id}`);
+    } else {
+      for (const [signal, expected] of Object.entries(expectedSignals)) {
+        if (typeof row.signals[signal] !== "string" || !row.signals[signal].trim()) {
+          fail(`Evidence signal is empty: ${row.id}.${signal}`);
+        } else if (row.signals[signal] !== expected) {
+          fail(`Evidence signal mismatch: ${row.id}.${signal}=${row.signals[signal]}, expected ${expected}`);
+        }
+      }
+    }
+  }
+
+  for (const dino of dinosaurs) {
+    if (!evidenceById.has(dino.id)) fail(`Missing evidence id: ${dino.id}`);
+  }
+
+  const evidenceOrders = evidence.taxa.map((row) => row.order);
+  if (new Set(evidenceOrders).size !== dinosaurs.length) fail("Evidence order values must be unique");
+  if (new Set(evidence.taxa.map((row) => row.editorialCue)).size !== dinosaurs.length) {
+    fail("Every evidence row must have a taxon-specific editorial cue");
+  }
+  if (new Set(evidence.taxa.map((row) => row.rationale)).size !== dinosaurs.length) {
+    fail("Every evidence row must have a taxon-specific rationale");
+  }
+  const expectedOrderIds = dinosaurs.map((dino) => dino.id);
+  const evidenceOrderIds = [...evidence.taxa]
+    .sort((a, b) => a.order - b.order)
+    .map((row) => row.id);
+  if (evidenceOrderIds.some((id, index) => id !== expectedOrderIds[index])) {
+    fail("Evidence rows do not preserve app.js taxon order");
+  }
+
+  const markdownIds = [...evidenceMarkdown.matchAll(/<code>([^<]+)<\/code>/g)].map((match) => match[1]);
+  if (markdownIds.length !== dinosaurs.length || new Set(markdownIds).size !== dinosaurs.length) {
+    fail(`Evidence Markdown expected ${dinosaurs.length} unique id rows, found ${markdownIds.length}`);
+  }
+  for (const dino of dinosaurs) {
+    if (!markdownIds.includes(dino.id)) fail(`Evidence Markdown is missing id: ${dino.id}`);
   }
 }
 
@@ -147,6 +271,12 @@ if (stylesCacheDate < "20260803" || appCacheDate < "20260803") {
 if (!rubric.includes("대상 생물: 133종") || !rubric.includes("LV2 27종 / LV3 39종")) {
   fail("Rubric baseline does not match the audited 133-taxon distribution");
 }
+if (
+  !rubric.includes("knowledge-level-evidence-2026-08-03.md") ||
+  !rubric.includes("knowledge-level-evidence-2026-08-03.json")
+) {
+  fail("Rubric does not link to both per-taxon evidence artifacts");
+}
 if (!audit.includes("변경: 4종") || !audit.includes("최종 분포: LV1 19 / LV2 27 / LV3 39 / LV4 48")) {
   fail("Audit summary does not match the expected decision set");
 }
@@ -188,6 +318,10 @@ const result = {
   distribution,
   levelSnapshotSha256,
   changedFromPreviousBaseline,
+  evidenceRows: Array.isArray(evidence?.taxa) ? evidence.taxa.length : 0,
+  evidenceUniqueCues: Array.isArray(evidence?.taxa)
+    ? new Set(evidence.taxa.map((row) => row.editorialCue)).size
+    : 0,
   centrosaurusSearchAliases: centrosaurus?.aliases || [],
   errors,
 };

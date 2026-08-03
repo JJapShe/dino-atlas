@@ -32,3 +32,4 @@ Dino Atlas의 `knowledgeLevel`은 5~14세 사용자가 공룡과 앱에 함께 �
 - 재검토 조건: 사용자 검색·열람 데이터, 연령별 테스트, 전시·교육 콘텐츠의 유의미한 변화가 생기면 종별 근거를 다시 검토한다.
 - 최초 전면 재분류 기록: [`knowledge-level-reclassification-2026-08-02.md`](knowledge-level-reclassification-2026-08-02.md)
 - 133종 재감사와 최신 근거: [`knowledge-level-audit-2026-08-03.md`](knowledge-level-audit-2026-08-03.md)
+- 133종 종별 편집 근거표: [`knowledge-level-evidence-2026-08-03.md`](knowledge-level-evidence-2026-08-03.md) / [JSON](knowledge-level-evidence-2026-08-03.json)
