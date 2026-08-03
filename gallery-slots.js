@@ -4351,7 +4351,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/almas-ukhaa-ash-apricot-unbanded-pattern-imagegen-v2.png",
+      "source": "assets/dinosaurs/almas-ukhaa-channel-separated-ceratopsian-context-imagegen-v2.png",
       "gallerySlot": 5,
       "galleryRole": "interaction",
       "phenotype": "canonical-a",
@@ -4359,7 +4359,7 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     },
     {
-      "source": "assets/dinosaurs/almas-ukhaa-channel-separated-ceratopsian-context-imagegen-v2.png",
+      "source": "assets/dinosaurs/almas-ukhaa-short-deep-skull-postrain-dune-slump-avoidance-imagegen-v3.png",
       "gallerySlot": 6,
       "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
@@ -4580,6 +4580,14 @@ window.gallerySlotAssignments = {
       "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "conifer-fern-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/triceratops-horridus-edmontosaurus-lower-hellcreek-portrait-ecology-imagegen-v2.png",
+      "gallerySlot": 7,
+      "galleryRole": "alternate-habitat-behavior",
+      "phenotype": "canonical-a",
+      "habitatKey": "lower-hell-creek-postrain-channel",
       "expectedKind": "anatomy review"
     }
   ],
@@ -5488,6 +5496,14 @@ window.gallerySlotAssignments = {
       "galleryRole": "social-growth-defense",
       "phenotype": "canonical-a",
       "habitatKey": "dinosaur-park-coastal-plain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/parasaurolophus-walkeri-centrosaurus-forest-scurve-portrait-ecology-imagegen-v3.png",
+      "gallerySlot": 7,
+      "galleryRole": "alternate-habitat-behavior",
+      "phenotype": "canonical-a",
+      "habitatKey": "lower-dinosaur-park-fern-woodland",
       "expectedKind": "anatomy review"
     }
   ],

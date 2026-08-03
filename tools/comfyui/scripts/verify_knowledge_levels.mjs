@@ -139,10 +139,9 @@ if (
 ) {
   fail("Visible level-filter explanation is missing");
 }
-if (
-  !html.includes("styles.css?v=20260803-knowledge-level-audit-v1") ||
-  !html.includes("app.js?v=20260803-knowledge-level-audit-v1")
-) {
+const stylesCacheDate = html.match(/styles\.css\?v=(\d{8})-[^"']+/)?.[1] || "";
+const appCacheDate = html.match(/app\.js\?v=(\d{8})-[^"']+/)?.[1] || "";
+if (stylesCacheDate < "20260803" || appCacheDate < "20260803") {
   fail("Knowledge-level release cache keys are stale");
 }
 if (!rubric.includes("대상 생물: 133종") || !rubric.includes("LV2 27종 / LV3 39종")) {

@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-03-lv1-portrait-coexistence-composition-batch-2",
+  "createdAt": "2026-08-03T01:48:59.7551613Z",
+  "purpose": "Add two portrait S7 ecology scenes for familiar LV1 taxa and exact-taxon LV2 formation contemporaries while deliberately separating composition families.",
+  "targetAudience": "ages 5-14",
+  "galleryPolicy": {
+    "slot": 7,
+    "role": "alternate-habitat-behavior",
+    "status": "anatomy review only",
+    "representativePromotion": "prohibited until a separate stricter anatomy review passes",
+    "interactionSafety": "non-graphic, spatially separated, no unsupported herd, partnership, chase, attack, or direct-meeting claim",
+    "compositionDiversityGate": "Each selected scene has a unique compositionKey. The Triceratops scene uses a high-oblique channel-depth diagonal; the Parasaurolophus scene uses a low forest camera, S-shaped trail, horizontal log, and Z-depth layers. Consecutive additions must not reuse either layout without a documented reason."
+  },
+  "copyrightSafety": {
+    "sourcePolicy": "Only original built-in image-generation outputs and project-internal generated identity assets were used as visual inputs.",
+    "externalEvidenceUse": "External links were used for factual anatomy, stratigraphic range, and formation context only, not as artwork or style references.",
+    "styleConstraint": "Every selected prompt prohibited imitation of a named artist.",
+    "licenseStatus": "Generated project assets; distribution remains governed by the project's terms and the image-generation account terms. No third-party artwork license is asserted."
+  },
+  "workflow": {
+    "generator": "OpenAI built-in image generation",
+    "seed": "not exposed by generator",
+    "selectionRule": "Only independent original-size anatomy passes were copied into assets/dinosaurs. The initial Parasaurolophus river composition was removed from the project after the user requested wider composition variety; failed forest attempts remain only in the generator output area.",
+    "reviewSeparation": "Slot approval is anatomy-review publication only and is not a representative-image promotion."
+  },
+  "records": {
+    "triceratops-horridus": {
+      "companionTaxon": "edmontosaurus-annectens",
+      "focalLevel": 1,
+      "companionLevel": 2,
+      "projectAsset": "assets/dinosaurs/triceratops-horridus-edmontosaurus-lower-hellcreek-portrait-ecology-imagegen-v2.png",
+      "dimensions": "1003x1568",
+      "bytes": 2900485,
+      "sha256": "dac6eb1a1c067631ce5ea8858e58a36ed2ab2c54bfde1cf250d6ed0f0085bfe8",
+      "compositionKey": "portrait-channel-depth-diagonal",
+      "compositionDescription": "High-oblique portrait depth split with a large lower foreground Triceratops, a small upper-bank Edmontosaurus, and a broad channel as negative space.",
+      "generatorCallId": "exec-6073209d-2333-472d-b3ea-8febc4a168d0",
+      "generatorOriginal": "C:\\Users\\USER\\.codex\\generated_images\\019fbda2-6313-7010-a45d-5c6c6e3f5169\\exec-6073209d-2333-472d-b3ea-8febc4a168d0.png",
+      "approvedProjectCopy": "assets/dinosaurs/triceratops-horridus-edmontosaurus-lower-hellcreek-portrait-ecology-imagegen-v2.png",
+      "generatedAt": "2026-08-03T01:32:10.7048166Z",
+      "parentCallId": "exec-6f0a23a1-51c6-4124-80b5-fcc692dd2758",
+      "prompt": "Create a NEW original portrait-oriented 4:5 naturalistic museum paleoart illustration for a dinosaur atlas for ages 5-14. Use the two attached project-owned generated images only as taxon identity references: the FIRST is Triceratops horridus and the SECOND is Edmontosaurus annectens. Do not copy their backgrounds or compositions.\n\nScene: latest Cretaceous, lower Hell Creek Formation floodplain after a light rain. A shallow meandering channel and open point bar divide exactly TWO animals. Place one adult Triceratops horridus as the large lower-left foreground focal animal, in calm three-quarter side view. Place one adult Edmontosaurus annectens in the upper-right midground beyond the water, clearly smaller only because of distance. Both animals are quietly aware of the landscape, not of each other. This is a cautious formation-fauna coexistence reconstruction, not a herd, partnership, chase, attack, or documented meeting.\n\nStrict composition: vertical 4:5 frame, strong lower-left to upper-right diagonal, exactly two dinosaurs total, both complete from snout to tail tip, 8-10 percent clear margin around every body, every limb and foot readable, open water and empty ground separating the silhouettes, absolutely no overlap or contact.\n\nTriceratops horridus identity lock: two long brow horns plus exactly one much shorter nasal horn; closed hooked beak; solid skull-attached frill with no holes; adult frill margin low and flattened, not a bead crown or spike crown; low long dinosaur body, exactly two forelimbs and two hind limbs, separated non-hoof feet, one complete tail. Avoid rhinoceros or elephant anatomy.\n\nEdmontosaurus annectens identity lock: long low crestless skull, broad closed toothless duck bill, absolutely no tubular or bony head crest; deep hadrosaur body; low continuous soft midline ridge from neck along trunk, not a hump or sail; tiny restrained single row of tail spikes only behind the hips; exactly two mitten-like weight-bearing forehands, two hind limbs with broad three-hoof rear feet, and one complete stiff tail.\n\nEnvironment: conifers, ferns, horsetails, low flowering shrubs, wet silt and shallow water; no modern lawn grass. Cool slate, teal, muted rust and ochre palette; overcast light breaking through mist; readable child-friendly silhouettes. No dramatic combat, no running, no roaring, no wounds, no blood, no carcass, no extra animals, no extra or fused limbs, no duplicated feet, no cropped tails, no text, no labels, no logo, no watermark. Do not imitate any named artist.",
+      "correctionPrompt": "Edit the FIRST attached portrait paleoart candidate, preserving its exact vertical composition, river, lighting, landscape, foreground Triceratops horridus, color palette, full-body framing, and exactly-two-animal count. Use the SECOND attached image only as an anatomy reference for Edmontosaurus annectens.\n\nCorrect ONLY the distant upper-right Edmontosaurus limb readability. It must visibly have exactly TWO separate forelimbs ending in TWO separate compact mitten-like weight-bearing forehands, plus exactly TWO separate hind limbs ending in TWO separate broad three-hoof hind feet. Offset the far-side forelimb slightly so it is clearly visible behind the near-side forelimb without merging, duplicating, or adding a fifth limb. Keep its long low crestless skull, broad closed duck bill, low continuous soft neck-and-trunk midline ridge, tiny restrained tail-spike row only behind the hips, and one complete stiff tail. Keep the Edmontosaurus entirely on the far bank and fully separated from the Triceratops by open water. Do not change the Triceratops.\n\nExactly two dinosaurs total. No overlap, contact, chase, attack, blood, injury, carcass, extra limbs, fused legs, duplicated feet, cropped tail, text, label, logo, watermark, or named-artist imitation. Naturalistic museum paleoart for ages 5-14.",
+      "referenceInputs": [
+        {
+          "path": "assets/dinosaurs/triceratops-horridus-hell-creek-adult-frill-feet-anatomy-imagegen-v2.png",
+          "sha256": "45d7dd14337b5efd52bb01cc4a9e0e844c2768ddfc18c9f917ce2345275e847b",
+          "use": "Triceratops identity reference"
+        },
+        {
+          "path": "assets/dinosaurs/edmontosaurus-annectens-lance-softcrest-hooves-representative-imagegen-v1.png",
+          "sha256": "305313598716bc0696a60f64e564786ae1142d45f1fd51e1f6ce180728bb332b",
+          "use": "Edmontosaurus identity and correction reference"
+        }
+      ],
+      "scientificContext": {
+        "formation": "Hell Creek Formation, lower stratigraphic interval",
+        "localityOrMember": "formation-level reconstruction; no exact shared locality or moment is depicted",
+        "cooccurrenceConfidence": "moderate-high for overlapping lower Hell Creek stratigraphic ranges",
+        "interactionEvidence": "none; the scene depicts spatially separated coexistence only",
+        "evidenceSources": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC4104892/",
+          "https://doi.org/10.2110/palo.2017.060"
+        ]
+      },
+      "review": {
+        "status": "approved for S7 as anatomy review; not representative",
+        "method": "Primary and independent original-size full-frame inspection against both taxa's identity checklists.",
+        "passed": [
+          "exactly two complete animals separated by open water and empty ground",
+          "Triceratops with two brow horns, one shorter nasal horn, solid attached frill, four limbs, four feet, and one complete tail",
+          "Edmontosaurus with a long low crestless head, broad bill, four independently readable limbs and feet, and one complete tail",
+          "no contact, injury, blood, carcass, overlap, crop, text, logo, or watermark"
+        ],
+        "remainingRisks": [
+          "Triceratops reduced foredigits and the exact flattened frill-margin profile are not representative-grade at scene scale",
+          "Edmontosaurus mitten and hoof details are lower-confidence at the distant scale",
+          "must remain anatomy review and must not replace the representative"
+        ]
+      }
+    },
+    "parasaurolophus-walkeri": {
+      "companionTaxon": "centrosaurus-apertus",
+      "focalLevel": 1,
+      "companionLevel": 2,
+      "projectAsset": "assets/dinosaurs/parasaurolophus-walkeri-centrosaurus-forest-scurve-portrait-ecology-imagegen-v3.png",
+      "dimensions": "1003x1568",
+      "bytes": 3256137,
+      "sha256": "cdd22717e91c448494cb80237e486ad3e1e2167b81e45782cb32d6725862e13d",
+      "compositionKey": "portrait-low-forest-scurve-zdepth",
+      "compositionDescription": "Low forest camera with an S-shaped trail, a horizontal fallen log, a large mid-left Parasaurolophus, and an upper-right Centrosaurus on a separate terrace.",
+      "generatorCallId": "exec-d225f922-4f3f-4221-b736-2224657e4ea1",
+      "generatorOriginal": "C:\\Users\\USER\\.codex\\generated_images\\019fbda2-6313-7010-a45d-5c6c6e3f5169\\exec-d225f922-4f3f-4221-b736-2224657e4ea1.png",
+      "approvedProjectCopy": "assets/dinosaurs/parasaurolophus-walkeri-centrosaurus-forest-scurve-portrait-ecology-imagegen-v3.png",
+      "generatedAt": "2026-08-03T01:48:59.7551613Z",
+      "prompt": "Create a NEW original portrait-oriented 4:5 naturalistic museum paleoart illustration for a dinosaur atlas for ages 5-14. Use the two attached project-owned generated images only as taxon identity references: the FIRST is Parasaurolophus walkeri and the SECOND is Centrosaurus apertus. Do not copy their backgrounds or compositions.\n\nCreate a composition deliberately different from an opposite-river-bank diagonal scene. Scene: Late Cretaceous lower Dinosaur Park Formation, Alberta, in an open fern woodland on a raised levee after morning fog. No river or broad water channel; only damp soil, leaf litter, a few tiny puddles, ferns, horsetails, low flowering shrubs and conifers.\n\nComposition: low ground-level camera with a tall forest canopy, an S-shaped dry trail, and a layered Z-depth arrangement. Put one adult Parasaurolophus walkeri as the large mid-left foreground focal animal in a clean LEFT-TO-RIGHT lateral three-quarter view, calmly reaching toward a low shrub. Keep the neck only gently lowered so the full head and crest remain separate from the body. Stagger all four limbs so exactly two short forelimbs with two separate compact rounded mitten-like forehands and exactly two hind limbs with two separate three-main-toe feet are clearly visible. Show the complete tail tip with 8-10 percent empty margin.\n\nPut one adult Centrosaurus apertus in the upper-right midground on a slightly raised sunlit fern terrace, facing LEFT in a clean opposite-direction side three-quarter view. It is independently pausing, not looking at the Parasaurolophus. Stagger its exactly two forelimbs and two hind limbs so all four non-hoof feet are visible. Show its complete tail tip with empty margin. A low fallen conifer log and broad empty fern strip separate the depth layers, but NO tree, log, fern, body part, or shadow may cover either dinosaur's head, any limb, any foot, or any tail tip.\n\nExactly TWO dinosaurs total. Both full bodies are readable and spatially separated with no overlap or contact. Use the S-shaped trail, horizontal log, vertical tree trunks at the far frame edges, and alternating warm amber sun patches with cool fog to create a layered forest rhythm—not the previous high-oblique water split or straight lower-right-to-upper-left diagonal.\n\nParasaurolophus walkeri identity lock: broad closed toothless duck bill; one thick low tubular crest attached continuously to the skull, longer than the head and sweeping gently backward and slightly downward; thick neck; deep low hadrosaur body; exactly two short forelimbs with compact soft-tissue-bound mitten forehands, two strong hind limbs with three main toes, and one complete stiff tail held above ground. No teeth, no frill, no high hook, no extra crest, no skin sail.\n\nCentrosaurus apertus adult identity lock: exactly one large nasal horn curving forward; only short low brow bosses, never long Triceratops brow horns; short solid skin-covered frill with no holes; paired central P1 hooks curving forward/down and smaller outer paired P2 hooks curving inward; low remaining ornament, never a Styracosaurus spike fan; exactly four limbs, four separated non-hoof feet, and one complete tail. Avoid rhinoceros anatomy.\n\nWarm moss green, charcoal, muted russet and ochre palette, readable child-friendly silhouettes. No herd, family, partnership, migration claim, combat, running, roaring, wounds, blood, carcass, extra animals, extra or fused limbs, duplicated feet, cropped tails, text, labels, logo, watermark, or named-artist imitation.",
+      "referenceInputs": [
+        {
+          "path": "assets/dinosaurs/parasaurolophus-walkeri-dinosaurpark-lowcrest-mittenmanus-representative-imagegen-v2.png",
+          "sha256": "4b67aeca48a939a030eaad37fcf611ed3be2c502ac973b78a8f8547e6ca9b8ff",
+          "use": "Parasaurolophus identity reference"
+        },
+        {
+          "path": "assets/dinosaurs/centrosaurus-apertus-procurved-nasalhorn-p1-p2-representative-imagegen-v1.png",
+          "sha256": "110a95d54d4938b7087fea5039244aa19056d021f68ad012aec82746cdce4bf5",
+          "use": "Centrosaurus identity reference"
+        }
+      ],
+      "scientificContext": {
+        "formation": "Dinosaur Park Formation, lower stratigraphic interval",
+        "localityOrMember": "formation-level reconstruction; no exact shared locality or direct meeting is depicted",
+        "cooccurrenceConfidence": "moderate for overlapping lower Dinosaur Park Formation ranges",
+        "interactionEvidence": "none; the scene depicts independent habitat use in separate depth layers",
+        "evidenceSources": [
+          "https://rune.une.edu.au/web/handle/1959.11/27585",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC3933270/"
+        ]
+      },
+      "review": {
+        "status": "approved for S7 as anatomy review; not representative",
+        "method": "Primary and independent original-size full-frame inspection after rejecting two forest attempts and the anatomically acceptable but composition-repetitive river version.",
+        "passed": [
+          "composition differs from the channel-depth diagonal through a low forest camera, S-shaped trail, horizontal log, and Z-depth layers",
+          "exactly two complete and spatially separated animals",
+          "Parasaurolophus with a low long attached crest, broad closed bill, two forelimbs and rounded mitten silhouettes, two hind limbs and feet, and one complete tail",
+          "Centrosaurus with one forward-curving nasal horn, low brow bosses, short frill with P1/P2 direction cues, four limbs and feet, and one complete tail",
+          "no contact, overlap, crop, injury, blood, carcass, text, logo, or watermark"
+        ],
+        "remainingRisks": [
+          "internal digit structure of the raised Parasaurolophus mitten remains lower-confidence at scene scale",
+          "distant Centrosaurus P1/P2 detail is not representative-grade",
+          "must remain anatomy review and must not replace the representative"
+        ]
+      }
+    }
+  },
+  "rejectedAttempts": [
+    {
+      "taxonPair": "triceratops-horridus + edmontosaurus-annectens",
+      "generatorCallId": "exec-6f0a23a1-51c6-4124-80b5-fcc692dd2758",
+      "generatedAt": "2026-08-03T01:25:38.0898686Z",
+      "dimensions": "1003x1568",
+      "bytes": 3035091,
+      "sha256": "ec4f6a862dfc387bae29d16639e05571894ec31f18a03d31a3b0608ecf4cf5a2",
+      "copiedToProject": false,
+      "reason": "Anatomically acceptable but the distant Edmontosaurus forelimb separation was less immediately readable than the selected correction."
+    },
+    {
+      "taxonPair": "parasaurolophus-walkeri + centrosaurus-apertus",
+      "generatorCallId": "exec-225d1560-88b1-4dbb-85f6-5065aee1ef60",
+      "generatedAt": "2026-08-03T01:26:45.7991602Z",
+      "dimensions": "1003x1568",
+      "bytes": 3233030,
+      "sha256": "4fcc9f57e13c621786b4b06ae44306ca47c710fabf7a39951e13840a5bbd3e07",
+      "copiedToProject": false,
+      "reason": "Initial river version held for split Parasaurolophus fingers and was corrected, but the whole composition family was later rejected as too similar to the Triceratops channel-depth diagonal."
+    },
+    {
+      "taxonPair": "parasaurolophus-walkeri + centrosaurus-apertus",
+      "generatorCallId": "exec-9828930d-eb3b-4f9e-a3ae-592ac44562c6",
+      "generatedAt": "2026-08-03T01:33:44.9398272Z",
+      "dimensions": "1003x1568",
+      "bytes": 3108284,
+      "sha256": "76d3de39016cf3c68172d5fe3c102b9dfea006d5c6aa504488d7deb32e64fc31",
+      "copiedToProjectDuringReview": true,
+      "retainedInProject": false,
+      "reason": "Passed the anatomy-review gate after hand correction but was removed when the user requested richer composition variety because it repeated the same portrait river-bank diagonal family."
+    },
+    {
+      "taxonPair": "parasaurolophus-walkeri + centrosaurus-apertus",
+      "generatorCallId": "exec-b58b7fb4-4cc0-4378-847d-2987097f4926",
+      "generatedAt": "2026-08-03T01:44:25.1991925Z",
+      "dimensions": "1003x1568",
+      "bytes": 3251389,
+      "sha256": "c511280a49fc6a48e33d02e5109bc972b0f10cca14114d53f162bfa0f9820344",
+      "copiedToProject": false,
+      "reason": "Composition diversity passed, but only one Parasaurolophus forelimb was visible, the visible hand had long separated digits, and the Centrosaurus tail tip disappeared behind a tree."
+    },
+    {
+      "taxonPair": "parasaurolophus-walkeri + centrosaurus-apertus",
+      "generatorCallId": "exec-af9bb347-b115-43e9-ab27-afd57ee41079",
+      "generatedAt": "2026-08-03T01:47:03.6709926Z",
+      "dimensions": "1003x1568",
+      "bytes": 3152331,
+      "sha256": "9e9fbe0d134589e8853cabe377c9c22790397e724ba52cbedac6e6044a4da5df",
+      "copiedToProject": false,
+      "reason": "The edit preserved the forest composition but still failed to expose both Parasaurolophus forelimbs and did not restore a fully readable Centrosaurus tail tip."
+    }
+  ]
+}

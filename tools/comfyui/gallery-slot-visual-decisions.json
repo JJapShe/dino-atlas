@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-02T14:09:44.808Z",
-  "reviewBatch": "2026-08-02-quetzalcoatlus-ankle-membrane-correction-1",
-  "reviewMethod": "Original-size review of all six replacement Quetzalcoatlus slots, including full-frame wing, hind-limb, foot and tail counts; wrist crops distinguishing three free manual digits I-III from wing digit IV; bilateral same-side lower-leg and ankle membrane continuity; complete rounded wing tips; and explicit role separation. S1 alone is the count-level representative, S2 remains review hold, S3-S6 remain anatomy review, and S4 is structure-reference only. The lower-leg or ankle attachment is an Elgin-type conservative comparison hypothesis; exact Quetzalcoatlus wing soft tissue, uropatagium, colors and behavior remain unknown or reconstructed.",
-  "targetSlots": 803,
+  "generatedAt": "2026-08-03T01:48:59.7551613Z",
+  "reviewBatch": "2026-08-03-lv1-portrait-coexistence-composition-batch-2",
+  "reviewMethod": "Original-size primary and independent review of two new LV1 S7 portrait coexistence scenes, including exact two-animal counts, complete limb-foot-tail silhouettes, species identity cues, non-contact separation, formation-level claim boundaries, and deliberately distinct compositionKey values. Both remain anatomy review only and are prohibited from representative promotion.",
+  "targetSlots": 805,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -2943,55 +2943,55 @@
         "status": "approved",
         "source": "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-fullbody-imagegen-v18.png",
         "role": "representative",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "2026-08-03 re-audit passed the high shoulder and descending back line, longer forelimbs, rounded nasal mound, high-set nostril cue, exactly four limbs, and one pelvis-origin tail. It remains the sole representative control.",
+        "reviewMethod": "Original-size six-slot inspection for shoulder height, limb proportion, nasal mound, nostril position, four-limb count, pelvis-tail continuity, occlusion, and multi-animal separation",
+        "reviewBatch": "2026-08-03-brachiosaurus-gallery-anatomy-audit-1",
+        "reviewedAt": "2026-08-03T01:12:00.000Z"
       },
       "2": {
         "status": "approved",
         "source": "assets/dinosaurs/brachiosaurus-altithorax-slate-moss-pattern-imagegen-v1.png",
         "role": "color-pattern",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Retained only as a replace-first color-pattern review hold, not an anatomy pass. Four limbs and one tail are present, but the high point drifts toward the pelvis, forelimb dominance is weak, and the flat head with a forward low nostril loses the rounded nasal mound and high nostril identity cues.",
+        "reviewMethod": "Original-size six-slot inspection for shoulder height, limb proportion, nasal mound, nostril position, four-limb count, pelvis-tail continuity, occlusion, and multi-animal separation",
+        "reviewBatch": "2026-08-03-brachiosaurus-gallery-anatomy-audit-1",
+        "reviewedAt": "2026-08-03T01:12:00.000Z"
       },
       "3": {
         "status": "approved",
         "source": "assets/dinosaurs/brachiosaurus-altithorax-canopy-lowangle-lichen-pattern-ecology-imagegen-v1.png",
         "role": "habitat-ecology",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Retained only as habitat and composition anatomy review. The high front body, long forelimbs, and four limbs read well, but the small upturned head does not resolve the nasal mound and high nostril cue and the tail tip is hidden by foreground vegetation.",
+        "reviewMethod": "Original-size six-slot inspection for shoulder height, limb proportion, nasal mound, nostril position, four-limb count, pelvis-tail continuity, occlusion, and multi-animal separation",
+        "reviewBatch": "2026-08-03-brachiosaurus-gallery-anatomy-audit-1",
+        "reviewedAt": "2026-08-03T01:12:00.000Z"
       },
       "4": {
         "status": "approved",
         "source": "assets/dinosaurs/brachiosaurus-altithorax-highshoulder-shorttail-imagegen-v3.png",
         "role": "identity-anatomy",
-        "reason": "Passed species identity, anatomy, limb-count, palette, habitat, composition, and artifact review.",
-        "reviewMethod": "22 audit contact sheets plus original-size inspection of every flagged or replaced slot",
-        "reviewBatch": "2026-07-17-slot-audit",
-        "reviewedAt": "2026-07-17T04:56:32.666Z"
+        "reason": "Retained only as structural anatomy review. High shoulders, longer forelimbs, four limbs, and one tail are clear, but the nasal mound and high nostril cue are weak and the tail is longer and more slender than the filename suggests.",
+        "reviewMethod": "Original-size six-slot inspection for shoulder height, limb proportion, nasal mound, nostril position, four-limb count, pelvis-tail continuity, occlusion, and multi-animal separation",
+        "reviewBatch": "2026-08-03-brachiosaurus-gallery-anatomy-audit-1",
+        "reviewedAt": "2026-08-03T01:12:00.000Z"
       },
       "5": {
         "status": "approved",
         "source": "assets/dinosaurs/brachiosaurus-altithorax-conifer-browse-ecology-imagegen-v1.png",
         "role": "interaction",
-        "reason": "Original-size review confirmed one complete high-shouldered body, longer forelimbs, four pillar legs, and one continuous tail in a clear plant-browsing interaction; the nasal mound remains secondary, so this does not replace the representative.",
-        "reviewMethod": "original-size identity, limb-count, tail, high-shoulder, and role-diversity inspection",
-        "reviewBatch": "2026-07-26-richness-six-slot-batch-2",
-        "reviewedAt": "2026-07-26T03:49:27.000Z"
+        "reason": "Retained only as browsing-ecology anatomy review. High shoulders, forelimb dominance, four limbs, and one tail are readable, while the small lateral head leaves the nasal mound and high nostril cue unresolved and the tail remains long and slender.",
+        "reviewMethod": "Original-size six-slot inspection for shoulder height, limb proportion, nasal mound, nostril position, four-limb count, pelvis-tail continuity, occlusion, and multi-animal separation",
+        "reviewBatch": "2026-08-03-brachiosaurus-gallery-anatomy-audit-1",
+        "reviewedAt": "2026-08-03T01:12:00.000Z"
       },
       "6": {
         "status": "approved",
         "source": "assets/dinosaurs/brachiosaurus-altithorax-allosaurus-juvenile-defense-ecology-imagegen-v1.png",
         "role": "social-growth-defense",
-        "reason": "Original-size review confirmed a high-shouldered four-legged adult, a separate smaller brachiosaur, one tail per herbivore, and a spatially separated Allosaurus with no contact or gore; retained below the representative because the adult nasal mound is subtle.",
-        "reviewMethod": "original-size identity, limb-count, tail, body-separation, predator-separation, and non-graphic interaction inspection",
-        "reviewBatch": "2026-07-26-richness-six-slot-batch-2",
-        "reviewedAt": "2026-07-26T03:49:27.000Z"
+        "reason": "Retained only as multi-animal defense ecology review. The adult generally shows forelimb dominance, four limbs, and one tail, but its nasal mound is subtle; the smaller animal overlaps the adult legs so its limbs and tail cannot all be traced independently. No parentage, care, or observed defense behavior is claimed.",
+        "reviewMethod": "Original-size six-slot inspection for shoulder height, limb proportion, nasal mound, nostril position, four-limb count, pelvis-tail continuity, occlusion, and multi-animal separation",
+        "reviewBatch": "2026-08-03-brachiosaurus-gallery-anatomy-audit-1",
+        "reviewedAt": "2026-08-03T01:12:00.000Z"
       }
     },
     "stegosaurus-stenops": {
@@ -4834,21 +4834,21 @@
       },
       "5": {
         "status": "approved",
-        "source": "assets/dinosaurs/almas-ukhaa-ash-apricot-unbanded-pattern-imagegen-v2.png",
+        "source": "assets/dinosaurs/almas-ukhaa-channel-separated-ceratopsian-context-imagegen-v2.png",
         "role": "interaction",
-        "reason": "Short compact skull, two hind limbs, three readable support toes with a modest raised second-toe claw, and a single unbanded tail passed original-size inspection; palette is a reconstruction-only variation.",
-        "reviewMethod": "2026-08-01 original-size individual inspection against Pei et al. 2017 Almas skull gate",
-        "reviewBatch": "2026-08-01-richness-batch-84-almas",
-        "reviewedAt": "2026-08-01T07:00:00.000Z"
+        "reason": "The foreground Almas has one short compact head, two forelimbs, two hind limbs and feet, and one tail. A shallow channel spatially separates the distant unidentified ceratopsian-like animal; this is approved only as non-contact regional-fauna context and does not claim exact species identity, direct interaction, or same-moment co-occurrence.",
+        "reviewMethod": "2026-08-03 original-size anatomy, background-animal separation, and semantic role review against Pei et al. 2017 and Ukhaa Tolgod depositional context",
+        "reviewBatch": "2026-08-03-almas-slot-role-repair-1",
+        "reviewedAt": "2026-08-03T01:12:00.000Z"
       },
       "6": {
         "status": "approved",
-        "source": "assets/dinosaurs/almas-ukhaa-channel-separated-ceratopsian-context-imagegen-v2.png",
+        "source": "assets/dinosaurs/almas-ukhaa-short-deep-skull-postrain-dune-slump-avoidance-imagegen-v3.png",
         "role": "social-growth-defense",
-        "reason": "Foreground Almas retains one compact skull, two forelimbs, two hind limbs, readable feet, and one tail; the distant generic ceratopsian is spatial context only, not an interaction or species claim.",
-        "reviewMethod": "2026-08-01 original-size individual inspection against Pei et al. 2017 Almas skull gate",
-        "reviewBatch": "2026-08-01-richness-batch-84-almas",
-        "reviewedAt": "2026-08-01T07:00:00.000Z"
+        "reason": "The single full-body Almas retains a short relatively deep head, two separated forelimbs, two hind limbs and feet, and one complete unbanded tail. It remains several body lengths from a minor post-rain sand slump; the turn-away pose is a non-graphic defense or avoidance hypothesis, not fossil behavior evidence.",
+        "reviewMethod": "2026-08-03 original-size inspection of skull ratio, both forelimbs, both hind limbs and feet, pelvis-tail join, full tail tip, artifact count, and safe distance from the sand-slope change",
+        "reviewBatch": "2026-08-03-almas-slot-role-repair-1",
+        "reviewedAt": "2026-08-03T01:12:00.000Z"
       }
     },
     "gobivenator-mongoliensis": {
@@ -5091,6 +5091,15 @@
         "reviewMethod": "Original-size full-frame inspection plus isolated skull, adult-frill, forefoot, hindfoot, predator, and growth-stage crops",
         "reviewBatch": "2026-07-26-richness-six-slot-batch-7",
         "reviewedAt": "2026-07-26T06:19:15.675Z"
+      },
+      "7": {
+        "status": "approved",
+        "source": "assets/dinosaurs/triceratops-horridus-edmontosaurus-lower-hellcreek-portrait-ecology-imagegen-v2.png",
+        "role": "alternate-habitat-behavior",
+        "reason": "Approved only as a portrait anatomy-review coexistence scene: exactly two complete animals remain separated by the channel, while the lower Hell Creek range overlap is not presented as a herd, partnership, or documented direct meeting.",
+        "reviewMethod": "Primary and independent original-size full-frame inspection of both taxa, all limbs and feet, both complete tails, channel separation, crop margins, artifacts, and formation-level claim boundaries",
+        "reviewBatch": "2026-08-03-lv1-portrait-coexistence-composition-batch-2",
+        "reviewedAt": "2026-08-03T01:49:30.000Z"
       }
     },
     "torosaurus-latus": {
@@ -6109,6 +6118,15 @@
         "role": "social-growth-defense",
         "reason": "The separated adult and smaller juvenile provide a cautious genus-level crest-growth comparison with two independent bodies, four limbs and one tail per animal, and no family, parenting, sex, or herd claim.",
         "reviewMethod": "Parasaurolophus ontogeny caution plus original-size adult, juvenile, crest-stage, limb-count, and tail-separation inspection"
+      },
+      "7": {
+        "status": "approved",
+        "reviewBatch": "2026-08-03-lv1-portrait-coexistence-composition-batch-2",
+        "reviewedAt": "2026-08-03T01:49:30.000Z",
+        "source": "assets/dinosaurs/parasaurolophus-walkeri-centrosaurus-forest-scurve-portrait-ecology-imagegen-v3.png",
+        "role": "alternate-habitat-behavior",
+        "reason": "Approved only as a portrait anatomy-review coexistence scene: exactly two complete animals occupy separate forest depth layers, and the low-camera S-trail/log/Z-depth composition deliberately differs from the channel-bank diagonal.",
+        "reviewMethod": "Primary and independent original-size full-frame inspection of both taxa, all limbs and feet, both complete tails, log and fern separation, crop margins, artifacts, composition diversity, and formation-level claim boundaries"
       }
     },
     "saurolophus-angustirostris": {

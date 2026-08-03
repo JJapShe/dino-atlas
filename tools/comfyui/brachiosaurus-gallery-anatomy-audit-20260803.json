@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "auditId": "2026-08-03-brachiosaurus-gallery-anatomy-audit-1",
+  "taxonId": "brachiosaurus-altithorax",
+  "taxonName": "Brachiosaurus altithorax",
+  "reviewedAt": "2026-08-03T01:12:00.000Z",
+  "audienceBoundary": "Natural-history gallery for ages 5-14. Only a clear species-identity image may act as the representative; ecology and multi-animal scenes remain below it.",
+  "identityGate": [
+    "shoulders visibly higher than hips with the trunk descending toward the pelvis",
+    "forelimbs visibly longer than hind limbs",
+    "long neck rising forward-up from the high shoulder region",
+    "small head with a rounded nasal mound and high-set nostril cue",
+    "exactly two forelimbs, two hind limbs, and one pelvis-origin tail",
+    "avoid a low generic sauropod body, flat head, forward low nostril, and a long slender diplodocid whip tail"
+  ],
+  "sources": [
+    {
+      "title": "Brachiosaurus",
+      "publisher": "Natural History Museum, London",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/brachiosaurus.html",
+      "use": "Institutional identity cross-check"
+    },
+    {
+      "title": "The first Brachiosaurus",
+      "publisher": "Field Museum",
+      "url": "https://www.fieldmuseum.org/blog/first-brachiosaurus",
+      "use": "Institutional historical and anatomy context"
+    },
+    {
+      "title": "Dino Atlas Brachiosaurus reference checklist",
+      "path": "tools/comfyui/reference-checklist.md#brachiosaurus-altithorax",
+      "use": "Project-specific high-shoulder, forelimb, nasal-mound, nostril, limb-count, and tail gate"
+    }
+  ],
+  "method": "Independent original-size inspection of every currently assigned S1-S6 file for the high shoulder line, forelimb-to-hind-limb proportion, nasal mound, high nostril cue, exactly four limbs, one pelvis-origin tail, occlusion, and multi-animal separation.",
+  "summary": {
+    "pass": 1,
+    "hold": 4,
+    "fail": 1,
+    "representativePromotion": "S1 retained; no new promotion",
+    "replacementPriority": "S2 first"
+  },
+  "slots": {
+    "S1": {
+      "galleryRole": "representative",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-nasal-mound-fullbody-imagegen-v18.png",
+      "dimensions": "1536x1024",
+      "bytes": 3292330,
+      "sha256": "274866f397e23568d644e77415bc784813ec1b89b89d3e2009f6925fe4152858",
+      "result": "PASS",
+      "galleryDisposition": "retain as sole representative",
+      "reason": "High shoulders, descending back line, longer forelimbs, rounded nasal mound, high-set nostril cue, exactly four limbs, and one pelvis-origin tail are all readable. The nostril is somewhat emphasized but is not duplicated anatomy."
+    },
+    "S2": {
+      "galleryRole": "color-pattern",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-slate-moss-pattern-imagegen-v1.png",
+      "dimensions": "1561x1007",
+      "bytes": 2715498,
+      "sha256": "79537ec83213bd3bc97a8266cc6218b9d6d651973cb925ac466353e14260ce46",
+      "result": "FAIL",
+      "galleryDisposition": "retain only as replace-first review hold until a corrected S2 is approved; never use as a positive anatomy reference",
+      "reason": "Four limbs and one tail are present, but the torso high point reads toward the pelvis, forelimb dominance is weak, the head is flat, and the nostril sits too far forward and low. It reads as a generic sauropod rather than the S1 Brachiosaurus identity."
+    },
+    "S3": {
+      "galleryRole": "habitat-ecology",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-canopy-lowangle-lichen-pattern-ecology-imagegen-v1.png",
+      "dimensions": "1024x1536",
+      "bytes": 3226987,
+      "sha256": "bd422d0c5813e9e364510f6ff485ee669a4cd0734f73bd99c7e0b5165c450340",
+      "result": "HOLD",
+      "galleryDisposition": "retain only as habitat and composition review",
+      "reason": "The high front body, long forelimbs, and four limbs read well, but the small upturned head does not resolve the nasal mound and high nostril cue, and the tail tip disappears behind foreground vegetation."
+    },
+    "S4": {
+      "galleryRole": "identity-anatomy",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-highshoulder-shorttail-imagegen-v3.png",
+      "dimensions": "1570x1002",
+      "bytes": 2525535,
+      "sha256": "af0b2ea20a35e971ab7f6fc09e3990a87a393cf5afe52c899a7dcbf4feb84dcf",
+      "result": "HOLD",
+      "galleryDisposition": "retain only as structural comparison",
+      "reason": "High shoulders, longer forelimbs, four limbs, and one tail are clear, but the rounded nasal mound and high nostril cue are weak and the tail is longer and more slender than the filename suggests."
+    },
+    "S5": {
+      "galleryRole": "interaction",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-conifer-browse-ecology-imagegen-v1.png",
+      "dimensions": "1536x1024",
+      "bytes": 3167018,
+      "sha256": "bf52ba6b315ed245dbd96a0ce74f3ccc15988161ba19fd3e6ab51fdeee1ec7d9",
+      "result": "HOLD",
+      "galleryDisposition": "retain only as browsing-ecology review",
+      "reason": "High shoulders, forelimb dominance, four limbs, and one tail are readable. The small lateral head does not clearly establish the nasal mound and high nostril cue, and the tail remains long and slender."
+    },
+    "S6": {
+      "galleryRole": "social-growth-defense",
+      "source": "assets/dinosaurs/brachiosaurus-altithorax-allosaurus-juvenile-defense-ecology-imagegen-v1.png",
+      "dimensions": "1584x993",
+      "bytes": 2733298,
+      "sha256": "423e8c2f1f7d2a556126f337bce5b8fb586498604048cd65ac63cc66a6aecaea",
+      "result": "HOLD",
+      "galleryDisposition": "retain only as multi-animal defense ecology review",
+      "reason": "The adult generally shows forelimb dominance, four limbs, and one tail, but its nasal mound is subtle. The smaller animal overlaps the adult legs, so its limbs and tail cannot all be traced independently. No parentage, care, or observed defense behavior is claimed."
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-03-almas-slot-role-repair-1",
+  "taxonId": "almas-ukhaa",
+  "taxonName": "Almas ukhaa",
+  "createdAt": "2026-08-03T01:10:00.000Z",
+  "requestedVisualTrait": "Repair the S5 interaction and S6 social-growth-defense role-to-content mismatch while preserving the anatomy-approved short, relatively deep skull direction.",
+  "audienceBoundary": "Natural-history paleoart for ages 5-14. The S5 scene is non-contact regional-fauna context and the S6 scene is a non-graphic hypothetical avoidance response.",
+  "evidenceBoundary": {
+    "direct": [
+      "Pei et al. 2017 support a short, relatively deep, subtriangular skull with length-to-depth near 2.5:1, a large orbit, elongated naris, small teeth, a small body, and long lower legs.",
+      "Dingus et al. 2008 support eolian dunes, interdune settings, and episodic wet depositional contexts at Ukhaa Tolgod."
+    ],
+    "comparativeOrInferred": [
+      "Living hand and toe form, complete distal tail, short feather covering, and the exact external body outline use close-troodontid comparison.",
+      "The distant unidentified ceratopsian-like animal in S5 is regional visual context only and is not identified to species."
+    ],
+    "hypothetical": [
+      "Color, feather distribution, exact co-occurrence, vigilance, turning, and avoidance behavior are reconstruction hypotheses.",
+      "Loope et al. 1999 provide a depositional hypothesis for rain-related dune-slope collapse; the S6 animal's response is not fossil evidence."
+    ]
+  },
+  "copyrightSafety": {
+    "externalArtworkUsedForNewAsset": false,
+    "projectOwnedGeneratedReferencesOnly": true,
+    "namedArtistImitation": false,
+    "licenseStatus": "The new S6 file is a generated project asset. The reused S5 and deassigned palette file are preserved legacy generated project assets; their original generator call records were not recovered.",
+    "paperUse": "Scientific papers supplied factual anatomy, fauna, and depositional constraints only; no published figure or artwork was copied."
+  },
+  "sources": [
+    {
+      "title": "Osteology of a New Late Cretaceous Troodontid Specimen from Ukhaa Tolgod, Mongolia",
+      "authors": "Pei et al.",
+      "year": 2017,
+      "doi": "https://doi.org/10.1206/3889.1",
+      "use": "Almas anatomy and specimen-boundary constraints"
+    },
+    {
+      "title": "The Geology of Ukhaa Tolgod",
+      "authors": "Dingus et al.",
+      "year": 2008,
+      "doi": "https://doi.org/10.1206/442.1",
+      "use": "Ukhaa Tolgod depositional and environmental constraints"
+    },
+    {
+      "title": "Life and Death in a Late Cretaceous Dune Field, Nemegt Basin, Mongolia",
+      "authors": "Loope et al.",
+      "year": 1999,
+      "url": "https://eas2.unl.edu/~dloope/pdf/Lethal.pdf",
+      "use": "Rain-triggered dune-slope collapse hypothesis only"
+    }
+  ],
+  "promptEncoding": "Join promptLines with LF. The array preserves the exact prompt sent for the approved S6 output.",
+  "records": {
+    "deassigned-color-variant": {
+      "formerGallerySlot": 5,
+      "formerGalleryRole": "interaction",
+      "kind": "diagnostic only",
+      "status": "removed-from-fixed-slots",
+      "projectPath": "assets/dinosaurs/almas-ukhaa-ash-apricot-unbanded-pattern-imagegen-v2.png",
+      "sha256": "134673f270677626b3db2bcdcd4ff495ab05d551e55d63ec776726fb7a8da77e",
+      "bytes": 2288832,
+      "dimensions": "1536x1024",
+      "seed": "not available in preserved legacy record",
+      "prompt": "not available in preserved legacy record",
+      "notes": "The file is a single-animal palette variant, not an interaction. Original-size review also found the farther forelimb insufficiently separable. It remains only as hidden diagnostic history and is not an anatomy control."
+    },
+    "interaction-relocated": {
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "kind": "anatomy review",
+      "status": "approved-with-ecology-boundary",
+      "projectPath": "assets/dinosaurs/almas-ukhaa-channel-separated-ceratopsian-context-imagegen-v2.png",
+      "sha256": "fd6d043b6e86f6d9e1a70813b9bd5fa8c78c5af118ed091504d8b2656de5a3f2",
+      "bytes": 3023856,
+      "dimensions": "1536x1024",
+      "seed": "not available in preserved legacy record",
+      "prompt": "not available in preserved legacy record",
+      "workflow": "Reused without pixel modification after original-size anatomy and role review.",
+      "notes": "The foreground Almas has one short compact head, two forelimbs, two hind limbs and feet, and one tail. The distant unidentified ceratopsian-like animal is separated by a shallow channel. This is regional-fauna context only, not evidence of direct interaction, exact species identity, or same-moment co-occurrence."
+    },
+    "social-growth-defense": {
+      "gallerySlot": 6,
+      "galleryRole": "social-growth-defense",
+      "roleFacet": "defense",
+      "kind": "anatomy review",
+      "status": "approved",
+      "generatedAt": "2026-08-03T01:03:01.905Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Reference-guided generation from the anatomy-approved S1 control; first generated candidate passed the original-size anatomy and artifact gate.",
+      "seed": "not exposed by generator",
+      "callId": "exec-1d0bb336-4496-4829-944f-62401289d161",
+      "generatedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-1d0bb336-4496-4829-944f-62401289d161.png",
+      "approvedProjectPath": "assets/dinosaurs/almas-ukhaa-short-deep-skull-postrain-dune-slump-avoidance-imagegen-v3.png",
+      "sha256": "60403ba2e25373337437ec9a139efad11dbcc23505a29f7a33e4b64d6359fe5c",
+      "bytes": 2938736,
+      "dimensions": "1536x1024",
+      "referenceImages": [
+        {
+          "path": "assets/dinosaurs/almas-ukhaa-short-deep-skull-olive-unbanded-representative-imagegen-v2.png",
+          "role": "project-owned approved identity and anatomy reference, not an edit target"
+        }
+      ],
+      "promptLines": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas gallery slide, anatomy-review candidate",
+        "Primary request: Create a new naturalistic paleoart scene of one Almas ukhaa noticing a small fresh sand-slope slump after rain and turning away at a safe distance. This is a hypothetical vigilance/avoidance reconstruction, not evidence of observed behavior.",
+        "Input images: Image 1 is the approved project-owned Almas identity and anatomy reference, not an edit target. Preserve its species identity, body proportions, olive-brown and warm sand palette, pale throat, subtle blue-gray eye ring, and unbanded tail.",
+        "Scene/backdrop: Late Cretaceous Ukhaa Tolgod, Djadokhta-equivalent semiarid eolian dunes; damp interdune sand after a shower; one small localized trickle of fresh sand on a low dune face several body lengths away; no burial, no injury, no violent sandstorm.",
+        "Subject: exactly one small feathered Almas ukhaa in full body, shallow three-quarter side view, calmly but alertly changing direction away from the fresh sand movement. Skull length-to-depth about 2.5:1: short, relatively deep, subtriangular, with a large natural orbit, elongated naris, and small teeth in a non-bird jaw. Small light body, long lower legs, exactly two clearly separated forelimbs, exactly two hind limbs and exactly two feet, and exactly one continuous tail emerging from the pelvis.",
+        "Style/medium: museum-quality naturalistic scientific paleoart, anatomy-led, realistic feather and sand textures, restrained educational tone, no cartoon styling.",
+        "Composition/framing: landscape; the entire animal, both forelimbs, both hind limbs, both feet, pelvis-to-tail connection, and complete tail tip must remain visible and separated. Keep the minor sand slump readable but clearly distant from the animal.",
+        "Lighting/mood: soft post-rain daylight, damp sand highlights, quiet caution rather than disaster.",
+        "Constraints: no text, labels, logo, or watermark. No other animal, predator, prey, pack, family, nest, eggs, attack, injury, blood, chase, or direct-contact behavior. Do not imply this behavior is fossil evidence. Feather extent, color, and behavior remain comparative reconstruction.",
+        "Avoid: a long low Byronosaurus-like head, round owl face, modern bird beak, robust Zanabazar proportions, dromaeosaur body, flight wings or large arm-feather fans, regular tail rings, exaggerated sickle claw, hidden or fused feet, cropped or split tail, duplicated limb, third leg, extra foot, extra tail, malformed toes."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-03T01:07:00.000Z",
+        "method": "Original-size inspection of skull proportion, natural orbit, naris and tooth line, both separated forelimbs, both hind limbs and feet, pelvis-tail join, full tail tip, absence of duplicated anatomy, and safe spatial separation from the minor sand slump.",
+        "result": "Approved only as the S6 defense anatomy-review image. One animal with two forelimbs, two hind limbs and feet, and one continuous unbanded tail passes. The pose and dune-slope response remain hypothetical and are not promoted as fossil behavior."
+      }
+    }
+  },
+  "rejectedAttempts": []
+}
