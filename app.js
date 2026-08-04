@@ -23089,9 +23089,9 @@ function getMotionM2SampleCatalog() {
         typeof sample.motionLabel === "string" && sample.motionLabel.trim().length > 0 &&
         typeof sample.evidenceBoundary === "string" && sample.evidenceBoundary.trim().length > 0 &&
         getMotionM2CreditLabel(sample.credits).length > 0 &&
-        sample.representativeEligible !== true &&
-        sample.galleryEligible !== true &&
-        sample.anatomyEligible !== true &&
+        sample.representativeEligible === false &&
+        sample.galleryEligible === false &&
+        sample.anatomyEligible === false &&
         allowedMotionClasses.has(sample.motionClass) &&
         (sample.motionCatalogKind === "i2v"
           ? sample.motionClass === "generative-i2v"
@@ -23123,11 +23123,12 @@ function renderMotionM2SampleCard(sample, playbackPreference, isDraftPreview) {
   const published = isMotionM2Published(sample) && !isDraftPreview;
   const tierLabel = isI2V ? "M2 · 생성형 I2V" : "M2 · 큰 부분 움직임";
   const localReviewLabel = isI2V ? "새 I2V 비교 후보" : "기존 제어형 M2 보류";
+  const durationLabel = Number(sample.durationSeconds).toFixed(1);
   const playbackNote = playbackPreference.saveData
     ? "데이터 절약 설정 · 눌러야 파일을 불러옵니다"
     : playbackPreference.reducedMotion
       ? "움직임 줄이기 설정 · 직접 재생만 합니다"
-      : `자동재생 없음 · 눌러서 ${sample.durationSeconds}초 재생`;
+      : `자동재생 없음 · 눌러서 ${durationLabel}초 재생`;
   const dimensions = `${sample.width}×${sample.height} · ${sample.fps}fps · ${sample.frameCount}프레임`;
   return `
     <article class="motion-sample-card ${published ? "is-published" : "is-draft"}" data-motion-sample="${escapeHtml(sample.id)}" data-motion-tier="M2" data-motion-pipeline="${escapeHtml(sample.motionCatalogKind)}" data-motion-playing-label="${escapeHtml(sample.motionLabel)}">

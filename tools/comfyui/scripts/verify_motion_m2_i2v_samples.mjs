@@ -9,8 +9,6 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..", "..", "..");
 const CATALOG_RELATIVE_PATH = "motion-m2-i2v-samples.js";
 const METADATA_RELATIVE_PATH = "tools/comfyui/motion-m2-i2v-pilot-batch-20260804.json";
-const EXPECTED_ID = "oviraptor-philoceratops-alert-head-turn-comfyui-wan22-i2v-m2-v1";
-const EXPECTED_VIDEO_PATH = `assets/motion/m2/${EXPECTED_ID}.mp4`;
 const CATALOG_PATH = path.join(ROOT, CATALOG_RELATIVE_PATH);
 const METADATA_PATH = path.join(ROOT, ...METADATA_RELATIVE_PATH.split("/"));
 
@@ -59,17 +57,25 @@ const EXPECTED_MODELS = {
     bytes: 6735906897,
   },
 };
-const EXPECTED_STREAM = {
-  width: 768,
-  height: 512,
-  durationSeconds: 2.041667,
-  fps: 24,
-  frameCount: 49,
+const REQUIRED_STREAM_ENCODING = {
   codec: "h264",
   pixelFormat: "yuv420p",
   container: "mp4",
   audio: false,
 };
+const STREAM_RECORD_FIELDS = [
+  "sha256",
+  "bytes",
+  "width",
+  "height",
+  "durationSeconds",
+  "fps",
+  "frameCount",
+  "codec",
+  "pixelFormat",
+  "container",
+  "audio",
+];
 
 const errors = [];
 const warnings = [];
@@ -96,6 +102,27 @@ function normalizeWhitespace(value) {
 
 function sameArray(actual, expected) {
   return JSON.stringify(actual) === JSON.stringify(expected);
+}
+
+function sameStringSet(actual, expected) {
+  return sameArray([...actual].sort(), [...expected].sort());
+}
+
+function nearlyEqual(actual, expected, tolerance = 0.000001) {
+  return Number.isFinite(actual) && Number.isFinite(expected)
+    && Math.abs(actual - expected) <= tolerance;
+}
+
+function normalizeProjectSlashes(value) {
+  return String(value || "").replace(/\\/g, "/");
+}
+
+function isSafeCatalogId(value) {
+  return /^[a-z0-9][a-z0-9-]*$/i.test(value || "");
+}
+
+function hasPortablePlaceholder(command, placeholder) {
+  return String(command || "").includes(`{${placeholder}}`);
 }
 
 function projectPath(relativePath, owner) {
@@ -151,6 +178,17 @@ function checkHashedFile(relativePath, expectedHash, expectedBytes, owner) {
     fail(`${owner}: byte-count mismatch; recorded ${expectedBytes}, actual ${stat.size}`);
   }
   return { absolutePath, sha256: digest, bytes: stat.size };
+}
+
+function checkMp4FastStart(filePath, owner, { required = true } = {}) {
+  const bytes = fs.readFileSync(filePath);
+  const moovIndex = bytes.indexOf(Buffer.from("moov"));
+  const mdatIndex = bytes.indexOf(Buffer.from("mdat"));
+  if (moovIndex < 0 || mdatIndex < 0 || moovIndex > mdatIndex) {
+    const message = `${owner}: MP4 faststart layout is missing (moov must precede mdat)`;
+    if (required) fail(message);
+    else warn(`${message}; allowed only for the legacy top-level-workflow sample`);
+  }
 }
 
 function parseRate(value) {
@@ -276,7 +314,7 @@ function checkConfiguredWorkflow(workflow, metadataWorkflow, sampleRecord, model
   }
   if (workflow["11"]?.inputs?.fps !== metadataWorkflow.fps
     || workflow["11"]?.inputs?.bit_depth !== 8) {
-    fail(`${owner}: CreateVideo must record 24 fps at 8-bit`);
+    fail(`${owner}: CreateVideo must record ${metadataWorkflow.fps} fps at 8-bit`);
   }
   if (workflow["12"]?.inputs?.format !== "mp4" || workflow["12"]?.inputs?.codec !== "h264") {
     fail(`${owner}: SaveVideo must use MP4/H.264`);
@@ -291,23 +329,49 @@ function checkConfiguredWorkflow(workflow, metadataWorkflow, sampleRecord, model
   }
 }
 
-function checkStreamRecord(record, owner) {
-  for (const [field, expected] of Object.entries(EXPECTED_STREAM)) {
-    const actual = record?.[field];
-    if (field === "durationSeconds") {
-      if (!Number.isFinite(actual) || Math.abs(actual - expected) > 0.000001) {
-        fail(`${owner}: durationSeconds must be ${expected}`);
-      }
-    } else if (actual !== expected) {
+function checkStreamRecord(record, owner, { requireFileIdentity = true } = {}) {
+  if (!record || typeof record !== "object" || Array.isArray(record)) {
+    fail(`${owner}: missing stream record`);
+    return false;
+  }
+  if (requireFileIdentity
+    && (!isSha256(record.sha256) || !Number.isInteger(record.bytes) || record.bytes <= 0)) {
+    fail(`${owner}: video SHA-256 or byte-count record is incomplete`);
+  }
+  if (!Number.isInteger(record.width) || record.width <= 0 || record.width % 32 !== 0
+    || !Number.isInteger(record.height) || record.height <= 0 || record.height % 32 !== 0) {
+    fail(`${owner}: width and height must be positive multiples of 32`);
+  }
+  if (!Number.isInteger(record.frameCount) || record.frameCount <= 0
+    || (record.frameCount - 1) % 4 !== 0) {
+    fail(`${owner}: Wan frameCount must be a positive 4n+1 integer`);
+  }
+  if (!Number.isFinite(record.fps) || record.fps <= 0) {
+    fail(`${owner}: fps must be positive`);
+  }
+  const calculatedDuration = record.frameCount / record.fps;
+  if (!Number.isFinite(record.durationSeconds)
+    || !nearlyEqual(record.durationSeconds, calculatedDuration)) {
+    fail(`${owner}: durationSeconds must equal frameCount/fps (${calculatedDuration})`);
+  }
+  for (const [field, expected] of Object.entries(REQUIRED_STREAM_ENCODING)) {
+    if (record[field] !== expected) {
       fail(`${owner}: ${field} must be ${expected}`);
     }
   }
-  if (!isSha256(record?.sha256) || !Number.isInteger(record?.bytes) || record.bytes <= 0) {
-    fail(`${owner}: video SHA-256 or byte-count record is incomplete`);
+  return true;
+}
+
+function compareStreamRecords(actual, expected, owner) {
+  for (const field of STREAM_RECORD_FIELDS) {
+    const matches = field === "durationSeconds"
+      ? nearlyEqual(actual?.[field], expected?.[field])
+      : actual?.[field] === expected?.[field];
+    if (!matches) fail(`${owner}: ${field} differs between catalog and metadata records`);
   }
 }
 
-function checkProbe(probe, owner) {
+function checkProbe(probe, expected, owner) {
   if (probe.unavailable) {
     fail(`${owner}: ffprobe is required but unavailable`);
     return;
@@ -319,24 +383,385 @@ function checkProbe(probe, owner) {
   if (probe.streamCount !== 1 || probe.videoStreamCount !== 1 || probe.audioStreamCount !== 0) {
     fail(`${owner}: expected exactly one video stream and no audio or extra streams`);
   }
-  if (probe.width !== EXPECTED_STREAM.width || probe.height !== EXPECTED_STREAM.height
-    || probe.codec !== EXPECTED_STREAM.codec || probe.pixelFormat !== EXPECTED_STREAM.pixelFormat) {
-    fail(`${owner}: stream must be 768x512 H.264/yuv420p`);
+  if (probe.width !== expected.width || probe.height !== expected.height
+    || probe.codec !== expected.codec || probe.pixelFormat !== expected.pixelFormat) {
+    fail(`${owner}: stream geometry or H.264/yuv420p encoding differs from its file record`);
   }
-  if (Math.abs(probe.fps - EXPECTED_STREAM.fps) > 0.000001
-    || Math.abs(probe.realFps - EXPECTED_STREAM.fps) > 0.000001
-    || probe.frameCount !== EXPECTED_STREAM.frameCount) {
-    fail(`${owner}: stream must contain exactly 49 frames at constant 24 fps`);
+  if (!nearlyEqual(probe.fps, expected.fps)
+    || !nearlyEqual(probe.realFps, expected.fps)
+    || probe.frameCount !== expected.frameCount) {
+    fail(`${owner}: frame count or constant frame rate differs from its file record`);
   }
-  if (!Number.isFinite(probe.durationSeconds)
-    || Math.abs(probe.durationSeconds - EXPECTED_STREAM.durationSeconds) > 0.000001) {
-    fail(`${owner}: stream duration must be ${EXPECTED_STREAM.durationSeconds} seconds`);
+  if (!nearlyEqual(probe.durationSeconds, expected.durationSeconds)) {
+    fail(`${owner}: stream duration must be ${expected.durationSeconds} seconds`);
   }
   if (Math.abs(probe.startSeconds) > 0.000001 || probe.rotation !== 0) {
     fail(`${owner}: stream must start at zero with no rotation metadata`);
   }
   if (!probe.formatName.split(",").includes("mp4")) {
     fail(`${owner}: container does not identify as MP4`);
+  }
+}
+
+function resolveSampleWorkflow(metadata, record, sample, owner) {
+  if (record?.workflow && typeof record.workflow === "object" && !Array.isArray(record.workflow)) {
+    return record.workflow;
+  }
+  const fallback = metadata.workflow;
+  if (fallback && sample.provenance?.runRecord === fallback.runRecord) return fallback;
+  fail(`${owner}: missing per-sample workflow and no matching legacy workflow fallback`);
+  return null;
+}
+
+function loadWorkflowArtifacts(metadataWorkflow, owner) {
+  if (!metadataWorkflow) return { runRecord: null };
+  const templateFile = checkHashedFile(
+    metadataWorkflow.template,
+    metadataWorkflow.templateSha256,
+    undefined,
+    `${owner}: workflow template`,
+  );
+  const runnerFile = checkHashedFile(
+    metadataWorkflow.runner,
+    metadataWorkflow.runnerSha256,
+    undefined,
+    `${owner}: I2V runner`,
+  );
+  const runRecordFile = checkHashedFile(
+    metadataWorkflow.runRecord,
+    metadataWorkflow.runRecordSha256,
+    undefined,
+    `${owner}: I2V run record`,
+  );
+
+  if (templateFile) {
+    try {
+      checkWorkflowTopology(
+        JSON.parse(fs.readFileSync(templateFile.absolutePath, "utf8")),
+        `${owner}: workflow template`,
+      );
+    } catch (error) {
+      fail(`${owner}: workflow template contains invalid JSON: ${error.message}`);
+    }
+  }
+  if (runnerFile && !/\.py$/i.test(metadataWorkflow.runner || "")) {
+    fail(`${owner}: I2V runner must be a project Python script`);
+  }
+
+  let runRecord = null;
+  if (runRecordFile) {
+    try {
+      runRecord = JSON.parse(fs.readFileSync(runRecordFile.absolutePath, "utf8"));
+    } catch (error) {
+      fail(`${owner}: I2V run record contains invalid JSON: ${error.message}`);
+    }
+  }
+  return { runRecord };
+}
+
+function checkGenerationStreamConfig(metadataWorkflow, stream, owner) {
+  if (!metadataWorkflow || !stream) return;
+  const expected = {
+    width: stream.width,
+    height: stream.height,
+    frames: stream.frameCount,
+    fps: stream.fps,
+  };
+  for (const [field, value] of Object.entries(expected)) {
+    if (metadataWorkflow[field] !== value) {
+      fail(`${owner}: workflow ${field} must match the generated stream (${value})`);
+    }
+  }
+}
+
+function checkPostProcess(postProcess, sample, owner) {
+  if (!postProcess) return null;
+  if (!postProcess || typeof postProcess !== "object" || Array.isArray(postProcess)) {
+    fail(`${owner}: postProcess must be an object`);
+    return null;
+  }
+  const allowedTypes = new Set([
+    "safe-prefix-last-frame-hold",
+    "safe-prefix-reverse-return",
+  ]);
+  if (!allowedTypes.has(postProcess.type)) {
+    fail(`${owner}: unsupported postProcess.type`);
+  }
+
+  const rawOutput = postProcess.rawOutput;
+  if (!rawOutput || typeof rawOutput !== "object" || Array.isArray(rawOutput)) {
+    fail(`${owner}: postProcess.rawOutput is required`);
+    return null;
+  }
+  const rawPath = normalizeProjectSlashes(rawOutput.path);
+  if (!/^output\/dino_atlas\/[a-z0-9][a-z0-9._/-]*\.mp4$/i.test(rawPath)
+    || rawPath.includes("..") || rawPath.includes("//") || rawOutput.path !== rawPath) {
+    fail(`${owner}: rawOutput.path must be a portable ComfyUI-root path under output/dino_atlas`);
+  }
+  if (!isSha256(rawOutput.sha256) || !Number.isInteger(rawOutput.bytes) || rawOutput.bytes <= 0) {
+    fail(`${owner}: rawOutput SHA-256 or byte-count record is incomplete`);
+  }
+  checkStreamRecord(rawOutput.stream, `${owner}: raw output stream`, { requireFileIdentity: false });
+
+  const range = postProcess.acceptedFrameRange;
+  const validRange = Array.isArray(range) && range.length === 2
+    && range.every(Number.isInteger) && range[0] === 0
+    && range[1] >= range[0] && range[1] < (rawOutput.stream?.frameCount ?? 0);
+  if (!validRange) {
+    fail(`${owner}: acceptedFrameRange must be [0, endInclusive] inside the raw stream`);
+  }
+  const acceptedEnd = validRange ? range[1] : null;
+  const acceptedFrameCount = acceptedEnd === null ? null : acceptedEnd + 1;
+  let expectedFilter = null;
+  let expectedFinalFrames = null;
+  if (postProcess.type === "safe-prefix-last-frame-hold") {
+    if (!Number.isInteger(postProcess.trimEndFrameExclusive)
+      || postProcess.trimEndFrameExclusive !== acceptedFrameCount) {
+      fail(`${owner}: trimEndFrameExclusive must equal accepted endInclusive + 1`);
+    }
+    if (!Number.isInteger(postProcess.holdFrames) || postProcess.holdFrames <= 0) {
+      fail(`${owner}: holdFrames must be a positive integer`);
+    }
+    const expectedHoldSeconds = postProcess.holdFrames / rawOutput.stream?.fps;
+    if (!nearlyEqual(postProcess.holdSeconds, expectedHoldSeconds)) {
+      fail(`${owner}: holdSeconds must equal holdFrames/raw fps (${expectedHoldSeconds})`);
+    }
+    if (acceptedFrameCount !== null && Number.isFinite(postProcess.holdSeconds)) {
+      expectedFilter = `trim=end_frame=${acceptedFrameCount},tpad=stop_mode=clone:stop_duration=${postProcess.holdSeconds},format=yuv420p`;
+    }
+    if (Number.isInteger(acceptedFrameCount) && Number.isInteger(postProcess.holdFrames)) {
+      expectedFinalFrames = acceptedFrameCount + postProcess.holdFrames;
+    }
+  } else if (postProcess.type === "safe-prefix-reverse-return") {
+    const forwardRange = postProcess.forwardFrameRange;
+    const reverseRange = postProcess.reverseFrameRange;
+    const validForward = validRange && sameArray(forwardRange, [0, acceptedEnd]);
+    const validReverse = Array.isArray(reverseRange) && reverseRange.length === 2
+      && reverseRange.every(Number.isInteger)
+      && reverseRange[0] >= 0 && reverseRange[0] <= acceptedEnd
+      && reverseRange[1] === acceptedEnd;
+    if (!validForward) {
+      fail(`${owner}: forwardFrameRange must exactly match acceptedFrameRange`);
+    }
+    if (!validReverse) {
+      fail(`${owner}: reverseFrameRange must be [returnStart, acceptedEnd]`);
+    }
+    if (postProcess.joinFrame !== acceptedEnd) {
+      fail(`${owner}: joinFrame must equal accepted endInclusive`);
+    }
+    if (validReverse && acceptedFrameCount !== null) {
+      const returnStart = reverseRange[0];
+      const hasTurnaroundHold = Object.hasOwn(postProcess, "turnaroundHoldFrames")
+        || Object.hasOwn(postProcess, "turnaroundHoldSeconds");
+      const turnaroundHoldFrames = hasTurnaroundHold ? postProcess.turnaroundHoldFrames : 0;
+      if (!Number.isInteger(turnaroundHoldFrames) || turnaroundHoldFrames < 0) {
+        fail(`${owner}: turnaroundHoldFrames must be a non-negative integer`);
+      }
+      const expectedTurnaroundHoldSeconds = turnaroundHoldFrames / rawOutput.stream?.fps;
+      if (hasTurnaroundHold
+        && !nearlyEqual(postProcess.turnaroundHoldSeconds, expectedTurnaroundHoldSeconds)) {
+        fail(`${owner}: turnaroundHoldSeconds must equal turnaroundHoldFrames/raw fps (${expectedTurnaroundHoldSeconds})`);
+      }
+      const forwardTail = turnaroundHoldFrames > 0
+        ? `,tpad=stop_mode=clone:stop_duration=${postProcess.turnaroundHoldSeconds}`
+        : "";
+      expectedFilter = `split=2[a][b];[a]trim=end_frame=${acceptedFrameCount},setpts=PTS-STARTPTS${forwardTail}[f];[b]trim=start_frame=${returnStart}:end_frame=${acceptedFrameCount},reverse,setpts=PTS-STARTPTS[r];[f][r]concat=n=2:v=1:a=0,format=yuv420p`;
+      expectedFinalFrames = acceptedFrameCount + turnaroundHoldFrames
+        + (acceptedEnd - returnStart + 1);
+    }
+  }
+  if (!isNonEmptyString(postProcess.ffmpegFilter) || postProcess.ffmpegFilter !== expectedFilter) {
+    fail(`${owner}: ffmpegFilter must exactly encode the declared safe-prefix post-process`);
+  }
+  const command = normalizeWhitespace(postProcess.ffmpegCommand);
+  if (!isNonEmptyString(command)
+    || !hasPortablePlaceholder(command, "rawOutput")
+    || !hasPortablePlaceholder(command, "projectAsset")
+    || command.split("{rawOutput}").length !== 2
+    || command.split("{projectAsset}").length !== 2
+    || !command.includes(postProcess.ffmpegFilter || "\u0000")
+    || !/(?:^|\s)-(?:vf|filter:v|filter_complex)\s/i.test(command)
+    || !/(?:^|\s)-an(?:\s|$)/i.test(command)
+    || !/(?:^|\s)-(?:c:v|vcodec)\s+libx264(?:\s|$)/i.test(command)
+    || !/(?:^|\s)-movflags\s+\+faststart(?:\s|$)/i.test(command)
+    || /[a-z]:[\\/]/i.test(command)) {
+    fail(`${owner}: ffmpegCommand must be portable, use both placeholders, the exact filter, H.264, no audio, and faststart`);
+  }
+
+  const finalFile = sample.file;
+  if (finalFile?.frameCount !== expectedFinalFrames) {
+    fail(`${owner}: final frameCount must equal the declared post-process result (${expectedFinalFrames})`);
+  }
+  for (const field of ["width", "height", "fps"]) {
+    if (finalFile?.[field] !== rawOutput.stream?.[field]) {
+      fail(`${owner}: final ${field} must match the raw output stream`);
+    }
+  }
+  return rawOutput.stream;
+}
+
+function parseLegacyManualRange(value) {
+  const match = String(value || "").match(/frames?\s+(\d+)\s*-\s*(\d+)/i);
+  return match ? [Number(match[1]), Number(match[2])] : null;
+}
+
+function checkPublishedQa(record, sample, owner) {
+  const qa = record?.qa;
+  if (!qa || typeof qa !== "object" || Array.isArray(qa)) {
+    fail(`${owner}: published sample requires metadata qa`);
+    return;
+  }
+  const legacyRange = parseLegacyManualRange(qa.manualFramesReviewed);
+  const range = Array.isArray(qa.frameIndexRange) ? qa.frameIndexRange : legacyRange;
+  const reviewedCount = Number.isInteger(qa.manualFrameCountReviewed)
+    ? qa.manualFrameCountReviewed
+    : legacyRange && legacyRange[0] === 0
+      ? legacyRange[1] + 1
+      : null;
+  if (reviewedCount !== sample.file?.frameCount) {
+    fail(`${owner}: qa.manualFrameCountReviewed must equal file.frameCount`);
+  }
+  if (!Array.isArray(range) || range.length !== 2 || range[0] !== 0
+    || range[1] !== sample.file?.frameCount - 1) {
+    fail(`${owner}: qa frameIndexRange must cover first through last frame`);
+  }
+  const checkpoints = qa.checkpointFrames;
+  if (!Array.isArray(checkpoints) || checkpoints.length < 2
+    || checkpoints.some((frame) => !Number.isInteger(frame)
+      || frame < 0 || frame >= sample.file?.frameCount)
+    || new Set(checkpoints).size !== checkpoints.length
+    || !checkpoints.includes(0)
+    || !checkpoints.includes(sample.file?.frameCount - 1)) {
+    fail(`${owner}: qa.checkpointFrames must be unique, in range, and include first and last`);
+  }
+  const expectedVisualStatus = `pass-independent-${sample.file?.frameCount}-of-${sample.file?.frameCount}`;
+  if (qa.visualStatus !== expectedVisualStatus) {
+    fail(`${owner}: qa.visualStatus must be ${expectedVisualStatus}`);
+  }
+}
+
+function checkRunRecord(
+  runRecord,
+  metadataWorkflow,
+  record,
+  sample,
+  models,
+  probedStream,
+  postProcess,
+  owner,
+) {
+  if (!runRecord || !metadataWorkflow) return;
+  if (![1, 2].includes(runRecord.schemaVersion)) {
+    fail(`${owner}: run record schemaVersion must be 1 or 2`);
+  }
+  if (!isNonEmptyString(metadataWorkflow.promptId)
+    || runRecord.promptId !== metadataWorkflow.promptId
+    || runRecord.queueResponse?.prompt_id !== metadataWorkflow.promptId
+    || runRecord.status?.status_str !== "success" || runRecord.status?.completed !== true
+    || Object.keys(runRecord.queueResponse?.node_errors || {}).length !== 0) {
+    fail(`${owner}: run record does not document a successful matching prompt`);
+  }
+  const successMessage = runRecord.status?.messages?.some(
+    ([event, data]) => event === "execution_success" && data?.prompt_id === metadataWorkflow.promptId,
+  );
+  if (!successMessage) fail(`${owner}: run record lacks the matching execution_success event`);
+  if (runRecord.history?.prompt?.[1] !== metadataWorkflow.promptId
+    || runRecord.history?.status?.status_str !== "success"
+    || runRecord.history?.status?.completed !== true) {
+    fail(`${owner}: run history does not match the successful prompt`);
+  }
+
+  if (runRecord.schemaVersion === 2) {
+    if (!isNonEmptyString(metadataWorkflow.candidateId)
+      || runRecord.candidateId !== metadataWorkflow.candidateId) {
+      fail(`${owner}: schema-2 candidateId differs from metadata workflow`);
+    }
+    if (runRecord.taxonId !== sample.taxonId || runRecord.taxonId !== record.taxonId) {
+      fail(`${owner}: schema-2 taxonId differs from catalog or metadata`);
+    }
+    const runConfig = runRecord.runConfig;
+    if (!runConfig || typeof runConfig !== "object" || Array.isArray(runConfig)) {
+      fail(`${owner}: schema-2 runConfig is missing`);
+    } else {
+      for (const field of [
+        "seed", "width", "height", "frames", "fps", "steps", "cfg",
+        "sampler", "scheduler", "shift", "denoise",
+      ]) {
+        if (runConfig[field] !== metadataWorkflow[field]) {
+          fail(`${owner}: schema-2 runConfig ${field} differs from metadata workflow`);
+        }
+      }
+      if (runConfig.inputName !== record.comfyInput) {
+        fail(`${owner}: schema-2 runConfig inputName differs from metadata comfyInput`);
+      }
+      if (normalizeWhitespace(runConfig.positivePrompt)
+          !== normalizeWhitespace(metadataWorkflow.positivePrompt)
+        || normalizeWhitespace(runConfig.negativePrompt)
+          !== normalizeWhitespace(metadataWorkflow.negativePrompt)) {
+        fail(`${owner}: schema-2 runConfig prompts differ from metadata workflow`);
+      }
+      if (!nearlyEqual(
+        runConfig.effectiveDurationSeconds,
+        metadataWorkflow.frames / metadataWorkflow.fps,
+      )) {
+        fail(`${owner}: schema-2 effectiveDurationSeconds differs from frames/fps`);
+      }
+    }
+
+    const provenance = runRecord.provenance;
+    const expectedGenerationRunnerHash = metadataWorkflow.generationRunnerSha256
+      || metadataWorkflow.runnerSha256;
+    if (!provenance || provenance.templateSha256 !== metadataWorkflow.templateSha256
+      || provenance.runnerSha256 !== expectedGenerationRunnerHash
+      || provenance.comfyInputSha256 !== record.sourcePosterSha256
+      || provenance.sourcePoster !== record.sourcePoster
+      || provenance.sourcePosterSha256 !== record.sourcePosterSha256
+      || provenance.sourceLicense !== record.sourceLicense) {
+      fail(`${owner}: schema-2 provenance differs from workflow or approved source metadata`);
+    }
+    if (metadataWorkflow.specGenerationSha256
+      && provenance?.specSha256 !== metadataWorkflow.specGenerationSha256) {
+      fail(`${owner}: schema-2 generation spec SHA-256 differs from metadata`);
+    }
+  }
+
+  checkConfiguredWorkflow(runRecord.workflow, metadataWorkflow, record, models, `${owner}: run workflow`);
+  const historyWorkflow = runRecord.history?.prompt?.[2];
+  checkConfiguredWorkflow(historyWorkflow, metadataWorkflow, record, models, `${owner}: history workflow`);
+  if (JSON.stringify(runRecord.workflow) !== JSON.stringify(historyWorkflow)) {
+    fail(`${owner}: queued workflow and history workflow differ`);
+  }
+  const output = runRecord.history?.outputs?.["12"]?.images?.[0];
+  if (!output || output.type !== "output" || !/\.mp4$/i.test(output.filename || "")) {
+    fail(`${owner}: run record lacks the generated MP4 output record`);
+  }
+
+  if (postProcess && output) {
+    const outputSubfolder = normalizeProjectSlashes(output.subfolder).replace(/^\/+|\/+$/g, "");
+    const recordedRawPath = ["output", outputSubfolder, output.filename].filter(Boolean).join("/");
+    if (recordedRawPath !== postProcess.rawOutput?.path) {
+      fail(`${owner}: postProcess rawOutput.path differs from the run-record output`);
+    }
+  } else if (probedStream && !probedStream.unavailable && !probedStream.error) {
+    if (!isNonEmptyString(probedStream.embeddedPrompt)) {
+      fail(`${owner}: MP4 lacks the embedded ComfyUI prompt graph`);
+    } else {
+      try {
+        const embeddedWorkflow = JSON.parse(probedStream.embeddedPrompt);
+        checkConfiguredWorkflow(
+          embeddedWorkflow,
+          metadataWorkflow,
+          record,
+          models,
+          `${owner}: MP4 embedded workflow`,
+        );
+        if (embeddedWorkflow["6"]?.is_changed?.[0] !== record.sourcePosterSha256) {
+          fail(`${owner}: MP4 embedded source-image hash differs from the approved source poster`);
+        }
+      } catch (error) {
+        fail(`${owner}: MP4 embedded prompt is invalid JSON: ${error.message}`);
+      }
+    }
   }
 }
 
@@ -380,11 +805,15 @@ if (!sameArray(metadata.policy?.publicationGateOrder, REQUIRED_REVIEW_GATES)) {
 const samples = Array.isArray(catalog.samples) ? catalog.samples : [];
 const catalogIds = samples.map((sample) => sample?.id);
 const metadataIds = Object.keys(metadata.samples || {});
-if (!sameArray(catalogIds, metadataIds)) {
-  fail(`catalog-metadata one-to-one mismatch: catalog=${catalogIds.join(",")} metadata=${metadataIds.join(",")}`);
+if (!samples.length) fail("catalog must contain at least one I2V sample");
+if (catalogIds.some((id) => !isSafeCatalogId(id))) {
+  fail("catalog contains a missing or unsafe sample id");
 }
-if (catalogIds.length !== 1 || catalogIds[0] !== EXPECTED_ID) {
-  fail(`catalog must contain exactly ${EXPECTED_ID}`);
+if (new Set(catalogIds).size !== catalogIds.length) {
+  fail("catalog contains duplicate sample ids");
+}
+if (!sameStringSet(catalogIds, metadataIds)) {
+  fail(`catalog-metadata one-to-one mismatch: catalog=${catalogIds.join(",")} metadata=${metadataIds.join(",")}`);
 }
 
 checkModelRecords(metadata.models);
@@ -394,48 +823,9 @@ if (!isNonEmptyString(metadata.software?.comfyUiCommit)
   fail("metadata: ComfyUI version, commit, or core-only launch flag is incomplete");
 }
 
-const metadataWorkflow = metadata.workflow || {};
-const templateFile = checkHashedFile(
-  metadataWorkflow.template,
-  metadataWorkflow.templateSha256,
-  undefined,
-  "workflow template",
-);
-const runnerFile = checkHashedFile(
-  metadataWorkflow.runner,
-  metadataWorkflow.runnerSha256,
-  undefined,
-  "I2V runner",
-);
-const runRecordFile = checkHashedFile(
-  metadataWorkflow.runRecord,
-  metadataWorkflow.runRecordSha256,
-  undefined,
-  "I2V run record",
-);
-
-if (templateFile) {
-  try {
-    checkWorkflowTopology(JSON.parse(fs.readFileSync(templateFile.absolutePath, "utf8")), "workflow template");
-  } catch (error) {
-    fail(`workflow template: invalid JSON: ${error.message}`);
-  }
-}
-if (runnerFile && !/\.py$/i.test(metadataWorkflow.runner || "")) {
-  fail("I2V runner must be a project Python script");
-}
-
-let runRecord = null;
-if (runRecordFile) {
-  try {
-    runRecord = JSON.parse(fs.readFileSync(runRecordFile.absolutePath, "utf8"));
-  } catch (error) {
-    fail(`I2V run record: invalid JSON: ${error.message}`);
-  }
-}
-
 let publishedVideos = 0;
-let probedStream = null;
+const streams = {};
+const publicationStatuses = [];
 for (const sample of samples) {
   const owner = sample?.id || "sample:(blank)";
   const record = metadata.samples?.[sample.id];
@@ -452,17 +842,20 @@ for (const sample of samples) {
     || record.review?.galleryEligible !== false || record.review?.anatomyEligible !== false) {
     fail(`${owner}: representative, gallery, and anatomy eligibility must all be false`);
   }
-  if (sample.src !== EXPECTED_VIDEO_PATH || record.projectAsset !== EXPECTED_VIDEO_PATH) {
-    fail(`${owner}: catalog and metadata must use the expected versioned M2 asset path`);
+  if (record.taxonId !== sample.taxonId || !isSafeCatalogId(sample.taxonId)) {
+    fail(`${owner}: catalog and metadata taxonId must match and be safe`);
   }
-  if (!/^assets\/dinosaurs\/oviraptor-philoceratops-[a-z0-9.-]*-v[0-9]+\.png$/i.test(sample.poster || "")
+  const expectedVideoPath = `assets/motion/m2/${sample.id}.mp4`;
+  if (!/-m2-v[0-9]+$/i.test(sample.id)
+    || sample.src !== expectedVideoPath || record.projectAsset !== expectedVideoPath) {
+    fail(`${owner}: catalog and metadata must use assets/motion/m2/{id}.mp4 with a versioned M2 id`);
+  }
+  const expectedPosterPrefix = `assets/dinosaurs/${sample.taxonId}-`;
+  if (!sample.poster?.startsWith(expectedPosterPrefix)
+    || !/-v[0-9]+\.png$/i.test(sample.poster)
+    || !/^assets\/dinosaurs\/[a-z0-9][a-z0-9.-]*\.png$/i.test(sample.poster)
     || sample.poster !== record.sourcePoster) {
     fail(`${owner}: source poster must be the same species-prefixed, versioned project PNG in both records`);
-  }
-  if (sample.provenance?.metadataRecord
-      !== `${METADATA_RELATIVE_PATH}#/samples/${sample.id}`
-    || sample.provenance?.runRecord !== metadataWorkflow.runRecord) {
-    fail(`${owner}: metadata or run-record provenance pointer is invalid`);
   }
   for (const field of ["sourceLicense", "modelLicense", "workflow"]) {
     if (!isNonEmptyString(sample.provenance?.[field])) fail(`${owner}: incomplete provenance ${field}`);
@@ -482,9 +875,7 @@ for (const sample of samples) {
     fail(`${owner}: source poster path mismatch`);
   }
 
-  if (JSON.stringify(sample.file) !== JSON.stringify(record.file)) {
-    fail(`${owner}: catalog and metadata video file records differ`);
-  }
+  compareStreamRecords(sample.file, record.file, owner);
   checkStreamRecord(sample.file, `${owner}: catalog file record`);
   checkStreamRecord(record.file, `${owner}: metadata file record`);
   const videoFile = checkHashedFile(
@@ -493,29 +884,34 @@ for (const sample of samples) {
     sample.file?.bytes,
     `${owner}: video`,
   );
+  let probedStream = null;
   if (videoFile) {
     probedStream = probeMedia(videoFile.absolutePath);
-    checkProbe(probedStream, `${owner}: video`);
+    checkProbe(probedStream, sample.file, `${owner}: video`);
+    checkMp4FastStart(videoFile.absolutePath, `${owner}: video`, {
+      required: Boolean(record.workflow),
+    });
     if (!probedStream.unavailable && !probedStream.error) {
-      const probeRecord = {
+      streams[sample.id] = {
         width: probedStream.width,
         height: probedStream.height,
-        durationSeconds: probedStream.durationSeconds,
         fps: probedStream.fps,
         frameCount: probedStream.frameCount,
         codec: probedStream.codec,
         pixelFormat: probedStream.pixelFormat,
-        container: probedStream.formatName.split(",").includes("mp4") ? "mp4" : probedStream.formatName,
-        audio: probedStream.audioStreamCount > 0,
+        audioStreams: probedStream.audioStreamCount,
       };
-      for (const [field, actual] of Object.entries(probeRecord)) {
-        const recorded = sample.file?.[field];
-        const matches = field === "durationSeconds"
-          ? Math.abs(actual - recorded) <= 0.000001
-          : actual === recorded;
-        if (!matches) fail(`${owner}: ${field} differs between ffprobe and file record`);
-      }
     }
+  }
+
+  const generationStream = checkPostProcess(record.postProcess, sample, owner) || sample.file;
+  const metadataWorkflow = resolveSampleWorkflow(metadata, record, sample, owner);
+  const { runRecord } = loadWorkflowArtifacts(metadataWorkflow, owner);
+  checkGenerationStreamConfig(metadataWorkflow, generationStream, owner);
+  if (sample.provenance?.metadataRecord
+      !== `${METADATA_RELATIVE_PATH}#/samples/${sample.id}`
+    || sample.provenance?.runRecord !== metadataWorkflow?.runRecord) {
+    fail(`${owner}: metadata or run-record provenance pointer is invalid`);
   }
 
   for (const gate of REQUIRED_REVIEW_GATES) {
@@ -531,14 +927,14 @@ for (const sample of samples) {
   }
 
   const publicationStatus = sample.review?.publication?.status;
+  publicationStatuses.push(publicationStatus);
   if (sample.reviewStatus !== publicationStatus
-    || record.review?.publication?.status !== publicationStatus
-    || metadata.status !== publicationStatus) {
-    fail(`${owner}: catalog, metadata, and publication status must agree`);
+    || record.review?.publication?.status !== publicationStatus) {
+    fail(`${owner}: catalog and metadata publication status must agree`);
   }
   const published = publicationStatus === "published" || publicationStatus === "public"
-    || sample.public === true || record.public === true || metadata.public === true
-    || sample.visibility === "public" || record.visibility === "public" || metadata.visibility === "public";
+    || sample.public === true || record.public === true
+    || sample.visibility === "public" || record.visibility === "public";
   if (published) {
     publishedVideos += 1;
     if (publicationStatus !== "published" && publicationStatus !== "public") {
@@ -550,56 +946,27 @@ for (const sample of samples) {
         fail(`${owner}: published without supported ${gate} gate`);
       }
     }
+    checkPublishedQa(record, sample, owner);
   }
 
-  if (runRecord) {
-    if (runRecord.schemaVersion !== 1 || runRecord.promptId !== metadataWorkflow.promptId
-      || runRecord.queueResponse?.prompt_id !== metadataWorkflow.promptId
-      || runRecord.status?.status_str !== "success" || runRecord.status?.completed !== true
-      || Object.keys(runRecord.queueResponse?.node_errors || {}).length !== 0) {
-      fail(`${owner}: run record does not document a successful matching prompt`);
-    }
-    const successMessage = runRecord.status?.messages?.some(
-      ([event, data]) => event === "execution_success" && data?.prompt_id === metadataWorkflow.promptId,
-    );
-    if (!successMessage) fail(`${owner}: run record lacks the matching execution_success event`);
-    if (runRecord.history?.prompt?.[1] !== metadataWorkflow.promptId
-      || runRecord.history?.status?.status_str !== "success"
-      || runRecord.history?.status?.completed !== true) {
-      fail(`${owner}: run history does not match the successful prompt`);
-    }
-    checkConfiguredWorkflow(runRecord.workflow, metadataWorkflow, record, metadata.models, `${owner}: run workflow`);
-    const historyWorkflow = runRecord.history?.prompt?.[2];
-    checkConfiguredWorkflow(historyWorkflow, metadataWorkflow, record, metadata.models, `${owner}: history workflow`);
-    if (JSON.stringify(runRecord.workflow) !== JSON.stringify(historyWorkflow)) {
-      fail(`${owner}: queued workflow and history workflow differ`);
-    }
-    const output = runRecord.history?.outputs?.["12"]?.images?.[0];
-    if (!output || output.type !== "output" || !/\.mp4$/i.test(output.filename || "")) {
-      fail(`${owner}: run record lacks the generated MP4 output record`);
-    }
-    if (probedStream && !probedStream.unavailable && !probedStream.error) {
-      if (!isNonEmptyString(probedStream.embeddedPrompt)) {
-        fail(`${owner}: MP4 lacks the embedded ComfyUI prompt graph`);
-      } else {
-        try {
-          const embeddedWorkflow = JSON.parse(probedStream.embeddedPrompt);
-          checkConfiguredWorkflow(
-            embeddedWorkflow,
-            metadataWorkflow,
-            record,
-            metadata.models,
-            `${owner}: MP4 embedded workflow`,
-          );
-          if (embeddedWorkflow["6"]?.is_changed?.[0] !== record.sourcePosterSha256) {
-            fail(`${owner}: MP4 embedded source-image hash differs from the approved source poster`);
-          }
-        } catch (error) {
-          fail(`${owner}: MP4 embedded prompt is invalid JSON: ${error.message}`);
-        }
-      }
-    }
-  }
+  checkRunRecord(
+    runRecord,
+    metadataWorkflow,
+    record,
+    sample,
+    metadata.models,
+    probedStream,
+    record.postProcess,
+    owner,
+  );
+}
+
+const uniquePublicationStatuses = new Set(publicationStatuses);
+const expectedMetadataStatus = uniquePublicationStatuses.size === 1
+  ? publicationStatuses[0]
+  : "mixed";
+if (metadata.status !== expectedMetadataStatus) {
+  fail(`metadata status must aggregate sample publication states as ${expectedMetadataStatus}`);
 }
 
 const report = {
@@ -614,15 +981,7 @@ const report = {
     autoplay: catalog.policy?.autoplay,
     clickToPlay: catalog.policy?.clickToPlay,
   },
-  stream: probedStream && !probedStream.unavailable && !probedStream.error ? {
-    width: probedStream.width,
-    height: probedStream.height,
-    fps: probedStream.fps,
-    frameCount: probedStream.frameCount,
-    codec: probedStream.codec,
-    pixelFormat: probedStream.pixelFormat,
-    audioStreams: probedStream.audioStreamCount,
-  } : null,
+  streams,
   warnings,
   errors,
 };

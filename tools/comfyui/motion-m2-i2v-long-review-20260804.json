@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-08-04T00:00:00+09:00",
+  "candidateSpec": "tools/comfyui/motion-m2-i2v-long-candidates-20260804.json",
+  "scope": "Five-second ComfyUI-native Wan2.2 TI2V 5B motion trials across multiple dinosaur taxa",
+  "policy": {
+    "representativePromotion": "prohibited",
+    "galleryPromotion": "prohibited",
+    "anatomyPromotion": "prohibited",
+    "autoplay": "prohibited",
+    "rawFailurePromotion": "prohibited",
+    "publicRule": "Only independently reviewed safe frames may enter a documented non-looping motion-only derivative."
+  },
+  "profileFindings": [
+    {
+      "profile": "121 frames at 24 fps",
+      "durationSeconds": 5.041667,
+      "finding": "Official-length native generation produced strong readable motion but accumulated late identity and anatomy drift in all directly reviewed full clips."
+    },
+    {
+      "profile": "81 frames at 16 fps",
+      "durationSeconds": 5.0625,
+      "finding": "Reduced temporal latent length improved some identity retention but often produced insufficient motion, alternating texture pulses, or late rigid-part drift."
+    },
+    {
+      "profile": "reviewed safe-prefix reverse return",
+      "durationSeconds": "5.04-5.06",
+      "finding": "Reused accepted source frames without optical-flow synthesis; two non-looping motion-only derivatives passed all-frame review."
+    }
+  ],
+  "trials": [
+    {
+      "candidateId": "oviraptor-philoceratops-alert-glance-large-f121-v2",
+      "seed": 240804121,
+      "status": "rejected",
+      "rawSha256": "4fe427417966c37c61838fc36d4fb79f173c810275a0edfa49878a6f58907a35",
+      "review": "Neck stayed connected, but frames 46-121 developed skull, rostrum, body-orientation, and shortened hooked-tail drift."
+    },
+    {
+      "candidateId": "yutyrannus-huali-cold-breath-turn-f121-v1",
+      "seed": 240804122,
+      "status": "rejected",
+      "rawSha256": "2196ce51c16acae439c35648dfe36d3eb4c68f25f65d3bfc435af83f17d2ea92",
+      "review": "The animal rotated about 180 degrees, feather and head identity smeared, the tail became fan-like, and the breath formed an incorrect vertical column."
+    },
+    {
+      "candidateId": "ankylosaurus-magniventris-defensive-tail-sweep-f121-v1",
+      "seed": 240804123,
+      "status": "rejected",
+      "rawSha256": "036bf92b7a7b3c72ec35626880d1cc1a16c32e86ff812d2a3d472c33faa73878",
+      "review": "The single tail club disappeared from frame 2, a forefoot lifted and replanted, and the background drifted."
+    },
+    {
+      "candidateId": "yutyrannus-huali-cold-breath-nod-f121-v2",
+      "seed": 240804132,
+      "status": "rejected",
+      "rawSha256": "e983dfa1961dec5868bc499e622ec3466ea0cd930a0801aa23b2d6dfae6f6811",
+      "review": "Rotation and anatomy improved, but the breath became an oversized persistent white mass extending to the ground."
+    },
+    {
+      "candidateId": "yutyrannus-huali-alert-nod-f121-v3",
+      "seed": 240804142,
+      "status": "rejected",
+      "rawSha256": "9b3c2fdf3a61972a301408099357a22ff9db1657175cda675b7fee5acdb17427",
+      "review": "The arms and head drifted toward a quadrupedal horse-like form despite the no-breath prompt."
+    },
+    {
+      "candidateId": "oviraptor-philoceratops-alert-lift-f81-v3",
+      "seed": 240804151,
+      "status": "rejected",
+      "rawSha256": "943b542d0926f9fd1fbdba87663aecad0f8e4c946e6d935f9dbc007bd5fade10",
+      "review": "Anatomy passed 81 of 81 frames, but head displacement stayed below one pixel and alternating 16 fps micro-jitter made the requested larger motion unreadable."
+    },
+    {
+      "candidateId": "tyrannosaurus-rex-alert-head-lift-f81-v1",
+      "seed": 240804152,
+      "status": "rejected",
+      "rawSha256": "8ea7e84ee1a7e69f056568ec00e50684e0f3a037e451caaf5c4ee19717ec6d9a",
+      "review": "The head moved only about four pixels while background drift read as a pseudo camera pan."
+    },
+    {
+      "candidateId": "parasaurolophus-walkeri-alert-head-lift-f81-v1",
+      "seed": 240804153,
+      "status": "rejected",
+      "rawSha256": "289fc9071b7cc78379cc33cc4fcc0546b191e784503288bb55586b5fbf2564d7",
+      "review": "From frame 24 the rigid tubular crest rotated and grew independently of the skull, causing a clear identity failure."
+    },
+    {
+      "candidateId": "brachiosaurus-altithorax-gentle-neck-lower-f81-v2",
+      "seed": 240804154,
+      "status": "rejected",
+      "rawSha256": "aad49ad7974c43761666b40287559aad9cc45e43050ed56b6bf97c632d173351",
+      "review": "From frame 19 the rounded nasal mound split and squared off; the tail shortened and hooked and a foreleg bent abnormally."
+    },
+    {
+      "candidateId": "brachiosaurus-altithorax-highshoulder-neck-sweep-f121-v1",
+      "seed": 240804124,
+      "status": "raw-full-rejected-safe-prefix-published",
+      "rawSha256": "6030b3375b463e168d0f8fba14ca97f139a7c867e000bebf1f54b2bb366e538a",
+      "acceptedFrameRange": [0, 72],
+      "review": "The full clip failed at frame 73 because the head and nasal mound popped to a different identity. Frames 0-72 retained every required Brachiosaurus cue and were used in a non-interpolated partial reverse return.",
+      "projectAsset": "assets/motion/m2/brachiosaurus-altithorax-highshoulder-neck-sweep-comfyui-wan22-safe-return-i2v-m2-v1.mp4"
+    },
+    {
+      "candidateId": "tyrannosaurus-rex-alert-head-turn-f81-v2",
+      "seed": 240804162,
+      "status": "raw-full-rejected-safe-prefix-published",
+      "rawSha256": "cbd5fc862b6f2fc41392a13796219f4f482266b44cdff8264a7303a3b2cb873c",
+      "acceptedFrameRange": [0, 48],
+      "review": "The full clip failed when the torso began turning at frame 49 and finger count drifted from frame 52. Frames 0-48 retained the deep skull, two-finger hands, grounded legs, and side-view torso and were used in a settled partial reverse return.",
+      "projectAsset": "assets/motion/m2/tyrannosaurus-rex-alert-head-turn-comfyui-wan22-safe-return-i2v-m2-v1.mp4"
+    }
+  ]
+}
