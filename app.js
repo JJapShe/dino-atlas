@@ -13579,6 +13579,26 @@ const generatedImageSamples = {
     },
     {
       kind: "diagnostic only",
+      title: "오비랍토르 M2 머리·목 클린 플레이트 제작 중간재",
+      body: "머리·목과 꼬리를 의도적으로 제거하고 가려졌던 사구 배경을 복원한 모션 합성 전용 클린 플레이트입니다. 실제 M2 영상은 머리 스윕 마스크 영역만 사용하고 원본 꼬리는 모든 프레임에서 고정합니다. 갤러리·대표·해부학 증거로는 절대 노출하거나 승격하지 않습니다.",
+      source: "assets/dinosaurs/oviraptor-philoceratops-head-tail-clean-plate-motion-imagegen-v1.png",
+      variant: "M2 머리·목 부분 동작 클린 플레이트 이미지 생성 v1",
+      src: "assets/dinosaurs/oviraptor-philoceratops-head-tail-clean-plate-motion-imagegen-v1.png",
+      generatedAt: "2026-08-04T07:08:53.792Z",
+      sourceAttribution: "OpenAI built-in precise-object edit; project-owned approved Oviraptor still used as the only visual source",
+      licenseRecord: "Project-owned generated derivative; no external footage or third-party artwork used",
+      generationPromptRecord: "tools/comfyui/motion-m2-pilot-batch-20260804.json#/workflow/imageEdit/prompt",
+      generationSeed: "not exposed by generator",
+      generationWorkflow: "OpenAI precise-object clean-plate edit followed by deterministic FFmpeg compositing under persisted M2 masks",
+      reviewStatus: "motion-production intermediate only; frame, seam, provenance, responsive, and publication gates passed; representative/gallery/anatomy promotion prohibited",
+      metadataRecord: "tools/comfyui/motion-m2-pilot-batch-20260804.json#/workflow/imageEdit",
+      representativeEligible: false,
+      galleryEligible: false,
+      anatomyEligible: false,
+      internalOnly: true,
+    },
+    {
+      kind: "diagnostic only",
       title: "오비랍토르 이전 동일 구도 무늬 변이 퇴역본",
       body: "대표와 해부학은 대체로 일치하지만 자세, 카메라, 실루엣 배치와 사구 배경이 거의 같고 색만 바뀐 구도 중복본입니다. 2026-08-03 자동 구조 유사도 감사와 사람 검토에서 S2 다양성 기준을 통과하지 못해 갤러리와 양성 생성 참조에서 제외했습니다.",
       source: "assets/dinosaurs/oviraptor-philoceratops-aubergine-sage-robust-pattern-imagegen-v3.png",
@@ -22944,6 +22964,229 @@ function renderMotionM1Samples() {
   syncMotionM1SamplePlaybackEvents(grid);
 }
 
+function isMotionM2Published(sample) {
+  const publicationStatus = sample?.review?.publication?.status;
+  const publicationPassed =
+    typeof publicationStatus === "string"
+      ? publicationStatus === "published"
+      : sample?.reviewStatus === "published";
+  if (!publicationPassed) return false;
+  const requiredReviewKeys = [
+    "frameAnatomy",
+    "maskIntegrity",
+    "cleanPlateIntegrity",
+    "motionPlausibility",
+    "backgroundIntegrity",
+    "temporalIntegrity",
+    "responsive",
+  ];
+  const reviewPassed = requiredReviewKeys.every((key) => sample.review?.[key]?.status === "supported");
+  const file = sample?.file;
+  const filePassed =
+    /^[a-f0-9]{64}$/.test(file?.sha256 || "") &&
+    Number.isFinite(file?.bytes) && file.bytes > 0 &&
+    Number.isFinite(file?.width) && file.width > 0 &&
+    Number.isFinite(file?.height) && file.height > 0 &&
+    Number.isFinite(file?.durationSeconds) && file.durationSeconds > 0 &&
+    Number.isFinite(file?.fps) && file.fps > 0 &&
+    Number.isFinite(file?.frameCount) && file.frameCount > 0 &&
+    typeof file?.codec === "string" && file.codec.length > 0 &&
+    typeof file?.pixelFormat === "string" && file.pixelFormat.length > 0 &&
+    file?.audio === false;
+  return reviewPassed && filePassed;
+}
+
+function getMotionM2CreditLabel(credits) {
+  if (typeof credits === "string") return credits.trim();
+  if (Array.isArray(credits)) {
+    return credits.filter((credit) => typeof credit === "string" && credit.trim()).join(" · ");
+  }
+  if (credits && typeof credits === "object") {
+    return Object.values(credits)
+      .filter((credit) => typeof credit === "string" && credit.trim())
+      .join(" · ");
+  }
+  return "";
+}
+
+function getMotionM2SampleCatalog() {
+  const globalSamples = typeof motionM2Samples !== "undefined" ? motionM2Samples : window.motionM2Samples;
+  const globalCatalog =
+    typeof motionM2SampleCatalog !== "undefined" ? motionM2SampleCatalog : window.motionM2SampleCatalog;
+  const catalog = globalCatalog || globalSamples;
+  const sourceSamples = Array.isArray(catalog) ? catalog : catalog?.samples;
+  if (!Array.isArray(sourceSamples)) return { policy: {}, samples: [], isDraftPreview: false };
+  const isDraftPreview =
+    ["localhost", "127.0.0.1"].includes(window.location.hostname) &&
+    new URLSearchParams(window.location.search).get("motionPreview") === "m2";
+
+  const samples = sourceSamples
+    .map((sample) => {
+      const matchedDino = sample?.taxonId ? getDinoById(sample.taxonId) : null;
+      return {
+        ...sample,
+        taxon: sample?.taxon || sample?.scientificName || "",
+        commonName: sample?.commonName || matchedDino?.koreanName || sample?.sceneRoleLabel || sample?.title || "",
+        summary: sample?.summary || sample?.description || "",
+        evidenceBoundary:
+          sample?.evidenceBoundary ||
+          sample?.review?.anatomy?.note ||
+          "M2 움직임은 해부학 또는 행동의 직접 증거가 아닙니다.",
+        credits:
+          sample?.credits ||
+          [sample?.provenance?.sourceLicense, sample?.provenance?.workflow].filter(Boolean),
+        videoPath: sample?.videoPath || sample?.src || "",
+        durationSeconds: sample?.durationSeconds ?? sample?.file?.durationSeconds,
+        fps: sample?.fps ?? sample?.file?.fps,
+        frameCount: sample?.frameCount ?? sample?.file?.frameCount,
+        width: sample?.width ?? sample?.file?.width,
+        height: sample?.height ?? sample?.file?.height,
+      };
+    })
+    .filter((sample) => {
+      const videoPathIsSafe =
+        typeof sample.videoPath === "string" &&
+        !sample.videoPath.includes("..") &&
+        /^assets\/motion\/m2\/[a-z0-9][a-z0-9./-]*-m2-v[0-9]+\.mp4$/i.test(sample.videoPath);
+      return (
+        String(sample.motionTier || sample.tier || "").toUpperCase() === "M2" &&
+        /^[a-z0-9][a-z0-9-]*$/i.test(sample.id || "") &&
+        typeof sample.taxon === "string" && sample.taxon.trim().length > 0 &&
+        typeof sample.commonName === "string" && sample.commonName.trim().length > 0 &&
+        typeof sample.title === "string" && sample.title.trim().length > 0 &&
+        typeof sample.summary === "string" && sample.summary.trim().length > 0 &&
+        typeof sample.motionLabel === "string" && sample.motionLabel.trim().length > 0 &&
+        typeof sample.evidenceBoundary === "string" && sample.evidenceBoundary.trim().length > 0 &&
+        getMotionM2CreditLabel(sample.credits).length > 0 &&
+        sample.representativeEligible !== true &&
+        sample.galleryEligible !== true &&
+        sample.anatomyEligible !== true &&
+        (!sample.motionClass || sample.motionClass === "controlled-partial-body") &&
+        isSafeMotionPosterSource(sample.poster) &&
+        videoPathIsSafe &&
+        Number.isFinite(sample.durationSeconds) && sample.durationSeconds > 0 &&
+        Number.isFinite(sample.fps) && sample.fps > 0 &&
+        Number.isFinite(sample.frameCount) && sample.frameCount > 0 &&
+        Number.isFinite(sample.width) && sample.width > 0 &&
+        Number.isFinite(sample.height) && sample.height > 0 &&
+        (isDraftPreview || isMotionM2Published(sample))
+      );
+    });
+  return { policy: Array.isArray(catalog) ? {} : catalog?.policy || {}, samples, isDraftPreview };
+}
+
+function renderMotionM2SampleCard(sample, playbackPreference, isDraftPreview) {
+  const conservativeLoading = playbackPreference.reducedMotion || playbackPreference.saveData;
+  const published = isMotionM2Published(sample) && !isDraftPreview;
+  const playbackNote = playbackPreference.saveData
+    ? "데이터 절약 설정 · 눌러야 파일을 불러옵니다"
+    : playbackPreference.reducedMotion
+      ? "움직임 줄이기 설정 · 직접 재생만 합니다"
+      : `자동재생 없음 · 눌러서 ${sample.durationSeconds}초 재생`;
+  const dimensions = `${sample.width}×${sample.height} · ${sample.fps}fps · ${sample.frameCount}프레임`;
+  return `
+    <article class="motion-sample-card ${published ? "is-published" : "is-draft"}" data-motion-sample="${escapeHtml(sample.id)}" data-motion-tier="M2" data-motion-playing-label="${escapeHtml(sample.motionLabel)}">
+      <div class="motion-sample-media">
+        <video
+          id="motionM2Video-${escapeHtml(sample.id)}"
+          data-motion-video="${escapeHtml(sample.id)}"
+          data-motion-src="${escapeHtml(sample.videoPath)}"
+          poster="${escapeHtml(sample.poster)}"
+          preload="${conservativeLoading ? "none" : "metadata"}"
+          muted
+          playsinline
+          controlslist="nodownload noremoteplayback"
+          disablepictureinpicture
+          aria-label="${escapeHtml(sample.title)} 움직임 샘플"
+        ></video>
+        <button class="motion-play-button" data-motion-play="${escapeHtml(sample.id)}" type="button" aria-controls="motionM2Video-${escapeHtml(sample.id)}">
+          <span aria-hidden="true">▶</span>
+          눌러서 재생
+        </button>
+        <span class="motion-tier-badge">M2 · 큰 부분 움직임</span>
+        <span class="motion-scene-badge">${published ? "공개 파일 검수 완료" : "M2 로컬 검토용"}</span>
+      </div>
+      <div class="motion-sample-body">
+        <div class="motion-sample-title-row">
+          <div>
+            <p class="eyebrow">${escapeHtml(sample.taxon)}</p>
+            <h4>${escapeHtml(sample.title)}</h4>
+          </div>
+          <span class="motion-review-badge ${published ? "ready" : "pending"}">${published ? "M2 공개 검수 완료" : "M2 로컬 검토용"}</span>
+        </div>
+        <p>${escapeHtml(sample.summary)}</p>
+        <dl class="motion-sample-facts">
+          <div><dt>공룡</dt><dd>${escapeHtml(sample.commonName)}</dd></div>
+          <div><dt>움직임</dt><dd>${escapeHtml(sample.motionLabel)}</dd></div>
+          <div><dt>영상 사양</dt><dd>${escapeHtml(dimensions)}</dd></div>
+          <div><dt>근거 경계</dt><dd>${escapeHtml(sample.evidenceBoundary)}</dd></div>
+        </dl>
+        <p class="motion-playback-note" data-motion-status role="status" aria-live="polite" aria-atomic="true">${escapeHtml(playbackNote)}</p>
+        <div class="motion-sample-footer">
+          <span>M2 · 해부학 증거 아님 · ${escapeHtml(getMotionM2CreditLabel(sample.credits))}</span>
+          <a href="${escapeHtml(sample.videoPath)}" target="_blank" rel="noopener">동영상 파일 열기</a>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function syncMotionM2SamplePlaybackEvents(grid) {
+  grid.querySelectorAll('[data-motion-video]').forEach((video) => {
+    const card = video.closest("[data-motion-sample]");
+    const button = card?.querySelector("[data-motion-play]");
+    const status = card?.querySelector("[data-motion-status]");
+    if (!card || !button || !status) return;
+    video.defaultMuted = true;
+    video.muted = true;
+    video.addEventListener("play", () => {
+      const transferFocus = document.activeElement === button;
+      card.classList.add("is-playing");
+      button.hidden = true;
+      status.textContent = `재생 중 · 소리 없음 · ${card.dataset.motionPlayingLabel}`;
+      if (transferFocus) video.focus({ preventScroll: true });
+    });
+    const markPaused = () => {
+      card.classList.remove("is-playing");
+      button.hidden = false;
+      button.innerHTML = '<span aria-hidden="true">▶</span> 다시 재생';
+      status.textContent = video.ended ? "재생 완료 · 원본 포스터로 돌아갈 수 있습니다" : "일시 정지됨";
+    };
+    video.addEventListener("pause", markPaused);
+    video.addEventListener("ended", markPaused);
+    video.addEventListener("error", () => {
+      card.classList.remove("is-playing");
+      card.classList.add("has-error");
+      button.hidden = false;
+      button.disabled = true;
+      button.textContent = "파일 준비 중";
+      status.textContent = "동영상 파일을 아직 불러올 수 없습니다. 포스터 이미지는 그대로 볼 수 있습니다.";
+    });
+  });
+}
+
+function renderMotionM2Samples() {
+  const lane = $("#motionM2SampleLane");
+  const grid = $("#motionM2SampleGrid");
+  const summary = $("#motionM2SampleSummary");
+  if (!lane || !grid || !summary) return;
+  const { samples, isDraftPreview } = getMotionM2SampleCatalog();
+  lane.hidden = samples.length === 0;
+  if (!samples.length) {
+    grid.innerHTML = "";
+    summary.textContent = "";
+    return;
+  }
+  const playbackPreference = getMotionPlaybackPreference();
+  summary.textContent = isDraftPreview
+    ? `로컬 M2 초안 ${samples.length}개 · 공개 전 해부학·배경·재생 동작을 확인하는 화면입니다.`
+    : `검수 완료 M2 샘플 ${samples.length}개 · 모두 직접 눌렀을 때만 재생됩니다.`;
+  grid.innerHTML = samples
+    .map((sample) => renderMotionM2SampleCard(sample, playbackPreference, isDraftPreview))
+    .join("");
+  syncMotionM2SamplePlaybackEvents(grid);
+}
+
 async function toggleMotionSample(button) {
   const card = button.closest("[data-motion-sample]");
   const video = card?.querySelector("[data-motion-video]");
@@ -29169,6 +29412,11 @@ function fitInitialAtlasFrame(attempt = 0) {
 }
 
 function setView(view, { historyMode = "replace" } = {}) {
+  if (view !== "motion") {
+    $$('[data-motion-video]').forEach((video) => {
+      if (!video.paused) video.pause();
+    });
+  }
   if (view !== "atlas" && state.map.expanded) setMapExpanded(false);
   if (view !== "atlas") state.map.sidebarExpanded = false;
   if (view === "review") {
@@ -29201,6 +29449,7 @@ function setView(view, { historyMode = "replace" } = {}) {
   $("#viewTitle").textContent = {
     atlas: "공룡 계통도 맵",
     catalog: "대표 공룡 도감",
+    motion: "공룡 움직임",
     ecosystems: "시대별 생태 갤러리",
     review: "이미지 검수 화면",
     assetReview: "이미지 검수 워크벤치",
@@ -29247,6 +29496,7 @@ function renderAll() {
   renderEcosystems();
   renderMotionSamples();
   renderMotionM1Samples();
+  renderMotionM2Samples();
   renderReview();
 }
 
@@ -29559,7 +29809,7 @@ function bindEvents() {
   window.addEventListener("hashchange", () => {
     const nextView = window.location.hash.replace("#", "");
     if (
-      ["atlas", "catalog", "ecosystems", "review", "assetReview"].includes(nextView) &&
+      ["atlas", "catalog", "motion", "ecosystems", "review", "assetReview"].includes(nextView) &&
       nextView !== state.view
     ) {
       setView(nextView);
@@ -29615,6 +29865,12 @@ function bindEvents() {
   });
 
   $("#motionM1SampleGrid")?.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-motion-play]");
+    if (!button) return;
+    toggleMotionSample(button);
+  });
+
+  $("#motionM2SampleGrid")?.addEventListener("click", (event) => {
     const button = event.target.closest("[data-motion-play]");
     if (!button) return;
     toggleMotionSample(button);
@@ -29686,7 +29942,7 @@ function bindEvents() {
 }
 
 const initialView = window.location.hash.replace("#", "");
-if (["atlas", "catalog", "ecosystems", "review", "assetReview"].includes(initialView)) {
+if (["atlas", "catalog", "motion", "ecosystems", "review", "assetReview"].includes(initialView)) {
   state.view = initialView;
 }
 

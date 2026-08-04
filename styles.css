@@ -658,14 +658,17 @@ body[data-active-view="atlas"] .metric span {
   overflow-y: auto;
 }
 
-#ecosystemsView.active {
+#ecosystemsView.active,
+#motionView.active {
   display: block;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
 body[data-active-view="ecosystems"] .sidebar-panel,
-body[data-active-view="ecosystems"] .metric-row {
+body[data-active-view="ecosystems"] .metric-row,
+body[data-active-view="motion"] .sidebar-panel,
+body[data-active-view="motion"] .metric-row {
   display: none;
 }
 
@@ -2500,6 +2503,42 @@ button.dummy-image:disabled {
   line-height: 1.6;
 }
 
+.motion-hub {
+  display: grid;
+  min-width: 0;
+  gap: 14px;
+  padding-bottom: 24px;
+}
+
+.motion-hub-intro {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(153, 124, 246, 0.11), transparent 52%),
+    rgba(16, 22, 31, 0.82);
+}
+
+.motion-hub-intro > div {
+  display: grid;
+  max-width: 780px;
+  gap: 7px;
+}
+
+.motion-hub-intro h3 {
+  font-size: 22px;
+}
+
+.motion-hub-intro p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
 .ecosystem-controls {
   position: sticky;
   z-index: 8;
@@ -3251,12 +3290,18 @@ button.dummy-image:disabled {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 10px;
   padding-top: 9px;
   border-top: 1px solid var(--line);
   color: var(--subtle);
   font-size: 10px;
   font-weight: 760;
+}
+
+.motion-sample-footer span {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .motion-sample-footer a {
@@ -3292,6 +3337,31 @@ button.dummy-image:disabled {
 
 .motion-sample-lane--m1 .motion-playback-note {
   color: #f4bd87 !important;
+}
+
+.motion-sample-lane--m2 {
+  border-top-color: rgba(153, 124, 246, 0.4);
+}
+
+.motion-sample-lane--m2 .motion-sample-grid {
+  grid-template-columns: minmax(0, 720px);
+  justify-content: start;
+}
+
+.motion-sample-lane--m2 .motion-sample-card {
+  border-color: rgba(153, 124, 246, 0.34);
+  background:
+    linear-gradient(150deg, rgba(153, 124, 246, 0.12), transparent 46%),
+    rgba(20, 19, 29, 0.9);
+}
+
+.motion-sample-lane--m2 .motion-tier-badge {
+  border-color: rgba(171, 148, 248, 0.54);
+  color: #cbbcfb;
+}
+
+.motion-sample-lane--m2 .motion-playback-note {
+  color: #cbbcfb !important;
 }
 
 .review-layout {
@@ -4347,7 +4417,7 @@ body.lightbox-open {
   }
 
   .nav-tabs {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .review-layout,
@@ -4810,7 +4880,8 @@ body.lightbox-open {
     width: 100%;
   }
 
-  .ecosystem-intro {
+  .ecosystem-intro,
+  .motion-hub-intro {
     align-items: flex-start;
     flex-direction: column;
     padding: 14px;
@@ -4879,6 +4950,11 @@ body.lightbox-open {
   }
 
   .motion-sample-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .motion-sample-lane--m1 .motion-sample-grid,
+  .motion-sample-lane--m2 .motion-sample-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 

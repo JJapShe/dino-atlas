@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "batchId": "motion-m2-pilot-batch-20260804",
+  "useCase": "scientific-educational Dino Atlas controlled M2 partial-body motion pilot",
+  "audienceAgeRange": "5-14",
+  "policy": {
+    "tier": "M2",
+    "scope": "controlled partial-body 2D motion over an approved still",
+    "representativePromotion": "prohibited",
+    "galleryPromotion": "prohibited",
+    "anatomyPromotion": "prohibited",
+    "autoplay": "prohibited",
+    "clickToPlay": "required",
+    "audio": "prohibited",
+    "cameraMotion": "prohibited",
+    "locomotion": "prohibited in M2",
+    "tailMotion": "prohibited in this M2 pilot",
+    "allowedMotion": ["rigid head-and-neck sinusoidal rotation up to plus or minus 4 degrees"],
+    "publicRequires": [
+      "frameAnatomy",
+      "maskIntegrity",
+      "cleanPlateIntegrity",
+      "motionPlausibility",
+      "backgroundIntegrity",
+      "temporalIntegrity",
+      "responsive",
+      "publication"
+    ]
+  },
+  "copyrightSafety": {
+    "status": "project-owned derivative motion asset",
+    "note": "The pilot uses only the named project-owned generated still, a project-generated clean plate, persisted project masks, and a deterministic local FFmpeg composite. No external footage or artwork is used. The clean plate and masks are production components, not gallery or representative candidates."
+  },
+  "workflow": {
+    "generator": "OpenAI built-in precise-object image edit for one clean plate plus local deterministic FFmpeg compositing",
+    "imageEdit": {
+      "generatorCallId": "exec-90dba4e4-c4df-4ee8-b808-1cd1afd4dadd",
+      "seed": "unavailable",
+      "inputProjectAsset": "assets/dinosaurs/oviraptor-philoceratops-robust-lowcrest-rostrum-representative-imagegen-v3.png",
+      "approvedCleanPlate": "assets/dinosaurs/oviraptor-philoceratops-head-tail-clean-plate-motion-imagegen-v1.png",
+      "usageBoundary": "The generated plate removes both head-neck and tail, but this M2 compositor uses only the persisted head sweep mask. The original source tail is retained unchanged in every output frame.",
+      "prompt": "Use case: precise-object-edit.\nAsset type: motion-production clean plate for a scientific educational dinosaur atlas.\nInput image: the attached approved Oviraptor philoceratops still is the edit target.\nPrimary request: remove only (1) the entire head and neck above their connection to the torso and (2) the entire tail from its connection at the rear of the torso to the tail tip. Reconstruct the hidden pale blue sky, small clouds, distant orange dunes, shrubs, and ground naturally behind those two removed regions.\nCritical invariants: keep the torso, shoulder line, hip, both feathered arms and every visible finger, both hind legs and feet, body feathers, ground shadow, vegetation outside the removed regions, lighting, camera, crop, perspective, resolution, and every other pixel-like visual detail as close to the source as possible. Do not alter or move any retained body part. The resulting body is intentionally headless/neckless and tailless because it is a clean background plate used only beneath separately animated original parts.\nAvoid: no new animal parts, no replacement head or neck, no replacement tail, no anatomy invention, no text, no watermark, no camera or color change."
+    },
+    "compositor": "FFmpeg 8.1.1",
+    "compositorSeed": "not applicable; deterministic filter graph",
+    "buildScript": "tools/comfyui/scripts/build_motion_m2_pilot.ps1",
+    "fillMaskBlurSigma": 0.4,
+    "headMaskBlurSigma": 0.4,
+    "motionProfile": {
+      "type": "sinusoidal rigid rotation",
+      "movingPart": "head and neck as one rigid 2D actor",
+      "pivot": { "x": 260, "y": 316 },
+      "amplitudeDegrees": 4,
+      "amplitudeRadians": 0.0698131701,
+      "periodSeconds": 5,
+      "phaseRadians": 0,
+      "expression": "0.0698131701*sin(2*PI*t/5)",
+      "tailMotion": false,
+      "lockedParts": ["torso", "tail", "arms", "fingers", "legs", "feet", "ground", "background", "camera"]
+    },
+    "targetContainer": "MP4",
+    "targetVideoCodec": "H.264",
+    "targetPixelFormat": "yuv420p",
+    "targetDurationSeconds": 5,
+    "targetFps": 24,
+    "targetFrameCount": 120,
+    "targetDimensions": { "width": 960, "height": 640 },
+    "audio": "none",
+    "motionRule": "Move only the persisted original head-and-neck actor with a plus-or-minus four-degree five-second sinusoidal rigid rotation. Keep the torso, tail, arms, fingers, legs, feet, ground, background, lighting, and camera fixed.",
+    "motionQaThresholds": {
+      "significantChannelDifferenceFloor": 3,
+      "sweepMaskDilationPixels": 8,
+      "headActorCoverageMinPercent": 3,
+      "headActorCoverageMaxPercent": 18,
+      "headSweepCoverageMinPercent": 3,
+      "headSweepCoverageMaxPercent": 20,
+      "headSweepSignificantEnergyMin": 3000000,
+      "significantChangeEnergyInsideHeadSweepMinPercent": 98,
+      "protectedRegionMeanMax": 0.15,
+      "protectedRegionP99Max": 3,
+      "protectedRegionMaxMax": 12,
+      "protectedRegionChangedGt6MaxPercent": 0.01,
+      "returnFrameMeanMax": 0.75,
+      "returnSweepSignificantEnergyMax": 1200000
+    },
+    "commands": {
+      "oviraptor-philoceratops-rigid-head-sweep-biological-m2-v1": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/comfyui/scripts/build_motion_m2_pilot.ps1 -Sample oviraptor"
+    }
+  },
+  "samples": {
+    "oviraptor-philoceratops-rigid-head-sweep-biological-m2-v1": {
+      "taxonId": "oviraptor-philoceratops",
+      "sceneRole": "solo",
+      "sourcePoster": "assets/dinosaurs/oviraptor-philoceratops-robust-lowcrest-rostrum-representative-imagegen-v3.png",
+      "cleanPlate": "assets/dinosaurs/oviraptor-philoceratops-head-tail-clean-plate-motion-imagegen-v1.png",
+      "masks": {
+        "authoringSource": "tools/comfyui/motion_masks/oviraptor-philoceratops-head-actor-partial-m2-v1.svg",
+        "authority": "The SVG is a pivot-marker-free binary authoring mask. The three 960x640 PNG files are the authoritative compositor and QA inputs.",
+        "headActor": "tools/comfyui/motion_masks/oviraptor-philoceratops-head-actor-partial-m2-v1.png",
+        "headSweep": "tools/comfyui/motion_masks/oviraptor-philoceratops-head-sweep-partial-m2-v1.png",
+        "lockedBody": "tools/comfyui/motion_masks/oviraptor-philoceratops-locked-body-partial-m2-v1.png"
+      },
+      "projectAsset": "assets/motion/m2/oviraptor-philoceratops-rigid-head-sweep-biological-m2-v1.mp4",
+      "motionClass": "controlled-partial-body",
+      "motionLayer": "one rigid head-and-neck actor rotating through a plus-or-minus four-degree five-second sine wave",
+      "lockedRegions": "torso, original tail, both arms and every visible finger, both legs and feet, ground, vegetation, sky, lighting, and camera",
+      "identityCuesPreserved": [
+        "low conservative crest",
+        "comparatively long deep toothless beak",
+        "short robust feathered torso",
+        "two arms with three-finger hands",
+        "two hind limbs with visible feet",
+        "one short unchanged tail"
+      ],
+      "evidenceBoundary": "The four-degree screen-plane head sweep is a restrained 2D production choice, not direct fossil evidence, a three-dimensional head-turn reconstruction, or a claim about documented Oviraptor behavior. M2 cannot upgrade anatomy, representative, or gallery status.",
+      "scienceReferences": [
+        "Clark, Norell & Rowe 2002, American Museum Novitates 3364",
+        "AMNH FR 6517"
+      ],
+      "file": {
+        "sha256": "ca0063bad6bf000ead1a02f579cf0ef66578c4b2ac9b32f0605c4723a1f3c7b0",
+        "bytes": 363461,
+        "width": 960,
+        "height": 640,
+        "durationSeconds": 5,
+        "fps": 24,
+        "frameCount": 120,
+        "codec": "h264",
+        "pixelFormat": "yuv420p",
+        "container": "mp4",
+        "audio": false
+      },
+      "sourceFiles": {
+        "poster": {
+          "sha256": "b582b01d66f8343e6b778a980d06a21d0ad6414253fe3b06c57a5aad431a51aa",
+          "bytes": 3164408,
+          "width": 1536,
+          "height": 1024
+        },
+        "cleanPlate": {
+          "sha256": "f5885906998ac37d4ef3ae4d50c5034624a13a2726d7901d86f7090225f21841",
+          "bytes": 3043450,
+          "width": 1536,
+          "height": 1024
+        },
+        "headActorMask": {
+          "sha256": "66e0e9cd710c0d4015ec63766510f116bd280f03a77aef7e6e6de194e24776aa",
+          "bytes": 5177,
+          "width": 960,
+          "height": 640
+        },
+        "authoringSvg": {
+          "sha256": "921baf927a2af6668a0a7aa9f69115211d9ad2ce94dbcdc3f296b0ba2b6e86fa",
+          "bytes": 533
+        },
+        "headSweepMask": {
+          "sha256": "e79fd6463d08890abdc823f49eb446e902bbef333823b3f16023857ce2737b0e",
+          "bytes": 6005,
+          "width": 960,
+          "height": 640
+        },
+        "lockedBodyMask": {
+          "sha256": "b1f626e66ac44a80f51234e99458ae0026189ffdf2515375a5955441c9e76bbf",
+          "bytes": 7674,
+          "width": 960,
+          "height": 640
+        },
+        "buildScript": {
+          "sha256": "ca8e3b758c7c5d868d15ff4f1d0d860228ad91e20d413fe5c4b7cc57a1355665",
+          "bytes": 6279
+        }
+      },
+      "motionQa": {
+        "positivePeakComparisonFrames": [0, 30],
+        "negativePeakComparisonFrames": [0, 90],
+        "returnComparisonFrames": [0, 119],
+        "visualCheckpoints": [0, 12, 24, 36, 48, 60, 72, 84, 96, 108, 119],
+        "seamCheckpoints": [0, 24, 48, 72, 96],
+        "contactSheetPolicy": "Full-frame and head-seam contact sheets are temporary QA-only files and are not promoted into repository assets.",
+        "maskCoverage": {
+          "headActorPixels": 35744,
+          "headActorPercent": 5.8177083333,
+          "headSweepPixels": 41939,
+          "headSweepPercent": 6.8260091146,
+          "lockedBodyPixels": 572461,
+          "lockedBodyPercent": 93.1739908854,
+        "dilatedHeadSweepPixels": 50419,
+          "dilatedHeadSweepPercent": 8.2062174479
+        },
+        "calculated": {
+          "positivePeak": {
+            "allSignificantEnergy": 3719708,
+            "headSweepSignificantEnergy": 3709828,
+            "headActorSignificantEnergy": 3014637,
+            "significantChangeEnergyInsideHeadSweepPercent": 99.734387753,
+            "protectedRegionDifference": { "mean": 0.0334733499, "p99": 1, "max": 6, "changedGt6Percent": 0 },
+            "wholeFrameMeanDifference": 2.0742637804
+          },
+          "negativePeak": {
+            "allSignificantEnergy": 3777893,
+            "headSweepSignificantEnergy": 3771153,
+            "headActorSignificantEnergy": 3582968,
+            "significantChangeEnergyInsideHeadSweepPercent": 99.8215936767,
+            "protectedRegionDifference": { "mean": 0.0427165691, "p99": 2, "max": 6, "changedGt6Percent": 0 },
+            "wholeFrameMeanDifference": 2.1171685113
+          },
+          "return": {
+            "allSignificantEnergy": 919366,
+            "headSweepSignificantEnergy": 912797,
+            "headActorSignificantEnergy": 895002,
+            "significantChangeEnergyInsideHeadSweepPercent": 99.2854858674,
+            "protectedRegionDifference": { "mean": 0.0468290007, "p99": 2, "max": 6, "changedGt6Percent": 0 },
+            "wholeFrameMeanDifference": 0.5887239583
+          }
+        },
+        "visualStatus": "pass",
+        "note": "Independent review passed all eleven full-frame and five head-neck seam checkpoints. Both ±4° extrema and all intermediate frames preserve the low crest, long toothless beak, and single head-neck unit; there is no background leak, double contour, bright-dark halo, detachment, or clean-plate ghost. Torso, original tail, arms, hands, legs, feet, background, and camera remain fixed. A static collar was intentionally not used because it increased seam risk. Responsive click-only review also passed at the four required desktop and mobile viewports."
+      },
+      "review": {
+        "anatomy": { "status": "poster-inherited", "note": "The approved source-still anatomy verdict is inherited; M2 supplies no new anatomy evidence." },
+        "frameAnatomy": { "status": "supported", "note": "Eleven full-frame and five head-neck seam checkpoints preserve the low crest, long toothless beak, single head-neck unit, torso, tail, arms, hands, legs, and feet." },
+        "maskIntegrity": { "status": "supported", "note": "Actor, sweep, and locked-body masks are present, hash-recorded, dimension-matched, and nested without uncovered or contradictory pixels." },
+        "cleanPlateIntegrity": { "status": "supported", "note": "Peak and intermediate seam crops show no background leak, double contour, bright-dark halo, detachment, or retained head-neck ghost." },
+        "motionPlausibility": { "status": "supported", "note": "Both four-degree peaks exceed 3,000,000 significant sweep energy, remain above 99.73% localized, and read as one restrained rigid head-neck unit." },
+        "backgroundIntegrity": { "status": "supported", "note": "After an eight-pixel sweep dilation, peak protected-region means are 0.0335 and 0.0427 with p99 at 1 and 2 and max at 6." },
+        "temporalIntegrity": { "status": "supported", "note": "The 120-frame sinusoidal playback and return passed the eleven-frame contact review; no static collar was used because it increased seam risk." },
+        "responsive": { "status": "supported", "note": "Direct #motion access, click-only muted inline playback, cross-tier pause, view-exit pause, and zero horizontal overflow passed at 1440x900, 390x844, 844x390, and 320x700 on 2026-08-04." },
+        "publication": { "status": "published", "note": "M2 passed file, provenance, mask, decoded pixel, frame anatomy, clean-plate, motion, temporal, responsive, accessibility, and discoverability gates on 2026-08-04." },
+        "representativeEligible": false,
+        "galleryEligible": false,
+        "anatomyEligible": false
+      }
+    }
+  }
+}

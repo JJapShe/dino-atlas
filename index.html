@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dino Atlas MVP</title>
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="./styles.css?v=20260803-biological-m1-v1" />
+    <link rel="stylesheet" href="./styles.css?v=20260804-motion-view-m2-v1" />
   </head>
   <body data-active-view="atlas">
     <div class="app-shell">
@@ -33,6 +33,9 @@
           </button>
           <button class="nav-tab" data-view="catalog" type="button">
             <span>도감</span>
+          </button>
+          <button class="nav-tab" data-view="motion" type="button">
+            <span>움직임</span>
           </button>
           <button class="nav-tab" data-view="ecosystems" type="button">
             <span>생태</span>
@@ -329,18 +332,31 @@
               <span>오래된 시기 → 새로운 시기</span>
             </div>
             <div class="ecosystem-grid" id="ecosystemGrid"></div>
+          </section>
+        </section>
 
-            <section class="motion-sample-lane" id="motionSampleLane" aria-labelledby="motionSampleTitle" hidden>
+        <section class="view" id="motionView" aria-label="공룡 움직임 샘플">
+          <section class="motion-hub">
+            <header class="motion-hub-intro">
+              <div>
+                <p class="eyebrow">움직임 실험실</p>
+                <h3>공룡 움직임</h3>
+                <p>더 큰 부분 움직임(M2), 미세한 몸 움직임(M1), 환경만 움직이는 장면(M0)을 분리해 비교합니다. 모든 영상은 직접 눌렀을 때만 재생됩니다.</p>
+              </div>
+              <span class="motion-role-lock">대표·갤러리 승격 금지</span>
+            </header>
+
+            <section class="motion-sample-lane motion-sample-lane--m2" id="motionM2SampleLane" aria-labelledby="motionM2SampleTitle" hidden>
               <header class="motion-sample-heading">
                 <div>
-                  <p class="eyebrow">M0 Ambient Motion</p>
-                  <h3 id="motionSampleTitle">공룡 장면 움직임 샘플</h3>
-                  <p>단독 개체·생태 활동·다른 공룡과의 상호작용 장면을 비교합니다. 공룡과 카메라는 고정하고 숨결·물결·꽃가루·먼지 같은 환경만 움직이며, 눌렀을 때만 재생됩니다.</p>
+                  <p class="eyebrow">M2 Controlled Motion</p>
+                  <h3 id="motionM2SampleTitle">공룡의 더 큰 움직임</h3>
+                  <p>승인된 정지화면을 바탕으로 M1보다 넓은 몸 움직임을 시험합니다. 해부학과 배경 안정성을 별도로 검수하며, 눌렀을 때만 재생됩니다.</p>
                 </div>
                 <span class="motion-role-lock">대표·갤러리 승격 금지</span>
               </header>
-              <p class="motion-sample-summary" id="motionSampleSummary" aria-live="polite"></p>
-              <div class="motion-sample-grid" id="motionSampleGrid"></div>
+              <p class="motion-sample-summary" id="motionM2SampleSummary" aria-live="polite"></p>
+              <div class="motion-sample-grid" id="motionM2SampleGrid"></div>
             </section>
 
             <section class="motion-sample-lane motion-sample-lane--m1" id="motionM1SampleLane" aria-labelledby="motionM1SampleTitle" hidden>
@@ -354,6 +370,19 @@
               </header>
               <p class="motion-sample-summary" id="motionM1SampleSummary" aria-live="polite"></p>
               <div class="motion-sample-grid" id="motionM1SampleGrid"></div>
+            </section>
+
+            <section class="motion-sample-lane" id="motionSampleLane" aria-labelledby="motionSampleTitle" hidden>
+              <header class="motion-sample-heading">
+                <div>
+                  <p class="eyebrow">M0 Ambient Motion</p>
+                  <h3 id="motionSampleTitle">공룡 장면 움직임 샘플</h3>
+                  <p>단독 개체·생태 활동·다른 공룡과의 상호작용 장면을 비교합니다. 공룡과 카메라는 고정하고 숨결·물결·꽃가루·먼지 같은 환경만 움직이며, 눌렀을 때만 재생됩니다.</p>
+                </div>
+                <span class="motion-role-lock">대표·갤러리 승격 금지</span>
+              </header>
+              <p class="motion-sample-summary" id="motionSampleSummary" aria-live="polite"></p>
+              <div class="motion-sample-grid" id="motionSampleGrid"></div>
             </section>
           </section>
         </section>
@@ -415,7 +444,8 @@
   <script src="./ecosystem-scenes.js?v=20260803-candelaria-charcoal-v1"></script>
   <script src="./motion-samples.js?v=20260803-motion-scene-roles-v1"></script>
   <script src="./motion-m1-samples.js?v=20260803-biological-m1-v1"></script>
-  <script src="./app.js?v=20260803-biological-m1-v1"></script>
+  <script src="./motion-m2-samples.js?v=20260804-controlled-m2-v1"></script>
+  <script src="./app.js?v=20260804-motion-view-m2-v1"></script>
     <script src="./atlas-layout.js?v=20260731-resizable-inspector-v1"></script>
   </body>
 </html>
