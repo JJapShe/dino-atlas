@@ -29522,7 +29522,8 @@ function setView(view, { historyMode = "replace" } = {}) {
     const activeTab = $(`.nav-tab[data-view="${view}"]`);
     const navTabs = activeTab?.closest(".nav-tabs");
     if (activeTab && navTabs && navTabs.scrollWidth > navTabs.clientWidth + 1) {
-      activeTab.scrollIntoView({ block: "nearest", inline: "center" });
+      const targetLeft = activeTab.offsetLeft - (navTabs.clientWidth - activeTab.offsetWidth) / 2;
+      navTabs.scrollTo({ left: Math.max(0, targetLeft), behavior: "auto" });
     }
     const activeStrip =
       view === "atlas"
