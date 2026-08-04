@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-08-04T08:05:22.079950+00:00",
+  "status": "published",
+  "policy": {
+    "scope": "ComfyUI-native generative I2V motion review",
+    "representativePromotion": "prohibited",
+    "galleryPromotion": "prohibited",
+    "anatomyPromotion": "prohibited",
+    "autoplay": "prohibited",
+    "publicationGateOrder": [
+      "sourceIntegrity",
+      "workflowIntegrity",
+      "frameAnatomy",
+      "identityContinuity",
+      "limbCountContinuity",
+      "motionPlausibility",
+      "backgroundIntegrity",
+      "cameraIntegrity",
+      "temporalIntegrity",
+      "responsive",
+      "publication"
+    ]
+  },
+  "software": {
+    "comfyUiPath": "C:/Users/USER/Documents/dinosour/tools/comfyui/ComfyUI",
+    "comfyUiVersion": "0.25.0",
+    "comfyUiCommit": "dc3f8f314a987d23115ed278693e76cf6e72a5a0",
+    "comfyUiDescribe": "v0.25.0-30-gdc3f8f31",
+    "python": "3.10.11",
+    "torch": "2.6.0+cu124",
+    "gpu": "NVIDIA GeForce RTX 4080 16GB",
+    "launchFlags": [
+      "--listen 127.0.0.1",
+      "--port 8188",
+      "--disable-auto-launch",
+      "--disable-all-custom-nodes",
+      "--reserve-vram 2"
+    ]
+  },
+  "models": [
+    {
+      "role": "diffusion",
+      "name": "wan2.2_ti2v_5B_fp16.safetensors",
+      "sha256": "456f901338bd9eadbded3828b819109a9b68e8a525ca5cf8d0049a69fcfeca1e",
+      "bytes": 9999658848,
+      "source": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_ti2v_5B_fp16.safetensors",
+      "upstreamModelCard": "https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B",
+      "license": "Apache-2.0"
+    },
+    {
+      "role": "vae",
+      "name": "wan2.2_vae.safetensors",
+      "sha256": "e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156",
+      "bytes": 1409400960,
+      "source": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/vae/wan2.2_vae.safetensors",
+      "license": "Apache-2.0"
+    },
+    {
+      "role": "text-encoder",
+      "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+      "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68",
+      "bytes": 6735906897,
+      "source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+      "license": "Apache-2.0"
+    }
+  ],
+  "workflow": {
+    "template": "tools/comfyui/workflow_templates/dino_wan22_ti2v_5b_i2v_api.json",
+    "templateSha256": "1ad39334305871aea4225e051bdb0c3b0ace0d8a1118358cf743d9d014ffd42a",
+    "runner": "tools/comfyui/scripts/run_motion_m2_i2v_candidate.py",
+    "runnerSha256": "23a44898b08721e82d5b3e98a5a907eb808aa6624fa8e8be4e14523c25c00a42",
+    "runRecord": "tools/comfyui/outputs/motion-m2-i2v-oviraptor-s240804041-f49-run.json",
+    "runRecordSha256": "e2ba3d0fc795b9084ae64bc80331bd179de9bc4cf398915116f2e13267fcb60c",
+    "promptId": "9eb89fdd-1761-4405-8241-06567a563696",
+    "seed": 240804041,
+    "width": 768,
+    "height": 512,
+    "frames": 49,
+    "fps": 24,
+    "steps": 20,
+    "cfg": 5,
+    "sampler": "uni_pc",
+    "scheduler": "simple",
+    "shift": 8,
+    "denoise": 1,
+    "positivePrompt": "Scientific-educational image-to-video. Use the attached approved Oviraptor philoceratops still as the exact identity, anatomy, composition, lighting, and background reference. Exactly one full-body Oviraptor philoceratops: low restrained midline crest, comparatively elongate and deep toothless rostrum, closed beak, compact robust feathered torso, charcoal-gray dorsal plumage, rust throat and neck, pale belly, exactly two forelimbs with three visible fingers on each hand, exactly two hind limbs with stable feet, and one short feathered tail. The head, entire feathered neck, both sides of the neck root, shoulder girdle, and upper chest remain one continuous living structure in every frame. The cervical column bends smoothly across several points with natural soft-tissue and feather continuity; never rotate from a single hinge. Perform one clear but controlled alert glance: smoothly raise the head about five degrees and turn about four degrees toward the camera, with a subtle distributed S-curve through the neck and slight compression and release of the throat and upper-chest feathers, then return to the starting pose. One subtle blink is allowed. Keep the torso, arms, all fingers, legs, feet, tail, ground shadow, camera, crop, background, lighting, exposure, and color stable. Static camera, no zoom, no cut, source-matched first and last frame.",
+    "negativePrompt": "decapitation, severed neck, detached head, floating head, neck stump, background visible through neck attachment, cutout puppet, paper-doll rotation, rigid head-and-neck plate, single hinge pivot, neck collar seam, halo, double contour, transparent gap, clean-plate ghost, discontinuous feathers, sliding feather texture, rubber neck, stretched neck, broken neck, abrupt cervical kink, flicker, morphing, identity drift, crest drift, beak warping, eye drift, duplicate eye, extra head, teeth, open mouth, tongue, tall broad Citipati-like crest, short rectangular Citipati-like skull, modern parrot, owl, cassowary, ostrich, long swan neck, gracile Avimimus-like body, extra or missing limbs, fused limbs, extra or missing fingers, one-claw hand, sickle claw, duplicate tail, missing tail, wing flapping, arm motion, tail motion, walking, foot sliding, body translation, camera motion, pan, zoom, crop change, background change, lighting shift, exposure shift, color shift, text, watermark, logo, signature, low quality, blurry, compression artifacts"
+  },
+  "samples": {
+    "oviraptor-philoceratops-alert-head-turn-comfyui-wan22-i2v-m2-v1": {
+      "taxonId": "oviraptor-philoceratops",
+      "sourcePoster": "assets/dinosaurs/oviraptor-philoceratops-robust-lowcrest-rostrum-representative-imagegen-v3.png",
+      "sourcePosterSha256": "b582b01d66f8343e6b778a980d06a21d0ad6414253fe3b06c57a5aad431a51aa",
+      "sourcePosterBytes": 3164408,
+      "comfyInput": "dino_atlas/motion_m2_i2v/oviraptor-philoceratops-approved-source-v3.png",
+      "sourceLicense": "project-owned generated still",
+      "projectAsset": "assets/motion/m2/oviraptor-philoceratops-alert-head-turn-comfyui-wan22-i2v-m2-v1.mp4",
+      "file": {
+        "sha256": "4b00ba2a3d0146f4a7634b4de3debde5f3a5b02f09898c4d58594391ca154491",
+        "bytes": 586962,
+        "width": 768,
+        "height": 512,
+        "durationSeconds": 2.041667,
+        "fps": 24,
+        "frameCount": 49,
+        "codec": "h264",
+        "pixelFormat": "yuv420p",
+        "container": "mp4",
+        "audio": false
+      },
+      "identityCuesPreserved": [
+        "low restrained midline crest",
+        "comparatively elongate deep toothless rostrum",
+        "closed beak",
+        "rust throat and neck",
+        "charcoal feathered torso",
+        "two forelimbs with three-finger hands",
+        "two hind limbs with stable feet",
+        "one short feathered tail"
+      ],
+      "motion": "one continuous large alert head turn from lateral toward frontal with distributed neck-root and upper-chest deformation",
+      "qa": {
+        "manualFramesReviewed": "all original-size frames 0-48",
+        "checkpointFrames": [0, 12, 24, 36, 48],
+        "focusedCrops": ["head-neck", "arms-hands", "feet", "tail", "torso-shoulder"],
+        "contactSheetPolicy": "Temporary contact sheets remain outside repository assets and cannot substitute for continuous playback review.",
+        "pixelDriftDiagnostic": {
+          "publicationGate": false,
+          "allowedRegion": "x<300 and y<400 at 768x512, covering head, neck, shoulder, and upper chest",
+          "peakFrame": 48,
+          "peakAllowedMeanDifference": 13.6719277778,
+          "peakProtectedMeanDifference": 9.4405269091,
+          "note": "Wan I2V re-renders fine texture across the full frame. Geometry and topology were therefore judged from all-frame original-size review rather than from a deterministic pixel-lock threshold."
+        },
+        "knownLimitations": [
+          "The generated motion turns toward frontal and does not return to the exact source pose within 49 frames.",
+          "Fine feather, ground, and vegetation texture changes slightly even where scene geometry stays fixed.",
+          "The motion is a generated educational visualization, not behavioral or anatomical evidence."
+        ],
+        "visualStatus": "pass-independent-49-of-49"
+      },
+      "review": {
+        "sourceIntegrity": { "status": "supported", "note": "The ComfyUI input copy matches the approved source still SHA-256 exactly." },
+        "workflowIntegrity": { "status": "supported", "note": "The native workflow, prompts, seed, model hashes, ComfyUI commit, and successful run record are preserved." },
+        "frameAnatomy": { "status": "supported", "note": "All 49 original-size frames retain one continuous low-crested Oviraptor body plan." },
+        "identityContinuity": { "status": "supported", "note": "The low crest, toothless rostrum, closed beak, palette, torso, and short tail remain readable through the turn." },
+        "limbCountContinuity": { "status": "supported", "note": "All-frame and checkpoint review retain two forelimbs with three-finger hands, two hind limbs with stable feet, and one tail." },
+        "motionPlausibility": { "status": "supported", "note": "The neck and upper chest deform continuously without the retired single-pivot cutout hinge." },
+        "backgroundIntegrity": { "status": "supported", "note": "Scene geometry stays fixed; fine generated texture drift is recorded as a limitation." },
+        "cameraIntegrity": { "status": "supported", "note": "No pan, zoom, crop change, or cut appears across 49 frames." },
+        "temporalIntegrity": { "status": "supported", "note": "All frames form a continuous turn without gaps, duplicate contours, transient extra limbs, or abrupt frame breaks." },
+        "responsive": { "status": "supported", "note": "Click-only playback, no horizontal overflow, cross-video pause, and view-exit pause passed at 1440x900, 390x844, 844x390, and 320x700." },
+        "publication": { "status": "published", "note": "Independent original-size review of all 49 frames and responsive browser playback QA passed; motion-only publication does not authorize representative, gallery, or anatomy promotion." },
+        "representativeEligible": false,
+        "galleryEligible": false,
+        "anatomyEligible": false
+      }
+    }
+  }
+}

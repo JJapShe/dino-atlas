@@ -1,0 +1,379 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-08-04T08:05:22.079950+00:00",
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "9eb89fdd-1761-4405-8241-06567a563696",
+          "timestamp": 1785830669528
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [],
+          "prompt_id": "9eb89fdd-1761-4405-8241-06567a563696",
+          "timestamp": 1785830669535
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "9eb89fdd-1761-4405-8241-06567a563696",
+          "timestamp": 1785830721745
+        }
+      ]
+    ]
+  },
+  "promptId": "9eb89fdd-1761-4405-8241-06567a563696",
+  "queueResponse": {
+    "prompt_id": "9eb89fdd-1761-4405-8241-06567a563696",
+    "number": 0,
+    "node_errors": {}
+  },
+  "workflow": {
+    "1": {
+      "class_type": "UNETLoader",
+      "inputs": {
+        "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    "2": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "type": "wan",
+        "device": "default"
+      }
+    },
+    "3": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "wan2.2_vae.safetensors"
+      }
+    },
+    "4": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "Scientific-educational image-to-video. Use the attached approved Oviraptor philoceratops still as the exact identity, anatomy, composition, lighting, and background reference. Exactly one full-body Oviraptor philoceratops: low restrained midline crest, comparatively elongate and deep toothless rostrum, closed beak, compact robust feathered torso, charcoal-gray dorsal plumage, rust throat and neck, pale belly, exactly two forelimbs with three visible fingers on each hand, exactly two hind limbs with stable feet, and one short feathered tail.\n\nThe head, entire feathered neck, both sides of the neck root, shoulder girdle, and upper chest remain one continuous living structure in every frame. The cervical column bends smoothly across several points with natural soft-tissue and feather continuity; never rotate from a single hinge. Perform one clear but controlled alert glance: smoothly raise the head about five degrees and turn about four degrees toward the camera, with a subtle distributed S-curve through the neck and slight compression and release of the throat and upper-chest feathers, then return to the starting pose. One subtle blink is allowed. Keep the torso, arms, all fingers, legs, feet, tail, ground shadow, camera, crop, background, lighting, exposure, and color stable. Static camera, no zoom, no cut, source-matched first and last frame.",
+        "clip": [
+          "2",
+          0
+        ]
+      }
+    },
+    "5": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "decapitation, severed neck, detached head, floating head, neck stump, background visible through neck attachment, cutout puppet, paper-doll rotation, rigid head-and-neck plate, single hinge pivot, neck collar seam, halo, double contour, transparent gap, clean-plate ghost, discontinuous feathers, sliding feather texture, rubber neck, stretched neck, broken neck, abrupt cervical kink, flicker, morphing, identity drift, crest drift, beak warping, eye drift, duplicate eye, extra head, teeth, open mouth, tongue, tall broad Citipati-like crest, short rectangular Citipati-like skull, modern parrot, owl, cassowary, ostrich, long swan neck, gracile Avimimus-like body, extra or missing limbs, fused limbs, extra or missing fingers, one-claw hand, sickle claw, duplicate tail, missing tail, wing flapping, arm motion, tail motion, walking, foot sliding, body translation, camera motion, pan, zoom, crop change, background change, lighting shift, exposure shift, color shift, text, watermark, logo, signature, low quality, blurry, compression artifacts",
+        "clip": [
+          "2",
+          0
+        ]
+      }
+    },
+    "6": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "dino_atlas/motion_m2_i2v/oviraptor-philoceratops-approved-source-v3.png"
+      }
+    },
+    "7": {
+      "class_type": "Wan22ImageToVideoLatent",
+      "inputs": {
+        "vae": [
+          "3",
+          0
+        ],
+        "width": 768,
+        "height": 512,
+        "length": 49,
+        "batch_size": 1,
+        "start_image": [
+          "6",
+          0
+        ]
+      }
+    },
+    "8": {
+      "class_type": "ModelSamplingSD3",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "shift": 8
+      }
+    },
+    "9": {
+      "class_type": "KSampler",
+      "inputs": {
+        "seed": 240804041,
+        "steps": 20,
+        "cfg": 5.0,
+        "sampler_name": "uni_pc",
+        "scheduler": "simple",
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "5",
+          0
+        ],
+        "latent_image": [
+          "7",
+          0
+        ],
+        "denoise": 1,
+        "model": [
+          "8",
+          0
+        ]
+      }
+    },
+    "10": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "9",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "11": {
+      "class_type": "CreateVideo",
+      "inputs": {
+        "images": [
+          "10",
+          0
+        ],
+        "fps": 24.0,
+        "bit_depth": 8
+      }
+    },
+    "12": {
+      "class_type": "SaveVideo",
+      "inputs": {
+        "video": [
+          "11",
+          0
+        ],
+        "filename_prefix": "dino_atlas/motion_m2_i2v/oviraptor-philoceratops-alert-glance-wan22-s240804041-f49",
+        "format": "mp4",
+        "codec": "h264"
+      }
+    }
+  },
+  "history": {
+    "prompt": [
+      0,
+      "9eb89fdd-1761-4405-8241-06567a563696",
+      {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+            "type": "wan",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "wan2.2_vae.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "Scientific-educational image-to-video. Use the attached approved Oviraptor philoceratops still as the exact identity, anatomy, composition, lighting, and background reference. Exactly one full-body Oviraptor philoceratops: low restrained midline crest, comparatively elongate and deep toothless rostrum, closed beak, compact robust feathered torso, charcoal-gray dorsal plumage, rust throat and neck, pale belly, exactly two forelimbs with three visible fingers on each hand, exactly two hind limbs with stable feet, and one short feathered tail.\n\nThe head, entire feathered neck, both sides of the neck root, shoulder girdle, and upper chest remain one continuous living structure in every frame. The cervical column bends smoothly across several points with natural soft-tissue and feather continuity; never rotate from a single hinge. Perform one clear but controlled alert glance: smoothly raise the head about five degrees and turn about four degrees toward the camera, with a subtle distributed S-curve through the neck and slight compression and release of the throat and upper-chest feathers, then return to the starting pose. One subtle blink is allowed. Keep the torso, arms, all fingers, legs, feet, tail, ground shadow, camera, crop, background, lighting, exposure, and color stable. Static camera, no zoom, no cut, source-matched first and last frame.",
+            "clip": [
+              "2",
+              0
+            ]
+          }
+        },
+        "5": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "decapitation, severed neck, detached head, floating head, neck stump, background visible through neck attachment, cutout puppet, paper-doll rotation, rigid head-and-neck plate, single hinge pivot, neck collar seam, halo, double contour, transparent gap, clean-plate ghost, discontinuous feathers, sliding feather texture, rubber neck, stretched neck, broken neck, abrupt cervical kink, flicker, morphing, identity drift, crest drift, beak warping, eye drift, duplicate eye, extra head, teeth, open mouth, tongue, tall broad Citipati-like crest, short rectangular Citipati-like skull, modern parrot, owl, cassowary, ostrich, long swan neck, gracile Avimimus-like body, extra or missing limbs, fused limbs, extra or missing fingers, one-claw hand, sickle claw, duplicate tail, missing tail, wing flapping, arm motion, tail motion, walking, foot sliding, body translation, camera motion, pan, zoom, crop change, background change, lighting shift, exposure shift, color shift, text, watermark, logo, signature, low quality, blurry, compression artifacts",
+            "clip": [
+              "2",
+              0
+            ]
+          }
+        },
+        "6": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "dino_atlas/motion_m2_i2v/oviraptor-philoceratops-approved-source-v3.png"
+          }
+        },
+        "7": {
+          "class_type": "Wan22ImageToVideoLatent",
+          "inputs": {
+            "vae": [
+              "3",
+              0
+            ],
+            "width": 768,
+            "height": 512,
+            "length": 49,
+            "batch_size": 1,
+            "start_image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "8": {
+          "class_type": "ModelSamplingSD3",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "shift": 8.0
+          }
+        },
+        "9": {
+          "class_type": "KSampler",
+          "inputs": {
+            "seed": 240804041,
+            "steps": 20,
+            "cfg": 5.0,
+            "sampler_name": "uni_pc",
+            "scheduler": "simple",
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "5",
+              0
+            ],
+            "latent_image": [
+              "7",
+              0
+            ],
+            "denoise": 1.0,
+            "model": [
+              "8",
+              0
+            ]
+          }
+        },
+        "10": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "9",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "11": {
+          "class_type": "CreateVideo",
+          "inputs": {
+            "images": [
+              "10",
+              0
+            ],
+            "fps": 24.0,
+            "bit_depth": 8
+          }
+        },
+        "12": {
+          "class_type": "SaveVideo",
+          "inputs": {
+            "video": [
+              "11",
+              0
+            ],
+            "filename_prefix": "dino_atlas/motion_m2_i2v/oviraptor-philoceratops-alert-glance-wan22-s240804041-f49",
+            "format": "mp4",
+            "codec": "h264"
+          }
+        }
+      },
+      {
+        "client_id": "dino-atlas-motion-m2-i2v",
+        "create_time": 1785830669527
+      },
+      [
+        "12"
+      ]
+    ],
+    "outputs": {
+      "12": {
+        "images": [
+          {
+            "filename": "oviraptor-philoceratops-alert-glance-wan22-s240804041-f49_00001_.mp4",
+            "subfolder": "dino_atlas\\motion_m2_i2v",
+            "type": "output"
+          }
+        ],
+        "animated": [
+          true
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "9eb89fdd-1761-4405-8241-06567a563696",
+            "timestamp": 1785830669528
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [],
+            "prompt_id": "9eb89fdd-1761-4405-8241-06567a563696",
+            "timestamp": 1785830669535
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "9eb89fdd-1761-4405-8241-06567a563696",
+            "timestamp": 1785830721745
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "12": {
+        "node_id": "12",
+        "display_node": "12",
+        "parent_node": null,
+        "real_node_id": "12"
+      }
+    }
+  }
+}

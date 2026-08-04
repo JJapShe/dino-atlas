@@ -213,19 +213,19 @@
             "wholeFrameMeanDifference": 0.5887239583
           }
         },
-        "visualStatus": "pass",
-        "note": "Independent review passed all eleven full-frame and five head-neck seam checkpoints. Both ±4° extrema and all intermediate frames preserve the low crest, long toothless beak, and single head-neck unit; there is no background leak, double contour, bright-dark halo, detachment, or clean-plate ghost. Torso, original tail, arms, hands, legs, feet, background, and camera remain fixed. A static collar was intentionally not used because it increased seam risk. Responsive click-only review also passed at the four required desktop and mobile viewports."
+        "visualStatus": "fail-user-playback",
+        "note": "Static checkpoints showed no halo or background leak, but user playback review on 2026-08-04 correctly identified a severed-neck read. The rigid head-neck plate rotates around one narrow shoulder pivot without distributed cervical or upper-chest deformation, so the sample is retired from publication and retained only as failure evidence."
       },
       "review": {
         "anatomy": { "status": "poster-inherited", "note": "The approved source-still anatomy verdict is inherited; M2 supplies no new anatomy evidence." },
         "frameAnatomy": { "status": "supported", "note": "Eleven full-frame and five head-neck seam checkpoints preserve the low crest, long toothless beak, single head-neck unit, torso, tail, arms, hands, legs, and feet." },
         "maskIntegrity": { "status": "supported", "note": "Actor, sweep, and locked-body masks are present, hash-recorded, dimension-matched, and nested without uncovered or contradictory pixels." },
         "cleanPlateIntegrity": { "status": "supported", "note": "Peak and intermediate seam crops show no background leak, double contour, bright-dark halo, detachment, or retained head-neck ghost." },
-        "motionPlausibility": { "status": "supported", "note": "Both four-degree peaks exceed 3,000,000 significant sweep energy, remain above 99.73% localized, and read as one restrained rigid head-neck unit." },
+        "motionPlausibility": { "status": "not-supported", "note": "User playback review found that the rigid single-pivot head-neck rotation reads as a severed neck at the shoulder transition." },
         "backgroundIntegrity": { "status": "supported", "note": "After an eight-pixel sweep dilation, peak protected-region means are 0.0335 and 0.0427 with p99 at 1 and 2 and max at 6." },
-        "temporalIntegrity": { "status": "supported", "note": "The 120-frame sinusoidal playback and return passed the eleven-frame contact review; no static collar was used because it increased seam risk." },
+        "temporalIntegrity": { "status": "not-supported", "note": "Contact sheets did not reveal the mechanical hinge, but continuous playback makes the neck-root discontinuity visible; this candidate is retired from publication." },
         "responsive": { "status": "supported", "note": "Direct #motion access, click-only muted inline playback, cross-tier pause, view-exit pause, and zero horizontal overflow passed at 1440x900, 390x844, 844x390, and 320x700 on 2026-08-04." },
-        "publication": { "status": "published", "note": "M2 passed file, provenance, mask, decoded pixel, frame anatomy, clean-plate, motion, temporal, responsive, accessibility, and discoverability gates on 2026-08-04." },
+        "publication": { "status": "review-hold", "note": "Withdrawn from the public motion lane after user playback review found a severed-neck read; retained only as failure evidence for the I2V replacement route." },
         "representativeEligible": false,
         "galleryEligible": false,
         "anatomyEligible": false

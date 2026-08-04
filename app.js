@@ -22966,20 +22966,31 @@ function renderMotionM1Samples() {
 
 function isMotionM2Published(sample) {
   const publicationStatus = sample?.review?.publication?.status;
-  const publicationPassed =
-    typeof publicationStatus === "string"
-      ? publicationStatus === "published"
-      : sample?.reviewStatus === "published";
+  const publicationPassed = publicationStatus === "published" && sample?.reviewStatus === "published";
   if (!publicationPassed) return false;
-  const requiredReviewKeys = [
-    "frameAnatomy",
-    "maskIntegrity",
-    "cleanPlateIntegrity",
-    "motionPlausibility",
-    "backgroundIntegrity",
-    "temporalIntegrity",
-    "responsive",
-  ];
+  const requiredReviewKeys =
+    sample?.motionClass === "generative-i2v"
+      ? [
+          "sourceIntegrity",
+          "workflowIntegrity",
+          "frameAnatomy",
+          "identityContinuity",
+          "limbCountContinuity",
+          "motionPlausibility",
+          "backgroundIntegrity",
+          "cameraIntegrity",
+          "temporalIntegrity",
+          "responsive",
+        ]
+      : [
+          "frameAnatomy",
+          "maskIntegrity",
+          "cleanPlateIntegrity",
+          "motionPlausibility",
+          "backgroundIntegrity",
+          "temporalIntegrity",
+          "responsive",
+        ];
   const reviewPassed = requiredReviewKeys.every((key) => sample.review?.[key]?.status === "supported");
   const file = sample?.file;
   const filePassed =
@@ -23011,14 +23022,31 @@ function getMotionM2CreditLabel(credits) {
 
 function getMotionM2SampleCatalog() {
   const globalSamples = typeof motionM2Samples !== "undefined" ? motionM2Samples : window.motionM2Samples;
-  const globalCatalog =
+  const controlledCatalog =
     typeof motionM2SampleCatalog !== "undefined" ? motionM2SampleCatalog : window.motionM2SampleCatalog;
-  const catalog = globalCatalog || globalSamples;
-  const sourceSamples = Array.isArray(catalog) ? catalog : catalog?.samples;
-  if (!Array.isArray(sourceSamples)) return { policy: {}, samples: [], isDraftPreview: false };
-  const isDraftPreview =
-    ["localhost", "127.0.0.1"].includes(window.location.hostname) &&
-    new URLSearchParams(window.location.search).get("motionPreview") === "m2";
+  const i2vCatalog =
+    typeof motionM2I2VSampleCatalog !== "undefined"
+      ? motionM2I2VSampleCatalog
+      : window.motionM2I2VSampleCatalog;
+  const baseCatalog = controlledCatalog || globalSamples;
+  const controlledSamples = Array.isArray(baseCatalog) ? baseCatalog : baseCatalog?.samples;
+  const i2vSamples = Array.isArray(i2vCatalog) ? i2vCatalog : i2vCatalog?.samples;
+  const isLocalHost = ["localhost", "127.0.0.1"].includes(window.location.hostname);
+  const requestedPreview = new URLSearchParams(window.location.search).get("motionPreview");
+  const previewMode = isLocalHost && ["m2", "i2v"].includes(requestedPreview) ? requestedPreview : "";
+  const isDraftPreview = Boolean(previewMode);
+  const sourceSamples = [
+    ...(Array.isArray(controlledSamples)
+      ? controlledSamples.map((sample) => ({ ...sample, motionCatalogKind: "controlled" }))
+      : []),
+    ...(previewMode !== "m2" && Array.isArray(i2vSamples)
+      ? i2vSamples.map((sample) => ({ ...sample, motionCatalogKind: "i2v" }))
+      : []),
+  ];
+  if (!sourceSamples.length) {
+    return { policy: {}, samples: [], isDraftPreview, previewMode };
+  }
+  const allowedMotionClasses = new Set(["controlled-partial-body", "generative-i2v"]);
 
   const samples = sourceSamples
     .map((sample) => {
@@ -23035,6 +23063,9 @@ function getMotionM2SampleCatalog() {
         credits:
           sample?.credits ||
           [sample?.provenance?.sourceLicense, sample?.provenance?.workflow].filter(Boolean),
+        pipelineLabel:
+          sample?.pipelineLabel ||
+          (sample?.motionCatalogKind === "i2v" ? "생성형 I2V" : "제어형 2D 합성"),
         videoPath: sample?.videoPath || sample?.src || "",
         durationSeconds: sample?.durationSeconds ?? sample?.file?.durationSeconds,
         fps: sample?.fps ?? sample?.file?.fps,
@@ -23061,7 +23092,10 @@ function getMotionM2SampleCatalog() {
         sample.representativeEligible !== true &&
         sample.galleryEligible !== true &&
         sample.anatomyEligible !== true &&
-        (!sample.motionClass || sample.motionClass === "controlled-partial-body") &&
+        allowedMotionClasses.has(sample.motionClass) &&
+        (sample.motionCatalogKind === "i2v"
+          ? sample.motionClass === "generative-i2v"
+          : sample.motionClass === "controlled-partial-body") &&
         isSafeMotionPosterSource(sample.poster) &&
         videoPathIsSafe &&
         Number.isFinite(sample.durationSeconds) && sample.durationSeconds > 0 &&
@@ -23072,12 +23106,23 @@ function getMotionM2SampleCatalog() {
         (isDraftPreview || isMotionM2Published(sample))
       );
     });
-  return { policy: Array.isArray(catalog) ? {} : catalog?.policy || {}, samples, isDraftPreview };
+  return {
+    policy: {
+      controlled: Array.isArray(baseCatalog) ? {} : baseCatalog?.policy || {},
+      i2v: Array.isArray(i2vCatalog) ? {} : i2vCatalog?.policy || {},
+    },
+    samples,
+    isDraftPreview,
+    previewMode,
+  };
 }
 
 function renderMotionM2SampleCard(sample, playbackPreference, isDraftPreview) {
   const conservativeLoading = playbackPreference.reducedMotion || playbackPreference.saveData;
+  const isI2V = sample.motionClass === "generative-i2v";
   const published = isMotionM2Published(sample) && !isDraftPreview;
+  const tierLabel = isI2V ? "M2 · 생성형 I2V" : "M2 · 큰 부분 움직임";
+  const localReviewLabel = isI2V ? "새 I2V 비교 후보" : "기존 제어형 M2 보류";
   const playbackNote = playbackPreference.saveData
     ? "데이터 절약 설정 · 눌러야 파일을 불러옵니다"
     : playbackPreference.reducedMotion
@@ -23085,7 +23130,7 @@ function renderMotionM2SampleCard(sample, playbackPreference, isDraftPreview) {
       : `자동재생 없음 · 눌러서 ${sample.durationSeconds}초 재생`;
   const dimensions = `${sample.width}×${sample.height} · ${sample.fps}fps · ${sample.frameCount}프레임`;
   return `
-    <article class="motion-sample-card ${published ? "is-published" : "is-draft"}" data-motion-sample="${escapeHtml(sample.id)}" data-motion-tier="M2" data-motion-playing-label="${escapeHtml(sample.motionLabel)}">
+    <article class="motion-sample-card ${published ? "is-published" : "is-draft"}" data-motion-sample="${escapeHtml(sample.id)}" data-motion-tier="M2" data-motion-pipeline="${escapeHtml(sample.motionCatalogKind)}" data-motion-playing-label="${escapeHtml(sample.motionLabel)}">
       <div class="motion-sample-media">
         <video
           id="motionM2Video-${escapeHtml(sample.id)}"
@@ -23103,8 +23148,8 @@ function renderMotionM2SampleCard(sample, playbackPreference, isDraftPreview) {
           <span aria-hidden="true">▶</span>
           눌러서 재생
         </button>
-        <span class="motion-tier-badge">M2 · 큰 부분 움직임</span>
-        <span class="motion-scene-badge">${published ? "공개 파일 검수 완료" : "M2 로컬 검토용"}</span>
+        <span class="motion-tier-badge">${escapeHtml(tierLabel)}</span>
+        <span class="motion-scene-badge">${published ? "공개 파일 검수 완료" : escapeHtml(localReviewLabel)}</span>
       </div>
       <div class="motion-sample-body">
         <div class="motion-sample-title-row">
@@ -23112,18 +23157,19 @@ function renderMotionM2SampleCard(sample, playbackPreference, isDraftPreview) {
             <p class="eyebrow">${escapeHtml(sample.taxon)}</p>
             <h4>${escapeHtml(sample.title)}</h4>
           </div>
-          <span class="motion-review-badge ${published ? "ready" : "pending"}">${published ? "M2 공개 검수 완료" : "M2 로컬 검토용"}</span>
+          <span class="motion-review-badge ${published ? "ready" : "pending"}">${published ? "M2 공개 검수 완료" : escapeHtml(localReviewLabel)}</span>
         </div>
         <p>${escapeHtml(sample.summary)}</p>
         <dl class="motion-sample-facts">
           <div><dt>공룡</dt><dd>${escapeHtml(sample.commonName)}</dd></div>
+          <div><dt>제작 방식</dt><dd>${escapeHtml(sample.pipelineLabel)}</dd></div>
           <div><dt>움직임</dt><dd>${escapeHtml(sample.motionLabel)}</dd></div>
           <div><dt>영상 사양</dt><dd>${escapeHtml(dimensions)}</dd></div>
           <div><dt>근거 경계</dt><dd>${escapeHtml(sample.evidenceBoundary)}</dd></div>
         </dl>
         <p class="motion-playback-note" data-motion-status role="status" aria-live="polite" aria-atomic="true">${escapeHtml(playbackNote)}</p>
         <div class="motion-sample-footer">
-          <span>M2 · 해부학 증거 아님 · ${escapeHtml(getMotionM2CreditLabel(sample.credits))}</span>
+          <span>${isI2V ? "M2 I2V" : "M2"} · 해부학 증거 아님 · ${escapeHtml(getMotionM2CreditLabel(sample.credits))}</span>
           <a href="${escapeHtml(sample.videoPath)}" target="_blank" rel="noopener">동영상 파일 열기</a>
         </div>
       </div>
@@ -23170,7 +23216,7 @@ function renderMotionM2Samples() {
   const grid = $("#motionM2SampleGrid");
   const summary = $("#motionM2SampleSummary");
   if (!lane || !grid || !summary) return;
-  const { samples, isDraftPreview } = getMotionM2SampleCatalog();
+  const { samples, isDraftPreview, previewMode } = getMotionM2SampleCatalog();
   lane.hidden = samples.length === 0;
   if (!samples.length) {
     grid.innerHTML = "";
@@ -23178,9 +23224,14 @@ function renderMotionM2Samples() {
     return;
   }
   const playbackPreference = getMotionPlaybackPreference();
-  summary.textContent = isDraftPreview
-    ? `로컬 M2 초안 ${samples.length}개 · 공개 전 해부학·배경·재생 동작을 확인하는 화면입니다.`
-    : `검수 완료 M2 샘플 ${samples.length}개 · 모두 직접 눌렀을 때만 재생됩니다.`;
+  const controlledCount = samples.filter((sample) => sample.motionCatalogKind === "controlled").length;
+  const i2vCount = samples.filter((sample) => sample.motionCatalogKind === "i2v").length;
+  summary.textContent =
+    previewMode === "i2v"
+      ? `로컬 M2 비교 · 기존 제어형 ${controlledCount}개 + 새 I2V 후보 ${i2vCount}개 · 직접 눌러 비교합니다.`
+      : previewMode === "m2"
+        ? `로컬 제어형 M2 ${controlledCount}개 · 보류된 기존 후보만 확인합니다.`
+        : `검수 완료 M2 샘플 ${samples.length}개 · 모두 직접 눌렀을 때만 재생됩니다.`;
   grid.innerHTML = samples
     .map((sample) => renderMotionM2SampleCard(sample, playbackPreference, isDraftPreview))
     .join("");
