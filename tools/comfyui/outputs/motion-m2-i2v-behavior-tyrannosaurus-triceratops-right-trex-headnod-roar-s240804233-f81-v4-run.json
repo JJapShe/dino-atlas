@@ -1,0 +1,434 @@
+{
+  "schemaVersion": 2,
+  "candidateId": "tyrannosaurus-rex-triceratops-right-trex-headnod-roar-f81-v4",
+  "taxonId": "tyrannosaurus-rex",
+  "queuedAt": "2026-08-04T11:47:47.773626+00:00",
+  "completedAt": "2026-08-04T11:48:58.350268+00:00",
+  "elapsedSeconds": 70.577,
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "2438b9b9-0ae5-4b21-897b-98bf7fea2e72",
+          "timestamp": 1785844067784
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [
+            "1",
+            "2",
+            "3",
+            "6",
+            "7",
+            "8"
+          ],
+          "prompt_id": "2438b9b9-0ae5-4b21-897b-98bf7fea2e72",
+          "timestamp": 1785844067790
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "2438b9b9-0ae5-4b21-897b-98bf7fea2e72",
+          "timestamp": 1785844137695
+        }
+      ]
+    ]
+  },
+  "promptId": "2438b9b9-0ae5-4b21-897b-98bf7fea2e72",
+  "queueResponse": {
+    "prompt_id": "2438b9b9-0ae5-4b21-897b-98bf7fea2e72",
+    "number": 20,
+    "node_errors": {}
+  },
+  "provenance": {
+    "spec": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\motion-m2-i2v-forward-candidates-20260804.json",
+    "specSha256": "d734e0d90314a5e2492f3f43b40d13c0d569112bf01dad829e8b064fef8fa0db",
+    "template": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\workflow_templates\\dino_wan22_ti2v_5b_i2v_long_api.json",
+    "templateSha256": "eba1778a281c9d81c7f62d8ac2e75aa73573b8845b2fdf60f0d6ca48750404e2",
+    "runner": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\scripts\\run_motion_m2_i2v_long_candidate.py",
+    "runnerSha256": "7c861c8733644959d5d9b7504f058f7f92875cfd944e36f5217baa8e2efd7970",
+    "comfyInput": "C:\\Users\\USER\\Documents\\dinosour\\tools\\comfyui\\ComfyUI\\input\\dino_atlas\\motion_m2_i2v_behavior\\tyrannosaurus-rex-triceratops-approved-misty-standoff-v1.png",
+    "comfyInputSha256": "caf92b6f9247227dc7d0c559eff7c13395e43902821e275e78fd5d81dcfcb4d8",
+    "comfyInputWidth": 1536,
+    "comfyInputHeight": 1024,
+    "outputAspectWidth": 768,
+    "outputAspectHeight": 512,
+    "sourcePoster": "assets/dinosaurs/tyrannosaurus-rex-triceratops-misty-channel-standoff-ecology-imagegen-v1.png",
+    "sourcePosterSha256": "caf92b6f9247227dc7d0c559eff7c13395e43902821e275e78fd5d81dcfcb4d8",
+    "sourceLicense": "project-owned generated still",
+    "sourceReviewStatus": "approved interaction gallery slot; anatomy-review evidence tier; motion use only"
+  },
+  "runConfig": {
+    "width": 768,
+    "height": 512,
+    "frames": 81,
+    "fps": 16,
+    "durationSeconds": 5.0625,
+    "steps": 20,
+    "cfg": 5,
+    "sampler": "uni_pc",
+    "scheduler": "simple",
+    "shift": 8,
+    "denoise": 1,
+    "effectiveDurationSeconds": 5.0625,
+    "seed": 240804233,
+    "inputName": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-triceratops-approved-misty-standoff-v1.png",
+    "outputPrefix": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-triceratops-right-trex-headnod-roar-wan22-s240804233-f81",
+    "positivePrompt": "Static locked wide camera, one continuous five-second shot with no cuts. Preserve the attached approved still as the exact first-frame anatomy, identity, composition, lighting, and background reference. There are exactly two dinosaurs. The large dark grey horned quadruped filling the LEFT foreground is Triceratops. Freeze every pixel of that left Triceratops for the entire shot: its closed mouth, head, three horns, frill, torso, four feet, and tail never move or change. The smaller brown biped standing on the RIGHT background bank is Tyrannosaurus rex. Animate ONLY the head, short neck, throat, and lower jaw of that RIGHT brown Tyrannosaurus. Freeze its torso, pelvis, hips, both planted hind feet, toes, two tiny arms, and complete tail at their exact source coordinates. First, the RIGHT Tyrannosaurus holds still with its mouth closed. Next it makes one small controlled downward head nod of about five degrees without moving forward. Then it raises the head slightly and opens only its lower jaw smoothly in one direction to a moderate twenty-five-degree gape. The throat expands once and the final second holds the open-mouth silent roar. It never closes the jaw, returns, recoils, lunges, repeats, or reverses. Preserve the RIGHT Tyrannosaurus deep broad side-profile skull, stable teeth, low tongue, dark mouth interior, and uninterrupted neck attachment. Keep the stream visibly separating both dinosaurs. No contact, attack, injury, or panic. Silent, non-graphic generated display hypothesis for ages five to fourteen.",
+    "negativePrompt": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts, any motion in the LEFT foreground Triceratops, Triceratops mouth opening, Triceratops jaw movement, Triceratops roar, Triceratops head movement, Triceratops horn movement, Triceratops frill movement, Triceratops step, missing Triceratops horn, extra Triceratops horn, warped Triceratops frill, motion in RIGHT Tyrannosaurus torso, pelvis, hips, legs, ankles, feet, toes, arms, or tail, wrong dinosaur moving, foot sliding, foot lift, toe reshaping, knee bending, leg reshaping, extra leg, missing leg, fused leg, duplicated foot, tail swing, split tail, body translation, body turn, forward lunge, backward recoil, head thrust, neck stretch, neck shortening, neck folding, frontal Tyrannosaurus head, Tyrannosaurus mouth closing after opening, cyclic motion, reversed motion, repeated nod, repeated roar, jaw snap, bite, attack, collision, crossing stream, animal overlap, detached jaw, split jaw, rubber mouth, upper skull bending, skull melting, extra tooth rows, changing teeth, floating teeth, duplicate tongue, forked tongue, saliva, drool, blood, wound, prey panic, camera movement"
+  },
+  "workflow": {
+    "1": {
+      "class_type": "UNETLoader",
+      "inputs": {
+        "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    "2": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "type": "wan",
+        "device": "default"
+      }
+    },
+    "3": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "wan2.2_vae.safetensors"
+      }
+    },
+    "4": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "Static locked wide camera, one continuous five-second shot with no cuts. Preserve the attached approved still as the exact first-frame anatomy, identity, composition, lighting, and background reference. There are exactly two dinosaurs. The large dark grey horned quadruped filling the LEFT foreground is Triceratops. Freeze every pixel of that left Triceratops for the entire shot: its closed mouth, head, three horns, frill, torso, four feet, and tail never move or change. The smaller brown biped standing on the RIGHT background bank is Tyrannosaurus rex. Animate ONLY the head, short neck, throat, and lower jaw of that RIGHT brown Tyrannosaurus. Freeze its torso, pelvis, hips, both planted hind feet, toes, two tiny arms, and complete tail at their exact source coordinates. First, the RIGHT Tyrannosaurus holds still with its mouth closed. Next it makes one small controlled downward head nod of about five degrees without moving forward. Then it raises the head slightly and opens only its lower jaw smoothly in one direction to a moderate twenty-five-degree gape. The throat expands once and the final second holds the open-mouth silent roar. It never closes the jaw, returns, recoils, lunges, repeats, or reverses. Preserve the RIGHT Tyrannosaurus deep broad side-profile skull, stable teeth, low tongue, dark mouth interior, and uninterrupted neck attachment. Keep the stream visibly separating both dinosaurs. No contact, attack, injury, or panic. Silent, non-graphic generated display hypothesis for ages five to fourteen.",
+        "clip": [
+          "2",
+          0
+        ]
+      }
+    },
+    "5": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts, any motion in the LEFT foreground Triceratops, Triceratops mouth opening, Triceratops jaw movement, Triceratops roar, Triceratops head movement, Triceratops horn movement, Triceratops frill movement, Triceratops step, missing Triceratops horn, extra Triceratops horn, warped Triceratops frill, motion in RIGHT Tyrannosaurus torso, pelvis, hips, legs, ankles, feet, toes, arms, or tail, wrong dinosaur moving, foot sliding, foot lift, toe reshaping, knee bending, leg reshaping, extra leg, missing leg, fused leg, duplicated foot, tail swing, split tail, body translation, body turn, forward lunge, backward recoil, head thrust, neck stretch, neck shortening, neck folding, frontal Tyrannosaurus head, Tyrannosaurus mouth closing after opening, cyclic motion, reversed motion, repeated nod, repeated roar, jaw snap, bite, attack, collision, crossing stream, animal overlap, detached jaw, split jaw, rubber mouth, upper skull bending, skull melting, extra tooth rows, changing teeth, floating teeth, duplicate tongue, forked tongue, saliva, drool, blood, wound, prey panic, camera movement",
+        "clip": [
+          "2",
+          0
+        ]
+      }
+    },
+    "6": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-triceratops-approved-misty-standoff-v1.png"
+      }
+    },
+    "7": {
+      "class_type": "Wan22ImageToVideoLatent",
+      "inputs": {
+        "vae": [
+          "3",
+          0
+        ],
+        "width": 768,
+        "height": 512,
+        "length": 81,
+        "batch_size": 1,
+        "start_image": [
+          "6",
+          0
+        ]
+      }
+    },
+    "8": {
+      "class_type": "ModelSamplingSD3",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "shift": 8
+      }
+    },
+    "9": {
+      "class_type": "KSampler",
+      "inputs": {
+        "seed": 240804233,
+        "steps": 20,
+        "cfg": 5,
+        "sampler_name": "uni_pc",
+        "scheduler": "simple",
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "5",
+          0
+        ],
+        "latent_image": [
+          "7",
+          0
+        ],
+        "denoise": 1,
+        "model": [
+          "8",
+          0
+        ]
+      }
+    },
+    "10": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "9",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "11": {
+      "class_type": "CreateVideo",
+      "inputs": {
+        "images": [
+          "10",
+          0
+        ],
+        "fps": 16,
+        "bit_depth": 8
+      }
+    },
+    "12": {
+      "class_type": "SaveVideo",
+      "inputs": {
+        "video": [
+          "11",
+          0
+        ],
+        "filename_prefix": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-triceratops-right-trex-headnod-roar-wan22-s240804233-f81",
+        "format": "mp4",
+        "codec": "h264"
+      }
+    }
+  },
+  "history": {
+    "prompt": [
+      20,
+      "2438b9b9-0ae5-4b21-897b-98bf7fea2e72",
+      {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+            "type": "wan",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "wan2.2_vae.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "Static locked wide camera, one continuous five-second shot with no cuts. Preserve the attached approved still as the exact first-frame anatomy, identity, composition, lighting, and background reference. There are exactly two dinosaurs. The large dark grey horned quadruped filling the LEFT foreground is Triceratops. Freeze every pixel of that left Triceratops for the entire shot: its closed mouth, head, three horns, frill, torso, four feet, and tail never move or change. The smaller brown biped standing on the RIGHT background bank is Tyrannosaurus rex. Animate ONLY the head, short neck, throat, and lower jaw of that RIGHT brown Tyrannosaurus. Freeze its torso, pelvis, hips, both planted hind feet, toes, two tiny arms, and complete tail at their exact source coordinates. First, the RIGHT Tyrannosaurus holds still with its mouth closed. Next it makes one small controlled downward head nod of about five degrees without moving forward. Then it raises the head slightly and opens only its lower jaw smoothly in one direction to a moderate twenty-five-degree gape. The throat expands once and the final second holds the open-mouth silent roar. It never closes the jaw, returns, recoils, lunges, repeats, or reverses. Preserve the RIGHT Tyrannosaurus deep broad side-profile skull, stable teeth, low tongue, dark mouth interior, and uninterrupted neck attachment. Keep the stream visibly separating both dinosaurs. No contact, attack, injury, or panic. Silent, non-graphic generated display hypothesis for ages five to fourteen.",
+            "clip": [
+              "2",
+              0
+            ]
+          }
+        },
+        "5": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts, any motion in the LEFT foreground Triceratops, Triceratops mouth opening, Triceratops jaw movement, Triceratops roar, Triceratops head movement, Triceratops horn movement, Triceratops frill movement, Triceratops step, missing Triceratops horn, extra Triceratops horn, warped Triceratops frill, motion in RIGHT Tyrannosaurus torso, pelvis, hips, legs, ankles, feet, toes, arms, or tail, wrong dinosaur moving, foot sliding, foot lift, toe reshaping, knee bending, leg reshaping, extra leg, missing leg, fused leg, duplicated foot, tail swing, split tail, body translation, body turn, forward lunge, backward recoil, head thrust, neck stretch, neck shortening, neck folding, frontal Tyrannosaurus head, Tyrannosaurus mouth closing after opening, cyclic motion, reversed motion, repeated nod, repeated roar, jaw snap, bite, attack, collision, crossing stream, animal overlap, detached jaw, split jaw, rubber mouth, upper skull bending, skull melting, extra tooth rows, changing teeth, floating teeth, duplicate tongue, forked tongue, saliva, drool, blood, wound, prey panic, camera movement",
+            "clip": [
+              "2",
+              0
+            ]
+          }
+        },
+        "6": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-triceratops-approved-misty-standoff-v1.png"
+          }
+        },
+        "7": {
+          "class_type": "Wan22ImageToVideoLatent",
+          "inputs": {
+            "vae": [
+              "3",
+              0
+            ],
+            "width": 768,
+            "height": 512,
+            "length": 81,
+            "batch_size": 1,
+            "start_image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "8": {
+          "class_type": "ModelSamplingSD3",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "shift": 8.0
+          }
+        },
+        "9": {
+          "class_type": "KSampler",
+          "inputs": {
+            "seed": 240804233,
+            "steps": 20,
+            "cfg": 5.0,
+            "sampler_name": "uni_pc",
+            "scheduler": "simple",
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "5",
+              0
+            ],
+            "latent_image": [
+              "7",
+              0
+            ],
+            "denoise": 1.0,
+            "model": [
+              "8",
+              0
+            ]
+          }
+        },
+        "10": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "9",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "11": {
+          "class_type": "CreateVideo",
+          "inputs": {
+            "images": [
+              "10",
+              0
+            ],
+            "fps": 16.0,
+            "bit_depth": 8
+          }
+        },
+        "12": {
+          "class_type": "SaveVideo",
+          "inputs": {
+            "video": [
+              "11",
+              0
+            ],
+            "filename_prefix": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-triceratops-right-trex-headnod-roar-wan22-s240804233-f81",
+            "format": "mp4",
+            "codec": "h264"
+          }
+        }
+      },
+      {
+        "client_id": "dino-atlas-motion-m2-i2v-long",
+        "create_time": 1785844067784
+      },
+      [
+        "12"
+      ]
+    ],
+    "outputs": {
+      "12": {
+        "images": [
+          {
+            "filename": "tyrannosaurus-rex-triceratops-right-trex-headnod-roar-wan22-s240804233-f81_00001_.mp4",
+            "subfolder": "dino_atlas\\motion_m2_i2v_behavior",
+            "type": "output"
+          }
+        ],
+        "animated": [
+          true
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "2438b9b9-0ae5-4b21-897b-98bf7fea2e72",
+            "timestamp": 1785844067784
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "1",
+              "2",
+              "3",
+              "6",
+              "7",
+              "8"
+            ],
+            "prompt_id": "2438b9b9-0ae5-4b21-897b-98bf7fea2e72",
+            "timestamp": 1785844067790
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "2438b9b9-0ae5-4b21-897b-98bf7fea2e72",
+            "timestamp": 1785844137695
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "12": {
+        "node_id": "12",
+        "display_node": "12",
+        "parent_node": null,
+        "real_node_id": "12"
+      }
+    }
+  }
+}

@@ -482,6 +482,7 @@ function checkPostProcess(postProcess, sample, owner) {
   }
   const allowedTypes = new Set([
     "safe-prefix-last-frame-hold",
+    "safe-prefix-slow-forward",
     "safe-prefix-reverse-return",
     "safe-prefix-slow-hold-reverse-return",
     "safe-prefix-double-reverse-return",
@@ -533,6 +534,58 @@ function checkPostProcess(postProcess, sample, owner) {
     }
     if (Number.isInteger(acceptedFrameCount) && Number.isInteger(postProcess.holdFrames)) {
       expectedFinalFrames = acceptedFrameCount + postProcess.holdFrames;
+    }
+  } else if (postProcess.type === "safe-prefix-slow-forward") {
+    const forwardRange = postProcess.forwardFrameRange;
+    const validForward = validRange && acceptedEnd >= 1
+      && sameArray(forwardRange, [0, acceptedEnd]);
+    if (!validForward) {
+      fail(`${owner}: forwardFrameRange must exactly match an acceptedFrameRange containing at least two frames`);
+    }
+
+    const scaleNumerator = postProcess.timeScaleNumerator;
+    const scaleDenominator = postProcess.timeScaleDenominator;
+    const validScale = Number.isSafeInteger(scaleNumerator) && scaleNumerator > 0
+      && Number.isSafeInteger(scaleDenominator) && scaleDenominator > 0;
+    if (!validScale) {
+      fail(`${owner}: timeScaleNumerator and timeScaleDenominator must be positive safe integers`);
+    } else if (scaleNumerator <= scaleDenominator) {
+      fail(`${owner}: timeScaleNumerator must exceed timeScaleDenominator for forward-only slowing`);
+    }
+    const rawFps = rawOutput.stream?.fps;
+    if (!Number.isSafeInteger(postProcess.outputFps) || postProcess.outputFps <= 0
+      || postProcess.outputFps > rawFps) {
+      fail(`${owner}: outputFps must be a positive integer no greater than the raw fps`);
+    }
+    if (!Number.isInteger(postProcess.trimEndFrameExclusive)
+      || postProcess.trimEndFrameExclusive <= 0) {
+      fail(`${owner}: trimEndFrameExclusive must be a positive integer`);
+    }
+
+    const prohibitedSequenceFields = Object.keys(postProcess).filter(
+      (field) => /reverse|hold|return|join/i.test(field),
+    );
+    if (prohibitedSequenceFields.length) {
+      fail(`${owner}: safe-prefix-slow-forward prohibits reverse, hold, return, and join fields (${prohibitedSequenceFields.join(", ")})`);
+    }
+
+    if (validForward && validScale) {
+      const scaledIntervalNumerator = (acceptedFrameCount - 1)
+        * scaleNumerator * postProcess.outputFps;
+      const scaledIntervalDenominator = scaleDenominator * rawFps;
+      const scaledFinalIntervalCount = scaledIntervalNumerator / scaledIntervalDenominator;
+      if (!Number.isSafeInteger(scaledIntervalNumerator)
+        || !Number.isFinite(scaledIntervalDenominator) || scaledIntervalDenominator <= 0) {
+        fail(`${owner}: slowed frame-count calculation exceeds the safe integer range`);
+      } else if (!Number.isSafeInteger(scaledFinalIntervalCount)) {
+        fail(`${owner}: accepted frame intervals, time-scale ratio, and output fps must yield an integer frame count`);
+      } else {
+        expectedFinalFrames = scaledFinalIntervalCount + 1;
+        if (postProcess.trimEndFrameExclusive !== expectedFinalFrames) {
+          fail(`${owner}: trimEndFrameExclusive must equal the deterministic slowed result (${expectedFinalFrames})`);
+        }
+      }
+      expectedFilter = `trim=start_frame=0:end_frame=${acceptedFrameCount},setpts=(${scaleNumerator}/${scaleDenominator})*PTS,fps=${postProcess.outputFps},trim=end_frame=${postProcess.trimEndFrameExclusive},setpts=PTS-STARTPTS,format=yuv420p`;
     }
   } else if (postProcess.type === "safe-prefix-reverse-return") {
     const forwardRange = postProcess.forwardFrameRange;
@@ -661,6 +714,10 @@ function checkPostProcess(postProcess, sample, owner) {
     fail(`${owner}: ffmpegFilter must exactly encode the declared safe-prefix post-process`);
   }
   const command = normalizeWhitespace(postProcess.ffmpegCommand);
+  if (postProcess.type === "safe-prefix-slow-forward"
+    && /\b(?:reverse|tpad|loop)\b/i.test(command)) {
+    fail(`${owner}: safe-prefix-slow-forward ffmpegCommand must not reverse, hold, or loop frames`);
+  }
   if (!isNonEmptyString(command)
     || !hasPortablePlaceholder(command, "rawOutput")
     || !hasPortablePlaceholder(command, "projectAsset")
@@ -679,10 +736,16 @@ function checkPostProcess(postProcess, sample, owner) {
   if (finalFile?.frameCount !== expectedFinalFrames) {
     fail(`${owner}: final frameCount must equal the declared post-process result (${expectedFinalFrames})`);
   }
-  for (const field of ["width", "height", "fps"]) {
+  for (const field of ["width", "height"]) {
     if (finalFile?.[field] !== rawOutput.stream?.[field]) {
       fail(`${owner}: final ${field} must match the raw output stream`);
     }
+  }
+  const expectedFinalFps = postProcess.type === "safe-prefix-slow-forward"
+    ? postProcess.outputFps
+    : rawOutput.stream?.fps;
+  if (finalFile?.fps !== expectedFinalFps) {
+    fail(`${owner}: final fps must match the declared post-process output fps (${expectedFinalFps})`);
   }
   return rawOutput.stream;
 }

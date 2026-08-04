@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-08-04T00:00:00+09:00",
+  "status": "review-pending",
+  "policy": {
+    "scope": "ComfyUI-native Wan2.2 TI2V 5B forward-only behavior review candidates for a children's dinosaur atlas",
+    "audience": "ages 5-14",
+    "representativePromotion": "prohibited",
+    "galleryPromotion": "prohibited",
+    "anatomyPromotion": "prohibited",
+    "autoplay": "prohibited",
+    "audio": "prohibited",
+    "publicationRule": "Publish only after all-frame anatomy and temporal review. Reject cyclic return motion and any leg, foot, jaw, neck, horn, or identity deformation."
+  },
+  "comfyUiRoot": "C:/Users/USER/Documents/dinosour/tools/comfyui/ComfyUI",
+  "workflowTemplate": "tools/comfyui/workflow_templates/dino_wan22_ti2v_5b_i2v_long_api.json",
+  "settings": {
+    "width": 768,
+    "height": 512,
+    "frames": 81,
+    "fps": 16,
+    "durationSeconds": 5.0625,
+    "steps": 20,
+    "cfg": 5,
+    "sampler": "uni_pc",
+    "scheduler": "simple",
+    "shift": 8,
+    "denoise": 1
+  },
+  "commonNegativePrompt": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts",
+  "candidates": [
+    {
+      "id": "tyrannosaurus-rex-forward-vocal-display-f81-v3",
+      "taxonId": "tyrannosaurus-rex",
+      "sceneRole": "solo-behavior",
+      "seed": 240804232,
+      "settings": {
+        "width": 768,
+        "height": 384
+      },
+      "sourcePoster": "assets/dinosaurs/tyrannosaurus-rex-hell-creek-deepskull-twofinger-representative-imagegen-v1.png",
+      "sourcePosterSha256": "82d01916f6f02a43623d5a963e00b7446aea01ada38293c6de266504919fe773",
+      "sourceLicense": "project-owned generated still",
+      "sourceReviewStatus": "count-level pass and approved representative source; motion use only",
+      "inputName": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-approved-source-deepskull-v1.png",
+      "outputPrefix": "dino_atlas/motion_m2_i2v_forward/tyrannosaurus-rex-forward-vocal-display-wan22-s240804232-f81",
+      "record": "tools/comfyui/outputs/motion-m2-i2v-forward-tyrannosaurus-roar-s240804232-f81-v3-run.json",
+      "positivePrompt": "Static locked wide camera, one continuous five-second shot with no cuts. Preserve the attached approved still as the exact first-frame anatomy, identity, composition, lighting, palette, and background reference. Exactly one complete full-body Tyrannosaurus rex stands firmly in place. The torso, pelvis, hips, two planted hind feet and toes, two tiny chest-held forelimbs with exactly two fingers on each readable hand, and complete heavy tail remain motionless at their source coordinates. Only the continuously attached deep head, short muscular neck, throat, and lower jaw move. During the first second the mouth remains closed. Then the head lifts only slightly while the lower jaw opens smoothly in one direction from closed to a natural twenty-five-degree gape. The upper skull does not bend or move toward the frame edge. Stable upper and lower tooth rows, one low tongue, and the dark mouth interior become visible. The throat expands once. During the final second hold the open-mouth silent display. Do not close the jaw, return, recoil, nod repeatedly, reverse, or loop. Preserve the broad posterior skull, narrowing snout, low rounded postorbital bosses, small polygonal scales, uninterrupted neck attachment, and all locked body parts. Silent, non-graphic generated behavior hypothesis for ages five to fourteen.",
+      "negativePrompt": "motion in torso, pelvis, hips, legs, ankles, feet, toes, arms, fingers, or tail, foot sliding, foot lift, toe reshaping, knee bending, leg reshaping, tail swing, body translation, body turn, head turn toward camera, frontal head, head moving toward top edge, mouth closing after opening, cyclic motion, reversed motion, repeated roar, repeated nod, detached jaw, dislocated jaw, split jaw, duplicate jaw, rubber mouth, upper skull bending, skull elongation, shortened snout, crocodile skull, extra mouth, duplicate tongue, forked tongue, floating teeth, extra tooth rows, changing teeth, saliva, drool, blood, prey, attack, camera movement"
+    },
+    {
+      "id": "tyrannosaurus-rex-triceratops-headnod-roar-f81-v3",
+      "taxonId": "tyrannosaurus-rex",
+      "secondaryTaxonId": "triceratops-horridus",
+      "sceneRole": "predator-prey-interaction",
+      "seed": 240804231,
+      "sourcePoster": "assets/dinosaurs/tyrannosaurus-rex-triceratops-misty-channel-standoff-ecology-imagegen-v1.png",
+      "sourcePosterSha256": "caf92b6f9247227dc7d0c559eff7c13395e43902821e275e78fd5d81dcfcb4d8",
+      "sourceLicense": "project-owned generated still",
+      "sourceReviewStatus": "approved interaction gallery slot; anatomy-review evidence tier; motion use only",
+      "inputName": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-triceratops-approved-misty-standoff-v1.png",
+      "outputPrefix": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-triceratops-headnod-roar-wan22-s240804231-f81",
+      "record": "tools/comfyui/outputs/motion-m2-i2v-behavior-tyrannosaurus-triceratops-headnod-roar-s240804231-f81-v3-run.json",
+      "positivePrompt": "Static locked wide camera, one continuous five-second shot with no cuts. Preserve the attached approved still as the exact first-frame anatomy, identity, composition, lighting, and background reference. Exactly one Tyrannosaurus rex remains on the right bank and exactly one Triceratops horridus remains on the left bank, always separated by the open stream. The Triceratops remains completely motionless for the entire shot. The Tyrannosaurus torso, pelvis, hips, two planted hind feet, toes, two tiny two-fingered arms, and complete heavy tail remain motionless in exactly their source positions. Only the continuously attached Tyrannosaurus head, short muscular neck, throat, and lower jaw move. During the first second it holds still with its mouth closed. During the second second it makes one small controlled downward head nod of about five degrees without moving forward. It then lifts the head slightly while smoothly opening only the lower jaw to a natural twenty-five-degree gape and expanding the throat once as a silent roar. During the final second it holds the open-mouth display. It does not close the jaw, recoil, lunge, repeat, or reverse the motion. Preserve the deep broad side-profile skull, stable upper and lower tooth rows, low tongue, dark mouth interior, and uninterrupted neck attachment. Preserve the Triceratops two brow horns, one nasal horn, solid frill, four planted legs, and complete tail. No contact, attack, injury, or panic. Silent, non-graphic generated display hypothesis for ages five to fourteen.",
+      "negativePrompt": "motion in Tyrannosaurus torso, pelvis, hips, legs, ankles, feet, toes, arms, or tail, foot sliding, foot lift, toe reshaping, knee bending, leg reshaping, extra leg, missing leg, fused leg, duplicated foot, tail swing, split tail, body translation, body turn, forward lunge, backward recoil, head thrust, neck stretch, neck shortening, neck folding, frontal Tyrannosaurus head, mouth closing after opening, cyclic motion, reversed motion, repeated nod, repeated roar, jaw snap, bite, attack, collision, crossing stream, animal overlap, Triceratops movement, Triceratops head movement, horn movement, frill movement, Triceratops step, missing horn, extra horn, warped frill, detached jaw, split jaw, rubber mouth, upper skull bending, skull melting, extra tooth rows, changing teeth, floating teeth, duplicate tongue, forked tongue, saliva, drool, blood, wound, prey panic, camera movement"
+    },
+    {
+      "id": "tyrannosaurus-rex-triceratops-right-trex-headnod-roar-f81-v4",
+      "taxonId": "tyrannosaurus-rex",
+      "secondaryTaxonId": "triceratops-horridus",
+      "sceneRole": "predator-prey-interaction",
+      "seed": 240804233,
+      "sourcePoster": "assets/dinosaurs/tyrannosaurus-rex-triceratops-misty-channel-standoff-ecology-imagegen-v1.png",
+      "sourcePosterSha256": "caf92b6f9247227dc7d0c559eff7c13395e43902821e275e78fd5d81dcfcb4d8",
+      "sourceLicense": "project-owned generated still",
+      "sourceReviewStatus": "approved interaction gallery slot; anatomy-review evidence tier; motion use only",
+      "inputName": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-triceratops-approved-misty-standoff-v1.png",
+      "outputPrefix": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-triceratops-right-trex-headnod-roar-wan22-s240804233-f81",
+      "record": "tools/comfyui/outputs/motion-m2-i2v-behavior-tyrannosaurus-triceratops-right-trex-headnod-roar-s240804233-f81-v4-run.json",
+      "positivePrompt": "Static locked wide camera, one continuous five-second shot with no cuts. Preserve the attached approved still as the exact first-frame anatomy, identity, composition, lighting, and background reference. There are exactly two dinosaurs. The large dark grey horned quadruped filling the LEFT foreground is Triceratops. Freeze every pixel of that left Triceratops for the entire shot: its closed mouth, head, three horns, frill, torso, four feet, and tail never move or change. The smaller brown biped standing on the RIGHT background bank is Tyrannosaurus rex. Animate ONLY the head, short neck, throat, and lower jaw of that RIGHT brown Tyrannosaurus. Freeze its torso, pelvis, hips, both planted hind feet, toes, two tiny arms, and complete tail at their exact source coordinates. First, the RIGHT Tyrannosaurus holds still with its mouth closed. Next it makes one small controlled downward head nod of about five degrees without moving forward. Then it raises the head slightly and opens only its lower jaw smoothly in one direction to a moderate twenty-five-degree gape. The throat expands once and the final second holds the open-mouth silent roar. It never closes the jaw, returns, recoils, lunges, repeats, or reverses. Preserve the RIGHT Tyrannosaurus deep broad side-profile skull, stable teeth, low tongue, dark mouth interior, and uninterrupted neck attachment. Keep the stream visibly separating both dinosaurs. No contact, attack, injury, or panic. Silent, non-graphic generated display hypothesis for ages five to fourteen.",
+      "negativePrompt": "any motion in the LEFT foreground Triceratops, Triceratops mouth opening, Triceratops jaw movement, Triceratops roar, Triceratops head movement, Triceratops horn movement, Triceratops frill movement, Triceratops step, missing Triceratops horn, extra Triceratops horn, warped Triceratops frill, motion in RIGHT Tyrannosaurus torso, pelvis, hips, legs, ankles, feet, toes, arms, or tail, wrong dinosaur moving, foot sliding, foot lift, toe reshaping, knee bending, leg reshaping, extra leg, missing leg, fused leg, duplicated foot, tail swing, split tail, body translation, body turn, forward lunge, backward recoil, head thrust, neck stretch, neck shortening, neck folding, frontal Tyrannosaurus head, Tyrannosaurus mouth closing after opening, cyclic motion, reversed motion, repeated nod, repeated roar, jaw snap, bite, attack, collision, crossing stream, animal overlap, detached jaw, split jaw, rubber mouth, upper skull bending, skull melting, extra tooth rows, changing teeth, floating teeth, duplicate tongue, forked tongue, saliva, drool, blood, wound, prey panic, camera movement"
+    }
+  ]
+}
