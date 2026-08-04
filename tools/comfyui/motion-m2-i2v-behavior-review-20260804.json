@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-08-04T00:00:00+09:00",
+  "status": "completed-mixed",
+  "candidateSpec": "tools/comfyui/motion-m2-i2v-behavior-candidates-20260804.json",
+  "policy": {
+    "audience": "ages 5-14",
+    "scope": "silent ComfyUI-native I2V behavior comparisons",
+    "representativePromotion": "prohibited",
+    "galleryPromotion": "prohibited",
+    "anatomyPromotion": "prohibited",
+    "autoplay": "prohibited",
+    "audio": "prohibited",
+    "attackRule": "non-contact, non-graphic, no injury or gore",
+    "publicationRule": "publish only independently reviewed full frames or documented derivatives made exclusively from accepted source frames"
+  },
+  "reviewMethod": {
+    "generatedStream": "81 frames at 16 fps, 5.0625 seconds",
+    "manualReview": "every decoded frame at original resolution plus transition-adjacent frame comparisons",
+    "contactSheets": "navigation aids only; they do not replace full-frame or playback review",
+    "postProcessing": "deterministic trim, clone hold, frame repetition, forward/reverse ordering, and faststart remux only; no optical-flow interpolation",
+    "publicationTier": "motion-only"
+  },
+  "trials": {
+    "tyrannosaurus-rex-restrained-vocal-display-f81-v1": {
+      "decision": "rejected",
+      "runRecord": "tools/comfyui/outputs/motion-m2-i2v-behavior-tyrannosaurus-roar-s240804211-f81-run.json",
+      "runRecordSha256": "3885a54974ff61c6b105dced73588c0f3227368b9cbde725c7b19616dafc7a07",
+      "rawOutput": "output/dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-restrained-vocal-display-wan22-s240804211-f81_00001_.mp4",
+      "rawSha256": "cb0ca8f4cca707e7b3ee35582f163694c922fb480205bee4b1bddf138c77c8dc",
+      "rawBytes": 1580130,
+      "finding": "The full clip preserved the animal but produced too little visible jaw motion to answer the larger-motion request."
+    },
+    "ankylosaurus-magniventris-fern-chew-f81-v1": {
+      "decision": "rejected",
+      "runRecord": "tools/comfyui/outputs/motion-m2-i2v-behavior-ankylosaurus-graze-s240804212-f81-run.json",
+      "runRecordSha256": "192a1ef216a59990938a1677f62851cc33610484257e6fb95d458699f4ab124d",
+      "rawOutput": "output/dino_atlas/motion_m2_i2v_behavior/ankylosaurus-magniventris-fern-chew-wan22-s240804212-f81_00001_.mp4",
+      "rawSha256": "e2465a0d70b94b4a53fca8758b6d819aba3c3039f630c1fea1061580546e1c72",
+      "rawBytes": 2679766,
+      "finding": "The head drifted while the feeding action remained too subtle; it was retained only as rejected process evidence."
+    },
+    "tyrannosaurus-rex-triceratops-noncontact-bite-feint-f81-v1": {
+      "decision": "rejected",
+      "runRecord": "tools/comfyui/outputs/motion-m2-i2v-behavior-tyrannosaurus-triceratops-attack-s240804213-f81-run.json",
+      "runRecordSha256": "3ad708f22048d07bd5c6566a563b805bb7d179e2681fc5facb783d55a47bbf63",
+      "rawOutput": "output/dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-triceratops-noncontact-bite-feint-wan22-s240804213-f81_00001_.mp4",
+      "rawSha256": "981db2d4be7db83f3a2765bdb91cba2a7054211e26734e7dbc501ce328b482e8",
+      "rawBytes": 1640734,
+      "finding": "The Tyrannosaurus bowed and drifted toward a frontal morph after roughly frame 55, so no portion was published."
+    },
+    "tyrannosaurus-rex-strong-vocal-display-f81-v2": {
+      "decision": "published-safe-derivative",
+      "runRecord": "tools/comfyui/outputs/motion-m2-i2v-behavior-tyrannosaurus-roar-s240804221-f81-v2-run.json",
+      "runRecordSha256": "d7616f28a97d323e743901bf7522e75ac9f0ebd1ed37ebdfbc78dd82fab0319a",
+      "rawOutput": "output/dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-strong-vocal-display-wan22-s240804221-f81_00001_.mp4",
+      "rawSha256": "156c6a6e9bbc04996461fc04bd1e40554cdcbefad7a2071f0e2fe2fc924c7955",
+      "rawBytes": 2406884,
+      "acceptedFrameRange": [0, 16],
+      "rejectedAfterFrame": 16,
+      "rejectionReason": "Later frames enlarged the gape and moved the head toward the top edge beyond the conservative motion-only gate.",
+      "derivative": "assets/motion/m2/tyrannosaurus-rex-strong-vocal-display-comfyui-wan22-safe-return-i2v-m2-v1.mp4",
+      "derivativeSha256": "db966799901b6ee50a2d1ccb5ae5fb5f87d479ff0c60247998ed32b512bdf346",
+      "derivativeBytes": 1671272,
+      "derivativeMethod": "accepted frames 0-16, cloned turnaround hold, deterministic 2x temporal repetition, and reverse return; no optical flow",
+      "finding": "Published as a silent large jaw-opening comparison with the full head, neck, body, limbs, and tail retained."
+    },
+    "ankylosaurus-magniventris-strong-fern-bites-f81-v2": {
+      "decision": "published-full-stream",
+      "runRecord": "tools/comfyui/outputs/motion-m2-i2v-behavior-ankylosaurus-graze-s240804222-f81-v2-run.json",
+      "runRecordSha256": "64e34bce683a9e990e3d9ca184f35f0d15bcc05c5eee783eed67897faa6ff2f6",
+      "rawOutput": "output/dino_atlas/motion_m2_i2v_behavior/ankylosaurus-magniventris-strong-fern-bites-wan22-s240804222-f81_00001_.mp4",
+      "rawSha256": "03c4859c1509db87ceaacd3cd59b89852cf59d2748cfdc83ffee1a9119fceb6c",
+      "rawBytes": 2179260,
+      "acceptedFrameRange": [0, 80],
+      "derivative": "assets/motion/m2/ankylosaurus-magniventris-fern-feeding-comfyui-wan22-i2v-m2-v1.mp4",
+      "derivativeSha256": "1764d7f374681c20a22cd191bd976dbe7b0c293a5476e7ac47042334ead08fcd",
+      "derivativeBytes": 2179420,
+      "derivativeMethod": "video-stream copy with embedded ComfyUI prompt preservation and faststart container layout; no frame transform",
+      "finding": "Two readable feeding cycles passed with four grounded legs, one continuous tail, and one integrated club; fine skull-surface variation remains a stated limitation."
+    },
+    "tyrannosaurus-rex-triceratops-strong-noncontact-feint-f81-v2": {
+      "decision": "published-safe-derivative",
+      "runRecord": "tools/comfyui/outputs/motion-m2-i2v-behavior-tyrannosaurus-triceratops-attack-s240804223-f81-v2-run.json",
+      "runRecordSha256": "ba3fe8fc746836d96177599d84842faee60d26ed71f0e622c54bbe2fd6db8f08",
+      "rawOutput": "output/dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-triceratops-strong-noncontact-feint-wan22-s240804223-f81_00001_.mp4",
+      "rawSha256": "18636567354db278a525ebfaee5a543872162d47bfcc4703d73d7121bee3bf71",
+      "rawBytes": 1364381,
+      "acceptedFrameRange": [0, 24],
+      "rejectedAfterFrame": 24,
+      "rejectionReason": "Later frames accumulated Tyrannosaurus leg and tail drift and increasing animal overlap risk.",
+      "derivative": "assets/motion/m2/tyrannosaurus-rex-triceratops-noncontact-feint-comfyui-wan22-safe-double-feint-i2v-m2-v1.mp4",
+      "derivativeSha256": "98cb05a4ac049bffb05f9cce510d5582e02e2dff4f266392b7c6c0c856d3582e",
+      "derivativeBytes": 1884462,
+      "derivativeMethod": "accepted frames 0-24 forward and reverse, followed by frames 0-16 forward and reverse, trimmed to 81 frames; no optical flow",
+      "finding": "Published as a non-contact pressure feint rather than a bite; both animals remain on separate banks with no collision, injury, or gore."
+    }
+  },
+  "publication": {
+    "catalog": "motion-m2-i2v-samples.js",
+    "canonicalMetadata": "tools/comfyui/motion-m2-i2v-pilot-batch-20260804.json",
+    "publishedCount": 3,
+    "rejectedCount": 3,
+    "representativeEligible": false,
+    "galleryEligible": false,
+    "anatomyEligible": false
+  }
+}

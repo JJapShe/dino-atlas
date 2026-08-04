@@ -1,0 +1,430 @@
+{
+  "schemaVersion": 2,
+  "candidateId": "ankylosaurus-magniventris-strong-fern-bites-f81-v2",
+  "taxonId": "ankylosaurus-magniventris",
+  "queuedAt": "2026-08-04T10:42:32.473360+00:00",
+  "completedAt": "2026-08-04T10:43:43.074011+00:00",
+  "elapsedSeconds": 70.601,
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "2eac8147-e2e0-441f-a038-9d1791c080e1",
+          "timestamp": 1785840152491
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [
+            "1",
+            "2",
+            "3",
+            "8"
+          ],
+          "prompt_id": "2eac8147-e2e0-441f-a038-9d1791c080e1",
+          "timestamp": 1785840152496
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "2eac8147-e2e0-441f-a038-9d1791c080e1",
+          "timestamp": 1785840222557
+        }
+      ]
+    ]
+  },
+  "promptId": "2eac8147-e2e0-441f-a038-9d1791c080e1",
+  "queueResponse": {
+    "prompt_id": "2eac8147-e2e0-441f-a038-9d1791c080e1",
+    "number": 16,
+    "node_errors": {}
+  },
+  "provenance": {
+    "spec": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\motion-m2-i2v-behavior-candidates-20260804.json",
+    "specSha256": "e581c793ad3577c48f6d1db285c28dbc954d7a4da5cad738394b5e53dde37d49",
+    "template": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\workflow_templates\\dino_wan22_ti2v_5b_i2v_long_api.json",
+    "templateSha256": "eba1778a281c9d81c7f62d8ac2e75aa73573b8845b2fdf60f0d6ca48750404e2",
+    "runner": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\scripts\\run_motion_m2_i2v_long_candidate.py",
+    "runnerSha256": "7c861c8733644959d5d9b7504f058f7f92875cfd944e36f5217baa8e2efd7970",
+    "comfyInput": "C:\\Users\\USER\\Documents\\dinosour\\tools\\comfyui\\ComfyUI\\input\\dino_atlas\\motion_m2_i2v_behavior\\ankylosaurus-magniventris-approved-fern-browse-v2.png",
+    "comfyInputSha256": "ae4025f7b127e943bbe70bff5eb29130ab1cea047a80dfe966fca67970e215b6",
+    "comfyInputWidth": 1536,
+    "comfyInputHeight": 1024,
+    "outputAspectWidth": 768,
+    "outputAspectHeight": 512,
+    "sourcePoster": "assets/dinosaurs/ankylosaurus-magniventris-oxbow-fern-browse-ecology-imagegen-v2.png",
+    "sourcePosterSha256": "ae4025f7b127e943bbe70bff5eb29130ab1cea047a80dfe966fca67970e215b6",
+    "sourceLicense": "project-owned generated still",
+    "sourceReviewStatus": "approved habitat-ecology gallery slot; review-hold evidence tier; motion use only"
+  },
+  "runConfig": {
+    "width": 768,
+    "height": 512,
+    "frames": 81,
+    "fps": 16,
+    "durationSeconds": 5.0625,
+    "steps": 20,
+    "cfg": 6,
+    "sampler": "uni_pc",
+    "scheduler": "simple",
+    "shift": 8,
+    "denoise": 1,
+    "effectiveDurationSeconds": 5.0625,
+    "seed": 240804222,
+    "inputName": "dino_atlas/motion_m2_i2v_behavior/ankylosaurus-magniventris-approved-fern-browse-v2.png",
+    "outputPrefix": "dino_atlas/motion_m2_i2v_behavior/ankylosaurus-magniventris-strong-fern-bites-wan22-s240804222-f81",
+    "positivePrompt": "Static wide camera. One complete Ankylosaurus magniventris stands in the same low left-facing pose and visibly eats the fern directly in front of its beaked mouth. Make two clear bite-and-chew cycles: the beak opens a small natural amount, closes on fern tips, the lower jaw chews, and the head bobs down and up by a clearly visible but controlled distance. Several fern tips bend toward the mouth, release, and shake gently. Keep the broad armored skull and eye readable. Keep all four feet planted, the low broad torso and armor stable, and the complete tail with one integrated oval club completely still and fully visible. Preserve the exact attached identity, wetland background, lighting, crop, and fixed camera. Silent, calm, child-safe everyday feeding hypothesis for ages five to fourteen.",
+    "negativePrompt": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts, tiny motion, no chewing, mouth frozen, roaring, wide open mouth, teeth, tongue, head turn, frontal head, skull stretching, long narrow skull, armor crawling, armor multiplying, body turn, walking, foot lift, foot sliding, tail movement, missing club, split club, round mace club, second tail, plant growing through face, face-fern fusion, predator, injury, blood"
+  },
+  "workflow": {
+    "1": {
+      "class_type": "UNETLoader",
+      "inputs": {
+        "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    "2": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "type": "wan",
+        "device": "default"
+      }
+    },
+    "3": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "wan2.2_vae.safetensors"
+      }
+    },
+    "4": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "Static wide camera. One complete Ankylosaurus magniventris stands in the same low left-facing pose and visibly eats the fern directly in front of its beaked mouth. Make two clear bite-and-chew cycles: the beak opens a small natural amount, closes on fern tips, the lower jaw chews, and the head bobs down and up by a clearly visible but controlled distance. Several fern tips bend toward the mouth, release, and shake gently. Keep the broad armored skull and eye readable. Keep all four feet planted, the low broad torso and armor stable, and the complete tail with one integrated oval club completely still and fully visible. Preserve the exact attached identity, wetland background, lighting, crop, and fixed camera. Silent, calm, child-safe everyday feeding hypothesis for ages five to fourteen.",
+        "clip": [
+          "2",
+          0
+        ]
+      }
+    },
+    "5": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts, tiny motion, no chewing, mouth frozen, roaring, wide open mouth, teeth, tongue, head turn, frontal head, skull stretching, long narrow skull, armor crawling, armor multiplying, body turn, walking, foot lift, foot sliding, tail movement, missing club, split club, round mace club, second tail, plant growing through face, face-fern fusion, predator, injury, blood",
+        "clip": [
+          "2",
+          0
+        ]
+      }
+    },
+    "6": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "dino_atlas/motion_m2_i2v_behavior/ankylosaurus-magniventris-approved-fern-browse-v2.png"
+      }
+    },
+    "7": {
+      "class_type": "Wan22ImageToVideoLatent",
+      "inputs": {
+        "vae": [
+          "3",
+          0
+        ],
+        "width": 768,
+        "height": 512,
+        "length": 81,
+        "batch_size": 1,
+        "start_image": [
+          "6",
+          0
+        ]
+      }
+    },
+    "8": {
+      "class_type": "ModelSamplingSD3",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "shift": 8
+      }
+    },
+    "9": {
+      "class_type": "KSampler",
+      "inputs": {
+        "seed": 240804222,
+        "steps": 20,
+        "cfg": 6,
+        "sampler_name": "uni_pc",
+        "scheduler": "simple",
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "5",
+          0
+        ],
+        "latent_image": [
+          "7",
+          0
+        ],
+        "denoise": 1,
+        "model": [
+          "8",
+          0
+        ]
+      }
+    },
+    "10": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "9",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "11": {
+      "class_type": "CreateVideo",
+      "inputs": {
+        "images": [
+          "10",
+          0
+        ],
+        "fps": 16,
+        "bit_depth": 8
+      }
+    },
+    "12": {
+      "class_type": "SaveVideo",
+      "inputs": {
+        "video": [
+          "11",
+          0
+        ],
+        "filename_prefix": "dino_atlas/motion_m2_i2v_behavior/ankylosaurus-magniventris-strong-fern-bites-wan22-s240804222-f81",
+        "format": "mp4",
+        "codec": "h264"
+      }
+    }
+  },
+  "history": {
+    "prompt": [
+      16,
+      "2eac8147-e2e0-441f-a038-9d1791c080e1",
+      {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+            "type": "wan",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "wan2.2_vae.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "Static wide camera. One complete Ankylosaurus magniventris stands in the same low left-facing pose and visibly eats the fern directly in front of its beaked mouth. Make two clear bite-and-chew cycles: the beak opens a small natural amount, closes on fern tips, the lower jaw chews, and the head bobs down and up by a clearly visible but controlled distance. Several fern tips bend toward the mouth, release, and shake gently. Keep the broad armored skull and eye readable. Keep all four feet planted, the low broad torso and armor stable, and the complete tail with one integrated oval club completely still and fully visible. Preserve the exact attached identity, wetland background, lighting, crop, and fixed camera. Silent, calm, child-safe everyday feeding hypothesis for ages five to fourteen.",
+            "clip": [
+              "2",
+              0
+            ]
+          }
+        },
+        "5": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts, tiny motion, no chewing, mouth frozen, roaring, wide open mouth, teeth, tongue, head turn, frontal head, skull stretching, long narrow skull, armor crawling, armor multiplying, body turn, walking, foot lift, foot sliding, tail movement, missing club, split club, round mace club, second tail, plant growing through face, face-fern fusion, predator, injury, blood",
+            "clip": [
+              "2",
+              0
+            ]
+          }
+        },
+        "6": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "dino_atlas/motion_m2_i2v_behavior/ankylosaurus-magniventris-approved-fern-browse-v2.png"
+          }
+        },
+        "7": {
+          "class_type": "Wan22ImageToVideoLatent",
+          "inputs": {
+            "vae": [
+              "3",
+              0
+            ],
+            "width": 768,
+            "height": 512,
+            "length": 81,
+            "batch_size": 1,
+            "start_image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "8": {
+          "class_type": "ModelSamplingSD3",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "shift": 8.0
+          }
+        },
+        "9": {
+          "class_type": "KSampler",
+          "inputs": {
+            "seed": 240804222,
+            "steps": 20,
+            "cfg": 6.0,
+            "sampler_name": "uni_pc",
+            "scheduler": "simple",
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "5",
+              0
+            ],
+            "latent_image": [
+              "7",
+              0
+            ],
+            "denoise": 1.0,
+            "model": [
+              "8",
+              0
+            ]
+          }
+        },
+        "10": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "9",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "11": {
+          "class_type": "CreateVideo",
+          "inputs": {
+            "images": [
+              "10",
+              0
+            ],
+            "fps": 16.0,
+            "bit_depth": 8
+          }
+        },
+        "12": {
+          "class_type": "SaveVideo",
+          "inputs": {
+            "video": [
+              "11",
+              0
+            ],
+            "filename_prefix": "dino_atlas/motion_m2_i2v_behavior/ankylosaurus-magniventris-strong-fern-bites-wan22-s240804222-f81",
+            "format": "mp4",
+            "codec": "h264"
+          }
+        }
+      },
+      {
+        "client_id": "dino-atlas-motion-m2-i2v-long",
+        "create_time": 1785840152491
+      },
+      [
+        "12"
+      ]
+    ],
+    "outputs": {
+      "12": {
+        "images": [
+          {
+            "filename": "ankylosaurus-magniventris-strong-fern-bites-wan22-s240804222-f81_00001_.mp4",
+            "subfolder": "dino_atlas\\motion_m2_i2v_behavior",
+            "type": "output"
+          }
+        ],
+        "animated": [
+          true
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "2eac8147-e2e0-441f-a038-9d1791c080e1",
+            "timestamp": 1785840152491
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "1",
+              "2",
+              "3",
+              "8"
+            ],
+            "prompt_id": "2eac8147-e2e0-441f-a038-9d1791c080e1",
+            "timestamp": 1785840152496
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "2eac8147-e2e0-441f-a038-9d1791c080e1",
+            "timestamp": 1785840222557
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "12": {
+        "node_id": "12",
+        "display_node": "12",
+        "parent_node": null,
+        "real_node_id": "12"
+      }
+    }
+  }
+}

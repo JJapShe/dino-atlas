@@ -1,0 +1,430 @@
+{
+  "schemaVersion": 2,
+  "candidateId": "tyrannosaurus-rex-triceratops-strong-noncontact-feint-f81-v2",
+  "taxonId": "tyrannosaurus-rex",
+  "queuedAt": "2026-08-04T10:42:59.429787+00:00",
+  "completedAt": "2026-08-04T10:44:53.636330+00:00",
+  "elapsedSeconds": 114.207,
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "edbef54b-df8a-4e97-b50e-0e3dc7952911",
+          "timestamp": 1785840222678
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [
+            "1",
+            "2",
+            "3",
+            "8"
+          ],
+          "prompt_id": "edbef54b-df8a-4e97-b50e-0e3dc7952911",
+          "timestamp": 1785840222679
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "edbef54b-df8a-4e97-b50e-0e3dc7952911",
+          "timestamp": 1785840292579
+        }
+      ]
+    ]
+  },
+  "promptId": "edbef54b-df8a-4e97-b50e-0e3dc7952911",
+  "queueResponse": {
+    "prompt_id": "edbef54b-df8a-4e97-b50e-0e3dc7952911",
+    "number": 17,
+    "node_errors": {}
+  },
+  "provenance": {
+    "spec": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\motion-m2-i2v-behavior-candidates-20260804.json",
+    "specSha256": "e581c793ad3577c48f6d1db285c28dbc954d7a4da5cad738394b5e53dde37d49",
+    "template": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\workflow_templates\\dino_wan22_ti2v_5b_i2v_long_api.json",
+    "templateSha256": "eba1778a281c9d81c7f62d8ac2e75aa73573b8845b2fdf60f0d6ca48750404e2",
+    "runner": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\scripts\\run_motion_m2_i2v_long_candidate.py",
+    "runnerSha256": "7c861c8733644959d5d9b7504f058f7f92875cfd944e36f5217baa8e2efd7970",
+    "comfyInput": "C:\\Users\\USER\\Documents\\dinosour\\tools\\comfyui\\ComfyUI\\input\\dino_atlas\\motion_m2_i2v_behavior\\tyrannosaurus-rex-triceratops-approved-misty-standoff-v1.png",
+    "comfyInputSha256": "caf92b6f9247227dc7d0c559eff7c13395e43902821e275e78fd5d81dcfcb4d8",
+    "comfyInputWidth": 1536,
+    "comfyInputHeight": 1024,
+    "outputAspectWidth": 768,
+    "outputAspectHeight": 512,
+    "sourcePoster": "assets/dinosaurs/tyrannosaurus-rex-triceratops-misty-channel-standoff-ecology-imagegen-v1.png",
+    "sourcePosterSha256": "caf92b6f9247227dc7d0c559eff7c13395e43902821e275e78fd5d81dcfcb4d8",
+    "sourceLicense": "project-owned generated still",
+    "sourceReviewStatus": "approved interaction gallery slot; anatomy-review evidence tier; motion use only"
+  },
+  "runConfig": {
+    "width": 768,
+    "height": 512,
+    "frames": 81,
+    "fps": 16,
+    "durationSeconds": 5.0625,
+    "steps": 20,
+    "cfg": 6,
+    "sampler": "uni_pc",
+    "scheduler": "simple",
+    "shift": 8,
+    "denoise": 1,
+    "effectiveDurationSeconds": 5.0625,
+    "seed": 240804223,
+    "inputName": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-triceratops-approved-misty-standoff-v1.png",
+    "outputPrefix": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-triceratops-strong-noncontact-feint-wan22-s240804223-f81",
+    "positivePrompt": "Static wide camera. Exactly one Tyrannosaurus rex on the right bank makes one large, clearly readable non-contact attack feint toward exactly one Triceratops horridus on the left bank. The Tyrannosaurus rapidly thrusts its deep head and muscular neck forward toward the stream, opens and snaps its jaws once, then recoils slightly. The Triceratops quickly lowers its solid frill and three horns into a defensive brace. Make both reactions obvious across the frame. Both dinosaurs remain on their original dry banks with the open stream between them and never touch. Keep the Tyrannosaurus two tiny arms, two legs, and tail complete; keep the Triceratops three horns, four legs, and tail complete. No steps, no collision, no injury. Preserve the attached identities, forest, water, ground, lighting, crop, and fixed camera. Silent, non-graphic generated ecology hypothesis for ages five to fourteen.",
+    "negativePrompt": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts, tiny motion, no reaction, blood, wound, bite contact, horn impact, collision, crossing stream, running, jumping, foot lift, animal overlap, fused animals, duplicate animal, frontal Tyrannosaurus head, Tyrannosaurus skull melting, detached jaw, extra tooth rows, three-finger Tyrannosaurus, large Tyrannosaurus arms, missing Triceratops horn, extra horn, warped frill, extra legs, missing legs, split tail, camera movement"
+  },
+  "workflow": {
+    "1": {
+      "class_type": "UNETLoader",
+      "inputs": {
+        "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    "2": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "type": "wan",
+        "device": "default"
+      }
+    },
+    "3": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "wan2.2_vae.safetensors"
+      }
+    },
+    "4": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "Static wide camera. Exactly one Tyrannosaurus rex on the right bank makes one large, clearly readable non-contact attack feint toward exactly one Triceratops horridus on the left bank. The Tyrannosaurus rapidly thrusts its deep head and muscular neck forward toward the stream, opens and snaps its jaws once, then recoils slightly. The Triceratops quickly lowers its solid frill and three horns into a defensive brace. Make both reactions obvious across the frame. Both dinosaurs remain on their original dry banks with the open stream between them and never touch. Keep the Tyrannosaurus two tiny arms, two legs, and tail complete; keep the Triceratops three horns, four legs, and tail complete. No steps, no collision, no injury. Preserve the attached identities, forest, water, ground, lighting, crop, and fixed camera. Silent, non-graphic generated ecology hypothesis for ages five to fourteen.",
+        "clip": [
+          "2",
+          0
+        ]
+      }
+    },
+    "5": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts, tiny motion, no reaction, blood, wound, bite contact, horn impact, collision, crossing stream, running, jumping, foot lift, animal overlap, fused animals, duplicate animal, frontal Tyrannosaurus head, Tyrannosaurus skull melting, detached jaw, extra tooth rows, three-finger Tyrannosaurus, large Tyrannosaurus arms, missing Triceratops horn, extra horn, warped frill, extra legs, missing legs, split tail, camera movement",
+        "clip": [
+          "2",
+          0
+        ]
+      }
+    },
+    "6": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-triceratops-approved-misty-standoff-v1.png"
+      }
+    },
+    "7": {
+      "class_type": "Wan22ImageToVideoLatent",
+      "inputs": {
+        "vae": [
+          "3",
+          0
+        ],
+        "width": 768,
+        "height": 512,
+        "length": 81,
+        "batch_size": 1,
+        "start_image": [
+          "6",
+          0
+        ]
+      }
+    },
+    "8": {
+      "class_type": "ModelSamplingSD3",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "shift": 8
+      }
+    },
+    "9": {
+      "class_type": "KSampler",
+      "inputs": {
+        "seed": 240804223,
+        "steps": 20,
+        "cfg": 6,
+        "sampler_name": "uni_pc",
+        "scheduler": "simple",
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "5",
+          0
+        ],
+        "latent_image": [
+          "7",
+          0
+        ],
+        "denoise": 1,
+        "model": [
+          "8",
+          0
+        ]
+      }
+    },
+    "10": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "9",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "11": {
+      "class_type": "CreateVideo",
+      "inputs": {
+        "images": [
+          "10",
+          0
+        ],
+        "fps": 16,
+        "bit_depth": 8
+      }
+    },
+    "12": {
+      "class_type": "SaveVideo",
+      "inputs": {
+        "video": [
+          "11",
+          0
+        ],
+        "filename_prefix": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-triceratops-strong-noncontact-feint-wan22-s240804223-f81",
+        "format": "mp4",
+        "codec": "h264"
+      }
+    }
+  },
+  "history": {
+    "prompt": [
+      17,
+      "edbef54b-df8a-4e97-b50e-0e3dc7952911",
+      {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+            "type": "wan",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "wan2.2_vae.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "Static wide camera. Exactly one Tyrannosaurus rex on the right bank makes one large, clearly readable non-contact attack feint toward exactly one Triceratops horridus on the left bank. The Tyrannosaurus rapidly thrusts its deep head and muscular neck forward toward the stream, opens and snaps its jaws once, then recoils slightly. The Triceratops quickly lowers its solid frill and three horns into a defensive brace. Make both reactions obvious across the frame. Both dinosaurs remain on their original dry banks with the open stream between them and never touch. Keep the Tyrannosaurus two tiny arms, two legs, and tail complete; keep the Triceratops three horns, four legs, and tail complete. No steps, no collision, no injury. Preserve the attached identities, forest, water, ground, lighting, crop, and fixed camera. Silent, non-graphic generated ecology hypothesis for ages five to fourteen.",
+            "clip": [
+              "2",
+              0
+            ]
+          }
+        },
+        "5": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts, tiny motion, no reaction, blood, wound, bite contact, horn impact, collision, crossing stream, running, jumping, foot lift, animal overlap, fused animals, duplicate animal, frontal Tyrannosaurus head, Tyrannosaurus skull melting, detached jaw, extra tooth rows, three-finger Tyrannosaurus, large Tyrannosaurus arms, missing Triceratops horn, extra horn, warped frill, extra legs, missing legs, split tail, camera movement",
+            "clip": [
+              "2",
+              0
+            ]
+          }
+        },
+        "6": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-triceratops-approved-misty-standoff-v1.png"
+          }
+        },
+        "7": {
+          "class_type": "Wan22ImageToVideoLatent",
+          "inputs": {
+            "vae": [
+              "3",
+              0
+            ],
+            "width": 768,
+            "height": 512,
+            "length": 81,
+            "batch_size": 1,
+            "start_image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "8": {
+          "class_type": "ModelSamplingSD3",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "shift": 8.0
+          }
+        },
+        "9": {
+          "class_type": "KSampler",
+          "inputs": {
+            "seed": 240804223,
+            "steps": 20,
+            "cfg": 6.0,
+            "sampler_name": "uni_pc",
+            "scheduler": "simple",
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "5",
+              0
+            ],
+            "latent_image": [
+              "7",
+              0
+            ],
+            "denoise": 1.0,
+            "model": [
+              "8",
+              0
+            ]
+          }
+        },
+        "10": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "9",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "11": {
+          "class_type": "CreateVideo",
+          "inputs": {
+            "images": [
+              "10",
+              0
+            ],
+            "fps": 16.0,
+            "bit_depth": 8
+          }
+        },
+        "12": {
+          "class_type": "SaveVideo",
+          "inputs": {
+            "video": [
+              "11",
+              0
+            ],
+            "filename_prefix": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-triceratops-strong-noncontact-feint-wan22-s240804223-f81",
+            "format": "mp4",
+            "codec": "h264"
+          }
+        }
+      },
+      {
+        "client_id": "dino-atlas-motion-m2-i2v-long",
+        "create_time": 1785840179447
+      },
+      [
+        "12"
+      ]
+    ],
+    "outputs": {
+      "12": {
+        "images": [
+          {
+            "filename": "tyrannosaurus-rex-triceratops-strong-noncontact-feint-wan22-s240804223-f81_00001_.mp4",
+            "subfolder": "dino_atlas\\motion_m2_i2v_behavior",
+            "type": "output"
+          }
+        ],
+        "animated": [
+          true
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "edbef54b-df8a-4e97-b50e-0e3dc7952911",
+            "timestamp": 1785840222678
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "1",
+              "2",
+              "3",
+              "8"
+            ],
+            "prompt_id": "edbef54b-df8a-4e97-b50e-0e3dc7952911",
+            "timestamp": 1785840222679
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "edbef54b-df8a-4e97-b50e-0e3dc7952911",
+            "timestamp": 1785840292579
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "12": {
+        "node_id": "12",
+        "display_node": "12",
+        "parent_node": null,
+        "real_node_id": "12"
+      }
+    }
+  }
+}

@@ -23047,6 +23047,11 @@ function getMotionM2SampleCatalog() {
     return { policy: {}, samples: [], isDraftPreview, previewMode };
   }
   const allowedMotionClasses = new Set(["controlled-partial-body", "generative-i2v"]);
+  const allowedM2SceneRoles = new Set([
+    "solo",
+    "foraging-behavior",
+    "predator-prey-interaction",
+  ]);
 
   const samples = sourceSamples
     .map((sample) => {
@@ -23087,6 +23092,8 @@ function getMotionM2SampleCatalog() {
         typeof sample.title === "string" && sample.title.trim().length > 0 &&
         typeof sample.summary === "string" && sample.summary.trim().length > 0 &&
         typeof sample.motionLabel === "string" && sample.motionLabel.trim().length > 0 &&
+        allowedM2SceneRoles.has(sample.sceneRole) &&
+        typeof sample.sceneRoleLabel === "string" && sample.sceneRoleLabel.trim().length > 0 &&
         typeof sample.evidenceBoundary === "string" && sample.evidenceBoundary.trim().length > 0 &&
         getMotionM2CreditLabel(sample.credits).length > 0 &&
         sample.representativeEligible === false &&
@@ -23131,7 +23138,7 @@ function renderMotionM2SampleCard(sample, playbackPreference, isDraftPreview) {
       : `자동재생 없음 · 눌러서 ${durationLabel}초 재생`;
   const dimensions = `${sample.width}×${sample.height} · ${sample.fps}fps · ${sample.frameCount}프레임`;
   return `
-    <article class="motion-sample-card ${published ? "is-published" : "is-draft"}" data-motion-sample="${escapeHtml(sample.id)}" data-motion-tier="M2" data-motion-pipeline="${escapeHtml(sample.motionCatalogKind)}" data-motion-playing-label="${escapeHtml(sample.motionLabel)}">
+    <article class="motion-sample-card ${published ? "is-published" : "is-draft"}" data-motion-sample="${escapeHtml(sample.id)}" data-motion-tier="M2" data-motion-pipeline="${escapeHtml(sample.motionCatalogKind)}" data-motion-scene-role="${escapeHtml(sample.sceneRole)}" data-motion-playing-label="${escapeHtml(sample.motionLabel)}">
       <div class="motion-sample-media">
         <video
           id="motionM2Video-${escapeHtml(sample.id)}"
@@ -23150,7 +23157,7 @@ function renderMotionM2SampleCard(sample, playbackPreference, isDraftPreview) {
           눌러서 재생
         </button>
         <span class="motion-tier-badge">${escapeHtml(tierLabel)}</span>
-        <span class="motion-scene-badge">${published ? "공개 파일 검수 완료" : escapeHtml(localReviewLabel)}</span>
+        <span class="motion-scene-badge">${escapeHtml(sample.sceneRoleLabel)}</span>
       </div>
       <div class="motion-sample-body">
         <div class="motion-sample-title-row">
@@ -23163,6 +23170,7 @@ function renderMotionM2SampleCard(sample, playbackPreference, isDraftPreview) {
         <p>${escapeHtml(sample.summary)}</p>
         <dl class="motion-sample-facts">
           <div><dt>공룡</dt><dd>${escapeHtml(sample.commonName)}</dd></div>
+          <div><dt>장면 유형</dt><dd>${escapeHtml(sample.sceneRoleLabel)}</dd></div>
           <div><dt>제작 방식</dt><dd>${escapeHtml(sample.pipelineLabel)}</dd></div>
           <div><dt>움직임</dt><dd>${escapeHtml(sample.motionLabel)}</dd></div>
           <div><dt>영상 사양</dt><dd>${escapeHtml(dimensions)}</dd></div>
@@ -23227,12 +23235,13 @@ function renderMotionM2Samples() {
   const playbackPreference = getMotionPlaybackPreference();
   const controlledCount = samples.filter((sample) => sample.motionCatalogKind === "controlled").length;
   const i2vCount = samples.filter((sample) => sample.motionCatalogKind === "i2v").length;
+  const sceneRoleSummary = [...new Set(samples.map((sample) => sample.sceneRoleLabel))].join(" · ");
   summary.textContent =
     previewMode === "i2v"
       ? `로컬 M2 비교 · 기존 제어형 ${controlledCount}개 + 새 I2V 후보 ${i2vCount}개 · 직접 눌러 비교합니다.`
       : previewMode === "m2"
         ? `로컬 제어형 M2 ${controlledCount}개 · 보류된 기존 후보만 확인합니다.`
-        : `검수 완료 M2 샘플 ${samples.length}개 · 모두 직접 눌렀을 때만 재생됩니다.`;
+        : `검수 완료 M2 샘플 ${samples.length}개 · ${sceneRoleSummary} · 모두 직접 눌렀을 때만 재생됩니다.`;
   grid.innerHTML = samples
     .map((sample) => renderMotionM2SampleCard(sample, playbackPreference, isDraftPreview))
     .join("");

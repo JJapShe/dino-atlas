@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-08-04T00:00:00+09:00",
+  "status": "review-pending",
+  "policy": {
+    "scope": "ComfyUI-native Wan2.2 TI2V 5B behavior review candidates for a children's dinosaur atlas",
+    "audience": "ages 5-14",
+    "representativePromotion": "prohibited",
+    "galleryPromotion": "prohibited",
+    "anatomyPromotion": "prohibited",
+    "autoplay": "prohibited",
+    "audio": "prohibited",
+    "publicationRule": "Only independently reviewed source frames or documented safe-frame derivatives may be copied into assets/motion/m2. Non-contact predation must remain non-graphic."
+  },
+  "comfyUiRoot": "C:/Users/USER/Documents/dinosour/tools/comfyui/ComfyUI",
+  "workflowTemplate": "tools/comfyui/workflow_templates/dino_wan22_ti2v_5b_i2v_long_api.json",
+  "settings": {
+    "width": 768,
+    "height": 512,
+    "frames": 81,
+    "fps": 16,
+    "durationSeconds": 5.0625,
+    "steps": 20,
+    "cfg": 5,
+    "sampler": "uni_pc",
+    "scheduler": "simple",
+    "shift": 8,
+    "denoise": 1
+  },
+  "commonNegativePrompt": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts",
+  "candidates": [
+    {
+      "id": "tyrannosaurus-rex-restrained-vocal-display-f81-v1",
+      "taxonId": "tyrannosaurus-rex",
+      "sceneRole": "solo-behavior",
+      "seed": 240804211,
+      "settings": {
+        "width": 768,
+        "height": 384
+      },
+      "sourcePoster": "assets/dinosaurs/tyrannosaurus-rex-hell-creek-deepskull-twofinger-representative-imagegen-v1.png",
+      "sourcePosterSha256": "82d01916f6f02a43623d5a963e00b7446aea01ada38293c6de266504919fe773",
+      "sourceLicense": "project-owned generated still",
+      "sourceReviewStatus": "count-level pass and approved representative source; motion use only",
+      "inputName": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-approved-source-deepskull-v1.png",
+      "outputPrefix": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-restrained-vocal-display-wan22-s240804211-f81",
+      "record": "tools/comfyui/outputs/motion-m2-i2v-behavior-tyrannosaurus-roar-s240804211-f81-run.json",
+      "positivePrompt": "Scientific educational image-to-video using the attached approved still as the exact identity, anatomy, framing, lighting, palette, and background reference. Exactly one complete full-body Tyrannosaurus rex with a deep skull that is very broad posteriorly and narrows toward the snout, low rounded postorbital bosses, small polygonal scales, exactly two extremely small chest-held forelimbs with exactly two fingers on each readable hand, exactly two strong grounded hind limbs, and one complete continuous tail. Perform one clearly readable but restrained, child-safe open-mouth vocal display over five seconds. During the first third, rotate only the lower jaw smoothly downward at the natural jaw hinge to a moderate twelve-to-eighteen-degree gape. Keep the upper skull, snout length, eye, nostril, head height, and short muscular neck stable. Natural irregularly sized teeth remain firmly attached to their original upper and lower jaw edges without changing count, spacing, shape, or position. Briefly reveal one low tongue and a clean shadowed pink-brown mouth interior. During the middle third, hold the moderate gape while the throat and upper chest expand once very slightly as if exhaling. Do not turn the head, lunge, walk, or move the arms. During the final third, close the lower jaw smoothly until the lips cover the teeth again, then settle into the exact source pose. Both feet, every toe, both tiny arms, torso, pelvis, and tail remain at the source coordinates. Fixed camera, fixed crop, fixed forest, wet ground, vegetation, shadows, lighting, and exposure. This is a silent, non-graphic generated behavior hypothesis suitable for children ages five to fourteen.",
+      "negativePrompt": "detached jaw, dislocated jaw, sliding jaw hinge, upper jaw bending, split jaw, duplicate jaw, rubber mouth, melting lips, skull elongation, shortened snout, long shallow Tarbosaurus skull, crocodile skull, Allosaurus horns, gape wider than twenty degrees, extra mouth, duplicate mouth, extra tooth rows, shark teeth, floating teeth, detached teeth, teeth changing count, teeth popping in and out, teeth growing, teeth melting, teeth visible through closed lips, duplicate tongue, forked tongue, protruding tongue, saliva strings, drool, foam, blood, wound, carcass, prey, bite, attack, lunge, aggressive charge, head turn, frontal head, whole-body yaw, body rotation, arm movement, missing tiny arm, long arms, three-finger hands, foot lift, walking, running, tail swing, hooked tail"
+    },
+    {
+      "id": "ankylosaurus-magniventris-fern-chew-f81-v1",
+      "taxonId": "ankylosaurus-magniventris",
+      "sceneRole": "foraging-behavior",
+      "seed": 240804212,
+      "sourcePoster": "assets/dinosaurs/ankylosaurus-magniventris-oxbow-fern-browse-ecology-imagegen-v2.png",
+      "sourcePosterSha256": "ae4025f7b127e943bbe70bff5eb29130ab1cea047a80dfe966fca67970e215b6",
+      "sourceLicense": "project-owned generated still",
+      "sourceReviewStatus": "approved habitat-ecology gallery slot; review-hold evidence tier; motion use only",
+      "inputName": "dino_atlas/motion_m2_i2v_behavior/ankylosaurus-magniventris-approved-fern-browse-v2.png",
+      "outputPrefix": "dino_atlas/motion_m2_i2v_behavior/ankylosaurus-magniventris-fern-chew-wan22-s240804212-f81",
+      "record": "tools/comfyui/outputs/motion-m2-i2v-behavior-ankylosaurus-graze-s240804212-f81-run.json",
+      "positivePrompt": "Scientific educational, non-graphic image-to-video using the attached approved habitat still as the exact identity, anatomy, composition, lighting, and background reference. Exactly one broad low full-body Ankylosaurus magniventris in the same left-facing low-browse pose, with a broad flat armored skull, a small ventrolateral nostril, two neck half-rings, irregular low osteoderms, exactly four grounded legs, one continuous tail, and one integrated low oval tail club. Over five seconds perform two slow clearly visible chewing cycles: the lower beak and jaw close and release naturally, the head dips only a small distance toward the nearest fern and rises slightly, and one fern frond bends gently at the mouth and settles. Keep the torso, pelvis, all four feet, armor rows, complete tail, and single club anchored; allow only subtle breathing. Fixed camera, fixed crop, stable wetland, shadows, exposure, and palette. This is a silent generated everyday-behavior hypothesis suitable for children ages five to fourteen.",
+      "negativePrompt": "open roaring mouth, teeth, tongue, biting branch in half, head turn, large head swing, lizard skull, crocodile skull, long horn, giant shoulder spikes, uniform turtle shell, regular pebble armor, armor crawling, armor multiplying, plant growing through face, snout-fern fusion, body translation, walking, foot lift, extra legs, missing limb, two tails, tail swing, detached club, missing club, split club, two separate club balls, round mace ball, paddle club, club morphing, club leaving frame, predator, injury"
+    },
+    {
+      "id": "tyrannosaurus-rex-triceratops-noncontact-bite-feint-f81-v1",
+      "taxonId": "tyrannosaurus-rex",
+      "secondaryTaxonId": "triceratops-horridus",
+      "sceneRole": "predator-prey-interaction",
+      "seed": 240804213,
+      "sourcePoster": "assets/dinosaurs/tyrannosaurus-rex-triceratops-misty-channel-standoff-ecology-imagegen-v1.png",
+      "sourcePosterSha256": "caf92b6f9247227dc7d0c559eff7c13395e43902821e275e78fd5d81dcfcb4d8",
+      "sourceLicense": "project-owned generated still",
+      "sourceReviewStatus": "approved interaction gallery slot; anatomy-review evidence tier; motion use only",
+      "inputName": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-triceratops-approved-misty-standoff-v1.png",
+      "outputPrefix": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-triceratops-noncontact-bite-feint-wan22-s240804213-f81",
+      "record": "tools/comfyui/outputs/motion-m2-i2v-behavior-tyrannosaurus-triceratops-attack-s240804213-f81-run.json",
+      "positivePrompt": "Scientific educational image-to-video for a children's dinosaur atlas, ages five to fourteen. Preserve the attached approved still as the exact anatomy, identity, composition, lighting, and background reference. Exactly one Tyrannosaurus rex remains on the right bank and exactly one Triceratops horridus remains on the left bank, always separated by the visible stream. Tyrannosaurus keeps one deep broad skull, two tiny two-fingered arms, two grounded hind limbs, and one complete heavy tail. Triceratops keeps two brow horns, one nasal horn, one solid frill, exactly four grounded legs, and one complete tail. After a brief hold, Tyrannosaurus performs one controlled non-contact bite feint: its deep head and short muscular neck move forward about three to four percent of frame width, the jaws open to a restrained natural gape and close once, while pelvis, feet, and tail remain planted. Triceratops lowers the rigid skull and frill six to eight degrees and braces without stepping. Both animals remain on their original banks, never overlap or touch, then settle. Fixed camera, fixed crop, stable trees, water, ground, shadows, color, and exposure; crisp readable anatomy in every frame. This non-graphic attack attempt is a generated ecological hypothesis, not direct behavioral evidence.",
+      "negativePrompt": "blood, wound, puncture, bite contact, horn impact, collision, knockdown, killing, carcass, dismemberment, saliva strings, horror, crossing stream, full charge, running, jumping, foot lift, animal overlap, fused animals, duplicate animal, detached jaw, jaw splitting, melted teeth, three-fingered Tyrannosaurus, large Tyrannosaurus arms, missing horn, extra horn, warped frill, body yaw, walking, tail swing"
+    },
+    {
+      "id": "tyrannosaurus-rex-strong-vocal-display-f81-v2",
+      "taxonId": "tyrannosaurus-rex",
+      "sceneRole": "solo-behavior",
+      "seed": 240804221,
+      "settings": {
+        "width": 768,
+        "height": 384,
+        "cfg": 6
+      },
+      "sourcePoster": "assets/dinosaurs/tyrannosaurus-rex-hell-creek-deepskull-twofinger-representative-imagegen-v1.png",
+      "sourcePosterSha256": "82d01916f6f02a43623d5a963e00b7446aea01ada38293c6de266504919fe773",
+      "sourceLicense": "project-owned generated still",
+      "sourceReviewStatus": "count-level pass and approved representative source; motion use only",
+      "inputName": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-approved-source-deepskull-v1.png",
+      "outputPrefix": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-strong-vocal-display-wan22-s240804221-f81",
+      "record": "tools/comfyui/outputs/motion-m2-i2v-behavior-tyrannosaurus-roar-s240804221-f81-v2-run.json",
+      "positivePrompt": "Static wide camera. One complete full-body Tyrannosaurus rex stands firmly in place and performs one large, clearly visible silent roar. The dinosaur raises its deep head slightly and opens the lower jaw smoothly to a strong natural thirty-degree gape, clearly revealing one stable row of upper teeth, one stable row of lower teeth, a low tongue, and the dark mouth interior. Hold the open-mouth display briefly, expand the throat once, then close the jaw and settle. Make the jaw opening and head lift large and unmistakable across the frame. Keep the broad deep skull, short muscular neck, two tiny two-fingered arms, both planted feet, torso, pelvis, and complete tail anatomically continuous. The body does not walk or turn. Preserve the exact attached dinosaur identity, forest, ground, lighting, crop, and fixed camera. Silent, non-graphic, child-safe behavior hypothesis for ages five to fourteen.",
+      "negativePrompt": "tiny motion, closed mouth for entire shot, no jaw movement, detached jaw, dislocated jaw, split jaw, duplicate jaw, upper skull bending, rubber mouth, melting lips, extra mouth, duplicate tongue, forked tongue, floating teeth, extra tooth rows, teeth changing count, saliva, drool, blood, prey, attack, head turning toward camera, frontal head, body turn, walking, running, arm movement, long arms, three-finger hands, missing arm, foot lift, tail swing"
+    },
+    {
+      "id": "ankylosaurus-magniventris-strong-fern-bites-f81-v2",
+      "taxonId": "ankylosaurus-magniventris",
+      "sceneRole": "foraging-behavior",
+      "seed": 240804222,
+      "settings": {
+        "cfg": 6
+      },
+      "sourcePoster": "assets/dinosaurs/ankylosaurus-magniventris-oxbow-fern-browse-ecology-imagegen-v2.png",
+      "sourcePosterSha256": "ae4025f7b127e943bbe70bff5eb29130ab1cea047a80dfe966fca67970e215b6",
+      "sourceLicense": "project-owned generated still",
+      "sourceReviewStatus": "approved habitat-ecology gallery slot; review-hold evidence tier; motion use only",
+      "inputName": "dino_atlas/motion_m2_i2v_behavior/ankylosaurus-magniventris-approved-fern-browse-v2.png",
+      "outputPrefix": "dino_atlas/motion_m2_i2v_behavior/ankylosaurus-magniventris-strong-fern-bites-wan22-s240804222-f81",
+      "record": "tools/comfyui/outputs/motion-m2-i2v-behavior-ankylosaurus-graze-s240804222-f81-v2-run.json",
+      "positivePrompt": "Static wide camera. One complete Ankylosaurus magniventris stands in the same low left-facing pose and visibly eats the fern directly in front of its beaked mouth. Make two clear bite-and-chew cycles: the beak opens a small natural amount, closes on fern tips, the lower jaw chews, and the head bobs down and up by a clearly visible but controlled distance. Several fern tips bend toward the mouth, release, and shake gently. Keep the broad armored skull and eye readable. Keep all four feet planted, the low broad torso and armor stable, and the complete tail with one integrated oval club completely still and fully visible. Preserve the exact attached identity, wetland background, lighting, crop, and fixed camera. Silent, calm, child-safe everyday feeding hypothesis for ages five to fourteen.",
+      "negativePrompt": "tiny motion, no chewing, mouth frozen, roaring, wide open mouth, teeth, tongue, head turn, frontal head, skull stretching, long narrow skull, armor crawling, armor multiplying, body turn, walking, foot lift, foot sliding, tail movement, missing club, split club, round mace club, second tail, plant growing through face, face-fern fusion, predator, injury, blood"
+    },
+    {
+      "id": "tyrannosaurus-rex-triceratops-strong-noncontact-feint-f81-v2",
+      "taxonId": "tyrannosaurus-rex",
+      "secondaryTaxonId": "triceratops-horridus",
+      "sceneRole": "predator-prey-interaction",
+      "seed": 240804223,
+      "settings": {
+        "cfg": 6
+      },
+      "sourcePoster": "assets/dinosaurs/tyrannosaurus-rex-triceratops-misty-channel-standoff-ecology-imagegen-v1.png",
+      "sourcePosterSha256": "caf92b6f9247227dc7d0c559eff7c13395e43902821e275e78fd5d81dcfcb4d8",
+      "sourceLicense": "project-owned generated still",
+      "sourceReviewStatus": "approved interaction gallery slot; anatomy-review evidence tier; motion use only",
+      "inputName": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-triceratops-approved-misty-standoff-v1.png",
+      "outputPrefix": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-triceratops-strong-noncontact-feint-wan22-s240804223-f81",
+      "record": "tools/comfyui/outputs/motion-m2-i2v-behavior-tyrannosaurus-triceratops-attack-s240804223-f81-v2-run.json",
+      "positivePrompt": "Static wide camera. Exactly one Tyrannosaurus rex on the right bank makes one large, clearly readable non-contact attack feint toward exactly one Triceratops horridus on the left bank. The Tyrannosaurus rapidly thrusts its deep head and muscular neck forward toward the stream, opens and snaps its jaws once, then recoils slightly. The Triceratops quickly lowers its solid frill and three horns into a defensive brace. Make both reactions obvious across the frame. Both dinosaurs remain on their original dry banks with the open stream between them and never touch. Keep the Tyrannosaurus two tiny arms, two legs, and tail complete; keep the Triceratops three horns, four legs, and tail complete. No steps, no collision, no injury. Preserve the attached identities, forest, water, ground, lighting, crop, and fixed camera. Silent, non-graphic generated ecology hypothesis for ages five to fourteen.",
+      "negativePrompt": "tiny motion, no reaction, blood, wound, bite contact, horn impact, collision, crossing stream, running, jumping, foot lift, animal overlap, fused animals, duplicate animal, frontal Tyrannosaurus head, Tyrannosaurus skull melting, detached jaw, extra tooth rows, three-finger Tyrannosaurus, large Tyrannosaurus arms, missing Triceratops horn, extra horn, warped frill, extra legs, missing legs, split tail, camera movement"
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "schemaVersion": 2,
+  "candidateId": "tyrannosaurus-rex-strong-vocal-display-f81-v2",
+  "taxonId": "tyrannosaurus-rex",
+  "queuedAt": "2026-08-04T10:38:15.650685+00:00",
+  "completedAt": "2026-08-04T10:39:08.215458+00:00",
+  "elapsedSeconds": 52.565,
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "fa831c3e-a005-46f1-9056-5f09c07bc082",
+          "timestamp": 1785839895664
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [
+            "1",
+            "2",
+            "3",
+            "8"
+          ],
+          "prompt_id": "fa831c3e-a005-46f1-9056-5f09c07bc082",
+          "timestamp": 1785839895670
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "fa831c3e-a005-46f1-9056-5f09c07bc082",
+          "timestamp": 1785839947929
+        }
+      ]
+    ]
+  },
+  "promptId": "fa831c3e-a005-46f1-9056-5f09c07bc082",
+  "queueResponse": {
+    "prompt_id": "fa831c3e-a005-46f1-9056-5f09c07bc082",
+    "number": 15,
+    "node_errors": {}
+  },
+  "provenance": {
+    "spec": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\motion-m2-i2v-behavior-candidates-20260804.json",
+    "specSha256": "2360f24ca73dc7c8cad4ea3d0e45c20eaed03e94c9c912eb9848bf9208e18164",
+    "template": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\workflow_templates\\dino_wan22_ti2v_5b_i2v_long_api.json",
+    "templateSha256": "eba1778a281c9d81c7f62d8ac2e75aa73573b8845b2fdf60f0d6ca48750404e2",
+    "runner": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\scripts\\run_motion_m2_i2v_long_candidate.py",
+    "runnerSha256": "7c861c8733644959d5d9b7504f058f7f92875cfd944e36f5217baa8e2efd7970",
+    "comfyInput": "C:\\Users\\USER\\Documents\\dinosour\\tools\\comfyui\\ComfyUI\\input\\dino_atlas\\motion_m2_i2v_behavior\\tyrannosaurus-rex-approved-source-deepskull-v1.png",
+    "comfyInputSha256": "82d01916f6f02a43623d5a963e00b7446aea01ada38293c6de266504919fe773",
+    "comfyInputWidth": 1777,
+    "comfyInputHeight": 885,
+    "outputAspectWidth": 768,
+    "outputAspectHeight": 384,
+    "sourcePoster": "assets/dinosaurs/tyrannosaurus-rex-hell-creek-deepskull-twofinger-representative-imagegen-v1.png",
+    "sourcePosterSha256": "82d01916f6f02a43623d5a963e00b7446aea01ada38293c6de266504919fe773",
+    "sourceLicense": "project-owned generated still",
+    "sourceReviewStatus": "count-level pass and approved representative source; motion use only"
+  },
+  "runConfig": {
+    "width": 768,
+    "height": 384,
+    "frames": 81,
+    "fps": 16,
+    "durationSeconds": 5.0625,
+    "steps": 20,
+    "cfg": 6,
+    "sampler": "uni_pc",
+    "scheduler": "simple",
+    "shift": 8,
+    "denoise": 1,
+    "effectiveDurationSeconds": 5.0625,
+    "seed": 240804221,
+    "inputName": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-approved-source-deepskull-v1.png",
+    "outputPrefix": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-strong-vocal-display-wan22-s240804221-f81",
+    "positivePrompt": "Static wide camera. One complete full-body Tyrannosaurus rex stands firmly in place and performs one large, clearly visible silent roar. The dinosaur raises its deep head slightly and opens the lower jaw smoothly to a strong natural thirty-degree gape, clearly revealing one stable row of upper teeth, one stable row of lower teeth, a low tongue, and the dark mouth interior. Hold the open-mouth display briefly, expand the throat once, then close the jaw and settle. Make the jaw opening and head lift large and unmistakable across the frame. Keep the broad deep skull, short muscular neck, two tiny two-fingered arms, both planted feet, torso, pelvis, and complete tail anatomically continuous. The body does not walk or turn. Preserve the exact attached dinosaur identity, forest, ground, lighting, crop, and fixed camera. Silent, non-graphic, child-safe behavior hypothesis for ages five to fourteen.",
+    "negativePrompt": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts, tiny motion, closed mouth for entire shot, no jaw movement, detached jaw, dislocated jaw, split jaw, duplicate jaw, upper skull bending, rubber mouth, melting lips, extra mouth, duplicate tongue, forked tongue, floating teeth, extra tooth rows, teeth changing count, saliva, drool, blood, prey, attack, head turning toward camera, frontal head, body turn, walking, running, arm movement, long arms, three-finger hands, missing arm, foot lift, tail swing"
+  },
+  "workflow": {
+    "1": {
+      "class_type": "UNETLoader",
+      "inputs": {
+        "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    "2": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "type": "wan",
+        "device": "default"
+      }
+    },
+    "3": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "wan2.2_vae.safetensors"
+      }
+    },
+    "4": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "Static wide camera. One complete full-body Tyrannosaurus rex stands firmly in place and performs one large, clearly visible silent roar. The dinosaur raises its deep head slightly and opens the lower jaw smoothly to a strong natural thirty-degree gape, clearly revealing one stable row of upper teeth, one stable row of lower teeth, a low tongue, and the dark mouth interior. Hold the open-mouth display briefly, expand the throat once, then close the jaw and settle. Make the jaw opening and head lift large and unmistakable across the frame. Keep the broad deep skull, short muscular neck, two tiny two-fingered arms, both planted feet, torso, pelvis, and complete tail anatomically continuous. The body does not walk or turn. Preserve the exact attached dinosaur identity, forest, ground, lighting, crop, and fixed camera. Silent, non-graphic, child-safe behavior hypothesis for ages five to fourteen.",
+        "clip": [
+          "2",
+          0
+        ]
+      }
+    },
+    "5": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts, tiny motion, closed mouth for entire shot, no jaw movement, detached jaw, dislocated jaw, split jaw, duplicate jaw, upper skull bending, rubber mouth, melting lips, extra mouth, duplicate tongue, forked tongue, floating teeth, extra tooth rows, teeth changing count, saliva, drool, blood, prey, attack, head turning toward camera, frontal head, body turn, walking, running, arm movement, long arms, three-finger hands, missing arm, foot lift, tail swing",
+        "clip": [
+          "2",
+          0
+        ]
+      }
+    },
+    "6": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-approved-source-deepskull-v1.png"
+      }
+    },
+    "7": {
+      "class_type": "Wan22ImageToVideoLatent",
+      "inputs": {
+        "vae": [
+          "3",
+          0
+        ],
+        "width": 768,
+        "height": 384,
+        "length": 81,
+        "batch_size": 1,
+        "start_image": [
+          "6",
+          0
+        ]
+      }
+    },
+    "8": {
+      "class_type": "ModelSamplingSD3",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "shift": 8
+      }
+    },
+    "9": {
+      "class_type": "KSampler",
+      "inputs": {
+        "seed": 240804221,
+        "steps": 20,
+        "cfg": 6,
+        "sampler_name": "uni_pc",
+        "scheduler": "simple",
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "5",
+          0
+        ],
+        "latent_image": [
+          "7",
+          0
+        ],
+        "denoise": 1,
+        "model": [
+          "8",
+          0
+        ]
+      }
+    },
+    "10": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "9",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "11": {
+      "class_type": "CreateVideo",
+      "inputs": {
+        "images": [
+          "10",
+          0
+        ],
+        "fps": 16,
+        "bit_depth": 8
+      }
+    },
+    "12": {
+      "class_type": "SaveVideo",
+      "inputs": {
+        "video": [
+          "11",
+          0
+        ],
+        "filename_prefix": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-strong-vocal-display-wan22-s240804221-f81",
+        "format": "mp4",
+        "codec": "h264"
+      }
+    }
+  },
+  "history": {
+    "prompt": [
+      15,
+      "fa831c3e-a005-46f1-9056-5f09c07bc082",
+      {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+            "type": "wan",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "wan2.2_vae.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "Static wide camera. One complete full-body Tyrannosaurus rex stands firmly in place and performs one large, clearly visible silent roar. The dinosaur raises its deep head slightly and opens the lower jaw smoothly to a strong natural thirty-degree gape, clearly revealing one stable row of upper teeth, one stable row of lower teeth, a low tongue, and the dark mouth interior. Hold the open-mouth display briefly, expand the throat once, then close the jaw and settle. Make the jaw opening and head lift large and unmistakable across the frame. Keep the broad deep skull, short muscular neck, two tiny two-fingered arms, both planted feet, torso, pelvis, and complete tail anatomically continuous. The body does not walk or turn. Preserve the exact attached dinosaur identity, forest, ground, lighting, crop, and fixed camera. Silent, non-graphic, child-safe behavior hypothesis for ages five to fourteen.",
+            "clip": [
+              "2",
+              0
+            ]
+          }
+        },
+        "5": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts, tiny motion, closed mouth for entire shot, no jaw movement, detached jaw, dislocated jaw, split jaw, duplicate jaw, upper skull bending, rubber mouth, melting lips, extra mouth, duplicate tongue, forked tongue, floating teeth, extra tooth rows, teeth changing count, saliva, drool, blood, prey, attack, head turning toward camera, frontal head, body turn, walking, running, arm movement, long arms, three-finger hands, missing arm, foot lift, tail swing",
+            "clip": [
+              "2",
+              0
+            ]
+          }
+        },
+        "6": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-approved-source-deepskull-v1.png"
+          }
+        },
+        "7": {
+          "class_type": "Wan22ImageToVideoLatent",
+          "inputs": {
+            "vae": [
+              "3",
+              0
+            ],
+            "width": 768,
+            "height": 384,
+            "length": 81,
+            "batch_size": 1,
+            "start_image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "8": {
+          "class_type": "ModelSamplingSD3",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "shift": 8.0
+          }
+        },
+        "9": {
+          "class_type": "KSampler",
+          "inputs": {
+            "seed": 240804221,
+            "steps": 20,
+            "cfg": 6.0,
+            "sampler_name": "uni_pc",
+            "scheduler": "simple",
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "5",
+              0
+            ],
+            "latent_image": [
+              "7",
+              0
+            ],
+            "denoise": 1.0,
+            "model": [
+              "8",
+              0
+            ]
+          }
+        },
+        "10": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "9",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "11": {
+          "class_type": "CreateVideo",
+          "inputs": {
+            "images": [
+              "10",
+              0
+            ],
+            "fps": 16.0,
+            "bit_depth": 8
+          }
+        },
+        "12": {
+          "class_type": "SaveVideo",
+          "inputs": {
+            "video": [
+              "11",
+              0
+            ],
+            "filename_prefix": "dino_atlas/motion_m2_i2v_behavior/tyrannosaurus-rex-strong-vocal-display-wan22-s240804221-f81",
+            "format": "mp4",
+            "codec": "h264"
+          }
+        }
+      },
+      {
+        "client_id": "dino-atlas-motion-m2-i2v-long",
+        "create_time": 1785839895664
+      },
+      [
+        "12"
+      ]
+    ],
+    "outputs": {
+      "12": {
+        "images": [
+          {
+            "filename": "tyrannosaurus-rex-strong-vocal-display-wan22-s240804221-f81_00001_.mp4",
+            "subfolder": "dino_atlas\\motion_m2_i2v_behavior",
+            "type": "output"
+          }
+        ],
+        "animated": [
+          true
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "fa831c3e-a005-46f1-9056-5f09c07bc082",
+            "timestamp": 1785839895664
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "1",
+              "2",
+              "3",
+              "8"
+            ],
+            "prompt_id": "fa831c3e-a005-46f1-9056-5f09c07bc082",
+            "timestamp": 1785839895670
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "fa831c3e-a005-46f1-9056-5f09c07bc082",
+            "timestamp": 1785839947929
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "12": {
+        "node_id": "12",
+        "display_node": "12",
+        "parent_node": null,
+        "real_node_id": "12"
+      }
+    }
+  }
+}

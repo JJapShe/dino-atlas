@@ -483,6 +483,8 @@ function checkPostProcess(postProcess, sample, owner) {
   const allowedTypes = new Set([
     "safe-prefix-last-frame-hold",
     "safe-prefix-reverse-return",
+    "safe-prefix-slow-hold-reverse-return",
+    "safe-prefix-double-reverse-return",
   ]);
   if (!allowedTypes.has(postProcess.type)) {
     fail(`${owner}: unsupported postProcess.type`);
@@ -568,6 +570,91 @@ function checkPostProcess(postProcess, sample, owner) {
       expectedFilter = `split=2[a][b];[a]trim=end_frame=${acceptedFrameCount},setpts=PTS-STARTPTS${forwardTail}[f];[b]trim=start_frame=${returnStart}:end_frame=${acceptedFrameCount},reverse,setpts=PTS-STARTPTS[r];[f][r]concat=n=2:v=1:a=0,format=yuv420p`;
       expectedFinalFrames = acceptedFrameCount + turnaroundHoldFrames
         + (acceptedEnd - returnStart + 1);
+    }
+  } else if (postProcess.type === "safe-prefix-slow-hold-reverse-return") {
+    const forwardRange = postProcess.forwardFrameRange;
+    const reverseRange = postProcess.reverseFrameRange;
+    const validForward = validRange && sameArray(forwardRange, [0, acceptedEnd]);
+    const validReverse = validRange && Array.isArray(reverseRange) && reverseRange.length === 2
+      && reverseRange.every(Number.isInteger)
+      && reverseRange[0] === 0 && reverseRange[1] === acceptedEnd - 1;
+    if (!validForward) {
+      fail(`${owner}: forwardFrameRange must exactly match acceptedFrameRange`);
+    }
+    if (!validReverse) {
+      fail(`${owner}: reverseFrameRange must be [0, acceptedEnd - 1]`);
+    }
+    if (postProcess.holdSourceFrame !== acceptedEnd) {
+      fail(`${owner}: holdSourceFrame must equal accepted endInclusive`);
+    }
+    if (!Number.isInteger(postProcess.extraHoldFrames) || postProcess.extraHoldFrames <= 0) {
+      fail(`${owner}: extraHoldFrames must be a positive integer`);
+    }
+    const expectedExtraHoldSeconds = postProcess.extraHoldFrames / rawOutput.stream?.fps;
+    if (!nearlyEqual(postProcess.extraHoldSeconds, expectedExtraHoldSeconds)) {
+      fail(`${owner}: extraHoldSeconds must equal extraHoldFrames/raw fps (${expectedExtraHoldSeconds})`);
+    }
+    if (!Number.isInteger(postProcess.timeScale) || postProcess.timeScale < 2) {
+      fail(`${owner}: timeScale must be an integer of at least two`);
+    }
+    if (postProcess.outputFps !== rawOutput.stream?.fps) {
+      fail(`${owner}: outputFps must equal the raw fps`);
+    }
+    if (!Number.isInteger(postProcess.trimEndFrameExclusive)
+      || postProcess.trimEndFrameExclusive <= 0) {
+      fail(`${owner}: trimEndFrameExclusive must be a positive integer`);
+    }
+    if (validForward && validReverse && Number.isInteger(postProcess.extraHoldFrames)) {
+      const holdEndExclusive = postProcess.holdSourceFrame + 1;
+      const reverseEndExclusive = reverseRange[1] + 1;
+      expectedFilter = `split=3[a][b][c];[a]trim=start_frame=0:end_frame=${acceptedFrameCount},setpts=PTS-STARTPTS[f];[b]trim=start_frame=${postProcess.holdSourceFrame}:end_frame=${holdEndExclusive},setpts=PTS-STARTPTS,tpad=stop_mode=clone:stop_duration=${postProcess.extraHoldSeconds}[h];[c]trim=start_frame=0:end_frame=${reverseEndExclusive},reverse,setpts=PTS-STARTPTS[r];[f][h][r]concat=n=3:v=1:a=0,setpts=${postProcess.timeScale}*PTS,fps=${postProcess.outputFps},trim=end_frame=${postProcess.trimEndFrameExclusive},setpts=PTS-STARTPTS,format=yuv420p`;
+      const sourceTimelineFrames = acceptedFrameCount + 1 + postProcess.extraHoldFrames
+        + (reverseRange[1] - reverseRange[0] + 1);
+      expectedFinalFrames = (sourceTimelineFrames - 1) * postProcess.timeScale + 1;
+      if (postProcess.trimEndFrameExclusive !== expectedFinalFrames) {
+        fail(`${owner}: trimEndFrameExclusive must equal the deterministic slowed result (${expectedFinalFrames})`);
+      }
+    }
+  } else if (postProcess.type === "safe-prefix-double-reverse-return") {
+    const firstForward = postProcess.firstForwardFrameRange;
+    const firstReverse = postProcess.firstReverseFrameRange;
+    const secondForward = postProcess.secondForwardFrameRange;
+    const secondReverse = postProcess.secondReverseFrameRange;
+    const validFirstForward = validRange && sameArray(firstForward, [0, acceptedEnd]);
+    const validFirstReverse = validRange && sameArray(firstReverse, [0, acceptedEnd - 1]);
+    const validSecondForward = validRange && Array.isArray(secondForward)
+      && secondForward.length === 2 && secondForward.every(Number.isInteger)
+      && secondForward[0] === 0 && secondForward[1] > 0 && secondForward[1] < acceptedEnd;
+    const validSecondReverse = validSecondForward
+      && sameArray(secondReverse, [0, secondForward[1] - 1]);
+    if (!validFirstForward) {
+      fail(`${owner}: firstForwardFrameRange must exactly match acceptedFrameRange`);
+    }
+    if (!validFirstReverse) {
+      fail(`${owner}: firstReverseFrameRange must be [0, acceptedEnd - 1]`);
+    }
+    if (!validSecondForward) {
+      fail(`${owner}: secondForwardFrameRange must be a shorter [0, endInclusive] safe range`);
+    }
+    if (!validSecondReverse) {
+      fail(`${owner}: secondReverseFrameRange must omit the second turnaround duplicate`);
+    }
+    if (!Number.isInteger(postProcess.trimEndFrameExclusive)
+      || postProcess.trimEndFrameExclusive <= 0) {
+      fail(`${owner}: trimEndFrameExclusive must be a positive integer`);
+    }
+    if (validFirstForward && validFirstReverse && validSecondForward && validSecondReverse) {
+      const firstForwardEnd = firstForward[1] + 1;
+      const firstReverseEnd = firstReverse[1] + 1;
+      const secondForwardEnd = secondForward[1] + 1;
+      const secondReverseEnd = secondReverse[1] + 1;
+      expectedFilter = `split=4[a][b][c][d];[a]trim=start_frame=0:end_frame=${firstForwardEnd},setpts=PTS-STARTPTS[f1];[b]trim=start_frame=0:end_frame=${firstReverseEnd},reverse,setpts=PTS-STARTPTS[r1];[c]trim=start_frame=0:end_frame=${secondForwardEnd},setpts=PTS-STARTPTS[f2];[d]trim=start_frame=0:end_frame=${secondReverseEnd},reverse,setpts=PTS-STARTPTS[r2];[f1][r1][f2][r2]concat=n=4:v=1:a=0,trim=end_frame=${postProcess.trimEndFrameExclusive},setpts=PTS-STARTPTS,format=yuv420p`;
+      const concatenatedFrames = firstForwardEnd + firstReverseEnd
+        + secondForwardEnd + secondReverseEnd;
+      expectedFinalFrames = Math.min(concatenatedFrames, postProcess.trimEndFrameExclusive);
+      if (postProcess.trimEndFrameExclusive >= concatenatedFrames) {
+        fail(`${owner}: trimEndFrameExclusive must remove at least one duplicate boundary frame`);
+      }
     }
   }
   if (!isNonEmptyString(postProcess.ffmpegFilter) || postProcess.ffmpegFilter !== expectedFilter) {
@@ -834,8 +921,10 @@ for (const sample of samples) {
     continue;
   }
 
-  if (sample.tier !== "M2" || sample.motionClass !== "generative-i2v" || sample.sceneRole !== "solo") {
-    fail(`${owner}: must remain an M2 generative-I2V solo candidate`);
+  const allowedSceneRoles = new Set(["solo", "foraging-behavior", "predator-prey-interaction"]);
+  if (sample.tier !== "M2" || sample.motionClass !== "generative-i2v"
+    || !allowedSceneRoles.has(sample.sceneRole) || !isNonEmptyString(sample.sceneRoleLabel)) {
+    fail(`${owner}: must remain an M2 generative-I2V candidate with an approved scene role and label`);
   }
   if (sample.representativeEligible !== false || sample.galleryEligible !== false
     || sample.anatomyEligible !== false || record.review?.representativeEligible !== false
