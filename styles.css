@@ -4126,11 +4126,13 @@ body.lightbox-open {
   font-weight: 800;
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 901px) {
   .ecosystem-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+}
 
+@media (min-width: 1201px) {
   .map-toolbar {
     min-height: 68px;
     padding: 14px 16px;
@@ -4193,6 +4195,12 @@ body.lightbox-open {
 
   .candidate-hero {
     grid-template-columns: minmax(0, 1.18fr) minmax(240px, 0.82fr);
+  }
+}
+
+@media (min-width: 1400px) {
+  .ecosystem-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
