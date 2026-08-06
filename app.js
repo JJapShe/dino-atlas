@@ -23141,11 +23141,12 @@ function getMotionReviewLabel(sample) {
 
 function renderMotionSampleCard(sample, playbackPreference) {
   const conservativeLoading = playbackPreference.reducedMotion || playbackPreference.saveData;
+  const durationLabel = Number(sample.file.durationSeconds).toFixed(1).replace(/\.0$/, "");
   const playbackNote = playbackPreference.saveData
     ? "데이터 절약 설정 · 눌러야 파일을 불러옵니다"
     : playbackPreference.reducedMotion
       ? "움직임 줄이기 설정 · 직접 재생만 합니다"
-      : "자동재생 없음 · 눌러서 5초 재생";
+      : `자동재생 없음 · 눌러서 ${durationLabel}초 재생`;
   const published = sample.review?.publication?.status === "published";
   return `
     <article class="motion-sample-card ${published ? "is-published" : "is-draft"}" data-motion-sample="${escapeHtml(sample.id)}" data-motion-scene-role="${escapeHtml(sample.sceneRole)}">
@@ -23292,11 +23293,12 @@ function getMotionM1ReviewLabel(sample) {
 
 function renderMotionM1SampleCard(sample, playbackPreference) {
   const conservativeLoading = playbackPreference.reducedMotion || playbackPreference.saveData;
+  const durationLabel = Number(sample.file.durationSeconds).toFixed(1).replace(/\.0$/, "");
   const playbackNote = playbackPreference.saveData
     ? "데이터 절약 설정 · 눌러야 파일을 불러옵니다"
     : playbackPreference.reducedMotion
       ? "움직임 줄이기 설정 · 직접 재생만 합니다"
-      : "자동재생 없음 · 눌러서 5초 재생";
+      : `자동재생 없음 · 눌러서 ${durationLabel}초 재생`;
   const published = sample.review?.publication?.status === "published";
   return `
     <article class="motion-sample-card ${published ? "is-published" : "is-draft"}" data-motion-sample="${escapeHtml(sample.id)}" data-motion-tier="M1" data-motion-scene-role="${escapeHtml(sample.sceneRole)}">

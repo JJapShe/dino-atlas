@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-08-06T20:07:59+09:00",
+  "status": "published",
+  "policy": {
+    "tier": "M0",
+    "scope": "environment-only ambient motion over a fixed approved still",
+    "sceneRoles": ["solo", "ecology-activity", "interspecies-interaction", "environment-event"],
+    "representativePromotion": "prohibited",
+    "galleryPromotion": "prohibited",
+    "autoplay": "prohibited",
+    "biologicalMotion": "prohibited in M0",
+    "publicRequires": ["motion", "responsive", "publication"]
+  },
+  "copyrightSafety": {
+    "status": "project-owned derivative motion assets",
+    "note": "Both videos derive only from their pinned project-owned generated stills and deterministic locally drawn environmental overlays. They use no external footage, artwork, logos, music, speech, or other audio."
+  },
+  "workflow": {
+    "generator": "local System.Drawing overlay frames plus FFmpeg compositing",
+    "generatorVersion": "FFmpeg 8.1.1",
+    "seed": "not applicable; deterministic geometry and frame timing",
+    "script": "tools/comfyui/scripts/build_motion_era_safe_m0_batch_20260806.ps1",
+    "scriptSha256": "846591d6c71d13a513f049e85b5de822320c0f79673884fd28b013d1fbb123b5",
+    "verifier": "tools/comfyui/scripts/verify_motion_era_safe_m0_batch.mjs",
+    "verifierSha256": "a81a2f1d115c1d6c3341a8cc1ec11fc778381bc915c79d1d84c0eba9a6e3064a",
+    "targetContainer": "MP4",
+    "targetVideoCodec": "H.264 High profile, constant QP 12",
+    "targetPixelFormat": "yuv420p",
+    "targetDurationSeconds": 5.5,
+    "targetFps": 24,
+    "targetFrameCount": 132,
+    "targetDimensions": {
+      "buriolestes-schultzi-candelaria-charcoal-ground-haze-environment-m0-v1": { "width": 960, "height": 640 },
+      "ceratosaurus-nasicornis-horsetail-dawn-water-ring-solo-m0-v1": { "width": 960, "height": 540 }
+    },
+    "audio": "none",
+    "playback": "explicit click only; muted; playsinline; autoplay false; loop false",
+    "temporalRule": "One forward progression from frame 0 through frame 131; no reverse segment, ping-pong return, repeated pulse, crossfade back to frame 0, autoplay, or loop.",
+    "motionQaThresholds": {
+      "significantChannelDifferenceFloor": 3,
+      "significantChangeEnergyInsideEffectZoneMinPercent": 95,
+      "protectedRegionMeanMax": 0.3,
+      "protectedRegionP99Max": 3,
+      "protectedRegionMaxMax": 13
+    },
+    "extendedQaThresholds": {
+      "subjectRegionMeanMax": 0.3,
+      "subjectRegionP99Max": 3,
+      "subjectRegionMaxMax": 13,
+      "activeEffectMeanMin": 1.2,
+      "effectSignificantChannelPercentMin": 8,
+      "firstLastEffectMeanMin": 0.5
+    },
+    "commands": {
+      "buriolestes-schultzi-candelaria-charcoal-ground-haze-environment-m0-v1": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/comfyui/scripts/build_motion_era_safe_m0_batch_20260806.ps1 -Sample buriolestes-charcoal-haze",
+      "ceratosaurus-nasicornis-horsetail-dawn-water-ring-solo-m0-v1": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/comfyui/scripts/build_motion_era_safe_m0_batch_20260806.ps1 -Sample ceratosaurus-water-ring"
+    },
+    "verificationCommand": "node tools/comfyui/scripts/verify_motion_era_safe_m0_batch.mjs"
+  },
+  "samples": {
+    "buriolestes-schultzi-candelaria-charcoal-ground-haze-environment-m0-v1": {
+      "taxonId": "buriolestes-schultzi",
+      "sceneRole": "environment-event",
+      "sourcePoster": "assets/dinosaurs/buriolestes-schultzi-candelaria-macrocharcoal-wildfire-composite-ecology-imagegen-v1.png",
+      "sourcePosterFile": {
+        "sha256": "6c9c782bca45cbe75d39809ad3b4a93b5442302fbc80800e072156ccfa07c325",
+        "bytes": 3581621,
+        "width": 1536,
+        "height": 1024
+      },
+      "sourceMetadataRecord": "tools/comfyui/ecosystem-scene-decisions.json#/scenes/buriolestes-candelaria-macrocharcoal-wildfire-composite",
+      "sourceLicense": "project-owned generated still",
+      "projectAsset": "assets/motion/buriolestes-schultzi-candelaria-charcoal-ground-haze-environment-m0-v1.mp4",
+      "motionClass": "environment-only",
+      "motionLayer": "Three broad, soft gray ground-haze fields drift once upward and slightly rightward through the charcoal foreground while the complete Buriolestes, runoff channel, vegetation, camera, and crop remain fixed.",
+      "prompt": "M0 environment-event test for ages five to fourteen: preserve the approved Buriolestes Candelaria macro-charcoal composite exactly, including the complete small animal at right, both forelimbs, both hind limbs, continuous tail, diagonal runoff, plants, charcoal fragments, camera, crop, scale and palette; animate only broad low-contrast ground haze over the empty charcoal foreground at left; move all haze centers continuously upward and slightly rightward for 132 frames at 24 fps; keep every effect pixel inside x 25 to 454 and y 250 to 494 and keep the animal outside the larger protected exclusion; prohibit fire, flame, falling ash, fleeing, distress, head, jaw, eye, limb, body, tail, plant, water, camera or zoom motion, reverse motion, ping-pong return, repeated pulses, loop, fade back, text, logo, watermark or audio.",
+      "evidenceBoundary": "The macro-charcoal locality near Pinheiro Machado and the Buriolestes-bearing Buriol outcrop are separate localities. This region-scale composite and its low ground haze do not claim a shared bed, the same wildfire or day, direct witnessing, escape, distress, or immediate postfire survival.",
+      "playback": { "start": "click-only", "muted": true, "autoplay": false, "loop": false, "playsInline": true },
+      "file": {
+        "sha256": "8fe0f3e96eecfd02722bed8927dd4919147567902ce8ffc8924e373a694e06dc",
+        "bytes": 781513,
+        "width": 960,
+        "height": 640,
+        "durationSeconds": 5.5,
+        "fps": 24,
+        "codec": "h264"
+      },
+      "motionQa": {
+        "comparisonFrames": [0, 131],
+        "effectZone": { "x": [25, 455], "y": [250, 495] },
+        "protectedExclusionZone": { "x": [15, 465], "y": [240, 505] },
+        "protectedRegionDifference": { "mean": 0.00167, "p99": 0, "max": 3 },
+        "effectRegionDifference": { "mean": 5.51044, "significantChannelPercent": 22.53441 },
+        "significantChangeEnergyInsideEffectZonePercent": 99.99946,
+        "visualStatus": "pass",
+        "visualCheckpointFrames": [0, 66, 131],
+        "note": "The haze remains low over the left charcoal foreground, advances in one direction, and never touches the animal. First-to-last decoded comparison keeps every significant change inside the effect rectangle."
+      },
+      "extendedMotionQa": {
+        "comparison": "all 132 decoded final frames against a separately encoded transparent-overlay source control",
+        "subjectRoi": { "x": [575, 945], "y": [175, 350] },
+        "subjectGapPixels": 120,
+        "protectedRegionDifference": { "mean": 0.19484, "p99": 2, "max": 7 },
+        "subjectRegionDifference": { "mean": 0, "p99": 0, "max": 0 },
+        "activeEffectDifference": { "mean": 3.20053, "significantChannelPercent": 10.90936 },
+        "significantChangeEnergyInsideEffectZonePercent": 99.15665,
+        "firstLastEffectMean": 5.51044,
+        "status": "pass"
+      },
+      "review": {
+        "anatomy": { "status": "poster-inherited", "note": "The published scene-scale anatomy verdict is inherited from the fixed source poster; motion supplies no new anatomy or behavior evidence." },
+        "motion": { "status": "supported", "note": "All 132 control comparisons keep the complete animal ROI at zero decoded difference and the protected background within tolerance; 100.00% of significant first-to-last change energy remains inside the charcoal-haze zone." },
+        "responsive": { "status": "supported", "note": "The shared motion renderer provides explicit click-to-play, muted playsinline playback, poster fallback, no autoplay, no loop, and one-video-at-a-time control." },
+        "publication": { "status": "published", "note": "The M0 environment-event file passed stream, effect-locality, protected-pixel, subject-ROI, temporal, provenance, copyright, and reconstruction-boundary gates; representative, gallery, and anatomy promotion remain prohibited." },
+        "representativeEligible": false,
+        "galleryEligible": false,
+        "anatomyEligible": false
+      }
+    },
+    "ceratosaurus-nasicornis-horsetail-dawn-water-ring-solo-m0-v1": {
+      "taxonId": "ceratosaurus-nasicornis",
+      "sceneRole": "solo",
+      "sourcePoster": "assets/dinosaurs/ceratosaurus-nasicornis-horsetail-dawn-drinking-behavior-imagegen-v2.png",
+      "sourcePosterFile": {
+        "sha256": "01bf4fc0011e007d69b3c8fef405e6795a7264a414a797cf3d0904660bffdb67",
+        "bytes": 2357214,
+        "width": 1672,
+        "height": 941
+      },
+      "sourceMetadataRecord": "tools/comfyui/gallery-slot-visual-decisions.json#/taxa/ceratosaurus-nasicornis/6",
+      "sourceLicense": "project-owned generated still",
+      "projectAsset": "assets/motion/ceratosaurus-nasicornis-horsetail-dawn-water-ring-solo-m0-v1.mp4",
+      "motionClass": "environment-only",
+      "motionLayer": "Three restrained elliptical water rings expand once from open foreground water below and left of the fixed lowered snout while the complete Ceratosaurus, horsetails, shoreline, sky, camera, and crop remain fixed.",
+      "prompt": "M0 solo-scene test for ages five to fourteen: preserve the approved dawn Ceratosaurus poster exactly, including the lowered nasal-horned head, continuous neck and torso, exactly two connected hind limbs with separate feet, uninterrupted tail, horsetail forelimb occlusion, shoreline, sky, camera, crop, scale and palette; animate only three thin low-contrast elliptical rings in open foreground water below and left of the snout; expand the rings continuously outward for 132 frames at 24 fps without reset or disappearance; keep every effect pixel inside x 0 to 299 and y 410 to 469 and outside the complete animal ROI; prohibit ingestion claims, jaw, tongue, throat, head, neck, eye, limb, body, tail, plant, sky, camera or zoom motion, splashing, reverse motion, ping-pong return, repeated pulses, loop, fade back, text, logo, watermark or audio.",
+      "evidenceBoundary": "The source drinking posture and the expanding foreground rings are behavior and water-surface reconstruction hypotheses. The clip does not prove ingestion, swallowing, a particular water depth, exact dawn conditions, or the animal's response to the rings.",
+      "playback": { "start": "click-only", "muted": true, "autoplay": false, "loop": false, "playsInline": true },
+      "file": {
+        "sha256": "3959a90f42414f77994741e2fda1da36c03b48d69a0e7080ba6f706efed26805",
+        "bytes": 319388,
+        "width": 960,
+        "height": 540,
+        "durationSeconds": 5.5,
+        "fps": 24,
+        "codec": "h264"
+      },
+      "motionQa": {
+        "comparisonFrames": [0, 131],
+        "effectZone": { "x": [0, 300], "y": [410, 470] },
+        "protectedExclusionZone": { "x": [0, 310], "y": [403, 477] },
+        "protectedRegionDifference": { "mean": 0.00577, "p99": 0, "max": 4 },
+        "effectRegionDifference": { "mean": 7.76117, "significantChannelPercent": 35.38148 },
+        "significantChangeEnergyInsideEffectZonePercent": 99.99901,
+        "visualStatus": "pass",
+        "visualCheckpointFrames": [0, 66, 131],
+        "note": "The rings expand once through open foreground water and stay below the animal. First-to-last decoded comparison keeps every significant change inside the effect rectangle."
+      },
+      "extendedMotionQa": {
+        "comparison": "all 132 decoded final frames against a separately encoded transparent-overlay source control",
+        "subjectRoi": { "x": [80, 940], "y": [100, 405] },
+        "subjectGapPixels": 5,
+        "protectedRegionDifference": { "mean": 0.10953, "p99": 2, "max": 6 },
+        "subjectRegionDifference": { "mean": 0, "p99": 0, "max": 0 },
+        "activeEffectDifference": { "mean": 4.58292, "significantChannelPercent": 18.65878 },
+        "significantChangeEnergyInsideEffectZonePercent": 98.67239,
+        "firstLastEffectMean": 7.76117,
+        "status": "pass"
+      },
+      "review": {
+        "anatomy": { "status": "poster-inherited", "note": "The approved slot-6 anatomy and natural-occlusion verdict is inherited from the fixed source poster; motion supplies no new anatomy or feeding evidence." },
+        "motion": { "status": "supported", "note": "All 132 control comparisons keep the complete animal ROI at zero decoded difference and the protected background within tolerance; 100.00% of significant first-to-last change energy remains inside the foreground-water ring zone." },
+        "responsive": { "status": "supported", "note": "The shared motion renderer provides explicit click-to-play, muted playsinline playback, poster fallback, no autoplay, no loop, and one-video-at-a-time control." },
+        "publication": { "status": "published", "note": "The M0 solo-scene file passed stream, effect-locality, protected-pixel, subject-ROI, temporal, provenance, copyright, and behavior-boundary gates; representative, gallery, and anatomy promotion remain prohibited." },
+        "representativeEligible": false,
+        "galleryEligible": false,
+        "anatomyEligible": false
+      }
+    }
+  }
+}
