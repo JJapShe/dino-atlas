@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-06T09:06:37.134Z",
-  "reviewBatch": "2026-08-06-recognition-taxa-initial-gallery-1",
-  "reviewMethod": "Original-size primary and independent comparison of Carnotaurus and Carcharodontosaurus v1 and corrective v2 representative and pattern images, plus the v1 habitat scenes. Review covered species-level skull cues, whole-body count, bilateral appendages, grounded feet, pelvis-tail continuity, extra-limb and artifact exclusion, same-body pattern separation, habitat readability, the 2025 Tameryraptor taxonomic boundary, and the close-relative reconstruction boundary for the Carcharodontosaurus postcranium.",
-  "targetSlots": 814,
+  "generatedAt": "2026-08-06T11:02:05.421Z",
+  "reviewBatch": "2026-08-06-recognition-taxa-initial-gallery-2",
+  "reviewMethod": "Original-size primary inspection and independent comparison of six Giganotosaurus and Iguanodon images: representative, color-pattern, and habitat-ecology roles. Review covered species-level skull and hand cues, whole-body and animal counts, bilateral appendages, grounded feet, pelvis-tail continuity, extra-limb and artifact exclusion, pattern and composition separation, habitat readability, the comparative-reconstruction boundary for Giganotosaurus forelimbs and hands, the strong-but-inferential recent quadrupedal interpretation for Iguanodon, and the non-herd boundary for its three-animal ecology scene.",
+  "targetSlots": 820,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -7589,6 +7589,66 @@
         "reviewMethod": "Original-size full-frame, primary silhouette, limb-count, foot visibility, tail-continuity, habitat, secondary-animal, Tameryraptor-boundary, crop, and artifact inspection",
         "reviewBatch": "2026-08-06-recognition-taxa-initial-gallery-1",
         "reviewedAt": "2026-08-06T09:06:37.134Z"
+      }
+    },
+    "giganotosaurus-carolinii": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/giganotosaurus-carolinii-lowskull-lacrimal-ridge-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "The full-body image passes the count-level gate with one long low skull, two short forelimbs, two separated grounded hind limbs and feet, one continuous tail, a smooth back, and no central third leg. It is representative-eligible only with an explicit comparative-reconstruction boundary for the forelimbs and hands, which are not directly preserved for G. carolinii.",
+        "reviewMethod": "Original-size full-frame inspection plus skull-proportion, low-lacrimal-ridge, bilateral-arm, bilateral-foot, open-belly-background, pelvis-tail, crop, and artifact review",
+        "reviewBatch": "2026-08-06-recognition-taxa-initial-gallery-2",
+        "reviewedAt": "2026-08-06T11:02:05.421Z"
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/giganotosaurus-carolinii-charcoal-russet-pattern-variant-imagegen-v1.png",
+        "role": "color-pattern",
+        "reason": "The right-facing rear-three-quarter frame preserves one animal, two short arms, two separated hind limbs and feet, one tail, the long low skull, and a smooth back while separating palette, camera, and silhouette from the representative. It remains a review-hold color-pattern slot and is not representative-eligible.",
+        "reviewMethod": "Original-size same-species comparison plus head, bilateral appendage, belly-negative-space, feet, tail, palette, pose, camera, crop, and artifact inspection",
+        "reviewBatch": "2026-08-06-recognition-taxa-initial-gallery-2",
+        "reviewedAt": "2026-08-06T11:02:05.421Z"
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/giganotosaurus-carolinii-candeleros-braided-channel-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "reason": "The single-animal braided-channel scene passes the environment and count-level screen with a readable full body and no additional dinosaur, chase, carcass, or pack claim. Reflections, small figure scale, and comparatively reconstructed forelimbs keep it at anatomy review; it cannot replace the representative.",
+        "reviewMethod": "Original-size full-frame inspection of animal count, long-low skull, appendage separation, water-reflection ambiguity, tail continuity, habitat, crop, and artifacts",
+        "reviewBatch": "2026-08-06-recognition-taxa-initial-gallery-2",
+        "reviewedAt": "2026-08-06T11:02:05.421Z"
+      }
+    },
+    "iguanodon-bernissartensis": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/iguanodon-bernissartensis-thumbspike-quadruped-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "The robust full-body frame passes the count-level gate with one low beaked head, exactly four limbs, two three-toed hind feet, one readable near-hand thumb spike, and one tail held off the ground. It is representative-eligible while the quadrupedal body-plan note remains a strong recent analytical interpretation rather than a directly observed behavior.",
+        "reviewMethod": "Original-size full-frame inspection plus beak, robust-body, near-hand thumb-spike, far-hand, four-limb, bilateral-foot, tail, crop, and artifact review",
+        "reviewBatch": "2026-08-06-recognition-taxa-initial-gallery-2",
+        "reviewedAt": "2026-08-06T11:02:05.421Z"
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/iguanodon-bernissartensis-slate-russet-pattern-variant-imagegen-v1.png",
+        "role": "color-pattern",
+        "reason": "The opposite-facing elevated three-quarter frame keeps the robust beaked identity, four limbs, readable near thumb spike, two three-toed hind feet, and one raised tail while separating palette, light, camera, and pose from the representative. It remains review hold and is not representative-eligible.",
+        "reviewMethod": "Original-size same-species comparison plus beak, hands, four limbs, feet, tail, palette, pose, camera, crop, and artifact inspection",
+        "reviewBatch": "2026-08-06-recognition-taxa-initial-gallery-2",
+        "reviewedAt": "2026-08-06T11:02:05.421Z"
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/iguanodon-bernissartensis-bernissart-marsh-group-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "gallerySubrole": "group-spacing-hypothesis",
+        "claimBoundary": "The three separated animals are a reconstructed shared-habitat scene, not direct evidence of a herd, family unit, coordinated travel, or the exact behavior shown. Recent osteological analysis strongly supports quadrupedal capability, but the pictured movement remains hypothetical.",
+        "reason": "The wide marsh scene passes exactly three visually separated animals, no overlap or contact, a readable robust primary adult, and a distinct environmental composition. Distant hand and foot detail plus the social and locomotor claim boundaries keep it at anatomy review; it cannot replace the representative.",
+        "reviewMethod": "Original-size full-frame inspection of exactly three separated silhouettes, primary anatomy, non-overlap, extra-limb risk, habitat, behavior boundary, crop, and artifacts",
+        "reviewBatch": "2026-08-06-recognition-taxa-initial-gallery-2",
+        "reviewedAt": "2026-08-06T11:02:05.421Z"
       }
     },
     "maiasaura-peeblesorum": {

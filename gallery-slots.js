@@ -5505,6 +5505,60 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     }
   ],
+  "giganotosaurus-carolinii": [
+    {
+      "source": "assets/dinosaurs/giganotosaurus-carolinii-lowskull-lacrimal-ridge-representative-imagegen-v1.png",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "phenotype": "canonical-a",
+      "habitatKey": "candeleros-braided-channel",
+      "expectedKind": "count-level pass"
+    },
+    {
+      "source": "assets/dinosaurs/giganotosaurus-carolinii-charcoal-russet-pattern-variant-imagegen-v1.png",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "phenotype": "charcoal-russet-b",
+      "habitatKey": "candeleros-braided-channel",
+      "expectedKind": "review hold"
+    },
+    {
+      "source": "assets/dinosaurs/giganotosaurus-carolinii-candeleros-braided-channel-ecology-imagegen-v1.png",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "candeleros-braided-channel",
+      "expectedKind": "anatomy review"
+    }
+  ],
+  "iguanodon-bernissartensis": [
+    {
+      "source": "assets/dinosaurs/iguanodon-bernissartensis-thumbspike-quadruped-representative-imagegen-v1.png",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "phenotype": "canonical-a",
+      "habitatKey": "bernissart-marsh",
+      "expectedKind": "count-level pass"
+    },
+    {
+      "source": "assets/dinosaurs/iguanodon-bernissartensis-slate-russet-pattern-variant-imagegen-v1.png",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "phenotype": "slate-russet-b",
+      "habitatKey": "bernissart-marsh",
+      "expectedKind": "review hold"
+    },
+    {
+      "source": "assets/dinosaurs/iguanodon-bernissartensis-bernissart-marsh-group-ecology-imagegen-v1.png",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "gallerySubrole": "group-spacing-hypothesis",
+      "claimBoundary": "The image is a reconstructed shared-habitat scene. It does not establish a herd, family unit, coordinated travel, or a directly observed behavior; quadrupedal capability is supported by recent anatomical analysis, while the depicted movement remains hypothetical.",
+      "phenotype": "canonical-a",
+      "habitatKey": "bernissart-marsh",
+      "expectedKind": "anatomy review"
+    }
+  ],
   "maiasaura-peeblesorum": [
     {
       "source": "assets/dinosaurs/maiasaura-peeblesorum-low-transverse-crest-representative-imagegen-v1.png",

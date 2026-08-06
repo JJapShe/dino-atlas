@@ -1,0 +1,371 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-06-recognition-taxa-expansion-2",
+  "createdAt": "2026-08-06T20:02:05+09:00",
+  "audience": "Korean Dino Atlas users ages 5-14",
+  "scope": [
+    "Giganotosaurus carolinii initial three-image gallery",
+    "Iguanodon bernissartensis initial three-image gallery",
+    "recognition-led missing-taxon expansion queue"
+  ],
+  "promptEncoding": "Prompt arrays preserve the exact prompt supplied to the image generator, one paragraph or labeled line per item and joined with newline characters.",
+  "copyrightSafety": {
+    "externalArtworkUsed": false,
+    "externalImagesUsedAsGenerationInput": false,
+    "projectGeneratedReferenceOnly": true,
+    "licenseRecord": "Original project-generated bitmap assets for Dino Atlas. Papers, museum pages, government pages, educational pages, and book listings supplied factual, environmental, or recognition constraints only; no external figure, reconstruction, franchise frame, or named-artist style was copied or supplied to the generator.",
+    "appPathPolicy": "Only reviewed species-prefixed project copies under assets/dinosaurs are referenced by app.js and gallery-slots.js. No .codex/generated_images path is referenced by the app."
+  },
+  "researchSources": [
+    {
+      "taxon": "Giganotosaurus carolinii",
+      "url": "https://www.nature.com/articles/377224a0",
+      "use": "Original description and direct skull and skeleton evidence",
+      "rightsUse": "Factual reference only; no figure copied"
+    },
+    {
+      "taxon": "Giganotosaurus carolinii",
+      "url": "https://doc.rero.ch/record/14321/files/PAL_E1490.pdf",
+      "use": "Coria and Currie 2002 cranial anatomy and carcharodontosaurid comparison",
+      "rightsUse": "Factual reference only; no figure copied"
+    },
+    {
+      "taxon": "Giganotosaurus carolinii",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/giganotosaurus.html",
+      "use": "Accessible identity, age, region, diet, and size context",
+      "rightsUse": "Factual reference only; no image copied"
+    },
+    {
+      "taxon": "Giganotosaurus carolinii",
+      "url": "https://australian.museum/learn/dinosaurs/fact-sheets/giganotosaurus-carolinii/",
+      "use": "Accessible anatomy, discovery, and taxon overview",
+      "rightsUse": "Factual reference only; no image copied"
+    },
+    {
+      "taxon": "Giganotosaurus carolinii",
+      "url": "https://www.argentina.gob.ar/node/257253",
+      "use": "Argentine geographic and public-heritage context",
+      "rightsUse": "Factual reference only; no image copied"
+    },
+    {
+      "taxon": "Giganotosaurus carolinii",
+      "url": "https://science.nasa.gov/earth/earth-observatory/the-geologic-wonder-of-the-neuquen-basin-92908/",
+      "use": "Neuquén Basin geologic and landscape context",
+      "rightsUse": "Factual reference only; no image copied"
+    },
+    {
+      "taxon": "Giganotosaurus carolinii",
+      "url": "https://www.penguinrandomhouse.com/books/691150/the-fact-packed-activity-book-dinosaurs-by-dk/",
+      "use": "Current family-book recognition signal",
+      "rightsUse": "Bibliographic and descriptive facts only"
+    },
+    {
+      "taxon": "Iguanodon bernissartensis",
+      "url": "https://collections.naturalsciences.be/ssh-paleontology/masterpieces/bernissart",
+      "use": "Official Bernissart specimen and discovery context",
+      "rightsUse": "Factual reference only; no image copied"
+    },
+    {
+      "taxon": "Iguanodon bernissartensis",
+      "url": "https://www.naturalsciences.be/en/discover-join/discover/the-bernissart-iguanodons-at-a-glance",
+      "use": "Official accessible overview of the Bernissart material",
+      "rightsUse": "Factual reference only; no image copied"
+    },
+    {
+      "taxon": "Iguanodon bernissartensis",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/Iguanodon.html",
+      "use": "Accessible identity, age, region, diet, and size context",
+      "rightsUse": "Factual reference only; no image copied"
+    },
+    {
+      "taxon": "Iguanodon bernissartensis",
+      "url": "https://biblio.naturalsciences.be/rbins-publications/memoirs-of-the-royal-belgian-institute-of-natural-sciences-first-series/bulletin-of-the-royal-belgian-institute-of-natural-sciences-memoirs-of-the-royal-belgian-institute-of-natural-sciences-first-series/7877037054a3478584b906a088fbf5d0",
+      "use": "Norman 1980 osteology and taxonomic anatomy",
+      "rightsUse": "Factual reference only; no figure copied"
+    },
+    {
+      "taxon": "Iguanodon bernissartensis",
+      "url": "https://doi.org/10.3897/fr.29.173614",
+      "use": "Gônet et al. 2026 osteological correlates and strong quadrupedal interpretation with sensitivity caveats",
+      "rightsUse": "Factual reference only; no figure copied"
+    },
+    {
+      "taxon": "Iguanodon bernissartensis",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/pala.70057",
+      "use": "Rotatori et al. 2026 locomotor and functional-anatomy context",
+      "rightsUse": "Factual reference only; no figure copied"
+    },
+    {
+      "taxon": "Iguanodon bernissartensis",
+      "url": "https://www.belspo.be/belspo/brain2-be/projects/FinalReports/Iguanodon2_FinRep.pdf",
+      "use": "Bernissart palaeoenvironment and research-program context",
+      "rightsUse": "Factual reference only; no figure copied"
+    },
+    {
+      "taxon": "Iguanodon bernissartensis",
+      "url": "https://www.science.go.kr/mps/scienceSubject/dinosaur/view.do?subjectSid=17",
+      "use": "Korean family and primary-school educational recognition signal; exposure only",
+      "rightsUse": "Bibliographic and descriptive facts only"
+    },
+    {
+      "taxon": "Iguanodon bernissartensis",
+      "url": "https://www.penguinrandomhouse.com/books/836927/my-first-dino--iguanodon-by-wonder-house-books/",
+      "use": "Current early-reader recognition signal",
+      "rightsUse": "Bibliographic and descriptive facts only"
+    }
+  ],
+  "evidenceBoundaries": {
+    "giganotosaurus-carolinii": {
+      "direct": [
+        "The holotype and referred cranial material support a giant carcharodontosaurid with a long low skull and low orbital-region ridges.",
+        "The known axial, pelvic, and hind-limb material supports a large horizontal-bodied terrestrial theropod."
+      ],
+      "comparative": [
+        "The complete forelimbs and three-finger hands shown here are conservative close-carcharodontosaurid comparative reconstructions, not directly preserved G. carolinii hands.",
+        "Missing body regions, feet, and the complete tail require close-relative comparison."
+      ],
+      "hypothetical": [
+        "All pigmentation, pattern placement, soft-tissue details, weather, vegetation arrangement, posture, track placement, and the depicted moment."
+      ]
+    },
+    "iguanodon-bernissartensis": {
+      "direct": [
+        "The Bernissart skeletons support a robust large-bodied ornithopod, a beaked skull, a conical thumb spike, weight-bearing central manual digits, powerful hind limbs, and a long tail.",
+        "Multiple individuals are known from Bernissart, but this does not directly document the exact social grouping or movement depicted here."
+      ],
+      "analytical": [
+        "Gônet et al. 2026 found nine of eleven osteological correlates consistent with quadrupedalism and interpreted I. bernissartensis as best supported as an obligate quadruped, while noting sensitivity to character coding and the need for further biomechanical testing.",
+        "The app therefore treats quadrupedal capability as a strong current analytical interpretation, not a directly observed fixed behavior."
+      ],
+      "hypothetical": [
+        "All pigmentation, pattern placement, soft-tissue details, weather, vegetation arrangement, posture, group spacing, social relation, travel coordination, and the depicted moment."
+      ]
+    }
+  },
+  "records": {
+    "giganotosaurus-representative-v1": {
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-06T19:55:14+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image workflow",
+      "seed": "unavailable",
+      "callId": "exec-828c762e-c8d3-4c1f-bc08-04c5a41d57b6",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-828c762e-c8d3-4c1f-bc08-04c5a41d57b6.png",
+      "approvedProjectPath": "assets/dinosaurs/giganotosaurus-carolinii-lowskull-lacrimal-ridge-representative-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork or copyrighted character style used.",
+      "sha256": "1c24e590cc8e06de4815fc28819cdbd14d66f65c290211aa67d66ee734e7e1c4",
+      "bytes": 2616983,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas representative gallery image, anatomy correction v3",
+        "Primary request: One adult Giganotosaurus carolinii, scientifically grounded carcharodontosaurid anatomy: low elongated rectangular theropod skull about twice as long as deep, narrow snout tip, deep maxilla, low swept-back lacrimal ridge and broad low brow shelf, laterally compressed blade-like serrated teeth, no horns; muscular short neck, horizontal athletic torso, reduced shoulder girdle, exactly two short non-vestigial forelimbs with three compact fingers each as comparative reconstruction, exactly two powerful hind limbs total, exactly two grounded three-toed feet total, and one continuous long balancing tail. The two hind limbs must be unambiguous: one near leading leg and one far trailing leg, with empty visible background under the center of the belly—no central third leg, no duplicate thigh, no extra foot. Smooth uninterrupted back silhouette with no spikes, scutes, sail or armor.",
+        "Scene/backdrop: early Cenomanian Candeleros Formation braided-river floodplain in Patagonia, red sand bars, low cycads and sparse conifers, no other animals.",
+        "Composition/framing: landscape 16:9, clean left-facing near-broadside with a slight three-quarter head turn. Full snout, both short forelimbs, one leading near hind leg, one trailing far hind leg, both feet, and tail tip completely inside frame. Keep open negative space beneath the middle of the abdomen so no shadow or vegetation reads as a third leg. Dinosaur occupies 70 percent of image width.",
+        "Style/medium: original naturalistic high-detail scientific paleoart, calm alert walk, soft morning side light.",
+        "Color palette: deep charcoal-gray dorsum, muted umber flanks, pale sandy underside, restrained rusty face markings; hypothetical.",
+        "Constraints: no text, logo, watermark, border, other animals, attack or gore.",
+        "Avoid: rounded iguana or monitor-lizard head, Tyrannosaurus short deep skull or two-finger hands, Spinosaurus sail/crocodile snout, Carnotaurus horns/tiny arms, Acrocanthosaurus high back, Allosaurus crests, Jurassic film monster, dorsal spikes, feathers, third hind leg, central leg under belly, extra foot, fused legs, duplicate tail, cropped feet or tail."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-06T11:02:05.421Z",
+        "method": "Original-size full-frame inspection plus skull, bilateral appendage, grounded-foot, belly-negative-space, pelvis-tail, crop, and artifact audit",
+        "result": "PASS as the sole representative-eligible image in this batch at count level. One long low skull, two short arms, two separated grounded hind limbs and feet, one continuous tail, and a smooth back are readable. Forelimbs and hands remain explicitly comparative reconstructions pending deeper anatomy review."
+      }
+    },
+    "giganotosaurus-pattern-v1": {
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-06T19:57:42+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen reference-guided prompt-to-image workflow",
+      "seed": "unavailable",
+      "callId": "exec-a95c6fc9-5e6c-474c-9a89-727b34d3ac1b",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-a95c6fc9-5e6c-474c-9a89-727b34d3ac1b.png",
+      "approvedProjectPath": "assets/dinosaurs/giganotosaurus-carolinii-charcoal-russet-pattern-variant-imagegen-v1.png",
+      "license": "Original project-generated bitmap derived only from the approved project representative; no external artwork used.",
+      "sha256": "bdfde5cf345eeee9902af1cc14bb2839bff078e5dd4d86511a4b0a802a89d268",
+      "bytes": 2324488,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "assets/dinosaurs/giganotosaurus-carolinii-lowskull-lacrimal-ridge-representative-imagegen-v1.png"
+      ],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas same-species color/pattern and composition variant, corrected v2",
+        "Input image: Image 1 is the approved Giganotosaurus carolinii identity and anatomical-proportion reference only. Preserve its low elongated theropod skull, low lacrimal ridge, smooth back, two short three-finger forelimbs, exactly two hind limbs and one tail. Do not copy, mirror or recolor the exact pose.",
+        "Primary request: Create one Giganotosaurus in a clearly different right-facing rear-three-quarter walking view on an open Candeleros channel terrace.",
+        "Subject: exactly one animal. Show exactly two hind limbs total: one near leading leg planted forward and one far trailing leg planted behind; both three-toed feet fully visible. Leave a broad patch of unobstructed background visible under the center of the abdomen—there must be no central third leg, extra thigh, extra shin, limb-like shadow or duplicate foot. Exactly two short forelimbs, one near and one far, with three compact fingers each as comparative reconstruction. One continuous long tail.",
+        "Composition/framing: landscape 16:9, camera slightly behind and lower than Image 1, more negative space ahead of the head, complete body from snout through both feet to tail tip inside frame. Strongly different silhouette and camera from the broadside reference.",
+        "Color palette: hypothetical deep blue-charcoal dorsum, restrained iron-red shoulder and flank patches, pale cream underside, sparse broken cream bars around shoulder and distal tail. Naturalistic, not bright fantasy.",
+        "Scene/backdrop: late-afternoon red-sand floodplain with shallow distant water and low sparse vegetation, no other animals.",
+        "Constraints: no text, logo, watermark, border or gore; correct limb count; smooth back.",
+        "Avoid: direct recolor, near-copy, horizontal mirror, third hind leg, central limb under belly, duplicate foot, fused legs, T. rex skull or two-finger hands, crocodile face, Carnotaurus horns, Spinosaurus sail, Acrocanthosaurus high back, dorsal spikes, armor, feathers, cropped tail."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-06T11:02:05.421Z",
+        "method": "Original-size identity and same-body comparison plus palette, direction, camera, appendage, tail, crop, and artifact audit",
+        "result": "PASS only as a review-hold color-pattern slot. The pose, direction, camera, and palette differ from the representative; representative promotion remains prohibited."
+      }
+    },
+    "giganotosaurus-ecology-v1": {
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "kind": "anatomy review",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-06T19:56:23+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image ecology workflow",
+      "seed": "unavailable",
+      "callId": "exec-7b7a8db4-7620-4789-81fa-29e7945f938b",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-7b7a8db4-7620-4789-81fa-29e7945f938b.png",
+      "approvedProjectPath": "assets/dinosaurs/giganotosaurus-carolinii-candeleros-braided-channel-ecology-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual environmental sources only; no external artwork used.",
+      "sha256": "34641fb906c761b1e9704773ef58f8f74859b5d5ec4e625039ff012cddb7deec",
+      "bytes": 2912129,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas ecology/reference scene",
+        "Primary request: One adult Giganotosaurus carolinii, scientifically grounded carcharodontosaurid anatomy: low elongated rectangular theropod skull about twice as long as deep, narrow snout tip, deep maxilla, low swept-back lacrimal ridge and broad low brow shelf, laterally compressed blade-like serrated teeth, no horns; muscular short neck, horizontal athletic torso, reduced shoulder girdle, exactly two short non-vestigial forelimbs with three compact fingers each as comparative reconstruction, exactly two powerful hind limbs total, exactly two grounded three-toed feet total, and one continuous long balancing tail. The two hind limbs must be unambiguous: one near leading leg and one far trailing leg, with empty visible background under the center of the belly—no central third leg, no duplicate thigh, no extra foot. Smooth uninterrupted back silhouette with no spikes, scutes, sail or armor.",
+        "Scene/backdrop: wide high-angle view of one Giganotosaurus carolinii crossing a shallow braided river channel after seasonal rain in the early Cenomanian Candeleros Formation. Red sandstone bars, reflective shallow water, windblown sand, exposed track impressions and sparse floodplain vegetation dominate the frame.",
+        "Composition/framing: landscape 16:9, dinosaur occupies about one third of the image on a diagonal from lower left to upper right. Full body is readable, exactly two separated hind legs and two feet, exactly two short forelimbs, one tail. No named prey, no herd, no chase, no carcass, no pack.",
+        "Style/medium: original naturalistic high-detail scientific paleoart, environmental storytelling, soft clearing-storm light.",
+        "Color palette: muted slate, warm brown and dusty pale underside; hypothetical.",
+        "Constraints: calm crossing behavior only, no text, logo, watermark, border or gore.",
+        "Avoid: third leg, duplicate foot, merged reflection with limbs, other dinosaurs, Tyrannosaurus proportions, Spinosaurus features, Carnotaurus horns, dorsal spikes, crocodile armor. This is an anatomy-review ecology scene, not representative evidence."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-06T11:02:05.421Z",
+        "method": "Original-size environmental, animal-count, silhouette, reflection, appendage, habitat, crop, and artifact audit",
+        "result": "PASS for anatomy-review habitat context only. Exactly one animal and no prey, herd, chase, carcass, or pack claim are visible; small scale, water reflections, and comparative forelimbs prohibit representative promotion."
+      }
+    },
+    "iguanodon-representative-v1": {
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-06T19:51:16+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image workflow",
+      "seed": "unavailable",
+      "callId": "exec-4e3f2b8c-4079-4c28-aa6c-1f0c42d854c5",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-4e3f2b8c-4079-4c28-aa6c-1f0c42d854c5.png",
+      "approvedProjectPath": "assets/dinosaurs/iguanodon-bernissartensis-thumbspike-quadruped-representative-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork or copyrighted character style used.",
+      "sha256": "f783ec03327c5ea7d8610342bcba7cab32bd968692767ef09c47bbaaf28cd1f0",
+      "bytes": 3053459,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas representative gallery image",
+        "Primary request: Create one scientifically grounded adult Iguanodon bernissartensis as a clean, realistic educational paleoart scene.",
+        "Scene/backdrop: Barremian-Aptian Bernissart wet floodplain woodland in Early Cretaceous Belgium, horsetails, ferns, conifers, dark damp soil and a shallow distant pool, no other animals.",
+        "Subject: exactly one robust adult Iguanodon bernissartensis in a natural quadrupedal walking pose, complete body visible from closed beaked snout to a single tail tip. Low elongated herbivore skull with horny beak and cheek region, no crest and no nasal horn. Exactly four limbs: robust forelimbs shorter than hind limbs, powerful hind limbs, three-toed hind feet. Make the near forehand anatomically readable: one conical thumb spike on digit I, three central weight-bearing fingers forming a compact hoof-like support, and a smaller flexible fifth finger; the far hand may be naturally foreshortened but must not create extra limbs. Hold the long stiff tail horizontally off the ground.",
+        "Style/medium: naturalistic high-detail scientific paleoart, photographic lighting, original composition.",
+        "Composition/framing: landscape 16:9, three-quarter side view at animal height, full body and all four grounded feet inside frame; primary hand readable but not an oversized close-up; dinosaur occupies about 68 percent of width.",
+        "Lighting/mood: soft overcast woodland light, calm purposeful walk.",
+        "Color palette: muted deep olive, charcoal and warm ochre with a pale underside; plausible hypothetical coloration.",
+        "Constraints: no text, no logo, no watermark, no border; exactly one animal; correct limb count; no cropped feet or tail; no gore.",
+        "Avoid: Victorian rhinoceros-like body, thumb spike on nose, kangaroo tripod or dragging tail, hadrosaur duckbill or cranial crest, Mantellisaurus gracile body, Camptosaurus small light body, theropod teeth, claws on every weight-bearing finger, elephant feet, giant exaggerated thumb spikes, extra digits, extra legs, fused limbs, duplicate tail."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-06T11:02:05.421Z",
+        "method": "Original-size full-frame inspection plus beak, robust-body, near and far hand, four-limb, bilateral-foot, tail, crop, and artifact audit",
+        "result": "PASS as the sole representative-eligible image in this batch at count level. One robust animal, a low closed beak, four limbs, a readable near thumb spike, two hind feet, and one raised tail are present. The quadrupedal interpretation is strong but analytical; the precise pictured behavior is not direct evidence."
+      }
+    },
+    "iguanodon-pattern-v1": {
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-06T19:53:30+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen reference-guided prompt-to-image workflow",
+      "seed": "unavailable",
+      "callId": "exec-7f17ce84-9d37-495a-9ad0-386a27a1f6ca",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-7f17ce84-9d37-495a-9ad0-386a27a1f6ca.png",
+      "approvedProjectPath": "assets/dinosaurs/iguanodon-bernissartensis-slate-russet-pattern-variant-imagegen-v1.png",
+      "license": "Original project-generated bitmap derived only from the approved project representative; no external artwork used.",
+      "sha256": "28cdee506102615f8d801ea49ce004e3da8358cf702f5c2ed5b6d93dd9a2abb5",
+      "bytes": 3036066,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "assets/dinosaurs/iguanodon-bernissartensis-thumbspike-quadruped-representative-imagegen-v1.png"
+      ],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas same-species color and composition variant",
+        "Input image: Image 1 is the approved Iguanodon bernissartensis identity and body-proportion reference only. Preserve the robust quadrupedal species anatomy, but do not copy or mirror its exact broadside pose, lighting, color arrangement or background.",
+        "Primary request: Create a clearly different opposite-facing three-quarter view of one adult Iguanodon bernissartensis moving slowly from left to right across an open Early Cretaceous fern meadow.",
+        "Subject: exactly one robust Iguanodon, low closed beaked head with no crest or nasal horn, horizontal spine, exactly four limbs, powerful hind legs and three-toed hind feet, robust forelimbs shorter than hind limbs. Make the near hand readable with one conical thumb spike, three compact central weight-bearing fingers and one smaller flexible fifth finger. Keep the long stiff single tail off the ground.",
+        "Composition/framing: landscape 16:9, slightly elevated front three-quarter angle with more negative space ahead of the animal; full body and every foot inside frame; do not reuse Image 1's side profile.",
+        "Color palette: hypothetical blue-gray dorsum, muted brick-red flank patches, cream underside, restrained pale diagonal bars over shoulder and tail; clearly distinct from Image 1's olive-ochre pattern.",
+        "Scene/backdrop: open Bernissart floodplain with low horsetails, ferns and a distant conifer line; drier and brighter than Image 1.",
+        "Constraints: original composition, no text, logo, watermark, border, other animals or gore; exactly four limbs and one tail.",
+        "Avoid: direct recolor, near-copy, horizontal mirror, Victorian rhinoceros body, thumb spike on nose, kangaroo tripod, dragging tail, hadrosaur duckbill or crest, Mantellisaurus gracility, Camptosaurus small body, elephant feet, giant thumb claws, claws on all central fingers, extra digits or limbs, fused legs, cropped tail."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-06T11:02:05.421Z",
+        "method": "Original-size identity and same-body comparison plus palette, direction, camera, hands, four limbs, feet, tail, crop, and artifact audit",
+        "result": "PASS only as a review-hold color-pattern slot. Direction, camera, light, and palette differ from the representative while the robust beaked body remains readable; representative promotion remains prohibited."
+      }
+    },
+    "iguanodon-ecology-v1": {
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "gallerySubrole": "group-spacing-hypothesis",
+      "kind": "anatomy review",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-06T19:54:07+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen reference-guided ecology workflow",
+      "seed": "unavailable",
+      "callId": "exec-d6945628-3a08-4f4f-b1a8-5e61b5210ab7",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-d6945628-3a08-4f4f-b1a8-5e61b5210ab7.png",
+      "approvedProjectPath": "assets/dinosaurs/iguanodon-bernissartensis-bernissart-marsh-group-ecology-imagegen-v1.png",
+      "license": "Original project-generated bitmap derived only from the approved project representative; factual environmental sources only; no external artwork used.",
+      "sha256": "f376d263f95dfca5f9c133ba3ebff9947a8ca48ee2aa84d0c86a75f5d4fea60d",
+      "bytes": 2761587,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "assets/dinosaurs/iguanodon-bernissartensis-thumbspike-quadruped-representative-imagegen-v1.png"
+      ],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas ecology/reference gallery scene",
+        "Input image: Image 1 is an Iguanodon bernissartensis identity and anatomy reference for the primary adult only.",
+        "Primary request: Show a calm small group of exactly three Iguanodon bernissartensis crossing a broad Bernissart wetland margin in the Early Cretaceous, emphasizing herd spacing and habitat rather than action.",
+        "Scene/backdrop: wide high-angle 16:9 view over dark damp floodplain soil, patches of shallow water, horsetails, ferns and conifer woodland under clearing mist.",
+        "Subjects: exactly three separated Iguanodon, no overlap or contact. One primary adult occupies about one third of the frame and remains fully readable in a stable quadrupedal walk: low closed beaked head, no crest, robust body, four limbs, forehand thumb spike cue, powerful hind legs, three-toed hind feet and long stiff tail held off the ground. Two smaller distant group members follow on a separate depth plane, fully separated from the primary and from each other; their silhouettes must remain species-consistent and not merge into extra limbs.",
+        "Composition/framing: diagonal movement from lower right toward upper left, strong environmental foreground and open water reflecting sky; different camera and scale from the representative.",
+        "Lighting/mood: cool misty dawn becoming warm at the horizon, calm social movement.",
+        "Color palette: natural varied muted olive, slate and ochre individuals; hypothetical.",
+        "Constraints: no predators, chase, attack, nests, eggs, text, logo, watermark, border or gore; exactly three animals.",
+        "Avoid: crowded pile, merged bodies, duplicate legs or tails, hadrosaur crests, duck bills, thumb spikes on noses, kangaroo posture, dragging tails, elephant feet, giant fantasy claws. Mark conceptually as anatomy review, not representative evidence."
+      ],
+      "claimBoundary": "Exactly three separated animals are depicted as a reconstruction. The image does not demonstrate a herd, family unit, coordinated travel, or an observed locomotor event. Quadrupedal capability is a strong current analytical interpretation, while the exact movement and social spacing are hypothetical.",
+      "review": {
+        "reviewedAt": "2026-08-06T11:02:05.421Z",
+        "method": "Original-size environmental audit plus exact animal count, silhouette separation, overlap, primary anatomy, distant-detail, behavior-boundary, crop, and artifact inspection",
+        "result": "PASS only as an anatomy-review habitat and group-spacing hypothesis. Exactly three separated animals are readable, but the scene must never be described as direct herd, family, coordinated-movement, or observed-behavior evidence and is not representative-eligible."
+      }
+    }
+  }
+}

@@ -75,19 +75,19 @@ for (const dino of dinosaurs) {
   }
 }
 
-if (dinosaurs.length !== 134) fail(`Expected 134 taxa, found ${dinosaurs.length}`);
+if (dinosaurs.length !== 138) fail(`Expected 138 taxa, found ${dinosaurs.length}`);
 
 const levelSnapshot = dinosaurs
   .map((dino) => `${dino.id}:${dino.knowledgeLevel}`)
   .sort()
   .join("\n");
 const levelSnapshotSha256 = createHash("sha256").update(levelSnapshot).digest("hex");
-const expectedLevelSnapshotSha256 = "46107cd22769f360f5736e8e46834270d86e8e2c0c11cdd43b68ac3b224ecf3c";
+const expectedLevelSnapshotSha256 = "5e0e79455df8f59521b7a6892b551dd8776ebe0c1c6c9bd21adbcc967d870b10";
 if (levelSnapshotSha256 !== expectedLevelSnapshotSha256) {
   fail(`Level snapshot hash mismatch: ${levelSnapshotSha256}`);
 }
 
-const expectedDistribution = { 1: 19, 2: 28, 3: 39, 4: 48 };
+const expectedDistribution = { 1: 22, 2: 29, 3: 39, 4: 48 };
 for (const [level, expected] of Object.entries(expectedDistribution)) {
   if (distribution[level] !== expected) {
     fail(`LV${level} expected ${expected}, found ${distribution[level]}`);
@@ -227,6 +227,10 @@ const expectedLevels = {
   "brachiosaurus-altithorax": 1,
   "tarbosaurus-bataar": 1,
   "almas-ukhaa": 4,
+  "carnotaurus-sastrei": 1,
+  "carcharodontosaurus-saharicus": 2,
+  "giganotosaurus-carolinii": 1,
+  "iguanodon-bernissartensis": 1,
 };
 
 const previousBoundaryLevels = {
@@ -269,8 +273,8 @@ const appCacheDate = html.match(/app\.js\?v=(\d{8})-[^"']+/)?.[1] || "";
 if (stylesCacheDate < "20260803" || appCacheDate < "20260803") {
   fail("Knowledge-level release cache keys are stale");
 }
-if (!rubric.includes("대상 생물: 134종") || !rubric.includes("LV2 28종 / LV3 39종")) {
-  fail("Rubric baseline does not match the audited 134-taxon distribution");
+if (!rubric.includes("대상 생물: 138종") || !rubric.includes("LV1 22종 / LV2 29종 / LV3 39종 / LV4 48종")) {
+  fail("Rubric baseline does not match the audited 138-taxon distribution");
 }
 if (
   !rubric.includes("knowledge-level-evidence-2026-08-03.md") ||
@@ -279,8 +283,8 @@ if (
   fail("Rubric does not link to both per-taxon evidence artifacts");
 }
 if (
-  !audit.includes("변경: 기존 4종 재분류, 친숙 미수록종 마이아사우라 1종 신규 수록") ||
-  !audit.includes("최종 분포: LV1 19 / LV2 28 / LV3 39 / LV4 48")
+  !audit.includes("변경: 기존 4종 재분류를 보존하고, 134종 기준선 이후 친숙 분류군 4종 신규 수록") ||
+  !audit.includes("최종 분포: LV1 22 / LV2 29 / LV3 39 / LV4 48")
 ) {
   fail("Audit summary does not match the expected decision set");
 }
