@@ -9,8 +9,10 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..", "..", "..");
 const CATALOG_RELATIVE_PATH = "motion-m2-i2v-samples.js";
 const METADATA_RELATIVE_PATH = "tools/comfyui/motion-m2-i2v-pilot-batch-20260804.json";
+const EVENT_CANDIDATES_RELATIVE_PATH = "tools/comfyui/motion-m2-i2v-event-candidates-20260806.json";
 const CATALOG_PATH = path.join(ROOT, CATALOG_RELATIVE_PATH);
 const METADATA_PATH = path.join(ROOT, ...METADATA_RELATIVE_PATH.split("/"));
+const EVENT_CANDIDATES_PATH = path.join(ROOT, ...EVENT_CANDIDATES_RELATIVE_PATH.split("/"));
 
 const REQUIRED_REVIEW_GATES = [
   "sourceIntegrity",
@@ -750,6 +752,83 @@ function checkPostProcess(postProcess, sample, owner) {
   return rawOutput.stream;
 }
 
+function checkEnvironmentDerivative(derivative, metadata, samplesById, sample, owner) {
+  const expectsDerivative = sample.sceneRole === "environment-event";
+  if (!derivative) {
+    if (expectsDerivative) fail(`${owner}: environment-event requires a pinned published-source derivative record`);
+    return null;
+  }
+  if (!expectsDerivative || typeof derivative !== "object" || Array.isArray(derivative)) {
+    fail(`${owner}: derivedFromPublishedSample is allowed only for a valid environment-event object`);
+    return null;
+  }
+  if (derivative.type !== "deterministic-single-meteor-overlay") {
+    fail(`${owner}: unsupported environment derivative type`);
+  }
+
+  const sourceSample = samplesById.get(derivative.sampleId);
+  const sourceRecord = metadata.samples?.[derivative.sampleId];
+  if (!sourceSample || !sourceRecord || derivative.sampleId === sample.id) {
+    fail(`${owner}: environment derivative source sample is missing or recursive`);
+    return null;
+  }
+  if (sourceSample.review?.publication?.status !== "published"
+    || sourceSample.taxonId !== sample.taxonId
+    || sourceSample.poster !== sample.poster
+    || derivative.projectAsset !== sourceSample.src) {
+    fail(`${owner}: environment derivative must reuse a published same-taxon source sample and poster`);
+  }
+  compareStreamRecords(derivative.file, sourceSample.file, `${owner}: derivative source file`);
+  checkStreamRecord(derivative.file, `${owner}: derivative source file`);
+  checkHashedFile(
+    derivative.projectAsset,
+    derivative.file?.sha256,
+    derivative.file?.bytes,
+    `${owner}: derivative source video`,
+  );
+
+  if (!isNonEmptyString(derivative.buildScript)
+    || !/\.ps1$/i.test(derivative.buildScript)
+    || !isSha256(derivative.buildScriptSha256)) {
+    fail(`${owner}: deterministic overlay build script record is incomplete`);
+  } else {
+    checkHashedFile(
+      derivative.buildScript,
+      derivative.buildScriptSha256,
+      undefined,
+      `${owner}: deterministic overlay build script`,
+    );
+  }
+  const command = normalizeWhitespace(derivative.command);
+  if (!hasPortablePlaceholder(command, "buildScript")
+    || !command.includes("-Sample tyrannosaurus")) {
+    fail(`${owner}: deterministic overlay command must use {buildScript} and the tyrannosaurus target`);
+  }
+
+  const effect = derivative.effect;
+  const activeSeconds = effect?.activeSeconds;
+  const trajectory = effect?.trajectory;
+  const validActiveRange = Array.isArray(activeSeconds) && activeSeconds.length === 2
+    && activeSeconds.every(Number.isFinite)
+    && activeSeconds[0] >= 0 && activeSeconds[0] < activeSeconds[1]
+    && activeSeconds[1] <= sample.file?.durationSeconds;
+  const validTrajectory = trajectory && Array.isArray(trajectory.start)
+    && Array.isArray(trajectory.end) && trajectory.start.length === 2 && trajectory.end.length === 2
+    && [...trajectory.start, ...trajectory.end].every(Number.isFinite)
+    && trajectory.start[0] >= 0 && trajectory.end[0] < sample.file?.width
+    && trajectory.start[1] >= 0 && trajectory.end[1] < sample.file?.height
+    && trajectory.end[0] > trajectory.start[0] && trajectory.end[1] >= trajectory.start[1];
+  if (!effect || effect.subject !== "distant-meteor" || effect.count !== 1
+    || !validActiveRange || !validTrajectory
+    || effect.paleRoundedCore !== true || effect.diffuseTrail !== true
+    || effect.fadesBeforeCanopy !== true || effect.intersectsDinosaur !== false
+    || effect.intersectsGround !== false || effect.reverseMotion !== false
+    || effect.loop !== false || effect.autoplay !== false) {
+    fail(`${owner}: deterministic meteor effect boundary is incomplete or unsafe`);
+  }
+  return { sourceSample, sourceRecord };
+}
+
 function parseLegacyManualRange(value) {
   const match = String(value || "").match(/frames?\s+(\d+)\s*-\s*(\d+)/i);
   return match ? [Number(match[1]), Number(match[2])] : null;
@@ -787,6 +866,23 @@ function checkPublishedQa(record, sample, owner) {
   const expectedVisualStatus = `pass-independent-${sample.file?.frameCount}-of-${sample.file?.frameCount}`;
   if (qa.visualStatus !== expectedVisualStatus) {
     fail(`${owner}: qa.visualStatus must be ${expectedVisualStatus}`);
+  }
+  if (qa.evidenceFiles !== undefined) {
+    if (!Array.isArray(qa.evidenceFiles) || !qa.evidenceFiles.length) {
+      fail(`${owner}: qa.evidenceFiles must be a non-empty array when present`);
+    } else {
+      for (const [index, evidence] of qa.evidenceFiles.entries()) {
+        if (!isNonEmptyString(evidence?.purpose)) {
+          fail(`${owner}: qa.evidenceFiles[${index}] requires a purpose`);
+        }
+        checkHashedFile(
+          evidence?.path,
+          evidence?.sha256,
+          evidence?.bytes,
+          `${owner}: qa evidence ${index}`,
+        );
+      }
+    }
   }
 }
 
@@ -915,21 +1011,136 @@ function checkRunRecord(
   }
 }
 
+function checkEventCandidateBatch(batch, samplesById) {
+  if (!batch || batch.schemaVersion !== 1
+    || batch.status !== "review-complete-with-safe-replacements") {
+    fail("event candidate batch must be a completed schema-1 review record");
+    return;
+  }
+  const candidates = Array.isArray(batch.candidates) ? batch.candidates : [];
+  const summary = batch.reviewSummary;
+  if (!isSha256(batch.generationSpecSha256) || !isNonEmptyString(batch.generationSpecNote)) {
+    fail("event candidate batch must preserve the exact pre-review generation manifest hash and its relationship to the reviewed manifest");
+  }
+  if (candidates.length !== 2 || summary?.nativeCandidatesAccepted !== 0
+    || summary?.nativeCandidatesRejected !== candidates.length
+    || summary?.safeReplacementsPublished !== candidates.length) {
+    fail("event candidate batch counts must record two rejected native candidates and two safe replacements");
+  }
+  for (const candidate of candidates) {
+    const owner = `event candidate ${candidate?.id || "(blank)"}`;
+    if (!isSafeCatalogId(candidate?.id) || !isSafeCatalogId(candidate?.taxonId)
+      || candidate?.sceneRole !== "environment-event"
+      || !isNonEmptyString(candidate?.positivePrompt)
+      || !isNonEmptyString(candidate?.negativePrompt)) {
+      fail(`${owner}: identity, role, or prompt record is incomplete`);
+    }
+    checkHashedFile(
+      candidate?.sourcePoster,
+      candidate?.sourcePosterSha256,
+      undefined,
+      `${owner}: source poster`,
+    );
+    const runRecordFile = checkHashedFile(
+      candidate?.record,
+      candidate?.recordSha256,
+      undefined,
+      `${owner}: rejected native run record`,
+    );
+    if (runRecordFile) {
+      try {
+        const runRecord = JSON.parse(fs.readFileSync(runRecordFile.absolutePath, "utf8"));
+        const expectedConfig = { ...batch.settings, ...(candidate.settings || {}) };
+        if (runRecord.schemaVersion !== 2
+          || runRecord.candidateId !== candidate.id
+          || runRecord.taxonId !== candidate.taxonId
+          || runRecord.status?.status_str !== "success"
+          || runRecord.status?.completed !== true
+          || !isNonEmptyString(runRecord.promptId)) {
+          fail(`${owner}: run record identity or successful completion state differs from the reviewed candidate`);
+        }
+        for (const field of [
+          "seed", "width", "height", "frames", "fps", "steps", "cfg",
+          "sampler", "scheduler", "shift", "denoise",
+        ]) {
+          const expectedValue = field === "seed" ? candidate.seed : expectedConfig[field];
+          if (runRecord.runConfig?.[field] !== expectedValue) {
+            fail(`${owner}: run record ${field} differs from the generation manifest`);
+          }
+        }
+        if (runRecord.runConfig?.inputName !== candidate.inputName
+          || normalizeWhitespace(runRecord.runConfig?.positivePrompt)
+            !== normalizeWhitespace(candidate.positivePrompt)
+          || normalizeWhitespace(runRecord.runConfig?.negativePrompt)
+            !== normalizeWhitespace(`${batch.commonNegativePrompt}, ${candidate.negativePrompt}`)) {
+          fail(`${owner}: run record input or prompts differ from the generation manifest`);
+        }
+        if (runRecord.provenance?.specSha256 !== batch.generationSpecSha256
+          || runRecord.provenance?.comfyInputSha256 !== candidate.sourcePosterSha256
+          || runRecord.provenance?.sourcePoster !== candidate.sourcePoster
+          || runRecord.provenance?.sourcePosterSha256 !== candidate.sourcePosterSha256
+          || runRecord.provenance?.sourceLicense !== candidate.sourceLicense) {
+          fail(`${owner}: run record provenance differs from the pinned generation snapshot or source`);
+        }
+      } catch (error) {
+        fail(`${owner}: rejected native run record is invalid JSON: ${error.message}`);
+      }
+    }
+    if (candidate?.reviewStatus !== "rejected"
+      || candidate?.review?.allFrames !== "rejected"
+      || candidate?.review?.usableSafePrefix !== "none"
+      || !isNonEmptyString(candidate?.review?.firstClearDefect)
+      || !isNonEmptyString(candidate?.review?.reason)) {
+      fail(`${owner}: rejection review must prohibit every native output and safe prefix`);
+    }
+    const replacement = candidate?.safeReplacement;
+    if (!isSafeCatalogId(replacement?.id)
+      || !["M0", "M2"].includes(replacement?.tier)
+      || !isNonEmptyString(replacement?.method)
+      || !String(replacement?.reviewStatus || "").startsWith("published-after-independent-")) {
+      fail(`${owner}: safe replacement identity or independent review is incomplete`);
+      continue;
+    }
+    checkHashedFile(
+      replacement.projectAsset,
+      replacement.sha256,
+      undefined,
+      `${owner}: safe replacement`,
+    );
+    if (replacement.tier === "M2") {
+      const publishedSample = samplesById.get(replacement.id);
+      if (!publishedSample || publishedSample.src !== replacement.projectAsset
+        || publishedSample.file?.sha256 !== replacement.sha256
+        || publishedSample.review?.publication?.status !== "published") {
+        fail(`${owner}: M2 safe replacement is not the matching published catalog sample`);
+      }
+    } else if (!/^assets\/motion\/[a-z0-9][a-z0-9.-]*-m0-v[0-9]+\.mp4$/i.test(
+      replacement.projectAsset || "",
+    )) {
+      fail(`${owner}: M0 safe replacement path is not species-prefixed and versioned`);
+    }
+  }
+}
+
 if (!fs.existsSync(CATALOG_PATH)) throw new Error(`missing ${CATALOG_RELATIVE_PATH}`);
 if (!fs.existsSync(METADATA_PATH)) throw new Error(`missing ${METADATA_RELATIVE_PATH}`);
+if (!fs.existsSync(EVENT_CANDIDATES_PATH)) throw new Error(`missing ${EVENT_CANDIDATES_RELATIVE_PATH}`);
 
 const catalogSource = fs.readFileSync(CATALOG_PATH, "utf8");
 const metadataSource = fs.readFileSync(METADATA_PATH, "utf8");
+const eventCandidatesSource = fs.readFileSync(EVENT_CANDIDATES_PATH, "utf8");
 const sandbox = { window: {} };
 new vm.Script(catalogSource, { filename: CATALOG_PATH }).runInNewContext(sandbox);
 const catalog = sandbox.window.motionM2I2VSampleCatalog;
 const metadata = JSON.parse(metadataSource);
+const eventCandidates = JSON.parse(eventCandidatesSource);
 
 if (!catalog || typeof catalog !== "object") {
   throw new Error("motionM2I2VSampleCatalog was not exported");
 }
 if (/\.codex[\\/]generated_images/i.test(catalogSource)
-  || /\.codex[\\/]generated_images/i.test(metadataSource)) {
+  || /\.codex[\\/]generated_images/i.test(metadataSource)
+  || /\.codex[\\/]generated_images/i.test(eventCandidatesSource)) {
   fail("generator-area path leak");
 }
 if (catalog.schemaVersion !== 1 || metadata.schemaVersion !== 1) {
@@ -953,6 +1164,8 @@ if (!sameArray(metadata.policy?.publicationGateOrder, REQUIRED_REVIEW_GATES)) {
 }
 
 const samples = Array.isArray(catalog.samples) ? catalog.samples : [];
+const samplesById = new Map(samples.map((sample) => [sample?.id, sample]));
+checkEventCandidateBatch(eventCandidates, samplesById);
 const catalogIds = samples.map((sample) => sample?.id);
 const metadataIds = Object.keys(metadata.samples || {});
 if (!samples.length) fail("catalog must contain at least one I2V sample");
@@ -984,7 +1197,7 @@ for (const sample of samples) {
     continue;
   }
 
-  const allowedSceneRoles = new Set(["solo", "foraging-behavior", "predator-prey-interaction"]);
+  const allowedSceneRoles = new Set(["solo", "foraging-behavior", "predator-prey-interaction", "environment-event"]);
   if (sample.tier !== "M2" || sample.motionClass !== "generative-i2v"
     || !allowedSceneRoles.has(sample.sceneRole) || !isNonEmptyString(sample.sceneRoleLabel)) {
     fail(`${owner}: must remain an M2 generative-I2V candidate with an approved scene role and label`);
@@ -1056,8 +1269,21 @@ for (const sample of samples) {
     }
   }
 
-  const generationStream = checkPostProcess(record.postProcess, sample, owner) || sample.file;
-  const metadataWorkflow = resolveSampleWorkflow(metadata, record, sample, owner);
+  const derivativeContext = checkEnvironmentDerivative(
+    record.derivedFromPublishedSample,
+    metadata,
+    samplesById,
+    sample,
+    owner,
+  );
+  const lineageSample = derivativeContext?.sourceSample || sample;
+  const lineageRecord = derivativeContext?.sourceRecord || record;
+  const generationStream = checkPostProcess(
+    lineageRecord.postProcess,
+    lineageSample,
+    `${owner}: generation lineage`,
+  ) || lineageSample.file;
+  const metadataWorkflow = resolveSampleWorkflow(metadata, lineageRecord, lineageSample, owner);
   const { runRecord } = loadWorkflowArtifacts(metadataWorkflow, owner);
   checkGenerationStreamConfig(metadataWorkflow, generationStream, owner);
   if (sample.provenance?.metadataRecord
@@ -1104,11 +1330,11 @@ for (const sample of samples) {
   checkRunRecord(
     runRecord,
     metadataWorkflow,
-    record,
-    sample,
+    lineageRecord,
+    lineageSample,
     metadata.models,
     probedStream,
-    record.postProcess,
+    lineageRecord.postProcess,
     owner,
   );
 }

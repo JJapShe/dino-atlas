@@ -6,7 +6,7 @@
   "policy": {
     "tier": "M0",
     "scope": "environment-only ambient motion over a fixed approved still",
-    "sceneRoles": ["solo", "ecology-activity", "interspecies-interaction"],
+    "sceneRoles": ["solo", "ecology-activity", "interspecies-interaction", "environment-event"],
     "representativePromotion": "prohibited",
     "galleryPromotion": "prohibited",
     "autoplay": "prohibited",

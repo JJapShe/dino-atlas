@@ -1,0 +1,430 @@
+{
+  "schemaVersion": 2,
+  "candidateId": "tyrannosaurus-rex-distant-meteor-head-lift-f81-v1",
+  "taxonId": "tyrannosaurus-rex",
+  "queuedAt": "2026-08-06T01:10:30.074690+00:00",
+  "completedAt": "2026-08-06T01:11:31.923005+00:00",
+  "elapsedSeconds": 61.848,
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "98bb0f7b-9f79-40b2-91eb-32af56e6d795",
+          "timestamp": 1785978630082
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [
+            "1",
+            "2",
+            "3",
+            "8"
+          ],
+          "prompt_id": "98bb0f7b-9f79-40b2-91eb-32af56e6d795",
+          "timestamp": 1785978630086
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "98bb0f7b-9f79-40b2-91eb-32af56e6d795",
+          "timestamp": 1785978690997
+        }
+      ]
+    ]
+  },
+  "promptId": "98bb0f7b-9f79-40b2-91eb-32af56e6d795",
+  "queueResponse": {
+    "prompt_id": "98bb0f7b-9f79-40b2-91eb-32af56e6d795",
+    "number": 21,
+    "node_errors": {}
+  },
+  "provenance": {
+    "spec": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\motion-m2-i2v-event-candidates-20260806.json",
+    "specSha256": "63299f193f1c6b7b30a96e953f897f04f7e731fb5da327c3a2c9ca1f304f02c4",
+    "template": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\workflow_templates\\dino_wan22_ti2v_5b_i2v_long_api.json",
+    "templateSha256": "eba1778a281c9d81c7f62d8ac2e75aa73573b8845b2fdf60f0d6ca48750404e2",
+    "runner": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\scripts\\run_motion_m2_i2v_long_candidate.py",
+    "runnerSha256": "7c861c8733644959d5d9b7504f058f7f92875cfd944e36f5217baa8e2efd7970",
+    "comfyInput": "C:\\Users\\USER\\Documents\\dinosour\\tools\\comfyui\\ComfyUI\\input\\dino_atlas\\motion_m2_i2v_long\\tyrannosaurus-rex-approved-source-deepskull-v1.png",
+    "comfyInputSha256": "82d01916f6f02a43623d5a963e00b7446aea01ada38293c6de266504919fe773",
+    "comfyInputWidth": 1777,
+    "comfyInputHeight": 885,
+    "outputAspectWidth": 768,
+    "outputAspectHeight": 384,
+    "sourcePoster": "assets/dinosaurs/tyrannosaurus-rex-hell-creek-deepskull-twofinger-representative-imagegen-v1.png",
+    "sourcePosterSha256": "82d01916f6f02a43623d5a963e00b7446aea01ada38293c6de266504919fe773",
+    "sourceLicense": "project-owned generated still",
+    "sourceReviewStatus": "count-level pass and approved representative source; motion use only; the meteor event is a speculative motion reconstruction"
+  },
+  "runConfig": {
+    "width": 768,
+    "height": 384,
+    "frames": 81,
+    "fps": 16,
+    "durationSeconds": 5.0625,
+    "steps": 20,
+    "cfg": 5,
+    "sampler": "uni_pc",
+    "scheduler": "simple",
+    "shift": 8,
+    "denoise": 1,
+    "effectiveDurationSeconds": 5.0625,
+    "seed": 260806101,
+    "inputName": "dino_atlas/motion_m2_i2v_long/tyrannosaurus-rex-approved-source-deepskull-v1.png",
+    "outputPrefix": "dino_atlas/motion_m2_i2v_events/tyrannosaurus-rex-distant-meteor-head-lift-wan22-s260806101-f81",
+    "positivePrompt": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved still as the exact first-frame Tyrannosaurus rex identity, anatomy, composition, forest, wet ground, lighting, palette, and crop reference. Exactly one complete full-body Tyrannosaurus rex remains planted in the source coordinates, with a deep skull broad behind the eyes and narrowing toward the snout, closed lips covering the teeth, exactly two tiny chest-held forelimbs with exactly two fingers on each readable hand, exactly two strong hind limbs with stable three-toed feet, and one complete heavy continuous tail. The environmental event is primary and the animal movement is secondary and very small. After a brief still opening, one small distant meteor appears high in the open sky and travels once on a smooth forward-only diagonal path down toward the far left horizon, leaving one short restrained incandescent trail. It never reverses, loops, splits, hovers, grows into a giant fireball, reaches the ground, or causes an impact in frame. The existing clouds drift only subtly in one direction and the ground illumination remains unchanged. The Tyrannosaurus notices the distant motion by lifting the continuously attached deep head and short muscular neck only three to five degrees toward the upper-left sky. Distribute this single small lift through the throat, neck root, shoulder base, and upper chest without a hinge or seam, then hold the slightly higher attentive pose for the final second. The torso, pelvis, both planted feet and every toe, both tiny arms and all four fingers, and complete tail remain motionless at their source coordinates. Keep the mouth closed, anatomy crisp, camera fixed, and exposure and colors stable.",
+    "negativePrompt": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, rigid single-hinge neck, paper-doll rotation, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, split tail, duplicate tail, shortened tail, body translation, body morphing, identity drift, background replacement, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong loop, repeated nod, repeated head turn, heavy motion blur, ghost outline, flicker, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts, large meteor, giant fireball, asteroid filling the sky, second meteor, multiple meteors, duplicate sun, impact, explosion, shockwave, ground fire, forest fire, falling rocks, animal running, panic, roar, open mouth, exposed teeth, tongue, large head turn, frontal head, direction reversal, whole-body yaw, body rotation, long shallow Tarbosaurus skull, Allosaurus horns, crocodile skull, three-finger hands, missing tiny arm, long arms, arm motion, heavy body feathers, bird wings, tail swing, hooked tail, foot lift, walking, running, attack, prey, blood, lighting flash, orange color wash"
+  },
+  "workflow": {
+    "1": {
+      "class_type": "UNETLoader",
+      "inputs": {
+        "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    "2": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "type": "wan",
+        "device": "default"
+      }
+    },
+    "3": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "wan2.2_vae.safetensors"
+      }
+    },
+    "4": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved still as the exact first-frame Tyrannosaurus rex identity, anatomy, composition, forest, wet ground, lighting, palette, and crop reference. Exactly one complete full-body Tyrannosaurus rex remains planted in the source coordinates, with a deep skull broad behind the eyes and narrowing toward the snout, closed lips covering the teeth, exactly two tiny chest-held forelimbs with exactly two fingers on each readable hand, exactly two strong hind limbs with stable three-toed feet, and one complete heavy continuous tail. The environmental event is primary and the animal movement is secondary and very small. After a brief still opening, one small distant meteor appears high in the open sky and travels once on a smooth forward-only diagonal path down toward the far left horizon, leaving one short restrained incandescent trail. It never reverses, loops, splits, hovers, grows into a giant fireball, reaches the ground, or causes an impact in frame. The existing clouds drift only subtly in one direction and the ground illumination remains unchanged. The Tyrannosaurus notices the distant motion by lifting the continuously attached deep head and short muscular neck only three to five degrees toward the upper-left sky. Distribute this single small lift through the throat, neck root, shoulder base, and upper chest without a hinge or seam, then hold the slightly higher attentive pose for the final second. The torso, pelvis, both planted feet and every toe, both tiny arms and all four fingers, and complete tail remain motionless at their source coordinates. Keep the mouth closed, anatomy crisp, camera fixed, and exposure and colors stable.",
+        "clip": [
+          "2",
+          0
+        ]
+      }
+    },
+    "5": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, rigid single-hinge neck, paper-doll rotation, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, split tail, duplicate tail, shortened tail, body translation, body morphing, identity drift, background replacement, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong loop, repeated nod, repeated head turn, heavy motion blur, ghost outline, flicker, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts, large meteor, giant fireball, asteroid filling the sky, second meteor, multiple meteors, duplicate sun, impact, explosion, shockwave, ground fire, forest fire, falling rocks, animal running, panic, roar, open mouth, exposed teeth, tongue, large head turn, frontal head, direction reversal, whole-body yaw, body rotation, long shallow Tarbosaurus skull, Allosaurus horns, crocodile skull, three-finger hands, missing tiny arm, long arms, arm motion, heavy body feathers, bird wings, tail swing, hooked tail, foot lift, walking, running, attack, prey, blood, lighting flash, orange color wash",
+        "clip": [
+          "2",
+          0
+        ]
+      }
+    },
+    "6": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "dino_atlas/motion_m2_i2v_long/tyrannosaurus-rex-approved-source-deepskull-v1.png"
+      }
+    },
+    "7": {
+      "class_type": "Wan22ImageToVideoLatent",
+      "inputs": {
+        "vae": [
+          "3",
+          0
+        ],
+        "width": 768,
+        "height": 384,
+        "length": 81,
+        "batch_size": 1,
+        "start_image": [
+          "6",
+          0
+        ]
+      }
+    },
+    "8": {
+      "class_type": "ModelSamplingSD3",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "shift": 8
+      }
+    },
+    "9": {
+      "class_type": "KSampler",
+      "inputs": {
+        "seed": 260806101,
+        "steps": 20,
+        "cfg": 5,
+        "sampler_name": "uni_pc",
+        "scheduler": "simple",
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "5",
+          0
+        ],
+        "latent_image": [
+          "7",
+          0
+        ],
+        "denoise": 1,
+        "model": [
+          "8",
+          0
+        ]
+      }
+    },
+    "10": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "9",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "11": {
+      "class_type": "CreateVideo",
+      "inputs": {
+        "images": [
+          "10",
+          0
+        ],
+        "fps": 16,
+        "bit_depth": 8
+      }
+    },
+    "12": {
+      "class_type": "SaveVideo",
+      "inputs": {
+        "video": [
+          "11",
+          0
+        ],
+        "filename_prefix": "dino_atlas/motion_m2_i2v_events/tyrannosaurus-rex-distant-meteor-head-lift-wan22-s260806101-f81",
+        "format": "mp4",
+        "codec": "h264"
+      }
+    }
+  },
+  "history": {
+    "prompt": [
+      21,
+      "98bb0f7b-9f79-40b2-91eb-32af56e6d795",
+      {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+            "type": "wan",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "wan2.2_vae.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved still as the exact first-frame Tyrannosaurus rex identity, anatomy, composition, forest, wet ground, lighting, palette, and crop reference. Exactly one complete full-body Tyrannosaurus rex remains planted in the source coordinates, with a deep skull broad behind the eyes and narrowing toward the snout, closed lips covering the teeth, exactly two tiny chest-held forelimbs with exactly two fingers on each readable hand, exactly two strong hind limbs with stable three-toed feet, and one complete heavy continuous tail. The environmental event is primary and the animal movement is secondary and very small. After a brief still opening, one small distant meteor appears high in the open sky and travels once on a smooth forward-only diagonal path down toward the far left horizon, leaving one short restrained incandescent trail. It never reverses, loops, splits, hovers, grows into a giant fireball, reaches the ground, or causes an impact in frame. The existing clouds drift only subtly in one direction and the ground illumination remains unchanged. The Tyrannosaurus notices the distant motion by lifting the continuously attached deep head and short muscular neck only three to five degrees toward the upper-left sky. Distribute this single small lift through the throat, neck root, shoulder base, and upper chest without a hinge or seam, then hold the slightly higher attentive pose for the final second. The torso, pelvis, both planted feet and every toe, both tiny arms and all four fingers, and complete tail remain motionless at their source coordinates. Keep the mouth closed, anatomy crisp, camera fixed, and exposure and colors stable.",
+            "clip": [
+              "2",
+              0
+            ]
+          }
+        },
+        "5": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, rigid single-hinge neck, paper-doll rotation, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, split tail, duplicate tail, shortened tail, body translation, body morphing, identity drift, background replacement, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong loop, repeated nod, repeated head turn, heavy motion blur, ghost outline, flicker, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts, large meteor, giant fireball, asteroid filling the sky, second meteor, multiple meteors, duplicate sun, impact, explosion, shockwave, ground fire, forest fire, falling rocks, animal running, panic, roar, open mouth, exposed teeth, tongue, large head turn, frontal head, direction reversal, whole-body yaw, body rotation, long shallow Tarbosaurus skull, Allosaurus horns, crocodile skull, three-finger hands, missing tiny arm, long arms, arm motion, heavy body feathers, bird wings, tail swing, hooked tail, foot lift, walking, running, attack, prey, blood, lighting flash, orange color wash",
+            "clip": [
+              "2",
+              0
+            ]
+          }
+        },
+        "6": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "dino_atlas/motion_m2_i2v_long/tyrannosaurus-rex-approved-source-deepskull-v1.png"
+          }
+        },
+        "7": {
+          "class_type": "Wan22ImageToVideoLatent",
+          "inputs": {
+            "vae": [
+              "3",
+              0
+            ],
+            "width": 768,
+            "height": 384,
+            "length": 81,
+            "batch_size": 1,
+            "start_image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "8": {
+          "class_type": "ModelSamplingSD3",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "shift": 8.0
+          }
+        },
+        "9": {
+          "class_type": "KSampler",
+          "inputs": {
+            "seed": 260806101,
+            "steps": 20,
+            "cfg": 5.0,
+            "sampler_name": "uni_pc",
+            "scheduler": "simple",
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "5",
+              0
+            ],
+            "latent_image": [
+              "7",
+              0
+            ],
+            "denoise": 1.0,
+            "model": [
+              "8",
+              0
+            ]
+          }
+        },
+        "10": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "9",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "11": {
+          "class_type": "CreateVideo",
+          "inputs": {
+            "images": [
+              "10",
+              0
+            ],
+            "fps": 16.0,
+            "bit_depth": 8
+          }
+        },
+        "12": {
+          "class_type": "SaveVideo",
+          "inputs": {
+            "video": [
+              "11",
+              0
+            ],
+            "filename_prefix": "dino_atlas/motion_m2_i2v_events/tyrannosaurus-rex-distant-meteor-head-lift-wan22-s260806101-f81",
+            "format": "mp4",
+            "codec": "h264"
+          }
+        }
+      },
+      {
+        "client_id": "dino-atlas-motion-m2-i2v-long",
+        "create_time": 1785978630082
+      },
+      [
+        "12"
+      ]
+    ],
+    "outputs": {
+      "12": {
+        "images": [
+          {
+            "filename": "tyrannosaurus-rex-distant-meteor-head-lift-wan22-s260806101-f81_00001_.mp4",
+            "subfolder": "dino_atlas\\motion_m2_i2v_events",
+            "type": "output"
+          }
+        ],
+        "animated": [
+          true
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "98bb0f7b-9f79-40b2-91eb-32af56e6d795",
+            "timestamp": 1785978630082
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "1",
+              "2",
+              "3",
+              "8"
+            ],
+            "prompt_id": "98bb0f7b-9f79-40b2-91eb-32af56e6d795",
+            "timestamp": 1785978630086
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "98bb0f7b-9f79-40b2-91eb-32af56e6d795",
+            "timestamp": 1785978690997
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "12": {
+        "node_id": "12",
+        "display_node": "12",
+        "parent_node": null,
+        "real_node_id": "12"
+      }
+    }
+  }
+}

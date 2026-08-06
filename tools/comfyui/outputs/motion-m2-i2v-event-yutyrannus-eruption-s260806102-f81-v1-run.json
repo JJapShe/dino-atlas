@@ -1,0 +1,430 @@
+{
+  "schemaVersion": 2,
+  "candidateId": "yutyrannus-huali-distant-eruption-head-lift-f81-v1",
+  "taxonId": "yutyrannus-huali",
+  "queuedAt": "2026-08-06T01:11:40.242176+00:00",
+  "completedAt": "2026-08-06T01:12:54.076632+00:00",
+  "elapsedSeconds": 73.834,
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "5ac04d61-5be6-4568-b390-d30cf2a08b7d",
+          "timestamp": 1785978700250
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [
+            "1",
+            "2",
+            "3",
+            "8"
+          ],
+          "prompt_id": "5ac04d61-5be6-4568-b390-d30cf2a08b7d",
+          "timestamp": 1785978700253
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "5ac04d61-5be6-4568-b390-d30cf2a08b7d",
+          "timestamp": 1785978772697
+        }
+      ]
+    ]
+  },
+  "promptId": "5ac04d61-5be6-4568-b390-d30cf2a08b7d",
+  "queueResponse": {
+    "prompt_id": "5ac04d61-5be6-4568-b390-d30cf2a08b7d",
+    "number": 22,
+    "node_errors": {}
+  },
+  "provenance": {
+    "spec": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\motion-m2-i2v-event-candidates-20260806.json",
+    "specSha256": "63299f193f1c6b7b30a96e953f897f04f7e731fb5da327c3a2c9ca1f304f02c4",
+    "template": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\workflow_templates\\dino_wan22_ti2v_5b_i2v_long_api.json",
+    "templateSha256": "eba1778a281c9d81c7f62d8ac2e75aa73573b8845b2fdf60f0d6ca48750404e2",
+    "runner": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\scripts\\run_motion_m2_i2v_long_candidate.py",
+    "runnerSha256": "7c861c8733644959d5d9b7504f058f7f92875cfd944e36f5217baa8e2efd7970",
+    "comfyInput": "C:\\Users\\USER\\Documents\\dinosour\\tools\\comfyui\\ComfyUI\\input\\dino_atlas\\motion_m2_i2v_events\\yutyrannus-huali-approved-ashplain-v1.png",
+    "comfyInputSha256": "7b87477e572450a67809080b82ca96c69793eb309e1c73dc865890bd26b63718",
+    "comfyInputWidth": 1536,
+    "comfyInputHeight": 1024,
+    "outputAspectWidth": 768,
+    "outputAspectHeight": 512,
+    "sourcePoster": "assets/dinosaurs/yutyrannus-huali-cool-conifer-ashplain-ecology-imagegen-v1.png",
+    "sourcePosterSha256": "7b87477e572450a67809080b82ca96c69793eb309e1c73dc865890bd26b63718",
+    "sourceLicense": "project-owned generated still",
+    "sourceReviewStatus": "published ecology source with supported anatomy and formation-level context; an active eruption and the animal response remain speculative motion-only reconstruction"
+  },
+  "runConfig": {
+    "width": 768,
+    "height": 512,
+    "frames": 81,
+    "fps": 16,
+    "durationSeconds": 5.0625,
+    "steps": 20,
+    "cfg": 5,
+    "sampler": "uni_pc",
+    "scheduler": "simple",
+    "shift": 8,
+    "denoise": 1,
+    "effectiveDurationSeconds": 5.0625,
+    "seed": 260806102,
+    "inputName": "dino_atlas/motion_m2_i2v_events/yutyrannus-huali-approved-ashplain-v1.png",
+    "outputPrefix": "dino_atlas/motion_m2_i2v_events/yutyrannus-huali-distant-eruption-head-lift-wan22-s260806102-f81",
+    "positivePrompt": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved ecology still as the exact first-frame Yutyrannus huali identity, anatomy, left-facing profile, ash plain, shallow water, conifer forest, mountain positions, lighting, palette, and crop reference. Exactly one complete full-body Yutyrannus huali has long simple white and gray mottled filamentous feathers, a large external naris, a low rough continuous midline crest, exactly two long three-fingered forelimbs, exactly two hind limbs with three main toes, and one complete continuous feathered tail. The distant environmental event is primary and the animal movement is secondary and very small. After a brief still opening, the far-left volcanic mountain releases one moderate gray-brown ash plume that expands upward once and drifts slowly to the right with the high air. The plume stays distant, remains behind the forest, never reaches the animal, never becomes a pyroclastic flow, and never changes the scene lighting. The Yutyrannus notices the distant plume by lifting its continuously attached head and feathered neck only four to six degrees toward the upper-left mountain while keeping the same left-facing profile. Distribute this single small lift through the neck root, shoulders, throat feathers, and upper chest without a hinge or seam, then hold the higher attentive pose for the final second. The torso, pelvis, both planted feet and every toe, both arms and all six fingers, and complete tail remain motionless at their source coordinates. Water ripples and nearby plants remain nearly still. Keep the mouth closed, anatomy and feather pattern crisp, camera fixed, and exposure and colors stable.",
+    "negativePrompt": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, rigid single-hinge neck, paper-doll rotation, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, split tail, duplicate tail, shortened tail, body translation, body morphing, identity drift, background replacement, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong loop, repeated nod, repeated head turn, heavy motion blur, ghost outline, flicker, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts, giant eruption, exploding mountain, lava fountain, lava flow, pyroclastic flow, shockwave, ash cloud covering the animal, ground fire, forest fire, flying rocks, lightning, dramatic red lighting, orange color wash, snowstorm, blizzard, animal running, panic, roar, open mouth, exposed teeth, large head turn, frontal view, direction reversal, whole-body rotation, two-finger hands, missing third finger, raptor sickle claw, feather wings, flight feathers, tail fan, short tail, mammal fur, deep Tyrannosaurus rex skull, tall crest, arm flapping, tail swing, foot lift, walking, attack, prey, blood"
+  },
+  "workflow": {
+    "1": {
+      "class_type": "UNETLoader",
+      "inputs": {
+        "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    "2": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "type": "wan",
+        "device": "default"
+      }
+    },
+    "3": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "wan2.2_vae.safetensors"
+      }
+    },
+    "4": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved ecology still as the exact first-frame Yutyrannus huali identity, anatomy, left-facing profile, ash plain, shallow water, conifer forest, mountain positions, lighting, palette, and crop reference. Exactly one complete full-body Yutyrannus huali has long simple white and gray mottled filamentous feathers, a large external naris, a low rough continuous midline crest, exactly two long three-fingered forelimbs, exactly two hind limbs with three main toes, and one complete continuous feathered tail. The distant environmental event is primary and the animal movement is secondary and very small. After a brief still opening, the far-left volcanic mountain releases one moderate gray-brown ash plume that expands upward once and drifts slowly to the right with the high air. The plume stays distant, remains behind the forest, never reaches the animal, never becomes a pyroclastic flow, and never changes the scene lighting. The Yutyrannus notices the distant plume by lifting its continuously attached head and feathered neck only four to six degrees toward the upper-left mountain while keeping the same left-facing profile. Distribute this single small lift through the neck root, shoulders, throat feathers, and upper chest without a hinge or seam, then hold the higher attentive pose for the final second. The torso, pelvis, both planted feet and every toe, both arms and all six fingers, and complete tail remain motionless at their source coordinates. Water ripples and nearby plants remain nearly still. Keep the mouth closed, anatomy and feather pattern crisp, camera fixed, and exposure and colors stable.",
+        "clip": [
+          "2",
+          0
+        ]
+      }
+    },
+    "5": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, rigid single-hinge neck, paper-doll rotation, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, split tail, duplicate tail, shortened tail, body translation, body morphing, identity drift, background replacement, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong loop, repeated nod, repeated head turn, heavy motion blur, ghost outline, flicker, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts, giant eruption, exploding mountain, lava fountain, lava flow, pyroclastic flow, shockwave, ash cloud covering the animal, ground fire, forest fire, flying rocks, lightning, dramatic red lighting, orange color wash, snowstorm, blizzard, animal running, panic, roar, open mouth, exposed teeth, large head turn, frontal view, direction reversal, whole-body rotation, two-finger hands, missing third finger, raptor sickle claw, feather wings, flight feathers, tail fan, short tail, mammal fur, deep Tyrannosaurus rex skull, tall crest, arm flapping, tail swing, foot lift, walking, attack, prey, blood",
+        "clip": [
+          "2",
+          0
+        ]
+      }
+    },
+    "6": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "dino_atlas/motion_m2_i2v_events/yutyrannus-huali-approved-ashplain-v1.png"
+      }
+    },
+    "7": {
+      "class_type": "Wan22ImageToVideoLatent",
+      "inputs": {
+        "vae": [
+          "3",
+          0
+        ],
+        "width": 768,
+        "height": 512,
+        "length": 81,
+        "batch_size": 1,
+        "start_image": [
+          "6",
+          0
+        ]
+      }
+    },
+    "8": {
+      "class_type": "ModelSamplingSD3",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "shift": 8
+      }
+    },
+    "9": {
+      "class_type": "KSampler",
+      "inputs": {
+        "seed": 260806102,
+        "steps": 20,
+        "cfg": 5,
+        "sampler_name": "uni_pc",
+        "scheduler": "simple",
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "5",
+          0
+        ],
+        "latent_image": [
+          "7",
+          0
+        ],
+        "denoise": 1,
+        "model": [
+          "8",
+          0
+        ]
+      }
+    },
+    "10": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "9",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "11": {
+      "class_type": "CreateVideo",
+      "inputs": {
+        "images": [
+          "10",
+          0
+        ],
+        "fps": 16,
+        "bit_depth": 8
+      }
+    },
+    "12": {
+      "class_type": "SaveVideo",
+      "inputs": {
+        "video": [
+          "11",
+          0
+        ],
+        "filename_prefix": "dino_atlas/motion_m2_i2v_events/yutyrannus-huali-distant-eruption-head-lift-wan22-s260806102-f81",
+        "format": "mp4",
+        "codec": "h264"
+      }
+    }
+  },
+  "history": {
+    "prompt": [
+      22,
+      "5ac04d61-5be6-4568-b390-d30cf2a08b7d",
+      {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+            "type": "wan",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "wan2.2_vae.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved ecology still as the exact first-frame Yutyrannus huali identity, anatomy, left-facing profile, ash plain, shallow water, conifer forest, mountain positions, lighting, palette, and crop reference. Exactly one complete full-body Yutyrannus huali has long simple white and gray mottled filamentous feathers, a large external naris, a low rough continuous midline crest, exactly two long three-fingered forelimbs, exactly two hind limbs with three main toes, and one complete continuous feathered tail. The distant environmental event is primary and the animal movement is secondary and very small. After a brief still opening, the far-left volcanic mountain releases one moderate gray-brown ash plume that expands upward once and drifts slowly to the right with the high air. The plume stays distant, remains behind the forest, never reaches the animal, never becomes a pyroclastic flow, and never changes the scene lighting. The Yutyrannus notices the distant plume by lifting its continuously attached head and feathered neck only four to six degrees toward the upper-left mountain while keeping the same left-facing profile. Distribute this single small lift through the neck root, shoulders, throat feathers, and upper chest without a hinge or seam, then hold the higher attentive pose for the final second. The torso, pelvis, both planted feet and every toe, both arms and all six fingers, and complete tail remain motionless at their source coordinates. Water ripples and nearby plants remain nearly still. Keep the mouth closed, anatomy and feather pattern crisp, camera fixed, and exposure and colors stable.",
+            "clip": [
+              "2",
+              0
+            ]
+          }
+        },
+        "5": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, rigid single-hinge neck, paper-doll rotation, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, split tail, duplicate tail, shortened tail, body translation, body morphing, identity drift, background replacement, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong loop, repeated nod, repeated head turn, heavy motion blur, ghost outline, flicker, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts, giant eruption, exploding mountain, lava fountain, lava flow, pyroclastic flow, shockwave, ash cloud covering the animal, ground fire, forest fire, flying rocks, lightning, dramatic red lighting, orange color wash, snowstorm, blizzard, animal running, panic, roar, open mouth, exposed teeth, large head turn, frontal view, direction reversal, whole-body rotation, two-finger hands, missing third finger, raptor sickle claw, feather wings, flight feathers, tail fan, short tail, mammal fur, deep Tyrannosaurus rex skull, tall crest, arm flapping, tail swing, foot lift, walking, attack, prey, blood",
+            "clip": [
+              "2",
+              0
+            ]
+          }
+        },
+        "6": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "dino_atlas/motion_m2_i2v_events/yutyrannus-huali-approved-ashplain-v1.png"
+          }
+        },
+        "7": {
+          "class_type": "Wan22ImageToVideoLatent",
+          "inputs": {
+            "vae": [
+              "3",
+              0
+            ],
+            "width": 768,
+            "height": 512,
+            "length": 81,
+            "batch_size": 1,
+            "start_image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "8": {
+          "class_type": "ModelSamplingSD3",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "shift": 8.0
+          }
+        },
+        "9": {
+          "class_type": "KSampler",
+          "inputs": {
+            "seed": 260806102,
+            "steps": 20,
+            "cfg": 5.0,
+            "sampler_name": "uni_pc",
+            "scheduler": "simple",
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "5",
+              0
+            ],
+            "latent_image": [
+              "7",
+              0
+            ],
+            "denoise": 1.0,
+            "model": [
+              "8",
+              0
+            ]
+          }
+        },
+        "10": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "9",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "11": {
+          "class_type": "CreateVideo",
+          "inputs": {
+            "images": [
+              "10",
+              0
+            ],
+            "fps": 16.0,
+            "bit_depth": 8
+          }
+        },
+        "12": {
+          "class_type": "SaveVideo",
+          "inputs": {
+            "video": [
+              "11",
+              0
+            ],
+            "filename_prefix": "dino_atlas/motion_m2_i2v_events/yutyrannus-huali-distant-eruption-head-lift-wan22-s260806102-f81",
+            "format": "mp4",
+            "codec": "h264"
+          }
+        }
+      },
+      {
+        "client_id": "dino-atlas-motion-m2-i2v-long",
+        "create_time": 1785978700246
+      },
+      [
+        "12"
+      ]
+    ],
+    "outputs": {
+      "12": {
+        "images": [
+          {
+            "filename": "yutyrannus-huali-distant-eruption-head-lift-wan22-s260806102-f81_00001_.mp4",
+            "subfolder": "dino_atlas\\motion_m2_i2v_events",
+            "type": "output"
+          }
+        ],
+        "animated": [
+          true
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "5ac04d61-5be6-4568-b390-d30cf2a08b7d",
+            "timestamp": 1785978700250
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "1",
+              "2",
+              "3",
+              "8"
+            ],
+            "prompt_id": "5ac04d61-5be6-4568-b390-d30cf2a08b7d",
+            "timestamp": 1785978700253
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "5ac04d61-5be6-4568-b390-d30cf2a08b7d",
+            "timestamp": 1785978772697
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "12": {
+        "node_id": "12",
+        "display_node": "12",
+        "parent_node": null,
+        "real_node_id": "12"
+      }
+    }
+  }
+}

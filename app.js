@@ -22667,7 +22667,7 @@ function getMotionSampleCatalog() {
   const isDraftPreview =
     ["localhost", "127.0.0.1"].includes(window.location.hostname) &&
     new URLSearchParams(window.location.search).get("motionPreview") === "draft";
-  const allowedSceneRoles = new Set(["solo", "ecology-activity", "interspecies-interaction"]);
+  const allowedSceneRoles = new Set(["solo", "ecology-activity", "interspecies-interaction", "environment-event"]);
   const hasSafeRole = (sample) =>
     sample?.tier === "M0" &&
     sample?.motionClass === "environment-only" &&
@@ -23051,6 +23051,7 @@ function getMotionM2SampleCatalog() {
     "solo",
     "foraging-behavior",
     "predator-prey-interaction",
+    "environment-event",
   ]);
 
   const samples = sourceSamples

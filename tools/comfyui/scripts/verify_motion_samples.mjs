@@ -11,6 +11,7 @@ const CATALOG_PATH = path.join(ROOT, "motion-samples.js");
 const METADATA_RELATIVE_PATHS = [
   "tools/comfyui/motion-pilot-batch-20260803.json",
   "tools/comfyui/motion-scene-role-batch-20260803.json",
+  "tools/comfyui/motion-environment-event-batch-20260806.json",
 ];
 const METADATA_PATHS = METADATA_RELATIVE_PATHS.map((relativePath) => path.join(ROOT, ...relativePath.split("/")));
 const EXPECTED_IDS = [
@@ -20,8 +21,9 @@ const EXPECTED_IDS = [
   "psittacosaurus-mongoliensis-water-shimmer-solo-m0-v1",
   "maiasaura-peeblesorum-nesting-ground-pollen-ecology-m0-v1",
   "velociraptor-protoceratops-dustfront-interaction-m0-v1",
+  "yutyrannus-huali-volcanic-plume-ecology-m0-v1",
 ];
-const ALLOWED_SCENE_ROLES = new Set(["solo", "ecology-activity", "interspecies-interaction"]);
+const ALLOWED_SCENE_ROLES = new Set(["solo", "ecology-activity", "interspecies-interaction", "environment-event"]);
 const errors = [];
 const warnings = [];
 
@@ -57,6 +59,27 @@ function projectPath(relativePath, owner) {
 
 function sha256(filePath) {
   return crypto.createHash("sha256").update(fs.readFileSync(filePath)).digest("hex");
+}
+
+function checkHashedProjectFile(relativePath, expectedHash, expectedBytes, owner) {
+  const absolutePath = projectPath(relativePath, owner);
+  if (!absolutePath || !fs.existsSync(absolutePath)) {
+    fail(`${owner}: file is missing`);
+    return null;
+  }
+  const stat = fs.statSync(absolutePath);
+  if (!stat.isFile()) {
+    fail(`${owner}: expected a regular file`);
+    return null;
+  }
+  if (!/^[a-f0-9]{64}$/.test(expectedHash || "") || sha256(absolutePath) !== expectedHash) {
+    fail(`${owner}: SHA-256 is missing or does not match`);
+  }
+  if (expectedBytes !== undefined
+    && (!Number.isInteger(expectedBytes) || expectedBytes <= 0 || stat.size !== expectedBytes)) {
+    fail(`${owner}: byte count is missing or does not match`);
+  }
+  return absolutePath;
 }
 
 function probeVideo(filePath) {
@@ -230,6 +253,21 @@ for (const { relativePath, metadata } of metadataBatches.slice(1)) {
     fail(`${relativePath}: motion QA thresholds must match the primary M0 batch`);
   }
 }
+for (const { relativePath, metadata } of metadataBatches) {
+  const workflow = metadata.workflow;
+  if (workflow?.scriptSha256 !== undefined) {
+    checkHashedProjectFile(
+      workflow.script,
+      workflow.scriptSha256,
+      undefined,
+      `${relativePath}: workflow script`,
+    );
+  }
+  if (relativePath === "tools/comfyui/motion-environment-event-batch-20260806.json"
+    && (!isNonEmptyString(workflow?.script) || !isNonEmptyString(workflow?.scriptSha256))) {
+    fail(`${relativePath}: environment-event workflow requires a pinned build script`);
+  }
+}
 
 const samples = Array.isArray(catalog.samples) ? catalog.samples : [];
 const ids = samples.map((sample) => sample.id);
@@ -287,6 +325,26 @@ for (const sample of samples) {
   }
   if (!isNonEmptyString(record.prompt) || !isNonEmptyString(record.motionLayer)) {
     fail(`${owner}: prompt and motion-layer records are required`);
+  }
+  if (record.sourcePosterFile !== undefined) {
+    checkHashedProjectFile(
+      record.sourcePoster,
+      record.sourcePosterFile?.sha256,
+      record.sourcePosterFile?.bytes,
+      `${owner}: source poster file record`,
+    );
+  }
+  if (sample.sceneRole === "environment-event") {
+    if (!record.sourcePosterFile || !isNonEmptyString(record.sourceMetadataRecord)
+      || !isNonEmptyString(record.evidenceBoundary)) {
+      fail(`${owner}: environment-event requires pinned source file, source metadata, and evidence boundary`);
+    } else {
+      const sourceMetadataPath = record.sourceMetadataRecord.split("#", 1)[0];
+      const absoluteSourceMetadata = projectPath(sourceMetadataPath, `${owner}: source metadata`);
+      if (!absoluteSourceMetadata || !fs.existsSync(absoluteSourceMetadata)) {
+        fail(`${owner}: source metadata file is missing`);
+      }
+    }
   }
   const metadataRecord = sample.provenance?.metadataRecord || "";
   if (metadataRecord !== `${metadataBatch.relativePath}#/samples/${sample.id}`) {

@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-08-06T10:40:00+09:00",
+  "status": "published",
+  "policy": {
+    "tier": "M0",
+    "scope": "environment-only ambient motion over a fixed approved still",
+    "sceneRoles": ["solo", "ecology-activity", "interspecies-interaction", "environment-event"],
+    "representativePromotion": "prohibited",
+    "galleryPromotion": "prohibited",
+    "autoplay": "prohibited",
+    "biologicalMotion": "prohibited in M0",
+    "publicRequires": ["motion", "responsive", "publication"]
+  },
+  "copyrightSafety": {
+    "status": "project-owned derivative motion asset",
+    "note": "The sample derives only from its named project-owned generated still and locally composited abstract plume layers; no external footage or artwork is used."
+  },
+  "workflow": {
+    "generator": "local FFmpeg compositing",
+    "generatorVersion": "FFmpeg 8.1.1",
+    "seed": "not applicable; deterministic filter graph",
+    "script": "tools/comfyui/scripts/build_motion_environment_event_samples.ps1",
+    "scriptSha256": "bc69c76750781bda3169d28fed9746ca7b4ef590fc9da31c5217065659adcd37",
+    "targetContainer": "MP4",
+    "targetVideoCodec": "H.264",
+    "targetPixelFormat": "yuv420p",
+    "targetDurationSeconds": 5,
+    "targetFps": 24,
+    "targetDimensions": { "width": 960, "height": 640 },
+    "audio": "none",
+    "motionRule": "Keep the complete approved still fixed. Animate only a distant plume layer that remains connected to the source mountain and never reaches the animal.",
+    "motionQaThresholds": {
+      "significantChannelDifferenceFloor": 3,
+      "significantChangeEnergyInsideEffectZoneMinPercent": 95,
+      "protectedRegionMeanMax": 0.3,
+      "protectedRegionP99Max": 3,
+      "protectedRegionMaxMax": 13
+    },
+    "commands": {
+      "yutyrannus-huali-volcanic-plume-ecology-m0-v1": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/comfyui/scripts/build_motion_environment_event_samples.ps1 -Sample yutyrannus"
+    }
+  },
+  "samples": {
+    "yutyrannus-huali-volcanic-plume-ecology-m0-v1": {
+      "taxonId": "yutyrannus-huali",
+      "sceneRole": "environment-event",
+      "sourcePoster": "assets/dinosaurs/yutyrannus-huali-cool-conifer-ashplain-ecology-imagegen-v1.png",
+      "sourcePosterFile": {
+        "sha256": "7b87477e572450a67809080b82ca96c69793eb309e1c73dc865890bd26b63718",
+        "bytes": 3358742,
+        "width": 1536,
+        "height": 1024
+      },
+      "sourceMetadataRecord": "tools/comfyui/yutyrannus-huali-white-camouflage-batch-20260802.json#/records/habitat-ecology",
+      "sourceLicense": "project-owned generated still",
+      "projectAsset": "assets/motion/yutyrannus-huali-volcanic-plume-ecology-m0-v1.mp4",
+      "motionClass": "environment-only",
+      "motionLayer": "soft gray-brown plume growth and slight upper-right drift continuously connected to the existing distant summit plume",
+      "prompt": "M0 environment-event test for ages five to fourteen: preserve every source pixel of the complete Yutyrannus, both three-fingered arms, both planted feet, complete tail, water, shore, forest, mountain, camera, crop, lighting, and palette; animate only one restrained soft gray-brown plume layer over the already visible distant summit plume; keep the plume continuously attached to the mountain, drift it slightly upward and right, and prohibit body motion, head or neck motion, detached smoke, lava, fireball, shockwave, pyroclastic flow, ash crossing the animal, or dramatic color change.",
+      "evidenceBoundary": "Yixian Formation volcaniclastic deposition supports a volcanic environmental context, but the exact eruption, plume size, wind direction, distance, and this individual animal's presence at the depicted moment are educational reconstruction hypotheses.",
+      "file": {
+        "sha256": "9d862616bdb8293f7028263b9d5d5560dd89cfa891dfffe853c30daaa991ca6a",
+        "bytes": 364730,
+        "width": 960,
+        "height": 640,
+        "durationSeconds": 5,
+        "fps": 24,
+        "codec": "h264"
+      },
+      "motionQa": {
+        "comparisonFrames": [0, 72],
+        "effectZone": { "x": [0, 180], "y": [0, 150] },
+        "protectedExclusionZone": { "x": [0, 190], "y": [0, 170] },
+        "protectedRegionDifference": { "mean": 0.03065, "p99": 1, "max": 5 },
+        "significantChangeEnergyInsideEffectZonePercent": 99.96,
+        "visualStatus": "pass",
+        "note": "The plume remains connected to the source mountain inside the upper-left effect zone while the complete Yutyrannus stays outside the effect layer.",
+        "independentFullFrameReview": {
+          "status": "pass-independent-120-of-120",
+          "checkpointFrames": [0, 12, 30, 60, 90, 119],
+          "protectedRegionMeanMax": 0.03445,
+          "protectedRegionP99Max": 1,
+          "protectedRegionMaxMax": 5,
+          "significantChangeEnergyInsideEffectZoneMinPercent": 99.8848,
+          "lastFrameEffectBoundingBox": { "x": [19, 176], "y": [0, 144] },
+          "note": "Independent decoded-frame review found no dinosaur, water, camera, flicker, loop, detached-smoke, or compression-block defect; the plume base remains attached to the summit throughout."
+        }
+      },
+      "review": {
+        "anatomy": { "status": "poster-inherited", "note": "The approved S3 ecology source anatomy review is inherited; the motion adds no anatomy evidence." },
+        "motion": { "status": "supported", "note": "The dinosaur and waterside remain fixed while the plume stays connected to the summit; 99.96% of significant-change energy remains inside the plume zone." },
+        "responsive": { "status": "supported", "note": "Click-only muted inline playback, poster fallback, role label, card containment, and no horizontal overflow passed on desktop and mobile." },
+        "publication": { "status": "published", "note": "The M0 environment-event sample passed file, motion-locality, accessibility, provenance, and evidence-boundary gates; representative and gallery promotion remain prohibited." },
+        "representativeEligible": false,
+        "galleryEligible": false
+      }
+    }
+  }
+}

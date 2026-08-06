@@ -10,7 +10,7 @@
     "galleryPromotion": "prohibited",
     "autoplay": "prohibited",
     "biologicalMotion": "prohibited in M0",
-    "sceneRoles": ["solo", "ecology-activity", "interspecies-interaction"],
+    "sceneRoles": ["solo", "ecology-activity", "interspecies-interaction", "environment-event"],
     "publicRequires": ["motion", "responsive", "publication"]
   },
   "copyrightSafety": {

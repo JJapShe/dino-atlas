@@ -3,7 +3,7 @@
   "createdAt": "2026-08-04T08:05:22.079950+00:00",
   "status": "mixed",
   "policy": {
-    "scope": "ComfyUI-native generative I2V motion review",
+    "scope": "ComfyUI-native generative I2V motion review, including deterministic environment overlays derived from independently published motion samples",
     "representativePromotion": "prohibited",
     "galleryPromotion": "prohibited",
     "anatomyPromotion": "prohibited",
@@ -958,6 +958,124 @@
         "temporalIntegrity": { "status": "supported", "note": "The accepted forward source range is deterministically slowed to 81 frames without reverse, hold, loop, optical flow, or an internal direction change." },
         "responsive": { "status": "supported", "note": "Click-only playback, no horizontal overflow, one-active-video cross-pause, muted non-looping playback, and ended-state pause passed at 1440x900, 390x844, 844x390, and 320x700." },
         "publication": { "status": "published", "note": "Independent 81/81-frame anatomy and temporal review accepted this forward-only motion replacement; representative, gallery, anatomy, audio, and autoplay promotion remain prohibited." },
+        "representativeEligible": false,
+        "galleryEligible": false,
+        "anatomyEligible": false
+      }
+    },
+    "tyrannosaurus-rex-distant-meteor-sky-glance-wan22-safe-overlay-i2v-m2-v1": {
+      "taxonId": "tyrannosaurus-rex",
+      "sourcePoster": "assets/dinosaurs/tyrannosaurus-rex-hell-creek-deepskull-twofinger-representative-imagegen-v1.png",
+      "sourcePosterSha256": "82d01916f6f02a43623d5a963e00b7446aea01ada38293c6de266504919fe773",
+      "sourcePosterBytes": 2897675,
+      "sourceLicense": "project-owned generated still and project-owned reviewed motion derivative",
+      "projectAsset": "assets/motion/m2/tyrannosaurus-rex-distant-meteor-sky-glance-wan22-safe-overlay-i2v-m2-v1.mp4",
+      "file": {
+        "sha256": "6805adc722673c41f9e4094fd5c21b302b51ee8d04547f55c801dc6166c60349",
+        "bytes": 1937447,
+        "width": 768,
+        "height": 384,
+        "durationSeconds": 5.0625,
+        "fps": 16,
+        "frameCount": 81,
+        "codec": "h264",
+        "pixelFormat": "yuv420p",
+        "container": "mp4",
+        "audio": false
+      },
+      "identityCuesPreserved": [
+        "deep skull broad posteriorly",
+        "snout narrowing anteriorly",
+        "closed lips covering the teeth",
+        "short muscular neck continuous with the chest",
+        "exactly two extremely small forelimbs",
+        "exactly two fingers on each readable hand",
+        "exactly two strong grounded hind limbs",
+        "stable three-toed feet",
+        "small polygonal scales",
+        "one complete continuous tail"
+      ],
+      "motion": "reuse the independently published one-way alert head turn without regenerating dinosaur pixels, then composite exactly one small pale meteor along a forward-only upper-sky path that fades before the canopy",
+      "derivedFromPublishedSample": {
+        "type": "deterministic-single-meteor-overlay",
+        "sampleId": "tyrannosaurus-rex-alert-head-turn-comfyui-wan22-forward-only-i2v-m2-v2",
+        "projectAsset": "assets/motion/m2/tyrannosaurus-rex-alert-head-turn-comfyui-wan22-forward-only-i2v-m2-v2.mp4",
+        "file": {
+          "sha256": "2100740a51ad126ca5a4e9eb5f5d033ffc952b476d074d0b20ba4d41abed4818",
+          "bytes": 1956866,
+          "width": 768,
+          "height": 384,
+          "durationSeconds": 5.0625,
+          "fps": 16,
+          "frameCount": 81,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "container": "mp4",
+          "audio": false
+        },
+        "buildScript": "tools/comfyui/scripts/build_motion_environment_event_samples.ps1",
+        "buildScriptSha256": "bc69c76750781bda3169d28fed9746ca7b4ef590fc9da31c5217065659adcd37",
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File {buildScript} -Sample tyrannosaurus",
+        "effect": {
+          "subject": "distant-meteor",
+          "count": 1,
+          "activeSeconds": [0.85, 2.8],
+          "trajectory": {
+            "coordinateMeaning": "overlay top-left before rotation",
+            "start": [360, 3],
+            "end": [473.1, 12.75]
+          },
+          "paleRoundedCore": true,
+          "diffuseTrail": true,
+          "fadesBeforeCanopy": true,
+          "intersectsDinosaur": false,
+          "intersectsGround": false,
+          "reverseMotion": false,
+          "loop": false,
+          "autoplay": false
+        }
+      },
+      "qa": {
+        "manualFramesReviewed": "all original-size final frames 0-80",
+        "manualFrameCountReviewed": 81,
+        "frameIndexRange": [0, 80],
+        "checkpointFrames": [0, 15, 16, 24, 34, 43, 44, 45, 64, 80],
+        "sourceAcceptedFrameRange": [0, 48],
+        "focusedCrops": ["deep-skull", "eyes-jaw-neck", "two-finger-hands", "hind-limbs-feet", "tail", "upper-sky", "canopy-clearance"],
+        "contactSheetPolicy": "All 81 full-size final frames and the meteor-active interval were inspected; contact sheets were navigation aids only and remain outside public assets.",
+        "evidenceFiles": [
+          {
+            "path": "tools/comfyui/review-evidence/motion-events-20260806/tyrannosaurus-rex-distant-meteor-full-81-frame-review-v1.png",
+            "sha256": "ede99e7706daf23a3c41caf0ac55f08f8ce1901b0b9e0e7508cd8ce4c192ad9e",
+            "bytes": 6629820,
+            "purpose": "labelled navigation sheet covering every final frame"
+          },
+          {
+            "path": "tools/comfyui/review-evidence/motion-events-20260806/tyrannosaurus-rex-distant-meteor-active-interval-review-v1.png",
+            "sha256": "7982e75c254725f3dcfcd3d27265ef51101c19e67e5bd19338f70093d4e23096",
+            "bytes": 444330,
+            "purpose": "two-times crop of the complete meteor appearance, travel, fade, and clearance interval"
+          }
+        ],
+        "knownLimitations": [
+          "The dinosaur motion is inherited from the published forward-only derivative and is not newly generated for the meteor event.",
+          "The meteor, its trajectory, and the animal response are educational reconstruction hypotheses rather than evidence of a specific impact event.",
+          "Automatic looping is prohibited because the final turned-head pose does not join to frame zero."
+        ],
+        "visualStatus": "pass-independent-81-of-81"
+      },
+      "review": {
+        "sourceIntegrity": { "status": "supported", "note": "The approved Tyrannosaurus poster and independently published forward-only head-turn sample are pinned by exact project paths, byte counts, and SHA-256 records." },
+        "workflowIntegrity": { "status": "supported", "note": "The original ComfyUI workflow, prompt, seed, run record, safe forward-only slowdown, published source video, deterministic overlay script, and final file hashes are preserved." },
+        "frameAnatomy": { "status": "supported", "note": "Independent 81/81-frame review retains one complete deep-skulled Tyrannosaurus with attached head and neck, two tiny arms, two grounded hind limbs, and one continuous tail." },
+        "identityContinuity": { "status": "supported", "note": "The broad posterior skull, narrowing snout, closed lips, tiny two-finger arms, scales, torso, and tail remain readable throughout." },
+        "limbCountContinuity": { "status": "supported", "note": "All final frames retain two tiny forelimbs with two fingers per readable hand, two grounded hind limbs, stable toes, and one complete tail." },
+        "motionPlausibility": { "status": "supported", "note": "The already-reviewed head and short neck turn once in one direction while one small distant meteor crosses only the protected upper sky; no body translation, impact, or panic motion is added." },
+        "backgroundIntegrity": { "status": "supported", "note": "The meteor remains at least about 53 pixels above the nearest canopy and outside the dinosaur silhouette; below y=70 the source-to-final mean absolute difference is 1.7147/255, consistent with video re-encoding." },
+        "cameraIntegrity": { "status": "supported", "note": "All 81 frames keep the original fixed camera, crop, horizon, ground, and forest with no pan, zoom, cut, or scene transition." },
+        "temporalIntegrity": { "status": "supported", "note": "The meteor is faint at frame 15, visible through frame 43, leaves only a brief residual at frame 44, and is absent from frame 45 onward; its strong-change leading edge never reverses." },
+        "responsive": { "status": "supported", "note": "Click-only playback, no autoplay or loop, one-active-video cross-pause, muted inline playback, card containment, and direct MP4 loading pass in the motion view." },
+        "publication": { "status": "published", "note": "Independent all-frame anatomy, temporal, canopy-clearance, and meteor-readability review accepted this safe environment-event derivative; representative, gallery, anatomy, audio, and autoplay promotion remain prohibited." },
         "representativeEligible": false,
         "galleryEligible": false,
         "anatomyEligible": false

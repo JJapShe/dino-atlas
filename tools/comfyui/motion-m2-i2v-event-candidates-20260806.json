@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-08-06T00:00:00+09:00",
+  "status": "review-complete-with-safe-replacements",
+  "generationSpecSha256": "63299f193f1c6b7b30a96e953f897f04f7e731fb5da327c3a2c9ca1f304f02c4",
+  "generationSpecNote": "This is the SHA-256 of the exact pre-review manifest submitted to both ComfyUI runs. The current manifest preserves those generation inputs unchanged and appends rejection decisions plus safe-replacement records, so its current file hash is intentionally different.",
+  "policy": {
+    "scope": "ComfyUI-native Wan2.2 TI2V 5B forward-only environment-event review candidates for a children's dinosaur atlas",
+    "audience": "ages 5-14",
+    "representativePromotion": "prohibited",
+    "galleryPromotion": "prohibited",
+    "anatomyPromotion": "prohibited",
+    "autoplay": "prohibited",
+    "audio": "prohibited",
+    "publicationRule": "Publish only after all-frame anatomy and temporal review. Reject any body translation, limb or tail drift, neck separation, duplicate celestial object, reverse trajectory, return loop, or destructive event morphing."
+  },
+  "comfyUiRoot": "C:/Users/USER/Documents/dinosour/tools/comfyui/ComfyUI",
+  "workflowTemplate": "tools/comfyui/workflow_templates/dino_wan22_ti2v_5b_i2v_long_api.json",
+  "settings": {
+    "width": 768,
+    "height": 512,
+    "frames": 81,
+    "fps": 16,
+    "durationSeconds": 5.0625,
+    "steps": 20,
+    "cfg": 5,
+    "sampler": "uni_pc",
+    "scheduler": "simple",
+    "shift": 8,
+    "denoise": 1
+  },
+  "commonNegativePrompt": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, rigid single-hinge neck, paper-doll rotation, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, split tail, duplicate tail, shortened tail, body translation, body morphing, identity drift, background replacement, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong loop, repeated nod, repeated head turn, heavy motion blur, ghost outline, flicker, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts",
+  "reviewSummary": {
+    "nativeCandidatesAccepted": 0,
+    "nativeCandidatesRejected": 2,
+    "safeReplacementsPublished": 2,
+    "rule": "No rejected native I2V output or unsafe prefix is referenced by the public catalogs. The Tyrannosaurus replacement reuses an independently published one-way motion sample with one pinned sky overlay; the Yutyrannus replacement is M0 and keeps the complete approved still fixed."
+  },
+  "candidates": [
+    {
+      "id": "tyrannosaurus-rex-distant-meteor-head-lift-f81-v1",
+      "taxonId": "tyrannosaurus-rex",
+      "sceneRole": "environment-event",
+      "seed": 260806101,
+      "settings": {
+        "width": 768,
+        "height": 384
+      },
+      "sourcePoster": "assets/dinosaurs/tyrannosaurus-rex-hell-creek-deepskull-twofinger-representative-imagegen-v1.png",
+      "sourcePosterSha256": "82d01916f6f02a43623d5a963e00b7446aea01ada38293c6de266504919fe773",
+      "sourceLicense": "project-owned generated still",
+      "sourceReviewStatus": "count-level pass and approved representative source; motion use only; the meteor event is a speculative motion reconstruction",
+      "inputName": "dino_atlas/motion_m2_i2v_long/tyrannosaurus-rex-approved-source-deepskull-v1.png",
+      "outputPrefix": "dino_atlas/motion_m2_i2v_events/tyrannosaurus-rex-distant-meteor-head-lift-wan22-s260806101-f81",
+      "record": "tools/comfyui/outputs/motion-m2-i2v-event-tyrannosaurus-meteor-s260806101-f81-v1-run.json",
+      "recordSha256": "5eac99909139401cafc20421a08c2556af80bac2ded97398e12a032c2b7e19bc",
+      "positivePrompt": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved still as the exact first-frame Tyrannosaurus rex identity, anatomy, composition, forest, wet ground, lighting, palette, and crop reference. Exactly one complete full-body Tyrannosaurus rex remains planted in the source coordinates, with a deep skull broad behind the eyes and narrowing toward the snout, closed lips covering the teeth, exactly two tiny chest-held forelimbs with exactly two fingers on each readable hand, exactly two strong hind limbs with stable three-toed feet, and one complete heavy continuous tail. The environmental event is primary and the animal movement is secondary and very small. After a brief still opening, one small distant meteor appears high in the open sky and travels once on a smooth forward-only diagonal path down toward the far left horizon, leaving one short restrained incandescent trail. It never reverses, loops, splits, hovers, grows into a giant fireball, reaches the ground, or causes an impact in frame. The existing clouds drift only subtly in one direction and the ground illumination remains unchanged. The Tyrannosaurus notices the distant motion by lifting the continuously attached deep head and short muscular neck only three to five degrees toward the upper-left sky. Distribute this single small lift through the throat, neck root, shoulder base, and upper chest without a hinge or seam, then hold the slightly higher attentive pose for the final second. The torso, pelvis, both planted feet and every toe, both tiny arms and all four fingers, and complete tail remain motionless at their source coordinates. Keep the mouth closed, anatomy crisp, camera fixed, and exposure and colors stable.",
+      "negativePrompt": "large meteor, giant fireball, asteroid filling the sky, second meteor, multiple meteors, duplicate sun, impact, explosion, shockwave, ground fire, forest fire, falling rocks, animal running, panic, roar, open mouth, exposed teeth, tongue, large head turn, frontal head, direction reversal, whole-body yaw, body rotation, long shallow Tarbosaurus skull, Allosaurus horns, crocodile skull, three-finger hands, missing tiny arm, long arms, arm motion, heavy body feathers, bird wings, tail swing, hooked tail, foot lift, walking, running, attack, prey, blood, lighting flash, orange color wash",
+      "reviewStatus": "rejected",
+      "review": {
+        "allFrames": "rejected",
+        "firstClearDefect": "frame 18",
+        "usableSafePrefix": "none",
+        "reason": "The generated meteor becomes visually attached to the dinosaur's back like a spear or laser, the intended small head response is not readable, and background shimmer persists. No contiguous prefix is both useful and defect-free."
+      },
+      "safeReplacement": {
+        "id": "tyrannosaurus-rex-distant-meteor-sky-glance-wan22-safe-overlay-i2v-m2-v1",
+        "tier": "M2",
+        "projectAsset": "assets/motion/m2/tyrannosaurus-rex-distant-meteor-sky-glance-wan22-safe-overlay-i2v-m2-v1.mp4",
+        "sha256": "6805adc722673c41f9e4094fd5c21b302b51ee8d04547f55c801dc6166c60349",
+        "method": "reuse the independently published one-way Tyrannosaurus head-turn stream and deterministically composite one small pale meteor in the protected upper sky",
+        "reviewStatus": "published-after-independent-81-of-81-review"
+      }
+    },
+    {
+      "id": "yutyrannus-huali-distant-eruption-head-lift-f81-v1",
+      "taxonId": "yutyrannus-huali",
+      "sceneRole": "environment-event",
+      "seed": 260806102,
+      "sourcePoster": "assets/dinosaurs/yutyrannus-huali-cool-conifer-ashplain-ecology-imagegen-v1.png",
+      "sourcePosterSha256": "7b87477e572450a67809080b82ca96c69793eb309e1c73dc865890bd26b63718",
+      "sourceLicense": "project-owned generated still",
+      "sourceReviewStatus": "published ecology source with supported anatomy and formation-level context; an active eruption and the animal response remain speculative motion-only reconstruction",
+      "inputName": "dino_atlas/motion_m2_i2v_events/yutyrannus-huali-approved-ashplain-v1.png",
+      "outputPrefix": "dino_atlas/motion_m2_i2v_events/yutyrannus-huali-distant-eruption-head-lift-wan22-s260806102-f81",
+      "record": "tools/comfyui/outputs/motion-m2-i2v-event-yutyrannus-eruption-s260806102-f81-v1-run.json",
+      "recordSha256": "d0454ac2785313c0bc6e0d843f6730f6fead4093bc2fd71afbce904e25200cc5",
+      "positivePrompt": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved ecology still as the exact first-frame Yutyrannus huali identity, anatomy, left-facing profile, ash plain, shallow water, conifer forest, mountain positions, lighting, palette, and crop reference. Exactly one complete full-body Yutyrannus huali has long simple white and gray mottled filamentous feathers, a large external naris, a low rough continuous midline crest, exactly two long three-fingered forelimbs, exactly two hind limbs with three main toes, and one complete continuous feathered tail. The distant environmental event is primary and the animal movement is secondary and very small. After a brief still opening, the far-left volcanic mountain releases one moderate gray-brown ash plume that expands upward once and drifts slowly to the right with the high air. The plume stays distant, remains behind the forest, never reaches the animal, never becomes a pyroclastic flow, and never changes the scene lighting. The Yutyrannus notices the distant plume by lifting its continuously attached head and feathered neck only four to six degrees toward the upper-left mountain while keeping the same left-facing profile. Distribute this single small lift through the neck root, shoulders, throat feathers, and upper chest without a hinge or seam, then hold the higher attentive pose for the final second. The torso, pelvis, both planted feet and every toe, both arms and all six fingers, and complete tail remain motionless at their source coordinates. Water ripples and nearby plants remain nearly still. Keep the mouth closed, anatomy and feather pattern crisp, camera fixed, and exposure and colors stable.",
+      "negativePrompt": "giant eruption, exploding mountain, lava fountain, lava flow, pyroclastic flow, shockwave, ash cloud covering the animal, ground fire, forest fire, flying rocks, lightning, dramatic red lighting, orange color wash, snowstorm, blizzard, animal running, panic, roar, open mouth, exposed teeth, large head turn, frontal view, direction reversal, whole-body rotation, two-finger hands, missing third finger, raptor sickle claw, feather wings, flight feathers, tail fan, short tail, mammal fur, deep Tyrannosaurus rex skull, tall crest, arm flapping, tail swing, foot lift, walking, attack, prey, blood",
+      "reviewStatus": "rejected",
+      "review": {
+        "allFrames": "rejected",
+        "firstClearDefect": "frame 22",
+        "usableSafePrefix": "none",
+        "reason": "The head and neck lift roughly 50 to 60 degrees and visibly elongate instead of the requested 4 to 6 degrees; the ash cloud detaches into the sky and never remains connected to the summit."
+      },
+      "safeReplacement": {
+        "id": "yutyrannus-huali-volcanic-plume-ecology-m0-v1",
+        "tier": "M0",
+        "projectAsset": "assets/motion/yutyrannus-huali-volcanic-plume-ecology-m0-v1.mp4",
+        "sha256": "9d862616bdb8293f7028263b9d5d5560dd89cfa891dfffe853c30daaa991ca6a",
+        "method": "hold every approved-still pixel fixed and deterministically grow only one summit-connected distant plume",
+        "reviewStatus": "published-after-independent-120-of-120-review"
+      }
+    }
+  ]
+}
