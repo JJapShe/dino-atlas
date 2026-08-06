@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-03T13:18:58.452Z",
-  "reviewBatch": "2026-08-03-oviraptor-composition-diversity-1",
-  "reviewMethod": "Original-size primary and independent comparison of Oviraptor S1, the retired recolor-like S2, and the replacement S2, including low-crest and elongate-rostrum identity, bilateral three-fingered hands, two hind limbs, one short tail, palette separation, rear-three-quarter camera separation, background-layout diversity, and artifact review. The replacement remains review hold and is not representative-eligible.",
-  "targetSlots": 808,
+  "generatedAt": "2026-08-06T09:06:37.134Z",
+  "reviewBatch": "2026-08-06-recognition-taxa-initial-gallery-1",
+  "reviewMethod": "Original-size primary and independent comparison of Carnotaurus and Carcharodontosaurus v1 and corrective v2 representative and pattern images, plus the v1 habitat scenes. Review covered species-level skull cues, whole-body count, bilateral appendages, grounded feet, pelvis-tail continuity, extra-limb and artifact exclusion, same-body pattern separation, habitat readability, the 2025 Tameryraptor taxonomic boundary, and the close-relative reconstruction boundary for the Carcharodontosaurus postcranium.",
+  "targetSlots": 814,
   "taxa": {
     "herrerasaurus-ischigualastensis": {
       "1": {
@@ -7531,6 +7531,64 @@
         "reviewMethod": "Original-size corrected-draft inspection: both heads and crests, four hands, four feet, two pelvis-tail joins, body separation, breath separation, filament, and snow-exclusion checks",
         "reviewBatch": "2026-08-02-yutyrannus-cold-breath-richness-1",
         "reviewedAt": "2026-08-02T12:24:15.220Z"
+      }
+    },
+    "carnotaurus-sastrei": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/carnotaurus-sastrei-browhorn-shortskull-representative-imagegen-v2.png",
+        "role": "representative",
+        "reason": "The corrective v2 passed the independent original-size count-level gate: one short deep skull, one paired brow-horn set, one clearly readable minute blunt near forelimb with the far forelimb naturally occluded by the torso, two hind limbs with separated grounded feet, one continuous pelvis-origin tail, and no extra or fused limbs. It is representative-eligible; skin color, pattern, soft tissue, and behavior remain hypothetical.",
+        "reviewMethod": "Original-size v1-versus-v2 comparison plus full-frame, head-horn, readable-near-arm and far-arm-occlusion, bilateral-foot, pelvis-tail, extra-limb, crop, and artifact inspection",
+        "reviewBatch": "2026-08-06-recognition-taxa-initial-gallery-1",
+        "reviewedAt": "2026-08-06T09:06:37.134Z"
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/carnotaurus-sastrei-rust-charcoal-pattern-variant-imagegen-v2.png",
+        "role": "color-pattern",
+        "reason": "The corrective v2 preserves the short deep skull, paired brow horns, two reduced arms, two grounded hind limbs, and one continuous tail while adding a distinct rust-charcoal pattern and camera read. It is approved only as a review-hold color-pattern slot and cannot replace or outrank S1.",
+        "reviewMethod": "Original-size same-body and v1-versus-v2 comparison plus head-horn, bilateral-limb, feet, tail, palette, pose, background, and artifact inspection",
+        "reviewBatch": "2026-08-06-recognition-taxa-initial-gallery-1",
+        "reviewedAt": "2026-08-06T09:06:37.134Z"
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/carnotaurus-sastrei-la-colonia-estuary-habitat-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "reason": "The single-animal La Colonia estuary scene is accepted for habitat context and composition diversity. Its environment-heavy scale keeps distal appendage anatomy below representative rank, so it remains anatomy review and is not representative-eligible.",
+        "reviewMethod": "Original-size full-frame, primary silhouette, limb-count, foot visibility, tail-continuity, habitat, secondary-animal, crop, and artifact inspection",
+        "reviewBatch": "2026-08-06-recognition-taxa-initial-gallery-1",
+        "reviewedAt": "2026-08-06T09:06:37.134Z"
+      }
+    },
+    "carcharodontosaurus-saharicus": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/carcharodontosaurus-saharicus-longskull-kemkem-representative-imagegen-v2.png",
+        "role": "representative",
+        "reason": "The corrective v2 passed the independent original-size count-level gate: one long low skull, two forelimbs, two hind limbs with separated grounded feet, one continuous pelvis-origin tail, and no extra or fused limbs. It is representative-eligible while explicitly retaining a skull-led Moroccan C. saharicus identity and a close-relative reconstruction boundary for the torso, limbs, feet, and tail after the 2025 Egyptian Tameryraptor separation.",
+        "reviewMethod": "Original-size v1-versus-v2 comparison plus full-frame, long-skull, bilateral-arm, bilateral-foot, pelvis-tail, extra-limb, Tameryraptor-boundary, and artifact inspection",
+        "reviewBatch": "2026-08-06-recognition-taxa-initial-gallery-1",
+        "reviewedAt": "2026-08-06T09:06:37.134Z"
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/carcharodontosaurus-saharicus-slate-copper-pattern-variant-imagegen-v2.png",
+        "role": "color-pattern",
+        "reason": "The corrective v2 preserves the long low skull, two forelimbs, two grounded hind limbs, and one continuous tail while adding a distinct slate-copper pattern. It retains the postcranial comparison boundary and is approved only as a review-hold color-pattern slot, never as a representative replacement.",
+        "reviewMethod": "Original-size same-body and v1-versus-v2 comparison plus skull, bilateral-limb, feet, tail, palette, pose, Tameryraptor-boundary, and artifact inspection",
+        "reviewBatch": "2026-08-06-recognition-taxa-initial-gallery-1",
+        "reviewedAt": "2026-08-06T09:06:37.134Z"
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/carcharodontosaurus-saharicus-kemkem-delta-habitat-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "reason": "The single-animal Kem Kem delta scene is accepted for habitat context and composition diversity. Environment scale and the close-relative postcranial reconstruction boundary keep it at anatomy review; it is not representative-eligible and must not absorb the 2025-separated Egyptian Tameryraptor cranial combination.",
+        "reviewMethod": "Original-size full-frame, primary silhouette, limb-count, foot visibility, tail-continuity, habitat, secondary-animal, Tameryraptor-boundary, crop, and artifact inspection",
+        "reviewBatch": "2026-08-06-recognition-taxa-initial-gallery-1",
+        "reviewedAt": "2026-08-06T09:06:37.134Z"
       }
     },
     "maiasaura-peeblesorum": {

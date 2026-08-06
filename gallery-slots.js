@@ -3221,6 +3221,58 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     }
   ],
+  "carnotaurus-sastrei": [
+    {
+      "source": "assets/dinosaurs/carnotaurus-sastrei-browhorn-shortskull-representative-imagegen-v2.png",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "phenotype": "canonical-a",
+      "habitatKey": "la-colonia-estuary-margin",
+      "expectedKind": "count-level pass"
+    },
+    {
+      "source": "assets/dinosaurs/carnotaurus-sastrei-rust-charcoal-pattern-variant-imagegen-v2.png",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "phenotype": "rust-charcoal-b",
+      "habitatKey": "la-colonia-estuary-margin",
+      "expectedKind": "review hold"
+    },
+    {
+      "source": "assets/dinosaurs/carnotaurus-sastrei-la-colonia-estuary-habitat-ecology-imagegen-v1.png",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "la-colonia-estuary-margin",
+      "expectedKind": "anatomy review"
+    }
+  ],
+  "carcharodontosaurus-saharicus": [
+    {
+      "source": "assets/dinosaurs/carcharodontosaurus-saharicus-longskull-kemkem-representative-imagegen-v2.png",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "phenotype": "canonical-a",
+      "habitatKey": "kem-kem-delta-channel",
+      "expectedKind": "count-level pass"
+    },
+    {
+      "source": "assets/dinosaurs/carcharodontosaurus-saharicus-slate-copper-pattern-variant-imagegen-v2.png",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "phenotype": "slate-copper-b",
+      "habitatKey": "kem-kem-delta-channel",
+      "expectedKind": "review hold"
+    },
+    {
+      "source": "assets/dinosaurs/carcharodontosaurus-saharicus-kemkem-delta-habitat-ecology-imagegen-v1.png",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "phenotype": "canonical-a",
+      "habitatKey": "kem-kem-delta-channel",
+      "expectedKind": "anatomy review"
+    }
+  ],
   "spinosaurus-aegyptiacus": [
     {
       "source": "assets/dinosaurs/spinosaurus-aegyptiacus-kemkem-shortleg-deeptail-threefinger-representative-imagegen-v1.png",

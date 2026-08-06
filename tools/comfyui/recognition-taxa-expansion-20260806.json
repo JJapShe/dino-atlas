@@ -1,0 +1,411 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-06-recognition-taxa-expansion-1",
+  "createdAt": "2026-08-06T18:04:00+09:00",
+  "audience": "Korean Dino Atlas users ages 5-14",
+  "scope": [
+    "Carnotaurus sastrei initial three-image gallery",
+    "Carcharodontosaurus saharicus initial three-image gallery",
+    "recognition-led missing-taxon expansion queue"
+  ],
+  "promptEncoding": "Prompt arrays preserve the exact revised prompt supplied to the image generator, one line per item and joined with newline characters.",
+  "copyrightSafety": {
+    "externalArtworkUsed": false,
+    "externalImagesUsedAsGenerationInput": false,
+    "projectGeneratedReferenceOnly": true,
+    "licenseRecord": "Original project-generated bitmap assets. Papers, museum pages, educational pages, and book listings supplied factual or recognition constraints only; no external figure, reconstruction, franchise frame, or named-artist style was copied or supplied to the generator.",
+    "appPathPolicy": "Only reviewed species-prefixed project copies under assets/dinosaurs are referenced by app.js and gallery-slots.js. No .codex/generated_images path is referenced by the app."
+  },
+  "researchSources": [
+    {
+      "taxon": "Carnotaurus sastrei",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/carnotaurus.html",
+      "use": "Accessible taxon identity, age, region, diet, and size context",
+      "rightsUse": "Factual reference only; no image copied"
+    },
+    {
+      "taxon": "Carnotaurus sastrei",
+      "url": "https://www.macnconicet.gob.ar/wp-content/uploads/Carnotaurus_N1.pdf",
+      "use": "Type specimen, short deep skull, paired frontal horns, vestigial forelimbs, and preserved skin context",
+      "rightsUse": "Factual reference only; no figure copied"
+    },
+    {
+      "taxon": "Carnotaurus sastrei",
+      "url": "https://doi.org/10.1080/08912963.2020.1802445",
+      "use": "Reassessment of skull anatomy and diagnostic cranial proportions",
+      "rightsUse": "Factual reference only; no figure copied"
+    },
+    {
+      "taxon": "Carnotaurus sastrei",
+      "url": "https://doi.org/10.1111/j.1475-4983.2011.01091.x",
+      "use": "Forelimb and manus evidence boundary",
+      "rightsUse": "Factual reference only; no figure copied"
+    },
+    {
+      "taxon": "Carnotaurus sastrei",
+      "url": "https://doi.org/10.1016/j.cretres.2021.104994",
+      "use": "Scaly integument and irregular feature-scale evidence",
+      "rightsUse": "Factual reference only; no figure copied"
+    },
+    {
+      "taxon": "Carnotaurus sastrei",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0195667114002225",
+      "use": "La Colonia formation-level environmental reconstruction",
+      "rightsUse": "Factual reference only; no figure copied"
+    },
+    {
+      "taxon": "Carcharodontosaurus saharicus",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/carcharodontosaurus.html",
+      "use": "Accessible taxon identity, age, region, diet, and size context",
+      "rightsUse": "Factual reference only; no image copied"
+    },
+    {
+      "taxon": "Carcharodontosaurus saharicus",
+      "url": "https://d3qi0qp55mx5f5.cloudfront.net/paulsereno/i/docs/07-JVP-Carch.iguidensis.pdf?mtime=1591814622",
+      "use": "Moroccan skull-led identity and carcharodontosaurid cranial comparison",
+      "rightsUse": "Factual reference only; no figure copied"
+    },
+    {
+      "taxon": "Carcharodontosaurus saharicus",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7188693/",
+      "use": "Kem Kem Group fauna, stratigraphy, and formation-level habitat context",
+      "rightsUse": "Factual reference only; no figure copied"
+    },
+    {
+      "taxon": "Carcharodontosaurus saharicus",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39808629/",
+      "use": "2025 separation of Egyptian material as Tameryraptor and the resulting reconstruction boundary",
+      "rightsUse": "Factual reference only; no figure copied"
+    },
+    {
+      "taxon": "Carnotaurus sastrei",
+      "url": "https://www.penguinrandomhouse.com/books/790507/dinosaurus-by-rhys-charles/",
+      "use": "Current family-book and popular-culture recognition signal",
+      "rightsUse": "Bibliographic and descriptive facts only"
+    },
+    {
+      "taxon": "Carcharodontosaurus saharicus",
+      "url": "https://www.pbs.org/video/the-river-dragon-siyrjh/",
+      "use": "Current family educational-media recognition signal",
+      "rightsUse": "Program metadata only; no frame copied"
+    }
+  ],
+  "evidenceBoundaries": {
+    "carnotaurus-sastrei": {
+      "direct": [
+        "The type individual supports a very short deep skull and paired stout frontal horns above the eyes.",
+        "The forelimbs are extremely reduced; the hand evidence supports four digits but not large functional grasping claws.",
+        "Preserved skin supports a scaly covering with irregularly distributed larger feature scales rather than regular armor rows."
+      ],
+      "comparative": [
+        "Distal hind limbs, feet, much of the tail, full soft-tissue outline, horn sheath, and complete hand silhouette require close-relative comparison."
+      ],
+      "hypothetical": [
+        "All pigmentation, pattern placement, weather, vegetation arrangement, posture, and the depicted moment."
+      ]
+    },
+    "carcharodontosaurus-saharicus": {
+      "direct": [
+        "The Moroccan neotype anchors a very large, long low carcharodontosaurid skull with laterally compressed serrated teeth.",
+        "Carcharodontosaurus saharicus must not inherit the distinctive cranial traits of the Egyptian material separated as Tameryraptor in 2025."
+      ],
+      "comparative": [
+        "Torso, neck, forelimbs, three-finger hands, hind limbs, feet, and tail are conservative close-allosauroid comparative reconstructions rather than a complete C. saharicus skeleton."
+      ],
+      "hypothetical": [
+        "All pigmentation, pattern placement, weather, vegetation arrangement, posture, and the depicted moment."
+      ]
+    }
+  },
+  "records": {
+    "carnotaurus-representative-v2": {
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-06T18:01:23+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "prompt-to-image base followed by precise bilateral forelimb correction",
+      "seed": "service-assigned-not-exposed",
+      "baseCallId": "exec-a290baa9-65be-4ebb-8078-f27344865874",
+      "callId": "exec-8c14b006-9fee-46fa-a12e-2787d0b08d58",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-8c14b006-9fee-46fa-a12e-2787d0b08d58.png",
+      "approvedProjectPath": "assets/dinosaurs/carnotaurus-sastrei-browhorn-shortskull-representative-imagegen-v2.png",
+      "sha256": "a3c48856ff5f1acff5cdb5948d883aa4445cbbbaa91843e6d5ef658498cea3d7",
+      "bytes": 2384348,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "basePrompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas representative gallery image for ages 5–14",
+        "Primary request: Create an original scientifically grounded paleoart illustration of one adult Carnotaurus sastrei.",
+        "Scene/backdrop: Late Cretaceous La Colonia Formation, Patagonia; subdued estuarine floodplain with a shallow muddy channel, distant low conifers and palms, no modern grass.",
+        "Subject: exactly one complete adult Carnotaurus from both modest brow horns to tail tip; extremely short, deep skull that is narrow in front view; two stout frontal horns directly above the eyes, projecting slightly outward and upward; powerful muscular neck; deep torso; extremely tiny vestigial forelimbs held close to the chest with no prominent claws; exactly two strong hind legs and two clearly separated three-toed feet; thick muscular tail base tapering into exactly one continuous balancing tail; pebbly non-overlapping scales with irregularly scattered larger conical feature scales, never arranged in rows.",
+        "Style/medium: original high-end natural-history museum paleoart, realistic but clearly an educational reconstruction, no copied composition or recognizable franchise styling.",
+        "Composition/framing: landscape 16:9, neutral three-quarter side view, animal facing left, whole body centered at card-readable scale, generous clear margin around horns, feet, and tail tip; quiet standing or slow walking pose; no motion blur.",
+        "Lighting/mood: soft natural morning light, calm and observational.",
+        "Color palette: muted charcoal-olive dorsum, dusty umber flanks, pale warm underside, restrained rust around the face and horn bases; plausible pigmentation is hypothetical.",
+        "Materials/textures: matte scaled skin with irregular feature scales, subtle mud only on feet.",
+        "Constraints: exactly one head, one attached neck, two tiny forelimbs, two hind legs, two feet, one tail; complete silhouette; no other animals; no attack; no gore; no text; no labels; no watermark.",
+        "Avoid: Tyrannosaurus-shaped long massive skull, functional two-finger arms, Ceratosaurus nasal horn, Majungasaurus dome, Rajasaurus central horn, long cow or buffalo horns, antlers, horns on the nose, feathers, crocodile armor, regular osteoderm rows, dorsal plates, sail, frill, extra limbs, third leg, duplicated feet, split or detached tail, cropped anatomy, modern grass, cinematic monster pose."
+      ],
+      "correctionPrompt": [
+        "Use case: precise-object-edit",
+        "Asset type: Dino Atlas representative anatomy correction",
+        "Input images: Image 1 is the edit target.",
+        "Primary request: Correct only both forelimbs and hands of the Carnotaurus. Make both arms dramatically shorter and more vestigial than they are now: tiny upper-arm and forearm stubs held flush against the chest, each entire hand smaller than the nearby eye, with four minute blunt nonfunctional digit buds and no prominent claws. Both arms must remain separate and anatomically attached, but they should not look able to grasp.",
+        "Constraints: preserve the exact same Carnotaurus identity, extremely short deep skull, paired stout brow horns, head, neck, torso, two hind legs, three-toed feet, continuous tail, skin scale pattern, pose, camera, lighting, background, crop and all pixels outside the forelimb regions as closely as possible. Exactly two tiny forelimbs, two hind legs, two feet, one tail. Full body visible. No other changes, no text, no watermark.",
+        "Avoid: long fingers, large hooked claws, functional grasping hands, Tyrannosaurus two-finger arms, missing arm, extra arm, fused limbs, any change to horns, skull, legs, feet or tail."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-06T18:08:00+09:00",
+        "method": "Original-size primary inspection plus independent full-body count-level audit",
+        "result": "PASS as representative. Short deep skull, paired brow horns, minute blunt vestigial near forelimb, naturally occluded far forelimb, two stable hind legs, three forward toes per readable foot, and one continuous tail were accepted; no large grasping claw remains."
+      }
+    },
+    "carnotaurus-pattern-v2": {
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-06T18:03:24+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "reference-guided prompt-to-image from the approved v2 representative",
+      "seed": "service-assigned-not-exposed",
+      "callId": "exec-5e553984-e161-4146-8c43-227bcdb4085d",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-5e553984-e161-4146-8c43-227bcdb4085d.png",
+      "approvedProjectPath": "assets/dinosaurs/carnotaurus-sastrei-rust-charcoal-pattern-variant-imagegen-v2.png",
+      "sha256": "5174619df709735538b87a7a834e8211da476fbfd1988422eff34492003d9f5b",
+      "bytes": 2189435,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "assets/dinosaurs/carnotaurus-sastrei-browhorn-shortskull-representative-imagegen-v2.png"
+      ],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas same-body color-pattern variation after anatomy correction",
+        "Input images: Image 1 is the approved Carnotaurus v2 identity and anatomy anchor.",
+        "Primary request: Reconstruct the same Carnotaurus body plan in a clearly different camera direction and plausible pigmentation, preserving the corrected extremely vestigial arms.",
+        "Scene/backdrop: broad dry La Colonia tidal flat in low warm evening light, no modern grass.",
+        "Subject: one adult Carnotaurus with the same extremely short deep narrow skull, same paired stout modest brow horns, thick neck, deep torso, exactly two extremely tiny forelimb stubs held flush to the chest, each tiny hand smaller than the eye with minute blunt nonfunctional digit buds and no prominent claws, exactly two hind legs, two separate feet, irregular feature scales and one continuous tail.",
+        "Composition/framing: landscape 16:9; animal faces right, lower eye-level three-quarter walking view, full body and clear margins; pose, direction and light must differ visibly from Image 1.",
+        "Color palette: muted rust-brown dorsum, sandy ochre flanks, pale cream underside, restrained broken charcoal bands on rear torso and tail only; hypothetical pigmentation.",
+        "Constraints: preserve v2 species identity and limb proportions; exactly one animal, one head, two tiny arms, two hind legs, two feet, one tail; no other animals, no attack, no text, no watermark.",
+        "Avoid: large hooked hand claws, long fingers, grasping hands, Tyrannosaurus arms or skull, nasal horn, long cow horns, feathers, armor rows, extra/fused/missing limbs, duplicated feet, split tail, modern grass, gore."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-06T18:08:00+09:00",
+        "method": "Original-size primary inspection plus independent anatomy and variation audit",
+        "result": "PASS only for color-pattern review hold. The large claw error is absent and direction, light, and palette differ from S1; representative promotion remains prohibited."
+      }
+    },
+    "carnotaurus-habitat-ecology-v1": {
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "kind": "anatomy review",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-06T17:54:53+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "reference-guided prompt-to-image from the species identity anchor",
+      "seed": "service-assigned-not-exposed",
+      "callId": "exec-3a4c99c1-4199-4a88-bb9e-f986948ec1c9",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-3a4c99c1-4199-4a88-bb9e-f986948ec1c9.png",
+      "approvedProjectPath": "assets/dinosaurs/carnotaurus-sastrei-la-colonia-estuary-habitat-ecology-imagegen-v1.png",
+      "sha256": "e1833b44463da15ab60331226256f6a115e4ebc48224210eb6ea28f046774483",
+      "bytes": 2429790,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "privateReferenceCallIds": [
+        "exec-a290baa9-65be-4ebb-8078-f27344865874"
+      ],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas habitat-ecology gallery image for ages 5–14",
+        "Input images: Image 1 is the Carnotaurus species-identity anchor.",
+        "Primary request: Show one Carnotaurus sastrei moving calmly through a broad Late Cretaceous La Colonia estuarine landscape, with the environment as important as the animal.",
+        "Scene/backdrop: high-oblique view of winding shallow tidal channels, muddy flats, low sand and silt bars, scattered conifers, palms and flowering wetland plants; dawn mist; no modern grass.",
+        "Subject: exactly one Carnotaurus at middle distance occupying about one third of the frame, full silhouette readable; preserve the extremely short deep skull, two modest stout horns above the eyes, thick neck, minute forelimbs, two hind legs, two feet, irregular feature scales, and one continuous tapering tail. It is simply walking beside the water, not hunting.",
+        "Style/medium: original natural-history museum paleoart, realistic educational reconstruction.",
+        "Composition/framing: landscape 16:9, wide high-angle establishing view, dinosaur on a diagonal path through the lower-middle frame, strong depth and negative space; full body with clear margins, camera and composition distinct from the representative and color variant.",
+        "Lighting/mood: cool dawn with soft mist and gentle reflected water light, calm ecosystem observation.",
+        "Color palette: preserve the representative's charcoal-olive, umber and restrained rust identity palette.",
+        "Constraints: exactly one animal, no named prey, no direct encounter, no attack, no gore, no text, no watermark; formation-level habitat reconstruction, not evidence of a specific behavior.",
+        "Avoid: Tyrannosaurus skull, nasal horn, long cow horns, long functional arms, feathers, regular armor rows, extra limbs, third leg, fused or duplicated feet, split tail, cropped body, modern grass, cinematic chase."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-06T18:08:00+09:00",
+        "method": "Original-size habitat and count-level audit",
+        "result": "Accepted only for habitat-ecology/anatomy review. Exactly one readable animal and no direct encounter; distant scale and environmental emphasis prohibit representative promotion."
+      }
+    },
+    "carcharodontosaurus-representative-v2": {
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-06T18:02:01+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "prompt-to-image base followed by precise skull, hand, and foot correction",
+      "seed": "service-assigned-not-exposed",
+      "baseCallId": "exec-8780b3fa-ab06-4d87-81a1-55ecc069d28a",
+      "callId": "exec-93e41558-e344-41fb-b63b-940a27ed0fb8",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-93e41558-e344-41fb-b63b-940a27ed0fb8.png",
+      "approvedProjectPath": "assets/dinosaurs/carcharodontosaurus-saharicus-longskull-kemkem-representative-imagegen-v2.png",
+      "sha256": "2a519de8122eff60bb0c8e49655bc9b3abd3541daad982a058f5a224c2ac1a88",
+      "bytes": 2337070,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "basePrompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas representative gallery image for ages 5–14",
+        "Primary request: Create an original scientifically cautious paleoart illustration of one adult Carcharodontosaurus saharicus.",
+        "Scene/backdrop: Cenomanian Kem Kem Group fluvial-delta sandbar in what is now Morocco; warm red sandstone, braided freshwater-to-brackish channels, sparse low riparian vegetation and humid haze; no modern grass.",
+        "Subject: exactly one complete adult Carcharodontosaurus saharicus; enormous long, low skull rather than a short blocky tyrannosaur skull; subtly sculpted and grooved maxillary face; low thick continuous brow without horns or crest; slightly parted jaws showing narrow, laterally flattened, blade-like serrated teeth rather than conical crocodile teeth; short powerful neck; deep athletic allosauroid torso; reduced but not vestigial forelimbs held neutrally with hands angled inward and digit count not emphasized; exactly two powerful hind limbs, two clearly separated three-toed feet, and exactly one long straight counterbalancing tail.",
+        "Style/medium: original high-end natural-history museum paleoart, realistic educational reconstruction, no copied composition and no recognizable franchise styling.",
+        "Composition/framing: landscape 16:9, clean three-quarter side view, animal facing right, full body centered at card-readable scale, generous margin around snout, both feet, hands and tail tip; neutral alert walking pose, no motion blur.",
+        "Lighting/mood: clear warm late-afternoon light, observational rather than cinematic.",
+        "Color palette: sandy ochre base, charcoal-brown dorsal mantle, muted olive-gray broken flank bars, pale throat and underside; pigmentation explicitly hypothetical.",
+        "Materials/textures: fine matte scales and restrained facial rugosity, subtle sand on feet.",
+        "Constraints: exactly one attached head and neck, two forelimbs, two hind limbs, two feet, one tail; complete silhouette; no prey; no interaction; no gore; no text; no labels; no watermark.",
+        "Avoid: Tyrannosaurus blocky deep skull and two-finger emphasis, Spinosaurus crocodile snout, conical teeth or sail, Carnotaurus short deep horned head and minute arms, Acrocanthosaurus high dorsal ridge, Giganotosaurus clone styling, Tameryraptor nasal horn-like rugosity or crest, nasal horn, paired brow horns, bunny hands, dragon spines, heavy feathers, extra limbs, third leg, duplicated feet, split or detached tail, cropped anatomy, pack hunt, bone-crushing bite, modern grass."
+      ],
+      "correctionPrompt": [
+        "Use case: precise-object-edit",
+        "Asset type: Dino Atlas representative anatomy correction",
+        "Input images: Image 1 is the edit target.",
+        "Primary request: Correct the Carcharodontosaurus anatomy while preserving the scene. Make the skull distinctly longer and lower from orbit to snout, with a large but non-blocky allosauroid profile, subtly grooved maxillary face, a low continuous brow with no horn or crest, and laterally flattened blade-like serrated teeth. Make the torso slightly more athletic and less barrel-deep than Tyrannosaurus. Correct both forelimbs as comparative allosauroid reconstructions: two separate reduced but clearly non-vestigial arms, inward-facing palms, exactly three modest separated fingers on each readable hand, small claws rather than two giant hooks. Correct each hind foot to show three clearly separated forward toes with stable ground contact.",
+        "Constraints: preserve the exact landscape, three-quarter side direction, tail length and continuity, two hind-leg placement, overall pose, lighting, color pattern, camera and crop. Exactly one attached head and neck, two forelimbs, two hind limbs, two feet, one continuous tail. Full body visible. No prey, no text, no watermark.",
+        "Evidence boundary: the skull is anchored to Moroccan C. saharicus material; torso, limbs, hands and tail are explicitly comparative reconstructions from close allosauroid relatives.",
+        "Avoid: Tyrannosaurus blocky deep skull or two-finger hands, Spinosaurus crocodile snout/conical teeth/sail, Carnotaurus short horned head and vestigial arms, Tameryraptor nasal horn-like crest, Acrocanthosaurus high back ridge, bunny hands, extra fingers, fused fingers, duplicated feet, extra legs, split tail, cropped anatomy."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-06T18:08:00+09:00",
+        "method": "Original-size primary inspection plus independent full-body count-level audit",
+        "result": "PASS as representative. Long low skull, unhorned brow, paired three-digit hands, two stable three-forward-toe feet, and one continuous tail are readable without Tyrannosaurus drift; comparative reconstruction boundary remains explicit."
+      }
+    },
+    "carcharodontosaurus-pattern-v2": {
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-06T18:04:00+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "reference-guided prompt-to-image from the approved v2 representative",
+      "seed": "service-assigned-not-exposed",
+      "callId": "exec-703b44f4-c99c-4a75-8e3e-d42a3b88db5b",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-703b44f4-c99c-4a75-8e3e-d42a3b88db5b.png",
+      "approvedProjectPath": "assets/dinosaurs/carcharodontosaurus-saharicus-slate-copper-pattern-variant-imagegen-v2.png",
+      "sha256": "8a9a4cfccababbac4e451bd5f51106a3151d087cf6ccda8df6b2dce21b5d2feb",
+      "bytes": 2222130,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "assets/dinosaurs/carcharodontosaurus-saharicus-longskull-kemkem-representative-imagegen-v2.png"
+      ],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas same-body color-pattern variation after anatomy correction",
+        "Input images: Image 1 is the approved Carcharodontosaurus v2 identity and anatomy anchor.",
+        "Primary request: Reconstruct the same cautious comparative Carcharodontosaurus body plan in a different direction and color hypothesis while preserving the corrected long-low skull and hand/foot anatomy.",
+        "Scene/backdrop: shaded red-sand Kem Kem levee beside braided channels in cooler dawn light, no modern grass.",
+        "Subject: one adult Carcharodontosaurus with the same very long low unhorned skull, grooved maxillary face, low thick brow, blade-like serrated teeth, athletic allosauroid torso, exactly two reduced but non-vestigial forelimbs with inward palms and three modest separated fingers on each readable hand, exactly two hind legs, three clearly separated forward toes on each foot, and one continuous straight tail. The limb reconstruction is comparative and must remain conservative.",
+        "Composition/framing: landscape 16:9; animal faces left, slightly elevated three-quarter side view with mouth mostly closed, full body with clear margins; different camera and direction from Image 1.",
+        "Color palette: smoky slate-brown dorsum, muted olive-gray flanks, dusty copper broken shoulder bars, pale throat and underside, narrow low-contrast tail bands; hypothetical pigmentation.",
+        "Constraints: exactly one animal, one attached head/neck, two forelimbs, two hind limbs, two feet, one tail; no prey, no attack, no text, no watermark.",
+        "Avoid: short deep Tyrannosaurus skull, two-finger hands, giant hand hooks, Spinosaurus snout/sail, Carnotaurus horns, Tameryraptor crest, high back ridge, bunny hands, extra/fused/missing limbs, duplicated feet, split tail, modern grass, gore."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-06T18:08:00+09:00",
+        "method": "Original-size primary inspection plus independent anatomy and variation audit",
+        "result": "PASS only for color-pattern review hold. Long skull, three-digit hands, three-forward-toe feet, direction, and palette remain stable; representative promotion remains prohibited."
+      }
+    },
+    "carcharodontosaurus-habitat-ecology-v1": {
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "kind": "anatomy review",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-06T17:56:27+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "reference-guided prompt-to-image from the species identity anchor",
+      "seed": "service-assigned-not-exposed",
+      "callId": "exec-9f64ec16-55e8-436d-8a33-0d08e2a79100",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-9f64ec16-55e8-436d-8a33-0d08e2a79100.png",
+      "approvedProjectPath": "assets/dinosaurs/carcharodontosaurus-saharicus-kemkem-delta-habitat-ecology-imagegen-v1.png",
+      "sha256": "4e51e8c3adc11804fe1548a97e942a2fedd1b76ce07def4109282b3f28562d7c",
+      "bytes": 2697101,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "privateReferenceCallIds": [
+        "exec-8780b3fa-ab06-4d87-81a1-55ecc069d28a"
+      ],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas habitat-ecology gallery image for ages 5–14",
+        "Input images: Image 1 is the Carcharodontosaurus species-identity anchor.",
+        "Primary request: Show exactly one Carcharodontosaurus saharicus walking calmly through a broad Cenomanian Kem Kem fluvial-delta landscape, with the habitat dominating the frame.",
+        "Scene/backdrop: high-oblique view over braided freshwater-to-brackish channels, red sandstone levees, low sandbars, sparse riparian plants and humid haze; no modern grass and no other animals.",
+        "Subject: exactly one Carcharodontosaurus at middle distance occupying about one third of the frame, fully separated from the water and completely visible; preserve the enormous long low unhorned skull, subtly sculpted maxillary face, low thick brow, narrow blade-like serrated teeth, short strong neck, reduced paired allosauroid forelimbs with hands angled inward, exactly two hind legs, two clearly distinct feet and exactly one long continuous tail. It is crossing a dry levee, not hunting.",
+        "Style/medium: original high-end natural-history museum paleoart, realistic educational reconstruction.",
+        "Composition/framing: landscape 16:9; wide high-oblique establishing shot from a rocky rise; the animal moves diagonally across the lower middle while multiple channels lead into the distance; full body with clear margins; camera and scale distinct from both species portraits.",
+        "Lighting/mood: warm humid morning with slight haze, calm and observational.",
+        "Color palette: preserve the representative's sandy ochre, charcoal-brown and muted olive-gray identity palette.",
+        "Constraints: exactly one animal total; one head, two forelimbs, two hind limbs, two feet and one tail; no prey, no interaction, no pack, no gore, no text, no watermark. Formation-level habitat reconstruction only.",
+        "Avoid: Spinosaurus or any secondary animal, Tyrannosaurus blocky skull, crocodile snout, conical teeth, sail, Carnotaurus horns, Tameryraptor crest, high dorsal ridge, bunny hands, extra limbs, third leg, duplicated or fused feet, split tail, cropped anatomy, modern grass, chase or combat."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-06T18:08:00+09:00",
+        "method": "Original-size habitat and count-level audit",
+        "result": "Accepted only for habitat-ecology/anatomy review. Exactly one readable animal and no direct encounter; distant scale and comparative body reconstruction prohibit representative promotion."
+      }
+    }
+  },
+  "rejectedAttempts": [
+    {
+      "taxon": "Carnotaurus sastrei",
+      "role": "representative",
+      "callId": "exec-a290baa9-65be-4ebb-8078-f27344865874",
+      "projectCopyRemoved": true,
+      "currentProjectReference": false,
+      "reason": "Forelimbs read as functional clawed hands rather than extreme abelisaurid reduction; retained only as the private v2 correction source."
+    },
+    {
+      "taxon": "Carnotaurus sastrei",
+      "role": "color-pattern",
+      "callId": "exec-47a0773b-385e-44f9-bf30-a72630c7a864",
+      "projectCopyRemoved": true,
+      "currentProjectReference": false,
+      "reason": "Inherited prominent functional hand claws; replaced by v2 and removed from the project."
+    },
+    {
+      "taxon": "Carcharodontosaurus saharicus",
+      "role": "representative",
+      "callId": "exec-8780b3fa-ab06-4d87-81a1-55ecc069d28a",
+      "projectCopyRemoved": true,
+      "currentProjectReference": false,
+      "reason": "Two-finger Tyrannosaurus drift and overly deep skull; retained only as the private v2 correction source."
+    },
+    {
+      "taxon": "Carcharodontosaurus saharicus",
+      "role": "color-pattern",
+      "callId": "exec-418f6361-96e0-4b97-bc28-a06a57c8d81c",
+      "projectCopyRemoved": true,
+      "currentProjectReference": false,
+      "reason": "Two-finger hand drift remained; replaced by v2 and removed from the project."
+    },
+    {
+      "taxon": "Carcharodontosaurus saharicus",
+      "role": "habitat-ecology-interaction",
+      "callId": "exec-b3df8c24-188c-4dc6-bf5d-dad76afed954",
+      "copiedToProject": false,
+      "currentProjectReference": false,
+      "reason": "The distant Spinosaurus read as quadrupedal and failed anatomy review; the interaction image was excluded entirely and replaced by a single-animal habitat scene."
+    }
+  ]
+}
