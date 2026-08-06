@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-08-06T18:20:00+09:00",
+  "status": "review-complete-with-safe-replacement",
+  "generationSpecHistory": [
+    {
+      "candidateId": "triceratops-horridus-calm-head-lift-f81-v1",
+      "sha256": "88b80b69294a9181338d57cb54ec925f839493029041620eacb080eb516629aa"
+    },
+    {
+      "candidateId": "triceratops-horridus-clear-head-lift-f81-v2",
+      "sha256": "abf5e1965f1991d202501d65ad8f1045b83502b1d83ff80681a7fd9969193457"
+    },
+    {
+      "candidateId": "triceratops-horridus-strong-head-lift-f81-v3",
+      "sha256": "3b1588d5eb231771a88cecd65337d2069f99ebe1682e050ed62079d14a8dc044"
+    }
+  ],
+  "generationSpecNote": "The manifest was append-only between the three native runs. Each schema-2 run record pins the exact pre-run snapshot SHA-256; review and safe-replacement fields were added only after all runs completed.",
+  "reviewSummary": {
+    "nativeCandidatesAccepted": 0,
+    "nativeCandidatesRejected": 3,
+    "safeReplacementsPublished": 1,
+    "decision": "All native candidates preserve count-level anatomy but fail the user-visible motion-amplitude gate. Publish only the cleanest full-range v1 as the reviewed I2V base beneath a deterministic one-way nostril-dust overlay."
+  },
+  "policy": {
+    "scope": "ComfyUI-native Wan2.2 TI2V 5B forward-only solo dinosaur action candidate for a children's dinosaur atlas",
+    "audience": "ages 5-14",
+    "representativePromotion": "prohibited",
+    "galleryPromotion": "prohibited",
+    "anatomyPromotion": "prohibited",
+    "autoplay": "prohibited",
+    "audio": "prohibited",
+    "publicationRule": "Publish only after all-frame anatomy and temporal review. Reject horn-count drift, frill melting, neck separation, body or foot sliding, reverse motion, return motion, repeated motion, or any unsafe prefix. If no clean forward segment exists, publish only a deterministic fixed-anatomy fallback or omit the sample."
+  },
+  "comfyUiRoot": "C:/Users/USER/Documents/dinosour/tools/comfyui/ComfyUI",
+  "workflowTemplate": "tools/comfyui/workflow_templates/dino_wan22_ti2v_5b_i2v_long_api.json",
+  "settings": {
+    "width": 800,
+    "height": 448,
+    "frames": 81,
+    "fps": 16,
+    "durationSeconds": 5.0625,
+    "steps": 20,
+    "cfg": 5,
+    "sampler": "uni_pc",
+    "scheduler": "simple",
+    "shift": 8,
+    "denoise": 1
+  },
+  "commonNegativePrompt": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, rigid single-hinge neck, paper-doll rotation, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, body translation, body morphing, identity drift, background replacement, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong loop, repeated nod, repeated head turn, heavy motion blur, ghost outline, flicker, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts",
+  "candidates": [
+    {
+      "id": "triceratops-horridus-calm-head-lift-f81-v1",
+      "taxonId": "triceratops-horridus",
+      "sceneRole": "solo-action",
+      "seed": 260806301,
+      "sourcePoster": "assets/dinosaurs/triceratops-horridus-imagegen-v51-source-candidate.png",
+      "sourcePosterSha256": "f928919b0ee731fa7b560d33dd1146b87130ecfa9ac73561fe97364b1978ed49",
+      "sourceLicense": "project-owned generated still",
+      "sourceReviewStatus": "approved gallery slot 1 count-level representative; motion use is separately reviewed and cannot change representative status",
+      "inputName": "dino_atlas/motion_m2_i2v_recognition/triceratops-horridus-approved-source-v51.png",
+      "outputPrefix": "dino_atlas/motion_m2_i2v_recognition/triceratops-horridus-calm-head-lift-wan22-s260806301-f81",
+      "record": "tools/comfyui/outputs/motion-m2-i2v-triceratops-head-lift-s260806301-f81-v1-run.json",
+      "positivePrompt": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved still as the exact first-frame Triceratops horridus identity, anatomy, left-facing profile, full-body composition, forest, ground, lighting, palette, skin pattern, and crop reference. Exactly one complete Triceratops remains planted in the source coordinates, with one solid skull-attached frill, exactly two long brow horns, exactly one shorter nasal horn, one closed hooked beak, exactly two forelimbs, exactly two hind limbs and four stable weight-bearing feet, and one complete continuous tail. After a brief still opening, the animal performs one calm continuous head lift only: the complete skull, all three horns, solid frill, short neck, throat, shoulder base, and upper chest rise together by only three to four degrees in one forward direction, with no hinge, gap, stretching, or isolated frill rotation. The motion starts slowly, continues smoothly, and ends in the slightly higher attentive pose for the final second. The beak stays closed. Horn count, horn length, frill outline, neck thickness, eye position, and skin markings stay constant. The torso, pelvis, complete tail, all four planted feet, every readable toe, and the background remain fixed at their source coordinates. No return movement, no reverse, no second nod, no looping, no walking, no roar. Keep anatomy crisp, camera fixed, exposure stable, and the final frame a natural continuation rather than a duplicate of the first frame.",
+      "negativePrompt": "open beak, exposed teeth, roar, chewing, tongue, two nasal horns, missing nasal horn, missing brow horn, extra horn, growing horn, shrinking horn, bending horn, melting horn, antlers, Torosaurus frill holes, frill tear, frill wobble, frill rotation independent of skull, frill growth, detached frill, elongated neck, stretched throat, neck fold opening, head-only hinge, large head swing, frontal turn, direction reversal, repeated bob, breathing loop, body sway, tail swing, foot lift, toe change, walking, running, dust cloud, other dinosaur, predator, attack, blood, dramatic lighting flash, background shimmer",
+      "recordSha256": "d5dfa73c9c434b41500635abdcd9b47dcd52cd01a6d867634704ac8ef8c7cb28",
+      "generationSpecSha256": "88b80b69294a9181338d57cb54ec925f839493029041620eacb080eb516629aa",
+      "nativeOutput": {
+        "path": "output/dino_atlas/motion_m2_i2v_recognition/triceratops-horridus-calm-head-lift-wan22-s260806301-f81_00001_.mp4",
+        "sha256": "b2fac4a5ff9188acbb3c6a793f1a9b66f50635c85a486fda7ad7089f388fe522",
+        "bytes": 1154423,
+        "reviewCopy": "tools/comfyui/outputs/triceratops-horridus-calm-head-lift-wan22-s260806301-f81-v1-candidate.mp4"
+      },
+      "reviewStatus": "rejected",
+      "review": {
+        "allFrames": "rejected",
+        "firstClearDefect": "motion-amplitude gate",
+        "usableSafePrefix": "none",
+        "reason": "All 81 frames keep the head, solid frill, three horns, four planted feet and tail readable, but the requested head lift is too small to read reliably at card size. No native range is published by itself."
+      },
+      "safeReplacement": {
+        "id": "triceratops-horridus-dust-exhale-wan22-safe-overlay-i2v-m2-v1",
+        "tier": "M2",
+        "projectAsset": "assets/motion/m2/triceratops-horridus-dust-exhale-wan22-safe-overlay-i2v-m2-v1.mp4",
+        "sha256": "17619c5ac98728f38dfa717ce38726f30104baaeb7131ebbf145680984adbc91",
+        "method": "full 81-frame clean I2V base plus a deterministic one-way dust-exhale overlay restricted to empty air ahead of the nostril",
+        "reviewStatus": "published-after-independent-81-of-81"
+      }
+    },
+    {
+      "id": "triceratops-horridus-clear-head-lift-f81-v2",
+      "taxonId": "triceratops-horridus",
+      "sceneRole": "solo-action",
+      "seed": 260806302,
+      "settings": {
+        "steps": 24,
+        "cfg": 5.5
+      },
+      "sourcePoster": "assets/dinosaurs/triceratops-horridus-imagegen-v51-source-candidate.png",
+      "sourcePosterSha256": "f928919b0ee731fa7b560d33dd1146b87130ecfa9ac73561fe97364b1978ed49",
+      "sourceLicense": "project-owned generated still",
+      "sourceReviewStatus": "approved gallery slot 1 count-level representative; motion use is separately reviewed and cannot change representative status",
+      "inputName": "dino_atlas/motion_m2_i2v_recognition/triceratops-horridus-approved-source-v51.png",
+      "outputPrefix": "dino_atlas/motion_m2_i2v_recognition/triceratops-horridus-clear-head-lift-wan22-s260806302-f81",
+      "record": "tools/comfyui/outputs/motion-m2-i2v-triceratops-head-lift-s260806302-f81-v2-run.json",
+      "positivePrompt": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved still as the exact first-frame Triceratops horridus identity, anatomy, left-facing profile, full-body composition, forest, ground, lighting, palette, skin pattern, and crop reference. Exactly one complete Triceratops remains planted in the source coordinates, with one solid skull-attached frill, exactly two long brow horns, exactly one shorter nasal horn, one closed hooked beak, exactly two forelimbs, exactly two hind limbs and four stable weight-bearing feet, and one complete continuous tail. The animal performs one clearly readable but calm continuous head lift. From the first second to the final second, the complete skull, all three horns, solid frill, short muscular neck, throat, shoulder base, and upper chest rise together by six to eight degrees in one forward direction. Spread this single lift smoothly through the neck root and shoulders so there is no hinge, gap, stretching, or isolated frill rotation. The final head position is visibly higher than the opening position and stays there; it never returns. The beak remains closed. Horn count, horn length, frill outline, neck thickness, eye position, and skin markings stay constant. The torso, pelvis, complete tail, all four planted feet, every readable toe, and the background remain fixed at their source coordinates. No reverse, no second nod, no looping, no walking, no roar. Keep anatomy crisp, camera fixed, exposure stable, and the final frame a natural continuation rather than a duplicate of the first frame.",
+      "negativePrompt": "open beak, exposed teeth, roar, chewing, tongue, two nasal horns, missing nasal horn, missing brow horn, extra horn, growing horn, shrinking horn, bending horn, melting horn, antlers, Torosaurus frill holes, frill tear, frill wobble, frill rotation independent of skull, frill growth, detached frill, elongated neck, stretched throat, neck fold opening, head-only hinge, extreme head lift, large head swing, frontal turn, direction reversal, return to first pose, repeated bob, breathing loop, body sway, tail swing, foot lift, toe change, walking, running, dust cloud, other dinosaur, predator, attack, blood, dramatic lighting flash, background shimmer",
+      "recordSha256": "890a5657f224bb39b56b5855ac46cb8f46c7b3de9e209b2927240fc47eb4188d",
+      "generationSpecSha256": "abf5e1965f1991d202501d65ad8f1045b83502b1d83ff80681a7fd9969193457",
+      "nativeOutput": {
+        "path": "output/dino_atlas/motion_m2_i2v_recognition/triceratops-horridus-clear-head-lift-wan22-s260806302-f81_00001_.mp4",
+        "sha256": "3ad08fbe7768ee8274d4712f735316e721b2b3f6f5304e86e4e46ffc02361467",
+        "bytes": 2207888
+      },
+      "reviewStatus": "rejected",
+      "review": {
+        "allFrames": "rejected",
+        "firstClearDefect": "motion-amplitude gate",
+        "usableSafePrefix": "none",
+        "reason": "The second 81-frame run remains anatomy-stable, but the nominal six-to-eight-degree lift is not clearly distinguishable from minor generative drift at card size. It is held from publication."
+      },
+      "safeReplacement": null
+    },
+    {
+      "id": "triceratops-horridus-strong-head-lift-f81-v3",
+      "taxonId": "triceratops-horridus",
+      "sceneRole": "solo-action",
+      "seed": 260806303,
+      "settings": {
+        "steps": 24,
+        "cfg": 6
+      },
+      "sourcePoster": "assets/dinosaurs/triceratops-horridus-imagegen-v51-source-candidate.png",
+      "sourcePosterSha256": "f928919b0ee731fa7b560d33dd1146b87130ecfa9ac73561fe97364b1978ed49",
+      "sourceLicense": "project-owned generated still",
+      "sourceReviewStatus": "approved gallery slot 1 count-level representative; motion use is separately reviewed and cannot change representative status",
+      "inputName": "dino_atlas/motion_m2_i2v_recognition/triceratops-horridus-approved-source-v51.png",
+      "outputPrefix": "dino_atlas/motion_m2_i2v_recognition/triceratops-horridus-strong-head-lift-wan22-s260806303-f81",
+      "record": "tools/comfyui/outputs/motion-m2-i2v-triceratops-head-lift-s260806303-f81-v3-run.json",
+      "positivePrompt": "Scientific educational image-to-video for ages five to fourteen. One fixed wide camera and one continuous five-second forward-only shot. Preserve the approved first frame and exactly one complete Triceratops horridus with one solid attached frill, two long brow horns, one shorter nasal horn, a closed beak, four planted legs and feet, and one complete tail. Make one clear alert head raise that is easy to see: the animal begins with its head low, then steadily raises the entire skull, all three horns, frill, short muscular neck, throat, shoulder base, and upper chest together by twelve to fifteen degrees. This is one smooth rising arc across the whole clip. The final head and horn tips are visibly higher than at the start and remain at the high pose; there is no return and no second nod. Keep the frill rigidly attached to the skull and distribute the lift through the broad neck root into the shoulders. Preserve horn count, horn length, frill edge, neck thickness, closed beak, eye, skin markings, torso, tail, four feet, ground contact, background, camera, exposure, and crop. The torso does not walk or translate. No reverse, loop, roar, cut, pan, zoom, or background motion.",
+      "negativePrompt": "tiny invisible motion, static head, open beak, exposed teeth, roar, chewing, tongue, two nasal horns, missing nasal horn, missing brow horn, extra horn, growing horn, shrinking horn, bending horn, melting horn, antlers, Torosaurus frill holes, frill tear, frill wobble, frill rotation independent of skull, frill growth, detached frill, elongated neck, stretched throat, neck gap, neck fold opening, head-only hinge, extreme vertical neck, frontal turn, direction reversal, return to first pose, repeated bob, breathing loop, body sway, tail swing, foot lift, toe change, walking, running, dust cloud, other dinosaur, predator, attack, blood, dramatic lighting flash, background shimmer",
+      "recordSha256": "7afcf36aad7c92697f90327e74aa70d3771eecfdfec0e0f20dab8a1245407376",
+      "generationSpecSha256": "3b1588d5eb231771a88cecd65337d2069f99ebe1682e050ed62079d14a8dc044",
+      "nativeOutput": {
+        "path": "output/dino_atlas/motion_m2_i2v_recognition/triceratops-horridus-strong-head-lift-wan22-s260806303-f81_00001_.mp4",
+        "sha256": "975309ced1f8354dd81b6c5acb6e128b412c97ace5cc610637fcc919d9f5bc2d",
+        "bytes": 1247574
+      },
+      "reviewStatus": "rejected",
+      "review": {
+        "allFrames": "rejected",
+        "firstClearDefect": "motion-amplitude gate",
+        "usableSafePrefix": "none",
+        "reason": "Even the strongest prompt does not produce the requested clearly readable twelve-to-fifteen-degree head raise. Publishing it as a large movement would overclaim the actual frames, so the complete native run is held."
+      },
+      "safeReplacement": null
+    }
+  ]
+}

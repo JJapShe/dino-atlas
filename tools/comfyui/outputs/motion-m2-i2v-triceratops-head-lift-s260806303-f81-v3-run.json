@@ -1,0 +1,434 @@
+{
+  "schemaVersion": 2,
+  "candidateId": "triceratops-horridus-strong-head-lift-f81-v3",
+  "taxonId": "triceratops-horridus",
+  "queuedAt": "2026-08-06T09:25:25.534065+00:00",
+  "completedAt": "2026-08-06T09:26:39.117135+00:00",
+  "elapsedSeconds": 73.583,
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "235a6f5d-0c25-425b-8582-67948b5ce86f",
+          "timestamp": 1786008325550
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [
+            "1",
+            "2",
+            "3",
+            "6",
+            "7",
+            "8"
+          ],
+          "prompt_id": "235a6f5d-0c25-425b-8582-67948b5ce86f",
+          "timestamp": 1786008325556
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "235a6f5d-0c25-425b-8582-67948b5ce86f",
+          "timestamp": 1786008398776
+        }
+      ]
+    ]
+  },
+  "promptId": "235a6f5d-0c25-425b-8582-67948b5ce86f",
+  "queueResponse": {
+    "prompt_id": "235a6f5d-0c25-425b-8582-67948b5ce86f",
+    "number": 25,
+    "node_errors": {}
+  },
+  "provenance": {
+    "spec": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\motion-m2-i2v-recognition-expansion-candidates-20260806.json",
+    "specSha256": "3b1588d5eb231771a88cecd65337d2069f99ebe1682e050ed62079d14a8dc044",
+    "template": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\workflow_templates\\dino_wan22_ti2v_5b_i2v_long_api.json",
+    "templateSha256": "eba1778a281c9d81c7f62d8ac2e75aa73573b8845b2fdf60f0d6ca48750404e2",
+    "runner": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\scripts\\run_motion_m2_i2v_long_candidate.py",
+    "runnerSha256": "7c861c8733644959d5d9b7504f058f7f92875cfd944e36f5217baa8e2efd7970",
+    "comfyInput": "C:\\Users\\USER\\Documents\\dinosour\\tools\\comfyui\\ComfyUI\\input\\dino_atlas\\motion_m2_i2v_recognition\\triceratops-horridus-approved-source-v51.png",
+    "comfyInputSha256": "f928919b0ee731fa7b560d33dd1146b87130ecfa9ac73561fe97364b1978ed49",
+    "comfyInputWidth": 1672,
+    "comfyInputHeight": 941,
+    "outputAspectWidth": 800,
+    "outputAspectHeight": 448,
+    "sourcePoster": "assets/dinosaurs/triceratops-horridus-imagegen-v51-source-candidate.png",
+    "sourcePosterSha256": "f928919b0ee731fa7b560d33dd1146b87130ecfa9ac73561fe97364b1978ed49",
+    "sourceLicense": "project-owned generated still",
+    "sourceReviewStatus": "approved gallery slot 1 count-level representative; motion use is separately reviewed and cannot change representative status"
+  },
+  "runConfig": {
+    "width": 800,
+    "height": 448,
+    "frames": 81,
+    "fps": 16,
+    "durationSeconds": 5.0625,
+    "steps": 24,
+    "cfg": 6,
+    "sampler": "uni_pc",
+    "scheduler": "simple",
+    "shift": 8,
+    "denoise": 1,
+    "effectiveDurationSeconds": 5.0625,
+    "seed": 260806303,
+    "inputName": "dino_atlas/motion_m2_i2v_recognition/triceratops-horridus-approved-source-v51.png",
+    "outputPrefix": "dino_atlas/motion_m2_i2v_recognition/triceratops-horridus-strong-head-lift-wan22-s260806303-f81",
+    "positivePrompt": "Scientific educational image-to-video for ages five to fourteen. One fixed wide camera and one continuous five-second forward-only shot. Preserve the approved first frame and exactly one complete Triceratops horridus with one solid attached frill, two long brow horns, one shorter nasal horn, a closed beak, four planted legs and feet, and one complete tail. Make one clear alert head raise that is easy to see: the animal begins with its head low, then steadily raises the entire skull, all three horns, frill, short muscular neck, throat, shoulder base, and upper chest together by twelve to fifteen degrees. This is one smooth rising arc across the whole clip. The final head and horn tips are visibly higher than at the start and remain at the high pose; there is no return and no second nod. Keep the frill rigidly attached to the skull and distribute the lift through the broad neck root into the shoulders. Preserve horn count, horn length, frill edge, neck thickness, closed beak, eye, skin markings, torso, tail, four feet, ground contact, background, camera, exposure, and crop. The torso does not walk or translate. No reverse, loop, roar, cut, pan, zoom, or background motion.",
+    "negativePrompt": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, rigid single-hinge neck, paper-doll rotation, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, body translation, body morphing, identity drift, background replacement, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong loop, repeated nod, repeated head turn, heavy motion blur, ghost outline, flicker, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts, tiny invisible motion, static head, open beak, exposed teeth, roar, chewing, tongue, two nasal horns, missing nasal horn, missing brow horn, extra horn, growing horn, shrinking horn, bending horn, melting horn, antlers, Torosaurus frill holes, frill tear, frill wobble, frill rotation independent of skull, frill growth, detached frill, elongated neck, stretched throat, neck gap, neck fold opening, head-only hinge, extreme vertical neck, frontal turn, direction reversal, return to first pose, repeated bob, breathing loop, body sway, tail swing, foot lift, toe change, walking, running, dust cloud, other dinosaur, predator, attack, blood, dramatic lighting flash, background shimmer"
+  },
+  "workflow": {
+    "1": {
+      "class_type": "UNETLoader",
+      "inputs": {
+        "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    "2": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "type": "wan",
+        "device": "default"
+      }
+    },
+    "3": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "wan2.2_vae.safetensors"
+      }
+    },
+    "4": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "Scientific educational image-to-video for ages five to fourteen. One fixed wide camera and one continuous five-second forward-only shot. Preserve the approved first frame and exactly one complete Triceratops horridus with one solid attached frill, two long brow horns, one shorter nasal horn, a closed beak, four planted legs and feet, and one complete tail. Make one clear alert head raise that is easy to see: the animal begins with its head low, then steadily raises the entire skull, all three horns, frill, short muscular neck, throat, shoulder base, and upper chest together by twelve to fifteen degrees. This is one smooth rising arc across the whole clip. The final head and horn tips are visibly higher than at the start and remain at the high pose; there is no return and no second nod. Keep the frill rigidly attached to the skull and distribute the lift through the broad neck root into the shoulders. Preserve horn count, horn length, frill edge, neck thickness, closed beak, eye, skin markings, torso, tail, four feet, ground contact, background, camera, exposure, and crop. The torso does not walk or translate. No reverse, loop, roar, cut, pan, zoom, or background motion.",
+        "clip": [
+          "2",
+          0
+        ]
+      }
+    },
+    "5": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, rigid single-hinge neck, paper-doll rotation, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, body translation, body morphing, identity drift, background replacement, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong loop, repeated nod, repeated head turn, heavy motion blur, ghost outline, flicker, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts, tiny invisible motion, static head, open beak, exposed teeth, roar, chewing, tongue, two nasal horns, missing nasal horn, missing brow horn, extra horn, growing horn, shrinking horn, bending horn, melting horn, antlers, Torosaurus frill holes, frill tear, frill wobble, frill rotation independent of skull, frill growth, detached frill, elongated neck, stretched throat, neck gap, neck fold opening, head-only hinge, extreme vertical neck, frontal turn, direction reversal, return to first pose, repeated bob, breathing loop, body sway, tail swing, foot lift, toe change, walking, running, dust cloud, other dinosaur, predator, attack, blood, dramatic lighting flash, background shimmer",
+        "clip": [
+          "2",
+          0
+        ]
+      }
+    },
+    "6": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "dino_atlas/motion_m2_i2v_recognition/triceratops-horridus-approved-source-v51.png"
+      }
+    },
+    "7": {
+      "class_type": "Wan22ImageToVideoLatent",
+      "inputs": {
+        "vae": [
+          "3",
+          0
+        ],
+        "width": 800,
+        "height": 448,
+        "length": 81,
+        "batch_size": 1,
+        "start_image": [
+          "6",
+          0
+        ]
+      }
+    },
+    "8": {
+      "class_type": "ModelSamplingSD3",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "shift": 8
+      }
+    },
+    "9": {
+      "class_type": "KSampler",
+      "inputs": {
+        "seed": 260806303,
+        "steps": 24,
+        "cfg": 6,
+        "sampler_name": "uni_pc",
+        "scheduler": "simple",
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "5",
+          0
+        ],
+        "latent_image": [
+          "7",
+          0
+        ],
+        "denoise": 1,
+        "model": [
+          "8",
+          0
+        ]
+      }
+    },
+    "10": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "9",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "11": {
+      "class_type": "CreateVideo",
+      "inputs": {
+        "images": [
+          "10",
+          0
+        ],
+        "fps": 16,
+        "bit_depth": 8
+      }
+    },
+    "12": {
+      "class_type": "SaveVideo",
+      "inputs": {
+        "video": [
+          "11",
+          0
+        ],
+        "filename_prefix": "dino_atlas/motion_m2_i2v_recognition/triceratops-horridus-strong-head-lift-wan22-s260806303-f81",
+        "format": "mp4",
+        "codec": "h264"
+      }
+    }
+  },
+  "history": {
+    "prompt": [
+      25,
+      "235a6f5d-0c25-425b-8582-67948b5ce86f",
+      {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+            "type": "wan",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "wan2.2_vae.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "Scientific educational image-to-video for ages five to fourteen. One fixed wide camera and one continuous five-second forward-only shot. Preserve the approved first frame and exactly one complete Triceratops horridus with one solid attached frill, two long brow horns, one shorter nasal horn, a closed beak, four planted legs and feet, and one complete tail. Make one clear alert head raise that is easy to see: the animal begins with its head low, then steadily raises the entire skull, all three horns, frill, short muscular neck, throat, shoulder base, and upper chest together by twelve to fifteen degrees. This is one smooth rising arc across the whole clip. The final head and horn tips are visibly higher than at the start and remain at the high pose; there is no return and no second nod. Keep the frill rigidly attached to the skull and distribute the lift through the broad neck root into the shoulders. Preserve horn count, horn length, frill edge, neck thickness, closed beak, eye, skin markings, torso, tail, four feet, ground contact, background, camera, exposure, and crop. The torso does not walk or translate. No reverse, loop, roar, cut, pan, zoom, or background motion.",
+            "clip": [
+              "2",
+              0
+            ]
+          }
+        },
+        "5": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, rigid single-hinge neck, paper-doll rotation, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, body translation, body morphing, identity drift, background replacement, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong loop, repeated nod, repeated head turn, heavy motion blur, ghost outline, flicker, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts, tiny invisible motion, static head, open beak, exposed teeth, roar, chewing, tongue, two nasal horns, missing nasal horn, missing brow horn, extra horn, growing horn, shrinking horn, bending horn, melting horn, antlers, Torosaurus frill holes, frill tear, frill wobble, frill rotation independent of skull, frill growth, detached frill, elongated neck, stretched throat, neck gap, neck fold opening, head-only hinge, extreme vertical neck, frontal turn, direction reversal, return to first pose, repeated bob, breathing loop, body sway, tail swing, foot lift, toe change, walking, running, dust cloud, other dinosaur, predator, attack, blood, dramatic lighting flash, background shimmer",
+            "clip": [
+              "2",
+              0
+            ]
+          }
+        },
+        "6": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "dino_atlas/motion_m2_i2v_recognition/triceratops-horridus-approved-source-v51.png"
+          }
+        },
+        "7": {
+          "class_type": "Wan22ImageToVideoLatent",
+          "inputs": {
+            "vae": [
+              "3",
+              0
+            ],
+            "width": 800,
+            "height": 448,
+            "length": 81,
+            "batch_size": 1,
+            "start_image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "8": {
+          "class_type": "ModelSamplingSD3",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "shift": 8.0
+          }
+        },
+        "9": {
+          "class_type": "KSampler",
+          "inputs": {
+            "seed": 260806303,
+            "steps": 24,
+            "cfg": 6.0,
+            "sampler_name": "uni_pc",
+            "scheduler": "simple",
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "5",
+              0
+            ],
+            "latent_image": [
+              "7",
+              0
+            ],
+            "denoise": 1.0,
+            "model": [
+              "8",
+              0
+            ]
+          }
+        },
+        "10": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "9",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "11": {
+          "class_type": "CreateVideo",
+          "inputs": {
+            "images": [
+              "10",
+              0
+            ],
+            "fps": 16.0,
+            "bit_depth": 8
+          }
+        },
+        "12": {
+          "class_type": "SaveVideo",
+          "inputs": {
+            "video": [
+              "11",
+              0
+            ],
+            "filename_prefix": "dino_atlas/motion_m2_i2v_recognition/triceratops-horridus-strong-head-lift-wan22-s260806303-f81",
+            "format": "mp4",
+            "codec": "h264"
+          }
+        }
+      },
+      {
+        "client_id": "dino-atlas-motion-m2-i2v-long",
+        "create_time": 1786008325550
+      },
+      [
+        "12"
+      ]
+    ],
+    "outputs": {
+      "12": {
+        "images": [
+          {
+            "filename": "triceratops-horridus-strong-head-lift-wan22-s260806303-f81_00001_.mp4",
+            "subfolder": "dino_atlas\\motion_m2_i2v_recognition",
+            "type": "output"
+          }
+        ],
+        "animated": [
+          true
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "235a6f5d-0c25-425b-8582-67948b5ce86f",
+            "timestamp": 1786008325550
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "1",
+              "2",
+              "3",
+              "6",
+              "7",
+              "8"
+            ],
+            "prompt_id": "235a6f5d-0c25-425b-8582-67948b5ce86f",
+            "timestamp": 1786008325556
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "235a6f5d-0c25-425b-8582-67948b5ce86f",
+            "timestamp": 1786008398776
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "12": {
+        "node_id": "12",
+        "display_node": "12",
+        "parent_node": null,
+        "real_node_id": "12"
+      }
+    }
+  }
+}

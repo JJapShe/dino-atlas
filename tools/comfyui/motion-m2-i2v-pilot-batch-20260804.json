@@ -1283,6 +1283,142 @@
         "galleryEligible": false,
         "anatomyEligible": false
       }
+    },
+    "triceratops-horridus-dust-exhale-wan22-safe-overlay-i2v-m2-v1": {
+      "taxonId": "triceratops-horridus",
+      "sourcePoster": "assets/dinosaurs/triceratops-horridus-imagegen-v51-source-candidate.png",
+      "sourcePosterSha256": "f928919b0ee731fa7b560d33dd1146b87130ecfa9ac73561fe97364b1978ed49",
+      "sourcePosterBytes": 2674628,
+      "comfyInput": "dino_atlas/motion_m2_i2v_recognition/triceratops-horridus-approved-source-v51.png",
+      "sourceLicense": "project-owned generated still",
+      "projectAsset": "assets/motion/m2/triceratops-horridus-dust-exhale-wan22-safe-overlay-i2v-m2-v1.mp4",
+      "file": {
+        "sha256": "17619c5ac98728f38dfa717ce38726f30104baaeb7131ebbf145680984adbc91",
+        "bytes": 1684435,
+        "width": 800,
+        "height": 448,
+        "durationSeconds": 5.0625,
+        "fps": 16,
+        "frameCount": 81,
+        "codec": "h264",
+        "pixelFormat": "yuv420p",
+        "container": "mp4",
+        "audio": false
+      },
+      "identityCuesPreserved": [
+        "exactly one complete Triceratops horridus",
+        "one skull continuously attached through a short muscular neck",
+        "one solid frill attached to the skull",
+        "exactly two long brow horns",
+        "exactly one shorter nasal horn",
+        "one closed hooked beak",
+        "exactly two forelimbs and two hind limbs",
+        "four stable planted feet",
+        "one complete continuous tail",
+        "stable pebbly skin markings and full-body left-facing profile"
+      ],
+      "motion": "treat the complete clean 81-frame one-way I2V base as visually fixed because no head-lift amplitude passed, then composite one readable deterministic dust-exhale plume only in empty air ahead of the nostril without changing dinosaur pixels or reversing time",
+      "workflow": {
+        "candidateId": "triceratops-horridus-calm-head-lift-f81-v1",
+        "template": "tools/comfyui/workflow_templates/dino_wan22_ti2v_5b_i2v_long_api.json",
+        "templateSha256": "eba1778a281c9d81c7f62d8ac2e75aa73573b8845b2fdf60f0d6ca48750404e2",
+        "runner": "tools/comfyui/scripts/run_motion_m2_i2v_long_candidate.py",
+        "runnerSha256": "7c861c8733644959d5d9b7504f058f7f92875cfd944e36f5217baa8e2efd7970",
+        "generationRunnerSha256": "7c861c8733644959d5d9b7504f058f7f92875cfd944e36f5217baa8e2efd7970",
+        "specGenerationSha256": "88b80b69294a9181338d57cb54ec925f839493029041620eacb080eb516629aa",
+        "runRecord": "tools/comfyui/outputs/motion-m2-i2v-triceratops-head-lift-s260806301-f81-v1-run.json",
+        "runRecordSha256": "d5dfa73c9c434b41500635abdcd9b47dcd52cd01a6d867634704ac8ef8c7cb28",
+        "promptId": "82808315-ed1e-4702-b372-05f16d4eb6ef",
+        "seed": 260806301,
+        "width": 800,
+        "height": 448,
+        "frames": 81,
+        "fps": 16,
+        "steps": 20,
+        "cfg": 5,
+        "sampler": "uni_pc",
+        "scheduler": "simple",
+        "shift": 8,
+        "denoise": 1,
+        "positivePrompt": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved still as the exact first-frame Triceratops horridus identity, anatomy, left-facing profile, full-body composition, forest, ground, lighting, palette, skin pattern, and crop reference. Exactly one complete Triceratops remains planted in the source coordinates, with one solid skull-attached frill, exactly two long brow horns, exactly one shorter nasal horn, one closed hooked beak, exactly two forelimbs, exactly two hind limbs and four stable weight-bearing feet, and one complete continuous tail. After a brief still opening, the animal performs one calm continuous head lift only: the complete skull, all three horns, solid frill, short neck, throat, shoulder base, and upper chest rise together by only three to four degrees in one forward direction, with no hinge, gap, stretching, or isolated frill rotation. The motion starts slowly, continues smoothly, and ends in the slightly higher attentive pose for the final second. The beak stays closed. Horn count, horn length, frill outline, neck thickness, eye position, and skin markings stay constant. The torso, pelvis, complete tail, all four planted feet, every readable toe, and the background remain fixed at their source coordinates. No return movement, no reverse, no second nod, no looping, no walking, no roar. Keep anatomy crisp, camera fixed, exposure stable, and the final frame a natural continuation rather than a duplicate of the first frame.",
+        "negativePrompt": "severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, rigid single-hinge neck, paper-doll rotation, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, body translation, body morphing, identity drift, background replacement, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong loop, repeated nod, repeated head turn, heavy motion blur, ghost outline, flicker, text, watermark, logo, signature, gore, exposed wound, low quality, compression artifacts, open beak, exposed teeth, roar, chewing, tongue, two nasal horns, missing nasal horn, missing brow horn, extra horn, growing horn, shrinking horn, bending horn, melting horn, antlers, Torosaurus frill holes, frill tear, frill wobble, frill rotation independent of skull, frill growth, detached frill, elongated neck, stretched throat, neck fold opening, head-only hinge, large head swing, frontal turn, direction reversal, repeated bob, breathing loop, body sway, tail swing, foot lift, toe change, walking, running, dust cloud, other dinosaur, predator, attack, blood, dramatic lighting flash, background shimmer"
+      },
+      "postProcess": {
+        "type": "full-range-deterministic-safe-overlay",
+        "acceptedFrameRange": [0, 80],
+        "overlayScript": "tools/comfyui/scripts/build_motion_triceratops_safe_exhale_overlay.ps1",
+        "overlayScriptSha256": "b97b85fd1370e9fe3345ca6f469fbac28b7a6c326b25f9abab4217a584c7cda2",
+        "overlayScriptBytes": 6426,
+        "ffmpegFilter": "[0:v][1:v]overlay=0:0:shortest=1:format=auto,format=yuv420p",
+        "ffmpegCommand": "ffmpeg -hide_banner -loglevel error -y -i {rawOutput} -framerate 16 -i {overlayFrames}/frame-%03d.png -filter_complex \"[0:v][1:v]overlay=0:0:shortest=1:format=auto,format=yuv420p\" -an -c:v libx264 -crf 18 -preset slow -movflags +faststart {projectAsset}",
+        "rawOutput": {
+          "path": "output/dino_atlas/motion_m2_i2v_recognition/triceratops-horridus-calm-head-lift-wan22-s260806301-f81_00001_.mp4",
+          "sha256": "b2fac4a5ff9188acbb3c6a793f1a9b66f50635c85a486fda7ad7089f388fe522",
+          "bytes": 1154423,
+          "reviewCopy": "tools/comfyui/outputs/triceratops-horridus-calm-head-lift-wan22-s260806301-f81-v1-candidate.mp4",
+          "stream": {
+            "width": 800,
+            "height": 448,
+            "durationSeconds": 5.0625,
+            "fps": 16,
+            "frameCount": 81,
+            "codec": "h264",
+            "pixelFormat": "yuv420p",
+            "container": "mp4",
+            "audio": false
+          }
+        },
+        "effect": {
+          "subject": "nostril-dust-exhale",
+          "count": 1,
+          "activeFrameRange": [10, 73],
+          "activeSeconds": [0.625, 4.5625],
+          "protectedEmptyAirBounds": [0, 200, 71, 280],
+          "trajectory": {
+            "start": [67, 258],
+            "end": [5, 219],
+            "direction": "left-and-up-forward-only"
+          },
+          "intersectsDinosaur": false,
+          "intersectsGround": false,
+          "reverseMotion": false,
+          "returnMotion": false,
+          "loop": false,
+          "autoplay": false
+        }
+      },
+      "qa": {
+        "manualFramesReviewed": "all original-size final frames 0-80",
+        "manualFrameCountReviewed": 81,
+        "frameIndexRange": [0, 80],
+        "checkpointFrames": [0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80],
+        "sourceAcceptedFrameRange": [0, 80],
+        "focusedCrops": ["skull-frill-three-horns", "neck-attachment", "four-planted-feet", "tail", "nostril-empty-air-effect-boundary", "background"],
+        "contactSheetPolicy": "All 81 original-size final frames were reviewed independently; contact sheets were used only for navigation and effect readability checks.",
+        "knownLimitations": [
+          "The native head lift is anatomy-stable but intentionally subtle; the pure I2V output is not published on its own because it failed the requested visible-amplitude gate.",
+          "The dust-exhale plume is a deterministic educational visibility aid and not fossil evidence for breath color, volume, or a specific respiratory response.",
+          "Independent review found the dust-exhale readable at original size but subtle when the card is heavily reduced.",
+          "The overlay is confined to empty air ahead of the nostril; normal H.264 re-encoding can produce low-level differences outside the effect box."
+        ],
+        "visualStatus": "pass-independent-81-of-81"
+      },
+      "review": {
+        "sourceIntegrity": { "status": "supported", "note": "The ComfyUI input copy and catalog poster match the approved project-owned Triceratops still SHA-256 exactly." },
+        "workflowIntegrity": { "status": "supported", "note": "The native workflow, exact prompts, seed, successful run record, full-range raw-output hash, deterministic overlay script, and final file hash are pinned." },
+        "frameAnatomy": { "status": "supported", "note": "Independent 81/81-frame review retains one attached Triceratops head and neck, one solid frill, two brow horns, one nasal horn, four planted feet, and one continuous tail." },
+        "identityContinuity": { "status": "supported", "note": "The hooked beak, three-horn count, solid frill edge, short neck, pebbly skin pattern, torso, and tail remain readable throughout." },
+        "limbCountContinuity": { "status": "supported", "note": "All final frames retain two forelimbs, two hind limbs, four planted feet, stable toes, and one complete tail without duplication or loss." },
+        "motionPlausibility": { "status": "supported", "note": "The base dinosaur is treated as visually fixed because no head-lift amplitude passed; one readable dust-exhale plume travels once through empty air without modifying or touching dinosaur anatomy." },
+        "backgroundIntegrity": { "status": "supported", "note": "The deterministic effect stays inside empty air at x=0-70 and y=207-272, at least about 8 px ahead of the muzzle, leaving dinosaur anatomy, ground contact, forest, lighting, and crop untouched apart from normal re-encoding." },
+        "cameraIntegrity": { "status": "supported", "note": "All 81 frames keep the original fixed camera and full-body crop with no pan, zoom, cut, or scene transition." },
+        "temporalIntegrity": { "status": "supported", "note": "The complete native 0-80 order and PTS are retained; the scheduled f10-73 overlay has an independently readable core at f13-68 whose centroid travels from (64.92,256.12) to (13.83,224.42) without reverse, return, or loop." },
+        "responsive": { "status": "supported", "note": "The shared motion renderer keeps click-only muted non-looping playback, one-active-video cross-pause, view-exit pause, and responsive card containment." },
+        "publication": { "status": "published", "note": "Independent 81/81-frame review accepted only the dust-exhale safe overlay and found no defect frame; the failed head-lift amplitude is excluded from the public claim, and representative, gallery, anatomy, audio, and autoplay promotion remain prohibited." },
+        "representativeEligible": false,
+        "galleryEligible": false,
+        "anatomyEligible": false
+      }
     }
   }
 }

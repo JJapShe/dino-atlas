@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-08-06T18:30:00+09:00",
+  "status": "published",
+  "policy": {
+    "tier": "M0",
+    "scope": "environment-only ambient motion over a fixed approved still",
+    "sceneRoles": ["solo", "ecology-activity", "interspecies-interaction", "environment-event"],
+    "representativePromotion": "prohibited",
+    "galleryPromotion": "prohibited",
+    "autoplay": "prohibited",
+    "biologicalMotion": "prohibited in M0",
+    "publicRequires": ["motion", "responsive", "publication"]
+  },
+  "copyrightSafety": {
+    "status": "project-owned derivative motion assets",
+    "note": "Both samples derive only from their named project-owned generated stills and deterministic locally composited abstract weather or water layers. No external footage, artwork, logos, or audio are used."
+  },
+  "workflow": {
+    "generator": "local FFmpeg compositing",
+    "generatorVersion": "FFmpeg 8.1.1",
+    "seed": "not applicable; deterministic filter graphs",
+    "script": "tools/comfyui/scripts/build_motion_safe_m0_batch_20260806.ps1",
+    "scriptSha256": "b01ee7148042d4866a2d402a8d367ced3559085c7e0034837611e5fdc7a07638",
+    "verifier": "tools/comfyui/scripts/verify_motion_safe_m0_batch.mjs",
+    "verifierSha256": "ac6df84dcf48364f32aae3399cdd42201a340dac1d78112e7a4aab547956a034",
+    "targetContainer": "MP4",
+    "targetVideoCodec": "H.264",
+    "targetPixelFormat": "yuv420p",
+    "targetDurationSeconds": 5,
+    "targetFps": 24,
+    "targetDimensions": { "width": 960, "height": 640 },
+    "audio": "none",
+    "temporalRule": "Single forward translation from frame 0 through frame 119; no reverse segment, ping-pong return, loop, crossfade back to frame 0, or autoplay.",
+    "motionQaThresholds": {
+      "significantChannelDifferenceFloor": 3,
+      "significantChangeEnergyInsideEffectZoneMinPercent": 95,
+      "protectedRegionMeanMax": 0.3,
+      "protectedRegionP99Max": 3,
+      "protectedRegionMaxMax": 13
+    },
+    "commands": {
+      "mononykus-olecranus-distant-rainsquall-environment-m0-v1": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/comfyui/scripts/build_motion_safe_m0_batch_20260806.ps1 -Sample mononykus-rainsquall",
+      "therizinosaurus-cheloniformis-tarbosaurus-watergap-ripples-interaction-m0-v1": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/comfyui/scripts/build_motion_safe_m0_batch_20260806.ps1 -Sample therizinosaurus-tarbosaurus-ripples"
+    },
+    "verificationCommand": "node tools/comfyui/scripts/verify_motion_safe_m0_batch.mjs"
+  },
+  "samples": {
+    "mononykus-olecranus-distant-rainsquall-environment-m0-v1": {
+      "taxonId": "mononykus-olecranus",
+      "sceneRole": "environment-event",
+      "sourcePoster": "assets/dinosaurs/mononykus-olecranus-rainsquall-alert-ecology-imagegen-v3.png",
+      "sourcePosterFile": {
+        "sha256": "4f8182f86e30860032e829512d0875f2fd5d6c1c25a20ab363579c8cfa2c05fe",
+        "bytes": 2528341,
+        "width": 1448,
+        "height": 1086
+      },
+      "sourceMetadataRecord": "tools/comfyui/gallery-slot-visual-decisions.json#/taxa/mononykus-olecranus/6",
+      "sourceLicense": "project-owned generated still",
+      "projectAsset": "assets/motion/mononykus-olecranus-distant-rainsquall-environment-m0-v1.mp4",
+      "motionClass": "environment-only",
+      "motionLayer": "A soft gray-blue distant rain curtain translates continuously rightward and slightly downward above the horizon while the complete Mononykus, shoreline, and foreground remain fixed.",
+      "prompt": "M0 environment-event test for ages five to fourteen: retain the complete approved Mononykus rain-squall poster at its original 4:3 foreground aspect ratio; preserve the animal from snout to tail tip, both extremely short one-clawed forelimbs, both hind feet, shoreline, foreground plants, camera, crop, and palette without any biological motion; animate only one restrained distant rain-curtain layer under the far cloud bank and above the horizon; move that layer continuously rightward and slightly downward for five seconds; prohibit head, neck, tail, limb, eye, feather, water, camera, zoom, lightning, flash, debris, reverse motion, ping-pong return, loop, or fade back to the first frame.",
+      "evidenceBoundary": "The approved poster depicts a reconstructed rain-squall setting. The exact storm track, rain intensity, wind direction, and this individual's weather response are reconstruction choices, not direct behavioral evidence.",
+      "file": {
+        "sha256": "d002ad6ae3a0b053f0d4349aa1b059e9fb16e6048f296b53dbbba84698e54ec4",
+        "bytes": 290324,
+        "width": 960,
+        "height": 640,
+        "durationSeconds": 5,
+        "fps": 24,
+        "codec": "h264"
+      },
+      "motionQa": {
+        "comparisonFrames": [0, 119],
+        "effectZone": { "x": [100, 430], "y": [50, 225] },
+        "protectedExclusionZone": { "x": [90, 440], "y": [40, 235] },
+        "protectedRegionDifference": { "mean": 0.05868, "p99": 2, "max": 6 },
+        "effectRegionDifference": { "mean": 1.47473, "significantChannelPercent": 12.0404 },
+        "significantChangeEnergyInsideEffectZonePercent": 99.70567,
+        "visualStatus": "pass",
+        "visualCheckpointFrames": [0, 60, 119],
+        "note": "The translated rain curtain remains in the upper distant background. The animal and foreground are outside the effect exclusion rectangle and remain pixel-stable within the recorded H.264 tolerance."
+      },
+      "review": {
+        "anatomy": { "status": "poster-inherited", "note": "The approved slot-6 original-size anatomy and count verdict is inherited; motion adds no Mononykus anatomy evidence." },
+        "motion": { "status": "supported", "note": "The full animal and foreground remain fixed while 99.71% of significant change energy stays inside the distant rain zone." },
+        "responsive": { "status": "supported", "note": "The sample uses the shared click-only, muted, playsinline, non-looping motion renderer with a project poster fallback and one-video-at-a-time playback." },
+        "publication": { "status": "published", "note": "The M0 environment-event file passed stream, locality, protected-pixel, provenance, and forward-only temporal gates; representative and gallery promotion remain prohibited." },
+        "representativeEligible": false,
+        "galleryEligible": false
+      }
+    },
+    "therizinosaurus-cheloniformis-tarbosaurus-watergap-ripples-interaction-m0-v1": {
+      "taxonId": "therizinosaurus-cheloniformis",
+      "companionTaxonIds": ["tarbosaurus-bataar"],
+      "sceneRole": "interspecies-interaction",
+      "sourcePoster": "assets/dinosaurs/therizinosaurus-cheloniformis-bilateral-triclaw-tarbosaurus-watergap-ecology-imagegen-v4.png",
+      "sourcePosterFile": {
+        "sha256": "45c93ddcfc132f833eb352ca9724c6a2248cfdbf316c5491e36a82d3a1349653",
+        "bytes": 2895501,
+        "width": 1536,
+        "height": 1024
+      },
+      "sourceMetadataRecord": "tools/comfyui/gallery-slot-visual-decisions.json#/taxa/therizinosaurus-cheloniformis/5",
+      "sourceLicense": "project-owned generated still",
+      "projectAsset": "assets/motion/therizinosaurus-cheloniformis-tarbosaurus-watergap-ripples-interaction-m0-v1.mp4",
+      "motionClass": "environment-only",
+      "motionLayer": "Three restrained horizontal water-glint lines translate continuously rightward through the open water gap between the two fixed, spatially separated animals.",
+      "prompt": "M0 non-contact interspecies scene for ages five to fourteen: preserve every source pixel of the complete approved Therizinosaurus and distant Tarbosaurus, including both Therizinosaurus hands with exactly three readable long claws each, both legs, feet, tail, the entire distant Tarbosaurus silhouette, all plants, shorelines, camera, crop, and palette; animate only a narrow patch of small water ripples in the open water gap above the foreground plants and below the distant animal; translate the ripple glints steadily rightward for five seconds; prohibit head, neck, jaw, claw, leg, tail, feather, predator, prey, attack, chase, contact, splash, camera, zoom, reverse motion, ping-pong return, loop, or fade back to the first frame.",
+      "evidenceBoundary": "Therizinosaurus and Tarbosaurus occur in the Late Cretaceous Nemegt context, but this specific water-gap encounter, spacing, gaze, and any defensive interpretation are reconstruction hypotheses. The clip does not depict or assert attack, pursuit, feeding, or physical contact.",
+      "file": {
+        "sha256": "b1f924126f63f2dcb7ab893a413e6f684f40fefef48575a81bf4369ffb1d09f3",
+        "bytes": 287158,
+        "width": 960,
+        "height": 640,
+        "durationSeconds": 5,
+        "fps": 24,
+        "codec": "h264"
+      },
+      "motionQa": {
+        "comparisonFrames": [0, 119],
+        "effectZone": { "x": [160, 345], "y": [300, 350] },
+        "protectedExclusionZone": { "x": [150, 350], "y": [295, 355] },
+        "protectedRegionDifference": { "mean": 0.03545, "p99": 2, "max": 5 },
+        "effectRegionDifference": { "mean": 1.8084, "significantChannelPercent": 17.2 },
+        "significantChangeEnergyInsideEffectZonePercent": 99.44037,
+        "visualStatus": "pass",
+        "visualCheckpointFrames": [0, 60, 119],
+        "note": "The ripple strip remains in open water above the foreground plants and below the animals. Both dinosaurs and all diagnostic appendages remain outside the effect exclusion rectangle and pixel-stable within the recorded H.264 tolerance."
+      },
+      "review": {
+        "anatomy": { "status": "poster-inherited", "note": "The approved slot-5 bilateral 3+3 claw and two-animal spatial-separation verdict is inherited; motion adds no identity or coexistence evidence." },
+        "motion": { "status": "supported", "note": "Both animals remain fixed while 99.44% of significant change energy stays inside the narrow open-water ripple zone." },
+        "responsive": { "status": "supported", "note": "The sample uses the shared click-only, muted, playsinline, non-looping motion renderer with a project poster fallback and one-video-at-a-time playback." },
+        "publication": { "status": "published", "note": "The M0 non-contact interaction file passed stream, locality, protected-pixel, provenance, and forward-only temporal gates; representative and gallery promotion remain prohibited." },
+        "representativeEligible": false,
+        "galleryEligible": false
+      }
+    }
+  }
+}

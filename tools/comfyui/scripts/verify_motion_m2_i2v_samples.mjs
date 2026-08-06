@@ -488,6 +488,7 @@ function checkPostProcess(postProcess, sample, owner) {
     "safe-prefix-reverse-return",
     "safe-prefix-slow-hold-reverse-return",
     "safe-prefix-double-reverse-return",
+    "full-range-deterministic-safe-overlay",
   ]);
   if (!allowedTypes.has(postProcess.type)) {
     fail(`${owner}: unsupported postProcess.type`);
@@ -711,6 +712,45 @@ function checkPostProcess(postProcess, sample, owner) {
         fail(`${owner}: trimEndFrameExclusive must remove at least one duplicate boundary frame`);
       }
     }
+  } else if (postProcess.type === "full-range-deterministic-safe-overlay") {
+    if (!validRange || acceptedEnd !== rawOutput.stream?.frameCount - 1) {
+      fail(`${owner}: deterministic safe overlay must preserve the complete raw frame range`);
+    }
+    expectedFinalFrames = rawOutput.stream?.frameCount;
+    expectedFilter = "[0:v][1:v]overlay=0:0:shortest=1:format=auto,format=yuv420p";
+
+    if (!isNonEmptyString(postProcess.overlayScript)
+      || !/\.ps1$/i.test(postProcess.overlayScript)
+      || !isSha256(postProcess.overlayScriptSha256)
+      || !Number.isInteger(postProcess.overlayScriptBytes)
+      || postProcess.overlayScriptBytes <= 0) {
+      fail(`${owner}: deterministic safe-overlay script record is incomplete`);
+    } else {
+      checkHashedFile(
+        postProcess.overlayScript,
+        postProcess.overlayScriptSha256,
+        postProcess.overlayScriptBytes,
+        `${owner}: deterministic safe-overlay script`,
+      );
+    }
+
+    const effect = postProcess.effect;
+    const activeFrames = effect?.activeFrameRange;
+    const bounds = effect?.protectedEmptyAirBounds;
+    const validActiveFrames = Array.isArray(activeFrames) && activeFrames.length === 2
+      && activeFrames.every(Number.isInteger) && activeFrames[0] >= 0
+      && activeFrames[0] < activeFrames[1] && activeFrames[1] < rawOutput.stream?.frameCount;
+    const validBounds = Array.isArray(bounds) && bounds.length === 4
+      && bounds.every(Number.isInteger) && bounds[0] >= 0 && bounds[1] >= 0
+      && bounds[2] > bounds[0] && bounds[3] > bounds[1]
+      && bounds[2] < rawOutput.stream?.width && bounds[3] < rawOutput.stream?.height;
+    if (!effect || effect.subject !== "nostril-dust-exhale"
+      || effect.count !== 1 || !validActiveFrames || !validBounds
+      || effect.intersectsDinosaur !== false || effect.intersectsGround !== false
+      || effect.reverseMotion !== false || effect.returnMotion !== false
+      || effect.loop !== false || effect.autoplay !== false) {
+      fail(`${owner}: deterministic safe-overlay effect boundary is incomplete or unsafe`);
+    }
   }
   if (!isNonEmptyString(postProcess.ffmpegFilter) || postProcess.ffmpegFilter !== expectedFilter) {
     fail(`${owner}: ffmpegFilter must exactly encode the declared safe-prefix post-process`);
@@ -719,6 +759,11 @@ function checkPostProcess(postProcess, sample, owner) {
   if (postProcess.type === "safe-prefix-slow-forward"
     && /\b(?:reverse|tpad|loop)\b/i.test(command)) {
     fail(`${owner}: safe-prefix-slow-forward ffmpegCommand must not reverse, hold, or loop frames`);
+  }
+  if (postProcess.type === "full-range-deterministic-safe-overlay"
+    && (!hasPortablePlaceholder(command, "overlayFrames")
+      || /\b(?:reverse|tpad|loop|trim)\b/i.test(command))) {
+    fail(`${owner}: deterministic safe-overlay ffmpegCommand must use overlayFrames and preserve the forward full range`);
   }
   if (!isNonEmptyString(command)
     || !hasPortablePlaceholder(command, "rawOutput")
@@ -1217,7 +1262,7 @@ for (const sample of samples) {
   }
   const expectedPosterPrefix = `assets/dinosaurs/${sample.taxonId}-`;
   if (!sample.poster?.startsWith(expectedPosterPrefix)
-    || !/-v[0-9]+\.png$/i.test(sample.poster)
+    || !/-v[0-9]+(?:-source-candidate)?\.png$/i.test(sample.poster)
     || !/^assets\/dinosaurs\/[a-z0-9][a-z0-9.-]*\.png$/i.test(sample.poster)
     || sample.poster !== record.sourcePoster) {
     fail(`${owner}: source poster must be the same species-prefixed, versioned project PNG in both records`);

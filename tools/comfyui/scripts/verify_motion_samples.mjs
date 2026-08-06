@@ -12,6 +12,7 @@ const METADATA_RELATIVE_PATHS = [
   "tools/comfyui/motion-pilot-batch-20260803.json",
   "tools/comfyui/motion-scene-role-batch-20260803.json",
   "tools/comfyui/motion-environment-event-batch-20260806.json",
+  "tools/comfyui/motion-safe-m0-batch-20260806.json",
 ];
 const METADATA_PATHS = METADATA_RELATIVE_PATHS.map((relativePath) => path.join(ROOT, ...relativePath.split("/")));
 const EXPECTED_IDS = [
@@ -22,6 +23,8 @@ const EXPECTED_IDS = [
   "maiasaura-peeblesorum-nesting-ground-pollen-ecology-m0-v1",
   "velociraptor-protoceratops-dustfront-interaction-m0-v1",
   "yutyrannus-huali-volcanic-plume-ecology-m0-v1",
+  "mononykus-olecranus-distant-rainsquall-environment-m0-v1",
+  "therizinosaurus-cheloniformis-tarbosaurus-watergap-ripples-interaction-m0-v1",
 ];
 const ALLOWED_SCENE_ROLES = new Set(["solo", "ecology-activity", "interspecies-interaction", "environment-event"]);
 const errors = [];
