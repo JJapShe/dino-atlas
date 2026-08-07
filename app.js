@@ -26636,13 +26636,23 @@ function renderMapScopeControls() {
     Object.fromEntries(["all", ...activeEraIds].map((scope) => [scope, 0])),
   );
 
+  if (
+    state.map.scope !== "all" &&
+    (counts[state.map.scope] ?? 0) === 0 &&
+    filtered.length > 0
+  ) {
+    state.map.scope = filtered[0].era;
+  }
+
   $$("[data-map-scope]").forEach((button) => {
     const scope = button.dataset.mapScope;
     const available = activeScopes.has(scope);
+    const enabled = available && (scope === "all" || (counts[scope] ?? 0) > 0);
     const active = state.map.scope === scope;
     button.hidden = !available;
-    button.disabled = !available;
+    button.disabled = !enabled;
     button.setAttribute("aria-hidden", String(!available));
+    button.setAttribute("aria-disabled", String(!enabled));
     button.classList.toggle("active", active);
     button.setAttribute("aria-pressed", String(active));
     const count = button.querySelector(".map-era-count");

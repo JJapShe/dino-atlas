@@ -1153,6 +1153,16 @@ body[data-active-view="atlas"] .map-panel.mode-timeline .map-era-controls {
   background: rgba(255, 255, 255, 0.06);
 }
 
+.map-era-controls button:disabled {
+  opacity: 0.46;
+  cursor: not-allowed;
+}
+
+.map-era-controls button:disabled:hover {
+  border-color: var(--line);
+  background: rgba(255, 255, 255, 0.03);
+}
+
 .map-era-controls button.active {
   border-color: rgba(85, 214, 190, 0.64);
   background: rgba(85, 214, 190, 0.12);
@@ -4678,7 +4688,9 @@ body.lightbox-open {
   }
 
   .atlas-realm-controls button,
-  .map-mode-controls button {
+  .map-mode-controls button,
+  .map-era-controls button,
+  .classification-strip button {
     min-height: 42px;
   }
 
@@ -4932,8 +4944,8 @@ body.lightbox-open {
 
   body[data-active-view="atlas"] .map-toolbar {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: 40px 40px;
-    min-height: 96px;
+    grid-template-rows: 42px 40px;
+    min-height: 98px;
     gap: 4px;
     padding: 6px 8px;
   }
@@ -4945,7 +4957,7 @@ body.lightbox-open {
   }
 
   body[data-active-view="atlas"] .map-era-controls button {
-    min-height: 36px;
+    min-height: 42px;
     flex: 1 0 auto;
   }
 
