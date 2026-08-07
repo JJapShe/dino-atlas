@@ -40,6 +40,36 @@
   "taxa": [
     {
       "order": 1,
+      "id": "mammuthus-primigenius",
+      "koreanName": "털매머드",
+      "scientificName": "Mammuthus primigenius",
+      "knowledgeLevel": 1,
+      "signals": {
+        "familiarity": "iconic",
+        "bookExposure": "cross-channel-recurring",
+        "namingAccessibility": "immediate",
+        "catalogStatus": "major-icon"
+      },
+      "editorialCue": "두 개의 크게 굽은 엄니와 긴 털을 지닌 빙하기 매머드로 어린이 고생물 콘텐츠에서 즉시 알아보는 대표 포유류",
+      "rationale": "털매머드(Mammuthus primigenius)는 두 개의 크게 굽은 엄니와 긴 털을 지닌 빙하기 매머드로 어린이 고생물 콘텐츠에서 즉시 알아보는 대표 포유류이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
+    },
+    {
+      "order": 2,
+      "id": "smilodon-fatalis",
+      "koreanName": "스밀로돈",
+      "scientificName": "Smilodon fatalis",
+      "knowledgeLevel": 1,
+      "signals": {
+        "familiarity": "iconic",
+        "bookExposure": "cross-channel-recurring",
+        "namingAccessibility": "immediate",
+        "catalogStatus": "major-icon"
+      },
+      "editorialCue": "한 쌍의 긴 위턱 검치와 강건한 앞몸을 지닌 검치호로 빙하기 동물 도감에서 반복되는 대표 포유류",
+      "rationale": "스밀로돈(Smilodon fatalis)는 한 쌍의 긴 위턱 검치와 강건한 앞몸을 지닌 검치호로 빙하기 동물 도감에서 반복되는 대표 포유류이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
+    },
+    {
+      "order": 3,
       "id": "dimetrodon-grandis",
       "koreanName": "디메트로돈",
       "scientificName": "Dimetrodon grandis",
@@ -54,7 +84,7 @@
       "rationale": "디메트로돈(Dimetrodon grandis)는 등의 거대한 돛과 공룡이 아니라는 반전으로 어린이 고생물 콘텐츠에서 즉시 알아보는 대표 단궁류이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 2,
+      "order": 4,
       "id": "archaeopteryx-lithographica",
       "koreanName": "시조새",
       "scientificName": "Archaeopteryx lithographica",
@@ -69,7 +99,7 @@
       "rationale": "시조새(Archaeopteryx lithographica)는 공룡과 새의 경계를 설명하는 어린이 도감에서 시조새라는 이름으로 반복되는 대표 생물이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 3,
+      "order": 5,
       "id": "asteroceras-obtusum",
       "koreanName": "암모나이트(아스테로세라스)",
       "scientificName": "Asteroceras obtusum",
@@ -84,7 +114,7 @@
       "rationale": "암모나이트(아스테로세라스)(Asteroceras obtusum)는 나선형 껍데기의 암모나이트를 대표해 화석·바다생물 입문 자료에서 쉽게 만나는 생물이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 4,
+      "order": 6,
       "id": "passaloteuthis-bisulcata",
       "koreanName": "벨렘나이트(파살로테우티스)",
       "scientificName": "Passaloteuthis bisulcata",
@@ -99,7 +129,7 @@
       "rationale": "벨렘나이트(파살로테우티스)(Passaloteuthis bisulcata)는 총알 모양 로스트룸의 벨렘나이트를 설명하는 고대 바다생물 도감의 반복 생물이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 5,
+      "order": 7,
       "id": "lystrosaurus-murrayi",
       "koreanName": "리스트로사우루스",
       "scientificName": "Lystrosaurus murrayi",
@@ -114,7 +144,7 @@
       "rationale": "리스트로사우루스(Lystrosaurus murrayi)는 대멸종 뒤 살아남은 두 엄니 단궁류 이야기로 어린이 고생물 자료에서 자주 만나는 생물이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 6,
+      "order": 8,
       "id": "cynognathus-crateronotus",
       "koreanName": "키노그나투스",
       "scientificName": "Cynognathus crateronotus",
@@ -129,7 +159,7 @@
       "rationale": "키노그나투스(Cynognathus crateronotus)는 포유류에 가까워지는 단궁류와 이형치 진화를 설명할 때 반복되는 대표 키노돈트이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 7,
+      "order": 9,
       "id": "repenomamus-robustus",
       "koreanName": "레페노마무스",
       "scientificName": "Repenomamus robustus",
@@ -144,7 +174,7 @@
       "rationale": "레페노마무스(Repenomamus robustus)는 어린 프시타코사우루스 뼈가 든 위 내용물 화석으로 중생대 포유류 이야기에 반복 노출되는 생물이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 8,
+      "order": 10,
       "id": "herrerasaurus-ischigualastensis",
       "koreanName": "헤레라사우루스",
       "scientificName": "Herrerasaurus ischigualastensis",
@@ -159,7 +189,7 @@
       "rationale": "헤레라사우루스(Herrerasaurus ischigualastensis)는 초기 공룡 진화 단원에서 반복되는 종명이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 9,
+      "order": 11,
       "id": "coelophysis-bauri",
       "koreanName": "코엘로피시스",
       "scientificName": "Coelophysis bauri",
@@ -174,7 +204,7 @@
       "rationale": "코엘로피시스(Coelophysis bauri)는 초기 수각류와 무리 생활 도감 장면의 단골이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 10,
+      "order": 12,
       "id": "eodromaeus-murphi",
       "koreanName": "에오드로마이우스",
       "scientificName": "Eodromaeus murphi",
@@ -189,7 +219,7 @@
       "rationale": "에오드로마이우스(Eodromaeus murphi)는 초기 수각류 계통을 깊게 볼 때 등장하는 전문 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 11,
+      "order": 13,
       "id": "eoraptor-lunensis",
       "koreanName": "에오랍토르",
       "scientificName": "Eoraptor lunensis",
@@ -204,7 +234,7 @@
       "rationale": "에오랍토르(Eoraptor lunensis)는 최초기 공룡과 진화 이야기에서 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 12,
+      "order": 14,
       "id": "zupaysaurus-rougieri",
       "koreanName": "주파이사우루스",
       "scientificName": "Zupaysaurus rougieri",
@@ -219,7 +249,7 @@
       "rationale": "주파이사우루스(Zupaysaurus rougieri)는 남미 초기 수각류를 세분할 때 만나는 희소 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 13,
+      "order": 15,
       "id": "liliensternus-liliensterni",
       "koreanName": "릴리엔스테르누스",
       "scientificName": "Liliensternus liliensterni",
@@ -234,7 +264,7 @@
       "rationale": "릴리엔스테르누스(Liliensternus liliensterni)는 유럽 트라이아스기 수각류를 깊게 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 14,
+      "order": 16,
       "id": "plateosaurus-engelhardti",
       "koreanName": "플라테오사우루스",
       "scientificName": "Plateosaurus engelhardti",
@@ -249,7 +279,7 @@
       "rationale": "플라테오사우루스(Plateosaurus engelhardti)는 초기 용각형류와 긴목 공룡 기원 단원의 단골이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 15,
+      "order": 17,
       "id": "riojasaurus-incertus",
       "koreanName": "리오하사우루스",
       "scientificName": "Riojasaurus incertus",
@@ -264,7 +294,7 @@
       "rationale": "리오하사우루스(Riojasaurus incertus)는 남미 초기 용각형류 비교에서 주로 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 16,
+      "order": 18,
       "id": "lessemsaurus-sauropoides",
       "koreanName": "레셈사우루스",
       "scientificName": "Lessemsaurus sauropoides",
@@ -279,7 +309,7 @@
       "rationale": "레셈사우루스(Lessemsaurus sauropoides)는 레셈사우루스류를 별도로 다루는 전문 자료의 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 17,
+      "order": 19,
       "id": "chromogisaurus-novasi",
       "koreanName": "크로모기사우루스",
       "scientificName": "Chromogisaurus novasi",
@@ -294,7 +324,7 @@
       "rationale": "크로모기사우루스(Chromogisaurus novasi)는 기초 용각형류 계통을 세분할 때 등장하는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 18,
+      "order": 20,
       "id": "panphagia-protos",
       "koreanName": "판파기아",
       "scientificName": "Panphagia protos",
@@ -309,7 +339,7 @@
       "rationale": "판파기아(Panphagia protos)는 초기 용각형류 식성 진화를 다루는 전문 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 19,
+      "order": 21,
       "id": "buriolestes-schultzi",
       "koreanName": "부리올레스테스",
       "scientificName": "Buriolestes schultzi",
@@ -324,7 +354,7 @@
       "rationale": "부리올레스테스(Buriolestes schultzi)는 브라질 초기 용각형류 연구 맥락에서 알려진 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 20,
+      "order": 22,
       "id": "bagualosaurus-agudoensis",
       "koreanName": "바구알로사우루스",
       "scientificName": "Bagualosaurus agudoensis",
@@ -339,7 +369,7 @@
       "rationale": "바구알로사우루스(Bagualosaurus agudoensis)는 브라질 트라이아스기 용각형류를 깊게 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 21,
+      "order": 23,
       "id": "saturnalia-tupiniquim",
       "koreanName": "사투르날리아",
       "scientificName": "Saturnalia tupiniquim",
@@ -354,7 +384,7 @@
       "rationale": "사투르날리아(Saturnalia tupiniquim)는 초기 용각형류 분기 연구에서 주로 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 22,
+      "order": 24,
       "id": "thecodontosaurus-antiquus",
       "koreanName": "테코돈토사우루스",
       "scientificName": "Thecodontosaurus antiquus",
@@ -369,7 +399,7 @@
       "rationale": "테코돈토사우루스(Thecodontosaurus antiquus)는 유럽 초기 용각형류 역사에서 만나는 전문 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 23,
+      "order": 25,
       "id": "efraasia-minor",
       "koreanName": "에프라시아",
       "scientificName": "Efraasia minor",
@@ -384,7 +414,7 @@
       "rationale": "에프라시아(Efraasia minor)는 기초 용각형류 비교표에서 주로 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 24,
+      "order": 26,
       "id": "pisanosaurus-mertii",
       "koreanName": "피사노사우루스",
       "scientificName": "Pisanosaurus mertii",
@@ -399,7 +429,7 @@
       "rationale": "피사노사우루스(Pisanosaurus mertii)는 초기 조반류 후보 논의를 깊게 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 25,
+      "order": 27,
       "id": "heterodontosaurus-tucki",
       "koreanName": "헤테로돈토사우루스",
       "scientificName": "Heterodontosaurus tucki",
@@ -414,7 +444,7 @@
       "rationale": "헤테로돈토사우루스(Heterodontosaurus tucki)는 서로 다른 모양의 이빨이라는 특징으로 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 26,
+      "order": 28,
       "id": "allosaurus-fragilis",
       "koreanName": "알로사우루스",
       "scientificName": "Allosaurus fragilis",
@@ -429,7 +459,7 @@
       "rationale": "알로사우루스(Allosaurus fragilis)는 쥐라기 대표 대형 포식자로 즉시 연상되는 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 27,
+      "order": 29,
       "id": "marshosaurus-bicentesimus",
       "koreanName": "마르쇼사우루스",
       "scientificName": "Marshosaurus bicentesimus",
@@ -444,7 +474,7 @@
       "rationale": "마르쇼사우루스(Marshosaurus bicentesimus)는 모리슨층 수각류 목록을 세분할 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 28,
+      "order": 30,
       "id": "megalosaurus-bucklandii",
       "koreanName": "메갈로사우루스",
       "scientificName": "Megalosaurus bucklandii",
@@ -459,7 +489,7 @@
       "rationale": "메갈로사우루스(Megalosaurus bucklandii)는 최초 명명 공룡 이야기와 고전 도감의 단골이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 29,
+      "order": 31,
       "id": "ceratosaurus-nasicornis",
       "koreanName": "케라토사우루스",
       "scientificName": "Ceratosaurus nasicornis",
@@ -474,7 +504,7 @@
       "rationale": "케라토사우루스(Ceratosaurus nasicornis)는 코뿔과 쥐라기 포식자 비교로 반복 노출되는 종이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 30,
+      "order": 32,
       "id": "ornitholestes-hermanni",
       "koreanName": "오르니톨레스테스",
       "scientificName": "Ornitholestes hermanni",
@@ -489,7 +519,7 @@
       "rationale": "오르니톨레스테스(Ornitholestes hermanni)는 작은 쥐라기 수각류를 비교할 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 31,
+      "order": 33,
       "id": "dilophosaurus-wetherilli",
       "koreanName": "딜로포사우루스",
       "scientificName": "Dilophosaurus wetherilli",
@@ -504,7 +534,7 @@
       "rationale": "딜로포사우루스(Dilophosaurus wetherilli)는 쌍볏 실루엣과 대중 콘텐츠로 널리 알려진 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 32,
+      "order": 34,
       "id": "dracovenator-regenti",
       "koreanName": "드라코베나토르",
       "scientificName": "Dracovenator regenti",
@@ -519,7 +549,7 @@
       "rationale": "드라코베나토르(Dracovenator regenti)는 남아프리카 초기 수각류를 세분할 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 33,
+      "order": 35,
       "id": "monolophosaurus-jiangi",
       "koreanName": "모놀로포사우루스",
       "scientificName": "Monolophosaurus jiangi",
@@ -534,7 +564,7 @@
       "rationale": "모놀로포사우루스(Monolophosaurus jiangi)는 하나의 볏이라는 이름과 모습으로 도감에서 찾기 쉬운 종이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 34,
+      "order": 36,
       "id": "cetiosaurus-oxoniensis",
       "koreanName": "케티오사우루스",
       "scientificName": "Cetiosaurus oxoniensis",
@@ -549,7 +579,7 @@
       "rationale": "케티오사우루스(Cetiosaurus oxoniensis)는 초기 용각류 역사와 계통을 볼 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 35,
+      "order": 37,
       "id": "sarahsaurus-aurifontanalis",
       "koreanName": "사라사우루스",
       "scientificName": "Sarahsaurus aurifontanalis",
@@ -564,7 +594,7 @@
       "rationale": "사라사우루스(Sarahsaurus aurifontanalis)는 북미 초기 용각형류를 깊게 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 36,
+      "order": 38,
       "id": "bellusaurus-sui",
       "koreanName": "벨루사우루스",
       "scientificName": "Bellusaurus sui",
@@ -579,7 +609,7 @@
       "rationale": "벨루사우루스(Bellusaurus sui)는 중국 쥐라기 용각류를 세분할 때 만나는 희소 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 37,
+      "order": 39,
       "id": "rhamphorhynchus-muensteri",
       "koreanName": "람포링쿠스",
       "scientificName": "Rhamphorhynchus muensteri",
@@ -594,7 +624,7 @@
       "rationale": "람포링쿠스(Rhamphorhynchus muensteri)는 긴 꼬리 익룡을 비교하는 관심 확장 단계의 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 38,
+      "order": 40,
       "id": "pterodactylus-antiquus",
       "koreanName": "프테로닥틸루스",
       "scientificName": "Pterodactylus antiquus",
@@ -609,7 +639,7 @@
       "rationale": "프테로닥틸루스(Pterodactylus antiquus)는 익룡을 대표하는 이름으로 널리 쓰이는 입문 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 39,
+      "order": 41,
       "id": "pterodaustro-guinazui",
       "koreanName": "프테로다우스트로",
       "scientificName": "Pterodaustro guinazui",
@@ -624,7 +654,7 @@
       "rationale": "프테로다우스트로(Pterodaustro guinazui)는 여과 섭식 부리라는 특수 주제에서 안내되는 익룡이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 40,
+      "order": 42,
       "id": "anhanguera-santanae",
       "koreanName": "안항구에라",
       "scientificName": "Anhanguera santanae",
@@ -639,7 +669,7 @@
       "rationale": "안항구에라(Anhanguera santanae)는 물고기 사냥 익룡과 브라질 화석군에서 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 41,
+      "order": 43,
       "id": "tapejara-wellnhoferi",
       "koreanName": "타페자라",
       "scientificName": "Tapejara wellnhoferi",
@@ -654,7 +684,7 @@
       "rationale": "타페자라(Tapejara wellnhoferi)는 큰 머리 볏의 테이프자리드 비교에서 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 42,
+      "order": 44,
       "id": "dsungaripterus-weii",
       "koreanName": "준가립테루스",
       "scientificName": "Dsungaripterus weii",
@@ -669,7 +699,7 @@
       "rationale": "준가립테루스(Dsungaripterus weii)는 단단한 먹이를 먹는 익룡 주제에서 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 43,
+      "order": 45,
       "id": "nyctosaurus-gracilis",
       "koreanName": "닉토사우루스",
       "scientificName": "Nyctosaurus gracilis",
@@ -684,7 +714,7 @@
       "rationale": "닉토사우루스(Nyctosaurus gracilis)는 과장된 머리 볏 익룡을 깊게 볼 때 만나는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 44,
+      "order": 46,
       "id": "pteranodon-longiceps",
       "koreanName": "프테라노돈",
       "scientificName": "Pteranodon longiceps",
@@ -699,7 +729,7 @@
       "rationale": "프테라노돈(Pteranodon longiceps)는 볏 달린 대형 익룡의 대표 실루엣으로 익숙한 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 45,
+      "order": 47,
       "id": "quetzalcoatlus-northropi",
       "koreanName": "케찰코아틀루스",
       "scientificName": "Quetzalcoatlus northropi",
@@ -714,7 +744,7 @@
       "rationale": "케찰코아틀루스(Quetzalcoatlus northropi)는 거대한 익룡을 대표하는 이름과 실루엣의 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 46,
+      "order": 48,
       "id": "dimorphodon-macronyx",
       "koreanName": "디모르포돈",
       "scientificName": "Dimorphodon macronyx",
@@ -729,7 +759,7 @@
       "rationale": "디모르포돈(Dimorphodon macronyx)는 두 종류 이빨과 초기 익룡 도감에서 반복되는 종이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 47,
+      "order": 49,
       "id": "eudimorphodon-ranzii",
       "koreanName": "에우디모르포돈",
       "scientificName": "Eudimorphodon ranzii",
@@ -744,7 +774,7 @@
       "rationale": "에우디모르포돈(Eudimorphodon ranzii)는 트라이아스기 초기 익룡을 탐색할 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 48,
+      "order": 50,
       "id": "darwinopterus-modularis",
       "koreanName": "다윈옵테루스",
       "scientificName": "Darwinopterus modularis",
@@ -759,7 +789,7 @@
       "rationale": "다윈옵테루스(Darwinopterus modularis)는 익룡 진화의 중간 형태를 다룰 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 49,
+      "order": 51,
       "id": "ichthyosaurus-communis",
       "koreanName": "이크티오사우루스",
       "scientificName": "Ichthyosaurus communis",
@@ -774,7 +804,7 @@
       "rationale": "이크티오사우루스(Ichthyosaurus communis)는 돌고래형 해양 파충류의 대표 이름으로 반복되는 종이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 50,
+      "order": 52,
       "id": "thalattosaurus-alexandrae",
       "koreanName": "탈라토사우루스",
       "scientificName": "Thalattosaurus alexandrae",
@@ -789,7 +819,7 @@
       "rationale": "탈라토사우루스(Thalattosaurus alexandrae)는 탈라토사우루스류를 별도로 다루는 전문 자료의 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 51,
+      "order": 53,
       "id": "placodus-gigas",
       "koreanName": "플라코두스",
       "scientificName": "Placodus gigas",
@@ -804,7 +834,7 @@
       "rationale": "플라코두스(Placodus gigas)는 납작한 이빨의 해양 파충류를 탐색할 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 52,
+      "order": 54,
       "id": "plesiosaurus-dolichodeirus",
       "koreanName": "플레시오사우루스",
       "scientificName": "Plesiosaurus dolichodeirus",
@@ -819,7 +849,7 @@
       "rationale": "플레시오사우루스(Plesiosaurus dolichodeirus)는 긴 목 해양 파충류를 대표하는 도감 단골이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 53,
+      "order": 55,
       "id": "elasmosaurus-platyurus",
       "koreanName": "엘라스모사우루스",
       "scientificName": "Elasmosaurus platyurus",
@@ -834,7 +864,7 @@
       "rationale": "엘라스모사우루스(Elasmosaurus platyurus)는 매우 긴 목의 백악기 해양 파충류로 반복되는 종이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 54,
+      "order": 56,
       "id": "kronosaurus-queenslandicus",
       "koreanName": "크로노사우루스",
       "scientificName": "Kronosaurus queenslandicus",
@@ -849,7 +879,7 @@
       "rationale": "크로노사우루스(Kronosaurus queenslandicus)는 대형 플리오사우루스 비교에서 자주 안내되는 종이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 55,
+      "order": 57,
       "id": "shonisaurus-popularis",
       "koreanName": "쇼니사우루스",
       "scientificName": "Shonisaurus popularis",
@@ -864,7 +894,7 @@
       "rationale": "쇼니사우루스(Shonisaurus popularis)는 거대 어룡을 관심 있게 찾을 때 발견하는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 56,
+      "order": 58,
       "id": "mosasaurus-hoffmannii",
       "koreanName": "모사사우루스",
       "scientificName": "Mosasaurus hoffmannii",
@@ -879,7 +909,7 @@
       "rationale": "모사사우루스(Mosasaurus hoffmannii)는 백악기 바다 포식자를 대표하는 대중적 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 57,
+      "order": 59,
       "id": "apatosaurus-ajax",
       "koreanName": "아파토사우루스",
       "scientificName": "Apatosaurus ajax",
@@ -894,7 +924,7 @@
       "rationale": "아파토사우루스(Apatosaurus ajax)는 긴목 공룡을 대표하는 오래된 도감 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 58,
+      "order": 60,
       "id": "diplodocus-carnegiei",
       "koreanName": "디플로도쿠스",
       "scientificName": "Diplodocus carnegii",
@@ -909,7 +939,7 @@
       "rationale": "디플로도쿠스(Diplodocus carnegii)는 매우 긴 꼬리와 몸 비율로 즉시 연상되는 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 59,
+      "order": 61,
       "id": "camarasaurus-lentus",
       "koreanName": "카마라사우루스",
       "scientificName": "Camarasaurus lentus",
@@ -924,7 +954,7 @@
       "rationale": "카마라사우루스(Camarasaurus lentus)는 모리슨층의 짧고 높은 두개골 용각류 단골이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 60,
+      "order": 62,
       "id": "brachiosaurus-altithorax",
       "koreanName": "브라키오사우루스",
       "scientificName": "Brachiosaurus altithorax",
@@ -939,7 +969,7 @@
       "rationale": "브라키오사우루스(Brachiosaurus altithorax)는 높은 어깨와 긴 앞다리 실루엣의 대표 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 61,
+      "order": 63,
       "id": "stegosaurus-stenops",
       "koreanName": "스테고사우루스",
       "scientificName": "Stegosaurus stenops",
@@ -954,7 +984,7 @@
       "rationale": "스테고사우루스(Stegosaurus stenops)는 등판과 꼬리 가시로 즉시 알아보는 대표 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 62,
+      "order": 64,
       "id": "hesperosaurus-mjosi",
       "koreanName": "헤스페로사우루스",
       "scientificName": "Hesperosaurus mjosi",
@@ -969,7 +999,7 @@
       "rationale": "헤스페로사우루스(Hesperosaurus mjosi)는 스테고사우루스류 세부 비교에서 만나는 희소 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 63,
+      "order": 65,
       "id": "scutellosaurus-lawleri",
       "koreanName": "스쿠텔로사우루스",
       "scientificName": "Scutellosaurus lawleri",
@@ -984,7 +1014,7 @@
       "rationale": "스쿠텔로사우루스(Scutellosaurus lawleri)는 장갑공룡 기원을 탐색할 때 안내되는 작은 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 64,
+      "order": 66,
       "id": "scelidosaurus-harrisonii",
       "koreanName": "스켈리도사우루스",
       "scientificName": "Scelidosaurus harrisonii",
@@ -999,7 +1029,7 @@
       "rationale": "스켈리도사우루스(Scelidosaurus harrisonii)는 초기 장갑공룡 진화 단원에서 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 65,
+      "order": 67,
       "id": "gargoyleosaurus-parkpinorum",
       "koreanName": "가고일레오사우루스",
       "scientificName": "Gargoyleosaurus parkpinorum",
@@ -1014,7 +1044,7 @@
       "rationale": "가고일레오사우루스(Gargoyleosaurus parkpinorum)는 쥐라기 곡룡류를 세분할 때 만나는 전문 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 66,
+      "order": 68,
       "id": "sauropelta-edwardsorum",
       "koreanName": "사우로펠타",
       "scientificName": "Sauropelta edwardsorum",
@@ -1029,7 +1059,7 @@
       "rationale": "사우로펠타(Sauropelta edwardsorum)는 목 가시가 있는 노도사우루스류 비교의 보조 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 67,
+      "order": 69,
       "id": "borealopelta-markmitchelli",
       "koreanName": "보레알로펠타",
       "scientificName": "Borealopelta markmitchelli",
@@ -1044,7 +1074,7 @@
       "rationale": "보레알로펠타(Borealopelta markmitchelli)는 보존 상태와 피부색 복원 이야기에서 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 68,
+      "order": 70,
       "id": "edmontonia-rugosidens",
       "koreanName": "에드몬토니아",
       "scientificName": "Edmontonia rugosidens",
@@ -1059,7 +1089,7 @@
       "rationale": "에드몬토니아(Edmontonia rugosidens)는 노도사우루스류 장갑 비교에서 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 69,
+      "order": 71,
       "id": "polacanthus-foxii",
       "koreanName": "폴라칸투스",
       "scientificName": "Polacanthus foxii",
@@ -1074,7 +1104,7 @@
       "rationale": "폴라칸투스(Polacanthus foxii)는 유럽 장갑공룡을 관심 있게 볼 때 만나는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 70,
+      "order": 72,
       "id": "tyrannosaurus-rex",
       "koreanName": "티라노사우루스 렉스",
       "scientificName": "Tyrannosaurus rex",
@@ -1089,7 +1119,7 @@
       "rationale": "티라노사우루스 렉스(Tyrannosaurus rex)는 이름과 두개골 실루엣 모두 가장 즉각적인 대표 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 71,
+      "order": 73,
       "id": "yutyrannus-huali",
       "koreanName": "유티란누스",
       "scientificName": "Yutyrannus huali",
@@ -1104,7 +1134,7 @@
       "rationale": "유티란누스(Yutyrannus huali)는 깃털 달린 대형 티라노사우루스류로 반복되는 종이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 72,
+      "order": 74,
       "id": "carnotaurus-sastrei",
       "koreanName": "카르노타우루스",
       "scientificName": "Carnotaurus sastrei",
@@ -1119,7 +1149,7 @@
       "rationale": "카르노타우루스(Carnotaurus sastrei)는 눈 위 뿔과 짧은 주둥이 실루엣이 완구·어린이 콘텐츠에서 널리 반복되는 종이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 73,
+      "order": 75,
       "id": "carcharodontosaurus-saharicus",
       "koreanName": "카르카로돈토사우루스",
       "scientificName": "Carcharodontosaurus saharicus",
@@ -1134,7 +1164,7 @@
       "rationale": "카르카로돈토사우루스(Carcharodontosaurus saharicus)는 상어 이빨을 뜻하는 이름과 거대한 아프리카 포식자 단서로 도감에서 반복되는 종이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 74,
+      "order": 76,
       "id": "giganotosaurus-carolinii",
       "koreanName": "기가노토사우루스",
       "scientificName": "Giganotosaurus carolinii",
@@ -1149,7 +1179,7 @@
       "rationale": "기가노토사우루스(Giganotosaurus carolinii)는 티라노사우루스와 크기를 비교하는 남미 거대 포식자로 어린이 콘텐츠에 널리 노출되는 종이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 75,
+      "order": 77,
       "id": "spinosaurus-aegyptiacus",
       "koreanName": "스피노사우루스",
       "scientificName": "Spinosaurus aegyptiacus",
@@ -1164,7 +1194,7 @@
       "rationale": "스피노사우루스(Spinosaurus aegyptiacus)는 등 돛과 반수생 이미지로 즉시 알아보는 대표 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 76,
+      "order": 78,
       "id": "suchomimus-tenerensis",
       "koreanName": "수코미무스",
       "scientificName": "Suchomimus tenerensis",
@@ -1179,7 +1209,7 @@
       "rationale": "수코미무스(Suchomimus tenerensis)는 악어형 주둥이 수각류 비교에서 반복되는 종이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 77,
+      "order": 79,
       "id": "gallimimus-bullatus",
       "koreanName": "갈리미무스",
       "scientificName": "Gallimimus bullatus",
@@ -1194,7 +1224,7 @@
       "rationale": "갈리미무스(Gallimimus bullatus)는 타조형 공룡과 무리 달리기 장면의 도감 단골이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 78,
+      "order": 80,
       "id": "deinocheirus-mirificus",
       "koreanName": "데이노케이루스",
       "scientificName": "Deinocheirus mirificus",
@@ -1209,7 +1239,7 @@
       "rationale": "데이노케이루스(Deinocheirus mirificus)는 거대한 팔과 혹등 실루엣으로 반복 노출되는 종이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 79,
+      "order": 81,
       "id": "therizinosaurus-cheloniformis",
       "koreanName": "테리지노사우루스",
       "scientificName": "Therizinosaurus cheloniformis",
@@ -1224,7 +1254,7 @@
       "rationale": "테리지노사우루스(Therizinosaurus cheloniformis)는 매우 긴 앞발톱으로 즉시 알아보는 대표 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 80,
+      "order": 82,
       "id": "mononykus-olecranus",
       "koreanName": "모노니쿠스",
       "scientificName": "Mononykus olecranus",
@@ -1239,7 +1269,7 @@
       "rationale": "모노니쿠스(Mononykus olecranus)는 한 손가락 알바레즈사우루스류를 탐색할 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 81,
+      "order": 83,
       "id": "avimimus-portentosus",
       "koreanName": "아비미무스",
       "scientificName": "Avimimus portentosus",
@@ -1254,7 +1284,7 @@
       "rationale": "아비미무스(Avimimus portentosus)는 새와 닮은 수각류 비교에서 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 82,
+      "order": 84,
       "id": "oviraptor-philoceratops",
       "koreanName": "오비랍토르",
       "scientificName": "Oviraptor philoceratops",
@@ -1269,7 +1299,7 @@
       "rationale": "오비랍토르(Oviraptor philoceratops)는 알·둥지 이야기와 볏 달린 모습으로 반복되는 종이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 83,
+      "order": 85,
       "id": "citipati-osmolskae",
       "koreanName": "시티파티",
       "scientificName": "Citipati osmolskae",
@@ -1284,7 +1314,7 @@
       "rationale": "시티파티(Citipati osmolskae)는 둥지 품기와 오비랍토르류 비교에서 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 84,
+      "order": 86,
       "id": "khaan-mckennai",
       "koreanName": "칸",
       "scientificName": "Khaan mckennai",
@@ -1299,7 +1329,7 @@
       "rationale": "칸(Khaan mckennai)는 고비 오비랍토르류를 세분할 때 만나는 희소 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 85,
+      "order": 87,
       "id": "conchoraptor-gracilis",
       "koreanName": "콘코랍토르",
       "scientificName": "Conchoraptor gracilis",
@@ -1314,7 +1344,7 @@
       "rationale": "콘코랍토르(Conchoraptor gracilis)는 오비랍토르류 두개골 차이를 깊게 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 86,
+      "order": 88,
       "id": "elmisaurus-rarus",
       "koreanName": "엘미사우루스",
       "scientificName": "Elmisaurus rarus",
@@ -1329,7 +1359,7 @@
       "rationale": "엘미사우루스(Elmisaurus rarus)는 카에나그나투스류를 세분할 때 만나는 전문 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 87,
+      "order": 89,
       "id": "nomingia-gobiensis",
       "koreanName": "노밍기아",
       "scientificName": "Nomingia gobiensis",
@@ -1344,7 +1374,7 @@
       "rationale": "노밍기아(Nomingia gobiensis)는 꼬리 끝 구조 논의를 깊게 볼 때 만나는 전문 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 88,
+      "order": 90,
       "id": "caudipteryx-zoui",
       "koreanName": "카우딥테릭스",
       "scientificName": "Caudipteryx zoui",
@@ -1359,7 +1389,7 @@
       "rationale": "카우딥테릭스(Caudipteryx zoui)는 깃털과 짧은 팔의 초기 깃털공룡 단원에서 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 89,
+      "order": 91,
       "id": "adasaurus-mongoliensis",
       "koreanName": "아다사우루스",
       "scientificName": "Adasaurus mongoliensis",
@@ -1374,7 +1404,7 @@
       "rationale": "아다사우루스(Adasaurus mongoliensis)는 고비 드로마에오사우루스류를 세분할 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 90,
+      "order": 92,
       "id": "microraptor-gui",
       "koreanName": "미크로랍토르",
       "scientificName": "Microraptor gui",
@@ -1389,7 +1419,7 @@
       "rationale": "미크로랍토르(Microraptor gui)는 네 날개 깃털공룡으로 반복 노출되는 도감 단골이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 91,
+      "order": 93,
       "id": "sinornithosaurus-millenii",
       "koreanName": "시노르니토사우루스",
       "scientificName": "Sinornithosaurus millenii",
@@ -1404,7 +1434,7 @@
       "rationale": "시노르니토사우루스(Sinornithosaurus millenii)는 깃털 달린 드로마에오사우루스류를 탐색할 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 92,
+      "order": 94,
       "id": "anchiornis-huxleyi",
       "koreanName": "안키오르니스",
       "scientificName": "Anchiornis huxleyi",
@@ -1419,7 +1449,7 @@
       "rationale": "안키오르니스(Anchiornis huxleyi)는 공룡-새 전이와 깃털색 연구에서 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 93,
+      "order": 95,
       "id": "sinovenator-changii",
       "koreanName": "시노베나토르",
       "scientificName": "Sinovenator changii",
@@ -1434,7 +1464,7 @@
       "rationale": "시노베나토르(Sinovenator changii)는 초기 트로오돈류를 세분할 때 만나는 전문 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 94,
+      "order": 96,
       "id": "saurornithoides-mongoliensis",
       "koreanName": "사우로르니토이데스",
       "scientificName": "Saurornithoides mongoliensis",
@@ -1449,7 +1479,7 @@
       "rationale": "사우로르니토이데스(Saurornithoides mongoliensis)는 트로오돈류 비교를 관심 있게 볼 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 95,
+      "order": 97,
       "id": "zanabazar-junior",
       "koreanName": "자나바자르",
       "scientificName": "Zanabazar junior",
@@ -1464,7 +1494,7 @@
       "rationale": "자나바자르(Zanabazar junior)는 고비 대형 트로오돈류를 깊게 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 96,
+      "order": 98,
       "id": "byronosaurus-jaffei",
       "koreanName": "바이로노사우루스",
       "scientificName": "Byronosaurus jaffei",
@@ -1479,7 +1509,7 @@
       "rationale": "바이로노사우루스(Byronosaurus jaffei)는 작은 트로오돈류 두개골을 세분할 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 97,
+      "order": 99,
       "id": "almas-ukhaa",
       "koreanName": "알마스",
       "scientificName": "Almas ukhaa",
@@ -1494,7 +1524,7 @@
       "rationale": "알마스(Almas ukhaa)는 우카 톨고드 트로오돈류를 깊게 볼 때 만나는 희소 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 98,
+      "order": 100,
       "id": "gobivenator-mongoliensis",
       "koreanName": "고비베나토르",
       "scientificName": "Gobivenator mongoliensis",
@@ -1509,7 +1539,7 @@
       "rationale": "고비베나토르(Gobivenator mongoliensis)는 고비 트로오돈류 해부를 전문적으로 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 99,
+      "order": 101,
       "id": "tarbosaurus-bataar",
       "koreanName": "타르보사우루스",
       "scientificName": "Tarbosaurus bataar",
@@ -1524,7 +1554,7 @@
       "rationale": "타르보사우루스(Tarbosaurus bataar)는 한국 어린이 콘텐츠에서 반복되는 아시아 대표 티라노사우루스류이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 100,
+      "order": 102,
       "id": "velociraptor-mongoliensis",
       "koreanName": "벨로키랍토르",
       "scientificName": "Velociraptor mongoliensis",
@@ -1539,7 +1569,7 @@
       "rationale": "벨로키랍토르(Velociraptor mongoliensis)는 낫발톱과 대중 콘텐츠로 즉시 알아보는 대표 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 101,
+      "order": 103,
       "id": "triceratops-horridus",
       "koreanName": "트리케라톱스",
       "scientificName": "Triceratops horridus",
@@ -1554,7 +1584,7 @@
       "rationale": "트리케라톱스(Triceratops horridus)는 세 뿔과 큰 프릴로 즉시 알아보는 대표 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 102,
+      "order": 104,
       "id": "torosaurus-latus",
       "koreanName": "토로사우루스",
       "scientificName": "Torosaurus latus",
@@ -1569,7 +1599,7 @@
       "rationale": "토로사우루스(Torosaurus latus)는 큰 프릴 각룡을 비교하는 도감의 반복 종이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 103,
+      "order": 105,
       "id": "styracosaurus-albertensis",
       "koreanName": "스티라코사우루스",
       "scientificName": "Styracosaurus albertensis",
@@ -1584,7 +1614,7 @@
       "rationale": "스티라코사우루스(Styracosaurus albertensis)는 긴 프릴 가시로 찾기 쉬운 각룡 도감 단골이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 104,
+      "order": 106,
       "id": "protoceratops-andrewsi",
       "koreanName": "프로토케라톱스",
       "scientificName": "Protoceratops andrewsi",
@@ -1599,7 +1629,7 @@
       "rationale": "프로토케라톱스(Protoceratops andrewsi)는 작은 각룡과 고비 둥지 이야기의 도감 단골이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 105,
+      "order": 107,
       "id": "centrosaurus-apertus",
       "koreanName": "센트로사우루스",
       "scientificName": "Centrosaurus apertus",
@@ -1614,7 +1644,7 @@
       "rationale": "센트로사우루스(Centrosaurus apertus)는 코뿔과 짧은 프릴 각룡 비교에서 반복되는 종이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 106,
+      "order": 108,
       "id": "pachyrhinosaurus-canadensis",
       "koreanName": "파키리노사우루스",
       "scientificName": "Pachyrhinosaurus canadensis",
@@ -1629,7 +1659,7 @@
       "rationale": "파키리노사우루스(Pachyrhinosaurus canadensis)는 코의 두꺼운 보스와 무리 장면으로 반복되는 종이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 107,
+      "order": 109,
       "id": "chasmosaurus-belli",
       "koreanName": "카스모사우루스",
       "scientificName": "Chasmosaurus belli",
@@ -1644,7 +1674,7 @@
       "rationale": "카스모사우루스(Chasmosaurus belli)는 긴 프릴 각룡을 관심 있게 비교할 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 108,
+      "order": 110,
       "id": "pentaceratops-sternbergii",
       "koreanName": "펜타케라톱스",
       "scientificName": "Pentaceratops sternbergii",
@@ -1659,7 +1689,7 @@
       "rationale": "펜타케라톱스(Pentaceratops sternbergii)는 여러 뿔 각룡을 깊게 비교할 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 109,
+      "order": 111,
       "id": "kosmoceratops-richardsoni",
       "koreanName": "코스모케라톱스",
       "scientificName": "Kosmoceratops richardsoni",
@@ -1674,7 +1704,7 @@
       "rationale": "코스모케라톱스(Kosmoceratops richardsoni)는 화려한 프릴 장식의 각룡을 탐색할 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 110,
+      "order": 112,
       "id": "nasutoceratops-titusi",
       "koreanName": "나수토케라톱스",
       "scientificName": "Nasutoceratops titusi",
@@ -1689,7 +1719,7 @@
       "rationale": "나수토케라톱스(Nasutoceratops titusi)는 앞으로 굽은 긴 눈썹뿔로 도감에서 찾기 쉬운 종이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 111,
+      "order": 113,
       "id": "utahceratops-gettyi",
       "koreanName": "유타케라톱스",
       "scientificName": "Utahceratops gettyi",
@@ -1704,7 +1734,7 @@
       "rationale": "유타케라톱스(Utahceratops gettyi)는 유타 지역 각룡군을 세분할 때 만나는 희소 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 112,
+      "order": 114,
       "id": "agujaceratops-mariscalensis",
       "koreanName": "아구하케라톱스",
       "scientificName": "Agujaceratops mariscalensis",
@@ -1719,7 +1749,7 @@
       "rationale": "아구하케라톱스(Agujaceratops mariscalensis)는 텍사스 지역 각룡군을 깊게 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 113,
+      "order": 115,
       "id": "psittacosaurus-mongoliensis",
       "koreanName": "프시타코사우루스",
       "scientificName": "Psittacosaurus mongoliensis",
@@ -1734,7 +1764,7 @@
       "rationale": "프시타코사우루스(Psittacosaurus mongoliensis)는 앵무새형 부리와 꼬리 퀼 복원으로 반복되는 종이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 114,
+      "order": 116,
       "id": "leptoceratops-gracilis",
       "koreanName": "렙토케라톱스",
       "scientificName": "Leptoceratops gracilis",
@@ -1749,7 +1779,7 @@
       "rationale": "렙토케라톱스(Leptoceratops gracilis)는 작은 원시 각룡을 관심 있게 볼 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 115,
+      "order": 117,
       "id": "dryosaurus-altus",
       "koreanName": "드리오사우루스",
       "scientificName": "Dryosaurus altus",
@@ -1764,7 +1794,7 @@
       "rationale": "드리오사우루스(Dryosaurus altus)는 작고 빠른 쥐라기 조각류 비교에서 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 116,
+      "order": 118,
       "id": "enigmacursor-mollyborthwickae",
       "koreanName": "에니그마쿠르소르",
       "scientificName": "Enigmacursor mollyborthwickae",
@@ -1779,7 +1809,7 @@
       "rationale": "에니그마쿠르소르(Enigmacursor mollyborthwickae)는 최근 세분된 모리슨층 소형 조반류의 전문 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 117,
+      "order": 119,
       "id": "othnielosaurus-consors",
       "koreanName": "오트니엘로사우루스",
       "scientificName": "Othnielosaurus consors",
@@ -1794,7 +1824,7 @@
       "rationale": "오트니엘로사우루스(Othnielosaurus consors)는 모리슨층 소형 조반류 분류사를 깊게 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 118,
+      "order": 120,
       "id": "camptosaurus-dispar",
       "koreanName": "캄프토사우루스",
       "scientificName": "Camptosaurus dispar",
@@ -1809,7 +1839,7 @@
       "rationale": "캄프토사우루스(Camptosaurus dispar)는 쥐라기 조각류를 관심 있게 확장할 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 119,
+      "order": 121,
       "id": "iguanodon-bernissartensis",
       "koreanName": "이구아노돈",
       "scientificName": "Iguanodon bernissartensis",
@@ -1824,7 +1854,7 @@
       "rationale": "이구아노돈(Iguanodon bernissartensis)는 엄지 가시와 공룡 발견사 이야기로 여러 세대의 어린이 도감에서 반복되는 대표 종이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 120,
+      "order": 122,
       "id": "maiasaura-peeblesorum",
       "koreanName": "마이아사우라",
       "scientificName": "Maiasaura peeblesorum",
@@ -1839,7 +1869,7 @@
       "rationale": "마이아사우라(Maiasaura peeblesorum)는 ‘착한 엄마 공룡’ 별명과 둥지 이야기로 어린이 도감에서 반복되는 종이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 121,
+      "order": 123,
       "id": "parasaurolophus-walkeri",
       "koreanName": "파라사우롤로푸스",
       "scientificName": "Parasaurolophus walkeri",
@@ -1854,7 +1884,7 @@
       "rationale": "파라사우롤로푸스(Parasaurolophus walkeri)는 뒤로 길게 뻗은 관 모양 볏의 대표 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 122,
+      "order": 124,
       "id": "saurolophus-angustirostris",
       "koreanName": "사우롤로푸스",
       "scientificName": "Saurolophus angustirostris",
@@ -1869,7 +1899,7 @@
       "rationale": "사우롤로푸스(Saurolophus angustirostris)는 단단한 머리 볏의 하드로사우루스류 도감 단골이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 123,
+      "order": 125,
       "id": "edmontosaurus-annectens",
       "koreanName": "에드몬토사우루스",
       "scientificName": "Edmontosaurus annectens",
@@ -1884,7 +1914,7 @@
       "rationale": "에드몬토사우루스(Edmontosaurus annectens)는 후기 백악기 대형 오리주둥이 공룡의 도감 단골이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 124,
+      "order": 126,
       "id": "thescelosaurus-neglectus",
       "koreanName": "테스켈로사우루스",
       "scientificName": "Thescelosaurus neglectus",
@@ -1899,7 +1929,7 @@
       "rationale": "테스켈로사우루스(Thescelosaurus neglectus)는 작은 후기 백악기 조각류를 탐색할 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 125,
+      "order": 127,
       "id": "pachycephalosaurus-wyomingensis",
       "koreanName": "파키케팔로사우루스",
       "scientificName": "Pachycephalosaurus wyomingensis",
@@ -1914,7 +1944,7 @@
       "rationale": "파키케팔로사우루스(Pachycephalosaurus wyomingensis)는 두꺼운 돔 머리로 즉시 알아보는 대표 아이콘이다. 이름 또는 실루엣만으로 바로 찾을 가능성이 높고 여러 어린이 채널에서 반복되는 주요 아이콘이므로 LV1로 유지한다."
     },
     {
-      "order": 126,
+      "order": 128,
       "id": "stegoceras-validum",
       "koreanName": "스테고케라스",
       "scientificName": "Stegoceras validum",
@@ -1929,7 +1959,7 @@
       "rationale": "스테고케라스(Stegoceras validum)는 작은 돔 머리 공룡 비교에서 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 127,
+      "order": 129,
       "id": "homalocephale-calathocercos",
       "koreanName": "호말로케팔레",
       "scientificName": "Homalocephale calathocercos",
@@ -1944,7 +1974,7 @@
       "rationale": "호말로케팔레(Homalocephale calathocercos)는 납작한 머리 후두류 논의를 볼 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 128,
+      "order": 130,
       "id": "tylocephale-gilmorei",
       "koreanName": "틸로케팔레",
       "scientificName": "Tylocephale gilmorei",
@@ -1959,7 +1989,7 @@
       "rationale": "틸로케팔레(Tylocephale gilmorei)는 고비 후두류를 세분할 때 만나는 희소 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 129,
+      "order": 131,
       "id": "wannanosaurus-yansiensis",
       "koreanName": "완나노사우루스",
       "scientificName": "Wannanosaurus yansiensis",
@@ -1974,7 +2004,7 @@
       "rationale": "완나노사우루스(Wannanosaurus yansiensis)는 작은 기초 후두류를 깊게 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 130,
+      "order": 132,
       "id": "alaskacephale-gangloffi",
       "koreanName": "알라스카케팔레",
       "scientificName": "Alaskacephale gangloffi",
@@ -1989,7 +2019,7 @@
       "rationale": "알라스카케팔레(Alaskacephale gangloffi)는 알래스카 후두류를 별도로 다루는 전문 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 131,
+      "order": 133,
       "id": "foraminacephale-brevis",
       "koreanName": "포라미나케팔레",
       "scientificName": "Foraminacephale brevis",
@@ -2004,7 +2034,7 @@
       "rationale": "포라미나케팔레(Foraminacephale brevis)는 북미 후두류 돔 구조를 세분할 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 132,
+      "order": 134,
       "id": "colepiocephale-lambei",
       "koreanName": "콜레피오케팔레",
       "scientificName": "Colepiocephale lambei",
@@ -2019,7 +2049,7 @@
       "rationale": "콜레피오케팔레(Colepiocephale lambei)는 후두류 분류표를 깊게 볼 때 만나는 전문 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 133,
+      "order": 135,
       "id": "sphaerotholus-goodwini",
       "koreanName": "스파에로톨루스",
       "scientificName": "Sphaerotholus goodwini",
@@ -2034,7 +2064,7 @@
       "rationale": "스파에로톨루스(Sphaerotholus goodwini)는 스파에로톨루스 종 구분을 깊게 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 134,
+      "order": 136,
       "id": "acrotholus-audeti",
       "koreanName": "아크로톨루스",
       "scientificName": "Acrotholus audeti",
@@ -2049,7 +2079,7 @@
       "rationale": "아크로톨루스(Acrotholus audeti)는 작은 후두류 화석 기록을 전문적으로 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 135,
+      "order": 137,
       "id": "amtocephale-gobiensis",
       "koreanName": "암토케팔레",
       "scientificName": "Amtocephale gobiensis",
@@ -2064,7 +2094,7 @@
       "rationale": "암토케팔레(Amtocephale gobiensis)는 고비 후두류 돔 비교에서 만나는 전문 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 136,
+      "order": 138,
       "id": "prenocephale-prenes",
       "koreanName": "프레노케팔레",
       "scientificName": "Prenocephale prenes",
@@ -2079,7 +2109,7 @@
       "rationale": "프레노케팔레(Prenocephale prenes)는 둥근 돔의 아시아 후두류를 탐색할 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 137,
+      "order": 139,
       "id": "gravitholus-albertae",
       "koreanName": "그라비톨루스",
       "scientificName": "Gravitholus albertae",
@@ -2094,7 +2124,7 @@
       "rationale": "그라비톨루스(Gravitholus albertae)는 알버타 후두류 분류 논의를 깊게 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 138,
+      "order": 140,
       "id": "goyocephale-lattimorei",
       "koreanName": "고요케팔레",
       "scientificName": "Goyocephale lattimorei",
@@ -2109,7 +2139,7 @@
       "rationale": "고요케팔레(Goyocephale lattimorei)는 아시아 후두류 비교를 관심 있게 볼 때 안내되는 종이다. 대중 아이콘은 아니며 관심을 넓힌 뒤 안내와 함께 발견하는 보조 분류군이므로 LV3로 유지한다."
     },
     {
-      "order": 139,
+      "order": 141,
       "id": "sphaerotholus-buchholtzae",
       "koreanName": "스파에로톨루스 부크홀차이",
       "scientificName": "Sphaerotholus buchholtzae",
@@ -2124,7 +2154,7 @@
       "rationale": "스파에로톨루스 부크홀차이(Sphaerotholus buchholtzae)는 스파에로톨루스 속의 종 단위 비교에서 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 140,
+      "order": 142,
       "id": "stygimoloch-spinifer",
       "koreanName": "스티기몰로크",
       "scientificName": "Stygimoloch spinifer",
@@ -2139,7 +2169,7 @@
       "rationale": "스티기몰로크(Stygimoloch spinifer)는 뿔 달린 돔 머리 이미지로 대중 콘텐츠에 반복 노출되는 이름이다. 어린이 도감에서 비교적 자주 다시 만나며 특징 단서가 있으면 찾기 쉬운 주요 단골이므로 LV2로 유지한다."
     },
     {
-      "order": 141,
+      "order": 143,
       "id": "platytholus-clemensi",
       "koreanName": "플라티톨루스",
       "scientificName": "Platytholus clemensi",
@@ -2154,7 +2184,7 @@
       "rationale": "플라티톨루스(Platytholus clemensi)는 후두류 신종과 분류 연구를 깊게 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 142,
+      "order": 144,
       "id": "hanssuesia-sternbergi",
       "koreanName": "한수에시아",
       "scientificName": "Hanssuesia sternbergi",
@@ -2169,7 +2199,7 @@
       "rationale": "한수에시아(Hanssuesia sternbergi)는 후두류 분류사를 전문적으로 볼 때 만나는 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 143,
+      "order": 145,
       "id": "ornatotholus-browni",
       "koreanName": "오르나토톨루스",
       "scientificName": "Ornatotholus browni",
@@ -2184,7 +2214,7 @@
       "rationale": "오르나토톨루스(Ornatotholus browni)는 후두류 유효성 논의를 깊게 볼 때 만나는 전문 이름이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 144,
+      "order": 146,
       "id": "sinocephale-bexelli",
       "koreanName": "시노케팔레",
       "scientificName": "Sinocephale bexelli",
@@ -2199,7 +2229,7 @@
       "rationale": "시노케팔레(Sinocephale bexelli)는 중국 후두류 분류사를 세분할 때 만나는 희소 종이다. 일반 입문 목록보다 특정 지역·계통군의 세부 탐색에서 만나는 희소 분류군이므로 LV4로 유지한다."
     },
     {
-      "order": 145,
+      "order": 147,
       "id": "ankylosaurus-magniventris",
       "koreanName": "안킬로사우루스",
       "scientificName": "Ankylosaurus magniventris",

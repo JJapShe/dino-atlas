@@ -82,6 +82,8 @@ const profiles = Object.freeze({
 // bibliographic frequency. Each cue records why the taxon occupies its current
 // place in a 5-14-year-old user's likely discovery path.
 const editorialCues = Object.freeze({
+  "mammuthus-primigenius": "두 개의 크게 굽은 엄니와 긴 털을 지닌 빙하기 매머드로 어린이 고생물 콘텐츠에서 즉시 알아보는 대표 포유류",
+  "smilodon-fatalis": "한 쌍의 긴 위턱 검치와 강건한 앞몸을 지닌 검치호로 빙하기 동물 도감에서 반복되는 대표 포유류",
   "dimetrodon-grandis": "등의 거대한 돛과 공룡이 아니라는 반전으로 어린이 고생물 콘텐츠에서 즉시 알아보는 대표 단궁류",
   "archaeopteryx-lithographica": "공룡과 새의 경계를 설명하는 어린이 도감에서 시조새라는 이름으로 반복되는 대표 생물",
   "asteroceras-obtusum": "나선형 껍데기의 암모나이트를 대표해 화석·바다생물 입문 자료에서 쉽게 만나는 생물",

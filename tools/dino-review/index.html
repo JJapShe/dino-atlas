@@ -929,7 +929,7 @@
       <div class="summary" id="summary"></div>
     </div>
     <div class="toolbar">
-      <input id="search" type="search" placeholder="공룡명, 파일명 검색">
+      <input id="search" type="search" placeholder="생물명, 파일명 검색">
       <select id="species"></select>
       <select id="kind"></select>
       <select id="status">
@@ -943,7 +943,7 @@
         <option value="recent">최근 생성순</option>
         <option value="reviewed">최근 검수순</option>
         <option value="status">검수 상태순</option>
-        <option value="species">공룡명순</option>
+        <option value="species">생물명순</option>
         <option value="name">파일명순</option>
         <option value="size">파일 크기순</option>
       </select>
@@ -1453,7 +1453,7 @@
             <button class="preview-button" id="openZoom" type="button" title="크게 보기">
               <img class="preview" src="${imageUrl(selected)}" alt="${escapeHtml(selected.speciesLabel)}">
             </button>
-            <div class="species-strip" aria-label="같은 공룡 이미지">${strip}</div>
+            <div class="species-strip" aria-label="같은 생물 이미지">${strip}</div>
           </div>
           <div class="detail">
             <h2>${escapeHtml(selected.speciesLabel)}</h2>
@@ -1615,7 +1615,7 @@
 
         images = data.images;
         imageListSignature = nextSignature;
-        fillSelect("species", data.species, "전체 공룡");
+        fillSelect("species", data.species, "전체 생물");
         fillSelect("kind", data.kinds, "전체 유형");
         restoreFilterState(filters);
         selected = images.find((image) => image.id === selectedId) || images[0] || null;

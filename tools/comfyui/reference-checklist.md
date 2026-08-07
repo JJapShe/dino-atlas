@@ -1,6 +1,6 @@
 # Reference Checklist
 
-Last updated: 2026-06-29
+Last updated: 2026-08-08
 
 Use this checklist before promoting any generated dinosaur image above `diagnostic only`.
 
@@ -375,3 +375,55 @@ Temporary app rule:
 - 2026-07-02 P2 v12-v14 follow-up: keep `brachiosaurus-p2-v12-v14-review-sheet.png` and `brachiosaurus-p2-v12-v14-crops.png` as the latest high-shoulder versus short-tail decision sheets. Treat `brachiosaurus-altithorax-imagegen-v13-source-candidate.png` as `review_hold` only because it preserves a clear high-shoulder, taller-forelimb, rising-neck, four-foot read, but still has a long thin diplodocid-tail risk. Treat `brachiosaurus-altithorax-imagegen-v12-source-candidate.png` and `brachiosaurus-altithorax-imagegen-v14-source-candidate.png` as `reject_reference` because they document the same failure more strongly: strong shoulders but unsafe long whip-tail reads. Keep v4 first until a candidate proves high shoulders, taller forelimbs, rising neck, four open feet, and a short thick tail together.
 - 2026-07-02 P3 v15-v17 historical note, superseded on 2026-08-03: v16 was temporarily promoted because it paired a compact tail with the high-shoulder/taller-forelimb body plan and four reviewable feet. Keep the P3 sheets, v4, v17, and v15 only as comparison records; v16 is no longer a count-level pass or positive train seed because it misses the current nasal-mound/high-nostril gate.
 - 2026-08-03 closure supersedes the temporary v16 promotion: v18 is the only `count-level pass` and train seed. S2, S3, S5, and S6 passed independent original-size full-body review; S4 passed only as a close head-detail role. Full provenance, file hashes, role boundaries, and composition signatures are recorded in `tools/comfyui/brachiosaurus-gallery-closure-20260803.json`.
+
+## Mammuthus primigenius
+
+Reference anchors:
+
+- Natural History Museum: https://www.nhm.ac.uk/discover/were-all-mammoths-woolly.html
+- Larramendi 2016 proboscidean body-shape study: https://doi.org/10.4202/app.00136.2014
+- Willerslev et al. 2014 mammoth-steppe vegetation study: https://doi.org/10.1038/nature12921
+
+Must read as:
+
+- Cenozoic elephantid with a high shoulder, back descending toward the hips, domed head, tiny ears, short tail, and dense coat
+- one trunk, exactly two separate spiralling upper tusks, four connected columnar limbs, and four broad padded feet
+
+Reject if:
+
+- it becomes a dinosaur, mastodon, modern-elephant clone, flat-backed low-shouldered animal, fan-eared animal, naked elephant, long-tailed animal, or camel-humped animal
+- tusks, trunk, limbs, feet, tail, or crop are duplicated, missing, fused, crossed, malformed, or hidden enough to block review
+
+Evidence boundary:
+
+- The broad cold-dry mammoth-steppe and core silhouette are evidence-led. Exact coat color, hair placement, sex, age, weather, movement, local plants, and the pictured adult-calf relationship or maternal behavior remain reconstruction hypotheses.
+
+Promotion rule:
+
+- S1 is the sole `count-level pass` representative. S2 remains a color-pattern `review hold`; S3 remains a multi-animal habitat `anatomy review`. S2 and S3 cannot replace or outrank S1 without a separate anatomy-promotion review.
+
+## Smilodon fatalis
+
+Reference anchors:
+
+- Florida Museum of Natural History: https://www.floridamuseum.ufl.edu/florida-vertebrate-fossils/species/smilodon-fatalis/
+- Meachen-Samuels & Van Valkenburgh 2010 forelimb-strength study: https://doi.org/10.1371/journal.pone.0011412
+- La Brea Tar Pits tiger/coat reconstruction boundary: https://tarpits.org/stories/smilodon-saber-tooths-and-tigersoh-my
+
+Must read as:
+
+- Cenozoic machairodont felid with a deep chest, thick neck, powerful shoulders and forelimbs, sturdy feline hind limbs, four connected feline paws, and one short complete tail
+- exactly one elongated upper canine pair, two sabers total, without elongated lower canines
+
+Reject if:
+
+- it becomes a tiger, lion, bear, hyena, wolf, or cheetah clone; gains a long or tufted tail, mane, default tiger stripes, or repeated modern-cat rosettes
+- it shows more or fewer than two elongated upper sabers, lower-jaw sabers, crossed or lip-piercing canines, non-feline feet, extra or fused limbs, or cropped head, paws, or tail
+
+Evidence boundary:
+
+- Robust forelimbs are fossil-led, but exact prey restraint, kill pose, sociality, coat color or pattern, lip coverage, weather, vegetation, and the S3 cat-bovid encounter remain hypotheses. S3 establishes no attack, contact, capture, or pack hunt.
+
+Promotion rule:
+
+- S1 is the sole `count-level pass` representative. S2 remains a coat-pattern `review hold`; S3 remains a non-contact habitat `anatomy review`. S2 and S3 cannot replace or outrank S1 without a separate anatomy-promotion review.

@@ -71,6 +71,20 @@ const HABITATS = {
     light: "clear neutral daylight without a global orange cast",
     backgroundPalette: ["#c8aa77", "#8f795d", "#68725c"],
   },
+  "mammoth-steppe-tundra": {
+    substrate: "cold, dry loess-rich mammoth-steppe with firm wind-scoured ground, sparse snow patches, and shallow frozen ruts",
+    vegetation: "open steppe-tundra with low grasses, sedges, forbs, and sparse dwarf scrub rather than dense forest",
+    moisture: "cold-dry, seasonally frozen continental steppe-tundra rather than a permanent snowfield",
+    light: "clear cold daylight with restrained blue-gray snow reflection and warm coat readability",
+    backgroundPalette: ["#aab3b1", "#7f806f", "#c5b58f"],
+  },
+  "late-pleistocene-open-woodland-dry-wash": {
+    substrate: "Late Pleistocene firm alluvial soil, pale dust, dry wash gravel, and scattered weathered stones",
+    vegetation: "open woodland-grassland mosaic with spaced trees, patchy grasses, and low scrub rather than dense jungle",
+    moisture: "seasonally dry ground with episodic runoff confined to the wash",
+    light: "clear neutral daylight with readable shade and no global orange cast",
+    backgroundPalette: ["#9b8a6c", "#6d765c", "#b6a27b"],
+  },
   "djadokhta-semiarid-dune": {
     substrate: "buff to muted red aeolian sand, low dunes, firm interdune silt, and episodic wash gravel",
     vegetation: "very sparse low gray-green non-grass scrub with open ground",
@@ -588,7 +602,9 @@ function suggestUnregisteredSource(sources, roleKey) {
 function habitatFor(dino, route) {
   const text = `${dino.era} ${dino.region} ${dino.summary || ""} ${route?.focus || ""} ${route?.pass || ""}`.toLowerCase();
   let key = "conifer-fern-floodplain";
-  if (dino.id === "spinosaurus-aegyptiacus") key = "kem-kem-river-delta";
+  if (dino.id === "mammuthus-primigenius") key = "mammoth-steppe-tundra";
+  else if (dino.id === "smilodon-fatalis") key = "late-pleistocene-open-woodland-dry-wash";
+  else if (dino.id === "spinosaurus-aegyptiacus") key = "kem-kem-river-delta";
   else if (dino.id === "suchomimus-tenerensis") key = "elrhaz-river-system";
   else if (dino.id === "psittacosaurus-mongoliensis") key = "khulsangol-alluvial-sheetflood";
   else if (dino.id === "liliensternus-liliensterni") key = "knollenmergel-vertisol-sheetflood";

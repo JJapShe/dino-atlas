@@ -1,0 +1,437 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-08-cenozoic-life-expansion-phase-a1",
+  "createdAt": "2026-08-08T01:30:24+09:00",
+  "audience": "Korean Dino Atlas users ages 5-14",
+  "scope": [
+    "Mammuthus primigenius and Smilodon fatalis initial three-image galleries",
+    "Explicit Cenozoic, Quaternary, and Pleistocene atlas-realm opening",
+    "Separate anatomy, integument, behavior, and representative-promotion gates",
+    "Extensible approval and rejection provenance for later Cenozoic taxa"
+  ],
+  "promptEncoding": "Each prompt array preserves the exact nonblank text supplied to the image generator, in original order. The prompts were supplied as single continuous strings; join items with newline characters if more than one item is present.",
+  "copyrightSafety": {
+    "externalArtworkUsed": false,
+    "externalImagesUsedAsGenerationInput": false,
+    "projectGeneratedReferenceOnly": true,
+    "licenseRecord": "Original project-generated bitmap assets for Dino Atlas. Papers and museum records supplied factual anatomical, temporal, environmental, and evidence-boundary constraints only; no external figure, reconstruction, franchise frame, copyrighted character, or named-artist style was copied or supplied to the generator.",
+    "rejectedOriginalPolicy": "The rejected long-tail Mammuthus pattern original and tiger-striped Smilodon pattern original remain only in the private generated-image store and were never copied into assets/dinosaurs. The approved Mammuthus pattern image is a single-change edit derived only from its project-generated rejected original.",
+    "appPathPolicy": "Only reviewed species-prefixed project copies under assets/dinosaurs may be referenced by app.js or gallery metadata. No .codex/generated_images path may be referenced by the app."
+  },
+  "researchSources": [
+    {
+      "taxon": "Mammuthus primigenius",
+      "citation": "NCBI Taxonomy Browser, Mammuthus primigenius, Taxonomy ID 37349.",
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=37349",
+      "use": "Proboscidea, Elephantidae, and Mammuthus classification",
+      "rightsUse": "Factual taxonomy reference only; no image or reconstruction was supplied to the generator"
+    },
+    {
+      "taxon": "Mammuthus primigenius",
+      "citation": "Natural History Museum. Were all mammoths woolly?",
+      "url": "https://www.nhm.ac.uk/discover/were-all-mammoths-woolly.html",
+      "use": "High shoulder, descending back, domed head, small ears, short tail, spiral tusks, size, range, and child-readable Ice Age context",
+      "rightsUse": "Factual anatomical and educational reference only; no museum image or reconstruction was supplied to the generator"
+    },
+    {
+      "taxon": "Mammuthus primigenius",
+      "citation": "Larramendi, A. 2016. Shoulder height, body mass and shape of proboscideans. Acta Palaeontologica Polonica 61.",
+      "url": "https://doi.org/10.4202/app.00136.2014",
+      "use": "Regional shoulder-height, mass, and body-shape limits",
+      "rightsUse": "Factual and analytical reference only; no figure was copied or supplied to the generator"
+    },
+    {
+      "taxon": "Mammuthus primigenius",
+      "citation": "Grigoriev et al. 2017. Maly Lyakhovsky Island mammoth carcass. Quaternary International.",
+      "url": "https://doi.org/10.1016/j.quaint.2017.01.007",
+      "use": "Preserved coat, single trunk, two tusks, feet, and nearly round adult foot dimensions",
+      "rightsUse": "Factual anatomical reference only; no photograph or figure was copied or supplied to the generator"
+    },
+    {
+      "taxon": "Mammuthus primigenius",
+      "citation": "Workman et al. 2011. Population-level MC1R variation in woolly mammoths. Quaternary Science Reviews.",
+      "url": "https://doi.org/10.1016/j.quascirev.2010.08.020",
+      "use": "Boundary against treating bright or blond coat color as a common established condition",
+      "rightsUse": "Factual genetics reference only; no figure was copied or supplied to the generator"
+    },
+    {
+      "taxon": "Mammuthus primigenius",
+      "citation": "Willerslev et al. 2014. Fifty thousand years of Arctic vegetation and megafaunal diet. Nature 506.",
+      "url": "https://doi.org/10.1038/nature12921",
+      "use": "Forb-rich cold dry steppe-tundra habitat and diet boundary",
+      "rightsUse": "Factual environmental reference only; no figure was copied or supplied to the generator"
+    },
+    {
+      "taxon": "Smilodon fatalis",
+      "citation": "Florida Museum of Natural History. Smilodon fatalis species account.",
+      "url": "https://www.floridamuseum.ufl.edu/florida-vertebrate-fossils/species/smilodon-fatalis/",
+      "use": "Pleistocene age, range, taxonomic context, body-size range, and child-readable identification",
+      "rightsUse": "Factual reference only; no photograph, figure, or reconstruction was supplied to the generator"
+    },
+    {
+      "taxon": "Smilodon fatalis",
+      "citation": "Smithsonian National Museum of Natural History, Smilodon fatalis specimen NMNH PAL 3583034.",
+      "url": "https://www.si.edu/object/smilodon-fatalis-leidy%3Anmnhpaleobiology_3583034",
+      "use": "Species-specific museum record and Cenozoic context",
+      "rightsUse": "Catalogue facts only; no specimen image was supplied to the generator"
+    },
+    {
+      "taxon": "Smilodon fatalis",
+      "citation": "Meachen-Samuels, J. & Van Valkenburgh, B. 2010. Radiographs reveal exceptional forelimb strength in the sabertooth cat, Smilodon fatalis. PLOS ONE 5:e11412.",
+      "url": "https://doi.org/10.1371/journal.pone.0011412",
+      "use": "Robust forelimb and forequarter identity cue and functional-inference boundary",
+      "rightsUse": "Factual and analytical reference only; no figure was copied or supplied to the generator"
+    },
+    {
+      "taxon": "Smilodon fatalis",
+      "citation": "McHenry et al. 2007. Supermodeled sabercat, predatory behavior in Smilodon fatalis revealed by high-resolution 3D computer simulation. PNAS 104.",
+      "url": "https://doi.org/10.1073/pnas.0706086104",
+      "use": "Jaw and neck function as analytical hypotheses rather than a directly observed kill sequence",
+      "rightsUse": "Factual and analytical reference only; no model rendering or figure was supplied to the generator"
+    },
+    {
+      "taxon": "Smilodon fatalis",
+      "citation": "La Brea Tar Pits. Smilodon, saber-tooths, and tigers, oh my.",
+      "url": "https://tarpits.org/stories/smilodon-saber-tooths-and-tigersoh-my",
+      "use": "Boundary that Smilodon is not simply a tiger and that coat patterns are not directly preserved",
+      "rightsUse": "Educational facts and uncertainty boundary only; no artwork or photograph was supplied to the generator"
+    }
+  ],
+  "evidenceBoundaries": {
+    "mammuthus-primigenius": {
+      "direct": [
+        "A high shoulder, a back descending toward the hips, a domed head, small ears, a short tail, a full coat, one trunk, two upper tusks, four limbs, and broad feet are evidence-led identity cues.",
+        "Mammuthus primigenius is a Cenozoic proboscidean in Elephantidae, not a dinosaur, mastodon, or modern elephant species."
+      ],
+      "analytical": [
+        "The accepted body proportions combine skeletal and preserved-soft-tissue evidence across specimens; the exact silhouette of any pictured individual remains a reconstruction.",
+        "A vegetated cold dry mammoth-steppe is evidence-led at biome level, while the exact plants, frost, snow, weather, and local horizon are scene reconstructions."
+      ],
+      "hypothetical": [
+        "Exact coat color, guard-hair placement, undercoat tone, sex, age, weather, movement, and the adult-calf relationship shown are hypothetical.",
+        "The mother-calf ecology image illustrates plausible proximity and plant gathering but is not a documented individual event."
+      ],
+      "coatColorBoundary": "Dark chocolate and charcoal umber are conservative gallery choices, not recovered color portraits. Bright blond or orange is not presented as the species default.",
+      "softTissueBoundary": "Do not add a separate camel-like fat hump. Preserve the skeletal high shoulder and descending back while treating precise trunk, ear, tail, foot-pad, and coat contours as reconstruction.",
+      "behaviorBoundary": "Maternal proximity and foraging posture are plausible comparison-based hypotheses, not direct observations of the pictured animals.",
+      "habitatBoundary": "The gallery uses forb- and grass-rich cold dry steppe-tundra with only patchy shallow snow, not an endless barren glacier.",
+      "realmBoundary": "Cenozoic / Quaternary / Pleistocene; a proboscidean mammal, not a dinosaur or Mesozoic animal."
+    },
+    "smilodon-fatalis": {
+      "direct": [
+        "Exactly one elongated upper canine pair, a deep chest, robust forequarters, four feline limbs and feet, and a short tail are fossil-led identity cues.",
+        "Smilodon fatalis is a Cenozoic machairodont felid, not a modern tiger, lion, bear, wolf, or dinosaur."
+      ],
+      "analytical": [
+        "Exceptional forelimb robustness supports functional inferences about prey restraint, but the exact hunting sequence is not directly observed.",
+        "Open woodland and grassland mosaics are used as broad habitat context without fixing the species to one landscape across its entire range."
+      ],
+      "hypothetical": [
+        "All coat color, pattern, fur length, sex, weather, exact vegetation, movement, distant bovid spacing, and attention direction are hypothetical.",
+        "The ecology image presents observation, approach, or ambush potential without claiming attack, contact, capture, or cooperative hunting."
+      ],
+      "coatPatternBoundary": "No direct coat evidence establishes plain fur, mottles, stripes, or spots. The plain and faint-mottle gallery treatments are explicitly hypothetical; tiger stripes and modern-cat cloning are rejected.",
+      "canineSoftTissueBoundary": "The elongated upper canine pair is required, but exact lip coverage and the resting relationship of lips, lower jaw, and saber tips remain reconstructed.",
+      "predationBoundary": "Robust forelimbs and saber morphology support functional hypotheses only; no exact kill pose or prey-contact sequence is presented as fact.",
+      "socialityBoundary": "The app does not establish solitary living, pride-like groups, or cooperative hunting as the species default.",
+      "habitatBoundary": "The accepted scenes use a broad Late Pleistocene open-woodland and grassland mosaic; exact site and climate moment are hypothetical.",
+      "realmBoundary": "Cenozoic / Quaternary / Pleistocene; a machairodont felid, not a tiger or dinosaur."
+    }
+  },
+  "records": {
+    "mammuthus-primigenius-representative-v1": {
+      "taxon": "Mammuthus primigenius",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-08T01:14:10+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image workflow",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-eed09a50-b9db-4796-a7d6-e4715e439aae",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-eed09a50-b9db-4796-a7d6-e4715e439aae.png",
+      "approvedProjectPath": "assets/dinosaurs/mammuthus-primigenius-high-shoulder-spiral-tusks-representative-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork or copyrighted character style used.",
+      "sha256": "8b8d47837e8c48d12297221e522d12c3812ddf2e6a44383640622ebb8cedbfdb",
+      "bytes": 2529257,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Scientific-educational original paleoart for a Korean children's Dino Atlas gallery, ages 5-14, horizontal 16:9. Create one adult Mammuthus primigenius in a left-facing eye-level three-quarter lateral view. Keep the complete animal fully inside the frame with generous clear space around both tusk tips, every foot, belly, back, and the short tail. Species identity must be unmistakable: high forequarters and shoulders with the back gently descending toward the hips, a high rounded domed head, very small rounded fur-covered ears, one natural elephant-like trunk, exactly two ivory tusks growing from the upper jaw with clearly separate roots and believable outward-forward-upward spiral curvature, a very short furred tail, and a dense dark chocolate-brown double coat with coarse guard hairs and a woolly undercoat. Show exactly four straight, sturdy columnar limbs connected naturally to the body and four distinct broad nearly round padded elephantine feet; keep eyes, trunk, limb joints, feet and silhouette readable through the fur. Place it in a cold, dry Late Pleistocene mammoth-steppe rich in ochre grasses, sedges and low forbs, with patchy frost and only sparse shallow snow, natural overcast light, calm alert stance. Realistic anatomy-led museum-quality educational illustration, original visual design, no named artist style and no copyrighted character. Avoid: dinosaur or mastodon anatomy; modern African elephant fan ears or naked skin; flat modern-elephant back; low shoulders; long tail; separate camel hump; extra, missing, merged, crossed, lower-jaw or mouth-growing tusks; split or duplicated trunk; hidden, fused, duplicated or three-legged anatomy; hooves, claws, predator paws or long exposed toes; white or blond default coat, stripes or spots; fur hiding the eyes, joints or feet; cropped anatomy; deep snow, barren glacier, blizzard, humans, saddles, buildings, gore, text, logo, border or watermark."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-08T01:14:45+09:00",
+        "method": "Original-size full-frame inspection plus one-animal, one-trunk, two-upper-tusk, four-connected-limb, four-foot, high-shoulder, descending-back, short-tail, crop, artifact, habitat, and representative-promotion audit",
+        "checks": {
+          "expectedAnimalCount": "PASS",
+          "fullFrameAndEdgeClearance": "PASS",
+          "identityAnatomy": "PASS",
+          "fourConnectedLimbsAndFeet": "PASS",
+          "headTrunkAndTusks": "PASS",
+          "shortTail": "PASS",
+          "periodHabitat": "PASS",
+          "artifactAndDuplication": "PASS",
+          "textLogoWatermark": "PASS",
+          "compositionDistinctFromOtherSlots": "PASS",
+          "representativePromotionGate": "PASS"
+        },
+        "result": "PASS as the sole representative-eligible woolly mammoth image in this batch. The core body slope, single trunk, exactly two upper tusks, four connected limbs and feet, short tail, and complete framing are readable. Exact soft tissue, fur color, and habitat moment remain reconstruction."
+      }
+    },
+    "mammuthus-primigenius-pattern-v2": {
+      "taxon": "Mammuthus primigenius",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-08T01:16:05+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen single-change edit of a project-generated prompt-to-image candidate",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-34a9df8a-7aec-427d-80e5-9c357e05600c",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-34a9df8a-7aec-427d-80e5-9c357e05600c.png",
+      "approvedProjectPath": "assets/dinosaurs/mammuthus-primigenius-right-facing-charcoal-coat-review-imagegen-v2.png",
+      "license": "Original project-generated bitmap edited only from another project-generated candidate; no external artwork used.",
+      "sha256": "c9e15c08ae21ccb19a6c1e04771f16921b0c8056222e0c4ffcafc45d564cb975",
+      "bytes": 2493327,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-af340f80-2703-46fc-a0b9-48184171c2dd.png"
+      ],
+      "prompt": [
+        "Edit this generated Mammuthus primigenius image with exactly one anatomical correction: replace the long tufted elephant-like tail with a very short, compact, fur-covered woolly mammoth tail that ends close to the rump and does not hang toward the hock. Keep the tail naturally connected to the pelvis and clearly visible against the background, with no separate tuft. Preserve everything else exactly as closely as possible: the same one animal, right-facing low rear-side three-quarter walking pose, high shoulders and descending back, domed head, tiny ears, one trunk, exactly two spiral upper tusks, exactly four connected columnar legs and four distinct padded feet, charcoal-umber coat, lighting, steppe-tundra background, framing and image dimensions. Do not add or remove any other anatomy. No text, logo, border or watermark."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-08T01:16:35+09:00",
+        "method": "Original-size edit inspection plus tail-shortening isolation, one-trunk, two-tusk, four-limb and four-foot count, crop, artifact, opposite-direction composition, and representative-exclusion audit",
+        "checks": {
+          "expectedAnimalCount": "PASS",
+          "fullFrameAndEdgeClearance": "PASS",
+          "identityAnatomy": "PASS",
+          "fourConnectedLimbsAndFeet": "PASS",
+          "headTrunkAndTusks": "PASS",
+          "shortTail": "PASS",
+          "periodHabitat": "PASS",
+          "artifactAndDuplication": "PASS",
+          "textLogoWatermark": "PASS",
+          "compositionDistinctFromOtherSlots": "PASS",
+          "representativePromotionGate": "NOT_APPLICABLE"
+        },
+        "result": "PASS only as a color and composition review slot. The long-tail original was rejected; the single-change edit restores a short tail while retaining the right-facing rear-three-quarter walk. Soft tissue, gait, and coat tone remain hypothetical, so representative promotion is prohibited."
+      }
+    },
+    "mammuthus-primigenius-ecology-v1": {
+      "taxon": "Mammuthus primigenius",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "gallerySubrole": "adult-calf-foraging-hypothesis",
+      "kind": "anatomy review",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-08T01:17:03+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image ecology workflow",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-07eb9fe8-d812-4bc0-9a77-1d5d41193b18",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-07eb9fe8-d812-4bc0-9a77-1d5d41193b18.png",
+      "approvedProjectPath": "assets/dinosaurs/mammuthus-primigenius-mother-calf-foraging-ecology-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual habitat sources only; no external artwork used.",
+      "sha256": "acd6d6fad852def5e1b058fc77c3b449f21775da7192e28655e7b3cae2a8c275",
+      "bytes": 2739872,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Scientific-educational original paleoecology illustration for a Korean children's Dino Atlas gallery, ages 5-14, horizontal 16:9, gentle and non-graphic. Show exactly two Mammuthus primigenius individuals: one adult female woolly mammoth gently using her single trunk to gather exposed grasses and low forbs, and one smaller calf standing separately beside and slightly behind her in a warm protective spacing. Use a wide, slightly high three-quarter composition distinct from the two single-animal gallery images, with the complete adult and complete calf fully inside the frame and visible ground clearance around every foot. The adult must have high shoulders with the back descending toward a very short furred tail, a domed head, tiny fur-covered ears, dense dark-brown double coat, exactly one trunk, exactly two slimmer upper-jaw spiral tusks, and exactly four sturdy connected columnar legs ending in four broad round padded feet. The calf must have one trunk, four connected sturdy legs, four padded feet, tiny ears, a short tail, a full woolly coat and no prominent adult tusks. Keep the two bodies, trunks, legs and feet physically separate with no overlap that could look fused. Richly vegetated cold dry Late Pleistocene mammoth-steppe: wind-bent grasses, sedges, low flowering forbs, patchy shallow snow and a broad open horizon, not a barren glacier. Convey calm maternal proximity without cartoon faces and label the family relationship only as a visual hypothesis. Original anatomy-led museum-quality educational paleoart, no named artist style or franchise likeness. Avoid: more or fewer than exactly two animals; extra calves; body, trunk, tusk or leg fusion; extra, missing or merged limbs or feet; three-legged anatomy; adult with more or fewer than exactly two upper tusks; tusks on the calf; duplicated or split trunks; long tails, large elephant ears, naked elephant skin, low shoulders or flat modern-elephant backs; separate camel humps; hooves or claws; attack, injury, humans, saddles, buildings, deep snow, glacier, blizzard, anatomy hidden by fog or grass, cropped feet or tusk tips, text, logo, border or watermark."
+      ],
+      "claimBoundary": "Exactly one adult and one calf are shown separately in a vegetated mammoth-steppe. Maternal relation, individual sex, plant gathering, spacing, weather, and exact local flora are illustrative hypotheses, not a documented event.",
+      "review": {
+        "reviewedAt": "2026-08-08T01:17:35+09:00",
+        "method": "Original-size two-individual inspection plus adult and calf separation, trunk and tusk counts, both four-limb and four-foot plans, crop, vegetation occlusion, habitat, and representative-exclusion audit",
+        "checks": {
+          "expectedAnimalCount": "PASS",
+          "fullFrameAndEdgeClearance": "PASS",
+          "identityAnatomy": "PASS",
+          "fourConnectedLimbsAndFeet": "PASS",
+          "headTrunkAndTusks": "PASS",
+          "shortTail": "PASS",
+          "periodHabitat": "PASS",
+          "artifactAndDuplication": "PASS",
+          "textLogoWatermark": "PASS",
+          "compositionDistinctFromOtherSlots": "PASS",
+          "representativePromotionGate": "NOT_APPLICABLE"
+        },
+        "result": "PASS only as an anatomy-review ecology slot. Adult and calf bodies remain separate, the adult has two tusks and one trunk, and both individuals retain four connected limbs and feet. Relationship, sex, feeding moment, colors, and habitat details remain hypothetical; representative promotion is prohibited."
+      }
+    },
+    "smilodon-fatalis-representative-v1": {
+      "taxon": "Smilodon fatalis",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-08T01:18:12+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image workflow",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-de9626b6-4e25-40ab-801e-fbb40fd217d7",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-de9626b6-4e25-40ab-801e-fbb40fd217d7.png",
+      "approvedProjectPath": "assets/dinosaurs/smilodon-fatalis-robust-forequarters-two-canines-representative-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork or copyrighted character style used.",
+      "sha256": "c86a39a2f7e6e4beb78fa5d81dbbfea1a02c0fd15f0225d182c397288c860e7c",
+      "bytes": 2731907,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Scientific-educational original paleoart for a Korean children's Dino Atlas gallery, ages 5-14, horizontal 16:9. Create one adult Smilodon fatalis walking toward the left in a low front three-quarter full-body view. Keep the entire animal fully inside the frame with generous space around the head, all four feet and the complete short tail. Make the species identity anatomically clear: a compact deep chest, thick neck and shoulders, especially robust muscular forequarters and forelimbs, sturdy shorter limbs rather than a long-distance runner, a balanced feline head and muzzle, exactly one elongated pair of flattened gently curved upper saber canines, total exactly two elongated sabers, visible from a slightly open natural mouth; no elongated lower canines. Show exactly four naturally connected feline legs and four separate digitigrade cat paws, with claws mostly retracted, plus one short complete non-tufted tail naturally connected to the pelvis. Use a conservative plain muted tawny-brown coat with slightly lighter underside and no stripes or copied modern-cat pattern. Late Pleistocene southern California open woodland and grassland edge, dry grasses and scattered shrubs, natural morning light, calm alert walk. Realistic anatomy-led museum-quality educational illustration, original visual design, no named artist style or copyrighted media resemblance. Avoid: tiger or lion clone, orange tiger stripes, lion mane, leopard or jaguar rosettes, regular repeated markings; long lion/tiger tail, no tail, floating or tufted tail; slender cheetah legs, bear body or plantigrade bear feet, hyena back, wolf or dog face, gorilla shoulders, fantasy musculature; more or fewer than exactly two elongated upper saber canines, elongated lower canines, four sabers, walrus or elephant tusks, sabers growing through closed lips, crossed or absurdly oversized canines; extra, missing, hidden, fused or three-legged anatomy, duplicated feet, hooves, reptile feet, permanently exposed claws; cropped paws, head or tail, prey contact, blood, gore, asphalt trap, humans, text, logo, border or watermark."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-08T01:18:45+09:00",
+        "method": "Original-size full-frame inspection plus one-animal, two-upper-saber, robust-forequarter, four-connected-limb, four-paw, short-tail, crop, artifact, habitat, modern-cat-drift, and representative-promotion audit",
+        "checks": {
+          "expectedAnimalCount": "PASS",
+          "fullFrameAndEdgeClearance": "PASS",
+          "identityAnatomy": "PASS",
+          "fourConnectedLimbsAndFeet": "PASS",
+          "headAndDentition": "PASS",
+          "shortTail": "PASS",
+          "periodHabitat": "PASS",
+          "artifactAndDuplication": "PASS",
+          "textLogoWatermark": "PASS",
+          "compositionDistinctFromOtherSlots": "PASS",
+          "representativePromotionGate": "PASS"
+        },
+        "result": "PASS as the sole representative-eligible Smilodon image in this batch. One upper saber pair, robust forequarters, four connected limbs and paws, a short tail, and complete framing are readable without tiger striping. Exact lips, coat, paw soft tissue, and walking moment remain reconstruction."
+      }
+    },
+    "smilodon-fatalis-pattern-v2": {
+      "taxon": "Smilodon fatalis",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-08T01:20:16+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen fresh prompt-to-image retry",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-f59607a5-f28d-43d9-8c05-3242f8032f47",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-f59607a5-f28d-43d9-8c05-3242f8032f47.png",
+      "approvedProjectPath": "assets/dinosaurs/smilodon-fatalis-right-facing-gray-mottle-review-imagegen-v2.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork used.",
+      "sha256": "653707f23ff484cf393a0b1f57840bc6c2619cc4bb5edcc7c71759cd21282da2",
+      "bytes": 2649759,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Scientific-educational original paleoart for a Korean children's Dino Atlas gallery, ages 5-14, horizontal 16:9. One adult Smilodon fatalis, complete body fully inside frame, facing right in a high rear-side three-quarter standing pose with its head turned slightly toward the viewer. This is a color-variation review image, not a representative. Preserve strict identity: compact deep chest, thick neck, robust shoulders and forelimbs, sturdy relatively short hind limbs, feline head and muzzle, exactly one pair and total exactly two elongated flattened gently curved upper saber canines visible from a slightly open mouth, no elongated lower canines; exactly four connected feline legs and exactly four separate digitigrade cat paws with every claw fully retracted and invisible; one short complete tail attached to the pelvis, ending near the rump without a tuft. Coat is hypothetical and must be non-tiger: muted cool gray-brown with salt-and-pepper guard hairs and only three or four broad, faint, cloud-edged asymmetrical darker tonal fields on the flank and shoulders, separated by very large plain areas. Absolutely no lines, stripes, bars, bands, rings, rows, rosettes, dots, repeated marks or mirrored pattern. Late Pleistocene open woodland and dry grassland after light rain, cool diffuse side light, distant valley, anatomically readable ground contact. Original museum-quality anatomy-led educational illustration, no named artist style or copyrighted media likeness. Avoid: tiger, lion, leopard, jaguar or snow-leopard clone; orange coat, mane, stripes of any kind, linear chest marks, leg bands, tail rings, repeated spots or symmetrical markings; long tail, missing or floating tail; slender cheetah body, bear or hyena anatomy, dog face, fantasy muscles; more or fewer than exactly two elongated upper saber canines, elongated lower canines, four sabers, crossed or lip-piercing canines; visible claws; extra, missing, hidden, fused or three-legged anatomy, duplicate feet, hooves; cropped paws, head or tail, prey, pack, blood, gore, asphalt trap, humans, text, logo, border or watermark."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-08T01:20:50+09:00",
+        "method": "Original-size fresh-candidate inspection plus two-upper-saber, four-limb and four-paw count, short-tail, claw, crop, pattern regularity, opposite-direction composition, and representative-exclusion audit",
+        "checks": {
+          "expectedAnimalCount": "PASS",
+          "fullFrameAndEdgeClearance": "PASS",
+          "identityAnatomy": "PASS",
+          "fourConnectedLimbsAndFeet": "PASS",
+          "headAndDentition": "PASS",
+          "shortTail": "PASS",
+          "periodHabitat": "PASS",
+          "artifactAndDuplication": "PASS",
+          "textLogoWatermark": "PASS",
+          "compositionDistinctFromOtherSlots": "PASS",
+          "representativePromotionGate": "NOT_APPLICABLE"
+        },
+        "result": "PASS only as a color and composition review slot. The first pattern candidate was rejected for tiger-like linear markings; this retry uses broad plain areas and faint irregular tonal fields in a distinct high right-facing pose. Coat, exact proportions, and soft tissue remain hypothetical; representative promotion is prohibited."
+      }
+    },
+    "smilodon-fatalis-ecology-v1": {
+      "taxon": "Smilodon fatalis",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "gallerySubrole": "non-contact-distant-bovid-attention-hypothesis",
+      "kind": "anatomy review",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-08T01:21:36+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image ecology workflow",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-59b8dfb7-17fa-4ef6-be0e-c5856fde40f0",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-59b8dfb7-17fa-4ef6-be0e-c5856fde40f0.png",
+      "approvedProjectPath": "assets/dinosaurs/smilodon-fatalis-dry-wash-distant-bovids-ecology-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual habitat and functional-morphology sources only; no external artwork used.",
+      "sha256": "97886a6a58c901606b875b8d67c896eb4aeb6f202386fbc12022b779067a1efd",
+      "bytes": 2941930,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Scientific-educational original paleoecology illustration for a Korean children's Dino Atlas gallery, ages 5-14, horizontal 16:9, non-graphic. Use a wide high-oblique composition. Show exactly one adult Smilodon fatalis moving slowly from right to left across a shallow dry wash at the boundary between open woodland and grassland, with its head turned toward a very distant group of three large Pleistocene bovid silhouettes on the far plain. The distant animals must remain small, separated and non-contacting background context; no chase, attack or certainty of hunting behavior. Keep the Smilodon complete and fully readable, with no shrubs or grass obscuring its legs: compact deep chest, thick neck, strong shoulders and especially robust forelimbs, sturdy relatively short feline hind limbs, one short complete tail connected to the pelvis, exactly four connected legs and exactly four distinct digitigrade cat paws, claws retracted. Its mouth is slightly open so exactly one elongated pair and total exactly two flattened gently curved upper saber canines can be seen; no elongated lower canines. Use a conservative muted tawny-gray plain coat with subtle natural grizzling only, no stripes, rosettes or repeated marks. Late Pleistocene southern California mosaic of oak-like open woodland, sage scrub, dry grasses and a broad valley, late golden light, clear air. This is a cautious approach or observation hypothesis, not a documented individual event. Original anatomy-led museum-quality educational illustration, no named artist style or copyrighted media resemblance. Avoid: more than one Smilodon, pack or pride, contact with prey, pounce, sprint, injury, blood or gore; body or leg hidden by vegetation, dust or blur; extra, missing, fused or three-legged anatomy, duplicate paws, visible claws, hooves on the cat; long, missing, floating or tufted tail; bear body, hyena back, wolf face, cheetah legs, tiger stripes, lion mane, leopard rosettes; more or fewer than exactly two elongated upper saber canines, elongated lower canines, four sabers, crossed or lip-piercing canines; cropped head, paws or tail; asphalt trap, humans, modern objects, text, logo, border or watermark."
+      ],
+      "claimBoundary": "Exactly one Smilodon is shown moving through a dry wash while three distant bovids remain separate background context. The image makes no claim of attack, contact, capture, kill, pack hunting, or a documented species-level association. Attention, approach, spacing, weather, and event are hypothetical.",
+      "review": {
+        "reviewedAt": "2026-08-08T01:22:10+09:00",
+        "method": "Original-size wide-scene inspection plus one-foreground-cat, three-distant-bovid, non-contact separation, two-upper-saber, four-limb and four-paw count, short-tail, crop, habitat, and representative-exclusion audit",
+        "checks": {
+          "expectedAnimalCount": "PASS",
+          "fullFrameAndEdgeClearance": "PASS",
+          "identityAnatomy": "PASS",
+          "fourConnectedLimbsAndFeet": "PASS",
+          "headAndDentition": "PASS",
+          "shortTail": "PASS",
+          "periodHabitat": "PASS",
+          "artifactAndDuplication": "PASS",
+          "textLogoWatermark": "PASS",
+          "compositionDistinctFromOtherSlots": "PASS",
+          "representativePromotionGate": "NOT_APPLICABLE"
+        },
+        "result": "PASS only as an anatomy-review habitat image. One complete Smilodon retains the upper saber pair, robust forequarters, four connected limbs and paws, and short tail; three distant bovids remain separate with no contact or chase. All behavior and scene specifics remain hypothetical; representative promotion is prohibited."
+      }
+    }
+  },
+  "rejectedCandidates": {
+    "mammuthus-primigenius-pattern-long-tail-v1": {
+      "taxon": "Mammuthus primigenius",
+      "galleryRoleAttempted": "color-pattern",
+      "callId": "exec-af340f80-2703-46fc-a0b9-48184171c2dd",
+      "generatedAt": "2026-08-08T01:15:18+09:00",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-af340f80-2703-46fc-a0b9-48184171c2dd.png",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "sha256": "0aa3657a3cd601987271e920afa051e7944c3c62771df4982dbe7ae0f1016b55",
+      "bytes": 2683943,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Scientific-educational original paleoart for a Korean children's Dino Atlas gallery, ages 5-14, horizontal 16:9. Create one adult Mammuthus primigenius walking calmly toward the right in a low rear-side three-quarter composition that is clearly different from an eye-level left-facing representative. Keep the complete animal fully inside the frame with generous clearance around both tusk tips, every foot and the short tail. Preserve strict species identity: high forequarters and shoulders, back gently descending toward the hips, high rounded domed head, tiny rounded fur-covered ears, exactly one natural elephant-like trunk, exactly two separate upper-jaw tusks with believable outward-forward-upward spiral curvature, one very short furred tail, and exactly four sturdy columnar limbs connected to four distinct broad round padded feet. Use a plausible charcoal-umber coat with muted gray-brown undercoat and subtle irregular tonal breakup caused only by mixed guard hairs, wind and natural wear; no invented stripes, spots or repeated pattern. Show the wind lifting a few guard hairs while joints, eyes, trunk, feet and silhouette remain readable. Vegetated cold dry Late Pleistocene steppe-tundra with tawny grasses, scattered low herbs and thin frost, clear late-afternoon side light, walking pose with all four feet anatomically resolved. Original museum-quality anatomy-led educational illustration, no named artist style and no copied franchise imagery. Avoid: dinosaur, mastodon or modern African elephant anatomy; fan ears, naked skin, flat back, low shoulders, long tail or separate camel hump; extra, missing, fused, crossed, lower-jaw or mouth-growing tusks; split or duplicated trunk; hidden, fused, duplicated or three-legged anatomy; hooves, claws, predator paws; white or blond coat, orange tiger stripes, regular spots; fur hiding eyes, joints or feet; same direction or camera as the representative; cropped anatomy, deep snow, bare glacier, blizzard, humans, gore, text, logo, border or watermark."
+      ],
+      "reasons": [
+        "The tail hangs toward the hock and ends in a modern-elephant-like tuft, failing the very-short woolly-mammoth tail gate.",
+        "A single-change project-generated edit corrected only the tail and became the approved review-hold v2; this original was never copied into assets/dinosaurs."
+      ]
+    },
+    "smilodon-fatalis-pattern-tiger-stripes-v1": {
+      "taxon": "Smilodon fatalis",
+      "galleryRoleAttempted": "color-pattern",
+      "callId": "exec-f9e379b0-c923-4ecd-9896-8159ab53c899",
+      "generatedAt": "2026-08-08T01:19:19+09:00",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-f9e379b0-c923-4ecd-9896-8159ab53c899.png",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "sha256": "0ee87392dcef1c618b2197d11198839517bc7db3fa8d7b1b0a8b6df460c8295d",
+      "bytes": 2464725,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Scientific-educational original paleoart for a Korean children's Dino Atlas gallery, ages 5-14, horizontal 16:9. Create one adult Smilodon fatalis standing and looking toward the right in a slightly elevated front three-quarter full-body composition, clearly different in direction, camera height, pose and lighting from a low left-facing walking representative. Keep the entire animal and the complete short tail fully inside the frame, with all four feet clearly separated on visible ground. Preserve strict anatomy: compact deep chest, thick neck and powerful shoulders, robust forequarters and forelimbs, sturdy relatively short feline hind limbs, a balanced feline head and muzzle, exactly one elongated pair of flattened gently curved upper saber canines, total exactly two elongated sabers, visible from a naturally slightly open mouth, no elongated lower canines. Show exactly four connected feline legs and four distinct digitigrade cat paws with claws mostly retracted; one short complete non-tufted tail connected naturally to the pelvis. Coat treatment is hypothetical: gray-ochre and muted tawny fur with a few sparse, softly blurred, irregular asymmetrical darker mottles separated by broad plain areas; no repeated spots, rosettes or stripes and no exact modern-cat clone. Place it on a Late Pleistocene open woodland ridge with sage scrub and dry grass after light rain, cool side light and a broad valley beyond. Original anatomy-led museum-quality educational illustration, no named artist style or copyrighted media resemblance. Avoid: orange tiger stripes, lion mane, leopard or jaguar rosettes, regular repeated or symmetrical markings; long tiger tail, missing tail, floating or tufted tail; slender cheetah legs, bear body or plantigrade bear feet, hyena back, wolf/dog face, fantasy musculature; more or fewer than exactly two elongated upper saber canines, elongated lower canines, four sabers, tusks, crossed or oversized canines, sabers growing through closed lips; extra, missing, hidden, fused or three-legged anatomy, duplicate feet, hooves, reptile feet, permanently exposed claws; cropped head, paws or tail, pack hunt, prey contact, blood, gore, asphalt trap, humans, text, logo, border or watermark."
+      ],
+      "reasons": [
+        "The chest, forelimbs, and flank developed linear tiger-like bars despite the explicit non-tiger coat boundary.",
+        "The paws also showed more exposed claw tips than desired. A fresh non-linear gray-brown retry replaced this candidate, which was never copied into assets/dinosaurs."
+      ]
+    }
+  }
+}

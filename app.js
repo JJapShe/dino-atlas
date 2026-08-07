@@ -1,5 +1,75 @@
 const dinosaurs = [
   {
+    id: "mammuthus-primigenius",
+    name: "Mammuthus primigenius",
+    koreanName: "털매머드",
+    aliases: ["울리 매머드", "매머드", "맘모스", "Woolly mammoth", "Mammoth"],
+    atlasRealm: "cenozoic",
+    rootClade: "Mammalia",
+    clade: "Proboscidea",
+    family: "Elephantidae",
+    era: "quaternary",
+    period: "플라이스토세",
+    diet: "초식",
+    region: "북부 유라시아·베링기아·북아메리카",
+    length: 4.0,
+    sizeLabel: "어깨높이",
+    sizeDisplay: "약 2.8~3.2 m(지역·성별 차이)",
+    knowledgeLevel: 1,
+    imageSlots: 3,
+    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 신생대 전용",
+    summary:
+      "털매머드는 공룡이 사라진 뒤 플라이스토세의 차갑고 건조한 초원에 살았던 코끼리과 포유류입니다. 높은 어깨에서 뒤로 낮아지는 등, 작은 귀와 짧은 꼬리, 두꺼운 겹털, 위턱에서 자란 두 개의 나선형 엄니가 특징입니다. 털빛과 정확한 무늬, 가족 행동의 세부는 화석만으로 모두 확정할 수 없습니다.",
+    features: {
+      분류: "공룡이 아닌 장비목 코끼리과 포유류",
+      체형: "높은 앞어깨와 엉덩이 쪽으로 완만하게 낮아지는 등, 둥글게 솟은 머리",
+      보온: "작은 털 덮인 귀와 짧은 꼬리, 긴 겉털과 조밀한 속털",
+      엄니: "위턱에서 시작해 바깥·앞·위쪽으로 휘는 서로 분리된 두 개의 엄니",
+      서식지: "끝없는 얼음판이 아니라 풀·사초·초본이 풍부한 차갑고 건조한 매머드 스텝",
+    },
+    sources: [
+      "Natural History Museum: Were all mammoths woolly?",
+      "Larramendi 2016 Acta Palaeontologica Polonica",
+      "Grigoriev et al. 2017 Quaternary International",
+      "Willerslev et al. 2014 Nature",
+    ],
+  },
+  {
+    id: "smilodon-fatalis",
+    name: "Smilodon fatalis",
+    koreanName: "스밀로돈",
+    aliases: ["검치고양이", "검치호", "세이버투스 캣", "Smilodon"],
+    atlasRealm: "cenozoic",
+    rootClade: "Mammalia",
+    clade: "Carnivora",
+    family: "Felidae",
+    era: "quaternary",
+    period: "플라이스토세",
+    diet: "육식",
+    region: "북아메리카·중앙아메리카·남아메리카 서부",
+    length: 1.8,
+    sizeLabel: "몸길이",
+    sizeDisplay: "약 1.5~1.8 m(표본별 차이)",
+    knowledgeLevel: 1,
+    imageSlots: 3,
+    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 신생대 전용",
+    summary:
+      "스밀로돈은 공룡이 사라진 뒤 플라이스토세 아메리카에 살았던 검치고양이입니다. 현생 호랑이 그 자체가 아니며, 위턱의 길고 납작한 송곳니 한 쌍과 깊은 가슴, 굵은 목, 강건한 앞다리, 짧은 꼬리가 특징입니다. 털색과 무늬, 단독 또는 무리 생활 여부는 아직 확실하지 않습니다.",
+    features: {
+      분류: "현생 호랑이의 다른 이름이 아닌 고양잇과 마카이로두스아과 포유류",
+      검치: "위턱의 납작하고 완만하게 휜 긴 송곳니 한 쌍; 아래턱 검치나 네 개의 검치 없음",
+      앞부분: "두껍고 깊은 가슴, 굵은 목과 어깨, 특히 강건한 두 앞다리",
+      보행: "달리기형 고양이보다 짧고 튼튼한 네 다리와 고양잇과형 네 발",
+      불확실성: "털색·무늬와 정확한 사냥 순서·사회성은 직접 보존되지 않은 복원 가설",
+    },
+    sources: [
+      "Florida Museum of Natural History: Smilodon fatalis",
+      "Smithsonian NMNH Smilodon fatalis specimen 3583034",
+      "Meachen-Samuels & Van Valkenburgh 2010 PLOS ONE",
+      "McHenry et al. 2007 PNAS",
+    ],
+  },
+  {
     id: "dimetrodon-grandis",
     name: "Dimetrodon grandis",
     koreanName: "디메트로돈",
@@ -3870,6 +3940,8 @@ const cladeMeta = {
   Dicynodontia: "디키노돈트류",
   Cynodontia: "키노돈트류",
   Mammalia: "포유류",
+  Carnivora: "식육목",
+  Proboscidea: "장비목",
 };
 
 const taxonomySearchAliases = {
@@ -3903,7 +3975,9 @@ const taxonomySearchAliases = {
   Sphenacodontia: ["스페나코돈류", "초기 육식성 단궁류"],
   Dicynodontia: ["디키노돈트", "두 엄니 단궁류"],
   Cynodontia: ["키노돈트", "포유형 단궁류"],
-  Mammalia: ["포유류", "초기 포유류"],
+  Mammalia: ["포유류", "초기 포유류", "신생대 포유류"],
+  Carnivora: ["식육목", "육식 포유류", "고양잇과", "검치호"],
+  Proboscidea: ["장비목", "코끼리류", "코끼리", "매머드"],
 };
 
 const knowledgeLevels = {
@@ -3939,6 +4013,29 @@ const realmEras = Object.freeze({
       height: 355,
     }),
   ]),
+  cenozoic: Object.freeze([
+    Object.freeze({
+      id: "paleogene",
+      label: "고진기",
+      range: "66-23 Ma",
+      top: 0,
+      height: 355,
+    }),
+    Object.freeze({
+      id: "neogene",
+      label: "신진기",
+      range: "23-2.58 Ma",
+      top: 355,
+      height: 390,
+    }),
+    Object.freeze({
+      id: "quaternary",
+      label: "제4기",
+      range: "2.58 Ma-현재",
+      top: 745,
+      height: 575,
+    }),
+  ]),
   mesozoic: Object.freeze([
     Object.freeze({
       id: "triassic",
@@ -3969,14 +4066,27 @@ const atlasRealmConfigs = Object.freeze({
     id: "paleozoic",
     label: "고생대",
     eyebrow: "Paleozoic Phylogeny",
+    mapHeading: "페름기 계통 지도",
     defaultScope: "permian",
     defaultSelection: "dimetrodon-grandis",
     catalogNote: "페름기 생물을 중생대 생물과 섞지 않고 별도 시대 지도와 도감에서 살펴봅니다.",
+  }),
+  cenozoic: Object.freeze({
+    id: "cenozoic",
+    label: "신생대",
+    eyebrow: "Cenozoic Phylogeny",
+    mapHeading: "신생대 계통 지도",
+    defaultScope: "quaternary",
+    defaultSelection: "mammuthus-primigenius",
+    catalogNote: "고진기·신진기·제4기의 대표 포유류와 다른 생물을 별도 시대 지도와 도감에서 살펴봅니다.",
+    emptyTitle: "신생대 생물을 준비 중입니다",
+    emptyNote: "매머드와 검치호 같은 대표 생물부터 해부학 검토를 마친 뒤 차례로 공개합니다.",
   }),
   mesozoic: Object.freeze({
     id: "mesozoic",
     label: "중생대",
     eyebrow: "Mesozoic Phylogeny",
+    mapHeading: "시대별 계통 지도",
     defaultScope: "cretaceous",
     defaultSelection: "tyrannosaurus-rex",
     catalogNote: "공룡·익룡·바다 파충류와 초기 조류·단궁류·고대 두족류를 분류별로 나누어 봅니다.",
@@ -3986,6 +4096,7 @@ const atlasRealmConfigs = Object.freeze({
 function getAtlasRealm(dino) {
   if (!dino) return "mesozoic";
   if (dino.atlasRealm && atlasRealmConfigs[dino.atlasRealm]) return dino.atlasRealm;
+  if (realmEras.cenozoic.some((era) => era.id === dino.era)) return "cenozoic";
   return dino.era === "permian" ? "paleozoic" : "mesozoic";
 }
 
@@ -4025,7 +4136,9 @@ const phyloNodes = [
   { id: "sphenacodontia", type: "group", label: "Sphenacodontia", caption: "스페나코돈류", x: 355, y: 56 },
   { id: "dicynodontia", type: "group", label: "Dicynodontia", caption: "디키노돈트류", x: 355, y: 56 },
   { id: "cynodontia", type: "group", label: "Cynodontia", caption: "키노돈트류", x: 355, y: 156 },
-  { id: "mammalia", type: "group", label: "Mammalia", caption: "초기 포유류", x: 620, y: 156 },
+  { id: "mammalia", type: "group", label: "Mammalia", caption: "포유류", x: 620, y: 156 },
+  { id: "carnivora", type: "group", label: "Carnivora", caption: "식육목", x: 890, y: 106 },
+  { id: "proboscidea", type: "group", label: "Proboscidea", caption: "장비목", x: 890, y: 206 },
   { id: "mollusca", type: "group", label: "Mollusca", caption: "연체동물 계통", x: 120, y: 356 },
   { id: "cephalopoda", type: "group", label: "Cephalopoda", caption: "두족류", x: 355, y: 356 },
   { id: "ammonoidea", type: "group", label: "Ammonoidea", caption: "암모나이트류", x: 620, y: 326 },
@@ -4593,6 +4706,8 @@ const phyloEdges = [
   ["synapsida", "dicynodontia"],
   ["synapsida", "cynodontia"],
   ["cynodontia", "mammalia"],
+  ["mammalia", "carnivora"],
+  ["mammalia", "proboscidea"],
   ["mollusca", "cephalopoda"],
   ["cephalopoda", "ammonoidea"],
   ["cephalopoda", "belemnitida"],
@@ -4770,6 +4885,14 @@ const state = {
       diet: "all",
       knowledgeLevel: "all",
     },
+    cenozoic: {
+      selectedId: "mammuthus-primigenius",
+      scope: "quaternary",
+      search: "",
+      classification: "all",
+      diet: "all",
+      knowledgeLevel: "all",
+    },
     mesozoic: {
       selectedId: "tyrannosaurus-rex",
       scope: "cretaceous",
@@ -4822,12 +4945,14 @@ const classificationGroups = Object.freeze([
   { id: "pterosauria", label: "익룡" },
   { id: "marine-reptilia", label: "바다 파충류" },
   { id: "synapsida", label: "단궁류" },
+  { id: "mammalia", label: "포유류" },
   { id: "cephalopoda", label: "고대 두족류" },
   { id: "early-dinosaur", label: "초기 용반류" },
 ]);
 
 const timelinePeriodOrder = Object.freeze([
   { id: "early-permian", label: "전기 페름기", era: "permian" },
+  { id: "pleistocene", label: "플라이스토세", era: "quaternary" },
   { id: "early-triassic", label: "전기 트라이아스기", era: "triassic" },
   { id: "middle-triassic", label: "중기 트라이아스기", era: "triassic" },
   { id: "late-triassic", label: "후기 트라이아스기", era: "triassic" },
@@ -4841,6 +4966,8 @@ const timelinePeriodOrder = Object.freeze([
 ]);
 
 const recentImageUpdateTaxa = [
+  "mammuthus-primigenius",
+  "smilodon-fatalis",
   "dimetrodon-grandis",
   "archaeopteryx-lithographica",
   "asteroceras-obtusum",
@@ -5007,6 +5134,148 @@ function saveCandidateReviewDecisions() {
 }
 
 const generatedImageSamples = {
+  "mammuthus-primigenius": [
+    {
+      kind: "count-level pass",
+      title: "털매머드 높은 어깨·두 나선 엄니 전신 대표",
+      body: "차갑고 건조한 플라이스토세 매머드 스텝의 단독 전신 대표입니다. 원본 크기에서 높은 어깨와 뒤로 낮아지는 등, 둥근 머리, 작은 귀, 한 코, 위턱의 서로 분리된 나선 엄니 두 개, 네 다리와 넓은 네 발, 짧은 꼬리를 확인했습니다. 짙은 갈색 털빛과 정확한 털 길이 배치는 가설입니다.",
+      source: "assets/dinosaurs/mammuthus-primigenius-high-shoulder-spiral-tusks-representative-imagegen-v1.png",
+      variant: "높은 어깨 두 나선 엄니 짙은 갈색 전신 대표 이미지 생성 v1",
+      src: "assets/dinosaurs/mammuthus-primigenius-high-shoulder-spiral-tusks-representative-imagegen-v1.png",
+      gallerySlot: 1,
+      galleryRole: "representative",
+      phenotype: "dark-chocolate-a",
+      habitatKey: "late-pleistocene-mammoth-steppe",
+      sourceAttribution: "OpenAI built-in image generation; museum and peer-reviewed woolly mammoth sources supplied factual constraints only",
+      licenseRecord: "Generated project asset; no external artwork, reconstruction, franchise frame, or named-artist style was used as generation input",
+      generationPromptRecord: "tools/comfyui/cenozoic-life-expansion-20260808-phase-a1.json#records/mammuthus-primigenius-representative-v1",
+      generationSeed: "service-assigned, not exposed",
+      generationWorkflow: "OpenAI built-in image generation; prompt-to-image anatomy-led count pass",
+      reviewStatus: "원본 크기 count-level 검수 통과 · S1 대표 승인 · 털빛/연조직 가설 경계",
+      locality: "broad Late Pleistocene mammoth-steppe reconstruction; exact place, plants, weather, and moment are hypothetical",
+      anatomyEvidenceBoundary: "high shoulders, descending back, domed head, small ears, short tail, double coat, two upper tusks, trunk, and four-limb plan are evidence-led; exact soft-tissue contours and feet include reconstruction",
+      colorEvidence: "dark chocolate brown, umber, ivory, and all guard-hair color placement are conservative but hypothetical",
+      metadataRecord: "tools/comfyui/cenozoic-life-expansion-20260808-phase-a1.json",
+      representativeEligible: true,
+    },
+    {
+      kind: "review hold",
+      title: "털매머드 숯갈색 반대 방향 보행과 짧은 꼬리",
+      body: "대표의 왼쪽 정면 사선과 달리 오른쪽을 향해 걷는 낮은 후방 사선 구도입니다. 한 코와 나선 엄니 두 개, 네 다리와 네 발, 높은 어깨와 등 경사를 유지했고, 첫 후보의 길고 술 달린 꼬리는 탈락시킨 뒤 짧은 털 꼬리로 단일 보정했습니다. 털빛과 걸음 순간, 꼬리 연조직은 가설이라 S2 review hold로만 둡니다.",
+      source: "assets/dinosaurs/mammuthus-primigenius-right-facing-charcoal-coat-review-imagegen-v2.png",
+      variant: "숯갈색 오른쪽 보행 짧은 꼬리 단일 보정 이미지 생성 v2",
+      src: "assets/dinosaurs/mammuthus-primigenius-right-facing-charcoal-coat-review-imagegen-v2.png",
+      gallerySlot: 2,
+      galleryRole: "color-pattern",
+      phenotype: "charcoal-umber-b",
+      habitatKey: "late-pleistocene-steppe-tundra-frost",
+      sourceAttribution: "OpenAI built-in image generation; factual sources supplied identity and coat-evidence boundaries only",
+      licenseRecord: "Generated project asset; no external artwork, reconstruction, franchise frame, or named-artist style was used as generation input",
+      generationPromptRecord: "tools/comfyui/cenozoic-life-expansion-20260808-phase-a1.json#records/mammuthus-primigenius-pattern-v2",
+      generationSeed: "service-assigned, not exposed",
+      generationWorkflow: "OpenAI built-in image generation; opposite-direction prompt-to-image followed by a single tail-shortening image edit",
+      reviewStatus: "원본 크기 review-hold 수용 · 방향/시점/광원 분리 · 짧은 꼬리 보정 · 대표 승격 금지",
+      anatomyEvidenceBoundary: "core body slope, two-tusk, single-trunk, four-limb, four-foot, and short-tail cues are retained; moving pose, distal feet, and soft-tissue contours include reconstruction",
+      colorEvidence: "charcoal umber, gray-brown undercoat, wind breakup, and all tonal placement are hypothetical",
+      metadataRecord: "tools/comfyui/cenozoic-life-expansion-20260808-phase-a1.json",
+      representativeEligible: false,
+    },
+    {
+      kind: "anatomy review",
+      title: "털매머드 어미와 새끼의 스텝 초본 채집",
+      body: "넓고 약간 높은 화면에서 성체 한 마리가 코로 풀과 초본을 모으고 새끼 한 마리가 곁에 떨어져 서 있는 생태 장면입니다. 성체의 엄니 두 개·코 한 개·네 다리와 새끼의 코 한 개·네 다리를 각각 확인했습니다. 두 개체의 관계와 행동 순간은 가능성 높은 비교 가설이며 직접 관찰 사실이 아니므로 S3 anatomy review로만 사용합니다.",
+      source: "assets/dinosaurs/mammuthus-primigenius-mother-calf-foraging-ecology-imagegen-v1.png",
+      variant: "어미와 새끼가 떨어져 서서 초본을 모으는 매머드 스텝 생태 이미지 생성 v1",
+      src: "assets/dinosaurs/mammuthus-primigenius-mother-calf-foraging-ecology-imagegen-v1.png",
+      gallerySlot: 3,
+      galleryRole: "habitat-ecology",
+      phenotype: "brown-steppe-c",
+      habitatKey: "late-pleistocene-mammoth-steppe-forbs",
+      sourceAttribution: "OpenAI built-in image generation; peer-reviewed habitat and population evidence supplied boundaries only",
+      licenseRecord: "Generated project asset; no external artwork, reconstruction, franchise frame, or named-artist style was used as generation input",
+      generationPromptRecord: "tools/comfyui/cenozoic-life-expansion-20260808-phase-a1.json#records/mammuthus-primigenius-ecology-v1",
+      generationSeed: "service-assigned, not exposed",
+      generationWorkflow: "OpenAI built-in image generation; wide two-individual ecology count and separation pass",
+      reviewStatus: "원본 크기 anatomy-review 수용 · 두 개체 분리/사지 수 확인 · 가족 관계·초본 채집 순간 가설 · 대표 승격 금지",
+      locality: "broad vegetated mammoth-steppe reconstruction; exact herd relationship, flowers, snow cover, and weather are hypothetical",
+      behaviorEvidence: "an adult remaining near a calf and gathering plants is an illustrative maternal and feeding hypothesis, not a documented individual event",
+      anatomyEvidenceBoundary: "adult identity cues and both four-limb plans are readable; calf proportions, soft tissue, exact tusk absence, and posture moments include reconstruction",
+      colorEvidence: "dark brown coats, floral colors, snow and light are hypothetical",
+      metadataRecord: "tools/comfyui/cenozoic-life-expansion-20260808-phase-a1.json",
+      representativeEligible: false,
+    },
+  ],
+  "smilodon-fatalis": [
+    {
+      kind: "count-level pass",
+      title: "스밀로돈 강건한 앞부분·위턱 검치 두 개 전신 대표",
+      body: "플라이스토세 남부 캘리포니아 개방림 가장자리의 단독 전신 대표입니다. 원본 크기에서 깊은 가슴과 굵은 목·어깨, 강건한 두 앞다리, 튼튼한 네 다리와 네 발, 위턱의 길고 납작한 검치 정확히 두 개, 골반에 연결된 짧은 꼬리를 확인했습니다. 민무늬 황갈색 털은 보수적 가설입니다.",
+      source: "assets/dinosaurs/smilodon-fatalis-robust-forequarters-two-canines-representative-imagegen-v1.png",
+      variant: "강건한 앞부분 위턱 검치 두 개 황갈색 전신 대표 이미지 생성 v1",
+      src: "assets/dinosaurs/smilodon-fatalis-robust-forequarters-two-canines-representative-imagegen-v1.png",
+      gallerySlot: 1,
+      galleryRole: "representative",
+      phenotype: "plain-tawny-a",
+      habitatKey: "late-pleistocene-california-open-woodland",
+      sourceAttribution: "OpenAI built-in image generation; museum and peer-reviewed Smilodon sources supplied factual constraints only",
+      licenseRecord: "Generated project asset; no external artwork, reconstruction, franchise frame, or named-artist style was used as generation input",
+      generationPromptRecord: "tools/comfyui/cenozoic-life-expansion-20260808-phase-a1.json#records/smilodon-fatalis-representative-v1",
+      generationSeed: "service-assigned, not exposed",
+      generationWorkflow: "OpenAI built-in image generation; prompt-to-image two-canine and four-limb count pass",
+      reviewStatus: "원본 크기 count-level 검수 통과 · S1 대표 승인 · 털색/입술 연조직 가설 경계",
+      locality: "broad Late Pleistocene southern California open-woodland reconstruction; exact site, plants, weather, and moment are hypothetical",
+      anatomyEvidenceBoundary: "robust forelimbs, deep chest, upper saber pair, feline feet, and short tail are fossil-led; exact lips, ears, fur, paws, and posture include reconstruction",
+      colorEvidence: "muted tawny brown, pale underside, and all color placement are hypothetical",
+      metadataRecord: "tools/comfyui/cenozoic-life-expansion-20260808-phase-a1.json",
+      representativeEligible: true,
+    },
+    {
+      kind: "review hold",
+      title: "스밀로돈 회갈색 흐림 무늬와 높은 반대 방향 구도",
+      body: "대표의 낮은 왼쪽 보행과 달리 높은 후방 사선에서 오른쪽으로 고개를 돌린 색·무늬 후보입니다. 위턱 검치 두 개, 강건한 네 다리와 네 발, 짧은 꼬리를 유지하고 규칙적인 줄 대신 큰 빈 공간 사이의 희미한 회갈색 흐림만 남겼습니다. 첫 후보의 호랑이식 줄무늬는 탈락했고, 실제 털무늬는 미확정이라 S2 review hold로만 둡니다.",
+      source: "assets/dinosaurs/smilodon-fatalis-right-facing-gray-mottle-review-imagegen-v2.png",
+      variant: "회갈색 큰 빈 공간 흐림 무늬 높은 오른쪽 구도 이미지 생성 v2",
+      src: "assets/dinosaurs/smilodon-fatalis-right-facing-gray-mottle-review-imagegen-v2.png",
+      gallerySlot: 2,
+      galleryRole: "color-pattern",
+      phenotype: "gray-ochre-mottle-b",
+      habitatKey: "late-pleistocene-open-woodland-ridge",
+      sourceAttribution: "OpenAI built-in image generation; factual sources supplied anatomy and coat-uncertainty boundaries only",
+      licenseRecord: "Generated project asset; no external artwork, reconstruction, franchise frame, or named-artist style was used as generation input",
+      generationPromptRecord: "tools/comfyui/cenozoic-life-expansion-20260808-phase-a1.json#records/smilodon-fatalis-pattern-v2",
+      generationSeed: "service-assigned, not exposed",
+      generationWorkflow: "OpenAI built-in image generation; fresh prompt-to-image retry after rejecting tiger-like linear markings",
+      reviewStatus: "원본 크기 review-hold 수용 · 방향/시점/환경 분리 · 털무늬 전면 가설 · 대표 승격 금지",
+      anatomyEvidenceBoundary: "two upper sabers, robust forequarters, four limbs and feet, and short tail remain readable; distant-side details, lips, fur and exact proportions include reconstruction",
+      colorEvidence: "cool gray-brown, gray ochre, salt-and-pepper guard hairs, and broad faint mottles are hypothetical",
+      metadataRecord: "tools/comfyui/cenozoic-life-expansion-20260808-phase-a1.json",
+      representativeEligible: false,
+    },
+    {
+      kind: "anatomy review",
+      title: "스밀로돈 건천 이동과 먼 들소류 관찰 생태",
+      body: "넓은 고각 화면에서 스밀로돈 한 마리가 개방림과 초원 사이의 마른 수로를 천천히 지나고, 멀리 떨어진 들소류 세 마리를 바라보는 장면입니다. 고양잇과 한 개체의 검치 두 개·네 다리·네 발·짧은 꼬리가 모두 읽히며 접촉이나 추격은 없습니다. 접근·관찰 또는 매복 가능성을 보여 주는 행동 가설일 뿐 실제 사냥 사건이 아니므로 S3 anatomy review로만 사용합니다.",
+      source: "assets/dinosaurs/smilodon-fatalis-dry-wash-distant-bovids-ecology-imagegen-v1.png",
+      variant: "개방림 건천 이동과 먼 들소류 비접촉 관찰 생태 이미지 생성 v1",
+      src: "assets/dinosaurs/smilodon-fatalis-dry-wash-distant-bovids-ecology-imagegen-v1.png",
+      gallerySlot: 3,
+      galleryRole: "habitat-ecology",
+      phenotype: "tawny-gray-c",
+      habitatKey: "late-pleistocene-dry-wash-open-woodland",
+      sourceAttribution: "OpenAI built-in image generation; habitat and functional-morphology sources supplied boundaries only",
+      licenseRecord: "Generated project asset; no external artwork, reconstruction, franchise frame, or named-artist style was used as generation input",
+      generationPromptRecord: "tools/comfyui/cenozoic-life-expansion-20260808-phase-a1.json#records/smilodon-fatalis-ecology-v1",
+      generationSeed: "service-assigned, not exposed",
+      generationWorkflow: "OpenAI built-in image generation; wide high-oblique non-contact ecology pass",
+      reviewStatus: "원본 크기 anatomy-review 수용 · 스밀로돈 전신/검치/사지 판독 · 들소류 비접촉 · 행동 가설 · 대표 승격 금지",
+      locality: "broad Late Pleistocene California woodland-grassland mosaic; exact wash, trees, bovids, spacing, weather, and event are hypothetical",
+      behaviorEvidence: "watching distant bovids may illustrate attention, approach, or ambush potential, but it is not direct evidence of a specific hunt or social strategy",
+      anatomyEvidenceBoundary: "the foreground cat retains the core upper-saber, robust-forequarter, four-limb and short-tail plan; distant bovids and exact posture are simplified reconstruction",
+      colorEvidence: "tawny gray coat, golden light, vegetation colors, and all pattern placement are hypothetical",
+      metadataRecord: "tools/comfyui/cenozoic-life-expansion-20260808-phase-a1.json",
+      representativeEligible: false,
+    },
+  ],
   "dimetrodon-grandis": [
     {
       kind: "count-level pass",
@@ -24568,6 +24837,9 @@ function matchesClassification(dino, classification = state.classification) {
   if (classification === "pterosauria") return dino.rootClade === "Pterosauria";
   if (classification === "marine-reptilia") return dino.rootClade === "Marine Reptilia";
   if (classification === "synapsida") return dino.rootClade === "Synapsida";
+  if (classification === "mammalia") {
+    return dino.rootClade === "Mammalia" || dino.clade === "Mammalia";
+  }
   if (classification === "cephalopoda") return dino.rootClade === "Mollusca";
   if (classification === "early-dinosaur") return dino.clade === "Saurischia";
   return false;
@@ -24615,6 +24887,20 @@ function getRealmDinosaurs(realm = state.atlasRealm) {
   return dinosaurs.filter((dino) => getAtlasRealm(dino) === realm);
 }
 
+function getRealmEmptyStateCopy(filteredNote) {
+  const realm = getActiveRealmConfig();
+  if (!getRealmDinosaurs().length && realm.emptyTitle) {
+    return {
+      title: realm.emptyTitle,
+      note: realm.emptyNote || `${realm.label} 대표 생물을 검토한 뒤 공개합니다.`,
+    };
+  }
+  return {
+    title: `조건에 맞는 ${realm.label} 생물이 없습니다`,
+    note: filteredNote,
+  };
+}
+
 function renderClassificationTabs() {
   const baseMatches = getRealmDinosaurs().filter(matchesNonClassificationFilters);
   const counts = new Map(
@@ -24660,7 +24946,7 @@ function getSelectedDino() {
     filtered.find((dino) => dino.id === state.selectedId) ||
     filtered[0] ||
     realmDinosaurs[0] ||
-    dinosaurs[0]
+    null
   );
 }
 
@@ -24721,6 +25007,8 @@ function getNodeHeight() {
 }
 
 const taxonPaletteAccents = {
+  "mammuthus-primigenius": { accent: "#b08a62", bg: "rgba(45, 39, 36, 0.9)", border: "rgba(176, 138, 98, 0.5)" },
+  "smilodon-fatalis": { accent: "#c49a63", bg: "rgba(47, 42, 36, 0.9)", border: "rgba(196, 154, 99, 0.5)" },
   "dimetrodon-grandis": { accent: "#c9854e", bg: "rgba(47, 39, 35, 0.9)", border: "rgba(201, 133, 78, 0.5)" },
   "triceratops-horridus": { accent: "#5fbfc4", bg: "rgba(22, 54, 58, 0.88)", border: "rgba(95, 191, 196, 0.42)" },
   "torosaurus-latus": { accent: "#d39a55", bg: "rgba(64, 42, 24, 0.88)", border: "rgba(211, 154, 85, 0.44)" },
@@ -24844,6 +25132,8 @@ const taxonPaletteAccents = {
 };
 
 const taxonPaletteSwatches = {
+  "mammuthus-primigenius": ["#2d2926", "#6d5646", "#b08a62", "#d9c8ad"],
+  "smilodon-fatalis": ["#45413c", "#8f765b", "#c49a63", "#ded3bd"],
   "dimetrodon-grandis": ["#2f3435", "#6f5141", "#c9854e", "#d8c29b"],
   "archaeopteryx-lithographica": ["#2f3436", "#8a6249", "#c78955", "#e6d8bf"],
   "asteroceras-obtusum": ["#a8753f", "#d0a454", "#e0c486", "#756b62"],
@@ -25136,10 +25426,11 @@ function renderTimelineBrowse() {
   }
 
   if (visibleDinosaurs.length === 0) {
+    const empty = getRealmEmptyStateCopy("검색어나 필터를 바꿔 보세요.");
     container.innerHTML = `
       <div class="timeline-empty">
-        <strong>조건에 맞는 ${getActiveRealmConfig().label} 생물이 없습니다</strong>
-        <span>검색어나 필터를 바꿔 보세요.</span>
+        <strong>${escapeHtml(empty.title)}</strong>
+        <span>${escapeHtml(empty.note)}</span>
       </div>
     `;
     return;
@@ -25294,6 +25585,9 @@ function getKnownPhyloChildCount(parentId, nodes, edges) {
 function inferPhyloParent(dino) {
   if (dino.rootClade === "Pterosauria") return "pterosauria";
   if (dino.rootClade === "Marine Reptilia") return "marine-reptilia";
+  if (dino.clade === "Carnivora") return "carnivora";
+  if (dino.clade === "Proboscidea") return "proboscidea";
+  if (dino.rootClade === "Mammalia") return "mammalia";
   if (dino.rootClade === "Synapsida") {
     if (dino.clade === "Sphenacodontia") return "sphenacodontia";
     if (dino.clade === "Dicynodontia") return "dicynodontia";
@@ -25446,6 +25740,8 @@ const phyloEraCladeOrder = [
   "Dicynodontia",
   "Cynodontia",
   "Mammalia",
+  "Carnivora",
+  "Proboscidea",
   "Ammonoidea",
   "Belemnitida",
 ];
@@ -25614,18 +25910,32 @@ function getPhyloGroupDepth(groupId, parentsByChild, nodeMap, cache, visiting = 
   return depth;
 }
 
-function getPhyloTaxonGridX(nodes, edges) {
+function getPhyloTaxonGridX(nodes, edges, filteredIds) {
   const nodeMap = new Map(nodes.map((node) => [node.id, node]));
   const parentsByChild = new Map();
+  const childrenByParent = new Map();
   edges.forEach(([from, to]) => {
+    if (!childrenByParent.has(from)) childrenByParent.set(from, []);
+    childrenByParent.get(from).push(to);
     if (nodeMap.get(from)?.type !== "group" || nodeMap.get(to)?.type !== "group") return;
     if (!parentsByChild.has(to)) parentsByChild.set(to, []);
     parentsByChild.get(to).push(from);
   });
 
   const depthCache = new Map();
+  const descendantCache = new Map();
   const maximumDepth = nodes
-    .filter((node) => node.type === "group")
+    .filter(
+      (node) =>
+        node.type === "group" &&
+        getVisiblePhyloDescendants(
+          node.id,
+          childrenByParent,
+          nodeMap,
+          filteredIds,
+          descendantCache,
+        ).size > 0,
+    )
     .reduce(
       (depth, node) =>
         Math.max(depth, getPhyloGroupDepth(node.id, parentsByChild, nodeMap, depthCache)),
@@ -25767,7 +26077,7 @@ function layoutPhyloGroupRail(nodes, edges, filteredIds, layoutHeight) {
 function buildPhyloLayout() {
   const { nodes, edges } = getAugmentedPhyloData();
   const filteredIds = getFilteredIdSet();
-  const taxonGridX = getPhyloTaxonGridX(nodes, edges);
+  const taxonGridX = getPhyloTaxonGridX(nodes, edges, filteredIds);
   const eraBands = buildDynamicPhyloEras(nodes, filteredIds, taxonGridX);
   const laidOutTaxa = packTaxaIntoEraBands(nodes, eraBands, filteredIds);
   const eraHeight = eraBands.reduce((height, era) => Math.max(height, era.top + era.height), 0);
@@ -26194,11 +26504,10 @@ function syncAtlasRealmPresentation() {
   const detailPanel = $("#detailPanel");
   const eraControls = $("#mapEraControls");
   const quickSearch = $("#mapQuickSearch");
+  const timelineBrowse = $("#timelineBrowse");
 
   if (mapEyebrow) mapEyebrow.textContent = realm.eyebrow;
-  if (mapHeading) {
-    mapHeading.textContent = realm.id === "paleozoic" ? "페름기 계통 지도" : "시대별 계통 지도";
-  }
+  if (mapHeading) mapHeading.textContent = realm.mapHeading || "시대별 계통 지도";
   if (catalogHeading) catalogHeading.textContent = `${realm.label} 생물 도감`;
   if (catalogNote) catalogNote.textContent = realm.catalogNote;
   if (atlasView) atlasView.setAttribute("aria-label", `${realm.label} 생물 계통도`);
@@ -26206,6 +26515,7 @@ function syncAtlasRealmPresentation() {
   if (detailPanel) detailPanel.setAttribute("aria-label", `선택한 ${realm.label} 생물 상세 정보`);
   if (eraControls) eraControls.setAttribute("aria-label", `${realm.label} 시대 구간 이동`);
   if (quickSearch) quickSearch.placeholder = `${realm.label} 생물명·분류·지역 검색`;
+  if (timelineBrowse) timelineBrowse.setAttribute("aria-label", `시대별 ${realm.label} 생물 찾기`);
   $$('[data-classification-tabs]').forEach((tabs) => {
     tabs.setAttribute(
       "aria-label",
@@ -26341,10 +26651,11 @@ function renderMapScopeControls() {
 
   const selected = filtered.length ? getSelectedDino() : null;
   const inspectorButton = $("#toggleMapInspector");
-  if (selected && inspectorButton) {
+  if (inspectorButton) {
     const action = state.map.inspectorCollapsed ? "정보 열기" : "정보 접기";
-    inspectorButton.title = `${selected.koreanName} ${action}`;
-    inspectorButton.setAttribute("aria-label", `${selected.koreanName} ${action}`);
+    const subject = selected?.koreanName || "선택 생물";
+    inspectorButton.title = `${subject} ${action}`;
+    inspectorButton.setAttribute("aria-label", `${subject} ${action}`);
   }
 }
 
@@ -26614,10 +26925,11 @@ function renderPhyloMap() {
 
 function renderDetail() {
   if (!getFilteredDinosaurs().length) {
+    const empty = getRealmEmptyStateCopy("검색어나 분류·시대 필터를 바꿔 보세요.");
     $("#detailPanel").innerHTML = `
       <div class="timeline-empty detail-empty">
-        <strong>조건에 맞는 ${getActiveRealmConfig().label} 생물이 없습니다</strong>
-        <span>검색어나 분류·시대 필터를 바꿔 보세요.</span>
+        <strong>${escapeHtml(empty.title)}</strong>
+        <span>${escapeHtml(empty.note)}</span>
       </div>
     `;
     return;
@@ -26801,10 +27113,11 @@ function renderCatalog() {
   const items = sortDinosaurs(getFilteredDinosaurs());
   const focusSpeciesIds = getPhyloFocusSpeciesIds(state.phyloFocusId);
   if (!items.length) {
+    const empty = getRealmEmptyStateCopy("검색어나 분류·친숙도 필터를 바꿔 보세요.");
     grid.innerHTML = `
       <div class="ecosystem-empty catalog-empty">
-        <strong>조건에 맞는 ${getActiveRealmConfig().label} 생물이 없습니다.</strong>
-        <span>검색어나 분류·친숙도 필터를 바꿔 보세요.</span>
+        <strong>${escapeHtml(empty.title)}</strong>
+        <span>${escapeHtml(empty.note)}</span>
       </div>
     `;
     return;
@@ -26908,6 +27221,22 @@ const reviewSortLabels = {
 };
 
 const identityChecklists = {
+  "mammuthus-primigenius": [
+    "신생대 제4기 플라이스토세의 장비목 코끼리과 포유류이며 공룡·마스토돈·현생 코끼리로 바꾸지 않음",
+    "앞어깨가 높고 등은 엉덩이와 짧은 꼬리 쪽으로 완만하게 낮아지며, 둥글게 솟은 한 머리와 분리된 낙타형 지방 혹 없음",
+    "작고 둥근 털 덮인 귀, 매우 짧은 한 꼬리, 긴 겉털과 조밀한 속털이 함께 읽히되 눈·코·관절·발을 털로 숨기지 않음",
+    "한 개의 정상적인 코와 위턱에서 각각 시작하는 나선형 엄니 정확히 두 개; 아래턱 엄니·추가 엄니·붙은 뿌리·입에서 난 엄니 없음",
+    "몸에 연결된 기둥형 앞다리 두 개와 뒷다리 두 개, 서로 분리된 넓고 거의 둥근 네 발; 발굽·갈고리발·세 다리·융합 발 없음",
+    "머리·엄니 끝·배·네 발·짧은 꼬리가 프레임 안에 있고, 털빛·무늬·정확한 연조직과 가족 행동은 가설로 명시",
+  ],
+  "smilodon-fatalis": [
+    "신생대 제4기 플라이스토세의 마카이로두스아과 검치고양이이며 현생 호랑이·사자·곰·늑대를 그대로 복사하지 않음",
+    "깊은 가슴, 굵은 목과 어깨, 특히 강건한 앞다리 두 개와 튼튼한 뒷다리 두 개가 한 몸에 자연스럽게 연결됨",
+    "위턱의 길고 납작하며 완만하게 휜 검치는 정확히 한 쌍·두 개이고 아래턱 검치·네 개 검치·코끼리 엄니·입술을 뚫은 검치 없음",
+    "서로 분리된 네 개의 고양잇과형 발과 대부분 들어간 발톱을 유지하고, 발굽·곰형 발바닥·세 다리·추가 발 없음",
+    "골반에서 자연스럽게 이어지는 짧지만 완전한 꼬리 하나이며 긴 호랑이 꼬리·사자식 술 꼬리·떠 있는 꼬리 없음",
+    "머리·검치·네 다리·네 발·꼬리 끝이 프레임 안에 있고, 털색·무늬·입술·정확한 사냥 동작과 사회성은 가설로 명시",
+  ],
   "dimetrodon-grandis": [
     "공룡이 아닌 전기 페름기의 스페나코돈트 단궁류이며 중생대 공룡 계통으로 옮기지 않음",
     "길고 깊은 한 두개골에 작은 치아와 앞쪽의 큰 송곳니형 치아가 함께 읽히는 이형치; 균일한 악어 이빨이나 검치호 송곳니로 바꾸지 않음",
@@ -28190,6 +28519,20 @@ const visualVariationLabels = {
 };
 
 const visualVariationProfiles = {
+  "mammuthus-primigenius": {
+    color: "대표형은 짙은 초콜릿 갈색, 변이형은 숯빛 엄버와 회갈색 속털, 생태형은 짙은 갈색과 서리 낀 황토 초원을 분리합니다. 밝은 금발·주황 털은 대표 기본값으로 쓰지 않으며 모든 정확한 털빛은 가설입니다.",
+    pattern: "규칙적인 줄·점·고리 대신 길고 짧은 겉털이 바람과 마모로 만드는 불규칙한 낮은 대비만 사용합니다. 같은 측면 자세의 단순 재색칠을 피합니다.",
+    texture: "긴 거친 겉털과 조밀한 속털을 구분하되 털이 눈·코·다리 관절·넓은 발을 가리지 않게 합니다. 현생 코끼리의 거의 벗은 피부나 판타지 털 갑옷을 피합니다.",
+    anatomy: "높은 어깨에서 뒤로 낮아지는 등, 둥근 머리, 작은 귀, 한 코, 위턱의 나선 엄니 두 개, 기둥형 네 다리와 둥근 네 발, 매우 짧은 꼬리의 털매머드입니다.",
+    avoid: "마스토돈·현생 아프리카코끼리·공룡형 몸, 큰 부채 귀, 긴 꼬리, 평평한 등, 분리된 낙타 혹, 추가·누락·융합 엄니나 코, 세 다리·숨은 발·발굽, 흰색 기본형, 깊은 얼음사막, 동일 방향·카메라 반복",
+  },
+  "smilodon-fatalis": {
+    color: "대표형은 낮은 대비 황갈색, 변이형은 회갈색·황토의 희미한 큰 흐림, 생태형은 따뜻한 황갈회색을 사용합니다. 피부·털색은 직접 보존되지 않아 모두 가설입니다.",
+    pattern: "큰 민무늬 공간 사이에 소수의 비대칭 흐림만 허용하고 호랑이 줄·다리 띠·꼬리 고리·표범 로제트·규칙 점 배열을 피합니다. 같은 자세의 단순 재색칠을 반복하지 않습니다.",
+    texture: "짧고 조밀한 고양잇과 털과 굵은 목의 부피를 읽히게 하되 사자 갈기·설표형 긴 털·곰털·판타지 근육 홈을 추가하지 않습니다.",
+    anatomy: "깊은 가슴과 강건한 앞부분, 튼튼한 네 다리와 네 고양잇과 발, 위턱 검치 정확히 두 개, 짧은 한 꼬리를 가진 플라이스토세 검치고양이입니다.",
+    avoid: "호랑이·사자·표범·곰·하이에나·늑대 복제, 긴 꼬리·술 꼬리·갈기, 치타형 가는 다리, 아래턱·추가 검치, 보이는 발톱·발굽, 여분·융합 사지, 무리사냥 확정, 피·상처·접촉 공격, 동일 구도 반복",
+  },
   "dimetrodon-grandis": {
     color: "대표형의 점토 적갈색·황토·숯갈색, 변이형의 남청·구운 황토·슬레이트, 생태형의 적갈·세이지·차콜 조합을 서로 분리합니다. 모든 생체색은 가설입니다.",
     pattern: "불규칙하고 비대칭인 광물성 얼룩과 넓은 빈 공간을 사용하며, 같은 측면 자세의 단순 재색칠·규칙적인 줄·고리·점 배열을 피합니다.",
@@ -29229,6 +29572,20 @@ const generationRouteLabels = {
 };
 
 const generationRouteGuides = {
+  "mammuthus-primigenius": {
+    focus: "플라이스토세 Mammuthus primigenius의 높은 어깨와 뒤로 낮아지는 등, 둥근 머리, 작은 귀, 한 코, 위턱 나선 엄니 정확히 두 개, 겹털, 기둥형 네 다리와 짧은 꼬리를 함께 보존",
+    route: "S1은 왼쪽 전신 count-level 대표, S2는 오른쪽 낮은 후방 보행 색조 review hold, S3은 넓고 높은 어미·새끼 초본 채집 anatomy review로 분리합니다. S2 첫 후보의 현생 코끼리형 긴 술 꼬리는 탈락하고 꼬리만 단일 보정했으며, 털빛·정확한 연조직·가족 관계와 행동은 가설로 유지합니다.",
+    control: "assets/dinosaurs/mammuthus-primigenius-high-shoulder-spiral-tusks-representative-imagegen-v1.png",
+    pass: "한 성체 머리 | 높은 어깨와 뒤로 낮아지는 등 | 작은 털 귀 | 한 코 | 위턱 나선 엄니 정확히 두 개 | 두 앞다리·두 뒷다리와 넓은 네 발 | 매우 짧은 한 꼬리 | 전신 프레임 안 | 매머드 스텝 식생 | 털빛·연조직·행동 가설 명시 | 세 슬롯 방향·카메라·개체 수 분리",
+    reject: "마스토돈·현생 코끼리·공룡형 몸, 큰 부채 귀·평평한 등·분리된 낙타 혹, 긴 술 꼬리, 추가·누락·융합 엄니·코, 세 다리·여분 발·발굽, 털에 가린 눈·관절·발, 흰색 기본형·깊은 빙원, 같은 구도 재색칠, S2/S3 대표 승격이면 탈락",
+  },
+  "smilodon-fatalis": {
+    focus: "플라이스토세 Smilodon fatalis의 깊은 가슴과 굵은 목·어깨, 강건한 앞다리, 튼튼한 네 고양잇과 발, 위턱의 납작한 검치 정확히 두 개, 짧은 한 꼬리를 함께 보존",
+    route: "S1은 낮은 왼쪽 보행 count-level 대표, S2는 높은 오른쪽 후방 시점 회갈색 흐림 review hold, S3은 넓은 고각 건천 이동과 먼 들소류 비접촉 anatomy review로 분리합니다. S2 첫 후보의 호랑이식 선형 무늬는 탈락했고, 털무늬·입술·정확한 접근 행동과 사회성은 가설로 유지합니다.",
+    control: "assets/dinosaurs/smilodon-fatalis-robust-forequarters-two-canines-representative-imagegen-v1.png",
+    pass: "한 고양잇과 머리 | 깊은 가슴과 굵은 목·어깨 | 강건한 두 앞다리·튼튼한 두 뒷다리와 네 발 | 위턱 검치 정확히 두 개·아래턱 검치 없음 | 짧은 한 꼬리 | 발톱 대부분 수납 | 전신 프레임 안 | 털색·입술·행동 가설 명시 | 세 슬롯 방향·카메라·환경 분리",
+    reject: "호랑이·사자·표범·곰·하이에나·늑대 복제, 호랑이 줄·로제트·갈기, 긴 꼬리·술 꼬리, 치타형 가는 다리·곰형 발, 아래턱·추가·교차 검치, 여분·융합 사지·보이는 발톱, 피·접촉 공격·무리사냥 확정, 같은 구도 반복, S2/S3 대표 승격이면 탈락",
+  },
   "dimetrodon-grandis": {
     focus: "전기 페름기 Dimetrodon grandis의 길고 깊은 두개골, 크기가 다른 치아와 큰 송곳니형 치아, 여러 길어진 신경가시가 받친 한 연속 등 돛, 반직립·반포복 네 다리와 한 긴 꼬리를 함께 보존",
     route: "S1은 원본 크기 count-level 대표, S2는 반대 방향 낮은 후방 시점 색·무늬 review hold, S3은 넓은 고각 계절 수로 anatomy review로 분리합니다. 잘린 꼬리의 첫 생태 초안은 제외했고, 돛 막·피부·색·정확한 걸음과 물결 관찰은 가설로 유지합니다.",
@@ -31200,7 +31557,7 @@ function fitInitialAtlasFrame(attempt = 0) {
       fitInitialAtlasFrame(attempt + 1);
       return;
     }
-    fitMapScope(getSelectedDino().era);
+    fitMapScope(getSelectedDino()?.era || state.map.scope || "all");
   });
 }
 
@@ -31269,7 +31626,7 @@ function setView(view, { historyMode = "replace" } = {}) {
   if (view === "atlas" && state.map.mode === "tree" && !state.map.fitted) {
     const viewport = $("#mapViewport");
     if (viewport?.clientWidth > 0 && viewport.clientHeight > 0) {
-      fitMapScope(getSelectedDino().era);
+      fitMapScope(getSelectedDino()?.era || state.map.scope || "all");
     } else {
       fitInitialAtlasFrame();
     }

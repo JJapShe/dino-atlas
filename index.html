@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dino Atlas MVP</title>
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="./styles.css?v=20260808-dimetrodon-paleozoic-v1" />
+    <link rel="stylesheet" href="./styles.css?v=20260808-cenozoic-phase-a1-v1" />
   </head>
   <body data-active-view="atlas" data-atlas-realm="mesozoic">
     <div class="app-shell">
@@ -130,6 +130,9 @@
                   <button class="active" data-atlas-realm="mesozoic" type="button" aria-pressed="true">
                     <span>중생대</span><small>트라이아스기–백악기</small>
                   </button>
+                  <button data-atlas-realm="cenozoic" type="button" aria-pressed="false">
+                    <span>신생대</span><small>고진기·신진기·제4기</small>
+                  </button>
                 </div>
                 <div class="map-mode-controls" id="mapModeControls" role="group" aria-label="계통도 표시 방식">
                   <button class="active" data-map-mode="timeline" type="button" aria-pressed="true">시대별 찾기</button>
@@ -170,6 +173,9 @@
               <button data-classification="synapsida" type="button" aria-pressed="false">
                 <span>단궁류</span><strong data-classification-count>0</strong>
               </button>
+              <button data-classification="mammalia" type="button" aria-pressed="false">
+                <span>포유류</span><strong data-classification-count>0</strong>
+              </button>
               <button data-classification="cephalopoda" type="button" aria-pressed="false">
                 <span>고대 두족류</span><strong data-classification-count>0</strong>
               </button>
@@ -201,6 +207,18 @@
                 </button>
                 <button data-map-scope="cretaceous" data-realm-scope="mesozoic" type="button" aria-pressed="false">
                   <span>백악기</span>
+                  <strong class="map-era-count">0</strong>
+                </button>
+                <button data-map-scope="paleogene" data-realm-scope="cenozoic" type="button" aria-pressed="false" hidden>
+                  <span>고진기</span>
+                  <strong class="map-era-count">0</strong>
+                </button>
+                <button data-map-scope="neogene" data-realm-scope="cenozoic" type="button" aria-pressed="false" hidden>
+                  <span>신진기</span>
+                  <strong class="map-era-count">0</strong>
+                </button>
+                <button data-map-scope="quaternary" data-realm-scope="cenozoic" type="button" aria-pressed="false" hidden>
+                  <span>제4기</span>
                   <strong class="map-era-count">0</strong>
                 </button>
               </div>
@@ -276,6 +294,9 @@
                 <button class="active" data-atlas-realm="mesozoic" type="button" aria-pressed="true">
                   <span>중생대</span><small>트라이아스기–백악기</small>
                 </button>
+                <button data-atlas-realm="cenozoic" type="button" aria-pressed="false">
+                  <span>신생대</span><small>고진기·신진기·제4기</small>
+                </button>
               </div>
               <select id="periodSort" aria-label="도감 정렬">
                 <option value="level" selected>친숙도순</option>
@@ -314,6 +335,9 @@
             </button>
             <button data-classification="synapsida" type="button" aria-pressed="false">
               <span>단궁류</span><strong data-classification-count>0</strong>
+            </button>
+            <button data-classification="mammalia" type="button" aria-pressed="false">
+              <span>포유류</span><strong data-classification-count>0</strong>
             </button>
             <button data-classification="cephalopoda" type="button" aria-pressed="false">
               <span>고대 두족류</span><strong data-classification-count>0</strong>
@@ -483,13 +507,13 @@
       </section>
     </div>
 
-  <script src="./gallery-slots.js?v=20260808-dimetrodon-paleozoic-v1"></script>
+  <script src="./gallery-slots.js?v=20260808-cenozoic-phase-a1-v1"></script>
   <script src="./ecosystem-scenes.js?v=20260807-subject-motion-trackway-v2"></script>
   <script src="./motion-samples.js?v=20260807-subject-motion-policy-v1"></script>
   <script src="./motion-m1-samples.js?v=20260807-subject-motion-policy-v1"></script>
   <script src="./motion-m2-samples.js?v=20260807-subject-motion-policy-v1"></script>
   <script src="./motion-m2-i2v-samples.js?v=20260807-giganotosaurus-subject-motion-v1"></script>
-  <script src="./app.js?v=20260808-dimetrodon-paleozoic-v1"></script>
+  <script src="./app.js?v=20260808-cenozoic-phase-a1-v1"></script>
     <script src="./atlas-layout.js?v=20260731-resizable-inspector-v1"></script>
   </body>
 </html>

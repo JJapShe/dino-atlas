@@ -1,6 +1,42 @@
 {
   "routes": [
     {
+      "taxon": "mammuthus-primigenius",
+      "label": "Mammuthus primigenius",
+      "focus": "플라이스토세 Mammuthus primigenius의 높은 어깨와 뒤로 낮아지는 등, 둥근 머리, 작은 귀, 한 코, 위턱 나선 엄니 정확히 두 개, 겹털, 기둥형 네 다리와 짧은 꼬리를 함께 보존",
+      "status": "count-level pass",
+      "primaryImage": "assets/dinosaurs/mammuthus-primigenius-high-shoulder-spiral-tusks-representative-imagegen-v1.png",
+      "primaryTitle": "털매머드 높은 어깨·두 나선 엄니 전신 대표",
+      "schedule": "tools/comfyui/cenozoic-life-expansion-20260808-phase-a1.json",
+      "datasetId": "cenozoic_phase_a1",
+      "route": "S1은 왼쪽 전신 count-level 대표, S2는 오른쪽 낮은 후방 보행 색조 review hold, S3은 넓고 높은 어미·새끼 초본 채집 anatomy review로 분리합니다. S2 첫 후보의 현생 코끼리형 긴 술 꼬리는 탈락하고 꼬리만 단일 보정했으며, 털빛·정확한 연조직·가족 관계와 행동은 가설로 유지합니다.",
+      "trigger": "mammuthus primigenius cenozoic phase a1",
+      "controlReferences": [
+        "assets/dinosaurs/mammuthus-primigenius-high-shoulder-spiral-tusks-representative-imagegen-v1.png"
+      ],
+      "primaryControlReference": "assets/dinosaurs/mammuthus-primigenius-high-shoulder-spiral-tusks-representative-imagegen-v1.png",
+      "passSummary": "한 성체 머리 | 높은 어깨와 뒤로 낮아지는 등 | 작은 털 귀 | 한 코 | 위턱 나선 엄니 정확히 두 개 | 두 앞다리·두 뒷다리와 넓은 네 발 | 매우 짧은 한 꼬리 | 전신 프레임 안 | 매머드 스텝 식생 | 털빛·연조직·행동 가설 명시 | 세 슬롯 방향·카메라·개체 수 분리",
+      "rejectSummary": "마스토돈·현생 코끼리·공룡형 몸, 큰 부채 귀·평평한 등·분리된 낙타 혹, 긴 술 꼬리, 추가·누락·융합 엄니·코, 세 다리·여분 발·발굽, 털에 가린 눈·관절·발, 흰색 기본형·깊은 빙원, 같은 구도 재색칠, S2/S3 대표 승격이면 탈락"
+    },
+    {
+      "taxon": "smilodon-fatalis",
+      "label": "Smilodon fatalis",
+      "focus": "플라이스토세 Smilodon fatalis의 깊은 가슴과 굵은 목·어깨, 강건한 앞다리, 튼튼한 네 고양잇과 발, 위턱의 납작한 검치 정확히 두 개, 짧은 한 꼬리를 함께 보존",
+      "status": "count-level pass",
+      "primaryImage": "assets/dinosaurs/smilodon-fatalis-robust-forequarters-two-canines-representative-imagegen-v1.png",
+      "primaryTitle": "스밀로돈 강건한 앞부분·위턱 검치 두 개 전신 대표",
+      "schedule": "tools/comfyui/cenozoic-life-expansion-20260808-phase-a1.json",
+      "datasetId": "cenozoic_phase_a1",
+      "route": "S1은 낮은 왼쪽 보행 count-level 대표, S2는 높은 오른쪽 후방 시점 회갈색 흐림 review hold, S3은 넓은 고각 건천 이동과 먼 들소류 비접촉 anatomy review로 분리합니다. S2 첫 후보의 호랑이식 선형 무늬는 탈락했고, 털무늬·입술·정확한 접근 행동과 사회성은 가설로 유지합니다.",
+      "trigger": "smilodon fatalis cenozoic phase a1",
+      "controlReferences": [
+        "assets/dinosaurs/smilodon-fatalis-robust-forequarters-two-canines-representative-imagegen-v1.png"
+      ],
+      "primaryControlReference": "assets/dinosaurs/smilodon-fatalis-robust-forequarters-two-canines-representative-imagegen-v1.png",
+      "passSummary": "한 고양잇과 머리 | 깊은 가슴과 굵은 목·어깨 | 강건한 두 앞다리·튼튼한 두 뒷다리와 네 발 | 위턱 검치 정확히 두 개·아래턱 검치 없음 | 짧은 한 꼬리 | 발톱 대부분 수납 | 전신 프레임 안 | 털색·입술·행동 가설 명시 | 세 슬롯 방향·카메라·환경 분리",
+      "rejectSummary": "호랑이·사자·표범·곰·하이에나·늑대 복제, 호랑이 줄·로제트·갈기, 긴 꼬리·술 꼬리, 치타형 가는 다리·곰형 발, 아래턱·추가·교차 검치, 여분·융합 사지·보이는 발톱, 피·접촉 공격·무리사냥 확정, 같은 구도 반복, S2/S3 대표 승격이면 탈락"
+    },
+    {
       "taxon": "tyrannosaurus-rex",
       "label": "Tyrannosaurus rex",
       "focus": "tiny arms, exactly two fingers, skull surface",

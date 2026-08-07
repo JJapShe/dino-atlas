@@ -781,8 +781,8 @@ body[data-active-view="motion"] .metric-row {
 
 .atlas-realm-controls {
   display: inline-grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  min-width: 246px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  min-width: 330px;
   padding: 3px;
   border: 1px solid rgba(230, 196, 106, 0.28);
   border-radius: 10px;
@@ -837,6 +837,16 @@ body[data-atlas-realm="paleozoic"] .atlas-realm-controls button.active {
 
 body[data-atlas-realm="paleozoic"] .atlas-realm-controls button.active small {
   color: rgba(33, 23, 7, 0.68);
+}
+
+body[data-atlas-realm="cenozoic"] .atlas-realm-controls button.active {
+  color: #0c1c26;
+  background: #92c9e8;
+  box-shadow: 0 7px 18px rgba(146, 201, 232, 0.18);
+}
+
+body[data-atlas-realm="cenozoic"] .atlas-realm-controls button.active small {
+  color: rgba(12, 28, 38, 0.68);
 }
 
 .map-mode-controls {
@@ -1158,6 +1168,11 @@ body[data-atlas-realm="paleozoic"] .map-era-controls button.active {
   background: rgba(230, 184, 102, 0.14);
 }
 
+body[data-atlas-realm="cenozoic"] .map-era-controls button.active {
+  border-color: rgba(146, 201, 232, 0.7);
+  background: rgba(146, 201, 232, 0.14);
+}
+
 .map-era-count {
   min-width: 22px;
   padding: 2px 5px;
@@ -1330,6 +1345,18 @@ body[data-atlas-realm="paleozoic"] .map-era-controls button.active {
 
 .map-navigator-era.permian {
   fill: rgba(230, 184, 102, 0.13);
+}
+
+.map-navigator-era.paleogene {
+  fill: rgba(146, 201, 232, 0.1);
+}
+
+.map-navigator-era.neogene {
+  fill: rgba(116, 184, 166, 0.11);
+}
+
+.map-navigator-era.quaternary {
+  fill: rgba(202, 221, 232, 0.1);
 }
 
 .map-navigator-era.jurassic {
@@ -1531,6 +1558,18 @@ body[data-atlas-realm="paleozoic"] .map-era-controls button.active {
 
 .period-band.permian {
   background: linear-gradient(90deg, rgba(230, 184, 102, 0.1), rgba(154, 104, 48, 0.025));
+}
+
+.period-band.paleogene {
+  background: linear-gradient(90deg, rgba(146, 201, 232, 0.09), rgba(146, 201, 232, 0.02));
+}
+
+.period-band.neogene {
+  background: linear-gradient(90deg, rgba(116, 184, 166, 0.09), rgba(116, 184, 166, 0.02));
+}
+
+.period-band.quaternary {
+  background: linear-gradient(90deg, rgba(202, 221, 232, 0.08), rgba(202, 221, 232, 0.018));
 }
 
 .period-band.jurassic {
@@ -2431,7 +2470,7 @@ button.dummy-image:disabled {
 }
 
 .catalog-realm-controls {
-  min-width: 246px;
+  min-width: 330px;
 }
 
 .catalog-scope-note {
@@ -4636,6 +4675,25 @@ body.lightbox-open {
 
   .atlas-mode-actions {
     width: 100%;
+  }
+
+  .atlas-realm-controls button,
+  .map-mode-controls button {
+    min-height: 42px;
+  }
+
+  .catalog-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .catalog-toolbar-actions {
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .catalog-realm-controls {
+    flex: 1 1 auto;
   }
 }
 

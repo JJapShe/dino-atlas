@@ -1,10 +1,68 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-07T15:23:04.802Z",
-  "reviewBatch": "2026-08-08-paleozoic-life-initial-gallery",
-  "reviewMethod": "Preserved all prior approved decisions plus original-size primary inspection of three new Dimetrodon grandis images and one rejected cropped ecology original. Review covered non-dinosaur synapsid identity, deep skull and heterodont caniniform cue, tall continuous no-crossbar sail, whole-animal count, four attached limbs and feet, belly clearance, tail continuity and tip, crop and artifact exclusion, pattern and composition separation, habitat readability, and explicit fossil-versus-analytical-versus-hypothetical evidence boundaries. Only slot 1 may be representative-eligible; slots 2 and 3 remain gallery-only review material.",
-  "targetSlots": 841,
+  "generatedAt": "2026-08-07T16:30:24.000Z",
+  "reviewBatch": "2026-08-08-cenozoic-life-phase-a1",
+  "reviewMethod": "Preserved all prior approved decisions plus original-size primary inspection of six approved Mammuthus primigenius and Smilodon fatalis images and two rejected pattern originals. Review covered realm identity, whole-animal and individual counts, trunk and tusk counts, upper saber count, robust forequarter and body-profile cues, four attached limbs and feet per focal animal, tail length and continuity, crop and artifact exclusion, non-tiger pattern and composition separation, habitat readability, non-contact ecology, and explicit evidence boundaries. For each new taxon only slot 1 may be representative-eligible; slots 2 and 3 remain gallery-only review material.",
+  "targetSlots": 847,
   "taxa": {
+    "mammuthus-primigenius": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/mammuthus-primigenius-high-shoulder-spiral-tusks-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed original-size count and identity review for one woolly mammoth with a high shoulder and descending back, one trunk, exactly two separate spiral upper tusks, four connected columnar limbs and broad feet, a short tail, and complete frame containment; exact coat color and soft tissue remain reconstruction.",
+        "reviewMethod": "Original-size full-frame inspection plus animal, trunk, upper-tusk, four-limb and four-foot count, high-shoulder and back-slope cue, short-tail, crop, artifact, habitat, and modern-elephant drift audit",
+        "reviewBatch": "2026-08-08-cenozoic-life-phase-a1",
+        "reviewedAt": "2026-08-07T16:14:45.000Z"
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/mammuthus-primigenius-right-facing-charcoal-coat-review-imagegen-v2.png",
+        "role": "color-pattern",
+        "reason": "Approved for gallery comparison only after a single-change edit replaced the rejected long tufted tail with a short furred tail. The right-facing low rear-three-quarter walk, charcoal-umber coat and warm side light differ materially from slot 1; gait, color and tail soft tissue prohibit representative promotion.",
+        "reviewMethod": "Original-size edit-isolation, trunk, tusk, four-limb, four-foot, short-tail, direction, camera, color, crop, artifact, and same-composition audit",
+        "reviewBatch": "2026-08-08-cenozoic-life-phase-a1",
+        "reviewedAt": "2026-08-07T16:16:35.000Z"
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/mammuthus-primigenius-mother-calf-foraging-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "reason": "Approved for anatomy-review habitat context only: one adult and one calf remain physically separate, the adult has one trunk, two tusks, four limbs and feet, the calf has one trunk and four limbs and feet, and the vegetated steppe differs from the portraits. Relationship and behavior are hypothetical, so representative promotion is prohibited.",
+        "reviewMethod": "Original-size adult-calf count and separation, trunk and tusk count, both four-limb and four-foot plans, vegetation occlusion, full-frame, habitat, behavior-boundary, crop, and artifact audit",
+        "reviewBatch": "2026-08-08-cenozoic-life-phase-a1",
+        "reviewedAt": "2026-08-07T16:17:35.000Z"
+      }
+    },
+    "smilodon-fatalis": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/smilodon-fatalis-robust-forequarters-two-canines-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed original-size count and identity review for one Smilodon with a deep chest, thick neck and robust forequarters, exactly two elongated upper sabers, four connected feline limbs and paws, a short tail, complete frame containment, and no tiger striping; exact coat and lip soft tissue remain reconstruction.",
+        "reviewMethod": "Original-size full-frame inspection plus animal and upper-saber count, robust-forequarter cue, four-limb and four-paw count, short-tail, claw, crop, artifact, pattern, and modern-cat drift audit",
+        "reviewBatch": "2026-08-08-cenozoic-life-phase-a1",
+        "reviewedAt": "2026-08-07T16:18:45.000Z"
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/smilodon-fatalis-right-facing-gray-mottle-review-imagegen-v2.png",
+        "role": "color-pattern",
+        "reason": "Approved for gallery comparison only after rejecting a tiger-striped first candidate. The high right-facing rear-side view, cool gray-brown coat, broad plain areas and faint irregular tonal fields differ materially from slot 1; all pattern and soft tissue remain hypothetical and prohibit representative promotion.",
+        "reviewMethod": "Original-size fresh-candidate upper-saber, four-limb, four-paw, short-tail, claw, direction, camera, linear-pattern exclusion, crop, artifact, and same-composition audit",
+        "reviewBatch": "2026-08-08-cenozoic-life-phase-a1",
+        "reviewedAt": "2026-08-07T16:20:50.000Z"
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/smilodon-fatalis-dry-wash-distant-bovids-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "reason": "Approved for anatomy-review habitat context only: one complete Smilodon retains two upper sabers, four connected limbs and paws, robust forequarters and a short tail while three distant bovids remain separate and non-contacting. Attention or approach is hypothetical, so representative promotion is prohibited.",
+        "reviewMethod": "Original-size foreground-cat and distant-bovid count, non-contact separation, upper-saber, four-limb, four-paw, short-tail, habitat, behavior-boundary, crop, and artifact audit",
+        "reviewBatch": "2026-08-08-cenozoic-life-phase-a1",
+        "reviewedAt": "2026-08-07T16:22:10.000Z"
+      }
+    },
     "dimetrodon-grandis": {
       "1": {
         "status": "approved",

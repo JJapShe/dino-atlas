@@ -1,6 +1,6 @@
 {
-  "taxa": 145,
-  "images": 1781,
+  "taxa": 147,
+  "images": 1787,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -11,6 +11,58 @@
     "diagnostic only"
   ],
   "samples": {
+    "mammuthus-primigenius": [
+      {
+        "kind": "count-level pass",
+        "title": "털매머드 높은 어깨·두 나선 엄니 전신 대표",
+        "body": "차갑고 건조한 플라이스토세 매머드 스텝의 단독 전신 대표입니다. 원본 크기에서 높은 어깨와 뒤로 낮아지는 등, 둥근 머리, 작은 귀, 한 코, 위턱의 서로 분리된 나선 엄니 두 개, 네 다리와 넓은 네 발, 짧은 꼬리를 확인했습니다. 짙은 갈색 털빛과 정확한 털 길이 배치는 가설입니다.",
+        "source": "assets/dinosaurs/mammuthus-primigenius-high-shoulder-spiral-tusks-representative-imagegen-v1.png",
+        "variant": "높은 어깨 두 나선 엄니 짙은 갈색 전신 대표 이미지 생성 v1",
+        "src": "assets/dinosaurs/mammuthus-primigenius-high-shoulder-spiral-tusks-representative-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "털매머드 어미와 새끼의 스텝 초본 채집",
+        "body": "넓고 약간 높은 화면에서 성체 한 마리가 코로 풀과 초본을 모으고 새끼 한 마리가 곁에 떨어져 서 있는 생태 장면입니다. 성체의 엄니 두 개·코 한 개·네 다리와 새끼의 코 한 개·네 다리를 각각 확인했습니다. 두 개체의 관계와 행동 순간은 가능성 높은 비교 가설이며 직접 관찰 사실이 아니므로 S3 anatomy review로만 사용합니다.",
+        "source": "assets/dinosaurs/mammuthus-primigenius-mother-calf-foraging-ecology-imagegen-v1.png",
+        "variant": "어미와 새끼가 떨어져 서서 초본을 모으는 매머드 스텝 생태 이미지 생성 v1",
+        "src": "assets/dinosaurs/mammuthus-primigenius-mother-calf-foraging-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "털매머드 숯갈색 반대 방향 보행과 짧은 꼬리",
+        "body": "대표의 왼쪽 정면 사선과 달리 오른쪽을 향해 걷는 낮은 후방 사선 구도입니다. 한 코와 나선 엄니 두 개, 네 다리와 네 발, 높은 어깨와 등 경사를 유지했고, 첫 후보의 길고 술 달린 꼬리는 탈락시킨 뒤 짧은 털 꼬리로 단일 보정했습니다. 털빛과 걸음 순간, 꼬리 연조직은 가설이라 S2 review hold로만 둡니다.",
+        "source": "assets/dinosaurs/mammuthus-primigenius-right-facing-charcoal-coat-review-imagegen-v2.png",
+        "variant": "숯갈색 오른쪽 보행 짧은 꼬리 단일 보정 이미지 생성 v2",
+        "src": "assets/dinosaurs/mammuthus-primigenius-right-facing-charcoal-coat-review-imagegen-v2.png"
+      }
+    ],
+    "smilodon-fatalis": [
+      {
+        "kind": "count-level pass",
+        "title": "스밀로돈 강건한 앞부분·위턱 검치 두 개 전신 대표",
+        "body": "플라이스토세 남부 캘리포니아 개방림 가장자리의 단독 전신 대표입니다. 원본 크기에서 깊은 가슴과 굵은 목·어깨, 강건한 두 앞다리, 튼튼한 네 다리와 네 발, 위턱의 길고 납작한 검치 정확히 두 개, 골반에 연결된 짧은 꼬리를 확인했습니다. 민무늬 황갈색 털은 보수적 가설입니다.",
+        "source": "assets/dinosaurs/smilodon-fatalis-robust-forequarters-two-canines-representative-imagegen-v1.png",
+        "variant": "강건한 앞부분 위턱 검치 두 개 황갈색 전신 대표 이미지 생성 v1",
+        "src": "assets/dinosaurs/smilodon-fatalis-robust-forequarters-two-canines-representative-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "스밀로돈 건천 이동과 먼 들소류 관찰 생태",
+        "body": "넓은 고각 화면에서 스밀로돈 한 마리가 개방림과 초원 사이의 마른 수로를 천천히 지나고, 멀리 떨어진 들소류 세 마리를 바라보는 장면입니다. 고양잇과 한 개체의 검치 두 개·네 다리·네 발·짧은 꼬리가 모두 읽히며 접촉이나 추격은 없습니다. 접근·관찰 또는 매복 가능성을 보여 주는 행동 가설일 뿐 실제 사냥 사건이 아니므로 S3 anatomy review로만 사용합니다.",
+        "source": "assets/dinosaurs/smilodon-fatalis-dry-wash-distant-bovids-ecology-imagegen-v1.png",
+        "variant": "개방림 건천 이동과 먼 들소류 비접촉 관찰 생태 이미지 생성 v1",
+        "src": "assets/dinosaurs/smilodon-fatalis-dry-wash-distant-bovids-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "스밀로돈 회갈색 흐림 무늬와 높은 반대 방향 구도",
+        "body": "대표의 낮은 왼쪽 보행과 달리 높은 후방 사선에서 오른쪽으로 고개를 돌린 색·무늬 후보입니다. 위턱 검치 두 개, 강건한 네 다리와 네 발, 짧은 꼬리를 유지하고 규칙적인 줄 대신 큰 빈 공간 사이의 희미한 회갈색 흐림만 남겼습니다. 첫 후보의 호랑이식 줄무늬는 탈락했고, 실제 털무늬는 미확정이라 S2 review hold로만 둡니다.",
+        "source": "assets/dinosaurs/smilodon-fatalis-right-facing-gray-mottle-review-imagegen-v2.png",
+        "variant": "회갈색 큰 빈 공간 흐림 무늬 높은 오른쪽 구도 이미지 생성 v2",
+        "src": "assets/dinosaurs/smilodon-fatalis-right-facing-gray-mottle-review-imagegen-v2.png"
+      }
+    ],
     "dimetrodon-grandis": [
       {
         "kind": "count-level pass",
