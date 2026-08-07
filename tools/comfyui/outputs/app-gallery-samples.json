@@ -1,6 +1,6 @@
 {
-  "taxa": 134,
-  "images": 1746,
+  "taxa": 144,
+  "images": 1778,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -11,6 +11,162 @@
     "diagnostic only"
   ],
   "samples": {
+    "repenomamus-robustus": [
+      {
+        "kind": "count-level pass",
+        "title": "레페노마무스 낮고 긴 몸·네 다리 전신 대표",
+        "body": "전기 백악기 의현층의 단독 전신 대표입니다. 원본 크기에서 낮고 긴 한 몸, 짧고 튼튼한 네 다리와 분리된 네 발, 골반에서 이어지는 한 긴 꼬리, 낮고 넓은 한 머리를 확인했습니다. 털·귀·코·완전한 발은 비교복원이며 현생 수달·오소리·설치류를 그대로 복사하지 않았습니다.",
+        "source": "assets/dinosaurs/repenomamus-robustus-lowbody-fourlimb-representative-imagegen-v1.png",
+        "variant": "낮고 긴 몸 네 다리 전신 대표 이미지 생성 v1",
+        "src": "assets/dinosaurs/repenomamus-robustus-lowbody-fourlimb-representative-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "레페노마무스 의현층 쓰러진 뿌리 은신처 이동 생태",
+        "body": "쓰러진 침엽수 뿌리 아래의 낮은 공간으로 이동하는 후방 사선 생태 장면입니다. 한 몸, 네 다리와 네 발, 한 긴 꼬리가 읽히고 대표·무늬 장면과 방향·카메라·환경이 다릅니다. 정확한 은신처 이용과 식생 배치는 가설이며, 프시타코사우루스 섭식 장면 초안들은 먹잇감 해부가 무너져 모두 제외했습니다.",
+        "source": "assets/dinosaurs/repenomamus-robustus-yixian-root-shelter-ecology-imagegen-v1.png",
+        "variant": "의현층 쓰러진 뿌리 은신처 이동 생태 이미지 생성 v1",
+        "src": "assets/dinosaurs/repenomamus-robustus-yixian-root-shelter-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "레페노마무스 연회색·적갈색 세로형 반대 방향 무늬",
+        "body": "대표의 낮은 측면 구도와 달리 높은 사선 세로 화면에서 네 다리와 한 긴 꼬리를 펼쳐 보이는 색·무늬 후보입니다. 네 발은 서로 다른 밝은 지면 위에서 읽히지만, 연회색·적갈색 구름무늬와 작은 귀·털은 가설이고 강한 원근은 대표 판정에 불리하므로 S2 review hold로만 둡니다.",
+        "source": "assets/dinosaurs/repenomamus-robustus-smoke-rust-highangle-pattern-imagegen-v1.png",
+        "variant": "연회색 적갈색 높은 사선 세로형 무늬 이미지 생성 v1",
+        "src": "assets/dinosaurs/repenomamus-robustus-smoke-rust-highangle-pattern-imagegen-v1.png"
+      }
+    ],
+    "lystrosaurus-murrayi": [
+      {
+        "kind": "count-level pass",
+        "title": "리스트로사우루스 짧고 넓은 머리·한 쌍 엄니 대표",
+        "body": "전기 트라이아스기 범람원의 단독 전신 대표입니다. 원본 크기에서 짧고 넓은 한 머리, 각질 부리, 위턱의 아래로 향한 엄니 한 쌍, 낮고 통통한 한 몸, 짧고 튼튼한 네 다리와 분리된 네 발, 한 짧은 꼬리를 확인했습니다. 피부 질감과 색은 가설이며 두꺼운 포유류 털은 넣지 않았습니다.",
+        "source": "assets/dinosaurs/lystrosaurus-murrayi-broad-skull-tusked-fullbody-representative-imagegen-v1.png",
+        "variant": "짧고 넓은 머리 한 쌍 엄니 전신 대표 이미지 생성 v1",
+        "src": "assets/dinosaurs/lystrosaurus-murrayi-broad-skull-tusked-fullbody-representative-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "리스트로사우루스 홍수 뒤 속새 채식 생태",
+        "body": "홍수가 지나간 진흙 평원에서 속새류 식물 가까이 이동하는 낮은 정면 사선 생태 장면입니다. 한 쌍 엄니, 네 다리와 한 꼬리가 읽히고 대표·무늬 장면과 카메라·방향·날씨가 다릅니다. 식물 선택과 정확한 먹이 행동, 피부색은 직접 증거가 아니며 먼쪽 뒷발은 몸에 일부 가려져 anatomy review로만 사용합니다.",
+        "source": "assets/dinosaurs/lystrosaurus-murrayi-postflood-horsetail-ecology-imagegen-v1.png",
+        "variant": "홍수 뒤 속새 평원 생태 이미지 생성 v1",
+        "src": "assets/dinosaurs/lystrosaurus-murrayi-postflood-horsetail-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "리스트로사우루스 차콜·세이지 건기 수로 반대 방향 무늬",
+        "body": "대표의 오른쪽 진행 측면과 달리 반대 방향의 뒤쪽 사선에서 건기 수로를 걷는 색·무늬 후보입니다. 한 머리, 한 쌍 엄니, 네 다리, 한 꼬리는 유지되지만 먼쪽 발가락은 겹침으로 판독이 약하고 차콜·세이지·황토 무늬는 가설이므로 S2 review hold로만 둡니다. 규칙적인 발자국 도장처럼 보인 초안은 탈락시켰습니다.",
+        "source": "assets/dinosaurs/lystrosaurus-murrayi-charcoal-sage-dry-channel-pattern-imagegen-v1.png",
+        "variant": "차콜 세이지 건기 수로 반대 방향 무늬 이미지 생성 v1",
+        "src": "assets/dinosaurs/lystrosaurus-murrayi-charcoal-sage-dry-channel-pattern-imagegen-v1.png"
+      }
+    ],
+    "cynognathus-crateronotus": [
+      {
+        "kind": "count-level pass",
+        "title": "키노그나투스 긴 낮은 머리·송곳니·절단형 치아 대표",
+        "body": "중기 트라이아스기 곤드와나의 단독 전신 대표입니다. 원본 크기에서 길고 낮은 한 머리, 큰 송곳니와 서로 다른 뒤쪽 치아, 튼튼한 네 다리와 분리된 네 발, 한 긴 꼬리를 확인했습니다. 현대 개의 늘어진 귀·검은 코·두꺼운 털을 피했고, 피부·짧은 필라멘트와 완전한 발은 비교복원 경계를 유지합니다.",
+        "source": "assets/dinosaurs/cynognathus-crateronotus-longskull-sectorial-teeth-representative-imagegen-v1.png",
+        "variant": "긴 낮은 머리 송곳니 절단형 치아 대표 이미지 생성 v1",
+        "src": "assets/dinosaurs/cynognathus-crateronotus-longskull-sectorial-teeth-representative-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "키노그나투스 폭풍 수로 횡단 생태",
+        "body": "폭풍 뒤 넓은 수로 가장자리를 걷는 먼 전신 생태 장면입니다. 길고 낮은 머리, 네 다리와 한 긴 꼬리가 분리되어 보이며 대표·무늬 장면과 거리·방향·환경을 달리했습니다. 이 정확한 날씨·이동 행동·색은 직접 근거가 아니며, 먼 거리의 치아 세부는 대표 판정에 쓰지 않는 S3 anatomy review입니다.",
+        "source": "assets/dinosaurs/cynognathus-crateronotus-storm-channel-sectorial-teeth-ecology-imagegen-v1.png",
+        "variant": "폭풍 수로 횡단 생태 이미지 생성 v1",
+        "src": "assets/dinosaurs/cynognathus-crateronotus-storm-channel-sectorial-teeth-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "키노그나투스 차콜·구리빛 고지대 반대 방향 무늬",
+        "body": "대표와 반대 방향의 높은 사선에서 머리·네 다리·긴 꼬리를 보여 주는 색·무늬 비교 후보입니다. 큰 송곳니와 서로 다른 뒤쪽 치아가 읽히지만 열린 입과 원근은 대표보다 치열 판독에 불리하고 차콜·구리빛 무늬는 가설이므로 S2 review hold로만 둡니다. Lystrosaurus처럼 짧은 머리로 흐른 초안은 탈락했습니다.",
+        "source": "assets/dinosaurs/cynognathus-crateronotus-charcoal-copper-upland-pattern-imagegen-v1.png",
+        "variant": "차콜 구리빛 고지대 반대 방향 무늬 이미지 생성 v1",
+        "src": "assets/dinosaurs/cynognathus-crateronotus-charcoal-copper-upland-pattern-imagegen-v1.png"
+      }
+    ],
+    "asteroceras-obtusum": [
+      {
+        "kind": "count-level pass",
+        "title": "암모나이트 둥근 나선 패각·굵은 방사 늑골 대표",
+        "body": "아스테로세라스의 패각 식별 단서를 가장 크게 보여 주는 단독 대표입니다. 원본 크기에서 하나의 평면 나선 중심, 둥근 바깥 둘레, 중심에서 가장자리로 이어지는 굵은 방사형 늑골, 한 개의 패각 입구를 확인했습니다. 입구 밖 머리·팔·눈과 패각 색은 직접 화석 근거가 약한 비교복원이므로 대표 승인은 패각에만 적용합니다.",
+        "source": "assets/dinosaurs/asteroceras-obtusum-rounded-planispiral-ribs-representative-imagegen-v1.png",
+        "variant": "둥근 평면 나선 굵은 방사 늑골 대표 이미지 생성 v1",
+        "src": "assets/dinosaurs/asteroceras-obtusum-rounded-planispiral-ribs-representative-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "암모나이트 전기 쥐라기 바다나리 해저 상승 생태",
+        "body": "바다나리가 드문드문 선 얕은 대륙붕 위로 올라오는 단독 암모나이트 생태 장면입니다. 대표보다 넓은 환경과 뒤쪽 사선 방향을 사용해 구도를 분리했고, 나선 패각과 늑골은 읽힙니다. 물고기·작은 절지동물은 환경 스케일 참고일 뿐 직접 상호작용 증거가 아니며, 연체부와 수영 자세는 anatomy review 가설입니다.",
+        "source": "assets/dinosaurs/asteroceras-obtusum-crinoid-shelf-rise-ecology-imagegen-v1.png",
+        "variant": "바다나리 대륙붕 상승 생태 이미지 생성 v1",
+        "src": "assets/dinosaurs/asteroceras-obtusum-crinoid-shelf-rise-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "암모나이트 슬레이트·구리빛 반대 방향 패각 무늬",
+        "body": "대표와 반대쪽 입구 방향, 더 높은 사선 카메라와 어두운 해저에서 패각 무늬를 비교하는 S2입니다. 하나의 나선 중심과 굵은 늑골은 유지되지만 슬레이트·구리색 무늬와 연체부는 모두 가설이며, 대표를 단순 재색칠하지 않는 구도 비교 자료로만 사용합니다.",
+        "source": "assets/dinosaurs/asteroceras-obtusum-slate-copper-irregular-pattern-imagegen-v1.png",
+        "variant": "슬레이트 구리빛 불규칙 무늬 이미지 생성 v1",
+        "src": "assets/dinosaurs/asteroceras-obtusum-slate-copper-irregular-pattern-imagegen-v1.png"
+      }
+    ],
+    "passaloteuthis-bisulcata": [
+      {
+        "kind": "count-level pass",
+        "title": "벨렘나이트 열 개 갈고리 팔·유선형 전신 대표",
+        "body": "파살로테우티스의 드문 연질부 표본 비율을 바탕으로 한 단독 측면 대표입니다. 원본 크기에서 유선형 외투막 한 개, 머리의 눈, 서로 비슷한 길이의 열 개 팔과 작은 갈고리, 뾰족하게 끝나는 한 몸을 확인했습니다. 내부 로스트룸은 외부 뿔처럼 노출하지 않았고, 지느러미 모양은 화석 근거가 부족해 확정하지 않습니다.",
+        "source": "assets/dinosaurs/passaloteuthis-bisulcata-ten-hook-arm-profile-representative-imagegen-v1.png",
+        "variant": "열 개 갈고리 팔 측면 대표 이미지 생성 v1",
+        "src": "assets/dinosaurs/passaloteuthis-bisulcata-ten-hook-arm-profile-representative-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "벨렘나이트 셰일 대륙붕 갑각류 접근 생태",
+        "body": "어두운 셰일 해저 위 작은 갑각류에 접근하는 단독 벨렘나이트 장면입니다. 대표·무늬 장면과 수영 방향·거리·카메라를 달리했고 열 개 팔과 한 몸이 읽힙니다. 갈고리로 작은 먹이를 붙잡았을 가능성은 있지만 이 정확한 종·장소·순간의 직접 기록은 아니며, 접촉 전 생태 가설로만 둡니다.",
+        "source": "assets/dinosaurs/passaloteuthis-bisulcata-shale-shelf-crustacean-ecology-imagegen-v1.png",
+        "variant": "셰일 대륙붕 갑각류 접근 생태 이미지 생성 v1",
+        "src": "assets/dinosaurs/passaloteuthis-bisulcata-shale-shelf-crustacean-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "벨렘나이트 오버진·진주빛 정면 열 팔 무늬",
+        "body": "대표의 측면과 달리 머리 앞쪽에서 열 개 팔이 방사형으로 분리되는 높은 사선 구도입니다. 긴 포획 촉수 두 개를 따로 만들지 않고 갈고리 팔과 한 외투막을 유지했지만, 팔 겹침과 원근 때문에 정확한 갈고리 수를 판정하는 대표로는 쓰지 않습니다. 오버진·진주빛 무늬도 전부 가설인 S2 review hold입니다.",
+        "source": "assets/dinosaurs/passaloteuthis-bisulcata-aubergine-pearl-ten-arm-pattern-imagegen-v1.png",
+        "variant": "오버진 진주빛 정면 열 팔 무늬 이미지 생성 v1",
+        "src": "assets/dinosaurs/passaloteuthis-bisulcata-aubergine-pearl-ten-arm-pattern-imagegen-v1.png"
+      }
+    ],
+    "archaeopteryx-lithographica": [
+      {
+        "kind": "count-level pass",
+        "title": "시조새 긴 뼈 꼬리·세 발톱 손 전신 대표",
+        "body": "졸른호펜 석회암 지면의 단독 전신 대표입니다. 원본 크기에서 이빨 있는 한 머리, 넓은 깃털 앞날개 두 개, 발톱 손가락, 뒷다리와 발 두 개, 골반에서 한 끝으로 이어지는 긴 깃털 뼈 꼬리, 배 아래의 빈 공간을 확인했습니다. 깃털 색과 자세는 가설이지만 현대 새의 무치 부리·짧은 꼬리로 흐르지 않아 S1 대표로 사용합니다.",
+        "source": "assets/dinosaurs/archaeopteryx-lithographica-solnhofen-longtail-threeclaw-representative-imagegen-v1.png",
+        "variant": "졸른호펜 긴 뼈 꼬리 세 발톱 손 대표 이미지 생성 v1",
+        "src": "assets/dinosaurs/archaeopteryx-lithographica-solnhofen-longtail-threeclaw-representative-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "시조새 졸른호펜 석호 짧은 활공 생태",
+        "body": "석회암 섬 사이의 짧은 간격을 건너는 단독 생태 장면입니다. 머리부터 긴 꼬리 끝, 두 날개, 두 뒷다리와 두 발이 프레임 안에 있고 대표·무늬 장면과 방향·카메라·배경이 다릅니다. 다만 펼친 날개의 먼쪽 손가락은 원근 때문에 일부만 읽히며, 이 장면은 동력 비행을 입증하지 않으므로 S3 anatomy review로만 둡니다.",
+        "source": "assets/dinosaurs/archaeopteryx-lithographica-solnhofen-lagoon-glide-ecology-imagegen-v1.png",
+        "variant": "졸른호펜 석호 짧은 활공 생태 이미지 생성 v1",
+        "src": "assets/dinosaurs/archaeopteryx-lithographica-solnhofen-lagoon-glide-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "시조새 슬레이트·엄버 반대 방향 보행 무늬",
+        "body": "대표와 반대 방향을 향해 석회암 지면을 걷는 높은 사선 시점의 색·무늬 비교 후보입니다. 한 머리, 두 날개, 두 뒷다리와 두 발, 한 긴 뼈 꼬리는 유지되지만 펼친 날개와 손가락 겹침은 대표보다 판독이 어렵고 모든 색은 가설이므로 S2 review hold로만 둡니다. 첫 색 후보는 대표와 같은 방향이라 구도 반복으로 탈락시켰습니다.",
+        "source": "assets/dinosaurs/archaeopteryx-lithographica-slate-umber-opposite-pattern-imagegen-v1.png",
+        "variant": "슬레이트 엄버 반대 방향 보행 무늬 이미지 생성 v1",
+        "src": "assets/dinosaurs/archaeopteryx-lithographica-slate-umber-opposite-pattern-imagegen-v1.png"
+      }
+    ],
     "herrerasaurus-ischigualastensis": [
       {
         "kind": "count-level pass",
@@ -4717,6 +4873,110 @@
         "src": "assets/dinosaurs/yutyrannus-huali-ash-white-slate-countershading-pattern-imagegen-v1.png"
       }
     ],
+    "carnotaurus-sastrei": [
+      {
+        "kind": "count-level pass",
+        "title": "카르노타우루스 짧고 깊은 머리·눈 위 뿔 전신 대표",
+        "body": "한 개체의 머리부터 꼬리 끝까지 들어오는 교정 v2 전신입니다. 독립 원본 크기 검수에서 짧고 깊은 한 두개골, 눈 위의 굵고 낮은 뿔 한 쌍, 몸에 붙은 극소형 가까운 앞다리와 자연스럽게 몸통에 가려진 반대쪽 앞다리, 두 뒷다리와 분리된 발, 골반에서 한 끝으로 이어지는 한 꼬리, 여분 팔다리 없음이 count-level 관문을 통과했습니다. 피부색·무늬·연조직은 가설이며 이후 교체 후보도 머리·보이는 앞다리·양발·꼬리를 검수하고 가림 상태를 기록해야 합니다.",
+        "source": "assets/dinosaurs/carnotaurus-sastrei-browhorn-shortskull-representative-imagegen-v2.png",
+        "variant": "짧고 깊은 머리 눈 위 뿔 전신 대표 이미지 생성 v2",
+        "src": "assets/dinosaurs/carnotaurus-sastrei-browhorn-shortskull-representative-imagegen-v2.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "카르노타우루스 라 콜로니아 하구 범람원 생태",
+        "body": "라 콜로니아층의 하구·범람원 환경에서 단독 개체가 수로 가장자리를 지나는 넓은 생태 장면입니다. 독립 원본 크기 검수에서 단독 전신 실루엣, 팔다리 개수, 한 꼬리와 다른 동물 없음이 생태 문맥용 anatomy-review 관문에 수용되었습니다. 원거리·환경 중심 구도이므로 세부 손발 해부를 판정하거나 대표를 고르는 자료로 쓰지 않습니다.",
+        "source": "assets/dinosaurs/carnotaurus-sastrei-la-colonia-estuary-habitat-ecology-imagegen-v1.png",
+        "variant": "라 콜로니아 하구 범람원 생태 이미지 생성 v1",
+        "src": "assets/dinosaurs/carnotaurus-sastrei-la-colonia-estuary-habitat-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "카르노타우루스 적갈·숯빛 동일 몸체 무늬 후보",
+        "body": "대표와 같은 몸체 비례와 뿔·팔다리·꼬리 구조를 목표로 색과 무늬만 적갈색·숯빛·옅은 배면으로 바꾼 비교 후보입니다. 독립 원본 크기 검수에서 한 머리·뿔 한 쌍·두 팔·두 다리·한 꼬리와 색상 분리가 review-hold 관문을 통과했습니다. 반대 방향과 다른 광원으로 구도를 분리하되 전신 해부를 새로 입증하거나 대표를 대체하는 자료로 쓰지 않습니다.",
+        "source": "assets/dinosaurs/carnotaurus-sastrei-rust-charcoal-pattern-variant-imagegen-v2.png",
+        "variant": "적갈 숯빛 동일 몸체 무늬 이미지 생성 v2",
+        "src": "assets/dinosaurs/carnotaurus-sastrei-rust-charcoal-pattern-variant-imagegen-v2.png"
+      }
+    ],
+    "carcharodontosaurus-saharicus": [
+      {
+        "kind": "count-level pass",
+        "title": "카르카로돈토사우루스 켐켐 긴 두개골 전신 대표",
+        "body": "세노마눔절 모로코 켐켐층군을 배경으로 한 교정 v2 전신입니다. 독립 원본 크기 검수에서 한 개체, 길고 낮은 한 두개골, 두 앞다리, 두 뒷다리와 분리된 발, 골반에서 한 끝으로 이어지는 한 꼬리, 여분 팔다리 없음이 count-level 관문을 통과했습니다. 2025년 이집트 표본의 Tameryraptor 분리 뒤 모로코 C. saharicus 기준을 사용하며, 두개골 밖 몸통·사지·꼬리는 근연종 비교복원이라는 경계를 유지합니다.",
+        "source": "assets/dinosaurs/carcharodontosaurus-saharicus-longskull-kemkem-representative-imagegen-v2.png",
+        "variant": "켐켐 긴 두개골 전신 대표 이미지 생성 v2",
+        "src": "assets/dinosaurs/carcharodontosaurus-saharicus-longskull-kemkem-representative-imagegen-v2.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "카르카로돈토사우루스 켐켐 삼각주 수로 생태",
+        "body": "켐켐층군의 넓은 삼각주 수로와 사주를 중심으로 단독 개체를 떨어뜨려 배치한 생태 장면입니다. 독립 원본 크기 검수에서 단독 실루엣, 팔다리 개수, 한 꼬리와 다른 동물 없음이 생태 문맥용 anatomy-review 관문에 수용되었습니다. 환경 비중이 크고 손·발이 작으므로 대표 선택에 사용하지 않으며, 두개골 밖 전신의 근연종 비교복원과 2025년 Tameryraptor 분리 경계를 유지합니다.",
+        "source": "assets/dinosaurs/carcharodontosaurus-saharicus-kemkem-delta-habitat-ecology-imagegen-v1.png",
+        "variant": "켐켐 삼각주 수로 생태 이미지 생성 v1",
+        "src": "assets/dinosaurs/carcharodontosaurus-saharicus-kemkem-delta-habitat-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "카르카로돈토사우루스 슬레이트·구리빛 동일 몸체 무늬 후보",
+        "body": "대표와 같은 머리·몸체 비례를 목표로 슬레이트 회청색, 구리빛 등 무늬와 옅은 배면만 비교하는 색상 변형입니다. 독립 원본 크기 검수에서 한 머리·두 팔·두 다리·한 꼬리와 색상 분리가 review-hold 관문을 통과했습니다. 두개골 밖 몸통·사지·꼬리의 근연종 비교복원 경계와 2025년 Tameryraptor 분리를 유지하며 대표를 대체하지 않습니다.",
+        "source": "assets/dinosaurs/carcharodontosaurus-saharicus-slate-copper-pattern-variant-imagegen-v2.png",
+        "variant": "슬레이트 구리빛 동일 몸체 무늬 이미지 생성 v2",
+        "src": "assets/dinosaurs/carcharodontosaurus-saharicus-slate-copper-pattern-variant-imagegen-v2.png"
+      }
+    ],
+    "giganotosaurus-carolinii": [
+      {
+        "kind": "count-level pass",
+        "title": "기가노토사우루스 낮고 긴 머리·누골 융기 전신 대표",
+        "body": "칸델레로스층의 단독 성체 전신입니다. 원본 크기 검수에서 길고 낮은 한 두개골, 낮은 누골 융기, 짧은 앞다리 두 개, 강한 뒷다리 두 개와 분리된 두 발, 골반에서 한 끝으로 이어지는 한 꼬리, 배 아래의 빈 배경과 여분 다리 없음이 count-level 관문을 통과했습니다. 앞다리·세 손가락 손과 나머지 결손 전신은 근연 카르카로돈토사우루스과 비교복원이며 직접 화석 증거로 승격하지 않습니다.",
+        "source": "assets/dinosaurs/giganotosaurus-carolinii-lowskull-lacrimal-ridge-representative-imagegen-v1.png",
+        "variant": "낮고 긴 머리 누골 융기 전신 대표 이미지 생성 v1",
+        "src": "assets/dinosaurs/giganotosaurus-carolinii-lowskull-lacrimal-ridge-representative-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "기가노토사우루스 칸델레로스 망상 수로 횡단 생태",
+        "body": "비가 지난 칸델레로스층의 얕은 망상 수로와 붉은 사주를 넓게 보여 주는 단독 생태 장면입니다. 한 개체의 머리부터 꼬리 끝, 두 팔, 두 뒷다리와 두 발이 분리되어 보이지만 높은 사선·물·반사와 환경 중심 구도 때문에 세부 손발 해부를 판정하거나 대표를 고르는 자료로 쓰지 않습니다. 수로 횡단 순간과 노출된 발자국은 형성층 수준의 복원 가설입니다.",
+        "source": "assets/dinosaurs/giganotosaurus-carolinii-candeleros-braided-channel-ecology-imagegen-v1.png",
+        "variant": "칸델레로스 망상 수로 횡단 생태 이미지 생성 v1",
+        "src": "assets/dinosaurs/giganotosaurus-carolinii-candeleros-braided-channel-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "기가노토사우루스 숯빛·적갈색 동일 체형 무늬 후보",
+        "body": "대표와 같은 낮은 두개골·누골 융기·매끈한 등선·사지 개수·한 꼬리를 유지하면서 반대 방향 후방 3/4 시점과 청숯빛·적갈색 무늬를 비교하는 변형입니다. 원본 크기 검수에서 한 머리, 두 팔, 두 뒷다리와 두 발, 한 꼬리와 대표와 다른 구도를 확인했습니다. 앞다리·손은 계속 비교복원이고 색과 무늬도 가설이므로 review hold로만 사용하며 대표를 대체하지 않습니다.",
+        "source": "assets/dinosaurs/giganotosaurus-carolinii-charcoal-russet-pattern-variant-imagegen-v1.png",
+        "variant": "숯빛 적갈색 동일 체형 무늬 이미지 생성 v1",
+        "src": "assets/dinosaurs/giganotosaurus-carolinii-charcoal-russet-pattern-variant-imagegen-v1.png"
+      }
+    ],
+    "iguanodon-bernissartensis": [
+      {
+        "kind": "count-level pass",
+        "title": "이구아노돈 엄지 가시·튼튼한 사족 전신 대표",
+        "body": "베르니사르 습지 가장자리의 단독 성체 전신입니다. 원본 크기 검수에서 볏·코뿔 없는 낮은 부리형 머리, 정확히 네 팔다리, 가까운 손의 원뿔형 엄지 가시와 지지용 중앙 손가락 묶음, 두 세 발가락 뒷발, 지면에 끌리지 않고 한 끝으로 이어지는 긴 꼬리를 확인했습니다. 2026년 골격 지표 연구가 주된 사족보행을 강하게 지지하지만 이 장면의 실제 걸음과 행동을 직접 증명하는 것은 아닙니다.",
+        "source": "assets/dinosaurs/iguanodon-bernissartensis-thumbspike-quadruped-representative-imagegen-v1.png",
+        "variant": "엄지 가시 튼튼한 사족 전신 대표 이미지 생성 v1",
+        "src": "assets/dinosaurs/iguanodon-bernissartensis-thumbspike-quadruped-representative-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "이구아노돈 베르니사르 습지의 분리된 세 개체",
+        "body": "베르니사르의 물기 많은 저지대에 세 이구아노돈을 서로 겹치지 않게 배치한 넓은 생태 장면입니다. 앞쪽 성체의 전신은 읽히고 뒤의 두 개체도 분리되어 있지만, 원거리 손발과 다개체 구도는 대표 해부 증거로 쓰지 않습니다. 같은 화면의 세 개체는 서식지와 규모감을 위한 가설이며 실제 무리, 가족, 협동 이동이나 동시 행동의 직접 증거가 아닙니다.",
+        "source": "assets/dinosaurs/iguanodon-bernissartensis-bernissart-marsh-group-ecology-imagegen-v1.png",
+        "variant": "베르니사르 습지 분리 집단 생태 이미지 생성 v1",
+        "src": "assets/dinosaurs/iguanodon-bernissartensis-bernissart-marsh-group-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "이구아노돈 청회색·적갈색 동일 체형 무늬 후보",
+        "body": "대표의 튼튼한 몸체와 손·발·꼬리 구조를 유지하면서 반대 방향 전방 3/4 시점, 청회색 등과 절제된 적갈색 옆구리 무늬를 비교하는 변형입니다. 원본 크기에서 한 머리, 네 팔다리, 가까운 엄지 가시, 두 뒷발과 한 꼬리를 확인했지만 손가락 세부와 색·무늬는 대표를 새로 입증하지 않습니다. 동일 종의 구성·색 비교용 review hold이며 대표 승격은 금지합니다.",
+        "source": "assets/dinosaurs/iguanodon-bernissartensis-slate-russet-pattern-variant-imagegen-v1.png",
+        "variant": "청회색 적갈색 동일 체형 무늬 이미지 생성 v1",
+        "src": "assets/dinosaurs/iguanodon-bernissartensis-slate-russet-pattern-variant-imagegen-v1.png"
+      }
+    ],
     "spinosaurus-aegyptiacus": [
       {
         "kind": "count-level pass",
@@ -7821,12 +8081,28 @@
         "src": "assets/dinosaurs/oviraptor-philoceratops-separated-adult-subadult-growth-imagegen-v1.png"
       },
       {
-        "kind": "review hold",
-        "title": "오비랍토르 오베르진·세이지 견갑무늬",
-        "body": "대표와 같은 낮은 볏·긴 주둥이·단단한 몸 설계에 오베르진 등, 세이지색 견갑과 팔깃, 옅은 배, 절제된 녹슨 목색을 적용한 팔레트 비교입니다. 양팔의 세 손가락과 한 꼬리를 확인했지만 색·무늬와 과시 깃은 복원 가설이므로 대표 아래에 둡니다.",
+        "kind": "diagnostic only",
+        "title": "오비랍토르 M2 머리·목 클린 플레이트 제작 중간재",
+        "body": "머리·목과 꼬리를 의도적으로 제거하고 가려졌던 사구 배경을 복원한 모션 합성 전용 클린 플레이트입니다. 실제 M2 영상은 머리 스윕 마스크 영역만 사용하고 원본 꼬리는 모든 프레임에서 고정합니다. 갤러리·대표·해부학 증거로는 절대 노출하거나 승격하지 않습니다.",
+        "source": "assets/dinosaurs/oviraptor-philoceratops-head-tail-clean-plate-motion-imagegen-v1.png",
+        "variant": "M2 머리·목 부분 동작 클린 플레이트 이미지 생성 v1",
+        "src": "assets/dinosaurs/oviraptor-philoceratops-head-tail-clean-plate-motion-imagegen-v1.png"
+      },
+      {
+        "kind": "diagnostic only",
+        "title": "오비랍토르 이전 동일 구도 무늬 변이 퇴역본",
+        "body": "대표와 해부학은 대체로 일치하지만 자세, 카메라, 실루엣 배치와 사구 배경이 거의 같고 색만 바뀐 구도 중복본입니다. 2026-08-03 자동 구조 유사도 감사와 사람 검토에서 S2 다양성 기준을 통과하지 못해 갤러리와 양성 생성 참조에서 제외했습니다.",
         "source": "assets/dinosaurs/oviraptor-philoceratops-aubergine-sage-robust-pattern-imagegen-v3.png",
-        "variant": "오베르진·세이지 견갑무늬 이미지 생성 v3",
+        "variant": "동일 구도 오베르진·세이지 무늬 진단 퇴역 v3",
         "src": "assets/dinosaurs/oviraptor-philoceratops-aubergine-sage-robust-pattern-imagegen-v3.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "오비랍토르 비 뒤 물길 후방 3/4 무늬 변이",
+        "body": "대표의 건조한 측면 좌향 구도와 달리 비가 갠 사구 사이 얕은 물길을 화면 오른쪽으로 건너는 후방 3/4 보행 장면입니다. 오베르진 등과 절제된 세이지·모래색 깃 면을 유지하면서 카메라 방향, 행동, 지면과 배경 구조를 분리했습니다. 낮은 볏, 비교적 길고 깊은 무치악 주둥이, 두 개의 세 손가락 팔, 두 뒷다리와 한 개의 짧은 꼬리는 원본 크기에서 확인했지만 색·무늬·비 뒤 행동은 복원 가설이므로 대표 승격을 금지합니다.",
+        "source": "assets/dinosaurs/oviraptor-philoceratops-postrain-rill-rear-three-quarter-aubergine-sage-pattern-imagegen-v1.png",
+        "variant": "비 뒤 물길 후방 3/4 오베르진·세이지 무늬 이미지 생성 v1",
+        "src": "assets/dinosaurs/oviraptor-philoceratops-postrain-rill-rear-three-quarter-aubergine-sage-pattern-imagegen-v1.png"
       }
     ],
     "citipati-osmolskae": [

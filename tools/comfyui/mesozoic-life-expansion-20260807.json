@@ -1,0 +1,1302 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-07-mesozoic-life-expansion-1",
+  "createdAt": "2026-08-07T19:11:49+09:00",
+  "audience": "Korean Dino Atlas users ages 5-14",
+  "scope": [
+    "Repenomamus robustus initial three-image gallery",
+    "Asteroceras obtusum shell-led three-image gallery",
+    "Passaloteuthis bisulcata soft-tissue and arm-count-led three-image gallery",
+    "Lystrosaurus murrayi beak-and-two-upper-tusk-led three-image gallery",
+    "Cynognathus crateronotus long-skull-and-sectorial-dentition-led three-image gallery",
+    "Archaeopteryx lithographica bird-dinosaur-boundary three-image gallery",
+    "Mesozoic non-dinosaur life expansion",
+    "Extensible approval and rejection provenance for later taxa"
+  ],
+  "promptEncoding": "Prompt arrays preserve the exact prompt supplied to the image generator, one labeled line per item and joined with newline characters.",
+  "promptProvenanceExceptions": {
+    "archaeopteryx-lithographica": "The exact original prompt text was not preserved for the three approved calls and one rejected call. Their prompt arrays are explicitly marked reconstructed-not-verbatim summaries derived from preserved call constraints and review records, and must not be treated as exact generator prompts."
+  },
+  "copyrightSafety": {
+    "externalArtworkUsed": false,
+    "externalImagesUsedAsGenerationInput": false,
+    "projectGeneratedReferenceOnly": true,
+    "licenseRecord": "Original project-generated bitmap assets for Dino Atlas. Primary papers supplied factual, anatomical, temporal, environmental, and evidence-boundary constraints only; no external figure, reconstruction, franchise frame, or named-artist style was copied or supplied to the generator.",
+    "rejectedReferenceUse": "Some rejected ecology experiments used an existing project-generated Psittacosaurus anatomy image as an identity reference. No externally sourced image was used, and none of those rejected outputs was copied into assets/dinosaurs.",
+    "appPathPolicy": "Only reviewed species-prefixed project copies under assets/dinosaurs may be referenced by app.js or gallery metadata. No .codex/generated_images path may be referenced by the app."
+  },
+  "researchSources": [
+    {
+      "taxon": "Repenomamus robustus",
+      "citation": "Li, J., Wang, Y., Wang, Y. & Li, C. 2001. A new family of primitive mammal from the Mesozoic of western Liaoning, China. Chinese Science Bulletin 46: 782-785.",
+      "url": "https://doi.org/10.1007/BF03187223",
+      "use": "Original description, Yixian Formation occurrence, and directly preserved cranial and dental anatomy",
+      "rightsUse": "Factual reference only; no figure copied or supplied to the generator"
+    },
+    {
+      "taxon": "Repenomamus robustus",
+      "citation": "Hu, Y., Meng, J., Wang, Y. & Li, C. 2005. Large Mesozoic mammals fed on young dinosaurs. Nature 433: 149-152.",
+      "url": "https://doi.org/10.1038/nature03102",
+      "use": "Substantially complete skeletal context, comparative body size, and direct stomach-content evidence of juvenile Psittacosaurus ingestion",
+      "rightsUse": "Factual reference only; no figure copied or supplied to the generator"
+    },
+    {
+      "taxon": "Repenomamus robustus",
+      "citation": "Hu, Y., Meng, J., Wang, Y. & Li, C. 2005. PubMed record for Large Mesozoic mammals fed on young dinosaurs.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15650737/",
+      "use": "Accessible abstract confirming that juvenile Psittacosaurus remains were preserved as stomach contents",
+      "rightsUse": "Bibliographic and factual reference only; no image copied"
+    },
+    {
+      "taxon": "Asteroceras obtusum",
+      "citation": "British Geological Survey. Ammonites. Discovering Geology: Fossils and geological time.",
+      "url": "https://www.bgs.ac.uk/discovering-geology/fossils-and-geological-time/ammonites/",
+      "use": "General ammonite shell, chamber, living-chamber, preservation, buoyancy, and soft-part uncertainty boundaries",
+      "rightsUse": "Factual reference only; no BGS image or reconstruction copied or supplied to the generator"
+    },
+    {
+      "taxon": "Asteroceras obtusum",
+      "citation": "Oxford University Museum of Natural History geology database, specimen J.01194, Asteroceras obtusum.",
+      "url": "https://oumrp.nsms.ox.ac.uk/cgi-bin/jurassic.cgi?detail_oid=J.01194",
+      "use": "Species-specific museum specimen check for the planispiral whorls, umbilicus, aperture region, and radial rib identity cues",
+      "rightsUse": "Catalogue and factual reference only; no specimen image copied or supplied to the generator"
+    },
+    {
+      "taxon": "Asteroceras obtusum",
+      "citation": "Museums Victoria Collections, specimen P 344678, Asteroceras obtusum (Sowerby, 1817).",
+      "url": "https://collections.museumsvictoria.com.au/specimens/2619820",
+      "use": "Independent species-specific museum specimen check for shell proportions and rib continuity",
+      "rightsUse": "Catalogue and factual reference only; no specimen image copied or supplied to the generator"
+    },
+    {
+      "taxon": "Passaloteuthis bisulcata",
+      "citation": "British Geological Survey. Belemnites. Discovering Geology: Fossils and geological time.",
+      "url": "https://www.bgs.ac.uk/discovering-geology/fossils-and-geological-time/belemnites/",
+      "use": "General belemnite internal rostrum, ten-arm, arm-hook, preservation, prey, and soft-part uncertainty constraints",
+      "rightsUse": "Factual reference only; no BGS image or reconstruction copied or supplied to the generator"
+    },
+    {
+      "taxon": "Passaloteuthis bisulcata",
+      "citation": "Rita, P. et al. 2021. Taxonomical diversity and palaeobiogeographical affinity of belemnites from the Pliensbachian-Toarcian GSSP (Lusitanian Basin, Portugal). Papers in Palaeontology.",
+      "url": "https://doi.org/10.1002/spp2.1343",
+      "use": "Species-level upper Pliensbachian to lower Toarcian occurrence and direct rostrum profile, apex, groove, cross-section, and phragmocone-penetration observations",
+      "rightsUse": "Factual reference only; no paper figure copied or supplied to the generator"
+    },
+    {
+      "taxon": "Passaloteuthis bisulcata",
+      "citation": "Klug, C. et al. 2024. Anatomy and size of Megateuthis, the largest belemnite. Swiss Journal of Palaeontology 143: 23.",
+      "url": "https://doi.org/10.1186/s13358-024-00320-x",
+      "use": "Complete early Toarcian Passaloteuthis specimens, ten similar arms in one specimen, soft-body proportion estimates, and explicit belemnitid fin uncertainty",
+      "rightsUse": "Factual reference only; no paper figure copied or supplied to the generator"
+    },
+    {
+      "taxon": "Lystrosaurus murrayi",
+      "citation": "Smithsonian National Museum of Natural History. Lystrosaurus murrayi catalogue specimen, Department of Paleobiology.",
+      "url": "https://www.si.edu/object/nmnhpaleobiology_3573738",
+      "use": "Species-level museum catalogue check for the short broad dicynodont skull, toothless beak, paired upper tusks, and robust postcranial identity",
+      "rightsUse": "Catalogue and factual reference only; no specimen image copied or supplied to the generator"
+    },
+    {
+      "taxon": "Lystrosaurus murrayi",
+      "citation": "Natural History Museum, London. Synapsid and parareptile fossil collections.",
+      "url": "https://www.nhm.ac.uk/our-science/services/collections/palaeontology/synapsid-parareptiles.html",
+      "use": "Institutional collection context for dicynodont and cynodont fossil anatomy and the distinction between preserved hard tissues and reconstructed external appearance",
+      "rightsUse": "Factual collection reference only; no museum image copied or supplied to the generator"
+    },
+    {
+      "taxon": "Lystrosaurus murrayi",
+      "citation": "Botha, J. 2020. The paleobiology and paleoecology of South African Lystrosaurus. PeerJ 8: e10408.",
+      "url": "https://doi.org/10.7717/peerj.10408",
+      "use": "Karoo Basin occurrence, skeletal and histological context, terrestrial ecology, and limits on behavioral and soft-tissue inference",
+      "rightsUse": "Factual reference only; no paper figure or reconstruction copied or supplied to the generator"
+    },
+    {
+      "taxon": "Cynognathus crateronotus",
+      "citation": "Smithsonian National Museum of Natural History. Cynognathus crateronotus (Seeley) catalogue specimen, Department of Paleobiology.",
+      "url": "https://www.si.edu/object/cynognathus-crateronotus-seeley%3Anmnhpaleobiology_3450246",
+      "use": "Species-level museum catalogue check for the long low skull, deep temporal region, zygomatic arches, enlarged canine, and differentiated postcanine dentition",
+      "rightsUse": "Catalogue and factual reference only; no specimen image copied or supplied to the generator"
+    },
+    {
+      "taxon": "Cynognathus crateronotus",
+      "citation": "Natural History Museum, London. Synapsid and parareptile fossil collections.",
+      "url": "https://www.nhm.ac.uk/our-science/services/collections/palaeontology/synapsid-parareptiles.html",
+      "use": "Institutional collection context for cynodont skull and dentition evidence and the uncertainty of unpreserved external soft tissues",
+      "rightsUse": "Factual collection reference only; no museum image copied or supplied to the generator"
+    },
+    {
+      "taxon": "Cynognathus crateronotus",
+      "citation": "Wynd, B. M., Peecook, B. R., Whitney, M. R. & Sidor, C. A. 2018. The first occurrence of Cynognathus crateronotus (Cynodontia: Cynognathia) in Tanzania and Zambia, with implications for the age and biostratigraphic correlation of Triassic strata in southern Pangea. Journal of Vertebrate Paleontology 37: e1421548.",
+      "url": "https://doi.org/10.1080/02724634.2017.1421548",
+      "use": "Species identification, Middle Triassic southern Pangean occurrence, and comparative craniodental character context",
+      "rightsUse": "Factual reference only; no paper figure or reconstruction copied or supplied to the generator"
+    },
+    {
+      "taxon": "Archaeopteryx lithographica",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/archaeopteryx",
+      "use": "Accessible identity, approximately 0.5 m size, Late Jurassic Germany, small conical teeth, broad feathered wings, long bony tail, Solnhofen lagoon setting, and explicit uncertainty over flight mode and whole-body color",
+      "rightsUse": "Factual reference only; no image copied or supplied to the generator"
+    },
+    {
+      "taxon": "Archaeopteryx lithographica",
+      "url": "https://www.nhm.ac.uk/our-science/services/collections/palaeontology/fossil-birds.html",
+      "use": "Natural History Museum London specimen and latest Jurassic Solnhofen Limestone collection context",
+      "rightsUse": "Factual and collection reference only; no specimen image copied or supplied to the generator"
+    },
+    {
+      "taxon": "Archaeopteryx lithographica",
+      "citation": "Foth, C., Tischlinger, H. & Rauhut, O. W. M. 2014. New specimen of Archaeopteryx provides insights into the evolution of pennaceous feathers. Nature 511: 79-82.",
+      "url": "https://doi.org/10.1038/nature13467",
+      "use": "Direct feather-distribution evidence from the eleventh specimen and analytical context for pennaceous-feather evolution",
+      "rightsUse": "Factual reference only; no figure copied or supplied to the generator"
+    },
+    {
+      "taxon": "Archaeopteryx lithographica",
+      "citation": "Carney, R. M. et al. 2012. New evidence on the colour and nature of the isolated Archaeopteryx feather. Nature Communications 3: 637.",
+      "url": "https://doi.org/10.1038/ncomms1642",
+      "use": "Melanosome-based black-color inference for an isolated feather, with no whole-body color inference",
+      "rightsUse": "Factual reference only; no figure copied or supplied to the generator"
+    },
+    {
+      "taxon": "Archaeopteryx lithographica",
+      "citation": "Voeten, D. F. A. E. et al. 2018. Wing bone geometry reveals active flight in Archaeopteryx. Nature Communications 9: 923.",
+      "url": "https://doi.org/10.1038/s41467-018-03296-8",
+      "use": "Analytical flight-capability context; not treated as direct evidence for the exact takeoff, wingbeat, or short crossing depicted",
+      "rightsUse": "Factual reference only; no figure copied or supplied to the generator"
+    }
+  ],
+  "evidenceBoundaries": {
+    "repenomamus-robustus": {
+      "direct": [
+        "The original Yixian Formation material directly supports Repenomamus robustus as a robust Early Cretaceous eutriconodont mammal with preserved cranial and dental anatomy.",
+        "Substantially complete skeletal material supports a low, elongated, sturdy body with relatively short limbs and a long tail at approximately opossum-scale rather than giant modern-badger scale.",
+        "Fragmentary remains of a juvenile Psittacosaurus preserved in the abdominal stomach region directly document ingestion of that animal."
+      ],
+      "comparative": [
+        "The complete external body outline, dense fur covering, tiny rounded external ears, exact nose form, precise limb posture, and fully furred tail are conservative soft-tissue reconstructions rather than directly preserved features.",
+        "Modern mammals may inform only broad biomechanical plausibility; the reconstruction must not be presented as a literal badger, otter, beaver, capybara, rat, opossum, weasel, cat, or dog analogue."
+      ],
+      "hypothetical": [
+        "All pigmentation, pattern placement, fur color, lighting, weather, vegetation arrangement, locomotor moment, and use of a particular root shelter are hypothetical.",
+        "The stomach contents do not directly show whether the juvenile Psittacosaurus was hunted, killed, scavenged, found already dead, or obtained in another way. Hunting, attacking, and killing behavior must not be stated as fact."
+      ],
+      "ingestionBoundary": "Juvenile Psittacosaurus ingestion is directly evidenced by stomach contents. Repenomamus killing that individual is not directly evidenced."
+    },
+    "asteroceras-obtusum": {
+      "direct": [
+        "Museum specimens identified as Asteroceras obtusum directly support a single rounded planispiral shell with coherent whorls, a readable umbilicus, and strong radial ribs as the primary identity cues.",
+        "Ammonite fossils directly preserve the external chambered shell far more commonly than the living soft parts; the shell and living-chamber continuity therefore carry the reliable anatomy in these images."
+      ],
+      "comparative": [
+        "The small head, simple eye, soft-tissue collar, short arm cluster, exact aperture emergence, and live orientation are conservative cephalopod comparisons rather than Asteroceras soft tissues preserved in the cited specimens.",
+        "The modern Nautilus is only a distant living comparison and must not be copied literally: a protective hood, a nautilus-style pinhole eye, and masses of thin tentacles are not evidence-led Asteroceras traits."
+      ],
+      "hypothetical": [
+        "All living shell colors, soft-body colors, irregular patterns, swimming poses, lighting, water depth, and exact habitat arrangements are hypothetical.",
+        "The crinoid shelf, sparse sponges, planktonic crustaceans, distant fish, and inferred gentle swimming behavior are period-plausible scene construction, not a direct fossil association for the pictured individual."
+      ],
+      "softTissueBoundary": "Only the fossil-led shell can support representative approval. Head, eye, arm, membrane, pigmentation, pattern, and behavior details remain comparison or hypothesis and cannot be promoted as diagnostic evidence."
+    },
+    "passaloteuthis-bisulcata": {
+      "direct": [
+        "Passaloteuthis bisulcata rostra are directly described as robust, symmetrical, conical to cylindriconical, with an acute apex and two dorsolateral grooves; the phragmocone penetrates the internal rostrum.",
+        "Rare complete early Toarcian Passaloteuthis bisulcata specimens from Ohmden preserve soft-body proportions, arm crowns, and hooks. One figured specimen has ten similar arms.",
+        "Klug et al. estimate approximately 2.4 cm for the head, 12.9 cm for the arms, 20.2 cm for the mantle, and 35.5 cm for the full body including arms in the comparative Passaloteuthis specimen. These are reconstructed proportion estimates, not a universal exact adult size."
+      ],
+      "comparative": [
+        "A continuous streamlined mantle around the internal shell, modest eye, skin surface, exact swimming posture, and the visibility and spacing of every hook are conservative life-reconstruction choices.",
+        "The ten separated similar-length arms are evidence-led at count level, but the simplified visible hook rows, exact hook number, arm spread, sex, and individual variation are not fully resolved by the displayed image."
+      ],
+      "hypothetical": [
+        "All pigmentation, chromatophore patterns, countershading, lighting, swimming poses, and exact Posidonia-shale ecosystem arrangements are hypothetical.",
+        "Hooks support grasping prey broadly, but this image's approach toward one shrimp-like crustacean is an explicit foraging hypothesis rather than a direct record of this individual or species-level prey choice."
+      ],
+      "finBoundary": "No proper belemnitid fin remains reliably establish fin shape, size, or position. Avoiding broad modern-squid fins is conservative, but a visually finless posterior is not evidence that Passaloteuthis lacked fins."
+    },
+    "lystrosaurus-murrayi": {
+      "direct": [
+        "Lystrosaurus murrayi fossil material directly supports a short, broad, deep dicynodont skull, a toothless keratin-supporting beak region, and one paired set of upper-jaw tusks as the primary identity cues.",
+        "Postcranial remains support a compact, barrel-bodied quadruped with a short neck, stout limbs, distinct feet, and a short tail rather than a dinosaur-like or ordinary lizard body plan.",
+        "South African Karoo Basin material places Lystrosaurus in Early Triassic terrestrial floodplain settings after the end-Permian extinction."
+      ],
+      "comparative": [
+        "The exact beak covering, lip and nostril margins, skin texture, muscle volume, limb posture, and degree of any filamentous covering are conservative reconstructions rather than directly preserved external soft tissues.",
+        "Pig, hippopotamus, tapir, turtle, dog, and generic lizard comparisons may not replace the fossil-led dicynodont skull, beak, paired maxillary tusks, and compact postcranial anatomy."
+      ],
+      "hypothetical": [
+        "All pigmentation, pattern placement, lighting, weather, exact vegetation arrangement, locomotor moment, and use of a particular channel margin are hypothetical.",
+        "The post-flood scene and raised-head behavior are habitat reconstructions, not direct records of an individual Lystrosaurus murrayi."
+      ],
+      "tuskBoundary": "Exactly one symmetrical pair of upper-jaw tusks is the count-level gallery requirement. A lower-jaw projection or apparent third tusk fails identity review; occlusion may hide part of the far upper tusk only when its matching maxillary origin remains clear.",
+      "trackwayBoundary": "The ecology image depicts irregular post-flood depressions and scuffs, not a documented Lystrosaurus trackway. Repeated equal-size, equal-spacing, or cloned footprint stamps are prohibited."
+    },
+    "cynognathus-crateronotus": {
+      "direct": [
+        "Cynognathus crateronotus skull material directly supports a long, low skull with a deep temporal region, strongly developed zygomatic arches, and differentiated dentition.",
+        "The tooth row includes small anterior incisors, an enlarged upper canine, and smaller laterally compressed sectorial postcanines rather than a uniform crocodile-like row of conical teeth.",
+        "Postcranial evidence supports a robust quadrupedal non-mammalian cynodont with an elongated trunk and a continuous tail in Middle Triassic southern Pangean terrestrial environments."
+      ],
+      "comparative": [
+        "The exact external nose, ear opening, lips, skin texture, sparse filament placement, muscle volume, limb posture, and tail covering are conservative soft-tissue reconstructions rather than directly preserved features.",
+        "Dog, wolf, hyena, cat, crocodile, monitor-lizard, and dinosaur comparisons may not replace the fossil-led long low skull, flared zygomatic region, and heterodont sectorial tooth pattern."
+      ],
+      "hypothetical": [
+        "All pigmentation, pattern placement, lighting, weather, vegetation arrangement, locomotor moment, and use of a particular channel margin or upland slope are hypothetical.",
+        "No approved image in this batch depicts prey capture, attack, killing, blood, or a species-level prey claim."
+      ],
+      "dentitionBoundary": "Representative identity requires readable heterodont dentition: small incisors, one prominent visible upper canine without saber-cat exaggeration, and distinctly smaller blade-like sectorial postcanines. Homodont conical crocodile rows fail review.",
+      "integumentBoundary": "A mostly leathery external surface with only sparse very short filament cues is a cautious visual hypothesis, not direct evidence that Cynognathus crateronotus had this exact covering. A thick modern-mammal coat, external pinnae, wet dog nose, or whisker pads are prohibited modern drift."
+    },
+    "archaeopteryx-lithographica": {
+      "direct": [
+        "Solnhofen Limestone specimens directly preserve a small Late Jurassic avialan with toothed jaws, feathered forelimb wings, clawed wing fingers, two hind limbs, and a long bony tail with associated feathers.",
+        "Multiple specimens preserve feather impressions, and the eleventh specimen documents extensive pennaceous feathering on the body, limbs, and tail."
+      ],
+      "analytical": [
+        "An isolated feather attributed to Archaeopteryx was inferred from melanosomes to have been black; this does not establish whole-body coloration, and the attribution of an isolated feather does not justify copying black across the entire animal.",
+        "Wing-feather and wing-bone studies support aerodynamic capability and some degree of active flight, but the exact launch method, wingbeat, endurance, maneuverability, and balance between flapping and gliding remain analytical questions rather than directly observed behavior."
+      ],
+      "hypothetical": [
+        "All whole-body pigmentation, pattern placement, sex or age association of the pattern, soft-tissue facial details, posture, weather, vegetation arrangement, and the exact depicted moment are hypothetical.",
+        "Ground-versus-tree preference, the precise lagoon-islet crossing, and whether the ecology image shows powered flight, a glide, a leap, or another short aerial transition must not be stated as direct fact."
+      ],
+      "flightBoundary": "The fossils and biomechanical analyses support aerodynamic and flight capability, but the exact short crossing shown in the ecology image is reconstructed and does not directly demonstrate a particular powered-flight or gliding performance."
+    }
+  },
+  "records": {
+    "repenomamus-robustus-representative-v1": {
+      "taxon": "Repenomamus robustus",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-07T18:49:39+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image workflow",
+      "seed": "unavailable",
+      "callId": "exec-74ba71c4-d397-4605-8308-d3f42c0cff49",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-a81b-7fe2-a79b-c656a72f4720/exec-74ba71c4-d397-4605-8308-d3f42c0cff49.png",
+      "approvedProjectPath": "assets/dinosaurs/repenomamus-robustus-lowbody-fourlimb-representative-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork or copyrighted character style used.",
+      "sha256": "8152b904becc9c103c2ce72f53fcbba9c2c625128846cd897d0b9344dc587098",
+      "bytes": 3053685,
+      "dimensions": "1536x1024",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas Mesozoic-life gallery representative candidate, four-limb anatomy retry",
+        "Primary request: Produce a conservative museum reconstruction of exactly one small Repenomamus robustus, an Early Cretaceous eutriconodont mammal from the Yixian Formation, without copying any living mammal species.",
+        "Scene/backdrop: A low open volcanic-silt bar beside a shallow Yixian lake, with scattered fern fans, horsetail stems, a few fallen ginkgo leaves and distant conifer silhouettes. The ground immediately behind every limb must remain empty and pale for anatomy inspection. No modern lawn, flowers or other animals.",
+        "Subject: One roughly half-meter-scale Repenomamus robustus with a low elongated sturdy ribcage, short neck, low broad skull, short blunt furred muzzle with small nostrils and no black nose pad, tiny rounded ears almost hidden in coarse fur, very short robust semi-sprawling limbs, and one long cylindrical furred tail tapering from the pelvis. Dense matte fur, small dark eye, closed mouth. Do not imitate a badger, otter, capybara, rat, opossum, weasel, cat or dog.",
+        "Style/medium: realistic scientific natural-history painting with crisp anatomy and restrained life reconstruction.",
+        "Composition/framing: full-body right-facing lateral three-quarter walking view at low eye level. Use a clearly staggered walking gait: near forefoot extended forward, far forefoot planted back; near hindfoot planted back, far hindfoot stepped forward under but clear of the belly. Exactly four complete legs and four separate feet must be visible with open ground between them. Keep the entire tail and every toe inside the frame with generous margins.",
+        "Lighting/mood: soft diffuse daylight through thin volcanic haze, neutral documentary mood.",
+        "Color palette: dark walnut-brown back, subdued clay-brown shoulders and hips, soft gray-beige lower flanks and belly; irregular natural clouding, no mask, stripes or rings.",
+        "Materials/textures: coarse short fur, matte claws, powdery ash, small fern and ginkgo litter.",
+        "Constraints: one animal, one head, two forelimbs, two hindlimbs, four anatomically connected feet, one continuous tail; low sturdy proportions and small scale; no prey; no text, labels, logo, border or watermark.",
+        "Avoid: hidden far limb, three-legged appearance, detached paw, duplicate paw, fused legs, extra limb, split tail, crop, black otter nose, otter whisker pads, badger markings, rodent incisors, naked tail, paddle tail, webbed feet, giant ears, long stilt legs, giant body, armor, scales, fantasy anatomy, modern wildlife-photo clone."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-07T10:11:49Z",
+        "method": "Original-size full-frame inspection plus animal-count, head, four connected limbs, four separated feet, pelvis-tail continuity, crop, modern-analogue drift, habitat, and artifact audit",
+        "result": "PASS as the sole representative-eligible Repenomamus image in this batch at count level. One low elongated sturdy animal, four connected limbs and feet, one long continuous tail, a closed mouth, and small nearly hidden ears are readable. Soft-tissue details and exact coloration remain reconstruction."
+      }
+    },
+    "repenomamus-robustus-pattern-v1": {
+      "taxon": "Repenomamus robustus",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-07T18:55:53+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image workflow",
+      "seed": "unavailable",
+      "callId": "exec-f5a027e2-ddbc-4a2a-b1c6-0d2924e5cd14",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-a81b-7fe2-a79b-c656a72f4720/exec-f5a027e2-ddbc-4a2a-b1c6-0d2924e5cd14.png",
+      "approvedProjectPath": "assets/dinosaurs/repenomamus-robustus-smoke-rust-highangle-pattern-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork used.",
+      "sha256": "68ea4619aac75e79b424191c68f79cdeb06e2b7be99394286e91f4ea202304d3",
+      "bytes": 3657989,
+      "dimensions": "1024x1536",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas Mesozoic-life gallery color-and-pattern review candidate, strict four-foot retry",
+        "Primary request: Create exactly one conservative Repenomamus robustus variant from the Early Cretaceous Yixian Formation, using a vertical high-angle composition and irregular natural camouflage while making every one of the four limbs anatomically visible.",
+        "Scene/backdrop: A pale volcanic-tuff crossing in a damp Yixian ginkgo-conifer understory after rain. Use bronze fallen ginkgo leaves and small fern fans only around the frame edges. Reserve four separate clean pale patches of tuff beneath and behind the feet so none is lost in vegetation. No lake panorama, modern grass or flowers.",
+        "Subject: One small Repenomamus robustus reconstructed as a low, long, sturdy eutriconodont mammal: elongated ribcage, short neck, low broad skull, short blunt furred muzzle with small nostrils and no large black nose pad, tiny rounded ears almost buried in coarse fur, small dark eyes, short robust semi-sprawling limbs, and one long cylindrical furred tail tapering gradually from the pelvis. Closed mouth. It walks calmly downhill.",
+        "Style/medium: realistic museum natural-history painting, restrained and anatomy-led, crisp limb connections, matte coarse short fur.",
+        "Composition/framing: portrait image from a high left-front oblique camera, animal facing diagonally toward the lower right while its complete tail extends toward the upper left. Pose the four limbs in a wide, unmistakable X-shaped walking stance. REQUIRED foot map: left forefoot reaches far down-right; right forefoot is planted down-left; left hindfoot is planted up-right outside the belly silhouette; right hindfoot is planted up-left outside the belly silhouette. All four complete legs must emerge from the correct shoulder or hip and all four distinct feet must be visible on separate pale-rock islands with daylight gaps between them. Keep head, every toe and tail tip well inside the frame.",
+        "Lighting/mood: cool filtered canopy light with subtle warm reflections from wet leaf litter, neutral field-documentation mood.",
+        "Color palette: smoky blue-gray dorsum; asymmetric muted rust-brown clouds over only one shoulder and the opposite hip; pale flax throat and lower flanks; a few sparse uneven cream flecks confined to one side.",
+        "Pattern rule: soft-edged, asymmetric and nonrepeating; nearly plain blue-gray tail; no rings, stripes, bilateral mask or decorative symmetry.",
+        "Materials/textures: coarse short fur, matte claws, damp pale tuff, wet bronze ginkgo leaves, small fern fronds.",
+        "Constraints: exactly one animal, one head, two forelimbs, two hindlimbs, four anatomically connected visible feet, one continuous long tail; small scale; no prey; no text, labels, border, logo or watermark.",
+        "Avoid: hidden far hindlimb, hidden far forelimb, three-legged read, aligned or fused legs, detached or duplicate paws, extra limbs, split tail, crop, giant rat ears, pointed rat face, modern otter, badger, weasel, capybara, opossum, cat or dog clone, glossy black nose pad, badger or skunk markings, regular spots, tail rings, naked or paddle tail, webbed feet, long stilt legs, fantasy anatomy."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-07T10:11:49Z",
+        "method": "Original-size full-frame inspection plus four-limb and foot separation, tail continuity, high-angle composition, asymmetric nonrepeating pattern, crop, modern-analogue drift, and artifact audit",
+        "result": "PASS only as a color-pattern review slot. Four connected feet, a full tail, a vertical high-angle camera, opposite diagonal direction, and asymmetric smoke-blue-gray and rust patterning are readable. Representative promotion remains prohibited."
+      }
+    },
+    "repenomamus-robustus-ecology-v1": {
+      "taxon": "Repenomamus robustus",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "gallerySubrole": "root-shelter-locomotion-hypothesis",
+      "kind": "anatomy review",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-07T19:06:13+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image ecology workflow",
+      "seed": "unavailable",
+      "callId": "exec-7730846b-b9da-4e21-90eb-bb379911061f",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-a81b-7fe2-a79b-c656a72f4720/exec-7730846b-b9da-4e21-90eb-bb379911061f.png",
+      "approvedProjectPath": "assets/dinosaurs/repenomamus-robustus-yixian-root-shelter-ecology-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual environmental sources only; no external artwork used.",
+      "sha256": "53ad8998095115bad8da9fbca9c80645ee5aa9adf0e335db5126815146015f56",
+      "bytes": 3550062,
+      "dimensions": "1536x1024",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas Mesozoic-life gallery ecology-and-anatomy review candidate, rear-view four-foot retry",
+        "Primary request: Create exactly one scientifically conservative Repenomamus robustus crossing a volcanic-ash forest floor toward shelter beneath a fallen conifer root in the Early Cretaceous Yixian Formation. Show habitat use and locomotion only; no prey or other animals.",
+        "Scene/backdrop: Wide open pale-tuff and ash corridor leading to a dark low root arch, bordered by scattered bronze ginkgo leaves, sparse small fern fans and horsetail stems. Cool ginkgo-conifer woodland haze beyond. Keep the ground around all limbs bright, clear and plant-free. No modern grass, flowers, lake panorama or modern objects.",
+        "Subject: Exactly one small Repenomamus robustus reconstructed from a low elongated sturdy eutriconodont skeleton, not from a modern species. Long deep ribcage, short neck, low broad head with a very short blunt furred muzzle, tiny nostrils without a glossy nose pad, tiny rounded ears nearly buried in coarse fur, very short robust semi-sprawling limbs, exactly four attached clawed feet, and one long cylindrical furred tail tapering gradually from the pelvis. Closed mouth. The face is mostly in rear three-quarter profile rather than a portrait.",
+        "Style/medium: restrained realistic museum natural-history painting, anatomy-led, crisp silhouette and limb connections, matte coarse fur.",
+        "Composition/framing: wide landscape image from a moderately high rear-right three-quarter camera. The animal moves diagonally away toward the upper left root arch. Its complete tail sweeps down-right without covering any foot. REQUIRED four-foot map: near forefoot planted far left-front; far forefoot planted right-front and visibly beyond the shoulder; near hindfoot planted right-rear outside the belly; far hindfoot planted left-rear outside the belly. Pose all four legs in a broad X with each complete foot on a separate pale-ash patch and visible daylight gaps between every limb. Show the full head, body, all four feet and full tail tip inside generous margins. Do not use a low lateral representative view or a close facial portrait.",
+        "Lighting/mood: cool ash-filtered ambient light with one restrained warm shaft crossing the tuff, quiet documentary mood.",
+        "Color palette: charcoal-sepia dorsum, asymmetric muted chestnut cloud on one shoulder and opposite hip, pale stone-gray lower flank and belly; dark bark, pale ash and restrained green.",
+        "Materials/textures: coarse matte short fur, matte claws, powdery ash, rough bark, papery ginkgo leaves.",
+        "Constraints: exactly one animal, one head, two forelimbs, two hindlimbs, four complete anatomically connected visible feet and one continuous long tail; realistic ground contact; no prey, no other animals, no text, labels, border, logo or watermark.",
+        "Avoid: hidden far limb, three-legged read, aligned, fused, detached or duplicate paws, extra limb, split tail, crop; modern otter, badger, beaver, weasel, capybara, rat, opossum, cat or dog clone, glossy black nose, otter whisker pads, badger mask, giant ears, rodent incisors, webbed feet, naked or paddle tail, long stilt legs, giant body, armor, scales, fantasy spines, dramatic attack or motion blur."
+      ],
+      "claimBoundary": "Exactly one Repenomamus is depicted using a root-shelter microhabitat as a reconstruction. The image contains no prey and makes no hunting, killing, attacking, scavenging, or Psittacosaurus interaction claim. Root-shelter use and the exact locomotor moment are hypothetical.",
+      "review": {
+        "reviewedAt": "2026-08-07T10:11:49Z",
+        "method": "Original-size environmental inspection plus exact animal count, rear-three-quarter silhouette, four connected limbs and feet, tail continuity, habitat separation, crop, modern-analogue drift, and artifact audit",
+        "result": "PASS only as an anatomy-review habitat image. Four connected feet and one complete long tail are readable in a distinct rear-three-quarter root-shelter composition. The microhabitat choice and locomotor moment are hypothetical, and the image is not representative-eligible."
+      }
+    },
+    "asteroceras-representative-v1": {
+      "taxon": "Asteroceras obtusum",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-07T18:44:43+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image shell-led anatomy workflow",
+      "seed": "unavailable",
+      "callId": "exec-86ac82ff-4437-49a4-9592-58bd190c09f0",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-e305-78b1-b3ec-b07e01b28727/exec-86ac82ff-4437-49a4-9592-58bd190c09f0.png",
+      "approvedProjectPath": "assets/dinosaurs/asteroceras-obtusum-rounded-planispiral-ribs-representative-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual fossil and catalogue sources only; no external artwork or specimen image used as generation input.",
+      "sha256": "d15d72261046fe3daa69c57770e4be999c9350c2095fc163634fa2f22e25a73c",
+      "bytes": 2291674,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas gallery representative candidate",
+        "Primary request: Create a scientifically cautious reconstruction of one living Asteroceras obtusum ammonite in an Early Jurassic Sinemurian shallow sea near what is now Lyme Regis, England.",
+        "Scene/backdrop: clear blue-green coastal water above a subdued dark shale and limestone seafloor, sparse suspended particles, no other large animals.",
+        "Subject: one Asteroceras obtusum, shell-dominant and completely visible. The shell must be a single rounded planispiral coil with robust symmetrical whorls, a readable central umbilicus, and strong evenly spaced radial ribs that sweep slightly forward and continue coherently across the rounded outer venter. The shell opening and a small conservative cephalopod head with a compact cluster of short arms may be visible, but the uncertain soft anatomy must remain visually secondary to the diagnostic shell.",
+        "Style/medium: high-end naturalistic scientific paleoart, realistic underwater light and shell texture, educational rather than fantasy.",
+        "Composition/framing: landscape 16:9, clean side profile with only a slight three-quarter turn to show shell thickness, whole animal centered with generous margins, shell occupying about two thirds of image height.",
+        "Lighting/mood: soft filtered daylight, calm and clear, high local contrast on ribs.",
+        "Color palette: warm ochre, muted umber and cream shell bands against restrained blue-green water.",
+        "Constraints: exactly one animal; one intact shell; no text, labels, border, watermark, logo or gore; anatomically conservative; shell silhouette and ribs must remain unobstructed.",
+        "Avoid: modern Nautilus identification, a nautilus hood, dozens of nautilus tentacles, a snail foot, an external squid body behind the shell, long modern squid feeding tentacles, octopus webbing, irregular heteromorph shell, spines, horns, duplicated shell, broken shell, extra openings, impossible rib discontinuities, decorative jewelry-like polish, cartoon styling."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-07T10:30:24Z",
+        "method": "Original-size full-frame inspection plus exact animal and shell count, rounded planispiral coil, umbilicus, whorl and rib continuity, aperture, crop, duplicate anatomy, modern-Nautilus drift, and artifact audit",
+        "result": "PASS as the sole representative-eligible Asteroceras image in this batch at shell count level. One complete shell, readable rounded planispiral whorls, central umbilicus, coherent radial ribs, and one aperture are visible without a Nautilus hood. All exposed soft tissue, pigmentation, and the exact swimming posture remain reconstruction."
+      }
+    },
+    "asteroceras-pattern-v1": {
+      "taxon": "Asteroceras obtusum",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-07T18:47:04+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image anatomy-rejection regeneration workflow",
+      "seed": "unavailable",
+      "callId": "exec-ecd12f3b-c89f-4e08-b116-b3a0114c03e4",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-e305-78b1-b3ec-b07e01b28727/exec-ecd12f3b-c89f-4e08-b116-b3a0114c03e4.png",
+      "approvedProjectPath": "assets/dinosaurs/asteroceras-obtusum-slate-copper-irregular-pattern-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual fossil and catalogue sources only; no external artwork or specimen image used as generation input.",
+      "sha256": "974254a18f26bd5db7de7f5f535c7f8faac8baa1a3d98845bf7b90cc283cc32f",
+      "bytes": 2309739,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas gallery color-and-pattern review candidate, regeneration after anatomy rejection",
+        "Primary request: Create one living Asteroceras obtusum ammonite with diagnostic shell anatomy and an irregular slate, cream and copper camouflage pattern. Correct the rejected modern-Nautilus-like head: there must be absolutely no protective hood, cap, leathery shield, or folded lobe above the eye.",
+        "Scene/backdrop: Early Jurassic Sinemurian offshore shelf above layered dark shale, a few small crinoids and low sponges, open water with fine marine snow; no modern seagrass or coral reef.",
+        "Subject: exactly one animal swimming from right to left. The shell is completely visible and dominant: one rounded planispiral coil, coherent robust whorls, readable umbilicus, prominent evenly spaced radial ribs, and a single clean aperture. Use irregular deep slate-violet patches, broken muted copper mottling, and pale gray-cream countershading that blends gradually across ribs rather than forming a sharp half-and-half boundary. At the aperture show only a small plain soft-tissue collar, one simple eye, and a compact cluster of short arms; keep much of the uncertain head anatomy inside the opening.",
+        "Style/medium: high-end naturalistic scientific paleoart, matte shell texture, restrained realism.",
+        "Composition/framing: landscape 16:9, upper three-quarter camera looking slightly down, animal faces left on a diagonal path, full shell with generous margins; not a straight broadside copy.",
+        "Lighting/mood: cool oblique daylight, subdued shelf water, crisp readable ribs.",
+        "Constraints: one animal, one intact shell, no text, labels, border, watermark or logo; uncertain soft parts secondary; irregular asymmetrical natural pattern.",
+        "Avoid: modern Nautilus, any hood or cap above the eye, nautilus pinhole eye, masses of thin tentacles, snail foot, external squid mantle, two long squid feeding tentacles, octopus webbing, heteromorph coil, horns, spines, duplicate shell, extra aperture, broken coil, abrupt symmetrical half-shell color split, perfect decorative bands, polished jewelry appearance, cartoon style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-07T10:30:24Z",
+        "method": "Original-size full-frame inspection plus one-shell count, planispiral shell identity, umbilicus and rib continuity, aperture, head-hood rejection cue, irregular pattern asymmetry, composition difference, crop, and artifact audit",
+        "result": "PASS only as a color-pattern review slot. The diagnostic shell remains readable, the slate, cream, and copper pattern is irregular rather than sharply bisected, and no protective Nautilus-like hood is visible. Pattern, color, and all soft tissue remain hypothetical; representative promotion is prohibited."
+      }
+    },
+    "asteroceras-ecology-v1": {
+      "taxon": "Asteroceras obtusum",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "gallerySubrole": "crinoid-shelf-rise-hypothesis",
+      "kind": "anatomy review",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-07T18:48:21+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image ecology workflow",
+      "seed": "unavailable",
+      "callId": "exec-cca6e268-7e77-4b4a-a87a-0d99a3962a6a",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-e305-78b1-b3ec-b07e01b28727/exec-cca6e268-7e77-4b4a-a87a-0d99a3962a6a.png",
+      "approvedProjectPath": "assets/dinosaurs/asteroceras-obtusum-crinoid-shelf-rise-ecology-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual fossil and period-level environmental sources only; no external artwork or specimen image used as generation input.",
+      "sha256": "b57b8353c53023dc60dbf69167708406a2a9105f56cbe6ea6db9524bece6372b",
+      "bytes": 2287935,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas gallery ecology and anatomy review image",
+        "Primary request: Show one living Asteroceras obtusum moving through a plausible Early Jurassic Sinemurian offshore ecosystem, with the diagnostic shell still readable but in a clearly different behavioral and camera composition.",
+        "Scene/backdrop: a low crinoid meadow on a limestone-and-dark-shale shelf, sparse sponges, drifting tiny planktonic crustaceans and two small distant period-neutral fish; no modern coral reef, no seagrass, no flowering plants.",
+        "Subject: one Asteroceras obtusum gently rising above the crinoids. Preserve a single rounded planispiral shell with robust coherent whorls, clear radial ribs and a readable central coil. Keep the living chamber opening structurally continuous with the outer whorl. Show only a modest plain soft-tissue collar, a simple eye and a compact group of short arms; no speculative hood. Shell color is pale sandstone and muted rust with irregular algae-like gray staining, not a perfect repeated pattern.",
+        "Style/medium: naturalistic museum-grade scientific paleoart, realistic underwater particles and restrained textures.",
+        "Composition/framing: landscape 16:9, low front-three-quarter camera looking slightly upward as the animal moves diagonally away, whole shell visible but foreshortened enough to reveal shell thickness and aperture depth; subject occupies the right-center, broad habitat visible to the left.",
+        "Lighting/mood: broken shafts of surface light, calm ecological observation, no drama.",
+        "Constraints: exactly one ammonite; no attack, blood or gore; no text, label, border, watermark or logo; diagnostic shell remains visible; ecosystem elements stay secondary and small.",
+        "Avoid: modern Nautilus anatomy, head hood or cap, masses of nautilus tentacles, snail foot, external squid mantle, two elongated squid feeding tentacles, octopus webbing, heteromorph shell, shell spines, duplicate ammonite, extra aperture, broken or deformed coil, modern tropical reef, modern fish prominence, fantasy bioluminescence, cartoon style."
+      ],
+      "claimBoundary": "Exactly one Asteroceras is depicted rising over a crinoid-bearing shelf as a reconstruction. Shell form is fossil-led; the crinoid meadow arrangement, nearby organisms, live orientation, movement, shell color, and soft tissues are hypothetical.",
+      "review": {
+        "reviewedAt": "2026-08-07T10:30:24Z",
+        "method": "Original-size ecology inspection plus exact ammonite count, shell and living-chamber continuity, umbilicus and rib readability, aperture depth, modern-Nautilus drift, ecosystem separation, crop, and artifact audit",
+        "result": "PASS only as an anatomy-review ecology image. One intact shell remains identifiable in a distinct low front-three-quarter crinoid-shelf composition without a modern reef or Nautilus hood. Soft tissues, coloration, associated organisms, orientation, and behavior are hypothetical; representative promotion is prohibited."
+      }
+    },
+    "passaloteuthis-representative-v1": {
+      "taxon": "Passaloteuthis bisulcata",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-07T18:49:34+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image soft-tissue specimen-led anatomy workflow",
+      "seed": "unavailable",
+      "callId": "exec-da05a43f-b308-4fde-bbe2-98a4d258ea1b",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-e305-78b1-b3ec-b07e01b28727/exec-da05a43f-b308-4fde-bbe2-98a4d258ea1b.png",
+      "approvedProjectPath": "assets/dinosaurs/passaloteuthis-bisulcata-ten-hook-arm-profile-representative-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual publications only; no external artwork or paper figure used as generation input.",
+      "sha256": "571d65efb3c55ea0661e92704a5729f9432625dd36dd5fda771f5930ff546e0a",
+      "bytes": 2226782,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas gallery representative candidate",
+        "Primary request: Create a scientifically cautious full-body reconstruction of one living Passaloteuthis bisulcata belemnite in an Early Jurassic Toarcian sea near Ohmden, southern Germany.",
+        "Scene/backdrop: clear open shelf water above a subdued dark Posidonia-shale seafloor with sparse low benthic life and fine suspended particles; no other large animals.",
+        "Subject: exactly one Passaloteuthis bisulcata, squid-like but not a modern squid. Show a compact head, a long muscular cylindrical mantle, and a smoothly tapered posterior body supported internally by the phragmocone and a robust bullet-shaped rostrum. The hard rostrum must remain completely inside the soft body and must never protrude through the skin. At the front show exactly ten separate, countable, similar-length short arms arranged naturally around the mouth; each arm carries tiny dark hooklets along its inner side. All ten arms are broadly similar in length and none is transformed into a long feeding tentacle. Use modest simple eyes, not oversized modern-squid eyes. Do not invent broad modern squid tail fins; keep the posterior outline conservative and streamlined.",
+        "Style/medium: museum-grade naturalistic scientific paleoart, realistic animal skin with subtle chromatophore mottling, educational and anatomically legible.",
+        "Composition/framing: landscape 16:9, clean lateral full-body view with a slight three-quarter turn, animal swimming left to right, every arm root and the entire posterior tip inside the frame, generous margins.",
+        "Lighting/mood: soft filtered daylight, calm, clear contrast on arm hooks and mantle outline.",
+        "Color palette: smoky warm gray dorsal surface, muted wine-brown irregular mottling, pale cream underside.",
+        "Constraints: exactly one animal; exactly ten short similar-length arms; no text, labels, border, watermark, logo, blood or gore; one head, one mantle and one posterior tip only.",
+        "Avoid: two elongated squid feeding tentacles, suckered clubs, eight-arm octopus, webbed octopus arms, more or fewer than ten arms, modern cuttlefish skirt fin, broad paired squid tail fins, giant eyes, external coiled shell, external bullet guard, exposed rostrum, rostrum piercing the mantle, fish scales, vertebrate spine, duplicated limbs, extra head, fantasy bioluminescence, cartoon style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-07T10:30:24Z",
+        "method": "Original-size full-frame inspection plus exact animal, head, mantle, posterior-tip, and arm recount; hook visibility, similar arm length, long-tentacle absence, internal-rostrum silhouette, fin conservatism, crop, and artifact audit",
+        "result": "PASS as the sole representative-eligible Passaloteuthis image in this batch at count level. Exactly ten similar-length hook-bearing arms, one compact head, one continuous cylindrical mantle, and one complete tapered posterior are readable without long feeding tentacles, broad squid fins, or an exposed rostrum. Eye, skin, color, hook arrangement, and fin outline remain partly reconstructed."
+      }
+    },
+    "passaloteuthis-pattern-v1": {
+      "taxon": "Passaloteuthis bisulcata",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-07T18:52:57+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image strict third arm-count regeneration workflow",
+      "seed": "unavailable",
+      "callId": "exec-a261a491-79f2-4eaa-bc71-c1d15a8dff6f",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-e305-78b1-b3ec-b07e01b28727/exec-a261a491-79f2-4eaa-bc71-c1d15a8dff6f.png",
+      "approvedProjectPath": "assets/dinosaurs/passaloteuthis-bisulcata-aubergine-pearl-ten-arm-pattern-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual publications only; no external artwork or paper figure used as generation input.",
+      "sha256": "d39cfaca8a832a150ba1a4dd4fac49a594c5a2cffc7517107aa5b57dc67abc83",
+      "bytes": 2599737,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas gallery color-and-pattern review candidate, strict third arm-count regeneration",
+        "Primary request: Render one Passaloteuthis bisulcata with a strictly countable ten-arm crown. This is a zoological count test, not a decorative many-tentacle image.",
+        "Scene/backdrop: Early Jurassic Toarcian gray shelf water above broken dark shale and pale mud, sparse small crinoids, no modern reef.",
+        "Subject: one belemnite with one compact head, one visible modest lateral eye, one long cylindrical mantle and one tapered posterior. The internal bullet-shaped rostrum and phragmocone stay completely inside the posterior body. At the mouth there are ONLY TEN ARMS TOTAL. Viewer-left side has exactly five thick short arms. Viewer-right side has exactly five thick short arms. No arm arises from the center and no extra appendage is hidden behind them. Leave a clear water gap between every neighboring arm from root to tip so a child can count 1,2,3,4,5 plus 6,7,8,9,10. Every arm is similar in length and has a single row of tiny dark hooks on its inner edge. No suckers.",
+        "Pattern: irregular aubergine-gray dorsal color, broken pale pearl flecks and sparse muted copper patches of unequal size and spacing, softly pale underside.",
+        "Style/medium: naturalistic museum scientific paleoart, realistic matte skin.",
+        "Composition/framing: landscape 16:9, near-frontal three-quarter view from slightly above, animal points diagonally into the image while the head and ten-arm fan are large in the lower-left foreground; full posterior remains in frame.",
+        "Lighting/mood: clear subdued daylight.",
+        "Constraints: one animal; ten arms total and only ten; exactly five visible on each side of the mouth; one visible eye; one head, one mantle, one posterior tip; no text, label, border, watermark or logo.",
+        "Avoid: fewer or more than ten arms, any eleventh arm, hidden arm, center arm, crossing or fused arms, two long squid feeding tentacles, suckers, clubs, octopus webbing, broad squid fins, cuttlefish skirt, giant eye, external shell, exposed rostrum, perfect repeated stripes, fantasy glow, cartoon style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-07T10:30:24Z",
+        "method": "Original-size and enlarged head-region inspection plus strict five-left and five-right arm recount, root-to-tip separation, similar arm length, one-eye visibility, hook cues, long-tentacle absence, full posterior crop, pattern asymmetry, and artifact audit",
+        "result": "PASS only as a color-pattern review slot after two rejected arm-count attempts. Exactly five arms on each side form a readable ten-arm crown, one lateral eye and the full posterior are visible, and no long feeding tentacles or external rostrum appear. Color, precise hook rows, soft tissue, and fin outline remain hypothetical; representative promotion is prohibited."
+      }
+    },
+    "passaloteuthis-ecology-v1": {
+      "taxon": "Passaloteuthis bisulcata",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "gallerySubrole": "shale-shelf-crustacean-approach-hypothesis",
+      "kind": "anatomy review",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-07T18:56:15+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image ecology and strict arm-count workflow",
+      "seed": "unavailable",
+      "callId": "exec-489326aa-9547-4012-964b-262fd1570a62",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-e305-78b1-b3ec-b07e01b28727/exec-489326aa-9547-4012-964b-262fd1570a62.png",
+      "approvedProjectPath": "assets/dinosaurs/passaloteuthis-bisulcata-shale-shelf-crustacean-ecology-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual publications and period-level environmental constraints only; no external artwork or paper figure used as generation input.",
+      "sha256": "ff50314be1d0aed8500ff6da3c2547cebab0270d20d9bcb33e5e5e421fb7a0ec",
+      "bytes": 2357459,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas gallery ecology and anatomy review image",
+        "Primary request: Show one living Passaloteuthis bisulcata calmly stalking a small shrimp-like crustacean in a plausible Early Jurassic Toarcian shelf ecosystem, while keeping the belemnite body plan and ten-arm crown clearly reviewable.",
+        "Scene/backdrop: dim blue-gray water above layered dark Posidonia-shale mud near Ohmden, southern Germany, with sparse low crinoids, a few drifting tiny planktonic crustaceans, and two very small distant period-neutral fish; no modern coral reef, seagrass, flowering plants, or modern squid.",
+        "Subject: exactly one Passaloteuthis bisulcata descending diagonally toward one small shrimp-like prey animal without touching or capturing it. The belemnite has one compact head, one modest visible lateral eye, one long muscular cylindrical mantle, and one smoothly tapered posterior body. Its chambered phragmocone and robust bullet-shaped rostrum remain completely internal; no hard guard or shell protrudes through the skin. Around the mouth show EXACTLY TEN separate, countable, short arms of broadly similar length, arranged as a loose open crown with five visible above the mouth and five visible below it. Leave a narrow water gap between neighboring arms, keep every root and tip visible, and add tiny dark hooklets along each inner edge. No arm becomes a long feeding tentacle and there are no suckers. Use irregular charcoal-gray and muted amber chromatophore blotches with a softly pale underside, distinct from the aubergine review pattern.",
+        "Style/medium: museum-grade naturalistic scientific paleoart, realistic matte skin, restrained educational ecology rather than fantasy.",
+        "Composition/framing: landscape 16:9, low side-front three-quarter camera looking slightly upward, animal faces right-to-left and descends from upper right toward lower left; the entire posterior tip and all ten arms remain inside frame, subject occupies the upper-right half while the shale habitat and tiny prey remain visible below-left. This must differ clearly from a clean broadside representative and a top-down pattern review.",
+        "Lighting/mood: a narrow broken shaft of cool surface light, calm observation, readable silhouette and hook-bearing arms.",
+        "Constraints: exactly one belemnite and exactly one small shrimp-like prey animal; exactly ten similar-length hook-bearing arms total; one head, one mantle, one posterior tip; no attack, blood, gore, text, label, border, watermark, or logo; ecosystem elements secondary.",
+        "Avoid: eight or nine arms, eleven or more arms, hidden or fused arms, two elongated modern squid feeding tentacles, clubbed tentacles, suckers, octopus webbing, broad paired modern squid tail fins, cuttlefish skirt fin, giant modern-squid eyes, external coiled shell, external bullet guard, exposed rostrum, rostrum piercing the mantle, vertebrate spine, duplicated animal, extra head, modern tropical reef, fantasy bioluminescence, cartoon style."
+      ],
+      "claimBoundary": "Exactly one Passaloteuthis approaches one shrimp-like crustacean without contact or capture. Ten similar arms and hook-bearing arm crowns are evidence-led at count level; the particular prey, stalking behavior, body coloration, swimming posture, fin outline, and full shale-shelf arrangement are hypothetical.",
+      "review": {
+        "reviewedAt": "2026-08-07T10:30:24Z",
+        "method": "Original-size ecology inspection plus exact belemnite and prey count, strict ten-arm recount, arm-root and tip separation, hook cues, one-head and one-mantle continuity, internal-rostrum silhouette, no-contact behavior, composition separation, crop, and artifact audit",
+        "result": "PASS only as an anatomy-review ecology image. Exactly ten short arms, one continuous mantle and posterior, and one separate small shrimp-like animal are readable with no contact, long feeding tentacles, broad squid fins, or exposed rostrum. Prey choice, stalking behavior, coloration, associated organisms, and fin outline are hypothetical; representative promotion is prohibited."
+      }
+    },
+    "lystrosaurus-representative-v1": {
+      "taxon": "Lystrosaurus murrayi",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-07T18:45:14.972+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image workflow",
+      "seed": "unavailable",
+      "callId": "exec-d114848b-b6f8-4a1c-bd65-b982c4d43764",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb91-14bb-7743-8ff3-9b12d07af377/exec-d114848b-b6f8-4a1c-bd65-b982c4d43764.png",
+      "approvedProjectPath": "assets/dinosaurs/lystrosaurus-murrayi-broad-skull-tusked-fullbody-representative-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork, specimen image, or copyrighted character style used.",
+      "sha256": "f0d50ab1f702f4f97899b02fb0f35f6193e68821b13449609c4e886b47f139b4",
+      "bytes": 2629564,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas gallery representative candidate",
+        "Primary request: Create a scientifically cautious reconstruction of one adult Lystrosaurus murrayi.",
+        "Scene/backdrop: Early Triassic Karoo Basin floodplain on damp reddish silt after seasonal rain, with sparse horsetails and low seed ferns; no grass, flowers, palms, or modern plants.",
+        "Subject: A single full-body dicynodont with exactly one head, four limbs, and one short continuous tail. Preserve a short, broad, deep skull; a toothless keratinous beak; exactly one symmetrical pair of upper tusks, two tusks total, emerging beside the beak; a short neck; a compact barrel-shaped torso; short, stout forelimbs and hindlimbs; and four clearly separated feet with plausible toes. Use mostly hairless pebbled-to-leathery skin, with no thick fur.",
+        "Style/medium: Photorealistic, museum-quality natural-history paleoart; evidence-led and restrained, not fantasy or cartoon.",
+        "Composition/framing: 16:9 landscape, low eye-level three-quarter side view, animal walking from left to right. Keep the complete snout, both tusks, all four feet, and the tail tip fully inside the frame with clear gaps between limbs and generous edge padding. Single integrated scene, no panels.",
+        "Lighting/mood: Soft overcast post-rain daylight, calm and observational.",
+        "Color palette: Muted umber, mineral ochre, and cool gray countershading with subtle irregular mottling; no repetitive stripes, rings, or evenly spaced spots.",
+        "Constraints: Anatomically coherent single animal; no text, labels, borders, logo, or watermark; no other animals; no blood or injury.",
+        "Avoid: More or fewer than two tusks; lower-jaw tusks; ordinary teeth; long narrow skull; dog ears, dog nose, mammal muzzle, thick fur coat, hooves, turtle shell, dinosaur posture, lizard sprawl, hippopotamus or pig likeness, extra or fused limbs, duplicated feet, hidden limb attachments, forked or severed tail, cropped anatomy, modern grass, flowers, or fantasy anatomy."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-07T09:49:31.301Z",
+        "method": "Original-size full-frame inspection plus one-animal count, short broad skull and beak, exactly two upper tusks, four connected limbs and separated feet, short-tail continuity, crop, modern-analogue drift, habitat, and artifact audit",
+        "result": "PASS as the sole representative-eligible Lystrosaurus image in this batch. The short broad skull, beak, exactly two upper tusks, compact barrel body, four connected feet, and complete short tail are readable. External soft tissue and coloration remain reconstruction."
+      }
+    },
+    "lystrosaurus-pattern-v1": {
+      "taxon": "Lystrosaurus murrayi",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-07T18:47:22.242+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen precise-object-edit workflow",
+      "seed": "unavailable",
+      "callId": "exec-cb43c7a1-63ac-4a23-90e5-214273f4afb6",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb91-14bb-7743-8ff3-9b12d07af377/exec-cb43c7a1-63ac-4a23-90e5-214273f4afb6.png",
+      "approvedProjectPath": "assets/dinosaurs/lystrosaurus-murrayi-charcoal-sage-dry-channel-pattern-imagegen-v1.png",
+      "license": "Original project-generated bitmap edited only from a rejected project-generated candidate; no external artwork used.",
+      "sha256": "e64d315a612a835d2444e709a741dcec8b455f2c50b5e6ee7978c88e8c654c7a",
+      "bytes": 3169117,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fdb91-14bb-7743-8ff3-9b12d07af377/exec-cc796e1b-6b8e-45e9-a21f-ce004cf18857.png"
+      ],
+      "prompt": [
+        "Use case: precise-object-edit",
+        "Asset type: Dino Atlas gallery color-and-pattern review candidate",
+        "Input images: Image 1 is the edit target, the immediately preceding Lystrosaurus murrayi dry-channel reconstruction.",
+        "Primary request: Correct only the tusk topology. Remove the small lower-jaw-looking pointed projection. Keep exactly one symmetrical pair of upper-jaw tusks, two tusks total, both originating beside the keratinous beak from matching maxillary positions. In this right-to-left three-quarter view, the near tusk may be fully visible and the far tusk may be partly occluded, but neither tusk may originate from the lower jaw.",
+        "Constraints: Preserve the species identity, short broad skull, beak, compact barrel body, all four distinct limbs and feet, short tail, hairless skin, irregular charcoal-plum/sage/ochre pattern, right-to-left direction, elevated rear three-quarter camera, dry Early Triassic channel environment, lighting, 16:9 framing, and complete uncropped body. Change only the tusks and the immediately surrounding jaw pixels. No text, logo, watermark, extra animals, or gore.",
+        "Avoid: Any third tusk, lower-jaw tusk, ordinary teeth, canine muzzle, fur, extra limbs, duplicated feet, cropped anatomy, or other redesign."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-07T09:49:31.301Z",
+        "method": "Original-size inspection plus upper-tusk origin and count, beak and skull identity, four-limb and foot separation, tail continuity, elevated opposite-direction composition, asymmetric nonrepeating pattern, crop, and artifact audit",
+        "result": "PASS only as a color-pattern review slot after local tusk correction. Exactly two maxillary tusks, a complete four-foot body, an elevated right-to-left composition, and irregular charcoal-plum, sage, and ochre patterning are readable. Representative promotion remains prohibited."
+      }
+    },
+    "lystrosaurus-ecology-v1": {
+      "taxon": "Lystrosaurus murrayi",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "gallerySubrole": "postflood-horsetail-mud-trace-hypothesis",
+      "kind": "anatomy review",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-07T18:49:14.045+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen precise-object-edit ecology workflow",
+      "seed": "unavailable",
+      "callId": "exec-d76e1ecf-1eeb-4fc6-8fbf-23e3c5dc0672",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb91-14bb-7743-8ff3-9b12d07af377/exec-d76e1ecf-1eeb-4fc6-8fbf-23e3c5dc0672.png",
+      "approvedProjectPath": "assets/dinosaurs/lystrosaurus-murrayi-postflood-horsetail-ecology-imagegen-v1.png",
+      "license": "Original project-generated bitmap edited only from a rejected project-generated candidate; factual environmental sources only; no external artwork used.",
+      "sha256": "7b13a496f2376b6befd696f345ef25cc5504d8cb307f31d4ee42072004c672c3",
+      "bytes": 2561821,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fdb91-14bb-7743-8ff3-9b12d07af377/exec-956cc021-3bd3-4724-90e4-de8d9803e06d.png"
+      ],
+      "prompt": [
+        "Use case: precise-object-edit",
+        "Asset type: Dino Atlas gallery ecology-and-anatomy review candidate",
+        "Input images: Image 1 is the edit target, the immediately preceding front three-quarter Lystrosaurus murrayi floodplain scene.",
+        "Primary request: Change only the foreground mud traces. Remove the conspicuous repeated large footprints on the right side. Replace them with natural post-flood mud: irregular shallow depressions, broken partial scuffs, small puddle edges, randomly varied spacing, varied depth and orientation, and long empty gaps. There must be no readable repeating trackway, no evenly spaced sequence, no cloned footprint stamps, and no modern shoe or bird-like prints.",
+        "Constraints: Preserve the Lystrosaurus exactly: same head, beak, exactly two upper tusks, body, all four limbs and feet, short tail, pose, identity, color, lighting, camera, vegetation, sky, and complete 16:9 framing. Change only the mud traces and immediately surrounding ground texture. No text, logo, watermark, extra animals, blood, or injury.",
+        "Avoid: Periodic footprints, mirrored impressions, equal-size stamps, regular rows, new plants covering the animal, or any change to the animal's anatomy."
+      ],
+      "claimBoundary": "Exactly one Lystrosaurus is depicted in a post-flood horsetail habitat. The irregular mud depressions and scuffs are environmental texture, not a documented trackway. Weather, vegetation arrangement, posture, and locomotor moment are hypothetical; no attack, prey, injury, or blood is shown.",
+      "review": {
+        "reviewedAt": "2026-08-07T09:49:31.301Z",
+        "method": "Original-size environmental inspection plus exact animal count, two upper tusks, four connected limbs and feet, tail continuity, front-three-quarter composition, vegetation clearance, random mud-trace distribution, crop, and artifact audit",
+        "result": "PASS only as an anatomy-review habitat image after foreground correction. The complete two-tusk animal remains readable and repeated stamp-like footprints have been replaced by varied depressions, scuffs, puddle edges, orientations, and empty gaps. Habitat and mud traces are hypothetical; representative promotion is prohibited."
+      }
+    },
+    "cynognathus-representative-v1": {
+      "taxon": "Cynognathus crateronotus",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-07T18:51:32.565+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen precise-object-edit workflow",
+      "seed": "unavailable",
+      "callId": "exec-f21a362e-82f0-4aac-b970-df25190ab2cd",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb91-14bb-7743-8ff3-9b12d07af377/exec-f21a362e-82f0-4aac-b970-df25190ab2cd.png",
+      "approvedProjectPath": "assets/dinosaurs/cynognathus-crateronotus-longskull-sectorial-teeth-representative-imagegen-v1.png",
+      "license": "Original project-generated bitmap edited only from a rejected project-generated candidate; factual sources only; no external artwork used.",
+      "sha256": "f4edcc68b6fb9e32217c0dc97d36f16ff3cfdeb472cf29e11a732b33604eda31",
+      "bytes": 2749727,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fdb91-14bb-7743-8ff3-9b12d07af377/exec-398ab008-6a91-4323-9aa2-26883ed2dba2.png"
+      ],
+      "prompt": [
+        "Use case: precise-object-edit",
+        "Asset type: Dino Atlas gallery representative candidate",
+        "Input images: Image 1 is the edit target, the immediately preceding Cynognathus crateronotus Karoo river-terrace reconstruction.",
+        "Primary request: Replace only the head, jaws, and immediately adjacent neck transition with a more anatomically cautious Cynognathus crateronotus skull and dentition. Make the skull long and low rather than crocodile-like or monitor-lizard-like, with a deep temporal region and strong flaring zygomatic arches behind the eye. Keep a blunt non-dog snout with dry nostril margins, no wet nose, no whisker pad, and no external ear flap; use only a small unobtrusive ear opening. Keep the mouth only partly open. Show differentiated teeth: small front incisors, one prominent upper canine on the visible side without saber-cat exaggeration, and clearly smaller, laterally compressed, blade-like sectorial postcanines behind it. Do not show a uniform row of conical crocodile teeth.",
+        "Constraints: Preserve the exact body, sparse fine dorsal filaments, robust four-limbed stance, all four feet, tail, pose, clay-red/umber irregular pattern, river-terrace setting, lighting, camera, 16:9 framing, and uncropped silhouette. Change only the head, dentition, and immediate neck blend. No text, logo, watermark, other animals, blood, or injury.",
+        "Avoid: Dog, wolf, hyena, cat, saber cat, crocodile, monitor lizard, dinosaur or dragon head; short round muzzle; pointed dog snout; wet black nose; external ears; thick fur; homodont conical tooth row; multiple oversized saber canines; malformed jaw; extra limbs or any body redesign."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-07T09:51:46.132Z",
+        "method": "Original-size full-frame and enlarged head inspection plus one-animal count, long-low skull and zygomatic region, heterodont canine and sectorial postcanines, four connected limbs and feet, tail continuity, crop, modern-analogue drift, and artifact audit",
+        "result": "PASS as the sole representative-eligible Cynognathus image in this batch. A long low head, one prominent visible upper canine, smaller blade-like postcanines, four connected limbs and feet, and a complete tail are readable. Sparse filaments, soft tissue, and coloration remain reconstruction."
+      }
+    },
+    "cynognathus-pattern-v1": {
+      "taxon": "Cynognathus crateronotus",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-07T18:53:36.491+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image workflow",
+      "seed": "unavailable",
+      "callId": "exec-91653fcd-5416-49e5-807b-7a83beee04e0",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb91-14bb-7743-8ff3-9b12d07af377/exec-91653fcd-5416-49e5-807b-7a83beee04e0.png",
+      "approvedProjectPath": "assets/dinosaurs/cynognathus-crateronotus-charcoal-copper-upland-pattern-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork, specimen image, or copyrighted character style used.",
+      "sha256": "eda818298b31b7668e9ee9dc7b649f5a7244968877ad28093df2cf9e77854ee8",
+      "bytes": 2846104,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas gallery color-and-pattern review candidate",
+        "Primary request: Create one adult Cynognathus crateronotus; this must be recognizably distinct from Lystrosaurus and from any barrel-bodied beaked dicynodont.",
+        "Scene/backdrop: Middle Triassic Karoo Basin dry upland above a braided river, eroded red mudstone ledges and sparse seed ferns in drainage pockets; no grass, flowers, palms, or modern trees.",
+        "Subject: A robust but elongated predatory non-mammalian cynodont, not a round herbivore. Preserve a long, low, deep temporal skull with a straight elongated jawline, strong zygomatic flare behind the eye, and a blunt but extended non-dog snout. The mouth is slightly open to show heterodont dentition: small incisors at the front, one enlarged upper canine on the visible side, and a row of distinctly smaller laterally compressed blade-like cutting postcanines behind it. No beak. No external ear flap; only a tiny ear opening. Dry nostril margins, no wet nose. Sturdy elongated trunk, clear neck, four connected robust weight-bearing limbs with distinct feet, and one continuous moderately long tail. Mostly visible leathery skin with sparse very short dorsal filaments only; no thick fur.",
+        "Style/medium: Photorealistic museum-quality natural-history paleoart, conservative and evidence-led.",
+        "Composition/framing: 16:9 landscape, moderately elevated left-side three-quarter view, animal moving from left to right across the slope while turning its long head slightly toward the camera. Complete skull, all four limb roots and feet, and full tail visible; no flat eye-level broadside and no crop. Single scene, no panels.",
+        "Lighting/mood: Cool early-morning light with a narrow amber rim, quiet windblown atmosphere.",
+        "Color palette: Hypothetical charcoal-slate dorsum, muted copper-brown shoulders and thighs, pale blue-gray flanks, cream underside. Irregular asymmetrical broken saddles and softly interrupted mineral blotches only; no regular stripes, rings, rosettes, or evenly spaced spots.",
+        "Constraints: One coherent animal; no text, labels, borders, logo, watermark, other animals, blood, or injury.",
+        "Avoid: Lystrosaurus, dicynodont beak or tusks, tapir, hippopotamus, pig, dog, wolf, hyena, cat, saber cat, crocodile, monitor lizard, dinosaur, dragon; short round skull, downturned herbivore muzzle, wet black nose, external ears, whisker pads, thick fur, paws, hooves, homodont conical teeth, multiple oversized fangs, barrel-shaped herbivore body, extra or fused limbs, duplicated feet, severed tail, cropped anatomy, repeating decorative patterns, modern vegetation, or fantasy anatomy."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-07T09:53:59.952Z",
+        "method": "Original-size inspection plus species distinction from Lystrosaurus, long skull and heterodont tooth cues, four-limb and foot separation, tail continuity, elevated opposite composition, asymmetric nonrepeating pattern, crop, and artifact audit",
+        "result": "PASS only as a color-pattern review slot. The elevated left-side direction and charcoal-slate, copper, blue-gray pattern are distinct, and the long skull, visible canine, smaller cutting postcanines, elongated trunk, four feet, and full tail retain Cynognathus identity. The more open mouth and perspective are weaker than the representative, so promotion is prohibited."
+      }
+    },
+    "cynognathus-ecology-v1": {
+      "taxon": "Cynognathus crateronotus",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "gallerySubrole": "storm-channel-dentition-habitat-hypothesis",
+      "kind": "anatomy review",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-07T18:56:57.076+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen precise-object-edit ecology workflow",
+      "seed": "unavailable",
+      "callId": "exec-b5bc10d0-0ca1-443a-8c64-23f6e11a7c72",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb91-14bb-7743-8ff3-9b12d07af377/exec-b5bc10d0-0ca1-443a-8c64-23f6e11a7c72.png",
+      "approvedProjectPath": "assets/dinosaurs/cynognathus-crateronotus-storm-channel-sectorial-teeth-ecology-imagegen-v1.png",
+      "license": "Original project-generated bitmap edited only from a rejected project-generated candidate; factual environmental sources only; no external artwork used.",
+      "sha256": "7a1a1908951cf1227681d5b5a638a9030cacb4bf98b756efef9e205f9fc4361d",
+      "bytes": 2634983,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fdb91-14bb-7743-8ff3-9b12d07af377/exec-87414b03-74f8-430b-83b4-618f6a949828.png"
+      ],
+      "prompt": [
+        "Use case: precise-object-edit",
+        "Asset type: Dino Atlas gallery ecology-and-anatomy review candidate",
+        "Input images: Image 1 is the edit target, the immediately preceding low lateral Cynognathus crateronotus storm-afterlight scene.",
+        "Primary request: Correct only the skull surface, jaw opening, and dentition so the head reads as a non-mammalian cynodont rather than a crocodile. Retain a long low skull but add a deeper temporal region and a clearly flared zygomatic arch behind the eye. Reduce the mouth to a moderate partial opening. Replace the uniform conical tooth rows with differentiated dentition: a few small front incisors, one prominent upper canine and one smaller opposing lower canine on the visible side, the far-side canines mostly occluded, and a short row of distinctly smaller laterally compressed blade-like sectorial postcanines behind the canine. The postcanines must look like thin cutting crowns, not repeated crocodile cones. Keep dry nostril margins, no wet nose, no external ear flap, and only a small unobtrusive ear opening.",
+        "Constraints: Preserve the complete elongated torso, all four connected limbs and unobscured feet, full tail, pose, right-to-left direction, low lateral camera, storm-afterlight, channel-margin environment, olive-slate/copper irregular pattern, sparse tiny dorsal filaments, 16:9 framing, and all other pixels as closely as possible. Change only the head, teeth, and immediate neck blend. No text, logo, watermark, other animals, blood, or injury.",
+        "Avoid: Homodont conical rows, multiple oversized fangs, saber-cat canines, crocodile or monitor-lizard head, dog muzzle, wet black nose, external dog ears, thick fur, malformed jaw, extra limbs, or any body redesign."
+      ],
+      "claimBoundary": "Exactly one Cynognathus is depicted beside a post-storm channel with its complete body and differentiated dentition visible. Weather, exact channel placement, vegetation arrangement, posture, pigmentation, and locomotor moment are hypothetical. No prey, attack, killing, blood, or injury is depicted or claimed.",
+      "review": {
+        "reviewedAt": "2026-08-07T09:57:21.863Z",
+        "method": "Original-size environmental and enlarged head inspection plus exact animal count, long-low skull and zygomatic region, heterodont canine and sectorial postcanines, four unobscured connected feet, tail continuity, composition separation, crop, and artifact audit",
+        "result": "PASS only as an anatomy-review habitat image after local head and dentition correction. The low lateral storm-channel view shows a complete four-foot animal with one upper canine, a smaller opposing lower canine, and smaller blade-like postcanines rather than a uniform conical row. Habitat and behavior are hypothetical; representative promotion is prohibited."
+      }
+    },
+    "archaeopteryx-representative-v1": {
+      "taxon": "Archaeopteryx lithographica",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-07T18:39:02+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen workflow; exact call argument text is not preserved",
+      "seed": "unavailable",
+      "callId": "exec-94804cca-b992-4a92-a14f-16064fb33442",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-94804cca-b992-4a92-a14f-16064fb33442.png",
+      "approvedProjectPath": "assets/dinosaurs/archaeopteryx-lithographica-solnhofen-longtail-threeclaw-representative-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork or franchise frame used as generation input.",
+      "sha256": "9e618557dc2b752e4663fc110ff97d3642b6b39010f64633493364b674b63805",
+      "bytes": 2827889,
+      "dimensions": "1536x1024",
+      "promptProvenance": {
+        "status": "reconstructed-not-verbatim",
+        "note": "call constraints로부터 재구성, exact verbatim 아님; 원 프롬프트 전문은 보존되지 않았습니다."
+      },
+      "prompt": [
+        "[RECONSTRUCTED, NOT VERBATIM] Scientific-educational representative candidate for one Archaeopteryx lithographica in a Late Jurassic Solnhofen limestone-lagoon setting.",
+        "[RECONSTRUCTED, NOT VERBATIM] Preserve one narrow toothed head, exactly two feathered forelimb wings with readable clawed fingers, exactly two hind limbs and feet, and one continuous long feathered bony tail; reject a toothless modern-bird beak, short tail fan, extra wings, extra legs, or cropped anatomy.",
+        "[RECONSTRUCTED, NOT VERBATIM] Use a complete low side-to-three-quarter full-body view on pale limestone with the head, both feet, and tail tip inside frame and open space beneath the body.",
+        "[RECONSTRUCTED, NOT VERBATIM] Charcoal, chestnut, and cream coloration is hypothetical; no text, labels, logo, watermark, franchise styling, or gore."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-07T10:11:42.734Z",
+        "method": "Original-size full-frame inspection plus head, wing-hand, bilateral hind-limb, foot, pelvis-tail, crop, and artifact audit",
+        "result": "PASS as the sole representative-eligible Archaeopteryx image in this batch at count level. One toothed head, two feathered wings, two hind limbs and feet, and one long feathered bony tail are readable; flight performance and whole-body color remain explicitly uncertain."
+      }
+    },
+    "archaeopteryx-pattern-v1": {
+      "taxon": "Archaeopteryx lithographica",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-07T18:41:19+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen workflow; exact call argument text is not preserved",
+      "seed": "unavailable",
+      "callId": "exec-b61dfd32-7978-4af6-ba8b-83e30ac6f8b9",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-b61dfd32-7978-4af6-ba8b-83e30ac6f8b9.png",
+      "approvedProjectPath": "assets/dinosaurs/archaeopteryx-lithographica-slate-umber-opposite-pattern-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork or franchise frame used as generation input.",
+      "sha256": "1f45948a1dae6e97b1b6195ec1057f5016d3b97ef05e7f872a52aaa3e2d62cd7",
+      "bytes": 2919069,
+      "dimensions": "1536x1024",
+      "promptProvenance": {
+        "status": "reconstructed-not-verbatim",
+        "note": "call constraints로부터 재구성, exact verbatim 아님; 원 프롬프트 전문은 보존되지 않았습니다."
+      },
+      "prompt": [
+        "[RECONSTRUCTED, NOT VERBATIM] Scientific-educational color-and-pattern review candidate for one Archaeopteryx lithographica, deliberately different from the representative.",
+        "[RECONSTRUCTED, NOT VERBATIM] Preserve the toothed narrow head, exactly two feathered wing arms with clawed fingers, two hind limbs and feet, and one long feathered bony tail while avoiding modern-bird beak and tail anatomy.",
+        "[RECONSTRUCTED, NOT VERBATIM] Use the opposite right-facing direction, a higher oblique walking camera, and a wooded limestone floor so the pose, camera, and background do not repeat slot 1.",
+        "[RECONSTRUCTED, NOT VERBATIM] Use irregular slate-gray, umber, and restrained copper flecking with no simple recolor, mirror, repeated tail bands, text, logo, watermark, or gore."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-07T10:11:42.734Z",
+        "method": "Original-size identity, appendage-count, direction, camera, pattern, crop, and same-composition audit",
+        "result": "PASS for gallery comparison only. Direction, camera, palette, and ground arrangement differ from slot 1; wing-hand overlap and hypothetical coloration prohibit representative promotion."
+      }
+    },
+    "archaeopteryx-ecology-v1": {
+      "taxon": "Archaeopteryx lithographica",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "gallerySubrole": "lagoon-islet-short-crossing-hypothesis",
+      "kind": "anatomy review",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-07T18:44:37+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen ecology workflow; exact call argument text is not preserved",
+      "seed": "unavailable",
+      "callId": "exec-4401c2bf-d2e0-4a58-84e2-eca135c38324",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-4401c2bf-d2e0-4a58-84e2-eca135c38324.png",
+      "approvedProjectPath": "assets/dinosaurs/archaeopteryx-lithographica-solnhofen-lagoon-glide-ecology-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual formation and anatomy sources only; no external artwork or franchise frame used as generation input.",
+      "sha256": "90fa32b6993557c8bee5fecdae61ac756877098a27772379d13031ea9319058f",
+      "bytes": 2999874,
+      "dimensions": "1536x1024",
+      "promptProvenance": {
+        "status": "reconstructed-not-verbatim",
+        "note": "call constraints로부터 재구성, exact verbatim 아님; 원 프롬프트 전문은 보존되지 않았습니다."
+      },
+      "prompt": [
+        "[RECONSTRUCTED, NOT VERBATIM] Scientific-educational habitat-and-ecology review candidate showing exactly one Archaeopteryx lithographica making a short aerial crossing between low Solnhofen lagoon islets.",
+        "[RECONSTRUCTED, NOT VERBATIM] Preserve one toothed head, exactly two feathered forelimb wings, two trailing hind limbs and feet, and one complete long feathered bony tail; keep the full silhouette and tail tip inside frame.",
+        "[RECONSTRUCTED, NOT VERBATIM] Use a wide lagoon view, a different camera and direction from slots 1 and 2, and tawny-rust hypothetical plumage without adding other animals or an attack scene.",
+        "[RECONSTRUCTED, NOT VERBATIM] Treat the pictured movement only as a short crossing reconstruction, not proof of sustained powered flight; no text, labels, logo, watermark, or gore."
+      ],
+      "claimBoundary": "The image reconstructs a short lagoon-islet aerial crossing. It does not directly demonstrate powered takeoff, a specific wingbeat cycle, sustained flight, gliding performance, arboreality, or an observed event.",
+      "review": {
+        "reviewedAt": "2026-08-07T10:11:42.734Z",
+        "method": "Original-size full-body, appendage, tail, habitat, behavior-boundary, crop, and artifact audit",
+        "result": "PASS for anatomy-review ecology only. The full body and major appendage counts are readable, but distal wing fingers and the short crossing behavior remain perspective-limited hypotheses; representative promotion is prohibited."
+      }
+    }
+  },
+  "rejectedCandidates": {
+    "repenomamus-representative-modern-mustelid-v1": {
+      "taxon": "Repenomamus robustus",
+      "galleryRoleAttempted": "representative",
+      "callId": "exec-d8052ba6-f686-48ea-a5b0-44eba17da279",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-a81b-7fe2-a79b-c656a72f4720/exec-d8052ba6-f686-48ea-a5b0-44eba17da279.png",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "reasons": [
+        "Elongated glossy-nosed face and body read as a modern otter or weasel clone.",
+        "Habitat read as modern boreal scenery and the apparent body scale was too large."
+      ]
+    },
+    "repenomamus-representative-modern-otter-v2": {
+      "taxon": "Repenomamus robustus",
+      "galleryRoleAttempted": "representative",
+      "callId": "exec-d1f5a56b-ceab-4fcd-a96c-98940c7c7565",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-a81b-7fe2-a79b-c656a72f4720/exec-d1f5a56b-ceab-4fcd-a96c-98940c7c7565.png",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "reasons": [
+        "Glossy black nose and modern otter or capybara facial anatomy dominated the reconstruction.",
+        "The apparent body scale remained too large."
+      ]
+    },
+    "repenomamus-representative-hidden-hindlimb-v3": {
+      "taxon": "Repenomamus robustus",
+      "galleryRoleAttempted": "representative",
+      "callId": "exec-59a9025b-a6b8-4d17-a6e1-070ba918ec5d",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-a81b-7fe2-a79b-c656a72f4720/exec-59a9025b-a6b8-4d17-a6e1-070ba918ec5d.png",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "reasons": [
+        "The far hind limb and foot were fully hidden, producing a three-foot reading despite improved scale and reduced modern drift."
+      ]
+    },
+    "repenomamus-pattern-three-foot-large-ear-v1": {
+      "taxon": "Repenomamus robustus",
+      "galleryRoleAttempted": "color-pattern",
+      "callId": "exec-9e3865ed-a48a-434a-8c88-7b737eec2dc3",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-a81b-7fe2-a79b-c656a72f4720/exec-9e3865ed-a48a-434a-8c88-7b737eec2dc3.png",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "reasons": [
+        "The far forelimb was missing, leaving only three visible feet.",
+        "The external ears were too large and rat-like."
+      ]
+    },
+    "repenomamus-pattern-hidden-hindlimb-v2": {
+      "taxon": "Repenomamus robustus",
+      "galleryRoleAttempted": "color-pattern",
+      "callId": "exec-f5ca1b28-8212-4171-9898-e12238106cc3",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-a81b-7fe2-a79b-c656a72f4720/exec-f5ca1b28-8212-4171-9898-e12238106cc3.png",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "reasons": [
+        "The far hind limb was fully hidden behind the body, again producing a three-foot reading despite a successful irregular pattern."
+      ]
+    },
+    "repenomamus-ecology-nonbeaked-secondary-v1": {
+      "taxon": "Repenomamus robustus",
+      "galleryRoleAttempted": "habitat-ecology",
+      "callId": "exec-2449160d-c0cb-4ef2-add3-d53f23ce51d3",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-a81b-7fe2-a79b-c656a72f4720/exec-2449160d-c0cb-4ef2-add3-d53f23ce51d3.png",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "reasons": [
+        "The intended juvenile Psittacosaurus lacked a parrot-like beak and read as another mammal or non-dinosaurian synapsid.",
+        "The primary animal drifted toward a modern capybara or beaver analogue."
+      ]
+    },
+    "repenomamus-ecology-iguana-secondary-v2": {
+      "taxon": "Repenomamus robustus",
+      "galleryRoleAttempted": "habitat-ecology",
+      "callId": "exec-689f6ba5-3712-4f4f-85bf-d75eb5e1af16",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-a81b-7fe2-a79b-c656a72f4720/exec-689f6ba5-3712-4f4f-85bf-d75eb5e1af16.png",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "reasons": [
+        "The intended juvenile Psittacosaurus became a generic spiny iguana-like quadruped without a clear deep beak.",
+        "The primary animal retained excessive capybara or otter facial drift."
+      ]
+    },
+    "repenomamus-ecology-reference-lizard-secondary-v3": {
+      "taxon": "Repenomamus robustus",
+      "galleryRoleAttempted": "habitat-ecology",
+      "callId": "exec-d17db24b-d833-4886-9fa3-df698edde446",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-a81b-7fe2-a79b-c656a72f4720/exec-d17db24b-d833-4886-9fa3-df698edde446.png",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fdb90-a81b-7fe2-a79b-c656a72f4720/exec-74ba71c4-d397-4605-8308-d3f42c0cff49.png",
+        "assets/dinosaurs/psittacosaurus-mongoliensis-genus-tail-bristle-anatomy-imagegen-v1.png"
+      ],
+      "reasons": [
+        "Reference guidance did not recover the juvenile Psittacosaurus deep beak; the secondary subject still read as a generic lizard.",
+        "The primary animal drifted toward a modern beaver-like head."
+      ]
+    },
+    "repenomamus-ecology-local-edit-failed-v4": {
+      "taxon": "Repenomamus robustus",
+      "galleryRoleAttempted": "habitat-ecology",
+      "callId": "exec-38b43190-aadc-494c-89cc-22b05fc48f96",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-a81b-7fe2-a79b-c656a72f4720/exec-38b43190-aadc-494c-89cc-22b05fc48f96.png",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fdb90-a81b-7fe2-a79b-c656a72f4720/exec-d17db24b-d833-4886-9fa3-df698edde446.png",
+        "assets/dinosaurs/psittacosaurus-mongoliensis-genus-tail-bristle-anatomy-imagegen-v1.png"
+      ],
+      "reasons": [
+        "A localized replacement edit still failed to restore a short deep Psittacosaurus beak and left a lizard-like secondary animal."
+      ]
+    },
+    "repenomamus-ecology-leaf-hollow-lizard-v5": {
+      "taxon": "Repenomamus robustus",
+      "galleryRoleAttempted": "habitat-ecology",
+      "callId": "exec-920fbdac-cb56-4577-bfb1-486be0aca4ae",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-a81b-7fe2-a79b-c656a72f4720/exec-920fbdac-cb56-4577-bfb1-486be0aca4ae.png",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "referenceImages": [
+        "assets/dinosaurs/psittacosaurus-mongoliensis-genus-tail-bristle-anatomy-imagegen-v1.png"
+      ],
+      "reasons": [
+        "The prompt requested the intact body to remain largely covered by leaf litter, but a fully exposed generic lizard was produced.",
+        "The required short deep beak and juvenile ceratopsian proportions were absent."
+      ]
+    },
+    "repenomamus-ecology-modern-otter-three-foot-v6": {
+      "taxon": "Repenomamus robustus",
+      "galleryRoleAttempted": "habitat-ecology",
+      "callId": "exec-b7032a35-81b7-46d8-bd58-3c8978be04a5",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-a81b-7fe2-a79b-c656a72f4720/exec-b7032a35-81b7-46d8-bd58-3c8978be04a5.png",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "reasons": [
+        "The far hind limb was hidden, producing a three-legged reading.",
+        "The face closely resembled a modern otter despite the nonmodern-silhouette constraint."
+      ]
+    },
+    "asteroceras-pattern-modern-nautilus-hood-v1": {
+      "taxon": "Asteroceras obtusum",
+      "galleryRoleAttempted": "color-pattern",
+      "generatedAt": "2026-08-07T18:46:04+09:00",
+      "callId": "exec-e810309a-110a-4018-bd51-72b2bb0ff763",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-e305-78b1-b3ec-b07e01b28727/exec-e810309a-110a-4018-bd51-72b2bb0ff763.png",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "sha256": "e7c351b6c937743c302ce31decb218095fafe5dca0043494275ab17493364ce6",
+      "bytes": 2305933,
+      "dimensions": "1672x941",
+      "reasons": [
+        "A large protective cap above the eye made the head read as a modern Nautilus hood rather than a cautious ammonite soft-tissue reconstruction.",
+        "The shell was divided by an abrupt, nearly symmetrical half-purple and half-cream split instead of an irregular natural pattern."
+      ]
+    },
+    "passaloteuthis-pattern-eight-arm-v1": {
+      "taxon": "Passaloteuthis bisulcata",
+      "galleryRoleAttempted": "color-pattern",
+      "generatedAt": "2026-08-07T18:50:37+09:00",
+      "callId": "exec-58db7ae5-c8d2-432a-9b9c-69daa303fb7c",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-e305-78b1-b3ec-b07e01b28727/exec-58db7ae5-c8d2-432a-9b9c-69daa303fb7c.png",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "sha256": "2c9d292b7ef6e61e4c4965db581b8962fbef959747a412c5ab14d83b82905f87",
+      "bytes": 2398477,
+      "dimensions": "1672x941",
+      "reasons": [
+        "Only about eight separate arms could be counted at original size, failing the evidence-led ten-arm requirement.",
+        "The arm roots and overlaps did not provide a reliable child-countable anatomy check."
+      ]
+    },
+    "passaloteuthis-pattern-overcount-no-eye-v2": {
+      "taxon": "Passaloteuthis bisulcata",
+      "galleryRoleAttempted": "color-pattern",
+      "generatedAt": "2026-08-07T18:51:50+09:00",
+      "callId": "exec-294f49b2-ce3b-4d1c-9bbe-9aaf8af07e0c",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb90-e305-78b1-b3ec-b07e01b28727/exec-294f49b2-ce3b-4d1c-9bbe-9aaf8af07e0c.png",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "sha256": "80c085121f8ea94f8aab5216c3bc2078ac4e5b2a8daed8da8915c74baad2b93a",
+      "bytes": 2644597,
+      "dimensions": "1672x941",
+      "reasons": [
+        "Approximately twelve to thirteen appendages were visible, exceeding the required ten-arm crown.",
+        "No clearly readable lateral eye was visible, weakening the intended head anatomy review."
+      ]
+    },
+    "lystrosaurus-pattern-lower-jaw-projection-v1": {
+      "taxon": "Lystrosaurus murrayi",
+      "galleryRoleAttempted": "color-pattern",
+      "generatedAt": "2026-08-07T18:46:05.040+09:00",
+      "callId": "exec-cc796e1b-6b8e-45e9-a21f-ce004cf18857",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb91-14bb-7743-8ff3-9b12d07af377/exec-cc796e1b-6b8e-45e9-a21f-ce004cf18857.png",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "sha256": "22d586e4dfad8e8f4fd8400eef37f68c95de0fe5e41c9396b60ae34fc7bd97ae",
+      "bytes": 2860462,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas gallery color-and-pattern review candidate",
+        "Primary request: Create a second scientifically cautious reconstruction of one adult Lystrosaurus murrayi, emphasizing a clearly different pose, viewing direction, camera, and restrained hypothetical color pattern from the representative.",
+        "Scene/backdrop: Early Triassic Karoo Basin during a dry interval, pale cracked silt beside a shallow winding channel, scattered horsetails and low seed ferns; no grass, flowers, palms, or modern trees.",
+        "Subject: One full-body dicynodont with a short broad deep skull, a toothless keratinous beak, exactly one symmetrical pair of upper tusks and only two tusks total, a short neck, compact barrel-shaped torso, short stout forelimbs and hindlimbs, four distinct feet, and one short continuous tail. Mostly hairless pebbled skin; no thick fur.",
+        "Style/medium: Photorealistic museum-quality natural-history paleoart, evidence-led, restrained.",
+        "Composition/framing: 16:9 landscape, moderately elevated rear three-quarter view, animal moving from right to left along the channel. Show the complete head, both tusks, all four limb attachments and feet, and the entire tail with no cropping. Do not repeat a flat eye-level broadside. Single scene, no panels.",
+        "Lighting/mood: Low warm morning light with cool open shadows, calm observational mood.",
+        "Color palette: Hypothetical charcoal-plum dorsum, muted sage-gray flanks, dusty ochre around the beak and shoulders, pale mineral underside. Use asymmetrical, irregular broken blotches and softly interrupted countershading, never evenly spaced spots, stripes, rings, or mirrored decorative patterning.",
+        "Constraints: Anatomically coherent single animal; no text, labels, borders, logo, or watermark; no other animals; no gore.",
+        "Avoid: More or fewer than two tusks, lower-jaw tusks, normal teeth, long narrow skull, canine ears or nose, mammal muzzle, thick fur, hooves, shell, dinosaur or generic lizard anatomy, extra or fused limbs, duplicated feet, hidden limb roots, forked or severed tail, cropped anatomy, repeating wallpaper-like markings, modern plants, or fantasy features."
+      ],
+      "reasons": [
+        "A small pointed projection beneath the jaw read as an extra lower-jaw tusk, failing the exactly two upper tusks identity boundary.",
+        "The candidate required a local tusk-topology correction before any gallery use."
+      ]
+    },
+    "lystrosaurus-ecology-regular-footprint-pattern-v1": {
+      "taxon": "Lystrosaurus murrayi",
+      "galleryRoleAttempted": "habitat-ecology",
+      "generatedAt": "2026-08-07T18:48:13.682+09:00",
+      "callId": "exec-956cc021-3bd3-4724-90e4-de8d9803e06d",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb91-14bb-7743-8ff3-9b12d07af377/exec-956cc021-3bd3-4724-90e4-de8d9803e06d.png",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "sha256": "16adcf0e0a7b069f977f827ee2ea7396828764f8850524b023c7d76c87300355",
+      "bytes": 2576849,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas gallery ecology-and-anatomy review candidate",
+        "Primary request: Create a scientifically cautious habitat reconstruction of one adult Lystrosaurus murrayi, with a composition clearly distinct from the side-view representative and elevated color variant.",
+        "Scene/backdrop: Early Triassic Karoo Basin floodplain shortly after a seasonal channel overflow, a broad patch of low horsetails and seed ferns beside wet mineral silt, scattered natural debris and shallow irregular footprints; no grass, flowers, palms, or modern trees.",
+        "Subject: A single full-body Lystrosaurus murrayi paused with its head raised just beyond the plant patch. Preserve a short, broad, deep skull; a toothless keratinous beak; exactly one symmetrical pair of upper tusks, two total, both visible from matching upper-jaw positions; short neck; compact barrel body; short stout forelimbs and hindlimbs; four distinct weight-bearing feet; and one short continuous tail. Mostly hairless pebbled skin, no thick fur.",
+        "Style/medium: Photorealistic, museum-quality natural-history paleoart with conservative soft-tissue reconstruction.",
+        "Composition/framing: 16:9 landscape, low wide-angle front-left three-quarter view. The animal approaches diagonally from the middle distance rather than standing in flat broadside. Keep the entire head, both tusks, all four limb roots and feet, and tail tip visible and unobscured; vegetation stays below the jaw and away from the limbs. Single scene, no panels.",
+        "Lighting/mood: Clear cool light after rain with a narrow warm break in the clouds, quiet recovery landscape.",
+        "Color palette: Muted russet-brown body, slate-gray shoulders, pale clay underside, irregular low-contrast mineral mottling; no regular stripes, rings, or repeated spots.",
+        "Constraints: One anatomically coherent animal; no text, labels, border, logo, or watermark; no other animals; no attack, blood, or injury.",
+        "Avoid: More or fewer than two tusks, lower-jaw tusks, ordinary teeth, long narrow head, mammalian ears or nose, dog or pig face, thick fur, hooves, turtle shell, dinosaur body, extra or fused limbs, duplicated feet, hidden limb attachments, forked or severed tail, crop, vegetation covering diagnostic anatomy, regular patterned footprints, modern plants, or fantasy anatomy."
+      ],
+      "reasons": [
+        "Large foreground footprints repeated in size, spacing, and orientation, producing an artificial stamp-pattern reading.",
+        "The ecology candidate required a local ground-only edit before gallery use."
+      ]
+    },
+    "cynognathus-representative-crocodile-dentition-v1": {
+      "taxon": "Cynognathus crateronotus",
+      "galleryRoleAttempted": "representative",
+      "generatedAt": "2026-08-07T18:50:19.723+09:00",
+      "callId": "exec-398ab008-6a91-4323-9aa2-26883ed2dba2",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb91-14bb-7743-8ff3-9b12d07af377/exec-398ab008-6a91-4323-9aa2-26883ed2dba2.png",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "sha256": "d3fc36d856a3fe4747ba009fa685a87869de37884820434482eed399773c4925",
+      "bytes": 2809338,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas gallery representative candidate",
+        "Primary request: Create a scientifically cautious reconstruction of one adult Cynognathus crateronotus.",
+        "Scene/backdrop: Middle Triassic Karoo Basin river terrace with layered reddish mudstone, a shallow braided channel, sparse horsetails and low seed ferns; no grass, flowers, palms, or modern trees.",
+        "Subject: A single full-body robust non-mammalian cynodont with exactly one head, four limbs, and one continuous moderately long tail. Preserve a long, low, deep skull; a strong zygomatic region; a slightly open mouth clearly showing differentiated teeth with prominent but not saber-like upper canines and smaller blade-like cutting postcanines behind them; a sturdy neck and trunk; robust quadrupedal stance with four clearly connected weight-bearing limbs and distinct feet. Use mostly visible leathery skin with only a very short, sparse, fine filamentous covering along parts of the torso, never a thick mammal coat. Show a simple ear opening without an external ear flap and dry reptile-like nostril margins, not a dog nose.",
+        "Style/medium: Photorealistic, museum-quality natural-history paleoart, evidence-led and restrained, not fantasy or cartoon.",
+        "Composition/framing: 16:9 landscape, low front-right three-quarter view with the body running diagonally across the frame and the animal stepping toward the viewer's left. Keep the complete long skull, visible dentition, all four limb roots and feet, and the full tail tip inside the frame with clear limb separation and generous edge padding. Single integrated scene, no panels.",
+        "Lighting/mood: Soft late-afternoon side light under thin cloud, calm alert posture.",
+        "Color palette: Muted clay-red and dark umber dorsum, dusty gray flanks, pale sandstone underside, irregular low-contrast patches; no regular stripes, rings, or evenly spaced spots.",
+        "Constraints: One anatomically coherent animal; no text, labels, border, logo, or watermark; no other animals; no blood, prey, or injury.",
+        "Avoid: Short round dog skull, pointed canine muzzle, wet black dog nose, external dog ears, whisker pads, thick fur, mane, paws, paw pads, hooves, feline body, hyena likeness, saber-cat fangs, uniform crocodile scutes, dinosaur posture, ordinary lizard head, extra or fused limbs, duplicated feet, hidden limb roots, forked or severed tail, cropped anatomy, modern plants, or fantasy features."
+      ],
+      "reasons": [
+        "The skull surface and muzzle read as a monitor-lizard or crocodile analogue rather than a cautious non-mammalian cynodont.",
+        "The visible tooth row was dominated by near-uniform conical teeth instead of a prominent canine followed by smaller blade-like sectorial postcanines."
+      ]
+    },
+    "cynognathus-pattern-short-dicynodont-drift-v1": {
+      "taxon": "Cynognathus crateronotus",
+      "galleryRoleAttempted": "color-pattern",
+      "generatedAt": "2026-08-07T18:52:31.303+09:00",
+      "callId": "exec-61227502-c612-4445-8fc5-be6320686275",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb91-14bb-7743-8ff3-9b12d07af377/exec-61227502-c612-4445-8fc5-be6320686275.png",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "sha256": "0f1fd3e19a0ea0e5cf8554ec01cad241f5e5702f00e7c5dd0e5ae13448a46871",
+      "bytes": 2819673,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas gallery color-and-pattern review candidate",
+        "Primary request: Create a second scientifically cautious reconstruction of one adult Cynognathus crateronotus with a substantially different viewing direction, camera angle, pose, environment, and hypothetical color pattern from the representative.",
+        "Scene/backdrop: Middle Triassic Karoo Basin dry upland above a braided river, wind-shaped red silt, eroded low ledges, sparse seed ferns and horsetails in distant drainage pockets; no grass, flowers, palms, or modern trees.",
+        "Subject: One full-body robust non-mammalian cynodont with a long low skull, deep temporal region, strong zygomatic area, blunt dry-nostriled snout, no external ear flap, and a nearly closed mouth in which the tip of one prominent upper canine and a few smaller blade-like postcanines remain naturally readable. Sturdy neck and trunk; four connected robust weight-bearing limbs with distinct feet; one continuous moderately long tail. Mostly visible leathery skin with only sparse, very short fine filaments along the dorsal midline, never a thick fur coat.",
+        "Style/medium: Photorealistic museum-quality natural-history paleoart, evidence-led and restrained.",
+        "Composition/framing: 16:9 landscape, moderately elevated left-side rear three-quarter view, animal moving from left to right across the slope while turning its long head slightly back toward the camera. Keep the entire skull, all four limb roots and feet, and the complete tail visible. Do not repeat the low frontal river-terrace composition. Single scene, no panels.",
+        "Lighting/mood: Cool early-morning light with a narrow amber rim, quiet windblown atmosphere.",
+        "Color palette: Hypothetical charcoal-slate dorsum, muted copper-brown shoulders and thighs, pale blue-gray flanks, cream underside. Use irregular asymmetrical broken saddles and softly feathered mineral blotches; no regular stripes, rings, rosettes, or evenly spaced spots.",
+        "Constraints: One coherent animal; no text, labels, border, logo, or watermark; no other animals; no blood or injury.",
+        "Avoid: Dog, wolf, hyena, cat, saber cat, crocodile, monitor lizard, dinosaur or dragon appearance; short round dog skull; pointed canine muzzle; wet black nose; external dog ears; whisker pads; thick fur, mane, paws, paw pads, hooves; uniform conical teeth; multiple oversized fangs; extra or fused limbs; duplicated or hidden feet; severed or forked tail; crop; repeating decorative patterns; modern plants; fantasy anatomy."
+      ],
+      "reasons": [
+        "The short rounded head and barrel-like body drifted toward a Lystrosaurus, tapir, or generalized herbivore silhouette.",
+        "The long low predatory cynodont skull and readable sectorial postcanines were lost."
+      ]
+    },
+    "cynognathus-ecology-homodont-crocodile-dentition-v1": {
+      "taxon": "Cynognathus crateronotus",
+      "galleryRoleAttempted": "habitat-ecology",
+      "generatedAt": "2026-08-07T18:55:13.453+09:00",
+      "callId": "exec-87414b03-74f8-430b-83b4-618f6a949828",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fdb91-14bb-7743-8ff3-9b12d07af377/exec-87414b03-74f8-430b-83b4-618f6a949828.png",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "sha256": "310d86700577c3bfd54a23a91da91c2d53f89bfbcdbbcfc6a008ae8487e13731",
+      "bytes": 2515354,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Use case: scientific-educational",
+        "Asset type: Dino Atlas gallery ecology-and-anatomy review candidate",
+        "Primary request: Create a scientifically cautious habitat scene of one adult Cynognathus crateronotus with the complete body and diagnostic dentition readable.",
+        "Scene/backdrop: Middle Triassic Karoo Basin channel margin after a brief thunderstorm, damp dark-red silt, a shallow braided stream several body lengths behind the animal, low horsetails and seed ferns in irregular clumps, eroded mudstone banks; no grass, flowers, palms, or modern trees.",
+        "Subject: One robust elongated predatory non-mammalian cynodont paused on firm wet ground beside, not inside, the water. Preserve a long low skull with deep temporal region and strong zygomatic arches, an extended blunt non-dog snout with dry nostril margins, no external ear flap, and a partly open side-profile jaw showing small incisors, one prominent upper canine on the visible side, and a clearly differentiated row of smaller laterally compressed blade-like postcanines. Sturdy neck and elongated trunk; four connected robust limbs and four distinct unobscured feet; one continuous moderately long tail. Mostly leathery skin with sparse very short fine dorsal filaments, no thick fur.",
+        "Style/medium: Photorealistic museum-quality natural-history paleoart, conservative and evidence-led.",
+        "Composition/framing: 16:9 landscape, low lateral long-lens view from across the dry bank, animal traveling from right to left with its head raised in clean side profile. Place the subject at mid-distance with environmental context around it, unlike the close frontal representative and elevated upland color variant. Keep the complete skull, all four limb roots and feet, and full tail tip visible, with clear gaps between legs and no water or vegetation covering diagnostic anatomy. Single scene, no panels.",
+        "Lighting/mood: Cool diffused storm-afterlight with a restrained warm horizon, quiet observational scene.",
+        "Color palette: Hypothetical deep olive-slate dorsum, muted copper throat and shoulders, gray-brown flanks, pale clay underside, irregular broken flank flecks and asymmetrical shadow patches; no regular stripes, rings, rosettes, or evenly spaced spots.",
+        "Constraints: One anatomically coherent animal; no text, labels, border, logo, or watermark; no other animals, prey, attack, blood, or injury.",
+        "Avoid: Lystrosaurus or dicynodont beak/tusks, dog, wolf, hyena, cat, saber cat, crocodile, monitor lizard, dinosaur, dragon; short round skull, pointed dog muzzle, wet black nose, external ears, whisker pads, thick fur, mane, paws, paw pads, hooves, homodont conical tooth row, multiple oversized fangs, extra or fused limbs, duplicated feet, hidden limb attachments, water-obscured feet, forked or severed tail, cropped anatomy, cloned footprints, repeating decorative markings, modern vegetation, or fantasy features."
+      ],
+      "reasons": [
+        "The visible head and tooth row read as crocodilian, with near-uniform conical teeth rather than heterodont cynodont dentition.",
+        "The candidate required a local skull and dentition correction before any gallery use."
+      ]
+    },
+    "archaeopteryx-pattern-same-direction-v1": {
+      "taxon": "Archaeopteryx lithographica",
+      "galleryRoleAttempted": "color-pattern",
+      "generatedAt": "2026-08-07T18:40:34+09:00",
+      "generator": "OpenAI built-in image generation",
+      "callId": "exec-d43b5e6d-283f-45d5-805c-fda27194ef19",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-d43b5e6d-283f-45d5-805c-fda27194ef19.png",
+      "approvedProjectPath": null,
+      "sha256": "bfcc48b14d3608639fca4813f6bf4104ee777f1f8faec95efcfe656d1c0ab0a7",
+      "bytes": 2875969,
+      "dimensions": "1536x1024",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "promptProvenance": {
+        "status": "reconstructed-not-verbatim",
+        "note": "call constraints로부터 재구성, exact verbatim 아님; 원 프롬프트 전문은 보존되지 않았습니다."
+      },
+      "prompt": [
+        "[RECONSTRUCTED, NOT VERBATIM] Attempted an Archaeopteryx color-and-pattern alternative while preserving one toothed head, two feathered wings with clawed fingers, two hind limbs, and one long feathered bony tail.",
+        "[RECONSTRUCTED, NOT VERBATIM] Intended to vary the palette and forest-floor setting without modern-bird anatomy, extra limbs, cropping, text, logo, watermark, or gore."
+      ],
+      "reasons": [
+        "The candidate retained the representative's same left-facing direction and a very similar upright side-to-three-quarter pose.",
+        "Palette and forest-floor changes were insufficient to satisfy the required composition and direction separation for the color-pattern slot."
+      ]
+    }
+  }
+}

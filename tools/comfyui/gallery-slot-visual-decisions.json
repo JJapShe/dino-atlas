@@ -1,10 +1,184 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-06T11:02:05.421Z",
-  "reviewBatch": "2026-08-06-recognition-taxa-initial-gallery-2",
-  "reviewMethod": "Original-size primary inspection and independent comparison of six Giganotosaurus and Iguanodon images: representative, color-pattern, and habitat-ecology roles. Review covered species-level skull and hand cues, whole-body and animal counts, bilateral appendages, grounded feet, pelvis-tail continuity, extra-limb and artifact exclusion, pattern and composition separation, habitat readability, the comparative-reconstruction boundary for Giganotosaurus forelimbs and hands, the strong-but-inferential recent quadrupedal interpretation for Iguanodon, and the non-herd boundary for its three-animal ecology scene.",
-  "targetSlots": 820,
+  "generatedAt": "2026-08-07T10:11:42.734Z",
+  "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
+  "reviewMethod": "Preserved prior approved decisions plus original-size primary inspection and independent comparison of 18 new images across six Mesozoic-life taxa. Review covered taxon identity, whole-body and animal counts, bilateral appendages, feet or arm count, shell continuity, tail continuity, crop and artifact exclusion, pattern and composition separation, habitat readability, and explicit fossil-versus-comparative-versus-hypothetical evidence boundaries. Only slot 1 may be representative-eligible; slots 2 and 3 remain gallery-only review material.",
+  "targetSlots": 838,
   "taxa": {
+    "archaeopteryx-lithographica": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/archaeopteryx-lithographica-solnhofen-longtail-threeclaw-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed original-size count and identity review for one toothed head, two feathered wings, two hind limbs and feet, and one long feathered bony tail; flight performance and full-body color remain explicitly uncertain.",
+        "reviewMethod": "Original-size full-frame inspection plus head, wing-hand, bilateral hind-limb, foot, pelvis-tail, crop, and artifact audit",
+        "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
+        "reviewedAt": "2026-08-07T10:11:42.734Z"
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/archaeopteryx-lithographica-slate-umber-opposite-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "reason": "Approved for gallery comparison only: direction, camera, palette, and ground arrangement differ from slot 1; wing-hand overlap and hypothetical color prohibit representative promotion.",
+        "reviewMethod": "Original-size identity, appendage-count, direction, camera, pattern, crop, and same-composition audit",
+        "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
+        "reviewedAt": "2026-08-07T10:11:42.734Z"
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/archaeopteryx-lithographica-solnhofen-lagoon-glide-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "reason": "Approved for anatomy-review ecology only: full body and appendage counts are readable, but distal wing fingers and the short crossing behavior remain perspective-limited hypotheses.",
+        "reviewMethod": "Original-size full-body, appendage, tail, habitat, behavior-boundary, crop, and artifact audit",
+        "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
+        "reviewedAt": "2026-08-07T10:11:42.734Z"
+      }
+    },
+    "asteroceras-obtusum": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/asteroceras-obtusum-rounded-planispiral-ribs-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed shell-led original-size review for one rounded planispiral shell, one center, one aperture, and coherent radial ribs; soft anatomy is explicitly comparative.",
+        "reviewMethod": "Original-size shell-center, aperture, rib-continuity, silhouette, soft-body-boundary, crop, and artifact audit",
+        "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
+        "reviewedAt": "2026-08-07T10:11:42.734Z"
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/asteroceras-obtusum-slate-copper-irregular-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "reason": "Approved for gallery comparison only: opposite direction, higher camera, darker shelf, and irregular palette differ from slot 1; all soft anatomy and living color remain hypothetical.",
+        "reviewMethod": "Original-size shell identity, direction, camera, color, modern-Nautilus-drift, crop, and same-composition audit",
+        "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
+        "reviewedAt": "2026-08-07T10:11:42.734Z"
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/asteroceras-obtusum-crinoid-shelf-rise-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "reason": "Approved for anatomy-review habitat context only: diagnostic shell remains readable while swimming posture, soft body, and background association remain hypotheses.",
+        "reviewMethod": "Original-size shell, animal-count, habitat, co-occurrence-boundary, crop, and artifact audit",
+        "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
+        "reviewedAt": "2026-08-07T10:11:42.734Z"
+      }
+    },
+    "passaloteuthis-bisulcata": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/passaloteuthis-bisulcata-ten-hook-arm-profile-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed original-size count review for one head, one mantle, one posterior tip, ten similar-length hook-bearing arms, and no long feeding tentacles or external rostrum; fin form remains uncertain.",
+        "reviewMethod": "Original-size ten-arm count, hook cue, mantle, internal-rostrum boundary, posterior, crop, and artifact audit",
+        "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
+        "reviewedAt": "2026-08-07T10:11:42.734Z"
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/passaloteuthis-bisulcata-aubergine-pearl-ten-arm-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "reason": "Approved for gallery comparison only after a second ten-arm count; portrait-like front-oblique geometry, overlap, and hypothetical pattern prohibit representative promotion.",
+        "reviewMethod": "Original-size ten-arm count, left-right arm grouping, hook cue, camera, pattern, crop, and artifact audit",
+        "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
+        "reviewedAt": "2026-08-07T10:11:42.734Z"
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/passaloteuthis-bisulcata-shale-shelf-crustacean-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "reason": "Approved for anatomy-review ecology only: ten arms and one body remain readable; prey approach and exact shelf association are explicitly hypothetical and non-contact.",
+        "reviewMethod": "Original-size ten-arm, mantle, animal-count, non-contact prey, habitat, crop, and artifact audit",
+        "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
+        "reviewedAt": "2026-08-07T10:11:42.734Z"
+      }
+    },
+    "lystrosaurus-murrayi": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/lystrosaurus-murrayi-broad-skull-tusked-fullbody-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed original-size count and identity review for one broad beaked head, exactly one maxillary tusk pair, four limbs and feet, and one short tail; skin and full feet remain comparative.",
+        "reviewMethod": "Original-size head, beak, two-tusk, four-limb, four-foot, tail, crop, and artifact audit",
+        "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
+        "reviewedAt": "2026-08-07T10:11:42.734Z"
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/lystrosaurus-murrayi-charcoal-sage-dry-channel-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "reason": "Approved for gallery comparison only: opposite direction, elevated camera, dry-channel setting, and palette differ from slot 1; distal feet and all color remain review-hold material.",
+        "reviewMethod": "Original-size tusk, limb, foot, direction, camera, pattern, track-randomness, crop, and artifact audit",
+        "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
+        "reviewedAt": "2026-08-07T10:11:42.734Z"
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/lystrosaurus-murrayi-postflood-horsetail-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "reason": "Approved for anatomy-review habitat context only: paired tusks, four limbs, and tail remain readable; the far hind foot, plant choice, and feeding moment prohibit representative use.",
+        "reviewMethod": "Original-size tusk, limb, foot, tail, habitat, behavior-boundary, crop, and artifact audit",
+        "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
+        "reviewedAt": "2026-08-07T10:11:42.734Z"
+      }
+    },
+    "cynognathus-crateronotus": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/cynognathus-crateronotus-longskull-sectorial-teeth-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed original-size identity review for one long low skull, differentiated canine and postcanine cues, four limbs and feet, and one long tail without modern-dog facial drift.",
+        "reviewMethod": "Original-size skull, dentition, bilateral limb, foot, tail, modern-mammal-drift, crop, and artifact audit",
+        "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
+        "reviewedAt": "2026-08-07T10:11:42.734Z"
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/cynognathus-crateronotus-charcoal-copper-upland-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "reason": "Approved for gallery comparison only: elevated opposite-direction view and palette differ from slot 1; open-mouth foreshortening and all soft-tissue color remain review-hold material.",
+        "reviewMethod": "Original-size skull, heterodont cue, limb, direction, camera, pattern, crop, and artifact audit",
+        "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
+        "reviewedAt": "2026-08-07T10:11:42.734Z"
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/cynognathus-crateronotus-storm-channel-sectorial-teeth-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "reason": "Approved for anatomy-review habitat context only: long head, four limbs, feet, and tail are readable; distance, weather, travel, and dental detail prohibit representative use.",
+        "reviewMethod": "Original-size skull silhouette, limb, foot, tail, habitat, behavior-boundary, crop, and artifact audit",
+        "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
+        "reviewedAt": "2026-08-07T10:11:42.734Z"
+      }
+    },
+    "repenomamus-robustus": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/repenomamus-robustus-lowbody-fourlimb-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed independent original-size count and identity review for one low elongated body, four connected short limbs and feet, and one long tail; all living soft tissues remain comparative.",
+        "reviewMethod": "Original-size head, four-limb, four-foot, pelvis-tail, modern-mammal-drift, crop, and artifact audit",
+        "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
+        "reviewedAt": "2026-08-07T10:11:42.734Z"
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/repenomamus-robustus-smoke-rust-highangle-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "reason": "Approved for gallery comparison only: a high-angle portrait composition, opposite direction, four separated feet, and asymmetric palette differ from slot 1; foreshortening and color prohibit representative promotion.",
+        "reviewMethod": "Original-size four-limb, four-foot, tail, portrait framing, direction, pattern, crop, and artifact audit",
+        "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
+        "reviewedAt": "2026-08-07T10:11:42.734Z"
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/repenomamus-robustus-yixian-root-shelter-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "reason": "Approved for anatomy-review habitat context only: four connected feet and full tail are readable in a distinct rear-oblique scene; root-shelter use is hypothetical and no prey or hunting claim is shown.",
+        "reviewMethod": "Independent original-size four-limb, four-foot, tail, habitat, behavior-boundary, crop, and artifact audit",
+        "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
+        "reviewedAt": "2026-08-07T10:11:42.734Z"
+      }
+    },
     "herrerasaurus-ischigualastensis": {
       "1": {
         "status": "approved",

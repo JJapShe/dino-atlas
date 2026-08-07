@@ -55,7 +55,7 @@
           </div>
           <label class="search-field">
             <span>검색</span>
-            <input id="searchInput" type="search" placeholder="공룡명, 분류, 지역" />
+            <input id="searchInput" type="search" placeholder="생물명, 분류, 지역" />
           </label>
           <div class="filter-group">
             <span class="field-label">식성</span>
@@ -97,7 +97,7 @@
         <header class="topbar">
           <div>
             <p class="eyebrow">Dark Mode Prototype</p>
-            <h2 id="viewTitle">공룡 계통도 맵</h2>
+            <h2 id="viewTitle">중생대 생물 계통 지도</h2>
           </div>
           <div class="metric-row">
             <div class="metric">
@@ -128,7 +128,7 @@
               </div>
               <label class="map-quick-search">
                 <span class="sr-only">계통도 빠른 검색</span>
-                <input id="mapQuickSearch" type="search" placeholder="공룡명·분류·지역 빠른 검색" autocomplete="off" />
+                <input id="mapQuickSearch" type="search" placeholder="생물명·분류·지역 빠른 검색" autocomplete="off" />
               </label>
             </div>
             <nav
@@ -142,6 +142,9 @@
               <button data-classification="theropoda" type="button" aria-pressed="false">
                 <span>수각류</span><strong data-classification-count>0</strong>
               </button>
+              <button data-classification="avialae" type="button" aria-pressed="false">
+                <span>초기 조류</span><strong data-classification-count>0</strong>
+              </button>
               <button data-classification="sauropodomorpha" type="button" aria-pressed="false">
                 <span>용각형류</span><strong data-classification-count>0</strong>
               </button>
@@ -153,6 +156,12 @@
               </button>
               <button data-classification="marine-reptilia" type="button" aria-pressed="false">
                 <span>바다 파충류</span><strong data-classification-count>0</strong>
+              </button>
+              <button data-classification="synapsida" type="button" aria-pressed="false">
+                <span>단궁류</span><strong data-classification-count>0</strong>
+              </button>
+              <button data-classification="cephalopoda" type="button" aria-pressed="false">
+                <span>고대 두족류</span><strong data-classification-count>0</strong>
               </button>
               <button data-classification="early-dinosaur" type="button" aria-pressed="false">
                 <span>초기 용반류</span><strong data-classification-count>0</strong>
@@ -186,7 +195,7 @@
                 <button id="zoomOut" class="icon-button" type="button" title="축소" aria-label="축소"><span class="button-icon icon-minus" aria-hidden="true"></span></button>
                 <span id="zoomLevel">100%</span>
                 <button id="zoomIn" class="icon-button" type="button" title="확대" aria-label="확대"><span class="button-icon icon-plus" aria-hidden="true"></span></button>
-                <button id="focusMapSelection" class="icon-button" type="button" title="선택 공룡으로 이동" aria-label="선택 공룡으로 이동"><span class="button-icon icon-target" aria-hidden="true"></span></button>
+                <button id="focusMapSelection" class="icon-button" type="button" title="선택 생물로 이동" aria-label="선택 생물로 이동"><span class="button-icon icon-target" aria-hidden="true"></span></button>
                 <button id="resetMap" class="icon-button" type="button" title="전체 지도 기본 위치" aria-label="전체 지도 기본 위치"><span class="button-icon icon-reset" aria-hidden="true"></span></button>
                 <button id="toggleMapInspector" class="icon-button" type="button" title="정보 패널 접기" aria-label="정보 패널 접기" aria-pressed="false"><span class="button-icon icon-panel" aria-hidden="true"></span></button>
                 <button id="toggleMapExpand" class="icon-button map-control-with-label" type="button" title="지도 확장" aria-label="지도 확장" aria-pressed="false"><span class="button-icon icon-expand" aria-hidden="true"></span><span class="map-control-label">전체 화면</span></button>
@@ -195,7 +204,7 @@
 
             <div class="map-stage">
               <div class="map-workspace">
-                <div class="timeline-browser" id="timelineBrowse" aria-label="시대별 공룡 찾기"></div>
+                <div class="timeline-browser" id="timelineBrowse" aria-label="시대별 중생대 생물 찾기"></div>
                 <div class="phylo-viewport" id="mapViewport" tabindex="0" aria-label="Pan and zoom phylogeny map">
                   <div class="phylo-canvas" id="phyloCanvas">
                     <svg class="tree-lines" id="treeLines" viewBox="0 0 1900 1180" aria-hidden="true"></svg>
@@ -233,7 +242,7 @@
                 aria-valuenow="360"
                 title="드래그해서 지도와 정보 패널 너비 조절"
               ></button>
-              <aside class="map-inspector" id="detailPanel" aria-label="Selected dinosaur detail"></aside>
+              <aside class="map-inspector" id="detailPanel" aria-label="선택한 중생대 생물 상세 정보"></aside>
             </div>
           </section>
         </section>
@@ -242,7 +251,8 @@
           <div class="catalog-toolbar">
             <div>
               <p class="eyebrow">Cards</p>
-              <h3>대표 공룡 도감</h3>
+              <h3>중생대 생물 도감</h3>
+              <p class="catalog-scope-note">공룡·익룡·바다 파충류와 초기 조류·단궁류·고대 두족류를 분류별로 나누어 봅니다.</p>
             </div>
             <select id="periodSort" aria-label="도감 정렬">
               <option value="level" selected>친숙도순</option>
@@ -263,6 +273,9 @@
             <button data-classification="theropoda" type="button" aria-pressed="false">
               <span>수각류</span><strong data-classification-count>0</strong>
             </button>
+            <button data-classification="avialae" type="button" aria-pressed="false">
+              <span>초기 조류</span><strong data-classification-count>0</strong>
+            </button>
             <button data-classification="sauropodomorpha" type="button" aria-pressed="false">
               <span>용각형류</span><strong data-classification-count>0</strong>
             </button>
@@ -274,6 +287,12 @@
             </button>
             <button data-classification="marine-reptilia" type="button" aria-pressed="false">
               <span>바다 파충류</span><strong data-classification-count>0</strong>
+            </button>
+            <button data-classification="synapsida" type="button" aria-pressed="false">
+              <span>단궁류</span><strong data-classification-count>0</strong>
+            </button>
+            <button data-classification="cephalopoda" type="button" aria-pressed="false">
+              <span>고대 두족류</span><strong data-classification-count>0</strong>
             </button>
             <button data-classification="early-dinosaur" type="button" aria-pressed="false">
               <span>초기 용반류</span><strong data-classification-count>0</strong>
@@ -296,7 +315,7 @@
             <div class="ecosystem-controls" aria-label="생태 장면 필터">
               <label class="ecosystem-search search-field">
                 <span>장면 검색</span>
-                <input id="ecosystemSearchInput" type="search" placeholder="공룡명, 지층, 시대, 장면" autocomplete="off" />
+                <input id="ecosystemSearchInput" type="search" placeholder="생물명, 지층, 시대, 장면" autocomplete="off" />
               </label>
 
               <div class="ecosystem-filter-block">
@@ -440,13 +459,13 @@
       </section>
     </div>
 
-  <script src="./gallery-slots.js?v=20260806-recognition-taxa-v2"></script>
+  <script src="./gallery-slots.js?v=20260807-mesozoic-life-v1"></script>
   <script src="./ecosystem-scenes.js?v=20260807-subject-motion-trackway-v2"></script>
   <script src="./motion-samples.js?v=20260807-subject-motion-policy-v1"></script>
   <script src="./motion-m1-samples.js?v=20260807-subject-motion-policy-v1"></script>
   <script src="./motion-m2-samples.js?v=20260807-subject-motion-policy-v1"></script>
   <script src="./motion-m2-i2v-samples.js?v=20260807-giganotosaurus-subject-motion-v1"></script>
-  <script src="./app.js?v=20260807-subject-motion-trackway-v2"></script>
+  <script src="./app.js?v=20260807-mesozoic-life-v1"></script>
     <script src="./atlas-layout.js?v=20260731-resizable-inspector-v1"></script>
   </body>
 </html>

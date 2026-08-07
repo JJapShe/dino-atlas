@@ -1,5 +1,171 @@
 const dinosaurs = [
   {
+    id: "archaeopteryx-lithographica",
+    name: "Archaeopteryx lithographica",
+    koreanName: "시조새",
+    aliases: ["아르카이옵테릭스", "원시 새", "Archaeopteryx"],
+    rootClade: "Dinosauria",
+    clade: "Avialae",
+    family: "Archaeopterygidae",
+    era: "jurassic",
+    period: "후기 쥐라기",
+    diet: "육식/곤충식 추정",
+    region: "독일 바이에른",
+    length: 0.5,
+    knowledgeLevel: 1,
+    imageSlots: 3,
+    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 비행 방식 불확실",
+    summary:
+      "독일 졸른호펜 석회암에서 알려진 작고 새를 닮은 수각류 공룡입니다. 넓은 깃털 날개가 있지만 현대 새와 달리 작은 이빨, 손가락 발톱, 길고 뼈가 이어진 깃털 꼬리를 지녔습니다. 새와 비조류 공룡의 경계 가까이에 놓이며, 힘차게 날았는지 짧게 활공했는지는 아직 확정되지 않았습니다.",
+    features: {
+      분류: "공룡 계통 안의 초기 조류 가지(Avialae); 현대 새와 같은 모습은 아님",
+      머리: "작고 좁은 턱과 여러 개의 작은 원뿔형 이빨",
+      날개: "긴 비대칭 깃털이 붙은 두 앞날개와 각 손의 세 발톱 손가락",
+      꼬리: "현대 새의 짧은 꼬리뼈와 달리 길게 이어진 뼈 꼬리와 좌우 깃털",
+      비행: "깃털 날개는 직접 근거지만 동력 비행과 활공 능력의 정도는 불확실",
+    },
+    sources: ["Natural History Museum Archaeopteryx directory", "Natural History Museum London specimen", "Foth et al. 2014"],
+  },
+  {
+    id: "asteroceras-obtusum",
+    name: "Asteroceras obtusum",
+    koreanName: "암모나이트(아스테로세라스)",
+    aliases: ["암모나이트", "암모나이트류", "Ammonite"],
+    rootClade: "Mollusca",
+    clade: "Ammonoidea",
+    family: "Arietitidae",
+    era: "jurassic",
+    period: "전기 쥐라기",
+    diet: "육식/부유 먹이 추정",
+    region: "영국 도싯·유럽의 얕은 바다",
+    length: 0.25,
+    sizeLabel: "패각 지름",
+    sizeDisplay: "수십 cm급(표본별 차이)",
+    knowledgeLevel: 1,
+    imageSlots: 3,
+    reviewStatus: "3장 갤러리 · 패각 대표/무늬/생태 분리 · 연체부는 비교복원",
+    summary:
+      "전기 쥐라기 바다에 살았던 대표적인 암모나이트입니다. 한 평면으로 감긴 둥근 패각과 굵은 방사형 늑골이 가장 확실한 식별 단서입니다. 패각 화석은 풍부하지만 머리·팔·눈 같은 연한 몸은 거의 남지 않아, 살아 있는 모습의 연체부와 색은 가까운 두족류를 참고한 가설로 표시합니다.",
+    features: {
+      패각: "한 평면으로 단단히 감긴 둥근 나선형 패각",
+      늑골: "중심에서 바깥 가장자리로 뻗는 굵고 규칙적인 방사형 늑골",
+      몸체: "패각 입구 밖의 머리와 팔은 화석 직접 근거가 적은 비교복원",
+      구분: "현생 앵무조개를 그대로 복사하지 않고 암모나이트 패각 형태를 우선",
+      서식지: "전기 쥐라기 영국·유럽의 얕은 바다",
+    },
+    sources: ["British Geological Survey ammonites guide", "Oxford University Museum specimen J.01194", "Museums Victoria specimen P 344678"],
+  },
+  {
+    id: "passaloteuthis-bisulcata",
+    name: "Passaloteuthis bisulcata",
+    koreanName: "벨렘나이트(파살로테우티스)",
+    aliases: ["벨렘나이트", "벨렘나이트류", "Belemnite"],
+    rootClade: "Mollusca",
+    clade: "Belemnitida",
+    family: "Passaloteuthididae",
+    era: "jurassic",
+    period: "전기 쥐라기",
+    diet: "육식",
+    region: "영국·독일·유럽의 바다",
+    length: 0.355,
+    sizeLabel: "전신 길이",
+    sizeDisplay: "약 35.5 cm(연질부 표본 기준)",
+    knowledgeLevel: 2,
+    imageSlots: 3,
+    reviewStatus: "3장 갤러리 · 10개 갈고리 팔/내부 로스트룸 검토 · 연체부 비교복원",
+    summary:
+      "전기 쥐라기 유럽 바다의 벨렘나이트로, 오징어를 닮은 몸 안쪽에 단단한 내부 골격을 지녔습니다. 흔히 총알처럼 보이는 화석은 꼬리 쪽 내부 골격인 로스트룸입니다. 팔은 열 개이고 작은 갈고리가 있었으며, 현대 오징어처럼 특별히 긴 촉수 두 개를 덧붙이지 않는 복원을 기준으로 삼습니다.",
+    features: {
+      몸체: "유선형 외투막과 뾰족한 뒤쪽의 오징어형 실루엣; 지느러미 모양은 불확실",
+      내부골격: "몸 안쪽에 원뿔형 방과 총알 모양 로스트룸이 이어지는 단단한 골격",
+      팔: "서로 비슷한 길이의 열 개 팔과 여러 쌍의 작은 갈고리",
+      구분: "현대 오징어의 유난히 긴 포획 촉수 두 개를 추가하지 않음",
+      먹이: "작은 물고기·갑각류·연체동물을 붙잡았을 가능성",
+    },
+    sources: ["British Geological Survey belemnites guide", "Rita et al. 2021", "Klug et al. 2024"],
+  },
+  {
+    id: "lystrosaurus-murrayi",
+    name: "Lystrosaurus murrayi",
+    koreanName: "리스트로사우루스",
+    aliases: ["리스트로사우루스", "돼지 도마뱀", "Lystrosaurus"],
+    rootClade: "Synapsida",
+    clade: "Dicynodontia",
+    family: "Lystrosauridae",
+    era: "triassic",
+    period: "전기 트라이아스기",
+    diet: "초식",
+    region: "남아프리카·인도·남극",
+    length: 1.0,
+    knowledgeLevel: 2,
+    imageSlots: 3,
+    reviewStatus: "3장 갤러리 · 부리/한 쌍 엄니/짧은 사지 검토 · 털 범위 불확실",
+    summary:
+      "페름기 말 대멸종을 지나 전기 트라이아스기에 널리 번성한 초식 단궁류입니다. 짧고 넓은 머리 앞의 각질 부리와 위턱의 한 쌍 엄니, 통통한 몸과 짧고 튼튼한 네 다리가 핵심입니다. 공룡이 아니라 포유류 계통과 더 가까운 단궁류이며, 두꺼운 털로 덮였다고 단정하지 않습니다.",
+    features: {
+      분류: "공룡이 아닌 디키노돈트 단궁류",
+      머리: "짧고 넓은 두개골과 이빨 없는 각질 부리",
+      엄니: "위턱에서 아래로 향하는 한 쌍의 굵은 엄니",
+      몸통: "낮고 통통한 몸과 짧고 튼튼한 네 다리",
+      피부: "피부와 털의 범위는 직접 근거가 부족해 과도한 포유류형 털을 피함",
+    },
+    sources: ["Smithsonian NMNH specimen 3573738", "Natural History Museum synapsid collections", "Kammerer et al. 2020"],
+  },
+  {
+    id: "cynognathus-crateronotus",
+    name: "Cynognathus crateronotus",
+    koreanName: "키노그나투스",
+    aliases: ["시노그나투스", "개턱", "Cynognathus"],
+    rootClade: "Synapsida",
+    clade: "Cynodontia",
+    family: "Cynognathidae",
+    era: "triassic",
+    period: "중기 트라이아스기",
+    diet: "육식",
+    region: "남아프리카·남아메리카",
+    length: 1.2,
+    knowledgeLevel: 2,
+    imageSlots: 3,
+    reviewStatus: "3장 갤러리 · 긴 낮은 두개골/이형치/튼튼한 사지 검토 · 연조직 불확실",
+    summary:
+      "트라이아스기 곤드와나의 큰 육식성 키노돈트 단궁류입니다. 길고 낮은 두개골, 큰 송곳니와 자르는 뒤쪽 치아, 튼튼한 네 다리가 특징입니다. 이름은 ‘개 턱’이라는 뜻이지만 현대 개의 늘어진 귀·검은 코·두꺼운 털을 그대로 붙이지 않는 보수적 복원을 사용합니다.",
+    features: {
+      분류: "포유류로 이어지는 가지에 가까운 공룡 아닌 키노돈트 단궁류",
+      두개골: "길고 낮으며 뒤쪽이 넓어지는 튼튼한 두개골",
+      치아: "큰 송곳니와 먹이를 자르는 서로 다른 모양의 뒤쪽 치아",
+      보행: "네 다리로 걷는 길고 튼튼한 몸과 긴 꼬리",
+      연조직: "현대 개 귀·코·표정을 피하고 털의 범위는 가설로 표시",
+    },
+    sources: ["Smithsonian NMNH Cynognathus collection", "Abdala et al. 2019", "Natural History Museum synapsid collections"],
+  },
+  {
+    id: "repenomamus-robustus",
+    name: "Repenomamus robustus",
+    koreanName: "레페노마무스",
+    aliases: ["레페노마무스", "공룡을 먹은 포유류", "Repenomamus"],
+    rootClade: "Synapsida",
+    clade: "Mammalia",
+    family: "Gobiconodontidae",
+    era: "cretaceous",
+    period: "전기 백악기",
+    diet: "육식/잡식",
+    region: "중국 랴오닝",
+    length: 0.5,
+    knowledgeLevel: 2,
+    imageSlots: 3,
+    reviewStatus: "3장 갤러리 · 초기 포유류 체형 검토 · 프시타코사우루스 섭식은 살해 증거 아님",
+    summary:
+      "전기 백악기 중국의 튼튼한 초기 포유류입니다. 한 표본의 배 속에서 어린 프시타코사우루스 뼈가 발견되어 중생대 포유류도 작은 척추동물을 먹었다는 강한 증거가 되었습니다. 다만 그 공룡을 직접 사냥해 죽였는지, 이미 죽은 사체를 먹었는지는 알 수 없으므로 공격 장면으로 단정하지 않습니다.",
+    features: {
+      분류: "단궁류 안의 초기 포유류; 공룡이 아님",
+      몸체: "낮고 길며 튼튼한 몸, 짧은 네 다리와 긴 꼬리",
+      머리: "작고 긴 주둥이와 서로 다른 모양의 날카로운 치아",
+      먹이증거: "배 속의 어린 프시타코사우루스 뼈는 섭식의 직접 증거",
+      행동경계: "사냥과 청소 중 어느 쪽이었는지는 직접 증거가 없어 단정하지 않음",
+    },
+    sources: ["Hu et al. 2005 Nature", "American Museum of Natural History", "Li et al. 2000"],
+  },
+  {
     id: "herrerasaurus-ischigualastensis",
     name: "Herrerasaurus ischigualastensis",
     koreanName: "헤레라사우루스",
@@ -3662,15 +3828,22 @@ const dinosaurs = [
 const cladeMeta = {
   Saurischia: "용반류",
   Theropoda: "수각류",
+  Avialae: "초기 조류",
   Sauropodomorpha: "용각형류",
   Ornithischia: "조반류",
   Pachycephalosauria: "후두류",
+  Ammonoidea: "암모나이트류",
+  Belemnitida: "벨렘나이트류",
+  Dicynodontia: "디키노돈트류",
+  Cynodontia: "키노돈트류",
+  Mammalia: "포유류",
 };
 
 const taxonomySearchAliases = {
   Dinosauria: ["공룡"],
   Saurischia: ["용반류"],
   Theropoda: ["수각류", "육식공룡"],
+  Avialae: ["초기 조류", "조류", "새", "시조새"],
   Sauropodomorpha: ["용각형류", "용각류"],
   Ornithischia: ["조반류"],
   Ornithopoda: ["조각류"],
@@ -3689,6 +3862,14 @@ const taxonomySearchAliases = {
   Placodontia: ["판치룡류"],
   Thalattosauria: ["탈라토사우루스류"],
   Neornithischia: ["신조반류"],
+  Mollusca: ["연체동물", "고대 두족류"],
+  Cephalopoda: ["두족류", "고대 두족류"],
+  Ammonoidea: ["암모나이트", "암모나이트류"],
+  Belemnitida: ["벨렘나이트", "벨렘나이트류"],
+  Synapsida: ["단궁류", "단궁류 계통"],
+  Dicynodontia: ["디키노돈트", "두 엄니 단궁류"],
+  Cynodontia: ["키노돈트", "포유형 단궁류"],
+  Mammalia: ["포유류", "초기 포유류"],
 };
 
 const knowledgeLevels = {
@@ -3760,8 +3941,16 @@ const canvasSize = {
 };
 
 const phyloNodes = [
-  { id: "pterosauria", type: "group", label: "Pterosauria", caption: "익룡 시험", x: 1840, y: 56 },
-  { id: "marine-reptilia", type: "group", label: "Marine Reptilia", caption: "해양 파충류 시험", x: 1840, y: 276 },
+  { id: "pterosauria", type: "group", label: "Pterosauria", caption: "익룡 계통", x: 1840, y: 56 },
+  { id: "marine-reptilia", type: "group", label: "Marine Reptilia", caption: "해양 파충류 계통", x: 1840, y: 276 },
+  { id: "synapsida", type: "group", label: "Synapsida", caption: "단궁류 계통", x: 120, y: 56 },
+  { id: "dicynodontia", type: "group", label: "Dicynodontia", caption: "디키노돈트류", x: 355, y: 56 },
+  { id: "cynodontia", type: "group", label: "Cynodontia", caption: "키노돈트류", x: 355, y: 156 },
+  { id: "mammalia", type: "group", label: "Mammalia", caption: "초기 포유류", x: 620, y: 156 },
+  { id: "mollusca", type: "group", label: "Mollusca", caption: "연체동물 계통", x: 120, y: 356 },
+  { id: "cephalopoda", type: "group", label: "Cephalopoda", caption: "두족류", x: 355, y: 356 },
+  { id: "ammonoidea", type: "group", label: "Ammonoidea", caption: "암모나이트류", x: 620, y: 326 },
+  { id: "belemnitida", type: "group", label: "Belemnitida", caption: "벨렘나이트류", x: 620, y: 426 },
   { id: "dinosauria", type: "group", label: "Dinosauria", caption: "공룡상목", x: 120, y: 146 },
   { id: "saurischia", type: "group", label: "Saurischia", caption: "용반류", x: 355, y: 98 },
   { id: "ornithischia", type: "group", label: "Ornithischia", caption: "조반류", x: 355, y: 242 },
@@ -3774,6 +3963,7 @@ const phyloNodes = [
     x: 620,
     y: 266,
   },
+  { id: "avialae", type: "group", label: "Avialae", caption: "초기 조류 가지", x: 890, y: 460 },
   {
     id: "herrerasaurus-ischigualastensis",
     type: "taxon",
@@ -4320,6 +4510,12 @@ const phyloNodes = [
 ];
 
 const phyloEdges = [
+  ["synapsida", "dicynodontia"],
+  ["synapsida", "cynodontia"],
+  ["cynodontia", "mammalia"],
+  ["mollusca", "cephalopoda"],
+  ["cephalopoda", "ammonoidea"],
+  ["cephalopoda", "belemnitida"],
   ["pterosauria", "rhamphorhynchus-muensteri"],
   ["pterosauria", "dimorphodon-macronyx"],
   ["pterosauria", "eudimorphodon-ranzii"],
@@ -4330,7 +4526,6 @@ const phyloEdges = [
   ["pterosauria", "tapejara-wellnhoferi"],
   ["pterosauria", "dsungaripterus-weii"],
   ["pterosauria", "nyctosaurus-gracilis"],
-  ["pterosauria", "pteranodon-longiceps"],
   ["pterosauria", "quetzalcoatlus-northropi"],
   ["marine-reptilia", "ichthyosaurus-communis"],
   ["marine-reptilia", "thalattosaurus-alexandrae"],
@@ -4344,6 +4539,7 @@ const phyloEdges = [
   ["dinosauria", "ornithischia"],
   ["saurischia", "theropoda"],
   ["saurischia", "sauropodomorpha"],
+  ["theropoda", "avialae"],
   ["theropoda", "herrerasaurus-ischigualastensis"],
   ["theropoda", "coelophysis-bauri"],
   ["theropoda", "eodromaeus-murphi"],
@@ -4372,7 +4568,6 @@ const phyloEdges = [
   ["jurassic-theropoda", "dracovenator-regenti"],
   ["jurassic-theropoda", "monolophosaurus-jiangi"],
   ["jurassic-theropoda", "ornitholestes-hermanni"],
-  ["jurassic-sauropoda", "sarahsaurus-aurifontanalis"],
   ["jurassic-sauropoda", "cetiosaurus-oxoniensis"],
   ["jurassic-sauropoda", "bellusaurus-sui"],
   ["jurassic-sauropoda", "apatosaurus-ajax"],
@@ -4522,14 +4717,18 @@ const ornithischianClassificationClades = new Set([
 const classificationGroups = Object.freeze([
   { id: "all", label: "전체" },
   { id: "theropoda", label: "수각류" },
+  { id: "avialae", label: "초기 조류" },
   { id: "sauropodomorpha", label: "용각형류" },
   { id: "ornithischia", label: "조반류" },
   { id: "pterosauria", label: "익룡" },
   { id: "marine-reptilia", label: "바다 파충류" },
+  { id: "synapsida", label: "단궁류" },
+  { id: "cephalopoda", label: "고대 두족류" },
   { id: "early-dinosaur", label: "초기 용반류" },
 ]);
 
 const timelinePeriodOrder = Object.freeze([
+  { id: "early-triassic", label: "전기 트라이아스기", era: "triassic" },
   { id: "middle-triassic", label: "중기 트라이아스기", era: "triassic" },
   { id: "late-triassic", label: "후기 트라이아스기", era: "triassic" },
   { id: "early-jurassic", label: "전기 쥐라기", era: "jurassic" },
@@ -4542,6 +4741,12 @@ const timelinePeriodOrder = Object.freeze([
 ]);
 
 const recentImageUpdateTaxa = [
+  "archaeopteryx-lithographica",
+  "asteroceras-obtusum",
+  "passaloteuthis-bisulcata",
+  "lystrosaurus-murrayi",
+  "cynognathus-crateronotus",
+  "repenomamus-robustus",
   "giganotosaurus-carolinii",
   "iguanodon-bernissartensis",
   "carnotaurus-sastrei",
@@ -4701,6 +4906,448 @@ function saveCandidateReviewDecisions() {
 }
 
 const generatedImageSamples = {
+  "repenomamus-robustus": [
+    {
+      kind: "count-level pass",
+      title: "레페노마무스 낮고 긴 몸·네 다리 전신 대표",
+      body: "전기 백악기 의현층의 단독 전신 대표입니다. 원본 크기에서 낮고 긴 한 몸, 짧고 튼튼한 네 다리와 분리된 네 발, 골반에서 이어지는 한 긴 꼬리, 낮고 넓은 한 머리를 확인했습니다. 털·귀·코·완전한 발은 비교복원이며 현생 수달·오소리·설치류를 그대로 복사하지 않았습니다.",
+      source: "assets/dinosaurs/repenomamus-robustus-lowbody-fourlimb-representative-imagegen-v1.png",
+      variant: "낮고 긴 몸 네 다리 전신 대표 이미지 생성 v1",
+      src: "assets/dinosaurs/repenomamus-robustus-lowbody-fourlimb-representative-imagegen-v1.png",
+      gallerySlot: 1,
+      galleryRole: "representative",
+      phenotype: "walnut-clay-a",
+      habitatKey: "early-cretaceous-yixian-ashbar",
+      sourceAttribution: "OpenAI built-in image generation; peer-reviewed Repenomamus sources supplied factual constraints only",
+      licenseRecord: "Generated project asset; no external artwork or copyrighted reconstruction used as generation input",
+      generationPromptRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json#records/repenomamus-robustus-representative-v1",
+      generationSeed: "unavailable",
+      generationWorkflow: "OpenAI built-in image generation; prompt-to-image four-limb anatomy retry",
+      reviewStatus: "원본 크기 count-level 검수 통과 · S1 대표 승인 · 연조직/발 비교복원 경계",
+      formation: "Yixian Formation",
+      locality: "formation-level volcanic-lake-margin reconstruction; exact lake, plants, weather, and moment are hypothetical",
+      anatomyEvidenceBoundary: "robust low body and cranial-dental identity are fossil-led; full limbs, feet, tail soft tissue, ears, nose, and fur treatment include reconstruction",
+      colorEvidence: "walnut, clay brown, gray beige, and all pattern placement are hypothetical",
+      metadataRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json",
+      representativeEligible: true,
+    },
+    {
+      kind: "review hold",
+      title: "레페노마무스 연회색·적갈색 세로형 반대 방향 무늬",
+      body: "대표의 낮은 측면 구도와 달리 높은 사선 세로 화면에서 네 다리와 한 긴 꼬리를 펼쳐 보이는 색·무늬 후보입니다. 네 발은 서로 다른 밝은 지면 위에서 읽히지만, 연회색·적갈색 구름무늬와 작은 귀·털은 가설이고 강한 원근은 대표 판정에 불리하므로 S2 review hold로만 둡니다.",
+      source: "assets/dinosaurs/repenomamus-robustus-smoke-rust-highangle-pattern-imagegen-v1.png",
+      variant: "연회색 적갈색 높은 사선 세로형 무늬 이미지 생성 v1",
+      src: "assets/dinosaurs/repenomamus-robustus-smoke-rust-highangle-pattern-imagegen-v1.png",
+      gallerySlot: 2,
+      galleryRole: "color-pattern",
+      phenotype: "smoke-rust-b",
+      habitatKey: "early-cretaceous-yixian-tuff-crossing",
+      sourceAttribution: "OpenAI built-in image generation; factual sources supplied identity constraints only",
+      licenseRecord: "Generated project asset; no external artwork or copyrighted reconstruction used as generation input",
+      generationPromptRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json#records/repenomamus-robustus-pattern-v1",
+      generationSeed: "unavailable",
+      generationWorkflow: "OpenAI built-in image generation; prompt-to-image portrait high-angle pattern and four-foot retry",
+      reviewStatus: "원본 크기 review-hold 수용 · 세로형/반대 방향/네 발 분리 · 색과 연조직 가설 · 대표 승격 금지",
+      formation: "Yixian Formation",
+      anatomyEvidenceBoundary: "four-limb body plan retained; strong foreshortening and complete soft tissues remain reconstruction",
+      colorEvidence: "smoke blue-gray, rust, flax, cream flecks, and all placement are hypothetical",
+      metadataRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json",
+      representativeEligible: false,
+    },
+    {
+      kind: "anatomy review",
+      title: "레페노마무스 의현층 쓰러진 뿌리 은신처 이동 생태",
+      body: "쓰러진 침엽수 뿌리 아래의 낮은 공간으로 이동하는 후방 사선 생태 장면입니다. 한 몸, 네 다리와 네 발, 한 긴 꼬리가 읽히고 대표·무늬 장면과 방향·카메라·환경이 다릅니다. 정확한 은신처 이용과 식생 배치는 가설이며, 프시타코사우루스 섭식 장면 초안들은 먹잇감 해부가 무너져 모두 제외했습니다.",
+      source: "assets/dinosaurs/repenomamus-robustus-yixian-root-shelter-ecology-imagegen-v1.png",
+      variant: "의현층 쓰러진 뿌리 은신처 이동 생태 이미지 생성 v1",
+      src: "assets/dinosaurs/repenomamus-robustus-yixian-root-shelter-ecology-imagegen-v1.png",
+      gallerySlot: 3,
+      galleryRole: "habitat-ecology",
+      phenotype: "charcoal-chestnut-c",
+      habitatKey: "early-cretaceous-yixian-root-shelter",
+      sourceAttribution: "OpenAI built-in image generation; Yixian Formation context supplied factual constraints only",
+      licenseRecord: "Generated project asset; no external artwork or copyrighted reconstruction used as generation input",
+      generationPromptRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json#records/repenomamus-robustus-ecology-v1",
+      generationSeed: "unavailable",
+      generationWorkflow: "OpenAI built-in image generation; prompt-to-image rear-oblique habitat and four-foot retry",
+      reviewStatus: "원본 크기 anatomy-review 수용 · 네 발/꼬리 판독 · 서식처 행동 가설 · 대표 승격 금지",
+      formation: "Yixian Formation",
+      locality: "formation-level forest-floor reconstruction; exact root shelter, leaf litter, vegetation, and movement are hypothetical",
+      behaviorEvidence: "movement toward a root shelter is a habitat-use hypothesis, not direct behavior evidence",
+      evidenceBoundary: "juvenile Psittacosaurus gut contents support ingestion but not a specific hunt; no prey is depicted in the approved ecology image",
+      colorEvidence: "charcoal sepia, chestnut, stone gray, and all pattern placement are hypothetical",
+      metadataRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json",
+      representativeEligible: false,
+    },
+  ],
+  "lystrosaurus-murrayi": [
+    {
+      kind: "count-level pass",
+      title: "리스트로사우루스 짧고 넓은 머리·한 쌍 엄니 대표",
+      body: "전기 트라이아스기 범람원의 단독 전신 대표입니다. 원본 크기에서 짧고 넓은 한 머리, 각질 부리, 위턱의 아래로 향한 엄니 한 쌍, 낮고 통통한 한 몸, 짧고 튼튼한 네 다리와 분리된 네 발, 한 짧은 꼬리를 확인했습니다. 피부 질감과 색은 가설이며 두꺼운 포유류 털은 넣지 않았습니다.",
+      source: "assets/dinosaurs/lystrosaurus-murrayi-broad-skull-tusked-fullbody-representative-imagegen-v1.png",
+      variant: "짧고 넓은 머리 한 쌍 엄니 전신 대표 이미지 생성 v1",
+      src: "assets/dinosaurs/lystrosaurus-murrayi-broad-skull-tusked-fullbody-representative-imagegen-v1.png",
+      gallerySlot: 1,
+      galleryRole: "representative",
+      phenotype: "earth-gray-a",
+      habitatKey: "early-triassic-katberg-floodplain",
+      sourceAttribution: "OpenAI built-in image generation; Smithsonian and peer-reviewed synapsid sources supplied factual constraints only",
+      licenseRecord: "Generated project asset; no external artwork or copyrighted reconstruction used as generation input",
+      generationPromptRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json#records/lystrosaurus-representative-v1",
+      generationSeed: "unavailable",
+      generationWorkflow: "OpenAI built-in image generation; prompt-to-image anatomy-led pass",
+      reviewStatus: "원본 크기 count-level 검수 통과 · S1 대표 승인 · 피부/털 가설 경계",
+      formation: "Katberg Formation, Lystrosaurus Assemblage Zone",
+      locality: "formation-level floodplain reconstruction; exact water, vegetation, weather, and moment are hypothetical",
+      anatomyEvidenceBoundary: "skull, beak, paired tusks, and robust postcranial plan are fossil-led; skin, full feet, and soft tissues include reconstruction",
+      colorEvidence: "earth gray, umber, cream, and all pattern placement are hypothetical",
+      metadataRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json",
+      representativeEligible: true,
+    },
+    {
+      kind: "review hold",
+      title: "리스트로사우루스 차콜·세이지 건기 수로 반대 방향 무늬",
+      body: "대표의 오른쪽 진행 측면과 달리 반대 방향의 뒤쪽 사선에서 건기 수로를 걷는 색·무늬 후보입니다. 한 머리, 한 쌍 엄니, 네 다리, 한 꼬리는 유지되지만 먼쪽 발가락은 겹침으로 판독이 약하고 차콜·세이지·황토 무늬는 가설이므로 S2 review hold로만 둡니다. 규칙적인 발자국 도장처럼 보인 초안은 탈락시켰습니다.",
+      source: "assets/dinosaurs/lystrosaurus-murrayi-charcoal-sage-dry-channel-pattern-imagegen-v1.png",
+      variant: "차콜 세이지 건기 수로 반대 방향 무늬 이미지 생성 v1",
+      src: "assets/dinosaurs/lystrosaurus-murrayi-charcoal-sage-dry-channel-pattern-imagegen-v1.png",
+      gallerySlot: 2,
+      galleryRole: "color-pattern",
+      phenotype: "charcoal-sage-b",
+      habitatKey: "early-triassic-dry-channel",
+      sourceAttribution: "OpenAI built-in image generation; factual sources supplied identity constraints only",
+      licenseRecord: "Generated project asset; no external artwork or copyrighted reconstruction used as generation input",
+      generationPromptRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json#records/lystrosaurus-pattern-v1",
+      generationSeed: "unavailable",
+      generationWorkflow: "OpenAI built-in image generation; edited prompt-to-image composition and naturalized-ground pass",
+      reviewStatus: "원본 크기 review-hold 수용 · 방향/배경 분리 · 먼쪽 발 재검토 · 대표 승격 금지",
+      formation: "Katberg Formation, Lystrosaurus Assemblage Zone",
+      anatomyEvidenceBoundary: "identity cues retained; distal feet and skin remain reconstruction",
+      colorEvidence: "charcoal, sage, ochre, and all marking placement are hypothetical",
+      metadataRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json",
+      representativeEligible: false,
+    },
+    {
+      kind: "anatomy review",
+      title: "리스트로사우루스 홍수 뒤 속새 채식 생태",
+      body: "홍수가 지나간 진흙 평원에서 속새류 식물 가까이 이동하는 낮은 정면 사선 생태 장면입니다. 한 쌍 엄니, 네 다리와 한 꼬리가 읽히고 대표·무늬 장면과 카메라·방향·날씨가 다릅니다. 식물 선택과 정확한 먹이 행동, 피부색은 직접 증거가 아니며 먼쪽 뒷발은 몸에 일부 가려져 anatomy review로만 사용합니다.",
+      source: "assets/dinosaurs/lystrosaurus-murrayi-postflood-horsetail-ecology-imagegen-v1.png",
+      variant: "홍수 뒤 속새 평원 생태 이미지 생성 v1",
+      src: "assets/dinosaurs/lystrosaurus-murrayi-postflood-horsetail-ecology-imagegen-v1.png",
+      gallerySlot: 3,
+      galleryRole: "habitat-ecology",
+      phenotype: "wet-umber-c",
+      habitatKey: "early-triassic-postflood-horsetail",
+      sourceAttribution: "OpenAI built-in image generation; formation-level sources supplied environmental constraints only",
+      licenseRecord: "Generated project asset; no external artwork or copyrighted reconstruction used as generation input",
+      generationPromptRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json#records/lystrosaurus-ecology-v1",
+      generationSeed: "unavailable",
+      generationWorkflow: "OpenAI built-in image generation; edited prompt-to-image habitat and feeding hypothesis pass",
+      reviewStatus: "원본 크기 anatomy-review 수용 · 먼쪽 발 일부 가림 · 행동/환경 가설 · 대표 승격 금지",
+      formation: "Katberg Formation, Lystrosaurus Assemblage Zone",
+      locality: "post-flood formation-level reconstruction; exact plant association, storm, and feeding moment are hypothetical",
+      behaviorEvidence: "approach to horsetail-like plants is a visual herbivory hypothesis",
+      colorEvidence: "wet umber, gray, ochre highlights, and all pattern placement are hypothetical",
+      metadataRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json",
+      representativeEligible: false,
+    },
+  ],
+  "cynognathus-crateronotus": [
+    {
+      kind: "count-level pass",
+      title: "키노그나투스 긴 낮은 머리·송곳니·절단형 치아 대표",
+      body: "중기 트라이아스기 곤드와나의 단독 전신 대표입니다. 원본 크기에서 길고 낮은 한 머리, 큰 송곳니와 서로 다른 뒤쪽 치아, 튼튼한 네 다리와 분리된 네 발, 한 긴 꼬리를 확인했습니다. 현대 개의 늘어진 귀·검은 코·두꺼운 털을 피했고, 피부·짧은 필라멘트와 완전한 발은 비교복원 경계를 유지합니다.",
+      source: "assets/dinosaurs/cynognathus-crateronotus-longskull-sectorial-teeth-representative-imagegen-v1.png",
+      variant: "긴 낮은 머리 송곳니 절단형 치아 대표 이미지 생성 v1",
+      src: "assets/dinosaurs/cynognathus-crateronotus-longskull-sectorial-teeth-representative-imagegen-v1.png",
+      gallerySlot: 1,
+      galleryRole: "representative",
+      phenotype: "rust-umber-a",
+      habitatKey: "triassic-burgersdorp-floodplain",
+      sourceAttribution: "OpenAI built-in image generation; Smithsonian and peer-reviewed cynodont sources supplied factual constraints only",
+      licenseRecord: "Generated project asset; no external artwork or copyrighted reconstruction used as generation input",
+      generationPromptRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json#records/cynognathus-representative-v1",
+      generationSeed: "unavailable",
+      generationWorkflow: "OpenAI built-in image generation; edited prompt-to-image dentition and anatomy pass",
+      reviewStatus: "원본 크기 count-level 검수 통과 · S1 대표 승인 · 연조직/발 비교복원 경계",
+      formation: "Burgersdorp Formation, Cynognathus Assemblage Zone",
+      locality: "formation-level floodplain reconstruction; exact channel, vegetation, and moment are hypothetical",
+      anatomyEvidenceBoundary: "skull proportions and heterodont dentition are fossil-led; complete limbs, feet, tail soft tissue, and integument include reconstruction",
+      colorEvidence: "rust, umber, sand, and all pattern placement are hypothetical",
+      metadataRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json",
+      representativeEligible: true,
+    },
+    {
+      kind: "review hold",
+      title: "키노그나투스 차콜·구리빛 고지대 반대 방향 무늬",
+      body: "대표와 반대 방향의 높은 사선에서 머리·네 다리·긴 꼬리를 보여 주는 색·무늬 비교 후보입니다. 큰 송곳니와 서로 다른 뒤쪽 치아가 읽히지만 열린 입과 원근은 대표보다 치열 판독에 불리하고 차콜·구리빛 무늬는 가설이므로 S2 review hold로만 둡니다. Lystrosaurus처럼 짧은 머리로 흐른 초안은 탈락했습니다.",
+      source: "assets/dinosaurs/cynognathus-crateronotus-charcoal-copper-upland-pattern-imagegen-v1.png",
+      variant: "차콜 구리빛 고지대 반대 방향 무늬 이미지 생성 v1",
+      src: "assets/dinosaurs/cynognathus-crateronotus-charcoal-copper-upland-pattern-imagegen-v1.png",
+      gallerySlot: 2,
+      galleryRole: "color-pattern",
+      phenotype: "charcoal-copper-b",
+      habitatKey: "triassic-upland-overlook",
+      sourceAttribution: "OpenAI built-in image generation; factual sources supplied identity constraints only",
+      licenseRecord: "Generated project asset; no external artwork or copyrighted reconstruction used as generation input",
+      generationPromptRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json#records/cynognathus-pattern-v1",
+      generationSeed: "unavailable",
+      generationWorkflow: "OpenAI built-in image generation; prompt-to-image opposite-direction composition and palette pass",
+      reviewStatus: "원본 크기 review-hold 수용 · 종 정체성 복구 · 열린 입/색 가설 · 대표 승격 금지",
+      formation: "Burgersdorp Formation, Cynognathus Assemblage Zone",
+      anatomyEvidenceBoundary: "long low skull and heterodont cues retained; soft tissues and full feet remain reconstruction",
+      colorEvidence: "charcoal, copper, cream, and all marking placement are hypothetical",
+      metadataRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json",
+      representativeEligible: false,
+    },
+    {
+      kind: "anatomy review",
+      title: "키노그나투스 폭풍 수로 횡단 생태",
+      body: "폭풍 뒤 넓은 수로 가장자리를 걷는 먼 전신 생태 장면입니다. 길고 낮은 머리, 네 다리와 한 긴 꼬리가 분리되어 보이며 대표·무늬 장면과 거리·방향·환경을 달리했습니다. 이 정확한 날씨·이동 행동·색은 직접 근거가 아니며, 먼 거리의 치아 세부는 대표 판정에 쓰지 않는 S3 anatomy review입니다.",
+      source: "assets/dinosaurs/cynognathus-crateronotus-storm-channel-sectorial-teeth-ecology-imagegen-v1.png",
+      variant: "폭풍 수로 횡단 생태 이미지 생성 v1",
+      src: "assets/dinosaurs/cynognathus-crateronotus-storm-channel-sectorial-teeth-ecology-imagegen-v1.png",
+      gallerySlot: 3,
+      galleryRole: "habitat-ecology",
+      phenotype: "storm-slate-c",
+      habitatKey: "triassic-storm-channel",
+      sourceAttribution: "OpenAI built-in image generation; formation-level sources supplied environmental constraints only",
+      licenseRecord: "Generated project asset; no external artwork or copyrighted reconstruction used as generation input",
+      generationPromptRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json#records/cynognathus-ecology-v1",
+      generationSeed: "unavailable",
+      generationWorkflow: "OpenAI built-in image generation; edited prompt-to-image habitat and locomotion hypothesis pass",
+      reviewStatus: "원본 크기 anatomy-review 수용 · 환경/이동 가설 · 치아 세부 대표 판정 금지 · 대표 승격 금지",
+      formation: "Burgersdorp Formation, Cynognathus Assemblage Zone",
+      locality: "formation-level channel reconstruction; exact storm, viewpoint, and travel moment are hypothetical",
+      behaviorEvidence: "channel-margin walking is a visual hypothesis",
+      colorEvidence: "storm slate, brown, cream, and all pattern placement are hypothetical",
+      metadataRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json",
+      representativeEligible: false,
+    },
+  ],
+  "asteroceras-obtusum": [
+    {
+      kind: "count-level pass",
+      title: "암모나이트 둥근 나선 패각·굵은 방사 늑골 대표",
+      body: "아스테로세라스의 패각 식별 단서를 가장 크게 보여 주는 단독 대표입니다. 원본 크기에서 하나의 평면 나선 중심, 둥근 바깥 둘레, 중심에서 가장자리로 이어지는 굵은 방사형 늑골, 한 개의 패각 입구를 확인했습니다. 입구 밖 머리·팔·눈과 패각 색은 직접 화석 근거가 약한 비교복원이므로 대표 승인은 패각에만 적용합니다.",
+      source: "assets/dinosaurs/asteroceras-obtusum-rounded-planispiral-ribs-representative-imagegen-v1.png",
+      variant: "둥근 평면 나선 굵은 방사 늑골 대표 이미지 생성 v1",
+      src: "assets/dinosaurs/asteroceras-obtusum-rounded-planispiral-ribs-representative-imagegen-v1.png",
+      gallerySlot: 1,
+      galleryRole: "representative",
+      phenotype: "ochre-cream-shell-a",
+      habitatKey: "early-jurassic-shallow-sea",
+      sourceAttribution: "OpenAI built-in image generation; BGS and museum specimen sources supplied shell constraints only",
+      licenseRecord: "Generated project asset; no external artwork or copyrighted reconstruction used as generation input",
+      generationPromptRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json#records/asteroceras-representative-v1",
+      generationSeed: "unavailable",
+      generationWorkflow: "OpenAI built-in image generation; prompt-to-image shell-led anatomy pass",
+      reviewStatus: "원본 크기 패각 count-level 검수 통과 · 패각 S1 대표 승인 · 연체부 비교복원 경계",
+      formation: "Lower Jurassic marine strata, Asteroceras obtusum Zone context",
+      locality: "shallow marine reconstruction; exact water depth, bottom, color, and animal posture are hypothetical",
+      anatomyEvidenceBoundary: "shell coiling and ribbing are fossil-led; head, arms, eyes, membranes, and full live posture are speculative",
+      colorEvidence: "all living shell and soft-body color is hypothetical and distinct from fossil mineral color",
+      metadataRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json",
+      representativeEligible: true,
+    },
+    {
+      kind: "review hold",
+      title: "암모나이트 슬레이트·구리빛 반대 방향 패각 무늬",
+      body: "대표와 반대쪽 입구 방향, 더 높은 사선 카메라와 어두운 해저에서 패각 무늬를 비교하는 S2입니다. 하나의 나선 중심과 굵은 늑골은 유지되지만 슬레이트·구리색 무늬와 연체부는 모두 가설이며, 대표를 단순 재색칠하지 않는 구도 비교 자료로만 사용합니다.",
+      source: "assets/dinosaurs/asteroceras-obtusum-slate-copper-irregular-pattern-imagegen-v1.png",
+      variant: "슬레이트 구리빛 불규칙 무늬 이미지 생성 v1",
+      src: "assets/dinosaurs/asteroceras-obtusum-slate-copper-irregular-pattern-imagegen-v1.png",
+      gallerySlot: 2,
+      galleryRole: "color-pattern",
+      phenotype: "slate-copper-shell-b",
+      habitatKey: "early-jurassic-dark-shelf",
+      sourceAttribution: "OpenAI built-in image generation; factual fossil sources supplied shell identity constraints only",
+      licenseRecord: "Generated project asset; no external artwork or copyrighted reconstruction used as generation input",
+      generationPromptRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json#records/asteroceras-pattern-v1",
+      generationSeed: "unavailable",
+      generationWorkflow: "OpenAI built-in image generation; prompt-to-image opposite-direction color and composition pass",
+      reviewStatus: "원본 크기 review-hold 수용 · 패각 중심 · 색/연체부 가설 · 대표 승격 금지",
+      formation: "Lower Jurassic marine strata",
+      anatomyEvidenceBoundary: "planispiral shell and ribs retained; soft body remains speculative",
+      colorEvidence: "slate, cream, copper, and all marking placement are hypothetical",
+      metadataRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json",
+      representativeEligible: false,
+    },
+    {
+      kind: "anatomy review",
+      title: "암모나이트 전기 쥐라기 바다나리 해저 상승 생태",
+      body: "바다나리가 드문드문 선 얕은 대륙붕 위로 올라오는 단독 암모나이트 생태 장면입니다. 대표보다 넓은 환경과 뒤쪽 사선 방향을 사용해 구도를 분리했고, 나선 패각과 늑골은 읽힙니다. 물고기·작은 절지동물은 환경 스케일 참고일 뿐 직접 상호작용 증거가 아니며, 연체부와 수영 자세는 anatomy review 가설입니다.",
+      source: "assets/dinosaurs/asteroceras-obtusum-crinoid-shelf-rise-ecology-imagegen-v1.png",
+      variant: "바다나리 대륙붕 상승 생태 이미지 생성 v1",
+      src: "assets/dinosaurs/asteroceras-obtusum-crinoid-shelf-rise-ecology-imagegen-v1.png",
+      gallerySlot: 3,
+      galleryRole: "habitat-ecology",
+      phenotype: "sand-rust-shell-c",
+      habitatKey: "early-jurassic-crinoid-shelf",
+      sourceAttribution: "OpenAI built-in image generation; geological sources supplied period-level marine context only",
+      licenseRecord: "Generated project asset; no external artwork or copyrighted reconstruction used as generation input",
+      generationPromptRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json#records/asteroceras-ecology-v1",
+      generationSeed: "unavailable",
+      generationWorkflow: "OpenAI built-in image generation; prompt-to-image habitat and locomotion hypothesis pass",
+      reviewStatus: "원본 크기 anatomy-review 수용 · 환경/수영/연체부 가설 · 대표 승격 금지",
+      formation: "Lower Jurassic shallow marine shelf",
+      locality: "generic period-level shelf reconstruction; exact association and simultaneous presence are not asserted",
+      cooccurrenceConfidence: "background organisms are unnamed period-level context, not a documented assemblage claim",
+      behaviorEvidence: "rising swim posture is a visual hypothesis",
+      colorEvidence: "sand, rust, cream, and all pattern placement are hypothetical",
+      metadataRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json",
+      representativeEligible: false,
+    },
+  ],
+  "passaloteuthis-bisulcata": [
+    {
+      kind: "count-level pass",
+      title: "벨렘나이트 열 개 갈고리 팔·유선형 전신 대표",
+      body: "파살로테우티스의 드문 연질부 표본 비율을 바탕으로 한 단독 측면 대표입니다. 원본 크기에서 유선형 외투막 한 개, 머리의 눈, 서로 비슷한 길이의 열 개 팔과 작은 갈고리, 뾰족하게 끝나는 한 몸을 확인했습니다. 내부 로스트룸은 외부 뿔처럼 노출하지 않았고, 지느러미 모양은 화석 근거가 부족해 확정하지 않습니다.",
+      source: "assets/dinosaurs/passaloteuthis-bisulcata-ten-hook-arm-profile-representative-imagegen-v1.png",
+      variant: "열 개 갈고리 팔 측면 대표 이미지 생성 v1",
+      src: "assets/dinosaurs/passaloteuthis-bisulcata-ten-hook-arm-profile-representative-imagegen-v1.png",
+      gallerySlot: 1,
+      galleryRole: "representative",
+      phenotype: "umber-cream-a",
+      habitatKey: "early-jurassic-open-shelf",
+      sourceAttribution: "OpenAI built-in image generation; BGS and Klug et al. 2024 supplied factual anatomy constraints only",
+      licenseRecord: "Generated project asset; no external artwork or copyrighted reconstruction used as generation input",
+      generationPromptRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json#records/passaloteuthis-representative-v1",
+      generationSeed: "unavailable",
+      generationWorkflow: "OpenAI built-in image generation; prompt-to-image soft-tissue specimen-led anatomy pass",
+      reviewStatus: "원본 크기 count-level 검수 통과 · S1 대표 승인 · 지느러미/색 가설 경계",
+      formation: "Lower Toarcian marine strata",
+      locality: "open-shelf reconstruction; exact water column, bottom, lighting, and posture are hypothetical",
+      anatomyEvidenceBoundary: "whole-body proportions and arms draw on rare soft-tissue specimens; fin form, exact eye shape, and surface details remain uncertain",
+      colorEvidence: "all color and pattern are hypothetical",
+      metadataRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json",
+      representativeEligible: true,
+    },
+    {
+      kind: "review hold",
+      title: "벨렘나이트 오버진·진주빛 정면 열 팔 무늬",
+      body: "대표의 측면과 달리 머리 앞쪽에서 열 개 팔이 방사형으로 분리되는 높은 사선 구도입니다. 긴 포획 촉수 두 개를 따로 만들지 않고 갈고리 팔과 한 외투막을 유지했지만, 팔 겹침과 원근 때문에 정확한 갈고리 수를 판정하는 대표로는 쓰지 않습니다. 오버진·진주빛 무늬도 전부 가설인 S2 review hold입니다.",
+      source: "assets/dinosaurs/passaloteuthis-bisulcata-aubergine-pearl-ten-arm-pattern-imagegen-v1.png",
+      variant: "오버진 진주빛 정면 열 팔 무늬 이미지 생성 v1",
+      src: "assets/dinosaurs/passaloteuthis-bisulcata-aubergine-pearl-ten-arm-pattern-imagegen-v1.png",
+      gallerySlot: 2,
+      galleryRole: "color-pattern",
+      phenotype: "aubergine-pearl-b",
+      habitatKey: "early-jurassic-dark-shelf",
+      sourceAttribution: "OpenAI built-in image generation; factual sources supplied anatomy constraints only",
+      licenseRecord: "Generated project asset; no external artwork or copyrighted reconstruction used as generation input",
+      generationPromptRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json#records/passaloteuthis-pattern-v1",
+      generationSeed: "unavailable",
+      generationWorkflow: "OpenAI built-in image generation; prompt-to-image front-oblique composition and palette pass",
+      reviewStatus: "원본 크기 review-hold 수용 · 열 팔 판독 · 색/갈고리 배열 가설 · 대표 승격 금지",
+      formation: "Lower Jurassic marine strata",
+      anatomyEvidenceBoundary: "ten-arm plan retained; overlap limits exact hook-by-hook assessment",
+      colorEvidence: "aubergine, pearl, rust, and all pattern placement are hypothetical",
+      metadataRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json",
+      representativeEligible: false,
+    },
+    {
+      kind: "anatomy review",
+      title: "벨렘나이트 셰일 대륙붕 갑각류 접근 생태",
+      body: "어두운 셰일 해저 위 작은 갑각류에 접근하는 단독 벨렘나이트 장면입니다. 대표·무늬 장면과 수영 방향·거리·카메라를 달리했고 열 개 팔과 한 몸이 읽힙니다. 갈고리로 작은 먹이를 붙잡았을 가능성은 있지만 이 정확한 종·장소·순간의 직접 기록은 아니며, 접촉 전 생태 가설로만 둡니다.",
+      source: "assets/dinosaurs/passaloteuthis-bisulcata-shale-shelf-crustacean-ecology-imagegen-v1.png",
+      variant: "셰일 대륙붕 갑각류 접근 생태 이미지 생성 v1",
+      src: "assets/dinosaurs/passaloteuthis-bisulcata-shale-shelf-crustacean-ecology-imagegen-v1.png",
+      gallerySlot: 3,
+      galleryRole: "habitat-ecology",
+      phenotype: "charcoal-ochre-c",
+      habitatKey: "early-jurassic-shale-shelf",
+      sourceAttribution: "OpenAI built-in image generation; BGS prey and period context supplied factual constraints only",
+      licenseRecord: "Generated project asset; no external artwork or copyrighted reconstruction used as generation input",
+      generationPromptRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json#records/passaloteuthis-ecology-v1",
+      generationSeed: "unavailable",
+      generationWorkflow: "OpenAI built-in image generation; prompt-to-image habitat and foraging hypothesis pass",
+      reviewStatus: "원본 크기 anatomy-review 수용 · 먹이 접근 가설 · 대표 승격 금지",
+      formation: "Lower Jurassic marine shelf",
+      locality: "generic shale-shelf reconstruction; exact association and encounter are not asserted",
+      cooccurrenceConfidence: "small crustacean is generic prey context, not a named co-occurrence claim",
+      behaviorEvidence: "prey approach is plausible but not direct behavioral evidence",
+      colorEvidence: "charcoal, ochre, cream, and all pattern placement are hypothetical",
+      metadataRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json",
+      representativeEligible: false,
+    },
+  ],
+  "archaeopteryx-lithographica": [
+    {
+      kind: "count-level pass",
+      title: "시조새 긴 뼈 꼬리·세 발톱 손 전신 대표",
+      body: "졸른호펜 석회암 지면의 단독 전신 대표입니다. 원본 크기에서 이빨 있는 한 머리, 넓은 깃털 앞날개 두 개, 발톱 손가락, 뒷다리와 발 두 개, 골반에서 한 끝으로 이어지는 긴 깃털 뼈 꼬리, 배 아래의 빈 공간을 확인했습니다. 깃털 색과 자세는 가설이지만 현대 새의 무치 부리·짧은 꼬리로 흐르지 않아 S1 대표로 사용합니다.",
+      source: "assets/dinosaurs/archaeopteryx-lithographica-solnhofen-longtail-threeclaw-representative-imagegen-v1.png",
+      variant: "졸른호펜 긴 뼈 꼬리 세 발톱 손 대표 이미지 생성 v1",
+      src: "assets/dinosaurs/archaeopteryx-lithographica-solnhofen-longtail-threeclaw-representative-imagegen-v1.png",
+      gallerySlot: 1,
+      galleryRole: "representative",
+      phenotype: "charcoal-chestnut-a",
+      habitatKey: "solnhofen-limestone-lagoon",
+      sourceAttribution: "OpenAI built-in image generation; Natural History Museum sources supplied factual constraints only",
+      licenseRecord: "Generated project asset; no external artwork or franchise frame used as generation input",
+      generationPromptRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json#records/archaeopteryx-representative-v1",
+      generationSeed: "unavailable",
+      generationWorkflow: "OpenAI built-in image generation; prompt-to-image anatomy-led pass",
+      reviewStatus: "원본 크기 count-level 검수 통과 · S1 대표 승인 · 비행 행동 단정 없음",
+      formation: "Solnhofen Limestone",
+      locality: "lagoon-island limestone setting; exact perch, vegetation, weather, and moment are hypothetical",
+      anatomyEvidenceBoundary: "feather impressions, toothed jaws, clawed hands, and long bony tail are direct cues; full soft-tissue volume and pose are reconstruction",
+      colorEvidence: "one isolated wing feather has a black-color signal; whole-body charcoal, chestnut, cream, and placement are hypothetical",
+      metadataRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json",
+      representativeEligible: true,
+    },
+    {
+      kind: "review hold",
+      title: "시조새 슬레이트·엄버 반대 방향 보행 무늬",
+      body: "대표와 반대 방향을 향해 석회암 지면을 걷는 높은 사선 시점의 색·무늬 비교 후보입니다. 한 머리, 두 날개, 두 뒷다리와 두 발, 한 긴 뼈 꼬리는 유지되지만 펼친 날개와 손가락 겹침은 대표보다 판독이 어렵고 모든 색은 가설이므로 S2 review hold로만 둡니다. 첫 색 후보는 대표와 같은 방향이라 구도 반복으로 탈락시켰습니다.",
+      source: "assets/dinosaurs/archaeopteryx-lithographica-slate-umber-opposite-pattern-imagegen-v1.png",
+      variant: "슬레이트 엄버 반대 방향 보행 무늬 이미지 생성 v1",
+      src: "assets/dinosaurs/archaeopteryx-lithographica-slate-umber-opposite-pattern-imagegen-v1.png",
+      gallerySlot: 2,
+      galleryRole: "color-pattern",
+      phenotype: "slate-umber-b",
+      habitatKey: "solnhofen-wooded-limestone",
+      sourceAttribution: "OpenAI built-in image generation; scientific sources supplied identity constraints only",
+      licenseRecord: "Generated project asset; no external artwork or franchise frame used as generation input",
+      generationPromptRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json#records/archaeopteryx-pattern-v1",
+      generationSeed: "unavailable",
+      generationWorkflow: "OpenAI built-in image generation; prompt-to-image opposite-direction composition pass",
+      reviewStatus: "원본 크기 review-hold 수용 · 대표와 방향/시점 분리 · 손가락 겹침 재검토 · 대표 승격 금지",
+      formation: "Solnhofen Limestone",
+      anatomyEvidenceBoundary: "identity cues retained; wing-hand overlap and complete soft tissues remain reconstruction",
+      colorEvidence: "slate, umber, cream, copper flecks, and all pattern placement are hypothetical",
+      metadataRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json",
+      representativeEligible: false,
+    },
+    {
+      kind: "anatomy review",
+      title: "시조새 졸른호펜 석호 짧은 활공 생태",
+      body: "석회암 섬 사이의 짧은 간격을 건너는 단독 생태 장면입니다. 머리부터 긴 꼬리 끝, 두 날개, 두 뒷다리와 두 발이 프레임 안에 있고 대표·무늬 장면과 방향·카메라·배경이 다릅니다. 다만 펼친 날개의 먼쪽 손가락은 원근 때문에 일부만 읽히며, 이 장면은 동력 비행을 입증하지 않으므로 S3 anatomy review로만 둡니다.",
+      source: "assets/dinosaurs/archaeopteryx-lithographica-solnhofen-lagoon-glide-ecology-imagegen-v1.png",
+      variant: "졸른호펜 석호 짧은 활공 생태 이미지 생성 v1",
+      src: "assets/dinosaurs/archaeopteryx-lithographica-solnhofen-lagoon-glide-ecology-imagegen-v1.png",
+      gallerySlot: 3,
+      galleryRole: "habitat-ecology",
+      phenotype: "tawny-rust-c",
+      habitatKey: "solnhofen-lagoon-islets",
+      sourceAttribution: "OpenAI built-in image generation; Natural History Museum sources supplied formation-level and anatomy constraints only",
+      licenseRecord: "Generated project asset; no external artwork or franchise frame used as generation input",
+      generationPromptRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json#records/archaeopteryx-ecology-v1",
+      generationSeed: "unavailable",
+      generationWorkflow: "OpenAI built-in image generation; prompt-to-image habitat and locomotion hypothesis pass",
+      reviewStatus: "원본 크기 anatomy-review 수용 · 비행 방식 불확실 · 생태 문맥 전용 · 대표 승격 금지",
+      formation: "Solnhofen Limestone",
+      locality: "lagoon and small-island reconstruction; exact branch, gap, wind, and crossing moment are hypothetical",
+      behaviorEvidence: "short glide/flap transition is a visual hypothesis, not proof of powered-flight performance",
+      anatomyEvidenceBoundary: "full body count passes; distal wing-finger readability is reduced by perspective",
+      colorEvidence: "tawny, cream, charcoal, muted rust, and all pattern placement are hypothetical",
+      metadataRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json",
+      representativeEligible: false,
+    },
+  ],
   "herrerasaurus-ischigualastensis": [
     {
       kind: "diagnostic only",
@@ -23736,12 +24383,15 @@ function getGalleryItems(dino) {
 function matchesClassification(dino, classification = state.classification) {
   if (classification === "all") return true;
   if (classification === "theropoda") return dino.clade === "Theropoda";
+  if (classification === "avialae") return dino.clade === "Avialae";
   if (classification === "sauropodomorpha") return dino.clade === "Sauropodomorpha";
   if (classification === "ornithischia") {
     return ornithischianClassificationClades.has(dino.clade);
   }
   if (classification === "pterosauria") return dino.rootClade === "Pterosauria";
   if (classification === "marine-reptilia") return dino.rootClade === "Marine Reptilia";
+  if (classification === "synapsida") return dino.rootClade === "Synapsida";
+  if (classification === "cephalopoda") return dino.rootClade === "Mollusca";
   if (classification === "early-dinosaur") return dino.clade === "Saurischia";
   return false;
 }
@@ -23751,16 +24401,11 @@ function matchesNonClassificationFilters(dino) {
   const dietMatches = state.diet === "all" || dino.diet.includes(state.diet);
   const levelMatches =
     state.knowledgeLevel === "all" || dino.knowledgeLevel === Number(state.knowledgeLevel);
-  const text = [
+  const identityText = [
     dino.name,
     dino.koreanName,
     ...(dino.aliases || []),
-    dino.rootClade,
-    dino.clade,
     dino.family,
-    cladeMeta[dino.clade],
-    ...(taxonomySearchAliases[dino.rootClade] || []),
-    ...(taxonomySearchAliases[dino.clade] || []),
     dino.period,
     dino.region,
     getKnowledgeLevel(dino.knowledgeLevel).short,
@@ -23768,7 +24413,19 @@ function matchesNonClassificationFilters(dino) {
   ]
     .join(" ")
     .toLowerCase();
-  return dietMatches && levelMatches && (!query || text.includes(query));
+  const rootClade = dino.rootClade || "Dinosauria";
+  const taxonomyTerms = [
+    rootClade,
+    dino.clade,
+    cladeMeta[dino.clade],
+    ...(taxonomySearchAliases[rootClade] || []),
+    ...(taxonomySearchAliases[dino.clade] || []),
+  ]
+    .filter(Boolean)
+    .map((term) => String(term).toLowerCase());
+  const queryMatches =
+    !query || identityText.includes(query) || taxonomyTerms.some((term) => term.startsWith(query));
+  return dietMatches && levelMatches && queryMatches;
 }
 
 function getFilteredDinosaurs() {
@@ -23986,9 +24643,21 @@ const taxonPaletteAccents = {
   "carnotaurus-sastrei": { accent: "#cf623f", bg: "rgba(53, 37, 34, 0.9)", border: "rgba(207, 98, 63, 0.5)" },
   "carcharodontosaurus-saharicus": { accent: "#6ca1b5", bg: "rgba(30, 43, 50, 0.9)", border: "rgba(108, 161, 181, 0.5)" },
   "giganotosaurus-carolinii": { accent: "#b5654c", bg: "rgba(36, 43, 47, 0.9)", border: "rgba(181, 101, 76, 0.5)" },
+  "archaeopteryx-lithographica": { accent: "#c78955", bg: "rgba(42, 39, 38, 0.9)", border: "rgba(199, 137, 85, 0.5)" },
+  "asteroceras-obtusum": { accent: "#d0a454", bg: "rgba(46, 42, 35, 0.9)", border: "rgba(208, 164, 84, 0.5)" },
+  "passaloteuthis-bisulcata": { accent: "#62a8b8", bg: "rgba(25, 42, 48, 0.9)", border: "rgba(98, 168, 184, 0.5)" },
+  "lystrosaurus-murrayi": { accent: "#b97858", bg: "rgba(46, 40, 35, 0.9)", border: "rgba(185, 120, 88, 0.5)" },
+  "cynognathus-crateronotus": { accent: "#a8765d", bg: "rgba(43, 38, 36, 0.9)", border: "rgba(168, 118, 93, 0.5)" },
+  "repenomamus-robustus": { accent: "#789399", bg: "rgba(34, 41, 43, 0.9)", border: "rgba(120, 147, 153, 0.5)" },
 };
 
 const taxonPaletteSwatches = {
+  "archaeopteryx-lithographica": ["#2f3436", "#8a6249", "#c78955", "#e6d8bf"],
+  "asteroceras-obtusum": ["#a8753f", "#d0a454", "#e0c486", "#756b62"],
+  "passaloteuthis-bisulcata": ["#24434d", "#62a8b8", "#8e6b55", "#d9c9a7"],
+  "lystrosaurus-murrayi": ["#4b4038", "#9b654b", "#bda478", "#d9cdb3"],
+  "cynognathus-crateronotus": ["#343b3b", "#775649", "#a8765d", "#cbb895"],
+  "repenomamus-robustus": ["#333a3d", "#5d6b6d", "#9a765d", "#c7bca6"],
   "tyrannosaurus-rex": ["#2f3433", "#8e533c", "#74805f", "#d1c4a5"],
   "yutyrannus-huali": ["#e6e7e1", "#a7b5ba", "#41494d", "#8a6754"],
   "carnotaurus-sastrei": ["#2f3031", "#b65339", "#d59254", "#e3d1aa"],
@@ -24276,7 +24945,7 @@ function renderTimelineBrowse() {
   if (visibleDinosaurs.length === 0) {
     container.innerHTML = `
       <div class="timeline-empty">
-        <strong>조건에 맞는 공룡이 없습니다</strong>
+        <strong>조건에 맞는 중생대 생물이 없습니다</strong>
         <span>검색어나 필터를 바꿔 보세요.</span>
       </div>
     `;
@@ -24430,6 +25099,19 @@ function getKnownPhyloChildCount(parentId, nodes, edges) {
 }
 
 function inferPhyloParent(dino) {
+  if (dino.rootClade === "Pterosauria") return "pterosauria";
+  if (dino.rootClade === "Marine Reptilia") return "marine-reptilia";
+  if (dino.rootClade === "Synapsida") {
+    if (dino.clade === "Dicynodontia") return "dicynodontia";
+    if (dino.clade === "Mammalia") return "mammalia";
+    return "cynodontia";
+  }
+  if (dino.rootClade === "Mollusca") {
+    if (dino.clade === "Ammonoidea") return "ammonoidea";
+    if (dino.clade === "Belemnitida") return "belemnitida";
+    return "cephalopoda";
+  }
+  if (dino.clade === "Avialae") return "avialae";
   if (dino.clade === "Theropoda") {
     if (dino.era === "cretaceous") return "cretaceous-theropoda";
     if (dino.era === "jurassic") return "jurassic-theropoda";
@@ -24438,6 +25120,7 @@ function inferPhyloParent(dino) {
   if (dino.clade === "Sauropodomorpha") {
     return dino.era === "jurassic" ? "jurassic-sauropoda" : "sauropodomorpha";
   }
+  if (dino.clade === "Saurischia") return "saurischia";
   if (dino.family === "Hadrosauridae" || dino.clade === "Ornithopoda") return "ornithopoda";
   if (dino.family === "Ceratopsidae" || dino.clade === "Ceratopsia") return "ceratopsia";
   if (dino.family === "Pachycephalosauridae" || dino.clade === "Pachycephalosauria") {
@@ -24558,12 +25241,18 @@ const phyloEraPackLayouts = {
 
 const phyloEraCladeOrder = [
   "Theropoda",
+  "Avialae",
   "Sauropodomorpha",
   "Ornithopoda",
   "Ceratopsia",
   "Ankylosauria",
   "Pachycephalosauria",
   "Thyreophora",
+  "Dicynodontia",
+  "Cynodontia",
+  "Mammalia",
+  "Ammonoidea",
+  "Belemnitida",
 ];
 
 function getPhyloEraBand(eraId, eraBands = eras) {
@@ -25248,7 +25937,9 @@ function applyMapUiState() {
   );
   document.body.classList.toggle("map-expanded-open", state.map.expanded);
 
-  const selectedName = getSelectedDino()?.koreanName || "선택 공룡";
+  const selectedName = getFilteredDinosaurs().length
+    ? getSelectedDino()?.koreanName || "선택 생물"
+    : "선택 생물";
   const sidebarAction = state.map.sidebarExpanded ? "탐색 패널 접기" : "탐색 패널 열기";
   const inspectorAction = state.map.inspectorCollapsed ? "정보 열기" : "정보 접기";
   sidebarButton.setAttribute("aria-expanded", String(state.map.sidebarExpanded));
@@ -25301,7 +25992,7 @@ function renderMapScopeControls() {
     if (count) count.textContent = counts[scope] ?? 0;
   });
 
-  const selected = getSelectedDino();
+  const selected = filtered.length ? getSelectedDino() : null;
   const inspectorButton = $("#toggleMapInspector");
   if (selected && inspectorButton) {
     const action = state.map.inspectorCollapsed ? "정보 열기" : "정보 접기";
@@ -25570,11 +26261,14 @@ function zoomMap(nextScale, originX, originY) {
 }
 
 function renderPhyloMap() {
-  const selected = getSelectedDino();
-  state.selectedId = selected.id;
+  const filtered = getFilteredDinosaurs();
+  const selected = filtered.length ? getSelectedDino() : null;
+  if (selected) state.selectedId = selected.id;
+  else state.selectedId = "";
   if (
+    selected &&
     state.map.scope !== "all" &&
-    !getFilteredDinosaurs().some((dino) => dino.era === state.map.scope)
+    !filtered.some((dino) => dino.era === state.map.scope)
   ) {
     state.map.scope = selected.era;
   }
@@ -25589,6 +26283,15 @@ function renderPhyloMap() {
 }
 
 function renderDetail() {
+  if (!getFilteredDinosaurs().length) {
+    $("#detailPanel").innerHTML = `
+      <div class="timeline-empty detail-empty">
+        <strong>조건에 맞는 중생대 생물이 없습니다</strong>
+        <span>검색어나 분류·시대 필터를 바꿔 보세요.</span>
+      </div>
+    `;
+    return;
+  }
   const dino = getSelectedDino();
   state.selectedId = dino.id;
   const level = getKnowledgeLevel(dino.knowledgeLevel);
@@ -25628,7 +26331,7 @@ function renderDetail() {
 
   $("#detailPanel").innerHTML = `
     <div class="inspector-header">
-      <button class="dummy-image ${primaryImage ? "has-real-image can-zoom" : ""}" data-lightbox-context="primary" type="button" aria-label="Dinosaur image preview"${imageStyle(primaryImage)} ${primaryImage ? "" : "disabled"}>
+      <button class="dummy-image ${primaryImage ? "has-real-image can-zoom" : ""}" data-lightbox-context="primary" type="button" aria-label="중생대 생물 이미지 미리보기"${imageStyle(primaryImage)} ${primaryImage ? "" : "disabled"}>
         <span class="image-label">${galleryItems.length} views</span>
       </button>
       <div class="inspector-title">
@@ -25767,6 +26470,15 @@ function renderCatalog() {
   const grid = $("#catalogGrid");
   const items = sortDinosaurs(getFilteredDinosaurs());
   const focusSpeciesIds = getPhyloFocusSpeciesIds(state.phyloFocusId);
+  if (!items.length) {
+    grid.innerHTML = `
+      <div class="ecosystem-empty catalog-empty">
+        <strong>조건에 맞는 중생대 생물이 없습니다.</strong>
+        <span>검색어나 분류·친숙도 필터를 바꿔 보세요.</span>
+      </div>
+    `;
+    return;
+  }
   grid.innerHTML = items
     .map(
       (dino) => {
@@ -25865,6 +26577,49 @@ const reviewSortLabels = {
 };
 
 const identityChecklists = {
+  "archaeopteryx-lithographica": [
+    "후기 쥐라기 졸른호펜의 약 0.5m급 작은 새 모양 수각류 공룡이며 현대 새처럼 짧은 꼬리·무치 부리로 바꾸지 않음",
+    "좁은 한 머리와 작은 원뿔형 이빨, 넓은 깃털 앞날개 정확히 두 개, 뒷다리 정확히 두 개를 유지",
+    "읽히는 각 앞날개 손에 세 개의 발톱 손가락; 깃털과 손가락을 별도의 추가 팔처럼 중복하지 않음",
+    "여러 꼬리뼈가 길게 이어진 한 개의 뼈 꼬리와 꼬리 양옆 깃털; 현대 새 꼬리부채·두 갈래 꼬리·잘린 꼬리 없음",
+    "머리·두 날개·두 다리·두 발·꼬리 끝이 프레임 안에 있고 겹침 때문에 세 번째 다리나 추가 날개가 생기지 않음",
+    "깃털 색·무늬, 나무 생활, 지상 생활, 동력 비행과 활공의 정도는 가설이며 어느 한 행동을 확정 사실처럼 설명하지 않음",
+  ],
+  "asteroceras-obtusum": [
+    "한 평면으로 감긴 하나의 둥근 나선 패각과 열린 입구 하나를 유지하고 원뿔형·직선형·여러 겹 껍데기로 바꾸지 않음",
+    "중심 가까이에서 바깥 가장자리로 이어지는 굵고 연속적인 방사형 늑골과 둥근 바깥 둘레가 핵심",
+    "패각의 감김과 원근이 끊기거나 중심이 두 개로 갈라지지 않고, 깨진 화석 단면을 살아 있는 동물의 열린 창처럼 만들지 않음",
+    "머리·팔·눈과 막 형태는 거의 보존되지 않는 연체부 비교복원이며 현생 앵무조개의 후드·수많은 촉수를 그대로 복사하지 않음",
+    "패각 색과 무늬, 정확한 팔 수와 길이, 수영 자세, 먹이 행동은 가설로 표시하고 패각 형태보다 과장하지 않음",
+  ],
+  "passaloteuthis-bisulcata": [
+    "유선형 외투막 한 개와 뾰족한 뒤쪽, 머리의 눈 두 개, 입 둘레 팔 열 개를 지닌 벨렘나이트 실루엣; 지느러미 모양은 불확실",
+    "열 개 팔은 서로 비슷한 길이이며 작은 갈고리가 붙고, 현대 오징어처럼 특별히 긴 포획 촉수 두 개를 추가하지 않음",
+    "총알 모양 로스트룸과 방이 있는 원뿔형 골격은 몸 안쪽에 놓이며 외부 뿔·꼬리 가시·등껍데기로 노출하지 않음",
+    "팔이 서로 융합되거나 열 개를 넘겨 해파리·문어처럼 보이지 않고, 외투막과 머리·지느러미가 한 몸으로 자연스럽게 연결됨",
+    "연체부 윤곽·색·무늬·지느러미 크기는 드문 연질부 표본과 근연 두족류를 바탕으로 한 복원 가설",
+  ],
+  "lystrosaurus-murrayi": [
+    "공룡이 아닌 전기 트라이아스기 디키노돈트 단궁류로, 짧고 넓은 한 머리와 각질 부리를 유지",
+    "위턱에서 아래로 향하는 굵은 엄니는 정확히 한 쌍이며 코뿔·송곳니 여러 쌍·멧돼지 아래턱 엄니로 바꾸지 않음",
+    "낮고 통통한 몸, 짧고 튼튼한 앞다리 두 개와 뒷다리 두 개, 분리된 네 발, 짧은 한 꼬리를 유지",
+    "입술 밖에 줄지어 보이는 포식자 이빨, 거북 등딱지, 도마뱀형 긴 꼬리, 여분·융합 사지 없음",
+    "피부와 털의 범위는 불확실하므로 현대 돼지·웜뱃 같은 두꺼운 털·귀·코를 고정 특징으로 만들지 않음",
+  ],
+  "cynognathus-crateronotus": [
+    "공룡이 아닌 육식성 키노돈트 단궁류로, 길고 낮은 한 두개골과 뒤쪽으로 넓어지는 턱 근육 영역을 유지",
+    "앞쪽 절치, 큰 송곳니, 자르는 뒤쪽 치아가 서로 다른 모양으로 읽히며 동일한 악어 이빨 줄로 만들지 않음",
+    "튼튼한 앞다리 두 개와 뒷다리 두 개, 분리된 네 발, 몸에서 이어지는 한 긴 꼬리의 사족보행 체형",
+    "현대 개의 늘어진 귀·검은 코·입술 표정·발바닥과 늑대식 두꺼운 털을 그대로 복사하지 않음",
+    "털·수염·귀 윤곽·자세·사냥 행동은 연조직 복원 가설이며 포유류와 동일한 모습으로 단정하지 않음",
+  ],
+  "repenomamus-robustus": [
+    "전기 백악기의 약 0.5m급 초기 포유류로 낮고 길며 튼튼한 한 몸, 짧은 네 다리, 한 긴 꼬리를 유지",
+    "작고 긴 주둥이와 서로 다른 모양의 날카로운 치아를 보존하고 현대 오소리·수달·쥐의 얼굴을 그대로 복제하지 않음",
+    "두 앞다리·두 뒷다리·분리된 네 발·골반에서 이어지는 한 꼬리이며 세 번째 다리·추가 발·갈라진 꼬리 없음",
+    "털·귀·코·색·무늬는 비교복원이며 현대 포유류의 큰 외이·과장된 수염·두꺼운 계절 털을 고정 특징으로 만들지 않음",
+    "어린 프시타코사우루스 뼈는 섭식의 직접 증거지만 직접 사냥·살해·무리 공격의 증거가 아니므로 장면과 설명에서 구분",
+  ],
   "borealopelta-markmitchelli": [
     "전기 백악기 알버타의 노도사우루스류 장갑공룡; 표피 비늘, 골편과 각질집 윤곽이 입체적으로 보존된 표본을 기준으로 함",
     "낮고 넓은 사족 몸, 머리부터 몸통까지 촘촘히 이어지는 골성 갑옷과 목의 가시띠",
@@ -27096,6 +27851,48 @@ const visualVariationLabels = {
 };
 
 const visualVariationProfiles = {
+  "archaeopteryx-lithographica": {
+    color: "대표형의 숯빛·밤갈색·크림색과 변이형의 슬레이트·엄버·구리색, 생태형의 황갈색·녹슨빛 조합을 서로 분리합니다. 한 날개깃의 검은 멜라노솜 단서 외에 전신 색은 가설입니다.",
+    pattern: "비대칭이고 불규칙한 날개·몸통 얼룩과 성긴 점을 사용하며, 같은 꼬리 줄무늬·같은 측면 자세의 단순 재색칠을 반복하지 않습니다.",
+    texture: "몸통의 짧은 깃털, 넓은 앞날개 깃털, 길게 이어지는 꼬리 양옆 깃털을 구분하고 현대 맹금류형 매끈한 부리·꼬리부채를 피합니다.",
+    anatomy: "약 0.5m 작은 새 모양 수각류, 이빨 있는 좁은 머리, 세 발톱 손가락이 붙은 두 깃털 날개, 두 뒷다리, 한 개의 긴 뼈 꼬리입니다.",
+    avoid: "무치 현대 새 부리, 짧은 새 꼬리, 네 날개·추가 팔·세 번째 다리, 랩터식 거대 낫발톱, 판타지 볏, 프레임 밖으로 잘린 머리·발·꼬리, 동력 비행을 확정하는 설명, 동일 방향·동일 카메라 반복",
+  },
+  "asteroceras-obtusum": {
+    color: "패각은 황토·회갈색·크림·철분 적갈색의 낮은 대비 조합을 사용하되 화석의 광물색과 살아 있을 때 색을 구분합니다.",
+    pattern: "굵은 방사형 늑골을 우선하고, 색띠는 늑골을 따라 불규칙하게 끊어지게 배치합니다. 완벽한 나선 줄무늬와 동일 간격 점무늬를 피합니다.",
+    texture: "패각은 무광 석회질 표면과 자연스러운 성장선을 사용하고, 살아 있는 장면의 연체부는 낮은 대비로 후순위 처리합니다.",
+    anatomy: "한 평면으로 감긴 둥근 패각, 굵은 방사형 늑골, 하나의 입구가 식별의 중심이며 연체부는 불확실한 비교복원입니다.",
+    avoid: "현생 앵무조개 사진 복제, 원뿔형 고둥 껍데기, 여러 중심·갈라진 나선, 외부 촉수 수를 확정한 과장, 껍데기보다 큰 문어형 몸, 같은 측면 패각 재색칠 반복",
+  },
+  "passaloteuthis-bisulcata": {
+    color: "청회색·바다빛 청록·엄버·옅은 크림을 낮은 대비로 사용하고, 발광 네온색과 현대 오징어 종의 고정 무늬를 복사하지 않습니다.",
+    pattern: "외투막 얼룩과 작은 점은 비대칭·불규칙하게 바꾸며 모든 장면에 같은 점 배열과 줄무늬를 반복하지 않습니다.",
+    texture: "매끈한 외투막과 작은 지느러미, 팔의 미세 갈고리를 구분하고 단단한 로스트룸은 몸 안쪽 구조로만 설명합니다.",
+    anatomy: "유선형 외투막, 눈 두 개, 서로 비슷한 길이의 갈고리 팔 열 개, 내부 프라그모콘과 로스트룸입니다. 꼬리 지느러미의 존재와 모양은 아직 확정하지 않습니다.",
+    avoid: "현대 오징어의 긴 촉수 두 개, 팔 여덟 개만 있는 문어, 외부 총알 꼬리·외부 껍데기·외뿔, 융합 팔, 추가 눈·몸통, 규칙적 군집 패턴, 동일 수영 방향 반복",
+  },
+  "lystrosaurus-murrayi": {
+    color: "흙빛 회갈색·점토 적갈색·올리브 회색·옅은 배면을 장면별로 분리하며 색은 모두 가설입니다.",
+    pattern: "어깨·옆구리의 흐린 불규칙 얼룩과 드문 작은 반점을 사용하고 얼룩말식 띠·완벽한 점 배열·반복 꼬리 고리를 피합니다.",
+    texture: "무광의 거친 피부와 각질 부리·엄니를 구분하되 전신을 현대 웜뱃 같은 두꺼운 털로 덮지 않습니다.",
+    anatomy: "짧고 넓은 부리형 머리, 아래로 향한 한 쌍 엄니, 통통하고 낮은 몸, 짧고 튼튼한 네 다리와 짧은 꼬리입니다.",
+    avoid: "공룡형 비늘머리, 멧돼지 코·귀·아래턱 엄니, 코뿔, 거북 등딱지, 긴 도마뱀 꼬리, 현대 포유류 털 복제, 세 다리·여분 발·갈라진 꼬리, 동일 측면 자세 반복",
+  },
+  "cynognathus-crateronotus": {
+    color: "차콜 갈색·녹슨 엄버·모래색·탁한 회색을 사용하되 털색과 피부색 모두 직접 근거가 없는 가설로 둡니다.",
+    pattern: "옆구리의 불규칙 어두운 안장과 성긴 얼굴·어깨 표식을 장면마다 바꾸고 현대 개 품종의 대칭 얼굴 마스크를 피합니다.",
+    texture: "낮은 대비의 보수적 짧은 필라멘트 또는 노출 피부 가설을 사용하며 긴 포유류 털·갈기·수염을 식별 단서로 만들지 않습니다.",
+    anatomy: "길고 낮은 두개골, 큰 송곳니와 절단형 뒤쪽 치아, 튼튼한 사족보행 몸, 네 다리와 한 긴 꼬리입니다.",
+    avoid: "늘어진 개 귀·검은 개 코·늑대 표정, 악어형 동일 치아, 고양이 발, 공룡형 이족보행, 여분·융합 사지, 잘린·갈라진 꼬리, 직접 무리사냥 단정, 동일 구도 재색칠",
+  },
+  "repenomamus-robustus": {
+    color: "먹빛 회색·회갈색·옅은 황토·탁한 밤색의 낮은 대비 조합을 사용하고 현대 오소리의 검정·흰 얼굴띠를 복사하지 않습니다.",
+    pattern: "성긴 불규칙 등 얼룩과 옅은 배면 정도로 제한하며 완벽한 줄무늬·점무늬·현대 포유류 얼굴 마스크를 피합니다.",
+    texture: "짧고 낮은 대비의 털 가설과 작은 귀·발가락을 사용하고, 푹신한 계절 털·긴 수염·젖은 수달 털을 식별 특징으로 만들지 않습니다.",
+    anatomy: "약 0.5m급 낮고 긴 튼튼한 몸, 작은 긴 주둥이, 짧은 네 다리, 분리된 네 발, 한 긴 꼬리의 초기 포유류입니다.",
+    avoid: "현대 오소리·수달·쥐 사진 복제, 거대한 포식자 크기, 고양이형 발·눈, 추가 다리·발·꼬리, 어린 프시타코사우루스에 대한 살해·사냥 확정 장면, 동일 방향·동일 배경 반복",
+  },
   "giganotosaurus-carolinii": {
     color: "대표형은 깊은 차콜 회색 등, 차분한 엄버색 옆구리, 모래빛 배면과 제한된 녹슨빛 얼굴을 사용합니다. 동일 체형 변이는 청숯빛 등, 철적색 어깨·옆구리와 크림색 배면으로 분리하되 모든 색은 복원 가설입니다.",
     pattern: "대표형은 낮은 대비의 옆구리 얼룩과 제한된 얼굴 표식, 변이는 끊긴 철적색 어깨·옆구리 패치와 드문 크림색 어깨·꼬리 막대를 사용합니다. 같은 측면 자세의 단순 재색칠, 규칙적인 꼬리 고리와 전신 점박이는 피합니다.",
@@ -28086,6 +28883,48 @@ const generationRouteLabels = {
 };
 
 const generationRouteGuides = {
+  "lystrosaurus-murrayi": {
+    focus: "전기 트라이아스기 Lystrosaurus murrayi의 짧고 넓은 머리, 이빨 없는 각질 부리, 위턱에서 난 엄니 정확히 한 쌍, 낮고 통통한 몸과 짧고 튼튼한 네 다리를 함께 보존",
+    route: "S1은 한 머리·두 엄니·네 다리·한 꼬리를 확인한 대표, S2는 반대 방향 건기 수로 색·무늬 review hold, S3은 홍수 뒤 속새 평원 anatomy review로 분리합니다. 먼쪽 발이 가려진 후보와 피부·털·행동 가설은 대표 근거로 쓰지 않습니다.",
+    control: "assets/dinosaurs/lystrosaurus-murrayi-broad-skull-tusked-fullbody-representative-imagegen-v1.png",
+    pass: "한 머리 | 짧고 넓은 두개골 | 각질 부리 | 위턱 엄니 정확히 두 개, 아래턱 엄니 없음 | 짧은 목과 통통한 한 몸 | 두 앞다리·두 뒷다리와 네 발 | 골반에서 이어지는 짧은 꼬리 하나 | 전신 프레임 안 | 피부·털·발가락·행동 가설 명시 | 세 슬롯 방향·카메라·환경 분리",
+    reject: "세 번째 엄니·아래턱 엄니·일반 치열, 길고 좁은 개형 머리, 검은 개 코·외이·두꺼운 털, 돼지·하마·거북·공룡형 몸, 여분·융합 사지, 갈라진 꼬리, 규칙적으로 반복되는 도장형 발자국, 같은 방향·같은 구도 재색칠, S2/S3 대표 승격이면 탈락",
+  },
+  "cynognathus-crateronotus": {
+    focus: "중기 트라이아스기 Cynognathus crateronotus의 길고 낮은 두개골, 눈 뒤 넓은 광대 부위, 큰 송곳니와 더 작은 절단형 뒤쪽 치아, 튼튼한 네 다리와 한 긴 꼬리를 보존",
+    route: "S1은 머리·이형치·네 다리·긴 꼬리가 읽히는 대표, S2는 반대 방향 고지대 색·무늬 review hold, S3은 폭풍 뒤 수로 anatomy review로 분리합니다. 치아가 멀거나 겹친 후보는 대표 판정에 쓰지 않고 털·귀·코·행동은 비교복원 경계를 유지합니다.",
+    control: "assets/dinosaurs/cynognathus-crateronotus-longskull-sectorial-teeth-representative-imagegen-v1.png",
+    pass: "한 머리 | 길고 낮은 주둥이와 깊은 관자부 | 눈 뒤로 벌어지는 광대 부위 | 작은 앞니·큰 송곳니·더 작은 날형 뒤쪽 치아 | 두 앞다리·두 뒷다리와 네 발 | 길게 이어지는 꼬리 하나 | 개 귀·젖은 검은 코 없음 | 전신 프레임 안 | 연조직·털·색 가설 명시 | 세 슬롯 구도 분리",
+    reject: "악어·왕도마뱀형 머리와 균일한 원뿔 치열, 짧고 둥근 리스트로사우루스형 머리, 현대 개·늑대·하이에나·고양이 얼굴, 늘어진 외이·젖은 검은 코·두꺼운 털, 과장된 검치, 여분·융합 사지, 잘린 꼬리, 같은 측면 구도 반복, S2/S3 대표 승격이면 탈락",
+  },
+  "repenomamus-robustus": {
+    focus: "전기 백악기 Repenomamus robustus의 낮고 긴 튼튼한 몸, 낮고 넓은 머리, 짧고 굵은 네 다리와 네 발, 골반에서 이어지는 한 긴 털 꼬리를 보존하되 특정 현생 포유류를 복사하지 않음",
+    route: "S1은 낮은 측면의 네 다리 대표, S2는 높은 사선 세로형 색·무늬 review hold, S3은 쓰러진 뿌리 은신처 anatomy review로 분리합니다. 프시타코사우루스 뼈의 위 내용물은 섭식 증거일 뿐 직접 사냥·살해 증거가 아니므로 승인 생태본에는 먹잇감을 넣지 않습니다.",
+    control: "assets/dinosaurs/repenomamus-robustus-lowbody-fourlimb-representative-imagegen-v1.png",
+    pass: "한 머리·낮고 긴 한 몸 | 두 앞다리·두 뒷다리와 서로 분리된 네 발 | 골반에서 이어지는 긴 꼬리 하나 | 작은 귀와 짧고 무딘 주둥이 | 검고 번들거리는 현생형 코 패드 없음 | 전신 프레임 안 | 털·귀·코·색·행동 비교복원 경계 | 세 슬롯 방향·카메라·가로세로·환경 분리",
+    reject: "세 발만 보임, 숨은 먼쪽 다리, 여분·융합·분리된 발, 갈라진 꼬리, 수달·오소리·비버·카피바라·쥐·주머니쥐·개·고양이 복제, 거대한 귀·검은 코·나출 꼬리·물갈퀴발, 대형 프시타코사우루스 공격·살해 단정, 먹잇감 해부 오류, S2/S3 대표 승격이면 탈락",
+  },
+  "asteroceras-obtusum": {
+    focus: "전기 쥐라기 Asteroceras obtusum의 한 평면 둥근 나선 패각, 하나의 중심과 입구, 굵고 이어지는 방사형 늑골을 연체부보다 우선",
+    route: "S1은 패각 count-level 대표, S2는 반대 방향 슬레이트·구리색 review hold, S3은 바다나리 대륙붕 anatomy review로 분리합니다. 머리·팔·눈·막, 살아 있을 때 색과 수영 자세는 모두 비교복원 경계를 유지합니다.",
+    control: "assets/dinosaurs/asteroceras-obtusum-rounded-planispiral-ribs-representative-imagegen-v1.png",
+    pass: "한 동물·한 패각 | 평면 나선 중심 정확히 하나 | 열린 입구 하나 | 둥근 외곽 | 중심부터 바깥까지 이어지는 굵은 방사 늑골 | 패각 전체 프레임 안 | 연체부가 패각 식별을 가리지 않음 | 색·연체부·수영 행동 가설 명시 | 세 슬롯 방향·카메라·배경 분리",
+    reject: "현생 앵무조개 후드·수많은 촉수 복제, 고둥형 원뿔 껍데기, 이중 중심·갈라진 나선·추가 입구, 끊긴 늑골, 외부 오징어 몸통, 긴 포획 촉수 둘, 같은 측면 패각 단순 재색칠, 연체부·색을 직접 증거로 설명하거나 S2/S3을 대표로 승격하면 탈락",
+  },
+  "passaloteuthis-bisulcata": {
+    focus: "연질부 표본이 알려진 Passaloteuthis bisulcata의 약 35.5cm 전신 비율, 한 외투막, 열 개의 비슷한 길이 갈고리 팔, 몸 안쪽 프라그모콘·로스트룸을 보존",
+    route: "S1은 측면 열 팔 count-level 대표, S2는 정면 사선 열 팔·무늬 review hold, S3은 작은 갑각류 접근 anatomy review로 분리합니다. 각 후보에서 팔을 열 개로 다시 세고 긴 포획 촉수 두 개·외부 로스트룸·현대 오징어 꼬리 지느러미를 금지합니다.",
+    control: "assets/dinosaurs/passaloteuthis-bisulcata-ten-hook-arm-profile-representative-imagegen-v1.png",
+    pass: "한 머리·한 외투막·한 뒤쪽 끝 | 눈 두 개 중 시점상 보이는 눈 하나 | 서로 비슷한 길이 팔 정확히 열 개 | 각 팔 안쪽의 작은 갈고리열 | 긴 포획 촉수 없음 | 내부 프라그모콘·로스트룸이 피부 밖으로 돌출하지 않음 | 전신 프레임 안 | 지느러미·색·행동 불확실성 명시 | 세 슬롯 구도 분리",
+    reject: "팔 8·9개 또는 11개 이상, 숨은·융합·교차 팔, 긴 현대 오징어 촉수 둘·흡반 곤봉, 문어형 물갈퀴, 넓은 현대 오징어 꼬리 지느러미·갑오징어 치맛자락, 외부 껍데기·외부 총알 로스트룸, 같은 수영 방향 반복, 팔 수 검토 없이 대표 승격하면 탈락",
+  },
+  "archaeopteryx-lithographica": {
+    focus: "졸른호펜 Archaeopteryx lithographica의 작은 이빨 머리, 넓은 두 깃털 날개와 발톱 손가락, 두 뒷다리, 길게 이어지는 한 개의 깃털 뼈 꼬리를 함께 보존",
+    route: "S1은 원본 크기 count-level 대표, S2는 반대 방향 색·무늬 review hold, S3은 석호의 짧은 활공 anatomy review로 분리합니다. S2와 S3은 펼친 날개 손가락과 발의 겹침을 다시 확인하며, 비행 방식·색·나무 생활을 직접 사실로 승격하지 않습니다.",
+    control: "assets/dinosaurs/archaeopteryx-lithographica-solnhofen-longtail-threeclaw-representative-imagegen-v1.png",
+    pass: "한 머리 | 작은 원뿔형 이빨 | 넓은 깃털 앞날개 정확히 둘 | 읽히는 손마다 발톱 손가락 셋 | 뒷다리와 발 정확히 둘 | 긴 뼈 꼬리 정확히 하나 | 머리·날개·발·꼬리 끝 프레임 안 | 새-비조류 공룡 경계와 비행 불확실성 명시 | 세 슬롯의 방향·카메라·배경 분리",
+    reject: "무치 현대 새 부리, 짧은 새 꼬리·꼬리부채, 네 날개·추가 팔·세 번째 다리·여분 발, 거대한 낫발톱, 잘린 머리·발·꼬리, 같은 방향·같은 측면 구도 재색칠, 동력 비행·수목 생활·전신 색을 직접 근거처럼 단정하거나 S2/S3을 별도 검수 없이 대표로 승격하면 탈락",
+  },
   "giganotosaurus-carolinii": {
     focus: "칸델레로스층 Giganotosaurus carolinii의 길고 낮은 두개골, 낮은 누골 융기, 칼날형 치아, 짧은 비교복원 세 손가락 앞다리 둘, 강한 뒷다리 둘·발 둘·한 꼬리와 매끈한 등선을 함께 보존",
     route: "S1은 개체 수와 큰 체형이 통과한 대표 후보, S2는 색·방향 변이 review hold, S3은 하천 환경 anatomy review로 분리합니다. 다음 검토에서는 원본 크기로 머리, 두 앞다리와 손, 두 뒷다리와 발, 배 아래 빈 공간, 골반-꼬리 연결을 각각 확인합니다. 앞다리와 손은 근연종 비교복원이며 G. carolinii 직접 보존으로 승격하지 않습니다.",
@@ -30050,8 +30889,8 @@ function setView(view, { historyMode = "replace" } = {}) {
   }
 
   $("#viewTitle").textContent = {
-    atlas: "공룡 계통도 맵",
-    catalog: "대표 공룡 도감",
+    atlas: "중생대 생물 계통 지도",
+    catalog: "중생대 생물 도감",
     motion: "공룡 움직임",
     ecosystems: "시대별 생태 갤러리",
     review: "이미지 검수 화면",
@@ -30511,6 +31350,7 @@ function bindEvents() {
       const button = event.target.closest("[data-classification]");
       if (!button) return;
       state.classification = button.dataset.classification;
+      state.map.scope = "all";
       renderAll();
       refitAtlasAfterFilter();
       requestAnimationFrame(() => centerActiveClassificationTab(tabs));
