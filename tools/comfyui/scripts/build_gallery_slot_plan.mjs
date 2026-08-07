@@ -85,6 +85,34 @@ const HABITATS = {
     light: "clear neutral daylight with readable shade and no global orange cast",
     backgroundPalette: ["#9b8a6c", "#6d765c", "#b6a27b"],
   },
+  "mastodon-woodland-wetland": {
+    substrate: "Late Pleistocene firm forest soil, irregular leaf litter, shallow muddy ruts, and a restrained stream or wetland margin",
+    vegetation: "mixed woodland with unevenly spaced trees, browse-height shrubs, sedges, and patchy openings rather than mammoth steppe or dense modern jungle",
+    moisture: "cool to temperate woodland-wetland mosaic; exact local vegetation and seasonal water level remain reconstruction hypotheses across the species' broad range",
+    light: "soft neutral woodland daylight with readable body contours and restrained wet-ground reflection",
+    backgroundPalette: ["#5d644f", "#85755e", "#a9a084"],
+  },
+  "megatherium-pampean-woodland-grassland": {
+    substrate: "Late Pleistocene South American firm alluvial soil, pale silt, scattered weathered stones, and a shallow streambank or dry wash",
+    vegetation: "open grassland-scrub and woodland-edge mosaic with irregular shrubs and browse-height branches, avoiding a modern lawn or dense rainforest",
+    moisture: "seasonally variable open-country mosaic; exact local plant community and browsing site remain reconstruction hypotheses across the species' southern range",
+    light: "clear neutral daylight or soft broken-cloud light with the massive torso, limbs, claws, and tail kept readable",
+    backgroundPalette: ["#927b59", "#667057", "#b8aa86"],
+  },
+  "arctodus-cool-open-woodland-steppe": {
+    substrate: "Late Pleistocene North American firm soil, irregular leaf litter, scattered deadwood, pale gravel, and shallow seasonal runoff",
+    vegetation: "cool open woodland-steppe mosaic with spaced aspen-like trees, shrubs, berry-bearing plants, and patchy grasses rather than a modern park or dense forest",
+    moisture: "cool seasonally moist to dry habitat mosaic; exact local diet, foraging behavior, and vegetation remain reconstruction hypotheses across the species' broad range",
+    light: "neutral cool daylight with readable dark fur, plantigrade feet, and no global blue or orange cast",
+    backgroundPalette: ["#626960", "#756a58", "#a8a287"],
+  },
+  "glyptodon-pampean-open-grassland": {
+    substrate: "Late Pleistocene South American firm silty ground, irregular low gravel, shallow erosion channels, and localized damp patches",
+    vegetation: "open grassland-scrub mosaic with uneven low plants, sparse shrubs, and distant woodland patches rather than a manicured modern pasture",
+    moisture: "seasonally variable open-country setting; exact local ground cover and water availability remain reconstruction hypotheses across the genus' range",
+    light: "clear neutral daylight or restrained low-angle light that keeps the domed carapace, four feet, and ringed tail readable",
+    backgroundPalette: ["#9a855e", "#6b7458", "#b9ad88"],
+  },
   "djadokhta-semiarid-dune": {
     substrate: "buff to muted red aeolian sand, low dunes, firm interdune silt, and episodic wash gravel",
     vegetation: "very sparse low gray-green non-grass scrub with open ground",
@@ -604,6 +632,10 @@ function habitatFor(dino, route) {
   let key = "conifer-fern-floodplain";
   if (dino.id === "mammuthus-primigenius") key = "mammoth-steppe-tundra";
   else if (dino.id === "smilodon-fatalis") key = "late-pleistocene-open-woodland-dry-wash";
+  else if (dino.id === "mammut-americanum") key = "mastodon-woodland-wetland";
+  else if (dino.id === "megatherium-americanum") key = "megatherium-pampean-woodland-grassland";
+  else if (dino.id === "arctodus-simus") key = "arctodus-cool-open-woodland-steppe";
+  else if (dino.id === "glyptodon-reticulatus") key = "glyptodon-pampean-open-grassland";
   else if (dino.id === "spinosaurus-aegyptiacus") key = "kem-kem-river-delta";
   else if (dino.id === "suchomimus-tenerensis") key = "elrhaz-river-system";
   else if (dino.id === "psittacosaurus-mongoliensis") key = "khulsangol-alluvial-sheetflood";

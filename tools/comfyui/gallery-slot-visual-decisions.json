@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-07T16:30:24.000Z",
-  "reviewBatch": "2026-08-08-cenozoic-life-phase-a1",
-  "reviewMethod": "Preserved all prior approved decisions plus original-size primary inspection of six approved Mammuthus primigenius and Smilodon fatalis images and two rejected pattern originals. Review covered realm identity, whole-animal and individual counts, trunk and tusk counts, upper saber count, robust forequarter and body-profile cues, four attached limbs and feet per focal animal, tail length and continuity, crop and artifact exclusion, non-tiger pattern and composition separation, habitat readability, non-contact ecology, and explicit evidence boundaries. For each new taxon only slot 1 may be representative-eligible; slots 2 and 3 remain gallery-only review material.",
-  "targetSlots": 847,
+  "generatedAt": "2026-08-07T19:06:34.925Z",
+  "reviewBatch": "2026-08-08-cenozoic-life-phase-a2",
+  "reviewMethod": "Preserved all prior approved decisions plus original-size primary inspection and anatomy-audit-sheet review of twelve approved Mammut americanum, Megatherium americanum, Arctodus simus, and Glyptodon reticulatus assets and three rejected retry sources. Review covered whole-animal and individual counts, trunk and tusk counts, limb and foot separation, claw readability, tail continuity, carapace and osteoderm topology, non-clubbed ringed tail, plantigrade bear feet, composition separation, habitat readability, non-contact ecology, crop and artifact exclusion, and explicit reconstruction boundaries. For each new taxon only slot 1 may be representative-eligible; slots 2 and 3 remain gallery-only review material.",
+  "targetSlots": 859,
   "taxa": {
     "mammuthus-primigenius": {
       "1": {
@@ -61,6 +61,138 @@
         "reviewMethod": "Original-size foreground-cat and distant-bovid count, non-contact separation, upper-saber, four-limb, four-paw, short-tail, habitat, behavior-boundary, crop, and artifact audit",
         "reviewBatch": "2026-08-08-cenozoic-life-phase-a1",
         "reviewedAt": "2026-08-07T16:22:10.000Z"
+      }
+    },
+    "mammut-americanum": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/mammut-americanum-level-back-upcurved-tusks-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed original-size count and identity review for one American mastodon with a level back, low broad head, one trunk, exactly two separate gently upcurved upper tusks, four attached columnar limbs and broad feet, and one short tail; exact coat, ears, feet, and soft tissue remain reconstruction.",
+        "reviewMethod": "Original-size full-frame inspection plus animal, trunk, upper-tusk, four-limb and four-foot count, level-back and low-head cues, short-tail, crop, artifact, and mammoth-drift audit",
+        "reviewBatch": "2026-08-08-cenozoic-life-phase-a2",
+        "reviewedAt": "2026-08-07T19:06:34.925Z"
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/mammut-americanum-left-rear-woodland-review-imagegen-v1.png",
+        "role": "color-pattern",
+        "reason": "Approved for gallery comparison only: the left-facing rear-three-quarter camera, cooler gray-brown coat, woodland trail, and gait differ materially from slot 1 while one trunk, two tusks, four limbs and feet, a level back, and a short tail remain readable. Perspective, coat, season, and motion prohibit representative promotion.",
+        "reviewMethod": "Original-size trunk, tusk, four-limb, four-foot, short-tail, direction, camera, coat, crop, artifact, and same-composition audit",
+        "reviewBatch": "2026-08-08-cenozoic-life-phase-a2",
+        "reviewedAt": "2026-08-07T19:06:34.925Z",
+        "gallerySubrole": "gallery-only color and composition comparison",
+        "claimBoundary": "Coat, season, exact gait, and distal-foot detail remain hypothetical; not representative-eligible."
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/mammut-americanum-willow-browsing-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "reason": "Approved for anatomy-review habitat context only: one complete mastodon retains one trunk, two upper tusks, four attached limbs and feet, a level back, and a short tail while browsing a spatially separate branch. The exact plant, trunk movement, locality, and feeding event are illustrative, so representative promotion is prohibited.",
+        "reviewMethod": "Original-size animal, trunk, tusk, four-limb, four-foot, short-tail, branch-contact, habitat, behavior-boundary, crop, and artifact audit",
+        "reviewBatch": "2026-08-08-cenozoic-life-phase-a2",
+        "reviewedAt": "2026-08-07T19:06:34.925Z",
+        "gallerySubrole": "gallery-only ecology and behavior reference",
+        "claimBoundary": "Woody browsing is evidence-led at broad scale; the pictured plant, pose, place, and moment remain hypothetical."
+      }
+    },
+    "megatherium-americanum": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/megatherium-americanum-thick-tail-fourlimb-representative-imagegen-v2.png",
+        "role": "representative",
+        "reason": "Passed original-size count and identity review for one Megatherium with a small head, deep massive torso, broad pelvis, two long clawed forelimbs, two weight-bearing hind limbs, and one thick continuous tail. Exact claw-digit count, fur, posture, and soft tissue remain reconstruction.",
+        "reviewMethod": "Original-size full-frame inspection plus animal, forelimb, hind-limb, visible-foot, claw-group, pelvis, torso, tail-continuity, crop, artifact, and bear-drift audit",
+        "reviewBatch": "2026-08-08-cenozoic-life-phase-a2",
+        "reviewedAt": "2026-08-07T19:06:34.925Z"
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/megatherium-americanum-right-streambank-review-imagegen-v1.png",
+        "role": "color-pattern",
+        "reason": "Approved for gallery comparison only: the right-facing low walking pose, warmer coat, streambank, and camera direction differ materially from slot 1 while the deep torso, massive hindquarters, both foreclaw groups, four limbs, and full tail remain readable. Gait, color, and distal claws prohibit representative promotion.",
+        "reviewMethod": "Original-size four-limb, foreclaw-group, hind-foot, pelvis, full-tail, direction, camera, coat, crop, artifact, and same-composition audit",
+        "reviewBatch": "2026-08-08-cenozoic-life-phase-a2",
+        "reviewedAt": "2026-08-07T19:06:34.925Z",
+        "gallerySubrole": "gallery-only color and composition comparison",
+        "claimBoundary": "Exact gait phase, claw digits, coat, streambank, and locality remain hypothetical; not representative-eligible."
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/megatherium-americanum-tripod-browse-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "reason": "Approved for anatomy-review habitat context only: one Megatherium uses two grounded hind limbs and its thick tail as a stationary tripod while both long forelimbs reach toward browse. The exact upright duration, branch contact, locality, and feeding event are illustrative, so representative promotion is prohibited.",
+        "reviewMethod": "Original-size animal, raised-forelimb, grounded-hind-limb, tail-support, claw-group, branch-contact, habitat, posture-boundary, crop, and artifact audit",
+        "reviewBatch": "2026-08-08-cenozoic-life-phase-a2",
+        "reviewedAt": "2026-08-07T19:06:34.925Z",
+        "gallerySubrole": "gallery-only tripod-browsing ecology reference",
+        "claimBoundary": "Tripod support is anatomically plausible, but this exact stance, duration, plant, place, and event remain hypothetical."
+      }
+    },
+    "arctodus-simus": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/arctodus-simus-level-shoulders-plantigrade-representative-imagegen-v2.png",
+        "role": "representative",
+        "reason": "Passed original-size count and identity review for one giant short-faced bear with a broad deep head, moderate non-pug muzzle, compact ears, no exaggerated shoulder hump, four robust attached limbs and plantigrade feet, and one short tail. Exact proportions, digits, coat, and soft tissue remain reconstruction.",
+        "reviewMethod": "Original-size full-frame inspection plus animal, head, muzzle, ear, shoulder-line, four-limb, plantigrade-foot, short-tail, crop, artifact, and modern-grizzly-drift audit",
+        "reviewBatch": "2026-08-08-cenozoic-life-phase-a2",
+        "reviewedAt": "2026-08-07T19:06:34.925Z"
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/arctodus-simus-rear-aspen-gray-review-imagegen-v1.png",
+        "role": "color-pattern",
+        "reason": "Approved for gallery comparison only: the left-facing rear-three-quarter camera, cool gray-brown coat, aspen edge, and gait differ materially from slot 1 while four attached limbs, plantigrade feet, a broad head, and short tail remain readable. Rear perspective, gait, and coat prohibit representative promotion.",
+        "reviewMethod": "Original-size four-limb, plantigrade-foot, head, short-tail, direction, camera, coat, crop, artifact, and same-composition audit",
+        "reviewBatch": "2026-08-08-cenozoic-life-phase-a2",
+        "reviewedAt": "2026-08-07T19:06:34.925Z",
+        "gallerySubrole": "gallery-only color and composition comparison",
+        "claimBoundary": "Rear perspective, distal digits, exact gait, coat, season, and habitat remain hypothetical; not representative-eligible."
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/arctodus-simus-log-berry-foraging-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "reason": "Approved for anatomy-review habitat context only: one complete bear retains the broad head, four robust limbs and plantigrade feet, and short tail while investigating a fallen log and berries without attack or prey contact. Exact diet choice, scavenging, behavior, plants, and place are illustrative, so representative promotion is prohibited.",
+        "reviewMethod": "Original-size animal, head, four-limb, plantigrade-foot, short-tail, log and berry separation, habitat, diet-boundary, crop, and artifact audit",
+        "reviewBatch": "2026-08-08-cenozoic-life-phase-a2",
+        "reviewedAt": "2026-08-07T19:06:34.925Z",
+        "gallerySubrole": "gallery-only non-aggressive foraging reference",
+        "claimBoundary": "Broad omnivory is plausible, but berries, log investigation, exact diet choice, place, and moment remain hypothetical."
+      }
+    },
+    "glyptodon-reticulatus": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/glyptodon-reticulatus-rigid-carapace-ringed-tail-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed original-size count and identity review for one Glyptodon with a rigid domed carapace of irregular rosette-like osteoderms, one small armored head, four stout attached limbs and feet, and one annulated tail without a club or spikes. Exact osteoderm geometry, feet, species boundary, color, and soft tissue remain reconstruction.",
+        "reviewMethod": "Original-size full-frame inspection plus animal, head, rigid-dome, osteoderm, four-limb and four-foot count, annulated non-club tail, crop, artifact, and ankylosaur-drift audit",
+        "reviewBatch": "2026-08-08-cenozoic-life-phase-a2",
+        "reviewedAt": "2026-08-07T19:06:34.925Z"
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/glyptodon-reticulatus-four-visible-feet-review-imagegen-v2.png",
+        "role": "color-pattern",
+        "reason": "Approved for gallery comparison only after rejecting a first attempt with a hidden far hind foot and three-legged read. The retry shows four separated feet, a left-facing wetland camera, darker gray-ochre palette, rigid dome, and non-clubbed ringed tail; exact feet, osteoderms, and color prohibit representative promotion.",
+        "reviewMethod": "Original-size four-foot separation, rigid-dome, osteoderm, annulated non-club tail, direction, camera, color, crop, artifact, and three-legged-read audit",
+        "reviewBatch": "2026-08-08-cenozoic-life-phase-a2",
+        "reviewedAt": "2026-08-07T19:06:34.925Z",
+        "gallerySubrole": "gallery-only color, composition, and four-foot review",
+        "claimBoundary": "Exact distal digits, osteoderm geometry, color, wetland, and species-level identity remain hypothetical; not representative-eligible."
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/glyptodon-reticulatus-megatherium-coexistence-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "reason": "Approved for anatomy-review habitat context only: the foreground Glyptodon retains a rigid dome, four attached limbs and feet, and a non-clubbed ringed tail while one distant Megatherium remains spatially separate and non-contacting. The exact coexistence, spacing, shared locality, and feeding event are illustrative, so representative promotion is prohibited.",
+        "reviewMethod": "Original-size foreground-glyptodont and distant-sloth count, taxon separation, rigid-dome, four-limb, four-foot, non-club tail, habitat, coexistence-boundary, crop, and artifact audit",
+        "reviewBatch": "2026-08-08-cenozoic-life-phase-a2",
+        "reviewedAt": "2026-08-07T19:06:34.925Z",
+        "gallerySubrole": "gallery-only non-contact coexistence reference",
+        "claimBoundary": "Both genera occurred in Pleistocene South America, but this exact locality, spacing, shared moment, and behavior remain hypothetical."
       }
     },
     "dimetrodon-grandis": {

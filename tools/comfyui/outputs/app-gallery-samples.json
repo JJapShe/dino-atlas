@@ -1,6 +1,6 @@
 {
-  "taxa": 147,
-  "images": 1787,
+  "taxa": 151,
+  "images": 1799,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -11,6 +11,110 @@
     "diagnostic only"
   ],
   "samples": {
+    "arctodus-simus": [
+      {
+        "kind": "count-level pass",
+        "title": "거대짧은얼굴곰 평평한 어깨선·넓은 발 전신 대표",
+        "body": "플라이스토세 북아메리카 개방림의 단독 전신 대표입니다. 원본 크기에서 넓고 깊은 한 곰 머리, 납작하지 않은 주둥이, 작은 귀, 과장된 혹 없이 이어지는 어깨와 골반, 몸에 연결된 튼튼한 네 다리와 넓은 네 발, 짧은 꼬리를 확인했습니다. 털색과 정확한 체형 비율은 복원 영역입니다.",
+        "source": "assets/dinosaurs/arctodus-simus-level-shoulders-plantigrade-representative-imagegen-v2.png",
+        "variant": "평평한 어깨선 튼튼한 네 다리 plantigrade 네 발 전신 대표 이미지 생성 v2",
+        "src": "assets/dinosaurs/arctodus-simus-level-shoulders-plantigrade-representative-imagegen-v2.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "거대짧은얼굴곰 통나무 주변 열매 탐색 생태",
+        "body": "개방림 바닥에서 한 거대짧은얼굴곰이 쓰러진 통나무 주변의 열매와 냄새를 살피는 넓은 장면입니다. 공격이나 추격 없이 네 다리와 네 발, 머리와 짧은 꼬리가 모두 읽힙니다. 식물성 먹이를 찾는 정확한 순간은 지역별 잡식 가능성을 설명하는 가설이므로 S3 anatomy review로만 사용합니다.",
+        "source": "assets/dinosaurs/arctodus-simus-log-berry-foraging-ecology-imagegen-v1.png",
+        "variant": "통나무 주변 열매 냄새 탐색 비공격적 잡식 생태 이미지 생성 v1",
+        "src": "assets/dinosaurs/arctodus-simus-log-berry-foraging-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "거대짧은얼굴곰 사시나무 숲 후방 회갈색 변이",
+        "body": "대표와 다른 높은 후방 시점에서 사시나무 숲을 지나는 회갈색 후보입니다. 한 곰 머리, 튼튼한 네 다리와 넓은 네 발, 짧은 꼬리가 분리되어 읽힙니다. 먼 쪽 발가락과 어깨선, 털색은 원근·복원 영향을 받아 S2 review hold로만 둡니다.",
+        "source": "assets/dinosaurs/arctodus-simus-rear-aspen-gray-review-imagegen-v1.png",
+        "variant": "높은 후방 사시나무 숲 회갈색 보행 이미지 생성 v1",
+        "src": "assets/dinosaurs/arctodus-simus-rear-aspen-gray-review-imagegen-v1.png"
+      }
+    ],
+    "glyptodon-reticulatus": [
+      {
+        "kind": "count-level pass",
+        "title": "글립토돈 단단한 돔 등갑·곤봉 없는 고리 꼬리 전신 대표",
+        "body": "플라이스토세 남아메리카 초원의 단독 전신 대표입니다. 원본 크기에서 작은 갑옷 머리, 불규칙 로제트 골편이 맞물린 한 단단한 돔형 등갑, 몸 아래 서로 분리된 네 다리와 네 발, 갑옷 고리가 이어지지만 거대 곤봉이나 가시가 없는 한 꼬리를 확인했습니다. 골편 세부와 색은 가설입니다.",
+        "source": "assets/dinosaurs/glyptodon-reticulatus-rigid-carapace-ringed-tail-representative-imagegen-v1.png",
+        "variant": "단단한 돔 등갑 불규칙 로제트 골편 곤봉 없는 고리 꼬리 전신 대표 이미지 생성 v1",
+        "src": "assets/dinosaurs/glyptodon-reticulatus-rigid-carapace-ringed-tail-representative-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "글립토돈과 먼 메가테리움 팜파스 공존 생태",
+        "body": "넓은 팜파스에서 앞쪽 글립토돈이 낮은 풀을 먹고, 멀리 떨어진 메가테리움 한 개체가 같은 환경을 이용하는 비접촉 장면입니다. 글립토돈의 네 다리·네 발·돔 등갑·고리 꼬리는 읽히며 두 동물은 겹치거나 싸우지 않습니다. 정확한 만남과 개체 간 거리는 가설이므로 S3 anatomy review로만 사용합니다.",
+        "source": "assets/dinosaurs/glyptodon-reticulatus-megatherium-coexistence-ecology-imagegen-v1.png",
+        "variant": "팜파스 낮은 풀 채식과 먼 메가테리움 비접촉 공존 생태 이미지 생성 v1",
+        "src": "assets/dinosaurs/glyptodon-reticulatus-megatherium-coexistence-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "글립토돈 높은 반대 시점 네 발 판독 회갈색 변이",
+        "body": "첫 후보에서 먼 뒷발이 가려져 세 다리처럼 읽힌 문제를 탈락시키고, 높은 반대 방향에서 네 발이 서로 분리되어 보이는 회갈색 후보로 다시 만들었습니다. 단단한 등갑과 곤봉 없는 고리 꼬리도 유지하지만 강한 원근과 골편 배열은 복원 영향이 커 S2 review hold로만 둡니다.",
+        "source": "assets/dinosaurs/glyptodon-reticulatus-four-visible-feet-review-imagegen-v2.png",
+        "variant": "높은 반대 방향 네 발 분리 판독 회갈색 이미지 생성 v2",
+        "src": "assets/dinosaurs/glyptodon-reticulatus-four-visible-feet-review-imagegen-v2.png"
+      }
+    ],
+    "mammut-americanum": [
+      {
+        "kind": "count-level pass",
+        "title": "아메리카마스토돈 평평한 등·두 위굽음 엄니 전신 대표",
+        "body": "플라이스토세 숲 가장자리의 단독 전신 대표입니다. 원본 크기에서 낮고 넓은 한 머리, 한 코, 완만하게 위로 굽는 서로 분리된 위턱 엄니 두 개, 비교적 평평한 등, 몸에 연결된 네 기둥형 다리와 네 발, 짧은 꼬리를 확인했습니다. 털색과 연조직은 가설입니다.",
+        "source": "assets/dinosaurs/mammut-americanum-level-back-upcurved-tusks-representative-imagegen-v1.png",
+        "variant": "평평한 등 낮고 넓은 머리 두 위굽음 엄니 전신 대표 이미지 생성 v1",
+        "src": "assets/dinosaurs/mammut-americanum-level-back-upcurved-tusks-representative-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "아메리카마스토돈 버드나무 잎 채식 생태",
+        "body": "습지 가장자리에서 한 마스토돈이 코로 버드나무 가지를 당겨 잎을 먹는 넓은 생태 장면입니다. 한 개체의 코·두 엄니·네 다리·네 발·짧은 꼬리가 모두 읽히고 다른 동물과 접촉하지 않습니다. 식물 종류와 먹이 순간은 넓은 탐식 생태를 설명하는 가설이므로 S3 anatomy review로만 사용합니다.",
+        "source": "assets/dinosaurs/mammut-americanum-willow-browsing-ecology-imagegen-v1.png",
+        "variant": "습지 가장자리 버드나무 잎 채식 생태 이미지 생성 v1",
+        "src": "assets/dinosaurs/mammut-americanum-willow-browsing-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "아메리카마스토돈 왼쪽 후방 숲길 회갈색 변이",
+        "body": "대표의 낮은 측면과 달리 높은 왼쪽 후방에서 숲길을 걷는 회갈색 후보입니다. 한 코와 두 엄니, 네 다리와 네 발, 평평한 등과 짧은 꼬리를 유지하며 방향·시점·광원을 분리했습니다. 먼 쪽 발과 엄니 원근, 털색은 가설이어서 S2 review hold로만 둡니다.",
+        "source": "assets/dinosaurs/mammut-americanum-left-rear-woodland-review-imagegen-v1.png",
+        "variant": "왼쪽 후방 숲길 회갈색 반대 시점 이미지 생성 v1",
+        "src": "assets/dinosaurs/mammut-americanum-left-rear-woodland-review-imagegen-v1.png"
+      }
+    ],
+    "megatherium-americanum": [
+      {
+        "kind": "count-level pass",
+        "title": "메가테리움 작은 머리·굵은 꼬리·네 다리 전신 대표",
+        "body": "플라이스토세 남아메리카 관목지의 사족보행 전신 대표입니다. 원본 크기에서 작은 한 머리, 깊은 몸통과 큰 골반, 몸에 연결된 두 앞다리와 두 뒷다리, 분리된 네 발, 큰 앞발톱과 골반에서 이어지는 길고 굵은 한 꼬리를 확인했습니다. 발톱 수와 털·연조직은 복원 영역입니다.",
+        "source": "assets/dinosaurs/megatherium-americanum-thick-tail-fourlimb-representative-imagegen-v2.png",
+        "variant": "작은 머리 굵은 꼬리 네 다리 사족보행 전신 대표 이미지 생성 v2",
+        "src": "assets/dinosaurs/megatherium-americanum-thick-tail-fourlimb-representative-imagegen-v2.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "메가테리움 꼬리 삼각 지지 높은 가지 채식",
+        "body": "넓은 팜파스 관목지에서 한 메가테리움이 두 뒷다리와 굵은 꼬리로 몸을 받치고 두 앞발로 높은 가지를 당기는 정지 채식 장면입니다. 이족 달리기가 아니며 네 다리와 꼬리 연결이 모두 판독됩니다. 정확한 자세와 식물·먹이 순간은 복원 가설이므로 S3 anatomy review로만 사용합니다.",
+        "source": "assets/dinosaurs/megatherium-americanum-tripod-browse-ecology-imagegen-v1.png",
+        "variant": "두 뒷다리와 굵은 꼬리 정지 삼각 지지 높은 가지 채식 이미지 생성 v1",
+        "src": "assets/dinosaurs/megatherium-americanum-tripod-browse-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "메가테리움 오른쪽 하천 둑 회갈색 보행",
+        "body": "대표와 반대 방향으로 하천 둑을 걷는 높은 사선 구도입니다. 작은 머리, 큰 골반, 네 다리와 네 발, 긴 앞다리의 발톱, 굵은 꼬리가 분리되어 읽힙니다. 강한 원근과 먼 쪽 발톱 세부, 털색은 가설이어서 S2 review hold로만 둡니다.",
+        "source": "assets/dinosaurs/megatherium-americanum-right-streambank-review-imagegen-v1.png",
+        "variant": "오른쪽 하천 둑 높은 사선 회갈색 보행 이미지 생성 v1",
+        "src": "assets/dinosaurs/megatherium-americanum-right-streambank-review-imagegen-v1.png"
+      }
+    ],
     "mammuthus-primigenius": [
       {
         "kind": "count-level pass",

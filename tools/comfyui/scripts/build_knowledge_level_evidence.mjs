@@ -84,6 +84,10 @@ const profiles = Object.freeze({
 const editorialCues = Object.freeze({
   "mammuthus-primigenius": "두 개의 크게 굽은 엄니와 긴 털을 지닌 빙하기 매머드로 어린이 고생물 콘텐츠에서 즉시 알아보는 대표 포유류",
   "smilodon-fatalis": "한 쌍의 긴 위턱 검치와 강건한 앞몸을 지닌 검치호로 빙하기 동물 도감에서 반복되는 대표 포유류",
+  "mammut-americanum": "매머드와 구별되는 낮은 등선·비교적 낮은 머리·완만하게 위로 굽은 두 엄니를 지닌 마스토돈으로 빙하기 포유류 비교 도감에서 반복되는 주요 생물",
+  "megatherium-americanum": "거대한 몸과 긴 앞발톱·굵은 꼬리를 지닌 대표 거대땅늘보로 빙하기 남아메리카 동물 도감에서 반복되는 주요 생물",
+  "arctodus-simus": "큰 몸과 비교적 짧아 보이는 주둥이의 거대짧은얼굴곰으로 빙하기 북아메리카 포유류 콘텐츠에서 반복되는 주요 생물",
+  "glyptodon-reticulatus": "단단한 돔형 갑각과 고리 모양 장갑 꼬리를 지닌 거대 아르마딜로류로 빙하기 남아메리카 동물 도감에서 반복되는 주요 생물",
   "dimetrodon-grandis": "등의 거대한 돛과 공룡이 아니라는 반전으로 어린이 고생물 콘텐츠에서 즉시 알아보는 대표 단궁류",
   "archaeopteryx-lithographica": "공룡과 새의 경계를 설명하는 어린이 도감에서 시조새라는 이름으로 반복되는 대표 생물",
   "asteroceras-obtusum": "나선형 껍데기의 암모나이트를 대표해 화석·바다생물 입문 자료에서 쉽게 만나는 생물",
@@ -294,7 +298,7 @@ const taxa = dinosaurs.map((dino, index) => {
 
 const artifact = {
   schemaVersion: 1,
-  baselineDate: "2026-08-03",
+  baselineDate: "2026-08-08",
   audience: "한국어권 5~14세 Dino Atlas 사용자",
   purpose:
     "knowledgeLevel을 읽기 난이도나 학술적 중요도가 아니라 어린이 사용자의 종명·실루엣 친숙도와 탐색 진입 순서로 설명한다.",
@@ -317,7 +321,7 @@ fs.writeFileSync(JSON_OUT, json, "utf8");
 const markdown = [
   `# ${taxa.length}개 분류군 지식 레벨 근거표`,
   "",
-  "- 기준일: 2026-08-03",
+  "- 기준일: 2026-08-08",
   "- 대상: 한국어권 5~14세 Dino Atlas 사용자",
   `- 행 수: ${taxa.length}개 분류군`,
   "- 기준 문서: [도감 친숙도 LV 판정 기준](knowledge-level-rubric.md)",

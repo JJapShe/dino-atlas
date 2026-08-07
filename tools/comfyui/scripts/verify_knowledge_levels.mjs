@@ -75,19 +75,19 @@ for (const dino of dinosaurs) {
   }
 }
 
-if (dinosaurs.length !== 147) fail(`Expected 147 taxa, found ${dinosaurs.length}`);
+if (dinosaurs.length !== 151) fail(`Expected 151 taxa, found ${dinosaurs.length}`);
 
 const levelSnapshot = dinosaurs
   .map((dino) => `${dino.id}:${dino.knowledgeLevel}`)
   .sort()
   .join("\n");
 const levelSnapshotSha256 = createHash("sha256").update(levelSnapshot).digest("hex");
-const expectedLevelSnapshotSha256 = "27d79f221e12e168b7374f55c21d0916c707ccd0cd4fb641e0621435a1b97846";
+const expectedLevelSnapshotSha256 = "50b9d82af462348d47ded490ccae7e2af6b33254fe33052af71c541725e904d6";
 if (levelSnapshotSha256 !== expectedLevelSnapshotSha256) {
   fail(`Level snapshot hash mismatch: ${levelSnapshotSha256}`);
 }
 
-const expectedDistribution = { 1: 27, 2: 33, 3: 39, 4: 48 };
+const expectedDistribution = { 1: 27, 2: 37, 3: 39, 4: 48 };
 for (const [level, expected] of Object.entries(expectedDistribution)) {
   if (distribution[level] !== expected) {
     fail(`LV${level} expected ${expected}, found ${distribution[level]}`);
@@ -122,8 +122,8 @@ const expectedEvidenceSignals = {
 };
 
 if (evidence?.schemaVersion !== 1) fail(`Evidence schemaVersion expected 1, found ${evidence?.schemaVersion}`);
-if (evidence?.baselineDate !== "2026-08-03") {
-  fail(`Evidence baselineDate expected 2026-08-03, found ${evidence?.baselineDate || "missing"}`);
+if (evidence?.baselineDate !== "2026-08-08") {
+  fail(`Evidence baselineDate expected 2026-08-08, found ${evidence?.baselineDate || "missing"}`);
 }
 if (!Array.isArray(evidence?.limitations) || evidence.limitations.length < 4) {
   fail("Evidence limitations must describe at least four rubric boundaries");
@@ -217,6 +217,10 @@ if (!Array.isArray(evidence?.taxa)) {
 const expectedLevels = {
   "mammuthus-primigenius": 1,
   "smilodon-fatalis": 1,
+  "mammut-americanum": 2,
+  "megatherium-americanum": 2,
+  "arctodus-simus": 2,
+  "glyptodon-reticulatus": 2,
   "camptosaurus-dispar": 3,
   "maiasaura-peeblesorum": 2,
   "pentaceratops-sternbergii": 3,
@@ -275,8 +279,8 @@ const appCacheDate = html.match(/app\.js\?v=(\d{8})-[^"']+/)?.[1] || "";
 if (stylesCacheDate < "20260803" || appCacheDate < "20260803") {
   fail("Knowledge-level release cache keys are stale");
 }
-if (!rubric.includes("대상 생물: 147종") || !rubric.includes("LV1 27종 / LV2 33종 / LV3 39종 / LV4 48종")) {
-  fail("Rubric baseline does not match the audited 147-taxon distribution");
+if (!rubric.includes("대상 생물: 151종") || !rubric.includes("LV1 27종 / LV2 37종 / LV3 39종 / LV4 48종")) {
+  fail("Rubric baseline does not match the audited 151-taxon distribution");
 }
 if (
   !rubric.includes("knowledge-level-evidence-2026-08-03.md") ||
@@ -285,8 +289,8 @@ if (
   fail("Rubric does not link to both per-taxon evidence artifacts");
 }
 if (
-  !audit.includes("변경: 기존 4종 재분류를 보존하고, 138종 기준선 이후 친숙 고생물 9종 신규 수록") ||
-  !audit.includes("최종 분포: LV1 27 / LV2 33 / LV3 39 / LV4 48")
+  !audit.includes("변경: 기존 4종 재분류를 보존하고, 138종 기준선 이후 친숙 고생물 13종 신규 수록") ||
+  !audit.includes("최종 분포: LV1 27 / LV2 37 / LV3 39 / LV4 48")
 ) {
   fail("Audit summary does not match the expected decision set");
 }

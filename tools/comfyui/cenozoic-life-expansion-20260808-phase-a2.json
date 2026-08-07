@@ -1,0 +1,652 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-08-cenozoic-life-expansion-phase-a2",
+  "createdAt": "2026-08-07T19:08:47.757Z",
+  "audience": "Korean Dino Atlas users ages 5-14",
+  "scope": [
+    "Mammut americanum, Megatherium americanum, Arctodus simus, and Glyptodon reticulatus three-image galleries",
+    "Cenozoic Quaternary recognition expansion",
+    "Separate anatomy, color, behavior, and representative-promotion gates",
+    "Only S1 is representative-eligible; S2 is review hold and S3 is anatomy review"
+  ],
+  "promptEncoding": "Each prompt array preserves the exact nonblank string supplied to the image generator.",
+  "copyrightSafety": {
+    "externalArtworkUsed": false,
+    "externalImagesUsedAsGenerationInput": false,
+    "projectGeneratedReferenceOnly": true,
+    "licenseRecord": "Original project-generated bitmap assets; papers and museum records supplied facts only. No external figure, reconstruction, franchise frame, copyrighted character, or named-artist style was supplied.",
+    "rejectedOriginalPolicy": "Three rejected originals remain only in the private generated-image store and were never copied into assets/dinosaurs.",
+    "appPathPolicy": "Only reviewed species-prefixed project copies under assets/dinosaurs may be referenced. No .codex/generated_images path may be referenced by the app."
+  },
+  "researchSources": [
+    {
+      "taxon": "Mammut americanum",
+      "citation": "National Park Service. American Mastodon.",
+      "url": "https://www.nps.gov/articles/000/mammut_americanum.htm",
+      "use": "age, range, size, and identity",
+      "rightsUse": "Factual or analytical reference only; no external image, figure, or reconstruction supplied to the generator"
+    },
+    {
+      "taxon": "Mammut americanum",
+      "citation": "National Park Service. Mammoth or Mastodon?",
+      "url": "https://www.nps.gov/articles/mammoth-or-mastodon.htm",
+      "use": "level back, lower head, tusks, and tooth distinction",
+      "rightsUse": "Factual or analytical reference only; no external image, figure, or reconstruction supplied to the generator"
+    },
+    {
+      "taxon": "Mammut americanum",
+      "citation": "Natural History Museum. The making of an American mastodon.",
+      "url": "https://www.nhm.ac.uk/discover/the-making-of-an-american-mastodon.html",
+      "use": "woodland browsing, feet, and body form",
+      "rightsUse": "Factual or analytical reference only; no external image, figure, or reconstruction supplied to the generator"
+    },
+    {
+      "taxon": "Megatherium americanum",
+      "citation": "Natural History Museum. What was Megatherium?",
+      "url": "https://www.nhm.ac.uk/discover/what-was-megatherium.html",
+      "use": "size, range, identity, and posture",
+      "rightsUse": "Factual or analytical reference only; no external image, figure, or reconstruction supplied to the generator"
+    },
+    {
+      "taxon": "Megatherium americanum",
+      "citation": "Bargo 2001. Acta Palaeontologica Polonica.",
+      "url": "https://www.app.pan.pl/article/item/app46-173.html",
+      "use": "feeding mechanics and browsing boundary",
+      "rightsUse": "Factual or analytical reference only; no external image, figure, or reconstruction supplied to the generator"
+    },
+    {
+      "taxon": "Arctodus simus",
+      "citation": "Figueirido et al. 2010. Demythologizing Arctodus simus.",
+      "url": "https://doi.org/10.1080/02724630903416027",
+      "use": "cranial and limb proportions; pursuit-predator boundary",
+      "rightsUse": "Factual or analytical reference only; no external image, figure, or reconstruction supplied to the generator"
+    },
+    {
+      "taxon": "Arctodus simus",
+      "citation": "Figueirido et al. 2017. Dental caries in the fossil record: dietary plasticity in an extinct bear. Scientific Reports 7:17813.",
+      "url": "https://www.nature.com/articles/s41598-017-18116-0",
+      "use": "Rancho La Brea omnivory and regional dietary-plasticity boundary",
+      "rightsUse": "Factual or analytical reference only; no external image, figure, or reconstruction supplied to the generator"
+    },
+    {
+      "taxon": "Arctodus simus",
+      "citation": "DeSantis et al. 2013. Was the giant short-faced bear a hyper-scavenger? PLOS ONE 8:e77531.",
+      "url": "https://doi.org/10.1371/journal.pone.0077531",
+      "use": "Dental-microwear boundary against a universal bone-consuming hyper-scavenger reconstruction",
+      "rightsUse": "Factual or analytical reference only; no external image, figure, or reconstruction supplied to the generator"
+    },
+    {
+      "taxon": "Glyptodon reticulatus",
+      "citation": "Cuadrelli et al. 2023. Swiss Journal of Palaeontology.",
+      "url": "https://link.springer.com/article/10.1186/s13358-023-00280-8",
+      "use": "modern taxonomic boundary",
+      "rightsUse": "Factual or analytical reference only; no external image, figure, or reconstruction supplied to the generator"
+    },
+    {
+      "taxon": "Glyptodon reticulatus",
+      "citation": "Delsuc et al. 2016. Current Biology.",
+      "url": "https://doi.org/10.1016/j.cub.2016.01.039",
+      "use": "armadillo relationship",
+      "rightsUse": "Factual or analytical reference only; no external image, figure, or reconstruction supplied to the generator"
+    },
+    {
+      "taxon": "Glyptodon reticulatus",
+      "citation": "Arbour and Currie 2020. Anatomical Record.",
+      "url": "https://doi.org/10.1002/ar.24093",
+      "use": "tail weaponization boundary",
+      "rightsUse": "Factual or analytical reference only; no external image, figure, or reconstruction supplied to the generator"
+    }
+  ],
+  "evidenceBoundaries": {
+    "mammut-americanum": {
+      "direct": [
+        "Level back, low broad head, one trunk, two gently upward-curving upper tusks, four columnar limbs, broad feet, and short tail."
+      ],
+      "analytical": [
+        "Woodland and wetland-edge browsing at biome and guild level."
+      ],
+      "hypothetical": [
+        "Exact coat, fur length, soft tissue, plants, weather, pose, and feeding moment."
+      ],
+      "confusionBoundary": "Reject woolly-mammoth high shoulders, domed head, long spiral tusks, and steppe-snow default."
+    },
+    "megatherium-americanum": {
+      "direct": [
+        "Small head, deep body, large pelvis and hindlimbs, long forelimbs with claws, and thick muscular tail."
+      ],
+      "analytical": [
+        "Stationary hindlimb-and-tail support for elevated browsing."
+      ],
+      "hypothetical": [
+        "Exact fur, face, digits, joint angles, plants, weather, and feeding moment."
+      ],
+      "confusionBoundary": "Reject bear, anteater, therizinosaur, arboreal sloth, or bipedal-running drift."
+    },
+    "arctodus-simus": {
+      "direct": [
+        "Very large bear, broad deep head, moderate muzzle, compact ears, four robust limbs, plantigrade feet, and short tail."
+      ],
+      "analytical": [
+        "Regional diet may vary; use broad omnivorous foraging without universal pursuit claims."
+      ],
+      "hypothetical": [
+        "Exact fur, sex, proportions, toes, plants, weather, and foraging event."
+      ],
+      "confusionBoundary": "Reject pug-flat muzzle, cheetah legs, modern-grizzly hump, sabers, mane, or feline feet."
+    },
+    "glyptodon-reticulatus": {
+      "direct": [
+        "Rigid domed osteoderm carapace, small armored head, four stout limbs, and armored-ring tail without a giant club."
+      ],
+      "analytical": [
+        "Low browsing and broad pampas occurrence; coexistence scene is illustrative."
+      ],
+      "hypothetical": [
+        "Exact osteoderms, color, feet, soft tissue, plants, spacing, and behavior."
+      ],
+      "taxonomicBoundary": "Some material historically called G. clavipes has been revised; keep visible cues conservative and genus-led for G. reticulatus."
+    }
+  },
+  "records": {
+    "mammut-americanum-representative-v1": {
+      "taxon": "Mammut americanum",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-08; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image workflow",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-8a02d26a-a4e5-468f-a60a-9b72fdcf9c77",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-8a02d26a-a4e5-468f-a60a-9b72fdcf9c77.png",
+      "approvedProjectPath": "assets/dinosaurs/mammut-americanum-level-back-upcurved-tusks-representative-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style used.",
+      "sha256": "622217ebaa7fdadbb5acbe7f48d48b18935c2d8a513e9b5d9633bced846d3046",
+      "bytes": 2887070,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational\nAsset type: Dino Atlas Cenozoic gallery representative image for children ages 5-14\nPrimary request: Create one anatomically conservative adult American mastodon, Mammut americanum, as original museum-quality paleoart.\nScene/backdrop: Late Pleistocene North American cool woodland and wet-meadow edge with spruce, alder, sedges, damp soil, and scattered leafy browse; no deep snow or glacier.\nSubject: One complete Mammut americanum, right-facing eye-level three-quarter lateral view. Keep the full head, both tusk tips, belly, all four feet, and tail inside the frame. It must read as a mastodon rather than a woolly mammoth: a broad low head without a high mammoth dome, a stocky robust body with a nearly level back rather than a high shoulder and steeply descending back, small rounded ears, one natural elephant-like trunk, exactly two separate upper-jaw tusks that curve gently forward and upward but do not form long spirals, four connected columnar limbs, four distinct broad padded feet, and one short tail. Use a moderate dark chestnut-brown shaggy coat as a cautious soft-tissue hypothesis, with eyes, joints, trunk, feet, and silhouette clearly visible.\nComposition/framing: horizontal 16:9, full-body portrait, generous clearance, calm slow walking pose distinct from the existing left-facing woolly mammoth representative.\nLighting/mood: soft overcast woodland light, natural and calm.\nConstraints: anatomy-led original educational paleoart; no named artist style, franchise likeness, text, logo, border, or watermark.\nAvoid: woolly mammoth high shoulder, domed head, strongly spiral tusks, separate hump, extreme long wool, white coat; modern African elephant fan ears or naked skin; lower-jaw tusks; extra, missing, crossed, fused, or duplicated tusks, trunk, legs, feet, or tail; three-legged anatomy; hooves, claws, predator paws; cropped anatomy; humans, saddles, buildings, gore."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-08",
+        "method": "Original-size full-frame identity, count, connected-limb, visible-foot, tail, crop, artifact, copyright-safety, and promotion audit",
+        "checks": {
+          "expectedAnimalCount": "PASS",
+          "fullFrameAndEdgeClearance": "PASS",
+          "identityAnatomy": "PASS",
+          "connectedLimbsAndFeet": "PASS",
+          "tailAndBodyConnection": "PASS",
+          "artifactAndDuplication": "PASS",
+          "textLogoWatermark": "PASS",
+          "compositionDistinctFromOtherSlots": "PASS",
+          "representativePromotionGate": "PASS"
+        },
+        "result": "level back, low broad head, one trunk, exactly two upper tusks, four limbs and feet, short tail"
+      }
+    },
+    "mammut-americanum-pattern-v1": {
+      "taxon": "Mammut americanum",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-08; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image workflow",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-2cb68451-006f-428a-9aed-607f0c566b5c",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-2cb68451-006f-428a-9aed-607f0c566b5c.png",
+      "approvedProjectPath": "assets/dinosaurs/mammut-americanum-left-rear-woodland-review-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style used.",
+      "sha256": "7da29564b870289b78efae7e6befd29ea3c0d1dc683b763c5d8bd509cc920a44",
+      "bytes": 2914598,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational\nAsset type: Dino Atlas Cenozoic gallery color-and-composition review image, ages 5-14\nPrimary request: One adult Mammut americanum in a composition clearly different from the representative.\nScene/backdrop: Late Pleistocene North American autumn woodland floodplain with willow, alder, shallow mud, fallen leaves, and no snow.\nSubject: A single complete American mastodon walking left in a low rear-side three-quarter view. Preserve mastodon identity: broad low head without a mammoth dome, nearly level stocky back without high mammoth shoulders, one trunk, exactly two separate gently upward-curving upper tusks that are shorter and less spiral than mammoth tusks, small ears, four connected columnar legs, four broad separate padded feet, and one tail. Use a plausible charcoal-brown coat with muted olive-gray wet guard hairs and irregular natural tonal breakup, no stripes or spots. Keep all joints and feet visible.\nComposition/framing: horizontal 16:9; left-facing low rear oblique, full body and tusk tips inside frame, generous clearance, clearly unlike the right-facing eye-level representative.\nLighting/mood: cool filtered woodland light, calm.\nConstraints: original anatomy-led educational paleoart; no named artist style, text, logo, border, or watermark.\nAvoid: woolly mammoth high shoulder, domed head, spiral tusks, extreme long wool, white coat; modern African elephant ears; extra or missing tusks, trunk, limbs, feet, or tail; three-legged or fused anatomy; cropped anatomy; humans, gore."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-08",
+        "method": "Original-size full-frame identity, count, connected-limb, visible-foot, tail, crop, artifact, copyright-safety, and promotion audit",
+        "checks": {
+          "expectedAnimalCount": "PASS",
+          "fullFrameAndEdgeClearance": "PASS",
+          "identityAnatomy": "REVIEW",
+          "connectedLimbsAndFeet": "PASS",
+          "tailAndBodyConnection": "PASS",
+          "artifactAndDuplication": "PASS",
+          "textLogoWatermark": "PASS",
+          "compositionDistinctFromOtherSlots": "PASS",
+          "representativePromotionGate": "BLOCKED"
+        },
+        "result": "core counts pass; rear perspective, far feet, tusk foreshortening, and coat remain reconstruction"
+      }
+    },
+    "mammut-americanum-ecology-v1": {
+      "taxon": "Mammut americanum",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "kind": "anatomy review",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-08; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image workflow",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-7abb40ca-5136-43d1-9454-e8df3c0836e4",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-7abb40ca-5136-43d1-9454-e8df3c0836e4.png",
+      "approvedProjectPath": "assets/dinosaurs/mammut-americanum-willow-browsing-ecology-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style used.",
+      "sha256": "6afcf3f67e025d12449cf6a4eb367d57e7ecaef596e08547fea5c41e9e337658",
+      "bytes": 3149774,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational\nAsset type: Dino Atlas Cenozoic habitat-ecology gallery image for children ages 5-14\nPrimary request: Show one American mastodon, Mammut americanum, browsing naturally in its woodland habitat.\nScene/backdrop: Rich Late Pleistocene North American cool woodland wetland margin with spruce, willow, alder, ferns, sedges, shallow muddy patches, fallen branches, and layered vegetation; no glacier and no deep snow.\nSubject: Exactly one complete adult mastodon standing separately in a wide scene and using its single trunk to pull leafy willow twigs toward its mouth. Preserve a broad low head without a mammoth dome, stocky nearly level back without high mammoth shoulders, small ears, exactly two gently upward-curving upper tusks without strong spirals, exactly four connected columnar legs, four separate broad padded feet clearly visible on firm ground, and one tail. Moderate dark chestnut shaggy coat, not extreme mammoth wool.\nComposition/framing: horizontal 16:9, wide slightly high three-quarter landscape view; the whole animal occupies about half the frame, all four feet, tusk tips, trunk, and tail visible; composition distinct from both single-animal portraits.\nLighting/mood: soft morning mist only in the far background, calm feeding behavior, non-graphic.\nConstraints: original anatomy-led educational paleoecology; exact feeding moment is illustrative, no named artist style, text, logo, border, or watermark.\nAvoid: mammoth dome, high shoulders, spiral tusks, white wool, huge elephant ears; second mastodon, calf, humans; duplicated trunk, tusks, limbs, feet, or tail; three-legged or fused anatomy; feet hidden by plants or mud; cropped anatomy, attack, blood."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-08",
+        "method": "Original-size full-frame identity, count, connected-limb, visible-foot, tail, crop, artifact, copyright-safety, and promotion audit",
+        "checks": {
+          "expectedAnimalCount": "PASS",
+          "fullFrameAndEdgeClearance": "PASS",
+          "identityAnatomy": "REVIEW",
+          "connectedLimbsAndFeet": "PASS",
+          "tailAndBodyConnection": "PASS",
+          "artifactAndDuplication": "PASS",
+          "textLogoWatermark": "PASS",
+          "compositionDistinctFromOtherSlots": "PASS",
+          "representativePromotionGate": "BLOCKED"
+        },
+        "result": "full-body counts pass; exact browsing event and plants are illustrative"
+      }
+    },
+    "megatherium-americanum-representative-v2": {
+      "taxon": "Megatherium americanum",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-08; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image workflow",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-b7636997-05e6-487a-8164-1aee44118b96",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-b7636997-05e6-487a-8164-1aee44118b96.png",
+      "approvedProjectPath": "assets/dinosaurs/megatherium-americanum-thick-tail-fourlimb-representative-imagegen-v2.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style used.",
+      "sha256": "747c5df99afe97da3bba24ea5521e94ca27ad6352be00bd97b8b31ae41ddf94e",
+      "bytes": 2741320,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational\nAsset type: Dino Atlas Cenozoic gallery representative image for children ages 5-14\nPrimary request: Generate a fresh, anatomically corrected adult Megatherium americanum. This is not a bear and not an anteater.\nScene/backdrop: Late Pleistocene Argentine Pampas with open grass, low shrubs, and scattered small trees.\nSubject: Exactly one complete giant ground sloth walking on all fours toward the left. Use a fossil-led Megatherium silhouette: a very small narrow sloth-like head with a blunt flexible-lip muzzle and no black dog or bear nose, short neck, immensely deep barrel torso, broad high pelvis and extremely powerful hindquarters, two long robust forelimbs, two massive hindlimbs, exactly four attached limbs, and one continuous thick muscular tail that begins broadly at the pelvis and tapers to the tip. Each visible forehand must show a coherent four-digit structure with three distinct large inward-curving claws, not two oversized rings and not five identical claws. The hands turn inward naturally and the specialized hindfeet bear weight along their outer edges. Use short-to-medium coarse gray-brown fur that does not hide joints, digits, belly, or tail base.\nComposition/framing: horizontal 16:9, slightly elevated right-rear three-quarter camera so both near and far limbs can be counted; full head, all four feet, every main claw group, and tail tip inside the frame with generous clearance.\nLighting/mood: clear soft morning light, calm walking pose.\nConstraints: original anatomy-led museum-quality educational paleoart; no named artist style, no copyrighted character, no text, logo, border, or watermark.\nAvoid: bear face, canine black nose, rounded bear ears, bear shoulder hump, anteater tube snout, gorilla posture, tree sloth hanging, therizinosaur or dinosaur body, humanlike upright stance, bipedal running, shell or armor, thin tail, tail club, tusks, fangs, extra or missing limbs, merged hands, two-claw hands, five repeated talons, cropped feet or tail."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-08",
+        "method": "Original-size full-frame identity, count, connected-limb, visible-foot, tail, crop, artifact, copyright-safety, and promotion audit",
+        "checks": {
+          "expectedAnimalCount": "PASS",
+          "fullFrameAndEdgeClearance": "PASS",
+          "identityAnatomy": "PASS",
+          "connectedLimbsAndFeet": "PASS",
+          "tailAndBodyConnection": "PASS",
+          "artifactAndDuplication": "PASS",
+          "textLogoWatermark": "PASS",
+          "compositionDistinctFromOtherSlots": "PASS",
+          "representativePromotionGate": "PASS"
+        },
+        "result": "retry passes small head, deep torso, large pelvis, four limbs and feet, foreclaws, and thick tail"
+      }
+    },
+    "megatherium-americanum-pattern-v1": {
+      "taxon": "Megatherium americanum",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-08; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image workflow",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-6de11d84-b29d-47db-908e-ba380fd6c4ca",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-6de11d84-b29d-47db-908e-ba380fd6c4ca.png",
+      "approvedProjectPath": "assets/dinosaurs/megatherium-americanum-right-streambank-review-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style used.",
+      "sha256": "b4b70fd48b4df70ca325fe9f4f566bf8a63c8a0e4b48fd6f610dfd22912215e7",
+      "bytes": 2843874,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational\nAsset type: Dino Atlas Cenozoic gallery color-and-composition review image, ages 5-14\nPrimary request: One adult Megatherium americanum in a fresh pose and direction, preserving the accepted fossil-led body plan.\nScene/backdrop: Late Pleistocene southern South American seasonal stream bank with dry grasses, low thorn scrub, exposed soil, and distant hills.\nSubject: A single complete giant ground sloth moving right in a moderately high front-side three-quarter view. Keep a very small narrow sloth-like head, no bear nose, short neck, huge deep torso, broad high pelvis, two long robust forelimbs with coherent inward-curving claw groups, two massive hindlimbs, exactly four attached limbs and four feet, and one continuous very thick muscular tail tapering from the pelvis. Use a smoky umber coat with a muted pale gray shoulder wash and irregular guard-hair variation, not stripes or repeated spots.\nComposition/framing: horizontal 16:9; right-facing moderately high camera, every foot and the full tail visible, distinct from the left-facing low representative.\nLighting/mood: warm late-afternoon sidelight, calm.\nConstraints: original anatomy-led educational paleoart; no named artist style, text, logo, border, or watermark.\nAvoid: bear, anteater, gorilla, tree sloth, therizinosaur; canine black nose; upright running; thin or missing tail; shell or armor; extra or missing limbs, feet, claws, or tail; three-legged anatomy; cropped anatomy; attack or gore."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-08",
+        "method": "Original-size full-frame identity, count, connected-limb, visible-foot, tail, crop, artifact, copyright-safety, and promotion audit",
+        "checks": {
+          "expectedAnimalCount": "PASS",
+          "fullFrameAndEdgeClearance": "PASS",
+          "identityAnatomy": "REVIEW",
+          "connectedLimbsAndFeet": "PASS",
+          "tailAndBodyConnection": "PASS",
+          "artifactAndDuplication": "PASS",
+          "textLogoWatermark": "PASS",
+          "compositionDistinctFromOtherSlots": "PASS",
+          "representativePromotionGate": "BLOCKED"
+        },
+        "result": "core plan passes; far digits, gait, fur, and perspective remain reconstruction"
+      }
+    },
+    "megatherium-americanum-ecology-v1": {
+      "taxon": "Megatherium americanum",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "kind": "anatomy review",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-08; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image workflow",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-ec8a6dbc-e449-4a18-99ac-1eaa4386ff07",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-ec8a6dbc-e449-4a18-99ac-1eaa4386ff07.png",
+      "approvedProjectPath": "assets/dinosaurs/megatherium-americanum-tripod-browse-ecology-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style used.",
+      "sha256": "8e852ab26e42f33ecd60a633309b47c7061f9084032b4cd62621612a4c0f3270",
+      "bytes": 2804339,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational\nAsset type: Dino Atlas Cenozoic habitat-ecology gallery image for children ages 5-14\nPrimary request: Show one Megatherium americanum using a conservative stationary tripod-supported browsing posture.\nScene/backdrop: Late Pleistocene southern South American open woodland-pampas edge with one low spreading tree, shrubs, grasses, and broad open sky.\nSubject: Exactly one complete adult giant ground sloth paused upright only to feed, not running. Its two massive hindlimbs and two specialized hindfeet remain planted on the ground, and one very thick muscular tail extends continuously from the pelvis to a broad contact area on the ground, forming a stable three-point support. Exactly two long forelimbs reach forward; one forehand gently draws down a leafy branch while the other balances nearby. Keep a very small sloth-like head, short neck, enormous deep torso, broad pelvis, exactly four total limbs and four total feet/hands, coherent inward-curving foreclaw groups, and no bear or anteater face. Coarse muted brown-gray fur does not hide joints or tail base.\nComposition/framing: horizontal 16:9, wide side three-quarter landscape view with the full head, both forehands, both hindfeet, and full tail tip inside frame; animal smaller in frame than portraits.\nLighting/mood: warm early evening light, calm feeding hypothesis, non-graphic.\nConstraints: original anatomy-led educational paleoecology; tripod browsing is a functional reconstruction, no named artist style, text, logo, border, or watermark.\nAvoid: bipedal running, human posture, tree hanging, bear, anteater, gorilla, therizinosaur; more or fewer than two forelimbs and two hindlimbs; extra hands, fused arms, missing hindfoot, thin or floating tail, tail club; shell, armor, tusks, fangs; cropped anatomy, attack, blood, humans."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-08",
+        "method": "Original-size full-frame identity, count, connected-limb, visible-foot, tail, crop, artifact, copyright-safety, and promotion audit",
+        "checks": {
+          "expectedAnimalCount": "PASS",
+          "fullFrameAndEdgeClearance": "PASS",
+          "identityAnatomy": "REVIEW",
+          "connectedLimbsAndFeet": "PASS",
+          "tailAndBodyConnection": "PASS",
+          "artifactAndDuplication": "PASS",
+          "textLogoWatermark": "PASS",
+          "compositionDistinctFromOtherSlots": "PASS",
+          "representativePromotionGate": "BLOCKED"
+        },
+        "result": "four limbs and thick tail read; exact stationary tripod-browse pose is analytical reconstruction"
+      }
+    },
+    "arctodus-simus-representative-v2": {
+      "taxon": "Arctodus simus",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-08; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image workflow",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-dbcaadea-b5cb-4c9d-9821-05c45c88952d",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-dbcaadea-b5cb-4c9d-9821-05c45c88952d.png",
+      "approvedProjectPath": "assets/dinosaurs/arctodus-simus-level-shoulders-plantigrade-representative-imagegen-v2.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style used.",
+      "sha256": "889c26826245b448125784c199ca26729e12a3124f967b3bc37691d724e01ddc",
+      "bytes": 2537382,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational\nAsset type: Dino Atlas Cenozoic gallery representative image for children ages 5-14\nPrimary request: Generate a fresh fossil-led adult Arctodus simus, the giant short-faced bear, without copying the silhouette of a modern grizzly.\nScene/backdrop: Late Pleistocene North American open parkland with grasses, sage, scattered spruce, and a broad horizon.\nSubject: Exactly one complete Arctodus simus in a right-facing eye-level three-quarter lateral walk. Preserve a true bear body but emphasize the conservative fossil-led distinctions: a very large broad and deep head, broad cheek region, moderately shortened-looking muzzle without pug flattening, compact rounded ears, thick neck, deep chest, a relatively short powerful trunk, long robust weight-bearing limb bones that give a taller stance without becoming thin stilts, hips close to shoulder height, and no exaggerated modern grizzly shoulder hump. Show exactly four attached limbs and four separate plantigrade bear paws with heels down; five toes should be coherently suggested on each readable paw and claws mostly sheathed. One very short tail. Coat is dark charcoal-brown with subtle warm brown highlights as a hypothesis.\nComposition/framing: horizontal 16:9, complete full body and all four paws inside frame, generous clearance; low but not dramatic camera, calm slow walk.\nLighting/mood: cool sunrise sidelight, alert but non-aggressive.\nConstraints: original anatomy-led museum-quality educational paleoart; no named artist style, franchise likeness, text, logo, border, or watermark.\nAvoid: modern grizzly shoulder hump and exact grizzly silhouette; polar bear, black bear, hyena, wolf, cat, lion, gorilla, or bulldog anatomy; extremely long skinny cheetah legs; flat pug face; mane, saber teeth, long tail, toe-walking, four-toed cat paws, exposed huge claws; extra, missing, fused, or duplicated legs, feet, heads, or tails; sprint, chase, attack, carcass, blood, humans, buildings, cropped anatomy."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-08",
+        "method": "Original-size full-frame identity, count, connected-limb, visible-foot, tail, crop, artifact, copyright-safety, and promotion audit",
+        "checks": {
+          "expectedAnimalCount": "PASS",
+          "fullFrameAndEdgeClearance": "PASS",
+          "identityAnatomy": "PASS",
+          "connectedLimbsAndFeet": "PASS",
+          "tailAndBodyConnection": "PASS",
+          "artifactAndDuplication": "PASS",
+          "textLogoWatermark": "PASS",
+          "compositionDistinctFromOtherSlots": "PASS",
+          "representativePromotionGate": "PASS"
+        },
+        "result": "retry passes broad bear head, moderate muzzle, level shoulders, four robust limbs, broad plantigrade feet, and short tail"
+      }
+    },
+    "arctodus-simus-pattern-v1": {
+      "taxon": "Arctodus simus",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-08; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image workflow",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-5c9cd343-a694-4fe2-90d2-cb864f74d8d5",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-5c9cd343-a694-4fe2-90d2-cb864f74d8d5.png",
+      "approvedProjectPath": "assets/dinosaurs/arctodus-simus-rear-aspen-gray-review-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style used.",
+      "sha256": "a1cbcc4532b3d7a54f6a4534c6c5406ab7e2fcb029311f44aa969c6318120e7c",
+      "bytes": 2797540,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational\nAsset type: Dino Atlas Cenozoic gallery color-and-composition review image, ages 5-14\nPrimary request: One adult Arctodus simus in a composition and coat hypothesis clearly different from the representative.\nScene/backdrop: Late Pleistocene North American aspen woodland margin after light rain, with damp grass and a distant open basin.\nSubject: A single complete giant short-faced bear walking left and glancing slightly back in a high rear-side three-quarter view. Preserve a broad deep head, moderately shortened-looking but not flat muzzle, compact ears, thick neck, deep chest, powerful short trunk, robust proportionately tall limbs without thin stilts, hips near shoulder height, no exaggerated grizzly shoulder hump, exactly four attached bear limbs, four separate plantigrade five-toed bear paws, mostly sheathed claws, and one very short tail. Use a plausible cool smoke-gray and muted cinnamon coat with broad irregular tonal areas only, no modern species markings.\nComposition/framing: horizontal 16:9; high rear oblique, left-facing, full body and every paw inside frame, clearly distinct from the right-facing eye-level representative.\nLighting/mood: soft post-rain light, calm and alert.\nConstraints: original anatomy-led educational paleoart; no named artist style, text, logo, border, or watermark.\nAvoid: exact grizzly, polar bear, black bear, hyena, wolf, or cat copy; shoulder hump, pug face, cheetah legs, mane, sabers, long tail, toe-walking; extra or missing limbs or feet; three-legged anatomy; oversized exposed claws; attack, blood, cropped anatomy."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-08",
+        "method": "Original-size full-frame identity, count, connected-limb, visible-foot, tail, crop, artifact, copyright-safety, and promotion audit",
+        "checks": {
+          "expectedAnimalCount": "PASS",
+          "fullFrameAndEdgeClearance": "PASS",
+          "identityAnatomy": "REVIEW",
+          "connectedLimbsAndFeet": "PASS",
+          "tailAndBodyConnection": "PASS",
+          "artifactAndDuplication": "PASS",
+          "textLogoWatermark": "PASS",
+          "compositionDistinctFromOtherSlots": "PASS",
+          "representativePromotionGate": "BLOCKED"
+        },
+        "result": "bear plan and counts pass; rear view, far toes, shoulder line, fur, and color remain reconstruction"
+      }
+    },
+    "arctodus-simus-ecology-v1": {
+      "taxon": "Arctodus simus",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "kind": "anatomy review",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-08; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image workflow",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-62ec68f3-13f6-43c0-bf31-c6b3db16208f",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-62ec68f3-13f6-43c0-bf31-c6b3db16208f.png",
+      "approvedProjectPath": "assets/dinosaurs/arctodus-simus-log-berry-foraging-ecology-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style used.",
+      "sha256": "2edc65412fe2e791ee0af53df1b64a29c737705f892f2348aee00af10bf53d6c",
+      "bytes": 2979277,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational\nAsset type: Dino Atlas Cenozoic habitat-ecology gallery image for children ages 5-14\nPrimary request: Show one Arctodus simus performing a cautious omnivorous foraging behavior rather than an exaggerated chase.\nScene/backdrop: Late Pleistocene North American open woodland edge with berry shrubs, sedges, a decaying fallen log, damp soil, and a wide grassland beyond.\nSubject: Exactly one complete giant short-faced bear walking slowly across the scene with its broad head lowered to sniff near a berry shrub and fallen log. Preserve a moderately shortened-looking but not flat muzzle, compact ears, thick neck, deep chest, powerful compact trunk, robust proportionately tall weight-bearing limbs without a grizzly shoulder hump, exactly four attached bear legs, four separate plantigrade five-toed paws all visible and separated on the ground, mostly sheathed claws, and one very short tail. Use dark brown-gray fur with natural irregular highlights.\nComposition/framing: horizontal 16:9, wide slightly high side view; the bear occupies less than half the frame, every paw, head, rump, and tail inside the frame; landscape and foraging context remain readable.\nLighting/mood: soft overcast light, calm exploratory behavior, non-graphic.\nConstraints: original anatomy-led educational paleoecology; diet and exact behavior remain hypotheses; no named artist style, text, logo, border, or watermark.\nAvoid: sprinting predator, attack, carcass, blood; modern grizzly hump, polar bear, hyena, wolf, cat, pug face, extremely long thin legs; long tail, toe-walking, oversized exposed claws; extra, missing, fused, or hidden legs and feet; three-legged appearance; humans, buildings, cropped anatomy."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-08",
+        "method": "Original-size full-frame identity, count, connected-limb, visible-foot, tail, crop, artifact, copyright-safety, and promotion audit",
+        "checks": {
+          "expectedAnimalCount": "PASS",
+          "fullFrameAndEdgeClearance": "PASS",
+          "identityAnatomy": "REVIEW",
+          "connectedLimbsAndFeet": "PASS",
+          "tailAndBodyConnection": "PASS",
+          "artifactAndDuplication": "PASS",
+          "textLogoWatermark": "PASS",
+          "compositionDistinctFromOtherSlots": "PASS",
+          "representativePromotionGate": "BLOCKED"
+        },
+        "result": "full-body plan passes; berry and log investigation is an omnivory illustration"
+      }
+    },
+    "glyptodon-reticulatus-representative-v1": {
+      "taxon": "Glyptodon reticulatus",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-08; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image workflow",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-da689b05-c643-40d1-9da9-23068928ede1",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-da689b05-c643-40d1-9da9-23068928ede1.png",
+      "approvedProjectPath": "assets/dinosaurs/glyptodon-reticulatus-rigid-carapace-ringed-tail-representative-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style used.",
+      "sha256": "99319018409afed851949fc0de73b4b923e692d8210b8e2732bc5052f8715388",
+      "bytes": 2714502,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational\nAsset type: Dino Atlas Cenozoic gallery representative image for children ages 5-14\nPrimary request: Create one anatomically conservative adult Glyptodon reticulatus, a giant glyptodont armadillo relative, as original museum-quality paleoart.\nScene/backdrop: Late Pleistocene Argentine Pampas with low grasses, scattered forbs, dry patches, and a wide open horizon.\nSubject: One complete Glyptodon reticulatus walking slowly toward the right in an eye-level three-quarter lateral view. It must have a low broad body, a small short deep head protected by a bony head cap, one huge rigid high-domed carapace permanently integrated with the body, and carapace osteoderms arranged as naturally irregular rosette-like polygonal mosaics with small variations rather than a perfectly repeated grid. Show exactly four short thick weight-bearing limbs connected beneath the shell, four separate sturdy clawed feet, and one complete stout tail covered by a sequence of flexible armored rings that gradually taper to a plain blunt end. The tail must not have a mace, spikes, or a giant terminal club. Use muted earth-brown and gray-ochre armor with sparse short fur only on exposed soft parts as a cautious hypothesis.\nComposition/framing: horizontal 16:9, entire head, shell, four feet, and tail tip inside the frame with generous clearance; low calm walking pose.\nLighting/mood: warm natural morning light, clear educational silhouette.\nConstraints: anatomy-led original educational paleoart; no named artist style, franchise likeness, text, logo, border, or watermark.\nAvoid: modern nine-banded armadillo with flexible body bands across the torso; turtle or tortoise shell separated from the body; ankylosaur or Doedicurus tail club, spikes, horns, or dinosaur anatomy; long pointed snout, large rabbit ears, long fur; perfectly identical stamped hexagons; extra, missing, fused, or duplicated limbs, feet, heads, shells, or tails; three-legged anatomy; feet growing from the shell; cropped shell, feet, or tail; attack, humans, buildings, gore."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-08",
+        "method": "Original-size full-frame identity, count, connected-limb, visible-foot, tail, crop, artifact, copyright-safety, and promotion audit",
+        "checks": {
+          "expectedAnimalCount": "PASS",
+          "fullFrameAndEdgeClearance": "PASS",
+          "identityAnatomy": "PASS",
+          "connectedLimbsAndFeet": "PASS",
+          "tailAndBodyConnection": "PASS",
+          "artifactAndDuplication": "PASS",
+          "textLogoWatermark": "PASS",
+          "compositionDistinctFromOtherSlots": "PASS",
+          "representativePromotionGate": "PASS"
+        },
+        "result": "small armored head, rigid dome, irregular rosettes, four limbs and feet, and ringed non-clubbed tail pass"
+      }
+    },
+    "glyptodon-reticulatus-pattern-v2": {
+      "taxon": "Glyptodon reticulatus",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-08; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image workflow",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-bd9e5797-d475-4a66-8b5b-ca032c8334df",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-bd9e5797-d475-4a66-8b5b-ca032c8334df.png",
+      "approvedProjectPath": "assets/dinosaurs/glyptodon-reticulatus-four-visible-feet-review-imagegen-v2.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style used.",
+      "sha256": "09f67abef8939dc6bbcae08f925e1eb2fdec46a95f9556672bcc94ede15465a2",
+      "bytes": 2934669,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational\nAsset type: Dino Atlas Cenozoic gallery color-and-composition review image, ages 5-14\nPrimary request: Create a fresh Glyptodon reticulatus variant in which all four limbs and all four feet are unquestionably visible and separated.\nScene/backdrop: Late Pleistocene Argentine damp grassland edge after rain, with low sedges, sparse shallow puddles, and a distant horizon.\nSubject: Exactly one complete Glyptodon reticulatus walking slowly left. Preserve one small short deep armored head, one rigid domed carapace integrated with the body, irregular varied rosette-like osteoderms, and one complete armored-ring tail tapering to a plain end with no mace, spikes, or club. Show exactly four short thick limbs: two front legs and two rear legs, all naturally attached beneath the body. Arrange them in an open walking stance so the near front, far front, near rear, and far rear feet occupy four clearly separate non-overlapping ground positions with visible daylight or ground between them. Show exactly four distinct sturdy clawed feet; no foot may be hidden by the shell, another leg, mud, or tail. Dark charcoal-umber armor with muted clay highlights.\nComposition/framing: horizontal 16:9, moderately high front-side three-quarter view from the animal's right, all four feet, head, shell and tail tip inside frame; no limb overlap.\nLighting/mood: cool overcast morning, calm.\nConstraints: original anatomy-led educational paleoart; no named artist style, text, logo, border, or watermark.\nAvoid: three-legged appearance; hidden far leg; overlapping or fused feet; extra limbs; modern banded armadillo, turtle, ankylosaur, Doedicurus tail club, spikes, perfect repeated hexagon grid; cropped anatomy, attack, gore."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-08",
+        "method": "Original-size full-frame identity, count, connected-limb, visible-foot, tail, crop, artifact, copyright-safety, and promotion audit",
+        "checks": {
+          "expectedAnimalCount": "PASS",
+          "fullFrameAndEdgeClearance": "PASS",
+          "identityAnatomy": "REVIEW",
+          "connectedLimbsAndFeet": "PASS",
+          "tailAndBodyConnection": "PASS",
+          "artifactAndDuplication": "PASS",
+          "textLogoWatermark": "PASS",
+          "compositionDistinctFromOtherSlots": "PASS",
+          "representativePromotionGate": "BLOCKED"
+        },
+        "result": "retry passes four separately visible feet; perspective, digits, osteoderms, and color remain reconstruction"
+      }
+    },
+    "glyptodon-reticulatus-ecology-v1": {
+      "taxon": "Glyptodon reticulatus",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "kind": "anatomy review",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-08; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image workflow",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-26c511ed-d15a-4c11-96e9-037e86eff95f",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-26c511ed-d15a-4c11-96e9-037e86eff95f.png",
+      "approvedProjectPath": "assets/dinosaurs/glyptodon-reticulatus-megatherium-coexistence-ecology-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style used.",
+      "sha256": "4e9fdfa47d726b01876b45b95a23d04f6414578c5fd250481d98e9d533e2b7fb",
+      "bytes": 3158372,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational\nAsset type: Dino Atlas Cenozoic multi-species habitat-ecology gallery image for children ages 5-14\nPrimary request: Create a calm Late Pleistocene South American coexistence scene led by Glyptodon reticulatus with a distant Megatherium americanum, no contact.\nScene/backdrop: Rich Argentine Pampas woodland edge with low grasses, flowering forbs, patches of damp soil, scattered thorn trees, and a broad open horizon.\nSubject: In the foreground, exactly one complete Glyptodon reticulatus feeds on low vegetation. It has one small armored head, one rigid domed carapace integrated with the body and covered in irregular rosette-like osteoderms, exactly four short thick connected legs, four distinct separated clawed feet, and one armored-ring tail tapering to a plain end with no club or spikes. Far behind and clearly separated by open ground, show exactly one complete Megatherium americanum at a shrub: a small sloth-like head, huge deep torso, exactly two forelimbs and two hindlimbs, four total feet/hands, and one very thick tapering tail. Keep the distant ground sloth small enough that it does not merge with the foreground animal. No additional animals.\nComposition/framing: horizontal 16:9, wide moderately high landscape view; Glyptodon is the readable foreground subject, Megatherium is a distinct background context animal, both whole bodies inside frame with clear space between them.\nLighting/mood: warm calm morning, non-graphic coexistence.\nConstraints: original anatomy-led educational paleoecology; coexistence location and moment are illustrative; no named artist style, text, logo, border, or watermark.\nAvoid: contact, attack, herd, more than two animals; fused silhouettes; modern banded armadillo, turtle, ankylosaur, Doedicurus tail club; bear or therizinosaur Megatherium; extra, missing, fused, or hidden limbs and feet; three-legged foreground animal; cropped anatomy, humans, buildings, gore."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-08",
+        "method": "Original-size full-frame identity, count, connected-limb, visible-foot, tail, crop, artifact, copyright-safety, and promotion audit",
+        "checks": {
+          "expectedAnimalCount": "PASS",
+          "fullFrameAndEdgeClearance": "PASS",
+          "identityAnatomy": "REVIEW",
+          "connectedLimbsAndFeet": "PASS",
+          "tailAndBodyConnection": "PASS",
+          "artifactAndDuplication": "PASS",
+          "textLogoWatermark": "PASS",
+          "compositionDistinctFromOtherSlots": "PASS",
+          "representativePromotionGate": "BLOCKED"
+        },
+        "result": "foreground counts pass and distant Megatherium is non-contact; exact shared scene is illustrative"
+      }
+    }
+  },
+  "rejectedAttempts": [
+    {
+      "taxon": "Megatherium americanum",
+      "callId": "exec-3c08cba2-ba93-4eca-a09f-df0b62c43a42",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-3c08cba2-ba93-4eca-a09f-df0b62c43a42.png",
+      "copiedToProject": false,
+      "prompt": [
+        "Use case: scientific-educational\nAsset type: Dino Atlas Cenozoic gallery representative image for children ages 5-14\nPrimary request: Create one anatomically conservative adult Megatherium americanum, the giant ground sloth, as original museum-quality paleoart.\nScene/backdrop: Late Pleistocene southern South American open pampas with scattered thorny shrubs, low trees, grasses, and dry soil.\nSubject: One complete Megatherium americanum moving calmly on all fours in a left-facing low three-quarter view. It must be elephant-scale but unmistakably a ground sloth: small short deep head, short neck, enormous deep barrel-shaped torso, very broad pelvis and powerful hindquarters, two long strong forelimbs, two massive hindlimbs, exactly four connected limbs, large inward-curving claws on the forefeet with the hands turned naturally inward, specialized broad hindfeet, and one long extremely thick muscular tail tapering continuously from the pelvis and remaining fully visible. Use dense coarse muted gray-brown fur as a cautious soft-tissue hypothesis; keep every limb joint, foot, claw grouping, head, and tail readable.\nComposition/framing: horizontal 16:9, full body entirely inside frame with generous ground clearance; calm quadrupedal walking pose, not rearing and not repeating the mastodon camera direction.\nLighting/mood: warm clear morning light, natural and calm.\nConstraints: anatomy-led original educational paleoart; no named artist style, franchise likeness, text, logo, border, or watermark.\nAvoid: tree sloth hanging from a branch; bear, anteater, gorilla, therizinosaur, dinosaur, or fantasy hybrid anatomy; fully upright human posture or bipedal running; long neck; tusks or carnivore fangs; shell, armor plates, scales, tail club; thin or missing tail; extra, missing, fused, or duplicated limbs, feet, claws, heads, or tails; three-legged anatomy; identical repeated claws; cropped head, claws, feet, or tail; attack, blood, humans, buildings."
+      ],
+      "reason": "Rejected: bear-like face and only about two large readable claws."
+    },
+    {
+      "taxon": "Arctodus simus",
+      "callId": "exec-13f90205-6559-4a52-b2c4-1a2342ad4d26",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-13f90205-6559-4a52-b2c4-1a2342ad4d26.png",
+      "copiedToProject": false,
+      "prompt": [
+        "Use case: scientific-educational\nAsset type: Dino Atlas Cenozoic gallery representative image for children ages 5-14\nPrimary request: Create one anatomically conservative adult giant short-faced bear, Arctodus simus, as original museum-quality paleoart.\nScene/backdrop: Late Pleistocene North American open woodland and grassland mosaic with a broad valley, low shrubs, and distant conifers; no deep snow.\nSubject: One complete Arctodus simus walking calmly toward the left in a slightly low front-side three-quarter view. It must be unmistakably a very large robust bear: broad heavy head, deep skull, a moderately short-looking but not bulldog-flat muzzle, small rounded ears, thick neck, deep chest, powerful shoulders and hips, exactly four sturdy bear limbs, four clearly separate plantigrade bear paws with the heels down and five toes suggested on each visible paw, mostly sheathed claws, and one very short tail. The limbs may look tall in absolute size but must remain weight-bearing and proportionate to the massive body, not stilt-like. Use a dense dark umber-brown coat with a muted tan muzzle as a soft-tissue hypothesis; no fixed modern bear species pattern.\nComposition/framing: horizontal 16:9, complete body inside frame with clearance around head, paws, rump, and tail; slow purposeful walk, all four limbs anatomically resolved.\nLighting/mood: cool late-afternoon natural light, calm alert mood.\nConstraints: anatomy-led original educational paleoart; no named artist style, franchise likeness, text, logo, border, or watermark.\nAvoid: cheetah-like or extremely long thin legs; hyena, wolf, lion, tiger, cat, or gorilla anatomy; exaggerated flat pug muzzle; grizzly shoulder hump as a defining feature; polar-bear white coat; mane, saber teeth, long tail, cat paws; toe-walking posture; exposed oversized claws; extra, missing, fused, or duplicated legs, feet, toes, heads, or tails; three-legged anatomy; sprinting chase, attack, carcass, blood, humans, buildings, cropped anatomy."
+      ],
+      "reason": "Rejected: excessive modern-grizzly shoulder hump and silhouette."
+    },
+    {
+      "taxon": "Glyptodon reticulatus",
+      "callId": "exec-47a4a31a-3ac0-471b-aa02-02d531bb6683",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-47a4a31a-3ac0-471b-aa02-02d531bb6683.png",
+      "copiedToProject": false,
+      "prompt": [
+        "Use case: scientific-educational\nAsset type: Dino Atlas Cenozoic gallery color-and-composition review image, ages 5-14\nPrimary request: One adult Glyptodon reticulatus in a high rear-side composition that reveals the shell mosaic without changing the body plan.\nScene/backdrop: Late Pleistocene Argentine floodplain edge with damp dark soil, low sedges, short grasses, and shallow reflective water well away from the animal.\nSubject: A single complete Glyptodon reticulatus moving left. Preserve a small short deep armored head, one enormous rigid domed carapace integrated with the body, naturally irregular rosette-like osteoderms with varied sizes and spacing, exactly four short thick connected limbs, four separate sturdy clawed feet, and one complete stout tail of flexible armor rings tapering to a plain end without a club or spikes. Use darker charcoal-umber armor with muted clay highlights as a color hypothesis; sparse short fur only on exposed soft parts.\nComposition/framing: horizontal 16:9; moderately high rear three-quarter view, left-facing, full head, shell, all four feet, and tail tip visible, distinct from the right-facing eye-level representative.\nLighting/mood: cool morning after rain, calm.\nConstraints: original anatomy-led educational paleoart; no named artist style, text, logo, border, or watermark.\nAvoid: modern armadillo flexible torso bands, turtle shell, ankylosaur or Doedicurus tail club, spikes, horns, long snout, large ears, repeated perfect hexagon grid; extra or missing limbs or tail; three-legged anatomy; feet growing from shell; cropped anatomy, attack, gore."
+      ],
+      "reason": "Rejected: hidden far hind foot produced a three-legged read."
+    }
+  ]
+}

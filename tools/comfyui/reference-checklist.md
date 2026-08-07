@@ -427,3 +427,109 @@ Evidence boundary:
 Promotion rule:
 
 - S1 is the sole `count-level pass` representative. S2 remains a coat-pattern `review hold`; S3 remains a non-contact habitat `anatomy review`. S2 and S3 cannot replace or outrank S1 without a separate anatomy-promotion review.
+
+## Mammut americanum
+
+Reference anchors:
+
+- National Park Service species overview: https://www.nps.gov/articles/000/mammut_americanum.htm
+- National Park Service mammoth-or-mastodon comparison: https://www.nps.gov/articles/mammoth-or-mastodon.htm
+- Natural History Museum reconstruction notes: https://www.nhm.ac.uk/discover/the-making-of-an-american-mastodon.html
+- Larramendi 2016 proboscidean body-shape study: https://doi.org/10.4202/app.00136.2014
+
+Must read as:
+
+- a stocky North American mastodon with a comparatively near-level back and shoulders, a lower and broader head than the woolly-mammoth direction, modest ears, one trunk, and a short complete tail
+- exactly two separate upper tusks with gentle upward curvature, exactly four attached columnar limbs, and four broad feet; woodland browsing is a broad ecological direction rather than a claim about the pictured individual
+
+Reject if:
+
+- it becomes a high-shouldered, strongly rear-sloping, domed-headed woolly mammoth; a fan-eared modern elephant clone; or a fantasy proboscidean with spiral mammoth tusks, lower-jaw tusks, extra trunks, or a long tufted tail
+- tusks, trunk, limbs, feet, or tail are duplicated, fused, missing, crossed, malformed, or hidden enough to prevent a confident count
+
+Evidence boundary:
+
+- The near-level mastodon body plan and a browsing association with wooded habitats are evidence-led. Exact hair density, color, sex, age, tusk curvature, gait, season, weather, named plant, and the S3 willow-feeding moment remain reconstructions.
+
+Promotion rule:
+
+- S1 is the only `count-level pass` representative candidate in this intake. S2 remains `review hold`; S3 remains `anatomy review`. None is a final anatomy-certified representative, and S2 or S3 cannot replace or outrank S1 without a separate promotion review.
+
+## Megatherium americanum
+
+Reference anchors:
+
+- Natural History Museum overview: https://www.nhm.ac.uk/discover/what-was-megatherium.html
+- Bargo 2001 skull, bite-force, and diet study: https://www.app.pan.pl/article/item/app46-173.html
+- CONICET museum overview: https://www.conicet.gov.ar/a-mosasaurus-and-a-megatherium-were-presented-at-the-macns-202-anniversary/
+
+Must read as:
+
+- a huge deep-bodied terrestrial sloth with a relatively small head, massive pelvis and hindquarters, two long robust forelimbs bearing large curved claws, two weight-bearing hind limbs, and one thick muscular tail
+- a primarily quadrupedal animal for which a stationary hind-limb-and-tail tripod may be shown only as a conservative reconstruction; it must not be forced into a permanent upright stance or a running bipedal gait
+
+Reject if:
+
+- it becomes a bear, giant anteater, gorilla, Therizinosaurus, or generic furry monster; loses the massive pelvis and thick tail; gains a narrow whiplike tail; or uses its forelimbs as an extra pair of hind legs
+- limbs, feet, claw groups, or tail are duplicated, fused, missing, disconnected, or cropped; do not claim a precise living digit formula when the generated hand is not clear enough to support it
+
+Evidence boundary:
+
+- The massive body, strong hindquarters, large foreclaws, and heavy tail are skeleton-led. Fur, color, external ear and nose form, exact claw sheath, gait phase, plant, weather, tail-ground contact, and feeding action are reconstructed. S3 is a conservative stationary tripod-browse visualization, not evidence for a permanent upright gait or this exact event.
+
+Promotion rule:
+
+- S1 is the only `count-level pass` representative candidate in this intake. S2 remains `review hold`; S3 remains `anatomy review`. Exact manus and pedal anatomy still require a dedicated source comparison before any final representative promotion.
+
+## Arctodus simus
+
+Reference anchors:
+
+- Schubert et al. Florida occurrence and range record: https://doi.org/10.1666/09-113.1
+- Figueirido et al. body-proportion and ecomorphology review: https://doi.org/10.1080/02724630903416027
+- North American short-faced-bear diet study: https://www.nature.com/articles/s41598-017-18116-0
+
+Must read as:
+
+- a very large robust bear with a broad deep head, compact ears, and a moderate bear-like muzzle that is not forced into a bulldog-flat "short face"; keep the shoulders free of an exaggerated grizzly hump and retain one short tail
+- exactly four attached robust limbs and plantigrade, five-toed bear paws when the digits are readable; relatively tall proportions must remain weight-bearing and bear-like rather than becoming digitigrade, cheetah-like pursuit stilts
+
+Reject if:
+
+- it becomes a certain modern grizzly, polar bear, bulldog-faced fantasy bear, hyena, or long-legged sprinting specialist; gains a towering shoulder hump, long tail, digitigrade feet, hoof-like toes, or feline paws
+- limbs, paws, toes, head, or tail are duplicated, fused, disconnected, missing, or obscured enough to block review
+
+Evidence boundary:
+
+- Body proportions and bear-family anatomy are fossil-led, and published work cautions that the face was not exceptionally short and the limbs were not exceptional pursuit-runner stilts after body-size scaling. Muzzle soft tissue, coat, color, shoulder contour, speed, sociality, hunting, scavenging, and dietary emphasis remain debated or reconstructed. S3's log and berries establish no preferred food, predation, scavenging, or observed foraging sequence.
+
+Promotion rule:
+
+- S1 is the only `count-level pass` representative candidate in this intake. S2 remains `review hold`; S3 remains `anatomy review`. Modern-bear visual familiarity is not sufficient for promotion; a source-led skull, limb, and paw comparison is still required.
+
+## Glyptodon reticulatus
+
+Reference anchors:
+
+- Recent Glyptodon systematic revision: https://link.springer.com/article/10.1186/s13358-023-00280-8
+- Ancient-DNA placement within armadillos: https://doi.org/10.1016/j.cub.2016.01.039
+- Comparative glyptodont tail-weaponry anatomy: https://doi.org/10.1002/ar.24093
+- Museum national d'Histoire naturelle overview: https://www.mnhn.fr/fr/glyptodonte
+
+Must read as:
+
+- a large glyptodont with one rigid high-domed carapace built from many irregular rosette-like osteoderms, a small armored head, exactly four short stout legs and feet, and one armored tail carried in successive osteoderm rings
+- the tail must taper without an expanded Doedicurus-like knob or spikes; its distal fusion details remain a review boundary. The rigid carapace must not become a flexible modern-armadillo band series, turtle shell, or ankylosaur armor
+
+Reject if:
+
+- it becomes a tortoise, ankylosaur, Doedicurus with a clubbed or spiked tail, fantasy tank, or enlarged modern armadillo with fully flexible bands
+- legs, feet, armor, head, or tail are duplicated, fused, missing, floating, or hidden enough to create a three-legged read; regular tiled texture alone cannot substitute for reviewable osteoderm rosettes
+
+Evidence boundary:
+
+- `Glyptodon reticulatus` is used here following recent revision, while historical `G. clavipes` assignments and species boundaries have changed. Visible gates are therefore conservative and mostly genus-level. Exact osteoderm geometry, soft tissue, hair, color, habitat, posture, and the S3 shared frame with Megatherium remain reconstructions; the scene proves no encounter, herd, or exact locality and moment of coexistence.
+
+Promotion rule:
+
+- S1 is the only `count-level pass` representative candidate in this intake. S2 remains `review hold`; S3 remains a two-taxon `anatomy review`. Species-level osteoderm comparison and a separate promotion decision are required before final representative certification.

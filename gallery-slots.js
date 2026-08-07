@@ -53,6 +53,118 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     }
   ],
+  "mammut-americanum": [
+    {
+      "source": "assets/dinosaurs/mammut-americanum-level-back-upcurved-tusks-representative-imagegen-v1.png",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-eastern-woodland",
+      "expectedKind": "count-level pass"
+    },
+    {
+      "source": "assets/dinosaurs/mammut-americanum-left-rear-woodland-review-imagegen-v1.png",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "claimBoundary": "Coat, season, exact gait, and distal-foot detail remain hypothetical; not representative-eligible.",
+      "phenotype": "variant-b",
+      "habitatKey": "late-pleistocene-woodland-trail",
+      "expectedKind": "review hold"
+    },
+    {
+      "source": "assets/dinosaurs/mammut-americanum-willow-browsing-ecology-imagegen-v1.png",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "claimBoundary": "Woody browsing is evidence-led at broad scale; the pictured plant, pose, place, and moment remain hypothetical.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-wetland-woodland-browse",
+      "expectedKind": "anatomy review"
+    }
+  ],
+  "megatherium-americanum": [
+    {
+      "source": "assets/dinosaurs/megatherium-americanum-thick-tail-fourlimb-representative-imagegen-v2.png",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-southern-pampas-scrub",
+      "expectedKind": "count-level pass"
+    },
+    {
+      "source": "assets/dinosaurs/megatherium-americanum-right-streambank-review-imagegen-v1.png",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "claimBoundary": "Exact gait phase, claw digits, coat, streambank, and locality remain hypothetical; not representative-eligible.",
+      "phenotype": "variant-b",
+      "habitatKey": "late-pleistocene-pampas-streambank",
+      "expectedKind": "review hold"
+    },
+    {
+      "source": "assets/dinosaurs/megatherium-americanum-tripod-browse-ecology-imagegen-v1.png",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "claimBoundary": "Tripod support is anatomically plausible, but this exact stance, duration, plant, place, and event remain hypothetical.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-pampas-shrub-browse",
+      "expectedKind": "anatomy review"
+    }
+  ],
+  "arctodus-simus": [
+    {
+      "source": "assets/dinosaurs/arctodus-simus-level-shoulders-plantigrade-representative-imagegen-v2.png",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-north-american-open-woodland",
+      "expectedKind": "count-level pass"
+    },
+    {
+      "source": "assets/dinosaurs/arctodus-simus-rear-aspen-gray-review-imagegen-v1.png",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "claimBoundary": "Rear perspective, distal digits, exact gait, coat, season, and habitat remain hypothetical; not representative-eligible.",
+      "phenotype": "variant-b",
+      "habitatKey": "late-pleistocene-aspen-parkland",
+      "expectedKind": "review hold"
+    },
+    {
+      "source": "assets/dinosaurs/arctodus-simus-log-berry-foraging-ecology-imagegen-v1.png",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "claimBoundary": "Broad omnivory is plausible, but berries, log investigation, exact diet choice, place, and moment remain hypothetical.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-open-woodland-log-forage",
+      "expectedKind": "anatomy review"
+    }
+  ],
+  "glyptodon-reticulatus": [
+    {
+      "source": "assets/dinosaurs/glyptodon-reticulatus-rigid-carapace-ringed-tail-representative-imagegen-v1.png",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-south-american-pampas",
+      "expectedKind": "count-level pass"
+    },
+    {
+      "source": "assets/dinosaurs/glyptodon-reticulatus-four-visible-feet-review-imagegen-v2.png",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "claimBoundary": "Exact distal digits, osteoderm geometry, color, wetland, and species-level identity remain hypothetical; not representative-eligible.",
+      "phenotype": "variant-b",
+      "habitatKey": "late-pleistocene-pampas-dry-channel",
+      "expectedKind": "review hold"
+    },
+    {
+      "source": "assets/dinosaurs/glyptodon-reticulatus-megatherium-coexistence-ecology-imagegen-v1.png",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "claimBoundary": "Both genera occurred in Pleistocene South America, but this exact locality, spacing, shared moment, and behavior remain hypothetical.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-pampas-glyptodon-megatherium",
+      "expectedKind": "anatomy review"
+    }
+  ],
   "dimetrodon-grandis": [
     {
       "source": "assets/dinosaurs/dimetrodon-grandis-clearfork-sail-canine-representative-imagegen-v1.png",
