@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-08-07T00:00:00+09:00",
+  "status": "generation-pending",
+  "batchId": "2026-08-07-subject-motion-required",
+  "policy": {
+    "audience": "ages 5-14",
+    "scope": "ComfyUI-native Wan2.2 TI2V 5B tests in which the dinosaur itself must visibly move",
+    "newEnvironmentOnlyMotion": "prohibited",
+    "forwardOnlyTimeline": "required",
+    "reverseReturn": "prohibited",
+    "pingPongLoop": "prohibited",
+    "representativePromotion": "prohibited",
+    "galleryPromotion": "prohibited",
+    "anatomyPromotion": "prohibited",
+    "autoplay": "prohibited",
+    "audio": "prohibited",
+    "publicationRule": "A candidate may be copied into assets/motion/m2 only after all 81 decoded frames pass independent anatomy, identity, contact, background, camera, and temporal review. Rejected candidates remain process evidence outside public assets."
+  },
+  "comfyUiRoot": "C:/Users/USER/Documents/dinosour/tools/comfyui/ComfyUI",
+  "workflowTemplate": "tools/comfyui/workflow_templates/dino_wan22_ti2v_5b_i2v_long_api.json",
+  "settings": {
+    "width": 800,
+    "height": 448,
+    "frames": 81,
+    "fps": 16,
+    "durationSeconds": 5.0625,
+    "steps": 20,
+    "cfg": 5,
+    "sampler": "uni_pc",
+    "scheduler": "simple",
+    "shift": 8,
+    "denoise": 1
+  },
+  "commonNegativePrompt": "dinosaur completely frozen, no dinosaur movement, environment-only motion, moving clouds, moving water, moving plants, wind-only motion, background animation, severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, toe reshaping, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong motion, repeated ending, loop seam, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, blood, low quality, compression artifacts",
+  "reviewGate": {
+    "decodedFrames": 81,
+    "requiredChecks": [
+      "subject-motion-readability",
+      "head-neck-torso-continuity",
+      "limb-and-toe-count-continuity",
+      "tail-continuity",
+      "species-identity-continuity",
+      "ground-contact-stability",
+      "background-and-camera-stability",
+      "forward-only-temporal-integrity"
+    ],
+    "rejectOnAnyFailedFrame": true
+  },
+  "candidates": [
+    {
+      "id": "giganotosaurus-carolinii-connected-head-lift-f81-v1",
+      "taxonId": "giganotosaurus-carolinii",
+      "sceneRole": "solo-attentive-behavior",
+      "seed": 260807101,
+      "sourcePoster": "assets/dinosaurs/giganotosaurus-carolinii-lowskull-lacrimal-ridge-representative-imagegen-v1.png",
+      "sourcePosterSha256": "1c24e590cc8e06de4815fc28819cdbd14d66f65c290211aa67d66ee734e7e1c4",
+      "sourceLicense": "Original project-generated bitmap; factual sources only; no external artwork or copyrighted character style used.",
+      "sourceReviewStatus": "approved count-level representative source; forelimbs and hands remain comparative reconstruction; motion use only",
+      "inputName": "dino_atlas/motion_subject_required_20260807/giganotosaurus-carolinii-approved-representative-v1.png",
+      "outputPrefix": "dino_atlas/motion_subject_required_20260807/giganotosaurus-carolinii-connected-head-lift-wan22-s260807101-f81",
+      "record": "tools/comfyui/outputs/motion-subject-required-giganotosaurus-head-lift-s260807101-f81-v1-run.json",
+      "requiredVisibleMotion": ["complete head", "connected neck", "shoulder base", "throat"],
+      "reviewRegions": {
+        "head-neck": { "x": 0, "y": 70, "width": 360, "height": 280 },
+        "limbs-contact": { "x": 120, "y": 205, "width": 520, "height": 243 },
+        "tail": { "x": 470, "y": 80, "width": 330, "height": 280 }
+      },
+      "positivePrompt": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved still as the exact first-frame identity, anatomy, left-facing full-body composition, lighting, palette, skin markings, terrain, vegetation, and crop reference. Exactly one complete Giganotosaurus carolinii remains in frame with one long low rectangular skull, a narrow snout tip, one low swept-back lacrimal ridge, two short three-fingered forelimbs, exactly two strong hind limbs with two planted three-toed feet, and one complete continuous balancing tail. After a brief opening hold, the dinosaur itself makes one clearly visible attentive motion: the complete skull, muscular neck, throat, shoulder base, and upper chest lift together smoothly by seven to nine degrees and move slightly forward, with natural connected tissue and no isolated head hinge. The closed jaws and skull proportions remain constant. The final second holds the new higher attentive pose. Keep the torso, pelvis, both forelimbs, both planted hind feet, toes, and the entire tail stable at their source coordinates. Keep all trees, plants, clouds, shadows, and ground completely still. No return, reverse, second nod, repeated motion, walk, or loop.",
+      "negativePrompt": "open mouth, roar, chewing, detached jaw, split jaw, skull shortening, skull deepening into Tyrannosaurus, horn, crest, frontal head, large head turn, isolated head rotation, rubber neck, stretched neck, neck folding, body translation, body turn, walking, running, foot lift, knee bend, leg reshaping, extra leg, central third leg, missing leg, arm movement, long arms, two-finger hands, missing finger, tail swing, tail leaving frame, dorsal spikes, feathers"
+    },
+    {
+      "id": "giganotosaurus-carolinii-oneway-jaw-display-f81-v2",
+      "taxonId": "giganotosaurus-carolinii",
+      "sceneRole": "solo-vocal-display-hypothesis",
+      "seed": 260807102,
+      "settings": { "cfg": 6 },
+      "sourcePoster": "assets/dinosaurs/giganotosaurus-carolinii-lowskull-lacrimal-ridge-representative-imagegen-v1.png",
+      "sourcePosterSha256": "1c24e590cc8e06de4815fc28819cdbd14d66f65c290211aa67d66ee734e7e1c4",
+      "sourceLicense": "Original project-generated bitmap; factual sources only; no external artwork or copyrighted character style used.",
+      "sourceReviewStatus": "approved count-level representative source; forelimbs and hands remain comparative reconstruction; motion use only",
+      "inputName": "dino_atlas/motion_subject_required_20260807/giganotosaurus-carolinii-approved-representative-v1.png",
+      "outputPrefix": "dino_atlas/motion_subject_required_20260807/giganotosaurus-carolinii-oneway-jaw-display-wan22-s260807102-f81",
+      "record": "tools/comfyui/outputs/motion-subject-required-giganotosaurus-jaw-display-s260807102-f81-v2-run.json",
+      "requiredVisibleMotion": ["lower jaw", "complete head", "connected neck", "throat"],
+      "reviewRegions": {
+        "head-neck": { "x": 0, "y": 70, "width": 360, "height": 280 },
+        "limbs-contact": { "x": 120, "y": 205, "width": 520, "height": 243 },
+        "tail": { "x": 470, "y": 80, "width": 330, "height": 280 }
+      },
+      "positivePrompt": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved still as the exact first-frame identity, anatomy, left-facing full-body composition, lighting, palette, skin markings, terrain, vegetation, and crop reference. Exactly one complete Giganotosaurus carolinii remains in frame with one long low rectangular skull, narrow snout, low lacrimal ridge, two short three-fingered forelimbs, exactly two planted hind limbs, and one complete continuous tail. After a brief closed-mouth hold, the dinosaur itself performs one restrained silent display in a single temporal direction: the complete head and connected muscular neck rise only four degrees while only the lower jaw opens smoothly at the natural hinge to a moderate eighteen-to-twenty-two-degree gape. The throat expands once and the final second holds the open-mouth pose. Keep the upper skull, snout length, lacrimal ridge, eye, nostril, stable attached tooth rows, low tongue, and neck thickness consistent. Keep the torso, pelvis, arms, both feet, every readable toe, and full tail planted and unchanged. Keep every background element completely still. The jaw never closes and the head never returns; no reverse, recoil, repeated roar, walk, or loop.",
+      "negativePrompt": "closed mouth for entire shot, tiny invisible motion, extreme gape, upper skull bending, detached lower jaw, dislocated jaw, split jaw, duplicate jaw, rubber mouth, melting teeth, floating teeth, changing tooth rows, duplicate tongue, forked tongue, saliva, drool, skull shortening, Tyrannosaurus skull, horn, crest, frontal head, head thrust, neck stretch, neck seam, body translation, walking, foot lift, leg reshaping, arm movement, tail swing, prey, attack, bite contact"
+    },
+    {
+      "id": "iguanodon-bernissartensis-connected-head-rise-f81-v1",
+      "taxonId": "iguanodon-bernissartensis",
+      "sceneRole": "solo-attentive-behavior",
+      "seed": 260807103,
+      "sourcePoster": "assets/dinosaurs/iguanodon-bernissartensis-thumbspike-quadruped-representative-imagegen-v1.png",
+      "sourcePosterSha256": "f783ec03327c5ea7d8610342bcba7cab32bd968692767ef09c47bbaaf28cd1f0",
+      "sourceLicense": "Original project-generated bitmap; factual sources only; no external artwork or copyrighted character style used.",
+      "sourceReviewStatus": "approved count-level representative source; quadrupedal pose is an analytical interpretation; motion use only",
+      "inputName": "dino_atlas/motion_subject_required_20260807/iguanodon-bernissartensis-approved-representative-v1.png",
+      "outputPrefix": "dino_atlas/motion_subject_required_20260807/iguanodon-bernissartensis-connected-head-rise-wan22-s260807103-f81",
+      "record": "tools/comfyui/outputs/motion-subject-required-iguanodon-head-rise-s260807103-f81-v1-run.json",
+      "requiredVisibleMotion": ["complete head", "connected neck", "shoulder base", "throat"],
+      "reviewRegions": {
+        "head-neck-hands": { "x": 0, "y": 85, "width": 400, "height": 300 },
+        "limbs-contact": { "x": 110, "y": 205, "width": 560, "height": 243 },
+        "tail": { "x": 500, "y": 80, "width": 300, "height": 285 }
+      },
+      "positivePrompt": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved still as the exact first-frame Iguanodon bernissartensis identity, robust quadrupedal anatomy, left-facing full-body composition, lighting, palette, skin markings, woodland, ground, and crop reference. Exactly one complete Iguanodon remains with one beaked skull, a deep torso, two forelimbs with the original conical thumb spikes and weight-bearing central digits, exactly two hind limbs, four planted feet total, and one complete long tail. After a brief opening hold, the dinosaur itself raises the complete skull, connected neck, throat, shoulder base, and upper chest together by a clear five to seven degrees in one smooth continuous direction. The closed beak, jaw proportions, eye, cheek, thumb spikes, hand shape, and neck thickness remain constant. The final second holds the higher alert pose. Keep the pelvis, all four planted feet, every readable digit, both hands, both thumb spikes, and the full tail at their source coordinates. Keep all trees, plants, shadows, and sky completely still. No return, reverse, second nod, chewing, step, body turn, or loop.",
+      "negativePrompt": "open beak, teeth, tongue, duck bill, hadrosaur crest, horn, frontal skull, isolated head hinge, detached neck, long stretched neck, neck seam, hand movement, missing thumb spike, extra thumb spike, thumb spike changing size, palm flip, finger multiplication, foot lift, foot slide, bipedal rise, walking, running, body translation, pelvis shift, tail swing, tail drag, duplicate tail"
+    },
+    {
+      "id": "iguanodon-bernissartensis-oneway-browse-lower-f81-v2",
+      "taxonId": "iguanodon-bernissartensis",
+      "sceneRole": "solo-foraging-behavior",
+      "seed": 260807104,
+      "settings": { "cfg": 6 },
+      "sourcePoster": "assets/dinosaurs/iguanodon-bernissartensis-thumbspike-quadruped-representative-imagegen-v1.png",
+      "sourcePosterSha256": "f783ec03327c5ea7d8610342bcba7cab32bd968692767ef09c47bbaaf28cd1f0",
+      "sourceLicense": "Original project-generated bitmap; factual sources only; no external artwork or copyrighted character style used.",
+      "sourceReviewStatus": "approved count-level representative source; quadrupedal pose is an analytical interpretation; motion use only",
+      "inputName": "dino_atlas/motion_subject_required_20260807/iguanodon-bernissartensis-approved-representative-v1.png",
+      "outputPrefix": "dino_atlas/motion_subject_required_20260807/iguanodon-bernissartensis-oneway-browse-lower-wan22-s260807104-f81",
+      "record": "tools/comfyui/outputs/motion-subject-required-iguanodon-browse-lower-s260807104-f81-v2-run.json",
+      "requiredVisibleMotion": ["complete head", "connected neck", "shoulder base"],
+      "reviewRegions": {
+        "head-neck-hands": { "x": 0, "y": 85, "width": 400, "height": 300 },
+        "limbs-contact": { "x": 110, "y": 205, "width": 560, "height": 243 },
+        "tail": { "x": 500, "y": 80, "width": 300, "height": 285 }
+      },
+      "positivePrompt": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved still as the exact first-frame Iguanodon bernissartensis identity, robust quadrupedal anatomy, left-facing full-body composition, lighting, palette, skin markings, woodland, ground, and crop reference. Exactly one complete Iguanodon remains with one beaked skull, two forelimbs with the same conical thumb spikes and weight-bearing central digits, two hind limbs, four planted feet total, and one complete long tail. After a brief hold, the dinosaur itself makes one calm browsing motion: the complete skull, connected muscular neck, throat, shoulder base, and upper chest lower together by seven to nine degrees and move forward by about two percent of frame width toward the low vegetation. The beak stays closed and the final second holds the new lowered pose. Preserve the eye, cheek, beak proportions, neck thickness, hands, thumb spikes, all four feet, every readable digit, pelvis, and tail. Keep the background and plants still; the dinosaur moves toward them without plant animation. No return, reverse, second dip, bite cycle, step, walk, body turn, or loop.",
+      "negativePrompt": "open beak, chewing cycle, plant bending, moving vegetation, face-plant fusion, duck bill, hadrosaur crest, skull stretching, frontal turn, isolated head hinge, neck seam, neck collapse, hand movement, missing thumb spike, extra thumb spike, changing thumb spike, palm flip, finger multiplication, foot lift, foot slide, body translation, walking, bipedal rise, tail swing, tail drag"
+    },
+    {
+      "id": "ankylosaurus-magniventris-connected-head-rise-f81-v1",
+      "taxonId": "ankylosaurus-magniventris",
+      "sceneRole": "solo-attentive-behavior",
+      "seed": 260807105,
+      "settings": { "width": 768, "height": 512 },
+      "sourcePoster": "assets/dinosaurs/ankylosaurus-magniventris-oxbow-fern-browse-ecology-imagegen-v2.png",
+      "sourcePosterSha256": "ae4025f7b127e943bbe70bff5eb29130ab1cea047a80dfe966fca67970e215b6",
+      "sourceLicense": "Original project-generated bitmap; factual sources only; no external artwork or copyrighted character style used.",
+      "sourceReviewStatus": "approved habitat-ecology gallery source at review-hold evidence tier; motion use only",
+      "inputName": "dino_atlas/motion_subject_required_20260807/ankylosaurus-magniventris-approved-fern-browse-v2.png",
+      "outputPrefix": "dino_atlas/motion_subject_required_20260807/ankylosaurus-magniventris-connected-head-rise-wan22-s260807105-f81",
+      "record": "tools/comfyui/outputs/motion-subject-required-ankylosaurus-head-rise-s260807105-f81-v1-run.json",
+      "requiredVisibleMotion": ["complete head", "connected neck half-rings", "shoulder base", "throat"],
+      "reviewRegions": {
+        "head-neck": { "x": 0, "y": 180, "width": 370, "height": 300 },
+        "limbs-contact": { "x": 100, "y": 220, "width": 500, "height": 292 },
+        "tail-club": { "x": 430, "y": 110, "width": 338, "height": 310 }
+      },
+      "positivePrompt": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved still as the exact first-frame Ankylosaurus magniventris identity, low broad full-body anatomy, left-facing composition, wetland, lighting, palette, armor pattern, ground, and crop reference. Exactly one complete Ankylosaurus remains with one broad flat skull, small beaked mouth, two connected neck half-rings, irregular low osteoderms, exactly four planted legs, one complete continuous tail, and one integrated low oval tail club. After a brief low-browse hold, the dinosaur itself raises the complete skull, throat, connected neck half-rings, shoulder base, and upper chest together by a clearly visible seven to nine degrees in one smooth direction. The beak stays closed. The final second holds the new higher attentive pose. Keep the broad torso, pelvis, armor rows, all four feet, every readable toe, complete tail, and single club stable at their source coordinates. Keep all water, plants, clouds, trees, shadows, and ground completely still. No return, reverse, second nod, chew, step, tail swing, body turn, or loop.",
+      "negativePrompt": "open mouth, teeth, tongue, long narrow skull, crocodile skull, isolated head hinge, detached neck, neck ring splitting, armor crawling, armor multiplying, uniform turtle shell, giant spikes, body translation, walking, foot lift, foot sliding, extra leg, missing leg, tail movement, detached club, missing club, split club, two club balls, round mace ball, club morphing, water ripple, moving fern"
+    },
+    {
+      "id": "ankylosaurus-magniventris-clear-fern-bite-f81-v2",
+      "taxonId": "ankylosaurus-magniventris",
+      "sceneRole": "solo-foraging-behavior",
+      "seed": 260807106,
+      "settings": { "width": 768, "height": 512, "cfg": 6 },
+      "sourcePoster": "assets/dinosaurs/ankylosaurus-magniventris-oxbow-fern-browse-ecology-imagegen-v2.png",
+      "sourcePosterSha256": "ae4025f7b127e943bbe70bff5eb29130ab1cea047a80dfe966fca67970e215b6",
+      "sourceLicense": "Original project-generated bitmap; factual sources only; no external artwork or copyrighted character style used.",
+      "sourceReviewStatus": "approved habitat-ecology gallery source at review-hold evidence tier; motion use only",
+      "inputName": "dino_atlas/motion_subject_required_20260807/ankylosaurus-magniventris-approved-fern-browse-v2.png",
+      "outputPrefix": "dino_atlas/motion_subject_required_20260807/ankylosaurus-magniventris-clear-fern-bite-wan22-s260807106-f81",
+      "record": "tools/comfyui/outputs/motion-subject-required-ankylosaurus-fern-bite-s260807106-f81-v2-run.json",
+      "requiredVisibleMotion": ["complete head", "connected neck", "lower beak", "throat"],
+      "reviewRegions": {
+        "head-neck": { "x": 0, "y": 180, "width": 370, "height": 300 },
+        "limbs-contact": { "x": 100, "y": 220, "width": 500, "height": 292 },
+        "tail-club": { "x": 430, "y": 110, "width": 338, "height": 310 }
+      },
+      "positivePrompt": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous five-second shot with no cuts, no reversed footage, and no repeated segment. Preserve the attached approved still as the exact first-frame Ankylosaurus magniventris identity, low broad full-body anatomy, left-facing composition, wetland, lighting, palette, armor pattern, ground, and crop reference. Exactly one complete Ankylosaurus remains with one broad flat skull, small beaked mouth, two neck half-rings, irregular low osteoderms, exactly four planted legs, one continuous tail, and one integrated low oval tail club. The dinosaur itself performs one continuous natural feeding sequence: the complete head and connected neck move forward and down by a controlled visible distance, the small beak opens slightly and closes once on the nearest fern tips, the lower jaw makes one slow chew, and the throat contracts once. The head then remains in the final low feeding pose without returning to the first pose. Only the touched fern tips may bend slightly at the mouth; all other background pixels remain still. Keep the torso, pelvis, armor rows, four feet, toes, full tail, and club stable. No reverse playback, repeated bite, head bob loop, step, body turn, or tail movement.",
+      "negativePrompt": "dinosaur frozen, no bite, tiny invisible motion, wide roaring mouth, visible teeth, tongue, multiple chew cycles, repeated head bob, face-fern fusion, plant growing through skull, plant covering eye, long narrow skull, crocodile skull, neck seam, armor crawling, armor multiplying, body translation, walking, foot lift, foot sliding, tail movement, detached club, missing club, split club, round mace club, moving water, wind in all plants"
+    }
+  ]
+}

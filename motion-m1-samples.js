@@ -9,6 +9,9 @@ window.motionM1SampleCatalog = {
     representativePromotion: "prohibited",
     galleryPromotion: "prohibited",
     autoplay: "prohibited",
+    loop: "prohibited",
+    clickToPlay: "required",
+    audio: "prohibited",
     locomotion: "prohibited in M1",
     allowedMotion: ["natural blink", "sub-degree rigid head-and-neck tilt"],
     publicRequires: ["frameAnatomy", "motionPlausibility", "backgroundIntegrity", "responsive", "publication"],
@@ -29,6 +32,7 @@ window.motionM1SampleCatalog = {
       description: "승인된 오비랍토르 대표 정지화면에서 눈 주변과 머리·목 덩어리만 제한적으로 움직이는 5초짜리 제어형 2D 시험입니다. 걷기·공격·먹이활동 같은 행동을 재현하지 않으며, 생물학적 움직임의 자연스러움만 별도로 검토합니다.",
       poster: "assets/dinosaurs/oviraptor-philoceratops-robust-lowcrest-rostrum-representative-imagegen-v3.png",
       src: "assets/motion/m1/oviraptor-philoceratops-blink-headtilt-biological-m1-v1.mp4",
+      subjectMotion: { status: "supported", taxonIds: ["oviraptor-philoceratops"], movingParts: ["eyes", "head", "neck"], evidenceGate: "review.motionPlausibility" },
       provenance: {
         metadataRecord: "tools/comfyui/motion-m1-pilot-batch-20260803.json#/samples/oviraptor-philoceratops-blink-headtilt-biological-m1-v1",
         sourceLicense: "project-owned generated still and project-generated motion-only overlay",

@@ -1284,6 +1284,119 @@
         "anatomyEligible": false
       }
     },
+    "giganotosaurus-carolinii-oneway-jaw-headlift-comfyui-wan22-i2v-m2-v1": {
+      "taxonId": "giganotosaurus-carolinii",
+      "sourcePoster": "assets/dinosaurs/giganotosaurus-carolinii-lowskull-lacrimal-ridge-representative-imagegen-v1.png",
+      "sourcePosterSha256": "1c24e590cc8e06de4815fc28819cdbd14d66f65c290211aa67d66ee734e7e1c4",
+      "sourcePosterBytes": 2616983,
+      "comfyInput": "dino_atlas/motion_subject_required_20260807/giganotosaurus-carolinii-approved-representative-v1.png",
+      "sourceLicense": "Original project-generated bitmap; factual sources only; no external artwork or copyrighted character style used.",
+      "projectAsset": "assets/motion/m2/giganotosaurus-carolinii-oneway-jaw-headlift-comfyui-wan22-i2v-m2-v1.mp4",
+      "file": {
+        "sha256": "90f8eb38486678fe9184e931fc2379081f87426e0c49085318ae929cd4238b94",
+        "bytes": 1341860,
+        "width": 800,
+        "height": 448,
+        "durationSeconds": 5.0625,
+        "fps": 16,
+        "frameCount": 81,
+        "codec": "h264",
+        "pixelFormat": "yuv420p",
+        "container": "mp4",
+        "audio": false
+      },
+      "identityCuesPreserved": [
+        "exactly one complete Giganotosaurus carolinii",
+        "one long low rectangular skull",
+        "one narrow snout and low lacrimal ridge",
+        "two short three-fingered forelimbs",
+        "exactly two planted hind limbs",
+        "one complete continuous tail",
+        "stable left-facing full-body composition and ground contact",
+        "stable terrain, vegetation, lighting, and crop"
+      ],
+      "motion": "one continuous one-way head-and-connected-neck lift with lower-jaw opening; the final pose holds without reverse, return, or loop",
+      "workflow": {
+        "candidateId": "giganotosaurus-carolinii-oneway-jaw-display-f81-v2",
+        "template": "tools/comfyui/workflow_templates/dino_wan22_ti2v_5b_i2v_long_api.json",
+        "templateSha256": "eba1778a281c9d81c7f62d8ac2e75aa73573b8845b2fdf60f0d6ca48750404e2",
+        "runner": "tools/comfyui/scripts/run_motion_m2_i2v_long_candidate.py",
+        "runnerSha256": "7c861c8733644959d5d9b7504f058f7f92875cfd944e36f5217baa8e2efd7970",
+        "generationRunnerSha256": "7c861c8733644959d5d9b7504f058f7f92875cfd944e36f5217baa8e2efd7970",
+        "specGenerationSha256": "0245976ad35fa2662275300dc6dfd9af5b4c1f363f3bd49c45d24a4366cb9f33",
+        "runRecord": "tools/comfyui/outputs/motion-subject-required-giganotosaurus-jaw-display-s260807102-f81-v2-run.json",
+        "runRecordSha256": "341c9baf32c29e99b4baa981da187675921b26d2ab7be351f3f0ed61064f1269",
+        "promptId": "5a46804d-18dc-4719-be48-ffa9643d1825",
+        "seed": 260807102,
+        "width": 800,
+        "height": 448,
+        "frames": 81,
+        "fps": 16,
+        "steps": 20,
+        "cfg": 6,
+        "sampler": "uni_pc",
+        "scheduler": "simple",
+        "shift": 8,
+        "denoise": 1,
+        "positivePrompt": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved still as the exact first-frame identity, anatomy, left-facing full-body composition, lighting, palette, skin markings, terrain, vegetation, and crop reference. Exactly one complete Giganotosaurus carolinii remains in frame with one long low rectangular skull, narrow snout, low lacrimal ridge, two short three-fingered forelimbs, exactly two planted hind limbs, and one complete continuous tail. After a brief closed-mouth hold, the dinosaur itself performs one restrained silent display in a single temporal direction: the complete head and connected muscular neck rise only four degrees while only the lower jaw opens smoothly at the natural hinge to a moderate eighteen-to-twenty-two-degree gape. The throat expands once and the final second holds the open-mouth pose. Keep the upper skull, snout length, lacrimal ridge, eye, nostril, stable attached tooth rows, low tongue, and neck thickness consistent. Keep the torso, pelvis, arms, both feet, every readable toe, and full tail planted and unchanged. Keep every background element completely still. The jaw never closes and the head never returns; no reverse, recoil, repeated roar, walk, or loop.",
+        "negativePrompt": "dinosaur completely frozen, no dinosaur movement, environment-only motion, moving clouds, moving water, moving plants, wind-only motion, background animation, severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, toe reshaping, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong motion, repeated ending, loop seam, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, blood, low quality, compression artifacts, closed mouth for entire shot, tiny invisible motion, extreme gape, upper skull bending, detached lower jaw, dislocated jaw, split jaw, duplicate jaw, rubber mouth, melting teeth, floating teeth, changing tooth rows, duplicate tongue, forked tongue, saliva, drool, skull shortening, Tyrannosaurus skull, horn, crest, frontal head, head thrust, neck stretch, neck seam, body translation, walking, foot lift, leg reshaping, arm movement, tail swing, prey, attack, bite contact"
+      },
+      "containerRemux": {
+        "type": "prompt-preserving-faststart-remux-only",
+        "frameTransform": false,
+        "videoCodec": "copy",
+        "audio": false,
+        "ffmpegCommand": "ffmpeg -hide_banner -loglevel error -y -i {rawOutput} -map 0 -c copy -map_metadata 0 -movflags use_metadata_tags+faststart {projectAsset}",
+        "rawOutput": {
+          "path": "output/dino_atlas/motion_subject_required_20260807/giganotosaurus-carolinii-oneway-jaw-display-wan22-s260807102-f81_00001_.mp4",
+          "sha256": "cb688351a551a8f4560666d8d642bfa0836d4d54aa8540b4b75035c5ca5ee94a",
+          "bytes": 1341700,
+          "stream": {
+            "width": 800,
+            "height": 448,
+            "durationSeconds": 5.0625,
+            "fps": 16,
+            "frameCount": 81,
+            "codec": "h264",
+            "pixelFormat": "yuv420p",
+            "container": "mp4",
+            "audio": false
+          }
+        }
+      },
+      "qa": {
+        "manualFramesReviewed": "all original-size final frames 0-80",
+        "manualFrameCountReviewed": 81,
+        "frameIndexRange": [0, 80],
+        "checkpointFrames": [0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80],
+        "sourceAcceptedFrameRange": [0, 80],
+        "focusedCrops": ["long-low-skull-and-lacrimal-ridge", "head-neck-attachment", "lower-jaw-and-throat", "short-three-fingered-forelimbs", "two-planted-hind-limbs", "tail", "background"],
+        "contactSheetPolicy": "All 81 original-size frames and temporal playback were reviewed; contact sheets were used only for navigation.",
+        "knownLimitations": [
+          "The head-and-neck lift and lower-jaw opening are observed generated motion; no angular amplitude is claimed from the rendered frames.",
+          "The display is a generated behavioral hypothesis, not direct evidence of vocalization or behavior frequency.",
+          "The faststart remux copies the encoded video stream without frame transformation or temporal interpolation."
+        ],
+        "visualStatus": "pass-independent-81-of-81"
+      },
+      "review": {
+        "sourceIntegrity": { "status": "supported", "note": "The ComfyUI input copy matches the approved project-owned Giganotosaurus still SHA-256 exactly." },
+        "workflowIntegrity": { "status": "supported", "note": "The exact native workflow, prompts, seed, successful run record, raw-output hash, and faststart-only remux are pinned." },
+        "frameAnatomy": { "status": "supported", "note": "All 81 reviewed frames retain one complete attached animal with one low long skull, two short forelimbs, two planted hind limbs, and one continuous tail." },
+        "identityContinuity": { "status": "supported", "note": "The long low rectangular skull, narrow snout, low lacrimal ridge, short three-fingered forelimbs, torso markings, and tail remain readable throughout." },
+        "limbCountContinuity": { "status": "supported", "note": "Original-size review retains two short forelimbs, two grounded hind limbs, readable feet, and one complete tail without duplication or loss." },
+        "motionPlausibility": { "status": "supported", "note": "The complete head and connected neck lift continuously in one direction while the lower jaw opens and the throat changes; the planted body does not translate." },
+        "backgroundIntegrity": { "status": "supported", "note": "Terrain, vegetation, lighting, shadows, ground contact, and crop remain stable through the accepted sequence." },
+        "cameraIntegrity": { "status": "supported", "note": "All 81 frames keep a fixed wide camera with no pan, zoom, crop change, or cut." },
+        "temporalIntegrity": { "status": "supported", "note": "The complete native frame order is preserved; the final pose holds without reverse, return, ping-pong reuse, or loop." },
+        "responsive": { "status": "supported", "note": "The shared motion renderer enforces click-only muted non-looping playback, one-active-video cross-pause, view-exit pause, and responsive card containment." },
+        "publication": { "status": "published", "note": "The subject-motion and all-frame review gates passed for motion-only publication; representative, gallery, anatomy, audio, autoplay, and loop promotion remain prohibited." },
+        "representativeEligible": false,
+        "galleryEligible": false,
+        "anatomyEligible": false
+      },
+      "reviewRecord": "tools/comfyui/motion-subject-required-review-20260807.json#/candidates/1"
+    },
     "triceratops-horridus-dust-exhale-wan22-safe-overlay-i2v-m2-v1": {
       "taxonId": "triceratops-horridus",
       "sourcePoster": "assets/dinosaurs/triceratops-horridus-imagegen-v51-source-candidate.png",
@@ -1414,7 +1527,7 @@
         "cameraIntegrity": { "status": "supported", "note": "All 81 frames keep the original fixed camera and full-body crop with no pan, zoom, cut, or scene transition." },
         "temporalIntegrity": { "status": "supported", "note": "The complete native 0-80 order and PTS are retained; the scheduled f10-73 overlay has an independently readable core at f13-68 whose centroid travels from (64.92,256.12) to (13.83,224.42) without reverse, return, or loop." },
         "responsive": { "status": "supported", "note": "The shared motion renderer keeps click-only muted non-looping playback, one-active-video cross-pause, view-exit pause, and responsive card containment." },
-        "publication": { "status": "published", "note": "Independent 81/81-frame review accepted only the dust-exhale safe overlay and found no defect frame; the failed head-lift amplitude is excluded from the public claim, and representative, gallery, anatomy, audio, and autoplay promotion remain prohibited." },
+        "publication": { "status": "retired", "note": "Retired from public playback under the 2026-08-07 subject-motion policy because the dinosaur body is visually fixed and the requested head-lift amplitude did not pass. The audited dust overlay remains review evidence only; representative, gallery, anatomy, audio, autoplay, and loop promotion remain prohibited." },
         "representativeEligible": false,
         "galleryEligible": false,
         "anatomyEligible": false

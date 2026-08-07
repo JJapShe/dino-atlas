@@ -1,0 +1,430 @@
+{
+  "schemaVersion": 2,
+  "candidateId": "ankylosaurus-magniventris-connected-head-rise-f81-v1",
+  "taxonId": "ankylosaurus-magniventris",
+  "queuedAt": "2026-08-07T00:28:41.215463+00:00",
+  "completedAt": "2026-08-07T00:29:53.299085+00:00",
+  "elapsedSeconds": 72.084,
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "270585f4-9877-4959-bdaf-90c68e1772d5",
+          "timestamp": 1786062521231
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [
+            "1",
+            "2",
+            "3",
+            "8"
+          ],
+          "prompt_id": "270585f4-9877-4959-bdaf-90c68e1772d5",
+          "timestamp": 1786062521236
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "270585f4-9877-4959-bdaf-90c68e1772d5",
+          "timestamp": 1786062593118
+        }
+      ]
+    ]
+  },
+  "promptId": "270585f4-9877-4959-bdaf-90c68e1772d5",
+  "queueResponse": {
+    "prompt_id": "270585f4-9877-4959-bdaf-90c68e1772d5",
+    "number": 30,
+    "node_errors": {}
+  },
+  "provenance": {
+    "spec": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\motion-subject-required-candidates-20260807.json",
+    "specSha256": "2021d9c357510375df5dbc2dc26b95628b588823f8cc78cf24aab4124eefb063",
+    "template": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\workflow_templates\\dino_wan22_ti2v_5b_i2v_long_api.json",
+    "templateSha256": "eba1778a281c9d81c7f62d8ac2e75aa73573b8845b2fdf60f0d6ca48750404e2",
+    "runner": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\scripts\\run_motion_m2_i2v_long_candidate.py",
+    "runnerSha256": "7c861c8733644959d5d9b7504f058f7f92875cfd944e36f5217baa8e2efd7970",
+    "comfyInput": "C:\\Users\\USER\\Documents\\dinosour\\tools\\comfyui\\ComfyUI\\input\\dino_atlas\\motion_subject_required_20260807\\ankylosaurus-magniventris-approved-fern-browse-v2.png",
+    "comfyInputSha256": "ae4025f7b127e943bbe70bff5eb29130ab1cea047a80dfe966fca67970e215b6",
+    "comfyInputWidth": 1536,
+    "comfyInputHeight": 1024,
+    "outputAspectWidth": 768,
+    "outputAspectHeight": 512,
+    "sourcePoster": "assets/dinosaurs/ankylosaurus-magniventris-oxbow-fern-browse-ecology-imagegen-v2.png",
+    "sourcePosterSha256": "ae4025f7b127e943bbe70bff5eb29130ab1cea047a80dfe966fca67970e215b6",
+    "sourceLicense": "Original project-generated bitmap; factual sources only; no external artwork or copyrighted character style used.",
+    "sourceReviewStatus": "approved habitat-ecology gallery source at review-hold evidence tier; motion use only"
+  },
+  "runConfig": {
+    "width": 768,
+    "height": 512,
+    "frames": 81,
+    "fps": 16,
+    "durationSeconds": 5.0625,
+    "steps": 20,
+    "cfg": 5,
+    "sampler": "uni_pc",
+    "scheduler": "simple",
+    "shift": 8,
+    "denoise": 1,
+    "effectiveDurationSeconds": 5.0625,
+    "seed": 260807105,
+    "inputName": "dino_atlas/motion_subject_required_20260807/ankylosaurus-magniventris-approved-fern-browse-v2.png",
+    "outputPrefix": "dino_atlas/motion_subject_required_20260807/ankylosaurus-magniventris-connected-head-rise-wan22-s260807105-f81",
+    "positivePrompt": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved still as the exact first-frame Ankylosaurus magniventris identity, low broad full-body anatomy, left-facing composition, wetland, lighting, palette, armor pattern, ground, and crop reference. Exactly one complete Ankylosaurus remains with one broad flat skull, small beaked mouth, two connected neck half-rings, irregular low osteoderms, exactly four planted legs, one complete continuous tail, and one integrated low oval tail club. After a brief low-browse hold, the dinosaur itself raises the complete skull, throat, connected neck half-rings, shoulder base, and upper chest together by a clearly visible seven to nine degrees in one smooth direction. The beak stays closed. The final second holds the new higher attentive pose. Keep the broad torso, pelvis, armor rows, all four feet, every readable toe, complete tail, and single club stable at their source coordinates. Keep all water, plants, clouds, trees, shadows, and ground completely still. No return, reverse, second nod, chew, step, tail swing, body turn, or loop.",
+    "negativePrompt": "dinosaur completely frozen, no dinosaur movement, environment-only motion, moving clouds, moving water, moving plants, wind-only motion, background animation, severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, toe reshaping, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong motion, repeated ending, loop seam, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, blood, low quality, compression artifacts, open mouth, teeth, tongue, long narrow skull, crocodile skull, isolated head hinge, detached neck, neck ring splitting, armor crawling, armor multiplying, uniform turtle shell, giant spikes, body translation, walking, foot lift, foot sliding, extra leg, missing leg, tail movement, detached club, missing club, split club, two club balls, round mace ball, club morphing, water ripple, moving fern"
+  },
+  "workflow": {
+    "1": {
+      "class_type": "UNETLoader",
+      "inputs": {
+        "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    "2": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "type": "wan",
+        "device": "default"
+      }
+    },
+    "3": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "wan2.2_vae.safetensors"
+      }
+    },
+    "4": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved still as the exact first-frame Ankylosaurus magniventris identity, low broad full-body anatomy, left-facing composition, wetland, lighting, palette, armor pattern, ground, and crop reference. Exactly one complete Ankylosaurus remains with one broad flat skull, small beaked mouth, two connected neck half-rings, irregular low osteoderms, exactly four planted legs, one complete continuous tail, and one integrated low oval tail club. After a brief low-browse hold, the dinosaur itself raises the complete skull, throat, connected neck half-rings, shoulder base, and upper chest together by a clearly visible seven to nine degrees in one smooth direction. The beak stays closed. The final second holds the new higher attentive pose. Keep the broad torso, pelvis, armor rows, all four feet, every readable toe, complete tail, and single club stable at their source coordinates. Keep all water, plants, clouds, trees, shadows, and ground completely still. No return, reverse, second nod, chew, step, tail swing, body turn, or loop.",
+        "clip": [
+          "2",
+          0
+        ]
+      }
+    },
+    "5": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "dinosaur completely frozen, no dinosaur movement, environment-only motion, moving clouds, moving water, moving plants, wind-only motion, background animation, severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, toe reshaping, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong motion, repeated ending, loop seam, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, blood, low quality, compression artifacts, open mouth, teeth, tongue, long narrow skull, crocodile skull, isolated head hinge, detached neck, neck ring splitting, armor crawling, armor multiplying, uniform turtle shell, giant spikes, body translation, walking, foot lift, foot sliding, extra leg, missing leg, tail movement, detached club, missing club, split club, two club balls, round mace ball, club morphing, water ripple, moving fern",
+        "clip": [
+          "2",
+          0
+        ]
+      }
+    },
+    "6": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "dino_atlas/motion_subject_required_20260807/ankylosaurus-magniventris-approved-fern-browse-v2.png"
+      }
+    },
+    "7": {
+      "class_type": "Wan22ImageToVideoLatent",
+      "inputs": {
+        "vae": [
+          "3",
+          0
+        ],
+        "width": 768,
+        "height": 512,
+        "length": 81,
+        "batch_size": 1,
+        "start_image": [
+          "6",
+          0
+        ]
+      }
+    },
+    "8": {
+      "class_type": "ModelSamplingSD3",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "shift": 8
+      }
+    },
+    "9": {
+      "class_type": "KSampler",
+      "inputs": {
+        "seed": 260807105,
+        "steps": 20,
+        "cfg": 5,
+        "sampler_name": "uni_pc",
+        "scheduler": "simple",
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "5",
+          0
+        ],
+        "latent_image": [
+          "7",
+          0
+        ],
+        "denoise": 1,
+        "model": [
+          "8",
+          0
+        ]
+      }
+    },
+    "10": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "9",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "11": {
+      "class_type": "CreateVideo",
+      "inputs": {
+        "images": [
+          "10",
+          0
+        ],
+        "fps": 16,
+        "bit_depth": 8
+      }
+    },
+    "12": {
+      "class_type": "SaveVideo",
+      "inputs": {
+        "video": [
+          "11",
+          0
+        ],
+        "filename_prefix": "dino_atlas/motion_subject_required_20260807/ankylosaurus-magniventris-connected-head-rise-wan22-s260807105-f81",
+        "format": "mp4",
+        "codec": "h264"
+      }
+    }
+  },
+  "history": {
+    "prompt": [
+      30,
+      "270585f4-9877-4959-bdaf-90c68e1772d5",
+      {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+            "type": "wan",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "wan2.2_vae.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved still as the exact first-frame Ankylosaurus magniventris identity, low broad full-body anatomy, left-facing composition, wetland, lighting, palette, armor pattern, ground, and crop reference. Exactly one complete Ankylosaurus remains with one broad flat skull, small beaked mouth, two connected neck half-rings, irregular low osteoderms, exactly four planted legs, one complete continuous tail, and one integrated low oval tail club. After a brief low-browse hold, the dinosaur itself raises the complete skull, throat, connected neck half-rings, shoulder base, and upper chest together by a clearly visible seven to nine degrees in one smooth direction. The beak stays closed. The final second holds the new higher attentive pose. Keep the broad torso, pelvis, armor rows, all four feet, every readable toe, complete tail, and single club stable at their source coordinates. Keep all water, plants, clouds, trees, shadows, and ground completely still. No return, reverse, second nod, chew, step, tail swing, body turn, or loop.",
+            "clip": [
+              "2",
+              0
+            ]
+          }
+        },
+        "5": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "dinosaur completely frozen, no dinosaur movement, environment-only motion, moving clouds, moving water, moving plants, wind-only motion, background animation, severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, toe reshaping, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong motion, repeated ending, loop seam, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, blood, low quality, compression artifacts, open mouth, teeth, tongue, long narrow skull, crocodile skull, isolated head hinge, detached neck, neck ring splitting, armor crawling, armor multiplying, uniform turtle shell, giant spikes, body translation, walking, foot lift, foot sliding, extra leg, missing leg, tail movement, detached club, missing club, split club, two club balls, round mace ball, club morphing, water ripple, moving fern",
+            "clip": [
+              "2",
+              0
+            ]
+          }
+        },
+        "6": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "dino_atlas/motion_subject_required_20260807/ankylosaurus-magniventris-approved-fern-browse-v2.png"
+          }
+        },
+        "7": {
+          "class_type": "Wan22ImageToVideoLatent",
+          "inputs": {
+            "vae": [
+              "3",
+              0
+            ],
+            "width": 768,
+            "height": 512,
+            "length": 81,
+            "batch_size": 1,
+            "start_image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "8": {
+          "class_type": "ModelSamplingSD3",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "shift": 8.0
+          }
+        },
+        "9": {
+          "class_type": "KSampler",
+          "inputs": {
+            "seed": 260807105,
+            "steps": 20,
+            "cfg": 5.0,
+            "sampler_name": "uni_pc",
+            "scheduler": "simple",
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "5",
+              0
+            ],
+            "latent_image": [
+              "7",
+              0
+            ],
+            "denoise": 1.0,
+            "model": [
+              "8",
+              0
+            ]
+          }
+        },
+        "10": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "9",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "11": {
+          "class_type": "CreateVideo",
+          "inputs": {
+            "images": [
+              "10",
+              0
+            ],
+            "fps": 16.0,
+            "bit_depth": 8
+          }
+        },
+        "12": {
+          "class_type": "SaveVideo",
+          "inputs": {
+            "video": [
+              "11",
+              0
+            ],
+            "filename_prefix": "dino_atlas/motion_subject_required_20260807/ankylosaurus-magniventris-connected-head-rise-wan22-s260807105-f81",
+            "format": "mp4",
+            "codec": "h264"
+          }
+        }
+      },
+      {
+        "client_id": "dino-atlas-motion-m2-i2v-long",
+        "create_time": 1786062521230
+      },
+      [
+        "12"
+      ]
+    ],
+    "outputs": {
+      "12": {
+        "images": [
+          {
+            "filename": "ankylosaurus-magniventris-connected-head-rise-wan22-s260807105-f81_00001_.mp4",
+            "subfolder": "dino_atlas\\motion_subject_required_20260807",
+            "type": "output"
+          }
+        ],
+        "animated": [
+          true
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "270585f4-9877-4959-bdaf-90c68e1772d5",
+            "timestamp": 1786062521231
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "1",
+              "2",
+              "3",
+              "8"
+            ],
+            "prompt_id": "270585f4-9877-4959-bdaf-90c68e1772d5",
+            "timestamp": 1786062521236
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "270585f4-9877-4959-bdaf-90c68e1772d5",
+            "timestamp": 1786062593118
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "12": {
+        "node_id": "12",
+        "display_node": "12",
+        "parent_node": null,
+        "real_node_id": "12"
+      }
+    }
+  }
+}

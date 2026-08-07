@@ -33,9 +33,11 @@ jobs:
             motion-m1-samples.js
             motion-m2-samples.js
             motion-m2-i2v-samples.js
+            motion-public-assets.json
             styles.css
             atlas-layout.js
             assets/motion/
+            tools/comfyui/scripts/verify_motion_public_assets.mjs
           sparse-checkout-cone-mode: false
 
       - name: Configure GitHub Pages
@@ -45,11 +47,13 @@ jobs:
         env:
           ASSET_BASE: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/assets/dinosaurs/
         run: |
-          mkdir -p _site/assets/motion
-          cp index.html app.js gallery-slots.js ecosystem-scenes.js motion-samples.js motion-m1-samples.js motion-m2-samples.js motion-m2-i2v-samples.js styles.css atlas-layout.js _site/
-          cp -R assets/motion/. _site/assets/motion/
+          node tools/comfyui/scripts/verify_motion_public_assets.mjs
+          mkdir -p _site
+          cp index.html app.js gallery-slots.js ecosystem-scenes.js motion-samples.js motion-m1-samples.js motion-m2-samples.js motion-m2-i2v-samples.js motion-public-assets.json styles.css atlas-layout.js _site/
           python3 - <<'PY'
+          import json
           import os
+          import shutil
           from pathlib import Path
 
           base = os.environ["ASSET_BASE"]
@@ -59,6 +63,13 @@ jobs:
                   path.read_text(encoding="utf-8").replace("assets/dinosaurs/", base),
                   encoding="utf-8",
               )
+
+          manifest = json.loads(Path("motion-public-assets.json").read_text(encoding="utf-8"))
+          for asset in manifest["assets"]:
+              source = Path(asset["src"])
+              destination = Path("_site") / source
+              destination.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copy2(source, destination)
           PY
 
       - name: Upload Pages artifact

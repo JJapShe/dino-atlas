@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "createdAt": "2026-08-06T18:20:00+09:00",
-  "status": "review-complete-with-safe-replacement",
+  "status": "review-complete-replacement-retired",
   "generationSpecHistory": [
     {
       "candidateId": "triceratops-horridus-calm-head-lift-f81-v1",
@@ -20,8 +20,9 @@
   "reviewSummary": {
     "nativeCandidatesAccepted": 0,
     "nativeCandidatesRejected": 3,
-    "safeReplacementsPublished": 1,
-    "decision": "All native candidates preserve count-level anatomy but fail the user-visible motion-amplitude gate. Publish only the cleanest full-range v1 as the reviewed I2V base beneath a deterministic one-way nostril-dust overlay."
+    "safeReplacementsPublished": 0,
+    "safeReplacementsRetiredBySubjectMotionPolicy": 1,
+    "decision": "All native candidates preserve count-level anatomy but fail the user-visible dinosaur-motion amplitude gate. Retain the cleanest full-range v1 and deterministic nostril-dust derivative as internal audit evidence only; do not publish either under the 2026-08-07 subject-motion policy."
   },
   "policy": {
     "scope": "ComfyUI-native Wan2.2 TI2V 5B forward-only solo dinosaur action candidate for a children's dinosaur atlas",
@@ -30,8 +31,9 @@
     "galleryPromotion": "prohibited",
     "anatomyPromotion": "prohibited",
     "autoplay": "prohibited",
+    "loop": "prohibited",
     "audio": "prohibited",
-    "publicationRule": "Publish only after all-frame anatomy and temporal review. Reject horn-count drift, frill melting, neck separation, body or foot sliding, reverse motion, return motion, repeated motion, or any unsafe prefix. If no clean forward segment exists, publish only a deterministic fixed-anatomy fallback or omit the sample."
+    "publicationRule": "Publish only after readable dinosaur subject motion plus all-frame anatomy and temporal review. Reject fixed-dinosaur environment-only fallbacks, horn-count drift, frill melting, neck separation, body or foot sliding, reverse motion, return motion, repeated motion, or any unsafe prefix. If no clean subject-moving forward segment exists, omit the public sample and retain audit evidence internally."
   },
   "comfyUiRoot": "C:/Users/USER/Documents/dinosour/tools/comfyui/ComfyUI",
   "workflowTemplate": "tools/comfyui/workflow_templates/dino_wan22_ti2v_5b_i2v_long_api.json",
@@ -85,7 +87,7 @@
         "projectAsset": "assets/motion/m2/triceratops-horridus-dust-exhale-wan22-safe-overlay-i2v-m2-v1.mp4",
         "sha256": "17619c5ac98728f38dfa717ce38726f30104baaeb7131ebbf145680984adbc91",
         "method": "full 81-frame clean I2V base plus a deterministic one-way dust-exhale overlay restricted to empty air ahead of the nostril",
-        "reviewStatus": "published-after-independent-81-of-81"
+        "reviewStatus": "retired-after-subject-motion-policy-20260807"
       }
     },
     {

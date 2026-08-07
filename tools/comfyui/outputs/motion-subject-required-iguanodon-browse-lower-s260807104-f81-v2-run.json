@@ -1,0 +1,434 @@
+{
+  "schemaVersion": 2,
+  "candidateId": "iguanodon-bernissartensis-oneway-browse-lower-f81-v2",
+  "taxonId": "iguanodon-bernissartensis",
+  "queuedAt": "2026-08-07T00:27:10.840250+00:00",
+  "completedAt": "2026-08-07T00:28:16.980656+00:00",
+  "elapsedSeconds": 66.14,
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "fe01e99f-f94e-4c63-a707-c4b8d24c219f",
+          "timestamp": 1786062430856
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [
+            "1",
+            "2",
+            "3",
+            "6",
+            "7",
+            "8"
+          ],
+          "prompt_id": "fe01e99f-f94e-4c63-a707-c4b8d24c219f",
+          "timestamp": 1786062430859
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "fe01e99f-f94e-4c63-a707-c4b8d24c219f",
+          "timestamp": 1786062496875
+        }
+      ]
+    ]
+  },
+  "promptId": "fe01e99f-f94e-4c63-a707-c4b8d24c219f",
+  "queueResponse": {
+    "prompt_id": "fe01e99f-f94e-4c63-a707-c4b8d24c219f",
+    "number": 29,
+    "node_errors": {}
+  },
+  "provenance": {
+    "spec": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\motion-subject-required-candidates-20260807.json",
+    "specSha256": "0245976ad35fa2662275300dc6dfd9af5b4c1f363f3bd49c45d24a4366cb9f33",
+    "template": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\workflow_templates\\dino_wan22_ti2v_5b_i2v_long_api.json",
+    "templateSha256": "eba1778a281c9d81c7f62d8ac2e75aa73573b8845b2fdf60f0d6ca48750404e2",
+    "runner": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\scripts\\run_motion_m2_i2v_long_candidate.py",
+    "runnerSha256": "7c861c8733644959d5d9b7504f058f7f92875cfd944e36f5217baa8e2efd7970",
+    "comfyInput": "C:\\Users\\USER\\Documents\\dinosour\\tools\\comfyui\\ComfyUI\\input\\dino_atlas\\motion_subject_required_20260807\\iguanodon-bernissartensis-approved-representative-v1.png",
+    "comfyInputSha256": "f783ec03327c5ea7d8610342bcba7cab32bd968692767ef09c47bbaaf28cd1f0",
+    "comfyInputWidth": 1672,
+    "comfyInputHeight": 941,
+    "outputAspectWidth": 800,
+    "outputAspectHeight": 448,
+    "sourcePoster": "assets/dinosaurs/iguanodon-bernissartensis-thumbspike-quadruped-representative-imagegen-v1.png",
+    "sourcePosterSha256": "f783ec03327c5ea7d8610342bcba7cab32bd968692767ef09c47bbaaf28cd1f0",
+    "sourceLicense": "Original project-generated bitmap; factual sources only; no external artwork or copyrighted character style used.",
+    "sourceReviewStatus": "approved count-level representative source; quadrupedal pose is an analytical interpretation; motion use only"
+  },
+  "runConfig": {
+    "width": 800,
+    "height": 448,
+    "frames": 81,
+    "fps": 16,
+    "durationSeconds": 5.0625,
+    "steps": 20,
+    "cfg": 6,
+    "sampler": "uni_pc",
+    "scheduler": "simple",
+    "shift": 8,
+    "denoise": 1,
+    "effectiveDurationSeconds": 5.0625,
+    "seed": 260807104,
+    "inputName": "dino_atlas/motion_subject_required_20260807/iguanodon-bernissartensis-approved-representative-v1.png",
+    "outputPrefix": "dino_atlas/motion_subject_required_20260807/iguanodon-bernissartensis-oneway-browse-lower-wan22-s260807104-f81",
+    "positivePrompt": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved still as the exact first-frame Iguanodon bernissartensis identity, robust quadrupedal anatomy, left-facing full-body composition, lighting, palette, skin markings, woodland, ground, and crop reference. Exactly one complete Iguanodon remains with one beaked skull, two forelimbs with the same conical thumb spikes and weight-bearing central digits, two hind limbs, four planted feet total, and one complete long tail. After a brief hold, the dinosaur itself makes one calm browsing motion: the complete skull, connected muscular neck, throat, shoulder base, and upper chest lower together by seven to nine degrees and move forward by about two percent of frame width toward the low vegetation. The beak stays closed and the final second holds the new lowered pose. Preserve the eye, cheek, beak proportions, neck thickness, hands, thumb spikes, all four feet, every readable digit, pelvis, and tail. Keep the background and plants still; the dinosaur moves toward them without plant animation. No return, reverse, second dip, bite cycle, step, walk, body turn, or loop.",
+    "negativePrompt": "dinosaur completely frozen, no dinosaur movement, environment-only motion, moving clouds, moving water, moving plants, wind-only motion, background animation, severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, toe reshaping, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong motion, repeated ending, loop seam, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, blood, low quality, compression artifacts, open beak, chewing cycle, plant bending, moving vegetation, face-plant fusion, duck bill, hadrosaur crest, skull stretching, frontal turn, isolated head hinge, neck seam, neck collapse, hand movement, missing thumb spike, extra thumb spike, changing thumb spike, palm flip, finger multiplication, foot lift, foot slide, body translation, walking, bipedal rise, tail swing, tail drag"
+  },
+  "workflow": {
+    "1": {
+      "class_type": "UNETLoader",
+      "inputs": {
+        "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    "2": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "type": "wan",
+        "device": "default"
+      }
+    },
+    "3": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "wan2.2_vae.safetensors"
+      }
+    },
+    "4": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved still as the exact first-frame Iguanodon bernissartensis identity, robust quadrupedal anatomy, left-facing full-body composition, lighting, palette, skin markings, woodland, ground, and crop reference. Exactly one complete Iguanodon remains with one beaked skull, two forelimbs with the same conical thumb spikes and weight-bearing central digits, two hind limbs, four planted feet total, and one complete long tail. After a brief hold, the dinosaur itself makes one calm browsing motion: the complete skull, connected muscular neck, throat, shoulder base, and upper chest lower together by seven to nine degrees and move forward by about two percent of frame width toward the low vegetation. The beak stays closed and the final second holds the new lowered pose. Preserve the eye, cheek, beak proportions, neck thickness, hands, thumb spikes, all four feet, every readable digit, pelvis, and tail. Keep the background and plants still; the dinosaur moves toward them without plant animation. No return, reverse, second dip, bite cycle, step, walk, body turn, or loop.",
+        "clip": [
+          "2",
+          0
+        ]
+      }
+    },
+    "5": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "dinosaur completely frozen, no dinosaur movement, environment-only motion, moving clouds, moving water, moving plants, wind-only motion, background animation, severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, toe reshaping, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong motion, repeated ending, loop seam, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, blood, low quality, compression artifacts, open beak, chewing cycle, plant bending, moving vegetation, face-plant fusion, duck bill, hadrosaur crest, skull stretching, frontal turn, isolated head hinge, neck seam, neck collapse, hand movement, missing thumb spike, extra thumb spike, changing thumb spike, palm flip, finger multiplication, foot lift, foot slide, body translation, walking, bipedal rise, tail swing, tail drag",
+        "clip": [
+          "2",
+          0
+        ]
+      }
+    },
+    "6": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "dino_atlas/motion_subject_required_20260807/iguanodon-bernissartensis-approved-representative-v1.png"
+      }
+    },
+    "7": {
+      "class_type": "Wan22ImageToVideoLatent",
+      "inputs": {
+        "vae": [
+          "3",
+          0
+        ],
+        "width": 800,
+        "height": 448,
+        "length": 81,
+        "batch_size": 1,
+        "start_image": [
+          "6",
+          0
+        ]
+      }
+    },
+    "8": {
+      "class_type": "ModelSamplingSD3",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "shift": 8
+      }
+    },
+    "9": {
+      "class_type": "KSampler",
+      "inputs": {
+        "seed": 260807104,
+        "steps": 20,
+        "cfg": 6,
+        "sampler_name": "uni_pc",
+        "scheduler": "simple",
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "5",
+          0
+        ],
+        "latent_image": [
+          "7",
+          0
+        ],
+        "denoise": 1,
+        "model": [
+          "8",
+          0
+        ]
+      }
+    },
+    "10": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "9",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "11": {
+      "class_type": "CreateVideo",
+      "inputs": {
+        "images": [
+          "10",
+          0
+        ],
+        "fps": 16,
+        "bit_depth": 8
+      }
+    },
+    "12": {
+      "class_type": "SaveVideo",
+      "inputs": {
+        "video": [
+          "11",
+          0
+        ],
+        "filename_prefix": "dino_atlas/motion_subject_required_20260807/iguanodon-bernissartensis-oneway-browse-lower-wan22-s260807104-f81",
+        "format": "mp4",
+        "codec": "h264"
+      }
+    }
+  },
+  "history": {
+    "prompt": [
+      29,
+      "fe01e99f-f94e-4c63-a707-c4b8d24c219f",
+      {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+            "type": "wan",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "wan2.2_vae.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved still as the exact first-frame Iguanodon bernissartensis identity, robust quadrupedal anatomy, left-facing full-body composition, lighting, palette, skin markings, woodland, ground, and crop reference. Exactly one complete Iguanodon remains with one beaked skull, two forelimbs with the same conical thumb spikes and weight-bearing central digits, two hind limbs, four planted feet total, and one complete long tail. After a brief hold, the dinosaur itself makes one calm browsing motion: the complete skull, connected muscular neck, throat, shoulder base, and upper chest lower together by seven to nine degrees and move forward by about two percent of frame width toward the low vegetation. The beak stays closed and the final second holds the new lowered pose. Preserve the eye, cheek, beak proportions, neck thickness, hands, thumb spikes, all four feet, every readable digit, pelvis, and tail. Keep the background and plants still; the dinosaur moves toward them without plant animation. No return, reverse, second dip, bite cycle, step, walk, body turn, or loop.",
+            "clip": [
+              "2",
+              0
+            ]
+          }
+        },
+        "5": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "dinosaur completely frozen, no dinosaur movement, environment-only motion, moving clouds, moving water, moving plants, wind-only motion, background animation, severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, toe reshaping, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong motion, repeated ending, loop seam, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, blood, low quality, compression artifacts, open beak, chewing cycle, plant bending, moving vegetation, face-plant fusion, duck bill, hadrosaur crest, skull stretching, frontal turn, isolated head hinge, neck seam, neck collapse, hand movement, missing thumb spike, extra thumb spike, changing thumb spike, palm flip, finger multiplication, foot lift, foot slide, body translation, walking, bipedal rise, tail swing, tail drag",
+            "clip": [
+              "2",
+              0
+            ]
+          }
+        },
+        "6": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "dino_atlas/motion_subject_required_20260807/iguanodon-bernissartensis-approved-representative-v1.png"
+          }
+        },
+        "7": {
+          "class_type": "Wan22ImageToVideoLatent",
+          "inputs": {
+            "vae": [
+              "3",
+              0
+            ],
+            "width": 800,
+            "height": 448,
+            "length": 81,
+            "batch_size": 1,
+            "start_image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "8": {
+          "class_type": "ModelSamplingSD3",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "shift": 8.0
+          }
+        },
+        "9": {
+          "class_type": "KSampler",
+          "inputs": {
+            "seed": 260807104,
+            "steps": 20,
+            "cfg": 6.0,
+            "sampler_name": "uni_pc",
+            "scheduler": "simple",
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "5",
+              0
+            ],
+            "latent_image": [
+              "7",
+              0
+            ],
+            "denoise": 1.0,
+            "model": [
+              "8",
+              0
+            ]
+          }
+        },
+        "10": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "9",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "11": {
+          "class_type": "CreateVideo",
+          "inputs": {
+            "images": [
+              "10",
+              0
+            ],
+            "fps": 16.0,
+            "bit_depth": 8
+          }
+        },
+        "12": {
+          "class_type": "SaveVideo",
+          "inputs": {
+            "video": [
+              "11",
+              0
+            ],
+            "filename_prefix": "dino_atlas/motion_subject_required_20260807/iguanodon-bernissartensis-oneway-browse-lower-wan22-s260807104-f81",
+            "format": "mp4",
+            "codec": "h264"
+          }
+        }
+      },
+      {
+        "client_id": "dino-atlas-motion-m2-i2v-long",
+        "create_time": 1786062430855
+      },
+      [
+        "12"
+      ]
+    ],
+    "outputs": {
+      "12": {
+        "images": [
+          {
+            "filename": "iguanodon-bernissartensis-oneway-browse-lower-wan22-s260807104-f81_00001_.mp4",
+            "subfolder": "dino_atlas\\motion_subject_required_20260807",
+            "type": "output"
+          }
+        ],
+        "animated": [
+          true
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "fe01e99f-f94e-4c63-a707-c4b8d24c219f",
+            "timestamp": 1786062430856
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "1",
+              "2",
+              "3",
+              "6",
+              "7",
+              "8"
+            ],
+            "prompt_id": "fe01e99f-f94e-4c63-a707-c4b8d24c219f",
+            "timestamp": 1786062430859
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "fe01e99f-f94e-4c63-a707-c4b8d24c219f",
+            "timestamp": 1786062496875
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "12": {
+        "node_id": "12",
+        "display_node": "12",
+        "parent_node": null,
+        "real_node_id": "12"
+      }
+    }
+  }
+}

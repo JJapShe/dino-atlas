@@ -231,6 +231,14 @@ if (catalog.schemaVersion !== 1 || metadataBatches.some(({ metadata }) => metada
 if (catalog.policy?.tier !== "M0" || metadataBatches.some(({ metadata }) => metadata.policy?.tier !== "M0")) {
   fail("policy tier must be M0");
 }
+if (catalog.policy?.lifecycle !== "legacy-preserved"
+  || catalog.policy?.newEnvironmentOnlyM0 !== "prohibited") {
+  fail("M0 catalog must remain legacy-preserved and prohibit new environment-only samples");
+}
+if (catalog.policy?.clickToPlay !== "required" || catalog.policy?.audio !== "prohibited"
+  || catalog.policy?.loop !== "prohibited") {
+  fail("M0 catalog must require click-to-play and prohibit audio and looping");
+}
 for (const policy of [catalog.policy, ...metadataBatches.map(({ metadata }) => metadata.policy)]) {
   if (policy?.representativePromotion !== "prohibited") fail("representative promotion must be prohibited");
   if (policy?.galleryPromotion !== "prohibited") fail("gallery promotion must be prohibited");

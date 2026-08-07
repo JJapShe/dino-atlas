@@ -1198,6 +1198,9 @@ if (catalog.policy?.tier !== "M2-I2V") fail("catalog policy tier must be M2-I2V"
 if (catalog.policy?.clickToPlay !== "required" || catalog.policy?.audio !== "prohibited") {
   fail("catalog policy must require click-to-play and prohibit audio");
 }
+if (catalog.policy?.loop !== "prohibited") {
+  fail("catalog policy must prohibit looping");
+}
 if (catalog.policy?.sourceFrame !== "approved project-owned still required") {
   fail("catalog policy must require an approved project-owned source still");
 }
@@ -1360,6 +1363,20 @@ for (const sample of samples) {
     || sample.visibility === "public" || record.visibility === "public";
   if (published) {
     publishedVideos += 1;
+    const subject = sample.subjectMotion;
+    if (subject?.status !== "supported" || subject.evidenceGate !== "review.motionPlausibility"
+      || !Array.isArray(subject.taxonIds) || !subject.taxonIds.includes(sample.taxonId)
+      || !Array.isArray(subject.movingParts) || !subject.movingParts.length) {
+      fail(`${owner}: published I2V sample lacks supported dinosaur subject motion`);
+    }
+    if (subject?.inheritedFrom) {
+      const inherited = samplesById.get(subject.inheritedFrom);
+      if (!inherited || inherited.review?.publication?.status !== "published"
+        || inherited.subjectMotion?.status !== "supported"
+        || !subject.taxonIds.some((id) => inherited.subjectMotion.taxonIds.includes(id))) {
+        fail(`${owner}: inherited subject motion lacks a compatible published source sample`);
+      }
+    }
     if (publicationStatus !== "published" && publicationStatus !== "public") {
       fail(`${owner}: public visibility requires a public or published publication gate`);
     }

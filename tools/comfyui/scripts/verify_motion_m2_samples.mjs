@@ -408,6 +408,9 @@ for (const policy of [catalog.policy, metadata.policy]) {
     fail("M2 allowed-motion policy must contain only the rigid plus-or-minus four-degree head-and-neck sweep");
   }
 }
+if (catalog.policy?.loop !== "prohibited") {
+  fail("M2 catalog must prohibit looping");
+}
 
 const samples = Array.isArray(catalog.samples) ? catalog.samples : [];
 const catalogIds = samples.map((sample) => sample?.id);
@@ -810,6 +813,12 @@ for (const sample of samples) {
   const published = sample.review?.publication?.status === "published";
   if (published) {
     publishedVideos += 1;
+    const subject = sample.subjectMotion;
+    if (subject?.status !== "supported" || subject.evidenceGate !== "review.motionPlausibility"
+      || !Array.isArray(subject.taxonIds) || !subject.taxonIds.includes(sample.taxonId)
+      || !Array.isArray(subject.movingParts) || !subject.movingParts.length) {
+      fail(`${owner}: published M2 sample lacks supported dinosaur subject motion`);
+    }
     for (const gate of REQUIRED_PUBLIC_GATES) {
       if (sample.review?.[gate]?.status !== "supported") {
         fail(`${owner}: published without ${gate} support`);

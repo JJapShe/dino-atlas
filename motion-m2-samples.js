@@ -11,6 +11,7 @@ window.motionM2SampleCatalog = {
     galleryPromotion: "prohibited",
     anatomyPromotion: "prohibited",
     autoplay: "prohibited",
+    loop: "prohibited",
     clickToPlay: "required",
     audio: "prohibited",
     cameraMotion: "prohibited",

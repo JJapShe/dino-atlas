@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "2026-08-07-subject-motion-v1",
+  "policy": {
+    "legacyM0": "preserve exactly the frozen 11-sample set; no new environment-only M0",
+    "newEnvironmentOnlyM0": "prohibited",
+    "newPublicMotion": "dinosaur subject motion required",
+    "playback": {
+      "start": "click-only",
+      "muted": true,
+      "autoplay": false,
+      "loop": false
+    },
+    "representativePromotion": "prohibited",
+    "galleryPromotion": "prohibited",
+    "rejectedRetiredAndRawAssets": "excluded"
+  },
+  "assets": [
+    {
+      "id": "yutyrannus-huali-cold-breath-ambient-m0-v1",
+      "catalog": "M0-legacy",
+      "src": "assets/motion/yutyrannus-huali-white-feather-cold-breath-ambient-m0-v1.mp4",
+      "sha256": "501c7fedc826ce49f97c687ff98250d63c0d66551024fbf651e215c38dbcdc3e",
+      "bytes": 278194
+    },
+    {
+      "id": "tyrannosaurus-rex-ground-mist-ambient-m0-v1",
+      "catalog": "M0-legacy",
+      "src": "assets/motion/tyrannosaurus-rex-hell-creek-ground-mist-ambient-m0-v1.mp4",
+      "sha256": "d117470c403e29c2f2d394277e1e3ccf155cea23557ae2340004cf0bfd5309c7",
+      "bytes": 220780
+    },
+    {
+      "id": "brachiosaurus-altithorax-skylight-ambient-m0-v1",
+      "catalog": "M0-legacy",
+      "src": "assets/motion/brachiosaurus-altithorax-high-shoulder-skylight-ambient-m0-v1.mp4",
+      "sha256": "1fc75a90a54d9c497afdc9892f27041dbad246d7d0fc2dc7acb8efc11c3f3362",
+      "bytes": 307698
+    },
+    {
+      "id": "psittacosaurus-mongoliensis-water-shimmer-solo-m0-v1",
+      "catalog": "M0-legacy",
+      "src": "assets/motion/psittacosaurus-mongoliensis-tail-bristle-water-shimmer-solo-m0-v1.mp4",
+      "sha256": "a6a9be69e7323ff3357267daf576aacb109d0adf68978bc40904948a9680e21c",
+      "bytes": 260005
+    },
+    {
+      "id": "maiasaura-peeblesorum-nesting-ground-pollen-ecology-m0-v1",
+      "catalog": "M0-legacy",
+      "src": "assets/motion/maiasaura-peeblesorum-nesting-ground-pollen-ecology-m0-v1.mp4",
+      "sha256": "13886af1a329ead6497f40a0e2a947bbfdc3b3ab0ab3aa367683af8dfc30f972",
+      "bytes": 176226
+    },
+    {
+      "id": "velociraptor-protoceratops-dustfront-interaction-m0-v1",
+      "catalog": "M0-legacy",
+      "src": "assets/motion/velociraptor-mongoliensis-protoceratops-dustfront-interaction-m0-v1.mp4",
+      "sha256": "ae04113adc19e592cc9b808054b2607bc9a3e9e15aa9beb9b3a8f6d85b3acff2",
+      "bytes": 280640
+    },
+    {
+      "id": "yutyrannus-huali-volcanic-plume-ecology-m0-v1",
+      "catalog": "M0-legacy",
+      "src": "assets/motion/yutyrannus-huali-volcanic-plume-ecology-m0-v1.mp4",
+      "sha256": "9d862616bdb8293f7028263b9d5d5560dd89cfa891dfffe853c30daaa991ca6a",
+      "bytes": 364730
+    },
+    {
+      "id": "mononykus-olecranus-distant-rainsquall-environment-m0-v1",
+      "catalog": "M0-legacy",
+      "src": "assets/motion/mononykus-olecranus-distant-rainsquall-environment-m0-v1.mp4",
+      "sha256": "d002ad6ae3a0b053f0d4349aa1b059e9fb16e6048f296b53dbbba84698e54ec4",
+      "bytes": 290324
+    },
+    {
+      "id": "therizinosaurus-cheloniformis-tarbosaurus-watergap-ripples-interaction-m0-v1",
+      "catalog": "M0-legacy",
+      "src": "assets/motion/therizinosaurus-cheloniformis-tarbosaurus-watergap-ripples-interaction-m0-v1.mp4",
+      "sha256": "b1f924126f63f2dcb7ab893a413e6f684f40fefef48575a81bf4369ffb1d09f3",
+      "bytes": 287158
+    },
+    {
+      "id": "buriolestes-schultzi-candelaria-charcoal-ground-haze-environment-m0-v1",
+      "catalog": "M0-legacy",
+      "src": "assets/motion/buriolestes-schultzi-candelaria-charcoal-ground-haze-environment-m0-v1.mp4",
+      "sha256": "8fe0f3e96eecfd02722bed8927dd4919147567902ce8ffc8924e373a694e06dc",
+      "bytes": 781513
+    },
+    {
+      "id": "ceratosaurus-nasicornis-horsetail-dawn-water-ring-solo-m0-v1",
+      "catalog": "M0-legacy",
+      "src": "assets/motion/ceratosaurus-nasicornis-horsetail-dawn-water-ring-solo-m0-v1.mp4",
+      "sha256": "3959a90f42414f77994741e2fda1da36c03b48d69a0e7080ba6f706efed26805",
+      "bytes": 319388
+    },
+    {
+      "id": "oviraptor-philoceratops-blink-headtilt-biological-m1-v1",
+      "catalog": "M1",
+      "src": "assets/motion/m1/oviraptor-philoceratops-blink-headtilt-biological-m1-v1.mp4",
+      "sha256": "86689a99269e1300b447b35ab801991506e37b518ff4437f877e428704773b52",
+      "bytes": 338341
+    },
+    {
+      "id": "oviraptor-philoceratops-alert-head-turn-comfyui-wan22-i2v-m2-v1",
+      "catalog": "M2-I2V",
+      "src": "assets/motion/m2/oviraptor-philoceratops-alert-head-turn-comfyui-wan22-i2v-m2-v1.mp4",
+      "sha256": "4b00ba2a3d0146f4a7634b4de3debde5f3a5b02f09898c4d58594391ca154491",
+      "bytes": 586962
+    },
+    {
+      "id": "ankylosaurus-magniventris-fern-feeding-comfyui-wan22-i2v-m2-v1",
+      "catalog": "M2-I2V",
+      "src": "assets/motion/m2/ankylosaurus-magniventris-fern-feeding-comfyui-wan22-i2v-m2-v1.mp4",
+      "sha256": "1764d7f374681c20a22cd191bd976dbe7b0c293a5476e7ac47042334ead08fcd",
+      "bytes": 2179420
+    },
+    {
+      "id": "giganotosaurus-carolinii-oneway-jaw-headlift-comfyui-wan22-i2v-m2-v1",
+      "catalog": "M2-I2V",
+      "src": "assets/motion/m2/giganotosaurus-carolinii-oneway-jaw-headlift-comfyui-wan22-i2v-m2-v1.mp4",
+      "sha256": "90f8eb38486678fe9184e931fc2379081f87426e0c49085318ae929cd4238b94",
+      "bytes": 1341860
+    },
+    {
+      "id": "brachiosaurus-altithorax-highshoulder-neck-sweep-comfyui-wan22-forward-only-i2v-m2-v2",
+      "catalog": "M2-I2V",
+      "src": "assets/motion/m2/brachiosaurus-altithorax-highshoulder-neck-sweep-comfyui-wan22-forward-only-i2v-m2-v2.mp4",
+      "sha256": "da4b6d53dd1305f81f654a245d6483ed72e64ff32570b77977cdd75b8a7143c9",
+      "bytes": 2019295
+    },
+    {
+      "id": "tyrannosaurus-rex-alert-head-turn-comfyui-wan22-forward-only-i2v-m2-v2",
+      "catalog": "M2-I2V",
+      "src": "assets/motion/m2/tyrannosaurus-rex-alert-head-turn-comfyui-wan22-forward-only-i2v-m2-v2.mp4",
+      "sha256": "2100740a51ad126ca5a4e9eb5f5d033ffc952b476d074d0b20ba4d41abed4818",
+      "bytes": 1956866
+    },
+    {
+      "id": "tyrannosaurus-rex-distant-meteor-sky-glance-wan22-safe-overlay-i2v-m2-v1",
+      "catalog": "M2-I2V",
+      "src": "assets/motion/m2/tyrannosaurus-rex-distant-meteor-sky-glance-wan22-safe-overlay-i2v-m2-v1.mp4",
+      "sha256": "6805adc722673c41f9e4094fd5c21b302b51ee8d04547f55c801dc6166c60349",
+      "bytes": 1937447
+    },
+    {
+      "id": "tyrannosaurus-rex-forward-vocal-display-comfyui-wan22-i2v-m2-v2",
+      "catalog": "M2-I2V",
+      "src": "assets/motion/m2/tyrannosaurus-rex-forward-vocal-display-comfyui-wan22-i2v-m2-v2.mp4",
+      "sha256": "e030deb0c2acb9a6d1337f06f38ff47980d61d8264d55977cf1dadf3ce20728a",
+      "bytes": 1435244
+    },
+    {
+      "id": "tyrannosaurus-rex-triceratops-standoff-nod-vocal-display-comfyui-wan22-i2v-m2-v2",
+      "catalog": "M2-I2V",
+      "src": "assets/motion/m2/tyrannosaurus-rex-triceratops-standoff-nod-vocal-display-comfyui-wan22-i2v-m2-v2.mp4",
+      "sha256": "8c022d932bd07f0397ccb9259eaa639ee126a98ffdd4828e0768d7b0990dce18",
+      "bytes": 1192069
+    }
+  ]
+}

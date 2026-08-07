@@ -95,15 +95,26 @@ const samples = new Map((catalog?.samples || []).map((sample) => [sample.id, sam
 
 const candidates = Array.isArray(manifest.candidates) ? manifest.candidates : [];
 const specHistory = new Map((manifest.generationSpecHistory || []).map((item) => [item.candidateId, item.sha256]));
-if (manifest.schemaVersion !== 1 || manifest.status !== "review-complete-with-safe-replacement"
+if (manifest.schemaVersion !== 1 || manifest.status !== "review-complete-replacement-retired"
   || candidates.length !== 3 || specHistory.size !== candidates.length
   || manifest.reviewSummary?.nativeCandidatesAccepted !== 0
   || manifest.reviewSummary?.nativeCandidatesRejected !== 3
-  || manifest.reviewSummary?.safeReplacementsPublished !== 1) {
+  || manifest.reviewSummary?.safeReplacementsPublished !== 0
+  || manifest.reviewSummary?.safeReplacementsRetiredBySubjectMotionPolicy !== 1) {
   fail("manifest status, counts, or generation-spec history is incomplete");
 }
+if (manifest.policy?.representativePromotion !== "prohibited"
+  || manifest.policy?.galleryPromotion !== "prohibited"
+  || manifest.policy?.anatomyPromotion !== "prohibited"
+  || manifest.policy?.autoplay !== "prohibited"
+  || manifest.policy?.loop !== "prohibited"
+  || manifest.policy?.audio !== "prohibited"
+  || !String(manifest.policy?.publicationRule || "").includes("readable dinosaur subject motion")
+  || !String(manifest.policy?.publicationRule || "").includes("omit the public sample")) {
+  fail("manifest subject-motion, playback, or promotion policy is incomplete");
+}
 
-let replacementCount = 0;
+let retiredReplacementCount = 0;
 for (const candidate of candidates) {
   const owner = `candidate ${candidate.id || "(blank)"}`;
   if (!/^[a-z0-9][a-z0-9-]*$/.test(candidate.id || "")
@@ -168,19 +179,20 @@ for (const candidate of candidates) {
   }
 
   if (candidate.safeReplacement !== null && candidate.safeReplacement !== undefined) {
-    replacementCount += 1;
+    retiredReplacementCount += 1;
     const replacement = candidate.safeReplacement;
     const sample = samples.get(replacement.id);
     const record = metadata.samples?.[replacement.id];
-    if (replacement.tier !== "M2" || !String(replacement.reviewStatus).startsWith("published-after-independent-")
-      || !sample || !record || sample.reviewStatus !== "published"
-      || sample.review?.publication?.status !== "published"
-      || record.review?.publication?.status !== "published"
+    if (replacement.tier !== "M2"
+      || replacement.reviewStatus !== "retired-after-subject-motion-policy-20260807"
+      || !sample || !record || sample.reviewStatus !== "retired"
+      || sample.review?.publication?.status !== "retired"
+      || record.review?.publication?.status !== "retired"
       || sample.src !== replacement.projectAsset || record.projectAsset !== replacement.projectAsset
       || sample.file?.sha256 !== replacement.sha256 || record.file?.sha256 !== replacement.sha256
       || sample.representativeEligible !== false || sample.galleryEligible !== false
       || sample.anatomyEligible !== false) {
-      fail(`${owner}: safe replacement is not the matching non-promotable published catalog sample`);
+      fail(`${owner}: retired replacement is not the matching non-promotable audit sample`);
     }
     const replacementFile = checkFile(
       replacement.projectAsset,
@@ -200,14 +212,17 @@ for (const candidate of candidates) {
   }
 }
 
-if (replacementCount !== 1) fail(`expected exactly one published safe replacement, found ${replacementCount}`);
+if (retiredReplacementCount !== 1) {
+  fail(`expected exactly one subject-motion-policy-retired replacement, found ${retiredReplacementCount}`);
+}
 
 const report = {
   schemaVersion: manifest.schemaVersion,
   candidateCount: candidates.length,
   nativeAccepted: manifest.reviewSummary?.nativeCandidatesAccepted,
   nativeRejected: manifest.reviewSummary?.nativeCandidatesRejected,
-  safeReplacementsPublished: replacementCount,
+  safeReplacementsPublished: 0,
+  safeReplacementsRetiredBySubjectMotionPolicy: retiredReplacementCount,
   warnings,
   errors,
 };

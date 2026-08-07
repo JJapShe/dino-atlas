@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-08-07T00:54:49Z",
+  "status": "review-complete-one-published-five-rejected",
+  "sourceSpec": {
+    "path": "tools/comfyui/motion-subject-required-candidates-20260807.json",
+    "sha256": "97cd2c36af8dacb80885cb49845b3b6e66a66e4d7b30f1a0f60ed6dbdd0c0e64",
+    "bytes": 21648
+  },
+  "reviewMethod": "All 81 frames of every candidate were inspected at original resolution; compact 9x9 contact sheets are retained in tools/comfyui/outputs/motion-subject-required-review-sheets-20260807/ while temporary extracted frames, crops and browser copies are not publication assets.",
+  "policy": {
+    "publicMotionRequiresDinosaurSubjectMotion": true,
+    "forwardOnly": true,
+    "representativePromotion": "prohibited",
+    "galleryPromotion": "prohibited",
+    "anatomyPromotion": "prohibited",
+    "autoplay": "prohibited",
+    "loop": "prohibited",
+    "audio": "prohibited",
+    "rejectedCandidateAssetCopy": "prohibited"
+  },
+  "summary": {
+    "candidateCount": 6,
+    "publishedCount": 1,
+    "rejectedCount": 5,
+    "publishedCandidateId": "giganotosaurus-carolinii-oneway-jaw-display-f81-v2",
+    "publicAsset": "assets/motion/m2/giganotosaurus-carolinii-oneway-jaw-headlift-comfyui-wan22-i2v-m2-v1.mp4"
+  },
+  "candidates": [
+    {
+      "candidateId": "giganotosaurus-carolinii-connected-head-lift-f81-v1",
+      "taxonId": "giganotosaurus-carolinii",
+      "runRecord": "tools/comfyui/outputs/motion-subject-required-giganotosaurus-head-lift-s260807101-f81-v1-run.json",
+      "runRecordSha256": "1881d780f942204fe22f6dc676c598e564fe4ee7f665822e1b40fc253f6731d1",
+      "rawOutput": "output/dino_atlas/motion_subject_required_20260807/giganotosaurus-carolinii-connected-head-lift-wan22-s260807101-f81_00001_.mp4",
+      "rawSha256": "9fc94bc2fd2f2d6f26251ef23616754521ce1ecb80cbf60445989b52ab4333df",
+      "rawBytes": 1740687,
+      "evidence": "tools/comfyui/outputs/motion-subject-required-review-sheets-20260807/giganotosaurus-carolinii-connected-head-lift-f81-v1-all-81-frames-compact.jpg",
+      "status": "rejected",
+      "reviewFindings": {
+        "subjectMotion": "failed: the head/neck change remains too subtle to read reliably at the motion-card size and no clearly distinct held endpoint is established",
+        "identityAndAnatomy": "supported through the reviewed frames, but anatomy stability alone does not satisfy the subject-motion requirement",
+        "temporal": "no publishable one-way action is visually established"
+      },
+      "publicationReason": "Rejected because the dinosaur appears effectively static at the intended viewing size.",
+      "projectAsset": null
+    },
+    {
+      "candidateId": "giganotosaurus-carolinii-oneway-jaw-display-f81-v2",
+      "taxonId": "giganotosaurus-carolinii",
+      "runRecord": "tools/comfyui/outputs/motion-subject-required-giganotosaurus-jaw-display-s260807102-f81-v2-run.json",
+      "runRecordSha256": "341c9baf32c29e99b4baa981da187675921b26d2ab7be351f3f0ed61064f1269",
+      "rawOutput": "output/dino_atlas/motion_subject_required_20260807/giganotosaurus-carolinii-oneway-jaw-display-wan22-s260807102-f81_00001_.mp4",
+      "rawSha256": "cb688351a551a8f4560666d8d642bfa0836d4d54aa8540b4b75035c5ca5ee94a",
+      "rawBytes": 1341700,
+      "rawStream": {
+        "width": 800,
+        "height": 448,
+        "durationSeconds": 5.0625,
+        "fps": 16,
+        "frameCount": 81,
+        "codec": "h264",
+        "pixelFormat": "yuv420p",
+        "container": "mp4",
+        "audio": false
+      },
+      "evidence": "tools/comfyui/outputs/motion-subject-required-review-sheets-20260807/giganotosaurus-carolinii-oneway-jaw-display-f81-v2-all-81-frames-compact.jpg",
+      "status": "published",
+      "observedMotion": "one continuous one-way head-and-connected-neck lift with lower-jaw opening; the final pose holds without reverse, return, or loop",
+      "reviewFindings": {
+        "subjectMotion": "supported: the head, connected neck and lower jaw move clearly enough to read at card size",
+        "identityAndAnatomy": "supported: the long low skull, attached head/neck, two forelimbs, grounded hind limbs and continuous tail remain stable",
+        "backgroundAndContact": "supported: locked camera and stable ground/background with no foot sliding",
+        "temporal": "supported: forward-only action, distinct held endpoint, no ping-pong, reverse or loop seam",
+        "knownLimitation": "the observed head-lift amplitude is larger than the prompt's nominal angle; publication describes the observed motion and does not claim the requested numeric angle",
+        "browserPlayback": "5.0625 seconds; autoplay false, loop false, playback ended paused at the final frame"
+      },
+      "projectAsset": {
+        "path": "assets/motion/m2/giganotosaurus-carolinii-oneway-jaw-headlift-comfyui-wan22-i2v-m2-v1.mp4",
+        "sha256": "90f8eb38486678fe9184e931fc2379081f87426e0c49085318ae929cd4238b94",
+        "bytes": 1341860,
+        "stream": {
+          "width": 800,
+          "height": 448,
+          "durationSeconds": 5.0625,
+          "fps": 16,
+          "frameCount": 81,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "container": "mp4",
+          "audio": false
+        }
+      },
+      "postProcess": {
+        "type": "prompt-preserving-faststart-remux-only",
+        "frameTransform": false,
+        "videoCodec": "copy",
+        "audio": false,
+        "ffmpegCommand": "ffmpeg -hide_banner -loglevel error -y -i {rawOutput} -map 0 -c copy -map_metadata 0 -movflags use_metadata_tags+faststart {projectAsset}"
+      }
+    },
+    {
+      "candidateId": "iguanodon-bernissartensis-connected-head-rise-f81-v1",
+      "taxonId": "iguanodon-bernissartensis",
+      "runRecord": "tools/comfyui/outputs/motion-subject-required-iguanodon-head-rise-s260807103-f81-v1-run.json",
+      "runRecordSha256": "5285daff9827f47854be67a5aeac497310e3976f5564d0d31f9cec3a0e9bc7a0",
+      "rawOutput": "output/dino_atlas/motion_subject_required_20260807/iguanodon-bernissartensis-connected-head-rise-wan22-s260807103-f81_00001_.mp4",
+      "rawSha256": "1d54355f71d23a7413d2f61385140326df6095f2c79a2db0672d5901ea260fdb",
+      "rawBytes": 1789985,
+      "evidence": "tools/comfyui/outputs/motion-subject-required-review-sheets-20260807/iguanodon-bernissartensis-connected-head-rise-f81-v1-all-81-frames-compact.jpg",
+      "status": "rejected",
+      "reviewFindings": {
+        "subjectMotion": "failed: the head-rise is too small to remain legible at the intended card size",
+        "identityAndAnatomy": "mostly stable, but no clearly distinct held final pose is established",
+        "temporal": "insufficient readable one-way action"
+      },
+      "publicationReason": "Rejected because the dinosaur appears effectively static in normal app viewing.",
+      "projectAsset": null
+    },
+    {
+      "candidateId": "iguanodon-bernissartensis-oneway-browse-lower-f81-v2",
+      "taxonId": "iguanodon-bernissartensis",
+      "runRecord": "tools/comfyui/outputs/motion-subject-required-iguanodon-browse-lower-s260807104-f81-v2-run.json",
+      "runRecordSha256": "5846b15bd9196c494492974596c0390ebea390fe9e7b1473b2ded8692e2cab68",
+      "rawOutput": "output/dino_atlas/motion_subject_required_20260807/iguanodon-bernissartensis-oneway-browse-lower-wan22-s260807104-f81_00001_.mp4",
+      "rawSha256": "30f6157c290c078e8a398867fb007413aaccc50c964da234d5c464beaf28f7bd",
+      "rawBytes": 2259964,
+      "evidence": "tools/comfyui/outputs/motion-subject-required-review-sheets-20260807/iguanodon-bernissartensis-oneway-browse-lower-f81-v2-all-81-frames-compact.jpg",
+      "status": "rejected",
+      "reviewFindings": {
+        "subjectMotion": "present but coupled to an unintended body crouch and translation",
+        "identityAndAnatomy": "failed: hand/thumb details and foot contacts shift, while tail patterning and silhouette drift across the shot",
+        "temporal": "a readable action exists, but it is not anatomically locked"
+      },
+      "publicationReason": "Rejected for limb/contact and species-identity drift during the browsing motion.",
+      "projectAsset": null
+    },
+    {
+      "candidateId": "ankylosaurus-magniventris-connected-head-rise-f81-v1",
+      "taxonId": "ankylosaurus-magniventris",
+      "runRecord": "tools/comfyui/outputs/motion-subject-required-ankylosaurus-head-rise-s260807105-f81-v1-run.json",
+      "runRecordSha256": "ea73b79d71040f96d088217d9ea6d54c1f05bd91f158ecfedd01279bc46ea076",
+      "rawOutput": "output/dino_atlas/motion_subject_required_20260807/ankylosaurus-magniventris-connected-head-rise-wan22-s260807105-f81_00001_.mp4",
+      "rawSha256": "fa7d1db5e5429a02beee0e73ed927969e9513021f9908c5f66bca34aa8bf40aa",
+      "rawBytes": 2204811,
+      "evidence": "tools/comfyui/outputs/motion-subject-required-review-sheets-20260807/ankylosaurus-magniventris-connected-head-rise-f81-v1-all-81-frames-compact.jpg",
+      "status": "rejected",
+      "reviewFindings": {
+        "subjectMotion": "the head rise is readable",
+        "identityAndAnatomy": "failed: the continuous tail and terminal club lift and morph substantially instead of remaining locked",
+        "temporal": "not eligible once the diagnostic tail-club structure changes"
+      },
+      "publicationReason": "Rejected for Ankylosaurus tail-club identity drift.",
+      "projectAsset": null
+    },
+    {
+      "candidateId": "ankylosaurus-magniventris-clear-fern-bite-f81-v2",
+      "taxonId": "ankylosaurus-magniventris",
+      "runRecord": "tools/comfyui/outputs/motion-subject-required-ankylosaurus-fern-bite-s260807106-f81-v2-run.json",
+      "runRecordSha256": "cfd169a84b940be921a1f9e42e298d6171a1f45fc92d910a83fb2851009bbee3",
+      "rawOutput": "output/dino_atlas/motion_subject_required_20260807/ankylosaurus-magniventris-clear-fern-bite-wan22-s260807106-f81_00001_.mp4",
+      "rawSha256": "2403e1cfc9d283c914877c64671b9a95882a3855b5e6e0cdf2a8b0282b18c2b0",
+      "rawBytes": 2151903,
+      "evidence": "tools/comfyui/outputs/motion-subject-required-review-sheets-20260807/ankylosaurus-magniventris-clear-fern-bite-f81-v2-all-81-frames-compact.jpg",
+      "status": "rejected",
+      "reviewFindings": {
+        "subjectMotion": "the fern-directed bite is readable",
+        "identityAndAnatomy": "failed: the body shifts and the tail/club rises away from the locked source structure",
+        "temporal": "failed: the tail/club rises mid-shot and returns, creating a local reversal despite the intended forward-only action"
+      },
+      "publicationReason": "Rejected for tail-club deformation, body shift and local return motion.",
+      "projectAsset": null
+    }
+  ]
+}

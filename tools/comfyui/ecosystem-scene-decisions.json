@@ -309,28 +309,28 @@
       }
     },
     "dewars-farm-sauropod-theropod-crossing-trackways": {
-      "asset": "assets/dinosaurs/cetiosaurus-oxoniensis-megalosaurus-bucklandii-analogue-crossing-trackways-trace-evidence-imagegen-hybrid-v1.png",
-      "compositionKey": "landscape-orthographic-crossing-trackways",
+      "asset": "assets/dinosaurs/cetiosaurus-oxoniensis-megalosaurus-bucklandii-analogue-crossing-trackways-trace-evidence-imagegen-hybrid-v2.png",
+      "compositionKey": "landscape-orthographic-naturalized-crossing-trackways",
       "representativeEligible": false,
       "labelBoundary": "Cetiosaurus and Megalosaurus are regional trackmaker analogues, not exact trackmaker identifications.",
       "gates": {
         "anatomy": {
           "status": "supported",
-          "evidence": "tools/comfyui/middle-jurassic-dewars-crossing-trackways-ecosystem-scene-20260803.json#review/trace",
+          "evidence": "tools/comfyui/middle-jurassic-dewars-crossing-trackways-ecosystem-scene-20260807-v2.json#review/trace",
           "scope": "trace topology only; no dinosaur bodies or body-anatomy claim"
         },
         "ecology": {
           "status": "supported",
-          "evidence": "tools/comfyui/middle-jurassic-dewars-crossing-trackways-ecosystem-scene-20260803.json#review/ecology",
+          "evidence": "tools/comfyui/middle-jurassic-dewars-crossing-trackways-ecosystem-scene-20260807-v2.json#review/ecology",
           "scope": "four-plus-one crossing pattern; no exact maker, measurement, simultaneity, pursuit, herd, or track-order claim"
         },
         "responsive": {
           "status": "supported",
-          "evidence": "2026-08-03 root QA passed at 1440x900, 390x844, 320x700 and 844x390: trace readability, decode, contain, no overflow, filters, scoped lightbox, tap-hide and image-only pinch regression"
+          "evidence": "2026-08-07 root QA passed at 1440x1000 and 390x844: v2 decoded at 1672x941, used contain with no horizontal overflow, and retained readable controlled-irregularity at card size"
         },
         "publication": {
           "status": "published",
-          "evidence": "trace, ecology, evidence boundary, composition and responsive gates supported; exact-trackmaker and representative promotion remain prohibited"
+          "evidence": "v2 trace, controlled-irregularity metrics, ecology, evidence boundary, composition and responsive gates supported; exact-trackmaker and representative promotion remain prohibited"
         }
       },
       "publication": {

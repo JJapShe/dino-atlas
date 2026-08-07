@@ -1,0 +1,430 @@
+{
+  "schemaVersion": 2,
+  "candidateId": "giganotosaurus-carolinii-connected-head-lift-f81-v1",
+  "taxonId": "giganotosaurus-carolinii",
+  "queuedAt": "2026-08-07T00:23:46.327501+00:00",
+  "completedAt": "2026-08-07T00:24:55.417103+00:00",
+  "elapsedSeconds": 69.09,
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "4ad1314e-e405-488c-a8ca-181f6d739593",
+          "timestamp": 1786062226352
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [
+            "1",
+            "2",
+            "3",
+            "8"
+          ],
+          "prompt_id": "4ad1314e-e405-488c-a8ca-181f6d739593",
+          "timestamp": 1786062226356
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "4ad1314e-e405-488c-a8ca-181f6d739593",
+          "timestamp": 1786062294758
+        }
+      ]
+    ]
+  },
+  "promptId": "4ad1314e-e405-488c-a8ca-181f6d739593",
+  "queueResponse": {
+    "prompt_id": "4ad1314e-e405-488c-a8ca-181f6d739593",
+    "number": 26,
+    "node_errors": {}
+  },
+  "provenance": {
+    "spec": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\motion-subject-required-candidates-20260807.json",
+    "specSha256": "0245976ad35fa2662275300dc6dfd9af5b4c1f363f3bd49c45d24a4366cb9f33",
+    "template": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\workflow_templates\\dino_wan22_ti2v_5b_i2v_long_api.json",
+    "templateSha256": "eba1778a281c9d81c7f62d8ac2e75aa73573b8845b2fdf60f0d6ca48750404e2",
+    "runner": "C:\\Users\\USER\\.codex\\worktrees\\a3aa\\dinosour\\tools\\comfyui\\scripts\\run_motion_m2_i2v_long_candidate.py",
+    "runnerSha256": "7c861c8733644959d5d9b7504f058f7f92875cfd944e36f5217baa8e2efd7970",
+    "comfyInput": "C:\\Users\\USER\\Documents\\dinosour\\tools\\comfyui\\ComfyUI\\input\\dino_atlas\\motion_subject_required_20260807\\giganotosaurus-carolinii-approved-representative-v1.png",
+    "comfyInputSha256": "1c24e590cc8e06de4815fc28819cdbd14d66f65c290211aa67d66ee734e7e1c4",
+    "comfyInputWidth": 1672,
+    "comfyInputHeight": 941,
+    "outputAspectWidth": 800,
+    "outputAspectHeight": 448,
+    "sourcePoster": "assets/dinosaurs/giganotosaurus-carolinii-lowskull-lacrimal-ridge-representative-imagegen-v1.png",
+    "sourcePosterSha256": "1c24e590cc8e06de4815fc28819cdbd14d66f65c290211aa67d66ee734e7e1c4",
+    "sourceLicense": "Original project-generated bitmap; factual sources only; no external artwork or copyrighted character style used.",
+    "sourceReviewStatus": "approved count-level representative source; forelimbs and hands remain comparative reconstruction; motion use only"
+  },
+  "runConfig": {
+    "width": 800,
+    "height": 448,
+    "frames": 81,
+    "fps": 16,
+    "durationSeconds": 5.0625,
+    "steps": 20,
+    "cfg": 5,
+    "sampler": "uni_pc",
+    "scheduler": "simple",
+    "shift": 8,
+    "denoise": 1,
+    "effectiveDurationSeconds": 5.0625,
+    "seed": 260807101,
+    "inputName": "dino_atlas/motion_subject_required_20260807/giganotosaurus-carolinii-approved-representative-v1.png",
+    "outputPrefix": "dino_atlas/motion_subject_required_20260807/giganotosaurus-carolinii-connected-head-lift-wan22-s260807101-f81",
+    "positivePrompt": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved still as the exact first-frame identity, anatomy, left-facing full-body composition, lighting, palette, skin markings, terrain, vegetation, and crop reference. Exactly one complete Giganotosaurus carolinii remains in frame with one long low rectangular skull, a narrow snout tip, one low swept-back lacrimal ridge, two short three-fingered forelimbs, exactly two strong hind limbs with two planted three-toed feet, and one complete continuous balancing tail. After a brief opening hold, the dinosaur itself makes one clearly visible attentive motion: the complete skull, muscular neck, throat, shoulder base, and upper chest lift together smoothly by seven to nine degrees and move slightly forward, with natural connected tissue and no isolated head hinge. The closed jaws and skull proportions remain constant. The final second holds the new higher attentive pose. Keep the torso, pelvis, both forelimbs, both planted hind feet, toes, and the entire tail stable at their source coordinates. Keep all trees, plants, clouds, shadows, and ground completely still. No return, reverse, second nod, repeated motion, walk, or loop.",
+    "negativePrompt": "dinosaur completely frozen, no dinosaur movement, environment-only motion, moving clouds, moving water, moving plants, wind-only motion, background animation, severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, toe reshaping, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong motion, repeated ending, loop seam, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, blood, low quality, compression artifacts, open mouth, roar, chewing, detached jaw, split jaw, skull shortening, skull deepening into Tyrannosaurus, horn, crest, frontal head, large head turn, isolated head rotation, rubber neck, stretched neck, neck folding, body translation, body turn, walking, running, foot lift, knee bend, leg reshaping, extra leg, central third leg, missing leg, arm movement, long arms, two-finger hands, missing finger, tail swing, tail leaving frame, dorsal spikes, feathers"
+  },
+  "workflow": {
+    "1": {
+      "class_type": "UNETLoader",
+      "inputs": {
+        "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    "2": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "type": "wan",
+        "device": "default"
+      }
+    },
+    "3": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "wan2.2_vae.safetensors"
+      }
+    },
+    "4": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved still as the exact first-frame identity, anatomy, left-facing full-body composition, lighting, palette, skin markings, terrain, vegetation, and crop reference. Exactly one complete Giganotosaurus carolinii remains in frame with one long low rectangular skull, a narrow snout tip, one low swept-back lacrimal ridge, two short three-fingered forelimbs, exactly two strong hind limbs with two planted three-toed feet, and one complete continuous balancing tail. After a brief opening hold, the dinosaur itself makes one clearly visible attentive motion: the complete skull, muscular neck, throat, shoulder base, and upper chest lift together smoothly by seven to nine degrees and move slightly forward, with natural connected tissue and no isolated head hinge. The closed jaws and skull proportions remain constant. The final second holds the new higher attentive pose. Keep the torso, pelvis, both forelimbs, both planted hind feet, toes, and the entire tail stable at their source coordinates. Keep all trees, plants, clouds, shadows, and ground completely still. No return, reverse, second nod, repeated motion, walk, or loop.",
+        "clip": [
+          "2",
+          0
+        ]
+      }
+    },
+    "5": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "dinosaur completely frozen, no dinosaur movement, environment-only motion, moving clouds, moving water, moving plants, wind-only motion, background animation, severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, toe reshaping, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong motion, repeated ending, loop seam, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, blood, low quality, compression artifacts, open mouth, roar, chewing, detached jaw, split jaw, skull shortening, skull deepening into Tyrannosaurus, horn, crest, frontal head, large head turn, isolated head rotation, rubber neck, stretched neck, neck folding, body translation, body turn, walking, running, foot lift, knee bend, leg reshaping, extra leg, central third leg, missing leg, arm movement, long arms, two-finger hands, missing finger, tail swing, tail leaving frame, dorsal spikes, feathers",
+        "clip": [
+          "2",
+          0
+        ]
+      }
+    },
+    "6": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "dino_atlas/motion_subject_required_20260807/giganotosaurus-carolinii-approved-representative-v1.png"
+      }
+    },
+    "7": {
+      "class_type": "Wan22ImageToVideoLatent",
+      "inputs": {
+        "vae": [
+          "3",
+          0
+        ],
+        "width": 800,
+        "height": 448,
+        "length": 81,
+        "batch_size": 1,
+        "start_image": [
+          "6",
+          0
+        ]
+      }
+    },
+    "8": {
+      "class_type": "ModelSamplingSD3",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "shift": 8
+      }
+    },
+    "9": {
+      "class_type": "KSampler",
+      "inputs": {
+        "seed": 260807101,
+        "steps": 20,
+        "cfg": 5,
+        "sampler_name": "uni_pc",
+        "scheduler": "simple",
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "5",
+          0
+        ],
+        "latent_image": [
+          "7",
+          0
+        ],
+        "denoise": 1,
+        "model": [
+          "8",
+          0
+        ]
+      }
+    },
+    "10": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "9",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "11": {
+      "class_type": "CreateVideo",
+      "inputs": {
+        "images": [
+          "10",
+          0
+        ],
+        "fps": 16,
+        "bit_depth": 8
+      }
+    },
+    "12": {
+      "class_type": "SaveVideo",
+      "inputs": {
+        "video": [
+          "11",
+          0
+        ],
+        "filename_prefix": "dino_atlas/motion_subject_required_20260807/giganotosaurus-carolinii-connected-head-lift-wan22-s260807101-f81",
+        "format": "mp4",
+        "codec": "h264"
+      }
+    }
+  },
+  "history": {
+    "prompt": [
+      26,
+      "4ad1314e-e405-488c-a8ca-181f6d739593",
+      {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+            "type": "wan",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "wan2.2_vae.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "Scientific educational image-to-video for ages five to fourteen. Static locked wide camera, one continuous forward-only five-second shot with no cuts. Preserve the attached approved still as the exact first-frame identity, anatomy, left-facing full-body composition, lighting, palette, skin markings, terrain, vegetation, and crop reference. Exactly one complete Giganotosaurus carolinii remains in frame with one long low rectangular skull, a narrow snout tip, one low swept-back lacrimal ridge, two short three-fingered forelimbs, exactly two strong hind limbs with two planted three-toed feet, and one complete continuous balancing tail. After a brief opening hold, the dinosaur itself makes one clearly visible attentive motion: the complete skull, muscular neck, throat, shoulder base, and upper chest lift together smoothly by seven to nine degrees and move slightly forward, with natural connected tissue and no isolated head hinge. The closed jaws and skull proportions remain constant. The final second holds the new higher attentive pose. Keep the torso, pelvis, both forelimbs, both planted hind feet, toes, and the entire tail stable at their source coordinates. Keep all trees, plants, clouds, shadows, and ground completely still. No return, reverse, second nod, repeated motion, walk, or loop.",
+            "clip": [
+              "2",
+              0
+            ]
+          }
+        },
+        "5": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "dinosaur completely frozen, no dinosaur movement, environment-only motion, moving clouds, moving water, moving plants, wind-only motion, background animation, severed head, decapitation, detached neck, floating head, neck stump, neck gap, neck seam, extra head, duplicate animal, extra limbs, missing limbs, fused limbs, duplicated feet, foot sliding, toe reshaping, split tail, duplicate tail, shortened tail, body morphing, identity drift, background morphing, camera pan, camera tilt, zoom, crop change, cut, scene transition, reverse motion, return motion, ping-pong motion, repeated ending, loop seam, lighting shift, exposure shift, color shift, heavy motion blur, ghost outline, text, watermark, logo, signature, gore, exposed wound, blood, low quality, compression artifacts, open mouth, roar, chewing, detached jaw, split jaw, skull shortening, skull deepening into Tyrannosaurus, horn, crest, frontal head, large head turn, isolated head rotation, rubber neck, stretched neck, neck folding, body translation, body turn, walking, running, foot lift, knee bend, leg reshaping, extra leg, central third leg, missing leg, arm movement, long arms, two-finger hands, missing finger, tail swing, tail leaving frame, dorsal spikes, feathers",
+            "clip": [
+              "2",
+              0
+            ]
+          }
+        },
+        "6": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "dino_atlas/motion_subject_required_20260807/giganotosaurus-carolinii-approved-representative-v1.png"
+          }
+        },
+        "7": {
+          "class_type": "Wan22ImageToVideoLatent",
+          "inputs": {
+            "vae": [
+              "3",
+              0
+            ],
+            "width": 800,
+            "height": 448,
+            "length": 81,
+            "batch_size": 1,
+            "start_image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "8": {
+          "class_type": "ModelSamplingSD3",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "shift": 8.0
+          }
+        },
+        "9": {
+          "class_type": "KSampler",
+          "inputs": {
+            "seed": 260807101,
+            "steps": 20,
+            "cfg": 5.0,
+            "sampler_name": "uni_pc",
+            "scheduler": "simple",
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "5",
+              0
+            ],
+            "latent_image": [
+              "7",
+              0
+            ],
+            "denoise": 1.0,
+            "model": [
+              "8",
+              0
+            ]
+          }
+        },
+        "10": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "9",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "11": {
+          "class_type": "CreateVideo",
+          "inputs": {
+            "images": [
+              "10",
+              0
+            ],
+            "fps": 16.0,
+            "bit_depth": 8
+          }
+        },
+        "12": {
+          "class_type": "SaveVideo",
+          "inputs": {
+            "video": [
+              "11",
+              0
+            ],
+            "filename_prefix": "dino_atlas/motion_subject_required_20260807/giganotosaurus-carolinii-connected-head-lift-wan22-s260807101-f81",
+            "format": "mp4",
+            "codec": "h264"
+          }
+        }
+      },
+      {
+        "client_id": "dino-atlas-motion-m2-i2v-long",
+        "create_time": 1786062226351
+      },
+      [
+        "12"
+      ]
+    ],
+    "outputs": {
+      "12": {
+        "images": [
+          {
+            "filename": "giganotosaurus-carolinii-connected-head-lift-wan22-s260807101-f81_00001_.mp4",
+            "subfolder": "dino_atlas\\motion_subject_required_20260807",
+            "type": "output"
+          }
+        ],
+        "animated": [
+          true
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "4ad1314e-e405-488c-a8ca-181f6d739593",
+            "timestamp": 1786062226352
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "1",
+              "2",
+              "3",
+              "8"
+            ],
+            "prompt_id": "4ad1314e-e405-488c-a8ca-181f6d739593",
+            "timestamp": 1786062226356
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "4ad1314e-e405-488c-a8ca-181f6d739593",
+            "timestamp": 1786062294758
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "12": {
+        "node_id": "12",
+        "display_node": "12",
+        "parent_node": null,
+        "real_node_id": "12"
+      }
+    }
+  }
+}

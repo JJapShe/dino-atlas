@@ -225,6 +225,10 @@ for (const policy of [catalog.policy, metadata.policy]) {
     fail("M1 allowed-motion policy is incomplete");
   }
 }
+if (catalog.policy?.loop !== "prohibited" || catalog.policy?.clickToPlay !== "required"
+  || catalog.policy?.audio !== "prohibited") {
+  fail("M1 catalog must require click-to-play and prohibit audio and looping");
+}
 
 const samples = Array.isArray(catalog.samples) ? catalog.samples : [];
 if (samples.length !== 1 || samples[0]?.id !== EXPECTED_ID) {
@@ -428,6 +432,12 @@ for (const sample of samples) {
   const published = sample.review?.publication?.status === "published";
   if (published) {
     publishedVideos += 1;
+    const subject = sample.subjectMotion;
+    if (subject?.status !== "supported" || subject.evidenceGate !== "review.motionPlausibility"
+      || !Array.isArray(subject.taxonIds) || !subject.taxonIds.includes(sample.taxonId)
+      || !Array.isArray(subject.movingParts) || !subject.movingParts.length) {
+      fail(`${owner}: published M1 sample lacks supported dinosaur subject motion`);
+    }
     for (const gate of ["frameAnatomy", "motionPlausibility", "backgroundIntegrity", "responsive"]) {
       if (sample.review?.[gate]?.status !== "supported") fail(`${owner}: published without ${gate} support`);
     }
