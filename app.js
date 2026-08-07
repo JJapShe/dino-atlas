@@ -25891,8 +25891,16 @@ function applyPhyloFocusHighlight() {
 function applyMapTransform({ updateZoomLabel = true } = {}) {
   const canvas = $("#phyloCanvas");
   if (!canvas) return;
+  const viewport = $("#mapViewport");
+  const pixelRatio = window.devicePixelRatio || 1;
+  const renderX = Math.round(state.map.x * pixelRatio) / pixelRatio;
+  const renderY = Math.round(state.map.y * pixelRatio) / pixelRatio;
+  const isInteracting = state.map.dragging || viewport?.classList.contains("pinching");
   const renderedTaxonWidth = phyloLayoutMetrics.taxonWidth * state.map.scale;
-  canvas.style.transform = `translate3d(${state.map.x}px, ${state.map.y}px, 0) scale(${state.map.scale})`;
+  const translation = isInteracting
+    ? `translate3d(${renderX}px, ${renderY}px, 0)`
+    : `translate(${renderX}px, ${renderY}px)`;
+  canvas.style.transform = `${translation} scale(${state.map.scale})`;
   canvas.classList.toggle("is-overview", renderedTaxonWidth < 112);
   canvas.classList.toggle(
     "is-compact",
@@ -26025,31 +26033,13 @@ function setMapMode(mode) {
 }
 
 function getReadableMapScale() {
-  const viewport = $("#mapViewport");
-  if (!viewport) return 0.94;
-  const targetCardWidth = state.map.expanded
-    ? state.map.inspectorCollapsed
-      ? 224
-      : 214
-    : viewport.clientWidth < 520
-      ? 176
-      : state.map.inspectorCollapsed
-        ? 206
-        : 198;
-  return clampScale(targetCardWidth / phyloLayoutMetrics.taxonWidth);
+  // Text-heavy taxon cards soften when the whole canvas rests at a fractional scale.
+  // Keep normal browsing at native size; only an explicit overview may go below 100%.
+  return 1;
 }
 
 function getAllMapBrowseScale() {
-  const viewport = $("#mapViewport");
-  if (!viewport) return 0.9;
-  const targetCardWidth = state.map.expanded
-    ? 210
-    : viewport.clientWidth < 520
-      ? 166
-      : state.map.inspectorCollapsed
-        ? 196
-        : 188;
-  return clampScale(targetCardWidth / phyloLayoutMetrics.taxonWidth);
+  return 1;
 }
 
 function getMapScopeBounds(scope) {
@@ -26241,7 +26231,7 @@ function setMapExpanded(expanded) {
 }
 
 function fitMapToViewport() {
-  fitMapScope("all");
+  fitMapScope("all", { allowOverview: true });
 }
 
 function zoomMap(nextScale, originX, originY) {
@@ -26528,9 +26518,10 @@ function renderCatalog() {
       });
     }
     const open = () => {
-      state.selectedId = card.dataset.id;
-      state.phyloFocusId = "";
-      state.galleryIndex = 0;
+      const dino = selectDinoForAtlas(card.dataset.id);
+      if (!dino) return;
+      state.map.fitted = false;
+      state.map.frameMode = "scope";
       setView("atlas");
     };
     card.addEventListener("click", open);
@@ -30969,10 +30960,7 @@ function bindMapEvents() {
   $("#timelineBrowse").addEventListener("click", (event) => {
     const card = event.target.closest("[data-timeline-id]");
     if (!card) return;
-    state.selectedId = card.dataset.timelineId;
-    state.galleryIndex = 0;
-    state.map.inspectorCollapsed = false;
-    state.map.inspectorUserSet = true;
+    if (!selectDinoForAtlas(card.dataset.timelineId)) return;
     renderTimelineBrowse();
     renderDetail();
     applyMapUiState();
@@ -30999,6 +30987,10 @@ function bindMapEvents() {
     pinchStartScale = state.map.scale;
     state.map.dragging = false;
     viewport.classList.remove("dragging");
+    viewport.classList.add("pinching");
+    activePointers.forEach((pointer) => {
+      pointer.mapNode = null;
+    });
     flushMapPanTransform();
   };
 
@@ -31013,30 +31005,39 @@ function bindMapEvents() {
     viewport.classList.add("dragging");
   };
 
+  const getMapNodeAction = (target) => {
+    const groupNode = target.closest(".map-node.group");
+    if (groupNode) return { type: "group", id: groupNode.dataset.phyloFocus };
+    const taxonNode = target.closest(".map-node.taxon");
+    if (taxonNode) return { type: "taxon", id: taxonNode.dataset.id };
+    return null;
+  };
+
+  const activateMapNode = (action) => {
+    if (!action?.id) return;
+    if (action.type === "group") {
+      state.phyloFocusId = state.phyloFocusId === action.id ? "" : action.id;
+      applyPhyloFocusHighlight();
+      return;
+    }
+
+    const shouldFocusAfterSelect =
+      state.map.inspectorCollapsed || ["overview", "selection"].includes(state.map.frameMode);
+    if (!selectDinoForAtlas(action.id)) return;
+    applyMapUiState();
+    renderAll();
+    if (shouldFocusAfterSelect) {
+      requestAnimationFrame(() => focusSelectedMapNode());
+    }
+  };
+
   mapNodes.addEventListener("click", (event) => {
     if (suppressMapNodeClick) {
       suppressMapNodeClick = false;
       event.preventDefault();
       return;
     }
-    const node = event.target.closest(".map-node.taxon");
-    const groupNode = event.target.closest(".map-node.group");
-    if (groupNode) {
-      state.phyloFocusId =
-        state.phyloFocusId === groupNode.dataset.phyloFocus ? "" : groupNode.dataset.phyloFocus;
-      applyPhyloFocusHighlight();
-      return;
-    }
-    if (!node) return;
-    const shouldFocusAfterSelect = state.map.frameMode === "overview";
-    state.selectedId = node.dataset.id;
-    state.map.scope = getDinoById(state.selectedId)?.era || state.map.scope;
-    state.phyloFocusId = "";
-    state.galleryIndex = 0;
-    renderAll();
-    if (shouldFocusAfterSelect) {
-      requestAnimationFrame(() => focusSelectedMapNode());
-    }
+    activateMapNode(getMapNodeAction(event.target));
   });
 
   $("#zoomOut").addEventListener("click", () => zoomMap(state.map.scale - 0.12));
@@ -31122,7 +31123,11 @@ function bindMapEvents() {
   viewport.addEventListener("pointerdown", (event) => {
     if (event.button !== 0) return;
     event.preventDefault();
-    activePointers.set(event.pointerId, { clientX: event.clientX, clientY: event.clientY });
+    activePointers.set(event.pointerId, {
+      clientX: event.clientX,
+      clientY: event.clientY,
+      mapNode: getMapNodeAction(event.target),
+    });
     viewport.setPointerCapture(event.pointerId);
     if (activePointers.size === 2) {
       beginPinch();
@@ -31138,8 +31143,13 @@ function bindMapEvents() {
   });
 
   viewport.addEventListener("pointermove", (event) => {
-    if (activePointers.has(event.pointerId)) {
-      activePointers.set(event.pointerId, { clientX: event.clientX, clientY: event.clientY });
+    const activePointer = activePointers.get(event.pointerId);
+    if (activePointer) {
+      activePointers.set(event.pointerId, {
+        ...activePointer,
+        clientX: event.clientX,
+        clientY: event.clientY,
+      });
     }
     if (pinching) {
       const metrics = getPinchMetrics();
@@ -31159,10 +31169,14 @@ function bindMapEvents() {
   });
 
   viewport.addEventListener("pointerup", (event) => {
+    const releasedPointer = activePointers.get(event.pointerId);
+    const shouldActivateMapNode =
+      activePointers.size === 1 && !pinching && !mapPanMoved && releasedPointer?.mapNode;
     activePointers.delete(event.pointerId);
     if (viewport.hasPointerCapture(event.pointerId)) viewport.releasePointerCapture(event.pointerId);
     if (pinching && activePointers.size < 2) {
       pinching = false;
+      viewport.classList.remove("pinching");
       if (activePointers.size === 1) resumeDragWithRemainingPointer();
     }
     if (activePointers.size === 0) {
@@ -31178,17 +31192,25 @@ function bindMapEvents() {
       viewport.classList.remove("dragging");
       flushMapPanTransform();
     }
+    if (shouldActivateMapNode) {
+      suppressMapNodeClick = true;
+      activateMapNode(releasedPointer.mapNode);
+      window.setTimeout(() => {
+        suppressMapNodeClick = false;
+      }, 0);
+    }
   });
 
   const stopDragging = (event) => {
     if (event?.pointerId !== undefined) activePointers.delete(event.pointerId);
     if (pinching && activePointers.size < 2) {
       pinching = false;
+      viewport.classList.remove("pinching");
       if (activePointers.size === 1) resumeDragWithRemainingPointer();
     }
     if (activePointers.size > 0) return;
     state.map.dragging = false;
-    viewport.classList.remove("dragging");
+    viewport.classList.remove("dragging", "pinching");
     flushMapPanTransform();
   };
 
@@ -31242,6 +31264,18 @@ function setAtlasSearch(value) {
   state.search = value;
   renderAll();
   refitAtlasAfterFilter();
+}
+
+function selectDinoForAtlas(dinoId) {
+  const dino = getDinoById(dinoId);
+  if (!dino) return null;
+  state.selectedId = dino.id;
+  state.map.scope = dino.era || state.map.scope;
+  state.phyloFocusId = "";
+  state.galleryIndex = 0;
+  state.map.inspectorCollapsed = false;
+  state.map.inspectorUserSet = true;
+  return dino;
 }
 
 function bindEvents() {

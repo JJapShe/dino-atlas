@@ -1176,12 +1176,19 @@ body[data-active-view="atlas"] .map-panel.mode-timeline .map-era-controls {
 }
 
 .phylo-viewport.dragging,
-.phylo-viewport.dragging .map-node {
+.phylo-viewport.dragging .map-node,
+.phylo-viewport.pinching,
+.phylo-viewport.pinching .map-node {
   cursor: grabbing;
 }
 
 .phylo-viewport.dragging {
   cursor: grabbing;
+}
+
+.phylo-viewport.dragging .phylo-canvas,
+.phylo-viewport.pinching .phylo-canvas {
+  will-change: transform;
 }
 
 .map-navigator {
@@ -1290,7 +1297,6 @@ body[data-active-view="atlas"] .map-panel.mode-timeline .map-era-controls {
   transform-origin: 0 0;
   contain: layout paint style;
   isolation: isolate;
-  will-change: transform;
 }
 
 .phylo-canvas::before {
