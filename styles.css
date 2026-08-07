@@ -713,6 +713,10 @@ body[data-active-view="motion"] .metric-row {
   scroll-snap-align: start;
 }
 
+.classification-strip button[hidden] {
+  display: none;
+}
+
 .classification-strip strong {
   display: inline-grid;
   min-width: 23px;
@@ -757,7 +761,7 @@ body[data-active-view="motion"] .metric-row {
 
 .atlas-mode-bar {
   display: grid;
-  grid-template-columns: auto minmax(220px, 380px);
+  grid-template-columns: minmax(0, auto) minmax(220px, 380px);
   justify-content: space-between;
   align-items: center;
   min-width: 0;
@@ -766,6 +770,73 @@ body[data-active-view="motion"] .metric-row {
   padding: 7px 14px;
   border-bottom: 1px solid var(--line);
   background: rgba(8, 13, 19, 0.98);
+}
+
+.atlas-mode-actions {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 8px;
+}
+
+.atlas-realm-controls {
+  display: inline-grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  min-width: 246px;
+  padding: 3px;
+  border: 1px solid rgba(230, 196, 106, 0.28);
+  border-radius: 10px;
+  background: rgba(230, 196, 106, 0.045);
+}
+
+.atlas-realm-controls button {
+  display: grid;
+  place-content: center;
+  min-width: 0;
+  min-height: 36px;
+  gap: 1px;
+  padding: 3px 10px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.15;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.atlas-realm-controls button small {
+  color: var(--subtle);
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.atlas-realm-controls button:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.atlas-realm-controls button.active {
+  color: #101813;
+  background: var(--accent);
+  box-shadow: 0 7px 18px rgba(85, 214, 190, 0.16);
+}
+
+.atlas-realm-controls button.active small {
+  color: rgba(7, 24, 21, 0.68);
+}
+
+body[data-atlas-realm="paleozoic"] .atlas-realm-controls button.active {
+  color: #211707;
+  background: #e6b866;
+  box-shadow: 0 7px 18px rgba(230, 184, 102, 0.18);
+}
+
+body[data-atlas-realm="paleozoic"] .atlas-realm-controls button.active small {
+  color: rgba(33, 23, 7, 0.68);
 }
 
 .map-mode-controls {
@@ -1078,6 +1149,15 @@ body[data-active-view="atlas"] .map-panel.mode-timeline .map-era-controls {
   color: var(--text);
 }
 
+.map-era-controls button[hidden] {
+  display: none;
+}
+
+body[data-atlas-realm="paleozoic"] .map-era-controls button.active {
+  border-color: rgba(230, 184, 102, 0.7);
+  background: rgba(230, 184, 102, 0.14);
+}
+
 .map-era-count {
   min-width: 22px;
   padding: 2px 5px;
@@ -1246,6 +1326,10 @@ body[data-active-view="atlas"] .map-panel.mode-timeline .map-era-controls {
 
 .map-navigator-era.triassic {
   fill: rgba(85, 214, 190, 0.12);
+}
+
+.map-navigator-era.permian {
+  fill: rgba(230, 184, 102, 0.13);
 }
 
 .map-navigator-era.jurassic {
@@ -1443,6 +1527,10 @@ body[data-active-view="atlas"] .map-panel.mode-timeline .map-era-controls {
 
 .period-band.triassic {
   background: linear-gradient(90deg, rgba(85, 214, 190, 0.08), rgba(85, 214, 190, 0.02));
+}
+
+.period-band.permian {
+  background: linear-gradient(90deg, rgba(230, 184, 102, 0.1), rgba(154, 104, 48, 0.025));
 }
 
 .period-band.jurassic {
@@ -2332,6 +2420,18 @@ button.dummy-image:disabled {
 
 .catalog-toolbar {
   margin-bottom: 18px;
+}
+
+.catalog-toolbar-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 0;
+  gap: 10px;
+}
+
+.catalog-realm-controls {
+  min-width: 246px;
 }
 
 .catalog-scope-note {
@@ -4529,6 +4629,16 @@ body.lightbox-open {
   }
 }
 
+@media (max-width: 840px) {
+  .atlas-mode-bar {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .atlas-mode-actions {
+    width: 100%;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .map-node.focus-matched,
   .dino-card.focus-matched {
@@ -4544,10 +4654,52 @@ body.lightbox-open {
 
 @media (max-width: 720px) {
   .atlas-mode-bar {
-    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
-    min-height: 50px;
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 0;
     gap: 6px;
     padding: 5px 7px;
+  }
+
+  .atlas-mode-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    width: 100%;
+    gap: 6px;
+  }
+
+  .atlas-realm-controls,
+  .map-mode-controls {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .atlas-realm-controls button,
+  .map-mode-controls button {
+    min-height: 42px;
+  }
+
+  .atlas-realm-controls button {
+    padding-inline: 5px;
+    font-size: 10px;
+  }
+
+  .atlas-realm-controls button small {
+    display: none;
+  }
+
+  .catalog-toolbar-actions {
+    width: 100%;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  .catalog-realm-controls {
+    flex: 1 1 100%;
+  }
+
+  .catalog-toolbar-actions select {
+    flex: 1 1 100%;
+    max-width: none;
   }
 
   .classification-strip {
@@ -4580,7 +4732,7 @@ body.lightbox-open {
   }
 
   .map-mode-controls button {
-    min-height: 34px;
+    min-height: 42px;
     padding: 0 5px;
     font-size: 10px;
   }

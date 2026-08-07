@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dino Atlas MVP</title>
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="./styles.css?v=20260807-phylo-click-clarity-v1" />
+    <link rel="stylesheet" href="./styles.css?v=20260808-dimetrodon-paleozoic-v1" />
   </head>
-  <body data-active-view="atlas">
+  <body data-active-view="atlas" data-atlas-realm="mesozoic">
     <div class="app-shell">
       <aside class="sidebar" id="primarySidebar" aria-label="Primary">
         <div class="brand">
@@ -122,9 +122,19 @@
         <section class="view active" id="atlasView" aria-label="Phylogeny view">
           <section class="map-panel mode-timeline">
             <div class="atlas-mode-bar">
-              <div class="map-mode-controls" id="mapModeControls" role="group" aria-label="계통도 표시 방식">
-                <button class="active" data-map-mode="timeline" type="button" aria-pressed="true">시대별 찾기</button>
-                <button data-map-mode="tree" type="button" aria-pressed="false">전체 계통</button>
+              <div class="atlas-mode-actions">
+                <div class="atlas-realm-controls" data-atlas-realm-controls role="group" aria-label="탐색할 지질시대">
+                  <button data-atlas-realm="paleozoic" type="button" aria-pressed="false">
+                    <span>고생대</span><small>페름기</small>
+                  </button>
+                  <button class="active" data-atlas-realm="mesozoic" type="button" aria-pressed="true">
+                    <span>중생대</span><small>트라이아스기–백악기</small>
+                  </button>
+                </div>
+                <div class="map-mode-controls" id="mapModeControls" role="group" aria-label="계통도 표시 방식">
+                  <button class="active" data-map-mode="timeline" type="button" aria-pressed="true">시대별 찾기</button>
+                  <button data-map-mode="tree" type="button" aria-pressed="false">전체 계통</button>
+                </div>
               </div>
               <label class="map-quick-search">
                 <span class="sr-only">계통도 빠른 검색</span>
@@ -169,23 +179,27 @@
             </nav>
             <div class="map-toolbar">
               <div class="map-toolbar-heading">
-                <p class="eyebrow">Phylogeny Map</p>
-                <h3>시대별 계통 지도</h3>
+                <p class="eyebrow" id="mapRealmEyebrow">Mesozoic Phylogeny</p>
+                <h3 id="mapRealmHeading">시대별 계통 지도</h3>
               </div>
               <div class="map-era-controls" id="mapEraControls" role="group" aria-label="시대 구간 이동">
                 <button class="active" data-map-scope="all" type="button" aria-pressed="true">
                   <span>전체</span>
                   <strong class="map-era-count">0</strong>
                 </button>
-                <button data-map-scope="triassic" type="button" aria-pressed="false">
+                <button data-map-scope="permian" data-realm-scope="paleozoic" type="button" aria-pressed="false" hidden>
+                  <span>페름기</span>
+                  <strong class="map-era-count">0</strong>
+                </button>
+                <button data-map-scope="triassic" data-realm-scope="mesozoic" type="button" aria-pressed="false">
                   <span>트라이아스기</span>
                   <strong class="map-era-count">0</strong>
                 </button>
-                <button data-map-scope="jurassic" type="button" aria-pressed="false">
+                <button data-map-scope="jurassic" data-realm-scope="mesozoic" type="button" aria-pressed="false">
                   <span>쥐라기</span>
                   <strong class="map-era-count">0</strong>
                 </button>
-                <button data-map-scope="cretaceous" type="button" aria-pressed="false">
+                <button data-map-scope="cretaceous" data-realm-scope="mesozoic" type="button" aria-pressed="false">
                   <span>백악기</span>
                   <strong class="map-era-count">0</strong>
                 </button>
@@ -251,16 +265,26 @@
           <div class="catalog-toolbar">
             <div>
               <p class="eyebrow">Cards</p>
-              <h3>중생대 생물 도감</h3>
-              <p class="catalog-scope-note">공룡·익룡·바다 파충류와 초기 조류·단궁류·고대 두족류를 분류별로 나누어 봅니다.</p>
+              <h3 id="catalogRealmHeading">중생대 생물 도감</h3>
+              <p class="catalog-scope-note" id="catalogRealmNote">공룡·익룡·바다 파충류와 초기 조류·단궁류·고대 두족류를 분류별로 나누어 봅니다.</p>
             </div>
-            <select id="periodSort" aria-label="도감 정렬">
-              <option value="level" selected>친숙도순</option>
-              <option value="period">시대순</option>
-              <option value="name">이름순</option>
-              <option value="size">크기순</option>
-              <option value="updated">최근 이미지순</option>
-            </select>
+            <div class="catalog-toolbar-actions">
+              <div class="atlas-realm-controls catalog-realm-controls" data-atlas-realm-controls role="group" aria-label="도감 지질시대">
+                <button data-atlas-realm="paleozoic" type="button" aria-pressed="false">
+                  <span>고생대</span><small>페름기</small>
+                </button>
+                <button class="active" data-atlas-realm="mesozoic" type="button" aria-pressed="true">
+                  <span>중생대</span><small>트라이아스기–백악기</small>
+                </button>
+              </div>
+              <select id="periodSort" aria-label="도감 정렬">
+                <option value="level" selected>친숙도순</option>
+                <option value="period">시대순</option>
+                <option value="name">이름순</option>
+                <option value="size">크기순</option>
+                <option value="updated">최근 이미지순</option>
+              </select>
+            </div>
           </div>
           <nav
             class="classification-strip catalog-classification-strip"
@@ -459,13 +483,13 @@
       </section>
     </div>
 
-  <script src="./gallery-slots.js?v=20260807-mesozoic-life-v1"></script>
+  <script src="./gallery-slots.js?v=20260808-dimetrodon-paleozoic-v1"></script>
   <script src="./ecosystem-scenes.js?v=20260807-subject-motion-trackway-v2"></script>
   <script src="./motion-samples.js?v=20260807-subject-motion-policy-v1"></script>
   <script src="./motion-m1-samples.js?v=20260807-subject-motion-policy-v1"></script>
   <script src="./motion-m2-samples.js?v=20260807-subject-motion-policy-v1"></script>
   <script src="./motion-m2-i2v-samples.js?v=20260807-giganotosaurus-subject-motion-v1"></script>
-  <script src="./app.js?v=20260807-phylo-click-clarity-v1"></script>
+  <script src="./app.js?v=20260808-dimetrodon-paleozoic-v1"></script>
     <script src="./atlas-layout.js?v=20260731-resizable-inspector-v1"></script>
   </body>
 </html>

@@ -1,10 +1,39 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-07T10:11:42.734Z",
-  "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
-  "reviewMethod": "Preserved prior approved decisions plus original-size primary inspection and independent comparison of 18 new images across six Mesozoic-life taxa. Review covered taxon identity, whole-body and animal counts, bilateral appendages, feet or arm count, shell continuity, tail continuity, crop and artifact exclusion, pattern and composition separation, habitat readability, and explicit fossil-versus-comparative-versus-hypothetical evidence boundaries. Only slot 1 may be representative-eligible; slots 2 and 3 remain gallery-only review material.",
-  "targetSlots": 838,
+  "generatedAt": "2026-08-07T15:23:04.802Z",
+  "reviewBatch": "2026-08-08-paleozoic-life-initial-gallery",
+  "reviewMethod": "Preserved all prior approved decisions plus original-size primary inspection of three new Dimetrodon grandis images and one rejected cropped ecology original. Review covered non-dinosaur synapsid identity, deep skull and heterodont caniniform cue, tall continuous no-crossbar sail, whole-animal count, four attached limbs and feet, belly clearance, tail continuity and tip, crop and artifact exclusion, pattern and composition separation, habitat readability, and explicit fossil-versus-analytical-versus-hypothetical evidence boundaries. Only slot 1 may be representative-eligible; slots 2 and 3 remain gallery-only review material.",
+  "targetSlots": 841,
   "taxa": {
+    "dimetrodon-grandis": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/dimetrodon-grandis-clearfork-sail-canine-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed original-size count and identity review for one deep heterodont head with enlarged caniniform teeth, one tall continuous no-crossbar sail, four connected limbs and feet, a body-clear semi-sprawling presentation, and one complete tail; exact soft tissue, posture, coloration, and sail edge remain reconstruction.",
+        "reviewMethod": "Original-size full-frame inspection plus animal count, skull and tooth cue, sail continuity and crossbar exclusion, four-limb and four-foot count, belly clearance, pelvis-tail continuity, crop, artifact, and modern-animal drift audit",
+        "reviewBatch": "2026-08-08-paleozoic-life-initial-gallery",
+        "reviewedAt": "2026-08-07T15:23:04.802Z"
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/dimetrodon-grandis-rightfacing-indigo-ochre-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "reason": "Approved for gallery comparison only: a right-facing rear-three-quarter camera, diagonal body line, cool dawn light, and broken indigo-charcoal and ochre palette differ materially from slot 1; hypothetical color and foreshortening prohibit representative promotion.",
+        "reviewMethod": "Original-size skull, tooth, sail, four-limb, four-foot, full-tail, direction, camera, asymmetric-pattern, crop, artifact, and same-composition audit",
+        "reviewBatch": "2026-08-08-paleozoic-life-initial-gallery",
+        "reviewedAt": "2026-08-07T15:23:04.802Z"
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/dimetrodon-grandis-clearfork-ripples-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "reason": "Approved for anatomy-review habitat context only: one complete animal, four connected limbs and feet, sail, belly gap, and tail tip remain readable in a materially wider high-oblique scene; ripple attention and all ecological details are hypothetical, with no prey or hunting claim.",
+        "reviewMethod": "Original-size wide-scene animal-count, skull, sail, four-limb, four-foot, full-tail, habitat, non-contact behavior-boundary, crop, track-randomness, and artifact audit",
+        "reviewBatch": "2026-08-08-paleozoic-life-initial-gallery",
+        "reviewedAt": "2026-08-07T15:23:04.802Z"
+      }
+    },
     "archaeopteryx-lithographica": {
       "1": {
         "status": "approved",

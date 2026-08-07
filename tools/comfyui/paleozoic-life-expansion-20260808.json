@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-08-paleozoic-life-expansion-1",
+  "createdAt": "2026-08-08T00:23:01+09:00",
+  "audience": "Korean Dino Atlas users ages 5-14",
+  "scope": [
+    "Dimetrodon grandis initial three-image gallery",
+    "Explicit Paleozoic and Early Permian atlas-realm opening",
+    "Sail, skull, dentition, limb-posture, and full-tail anatomy gate",
+    "Extensible approval and rejection provenance for later Paleozoic taxa"
+  ],
+  "promptEncoding": "Each prompt array preserves the exact nonblank labeled text supplied to the image generator, in original order. Original blank-line grouping is not encoded; join items with newline characters for the same textual prompt content.",
+  "copyrightSafety": {
+    "externalArtworkUsed": false,
+    "externalImagesUsedAsGenerationInput": false,
+    "projectGeneratedReferenceOnly": false,
+    "licenseRecord": "Original project-generated bitmap assets for Dino Atlas. Papers and museum records supplied factual anatomical, temporal, environmental, and evidence-boundary constraints only; no external figure, reconstruction, franchise frame, copyrighted character, or named-artist style was copied or supplied to the generator.",
+    "rejectedOriginalPolicy": "The rejected cropped ecology original remains only in the private generated-image store and was never copied into assets/dinosaurs.",
+    "appPathPolicy": "Only reviewed species-prefixed project copies under assets/dinosaurs may be referenced by app.js or gallery metadata. No .codex/generated_images path may be referenced by the app."
+  },
+  "researchSources": [
+    {
+      "taxon": "Dimetrodon grandis",
+      "citation": "Smithsonian National Museum of Natural History. Dimetrodon grandis Romer & Price, 1940, specimen record NMNH PAL 3451032.",
+      "url": "https://www.si.edu/object/dimetrodon-grandis-romer-price-1940%3Anmnhpaleobiology_3451032",
+      "use": "Species-specific museum record for Early Permian Clear Fork Formation occurrence in Baylor County, Texas, and a complete skull with teeth, 27 vertebrae with spines, ribs, and major forelimb and hindlimb elements",
+      "rightsUse": "Catalogue facts only; no specimen image was supplied to the generator"
+    },
+    {
+      "taxon": "Dimetrodon grandis",
+      "citation": "Museum of Comparative Zoology, Harvard University. MCZ:VP:VPRA-1491, Dimetrodon grandis specimen record.",
+      "url": "https://mczbase.mcz.harvard.edu/guid/MCZ%3AVP%3AVPRA-1491",
+      "use": "Species-specific Clear Fork Group, Arroyo Formation, Baylor County Texas occurrence and vertebral, limb, and neural-spine context",
+      "rightsUse": "Catalogue facts only; no specimen image was supplied to the generator"
+    },
+    {
+      "taxon": "Dimetrodon grandis",
+      "citation": "Brink, K. S. & Reisz, R. R. 2014. Hidden dental diversity in the oldest terrestrial apex predator Dimetrodon. Nature Communications 5: 3269.",
+      "url": "https://doi.org/10.1038/ncomms4269",
+      "use": "Sphenacodontid skull and heterodont dentition constraints, including compressed recurved carinate teeth and D. grandis dental evidence",
+      "rightsUse": "Factual and anatomical reference only; no figure was copied or supplied to the generator"
+    },
+    {
+      "taxon": "Dimetrodon grandis",
+      "citation": "Huttenlocker, A. K., Rega, E. & Sumida, S. S. 2010. Comparative anatomy and osteohistology of hyperelongate neural spines in the sphenacodontids Sphenacodon and Dimetrodon (Amniota: Synapsida). Journal of Morphology 271: 1407-1421.",
+      "url": "https://doi.org/10.1002/jmor.10876",
+      "use": "Hyperelongate neural-spine structure, soft-tissue correlate limits, and explicit uncertainty around dorsal-sail function",
+      "rightsUse": "Factual and anatomical reference only; no figure was copied or supplied to the generator"
+    },
+    {
+      "taxon": "Dimetrodon grandis",
+      "citation": "Bramwell, C. D. & Fellgett, P. B. 1973. Thermal Regulation in Sail Lizards. Nature 242: 203-205.",
+      "url": "https://doi.org/10.1038/242203a0",
+      "use": "Historical D. grandis sail model and elongated, grooved neural-spine context; thermoregulation is retained only as a hypothesis, not a settled function",
+      "rightsUse": "Factual and historical hypothesis reference only; no figure was copied or supplied to the generator"
+    },
+    {
+      "taxon": "Dimetrodon grandis",
+      "citation": "Bishop, P. J. & Pierce, S. E. 2024. Late acquisition of erect hindlimb posture and function in the forerunners of therian mammals. Science Advances 10: eadr2722.",
+      "url": "https://doi.org/10.1126/sciadv.adr2722",
+      "use": "Biomechanical boundary against a strongly adducted, fully erect modern-mammal hindlimb reconstruction in Dimetrodon",
+      "rightsUse": "Factual and analytical reference only; no figure or model rendering was supplied to the generator"
+    },
+    {
+      "taxon": "Dimetrodon grandis",
+      "citation": "American Museum of Natural History. Dimetrodon, Hall of Primitive Mammals.",
+      "url": "https://www.amnh.org/exhibitions/permanent/primitive-mammals/dimetrodon",
+      "use": "Child-readable educational check that Dimetrodon is a synapsid and early mammal relative rather than a dinosaur, and that sail function remains uncertain",
+      "rightsUse": "Educational facts only; no museum image was copied or supplied to the generator"
+    }
+  ],
+  "evidenceBoundaries": {
+    "dimetrodon-grandis": {
+      "direct": [
+        "Species-specific museum records place Dimetrodon grandis in the Early Permian of north-central Texas, including the Clear Fork Group, and document skull, vertebral, rib-cage, limb, and girdle material.",
+        "Dimetrodon is a non-dinosaur synapsid in Sphenacodontidae. Hyperelongate dorsal neural spines and a deep skull with strongly differentiated, compressed, recurved, carinate teeth are fossil-led identity cues.",
+        "Four limbs, one continuous axial tail, and the bony support of the dorsal sail are skeletal constraints. No Edaphosaurus-like lateral sail crossbars are supported for Dimetrodon."
+      ],
+      "analytical": [
+        "Current hindlimb modeling supports rejecting a fully erect modern-therian pose for Dimetrodon; the exact semi-sprawling high-walk moments shown here remain conservative visual reconstructions rather than directly observed gait.",
+        "Neural-spine anatomy supports a dorsal soft-tissue structure, but the precise membrane outline, thickness, edge profile, surface texture, and degree of visible spine relief are not directly preserved for the pictured individual."
+      ],
+      "hypothetical": [
+        "All skin texture, pigmentation, sail colors, pattern placement, sex, weather, lighting, exact plant arrangement, channel geometry, locomotor moment, and head-turn behavior are hypothetical.",
+        "The ecology image's attention toward fresh ripples is a non-contact scene device only. It does not establish prey presence, hunting, capture, or a species-level feeding association."
+      ],
+      "sailFunctionBoundary": "Temperature regulation, display, intimidation, and other sail functions remain hypotheses. The app and image captions must not present any one function as established fact.",
+      "postureBoundary": "Avoid both a belly-dragging lizard caricature and strongly adducted, fully erect modern-mammal legs. The accepted images use a conservative body-clear semi-sprawling presentation without claiming a fossilized exact gait.",
+      "integumentBoundary": "Fine pebbly or scaly skin is a cautious visual convention, not direct evidence for the exact living surface. Fur, whiskers, and external mammal ears are not used.",
+      "realmBoundary": "Dimetrodon grandis opens an explicitly separate Paleozoic realm and Early Permian scope. It must not be silently mixed into the default Mesozoic timeline or treated as a dinosaur."
+    }
+  },
+  "records": {
+    "dimetrodon-grandis-representative-v1": {
+      "taxon": "Dimetrodon grandis",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-08T00:16:38+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image workflow",
+      "seed": "unavailable",
+      "callId": "exec-4ad5a149-f05c-45c9-85e5-6087fafb42d4",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-4ad5a149-f05c-45c9-85e5-6087fafb42d4.png",
+      "approvedProjectPath": "assets/dinosaurs/dimetrodon-grandis-clearfork-sail-canine-representative-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork or copyrighted character style used.",
+      "sha256": "d7266f7e915993d2731409e0adb208d69f6e3732d0f7f552cc6cea3df1c7f60e",
+      "bytes": 2704363,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational.",
+        "Asset type: Dino Atlas representative gallery candidate for children ages 5-14.",
+        "Primary request: Create one scientifically cautious, museum-quality natural-history reconstruction of a single adult Dimetrodon grandis from the Early Permian red-bed floodplains of Texas and Oklahoma.",
+        "Subject identity: one non-dinosaur basal synapsid/sphenacodontid, quadrupedal, with a deep narrow skull; visibly differentiated teeth including several enlarged upper caniniform teeth but no saber-cat fangs; a long low trunk; exactly two forelimbs and two hindlimbs, all four clearly attached to the body and bearing visible feet; one continuous tapering tail; and one tall continuous dorsal sail supported by many individually implied slender elongated neural spines from the shoulder region along the back toward the pelvis. The sail is a skin-covered bony-spine structure, not a loose fish fin, not a hump, and has no Edaphosaurus-like crossbars. Use a conservative semi-sprawling posture with the belly held clear of the ground: not fully erect mammal legs and not belly-dragging. Conservative fine pebbly/scaly external texture; no fur claim.",
+        "Scene/backdrop: dry-season Early Permian Texas red-bed floodplain, shallow braided channel, exposed reddish silt, scattered calamite-like stems and low seed ferns; no grass, flowers, palms, or modern trees.",
+        "Style/medium: realistic evidence-led paleoart, crisp natural anatomy, restrained colors, not fantasy, not a toy, not a franchise style.",
+        "Composition/framing: 16:9 landscape, low eye-level left-facing three-quarter profile, the complete animal from snout through tail tip and every limb root and foot fully inside frame with generous edge padding. The sail silhouette, skull profile, heterodont tooth cue, four limbs, and tail must all be easy to count. Single integrated scene, no panels.",
+        "Lighting/mood: clear neutral late-morning light, calm alert stance.",
+        "Color palette: natural clay-red, muted ochre, charcoal-brown, pale sandstone underside; irregular low-contrast mottling, never repeated wallpaper spots or perfect stripes.",
+        "Constraints: exactly one animal; no other animals, prey, attack, blood, wound, text, labels, logo, border, or watermark.",
+        "Avoid: dinosaur or biped posture, Spinosaurus body or fin, Edaphosaurus sail crossbars, crocodile armor or long crocodile snout, monitor-lizard clone, mammal fur or external ears, fully erect mammal limbs, dragging belly, extra/fused/duplicated limbs or feet, hidden limb attachments, disconnected sail, forked or severed tail, cropped anatomy, fantasy horns or spikes, modern vegetation."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-07T15:23:04.802Z",
+        "method": "Original-size full-frame inspection plus animal count, skull and heterodont tooth cue, tall continuous sail, crossbar exclusion, four connected limbs and feet, belly clearance, pelvis-tail continuity, crop, artifact, and modern-animal drift audit",
+        "result": "PASS as the sole representative-eligible Dimetrodon image in this batch at count level. One head, differentiated teeth with enlarged caniniforms, a tall continuous no-crossbar sail, four connected limbs and feet, a body-clear posture, and one complete tail are readable. Exact soft tissue, posture, coloration, pattern, and sail edge remain reconstruction."
+      }
+    },
+    "dimetrodon-grandis-pattern-v1": {
+      "taxon": "Dimetrodon grandis",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-08T00:17:27+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image workflow",
+      "seed": "unavailable",
+      "callId": "exec-06b2e30e-2d0d-4df1-bbb3-447800c95417",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-06b2e30e-2d0d-4df1-bbb3-447800c95417.png",
+      "approvedProjectPath": "assets/dinosaurs/dimetrodon-grandis-rightfacing-indigo-ochre-pattern-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork used.",
+      "sha256": "c870265fc733b61e43c08be7402b51aa7e751c782f9bff5f85b4808bc43c4fce",
+      "bytes": 2539402,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational.",
+        "Asset type: Dino Atlas color-and-pattern gallery review candidate for children ages 5-14.",
+        "Primary request: Create a second scientifically cautious reconstruction of one adult Dimetrodon grandis, with a clearly different viewing direction, camera, pose, lighting, environment, and restrained hypothetical pattern from the representative.",
+        "Subject identity: exactly one non-dinosaur Early Permian sphenacodontid synapsid. Preserve a long deep skull; clearly differentiated teeth with one or two enlarged upper caniniform teeth and smaller teeth; exactly two forelimbs and two hindlimbs, all robust, separately attached, and ending in four visible feet; a long muscular continuous tapering tail; and a tall continuous dorsal sail carried by many hyperelongate neural spines, with no Edaphosaurus-like lateral crossbars. Use a semi-sprawling high walk with the belly held above the ground, not fully erect mammal legs and not belly-dragging. Conservative fine pebbly/scaly integument, no fur.",
+        "Scene/backdrop: Early Permian Texas Clear Fork dry-channel margin after overcast dawn, wind-sculpted red silt, scattered calamite-like stems and low seed ferns; no grass, flowers, palms, birds, dinosaurs, or modern trees.",
+        "Style/medium: realistic museum-quality natural-history paleoart, evidence-led and restrained, not fantasy or franchise art.",
+        "Composition/framing: 16:9 landscape, low rear-right three-quarter view. The animal travels from left toward the right and turns its head slightly toward camera, giving a right-facing read. The camera should see the rear plane of the sail and a diagonal body line, not repeat a flat broadside. Keep the entire skull, sail top and rear edge, all four limb roots and feet, belly gap, and full tail tip clearly inside the frame. Single scene, no panels.",
+        "Lighting/mood: cool overcast early morning with a narrow amber rim from the horizon.",
+        "Color palette: hypothetical dark indigo-charcoal sail and dorsum, muted burnt-ochre shoulders and thighs, cool slate flanks, pale clay underside. Use irregular asymmetric mineral mottling with broken edges and empty gaps, never evenly spaced spots, perfect bands, rings, mirrored patterns, or repeated wallpaper stripes.",
+        "Constraints: exactly one animal; no other animals, prey, attack, blood, injury, text, labels, logo, border, or watermark.",
+        "Avoid: dinosaur or biped posture, Spinosaurus body or fin, Edaphosaurus crossbars, crocodile osteoderms or long crocodile snout, generic monitor-lizard clone, forked tongue, fur, whiskers, external ears, dog nose, fully erect mammal limbs, dragging belly, extra/fused/duplicated limbs or feet, hidden limb attachments, disconnected or split sail, tail fork or crop, cropped anatomy, fantasy horns/spikes, modern vegetation."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-07T15:23:04.802Z",
+        "method": "Original-size full-frame inspection plus skull, tooth, sail, four-limb and four-foot count, belly clearance, full-tail, opposite direction, rear-three-quarter camera, asymmetric pattern, crop, artifact, and same-composition audit",
+        "result": "PASS only as a color-pattern review slot. The right-facing rear-three-quarter body line, cool overcast horizon light, indigo-charcoal and broken ochre palette, and diagonal staging differ materially from slot 1 while the identity cues remain readable. Hypothetical color, foreshortening, and gallery role prohibit representative promotion."
+      }
+    },
+    "dimetrodon-grandis-ecology-v1": {
+      "taxon": "Dimetrodon grandis",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "gallerySubrole": "non-contact-ripple-attention-hypothesis",
+      "kind": "anatomy review",
+      "status": "approved-for-gallery-not-representative",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-08T00:19:26+09:00",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in imagegen prompt-to-image ecology workflow",
+      "seed": "unavailable",
+      "callId": "exec-479c985c-33ce-48ca-8a1b-524e976cb87c",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-479c985c-33ce-48ca-8a1b-524e976cb87c.png",
+      "approvedProjectPath": "assets/dinosaurs/dimetrodon-grandis-clearfork-ripples-ecology-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual environmental sources only; no external artwork used.",
+      "sha256": "8dc016a982bf3dfcde527b7d0e39a0f953eaa9d91b1a9047183df64d9f05d16a",
+      "bytes": 2915946,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational.",
+        "Asset type: Dino Atlas habitat-and-ecology anatomy review candidate for children ages 5-14.",
+        "Primary request: Create a scientifically cautious wide Early Permian habitat scene featuring exactly one adult Dimetrodon grandis. The animal pauses on a broad bank and turns only its head toward a small patch of fresh ripples in a shallow channel. This is cautious attention only, not a fossil-proven hunt. Do not show prey, contact, capture, blood, or gore.",
+        "Subject identity: one non-dinosaur sphenacodontid synapsid with a long deep skull; clearly differentiated teeth with one or two enlarged upper caniniform teeth and smaller teeth; exactly two forelimbs and two hindlimbs, all robust, separately connected, and ending in four visible feet; one long muscular continuous tapering tail with its tip visible; and one tall continuous dorsal sail supported by many hyperelongate neural spines, without Edaphosaurus-like lateral crossbars. Use conservative semi-sprawling/high-walk posture with belly above ground; not fully erect mammal legs and not belly-dragging. Fine pebbly/scaly integument; no fur.",
+        "Scene/backdrop: Early Permian Clear Fork Formation seasonal river margin in Texas, shallow braided water, wet red silt grading into drier cracked ground, sparse calamite-like stems and low seed ferns, scattered natural debris, no footprints required; no grass, flowers, palms, birds, dinosaurs, or modern trees.",
+        "Style/medium: realistic museum-quality natural-history paleoart, evidence-led and restrained.",
+        "Composition/framing: panoramic 16:9 landscape, high-oblique wide establishing view. Place the complete animal centered in the left-middle of the frame at only about 45 percent of the image width, moving diagonally rightward while the head turns toward ripples in the right-middle channel. Preserve large empty margins on all four sides. The whole snout, sail top and rear edge, all four limb roots and all four feet, belly gap, entire tail, and tail tip must be clearly visible and separated from every frame edge. No part of the animal may touch or leave the frame. Vegetation and water must not cover diagnostic anatomy. This must be visually distinct from an eye-level side portrait and a low rear three-quarter portrait. Single integrated scene, no panels.",
+        "Lighting/mood: diffuse post-rain daylight with a restrained warm break in clouds, quiet observational mood.",
+        "Color palette: hypothetical muted russet-brown body, sage-gray flanks, charcoal sail with irregular pale mineral edge mottling, pale clay underside; asymmetric broken markings with empty gaps, not repeated or mirrored.",
+        "Constraints: exactly one animal; no visible prey or other animals; no attack, injury, text, labels, logo, border, watermark.",
+        "Avoid: cropped tail or tail tip, animal touching frame edge, dinosaur/biped, Spinosaurus body/fin, Edaphosaurus crossbars, crocodile osteoderms or long crocodile snout, monitor-lizard clone, forked tongue, fur/whiskers/external ears/dog nose, fully erect mammal legs, dragging belly, extra/fused/duplicated limbs or feet, hidden limb attachments, disconnected/split sail, forked or severed tail, cloned tracks, modern plants, fantasy anatomy."
+      ],
+      "claimBoundary": "Exactly one Dimetrodon grandis is shown attending to an empty patch of water ripples. The scene contains no visible prey and makes no hunting, capture, contact, kill, or diet-specific claim. The head turn, ripples, channel position, weather, and locomotor moment are hypothetical.",
+      "review": {
+        "reviewedAt": "2026-08-07T15:23:04.802Z",
+        "method": "Original-size wide-scene inspection plus exact animal count, skull, sail, four connected limbs and feet, belly clearance, full tail and tip, habitat separation, ripple-action boundary, crop, track randomness, and artifact audit",
+        "result": "PASS only as an anatomy-review habitat image. One complete animal occupies less than half the frame, all four limb roots and feet remain readable, the sail and tail tip are fully contained, and the wide channel composition differs from slots 1 and 2. Ripple attention and all ecological details remain hypothetical; representative promotion is prohibited."
+      }
+    }
+  },
+  "rejectedCandidates": {
+    "dimetrodon-grandis-ecology-cropped-tail-v1": {
+      "taxon": "Dimetrodon grandis",
+      "galleryRoleAttempted": "habitat-ecology",
+      "callId": "exec-2bf25e00-fcdf-4647-8b4e-3c5837ea5288",
+      "generatedAt": "2026-08-08T00:18:27+09:00",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-2bf25e00-fcdf-4647-8b4e-3c5837ea5288.png",
+      "status": "rejected-not-copied",
+      "copiedToProject": false,
+      "sha256": "bd24a1dea5354d9308dac6bc78e5631f6f0e0960e6e868ec71d613d45aa63328",
+      "bytes": 2762244,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Use case: scientific-educational.",
+        "Asset type: Dino Atlas habitat-and-ecology anatomy review candidate for children ages 5-14.",
+        "Primary request: Create a scientifically cautious Early Permian habitat scene featuring exactly one adult Dimetrodon grandis. Show a small, one-way ecological action without claiming a fossil-proven hunt: the animal slowly turns its head toward a distant patch of fresh ripples at the edge of a shallow channel. Do not show prey, contact, capture, or gore.",
+        "Subject identity: one non-dinosaur sphenacodontid synapsid with a long deep skull; differentiated teeth with one or two enlarged upper caniniform teeth and smaller teeth; exactly two forelimbs and two hindlimbs, all robust, separately connected, and ending in four visible feet; a long muscular continuous tapering tail; and one tall continuous dorsal sail supported by many hyperelongate neural spines, without Edaphosaurus-like lateral crossbars. Use a conservative semi-sprawling/high-walk posture with belly clear of ground; not fully erect mammal legs and not belly-dragging. Conservative fine pebbly/scaly integument; no fur.",
+        "Scene/backdrop: Early Permian Clear Fork Formation seasonal river margin in Texas, a shallow braided channel with a small irregular patch of ripples several body lengths away, wet red silt grading into drier cracked ground, sparse calamite-like stems and low seed ferns, scattered natural debris and uneven footprints only where plausible; no regular stamped tracks, no grass, flowers, palms, birds, dinosaurs, or modern trees.",
+        "Style/medium: realistic museum-quality natural-history paleoart, evidence-led and restrained.",
+        "Composition/framing: 16:9 landscape, moderately elevated wide front-left three-quarter view from across the bank. The animal moves diagonally from the middle distance toward the left foreground while turning only its head toward the ripples on the right. This must not repeat either an eye-level left broadside or a low rear-right view. Keep the entire head, sail outline, all four limb roots and feet, belly gap, and full tail tip clearly visible and unobscured. Vegetation and water remain away from the limb attachments. Single integrated scene, no panels.",
+        "Lighting/mood: diffuse post-rain daylight with a restrained warm break in the clouds, quiet observational mood.",
+        "Color palette: hypothetical muted russet-brown body, sage-gray flanks, charcoal sail with irregular pale mineral edge mottling, pale clay underside. Markings are asymmetrical and broken, not perfectly repeated or mirrored.",
+        "Constraints: exactly one animal; no visible prey or other animals; no attack, blood, injury, text, labels, logo, border, or watermark.",
+        "Avoid: dinosaur or biped, Spinosaurus body/fin, Edaphosaurus crossbars, crocodile osteoderms or long crocodile snout, monitor-lizard clone, forked tongue, fur/whiskers/external ears/dog nose, fully erect mammal legs, dragging belly, extra/fused/duplicated limbs or feet, hidden limb attachments, disconnected/split sail, forked/severed/cropped tail, cropped anatomy, cloned footprints, modern plants, fantasy anatomy."
+      ],
+      "reasons": [
+        "The tail exits the left frame and its tip is absent, failing the explicit complete-animal and full-tail anatomy gate.",
+        "A later wide high-oblique retry preserved the entire tail and materially stronger edge clearance, so this original was never copied into assets/dinosaurs."
+      ]
+    }
+  }
+}

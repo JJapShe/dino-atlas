@@ -1,5 +1,37 @@
 const dinosaurs = [
   {
+    id: "dimetrodon-grandis",
+    name: "Dimetrodon grandis",
+    koreanName: "디메트로돈",
+    aliases: ["디메트로돈 그란디스", "돛 달린 단궁류", "Dimetrodon"],
+    atlasRealm: "paleozoic",
+    rootClade: "Synapsida",
+    clade: "Sphenacodontia",
+    family: "Sphenacodontidae",
+    era: "permian",
+    period: "전기 페름기",
+    diet: "육식",
+    region: "미국 텍사스·오클라호마",
+    length: 3.5,
+    knowledgeLevel: 1,
+    imageSlots: 3,
+    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 고생대 전용",
+    summary:
+      "디메트로돈은 공룡이 등장하기 훨씬 전, 약 2억 8천만 년 전 페름기에 살았던 큰 육식 단궁류입니다. 공룡이 아니라 포유류와 더 가까운 계통이며, 긴 척추뼈가 받친 커다란 등 돛과 크기가 다른 날카로운 이빨이 특징입니다. 돛의 정확한 색과 역할은 아직 확실하지 않습니다.",
+    features: {
+      분류: "공룡이 아닌 스페나코돈트 단궁류",
+      머리: "길고 깊은 두개골과 크기가 다른 이빨, 앞쪽의 큰 송곳니형 치아",
+      등: "여러 개의 길어진 신경가시가 받친 연속적인 돛; 에다포사우루스식 가로 돌기 없음",
+      보행: "튼튼한 네 다리의 반직립·반포복 자세; 배와 꼬리를 끌었다고 단정하지 않음",
+      피부: "근연 스페나코돈트 흔적은 표피 비늘을 지지하지만 D. grandis 자체 색·비늘 배열은 미확정",
+    },
+    sources: [
+      "Smithsonian NMNH Dimetrodon grandis specimen 3451032",
+      "Brink & Reisz 2014 Nature Communications",
+      "Huttenlocker et al. 2010",
+    ],
+  },
+  {
     id: "archaeopteryx-lithographica",
     name: "Archaeopteryx lithographica",
     koreanName: "시조새",
@@ -3834,6 +3866,7 @@ const cladeMeta = {
   Pachycephalosauria: "후두류",
   Ammonoidea: "암모나이트류",
   Belemnitida: "벨렘나이트류",
+  Sphenacodontia: "스페나코돈류",
   Dicynodontia: "디키노돈트류",
   Cynodontia: "키노돈트류",
   Mammalia: "포유류",
@@ -3867,6 +3900,7 @@ const taxonomySearchAliases = {
   Ammonoidea: ["암모나이트", "암모나이트류"],
   Belemnitida: ["벨렘나이트", "벨렘나이트류"],
   Synapsida: ["단궁류", "단궁류 계통"],
+  Sphenacodontia: ["스페나코돈류", "초기 육식성 단궁류"],
   Dicynodontia: ["디키노돈트", "두 엄니 단궁류"],
   Cynodontia: ["키노돈트", "포유형 단궁류"],
   Mammalia: ["포유류", "초기 포유류"],
@@ -3895,29 +3929,73 @@ const knowledgeLevels = {
   },
 };
 
-const eras = [
-  {
-    id: "triassic",
-    label: "트라이아스기",
-    range: "252-201 Ma",
-    top: 0,
-    height: 355,
-  },
-  {
-    id: "jurassic",
-    label: "쥐라기",
-    range: "201-145 Ma",
-    top: 355,
-    height: 390,
-  },
-  {
-    id: "cretaceous",
-    label: "백악기",
-    range: "145-66 Ma",
-    top: 745,
-    height: 575,
-  },
-];
+const realmEras = Object.freeze({
+  paleozoic: Object.freeze([
+    Object.freeze({
+      id: "permian",
+      label: "페름기",
+      range: "299-252 Ma",
+      top: 0,
+      height: 355,
+    }),
+  ]),
+  mesozoic: Object.freeze([
+    Object.freeze({
+      id: "triassic",
+      label: "트라이아스기",
+      range: "252-201 Ma",
+      top: 0,
+      height: 355,
+    }),
+    Object.freeze({
+      id: "jurassic",
+      label: "쥐라기",
+      range: "201-145 Ma",
+      top: 355,
+      height: 390,
+    }),
+    Object.freeze({
+      id: "cretaceous",
+      label: "백악기",
+      range: "145-66 Ma",
+      top: 745,
+      height: 575,
+    }),
+  ]),
+});
+
+const atlasRealmConfigs = Object.freeze({
+  paleozoic: Object.freeze({
+    id: "paleozoic",
+    label: "고생대",
+    eyebrow: "Paleozoic Phylogeny",
+    defaultScope: "permian",
+    defaultSelection: "dimetrodon-grandis",
+    catalogNote: "페름기 생물을 중생대 생물과 섞지 않고 별도 시대 지도와 도감에서 살펴봅니다.",
+  }),
+  mesozoic: Object.freeze({
+    id: "mesozoic",
+    label: "중생대",
+    eyebrow: "Mesozoic Phylogeny",
+    defaultScope: "cretaceous",
+    defaultSelection: "tyrannosaurus-rex",
+    catalogNote: "공룡·익룡·바다 파충류와 초기 조류·단궁류·고대 두족류를 분류별로 나누어 봅니다.",
+  }),
+});
+
+function getAtlasRealm(dino) {
+  if (!dino) return "mesozoic";
+  if (dino.atlasRealm && atlasRealmConfigs[dino.atlasRealm]) return dino.atlasRealm;
+  return dino.era === "permian" ? "paleozoic" : "mesozoic";
+}
+
+function getActiveRealmConfig() {
+  return atlasRealmConfigs[state?.atlasRealm] || atlasRealmConfigs.mesozoic;
+}
+
+function getActiveRealmEras() {
+  return realmEras[state?.atlasRealm] || realmEras.mesozoic;
+}
 
 const phyloLayoutMetrics = Object.freeze({
   taxonWidth: 212,
@@ -3944,6 +4022,7 @@ const phyloNodes = [
   { id: "pterosauria", type: "group", label: "Pterosauria", caption: "익룡 계통", x: 1840, y: 56 },
   { id: "marine-reptilia", type: "group", label: "Marine Reptilia", caption: "해양 파충류 계통", x: 1840, y: 276 },
   { id: "synapsida", type: "group", label: "Synapsida", caption: "단궁류 계통", x: 120, y: 56 },
+  { id: "sphenacodontia", type: "group", label: "Sphenacodontia", caption: "스페나코돈류", x: 355, y: 56 },
   { id: "dicynodontia", type: "group", label: "Dicynodontia", caption: "디키노돈트류", x: 355, y: 56 },
   { id: "cynodontia", type: "group", label: "Cynodontia", caption: "키노돈트류", x: 355, y: 156 },
   { id: "mammalia", type: "group", label: "Mammalia", caption: "초기 포유류", x: 620, y: 156 },
@@ -4510,6 +4589,7 @@ const phyloNodes = [
 ];
 
 const phyloEdges = [
+  ["synapsida", "sphenacodontia"],
   ["synapsida", "dicynodontia"],
   ["synapsida", "cynodontia"],
   ["cynodontia", "mammalia"],
@@ -4619,7 +4699,7 @@ let currentPhyloLayout = {
   nodes: phyloNodes,
   edges: phyloEdges,
   nodeMap: new Map(phyloNodes.map((node) => [node.id, node])),
-  eras,
+  eras: realmEras.mesozoic,
   taxonGridX: 960,
   width: canvasSize.width,
   height: canvasSize.height,
@@ -4651,6 +4731,7 @@ const eraScenePartners = {
 };
 
 const state = {
+  atlasRealm: "mesozoic",
   selectedId: "tyrannosaurus-rex",
   galleryIndex: 0,
   galleryDragStart: 0,
@@ -4680,6 +4761,24 @@ const state = {
   knowledgeLevel: "all",
   classification: "all",
   sort: "level",
+  realmBrowse: {
+    paleozoic: {
+      selectedId: "dimetrodon-grandis",
+      scope: "permian",
+      search: "",
+      classification: "all",
+      diet: "all",
+      knowledgeLevel: "all",
+    },
+    mesozoic: {
+      selectedId: "tyrannosaurus-rex",
+      scope: "cretaceous",
+      search: "",
+      classification: "all",
+      diet: "all",
+      knowledgeLevel: "all",
+    },
+  },
   map: {
     mode: "timeline",
     scale: 0.72,
@@ -4728,6 +4827,7 @@ const classificationGroups = Object.freeze([
 ]);
 
 const timelinePeriodOrder = Object.freeze([
+  { id: "early-permian", label: "전기 페름기", era: "permian" },
   { id: "early-triassic", label: "전기 트라이아스기", era: "triassic" },
   { id: "middle-triassic", label: "중기 트라이아스기", era: "triassic" },
   { id: "late-triassic", label: "후기 트라이아스기", era: "triassic" },
@@ -4741,6 +4841,7 @@ const timelinePeriodOrder = Object.freeze([
 ]);
 
 const recentImageUpdateTaxa = [
+  "dimetrodon-grandis",
   "archaeopteryx-lithographica",
   "asteroceras-obtusum",
   "passaloteuthis-bisulcata",
@@ -4906,6 +5007,80 @@ function saveCandidateReviewDecisions() {
 }
 
 const generatedImageSamples = {
+  "dimetrodon-grandis": [
+    {
+      kind: "count-level pass",
+      title: "디메트로돈 긴 머리·이형치·등 돛 전신 대표",
+      body: "전기 페름기 클리어포크 범람원의 단독 전신 대표입니다. 원본 크기에서 길고 깊은 한 머리, 큰 송곳니형 치아와 작은 치아가 섞인 이형치, 긴 신경가시가 받친 한 연속 돛, 몸에 연결된 네 다리와 네 발, 한 긴 꼬리를 확인했습니다. 피부·색·돛의 정확한 막과 역할은 가설입니다.",
+      source: "assets/dinosaurs/dimetrodon-grandis-clearfork-sail-canine-representative-imagegen-v1.png",
+      variant: "클리어포크 등 돛 이형치 전신 대표 이미지 생성 v1",
+      src: "assets/dinosaurs/dimetrodon-grandis-clearfork-sail-canine-representative-imagegen-v1.png",
+      gallerySlot: 1,
+      galleryRole: "representative",
+      phenotype: "clay-ochre-a",
+      habitatKey: "early-permian-clearfork-redbed",
+      sourceAttribution: "OpenAI built-in image generation; Smithsonian and peer-reviewed Dimetrodon sources supplied factual constraints only",
+      licenseRecord: "Generated project asset; no external artwork or copyrighted reconstruction used as generation input",
+      generationPromptRecord: "tools/comfyui/paleozoic-life-expansion-20260808.json#records/dimetrodon-grandis-representative-v1",
+      generationSeed: "service-assigned, not exposed",
+      generationWorkflow: "OpenAI built-in image generation; prompt-to-image anatomy-led count pass",
+      reviewStatus: "원본 크기 count-level 검수 통과 · S1 대표 승인 · 피부/색/돛 기능 가설 경계",
+      formation: "Clear Fork Group",
+      locality: "formation-level Texas red-bed floodplain reconstruction; exact channel, plants, weather, and moment are hypothetical",
+      anatomyEvidenceBoundary: "skull, heterodont teeth, elongated neural spines, four-limb plan, and tail are fossil-led; external sail membrane, integument, and full feet include reconstruction",
+      colorEvidence: "clay red, ochre, charcoal brown, pale sandstone, and all pattern placement are hypothetical",
+      metadataRecord: "tools/comfyui/paleozoic-life-expansion-20260808.json",
+      representativeEligible: true,
+    },
+    {
+      kind: "review hold",
+      title: "디메트로돈 남청·황토 반대 방향 보행 무늬",
+      body: "대표의 왼쪽 낮은 시점과 달리 오른쪽으로 걷는 낮은 후방 사선 구도입니다. 한 머리, 한 연속 돛, 네 다리와 네 발, 배 아래 여백, 한 긴 꼬리를 유지하면서 남청·황토의 불규칙한 무늬를 비교합니다. 색과 무늬, 걸음의 정확한 순간은 가설이고 원근이 강해 S2 review hold로만 둡니다.",
+      source: "assets/dinosaurs/dimetrodon-grandis-rightfacing-indigo-ochre-pattern-imagegen-v1.png",
+      variant: "남청 황토 반대 방향 낮은 후방 보행 무늬 이미지 생성 v1",
+      src: "assets/dinosaurs/dimetrodon-grandis-rightfacing-indigo-ochre-pattern-imagegen-v1.png",
+      gallerySlot: 2,
+      galleryRole: "color-pattern",
+      phenotype: "indigo-ochre-b",
+      habitatKey: "early-permian-clearfork-dry-channel",
+      sourceAttribution: "OpenAI built-in image generation; factual sources supplied identity constraints only",
+      licenseRecord: "Generated project asset; no external artwork or copyrighted reconstruction used as generation input",
+      generationPromptRecord: "tools/comfyui/paleozoic-life-expansion-20260808.json#records/dimetrodon-grandis-pattern-v1",
+      generationSeed: "service-assigned, not exposed",
+      generationWorkflow: "OpenAI built-in image generation; prompt-to-image opposite-direction composition and palette pass",
+      reviewStatus: "원본 크기 review-hold 수용 · 방향/시점/색 분리 · 돛 막과 무늬 가설 · 대표 승격 금지",
+      formation: "Clear Fork Group",
+      anatomyEvidenceBoundary: "core skull, sail-spine, four-limb, and tail cues are retained; perspective, integument, distal feet, and sail membrane include reconstruction",
+      colorEvidence: "indigo charcoal, burnt ochre, slate, pale clay, and all marking placement are hypothetical",
+      metadataRecord: "tools/comfyui/paleozoic-life-expansion-20260808.json",
+      representativeEligible: false,
+    },
+    {
+      kind: "anatomy review",
+      title: "디메트로돈 클리어포크 수로 물결 관찰 생태",
+      body: "넓은 고각 화면에서 마르는 수로 가장자리의 물결 쪽으로 머리만 돌리는 생태 장면입니다. 한 머리, 한 연속 돛, 네 다리와 네 발, 배 아래 여백, 꼬리 끝까지 화면 안에서 읽힙니다. 물결을 살피는 순간은 행동 가설일 뿐 사냥 증거가 아니며, 멀리 보이는 치아·발 세부 때문에 S3 anatomy review로만 사용합니다.",
+      source: "assets/dinosaurs/dimetrodon-grandis-clearfork-ripples-ecology-imagegen-v1.png",
+      variant: "클리어포크 계절 수로 물결 관찰 생태 이미지 생성 v1",
+      src: "assets/dinosaurs/dimetrodon-grandis-clearfork-ripples-ecology-imagegen-v1.png",
+      gallerySlot: 3,
+      galleryRole: "habitat-ecology",
+      phenotype: "russet-sage-c",
+      habitatKey: "early-permian-clearfork-seasonal-channel",
+      sourceAttribution: "OpenAI built-in image generation; formation-level sources supplied environmental constraints only",
+      licenseRecord: "Generated project asset; no external artwork or copyrighted reconstruction used as generation input",
+      generationPromptRecord: "tools/comfyui/paleozoic-life-expansion-20260808.json#records/dimetrodon-grandis-ecology-v1",
+      generationSeed: "service-assigned, not exposed",
+      generationWorkflow: "OpenAI built-in image generation; wide high-oblique habitat retry after cropped-tail rejection",
+      reviewStatus: "원본 크기 anatomy-review 수용 · 전신/꼬리 끝 판독 · 물결 관찰 행동 가설 · 대표 승격 금지",
+      formation: "Clear Fork Group",
+      locality: "formation-level seasonal-channel reconstruction; exact water level, vegetation, weather, ripples, and moment are hypothetical",
+      behaviorEvidence: "turning toward fresh ripples is an illustrative attention hypothesis, not direct evidence of hunting or prey contact",
+      anatomyEvidenceBoundary: "core skeletal plan is fossil-led; distant distal details, integument, sail membrane, and posture moment include reconstruction",
+      colorEvidence: "russet brown, sage gray, charcoal, pale clay, and all pattern placement are hypothetical",
+      metadataRecord: "tools/comfyui/paleozoic-life-expansion-20260808.json",
+      representativeEligible: false,
+    },
+  ],
   "repenomamus-robustus": [
     {
       kind: "count-level pass",
@@ -22987,7 +23162,9 @@ function getKnowledgeLevel(level) {
 }
 
 function getEraLabel(eraId) {
-  return eras.find((era) => era.id === eraId)?.label || "";
+  return Object.values(realmEras)
+    .flat()
+    .find((era) => era.id === eraId)?.label || "";
 }
 
 function getPrimaryFeatureText(dino, limit = 3) {
@@ -24429,13 +24606,17 @@ function matchesNonClassificationFilters(dino) {
 }
 
 function getFilteredDinosaurs() {
-  return dinosaurs.filter(
+  return getRealmDinosaurs().filter(
     (dino) => matchesNonClassificationFilters(dino) && matchesClassification(dino),
   );
 }
 
+function getRealmDinosaurs(realm = state.atlasRealm) {
+  return dinosaurs.filter((dino) => getAtlasRealm(dino) === realm);
+}
+
 function renderClassificationTabs() {
-  const baseMatches = dinosaurs.filter(matchesNonClassificationFilters);
+  const baseMatches = getRealmDinosaurs().filter(matchesNonClassificationFilters);
   const counts = new Map(
     classificationGroups.map((group) => [
       group.id,
@@ -24445,10 +24626,14 @@ function renderClassificationTabs() {
 
   $$('[data-classification-tabs] [data-classification]').forEach((button) => {
     const active = button.dataset.classification === state.classification;
+    const countValue = counts.get(button.dataset.classification) ?? 0;
+    const visible = button.dataset.classification === "all" || countValue > 0 || active;
+    button.hidden = !visible;
+    button.setAttribute("aria-hidden", String(!visible));
     button.classList.toggle("active", active);
     button.setAttribute("aria-pressed", String(active));
     const count = button.querySelector("[data-classification-count]");
-    if (count) count.textContent = counts.get(button.dataset.classification) ?? 0;
+    if (count) count.textContent = countValue;
   });
 }
 
@@ -24470,7 +24655,13 @@ function getFilteredIdSet() {
 
 function getSelectedDino() {
   const filtered = getFilteredDinosaurs();
-  return filtered.find((dino) => dino.id === state.selectedId) || filtered[0] || dinosaurs[0];
+  const realmDinosaurs = getRealmDinosaurs();
+  return (
+    filtered.find((dino) => dino.id === state.selectedId) ||
+    filtered[0] ||
+    realmDinosaurs[0] ||
+    dinosaurs[0]
+  );
 }
 
 function getTaxonomyPath(dino) {
@@ -24492,7 +24683,7 @@ function renderMetrics() {
 
 function renderPeriodBands() {
   const layoutHeight = currentPhyloLayout.height || canvasSize.height;
-  const layoutEras = currentPhyloLayout.eras || eras;
+  const layoutEras = currentPhyloLayout.eras || getActiveRealmEras();
   const filteredIds = getFilteredIdSet();
   $("#periodBands").innerHTML = layoutEras
     .map((era, index) => {
@@ -24530,6 +24721,7 @@ function getNodeHeight() {
 }
 
 const taxonPaletteAccents = {
+  "dimetrodon-grandis": { accent: "#c9854e", bg: "rgba(47, 39, 35, 0.9)", border: "rgba(201, 133, 78, 0.5)" },
   "triceratops-horridus": { accent: "#5fbfc4", bg: "rgba(22, 54, 58, 0.88)", border: "rgba(95, 191, 196, 0.42)" },
   "torosaurus-latus": { accent: "#d39a55", bg: "rgba(64, 42, 24, 0.88)", border: "rgba(211, 154, 85, 0.44)" },
   "styracosaurus-albertensis": { accent: "#57a89e", bg: "rgba(52, 38, 39, 0.9)", border: "rgba(87, 168, 158, 0.46)" },
@@ -24652,6 +24844,7 @@ const taxonPaletteAccents = {
 };
 
 const taxonPaletteSwatches = {
+  "dimetrodon-grandis": ["#2f3435", "#6f5141", "#c9854e", "#d8c29b"],
   "archaeopteryx-lithographica": ["#2f3436", "#8a6249", "#c78955", "#e6d8bf"],
   "asteroceras-obtusum": ["#a8753f", "#d0a454", "#e0c486", "#756b62"],
   "passaloteuthis-bisulcata": ["#24434d", "#62a8b8", "#8e6b55", "#d9c9a7"],
@@ -24892,7 +25085,7 @@ function getTimelinePeriodMeta(period, eraId) {
     };
   }
 
-  const eraIndex = Math.max(0, eras.findIndex((era) => era.id === eraId));
+  const eraIndex = Math.max(0, getActiveRealmEras().findIndex((era) => era.id === eraId));
   return {
     id: `other-${eraId || "unknown"}`,
     label: period || "시기 미상",
@@ -24945,7 +25138,7 @@ function renderTimelineBrowse() {
   if (visibleDinosaurs.length === 0) {
     container.innerHTML = `
       <div class="timeline-empty">
-        <strong>조건에 맞는 중생대 생물이 없습니다</strong>
+        <strong>조건에 맞는 ${getActiveRealmConfig().label} 생물이 없습니다</strong>
         <span>검색어나 필터를 바꿔 보세요.</span>
       </div>
     `;
@@ -25102,6 +25295,7 @@ function inferPhyloParent(dino) {
   if (dino.rootClade === "Pterosauria") return "pterosauria";
   if (dino.rootClade === "Marine Reptilia") return "marine-reptilia";
   if (dino.rootClade === "Synapsida") {
+    if (dino.clade === "Sphenacodontia") return "sphenacodontia";
     if (dino.clade === "Dicynodontia") return "dicynodontia";
     if (dino.clade === "Mammalia") return "mammalia";
     return "cynodontia";
@@ -25248,6 +25442,7 @@ const phyloEraCladeOrder = [
   "Ankylosauria",
   "Pachycephalosauria",
   "Thyreophora",
+  "Sphenacodontia",
   "Dicynodontia",
   "Cynodontia",
   "Mammalia",
@@ -25255,7 +25450,7 @@ const phyloEraCladeOrder = [
   "Belemnitida",
 ];
 
-function getPhyloEraBand(eraId, eraBands = eras) {
+function getPhyloEraBand(eraId, eraBands = getActiveRealmEras()) {
   return eraBands.find((era) => era.id === eraId);
 }
 
@@ -25290,9 +25485,10 @@ function getEraPackColumnCount(taxaCount, sharedColumns, layout) {
 }
 
 function getScalableEraPackColumns(taxaCountByEra) {
+  const activeEras = getActiveRealmEras();
   const maximumTaxaCount = Math.max(
     1,
-    ...eras.map((era) => taxaCountByEra.get(era.id) || 0),
+    ...activeEras.map((era) => taxaCountByEra.get(era.id) || 0),
   );
   const minimumColumns = Math.min(
     phyloLayoutMetrics.minimumSharedColumns,
@@ -25314,6 +25510,7 @@ function getScalableEraPackColumns(taxaCountByEra) {
 function buildDynamicPhyloEras(nodes, filteredIds, taxonGridX) {
   const nodeHeight = getNodeHeight();
   const taxaCountByEra = new Map();
+  const activeEras = getActiveRealmEras();
 
   nodes.forEach((node) => {
     if (node.type !== "taxon") return;
@@ -25325,7 +25522,7 @@ function buildDynamicPhyloEras(nodes, filteredIds, taxonGridX) {
 
   const sharedColumns = getScalableEraPackColumns(taxaCountByEra);
   let top = 0;
-  return eras.map((era) => {
+  return activeEras.map((era) => {
     const layout = phyloEraPackLayouts[era.id] || {
       minimumColumns: 6,
       topPad: 132,
@@ -25355,8 +25552,8 @@ function buildDynamicPhyloEras(nodes, filteredIds, taxonGridX) {
 function shiftPhyloGroupsIntoDynamicEras(nodes, eraBands) {
   nodes.forEach((node) => {
     if (node.type === "taxon") return;
-    const sourceEra = eras.find((era, index) => {
-      const nextEra = eras[index + 1];
+    const sourceEra = realmEras.mesozoic.find((era, index) => {
+      const nextEra = realmEras.mesozoic[index + 1];
       return node.y >= era.top && (!nextEra || node.y < nextEra.top);
     });
     const targetEra = sourceEra ? getPhyloEraBand(sourceEra.id, eraBands) : null;
@@ -25717,8 +25914,8 @@ function renderMapNodes() {
         ? `type="button" data-id="${node.speciesId}"`
         : `type="button" data-phylo-focus="${node.id}" aria-label="${node.label} 계통 강조"`;
       const renderedAttrs = isTaxon
-        ? `type="button" data-id="${node.speciesId}" aria-label="${dino.koreanName} · ${dino.period}" title="${dino.koreanName} · ${dino.period}"`
-        : `type="button" data-phylo-focus="${node.id}" aria-label="${node.label} clade focus"`;
+        ? `type="button" data-id="${node.speciesId}" aria-label="${dino.koreanName} · ${dino.period}" aria-pressed="${active}" title="${dino.koreanName} · ${dino.period}"`
+        : `type="button" data-phylo-focus="${node.id}" aria-label="${node.label} clade focus" aria-pressed="${groupActive}"`;
       return `
         <${tag} class="${classes}" ${renderedAttrs} style="${paletteStyle}left: ${node.x}px; top: ${node.y}px;">
           ${content}
@@ -25736,7 +25933,7 @@ function renderMapNavigator() {
   const filteredIds = getFilteredIdSet();
   const layoutWidth = currentPhyloLayout.width || canvasSize.width;
   const layoutHeight = currentPhyloLayout.height || canvasSize.height;
-  const eraRects = (currentPhyloLayout.eras || eras)
+  const eraRects = (currentPhyloLayout.eras || getActiveRealmEras())
     .map(
       (era) =>
         `<rect class="map-navigator-era ${era.id}" x="0" y="${era.top}" width="${layoutWidth}" height="${era.height}"></rect>`,
@@ -25868,7 +26065,9 @@ function applyPhyloFocusHighlight() {
   const focusSpeciesIds = getPhyloFocusSpeciesIds(state.phyloFocusId);
 
   $$(".map-node.group").forEach((node) => {
-    node.classList.toggle("active", node.dataset.phyloFocus === state.phyloFocusId);
+    const active = node.dataset.phyloFocus === state.phyloFocusId;
+    node.classList.toggle("active", active);
+    node.setAttribute("aria-pressed", String(active));
   });
 
   $$(".map-node.taxon").forEach((node) => {
@@ -25976,24 +26175,164 @@ function renderMapModeControls() {
   if (sidebarSearch && sidebarSearch.value !== state.search) sidebarSearch.value = state.search;
 }
 
+function syncAtlasRealmPresentation() {
+  const realm = getActiveRealmConfig();
+  document.body.dataset.atlasRealm = realm.id;
+
+  $$('[data-atlas-realm-controls] [data-atlas-realm]').forEach((button) => {
+    const active = button.dataset.atlasRealm === realm.id;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
+
+  const mapEyebrow = $("#mapRealmEyebrow");
+  const mapHeading = $("#mapRealmHeading");
+  const catalogHeading = $("#catalogRealmHeading");
+  const catalogNote = $("#catalogRealmNote");
+  const atlasView = $("#atlasView");
+  const catalogView = $("#catalogView");
+  const detailPanel = $("#detailPanel");
+  const eraControls = $("#mapEraControls");
+  const quickSearch = $("#mapQuickSearch");
+
+  if (mapEyebrow) mapEyebrow.textContent = realm.eyebrow;
+  if (mapHeading) {
+    mapHeading.textContent = realm.id === "paleozoic" ? "페름기 계통 지도" : "시대별 계통 지도";
+  }
+  if (catalogHeading) catalogHeading.textContent = `${realm.label} 생물 도감`;
+  if (catalogNote) catalogNote.textContent = realm.catalogNote;
+  if (atlasView) atlasView.setAttribute("aria-label", `${realm.label} 생물 계통도`);
+  if (catalogView) catalogView.setAttribute("aria-label", `${realm.label} 생물 도감`);
+  if (detailPanel) detailPanel.setAttribute("aria-label", `선택한 ${realm.label} 생물 상세 정보`);
+  if (eraControls) eraControls.setAttribute("aria-label", `${realm.label} 시대 구간 이동`);
+  if (quickSearch) quickSearch.placeholder = `${realm.label} 생물명·분류·지역 검색`;
+  $$('[data-classification-tabs]').forEach((tabs) => {
+    tabs.setAttribute(
+      "aria-label",
+      `${realm.label} 분류군별 ${tabs.classList.contains("catalog-classification-strip") ? "도감" : "계통도"} 보기`,
+    );
+  });
+
+  if (state.view === "atlas") $("#viewTitle").textContent = `${realm.label} 생물 계통 지도`;
+  if (state.view === "catalog") $("#viewTitle").textContent = `${realm.label} 생물 도감`;
+  document.title = `Dino Atlas · ${realm.label}`;
+}
+
+function saveActiveRealmBrowseState() {
+  state.realmBrowse[state.atlasRealm] = {
+    selectedId: state.selectedId,
+    scope: state.map.scope,
+    search: state.search,
+    classification: state.classification,
+    diet: state.diet,
+    knowledgeLevel: state.knowledgeLevel,
+  };
+}
+
+function setAtlasRealm(nextRealm, { selectedId = "", render = true } = {}) {
+  if (!atlasRealmConfigs[nextRealm]) return false;
+  const changed = state.atlasRealm !== nextRealm;
+  if (!changed && !selectedId) {
+    syncAtlasRealmPresentation();
+    return true;
+  }
+  if (changed) saveActiveRealmBrowseState();
+
+  state.atlasRealm = nextRealm;
+  const realm = getActiveRealmConfig();
+  const saved = state.realmBrowse[nextRealm] || {};
+  const requested = selectedId ? getDinoById(selectedId) : null;
+
+  if (requested && getAtlasRealm(requested) === nextRealm) {
+    state.search = "";
+    state.classification = "all";
+    state.diet = "all";
+    state.knowledgeLevel = "all";
+  } else {
+    state.search = saved.search ?? "";
+    state.classification = saved.classification ?? "all";
+    state.diet = saved.diet ?? "all";
+    state.knowledgeLevel = saved.knowledgeLevel ?? "all";
+  }
+
+  const realmDinosaurs = getRealmDinosaurs(nextRealm);
+  const preferredId =
+    (requested && getAtlasRealm(requested) === nextRealm && requested.id) ||
+    saved.selectedId ||
+    realm.defaultSelection;
+  const filtered = getFilteredDinosaurs();
+  const preferred = filtered.find((dino) => dino.id === preferredId);
+  const defaultDino = filtered.find((dino) => dino.id === realm.defaultSelection);
+  const selected = preferred || defaultDino || filtered[0] || realmDinosaurs[0] || null;
+  state.selectedId = selected?.id || "";
+
+  const activeEraIds = new Set(getActiveRealmEras().map((era) => era.id));
+  const savedScope = saved.scope;
+  state.map.scope =
+    savedScope === "all" || activeEraIds.has(savedScope)
+      ? savedScope
+      : selected?.era || realm.defaultScope;
+  if (requested?.era && activeEraIds.has(requested.era)) state.map.scope = requested.era;
+
+  state.realmBrowse[nextRealm] = {
+    selectedId: state.selectedId,
+    scope: state.map.scope,
+    search: state.search,
+    classification: state.classification,
+    diet: state.diet,
+    knowledgeLevel: state.knowledgeLevel,
+  };
+  state.galleryIndex = 0;
+  state.phyloFocusId = "";
+  state.map.fitted = false;
+  state.map.frameMode = "scope";
+
+  $("#searchInput").value = state.search;
+  $("#mapQuickSearch").value = state.search;
+  $$("#dietFilter button").forEach((button) => {
+    button.classList.toggle("active", button.dataset.diet === state.diet);
+  });
+  $$("#levelFilter button").forEach((button) => {
+    button.classList.toggle("active", button.dataset.level === String(state.knowledgeLevel));
+  });
+
+  syncAtlasRealmPresentation();
+  if (render) {
+    renderAll();
+    if (state.view === "atlas" && state.map.mode === "tree") {
+      requestAnimationFrame(() => fitMapScope(state.map.scope));
+    }
+    if (state.view === "atlas" && state.map.mode === "timeline") {
+      $("#timelineBrowse").scrollTop = 0;
+    }
+  }
+  return true;
+}
+
 function clampScale(scale) {
   return Math.max(0.06, Math.min(1.8, scale));
 }
 
 function renderMapScopeControls() {
   const filtered = getFilteredDinosaurs();
+  const activeEraIds = getActiveRealmEras().map((era) => era.id);
+  const activeScopes = new Set(["all", ...activeEraIds]);
   const counts = filtered.reduce(
     (result, dino) => {
       result.all += 1;
       if (Object.prototype.hasOwnProperty.call(result, dino.era)) result[dino.era] += 1;
       return result;
     },
-    { all: 0, triassic: 0, jurassic: 0, cretaceous: 0 },
+    Object.fromEntries(["all", ...activeEraIds].map((scope) => [scope, 0])),
   );
 
   $$("[data-map-scope]").forEach((button) => {
     const scope = button.dataset.mapScope;
+    const available = activeScopes.has(scope);
     const active = state.map.scope === scope;
+    button.hidden = !available;
+    button.disabled = !available;
+    button.setAttribute("aria-hidden", String(!available));
     button.classList.toggle("active", active);
     button.setAttribute("aria-pressed", String(active));
     const count = button.querySelector(".map-era-count");
@@ -26052,7 +26391,7 @@ function getMapScopeBounds(scope) {
     };
   }
 
-  const era = getPhyloEraBand(scope, currentPhyloLayout.eras || eras);
+  const era = getPhyloEraBand(scope, currentPhyloLayout.eras || getActiveRealmEras());
   const filteredIds = getFilteredIdSet();
   const scopedNodes = currentPhyloLayout.nodes.filter(
     (node) =>
@@ -26080,7 +26419,8 @@ function fitMapScope(
 ) {
   const viewport = $("#mapViewport");
   if (!viewport || viewport.clientWidth <= 0 || viewport.clientHeight <= 0) return;
-  const nextScope = ["all", "triassic", "jurassic", "cretaceous"].includes(scope) ? scope : "all";
+  const validScopes = new Set(["all", ...getActiveRealmEras().map((era) => era.id)]);
+  const nextScope = validScopes.has(scope) ? scope : "all";
   const bounds = getMapScopeBounds(nextScope);
   const widthScale = (viewport.clientWidth - 40) / bounds.width;
   const heightScale = (viewport.clientHeight - 40) / bounds.height;
@@ -26276,7 +26616,7 @@ function renderDetail() {
   if (!getFilteredDinosaurs().length) {
     $("#detailPanel").innerHTML = `
       <div class="timeline-empty detail-empty">
-        <strong>조건에 맞는 중생대 생물이 없습니다</strong>
+        <strong>조건에 맞는 ${getActiveRealmConfig().label} 생물이 없습니다</strong>
         <span>검색어나 분류·시대 필터를 바꿔 보세요.</span>
       </div>
     `;
@@ -26321,7 +26661,7 @@ function renderDetail() {
 
   $("#detailPanel").innerHTML = `
     <div class="inspector-header">
-      <button class="dummy-image ${primaryImage ? "has-real-image can-zoom" : ""}" data-lightbox-context="primary" type="button" aria-label="중생대 생물 이미지 미리보기"${imageStyle(primaryImage)} ${primaryImage ? "" : "disabled"}>
+      <button class="dummy-image ${primaryImage ? "has-real-image can-zoom" : ""}" data-lightbox-context="primary" type="button" aria-label="${getActiveRealmConfig().label} 생물 이미지 미리보기"${imageStyle(primaryImage)} ${primaryImage ? "" : "disabled"}>
         <span class="image-label">${galleryItems.length} views</span>
       </button>
       <div class="inspector-title">
@@ -26463,7 +26803,7 @@ function renderCatalog() {
   if (!items.length) {
     grid.innerHTML = `
       <div class="ecosystem-empty catalog-empty">
-        <strong>조건에 맞는 중생대 생물이 없습니다.</strong>
+        <strong>조건에 맞는 ${getActiveRealmConfig().label} 생물이 없습니다.</strong>
         <span>검색어나 분류·친숙도 필터를 바꿔 보세요.</span>
       </div>
     `;
@@ -26568,6 +26908,14 @@ const reviewSortLabels = {
 };
 
 const identityChecklists = {
+  "dimetrodon-grandis": [
+    "공룡이 아닌 전기 페름기의 스페나코돈트 단궁류이며 중생대 공룡 계통으로 옮기지 않음",
+    "길고 깊은 한 두개골에 작은 치아와 앞쪽의 큰 송곳니형 치아가 함께 읽히는 이형치; 균일한 악어 이빨이나 검치호 송곳니로 바꾸지 않음",
+    "어깨 뒤에서 골반 쪽까지 이어지는 한 연속 등 돛과 이를 받치는 여러 길어진 신경가시; 에다포사우루스식 가로 돌기 없음",
+    "두 앞다리·두 뒷다리와 서로 분리된 네 발, 배가 지면에서 떨어진 반직립·반포복 자세, 골반에서 이어지는 한 긴 꼬리",
+    "근연 스페나코돈트의 표피 비늘 흔적은 비교 근거일 뿐 D. grandis의 정확한 피부·돛 막·색·무늬·돛 기능은 미확정",
+    "공룡식 직립 다리, 수각류 머리, 스피노사우루스 돛, 악어 갑옷, 왕도마뱀 몸, 갈라진 혀, 털·수염·외이·개 코, 여분 사지와 잘린 꼬리 금지",
+  ],
   "archaeopteryx-lithographica": [
     "후기 쥐라기 졸른호펜의 약 0.5m급 작은 새 모양 수각류 공룡이며 현대 새처럼 짧은 꼬리·무치 부리로 바꾸지 않음",
     "좁은 한 머리와 작은 원뿔형 이빨, 넓은 깃털 앞날개 정확히 두 개, 뒷다리 정확히 두 개를 유지",
@@ -27842,6 +28190,13 @@ const visualVariationLabels = {
 };
 
 const visualVariationProfiles = {
+  "dimetrodon-grandis": {
+    color: "대표형의 점토 적갈색·황토·숯갈색, 변이형의 남청·구운 황토·슬레이트, 생태형의 적갈·세이지·차콜 조합을 서로 분리합니다. 모든 생체색은 가설입니다.",
+    pattern: "불규칙하고 비대칭인 광물성 얼룩과 넓은 빈 공간을 사용하며, 같은 측면 자세의 단순 재색칠·규칙적인 줄·고리·점 배열을 피합니다.",
+    texture: "보수적인 무광 미세 비늘과 피부로 덮인 신경가시 돛을 사용합니다. D. grandis 자체 피부가 직접 보존된 것처럼 설명하거나 털·악어 골편을 추가하지 않습니다.",
+    anatomy: "길고 깊은 이형치 머리, 여러 길어진 신경가시가 받친 한 연속 돛, 반직립·반포복의 네 다리와 네 발, 배 아래 여백, 한 긴 근육질 꼬리의 전기 페름기 단궁류입니다.",
+    avoid: "공룡·스피노사우루스·에다포사우루스·악어·왕도마뱀 복제, 가로 돌기 달린 돛, 완전 직립 포유류 다리, 배 끌기, 털·외이·개 코, 여분·융합 사지, 숨은 발, 잘린·갈라진 꼬리, 반복 무늬, 같은 방향·카메라 반복",
+  },
   "archaeopteryx-lithographica": {
     color: "대표형의 숯빛·밤갈색·크림색과 변이형의 슬레이트·엄버·구리색, 생태형의 황갈색·녹슨빛 조합을 서로 분리합니다. 한 날개깃의 검은 멜라노솜 단서 외에 전신 색은 가설입니다.",
     pattern: "비대칭이고 불규칙한 날개·몸통 얼룩과 성긴 점을 사용하며, 같은 꼬리 줄무늬·같은 측면 자세의 단순 재색칠을 반복하지 않습니다.",
@@ -28874,6 +29229,13 @@ const generationRouteLabels = {
 };
 
 const generationRouteGuides = {
+  "dimetrodon-grandis": {
+    focus: "전기 페름기 Dimetrodon grandis의 길고 깊은 두개골, 크기가 다른 치아와 큰 송곳니형 치아, 여러 길어진 신경가시가 받친 한 연속 등 돛, 반직립·반포복 네 다리와 한 긴 꼬리를 함께 보존",
+    route: "S1은 원본 크기 count-level 대표, S2는 반대 방향 낮은 후방 시점 색·무늬 review hold, S3은 넓은 고각 계절 수로 anatomy review로 분리합니다. 잘린 꼬리의 첫 생태 초안은 제외했고, 돛 막·피부·색·정확한 걸음과 물결 관찰은 가설로 유지합니다.",
+    control: "assets/dinosaurs/dimetrodon-grandis-clearfork-sail-canine-representative-imagegen-v1.png",
+    pass: "한 머리 | 길고 깊은 두개골 | 크기가 다른 치아와 큰 위턱 송곳니형 치아 | 가로 돌기 없는 한 연속 등 돛과 여러 신경가시 | 두 앞다리·두 뒷다리와 네 발 | 배 아래 여백 | 골반에서 끝까지 이어지는 한 긴 꼬리 | 전신 프레임 안 | 피부·색·돛 기능·행동 가설 명시 | 세 슬롯 방향·카메라·환경 분리",
+    reject: "공룡·수각류·스피노사우루스·에다포사우루스·악어·왕도마뱀형 몸, 균일한 치열, 가로 돌기·분리된 돛, 완전 직립 포유류 다리·배 끌기, 털·외이·개 코, 세 다리·여분 발·융합 사지, 잘린·갈라진 꼬리, 같은 방향 재색칠, S2/S3 대표 승격이면 탈락",
+  },
   "lystrosaurus-murrayi": {
     focus: "전기 트라이아스기 Lystrosaurus murrayi의 짧고 넓은 머리, 이빨 없는 각질 부리, 위턱에서 난 엄니 정확히 한 쌍, 낮고 통통한 몸과 짧고 튼튼한 네 다리를 함께 보존",
     route: "S1은 한 머리·두 엄니·네 다리·한 꼬리를 확인한 대표, S2는 반대 방향 건기 수로 색·무늬 review hold, S3은 홍수 뒤 속새 평원 anatomy review로 분리합니다. 먼쪽 발이 가려진 후보와 피부·털·행동 가설은 대표 근거로 쓰지 않습니다.",
@@ -30546,9 +30908,7 @@ function bindReviewEvents(selectedDino) {
         clearManualCandidateSelection(selectedDino);
       }
       if (action === "atlas") {
-        state.selectedId = selectedDino.id;
-        state.galleryIndex = 0;
-        setView("atlas");
+        if (selectDinoForAtlas(selectedDino.id)) setView("atlas");
       }
       if (action === "copy" && source) {
         copyToClipboard(source);
@@ -30879,9 +31239,10 @@ function setView(view, { historyMode = "replace" } = {}) {
     else history.replaceState(null, "", `#${view}`);
   }
 
+  const activeRealmLabel = getActiveRealmConfig().label;
   $("#viewTitle").textContent = {
-    atlas: "중생대 생물 계통 지도",
-    catalog: "중생대 생물 도감",
+    atlas: `${activeRealmLabel} 생물 계통 지도`,
+    catalog: `${activeRealmLabel} 생물 도감`,
     motion: "공룡 움직임",
     ecosystems: "시대별 생태 갤러리",
     review: "이미지 검수 화면",
@@ -30916,6 +31277,7 @@ function setView(view, { historyMode = "replace" } = {}) {
 }
 
 function renderAll() {
+  syncAtlasRealmPresentation();
   renderClassificationTabs();
   renderMetrics();
   if (state.map.mode === "tree") {
@@ -31269,6 +31631,13 @@ function setAtlasSearch(value) {
 function selectDinoForAtlas(dinoId) {
   const dino = getDinoById(dinoId);
   if (!dino) return null;
+  const dinoRealm = getAtlasRealm(dino);
+  if (
+    dinoRealm !== state.atlasRealm ||
+    !getFilteredDinosaurs().some((candidate) => candidate.id === dino.id)
+  ) {
+    setAtlasRealm(dinoRealm, { selectedId: dino.id, render: false });
+  }
   state.selectedId = dino.id;
   state.map.scope = dino.era || state.map.scope;
   state.phyloFocusId = "";
@@ -31281,6 +31650,10 @@ function selectDinoForAtlas(dinoId) {
 function bindEvents() {
   $$(".nav-tab").forEach((tab) => {
     tab.addEventListener("click", () => setView(tab.dataset.view, { historyMode: "push" }));
+  });
+
+  $$('[data-atlas-realm-controls] [data-atlas-realm]').forEach((button) => {
+    button.addEventListener("click", () => setAtlasRealm(button.dataset.atlasRealm));
   });
 
   window.addEventListener("hashchange", () => {

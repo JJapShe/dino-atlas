@@ -1,6 +1,6 @@
 {
-  "taxa": 144,
-  "images": 1778,
+  "taxa": 145,
+  "images": 1781,
   "missing": [],
   "rankOrder": [
     "primary generated",
@@ -11,6 +11,32 @@
     "diagnostic only"
   ],
   "samples": {
+    "dimetrodon-grandis": [
+      {
+        "kind": "count-level pass",
+        "title": "디메트로돈 긴 머리·이형치·등 돛 전신 대표",
+        "body": "전기 페름기 클리어포크 범람원의 단독 전신 대표입니다. 원본 크기에서 길고 깊은 한 머리, 큰 송곳니형 치아와 작은 치아가 섞인 이형치, 긴 신경가시가 받친 한 연속 돛, 몸에 연결된 네 다리와 네 발, 한 긴 꼬리를 확인했습니다. 피부·색·돛의 정확한 막과 역할은 가설입니다.",
+        "source": "assets/dinosaurs/dimetrodon-grandis-clearfork-sail-canine-representative-imagegen-v1.png",
+        "variant": "클리어포크 등 돛 이형치 전신 대표 이미지 생성 v1",
+        "src": "assets/dinosaurs/dimetrodon-grandis-clearfork-sail-canine-representative-imagegen-v1.png"
+      },
+      {
+        "kind": "anatomy review",
+        "title": "디메트로돈 클리어포크 수로 물결 관찰 생태",
+        "body": "넓은 고각 화면에서 마르는 수로 가장자리의 물결 쪽으로 머리만 돌리는 생태 장면입니다. 한 머리, 한 연속 돛, 네 다리와 네 발, 배 아래 여백, 꼬리 끝까지 화면 안에서 읽힙니다. 물결을 살피는 순간은 행동 가설일 뿐 사냥 증거가 아니며, 멀리 보이는 치아·발 세부 때문에 S3 anatomy review로만 사용합니다.",
+        "source": "assets/dinosaurs/dimetrodon-grandis-clearfork-ripples-ecology-imagegen-v1.png",
+        "variant": "클리어포크 계절 수로 물결 관찰 생태 이미지 생성 v1",
+        "src": "assets/dinosaurs/dimetrodon-grandis-clearfork-ripples-ecology-imagegen-v1.png"
+      },
+      {
+        "kind": "review hold",
+        "title": "디메트로돈 남청·황토 반대 방향 보행 무늬",
+        "body": "대표의 왼쪽 낮은 시점과 달리 오른쪽으로 걷는 낮은 후방 사선 구도입니다. 한 머리, 한 연속 돛, 네 다리와 네 발, 배 아래 여백, 한 긴 꼬리를 유지하면서 남청·황토의 불규칙한 무늬를 비교합니다. 색과 무늬, 걸음의 정확한 순간은 가설이고 원근이 강해 S2 review hold로만 둡니다.",
+        "source": "assets/dinosaurs/dimetrodon-grandis-rightfacing-indigo-ochre-pattern-imagegen-v1.png",
+        "variant": "남청 황토 반대 방향 낮은 후방 보행 무늬 이미지 생성 v1",
+        "src": "assets/dinosaurs/dimetrodon-grandis-rightfacing-indigo-ochre-pattern-imagegen-v1.png"
+      }
+    ],
     "repenomamus-robustus": [
       {
         "kind": "count-level pass",

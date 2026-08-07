@@ -82,6 +82,13 @@ const profiles = Object.freeze({
 // bibliographic frequency. Each cue records why the taxon occupies its current
 // place in a 5-14-year-old user's likely discovery path.
 const editorialCues = Object.freeze({
+  "dimetrodon-grandis": "등의 거대한 돛과 공룡이 아니라는 반전으로 어린이 고생물 콘텐츠에서 즉시 알아보는 대표 단궁류",
+  "archaeopteryx-lithographica": "공룡과 새의 경계를 설명하는 어린이 도감에서 시조새라는 이름으로 반복되는 대표 생물",
+  "asteroceras-obtusum": "나선형 껍데기의 암모나이트를 대표해 화석·바다생물 입문 자료에서 쉽게 만나는 생물",
+  "passaloteuthis-bisulcata": "총알 모양 로스트룸의 벨렘나이트를 설명하는 고대 바다생물 도감의 반복 생물",
+  "lystrosaurus-murrayi": "대멸종 뒤 살아남은 두 엄니 단궁류 이야기로 어린이 고생물 자료에서 자주 만나는 생물",
+  "cynognathus-crateronotus": "포유류에 가까워지는 단궁류와 이형치 진화를 설명할 때 반복되는 대표 키노돈트",
+  "repenomamus-robustus": "어린 프시타코사우루스 뼈가 든 위 내용물 화석으로 중생대 포유류 이야기에 반복 노출되는 생물",
   "herrerasaurus-ischigualastensis": "초기 공룡 진화 단원에서 반복되는 종명",
   "coelophysis-bauri": "초기 수각류와 무리 생활 도감 장면의 단골",
   "eodromaeus-murphi": "초기 수각류 계통을 깊게 볼 때 등장하는 전문 종",
