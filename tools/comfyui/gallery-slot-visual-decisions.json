@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-07T19:06:34.925Z",
-  "reviewBatch": "2026-08-08-cenozoic-life-phase-a2",
-  "reviewMethod": "Preserved all prior approved decisions plus original-size primary inspection and anatomy-audit-sheet review of twelve approved Mammut americanum, Megatherium americanum, Arctodus simus, and Glyptodon reticulatus assets and three rejected retry sources. Review covered whole-animal and individual counts, trunk and tusk counts, limb and foot separation, claw readability, tail continuity, carapace and osteoderm topology, non-clubbed ringed tail, plantigrade bear feet, composition separation, habitat readability, non-contact ecology, crop and artifact exclusion, and explicit reconstruction boundaries. For each new taxon only slot 1 may be representative-eligible; slots 2 and 3 remain gallery-only review material.",
+  "generatedAt": "2026-08-08T02:05:25.920Z",
+  "reviewBatch": "2026-08-08-arctodus-fossil-led-bodyplan-v1",
+  "reviewMethod": "Preserved all prior approved decisions and replaced only the three Arctodus simus decisions after renewed original-size anatomy review. The correction audit covered high broad cranium and deep rostrum, non-bulldog muzzle, compact straight back, rounded grizzly-hump exclusion, four attached robust limbs, grounded plantigrade paws, single short tail, hand-like paw and duplicate-tail artifacts, modern-brown-bear drift, composition separation, habitat and behavior boundaries, and crop and watermark exclusion. Arctodus slot 1 alone is representative-eligible; slots 2 and 3 remain gallery-only review material.",
   "targetSlots": 859,
   "taxa": {
     "mammuthus-primigenius": {
@@ -132,34 +132,34 @@
     "arctodus-simus": {
       "1": {
         "status": "approved",
-        "source": "assets/dinosaurs/arctodus-simus-level-shoulders-plantigrade-representative-imagegen-v2.png",
+        "source": "assets/dinosaurs/arctodus-simus-compact-back-deep-rostrum-representative-imagegen-v3.png",
         "role": "representative",
-        "reason": "Passed original-size count and identity review for one giant short-faced bear with a broad deep head, moderate non-pug muzzle, compact ears, no exaggerated shoulder hump, four robust attached limbs and plantigrade feet, and one short tail. Exact proportions, digits, coat, and soft tissue remain reconstruction.",
-        "reviewMethod": "Original-size full-frame inspection plus animal, head, muzzle, ear, shoulder-line, four-limb, plantigrade-foot, short-tail, crop, artifact, and modern-grizzly-drift audit",
-        "reviewBatch": "2026-08-08-cenozoic-life-phase-a2",
-        "reviewedAt": "2026-08-07T19:06:34.925Z"
+        "reason": "Passed original-size count and identity review after replacing the modern-brown-bear-like predecessor: one giant short-faced bear has a high broad cranium, deep broad but non-pug muzzle, relatively compact straight back without a rounded grizzly hump, four robust attached limbs, grounded plantigrade feet, and one short tail. Exact soft tissue, coat, and partly occluded digits remain reconstruction.",
+        "reviewMethod": "Original-size full-frame inspection plus cranium, deep-rostrum, compact-back, no-hump, four-limb, grounded plantigrade-foot, single-tail, crop, artifact, hand-like-paw, bulldog-face, and modern-bear-drift audit",
+        "reviewBatch": "2026-08-08-arctodus-fossil-led-bodyplan-v1",
+        "reviewedAt": "2026-08-08T02:05:25.920Z"
       },
       "2": {
         "status": "approved",
-        "source": "assets/dinosaurs/arctodus-simus-rear-aspen-gray-review-imagegen-v1.png",
+        "source": "assets/dinosaurs/arctodus-simus-aspen-gray-compact-back-review-imagegen-v2.png",
         "role": "color-pattern",
-        "reason": "Approved for gallery comparison only: the left-facing rear-three-quarter camera, cool gray-brown coat, aspen edge, and gait differ materially from slot 1 while four attached limbs, plantigrade feet, a broad head, and short tail remain readable. Rear perspective, gait, and coat prohibit representative promotion.",
-        "reviewMethod": "Original-size four-limb, plantigrade-foot, head, short-tail, direction, camera, coat, crop, artifact, and same-composition audit",
-        "reviewBatch": "2026-08-08-cenozoic-life-phase-a2",
-        "reviewedAt": "2026-08-07T19:06:34.925Z",
+        "reason": "Approved for gallery comparison only: the left-facing rear-three-quarter camera, cool gray-brown coat, snowy aspen basin, and grounded walking pause differ materially from slot 1 while four attached limbs, four plantigrade feet, a compact back, deep head, and one short tail remain readable. The smaller-looking head, rounder soft-tissue trunk, rear perspective, and coat prohibit representative promotion.",
+        "reviewMethod": "Original-size compact-back, deep-head, four-limb, four-grounded-foot, single-tail, direction, camera, coat, crop, artifact, duplicate-tail, and modern-bear-drift audit",
+        "reviewBatch": "2026-08-08-arctodus-fossil-led-bodyplan-v1",
+        "reviewedAt": "2026-08-08T02:05:25.920Z",
         "gallerySubrole": "gallery-only color and composition comparison",
-        "claimBoundary": "Rear perspective, distal digits, exact gait, coat, season, and habitat remain hypothetical; not representative-eligible."
+        "claimBoundary": "Rear perspective, apparent head and trunk proportions, distal digits, exact gait, coat, season, and habitat remain hypothetical; not representative-eligible."
       },
       "3": {
         "status": "approved",
-        "source": "assets/dinosaurs/arctodus-simus-log-berry-foraging-ecology-imagegen-v1.png",
+        "source": "assets/dinosaurs/arctodus-simus-root-foraging-compact-back-ecology-imagegen-v2.png",
         "role": "habitat-ecology",
-        "reason": "Approved for anatomy-review habitat context only: one complete bear retains the broad head, four robust limbs and plantigrade feet, and short tail while investigating a fallen log and berries without attack or prey contact. Exact diet choice, scavenging, behavior, plants, and place are illustrative, so representative promotion is prohibited.",
-        "reviewMethod": "Original-size animal, head, four-limb, plantigrade-foot, short-tail, log and berry separation, habitat, diet-boundary, crop, and artifact audit",
-        "reviewBatch": "2026-08-08-cenozoic-life-phase-a2",
-        "reviewedAt": "2026-08-07T19:06:34.925Z",
+        "reason": "Approved for anatomy-review habitat context only: one compact-backed bear retains a deep broad head, four attached limbs and grounded plantigrade feet while sniffing exposed roots and insect grubs beside a rotten log without gripping it, attacking, or contacting prey. The partly occluded far hindlimb remains connected and grounded. Exact food, behavior, plants, and place are illustrative, so representative promotion is prohibited.",
+        "reviewMethod": "Original-size compact-back, deep-rostrum, four-limb connection, four-grounded-foot, no-hand/paw-on-log, occluded-hindlimb, habitat, diet-boundary, crop, artifact, and modern-bear-drift audit",
+        "reviewBatch": "2026-08-08-arctodus-fossil-led-bodyplan-v1",
+        "reviewedAt": "2026-08-08T02:05:25.920Z",
         "gallerySubrole": "gallery-only non-aggressive foraging reference",
-        "claimBoundary": "Broad omnivory is plausible, but berries, log investigation, exact diet choice, place, and moment remain hypothetical."
+        "claimBoundary": "Broad omnivory is plausible, but roots, insect grubs, log investigation, exact diet choice, place, and moment remain hypothetical."
       }
     },
     "glyptodon-reticulatus": {

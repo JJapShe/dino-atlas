@@ -487,25 +487,28 @@ Reference anchors:
 
 - Schubert et al. Florida occurrence and range record: https://doi.org/10.1666/09-113.1
 - Figueirido et al. body-proportion and ecomorphology review: https://doi.org/10.1080/02724630903416027
+- Figueirido et al. elbow-joint and locomotor review: https://doi.org/10.1007/s10914-017-9413-x
 - North American short-faced-bear diet study: https://www.nature.com/articles/s41598-017-18116-0
 
 Must read as:
 
-- a very large robust bear with a broad deep head, compact ears, and a moderate bear-like muzzle that is not forced into a bulldog-flat "short face"; keep the shoulders free of an exaggerated grizzly hump and retain one short tail
-- exactly four attached robust limbs and plantigrade, five-toed bear paws when the digits are readable; relatively tall proportions must remain weight-bearing and bear-like rather than becoming digitigrade, cheetah-like pursuit stilts
+- a very large tremarctine bear with a high broad cranium, short nasals, and a deep broad rostrum; the muzzle must project as a real bear muzzle rather than collapsing into a bulldog-flat face
+- a relatively compact, short-backed trunk with the hips close behind the ribcage, a readable underside, and no independent rounded grizzly shoulder hump; retain one short tail
+- exactly four attached robust limbs and compact plantigrade, five-toed bear paws when the digits are readable; relatively tall proportions must remain weight-bearing and bear-like rather than becoming digitigrade, cheetah-like pursuit stilts
 
 Reject if:
 
-- it becomes a certain modern grizzly, polar bear, bulldog-faced fantasy bear, hyena, or long-legged sprinting specialist; gains a towering shoulder hump, long tail, digitigrade feet, hoof-like toes, or feline paws
+- it becomes a modern brown- or grizzly-bear long low barrel with a rounded shoulder hump, or is overcorrected into a bulldog-faced fantasy bear, polar-bear muzzle, hyena, dog, cat, or cheetah-like sprinting specialist
+- it gains a sagging pear-shaped belly, long tail, digitigrade feet, hoof-like toes, feline paws, hand-like spread digits, or thin racing stilts
 - limbs, paws, toes, head, or tail are duplicated, fused, disconnected, missing, or obscured enough to block review
 
 Evidence boundary:
 
-- Body proportions and bear-family anatomy are fossil-led, and published work cautions that the face was not exceptionally short and the limbs were not exceptional pursuit-runner stilts after body-size scaling. Muzzle soft tissue, coat, color, shoulder contour, speed, sociality, hunting, scavenging, and dietary emphasis remain debated or reconstructed. S3's log and berries establish no preferred food, predation, scavenging, or observed foraging sequence.
+- The short-faced impression is constrained by a deep broad rostrum and short nasal region, not an extremely flattened muzzle. The compact-back, robust-limb and plantigrade-bear direction is fossil-led, while published scaling cautions against cheetah-like pursuit legs. Exact trunk contour, muzzle soft tissue, coat, color, shoulder contour, speed, sociality, hunting, scavenging, and dietary emphasis remain debated or reconstructed. S3's exposed roots, tubers, grubs and log investigation establish no preferred food or observed foraging sequence.
 
 Promotion rule:
 
-- S1 is the only `count-level pass` representative candidate in this intake. S2 remains `review hold`; S3 remains `anatomy review`. Modern-bear visual familiarity is not sufficient for promotion; a source-led skull, limb, and paw comparison is still required.
+- `arctodus-simus-compact-back-deep-rostrum-representative-imagegen-v3.png` is the only `count-level pass` representative candidate in the corrected set. `arctodus-simus-aspen-gray-compact-back-review-imagegen-v2.png` remains `review hold`, and `arctodus-simus-root-foraging-compact-back-ecology-imagegen-v2.png` remains `anatomy review`; S2 and S3 are prohibited from representative promotion. The former three modern-brown-bear-like runtime images are superseded and rejected rather than retained as positive controls.
 
 ## Glyptodon reticulatus
 

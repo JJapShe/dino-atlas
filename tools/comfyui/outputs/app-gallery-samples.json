@@ -14,27 +14,27 @@
     "arctodus-simus": [
       {
         "kind": "count-level pass",
-        "title": "거대짧은얼굴곰 평평한 어깨선·넓은 발 전신 대표",
-        "body": "플라이스토세 북아메리카 개방림의 단독 전신 대표입니다. 원본 크기에서 넓고 깊은 한 곰 머리, 납작하지 않은 주둥이, 작은 귀, 과장된 혹 없이 이어지는 어깨와 골반, 몸에 연결된 튼튼한 네 다리와 넓은 네 발, 짧은 꼬리를 확인했습니다. 털색과 정확한 체형 비율은 복원 영역입니다.",
-        "source": "assets/dinosaurs/arctodus-simus-level-shoulders-plantigrade-representative-imagegen-v2.png",
-        "variant": "평평한 어깨선 튼튼한 네 다리 plantigrade 네 발 전신 대표 이미지 생성 v2",
-        "src": "assets/dinosaurs/arctodus-simus-level-shoulders-plantigrade-representative-imagegen-v2.png"
+        "title": "거대짧은얼굴곰 짧은 등·깊은 주둥이 전신 대표",
+        "body": "플라이스토세 북아메리카 개방지의 단독 전신 대표입니다. 원본 크기에서 높고 넓은 한 곰 머리, 깊고 넓되 불독처럼 납작하지 않은 주둥이, 둥근 어깨 혹이 없는 비교적 짧은 등, 몸에 연결된 튼튼한 네 다리와 접지한 네 발, 한 개의 짧은 꼬리를 확인했습니다. 털색과 정확한 연조직 비율은 복원 영역입니다.",
+        "source": "assets/dinosaurs/arctodus-simus-compact-back-deep-rostrum-representative-imagegen-v3.png",
+        "variant": "짧은 등 깊고 넓은 주둥이 plantigrade 네 발 전신 대표 이미지 생성 v3",
+        "src": "assets/dinosaurs/arctodus-simus-compact-back-deep-rostrum-representative-imagegen-v3.png"
       },
       {
         "kind": "anatomy review",
-        "title": "거대짧은얼굴곰 통나무 주변 열매 탐색 생태",
-        "body": "개방림 바닥에서 한 거대짧은얼굴곰이 쓰러진 통나무 주변의 열매와 냄새를 살피는 넓은 장면입니다. 공격이나 추격 없이 네 다리와 네 발, 머리와 짧은 꼬리가 모두 읽힙니다. 식물성 먹이를 찾는 정확한 순간은 지역별 잡식 가능성을 설명하는 가설이므로 S3 anatomy review로만 사용합니다.",
-        "source": "assets/dinosaurs/arctodus-simus-log-berry-foraging-ecology-imagegen-v1.png",
-        "variant": "통나무 주변 열매 냄새 탐색 비공격적 잡식 생태 이미지 생성 v1",
-        "src": "assets/dinosaurs/arctodus-simus-log-berry-foraging-ecology-imagegen-v1.png"
+        "title": "거대짧은얼굴곰 썩은 통나무 뿌리 탐색 생태",
+        "body": "개방림 가장자리에서 한 거대짧은얼굴곰이 썩은 통나무 옆의 드러난 뿌리와 곤충 냄새를 살피는 넓은 장면입니다. 통나무를 손처럼 잡지 않고 네 발을 땅에 둔 채, 짧은 등과 깊은 머리, 네 다리의 연결이 읽힙니다. 정확한 먹이와 행동 순간은 지역별 잡식 가능성을 설명하는 가설이므로 S3 anatomy review로만 사용합니다.",
+        "source": "assets/dinosaurs/arctodus-simus-root-foraging-compact-back-ecology-imagegen-v2.png",
+        "variant": "통나무 옆 뿌리 곤충 냄새 탐색 비공격적 잡식 생태 이미지 생성 v2",
+        "src": "assets/dinosaurs/arctodus-simus-root-foraging-compact-back-ecology-imagegen-v2.png"
       },
       {
         "kind": "review hold",
-        "title": "거대짧은얼굴곰 사시나무 숲 후방 회갈색 변이",
-        "body": "대표와 다른 높은 후방 시점에서 사시나무 숲을 지나는 회갈색 후보입니다. 한 곰 머리, 튼튼한 네 다리와 넓은 네 발, 짧은 꼬리가 분리되어 읽힙니다. 먼 쪽 발가락과 어깨선, 털색은 원근·복원 영향을 받아 S2 review hold로만 둡니다.",
-        "source": "assets/dinosaurs/arctodus-simus-rear-aspen-gray-review-imagegen-v1.png",
-        "variant": "높은 후방 사시나무 숲 회갈색 보행 이미지 생성 v1",
-        "src": "assets/dinosaurs/arctodus-simus-rear-aspen-gray-review-imagegen-v1.png"
+        "title": "거대짧은얼굴곰 사시나무 분지 회갈색 변이",
+        "body": "대표와 다른 높은 후방 시점에서 차가운 사시나무 분지를 지나는 회갈색 후보입니다. 짧은 등과 깊은 머리, 몸에 연결되어 접지한 네 다리와 네 발, 한 개의 짧은 꼬리가 분리되어 읽힙니다. 머리가 대표보다 작고 몸통이 둥글게 보이는 원근·연조직 한계 때문에 S2 review hold로만 둡니다.",
+        "source": "assets/dinosaurs/arctodus-simus-aspen-gray-compact-back-review-imagegen-v2.png",
+        "variant": "높은 후방 사시나무 분지 회갈색 짧은 등 보행 이미지 생성 v2",
+        "src": "assets/dinosaurs/arctodus-simus-aspen-gray-compact-back-review-imagegen-v2.png"
       }
     ],
     "glyptodon-reticulatus": [

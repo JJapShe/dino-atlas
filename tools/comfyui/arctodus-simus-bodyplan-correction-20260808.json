@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-08-arctodus-fossil-led-bodyplan-v1",
+  "purpose": "Replace three modern-brown-bear-like Arctodus simus gallery images with a consistent fossil-led compact-back, deep-rostrum body plan while preserving separate representative, variation-review, and ecology-review gates.",
+  "generatedAt": "2026-08-08; exact service timestamps unavailable",
+  "reviewedAt": "2026-08-08T02:05:25.920Z",
+  "generator": "OpenAI built-in image generation",
+  "workflow": "Fresh prompt-to-image candidates, original-size anatomy rejection, targeted edit of the best body-plan candidate, then anatomy-reference-guided fresh S2 and S3 compositions",
+  "seed": "service-assigned, not exposed",
+  "license": "Original project-generated bitmaps. Only factual papers and public museum specimen records supplied constraints; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style was used as a generation input.",
+  "researchSources": [
+    {
+      "citation": "Figueirido et al. 2010, Demythologizing Arctodus simus",
+      "url": "https://doi.org/10.1080/02724630903416027",
+      "use": "Deep rostrum plus short nasals create the short-faced appearance; limbs remain bear-scaled rather than cheetah-like."
+    },
+    {
+      "citation": "Figueirido et al. 2017, elbow-joint evidence for locomotor behavior",
+      "url": "https://doi.org/10.1007/s10914-017-9413-x",
+      "use": "Conservative robust bear-like forelimb and locomotor boundary."
+    },
+    {
+      "citation": "Field Museum Arctodus simus mounted skeleton record",
+      "url": "https://mm.fieldmuseum.org/a3bf586b-cd2b-48c0-996e-b1b14045f358",
+      "use": "Whole-skeleton proportion and attachment cross-check only."
+    },
+    {
+      "citation": "Smithsonian NMNH Arctodus simus specimen record",
+      "url": "https://collections.si.edu/search/detail/edanmdm%3Anmnhpaleobiology_12882741",
+      "use": "Taxon and specimen boundary cross-check only."
+    }
+  ],
+  "identityBoundary": {
+    "directOrConservative": [
+      "Very large tremarctine bear with a high broad cranium, deep broad rostrum and short nasal region.",
+      "Relatively compact bear trunk, robust weight-bearing limbs, plantigrade feet and a short tail.",
+      "The face appears shortened but is not bulldog-flat; limbs are not cursorial cheetah-like stilts."
+    ],
+    "reconstruction": [
+      "Exact fur length and color, ear and lip soft tissue, sex, body fat, distal digit visibility, weather, plants and specific behavior."
+    ],
+    "reject": [
+      "Modern grizzly or brown-bear long low barrel silhouette and rounded shoulder hump.",
+      "Bulldog-flat face, polar-bear narrow muzzle, cat, hyena or dog drift.",
+      "Digitigrade or cheetah-like legs, hand-like paws, duplicate tails, extra, fused or missing limbs."
+    ]
+  },
+  "intermediateReference": {
+    "callId": "exec-b583577d-2127-4ff4-af32-f57cc7aefbd1",
+    "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-b583577d-2127-4ff4-af32-f57cc7aefbd1.png",
+    "status": "private intermediate only; never approved or copied into runtime assets",
+    "use": "Supplied only to the targeted S1 edit. Its compact torso and four-limb composition were retained while the bulldog-like muzzle and oversized hand-like paws were corrected.",
+    "prompt": "Wide 16:9 museum paleoart reconstruction, original and copyright-safe, no text. Show ONE adult Arctodus simus, an extinct Pleistocene giant short-faced tremarctine bear, in full-body side/three-quarter view walking to the right across open North American steppe. This must NOT have the silhouette of any living Ursus bear. ANATOMICAL SILHOUETTE MUST BE OBVIOUS: a very short, compact torso from shoulder to hip; straight nearly horizontal topline with no grizzly shoulder hump; deep chest but a lifted, slightly tucked underside behind the ribs, not a long hanging belly; hips close behind the ribcage; robust but visibly tall limbs with long exposed forearms and lower legs, giving more ground clearance than a brown bear while remaining heavy and plantigrade, never greyhound-thin; all four legs clearly separate and straight enough to read; huge five-toed plantigrade paws with heels down. Head: very large, high rounded cranial vault, small rounded ears, exceptionally deep and broad muzzle with a short nasal bridge; the snout looks vertically deep and blunt, not long and tapered, but it is not pug-flat. Neck is powerful but does not merge into a hump. Short tail. Use short-to-medium charcoal-umber fur closely following the body contour so anatomy remains visible, with only subtle lighter muzzle shading. Calm alert posture, mouth closed, head slightly turned toward viewer. Animal occupies 45% of a wide landscape frame; entire ears, tail, four paws and breathing room visible. Low shrubs, distant conifers and mountains give scale. Reject living-bear traits: NO grizzly hump, NO rounded long low pear-shaped torso, NO sagging belly, NO thick shaggy coat hiding wrists or ankles, NO long polar-bear muzzle, NO spectacled-bear mask. Also no cat/hyena/dog anatomy, no digitigrade stance, no skinny stilt legs, no saber teeth, no roar, prey, blood, extra/fused/missing limbs, cropped feet, labels, logo, watermark, signature, border, montage, or collage. Photorealistic natural-history illustration, clear anatomy, ages 5–14."
+  },
+  "records": {
+    "arctodus-simus-representative-v3": {
+      "taxon": "Arctodus simus",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "callId": "exec-b9107a01-5602-46a4-b374-23559a338b35",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-b9107a01-5602-46a4-b374-23559a338b35.png",
+      "approvedProjectPath": "assets/dinosaurs/arctodus-simus-compact-back-deep-rostrum-representative-imagegen-v3.png",
+      "supersedes": "assets/dinosaurs/arctodus-simus-level-shoulders-plantigrade-representative-imagegen-v2.png",
+      "sha256": "1cb282b0ff17e21a8bc3eaf6df3944c06e9e77fe7365b74dbc967fa0e4a1627f",
+      "bytes": 2388270,
+      "dimensions": "1671x941",
+      "requestedDimensions": "1672x941; image service returned a one-pixel narrower 1671x941 output",
+      "referenceImages": [
+        "private project-generated intermediate exec-b583577d-2127-4ff4-af32-f57cc7aefbd1.png"
+      ],
+      "prompt": "Edit the supplied original paleoart image. Preserve the exact wide 16:9 landscape, lighting, one-animal composition, compact straight-backed torso, separated four limbs, and calm walking pose. Change only the Arctodus simus facial proportions and paws to correct anatomy. FACE: extend the muzzle modestly forward (about 15–20%) so the face is no longer bulldog-, mastiff-, or pug-flat. Keep the rostrum exceptionally deep and broad with short nasal bones, but make it a real bear muzzle of moderate length: the nose projects clearly in front of the eyes, the top line slopes gently rather than dropping vertically, cheeks are firm and not jowly, mouth closed. Retain a large high rounded cranial vault and small rounded ears. It must look like a giant extinct tremarctine bear, not a dog and not a modern grizzly. PAWS: reduce the apparent size of every paw by about 20–25%. Replace the spread human-hand-like digits with compact heavy bear paws. Each visible paw has five short close-set toes with short dark claws, natural webbing/fur between toes, no fingers, no opposable digit. Keep the stance plantigrade with heels grounded and correct weight distribution. Make rear paws and contact shadows anatomically clear. Do not add, remove, fuse, duplicate, or crop limbs, toes, or tail. Keep short-to-medium contour-following charcoal-umber fur, no shoulder hump, no long low belly, no other animals, and no text, logo, watermark, signature, border, collage, or labels. The result must remain museum-quality photorealistic paleoart for ages 5–14 at the same 1672×941 aspect and framing.",
+      "review": {
+        "identity": "PASS: compact straight back, high broad cranium, deep broad moderate muzzle and no rounded grizzly hump.",
+        "countAndAttachment": "PASS: one head, four attached limbs, grounded plantigrade paws and one short tail; no hand, fusion or duplication artifact.",
+        "boundary": "Exact fur, soft tissue, proportions and partly occluded distal digits remain reconstruction."
+      }
+    },
+    "arctodus-simus-pattern-v2": {
+      "taxon": "Arctodus simus",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved",
+      "representativeEligible": false,
+      "callId": "exec-b9e95434-5596-4219-9dec-64621eee5e5e",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-b9e95434-5596-4219-9dec-64621eee5e5e.png",
+      "approvedProjectPath": "assets/dinosaurs/arctodus-simus-aspen-gray-compact-back-review-imagegen-v2.png",
+      "supersedes": "assets/dinosaurs/arctodus-simus-rear-aspen-gray-review-imagegen-v1.png",
+      "sha256": "ea083e8ff58df283d5da521ae69658f97a4476c5189744db8b921b9251b1b219",
+      "bytes": 2547912,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "private project-generated approved S1 anatomy reference exec-b9107a01-5602-46a4-b374-23559a338b35.png"
+      ],
+      "prompt": "Use the supplied approved Arctodus simus image ONLY as an anatomical identity reference. Create a completely new, original 16:9 museum-paleoart composition; do not reuse its background or pose. Show the SAME extinct giant short-faced bear body plan moving LEFT through a cool Late Pleistocene aspen-and-spruce basin in a moderately elevated rear three-quarter view. Preserve exactly the reference animal's compact straight-backed torso without a grizzly shoulder hump, deep chest, clearly exposed robust limbs, high rounded cranium, deep broad moderate-length muzzle, small round ears, and short single tail. The head turns gently toward the viewer so the deep rostrum remains readable. All four legs must attach correctly and remain separated. Use a stable slow walking pause with ALL FOUR plantigrade paws touching the ground—no lifted sole. Each readable paw is compact, bear-like and five-toed with short close-set claws; no hand-like spread digits. Change the coat to a plausible smoke-gray and cool umber variation with restrained cinnamon guard hairs; fur is short-to-medium and follows the silhouette. No living species mask. The bear occupies about 42% of the wide frame, with open space in the leftward direction. Old patchy snow, damp sedges, leafless aspens, spruce, low mist and cold side light create a different environment. Do not make a modern grizzly, brown, black or polar bear; no shoulder hump, long low pear-shaped body, sagging belly, long narrow muzzle, dog face, double tail, extra tail tuft, hand, four-toed cat paw, digitigrade stance, overly long racing legs, extra/fused/missing limb, distorted feet, roar, attack, prey, blood, text, caption, logo, watermark, signature, border, split panel or collage. Copyright-safe original natural-history art for ages 5–14, exactly 1672×941 framing.",
+      "review": {
+        "identity": "PASS for review-hold only: compact back and deep head remain readable; head appears smaller and trunk rounder than S1, so promotion is prohibited.",
+        "countAndAttachment": "PASS: four attached limbs, four grounded plantigrade feet and one short tail; no duplicate tail or hand artifact.",
+        "boundary": "Camera, coat, apparent head and trunk proportions, distal digits, season and habitat remain reconstruction."
+      }
+    },
+    "arctodus-simus-ecology-v2": {
+      "taxon": "Arctodus simus",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "kind": "anatomy review",
+      "status": "approved",
+      "representativeEligible": false,
+      "callId": "exec-0235d7b9-3da8-4495-ac0b-6b7e8afbacd0",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-0235d7b9-3da8-4495-ac0b-6b7e8afbacd0.png",
+      "approvedProjectPath": "assets/dinosaurs/arctodus-simus-root-foraging-compact-back-ecology-imagegen-v2.png",
+      "supersedes": "assets/dinosaurs/arctodus-simus-log-berry-foraging-ecology-imagegen-v1.png",
+      "sha256": "aa6d4b6e8ed08c73e16299089f483296cb80162f92fd3fd10dedfc2fd9436124",
+      "bytes": 2671140,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "private project-generated approved S1 anatomy reference exec-b9107a01-5602-46a4-b374-23559a338b35.png"
+      ],
+      "prompt": "Use the supplied approved Arctodus simus image ONLY as an anatomical identity reference. Create a completely new, original wide 16:9 ecological paleoart scene; do not reuse its exact pose or background. Show the SAME fossil-led extinct body plan at a Late Pleistocene North American woodland-meadow edge. One adult Arctodus simus calmly sniffs exposed roots, tubers and insect grubs beside a naturally split rotten fallen log. No paw touches or grips the log: all four plantigrade paws stay on the ground, separated and visible, to avoid hand-like anatomy. Use a left-facing front-side three-quarter view from slightly above, with the head lowered only a little so the large high rounded cranium and deep broad moderate-length muzzle remain legible. Preserve the approved reference proportions: compact straight-backed torso, no grizzly shoulder hump, deep chest, lifted underside rather than a sagging belly, robust visibly exposed limbs, compact bear paws with five close-set toes where readable, and one short tail. The bear occupies 35–40% of frame. Use a dark charcoal-umber coat with subtle tawny edges, short-to-medium fur that follows anatomy. Warm late-afternoon side light, aspens and spruce at the meadow edge, distant open steppe and low hills. Soil disturbance, roots, bark fragments and tracks are irregular and natural, never a repeated stamp pattern. The behavior is cautious omnivorous investigation, not an attack. No living grizzly/brown/black/polar bear silhouette, no rounded shoulder hump, long pear-shaped torso, shaggy leg-obscuring coat, bulldog-flat or long narrow muzzle, cat/hyena/dog anatomy, digitigrade feet, hand-like forepaw, paw on log, extra/fused/missing limbs or toes, cropped feet, roaring, blood, carcass, other large animal, human object, text, logo, watermark, signature, border, montage or collage. Copyright-safe museum-quality natural-history art for ages 5–14, exactly 1672×941 framing.",
+      "review": {
+        "identity": "PASS for anatomy-review only: compact back, deep muzzle and no independent grizzly hump remain readable in the lowered-head pose.",
+        "countAndAttachment": "PASS: two forelimbs, near hindlimb and partially occluded far hindlimb remain connected and grounded; no paw grips the log and no hand, fusion or duplication artifact is present.",
+        "boundary": "Roots, insects, precise omnivorous event, coat, plants, season, place and partly occluded distal anatomy remain hypothetical; representative promotion is prohibited."
+      }
+    }
+  },
+  "supersededRuntimeAssets": [
+    {
+      "path": "assets/dinosaurs/arctodus-simus-level-shoulders-plantigrade-representative-imagegen-v2.png",
+      "reason": "Modern brown-bear-like long low rounded trunk and fur-obscured limbs overwhelm the compact-back extinct identity."
+    },
+    {
+      "path": "assets/dinosaurs/arctodus-simus-rear-aspen-gray-review-imagegen-v1.png",
+      "reason": "Large rounded modern-bear trunk and weak compact-back cue make it unsuitable for a consistent three-image set."
+    },
+    {
+      "path": "assets/dinosaurs/arctodus-simus-log-berry-foraging-ecology-imagegen-v1.png",
+      "reason": "Rounded grizzly-like shoulder hump, long barrel trunk, fur-obscured short-looking limbs and modern brown-bear head dominate the image."
+    }
+  ],
+  "privateRejectedCandidates": [
+    {
+      "callIds": [
+        "exec-dd4280b4-3517-418f-936e-8fe926fafbe9",
+        "exec-f69f00dd-04e5-4683-9c14-b4041200046f",
+        "exec-8d117327-dbfc-4ef4-a45f-0b1e8f8c2d64"
+      ],
+      "reason": "First pass retained a modern brown/grizzly body plan despite facial changes; none were copied into runtime assets."
+    },
+    {
+      "callId": "exec-87efb66e-bf2e-4bb3-a918-1504f4dd809c",
+      "reason": "Modern-bear rectangular trunk, small dog-like head, ambiguous duplicate tail tissue and unreliable lifted paw."
+    },
+    {
+      "callId": "exec-57ef53f3-baaa-48a3-ae9f-138855db3f56",
+      "reason": "Obvious grizzly shoulder hump and barrel body plus fused-looking log-contact paw."
+    }
+  ]
+}

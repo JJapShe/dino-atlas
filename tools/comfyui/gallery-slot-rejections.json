@@ -1531,7 +1531,16 @@
     },
     "assets/dinosaurs/adasaurus-mongoliensis-nemegt-ecology-imagegen-v1.png": {
       "reason": "The former ecology frame combines bird-like heads, broad wing-fan arms, overlapping appendages, repetitive color treatment, and several animals whose heads, legs, feet, and tails cannot be audited independently."
+    },
+    "assets/dinosaurs/arctodus-simus-level-shoulders-plantigrade-representative-imagegen-v2.png": {
+      "reason": "Superseded after renewed original-size review: the long low rounded torso, fur-obscured limb length and modern brown-bear silhouette overwhelm the fossil-led compact-back and deep-rostrum Arctodus identity. Retain only as a diagnostic modern-bear-drift negative; never reassign as a positive representative."
+    },
+    "assets/dinosaurs/arctodus-simus-rear-aspen-gray-review-imagegen-v1.png": {
+      "reason": "Superseded after renewed original-size review: the large rounded modern-bear trunk and weak compact-back signal do not provide a stable extinct Arctodus body plan across the gallery. Retain only as a diagnostic negative and do not reselect."
+    },
+    "assets/dinosaurs/arctodus-simus-log-berry-foraging-ecology-imagegen-v1.png": {
+      "reason": "Superseded after renewed original-size review: a grizzly-like rounded shoulder hump, long barrel torso, fur-obscured short-looking legs and modern brown-bear head erase the intended Arctodus cues. Retain only as a diagnostic negative and do not reselect."
     }
   },
-  "generatedAt": "2026-08-03T13:18:58.452Z"
+  "generatedAt": "2026-08-08T02:05:25.920Z"
 }

@@ -1,3 +1,4 @@
+import argparse
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
@@ -70,26 +71,27 @@ TAXA = {
         ],
     },
     "arctodus-simus": {
-        "title": "Arctodus simus anatomy audit v1",
-        "subtitle": "Three approved assets | broad head, moderate muzzle, level shoulders, plantigrade paws",
+        "audit_version": "v2",
+        "title": "Arctodus simus anatomy audit v2",
+        "subtitle": "Corrected set | deep broad rostrum, short nasals, compact back, no rounded grizzly hump",
         "items": [
             {
                 "role": "REP CANDIDATE",
                 "kind": "count-level pass",
-                "source": "arctodus-simus-level-shoulders-plantigrade-representative-imagegen-v2.png",
-                "cue": "Full-body right-facing candidate. Check a broad deep head, moderate non-pug muzzle, compact ears, no extreme shoulder hump, four robust plantigrade paws, and one short tail.",
+                "source": "arctodus-simus-compact-back-deep-rostrum-representative-imagegen-v3.png",
+                "cue": "Right-facing full-body candidate. Check the high broad cranium, deep broad rostrum with short nasals, compact short back, no rounded grizzly hump, four grounded plantigrade paws, and one short tail. Reject bulldog or cheetah overcorrection.",
             },
             {
                 "role": "COLOR REVIEW",
                 "kind": "review hold",
-                "source": "arctodus-simus-rear-aspen-gray-review-imagegen-v1.png",
-                "cue": "Left-facing rear three-quarter review. Recount four attached legs and plantigrade feet plus one short tail. Gray coat, neck patch, weather, and aspen-edge setting are hypothetical.",
+                "source": "arctodus-simus-aspen-gray-compact-back-review-imagegen-v2.png",
+                "cue": "Left-facing rear-three-quarter review. Recount four attached limbs, four grounded plantigrade feet, compact back, deep muzzle, and one short tail. Head size, rounder trunk, coat, weather, and habitat block representative promotion.",
             },
             {
                 "role": "ECOLOGY REVIEW",
                 "kind": "anatomy review",
-                "source": "arctodus-simus-log-berry-foraging-ecology-imagegen-v1.png",
-                "cue": "Non-contact foraging scene. Keep all four limbs, paws, head, and tail readable. Berries and a log do not prove diet choice, scavenging, predation, speed, or an exact observed behavior.",
+                "source": "arctodus-simus-root-foraging-compact-back-ecology-imagegen-v2.png",
+                "cue": "Root-foraging hypothesis. Confirm the compact back, deep rostrum, no rounded hump, four grounded plantigrade paws, and one short tail. The far hindlimb, roots, grubs, plants, place, and behavior remain review-only; no promotion.",
             },
         ],
     },
@@ -226,15 +228,22 @@ def make_sheet(taxon_id, spec):
             line_gap=5,
         )
 
-    output = AUDIT_DIR / f"{taxon_id}-anatomy-audit-v1.png"
+    audit_version = spec.get("audit_version", "v1")
+    output = AUDIT_DIR / f"{taxon_id}-anatomy-audit-{audit_version}.png"
     output.parent.mkdir(parents=True, exist_ok=True)
     sheet.save(output, optimize=True)
     return output
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--taxon-id", choices=sorted(TAXA), help="Generate only one taxon audit sheet.")
+    args = parser.parse_args()
+
+    selected = [args.taxon_id] if args.taxon_id else list(TAXA)
     outputs = []
-    for taxon_id, spec in TAXA.items():
+    for taxon_id in selected:
+        spec = TAXA[taxon_id]
         output = make_sheet(taxon_id, spec)
         with Image.open(output) as image:
             outputs.append(f"{output.relative_to(ROOT).as_posix()} {image.width}x{image.height}")

@@ -37,6 +37,24 @@
       "rejectSummary": "호랑이·사자·표범·곰·하이에나·늑대 복제, 호랑이 줄·로제트·갈기, 긴 꼬리·술 꼬리, 치타형 가는 다리·곰형 발, 아래턱·추가·교차 검치, 여분·융합 사지·보이는 발톱, 피·접촉 공격·무리사냥 확정, 같은 구도 반복, S2/S3 대표 승격이면 탈락"
     },
     {
+      "taxon": "arctodus-simus",
+      "label": "Arctodus simus",
+      "focus": "플라이스토세 Arctodus simus의 높고 넓은 곰 머리, 깊고 넓되 납작하지 않은 주둥이, 비교적 짧고 단단한 등, 작은 귀, 견고한 네 다리, 넓은 plantigrade 네 발과 짧은 꼬리를 함께 보존",
+      "status": "count-level pass",
+      "primaryImage": "assets/dinosaurs/arctodus-simus-compact-back-deep-rostrum-representative-imagegen-v3.png",
+      "primaryTitle": "거대짧은얼굴곰 짧은 등·깊은 주둥이 전신 대표",
+      "schedule": "tools/comfyui/arctodus-simus-bodyplan-correction-20260808.json",
+      "datasetId": "arctodus_bodyplan_correction_20260808",
+      "route": "S1은 짧은 등과 깊은 주둥이가 읽히는 단독 전신 count-level 대표, S2는 반대 방향 사시나무 분지 review hold, S3는 네 발을 접지한 채 통나무 옆 뿌리·곤충 냄새를 살피는 비공격적 anatomy review로 분리합니다.",
+      "trigger": "arctodus simus fossil led compact back deep rostrum",
+      "controlReferences": [
+        "assets/dinosaurs/arctodus-simus-compact-back-deep-rostrum-representative-imagegen-v3.png"
+      ],
+      "primaryControlReference": "assets/dinosaurs/arctodus-simus-compact-back-deep-rostrum-representative-imagegen-v3.png",
+      "passSummary": "높고 넓은 곰 머리 | 깊고 넓되 납작하지 않은 주둥이 | 비교적 짧은 등 | 둥근 어깨 혹 없음 | 작은 귀 | 견고한 네 다리 | 넓은 plantigrade 네 발 | 한 짧은 꼬리 | 전신 프레임 | 잡식 탐색 생태 | 색·식성 가설 명시 | 구도 분리",
+      "rejectSummary": "현생 불곰형 길고 낮은 배럴 몸통·둥근 어깨 혹, 치타형 가는 장다리, 불독 주둥이, 하이에나·개·대형고양이 얼굴, 갈기·검치·긴 꼬리, 손 같은 벌어진 발가락, 추가·융합 사지와 발, 공격성 확정, S2/S3 대표 승격"
+    },
+    {
       "taxon": "tyrannosaurus-rex",
       "label": "Tyrannosaurus rex",
       "focus": "tiny arms, exactly two fingers, skull surface",

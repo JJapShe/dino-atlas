@@ -111,7 +111,7 @@ window.gallerySlotAssignments = {
   ],
   "arctodus-simus": [
     {
-      "source": "assets/dinosaurs/arctodus-simus-level-shoulders-plantigrade-representative-imagegen-v2.png",
+      "source": "assets/dinosaurs/arctodus-simus-compact-back-deep-rostrum-representative-imagegen-v3.png",
       "gallerySlot": 1,
       "galleryRole": "representative",
       "phenotype": "canonical-a",
@@ -119,19 +119,19 @@ window.gallerySlotAssignments = {
       "expectedKind": "count-level pass"
     },
     {
-      "source": "assets/dinosaurs/arctodus-simus-rear-aspen-gray-review-imagegen-v1.png",
+      "source": "assets/dinosaurs/arctodus-simus-aspen-gray-compact-back-review-imagegen-v2.png",
       "gallerySlot": 2,
       "galleryRole": "color-pattern",
-      "claimBoundary": "Rear perspective, distal digits, exact gait, coat, season, and habitat remain hypothetical; not representative-eligible.",
+      "claimBoundary": "Rear perspective, apparent head and trunk proportions, distal digits, exact gait, coat, season, and habitat remain hypothetical; not representative-eligible.",
       "phenotype": "variant-b",
       "habitatKey": "late-pleistocene-aspen-parkland",
       "expectedKind": "review hold"
     },
     {
-      "source": "assets/dinosaurs/arctodus-simus-log-berry-foraging-ecology-imagegen-v1.png",
+      "source": "assets/dinosaurs/arctodus-simus-root-foraging-compact-back-ecology-imagegen-v2.png",
       "gallerySlot": 3,
       "galleryRole": "habitat-ecology",
-      "claimBoundary": "Broad omnivory is plausible, but berries, log investigation, exact diet choice, place, and moment remain hypothetical.",
+      "claimBoundary": "Broad omnivory is plausible, but roots, insect grubs, log investigation, exact diet choice, place, and moment remain hypothetical.",
       "phenotype": "canonical-a",
       "habitatKey": "late-pleistocene-open-woodland-log-forage",
       "expectedKind": "anatomy review"
