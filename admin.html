@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dino Atlas · 관리자 검수</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./styles.css?v=20260810-access-surface-v1" />
+  </head>
+  <body data-app-mode="admin" data-active-view="review" data-atlas-realm="mesozoic">
+    <div class="app-shell admin-shell">
+      <aside class="sidebar" aria-label="관리자 도구">
+        <div class="brand">
+          <div class="brand-mark">DA</div>
+          <div class="brand-copy">
+            <p class="eyebrow">Local Admin</p>
+            <h1>Dino Atlas</h1>
+          </div>
+        </div>
+        <nav class="nav-tabs" aria-label="관리자 화면">
+          <button class="nav-tab active" data-view="review" type="button">후보 검수</button>
+          <button class="nav-tab" data-view="assetReview" type="button">이미지 워크벤치</button>
+        </nav>
+        <section class="sidebar-panel admin-sidebar-panel">
+          <div>
+            <p class="eyebrow">사용자 화면 미리보기</p>
+            <p>무료·구독 화면은 새 탭에서 실제 사용자 진입점으로 확인합니다.</p>
+          </div>
+          <a class="admin-preview-link" href="./?admin=1&tier=free#catalog" target="_blank" rel="noopener">무료 30종 보기</a>
+          <a class="admin-preview-link" href="./?admin=1&tier=subscriber#catalog" target="_blank" rel="noopener">구독 전체 보기</a>
+          <a class="admin-preview-link secondary" href="./#catalog" target="_blank" rel="noopener">공개 사용자 화면</a>
+          <p class="admin-security-note">이 페이지는 로컬 운영용이며 Pages 배포물에는 포함하지 않습니다. 실제 운영 전에는 서버 인증이 필요합니다.</p>
+        </section>
+      </aside>
+
+      <main class="main admin-main">
+        <header class="topbar admin-topbar">
+          <div>
+            <p class="eyebrow">운영자 전용</p>
+            <h2 id="viewTitle">이미지 검수 화면</h2>
+          </div>
+          <span class="admin-local-badge">LOCAL ONLY</span>
+        </header>
+
+        <section class="view active" id="reviewView" aria-label="이미지 후보 검수">
+          <div class="review-layout">
+            <section class="queue-panel">
+              <div class="section-title">
+                <p class="eyebrow">Image QA</p>
+                <h3>후보 선택 보드</h3>
+              </div>
+              <div id="reviewQueue" class="review-list"></div>
+            </section>
+            <section class="workflow-panel">
+              <div class="section-title">
+                <p class="eyebrow">Candidate Detail</p>
+                <h3>후보 비교와 대표 선택</h3>
+              </div>
+              <div id="workflowSteps" class="workflow-steps"></div>
+            </section>
+          </div>
+        </section>
+
+        <section class="view" id="assetReviewView" aria-label="이미지 검수 워크벤치">
+          <iframe
+            id="assetReviewFrame"
+            class="asset-review-frame"
+            title="이미지 검수 워크벤치"
+            src="about:blank"
+          ></iframe>
+        </section>
+      </main>
+    </div>
+
+    <div class="image-lightbox" id="imageLightbox" hidden aria-hidden="true">
+      <button class="lightbox-backdrop" data-lightbox-action="close" type="button" aria-label="닫기"></button>
+      <section class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" tabindex="-1">
+        <div class="lightbox-topbar">
+          <div>
+            <p class="eyebrow" id="lightboxKind">Image Review</p>
+            <h3 id="lightboxTitle">후보 이미지</h3>
+          </div>
+          <button class="lightbox-close icon-button" data-lightbox-action="close" type="button" aria-label="닫기"><span class="button-icon icon-close" aria-hidden="true"></span></button>
+        </div>
+        <div class="lightbox-stage" role="group" aria-label="검수 이미지 확대">
+          <button class="lightbox-nav prev icon-button" data-lightbox-action="prev" type="button" aria-label="이전 이미지"><span class="button-icon icon-chevron-left" aria-hidden="true"></span></button>
+          <img id="lightboxImage" alt="" draggable="false" />
+          <button class="lightbox-nav next icon-button" data-lightbox-action="next" type="button" aria-label="다음 이미지"><span class="button-icon icon-chevron-right" aria-hidden="true"></span></button>
+        </div>
+        <div class="lightbox-caption">
+          <p id="lightboxBody"></p>
+          <span class="source-note" id="lightboxSource"></span>
+          <span class="lightbox-count" id="lightboxCount"></span>
+        </div>
+      </section>
+    </div>
+
+    <script src="./access-policy.js?v=20260810-access-surface-v1"></script>
+    <script src="./gallery-slots.js?v=20260810-famous-paleo-ceno-v1"></script>
+    <script src="./app.js?v=20260810-access-surface-v1"></script>
+  </body>
+</html>

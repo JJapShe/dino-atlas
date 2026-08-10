@@ -26,6 +26,8 @@ jobs:
         with:
           sparse-checkout: |
             index.html
+            access-policy.js
+            admin.html
             app.js
             gallery-slots.js
             ecosystem-scenes.js
@@ -37,6 +39,8 @@ jobs:
             styles.css
             atlas-layout.js
             assets/motion/
+            .github/workflows/deploy-pages.yml
+            tools/verify_access_surfaces.mjs
             tools/comfyui/scripts/verify_motion_public_assets.mjs
           sparse-checkout-cone-mode: false
 
@@ -47,9 +51,10 @@ jobs:
         env:
           ASSET_BASE: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/assets/dinosaurs/
         run: |
+          node tools/verify_access_surfaces.mjs
           node tools/comfyui/scripts/verify_motion_public_assets.mjs
           mkdir -p _site
-          cp index.html app.js gallery-slots.js ecosystem-scenes.js motion-samples.js motion-m1-samples.js motion-m2-samples.js motion-m2-i2v-samples.js motion-public-assets.json styles.css atlas-layout.js _site/
+          cp index.html access-policy.js app.js gallery-slots.js ecosystem-scenes.js motion-samples.js motion-m1-samples.js motion-m2-samples.js motion-m2-i2v-samples.js motion-public-assets.json styles.css atlas-layout.js _site/
           python3 - <<'PY'
           import json
           import os
@@ -71,6 +76,7 @@ jobs:
               destination.parent.mkdir(parents=True, exist_ok=True)
               shutil.copy2(source, destination)
           PY
+          test ! -e _site/admin.html
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

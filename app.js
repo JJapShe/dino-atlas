@@ -5172,12 +5172,39 @@ const eraScenePartners = {
   cretaceous: ["티라노사우루스", "트리케라톱스", "스피노사우루스", "파라사우롤로푸스"],
 };
 
+const appLocationParams = new URLSearchParams(window.location.search);
+const isLocalAppHost = ["localhost", "127.0.0.1"].includes(window.location.hostname);
+const isAdminMode = document.body.dataset.appMode === "admin";
+const isAdminPreviewMode = !isAdminMode && isLocalAppHost && appLocationParams.get("admin") === "1";
+const accessPolicy = globalThis.dinoAtlasAccessPolicy || {
+  defaultTier: "free",
+  freeTaxonIds: [],
+  tiers: {
+    free: { label: "무료 탐험", catalogScope: "free" },
+    subscriber: { label: "전체 도감", catalogScope: "all" },
+  },
+};
+const freeTaxonIds = new Set(accessPolicy.freeTaxonIds || []);
+const injectedCatalogEntitlement = String(
+  globalThis.DINO_ATLAS_ENTITLEMENT?.catalog || accessPolicy.defaultTier || "free",
+).toLowerCase();
+const previewCatalogEntitlement = String(appLocationParams.get("tier") || "").toLowerCase();
+const resolvedAccessTier =
+  isAdminMode || injectedCatalogEntitlement === "subscriber" || injectedCatalogEntitlement === "full" ||
+  (isAdminPreviewMode && ["subscriber", "full"].includes(previewCatalogEntitlement))
+    ? "subscriber"
+    : "free";
+const publicViews = new Set(["atlas", "catalog", "motion", "ecosystems"]);
+const adminViews = new Set(["review", "assetReview"]);
+
 const state = {
   atlasRealm: "mesozoic",
   selectedId: "tyrannosaurus-rex",
   galleryIndex: 0,
   galleryDragStart: 0,
-  view: "atlas",
+  view: isAdminMode ? "review" : "atlas",
+  accessTier: resolvedAccessTier,
+  accessScope: resolvedAccessTier === "subscriber" ? "all" : "free",
   reviewSelectedId: "tyrannosaurus-rex",
   reviewPreviewSource: "",
   reviewQueueKindFilter: "usable",
@@ -5238,7 +5265,7 @@ const state = {
     scope: "cretaceous",
     frameMode: "scope",
     expanded: false,
-    inspectorCollapsed: true,
+    inspectorCollapsed: false,
     inspectorBeforeExpand: false,
     inspectorAutoCollapsed: false,
     inspectorUserSet: false,
@@ -24364,6 +24391,104 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+function getAllowedViews() {
+  return isAdminMode ? adminViews : publicViews;
+}
+
+function isFreeTaxon(dino) {
+  return Boolean(dino?.id && freeTaxonIds.has(dino.id));
+}
+
+function canAccessTaxon(dino) {
+  return state.accessTier === "subscriber" || isFreeTaxon(dino);
+}
+
+function matchesAccessScope(dino) {
+  return state.accessScope === "all" || isFreeTaxon(dino);
+}
+
+const internalProductionTextPattern =
+  /(count-level|review hold|anatomy review|structure reference|diagnostic only|ComfyUI|Wan2\.2|\bI2V\b|\bM[012]\b|검수|검토(?:합니다|용)|후보|승격|탈락|보류|판정|검증|통과|승인된|크롭|원본 (?:전신|이미지|파일|크기)|안전 프레임|보간 프레임|확인했습니다|프롬프트|워크플로|시드|로라|controlnet|이미지 생성|프로젝트 소유|해부학 (?:대표|증거|자료)|대표 이미지|비교 영상|동작 후보|S\d+\b|슬롯)/i;
+
+function getPublicFacingText(value, fallback = "", sentenceLimit = 2, additionalPattern = null) {
+  const sentences = String(value || "")
+    .split(/(?<=[.!?。])\s+/)
+    .map((sentence) => sentence.trim())
+    .filter(Boolean)
+    .filter(
+      (sentence) =>
+        !internalProductionTextPattern.test(sentence) &&
+        !(additionalPattern instanceof RegExp && additionalPattern.test(sentence)),
+    );
+  return sentences.slice(0, sentenceLimit).join(" ") || fallback;
+}
+
+function getPublicDinoSummary(dino) {
+  const fallback = `${dino.period}의 ${dino.diet} 생물입니다. ${getPrimaryFeatureText(dino, 3)}`;
+  return getPublicFacingText(dino.summary, fallback, 2);
+}
+
+const internalMotionTextPattern =
+  /(머리만 잘라|변형되어|생성형|직접 증거|합성 샘플|사실상 고정|해부학이 고정|안전 구간|같은 프레임|프레임을 되짚|되감기|정지 홀드)/i;
+
+function getPublicMotionSummary(sample) {
+  const commonName = sample.commonName || sample.title || "공룡";
+  const title = String(sample.title || `${commonName}의 움직임`).replace(/[.!?。]+$/, "");
+  const fallback = `${title}. 실제 생물을 촬영한 기록이 아니라 복원 그림에 움직임을 더한 영상입니다.`;
+  return getPublicFacingText(sample.summary || sample.description, fallback, 2, internalMotionTextPattern);
+}
+
+function getPublicMotionLabel(sample) {
+  return getPublicFacingText(
+    sample.motionLabel,
+    sample.title || "공룡의 움직임",
+    1,
+    internalMotionTextPattern,
+  );
+}
+
+const publicGalleryRoleLabels = Object.freeze({
+  representative: "대표 모습",
+  "color-pattern": "색과 무늬",
+  "habitat-ecology": "살던 환경",
+  "identity-anatomy": "몸의 특징",
+  interaction: "함께 살던 생물",
+  "social-growth-defense": "무리와 행동",
+  "alternate-habitat-behavior": "다양한 장면",
+});
+
+function getPublicGalleryFallback(dino, role) {
+  const primaryFeatures = Object.entries(dino.features || {})
+    .slice(0, 2)
+    .map(([key, value]) => `${key}: ${value}`)
+    .join(" · ");
+  const fallbacks = {
+    representative: `${dino.koreanName}의 몸 전체와 대표 특징을 한눈에 볼 수 있는 복원 그림입니다. ${primaryFeatures}`,
+    "color-pattern": "색과 무늬는 화석만으로 모두 알기 어려워, 가능한 모습 가운데 하나로 표현했습니다.",
+    "habitat-ecology": `${dino.koreanName}이 살았던 ${dino.period}의 ${dino.region} 환경을 바탕으로 구성한 장면입니다.`,
+    "identity-anatomy": `${dino.koreanName}을 알아보는 데 중요한 몸의 특징을 가까이 살펴볼 수 있습니다. ${primaryFeatures}`,
+    interaction: "같은 시대와 지역의 생물들이 서로 거리를 두고 살아가는 모습을 상상해 구성했습니다.",
+    "social-growth-defense": "무리 생활과 행동은 화석으로 모두 알 수 없으므로, 가능한 생태 장면 가운데 하나로 표현했습니다.",
+    "alternate-habitat-behavior": `${dino.koreanName}을 다른 거리와 방향에서 살펴볼 수 있는 복원 장면입니다.`,
+  };
+  return fallbacks[role] || `${dino.koreanName}의 모습을 보여 주는 과학 복원 그림입니다.`;
+}
+
+function getPublicGalleryPresentation(dino, item, index = 0) {
+  const fallbackRole = Object.keys(publicGalleryRoleLabels)[index] || "alternate-habitat-behavior";
+  const role = item?.galleryRole || fallbackRole;
+  const label = publicGalleryRoleLabels[role] || "복원 그림";
+  return {
+    userKind: label,
+    userTitle: `${dino.koreanName} · ${label}`,
+    userBody: getPublicFacingText(
+      item?.body,
+      getPublicGalleryFallback(dino, role),
+      2,
+    ),
+  };
+}
+
 function getCandidateKey(item) {
   return item?.source || item?.src || item?.title || "";
 }
@@ -24443,10 +24568,12 @@ function getLightboxItem(item) {
   if (!item?.src) return null;
   return {
     src: item.src,
-    kind: item.kind || "Image Review",
-    title: item.title || item.variant || item.source || "후보 이미지",
-    body: item.body || "",
-    source: item.source || item.src,
+    kind: isAdminMode ? item.kind || "Image Review" : item.userKind || item.kind || "생물 그림",
+    title: isAdminMode
+      ? item.title || item.variant || item.source || "후보 이미지"
+      : item.userTitle || item.title || "확대 이미지",
+    body: isAdminMode ? item.body || "" : item.userBody || getPublicFacingText(item.body, "", 2),
+    source: isAdminMode ? item.source || item.src : "",
   };
 }
 
@@ -24543,6 +24670,7 @@ function renderLightbox() {
   $("#lightboxTitle").textContent = item.title;
   $("#lightboxBody").textContent = item.body;
   $("#lightboxSource").textContent = item.source;
+  $("#lightboxSource").hidden = !item.source;
   $("#lightboxCount").textContent = `${state.lightboxIndex + 1} / ${state.lightboxItems.length}`;
 }
 
@@ -24566,6 +24694,10 @@ function openLightbox(items, index = 0) {
 }
 
 function openDinoGalleryLightbox(dino, selectedImage = getPrimaryImage(dino)) {
+  if (!canAccessTaxon(dino)) {
+    openSubscriptionDialog(dino);
+    return;
+  }
   const galleryItems = getGalleryItems(dino);
   const lightboxItems = getLightboxItems(galleryItems);
   const selectedIndex = lightboxItems.findIndex((item) => item.src === selectedImage?.src);
@@ -24624,6 +24756,7 @@ const ecosystemParticipantRoleLabels = Object.freeze({
   "secondary-subject": "함께 등장",
   "formation-fauna": "같은 지층 동물상",
   "trackmaker-analogue": "발자국 주인 비교 후보",
+  "separate-site sequence-fauna context": "다른 유적에서 알려진 동물",
   "near-field stratigraphic comparison": "근경 층서 비교",
   "distant stratigraphic comparison": "원경 층서 비교",
 });
@@ -24955,7 +25088,7 @@ function renderEcosystemParticipant(participant) {
   const dino = getDinoById(participant.taxonId);
   const displayName = dino?.koreanName || participant.scientificName || participant.taxonId;
   const scientificName = participant.scientificName || dino?.name || "";
-  const role = ecosystemParticipantRoleLabels[participant.role] || participant.role || "등장 동물";
+  const role = ecosystemParticipantRoleLabels[participant.role] || "등장 동물";
   const certainty = getEcosystemParticipantCertaintyLabel(participant.certainty);
   return `
     <li>
@@ -25027,12 +25160,12 @@ function renderEcosystemCard(scene, timeBins) {
             <p class="eyebrow">${escapeHtml(getEraLabel(timeBin?.era))} · ${escapeHtml(timeBin?.label || "세부 시기 검토 중")} · ${escapeHtml(getEcosystemAgeLabel(scene, timeBin))}</p>
             <h4>${escapeHtml(scene.title)}</h4>
           </div>
-          <span class="ecosystem-review-badge ${publicationReady ? "ready" : "pending"}">${publicationReady ? "공개 검수 완료" : "검토용 장면"}</span>
+          ${isAdminMode ? `<span class="ecosystem-review-badge ${publicationReady ? "ready" : "pending"}">${publicationReady ? "공개 검수 완료" : "검토용 장면"}</span>` : ""}
         </div>
         <div class="ecosystem-badge-row">
           <span class="ecosystem-type-badge">${escapeHtml(ecosystemSceneTypeLabels[sceneType])}</span>
-          <span class="ecosystem-composition-badge" title="${escapeHtml(`구도 다양성: ${compositionLabel}`)}">구도 · ${escapeHtml(compositionLabel)}</span>
-          ${diversityTags.map((tag) => `<span class="ecosystem-diversity-tag">${escapeHtml(getEcosystemDiversityTagLabel(tag))}</span>`).join("")}
+          ${isAdminMode ? `<span class="ecosystem-composition-badge" title="${escapeHtml(`구도 다양성: ${compositionLabel}`)}">구도 · ${escapeHtml(compositionLabel)}</span>` : ""}
+          ${isAdminMode ? diversityTags.map((tag) => `<span class="ecosystem-diversity-tag">${escapeHtml(getEcosystemDiversityTagLabel(tag))}</span>`).join("") : ""}
         </div>
         <p class="ecosystem-summary">${escapeHtml(scene.summary || "장면 설명을 준비하고 있습니다.")}</p>
         <dl class="ecosystem-context">
@@ -25059,7 +25192,7 @@ function renderEcosystemCard(scene, timeBins) {
             <ul>${renderEcosystemEpistemicList(displayEpistemic.reconstructed, "복원 가정 범위를 정리하고 있습니다.")}</ul>
           </section>
         </div>
-        <p class="ecosystem-boundary"><strong>근거 경계</strong>${escapeHtml(displayEpistemic.boundary)} <span>근거 ${evidenceCount}건</span></p>
+        <p class="ecosystem-boundary"><strong>아직 모르는 점</strong>${escapeHtml(displayEpistemic.boundary)} ${isAdminMode ? `<span>근거 ${evidenceCount}건</span>` : ""}</p>
       </div>
     </article>
   `;
@@ -25183,10 +25316,10 @@ function renderMotionSampleCard(sample, playbackPreference) {
           </div>
           <span class="motion-review-badge ${published ? "ready" : "pending"}">${escapeHtml(getMotionReviewLabel(sample))}</span>
         </div>
-        <p>${escapeHtml(sample.description)}</p>
+        <p>${escapeHtml(isAdminMode ? sample.description : getPublicMotionSummary(sample))}</p>
         <dl class="motion-sample-facts">
           <div><dt>장면 유형</dt><dd>${escapeHtml(sample.sceneRoleLabel)}</dd></div>
-          <div><dt>움직이는 부분</dt><dd>${escapeHtml(sample.motionLabel)}</dd></div>
+          <div><dt>움직이는 부분</dt><dd>${escapeHtml(isAdminMode ? sample.motionLabel : getPublicMotionLabel(sample))}</dd></div>
           <div><dt>고정 규칙</dt><dd>공룡·알·카메라 고정</dd></div>
         </dl>
         <p class="motion-playback-note" data-motion-status role="status" aria-live="polite" aria-atomic="true">${escapeHtml(playbackNote)}</p>
@@ -25218,7 +25351,11 @@ function syncMotionSamplePlaybackEvents() {
       card.classList.remove("is-playing");
       button.hidden = false;
       button.innerHTML = '<span aria-hidden="true">▶</span> 다시 재생';
-      status.textContent = video.ended ? "재생 완료 · 원본 포스터로 돌아갈 수 있습니다" : "일시 정지됨";
+      status.textContent = video.ended
+        ? isAdminMode
+          ? "재생 완료 · 원본 포스터로 돌아갈 수 있습니다"
+          : "재생 완료 · 처음 화면으로 돌아갈 수 있습니다"
+        : "일시 정지됨";
     };
     video.addEventListener("pause", markPaused);
     video.addEventListener("ended", markPaused);
@@ -25228,7 +25365,7 @@ function syncMotionSamplePlaybackEvents() {
       button.hidden = false;
       button.disabled = true;
       button.textContent = "파일 준비 중";
-      status.textContent = "동영상 파일을 아직 불러올 수 없습니다. 포스터 이미지는 그대로 볼 수 있습니다.";
+      status.textContent = "동영상을 아직 불러올 수 없습니다. 미리보기 그림은 그대로 볼 수 있습니다.";
     });
   });
 }
@@ -25238,6 +25375,12 @@ function renderMotionSamples() {
   const grid = $("#motionSampleGrid");
   const summary = $("#motionSampleSummary");
   if (!lane || !grid || !summary) return;
+  if (!isAdminMode) {
+    lane.hidden = true;
+    grid.innerHTML = "";
+    summary.textContent = "";
+    return;
+  }
   const { samples, isDraftPreview } = getMotionSampleCatalog();
   lane.hidden = samples.length === 0;
   if (!samples.length) {
@@ -25324,7 +25467,7 @@ function renderMotionM1SampleCard(sample, playbackPreference) {
           <span aria-hidden="true">▶</span>
           눌러서 재생
         </button>
-        <span class="motion-tier-badge">M1 · 공룡 미세 움직임</span>
+        <span class="motion-tier-badge">${isAdminMode ? "M1 · 공룡 미세 움직임" : "작은 움직임"}</span>
         <span class="motion-scene-badge">${escapeHtml(sample.sceneRoleLabel)}</span>
       </div>
       <div class="motion-sample-body">
@@ -25333,19 +25476,19 @@ function renderMotionM1SampleCard(sample, playbackPreference) {
             <p class="eyebrow">${escapeHtml(sample.scientificName)}</p>
             <h4>${escapeHtml(sample.title)}</h4>
           </div>
-          <span class="motion-review-badge ${published ? "ready" : "pending"}">${escapeHtml(getMotionM1ReviewLabel(sample))}</span>
+          ${isAdminMode ? `<span class="motion-review-badge ${published ? "ready" : "pending"}">${escapeHtml(getMotionM1ReviewLabel(sample))}</span>` : ""}
         </div>
-        <p>${escapeHtml(sample.description)}</p>
+        <p>${escapeHtml(isAdminMode ? sample.description : getPublicMotionSummary(sample))}</p>
         <dl class="motion-sample-facts">
           <div><dt>장면 유형</dt><dd>${escapeHtml(sample.sceneRoleLabel)}</dd></div>
-          <div><dt>움직이는 부분</dt><dd>${escapeHtml(sample.motionLabel)}</dd></div>
-          <div><dt>고정 규칙</dt><dd>${escapeHtml(sample.lockedParts)}</dd></div>
+          <div><dt>움직이는 부분</dt><dd>${escapeHtml(isAdminMode ? sample.motionLabel : getPublicMotionLabel(sample))}</dd></div>
+          ${isAdminMode ? `<div><dt>고정 규칙</dt><dd>${escapeHtml(sample.lockedParts)}</dd></div>` : ""}
         </dl>
         <p class="motion-playback-note" data-motion-status role="status" aria-live="polite" aria-atomic="true">${escapeHtml(playbackNote)}</p>
-        <div class="motion-sample-footer">
+        ${isAdminMode ? `<div class="motion-sample-footer">
           <span>제어형 2D M1 · 해부학 증거 아님</span>
           <a href="${escapeHtml(sample.src)}" target="_blank" rel="noopener">동영상 파일 열기</a>
-        </div>
+        </div>` : ""}
       </div>
     </article>
   `;
@@ -25400,7 +25543,9 @@ function renderMotionM1Samples() {
   const playbackPreference = getMotionPlaybackPreference();
   summary.textContent = isDraftPreview
     ? `로컬 M1 초안 ${samples.length}개 · 해부학과 움직임을 분리해 검토하는 미리보기입니다.`
-    : `검수 완료 M1 샘플 ${samples.length}개 · 모두 클릭할 때만 재생됩니다.`;
+    : isAdminMode
+      ? `검수 완료 M1 샘플 ${samples.length}개 · 모두 클릭할 때만 재생됩니다.`
+      : `작은 움직임 ${samples.length}개 · 보고 싶은 영상을 직접 눌러 재생하세요.`;
   grid.innerHTML = samples.map((sample) => renderMotionM1SampleCard(sample, playbackPreference)).join("");
   syncMotionM1SamplePlaybackEvents(grid);
 }
@@ -25570,7 +25715,11 @@ function renderMotionM2SampleCard(sample, playbackPreference, isDraftPreview) {
   const conservativeLoading = playbackPreference.reducedMotion || playbackPreference.saveData;
   const isI2V = sample.motionClass === "generative-i2v";
   const published = isMotionM2Published(sample) && !isDraftPreview;
-  const tierLabel = isI2V ? "M2 · 생성형 I2V" : "M2 · 큰 부분 움직임";
+  const tierLabel = isAdminMode
+    ? isI2V
+      ? "M2 · 생성형 I2V"
+      : "M2 · 큰 부분 움직임"
+    : "큰 움직임";
   const localReviewLabel = isI2V ? "새 I2V 비교 후보" : "기존 제어형 M2 보류";
   const durationLabel = Number(sample.durationSeconds).toFixed(1);
   const playbackNote = playbackPreference.saveData
@@ -25607,22 +25756,22 @@ function renderMotionM2SampleCard(sample, playbackPreference, isDraftPreview) {
             <p class="eyebrow">${escapeHtml(sample.taxon)}</p>
             <h4>${escapeHtml(sample.title)}</h4>
           </div>
-          <span class="motion-review-badge ${published ? "ready" : "pending"}">${published ? "M2 공개 검수 완료" : escapeHtml(localReviewLabel)}</span>
+          ${isAdminMode ? `<span class="motion-review-badge ${published ? "ready" : "pending"}">${published ? "M2 공개 검수 완료" : escapeHtml(localReviewLabel)}</span>` : ""}
         </div>
-        <p>${escapeHtml(sample.summary)}</p>
+        <p>${escapeHtml(isAdminMode ? sample.summary : getPublicMotionSummary(sample))}</p>
         <dl class="motion-sample-facts">
           <div><dt>공룡</dt><dd>${escapeHtml(sample.commonName)}</dd></div>
           <div><dt>장면 유형</dt><dd>${escapeHtml(sample.sceneRoleLabel)}</dd></div>
-          <div><dt>제작 방식</dt><dd>${escapeHtml(sample.pipelineLabel)}</dd></div>
-          <div><dt>움직임</dt><dd>${escapeHtml(sample.motionLabel)}</dd></div>
-          <div><dt>영상 사양</dt><dd>${escapeHtml(dimensions)}</dd></div>
-          <div><dt>근거 경계</dt><dd>${escapeHtml(sample.evidenceBoundary)}</dd></div>
+          ${isAdminMode ? `<div><dt>제작 방식</dt><dd>${escapeHtml(sample.pipelineLabel)}</dd></div>` : ""}
+          <div><dt>움직임</dt><dd>${escapeHtml(isAdminMode ? sample.motionLabel : getPublicMotionLabel(sample))}</dd></div>
+          ${isAdminMode ? `<div><dt>영상 사양</dt><dd>${escapeHtml(dimensions)}</dd></div>` : ""}
+          ${isAdminMode ? `<div><dt>근거 경계</dt><dd>${escapeHtml(sample.evidenceBoundary)}</dd></div>` : ""}
         </dl>
         <p class="motion-playback-note" data-motion-status role="status" aria-live="polite" aria-atomic="true">${escapeHtml(playbackNote)}</p>
-        <div class="motion-sample-footer">
+        ${isAdminMode ? `<div class="motion-sample-footer">
           <span>${isI2V ? "M2 I2V" : "M2"} · 해부학 증거 아님 · ${escapeHtml(getMotionM2CreditLabel(sample.credits))}</span>
           <a href="${escapeHtml(sample.videoPath)}" target="_blank" rel="noopener">동영상 파일 열기</a>
-        </div>
+        </div>` : ""}
       </div>
     </article>
   `;
@@ -25647,7 +25796,11 @@ function syncMotionM2SamplePlaybackEvents(grid) {
       card.classList.remove("is-playing");
       button.hidden = false;
       button.innerHTML = '<span aria-hidden="true">▶</span> 다시 재생';
-      status.textContent = video.ended ? "재생 완료 · 원본 포스터로 돌아갈 수 있습니다" : "일시 정지됨";
+      status.textContent = video.ended
+        ? isAdminMode
+          ? "재생 완료 · 원본 포스터로 돌아갈 수 있습니다"
+          : "재생 완료 · 처음 화면으로 돌아갈 수 있습니다"
+        : "일시 정지됨";
     };
     video.addEventListener("pause", markPaused);
     video.addEventListener("ended", markPaused);
@@ -25657,7 +25810,7 @@ function syncMotionM2SamplePlaybackEvents(grid) {
       button.hidden = false;
       button.disabled = true;
       button.textContent = "파일 준비 중";
-      status.textContent = "동영상 파일을 아직 불러올 수 없습니다. 포스터 이미지는 그대로 볼 수 있습니다.";
+      status.textContent = "동영상을 아직 불러올 수 없습니다. 미리보기 그림은 그대로 볼 수 있습니다.";
     });
   });
 }
@@ -25683,7 +25836,9 @@ function renderMotionM2Samples() {
       ? `로컬 M2 비교 · 기존 제어형 ${controlledCount}개 + 새 I2V 후보 ${i2vCount}개 · 직접 눌러 비교합니다.`
       : previewMode === "m2"
         ? `로컬 제어형 M2 ${controlledCount}개 · 보류된 기존 후보만 확인합니다.`
-        : `검수 완료 M2 샘플 ${samples.length}개 · ${sceneRoleSummary} · 모두 직접 눌렀을 때만 재생됩니다.`;
+        : isAdminMode
+          ? `검수 완료 M2 샘플 ${samples.length}개 · ${sceneRoleSummary} · 모두 직접 눌렀을 때만 재생됩니다.`
+          : `큰 움직임 ${samples.length}개 · ${sceneRoleSummary} · 보고 싶은 영상을 직접 눌러 재생하세요.`;
   grid.innerHTML = samples
     .map((sample) => renderMotionM2SampleCard(sample, playbackPreference, isDraftPreview))
     .join("");
@@ -25720,13 +25875,18 @@ async function toggleMotionSample(button) {
 
 function getGalleryItems(dino) {
   const bySlot = new Map(getSlottedGalleryImages(dino).map((item) => [item.gallerySlot, item]));
-  return Array.from({ length: dino.imageSlots }, (_, index) => {
+  const items = Array.from({ length: dino.imageSlots }, (_, index) => {
     const gallerySlot = index + 1;
     const assigned = bySlot.get(gallerySlot);
-    if (assigned) return assigned;
+    if (assigned) {
+      return {
+        ...assigned,
+        ...getPublicGalleryPresentation(dino, assigned, index),
+      };
+    }
     const role = Object.keys(gallerySlotRoleLabels)[index] || "alternate-habitat-behavior";
     const roleLabel = gallerySlotRoleLabels[role];
-    return {
+    const pending = {
       gallerySlot,
       galleryRole: role,
       kind: "생성 예정",
@@ -25735,7 +25895,12 @@ function getGalleryItems(dino) {
       source: "Gallery slot generation plan",
       variant: "pending-slot",
     };
+    return {
+      ...pending,
+      ...getPublicGalleryPresentation(dino, pending, index),
+    };
   });
+  return isAdminMode ? items : items.filter((item) => item.src);
 }
 
 function matchesClassification(dino, classification = state.classification) {
@@ -25804,13 +25969,16 @@ function getFilteredDinosaurs() {
   );
 }
 
-function getRealmDinosaurs(realm = state.atlasRealm) {
-  return dinosaurs.filter((dino) => getAtlasRealm(dino) === realm);
+function getRealmDinosaurs(realm = state.atlasRealm, { respectAccessScope = true } = {}) {
+  return dinosaurs.filter(
+    (dino) =>
+      getAtlasRealm(dino) === realm && (!respectAccessScope || matchesAccessScope(dino)),
+  );
 }
 
 function getRealmEmptyStateCopy(filteredNote) {
   const realm = getActiveRealmConfig();
-  if (!getRealmDinosaurs().length && realm.emptyTitle) {
+  if (!getRealmDinosaurs(undefined, { respectAccessScope: false }).length && realm.emptyTitle) {
     return {
       title: realm.emptyTitle,
       note: realm.emptyNote || `${realm.label} 대표 생물을 검토한 뒤 공개합니다.`,
@@ -25873,6 +26041,109 @@ function getSelectedDino() {
 
 function getTaxonomyPath(dino) {
   return [dino.rootClade || "Dinosauria", dino.clade, dino.family].filter(Boolean).join(" / ");
+}
+
+let subscriptionReturnFocus = null;
+
+function renderAccessControls() {
+  if (isAdminMode) return;
+  const freeCount = dinosaurs.filter(isFreeTaxon).length;
+  const fullCount = dinosaurs.length;
+  const subscriber = state.accessTier === "subscriber";
+  document.body.dataset.accessTier = state.accessTier;
+  document.body.dataset.accessScope = state.accessScope;
+
+  $$('[data-access-scope]').forEach((button) => {
+    const active = button.dataset.accessScope === state.accessScope;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
+  $$('[data-access-count="free"]').forEach((element) => {
+    element.textContent = freeCount;
+  });
+  $$('[data-access-count="all"]').forEach((element) => {
+    element.textContent = fullCount;
+  });
+
+  const productModeLabel = $("#productModeLabel");
+  const tierBadge = $("#accessTierBadge");
+  const tierNote = $("#accessTierNote");
+  const tierButton = $(".access-tier-button");
+  if (productModeLabel) {
+    productModeLabel.textContent = subscriber
+      ? "구독 전체판"
+      : state.accessScope === "all"
+        ? "전체 도감 미리보기"
+        : "무료 탐험판";
+  }
+  if (tierBadge) tierBadge.textContent = subscriber ? "전체 도감 이용 중" : "무료 탐험";
+  if (tierNote) {
+    tierNote.textContent = subscriber
+      ? `${fullCount}종 모두 열림`
+      : state.accessScope === "all"
+        ? `${freeCount}종 열림 · ${fullCount - freeCount}종 잠김`
+        : `${freeCount}종 공개`;
+  }
+  if (tierButton) {
+    tierButton.disabled = subscriber;
+    tierButton.setAttribute(
+      "aria-label",
+      subscriber ? `전체 도감 ${fullCount}종 이용 중` : "전체 도감 구독 안내 열기",
+    );
+  }
+}
+
+function setAccessScope(scope) {
+  const nextScope = scope === "all" ? "all" : "free";
+  if (state.accessScope === nextScope) return;
+  state.accessScope = nextScope;
+  const available = getFilteredDinosaurs();
+  if (!available.some((dino) => dino.id === state.selectedId)) {
+    state.selectedId = available[0]?.id || getRealmDinosaurs()[0]?.id || state.selectedId;
+    state.galleryIndex = 0;
+  }
+  renderAll();
+  refitAtlasAfterFilter();
+}
+
+function openSubscriptionDialog(dino = null) {
+  if (state.accessTier === "subscriber") return;
+  const dialog = $("#subscriptionDialog");
+  if (!dialog) return;
+  subscriptionReturnFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+  const body = $("#subscriptionBody");
+  if (body) {
+    body.textContent = dino
+      ? `${dino.koreanName}의 전체 정보와 갤러리는 구독 도감에서 열립니다. 무료 탐험에서는 친숙한 대표 생물 ${freeTaxonIds.size}종을 볼 수 있어요.`
+      : `무료 탐험에서는 친숙한 대표 생물 ${freeTaxonIds.size}종을 볼 수 있어요. 구독이 연결되면 전체 ${dinosaurs.length}종과 모든 갤러리가 열립니다.`;
+  }
+  dialog.hidden = false;
+  dialog.classList.add("active");
+  dialog.setAttribute("aria-hidden", "false");
+  document.body.classList.add("subscription-open");
+  const shell = $(".app-shell");
+  if (shell) {
+    shell.inert = true;
+    shell.setAttribute("aria-hidden", "true");
+  }
+  requestAnimationFrame(() => dialog.querySelector(".subscription-panel")?.focus());
+}
+
+function closeSubscriptionDialog() {
+  const dialog = $("#subscriptionDialog");
+  if (!dialog || dialog.hidden) return;
+  dialog.classList.remove("active");
+  dialog.hidden = true;
+  dialog.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("subscription-open");
+  const shell = $(".app-shell");
+  if (shell) {
+    shell.inert = false;
+    shell.removeAttribute("aria-hidden");
+  }
+  const returnFocus = subscriptionReturnFocus;
+  subscriptionReturnFocus = null;
+  if (returnFocus?.isConnected) requestAnimationFrame(() => returnFocus.focus());
 }
 
 function renderMetrics() {
@@ -26389,15 +26660,17 @@ function renderTimelineBrowse() {
         .map((dino) => {
           const level = getKnowledgeLevel(dino.knowledgeLevel);
           const active = dino.id === state.selectedId;
+          const locked = !canAccessTaxon(dino);
           return `
             <button
-              class="timeline-card ${active ? "active" : ""}"
+              class="timeline-card ${active ? "active" : ""} ${locked ? "is-locked" : ""}"
               data-timeline-id="${escapeHtml(dino.id)}"
               type="button"
               aria-pressed="${String(active)}"
-              aria-label="${escapeHtml(`${dino.koreanName} · ${dino.period}`)}"
+              aria-label="${escapeHtml(`${dino.koreanName} · ${dino.period}${locked ? " · 구독 필요" : ""}`)}"
               style="${getDinoPaletteStyle(dino)}"
             >
+              ${locked ? '<span class="access-lock-badge">구독</span>' : ""}
               <span class="timeline-card-kind">${escapeHtml(dino.clade)}</span>
               <strong>${escapeHtml(dino.koreanName)}</strong>
               <span class="timeline-card-name">${escapeHtml(dino.name)}</span>
@@ -27178,6 +27451,7 @@ function renderMapNodes() {
       const isTaxon = node.type === "taxon";
       const dino = isTaxon ? getDinoById(node.speciesId) : null;
       const level = isTaxon ? getKnowledgeLevel(dino.knowledgeLevel) : null;
+      const locked = isTaxon && !canAccessTaxon(dino);
       const hidden =
         node.hiddenByLayout || (isTaxon && !filteredIds.has(node.speciesId));
       const active = isTaxon && state.selectedId === node.speciesId;
@@ -27193,12 +27467,14 @@ function renderMapNodes() {
         groupActive ? "active" : "",
         focusMatched ? "focus-matched" : "",
         focusDimmed ? "focus-dimmed" : "",
+        locked ? "is-locked" : "",
       ]
         .filter(Boolean)
         .join(" ");
       const content = isTaxon
         ? `
           <span class="node-kind">${dino.period}</span>
+          ${locked ? '<span class="access-lock-badge">구독</span>' : ""}
           <strong>${dino.koreanName}</strong>
           <div class="node-meta">
             <span>${dino.name} / ${dino.family}</span>
@@ -27454,7 +27730,8 @@ function applyMapUiState() {
   sidebarButton.setAttribute("aria-expanded", String(state.map.sidebarExpanded));
   sidebarButton.setAttribute("aria-label", sidebarAction);
   sidebarButton.title = sidebarAction;
-  inspectorButton.setAttribute("aria-pressed", String(state.map.inspectorCollapsed));
+  inspectorButton.setAttribute("aria-pressed", String(!state.map.inspectorCollapsed));
+  inspectorButton.setAttribute("aria-expanded", String(!state.map.inspectorCollapsed));
   inspectorButton.setAttribute("aria-label", `${selectedName} ${inspectorAction}`);
   inspectorButton.title = `${selectedName} ${inspectorAction}`;
   expandButton.setAttribute("aria-pressed", String(state.map.expanded));
@@ -27856,7 +28133,7 @@ function setAtlasSidebarExpanded(expanded) {
 function syncResponsiveMapInspector() {
   const panel = $("#atlasView .map-panel");
   if (!panel || state.map.expanded || state.map.inspectorUserSet) return;
-  const shouldCollapse = true;
+  const shouldCollapse = window.matchMedia("(max-width: 1100px)").matches;
   if (state.map.inspectorCollapsed === shouldCollapse) return;
   state.map.inspectorCollapsed = shouldCollapse;
   applyMapUiState();
@@ -27938,28 +28215,46 @@ function renderDetail() {
   }
   const dino = getSelectedDino();
   state.selectedId = dino.id;
+  if (!isAdminMode && !canAccessTaxon(dino)) {
+    const previewImage = getPrimaryImage(dino);
+    $("#detailPanel").innerHTML = `
+      <section class="locked-detail" style="${getDinoPaletteStyle(dino)}">
+        <div class="locked-detail-image ${previewImage?.src ? "has-real-image" : ""}"${imageStyle(previewImage)} aria-hidden="true"></div>
+        <span class="access-lock-icon" aria-hidden="true">★</span>
+        <p class="eyebrow">전체 도감</p>
+        <h3>${escapeHtml(dino.koreanName)}</h3>
+        <p class="summary">${escapeHtml(dino.name)} · ${escapeHtml(dino.period)}</p>
+        <p>이 생물의 자세한 정보와 갤러리는 구독 도감에서 볼 수 있어요.</p>
+        <button class="primary-action" data-subscription-action="open" type="button">구독 안내 보기</button>
+      </section>
+    `;
+    return;
+  }
   const level = getKnowledgeLevel(dino.knowledgeLevel);
   const galleryItems = getGalleryItems(dino);
-  state.galleryIndex = Math.min(state.galleryIndex, galleryItems.length - 1);
+  state.galleryIndex = Math.max(0, Math.min(state.galleryIndex, galleryItems.length - 1));
   const featureRows = Object.entries(dino.features)
+    .slice(0, isAdminMode ? undefined : 4)
     .map(([key, value]) => `<div class="feature-row"><span>${key}</span><strong>${value}</strong></div>`)
     .join("");
-  const visualProfilePanel = renderVisualVariationSummary(getVisualVariationProfile(dino), dino);
+  const visualProfilePanel = isAdminMode
+    ? renderVisualVariationSummary(getVisualVariationProfile(dino), dino)
+    : "";
   const primaryImage = getPrimaryImage(dino);
   const slides = galleryItems
     .map(
       (item, index) => `
-        <article class="gallery-slide" aria-label="${item.title}">
+        <article class="gallery-slide" aria-label="${isAdminMode ? item.title : item.userTitle}">
           <button class="gallery-image ${item.variant} ${item.src ? "has-real-image can-zoom" : ""}" data-lightbox-context="gallery" data-gallery-index="${index}" type="button"${imageStyle(item)} ${item.src ? "" : "disabled"}>
-            <span class="image-label">${item.kind}</span>
+            <span class="image-label">${isAdminMode ? item.kind : item.userKind}</span>
           </button>
           <div class="gallery-copy">
             <div>
-              <p class="eyebrow">${item.kind}</p>
-              <h4>${item.title}</h4>
+              <p class="eyebrow">${isAdminMode ? item.kind : item.userKind}</p>
+              <h4>${isAdminMode ? item.title : item.userTitle}</h4>
             </div>
-            <p>${item.body}</p>
-            <span class="source-note">${item.source}</span>
+            <p>${isAdminMode ? item.body : item.userBody}</p>
+            ${isAdminMode ? `<span class="source-note">${item.source}</span>` : ""}
           </div>
         </article>
       `,
@@ -27976,7 +28271,7 @@ function renderDetail() {
   $("#detailPanel").innerHTML = `
     <div class="inspector-header">
       <button class="dummy-image ${primaryImage ? "has-real-image can-zoom" : ""}" data-lightbox-context="primary" type="button" aria-label="${getActiveRealmConfig().label} 생물 이미지 미리보기"${imageStyle(primaryImage)} ${primaryImage ? "" : "disabled"}>
-        <span class="image-label">${galleryItems.length} views</span>
+        <span class="image-label">${galleryItems.length}장</span>
       </button>
       <div class="inspector-title">
         <p class="eyebrow">${dino.clade} / ${dino.family}</p>
@@ -27984,7 +28279,7 @@ function renderDetail() {
         <p class="summary">${dino.name}</p>
       </div>
     </div>
-    <section class="image-gallery" aria-label="Image comparison gallery">
+    <section class="image-gallery" aria-label="생물 그림 모음">
       <div class="gallery-topline">
         <span>${state.galleryIndex + 1} / ${galleryItems.length}</span>
         <div class="gallery-buttons">
@@ -28006,11 +28301,11 @@ function renderDetail() {
       <span class="pill">${dino.diet}</span>
       <span class="pill">${dino.region}</span>
     </div>
-    <p class="summary">${dino.summary}</p>
+    <p class="summary">${isAdminMode ? dino.summary : getPublicDinoSummary(dino)}</p>
     <div class="fact-grid">
       <div class="fact"><span>분류 경로</span><strong>${getTaxonomyPath(dino)}</strong></div>
       <div class="fact"><span>${dino.sizeLabel || "예상 길이"}</span><strong>${dino.sizeDisplay || `${dino.length.toFixed(1)} m`}</strong></div>
-      <div class="fact"><span>출처 메모</span><strong>${dino.sources.join(", ")}</strong></div>
+      ${isAdminMode ? `<div class="fact"><span>출처 메모</span><strong>${dino.sources.join(", ")}</strong></div>` : `<div class="fact"><span>발견 지역</span><strong>${dino.region}</strong></div>`}
       <div class="fact"><span>친숙도 안내</span><strong>${level.description}</strong></div>
     </div>
     <div class="feature-list">${featureRows}</div>
@@ -28131,10 +28426,12 @@ function renderCatalog() {
         const primaryImage = getPrimaryImage(dino);
         const focusMatched = focusSpeciesIds.has(dino.id);
         const focusDimmed = focusSpeciesIds.size > 0 && !focusMatched;
+        const locked = !canAccessTaxon(dino);
         return `
-        <article class="dino-card ${focusMatched ? "focus-matched" : ""} ${focusDimmed ? "focus-dimmed" : ""}" data-id="${dino.id}" tabindex="0" style="${getDinoPaletteStyle(dino)}">
+        <article class="dino-card ${focusMatched ? "focus-matched" : ""} ${focusDimmed ? "focus-dimmed" : ""} ${locked ? "is-locked" : ""}" data-id="${dino.id}" data-access="${locked ? "locked" : "open"}" tabindex="0" style="${getDinoPaletteStyle(dino)}" aria-label="${escapeHtml(`${dino.koreanName}${locked ? " · 구독 필요" : ""}`)}">
           <div class="dummy-image ${primaryImage ? "has-real-image can-zoom" : ""}" data-card-image-zoom="${dino.id}" role="button" tabindex="0"${imageStyle(primaryImage)}>
             <span class="image-label">${dino.name}</span>
+            ${locked ? '<span class="catalog-lock-overlay"><span aria-hidden="true">★</span> 구독으로 열기</span>' : ""}
           </div>
           <div class="card-body">
             <div>
@@ -28147,7 +28444,7 @@ function renderCatalog() {
               <span class="pill">${dino.period}</span>
               <span class="pill">${dino.diet}</span>
             </div>
-            <p>${dino.summary}</p>
+            <p>${locked ? "구독하면 자세한 정보와 모든 갤러리를 볼 수 있어요." : getPublicDinoSummary(dino)}</p>
           </div>
         </article>
       `;
@@ -28161,6 +28458,10 @@ function renderCatalog() {
       const openImage = (event) => {
         event.stopPropagation();
         const dino = getDinoById(card.dataset.id);
+        if (dino && !canAccessTaxon(dino)) {
+          openSubscriptionDialog(dino);
+          return;
+        }
         const primaryImage = dino ? getPrimaryImage(dino) : null;
         if (dino && primaryImage?.src) openDinoGalleryLightbox(dino, primaryImage);
       };
@@ -32445,7 +32746,15 @@ function bindReviewEvents(selectedDino) {
         clearManualCandidateSelection(selectedDino);
       }
       if (action === "atlas") {
-        if (selectDinoForAtlas(selectedDino.id)) setView("atlas");
+        if (isAdminMode) {
+          window.open(
+            `./?admin=1&tier=subscriber&taxon=${encodeURIComponent(selectedDino.id)}#atlas`,
+            "_blank",
+            "noopener",
+          );
+        } else if (selectDinoForAtlas(selectedDino.id)) {
+          setView("atlas");
+        }
       }
       if (action === "copy" && source) {
         copyToClipboard(source);
@@ -32742,6 +33051,36 @@ function fitInitialAtlasFrame(attempt = 0) {
 }
 
 function setView(view, { historyMode = "replace" } = {}) {
+  const allowedViews = getAllowedViews();
+  const fallbackView = isAdminMode ? "review" : "atlas";
+  const nextView = allowedViews.has(view) ? view : fallbackView;
+  if (isAdminMode) {
+    if (nextView === "assetReview") {
+      const frame = $("#assetReviewFrame");
+      if (frame && isLocalAppHost) {
+        frame.removeAttribute("srcdoc");
+        frame.src = `http://127.0.0.1:8792/?atlasAudit=${Date.now()}`;
+      } else if (frame) {
+        frame.src = "about:blank";
+        frame.srcdoc = `<!doctype html><meta charset="utf-8"><style>body{margin:0;background:#0b1118;color:#dce8ef;font:14px/1.6 system-ui,sans-serif}main{display:grid;min-height:100vh;place-content:center;padding:24px;text-align:center}strong{font-size:18px}p{max-width:42ch;color:#91a3af}</style><main><strong>로컬 이미지 검수 전용 화면</strong><p>이 워크벤치는 Dino Atlas를 로컬에서 실행하고 8792 검수 서버를 켰을 때만 연결됩니다.</p></main>`;
+      }
+      state.assetReviewFrameLoaded = true;
+    }
+    state.view = nextView;
+    document.body.dataset.activeView = nextView;
+    $$(".nav-tab").forEach((tab) => tab.classList.toggle("active", tab.dataset.view === nextView));
+    $$(".view").forEach((panel) => panel.classList.remove("active"));
+    $(`#${nextView}View`)?.classList.add("active");
+    if (window.location.hash !== `#${nextView}`) {
+      if (historyMode === "push") history.pushState(null, "", `#${nextView}`);
+      else history.replaceState(null, "", `#${nextView}`);
+    }
+    const title = $("#viewTitle");
+    if (title) title.textContent = nextView === "assetReview" ? "이미지 검수 워크벤치" : "이미지 검수 화면";
+    if (nextView === "review") renderReview();
+    return;
+  }
+  view = nextView;
   if (view !== "motion") {
     $$('[data-motion-video]').forEach((video) => {
       if (!video.paused) video.pause();
@@ -32814,6 +33153,11 @@ function setView(view, { historyMode = "replace" } = {}) {
 }
 
 function renderAll() {
+  if (isAdminMode) {
+    if (state.view === "review") renderReview();
+    return;
+  }
+  renderAccessControls();
   syncAtlasRealmPresentation();
   renderClassificationTabs();
   renderMetrics();
@@ -32830,7 +33174,6 @@ function renderAll() {
   renderMotionSamples();
   renderMotionM1Samples();
   renderMotionM2Samples();
-  renderReview();
 }
 
 function refitAtlasAfterFilter() {
@@ -33185,6 +33528,21 @@ function selectDinoForAtlas(dinoId) {
 }
 
 function bindEvents() {
+  if (isAdminMode) {
+    $$(".nav-tab").forEach((tab) => {
+      tab.addEventListener("click", () => setView(tab.dataset.view, { historyMode: "push" }));
+    });
+    window.addEventListener("hashchange", () => {
+      const nextView = window.location.hash.replace("#", "");
+      if (!adminViews.has(nextView)) {
+        history.replaceState(null, "", `#${state.view}`);
+      } else if (nextView !== state.view) {
+        setView(nextView);
+      }
+    });
+    bindLightboxEvents();
+    return;
+  }
   $$(".nav-tab").forEach((tab) => {
     tab.addEventListener("click", () => setView(tab.dataset.view, { historyMode: "push" }));
   });
@@ -33195,11 +33553,51 @@ function bindEvents() {
 
   window.addEventListener("hashchange", () => {
     const nextView = window.location.hash.replace("#", "");
-    if (
-      ["atlas", "catalog", "motion", "ecosystems", "review", "assetReview"].includes(nextView) &&
-      nextView !== state.view
-    ) {
+    if (!publicViews.has(nextView)) {
+      history.replaceState(null, "", `#${state.view}`);
+    } else if (nextView !== state.view) {
       setView(nextView);
+    }
+  });
+
+  $$('[data-access-scope]').forEach((button) => {
+    button.addEventListener("click", () => setAccessScope(button.dataset.accessScope));
+  });
+
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-subscription-action]");
+    if (!button) return;
+    const action = button.dataset.subscriptionAction;
+    if (action === "open") openSubscriptionDialog();
+    if (action === "close") closeSubscriptionDialog();
+    if (action === "free") {
+      setAccessScope("free");
+      closeSubscriptionDialog();
+      if (state.view !== "catalog") setView("catalog", { historyMode: "push" });
+    }
+  });
+  window.addEventListener("keydown", (event) => {
+    const subscriptionDialog = $("#subscriptionDialog");
+    if (subscriptionDialog?.hidden) return;
+    if (event.key === "Escape") {
+      event.preventDefault();
+      closeSubscriptionDialog();
+      return;
+    }
+    if (event.key === "Tab") {
+      const focusable = $$(".subscription-panel button:not([disabled])").filter(
+        (element) => element.getClientRects().length > 0,
+      );
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && (document.activeElement === first || document.activeElement === subscriptionDialog.querySelector(".subscription-panel"))) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
     }
   });
 
@@ -33330,10 +33728,17 @@ function bindEvents() {
 }
 
 const initialView = window.location.hash.replace("#", "");
-if (["atlas", "catalog", "motion", "ecosystems", "review", "assetReview"].includes(initialView)) {
+if (getAllowedViews().has(initialView)) {
   state.view = initialView;
+}
+const initialTaxonId = appLocationParams.get("taxon");
+const initialTaxon = !isAdminMode && initialTaxonId ? getDinoById(initialTaxonId) : null;
+if (initialTaxon && matchesAccessScope(initialTaxon)) {
+  state.selectedId = initialTaxon.id;
+  state.atlasRealm = getAtlasRealm(initialTaxon);
+  state.map.scope = initialTaxon.era || "all";
 }
 
 bindEvents();
 setView(state.view);
-applyMapUiState();
+if (!isAdminMode) applyMapUiState();

@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dino Atlas MVP</title>
+    <title>Dino Atlas · 생명 탐험 지도</title>
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="./styles.css?v=20260810-famous-paleo-ceno-v1" />
+    <link rel="stylesheet" href="./styles.css?v=20260810-access-surface-v1" />
   </head>
-  <body data-active-view="atlas" data-atlas-realm="mesozoic">
+  <body data-app-mode="public" data-access-tier="free" data-access-scope="free" data-active-view="atlas" data-atlas-realm="mesozoic">
     <div class="app-shell">
-      <aside class="sidebar" id="primarySidebar" aria-label="Primary">
+      <aside class="sidebar" id="primarySidebar" aria-label="주요 탐색">
         <div class="brand">
           <div class="brand-mark">DA</div>
           <div class="brand-copy">
-            <p class="eyebrow">MVP</p>
+            <p class="eyebrow">생명 탐험 지도</p>
             <h1>Dino Atlas</h1>
           </div>
           <button
@@ -27,7 +27,7 @@
           </button>
         </div>
 
-        <nav class="nav-tabs" aria-label="Views">
+        <nav class="nav-tabs" aria-label="화면 이동">
           <button class="nav-tab active" data-view="atlas" type="button">
             <span>계통도</span>
           </button>
@@ -39,12 +39,6 @@
           </button>
           <button class="nav-tab" data-view="ecosystems" type="button">
             <span>생태</span>
-          </button>
-          <button class="nav-tab" data-view="review" type="button">
-            <span>검수</span>
-          </button>
-          <button class="nav-tab" data-view="assetReview" type="button">
-            <span>이미지 검수</span>
           </button>
         </nav>
 
@@ -96,10 +90,15 @@
       <main class="main">
         <header class="topbar">
           <div>
-            <p class="eyebrow">Dark Mode Prototype</p>
+            <p class="eyebrow" id="productModeLabel">무료 탐험판</p>
             <h2 id="viewTitle">중생대 생물 계통 지도</h2>
           </div>
-          <div class="metric-row">
+          <div class="topbar-actions">
+            <button class="access-tier-button" data-subscription-action="open" type="button">
+              <span id="accessTierBadge">무료 탐험</span>
+              <small id="accessTierNote">30종 공개</small>
+            </button>
+            <div class="metric-row">
             <div class="metric">
               <strong id="metricSpecies">0</strong>
               <span>종</span>
@@ -114,7 +113,8 @@
             </div>
             <div class="metric">
               <strong id="metricImages">0</strong>
-              <span>이미지 슬롯</span>
+              <span>그림</span>
+            </div>
             </div>
           </div>
         </header>
@@ -137,6 +137,10 @@
                 <div class="map-mode-controls" id="mapModeControls" role="group" aria-label="계통도 표시 방식">
                   <button class="active" data-map-mode="timeline" type="button" aria-pressed="true">시대별 찾기</button>
                   <button data-map-mode="tree" type="button" aria-pressed="false">전체 계통</button>
+                </div>
+                <div class="access-scope-controls compact" data-access-scope-controls role="group" aria-label="도감 이용 범위">
+                  <button class="active" data-access-scope="free" type="button" aria-pressed="true">무료 <strong data-access-count="free">30</strong></button>
+                  <button data-access-scope="all" type="button" aria-pressed="false">전체 <strong data-access-count="all">155</strong></button>
                 </div>
               </div>
               <label class="map-quick-search">
@@ -243,7 +247,7 @@
                 <button id="zoomIn" class="icon-button" type="button" title="확대" aria-label="확대"><span class="button-icon icon-plus" aria-hidden="true"></span></button>
                 <button id="focusMapSelection" class="icon-button" type="button" title="선택 생물로 이동" aria-label="선택 생물로 이동"><span class="button-icon icon-target" aria-hidden="true"></span></button>
                 <button id="resetMap" class="icon-button" type="button" title="전체 지도 기본 위치" aria-label="전체 지도 기본 위치"><span class="button-icon icon-reset" aria-hidden="true"></span></button>
-                <button id="toggleMapInspector" class="icon-button" type="button" title="정보 패널 접기" aria-label="정보 패널 접기" aria-pressed="false"><span class="button-icon icon-panel" aria-hidden="true"></span></button>
+                <button id="toggleMapInspector" class="icon-button" type="button" title="정보 패널 접기" aria-label="정보 패널 접기" aria-controls="detailPanel" aria-expanded="true"><span class="button-icon icon-panel" aria-hidden="true"></span></button>
                 <button id="toggleMapExpand" class="icon-button map-control-with-label" type="button" title="지도 확장" aria-label="지도 확장" aria-pressed="false"><span class="button-icon icon-expand" aria-hidden="true"></span><span class="map-control-label">전체 화면</span></button>
               </div>
             </div>
@@ -293,14 +297,18 @@
           </section>
         </section>
 
-        <section class="view" id="catalogView" aria-label="Catalog view">
+        <section class="view" id="catalogView" aria-label="생물 도감">
           <div class="catalog-toolbar">
             <div>
-              <p class="eyebrow">Cards</p>
+              <p class="eyebrow">생물 카드</p>
               <h3 id="catalogRealmHeading">중생대 생물 도감</h3>
               <p class="catalog-scope-note" id="catalogRealmNote">공룡·익룡·바다 파충류와 초기 조류·단궁류·고대 두족류를 분류별로 나누어 봅니다.</p>
             </div>
             <div class="catalog-toolbar-actions">
+              <div class="access-scope-controls" data-access-scope-controls role="group" aria-label="도감 이용 범위">
+                <button class="active" data-access-scope="free" type="button" aria-pressed="true">무료 공개 <strong data-access-count="free">30</strong></button>
+                <button data-access-scope="all" type="button" aria-pressed="false">전체 도감 <strong data-access-count="all">155</strong></button>
+              </div>
               <div class="atlas-realm-controls catalog-realm-controls" data-atlas-realm-controls role="group" aria-label="도감 지질시대">
                 <button data-atlas-realm="paleozoic" type="button" aria-pressed="false">
                   <span>고생대</span><small>캄브리아기·데본기·페름기</small>
@@ -373,7 +381,7 @@
           <section class="ecosystem-shell">
             <header class="ecosystem-intro">
               <div>
-                <p class="eyebrow">Ecosystem Scenes</p>
+                <p class="eyebrow">생태 장면</p>
                 <h3>시대별 생태 갤러리</h3>
                 <p>같은 시기와 지층에서 살았던 동물들을 한 장면으로 살펴봅니다. 직접 근거와 복원 상상은 카드에서 나누어 표시합니다.</p>
               </div>
@@ -428,19 +436,17 @@
               <div>
                 <p class="eyebrow">움직임 실험실</p>
                 <h3>공룡 움직임</h3>
-                <p>앞으로의 새 테스트는 공룡 자체가 움직이는 M1·M2만 진행합니다. 환경만 움직이는 M0는 이전 비교용 보관본이며 새로 만들거나 추가하지 않습니다. 모든 영상은 직접 눌렀을 때만 재생됩니다.</p>
+                <p>고개를 돌리고, 먹이를 먹고, 다른 생물과 만나는 짧은 장면을 모았어요. 모든 영상은 직접 눌렀을 때만 재생됩니다.</p>
               </div>
-              <span class="motion-role-lock">대표·갤러리 승격 금지</span>
             </header>
 
             <section class="motion-sample-lane motion-sample-lane--m2" id="motionM2SampleLane" aria-labelledby="motionM2SampleTitle" hidden>
               <header class="motion-sample-heading">
                 <div>
-                  <p class="eyebrow">M2 Controlled Motion</p>
+                  <p class="eyebrow">큰 움직임</p>
                   <h3 id="motionM2SampleTitle">공룡의 더 큰 움직임</h3>
-                  <p>승인된 정지화면을 바탕으로 공룡 자체의 동작이 카드 크기에서도 분명한 후보만 시험합니다. 전 프레임의 해부학·접촉·배경·단방향 시간성을 검수해 통과본만 눌러서 재생합니다.</p>
+                  <p>포효하거나 풀을 먹고, 주변 생물에게 반응하는 모습을 볼 수 있어요.</p>
                 </div>
-                <span class="motion-role-lock">대표·갤러리 승격 금지</span>
               </header>
               <p class="motion-sample-summary" id="motionM2SampleSummary" aria-live="polite"></p>
               <div class="motion-sample-grid" id="motionM2SampleGrid"></div>
@@ -449,11 +455,10 @@
             <section class="motion-sample-lane motion-sample-lane--m1" id="motionM1SampleLane" aria-labelledby="motionM1SampleTitle" hidden>
               <header class="motion-sample-heading">
                 <div>
-                  <p class="eyebrow">M1 Biological Motion</p>
-                  <h3 id="motionM1SampleTitle">공룡 몸체 움직임 실험</h3>
-                  <p>승인된 정지화면의 해부학을 유지하면서 눈깜빡임·고개 움직임처럼 작은 생물학적 동작만 시험합니다. 걷기나 공격 같은 큰 행동은 아직 넣지 않으며, 눌렀을 때만 5초 동안 재생됩니다.</p>
+                  <p class="eyebrow">작은 움직임</p>
+                  <h3 id="motionM1SampleTitle">가까이 보는 공룡의 움직임</h3>
+                  <p>눈을 깜빡이거나 고개를 움직이는 짧고 조용한 장면이에요.</p>
                 </div>
-                <span class="motion-role-lock">대표·갤러리 승격 금지</span>
               </header>
               <p class="motion-sample-summary" id="motionM1SampleSummary" aria-live="polite"></p>
               <div class="motion-sample-grid" id="motionM1SampleGrid"></div>
@@ -474,33 +479,6 @@
           </section>
         </section>
 
-        <section class="view" id="reviewView" aria-label="Image review view">
-          <div class="review-layout">
-            <section class="queue-panel">
-              <div class="section-title">
-                <p class="eyebrow">Image QA</p>
-                <h3>후보 선택 보드</h3>
-              </div>
-              <div id="reviewQueue" class="review-list"></div>
-            </section>
-            <section class="workflow-panel">
-              <div class="section-title">
-                <p class="eyebrow">Candidate Detail</p>
-                <h3>후보 비교와 대표 선택</h3>
-              </div>
-              <div id="workflowSteps" class="workflow-steps"></div>
-            </section>
-          </div>
-        </section>
-
-        <section class="view" id="assetReviewView" aria-label="Asset image review workbench">
-          <iframe
-            id="assetReviewFrame"
-            class="asset-review-frame"
-            title="이미지 검수 워크벤치"
-            src="about:blank"
-          ></iframe>
-        </section>
       </main>
     </div>
 
@@ -509,8 +487,8 @@
       <section class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" tabindex="-1">
         <div class="lightbox-topbar">
           <div>
-            <p class="eyebrow" id="lightboxKind">Image Review</p>
-            <h3 id="lightboxTitle">후보 이미지</h3>
+            <p class="eyebrow" id="lightboxKind">생물 그림</p>
+            <h3 id="lightboxTitle">확대 이미지</h3>
           </div>
           <button class="lightbox-close icon-button" data-lightbox-action="close" type="button" aria-label="닫기"><span class="button-icon icon-close" aria-hidden="true"></span></button>
         </div>
@@ -527,13 +505,34 @@
       </section>
     </div>
 
+    <div class="subscription-dialog" id="subscriptionDialog" hidden aria-hidden="true">
+      <button class="subscription-backdrop" data-subscription-action="close" type="button" aria-label="구독 안내 닫기"></button>
+      <section class="subscription-panel" role="dialog" aria-modal="true" aria-labelledby="subscriptionTitle" tabindex="-1">
+        <span class="subscription-icon" aria-hidden="true">★</span>
+        <p class="eyebrow">Dino Atlas 전체 도감</p>
+        <h3 id="subscriptionTitle">더 많은 생물을 만나 보세요</h3>
+        <p id="subscriptionBody">무료 탐험에서는 친숙한 대표 생물 30종을 볼 수 있어요. 구독이 연결되면 전체 생물과 모든 갤러리가 열립니다.</p>
+        <div class="subscription-benefits" aria-label="구독 혜택">
+          <span>전체 155종</span>
+          <span>모든 갤러리</span>
+          <span>새 생물 업데이트</span>
+        </div>
+        <p class="subscription-coming-soon">결제 기능은 준비 중입니다. 지금은 무료 생물을 계속 탐험할 수 있어요.</p>
+        <div class="subscription-actions">
+          <button class="primary-action" data-subscription-action="free" type="button">무료 생물 보기</button>
+          <button data-subscription-action="close" type="button">닫기</button>
+        </div>
+      </section>
+    </div>
+
+  <script src="./access-policy.js?v=20260810-access-surface-v1"></script>
   <script src="./gallery-slots.js?v=20260810-famous-paleo-ceno-v1"></script>
   <script src="./ecosystem-scenes.js?v=20260807-subject-motion-trackway-v2"></script>
   <script src="./motion-samples.js?v=20260807-subject-motion-policy-v1"></script>
   <script src="./motion-m1-samples.js?v=20260807-subject-motion-policy-v1"></script>
   <script src="./motion-m2-samples.js?v=20260807-subject-motion-policy-v1"></script>
   <script src="./motion-m2-i2v-samples.js?v=20260807-giganotosaurus-subject-motion-v1"></script>
-  <script src="./app.js?v=20260810-famous-paleo-ceno-v1"></script>
+  <script src="./app.js?v=20260810-access-surface-v1"></script>
     <script src="./atlas-layout.js?v=20260731-resizable-inspector-v1"></script>
   </body>
 </html>
