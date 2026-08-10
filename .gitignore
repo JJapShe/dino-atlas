@@ -20,3 +20,10 @@ tools/comfyui/lora_training/**/materialized*/
 screenshots/
 __pycache__/
 *.pyc
+
+# Regenerable local review packets already summarized by tracked review records
+tools/comfyui/review-evidence/motion-subject-required-20260807/
+
+# Superseded local trackway previews; approved assets and SVG guides are tracked
+tools/comfyui/middle-jurassic-trackway-evidence-preview-v[1-3].png
+tools/comfyui/trackway-orthographic-structure-guide-v1.png

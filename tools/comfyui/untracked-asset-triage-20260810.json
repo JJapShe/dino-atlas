@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-08-10",
+  "scope": "untracked local image and motion review artifacts",
+  "policy": {
+    "promoteOnlyAfterIndependentReview": true,
+    "representativePromotionWithoutAnatomyReview": "prohibited",
+    "derivedReviewBundlesArePublicationAssets": false,
+    "candidateReviewHoldRequiresUsableUnresolvedAsset": true
+  },
+  "summary": {
+    "newPromotions": 0,
+    "candidateReviewHolds": 0,
+    "trackwayDiagnosticOrSuperseded": 4,
+    "motionBundleFilesExcluded": 97,
+    "motionBundleBytesExcluded": 556658276,
+    "alreadyPublishedMotionCandidates": 1,
+    "rejectedMotionCandidates": 5
+  },
+  "trackwayArtifacts": [
+    {
+      "path": "tools/comfyui/middle-jurassic-trackway-evidence-preview-v1.png",
+      "sha256": "4a71e938b485c0fdf1406b6655c6423348d767043979d780c99b9278c9da40ec",
+      "bytes": 3957612,
+      "status": "diagnostic-reject",
+      "reason": "Outlined stamp-like sauropod impressions, even spacing and arrow-like theropod marks remain too schematic and periodic."
+    },
+    {
+      "path": "tools/comfyui/middle-jurassic-trackway-evidence-preview-v2.png",
+      "sha256": "2ce47e165c7013020803dead068979d82f213ee37313308c5c85bcb82624ec75",
+      "bytes": 4096711,
+      "status": "diagnostic-reject",
+      "reason": "Mud integration improved, but repeated print shape and spacing remain visibly patterned and the crossing trail reads as dark arrows."
+    },
+    {
+      "path": "tools/comfyui/middle-jurassic-trackway-evidence-preview-v3.png",
+      "sha256": "5c15e00136927b675158907086140d77fe9db9e4d17f8ebe2253e9ce90fd9c95",
+      "bytes": 4097161,
+      "status": "diagnostic-reject-duplicate-superseded",
+      "reason": "Byte-identical to the tracked hybrid-v1 publication asset and superseded by the nonperiodic hybrid-v2 asset."
+    },
+    {
+      "path": "tools/comfyui/trackway-orthographic-structure-guide-v1.png",
+      "sha256": "0c027ae16f77693613c986f1ef42e53418dc5b97c29844b6ce02e919fa31222d",
+      "bytes": 122866,
+      "status": "structure-reference-superseded",
+      "reason": "Redundant raster derivative of the tracked v1 SVG guide; the canonical guide is trackway-orthographic-naturalized-structure-guide-v2.svg."
+    }
+  ],
+  "trackwayApprovedAsset": {
+    "path": "assets/dinosaurs/cetiosaurus-oxoniensis-megalosaurus-bucklandii-analogue-crossing-trackways-trace-evidence-imagegen-hybrid-v2.png",
+    "sha256": "8a17fd2fb9bee5e2fdf9748c574abc7945baa9911f9ff0eda6ade98c3903d036",
+    "reviewRecord": "tools/comfyui/middle-jurassic-dewars-crossing-trackways-ecosystem-scene-20260807-v2.json",
+    "representativeEligible": false
+  },
+  "motionReviewBundle": {
+    "path": "tools/comfyui/review-evidence/motion-subject-required-20260807/",
+    "status": "local-derived-review-bundle-excluded",
+    "contents": {
+      "html": 1,
+      "png": 90,
+      "mp4": 6,
+      "files": 97,
+      "bytes": 556658276
+    },
+    "reviewRecord": "tools/comfyui/motion-subject-required-review-20260807.json",
+    "retainedCompactEvidence": "tools/comfyui/outputs/motion-subject-required-review-sheets-20260807/",
+    "alreadyPublished": {
+      "candidateId": "giganotosaurus-carolinii-oneway-jaw-display-f81-v2",
+      "asset": "assets/motion/m2/giganotosaurus-carolinii-oneway-jaw-headlift-comfyui-wan22-i2v-m2-v1.mp4",
+      "sha256": "90f8eb38486678fe9184e931fc2379081f87426e0c49085318ae929cd4238b94"
+    },
+    "rejectedCandidateIds": [
+      "giganotosaurus-carolinii-connected-head-lift-f81-v1",
+      "iguanodon-bernissartensis-connected-head-rise-f81-v1",
+      "iguanodon-bernissartensis-oneway-browse-lower-f81-v2",
+      "ankylosaurus-magniventris-connected-head-rise-f81-v1",
+      "ankylosaurus-magniventris-clear-fern-bite-f81-v2"
+    ]
+  }
+}
