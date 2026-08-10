@@ -210,6 +210,147 @@ const dinosaurs = [
     ],
   },
   {
+    id: "anomalocaris-canadensis",
+    name: "Anomalocaris canadensis",
+    koreanName: "아노말로카리스",
+    aliases: ["아노말로카리스 카나덴시스", "기묘한 새우", "Anomalocaris", "radiodont"],
+    atlasRealm: "paleozoic",
+    rootClade: "Arthropoda",
+    clade: "Radiodonta",
+    family: "Anomalocarididae",
+    era: "cambrian",
+    period: "중기 캄브리아기",
+    diet: "육식",
+    region: "캐나다 브리티시컬럼비아 버지스 셰일",
+    length: 0.25,
+    sizeLabel: "몸길이",
+    sizeDisplay: "완전 표본 약 25 cm; 분리 부위로 더 큰 개체 가능성이 제안되지만 1 m는 불확실",
+    knowledgeLevel: 1,
+    imageSlots: 3,
+    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 고생대 전용",
+    summary:
+      "아노말로카리스는 중기 캄브리아기 바다를 헤엄친 방사치류 절지동물입니다. 머리의 큰 자루눈 한 쌍, 먹이를 다루는 마디진 전방 부속지 한 쌍, 배쪽의 삼방사형 입 구조, 몸 양옆의 겹치는 수영 엽, 옆날 3쌍과 중앙 날로 이루어진 꼬리 부채가 특징입니다. 색과 내부 연조직, 정확한 먹이와 사냥 방식은 화석만으로 모두 확정할 수 없습니다.",
+    features: {
+      분류: "새우나 오징어가 아니라 절지동물 줄기군의 방사치류",
+      머리: "큰 자루눈 한 쌍과 마디진 전방 부속지 한 쌍, 배쪽의 삼방사형 구강 원뿔",
+      몸통: "작은 머리 방패 외에는 갑옷 마디가 없는 부드럽고 유연한 비갑주 몸통; 양옆의 얇고 반투명한 수영 엽과 등쪽의 섬세한 강모 날(setal blades)",
+      꼬리: "몸 끝의 옆날 3쌍과 중앙 날로 이루어진 꼬리 부채; 물고기 꼬리지느러미가 아님",
+      불확실성: "색·연조직 세부와 단단한 먹이를 깨물었는지 여부, 정확한 사냥 행동은 복원 가설",
+    },
+    sources: [
+      "Royal Ontario Museum Burgess Shale: Anomalocaris canadensis",
+      "Whittington & Briggs 1985 Philosophical Transactions of the Royal Society B",
+      "Daley & Edgecombe 2014 Journal of Paleontology",
+      "Bicknell et al. 2023 Proceedings of the Royal Society B",
+    ],
+  },
+  {
+    id: "dunkleosteus-terrelli",
+    name: "Dunkleosteus terrelli",
+    koreanName: "둔클레오스테우스",
+    aliases: ["던클리오스테우스", "둔클레오스테우스 테렐리", "Dunkleosteus", "갑주어"],
+    atlasRealm: "paleozoic",
+    rootClade: "Vertebrata",
+    clade: "Placodermi",
+    family: "Dunkleosteidae",
+    era: "devonian",
+    period: "후기 데본기",
+    diet: "육식",
+    region: "미국 오하이오 클리블랜드 셰일",
+    length: 4.1,
+    sizeLabel: "전체길이 추정",
+    sizeDisplay: "전형적 성체 약 3.4 m; 예외적 최대 약 4.1 m(비교복원 추정)",
+    knowledgeLevel: 1,
+    imageSlots: 3,
+    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 후반부 몸 비교복원",
+    summary:
+      "둔클레오스테우스는 후기 데본기 바다의 큰 육식성 판피어입니다. 머리와 앞가슴을 덮은 두꺼운 골판, 목의 관절, 이빨 대신 날카롭게 맞물리는 위·아래 턱뼈 판이 특징입니다. 머리 갑옷 뒤의 몸통과 지느러미는 거의 보존되지 않아, 화면의 짧고 굵은 후반부 몸은 가까운 판피어와 생체역학을 이용한 비교복원입니다.",
+    features: {
+      분류: "상어가 아니라 턱과 앞가슴에 골판을 지닌 멸종 판피어",
+      머리: "큰 머리와 앞가슴을 감싸는 서로 맞물린 갑옷판, 머리를 들 수 있는 목 관절",
+      턱: "상어 같은 원뿔 이빨이 아니라 날카로운 가장자리를 지닌 위·아래 뼈 판",
+      몸통: "대표 이미지는 비교적 짧고 굵은 몸, 정확히 하나의 등지느러미와 그 뒤 꼬리까지 매끈한 등선으로 통일; 이 후반부 전체는 직접 증거가 적은 비교복원",
+      불확실성: "전체 길이·몸 단면·지느러미·꼬리 형태·색과 정확한 사냥 행동은 비교복원 영역",
+    },
+    sources: [
+      "Cleveland Museum of Natural History: Dunkleosteus terrelli",
+      "Anderson & Westneat 2007 Biology Letters",
+      "Ferrón et al. 2017 PeerJ",
+      "Engelman 2023 Diversity",
+      "Engelman 2024 Palaeontologia Electronica 27.3.a45",
+    ],
+  },
+  {
+    id: "otodus-megalodon",
+    name: "Otodus megalodon",
+    koreanName: "메갈로돈",
+    aliases: ["오토두스 메갈로돈", "메갈로돈 상어", "Megalodon", "Carcharocles megalodon"],
+    atlasRealm: "cenozoic",
+    rootClade: "Chondrichthyes",
+    clade: "Lamniformes",
+    family: "Otodontidae",
+    era: "neogene",
+    period: "마이오세~플라이오세",
+    diet: "육식",
+    region: "전 세계의 온난한 연안·외해",
+    length: 15.8,
+    sizeLabel: "전체길이 추정",
+    sizeDisplay: "연구별로 대형 성체 약 15 m 안팎; 최대 약 24.3 m는 잠정 추정",
+    knowledgeLevel: 1,
+    imageSlots: 3,
+    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 2025 장신형 비교복원 잠정 적용",
+    summary:
+      "메갈로돈은 신진기 바다에 살았던 거대한 악상어목 오토두스과 상어입니다. 넓고 두꺼우며 가장자리에 잔 톱니가 난 삼각형 이빨과 큰 척추 중심체가 주된 화석 증거입니다. 완전한 골격이 없어 몸은 확정되지 않았으며, 화면은 백상아리 복제 대신 2025년 제안된 더 길고 유선형인 잠정 비교복원을 사용합니다.",
+    features: {
+      분류: "현생 백상아리와 같은 종이 아닌 멸종 오토두스과 악상어목 상어",
+      이빨: "넓고 두꺼운 삼각형 치관, 잔 톱니가 난 절단면과 큰 뿌리",
+      몸통: "큰 제1등지느러미와 작은 제2등지느러미, 두 가슴지느러미가 있는 상어형 몸; 정확한 지느러미 모양·크기·위치는 미상이며 장신형 비례는 2025년 비교복원 가설",
+      머리: "길게 이어지는 둔한 주둥이와 아가미틈; 특정 현생 상어를 그대로 확대하지 않음",
+      불확실성: "완전 골격 부재로 전체 길이·머리·지느러미·꼬리 비율과 피부색은 모두 추정 범위가 큼",
+    },
+    sources: [
+      "Smithsonian Ocean: Megalodon",
+      "Florida Museum of Natural History: Megalodon",
+      "Cooper et al. 2022 Science Advances",
+      "Shimada et al. 2025 Palaeontologia Electronica",
+    ],
+  },
+  {
+    id: "coelodonta-antiquitatis",
+    name: "Coelodonta antiquitatis",
+    koreanName: "털코뿔소",
+    aliases: ["울리 라이노", "털코뿔소 코엘로돈타", "Woolly rhinoceros", "Coelodonta"],
+    atlasRealm: "cenozoic",
+    rootClade: "Mammalia",
+    clade: "Perissodactyla",
+    family: "Rhinocerotidae",
+    era: "quaternary",
+    period: "후기 플라이스토세",
+    diet: "초식",
+    region: "유럽·북아시아의 매머드 스텝",
+    length: 3.8,
+    sizeLabel: "몸길이",
+    sizeDisplay: "약 3.2~3.8 m · 어깨높이 약 1.8~2 m",
+    knowledgeLevel: 2,
+    imageSlots: 3,
+    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 신생대 전용",
+    summary:
+      "털코뿔소는 후기 플라이스토세 유라시아의 차갑고 건조한 매머드 스텝에 살았습니다. 높은 어깨와 앞으로 낮아지는 머리, 작은 귀, 두꺼운 털, 넓은 평면과 좁은 가장자리를 지닌 길고 좌우 압축된 칼날형 앞뿔과 더 작은 뒤뿔이 특징입니다. 얼어붙은 몸과 동굴 그림이 연조직 복원에 도움을 주지만 털색·무늬와 정확한 무리 행동은 확정되지 않았습니다.",
+    features: {
+      분류: "공룡이 아닌 말목 코뿔소과의 멸종 포유류",
+      체형: "높은 어깨와 굵은 몸통, 짧고 튼튼한 네 다리, 작은 귀와 짧은 꼬리",
+      뿔: "코 위의 넓은 평면과 좁은 가장자리를 지닌 길고 좌우 압축된 칼날형 앞뿔과 이마 쪽의 더 작은 뒤뿔 정확히 두 개",
+      보온: "긴 겉털과 조밀한 속털이 덮인 몸; 현생 코뿔소처럼 털 없는 매끈한 피부가 아님",
+      불확실성: "털색·무늬와 개체 관계, 정확한 계절 이동과 채식 행동은 복원 가설",
+    },
+    sources: [
+      "Natural History Museum: Woolly rhinoceros",
+      "Boeskorov et al. 2011 Quaternary Science Reviews",
+      "Orlova et al. 2015 Quaternary International",
+      "Lord et al. 2020 Current Biology",
+    ],
+  },
+  {
     id: "dimetrodon-grandis",
     name: "Dimetrodon grandis",
     koreanName: "디메트로돈",
@@ -4084,6 +4225,10 @@ const cladeMeta = {
   Proboscidea: "장비목",
   Pilosa: "유모목",
   Cingulata: "피갑목",
+  Radiodonta: "방사치류",
+  Placodermi: "판피어류",
+  Lamniformes: "악상어목",
+  Perissodactyla: "말목",
 };
 
 const taxonomySearchAliases = {
@@ -4122,6 +4267,13 @@ const taxonomySearchAliases = {
   Proboscidea: ["장비목", "코끼리류", "코끼리", "매머드", "마스토돈"],
   Pilosa: ["유모목", "나무늘보", "땅늘보", "거대땅늘보"],
   Cingulata: ["피갑목", "아르마딜로", "글립토돈", "갑옷 포유류"],
+  Arthropoda: ["절지동물", "고대 절지동물"],
+  Radiodonta: ["방사치류", "아노말로카리스", "캄브리아기 포식자"],
+  Vertebrata: ["척추동물", "고대 어류"],
+  Placodermi: ["판피어", "갑주어", "둔클레오스테우스"],
+  Chondrichthyes: ["연골어류", "상어", "고대 어류"],
+  Lamniformes: ["악상어목", "상어", "메갈로돈"],
+  Perissodactyla: ["말목", "기제목", "코뿔소", "털코뿔소"],
 };
 
 const knowledgeLevels = {
@@ -4150,11 +4302,25 @@ const knowledgeLevels = {
 const realmEras = Object.freeze({
   paleozoic: Object.freeze([
     Object.freeze({
+      id: "cambrian",
+      label: "캄브리아기",
+      range: "539-485 Ma",
+      top: 0,
+      height: 355,
+    }),
+    Object.freeze({
+      id: "devonian",
+      label: "데본기",
+      range: "419-359 Ma",
+      top: 355,
+      height: 390,
+    }),
+    Object.freeze({
       id: "permian",
       label: "페름기",
       range: "299-252 Ma",
-      top: 0,
-      height: 355,
+      top: 745,
+      height: 575,
     }),
   ]),
   cenozoic: Object.freeze([
@@ -4210,10 +4376,10 @@ const atlasRealmConfigs = Object.freeze({
     id: "paleozoic",
     label: "고생대",
     eyebrow: "Paleozoic Phylogeny",
-    mapHeading: "페름기 계통 지도",
-    defaultScope: "permian",
-    defaultSelection: "dimetrodon-grandis",
-    catalogNote: "페름기 생물을 중생대 생물과 섞지 않고 별도 시대 지도와 도감에서 살펴봅니다.",
+    mapHeading: "고생대 계통 지도",
+    defaultScope: "cambrian",
+    defaultSelection: "anomalocaris-canadensis",
+    catalogNote: "캄브리아기·데본기·페름기의 대표 생물을 중생대 생물과 섞지 않고 별도 시대 지도와 도감에서 살펴봅니다.",
   }),
   cenozoic: Object.freeze({
     id: "cenozoic",
@@ -4241,7 +4407,8 @@ function getAtlasRealm(dino) {
   if (!dino) return "mesozoic";
   if (dino.atlasRealm && atlasRealmConfigs[dino.atlasRealm]) return dino.atlasRealm;
   if (realmEras.cenozoic.some((era) => era.id === dino.era)) return "cenozoic";
-  return dino.era === "permian" ? "paleozoic" : "mesozoic";
+  if (realmEras.paleozoic.some((era) => era.id === dino.era)) return "paleozoic";
+  return "mesozoic";
 }
 
 function getActiveRealmConfig() {
@@ -4274,6 +4441,12 @@ const canvasSize = {
 };
 
 const phyloNodes = [
+  { id: "arthropoda", type: "group", label: "Arthropoda", caption: "절지동물 계통", x: 120, y: 456 },
+  { id: "radiodonta", type: "group", label: "Radiodonta", caption: "방사치류", x: 355, y: 456 },
+  { id: "vertebrata", type: "group", label: "Vertebrata", caption: "척추동물 계통", x: 120, y: 556 },
+  { id: "placodermi", type: "group", label: "Placodermi", caption: "판피어류", x: 355, y: 526 },
+  { id: "chondrichthyes", type: "group", label: "Chondrichthyes", caption: "연골어류", x: 355, y: 626 },
+  { id: "lamniformes", type: "group", label: "Lamniformes", caption: "악상어목", x: 620, y: 626 },
   { id: "pterosauria", type: "group", label: "Pterosauria", caption: "익룡 계통", x: 1840, y: 56 },
   { id: "marine-reptilia", type: "group", label: "Marine Reptilia", caption: "해양 파충류 계통", x: 1840, y: 276 },
   { id: "synapsida", type: "group", label: "Synapsida", caption: "단궁류 계통", x: 120, y: 56 },
@@ -4285,6 +4458,7 @@ const phyloNodes = [
   { id: "proboscidea", type: "group", label: "Proboscidea", caption: "장비목", x: 890, y: 206 },
   { id: "pilosa", type: "group", label: "Pilosa", caption: "유모목", x: 890, y: 306 },
   { id: "cingulata", type: "group", label: "Cingulata", caption: "피갑목", x: 890, y: 406 },
+  { id: "perissodactyla", type: "group", label: "Perissodactyla", caption: "말목", x: 890, y: 506 },
   { id: "mollusca", type: "group", label: "Mollusca", caption: "연체동물 계통", x: 120, y: 356 },
   { id: "cephalopoda", type: "group", label: "Cephalopoda", caption: "두족류", x: 355, y: 356 },
   { id: "ammonoidea", type: "group", label: "Ammonoidea", caption: "암모나이트류", x: 620, y: 326 },
@@ -4848,6 +5022,10 @@ const phyloNodes = [
 ];
 
 const phyloEdges = [
+  ["arthropoda", "radiodonta"],
+  ["vertebrata", "placodermi"],
+  ["vertebrata", "chondrichthyes"],
+  ["chondrichthyes", "lamniformes"],
   ["synapsida", "sphenacodontia"],
   ["synapsida", "dicynodontia"],
   ["synapsida", "cynodontia"],
@@ -4856,6 +5034,7 @@ const phyloEdges = [
   ["mammalia", "proboscidea"],
   ["mammalia", "pilosa"],
   ["mammalia", "cingulata"],
+  ["mammalia", "perissodactyla"],
   ["mollusca", "cephalopoda"],
   ["cephalopoda", "ammonoidea"],
   ["cephalopoda", "belemnitida"],
@@ -5026,8 +5205,8 @@ const state = {
   sort: "level",
   realmBrowse: {
     paleozoic: {
-      selectedId: "dimetrodon-grandis",
-      scope: "permian",
+      selectedId: "anomalocaris-canadensis",
+      scope: "cambrian",
       search: "",
       classification: "all",
       diet: "all",
@@ -5095,12 +5274,18 @@ const classificationGroups = Object.freeze([
   { id: "synapsida", label: "단궁류" },
   { id: "mammalia", label: "포유류" },
   { id: "cephalopoda", label: "고대 두족류" },
+  { id: "arthropoda", label: "절지동물" },
+  { id: "fishes", label: "고대 어류" },
   { id: "early-dinosaur", label: "초기 용반류" },
 ]);
 
 const timelinePeriodOrder = Object.freeze([
+  { id: "middle-cambrian", label: "중기 캄브리아기", era: "cambrian" },
+  { id: "late-devonian", label: "후기 데본기", era: "devonian" },
   { id: "early-permian", label: "전기 페름기", era: "permian" },
+  { id: "miocene-pliocene", label: "마이오세~플라이오세", era: "neogene" },
   { id: "pleistocene", label: "플라이스토세", era: "quaternary" },
+  { id: "late-pleistocene", label: "후기 플라이스토세", era: "quaternary" },
   { id: "early-triassic", label: "전기 트라이아스기", era: "triassic" },
   { id: "middle-triassic", label: "중기 트라이아스기", era: "triassic" },
   { id: "late-triassic", label: "후기 트라이아스기", era: "triassic" },
@@ -5114,6 +5299,10 @@ const timelinePeriodOrder = Object.freeze([
 ]);
 
 const recentImageUpdateTaxa = [
+  "anomalocaris-canadensis",
+  "dunkleosteus-terrelli",
+  "otodus-megalodon",
+  "coelodonta-antiquitatis",
   "mammut-americanum",
   "megatherium-americanum",
   "arctodus-simus",
@@ -5286,6 +5475,290 @@ function saveCandidateReviewDecisions() {
 }
 
 const generatedImageSamples = {
+  "anomalocaris-canadensis": [
+    {
+      kind: "count-level pass",
+      title: "아노말로카리스 부드러운 비갑주 몸·반투명 수영엽·7날 꼬리부채 전신 대표",
+      body: "중기 캄브리아기 버지스 셰일 바다의 단독 전신 대표입니다. 원본 크기에서 작은 머리 방패만 단단하게 읽히고, 그 뒤 몸통은 갑옷 마디가 없는 부드럽고 유연한 비갑주 형태입니다. 큰 자루눈 한 쌍, 마디진 전방 부속지 한 쌍, 배쪽 삼방사형 구강 원뿔, 얇고 반투명한 수영 엽, 섬세한 등쪽 강모 날(setal blades), 옆날 3쌍과 중앙 날의 꼬리 부채를 확인했습니다.",
+      source: "assets/dinosaurs/anomalocaris-canadensis-softbody-tailfan-representative-imagegen-v2.png",
+      variant: "작은 머리 방패 부드러운 비갑주 몸 반투명 수영엽 섬세한 등쪽 강모 날 7날 꼬리부채 전신 대표 이미지 생성 v2",
+      src: "assets/dinosaurs/anomalocaris-canadensis-softbody-tailfan-representative-imagegen-v2.png",
+      gallerySlot: 1,
+      galleryRole: "representative",
+      phenotype: "rust-ochre-a",
+      habitatKey: "middle-cambrian-burgess-shelf-water",
+      sourceAttribution: "OpenAI built-in image generation; museum and peer-reviewed radiodont sources supplied factual constraints only",
+      licenseRecord: "Generated project asset; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style was used as generation input",
+      generationPromptRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json#records/anomalocaris-canadensis-representative-v2",
+      generationSeed: "service-assigned, not exposed",
+      generationWorkflow: "OpenAI built-in image generation; fresh fossil-led prompt-to-image correction after rejecting rigid segmented armored-shrimp drift, followed by original-size soft-trunk, translucent-flap, setal-blade, paired-appendage, eye, and tail-fan review",
+      reviewStatus: "원본 크기 count-level 검수 통과 · S1 v2 대표 승인 · 작은 머리 방패 외 부드러운 비갑주 몸/반투명 엽/섬세한 등쪽 강모 날 판독 · 색/수영 자세 가설 경계",
+      locality: "broad middle Cambrian Burgess Shale shelf-water reconstruction; exact depth, light, sediment plume, plants and moment are hypothetical",
+      anatomyEvidenceBoundary: "only the small head shield reads as rigid; the trunk is soft, flexible and unarmored, with thin translucent lateral swimming flaps and delicate dorsal setal blades. Paired stalked eyes, paired segmented frontal appendages, a ventral triradial oral cone and a tail fan with three lateral blade pairs plus one central blade are fossil-led, while transparency and exact soft-tissue volume include reconstruction",
+      colorEvidence: "rust, ochre, muted cream and all pattern placement are hypothetical",
+      metadataRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json",
+      representativeEligible: true,
+    },
+    {
+      kind: "review hold",
+      title: "아노말로카리스 오른쪽 진행 남청·구리색 변이",
+      body: "대표와 반대 방향으로 헤엄치는 남청·구리색 후보입니다. 작은 머리 방패 외의 몸통은 부드럽고 유연한 비갑주 형태이며, 얇고 반투명한 수영 엽과 섬세한 등쪽 강모 날, 자루눈·전방 부속지·꼬리부채의 연결이 읽힙니다. 강한 사선 원근과 먼쪽 엽의 겹침, 색 배치는 가설이어서 S2 review hold로만 둡니다.",
+      source: "assets/dinosaurs/anomalocaris-canadensis-rightfacing-softflap-indigo-copper-imagegen-v2.png",
+      variant: "오른쪽 진행 부드러운 비갑주 몸 반투명 수영엽 남청 구리색 반대 구도 이미지 생성 v2",
+      src: "assets/dinosaurs/anomalocaris-canadensis-rightfacing-softflap-indigo-copper-imagegen-v2.png",
+      gallerySlot: 2,
+      galleryRole: "color-pattern",
+      phenotype: "indigo-copper-b",
+      habitatKey: "middle-cambrian-open-shelf-bluewater",
+      sourceAttribution: "OpenAI built-in image generation; factual sources supplied radiodont anatomy and uncertainty boundaries only",
+      licenseRecord: "Generated project asset; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style was used as generation input",
+      generationPromptRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json#records/anomalocaris-canadensis-pattern-v2",
+      generationSeed: "service-assigned, not exposed",
+      generationWorkflow: "OpenAI built-in image generation; fresh opposite-direction correction with a soft unarmored trunk, translucent-flap and delicate setal-blade gate",
+      reviewStatus: "원본 크기 review-hold 수용 · 비갑주 몸/반투명 엽/등쪽 강모 날 판독 · 방향/카메라/팔레트 분리 · 먼쪽 엽/색 가설 · 대표 승격 금지",
+      anatomyEvidenceBoundary: "only the small head shield is rigid; the soft flexible trunk, thin translucent flaps, delicate dorsal setal blades, paired eyes and frontal appendages, and seven-blade tail fan remain readable. Oblique overlap, distal joints and transparency include reconstruction",
+      colorEvidence: "indigo, copper, cream spots and every marking location are hypothetical",
+      metadataRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json",
+      representativeEligible: false,
+    },
+    {
+      kind: "anatomy review",
+      title: "아노말로카리스 대륙붕 연한 먹이 탐색 생태",
+      body: "캄브리아기 대륙붕 위에서 작은 머리 방패 외에는 부드럽고 유연한 비갑주 몸통, 얇고 반투명한 수영 엽과 섬세한 등쪽 강모 날을 지닌 한 아노말로카리스가 멀리 떨어진 연한 몸의 동물을 향해 방향을 바꾸는 넓은 장면입니다. 직접 접촉이나 단단한 삼엽충 분쇄를 그리지 않았고 정확한 먹이 종과 사냥 순간은 가설이므로 S3 anatomy review로만 사용합니다.",
+      source: "assets/dinosaurs/anomalocaris-canadensis-softbody-shelf-ecology-imagegen-v2.png",
+      variant: "캄브리아기 대륙붕 부드러운 비갑주 몸 반투명 수영엽 연한 먹이 원거리 탐색 생태 이미지 생성 v2",
+      src: "assets/dinosaurs/anomalocaris-canadensis-softbody-shelf-ecology-imagegen-v2.png",
+      gallerySlot: 3,
+      galleryRole: "habitat-ecology",
+      phenotype: "olive-rust-c",
+      habitatKey: "middle-cambrian-soft-prey-shelf-ecology",
+      sourceAttribution: "OpenAI built-in image generation; Burgess Shale occurrence and radiodont functional studies supplied broad ecological boundaries only",
+      licenseRecord: "Generated project asset; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style was used as generation input",
+      generationPromptRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json#records/anomalocaris-canadensis-ecology-v2",
+      generationSeed: "service-assigned, not exposed",
+      generationWorkflow: "OpenAI built-in image generation; wide non-contact ecology correction with a primary-animal soft unarmored trunk, translucent-flap and delicate setal-blade review",
+      reviewStatus: "원본 크기 anatomy-review 수용 · 주 피사체 비갑주 몸/반투명 엽/등쪽 강모 날 전신 판독 · 비접촉 연한 먹이 맥락 · 먹이/행동 가설 · 대표 승격 금지",
+      locality: "broad middle Cambrian Burgess Shale marine-shelf reconstruction; exact community, water depth, visibility and event are hypothetical",
+      behaviorEvidence: "frontal appendages support food handling, but this prey choice, approach angle and exact encounter are illustrative",
+      anatomyEvidenceBoundary: "the foreground radiodont has only a small rigid head shield and retains a soft flexible unarmored trunk, thin translucent flaps, delicate dorsal setal blades, paired appendages, stalked eyes and a seven-blade tail fan; distant organisms, transparency and exact swimming pose are simplified reconstructions",
+      colorEvidence: "olive, rust, cream and all animal, water and seafloor colors are hypothetical",
+      metadataRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json",
+      representativeEligible: false,
+    },
+  ],
+  "dunkleosteus-terrelli": [
+    {
+      kind: "count-level pass",
+      title: "둔클레오스테우스 단일 등지느러미·매끈한 등선·머리갑옷 전신 대표",
+      body: "후기 데본기 바다의 단독 전신 대표입니다. 큰 머리와 앞가슴의 골판 갑옷, 목 관절, 원뿔 이빨 대신 맞물리는 날카로운 턱뼈 판을 확인했습니다. 비교적 짧고 굵은 후반부 등쪽에는 등지느러미가 정확히 하나만 있고, 그 뒤부터 꼬리까지 추가 돌기나 두 번째 지느러미 없이 매끈한 등선이 이어집니다. 이 후반부 몸·단일 등지느러미·꼬리 전체는 직접 화석이 부족한 비교복원입니다.",
+      source: "assets/dinosaurs/dunkleosteus-terrelli-single-dorsal-compact-armor-representative-imagegen-v2.png",
+      variant: "단일 등지느러미 뒤 매끈한 등선 짧고 굵은 비교복원 몸 머리갑옷 턱뼈판 전신 대표 이미지 생성 v2",
+      src: "assets/dinosaurs/dunkleosteus-terrelli-single-dorsal-compact-armor-representative-imagegen-v2.png",
+      gallerySlot: 1,
+      galleryRole: "representative",
+      phenotype: "charcoal-bronze-a",
+      habitatKey: "late-devonian-epicontinental-sea",
+      sourceAttribution: "OpenAI built-in image generation; museum and peer-reviewed placoderm biomechanics and body-proportion studies supplied factual constraints only",
+      licenseRecord: "Generated project asset; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style was used as generation input",
+      generationPromptRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json#records/dunkleosteus-terrelli-representative-v2",
+      generationSeed: "service-assigned, not exposed",
+      generationWorkflow: "OpenAI built-in image generation; fresh correction followed by original-size armor, jaw-plate, exactly-one-dorsal, smooth-post-dorsal-backline, and single-tail review",
+      reviewStatus: "원본 크기 count-level 검수 통과 · S1 v2 대표 승인 · 등지느러미 정확히 하나/뒤쪽 매끈한 등선 판독 · 후반부 몸·지느러미·꼬리/색 비교복원 경계",
+      locality: "broad Late Devonian epicontinental-sea reconstruction; exact locality, depth, water color and moment are hypothetical",
+      anatomyEvidenceBoundary: "cranial and thoracic armor, arthrodire neck joint and bladed jaw plates are fossil-led; the compact posterior body has exactly one dorsal fin followed by a smooth uninterrupted backline to the tail, but this entire posterior body, single dorsal fin, tail and all soft tissue are comparative reconstruction",
+      colorEvidence: "charcoal, bronze, muted gray and every marking location are hypothetical",
+      metadataRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json",
+      representativeEligible: true,
+    },
+    {
+      kind: "review hold",
+      title: "둔클레오스테우스 왼쪽 진행 구리 갑옷 변이",
+      body: "대표와 다른 왼쪽 진행·낮은 사선 구도의 구리빛 갑옷 후보입니다. 머리 갑옷과 뼈 판 턱, 등쪽의 정확히 하나인 등지느러미, 그 뒤부터 꼬리까지 추가 지느러미 없이 이어지는 매끈한 등선이 읽힙니다. 후반부 몸과 단일 등지느러미·꼬리, 원근과 색은 비교복원이라 S2 review hold로만 둡니다.",
+      source: "assets/dinosaurs/dunkleosteus-terrelli-leftfacing-single-dorsal-copper-pattern-imagegen-v2.png",
+      variant: "왼쪽 진행 단일 등지느러미 뒤 매끈한 등선 구리 갑옷 색 변이 이미지 생성 v2",
+      src: "assets/dinosaurs/dunkleosteus-terrelli-leftfacing-single-dorsal-copper-pattern-imagegen-v2.png",
+      gallerySlot: 2,
+      galleryRole: "color-pattern",
+      phenotype: "copper-slate-b",
+      habitatKey: "late-devonian-dim-bluewater",
+      sourceAttribution: "OpenAI built-in image generation; factual sources supplied head-armor, jaw, and reconstruction boundaries only",
+      licenseRecord: "Generated project asset; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style was used as generation input",
+      generationPromptRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json#records/dunkleosteus-terrelli-pattern-v2",
+      generationSeed: "service-assigned, not exposed",
+      generationWorkflow: "OpenAI built-in image generation; fresh opposite-direction low-oblique correction with an exactly-one-dorsal and smooth-post-dorsal-backline gate",
+      reviewStatus: "원본 크기 review-hold 수용 · 머리갑옷/턱뼈판/단일 등지느러미/뒤쪽 매끈한 등선 판독 · 방향/광원/팔레트 분리 · 후반부 전체 비교복원 · 대표 승격 금지",
+      anatomyEvidenceBoundary: "head and thoracic armor plus toothless jaw plates remain readable; exactly one dorsal fin is followed by a smooth uninterrupted backline to the tail, while the entire posterior body, fin, tail, perspective and soft tissue are comparative reconstruction",
+      colorEvidence: "copper armor, slate body, pale underside and all pattern placement are hypothetical",
+      metadataRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json",
+      representativeEligible: false,
+    },
+    {
+      kind: "anatomy review",
+      title: "둔클레오스테우스 데본기 물고기 떼 통과 생태",
+      body: "한 둔클레오스테우스가 멀리 분리된 작은 물고기 떼 주변을 통과하는 넓은 데본기 바다 장면입니다. 등쪽에는 등지느러미가 정확히 하나만 있고, 그 뒤부터 꼬리까지 추가 지느러미 없이 매끈한 등선이 이어집니다. 후반부 몸·단일 등지느러미·꼬리는 모두 비교복원이며, 공격·접촉·피를 그리지 않은 이 만남은 가설이므로 S3 anatomy review로만 사용합니다.",
+      source: "assets/dinosaurs/dunkleosteus-terrelli-single-dorsal-fish-school-ecology-imagegen-v2.png",
+      variant: "단일 등지느러미 뒤 매끈한 등선 데본기 물고기 떼 비접촉 통과 생태 이미지 생성 v2",
+      src: "assets/dinosaurs/dunkleosteus-terrelli-single-dorsal-fish-school-ecology-imagegen-v2.png",
+      gallerySlot: 3,
+      galleryRole: "habitat-ecology",
+      phenotype: "deep-slate-c",
+      habitatKey: "late-devonian-fish-school-open-water",
+      sourceAttribution: "OpenAI built-in image generation; Late Devonian occurrence and feeding biomechanics supplied broad ecological boundaries only",
+      licenseRecord: "Generated project asset; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style was used as generation input",
+      generationPromptRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json#records/dunkleosteus-terrelli-ecology-v2",
+      generationSeed: "service-assigned, not exposed",
+      generationWorkflow: "OpenAI built-in image generation; wide non-contact ecology correction with foreground armor, jaw-plate, exactly-one-dorsal, smooth-post-dorsal-backline, and tail review",
+      reviewStatus: "원본 크기 anatomy-review 수용 · 주 피사체 머리갑옷/단일 등지느러미/뒤쪽 매끈한 등선 판독 · 후반부 전체 비교복원 · 물고기 떼 비접촉/행동 가설 · 대표 승격 금지",
+      locality: "broad Late Devonian North American marine reconstruction; exact community, spacing, visibility and encounter are hypothetical",
+      behaviorEvidence: "a predatory diet is supported, but this school, approach and exact moment are illustrative rather than directly observed",
+      anatomyEvidenceBoundary: "the focal animal keeps its armored head and thorax plus bladed jaw plates; exactly one dorsal fin is followed by a smooth uninterrupted backline to the tail, but this entire posterior body, fin and tail remain comparative reconstruction, and distant fish are simplified",
+      colorEvidence: "deep slate, bronze highlights, blue water and all animal colors are hypothetical",
+      metadataRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json",
+      representativeEligible: false,
+    },
+  ],
+  "otodus-megalodon": [
+    {
+      kind: "count-level pass",
+      title: "메갈로돈 장신형 몸·둔한 주둥이 잠정 복원 대표",
+      body: "신진기 외해의 단독 전신 대표입니다. 넓고 톱니 난 삼각형 이빨이 있는 큰 악상어목 머리, 길게 이어지는 둔한 주둥이, 두 가슴지느러미·큰 제1등지느러미·작은 제2등지느러미·한 꼬리를 확인했습니다. 완전 골격이 없어 백상아리 확대형이 아닌 2025년 장신형 제안을 잠정 시각화했으며, 정확한 지느러미 모양·크기·위치와 전체 체형은 대표 승인 뒤에도 가설입니다.",
+      source: "assets/dinosaurs/otodus-megalodon-elongated-blunt-rostrum-representative-imagegen-v1.png",
+      variant: "2025 잠정 장신형 둔한 주둥이 전신 대표 이미지 생성 v1",
+      src: "assets/dinosaurs/otodus-megalodon-elongated-blunt-rostrum-representative-imagegen-v1.png",
+      gallerySlot: 1,
+      galleryRole: "representative",
+      phenotype: "bluegray-bronze-a",
+      habitatKey: "neogene-warm-open-ocean",
+      sourceAttribution: "OpenAI built-in image generation; fossil teeth, vertebral centra, and peer-reviewed comparative reconstructions supplied factual constraints only",
+      licenseRecord: "Generated project asset; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style was used as generation input",
+      generationPromptRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json#records/otodus-megalodon-representative-v1",
+      generationSeed: "service-assigned, not exposed",
+      generationWorkflow: "OpenAI built-in image generation; fresh fossil-led prompt-to-image using the tentative 2025 elongated body hypothesis, followed by original-size fin and tail count review",
+      reviewStatus: "원본 크기 count-level 검수 통과 · S1 대표 승인 · 완전 골격 부재/2025 장신형 비교복원 잠정 경계",
+      locality: "broad Neogene warm open-ocean reconstruction; exact locality, depth, light and moment are hypothetical",
+      anatomyEvidenceBoundary: "large serrated triangular teeth and vertebral centra are direct evidence; rostrum, elongated body, the shapes, sizes and positions of both dorsal fins and other fins, tail proportions and total length are comparative reconstructions, with the 2025 elongation hypothesis treated as tentative",
+      colorEvidence: "blue gray, bronze countershading and all skin-color placement are hypothetical",
+      metadataRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json",
+      representativeEligible: true,
+    },
+    {
+      kind: "review hold",
+      title: "메갈로돈 오른쪽 진행 암회색·청동 변이",
+      body: "대표와 반대 방향의 높은 사선에서 오른쪽으로 유영하는 암회색·청동색 후보입니다. 두 가슴지느러미와 크기가 다른 두 등지느러미, 한 꼬리는 읽히지만 주둥이·몸·지느러미·꼬리 비율과 색은 완전 골격이 없는 비교복원이라 S2 review hold로만 둡니다.",
+      source: "assets/dinosaurs/otodus-megalodon-rightfacing-slate-bronze-pattern-imagegen-v1.png",
+      variant: "오른쪽 진행 높은 사선 암회색 청동색 반대 구도 이미지 생성 v1",
+      src: "assets/dinosaurs/otodus-megalodon-rightfacing-slate-bronze-pattern-imagegen-v1.png",
+      gallerySlot: 2,
+      galleryRole: "color-pattern",
+      phenotype: "slate-bronze-b",
+      habitatKey: "neogene-sunlit-pelagic-water",
+      sourceAttribution: "OpenAI built-in image generation; fossil and comparative sources supplied tooth and reconstruction boundaries only",
+      licenseRecord: "Generated project asset; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style was used as generation input",
+      generationPromptRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json#records/otodus-megalodon-pattern-v1",
+      generationSeed: "service-assigned, not exposed",
+      generationWorkflow: "OpenAI built-in image generation; fresh opposite-direction high-oblique composition using the tentative elongated identity route",
+      reviewStatus: "원본 크기 review-hold 수용 · 두 등지느러미/가슴지느러미/꼬리 수 판독 · 방향/카메라/팔레트 분리 · 지느러미와 몸 비율 가설 · 대표 승격 금지",
+      anatomyEvidenceBoundary: "a large first and small second dorsal fin, paired pectoral fins and one tail form a coherent shark silhouette; their exact shapes, sizes and positions and all body proportions beyond teeth and centra remain tentative comparative reconstruction",
+      colorEvidence: "slate, bronze, pale underside and every marking location are hypothetical",
+      metadataRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json",
+      representativeEligible: false,
+    },
+    {
+      kind: "anatomy review",
+      title: "메갈로돈과 먼 고래류 신진기 공존 생태",
+      body: "한 메갈로돈이 두 가슴지느러미와 크기가 다른 두 등지느러미, 한 꼬리가 이어진 장신형 실루엣으로 화면 앞쪽을 지나고, 작은 고래류 실루엣은 멀리 떨어져 같은 바다를 이용하는 비접촉 장면입니다. 공격·추격·피를 그리지 않았고 특정 고래 종과의 이 만남은 직접 관찰 자료가 아닌 가설이므로 S3 anatomy review로만 사용합니다.",
+      source: "assets/dinosaurs/otodus-megalodon-neogene-whale-distance-ecology-imagegen-v1.png",
+      variant: "신진기 외해 먼 고래류 비접촉 공존 생태 이미지 생성 v1",
+      src: "assets/dinosaurs/otodus-megalodon-neogene-whale-distance-ecology-imagegen-v1.png",
+      gallerySlot: 3,
+      galleryRole: "habitat-ecology",
+      phenotype: "bluegray-c",
+      habitatKey: "neogene-distant-whale-open-ocean",
+      sourceAttribution: "OpenAI built-in image generation; Neogene marine occurrence and feeding-trace studies supplied broad ecological boundaries only",
+      licenseRecord: "Generated project asset; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style was used as generation input",
+      generationPromptRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json#records/otodus-megalodon-ecology-v1",
+      generationSeed: "service-assigned, not exposed",
+      generationWorkflow: "OpenAI built-in image generation; wide non-contact ecology composition with focal shark fin-count and body-continuity review",
+      reviewStatus: "원본 크기 anatomy-review 수용 · 주 피사체 두 등지느러미/가슴지느러미/꼬리 판독 · 먼 고래류 비접촉 · 몸 비율·행동 가설 · 대표 승격 금지",
+      locality: "broad Neogene open-ocean reconstruction; exact basin, whale taxon, spacing, weather and event are hypothetical",
+      behaviorEvidence: "marine-mammal feeding evidence exists broadly, but this animal, distance, approach and simultaneous scene are illustrative",
+      anatomyEvidenceBoundary: "the focal shark keeps a coherent tentative elongated silhouette with a large first and small second dorsal fin, paired pectoral fins and one tail; exact fin shape, size and position and body form are not known from a complete skeleton, and the distant cetaceans are simplified",
+      colorEvidence: "blue gray shark, bronze edge light, whale tones and water color are hypothetical",
+      metadataRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json",
+      representativeEligible: false,
+    },
+  ],
+  "coelodonta-antiquitatis": [
+    {
+      kind: "count-level pass",
+      title: "털코뿔소 좌우 압축 칼날형 앞뿔·높은 어깨 전신 대표",
+      body: "후기 플라이스토세 매머드 스텝의 단독 전신 대표입니다. 얕은 우측 측면·전면 3/4 구도에서 긴 앞뿔의 넓은 평면과 좁은 가장자리가 함께 읽혀 좌우로 압축된 칼날형 전비각임을 확인했습니다. 더 작은 뒤뿔, 높은 어깨, 작은 귀, 두꺼운 털, 몸에 연결된 네 다리와 네 발, 짧은 꼬리도 확인했으며 털색과 정확한 뿔 곡률은 복원 영역입니다.",
+      source: "assets/dinosaurs/coelodonta-antiquitatis-laterally-compressed-bladehorn-representative-imagegen-v2.png",
+      variant: "얕은 우측 측면 전면 3/4 넓은 평면 좁은 가장자리 좌우 압축 칼날형 앞뿔 전신 대표 이미지 생성 v2",
+      src: "assets/dinosaurs/coelodonta-antiquitatis-laterally-compressed-bladehorn-representative-imagegen-v2.png",
+      gallerySlot: 1,
+      galleryRole: "representative",
+      phenotype: "dark-tawny-a",
+      habitatKey: "late-pleistocene-eurasian-mammoth-steppe",
+      sourceAttribution: "OpenAI built-in image generation; frozen remains, cave art, museum, and peer-reviewed woolly-rhinoceros sources supplied factual constraints only",
+      licenseRecord: "Generated project asset; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style was used as generation input",
+      generationPromptRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json#records/coelodonta-antiquitatis-representative-v2",
+      generationSeed: "service-assigned, not exposed",
+      generationWorkflow: "OpenAI built-in image generation; fresh evidence-led prompt-to-image using a shallow right-side/front three-quarter view, followed by original-size blade-horn plane-and-edge, two-horn, four-limb, four-foot, and tail review",
+      reviewStatus: "원본 크기 count-level 검수 통과 · S1 v2 대표 승인 · 칼날형 앞뿔의 넓은 평면/좁은 가장자리 판독 · 털색/무늬/정확한 뿔 곡률 가설 경계",
+      locality: "broad Late Pleistocene Eurasian mammoth-steppe reconstruction; exact locality, plants, season, weather and moment are hypothetical",
+      anatomyEvidenceBoundary: "the shallow right-side/front three-quarter view shows both the broad plane and narrow edge of a long laterally compressed blade-like anterior nasal horn; high shoulder, compact hairy body, small ears, a smaller posterior horn and short limbs are supported by skeletal, frozen-body and art evidence, while exact horn curvature, feet and fur volume include reconstruction",
+      colorEvidence: "dark tawny brown, gray underfur, pale horn and all color placement are hypothetical",
+      metadataRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json",
+      representativeEligible: true,
+    },
+    {
+      kind: "review hold",
+      title: "털코뿔소 왼쪽 진행 황갈색 반점 변이",
+      body: "대표와 다른 왼쪽 진행·높은 후방 시점의 황갈색 반점 후보입니다. 좌우로 납작한 긴 앞뿔과 작은 뒤뿔, 높은 어깨, 네 다리와 네 발은 읽히지만 강한 원근, 먼쪽 발과 털무늬는 복원 영향이 커 S2 review hold로만 둡니다.",
+      source: "assets/dinosaurs/coelodonta-antiquitatis-leftfacing-tawny-patch-pattern-imagegen-v1.png",
+      variant: "왼쪽 진행 높은 후방 황갈색 반점 털 변이 이미지 생성 v1",
+      src: "assets/dinosaurs/coelodonta-antiquitatis-leftfacing-tawny-patch-pattern-imagegen-v1.png",
+      gallerySlot: 2,
+      galleryRole: "color-pattern",
+      phenotype: "tawny-patch-b",
+      habitatKey: "late-pleistocene-cold-dry-steppe-slope",
+      sourceAttribution: "OpenAI built-in image generation; factual sources supplied horn, coat, and body-plan boundaries only",
+      licenseRecord: "Generated project asset; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style was used as generation input",
+      generationPromptRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json#records/coelodonta-antiquitatis-pattern-v1",
+      generationSeed: "service-assigned, not exposed",
+      generationWorkflow: "OpenAI built-in image generation; fresh opposite-direction elevated rear-oblique composition and hypothetical coat-pattern pass",
+      reviewStatus: "원본 크기 review-hold 수용 · 두 뿔/네 발 판독 · 방향/시점/팔레트 분리 · 털무늬 가설 · 대표 승격 금지",
+      anatomyEvidenceBoundary: "a laterally compressed long anterior horn, smaller posterior horn, high shoulder, four attached limbs, four feet and a short tail remain readable; horn foreshortening, distal digits and fur contours include reconstruction",
+      colorEvidence: "tawny patches, dark legs, cream guard hairs and every pattern location are hypothetical",
+      metadataRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json",
+      representativeEligible: false,
+    },
+    {
+      kind: "anatomy review",
+      title: "털코뿔소와 먼 매머드 가족 매머드 스텝 공존 생태",
+      body: "넓은 매머드 스텝에서 좌우로 납작한 긴 앞뿔과 작은 뒤뿔을 지닌 전경의 한 털코뿔소가 네 발을 드러낸 채 조용히 풀을 먹고, 멀리 떨어진 매머드 가족은 같은 환경을 비접촉으로 이용하는 장면입니다. 두 생물은 겹치거나 상호작용하지 않으며, 정확한 만남과 가족 관계·개체 간 거리는 가설이므로 S3 anatomy review로만 사용합니다.",
+      source: "assets/dinosaurs/coelodonta-antiquitatis-mammoth-steppe-ecology-imagegen-v1.png",
+      variant: "전경 털코뿔소 조용한 채식과 먼 매머드 가족 비접촉 공존 생태 이미지 생성 v1",
+      src: "assets/dinosaurs/coelodonta-antiquitatis-mammoth-steppe-ecology-imagegen-v1.png",
+      gallerySlot: 3,
+      galleryRole: "habitat-ecology",
+      phenotype: "umber-winter-c",
+      habitatKey: "late-pleistocene-woolly-rhino-distant-mammoth-family",
+      sourceAttribution: "OpenAI built-in image generation; woolly-rhinoceros diet, mammoth-steppe habitat, and broad temporal overlap supplied ecological boundaries only",
+      licenseRecord: "Generated project asset; no external artwork, copyrighted reconstruction, franchise frame, or named-artist style was used as generation input",
+      generationPromptRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json#records/coelodonta-antiquitatis-ecology-v1",
+      generationSeed: "service-assigned, not exposed",
+      generationWorkflow: "OpenAI built-in image generation; wide non-contact two-taxon ecology composition with foreground two-horn, four-limb, four-foot, and grazing-pose review",
+      reviewStatus: "원본 크기 anatomy-review 수용 · 전경 털코뿔소 두 뿔/네 발/접지 판독 · 먼 매머드 가족 비접촉 · 공존 장면·가족 관계 가설 · 대표 승격 금지",
+      locality: "broad Late Pleistocene Eurasian mammoth-steppe reconstruction; exact locality, plants, season, weather, spacing and event are hypothetical",
+      behaviorEvidence: "woolly rhinoceroses and woolly mammoths shared broad mammoth-steppe time and habitat, but this simultaneous grazing scene, mammoth family relationship and spacing are illustrative",
+      anatomyEvidenceBoundary: "the foreground rhinoceros retains high shoulders, a laterally compressed long anterior horn, a smaller posterior horn, four visible grounded limbs and a short tail; its grazing pose and fur flow include reconstruction, while the distant mammoths are simplified",
+      colorEvidence: "umber rhinoceros coat, pale guard hairs, horn tones, distant mammoth coats, steppe light and vegetation colors are hypothetical",
+      metadataRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json",
+      representativeEligible: false,
+    },
+  ],
   "arctodus-simus": [
     {
       kind: "count-level pass",
@@ -25280,6 +25753,15 @@ function matchesClassification(dino, classification = state.classification) {
     return dino.rootClade === "Mammalia" || dino.clade === "Mammalia";
   }
   if (classification === "cephalopoda") return dino.rootClade === "Mollusca";
+  if (classification === "arthropoda") return dino.rootClade === "Arthropoda";
+  if (classification === "fishes") {
+    return (
+      dino.rootClade === "Vertebrata" ||
+      dino.rootClade === "Chondrichthyes" ||
+      dino.clade === "Placodermi" ||
+      dino.clade === "Lamniformes"
+    );
+  }
   if (classification === "early-dinosaur") return dino.clade === "Saurischia";
   return false;
 }
@@ -25446,6 +25928,10 @@ function getNodeHeight() {
 }
 
 const taxonPaletteAccents = {
+  "anomalocaris-canadensis": { accent: "#c77a4b", bg: "rgba(43, 39, 42, 0.9)", border: "rgba(199, 122, 75, 0.5)" },
+  "dunkleosteus-terrelli": { accent: "#b5794f", bg: "rgba(30, 42, 48, 0.9)", border: "rgba(181, 121, 79, 0.5)" },
+  "otodus-megalodon": { accent: "#6d9db4", bg: "rgba(24, 39, 49, 0.9)", border: "rgba(109, 157, 180, 0.5)" },
+  "coelodonta-antiquitatis": { accent: "#b1885f", bg: "rgba(45, 40, 35, 0.9)", border: "rgba(177, 136, 95, 0.5)" },
   "mammut-americanum": { accent: "#9b7651", bg: "rgba(45, 40, 34, 0.9)", border: "rgba(155, 118, 81, 0.5)" },
   "megatherium-americanum": { accent: "#9c7b57", bg: "rgba(45, 40, 35, 0.9)", border: "rgba(156, 123, 87, 0.5)" },
   "arctodus-simus": { accent: "#8d7662", bg: "rgba(43, 40, 38, 0.9)", border: "rgba(141, 118, 98, 0.5)" },
@@ -25575,6 +26061,10 @@ const taxonPaletteAccents = {
 };
 
 const taxonPaletteSwatches = {
+  "anomalocaris-canadensis": ["#4a3944", "#74513f", "#c77a4b", "#d8b077"],
+  "dunkleosteus-terrelli": ["#293942", "#5e5550", "#b5794f", "#d0b486"],
+  "otodus-megalodon": ["#243945", "#496a78", "#6d9db4", "#b88b5c"],
+  "coelodonta-antiquitatis": ["#3a312b", "#715942", "#b1885f", "#d2c09d"],
   "mammut-americanum": ["#342d27", "#735943", "#a88761", "#c5b38e"],
   "megatherium-americanum": ["#3b342e", "#705944", "#a18462", "#c8b18f"],
   "arctodus-simus": ["#302d2b", "#594b42", "#8d7662", "#b9aa96"],
@@ -26030,12 +26520,22 @@ function getKnownPhyloChildCount(parentId, nodes, edges) {
 }
 
 function inferPhyloParent(dino) {
+  if (dino.rootClade === "Arthropoda") {
+    return dino.clade === "Radiodonta" ? "radiodonta" : "arthropoda";
+  }
+  if (dino.rootClade === "Vertebrata") {
+    return dino.clade === "Placodermi" ? "placodermi" : "vertebrata";
+  }
+  if (dino.rootClade === "Chondrichthyes") {
+    return dino.clade === "Lamniformes" ? "lamniformes" : "chondrichthyes";
+  }
   if (dino.rootClade === "Pterosauria") return "pterosauria";
   if (dino.rootClade === "Marine Reptilia") return "marine-reptilia";
   if (dino.clade === "Carnivora") return "carnivora";
   if (dino.clade === "Proboscidea") return "proboscidea";
   if (dino.clade === "Pilosa") return "pilosa";
   if (dino.clade === "Cingulata") return "cingulata";
+  if (dino.clade === "Perissodactyla") return "perissodactyla";
   if (dino.rootClade === "Mammalia") return "mammalia";
   if (dino.rootClade === "Synapsida") {
     if (dino.clade === "Sphenacodontia") return "sphenacodontia";
@@ -26156,6 +26656,27 @@ function resolvePhyloNodeCollisions(nodes, filteredIds) {
 }
 
 const phyloEraPackLayouts = {
+  cambrian: {
+    minimumColumns: 3,
+    maximumColumns: 4,
+    topPad: 132,
+    bottomPad: 40,
+    rowGap: phyloLayoutMetrics.taxonRowGap,
+  },
+  devonian: {
+    minimumColumns: 3,
+    maximumColumns: 4,
+    topPad: 132,
+    bottomPad: 40,
+    rowGap: phyloLayoutMetrics.taxonRowGap,
+  },
+  permian: {
+    minimumColumns: 3,
+    maximumColumns: 4,
+    topPad: 132,
+    bottomPad: 40,
+    rowGap: phyloLayoutMetrics.taxonRowGap,
+  },
   triassic: {
     minimumColumns: 6,
     topPad: 132,
@@ -26181,9 +26702,19 @@ const phyloEraPackLayouts = {
     bottomPad: 40,
     rowGap: phyloLayoutMetrics.taxonRowGap,
   },
+  neogene: {
+    minimumColumns: 4,
+    maximumColumns: 4,
+    topPad: 132,
+    bottomPad: 40,
+    rowGap: phyloLayoutMetrics.taxonRowGap,
+  },
 };
 
 const phyloEraCladeOrder = [
+  "Radiodonta",
+  "Placodermi",
+  "Lamniformes",
   "Theropoda",
   "Avialae",
   "Sauropodomorpha",
@@ -26200,6 +26731,7 @@ const phyloEraCladeOrder = [
   "Proboscidea",
   "Pilosa",
   "Cingulata",
+  "Perissodactyla",
   "Ammonoidea",
   "Belemnitida",
 ];
@@ -27691,6 +28223,39 @@ const reviewSortLabels = {
 };
 
 const identityChecklists = {
+  "anomalocaris-canadensis": [
+    "중기 캄브리아기 방사치류 절지동물이며 현대 새우·오징어·물고기·해파리로 바꾸지 않음",
+    "한 머리에 큰 자루눈 정확히 한 쌍과 마디진 전방 부속지 정확히 한 쌍",
+    "입은 머리 배쪽의 삼방사형 구강 원뿔이며 상어 이빨·갑각류 집게·문어 부리 없음",
+    "작은 머리 방패만 단단하게 읽히며 그 뒤 몸통 전체는 갑옷 마디가 없는 부드럽고 유연한 비갑주 형태",
+    "몸 양옆의 얇고 반투명한 수영 엽과 등쪽의 섬세한 강모 날(setal blades); 두꺼운 갑각·딱딱한 몸통 마디 없음",
+    "한 몸 끝에 옆날 3쌍과 중앙 날로 이루어진 꼬리 부채 하나, 갈라진 물고기 꼬리나 여분 꼬리 없음",
+    "갑옷 새우·바닷가재처럼 딱딱한 분절 껍질, 집게와 걷는 다리를 만들지 않으며 색·투명도·먹이 행동은 가설로 명시",
+  ],
+  "dunkleosteus-terrelli": [
+    "후기 데본기 판피어이며 상어·악어·공룡·고래를 그대로 복사하지 않음",
+    "큰 머리와 앞가슴을 덮는 서로 맞물린 골판 갑옷, 머리와 몸 사이 관절을 유지",
+    "입에는 원뿔 이빨 줄 대신 날카롭게 맞물리는 위·아래 턱뼈 판이 보이며 상어 이빨 없음",
+    "머리 갑옷 뒤의 비교적 짧고 굵은 몸 등쪽에는 등지느러미가 정확히 하나만 있고, 그 뒤 꼬리까지 추가 돌기 없이 매끈한 등선이 이어짐",
+    "두 번째·세 번째 등지느러미나 뒤쪽 돌기, 전신 뼈 갑옷, 백상아리형 긴 몸·장어형 꼬리를 만들지 않음",
+    "정확히 하나인 등지느러미를 포함한 후반부 몸·지느러미·꼬리 전체와 길이·몸 단면·피부·색은 비교복원이며 확정하지 않음",
+  ],
+  "otodus-megalodon": [
+    "신진기 오토두스과 악상어목 상어이며 현생 백상아리를 그대로 확대하거나 바다 파충류로 바꾸지 않음",
+    "넓고 두꺼운 삼각형 치관과 잔 톱니가 난 가장자리의 큰 이빨; 송곳니·고래 이빨·뼈 갑옷 없음",
+    "한 머리와 길게 이어지는 둔한 주둥이, 아가미틈, 두 가슴지느러미, 큰 제1등지느러미와 작은 제2등지느러미, 한 꼬리",
+    "완전 골격 부재를 명시하고 2025년 장신형 몸 제안은 잠정 비교복원으로만 사용",
+    "주둥이·몸·두 등지느러미를 포함한 모든 지느러미의 모양·크기·위치, 꼬리 비율과 최대 길이를 확정 사실처럼 제시하지 않음",
+    "피부색·무늬·고래류 접근 행동은 가설이며 피·상처·접촉 공격을 기본 갤러리에 넣지 않음",
+  ],
+  "coelodonta-antiquitatis": [
+    "후기 플라이스토세 코뿔소과 포유류이며 털매머드·들소·현생 무모 코뿔소로 바꾸지 않음",
+    "높은 어깨와 굵은 몸통, 짧고 튼튼한 두 앞다리와 두 뒷다리, 서로 분리된 네 발",
+    "코 위의 넓은 평면과 좁은 가장자리가 읽히는 길고 좌우 압축된 칼날형 앞뿔과 이마 쪽의 더 작은 뒤뿔 정확히 두 개",
+    "작은 귀, 두꺼운 겹털과 짧은 꼬리를 유지하고 현생 코뿔소식 거의 무모 피부 없음",
+    "뿔이 코에서 자연스럽게 이어지며 유니콘형 한 뿔·세 번째 뿔·상아 엄니 없음",
+    "털색·무늬·뿔 곡률·개체 관계와 매머드 가족과의 정확한 공존 장면은 가설로 명시",
+  ],
   "mammut-americanum": [
     "플라이스토세의 마스토돈과 장비목 포유류이며 털매머드·현생 코끼리·공룡으로 바꾸지 않음",
     "낮고 넓은 머리와 비교적 평평한 등, 매머드보다 낮고 다부진 전신 실루엣",
@@ -29022,6 +29587,34 @@ const visualVariationLabels = {
 };
 
 const visualVariationProfiles = {
+  "anomalocaris-canadensis": {
+    color: "대표형은 녹슨 적갈·황토, 변이형은 남청·구리, 생태형은 올리브·적갈로 나누되 모든 생체색은 가설입니다.",
+    pattern: "수영 엽을 따라 불규칙하게 끊기는 낮은 대비 반점만 허용하고 완벽한 좌우 대칭 띠·갑각류 마디 줄·단순 재색칠을 피합니다.",
+    texture: "작은 머리 방패 외에는 부드럽고 유연한 비갑주 몸통, 얇고 반투명한 수영 엽과 섬세한 등쪽 강모 날을 구분합니다. 딱딱한 새우 갑각·두꺼운 몸통 마디·물고기 비늘을 금지합니다.",
+    anatomy: "작은 머리 방패, 자루눈 한 쌍, 마디진 전방 부속지 한 쌍, 배쪽 삼방사형 구강 원뿔, 부드러운 비갑주 몸, 반투명 수영 엽, 섬세한 등쪽 강모 날, 옆날 3쌍과 중앙 날의 꼬리 부채가 핵심입니다.",
+    avoid: "갑옷 새우·바닷가재식 딱딱한 분절 몸통, 새우 집게·걷는 다리·오징어 촉수·물고기 지느러미와 꼬리, 두꺼운 불투명 엽, 추가 눈·부속지·꼬리, 잘린 엽, 동일 방향·카메라 반복",
+  },
+  "dunkleosteus-terrelli": {
+    color: "대표형은 차콜·청동, 변이형은 구리·슬레이트, 생태형은 짙은 청회색으로 분리하며 피부와 갑옷판 색은 모두 가설입니다.",
+    pattern: "갑옷판 경계를 따라 불규칙한 광물성 명암만 사용하고 완벽한 금속 판금·상어 줄무늬·동일 측면 재색칠을 금지합니다.",
+    texture: "머리와 앞가슴의 두꺼운 골판은 읽히게 하되 몸 전체를 갑옷으로 덮지 않습니다. 단일 등지느러미를 포함한 후반부 연조직·지느러미·꼬리는 모두 비교복원임을 드러냅니다.",
+    anatomy: "관절진 머리·흉갑, 원뿔 이빨 없는 날카로운 턱뼈 판, 비교적 짧고 굵은 후반부 몸, 등쪽의 정확히 하나인 등지느러미와 그 뒤 꼬리까지 매끈한 등선이 핵심입니다.",
+    avoid: "백상아리·악어·고래 복제, 상어 이빨 줄, 전신 뼈 갑옷, 과도하게 긴 장어 몸, 두 번째·세 번째 등지느러미나 뒤쪽 돌기, 여분 지느러미·꼬리, 후반부 형태의 확정 표현, 동일 구도 반복",
+  },
+  "otodus-megalodon": {
+    color: "대표형은 청회색·청동, 변이형은 암회색·청동, 생태형은 차가운 청회색으로 분리하되 피부색은 직접 증거가 없습니다.",
+    pattern: "상어형 역음영의 불규칙 경계만 허용하고 범고래 반점·호랑이상어 줄·완벽한 좌우 대칭 띠와 단순 재색칠을 피합니다.",
+    texture: "미세한 상어 피부와 넓은 지느러미를 보이되 비늘판·해양 파충류 피부·고래 주름을 추가하지 않습니다.",
+    anatomy: "톱니 난 큰 삼각형 이빨, 둔한 주둥이, 두 가슴지느러미·큰 제1등지느러미·작은 제2등지느러미·한 꼬리의 잠정 장신형 악상어목 몸입니다.",
+    avoid: "백상아리 확대 복제, 고래·모사사우루스 체형, 원뿔 이빨, 등지느러미 하나 누락·여분 지느러미·꼬리, 지느러미 모양·크기·위치나 2025 몸 비례의 확정 표현, 동일 구도 반복",
+  },
+  "coelodonta-antiquitatis": {
+    color: "대표형은 짙은 황갈색, 변이형은 옅은 황갈색 반점, 생태형은 겨울 엄버로 나누며 정확한 털색과 무늬는 가설입니다.",
+    pattern: "바람·진흙·마모가 만드는 비대칭 털 명암만 사용하고 얼룩말 줄·기린 반점·완벽한 좌우 대칭 패턴과 단순 재색칠을 금지합니다.",
+    texture: "긴 겉털과 조밀한 속털 아래 높은 어깨, 다리 관절과 네 발이 읽히게 하며 현생 코뿔소식 거의 무모 피부를 피합니다.",
+    anatomy: "높은 어깨, 작은 귀, 넓은 평면과 좁은 가장자리가 읽히는 길고 좌우 압축된 칼날형 앞뿔과 작은 뒤뿔, 두꺼운 겹털, 네 다리와 짧은 꼬리가 핵심입니다.",
+    avoid: "털매머드·들소·현생 무모 코뿔소 복제, 한 뿔·세 뿔·상아 엄니, 여분·융합 다리, 긴 꼬리, 동일 방향·카메라 반복",
+  },
   "mammut-americanum": {
     color: "대표형은 짙은 밤갈색과 황갈색, 변이형은 회갈색, 생태형은 습지 숲의 따뜻한 갈색으로 나눕니다. 실제 털색은 미확정입니다.",
     pattern: "매머드식 굵은 줄이나 규칙 얼룩 대신 진흙·빛·털 방향의 불규칙한 명암만 허용하고 같은 측면 자세의 단순 재색칠을 금지합니다.",
@@ -30103,6 +30696,34 @@ const generationRouteLabels = {
 };
 
 const generationRouteGuides = {
+  "anomalocaris-canadensis": {
+    focus: "중기 캄브리아기 Anomalocaris canadensis의 작은 머리 방패, 자루눈과 전방 부속지 한 쌍씩, 배쪽 삼방사형 구강 원뿔, 부드럽고 유연한 비갑주 몸통, 얇고 반투명한 수영 엽, 섬세한 등쪽 강모 날, 옆날 3쌍과 중앙 날의 꼬리 부채를 함께 보존",
+    route: "S1은 갑옷 새우 드리프트를 제거한 부드러운 비갑주 몸의 낮은 측면 전신 count-level 대표, S2는 반대 방향 남청·구리색 review hold, S3은 연한 먹이와 공간을 분리한 넓은 대륙붕 anatomy review로 분리합니다.",
+    control: "assets/dinosaurs/anomalocaris-canadensis-softbody-tailfan-representative-imagegen-v2.png",
+    pass: "작은 머리 방패 외 부드러운 비갑주 몸통 | 자루눈 정확히 두 개 | 전방 부속지 정확히 두 개 | 배쪽 삼방사형 구강 원뿔 | 얇고 반투명한 연속 수영 엽 | 섬세한 등쪽 강모 날 | 옆날 3쌍·중앙 날의 한 꼬리 부채 | 전신 프레임 | 투명도·색·행동 가설 명시 | 세 슬롯 구도 분리",
+    reject: "갑옷 새우·바닷가재식 딱딱한 분절 몸통·두꺼운 갑각·불투명 판형 엽, 집게·걷는 다리·긴 촉수, 현대 새우·오징어·물고기 복제, 추가 눈·부속지·꼬리, 잘린 엽·꼬리, 단단한 먹이 분쇄 확정, 같은 구도 재색칠, S2/S3 대표 승격",
+  },
+  "dunkleosteus-terrelli": {
+    focus: "후기 데본기 Dunkleosteus terrelli의 관절진 머리·흉갑, 원뿔 이빨 없는 날카로운 턱뼈 판, 비교적 짧고 굵은 후반부 몸, 등쪽의 정확히 하나인 등지느러미와 그 뒤 꼬리까지 매끈한 등선을 함께 보존",
+    route: "S1은 갑옷·턱뼈 판·단일 등지느러미·뒤쪽 매끈한 등선이 읽히는 전신 count-level 대표, S2는 왼쪽 진행 구리색 review hold, S3은 물고기 떼와 비접촉하는 넓은 anatomy review로 분리합니다. 세 슬롯 모두 후반부 몸·등지느러미·꼬리 전체를 비교복원으로 표시합니다.",
+    control: "assets/dinosaurs/dunkleosteus-terrelli-single-dorsal-compact-armor-representative-imagegen-v2.png",
+    pass: "큰 머리·흉갑 골판 | 목 관절 | 위아래 날카로운 턱뼈 판 | 원뿔 이빨 없음 | 짧고 굵은 한 몸 | 등지느러미 정확히 하나 | 그 뒤 꼬리까지 매끈한 등선 | 전신 프레임 | 후반부 몸·지느러미·꼬리 전체와 색·행동의 비교복원 경계 | 구도 분리",
+    reject: "백상아리·악어·고래·공룡 복제, 상어 이빨 줄, 전신 갑옷, 장어형 긴 몸, 두 번째·세 번째 등지느러미나 뒤쪽 돌기, 여분·융합 지느러미와 꼬리, 후반부 형태·몸 비례 확정, 같은 구도 반복, S2/S3 대표 승격",
+  },
+  "otodus-megalodon": {
+    focus: "신진기 Otodus megalodon의 넓고 톱니 난 삼각형 이빨, 둔한 주둥이, 두 가슴지느러미·큰 제1등지느러미·작은 제2등지느러미·한 꼬리와 2025년 잠정 장신형 비교복원 경계를 함께 보존",
+    route: "S1은 백상아리 확대 복제를 피한 장신형 전신 count-level 대표, S2는 반대 방향 암회색·청동 review hold, S3은 먼 고래류와 비접촉하는 넓은 anatomy review로 분리합니다. 완전 골격 부재를 모든 슬롯에 명시합니다.",
+    control: "assets/dinosaurs/otodus-megalodon-elongated-blunt-rostrum-representative-imagegen-v1.png",
+    pass: "큰 톱니 삼각 이빨 | 한 머리·둔한 주둥이 | 아가미틈 | 두 가슴지느러미 | 큰 제1등지느러미·작은 제2등지느러미 | 한 꼬리 | 전신 프레임 | 지느러미 모양·크기·위치와 2025 장신형의 잠정 가설·완전 골격 부재 명시 | 방향·카메라·환경 분리",
+    reject: "현생 백상아리 단순 확대, 범고래·고래·모사사우루스 체형, 원뿔 이빨, 등지느러미 하나 누락·여분 지느러미·꼬리, 지느러미 모양·크기·위치나 최대 길이·몸 비례 확정, 접촉 공격·피, 동일 구도 반복, S2/S3 대표 승격",
+  },
+  "coelodonta-antiquitatis": {
+    focus: "후기 플라이스토세 Coelodonta antiquitatis의 높은 어깨, 작은 귀, 넓은 평면과 좁은 가장자리가 함께 읽히는 길고 좌우 압축된 칼날형 앞뿔과 작은 뒤뿔, 두꺼운 겹털, 튼튼한 네 다리와 짧은 꼬리를 함께 보존",
+    route: "S1은 얕은 우측 측면·전면 3/4에서 칼날형 앞뿔의 넓은 평면과 좁은 가장자리, 두 뿔과 네 발이 읽히는 전신 count-level 대표로 고정합니다. S2는 왼쪽 진행 황갈색 반점 review hold, S3은 전경의 네 발이 보이는 조용한 채식과 멀리 분리된 매머드 가족의 비접촉 매머드 스텝 anatomy review로 분리합니다.",
+    control: "assets/dinosaurs/coelodonta-antiquitatis-laterally-compressed-bladehorn-representative-imagegen-v2.png",
+    pass: "높은 어깨 | 작은 귀 | 넓은 평면·좁은 가장자리의 좌우 압축 칼날형 앞뿔·작은 뒤뿔 정확히 두 개 | 두꺼운 겹털 | 두 앞다리·두 뒷다리와 네 발 | 짧은 한 꼬리 | 전신 프레임 | 털색·무늬·행동 가설 명시 | 구도 분리",
+    reject: "털매머드·들소·현생 무모 코뿔소 복제, 한 뿔·세 뿔·상아 엄니, 여분·융합 사지, 긴 꼬리, 깊은 빙원, 공격 행동 확정, 같은 구도 반복, S2/S3 대표 승격",
+  },
   "mammut-americanum": {
     focus: "플라이스토세 Mammut americanum의 낮고 넓은 머리, 비교적 평평한 등, 한 코, 완만하게 위로 굽는 위턱 엄니 두 개, 네 기둥형 다리와 넓은 네 발, 짧은 꼬리를 함께 보존",
     route: "S1은 낮은 측면 전신 count-level 대표, S2는 반대 방향 높은 후방 숲길 review hold, S3는 버드나무를 먹는 넓은 생태 anatomy review로 분리합니다. 매머드 실루엣으로 드리프트하면 즉시 탈락합니다.",

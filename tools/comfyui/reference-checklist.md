@@ -536,3 +536,110 @@ Evidence boundary:
 Promotion rule:
 
 - S1 is the only `count-level pass` representative candidate in this intake. S2 remains `review hold`; S3 remains a two-taxon `anatomy review`. Species-level osteoderm comparison and a separate promotion decision are required before final representative certification.
+
+## Anomalocaris canadensis
+
+Reference anchors:
+
+- Daley & Edgecombe 2014 species morphology: https://doi.org/10.1666/13-067
+- Bicknell et al. 2023 frontal-appendage biomechanics: https://doi.org/10.1098/rspb.2023.0638
+- Royal Ontario Museum Burgess Shale species page: https://burgess-shale.rom.on.ca/fossils/anomalocaris-canadensis/
+
+Must read as:
+
+- a soft, flexible, matte and unmistakably unarmored radiodont with exactly two stalked eyes and exactly two segmented frontal appendages bearing repeated ventral endites, never antennae, lobster claws, or walking legs
+- a ventral triradial oral cone subordinate in side view, sixteen pairs of thin supple overlapping lateral trunk flaps with translucent membrane edges and feathery dorsal setal blades, and one tapered posterior ending in three paired lateral tail-blade sets plus one central blade rather than a fish tail
+
+Reject if:
+
+- it shows thick glossy shell plates, rigid lobster abdominal shields, trilobite armor, hard trunk seams, or stiff bony flap bases; becomes a fish, spider, or front-facing monster mouth; gains antennae, walking legs, true claws, extra eyes or frontal appendages; or loses readable flap and tail-fan continuity
+- a hard-shelled prey attack is presented as established, or the anatomy is cropped or occluded enough to prevent eye, appendage, trunk, and tail review
+
+Evidence boundary:
+
+- Complete fossils are roughly 25 cm, while older near-1 m directions depend on isolated material and reconstruction; do not present 1 m as a certain complete-individual measurement. The soft-prey/open-water direction is analytical. Exact size, living color, soft-tissue thickness, prey identity, pursuit path, seafloor arrangement, and behavior remain reconstructed.
+
+Promotion rule:
+
+- Corrected S1 v2 `anomalocaris-canadensis-softbody-tailfan-representative-imagegen-v2.png` is the sole `count-level pass` representative candidate. Corrected S2 v2 remains `review hold`, and corrected S3 v2 remains `anatomy review`; S2/S3 cannot replace or outrank S1 without a separate anatomy-promotion review. All three former v1 assets are demoted and runtime-ineligible because their trunks retained an armored-shrimp/hard-plate read.
+
+## Dunkleosteus terrelli
+
+Reference anchors:
+
+- Engelman 2023 revised size study: https://doi.org/10.3390/d15030318
+- Engelman 2024 whole-body reconstruction boundary: https://doi.org/10.26879/1343
+- Anderson & Westneat 2007 jaw mechanics: https://doi.org/10.1098/rsbl.2006.0569
+- Cleveland Museum of Natural History overview: https://www.cmnh.org/learn/science-blog/2025/02/07/meet-dunk-ohios-ancient-apex-predator
+
+Must read as:
+
+- a late Devonian arthrodire centered on the Cleveland Shale and Ohio record, with massive articulated bony plates around the head and anterior thorax, a head-thorax joint, and cutting jaw plates rather than true conical teeth
+- a comparatively compact, deep whole-body reconstruction around 3.4 m for a typical adult and about 4.1 m for exceptional specimens, with exactly one dorsal fin and a smooth uninterrupted upper-back line from behind it to the tail base; the complete posterior trunk, fin count and placement, and tail are comparative inferences rather than directly preserved D. terrelli anatomy
+
+Reject if:
+
+- it becomes a long pointed shark, piranha, crocodile, or generic scaled fish; gains rows of shark gill slits, conical shark teeth, more than one dorsal fin, a rear dorsal nub, adipose fin, tuna-like finlets, an eel tail, or a falsely certain posterior-body caption
+- armor plates, jaw plates, gill boundary, fins, or tail are duplicated, disconnected, fused, missing, or cropped enough to block review
+
+Evidence boundary:
+
+- Head and thoracic armor plus cutting jaw plates are fossil-led. The compact posterior body is a recent conservative comparison; exact body section, fin number and placement, tail, skin, color, reef, fish school, movement, and feeding behavior remain reconstructed. S3 is a separated, non-contact fish-school context and establishes no prey species or attack.
+
+Promotion rule:
+
+- Corrected S1 v2 `dunkleosteus-terrelli-single-dorsal-compact-armor-representative-imagegen-v2.png` is the sole `count-level pass` candidate for the explicitly uncertain whole-body model. Corrected S2 v2 remains `review hold`; corrected S3 v2 remains `anatomy review`; neither may be promoted without a separate source-led anatomy review. All three former v1 assets are demoted and runtime-ineligible because multiple upper-back dorsal structures remained; the first S2 correction is also rejected for a residual rear dorsal nub.
+
+## Otodus megalodon
+
+Reference anchors:
+
+- Shimada et al. 2025 provisional biology and body-form study: https://doi.org/10.26879/1502
+- Sternes et al. 2024 great-white proxy critique: https://doi.org/10.26879/1345
+- Smithsonian Ocean overview: https://ocean.si.edu/ocean-life/sharks-rays/megalodon
+- Natural History Museum overview: https://www.nhm.ac.uk/discover/megalodon--the-truth-about-the-largest-shark-that-ever-lived.html
+
+Must read as:
+
+- a tooth-led extinct otodontid lamniform, known mainly from broad thick serrated triangular teeth and some vertebral centra, never a known complete giant great-white skeleton
+- in the current provisional 2025-style gallery only: a long streamlined massive trunk, short blunt broad rostrum, five gill slits, paired pectorals, one large first dorsal and one much smaller second dorsal, pelvic and anal fins, and a vertical caudal fin; every exact body and fin proportion remains uncertain
+
+Reject if:
+
+- it is captioned as a certain scaled-up great white, gains a sharp white-belly boundary, stocky white-shark torpedo body, monster gape, whale flukes, gill cover, orca markings, marine-reptile anatomy, or extra/missing fins
+- the 2024-2025 elongated hypothesis is presented as a preserved outline instead of a working comparison
+
+Evidence boundary:
+
+- Teeth, some vertebrae, broad time range, and otodontid identity are fossil-led. Body length, head, trunk, fin and tail proportions, skin, color, movement, and the pictured whale association remain hypotheses. S3 keeps shark and whale separated by several body lengths and makes no attack, prey-preference, or exact coexistence-event claim.
+
+Promotion rule:
+
+- S1 `otodus-megalodon-elongated-blunt-rostrum-representative-imagegen-v1.png` is the sole `count-level pass` candidate for the clearly labelled provisional reconstruction. S2 remains `review hold`; S3 remains `anatomy review`; neither can validate or outrank S1 without a separate fossil-and-proxy audit.
+
+## Coelodonta antiquitatis
+
+Reference anchors:
+
+- Boeskorov et al. 2011 Kolyma frozen mummy: https://doi.org/10.1016/j.quascirev.2011.02.010
+- Fortelius 1983 horn morphology: https://doi.org/10.1080/02724634.1983.10011964
+- Boeskorov et al. 2024 neck-and-withers fat hump: https://doi.org/10.1016/j.quascirev.2024.109013
+- American Museum of Natural History Ice Age overview: https://research.amnh.org/paleontology/perissodactyl/environment/interval4
+
+Must read as:
+
+- a stocky cold-adapted rhinocerotid with a low head, high withers and modest shoulder-neck hump, dense long coat, small ears, short tail, exactly four attached stocky legs, and exactly four grounded rhinoceros feet
+- exactly two midline keratin horns: a very long, transversely banded anterior nasal horn that is laterally compressed (좌우로 납작), never a round modern-rhino cone, plus a clearly smaller posterior frontal horn
+
+Reject if:
+
+- it becomes a naked modern rhinoceros with fur pasted on, a camel-humped fantasy, or a mammoth; gains a round/conical front horn, third horn, large ears, long tail, hooves, extra/fused limbs, or a three-legged read
+- far-side legs or feet are hidden enough to prevent a confident four-limb and four-foot audit, or footprints become a regular stamped/repeated pattern
+
+Evidence boundary:
+
+- Frozen remains and horn specimens constrain coat, small ears, body soft tissue, a modest withers hump, and the two-horn direction. Exact horn curve and length, coat color and pattern, age, sex, gait, breath, weather, plants, snow, tracks, grazing moment, and distant mammoth grouping remain reconstructed. S3 is non-contact coexistence context only.
+
+Promotion rule:
+
+- Corrected S1 v2 `coelodonta-antiquitatis-laterally-compressed-bladehorn-representative-imagegen-v2.png` is the sole `count-level pass` representative candidate. Its shallow side/front three-quarter view must show a long blade-like front horn with two broad lateral faces, very narrow side-to-side thickness, and transverse bands; a merely long round or conical horn fails. S2 remains `review hold`; S3 remains `anatomy review`; both are prohibited from representative promotion without a separate anatomy audit. The former v1 representative is rejected and must not return to runtime or approval status.

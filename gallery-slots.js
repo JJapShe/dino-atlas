@@ -165,6 +165,122 @@ window.gallerySlotAssignments = {
       "expectedKind": "anatomy review"
     }
   ],
+  "anomalocaris-canadensis": [
+    {
+      "source": "assets/dinosaurs/anomalocaris-canadensis-softbody-tailfan-representative-imagegen-v2.png",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "claimBoundary": "Complete specimens are about 25 cm; a near-1 m direction from isolated material is uncertain. Living color, exact soft tissue and pictured swimming moment remain hypothetical.",
+      "phenotype": "canonical-a",
+      "habitatKey": "middle-cambrian-burgess-shelf-water",
+      "expectedKind": "count-level pass"
+    },
+    {
+      "source": "assets/dinosaurs/anomalocaris-canadensis-rightfacing-softflap-indigo-copper-imagegen-v2.png",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "claimBoundary": "Rear-three-quarter counts, exact body proportions, living color, mottling, light and water remain hypothetical; not representative-eligible.",
+      "phenotype": "variant-b",
+      "habitatKey": "middle-cambrian-open-shelf-bluewater",
+      "expectedKind": "review hold"
+    },
+    {
+      "source": "assets/dinosaurs/anomalocaris-canadensis-softbody-shelf-ecology-imagegen-v2.png",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "claimBoundary": "Soft-prey capability is analytical; exact prey, pursuit, place, water, plants and moment are illustrative only.",
+      "phenotype": "canonical-a",
+      "habitatKey": "middle-cambrian-soft-prey-shelf-ecology",
+      "expectedKind": "anatomy review"
+    }
+  ],
+  "dunkleosteus-terrelli": [
+    {
+      "source": "assets/dinosaurs/dunkleosteus-terrelli-single-dorsal-compact-armor-representative-imagegen-v2.png",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "claimBoundary": "The Cleveland Shale/Ohio armor and jaw plates are direct evidence; complete posterior trunk, fins, tail, skin and color remain inferred.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-devonian-epicontinental-sea",
+      "expectedKind": "count-level pass"
+    },
+    {
+      "source": "assets/dinosaurs/dunkleosteus-terrelli-leftfacing-single-dorsal-copper-pattern-imagegen-v2.png",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "claimBoundary": "Armor weathering, body color, rear perspective, mouth position and all posterior soft anatomy are reconstructed; not representative-eligible.",
+      "phenotype": "variant-b",
+      "habitatKey": "late-devonian-dim-bluewater",
+      "expectedKind": "review hold"
+    },
+    {
+      "source": "assets/dinosaurs/dunkleosteus-terrelli-single-dorsal-fish-school-ecology-imagegen-v2.png",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "claimBoundary": "Fish taxa, schooling response, reef, place, exact coexistence and behavior are illustrative and establish no attack or prey preference.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-devonian-fish-school-open-water",
+      "expectedKind": "anatomy review"
+    }
+  ],
+  "otodus-megalodon": [
+    {
+      "source": "assets/dinosaurs/otodus-megalodon-elongated-blunt-rostrum-representative-imagegen-v1.png",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "claimBoundary": "Teeth and some vertebrae are fossil evidence; every exact head, body, fin and tail proportion in this 2025-style model remains a working hypothesis.",
+      "phenotype": "canonical-a",
+      "habitatKey": "neogene-warm-open-ocean",
+      "expectedKind": "count-level pass"
+    },
+    {
+      "source": "assets/dinosaurs/otodus-megalodon-rightfacing-slate-bronze-pattern-imagegen-v1.png",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "claimBoundary": "Perspective changes apparent fin and body proportions; color and mottling are hypothetical; not representative-eligible.",
+      "phenotype": "variant-b",
+      "habitatKey": "neogene-sunlit-pelagic-water",
+      "expectedKind": "review hold"
+    },
+    {
+      "source": "assets/dinosaurs/otodus-megalodon-neogene-whale-distance-ecology-imagegen-v1.png",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "claimBoundary": "The scene proves no attack, prey preference, exact individual size relation, locality, or coexistence event.",
+      "phenotype": "canonical-a",
+      "habitatKey": "neogene-distant-whale-open-ocean",
+      "expectedKind": "anatomy review"
+    }
+  ],
+  "coelodonta-antiquitatis": [
+    {
+      "source": "assets/dinosaurs/coelodonta-antiquitatis-laterally-compressed-bladehorn-representative-imagegen-v2.png",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "claimBoundary": "Mummies and horn specimens constrain body covering and the side-to-side compressed blade-horn direction; exact curve, living horn surface, coat, soft tissue, weather and pose remain reconstructed. V1 is rejected and cannot return to approval or representative status.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-eurasian-mammoth-steppe",
+      "expectedKind": "count-level pass"
+    },
+    {
+      "source": "assets/dinosaurs/coelodonta-antiquitatis-leftfacing-tawny-patch-pattern-imagegen-v1.png",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "claimBoundary": "Tawny patches, gait, exact horn curve, plants and weather are hypothetical; not representative-eligible.",
+      "phenotype": "variant-b",
+      "habitatKey": "late-pleistocene-cold-dry-steppe-slope",
+      "expectedKind": "review hold"
+    },
+    {
+      "source": "assets/dinosaurs/coelodonta-antiquitatis-mammoth-steppe-ecology-imagegen-v1.png",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "claimBoundary": "Grazing, mammoth family relationship, exact coexistence moment, coat, snow, breath, plants and random tracks are illustrative.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-woolly-rhino-distant-mammoth-family",
+      "expectedKind": "anatomy review"
+    }
+  ],
   "dimetrodon-grandis": [
     {
       "source": "assets/dinosaurs/dimetrodon-grandis-clearfork-sail-canine-representative-imagegen-v1.png",

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dino Atlas MVP</title>
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="./styles.css?v=20260808-arctodus-fossil-led-v1" />
+    <link rel="stylesheet" href="./styles.css?v=20260810-famous-paleo-ceno-v1" />
   </head>
   <body data-active-view="atlas" data-atlas-realm="mesozoic">
     <div class="app-shell">
@@ -125,7 +125,7 @@
               <div class="atlas-mode-actions">
                 <div class="atlas-realm-controls" data-atlas-realm-controls role="group" aria-label="탐색할 지질시대">
                   <button data-atlas-realm="paleozoic" type="button" aria-pressed="false">
-                    <span>고생대</span><small>페름기</small>
+                    <span>고생대</span><small>캄브리아기·데본기·페름기</small>
                   </button>
                   <button class="active" data-atlas-realm="mesozoic" type="button" aria-pressed="true">
                     <span>중생대</span><small>트라이아스기–백악기</small>
@@ -179,6 +179,12 @@
               <button data-classification="cephalopoda" type="button" aria-pressed="false">
                 <span>고대 두족류</span><strong data-classification-count>0</strong>
               </button>
+              <button data-classification="arthropoda" type="button" aria-pressed="false">
+                <span>절지동물</span><strong data-classification-count>0</strong>
+              </button>
+              <button data-classification="fishes" type="button" aria-pressed="false">
+                <span>고대 어류</span><strong data-classification-count>0</strong>
+              </button>
               <button data-classification="early-dinosaur" type="button" aria-pressed="false">
                 <span>초기 용반류</span><strong data-classification-count>0</strong>
               </button>
@@ -191,6 +197,14 @@
               <div class="map-era-controls" id="mapEraControls" role="group" aria-label="시대 구간 이동">
                 <button class="active" data-map-scope="all" type="button" aria-pressed="true">
                   <span>전체</span>
+                  <strong class="map-era-count">0</strong>
+                </button>
+                <button data-map-scope="cambrian" data-realm-scope="paleozoic" type="button" aria-pressed="false" hidden>
+                  <span>캄브리아기</span>
+                  <strong class="map-era-count">0</strong>
+                </button>
+                <button data-map-scope="devonian" data-realm-scope="paleozoic" type="button" aria-pressed="false" hidden>
+                  <span>데본기</span>
                   <strong class="map-era-count">0</strong>
                 </button>
                 <button data-map-scope="permian" data-realm-scope="paleozoic" type="button" aria-pressed="false" hidden>
@@ -289,7 +303,7 @@
             <div class="catalog-toolbar-actions">
               <div class="atlas-realm-controls catalog-realm-controls" data-atlas-realm-controls role="group" aria-label="도감 지질시대">
                 <button data-atlas-realm="paleozoic" type="button" aria-pressed="false">
-                  <span>고생대</span><small>페름기</small>
+                  <span>고생대</span><small>캄브리아기·데본기·페름기</small>
                 </button>
                 <button class="active" data-atlas-realm="mesozoic" type="button" aria-pressed="true">
                   <span>중생대</span><small>트라이아스기–백악기</small>
@@ -341,6 +355,12 @@
             </button>
             <button data-classification="cephalopoda" type="button" aria-pressed="false">
               <span>고대 두족류</span><strong data-classification-count>0</strong>
+            </button>
+            <button data-classification="arthropoda" type="button" aria-pressed="false">
+              <span>절지동물</span><strong data-classification-count>0</strong>
+            </button>
+            <button data-classification="fishes" type="button" aria-pressed="false">
+              <span>고대 어류</span><strong data-classification-count>0</strong>
             </button>
             <button data-classification="early-dinosaur" type="button" aria-pressed="false">
               <span>초기 용반류</span><strong data-classification-count>0</strong>
@@ -507,13 +527,13 @@
       </section>
     </div>
 
-  <script src="./gallery-slots.js?v=20260808-arctodus-fossil-led-v1"></script>
+  <script src="./gallery-slots.js?v=20260810-famous-paleo-ceno-v1"></script>
   <script src="./ecosystem-scenes.js?v=20260807-subject-motion-trackway-v2"></script>
   <script src="./motion-samples.js?v=20260807-subject-motion-policy-v1"></script>
   <script src="./motion-m1-samples.js?v=20260807-subject-motion-policy-v1"></script>
   <script src="./motion-m2-samples.js?v=20260807-subject-motion-policy-v1"></script>
   <script src="./motion-m2-i2v-samples.js?v=20260807-giganotosaurus-subject-motion-v1"></script>
-  <script src="./app.js?v=20260808-arctodus-fossil-led-v1"></script>
+  <script src="./app.js?v=20260810-famous-paleo-ceno-v1"></script>
     <script src="./atlas-layout.js?v=20260731-resizable-inspector-v1"></script>
   </body>
 </html>

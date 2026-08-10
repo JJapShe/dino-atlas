@@ -50,6 +50,27 @@ const FALLBACK_SWATCHES = {
 };
 
 const HABITATS = {
+  "burgess-shale-cambrian-shelf": {
+    substrate: "middle Cambrian offshore mud and fine carbonate sediment with scattered sponge grounds",
+    vegetation: "no land plants or modern sea grass; sparse sponges, microbial mats, and small benthic invertebrates only",
+    moisture: "fully marine Burgess Shale shelf water",
+    light: "soft blue-green underwater daylight with suspended sediment and clear animal silhouettes",
+    backgroundPalette: ["#315f6d", "#6c8d83", "#b9a678"],
+  },
+  "cleveland-shale-devonian-sea": {
+    substrate: "late Devonian tropical shelf mud, low reef debris, and an open-water drop-off",
+    vegetation: "no flowering plants or modern kelp; restrained stromatoporoid and tabulate-coral reef structure",
+    moisture: "fully marine warm shallow sea",
+    light: "clear teal underwater daylight with readable armor plates and no cinematic red cast",
+    backgroundPalette: ["#254d58", "#617c72", "#9a835d"],
+  },
+  "neogene-open-ocean": {
+    substrate: "deep continental-shelf edge and open-water blue space with no visible modern infrastructure",
+    vegetation: "sparse distant schooling fish; no coral garden, sea grass meadow, or anachronistic marine reptiles",
+    moisture: "fully marine Neogene offshore water",
+    light: "cool blue-green sun shafts with enough side light to read the full shark silhouette",
+    backgroundPalette: ["#173a4b", "#3d7185", "#799aa4"],
+  },
   "arid-redbed": {
     substrate: "oxidized red and ochre sediment",
     vegetation: "sparse conifers, cycads, ferns, and muted gray-green scrub",
@@ -630,7 +651,11 @@ function suggestUnregisteredSource(sources, roleKey) {
 function habitatFor(dino, route) {
   const text = `${dino.era} ${dino.region} ${dino.summary || ""} ${route?.focus || ""} ${route?.pass || ""}`.toLowerCase();
   let key = "conifer-fern-floodplain";
-  if (dino.id === "mammuthus-primigenius") key = "mammoth-steppe-tundra";
+  if (dino.id === "anomalocaris-canadensis") key = "burgess-shale-cambrian-shelf";
+  else if (dino.id === "dunkleosteus-terrelli") key = "cleveland-shale-devonian-sea";
+  else if (dino.id === "otodus-megalodon") key = "neogene-open-ocean";
+  else if (dino.id === "coelodonta-antiquitatis") key = "mammoth-steppe-tundra";
+  else if (dino.id === "mammuthus-primigenius") key = "mammoth-steppe-tundra";
   else if (dino.id === "smilodon-fatalis") key = "late-pleistocene-open-woodland-dry-wash";
   else if (dino.id === "mammut-americanum") key = "mastodon-woodland-wetland";
   else if (dino.id === "megatherium-americanum") key = "megatherium-pampean-woodland-grassland";

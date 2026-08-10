@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-08T02:05:25.920Z",
-  "reviewBatch": "2026-08-08-arctodus-fossil-led-bodyplan-v1",
-  "reviewMethod": "Preserved all prior approved decisions and replaced only the three Arctodus simus decisions after renewed original-size anatomy review. The correction audit covered high broad cranium and deep rostrum, non-bulldog muzzle, compact straight back, rounded grizzly-hump exclusion, four attached robust limbs, grounded plantigrade paws, single short tail, hand-like paw and duplicate-tail artifacts, modern-brown-bear drift, composition separation, habitat and behavior boundaries, and crop and watermark exclusion. Arctodus slot 1 alone is representative-eligible; slots 2 and 3 remain gallery-only review material.",
-  "targetSlots": 859,
+  "generatedAt": "2026-08-10T03:30:00.000Z",
+  "reviewBatch": "2026-08-10-paleozoic-cenozoic-famous-life-v2",
+  "reviewMethod": "Preserved every prior approved decision, then replaced the Anomalocaris trio after renewed soft-body review, the Dunkleosteus trio after renewed single-dorsal review, and Coelodonta S1 after renewed horn cross-section review. Anomalocaris v2 requires a matte flexible unarmored trunk, thin supple translucent-edged flaps and feathery dorsal setal blades; its armored-shrimp v1 trio is rejected. Dunkleosteus v2 requires exactly one dorsal fin and a smooth uninterrupted post-dorsal back to the tail base; its multiple-dorsal v1 trio and first S2 correction are rejected. The Coelodonta v2 gate requires broad lateral horn faces and a narrow side-to-side edge. Review also covered taxon-specific fossil-led cues, full-frame and appendage counts, reconstructed-body boundaries, non-contact ecology, random rather than stamped track patterns, artifact and modern-animal drift, crop, text, logo, and watermark exclusion. Slot 1 alone is count-level representative-eligible for each new taxon; slots 2 and 3 remain gallery-only review material.",
+  "targetSlots": 871,
   "taxa": {
     "mammuthus-primigenius": {
       "1": {
@@ -193,6 +193,142 @@
         "reviewedAt": "2026-08-07T19:06:34.925Z",
         "gallerySubrole": "gallery-only non-contact coexistence reference",
         "claimBoundary": "Both genera occurred in Pleistocene South America, but this exact locality, spacing, shared moment, and behavior remain hypothetical."
+      }
+    },
+    "anomalocaris-canadensis": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/anomalocaris-canadensis-softbody-tailfan-representative-imagegen-v2.png",
+        "role": "representative",
+        "reason": "Passed renewed original-size count and identity review for one complete radiodont with two stalked eyes, one frontal-appendage pair, a side-subordinate ventral oral cone, a matte flexible unarmored trunk, thin translucent-edged flaps, feathery dorsal setal blades, and one complete seven-blade tail fan; exact soft tissue, color and pose remain reconstruction.",
+        "reviewMethod": "Original-size v1-versus-v2 full-frame identity, animal-count, eye and appendage-pair, oral-cone placement, matte soft-trunk, thin flexible flap, feathery setal-blade, seven-blade tail-fan, crop, artifact, text, and armored-shrimp/trilobite-drift audit",
+        "reviewBatch": "2026-08-10-paleozoic-cenozoic-famous-life-v2",
+        "reviewedAt": "2026-08-10T03:25:00.000Z",
+        "claimBoundary": "Complete specimens are about 25 cm; a near-1 m direction from isolated material is uncertain. Living color, exact soft tissue and pictured swimming moment remain hypothetical."
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/anomalocaris-canadensis-rightfacing-softflap-indigo-copper-imagegen-v2.png",
+        "role": "color-pattern",
+        "reason": "Approved for gallery comparison only after soft-body correction: a right-facing rear-three-quarter camera and irregular indigo-copper palette differ materially from slot 1 while paired eyes, frontal appendages, matte unarmored trunk, flexible flaps and tail remain readable. Foreshortening and hypothetical color prohibit representative promotion.",
+        "reviewMethod": "Original-size v1-versus-v2 identity, direction, camera, eye and appendage pair, matte soft-trunk, translucent flexible flap, feathery setal-blade, tail-fan, color-pattern, crop, artifact, armored-shrimp drift, and edit-isolation audit",
+        "reviewBatch": "2026-08-10-paleozoic-cenozoic-famous-life-v2",
+        "reviewedAt": "2026-08-10T03:25:00.000Z",
+        "gallerySubrole": "gallery-only color and high-rear composition comparison",
+        "claimBoundary": "Rear-three-quarter counts, exact body proportions, living color, mottling, light and water remain hypothetical; not representative-eligible."
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/anomalocaris-canadensis-softbody-shelf-ecology-imagegen-v2.png",
+        "role": "habitat-ecology",
+        "reason": "Approved for anatomy-review habitat context after soft-body correction: the matte unarmored trunk, thin flexible flaps, both frontal appendages and both stalked eyes remain readable, and tiny soft prey stay well ahead without contact. Scale, prey, habitat and pursuit behavior prohibit representative promotion.",
+        "reviewMethod": "Original-size v1-versus-v2 bilateral eye and frontal-appendage separation, oral-cone, matte soft-trunk, translucent flexible flap, feathery setal-blade, seven-blade tail, prey spacing, non-contact behavior, crop, artifact, armored-shrimp drift, and habitat audit",
+        "reviewBatch": "2026-08-10-paleozoic-cenozoic-famous-life-v2",
+        "reviewedAt": "2026-08-10T03:25:00.000Z",
+        "gallerySubrole": "gallery-only soft-prey and middle-Cambrian habitat reference",
+        "claimBoundary": "Soft-prey capability is analytical; exact prey, pursuit, place, water, plants and moment are illustrative only."
+      }
+    },
+    "dunkleosteus-terrelli": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/dunkleosteus-terrelli-single-dorsal-compact-armor-representative-imagegen-v2.png",
+        "role": "representative",
+        "reason": "Passed renewed original-size count and identity review for one blunt armored head and anterior thorax with readable plate seams and joint, cutting jaw plates without a conical tooth row, a compact body, exactly one dorsal fin, a smooth back to the tail base, and one vertical tail. The post-thoracic body remains comparative reconstruction.",
+        "reviewMethod": "Original-size v1-versus-v2 full-frame armor, joint, jaw-plate, tooth exclusion, compact-body, exactly-one-dorsal count, smooth post-dorsal back, ventral-fin placement, vertical tail, crop, artifact, text, shark, tuna-finlet, and multiple-dorsal drift audit",
+        "reviewBatch": "2026-08-10-paleozoic-cenozoic-famous-life-v2",
+        "reviewedAt": "2026-08-10T03:25:00.000Z",
+        "claimBoundary": "The Cleveland Shale/Ohio armor and jaw plates are direct evidence; complete posterior trunk, fins, tail, skin and color remain inferred."
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/dunkleosteus-terrelli-leftfacing-single-dorsal-copper-pattern-imagegen-v2.png",
+        "role": "color-pattern",
+        "reason": "Approved for gallery comparison only after a second correction removed the rear dorsal nub: the left-facing rear-three-quarter view now has exactly one dorsal and a smooth back to the tail base. Perspective, hypothetical plate surface, and inferred posterior anatomy prohibit representative promotion.",
+        "reviewMethod": "Original-size old-v1/intermediate/final-v2 edit-isolation, identity, direction, camera, armor, jaw, exactly-one-dorsal count, removed rear nub, smooth post-dorsal back, ventral-fin placement, vertical tail, pattern, crop, artifact, and shark drift audit",
+        "reviewBatch": "2026-08-10-paleozoic-cenozoic-famous-life-v2",
+        "reviewedAt": "2026-08-10T03:25:00.000Z",
+        "gallerySubrole": "gallery-only color and rear-three-quarter composition comparison",
+        "claimBoundary": "Armor weathering, body color, rear perspective, mouth position and all posterior soft anatomy are reconstructed; not representative-eligible."
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/dunkleosteus-terrelli-single-dorsal-fish-school-ecology-imagegen-v2.png",
+        "role": "habitat-ecology",
+        "reason": "Approved for anatomy-review habitat context after single-dorsal correction: the complete main animal has exactly one dorsal and a smooth back to the tail base, and remains spatially separate from a small fish school with no contact, bite, capture, or gore. Small scale and ecological hypotheses prohibit representative promotion.",
+        "reviewMethod": "Original-size v1-versus-v2 main-animal, armor, jaw, exactly-one-dorsal count, smooth post-dorsal back, ventral-fin placement, vertical tail, fish-school separation, non-contact behavior, habitat, crop, artifact, shark/crocodile, tuna-finlet, and multiple-dorsal drift audit",
+        "reviewBatch": "2026-08-10-paleozoic-cenozoic-famous-life-v2",
+        "reviewedAt": "2026-08-10T03:25:00.000Z",
+        "gallerySubrole": "gallery-only non-contact late-Devonian fish-school context",
+        "claimBoundary": "Fish taxa, schooling response, reef, place, exact coexistence and behavior are illustrative and establish no attack or prey preference."
+      }
+    },
+    "otodus-megalodon": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/otodus-megalodon-elongated-blunt-rostrum-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed original-size count-level review for an explicitly provisional elongated lamniform reconstruction with a short blunt broad rostrum, five gill slits, long paired pectorals, a large first and small second dorsal, pelvic and anal fins, and one vertical tail without sharp great-white countershading. No complete skeleton or known body outline is claimed.",
+        "reviewMethod": "Original-size single-animal, full-frame, rostrum, five-gill, pectoral, two-dorsal, pelvic, anal, vertical-tail, tooth restraint, color boundary, crop, artifact, text, whale-fluke, marine-reptile, and great-white-drift audit",
+        "reviewBatch": "2026-08-10-paleozoic-cenozoic-famous-life-v1",
+        "reviewedAt": "2026-08-10T00:45:00.000Z",
+        "claimBoundary": "Teeth and some vertebrae are fossil evidence; every exact head, body, fin and tail proportion in this 2025-style model remains a working hypothesis."
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/otodus-megalodon-rightfacing-slate-bronze-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "reason": "Approved for gallery comparison only: the right-facing low-front camera, upward cruise and slate-blue with irregular bronze mottling differ materially from slot 1 while the cautious two-dorsal fin plan remains readable. Perspective and speculative color prohibit anatomical confirmation or representative promotion.",
+        "reviewMethod": "Original-size identity, direction, camera, gill, fin, tail, color-pattern, tooth, crop, artifact, great-white-drift, and same-composition audit",
+        "reviewBatch": "2026-08-10-paleozoic-cenozoic-famous-life-v1",
+        "reviewedAt": "2026-08-10T00:45:00.000Z",
+        "gallerySubrole": "gallery-only color and low-front composition comparison",
+        "claimBoundary": "Perspective changes apparent fin and body proportions; color and mottling are hypothetical; not representative-eligible."
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/otodus-megalodon-neogene-whale-distance-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "reason": "Approved for anatomy-review habitat context only: one elongated shark and one distant small baleen whale remain anatomically separate by several body lengths, with no contact, bite, or kill. Distant scale, body-model uncertainty, whale association and behavior prohibit representative promotion.",
+        "reviewMethod": "Original-size shark and whale count, separation, main-shark silhouette, fin and tail plan, mammalian whale fluke, non-contact behavior, school randomness, habitat, crop, artifact, and marine-reptile drift audit",
+        "reviewBatch": "2026-08-10-paleozoic-cenozoic-famous-life-v1",
+        "reviewedAt": "2026-08-10T00:45:00.000Z",
+        "gallerySubrole": "gallery-only non-contact shark-whale context",
+        "claimBoundary": "The scene proves no attack, prey preference, exact individual size relation, locality, or coexistence event."
+      }
+    },
+    "coelodonta-antiquitatis": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/coelodonta-antiquitatis-laterally-compressed-bladehorn-representative-imagegen-v2.png",
+        "role": "representative",
+        "reason": "Passed renewed original-size count and horn cross-section review after demoting v1 and rejecting an intermediate correction: one long blade-like nasal horn shows broad lateral faces, narrow side-to-side thickness and transverse growth bands, with one much smaller rear horn. Dense coat, high withers, four connected grounded limbs and feet, and one short tail remain readable.",
+        "reviewMethod": "Original-size single-animal, full-frame, shallow side/front three-quarter cross-section, two-horn count, broad lateral faces, narrow transverse edge, dorsoventral-height versus side-to-side-thickness, growth bands, rear-horn size, low head, withers, coat, four-limb and four-foot, tail, crop, artifact, cylindrical-horn, camel-hump, modern-rhino, and duplication audit",
+        "reviewBatch": "2026-08-10-paleozoic-cenozoic-famous-life-v1",
+        "reviewedAt": "2026-08-10T01:00:00.000Z",
+        "claimBoundary": "Mummies and horn specimens constrain body covering and the side-to-side compressed blade-horn direction; exact curve, living horn surface, coat, soft tissue, weather and pose remain reconstructed. V1 is rejected and cannot return to approval or representative status."
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/coelodonta-antiquitatis-leftfacing-tawny-patch-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "reason": "Approved for gallery comparison after rejecting a far-side-limb failure: the strict left profile shows four separate attached legs and grounded feet, two horns, high withers, dense coat, and a materially different charcoal-and-tawny autumn palette. Color, gait and soft tissue prohibit representative promotion.",
+        "reviewMethod": "Original-size single-animal, four-limb and four-foot separation, two-horn count, laterally compressed horn, withers, coat, tail, direction, camera, pattern, crop, artifact, and modern-rhino drift audit",
+        "reviewBatch": "2026-08-10-paleozoic-cenozoic-famous-life-v1",
+        "reviewedAt": "2026-08-10T00:45:00.000Z",
+        "gallerySubrole": "gallery-only color, direction, and four-foot comparison",
+        "claimBoundary": "Tawny patches, gait, exact horn curve, plants and weather are hypothetical; not representative-eligible."
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/coelodonta-antiquitatis-mammoth-steppe-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "reason": "Approved for anatomy-review habitat context after replacing a far-side-limb failure: the foreground grazing rhinoceros has four readable attached legs and feet, while the distant mammoth family remains non-overlapping and non-contacting. Ecology, grouping, snow, breath and tracks prohibit representative promotion.",
+        "reviewMethod": "Original-size rhino and mammoth count, rhino four-limb and four-foot separation, two-horn and coat cues, mammoth distance and non-overlap, non-contact behavior, track randomness, habitat, crop, artifact, and modern-rhino drift audit",
+        "reviewBatch": "2026-08-10-paleozoic-cenozoic-famous-life-v1",
+        "reviewedAt": "2026-08-10T00:45:00.000Z",
+        "gallerySubrole": "gallery-only grazing and distant-mammoth coexistence reference",
+        "claimBoundary": "Grazing, mammoth family relationship, exact coexistence moment, coat, snow, breath, plants and random tracks are illustrative."
       }
     },
     "dimetrodon-grandis": {
@@ -8077,6 +8213,24 @@
     }
   },
   "rejectedSources": {
+    "assets/dinosaurs/anomalocaris-canadensis-stalked-eyes-tailfan-representative-imagegen-v1.png": {
+      "reason": "Renewed original-size review found glossy thick trunk divisions and flap bases that read as rigid armored-shrimp or lobster plates rather than unmistakably soft unarmored radiodont tissue; the former representative is demoted and runtime-ineligible."
+    },
+    "assets/dinosaurs/anomalocaris-canadensis-rightfacing-indigo-copper-pattern-imagegen-v1.png": {
+      "reason": "The hard segmented trunk surface and thick flap bases retained armored-shrimp drift, so this former color/view approval is demoted and runtime-ineligible."
+    },
+    "assets/dinosaurs/anomalocaris-canadensis-soft-prey-shelf-ecology-imagegen-v1.png": {
+      "reason": "The trunk remained a stack of hard articulated plates rather than supple unarmored tissue, so this former ecology approval is demoted and runtime-ineligible despite acceptable prey spacing."
+    },
+    "assets/dinosaurs/dunkleosteus-terrelli-compact-armor-jawplates-representative-imagegen-v1.png": {
+      "reason": "Renewed fin-count review found more than one upper-back dorsal structure, violating the exactly-one-dorsal gate; the former representative is demoted and runtime-ineligible."
+    },
+    "assets/dinosaurs/dunkleosteus-terrelli-leftfacing-copper-armor-pattern-imagegen-v1.png": {
+      "reason": "A rear upper-trunk dorsal nub remained in addition to the main dorsal fin, so this former color/view approval is demoted and runtime-ineligible."
+    },
+    "assets/dinosaurs/dunkleosteus-terrelli-devonian-fish-school-ecology-imagegen-v1.png": {
+      "reason": "Multiple dorsal structures remained on the reconstructed upper trunk, so this former ecology approval is demoted and runtime-ineligible despite acceptable fish-school separation."
+    },
     "assets/dinosaurs/elmisaurus-rarus-longlegged-crest-imagegen-v1.png": {
       "reason": "The former representative has a generic modern chicken- or ostrich-like head and fleshy comb, probable four-finger hands, and three hind legs or feet."
     },
@@ -9540,6 +9694,9 @@
     },
     "assets/dinosaurs/microraptor-gui-canopy-launch-indigo-emerald-ecology-imagegen-v1.png": {
       "reason": "The launch frame repeats the selected airborne role, while the two hindwing surfaces do not attach cleanly to the two legs and instead read as extra torso- or tail-rooted feather fans."
+    },
+    "assets/dinosaurs/coelodonta-antiquitatis-flattened-horn-woolly-representative-imagegen-v1.png": {
+      "reason": "Demoted after renewed original-size horn cross-section review: the anterior horn still reads too round and conical, without an unmistakable side-to-side compressed blade section with broad lateral faces and a narrow transverse edge. Runtime and approved-asset removal is scheduled; never reselect this file as a positive representative."
     }
   }
 }

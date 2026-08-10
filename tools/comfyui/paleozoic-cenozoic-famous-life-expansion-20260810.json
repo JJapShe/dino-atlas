@@ -1,0 +1,805 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-10-paleozoic-cenozoic-famous-life-expansion-1",
+  "createdAt": "2026-08-10T09:45:00+09:00",
+  "audience": "Korean Dino Atlas users ages 5-14",
+  "scope": [
+    "Anomalocaris canadensis three-image Paleozoic gallery",
+    "Dunkleosteus terrelli three-image Paleozoic gallery",
+    "Otodus megalodon three-image Cenozoic gallery",
+    "Coelodonta antiquitatis three-image Cenozoic gallery"
+  ],
+  "promptEncoding": "Each prompt array preserves the exact single nonblank string supplied to the image generator for the accepted call.",
+  "copyrightSafety": {
+    "externalArtworkUsed": false,
+    "externalImagesUsedAsGenerationInput": false,
+    "projectGeneratedReferenceOnly": "Anomalocaris v2 corrected each corresponding v1 project-generated private original to remove armored-shrimp drift. Dunkleosteus v2 corrected each corresponding v1 project-generated private original to enforce exactly one dorsal fin; final S2 additionally used its private intermediate correction exec-d7ed179f. Otodus S2/S3 used accepted S1 only as an identity reference. Coelodonta S1 v1 used rejected project-generated exec-7719c4f2 as an edit base, while accepted Coelodonta S1 v2 and S2/S3 used the project-generated S1 v1 private original exec-d8587036 as a reference. No museum photograph, published reconstruction, web image, franchise frame, or named-artist work was supplied to ImageGen.",
+    "licenseRecord": "All approved bitmaps are original project-generated outputs from OpenAI built-in image generation. Factual source text informed anatomy and evidence boundaries only. No external artwork licence is inherited by the generated assets.",
+    "rejectedOriginalPolicy": "Private-only rejected attempts remain trace-only provenance under C:/Users/USER/.codex/generated_images and were never copied. Demoted runtime exceptions are the former Anomalocaris v1 trio, Dunkleosteus v1 trio, and Coelodonta S1 v1: each had been copied before renewed anatomy review, is now runtime-ineligible, and is scheduled for approved-asset removal by the integration owner.",
+    "appPathPolicy": "Runtime and app metadata may reference approved assets/dinosaurs paths only; private .codex/generated_images paths are provenance-only and must never become app asset paths."
+  },
+  "researchSources": [
+    {
+      "taxon": "Anomalocaris canadensis",
+      "citation": "Daley, A. C. & Edgecombe, G. D. 2014. Morphology of Anomalocaris canadensis from the Burgess Shale. Journal of Paleontology 88:68-91.",
+      "url": "https://doi.org/10.1666/13-067",
+      "use": "Species-specific oral cone, frontal appendage, setal blade, trunk flap, and tail-fan anatomy, including three pairs of lateral tail blades plus a central blade",
+      "rightsUse": "Factual and analytical reference only; no article figure or reconstruction was supplied to the generator"
+    },
+    {
+      "taxon": "Anomalocaris canadensis",
+      "citation": "Bicknell, R. D. C. et al. 2023. Raptorial appendages of the Cambrian apex predator Anomalocaris canadensis are built for soft prey and speed. Proceedings of the Royal Society B 290:20230638.",
+      "url": "https://doi.org/10.1098/rspb.2023.0638",
+      "use": "Biomechanical support for a soft-prey, open-water ecology direction while keeping exact prey and event hypothetical",
+      "rightsUse": "Factual and analytical reference only; no article figure or reconstruction was supplied to the generator"
+    },
+    {
+      "taxon": "Anomalocaris canadensis",
+      "citation": "Royal Ontario Museum. Burgess Shale Fossil Gallery: Anomalocaris canadensis.",
+      "url": "https://burgess-shale.rom.on.ca/fossils/anomalocaris-canadensis/",
+      "use": "Museum-level species occurrence, identity, size range, swimming-flap, eye, appendage, oral-cone, and tail-fan overview",
+      "rightsUse": "Catalogue and educational facts only; no museum image was supplied to the generator"
+    },
+    {
+      "taxon": "Dunkleosteus terrelli",
+      "citation": "Engelman, R. K. 2023. A Devonian Fish Tale: A New Method of Body Length Estimation Suggests Much Smaller Sizes for Dunkleosteus terrelli (Placodermi: Arthrodira). Diversity 15:318.",
+      "url": "https://doi.org/10.3390/d15030318",
+      "use": "Revised typical and exceptional adult length estimates and deep-bodied arthrodire proportional boundary",
+      "rightsUse": "Factual and analytical reference only; no article figure or reconstruction was supplied to the generator"
+    },
+    {
+      "taxon": "Dunkleosteus terrelli",
+      "citation": "Engelman, R. K. 2024. Reconstructing Dunkleosteus terrelli (Placodermi: Arthrodira): A new look for an iconic Devonian predator. Palaeontologia Electronica 27(3):a45.",
+      "url": "https://doi.org/10.26879/1343",
+      "use": "Conservative compact-body comparison and explicit uncertainty for the unpreserved post-thoracic body, fins, and tail",
+      "rightsUse": "Factual and analytical reference only; no article figure or reconstruction was supplied to the generator"
+    },
+    {
+      "taxon": "Dunkleosteus terrelli",
+      "citation": "Anderson, P. S. L. & Westneat, M. W. 2007. Feeding mechanics and bite force modelling of the skull of Dunkleosteus terrelli, an ancient apex predator. Biology Letters 3:77-80.",
+      "url": "https://doi.org/10.1098/rsbl.2006.0569",
+      "use": "Skull-joint, jaw mechanics, and cutting jaw-plate functional context",
+      "rightsUse": "Factual and analytical reference only; no article figure or reconstruction was supplied to the generator"
+    },
+    {
+      "taxon": "Dunkleosteus terrelli",
+      "citation": "Cleveland Museum of Natural History. 2025. Meet Dunk, Ohio's Ancient Apex Predator.",
+      "url": "https://www.cmnh.org/learn/science-blog/2025/02/07/meet-dunk-ohios-ancient-apex-predator",
+      "use": "Museum educational check for late Devonian occurrence, articulated armor, and toothless cutting jaw plates",
+      "rightsUse": "Educational facts only; no museum image or exhibit reconstruction was supplied to the generator"
+    },
+    {
+      "taxon": "Otodus megalodon",
+      "citation": "Shimada, K. et al. 2025. Reassessment of the possible size, form, weight, cruising speed, and growth parameters of the extinct megatooth shark, Otodus megalodon, and new evolutionary insights. Palaeontologia Electronica 28(1):a12.",
+      "url": "https://doi.org/10.26879/1502",
+      "use": "Tentative elongated lamniform body-form hypothesis, large-body estimates, and explicit working-hypothesis boundary",
+      "rightsUse": "Factual and analytical reference only; no article silhouette, figure, or reconstruction was supplied to the generator"
+    },
+    {
+      "taxon": "Otodus megalodon",
+      "citation": "Sternes, P. C. et al. 2024. White shark comparison reveals a slender body for the extinct megatooth shark, Otodus megalodon (Lamniformes: Otodontidae). Palaeontologia Electronica 27(1):a7.",
+      "url": "https://doi.org/10.26879/1345",
+      "use": "Evidence that a scaled-up extant white-shark body lacks direct fossil support and that exact body form remains unresolved",
+      "rightsUse": "Factual and analytical reference only; no article silhouette, figure, or reconstruction was supplied to the generator"
+    },
+    {
+      "taxon": "Otodus megalodon",
+      "citation": "Smithsonian Ocean. Megalodon.",
+      "url": "https://ocean.si.edu/ocean-life/sharks-rays/megalodon",
+      "use": "Museum-level public overview of serrated teeth, Neogene range, marine-mammal context, and fossil incompleteness",
+      "rightsUse": "Educational facts only; no Smithsonian image was supplied to the generator"
+    },
+    {
+      "taxon": "Otodus megalodon",
+      "citation": "Natural History Museum, London. Megalodon: the truth about the largest shark that ever lived.",
+      "url": "https://www.nhm.ac.uk/discover/megalodon--the-truth-about-the-largest-shark-that-ever-lived.html",
+      "use": "Museum-level identity, tooth, size-uncertainty, time-range, and ecology cross-check",
+      "rightsUse": "Educational facts only; no NHM image was supplied to the generator"
+    },
+    {
+      "taxon": "Coelodonta antiquitatis",
+      "citation": "Boeskorov, G. G. et al. 2011. Woolly rhino discovery in the lower Kolyma River. Quaternary Science Reviews 30:2262-2272.",
+      "url": "https://doi.org/10.1016/j.quascirev.2011.02.010",
+      "use": "Frozen-mummy evidence for skin, ear, limbs, woolly coat, and external body reconstruction",
+      "rightsUse": "Factual and analytical reference only; no specimen photograph or article figure was supplied to the generator"
+    },
+    {
+      "taxon": "Coelodonta antiquitatis",
+      "citation": "Fortelius, M. 1983. The morphology and paleobiological significance of the horns of Coelodonta antiquitatis (Mammalia: Rhinocerotidae). Journal of Vertebrate Paleontology 3:125-135.",
+      "url": "https://doi.org/10.1080/02724634.1983.10011964",
+      "use": "Two-horn anatomy and the long transversely banded, laterally flattened nasal-horn direction",
+      "rightsUse": "Factual and analytical reference only; no article figure or horn photograph was supplied to the generator"
+    },
+    {
+      "taxon": "Coelodonta antiquitatis",
+      "citation": "Boeskorov, G. G. et al. 2024. Reshaping a woolly rhinoceros: Discovery of a fat hump on its back. Quaternary Science Reviews 345:109013.",
+      "url": "https://doi.org/10.1016/j.quascirev.2024.109013",
+      "use": "Frozen subadult soft-tissue evidence for a modest fat hump in the neck-and-withers region, without turning it into a camel hump",
+      "rightsUse": "Factual and analytical reference only; no specimen photograph or article figure was supplied to the generator"
+    },
+    {
+      "taxon": "Coelodonta antiquitatis",
+      "citation": "American Museum of Natural History. Perissodactyl Environment, Interval 4: Ice Ages.",
+      "url": "https://research.amnh.org/paleontology/perissodactyl/environment/interval4",
+      "use": "Museum educational cross-check for two horns, thick coat, small ears, stocky cold-adapted body, Eurasian steppe, and grazing ecology",
+      "rightsUse": "Educational facts only; no AMNH reconstruction was supplied to the generator"
+    }
+  ],
+  "evidenceBoundaries": {
+    "anomalocaris-canadensis": {
+      "direct": [
+        "Species-specific fossils support one pair of stalked compound eyes, one pair of segmented frontal appendages with ventral endites, a ventral oral cone, overlapping lateral trunk flaps, dorsal setal blades, and a tail fan with three paired lateral blade sets plus one central blade.",
+        "The Burgess Shale occurrence and middle Cambrian marine setting are fossil-led."
+      ],
+      "analytical": [
+        "Hydrodynamic and appendage modelling supports agile open-water swimming and handling softer prey, but does not preserve the exact swimming frame or event shown."
+      ],
+      "hypothetical": [
+        "All living colors, mottling, translucency, exact soft-tissue thickness, lighting, water clarity, local seafloor arrangement, and body pose are reconstructed.",
+        "Tiny soft-bodied prey, spacing, pursuit direction, and moment in S3 are illustrative and establish no observed species-level encounter."
+      ],
+      "confusionBoundary": "Reject armored shrimp or lobster shells, antennae, walking legs, true claws, fish fins, a front-facing monster mouth, extra eyes or frontal appendages, and an unreadable or fish-like tail.",
+      "promotionBoundary": "S1 is the sole count-level representative candidate. S2 remains review hold and S3 remains anatomy review; neither may replace or outrank S1 without a separate anatomy-promotion audit."
+    },
+    "dunkleosteus-terrelli": {
+      "direct": [
+        "Fossils directly support articulated bony armor around the head and anterior thorax, a head-thorax joint, and cutting jaw plates rather than conical shark teeth.",
+        "The species-level display emphasis is the late Devonian Cleveland Shale and Ohio record; broader genus occurrences must not erase that D. terrelli anchor."
+      ],
+      "analytical": [
+        "The approximately 3.4 m typical adult and up-to-about-4.1 m exceptional estimate follows recent proportional work.",
+        "A short deep trunk is a recent comparative reconstruction; the complete posterior body, dorsal fin, paired fins, and tail outline are not directly preserved in D. terrelli."
+      ],
+      "hypothetical": [
+        "Posterior soft-tissue contour, fin placement and shape, tail, skin, plate surface, color, light, water, reef arrangement, and exact locomotor frame are reconstructed.",
+        "The S3 fish-school response is an educational non-contact scene and establishes no exact prey association or feeding event."
+      ],
+      "confusionBoundary": "Reject a long pointed shark body, rows of shark gill slits, true conical teeth, crocodile anatomy, piranha proportions, extra dorsal fins, or fossil-certainty wording for the posterior body.",
+      "promotionBoundary": "S1 is the sole count-level representative candidate but remains a cautious whole-body reconstruction. S2 and S3 are barred from representative promotion without a separate source-led anatomy review."
+    },
+    "otodus-megalodon": {
+      "direct": [
+        "Otodus megalodon is directly known mainly from broad, thick, serrated triangular teeth and some vertebral centra; no complete skeleton or body outline is known.",
+        "Its Neogene occurrence and lamniform/otodontid identity are fossil-led."
+      ],
+      "analytical": [
+        "The 2024-2025 elongated body direction is a comparative working hypothesis intended to avoid unsupported scaled-up white-shark certainty.",
+        "Length, mass, rostrum, fin, tail, and body-proportion estimates remain sensitive to proxies and fossil assignments."
+      ],
+      "hypothetical": [
+        "Every pictured head, trunk, fin, tail, skin color, pattern, lighting, exact size, movement, and individual ecology scene is reconstructed.",
+        "The distant whale in S3 provides non-contact fauna context only; it proves no attack, chase, prey preference, exact coexistence event, or body-size relationship for the pictured individuals."
+      ],
+      "confusionBoundary": "Reject a certain giant great-white clone, sharp white-belly boundary, stocky torpedo silhouette, monster gape, orca markings, whale flukes, gill cover, marine-reptile anatomy, or unqualified claims that the 2025 body model is known anatomy.",
+      "promotionBoundary": "S1 is the sole count-level representative candidate for this provisional reconstruction. S2 and S3 remain review-only and cannot be promoted without a separate fossil-and-proxy audit."
+    },
+    "coelodonta-antiquitatis": {
+      "direct": [
+        "Frozen remains support skin, dense woolly covering, small ears, limb and body soft-tissue direction; skulls and preserved horns support exactly two midline horns.",
+        "The anterior nasal horn is long, laterally flattened and transversely banded, while the posterior frontal horn is smaller."
+      ],
+      "analytical": [
+        "Recent frozen soft tissue supports a modest neck-and-withers fat hump, but its size and contour vary with individual, age, preservation, and reconstruction.",
+        "Cold dry Eurasian steppe and grazing are broad evidence-led directions rather than proof of the exact place and moment pictured."
+      ],
+      "hypothetical": [
+        "Exact horn curve and length, coat color and pattern, sex, age, gait, breath, weather, plants, snow, tracks, and every social or feeding moment are reconstructed.",
+        "The distant mammoths in S3 are separate fauna context and establish no herd relationship, coordinated movement, or observed encounter."
+      ],
+      "confusionBoundary": "Reject a round conical modern-rhino front horn, third horn, camel hump, naked modern-rhino skin, large ears, long tail, hooves, extra/fused/hidden limbs, or three-legged read.",
+      "trackBoundary": "Any footprints or scuffs must be irregular in spacing, rotation, depth, and visibility with empty gaps; repeated stamped or wallpaper-like track patterns fail review.",
+      "promotionBoundary": "S1 is the sole count-level representative candidate. S2 is review hold and S3 is anatomy review; neither may replace or outrank S1 without a separate anatomy-promotion audit."
+    }
+  },
+  "records": {
+    "anomalocaris-canadensis-representative-v2": {
+      "taxon": "Anomalocaris canadensis",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-10; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in image generation",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-34f213d7-88b0-4bb0-b04f-14df3681bd88",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-34f213d7-88b0-4bb0-b04f-14df3681bd88.png",
+      "approvedProjectPath": "assets/dinosaurs/anomalocaris-canadensis-softbody-tailfan-representative-imagegen-v2.png",
+      "license": "Original project-generated bitmap edited from a project-generated identity base; factual sources only; no external artwork used.",
+      "sha256": "a94474c0b0599e9fd15351d42120b2523a76b66f3c3af215c5ed791fa77f141d",
+      "bytes": 2043815,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-820cb53c-cba2-41de-ba2f-ff4671ea1ecb.png"
+      ],
+      "prompt": [
+        "Scientifically correct the supplied Anomalocaris canadensis representative while preserving the same wide 16:9 left-facing full-body side-profile composition, one animal only, two stalked eyes, exactly one pair of long segmented frontal appendages with ventral endite spines, ventral side-subordinate triradial oral cone, complete tail fan with three paired lateral blade sets plus one central terminal blade, calm middle Cambrian water, and no crop. Critical correction: the trunk must be unmistakably SOFT, FLEXIBLE, UNARMORED radiodont tissue. Replace every thick shiny hard plate and shell-like trunk segment with a smooth matte supple body and sixteen pairs of thin flexible overlapping swimming flaps with gently translucent membranous edges. The flap bases may overlap but must not look like rigid lobster armor, bony plates, a trilobite shell, or articulated exoskeletal shields. Above the flaps show delicate feathery dorsal setal gill blades, not spikes or a rigid comb. Only the small oval dorsal head carapace may remain lightly sclerotized. Preserve the entire silhouette, appendage count, paired eyes and seven-blade tail-fan readability. Muted speculative rust and slate color, realistic documentary light, no walking legs, antennae, claws, extra eyes, extra appendages, fish tail, text, labels, border, attack, or gore. Original new museum paleoart edit, no named-artist style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10",
+        "method": "Original-size v1-versus-v2 full-frame identity, animal-count, eye and appendage-pair, oral-cone placement, matte soft-trunk, sixteen thin flexible flap-pair, feathery setal-blade, seven-blade tail-fan, crop, artifact, text, and armored-shrimp/trilobite-drift audit",
+        "result": "PASS at count level as the sole representative candidate after renewed soft-body review. One complete radiodont shows two stalked eyes, one frontal-appendage pair, a side-subordinate ventral oral cone, a matte unarmored trunk with thin translucent-edged flaps, delicate dorsal setal blades, and a complete three-pair-plus-central-blade tail fan. Exact soft tissue, overlap, color, and pose remain reconstruction."
+      }
+    },
+    "anomalocaris-canadensis-pattern-v2": {
+      "taxon": "Anomalocaris canadensis",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-10; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in image generation",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-b80732ab-f4ec-4630-b623-5642e660f415",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-b80732ab-f4ec-4630-b623-5642e660f415.png",
+      "approvedProjectPath": "assets/dinosaurs/anomalocaris-canadensis-rightfacing-softflap-indigo-copper-imagegen-v2.png",
+      "license": "Original project-generated bitmap edited from a project-generated identity base; factual sources only; no external artwork used.",
+      "sha256": "a21d4c0885d7d4ca0e1ae1dd4b73eba9e5b0c72fe278744b3cbc9c7bd9acc159",
+      "bytes": 2142436,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-3efccb9b-dc6f-4f9f-b2bf-76bf85d3a0d9.png"
+      ],
+      "prompt": [
+        "Correct the supplied Anomalocaris canadensis color/view variant without changing its right-facing rear-three-quarter composition, one complete animal, two stalked eyes, exactly one pair of segmented frontal appendages, ventral oral cone, complete tail fan, indigo-copper speculative pattern and full-body framing. Critical anatomy edit: remove the rigid armored-shrimp look. The trunk must be soft, flexible, matte and unarmored, with thin supple overlapping lateral swimming flaps whose translucent membrane edges bend naturally, and delicate feathery dorsal setal gill blades. No thick glossy shell plates, no lobster abdominal shields, no trilobite armor, no hard plate seams along the trunk. Only a small oval head carapace may be lightly sclerotized. Keep the frontal appendages separated, both eyes distinct, and the tail fan readable as three paired lateral blade sets plus one central terminal blade, while acknowledging rear perspective. No walking legs, antennae, claws, extra eyes, extra appendages, modern fish tail, text, labels, border, attack or gore. Natural museum paleoart, no named-artist style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10",
+        "method": "Original-size v1-versus-v2 identity, direction, camera, eye and appendage pair, matte soft-trunk, translucent flexible flap, feathery setal-blade, tail-fan, color-pattern, crop, artifact, armored-shrimp drift, and edit-isolation audit",
+        "result": "Approved as a corrected right-facing soft-body color/view comparison. The rigid plate read is removed while the paired eyes and appendages, flexible flaps and tail fan remain visible; rear-three-quarter foreshortening, hypothetical indigo-copper pattern, and reduced count clarity prohibit representative promotion."
+      }
+    },
+    "anomalocaris-canadensis-ecology-v2": {
+      "taxon": "Anomalocaris canadensis",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "kind": "anatomy review",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-10; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in image generation",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-221049ea-0c7e-4f2c-8dc0-b9c3cbf558be",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-221049ea-0c7e-4f2c-8dc0-b9c3cbf558be.png",
+      "approvedProjectPath": "assets/dinosaurs/anomalocaris-canadensis-softbody-shelf-ecology-imagegen-v2.png",
+      "license": "Original project-generated bitmap edited from a project-generated identity base; factual sources only; no external artwork used.",
+      "sha256": "d1e90afb4f4699853f991a2156989069b2f022d6557096cad67aa97b46edf46c",
+      "bytes": 2319383,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-47bc5e47-6b49-412a-a9b6-da3f573d33ac.png"
+      ],
+      "prompt": [
+        "Correct the supplied wide Anomalocaris canadensis ecology scene while preserving one complete right-facing radiodont, broad middle Cambrian shelf composition, tiny soft-bodied prey far ahead with no contact, two separated stalked eyes, exactly one pair of segmented frontal appendages, ventral side-subordinate oral cone, complete tail fan and generous water separation. Critical anatomy edit: replace the armored-shrimp trunk with soft flexible unarmored tissue. Show thin supple overlapping lateral swimming flaps with gently translucent membrane edges, a smooth matte flexible central trunk without thick shell plates, and delicate feathery dorsal setal gill blades. No rigid lobster abdominal shields, no trilobite armor, no glossy bony plate seams. Only the small oval head carapace may be lightly sclerotized. Keep both frontal appendages readable and the tail fan as three paired lateral blade sets plus one central terminal blade. Ecology remains hypothetical; no attack, contact, hard prey crushing, walking legs, antennae, claws, extra eyes, extra appendages, fish tail, text, labels, border or gore. Natural museum documentary paleoart, no named-artist style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10",
+        "method": "Original-size v1-versus-v2 animal-count, bilateral eye and frontal-appendage separation, oral-cone, matte soft-trunk, translucent flexible flap, feathery setal-blade, seven-blade tail-fan, prey spacing, non-contact behavior, crop, artifact, armored-shrimp drift, and habitat audit",
+        "result": "Approved for anatomy-review ecology context after renewed soft-body correction. The unarmored trunk, thin flaps, both frontal appendages and eyes remain readable, while tiny prey stay well ahead without contact. Scale, ecology, exact prey, color, and pursuit behavior prohibit representative promotion."
+      }
+    },
+    "dunkleosteus-terrelli-representative-v2": {
+      "taxon": "Dunkleosteus terrelli",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-10; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in image generation",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-76cbbe45-f930-4097-bd02-c90cfe537ceb",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-76cbbe45-f930-4097-bd02-c90cfe537ceb.png",
+      "approvedProjectPath": "assets/dinosaurs/dunkleosteus-terrelli-single-dorsal-compact-armor-representative-imagegen-v2.png",
+      "license": "Original project-generated bitmap edited from a project-generated identity base; factual sources only; no external artwork used.",
+      "sha256": "128894edb66d46d2c51a9460ff214fe4e1d279dfb0be4e04318750810476ea42",
+      "bytes": 2522353,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-61e9e34e-fc62-41ee-baba-8c36f96af438.png"
+      ],
+      "prompt": [
+        "Scientifically correct the supplied Dunkleosteus terrelli representative while preserving exactly one complete compact deep-bodied right-facing animal, the blunt articulated head-and-thorax armor with readable plate seams and head-thorax joint, cutting blade-like upper and lower gnathal jaw plates instead of conical teeth, very anterior paired pectoral fins, one complete vertical tail, late Devonian sea, full body inside a wide 16:9 frame. Critical fin correction: there must be EXACTLY ONE SINGLE DORSAL FIN on the entire top midline, positioned on the posterior half of the soft trunk. Remove every second dorsal fin, rear dorsal nub, adipose fin and dorsal finlet between that one dorsal and the tail. Keep a long uninterrupted smooth back line from the one dorsal fin to the tail base. If an underside median fin is shown it must be only one anal fin and clearly ventral, never mirrored as a second dorsal. Preserve paired pelvic fins only if clearly attached on the underside. The posterior trunk, fins, tail, skin and color are explicitly comparative reconstruction, so keep them conservative, smooth and unornamented. No shark teeth, no multiple dorsals, no tuna finlets, no extra fins, no extra animals, no crop, text, labels, border, attack, or gore. Natural museum documentary paleoart, no named-artist style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10",
+        "method": "Original-size v1-versus-v2 full-frame armor, joint, jaw-plate, tooth exclusion, compact-body, exactly-one-dorsal count, smooth post-dorsal back, ventral-fin placement, vertical tail, crop, artifact, text, shark, tuna-finlet, and multiple-dorsal drift audit",
+        "result": "PASS at count level as the sole representative candidate after renewed fin-count review. The blunt articulated armor, plate seams and cutting jaw plates remain readable, with exactly one dorsal fin and an uninterrupted back line to the vertical tail. The entire post-thoracic body, fins, tail, skin and color remain comparative reconstruction."
+      }
+    },
+    "dunkleosteus-terrelli-pattern-v2": {
+      "taxon": "Dunkleosteus terrelli",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-10; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in image generation",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-052b1c55-509a-42b7-b7c2-c1672810f7a4",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-052b1c55-509a-42b7-b7c2-c1672810f7a4.png",
+      "approvedProjectPath": "assets/dinosaurs/dunkleosteus-terrelli-leftfacing-single-dorsal-copper-pattern-imagegen-v2.png",
+      "license": "Original project-generated bitmap edited from project-generated identity bases; factual sources only; no external artwork used.",
+      "sha256": "4391db3499d3ce2efa3707e2eb3dd95e303525e480255e756805f48ab460c713",
+      "bytes": 2144416,
+      "dimensions": "1671x941",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-d7ed179f-fd9f-4d3b-9513-32f87a44eccd.png"
+      ],
+      "prompt": [
+        "Make a surgical anatomy correction to the supplied Dunkleosteus terrelli image. Preserve the entire animal, left-facing rear-three-quarter view, armor, pattern, head, jaws, pectoral and ventral fins, one main dorsal fin, tail, water and lighting exactly as closely as possible. DELETE the small extra dorsal nub/finlet visible on the upper back close to the tail, behind the large main dorsal fin. Replace that nub with a completely smooth uninterrupted back contour continuing from behind the one large dorsal fin to the tail base. The finished animal must have EXACTLY ONE dorsal fin total: the existing large dorsal only. No second dorsal, no rear nub, no adipose fin, no dorsal finlets. Do not add or alter anything else. One animal, whole body inside frame, no crop, text, labels, border, attack or gore."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10",
+        "method": "Original-size old-v1/intermediate/final-v2 edit-isolation, identity, direction, camera, armor, jaw, exactly-one-dorsal count, removed rear nub, smooth post-dorsal back, ventral-fin placement, vertical tail, pattern, crop, artifact, shark drift, and same-composition audit",
+        "result": "Approved as a corrected left-facing copper-gray comparison after the first edit retained a rear dorsal nub. The final image has exactly one dorsal fin and a smooth uninterrupted back to the tail base; near-closed jaw, rear perspective, hypothetical plate surface and inferred posterior anatomy keep it on review hold."
+      }
+    },
+    "dunkleosteus-terrelli-ecology-v2": {
+      "taxon": "Dunkleosteus terrelli",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "kind": "anatomy review",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-10; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in image generation",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-4ffbd20b-ee71-4786-866c-d71837d7227d",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-4ffbd20b-ee71-4786-866c-d71837d7227d.png",
+      "approvedProjectPath": "assets/dinosaurs/dunkleosteus-terrelli-single-dorsal-fish-school-ecology-imagegen-v2.png",
+      "license": "Original project-generated bitmap edited from a project-generated identity base; factual sources only; no external artwork used.",
+      "sha256": "730d8b8ee49edb3ff2d64c41d687389a2a4ab24de37dcf1d774d903dd5f4b388",
+      "bytes": 2369244,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-b364b360-2582-469e-969d-72f7b9198301.png"
+      ],
+      "prompt": [
+        "Correct the supplied wide Dunkleosteus terrelli Devonian fish-school ecology scene while preserving one complete right-facing compact deep-bodied animal, blunt articulated head-and-thorax armor, cutting gnathal jaw plates instead of conical teeth, separated distant fish school with no attack, broad late Devonian water and reef composition, and full body inside frame. Critical fin correction: the main animal must have EXACTLY ONE SINGLE DORSAL FIN on the posterior half of the upper midline. Remove every second dorsal, rear dorsal nub, adipose fin and finlet; the back after that one dorsal must remain smooth and uninterrupted to the tail base. Keep paired pectoral fins and any pelvic fins clearly ventral; at most one anal fin may appear below. Do not alter the separated school into prey contact. The posterior trunk, fins, tail, fish taxa, reef and behavior remain illustrative comparative reconstruction. No shark teeth, multiple dorsals, tuna finlets, extra limbs or fins, fused animals, crop, text, labels, border, attack or gore. Natural museum documentary paleoart, no named-artist style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10",
+        "method": "Original-size v1-versus-v2 main-animal, armor, jaw, exactly-one-dorsal count, smooth post-dorsal back, ventral-fin placement, vertical tail, fish-school separation, non-contact behavior, habitat, crop, artifact, shark/crocodile, tuna-finlet, and multiple-dorsal drift audit",
+        "result": "Approved for anatomy-review ecology context after the renewed fin-count correction. The complete main animal has exactly one dorsal and remains separate from the fish school, but small scale, water effects, comparative posterior anatomy, fish silhouettes, reef, and behavior prohibit representative promotion."
+      }
+    },
+    "otodus-megalodon-representative-v1": {
+      "taxon": "Otodus megalodon",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-10; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in image generation",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-e1683c0a-3fe3-444f-9668-8e0d523b11cd",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-e1683c0a-3fe3-444f-9668-8e0d523b11cd.png",
+      "approvedProjectPath": "assets/dinosaurs/otodus-megalodon-elongated-blunt-rostrum-representative-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources only; no external artwork, published reconstruction, franchise frame, or named-artist style used.",
+      "sha256": "5e1af569c18f1cfb621f0b7149f787e5edaad2dec57feba1d29e4386941a105e",
+      "bytes": 1794261,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Create a new scientifically cautious reconstruction of exactly one adult Otodus megalodon based on the tentative 2025 lamniform body-form study, explicitly NOT a giant great white shark. Wide 16:9 landscape, strict LEFT-FACING SIDE PROFILE, full animal completely inside frame with space around all fins and tail. Give it an exceptionally long, streamlined but massive lamniform trunk; a SHORT, BLUNT, BROAD rostrum; a broad flattened jaw region; a small eye; five uncovered gill slits; extremely long narrow paired pectoral fins; one tall first dorsal fin followed far back by one very small second dorsal fin; paired pelvic fins; one small anal fin; and a vertical crescent caudal fin. Mouth nearly closed, with only a few broad thick triangular serrated teeth visible at the corner. Use uniform subdued bronze-charcoal dorsal and lateral skin with only subtle ventral lightening—NO sharp white belly, NO great-white color boundary, NO white-shark stocky torpedo proportions. No horizontal whale flukes, no gill cover, no reptile body, no mosasaur, no orca markings, no extra fins. The exact body and fin proportions remain uncertain, so render a conservative natural-history reconstruction. Neogene blue open ocean, tiny distant fish for scale, no attack or gore. Museum-grade realistic paleoart, no text, no labels, no border."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10",
+        "method": "Original-size single-animal, full-frame, rostrum, five-gill, pectoral, two-dorsal, pelvic, anal, vertical-tail, tooth restraint, color boundary, crop, artifact, text, whale-fluke, marine-reptile, and great-white-drift audit",
+        "result": "PASS at count level only as the sole current representative candidate for the explicitly provisional 2025-style reconstruction. The elongated silhouette, blunt rostrum, five gills and major fin plan are readable without a sharp white-shark countershade boundary; no pictured body proportion is treated as known from a complete skeleton."
+      }
+    },
+    "otodus-megalodon-pattern-v1": {
+      "taxon": "Otodus megalodon",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-10; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in image generation",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-d61b236d-53b3-41d7-a9aa-50e993db9869",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-d61b236d-53b3-41d7-a9aa-50e993db9869.png",
+      "approvedProjectPath": "assets/dinosaurs/otodus-megalodon-rightfacing-slate-bronze-pattern-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources and a project-generated S1 identity reference only; no external artwork used.",
+      "sha256": "3414f976f212c14b87e6ffd39549400c05c2bcd83d562a411d901b300bc6289b",
+      "bytes": 1793657,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-e1683c0a-3fe3-444f-9668-8e0d523b11cd.png"
+      ],
+      "prompt": [
+        "Using the reference only to preserve the cautious Otodus megalodon body reconstruction, create a genuinely different color-and-view variant. Wide 16:9, exactly one whole animal fully inside frame, RIGHT-facing slightly low front three-quarter view, cruising upward through Neogene open ocean. Preserve the very long streamlined massive trunk, short blunt broad rostrum, flattened jaw region, five exposed gill slits, extremely long paired pectoral fins, tall first dorsal plus tiny second dorsal, pelvic and anal fins, vertical crescent tail. Mouth nearly closed with a few broad triangular serrated teeth, no monster gape. Use muted slate-blue skin with irregular warm bronze mottling and only gentle ventral lightening, no great-white sharp white belly. No whale flukes, gill cover, orca markings or extra fins. Deep blue water and diagonal light, no prey, no text or labels."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10",
+        "method": "Original-size identity, direction, camera, gill, fin, tail, color-pattern, tooth, crop, artifact, great-white-drift, and same-composition audit",
+        "result": "Approved as a different right-facing low-front gallery comparison. Perspective changes measurable proportions and the slate-bronze pattern is hypothetical, so it remains review hold and cannot validate or replace the provisional S1 body model."
+      }
+    },
+    "otodus-megalodon-ecology-v1": {
+      "taxon": "Otodus megalodon",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "kind": "anatomy review",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-10; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in image generation",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-ed67a478-98c9-40bc-a6c0-a8c34fe59c08",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-ed67a478-98c9-40bc-a6c0-a8c34fe59c08.png",
+      "approvedProjectPath": "assets/dinosaurs/otodus-megalodon-neogene-whale-distance-ecology-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources and a project-generated S1 identity reference only; no external artwork used.",
+      "sha256": "8a296fde1d9c5b6bc8e081ca1584e72360080274275792d6b58debc777a14f6b",
+      "bytes": 2043296,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-e1683c0a-3fe3-444f-9668-8e0d523b11cd.png"
+      ],
+      "prompt": [
+        "Using the reference only for the cautious Otodus megalodon anatomy, create a much wider Neogene ecology scene, not a hero portrait. Wide 16:9, high distant oblique camera over a continental-shelf drop-off. One elongated megalodon is smaller in frame, full silhouette visible, swimming LEFT to RIGHT below and behind a distant small baleen whale; both are separated by several body lengths with no contact, no bite and no gore. Preserve the shark's short blunt rostrum, five gill slits, long paired pectorals, two dorsal fins with the rear one tiny, pelvic and anal fins, and vertical crescent tail. The whale has one mammalian body and horizontal flukes, but remains secondary and anatomically separate. Subtle schooling fish scatter naturally rather than forming a repeated pattern. Cool blue-green Neogene sea with sun shafts, restrained colors, no dinosaurs or marine reptiles, no text or labels."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10",
+        "method": "Original-size shark and whale count, separation, main-shark silhouette, fin and tail plan, mammalian whale fluke, non-contact behavior, schooling randomness, habitat, crop, artifact, and marine-reptile drift audit",
+        "result": "Approved for anatomy-review ecology context only. The shark and whale remain separate by several body lengths and the school is not a stamped pattern; distant scale, inferred body model, whale anatomy, exact co-occurrence and behavior prohibit representative promotion."
+      }
+    },
+    "coelodonta-antiquitatis-representative-v2": {
+      "taxon": "Coelodonta antiquitatis",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-10; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in image generation",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-72bc77b9-1bfb-476e-aa01-d0986ef5974d",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-72bc77b9-1bfb-476e-aa01-d0986ef5974d.png",
+      "approvedProjectPath": "assets/dinosaurs/coelodonta-antiquitatis-laterally-compressed-bladehorn-representative-imagegen-v2.png",
+      "license": "Original project-generated bitmap edited from a project-generated identity base; factual sources only; no external artwork used.",
+      "sha256": "e2d1ab7d612fda56b1d9e10b0b7d8b8fd3ac51114a3a71da84fd3a8e7e97f7e5",
+      "bytes": 2501035,
+      "dimensions": "1672x940",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-d8587036-6da4-444d-a176-964bbbed31bf.png"
+      ],
+      "prompt": [
+        "Create a corrected edit of the supplied Coelodonta antiquitatis representative. Preserve exactly one complete animal, the cold dry steppe, dense wool, small ears, high withers, low head, short tail, exactly four connected legs and four grounded rhinoceros feet. Use a shallow right-facing side/front three-quarter view so the horn cross-section can be audited. Replace ONLY the horns and make the anterior nasal horn anatomically unmistakable: a long keratin BLADE with an oval cross-section compressed side-to-side, like a tall broad flat plank or saber blade. It must have two broad planar lateral faces, a clearly visible narrow top/front edge showing very thin transverse thickness, and transverse growth bands running across the broad face. The horn must be much taller dorsoventrally than it is thick side-to-side. Absolutely no cylindrical, round, conical modern-rhinoceros horn. Exactly one much smaller posterior frontal horn behind it. Keep both horn tips and all feet inside the 16:9 frame. Natural museum paleoart, realistic documentary light, no text, labels, extra animals, extra horns, extra limbs, fantasy ornament, gore, or named-artist style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10",
+        "method": "Original-size single-animal, full-frame, shallow side/front three-quarter cross-section, two-horn count, broad lateral faces, narrow transverse edge, growth bands, rear-horn size, low head, withers, coat, ear, four-limb and four-foot, tail, crop, artifact, cylindrical-horn, camel-hump, modern-rhino, and duplication audit",
+        "result": "PASS at count level as the sole representative candidate after two earlier horn-shape failures. One long blade-like anterior horn reads as much taller dorsoventrally than thick side-to-side, with broad lateral faces, a narrow transverse edge and growth bands; one smaller rear horn, dense coat, high withers, four connected grounded limbs and feet, and one short tail are readable. Exact horn curve, coat, body soft tissue and pose remain reconstruction."
+      }
+    },
+    "coelodonta-antiquitatis-pattern-v1": {
+      "taxon": "Coelodonta antiquitatis",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-10; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in image generation",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-94393123-7380-41d6-8202-7866ea0ca5ef",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-94393123-7380-41d6-8202-7866ea0ca5ef.png",
+      "approvedProjectPath": "assets/dinosaurs/coelodonta-antiquitatis-leftfacing-tawny-patch-pattern-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources and a project-generated S1 identity reference only; no external artwork used.",
+      "sha256": "5aa6cb29eed8e4045b3d2a7caa758b348351f4c5a14098b9b46a75d82769398a",
+      "bytes": 2673884,
+      "dimensions": "1672x940",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-d8587036-6da4-444d-a176-964bbbed31bf.png"
+      ],
+      "prompt": [
+        "Create a corrected Coelodonta antiquitatis color-and-composition variant with an anatomy-count priority. Wide 16:9, exactly one woolly rhinoceros in strict LEFT-facing side profile on a dry late Pleistocene autumn steppe. The whole animal is inside frame. Show EXACTLY FOUR separate legs and EXACTLY FOUR separate broad three-toed rhinoceros feet, all fully visible against open ground with clear daylight gaps between near and far legs; use a natural staggered walking pose so no limb merges or hides. Preserve low head, small ears, short tail, high withers and modest shoulder-neck hump, dense shaggy coat, and exactly two horns: very long laterally flattened transversely banded nasal horn plus much smaller rear horn. Dark charcoal shoulder coat with irregular tawny flank patches. No snow, no other animals, no third horn, no hooves, no extra or fused limbs, no text."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10",
+        "method": "Original-size single-animal, four-limb and four-foot separation, two-horn count, flattened-horn, withers, coat, tail, direction, camera, pattern, crop, artifact, and modern-rhino drift audit",
+        "result": "Approved as a corrected left-facing autumn color/view comparison after the first version failed far-side limb readability. Four separate attached legs and grounded feet are readable; tawny patches, gait and soft tissue are hypothetical, so representative promotion is prohibited."
+      }
+    },
+    "coelodonta-antiquitatis-ecology-v1": {
+      "taxon": "Coelodonta antiquitatis",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "kind": "anatomy review",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-10; exact service timestamp unavailable",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in image generation",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-1beb8adc-7856-4a88-b1d6-1dea981f1e67",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-1beb8adc-7856-4a88-b1d6-1dea981f1e67.png",
+      "approvedProjectPath": "assets/dinosaurs/coelodonta-antiquitatis-mammoth-steppe-ecology-imagegen-v1.png",
+      "license": "Original project-generated bitmap; factual sources and a project-generated S1 identity reference only; no external artwork used.",
+      "sha256": "c6e991494562c19f455aa9ed2c604ad81f59211e224bbd56732784d8325fee50",
+      "bytes": 2701606,
+      "dimensions": "1672x940",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-d8587036-6da4-444d-a176-964bbbed31bf.png"
+      ],
+      "prompt": [
+        "Create a corrected broad Coelodonta antiquitatis ecology scene with strict limb readability. Wide 16:9, one woolly rhinoceros smaller in frame but fully visible in LEFT-facing side profile, calmly grazing on a late Pleistocene Eurasian mammoth-steppe. Show EXACTLY FOUR separate stocky legs and EXACTLY FOUR separate three-toed feet, each foot on visible open ground with gaps so none are hidden by grass or another leg. Preserve low head, tiny ears, dense long coat, high withers and modest hump, short tail, and exactly two horns: long laterally flattened transversely banded nasal horn and much smaller rear horn. A distant woolly mammoth family crosses far behind with no overlap or contact; keep every mammoth secondary and anatomically separate. Patchy snow and visible breath, random natural tracks only, no repeated footprint pattern, no attack, no gore, no extra limbs, no text."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10",
+        "method": "Original-size rhino and mammoth count, rhino four-limb and four-foot separation, two-horn and coat cues, mammoth distance and non-overlap, non-contact behavior, track randomness, habitat, crop, artifact, and modern-rhino drift audit",
+        "result": "Approved for anatomy-review ecology context after the first attempt failed far-side limb readability. The complete rhino, four legs and feet, two horns, and distant non-overlapping mammoths remain readable; exact grazing, relationship, weather, plants, tracks and coat remain hypothetical, barring representative promotion."
+      }
+    }
+  },
+  "rejectedAttempts": [
+    {
+      "taxon": "Anomalocaris canadensis",
+      "intendedRole": "representative",
+      "formerRecordId": "anomalocaris-canadensis-representative-v1",
+      "callId": "exec-820cb53c-cba2-41de-ba2f-ff4671ea1ecb",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-820cb53c-cba2-41de-ba2f-ff4671ea1ecb.png",
+      "formerApprovedProjectPath": "assets/dinosaurs/anomalocaris-canadensis-stalked-eyes-tailfan-representative-imagegen-v1.png",
+      "copiedToProject": true,
+      "runtimeEligible": false,
+      "runtimeRemovalStatus": "Scheduled for removal by the integration owner; never restore as an approved or representative asset.",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in image generation",
+      "seed": "service-assigned, not exposed",
+      "sha256": "6cd797203b6daa705ace0a51d7f3d206c64f0f03de3e0cbc3eace2f099fd8ff7",
+      "bytes": 2175945,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Create a new scientifically grounded museum paleoart reconstruction of exactly one adult Anomalocaris canadensis, not a generic radiodont. Wide 16:9 landscape, strict clean LEFT-FACING SIDE PROFILE with the whole animal fully inside frame and generous empty water around every appendage. The animal must read as soft, flexible and dorsoventrally flattened, not as an armored shrimp. Required visible anatomy: exactly two stalked compound eyes; exactly two long articulated frontal appendages, one pair, each with repeated paired ventral endite spines, never claws; small oval dorsal head carapace; the triradial oral cone placed UNDER the head and only partly visible from side, never a front-facing monster mouth; sixteen paired overlapping lateral swimming flaps along the trunk, with feathery setal gill blades arranged dorsally above them; tapered posterior body; an unmistakable tail fan composed of exactly three paired lateral blade sets plus exactly one single central terminal blade, separated and countable. No walking legs, no antennae, no lobster shell, no trilobite armor, no modern fish tail, no extra eyes or appendages. Calm forward swimming in a middle Cambrian Burgess Shale water column, small soft-bodied prey far ahead, no attack or gore. Natural muted rust, ochre and slate coloration as speculative art. Realistic underwater documentary light, crisp complete silhouette, no text, no labels, no border."
+      ],
+      "reason": "Demoted after renewed original-size soft-body review because the glossy thick trunk divisions and flap bases read as rigid armored-shrimp or lobster plates rather than unmistakably soft, flexible, unarmored radiodont tissue."
+    },
+    {
+      "taxon": "Anomalocaris canadensis",
+      "intendedRole": "color-pattern",
+      "formerRecordId": "anomalocaris-canadensis-pattern-v1",
+      "callId": "exec-3efccb9b-dc6f-4f9f-b2bf-76bf85d3a0d9",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-3efccb9b-dc6f-4f9f-b2bf-76bf85d3a0d9.png",
+      "formerApprovedProjectPath": "assets/dinosaurs/anomalocaris-canadensis-rightfacing-indigo-copper-pattern-imagegen-v1.png",
+      "copiedToProject": true,
+      "runtimeEligible": false,
+      "runtimeRemovalStatus": "Scheduled for removal by the integration owner; never restore as an approved gallery asset.",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in image generation",
+      "seed": "service-assigned, not exposed",
+      "sha256": "7c2da95f54206d191c9df977aa0f441c3e04525277191ef4765d4de6060d0838",
+      "bytes": 2089993,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-820cb53c-cba2-41de-ba2f-ff4671ea1ecb.png"
+      ],
+      "prompt": [
+        "Using the reference only to preserve Anomalocaris canadensis identity and anatomy, create a genuinely different color-and-composition variant. Wide 16:9, exactly one animal fully in frame, RIGHT-facing high rear three-quarter view rather than the reference side profile, swimming diagonally down through middle Cambrian water. Preserve exactly two stalked eyes, exactly two jointed frontal appendages with ventral endite spines, ventral triradial oral cone, paired overlapping trunk swimming flaps with dorsal setal gill blades, tapered body, and the tail fan with three paired lateral blade sets plus one central terminal blade. Make the body soft and flexible, not armored. Use a distinct muted indigo-gray body with irregular copper-ochre mottling and pale flap margins; no regular stripes or identical recolor. No walking legs, antennae, claws, extra eyes, extra appendages or modern fish fins. Sparse Burgess Shale particles and distant sponge silhouettes, no prey interaction. Museum natural-history realism, no text or labels."
+      ],
+      "reason": "Demoted after renewed original-size soft-body review because the hard segmented trunk surface and thick flap bases retained an armored-shrimp read despite the intended color/view role."
+    },
+    {
+      "taxon": "Anomalocaris canadensis",
+      "intendedRole": "habitat-ecology",
+      "formerRecordId": "anomalocaris-canadensis-ecology-v1",
+      "callId": "exec-47bc5e47-6b49-412a-a9b6-da3f573d33ac",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-47bc5e47-6b49-412a-a9b6-da3f573d33ac.png",
+      "formerApprovedProjectPath": "assets/dinosaurs/anomalocaris-canadensis-soft-prey-shelf-ecology-imagegen-v1.png",
+      "copiedToProject": true,
+      "runtimeEligible": false,
+      "runtimeRemovalStatus": "Scheduled for removal by the integration owner; never restore as an approved gallery asset.",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in image generation",
+      "seed": "service-assigned, not exposed",
+      "sha256": "e371be436561b31131f31e17b848529fcdf6b372cb0aa94f505a5044acfbc348",
+      "bytes": 2239841,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-820cb53c-cba2-41de-ba2f-ff4671ea1ecb.png"
+      ],
+      "prompt": [
+        "Create a corrected wide ecology scene for Anomalocaris canadensis. Wide 16:9, elevated FRONT three-quarter view over a middle Cambrian shelf so BOTH separate frontal appendages are clearly visible from base to tip with open water between them, and BOTH stalked eyes are distinct. One animal only, smaller in frame but fully visible. Preserve ventral triradial oral cone, paired overlapping trunk flaps, dorsal setal gill blades, tapered body, and a fully readable tail fan of three paired lateral blade sets plus one central terminal blade. It swims diagonally toward three tiny soft-bodied prey several body lengths ahead without contact. Sparse sponges and microbial mats below, no fish, coral reef, trilobite attack, walking legs, lobster claws, antennae, extra appendages or text. Warm shafts of light, natural museum paleoart, different broad composition from the representative."
+      ],
+      "reason": "Demoted after renewed original-size soft-body review because the trunk still read as a stack of hard articulated plates rather than supple unarmored tissue, even though the ecology spacing remained acceptable."
+    },
+    {
+      "taxon": "Dunkleosteus terrelli",
+      "intendedRole": "representative",
+      "formerRecordId": "dunkleosteus-terrelli-representative-v1",
+      "callId": "exec-61e9e34e-fc62-41ee-baba-8c36f96af438",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-61e9e34e-fc62-41ee-baba-8c36f96af438.png",
+      "formerApprovedProjectPath": "assets/dinosaurs/dunkleosteus-terrelli-compact-armor-jawplates-representative-imagegen-v1.png",
+      "copiedToProject": true,
+      "runtimeEligible": false,
+      "runtimeRemovalStatus": "Scheduled for removal by the integration owner; never restore as an approved or representative asset.",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in image generation",
+      "seed": "service-assigned, not exposed",
+      "sha256": "b370d7c322050f61ef9cd474e4d4d275ba37564ecf3f8f2df273411cb2ae6644",
+      "bytes": 2624115,
+      "dimensions": "1672x941",
+      "referenceImages": [],
+      "prompt": [
+        "Create a scientifically cautious paleoart reconstruction of exactly one adult Dunkleosteus terrelli in a late Devonian warm shallow sea. Wide 16:9 landscape, full animal entirely inside frame, right-facing three-quarter side view, medium-distance documentary wildlife composition. Use the compact 2023-2024 conservative body reconstruction: total length about 3.4 m, short deep robust trunk rather than a long shark body; rounded blunt snout; large eyes; massive articulated bony armor plates wrapping the head and anterior thorax; a clear joint between head and thoracic armor; cutting blade-like jaw plates visible in a slightly open mouth, with no true conical teeth; one gill opening at the rear edge of the armor rather than rows of shark gill slits; large pectoral fins beginning immediately behind the armor; one dorsal fin; a broad powerful crescent-shaped vertical tail for a deep-bodied swimmer. Posterior soft-body form is explicitly conservative inference. No shark teeth, no pointed shark nose, no crocodile, no scales like a modern bony fish, no multiple dorsal fins, no eel tail, no extra fins, no text, no labels, no border. Restrained dark bronze, charcoal and muted olive tones with the armor plate seams readable. Calm cruising pose above a reef edge, no attack, no gore. Museum-grade realistic natural history illustration, anatomical clarity over spectacle."
+      ],
+      "reason": "Demoted after renewed original-size fin-count review because more than one dorsal structure read along the reconstructed upper trunk, violating the exactly-one-dorsal gate."
+    },
+    {
+      "taxon": "Dunkleosteus terrelli",
+      "intendedRole": "color-pattern",
+      "formerRecordId": "dunkleosteus-terrelli-pattern-v1",
+      "callId": "exec-ddd9e8b9-0690-4829-a887-8aff29774721",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-ddd9e8b9-0690-4829-a887-8aff29774721.png",
+      "formerApprovedProjectPath": "assets/dinosaurs/dunkleosteus-terrelli-leftfacing-copper-armor-pattern-imagegen-v1.png",
+      "copiedToProject": true,
+      "runtimeEligible": false,
+      "runtimeRemovalStatus": "Scheduled for removal by the integration owner; never restore as an approved gallery asset.",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in image generation",
+      "seed": "service-assigned, not exposed",
+      "sha256": "a9cacd281e5845482fe1cb2cc45b9ce184c10c81c9e60fffa6bf7e6f014af144",
+      "bytes": 2040583,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-61e9e34e-fc62-41ee-baba-8c36f96af438.png"
+      ],
+      "prompt": [
+        "Using the reference only to preserve Dunkleosteus terrelli identity, create a compositionally different color/pattern review image. Wide 16:9, exactly one compact adult fully inside frame, LEFT-facing high rear three-quarter view, cruising away across a late Devonian open shelf. Preserve a short deep robust body, rounded blunt snout, large eye, massive articulated head-and-thorax armor, blade-like jaw plates with no conical teeth, one gill opening at the armor rear, large pectoral fins immediately behind armor, one dorsal fin and a broad vertical crescent tail. Show mouth nearly closed. Use dark blue-black posterior skin and irregular weathered copper-gray armor patches, not the same bronze scheme and not regular stripes. No shark gill rows, no shark teeth, no long shark body, no extra dorsal fin, no modern bony-fish scales. Different higher camera and more open water than reference, no attack or gore, no text or labels."
+      ],
+      "reason": "Demoted after renewed original-size fin-count review because a rear upper-trunk dorsal nub remained in addition to the main dorsal fin."
+    },
+    {
+      "taxon": "Dunkleosteus terrelli",
+      "intendedRole": "color-pattern",
+      "callId": "exec-d7ed179f-fd9f-4d3b-9513-32f87a44eccd",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-d7ed179f-fd9f-4d3b-9513-32f87a44eccd.png",
+      "copiedToProject": false,
+      "runtimeEligible": false,
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in image generation",
+      "seed": "service-assigned, not exposed",
+      "sha256": "a21198094a6a9dc2002772416b3bcc77fa29fd00a15b4029a2b7fd5e414033e1",
+      "bytes": 1915295,
+      "dimensions": "1671x941",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-ddd9e8b9-0690-4829-a887-8aff29774721.png"
+      ],
+      "prompt": [
+        "Correct the supplied Dunkleosteus terrelli left-facing copper-gray color/view variant while preserving exactly one complete compact deep-bodied animal, blunt articulated head-and-thorax armor with plate seams, cutting gnathal jaw plates rather than conical teeth, left-facing rear-three-quarter composition, full tail and speculative armor weathering. Critical fin correction: show EXACTLY ONE SINGLE DORSAL FIN on the top midline of the posterior soft trunk. Remove every second dorsal fin, dorsal nub, adipose fin and finlet between it and the tail. The back line after the one dorsal must be smooth and uninterrupted to the tail base. Keep paired anterior pectoral fins, and if paired pelvic fins or one anal fin are visible they must remain clearly underside structures, never read as extra dorsals. The whole posterior body, fins and tail are comparative reconstruction and this remains a review-hold variant. No shark teeth, no tuna finlets, no extra fins, animals, crop, text, labels, border, attack or gore. Natural museum documentary paleoart, no named-artist style."
+      ],
+      "reason": "Rejected at original-size fin-count review because a small rear dorsal nub/finlet remained behind the main dorsal; final exec-052b1c55 surgically removed it."
+    },
+    {
+      "taxon": "Dunkleosteus terrelli",
+      "intendedRole": "habitat-ecology",
+      "formerRecordId": "dunkleosteus-terrelli-ecology-v1",
+      "callId": "exec-b364b360-2582-469e-969d-72f7b9198301",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-b364b360-2582-469e-969d-72f7b9198301.png",
+      "formerApprovedProjectPath": "assets/dinosaurs/dunkleosteus-terrelli-devonian-fish-school-ecology-imagegen-v1.png",
+      "copiedToProject": true,
+      "runtimeEligible": false,
+      "runtimeRemovalStatus": "Scheduled for removal by the integration owner; never restore as an approved gallery asset.",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in image generation",
+      "seed": "service-assigned, not exposed",
+      "sha256": "902762b7086ce6640344ea25946ad15ee4f3aa699e5773fa3760036eeb853746",
+      "bytes": 2500241,
+      "dimensions": "1672x941",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-61e9e34e-fc62-41ee-baba-8c36f96af438.png"
+      ],
+      "prompt": [
+        "Using the reference only for Dunkleosteus terrelli anatomy, create a broad late Devonian ecology scene with a very different scale and camera. Wide 16:9, low oblique view along a warm tropical shelf edge. One Dunkleosteus is smaller in frame and swimming calmly from RIGHT to LEFT, complete compact deep body and all major fins readable, with blunt armored head, plate seams, blade-like jaw plates, single rear armor gill opening and broad tail. A loose school of small contemporary-looking placoderm and early bony fish silhouettes changes direction several body lengths ahead; no contact, no bite and no gore. Sparse stromatoporoid sponge and tabulate-coral-like reef structures stay low in the background. Do not turn the animal into a shark, piranha or crocodile. Natural teal water, silt plume and sun shafts, no text or labels."
+      ],
+      "reason": "Demoted after renewed original-size fin-count review because multiple dorsal structures remained on the reconstructed upper trunk, despite acceptable fish-school separation."
+    },
+    {
+      "taxon": "Anomalocaris canadensis",
+      "intendedRole": "representative",
+      "callId": "exec-16dc3db5-c015-422d-92e3-678c5c42e530",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-16dc3db5-c015-422d-92e3-678c5c42e530.png",
+      "copiedToProject": false,
+      "runtimeEligible": false,
+      "reason": "Rejected at original-size review because a front-facing oral cone dominated the head and the tail-fan blade separation was too ambiguous for a clean representative identity gate."
+    },
+    {
+      "taxon": "Anomalocaris canadensis",
+      "intendedRole": "habitat-ecology",
+      "callId": "exec-a7fe03c4-cac8-41a6-b5cb-a53b62ff60f4",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-a7fe03c4-cac8-41a6-b5cb-a53b62ff60f4.png",
+      "copiedToProject": false,
+      "runtimeEligible": false,
+      "reason": "Rejected because the far frontal appendage was occluded enough to weaken the required paired-appendage read in the ecology scene."
+    },
+    {
+      "taxon": "Otodus megalodon",
+      "intendedRole": "representative",
+      "callId": "exec-bfe550f8-2d0e-4ae1-bf98-c4e39964f866",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-bfe550f8-2d0e-4ae1-bf98-c4e39964f866.png",
+      "copiedToProject": false,
+      "runtimeEligible": false,
+      "reason": "Rejected because the stocky torpedo silhouette and familiar countershading drifted too strongly toward a scaled-up extant great white shark."
+    },
+    {
+      "taxon": "Coelodonta antiquitatis",
+      "intendedRole": "representative",
+      "callId": "exec-7719c4f2-1d6d-487e-9e48-2d4a55f32315",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-7719c4f2-1d6d-487e-9e48-2d4a55f32315.png",
+      "copiedToProject": false,
+      "runtimeEligible": false,
+      "retainedAsProjectGeneratedEditReferenceOnly": true,
+      "reason": "Rejected as a final asset because its anterior horn remained round and conical rather than the required long laterally flattened, transversely banded Coelodonta direction. It was used only as the private project-generated base for the corrected S1 edit."
+    },
+    {
+      "taxon": "Coelodonta antiquitatis",
+      "intendedRole": "representative",
+      "formerRecordId": "coelodonta-antiquitatis-representative-v1",
+      "callId": "exec-d8587036-6da4-444d-a176-964bbbed31bf",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-d8587036-6da4-444d-a176-964bbbed31bf.png",
+      "formerApprovedProjectPath": "assets/dinosaurs/coelodonta-antiquitatis-flattened-horn-woolly-representative-imagegen-v1.png",
+      "copiedToProject": true,
+      "runtimeEligible": false,
+      "runtimeRemovalStatus": "Scheduled for removal by the integration owner; never restore as an approved or representative asset.",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "OpenAI built-in image generation",
+      "seed": "service-assigned, not exposed",
+      "sha256": "4dbdba81ec78ce0ac78d015af74982e400895d2c6a16e22c82daf7b4362bd047",
+      "bytes": 2604390,
+      "dimensions": "1672x940",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-7719c4f2-1d6d-487e-9e48-2d4a55f32315.png"
+      ],
+      "prompt": [
+        "Edit this woolly rhinoceros image while preserving the successful full-body winter-steppe composition, coat, four grounded limbs, small ears and visible breath. Correct the horns to match Coelodonta antiquitatis: exactly two midline keratin horns; make the anterior nasal horn much longer and unmistakably LATERALLY FLATTENED like a broad compressed blade viewed from the side, with transverse growth bands and a backward sweep, not a round conical modern-rhino horn; make the posterior frontal horn clearly smaller and shorter. Keep the head low and the modest shoulder-neck hump, but do not create a camel hump. Preserve one animal only, all four separate legs and three-toed feet, no extra horns or limbs. Photorealistic museum natural-history reconstruction, 16:9, no text, no labels, no border."
+      ],
+      "reason": "Demoted after renewed horn cross-section review: despite the first edit, the anterior horn still reads too round and conical, without an unmistakable side-to-side compressed blade section. It cannot remain approved or representative."
+    },
+    {
+      "taxon": "Coelodonta antiquitatis",
+      "intendedRole": "representative",
+      "callId": "exec-963f5048-2656-4f3d-9f5d-7161f72e4d19",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-963f5048-2656-4f3d-9f5d-7161f72e4d19.png",
+      "copiedToProject": false,
+      "runtimeEligible": false,
+      "reason": "Rejected at original-size horn cross-section review because the anterior horn still read as round/conical rather than an unmistakable side-to-side compressed blade with broad lateral faces and a narrow transverse edge."
+    },
+    {
+      "taxon": "Coelodonta antiquitatis",
+      "intendedRole": "color-pattern",
+      "callId": "exec-379dc85d-5436-4095-9792-3ac629b45939",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-379dc85d-5436-4095-9792-3ac629b45939.png",
+      "copiedToProject": false,
+      "runtimeEligible": false,
+      "reason": "Rejected because far-side limb and foot occlusion prevented a confident four-legged, four-grounded-foot read."
+    },
+    {
+      "taxon": "Coelodonta antiquitatis",
+      "intendedRole": "habitat-ecology",
+      "callId": "exec-5198f7fd-e2f7-49a5-a1bd-91f3ee6a408d",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-5198f7fd-e2f7-49a5-a1bd-91f3ee6a408d.png",
+      "copiedToProject": false,
+      "runtimeEligible": false,
+      "reason": "Rejected because far-side limb and foot readability was insufficient for the multi-animal ecology audit."
+    }
+  ]
+}
