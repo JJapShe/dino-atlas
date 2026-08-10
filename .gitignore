@@ -27,3 +27,11 @@ tools/comfyui/review-evidence/motion-subject-required-20260807/
 # Superseded local trackway previews; approved assets and SVG guides are tracked
 tools/comfyui/middle-jurassic-trackway-evidence-preview-v[1-3].png
 tools/comfyui/trackway-orthographic-structure-guide-v1.png
+
+# Local image-review inbox and SQLite runtime state
+tools/dino-review/pending/*
+!tools/dino-review/pending/.gitkeep
+tools/dino-review/data/review.sqlite*
+tools/dino-review/data/review-key
+tools/dino-review/data/review-server.*.log
+tools/dino-review/data/atlas-server.*.log

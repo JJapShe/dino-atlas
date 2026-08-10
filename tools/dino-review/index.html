@@ -3,10 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dino Image Review</title>
+  <title>Dino Asset Review</title>
   <style>
-    @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css");
-
     :root {
       color-scheme: dark;
       --bg: #0b0d10;
@@ -37,7 +35,7 @@
       overflow: hidden;
       background: var(--bg);
       color: var(--text);
-      font-family: "Pretendard", "Segoe UI", system-ui, sans-serif;
+      font-family: "Segoe UI", system-ui, sans-serif;
       font-size: 14px;
     }
     body.zoom-open { overflow: hidden; }
@@ -61,6 +59,7 @@
       display: grid;
       grid-template-columns:
         minmax(170px, 1fr)
+        minmax(126px, 0.62fr)
         minmax(160px, 0.9fr)
         minmax(120px, 0.62fr)
         minmax(116px, 0.58fr)
@@ -442,6 +441,10 @@
     .status-pass { color: var(--good); border-color: color-mix(in srgb, var(--good) 55%, var(--line)); }
     .status-hold { color: var(--warn); border-color: color-mix(in srgb, var(--warn) 55%, var(--line)); }
     .status-reject { color: var(--bad); border-color: color-mix(in srgb, var(--bad) 55%, var(--line)); }
+    .scope-pending { color: #8bd5ff; border-color: color-mix(in srgb, #8bd5ff 55%, var(--line)); }
+    .scope-integration { color: #c6a6ff; border-color: color-mix(in srgb, #c6a6ff 55%, var(--line)); }
+    .scope-atlas { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); }
+    .scope-unknown { color: var(--bad); border-color: color-mix(in srgb, var(--bad) 55%, var(--line)); }
     aside {
       position: relative;
       min-width: 0;
@@ -618,6 +621,117 @@
       background: color-mix(in srgb, var(--accent) 26%, var(--panel));
       border-color: color-mix(in srgb, var(--accent) 60%, var(--line));
     }
+    .candidate-panel {
+      display: grid;
+      gap: 8px;
+      padding: 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--panel-2);
+    }
+    .candidate-panel .meta-line {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+    }
+    .metadata-details {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--panel-2);
+    }
+    .metadata-details summary {
+      padding: 10px;
+      color: var(--text);
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .metadata-details[open] summary { border-bottom: 1px solid var(--line); }
+    .metadata-sections {
+      display: grid;
+      gap: 14px;
+      min-width: 0;
+      padding: 10px;
+    }
+    .metadata-section {
+      display: grid;
+      gap: 7px;
+      min-width: 0;
+    }
+    .toolbar > * { min-width: 0; }
+    .metadata-section h3 {
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .metadata-grid {
+      display: grid;
+      grid-template-columns: minmax(92px, 0.34fr) minmax(0, 1fr);
+      gap: 1px;
+      min-width: 0;
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      background: var(--line);
+    }
+    .metadata-grid dt,
+    .metadata-grid dd {
+      min-width: 0;
+      margin: 0;
+      padding: 7px 8px;
+      background: #0d1116;
+      font-size: 12px;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+      white-space: pre-wrap;
+    }
+    .metadata-grid dt { color: var(--muted); }
+    .metadata-grid dd { color: var(--text); }
+    .read-only-panel {
+      display: grid;
+      gap: 8px;
+      min-width: 0;
+      padding: 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: color-mix(in srgb, var(--panel-2) 86%, #c6a6ff 14%);
+    }
+    .read-only-panel .meta-line {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+    }
+    .promotion-record {
+      max-width: 100%;
+      margin: 0;
+      overflow-x: auto;
+      padding: 8px;
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      background: #090c10;
+      color: var(--muted);
+      font: 11px/1.5 Consolas, "Cascadia Mono", monospace;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+    .metadata-issues {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--warn);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+    .candidate-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .candidate-actions .promote { border-color: var(--good); color: var(--good); }
+    .candidate-actions .delete { border-color: var(--bad); color: var(--bad); }
+    .candidate-actions button:disabled { opacity: 0.42; cursor: not-allowed; }
     body.detail-focused .detail-layout {
       display: grid;
       grid-template-columns: minmax(0, 1fr) var(--detail-review-width);
@@ -795,8 +909,10 @@
     }
     .muted { color: var(--muted); }
     .mono { font-family: Consolas, "Cascadia Mono", monospace; }
-    @media (max-width: 1180px) {
+    @media (max-width: 1480px) {
       header { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 1180px) {
       .toolbar { grid-template-columns: repeat(3, minmax(0, 1fr)); }
       main {
         grid-template-columns:
@@ -874,7 +990,9 @@
       }
     }
     @media (max-width: 560px) {
-      .toolbar { grid-template-columns: 1fr; }
+      header { position: static; }
+      .toolbar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      #search { grid-column: 1 / -1; }
       .browser-pane-toolbar {
         align-items: flex-start;
         flex-direction: column;
@@ -885,6 +1003,10 @@
       }
       .grid { grid-template-columns: 1fr; }
       .actions { grid-template-columns: repeat(2, 1fr); }
+      .metadata-grid { grid-template-columns: 1fr; }
+      .metadata-grid dt { padding-bottom: 2px; }
+      .metadata-grid dd { padding-top: 2px; }
+      .candidate-actions { grid-template-columns: 1fr; }
       .zoom-title,
       .zoom-file {
         display: none;
@@ -925,11 +1047,18 @@
 <body>
   <header>
     <div>
-      <h1>Dino Image Review</h1>
+      <h1>Dino Asset Review</h1>
       <div class="summary" id="summary"></div>
     </div>
     <div class="toolbar">
       <input id="search" type="search" placeholder="생물명, 파일명 검색">
+      <select id="scope" aria-label="자산 범위">
+        <option value="pending">검수 대기</option>
+        <option value="integration">앱 등록 대기</option>
+        <option value="all">전체 자산</option>
+        <option value="atlas">등록 자산</option>
+        <option value="unknown">미분류/오류</option>
+      </select>
       <select id="species"></select>
       <select id="kind"></select>
       <select id="status">
@@ -1024,6 +1153,11 @@
       lora: "LoRA",
       pattern: "무늬 변형",
       reference: "참고",
+      "count-level pass": "대표 후보",
+      "review hold": "검수 후보",
+      "anatomy review": "해부학 검수",
+      "structure reference": "구조 참고",
+      "invalid candidate": "손상 후보",
     };
     const STATUS_LABELS = {
       all: "전체 상태",
@@ -1032,11 +1166,15 @@
       hold: "보류",
       reject: "반려",
     };
+    const ATLAS_MEDIA_EXTENSIONS = new Set([".png", ".jpg", ".jpeg", ".webp"]);
+    const MANAGED_MEDIA_EXTENSIONS = new Set([".png"]);
     let images = [];
     let selected = null;
     let selectedStatus = "unreviewed";
     let imageListSignature = "";
     let refreshInFlight = false;
+    let saveInFlight = false;
+    let candidateActionInFlight = false;
     let zoomActualSize = false;
     const REVIEW_LAYOUT_KEY = "dino-review-layout-v3";
     const LIST_BATCH_SIZE = 120;
@@ -1226,14 +1364,40 @@
       return `${path}${key ? `${sep}key=${encodeURIComponent(key)}` : ""}`;
     }
 
+    function isSafeMediaFilenameSegment(segment, extensions) {
+      let filename = "";
+      try {
+        filename = decodeURIComponent(String(segment || ""));
+      } catch {
+        return false;
+      }
+      if (!filename || filename === "." || filename === ".." || /[\\/\0\u0000-\u001f\u007f]/.test(filename)) {
+        return false;
+      }
+      const dot = filename.lastIndexOf(".");
+      return dot > 0 && extensions.has(filename.slice(dot).toLowerCase());
+    }
+
     function imageUrl(image) {
-      const sep = image.url.includes("?") ? "&" : "?";
-      return api(`${image.url}${sep}v=${encodeURIComponent(`${image.updatedAt}-${image.sizeBytes}`)}`);
+      const rawUrl = String(image?.url || "");
+      const fixedPlaceholder = rawUrl === "/review-placeholder"
+        || rawUrl === "/invalid-review-image"
+        || rawUrl === "/placeholder/invalid.svg";
+      const atlasMatch = rawUrl.match(/^\/image\/([^/?#]+)$/);
+      const managedMatch = rawUrl.match(
+        /^\/(?:pending-media|promoted-media|quarantine-media)\/([a-z0-9][a-z0-9-]{0,79})\/([^/?#]+)$/,
+      );
+      const safeAtlas = atlasMatch && isSafeMediaFilenameSegment(atlasMatch[1], ATLAS_MEDIA_EXTENSIONS);
+      const safeManaged = managedMatch && isSafeMediaFilenameSegment(managedMatch[2], MANAGED_MEDIA_EXTENSIONS);
+      if (!fixedPlaceholder && !safeAtlas && !safeManaged) return api("/placeholder/invalid.svg");
+      const sep = rawUrl.includes("?") ? "&" : "?";
+      const version = `${String(image?.updatedAt || "unknown")}-${Number(image?.sizeBytes) || 0}`;
+      return api(`${rawUrl}${sep}v=${encodeURIComponent(version)}`);
     }
 
     function hasUnsavedReview() {
       const note = $("note");
-      if (!selected || !note) return false;
+      if (!isReviewMutable(selected) || !note) return false;
       return note.value !== (selected.review?.note || "") || selectedStatus !== statusOf(selected);
     }
 
@@ -1244,7 +1408,16 @@
         image.sizeBytes,
         image.kind,
         image.species,
+        scopeOf(image),
+        image.state || "",
+        image.loadError === true,
+        image.canPromote || false,
+        (Array.isArray(image.metadataIssues) ? image.metadataIssues : []).join(","),
+        JSON.stringify(image.provenance || {}),
+        JSON.stringify(image.anatomyReview || {}),
+        JSON.stringify(image.promotionRecord || null),
         image.review?.status || "",
+        image.review?.note || "",
         image.review?.updatedAt || "",
       ].join(":")).join("|");
     }
@@ -1252,6 +1425,7 @@
     function currentFilterState() {
       return {
         search: $("search").value,
+        scope: $("scope").value,
         species: $("species").value,
         kind: $("kind").value,
         status: $("status").value,
@@ -1273,12 +1447,16 @@
     }
 
     function bytes(value) {
-      if (value > 1024 * 1024) return `${(value / 1024 / 1024).toFixed(1)} MB`;
-      return `${Math.round(value / 1024)} KB`;
+      const size = Number(value);
+      if (!Number.isFinite(size) || size < 0) return "크기 미상";
+      if (size > 1024 * 1024) return `${(size / 1024 / 1024).toFixed(1)} MB`;
+      return `${Math.round(size / 1024)} KB`;
     }
 
     function rel(value) {
-      const ms = Date.now() - new Date(value).getTime();
+      const time = new Date(value).getTime();
+      if (!Number.isFinite(time)) return "시간 미상";
+      const ms = Math.max(0, Date.now() - time);
       if (ms < 3600000) return `${Math.max(1, Math.floor(ms / 60000))}분 전`;
       if (ms < 86400000) return `${Math.floor(ms / 3600000)}시간 전`;
       return `${Math.floor(ms / 86400000)}일 전`;
@@ -1286,11 +1464,143 @@
 
     function statusPill(status) {
       const cls = status === "pass" ? "status-pass" : status === "hold" ? "status-hold" : status === "reject" ? "status-reject" : "";
-      return `<span class="pill ${cls}">${STATUS_LABELS[status] || status}</span>`;
+      return `<span class="pill ${cls}">${escapeHtml(STATUS_LABELS[status] || status)}</span>`;
+    }
+
+    function scopeOf(image) {
+      const scope = String(image?.scope || "");
+      return ["pending", "integration", "atlas"].includes(scope) ? scope : "unknown";
+    }
+
+    function isMutablePending(image) {
+      return scopeOf(image) === "pending" && image?.loadError === false;
+    }
+
+    function isReviewMutable(image) {
+      return isMutablePending(image) || scopeOf(image) === "atlas";
+    }
+
+    function scopePill(scope) {
+      const raw = String(scope || "");
+      const normalized = ["pending", "integration", "atlas"].includes(raw) ? raw : "unknown";
+      const labels = {
+        pending: "검수 대기",
+        integration: "앱 등록 대기",
+        atlas: "등록 자산",
+        unknown: raw ? `미분류: ${raw}` : "미분류",
+      };
+      return `<span class="pill scope-${normalized}">${escapeHtml(labels[normalized])}</span>`;
     }
 
     function kindLabel(kind) {
       return KIND_LABELS[kind] || kind;
+    }
+
+    function metadataIssuesHtml(image) {
+      const issues = Array.isArray(image.metadataIssues) ? image.metadataIssues : [];
+      return issues.length
+        ? `<ul class="metadata-issues">${issues.map((issue) => `<li>${escapeHtml(issue)}</li>`).join("")}</ul>`
+        : `<div class="meta-line">필수 항목 입력 완료</div>`;
+    }
+
+    function metadataValue(value) {
+      if (value === true) return "예";
+      if (value === false) return "아니오";
+      if (value === null || value === undefined || value === "") return "미입력";
+      return String(value);
+    }
+
+    function metadataDetails(image) {
+      const provenance = image?.provenance && typeof image.provenance === "object"
+        ? image.provenance
+        : {};
+      const anatomy = image?.anatomyReview && typeof image.anatomyReview === "object"
+        ? image.anatomyReview
+        : {};
+      const provenanceRows = [
+        ["출처", provenance.source],
+        ["라이선스", provenance.license],
+        ["프롬프트", provenance.prompt],
+        ["시드", provenance.seed],
+        ["워크플로", provenance.workflow],
+      ];
+      const anatomyRows = [
+        ["상태", anatomy.status],
+        ["대표 이미지", anatomy.representative],
+        ["검수자", anatomy.reviewer],
+        ["검수 시각", anatomy.reviewedAt],
+        ["해부학 메모", anatomy.notes],
+      ];
+      const rows = (items) => items.map(([label, value]) => `
+        <dt>${escapeHtml(label)}</dt><dd>${escapeHtml(metadataValue(value))}</dd>
+      `).join("");
+      return `<details class="metadata-details">
+        <summary>출처·생성·해부학 메타데이터</summary>
+        <div class="metadata-sections">
+          <section class="metadata-section">
+            <h3>출처 및 생성 기록</h3>
+            <dl class="metadata-grid">${rows(provenanceRows)}</dl>
+          </section>
+          <section class="metadata-section">
+            <h3>해부학 검수 기록</h3>
+            <dl class="metadata-grid">${rows(anatomyRows)}</dl>
+          </section>
+        </div>
+      </details>`;
+    }
+
+    function promotionRecordText(record) {
+      if (record === null || record === undefined || record === "") return "기록 없음";
+      if (typeof record === "string") return record;
+      try {
+        return JSON.stringify(record, null, 2);
+      } catch {
+        return String(record);
+      }
+    }
+
+    function inventoryPanel(image) {
+      const scope = scopeOf(image);
+      if (scope !== "pending" && scope !== "integration") return "";
+      const targetPath = image.targetPath || image.destination || "승격 경로 미지정";
+      const metadata = metadataDetails(image);
+      const issuesHtml = metadataIssuesHtml(image);
+
+      if (image.loadError === true && scope === "pending") {
+        return `${metadata}<section class="read-only-panel" aria-label="손상 후보 안내">
+          <strong>읽기 전용 손상 후보</strong>
+          ${issuesHtml}
+          <div class="meta-line">후보 폴더의 이미지와 candidate.json을 수정한 뒤 새로고침해 주세요. 이 항목에서는 검수 저장·승격·삭제를 실행할 수 없습니다.</div>
+        </section>`;
+      }
+
+      if (scope === "integration") {
+        return `${metadata}<section class="read-only-panel" aria-label="앱 등록 대기 자산">
+          <strong>앱 등록 대기 · 읽기 전용</strong>
+          <div class="meta-line">상태: <span class="mono">${escapeHtml(image.state || "promoted-awaiting-app-integration")}</span></div>
+          <div class="meta-line">자산 위치: <span class="mono">${escapeHtml(targetPath)}</span></div>
+          ${issuesHtml}
+          <div class="meta-line">app.js와 관련 메타데이터 등록 및 별도 검수를 마치기 전에는 사용자 앱에 공개하지 않습니다.</div>
+          <div class="meta-line">승격 기록</div>
+          <pre class="promotion-record">${escapeHtml(promotionRecordText(image.promotionRecord))}</pre>
+        </section>`;
+      }
+
+      const reviewStatus = statusOf(image);
+      const promoteDisabled = image.canPromote && reviewStatus === "pass" ? "" : "disabled";
+      const deleteDisabled = reviewStatus === "reject" ? "" : "disabled";
+      return `${metadata}<section class="candidate-panel" aria-label="검수 대기 자산 처리">
+        <strong>검수 대기 자산</strong>
+        <div class="meta-line">상태: <span class="mono">${escapeHtml(image.state || "pending")}</span></div>
+        <div class="meta-line">승격 위치: <span class="mono">${escapeHtml(targetPath)}</span></div>
+        ${issuesHtml}
+        <div class="candidate-actions">
+          <button class="promote" id="promoteCandidate" type="button" ${promoteDisabled}>자산 승격</button>
+          <button class="delete" id="deleteCandidate" type="button" ${deleteDisabled}>완전 탈락 삭제</button>
+        </div>
+        <div class="meta-line">승격 후에는 앱 데이터·해부학 메타데이터 등록을 마쳐야 공개됩니다.</div>
+        <div class="meta-line" id="candidateActionState" role="status" aria-live="polite"></div>
+      </section>`;
     }
 
     function splitSpeciesLabel(label) {
@@ -1302,6 +1612,7 @@
 
     function filtered() {
       const q = $("search").value.trim().toLowerCase();
+      const scope = $("scope").value;
       const species = $("species").value;
       const kind = $("kind").value;
       const status = $("status").value;
@@ -1309,6 +1620,7 @@
       return images.filter((image) => {
         const hay = `${image.name} ${image.species} ${image.speciesLabel} ${image.kind} ${kindLabel(image.kind)}`.toLowerCase();
         return (!q || hay.includes(q))
+          && (scope === "all" || scopeOf(image) === scope)
           && (species === "all" || image.species === species)
           && (kind === "all" || image.kind === kind)
           && (status === "all" || statusOf(image) === status);
@@ -1316,9 +1628,9 @@
         const sort = $("sort").value;
         if (sort === "reviewed") return new Date(b.review?.updatedAt || 0) - new Date(a.review?.updatedAt || 0);
         if (sort === "status") return statusRank[statusOf(a)] - statusRank[statusOf(b)] || new Date(b.updatedAt) - new Date(a.updatedAt);
-        if (sort === "species") return a.speciesLabel.localeCompare(b.speciesLabel, "ko") || a.name.localeCompare(b.name, "ko");
-        if (sort === "name") return a.name.localeCompare(b.name, "ko");
-        if (sort === "size") return b.sizeBytes - a.sizeBytes;
+        if (sort === "species") return String(a.speciesLabel || "").localeCompare(String(b.speciesLabel || ""), "ko") || String(a.name || "").localeCompare(String(b.name || ""), "ko");
+        if (sort === "name") return String(a.name || "").localeCompare(String(b.name || ""), "ko");
+        if (sort === "size") return (Number(b.sizeBytes) || 0) - (Number(a.sizeBytes) || 0);
         return new Date(b.updatedAt) - new Date(a.updatedAt);
       });
     }
@@ -1326,11 +1638,17 @@
     function renderSummary(list) {
       const counts = images.reduce((acc, image) => {
         acc[statusOf(image)] = (acc[statusOf(image)] || 0) + 1;
+        const scope = scopeOf(image);
+        acc[scope] = (acc[scope] || 0) + 1;
         return acc;
       }, {});
       $("summary").innerHTML = [
         `<span class="pill">${fmt.format(list.length)}개 표시</span>`,
         `<span class="pill">전체 ${fmt.format(images.length)}개</span>`,
+        `<span class="pill scope-pending">대기 ${fmt.format(counts.pending || 0)}</span>`,
+        `<span class="pill scope-integration">앱 등록 대기 ${fmt.format(counts.integration || 0)}</span>`,
+        `<span class="pill scope-atlas">등록 ${fmt.format(counts.atlas || 0)}</span>`,
+        counts.unknown ? `<span class="pill scope-unknown">미분류 ${fmt.format(counts.unknown)}</span>` : "",
         `<span class="pill status-pass">통과 ${fmt.format(counts.pass || 0)}</span>`,
         `<span class="pill status-hold">보류 ${fmt.format(counts.hold || 0)}</span>`,
         `<span class="pill status-reject">반려 ${fmt.format(counts.reject || 0)}</span>`,
@@ -1356,7 +1674,7 @@
         const status = statusOf(image);
         const species = splitSpeciesLabel(image.speciesLabel);
         return `<button class="card ${active}" data-id="${escapeHtml(image.id)}" type="button" aria-label="${escapeHtml(`${image.speciesLabel}, ${kindLabel(image.kind)}, ${STATUS_LABELS[status] || status}`)}">
-          <img class="thumb" loading="lazy" src="${src}" alt="${escapeHtml(image.speciesLabel)}">
+          <img class="thumb" loading="lazy" src="${escapeHtml(src)}" alt="${escapeHtml(image.speciesLabel)}">
           <div class="meta">
             <div class="card-heading">
               <div class="card-name-block">
@@ -1366,6 +1684,7 @@
               ${statusPill(status)}
             </div>
             <div class="card-kind">${escapeHtml(kindLabel(image.kind))}</div>
+            <div class="row">${scopePill(image.scope)}</div>
             <div class="file-name" title="${escapeHtml(image.name)}">${escapeHtml(image.name)}</div>
             <div class="card-footer"><span>${bytes(image.sizeBytes)}</span><span>${rel(image.updatedAt)}</span></div>
           </div>
@@ -1390,8 +1709,9 @@
       if (!selected) return [];
       const filteredSpecies = filtered().filter((image) => image.species === selected.species);
       if (filteredSpecies.some((image) => image.id === selected.id)) return filteredSpecies;
+      const selectedScope = scopeOf(selected);
       return images
-        .filter((image) => image.species === selected.species)
+        .filter((image) => image.species === selected.species && scopeOf(image) === selectedScope)
         .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
     }
 
@@ -1425,6 +1745,31 @@
       );
       const navigationDisabled = speciesImages.length < 2 ? "disabled" : "";
       const focusTitle = layoutState.detailFocused ? "분할 보기" : "상세 화면 확장";
+      const mutable = isReviewMutable(selected);
+      const savedNote = selected.review?.note || "";
+      const readOnlyReason = selected.loadError === true
+        ? "손상 후보는 원본 파일을 수정한 뒤 새로고침해야 합니다."
+        : scopeOf(selected) === "integration"
+          ? "앱 등록 대기 항목은 승격 이력을 보존하기 위해 읽기 전용입니다."
+          : "범위를 확인할 수 없는 항목은 안전을 위해 읽기 전용입니다.";
+      const reviewControls = mutable
+        ? `<div class="actions">
+            <button data-status="unreviewed" type="button" aria-pressed="${selectedStatus === "unreviewed"}">초기화</button>
+            <button data-status="pass" type="button" aria-pressed="${selectedStatus === "pass"}">통과</button>
+            <button data-status="hold" type="button" aria-pressed="${selectedStatus === "hold"}">보류</button>
+            <button data-status="reject" type="button" aria-pressed="${selectedStatus === "reject"}">반려</button>
+          </div>
+          <textarea id="note" placeholder="검수 메모">${escapeHtml(savedNote)}</textarea>
+          <div class="save-row">
+            <button id="save" type="button">저장</button>
+            <span class="muted" id="saveState">${selected.review?.updatedAt ? `${rel(selected.review.updatedAt)} 저장됨` : ""}</span>
+          </div>`
+        : `<section class="read-only-panel" aria-label="읽기 전용 검수 기록">
+            <strong>검수 기록 · 읽기 전용</strong>
+            <div class="meta-line">${escapeHtml(readOnlyReason)}</div>
+            <div class="meta-line">저장된 메모: ${savedNote ? escapeHtml(savedNote) : "없음"}</div>
+            ${selected.review?.updatedAt ? `<div class="meta-line">저장 시각: ${escapeHtml(selected.review.updatedAt)}</div>` : ""}
+          </section>`;
       const strip = speciesImages.map((image) => `
         <button
           class="${image.id === selected.id ? "active" : ""}"
@@ -1433,7 +1778,7 @@
           title="${escapeHtml(image.name)}"
           aria-label="${escapeHtml(`${kindLabel(image.kind)} 이미지 선택`)}"
         >
-          <img loading="lazy" src="${imageUrl(image)}" alt="${escapeHtml(image.speciesLabel)}">
+          <img loading="lazy" src="${escapeHtml(imageUrl(image))}" alt="${escapeHtml(image.speciesLabel)}">
           <span class="strip-kind">${escapeHtml(kindLabel(image.kind))}</span>
         </button>
       `).join("");
@@ -1451,7 +1796,7 @@
         <div class="detail-layout">
           <div class="detail-preview-column">
             <button class="preview-button" id="openZoom" type="button" title="크게 보기">
-              <img class="preview" src="${imageUrl(selected)}" alt="${escapeHtml(selected.speciesLabel)}">
+              <img class="preview" src="${escapeHtml(imageUrl(selected))}" alt="${escapeHtml(selected.speciesLabel)}">
             </button>
             <div class="species-strip" aria-label="같은 생물 이미지">${strip}</div>
           </div>
@@ -1460,31 +1805,31 @@
             <div class="detail-file-name mono">${escapeHtml(selected.name)}</div>
             <div class="row">
               ${statusPill(statusOf(selected))}
+              ${scopePill(selected.scope)}
               <span class="pill">${escapeHtml(kindLabel(selected.kind))}</span>
             </div>
             <div class="muted mono">${escapeHtml(selected.id)}</div>
-            <div class="actions">
-              <button data-status="unreviewed" type="button">초기화</button>
-              <button data-status="pass" type="button">통과</button>
-              <button data-status="hold" type="button">보류</button>
-              <button data-status="reject" type="button">반려</button>
-            </div>
-            <textarea id="note" placeholder="검수 메모">${escapeHtml(selected.review?.note || "")}</textarea>
-            <div class="save-row">
-              <button id="save" type="button">저장</button>
-              <span class="muted" id="saveState">${selected.review?.updatedAt ? `${rel(selected.review.updatedAt)} 저장됨` : ""}</span>
-            </div>
+            ${reviewControls}
+            ${inventoryPanel(selected)}
           </div>
         </div>`;
-      document.querySelectorAll("[data-status]").forEach((button) => {
-        if (button.dataset.status === selectedStatus) button.classList.add("active");
-        button.addEventListener("click", () => {
-          selectedStatus = button.dataset.status;
-          document.querySelectorAll("[data-status]").forEach((node) => node.classList.remove("active"));
-          button.classList.add("active");
+      if (mutable) {
+        document.querySelectorAll("[data-status]").forEach((button) => {
+          if (button.dataset.status === selectedStatus) button.classList.add("active");
+          button.addEventListener("click", () => {
+            selectedStatus = button.dataset.status;
+            document.querySelectorAll("[data-status]").forEach((node) => {
+              node.classList.remove("active");
+              node.setAttribute("aria-pressed", "false");
+            });
+            button.classList.add("active");
+            button.setAttribute("aria-pressed", "true");
+          });
         });
-      });
-      $("save").addEventListener("click", saveReview);
+        $("save").addEventListener("click", saveReview);
+      }
+      $("promoteCandidate")?.addEventListener("click", () => runCandidateAction("promote"));
+      $("deleteCandidate")?.addEventListener("click", () => runCandidateAction("delete"));
       $("openZoom").addEventListener("click", openZoom);
       $("closeDetail").addEventListener("click", closeDetailPane);
       $("previousDetail").addEventListener("click", () => moveSelection(-1));
@@ -1514,6 +1859,7 @@
       $("zoomCount").textContent = `${index + 1} / ${items.length}`;
       $("zoomTags").innerHTML = [
         statusPill(statusOf(selected)),
+        scopePill(selected.scope),
         `<span class="pill">${escapeHtml(kindLabel(selected.kind))}</span>`,
         `<span class="pill">${escapeHtml(selected.speciesLabel)}</span>`,
       ].join("");
@@ -1553,24 +1899,146 @@
       document.body.classList.remove("zoom-open");
     }
 
-    async function saveReview() {
-      $("saveState").textContent = "저장 중";
-      const res = await fetch(api("/api/review"), {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ id: selected.id, status: selectedStatus, note: $("note").value }),
-      });
-      if (!res.ok) {
-        $("saveState").textContent = "저장 실패";
+    function mutationHeaders() {
+      const headers = { "content-type": "application/json" };
+      if (key) headers["x-dino-review-key"] = key;
+      return headers;
+    }
+
+    async function runCandidateAction(action) {
+      if (!isMutablePending(selected) || candidateActionInFlight) return;
+      const target = selected;
+      const state = $("candidateActionState");
+      if (hasUnsavedReview()) {
+        state.textContent = "검수 상태와 메모를 먼저 저장해 주세요.";
         return;
       }
-      const data = await res.json();
-      selected.review = data.review;
-      const idx = images.findIndex((image) => image.id === selected.id);
-      if (idx >= 0) images[idx] = selected;
-      $("saveState").textContent = "저장됨";
-      renderGrid();
-      renderDetail();
+
+      let confirmName = "";
+      if (action === "promote") {
+        if (statusOf(target) !== "pass" || !target.canPromote) {
+          state.textContent = "통과 저장과 필수 항목 입력이 모두 필요합니다.";
+          return;
+        }
+        if (!window.confirm(`${target.name}\n\n추적 자산 폴더로 옮길까요?\n앱 공개 등록은 별도 단계로 남습니다.`)) return;
+      } else {
+        if (statusOf(target) !== "reject") {
+          state.textContent = "반려 상태를 저장한 뒤 삭제할 수 있습니다.";
+          return;
+        }
+        if (!target.review?.note?.trim()) {
+          state.textContent = "완전 탈락 사유를 메모에 남겨 주세요.";
+          return;
+        }
+        confirmName = window.prompt("완전 삭제하려면 파일명을 그대로 입력하세요.", "") || "";
+        if (confirmName !== target.name) {
+          state.textContent = "파일명이 일치하지 않아 삭제하지 않았습니다.";
+          return;
+        }
+      }
+
+      candidateActionInFlight = true;
+      $("promoteCandidate")?.setAttribute("disabled", "");
+      $("deleteCandidate")?.setAttribute("disabled", "");
+      state.textContent = action === "promote" ? "승격 중" : "삭제 중";
+      const endpoint = action === "promote" ? "/api/pending/promote" : "/api/pending/delete";
+      const payload = action === "promote"
+        ? { id: target.id, candidateId: target.candidateId }
+        : {
+            id: target.id,
+            candidateId: target.candidateId,
+            confirmName,
+            reason: target.review?.note || "",
+          };
+
+      try {
+        const res = await fetch(api(endpoint), {
+          method: "POST",
+          headers: mutationHeaders(),
+          body: JSON.stringify(payload),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) {
+          state.textContent = data.error || `처리 실패 (HTTP ${res.status})`;
+          return;
+        }
+        window.alert(action === "promote"
+          ? `자산으로 옮겼습니다.\n${data.targetPath || data.projectAsset || "앱 등록 대기"}`
+          : "완전 탈락 파일을 삭제하고 DB에 이력을 남겼습니다.");
+        if (action === "promote") $("scope").value = "integration";
+        if (selected?.id === target.id) selected = null;
+        await refreshImageList({ force: true });
+      } catch (error) {
+        state.textContent = `서버 연결 실패: ${error.message}`;
+      } finally {
+        candidateActionInFlight = false;
+        if (selected?.id === target.id) {
+          const promote = $("promoteCandidate");
+          const remove = $("deleteCandidate");
+          if (promote) promote.disabled = !(target.canPromote && statusOf(target) === "pass");
+          if (remove) remove.disabled = statusOf(target) !== "reject";
+        }
+      }
+    }
+
+    async function saveReview() {
+      if (!isReviewMutable(selected) || saveInFlight) return;
+      const target = selected;
+      const requestedStatus = selectedStatus;
+      const note = $("note");
+      if (!note) return;
+      const requestedNote = note.value;
+      const saveState = $("saveState");
+      saveInFlight = true;
+      $("save").disabled = true;
+      document.querySelectorAll("[data-status]").forEach((button) => { button.disabled = true; });
+      saveState.textContent = "저장 중";
+
+      try {
+        const res = await fetch(api("/api/review"), {
+          method: "POST",
+          headers: mutationHeaders(),
+          body: JSON.stringify({
+            id: target.id,
+            candidateId: target.candidateId,
+            scope: scopeOf(target),
+            status: requestedStatus,
+            note: requestedNote,
+          }),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) {
+          saveState.textContent = data.error || `저장 실패 (HTTP ${res.status})`;
+          return;
+        }
+
+        target.review = data.review;
+        if (isMutablePending(target)) {
+          target.canPromote = typeof data.canPromote === "boolean" ? data.canPromote : false;
+        }
+        const idx = images.findIndex((image) => image.id === target.id);
+        if (idx >= 0) images[idx] = target;
+        if (selected?.id === target.id) {
+          selected = target;
+          selectedStatus = statusOf(target);
+        }
+
+        const visibleImages = filtered();
+        if (!selected || !visibleImages.some((image) => image.id === selected.id)) {
+          selected = visibleImages[0] || null;
+          selectedStatus = selected ? statusOf(selected) : "unreviewed";
+        }
+        renderGrid();
+        renderDetail();
+      } catch (error) {
+        saveState.textContent = `서버 연결 실패: ${error.message}`;
+      } finally {
+        saveInFlight = false;
+        if (selected?.id === target.id) {
+          $("save")?.removeAttribute("disabled");
+          document.querySelectorAll("[data-status]").forEach((button) => { button.disabled = false; });
+        }
+      }
     }
 
     function fillSelect(id, values, label) {
@@ -1618,7 +2086,8 @@
         fillSelect("species", data.species, "전체 생물");
         fillSelect("kind", data.kinds, "전체 유형");
         restoreFilterState(filters);
-        selected = images.find((image) => image.id === selectedId) || images[0] || null;
+        const visibleImages = filtered();
+        selected = visibleImages.find((image) => image.id === selectedId) || visibleImages[0] || null;
         selectedStatus = selected ? statusOf(selected) : "unreviewed";
         renderGrid();
         renderDetail();
@@ -1643,8 +2112,16 @@
       applyLayoutState();
       setupPaneResizer();
       await refreshImageList({ force: true, initial: true });
-      ["search", "species", "kind", "status", "sort"].forEach((id) => {
-        $(id).addEventListener("input", () => renderGrid({ resetLimit: true }));
+      ["search", "scope", "species", "kind", "status", "sort"].forEach((id) => {
+        $(id).addEventListener("input", () => {
+          const visibleImages = filtered();
+          if (!selected || !visibleImages.some((image) => image.id === selected.id)) {
+            selected = visibleImages[0] || null;
+            selectedStatus = selected ? statusOf(selected) : "unreviewed";
+          }
+          renderGrid({ resetLimit: true });
+          renderDetail();
+        });
       });
       document.querySelectorAll(".density-control [data-density]").forEach((button) => {
         button.addEventListener("click", () => setDensity(button.dataset.density));
@@ -1670,8 +2147,12 @@
       window.setInterval(() => refreshImageList(), 10000);
     }
 
-    init().catch(() => {
-      $("summary").innerHTML = `<span class="pill status-reject">오프라인</span>`;
+    init().catch((error) => {
+      const message = String(error?.message || error || "알 수 없는 오류");
+      const authenticationError = /HTTP (401|403)/.test(message);
+      const label = authenticationError ? "인증 키 확인 필요" : "서버 연결 실패";
+      $("summary").innerHTML = `<span class="pill status-reject">${label}</span>`;
+      $("grid").innerHTML = `<div class="empty-state" role="alert">${escapeHtml(label)}: ${escapeHtml(message)}</div>`;
     });
 
     $("zoomClose").addEventListener("click", closeZoom);

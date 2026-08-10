@@ -1,11 +1,22 @@
 $ErrorActionPreference = "Stop"
+
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$runtimeRoot = Join-Path $env:LOCALAPPDATA "OpenAI\Codex\runtimes\cua_node"
-$node = Get-ChildItem -LiteralPath $runtimeRoot -Recurse -Filter "node.exe" -ErrorAction SilentlyContinue |
-    Sort-Object LastWriteTime -Descending |
-    Select-Object -First 1 -ExpandProperty FullName
+. (Join-Path $scriptDir "review-launcher-lib.ps1")
 
-if (-not $node) { $node = "node" }
+$config = Get-DinoReviewConfig -ReviewRoot $scriptDir
+$listener = Get-DinoReviewListener -Port $config.Port
 
-Set-Location -LiteralPath $scriptDir
-& $node .\server.js
+if ($listener) {
+    if (-not (Test-DinoReviewHealth -Config $config)) {
+        $description = Get-DinoReviewListenerDescription -Listener $listener
+        throw "Port $($config.Port) is occupied, but it is not the authenticated Dino review server for this local key. $description"
+    }
+    Save-DinoReviewKey -Config $config
+    Write-Host "Dino review is already healthy at http://127.0.0.1:$($config.Port)/."
+} else {
+    Save-DinoReviewKey -Config $config
+    $process = Start-DinoReviewBackgroundServer -ReviewRoot $scriptDir -Config $config
+    Write-Host "Dino review started (PID $($process.Id)) at http://127.0.0.1:$($config.Port)/."
+}
+
+Start-Process $config.Url

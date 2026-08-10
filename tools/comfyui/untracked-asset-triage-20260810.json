@@ -15,35 +15,45 @@
     "motionBundleFilesExcluded": 97,
     "motionBundleBytesExcluded": 556658276,
     "alreadyPublishedMotionCandidates": 1,
-    "rejectedMotionCandidates": 5
+    "rejectedMotionCandidates": 5,
+    "cleanupDeletedTargets": 9,
+    "cleanupDeletedFiles": 109,
+    "cleanupDeletedBytes": 597385997
+  },
+  "cleanup": {
+    "completedAt": "2026-08-10",
+    "result": "deleted-after-review-or-promotion",
+    "recoveryBoundary": "Tracked review records, compact evidence sheets, approved assets and generation records remain. The two earliest untracked trackway previews require regeneration if needed again.",
+    "newReviewInbox": "tools/dino-review/pending/",
+    "reviewDatabase": "tools/dino-review/data/review.sqlite"
   },
   "trackwayArtifacts": [
     {
       "path": "tools/comfyui/middle-jurassic-trackway-evidence-preview-v1.png",
       "sha256": "4a71e938b485c0fdf1406b6655c6423348d767043979d780c99b9278c9da40ec",
       "bytes": 3957612,
-      "status": "diagnostic-reject",
+      "status": "diagnostic-reject-deleted",
       "reason": "Outlined stamp-like sauropod impressions, even spacing and arrow-like theropod marks remain too schematic and periodic."
     },
     {
       "path": "tools/comfyui/middle-jurassic-trackway-evidence-preview-v2.png",
       "sha256": "2ce47e165c7013020803dead068979d82f213ee37313308c5c85bcb82624ec75",
       "bytes": 4096711,
-      "status": "diagnostic-reject",
+      "status": "diagnostic-reject-deleted",
       "reason": "Mud integration improved, but repeated print shape and spacing remain visibly patterned and the crossing trail reads as dark arrows."
     },
     {
       "path": "tools/comfyui/middle-jurassic-trackway-evidence-preview-v3.png",
       "sha256": "5c15e00136927b675158907086140d77fe9db9e4d17f8ebe2253e9ce90fd9c95",
       "bytes": 4097161,
-      "status": "diagnostic-reject-duplicate-superseded",
+      "status": "diagnostic-reject-duplicate-superseded-deleted",
       "reason": "Byte-identical to the tracked hybrid-v1 publication asset and superseded by the nonperiodic hybrid-v2 asset."
     },
     {
       "path": "tools/comfyui/trackway-orthographic-structure-guide-v1.png",
       "sha256": "0c027ae16f77693613c986f1ef42e53418dc5b97c29844b6ce02e919fa31222d",
       "bytes": 122866,
-      "status": "structure-reference-superseded",
+      "status": "structure-reference-superseded-deleted",
       "reason": "Redundant raster derivative of the tracked v1 SVG guide; the canonical guide is trackway-orthographic-naturalized-structure-guide-v2.svg."
     }
   ],
@@ -55,7 +65,7 @@
   },
   "motionReviewBundle": {
     "path": "tools/comfyui/review-evidence/motion-subject-required-20260807/",
-    "status": "local-derived-review-bundle-excluded",
+    "status": "local-derived-review-bundle-deleted-after-review-complete",
     "contents": {
       "html": 1,
       "png": 90,
@@ -77,5 +87,18 @@
       "ankylosaurus-magniventris-connected-head-rise-f81-v1",
       "ankylosaurus-magniventris-clear-fern-bite-f81-v2"
     ]
+  },
+  "additionalRejectedMotionCleanup": {
+    "status": "deleted",
+    "reviewRecord": "tools/comfyui/motion-m2-i2v-recognition-expansion-candidates-20260806.json",
+    "candidates": [
+      "tools/comfyui/outputs/triceratops-horridus-clear-head-lift-wan22-s260806302-f81-v2-candidate.mp4",
+      "tools/comfyui/outputs/triceratops-horridus-strong-head-lift-wan22-s260806303-f81-v3-candidate.mp4"
+    ],
+    "derivedQaDirectories": [
+      "tools/comfyui/outputs/triceratops-head-lift-s260806302-v2-qa/",
+      "tools/comfyui/outputs/triceratops-head-lift-s260806303-v3-qa/"
+    ],
+    "reason": "Both native candidates were already recorded as rejected with no usable safe prefix. The tracked v1 source used by the safe-exhale derivative was preserved."
   }
 }

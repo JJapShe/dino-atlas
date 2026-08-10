@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "brachiosaurus-altithorax-high-shouldered-riverbank-v2",
+  "filename": "brachiosaurus-altithorax-high-shouldered-riverbank-imagegen-v2.png",
+  "speciesId": "brachiosaurus-altithorax",
+  "kind": "count-level pass",
+  "targetFilename": "brachiosaurus-altithorax-high-shouldered-riverbank-imagegen-v2.png",
+  "provenance": {
+    "source": "",
+    "license": "",
+    "prompt": "",
+    "seed": "",
+    "workflow": ""
+  },
+  "anatomyReview": {
+    "status": "pending",
+    "representative": true,
+    "reviewer": "",
+    "reviewedAt": "",
+    "notes": "Confirm high-shouldered body plan, rounded nasal mound and high-set nostril cue before representative promotion."
+  }
+}
