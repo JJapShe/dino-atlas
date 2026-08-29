@@ -87,8 +87,8 @@ const dinosaurs = [
     sizeLabel: "여왕개미 몸길이",
     sizeDisplay: "5 cm 이상",
     knowledgeLevel: 3,
-    imageSlots: 3,
-    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 신생대 전용",
+    imageSlots: 4,
+    reviewStatus: "4장 갤러리 · S1 count-level pass · S2 review hold · S3·S4 anatomy review · 신생대 전용",
     summary:
       "타이타노미르마 루베이는 전기 에오세 북아메리카에 살았던 거대한 날개 달린 여왕개미입니다. 몸길이가 5 cm를 넘었지만 사람만 한 괴물은 아니며, 여섯 다리와 네 날개, 잘록한 허리와 긴 배를 가진 실제 곤충 크기로 복원합니다.",
     features: {
@@ -120,8 +120,8 @@ const dinosaurs = [
     sizeLabel: "키",
     sizeDisplay: "약 2 m",
     knowledgeLevel: 2,
-    imageSlots: 3,
-    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 신생대 전용",
+    imageSlots: 4,
+    reviewStatus: "4장 갤러리 · S1 count-level pass · S2 review hold · S3·S4 anatomy review · 신생대 전용",
     summary:
       "가스토르니스는 전기 신생대의 거대한 날지 못하는 새입니다. 한때 포식자로 자주 그려졌지만, 곧고 깊은 부리와 뼈의 동위원소·턱 기능 연구는 식물을 먹었음을 지지합니다. 무거운 다리와 작은 날개를 지녔으며 정확한 깃털색은 복원입니다.",
     features: {
@@ -153,8 +153,8 @@ const dinosaurs = [
     sizeLabel: "몸길이",
     sizeDisplay: "몸통 약 4.3~7 cm",
     knowledgeLevel: 2,
-    imageSlots: 3,
-    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 고생대 전용",
+    imageSlots: 4,
+    reviewStatus: "4장 갤러리 · S1 count-level pass · S2 review hold · S3·S4 anatomy review · 고생대 전용",
     summary:
       "오파비니아는 캄브리아기 바다에 살았던 작은 오파비니드입니다. 머리 위에 모인 눈 다섯 개와 길고 유연한 코, 안쪽에 짧은 가시가 난 코끝 집게가 특징입니다. 몸 옆의 얇은 수영엽과 아가미 날, 꼬리부채로 헤엄쳤지만 정확한 색과 먹이 행동은 복원입니다.",
     features: {
@@ -186,8 +186,8 @@ const dinosaurs = [
     sizeLabel: "몸길이",
     sizeDisplay: "큰 표본 약 2.7 m",
     knowledgeLevel: 2,
-    imageSlots: 3,
-    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 고생대 전용",
+    imageSlots: 4,
+    reviewStatus: "4장 갤러리 · S1 count-level pass · S2 review hold · S3·S4 anatomy review · 고생대 전용",
     summary:
       "틱타알릭은 후기 데본기의 네발동물 줄기 계통에 가까운 육기어류입니다. 납작한 머리와 위쪽 눈, 움직일 수 있는 목을 지녔고, 앞지느러미 안에는 팔꿈치와 손목에 견줄 뼈가 있었지만 손가락은 없고 끝까지 지느러미살이 이어졌습니다.",
     features: {
@@ -352,8 +352,8 @@ const dinosaurs = [
     sizeLabel: "몸길이",
     sizeDisplay: "대형 개체 약 2.6 m까지 추정",
     knowledgeLevel: 1,
-    imageSlots: 3,
-    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 고생대 전용",
+    imageSlots: 4,
+    reviewStatus: "4장 갤러리 · S1 count-level pass · S2 review hold · S3·S4 anatomy review · 고생대 전용",
     summary:
       "아르트로플레우라는 석탄기 숲 바닥을 살았던 거대한 다지류 친척입니다. 넓고 납작한 여러 등판과 마디마다 이어지는 많은 다리가 특징입니다. 최근 머리 화석은 자루눈과 지네·노래기를 섞은 듯한 머리 단서를 보여 주지만, 어린 개체 자료이므로 성체의 정확한 얼굴과 먹이는 아직 조심스럽게 복원해야 합니다.",
     features: {
@@ -386,8 +386,8 @@ const dinosaurs = [
     sizeLabel: "날개폭",
     sizeDisplay: "약 60~70 cm",
     knowledgeLevel: 1,
-    imageSlots: 3,
-    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 고생대 전용",
+    imageSlots: 4,
+    reviewStatus: "4장 갤러리 · S1 count-level pass · S2 review hold · S3·S4 anatomy review · 고생대 전용",
     summary:
       "메가네우라는 후기 석탄기의 거대한 그리핀플라이입니다. 네 장의 긴 날개와 여섯 다리, 큰 겹눈, 길고 마디진 배를 지녔습니다. 오늘날 잠자리와 닮았지만 날개맥과 날개 관절은 완전히 같지 않으므로 현대 잠자리를 단순히 크게 복제하지 않습니다.",
     features: {
@@ -454,8 +454,8 @@ const dinosaurs = [
     sizeLabel: "몸길이 추정",
     sizeDisplay: "약 12~13 m",
     knowledgeLevel: 1,
-    imageSlots: 3,
-    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 신생대 전용",
+    imageSlots: 4,
+    reviewStatus: "4장 갤러리 · S1 count-level pass · S2 review hold · S3·S4 anatomy review · 신생대 전용",
     summary:
       "티타노보아는 공룡 멸종 뒤 팔레오세의 더운 열대 습지에 살았던 거대한 보아류 뱀입니다. 팔다리 없이 하나로 이어지는 굵은 몸과 긴 꼬리를 지녔습니다. 몸길이와 온도 추정에는 범위가 있고, 머리 모양·무늬·사냥 장면은 제한된 화석과 살아 있는 친척을 바탕으로 한 복원입니다.",
     features: {
@@ -488,8 +488,8 @@ const dinosaurs = [
     sizeLabel: "몸길이",
     sizeDisplay: "약 15~18 m",
     knowledgeLevel: 2,
-    imageSlots: 3,
-    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 신생대 전용",
+    imageSlots: 4,
+    reviewStatus: "4장 갤러리 · S1 count-level pass · S2 review hold · S3·S4 anatomy review · 신생대 전용",
     summary:
       "바실로사우루스는 후기 에오세 바다를 헤엄친 초기 고래입니다. 매우 길쭉한 몸, 앞지느러미 두 개, 골반 가까이에 남은 아주 작은 뒷다리 두 개, 서로 다른 모양의 이빨이 특징입니다. 뱀이나 물고기가 아니며 꼬리판은 작고 수평으로 복원합니다.",
     features: {
@@ -6355,6 +6355,14 @@ const generatedImageSamples = {
       generationWorkflow: "OpenAI image_gen ecology composition; focal anatomy, scale and non-contact review", reviewStatus: "원본 크기 anatomy-review 수용 · 여왕개미 전신/스케일 판독 · 식생/행동 가설 · 대표 승격 금지",
       locality: "generalized Green River lake-margin forest", anatomyEvidenceBoundary: "focal ant plan is readable; background arthropod, vegetation and moment are hypothetical", metadataRecord: "tools/comfyui/paleozoic-cenozoic-insect-expansion-20260826.json", representativeEligible: false,
     },
+    {
+      kind: "anatomy review", title: "타이타노미르마 낙엽 위 후방 사선 생태",
+      body: "큰 낙엽 위를 걷는 날개 여왕개미를 낮은 매크로 후방 사선으로 담았습니다. 여섯 다리·네 날개·배자루는 읽히지만 군체와 정확한 식생은 가설입니다.",
+      source: "assets/dinosaurs/titanomyrma-lubei-leaf-macro-rearthreequarter-ecology-imagegen-v2.png", variant: "낙엽 매크로 후방 사선 생태 이미지 생성 v2", src: "assets/dinosaurs/titanomyrma-lubei-leaf-macro-rearthreequarter-ecology-imagegen-v2.png", gallerySlot: 4, galleryRole: "identity-anatomy", phenotype: "black-amber-d", habitatKey: "early-eocene-green-river-leaf-macro",
+      sourceAttribution: "OpenAI built-in image generation; Archibald et al. 2011 and Green River locality context supplied factual constraints only", licenseRecord: "Generated project asset; no external artwork, composition or named style copied",
+      generationPromptRecord: "tools/comfyui/paleo-cenozoic-ecology-enrichment-20260830.json#records/titanomyrma-lubei-s4", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image_gen; original-size four-wing, six-leg, antenna and scale review", reviewStatus: "원본 크기 anatomy-review 수용 · 네 날개/여섯 다리/개미 체형 판독 · 군체·식생 가설 · 대표 승격 금지",
+      locality: "generalized early Eocene Green River lake-margin leaf litter", anatomyEvidenceBoundary: "focal ant body plan and approximate scale are readable; wing venation, color, plants and behavior remain reconstructed", metadataRecord: "tools/comfyui/paleo-cenozoic-ecology-enrichment-20260830.json", representativeEligible: false,
+    },
   ],
   "gastornis-gigantea": [
     {
@@ -6386,6 +6394,14 @@ const generatedImageSamples = {
       generationPromptRecord: "tools/comfyui/paleozoic-cenozoic-insect-expansion-20260826.json#records/gastornis-gigantea-ecology-v1", generationSeed: "service-assigned, not exposed",
       generationWorkflow: "OpenAI image_gen ecology composition; non-graphic herbivory, beak and limb review", reviewStatus: "원본 크기 anatomy-review 수용 · 식물 섭식/전신 판독 · 식생/동시출현/행동 가설 · 대표 승격 금지",
       locality: "generalized early Eocene North American woodland", anatomyEvidenceBoundary: "focal anatomy and non-predatory behavior are readable; exact plants, companions and plumage are hypothetical", metadataRecord: "tools/comfyui/paleozoic-cenozoic-insect-expansion-20260826.json", representativeEligible: false,
+    },
+    {
+      kind: "anatomy review", title: "가스토르니스 높은 사선 열매 숲바닥 생태",
+      body: "따뜻한 에오세 숲 가장자리에서 떨어진 열매를 고르는 한 개체를 높은 사선으로 담았습니다. 곧고 깊은 무치 부리, 작은 날개, 두 굵은 다리는 읽히며 정확한 먹이식물은 가설입니다.",
+      source: "assets/dinosaurs/gastornis-gigantea-high-oblique-fruit-browse-ecology-imagegen-v2.png", variant: "높은 사선 열매 숲바닥 생태 이미지 생성 v2", src: "assets/dinosaurs/gastornis-gigantea-high-oblique-fruit-browse-ecology-imagegen-v2.png", gallerySlot: 4, galleryRole: "identity-anatomy", phenotype: "umber-cream-d", habitatKey: "early-eocene-woodland-fruitfall",
+      sourceAttribution: "OpenAI built-in image generation; AMNH and Angst et al. 2014 supplied broad anatomy and herbivory constraints only", licenseRecord: "Generated project asset; no external artwork, composition or named style copied",
+      generationPromptRecord: "tools/comfyui/paleo-cenozoic-ecology-enrichment-20260830.json#records/gastornis-gigantea-s4", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image_gen; original-size beak, wing, foot and non-predatory scene review", reviewStatus: "원본 크기 anatomy-review 수용 · 곧은 부리/두 다리/작은 날개 판독 · 열매와 행동 가설 · 대표 승격 금지",
+      locality: "generalized early Eocene North American woodland edge", anatomyEvidenceBoundary: "gross flightless-bird anatomy is readable; plumage, plants, fruit and moment remain reconstructed", metadataRecord: "tools/comfyui/paleo-cenozoic-ecology-enrichment-20260830.json", representativeEligible: false,
     },
   ],
   "opabinia-regalis": [
@@ -6455,6 +6471,14 @@ const generatedImageSamples = {
       metadataRecord: "tools/comfyui/paleozoic-famous-life-expansion-20260824.json",
       representativeEligible: false,
     },
+    {
+      kind: "anatomy review", title: "오파비니아 낮은 전방 사선 해면 대륙붕 생태",
+      body: "드문 해면 사이를 전방 사선으로 헤엄치는 전신 생태 장면입니다. 머리 위 군집 눈 다섯 개와 빗살 가시가 난 한 코끝은 읽히며, 배경 생물과 행동은 가설입니다.",
+      source: "assets/dinosaurs/opabinia-regalis-low-frontthreequarter-sponge-shelf-ecology-imagegen-v2.png", variant: "낮은 전방 사선 해면 대륙붕 생태 이미지 생성 v2", src: "assets/dinosaurs/opabinia-regalis-low-frontthreequarter-sponge-shelf-ecology-imagegen-v2.png", gallerySlot: 4, galleryRole: "identity-anatomy", phenotype: "pearl-rust-d", habitatKey: "middle-cambrian-sponge-shelf-low-angle",
+      sourceAttribution: "OpenAI built-in image generation; Royal Ontario Museum and Whittington 1975 supplied factual anatomy constraints only", licenseRecord: "Generated project asset; user factual feedback informed only eye-cluster and proboscis-tip constraints; no artwork copied",
+      generationPromptRecord: "tools/comfyui/paleo-cenozoic-ecology-enrichment-20260830.json#records/opabinia-regalis-s4", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image_gen; original-size five-eye cluster, bristled proboscis, flap and tail review", reviewStatus: "원본 크기 anatomy-review 수용 · 군집 눈 5개/빗살 코끝/전신 판독 · 색·군집·행동 가설 · 대표 승격 금지",
+      locality: "broad middle Cambrian Burgess Shale shelf reconstruction", anatomyEvidenceBoundary: "focal five-eye, proboscis, lateral-lobe and tail-fan cues are readable; exact soft tissue, color and ecology remain reconstructed", metadataRecord: "tools/comfyui/paleo-cenozoic-ecology-enrichment-20260830.json", representativeEligible: false,
+    },
   ],
   "tiktaalik-roseae": [
     {
@@ -6522,6 +6546,14 @@ const generatedImageSamples = {
       anatomyEvidenceBoundary: "focal head and pectoral-fin cues are readable; hidden far fins, behavior and vegetation remain reconstructed",
       metadataRecord: "tools/comfyui/paleozoic-famous-life-expansion-20260824.json",
       representativeEligible: false,
+    },
+    {
+      kind: "anatomy review", title: "틱타알릭 물가 후방 사선 수로 생태",
+      body: "후기 데본기 얕은 수로 가장자리에서 몸을 물에 둔 틱타알릭입니다. 납작한 머리·위쪽 눈·목과 손가락 없이 지느러미살로 끝나는 지느러미를 읽으며, 육지 보행은 주장하지 않습니다.",
+      source: "assets/dinosaurs/tiktaalik-roseae-waterline-rearthreequarter-channel-ecology-imagegen-v2.png", variant: "물가 후방 사선 수로 생태 이미지 생성 v2", src: "assets/dinosaurs/tiktaalik-roseae-waterline-rearthreequarter-channel-ecology-imagegen-v2.png", gallerySlot: 4, galleryRole: "identity-anatomy", phenotype: "olive-slate-d", habitatKey: "late-devonian-channel-waterline",
+      sourceAttribution: "OpenAI built-in image generation; Daeschler, Shubin and Jenkins 2006 supplied anatomy and environment constraints only", licenseRecord: "Generated project asset; no external artwork, composition or named style copied",
+      generationPromptRecord: "tools/comfyui/paleo-cenozoic-ecology-enrichment-20260830.json#records/tiktaalik-roseae-s4", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image_gen; original-size flat head, high eye, neck, paired lobe-fin and no-digit review", reviewStatus: "원본 크기 anatomy-review 수용 · 손발가락 없음/수중 전신 판독 · 식생·색·행동 가설 · 대표 승격 금지",
+      locality: "broad Late Devonian Ellesmere Island shallow-channel reconstruction", anatomyEvidenceBoundary: "focal fish body and no-digit fin cues are readable; far-side fins, vegetation and behavior remain reconstructed", metadataRecord: "tools/comfyui/paleo-cenozoic-ecology-enrichment-20260830.json", representativeEligible: false,
     },
   ],
   "jaekelopterus-rhenaniae": [
@@ -6869,6 +6901,14 @@ const generatedImageSamples = {
       metadataRecord: "tools/comfyui/documentary-famous-life-expansion-20260811.json",
       representativeEligible: false,
     },
+    {
+      kind: "anatomy review", title: "아르트로플레우라 비 온 뒤 리코프시드 껍질 생태",
+      body: "비에 젖은 석탄기 숲바닥의 쓰러진 리코프시드 껍질을 지나는 낮은 전방 사선입니다. 한 몸의 넓은 등판과 촘촘한 다리열은 읽히며 성체 머리·식성은 단정하지 않습니다.",
+      source: "assets/dinosaurs/arthropleura-armata-postrain-lycopsid-bark-ecology-imagegen-v2.png", variant: "비 온 뒤 리코프시드 껍질 낮은 사선 생태 이미지 생성 v2", src: "assets/dinosaurs/arthropleura-armata-postrain-lycopsid-bark-ecology-imagegen-v2.png", gallerySlot: 4, galleryRole: "identity-anatomy", phenotype: "wet-charcoal-d", habitatKey: "late-carboniferous-postrain-lycopsid-forest",
+      sourceAttribution: "OpenAI built-in image generation; Lhéritier et al. 2024 and Carboniferous track evidence supplied factual constraints only", licenseRecord: "Generated project asset; no external artwork, composition or named style copied",
+      generationPromptRecord: "tools/comfyui/paleo-cenozoic-ecology-enrichment-20260830.json#records/arthropleura-armata-s4", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image_gen; original-size unbranched tergite, antenna and paired-leg-row review", reviewStatus: "원본 크기 anatomy-review 수용 · 등판/한 몸/다리열 판독 · 성체 머리·식성·식생 가설 · 대표 승격 금지",
+      locality: "generalized late Carboniferous equatorial wetland forest", anatomyEvidenceBoundary: "gross body plate and leg-row continuity are readable; adult head details, color and behavior remain reconstructed", metadataRecord: "tools/comfyui/paleo-cenozoic-ecology-enrichment-20260830.json", representativeEligible: false,
+    },
   ],
   "meganeura-monyi": [
     {
@@ -6939,6 +6979,14 @@ const generatedImageSamples = {
       colorEvidence: "all animal, water, mud and plant colors are hypothetical",
       metadataRecord: "tools/comfyui/documentary-famous-life-expansion-20260811.json",
       representativeEligible: false,
+    },
+    {
+      kind: "anatomy review", title: "메가네우라 낮은 하부 사선 석탄기 습지 활공",
+      body: "물 위를 선회하는 메가네우라를 아래쪽 사선에서 담았습니다. 가슴에 붙은 네 날개와 여섯 다리, 긴 마디 배는 읽히며 정확한 비행과 색은 가설입니다.",
+      source: "assets/dinosaurs/meganeura-monyi-low-underside-coalswamp-glide-ecology-imagegen-v2.png", variant: "낮은 하부 사선 석탄기 습지 활공 생태 이미지 생성 v2", src: "assets/dinosaurs/meganeura-monyi-low-underside-coalswamp-glide-ecology-imagegen-v2.png", gallerySlot: 4, galleryRole: "identity-anatomy", phenotype: "tan-slate-d", habitatKey: "late-carboniferous-coalswamp-low-flight",
+      sourceAttribution: "OpenAI built-in image generation; MNHN and comparative Meganisoptera studies supplied factual constraints only", licenseRecord: "Generated project asset; no external artwork, composition or named style copied",
+      generationPromptRecord: "tools/comfyui/paleo-cenozoic-ecology-enrichment-20260830.json#records/meganeura-monyi-s4", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image_gen; original-size four-wing, six-leg, thorax attachment and abdomen review", reviewStatus: "원본 크기 anatomy-review 수용 · 네 날개/여섯 다리/한 배 판독 · 비행·식생·색 가설 · 대표 승격 금지",
+      locality: "generalized late Carboniferous European coal-swamp clearing", anatomyEvidenceBoundary: "focal wing and limb counts are readable; venation, flight posture and ecology remain reconstructed", metadataRecord: "tools/comfyui/paleo-cenozoic-ecology-enrichment-20260830.json", representativeEligible: false,
     },
   ],
   "inostrancevia-alexandri": [
@@ -7082,6 +7130,14 @@ const generatedImageSamples = {
       metadataRecord: "tools/comfyui/documentary-famous-life-expansion-20260811.json",
       representativeEligible: false,
     },
+    {
+      kind: "anatomy review", title: "티타노보아 높은 사선 열대 습지 큰 S자 생태",
+      body: "팔레오세 숲의 얕은 물을 한 마리의 굵고 연속적인 몸으로 가로지르는 장면입니다. 머리 하나와 꼬리 하나, 사지 없음은 읽히며 무늬·크기·행동은 복원 범위입니다.",
+      source: "assets/dinosaurs/titanoboa-cerrejonensis-high-oblique-swamp-scurve-ecology-imagegen-v2.png", variant: "높은 사선 열대 습지 큰 S자 생태 이미지 생성 v2", src: "assets/dinosaurs/titanoboa-cerrejonensis-high-oblique-swamp-scurve-ecology-imagegen-v2.png", gallerySlot: 4, galleryRole: "identity-anatomy", phenotype: "mottled-umber-d", habitatKey: "paleocene-cerrejon-high-swamp",
+      sourceAttribution: "OpenAI built-in image generation; Head et al. 2009 and Cerrejón locality sources supplied factual constraints only", licenseRecord: "Generated project asset; no external artwork, composition or named style copied",
+      generationPromptRecord: "tools/comfyui/paleo-cenozoic-ecology-enrichment-20260830.json#records/titanoboa-cerrejonensis-s4", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image_gen; original-size continuous limbless body, head and tail review", reviewStatus: "원본 크기 anatomy-review 수용 · 머리 하나/꼬리 하나/사지 없음 판독 · 무늬·식생·행동 가설 · 대표 승격 금지",
+      locality: "generalized Paleocene Cerrejón tropical swamp", anatomyEvidenceBoundary: "continuous boid body is readable; head shape, color, scale, plants and behavior remain reconstructed", metadataRecord: "tools/comfyui/paleo-cenozoic-ecology-enrichment-20260830.json", representativeEligible: false,
+    },
   ],
   "basilosaurus-isis": [
     {
@@ -7152,6 +7208,14 @@ const generatedImageSamples = {
       colorEvidence: "all whale, fish, water and seafloor colors are hypothetical",
       metadataRecord: "tools/comfyui/documentary-famous-life-expansion-20260811.json",
       representativeEligible: false,
+    },
+    {
+      kind: "anatomy review", title: "바실로사우루스 굽은 항로 작은 뒷다리 생태",
+      body: "테티스 얕은 바다에서 긴 몸을 굽힌 초기 고래입니다. 작은 외부 뒷다리 둘과 수평 꼬리판은 읽히지만 반대쪽 앞지느러미는 원근에 가려져 이 장면은 대표 해부 증거로 쓰지 않습니다.",
+      source: "assets/dinosaurs/basilosaurus-isis-banking-tinyhindlimb-ecology-imagegen-v3.png", variant: "굽은 항로 작은 뒷다리 생태 이미지 생성 v3", src: "assets/dinosaurs/basilosaurus-isis-banking-tinyhindlimb-ecology-imagegen-v3.png", gallerySlot: 4, galleryRole: "identity-anatomy", phenotype: "slate-blue-d", habitatKey: "late-eocene-tethys-banking-turn",
+      sourceAttribution: "OpenAI built-in image generation; University of Michigan and basilosaurid studies supplied factual constraints only", licenseRecord: "Generated project asset; no external artwork, composition or named style copied",
+      generationPromptRecord: "tools/comfyui/paleo-cenozoic-ecology-enrichment-20260830.json#records/basilosaurus-isis-s4", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image_gen; original-size long body, hind-limb pair and horizontal fluke review", reviewStatus: "원본 크기 structure-reference 수용 · 작은 뒷다리 둘/수평 꼬리판 판독 · 가려진 반대쪽 앞지느러미로 대표 증거 제외",
+      locality: "generalized late Eocene Tethys shallow sea", anatomyEvidenceBoundary: "long body, visible hind-limb pair and horizontal fluke are readable; forelimb occlusion, color and precise posture remain reconstructed", metadataRecord: "tools/comfyui/paleo-cenozoic-ecology-enrichment-20260830.json", representativeEligible: false,
     },
   ],
   "paraceratherium-transouralicum": [

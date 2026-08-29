@@ -92,6 +92,16 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "early-eocene-green-river-leaf-litter",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/titanomyrma-lubei-leaf-macro-rearthreequarter-ecology-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only S4 ecology richness reference",
+      "claimBoundary": "Ecology reference only; reconstructed color, exact habitat and behavior are hypothetical and never representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "early-eocene-green-river-leaf-macro",
+      "expectedKind": "anatomy review"
     }
   ],
   "gastornis-gigantea": [
@@ -122,6 +132,16 @@ window.gallerySlotAssignments = {
       "claimBoundary": "Exact plants and companions are illustrative; not representative-eligible.",
       "phenotype": "canonical-a",
       "habitatKey": "early-eocene-woodland-browse",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/gastornis-gigantea-high-oblique-fruit-browse-ecology-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only S4 ecology richness reference",
+      "claimBoundary": "Ecology reference only; reconstructed color, exact habitat and behavior are hypothetical and never representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "early-eocene-woodland-fruitfall",
       "expectedKind": "anatomy review"
     }
   ],
@@ -154,6 +174,16 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "middle-cambrian-sponge-shelf-ecology",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/opabinia-regalis-low-frontthreequarter-sponge-shelf-ecology-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only S4 ecology richness reference",
+      "claimBoundary": "Ecology reference only; reconstructed color, exact habitat and behavior are hypothetical and never representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "middle-cambrian-sponge-shelf-low-angle",
+      "expectedKind": "anatomy review"
     }
   ],
   "tiktaalik-roseae": [
@@ -184,6 +214,16 @@ window.gallerySlotAssignments = {
       "claimBoundary": "Ecology context only; bank vegetation and behavior are hypothetical and the slot is not representative-eligible.",
       "phenotype": "canonical-a",
       "habitatKey": "late-devonian-channel-bank-ecology",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/tiktaalik-roseae-waterline-rearthreequarter-channel-ecology-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only S4 ecology richness reference",
+      "claimBoundary": "Ecology reference only; reconstructed color, exact habitat and behavior are hypothetical and never representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-devonian-channel-waterline",
       "expectedKind": "anatomy review"
     }
   ],
@@ -340,6 +380,16 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "late-carboniferous-equatorial-wetland-forest",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/arthropleura-armata-postrain-lycopsid-bark-ecology-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only S4 ecology richness reference",
+      "claimBoundary": "Ecology reference only; reconstructed color, exact habitat and behavior are hypothetical and never representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-carboniferous-postrain-lycopsid-forest",
+      "expectedKind": "anatomy review"
     }
   ],
   "meganeura-monyi": [
@@ -370,6 +420,16 @@ window.gallerySlotAssignments = {
       "claimBoundary": "The focal insect supports gross anatomy review only; the distant Arthropleura and all behavior are not count-level or direct-interaction evidence.",
       "phenotype": "canonical-a",
       "habitatKey": "late-carboniferous-equatorial-wetland-forest",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/meganeura-monyi-low-underside-coalswamp-glide-ecology-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only S4 ecology richness reference",
+      "claimBoundary": "Ecology reference only; reconstructed color, exact habitat and behavior are hypothetical and never representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-carboniferous-coalswamp-low-flight",
       "expectedKind": "anatomy review"
     }
   ],
@@ -433,6 +493,16 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "cerrejon-paleocene-rainforest-wetland",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/titanoboa-cerrejonensis-high-oblique-swamp-scurve-ecology-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only S4 ecology richness reference",
+      "claimBoundary": "Ecology reference only; reconstructed color, exact habitat and behavior are hypothetical and never representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "paleocene-cerrejon-high-swamp",
+      "expectedKind": "anatomy review"
     }
   ],
   "basilosaurus-isis": [
@@ -463,6 +533,16 @@ window.gallerySlotAssignments = {
       "claimBoundary": "Broad Late Eocene marine context only; exact fish, encounter and feeding behavior are illustrative and the scene is never representative-eligible.",
       "phenotype": "canonical-a",
       "habitatKey": "wadi-al-hitan-late-eocene-shallow-sea",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/basilosaurus-isis-banking-tinyhindlimb-ecology-imagegen-v3.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only S4 ecology richness reference",
+      "claimBoundary": "Ecology reference only; reconstructed color, exact habitat and behavior are hypothetical and never representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-eocene-tethys-banking-turn",
       "expectedKind": "anatomy review"
     }
   ],
