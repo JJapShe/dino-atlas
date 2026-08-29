@@ -1,5 +1,12 @@
 # Dino Atlas Recursive Expansion Queue
 
+## 2026-08-30 — Three-slot familiar-taxon ecology and interaction pass
+
+- The live audit began with 34 taxa limited to three registered gallery slots. This pass advances eight familiar anchors to S4: Anomalocaris, Dunkleosteus, Dimetrodon, the woolly mammoth, Carnotaurus, Giganotosaurus, Iguanodon and Archaeopteryx.
+- Each new S4 is an original, non-representative `identity-anatomy` reference with a clearly different camera family: forward underwater approach, high oblique reef turn, low post-rain floodplain walk, and rear three-quarter winter-steppe family movement.
+- Contemporaneous animals appear only as spatially separate ecology context: Burgess shelf fauna, distant Devonian fish, distant Edaphosaurus and distant woolly rhinoceros. No scene claims observed social behavior, pursuit, predation, competition or exact coexistence event.
+- Next queue unit: continue the same review gate across the remaining 26 three-slot taxa, prioritizing LV1 familiar taxa before rare shell subtypes. Do not promote an S4 or use it as a representative without a separate anatomy pass.
+
 ## 2026-08-30 — Paleozoic/Cenozoic S4 ecology richness
 
 - Added one approved, non-representative S4 ecology/identity reference for Opabinia, Tiktaalik, Arthropleura, Meganeura, Titanomyrma, Gastornis, Titanoboa and Basilosaurus.

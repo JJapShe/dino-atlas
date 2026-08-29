@@ -601,6 +601,16 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "late-pleistocene-mammoth-steppe-forbs",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/mammuthus-primigenius-rearthreequarter-rhino-steppe-ecology-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only rear three-quarter winter-steppe community reference",
+      "claimBoundary": "Kinship, snow, exact region, background-rhinoceros spacing and behavior are illustrative; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-mammoth-rhino-steppe-context",
+      "expectedKind": "anatomy review"
     }
   ],
   "smilodon-fatalis": [
@@ -768,6 +778,16 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "middle-cambrian-soft-prey-shelf-ecology",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/anomalocaris-canadensis-frontthreequarter-burgess-fauna-ecology-imagegen-v3.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only forward three-quarter Burgess community reference",
+      "claimBoundary": "Community spacing, color, water conditions and behavior are illustrative; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "middle-cambrian-burgess-fauna-context",
+      "expectedKind": "anatomy review"
     }
   ],
   "dunkleosteus-terrelli": [
@@ -796,6 +816,16 @@ window.gallerySlotAssignments = {
       "claimBoundary": "Fish taxa, schooling response, reef, place, exact coexistence and behavior are illustrative and establish no attack or prey preference.",
       "phenotype": "canonical-a",
       "habitatKey": "late-devonian-fish-school-open-water",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/dunkleosteus-terrelli-high-oblique-reefturn-ecology-imagegen-v3.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only high-oblique reef-edge turn",
+      "claimBoundary": "Posterior body and fin model, reef, fish taxa, turn and behavior are reconstructed; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-devonian-reef-edge-turn",
       "expectedKind": "anatomy review"
     }
   ],
@@ -881,6 +911,16 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "early-permian-clearfork-seasonal-channel",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/dimetrodon-grandis-low-frontthreequarter-edaphosaurus-context-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only low front-three-quarter post-rain floodplain context",
+      "claimBoundary": "Sail membrane, integument, posture, weather and distant-animal association are illustrative; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "early-permian-postrain-floodplain-context",
+      "expectedKind": "anatomy review"
     }
   ],
   "archaeopteryx-lithographica": [
@@ -906,6 +946,15 @@ window.gallerySlotAssignments = {
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
       "habitatKey": "solnhofen-lagoon-islets",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/archaeopteryx-lithographica-high-oblique-solnhofen-context-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "claimBoundary": "Flight performance, color and background association are illustrative; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "solnhofen-high-glide-context",
       "expectedKind": "anatomy review"
     }
   ],
@@ -4407,6 +4456,15 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "la-colonia-estuary-margin",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/carnotaurus-sastrei-low-rearthreequarter-wetland-birds-ecology-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "claimBoundary": "Posture, colors, birds and behavior are illustrative; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "la-colonia-wetland-bird-context",
+      "expectedKind": "anatomy review"
     }
   ],
   "carcharodontosaurus-saharicus": [
@@ -4458,6 +4516,15 @@ window.gallerySlotAssignments = {
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
       "habitatKey": "candeleros-braided-channel",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/giganotosaurus-carolinii-high-frontthreequarter-candeleros-context-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "claimBoundary": "Soft tissue, colors and association are reconstructed; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "candeleros-river-sauropod-context",
       "expectedKind": "anatomy review"
     }
   ],
@@ -6718,6 +6785,15 @@ window.gallerySlotAssignments = {
       "claimBoundary": "The three separated animals are a reconstructed shared-habitat scene, not direct evidence of a herd, family unit, coordinated travel, or the exact behavior shown. Recent osteological analysis strongly supports quadrupedal capability, but the pictured movement remains hypothetical.",
       "phenotype": "canonical-a",
       "habitatKey": "bernissart-marsh",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/iguanodon-bernissartensis-high-rearthreequarter-stream-context-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "claimBoundary": "Co-occurrence, grouping and behavior are illustrative; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "early-cretaceous-woodland-stream-context",
       "expectedKind": "anatomy review"
     }
   ],

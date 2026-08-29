@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "batchId": "three-slot-ecology-interaction-enrichment-20260830",
+  "createdAt": "2026-08-30",
+  "scope": "Four fourth-slot original ecosystem references for familiar three-image taxa; each remains non-representative after anatomy review.",
+  "copyrightSafety": "OpenAI built-in image generation produced original project assets. Museum and peer-reviewed sources constrained factual anatomy and broad habitat only. No external artwork, named artist style, franchise material, logo, text or watermark was used as an input.",
+  "records": {
+    "anomalocaris-canadensis-s4": {
+      "asset": "assets/dinosaurs/anomalocaris-canadensis-frontthreequarter-burgess-fauna-ecology-imagegen-v3.png",
+      "promptSummary": "Forward three-quarter Burgess shelf swim with one paired set of frontal appendages, paired eyes, soft trunk, lateral flaps and tail fan; distant fauna is non-contact context.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size identity and composition review",
+      "sources": ["Royal Ontario Museum Burgess Shale Anomalocaris", "Whittington & Briggs 1985"],
+      "review": "accepted anatomy review; non-representative; ecology and background community explicitly illustrative"
+    },
+    "dunkleosteus-terrelli-s4": {
+      "asset": "assets/dinosaurs/dunkleosteus-terrelli-high-oblique-reefturn-ecology-imagegen-v3.png",
+      "promptSummary": "High-oblique Late Devonian reef-edge turn with cranial armor, bladed jaw plates, one dorsal fin and a continuous tail; distant fish are non-contact context.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size identity and composition review",
+      "sources": ["Cleveland Museum Dunkleosteus context", "Anderson & Westneat 2007"],
+      "review": "accepted anatomy review; non-representative; posterior body and all behavior remain comparative reconstruction"
+    },
+    "dimetrodon-grandis-s4": {
+      "asset": "assets/dinosaurs/dimetrodon-grandis-low-frontthreequarter-edaphosaurus-context-imagegen-v2.png",
+      "promptSummary": "Low front-three-quarter post-rain Clear Fork floodplain walk with a single thin sail on elongated neural spines; distant Edaphosaurus is non-contact formation context.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size identity and composition review",
+      "sources": ["Smithsonian NMNH Dimetrodon grandis", "Brink & Reisz 2014"],
+      "review": "accepted anatomy review; non-representative; sail membrane, weather and association remain illustrative"
+    },
+    "mammuthus-primigenius-s4": {
+      "asset": "assets/dinosaurs/mammuthus-primigenius-rearthreequarter-rhino-steppe-ecology-imagegen-v2.png",
+      "promptSummary": "Rear three-quarter woolly mammoth adult and calf in a lightly snowy steppe, with a distant independent woolly rhinoceros; all mammals are complete and non-contacting.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size identity, limb and composition review",
+      "sources": ["Natural History Museum woolly mammoth overview", "Larramendi 2016"],
+      "review": "accepted anatomy review; non-representative; kinship, spacing, weather and behavior explicitly illustrative"
+    },
+    "carnotaurus-sastrei-s4": {
+      "asset": "assets/dinosaurs/carnotaurus-sastrei-low-rearthreequarter-wetland-birds-ecology-imagegen-v2.png",
+      "promptSummary": "Low rear-three-quarter La Colonia wetland turn with paired brow horns and reduced arms; distant birds are non-contact context.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size identity and composition review",
+      "sources": ["La Colonia Formation context", "Bonaparte et al. 1990"],
+      "review": "accepted anatomy review; non-representative; posture and background behavior illustrative"
+    },
+    "giganotosaurus-carolinii-s4": {
+      "asset": "assets/dinosaurs/giganotosaurus-carolinii-high-frontthreequarter-candeleros-context-imagegen-v2.png",
+      "promptSummary": "High front-three-quarter Candeleros river margin, with long low skull and three-fingered hands; distant sauropod silhouette is formation context.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size identity and composition review",
+      "sources": ["Candeleros Formation context", "Coria & Salgado 1995"],
+      "review": "accepted anatomy review; non-representative; body soft tissue and association illustrative"
+    },
+    "iguanodon-bernissartensis-s4": {
+      "asset": "assets/dinosaurs/iguanodon-bernissartensis-high-rearthreequarter-stream-context-imagegen-v2.png",
+      "promptSummary": "High rear-three-quarter wet-woodland browse with thumb spikes and a distant separated conspecific.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size identity and composition review",
+      "sources": ["RBINS Iguanodon Bernissart", "Norman 1980"],
+      "review": "accepted anatomy review; non-representative; social interpretation explicitly excluded"
+    },
+    "archaeopteryx-lithographica-s4": {
+      "asset": "assets/dinosaurs/archaeopteryx-lithographica-high-oblique-solnhofen-context-imagegen-v2.png",
+      "promptSummary": "High oblique Solnhofen lagoon glide with feathered wings, clawed manual digits and long bony tail; distant pterosaur is non-contact context.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size identity and composition review",
+      "sources": ["Natural History Museum Archaeopteryx", "Foth et al. 2014"],
+      "review": "accepted anatomy review; non-representative; flight performance remains uncertain"
+    }
+  },
+  "rejected": {}
+}

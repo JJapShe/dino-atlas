@@ -800,6 +800,17 @@
         "reviewMethod": "Original-size adult-calf count and separation, trunk and tusk count, both four-limb and four-foot plans, vegetation occlusion, full-frame, habitat, behavior-boundary, crop, and artifact audit",
         "reviewBatch": "2026-08-08-cenozoic-life-phase-a1",
         "reviewedAt": "2026-08-07T16:17:35.000Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/mammuthus-primigenius-rearthreequarter-rhino-steppe-ecology-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "subrole": "gallery-only rear three-quarter winter-steppe community reference",
+        "reason": "Original-size review retained a complete adult and calf with coherent limb plans; the adult keeps high shoulders, small ears, short tail, trunk and two upper tusks, while the distant rhinoceros remains separate.",
+        "reviewMethod": "Original-size adult-calf separation, adult high-shoulder, ear, tail, trunk, tusk, limb, distant-rhinoceros, crop and artifact audit",
+        "reviewBatch": "2026-08-30-three-slot-ecology-interaction-enrichment-v1",
+        "reviewedAt": "2026-08-30",
+        "claimBoundary": "Kinship, snow, exact region, background-rhinoceros spacing and behavior are illustrative; not representative-eligible."
       }
     },
     "smilodon-fatalis": {
@@ -995,6 +1006,17 @@
         "reviewedAt": "2026-08-10T03:25:00.000Z",
         "gallerySubrole": "gallery-only soft-prey and middle-Cambrian habitat reference",
         "claimBoundary": "Soft-prey capability is analytical; exact prey, pursuit, place, water, plants and moment are illustrative only."
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/anomalocaris-canadensis-frontthreequarter-burgess-fauna-ecology-imagegen-v3.png",
+        "role": "identity-anatomy",
+        "subrole": "gallery-only forward three-quarter Burgess community reference",
+        "reason": "Original-size review kept one complete soft unarmored radiodont with a pair of stalked eyes, one pair of frontal appendages, lateral flaps and a tail fan; background fauna stays separated and non-contacting.",
+        "reviewMethod": "Original-size paired-eye, paired-frontal-appendage, soft-trunk, lateral-flap, tail-fan, crop, background-separation and artifact audit",
+        "reviewBatch": "2026-08-30-three-slot-ecology-interaction-enrichment-v1",
+        "reviewedAt": "2026-08-30",
+        "claimBoundary": "Community spacing, color, water conditions and behavior are illustrative; not representative-eligible."
       }
     },
     "dunkleosteus-terrelli": {
@@ -1029,6 +1051,17 @@
         "reviewedAt": "2026-08-10T03:25:00.000Z",
         "gallerySubrole": "gallery-only non-contact late-Devonian fish-school context",
         "claimBoundary": "Fish taxa, schooling response, reef, place, exact coexistence and behavior are illustrative and establish no attack or prey preference."
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/dunkleosteus-terrelli-high-oblique-reefturn-ecology-imagegen-v3.png",
+        "role": "identity-anatomy",
+        "subrole": "gallery-only high-oblique reef-edge turn",
+        "reason": "Original-size review retained a single complete animal with cranial armor, bladed jaw plates, paired pectoral fins, exactly one dorsal fin and a continuous tail silhouette; distant fish remain non-contacting.",
+        "reviewMethod": "Original-size armor, jaw-plate, fin-count, single-dorsal, tail-continuity, distant-fauna separation, crop and artifact audit",
+        "reviewBatch": "2026-08-30-three-slot-ecology-interaction-enrichment-v1",
+        "reviewedAt": "2026-08-30",
+        "claimBoundary": "Posterior body and fin model, reef, fish taxa, turn and behavior are reconstructed; not representative-eligible."
       }
     },
     "otodus-megalodon": {
@@ -1126,6 +1159,17 @@
         "reviewMethod": "Original-size wide-scene animal-count, skull, sail, four-limb, four-foot, full-tail, habitat, non-contact behavior-boundary, crop, track-randomness, and artifact audit",
         "reviewBatch": "2026-08-08-paleozoic-life-initial-gallery",
         "reviewedAt": "2026-08-07T15:23:04.802Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/dimetrodon-grandis-low-frontthreequarter-edaphosaurus-context-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "subrole": "gallery-only low front-three-quarter post-rain floodplain context",
+        "reason": "Original-size review retained one complete Dimetrodon with a continuous neural-spine sail, long skull, differentiated teeth, four attached limbs and one tail; distant Edaphosaurus remains spatially separated.",
+        "reviewMethod": "Original-size sail, skull, tooth differentiation, four-limb, tail, background separation, crop and artifact audit",
+        "reviewBatch": "2026-08-30-three-slot-ecology-interaction-enrichment-v1",
+        "reviewedAt": "2026-08-30",
+        "claimBoundary": "Sail membrane, integument, posture, weather and distant-animal association are illustrative; not representative-eligible."
       }
     },
     "archaeopteryx-lithographica": {
@@ -1155,6 +1199,16 @@
         "reviewMethod": "Original-size full-body, appendage, tail, habitat, behavior-boundary, crop, and artifact audit",
         "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
         "reviewedAt": "2026-08-07T10:11:42.734Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/archaeopteryx-lithographica-high-oblique-solnhofen-context-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size review retains one complete feathered animal with two wings, clawed manual digits, long bony tail and two hind limbs; distant pterosaur stays non-contacting.",
+        "reviewMethod": "Original-size wing, clawed-digit, tail, hindlimb, background-separation, crop and artifact audit",
+        "reviewBatch": "2026-08-30-three-slot-ecology-interaction-enrichment-v1",
+        "reviewedAt": "2026-08-30",
+        "claimBoundary": "Flight performance, color and background association are illustrative; not representative-eligible."
       }
     },
     "asteroceras-obtusum": {
@@ -8857,6 +8911,16 @@
         "reviewMethod": "Original-size full-frame, primary silhouette, limb-count, foot visibility, tail-continuity, habitat, secondary-animal, crop, and artifact inspection",
         "reviewBatch": "2026-08-06-recognition-taxa-initial-gallery-1",
         "reviewedAt": "2026-08-06T09:06:37.134Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/carnotaurus-sastrei-low-rearthreequarter-wetland-birds-ecology-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size review retains a complete horned theropod with two reduced forearms, two hind limbs and one tail; distant birds remain non-contacting.",
+        "reviewMethod": "Original-size horn, limb, tail, crop and background-separation audit",
+        "reviewBatch": "2026-08-30-three-slot-ecology-interaction-enrichment-v1",
+        "reviewedAt": "2026-08-30",
+        "claimBoundary": "Posture, colors, birds and behavior are illustrative; not representative-eligible."
       }
     },
     "carcharodontosaurus-saharicus": {
@@ -8915,6 +8979,16 @@
         "reviewMethod": "Original-size full-frame inspection of animal count, long-low skull, appendage separation, water-reflection ambiguity, tail continuity, habitat, crop, and artifacts",
         "reviewBatch": "2026-08-06-recognition-taxa-initial-gallery-2",
         "reviewedAt": "2026-08-06T11:02:05.421Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/giganotosaurus-carolinii-high-frontthreequarter-candeleros-context-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size review retains one complete focal animal with long low skull, hands, hind limbs and tail; the distant sauropod is a separated formation context.",
+        "reviewMethod": "Original-size skull, limb, tail, distant-fauna separation, crop and artifact audit",
+        "reviewBatch": "2026-08-30-three-slot-ecology-interaction-enrichment-v1",
+        "reviewedAt": "2026-08-30",
+        "claimBoundary": "Soft tissue, colors and association are reconstructed; not representative-eligible."
       }
     },
     "iguanodon-bernissartensis": {
@@ -8946,6 +9020,16 @@
         "reviewMethod": "Original-size full-frame inspection of exactly three separated silhouettes, primary anatomy, non-overlap, extra-limb risk, habitat, behavior boundary, crop, and artifacts",
         "reviewBatch": "2026-08-06-recognition-taxa-initial-gallery-2",
         "reviewedAt": "2026-08-06T11:02:05.421Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/iguanodon-bernissartensis-high-rearthreequarter-stream-context-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "Original-size review retains a complete foreground Iguanodon with thumb spikes, coherent limbs and full tail, separated from a distant conspecific.",
+        "reviewMethod": "Original-size thumb-spike, limb, tail, background-separation, crop and artifact audit",
+        "reviewBatch": "2026-08-30-three-slot-ecology-interaction-enrichment-v1",
+        "reviewedAt": "2026-08-30",
+        "claimBoundary": "Co-occurrence, grouping and behavior are illustrative; not representative-eligible."
       }
     },
     "maiasaura-peeblesorum": {
