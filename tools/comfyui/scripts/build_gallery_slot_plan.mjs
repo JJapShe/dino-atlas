@@ -50,6 +50,41 @@ const FALLBACK_SWATCHES = {
 };
 
 const HABITATS = {
+  "late-carboniferous-equatorial-wetland-forest": {
+    substrate: "late Carboniferous organic-rich silt, irregular shallow channels, exposed root mats, and firm muddy forest-floor openings",
+    vegetation: "lycopsid trees, calamites, seed ferns, and ferns with broad open gaps; no flowers, grasses, or modern tropical-rainforest species",
+    moisture: "humid equatorial coal-swamp and seasonally exposed wetland mosaic rather than one continuous deep swamp",
+    light: "soft overcast daylight with restrained wet-ground reflection and readable dark arthropod silhouettes",
+    backgroundPalette: ["#39483e", "#6c7051", "#8f684c"],
+  },
+  "north-dvina-late-permian-floodplain": {
+    substrate: "late Permian red and brown silt, firm seasonal-channel bars, shallow erosion lines, and scattered weathered stones",
+    vegetation: "restrained seed ferns, conifers, and horsetail-like plants with broad open ground; no grassland or flowering plants",
+    moisture: "seasonally dry floodplain with localized shallow water rather than permanent swamp",
+    light: "neutral broken-cloud daylight without a global orange cast",
+    backgroundPalette: ["#8b6049", "#716653", "#a99472"],
+  },
+  "cerrejon-paleocene-rainforest-wetland": {
+    substrate: "Paleocene Cerrejón coal-forming wetland mud, shallow dark channels, fallen palm-like trunks, and irregular root mats",
+    vegetation: "humid neotropical rainforest structure with palms and broad-leaved plants kept at non-diagnostic reconstruction level",
+    moisture: "hot, humid rainforest wetland with slow muddy channels",
+    light: "filtered warm-neutral canopy daylight with readable snake-body continuity",
+    backgroundPalette: ["#2d4939", "#65734e", "#9b7a52"],
+  },
+  "wadi-al-hitan-late-eocene-shallow-sea": {
+    substrate: "late Eocene Tethyan sandy-silty shallow seafloor with scattered shells and low ripples",
+    vegetation: "sparse restrained marine plants; no modern coral garden, dense modern seagrass lawn, or human infrastructure",
+    moisture: "fully marine warm shallow sea",
+    light: "clear blue-green water with soft sun shafts and enough side light to read forelimbs, tiny hind limbs, and horizontal fluke",
+    backgroundPalette: ["#28576a", "#5d8390", "#a59672"],
+  },
+  "oligocene-central-asian-open-woodland": {
+    substrate: "Oligocene central Asian alluvial silt, dry channel gravel, firm pale soil, and scattered weathered stones",
+    vegetation: "open woodland and scrub mosaic with irregular browse-height branches; no modern savanna lawn or diagnostic modern tree species",
+    moisture: "seasonally dry alluvial plain with localized runoff and open browse",
+    light: "clear neutral daylight with readable long limbs and no global orange cast",
+    backgroundPalette: ["#9b8768", "#6c7358", "#b7a787"],
+  },
   "burgess-shale-cambrian-shelf": {
     substrate: "middle Cambrian offshore mud and fine carbonate sediment with scattered sponge grounds",
     vegetation: "no land plants or modern sea grass; sparse sponges, microbial mats, and small benthic invertebrates only",
@@ -651,7 +686,12 @@ function suggestUnregisteredSource(sources, roleKey) {
 function habitatFor(dino, route) {
   const text = `${dino.era} ${dino.region} ${dino.summary || ""} ${route?.focus || ""} ${route?.pass || ""}`.toLowerCase();
   let key = "conifer-fern-floodplain";
-  if (dino.id === "anomalocaris-canadensis") key = "burgess-shale-cambrian-shelf";
+  if (["arthropleura-armata", "meganeura-monyi"].includes(dino.id)) key = "late-carboniferous-equatorial-wetland-forest";
+  else if (dino.id === "inostrancevia-alexandri") key = "north-dvina-late-permian-floodplain";
+  else if (dino.id === "titanoboa-cerrejonensis") key = "cerrejon-paleocene-rainforest-wetland";
+  else if (dino.id === "basilosaurus-isis") key = "wadi-al-hitan-late-eocene-shallow-sea";
+  else if (dino.id === "paraceratherium-transouralicum") key = "oligocene-central-asian-open-woodland";
+  else if (dino.id === "anomalocaris-canadensis") key = "burgess-shale-cambrian-shelf";
   else if (dino.id === "dunkleosteus-terrelli") key = "cleveland-shale-devonian-sea";
   else if (dino.id === "otodus-megalodon") key = "neogene-open-ocean";
   else if (dino.id === "coelodonta-antiquitatis") key = "mammoth-steppe-tundra";

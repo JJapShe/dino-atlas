@@ -17,10 +17,21 @@ RANK = {
     "primary generated": 0,
     "primary structure reference": 0,
     "count-level pass": 0,
-    "anatomy review": 1,
-    "structure reference": 2,
-    "diagnostic only": 3,
+    "review hold": 1,
+    "anatomy review": 2,
+    "structure reference": 3,
+    "diagnostic only": 4,
 }
+
+
+def load_audit_font(size=14):
+    for candidate in (
+        Path("C:/Windows/Fonts/malgun.ttf"),
+        Path("C:/Windows/Fonts/malgunbd.ttf"),
+    ):
+        if candidate.exists():
+            return ImageFont.truetype(str(candidate), size=size)
+    return ImageFont.load_default()
 
 
 def parse_samples():
@@ -113,7 +124,7 @@ def make_sheet(items, output, title, cols=5, thumb_w=280, thumb_h=188):
     rows = max(1, (len(items) + cols - 1) // cols)
     sheet = Image.new("RGB", (cols * thumb_w, header_h + rows * (thumb_h + label_h)), (232, 228, 218))
     draw = ImageDraw.Draw(sheet)
-    font = ImageFont.load_default()
+    font = load_audit_font()
     draw.rectangle((0, 0, sheet.width, header_h), fill=(22, 55, 42))
     draw.text((16, 14), title, fill=(245, 243, 236), font=font)
     draw.text(
