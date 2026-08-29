@@ -125,7 +125,7 @@
               <div class="atlas-mode-actions">
                 <div class="atlas-realm-controls" data-atlas-realm-controls role="group" aria-label="탐색할 지질시대">
                   <button data-atlas-realm="paleozoic" type="button" aria-pressed="false">
-                    <span>고생대</span><small>캄브리아기·데본기·페름기</small>
+                    <span>고생대</span><small>캄브리아기·데본기·석탄기·페름기</small>
                   </button>
                   <button class="active" data-atlas-realm="mesozoic" type="button" aria-pressed="true">
                     <span>중생대</span><small>트라이아스기–백악기</small>
@@ -140,7 +140,7 @@
                 </div>
                 <div class="access-scope-controls compact" data-access-scope-controls role="group" aria-label="도감 이용 범위">
                   <button class="active" data-access-scope="free" type="button" aria-pressed="true">무료 <strong data-access-count="free">30</strong></button>
-                  <button data-access-scope="all" type="button" aria-pressed="false">전체 <strong data-access-count="all">155</strong></button>
+                  <button data-access-scope="all" type="button" aria-pressed="false">전체 <strong data-access-count="all">161</strong></button>
                 </div>
               </div>
               <label class="map-quick-search">
@@ -174,6 +174,9 @@
               <button data-classification="marine-reptilia" type="button" aria-pressed="false">
                 <span>바다 파충류</span><strong data-classification-count>0</strong>
               </button>
+              <button data-classification="reptilia" type="button" aria-pressed="false">
+                <span>고대 파충류</span><strong data-classification-count>0</strong>
+              </button>
               <button data-classification="synapsida" type="button" aria-pressed="false">
                 <span>단궁류</span><strong data-classification-count>0</strong>
               </button>
@@ -188,6 +191,9 @@
               </button>
               <button data-classification="fishes" type="button" aria-pressed="false">
                 <span>고대 어류</span><strong data-classification-count>0</strong>
+              </button>
+              <button data-classification="aves" type="button" aria-pressed="false">
+                <span>조류</span><strong data-classification-count>0</strong>
               </button>
               <button data-classification="early-dinosaur" type="button" aria-pressed="false">
                 <span>초기 용반류</span><strong data-classification-count>0</strong>
@@ -209,6 +215,10 @@
                 </button>
                 <button data-map-scope="devonian" data-realm-scope="paleozoic" type="button" aria-pressed="false" hidden>
                   <span>데본기</span>
+                  <strong class="map-era-count">0</strong>
+                </button>
+                <button data-map-scope="carboniferous" data-realm-scope="paleozoic" type="button" aria-pressed="false" hidden>
+                  <span>석탄기</span>
                   <strong class="map-era-count">0</strong>
                 </button>
                 <button data-map-scope="permian" data-realm-scope="paleozoic" type="button" aria-pressed="false" hidden>
@@ -307,11 +317,11 @@
             <div class="catalog-toolbar-actions">
               <div class="access-scope-controls" data-access-scope-controls role="group" aria-label="도감 이용 범위">
                 <button class="active" data-access-scope="free" type="button" aria-pressed="true">무료 공개 <strong data-access-count="free">30</strong></button>
-                <button data-access-scope="all" type="button" aria-pressed="false">전체 도감 <strong data-access-count="all">155</strong></button>
+                <button data-access-scope="all" type="button" aria-pressed="false">전체 도감 <strong data-access-count="all">161</strong></button>
               </div>
               <div class="atlas-realm-controls catalog-realm-controls" data-atlas-realm-controls role="group" aria-label="도감 지질시대">
                 <button data-atlas-realm="paleozoic" type="button" aria-pressed="false">
-                  <span>고생대</span><small>캄브리아기·데본기·페름기</small>
+                  <span>고생대</span><small>캄브리아기·데본기·석탄기·페름기</small>
                 </button>
                 <button class="active" data-atlas-realm="mesozoic" type="button" aria-pressed="true">
                   <span>중생대</span><small>트라이아스기–백악기</small>
@@ -355,6 +365,9 @@
             <button data-classification="marine-reptilia" type="button" aria-pressed="false">
               <span>바다 파충류</span><strong data-classification-count>0</strong>
             </button>
+            <button data-classification="reptilia" type="button" aria-pressed="false">
+              <span>고대 파충류</span><strong data-classification-count>0</strong>
+            </button>
             <button data-classification="synapsida" type="button" aria-pressed="false">
               <span>단궁류</span><strong data-classification-count>0</strong>
             </button>
@@ -369,6 +382,9 @@
             </button>
             <button data-classification="fishes" type="button" aria-pressed="false">
               <span>고대 어류</span><strong data-classification-count>0</strong>
+            </button>
+            <button data-classification="aves" type="button" aria-pressed="false">
+              <span>조류</span><strong data-classification-count>0</strong>
             </button>
             <button data-classification="early-dinosaur" type="button" aria-pressed="false">
               <span>초기 용반류</span><strong data-classification-count>0</strong>
@@ -513,7 +529,7 @@
         <h3 id="subscriptionTitle">더 많은 생물을 만나 보세요</h3>
         <p id="subscriptionBody">무료 탐험에서는 친숙한 대표 생물 30종을 볼 수 있어요. 구독이 연결되면 전체 생물과 모든 갤러리가 열립니다.</p>
         <div class="subscription-benefits" aria-label="구독 혜택">
-          <span>전체 155종</span>
+          <span>전체 161종</span>
           <span>모든 갤러리</span>
           <span>새 생물 업데이트</span>
         </div>
@@ -526,13 +542,13 @@
     </div>
 
   <script src="./access-policy.js?v=20260810-access-surface-v1"></script>
-  <script src="./gallery-slots.js?v=20260810-famous-paleo-ceno-v1"></script>
+  <script src="./gallery-slots.js?v=20260811-documentary-life-expansion-v1"></script>
   <script src="./ecosystem-scenes.js?v=20260807-subject-motion-trackway-v2"></script>
   <script src="./motion-samples.js?v=20260807-subject-motion-policy-v1"></script>
   <script src="./motion-m1-samples.js?v=20260807-subject-motion-policy-v1"></script>
   <script src="./motion-m2-samples.js?v=20260807-subject-motion-policy-v1"></script>
   <script src="./motion-m2-i2v-samples.js?v=20260807-giganotosaurus-subject-motion-v1"></script>
-  <script src="./app.js?v=20260810-access-surface-v1"></script>
+  <script src="./app.js?v=20260828-distinctive-cephalopods-v1"></script>
     <script src="./atlas-layout.js?v=20260731-resizable-inspector-v1"></script>
   </body>
 </html>

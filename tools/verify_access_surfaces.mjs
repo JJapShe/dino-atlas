@@ -70,7 +70,17 @@ assert.doesNotMatch(
   "Pages must not copy the local admin surface into its artifact",
 );
 assert.match(appSource, /globalThis\.DINO_ATLAS_ENTITLEMENT/);
-assert.match(appSource, /isAdminPreviewMode/);
+assert.match(appSource, /const hasLocalSubscriberPreview/);
+assert.match(
+  appSource,
+  /hasLocalSubscriberPreview\s*=\s*[\s\S]*?isLocalAppHost[\s\S]*?previewCatalogEntitlement/,
+  "subscriber query preview must remain restricted to localhost or 127.0.0.1",
+);
+assert.doesNotMatch(
+  appSource,
+  /isAdminPreviewMode/,
+  "local subscriber preview must not require the unrelated admin=1 query",
+);
 assert.match(appSource, /isFreeTaxon/);
 assert.match(appSource, /openSubscriptionDialog/);
 assert.match(

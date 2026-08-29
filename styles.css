@@ -1534,6 +1534,10 @@ body[data-atlas-realm="cenozoic"] .map-era-controls button.active {
   fill: rgba(109, 157, 180, 0.13);
 }
 
+.map-navigator-era.carboniferous {
+  fill: rgba(102, 176, 125, 0.13);
+}
+
 .map-navigator-era.permian {
   fill: rgba(230, 184, 102, 0.13);
 }
@@ -1753,6 +1757,10 @@ body[data-atlas-realm="cenozoic"] .map-era-controls button.active {
 
 .period-band.devonian {
   background: linear-gradient(90deg, rgba(109, 157, 180, 0.1), rgba(43, 78, 93, 0.025));
+}
+
+.period-band.carboniferous {
+  background: linear-gradient(90deg, rgba(102, 176, 125, 0.1), rgba(45, 91, 58, 0.025));
 }
 
 .period-band.permian {

@@ -59,5 +59,6 @@ if ($reviewListener) {
   Write-Host "Dino review started (PID $($reviewProcess.Id))."
 }
 
-Write-Host "Dino review: http://127.0.0.1:$($reviewConfig.Port)/"
+Write-Host "Dino review is healthy; opening the authenticated local review page."
 Start-Process "http://127.0.0.1:$port/"
+Start-Process $reviewConfig.Url

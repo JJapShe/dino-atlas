@@ -659,7 +659,6 @@ test("returns JSON 413 without resetting the request socket and serves hardened 
   assert.match(html.headers.get("content-security-policy"), /frame-ancestors 'none'/);
   assert.equal(html.headers.get("referrer-policy"), "no-referrer");
   assert.equal(html.headers.get("x-frame-options"), "DENY");
-
   const oversized = JSON.stringify({
     id: ctx.atlasName,
     status: "hold",
@@ -885,6 +884,11 @@ test("lists promoted assets for integration and marks them integrated exactly on
 
 test("parses all current checkout app entries including the three inline Sphaerotholus records", (t) => {
   const root = path.resolve(__dirname, "..", "..", "..");
+  const reviewHtml = fs.readFileSync(path.join(root, "tools", "dino-review", "index.html"), "utf8");
+  assert.match(reviewHtml, /id="previousPreview"/);
+  assert.match(reviewHtml, /preferredSelectedId/);
+  assert.match(reviewHtml, /nextReviewIdAfterRemoval/);
+  assert.doesNotMatch(reviewHtml, /\$\("scope"\)\.value\s*=\s*"integration"/);
   const temp = fs.mkdtempSync(path.join(os.tmpdir(), "dino-review-checkout-index-"));
   const config = defaultConfig({
     root,
@@ -897,7 +901,7 @@ test("parses all current checkout app entries including the three inline Sphaero
   const db = openReviewDatabase(config);
   try {
     const manifest = loadAtlasCandidateManifest(config);
-    assert.equal(manifest.appEntryCount, 1814, "intentional checkout baseline; update with app data changes");
+    assert.equal(manifest.appEntryCount, 1862, "intentional checkout baseline; update with app data changes");
     const inlineSources = [
       "assets/dinosaurs/sphaerotholus-goodwini-charcoal-russet-dome-fullbody-imagegen-v4.png",
       "assets/dinosaurs/sphaerotholus-goodwini-arroyo-fern-browse-ecology-imagegen-v4.png",

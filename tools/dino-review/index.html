@@ -526,6 +526,43 @@
       cursor: zoom-in;
     }
     .preview-button:hover { border: 0; }
+    .detail-preview-stage {
+      position: relative;
+      min-width: 0;
+      min-height: 0;
+      overflow: hidden;
+      background: #080a0d;
+    }
+    .detail-preview-nav {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      display: grid;
+      width: 44px;
+      min-width: 44px;
+      height: 64px;
+      min-height: 64px;
+      place-items: center;
+      padding: 0;
+      border-color: rgba(255, 255, 255, 0.24);
+      border-radius: 22px;
+      background: rgba(8, 10, 13, 0.76);
+      color: var(--text);
+      font-size: 34px;
+      line-height: 1;
+      transform: translateY(-50%);
+      backdrop-filter: blur(8px);
+    }
+    .detail-preview-nav:hover {
+      border-color: var(--accent);
+      background: rgba(8, 10, 13, 0.92);
+    }
+    .detail-preview-nav:disabled {
+      opacity: 0.28;
+      cursor: default;
+    }
+    .detail-preview-nav.previous { left: 12px; }
+    .detail-preview-nav.next { right: 12px; }
     .preview {
       width: 100%;
       min-height: 300px;
@@ -732,6 +769,27 @@
     .candidate-actions .promote { border-color: var(--good); color: var(--good); }
     .candidate-actions .delete { border-color: var(--bad); color: var(--bad); }
     .candidate-actions button:disabled { opacity: 0.42; cursor: not-allowed; }
+    .review-toast {
+      position: fixed;
+      z-index: 40;
+      right: 18px;
+      bottom: 18px;
+      max-width: min(440px, calc(100vw - 36px));
+      padding: 11px 14px;
+      border: 1px solid color-mix(in srgb, var(--accent) 60%, var(--line));
+      border-radius: 7px;
+      background: rgba(17, 23, 29, 0.96);
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.42);
+      color: var(--text);
+      font-size: 13px;
+      line-height: 1.45;
+      backdrop-filter: blur(12px);
+    }
+    .review-toast[data-tone="warn"] {
+      border-color: color-mix(in srgb, var(--warn) 60%, var(--line));
+      color: var(--warn);
+    }
+    .review-toast[hidden] { display: none; }
     body.detail-focused .detail-layout {
       display: grid;
       grid-template-columns: minmax(0, 1fr) var(--detail-review-width);
@@ -743,6 +801,9 @@
       grid-template-rows: minmax(0, 1fr) 103px;
       overflow: hidden;
       background: #080a0d;
+    }
+    body.detail-focused .detail-preview-stage {
+      height: 100%;
     }
     body.detail-focused .preview-button {
       height: 100%;
@@ -1007,6 +1068,20 @@
       .metadata-grid dt { padding-bottom: 2px; }
       .metadata-grid dd { padding-top: 2px; }
       .candidate-actions { grid-template-columns: 1fr; }
+      .detail-preview-nav {
+        width: 44px;
+        min-width: 44px;
+        height: 56px;
+        min-height: 56px;
+        border-radius: 20px;
+      }
+      .detail-preview-nav.previous { left: 8px; }
+      .detail-preview-nav.next { right: 8px; }
+      .review-toast {
+        right: 10px;
+        bottom: 10px;
+        max-width: calc(100vw - 20px);
+      }
       .zoom-title,
       .zoom-file {
         display: none;
@@ -1119,6 +1194,7 @@
     ></div>
     <aside id="detail"></aside>
   </main>
+  <div class="review-toast" id="reviewToast" role="status" aria-live="polite" hidden></div>
   <div class="zoom" id="zoom" hidden>
     <div class="zoom-bar">
       <div class="zoom-title" id="zoomTitle"></div>
@@ -1176,6 +1252,7 @@
     let saveInFlight = false;
     let candidateActionInFlight = false;
     let zoomActualSize = false;
+    let toastTimer = 0;
     const REVIEW_LAYOUT_KEY = "dino-review-layout-v3";
     const LIST_BATCH_SIZE = 120;
     let visibleLimit = LIST_BATCH_SIZE;
@@ -1399,6 +1476,18 @@
       const note = $("note");
       if (!isReviewMutable(selected) || !note) return false;
       return note.value !== (selected.review?.note || "") || selectedStatus !== statusOf(selected);
+    }
+
+    function showReviewToast(message, { tone = "normal", timeout = 4200 } = {}) {
+      const toast = $("reviewToast");
+      if (!toast) return;
+      window.clearTimeout(toastTimer);
+      toast.textContent = message;
+      toast.dataset.tone = tone;
+      toast.hidden = false;
+      toastTimer = window.setTimeout(() => {
+        toast.hidden = true;
+      }, timeout);
     }
 
     function listSignature(list) {
@@ -1715,16 +1804,73 @@
         .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
     }
 
-    function moveSelection(direction) {
+    function getReviewQueue() {
+      const list = filtered();
+      if (!selected || list.some((image) => image.id === selected.id)) return list;
+      return [selected];
+    }
+
+    function nextReviewIdAfterRemoval(targetId) {
+      const items = filtered();
+      const currentIndex = items.findIndex((image) => image.id === targetId);
+      if (currentIndex < 0 || items.length < 2) return null;
+      return items[currentIndex + 1]?.id || items[currentIndex - 1]?.id || null;
+    }
+
+    function ensureSelectedGridCapacity() {
+      if (!selected) return;
+      const selectedIndex = filtered().findIndex((image) => image.id === selected.id);
+      if (selectedIndex >= visibleLimit) visibleLimit = selectedIndex + 1;
+    }
+
+    function scrollSelectedCardIntoView() {
+      if (!selected) return;
+      requestAnimationFrame(() => {
+        const card = [...document.querySelectorAll(".card")]
+          .find((node) => node.dataset.id === selected.id);
+        card?.scrollIntoView({ block: "nearest", inline: "nearest" });
+      });
+    }
+
+    function navigationBlocked() {
+      if (candidateActionInFlight || saveInFlight) {
+        showReviewToast("현재 처리가 끝난 뒤 이동해 주세요.", { tone: "warn" });
+        return true;
+      }
+      if (hasUnsavedReview()) {
+        showReviewToast("검수 상태와 메모를 저장한 뒤 이동해 주세요.", { tone: "warn" });
+        return true;
+      }
+      return false;
+    }
+
+    function applySelection(image) {
+      selected = image;
+      selectedStatus = statusOf(selected);
+      ensureSelectedGridCapacity();
+      renderGrid();
+      renderDetail();
+      if (!$("zoom").hidden) renderZoom();
+      scrollSelectedCardIntoView();
+    }
+
+    function moveReviewSelection(direction) {
+      if (navigationBlocked()) return;
+      const items = getReviewQueue();
+      if (items.length < 2 || !selected) return;
+      const currentIndex = Math.max(0, items.findIndex((image) => image.id === selected.id));
+      const nextIndex = currentIndex + direction;
+      if (nextIndex < 0 || nextIndex >= items.length) return;
+      applySelection(items[nextIndex]);
+    }
+
+    function moveSpeciesSelection(direction) {
+      if (navigationBlocked()) return;
       const items = getSelectedSpeciesImages();
       if (items.length < 2 || !selected) return;
       const currentIndex = Math.max(0, items.findIndex((image) => image.id === selected.id));
       const nextIndex = (currentIndex + direction + items.length) % items.length;
-      selected = items[nextIndex];
-      selectedStatus = statusOf(selected);
-      renderGrid();
-      renderDetail();
-      if (!$("zoom").hidden) renderZoom();
+      applySelection(items[nextIndex]);
     }
 
     function renderDetail() {
@@ -1739,11 +1885,18 @@
         return;
       }
       const speciesImages = getSelectedSpeciesImages();
-      const selectedIndex = Math.max(
+      const reviewQueue = getReviewQueue();
+      const speciesIndex = Math.max(
         0,
         speciesImages.findIndex((image) => image.id === selected.id),
       );
-      const navigationDisabled = speciesImages.length < 2 ? "disabled" : "";
+      const reviewIndex = Math.max(
+        0,
+        reviewQueue.findIndex((image) => image.id === selected.id),
+      );
+      const speciesNavigationDisabled = speciesImages.length < 2 ? "disabled" : "";
+      const previousReviewDisabled = reviewIndex <= 0 ? "disabled" : "";
+      const nextReviewDisabled = reviewIndex >= reviewQueue.length - 1 ? "disabled" : "";
       const focusTitle = layoutState.detailFocused ? "분할 보기" : "상세 화면 확장";
       const mutable = isReviewMutable(selected);
       const savedNote = selected.review?.note || "";
@@ -1786,18 +1939,22 @@
         <div class="detail-pane-bar">
           <strong>선택 이미지</strong>
           <div class="detail-pane-actions">
-            <span class="detail-position">${selectedIndex + 1} / ${speciesImages.length}</span>
-            <button class="detail-action" id="previousDetail" type="button" title="이전 이미지" aria-label="이전 이미지" ${navigationDisabled}>&lsaquo;</button>
-            <button class="detail-action" id="nextDetail" type="button" title="다음 이미지" aria-label="다음 이미지" ${navigationDisabled}>&rsaquo;</button>
+            <span class="detail-position">${speciesIndex + 1} / ${speciesImages.length}</span>
+            <button class="detail-action" id="previousDetail" type="button" title="같은 생물의 이전 이미지" aria-label="같은 생물의 이전 이미지" ${speciesNavigationDisabled}>&lsaquo;</button>
+            <button class="detail-action" id="nextDetail" type="button" title="같은 생물의 다음 이미지" aria-label="같은 생물의 다음 이미지" ${speciesNavigationDisabled}>&rsaquo;</button>
             <button class="detail-action" id="toggleDetailFocus" type="button" title="${focusTitle}" aria-label="${focusTitle}" aria-pressed="${layoutState.detailFocused}">&#x26F6;</button>
             <button class="detail-close" id="closeDetail" type="button" title="상세 패널 접기" aria-label="상세 패널 접기">&#x2715;</button>
           </div>
         </div>
         <div class="detail-layout">
           <div class="detail-preview-column">
-            <button class="preview-button" id="openZoom" type="button" title="크게 보기">
-              <img class="preview" src="${escapeHtml(imageUrl(selected))}" alt="${escapeHtml(selected.speciesLabel)}">
-            </button>
+            <div class="detail-preview-stage">
+              <button class="preview-button" id="openZoom" type="button" title="크게 보기">
+                <img class="preview" src="${escapeHtml(imageUrl(selected))}" alt="${escapeHtml(selected.speciesLabel)}">
+              </button>
+              <button class="detail-preview-nav previous" id="previousPreview" type="button" title="현재 필터의 이전 검수 항목" aria-label="현재 필터의 이전 검수 항목" aria-keyshortcuts="ArrowLeft" ${previousReviewDisabled}>&lsaquo;</button>
+              <button class="detail-preview-nav next" id="nextPreview" type="button" title="현재 필터의 다음 검수 항목" aria-label="현재 필터의 다음 검수 항목" aria-keyshortcuts="ArrowRight" ${nextReviewDisabled}>&rsaquo;</button>
+            </div>
             <div class="species-strip" aria-label="같은 생물 이미지">${strip}</div>
           </div>
           <div class="detail">
@@ -1832,8 +1989,10 @@
       $("deleteCandidate")?.addEventListener("click", () => runCandidateAction("delete"));
       $("openZoom").addEventListener("click", openZoom);
       $("closeDetail").addEventListener("click", closeDetailPane);
-      $("previousDetail").addEventListener("click", () => moveSelection(-1));
-      $("nextDetail").addEventListener("click", () => moveSelection(1));
+      $("previousDetail").addEventListener("click", () => moveSpeciesSelection(-1));
+      $("nextDetail").addEventListener("click", () => moveSpeciesSelection(1));
+      $("previousPreview").addEventListener("click", () => moveReviewSelection(-1));
+      $("nextPreview").addEventListener("click", () => moveReviewSelection(1));
       $("toggleDetailFocus").addEventListener("click", () =>
         setDetailFocused(!layoutState.detailFocused),
       );
@@ -1908,6 +2067,7 @@
     async function runCandidateAction(action) {
       if (!isMutablePending(selected) || candidateActionInFlight) return;
       const target = selected;
+      const nextReviewId = nextReviewIdAfterRemoval(target.id);
       const state = $("candidateActionState");
       if (hasUnsavedReview()) {
         state.textContent = "검수 상태와 메모를 먼저 저장해 주세요.";
@@ -1962,12 +2122,11 @@
           state.textContent = data.error || `처리 실패 (HTTP ${res.status})`;
           return;
         }
-        window.alert(action === "promote"
-          ? `자산으로 옮겼습니다.\n${data.targetPath || data.projectAsset || "앱 등록 대기"}`
-          : "완전 탈락 파일을 삭제하고 DB에 이력을 남겼습니다.");
-        if (action === "promote") $("scope").value = "integration";
         if (selected?.id === target.id) selected = null;
-        await refreshImageList({ force: true });
+        await refreshImageList({ force: true, preferredSelectedId: nextReviewId });
+        showReviewToast(action === "promote"
+          ? `승격 완료 · 검수 목록을 유지합니다. ${data.targetPath || data.projectAsset || "앱 등록 대기"}`
+          : "완전 탈락 처리 완료 · 다음 검수 항목으로 이동했습니다.");
       } catch (error) {
         state.textContent = `서버 연결 실패: ${error.message}`;
       } finally {
@@ -2062,12 +2221,12 @@
         .replaceAll('"', "&quot;");
     }
 
-    async function refreshImageList({ force = false, initial = false } = {}) {
+    async function refreshImageList({ force = false, initial = false, preferredSelectedId = null } = {}) {
       if (refreshInFlight || (!force && (document.hidden || hasUnsavedReview()))) return;
       refreshInFlight = true;
       $("refreshImages").setAttribute("aria-busy", "true");
       $("refreshImages").disabled = true;
-      const selectedId = selected?.id;
+      const selectedId = preferredSelectedId || selected?.id;
       const draft = hasUnsavedReview() && selected
         ? { id: selected.id, note: $("note").value, status: selectedStatus }
         : null;
@@ -2089,8 +2248,10 @@
         const visibleImages = filtered();
         selected = visibleImages.find((image) => image.id === selectedId) || visibleImages[0] || null;
         selectedStatus = selected ? statusOf(selected) : "unreviewed";
+        ensureSelectedGridCapacity();
         renderGrid();
         renderDetail();
+        if (preferredSelectedId && selected?.id === preferredSelectedId) scrollSelectedCardIntoView();
 
         if (draft && selected?.id === draft.id) {
           selectedStatus = draft.status;
@@ -2156,8 +2317,8 @@
     });
 
     $("zoomClose").addEventListener("click", closeZoom);
-    $("zoomPrev").addEventListener("click", () => moveSelection(-1));
-    $("zoomNext").addEventListener("click", () => moveSelection(1));
+    $("zoomPrev").addEventListener("click", () => moveSpeciesSelection(-1));
+    $("zoomNext").addEventListener("click", () => moveSpeciesSelection(1));
     $("zoomActual").addEventListener("click", () => setZoomActualSize(!zoomActualSize));
     $("zoomImage").addEventListener("click", () => setZoomActualSize(!zoomActualSize));
     $("zoomBackdrop").addEventListener("click", (event) => {
@@ -2166,8 +2327,15 @@
     window.addEventListener("keydown", (event) => {
       if (!$("zoom").hidden) {
         if (event.key === "Escape") closeZoom();
-        if (event.key === "ArrowLeft") moveSelection(-1);
-        if (event.key === "ArrowRight") moveSelection(1);
+        if (event.key === "ArrowLeft") moveSpeciesSelection(-1);
+        if (event.key === "ArrowRight") moveSpeciesSelection(1);
+        return;
+      }
+      const interactiveTarget = event.target instanceof Element
+        && event.target.closest("input, textarea, select, button, [contenteditable='true'], [role='separator']");
+      if (!interactiveTarget && selected && ["ArrowLeft", "ArrowRight"].includes(event.key)) {
+        event.preventDefault();
+        moveReviewSelection(event.key === "ArrowLeft" ? -1 : 1);
         return;
       }
       if (event.key !== "Escape") return;

@@ -10,7 +10,7 @@
 .\tools\dino-review\start-dino-review.ps1
 ```
 
-런처는 SQLite를 지원하는 Node 24를 확인하고 `127.0.0.1:8792`에 서버를 띄운 뒤 검수 페이지를 연다. 접근 키는 `tools/dino-review/data/review-key`에 로컬로 저장되며 Git에 포함되지 않는다. `start-dino-atlas.ps1`을 실행해도 Atlas와 함께 같은 검수 서버가 시작된다.
+런처는 SQLite를 지원하는 Node 24를 확인하고 `127.0.0.1:8792`에 서버를 띄운 뒤 인증된 검수 페이지를 연다. 접근 키는 `tools/dino-review/data/review-key`에 로컬로 저장되며 Git에 포함되지 않는다. `start-dino-atlas.ps1`을 실행하면 Atlas와 같은 검수 서버를 시작하고 두 화면을 함께 연다. 키가 없는 `http://127.0.0.1:8792/` 직접 접속은 의도적으로 HTTP 403을 반환한다.
 
 다른 포트나 직접 정한 키가 필요하면 실행 전에 `DINO_REVIEW_PORT`, `DINO_REVIEW_KEY`를 설정한다. 키는 URL-safe 문자 16~128자로 제한된다.
 
