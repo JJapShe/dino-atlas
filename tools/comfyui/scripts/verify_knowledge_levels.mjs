@@ -75,19 +75,19 @@ for (const dino of dinosaurs) {
   }
 }
 
-if (dinosaurs.length !== 151) fail(`Expected 151 taxa, found ${dinosaurs.length}`);
+if (dinosaurs.length !== 175) fail(`Expected 175 taxa, found ${dinosaurs.length}`);
 
 const levelSnapshot = dinosaurs
   .map((dino) => `${dino.id}:${dino.knowledgeLevel}`)
   .sort()
   .join("\n");
 const levelSnapshotSha256 = createHash("sha256").update(levelSnapshot).digest("hex");
-const expectedLevelSnapshotSha256 = "50b9d82af462348d47ded490ccae7e2af6b33254fe33052af71c541725e904d6";
+const expectedLevelSnapshotSha256 = "35770d9446b8a15ddf459142b5e2e6d0c4223bc8805c7462d06a37c4cc6ed931";
 if (levelSnapshotSha256 !== expectedLevelSnapshotSha256) {
   fail(`Level snapshot hash mismatch: ${levelSnapshotSha256}`);
 }
 
-const expectedDistribution = { 1: 27, 2: 37, 3: 39, 4: 48 };
+const expectedDistribution = { 1: 35, 2: 48, 3: 44, 4: 48 };
 for (const [level, expected] of Object.entries(expectedDistribution)) {
   if (distribution[level] !== expected) {
     fail(`LV${level} expected ${expected}, found ${distribution[level]}`);
@@ -122,8 +122,8 @@ const expectedEvidenceSignals = {
 };
 
 if (evidence?.schemaVersion !== 1) fail(`Evidence schemaVersion expected 1, found ${evidence?.schemaVersion}`);
-if (evidence?.baselineDate !== "2026-08-08") {
-  fail(`Evidence baselineDate expected 2026-08-08, found ${evidence?.baselineDate || "missing"}`);
+if (evidence?.baselineDate !== "2026-08-11") {
+  fail(`Evidence baselineDate expected 2026-08-11, found ${evidence?.baselineDate || "missing"}`);
 }
 if (!Array.isArray(evidence?.limitations) || evidence.limitations.length < 4) {
   fail("Evidence limitations must describe at least four rubric boundaries");
@@ -212,9 +212,34 @@ if (!Array.isArray(evidence?.taxa)) {
   for (const dino of dinosaurs) {
     if (!markdownIds.includes(dino.id)) fail(`Evidence Markdown is missing id: ${dino.id}`);
   }
+  if (markdownIds.some((id, index) => id !== dinosaurs[index]?.id)) {
+    fail("Evidence Markdown rows do not preserve app.js taxon order");
+  }
+  if (
+    !evidenceMarkdown.includes("# 175개 분류군 지식 레벨 근거표") ||
+    !evidenceMarkdown.includes("- 기준일: 2026-08-11") ||
+    !evidenceMarkdown.includes("- LV1: 35종") ||
+    !evidenceMarkdown.includes("- LV2: 48종") ||
+    !evidenceMarkdown.includes("- LV3: 44종")
+  ) {
+  fail("Evidence Markdown baseline summary does not match the audited 175-taxon distribution");
+  }
 }
 
 const expectedLevels = {
+  "megaloceros-giganteus": 1,
+  "macrauchenia-patachonica": 2,
+  "varanus-priscus": 1,
+  "arthropleura-armata": 1,
+  "meganeura-monyi": 1,
+  "inostrancevia-alexandri": 2,
+  "titanoboa-cerrejonensis": 1,
+  "basilosaurus-isis": 2,
+  "paraceratherium-transouralicum": 2,
+  "anomalocaris-canadensis": 1,
+  "dunkleosteus-terrelli": 1,
+  "otodus-megalodon": 1,
+  "coelodonta-antiquitatis": 2,
   "mammuthus-primigenius": 1,
   "smilodon-fatalis": 1,
   "mammut-americanum": 2,
@@ -279,8 +304,8 @@ const appCacheDate = html.match(/app\.js\?v=(\d{8})-[^"']+/)?.[1] || "";
 if (stylesCacheDate < "20260803" || appCacheDate < "20260803") {
   fail("Knowledge-level release cache keys are stale");
 }
-if (!rubric.includes("대상 생물: 151종") || !rubric.includes("LV1 27종 / LV2 37종 / LV3 39종 / LV4 48종")) {
-  fail("Rubric baseline does not match the audited 151-taxon distribution");
+if (!rubric.includes("대상 생물: 175종") || !rubric.includes("LV1 35종 / LV2 48종 / LV3 44종 / LV4 48종")) {
+  fail("Rubric baseline does not match the audited 175-taxon distribution");
 }
 if (
   !rubric.includes("knowledge-level-evidence-2026-08-03.md") ||
@@ -289,8 +314,8 @@ if (
   fail("Rubric does not link to both per-taxon evidence artifacts");
 }
 if (
-  !audit.includes("변경: 기존 4종 재분류를 보존하고, 138종 기준선 이후 친숙 고생물 13종 신규 수록") ||
-  !audit.includes("최종 분포: LV1 27 / LV2 37 / LV3 39 / LV4 48")
+  !audit.includes("변경: 기존 4종 재분류와 161종 기준선을 보존하고, 고생대·신생대 대표 생물 및 4종의 이형 두족류를 친숙도 근거와 함께 신규 수록") ||
+  !audit.includes("최종 분포: LV1 35 / LV2 48 / LV3 44 / LV4 48")
 ) {
   fail("Audit summary does not match the expected decision set");
 }
