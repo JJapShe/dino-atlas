@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "nasutoceratops-titusi-high-oblique-mudflat-pivot-v1",
+  "disposition": "promoted-awaiting-app-integration",
+  "promotedAt": "2026-08-11T13:26:31.203Z",
+  "sourcePath": "tools/dino-review/pending/nasutoceratops-titusi-high-oblique-mudflat-pivot-v1/nasutoceratops-titusi-high-oblique-mudflat-pivot-imagegen-v1.png",
+  "targetPath": "assets/dinosaurs/nasutoceratops-titusi-high-oblique-mudflat-pivot-imagegen-v1.png",
+  "filename": "nasutoceratops-titusi-high-oblique-mudflat-pivot-imagegen-v1.png",
+  "sha256": "c6013eea32e019190c6d0ecf65b519b695f8990dafe1268da1276062668d4d63",
+  "sizeBytes": 3138655,
+  "review": {
+    "status": "pass",
+    "note": "",
+    "updatedAt": "2026-08-11T13:26:29.460Z",
+    "imageSha256": "c6013eea32e019190c6d0ecf65b519b695f8990dafe1268da1276062668d4d63",
+    "manifestSha256": "366d13d0241483b2bb5867e0ad9cc9e5466397d0d7ebdefb382096102a8e107b"
+  },
+  "candidate": {
+    "schemaVersion": 1,
+    "candidateId": "nasutoceratops-titusi-high-oblique-mudflat-pivot-v1",
+    "filename": "nasutoceratops-titusi-high-oblique-mudflat-pivot-imagegen-v1.png",
+    "speciesId": "nasutoceratops-titusi",
+    "kind": "anatomy review",
+    "targetFilename": "nasutoceratops-titusi-high-oblique-mudflat-pivot-imagegen-v1.png",
+    "provenance": {
+      "source": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images were used only as project-owned identity, anatomy, or color references; no external artwork or named-artist style input",
+      "license": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+      "prompt": "Use case: scientific-educational natural-history paleoart for ages 5-14.\nAsset type: Dino Atlas S2 color-pattern and composition-diversity candidate; anatomy-review only.\nInput Image 1 is the project-owned approved Nasutoceratops titusi full-body identity reference. Input Image 2 is the project-owned approved head, giant narial region, twisted brow-horn, and short-frill anatomy reference. Preserve those identity cues, but create a genuinely new camera, movement, subject scale, habitat layout, lighting, and pattern. Do not mirror, recolor, trace, or reuse either reference's eye-level side/three-quarter composition or wet forest riverbank.\n\nPrimary scene: one calm-alert adult Nasutoceratops titusi pivoting diagonally across an open pale mudflat on a Late Cretaceous floodplain after rain. No other animal.\n\nComposition: wide 16:9 landscape, elevated frontal-left three-quarter camera looking downward about 30 to 35 degrees. The animal occupies roughly 55 percent of the frame and turns its head gently toward the camera while its low body crosses diagonally from lower-right foreground to upper-left depth. Keep the complete body, every horn tip, all four feet, and the full tail tip inside frame with generous clearance. Separate all four legs and feet with clean pale ground gaps. The bare irregular mudflat is a count background, not a regular footprint field. No eye-level broadside, mirrored side view, low browse, or stream crossing.\n\nHead and horn lock: one short deep face dominated by an exceptionally large rounded external-narial region; exactly one short low nasal horn; exactly two enormous brow horns, one left and one right, emerging above the eyes, projecting forward and outward, curving forward like broad bull horns, with a restrained twist near each tip. The pair may foreshorten naturally but must remain attached and independently readable. No straight Triceratops horns, vertical spikes, extra horn, missing horn, nasal boss, or giant nasal horn.\n\nFrill and body lock: one short rounded frill attached directly to the skull, with a low wavy crescent edge and continuous living skin covering the underlying openings; no hole showing background, no transparent window, no tall shield, long pentagonal frill, hook crown, or spike fan. Low deep ceratopsid body with exactly two forelegs, two hind legs, four complete non-hoof feet, and exactly one continuous tail. Small irregular oval shoulder nodules only; no huge rosettes, armor plates, rhino body, cow muzzle, mammal ears, elephant feet, fused legs, hidden foot, split tail, or cropped extremity.\n\nColor and pattern: cool blue-charcoal body, muted moss-olive shoulder saddle, pale cream beak and horn tips, restrained burnt-orange cheek patch, irregular broken ochre and slate flank clouds, and a few subdued turquoise tail marks. Natural asymmetry and varied spacing; no regular bands, mirrored rosettes, perfect dots, neon color, or palette-only copy.\n\nEnvironment and style: pale damp silt with irregular puddles well away from the feet, sparse low ferns, distant conifers, soft overcast side light; high-detail natural-history museum realism, original project-owned visual, no named-artist or franchise style. No text, watermark, logo, blood, wound, attack, modern object, repeated footprint pattern, or other animal.",
+      "seed": "provider-not-exposed",
+      "workflow": "OpenAI image_gen anatomy-led composition-diversity v3; approved full-body and head-anatomy references; exact input paths and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+    },
+    "anatomyReview": {
+      "status": "review-hold",
+      "representative": false,
+      "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+      "reviewedAt": "2026-08-10T17:03:33.2003794Z",
+      "notes": "S2 color-pattern diversity candidate only. High oblique pivot, three facial horns, short skin-covered frill, four feet and one tail appear readable; horn curvature, far feet and limited palette separation require manual original-size review. Representative promotion prohibited."
+    }
+  }
+}

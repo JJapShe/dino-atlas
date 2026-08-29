@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-24-cenozoic-famous-life-expansion-v1",
+  "createdAt": "2026-08-24",
+  "audience": "Korean Dino Atlas users ages 5-14",
+  "promptRecordType": "Normalized English constraint record of the submitted project prompt; sourceCallId is the canonical provider trace.",
+  "scope": [
+    "Megaloceros giganteus three-image Cenozoic gallery",
+    "Macrauchenia patachonica three-image Cenozoic gallery",
+    "Varanus priscus three-image Cenozoic gallery"
+  ],
+  "rollup": {
+    "taxa": 3,
+    "approvedAssets": 9,
+    "representativeAssets": 3,
+    "reviewOnlyAssets": 6,
+    "rejectedAttempts": 1,
+    "rejectedSourcePngsDeleted": 1
+  },
+  "copyrightSafety": {
+    "externalArtworkUsed": false,
+    "externalImagesUsedAsGenerationInput": false,
+    "licenseRecord": "Original project-generated bitmap under applicable OpenAI service terms. Scientific and museum sources supplied factual anatomy and uncertainty constraints only; no external artwork, documentary frame, franchise frame, published reconstruction, or named-artist style was used as generation input.",
+    "appPathPolicy": "Runtime and app metadata reference approved assets/dinosaurs paths only; private .codex/generated_images paths are provenance-only."
+  },
+  "researchSources": [
+    {
+      "taxonId": "megaloceros-giganteus",
+      "citation": "Natural History Museum. Irish elk (giant deer).",
+      "url": "https://www.nhm.ac.uk/discover/irish-elk-giant-deer.html",
+      "use": "Large cervid proportions, palmated antlers, geographic and late-survival context.",
+      "rightsUse": "Factual educational reference only; no museum image was supplied to the generator."
+    },
+    {
+      "taxonId": "megaloceros-giganteus",
+      "citation": "Lister, A. M. 1994. The evolution of the giant deer, Megaloceros giganteus. Zoological Journal of the Linnean Society.",
+      "url": "https://doi.org/10.1006/zjls.1994.1034",
+      "use": "Taxonomic and antler-morphology boundary.",
+      "rightsUse": "Factual and analytical reference only; no article figure was supplied to the generator."
+    },
+    {
+      "taxonId": "macrauchenia-patachonica",
+      "citation": "Natural History Museum. Macrauchenia digital collection programme.",
+      "url": "https://www.nhm.ac.uk/our-science/services/collections/digital/programme/macrauchenia.html",
+      "use": "Skull, body scale and museum-specimen context; nasal soft tissue remains uncertain.",
+      "rightsUse": "Factual educational reference only; no museum image was supplied to the generator."
+    },
+    {
+      "taxonId": "varanus-priscus",
+      "citation": "Australian Museum. Megalania prisca.",
+      "url": "https://australian.museum/learn/australia-over-time/extinct-animals/megalania-prisca/",
+      "use": "Giant monitor identity, estimated size range, Pleistocene Australian occurrence and uncertainty.",
+      "rightsUse": "Factual educational reference only; no museum image was supplied to the generator."
+    }
+  ],
+  "records": {
+    "megaloceros-giganteus-representative-v1": {
+      "taxonId": "megaloceros-giganteus",
+      "slot": 1,
+      "kind": "count-level pass",
+      "representativeEligible": true,
+      "asset": "assets/dinosaurs/megaloceros-giganteus-palmated-antler-sideprofile-representative-imagegen-v1.png",
+      "sourceCallId": "exec-da22e9cb-0a45-49a0-92bb-6a84862e2d93",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-da22e9cb-0a45-49a0-92bb-6a84862e2d93.png",
+      "prompt": "Create an original anatomy-led natural-history reconstruction of one adult male Megaloceros giganteus in strict left lateral full-body profile. Preserve one head, one large cervid body, exactly four legs and four cloven hooves, and one symmetric pair of enormous broad palmated antlers fully inside the frame. Late Pleistocene Eurasian open parkland; no text, watermark, humans, modern elk copy, cropped antlers, extra limbs or fused hooves.",
+      "seed": "service-assigned, not exposed",
+      "dimensions": "1672x941",
+      "bytes": 2452156,
+      "sha256": "213a0baccb7fbf70f658f6713c90792abf1876f2b5665529826c445e453b3064",
+      "review": "Original-size count-level pass: complete antler pair, one body, four legs and four hooves readable."
+    },
+    "megaloceros-giganteus-pattern-v1": {
+      "taxonId": "megaloceros-giganteus",
+      "slot": 2,
+      "kind": "review hold",
+      "representativeEligible": false,
+      "asset": "assets/dinosaurs/megaloceros-giganteus-winter-gray-frontthreequarter-pattern-imagegen-v1.png",
+      "sourceCallId": "exec-089655f2-49ba-426d-965a-bff937aedf64",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-089655f2-49ba-426d-965a-bff937aedf64.png",
+      "prompt": "Create a vertical original natural-history color-pattern variant of one adult male Megaloceros giganteus from a front three-quarter view. Keep both huge palmated antlers, the entire body, exactly four legs and four cloven hooves visible; use a subdued hypothetical gray-brown winter coat in cold Late Pleistocene parkland. No text, watermark, crop, extra antler, extra leg, modern moose copy or fantasy ornament.",
+      "seed": "service-assigned, not exposed",
+      "dimensions": "1122x1402",
+      "bytes": 2479651,
+      "sha256": "338dbccb9fc433f02c1b231e5b4dea1eb40c80ff1000f59b9fe7d761b76f811c",
+      "review": "Original-size review hold: antler pair and four limbs readable; foreshortening and coat remain hypothetical."
+    },
+    "megaloceros-giganteus-ecology-v1": {
+      "taxonId": "megaloceros-giganteus",
+      "slot": 3,
+      "kind": "anatomy review",
+      "representativeEligible": false,
+      "asset": "assets/dinosaurs/megaloceros-giganteus-separated-female-herd-parkland-ecology-imagegen-v1.png",
+      "sourceCallId": "exec-b13e33e6-c940-473e-b950-43507b484d46",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-b13e33e6-c940-473e-b950-43507b484d46.png",
+      "prompt": "Create an original wide Late Pleistocene Eurasian parkland ecology scene. One adult male Megaloceros giganteus walks in rear three-quarter view with both complete palmated antlers and four limbs readable; two smaller antlerless females remain far away and spatially separated. No contact, chase, family claim, text, watermark, overlapping bodies or duplicated limbs.",
+      "seed": "service-assigned, not exposed",
+      "dimensions": "1672x941",
+      "bytes": 2555700,
+      "sha256": "c1fc119e27957901b7373350f0b81a666e9a97e780c722e6df111f879681ab63",
+      "review": "Original-size anatomy-review acceptance; ecology and social spacing are illustrative only."
+    },
+    "macrauchenia-patachonica-representative-v1": {
+      "taxonId": "macrauchenia-patachonica",
+      "slot": 1,
+      "kind": "count-level pass",
+      "representativeEligible": true,
+      "asset": "assets/dinosaurs/macrauchenia-patachonica-threetoe-shortnasalpad-representative-imagegen-v1.png",
+      "sourceCallId": "exec-786d3e13-cfdd-4da6-ad05-6bbab7eb57da",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-786d3e13-cfdd-4da6-ad05-6bbab7eb57da.png",
+      "prompt": "Create an original anatomy-led natural-history reconstruction of one Macrauchenia patachonica in strict right lateral full-body profile. Preserve a small head, long sturdy neck, high nasal opening expressed only as a short conservative soft nasal pad, exactly four legs, four feet with three main toes each, and one complete tail. Patagonian open steppe; no elephant trunk, camel hump, rhino horn, extra limb, fused foot, text or watermark.",
+      "seed": "service-assigned, not exposed",
+      "dimensions": "1672x941",
+      "bytes": 2654066,
+      "sha256": "24539165bf950804ab0340145c9bf2941e8d725ec3ed5c56e5012c618c060376",
+      "review": "Original-size count-level pass: four connected limbs, four feet, three main toes and one tail readable."
+    },
+    "macrauchenia-patachonica-pattern-v1": {
+      "taxonId": "macrauchenia-patachonica",
+      "slot": 2,
+      "kind": "review hold",
+      "representativeEligible": false,
+      "asset": "assets/dinosaurs/macrauchenia-patachonica-highrear-fourfoot-threetoe-pattern-imagegen-v1.png",
+      "sourceCallId": "exec-8f5f22e2-80bb-466d-b2ad-f177b5eb8976",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-8f5f22e2-80bb-466d-b2ad-f177b5eb8976.png",
+      "prompt": "Create an original high rear three-quarter full-body Macrauchenia patachonica color-pattern variant. Separate all four legs and all four feet on distinct ground patches, show three main toes per foot, one tail, long neck and short conservative nasal pad. Use irregular subdued gray and chestnut patches in Patagonian steppe. No elephant trunk, camel hump, hidden far leg, fused foot, text or watermark.",
+      "seed": "service-assigned, not exposed",
+      "dimensions": "1672x941",
+      "bytes": 2803043,
+      "sha256": "60fc2a4848c6e59bcb9ff7fff8b94e184358448e6d022913c3889cc55761d42c",
+      "review": "Original-size review hold: four feet and three-toed structure readable; perspective and nasal soft tissue remain hypothetical."
+    },
+    "macrauchenia-patachonica-ecology-v1": {
+      "taxonId": "macrauchenia-patachonica",
+      "slot": 3,
+      "kind": "anatomy review",
+      "representativeEligible": false,
+      "asset": "assets/dinosaurs/macrauchenia-patachonica-megatherium-steppe-ecology-imagegen-v1.png",
+      "sourceCallId": "exec-fe497897-53aa-42b9-872c-7ee341ede16e",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-fe497897-53aa-42b9-872c-7ee341ede16e.png",
+      "prompt": "Create an original wide Late Pleistocene South American steppe ecology scene. One complete Macrauchenia patachonica browses a low shrub with four legs and four three-toed feet readable; one distant Megatherium-like ground sloth stands far behind, small and non-contact. No attack, family claim, overlapping animals, elephant trunk, text or watermark.",
+      "seed": "service-assigned, not exposed",
+      "dimensions": "1672x941",
+      "bytes": 2539441,
+      "sha256": "ab985220a7fa078729a9b5674a741afe45219ca3d61d5f7554a0a67bd6e6e2ce",
+      "review": "Original-size anatomy-review acceptance; distant ground sloth is simplified and non-diagnostic."
+    },
+    "varanus-priscus-representative-v1": {
+      "taxonId": "varanus-priscus",
+      "slot": 1,
+      "kind": "count-level pass",
+      "representativeEligible": true,
+      "asset": "assets/dinosaurs/varanus-priscus-heavy-monitor-sideprofile-representative-imagegen-v1.png",
+      "sourceCallId": "exec-e58f2bf3-b7e2-4398-9169-37802a09fdfe",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-e58f2bf3-b7e2-4398-9169-37802a09fdfe.png",
+      "prompt": "Create an original anatomy-led natural-history reconstruction of one Varanus priscus in strict left lateral full-body profile. Preserve a low long monitor-lizard head, heavy torso, exactly four sprawled but weight-bearing limbs and four feet, and one extremely long continuous tail fully inside frame. Pleistocene eastern Australian open woodland; no dinosaur stance, crocodile armor, extra limb, split tail, text or watermark.",
+      "seed": "service-assigned, not exposed",
+      "dimensions": "1672x941",
+      "bytes": 3009252,
+      "sha256": "665b1d7948f830d75d41ae54fcd7d83f3b162670d53bd1eeb028ffcdfb684926",
+      "review": "Original-size count-level pass: one head, four limbs, four feet and one continuous tail readable."
+    },
+    "varanus-priscus-pattern-v1": {
+      "taxonId": "varanus-priscus",
+      "slot": 2,
+      "kind": "review hold",
+      "representativeEligible": false,
+      "asset": "assets/dinosaurs/varanus-priscus-slate-ochre-highthreequarter-pattern-imagegen-v1.png",
+      "sourceCallId": "exec-f3d0b8e9-1740-482a-83a8-0d403c38129b",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-f3d0b8e9-1740-482a-83a8-0d403c38129b.png",
+      "prompt": "Create a vertical original high front three-quarter full-body Varanus priscus color-pattern variant. Show one head, heavy monitor body, all four connected limbs and feet, and a complete long tail. Use irregular low-contrast slate and ochre speckling in dry Australian woodland. No dinosaur stance, crocodile scutes, extra toes as extra limbs, cropped tail, text or watermark.",
+      "seed": "service-assigned, not exposed",
+      "dimensions": "1122x1402",
+      "bytes": 3064770,
+      "sha256": "792cc1d5fbce81ef194ffadaf03e276bdc080fc76267a65e77892cdf9f900efe",
+      "review": "Original-size review hold: all four limbs and one tail readable; strong perspective remains non-representative."
+    },
+    "varanus-priscus-ecology-v1": {
+      "taxonId": "varanus-priscus",
+      "slot": 3,
+      "kind": "anatomy review",
+      "representativeEligible": false,
+      "asset": "assets/dinosaurs/varanus-priscus-diprotodon-drycreek-ecology-imagegen-v1.png",
+      "sourceCallId": "exec-09cbdfba-0407-4444-ac23-11832da2621f",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-09cbdfba-0407-4444-ac23-11832da2621f.png",
+      "prompt": "Create an original wide Pleistocene Australian dry-creek ecology scene. One complete Varanus priscus crosses the channel in rear-side view with four limbs and one long tail readable; one distant Diprotodon-like herbivore remains on a separate bank. No chase, attack, contact, overlapping bodies, duplicated tracks, text or watermark.",
+      "seed": "service-assigned, not exposed",
+      "dimensions": "1672x941",
+      "bytes": 3064129,
+      "sha256": "7c0fc568a1c7ffa72667a4c1e05bce921272c385d916eed0ad223690b22392a4",
+      "review": "Original-size anatomy-review acceptance; distant herbivore is simplified and no predation is asserted."
+    }
+  },
+  "rejectedAttempts": [
+    {
+      "taxonId": "macrauchenia-patachonica",
+      "intendedSlot": 2,
+      "sourceCallId": "exec-590959e0-a0bf-431c-8dbe-f64ee8545aca",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-590959e0-a0bf-431c-8dbe-f64ee8545aca.png",
+      "dimensions": "1122x1402",
+      "bytes": 2578450,
+      "sha256": "50066b2b0fa6c2b2aa98d1c4ce0532358d5f4b9978303314d8dbafcfee25a3db",
+      "reason": "Original-size review did not keep all four limbs and feet independently readable; the far hind limb was obscured, so it failed the S2 four-foot gate and was superseded.",
+      "deletionMethod": "Moved to Windows Recycle Bin after accepted-set disjointness and exact-path validation.",
+      "recoverability": "Potentially recoverable from the Windows Recycle Bin until it is emptied."
+    }
+  ]
+}

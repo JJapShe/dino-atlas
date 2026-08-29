@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "tarbosaurus-bataar-high-frontthreequarter-openbar-pivot-v3",
+  "disposition": "promoted-awaiting-app-integration",
+  "promotedAt": "2026-08-11T13:23:16.348Z",
+  "sourcePath": "tools/dino-review/pending/tarbosaurus-bataar-high-frontthreequarter-openbar-pivot-v3/tarbosaurus-bataar-high-frontthreequarter-openbar-pivot-imagegen-v3.png",
+  "targetPath": "assets/dinosaurs/tarbosaurus-bataar-high-frontthreequarter-openbar-pivot-imagegen-v3.png",
+  "filename": "tarbosaurus-bataar-high-frontthreequarter-openbar-pivot-imagegen-v3.png",
+  "sha256": "8d1df9f5627fd6023ba73a5a65bb0cd5e674a9ee9ca7f13306e82cd65281679c",
+  "sizeBytes": 3569987,
+  "review": {
+    "status": "pass",
+    "note": "",
+    "updatedAt": "2026-08-11T13:23:12.871Z",
+    "imageSha256": "8d1df9f5627fd6023ba73a5a65bb0cd5e674a9ee9ca7f13306e82cd65281679c",
+    "manifestSha256": "963e32f95c15aca113f62d3b99047cdd208963c17200453cbc0d000fcc5b700c"
+  },
+  "candidate": {
+    "schemaVersion": 1,
+    "candidateId": "tarbosaurus-bataar-high-frontthreequarter-openbar-pivot-v3",
+    "filename": "tarbosaurus-bataar-high-frontthreequarter-openbar-pivot-imagegen-v3.png",
+    "speciesId": "tarbosaurus-bataar",
+    "kind": "anatomy review",
+    "targetFilename": "tarbosaurus-bataar-high-frontthreequarter-openbar-pivot-imagegen-v3.png",
+    "provenance": {
+      "source": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and ignored anatomy-review candidates were used only as project-owned identity, anatomy, or local-repair references; no external artwork or named-artist style input",
+      "license": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved or locally generated inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+      "prompt": "Edit Image 1 only as a tightly constrained Dino Atlas local head-surface repair for Tarbosaurus bataar. Image 2 is the approved project-owned skull and skin control. Preserve Image 1's exact square frame, high front-left three-quarter composition, camera, scale, lighting, habitat, palette, head length and width, eyes, nostrils, jaws, teeth, neck, torso, exactly two separate tiny forearms, both two-fingered hands, exactly two hind legs, both three-principal-toed feet, pelvis, and complete single tail. Do not reframe, mirror, crop, recolor, change the pose or change any area except the top surface of the skull.\n\nRepair only the skull roof from the nasal bridge to the rear cranium. Remove every large triangular spike, sawtooth, horn and raised crest. Replace them with a low continuous natural tyrannosaurid skull contour covered in small rounded pebbled scales like Image 2. Keep only subtle low rounded scale bosses that remain flush with the head silhouette; no spike row, no comb, no horn, no allosauroid lacrimal crest and no dragon ornament. Retain the long, relatively narrow but still deep Tarbosaurus skull, the existing facial proportions, eye, nostril, mouth and restrained teal/rust facial markings.\n\nMaintain exactly two hands with exactly two functional fingers and two claw tips per hand, two legs, two feet with three forward weight-bearing principal toes each, and one pelvis-connected tail. No added animal, extra limb, hidden hand, third finger, fused foot, split tail, text, logo, watermark, fantasy anatomy, external artwork imitation or named-artist style. Natural-history museum realism for children ages 5–14.",
+      "seed": "provider-not-exposed",
+      "workflow": "OpenAI image_gen anatomy-led composition-diversity v7; head-surface repair from rejected staging v2 plus approved Tarbosaurus identity reference; whole frame resynthesized and full semantic anatomy rechecked; exact input paths and SHA in batch record; manual anatomy approval required"
+    },
+    "anatomyReview": {
+      "status": "review-hold",
+      "representative": false,
+      "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+      "reviewedAt": "2026-08-10T18:53:13.8202235Z",
+      "notes": "S4 composition-diversity candidate only. After a head-surface repair and whole-frame resynthesis, the skull reads as long, relatively narrow and deep with no crest or horn; both hands read as 2+2, both feet as three principal toes, with two legs and one complete tail. Representative promotion prohibited."
+    }
+  }
+}

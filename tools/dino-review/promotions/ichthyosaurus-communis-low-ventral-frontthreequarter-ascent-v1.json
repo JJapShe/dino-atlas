@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "ichthyosaurus-communis-low-ventral-frontthreequarter-ascent-v1",
+  "disposition": "promoted-awaiting-app-integration",
+  "promotedAt": "2026-08-11T13:31:49.068Z",
+  "sourcePath": "tools/dino-review/pending/ichthyosaurus-communis-low-ventral-frontthreequarter-ascent-v1/ichthyosaurus-communis-low-ventral-frontthreequarter-ascent-imagegen-v1.png",
+  "targetPath": "assets/dinosaurs/ichthyosaurus-communis-low-ventral-frontthreequarter-ascent-imagegen-v1.png",
+  "filename": "ichthyosaurus-communis-low-ventral-frontthreequarter-ascent-imagegen-v1.png",
+  "sha256": "bb412c3b599d7f7fd5f01e3c68c80f7f57e1c7fa69637f6a540a86d24d01cff0",
+  "sizeBytes": 2097294,
+  "review": {
+    "status": "pass",
+    "note": "",
+    "updatedAt": "2026-08-11T13:31:47.490Z",
+    "imageSha256": "bb412c3b599d7f7fd5f01e3c68c80f7f57e1c7fa69637f6a540a86d24d01cff0",
+    "manifestSha256": "5902cd3840d720fee6844bedf162d9cf4c23953bfb64e9592509a704be732284"
+  },
+  "candidate": {
+    "schemaVersion": 1,
+    "candidateId": "ichthyosaurus-communis-low-ventral-frontthreequarter-ascent-v1",
+    "filename": "ichthyosaurus-communis-low-ventral-frontthreequarter-ascent-imagegen-v1.png",
+    "speciesId": "ichthyosaurus-communis",
+    "kind": "anatomy review",
+    "targetFilename": "ichthyosaurus-communis-low-ventral-frontthreequarter-ascent-imagegen-v1.png",
+    "provenance": {
+      "source": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images were used only as project-owned identity, anatomy, or color references; no external artwork or named-artist style input",
+      "license": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+      "prompt": "Use case: scientific-educational natural-history paleoart for ages 5-14.\nAsset type: Dino Atlas S2 color-pattern and composition-diversity candidate; anatomy-review only.\nInput Image 1 is the project-owned approved Ichthyosaurus communis identity reference only. Preserve the long narrow toothed snout, very large round eye, deep plump streamlined body, small dorsal fin, four paddle limbs, and vertical crescent tail, but create a genuinely new camera, scale, motion, water layout, lighting, and pattern. Do not mirror, recolor, trace, or reuse Image 1's large left-facing broadside catalog composition, ammonite seafloor, or horizontal path.\n\nPrimary scene: one calm living Ichthyosaurus communis making a gentle ascending turn through clear Early Jurassic open water. No prey, chase, seafloor animal, or other marine reptile.\n\nComposition: wide 16:9 landscape, low underwater camera looking upward and slightly forward at the animal's ventral front-right three-quarter side. The complete animal travels diagonally in depth from the lower-left distance toward the upper-right brighter water, occupying only about half the frame width. The head and complete snout sit in the upper-right third, while the complete vertical tail remains in the lower-left third with open blue water around it. Preserve generous negative space and a clear three-dimensional bank. All four paddles must be separately visible in distinct silhouettes against empty blue water: near front, far front, near hind, far hind. The small dorsal fin must remain visible beyond the bank. No flat side profile, top-down view, split-water surface, or mirrored catalog pose.\n\nIdentity and count lock: one long narrow jaw with many small conical teeth, one very large round visible eye, a short neck merging into a deep plump oval streamlined trunk, one small triangular dorsal fin, exactly four attached paddle limbs in two front and two hind positions, and exactly one vertical crescent-shaped tail fin. The tail is vertical, never a horizontal whale fluke. No blowhole, shark gill slits, fish scales, whale body, dolphin forehead, shark body, plesiosaur neck, mosasaur lizard torso, extra fin, fused paddle, missing far paddle, duplicate tail, cropped snout, or cropped tail.\n\nColor and pattern: deep petrol-indigo dorsal skin, smoky slate-blue sides, pale cream ventral countershade, irregular muted copper-gray cheek wash, sparse asymmetric opal flecks and broken blue-gray marbling. Marks vary naturally in size and spacing; no crisp stripes, perfect rings, mirrored spots, or palette-only copy.\n\nEnvironment and style: bright rippled surface far above, soft descending light shafts, clean depth haze, a few irregular suspended particles only; high-detail natural-history museum realism, realistic smooth wet reptile skin, original project-owned visual, no named-artist or franchise style. No text, watermark, logo, gore, blood, attack, modern object, diver, boat, cage, regular fish school, or extra animal.",
+      "seed": "provider-not-exposed",
+      "workflow": "OpenAI image_gen anatomy-led composition-diversity v3; approved-control identity reference; exact input path and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+    },
+    "anatomyReview": {
+      "status": "review-hold",
+      "representative": false,
+      "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+      "reviewedAt": "2026-08-10T17:03:33.2003794Z",
+      "notes": "S2 color-pattern diversity candidate only. Low ventral three-quarter ascent, vertical tail and four separated paddles appear readable; far-paddle attachment and full body proportions require manual original-size review. Representative promotion prohibited."
+    }
+  }
+}

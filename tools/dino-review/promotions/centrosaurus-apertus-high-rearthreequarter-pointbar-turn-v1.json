@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "centrosaurus-apertus-high-rearthreequarter-pointbar-turn-v1",
+  "disposition": "promoted-awaiting-app-integration",
+  "promotedAt": "2026-08-11T13:25:55.849Z",
+  "sourcePath": "tools/dino-review/pending/centrosaurus-apertus-high-rearthreequarter-pointbar-turn-v1/centrosaurus-apertus-high-rearthreequarter-pointbar-turn-imagegen-v1.png",
+  "targetPath": "assets/dinosaurs/centrosaurus-apertus-high-rearthreequarter-pointbar-turn-imagegen-v1.png",
+  "filename": "centrosaurus-apertus-high-rearthreequarter-pointbar-turn-imagegen-v1.png",
+  "sha256": "f051fbb37f709a235d86cd272f02e18196c1f98478d2231bee192a74dbac0182",
+  "sizeBytes": 3273546,
+  "review": {
+    "status": "pass",
+    "note": "",
+    "updatedAt": "2026-08-11T13:25:54.128Z",
+    "imageSha256": "f051fbb37f709a235d86cd272f02e18196c1f98478d2231bee192a74dbac0182",
+    "manifestSha256": "606b7d286bb7aa9bcf8e4cd134444bd205aeb0cf96ed2f71a9fb712b20e80264"
+  },
+  "candidate": {
+    "schemaVersion": 1,
+    "candidateId": "centrosaurus-apertus-high-rearthreequarter-pointbar-turn-v1",
+    "filename": "centrosaurus-apertus-high-rearthreequarter-pointbar-turn-imagegen-v1.png",
+    "speciesId": "centrosaurus-apertus",
+    "kind": "anatomy review",
+    "targetFilename": "centrosaurus-apertus-high-rearthreequarter-pointbar-turn-imagegen-v1.png",
+    "provenance": {
+      "source": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and ignored anatomy-review candidates were used only as project-owned identity, anatomy, or local repair references; no external artwork or named-artist style input",
+      "license": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved or locally generated inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+      "prompt": "Create a scientifically grounded, age-appropriate educational dinosaur-atlas gallery image for children ages 5–14. Image 1 is the project-owned full-body identity reference for adult Centrosaurus apertus. Image 2 is the project-owned reference for the exact medial P1 and P2 frill-hook arrangement. Use them only for identity and anatomy; do not copy either reference's frontal camera, broadside pose, layout, lighting or background.\n\nShow exactly one adult Centrosaurus apertus, fully visible from beak to tail tip in a square 1:1 frame. Use a high rear-left three-quarter camera. The body moves diagonally away toward the upper-right while the animal makes a calm, tight turn across a wet pebbly point bar; the head turns naturally toward the open lower-left side so the nasal horn and the top and rear surface of the frill remain readable. Keep the four limbs staggered rather than lined up: three feet planted and one forefoot just lifting, with all four feet visibly separate. The tail makes one shallow continuous curve from the pelvis and stays fully inside the frame.\n\nAdult identity and count gates: exactly one large nasal horn curving forward; only short low brow knobs, never long brow horns; a short, solid frill covered by continuous skin with no open holes; exactly two large medial P1 hooks immediately to either side of the central notch, both curving forward and downward across the frill; exactly two smaller P2 hooks immediately outside the P1 pair, both curving inward; all later marginal ornaments remain low knobs rather than long spikes; exactly two forelimbs, two hindlimbs, four separate feet and one continuous tail.\n\nUse the hypothetical S2 palette without preserving the old pose: muted moss and lichen green-grey skin, a broken ochre shoulder saddle, one small subdued teal cheek patch on each visible side, a localized rust edge on the frill, and one irregular charcoal band near the tail base. Keep markings low-contrast and irregular, with no regular rings, zebra striping or identical bilateral spots. Use matte pebbled ceratopsian skin and restrained keratin texture.\n\nThe setting is a Dinosaur Park Formation point bar just after rain, with damp gravel, shallow puddles, scattered ferns and distant conifers. No other animals, herd, parental scene, combat or blood.\n\nReject a single central frill hook, reversed P1/P2 positions, extra ornaments between the P1 pair, backward-curving adult nasal horn, Triceratops-like long brow horns, Styracosaurus-like radiating long spikes, open or transparent frill holes, rhinoceros or bison body, mammal ears or hooves, hidden or fused legs, extra feet, extra horns, split or cropped tail, fantasy anatomy, text, labels, logos or watermark. Natural-history realism, neutral educational tone, no named-artist style.",
+      "seed": "provider-not-exposed",
+      "workflow": "OpenAI image_gen anatomy-led composition-diversity v5; approved full-body and medial P1-P2 frill-hook references; exact input paths and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+    },
+    "anatomyReview": {
+      "status": "review-hold",
+      "representative": false,
+      "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+      "reviewedAt": "2026-08-10T18:02:24.4374314Z",
+      "notes": "S2 composition-diversity candidate only. One forward-curving nasal horn, low brow knobs, continuous skin-covered frill, paired medial P1 and paired outer P2 hooks, four limbs, four feet and one tail appear readable. Palette remains close to the identity control, so this is retained for composition review only. Representative promotion prohibited."
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "parasaurolophus-walkeri-portrait-headcrest-dawn-v1",
+  "disposition": "promoted-awaiting-app-integration",
+  "promotedAt": "2026-08-11T13:32:00.108Z",
+  "sourcePath": "tools/dino-review/pending/parasaurolophus-walkeri-portrait-headcrest-dawn-v1/parasaurolophus-walkeri-portrait-headcrest-dawn-imagegen-v1.png",
+  "targetPath": "assets/dinosaurs/parasaurolophus-walkeri-portrait-headcrest-dawn-imagegen-v1.png",
+  "filename": "parasaurolophus-walkeri-portrait-headcrest-dawn-imagegen-v1.png",
+  "sha256": "45423b280ba07194e021ebb3c6557d031a7f71d97d4670d3638021eef9ada3c3",
+  "sizeBytes": 2360534,
+  "review": {
+    "status": "pass",
+    "note": "",
+    "updatedAt": "2026-08-11T13:31:58.035Z",
+    "imageSha256": "45423b280ba07194e021ebb3c6557d031a7f71d97d4670d3638021eef9ada3c3",
+    "manifestSha256": "1f24668859cc44eb0e544cbf78b670eb78f7d11e124bca2a3843c98e7f2f3888"
+  },
+  "candidate": {
+    "schemaVersion": 1,
+    "candidateId": "parasaurolophus-walkeri-portrait-headcrest-dawn-v1",
+    "filename": "parasaurolophus-walkeri-portrait-headcrest-dawn-imagegen-v1.png",
+    "speciesId": "parasaurolophus-walkeri",
+    "kind": "anatomy review",
+    "targetFilename": "parasaurolophus-walkeri-portrait-headcrest-dawn-imagegen-v1.png",
+    "provenance": {
+      "source": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and explicitly recorded prior rejected composition references were used only as project-owned inputs; no external artwork or named-artist style input",
+      "license": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+      "prompt": "Use case: scientific-educational natural-history paleoart for ages 5-14.\nAsset type: Dino Atlas mobile-vertical S2 color-pattern and identity-detail diversity candidate; anatomy-review only.\nInput Image 1 is the project-owned approved Parasaurolophus walkeri species-identity reference only. Preserve the diagnostic skull and low tubular crest identity, but create a genuinely new image. Do not mirror, recolor, trace, or reuse the side-profile full-body composition, riverbank layout, pose, camera, or lighting of Image 1.\n\nPrimary scene: one calm living adult Parasaurolophus walkeri pausing among low broadleaf plants on a Late Cretaceous floodplain at cool dawn. No other animal.\n\nComposition: vertical 4:5 portrait, close front-right three-quarter head, complete crest, neck, and upper shoulder study. Camera slightly below eye level. The head turns gently toward the viewer while the long tubular crest sweeps diagonally upward and back across open sky. Keep the entire snout tip, jaw, eye, back of skull, and complete crest tip inside frame with generous clearance. Intentionally crop cleanly at the upper shoulder before either forelimb; no partial hand, leg, hip, or tail enters frame. This must read as a deliberate head-and-crest detail, not a cropped catalog body and not a mirrored side view.\n\nIdentity lock: exactly one head. One single solid tubular crest attached continuously to the skull, low and long, longer than the head, gently sweeping backward and slightly downward; never hook-shaped, U-shaped, branched, paired, fan-shaped, helmet-like, or disconnected. Long low toothless beak, deep cheek, restrained eye, thick medium-length neck. No horn, frill, teeth, external ear, bird beak, extra crest, duplicate jaw, giant eye, or fantasy ornament.\n\nColor and pattern: muted warm umber face and crest base, cool slate-olive neck, dusty turquoise-gray throat, irregular small ochre flecks and broken maroon cloud patches that vary naturally in size and spacing. Asymmetric, soft-edged markings; no perfect stripes, rings, rows, mirrored bilateral pattern, neon color, or palette-only copy.\n\nEnvironment and style: softly blurred dawn floodplain plants, pale mist, and distant low trees; realistic living-animal skin and subtle soft tissue; high-detail natural-history museum realism; original project-owned visual, no named-artist or franchise style. No text, watermark, logo, gore, wound, attack, jewelry, harness, modern object, partial limb, extra animal, or cropped crest.",
+      "seed": "provider-not-exposed",
+      "workflow": "OpenAI image_gen anatomy-led composition-diversity v3; approved-control identity reference; exact input path and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+    },
+    "anatomyReview": {
+      "status": "review-hold",
+      "representative": false,
+      "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+      "reviewedAt": "2026-08-10T16:43:45.1387935Z",
+      "notes": "S2 color-pattern and head-crest diversity candidate only. Mobile portrait is distinct, but crest projects higher and tapers more sharply than the approved low gently posterior cue. Manual original-size crest review or local correction required. Representative promotion prohibited."
+    }
+  }
+}

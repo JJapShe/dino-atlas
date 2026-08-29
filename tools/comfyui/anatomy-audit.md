@@ -1,6 +1,6 @@
 # Dinosaur Anatomy Audit
 
-Last updated: 2026-08-08
+Last updated: 2026-08-11
 
 This audit checks the current app-connected gallery images against a stricter anatomy gate. The goal is to prevent visually pleasing but structurally wrong renders from entering the suitable-candidate pool.
 
@@ -219,6 +219,30 @@ Every candidate must clear these before it can be treated as suitable:
 - ComfyUI selection should include a manual visual gate before copying any render into `assets/dinosaurs/` or marking it as a candidate in `app.js`.
 - A future automated checker can use object detection/segmentation as a helper, but it should be treated as a pre-filter only; dinosaur-specific hand and tail details still require visual review.
 
+## 2026-08-11 Documentary-famous Paleozoic and Cenozoic expansion intake
+
+All six taxa keep a basic side or near-side, uncropped full-body S1 as the sole `count-level pass` and representative-eligible control. Every S2 is lower-ranked color/view material, and every S3 remains non-representative `anatomy review` ecology material. This is an original-size intake decision, not a final specialist anatomy certification.
+
+| Taxon | S1 basic representative retained | S2 color/view boundary | S3 ecology/anatomy boundary | Promotion gate |
+| --- | --- | --- | --- | --- |
+| Arthropleura armata | `arthropleura-armata-diplosegment-stalkedeye-representative-imagegen-v1.png` — `count-level pass`; side/near-side full body with one antenna pair, one stalked-eye pair, repeated broad flat tergites, dense paired leg rows, and continuous head-to-tail body | `arthropleura-armata-highthreequarter-copper-moss-pattern-imagegen-v1.png` — `review hold`; elevated three-quarter color study with perspective and far-leg overlap | `arthropleura-armata-meganeura-floodplain-ecology-imagegen-v1.png` — `anatomy review`; focal body remains readable, while the distant griffinfly is simplified broad-era context | S1 alone may represent the taxon. Adult head proportions, exact distal leg count, color, diet, track-maker identity, exact coexistence, and behavior remain uncertain or reconstructed. |
+| Meganeura monyi | `meganeura-monyi-fourwing-sixleg-representative-imagegen-v1.png` — `count-level pass`; side/near-side full body with exactly four separately rooted wings, six thoracic legs, two compound eyes, one thorax, and one long segmented abdomen | `meganeura-monyi-petrol-copper-samebody-pattern-imagegen-v1.png` — `review hold`; the same complete body, four thoracic wings and six thoracic legs remain readable while only the hypothetical petrol, copper and moss palette changes | `meganeura-monyi-arthropleura-wetland-ecology-imagegen-v1.png` — `anatomy review`; focal four-wing/six-leg read with a distant, simplified, non-contact Arthropleura | S2 is a deliberate same-body color/pattern comparison and must not count as composition diversity or replace S1. S3 does not establish direct interaction, exact locality, flight height, or behavior. Only S1 is representative-eligible. |
+| Inostrancevia alexandri | `inostrancevia-alexandri-lowskull-saberpair-representative-imagegen-v1.png` — `count-level pass`; side/near-side full body with one long relatively narrow skull, one enlarged upper saber pair, four attached limbs and feet, and one continuous tail | `inostrancevia-alexandri-charcoal-sienna-samebody-pattern-imagegen-v1.png` — `review hold`; the same complete body, saber pair, four limbs, four feet and five readable toes per foot remain while only the hypothetical charcoal, sienna and sand palette changes | `inostrancevia-alexandri-seasonal-channel-ecology-imagegen-v1.png` — `anatomy review`; four limbs, feet, tail, and saber pair remain broadly readable in a wide habitat frame | S2 is a deliberate same-body color/pattern comparison and must not count as composition diversity or replace S1. Skin, stance, gait, vegetation, weather, and exact event remain reconstructed; only S1 may represent the taxon. |
+| Titanoboa cerrejonensis | `titanoboa-cerrejonensis-continuous-boid-representative-imagegen-v1.png` — `count-level pass`; side/near-side complete body with one head, one tail, zero limbs, and no branch, merge, or broken body path | `titanoboa-cerrejonensis-highoblique-channel-pattern-imagegen-v1.png` — `review hold`; one continuous limbless body is readable, but overlapping coils, perspective, and scale pattern reduce certainty | `titanoboa-cerrejonensis-distant-turtle-ecology-imagegen-v1.png` — `anatomy review`; the distant turtle is separated environmental context with no contact or attack claim | Great size and boid affinity are fossil-led; exact head, length, thickness, scale color, coil path, prey, and behavior are comparative reconstruction. Only S1 is representative-eligible. |
+| Basilosaurus isis | `basilosaurus-isis-longbody-tinyhindlimb-representative-imagegen-v1.png` — `count-level pass`; side/near-side full body with an extremely elongate whale trunk, two foreflippers, two very small pelvic hind limbs, and one horizontal tail fluke | `basilosaurus-isis-ventral-ascent-petrol-pattern-imagegen-v1.png` — `review hold`; ventral ascent and color study keep the paired appendage direction but add perspective and soft-tissue uncertainty | `basilosaurus-isis-fishschool-tethys-ecology-imagegen-v1.png` — `anatomy review`; the fish school is separated context and not proof of attack, prey identity, or the pictured event | Fossils anchor the elongate archaeocete body, heterodont teeth, and tiny hind limbs; exact fluke outline, color, swimming posture, fish association, and behavior remain reconstructed. S2/S3 cannot replace S1. |
+| Paraceratherium transouralicum | `paraceratherium-transouralicum-hornless-longneck-representative-imagegen-v1.png` — `count-level pass`; side/near-side full body with one small hornless head, long neck, high shoulders, deep trunk, four attached long limbs and grounded feet, and one tail | `paraceratherium-transouralicum-frontthreequarter-fourfoot-pattern-imagegen-v1.png` — `review hold`; front-three-quarter four-foot color study with foreshortening and hypothetical skin pattern | `paraceratherium-transouralicum-high-browse-ecology-imagegen-v1.png` — `anatomy review`; high browsing is an illustrative ecology reconstruction rather than direct behavior evidence | Hornlessness and giant rhinocerotoid proportions are fossil-led; exact mass, soft tissue, skin, foot detail, browse height, plants, and behavior remain uncertain. Only S1 is representative-eligible. |
+
+Rejected private calls, retained only as negative provenance evidence and prohibited from project/runtime assignment:
+
+- Arthropleura: `exec-e9d46802-2c2c-472c-aef0-fe71e3741efe`, `exec-970907d4-ea26-4f2c-878c-ef150165754c`, `exec-09769592-eabd-4ffb-bd8f-2e96bbabb0ee`
+- Meganeura: `exec-9dc10616-169f-405c-91e3-76e7cdc43d9e`, `exec-48c4dad6-d5b8-4238-8614-0616929b31d2`, `exec-86d9ecf5-88c5-40d7-bdd3-933ff196f046`, `exec-ac000020-80f6-4be9-8771-c4a137d86b4a`, `exec-c7fabaa3-d3b8-4bb9-951f-518fa018b079`, `exec-efe5d7d9-e81d-466d-a22b-fb9a3867e26b`
+- Inostrancevia: `exec-08daa434-e18c-49a8-8a7a-00c903794523`, `exec-7ed9e867-2522-48fe-9ded-c3db55a4d9fe`, `exec-603f66bd-f8ad-433d-81b0-658d447eba33`, `exec-ea848bd8-b0c1-444b-941a-21f567a73ef7`, `exec-094c6e07-7d24-4ae9-92ea-c996eb41382e`
+- Titanoboa: `exec-54a3dfb1-d26c-4695-8565-8d8e713ad5e6`, `exec-4626d0c5-fafa-4c35-8f45-48a73c424557`
+- Basilosaurus: `exec-28f11e33-cab7-4f6b-89d7-09756265ecda`, `exec-60680e54-90d0-49ef-9362-242d2b3b84de`
+- Paraceratherium: `exec-8e0a9271-8d79-42ca-a776-4b50cf488a04`
+
+These calls were superseded or failed the original-size anatomy/composition gate and are absent from the current approved project set; the two superseded close-up S2 copies were temporarily imported and then removed after true same-body replacements passed. All 19 rejected or superseded source PNGs were moved to the Windows Recycle Bin, while exact prompts, pre-deletion hashes, dimensions, per-call reasons and accepted-source trace remain in `tools/comfyui/documentary-famous-life-expansion-20260811.json`. Final verification passed at `161` taxa and `889/889` assigned and approved slots with all strict structural errors at `0`, `1829` connected app images with no missing paths, 18/18 selected files matching local bytes and SHA-256 over `8020`, 18/18 active additions registered in authenticated `8792`, and desktop `1280x800` plus mobile `390x844` gallery rendering without horizontal overflow or browser warnings.
+
 ## 2026-08-10 Famous Paleozoic and Cenozoic life intake
 
 | Taxon | S1 representative candidate | S2 color/view | S3 ecology | Evidence and promotion boundary |
@@ -247,3 +271,80 @@ Rejected or demoted originals:
 - Coelodonta initial S2 `exec-379dc85d-5436-4095-9792-3ac629b45939` and S3 `exec-5198f7fd-e2f7-49a5-a1bd-91f3ee6a408d` — far-side limb and foot readability failures
 
 Exact accepted prompts, service call IDs, private-reference trace, hashes, byte sizes, dimensions, rights boundaries and rejection reasons are recorded in `tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json`.
+
+## 2026-08-24 Cenozoic famous-life breadth intake
+
+| Taxon | S1 representative | S2 review hold | S3 anatomy review | Promotion boundary |
+| --- | --- | --- | --- | --- |
+| Megaloceros giganteus | full palmated antler pair, one body, four legs and four hooves | vertical winter-gray front three-quarter | separated male and distant antlerless females | S1 only may represent; coat, antler surface and group behavior remain reconstructed |
+| Macrauchenia patachonica | small head, long neck, short nasal pad, four limbs and three-toed feet | high rear three-quarter replacement with all four feet readable | browsing with distant simplified ground sloth | S1 only may represent; nasal soft tissue and exact ecology remain reconstructed |
+| Varanus priscus | low heavy monitor body, four limbs and one long continuous tail | vertical high front three-quarter slate-ochre variant | dry creek with distant Diprotodon-like herbivore | S1 only may represent; exact maximum size, skin, gait and co-occurrence remain reconstructed |
+
+One initial vertical Macrauchenia S2 (`exec-590959e0-a0bf-431c-8dbe-f64ee8545aca`) failed because the far hind limb and foot were not independently readable. It was superseded, recorded with its pre-deletion hash and dimensions, and moved to the Windows Recycle Bin. Exact accepted prompts, call IDs, hashes, dimensions, rights and review boundaries are in `tools/comfyui/cenozoic-famous-life-expansion-20260824.json`.
+
+## 2026-08-24 Paleozoic famous-life breadth intake
+
+| Taxon | S1 representative | S2 review hold | S3 anatomy review | Promotion boundary |
+| --- | --- | --- | --- | --- |
+| Opabinia regalis | exactly five eyes in a compact non-linear head cluster; one annulated proboscis with opposed tips and inward comb spines/bristles; complete soft body and tail | vertical dorsal-oblique with the same five-eye/tip gate | wide sponge-shelf context with distant non-contact organisms | S1 only may represent. Any 4/6-eye, straight-line-eye, trunk-eye, simple-claw or armored-shrimp drift fails. Color, exact gill position and ecology remain reconstructed. |
+| Tiktaalik roseae | flat skull, high-set eyes, neck, scaled fish body and paired lobe fins ending in fin rays without digits | vertical high front-three-quarter comparison | body retained in shallow water beside a bank | S1 only may represent. No hands, feet, digits or terrestrial-walking claim; color, distal fin outline and behavior remain reconstructed. |
+| Jaekelopterus rhenaniae | one cheliceral-claw pair, slender appendages, one swimming-paddle pair, connected abdomen and broad triangular telson | vertical dorsal comparison corrected to four bilateral walking-leg pairs | wide river channel with distant non-contact armored-fish silhouettes | S1 only may represent. The approximately 2.5 m maximum is a chelicera-based extrapolation; exact whole-body proportions, color and ecology remain reconstructed. |
+
+Rejected or superseded private calls are recorded in `tools/comfyui/paleozoic-famous-life-expansion-20260824.json` and are absent from runtime assignment. The two user-provided Opabinia images informed only the clustered-eye and proboscis-tip anatomy correction; they are not distributed or referenced by the app.
+
+## 2026-08-26 Paleozoic and Cenozoic insect breadth intake
+
+| Taxon | S1 representative | S2 review hold | S3 anatomy review | Promotion boundary |
+| --- | --- | --- | --- | --- |
+| Meganeuropsis permiana | four wings, six thoracic legs, complete segmented body | vertical high-oblique four-wing comparison | low early Permian wetland context | S1 only may represent; exact venation, body proportions, color and flight pose remain reconstructed. |
+| Helicoprion davisii | internal lower-jaw whorl boundary with no external circular saw | vertical low-oblique comparison | distant non-contact cephalopod school | S1 only may represent; most postcranial anatomy and exact size remain comparative reconstruction. |
+| Titanomyrma lubei | winged queen with six legs and ant body plan | vertical dorsal view with four separated wings | believable-scale Green River leaf litter | S1 only may represent; S2 clarifies wing count and color, colony and diet remain unknown. |
+| Gastornis gigantea | deep straight toothless beak, tiny wings, heavy legs and complete feet | vertical front-three-quarter plumage comparison | calm plant browsing with distant mammals | S1 only may represent; plumage and scene are reconstructed, while the ecology follows herbivory evidence rather than the obsolete apex-predator trope. |
+
+Two Helicoprion attempts were rejected: `exec-ea3ca26c-99f2-4d35-91f8-181294869314` lost the diagnostic whorl in generic shark-like teeth, and `exec-3d825ed6-e8cd-4c56-9230-73850e0a414f` exposed a circular buzz-saw-like disk. Neither is copied or referenced by the app. Exact accepted prompts, call IDs, hashes, dimensions, rights and review boundaries are in `tools/comfyui/paleozoic-cenozoic-insect-expansion-20260826.json`.
+
+## 2026-08-26 Helicoprion CT-jaw reconstruction correction v2
+
+The first accepted Helicoprion set remained too close to a generic modern shark because avoiding the obsolete external saw also hid the diagnostic jaw architecture. The v2 audit applies the 2013 CT reconstruction, 2015 functional model, 2020 review, species-level crown geometry and 2024 whole-body uncertainty boundary.
+
+| Slot | Required jaw read | Result | Promotion boundary |
+| --- | --- | --- | --- |
+| S1 representative | short blunt head; deep rounded mandibular bulge; one midline arc of stout widely spaced crowns curling inward | pass | S1 may represent the taxon; buried coils, body, fins, skin and exact size remain inferred |
+| S2 review hold | near-lateral upward portrait; one curved row without frontal doubling | pass | color and pose comparison only; not representative-eligible |
+| S3 anatomy review | rounded jaw and single arc readable beside distant non-contact cephalopods | pass | ecology and postcranial proportions remain illustrative; not representative-eligible |
+
+The first v2 portrait attempt `exec-f49da20a-9edf-4837-a88a-6f1f1761aa36` is rejected because frontal perspective split the single symphyseal whorl into a false paired tooth row. It was never copied or app-referenced. The former v1 three-slot set remains on disk only as historical generated evidence and is superseded by the v2 runtime paths. Exact sources, prompts, calls, hashes, dimensions, rights, uncertainty and rejection records are in `tools/comfyui/helicoprion-reconstruction-correction-20260826.json`.
+
+## 2026-08-26 Helicoprion sagittal midline correction v3
+
+User review found that all three v2 images still placed the visible crowns as a horizontal arc along a lateral gum. That reading is anatomically misleading even though the set avoided an external circular saw. V3 therefore uses a front-three-quarter verification angle and fixes the visible whorl to one crown-thick vertical blade on the exact sagittal midline of the oral floor, aligned front-to-back from chin toward throat.
+
+| Slot | Required jaw read | Result | Promotion boundary |
+| --- | --- | --- | --- |
+| S1 representative | one central vertical saw blade; both side gums and upper jaw toothless | pass | representative-eligible for jaw identity; postcranial form remains comparative |
+| S2 review hold | same one-blade geometry in an upward portrait with a different palette | pass | color and pose comparison only; not representative-eligible |
+| S3 anatomy review | central blade remains readable in a wide non-contact cephalopod scene | pass | ecology, behavior and postcranial proportions remain illustrative |
+
+The v2 app set is superseded and remains on disk only as historical generated evidence. New explicit rejection conditions are lateral-gum teeth, horizontal shark-like rows, paired left/right rows, two blades, U-shaped or horseshoe arcades, and exposed external wheels. Exact prompts, calls, hashes, dimensions, rights, review and source boundaries are in `tools/comfyui/helicoprion-midline-whorl-correction-20260826.json`.
+# Helicoprion integrated partial-whorl correction v5 — 2026-08-26
+
+- User review correctly found that v3 could still read as a straight freestanding blade inside an empty U-shaped jaw, so all three v3 runtime slots are superseded.
+- S1 `helicoprion-davisii-integrated-partial-whorl-representative-imagegen-v5.png` passes the revised original-size gate: a partial C/comma-shaped functional arc, crowns rotating around the curve, both root ends entering a solid median jaw, hidden old turn, complete body and tail, and no external wheel.
+- S2 keeps the curved row in a distinct upward ochre portrait but is less diagnostic and remains `review hold`; S3 keeps it in a wide separated cephalopod scene and remains `anatomy review`. Neither may represent the taxon.
+- Front-view rejection is now explicit: no empty `山`-shaped paired jaw. The project visualization guide uses a filled triangular support beneath the median tooth root, while the exact life soft-tissue contour remains uncertain.
+- Private rejects include straight rows, lateral-face teeth, rounded paddles, extra dorsal structures, an empty U jaw, and a fully exposed spiral wheel. Detailed trace: `tools/comfyui/helicoprion-integrated-whorl-correction-20260826.json`.
+# Helicoprion open-cavity whorl correction v6 — 2026-08-26
+
+- User review correctly found that v5 packed the mouth with a giant triangular grey pad. All three v5 runtime slots are superseded.
+- The v6 gate requires abundant dark open oral space above, before, behind and beside a compact median tooth structure. Only the small support immediately under the continuous root is opaque cartilage.
+- S1 passes at original size with exactly eight functional crowns on an open C arc, toothless upper palate and lateral lips, no visible spiral center, one main dorsal, and complete body and tail.
+- S2 retains the open cavity and eight-crown C in an upward ochre portrait but remains `review hold`. S3 retains it in a separated cephalopod scene and remains `anatomy review`; its extra upper rear fin nub was removed before selection.
+- Reject a filled or sealed mouth, giant triangular pad or tongue, lip-following U row, closed O ring, mouth-within-mouth, visible spiral center, full wheel, straight blade, lateral or upper teeth, and extra dorsal fins. Details: `tools/comfyui/helicoprion-open-cavity-whorl-correction-20260826.json`.
+
+# Helicoprion single-midline ridge correction v7 — 2026-08-27
+
+- User review correctly found that v6 still read as broad left and right lower jaws around the whorl. All three v6 runtime slots are superseded.
+- The v7 gate allows only one narrow, approximately crown-thick sagittal tooth-root ridge to rise inside the black oral cavity. Black space must remain visible on both sides; paired lower-jaw shelves, side gum rails and a U-shaped lower-lip bridge are absent.
+- S1 passes at original size with the single curved median ridge, an open C/comma read, one main dorsal and a complete body and tail. Exact mouth rim and oral soft tissue remain reconstruction.
+- S2 preserves the topology in an upward ochre portrait but remains `review hold`. S3 preserves it with separated non-contact cephalopods and one dorsal after cleanup but remains `anatomy review`; neither may represent the taxon.
+- Reject paired or broad lower jaws, `山`-shaped or horseshoe supports, U-shaped lower lips, side gums, broad pads or tongues, filled mouths, straight blades, closed rings, visible spiral centers, external wheels, multiple tooth rows and extra dorsal fins. Details: `tools/comfyui/helicoprion-single-midline-ridge-correction-20260827.json`.

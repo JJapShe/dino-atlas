@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 2,
+  "batchId": "gallery-composition-diversity-20260811-b4",
+  "status": "review-hold",
+  "targetAudience": "ages 5-14",
+  "audit": {
+    "json": "tools/comfyui/gallery-composition-similarity-audit-20260810.json",
+    "markdown": "docs/gallery-composition-diversity-audit-2026-08-10.md",
+    "taxa": 155,
+    "approvedImages": 871,
+    "withinTaxonPairs": 2103,
+    "pairsAtOrAbove045": 677,
+    "pairsAtOrAbove055": 129,
+    "pairsAtOrAbove065": 12,
+    "pairsAtOrAbove075": 6
+  },
+  "policy": {
+    "batchSize": 2,
+    "attemptedImageCount": 6,
+    "enqueuedCandidateCount": 2,
+    "retainedCandidateCount": 2,
+    "candidateKind": "anatomy review",
+    "automaticPromotion": false,
+    "representativePromotion": false,
+    "automaticDeletionFromPending": false,
+    "candidateMaxSimilarityGate": 0.58,
+    "selectionRule": "LV1 and LV2 audience priority, representative-pattern similarity, then a role-specific camera or subject-scale change; two of three selected taxa survived anatomy intake",
+    "diversityGate": "A replacement must change camera family, direction, subject scale, action, spatial layout, or habitat; palette-only and mirror-only changes do not count.",
+    "anatomyGate": "Manual original-size anatomy review is required before pass, promotion, or app integration."
+  },
+  "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and explicitly recorded prior rejected composition references were used only as project-owned inputs; no external artwork or named-artist style input",
+  "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+  "records": [
+    {
+      "speciesId": "parasaurolophus-walkeri",
+      "candidateId": "parasaurolophus-walkeri-portrait-headcrest-dawn-v1",
+      "targetFilename": "parasaurolophus-walkeri-portrait-headcrest-dawn-imagegen-v1.png",
+      "intendedSlot": 2,
+      "intendedRole": "color-pattern",
+      "replacesSimilarityPair": {
+        "slots": [1, 2],
+        "structuralSimilarity": 0.579,
+        "matchMode": "mirrored"
+      },
+      "compositionKey": "portrait-frontthreequarter-headcrest-dawn",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.482,
+        "nearestSlot": 3,
+        "nearestRole": "habitat-ecology",
+        "matchMode": "mirrored",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-ebb9247e-0dc7-4fb0-9c46-5770de287595",
+      "image": {
+        "sha256": "45423b280ba07194e021ebb3c6557d031a7f71d97d4670d3638021eef9ada3c3",
+        "bytes": 2360534,
+        "width": 1122,
+        "height": 1402,
+        "format": "png"
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 approved species identity reference",
+          "path": "assets/dinosaurs/parasaurolophus-walkeri-dinosaurpark-lowcrest-mittenmanus-representative-imagegen-v2.png",
+          "sha256": "4b67aeca48a939a030eaad37fcf611ed3be2c502ac973b78a8f8547e6ca9b8ff",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260811-b4.md#parasaurolophus-walkeri",
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b4/parasaurolophus-walkeri-portrait-headcrest-dawn-imagegen-v1.txt",
+        "promptSha256": "ed6476e4620c5e7a565c9181347ef69082e74d28b86a1a1ccb461d944c4182d4",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v3; approved-control identity reference; exact input path and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+        "reviewedAt": "2026-08-10T16:43:45.1387935Z",
+        "notes": "S2 color-pattern and head-crest diversity candidate only. Mobile portrait is distinct, but crest projects higher and tapers more sharply than the approved low gently posterior cue. Manual original-size crest review or local correction required. Representative promotion prohibited."
+      }
+    },
+    {
+      "speciesId": "edmontosaurus-annectens",
+      "candidateId": "edmontosaurus-annectens-low-frontthreequarter-gravelbar-approach-v1",
+      "targetFilename": "edmontosaurus-annectens-low-frontthreequarter-gravelbar-approach-imagegen-v1.png",
+      "intendedSlot": 2,
+      "intendedRole": "color-pattern",
+      "replacesSimilarityPair": {
+        "slots": [1, 2],
+        "structuralSimilarity": 0.604,
+        "matchMode": "direct",
+        "recolorRisk": true
+      },
+      "compositionKey": "portrait-low-frontthreequarter-gravelbar-depth",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.493,
+        "nearestSlot": 2,
+        "nearestRole": "color-pattern",
+        "matchMode": "mirrored",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-61601355-366c-4a05-8f3e-d1c41c4c9b97",
+      "image": {
+        "sha256": "edf2e0371f67244441c8e1a38369ddcd4173dac1e36d5d1025310d69bfb3fea5",
+        "bytes": 2949265,
+        "width": 1122,
+        "height": 1402,
+        "format": "png"
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 rejected composition reference",
+          "path": "tools/comfyui/outputs/overnight/20260811/b4/edmontosaurus-annectens-high-rearquarter-braidedchannel-imagegen-v1.png",
+          "sha256": "cd01f5ef2478b587bd95d54740ac7929d6c35a492ff9b3cd067f731add40a0f7",
+          "status": "rejected-input-deleted",
+          "pixelsRetained": false
+        },
+        {
+          "role": "Image 2 approved species identity reference",
+          "path": "assets/dinosaurs/edmontosaurus-annectens-lance-softcrest-hooves-representative-imagegen-v1.png",
+          "sha256": "305313598716bc0696a60f64e564786ae1142d45f1fd51e1f6ce180728bb332b",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260811-b4.md#edmontosaurus-annectens",
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b4/edmontosaurus-annectens-low-frontthreequarter-gravelbar-approach-imagegen-v1.txt",
+        "promptSha256": "de2c67abb59df2d468c5e463b4111659bc74ea1fc7eeed7250a5b3dd7a126418",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v3; failed composition reference plus approved identity reference; exact input paths and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+        "reviewedAt": "2026-08-10T16:43:45.1387935Z",
+        "notes": "S2 color-pattern and low front-three-quarter diversity candidate only. Back profile and hind feet improved, but both forehands require manual crop review for compact mitten-pad anatomy. Representative promotion prohibited."
+      }
+    }
+  ],
+  "rejectedAttempts": [
+    {
+      "speciesId": "carnotaurus-sastrei",
+      "sourceCallId": "exec-3c7b5ea6-4632-4f3d-bd20-d57773c6d941",
+      "sha256": "87ca5614d8ffe42a0865de053cc139dd87b1bc14a46ca9f7e6af3a7225a900e9",
+      "bytes": 2405508,
+      "width": 1672,
+      "height": 941,
+      "status": "rejected-before-enqueue",
+      "reason": "The brow horns were tall pointed cones instead of low thick bosses, while both forehands drifted into long hooked fingers rather than compact reduced four-digit hands.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Windows Recycle Bin until emptied",
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b4/carnotaurus-sastrei-low-frontthreequarter-logstep-imagegen-v1.txt",
+        "promptSha256": "3dc2dcab0be89fa46fa1096baecab8a69720801b73e4ae57da6bdc43910475ac",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v3; approved-control identity reference; independent visual QA; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and explicitly recorded prior rejected composition references were used only as project-owned inputs; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      }
+    },
+    {
+      "speciesId": "edmontosaurus-annectens",
+      "sourceCallId": "exec-6ea9124d-a2fd-4cae-8f54-c2f56fb7fe60",
+      "sha256": "cd01f5ef2478b587bd95d54740ac7929d6c35a492ff9b3cd067f731add40a0f7",
+      "bytes": 2891950,
+      "width": 1122,
+      "height": 1402,
+      "status": "rejected-before-enqueue",
+      "reason": "The back became a bison-like hump with coarse dorsal knobs, and column-like feet obscured the mitten forehands and three-wedge hind-hoof anatomy.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Windows Recycle Bin until emptied",
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b4/edmontosaurus-annectens-high-rearquarter-braidedchannel-imagegen-v1.txt",
+        "promptSha256": "2d9687154475e5327a79f1832f19639c556d447acb1b254b96e5baba9de636e0",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v3; approved-control identity reference; independent visual QA; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and explicitly recorded prior rejected composition references were used only as project-owned inputs; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      }
+    },
+    {
+      "speciesId": "carnotaurus-sastrei",
+      "sourceCallId": "exec-ac822dd0-98c8-4de5-b5f3-101525d30159",
+      "sha256": "25a329104b8c66521a7bad44f79cff0a091787145ee31e0a9be7e9f3be313e30",
+      "bytes": 2473751,
+      "width": 1672,
+      "height": 941,
+      "status": "rejected-before-enqueue",
+      "reason": "The paired horns and hind feet improved, but both exposed forehands still ended in one to three long hooked claws rather than four minute blunt reduced digits.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Windows Recycle Bin until emptied",
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b4/carnotaurus-sastrei-low-frontthreequarter-logstep-imagegen-v2.txt",
+        "promptSha256": "6389afd6bda8ec1f76fc4d53d7e8e83a056189fb8a8fef1296978af0255df50f",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v3; rejected composition reference plus approved identity reference; independent visual QA; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and explicitly recorded prior rejected composition references were used only as project-owned inputs; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      }
+    },
+    {
+      "speciesId": "carnotaurus-sastrei",
+      "sourceCallId": "exec-f3a09528-5d2d-41e1-bd93-5fa698a1eea5",
+      "sha256": "f3c4d81998945e42bcc31acc13759f25003885d533116aaaa50e1ce32675cb0b",
+      "bytes": 2478728,
+      "width": 1672,
+      "height": 941,
+      "status": "rejected-before-enqueue",
+      "reason": "The targeted hand repair still left long hooked digits and did not make exactly four short blunt reduced digits independently readable on each forehand.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Windows Recycle Bin until emptied",
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b4/carnotaurus-sastrei-low-frontthreequarter-logstep-handrepair-imagegen-v3.txt",
+        "promptSha256": "6384cd53a42c1bd05501171a5e2f5e79eb17c752c7bdbadb4a465193f9f59379",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen targeted forelimb repair v3; rejected composition reference plus approved identity reference; independent visual QA; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and explicitly recorded prior rejected composition references were used only as project-owned inputs; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      }
+    }
+  ]
+}

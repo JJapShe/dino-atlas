@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "velociraptor-mongoliensis-portrait-head-feather-detail-v1",
+  "disposition": "promoted-awaiting-app-integration",
+  "promotedAt": "2026-08-11T13:31:12.857Z",
+  "sourcePath": "tools/dino-review/pending/velociraptor-mongoliensis-portrait-head-feather-detail-v1/velociraptor-mongoliensis-portrait-head-feather-detail-imagegen-v1.png",
+  "targetPath": "assets/dinosaurs/velociraptor-mongoliensis-portrait-head-feather-detail-imagegen-v1.png",
+  "filename": "velociraptor-mongoliensis-portrait-head-feather-detail-imagegen-v1.png",
+  "sha256": "0b522eac8418e06dd99f3094d8860de430b992c6a9a8bfce16a2493ea4c45b55",
+  "sizeBytes": 2501168,
+  "review": {
+    "status": "pass",
+    "note": "",
+    "updatedAt": "2026-08-11T13:31:11.377Z",
+    "imageSha256": "0b522eac8418e06dd99f3094d8860de430b992c6a9a8bfce16a2493ea4c45b55",
+    "manifestSha256": "45610b5cb89637f412fb7e4c251726aad4c2f9cd7f5eba1623a54c5fe54f4aa5"
+  },
+  "candidate": {
+    "schemaVersion": 1,
+    "candidateId": "velociraptor-mongoliensis-portrait-head-feather-detail-v1",
+    "filename": "velociraptor-mongoliensis-portrait-head-feather-detail-imagegen-v1.png",
+    "speciesId": "velociraptor-mongoliensis",
+    "kind": "anatomy review",
+    "targetFilename": "velociraptor-mongoliensis-portrait-head-feather-detail-imagegen-v1.png",
+    "provenance": {
+      "source": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images were used only as project-owned identity references where stated; no external artwork or named-artist style input",
+      "license": "Generated project asset under applicable OpenAI service terms; original project prompt and project-owned identity references only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+      "prompt": "Use case: scientific-educational\nAsset type: Dino Atlas vertical mobile gallery color-pattern and head-feather detail candidate, anatomy-review only\nInput image: Image 1 is the project-owned approved Velociraptor mongoliensis skull, facial identity, and plumage reference only. Preserve its species identity and feather material, but create a genuinely new close portrait; do not mirror, recolor, or reuse its full-body lateral standing composition.\nPrimary request: A calm living Velociraptor mongoliensis head, neck, and upper shoulder portrait in cool Djadochta dawn light, designed specifically as a non-representative S2 color-and-feather detail rather than a full-body anatomy image.\nComposition/framing: vertical 4:5 portrait, tight front-left three-quarter view. The complete long low skull and closed toothed snout run diagonally from lower-right toward upper-left, with the full snout tip, jawline, eye, back of skull, neck, and upper shoulder all in frame. Intentionally end the crop at the upper shoulder before either forelimb and well before the hips; no hand, foot, leg, tail, or partial limb may enter the frame. Leave soft open dune haze around the head. This is a deliberate head-and-plumage study, not a cropped full-body scene.\nIdentity lock: one head only; long low toothed snout about sixty percent of skull length, narrow non-bird jaw, many small teeth visible only along the closed lip margin, restrained brow, one natural eye on the visible side. No modern bird beak, owl face, round parrot head, giant eagle eye, horn, crest, ear pinna, duplicate jaw, extra eye, or tyrannosaur proportions. Short dense body feathers cover the neck and shoulder; fine facial scales remain around the snout and eye. Preserve a plausible dromaeosaur skull-to-neck transition.\nColor/pattern: cool blue-slate crown and neck, dusty celadon-gray cheek and throat, restrained aubergine shoulder patch, copper-rust around the eye and rear jaw, sparse pale irregular pinspots. The marks must vary in size and spacing with natural asymmetry, no perfect rows, rings, zebra bars, or palette-only copy.\nScene/style: softly blurred pale gravel fan and distant warm dunes at dawn; highly detailed natural-history museum paleoart, realistic living animal, original project-owned visual, no named-artist or franchise style. No other animal, prey, attack, blood, text, watermark, logo, jewelry, harness, modern object, partial limb, footprint pattern, or full-body claim.",
+      "seed": "provider-not-exposed",
+      "workflow": "OpenAI built-in image generation; anatomy-led composition-diversity v2; approved-control identity reference; original-size automated and independent visual intake; manual anatomy approval required"
+    },
+    "anatomyReview": {
+      "status": "review-hold",
+      "representative": false,
+      "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+      "reviewedAt": "2026-08-10T16:17:52.7950300Z",
+      "notes": "S2 head-and-plumage diversity candidate only, not a full-body anatomy claim. Long low toothed snout and feather-scale transition appear readable; eye size, skull proportion, color hypothesis, and intentional crop require manual original-size review. Representative promotion prohibited."
+    }
+  }
+}

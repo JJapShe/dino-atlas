@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 2,
+  "batchId": "gallery-composition-diversity-20260811-b10",
+  "status": "review-hold",
+  "targetAudience": "ages 5-14",
+  "audit": {
+    "json": "tools/comfyui/gallery-composition-similarity-audit-20260811.json",
+    "markdown": "docs/gallery-composition-diversity-audit-2026-08-11.md",
+    "taxa": 161,
+    "approvedImages": 889,
+    "withinTaxonPairs": 2121,
+    "pairsAtOrAbove045": 682,
+    "pairsAtOrAbove055": 131,
+    "pairsAtOrAbove065": 14,
+    "pairsAtOrAbove075": 8
+  },
+  "policy": {
+    "batchSize": 1,
+    "attemptedImageCount": 3,
+    "enqueuedCandidateCount": 1,
+    "retainedCandidateCount": 1,
+    "candidateKinds": [
+      "anatomy review"
+    ],
+    "automaticPromotion": false,
+    "representativePromotion": false,
+    "automaticDeletionFromPending": false,
+    "publicAssetMutation": false,
+    "appDataMutation": false,
+    "candidateMaxSimilarityGate": 0.58,
+    "selectionRule": "Protect Quetzalcoatlus S1 while replacing the repetitive S3 frontal-ventral habitat composition with a deliberately bounded head-neck habitat portrait after two grounded full-body attempts failed anatomy review",
+    "diversityGate": "The S3 replacement must change camera family, direction, subject scale, and framing; palette-only, mirror-only, or another frontal-ventral glide does not count.",
+    "anatomyGate": "Manual original-size anatomy review is required before pass, promotion, public asset copy, or app integration; this intentional portrait crop cannot be used as wing, limb-count, membrane-attachment, full-body-proportion, or locomotion evidence, and S1 remains protected."
+  },
+  "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas image used only as project-owned identity and palette reference; no external artwork or named-artist style input",
+  "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompt and project-owned approved input only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+  "records": [
+    {
+      "speciesId": "quetzalcoatlus-northropi",
+      "candidateId": "quetzalcoatlus-northropi-gravelbar-headneck-habitat-portrait-v1",
+      "targetFilename": "quetzalcoatlus-northropi-gravelbar-headneck-habitat-portrait-imagegen-v1.png",
+      "kind": "anatomy review",
+      "intendedSlot": 3,
+      "intendedRole": "habitat-ecology",
+      "replacesSimilarityPair": {
+        "slots": [1, 3],
+        "structuralSimilarity": 0.546,
+        "matchMode": "direct"
+      },
+      "compositionKey": "portrait-eyelevel-rightfrontthreequarter-headneck-gravelbar-habitat",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.429,
+        "nearestSlot": 5,
+        "nearestRole": "interaction",
+        "matchMode": "direct",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-00a09077-196a-422a-9e3d-22f34225f9f7",
+      "image": {
+        "sha256": "106c9cbd2eee90a67dac3eafbf1b3c26b2da80aa3f1ae21bd01ce6d15237918a",
+        "bytes": 2056069,
+        "width": 1122,
+        "height": 1402,
+        "format": "png"
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 approved Quetzalcoatlus northropi representative identity and canonical palette reference",
+          "path": "assets/dinosaurs/quetzalcoatlus-northropi-ventral-ankle-membrane-representative-imagegen-v3.png",
+          "sha256": "3ce89324184420bed6e5f5035825f5289ea2cbfc5550425297224703e2a97256",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260811-b10.md#quetzalcoatlus-northropi",
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b10/quetzalcoatlus-northropi-gravelbar-headneck-habitat-portrait-imagegen-v1.txt",
+        "promptSha256": "9da4fa8ff5e92ab11d975a6182b1ccb2bafcef914e56ca0f7d646d7ec4ae717e",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v4; approved project-owned identity reference; intentional head-neck crop with explicit claim boundary; original-size independent visual QA; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake plus independent original-size visual QA; manual anatomy approval required",
+        "reviewedAt": "2026-08-11T13:59:11.8905316Z",
+        "notes": "Original-size portrait QA: retain-hold for S3 habitat/ecology composition only. The complete toothless beak, single crestless head, and head-to-neck-to-upper-torso transition are readable, with no stray limb or wing fragments in the intentional crop. Do not use this portrait to validate exact Q. northropi skull morphology, full-body proportions, limb count, wing anatomy, membrane-to-ankle attachment, or locomotion. The riparian gravel-bar habitat is illustrative rather than a precise locality reconstruction. Re-review requested as a non-representative S3 replacement."
+      }
+    }
+  ],
+  "rejectedAttempts": [
+    {
+      "speciesId": "quetzalcoatlus-northropi",
+      "sourceCallId": "exec-fb387e96-58e9-43fd-8caa-00b86c1a17cf",
+      "sha256": "b5f328cec924da24f8229333f72b2636525a62bdc59708b0289235ca988c8bb5",
+      "bytes": 3229812,
+      "width": 1122,
+      "height": 1402,
+      "inputReferences": [
+        {
+          "role": "Image 1 approved Quetzalcoatlus representative identity and canonical palette reference",
+          "path": "assets/dinosaurs/quetzalcoatlus-northropi-ventral-ankle-membrane-representative-imagegen-v3.png",
+          "sha256": "3ce89324184420bed6e5f5035825f5289ea2cbfc5550425297224703e2a97256",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        },
+        {
+          "role": "Image 2 approved bilateral same-side lower-leg and ankle membrane-attachment anatomy reference",
+          "path": "assets/dinosaurs/quetzalcoatlus-northropi-bilateral-ankle-attachment-anatomy-imagegen-v3.png",
+          "sha256": "8e9ad38642c5296473227f1c8cf7fec9271b623e147b4561b36f48de0ffbb311",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b10/quetzalcoatlus-northropi-rear-oblique-quadrupedal-ankle-fold-habitat-imagegen-v1-attempt1.txt",
+        "promptSha256": "410f4e31033e05ff227a7d5681558ef626cc9adb3ee09c6bf2fd32114f46bf72",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v4; approved representative and bilateral ankle-attachment references; rear-oblique grounded quadrupedal attempt; original-size independent visual QA; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas image used only as project-owned identity and palette reference; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompt and project-owned approved input only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "The folded fourth digits and membranes descended as separate triangular sails, the two wrist contacts and two hind feet were not spatially separated, and both same-side membrane-to-ankle paths were untraceable at original size.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Generated-cache PNG moved to the Windows Recycle Bin after exact SHA-256 validation; no staging PNG was retained and the exact prompt record remains"
+    },
+    {
+      "speciesId": "quetzalcoatlus-northropi",
+      "sourceCallId": "exec-4507b1c7-6a28-49a9-b2cf-7e56f2d81104",
+      "sha256": "4e5babc081dabee2fa181852517eb73737cd28fe436937455a0e048d6482dfe8",
+      "bytes": 2322832,
+      "width": 1122,
+      "height": 1402,
+      "inputReferences": [
+        {
+          "role": "Image 1 approved Quetzalcoatlus representative identity and canonical palette reference",
+          "path": "assets/dinosaurs/quetzalcoatlus-northropi-ventral-ankle-membrane-representative-imagegen-v3.png",
+          "sha256": "3ce89324184420bed6e5f5035825f5289ea2cbfc5550425297224703e2a97256",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        },
+        {
+          "role": "Image 2 approved bilateral same-side lower-leg and ankle membrane-attachment anatomy reference",
+          "path": "assets/dinosaurs/quetzalcoatlus-northropi-bilateral-ankle-attachment-anatomy-imagegen-v3.png",
+          "sha256": "8e9ad38642c5296473227f1c8cf7fec9271b623e147b4561b36f48de0ffbb311",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b10/quetzalcoatlus-northropi-rear-oblique-quadrupedal-ankle-fold-habitat-imagegen-v1-attempt2.txt",
+        "promptSha256": "f1b50568be305112ae6332cd5d78f2069443a22b7eaf375f5ad3bb75306eb086",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v4; approved representative and bilateral ankle-attachment references; simplified lateral grounded quadrupedal retry; original-size independent visual QA; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas image used only as project-owned identity and palette reference; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompt and project-owned approved input only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "The second grounded attempt again mixed the folded fourth digits, forelimb wrist supports, membrane folds, and hind legs, so exactly two forelimbs, two hind limbs, and four separate ground contacts could not be verified safely.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Generated-cache PNG moved to the Windows Recycle Bin after exact SHA-256 validation; no staging PNG was retained and the exact prompt record remains"
+    }
+  ]
+}

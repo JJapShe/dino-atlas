@@ -1,10 +1,458 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-10T03:30:00.000Z",
-  "reviewBatch": "2026-08-10-paleozoic-cenozoic-famous-life-v2",
-  "reviewMethod": "Preserved every prior approved decision, then replaced the Anomalocaris trio after renewed soft-body review, the Dunkleosteus trio after renewed single-dorsal review, and Coelodonta S1 after renewed horn cross-section review. Anomalocaris v2 requires a matte flexible unarmored trunk, thin supple translucent-edged flaps and feathery dorsal setal blades; its armored-shrimp v1 trio is rejected. Dunkleosteus v2 requires exactly one dorsal fin and a smooth uninterrupted post-dorsal back to the tail base; its multiple-dorsal v1 trio and first S2 correction are rejected. The Coelodonta v2 gate requires broad lateral horn faces and a narrow side-to-side edge. Review also covered taxon-specific fossil-led cues, full-frame and appendage counts, reconstructed-body boundaries, non-contact ecology, random rather than stamped track patterns, artifact and modern-animal drift, crop, text, logo, and watermark exclusion. Slot 1 alone is count-level representative-eligible for each new taxon; slots 2 and 3 remain gallery-only review material.",
-  "targetSlots": 871,
+  "generatedAt": "2026-08-28",
+  "reviewBatch": "2026-08-28-distinctive-cephalopod-subtypes-v1",
+  "reviewMethod": "Preserved all previous approved decisions and added twelve original-size reviewed slots for Nipponites mirabilis, Diplomoceras maximum, Megateuthis elliptica and Duvalia dilatata. Each S1 is the sole representative-eligible count-level pass; S2 remains review hold and S3 remains ecology or structure anatomy review. Review covered continuous-shell topology, single aperture and head, ten-arm plan, internal-rostrum boundary, corrected phragmocone direction, compressed Duvalia rostrum, full-frame containment, composition diversity, crop, text, logo and watermark exclusion.",
+  "targetSlots": 931,
   "taxa": {
+    "nipponites-mirabilis": {
+      "1": { "status": "approved", "source": "assets/dinosaurs/nipponites-mirabilis-three-dimensional-meandering-shell-representative-imagegen-v1.png", "role": "representative", "reason": "One continuous ribbed tube, multiple open three-dimensional U-bends, one aperture and one head passed original-size review.", "reviewMethod": "Original-size shell-continuity, aperture, head, crop, text and watermark audit", "reviewBatch": "2026-08-28-distinctive-cephalopod-subtypes-v1", "reviewedAt": "2026-08-28", "claimBoundary": "Representative-eligible for shell geometry only; soft anatomy, color and posture are reconstructed." },
+      "2": { "status": "approved", "source": "assets/dinosaurs/nipponites-mirabilis-charcoal-copper-oblique-pattern-imagegen-v1.png", "role": "color-pattern", "subrole": "gallery-only vertical rear-oblique comparison", "reason": "Continuous looped shell and single aperture remain readable in a camera distinct from S1.", "reviewMethod": "Original-size topology, perspective, crop and duplication audit", "reviewBatch": "2026-08-28-distinctive-cephalopod-subtypes-v1", "reviewedAt": "2026-08-28", "claimBoundary": "Gallery comparison only; pigment and soft parts hypothetical, not representative-eligible." },
+      "3": { "status": "approved", "source": "assets/dinosaurs/nipponites-mirabilis-japanese-silty-shelf-ecology-imagegen-v1.png", "role": "habitat-ecology", "subrole": "gallery-only wide Japanese shelf context", "reason": "Focal shell remains complete while distant fauna and scattered shells remain non-contact.", "reviewMethod": "Original-size focal topology, non-contact, crop and ecology audit", "reviewBatch": "2026-08-28-distinctive-cephalopod-subtypes-v1", "reviewedAt": "2026-08-28", "claimBoundary": "Ecology and posture are illustrative; not representative-eligible." }
+    },
+    "diplomoceras-maximum": {
+      "1": { "status": "approved", "source": "assets/dinosaurs/diplomoceras-maximum-giant-paperclip-shell-representative-imagegen-v1.png", "role": "representative", "reason": "One continuous paperclip tube, two separated shafts, one U-bend, one aperture and one head passed original-size review.", "reviewMethod": "Original-size shell-topology, U-bend, shaft-end, aperture, crop, text and watermark audit", "reviewBatch": "2026-08-28-distinctive-cephalopod-subtypes-v1", "reviewedAt": "2026-08-28", "claimBoundary": "Representative-eligible for shell shape; soft anatomy, color and life orientation are reconstructed." },
+      "2": { "status": "approved", "source": "assets/dinosaurs/diplomoceras-maximum-graphite-bronze-diagonal-pattern-imagegen-v1.png", "role": "color-pattern", "subrole": "gallery-only diagonal portrait comparison", "reason": "The U-bend, separated shafts and single head remain readable in a distinct perspective.", "reviewMethod": "Original-size shell, perspective, crop and duplication audit", "reviewBatch": "2026-08-28-distinctive-cephalopod-subtypes-v1", "reviewedAt": "2026-08-28", "claimBoundary": "Gallery comparison only; color and orientation hypothetical, not representative-eligible." },
+      "3": { "status": "approved", "source": "assets/dinosaurs/diplomoceras-maximum-antarctic-shelf-drift-ecology-imagegen-v1.png", "role": "habitat-ecology", "subrole": "gallery-only Antarctic shelf drift context", "reason": "Complete vertically oriented shell and one head remain readable with distant non-contact fish.", "reviewMethod": "Original-size shell, non-contact, crop and ecology audit", "reviewBatch": "2026-08-28-distinctive-cephalopod-subtypes-v1", "reviewedAt": "2026-08-28", "claimBoundary": "Orientation and ecology illustrative; not representative-eligible." }
+    },
+    "megateuthis-elliptica": {
+      "1": { "status": "approved", "source": "assets/dinosaurs/megateuthis-elliptica-giant-ten-arm-representative-imagegen-v1.png", "role": "representative", "reason": "One complete giant elongated body, ten similar hook-bearing arms and no external rostrum passed original-size review.", "reviewMethod": "Original-size arm, body, internal-rostrum, crop, text and watermark audit", "reviewBatch": "2026-08-28-distinctive-cephalopod-subtypes-v1", "reviewedAt": "2026-08-28", "claimBoundary": "Representative-eligible for conservative gross identity; full-body proportions and fins remain comparative." },
+      "2": { "status": "approved", "source": "assets/dinosaurs/megateuthis-elliptica-aubergine-ochre-ascending-pattern-imagegen-v1.png", "role": "color-pattern", "subrole": "gallery-only ascending portrait comparison", "reason": "The elongated body and similar hooked arms remain readable in a camera distinct from S1.", "reviewMethod": "Original-size arm, perspective, crop and duplication audit", "reviewBatch": "2026-08-28-distinctive-cephalopod-subtypes-v1", "reviewedAt": "2026-08-28", "claimBoundary": "Gallery comparison only; pigment and fins hypothetical, not representative-eligible." },
+      "3": { "status": "approved", "source": "assets/dinosaurs/megateuthis-elliptica-corrected-internal-shell-reference-imagegen-v1.png", "role": "identity-anatomy", "subrole": "gallery-only corrected internal-shell reference", "reason": "The corrected chambered cone is broad toward the head and narrows rearward into the long posterior rostrum, all within the mantle.", "reviewMethod": "Original-size internal-shell direction, placement, crop and text audit", "reviewBatch": "2026-08-28-distinctive-cephalopod-subtypes-v1", "reviewedAt": "2026-08-28", "claimBoundary": "Structural order is evidence-led; exact scale and soft anatomy illustrative, not representative-eligible." }
+    },
+    "duvalia-dilatata": {
+      "1": { "status": "approved", "source": "assets/dinosaurs/duvalia-dilatata-deep-compressed-body-representative-imagegen-v1.png", "role": "representative", "reason": "One complete conservative body, ten similar hooked arms and no exposed guard passed original-size review.", "reviewMethod": "Original-size arm, body, internal-rostrum, crop, text and watermark audit", "reviewBatch": "2026-08-28-distinctive-cephalopod-subtypes-v1", "reviewedAt": "2026-08-28", "claimBoundary": "Representative-eligible for conservative belemnite identity; whole-body proportions and fins remain comparative." },
+      "2": { "status": "approved", "source": "assets/dinosaurs/duvalia-dilatata-burgundy-bluegray-lateral-pattern-imagegen-v1.png", "role": "color-pattern", "subrole": "gallery-only landscape side-front comparison", "reason": "One complete body and ten-arm plan remain readable in a distinct wide composition.", "reviewMethod": "Original-size arm, body, perspective, crop and duplication audit", "reviewBatch": "2026-08-28-distinctive-cephalopod-subtypes-v1", "reviewedAt": "2026-08-28", "claimBoundary": "Gallery comparison only; pigment and fins hypothetical, not representative-eligible." },
+      "3": { "status": "approved", "source": "assets/dinosaurs/duvalia-dilatata-laterally-compressed-rostrum-reference-imagegen-v1.png", "role": "identity-anatomy", "subrole": "gallery-only single-rostrum structure reference", "reason": "One strongly laterally compressed rostrum with a single apex, anterior cavity and dorsal groove passed original-size review.", "reviewMethod": "Original-size single-object, compression, groove, cavity, crop and text audit", "reviewBatch": "2026-08-28-distinctive-cephalopod-subtypes-v1", "reviewedAt": "2026-08-28", "claimBoundary": "Diagnostic geometry is diagnosis-led; exact mineral surface illustrative, not representative-eligible." }
+    },
+    "meganeuropsis-permiana": {
+      "1": { "status": "approved", "source": "assets/dinosaurs/meganeuropsis-permiana-fourwing-sixleg-profile-representative-imagegen-v1.png", "role": "representative", "reason": "Four wings, six thoracic legs and the complete segmented body passed original-size review.", "reviewMethod": "Original-size wing-count, leg-count, connection, crop, text and watermark audit", "reviewBatch": "2026-08-26-paleozoic-cenozoic-insect-expansion-v1", "reviewedAt": "2026-08-26", "claimBoundary": "Representative-eligible for gross identity; exact venation, color and body proportions remain reconstructed." },
+      "2": { "status": "approved", "source": "assets/dinosaurs/meganeuropsis-permiana-high-oblique-fourwing-pattern-imagegen-v1.png", "role": "color-pattern", "subrole": "gallery-only vertical high-oblique comparison", "reason": "Four wings and six legs remain readable in a composition distinct from S1.", "reviewMethod": "Original-size appendage-count, perspective and duplication audit", "reviewBatch": "2026-08-26-paleozoic-cenozoic-insect-expansion-v1", "reviewedAt": "2026-08-26", "claimBoundary": "Gallery comparison only; not representative-eligible." },
+      "3": { "status": "approved", "source": "assets/dinosaurs/meganeuropsis-permiana-permian-wetland-ecology-imagegen-v1.png", "role": "habitat-ecology", "subrole": "gallery-only early Permian wetland context", "reason": "Focal animal remains readable and distant insects do not overlap.", "reviewMethod": "Original-size focal-anatomy, non-contact and environment audit", "reviewBatch": "2026-08-26-paleozoic-cenozoic-insect-expansion-v1", "reviewedAt": "2026-08-26", "claimBoundary": "Ecology is illustrative and not representative-eligible." }
+    },
+    "helicoprion-davisii": {
+      "1": { "status": "approved", "source": "assets/dinosaurs/helicoprion-davisii-single-midline-rising-c-whorl-representative-imagegen-v7.png", "role": "representative", "reason": "Only one crown-thick sagittal tooth-root ridge rises inside the black oral cavity and curves into an open C/comma; black space remains on both sides without paired lower-jaw plates or a U-shaped lip bridge.", "reviewMethod": "Original-size single-midline-ridge, bilateral black-space, partial-C, no-paired-jaw, toothless palate and lips, concealed old turn, one-dorsal, full-body, tail, crop, text and watermark audit", "reviewBatch": "2026-08-27-helicoprion-single-midline-ridge-correction-v7", "reviewedAt": "2026-08-27", "claimBoundary": "Representative-eligible for the single symphyseal whorl direction; exact oral rim and soft tissue, cartilage contour, complete postcranial form, skin and size remain comparative." },
+      "2": { "status": "approved", "source": "assets/dinosaurs/helicoprion-davisii-single-midline-rising-c-whorl-ochre-upward-pattern-imagegen-v7.png", "role": "color-pattern", "subrole": "gallery-only portrait upward single-ridge color comparison", "reason": "The portrait preserves one narrow curved center ridge with black oral space on both sides in a distinct upward pose and palette.", "reviewMethod": "Original-size single-midline-ridge, bilateral black-space, partial-C, no-paired-jaw, one-dorsal, full-body, perspective, crop and duplication audit", "reviewBatch": "2026-08-27-helicoprion-single-midline-ridge-correction-v7", "reviewedAt": "2026-08-27", "claimBoundary": "Gallery comparison only; exact oral rim and soft tissue, buried geometry, body proportions and color are inferred; not representative-eligible." },
+      "3": { "status": "approved", "source": "assets/dinosaurs/helicoprion-davisii-single-midline-rising-c-whorl-cephalopod-ecology-imagegen-v7.png", "role": "habitat-ecology", "subrole": "gallery-only non-contact cephalopod context with readable single center ridge", "reason": "The complete fish retains one slim curved median tooth-bearing ridge surrounded by black oral space while distant cephalopods remain separated and non-contact; the extra rear dorsal nub was removed in final cleanup.", "reviewMethod": "Original-size single-midline-ridge, bilateral black-space, partial-C, no-paired-jaw, one-dorsal, full-body, non-contact, ecology, crop and uncertainty audit", "reviewBatch": "2026-08-27-helicoprion-single-midline-ridge-correction-v7", "reviewedAt": "2026-08-27", "claimBoundary": "Prey identity, behavior, exact oral rim and soft tissue, buried coil and postcranial proportions are illustrative; not representative-eligible." }
+    },
+    "titanomyrma-lubei": {
+      "1": { "status": "approved", "source": "assets/dinosaurs/titanomyrma-lubei-winged-queen-profile-representative-imagegen-v1.png", "role": "representative", "reason": "Six legs, antennae, petiole and winged queen body passed original-size review.", "reviewMethod": "Original-size leg-count, body-plan, scale, crop, text and watermark audit", "reviewBatch": "2026-08-26-paleozoic-cenozoic-insect-expansion-v1", "reviewedAt": "2026-08-26", "claimBoundary": "Representative-eligible; overlapping wings are clarified by S2." },
+      "2": { "status": "approved", "source": "assets/dinosaurs/titanomyrma-lubei-dorsal-fourwing-pattern-imagegen-v1.png", "role": "color-pattern", "subrole": "gallery-only vertical dorsal comparison", "reason": "All four wings and six legs are independently readable.", "reviewMethod": "Original-size wing-count, leg-count, petiole and composition audit", "reviewBatch": "2026-08-26-paleozoic-cenozoic-insect-expansion-v1", "reviewedAt": "2026-08-26", "claimBoundary": "Gallery comparison only; color and venation remain hypothetical." },
+      "3": { "status": "approved", "source": "assets/dinosaurs/titanomyrma-lubei-greenriver-leaf-ecology-imagegen-v1.png", "role": "habitat-ecology", "subrole": "gallery-only believable-scale leaf-litter context", "reason": "Focal queen remains complete at insect scale with a distant non-contact beetle.", "reviewMethod": "Original-size focal-anatomy, scale, non-contact and environment audit", "reviewBatch": "2026-08-26-paleozoic-cenozoic-insect-expansion-v1", "reviewedAt": "2026-08-26", "claimBoundary": "Ecology is illustrative and not representative-eligible." }
+    },
+    "gastornis-gigantea": {
+      "1": { "status": "approved", "source": "assets/dinosaurs/gastornis-gigantea-straightbeak-profile-representative-imagegen-v1.png", "role": "representative", "reason": "Deep straight toothless beak, small wings, two heavy legs and complete feet passed review.", "reviewMethod": "Original-size beak, limb, foot, crop, text and watermark audit", "reviewBatch": "2026-08-26-paleozoic-cenozoic-insect-expansion-v1", "reviewedAt": "2026-08-26", "claimBoundary": "Representative-eligible; plumage and exact soft tissue remain reconstructed." },
+      "2": { "status": "approved", "source": "assets/dinosaurs/gastornis-gigantea-frontal-slate-pattern-imagegen-v1.png", "role": "color-pattern", "subrole": "gallery-only vertical front-three-quarter comparison", "reason": "Straight beak and both heavy legs remain readable in a distinct composition.", "reviewMethod": "Original-size beak, leg, foot, perspective and duplication audit", "reviewBatch": "2026-08-26-paleozoic-cenozoic-insect-expansion-v1", "reviewedAt": "2026-08-26", "claimBoundary": "Gallery comparison only; not representative-eligible." },
+      "3": { "status": "approved", "source": "assets/dinosaurs/gastornis-gigantea-woodland-browse-ecology-imagegen-v1.png", "role": "habitat-ecology", "subrole": "gallery-only plant-browsing context", "reason": "Plant browsing, complete feet and distant non-contact mammals remain readable.", "reviewMethod": "Original-size focal-anatomy, herbivory, non-contact and environment audit", "reviewBatch": "2026-08-26-paleozoic-cenozoic-insect-expansion-v1", "reviewedAt": "2026-08-26", "claimBoundary": "Exact plants and companions are illustrative; not representative-eligible." }
+    },
+    "opabinia-regalis": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/opabinia-regalis-clustered-fiveeye-bristled-proboscis-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed original-size count-level review for exactly five non-linearly clustered head eyes, one annulated proboscis with opposed bristled/spined tips, a complete soft body, lateral lobes and tail fan.",
+        "reviewMethod": "Original-size five-eye cluster, proboscis-tip spine/bristle, soft-body, lobe, gill, tail, crop, text and watermark audit",
+        "reviewBatch": "2026-08-24-paleozoic-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-24",
+        "claimBoundary": "Representative-eligible for gross identity cues; color, soft-tissue thickness and exact gill placement remain reconstructed."
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/opabinia-regalis-dorsal-clustered-fiveeye-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "subrole": "gallery-only vertical dorsal-oblique comparison",
+        "reason": "Accepted after five clustered eyes and the spined/bristled opposed proboscis tip remained readable in a composition distinct from S1.",
+        "reviewMethod": "Original-size eye-count, eye-layout, proboscis-tip, full-frame, perspective, color and duplication audit",
+        "reviewBatch": "2026-08-24-paleozoic-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-24",
+        "claimBoundary": "Gallery comparison only; not representative-eligible without a separate anatomy audit."
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/opabinia-regalis-sponge-shelf-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "subrole": "gallery-only non-contact sponge-shelf context",
+        "reason": "Accepted after the focal animal retained five clustered eyes, bristled opposed proboscis tips and a complete silhouette while background organisms stayed distant.",
+        "reviewMethod": "Original-size focal identity, body continuity, non-contact ecology, crop, artifact, text and watermark audit",
+        "reviewBatch": "2026-08-24-paleozoic-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-24",
+        "claimBoundary": "Ecology context only; exact community, depth and behavior are hypothetical and the slot is not representative-eligible."
+      }
+    },
+    "tiktaalik-roseae": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/tiktaalik-roseae-flathead-lobedfin-profile-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed original-size review for one complete scaled fish with a flat skull, high-set eyes, neck and paired lobe fins ending in fin rays without digits.",
+        "reviewMethod": "Original-size head, neck, paired-fin, no-digit, tail, crop, text and watermark audit",
+        "reviewBatch": "2026-08-24-paleozoic-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-24",
+        "claimBoundary": "Representative-eligible for gross Tiktaalik identity; fin outlines, color and soft tissues remain reconstructed."
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/tiktaalik-roseae-high-oblique-lobedfin-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "subrole": "gallery-only vertical high-oblique comparison",
+        "reason": "Accepted as a camera- and format-distinct comparison with high-set eyes, paired fins and no digits remaining readable.",
+        "reviewMethod": "Original-size paired-fin, no-digit, perspective, color, full-frame and duplication audit",
+        "reviewBatch": "2026-08-24-paleozoic-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-24",
+        "claimBoundary": "Gallery comparison only; distal fin overlap and color remain hypothetical and the slot is not representative-eligible."
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/tiktaalik-roseae-shallow-channel-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "subrole": "gallery-only shallow-channel context",
+        "reason": "Accepted because the animal remains supported in shallow water with no terrestrial walking claim and distant fish stay non-contact.",
+        "reviewMethod": "Original-size focal head/fin, water-contact, non-contact ecology, crop, artifact, text and watermark audit",
+        "reviewBatch": "2026-08-24-paleozoic-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-24",
+        "claimBoundary": "Ecology context only; bank vegetation and behavior are hypothetical and the slot is not representative-eligible."
+      }
+    },
+    "jaekelopterus-rhenaniae": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/jaekelopterus-rhenaniae-chelicera-paddle-profile-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed original-size review for one complete pterygotid with a single cheliceral-claw pair, slender walking appendages, swimming paddles and a broad triangular telson.",
+        "reviewMethod": "Original-size claw-pair, appendage, paddle, body-continuity, telson, crop, text and watermark audit",
+        "reviewBatch": "2026-08-24-paleozoic-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-24",
+        "claimBoundary": "Representative-eligible for gross pterygotid identity; exact proportions, color and the 2.5 m maximum remain reconstructed or extrapolated."
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/jaekelopterus-rhenaniae-dorsal-eightleg-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "subrole": "gallery-only vertical dorsal appendage comparison",
+        "reason": "Accepted after correction produced four bilateral walking-leg pairs, kept separate from one swimming-paddle pair, with a composition distinct from S1.",
+        "reviewMethod": "Original-size eight-walking-leg, paddle-pair, claw-pair, telson, perspective, color and duplication audit",
+        "reviewBatch": "2026-08-24-paleozoic-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-24",
+        "claimBoundary": "Gallery comparison only; joint proportions and color remain hypothetical and the slot is not representative-eligible."
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/jaekelopterus-rhenaniae-river-channel-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "subrole": "gallery-only non-contact river-channel context",
+        "reason": "Accepted for broad channel context after the focal animal stayed complete and distant armored-fish silhouettes remained spatially separated without attack.",
+        "reviewMethod": "Original-size focal body, claw, paddle, telson, non-contact ecology, crop, text and watermark audit",
+        "reviewBatch": "2026-08-24-paleozoic-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-24",
+        "claimBoundary": "Ecology context only; fish identity, submerged wood, water and behavior are hypothetical and the slot is not representative-eligible."
+      }
+    },
+    "megaloceros-giganteus": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/megaloceros-giganteus-palmated-antler-sideprofile-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed original-size identity review for one complete male giant deer with a full palmated antler pair, one body, four legs and four cloven hooves.",
+        "reviewMethod": "Original-size antler-pair, head-body, four-limb, four-hoof, crop, artifact, text and watermark audit",
+        "reviewBatch": "2026-08-24-cenozoic-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-24",
+        "claimBoundary": "Representative-eligible for gross giant-deer and palmated-antler anatomy; coat, exact antler surface and pose remain reconstructed."
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/megaloceros-giganteus-winter-gray-frontthreequarter-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "subrole": "gallery-only vertical winter-coat and perspective comparison",
+        "reason": "Accepted as a composition-distinct vertical front-three-quarter variant with both antlers and four limbs readable; strong perspective and coat color remain review-only.",
+        "reviewMethod": "Original-size antler, four-limb, full-frame, perspective, color, crop, artifact and duplication audit",
+        "reviewBatch": "2026-08-24-cenozoic-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-24",
+        "claimBoundary": "Gallery comparison only; not representative-eligible without a separate anatomy audit."
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/megaloceros-giganteus-separated-female-herd-parkland-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "subrole": "gallery-only separated herd context",
+        "reason": "Accepted for broad parkland ecology after the focal male remained readable and the distant antlerless females stayed spatially separated without contact.",
+        "reviewMethod": "Original-size focal antler and limb review plus distant-animal separation, behavior-boundary, crop and artifact audit",
+        "reviewBatch": "2026-08-24-cenozoic-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-24",
+        "claimBoundary": "Broad habitat and possible group context only; exact social structure and movement are illustrative."
+      }
+    },
+    "macrauchenia-patachonica": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/macrauchenia-patachonica-threetoe-shortnasalpad-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed original-size identity review for one complete Macrauchenia with a long neck, short conservative nasal pad, four limbs, four feet with three main toes and one tail.",
+        "reviewMethod": "Original-size head, nasal-soft-tissue boundary, neck, four-limb, three-toe, tail, crop, artifact, text and watermark audit",
+        "reviewBatch": "2026-08-24-cenozoic-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-24",
+        "claimBoundary": "Representative-eligible for gross litoptern body and three-toed feet; nasal soft tissue, coat and stance remain reconstructed."
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/macrauchenia-patachonica-highrear-fourfoot-threetoe-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "subrole": "gallery-only high rear-three-quarter color and foot review",
+        "reason": "Accepted after a failed first attempt was replaced; the retained high rear-three-quarter variant keeps all four feet and three-toed groups independently readable.",
+        "reviewMethod": "Original-size four-limb, four-foot, three-toe, nasal-soft-tissue, perspective, color, crop and artifact audit",
+        "reviewBatch": "2026-08-24-cenozoic-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-24",
+        "claimBoundary": "Gallery comparison only; perspective and soft tissue are not representative evidence."
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/macrauchenia-patachonica-megatherium-steppe-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "subrole": "gallery-only non-contact South American steppe context",
+        "reason": "Accepted for anatomy-review ecology context: the focal Macrauchenia remains complete while the distant ground sloth is separated and simplified.",
+        "reviewMethod": "Original-size focal four-limb and foot review plus partner separation, non-contact, habitat, behavior-boundary and artifact audit",
+        "reviewBatch": "2026-08-24-cenozoic-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-24",
+        "claimBoundary": "Broad ecology only; the distant ground sloth is not count-level evidence and browsing is illustrative."
+      }
+    },
+    "varanus-priscus": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/varanus-priscus-heavy-monitor-sideprofile-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed original-size identity review for one complete giant monitor with one low head, one heavy body, four connected limbs and feet, and one continuous long tail.",
+        "reviewMethod": "Original-size head-body, four-limb, four-foot, tail-continuity, crop, artifact, modern-animal drift, text and watermark audit",
+        "reviewBatch": "2026-08-24-cenozoic-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-24",
+        "claimBoundary": "Representative-eligible for gross giant-monitor anatomy; exact maximum size, skin and stance remain reconstructed."
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/varanus-priscus-slate-ochre-highthreequarter-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "subrole": "gallery-only vertical high front-three-quarter color comparison",
+        "reason": "Accepted as a composition-distinct vertical high view with four limbs and one long tail readable; strong foreshortening and color remain review-only.",
+        "reviewMethod": "Original-size four-limb, foot, digit, tail, perspective, color, crop, artifact and duplication audit",
+        "reviewBatch": "2026-08-24-cenozoic-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-24",
+        "claimBoundary": "Gallery comparison only; not representative-eligible without a separate anatomy audit."
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/varanus-priscus-diprotodon-drycreek-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "subrole": "gallery-only non-contact Australian dry-creek context",
+        "reason": "Accepted for anatomy-review ecology context with a complete focal monitor and a distant separated Diprotodon-like herbivore; no attack or pursuit is shown.",
+        "reviewMethod": "Original-size focal four-limb and tail review plus distant-animal separation, non-contact, behavior-boundary, crop and artifact audit",
+        "reviewBatch": "2026-08-24-cenozoic-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-24",
+        "claimBoundary": "Broad habitat context only; the distant herbivore is not count-level evidence and no prey relationship is asserted."
+      }
+    },
+    "arthropleura-armata": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/arthropleura-armata-diplosegment-stalkedeye-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed original-size count and identity review for one complete low, broad Arthropleura with two antennae, two stalked eyes, repeated flattened tergites, dense paired leg rows, one connected head and one terminal end. Adult head detail remains a genus-level inference from smaller material.",
+        "reviewMethod": "Original-size full-frame antenna, stalked-eye, tergite, paired-leg-row, head-body, terminal-end, crop, artifact, modern-millipede drift, text and watermark audit",
+        "reviewBatch": "2026-08-11-documentary-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-11T08:28:08.000Z",
+        "claimBoundary": "Representative-eligible only for gross flattened body, repeated tergites and paired leg rows; adult A. armata head proportions, color and diet remain uncertain."
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/arthropleura-armata-highthreequarter-copper-moss-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "subrole": "gallery-only elevated color and composition review",
+        "reason": "Approved as a high-front-three-quarter color and composition comparison after original-size review confirmed one connected animal, two antennae, two stalked eyes, repeated tergites and continuous paired leg rows. Perspective, distal legs and all colors remain reconstructed.",
+        "reviewMethod": "Original-size body-continuity, head, antenna, eye, leg-row, perspective, color, crop, artifact, duplication and same-composition audit",
+        "reviewBatch": "2026-08-11-documentary-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-11T08:28:08.000Z",
+        "claimBoundary": "Gallery comparison only; distal leg detail, adult head proportion and color are not count-level or representative evidence."
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/arthropleura-armata-meganeura-floodplain-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "subrole": "gallery-only broad non-contact Carboniferous wetland context",
+        "reason": "Approved for anatomy-review ecology context: the focal Arthropleura retains gross head, tergite and paired-leg-row continuity, while one distant griffinfly remains separated. Exact co-occurrence, spacing, plants and behavior are illustrative.",
+        "reviewMethod": "Original-size focal-animal continuity and leg-row review plus distant-animal separation, non-contact, habitat, behavior-boundary, crop, artifact, text and watermark audit",
+        "reviewBatch": "2026-08-11-documentary-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-11T08:28:08.000Z",
+        "claimBoundary": "Broad habitat context only; the distant insect is not count-level evidence and no direct interaction or track-maker identity is asserted."
+      }
+    },
+    "meganeura-monyi": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/meganeura-monyi-fourwing-sixleg-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed original-size count and identity review for one complete Meganeura with exactly four separately thorax-attached wings, exactly six thoracic legs, two compound eyes, one thorax and one connected elongate abdomen.",
+        "reviewMethod": "Original-size four-wing, six-leg, thoracic-attachment, eye, thorax, abdomen, full-frame, modern-dragonfly drift, crop, artifact, text and watermark audit",
+        "reviewBatch": "2026-08-11-documentary-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-11T08:28:08.000Z",
+        "claimBoundary": "Representative-eligible for gross four-wing, six-leg griffinfly anatomy; exact soft anatomy, span, color and flight posture remain reconstructed."
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/meganeura-monyi-petrol-copper-samebody-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "subrole": "same-body full-body color-pattern variant",
+        "reason": "Approved as the same-body S2 variant after original-size review confirmed one complete animal, exactly four separately thorax-attached wings and exactly six thoracic legs; the approved S1 geometry is intentionally retained while only the hypothetical palette and irregular markings change.",
+        "reviewMethod": "Original-size full-frame, four-wing, six-leg, thoracic-attachment, abdomen-continuity, same-body palette-edit, crop, artifact, text and watermark audit",
+        "reviewBatch": "2026-08-11-documentary-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-11T08:45:03.434Z",
+        "claimBoundary": "Usable only as a hypothetical same-body color and pattern comparison; identical geometry is deliberate and must not be counted as composition diversity or promoted over S1."
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/meganeura-monyi-arthropleura-wetland-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "subrole": "gallery-only broad non-contact Carboniferous wetland context",
+        "reason": "Approved for anatomy-review ecology context after the focal Meganeura passed four-wing, six-leg and body-continuity review; the distant Arthropleura remains separated and simplified. Exact spacing, flight and co-occurrence are illustrative.",
+        "reviewMethod": "Original-size focal four-wing and six-leg count, attachment, body continuity, distant-animal separation, habitat, non-contact, crop, artifact, text and watermark audit",
+        "reviewBatch": "2026-08-11-documentary-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-11T08:28:08.000Z",
+        "claimBoundary": "The focal insect supports gross anatomy review only; the distant Arthropleura and all behavior are not count-level or direct-interaction evidence."
+      }
+    },
+    "inostrancevia-alexandri": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/inostrancevia-alexandri-lowskull-saberpair-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed original-size count and identity review for one complete Inostrancevia with four connected limbs and feet, a relatively long gorgonopsian skull, exactly one enlarged upper saber pair, one trunk and one continuous tail.",
+        "reviewMethod": "Original-size full-frame skull, upper-saber-pair, four-limb, four-foot, toe-group, trunk, tail, mammal-feature drift, crop, artifact, text and watermark audit",
+        "reviewBatch": "2026-08-11-documentary-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-11T08:28:08.000Z",
+        "claimBoundary": "Representative-eligible for gross skull, single upper saber-pair and four-limb plan; exact soft tissue, stance, feet, tail volume and color remain reconstructed."
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/inostrancevia-alexandri-charcoal-sienna-samebody-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "subrole": "same-body full-body color-pattern variant",
+        "reason": "Approved as the same-body S2 variant after original-size review confirmed one complete animal, one upper saber pair, four connected limbs and feet, five readable toes per foot and one continuous tail; the approved S1 geometry is intentionally retained while only the hypothetical palette and irregular markings change.",
+        "reviewMethod": "Original-size full-frame, long-skull, upper-saber-pair, four-limb, four-foot, five-toe-per-foot, tail-continuity, same-body palette-edit, crop, artifact, text and watermark audit",
+        "reviewBatch": "2026-08-11-documentary-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-11T08:45:03.434Z",
+        "claimBoundary": "Usable only as a hypothetical same-body color and pattern comparison; identical geometry is deliberate and must not be counted as composition diversity or promoted over S1."
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/inostrancevia-alexandri-seasonal-channel-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "subrole": "gallery-only Late Permian seasonal-channel context",
+        "reason": "Approved for anatomy-review habitat context after four limbs, four connected feet, one tail and one upper saber pair remained readable. The exact gait, plant community, substrate and weather are illustrative.",
+        "reviewMethod": "Original-size four-limb, four-foot, skull, saber-pair, tail, habitat, behavior-boundary, crop, artifact, text and watermark audit",
+        "reviewBatch": "2026-08-11-documentary-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-11T08:28:08.000Z",
+        "claimBoundary": "Gallery anatomy and habitat review only; exact toe pose, locomotion, soft tissue, plants and event are reconstructed and not representative evidence."
+      }
+    },
+    "titanoboa-cerrejonensis": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/titanoboa-cerrejonensis-continuous-boid-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed original-size count and identity review for one complete gigantic boid with one head, one tail, zero limbs and a single thick body that remains continuous without branching or self-fusion. A fallen palm-like trunk provides restrained size context.",
+        "reviewMethod": "Original-size head, tail, zero-limb, continuous-body, self-fusion, crop, scale-context, modern-anaconda drift, artifact, text and watermark audit",
+        "reviewBatch": "2026-08-11-documentary-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-11T08:28:08.000Z",
+        "claimBoundary": "Representative-eligible for gross gigantic limbless boid form; exact length, head, thickness, scales, color and pattern remain comparative reconstruction."
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/titanoboa-cerrejonensis-highoblique-channel-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "subrole": "gallery-only high-oblique channel color review",
+        "reason": "Approved for gallery comparison after one head, one tail, zero limbs and continuous non-branching body curves remained readable. Coil perspective and every color or pattern are hypothetical.",
+        "reviewMethod": "Original-size head, tail, zero-limb, continuous-body, coil-separation, color, crop, artifact, text and watermark audit",
+        "reviewBatch": "2026-08-11-documentary-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-11T08:28:08.000Z",
+        "claimBoundary": "Gallery color and composition review only; coil path, head, body thickness and scales are reconstructed and not representative evidence."
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/titanoboa-cerrejonensis-distant-turtle-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "subrole": "gallery-only Cerrejón channel context with one distant unidentified turtle",
+        "reason": "Approved after a narrow correction left one complete continuous snake and exactly one distant separated turtle. The turtle is non-diagnostic environmental context; no prey choice, attack or direct interaction is asserted.",
+        "reviewMethod": "Original-size snake continuity, head, tail, zero-limb, exactly-one-distant-animal, separation, non-contact, habitat, crop, artifact, text and watermark audit",
+        "reviewBatch": "2026-08-11-documentary-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-11T08:28:08.000Z",
+        "claimBoundary": "Broad Paleocene wetland context only; distant turtle identity and all behavior are illustrative, and the scene is never representative-eligible."
+      }
+    },
+    "basilosaurus-isis": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/basilosaurus-isis-longbody-tinyhindlimb-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed original-size count and identity review for one complete elongate archaeocete with exactly two foreflippers, exactly two tiny external hind limbs and one small horizontal tail fluke. The uniform-looking teeth are excluded from detailed heterodont evidence.",
+        "reviewMethod": "Original-size full-body, head, two-foreflipper, two-hindlimb, horizontal-fluke, dorsal-fin absence, crop, artifact, text and watermark audit",
+        "reviewBatch": "2026-08-11-documentary-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-11T08:28:08.000Z",
+        "claimBoundary": "Representative-eligible for gross elongate archaeocete body and limb counts; exact fluke, soft tissues and color are reconstructed, and tooth detail is not heterodont evidence."
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/basilosaurus-isis-ventral-ascent-petrol-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "subrole": "gallery-only ventral-ascent color and composition review",
+        "reason": "Approved for gallery comparison after exactly two foreflippers, two tiny hind limbs and one connected horizontal fluke remained readable in a strong ventral-oblique ascent view. Perspective and all color are reconstructed.",
+        "reviewMethod": "Original-size appendage count, attachment, horizontal-fluke, full-body, perspective, color, crop, artifact, text and watermark audit",
+        "reviewBatch": "2026-08-11-documentary-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-11T08:28:08.000Z",
+        "claimBoundary": "Gallery color and composition review only; exact limb proportions, fluke shape, soft tissue and color are not representative evidence."
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/basilosaurus-isis-fishschool-tethys-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "subrole": "gallery-only Late Eocene fish-school non-contact context",
+        "reason": "Approved after a corrective edit produced exactly two foreflippers, two tiny separated hind limbs, one small horizontal fluke and a complete body. The distant fish school remains separated and no attack or prey selection is asserted.",
+        "reviewMethod": "Original-size two-foreflipper, two-hindlimb, horizontal-fluke, full-body, fish separation, non-contact, habitat, crop, artifact, text and watermark audit",
+        "reviewBatch": "2026-08-11-documentary-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-11T08:28:08.000Z",
+        "claimBoundary": "Broad Late Eocene marine context only; exact fish, encounter and feeding behavior are illustrative and the scene is never representative-eligible."
+      }
+    },
+    "paraceratherium-transouralicum": {
+      "1": {
+        "status": "approved",
+        "source": "assets/dinosaurs/paraceratherium-transouralicum-hornless-longneck-representative-imagegen-v1.png",
+        "role": "representative",
+        "reason": "Passed original-size count and identity review for one hornless Paraceratherium with a small elongate head, long neck, elevated shoulder, four connected limbs and feet with three-toed ends, and one complete tail.",
+        "reviewMethod": "Original-size horn-absence, head, neck, shoulder, four-limb, four-foot, toe-end, tail, crop, modern-rhino and sauropod drift, artifact, text and watermark audit",
+        "reviewBatch": "2026-08-11-documentary-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-11T08:28:08.000Z",
+        "claimBoundary": "Representative-eligible for gross hornless long-necked rhinocerotoid body and four-limb plan; exact mass, proportions, feet, soft tissue and color remain reconstructed."
+      },
+      "2": {
+        "status": "approved",
+        "source": "assets/dinosaurs/paraceratherium-transouralicum-frontthreequarter-fourfoot-pattern-imagegen-v1.png",
+        "role": "color-pattern",
+        "subrole": "gallery-only front-three-quarter color and composition review",
+        "reason": "Approved for gallery comparison after all four limbs and feet with three-toed ends were found; the far forelimb is partly occluded and is less immediately readable than S1. Horn absence, long neck and complete tail are retained.",
+        "reviewMethod": "Original-size horn-absence, four-limb, four-foot, toe-end, occlusion, neck, tail, color, crop, artifact, text and watermark audit",
+        "reviewBatch": "2026-08-11-documentary-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-11T08:28:08.000Z",
+        "claimBoundary": "Gallery comparison only; the far forelimb is partially occluded and exact toe, soft-tissue and color details are not representative evidence."
+      },
+      "3": {
+        "status": "approved",
+        "source": "assets/dinosaurs/paraceratherium-transouralicum-high-browse-ecology-imagegen-v1.png",
+        "role": "habitat-ecology",
+        "subrole": "gallery-only Oligocene high-browse context",
+        "reason": "Approved for anatomy-review ecology context after four connected limbs and feet with three-toed ends, a hornless head, long neck and one tail remained readable. Exact plant, browse height and feeding moment are illustrative.",
+        "reviewMethod": "Original-size horn-absence, four-limb, four-foot, toe-end, neck, tail, plant separation, behavior-boundary, crop, artifact, text and watermark audit",
+        "reviewBatch": "2026-08-11-documentary-famous-life-expansion-v1",
+        "reviewedAt": "2026-08-11T08:28:08.000Z",
+        "claimBoundary": "Broad Oligocene habitat and plausible high-browse context only; exact plant and behavior are not directly evidenced and the scene is never representative-eligible."
+      }
+    },
     "mammuthus-primigenius": {
       "1": {
         "status": "approved",

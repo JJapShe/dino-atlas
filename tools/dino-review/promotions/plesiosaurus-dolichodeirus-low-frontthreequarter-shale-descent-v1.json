@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "plesiosaurus-dolichodeirus-low-frontthreequarter-shale-descent-v1",
+  "disposition": "promoted-awaiting-app-integration",
+  "promotedAt": "2026-08-11T13:25:48.025Z",
+  "sourcePath": "tools/dino-review/pending/plesiosaurus-dolichodeirus-low-frontthreequarter-shale-descent-v1/plesiosaurus-dolichodeirus-low-frontthreequarter-shale-descent-imagegen-v1.png",
+  "targetPath": "assets/dinosaurs/plesiosaurus-dolichodeirus-low-frontthreequarter-shale-descent-imagegen-v1.png",
+  "filename": "plesiosaurus-dolichodeirus-low-frontthreequarter-shale-descent-imagegen-v1.png",
+  "sha256": "11a2379c8f3136f8105936150b3d3e9b5008f49810e7b09842eb663217302bb0",
+  "sizeBytes": 2484929,
+  "review": {
+    "status": "pass",
+    "note": "",
+    "updatedAt": "2026-08-11T13:25:45.181Z",
+    "imageSha256": "11a2379c8f3136f8105936150b3d3e9b5008f49810e7b09842eb663217302bb0",
+    "manifestSha256": "01ffc6f8330cca8db7b9bf626760b57a26b44daeb6be1dfeb52f6b460d61a6a4"
+  },
+  "candidate": {
+    "schemaVersion": 1,
+    "candidateId": "plesiosaurus-dolichodeirus-low-frontthreequarter-shale-descent-v1",
+    "filename": "plesiosaurus-dolichodeirus-low-frontthreequarter-shale-descent-imagegen-v1.png",
+    "speciesId": "plesiosaurus-dolichodeirus",
+    "kind": "anatomy review",
+    "targetFilename": "plesiosaurus-dolichodeirus-low-frontthreequarter-shale-descent-imagegen-v1.png",
+    "provenance": {
+      "source": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and ignored anatomy-review candidates were used only as project-owned identity, anatomy, or local repair references; no external artwork or named-artist style input",
+      "license": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved or locally generated inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+      "prompt": "Create a scientifically grounded, age-appropriate educational marine-reptile atlas gallery image for children ages 5–14. Image 1 is the project-owned Plesiosaurus dolichodeirus identity and proportion reference. Image 2 is the project-owned four-paddle attachment and count reference. Use them only for identity and anatomy. Do not reproduce Image 1's broad side profile or Image 2's top-down layout.\n\nShow exactly one Plesiosaurus dolichodeirus, completely visible from the small head to the tip of the short tail, in a vertical 4:5 portrait frame. Use a low ventral frontal-three-quarter underwater camera positioned slightly below and ahead of the animal. The plesiosaur descends diagonally from the upper-right toward the lower-left while making one controlled bank along a dark shale shelf. The long neck leads the turn in one single gentle C-curve, never an S-curve or multiple coils. Foreshortening may show depth, but every body part must remain distinct and fully inside the frame.\n\nIdentity and count gates: one small narrow reptilian head, not an ichthyosaur snout; one long graceful neck; one small barrel-shaped torso; exactly four large paddle-shaped limbs, with two front paddles attached at the shoulders and two rear paddles attached at the pelvis; all four paddles separated from one another and readable at original size, with no overlap that hides their attachment; exactly one short unbranched tail; no dorsal fin and no caudal fin.\n\nUse a hypothetical S2 palette that is visually distinct from the grey-blue S1: deep petrol-teal dorsum, muted copper-grey wash around the shoulders, subdued jade wash on the paddles, pale ivory underside, sparse low-contrast neck speckles and irregular broken rosette marks on the torso. Do not use regular stripes or repeated rings. Skin is smooth fine marine-reptile skin with soft underwater highlights, never fish scales.\n\nPlace the animal above an Early Jurassic Lyme Regis-style dark shale and limestone slope with suspended particles and one broken shaft of surface light. Keep the background quiet and omit fish, ammonites or other animals so the four paddles remain easy to count. No coral-reef postcard scene, attack, prey or blood.\n\nReject dinosaur legs, ichthyosaur or dolphin body, dorsal fin, crescent tail fin, blowhole, shark gill slits, fish scales, mosasaur-like long lizard torso, crocodile armor, extra or fused paddles, five or six paddles, hidden paddle attachments, cut neck, cut tail, multiple tails, fantasy anatomy, text, labels, logos or watermark. Natural-history realism, neutral educational tone, no named-artist style.",
+      "seed": "provider-not-exposed",
+      "workflow": "OpenAI image_gen anatomy-led composition-diversity v5; approved identity and four-paddle anatomy references; exact input paths and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+    },
+    "anatomyReview": {
+      "status": "review-hold",
+      "representative": false,
+      "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+      "reviewedAt": "2026-08-10T18:02:24.4374314Z",
+      "notes": "S2 color-pattern diversity candidate only. One small head, a single gentle C-curved neck, a barrel body, exactly four separately attached paddles, one short tail and no dorsal or tail fin appear readable. The oblique spread-paddle motif still requires manual comparison with existing anatomy and stroke slots. Representative promotion prohibited."
+    }
+  }
+}

@@ -1,0 +1,2100 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-11-documentary-famous-life-expansion-v1",
+  "createdAt": "2026-08-11T08:28:08.000Z",
+  "audience": "Korean Dino Atlas users ages 5-14",
+  "scope": [
+    "Arthropleura armata three-image Paleozoic gallery",
+    "Meganeura monyi three-image Paleozoic gallery",
+    "Inostrancevia alexandri three-image Paleozoic gallery",
+    "Titanoboa cerrejonensis three-image Cenozoic gallery",
+    "Basilosaurus isis three-image Cenozoic gallery",
+    "Paraceratherium transouralicum three-image Cenozoic gallery"
+  ],
+  "rollup": {
+    "taxa": 6,
+    "approvedAssets": 18,
+    "representativeAssets": 6,
+    "nonRepresentativeAssets": 12,
+    "rejectedAttempts": 19,
+    "rejectedSourcePngsDeleted": 19,
+    "rejectedPixelsRetained": 0,
+    "generationEvents": 37
+  },
+  "promptEncoding": "Each prompt array preserves the exact nonblank revised_prompt returned by the completed image_generation_end event for that call ID.",
+  "copyrightSafety": {
+    "externalArtworkUsed": false,
+    "externalImagesUsedAsGenerationInput": false,
+    "projectGeneratedReferencesOnly": "Where referenceImages is nonempty, only project-owned generated images were supplied for identity control, targeted anatomy repair, or composition lineage.",
+    "licenseRecord": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+    "rejectedOriginalPolicy": "Seventeen failed attempts were never copied. Two cropped S2 structure references were temporarily copied, then removed from assets/dinosaurs and app metadata when superseded. All nineteen rejected/superseded source PNGs were moved from the private generation cache to the Windows Recycle Bin under the standing complete-reject policy; zero rejected pixels are retained at their original paths. Exact prompts, call IDs, lineages and pre-deletion SHA-256/byte/dimension facts remain as metadata-only audit evidence.",
+    "rejectedDeletionRecoverability": "Deleted source PNGs may remain recoverable from the Windows Recycle Bin until it is emptied. They are not recoverable from git or project assets; after Recycle Bin purge, only the recorded metadata remains.",
+    "appPathPolicy": "Runtime and app metadata may reference approved assets/dinosaurs paths only; private .codex/generated_images paths are provenance-only."
+  },
+  "rejectedSourceDeletion": {
+    "policy": "complete rejects retain no source pixels",
+    "deletionPerformedByBuilder": false,
+    "deletionMethod": "moved to Windows Recycle Bin after exact-path and accepted-set disjointness validation",
+    "sourcePathsExpectedPresent": false,
+    "sourcePathsVerifiedAbsent": true,
+    "pixelsRetained": false,
+    "recoverability": "Potentially recoverable from the Windows Recycle Bin until it is emptied; not retained in git or project assets.",
+    "preDeletionEvidenceSource": {
+      "path": "tools/comfyui/documentary-famous-life-expansion-20260811.json",
+      "sha256": "875ed47d5e12da64bb29c38f8808267ec08817ca06af1c6e9e30870e282c89fa",
+      "scope": "canonical manifest immediately before rejected-source deletion"
+    },
+    "deletedSourcePaths": [
+      "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-e9d46802-2c2c-472c-aef0-fe71e3741efe.png",
+      "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-970907d4-ea26-4f2c-878c-ef150165754c.png",
+      "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-09769592-eabd-4ffb-bd8f-2e96bbabb0ee.png",
+      "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-9dc10616-169f-405c-91e3-76e7cdc43d9e.png",
+      "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-48c4dad6-d5b8-4238-8614-0616929b31d2.png",
+      "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-86d9ecf5-88c5-40d7-bdd3-933ff196f046.png",
+      "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-ac000020-80f6-4be9-8771-c4a137d86b4a.png",
+      "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-c7fabaa3-d3b8-4bb9-951f-518fa018b079.png",
+      "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-efe5d7d9-e81d-466d-a22b-fb9a3867e26b.png",
+      "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-08daa434-e18c-49a8-8a7a-00c903794523.png",
+      "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-7ed9e867-2522-48fe-9ded-c3db55a4d9fe.png",
+      "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-603f66bd-f8ad-433d-81b0-658d447eba33.png",
+      "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-ea848bd8-b0c1-444b-941a-21f567a73ef7.png",
+      "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-094c6e07-7d24-4ae9-92ea-c996eb41382e.png",
+      "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-54a3dfb1-d26c-4695-8565-8d8e713ad5e6.png",
+      "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-4626d0c5-fafa-4c35-8f45-48a73c424557.png",
+      "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-28f11e33-cab7-4f6b-89d7-09756265ecda.png",
+      "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-60680e54-90d0-49ef-9362-242d2b3b84de.png",
+      "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-8e0a9271-8d79-42ca-a776-4b50cf488a04.png"
+    ]
+  },
+  "researchSources": [
+    {
+      "taxonId": "arthropleura-armata",
+      "citation": "Lheritier et al. 2024. The head of the largest arthropod, Arthropleura, and its phylogenetic significance. Science Advances 10:eadp6362.",
+      "url": "https://doi.org/10.1126/sciadv.adp6362",
+      "use": "Head, stalked-eye, antenna and mixed centipede/millipede affinity constraints; adult A. armata head extrapolation remains explicit.",
+      "rightsUse": "Factual and analytical reference only; no paper figure was supplied to the generator."
+    },
+    {
+      "taxonId": "arthropleura-armata",
+      "citation": "Natural History Museum. Largest-ever millipede head revealed.",
+      "url": "https://www.nhm.ac.uk/discover/news/2024/october/largest-ever-millipede-head-revealed.html",
+      "use": "Museum cross-check for the newly described head and uncertainty boundary.",
+      "rightsUse": "Educational facts only; no museum image was supplied to the generator."
+    },
+    {
+      "taxonId": "arthropleura-armata",
+      "citation": "Natural History Museum. World's largest terrestrial arthropod was a car-sized millipede.",
+      "url": "https://www.nhm.ac.uk/discover/news/2021/december/worlds-largest-terrestrial-arthropod-was-car-sized-millipede.html",
+      "use": "Size and Carboniferous terrestrial occurrence context.",
+      "rightsUse": "Educational facts only; no museum image was supplied to the generator."
+    },
+    {
+      "taxonId": "meganeura-monyi",
+      "citation": "Museum national d'Histoire naturelle. Meganeura monyi, libellule geante.",
+      "url": "https://www.mnhn.fr/fr/meganeura-monyi-libellule-geante",
+      "use": "Museum-level identity, Commentry occurrence and giant wing-span context.",
+      "rightsUse": "Educational facts only; no museum image was supplied to the generator."
+    },
+    {
+      "taxonId": "meganeura-monyi",
+      "citation": "Wootton et al. 2024. Integrative and Comparative Biology 64(2):598-614.",
+      "url": "https://academic.oup.com/icb/article/64/2/598/7687824",
+      "use": "Comparative griffinfly wing structure, venation and flight-boundary context.",
+      "rightsUse": "Factual and analytical reference only; no article figure was supplied to the generator."
+    },
+    {
+      "taxonId": "inostrancevia-alexandri",
+      "citation": "Kammerer et al. 2023, Current Biology, and Ivakhnenko 2008, Paleontological Journal, as recorded in the Dino Atlas taxon source list.",
+      "url": null,
+      "use": "Gorgonopsian skull, enlarged upper-canine pair, limb posture and extinction-interval context.",
+      "rightsUse": "Factual and analytical reference only; no publication figure was supplied to the generator."
+    },
+    {
+      "taxonId": "inostrancevia-alexandri",
+      "citation": "Netflix Tudum. Life on Our Planet: What did prehistoric animals look like?",
+      "url": "https://www.netflix.com/tudum/articles/life-on-our-planet-what-did-dinosaurs-look-like",
+      "use": "Documentary-audience exposure rationale only, not an anatomical authority.",
+      "rightsUse": "Textual exposure check only; no documentary still or frame was supplied to the generator."
+    },
+    {
+      "taxonId": "titanoboa-cerrejonensis",
+      "citation": "Head et al. 2009. Giant boid snake from the Palaeocene neotropics. Nature 457:715-717.",
+      "url": "https://www.nature.com/articles/nature07671",
+      "use": "Vertebral evidence, giant size estimate and Paleocene Cerrejon setting.",
+      "rightsUse": "Factual and analytical reference only; no article figure was supplied to the generator."
+    },
+    {
+      "taxonId": "titanoboa-cerrejonensis",
+      "citation": "Smithsonian Institution. Titanoboa: Monster Snake.",
+      "url": "https://www.si.edu/exhibitions/titanoboa-monster-snake-event-event-exhib-4820",
+      "use": "Museum-level public identity and documentary-recognition cross-check.",
+      "rightsUse": "Educational facts only; no exhibit image was supplied to the generator."
+    },
+    {
+      "taxonId": "titanoboa-cerrejonensis",
+      "citation": "Florida Museum. Titanoboa.",
+      "url": "https://www.floridamuseum.ufl.edu/science/titanoboa/",
+      "use": "Cerrejon fossil and rainforest context cross-check.",
+      "rightsUse": "Educational facts only; no museum image was supplied to the generator."
+    },
+    {
+      "taxonId": "basilosaurus-isis",
+      "citation": "University of Michigan Museum of Paleontology. Basilosaurus isis.",
+      "url": "https://lsa.umich.edu/paleontology/resources/beyond-exhibits/basilosaurus-isis.html",
+      "use": "Species-level archaeocete skeleton, elongate body and reduced hind-limb context.",
+      "rightsUse": "Educational facts only; no museum image was supplied to the generator."
+    },
+    {
+      "taxonId": "basilosaurus-isis",
+      "citation": "PBS NOVA. This massive skeleton belongs to an ancient whale.",
+      "url": "https://www.pbs.org/video/this-massive-skeleton-belongs-to-an-ancient-whale-xta0ta/",
+      "use": "Documentary-audience exposure and broad ancient-whale identity context.",
+      "rightsUse": "Textual exposure check only; no video frame was supplied to the generator."
+    },
+    {
+      "taxonId": "paraceratherium-transouralicum",
+      "citation": "Deng et al. 2021. An Oligocene giant rhino provides insights into Paraceratherium evolution. Communications Biology 4:639.",
+      "url": "https://www.nature.com/articles/s42003-021-02170-6",
+      "use": "Paraceratheriid relationships, giant hornless rhinocerotoid anatomy and distribution.",
+      "rightsUse": "Factual and analytical reference only; no article figure was supplied to the generator."
+    },
+    {
+      "taxonId": "paraceratherium-transouralicum",
+      "citation": "Natural History Museum. Why were prehistoric animals so big?",
+      "url": "https://www.nhm.ac.uk/discover/why-were-dinosaurs-so-big.html",
+      "use": "Museum educational cross-check for Paraceratherium as a giant land mammal.",
+      "rightsUse": "Educational facts only; no museum image was supplied to the generator."
+    }
+  ],
+  "evidenceBoundaries": {
+    "arthropleura-armata": {
+      "fossilLed": "Broad divided tergites, repeated diplotergites and dense leg series are fossil-led; the head cue comes from smaller Arthropleura material.",
+      "reconstructed": "Adult head proportions, exact leg visibility, soft tissue, color, pattern, gait and every living habitat moment are reconstructed.",
+      "promotionBoundary": "Only S1 is representative eligible. S2 is review hold and S3 is anatomy review."
+    },
+    "meganeura-monyi": {
+      "fossilLed": "Four wings and giant archaic griffinfly venation are fossil-led; six thoracic legs follow insect anatomy.",
+      "reconstructed": "Complete body proportions, soft anatomy, coloration, wing membrane appearance, flight pose and ecology are reconstructed.",
+      "promotionBoundary": "Only S1 is representative eligible. The full-body same-body S2 is review hold and S3 is anatomy review."
+    },
+    "inostrancevia-alexandri": {
+      "fossilLed": "The elongate gorgonopsian skull, differentiated teeth and one enlarged upper-canine pair are fossil-led.",
+      "reconstructed": "Skin covering, lips, external soft tissue, exact stance, feet, tail volume, color and habitat moment are reconstructed.",
+      "promotionBoundary": "Only S1 is representative eligible. The full-body same-body S2 is review hold and S3 is anatomy review."
+    },
+    "titanoboa-cerrejonensis": {
+      "fossilLed": "Giant vertebrae and limited cranial material support a very large Paleocene boid.",
+      "reconstructed": "Complete head and body outline, exact proportions, scales, color, pattern, water pose and animal interactions are reconstructed.",
+      "promotionBoundary": "Only S1 is representative eligible. S2 is review hold and S3 is anatomy review."
+    },
+    "basilosaurus-isis": {
+      "fossilLed": "The long skull, heterodont dentition, exceptionally elongate vertebral column, forelimbs and tiny external hind limbs are fossil-led.",
+      "reconstructed": "The external fluke is conservative comparative reconstruction; skin, color, exact appendage contours, swimming pose and fish response are hypothetical.",
+      "promotionBoundary": "Only corrected S1 is representative eligible. S2 is review hold and corrected S3 is anatomy review."
+    },
+    "paraceratherium-transouralicum": {
+      "fossilLed": "Skull and postcranial fossils support a giant hornless rhinocerotoid with long neck and robust weight-bearing limbs.",
+      "reconstructed": "Exact mass, proportions, lip, coat, foot appearance, color, gait, browsing pose and vegetation are reconstructed.",
+      "promotionBoundary": "Only S1 is representative eligible. S2 is review hold and S3 is anatomy review."
+    }
+  },
+  "records": {
+    "arthropleura-armata-representative-v1": {
+      "taxonId": "arthropleura-armata",
+      "taxon": "Arthropleura armata",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-11T07:45:08.424Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Fossil-led prompt-to-image followed by original-size antenna, stalked-eye, diplotergite, paired-leg-row, body-continuity, crop, text and watermark review.",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-f7a3f98b-28e8-4d22-881c-766a77006a65",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-f7a3f98b-28e8-4d22-881c-766a77006a65.png",
+      "approvedProjectPath": "assets/dinosaurs/arthropleura-armata-diplosegment-stalkedeye-representative-imagegen-v1.png",
+      "referenceImages": [],
+      "referenceImageRecords": [],
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "sha256": "5b27aff5f996af0e3993c0824837fc433f8a855995aaffb87e56f0caceff13a2",
+      "bytes": 2840691,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Use case: scientific-educational. Create one original museum-quality S1 representative of adult Arthropleura armata for Dino Atlas ages 5–14. Horizontal 16:9, one complete animal in a clean left-facing near-lateral identity view with only about 12 degrees of elevation so the side and upper surface are both readable. Late Carboniferous open firm silt; entire head, every leg run and terminal body end inside frame.\nAnatomy lock from current evidence: a very low, broad, flattened myriapod, not cylindrical; roughly two dozen broad trunk tergites, each divided into a central dorsal syntergite and wide left/right lateral paratergites rather than giant overlapping isopod shingles. The collum and first post-head unit may have one leg pair, but every following major diplotergite must visibly carry TWO successive short walking-leg pairs on the near side—two distinct leg bases and two legs per tergite, repeated along the trunk. Show the far-side leg tips offset beneath the body. Legs are short, eight-podomere direction, no centipede forcipules. Round flattened head, exactly two slender seven-segment antennae and exactly two small stalked compound eyes; small restrained mandible/maxilla region, never giant predatory jaws. Posterior segments narrow into one terminal end. Head details are a genus-level cue from small juvenile Arthropleura sp. fossils, not certainty for adult A. armata.\nMuted dark umber, moss-gray and irregular rusty mineral variation; no repeated stripes. Reject one leg pair per tergite, modern cylindrical millipede, centipede, giant isopod, trilobite, lobster, insect wings, huge fangs, fantasy spikes, regular stamped plates, duplicated head/tail, cropped anatomy, text, logo, watermark, attack or gore. No named-artist style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-11",
+        "method": "Original-size independent anatomy review plus integration-owner role and evidence-boundary review.",
+        "decision": "Approved as the sole S1 count-level representative. The full body, paired antennae, paired stalked eyes, broad divided tergites, dense successive leg pairs and one terminal end remain readable.",
+        "claimBoundary": "The head cues derive from smaller Arthropleura material and remain genus-level guidance rather than certainty for an adult A. armata head; adult head proportions, color and diet are not established.",
+        "representativePromotionAllowed": true
+      }
+    },
+    "arthropleura-armata-pattern-v1": {
+      "taxonId": "arthropleura-armata",
+      "taxon": "Arthropleura armata",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-11T07:54:34.965Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Project-owned S1 identity reference, composition-diversity prompt, then original-size appendage, plate, body-continuity, crop and artifact review.",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-99d84761-bbb4-475a-895d-23a06ebb0f31",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-99d84761-bbb4-475a-895d-23a06ebb0f31.png",
+      "approvedProjectPath": "assets/dinosaurs/arthropleura-armata-highthreequarter-copper-moss-pattern-imagegen-v1.png",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-f7a3f98b-28e8-4d22-881c-766a77006a65.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-f7a3f98b-28e8-4d22-881c-766a77006a65",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-f7a3f98b-28e8-4d22-881c-766a77006a65.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "5b27aff5f996af0e3993c0824837fc433f8a855995aaffb87e56f0caceff13a2",
+          "bytes": 2840691,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "sha256": "e47cef04443aa3ddbf992f171c0297c59d6abc7aac5cc1ae5cf5e4028bb22f9d",
+      "bytes": 2580074,
+      "width": 1122,
+      "height": 1402,
+      "dimensions": "1122x1402",
+      "prompt": [
+        "Use the supplied project-generated Arthropleura armata v2 only as identity reference. Create a fresh S2 review-hold color/composition variant. Portrait 4:5, one complete animal moving diagonally rightward in a high front three-quarter view on open wet late Carboniferous silt. Preserve broad flattened trunk with central syntergites and lateral paratergites, exactly two slender antennae, two small stalked eyes, small mouthparts, and after the first units TWO successive short leg pairs per major tergite visibly repeated; far-side legs offset under the body; one tapering terminal end. Every leg run and body edge inside frame. Use irregular midnight blue-black, oxidized copper and muted moss patches, no copied stripe pattern. Distinct from flat S1 direction and camera. Reject one leg pair per tergite, modern cylinder millipede, centipede forcipules, giant isopod, duplicated head/tail, regular stamped plates, crop, text/logo/watermark, attack or gore. Head cue is genus-level from small fossils; color hypothetical; representative promotion prohibited. No named-artist style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-11",
+        "method": "Original-size independent anatomy review plus integration-owner role and evidence-boundary review.",
+        "decision": "Accepted only as S2 review hold. The high three-quarter view diversifies direction and color while retaining gross tergite and paired-leg-row continuity.",
+        "claimBoundary": "Perspective, distal leg count, adult head proportions, copper/moss color and every marking location are reconstructed; representative promotion is prohibited without a separate anatomy audit.",
+        "representativePromotionAllowed": false
+      }
+    },
+    "arthropleura-armata-ecology-v1": {
+      "taxonId": "arthropleura-armata",
+      "taxon": "Arthropleura armata",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "kind": "anatomy review",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-11T07:55:15.479Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Project-owned Arthropleura and Meganeura identity references, wide non-contact ecology prompt, then original-size focal-body, leg-row, background-fauna separation and non-patterned substrate review.",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-300725a2-2ac7-43b1-aae8-361a49f787ee",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-300725a2-2ac7-43b1-aae8-361a49f787ee.png",
+      "approvedProjectPath": "assets/dinosaurs/arthropleura-armata-meganeura-floodplain-ecology-imagegen-v1.png",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-f7a3f98b-28e8-4d22-881c-766a77006a65.png",
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-504155d7-ada5-4116-819f-f602481a1ec2.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-f7a3f98b-28e8-4d22-881c-766a77006a65",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-f7a3f98b-28e8-4d22-881c-766a77006a65.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "5b27aff5f996af0e3993c0824837fc433f8a855995aaffb87e56f0caceff13a2",
+          "bytes": 2840691,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        },
+        {
+          "callId": "exec-504155d7-ada5-4116-819f-f602481a1ec2",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-504155d7-ada5-4116-819f-f602481a1ec2.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "8aa9437480310ac74b0a32c2cba226c74bc266fec5ce571acfddf685edc83c2d",
+          "bytes": 3025843,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "sha256": "eb2616ea9a9b054b10ab3a5197990dedd0ba78fc5d71d66c321ecfd1f28e6e8e",
+      "bytes": 2371988,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Use supplied project-generated Arthropleura armata v2 as primary identity and Meganeura monyi v3 only as secondary identity reference. Create a fresh S3 horizontal 16:9 late Carboniferous floodplain ecology scene. Exactly one complete Arthropleura occupies 48% width, viewed low from rear-side as it crosses pale damp silt toward the left. Preserve broad flattened tergites, two antennae, stalked eyes, repeated TWO leg pairs per major tergite and one tapering end. Far upper-right, exactly one much smaller Meganeura flies several body lengths away with four narrow wings; it is non-contact context, not count evidence. Add only 2–3 incomplete irregular substrate scuffs behind Arthropleura, each different spacing, rotation, depth and visibility, never stamped track wallpaper and never identified as this species' footprint. Distant lycopsid/horsetail/seed-fern wetland, no obstruction. No feeding, pursuit, herd or contact claim. Reject extra animals, regular tracks, centipede/isopod drift, cropped anatomy, text/logo/watermark or gore. Original evidence-bounded paleoecology, representative promotion prohibited, no named-artist style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-11",
+        "method": "Original-size independent anatomy review plus integration-owner role and evidence-boundary review.",
+        "decision": "Accepted only as S3 anatomy review. The focal Arthropleura remains readable and the distant griffinfly is spatially separate.",
+        "claimBoundary": "Broad Carboniferous co-occurrence is illustrative; no observed interaction, exact community, track maker, behavior or species-level encounter is asserted, and the distant griffinfly is not count-level evidence.",
+        "representativePromotionAllowed": false
+      }
+    },
+    "meganeura-monyi-representative-v1": {
+      "taxonId": "meganeura-monyi",
+      "taxon": "Meganeura monyi",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-11T07:52:40.489Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Fossil-led prompt-to-image followed by original-size four-wing, six-leg, thoracic-attachment, abdomen, crop, text and watermark review.",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-504155d7-ada5-4116-819f-f602481a1ec2",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-504155d7-ada5-4116-819f-f602481a1ec2.png",
+      "approvedProjectPath": "assets/dinosaurs/meganeura-monyi-fourwing-sixleg-representative-imagegen-v1.png",
+      "referenceImages": [],
+      "referenceImageRecords": [],
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "sha256": "8aa9437480310ac74b0a32c2cba226c74bc266fec5ce571acfddf685edc83c2d",
+      "bytes": 3025843,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Use case: scientific-educational. Create one original museum-quality Dino Atlas S1 representative of Meganeura monyi for ages 5–14. Horizontal 16:9. Exactly one complete giant stem-odonatopteran rests left-facing on completely bare pale late Carboniferous silt. Use a shallow 25-degree dorsal-lateral identity view, body axis horizontal, so every appendage can be counted.\nCount lock, mandatory:\n- exactly SIX legs and no more: one foreleg pair projects forward, one middle-leg pair projects sideways, one hind-leg pair projects backward; all six leg roots attach to the thorax, all six feet end separately on bare ground, none overlaps another leg or wing;\n- exactly FOUR wings and no more: near forewing angles upper-left, near hindwing lower-left, far forewing upper-right/back, far hindwing lower-right/back in a clean X-like spread around the thorax; all four roots are separately visible as two anterior and two posterior attachments; all four tips inside frame with clear air/ground gaps;\n- one broad conservative head with two compound eyes, one thorax, one long slender segmented abdomen tapering to one terminal end.\nWings are long narrow transparent griffinfly membranes with dense irregular archaic venation, but NO modern dragonfly nodus, NO arculus and NO copied modern pterostigma. Suggest 65–70 cm wingspan using one small seed-fern frond placed beyond a wingtip at about half the wing length; no humans or labels. Muted smoky charcoal, bronze and dull amber, not a living species pattern.\nReject three or five wings, two or eight legs, hidden roots, legs from abdomen, modern dragonfly exact copy, damselfly, butterfly scales, fantasy stinger, cropped wings/abdomen, text, logo, watermark, attack or gore. No named-artist style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-11",
+        "method": "Original-size independent anatomy review plus integration-owner role and evidence-boundary review.",
+        "decision": "Approved as the sole S1 count-level representative. Exactly four independently rooted wings and six thoracic legs are readable at original size.",
+        "claimBoundary": "Wing fossils constrain the broad venation direction; complete soft anatomy, exact body proportions, color and the pictured flight/rest pose remain reconstructed.",
+        "representativePromotionAllowed": true
+      }
+    },
+    "meganeura-monyi-samebody-pattern-v1": {
+      "taxonId": "meganeura-monyi",
+      "taxon": "Meganeura monyi",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-11T08:39:22.017Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Targeted same-body edit of the project-owned S1, preserving its composition and anatomy while changing only speculative color and pattern, followed by original-size four-wing, six-leg, attachment, crop and artifact review.",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-d7ce0dda-f6de-4166-a344-037b4d8aaef9",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-d7ce0dda-f6de-4166-a344-037b4d8aaef9.png",
+      "approvedProjectPath": "assets/dinosaurs/meganeura-monyi-petrol-copper-samebody-pattern-imagegen-v1.png",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-504155d7-ada5-4116-819f-f602481a1ec2.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-504155d7-ada5-4116-819f-f602481a1ec2",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-504155d7-ada5-4116-819f-f602481a1ec2.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "8aa9437480310ac74b0a32c2cba226c74bc266fec5ce571acfddf685edc83c2d",
+          "bytes": 3025843,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "sha256": "dab058fa3446ed761ba1e667ec726eccbfb30044b8bff3d3abfadc07c57b4861",
+      "bytes": 3519511,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Edit the supplied approved Dino Atlas Meganeura monyi representative into its SAME-BODY full-body color-and-pattern variant for a scientific children's atlas (ages 5-14). Preserve the exact original composition, camera, silhouette, pose, wing attachments, leg attachments, proportions, ground contact, background perspective, and every anatomical count. The complete animal must remain fully inside the frame. It must still show exactly four wings (two forewings and two hindwings, each independently attached to the thorax), exactly six jointed legs attached only to the thorax, two large compound eyes, one thorax, and one long continuous segmented abdomen. Do not add, remove, hide, merge, crop, or relocate any limb or wing. Change only the hypothetical integument palette and irregular natural markings: deep petrol-blue and charcoal thorax/abdomen, restrained oxidized-copper highlights, subtle broken moss-green mottling, translucent smoky wings with warm bronze veins. Keep markings asymmetric and organic, never regular stripes, repeated dots, or a modern dragonfly copy. No text, labels, watermark, border, fossils, extra animals, extra appendages, duplicated anatomy, named-artist style, franchise design, or copyrighted reconstruction. Photorealistic natural-history reconstruction, original aspect ratio and full-body side/near-dorsal view. This is S2 only; it must never replace the S1 representative."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-11",
+        "method": "Original-size independent anatomy review plus integration-owner role and evidence-boundary review.",
+        "decision": "Accepted only as S2 review hold. The complete animal preserves exactly four independently rooted wings, six thoracic legs and the S1 body while supplying a petrol/copper color-pattern variant.",
+        "claimBoundary": "Color, pattern and every marking location are hypothetical. This same-body variant must never replace or outrank the S1 representative without a separate anatomy-promotion audit.",
+        "representativePromotionAllowed": false
+      }
+    },
+    "meganeura-monyi-ecology-v1": {
+      "taxonId": "meganeura-monyi",
+      "taxon": "Meganeura monyi",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "kind": "anatomy review",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-11T07:58:01.404Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Project-owned Meganeura and Arthropleura identity references, wide non-contact ecology prompt, then original-size focal four-wing/six-leg and background-fauna separation review.",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-4df05505-79d0-41f7-91bc-67ca54361af1",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-4df05505-79d0-41f7-91bc-67ca54361af1.png",
+      "approvedProjectPath": "assets/dinosaurs/meganeura-monyi-arthropleura-wetland-ecology-imagegen-v1.png",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-504155d7-ada5-4116-819f-f602481a1ec2.png",
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-f7a3f98b-28e8-4d22-881c-766a77006a65.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-504155d7-ada5-4116-819f-f602481a1ec2",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-504155d7-ada5-4116-819f-f602481a1ec2.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "8aa9437480310ac74b0a32c2cba226c74bc266fec5ce571acfddf685edc83c2d",
+          "bytes": 3025843,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        },
+        {
+          "callId": "exec-f7a3f98b-28e8-4d22-881c-766a77006a65",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-f7a3f98b-28e8-4d22-881c-766a77006a65.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "5b27aff5f996af0e3993c0824837fc433f8a855995aaffb87e56f0caceff13a2",
+          "bytes": 2840691,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "sha256": "a8eb5eec83efcad3f32fc5d5479e32ef6cbcfb5cb815ab823bc224d7b1377f06",
+      "bytes": 2564039,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Use supplied project-generated Meganeura monyi v3 as primary identity and Arthropleura armata v2 as secondary identity. Create a fresh S3 horizontal 16:9 late Carboniferous open wetland scene. Exactly one large Meganeura is the readable mid-air subject at lower eye level, moving left-to-right above an open channel and occupying about 45% width. Show exactly FOUR separated narrow wings with distinct roots and exactly SIX thoracic legs held in three readable pairs, one long abdomen and archaic venation without modern nodus. On a far mudbank several body lengths behind, show exactly one small Arthropleura silhouette with broad low segmented body and many legs, no contact. Open air/water gaps prevent merging. No hunt, pursuit, feeding or size relationship claim. Distant lycopsids/horsetails, irregular light and ripples. Reject extra insects, missing/extra wings or legs, contact, modern dragonfly copy, regular patterned tracks, crop, text/logo/watermark or gore. Original evidence-bounded paleoecology; representative promotion prohibited; no named-artist style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-11",
+        "method": "Original-size independent anatomy review plus integration-owner role and evidence-boundary review.",
+        "decision": "Accepted only as S3 anatomy review. The focal griffinfly keeps four wings and six thoracic legs; the distant myriapod remains non-contact context.",
+        "claimBoundary": "Flight, exact spacing, plant community and broad co-occurrence are illustrative. No direct interaction is asserted, and the distant Arthropleura is not count-level evidence.",
+        "representativePromotionAllowed": false
+      }
+    },
+    "inostrancevia-alexandri-representative-v1": {
+      "taxonId": "inostrancevia-alexandri",
+      "taxon": "Inostrancevia alexandri",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-11T07:46:23.135Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Fossil-led prompt-to-image followed by original-size skull, single upper-saber-pair, four-limb, foot, tail-continuity, crop and mammal-drift review.",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-a6c3a903-b9fa-4ca8-a0ad-07d8f25a13fa",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-a6c3a903-b9fa-4ca8-a0ad-07d8f25a13fa.png",
+      "approvedProjectPath": "assets/dinosaurs/inostrancevia-alexandri-lowskull-saberpair-representative-imagegen-v1.png",
+      "referenceImages": [],
+      "referenceImageRecords": [],
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "sha256": "49f4d56f06612f87ab3f1c6160dae2bd1636785915190bf513c3c102dddc02ca",
+      "bytes": 2885409,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Use case: scientific-educational. Create one original museum-quality S1 representative of Inostrancevia alexandri for Dino Atlas ages 5–14. Horizontal 16:9, exactly one complete adult walking calmly left in a strict full-body lateral identity view on open late Permian northern Russian floodplain mud. Head, all four feet and tail tip inside frame.\nIdentity lock: a large non-mammalian gorgonopsian with one distinctly LONG, HIGH-SIDED, NARROW gorgonopsian skull, elongated snout, tall temporal region and strong lower jaw—not a short rounded hippo, lizard or cat head. Exactly ONE paired set of very large upper saber canines: the near canine clearly descends well below the tooth row, while the far canine is only slightly offset; no extra saber pair. Smaller incisors and postcanines are differentiated, not a uniform crocodile row. Closed-to-slightly-parted mouth with conservative lip coverage. Powerful neck; robust moderately long trunk; exactly two forelimbs and two hindlimbs in semi-erect transitional posture; four separate grounded pentadactyl feet, neither fully sprawling lizard nor upright feline; one continuous MODERATE tail about one third of nose-to-rump length, tapering to one end. No external ears, dog nose, cat paws or thick fur; use conservative finely textured skin with only sparse uncertain filament hints.\nMuted iron gray, red-brown and dusty cream. Reject short blunt hippo head, tiny tusks, Smilodon/wolf/hyena, crocodile, dinosaur biped, sail, horns, four saber canines, giant exposed tongue, extra/missing/fused limbs, three-legged read, very long lizard tail, crop, text, logo, watermark, attack or gore. No named-artist style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-11",
+        "method": "Original-size independent anatomy review plus integration-owner role and evidence-boundary review.",
+        "decision": "Approved as the sole S1 count-level representative. The elongate skull, one enlarged upper-canine pair, four connected limbs and one tail are readable.",
+        "claimBoundary": "Skull and saber cues are fossil-led; external soft tissue, skin covering, exact foot appearance, stance, color and behavior remain reconstructed.",
+        "representativePromotionAllowed": true
+      }
+    },
+    "inostrancevia-alexandri-samebody-pattern-v1": {
+      "taxonId": "inostrancevia-alexandri",
+      "taxon": "Inostrancevia alexandri",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-11T08:39:56.785Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Targeted same-body edit of the project-owned S1, preserving its composition and anatomy while changing only speculative color and pattern, followed by original-size saber-pair, four-limb, four-foot, tail, crop and artifact review.",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-4d3e66e8-4c28-477b-864a-cb098b40744d",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-4d3e66e8-4c28-477b-864a-cb098b40744d.png",
+      "approvedProjectPath": "assets/dinosaurs/inostrancevia-alexandri-charcoal-sienna-samebody-pattern-imagegen-v1.png",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-a6c3a903-b9fa-4ca8-a0ad-07d8f25a13fa.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-a6c3a903-b9fa-4ca8-a0ad-07d8f25a13fa",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-a6c3a903-b9fa-4ca8-a0ad-07d8f25a13fa.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "49f4d56f06612f87ab3f1c6160dae2bd1636785915190bf513c3c102dddc02ca",
+          "bytes": 2885409,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "sha256": "f3d2db1da54e926e7a477871239d496f3ad14817e3643e45e254106e7f64d168",
+      "bytes": 2942930,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Edit the supplied approved Dino Atlas Inostrancevia alexandri representative into its SAME-BODY full-body color-and-pattern variant for a scientific children's atlas (ages 5-14). Preserve the exact original side-profile composition, camera, silhouette, pose, long relatively narrow gorgonopsian skull, neck, torso, pelvis, tail, four limbs, four feet, ground contact, and all anatomical connections. Keep the complete animal fully inside the frame with one head, exactly one enlarged upper-canine saber pair, exactly two forelimbs, exactly two hind limbs, four connected feet, and one continuous non-branching tail. Do not add, remove, hide, merge, crop, or relocate any limb, tooth, or tail. Change only the hypothetical skin palette and irregular natural pattern: dark charcoal-brown dorsal surface, muted sienna flanks, sandy cream underside, sparse broken mineral-teal flecks confined to small irregular patches, no regular bands or rosettes. Retain hairless or minimally textured scaly/pebbled skin, with no mammalian external ear pinnae, dog nose, fur coat, mane, horns, extra saber teeth, hooves, or dinosaur anatomy. No text, labels, watermark, border, extra animals, named-artist style, franchise design, or copyrighted reconstruction. Photorealistic natural-history reconstruction, original landscape aspect ratio, same full-body side profile. This is S2 only; it must never replace the S1 representative."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-11",
+        "method": "Original-size independent anatomy review plus integration-owner role and evidence-boundary review.",
+        "decision": "Accepted only as S2 review hold. The complete animal preserves one enlarged upper-saber pair, four connected limbs, four feet and the S1 body while supplying a charcoal/sienna color-pattern variant.",
+        "claimBoundary": "Color, pattern, skin texture and every marking location are hypothetical. This same-body variant must never replace or outrank the S1 representative without a separate anatomy-promotion audit.",
+        "representativePromotionAllowed": false
+      }
+    },
+    "inostrancevia-alexandri-ecology-v1": {
+      "taxonId": "inostrancevia-alexandri",
+      "taxon": "Inostrancevia alexandri",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "kind": "anatomy review",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-11T07:59:51.201Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Project-owned S1 identity reference, wide seasonal-channel ecology prompt, then original-size four-limb, four-foot, tail, saber, crop and habitat-artifact review.",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-ac631898-538c-4482-920f-ff70d70ada27",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-ac631898-538c-4482-920f-ff70d70ada27.png",
+      "approvedProjectPath": "assets/dinosaurs/inostrancevia-alexandri-seasonal-channel-ecology-imagegen-v1.png",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-a6c3a903-b9fa-4ca8-a0ad-07d8f25a13fa.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-a6c3a903-b9fa-4ca8-a0ad-07d8f25a13fa",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-a6c3a903-b9fa-4ca8-a0ad-07d8f25a13fa.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "49f4d56f06612f87ab3f1c6160dae2bd1636785915190bf513c3c102dddc02ca",
+          "bytes": 2885409,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "sha256": "2d0a3c18e375d50266a049f9432b7aca8b60b57ec8e7ad6e94bd1eca1415bc86",
+      "bytes": 2447978,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Use the supplied project-generated Inostrancevia alexandri v2 only as identity reference. Create a fresh S3 horizontal 16:9 habitat-ecology scene. Exactly one complete Inostrancevia walks slowly across a broad late Permian northern Russian seasonal channel in a low front-side three-quarter view, occupying about 55% width. Preserve the long high-sided narrow skull, one upper saber pair, differentiated smaller teeth, no external ears, semi-erect four-limb posture, four separately visible pentadactyl feet and one moderate tail. Head is lifted to test the air; no prey, chase or kill. Place 2–3 irregular incomplete substrate scuffs in damp clay, each different spacing/rotation/depth, not a repeated footprint trail and not diagnostic. Distant sparse glossopterid-like vegetation and bare trees, shallow braided water far behind. Distinct from S1/S2 cameras. Reject mammals/cats/wolves, dinosaur, crocodile, extra sabers or limbs, hidden feet, regular stamped tracks, crop, text/logo/watermark or gore. Behavior and skin hypothetical; original evidence-bounded paleoecology; representative promotion prohibited; no named-artist style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-11",
+        "method": "Original-size independent anatomy review plus integration-owner role and evidence-boundary review.",
+        "decision": "Accepted only as S3 anatomy review. The single animal remains complete and readable in a distinct wide habitat composition.",
+        "claimBoundary": "The exact gait, skin, plants, seasonal channel, weather and behavioral moment are hypothetical; representative promotion is prohibited without a separate anatomy audit.",
+        "representativePromotionAllowed": false
+      }
+    },
+    "titanoboa-cerrejonensis-representative-v1": {
+      "taxonId": "titanoboa-cerrejonensis",
+      "taxon": "Titanoboa cerrejonensis",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-11T07:47:07.878Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Fossil-led prompt-to-image followed by original-size single-head, continuous non-crossing body, one-tail, limbless, crop, modern-snake-copy and artifact review.",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-c9a68e46-8771-49ca-802b-e82ff57c5839",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-c9a68e46-8771-49ca-802b-e82ff57c5839.png",
+      "approvedProjectPath": "assets/dinosaurs/titanoboa-cerrejonensis-continuous-boid-representative-imagegen-v1.png",
+      "referenceImages": [],
+      "referenceImageRecords": [],
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "sha256": "925b92b322f1cecee4211a0e29b36fcd515cfeaafc2de34d542b37b642fb86dd",
+      "bytes": 2936344,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Use case: scientific-educational. Create one original museum-quality S1 representative of Titanoboa cerrejonensis for Dino Atlas ages 5–14. Horizontal 16:9, exactly one complete gigantic boid snake shown from a slightly elevated lateral identity view on an open Paleocene Cerrejón mudbank and very shallow channel. One head and one continuously traceable body with only two broad S-curves, no crossing, narrowing to one tail; head at left, tail at right, both fully inside frame.\nAvoid a living anaconda clone. Use a generalized extinct boid head: broad low wedge, rounded snout, moderate lateral eyes, closed mouth, no yellow anaconda face band, no viper brow, no cobra hood, no rattle, no long venom fangs. The animal is exceptionally thick and long, with muscle volume tapering naturally. Use matte charcoal-bronze and muted olive-gray with sparse large diffuse asymmetrical cloud patches and subtle countershading—NO black rosettes, yellow blotches or repeated anaconda pattern. Show scale without humans: a fallen palm trunk behind the middle body is clearly narrower than the snake, and a broad palm frond near the head is shorter than the head-to-first-bend distance; these are environment cues, not exact measurement. Dense Paleocene rainforest stays far back and never hides the body.\nReject living green/yellow anaconda pattern, python reticulation, cobra hood, viper horns, dragon spines, limbs, duplicated head/tail, impossible knots, body discontinuity, regular coils, prey attack/constriction, crop, text, logo, watermark or gore. Exact color, head proportions and scale remain reconstructive. No named-artist style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-11",
+        "method": "Original-size independent anatomy review plus integration-owner role and evidence-boundary review.",
+        "decision": "Approved as the sole S1 count-level representative. The complete limbless silhouette can be traced continuously from one head through broad curves to one tail.",
+        "claimBoundary": "Vertebrae and limited cranial remains support a giant boid; exact head shape, full-body proportions, muscle profile, scales, color and pattern remain reconstructed.",
+        "representativePromotionAllowed": true
+      }
+    },
+    "titanoboa-cerrejonensis-pattern-v1": {
+      "taxonId": "titanoboa-cerrejonensis",
+      "taxon": "Titanoboa cerrejonensis",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-11T08:00:59.714Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Project-owned S1 identity reference, high-oblique color/composition prompt, then original-size head-to-tail continuity, loop, crop and modern-pattern-drift review.",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-25d67b5e-6b4a-4277-9250-dcf4284fdbdc",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-25d67b5e-6b4a-4277-9250-dcf4284fdbdc.png",
+      "approvedProjectPath": "assets/dinosaurs/titanoboa-cerrejonensis-highoblique-channel-pattern-imagegen-v1.png",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-c9a68e46-8771-49ca-802b-e82ff57c5839.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-c9a68e46-8771-49ca-802b-e82ff57c5839",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-c9a68e46-8771-49ca-802b-e82ff57c5839.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "925b92b322f1cecee4211a0e29b36fcd515cfeaafc2de34d542b37b642fb86dd",
+          "bytes": 2936344,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "sha256": "b0f06525ae7629ea1e9dd8194f7056feea6bc8a9172100bf9437231c3be9ec18",
+      "bytes": 2883245,
+      "width": 1122,
+      "height": 1402,
+      "dimensions": "1122x1402",
+      "prompt": [
+        "Use the supplied project-generated Titanoboa cerrejonensis v2 only as identity reference. Create a fresh S2 portrait 4:5 color/composition review image. Exactly one complete enormous boid snake, high rear three-quarter view from above, moving rightward through an open shallow Paleocene Cerrejón side channel. One broad low generalized boid head, one continuously traceable thick body with only three gentle S-curves and NO self-crossing, narrowing to one complete tail. Head, every bend and tail tip inside frame with visible water/mud gaps between curves. No limbs, hood, horns, rattle or long venom fangs. Use irregular muted cool charcoal, deep petrol-olive and clay-gray diffuse patches without anaconda rosettes/yellow face band or python reticulation. A few submerged roots provide non-exact scale context but never hide the body. Distinct from wide S1. Reject modern species copy, duplicated head/tail, knots, discontinuity, crop, prey contact, text/logo/watermark or gore. Exact color/head/behavior reconstructive; representative promotion prohibited; no named-artist style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-11",
+        "method": "Original-size independent anatomy review plus integration-owner role and evidence-boundary review.",
+        "decision": "Accepted only as S2 review hold. The oblique channel view remains traceable from one head to one tail and supplies a non-repeating speculative pattern variant.",
+        "claimBoundary": "Perspective, exact proportions, color and markings are hypothetical; the image cannot outrank S1 without a separate anatomy-promotion review.",
+        "representativePromotionAllowed": false
+      }
+    },
+    "titanoboa-cerrejonensis-ecology-v1": {
+      "taxonId": "titanoboa-cerrejonensis",
+      "taxon": "Titanoboa cerrejonensis",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "kind": "anatomy review",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-11T08:02:42.221Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Project-owned S1 identity reference, non-contact Cerrejon ecology prompt, then original-size body-continuity, turtle separation, crop, attack and artifact review.",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-d27b3439-ecc9-4bd8-963a-15816892b290",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-d27b3439-ecc9-4bd8-963a-15816892b290.png",
+      "approvedProjectPath": "assets/dinosaurs/titanoboa-cerrejonensis-distant-turtle-ecology-imagegen-v1.png",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-c9a68e46-8771-49ca-802b-e82ff57c5839.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-c9a68e46-8771-49ca-802b-e82ff57c5839",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-c9a68e46-8771-49ca-802b-e82ff57c5839.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "925b92b322f1cecee4211a0e29b36fcd515cfeaafc2de34d542b37b642fb86dd",
+          "bytes": 2936344,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "sha256": "9bd2e587f59fbcee40d0046fd3c225e036c7741041641fe22e55725ef75474a2",
+      "bytes": 2716522,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Edit this Titanoboa cerrejonensis S3 ecology image with one narrow correction. Preserve the entire snake pixel-semantically: one head, one continuous body, both broad non-crossing curves, one tail, exact pose, scale pattern, water visibility, lighting, bank, forest, framing and all anatomy. Preserve the single small dark turtle near the far-center/top of the channel. Remove only the second extra pale turtle at the far-left water edge and replace it with ordinary clear shallow water, submerged leaves and natural ripples matching that local area. Do not add any new animal. Exactly one distant turtle remains. No changes to Titanoboa, no body discontinuity, no new coils, no text, logo or watermark. Original educational edit, no named-artist style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-11",
+        "method": "Original-size independent anatomy review plus integration-owner role and evidence-boundary review.",
+        "decision": "Accepted only as S3 anatomy review. One traceable Titanoboa and a distant non-diagnostic turtle remain spatially separate with no attack.",
+        "claimBoundary": "The turtle is fauna context only. No prey choice, chase, constriction, exact encounter, body-size relationship or observed behavior is asserted.",
+        "representativePromotionAllowed": false
+      }
+    },
+    "basilosaurus-isis-representative-v1": {
+      "taxonId": "basilosaurus-isis",
+      "taxon": "Basilosaurus isis",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-11T07:38:43.365Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Targeted edit of a project-generated draft to replace its vertical fish-like tail with a small horizontal fluke, followed by original-size skull, two-foreflipper, paired-tiny-hind-limb, no-dorsal-fin, tail and crop review.",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-5ece7103-20eb-45ef-9436-3717c94e3101",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-5ece7103-20eb-45ef-9436-3717c94e3101.png",
+      "approvedProjectPath": "assets/dinosaurs/basilosaurus-isis-longbody-tinyhindlimb-representative-imagegen-v1.png",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-28f11e33-cab7-4f6b-89d7-09756265ecda.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-28f11e33-cab7-4f6b-89d7-09756265ecda",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-28f11e33-cab7-4f6b-89d7-09756265ecda.png",
+          "pixelStatus": "deleted-rejected-private-original",
+          "factScope": "embedded pre-deletion PNG facts",
+          "sha256": "5c68f42bcf5baf13ebda34b6568b04e95a9d17eb3c2bca63d02031e30e5aa7f0",
+          "bytes": 1791124,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "sha256": "52d25a7be218a8f21c579b07930fa051e5294ca5c1068410d32d7f60f1454e86",
+      "bytes": 1847965,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Edit the supplied Basilosaurus isis paleoart with a strict anatomy correction. Preserve the same complete left-facing near-lateral body, long narrow skull, teeth, smooth mammal skin, two connected foreflippers, two tiny external hind limbs, proportions, color, lighting, water, seafloor, framing, and all anatomy outside the tail tip. Replace only the final caudal fin region. Remove the vertical fish-like tail fin entirely. The tail must taper through one continuous mammalian caudal peduncle into a small horizontal whale-like two-lobed fluke lying in the horizontal plane, with a shallow central notch. Use a very slight dorsal three-quarter visibility at the fluke only so both left and right lobes can be read without making them look like upper and lower fish-tail lobes. Keep the fluke much smaller and narrower than a modern baleen-whale fluke, as a conservative comparative reconstruction. No dorsal fin, no vertical caudal fin, no extra tail, no extra flippers or limbs, no crop, no text, logo, border, or watermark. Original anatomy-led educational edit; no named-artist style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-11",
+        "method": "Original-size independent anatomy review plus integration-owner role and evidence-boundary review.",
+        "decision": "Approved as the sole S1 count-level representative after tail correction. The long archaeocete body, two foreflippers, two tiny pelvic hind limbs and small horizontal fluke are readable.",
+        "claimBoundary": "Skull, elongate axial body and tiny hind limbs are fossil-led; the external horizontal fluke is a conservative comparative reconstruction and exact soft tissues, color and swimming pose remain hypothetical.",
+        "representativePromotionAllowed": true
+      }
+    },
+    "basilosaurus-isis-pattern-v1": {
+      "taxonId": "basilosaurus-isis",
+      "taxon": "Basilosaurus isis",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-11T07:49:51.857Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Project-owned corrected S1 identity reference, ventral-ascent color/composition prompt, then original-size appendage, horizontal-fluke, crop, reptile/fish-drift and artifact review.",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-52dcc934-c4bc-4d27-a165-a2dc18e554dd",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-52dcc934-c4bc-4d27-a165-a2dc18e554dd.png",
+      "approvedProjectPath": "assets/dinosaurs/basilosaurus-isis-ventral-ascent-petrol-pattern-imagegen-v1.png",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-5ece7103-20eb-45ef-9436-3717c94e3101.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-5ece7103-20eb-45ef-9436-3717c94e3101",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-5ece7103-20eb-45ef-9436-3717c94e3101.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "52d25a7be218a8f21c579b07930fa051e5294ca5c1068410d32d7f60f1454e86",
+          "bytes": 1847965,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "sha256": "1e3784b058e7283d3686a230a71f27888757acca81cc95c40f75e4d92db7c06e",
+      "bytes": 1769742,
+      "width": 1122,
+      "height": 1402,
+      "dimensions": "1122x1402",
+      "prompt": [
+        "Use the supplied project-generated Basilosaurus isis S1 v2 only as an identity reference. Create a fresh S2 color-and-composition review image, not a mirrored recolor. Portrait 4:5, one complete Basilosaurus rising diagonally from lower-left toward upper-right in a gentle right-facing ventral-front three-quarter view through open late Eocene Tethys water. Preserve one very long slender archaeocete whale body, long narrow toothed skull, nostrils back on the snout but not at the crown, exactly two foreflippers with separate connected roots, exactly two extremely tiny external hind limbs near the pelvis, and one continuous tail ending in a small HORIZONTAL two-lobed fluke seen with slight dorsal perspective. No dorsal fin. Keep snout, all paired appendages, and fluke inside frame with empty blue water around them. Use irregular deep petrol-blue, muted copper-gray and pale underside clouding, not a modern whale pattern. Reject vertical fish tail, eel tail, modern whale fluke, dorsal fin, crown blowhole, gill slits/scales, four large paddles, missing tiny hind limbs, extra fins, crop, text, logo, watermark, attack or gore. Original educational paleoart, representative promotion prohibited, no named-artist style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-11",
+        "method": "Original-size independent anatomy review plus integration-owner role and evidence-boundary review.",
+        "decision": "Accepted only as S2 review hold. The distinct ascent composition retains the long body, paired foreflippers, tiny paired hind limbs and small horizontal fluke.",
+        "claimBoundary": "Perspective, skin color, mottling, lighting and locomotor moment are hypothetical; representative promotion is prohibited without a separate anatomy audit.",
+        "representativePromotionAllowed": false
+      }
+    },
+    "basilosaurus-isis-ecology-v1": {
+      "taxonId": "basilosaurus-isis",
+      "taxon": "Basilosaurus isis",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "kind": "anatomy review",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-11T08:08:19.865Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Targeted correction of a project-generated ecology draft using corrected S1 as anatomy control, then original-size appendage, small horizontal-fluke, fish-school separation, crop and attack review.",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-b29639aa-3655-4841-b4dd-56a3814e610a",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-b29639aa-3655-4841-b4dd-56a3814e610a.png",
+      "approvedProjectPath": "assets/dinosaurs/basilosaurus-isis-fishschool-tethys-ecology-imagegen-v1.png",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-60680e54-90d0-49ef-9362-242d2b3b84de.png",
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-5ece7103-20eb-45ef-9436-3717c94e3101.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-60680e54-90d0-49ef-9362-242d2b3b84de",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-60680e54-90d0-49ef-9362-242d2b3b84de.png",
+          "pixelStatus": "deleted-rejected-private-original",
+          "factScope": "embedded pre-deletion PNG facts",
+          "sha256": "5d3f80d33d711fb00821d82261938bde188bcd28733ab65257e202169ad01f85",
+          "bytes": 2264156,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        },
+        {
+          "callId": "exec-5ece7103-20eb-45ef-9436-3717c94e3101",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-5ece7103-20eb-45ef-9436-3717c94e3101.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "52d25a7be218a8f21c579b07930fa051e5294ca5c1068410d32d7f60f1454e86",
+          "bytes": 1847965,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "sha256": "78eb6e4441574ec47bfdb1812b85fa282c23630716e2a866c211ce432a589e46",
+      "bytes": 2109330,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Edit and scientifically correct Image 1 into a wide ecological gallery scene of ONE adult Basilosaurus isis swimming above a late Eocene Tethys seafloor, using Image 2 only as the project-owned identity/anatomy control. Preserve the valuable wide composition, distant fish school, long serpentine-but-cetacean body, and open underwater depth, but correct the tail and keep the animal fully inside the frame.\n\nANATOMY LOCK: extremely elongated archaeocete whale body with one long low head and heterodont teeth; exactly two foreflippers attached near the chest; exactly two tiny vestigial external hind limbs near the pelvis; no extra fins or limbs. The tail must end in ONE small horizontal cetacean tail fluke, spreading left-right in the animal's anatomical plane. Because this is a side-oblique view, show the fluke as a shallow, clearly horizontal left-right pair of lobes, not as a vertical fish tail with upper and lower lobes. No dorsal fin, no blowhole caricature, no baleen, no eel fin fringe, no shark gills. Keep every limb and the full tail connection readable.\n\nECOLOGY ROLE: the animal cruises calmly near a loose fish school without contact; warm blue-green late Eocene Tethys water, patchy seagrass and shells, soft sun shafts, documentary realism. The fish school is background context only and must not merge with the whale. No text, labels, or watermark.\n\nREJECT if the tail is vertical, forked up-down, fish-like, absent, cropped, or disconnected; if the two tiny hind limbs are missing; if there are extra flippers; or if the body becomes a modern whale, eel, or sea serpent."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-11",
+        "method": "Original-size independent anatomy review plus integration-owner role and evidence-boundary review.",
+        "decision": "Accepted only as S3 anatomy review after tail repair. The complete whale and distant loose fish school remain separate with no chase or bite.",
+        "claimBoundary": "Fish are non-diagnostic context. Seafloor community, exact place, schooling response, diet event, pursuit and encounter are not established by the image.",
+        "representativePromotionAllowed": false
+      }
+    },
+    "paraceratherium-transouralicum-representative-v1": {
+      "taxonId": "paraceratherium-transouralicum",
+      "taxon": "Paraceratherium transouralicum",
+      "gallerySlot": 1,
+      "galleryRole": "representative",
+      "kind": "count-level pass",
+      "status": "approved",
+      "representativeEligible": true,
+      "generatedAt": "2026-08-11T07:36:42.808Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Fossil-led prompt-to-image followed by original-size hornless-head, neck, four-limb, four-foot, tail, elephant/giraffe/sauropod drift, crop and artifact review.",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-fd17ae3d-fce7-4a40-bf68-09cba3529697",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-fd17ae3d-fce7-4a40-bf68-09cba3529697.png",
+      "approvedProjectPath": "assets/dinosaurs/paraceratherium-transouralicum-hornless-longneck-representative-imagegen-v1.png",
+      "referenceImages": [],
+      "referenceImageRecords": [],
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "sha256": "20b9a91537da8862689bbff3024205a5b177a737470e91b9ccdf10d6ff60778a",
+      "bytes": 2502311,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Use case: scientific-educational.\nAsset type: Dino Atlas Cenozoic gallery S1 representative for Korean children ages 5–14.\nCreate one original, copyright-safe, museum-quality paleoart image of one adult Paraceratherium transouralicum in a complete right-facing lateral side profile.\nScene: Oligocene Central Asian open woodland, firm pale soil, low shrubs and scattered trees with an open horizon; no other animals.\nIdentity and anatomy lock: exactly one enormous hornless rhinocerotoid; very tall but robust body on exactly four long, sturdy weight-bearing legs; shoulders and hips powerful, trunk deep but not elephant-like; long muscular neck held forward and upward, substantially longer than a modern rhino but not a sauropod or giraffe neck; relatively small elongated hornless head with a downturned nasal region and conservative mobile upper lip only—no elephant trunk; no tusks visible; small rounded ears; one short slender tail; four distinct feet, each with the broad three-toed rhinocerotoid direction readable where perspective permits. Short sparse coat, no thick wool.\nFraming: horizontal 16:9, strict full-body lateral identity view, full head, four feet and tail inside frame with generous margins; calm slow walk; ground plane separates all four limbs.\nColor: muted dusty umber, gray-olive and pale underside as speculative soft tissue.\nReject: nasal horn, elephant trunk, tusks, huge elephant ears, giraffe spots, giraffe ossicones, horse head, camel hump, sauropod neck or tail, rhino barrel on stilt-thin legs, five-toed elephant feet, hidden/fused/extra legs, three-legged read, forked tail, humans, attack, text, labels, logo, border, watermark. No named-artist style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-11",
+        "method": "Original-size independent anatomy review plus integration-owner role and evidence-boundary review.",
+        "decision": "Approved as the sole S1 count-level representative. The hornless elongated head, long muscular neck, deep body, four sturdy limbs, four feet and one short tail are readable.",
+        "claimBoundary": "Fossils constrain the giant hornless rhinocerotoid body plan; exact mass, proportions, mobile lip, soft tissue, coat, foot visibility, color and pose retain reconstruction uncertainty.",
+        "representativePromotionAllowed": true
+      }
+    },
+    "paraceratherium-transouralicum-pattern-v1": {
+      "taxonId": "paraceratherium-transouralicum",
+      "taxon": "Paraceratherium transouralicum",
+      "gallerySlot": 2,
+      "galleryRole": "color-pattern",
+      "kind": "review hold",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-11T07:51:37.368Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Project-owned S1 identity reference, front-three-quarter reroute after a rear-view foot-continuity failure, then original-size four-limb, four-foot, neck, tail, crop and taxon-drift review.",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-722f8226-1f3c-46a6-8291-ed8e4612023a",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-722f8226-1f3c-46a6-8291-ed8e4612023a.png",
+      "approvedProjectPath": "assets/dinosaurs/paraceratherium-transouralicum-frontthreequarter-fourfoot-pattern-imagegen-v1.png",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-fd17ae3d-fce7-4a40-bf68-09cba3529697.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-fd17ae3d-fce7-4a40-bf68-09cba3529697",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-fd17ae3d-fce7-4a40-bf68-09cba3529697.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "20b9a91537da8862689bbff3024205a5b177a737470e91b9ccdf10d6ff60778a",
+          "bytes": 2502311,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "sha256": "d6ca231ba38c366df86559ce57d39986b825561921039a4a9091cfcbe225873a",
+      "bytes": 2804459,
+      "width": 1122,
+      "height": 1402,
+      "dimensions": "1122x1402",
+      "prompt": [
+        "Use the supplied project-generated Paraceratherium transouralicum S1 only as identity reference. Generate a completely fresh S2 portrait 4:5 high FRONT three-quarter view, moving diagonally toward the lower-left across a broad bare Oligocene gravel bar. Exactly one complete hornless giant rhinocerotoid. Mandatory count-level composition: exactly FOUR connected legs—two forelegs and two hindlegs—and exactly FOUR complete feet must all be visible in separate non-overlapping patches of bare ground. Arrange an open walking stance: near forefoot lower-left, far forefoot upper-left, near hindfoot lower-right, far hindfoot upper-right, with daylight/ground gaps between every leg and foot. Each foot has the broad three-toed rhinocerotoid direction; no foot hidden behind belly, another limb, stone, dust, or crop. Preserve small elongated hornless head, long muscular neck, deep enormous body, sturdy non-stilt legs, one short tail. Turn the head gently toward camera. Use cool slate-gray, muted plum-brown and cream irregular variation. This must not repeat the flat lateral S1.\nReject three-legged read, hidden far foreleg or hindleg, fused/crossed legs, elephant feet, horn, elephant trunk/tusks/ears, giraffe, camel, sauropod, crop, text, logo, watermark, attack. Original educational paleoart; representative promotion prohibited; no named-artist style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-11",
+        "method": "Original-size independent anatomy review plus integration-owner role and evidence-boundary review.",
+        "decision": "Accepted only as S2 review hold. The front three-quarter view keeps four connected legs and four separated feet readable while diversifying composition and color.",
+        "claimBoundary": "Perspective, exact foot digit visibility, color, pattern and soft tissue are hypothetical; representative promotion is prohibited without a separate anatomy audit.",
+        "representativePromotionAllowed": false
+      }
+    },
+    "paraceratherium-transouralicum-ecology-v1": {
+      "taxonId": "paraceratherium-transouralicum",
+      "taxon": "Paraceratherium transouralicum",
+      "gallerySlot": 3,
+      "galleryRole": "habitat-ecology",
+      "kind": "anatomy review",
+      "status": "approved",
+      "representativeEligible": false,
+      "generatedAt": "2026-08-11T07:49:18.385Z",
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Project-owned S1 identity reference, wide high-browse ecology prompt, then original-size hornless-head, four-limb, four-foot, branch separation, crop and artifact review.",
+      "seed": "service-assigned, not exposed",
+      "callId": "exec-326ad5ef-f82d-4e38-b8fe-59c925226490",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-326ad5ef-f82d-4e38-b8fe-59c925226490.png",
+      "approvedProjectPath": "assets/dinosaurs/paraceratherium-transouralicum-high-browse-ecology-imagegen-v1.png",
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-fd17ae3d-fce7-4a40-bf68-09cba3529697.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-fd17ae3d-fce7-4a40-bf68-09cba3529697",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-fd17ae3d-fce7-4a40-bf68-09cba3529697.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "20b9a91537da8862689bbff3024205a5b177a737470e91b9ccdf10d6ff60778a",
+          "bytes": 2502311,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "sha256": "61ecd573630322c68f6943939c3dbb535703e91519c910afd749487d61601b52",
+      "bytes": 2477313,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Use the supplied project-generated Paraceratherium transouralicum S1 only as an identity reference. Create a fresh S3 habitat-ecology scene. Horizontal 16:9, low front-side three-quarter camera in an Oligocene Central Asian open woodland. Exactly one complete Paraceratherium stands at a tall sparse shrub, calmly reaching with its long muscular neck toward high leaves. Keep the hornless small elongated head and flexible upper lip conservative—no trunk. Exactly four long sturdy legs and four broad three-toed feet remain individually visible and attached on open firm soil; one short tail fully visible. Subject occupies about 55% of frame and faces left-to-right on a diagonal, distinctly different from the flat lateral S1 and high rear S2. A few broken twigs and leaves may fall naturally, but no feeding certainty beyond broad browsing direction, no herd, parent/young, predator or interaction. Warm dusty late afternoon, irregular gray-umber hide. Reject elephant/giraffe/camel/sauropod drift, horn, trunk, tusks, hidden legs, three-legged read, crop, text, logo, watermark, attack or gore. Original evidence-bounded educational paleoecology, no named-artist style."
+      ],
+      "review": {
+        "reviewedAt": "2026-08-11",
+        "method": "Original-size independent anatomy review plus integration-owner role and evidence-boundary review.",
+        "decision": "Accepted only as S3 anatomy review. One complete animal remains readable while browsing from a high branch in a distinct wide setting.",
+        "claimBoundary": "High browsing is a functional ecological reconstruction; exact plant taxon, feeding event, reach, posture, site, season and soft tissue are hypothetical.",
+        "representativePromotionAllowed": false
+      }
+    }
+  },
+  "rejectedAttempts": [
+    {
+      "taxonId": "arthropleura-armata",
+      "taxon": "Arthropleura armata",
+      "intendedRole": "S1 representative",
+      "status": "rejected-source-deleted",
+      "callId": "exec-e9d46802-2c2c-472c-aef0-fe71e3741efe",
+      "generatedAt": "2026-08-11T07:33:42.620Z",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-e9d46802-2c2c-472c-aef0-fe71e3741efe.png",
+      "copiedToProjectBeforeRejection": false,
+      "formerProjectPath": null,
+      "projectCopyPresent": false,
+      "referencedByApp": false,
+      "sourceFileExpectedPresent": false,
+      "sourceFilePresentAtBuild": false,
+      "retainedInPrivateGenerationCache": false,
+      "pixelsRetained": false,
+      "referenceImages": [],
+      "referenceImageRecords": [],
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Anatomy-led generation or project-generated-reference edit followed by original-size rejection review.",
+      "seed": "service-assigned, not exposed",
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "fileFactScope": "embedded pre-deletion source PNG metadata; source path verified absent",
+      "preDeletionFileFacts": {
+        "sha256": "6c878f5e64cd5a924bb7f9fe63e3bb9fb5aaf713eca763633451d5bb71c2bbfd",
+        "bytes": 2744874,
+        "width": 1672,
+        "height": 941,
+        "dimensions": "1672x941"
+      },
+      "sha256": "6c878f5e64cd5a924bb7f9fe63e3bb9fb5aaf713eca763633451d5bb71c2bbfd",
+      "bytes": 2744874,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Use case: scientific-educational.\nAsset type: Dino Atlas Paleozoic gallery S1 representative for Korean children ages 5–14.\nCreate one original, copyright-safe, museum-quality paleoart image of a conservative adult Arthropleura armata in a clean full-body left-facing lateral side profile.\nScene: late Carboniferous European equatorial floodplain margin, damp firm silt, low lycopsid litter and sparse low plants, open uncluttered ground immediately around the animal.\nIdentity and anatomy lock: exactly one complete animal; very low, broad, dorsoventrally flattened giant myriapod body; a long sequence of repeated broad overlapping dorsal tergite units with wide lateral lobes, naturally varied rather than copied like wallpaper; many short jointed walking legs arranged continuously beneath both sides, with the visible near-side leg bases connected to the trunk and no long centipede legs; small low rounded head partly sheltered by the first body shield, two short slender antennae only, no huge eyes or jaws; posterior body narrows gradually to one single terminal end. The exact adult head is incompletely known, so keep it plain and conservative.\nFraming: horizontal 16:9, exact eye-level side profile, entire head, every body edge, all visible legs, and tail end inside the frame with generous margin; animal occupies about 72% of frame width; crisp anatomy against bare silt.\nColor: muted charcoal brown, russet and moss-olive irregular segment-to-segment variation as a hypothesis.\nReject: centipede forcipules or venom claws, one pair of legs per segment, millipede cylinder or tight coil, trilobite sea animal, insect wings, lobster tail, giant mandibles, fantasy spikes, mirrored or duplicated head/tail, repeated identical stamped plates or footprints, missing leg runs, tangled vegetation, text, labels, logo, border, watermark, humans, attack or gore. No named-artist style."
+      ],
+      "rejectionReason": "Superseded after the 2024 head evidence review: the prompt and output used an obsolete plain rounded head/no-large-eye boundary and did not preserve the paired stalked-eye plus diplotergite two-successive-leg-pair gate required by the corrected S1 route.",
+      "preDeletionDisposition": "Never copied; replaced by exec-f7a3f98b after a fossil-led identity correction.",
+      "deletionDisposition": "Rejected source PNG removed from the private generation cache under the standing complete-reject policy; the builder verifies that the exact path is absent and never performs deletion itself.",
+      "recoverability": "The PNG is not retained in git or the project. It may remain recoverable from the Windows Recycle Bin until that bin is emptied; after purge, only the exact prompt, call ID, lineage and embedded pre-deletion file facts remain."
+    },
+    {
+      "taxonId": "arthropleura-armata",
+      "taxon": "Arthropleura armata",
+      "intendedRole": "S2 color-pattern",
+      "status": "rejected-source-deleted",
+      "callId": "exec-970907d4-ea26-4f2c-878c-ef150165754c",
+      "generatedAt": "2026-08-11T07:41:50.949Z",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-970907d4-ea26-4f2c-878c-ef150165754c.png",
+      "copiedToProjectBeforeRejection": false,
+      "formerProjectPath": null,
+      "projectCopyPresent": false,
+      "referencedByApp": false,
+      "sourceFileExpectedPresent": false,
+      "sourceFilePresentAtBuild": false,
+      "retainedInPrivateGenerationCache": false,
+      "pixelsRetained": false,
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-e9d46802-2c2c-472c-aef0-fe71e3741efe.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-e9d46802-2c2c-472c-aef0-fe71e3741efe",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-e9d46802-2c2c-472c-aef0-fe71e3741efe.png",
+          "pixelStatus": "deleted-rejected-private-original",
+          "factScope": "embedded pre-deletion PNG facts",
+          "sha256": "6c878f5e64cd5a924bb7f9fe63e3bb9fb5aaf713eca763633451d5bb71c2bbfd",
+          "bytes": 2744874,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Anatomy-led generation or project-generated-reference edit followed by original-size rejection review.",
+      "seed": "service-assigned, not exposed",
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "fileFactScope": "embedded pre-deletion source PNG metadata; source path verified absent",
+      "preDeletionFileFacts": {
+        "sha256": "2df03f704697e347785f3d944eeed512f5ec030e0ad1d0e1352d87a317920f7e",
+        "bytes": 2546124,
+        "width": 1122,
+        "height": 1402,
+        "dimensions": "1122x1402"
+      },
+      "sha256": "2df03f704697e347785f3d944eeed512f5ec030e0ad1d0e1352d87a317920f7e",
+      "bytes": 2546124,
+      "width": 1122,
+      "height": 1402,
+      "dimensions": "1122x1402",
+      "prompt": [
+        "Using the supplied project-generated Arthropleura armata S1 only as an identity reference, create a fresh S2 gallery color-and-composition variant. Keep exactly one anatomically conservative Arthropleura: low broad flattened multi-segment body, wide overlapping dorsal tergites with natural size variation, many continuous short legs attached beneath the trunk, small plain rounded head with exactly two slender antennae, and one gradually narrowing posterior end. New composition must be clearly different from the lateral representative: portrait 4:5, right-facing high front three-quarter view from about 30 degrees above, the animal moves diagonally from lower-left toward upper-right across open wet charcoal silt; every body edge, head, antennae, continuous leg runs and terminal end remain inside frame. Use irregular midnight-blue, oxidized copper and muted moss patches that change softly across plates; no identical repeated stripes. Bare gaps around legs for count and connection review. Late Carboniferous open river margin, sparse small plants only. Do not copy the reference pose, direction, scale, lighting or background. Reject centipede venom claws, cylindrical millipede coil, isopod sea animal, insect wings, giant jaws, one isolated leg pair only per whole body section, duplicated head/tail, missing leg runs, perfectly stamped plate pattern, cropped anatomy, text, logo, watermark, attack or gore. Original educational paleoart, no named-artist style."
+      ],
+      "rejectionReason": "Inherited the rejected first S1's obsolete plain-head identity boundary, so it could not remain in the gallery after the stalked-eye and diplotergite correction.",
+      "preDeletionDisposition": "Never copied; regenerated from corrected S1 as exec-99d84761.",
+      "deletionDisposition": "Rejected source PNG removed from the private generation cache under the standing complete-reject policy; the builder verifies that the exact path is absent and never performs deletion itself.",
+      "recoverability": "The PNG is not retained in git or the project. It may remain recoverable from the Windows Recycle Bin until that bin is emptied; after purge, only the exact prompt, call ID, lineage and embedded pre-deletion file facts remain."
+    },
+    {
+      "taxonId": "arthropleura-armata",
+      "taxon": "Arthropleura armata",
+      "intendedRole": "S3 habitat-ecology",
+      "status": "rejected-source-deleted",
+      "callId": "exec-09769592-eabd-4ffb-bd8f-2e96bbabb0ee",
+      "generatedAt": "2026-08-11T07:42:48.907Z",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-09769592-eabd-4ffb-bd8f-2e96bbabb0ee.png",
+      "copiedToProjectBeforeRejection": false,
+      "formerProjectPath": null,
+      "projectCopyPresent": false,
+      "referencedByApp": false,
+      "sourceFileExpectedPresent": false,
+      "sourceFilePresentAtBuild": false,
+      "retainedInPrivateGenerationCache": false,
+      "pixelsRetained": false,
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-e9d46802-2c2c-472c-aef0-fe71e3741efe.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-e9d46802-2c2c-472c-aef0-fe71e3741efe",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-e9d46802-2c2c-472c-aef0-fe71e3741efe.png",
+          "pixelStatus": "deleted-rejected-private-original",
+          "factScope": "embedded pre-deletion PNG facts",
+          "sha256": "6c878f5e64cd5a924bb7f9fe63e3bb9fb5aaf713eca763633451d5bb71c2bbfd",
+          "bytes": 2744874,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Anatomy-led generation or project-generated-reference edit followed by original-size rejection review.",
+      "seed": "service-assigned, not exposed",
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "fileFactScope": "embedded pre-deletion source PNG metadata; source path verified absent",
+      "preDeletionFileFacts": {
+        "sha256": "aace26d442ea27141f6cee7df00d3f22fd5c3d00cd3bdd250680d40fe30d6dce",
+        "bytes": 2428491,
+        "width": 1672,
+        "height": 941,
+        "dimensions": "1672x941"
+      },
+      "sha256": "aace26d442ea27141f6cee7df00d3f22fd5c3d00cd3bdd250680d40fe30d6dce",
+      "bytes": 2428491,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Using the supplied project-generated Arthropleura armata S1 only as an identity reference, create a fresh S3 wide habitat-ecology scene. Exactly one complete Arthropleura is the readable foreground subject, moving slowly across an open late Carboniferous floodplain after rain. Preserve the low broad flattened body, many varied overlapping tergites, small head with two antennae, continuous many short legs and one tapering terminal end. Compose horizontal 16:9 from a low rear-side three-quarter camera, animal occupying about 48% of frame width and moving away toward the left across pale damp silt. In the far upper-right background, include exactly one tiny Meganeura-like stem odonatopteran in flight only as non-contact atmospheric fauna context: four narrow wings and six legs need not be count evidence at that distance. Keep several body lengths of empty space between them. Add only two or three irregular, incomplete substrate scuffs behind the Arthropleura, different in spacing, rotation, depth and visibility; never a regular stamped footprint trail and never claim the track maker diagnostically. Lycopsids, horsetails and seed ferns form a distant layered wetland edge without obscuring the subject. Calm coexistence, no feeding or attack claim. Reject herds, duplicate animals, touching, prey pursuit, perfect repeated tracks, centipede fangs, coiled millipede, fantasy spikes, cropped head/tail/legs, text, logo, watermark or gore. Original evidence-bounded educational paleoecology, no named-artist style."
+      ],
+      "rejectionReason": "Inherited the rejected first S1's obsolete head and trunk/leg identity boundary; broad ecology value did not override the focal-animal identity gate.",
+      "preDeletionDisposition": "Never copied; regenerated from corrected identities as exec-300725a2.",
+      "deletionDisposition": "Rejected source PNG removed from the private generation cache under the standing complete-reject policy; the builder verifies that the exact path is absent and never performs deletion itself.",
+      "recoverability": "The PNG is not retained in git or the project. It may remain recoverable from the Windows Recycle Bin until that bin is emptied; after purge, only the exact prompt, call ID, lineage and embedded pre-deletion file facts remain."
+    },
+    {
+      "taxonId": "meganeura-monyi",
+      "taxon": "Meganeura monyi",
+      "intendedRole": "S1 representative",
+      "status": "rejected-source-deleted",
+      "callId": "exec-9dc10616-169f-405c-91e3-76e7cdc43d9e",
+      "generatedAt": "2026-08-11T07:34:19.120Z",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-9dc10616-169f-405c-91e3-76e7cdc43d9e.png",
+      "copiedToProjectBeforeRejection": false,
+      "formerProjectPath": null,
+      "projectCopyPresent": false,
+      "referencedByApp": false,
+      "sourceFileExpectedPresent": false,
+      "sourceFilePresentAtBuild": false,
+      "retainedInPrivateGenerationCache": false,
+      "pixelsRetained": false,
+      "referenceImages": [],
+      "referenceImageRecords": [],
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Anatomy-led generation or project-generated-reference edit followed by original-size rejection review.",
+      "seed": "service-assigned, not exposed",
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "fileFactScope": "embedded pre-deletion source PNG metadata; source path verified absent",
+      "preDeletionFileFacts": {
+        "sha256": "6447fe6dda1d4340019419d4fa64a3382d49e8bda120412998bed64d857f3284",
+        "bytes": 2698662,
+        "width": 1672,
+        "height": 941,
+        "dimensions": "1672x941"
+      },
+      "sha256": "6447fe6dda1d4340019419d4fa64a3382d49e8bda120412998bed64d857f3284",
+      "bytes": 2698662,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Use case: scientific-educational.\nAsset type: Dino Atlas Paleozoic gallery S1 representative for Korean children ages 5–14.\nCreate one original, copyright-safe, museum-quality paleoart image of Meganeura monyi in a basic full-body left-facing lateral side view, resting with its wings spread on an open pale Carboniferous streambank.\nIdentity and anatomy lock: exactly one complete giant stem-odonatopteran; exactly one head, one thorax and one long slender segmented abdomen tapering to one end; exactly six jointed legs attached only to the thorax, three near-side legs clearly separated and the far-side legs naturally offset; exactly four long narrow membranous wings, one forewing and one hindwing per side, with all four wing roots connected to the thorax and all four tips visible; dense irregular branching net-veins, transparent membrane, no scales; broad insect head with two large compound eyes kept conservative because soft-tissue details are reconstructed. Approximate adult wingspan around 70 cm, without a human scale.\nFraming: horizontal 16:9, near-orthographic lateral identity plate with a slight elevated view only enough to separate all four wings; full wing tips, legs, abdomen and head inside frame, generous blank silt around the silhouette.\nScene: late Carboniferous Commentry-style lake and open forest edge, distant lycopsids and seed ferns softly out of focus, no branches crossing the animal.\nColor: muted smoky amber, slate and copper accents, speculative and not copied from any living dragonfly.\nReject: six wings, two wings, eight legs, legs growing from abdomen, butterfly or moth scales, damselfly needle body, modern dragonfly species copy, bird feathers, fantasy stinger, duplicated head or abdomen, cropped wing tips, regular wallpaper veins, text, label, logo, border, watermark, humans, attack or gore. No named-artist style."
+      ],
+      "rejectionReason": "Failed the original-size appendage gate: four independently connected wing roots and exactly six separately connected thoracic legs were not all reliably countable.",
+      "preDeletionDisposition": "Never copied; a stricter count-layout route followed.",
+      "deletionDisposition": "Rejected source PNG removed from the private generation cache under the standing complete-reject policy; the builder verifies that the exact path is absent and never performs deletion itself.",
+      "recoverability": "The PNG is not retained in git or the project. It may remain recoverable from the Windows Recycle Bin until that bin is emptied; after purge, only the exact prompt, call ID, lineage and embedded pre-deletion file facts remain."
+    },
+    {
+      "taxonId": "meganeura-monyi",
+      "taxon": "Meganeura monyi",
+      "intendedRole": "S1 representative",
+      "status": "rejected-source-deleted",
+      "callId": "exec-48c4dad6-d5b8-4238-8614-0616929b31d2",
+      "generatedAt": "2026-08-11T07:45:43.601Z",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-48c4dad6-d5b8-4238-8614-0616929b31d2.png",
+      "copiedToProjectBeforeRejection": false,
+      "formerProjectPath": null,
+      "projectCopyPresent": false,
+      "referencedByApp": false,
+      "sourceFileExpectedPresent": false,
+      "sourceFilePresentAtBuild": false,
+      "retainedInPrivateGenerationCache": false,
+      "pixelsRetained": false,
+      "referenceImages": [],
+      "referenceImageRecords": [],
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Anatomy-led generation or project-generated-reference edit followed by original-size rejection review.",
+      "seed": "service-assigned, not exposed",
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "fileFactScope": "embedded pre-deletion source PNG metadata; source path verified absent",
+      "preDeletionFileFacts": {
+        "sha256": "2aa531366d4c6eb442f60ec30e5a20b7394c90c94a4ccee096d43f006b6d87d4",
+        "bytes": 2985416,
+        "width": 1672,
+        "height": 941,
+        "dimensions": "1672x941"
+      },
+      "sha256": "2aa531366d4c6eb442f60ec30e5a20b7394c90c94a4ccee096d43f006b6d87d4",
+      "bytes": 2985416,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Use case: scientific-educational. Create one original museum-quality S1 representative of Meganeura monyi for Dino Atlas ages 5–14. Horizontal 16:9, exactly one complete giant stem-odonatopteran resting left-facing on a broad bare late Carboniferous streambank. A 20-degree elevated lateral identity view must keep all anatomy separated and inside frame.\nExactly one head, one thorax and one long slender segmented abdomen. Exactly SIX legs, all attached only to the thorax: three near-side legs placed in separate non-overlapping ground positions and three far-side legs visibly offset behind, so six connections and six feet can be counted. Exactly FOUR long narrow membranous wings: left forewing, left hindwing, right forewing, right hindwing; four distinct roots attach in anterior/posterior pairs to the thorax, with clear air gaps between roots and all four tips visible. Use dense irregular archaic griffinfly venation with no modern dragonfly nodus, no arculus and no copied modern pterostigma; wing membrane transparent and scaleless. Broad conservative insect head with two large compound eyes. The approximate 65–70 cm wingspan is suggested by a nearby small seed-fern frond about half the wing length, without labels or humans.\nMuted smoky charcoal, bronze and dull amber; no living dragonfly species pattern. Reject modern dragonfly exact copy, damselfly, butterfly scales, two or six wings, eight legs, legs from abdomen, all wings from one fused root, identical wallpaper venation, fantasy stinger, crop, text, logo, watermark, attack or gore. No named-artist style."
+      ],
+      "rejectionReason": "The second whole-body attempt still did not make the required four wing attachments and six thoracic legs unambiguous at original size.",
+      "preDeletionDisposition": "Never copied; replaced by the accepted stricter S1 exec-504155d7.",
+      "deletionDisposition": "Rejected source PNG removed from the private generation cache under the standing complete-reject policy; the builder verifies that the exact path is absent and never performs deletion itself.",
+      "recoverability": "The PNG is not retained in git or the project. It may remain recoverable from the Windows Recycle Bin until that bin is emptied; after purge, only the exact prompt, call ID, lineage and embedded pre-deletion file facts remain."
+    },
+    {
+      "taxonId": "meganeura-monyi",
+      "taxon": "Meganeura monyi",
+      "intendedRole": "S2 color-pattern",
+      "status": "rejected-source-deleted",
+      "callId": "exec-86d9ecf5-88c5-40d7-bdd3-933ff196f046",
+      "generatedAt": "2026-08-11T07:56:51.317Z",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-86d9ecf5-88c5-40d7-bdd3-933ff196f046.png",
+      "copiedToProjectBeforeRejection": false,
+      "formerProjectPath": null,
+      "projectCopyPresent": false,
+      "referencedByApp": false,
+      "sourceFileExpectedPresent": false,
+      "sourceFilePresentAtBuild": false,
+      "retainedInPrivateGenerationCache": false,
+      "pixelsRetained": false,
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-504155d7-ada5-4116-819f-f602481a1ec2.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-504155d7-ada5-4116-819f-f602481a1ec2",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-504155d7-ada5-4116-819f-f602481a1ec2.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "8aa9437480310ac74b0a32c2cba226c74bc266fec5ce571acfddf685edc83c2d",
+          "bytes": 3025843,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Anatomy-led generation or project-generated-reference edit followed by original-size rejection review.",
+      "seed": "service-assigned, not exposed",
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "fileFactScope": "embedded pre-deletion source PNG metadata; source path verified absent",
+      "preDeletionFileFacts": {
+        "sha256": "f7a876d4cc56cd248a48722693c47a4713322391955eaf491a586c042b6c5673",
+        "bytes": 2575660,
+        "width": 1122,
+        "height": 1402,
+        "dimensions": "1122x1402"
+      },
+      "sha256": "f7a876d4cc56cd248a48722693c47a4713322391955eaf491a586c042b6c5673",
+      "bytes": 2575660,
+      "width": 1122,
+      "height": 1402,
+      "dimensions": "1122x1402",
+      "prompt": [
+        "Use supplied project-generated Meganeura monyi v3 only as identity reference. Create a fresh S2 portrait 4:5 color/composition review image. Exactly one giant griffinfly lifts gently from an open pale Carboniferous sandbar, right-facing in a low ventral-front three-quarter view. Count lock: exactly FOUR narrow transparent wings with four separate thoracic roots and clear gaps—left/right forewings swept upward, left/right hindwings swept outward/downward; exactly SIX legs attached only to thorax, arranged as three paired rows and all six complete feet visible below the body without overlap. One head, thorax, long segmented abdomen and one tip. Keep archaic dense irregular venation without modern nodus/arculus/pterostigma. Use muted petrol, copper and pale smoky membranes, no living dragonfly pattern. Whole wing tips/legs/abdomen in frame. Distinct from top-down S1. Reject 3/5/6 wings, 4/7/8 legs, fused roots, modern species copy, butterfly scales, crop, text/logo/watermark, attack/gore. Color and exact flight pose hypothetical; representative promotion prohibited. No named-artist style."
+      ],
+      "rejectionReason": "The low ventral flight attempt failed exact six-leg readability; overlapping or accessory leg-like forms made count-level use unsafe.",
+      "preDeletionDisposition": "Never copied; additional correction routes were tested.",
+      "deletionDisposition": "Rejected source PNG removed from the private generation cache under the standing complete-reject policy; the builder verifies that the exact path is absent and never performs deletion itself.",
+      "recoverability": "The PNG is not retained in git or the project. It may remain recoverable from the Windows Recycle Bin until that bin is emptied; after purge, only the exact prompt, call ID, lineage and embedded pre-deletion file facts remain."
+    },
+    {
+      "taxonId": "meganeura-monyi",
+      "taxon": "Meganeura monyi",
+      "intendedRole": "S2 color-pattern",
+      "status": "rejected-source-deleted",
+      "callId": "exec-ac000020-80f6-4be9-8771-c4a137d86b4a",
+      "generatedAt": "2026-08-11T08:06:58.766Z",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-ac000020-80f6-4be9-8771-c4a137d86b4a.png",
+      "copiedToProjectBeforeRejection": false,
+      "formerProjectPath": null,
+      "projectCopyPresent": false,
+      "referencedByApp": false,
+      "sourceFileExpectedPresent": false,
+      "sourceFilePresentAtBuild": false,
+      "retainedInPrivateGenerationCache": false,
+      "pixelsRetained": false,
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-504155d7-ada5-4116-819f-f602481a1ec2.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-504155d7-ada5-4116-819f-f602481a1ec2",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-504155d7-ada5-4116-819f-f602481a1ec2.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "8aa9437480310ac74b0a32c2cba226c74bc266fec5ce571acfddf685edc83c2d",
+          "bytes": 3025843,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Anatomy-led generation or project-generated-reference edit followed by original-size rejection review.",
+      "seed": "service-assigned, not exposed",
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "fileFactScope": "embedded pre-deletion source PNG metadata; source path verified absent",
+      "preDeletionFileFacts": {
+        "sha256": "c02c587a3289dab9162fb4ad86ddc636569283156c801f6f246183b8cdc2ac89",
+        "bytes": 2051105,
+        "width": 1122,
+        "height": 1402,
+        "dimensions": "1122x1402"
+      },
+      "sha256": "c02c587a3289dab9162fb4ad86ddc636569283156c801f6f246183b8cdc2ac89",
+      "bytes": 2051105,
+      "width": 1122,
+      "height": 1402,
+      "dimensions": "1122x1402",
+      "prompt": [
+        "Create a scientifically careful, photorealistic paleoart reconstruction of ONE adult Meganeura monyi in a distinctly different gallery composition from a flat side-profile. Use Image 1 only as the project-owned identity control. Portrait 4:5, low ventral three-quarter view as the animal banks gently above an open late Carboniferous floodplain. The whole animal must fit with clear empty sky around every appendage.\n\nCOUNT-LEVEL ANATOMY LOCK: exactly four wings, arranged as two independently attached forewings and two independently attached hindwings from the thorax, left and right pairs clearly separated; no wing may originate from the head, eye, abdomen, or another wing. Exactly six jointed legs attached only to the thorax, all six individually readable with no extras or fusions. One head with two very large compound eyes, one thorax, one long segmented abdomen ending once. Griffinfly identity rather than a literal modern dragonfly: broad basal wing regions, dense archaic venation with long parallel longitudinal veins and fine cross-vein mesh; do not show an obvious modern dragonfly nodus, arculus, or dark pterostigma. No mouth tusks, no tail stinger.\n\nCOLOR/PATTERN ROLE: charcoal and deep petrol-blue body with irregular muted copper-brown suffusion; subtle natural variation, no repeated rings, target marks, neon colors, or bilateral painted stripes. Soft cloudy daylight, wet horsetail plain far below, documentary realism, no text, no watermark.\n\nREJECT if not exactly 4 wings and 6 legs, if any wing attaches to the head, if legs overlap into an unreadable cluster, if any appendage is cropped, if anatomy resembles a fantasy giant insect, or if the pose duplicates a flat broadside representative."
+      ],
+      "rejectionReason": "Original-size review found seven leg-like appendages rather than exactly six thoracic legs.",
+      "preDeletionDisposition": "Never copied; used only as the private edit base for exec-c7fabaa3.",
+      "deletionDisposition": "Rejected source PNG removed from the private generation cache under the standing complete-reject policy; the builder verifies that the exact path is absent and never performs deletion itself.",
+      "recoverability": "The PNG is not retained in git or the project. It may remain recoverable from the Windows Recycle Bin until that bin is emptied; after purge, only the exact prompt, call ID, lineage and embedded pre-deletion file facts remain."
+    },
+    {
+      "taxonId": "meganeura-monyi",
+      "taxon": "Meganeura monyi",
+      "intendedRole": "S2 color-pattern repair",
+      "status": "rejected-source-deleted",
+      "callId": "exec-c7fabaa3-d3b8-4bb9-951f-518fa018b079",
+      "generatedAt": "2026-08-11T08:11:10.087Z",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-c7fabaa3-d3b8-4bb9-951f-518fa018b079.png",
+      "copiedToProjectBeforeRejection": false,
+      "formerProjectPath": null,
+      "projectCopyPresent": false,
+      "referencedByApp": false,
+      "sourceFileExpectedPresent": false,
+      "sourceFilePresentAtBuild": false,
+      "retainedInPrivateGenerationCache": false,
+      "pixelsRetained": false,
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-ac000020-80f6-4be9-8771-c4a137d86b4a.png",
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-504155d7-ada5-4116-819f-f602481a1ec2.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-ac000020-80f6-4be9-8771-c4a137d86b4a",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-ac000020-80f6-4be9-8771-c4a137d86b4a.png",
+          "pixelStatus": "deleted-rejected-private-original",
+          "factScope": "embedded pre-deletion PNG facts",
+          "sha256": "c02c587a3289dab9162fb4ad86ddc636569283156c801f6f246183b8cdc2ac89",
+          "bytes": 2051105,
+          "width": 1122,
+          "height": 1402,
+          "dimensions": "1122x1402"
+        },
+        {
+          "callId": "exec-504155d7-ada5-4116-819f-f602481a1ec2",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-504155d7-ada5-4116-819f-f602481a1ec2.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "8aa9437480310ac74b0a32c2cba226c74bc266fec5ce571acfddf685edc83c2d",
+          "bytes": 3025843,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Anatomy-led generation or project-generated-reference edit followed by original-size rejection review.",
+      "seed": "service-assigned, not exposed",
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "fileFactScope": "embedded pre-deletion source PNG metadata; source path verified absent",
+      "preDeletionFileFacts": {
+        "sha256": "719f8ca16e0131fecc3a44d75ea8129519bb4b4d0f7d21c297851dfd275feeb8",
+        "bytes": 1976068,
+        "width": 1122,
+        "height": 1402,
+        "dimensions": "1122x1402"
+      },
+      "sha256": "719f8ca16e0131fecc3a44d75ea8129519bb4b4d0f7d21c297851dfd275feeb8",
+      "bytes": 1976068,
+      "width": 1122,
+      "height": 1402,
+      "dimensions": "1122x1402",
+      "prompt": [
+        "Edit Image 1 into a scientifically careful Meganeura monyi color-pattern gallery image while preserving its portrait low-ventral three-quarter flight composition, exactly FOUR existing wings, head, thorax, long abdomen, cloudy sky, and Carboniferous wetland. Use Image 2 only as the project-owned anatomy control.\n\nTARGETED COUNT REPAIR: Image 1 currently reads as seven leg-like appendages. Reconstruct the thoracic underside so there are EXACTLY SIX legs total: exactly three legs on the animal's left side and exactly three on its right side. All six must originate from the thorax only, be separated by visible sky gaps, and each must end once. Remove every seventh or accessory leg-like appendage. Do not alter the wing count: exactly two forewings plus two hindwings, all four independently attached behind the thorax; no wing from the head or abdomen. Preserve the griffinfly venation without obvious modern nodus, arculus, or pterostigma. One head, two compound eyes, one thorax, one abdomen, no stinger.\n\nKeep charcoal/petrol body with irregular muted copper suffusion, natural non-repeating pattern, documentary realism, no text or watermark. The final image must make 4 wings and 6 legs countable at original size.\n\nReject if there are 5, 7, or more legs, if any leg is fused/hidden, if wing count changes, if any wing attaches to the head, or if any appendage is cropped."
+      ],
+      "rejectionReason": "The targeted seventh-leg repair still did not yield six fully separate, unambiguous thoracic legs without attachment/fusion uncertainty.",
+      "preDeletionDisposition": "Never copied; the free-pose route was abandoned in favor of accepted same-body S2 edit exec-d7ce0dda.",
+      "deletionDisposition": "Rejected source PNG removed from the private generation cache under the standing complete-reject policy; the builder verifies that the exact path is absent and never performs deletion itself.",
+      "recoverability": "The PNG is not retained in git or the project. It may remain recoverable from the Windows Recycle Bin until that bin is emptied; after purge, only the exact prompt, call ID, lineage and embedded pre-deletion file facts remain."
+    },
+    {
+      "taxonId": "meganeura-monyi",
+      "taxon": "Meganeura monyi",
+      "intendedRole": "S2 color-pattern",
+      "status": "rejected-superseded-source-deleted",
+      "callId": "exec-efe5d7d9-e81d-466d-a22b-fb9a3867e26b",
+      "generatedAt": "2026-08-11T08:18:01.255Z",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-efe5d7d9-e81d-466d-a22b-fb9a3867e26b.png",
+      "copiedToProjectBeforeRejection": true,
+      "formerProjectPath": "assets/dinosaurs/meganeura-monyi-dorsal-wingbase-petrol-copper-structure-imagegen-v1.png",
+      "projectCopyPresent": false,
+      "referencedByApp": false,
+      "sourceFileExpectedPresent": false,
+      "sourceFilePresentAtBuild": false,
+      "retainedInPrivateGenerationCache": false,
+      "pixelsRetained": false,
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-504155d7-ada5-4116-819f-f602481a1ec2.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-504155d7-ada5-4116-819f-f602481a1ec2",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-504155d7-ada5-4116-819f-f602481a1ec2.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "8aa9437480310ac74b0a32c2cba226c74bc266fec5ce571acfddf685edc83c2d",
+          "bytes": 3025843,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Anatomy-led generation or project-generated-reference edit followed by original-size rejection review.",
+      "seed": "service-assigned, not exposed",
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "fileFactScope": "embedded pre-deletion source PNG metadata; source path verified absent",
+      "preDeletionFileFacts": {
+        "sha256": "fd346eb1fd8630b1343bee0c57e26c67548c6e4be626215349e94eff08ad5c4a",
+        "bytes": 2665670,
+        "width": 1122,
+        "height": 1402,
+        "dimensions": "1122x1402"
+      },
+      "sha256": "fd346eb1fd8630b1343bee0c57e26c67548c6e4be626215349e94eff08ad5c4a",
+      "bytes": 2665670,
+      "width": 1122,
+      "height": 1402,
+      "dimensions": "1122x1402",
+      "prompt": [
+        "Create a scientifically careful, photorealistic COLOR-AND-WING-BASE REFERENCE image of Meganeura monyi using Image 1 only as the project-owned identity control. This is deliberately NOT a whole-body representative and must not be used as leg-count evidence.\n\nPortrait 4:5, elevated dorsal close view in flight. Frame the head, both huge compound eyes, complete thorax, the base and most of all FOUR wings, and the proximal half of the long abdomen. The lower side of the thorax is hidden by the dorsal camera angle: ALL SIX LEGS ARE NATURALLY TUCKED BELOW THE BODY AND COMPLETELY INVISIBLE. Do not show any leg or leg-like appendage anywhere. Exactly four wings only—left and right forewing pair plus left and right hindwing pair—each with a separate, clear thoracic attachment. The four wing roots must be countable even if the distant wing tips approach the frame edge. Archaic griffinfly venation: broad bases, long parallel longitudinal veins, dense cross-vein mesh, no obvious modern dragonfly nodus, arculus, or dark pterostigma.\n\nCOLOR/PATTERN SCOPE: charcoal and deep petrol-blue thorax and abdomen with irregular muted copper-brown suffusion, asymmetrical natural mottling, no repeated rings, neon marks, bullseyes, or painted bilateral stripes. Cloudy late Carboniferous wetland far below, documentary realism, no text or watermark.\n\nReject if any leg is visible, if there are not exactly 4 wing roots, if a wing attaches to the head/eye/abdomen, if a fifth wing appears, or if this becomes a full-body representative."
+      ],
+      "rejectionReason": "The cropped dorsal close-up was useful for four wing-root structure and color only, but it showed no legs and omitted wing tips/body extent, so it violated the fixed same-body full-body S2 color-pattern contract.",
+      "preDeletionDisposition": "Temporarily copied and classified as structure reference, then superseded and removed from runtime by accepted same-body S2 exec-d7ce0dda.",
+      "deletionDisposition": "Rejected source PNG removed from the private generation cache under the standing complete-reject policy; the builder verifies that the exact path is absent and never performs deletion itself.",
+      "recoverability": "The PNG is not retained in git or the project. It may remain recoverable from the Windows Recycle Bin until that bin is emptied; after purge, only the exact prompt, call ID, lineage and embedded pre-deletion file facts remain."
+    },
+    {
+      "taxonId": "inostrancevia-alexandri",
+      "taxon": "Inostrancevia alexandri",
+      "intendedRole": "S1 representative",
+      "status": "rejected-source-deleted",
+      "callId": "exec-08daa434-e18c-49a8-8a7a-00c903794523",
+      "generatedAt": "2026-08-11T07:35:16.193Z",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-08daa434-e18c-49a8-8a7a-00c903794523.png",
+      "copiedToProjectBeforeRejection": false,
+      "formerProjectPath": null,
+      "projectCopyPresent": false,
+      "referencedByApp": false,
+      "sourceFileExpectedPresent": false,
+      "sourceFilePresentAtBuild": false,
+      "retainedInPrivateGenerationCache": false,
+      "pixelsRetained": false,
+      "referenceImages": [],
+      "referenceImageRecords": [],
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Anatomy-led generation or project-generated-reference edit followed by original-size rejection review.",
+      "seed": "service-assigned, not exposed",
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "fileFactScope": "embedded pre-deletion source PNG metadata; source path verified absent",
+      "preDeletionFileFacts": {
+        "sha256": "26970f79262ae7f363e23338c1d87ed37ab01fdf101c9e34526dc4805eece44b",
+        "bytes": 2839676,
+        "width": 1672,
+        "height": 941,
+        "dimensions": "1672x941"
+      },
+      "sha256": "26970f79262ae7f363e23338c1d87ed37ab01fdf101c9e34526dc4805eece44b",
+      "bytes": 2839676,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Use case: scientific-educational.\nAsset type: Dino Atlas Paleozoic gallery S1 representative for Korean children ages 5–14.\nCreate one original, copyright-safe, museum-quality paleoart image of one adult Inostrancevia alexandri in a complete left-facing lateral side profile.\nScene: late Permian northern Russian seasonal floodplain, firm reddish-gray mud, sparse low vegetation and distant bare trees, open ground around the animal.\nIdentity and anatomy lock: exactly one non-mammalian gorgonopsian; one long, relatively narrow but deep skull; exactly one paired set of enlarged upper canine teeth, mostly covered by conservative lips with only the lower tips subtly readable; differentiated smaller incisors and postcanines, no multiple saber rows; strong neck, long robust trunk, one continuous moderately long tail; exactly two forelimbs and two hindlimbs, four separate grounded feet, semi-erect transitional posture—neither fully sprawling lizard nor fully upright cat; five short digits suggested per foot where visible, no feline paws. Keep external ears absent, nose non-canine, skin and any sparse filament coverage explicitly conservative and subtle.\nFraming: horizontal 16:9, exact full-body lateral identity view, skull, four feet and tail tip all inside frame with generous margins; calm slow walk.\nColor: muted mineral gray, rust brown and subdued cream countershade as a hypothesis.\nReject: Smilodon, wolf, tiger, hyena, lion mane, wet dog nose, external mammal ears, heavy fur coat, cat paws, crocodile armor, dinosaur biped, oversized exposed sabers, four or more saber canines, horns, sail, extra/missing/fused limbs, three-legged read, broken or forked tail, text, labels, logo, border, watermark, attack, carcass or gore. No named-artist style."
+      ],
+      "rejectionReason": "The first side-profile attempt did not keep the saber pair, all four connected limbs/feet and complete tail sufficiently unambiguous for the count-level identity gate.",
+      "preDeletionDisposition": "Never copied; replaced by the stricter S1 exec-a6c3a903.",
+      "deletionDisposition": "Rejected source PNG removed from the private generation cache under the standing complete-reject policy; the builder verifies that the exact path is absent and never performs deletion itself.",
+      "recoverability": "The PNG is not retained in git or the project. It may remain recoverable from the Windows Recycle Bin until that bin is emptied; after purge, only the exact prompt, call ID, lineage and embedded pre-deletion file facts remain."
+    },
+    {
+      "taxonId": "inostrancevia-alexandri",
+      "taxon": "Inostrancevia alexandri",
+      "intendedRole": "S2 color-pattern",
+      "status": "rejected-source-deleted",
+      "callId": "exec-7ed9e867-2522-48fe-9ded-c3db55a4d9fe",
+      "generatedAt": "2026-08-11T07:59:13.602Z",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-7ed9e867-2522-48fe-9ded-c3db55a4d9fe.png",
+      "copiedToProjectBeforeRejection": false,
+      "formerProjectPath": null,
+      "projectCopyPresent": false,
+      "referencedByApp": false,
+      "sourceFileExpectedPresent": false,
+      "sourceFilePresentAtBuild": false,
+      "retainedInPrivateGenerationCache": false,
+      "pixelsRetained": false,
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-a6c3a903-b9fa-4ca8-a0ad-07d8f25a13fa.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-a6c3a903-b9fa-4ca8-a0ad-07d8f25a13fa",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-a6c3a903-b9fa-4ca8-a0ad-07d8f25a13fa.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "49f4d56f06612f87ab3f1c6160dae2bd1636785915190bf513c3c102dddc02ca",
+          "bytes": 2885409,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Anatomy-led generation or project-generated-reference edit followed by original-size rejection review.",
+      "seed": "service-assigned, not exposed",
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "fileFactScope": "embedded pre-deletion source PNG metadata; source path verified absent",
+      "preDeletionFileFacts": {
+        "sha256": "1b64c240e5756d9f222c24e090d1f6bba91ca0d01fc8df98a70048e8316bf3fb",
+        "bytes": 2961257,
+        "width": 1122,
+        "height": 1402,
+        "dimensions": "1122x1402"
+      },
+      "sha256": "1b64c240e5756d9f222c24e090d1f6bba91ca0d01fc8df98a70048e8316bf3fb",
+      "bytes": 2961257,
+      "width": 1122,
+      "height": 1402,
+      "dimensions": "1122x1402",
+      "prompt": [
+        "Use the supplied project-generated Inostrancevia alexandri v2 only as identity reference. Create a fresh S2 portrait 4:5 color/composition review image. Exactly one complete animal in a high rear three-quarter look-back pose, moving diagonally away over open late Permian gray-red silt. Preserve one long high-sided narrow gorgonopsian skull, exactly one pair of large upper saber canines with the near canine and offset far tip readable, smaller differentiated teeth, no external ears, powerful neck, robust trunk, exactly two forelimbs and two hindlimbs in semi-erect posture, four separate pentadactyl feet on bare ground, and one moderate continuous tail. Turn only the head back toward camera without twisting the neck. Use irregular charcoal, desaturated petrol and rusty cream patches, not stripes. Full head, four feet and tail tip inside frame; distinct from S1 lateral. Reject cat/wolf/hippo/crocodile drift, tiny or four sabers, thick fur, dog nose, hidden/fused/extra legs, three-legged read, giant lizard tail, crop, text/logo/watermark, attack/gore. Soft tissue/color hypothetical; representative promotion prohibited; no named-artist style."
+      ],
+      "rejectionReason": "The rear three-quarter route did not make all four connected feet and their five-digit groups reliably readable; no color variant may bypass the limb/foot gate.",
+      "preDeletionDisposition": "Never copied; another full-body route was tested.",
+      "deletionDisposition": "Rejected source PNG removed from the private generation cache under the standing complete-reject policy; the builder verifies that the exact path is absent and never performs deletion itself.",
+      "recoverability": "The PNG is not retained in git or the project. It may remain recoverable from the Windows Recycle Bin until that bin is emptied; after purge, only the exact prompt, call ID, lineage and embedded pre-deletion file facts remain."
+    },
+    {
+      "taxonId": "inostrancevia-alexandri",
+      "taxon": "Inostrancevia alexandri",
+      "intendedRole": "S2 color-pattern",
+      "status": "rejected-source-deleted",
+      "callId": "exec-603f66bd-f8ad-433d-81b0-658d447eba33",
+      "generatedAt": "2026-08-11T08:07:37.303Z",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-603f66bd-f8ad-433d-81b0-658d447eba33.png",
+      "copiedToProjectBeforeRejection": false,
+      "formerProjectPath": null,
+      "projectCopyPresent": false,
+      "referencedByApp": false,
+      "sourceFileExpectedPresent": false,
+      "sourceFilePresentAtBuild": false,
+      "retainedInPrivateGenerationCache": false,
+      "pixelsRetained": false,
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-a6c3a903-b9fa-4ca8-a0ad-07d8f25a13fa.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-a6c3a903-b9fa-4ca8-a0ad-07d8f25a13fa",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-a6c3a903-b9fa-4ca8-a0ad-07d8f25a13fa.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "49f4d56f06612f87ab3f1c6160dae2bd1636785915190bf513c3c102dddc02ca",
+          "bytes": 2885409,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Anatomy-led generation or project-generated-reference edit followed by original-size rejection review.",
+      "seed": "service-assigned, not exposed",
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "fileFactScope": "embedded pre-deletion source PNG metadata; source path verified absent",
+      "preDeletionFileFacts": {
+        "sha256": "ba8dfe95da32548dddfd46572eecdeb6fa947f0f25471c611f4c10c4b0f67842",
+        "bytes": 2954229,
+        "width": 1122,
+        "height": 1402,
+        "dimensions": "1122x1402"
+      },
+      "sha256": "ba8dfe95da32548dddfd46572eecdeb6fa947f0f25471c611f4c10c4b0f67842",
+      "bytes": 2954229,
+      "width": 1122,
+      "height": 1402,
+      "dimensions": "1122x1402",
+      "prompt": [
+        "Create a scientifically careful, photorealistic paleoart reconstruction of ONE adult Inostrancevia alexandri in a new non-representative color-pattern gallery composition. Use Image 1 only as the project-owned identity and anatomy control. Portrait 4:5, elevated rear three-quarter view: the animal walks diagonally away across an open late Permian floodplain and turns its head back toward camera. Keep the whole body, all four feet, and the full tail inside the frame on unobstructed firm mud.\n\nANATOMY LOCK: one long, relatively narrow and tall gorgonopsian skull; exactly one pair of very large upper-canine saber teeth emerging from the upper jaw, not walrus tusks and not multiple fang pairs; small incisors may be present. Exactly four limbs: two forelimbs and two hindlimbs. Each of the four feet must be fully connected to its own lower limb and show a natural pentadactyl five-toe spread, with five small separate digits rather than two or three hoof-like toes. One continuous trunk and one moderately tapering tail. Low, somewhat sprawling-to-semi-upright synapsid stance. Scaly or finely textured skin; do not add fur, external mammal ears, a dog nose, hooves, horns, dorsal sail, extra limbs, or a thick crocodile tail.\n\nCOLOR/PATTERN ROLE: irregular smoky charcoal, burnt sienna and muted sand mottling, asymmetrical and natural; no regular stripes, rosettes, rings, or mirrored stencil pattern. Overcast soft light, sparse glossopteris-like vegetation in the distance, documentary realism, no text or watermark.\n\nREJECT for fewer or more than 4 limbs, any foot with fewer than five readable toes, fused or floating feet, short blunt hippo-like skull, missing or extra saber pair, mammal/dog features, cropped tail or feet, or duplicate side-profile framing."
+      ],
+      "rejectionReason": "The elevated full-body attempt again failed the four separate pentadactyl-foot readability requirement through occlusion, fusion or uncertain toe counts.",
+      "preDeletionDisposition": "Never copied; a flatter count-layout route was tested.",
+      "deletionDisposition": "Rejected source PNG removed from the private generation cache under the standing complete-reject policy; the builder verifies that the exact path is absent and never performs deletion itself.",
+      "recoverability": "The PNG is not retained in git or the project. It may remain recoverable from the Windows Recycle Bin until that bin is emptied; after purge, only the exact prompt, call ID, lineage and embedded pre-deletion file facts remain."
+    },
+    {
+      "taxonId": "inostrancevia-alexandri",
+      "taxon": "Inostrancevia alexandri",
+      "intendedRole": "S2 color-pattern",
+      "status": "rejected-source-deleted",
+      "callId": "exec-ea848bd8-b0c1-444b-941a-21f567a73ef7",
+      "generatedAt": "2026-08-11T08:12:17.572Z",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-ea848bd8-b0c1-444b-941a-21f567a73ef7.png",
+      "copiedToProjectBeforeRejection": false,
+      "formerProjectPath": null,
+      "projectCopyPresent": false,
+      "referencedByApp": false,
+      "sourceFileExpectedPresent": false,
+      "sourceFilePresentAtBuild": false,
+      "retainedInPrivateGenerationCache": false,
+      "pixelsRetained": false,
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-a6c3a903-b9fa-4ca8-a0ad-07d8f25a13fa.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-a6c3a903-b9fa-4ca8-a0ad-07d8f25a13fa",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-a6c3a903-b9fa-4ca8-a0ad-07d8f25a13fa.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "49f4d56f06612f87ab3f1c6160dae2bd1636785915190bf513c3c102dddc02ca",
+          "bytes": 2885409,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Anatomy-led generation or project-generated-reference edit followed by original-size rejection review.",
+      "seed": "service-assigned, not exposed",
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "fileFactScope": "embedded pre-deletion source PNG metadata; source path verified absent",
+      "preDeletionFileFacts": {
+        "sha256": "66bb61819ab4ca34d4cb0f80d1cb79de96c0184f7cb02a2e0cf0bf2e62bc6a1e",
+        "bytes": 2532879,
+        "width": 1672,
+        "height": 941,
+        "dimensions": "1672x941"
+      },
+      "sha256": "66bb61819ab4ca34d4cb0f80d1cb79de96c0184f7cb02a2e0cf0bf2e62bc6a1e",
+      "bytes": 2532879,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Create a scientifically careful, photorealistic paleoart reconstruction of ONE adult Inostrancevia alexandri as a non-representative color-pattern gallery candidate. Use Image 1 only as the project-owned identity/anatomy control. Wide 16:9, low side-to-front three-quarter walking pose on a flat, pale, dry late Permian sandbar. The animal is angled diagonally across the frame, not a flat representative broadside. Place each of the four feet on a separate patch of unobstructed pale sand with clear background gaps, so no foot overlaps the torso, another limb, shadow, vegetation, water, or frame edge.\n\nCOUNT-LEVEL ANATOMY LOCK: exactly four limbs, two forelimbs and two hindlimbs. Exactly four complete feet, each fully joined to its own lower limb. EACH FOOT MUST SHOW EXACTLY FIVE separate small toes, all five visible and countable; no hoof-like two- or three-toe foot, no hidden far foot, no fused toes, no extra dewclaw. One long relatively narrow and tall gorgonopsian skull, exactly one pair of long upper-canine saber teeth, low synapsid stance, one continuous trunk and one moderately tapering tail fully inside frame. Finely textured skin; no fur, dog ears, dog nose, horns, sail, hooves, extra limbs, or crocodile tail.\n\nCOLOR/PATTERN ROLE: asymmetric irregular smoky charcoal, burnt sienna, and muted sand mottling, no repeated stripes, rings, rosettes, or mirrored stencil pattern. Open sparse floodplain far behind, soft overcast documentary lighting, no text or watermark.\n\nReject if any of the 20 toes cannot be individually counted, if there are fewer/more than 4 limbs or 4 feet, if any foot is cropped or occluded, if skull is short/blunt, if saber pair is missing/duplicated, or if the composition becomes a flat side-profile copy."
+      ],
+      "rejectionReason": "Even with separated ground patches, all four five-toed feet were not simultaneously trustworthy at original size.",
+      "preDeletionDisposition": "Never copied; the free-pose route was abandoned in favor of accepted same-body S2 edit exec-4d3e66e8.",
+      "deletionDisposition": "Rejected source PNG removed from the private generation cache under the standing complete-reject policy; the builder verifies that the exact path is absent and never performs deletion itself.",
+      "recoverability": "The PNG is not retained in git or the project. It may remain recoverable from the Windows Recycle Bin until that bin is emptied; after purge, only the exact prompt, call ID, lineage and embedded pre-deletion file facts remain."
+    },
+    {
+      "taxonId": "inostrancevia-alexandri",
+      "taxon": "Inostrancevia alexandri",
+      "intendedRole": "S2 color-pattern",
+      "status": "rejected-superseded-source-deleted",
+      "callId": "exec-094c6e07-7d24-4ae9-92ea-c996eb41382e",
+      "generatedAt": "2026-08-11T08:18:45.066Z",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-094c6e07-7d24-4ae9-92ea-c996eb41382e.png",
+      "copiedToProjectBeforeRejection": true,
+      "formerProjectPath": "assets/dinosaurs/inostrancevia-alexandri-headneck-saberpair-color-structure-imagegen-v1.png",
+      "projectCopyPresent": false,
+      "referencedByApp": false,
+      "sourceFileExpectedPresent": false,
+      "sourceFilePresentAtBuild": false,
+      "retainedInPrivateGenerationCache": false,
+      "pixelsRetained": false,
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-a6c3a903-b9fa-4ca8-a0ad-07d8f25a13fa.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-a6c3a903-b9fa-4ca8-a0ad-07d8f25a13fa",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-a6c3a903-b9fa-4ca8-a0ad-07d8f25a13fa.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "49f4d56f06612f87ab3f1c6160dae2bd1636785915190bf513c3c102dddc02ca",
+          "bytes": 2885409,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Anatomy-led generation or project-generated-reference edit followed by original-size rejection review.",
+      "seed": "service-assigned, not exposed",
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "fileFactScope": "embedded pre-deletion source PNG metadata; source path verified absent",
+      "preDeletionFileFacts": {
+        "sha256": "045a0df604f61284cde7a249a6ff219c0c2da4c2036a3fa11566e42b4980bd98",
+        "bytes": 2632999,
+        "width": 1122,
+        "height": 1402,
+        "dimensions": "1122x1402"
+      },
+      "sha256": "045a0df604f61284cde7a249a6ff219c0c2da4c2036a3fa11566e42b4980bd98",
+      "bytes": 2632999,
+      "width": 1122,
+      "height": 1402,
+      "dimensions": "1122x1402",
+      "prompt": [
+        "Create a scientifically careful, photorealistic HEAD-NECK COLOR REFERENCE portrait of ONE adult Inostrancevia alexandri using Image 1 only as the project-owned identity control. This is deliberately NOT a whole-body representative and must not be used as limb or toe-count evidence.\n\nPortrait 4:5, eye-level front three-quarter close-up. Show one complete long, relatively narrow and tall gorgonopsian skull, the entire lower jaw, throat, neck, and only the upper shoulder/chest. Crop cleanly before any forelimb begins: NO LIMB, FOOT, TOE, OR PAW MAY APPEAR anywhere in the frame. Exactly one pair of very large upper-canine saber teeth descending from the upper jaw; small incisors and rear teeth may be present. Preserve a synapsid—not dog, cat, hippo, walrus, or lizard—head with no external mammal ears, no wet dog nose, no fur, no horns, no crest, no duplicated jaw or teeth.\n\nCOLOR/PATTERN SCOPE: irregular smoky charcoal, burnt sienna and muted sand mottling across fine pebbled skin, asymmetrical and natural; no repeated stripes, rings, rosettes, or mirrored stencil. Soft overcast late Permian floodplain background out of focus, documentary realism, no text or watermark.\n\nReject if any limb or toe enters frame, if skull is short and blunt, if the saber pair is missing or more than one pair, if tusks emerge from the lower jaw, if mammalian ears/fur appear, or if the portrait pretends to prove whole-body anatomy."
+      ],
+      "rejectionReason": "The cropped head-neck close-up was useful for color, texture and the upper saber pair only, but it contained no limbs, feet or full body, so it violated the fixed same-body full-body S2 color-pattern contract.",
+      "preDeletionDisposition": "Temporarily copied and classified as structure reference, then superseded and removed from runtime by accepted same-body S2 exec-4d3e66e8.",
+      "deletionDisposition": "Rejected source PNG removed from the private generation cache under the standing complete-reject policy; the builder verifies that the exact path is absent and never performs deletion itself.",
+      "recoverability": "The PNG is not retained in git or the project. It may remain recoverable from the Windows Recycle Bin until that bin is emptied; after purge, only the exact prompt, call ID, lineage and embedded pre-deletion file facts remain."
+    },
+    {
+      "taxonId": "titanoboa-cerrejonensis",
+      "taxon": "Titanoboa cerrejonensis",
+      "intendedRole": "S1 representative",
+      "status": "rejected-source-deleted",
+      "callId": "exec-54a3dfb1-d26c-4695-8565-8d8e713ad5e6",
+      "generatedAt": "2026-08-11T07:35:47.147Z",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-54a3dfb1-d26c-4695-8565-8d8e713ad5e6.png",
+      "copiedToProjectBeforeRejection": false,
+      "formerProjectPath": null,
+      "projectCopyPresent": false,
+      "referencedByApp": false,
+      "sourceFileExpectedPresent": false,
+      "sourceFilePresentAtBuild": false,
+      "retainedInPrivateGenerationCache": false,
+      "pixelsRetained": false,
+      "referenceImages": [],
+      "referenceImageRecords": [],
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Anatomy-led generation or project-generated-reference edit followed by original-size rejection review.",
+      "seed": "service-assigned, not exposed",
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "fileFactScope": "embedded pre-deletion source PNG metadata; source path verified absent",
+      "preDeletionFileFacts": {
+        "sha256": "b0f6556d5cc0d3b348543f2f4b8e6c19a5bc14cf19a1c618b60a91d920099f85",
+        "bytes": 2970529,
+        "width": 1672,
+        "height": 941,
+        "dimensions": "1672x941"
+      },
+      "sha256": "b0f6556d5cc0d3b348543f2f4b8e6c19a5bc14cf19a1c618b60a91d920099f85",
+      "bytes": 2970529,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Use case: scientific-educational.\nAsset type: Dino Atlas Cenozoic gallery S1 representative for Korean children ages 5–14.\nCreate one original, copyright-safe, museum-quality paleoart image of one adult Titanoboa cerrejonensis in a complete basic lateral identity view.\nScene: Paleocene Cerrejón tropical wetland, a broad shallow clear channel beside an open muddy bank, dense rainforest kept distant and softly layered so the animal remains readable.\nIdentity and anatomy lock: exactly one enormous thick-bodied boid snake, one head and one continuously connected body tapering to one tail; no limbs; the complete body forms only two or three broad gentle S-curves across the frame, never crosses itself, never forms an impossible knot, and every curve can be followed continuously from head to tail; broad low boa-like head with closed mouth, no cobra hood, no rattle, no horns, no dragon face, no exaggerated venom fangs. Body very thick but not a perfectly uniform pipe; natural muscle taper toward the tail. Fossils support giant vertebrae and some skull material, while exact skin and proportions remain reconstructed.\nFraming: horizontal 16:9, slightly elevated near-lateral view to show the full continuous body on open bank and ankle-deep water, head at left and tail at right, both fully inside frame; subject occupies about 75% width with empty ground between bends.\nColor: irregular muted olive-charcoal, clay brown and dull cream mottling, not copied from a living anaconda.\nReject: duplicated head or tail, hidden body breaks, self-intersection, regular repeated loops, cobra hood, rattlesnake rattle, viper horns, long venom fangs, legs, crocodile scales, dragon spines, exact modern anaconda pattern, prey constriction, swallowing, attack, gore, text, label, logo, border, watermark, humans. No named-artist style."
+      ],
+      "rejectionReason": "The first bank-and-water route did not keep the entire head-to-tail body path continuously traceable through every bend at original size.",
+      "preDeletionDisposition": "Never copied; replaced by the stricter continuous-body S1 exec-c9a68e46.",
+      "deletionDisposition": "Rejected source PNG removed from the private generation cache under the standing complete-reject policy; the builder verifies that the exact path is absent and never performs deletion itself.",
+      "recoverability": "The PNG is not retained in git or the project. It may remain recoverable from the Windows Recycle Bin until that bin is emptied; after purge, only the exact prompt, call ID, lineage and embedded pre-deletion file facts remain."
+    },
+    {
+      "taxonId": "titanoboa-cerrejonensis",
+      "taxon": "Titanoboa cerrejonensis",
+      "intendedRole": "S3 habitat-ecology",
+      "status": "rejected-source-deleted",
+      "callId": "exec-4626d0c5-fafa-4c35-8f45-48a73c424557",
+      "generatedAt": "2026-08-11T08:01:39.647Z",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-4626d0c5-fafa-4c35-8f45-48a73c424557.png",
+      "copiedToProjectBeforeRejection": false,
+      "formerProjectPath": null,
+      "projectCopyPresent": false,
+      "referencedByApp": false,
+      "sourceFileExpectedPresent": false,
+      "sourceFilePresentAtBuild": false,
+      "retainedInPrivateGenerationCache": false,
+      "pixelsRetained": false,
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-c9a68e46-8771-49ca-802b-e82ff57c5839.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-c9a68e46-8771-49ca-802b-e82ff57c5839",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-c9a68e46-8771-49ca-802b-e82ff57c5839.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "925b92b322f1cecee4211a0e29b36fcd515cfeaafc2de34d542b37b642fb86dd",
+          "bytes": 2936344,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Anatomy-led generation or project-generated-reference edit followed by original-size rejection review.",
+      "seed": "service-assigned, not exposed",
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "fileFactScope": "embedded pre-deletion source PNG metadata; source path verified absent",
+      "preDeletionFileFacts": {
+        "sha256": "37f475e35393b08371389e8b2f21c647714c5969800858ad16488842facf8a4c",
+        "bytes": 2689982,
+        "width": 1672,
+        "height": 941,
+        "dimensions": "1672x941"
+      },
+      "sha256": "37f475e35393b08371389e8b2f21c647714c5969800858ad16488842facf8a4c",
+      "bytes": 2689982,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Use the supplied project-generated Titanoboa cerrejonensis v2 only as identity reference. Create a fresh S3 horizontal 16:9 habitat-ecology image. Exactly one complete Titanoboa swims slowly in very shallow clear Paleocene Cerrejón floodwater, seen from a 25-degree elevated bank camera. Its one generalized boid head is at lower-left, and one enormous continuous body follows two broad non-crossing curves to one visible tail at upper-right; the entire silhouette remains traceable through the clear water and inside frame. No limbs, hood, horns, rattle, fangs or modern anaconda markings. Several body lengths away near the far bank, include exactly one small non-diagnostic side-necked turtle silhouette and a few fish, no contact, chase, constriction or prey claim. Use diffuse dark bronze/olive-gray skin, sun flecks, submerged leaves and a dense but distant early rainforest. Distinct from S1/S2. Reject duplicated anatomy, impossible loops, hidden body break, regular coils, modern snake pattern copy, attack/swallowing, crop, text/logo/watermark or gore. Original evidence-bounded paleoecology; representative promotion prohibited; no named-artist style."
+      ],
+      "rejectionReason": "The first ecology route did not keep both full snake-body continuity and distant non-contact turtle separation unambiguous enough for the ecology gate.",
+      "preDeletionDisposition": "Never copied; replaced by the accepted regenerated ecology scene exec-d27b3439.",
+      "deletionDisposition": "Rejected source PNG removed from the private generation cache under the standing complete-reject policy; the builder verifies that the exact path is absent and never performs deletion itself.",
+      "recoverability": "The PNG is not retained in git or the project. It may remain recoverable from the Windows Recycle Bin until that bin is emptied; after purge, only the exact prompt, call ID, lineage and embedded pre-deletion file facts remain."
+    },
+    {
+      "taxonId": "basilosaurus-isis",
+      "taxon": "Basilosaurus isis",
+      "intendedRole": "S1 representative",
+      "status": "rejected-source-deleted",
+      "callId": "exec-28f11e33-cab7-4f6b-89d7-09756265ecda",
+      "generatedAt": "2026-08-11T07:36:14.280Z",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-28f11e33-cab7-4f6b-89d7-09756265ecda.png",
+      "copiedToProjectBeforeRejection": false,
+      "formerProjectPath": null,
+      "projectCopyPresent": false,
+      "referencedByApp": false,
+      "sourceFileExpectedPresent": false,
+      "sourceFilePresentAtBuild": false,
+      "retainedInPrivateGenerationCache": false,
+      "pixelsRetained": false,
+      "referenceImages": [],
+      "referenceImageRecords": [],
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Anatomy-led generation or project-generated-reference edit followed by original-size rejection review.",
+      "seed": "service-assigned, not exposed",
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "fileFactScope": "embedded pre-deletion source PNG metadata; source path verified absent",
+      "preDeletionFileFacts": {
+        "sha256": "5c68f42bcf5baf13ebda34b6568b04e95a9d17eb3c2bca63d02031e30e5aa7f0",
+        "bytes": 1791124,
+        "width": 1672,
+        "height": 941,
+        "dimensions": "1672x941"
+      },
+      "sha256": "5c68f42bcf5baf13ebda34b6568b04e95a9d17eb3c2bca63d02031e30e5aa7f0",
+      "bytes": 1791124,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Use case: scientific-educational.\nAsset type: Dino Atlas Cenozoic gallery S1 representative for Korean children ages 5–14.\nCreate one original, copyright-safe, museum-quality paleoart image of one adult Basilosaurus isis in a complete left-facing lateral side profile.\nScene: late Eocene shallow Tethys coastal water near Wadi Al-Hitan, open blue-green water, distant pale seafloor and a very small scattered fish school far behind, no contact.\nIdentity and anatomy lock: exactly one archaeocete whale; exceptionally long, slender, serpentine mammalian torso formed by elongated vertebrae but not an eel or marine reptile; one long narrow whale skull with differentiated teeth and a closed mouth; nostrils positioned back on the snout but not a modern crown blowhole; exactly two broad foreflippers connected behind the chest; exactly two very tiny external hind limbs attached near the pelvis, both visible as reduced paired legs and far smaller than the foreflippers; one continuously tapering tail ending in a small horizontal two-lobed fluke as a conservative comparative reconstruction; smooth mammal skin; no dorsal fin.\nFraming: horizontal 16:9, strict full-body lateral identity plate in open water, whole snout, both foreflippers, both tiny hind limbs, body and complete fluke inside frame with generous margins; gentle level swimming, no dramatic bend.\nColor: muted slate blue-gray, warm gray underside and irregular subdued flank mottling as hypotheses.\nReject: Mosasaurus, plesiosaur, sea snake, fish scales, gill slits, modern whale bulbous head, crown blowhole, huge modern whale fluke, dorsal fin, four large paddles, missing tiny hind-limb pair, extra fins, eel tail, duplicated body, cropped snout or fluke, attack, blood, text, labels, logo, border, watermark. No named-artist style."
+      ],
+      "rejectionReason": "The otherwise useful first whole-body draft ended in a vertical fish-like caudal fin rather than a small horizontal archaeocete fluke.",
+      "preDeletionDisposition": "Never copied; retained only as the private edit base for accepted corrected S1 exec-5ece7103.",
+      "deletionDisposition": "Rejected source PNG removed from the private generation cache under the standing complete-reject policy; the builder verifies that the exact path is absent and never performs deletion itself.",
+      "recoverability": "The PNG is not retained in git or the project. It may remain recoverable from the Windows Recycle Bin until that bin is emptied; after purge, only the exact prompt, call ID, lineage and embedded pre-deletion file facts remain."
+    },
+    {
+      "taxonId": "basilosaurus-isis",
+      "taxon": "Basilosaurus isis",
+      "intendedRole": "S3 habitat-ecology",
+      "status": "rejected-source-deleted",
+      "callId": "exec-60680e54-90d0-49ef-9362-242d2b3b84de",
+      "generatedAt": "2026-08-11T07:50:42.603Z",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-60680e54-90d0-49ef-9362-242d2b3b84de.png",
+      "copiedToProjectBeforeRejection": false,
+      "formerProjectPath": null,
+      "projectCopyPresent": false,
+      "referencedByApp": false,
+      "sourceFileExpectedPresent": false,
+      "sourceFilePresentAtBuild": false,
+      "retainedInPrivateGenerationCache": false,
+      "pixelsRetained": false,
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-5ece7103-20eb-45ef-9436-3717c94e3101.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-5ece7103-20eb-45ef-9436-3717c94e3101",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-5ece7103-20eb-45ef-9436-3717c94e3101.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "52d25a7be218a8f21c579b07930fa051e5294ca5c1068410d32d7f60f1454e86",
+          "bytes": 1847965,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Anatomy-led generation or project-generated-reference edit followed by original-size rejection review.",
+      "seed": "service-assigned, not exposed",
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "fileFactScope": "embedded pre-deletion source PNG metadata; source path verified absent",
+      "preDeletionFileFacts": {
+        "sha256": "5d3f80d33d711fb00821d82261938bde188bcd28733ab65257e202169ad01f85",
+        "bytes": 2264156,
+        "width": 1672,
+        "height": 941,
+        "dimensions": "1672x941"
+      },
+      "sha256": "5d3f80d33d711fb00821d82261938bde188bcd28733ab65257e202169ad01f85",
+      "bytes": 2264156,
+      "width": 1672,
+      "height": 941,
+      "dimensions": "1672x941",
+      "prompt": [
+        "Use the supplied project-generated Basilosaurus isis S1 v2 only as an identity reference. Create a fresh S3 habitat-ecology image. Horizontal 16:9, low seafloor camera looking upward at exactly one complete Basilosaurus curving gently across the upper-middle distance from right toward left above a late Eocene Wadi Al-Hitan shallow-marine shelf. Preserve the very long archaeocete body, long narrow toothed skull, exactly two foreflippers, exactly two very tiny external hind limbs near the pelvis, no dorsal fin, and one small horizontal two-lobed tail fluke. Subject occupies 45–55% width with the whole body and all appendages in frame. A small loose school of non-diagnostic fish turns several body lengths away; no chase, bite or contact. Add patchy seagrass-like vegetation only as broad coastal context, scattered shells and light shafts; keep the exact community hypothetical. Distinct from the flat S1 and portrait S2. Reject vertical fish tail, modern whale body/blowhole, marine reptile scales, extra/missing appendages, hidden tail, attack, blood, text, logo, watermark. Original evidence-bounded educational paleoecology, no named-artist style."
+      ],
+      "rejectionReason": "The first wide ecology draft repeated a caudal-fluke orientation/continuity error, so its fish-school composition could not override the tail anatomy gate.",
+      "preDeletionDisposition": "Never copied; retained only as the private edit base for accepted corrected S3 exec-b29639aa.",
+      "deletionDisposition": "Rejected source PNG removed from the private generation cache under the standing complete-reject policy; the builder verifies that the exact path is absent and never performs deletion itself.",
+      "recoverability": "The PNG is not retained in git or the project. It may remain recoverable from the Windows Recycle Bin until that bin is emptied; after purge, only the exact prompt, call ID, lineage and embedded pre-deletion file facts remain."
+    },
+    {
+      "taxonId": "paraceratherium-transouralicum",
+      "taxon": "Paraceratherium transouralicum",
+      "intendedRole": "S2 color-pattern",
+      "status": "rejected-source-deleted",
+      "callId": "exec-8e0a9271-8d79-42ca-a776-4b50cf488a04",
+      "generatedAt": "2026-08-11T07:48:47.388Z",
+      "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-8e0a9271-8d79-42ca-a776-4b50cf488a04.png",
+      "copiedToProjectBeforeRejection": false,
+      "formerProjectPath": null,
+      "projectCopyPresent": false,
+      "referencedByApp": false,
+      "sourceFileExpectedPresent": false,
+      "sourceFilePresentAtBuild": false,
+      "retainedInPrivateGenerationCache": false,
+      "pixelsRetained": false,
+      "referenceImages": [
+        "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-fd17ae3d-fce7-4a40-bf68-09cba3529697.png"
+      ],
+      "referenceImageRecords": [
+        {
+          "callId": "exec-fd17ae3d-fce7-4a40-bf68-09cba3529697",
+          "privateGeneratedOriginalPath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-fd17ae3d-fce7-4a40-bf68-09cba3529697.png",
+          "pixelStatus": "retained-approved-private-original",
+          "factScope": "current retained PNG",
+          "sha256": "20b9a91537da8862689bbff3024205a5b177a737470e91b9ccdf10d6ff60778a",
+          "bytes": 2502311,
+          "width": 1672,
+          "height": 941,
+          "dimensions": "1672x941"
+        }
+      ],
+      "generator": "OpenAI built-in image generation",
+      "workflow": "Anatomy-led generation or project-generated-reference edit followed by original-size rejection review.",
+      "seed": "service-assigned, not exposed",
+      "sourceAttribution": "OpenAI built-in image generation from an original Dino Atlas prompt; project-owned generated images were used only where referenceImages records them.",
+      "license": "Original project-generated bitmap under the applicable OpenAI service terms. Factual scientific and museum sources supplied anatomy and uncertainty constraints only; no external artwork, published reconstruction, franchise frame, documentary frame, or named-artist style was used as a generation input.",
+      "fileFactScope": "embedded pre-deletion source PNG metadata; source path verified absent",
+      "preDeletionFileFacts": {
+        "sha256": "3d9d06b441bf6f25b84df97b14271bcddad9f68b83309def69c58d58a67c4bc2",
+        "bytes": 3022117,
+        "width": 1122,
+        "height": 1402,
+        "dimensions": "1122x1402"
+      },
+      "sha256": "3d9d06b441bf6f25b84df97b14271bcddad9f68b83309def69c58d58a67c4bc2",
+      "bytes": 3022117,
+      "width": 1122,
+      "height": 1402,
+      "dimensions": "1122x1402",
+      "prompt": [
+        "Use the supplied project-generated Paraceratherium transouralicum S1 only as an identity reference. Create a fresh S2 color-and-composition review image, not a recolor of the same pose. Portrait 4:5, one complete adult walking diagonally toward the lower-right in a high rear three-quarter view across an open Oligocene gravel fan. Preserve the hornless small elongated rhinocerotoid head, long muscular neck, enormous deep body, exactly four long sturdy weight-bearing legs, four clearly separated broad three-toed feet, and one short slender tail. All feet and tail tip visible with bare ground gaps; no hidden far limb. Head turns gently back toward the camera without shortening the neck. Use irregular cool slate-gray, muted plum-brown and dusty cream variation, no giraffe spots or regular stripes. Keep trees distant and the subject fully inside frame. Reject horn, elephant trunk/tusks/ears, giraffe or camel, sauropod, stilt-thin legs, elephant feet, extra/missing/fused limbs, crop, text, logo, watermark. Original educational paleoart; exact color/soft tissue hypothetical, representative promotion prohibited, no named-artist style."
+      ],
+      "rejectionReason": "The rear three-quarter look-back route hid or fused a far limb/foot, producing an unreliable four-leg/four-foot read.",
+      "preDeletionDisposition": "Never copied; rerouted to the accepted front-three-quarter S2 exec-722f8226.",
+      "deletionDisposition": "Rejected source PNG removed from the private generation cache under the standing complete-reject policy; the builder verifies that the exact path is absent and never performs deletion itself.",
+      "recoverability": "The PNG is not retained in git or the project. It may remain recoverable from the Windows Recycle Bin until that bin is emptied; after purge, only the exact prompt, call ID, lineage and embedded pre-deletion file facts remain."
+    }
+  ],
+  "validation": {
+    "generatedFromSessionLog": "C:/Users/USER/.codex/sessions/2026/08/01/rollout-2026-08-01T23-02-43-019fbda2-6313-7010-a45d-5c6c6e3f5169.jsonl",
+    "privateImageRoot": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169",
+    "exactRevisedPromptsFound": 37,
+    "acceptedProjectCopiesHashMatched": 18,
+    "acceptedProjectCopiesByteMatched": 18,
+    "acceptedProjectCopiesDimensionMatched": 18,
+    "appRecordLinksMatched": 18,
+    "appApprovedAssetPathsMatched": 18,
+    "rejectedPrivateOriginalsExpected": 0,
+    "rejectedPrivateOriginalsFound": 0,
+    "rejectedPrivateOriginalsAbsent": 19,
+    "rejectedPreDeletionFactsEmbedded": 19,
+    "inputReferenceRecordsHashed": 30,
+    "deletedRejectedInputReferenceRecordsHashed": 5,
+    "rejectedPixelsRetained": 0
+  }
+}

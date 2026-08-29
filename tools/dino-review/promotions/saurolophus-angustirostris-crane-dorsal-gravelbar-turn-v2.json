@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "saurolophus-angustirostris-crane-dorsal-gravelbar-turn-v2",
+  "disposition": "promoted-awaiting-app-integration",
+  "promotedAt": "2026-08-11T13:26:21.409Z",
+  "sourcePath": "tools/dino-review/pending/saurolophus-angustirostris-crane-dorsal-gravelbar-turn-v2/saurolophus-angustirostris-crane-dorsal-gravelbar-turn-imagegen-v2.png",
+  "targetPath": "assets/dinosaurs/saurolophus-angustirostris-crane-dorsal-gravelbar-turn-imagegen-v2.png",
+  "filename": "saurolophus-angustirostris-crane-dorsal-gravelbar-turn-imagegen-v2.png",
+  "sha256": "c209d7e930fa93b89032ec18d7baa75df2f34d19b4ffaac21e6e1862c4103146",
+  "sizeBytes": 3371407,
+  "review": {
+    "status": "pass",
+    "note": "",
+    "updatedAt": "2026-08-11T13:26:19.725Z",
+    "imageSha256": "c209d7e930fa93b89032ec18d7baa75df2f34d19b4ffaac21e6e1862c4103146",
+    "manifestSha256": "d075ce077d6ca519d051594275c768688d27cf278d0153bce1f9c00088dce344"
+  },
+  "candidate": {
+    "schemaVersion": 1,
+    "candidateId": "saurolophus-angustirostris-crane-dorsal-gravelbar-turn-v2",
+    "filename": "saurolophus-angustirostris-crane-dorsal-gravelbar-turn-imagegen-v2.png",
+    "speciesId": "saurolophus-angustirostris",
+    "kind": "anatomy review",
+    "targetFilename": "saurolophus-angustirostris-crane-dorsal-gravelbar-turn-imagegen-v2.png",
+    "provenance": {
+      "source": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and ignored anatomy-review candidates were used only as project-owned identity, anatomy, or local repair references; no external artwork or named-artist style input",
+      "license": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved or locally generated inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+      "prompt": "Create a corrected scientific-educational Dino Atlas S2 composition-diversity candidate for children ages 5–14. Show exactly one adult Saurolophus angustirostris on an open Late Cretaceous Nemegt gravel bar. Images 1 and 2 are approved project identity controls for the broad toothless duck bill, deep hadrosaur body, and short solid spike crest. Preserve those cues but create a new original camera, motion, layout, lighting, and irregular pattern; do not copy or mirror the broadside references.\n\nUse a square 1:1 composition from a moderately elevated camera only 25–30 degrees above the animal, looking from its front-right three-quarter side. The complete animal takes a broad turning step across pale open gravel, body diagonal from lower-right foreground toward upper-left depth. Pull back enough to leave clear space around the head, crest, tail tip, and every foot. Rotate the head outward so the broad flat duck bill and the crest are readable.\n\nCrest and bill priority: one broad, rounded, closed, toothless duck bill; exactly one SHORT, thick, solid spike crest physically continuous with the skull, pointing backward and slightly upward. The crest is a stout cranial spike, not a long thin horn, detached cone, vertical unicorn horn, tube, or Parasaurolophus crest.\n\nLimb-count priority: exactly two forelimbs and exactly two hind limbs. Stagger all four limbs so none stands directly behind another. Place each of the four complete feet over its own separate patch of pale gravel with a visible ground gap between neighboring feet. One forefoot may be lifted but must remain complete; BOTH hind legs and BOTH hind feet must be fully visible and independently countable. One pelvis and one complete stiff tail taper to one tip.\n\nUse spruce-dark upper skin, warm ochre flanks, restrained copper-orange crest and dorsal edge, pale ivory underside, cool blue-gray cheek, and irregular interrupted flecks/bands with no mechanical repetition. No crestless Edmontosaurus head, theropod teeth, narrow pointed snout, swan neck, ceratopsian frill, extra/missing/fused limb, hidden hind foot, cropped/split tail, second animal, text, logo, or watermark. Natural-history museum realism, original project artwork, no named-artist or franchise style.",
+      "seed": "provider-not-exposed",
+      "workflow": "OpenAI image_gen anatomy-led composition-diversity v4; approved full-body and crest references; exact input paths and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+    },
+    "anatomyReview": {
+      "status": "review-hold",
+      "representative": false,
+      "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+      "reviewedAt": "2026-08-10T17:42:05.8906683Z",
+      "notes": "S2 color-pattern diversity candidate only. Broad toothless bill, one short solid attached crest, two forelimbs, two hind limbs, four separate feet and one complete tail appear readable; one forefoot is lifted in a turning step. Manual original-size anatomy review is still required. Representative promotion prohibited."
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "otodus-megalodon-high-dorsal-bank-openwater-v1",
+  "disposition": "promoted-awaiting-app-integration",
+  "promotedAt": "2026-08-11T13:32:37.188Z",
+  "sourcePath": "tools/dino-review/pending/otodus-megalodon-high-dorsal-bank-openwater-v1/otodus-megalodon-high-dorsal-bank-openwater-imagegen-v1.png",
+  "targetPath": "assets/dinosaurs/otodus-megalodon-high-dorsal-bank-openwater-imagegen-v1.png",
+  "filename": "otodus-megalodon-high-dorsal-bank-openwater-imagegen-v1.png",
+  "sha256": "978e57d70227ee29b5fabd9cd2d311bcae4b2b672468ea105105192dcb40105c",
+  "sizeBytes": 1965185,
+  "review": {
+    "status": "pass",
+    "note": "",
+    "updatedAt": "2026-08-11T13:32:35.828Z",
+    "imageSha256": "978e57d70227ee29b5fabd9cd2d311bcae4b2b672468ea105105192dcb40105c",
+    "manifestSha256": "fd44f8df31f6df52052fd6a4c79f52b83ae4e2f1235c5606b1c2a296cc47cb72"
+  },
+  "candidate": {
+    "schemaVersion": 1,
+    "candidateId": "otodus-megalodon-high-dorsal-bank-openwater-v1",
+    "filename": "otodus-megalodon-high-dorsal-bank-openwater-imagegen-v1.png",
+    "speciesId": "otodus-megalodon",
+    "kind": "anatomy review",
+    "targetFilename": "otodus-megalodon-high-dorsal-bank-openwater-imagegen-v1.png",
+    "provenance": {
+      "source": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images were used only as project-owned identity references where stated; no external artwork or named-artist style input",
+      "license": "Generated project asset under applicable OpenAI service terms; original project prompt and project-owned identity references only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+      "prompt": "Use case: scientific-educational historical scene\nAsset type: Dino Atlas vertical mobile gallery color-pattern diversity candidate, anatomy-review only\nInput image: Image 1 is the project-owned approved Otodus megalodon identity and tentative body-model reference only. Preserve its cautious elongated lamniform identity and fin plan, but create a genuinely new camera, movement, scale, framing, lighting, and water layout. Do not edit, mirror, recolor, or reuse Image 1's broadside composition.\nPrimary request: One living Otodus megalodon cruising upward through Neogene open water in a calm bank, with no prey and no attack. This is a tentative comparative reconstruction because no complete skeleton or certain body outline is known.\nComposition/framing: vertical 4:5 portrait. High dorsal front-three-quarter to side-three-quarter camera, looking down from above and slightly ahead as the shark rises diagonally from the lower-left depth toward the brighter upper-right surface. The body travels in depth rather than horizontally across the frame. Keep the entire blunt snout, all fins, and complete vertical tail inside the frame with generous open water. The gentle bank must separate the near and far pectoral fins in readable silhouettes. This must not resemble either a left-facing or mirrored right-facing catalog profile.\nIdentity and count lock: one head with a long blunt broad rostrum, mouth only slightly open, large broad triangular serrated teeth rather than needles or conical reptile teeth; exactly five gill slits visible on the near side; exactly two long paired pectoral fins, both attached and readable; one large first dorsal fin and one clearly smaller second dorsal fin, both attached and separated along the dorsal line; paired pelvic fins and one anal fin in plausible shark positions; exactly one continuous vertical heterocercal shark tail, never a horizontal whale fluke. Preserve a cautious elongated lamniform body rather than a bulky enlarged great white, while treating exact proportions as hypothetical.\nColor/pattern: deep slate-blue upper body, muted bronze and charcoal irregular mottling broken by natural skin variation, pale diffuse underside; no crisp stripes, orca patches, perfect bilateral bands, or palette-only change.\nScene: blue pelagic water with soft caustic light and depth haze. A few tiny distant fish may appear in irregular spacing only, never a patterned school or prey chase. No seafloor, whale, marine reptile, cage, diver, boat, text, watermark, logo, gore, wound, contact, extra fin, missing second dorsal, duplicate tail, cropped extremity, or modern great-white copy.\nStyle: highly detailed natural-history museum paleoart, realistic living animal, original project-owned visual, no named-artist or franchise style.",
+      "seed": "provider-not-exposed",
+      "workflow": "OpenAI built-in image generation; anatomy-led composition-diversity v2; approved-control identity reference; original-size automated and independent visual intake; manual anatomy approval required"
+    },
+    "anatomyReview": {
+      "status": "review-hold",
+      "representative": false,
+      "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+      "reviewedAt": "2026-08-10T16:17:52.7950300Z",
+      "notes": "S2 diversity candidate only. Vertical high-dorsal bank and two dorsal fins are readable; the far pectoral fin, tail-lobe proportion, all body proportions, and incomplete-skeleton boundary require manual original-size review. Representative promotion prohibited."
+    }
+  }
+}

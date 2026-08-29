@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 2,
+  "batchId": "gallery-composition-diversity-20260810-b2",
+  "status": "review-hold",
+  "targetAudience": "ages 5-14",
+  "audit": {
+    "json": "tools/comfyui/gallery-composition-similarity-audit-20260810.json",
+    "markdown": "docs/gallery-composition-diversity-audit-2026-08-10.md",
+    "taxa": 155,
+    "approvedImages": 871,
+    "withinTaxonPairs": 2103,
+    "pairsAtOrAbove045": 677,
+    "pairsAtOrAbove055": 129,
+    "pairsAtOrAbove065": 12,
+    "pairsAtOrAbove075": 6
+  },
+  "policy": {
+    "batchSize": 3,
+    "attemptedImageCount": 5,
+    "enqueuedCandidateCount": 3,
+    "retainedCandidateCount": 1,
+    "candidateKind": "anatomy review",
+    "automaticPromotion": false,
+    "representativePromotion": false,
+    "automaticDeletionFromPending": false,
+    "candidateMaxSimilarityGate": 0.58,
+    "selectionRule": "critical structural similarity and recolor-only risk, while preserving LV1/LV2 audience priority in the following batch",
+    "diversityGate": "A replacement must change camera family, direction, subject scale, action, spatial layout, or habitat; palette-only and mirror-only changes do not count.",
+    "anatomyGate": "Manual original-size anatomy review is required before pass, promotion, or app integration."
+  },
+  "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-10; approved Dino Atlas images were used only as project-owned identity references where stated; no external artwork or named-artist style input",
+  "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompt and project-owned identity references only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+  "records": [
+    {
+      "speciesId": "herrerasaurus-ischigualastensis",
+      "candidateId": "herrerasaurus-ischigualastensis-frontthreequarter-channelwalk-v1",
+      "targetFilename": "herrerasaurus-ischigualastensis-frontthreequarter-channelwalk-imagegen-v1.png",
+      "intendedSlot": 2,
+      "intendedRole": "color-pattern",
+      "replacesSimilarityPair": {
+        "slots": [1, 2],
+        "structuralSimilarity": 0.98,
+        "matchMode": "direct"
+      },
+      "compositionKey": "landscape-low-frontthreequarter-channelwalk-depth",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.448,
+        "nearestSlot": 5,
+        "nearestRole": "interaction",
+        "matchMode": "direct",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-7377be9a-cfe5-41b1-81ce-bc795f966883",
+      "image": {
+        "sha256": "864d3c0a6e369c3178421e30c64f89981c655cc72bf637a4c7de3f5874f466df",
+        "bytes": 2511800,
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 approved species identity and body-proportion reference",
+          "path": "assets/dinosaurs/herrerasaurus-ischigualastensis-canonical-redbed-representative-imagegen-v3.png",
+          "sha256": "4e7afab427c50abe66016f4040ba89caf4bc3816d9e28aea9c4fd984f0e91b3b",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260810-b2.md#herrerasaurus-ischigualastensis",
+        "promptPath": "tools/comfyui/outputs/overnight/20260810/herrerasaurus-ischigualastensis-frontthreequarter-channelwalk-imagegen-v1.txt",
+        "promptSha256": "a5a9a8f335440aab93ae2e6408ba9230d30175db5a5fff5bcd62576ebff41c7b",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI built-in image generation; anatomy-led composition-diversity v1; original-size automated visual intake; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake; manual anatomy approval required",
+        "reviewedAt": "2026-08-10T14:41:32.8989684Z",
+        "notes": "S2 diversity candidate only. Two forelimbs, two hind legs and one tail appear separated; compact hand digit topology, far hind-foot connection, skull and torso proportions require manual original-size review. Representative promotion prohibited."
+      }
+    }
+  ],
+  "rejectedAttempts": [
+    {
+      "speciesId": "herrerasaurus-ischigualastensis",
+      "sourceCallId": "exec-cd50277e-a143-4fe7-a66f-dc75068a7993",
+      "sha256": "e6049389fd1542ae115971c3d8f86a92f358c8673c99a3823b53390ff6612500",
+      "bytes": 2664781,
+      "width": 1672,
+      "height": 941,
+      "inputReferences": [],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260810/herrerasaurus-ischigualastensis-elevated-rearquarter-braidcrossing-imagegen-v1.txt",
+        "promptSha256": "f0ffcf42b50fd257d8f73584bf5d0401e6370a468555568479a5c2de4f6b792a",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI built-in image generation; anatomy-led composition-diversity v1; original-size automated visual intake; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-10; approved Dino Atlas images were used only as project-owned identity references where stated; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompt and project-owned identity references only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "Hands were long and overlapped with a possible extra forelimb while the torso was too thick, failing the anatomy lock.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Windows Recycle Bin until emptied"
+    },
+    {
+      "speciesId": "dsungaripterus-weii",
+      "sourceCallId": "exec-7c207902-65c0-44b3-ae93-29ff3f2c319c",
+      "sha256": "28d03425caeaafde505a54c60741fb5b3b66d23b1be71b9775dcfd486a797edd",
+      "bytes": 2894605,
+      "width": 1122,
+      "height": 1402,
+      "inputReferences": [],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260810/dsungaripterus-weii-portrait-shellbed-rostrum-imagegen-v1.txt",
+        "promptSha256": "7bcc016f8166768aebad18d344418cb74afd9dfd0ad89145e309cebe0d8cc0fa",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI built-in image generation; anatomy-led composition-diversity v1; original-size automated visual intake; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-10; approved Dino Atlas images were used only as project-owned identity references where stated; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompt and project-owned identity references only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "Teeth extended through the anterior supposedly toothless rostrum and the crest became too sail-like, failing the identity gate.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Windows Recycle Bin until emptied"
+    },
+    {
+      "speciesId": "dsungaripterus-weii",
+      "candidateId": "dsungaripterus-weii-portrait-toothless-rostrum-crusher-detail-v1",
+      "targetFilename": "dsungaripterus-weii-portrait-toothless-rostrum-crusher-detail-imagegen-v1.png",
+      "sourceCallId": "exec-2cdcd006-7ed9-4f0b-87c6-7bf4715b67c0",
+      "sha256": "b247c2f239762ebdbd29edc32ad2a620bc524949f7949198e770460ca9a94bc6",
+      "bytes": 2461376,
+      "width": 1122,
+      "height": 1402,
+      "inputReferences": [
+        {
+          "role": "Image 1 approved skull, jaw, crest, tooth-distribution, and color identity reference",
+          "path": "assets/dinosaurs/dsungaripterus-weii-toothless-upturned-rostrum-posterior-crusher-representative-imagegen-v2.png",
+          "sha256": "c63d38a59d83f9e4817546f6e011d4fc708b4ac42da09c7dd2b87fc11e8cd3ba",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260810/dsungaripterus-weii-portrait-toothless-rostrum-crusher-detail-imagegen-v1.txt",
+        "promptSha256": "ff3f15a9513e48de5d54f7f8a4c7591cb9acdd80f0bd50522c6b52413a2b9f02",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI built-in image generation; anatomy-led composition-diversity v1; original-size automated visual intake; manual anatomy approval required",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-10; approved Dino Atlas images were used only as project-owned identity references where stated; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompt and project-owned identity references only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "deleted-rejected",
+      "reason": "Identity gate failed: crest is a short high triangular sail or horn rather than a low restrained midline crest; unsuitable for S2 color-pattern replacement.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Windows Recycle Bin for generated-cache and staging copies until emptied; review DB retains rejection history"
+    },
+    {
+      "speciesId": "almas-ukhaa",
+      "candidateId": "almas-ukhaa-frontthreequarter-dune-corridor-v1",
+      "targetFilename": "almas-ukhaa-frontthreequarter-dune-corridor-imagegen-v1.png",
+      "sourceCallId": "exec-a040c62a-d13c-4af0-bcf0-8904b171b8b9",
+      "sha256": "ba702690ad323037baa707248c78fbf7150fb0e2be1c5f59a21faac87fb3438a",
+      "bytes": 2251103,
+      "width": 1672,
+      "height": 941,
+      "inputReferences": [],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260810/almas-ukhaa-frontthreequarter-dune-corridor-imagegen-v1.txt",
+        "promptSha256": "4f8eb79d5611777516099444079526a2e75403ee02d814fcb2117b9276b14e45",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI built-in image generation; anatomy-led composition-diversity v1; original-size automated visual intake; manual anatomy approval required",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-10; approved Dino Atlas images were used only as project-owned identity references where stated; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompt and project-owned identity references only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "deleted-rejected",
+      "reason": "Identity gate failed: skull is too short and owl-rounded, the second-toe claw is oversized, and forelimb or hand proportions are unsuitable.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Windows Recycle Bin for generated-cache and staging copies until emptied; review DB retains rejection history"
+    }
+  ]
+}

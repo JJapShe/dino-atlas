@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 2,
+  "batchId": "gallery-composition-diversity-20260810-b1",
+  "status": "review-hold",
+  "targetAudience": "ages 5-14",
+  "audit": {
+    "json": "tools/comfyui/gallery-composition-similarity-audit-20260810.json",
+    "markdown": "docs/gallery-composition-diversity-audit-2026-08-10.md",
+    "taxa": 155,
+    "approvedImages": 871,
+    "withinTaxonPairs": 2103,
+    "pairsAtOrAbove045": 677,
+    "pairsAtOrAbove055": 129,
+    "pairsAtOrAbove065": 12,
+    "pairsAtOrAbove075": 6
+  },
+  "policy": {
+    "batchSize": 3,
+    "attemptedImageCount": 5,
+    "enqueuedCandidateCount": 3,
+    "retainedCandidateCount": 1,
+    "candidateKind": "anatomy review",
+    "automaticPromotion": false,
+    "representativePromotion": false,
+    "automaticDeletionFromPending": false,
+    "candidateMaxSimilarityGate": 0.58,
+    "selectionRule": "critical or high structural similarity, then LV1/LV2 audience priority, then representative-involved and recolor-only risk",
+    "diversityGate": "A replacement must change camera family, direction, subject scale, action, spatial layout, or habitat; palette-only and mirror-only changes do not count.",
+    "anatomyGate": "Manual original-size anatomy review is required before pass, promotion, or app integration."
+  },
+  "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-10; factual constraints from existing Dino Atlas identity metadata; no external artwork or named-artist style input",
+  "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompt; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+  "records": [
+    {
+      "speciesId": "psittacosaurus-mongoliensis",
+      "candidateId": "psittacosaurus-mongoliensis-genus-quill-tail-diagonal-foraging-v1",
+      "targetFilename": "psittacosaurus-mongoliensis-genus-quill-tail-diagonal-foraging-imagegen-v1.png",
+      "intendedSlot": 7,
+      "intendedRole": "alternate-habitat-behavior",
+      "replacesSimilarityPair": {
+        "slots": [1, 7],
+        "structuralSimilarity": 0.971,
+        "matchMode": "direct"
+      },
+      "compositionKey": "portrait-groundlevel-rear-threequarter-tail-diagonal",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.531,
+        "nearestSlot": 7,
+        "nearestRole": "alternate-habitat-behavior",
+        "matchMode": "direct",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-b50abc97-dda2-4635-81c6-ad4829779051",
+      "image": {
+        "sha256": "a0a89c7ad76a24cf6b660a006aa3d38c1d063926a4b78f2458ea166c0603a14c",
+        "bytes": 2537111,
+        "width": 1122,
+        "height": 1402,
+        "format": "png"
+      },
+      "inputReferences": [],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260810.md#psittacosaurus-mongoliensis",
+        "promptPath": "tools/comfyui/outputs/overnight/20260810/psittacosaurus-mongoliensis-genus-quill-tail-diagonal-foraging-imagegen-v1.txt",
+        "promptSha256": "e27884c8d82dd20b657f644b6c2fc3b8ddf3c20bdf68a0d757a77a5f3f4491b1",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI built-in image generation; anatomy-led composition-diversity v1; original-size automated visual intake; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake; manual anatomy approval required",
+        "reviewedAt": "2026-08-10T14:14:36.4424954Z",
+        "notes": "S7 diversity candidate only. Bristles are restricted to a middle-tail row with bare torso and tail base; genus-level Psittacosaurus sp. evidence boundary, hand and foot digit counts, and head proportions require manual review. Representative promotion prohibited."
+      }
+    }
+  ],
+  "rejectedAttempts": [
+    {
+      "speciesId": "psittacosaurus-mongoliensis",
+      "sourceCallId": "exec-8988a257-d718-4dcb-a970-58b66d505b9f",
+      "sha256": "8782cfc28cddfc8580cad61c18d38392b8ba5fa0002dcae9e021a81cc4c5a1dd",
+      "bytes": 2593392,
+      "width": 1122,
+      "height": 1402,
+      "inputReferences": [],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260810/psittacosaurus-mongoliensis-rearthreequarter-tailbristle-bodydrift-imagegen-v1.txt",
+        "promptSha256": "60212ce5b8fb5a34bfabebb582d2bbeeea32eb86ffa3e2f8b9a514f90d12cc28",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI built-in image generation; anatomy-led composition-diversity v1; original-size automated visual intake; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-10; factual constraints from existing Dino Atlas identity metadata; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompt; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "Bristles spread onto the dorsal torso and hip instead of remaining a tail-only genus-level row.",
+      "pixelsRetained": false
+    },
+    {
+      "speciesId": "psittacosaurus-mongoliensis",
+      "sourceCallId": "exec-753cb010-7030-476a-8cd3-08ee000b2ac9",
+      "sha256": "19a03038630e86214bce594b16598bcc82d7ffd0392cfd6a9383af3865de949f",
+      "bytes": 2496515,
+      "width": 1122,
+      "height": 1402,
+      "inputReferences": [
+        {
+          "role": "Image 1 rejected generated edit target",
+          "sourceCallId": "exec-8988a257-d718-4dcb-a970-58b66d505b9f",
+          "sha256": "8782cfc28cddfc8580cad61c18d38392b8ba5fa0002dcae9e021a81cc4c5a1dd",
+          "status": "generated-cache-input-deleted",
+          "pixelsRetained": false,
+          "pathEvidence": "Exact generated-cache path intentionally omitted from tracked metadata; the source call ID, session event, and SHA-256 bind the deleted input without inventing a staging path."
+        }
+      ],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260810/psittacosaurus-mongoliensis-tailbristle-targeted-edit-imagegen-v2.txt",
+        "promptSha256": "fd1a2bc9fa0f86fcde85d8e57f75de17342517d33d4dc6a2a969b98eec7f934b",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI built-in image generation; targeted tail-bristle edit v2 using the immediately preceding rejected output; original-size automated visual intake; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-10; factual constraints from existing Dino Atlas identity metadata; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompt; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "Targeted edit still left bristles across the torso and rump, so the tail-only gate remained unsatisfied.",
+      "pixelsRetained": false
+    },
+    {
+      "speciesId": "quetzalcoatlus-northropi",
+      "candidateId": "quetzalcoatlus-northropi-banked-flight-alamosaurus-distance-v1",
+      "targetFilename": "quetzalcoatlus-northropi-banked-flight-alamosaurus-distance-imagegen-v1.png",
+      "sourceCallId": "exec-88199955-a17a-4a57-ac3f-bdb1e1c7b593",
+      "sha256": "d5223bd69ff459bf7a665134b05afc04d9412c2e841975c6f7aeceb922183404",
+      "bytes": 2519342,
+      "width": 1672,
+      "height": 941,
+      "inputReferences": [],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260810/quetzalcoatlus-northropi-banked-flight-alamosaurus-distance-imagegen-v1.txt",
+        "promptSha256": "652b8fecad0079ea512be3a6f768f54f7b03c9b5c1466e5c8b4886ec24885600",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI built-in image generation; anatomy-led composition-diversity v1; original-size automated visual intake; manual anatomy approval required",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-10; factual constraints from existing Dino Atlas identity metadata; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompt; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "deleted-rejected",
+      "reason": "Anatomy and crop gate failed: the near wingtip is cropped and same-side wing-membrane continuity to each lower leg or ankle cannot be traced at original size.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Windows Recycle Bin for generated-cache and staging copies until emptied; review DB retains rejection history"
+    },
+    {
+      "speciesId": "ankylosaurus-magniventris",
+      "candidateId": "ankylosaurus-magniventris-elevated-oxbow-coexistence-v1",
+      "targetFilename": "ankylosaurus-magniventris-elevated-oxbow-coexistence-imagegen-v1.png",
+      "sourceCallId": "exec-89b1421a-4b4f-455a-84b4-e9e36fe57b41",
+      "sha256": "54740bce2edfb407d263187a157e565efb9e6b6e2d5d6a38f4d1c73d165d488e",
+      "bytes": 3198131,
+      "width": 1672,
+      "height": 941,
+      "inputReferences": [],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260810/ankylosaurus-magniventris-elevated-oxbow-coexistence-imagegen-v1.txt",
+        "promptSha256": "afa70012eff1a57ca003b7b6f216e5d08788a39ae88e24479f7ac83843c7dd7b",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI built-in image generation; anatomy-led composition-diversity v1; original-size automated visual intake; manual anatomy approval required",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-10; factual constraints from existing Dino Atlas identity metadata; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompt; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "deleted-rejected",
+      "reason": "Identity gate failed: elongated horned skull, unclear cervical half-rings, regular glossy pebble armor, elephant-like feet, and a detached pancake-shaped club conflict with the approved Ankylosaurus route.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Windows Recycle Bin for generated-cache and staging copies until emptied; review DB retains rejection history"
+    }
+  ]
+}

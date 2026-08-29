@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f2efe8"/>
+  <g font-family="Arial, sans-serif" fill="#1e2930">
+    <text x="90" y="75" font-size="34" font-weight="700">SIDE GEOMETRY</text>
+    <text x="930" y="75" font-size="34" font-weight="700">FRONT CROSS-SECTION</text>
+  </g>
+
+  <!-- Side: a solid jaw volume encloses the old spiral. Only the outer C-arc is functional. -->
+  <path d="M115 310 C210 175 500 145 760 255 C690 285 645 330 625 405 C600 505 505 650 245 705 C125 635 70 470 115 310 Z"
+        fill="#8aa0a4" stroke="#26383d" stroke-width="14"/>
+  <path d="M118 307 C235 205 505 190 754 257" fill="none" stroke="#26383d" stroke-width="18"/>
+  <!-- buried continuous root, shown only in the guide -->
+  <path d="M470 565 C315 595 205 515 228 395 C247 292 373 257 474 307 C559 349 570 452 513 519 C468 572 371 575 323 523"
+        fill="none" stroke="#485f64" stroke-width="54" stroke-linecap="round" stroke-dasharray="18 18" opacity="0.55"/>
+  <!-- exposed outer C arc, continuous with the buried root -->
+  <path d="M323 523 C265 474 251 401 281 338 C314 270 396 249 470 276 C532 298 565 352 562 410"
+        fill="none" stroke="#22343a" stroke-width="48" stroke-linecap="round"/>
+  <!-- progressively rotating functional crowns -->
+  <g fill="#f5e2bd" stroke="#563f2c" stroke-width="7">
+    <path d="M299 508 L251 458 L322 469 Z"/>
+    <path d="M273 442 L215 398 L292 403 Z"/>
+    <path d="M281 374 L230 318 L307 334 Z"/>
+    <path d="M314 318 L282 246 L346 286 Z"/>
+    <path d="M370 284 L358 205 L411 273 Z"/>
+    <path d="M430 277 L449 198 L472 286 Z"/>
+    <path d="M490 299 L533 232 L522 322 Z"/>
+    <path d="M535 340 L600 293 L557 372 Z"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="26" fill="#1e2930">
+    <text x="125" y="790">solid jaw cartilage encloses the old spiral</text>
+    <text x="355" y="145">visible functional C-arc</text>
+  </g>
+
+  <!-- Front: one filled triangular jaw with a single central ridge. -->
+  <path d="M1240 170 L950 710 L1530 710 Z" fill="#8aa0a4" stroke="#26383d" stroke-width="16"/>
+  <path d="M1240 170 L1240 710" stroke="#22343a" stroke-width="48" stroke-linecap="round"/>
+  <g fill="#f5e2bd" stroke="#563f2c" stroke-width="7">
+    <path d="M1240 230 L1196 292 L1284 292 Z"/>
+    <path d="M1240 305 L1196 367 L1284 367 Z"/>
+    <path d="M1240 380 L1196 442 L1284 442 Z"/>
+    <path d="M1240 455 L1196 517 L1284 517 Z"/>
+    <path d="M1240 530 L1196 592 L1284 592 Z"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="26" fill="#1e2930">
+    <text x="975" y="790">one filled triangle, one tooth-bearing apex</text>
+    <text x="975" y="825">not U-shaped rails plus a separate blade</text>
+  </g>
+</svg>

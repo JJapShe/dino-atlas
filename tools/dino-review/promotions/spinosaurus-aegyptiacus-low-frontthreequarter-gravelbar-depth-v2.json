@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "spinosaurus-aegyptiacus-low-frontthreequarter-gravelbar-depth-v2",
+  "disposition": "promoted-awaiting-app-integration",
+  "promotedAt": "2026-08-11T13:31:24.761Z",
+  "sourcePath": "tools/dino-review/pending/spinosaurus-aegyptiacus-low-frontthreequarter-gravelbar-depth-v2/spinosaurus-aegyptiacus-low-frontthreequarter-gravelbar-depth-imagegen-v2.png",
+  "targetPath": "assets/dinosaurs/spinosaurus-aegyptiacus-low-frontthreequarter-gravelbar-depth-imagegen-v2.png",
+  "filename": "spinosaurus-aegyptiacus-low-frontthreequarter-gravelbar-depth-imagegen-v2.png",
+  "sha256": "6ba2e025c81b7d9d85446287ab52d55b238e3facff6d77f9a61bb57397dc328a",
+  "sizeBytes": 2785860,
+  "review": {
+    "status": "pass",
+    "note": "",
+    "updatedAt": "2026-08-11T13:31:23.093Z",
+    "imageSha256": "6ba2e025c81b7d9d85446287ab52d55b238e3facff6d77f9a61bb57397dc328a",
+    "manifestSha256": "bd442aa39aed0efef7572ab568030f812883999b8d1387cfc3b5cb697e33a2c9"
+  },
+  "candidate": {
+    "schemaVersion": 1,
+    "candidateId": "spinosaurus-aegyptiacus-low-frontthreequarter-gravelbar-depth-v2",
+    "filename": "spinosaurus-aegyptiacus-low-frontthreequarter-gravelbar-depth-imagegen-v2.png",
+    "speciesId": "spinosaurus-aegyptiacus",
+    "kind": "anatomy review",
+    "targetFilename": "spinosaurus-aegyptiacus-low-frontthreequarter-gravelbar-depth-imagegen-v2.png",
+    "provenance": {
+      "source": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images were used only as project-owned identity references where stated; no external artwork or named-artist style input",
+      "license": "Generated project asset under applicable OpenAI service terms; original project prompt and project-owned identity references only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+      "prompt": "Edit Image 1 as the target. Image 2 is the project-owned approved Spinosaurus aegyptiacus limb-count, hand, short-leg, deep-tail, and species-identity reference only.\nPreserve Image 1's 16:9 low front-right three-quarter gravel-bar composition, one animal, long low snout, set-back nostrils, full continuous sail, complete deep tail, diagonal scene depth, background channels, lighting, color family, and full-body framing. Do not revert to Image 2's flat side view.\nPrecisely repair Image 1's limbs. Show exactly two strong forelimbs attached at the two shoulders and separated by open background. Each complete hand must have exactly three distinct fingers, no fourth or fifth digit; the first finger carries the largest hooked claw, and every finger connects naturally through one wrist. Show exactly two short robust hind legs attached at the two hips and exactly two separate feet on dry gravel. The near leg is planted and the far leg is a clear offset mid-step behind it, never a thin dangling extra leg under the abdomen. Each foot has exactly three main forward toes and is fully visible, grounded or naturally mid-step, with no fused, duplicated, hidden, or severed foot. Maintain bipedal posture: neither hand touches the ground. Keep exactly one pelvis-to-tip vertically deep tail. Do not change the head, sail, body, tail, palette, camera, environment, or crop beyond the anatomical repair. No text, watermark, other animal, attack, gore, extra limb, extra finger, long generic theropod legs, crocodile sprawl, quadrupedal contact, cropped extremity, or split tail. Natural-history museum realism, no named-artist or franchise style.",
+      "seed": "provider-not-exposed",
+      "workflow": "OpenAI built-in image generation; anatomy-led composition-diversity v2; approved-control identity reference; original-size automated and independent visual intake; manual anatomy approval required"
+    },
+    "anatomyReview": {
+      "status": "review-hold",
+      "representative": false,
+      "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+      "reviewedAt": "2026-08-10T16:17:52.7950300Z",
+      "notes": "S2 diversity candidate only. One head, one continuous sail, two arms, two short hind legs, two feet and one tail appear readable; exact three-digit topology of the far hand, both feet, and distal tail depth require manual original-size crop review. Representative promotion prohibited."
+    }
+  }
+}

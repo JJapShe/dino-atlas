@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 2,
+  "batchId": "gallery-composition-diversity-20260811-b9",
+  "status": "review-hold",
+  "targetAudience": "ages 5-14",
+  "audit": {
+    "json": "tools/comfyui/gallery-composition-similarity-audit-20260810.json",
+    "markdown": "docs/gallery-composition-diversity-audit-2026-08-10.md",
+    "taxa": 155,
+    "approvedImages": 871,
+    "withinTaxonPairs": 2103,
+    "pairsAtOrAbove045": 677,
+    "pairsAtOrAbove055": 129,
+    "pairsAtOrAbove065": 12,
+    "pairsAtOrAbove075": 6
+  },
+  "policy": {
+    "batchSize": 3,
+    "attemptedImageCount": 6,
+    "enqueuedCandidateCount": 3,
+    "retainedCandidateCount": 3,
+    "candidateKinds": [
+      "anatomy review"
+    ],
+    "automaticPromotion": false,
+    "representativePromotion": false,
+    "automaticDeletionFromPending": false,
+    "publicAssetMutation": false,
+    "appDataMutation": false,
+    "candidateMaxSimilarityGate": 0.58,
+    "selectionRule": "Finish the remaining high-priority Tier A taxa while protecting every S1 representative: replace the highest-risk Goyocephale S1/S6 mirror, the Tyrannosaurus S1/S6 overlap with a non-contact upper-body display, and the Tarbosaurus S1/S4 overlap with a high three-quarter anatomy-readable pivot",
+    "diversityGate": "A replacement must change camera family, direction, subject scale, action, spatial layout, or habitat; palette-only and mirror-only changes do not count.",
+    "anatomyGate": "Manual original-size anatomy review is required before pass, promotion, public asset copy, or app integration; the basic S1 representative side/full-body image remains protected."
+  },
+  "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and ignored anatomy-review candidates were used only as project-owned identity, anatomy, or local-repair references; no external artwork or named-artist style input",
+  "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved or locally generated inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+  "records": [
+    {
+      "speciesId": "tyrannosaurus-rex",
+      "candidateId": "tyrannosaurus-rex-vertical-frontthreequarter-stationary-roar-v2",
+      "targetFilename": "tyrannosaurus-rex-vertical-frontthreequarter-stationary-roar-imagegen-v2.png",
+      "kind": "anatomy review",
+      "intendedSlot": 6,
+      "intendedRole": "social-growth-defense",
+      "replacesSimilarityPair": {
+        "slots": [1, 6],
+        "structuralSimilarity": 0.56,
+        "matchMode": "mirrored"
+      },
+      "compositionKey": "portrait-eyelevel-frontthreequarter-stationary-roar",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.458,
+        "nearestSlot": 4,
+        "nearestRole": "identity-anatomy",
+        "matchMode": "direct",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-28fd2537-2e7e-4705-b4d0-121fd08cb492",
+      "image": {
+        "sha256": "ff48362ae3d4d3a7c0fe0ab27db696c33733fad3b23fcf6a146aad5a6c8f5d72",
+        "bytes": 2467968,
+        "width": 1122,
+        "height": 1402,
+        "format": "png"
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 approved Tyrannosaurus rex deep-skull representative identity reference",
+          "path": "assets/dinosaurs/tyrannosaurus-rex-hell-creek-deepskull-twofinger-representative-imagegen-v1.png",
+          "sha256": "82d01916f6f02a43623d5a963e00b7446aea01ada38293c6de266504919fe773",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        },
+        {
+          "role": "Image 2 approved Tyrannosaurus rex bilateral two-finger forelimb and full-body anatomy reference",
+          "path": "assets/dinosaurs/tyrannosaurus-rex-deepskull-twofinger-three-toe-anatomy-imagegen-v1.png",
+          "sha256": "40993151e64315fa774fdbeb8c5673c1d18a8fe6356b4db8bfb775b4dc2a8247",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260811-b9.md#tyrannosaurus-rex",
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b9/tyrannosaurus-rex-vertical-frontthreequarter-stationary-roar-imagegen-v2.txt",
+        "promptSha256": "b720531eb1a83caf7df2b52c795435837ac7f674dadbb2c8d486683e75b8c5b0",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v7; approved deep-skull representative and bilateral two-finger anatomy references; exact input paths and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+        "reviewedAt": "2026-08-10T18:53:13.8202235Z",
+        "notes": "S6 solitary-display candidate only. This intentional upper-body portrait shows a deep broad skull, connected jaws and neck, and two separate tiny forearms with exactly two fingers per hand. The crop contains no pelvis, thigh, leg, foot or toe. Representative promotion prohibited."
+      }
+    },
+    {
+      "speciesId": "tarbosaurus-bataar",
+      "candidateId": "tarbosaurus-bataar-high-frontthreequarter-openbar-pivot-v3",
+      "targetFilename": "tarbosaurus-bataar-high-frontthreequarter-openbar-pivot-imagegen-v3.png",
+      "kind": "anatomy review",
+      "intendedSlot": 4,
+      "intendedRole": "identity-anatomy",
+      "replacesSimilarityPair": {
+        "slots": [1, 4],
+        "structuralSimilarity": 0.602,
+        "matchMode": "direct"
+      },
+      "compositionKey": "square-high-frontthreequarter-openbar-pivot",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.328,
+        "nearestSlot": 2,
+        "nearestRole": "color-pattern",
+        "matchMode": "mirrored",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-89df1768-11c8-4e50-a5bf-a0a8fd14ff53",
+      "image": {
+        "sha256": "8d1df9f5627fd6023ba73a5a65bb0cd5e674a9ee9ca7f13306e82cd65281679c",
+        "bytes": 3569987,
+        "width": 1254,
+        "height": 1254,
+        "format": "png"
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 rejected v2 local head-surface repair target; former batch staging copy of the generated source",
+          "path": "tools/comfyui/outputs/overnight/20260811/b9/tarbosaurus-bataar-high-frontthreequarter-openbar-pivot-imagegen-v2.png",
+          "sha256": "a500149f821c9cdfc290cc60fc34e5df42bc70adb513cf4989ddef44e53d219e",
+          "sourceCallId": "exec-11f0ae6e-b5b1-48b3-bebf-9a61aa7f5129",
+          "status": "rejected-input-deleted",
+          "pixelsRetained": false
+        },
+        {
+          "role": "Image 2 approved Tarbosaurus full-body, skull-proportion and skin-surface identity reference",
+          "path": "assets/dinosaurs/tarbosaurus-bataar-narrow-skull-two-fingers-imagegen-v1.png",
+          "sha256": "07ba22de7f31c712199191a4a671fee3f17987988a3c2d5a6fc37750158d124b",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260811-b9.md#tarbosaurus-bataar",
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b9/tarbosaurus-bataar-high-frontthreequarter-openbar-pivot-imagegen-v3.txt",
+        "promptSha256": "6a86527aa6a1c517ab7fa386d856bcac218ce858ce6ced56dc1e9af72b3891fc",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v7; head-surface repair from rejected staging v2 plus approved Tarbosaurus identity reference; whole frame resynthesized and full semantic anatomy rechecked; exact input paths and SHA in batch record; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+        "reviewedAt": "2026-08-10T18:53:13.8202235Z",
+        "notes": "S4 composition-diversity candidate only. After a head-surface repair and whole-frame resynthesis, the skull reads as long, relatively narrow and deep with no crest or horn; both hands read as 2+2, both feet as three principal toes, with two legs and one complete tail. Representative promotion prohibited."
+      }
+    },
+    {
+      "speciesId": "goyocephale-lattimorei",
+      "candidateId": "goyocephale-lattimorei-square-highoblique-sandstone-hairpin-v1",
+      "targetFilename": "goyocephale-lattimorei-square-highoblique-sandstone-hairpin-imagegen-v1.png",
+      "kind": "anatomy review",
+      "intendedSlot": 6,
+      "intendedRole": "social-growth-defense",
+      "replacesSimilarityPair": {
+        "slots": [1, 6],
+        "structuralSimilarity": 0.726,
+        "matchMode": "mirrored"
+      },
+      "compositionKey": "square-high-oblique-sandstone-hairpin-turn",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.372,
+        "nearestSlot": 6,
+        "nearestRole": "social-growth-defense",
+        "matchMode": "direct",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-03c0b1e3-d2ff-4c69-acab-f71b74ec4b1b",
+      "image": {
+        "sha256": "7389ecbeb64ec5e29e676262164eee281abdf77a703b6424341aec0696cbcb37",
+        "bytes": 2852832,
+        "width": 1254,
+        "height": 1254,
+        "format": "png"
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 approved Goyocephale low table-skull and gracile full-body identity reference",
+          "path": "assets/dinosaurs/goyocephale-lattimorei-table-skull-gracile-representative-imagegen-v2.png",
+          "sha256": "f3d906f389a9b54a1a5e16f203a5fdc970a9507851af27c4b043ad2ef039480a",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        },
+        {
+          "role": "Image 2 approved Goyocephale close table-skull and restrained rear-node anatomy reference",
+          "path": "assets/dinosaurs/goyocephale-lattimorei-table-skull-rear-nodes-anatomy-imagegen-v1.png",
+          "sha256": "52ea79deb2c294d363fe5947a536371882de176a08804a2eee67ba163a4d1843",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260811-b9.md#goyocephale-lattimorei",
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b9/goyocephale-lattimorei-square-highoblique-sandstone-hairpin-imagegen-v1.txt",
+        "promptSha256": "2597dee70acd6806531b2f3a078861e0e69187576964158f7f6bfc57df357422",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v7; approved low table-skull full-body and rear-node anatomy references; exact input paths and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+        "reviewedAt": "2026-08-10T18:53:13.8202235Z",
+        "notes": "S6 composition-diversity candidate only. The low table-like skull roof, restrained rear and side nodes, two arms, two legs, two separate three-principal-toed feet and one complete tail appear readable. Substrate impressions are non-diagnostic traces of unknown maker and are not identified as Goyocephale tracks. Representative promotion prohibited."
+      }
+    }
+  ],
+  "rejectedAttempts": [
+    {
+      "speciesId": "tarbosaurus-bataar",
+      "sourceCallId": "exec-d810c218-f4bc-45c3-84e2-32832c8f928a",
+      "sha256": "b265fb96753659d77b947da767fc4b23694b36369036a3543c1264cab9427075",
+      "bytes": 3262451,
+      "width": 1672,
+      "height": 941,
+      "inputReferences": [
+        {
+          "role": "Image 1 approved Tarbosaurus full-body identity and proportion reference",
+          "path": "assets/dinosaurs/tarbosaurus-bataar-narrow-skull-two-fingers-imagegen-v1.png",
+          "sha256": "07ba22de7f31c712199191a4a671fee3f17987988a3c2d5a6fc37750158d124b",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b9/tarbosaurus-bataar-high-oblique-rearthreequarter-gravelbar-turn-imagegen-v1.txt",
+        "promptSha256": "f9cfa9045f25d6a605e3599e0c7fe76be82f8ef84f82477b179120989d705dd5",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v7; approved Tarbosaurus full-body identity reference; exact input path and SHA in batch record; original-size independent visual QA; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and ignored anatomy-review candidates were used only as project-owned identity, anatomy, or local-repair references; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved or locally generated inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "The high rear-oblique attempt hid the far forearm and its two-finger hand, so the prompt's bilateral arm-and-hand count gate could not be verified.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Generated-cache and staging PNGs moved to the Windows Recycle Bin after exact SHA-256 validation; prompt record retained"
+    },
+    {
+      "speciesId": "tyrannosaurus-rex",
+      "sourceCallId": "exec-2571ebad-2936-43df-8020-e07a9c938efa",
+      "sha256": "40439cba25bcc2ce01006bfac86753b5499108a9b3e5cb45c1f7608f883cc33f",
+      "bytes": 2732705,
+      "width": 1122,
+      "height": 1402,
+      "inputReferences": [
+        {
+          "role": "Image 1 approved Tyrannosaurus rex deep-skull representative identity reference",
+          "path": "assets/dinosaurs/tyrannosaurus-rex-hell-creek-deepskull-twofinger-representative-imagegen-v1.png",
+          "sha256": "82d01916f6f02a43623d5a963e00b7446aea01ada38293c6de266504919fe773",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        },
+        {
+          "role": "Image 2 approved Tyrannosaurus rex bilateral two-finger forelimb and full-body anatomy reference",
+          "path": "assets/dinosaurs/tyrannosaurus-rex-deepskull-twofinger-three-toe-anatomy-imagegen-v1.png",
+          "sha256": "40993151e64315fa774fdbeb8c5673c1d18a8fe6356b4db8bfb775b4dc2a8247",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b9/tyrannosaurus-rex-vertical-frontthreequarter-stationary-roar-imagegen-v1.txt",
+        "promptSha256": "39b872089be5bfdf213507cdf2f1c2977fdae97efc0fd42d032d08a1f5cdd88c",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v7; approved deep-skull representative and bilateral two-finger anatomy references; exact input paths and SHA in batch record; original-size independent visual QA; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and ignored anatomy-review candidates were used only as project-owned identity, anatomy, or local-repair references; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved or locally generated inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "The camera-right hand resolved as three functional clawed digits, failing the exact bilateral two-finger Tyrannosaurus forelimb gate.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Generated-cache and staging PNGs moved to the Windows Recycle Bin after exact SHA-256 validation; prompt record retained"
+    },
+    {
+      "speciesId": "tarbosaurus-bataar",
+      "sourceCallId": "exec-11f0ae6e-b5b1-48b3-bebf-9a61aa7f5129",
+      "sha256": "a500149f821c9cdfc290cc60fc34e5df42bc70adb513cf4989ddef44e53d219e",
+      "bytes": 3315327,
+      "width": 1254,
+      "height": 1254,
+      "inputReferences": [
+        {
+          "role": "Image 1 approved Tarbosaurus full-body identity and proportion reference",
+          "path": "assets/dinosaurs/tarbosaurus-bataar-narrow-skull-two-fingers-imagegen-v1.png",
+          "sha256": "07ba22de7f31c712199191a4a671fee3f17987988a3c2d5a6fc37750158d124b",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b9/tarbosaurus-bataar-high-frontthreequarter-openbar-pivot-imagegen-v2.txt",
+        "promptSha256": "c8d4c47a0e5f5f91bb170264e4267598932f07e3f629f99f4053042ae1653110",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v7; approved Tarbosaurus full-body identity reference; exact input path and SHA in batch record; original-size independent visual QA; rejected before enqueue and used once as the local-repair input for retained v3",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and ignored anatomy-review candidates were used only as project-owned identity, anatomy, or local-repair references; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved or locally generated inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "The otherwise readable square pivot carried a conspicuous row of triangular spikes and crest-like projections across the skull roof, violating the hornless low-contour Tarbosaurus identity gate.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Generated-cache and staging PNGs moved to the Windows Recycle Bin after exact SHA-256 validation and after the retained v3 repair call completed; prompt record retained"
+    }
+  ]
+}

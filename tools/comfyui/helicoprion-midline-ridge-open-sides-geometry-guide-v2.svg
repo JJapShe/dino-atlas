@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f3f0e8"/>
+  <g font-family="Arial, sans-serif" fill="#1f2c31">
+    <text x="70" y="70" font-size="34" font-weight="700">SIDE: RIDGE RISES UP, NO LOWER-LIP LOOP</text>
+    <text x="930" y="70" font-size="34" font-weight="700">FRONT: OPEN SIDES, ONE MIDLINE RIDGE</text>
+  </g>
+
+  <!-- Side view: grey upper head over a black open cavity. The ventral throat is low and straight. -->
+  <path d="M90 270 C210 145 520 135 780 270 C710 300 660 340 620 390 L178 390 C140 365 108 325 90 270 Z"
+        fill="#8aa0a4" stroke="#26383d" stroke-width="14"/>
+  <path d="M300 650 L700 650 C735 630 760 605 785 580"
+        fill="none" stroke="#8aa0a4" stroke-width="72" stroke-linecap="round"/>
+  <path d="M300 650 L700 650" fill="none" stroke="#26383d" stroke-width="14"/>
+  <path d="M178 400 L620 390 C683 455 705 548 690 615 L300 615 L300 650 L178 650 Z"
+        fill="#102027"/>
+
+  <!-- One narrow median ridge rises dorsally from the throat base. It never projects below the throat line. -->
+  <path d="M360 630 C372 565 384 500 410 447 C445 378 505 345 568 365 C619 382 646 429 639 478 C632 523 600 553 564 572 C523 594 489 615 470 650 L360 650 Z"
+        fill="#526a70" stroke="#26383d" stroke-width="14"/>
+  <path d="M397 596 C408 530 420 474 450 424 C477 380 521 368 563 383 C603 398 623 432 617 469"
+        fill="none" stroke="#1f343a" stroke-width="38" stroke-linecap="round"/>
+  <g fill="#f4dfb9" stroke="#593f2b" stroke-width="6">
+    <path d="M406 566 L373 514 L429 531 Z"/>
+    <path d="M419 510 L389 452 L444 480 Z"/>
+    <path d="M441 458 L421 392 L470 433 Z"/>
+    <path d="M474 416 L468 347 L508 408 Z"/>
+    <path d="M514 391 L531 324 L548 402 Z"/>
+    <path d="M553 393 L589 335 L582 416 Z"/>
+    <path d="M586 416 L641 374 L612 448 Z"/>
+    <path d="M608 451 L676 430 L628 490 Z"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="25" fill="#1f2c31">
+    <text x="80" y="760">dark oral cavity remains open around the ridge</text>
+    <text x="350" y="805">one tooth-bearing median ridge rises upward from the throat base</text>
+    <text x="350" y="838">no broad left/right lower jaw, no U-shaped lower-lip rim</text>
+  </g>
+
+  <!-- Front view: an upper head arch, black oral space, one narrow center keel. -->
+  <path d="M900 235 C1000 110 1430 110 1530 235 L1460 335 C1360 285 1070 285 970 335 Z"
+        fill="#8aa0a4" stroke="#26383d" stroke-width="14"/>
+  <path d="M965 335 C1080 285 1350 285 1465 335 L1465 675 L965 675 Z" fill="#102027"/>
+  <path d="M1220 300 L1135 675 L1305 675 Z" fill="#526a70" stroke="#26383d" stroke-width="14"/>
+  <path d="M1220 320 L1220 655" stroke="#1f343a" stroke-width="38" stroke-linecap="round"/>
+  <g fill="#f4dfb9" stroke="#593f2b" stroke-width="6">
+    <path d="M1220 350 L1180 410 L1260 410 Z"/>
+    <path d="M1220 425 L1180 485 L1260 485 Z"/>
+    <path d="M1220 500 L1180 560 L1260 560 Z"/>
+    <path d="M1220 575 L1180 635 L1260 635 Z"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="25" fill="#1f2c31">
+    <text x="970" y="760">black open space on both sides of one narrow center keel</text>
+    <text x="1015" y="805">not two side jaws, not a horseshoe, not 山</text>
+  </g>
+</svg>

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-26-helicoprion-integrated-whorl-correction-v5",
+  "createdAt": "2026-08-26",
+  "taxonId": "helicoprion-davisii",
+  "audience": "Korean Dino Atlas users ages 5-14",
+  "reason": "User review found that v3 still read as a straight freestanding saw blade inside an empty U-shaped lower jaw. V5 instead shows the functional crowns turning around one partial C/comma-shaped outer arc whose two ends disappear into a solid median lower-jaw volume; the older inner turn remains concealed.",
+  "reconstructionBoundary": "The singular symphyseal whorl, continuous root, full mandibular-arch occupation and concealment of older crowns are evidence-led. The exact visible C-arc, filled-triangle front soft-tissue contour, body, fins, color and ecology are reconstruction choices and are not preserved as a complete life outline.",
+  "rollup": {
+    "approvedAssets": 3,
+    "representativeAssets": 1,
+    "reviewOnlyAssets": 2,
+    "supersededRuntimeAssets": 3,
+    "privateRejectedAttempts": 11
+  },
+  "copyrightSafety": {
+    "userReferences": [
+      "C:/Users/USER/AppData/Local/Temp/codex-clipboard-666e1aca-4cee-4727-84c2-a50089c37986.png",
+      "C:/Users/USER/AppData/Local/Temp/codex-clipboard-d69a785f-df7b-4a16-8afa-9645eed10d03.png"
+    ],
+    "referenceUse": "High-level anatomy intent only: integrated median lower jaw, curled functional tooth arc and concealed old turn. Styles, exact poses, prey and compositions were explicitly excluded.",
+    "projectGeometryGuide": [
+      "tools/comfyui/helicoprion-integrated-whorl-geometry-guide-v1.svg",
+      "tools/comfyui/helicoprion-integrated-whorl-geometry-guide-v1.png"
+    ],
+    "licenseRecord": "Original project-generated bitmaps under applicable OpenAI service terms. Publications supplied factual constraints; external art was not copied or used as a runtime asset.",
+    "appPathPolicy": "Runtime metadata references approved assets/dinosaurs paths only; private .codex/generated_images paths are provenance-only."
+  },
+  "researchSources": [
+    {
+      "citation": "Tapanila et al. 2013. Jaws for a spiral-tooth whorl: CT images reveal novel adaptation and phylogeny in fossil Helicoprion. Biology Letters 9:20130057.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3639784/",
+      "use": "A singular symphyseal tooth whorl occupies the mandibular arch; the continuous root advances and curls, and older crowns are concealed before a complete exposed turn."
+    },
+    {
+      "citation": "Ramsay et al. 2015. Eating with a saw for a jaw: functional morphology of the jaws and tooth-whorl in Helicoprion davisii. Journal of Morphology 276:47-64.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25181366/",
+      "use": "The whorl occupies the length of Meckel's cartilage and functional crowns participate in capture, cutting and transport."
+    },
+    {
+      "citation": "Tapanila et al. 2020. Saws, Scissors, and Sharks: Late Paleozoic Experimentation with Symphyseal Dentition. The Anatomical Record 303:363-376.",
+      "url": "https://anatomypubs.onlinelibrary.wiley.com/doi/10.1002/ar.24046",
+      "use": "Review-level boundary for symphyseal dentition and concealed older whorl turns."
+    },
+    {
+      "citation": "Gayford et al. 2024. Cautionary tales on the use of proxies to estimate body size and form of extinct animals. Ecology and Evolution 14:e70218.",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/ece3.70218",
+      "use": "Complete body dimensions and outline remain proxy-based."
+    }
+  ],
+  "records": {
+    "helicoprion-davisii-representative-v5": {
+      "slot": 1,
+      "kind": "count-level pass",
+      "representativeEligible": true,
+      "asset": "assets/dinosaurs/helicoprion-davisii-integrated-partial-whorl-representative-imagegen-v5.png",
+      "sourceCallId": "exec-e82e2908-115e-4c58-9ee5-8a9135d20b01",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-e82e2908-115e-4c58-9ee5-8a9135d20b01.png",
+      "prompt": "Scientific-educational Helicoprion davisii representative anatomy correction v5. Use the project geometry guide: one partially visible curled C/comma arc, about 140 degrees, continuous with a buried spiral and integrated into one solid median lower-jaw wedge. Show 7-8 functional crowns changing orientation around the upper/anterior outer arc; both visible-root ends disappear into opaque jaw flesh, especially the lower end into the chin. Keep the older inner spiral concealed. From the front the filled jaw would read as a triangle with the root at its apex. Complete near-lateral animal and tail in landscape framing. No straight row, U-shaped lower lip, side gums, freestanding blade, round ball, exposed wheel, paired rows, upper teeth, duplicate fins, text or watermark.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image_gen edit-guided correction using a project-generated body target, project-created geometry guide and user references as high-level anatomy intent only",
+      "dimensions": "1536x1024",
+      "bytes": 2422000,
+      "sha256": "b5de57ef49d1c9fc9d0810efc691374ab9612f53dbdabf27f8e1550cbec00bce",
+      "review": "Approved at original size: the functional row forms a readable partial C arc; crown orientation changes around the curve; both ends enter a solid lower-jaw volume; no exposed inner wheel; complete body and tail. Exact soft-tissue and postcranial form remain inferred."
+    },
+    "helicoprion-davisii-pattern-v5": {
+      "slot": 2,
+      "kind": "review hold",
+      "representativeEligible": false,
+      "asset": "assets/dinosaurs/helicoprion-davisii-integrated-partial-whorl-ochre-upward-pattern-imagegen-v5.png",
+      "sourceCallId": "exec-c42fae34-c181-4fd2-bc61-3559f4c83d53",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-c42fae34-c181-4fd2-bc61-3559f4c83d53.png",
+      "prompt": "Scientific-educational Helicoprion davisii color-pattern variant v5. Preserve the accepted solid integrated jaw and one partial C/comma functional arc with 7-8 crowns; both root ends disappear into opaque cartilage and the inner spiral stays hidden. Create a complete portrait upward-swimming animal with charcoal-brown skin and subdued irregular ochre mottling. No straight row, full spiral, external disk, U-shaped conventional lower jaw, side gums, upper teeth, duplicate fins, prey, text or watermark.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image_gen identity-guided portrait variation using the approved v5 representative and project geometry guide",
+      "dimensions": "1024x1536",
+      "bytes": 2179854,
+      "sha256": "7ff269d596a44fc15f9f6643a6557319c5691d69ace1c282c93f8e235c9d003d",
+      "review": "Accepted as review hold at original size: distinct pose and palette, complete body, solid jaw and curved row retained. Curvature is less diagnostic than S1; not representative-eligible."
+    },
+    "helicoprion-davisii-ecology-v5": {
+      "slot": 3,
+      "kind": "anatomy review",
+      "representativeEligible": false,
+      "asset": "assets/dinosaurs/helicoprion-davisii-integrated-partial-whorl-cephalopod-ecology-imagegen-v5.png",
+      "sourceCallId": "exec-1b3fcea2-c6ae-458c-9db4-058af100446f",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-1b3fcea2-c6ae-458c-9db4-058af100446f.png",
+      "prompt": "Scientific-educational Helicoprion davisii ecology image v5. Preserve the approved solid median lower-jaw volume, one curved partial C/comma outer arc with 7-8 functional crowns changing orientation and both ends disappearing into opaque cartilage; keep the spiral center and complete wheel hidden. Show one complete focal animal in a wide generalized Early Permian shelf, with small soft-bodied cephalopods several body lengths away and no contact. No straight row, U-shaped jaw, external wheel, upper teeth, duplicate fins, cutaway, text or watermark.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image_gen ecology variation using the approved v5 identity and project geometry guide",
+      "dimensions": "1536x1024",
+      "bytes": 2396239,
+      "sha256": "619a88fb3002f9bd1804ffa4ece302192708dc5311a439cfa674d7ae06464508",
+      "review": "Accepted as anatomy review at original size: curved functional arc and solid jaw remain readable; complete focal body; distant non-contact cephalopods. Exact prey, behavior, buried geometry and body remain illustrative."
+    }
+  },
+  "supersededRuntimeAssets": [
+    "assets/dinosaurs/helicoprion-davisii-single-midline-sawblade-representative-imagegen-v3.png",
+    "assets/dinosaurs/helicoprion-davisii-single-midline-sawblade-upward-pattern-imagegen-v3.png",
+    "assets/dinosaurs/helicoprion-davisii-single-midline-sawblade-cephalopod-ecology-imagegen-v3.png"
+  ],
+  "rejectedAttempts": [
+    { "callId": "exec-4b1c2b53-30c0-4c78-8fe2-5fbf66762a39", "reason": "Solid wedge achieved but functional row remained straight." },
+    { "callId": "exec-9720bbfd-f3a5-441d-9699-e13343ea6c03", "reason": "Teeth read on one lateral face instead of the median integrated structure." },
+    { "callId": "exec-0cfdaae0-40b0-4e83-8c05-c0fa940e608a", "reason": "Front view produced a rounded paddle rather than a filled triangular support." },
+    { "callId": "exec-d32da05a-f777-4f0b-baba-947d7a4ab4e3", "reason": "Useful private geometry diagnostic only; not a naturalistic runtime representative." },
+    { "callId": "exec-e406a8bc-386c-4732-b80e-001f0ba7c877", "reason": "Regressed to an empty U-shaped jaw with a freestanding blade." },
+    { "callId": "exec-6556a39f-318f-43bc-903e-4e886707810f", "reason": "Added an erroneous extra anterior dorsal spike." },
+    { "callId": "exec-7a82f056-5b11-455d-8533-4764bf71a434", "reason": "Edit failed to remove the extra dorsal spike." },
+    { "callId": "exec-13dafcf2-fe97-47a9-8c71-31c708b4a3a7", "reason": "Pattern variant inherited the straight row." },
+    { "callId": "exec-9140dbaf-cc6f-406c-902d-145e2bc14186", "reason": "Ecology variant inherited the straight row." },
+    { "callId": "exec-3eea1a0f-153a-4821-ab43-9d39cda83d58", "reason": "Produced a round bulb and partially external wheel." },
+    { "callId": "exec-46fa1231-62e6-41bb-9003-0c279ad81db1", "reason": "Exposed a complete spiral wheel and visible center; rejected from runtime." }
+  ]
+}

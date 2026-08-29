@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-26-helicoprion-reconstruction-correction-v2",
+  "createdAt": "2026-08-26",
+  "taxonId": "helicoprion-davisii",
+  "audience": "Korean Dino Atlas users ages 5-14",
+  "reason": "The v1 gallery avoided an external saw but drifted into a generic modern-shark head and made the diagnostic deep rounded mandibular whorl architecture difficult to read.",
+  "rollup": {
+    "approvedAssets": 3,
+    "representativeAssets": 1,
+    "reviewOnlyAssets": 2,
+    "rejectedAttempts": 1,
+    "supersededAppAssets": 3
+  },
+  "copyrightSafety": {
+    "externalScientificArtworkUsedAsGeneratorInput": false,
+    "externalScientificArtworkCopiedOrImitated": false,
+    "licenseRecord": "Original project-generated bitmaps under applicable OpenAI service terms. Publications and museum pages supplied factual anatomy and uncertainty constraints only.",
+    "appPathPolicy": "Runtime metadata references approved assets/dinosaurs paths only; private .codex/generated_images paths are provenance-only."
+  },
+  "researchSources": [
+    {
+      "citation": "Tapanila et al. 2013. Jaws for a spiral-tooth whorl: CT images reveal novel adaptation and phylogeny in fossil Helicoprion. Biology Letters 9:20130057.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23445952/",
+      "use": "CT constraint: one symphyseal whorl occupies the full mandibular arch and is braced at the lower-jaw midline."
+    },
+    {
+      "citation": "Ramsay et al. 2015. Eating with a saw for a jaw: functional morphology of the jaws and tooth-whorl in Helicoprion davisii. Journal of Morphology 276:47-64.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25181366/",
+      "use": "Functional constraint: exposed crowns form a curved sequence with anterior hooking, middle piercing/cutting and posterior transport roles."
+    },
+    {
+      "citation": "Tapanila et al. 2020. Saws, Scissors, and Sharks: Late Paleozoic Experimentation with Symphyseal Dentition. The Anatomical Record 303:363-376.",
+      "url": "https://anatomypubs.onlinelibrary.wiley.com/doi/10.1002/ar.24046",
+      "use": "Review constraint: the complete spiral is supported inside the lower jaw; older inner crowns are concealed, and H. davisii uses stout, widely spaced crowns."
+    },
+    {
+      "citation": "Tapanila and Pruitt 2013. Unraveling species concepts for the Helicoprion tooth whorl. Journal of Paleontology 87:965-983.",
+      "url": "https://www.cambridge.org/core/journals/journal-of-paleontology/article/abs/unraveling-species-concepts-for-the-helicoprion-tooth-whorl/849CA9FE2599700BFC8D737453E88E3B",
+      "use": "Species cue: mature H. davisii has widely spaced stout teeth with tall cutting surfaces."
+    },
+    {
+      "citation": "Gayford et al. 2024. Cautionary tales on the use of proxies to estimate body size and form of extinct animals. Ecology and Evolution 14:e70218.",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/ece3.70218",
+      "use": "Uncertainty boundary: complete body size and form remain proxy-based and should not be presented as a single certain reconstruction."
+    },
+    {
+      "citation": "Australian Museum. Helicoprion, updated 8 December 2023.",
+      "url": "https://australian.museum/learn/animals/fishes/helicoprion/",
+      "use": "Museum synthesis of lower-jaw placement, global Permian occurrence and feeding research."
+    }
+  ],
+  "records": {
+    "helicoprion-davisii-representative-v2": {
+      "slot": 1,
+      "kind": "count-level pass",
+      "representativeEligible": true,
+      "asset": "assets/dinosaurs/helicoprion-davisii-rounded-internal-whorl-profile-representative-imagegen-v2.png",
+      "sourceCallId": "exec-661531b4-dd05-43d8-8b93-1aab30d19519",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-661531b4-dd05-43d8-8b93-1aab30d19519.png",
+      "prompt": "Scientific-educational Dino Atlas representative correction. Edit the v1 composition but substantially redesign Helicoprion davisii with a short blunt rostrum, large holocephalan-like eye, deep laterally compressed head, and a distinctly deep rounded lower-jaw bulge. Put ONE midline symphyseal whorl through nearly the full mandibular arch. With the mouth partly open, show about 10 stout, widely spaced, tall triangular serrated functional crowns as one strongly curved arc curling posterodorsally inward. Suggest the buried inner spiral only with the round mandibular contour; keep old coils covered. No ordinary upper shark teeth, multiple rows, external saw disk, wheel mouth, lamprey mouth, cutaway, text or watermark. Keep the complete body and tail visible and mark postcranial anatomy as conservative comparative reconstruction.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image_gen precise anatomy correction using the local v1 representative only as the edit target; no external artwork input",
+      "dimensions": "1536x1024",
+      "bytes": 2334429,
+      "sha256": "21cfee12c39705b582d69c8e42ab4751c3565e62cfdf6fa903959785cc94f1b1",
+      "review": "Approved at original size: full body and tail; short blunt head; deep round jaw; one curved series of stout, widely spaced functional crowns; old inner coils concealed; no external saw disk or modern shark tooth rows. Postcranial anatomy remains inferred."
+    },
+    "helicoprion-davisii-pattern-v2": {
+      "slot": 2,
+      "kind": "review hold",
+      "representativeEligible": false,
+      "asset": "assets/dinosaurs/helicoprion-davisii-rounded-whorl-upward-pattern-imagegen-v2.png",
+      "sourceCallId": "exec-5155748d-d067-449e-9f08-5e0439955cd6",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-5155748d-d067-449e-9f08-5e0439955cd6.png",
+      "prompt": "Scientific-educational portrait color-pattern candidate. Use the approved v2 representative as anatomy identity only. Show one complete Helicoprion swimming upward in a portrait frame with its head in nearly exact lateral profile. Preserve a deep circular lower jaw and exactly ONE continuous row of about 9 stout, widely spaced triangular crowns on its upper inner rim, curving strongly backward and inward; never split the row with frontal perspective. Keep old coils buried, the visible upper jaw smooth at gallery scale, and use dark brown-charcoal skin with irregular muted ochre mottling. No paired rows, multiple shark teeth, external spiral, cutaway, text, watermark or cropped tail.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image_gen identity-guided new portrait composition from the approved v2 representative",
+      "dimensions": "1024x1536",
+      "bytes": 2267255,
+      "sha256": "ac0cdb782e9a6c990c57aba803384c66256934115f903c12cfea705dd370b262",
+      "review": "Approved as review hold at original size: a single lateral cutting arc, rounded jaw, complete body and tail, distinct upward composition and palette. Body and color remain inferred; not representative-eligible."
+    },
+    "helicoprion-davisii-ecology-v2": {
+      "slot": 3,
+      "kind": "anatomy review",
+      "representativeEligible": false,
+      "asset": "assets/dinosaurs/helicoprion-davisii-rounded-whorl-cephalopod-ecology-imagegen-v2.png",
+      "sourceCallId": "exec-4d63b27a-3902-4b59-9d5c-932ecd13108d",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-4d63b27a-3902-4b59-9d5c-932ecd13108d.png",
+      "prompt": "Scientific-educational ecology correction. Preserve the old wide Permian marine composition and distant non-contact cephalopod group, but replace the generic shark identity with the approved v2 blunt head, large eye, deep rounded lower jaw and ONE curved midline functional-tooth arc. Show one complete Helicoprion traveling leftward and turning its head so about 8 stout, widely spaced crowns curve inward at gallery size, while old coils remain buried. No upper shark tooth row, paired whorls, external saw disk, attack, gore, cutaway, text, watermark, duplicate fins or cropped tail.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image_gen ecology correction using the local v1 scene as composition target and the approved v2 representative as anatomy identity reference",
+      "dimensions": "1536x1024",
+      "bytes": 2264550,
+      "sha256": "390c16cfb149eb53e669f93bbdd4a68f5cf921459a8cbc74fc68469dedab6a97",
+      "review": "Approved as anatomy review at original size: complete focal body, rounded jaw and one curved functional-tooth series remain readable; distant cephalopods are separated and non-contact. Ecology, prey identity and postcranial form remain illustrative."
+    }
+  },
+  "rejectedAttempts": [
+    {
+      "sourceCallId": "exec-f49da20a-9edf-4837-a88a-6f1f1761aa36",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-f49da20a-9edf-4837-a88a-6f1f1761aa36.png",
+      "reason": "Strong frontal perspective split the single symphyseal whorl into two visually paired tooth rows. Not copied to assets and never app-referenced."
+    }
+  ],
+  "supersededAppAssets": [
+    "assets/dinosaurs/helicoprion-davisii-internal-whorl-profile-representative-imagegen-v1.png",
+    "assets/dinosaurs/helicoprion-davisii-low-oblique-ochre-pattern-imagegen-v1.png",
+    "assets/dinosaurs/helicoprion-davisii-cephalopod-school-ecology-imagegen-v1.png"
+  ]
+}

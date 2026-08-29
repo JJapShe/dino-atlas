@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-24-paleozoic-famous-life-expansion-v1",
+  "createdAt": "2026-08-24",
+  "audience": "Korean Dino Atlas users ages 5-14",
+  "promptRecordType": "Normalized English constraint record of the submitted project prompt; sourceCallId is the canonical provider trace.",
+  "scope": [
+    "Opabinia regalis three-image Paleozoic gallery",
+    "Tiktaalik roseae three-image Paleozoic gallery",
+    "Jaekelopterus rhenaniae three-image Paleozoic gallery"
+  ],
+  "rollup": {
+    "taxa": 3,
+    "approvedAssets": 9,
+    "representativeAssets": 3,
+    "reviewOnlyAssets": 6,
+    "rejectedOrSupersededAttempts": 6
+  },
+  "copyrightSafety": {
+    "externalScientificArtworkUsedAsStyleOrCompositionInput": false,
+    "userProvidedImagesUsedAsAnatomyReference": true,
+    "userReferenceScope": "Only Opabinia eye clustering and proboscis-tip spine/bristle cues; no style, pose, texture, background, text or composition was requested or copied.",
+    "licenseRecord": "Original project-generated bitmaps under applicable OpenAI service terms. Scientific sources supplied factual anatomy and uncertainty constraints. Two user-provided Opabinia images were supplied only to correct anatomical arrangement and were not promoted, copied or referenced by the app.",
+    "appPathPolicy": "Runtime and app metadata reference approved assets/dinosaurs paths only; private .codex/generated_images and temporary user-reference paths are provenance-only."
+  },
+  "researchSources": [
+    {
+      "taxonId": "opabinia-regalis",
+      "citation": "Royal Ontario Museum. Opabinia regalis, Burgess Shale fossil page.",
+      "url": "https://burgess-shale.rom.on.ca/fossils/opabinia-regalis/",
+      "use": "Five eyes, annulated frontal proboscis with opposing spined tips, soft trunk, lateral lobes, gill blades, tail fan, size and Middle Cambrian occurrence.",
+      "rightsUse": "Factual educational reference only; museum artwork was not supplied to the generator."
+    },
+    {
+      "taxonId": "tiktaalik-roseae",
+      "citation": "Daeschler, Shubin & Jenkins. 2006. A Devonian tetrapod-like fish and the evolution of the tetrapod body plan. Nature 440:757-763.",
+      "url": "https://www.nature.com/articles/nature04639",
+      "use": "Flat skull, neck, fish scales and fin rays, shallow-water setting and tetrapod-stem character boundary.",
+      "rightsUse": "Factual and analytical reference only; article figures were not supplied to the generator."
+    },
+    {
+      "taxonId": "tiktaalik-roseae",
+      "citation": "Shubin, Daeschler & Jenkins. 2006. The pectoral fin of Tiktaalik roseae and the origin of the tetrapod limb. Nature 440:764-771.",
+      "url": "https://www.nature.com/articles/nature04637",
+      "use": "Limb-like internal pectoral-fin joints while retaining distal fin rays and no digits.",
+      "rightsUse": "Factual and analytical reference only; article figures were not supplied to the generator."
+    },
+    {
+      "taxonId": "jaekelopterus-rhenaniae",
+      "citation": "Braddy, Poschmann & Tetlie. 2008. Giant claw reveals the largest ever arthropod. Biology Letters 4:106-109.",
+      "url": "https://research-information.bris.ac.uk/en/publications/giant-claw-reveals-the-largest-ever-arthropod/",
+      "use": "46 cm chelicera and approximately 2.5 m extrapolated maximum-size boundary.",
+      "rightsUse": "Factual and analytical reference only; article figures were not supplied to the generator."
+    },
+    {
+      "taxonId": "jaekelopterus-rhenaniae",
+      "citation": "Tetlie. 2009. The origin of pterygotid eurypterids. Palaeontology.",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/j.1475-4983.2009.00907.x",
+      "use": "Pterygotid enlarged chelicerae, slender appendages, expanded pretelson and broad paddle-like telson.",
+      "rightsUse": "Factual and analytical reference only; article figures were not supplied to the generator."
+    }
+  ],
+  "records": {
+    "opabinia-regalis-representative-v1": {
+      "taxonId": "opabinia-regalis", "slot": 1, "kind": "count-level pass", "representativeEligible": true,
+      "asset": "assets/dinosaurs/opabinia-regalis-clustered-fiveeye-bristled-proboscis-representative-imagegen-v1.png",
+      "sourceCallId": "exec-4ddfefce-5748-4900-8127-ba67f0382312",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-4ddfefce-5748-4900-8127-ba67f0382312.png",
+      "prompt": "Correct a full-body side-profile Opabinia so exactly five eyes form a compact non-linear head cluster and the one proboscis ends in two opposed lobes with short inward comb spines and fine bristles; preserve soft unarmored trunk, lateral lobes, gill blades and tail fan.",
+      "seed": "service-assigned, not exposed", "dimensions": "1536x1024", "bytes": 2478823,
+      "sha256": "00e4e584b0e693f4d7a747b4ac99a9485d694c2b37382fca7c3a49695a24c34a",
+      "review": "Original-size pass: exactly five clustered head eyes and opposed bristled/spined proboscis tips readable."
+    },
+    "opabinia-regalis-pattern-v1": {
+      "taxonId": "opabinia-regalis", "slot": 2, "kind": "review hold", "representativeEligible": false,
+      "asset": "assets/dinosaurs/opabinia-regalis-dorsal-clustered-fiveeye-pattern-imagegen-v1.png",
+      "sourceCallId": "exec-4be4e53f-c3fd-457a-8a58-aba1acc08c62",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-4be4e53f-c3fd-457a-8a58-aba1acc08c62.png",
+      "prompt": "Create a vertical high dorsal-oblique Opabinia comparison with exactly five tightly clustered head eyes and an opposed bristled/spined proboscis tip; preserve soft body, lateral lobes, gill blades and tail while changing camera and palette.",
+      "seed": "service-assigned, not exposed", "dimensions": "1122x1402", "bytes": 2160075,
+      "sha256": "62d337a3e93a6c5b4e6892a1a558bf0a91ee45f78976dc3100dd5c2c46451155",
+      "review": "Original-size review hold: five-eye cluster and tip comb readable; perspective, transparency and color remain hypothetical."
+    },
+    "opabinia-regalis-ecology-v1": {
+      "taxonId": "opabinia-regalis", "slot": 3, "kind": "anatomy review", "representativeEligible": false,
+      "asset": "assets/dinosaurs/opabinia-regalis-sponge-shelf-ecology-imagegen-v1.png",
+      "sourceCallId": "exec-fc1fb1fa-1909-42bf-879e-4029d73f75f0",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-fc1fb1fa-1909-42bf-879e-4029d73f75f0.png",
+      "prompt": "Create a wide non-contact Burgess Shale shelf scene with one complete Opabinia; exactly five clustered head eyes and the opposed bristled/spined proboscis tip remain readable, with distant sponge-like organisms only.",
+      "seed": "service-assigned, not exposed", "dimensions": "1672x941", "bytes": 2210566,
+      "sha256": "029dda3268c788cb39b73067ab77c90d67ff16544b24e5036c6e8e02be9406ef",
+      "review": "Original-size anatomy-review acceptance; focal identity readable and ecology remains illustrative."
+    },
+    "tiktaalik-roseae-representative-v1": {
+      "taxonId": "tiktaalik-roseae", "slot": 1, "kind": "count-level pass", "representativeEligible": true,
+      "asset": "assets/dinosaurs/tiktaalik-roseae-flathead-lobedfin-profile-representative-imagegen-v1.png",
+      "sourceCallId": "exec-c46e7ca5-5ad6-4ab6-83b4-7ebdd1df6a13",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-c46e7ca5-5ad6-4ab6-83b4-7ebdd1df6a13.png",
+      "prompt": "Create one complete side-profile Tiktaalik in shallow Devonian water with a flat fish skull, high-set eyes, neck, scaled body and paired robust lobe fins ending in fin rays without fingers or toes.",
+      "seed": "service-assigned, not exposed", "dimensions": "1536x1024", "bytes": 2585842,
+      "sha256": "8d2a47e742509a24dbd361ab32a0a064735f2055a392b5db24f2737e53eeb1b4",
+      "review": "Original-size pass: full body, head, neck, paired fins and no-digit boundary readable."
+    },
+    "tiktaalik-roseae-pattern-v1": {
+      "taxonId": "tiktaalik-roseae", "slot": 2, "kind": "review hold", "representativeEligible": false,
+      "asset": "assets/dinosaurs/tiktaalik-roseae-high-oblique-lobedfin-pattern-imagegen-v1.png",
+      "sourceCallId": "exec-21faf3c6-1f6e-4dfc-b53a-391a4d3ac2df",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-21faf3c6-1f6e-4dfc-b53a-391a4d3ac2df.png",
+      "prompt": "Create a vertical high front-three-quarter Tiktaalik with a flat skull, high-set eyes, paired lobe fins ending in fin rays and no digits, compositionally distinct from the representative.",
+      "seed": "service-assigned, not exposed", "dimensions": "1122x1402", "bytes": 2634093,
+      "sha256": "0f8f2e55cfa8ad0c938f453ec4f7e96eb1d673a18ac9081bfe2092c613237dae",
+      "review": "Original-size review hold: identity readable; foreshortening and color remain hypothetical."
+    },
+    "tiktaalik-roseae-ecology-v1": {
+      "taxonId": "tiktaalik-roseae", "slot": 3, "kind": "anatomy review", "representativeEligible": false,
+      "asset": "assets/dinosaurs/tiktaalik-roseae-shallow-channel-ecology-imagegen-v1.png",
+      "sourceCallId": "exec-d0746f5e-84f4-4110-a9a0-092f1ccbe544",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-d0746f5e-84f4-4110-a9a0-092f1ccbe544.png",
+      "prompt": "Create a wide shallow Devonian channel scene with one Tiktaalik raising its head while body and tail remain in water; no terrestrial walk, digits, attack or contact with distant fish.",
+      "seed": "service-assigned, not exposed", "dimensions": "1672x941", "bytes": 2179564,
+      "sha256": "82f5b189e06f99d57a9438c984409d8fbada8655d408d4a66fa4a1efe365d4d0",
+      "review": "Original-size anatomy-review acceptance; shallow-water behavior and vegetation remain hypothetical."
+    },
+    "jaekelopterus-rhenaniae-representative-v1": {
+      "taxonId": "jaekelopterus-rhenaniae", "slot": 1, "kind": "count-level pass", "representativeEligible": true,
+      "asset": "assets/dinosaurs/jaekelopterus-rhenaniae-chelicera-paddle-profile-representative-imagegen-v1.png",
+      "sourceCallId": "exec-c2a05fbb-07a8-4426-8d1c-cbae591cf333",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-c2a05fbb-07a8-4426-8d1c-cbae591cf333.png",
+      "prompt": "Create one complete side-profile Jaekelopterus with one large cheliceral-claw pair, slender walking appendages, one swimming-paddle pair, connected segmented abdomen and broad triangular paddle-like telson; no scorpion stinger.",
+      "seed": "service-assigned, not exposed", "dimensions": "1536x1024", "bytes": 2578275,
+      "sha256": "4dcab6791c2b947ca05d9eb5f656a078478eb3bf1817fbd248d6a26ebe6c55fc",
+      "review": "Original-size pass: gross pterygotid identity and full silhouette readable; exact proportions remain reconstructed."
+    },
+    "jaekelopterus-rhenaniae-pattern-v1": {
+      "taxonId": "jaekelopterus-rhenaniae", "slot": 2, "kind": "review hold", "representativeEligible": false,
+      "asset": "assets/dinosaurs/jaekelopterus-rhenaniae-dorsal-eightleg-pattern-imagegen-v1.png",
+      "sourceCallId": "exec-21673123-cd3d-499e-9975-dc89f250fd08",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-21673123-cd3d-499e-9975-dc89f250fd08.png",
+      "prompt": "Correct a vertical dorsal-oblique Jaekelopterus to four bilateral pairs of slender walking legs, eight total, kept separate from one swimming-paddle pair; preserve the claw pair and broad triangular telson.",
+      "seed": "service-assigned, not exposed", "dimensions": "1122x1402", "bytes": 2658122,
+      "sha256": "044ec80f76886671ebd00f0a0f400d9b475f11857b7834491a33f1a6a4d6da50",
+      "review": "Original-size review hold: eight walking legs and separate paddles readable; joints and color remain hypothetical."
+    },
+    "jaekelopterus-rhenaniae-ecology-v1": {
+      "taxonId": "jaekelopterus-rhenaniae", "slot": 3, "kind": "anatomy review", "representativeEligible": false,
+      "asset": "assets/dinosaurs/jaekelopterus-rhenaniae-river-channel-ecology-imagegen-v1.png",
+      "sourceCallId": "exec-69db11b1-d07d-4be8-a8aa-a812e28ea2d8",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-69db11b1-d07d-4be8-a8aa-a812e28ea2d8.png",
+      "prompt": "Create a wide Early Devonian river-channel scene with one complete Jaekelopterus and tiny distant armored fish, with no contact, pursuit, attack or patterned tracks.",
+      "seed": "service-assigned, not exposed", "dimensions": "1672x941", "bytes": 2430544,
+      "sha256": "eecd372de3bb26a0dfcba310c4cb36ad188eece17e576334d44bfa250ac6b7a2",
+      "review": "Original-size anatomy-review acceptance; distant fish identity, environment and behavior remain hypothetical."
+    }
+  },
+  "rejectedOrSupersededAttempts": [
+    { "sourceCallId": "exec-e368b66c-0272-4156-9d7e-74557ba0f742", "taxonId": "opabinia-regalis", "reason": "Rigid armored trunk drift." },
+    { "sourceCallId": "exec-2f56698f-5954-4a54-8b61-4443f6d79fec", "taxonId": "opabinia-regalis", "reason": "One of five eyes emerged from the middle trunk." },
+    { "sourceCallId": "exec-00b8f66b-545f-43b5-af69-4546abd30b8a", "taxonId": "opabinia-regalis", "reason": "Only four head eyes." },
+    { "sourceCallId": "exec-6debda1d-27e7-494a-b870-dd19c0419ac5", "taxonId": "opabinia-regalis", "reason": "Cluster layout improved but only four eyes remained." },
+    { "sourceCallId": "exec-e0960b11-a8c0-4d8f-a1e8-874997de93b5", "taxonId": "opabinia-regalis", "reason": "Ecology composition retained only four eyes." },
+    { "sourceCallId": "exec-34150170-29dc-4471-b7a0-35edf81ebe83", "taxonId": "jaekelopterus-rhenaniae", "reason": "Vertical variant lacked one bilateral walking-leg pair." }
+  ]
+}

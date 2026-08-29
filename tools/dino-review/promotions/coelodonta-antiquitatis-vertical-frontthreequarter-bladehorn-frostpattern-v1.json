@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "coelodonta-antiquitatis-vertical-frontthreequarter-bladehorn-frostpattern-v1",
+  "disposition": "promoted-awaiting-app-integration",
+  "promotedAt": "2026-08-11T13:24:48.642Z",
+  "sourcePath": "tools/dino-review/pending/coelodonta-antiquitatis-vertical-frontthreequarter-bladehorn-frostpattern-v1/coelodonta-antiquitatis-vertical-frontthreequarter-bladehorn-frostpattern-imagegen-v1.png",
+  "targetPath": "assets/dinosaurs/coelodonta-antiquitatis-vertical-frontthreequarter-bladehorn-frostpattern-imagegen-v1.png",
+  "filename": "coelodonta-antiquitatis-vertical-frontthreequarter-bladehorn-frostpattern-imagegen-v1.png",
+  "sha256": "ec43a144645f624430ee2e34c40dc3b7437e133ddd8ca7a6e0aedba9eeb5e0e9",
+  "sizeBytes": 2462560,
+  "review": {
+    "status": "pass",
+    "note": "",
+    "updatedAt": "2026-08-11T13:24:46.735Z",
+    "imageSha256": "ec43a144645f624430ee2e34c40dc3b7437e133ddd8ca7a6e0aedba9eeb5e0e9",
+    "manifestSha256": "c5a1496fb825e371bf9fc129ca7fd9d1106938bef6ab191da54d47af9e59e27f"
+  },
+  "candidate": {
+    "schemaVersion": 1,
+    "candidateId": "coelodonta-antiquitatis-vertical-frontthreequarter-bladehorn-frostpattern-v1",
+    "filename": "coelodonta-antiquitatis-vertical-frontthreequarter-bladehorn-frostpattern-imagegen-v1.png",
+    "speciesId": "coelodonta-antiquitatis",
+    "kind": "structure reference",
+    "targetFilename": "coelodonta-antiquitatis-vertical-frontthreequarter-bladehorn-frostpattern-imagegen-v1.png",
+    "provenance": {
+      "source": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and ignored anatomy-review candidates were used only as project-owned identity, anatomy, ecology, or local-repair references; no external artwork or named-artist style input",
+      "license": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved or locally generated inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+      "prompt": "Create one scientific-educational Dino Atlas S2 color-and-pattern candidate, never a representative replacement. Use the supplied project-owned Coelodonta antiquitatis representative only for species identity, coat volume, shoulder height and horn geometry. Do not copy its full-body side-view composition.\n\nUse a portrait-oriented 4:5 vertical composition: a deliberate head-and-high-shoulder study of exactly one Coelodonta antiquitatis from a low front-left three-quarter camera, about thirty degrees away from straight frontal. Crop intentionally below the chest and shoulder so that no partial legs enter the frame; this image makes no full-body or limb-count claim. Keep the complete skull, both small ears, exactly two midline horns and both horn tips fully inside the frame.\n\nThe anterior nasal horn must be a long laterally compressed keratin blade, much taller dorsoventrally than it is thick side-to-side. Show one broad planar lateral face and the very narrow top/front edge at the same time, with transverse growth bands across the broad face. Behind it place exactly one much smaller posterior horn. Preserve a low broad head, small ears, high withers, modest shoulder-neck hump and dense double-layered wool.\n\nUse a distinct hypothetical coat variation: cold charcoal undercoat with irregular pale cream frost-tipped guard-hair patches across the brow, cheek and high shoulder, never regular stripes or repeated spots. A calm plume of visible breath drifts sideways into open negative space while a crosswind lifts loose guard hairs. Late Pleistocene cold dry steppe at blue-white dawn, softly blurred background, no aggression.\n\nReject any round or conical modern-rhinoceros horn, one horn, three or more horns, tusks, trunk, bison hump, hairless modern rhinoceros skin, cropped horn tip, duplicated facial features, extra animal, accidental partial limbs, full-body side silhouette, text, label, logo, watermark, external artwork imitation or named-artist style.",
+      "seed": "provider-not-exposed",
+      "workflow": "OpenAI image_gen anatomy-led composition-diversity v6; approved blade-horn representative identity reference; exact input path and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+    },
+    "anatomyReview": {
+      "status": "review-hold",
+      "representative": false,
+      "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+      "reviewedAt": "2026-08-10T18:26:11.7831823Z",
+      "notes": "Vertical color-texture and blade-horn structure candidate only, not an S2 full-body replacement. Two ears, exactly two complete horns, the broad planar face and narrow edge of the anterior blade horn, growth bands and irregular frost-tipped wool appear readable. The intentional below-chest crop makes no limb-count claim. Representative promotion prohibited."
+    }
+  }
+}

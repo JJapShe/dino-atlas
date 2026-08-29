@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "mammuthus-primigenius-frontal-sedge-pull-portrait-v3",
+  "disposition": "promoted-awaiting-app-integration",
+  "promotedAt": "2026-08-11T13:32:48.364Z",
+  "sourcePath": "tools/dino-review/pending/mammuthus-primigenius-frontal-sedge-pull-portrait-v3/mammuthus-primigenius-frontal-sedge-pull-portrait-imagegen-v3.png",
+  "targetPath": "assets/dinosaurs/mammuthus-primigenius-frontal-sedge-pull-portrait-imagegen-v3.png",
+  "filename": "mammuthus-primigenius-frontal-sedge-pull-portrait-imagegen-v3.png",
+  "sha256": "80673e12fafe42684d4ab782fc854c721d5a84e93ab35a763044c7daee390e73",
+  "sizeBytes": 2517497,
+  "review": {
+    "status": "pass",
+    "note": "",
+    "updatedAt": "2026-08-11T13:32:46.950Z",
+    "imageSha256": "80673e12fafe42684d4ab782fc854c721d5a84e93ab35a763044c7daee390e73",
+    "manifestSha256": "b061aac52e811cd6992282df07260db70f8a9f1e93abf9fd54d927ba4d4fa2c7"
+  },
+  "candidate": {
+    "schemaVersion": 1,
+    "candidateId": "mammuthus-primigenius-frontal-sedge-pull-portrait-v3",
+    "filename": "mammuthus-primigenius-frontal-sedge-pull-portrait-imagegen-v3.png",
+    "speciesId": "mammuthus-primigenius",
+    "kind": "anatomy review",
+    "targetFilename": "mammuthus-primigenius-frontal-sedge-pull-portrait-imagegen-v3.png",
+    "provenance": {
+      "source": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and ignored anatomy-review candidates were used only as project-owned identity, anatomy, or local repair references; no external artwork or named-artist style input",
+      "license": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved or locally generated inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+      "prompt": "Edit Image 1 only as a tightly constrained Dino Atlas anatomy repair. Preserve the exact existing portrait composition, camera, woolly-mammoth identity, domed head, small ears, single trunk, both separate spiral tusks, high shoulders, descending back, fur, lighting, steppe background, the visible near foreleg and foot, both existing hind legs and feet, rump, and short visible tail. Do not redesign, reframe, mirror, crop, recolor, move the tusks, or add another animal. Image 2 is the approved Mammuthus primigenius full-body anatomy control.\n\nRepair only the missing far foreleg. Add exactly one anatomically connected far foreleg descending from the far side of the chest behind—but not directly hidden by—the existing near foreleg. Stagger it slightly rearward and sideways so its entire broad nearly round far forefoot appears on its own clear patch of snow between the near forefoot and the two hind feet. Leave a visible snow gap around that foot. The result must have exactly two forelegs plus exactly two hind legs, exactly four independently visible broad round feet, and no fifth limb. The added leg must connect naturally at the shoulder/chest and match the existing woolly anatomy, scale, fur, light, and perspective.\n\nKeep the single trunk sweeping sedge and keep the short tail visible. No fused legs, duplicate foot, hoof, hidden new foot, extra tusk, modern elephant ears, text, logo, or watermark. Natural-history realism, original project artwork.",
+      "seed": "provider-not-exposed",
+      "workflow": "OpenAI image_gen anatomy-led composition-diversity v4; staged v2 missing-foreleg repair plus approved full-body reference; exact input paths and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+    },
+    "anatomyReview": {
+      "status": "review-hold",
+      "representative": false,
+      "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+      "reviewedAt": "2026-08-10T17:42:05.8906683Z",
+      "notes": "S2 color-pattern diversity candidate only. Two forelegs, two hind legs and four independently visible broad feet now appear connected and readable; two tusks, one trunk, high shoulders, descending back and short tail remain present. Manual original-size anatomy review is still required. Representative promotion prohibited."
+    }
+  }
+}

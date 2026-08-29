@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 2,
+  "batchId": "gallery-composition-diversity-20260811-b3",
+  "status": "review-hold",
+  "targetAudience": "ages 5-14",
+  "audit": {
+    "json": "tools/comfyui/gallery-composition-similarity-audit-20260810.json",
+    "markdown": "docs/gallery-composition-diversity-audit-2026-08-10.md",
+    "taxa": 155,
+    "approvedImages": 871,
+    "withinTaxonPairs": 2103,
+    "pairsAtOrAbove045": 677,
+    "pairsAtOrAbove055": 129,
+    "pairsAtOrAbove065": 12,
+    "pairsAtOrAbove075": 6
+  },
+  "policy": {
+    "batchSize": 3,
+    "attemptedImageCount": 6,
+    "enqueuedCandidateCount": 3,
+    "retainedCandidateCount": 3,
+    "candidateKind": "anatomy review",
+    "automaticPromotion": false,
+    "representativePromotion": false,
+    "automaticDeletionFromPending": false,
+    "candidateMaxSimilarityGate": 0.58,
+    "selectionRule": "LV1 audience priority, representative-pattern similarity, then a role-specific camera or subject-scale change",
+    "diversityGate": "A replacement must change camera family, direction, subject scale, action, spatial layout, or habitat; palette-only and mirror-only changes do not count.",
+    "anatomyGate": "Manual original-size anatomy review is required before pass, promotion, or app integration."
+  },
+  "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images were used only as project-owned identity references where stated; no external artwork or named-artist style input",
+  "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompt and project-owned identity references only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+  "records": [
+    {
+      "speciesId": "otodus-megalodon",
+      "candidateId": "otodus-megalodon-high-dorsal-bank-openwater-v1",
+      "targetFilename": "otodus-megalodon-high-dorsal-bank-openwater-imagegen-v1.png",
+      "intendedSlot": 2,
+      "intendedRole": "color-pattern",
+      "replacesSimilarityPair": {
+        "slots": [1, 2],
+        "structuralSimilarity": 0.646,
+        "matchMode": "mirrored"
+      },
+      "compositionKey": "portrait-high-dorsal-threequarter-bank-openwater",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.548,
+        "nearestSlot": 2,
+        "nearestRole": "color-pattern",
+        "matchMode": "direct",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-97ea1c3f-92cc-4f6e-b1a1-e9453188308f",
+      "image": {
+        "sha256": "978e57d70227ee29b5fabd9cd2d311bcae4b2b672468ea105105192dcb40105c",
+        "bytes": 1965185,
+        "width": 1122,
+        "height": 1402,
+        "format": "png"
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 approved tentative body-model and species-identity reference",
+          "path": "assets/dinosaurs/otodus-megalodon-elongated-blunt-rostrum-representative-imagegen-v1.png",
+          "sha256": "5e1af569c18f1cfb621f0b7149f787e5edaad2dec57feba1d29e4386941a105e",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260811-b3.md#otodus-megalodon",
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/otodus-megalodon-high-dorsal-bank-openwater-imagegen-v1.txt",
+        "promptSha256": "4774416278f6c24c27df520959731b71830c1c9c0ae26516162ed1e3f0c8e1b8",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI built-in image generation; anatomy-led composition-diversity v2; approved-control identity reference; original-size automated and independent visual intake; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+        "reviewedAt": "2026-08-10T16:17:52.7950300Z",
+        "notes": "S2 diversity candidate only. Vertical high-dorsal bank and two dorsal fins are readable; the far pectoral fin, tail-lobe proportion, all body proportions, and incomplete-skeleton boundary require manual original-size review. Representative promotion prohibited."
+      }
+    },
+    {
+      "speciesId": "velociraptor-mongoliensis",
+      "candidateId": "velociraptor-mongoliensis-portrait-head-feather-detail-v1",
+      "targetFilename": "velociraptor-mongoliensis-portrait-head-feather-detail-imagegen-v1.png",
+      "intendedSlot": 2,
+      "intendedRole": "color-pattern",
+      "replacesSimilarityPair": {
+        "slots": [1, 2],
+        "structuralSimilarity": 0.597,
+        "matchMode": "mirrored"
+      },
+      "compositionKey": "portrait-frontthreequarter-head-feather-detail",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.415,
+        "nearestSlot": 3,
+        "nearestRole": "habitat-ecology",
+        "matchMode": "direct",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-677179ba-01c3-4b71-ba5d-9995011c74cc",
+      "image": {
+        "sha256": "0b522eac8418e06dd99f3094d8860de430b992c6a9a8bfce16a2493ea4c45b55",
+        "bytes": 2501168,
+        "width": 1122,
+        "height": 1402,
+        "format": "png"
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 approved skull, facial identity, and plumage reference",
+          "path": "assets/dinosaurs/velociraptor-mongoliensis-djadokhta-raised-second-toe-representative-imagegen-v1.png",
+          "sha256": "66e885e79c4f18f55ddd257f156b2d92a90f23ad8a061f02ba81b4d1fc1b02bf",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260811-b3.md#velociraptor-mongoliensis",
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/velociraptor-mongoliensis-portrait-head-feather-detail-imagegen-v1.txt",
+        "promptSha256": "dff4307abcc4d8a4bc10b4bedf076f0855554a9bf6fa516da4f489a87aaa7ad1",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI built-in image generation; anatomy-led composition-diversity v2; approved-control identity reference; original-size automated and independent visual intake; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+        "reviewedAt": "2026-08-10T16:17:52.7950300Z",
+        "notes": "S2 head-and-plumage diversity candidate only, not a full-body anatomy claim. Long low toothed snout and feather-scale transition appear readable; eye size, skull proportion, color hypothesis, and intentional crop require manual original-size review. Representative promotion prohibited."
+      }
+    },
+    {
+      "speciesId": "spinosaurus-aegyptiacus",
+      "candidateId": "spinosaurus-aegyptiacus-low-frontthreequarter-gravelbar-depth-v2",
+      "targetFilename": "spinosaurus-aegyptiacus-low-frontthreequarter-gravelbar-depth-imagegen-v2.png",
+      "intendedSlot": 2,
+      "intendedRole": "color-pattern",
+      "replacesSimilarityPair": {
+        "slots": [1, 2],
+        "structuralSimilarity": 0.595,
+        "matchMode": "mirrored"
+      },
+      "compositionKey": "landscape-low-frontthreequarter-gravelbar-depth",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.479,
+        "nearestSlot": 2,
+        "nearestRole": "color-pattern",
+        "matchMode": "direct",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-74ccfa3c-16d6-43ea-8dc0-244fc3bb9377",
+      "image": {
+        "sha256": "6ba2e025c81b7d9d85446287ab52d55b238e3facff6d77f9a61bb57397dc328a",
+        "bytes": 2785860,
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 rejected full-body composition input; former batch staging copy of the generated source",
+          "path": "tools/comfyui/outputs/overnight/20260811/spinosaurus-aegyptiacus-low-frontthreequarter-gravelbar-depth-imagegen-v1.png",
+          "sha256": "60ed58cc8113d2a2955b74f9912f4f60a77a36b21b40d62d6acf883fde539b8a",
+          "sourceCallId": "exec-d04f32de-6783-4f4f-b529-95af17a5bd5f",
+          "status": "rejected-input-deleted",
+          "pixelsRetained": false
+        },
+        {
+          "role": "Image 2 approved limb-count, hand, short-leg, deep-tail, and species-identity reference",
+          "path": "assets/dinosaurs/spinosaurus-aegyptiacus-kemkem-shortleg-deeptail-threefinger-representative-imagegen-v1.png",
+          "sha256": "b743b37fec033083dc4ad5bc5e3c25bbce7e54881f1ff74b98c4efdd0bbd8254",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260811-b3.md#spinosaurus-aegyptiacus",
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/spinosaurus-aegyptiacus-low-frontthreequarter-gravelbar-depth-imagegen-v2.txt",
+        "promptSha256": "b7f8e097ac6bd630a9d5767071dd2a7e8eaf58048aa47c50d179535e1464fded",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI built-in image generation; anatomy-led composition-diversity v2; approved-control identity reference; original-size automated and independent visual intake; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+        "reviewedAt": "2026-08-10T16:17:52.7950300Z",
+        "notes": "S2 diversity candidate only. One head, one continuous sail, two arms, two short hind legs, two feet and one tail appear readable; exact three-digit topology of the far hand, both feet, and distal tail depth require manual original-size crop review. Representative promotion prohibited."
+      }
+    }
+  ],
+  "rejectedAttempts": [
+    {
+      "speciesId": "velociraptor-mongoliensis",
+      "sourceCallId": "exec-5d36c08e-0ace-4a5a-90ba-31b0ffe439eb",
+      "sha256": "02781b9d4fcf301bd5a91b6949cf68b107d69a249059c95ee40c859940115bb2",
+      "bytes": 2565739,
+      "width": 1122,
+      "height": 1402,
+      "inputReferences": [
+        {
+          "role": "Image 1 approved identity, feathering, skull, and raised-second-toe topology reference",
+          "path": "assets/dinosaurs/velociraptor-mongoliensis-djadokhta-raised-second-toe-representative-imagegen-v1.png",
+          "sha256": "66e885e79c4f18f55ddd257f156b2d92a90f23ad8a061f02ba81b4d1fc1b02bf",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/velociraptor-mongoliensis-high-oblique-gravelfan-step-imagegen-v1.txt",
+        "promptSha256": "a97c24469c5bc47d6865420504751f7cb9ea856fb209e1bbd00dd4f548517d7e",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI built-in image generation; anatomy-led composition-diversity v2; approved-control identity reference; original-size automated and independent visual intake; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images were used only as project-owned identity references where stated; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompt and project-owned identity references only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "The first full-body attempt showed ambiguous extra ground-contact toes and an oversized raised claw, failing the strict attached-second-toe gate.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Windows Recycle Bin until emptied"
+    },
+    {
+      "speciesId": "velociraptor-mongoliensis",
+      "sourceCallId": "exec-0438f6b0-24a6-4127-bf75-c8dc91112657",
+      "sha256": "ac760027e5b1f6a16f077aa8f43c078a037ac9498c75c7d45adb0fffa8e51b20",
+      "bytes": 2495445,
+      "width": 1122,
+      "height": 1402,
+      "inputReferences": [
+        {
+          "role": "Image 1 rejected full-body edit target; former batch staging copy of the generated source",
+          "path": "tools/comfyui/outputs/overnight/20260811/velociraptor-mongoliensis-high-oblique-gravelfan-step-imagegen-v1.png",
+          "sha256": "02781b9d4fcf301bd5a91b6949cf68b107d69a249059c95ee40c859940115bb2",
+          "sourceCallId": "exec-5d36c08e-0ace-4a5a-90ba-31b0ffe439eb",
+          "status": "rejected-input-deleted",
+          "pixelsRetained": false
+        },
+        {
+          "role": "Image 2 approved foot-topology and species-identity reference",
+          "path": "assets/dinosaurs/velociraptor-mongoliensis-djadokhta-raised-second-toe-representative-imagegen-v1.png",
+          "sha256": "66e885e79c4f18f55ddd257f156b2d92a90f23ad8a061f02ba81b4d1fc1b02bf",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/velociraptor-mongoliensis-high-oblique-gravelfan-step-footrepair-imagegen-v2.txt",
+        "promptSha256": "204e1964af9639db7d521de5808bcbcad7def9dadd42eadfdb17c6e6e8693116",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI built-in image generation; targeted foot repair v2 using a rejected generated input plus approved-control identity reference; original-size automated and independent visual intake; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images were used only as project-owned identity references where stated; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompt and project-owned identity references only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "The targeted foot edit still left a tightly curled or detached-looking near sickle claw and ambiguous ground-contact toe count.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Windows Recycle Bin until emptied"
+    },
+    {
+      "speciesId": "spinosaurus-aegyptiacus",
+      "sourceCallId": "exec-d04f32de-6783-4f4f-b529-95af17a5bd5f",
+      "sha256": "60ed58cc8113d2a2955b74f9912f4f60a77a36b21b40d62d6acf883fde539b8a",
+      "bytes": 2886980,
+      "width": 1672,
+      "height": 941,
+      "inputReferences": [
+        {
+          "role": "Image 1 approved species identity and full-body anatomy reference",
+          "path": "assets/dinosaurs/spinosaurus-aegyptiacus-kemkem-shortleg-deeptail-threefinger-representative-imagegen-v1.png",
+          "sha256": "b743b37fec033083dc4ad5bc5e3c25bbce7e54881f1ff74b98c4efdd0bbd8254",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/spinosaurus-aegyptiacus-low-frontthreequarter-gravelbar-depth-imagegen-v1.txt",
+        "promptSha256": "aa4f834eefa1820781066ba7157d530f053fcfb78dddd680cfba44a9ec306f3d",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI built-in image generation; anatomy-led composition-diversity v2; approved-control identity reference; original-size automated and independent visual intake; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images were used only as project-owned identity references where stated; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompt and project-owned identity references only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "The first full-body attempt had unreadable hand digit counts and an unstable thin far hind limb or foot connection beneath the torso.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Windows Recycle Bin until emptied"
+    }
+  ]
+}

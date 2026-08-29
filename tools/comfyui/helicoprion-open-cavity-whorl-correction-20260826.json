@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-26-helicoprion-open-cavity-whorl-correction-v6",
+  "createdAt": "2026-08-26",
+  "taxonId": "helicoprion-davisii",
+  "audience": "Korean Dino Atlas users ages 5-14",
+  "reason": "User review found that v5 over-applied the filled median support and packed the mouth with a giant triangular grey pad. V6 retains only a small median support under the whorl and restores abundant dark open oral space around a compact open C-shaped functional arc.",
+  "reconstructionBoundary": "The singular symphyseal whorl, continuous root and concealment of older crowns are evidence-led. Exact mouth gape, amount of exposed arc, soft tissue, cartilage support, body, fins, color and ecology remain reconstructed.",
+  "rollup": { "approvedAssets": 3, "representativeAssets": 1, "reviewOnlyAssets": 2, "supersededRuntimeAssets": 3, "privateRejectedAttempts": 3 },
+  "copyrightSafety": {
+    "userReferenceUse": "Two user-supplied images supplied high-level integrated-whorl morphology intent only; their style, pose, prey, color and composition were excluded.",
+    "licenseRecord": "Original project-generated bitmaps under applicable OpenAI service terms. Publications supplied factual constraints; external art was not copied or used as a runtime asset.",
+    "appPathPolicy": "Runtime metadata references approved assets/dinosaurs paths only; private .codex/generated_images paths are provenance-only."
+  },
+  "researchSources": [
+    { "citation": "Tapanila et al. 2013. Jaws for a spiral-tooth whorl. Biology Letters 9:20130057.", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3639784/", "use": "Singular symphyseal whorl in the mandibular arch, continuous curling root and concealed older crowns." },
+    { "citation": "Ramsay et al. 2015. Eating with a saw for a jaw. Journal of Morphology 276:47-64.", "url": "https://pubmed.ncbi.nlm.nih.gov/25181366/", "use": "Functional crown and mandibular-cartilage constraints." }
+  ],
+  "records": {
+    "helicoprion-davisii-representative-v6": {
+      "slot": 1,
+      "kind": "count-level pass",
+      "representativeEligible": true,
+      "asset": "assets/dinosaurs/helicoprion-davisii-open-cavity-partial-c-whorl-representative-imagegen-v6.png",
+      "sourceCallId": "exec-77885a75-1979-459e-a6cf-95ed11d5f163",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-77885a75-1979-459e-a6cf-95ed11d5f163.png",
+      "prompt": "Edit-guided scientific reconstruction. Preserve the complete slate body and open dark oral cavity. Keep exactly eight crowns on one compact open C-shaped median arc, toothless upper jaw and lips, and a small opaque central support beneath the root. Both visible-root ends enter cartilage and old turns stay concealed. Remove the tiny upper rear fin nub; preserve one main dorsal, paired fins, lower median fin and complete tail. Avoid a filled mouth, giant triangular pad, U-shaped lip teeth, closed ring, visible center hole, full wheel, straight saw, extra fin, text and watermark.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image_gen multi-step edit: v5 mouth opening, lip-row rejection, closed-ring rejection, open-C selection and one-dorsal cleanup",
+      "dimensions": "1536x1024",
+      "bytes": 2155886,
+      "sha256": "eb7376e67262b68b45954d9d603e58931d9d291939c969804e7e760dfb830332",
+      "review": "Approved at original size: mouth cavity is visibly open; eight crowns form an open C; upper palate and lips are toothless; no giant pad or visible spiral center; complete body and tail. Exact soft tissue remains inferred."
+    },
+    "helicoprion-davisii-pattern-v6": {
+      "slot": 2,
+      "kind": "review hold",
+      "representativeEligible": false,
+      "asset": "assets/dinosaurs/helicoprion-davisii-open-cavity-partial-c-whorl-ochre-upward-pattern-imagegen-v6.png",
+      "sourceCallId": "exec-cdd0b52d-17ec-41b1-9b56-6bb6f7170f35",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-cdd0b52d-17ec-41b1-9b56-6bb6f7170f35.png",
+      "prompt": "Portrait upward color-pattern variant of the accepted open-mouth identity. Preserve abundant dark oral space, exactly eight crowns on one open C-shaped median arc, small support, toothless upper jaw and lips, one dorsal, complete body and tail. Use subdued charcoal-brown and irregular ochre mottling. Avoid filled mouth, U-shaped lip row, closed ring, exposed wheel, extra fins, crop, text and watermark.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image_gen identity-guided portrait variation from the selected v6 representative",
+      "dimensions": "1024x1536",
+      "bytes": 2176715,
+      "sha256": "ee865974a7d779c9384fa43c7a161adf77b61a54c7e62c4584c4148c984a504e",
+      "review": "Accepted as review hold: open mouth, eight-crown C arc, complete body and distinct palette; exact color and perspective remain inferred; not representative-eligible."
+    },
+    "helicoprion-davisii-ecology-v6": {
+      "slot": 3,
+      "kind": "anatomy review",
+      "representativeEligible": false,
+      "asset": "assets/dinosaurs/helicoprion-davisii-open-cavity-partial-c-whorl-cephalopod-ecology-imagegen-v6.png",
+      "sourceCallId": "exec-f743aa80-158a-46a9-9262-fafb0f2d1e12",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-f743aa80-158a-46a9-9262-fafb0f2d1e12.png",
+      "prompt": "Wide Early Permian non-contact ecology variation. Preserve the open dark oral cavity, exactly eight crowns on one compact open C-shaped median arc, toothless upper jaw and lips, small support, one main dorsal and complete body. Keep distant soft-bodied cephalopods several body lengths away. Remove any upper rear fin nub. Avoid filled mouth, closed ring, U-shaped lip row, overlap, attack, crop, text and watermark.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image_gen ecology variation plus targeted extra-fin cleanup",
+      "dimensions": "1536x1024",
+      "bytes": 2479576,
+      "sha256": "7c484c9681b984e136346ab8921ae196bb2617569b2c7188c799b85b11a22dda",
+      "review": "Accepted as anatomy review: open mouth and compact C arc remain readable; one dorsal; complete focal body; separated non-contact cephalopods. Behavior and ecology remain illustrative."
+    }
+  },
+  "supersededRuntimeAssets": [
+    "assets/dinosaurs/helicoprion-davisii-integrated-partial-whorl-representative-imagegen-v5.png",
+    "assets/dinosaurs/helicoprion-davisii-integrated-partial-whorl-ochre-upward-pattern-imagegen-v5.png",
+    "assets/dinosaurs/helicoprion-davisii-integrated-partial-whorl-cephalopod-ecology-imagegen-v5.png"
+  ],
+  "rejectedAttempts": [
+    { "callId": "exec-cbc09014-8109-42c7-b1c7-f793208e1bf6", "reason": "Opened the cavity but moved teeth onto a conventional U-shaped lower-lip row." },
+    { "callId": "exec-6232b4fc-1d7a-493f-b1e4-990fda335b62", "reason": "Compact whorl closed into an O-shaped mouth-within-mouth with a visible center hole." },
+    { "callId": "exec-20973215-a4c2-42b2-9eac-3d960d57be47", "reason": "Open C and cavity passed, but an extra upper rear fin nub required cleanup before representative use." }
+  ]
+}

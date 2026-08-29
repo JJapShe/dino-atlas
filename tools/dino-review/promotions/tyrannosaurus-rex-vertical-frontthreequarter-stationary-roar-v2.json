@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "tyrannosaurus-rex-vertical-frontthreequarter-stationary-roar-v2",
+  "disposition": "promoted-awaiting-app-integration",
+  "promotedAt": "2026-08-11T13:23:32.666Z",
+  "sourcePath": "tools/dino-review/pending/tyrannosaurus-rex-vertical-frontthreequarter-stationary-roar-v2/tyrannosaurus-rex-vertical-frontthreequarter-stationary-roar-imagegen-v2.png",
+  "targetPath": "assets/dinosaurs/tyrannosaurus-rex-vertical-frontthreequarter-stationary-roar-imagegen-v2.png",
+  "filename": "tyrannosaurus-rex-vertical-frontthreequarter-stationary-roar-imagegen-v2.png",
+  "sha256": "ff48362ae3d4d3a7c0fe0ab27db696c33733fad3b23fcf6a146aad5a6c8f5d72",
+  "sizeBytes": 2467968,
+  "review": {
+    "status": "pass",
+    "note": "",
+    "updatedAt": "2026-08-11T13:23:29.057Z",
+    "imageSha256": "ff48362ae3d4d3a7c0fe0ab27db696c33733fad3b23fcf6a146aad5a6c8f5d72",
+    "manifestSha256": "df2d6f3fc54e3351a9db4642284ad0322154348430526e277a0a87090942b26b"
+  },
+  "candidate": {
+    "schemaVersion": 1,
+    "candidateId": "tyrannosaurus-rex-vertical-frontthreequarter-stationary-roar-v2",
+    "filename": "tyrannosaurus-rex-vertical-frontthreequarter-stationary-roar-imagegen-v2.png",
+    "speciesId": "tyrannosaurus-rex",
+    "kind": "anatomy review",
+    "targetFilename": "tyrannosaurus-rex-vertical-frontthreequarter-stationary-roar-imagegen-v2.png",
+    "provenance": {
+      "source": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and ignored anatomy-review candidates were used only as project-owned identity, anatomy, or local-repair references; no external artwork or named-artist style input",
+      "license": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved or locally generated inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+      "prompt": "Create one scientific-educational Dino Atlas S6 solitary-display candidate for children ages 5–14, never a representative replacement. Image 1 is the project-approved Tyrannosaurus rex deep-skull identity reference. Image 2 is the project-approved bilateral two-finger forelimb anatomy reference. Use both only for identity and anatomy; do not copy their broadside full-body compositions.\n\nMake a vertical 4:5 tight upper-body portrait of exactly one adult Tyrannosaurus rex from an eye-level front-left three-quarter camera. Frame from the complete top of the head down only to the lower chest immediately below both elbows. The bottom edge must end before the abdomen, pelvis and thighs begin. No hip, pelvis, thigh, knee, shin, foot or toe may appear anywhere. The neck and throat remain thick and fully connected to the shoulders and chest so this reads as an intentional living upper-body portrait, never a severed head.\n\nThe animal is stationary and makes one restrained upward head turn of about fifteen degrees while giving a moderate non-contact roar. Preserve one deep, broad, robust Tyrannosaurus skull with a broad rear cranium tapering toward the snout, low rounded brow bosses rather than horns, one coherent upper jaw, one lower jaw, one tongue and naturally irregular tooth rows. Avoid a dragon-like gape, duplicate gum line, floating teeth or a long narrow Tarbosaurus head.\n\nMost important bilateral hand gate: show exactly two very short forearms, one on each side of the chest, both fully visible and separated from the torso silhouette against pale misty negative space. Each hand must have exactly two functional fingers and exactly two claw tips, no third digit, no wrist spur resembling a finger, no fused hand, and no hidden hand. Place both complete hands in the lower-middle of the frame with room around them, above the bottom crop.\n\nUse restrained dark umber, charcoal, muted ochre and moss-grey irregular mottling. Background: softly blurred late Maastrichtian Hell Creek conifers and pale post-rain mist. No other dinosaur, prey, attack, blood, carcass, text, label, logo, watermark, fantasy anatomy, external artwork imitation or named-artist style. Natural-history museum realism.",
+      "seed": "provider-not-exposed",
+      "workflow": "OpenAI image_gen anatomy-led composition-diversity v7; approved deep-skull representative and bilateral two-finger anatomy references; exact input paths and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+    },
+    "anatomyReview": {
+      "status": "review-hold",
+      "representative": false,
+      "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+      "reviewedAt": "2026-08-10T18:53:13.8202235Z",
+      "notes": "S6 solitary-display candidate only. This intentional upper-body portrait shows a deep broad skull, connected jaws and neck, and two separate tiny forearms with exactly two fingers per hand. The crop contains no pelvis, thigh, leg, foot or toe. Representative promotion prohibited."
+    }
+  }
+}

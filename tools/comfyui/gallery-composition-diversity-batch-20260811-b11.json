@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 2,
+  "batchId": "gallery-composition-diversity-20260811-b11",
+  "status": "review-hold",
+  "targetAudience": "ages 5-14",
+  "audit": {
+    "json": "tools/comfyui/gallery-composition-similarity-audit-20260811.json",
+    "markdown": "docs/gallery-composition-diversity-audit-2026-08-11.md",
+    "taxa": 161,
+    "approvedImages": 889,
+    "withinTaxonPairs": 2121,
+    "pairsAtOrAbove045": 682,
+    "pairsAtOrAbove055": 131,
+    "pairsAtOrAbove065": 14,
+    "pairsAtOrAbove075": 8
+  },
+  "policy": {
+    "batchSize": 1,
+    "attemptedImageCount": 5,
+    "enqueuedCandidateCount": 1,
+    "retainedCandidateCount": 1,
+    "candidateKinds": [
+      "anatomy review"
+    ],
+    "automaticPromotion": false,
+    "representativePromotion": false,
+    "automaticDeletionFromPending": false,
+    "publicAssetMutation": false,
+    "appDataMutation": false,
+    "candidateMaxSimilarityGate": 0.58,
+    "selectionRule": "Protect Quetzalcoatlus S1 while replacing the near-identical S5 frontal-ventral ecology image with a wide head-neck ecological-coexistence observation after four full-body flight attempts failed the same-side ankle-membrane or wrist-digit anatomy gates",
+    "diversityGate": "The S5 replacement must change camera family, subject scale, spatial layout, and ecological storytelling; adding only distant animals behind the old frontal-ventral pose does not count.",
+    "anatomyGate": "Manual original-size anatomy review is required before pass, promotion, public asset copy, or app integration; this intentional head-neck crop cannot be used as wing, limb-count, membrane-attachment, full-body-proportion, flight, or locomotion evidence, and S1 remains protected."
+  },
+  "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas image used only as project-owned identity and palette reference; no external artwork or named-artist style input",
+  "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompt and project-owned approved input only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+  "records": [
+    {
+      "speciesId": "quetzalcoatlus-northropi",
+      "candidateId": "quetzalcoatlus-northropi-alamosaurus-riverbank-observation-v2",
+      "targetFilename": "quetzalcoatlus-northropi-alamosaurus-riverbank-observation-imagegen-v2.png",
+      "kind": "anatomy review",
+      "intendedSlot": 5,
+      "intendedRole": "interaction",
+      "replacesSimilarityPair": {
+        "slots": [1, 5],
+        "structuralSimilarity": 0.997,
+        "matchMode": "direct"
+      },
+      "compositionKey": "landscape-eyelevel-leftprofile-headneck-riverbank-observation",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.414,
+        "nearestSlot": 3,
+        "nearestRole": "habitat-ecology",
+        "matchMode": "direct",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-ea70d076-6e4e-4ec3-b11a-caf5bebeea28",
+      "image": {
+        "sha256": "2f2dd5953f4d431e68d292a4ddf5e019d83a9599af608c7c2e1a3a3aa6959381",
+        "bytes": 2209671,
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 approved Quetzalcoatlus northropi representative identity and canonical palette reference",
+          "path": "assets/dinosaurs/quetzalcoatlus-northropi-ventral-ankle-membrane-representative-imagegen-v3.png",
+          "sha256": "3ce89324184420bed6e5f5035825f5289ea2cbfc5550425297224703e2a97256",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260811-b11.md#quetzalcoatlus-northropi",
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b10/quetzalcoatlus-northropi-alamosaurus-riverbank-observation-imagegen-v2.txt",
+        "promptSha256": "eda0743d9f0737f83cb7578da473d0419b7aca6fd2ca0dcc33175d8f8ec43da2",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v4; approved project-owned identity reference; intentional head-neck ecological-coexistence crop with explicit claim boundary; original-size independent visual QA; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake plus independent original-size visual QA; manual anatomy approval required",
+        "reviewedAt": "2026-08-11T14:00:46.0322309Z",
+        "notes": "Original-size QA: retain-hold for S5 ecological-coexistence composition only. The complete toothless beak, single crestless head, and head-to-neck-to-upper-shoulder transition are readable, with no detached limb or wing fragment in the intentional crop. Do not use this image to validate exact Q. northropi skull morphology, wing or limb anatomy, membrane-to-ankle attachment, full-body proportions, flight, or locomotion. The distant sauropod silhouettes are non-diagnostic habitat context only, not count-level or species-level evidence. Re-review requested as a non-representative S5 replacement."
+      }
+    }
+  ],
+  "rejectedAttempts": [
+    {
+      "speciesId": "quetzalcoatlus-northropi",
+      "sourceCallId": "exec-6228aa2e-5e4a-4c1f-b5d0-00513759213a",
+      "sha256": "7bdfa023a996fe7752508b208ef1b8ca9cf345ef0bf089d383ea787101c805f9",
+      "bytes": 2175296,
+      "width": 1672,
+      "height": 941,
+      "inputReferences": [
+        {
+          "role": "Image 1 approved Quetzalcoatlus representative identity and canonical palette reference",
+          "path": "assets/dinosaurs/quetzalcoatlus-northropi-ventral-ankle-membrane-representative-imagegen-v3.png",
+          "sha256": "3ce89324184420bed6e5f5035825f5289ea2cbfc5550425297224703e2a97256",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        },
+        {
+          "role": "Image 2 approved bilateral same-side lower-leg and ankle membrane-attachment anatomy reference",
+          "path": "assets/dinosaurs/quetzalcoatlus-northropi-bilateral-ankle-attachment-anatomy-imagegen-v3.png",
+          "sha256": "8e9ad38642c5296473227f1c8cf7fec9271b623e147b4561b36f48de0ffbb311",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b10/quetzalcoatlus-northropi-banked-flight-alamosaurus-distance-imagegen-v2-attempt1.txt",
+        "promptSha256": "ce8d620edf7636d049c40e06f52a738a79577ddbcd47e7779695aa0a68f03780",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v4; approved representative and bilateral ankle-attachment references; wide rear-three-quarter ecological flight attempt; original-size independent visual QA; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas image used only as project-owned identity and palette reference; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompt and project-owned approved input only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "The wide rear-three-quarter composition and margins were distinct, but both main membranes appeared to stop near the pelvis instead of remaining continuously traceable to their same-side lower legs or ankles at original size.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Generated-cache PNG moved to the Windows Recycle Bin after exact SHA-256 validation; no staging PNG was retained and the exact prompt record remains"
+    },
+    {
+      "speciesId": "quetzalcoatlus-northropi",
+      "sourceCallId": "exec-192b5555-c876-4c82-a0a4-a58b783cbaf1",
+      "sha256": "0360a630f0b77b6370f3363fbf1e45ac841b1824cad281c8466589db6bc4bb25",
+      "bytes": 2318095,
+      "width": 1672,
+      "height": 941,
+      "inputReferences": [
+        {
+          "role": "Image 1 rejected first banked-flight attempt used once from generated cache as the local anatomy-repair target; its logical batch PNG and generated-cache pixels are now absent",
+          "path": "tools/comfyui/outputs/overnight/20260811/b10/quetzalcoatlus-northropi-banked-flight-alamosaurus-distance-imagegen-v2-attempt1.png",
+          "sha256": "7bdfa023a996fe7752508b208ef1b8ca9cf345ef0bf089d383ea787101c805f9",
+          "sourceCallId": "exec-6228aa2e-5e4a-4c1f-b5d0-00513759213a",
+          "status": "rejected-input-deleted",
+          "pixelsRetained": false
+        },
+        {
+          "role": "Image 2 approved bilateral same-side lower-leg and ankle membrane-attachment anatomy reference",
+          "path": "assets/dinosaurs/quetzalcoatlus-northropi-bilateral-ankle-attachment-anatomy-imagegen-v3.png",
+          "sha256": "8e9ad38642c5296473227f1c8cf7fec9271b623e147b4561b36f48de0ffbb311",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b10/quetzalcoatlus-northropi-banked-flight-alamosaurus-distance-imagegen-v2-attempt2.txt",
+        "promptSha256": "b26ff62c8e7e0c747ee703926f6c6c166aa8d9d0d724417bd8165b03bba67093",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v4; local anatomy repair of rejected first flight attempt plus approved bilateral ankle-attachment reference; original-size independent visual QA; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas image used only as project-owned identity and palette reference; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompt and project-owned approved input only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "The targeted repair still did not make both same-side lower-leg and ankle membrane junctions independently traceable at original size, so the full-body flight anatomy remained unsafe for review intake.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Generated-cache PNG moved to the Windows Recycle Bin after exact SHA-256 validation; no staging PNG was retained and the exact prompt record remains"
+    },
+    {
+      "speciesId": "quetzalcoatlus-northropi",
+      "sourceCallId": "exec-8f120e53-8b66-4639-8d35-ebb98aed49ea",
+      "sha256": "63177ffe3d1b9126dd33dbb05b4c22f5de869c95a8bcf448c96ac59b31be1403",
+      "bytes": 2111675,
+      "width": 1672,
+      "height": 941,
+      "inputReferences": [
+        {
+          "role": "Image 1 approved Quetzalcoatlus representative identity and canonical palette reference",
+          "path": "assets/dinosaurs/quetzalcoatlus-northropi-ventral-ankle-membrane-representative-imagegen-v3.png",
+          "sha256": "3ce89324184420bed6e5f5035825f5289ea2cbfc5550425297224703e2a97256",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        },
+        {
+          "role": "Image 2 approved bilateral same-side lower-leg and ankle membrane-attachment anatomy reference",
+          "path": "assets/dinosaurs/quetzalcoatlus-northropi-bilateral-ankle-attachment-anatomy-imagegen-v3.png",
+          "sha256": "8e9ad38642c5296473227f1c8cf7fec9271b623e147b4561b36f48de0ffbb311",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b10/quetzalcoatlus-northropi-banked-flight-alamosaurus-distance-imagegen-v2-attempt3.txt",
+        "promptSha256": "b1411cb10ea257846d4181c92ee91c9f3e98106f82a8891ef381c4f4cf111fe7",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v4; approved representative and bilateral ankle-attachment references; small-subject rear-ventral diagonal flight retry; original-size independent visual QA; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas image used only as project-owned identity and palette reference; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompt and project-owned approved input only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "The distinct diagonal composition passed the crop check, but the screen-right wing contained a duplicated free-wrist-digit cluster and the same-side ankle membrane junctions remained ambiguous at original size.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Generated-cache PNG moved to the Windows Recycle Bin after exact SHA-256 validation; no staging PNG was retained and the exact prompt record remains"
+    },
+    {
+      "speciesId": "quetzalcoatlus-northropi",
+      "sourceCallId": "exec-c8d0ea2a-f0e5-4228-bca4-916b6c973909",
+      "sha256": "83f57f3d819a7659c841d08728b4b7b9d0821e2a2e44f0e7f95054f067111a17",
+      "bytes": 2332168,
+      "width": 1672,
+      "height": 941,
+      "inputReferences": [
+        {
+          "role": "Image 1 rejected third banked-flight attempt used once from generated cache as the local wrist-and-ankle repair target; its logical batch PNG and generated-cache pixels are now absent",
+          "path": "tools/comfyui/outputs/overnight/20260811/b10/quetzalcoatlus-northropi-banked-flight-alamosaurus-distance-imagegen-v2-attempt3.png",
+          "sha256": "63177ffe3d1b9126dd33dbb05b4c22f5de869c95a8bcf448c96ac59b31be1403",
+          "sourceCallId": "exec-8f120e53-8b66-4639-8d35-ebb98aed49ea",
+          "status": "rejected-input-deleted",
+          "pixelsRetained": false
+        },
+        {
+          "role": "Image 2 approved bilateral same-side lower-leg and ankle membrane-attachment anatomy reference",
+          "path": "assets/dinosaurs/quetzalcoatlus-northropi-bilateral-ankle-attachment-anatomy-imagegen-v3.png",
+          "sha256": "8e9ad38642c5296473227f1c8cf7fec9271b623e147b4561b36f48de0ffbb311",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b10/quetzalcoatlus-northropi-banked-flight-alamosaurus-distance-imagegen-v2-attempt4.txt",
+        "promptSha256": "ffa2cd1354e21b3b86b3c9b97201307cf58888a3c2946213d51ed25e0c634c7d",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v4; local wrist-digit and same-side ankle-membrane repair of rejected third flight attempt plus approved anatomy reference; original-size independent visual QA; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas image used only as project-owned identity and palette reference; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompt and project-owned approved input only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "The narrow repair did not resolve the repeated free-wrist-digit and same-side ankle-membrane topology errors reliably enough for full-body anatomy review intake.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Generated-cache PNG moved to the Windows Recycle Bin after exact SHA-256 validation; no staging PNG was retained and the exact prompt record remains"
+    }
+  ]
+}

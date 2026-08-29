@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "dilophosaurus-wetherilli-groundlevel-frontthreequarter-drywash-pivot-v3",
+  "disposition": "promoted-awaiting-app-integration",
+  "promotedAt": "2026-08-11T13:26:08.681Z",
+  "sourcePath": "tools/dino-review/pending/dilophosaurus-wetherilli-groundlevel-frontthreequarter-drywash-pivot-v3/dilophosaurus-wetherilli-groundlevel-frontthreequarter-drywash-pivot-imagegen-v3.png",
+  "targetPath": "assets/dinosaurs/dilophosaurus-wetherilli-groundlevel-frontthreequarter-drywash-pivot-imagegen-v3.png",
+  "filename": "dilophosaurus-wetherilli-groundlevel-frontthreequarter-drywash-pivot-imagegen-v3.png",
+  "sha256": "e88392e98744f7b033dda912c7e9a04dd50d3d05446786500536f5d7ba634712",
+  "sizeBytes": 2842266,
+  "review": {
+    "status": "pass",
+    "note": "",
+    "updatedAt": "2026-08-11T13:26:05.798Z",
+    "imageSha256": "e88392e98744f7b033dda912c7e9a04dd50d3d05446786500536f5d7ba634712",
+    "manifestSha256": "d7a30ca8bc1c636c52af3e846b2a71523df5da544242886e04a2dbfc6d4e1aff"
+  },
+  "candidate": {
+    "schemaVersion": 1,
+    "candidateId": "dilophosaurus-wetherilli-groundlevel-frontthreequarter-drywash-pivot-v3",
+    "filename": "dilophosaurus-wetherilli-groundlevel-frontthreequarter-drywash-pivot-imagegen-v3.png",
+    "speciesId": "dilophosaurus-wetherilli",
+    "kind": "anatomy review",
+    "targetFilename": "dilophosaurus-wetherilli-groundlevel-frontthreequarter-drywash-pivot-imagegen-v3.png",
+    "provenance": {
+      "source": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and ignored anatomy-review candidates were used only as project-owned identity, anatomy, or local repair references; no external artwork or named-artist style input",
+      "license": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved or locally generated inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+      "prompt": "Edit Image 1 only as a tightly constrained Dino Atlas anatomy repair. Preserve the exact existing 16:9 composition, camera, animal identity, paired crests, skull, eyes, mouth, neck, torso, skin pattern, lighting, environment, both hind legs and feet, far forearm and far hand, pelvis, and complete tail. Do not redesign, reframe, mirror, crop, recolor, or add any animal.\n\nRepair only the foreground/near forehand on the viewer's right side of the animal, using Image 2 as the approved Dilophosaurus four-digit-hand anatomy control. That near hand currently reads as only three large clawed digits. Keep its three existing longer functional curved clawed digits I–III, and add exactly one much smaller lateral peg-like digit IV attached naturally at the outside of the same hand. The new fourth digit must be short, blunt, visibly smaller than I–III, and have no large claw. Isolate it clearly against the pale sand so the near hand can be counted as three large clawed digits plus one tiny blunt IV. Do not add a fifth digit, do not change the far hand, and do not create four equal claws.\n\nResult must remain exactly one adult Dilophosaurus wetherilli with two separate crests, two forelimbs, two hind limbs, and one tail. No text, logo, watermark, blood, prey, movie frill, or venom. Natural-history realism, original project artwork.",
+      "seed": "provider-not-exposed",
+      "workflow": "OpenAI image_gen anatomy-led composition-diversity v4; staged v2 local hand repair plus approved four-digit hand reference; exact input paths and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+    },
+    "anatomyReview": {
+      "status": "review-hold",
+      "representative": false,
+      "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+      "reviewedAt": "2026-08-10T17:42:05.8906683Z",
+      "notes": "S2 color-pattern diversity candidate only. Both hands now read as three larger clawed digits plus one much smaller blunt digit IV; paired crests, two legs, both feet and one complete tail remain readable. Manual original-size anatomy review is still required. Representative promotion prohibited."
+    }
+  }
+}

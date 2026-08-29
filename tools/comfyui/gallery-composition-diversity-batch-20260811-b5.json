@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 2,
+  "batchId": "gallery-composition-diversity-20260811-b5",
+  "status": "review-hold",
+  "targetAudience": "ages 5-14",
+  "audit": {
+    "json": "tools/comfyui/gallery-composition-similarity-audit-20260810.json",
+    "markdown": "docs/gallery-composition-diversity-audit-2026-08-10.md",
+    "taxa": 155,
+    "approvedImages": 871,
+    "withinTaxonPairs": 2103,
+    "pairsAtOrAbove045": 677,
+    "pairsAtOrAbove055": 129,
+    "pairsAtOrAbove065": 12,
+    "pairsAtOrAbove075": 6
+  },
+  "policy": {
+    "batchSize": 3,
+    "attemptedImageCount": 3,
+    "enqueuedCandidateCount": 3,
+    "retainedCandidateCount": 2,
+    "candidateKind": "anatomy review",
+    "automaticPromotion": false,
+    "representativePromotion": false,
+    "automaticDeletionFromPending": false,
+    "candidateMaxSimilarityGate": 0.58,
+    "selectionRule": "LV1 and LV2 audience priority, representative-pattern similarity, then a camera, scale, or motion change across marine reptile, ceratopsian, and theropod body plans",
+    "diversityGate": "A replacement must change camera family, direction, subject scale, action, spatial layout, or habitat; palette-only and mirror-only changes do not count.",
+    "anatomyGate": "Manual original-size anatomy review is required before pass, promotion, or app integration."
+  },
+  "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images were used only as project-owned identity, anatomy, or color references; no external artwork or named-artist style input",
+  "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+  "records": [
+    {
+      "speciesId": "ichthyosaurus-communis",
+      "candidateId": "ichthyosaurus-communis-low-ventral-frontthreequarter-ascent-v1",
+      "targetFilename": "ichthyosaurus-communis-low-ventral-frontthreequarter-ascent-imagegen-v1.png",
+      "intendedSlot": 2,
+      "intendedRole": "color-pattern",
+      "replacesSimilarityPair": {
+        "slots": [1, 2],
+        "structuralSimilarity": 0.603,
+        "matchMode": "direct"
+      },
+      "compositionKey": "landscape-low-ventral-frontthreequarter-openwater-ascent",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.552,
+        "nearestSlot": 3,
+        "nearestRole": "habitat-ecology",
+        "matchMode": "direct",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-d99394c9-15c9-45cf-baf0-9848328d333e",
+      "image": {
+        "sha256": "bb412c3b599d7f7fd5f01e3c68c80f7f57e1c7fa69637f6a540a86d24d01cff0",
+        "bytes": 2097294,
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 approved species identity reference",
+          "path": "assets/dinosaurs/ichthyosaurus-communis-streamlined-sideprofile-imagegen-v1.png",
+          "sha256": "34d13498223d8d1ef6f94e4bd9b46d4e00719a7ce3248f82bdc4ed913c88e6d3",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260811-b5.md#ichthyosaurus-communis",
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b5/ichthyosaurus-communis-low-ventral-frontthreequarter-ascent-imagegen-v1.txt",
+        "promptSha256": "0289f7d7210dcf4f749c362f51029605f87f0ea962c17b6337c25c87d55c9e09",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v3; approved-control identity reference; exact input path and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+        "reviewedAt": "2026-08-10T17:03:33.2003794Z",
+        "notes": "S2 color-pattern diversity candidate only. Low ventral three-quarter ascent, vertical tail and four separated paddles appear readable; far-paddle attachment and full body proportions require manual original-size review. Representative promotion prohibited."
+      }
+    },
+    {
+      "speciesId": "nasutoceratops-titusi",
+      "candidateId": "nasutoceratops-titusi-high-oblique-mudflat-pivot-v1",
+      "targetFilename": "nasutoceratops-titusi-high-oblique-mudflat-pivot-imagegen-v1.png",
+      "intendedSlot": 2,
+      "intendedRole": "color-pattern",
+      "replacesSimilarityPair": {
+        "slots": [1, 2],
+        "structuralSimilarity": 0.614,
+        "matchMode": "mirrored",
+        "recolorRisk": true
+      },
+      "compositionKey": "landscape-high-oblique-mudflat-pivot",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.39,
+        "nearestSlot": 2,
+        "nearestRole": "color-pattern",
+        "matchMode": "mirrored",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-aeaa38a3-e1ad-4983-a0b8-27069ef8b29c",
+      "image": {
+        "sha256": "c6013eea32e019190c6d0ecf65b519b695f8990dafe1268da1276062668d4d63",
+        "bytes": 3138655,
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 approved full-body identity reference",
+          "path": "assets/dinosaurs/nasutoceratops-titusi-hugenaris-twisted-browhorn-representative-imagegen-v1.png",
+          "sha256": "403cb211308918929124338be6ae2c84198c7090b3900108bd2f3558726c332f",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        },
+        {
+          "role": "Image 2 approved head and horn anatomy reference",
+          "path": "assets/dinosaurs/nasutoceratops-titusi-hugenaris-twisted-horn-shortfrill-anatomy-imagegen-v1.png",
+          "sha256": "54de03409df3a5ac2c9f502ff56e2ec2e988ef41374049bf36a16cf8a5bde6f6",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260811-b5.md#nasutoceratops-titusi",
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b5/nasutoceratops-titusi-high-oblique-mudflat-pivot-imagegen-v1.txt",
+        "promptSha256": "8f79c5cb6f09b20d29e22007fff295dcf0d414c754cc1bd0a404e99567df4843",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v3; approved full-body and head-anatomy references; exact input paths and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+        "reviewedAt": "2026-08-10T17:03:33.2003794Z",
+        "notes": "S2 color-pattern diversity candidate only. High oblique pivot, three facial horns, short skin-covered frill, four feet and one tail appear readable; horn curvature, far feet and limited palette separation require manual original-size review. Representative promotion prohibited."
+      }
+    }
+  ],
+  "rejectedAttempts": [
+    {
+      "speciesId": "therizinosaurus-cheloniformis",
+      "candidateId": "therizinosaurus-cheloniformis-high-oblique-sandbar-pivot-v1",
+      "targetFilename": "therizinosaurus-cheloniformis-high-oblique-sandbar-pivot-imagegen-v1.png",
+      "sourceCallId": "exec-0643bd90-cf12-43fe-9d94-7759106d8e6b",
+      "sha256": "75a5ce6b459adc9225054490b97a4184f3c8d18bf1b2163d5edabef85299bccf",
+      "bytes": 2747811,
+      "width": 1672,
+      "height": 941,
+      "status": "deleted-rejected",
+      "reason": "Both hands show three claws, but each hind foot reads as three forward weight-bearing toes with a raised inner or rear toe, failing the required four supporting toes per foot.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Pending copy permanently removed by the internal review API; generated-cache and staging copies moved to the Windows Recycle Bin until emptied",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.388,
+        "nearestSlot": 2,
+        "nearestRole": "color-pattern",
+        "matchMode": "direct",
+        "passedGate": true
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 approved count-level anatomy reference",
+          "path": "assets/dinosaurs/therizinosaurus-cheloniformis-straight-triclaw-fourtoe-anatomy-imagegen-v1.png",
+          "sha256": "4489e76084ca85ee72d0371ab0c0e580e71e25fff3fa02d545b344fb423d8bdb",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        },
+        {
+          "role": "Image 2 approved color and pattern reference",
+          "path": "assets/dinosaurs/therizinosaurus-cheloniformis-bilateral-triclaw-petrol-dawn-pattern-imagegen-v4.png",
+          "sha256": "41b458162377dcb61ef16382a00635b9c5b553a44b04d72f10601c85bde72d78",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b5/therizinosaurus-cheloniformis-high-oblique-sandbar-pivot-imagegen-v1.txt",
+        "promptSha256": "436b647931184112ea0f4322bcaf0ab92126a6023c41a3f801c0d72da105ef36",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v3; approved count-level anatomy and color references; exact input paths and SHA in batch record; original-size independent visual QA; manual anatomy approval required",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images were used only as project-owned identity, anatomy, or color references; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "review": {
+        "status": "reject",
+        "representative": false,
+        "reviewedAt": "2026-08-10T17:05:22.231Z",
+        "notes": "Both hands show three claws, but each hind foot reads as three forward weight-bearing toes with a raised inner or rear toe, failing the required four supporting toes per foot."
+      }
+    }
+  ]
+}

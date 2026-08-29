@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 2,
+  "batchId": "gallery-composition-diversity-20260811-b8",
+  "status": "review-hold",
+  "targetAudience": "ages 5-14",
+  "audit": {
+    "json": "tools/comfyui/gallery-composition-similarity-audit-20260810.json",
+    "markdown": "docs/gallery-composition-diversity-audit-2026-08-10.md",
+    "taxa": 155,
+    "approvedImages": 871,
+    "withinTaxonPairs": 2103,
+    "pairsAtOrAbove045": 677,
+    "pairsAtOrAbove055": 129,
+    "pairsAtOrAbove065": 12,
+    "pairsAtOrAbove075": 6
+  },
+  "policy": {
+    "batchSize": 3,
+    "attemptedImageCount": 4,
+    "enqueuedCandidateCount": 3,
+    "retainedCandidateCount": 3,
+    "candidateKinds": [
+      "anatomy review",
+      "structure reference"
+    ],
+    "automaticPromotion": false,
+    "representativePromotion": false,
+    "automaticDeletionFromPending": false,
+    "publicAssetMutation": false,
+    "appDataMutation": false,
+    "candidateMaxSimilarityGate": 0.58,
+    "selectionRule": "LV1 and LV2 audience priority, high-risk S1 interaction or habitat similarity, then a high oblique separated sauropod interaction, an intentional vertical blade-horn color-texture study, and an eye-level rear three-quarter ornithomimosaur look-back",
+    "diversityGate": "A replacement must change camera family, direction, subject scale, action, spatial layout, or habitat; palette-only and mirror-only changes do not count.",
+    "anatomyGate": "Manual original-size anatomy review is required before pass, promotion, public asset copy, or app integration; the basic S1 representative side/full-body image remains protected."
+  },
+  "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and ignored anatomy-review candidates were used only as project-owned identity, anatomy, ecology, or local-repair references; no external artwork or named-artist style input",
+  "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved or locally generated inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+  "records": [
+    {
+      "speciesId": "diplodocus-carnegiei",
+      "candidateId": "diplodocus-carnegiei-high-oblique-channel-separated-allosaurus-interaction-v1",
+      "targetFilename": "diplodocus-carnegiei-high-oblique-channel-separated-allosaurus-interaction-imagegen-v1.png",
+      "kind": "anatomy review",
+      "intendedSlot": 5,
+      "intendedRole": "interaction",
+      "replacesSimilarityPair": {
+        "slots": [1, 5],
+        "structuralSimilarity": 0.583,
+        "matchMode": "direct"
+      },
+      "compositionKey": "landscape-high-rear-oblique-channel-separated-interaction",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.338,
+        "nearestSlot": 2,
+        "nearestRole": "color-pattern",
+        "matchMode": "direct",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-bf30622c-bd68-4a52-9e56-17a47f6595cb",
+      "image": {
+        "sha256": "9b835954f496a880c2a75eddb8ef4785f9d36c594e7017a5b052a623ce716cb9",
+        "bytes": 3341606,
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 approved Diplodocus full-body identity and low horizontal body-plan reference",
+          "path": "assets/dinosaurs/diplodocus-carnegiei-lowbody-imagegen-v1.png",
+          "sha256": "d96251707dedbce26ea0fc8791becd36ddcb0e97ecd085dd9bd0e5cfda738bf7",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        },
+        {
+          "role": "Image 2 approved Allosaurus low-brow-horn and three-finger identity reference",
+          "path": "assets/dinosaurs/allosaurus-fragilis-morrison-lowhorn-threefinger-representative-imagegen-v1.png",
+          "sha256": "162b93b1c500f67c7e8adf155df376cc91aca691f139944d6c9835545095a26f",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260811-b8.md#diplodocus-carnegiei",
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b8/diplodocus-carnegiei-high-oblique-channel-separated-allosaurus-interaction-imagegen-v1.txt",
+        "promptSha256": "70422129119bdefe5a955d7c846e83d24c1146f466557afb69c3f14060c7332f",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v6; approved Diplodocus full-body and Allosaurus identity references; exact input paths and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+        "reviewedAt": "2026-08-10T18:26:11.7831823Z",
+        "notes": "S5 interaction diversity candidate only. The focal Diplodocus has one head, one continuous long neck, two forelimbs, two hind limbs, four readable feet and one complete whip tail. The distant separated Allosaurus is ecological context only and is not count-level evidence. Representative promotion prohibited."
+      }
+    },
+    {
+      "speciesId": "coelodonta-antiquitatis",
+      "candidateId": "coelodonta-antiquitatis-vertical-frontthreequarter-bladehorn-frostpattern-v1",
+      "targetFilename": "coelodonta-antiquitatis-vertical-frontthreequarter-bladehorn-frostpattern-imagegen-v1.png",
+      "kind": "structure reference",
+      "intendedSlot": 2,
+      "intendedRole": "color-texture-bladehorn-reference",
+      "replacesSimilarityPair": {
+        "slots": [1, 2],
+        "structuralSimilarity": 0.578,
+        "matchMode": "mirrored"
+      },
+      "compositionKey": "portrait-low-frontthreequarter-bladehorn-frostpattern",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.415,
+        "nearestSlot": 3,
+        "nearestRole": "habitat-ecology",
+        "matchMode": "mirrored",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-d8fb4cb9-dae4-4ca0-972f-31fdfd402808",
+      "image": {
+        "sha256": "ec43a144645f624430ee2e34c40dc3b7437e133ddd8ca7a6e0aedba9eeb5e0e9",
+        "bytes": 2462560,
+        "width": 1122,
+        "height": 1402,
+        "format": "png"
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 approved full-body identity and laterally compressed blade-horn reference",
+          "path": "assets/dinosaurs/coelodonta-antiquitatis-laterally-compressed-bladehorn-representative-imagegen-v2.png",
+          "sha256": "e2d1ab7d612fda56b1d9e10b0b7d8b8fd3ac51114a3a71da84fd3a8e7e97f7e5",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260811-b8.md#coelodonta-antiquitatis",
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b8/coelodonta-antiquitatis-vertical-frontthreequarter-bladehorn-frostpattern-imagegen-v1.txt",
+        "promptSha256": "12d292fafd7ea9107833b246096e2e2ce00d1fd950a48966d759074aa61c1d10",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v6; approved blade-horn representative identity reference; exact input path and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+        "reviewedAt": "2026-08-10T18:26:11.7831823Z",
+        "notes": "Vertical color-texture and blade-horn structure candidate only, not an S2 full-body replacement. Two ears, exactly two complete horns, the broad planar face and narrow edge of the anterior blade horn, growth bands and irregular frost-tipped wool appear readable. The intentional below-chest crop makes no limb-count claim. Representative promotion prohibited."
+      }
+    },
+    {
+      "speciesId": "deinocheirus-mirificus",
+      "candidateId": "deinocheirus-mirificus-eyelevel-rearthreequarter-drybar-lookback-v2",
+      "targetFilename": "deinocheirus-mirificus-eyelevel-rearthreequarter-drybar-lookback-imagegen-v2.png",
+      "kind": "anatomy review",
+      "intendedSlot": 3,
+      "intendedRole": "habitat-ecology",
+      "replacesSimilarityPair": {
+        "slots": [1, 3],
+        "structuralSimilarity": 0.608,
+        "matchMode": "direct"
+      },
+      "compositionKey": "landscape-eyelevel-rearthreequarter-drybar-lookback",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.425,
+        "nearestSlot": 1,
+        "nearestRole": "representative",
+        "matchMode": "direct",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-f400ae4b-f500-4cc6-bd74-1d2a46ef9fca",
+      "image": {
+        "sha256": "cd8c373cf4d70dcdfd8dc61b06e84ea3bd0aa7067834f1158075d3ce5ebb811e",
+        "bytes": 3241497,
+        "width": 1536,
+        "height": 1024,
+        "format": "png"
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 rejected v1 local foot-repair target; former batch staging copy of the generated source",
+          "path": "tools/comfyui/outputs/overnight/20260811/b8/deinocheirus-mirificus-eyelevel-rearthreequarter-drybar-lookback-imagegen-v1.png",
+          "sha256": "af412aa2525b23965040a6b57d3596583c057229d202983e2b7092c7d3454d02",
+          "sourceCallId": "exec-1dd4348e-fb6d-47d0-8267-5a588cf92d26",
+          "status": "rejected-input-deleted",
+          "pixelsRetained": false
+        },
+        {
+          "role": "Image 2 approved full-body and broad three-toed foot anatomy reference",
+          "path": "assets/dinosaurs/deinocheirus-mirificus-tridactyl-broadfoot-anatomy-imagegen-v1.png",
+          "sha256": "0e6a275bebbcdb3c738c7feefc551c30b9ac147ae1f61c42dd0aff0a6b3e1255",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260811-b8.md#deinocheirus-mirificus",
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b8/deinocheirus-mirificus-eyelevel-rearthreequarter-drybar-lookback-imagegen-v2.txt",
+        "promptSha256": "ce20a89a2ff8bb2d70db050a84dbfd883abca406cbfe08971174001698500de9",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v6; foot-targeted image edit from rejected staging v1 plus approved broad-foot anatomy reference; whole frame resynthesized and full semantic composition rechecked; exact input paths and SHA in batch record; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+        "reviewedAt": "2026-08-10T18:26:11.7831823Z",
+        "notes": "S3 habitat diversity candidate only. A foot-targeted edit repaired the near right foot; the whole frame was resynthesized and rechecked. Both hands read as 3+3, both feet as three broad blunt principal toes, with two arms, two legs, one complete tail, broad bill and high rounded back retained. Representative promotion prohibited."
+      }
+    }
+  ],
+  "rejectedAttempts": [
+    {
+      "speciesId": "deinocheirus-mirificus",
+      "sourceCallId": "exec-1dd4348e-fb6d-47d0-8267-5a588cf92d26",
+      "sha256": "af412aa2525b23965040a6b57d3596583c057229d202983e2b7092c7d3454d02",
+      "bytes": 3468579,
+      "width": 1536,
+      "height": 1024,
+      "inputReferences": [
+        {
+          "role": "Image 1 approved full-body body-plan and broad-foot anatomy reference",
+          "path": "assets/dinosaurs/deinocheirus-mirificus-tridactyl-broadfoot-anatomy-imagegen-v1.png",
+          "sha256": "0e6a275bebbcdb3c738c7feefc551c30b9ac147ae1f61c42dd0aff0a6b3e1255",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        },
+        {
+          "role": "Image 2 approved broad toothless bill and bilateral three-finger forelimb anatomy reference",
+          "path": "assets/dinosaurs/deinocheirus-mirificus-broadbill-tridactyl-forelimb-anatomy-imagegen-v1.png",
+          "sha256": "f848133fd0cd96dcbb5d237d90fd9e5bd1afc218001d06bfda26cff22e49a412",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b8/deinocheirus-mirificus-eyelevel-rearthreequarter-drybar-lookback-imagegen-v1.txt",
+        "promptSha256": "abee7a0ebfe11717a028f3abb707454664348ce7f6ddea5bf47fd9821e0eee0f",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v6; approved full-body and broadbill/forelimb anatomy references; exact input paths and SHA in batch record; original-size independent visual QA; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and ignored anatomy-review candidates were used only as project-owned identity, anatomy, ecology, or local-repair references; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved or locally generated inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "The camera-near right hind foot was malformed and reversed at the ankle, so its weight-bearing direction and three broad forward toes could not be trusted.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Generated-cache and staging PNGs moved to the Windows Recycle Bin after exact SHA-256 validation; prompt record retained"
+    }
+  ]
+}

@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 2,
+  "batchId": "gallery-composition-diversity-20260811-b6",
+  "status": "review-hold",
+  "targetAudience": "ages 5-14",
+  "audit": {
+    "json": "tools/comfyui/gallery-composition-similarity-audit-20260810.json",
+    "markdown": "docs/gallery-composition-diversity-audit-2026-08-10.md",
+    "taxa": 155,
+    "approvedImages": 871,
+    "withinTaxonPairs": 2103,
+    "pairsAtOrAbove045": 677,
+    "pairsAtOrAbove055": 129,
+    "pairsAtOrAbove065": 12,
+    "pairsAtOrAbove075": 6
+  },
+  "policy": {
+    "batchSize": 3,
+    "attemptedImageCount": 8,
+    "enqueuedCandidateCount": 3,
+    "retainedCandidateCount": 3,
+    "candidateKind": "anatomy review",
+    "automaticPromotion": false,
+    "representativePromotion": false,
+    "automaticDeletionFromPending": false,
+    "candidateMaxSimilarityGate": 0.58,
+    "selectionRule": "LV1 and LV2 audience priority, representative-pattern similarity, then a ground-level theropod pivot, square elevated hadrosaur turn, and portrait mammoth foraging view",
+    "diversityGate": "A replacement must change camera family, direction, subject scale, action, spatial layout, or habitat; palette-only and mirror-only changes do not count.",
+    "anatomyGate": "Manual original-size anatomy review is required before pass, promotion, or app integration."
+  },
+  "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and ignored anatomy-review candidates were used only as project-owned identity, anatomy, or local repair references; no external artwork or named-artist style input",
+  "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved or locally generated inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+  "records": [
+    {
+      "speciesId": "dilophosaurus-wetherilli",
+      "candidateId": "dilophosaurus-wetherilli-groundlevel-frontthreequarter-drywash-pivot-v3",
+      "targetFilename": "dilophosaurus-wetherilli-groundlevel-frontthreequarter-drywash-pivot-imagegen-v3.png",
+      "intendedSlot": 2,
+      "intendedRole": "color-pattern",
+      "replacesSimilarityPair": {
+        "slots": [1, 2],
+        "structuralSimilarity": 0.58,
+        "matchMode": "mirrored"
+      },
+      "compositionKey": "landscape-groundlevel-frontthreequarter-drywash-pivot",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.405,
+        "nearestSlot": 1,
+        "nearestRole": "representative",
+        "matchMode": "mirrored",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-f99c8181-c6dc-460c-b9f1-91b35386e1ed",
+      "image": {
+        "sha256": "e88392e98744f7b033dda912c7e9a04dd50d3d05446786500536f5d7ba634712",
+        "bytes": 2842266,
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 rejected v2 local hand-repair target; former batch staging copy of the generated source",
+          "path": "tools/comfyui/outputs/overnight/20260811/b6/dilophosaurus-wetherilli-groundlevel-frontthreequarter-drywash-pivot-imagegen-v2.png",
+          "sha256": "45a00285e4a6d544d554955a05a08a504135bddf7d85684195805c0f22ca5470",
+          "sourceCallId": "exec-e8c3d9c6-3d14-45d5-9e7c-9f0f92ce336f",
+          "status": "rejected-input-deleted",
+          "pixelsRetained": false
+        },
+        {
+          "role": "Image 2 approved paired-crest and four-digit-hand anatomy reference",
+          "path": "assets/dinosaurs/dilophosaurus-wetherilli-twincrest-fourdigit-hand-anatomy-imagegen-v2.png",
+          "sha256": "2b6f1199566836dead3392241fd008f7319859fd2a2d728b09ea29d5d537769a",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260811-b6.md#dilophosaurus-wetherilli",
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b6/dilophosaurus-wetherilli-groundlevel-frontthreequarter-drywash-pivot-imagegen-v3.txt",
+        "promptSha256": "04a22318d3fd1a881fb1943d65cd9f0db5bca49045dfd4faf31085deb6b6ae14",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v4; staged v2 local hand repair plus approved four-digit hand reference; exact input paths and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+        "reviewedAt": "2026-08-10T17:42:05.8906683Z",
+        "notes": "S2 color-pattern diversity candidate only. Both hands now read as three larger clawed digits plus one much smaller blunt digit IV; paired crests, two legs, both feet and one complete tail remain readable. Manual original-size anatomy review is still required. Representative promotion prohibited."
+      }
+    },
+    {
+      "speciesId": "saurolophus-angustirostris",
+      "candidateId": "saurolophus-angustirostris-crane-dorsal-gravelbar-turn-v2",
+      "targetFilename": "saurolophus-angustirostris-crane-dorsal-gravelbar-turn-imagegen-v2.png",
+      "intendedSlot": 2,
+      "intendedRole": "color-pattern",
+      "replacesSimilarityPair": {
+        "slots": [1, 2],
+        "structuralSimilarity": 0.592,
+        "matchMode": "direct"
+      },
+      "compositionKey": "square-moderate-oblique-gravelbar-turn",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.26,
+        "nearestSlot": 2,
+        "nearestRole": "color-pattern",
+        "matchMode": "mirrored",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-8cfd03b9-88a9-4c32-9491-731dbd84e960",
+      "image": {
+        "sha256": "c209d7e930fa93b89032ec18d7baa75df2f34d19b4ffaac21e6e1862c4103146",
+        "bytes": 3371407,
+        "width": 1254,
+        "height": 1254,
+        "format": "png"
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 approved full-body identity reference",
+          "path": "assets/dinosaurs/saurolophus-angustirostris-spike-crest-fullbody-imagegen-v1.png",
+          "sha256": "fbfaa60fc6e3b59cf0e460d492f79f102a8a6f545ce30ce50a299ba0c5826744",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        },
+        {
+          "role": "Image 2 approved short solid crest anatomy reference",
+          "path": "assets/dinosaurs/saurolophus-angustirostris-spike-crest-anatomy-imagegen-v2.png",
+          "sha256": "7d8781b10464820843bdbc930cc707231a2d4442f31672379d3dbc10f86c063f",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260811-b6.md#saurolophus-angustirostris",
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b6/saurolophus-angustirostris-crane-dorsal-gravelbar-turn-imagegen-v2.txt",
+        "promptSha256": "78ad9a6e07ce5aad21f7593fe1cfdeba2477e7f1af57919b40373a19d761fd2b",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v4; approved full-body and crest references; exact input paths and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+        "reviewedAt": "2026-08-10T17:42:05.8906683Z",
+        "notes": "S2 color-pattern diversity candidate only. Broad toothless bill, one short solid attached crest, two forelimbs, two hind limbs, four separate feet and one complete tail appear readable; one forefoot is lifted in a turning step. Manual original-size anatomy review is still required. Representative promotion prohibited."
+      }
+    },
+    {
+      "speciesId": "mammuthus-primigenius",
+      "candidateId": "mammuthus-primigenius-frontal-sedge-pull-portrait-v3",
+      "targetFilename": "mammuthus-primigenius-frontal-sedge-pull-portrait-imagegen-v3.png",
+      "intendedSlot": 2,
+      "intendedRole": "color-pattern",
+      "replacesSimilarityPair": {
+        "slots": [1, 2],
+        "structuralSimilarity": 0.553,
+        "matchMode": "mirrored"
+      },
+      "compositionKey": "portrait-frontal-threequarter-sedge-pull",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.517,
+        "nearestSlot": 1,
+        "nearestRole": "representative",
+        "matchMode": "direct",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-1a63872a-ffa9-4f3a-9e07-3163a30269da",
+      "image": {
+        "sha256": "80673e12fafe42684d4ab782fc854c721d5a84e93ab35a763044c7daee390e73",
+        "bytes": 2517497,
+        "width": 1122,
+        "height": 1402,
+        "format": "png"
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 rejected v2 missing-foreleg repair target; former batch staging copy of the generated source",
+          "path": "tools/comfyui/outputs/overnight/20260811/b6/mammuthus-primigenius-frontal-sedge-pull-portrait-imagegen-v2.png",
+          "sha256": "d04d26ddc5c00548d436fff112c45de942578740a000e6819deb1157adbeb6db",
+          "sourceCallId": "exec-e3a5dfb3-c6c7-4b8c-8367-bcbe91d1de50",
+          "status": "rejected-input-deleted",
+          "pixelsRetained": false
+        },
+        {
+          "role": "Image 2 approved woolly-mammoth full-body anatomy reference",
+          "path": "assets/dinosaurs/mammuthus-primigenius-high-shoulder-spiral-tusks-representative-imagegen-v1.png",
+          "sha256": "8b8d47837e8c48d12297221e522d12c3812ddf2e6a44383640622ebb8cedbfdb",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260811-b6.md#mammuthus-primigenius",
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b6/mammuthus-primigenius-frontal-sedge-pull-portrait-imagegen-v3.txt",
+        "promptSha256": "e10655f7c6db5f19743027f853859d7cd0d6dbb8f2ee359c6557c8ab377e20ad",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v4; staged v2 missing-foreleg repair plus approved full-body reference; exact input paths and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+        "reviewedAt": "2026-08-10T17:42:05.8906683Z",
+        "notes": "S2 color-pattern diversity candidate only. Two forelegs, two hind legs and four independently visible broad feet now appear connected and readable; two tusks, one trunk, high shoulders, descending back and short tail remain present. Manual original-size anatomy review is still required. Representative promotion prohibited."
+      }
+    }
+  ],
+  "rejectedAttempts": [
+    {
+      "speciesId": "dilophosaurus-wetherilli",
+      "sourceCallId": "exec-650f237e-201f-484d-8742-8efa7b5f6b1b",
+      "sha256": "03832cdacdb17af7d444206d9179c9f897d9513fde755755dd2b89ec51cf0532",
+      "bytes": 2739668,
+      "width": 1672,
+      "height": 941,
+      "inputReferences": [
+        {
+          "role": "Image 1 approved full-body identity reference",
+          "path": "assets/dinosaurs/dilophosaurus-wetherilli-kayenta-twincrest-fourdigit-representative-imagegen-v2.png",
+          "sha256": "83ca893384390808e343a6d9c3ce29ece5c9c5049c78b637ca985db489e90793",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        },
+        {
+          "role": "Image 2 approved paired-crest and four-digit-hand anatomy reference",
+          "path": "assets/dinosaurs/dilophosaurus-wetherilli-twincrest-fourdigit-hand-anatomy-imagegen-v2.png",
+          "sha256": "2b6f1199566836dead3392241fd008f7319859fd2a2d728b09ea29d5d537769a",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b6/dilophosaurus-wetherilli-groundlevel-frontthreequarter-drywash-pivot-imagegen-v1.txt",
+        "promptSha256": "00b39c37005ac849528ec098bd1fae9a07485a25857b4ab922c27af67d4c90cb",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v4; approved full-body and four-digit-hand references; original-size independent visual QA; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and ignored anatomy-review candidates were used only as project-owned identity, anatomy, or local repair references; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved or locally generated inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "Both hands lacked the required visibly smaller blunt outer digit IV, so the strict four-digit-hand gate failed.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Generated-cache and staging PNGs moved to the Windows Recycle Bin after exact SHA-256 validation; prompt record retained"
+    },
+    {
+      "speciesId": "saurolophus-angustirostris",
+      "sourceCallId": "exec-4679758b-b2c3-4423-847f-4d39b37b2667",
+      "sha256": "66bb0bbd150380b269e823553047acd2816d334718de0c3f7a0b8c320dad1974",
+      "bytes": 3641284,
+      "width": 1254,
+      "height": 1254,
+      "inputReferences": [
+        {
+          "role": "Image 1 approved full-body identity reference",
+          "path": "assets/dinosaurs/saurolophus-angustirostris-spike-crest-fullbody-imagegen-v1.png",
+          "sha256": "fbfaa60fc6e3b59cf0e460d492f79f102a8a6f545ce30ce50a299ba0c5826744",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        },
+        {
+          "role": "Image 2 approved short solid crest anatomy reference",
+          "path": "assets/dinosaurs/saurolophus-angustirostris-spike-crest-anatomy-imagegen-v2.png",
+          "sha256": "7d8781b10464820843bdbc930cc707231a2d4442f31672379d3dbc10f86c063f",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b6/saurolophus-angustirostris-crane-dorsal-gravelbar-turn-imagegen-v1.txt",
+        "promptSha256": "27da2a20e49e0da06c8608d202a5f803c60ff2ee3c8fb49dfdd265b68300f654",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v4; approved full-body and crest references; original-size independent visual QA; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and ignored anatomy-review candidates were used only as project-owned identity, anatomy, or local repair references; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved or locally generated inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "The bill read too narrow, the crest became a long thin horn, and the second hind leg and foot were hidden, failing identity and limb-count gates.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Generated-cache and staging PNGs moved to the Windows Recycle Bin after exact SHA-256 validation; prompt record retained"
+    },
+    {
+      "speciesId": "mammuthus-primigenius",
+      "sourceCallId": "exec-0bf96430-91da-414e-b75e-b650bb334bee",
+      "sha256": "8de2b8f62ca87fcce3c4f3a0c5b96073b2c7c1d0bdcd3462c9507dbaa787c174",
+      "bytes": 2617668,
+      "width": 1122,
+      "height": 1402,
+      "inputReferences": [
+        {
+          "role": "Image 1 approved woolly-mammoth full-body anatomy reference",
+          "path": "assets/dinosaurs/mammuthus-primigenius-high-shoulder-spiral-tusks-representative-imagegen-v1.png",
+          "sha256": "8b8d47837e8c48d12297221e522d12c3812ddf2e6a44383640622ebb8cedbfdb",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        },
+        {
+          "role": "Image 2 approved opposite-direction coat and short-tail reference",
+          "path": "assets/dinosaurs/mammuthus-primigenius-right-facing-charcoal-coat-review-imagegen-v2.png",
+          "sha256": "c9e15c08ae21ccb19a6c1e04771f16921b0c8056222e0c4ffcafc45d564cb975",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b6/mammuthus-primigenius-frontal-sedge-pull-portrait-imagegen-v1.txt",
+        "promptSha256": "f33362dae178cc2b24e7fdf66e5b66e22fd28ef3ae6b9bebb01a8e37a78fe25a",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v4; approved full-body and color-pattern references; original-size independent visual QA; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and ignored anatomy-review candidates were used only as project-owned identity, anatomy, or local repair references; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved or locally generated inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "Only three connected legs and feet were readable, and the required short tail had no clear silhouette.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Generated-cache and staging PNGs moved to the Windows Recycle Bin after exact SHA-256 validation; prompt record retained"
+    },
+    {
+      "speciesId": "dilophosaurus-wetherilli",
+      "sourceCallId": "exec-e8c3d9c6-3d14-45d5-9e7c-9f0f92ce336f",
+      "sha256": "45a00285e4a6d544d554955a05a08a504135bddf7d85684195805c0f22ca5470",
+      "bytes": 2880413,
+      "width": 1672,
+      "height": 941,
+      "inputReferences": [
+        {
+          "role": "Image 1 approved full-body identity reference",
+          "path": "assets/dinosaurs/dilophosaurus-wetherilli-kayenta-twincrest-fourdigit-representative-imagegen-v2.png",
+          "sha256": "83ca893384390808e343a6d9c3ce29ece5c9c5049c78b637ca985db489e90793",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        },
+        {
+          "role": "Image 2 approved paired-crest and four-digit-hand anatomy reference",
+          "path": "assets/dinosaurs/dilophosaurus-wetherilli-twincrest-fourdigit-hand-anatomy-imagegen-v2.png",
+          "sha256": "2b6f1199566836dead3392241fd008f7319859fd2a2d728b09ea29d5d537769a",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b6/dilophosaurus-wetherilli-groundlevel-frontthreequarter-drywash-pivot-imagegen-v2.txt",
+        "promptSha256": "e5bc957e92f5e396b1f7b7471ce3a3951b6bb2ccbef69590e72e9b52db383d8b",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v4; approved full-body and four-digit-hand references; original-size independent visual QA; rejected before enqueue and retained only as a local repair input",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and ignored anatomy-review candidates were used only as project-owned identity, anatomy, or local repair references; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved or locally generated inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "The near hand still lacked the required visibly smaller blunt digit IV, so the strict four-digit-hand gate failed.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Generated-cache and staging PNGs moved to the Windows Recycle Bin after exact SHA-256 validation; prompt record retained"
+    },
+    {
+      "speciesId": "mammuthus-primigenius",
+      "sourceCallId": "exec-e3a5dfb3-c6c7-4b8c-8367-bcbe91d1de50",
+      "sha256": "d04d26ddc5c00548d436fff112c45de942578740a000e6819deb1157adbeb6db",
+      "bytes": 2566695,
+      "width": 1122,
+      "height": 1402,
+      "inputReferences": [
+        {
+          "role": "Image 1 approved woolly-mammoth full-body anatomy reference",
+          "path": "assets/dinosaurs/mammuthus-primigenius-high-shoulder-spiral-tusks-representative-imagegen-v1.png",
+          "sha256": "8b8d47837e8c48d12297221e522d12c3812ddf2e6a44383640622ebb8cedbfdb",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        },
+        {
+          "role": "Image 2 approved opposite-direction coat and short-tail reference",
+          "path": "assets/dinosaurs/mammuthus-primigenius-right-facing-charcoal-coat-review-imagegen-v2.png",
+          "sha256": "c9e15c08ae21ccb19a6c1e04771f16921b0c8056222e0c4ffcafc45d564cb975",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b6/mammuthus-primigenius-frontal-sedge-pull-portrait-imagegen-v2.txt",
+        "promptSha256": "edf170c5d44116fc0ae9f0ddda454df1c90e74ead5209a5d76414485deb61c8b",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v4; approved full-body and color-pattern references; original-size independent visual QA; rejected before enqueue and retained only as a local repair input",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and ignored anatomy-review candidates were used only as project-owned identity, anatomy, or local repair references; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved or locally generated inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "The far foreleg and fourth foot were absent, leaving only three connected legs and feet.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Generated-cache and staging PNGs moved to the Windows Recycle Bin after exact SHA-256 validation; prompt record retained"
+    }
+  ]
+}

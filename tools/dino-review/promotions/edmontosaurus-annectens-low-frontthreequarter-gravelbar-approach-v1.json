@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "edmontosaurus-annectens-low-frontthreequarter-gravelbar-approach-v1",
+  "disposition": "promoted-awaiting-app-integration",
+  "promotedAt": "2026-08-11T13:31:01.985Z",
+  "sourcePath": "tools/dino-review/pending/edmontosaurus-annectens-low-frontthreequarter-gravelbar-approach-v1/edmontosaurus-annectens-low-frontthreequarter-gravelbar-approach-imagegen-v1.png",
+  "targetPath": "assets/dinosaurs/edmontosaurus-annectens-low-frontthreequarter-gravelbar-approach-imagegen-v1.png",
+  "filename": "edmontosaurus-annectens-low-frontthreequarter-gravelbar-approach-imagegen-v1.png",
+  "sha256": "edf2e0371f67244441c8e1a38369ddcd4173dac1e36d5d1025310d69bfb3fea5",
+  "sizeBytes": 2949265,
+  "review": {
+    "status": "pass",
+    "note": "",
+    "updatedAt": "2026-08-11T13:22:59.851Z",
+    "imageSha256": "edf2e0371f67244441c8e1a38369ddcd4173dac1e36d5d1025310d69bfb3fea5",
+    "manifestSha256": "21ac2d8caf7f262c73276672b9d4bfdd2bb2ede9690507c8c34f726c731060a2"
+  },
+  "candidate": {
+    "schemaVersion": 1,
+    "candidateId": "edmontosaurus-annectens-low-frontthreequarter-gravelbar-approach-v1",
+    "filename": "edmontosaurus-annectens-low-frontthreequarter-gravelbar-approach-imagegen-v1.png",
+    "speciesId": "edmontosaurus-annectens",
+    "kind": "anatomy review",
+    "targetFilename": "edmontosaurus-annectens-low-frontthreequarter-gravelbar-approach-imagegen-v1.png",
+    "provenance": {
+      "source": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and explicitly recorded prior rejected composition references were used only as project-owned inputs; no external artwork or named-artist style input",
+      "license": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+      "prompt": "Create a new scientific-educational Edmontosaurus annectens reconstruction. Image 1 is only a reference for the useful vertical 4:5 braided-channel depth, cool sunrise, and diagonal movement; do not copy its faulty hump, dorsal bumps, column feet, pose, or exact pixels. Image 2 is the project-owned approved species-identity and cautious soft-tissue reference. This is an anatomy-review-only S2 color-pattern diversity candidate for ages 5-14, not a representative.\n\nNew composition: one complete adult calmly approaching the low ground-level camera at a gentle front-left three-quarter angle across a firm wet gravel bar. The head sits in the upper-left third, the deep torso recedes toward the upper-right, and one continuous tail continues into background depth with the tip fully inside frame. The near forehand is clearly planted in the lower-left foreground, the far forehand is offset farther back with open gravel between them, and both hind feet are separately visible on firm gravel. Do not submerge or hide any foot; water channels remain behind and beside the animal only. Keep the full animal and every extremity in frame.\n\nHead lock: one long low crestless skull, one wide closed toothless beak, one restrained visible eye. No cranial crest, horn, teeth, duck feathers, ear pinna, oversized eye, or fantasy ornament.\n\nBack lock: a naturally level-to-gently-arched hadrosaur back, never a bison hump, camel hump, shoulder dome, or tall sail. Preserve only a VERY THIN, LOW, CONTINUOUS fleshy midline ridge along neck and torso, close to the skin and less than a few centimeters visually. Behind the hips it transitions into one SHORT DENSE WEDGE of TINY tail spines that quickly diminish; no large rounded knobs, no coarse bumps, no tall spikes, no mane, and no quills continuing from the neck.\n\nCount and foot lock: exactly two forelimbs attached at the shoulders and exactly two compact mitten-like forehands. Each forehand is a single padded unit supported by central weight-bearing digits, not spread human fingers and not an elephant stump. Exactly two robust hind legs attached at the hips and exactly two complete hind feet. Each hind foot has exactly three broad wedge-shaped hoof-like toes plus one low heel pad, all clearly connected through one ankle. Exactly one tail. No extra limb, duplicated reflection-foot, fused legs, hidden foot, amputated hand, rhino/elephant column foot, bipedal pose, or cropped extremity.\n\nColor and pattern: deep cool umber back, smoky blue-gray flanks, muted clay-orange face and thin midline, pale olive underside, irregular broken cream flecks and diffuse charcoal patches with natural asymmetry. No perfect rows, rings, zebra bands, mirror symmetry, neon colors, or palette-only copy.\n\nNatural-history museum realism, original project-owned visual, no named-artist/franchise style. No other animal, attack, blood, wound, text, watermark, logo, modern object, mud hiding feet, regular footprint pattern, or extra tail.",
+      "seed": "provider-not-exposed",
+      "workflow": "OpenAI image_gen anatomy-led composition-diversity v3; failed composition reference plus approved identity reference; exact input paths and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+    },
+    "anatomyReview": {
+      "status": "review-hold",
+      "representative": false,
+      "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+      "reviewedAt": "2026-08-10T16:43:45.1387935Z",
+      "notes": "S2 color-pattern and low front-three-quarter diversity candidate only. Back profile and hind feet improved, but both forehands require manual crop review for compact mitten-pad anatomy. Representative promotion prohibited."
+    }
+  }
+}

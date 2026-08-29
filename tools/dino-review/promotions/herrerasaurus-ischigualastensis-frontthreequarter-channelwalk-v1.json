@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "herrerasaurus-ischigualastensis-frontthreequarter-channelwalk-v1",
+  "disposition": "promoted-awaiting-app-integration",
+  "promotedAt": "2026-08-11T13:32:10.556Z",
+  "sourcePath": "tools/dino-review/pending/herrerasaurus-ischigualastensis-frontthreequarter-channelwalk-v1/herrerasaurus-ischigualastensis-frontthreequarter-channelwalk-imagegen-v1.png",
+  "targetPath": "assets/dinosaurs/herrerasaurus-ischigualastensis-frontthreequarter-channelwalk-imagegen-v1.png",
+  "filename": "herrerasaurus-ischigualastensis-frontthreequarter-channelwalk-imagegen-v1.png",
+  "sha256": "864d3c0a6e369c3178421e30c64f89981c655cc72bf637a4c7de3f5874f466df",
+  "sizeBytes": 2511800,
+  "review": {
+    "status": "pass",
+    "note": "",
+    "updatedAt": "2026-08-11T13:32:09.067Z",
+    "imageSha256": "864d3c0a6e369c3178421e30c64f89981c655cc72bf637a4c7de3f5874f466df",
+    "manifestSha256": "96de3800f3dda5eb3be3e236ac928d9517bfb00e18c14caf41c351d53f72e16c"
+  },
+  "candidate": {
+    "schemaVersion": 1,
+    "candidateId": "herrerasaurus-ischigualastensis-frontthreequarter-channelwalk-v1",
+    "filename": "herrerasaurus-ischigualastensis-frontthreequarter-channelwalk-imagegen-v1.png",
+    "speciesId": "herrerasaurus-ischigualastensis",
+    "kind": "anatomy review",
+    "targetFilename": "herrerasaurus-ischigualastensis-frontthreequarter-channelwalk-imagegen-v1.png",
+    "provenance": {
+      "source": "OpenAI built-in image generation (image_gen), generated 2026-08-10; approved Dino Atlas images were used only as project-owned identity references where stated; no external artwork or named-artist style input",
+      "license": "Generated project asset under applicable OpenAI service terms; original project prompt and project-owned identity references only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+      "prompt": "Use case: historical-scene\nAsset type: Dino Atlas gallery color-pattern diversity candidate, anatomy-review only\nInput images: Image 1 is an identity and body-proportion reference only, not an edit target. Create a new scene and new pose while preserving its slender Herrerasaurus identity.\nPrimary request: One Herrerasaurus ischigualastensis walking alertly through broken shade beside a shallow Late Triassic floodplain channel. Keep a charcoal and restrained russet mottled palette, but do not copy Image 1's left-facing lateral pose, horizon, or framing.\nScene/backdrop: Ischigualasto Formation in Argentina, red silt channel edge, sparse low shrubs and a few open-canopy plants casting long broken shadows, early morning light.\nSubject: preserve Image 1's narrow closed toothed skull, long neck, slender horizontal torso, relatively long compact forelimbs, two strong hind legs, and one long balancing tail; do not enlarge the head or thicken the body.\nStyle/medium: highly detailed natural-history museum paleoart, realistic living animal, original project-owned visual, no named-artist or franchise style.\nComposition/framing: 16:9 landscape, low front-right three-quarter camera. The animal moves from the background-right toward the foreground-left with its head turned across the frame. Its body forms a diagonal in depth, not a flat side profile. The one tail recedes in an arc toward the upper-right. Both arms are held close to the chest and separated by open negative space; one hind foot is planted and the other is mid-step. Keep the full tail tip and every foot in frame.\nCritical anatomy lock: exactly two forelimbs, exactly two hind legs, exactly one tail. Each compact hand has three main clawed functional fingers and only tiny clawless reduced outer digits; no long dangling hooks. Hind feet have three main forward weight-bearing toes and a small rear hallux. Every limb must connect cleanly to its own shoulder or hip; no extra arm, third leg, duplicate foot, fused limb, or floating hand.\nConstraints: calm walking only; no other animal; no attack; no blood; no text; no watermark; no logo; no feathers, horns, crest, oversized tyrannosaur head, giant hands, or cropped extremity.",
+      "seed": "provider-not-exposed",
+      "workflow": "OpenAI built-in image generation; anatomy-led composition-diversity v1; original-size automated visual intake; manual anatomy approval required"
+    },
+    "anatomyReview": {
+      "status": "review-hold",
+      "representative": false,
+      "reviewer": "Codex automated intake; manual anatomy approval required",
+      "reviewedAt": "2026-08-10T14:41:32.8989684Z",
+      "notes": "S2 diversity candidate only. Two forelimbs, two hind legs and one tail appear separated; compact hand digit topology, far hind-foot connection, skull and torso proportions require manual original-size review. Representative promotion prohibited."
+    }
+  }
+}

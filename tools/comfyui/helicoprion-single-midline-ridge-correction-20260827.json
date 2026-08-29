@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-27-helicoprion-single-midline-ridge-correction-v7",
+  "createdAt": "2026-08-27",
+  "taxonId": "helicoprion-davisii",
+  "audience": "Korean Dino Atlas users ages 5-14",
+  "reason": "User review found that v6 still read as paired left and right lower jaws. V7 removes the broad lower-jaw shelves and U-shaped lower-lip bridge so that only one crown-thick sagittal tooth-root ridge rises in the center, with black open oral space on both sides.",
+  "reconstructionBoundary": "The singular symphyseal whorl, continuous root and concealment of older crowns are evidence-led. The exact visible ridge, mouth rim, oral soft tissue, cartilage support, body, fins, color and ecology remain reconstructed.",
+  "rollup": {
+    "approvedAssets": 3,
+    "representativeAssets": 1,
+    "reviewOnlyAssets": 2,
+    "supersededRuntimeAssets": 3,
+    "privateRejectedOrDiagnosticAttempts": 9
+  },
+  "copyrightSafety": {
+    "userReferenceUse": "User-supplied images supplied high-level tooth-whorl and lower-jaw morphology intent only; style, pose, color, prey and composition were excluded.",
+    "licenseRecord": "Original project-generated bitmaps under applicable OpenAI service terms. Publications supplied factual constraints; external art was not copied or used as a runtime asset.",
+    "appPathPolicy": "Runtime metadata references approved assets/dinosaurs paths only; private .codex/generated_images paths are provenance-only."
+  },
+  "researchSources": [
+    {
+      "citation": "Tapanila et al. 2013. Jaws for a spiral-tooth whorl. Biology Letters 9:20130057.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3639784/",
+      "use": "Singular symphyseal whorl in the mandibular arch, continuous curling root and concealed older crowns."
+    },
+    {
+      "citation": "Ramsay et al. 2015. Eating with a saw for a jaw. Journal of Morphology 276:47-64.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25181366/",
+      "use": "Functional crown and mandibular-cartilage constraints."
+    }
+  ],
+  "projectGeometryGuide": {
+    "svg": "tools/comfyui/helicoprion-midline-ridge-open-sides-geometry-guide-v2.svg",
+    "png": "tools/comfyui/helicoprion-midline-ridge-open-sides-geometry-guide-v2.png",
+    "purpose": "Internal topology guide only: one narrow median ridge, black space on both sides, no paired lower-jaw shelves and no U-shaped lower-lip bridge."
+  },
+  "records": {
+    "helicoprion-davisii-representative-v7": {
+      "slot": 1,
+      "kind": "count-level pass",
+      "representativeEligible": true,
+      "asset": "assets/dinosaurs/helicoprion-davisii-single-midline-rising-c-whorl-representative-imagegen-v7.png",
+      "sourceCallId": "exec-cbb7d2a4-b650-41e3-a370-0bb4a4520c62",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-cbb7d2a4-b650-41e3-a370-0bb4a4520c62.png",
+      "identityConstructionCallId": "exec-e5e8f7ed-fcaf-4874-a000-d69c612ae239",
+      "identityConstructionPrompt": "Use case: scientific-educational. Asset type: Dino Atlas Helicoprion davisii oblique representative candidate v7i. Create a new front-left oblique view preserving an open black mouth, no lower-lip bridge or paired lower jaws, black space on both sides of one crown-thick sagittal center keel, and an open C/comma curve whose ends disappear into opaque tissue. Keep exactly one main dorsal, paired fins, lower median fin and complete tail; avoid U/horseshoe jaws, side gums, pads, tongues, rings, external wheels, extra fins, text, watermark and crop.",
+      "prompt": "Use case: scientific-educational. Asset type: Dino Atlas Helicoprion final rear-fin cleanup v7j. Remove only the tiny extra dorsal fin/nub on the upper rear tail stock and replace it with a smooth back-to-tail contour. Preserve the black open oral cavity, absent lower-lip bridge, absent paired lower jaws, black space on both sides of the single slim curved median tooth-bearing ridge, tooth positions, oblique camera, main dorsal, paired fins, lower median fin, complete tail, skin, lighting and water. Do not alter the mouth or add anatomy, text, watermark, prey, gore, cutaway or crop.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image_gen multi-step anatomy correction using the project geometry guide, followed by targeted extra-dorsal cleanup",
+      "dimensions": "1536x1024",
+      "bytes": 1904918,
+      "sha256": "7cdaafbbf1bba1cd7d6efd6bdba5d45c3aff02f83204ffc64ba0d081da8256e0",
+      "review": "Approved at original size: one narrow curved median tooth-root ridge is the only raised lower oral structure; black space remains on both sides; no broad paired lower-jaw shelves or U-shaped lower-lip bridge; one dorsal; complete body and tail. Exact mouth rim and soft tissue remain inferred."
+    },
+    "helicoprion-davisii-pattern-v7": {
+      "slot": 2,
+      "kind": "review hold",
+      "representativeEligible": false,
+      "asset": "assets/dinosaurs/helicoprion-davisii-single-midline-rising-c-whorl-ochre-upward-pattern-imagegen-v7.png",
+      "sourceCallId": "exec-ecd5a9e6-ff5b-45de-817c-d30e23fe57c2",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-ecd5a9e6-ff5b-45de-817c-d30e23fe57c2.png",
+      "prompt": "Use case: scientific-educational. Asset type: Dino Atlas Helicoprion color-pattern gallery variant v7. Create a portrait upward-swimming charcoal-brown and irregular ochre variant while preserving one large dark oral cavity, no lower-lip bridge or paired lower jaws, black space on both sides of one slim sagittal tooth-bearing ridge, an open C/comma root, a toothless upper head and lateral margins, one main dorsal, paired fins, lower median fin and complete tail. Avoid a conventional lower jaw, U rim, side teeth, broad tongue, filled mouth, straight row, external wheel, extra fins, text, watermark and crop.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image_gen identity-guided portrait variation from the selected v7 representative direction",
+      "dimensions": "1024x1536",
+      "bytes": 2076076,
+      "sha256": "3f7ce9a1dbd17d7eae8fce0f4a29ef05045a90fac56962d1d2404873a81aee83",
+      "review": "Accepted as review hold: one slim curved center ridge, black oral space on both sides, complete body and distinct palette. Exact color, mouth rim and perspective remain inferred; not representative-eligible."
+    },
+    "helicoprion-davisii-ecology-v7": {
+      "slot": 3,
+      "kind": "anatomy review",
+      "representativeEligible": false,
+      "asset": "assets/dinosaurs/helicoprion-davisii-single-midline-rising-c-whorl-cephalopod-ecology-imagegen-v7.png",
+      "sourceCallId": "exec-d80b0372-c1ef-48f9-b816-432dae2f718a",
+      "sourcePrivatePath": "C:/Users/USER/.codex/generated_images/019fbda2-6313-7010-a45d-5c6c6e3f5169/exec-d80b0372-c1ef-48f9-b816-432dae2f718a.png",
+      "identityConstructionCallId": "exec-63284e2a-59da-447a-aff7-a9802c78b105",
+      "prompt": "Precision anatomical correction of the ecological scene. Preserve composition, full body, distant cephalopods, water, color, lighting and mouth opening. Remove the tiny second dorsal fin near the tail. Keep black empty space on both sides and reshape the existing single narrow center tooth-bearing ridge into a clearer open C/comma curve rising from one tiny median attachment. The ridge remains about one tooth crown thick and must not become a conventional lower jaw, lower-lip bridge, U shape, horseshoe, broad pad, tongue, paired side rails or circular saw blade. Keep only one single midline file of teeth and add nothing else.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image_gen ecology variation followed by targeted extra-dorsal and partial-C cleanup",
+      "dimensions": "1536x1024",
+      "bytes": 2532494,
+      "sha256": "edb2dd09716b2dc51e359dd8566beede1fbbc3ea6ef54fcff4926c5e0b6020a5",
+      "review": "Accepted as anatomy review: one narrow curved center ridge remains surrounded by black oral space; one dorsal; complete focal body; separated non-contact cephalopods. Exact mouth rim, behavior and ecology remain illustrative; not representative-eligible."
+    }
+  },
+  "supersededRuntimeAssets": [
+    "assets/dinosaurs/helicoprion-davisii-open-cavity-partial-c-whorl-representative-imagegen-v6.png",
+    "assets/dinosaurs/helicoprion-davisii-open-cavity-partial-c-whorl-ochre-upward-pattern-imagegen-v6.png",
+    "assets/dinosaurs/helicoprion-davisii-open-cavity-partial-c-whorl-cephalopod-ecology-imagegen-v6.png"
+  ],
+  "rejectedAttempts": [
+    { "callId": "exec-6de3732c-5cfe-497e-bbe8-4ff8b90513ee", "reason": "Removed the U loop but produced a large downward triangular chin flap and too few visible teeth." },
+    { "callId": "exec-7c9eef1d-cb82-4b56-b548-c023e6e96efe", "reason": "Retained a conventional lower-lip rim and reduced the functional row to a few teeth." },
+    { "callId": "exec-2c829c90-3c7f-4100-b2ca-31c838df9c0c", "reason": "Retained a U-shaped lower lip and replaced the diagnostic curl with weak smooth nubs." },
+    { "callId": "exec-c16d3064-2a98-4c36-9c3b-7b8bfc1a948c", "reason": "Added a broad tongue or pad plus a conventional lower lip around the central whorl." },
+    { "callId": "exec-59dd0538-6ef1-40eb-b810-382febe8b88a", "reason": "Front-view structure diagnostic only; central support remained too broad and did not show the stored curl." },
+    { "callId": "exec-e5732aff-4a7a-4f93-a610-cd60b37946ce", "reason": "Narrowed the center row but retained a bottom U-shaped connection." },
+    { "callId": "exec-e574b612-fade-412b-919e-13843885e045", "reason": "Regressed to a conventional lower jaw with an externally exposed spiral wheel." },
+    { "callId": "exec-1ecb33fa-0f10-4302-8de0-b46b823d0049", "reason": "Useful internal front-view topology reference but the tooth row did not visibly curl; not a representative candidate." },
+    { "callId": "exec-63284e2a-59da-447a-aff7-a9802c78b105", "reason": "Ecology intermediate retained a tiny second dorsal and an insufficiently clear C curve; corrected before project copy." }
+  ]
+}

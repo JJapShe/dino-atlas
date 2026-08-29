@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "psittacosaurus-mongoliensis-genus-quill-tail-diagonal-foraging-v1",
+  "disposition": "promoted-awaiting-app-integration",
+  "promotedAt": "2026-08-11T13:32:22.923Z",
+  "sourcePath": "tools/dino-review/pending/psittacosaurus-mongoliensis-genus-quill-tail-diagonal-foraging-v1/psittacosaurus-mongoliensis-genus-quill-tail-diagonal-foraging-imagegen-v1.png",
+  "targetPath": "assets/dinosaurs/psittacosaurus-mongoliensis-genus-quill-tail-diagonal-foraging-imagegen-v1.png",
+  "filename": "psittacosaurus-mongoliensis-genus-quill-tail-diagonal-foraging-imagegen-v1.png",
+  "sha256": "a0a89c7ad76a24cf6b660a006aa3d38c1d063926a4b78f2458ea166c0603a14c",
+  "sizeBytes": 2537111,
+  "review": {
+    "status": "pass",
+    "note": "",
+    "updatedAt": "2026-08-11T13:32:21.578Z",
+    "imageSha256": "a0a89c7ad76a24cf6b660a006aa3d38c1d063926a4b78f2458ea166c0603a14c",
+    "manifestSha256": "2f025f0325292d67d36de8a60192475004c002fd6e1db34b83280724c7c0e2ac"
+  },
+  "candidate": {
+    "schemaVersion": 1,
+    "candidateId": "psittacosaurus-mongoliensis-genus-quill-tail-diagonal-foraging-v1",
+    "filename": "psittacosaurus-mongoliensis-genus-quill-tail-diagonal-foraging-imagegen-v1.png",
+    "speciesId": "psittacosaurus-mongoliensis",
+    "kind": "anatomy review",
+    "targetFilename": "psittacosaurus-mongoliensis-genus-quill-tail-diagonal-foraging-imagegen-v1.png",
+    "provenance": {
+      "source": "OpenAI built-in image generation (image_gen), generated 2026-08-10; factual constraints from existing Dino Atlas identity metadata; no external artwork or named-artist style input",
+      "license": "Generated project asset under applicable OpenAI service terms; original project prompt; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+      "prompt": "Use case: historical-scene\nAsset type: Dino Atlas vertical mobile gallery candidate, anatomy-review only\nPrimary request: A scientifically cautious adult Psittacosaurus mongoliensis foraging in an Early Cretaceous inland Asian floodplain, with a clearly limited genus-level tail-bristle row and a composition unlike a flat side-view catalog portrait.\nScene/backdrop: sandy alluvial channel margin after light rain, low seed ferns and shrubs, sparse conifers in soft dawn haze; no modern lawn grass or flowers.\nSubject: one small adult Psittacosaurus. Small head relative to body, closed rounded parrot-like beak, high nostril, short broad rear skull shelf, modest paired pyramidal jugal horns; no large frill, nose horn, brow horns, or macaw-sized head.\nStyle/medium: highly detailed natural-history museum paleoart, realistic living animal, original project-owned visual, not styled after any named artist or franchise.\nComposition/framing: vertical 4:5 portrait. Ground-level rear-three-quarter view. The animal stands bipedally in the lower-right half and bends its neck to nibble a shrub. Its one complete tail leaves the pelvis, curves broadly across the open center, then points toward the upper-left, so the tail is visually separate from the back and its entire dorsal edge is readable. Not a flat lateral standing pose.\nCritical limb lock: exactly two short forelimbs held off the ground and visibly separated, exactly two strong hind legs, and exactly one tail continuous from the pelvis. Each hand has four digits with a tiny reduced fourth and no fifth; each hind foot has four toes with toe I shorter than II–IV. No extra limb, fused leg, duplicate foot, or second tail.\nCritical bristle lock: the back, shoulders, torso, hips, and tail base must be completely smooth and bristle-free. Leave a clear bare gap after the pelvis. Then place one restrained single row of long, thin cylindrical bristles only on the middle third of the dorsal tail, and stop well before the distal third. No bristle anywhere else. This is comparative Psittacosaurus sp. genus-level context, not confirmed for P. mongoliensis.\nConstraints: quiet foraging only; no other animals; no text; no watermark; no logo; no body spines, body feathers, porcupine coat, armor plates, huge frill, facial horns beyond modest jugal horns, theropod teeth, sickle claws, quadrupedal adult stance, five-fingered hands, three-toed feet, or gore.",
+      "seed": "provider-not-exposed",
+      "workflow": "OpenAI built-in image generation; anatomy-led composition-diversity v1; original-size automated visual intake; manual anatomy approval required"
+    },
+    "anatomyReview": {
+      "status": "review-hold",
+      "representative": false,
+      "reviewer": "Codex automated intake; manual anatomy approval required",
+      "reviewedAt": "2026-08-10T14:14:36.4424954Z",
+      "notes": "S7 diversity candidate only. Bristles are restricted to a middle-tail row with bare torso and tail base; genus-level Psittacosaurus sp. evidence boundary, hand and foot digit counts, and head proportions require manual review. Representative promotion prohibited."
+    }
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 2,
+  "batchId": "gallery-composition-diversity-20260811-b7",
+  "status": "review-hold",
+  "targetAudience": "ages 5-14",
+  "audit": {
+    "json": "tools/comfyui/gallery-composition-similarity-audit-20260810.json",
+    "markdown": "docs/gallery-composition-diversity-audit-2026-08-10.md",
+    "taxa": 155,
+    "approvedImages": 871,
+    "withinTaxonPairs": 2103,
+    "pairsAtOrAbove045": 677,
+    "pairsAtOrAbove055": 129,
+    "pairsAtOrAbove065": 12,
+    "pairsAtOrAbove075": 6
+  },
+  "policy": {
+    "batchSize": 3,
+    "attemptedImageCount": 4,
+    "enqueuedCandidateCount": 3,
+    "retainedCandidateCount": 3,
+    "candidateKind": "anatomy review",
+    "automaticPromotion": false,
+    "representativePromotion": false,
+    "automaticDeletionFromPending": false,
+    "candidateMaxSimilarityGate": 0.58,
+    "selectionRule": "LV1 and LV2 audience priority, representative-pattern similarity, then a low channel-stride theropod view, high rear three-quarter ceratopsian turn, and vertical low-ventral plesiosaur descent",
+    "diversityGate": "A replacement must change camera family, direction, subject scale, action, spatial layout, or habitat; palette-only and mirror-only changes do not count.",
+    "anatomyGate": "Manual original-size anatomy review is required before pass, promotion, or app integration."
+  },
+  "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and ignored anatomy-review candidates were used only as project-owned identity, anatomy, or local repair references; no external artwork or named-artist style input",
+  "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved or locally generated inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used",
+  "records": [
+    {
+      "speciesId": "giganotosaurus-carolinii",
+      "candidateId": "giganotosaurus-carolinii-low-frontthreequarter-channel-stride-v2",
+      "targetFilename": "giganotosaurus-carolinii-low-frontthreequarter-channel-stride-imagegen-v2.png",
+      "intendedSlot": 2,
+      "intendedRole": "color-pattern",
+      "replacesSimilarityPair": {
+        "slots": [1, 2],
+        "structuralSimilarity": 0.531,
+        "matchMode": "direct"
+      },
+      "compositionKey": "landscape-low-frontthreequarter-channel-stride",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.468,
+        "nearestSlot": 2,
+        "nearestRole": "color-pattern",
+        "matchMode": "direct",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-3caa5293-6ced-4234-a6a1-0233b9b521b3",
+      "image": {
+        "sha256": "4cff3d719317b4bf691398baa4e8048cbe2707718a2a2311914d21eb37aa65a8",
+        "bytes": 2373281,
+        "width": 1672,
+        "height": 941,
+        "format": "png"
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 rejected v1 local skull-repair target; former batch staging copy of the generated source",
+          "path": "tools/comfyui/outputs/overnight/20260811/b7/giganotosaurus-carolinii-low-frontthreequarter-channel-stride-imagegen-v1.png",
+          "sha256": "57c233a0979cfa484a98d783f45f1c702a1b67d4d7e0c41bbf18d68477c25b73",
+          "sourceCallId": "exec-efab8142-51ba-405c-999e-446b65ce1f17",
+          "status": "rejected-input-deleted",
+          "pixelsRetained": false
+        },
+        {
+          "role": "Image 2 approved low-skull, lacrimal-ridge head and body identity reference",
+          "path": "assets/dinosaurs/giganotosaurus-carolinii-lowskull-lacrimal-ridge-representative-imagegen-v1.png",
+          "sha256": "1c24e590cc8e06de4815fc28819cdbd14d66f65c290211aa67d66ee734e7e1c4",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260811-b7.md#giganotosaurus-carolinii",
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b7/giganotosaurus-carolinii-low-frontthreequarter-channel-stride-imagegen-v2.txt",
+        "promptSha256": "0dab7832dcc821bfaef1dd3fea5d876661dc2ee4fc0d41c1edf06b165a88b83b",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v5; staged v1 local skull repair plus approved identity reference; exact input paths and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+        "reviewedAt": "2026-08-10T18:02:24.4374314Z",
+        "notes": "S2 color-pattern diversity candidate only. The repaired head reads as long, low and rectangular with a restrained lacrimal ridge; two three-fingered hands, two hind legs, two three-toed feet and one complete tail remain readable. Manual original-size anatomy review is still required. Representative promotion prohibited."
+      }
+    },
+    {
+      "speciesId": "centrosaurus-apertus",
+      "candidateId": "centrosaurus-apertus-high-rearthreequarter-pointbar-turn-v1",
+      "targetFilename": "centrosaurus-apertus-high-rearthreequarter-pointbar-turn-imagegen-v1.png",
+      "intendedSlot": 2,
+      "intendedRole": "color-pattern",
+      "replacesSimilarityPair": {
+        "slots": [1, 2],
+        "structuralSimilarity": 0.587,
+        "matchMode": "mirrored"
+      },
+      "compositionKey": "square-high-rearthreequarter-pointbar-turn",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.431,
+        "nearestSlot": 5,
+        "nearestRole": "interaction",
+        "matchMode": "mirrored",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-5c5d96f4-4d36-41de-bacc-bcb1ea5bdc78",
+      "image": {
+        "sha256": "f051fbb37f709a235d86cd272f02e18196c1f98478d2231bee192a74dbac0182",
+        "bytes": 3273546,
+        "width": 1254,
+        "height": 1254,
+        "format": "png"
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 approved full-body identity reference",
+          "path": "assets/dinosaurs/centrosaurus-apertus-procurved-nasalhorn-p1-p2-representative-imagegen-v1.png",
+          "sha256": "110a95d54d4938b7087fea5039244aa19056d021f68ad012aec82746cdce4bf5",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        },
+        {
+          "role": "Image 2 approved medial P1 and P2 frill-hook anatomy reference",
+          "path": "assets/dinosaurs/centrosaurus-apertus-medial-p1-p2-frillhook-anatomy-imagegen-v1.png",
+          "sha256": "9f74e6acc536eecbf204b1985716655ee5455d58bb7061a4040e0e21da0a5818",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260811-b7.md#centrosaurus-apertus",
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b7/centrosaurus-apertus-high-rearthreequarter-pointbar-turn-imagegen-v1.txt",
+        "promptSha256": "da5bb783105b8633329dd4486434955d85b6abfc0b2733f9d76b3c424cc88949",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v5; approved full-body and medial P1-P2 frill-hook references; exact input paths and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+        "reviewedAt": "2026-08-10T18:02:24.4374314Z",
+        "notes": "S2 composition-diversity candidate only. One forward-curving nasal horn, low brow knobs, continuous skin-covered frill, paired medial P1 and paired outer P2 hooks, four limbs, four feet and one tail appear readable. Palette remains close to the identity control, so this is retained for composition review only. Representative promotion prohibited."
+      }
+    },
+    {
+      "speciesId": "plesiosaurus-dolichodeirus",
+      "candidateId": "plesiosaurus-dolichodeirus-low-frontthreequarter-shale-descent-v1",
+      "targetFilename": "plesiosaurus-dolichodeirus-low-frontthreequarter-shale-descent-imagegen-v1.png",
+      "intendedSlot": 2,
+      "intendedRole": "color-pattern",
+      "replacesSimilarityPair": {
+        "slots": [1, 2],
+        "structuralSimilarity": 0.561,
+        "matchMode": "mirrored"
+      },
+      "compositionKey": "portrait-low-ventral-frontthreequarter-shale-descent",
+      "candidateCompositionAudit": {
+        "maxStructuralSimilarity": 0.495,
+        "nearestSlot": 2,
+        "nearestRole": "color-pattern",
+        "matchMode": "mirrored",
+        "passedGate": true
+      },
+      "sourceCallId": "exec-c98ebaab-306d-4e5c-b110-ce3faecf7ea3",
+      "image": {
+        "sha256": "11a2379c8f3136f8105936150b3d3e9b5008f49810e7b09842eb663217302bb0",
+        "bytes": 2484929,
+        "width": 1122,
+        "height": 1402,
+        "format": "png"
+      },
+      "inputReferences": [
+        {
+          "role": "Image 1 approved identity and proportion reference",
+          "path": "assets/dinosaurs/plesiosaurus-dolichodeirus-longneck-sideprofile-imagegen-v1.png",
+          "sha256": "eaca8e1576cc179b54afaa618e4326da7b3cff1a86940b85797963a190719fae",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        },
+        {
+          "role": "Image 2 approved four-paddle attachment and count reference",
+          "path": "assets/dinosaurs/plesiosaurus-dolichodeirus-four-paddle-anatomy-imagegen-v2.png",
+          "sha256": "17e3cd3cb029321b367ec7b2e8e05711bb5ca5c148b232c2db32598fb767de25",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptRecord": "tools/comfyui/gallery-composition-diversity-batch-20260811-b7.md#plesiosaurus-dolichodeirus",
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b7/plesiosaurus-dolichodeirus-low-frontthreequarter-shale-descent-imagegen-v1.txt",
+        "promptSha256": "cb95fed7a9d56c5ce77a80a04d1240719cdc9693a71a662831ffd59f1ebf1f1e",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v5; approved identity and four-paddle anatomy references; exact input paths and SHA in batch record; original-size independent visual QA; manual anatomy approval required"
+      },
+      "review": {
+        "status": "review-hold",
+        "representative": false,
+        "reviewer": "Codex automated intake plus independent visual QA; manual anatomy approval required",
+        "reviewedAt": "2026-08-10T18:02:24.4374314Z",
+        "notes": "S2 color-pattern diversity candidate only. One small head, a single gentle C-curved neck, a barrel body, exactly four separately attached paddles, one short tail and no dorsal or tail fin appear readable. The oblique spread-paddle motif still requires manual comparison with existing anatomy and stroke slots. Representative promotion prohibited."
+      }
+    }
+  ],
+  "rejectedAttempts": [
+    {
+      "speciesId": "giganotosaurus-carolinii",
+      "sourceCallId": "exec-efab8142-51ba-405c-999e-446b65ce1f17",
+      "sha256": "57c233a0979cfa484a98d783f45f1c702a1b67d4d7e0c41bbf18d68477c25b73",
+      "bytes": 2381177,
+      "width": 1672,
+      "height": 941,
+      "inputReferences": [
+        {
+          "role": "Image 1 approved low-skull, lacrimal-ridge head and body identity reference",
+          "path": "assets/dinosaurs/giganotosaurus-carolinii-lowskull-lacrimal-ridge-representative-imagegen-v1.png",
+          "sha256": "1c24e590cc8e06de4815fc28819cdbd14d66f65c290211aa67d66ee734e7e1c4",
+          "status": "approved-retained",
+          "pixelsRetained": true
+        }
+      ],
+      "provenance": {
+        "promptPath": "tools/comfyui/outputs/overnight/20260811/b7/giganotosaurus-carolinii-low-frontthreequarter-channel-stride-imagegen-v1.txt",
+        "promptSha256": "3ec180c62aab8acaad4244977382fab0bb9bcc0f3fd86ea45454ef6da6340142",
+        "seed": "provider-not-exposed",
+        "workflow": "OpenAI image_gen anatomy-led composition-diversity v5; approved full-body identity reference; original-size independent visual QA; rejected before enqueue",
+        "sourceAttribution": "OpenAI built-in image generation (image_gen), generated 2026-08-11; approved Dino Atlas images and ignored anatomy-review candidates were used only as project-owned identity, anatomy, or local repair references; no external artwork or named-artist style input",
+        "licenseRecord": "Generated project asset under applicable OpenAI service terms; original project prompts and project-owned approved or locally generated inputs only; no external copyrighted reconstruction, franchise frame, or named-artist style used"
+      },
+      "status": "rejected-before-enqueue",
+      "reason": "The head stayed too tall, rounded and vertically deep, reading as a Tyrannosaurus-like skull rather than the required long, low rectangular Giganotosaurus profile.",
+      "pixelsRetained": false,
+      "deletionRecovery": "Generated-cache and staging PNGs moved to the Windows Recycle Bin after exact SHA-256 validation; prompt record retained"
+    }
+  ]
+}
