@@ -1,5 +1,10 @@
 # Dino Atlas Recursive Expansion Queue
 
+## 2026-08-30 — Paleozoic/Cenozoic S4 ecology richness
+
+- Added one approved, non-representative S4 ecology/identity reference for Opabinia, Tiktaalik, Arthropleura, Meganeura, Titanomyrma, Gastornis, Titanoboa and Basilosaurus.
+- Existing S1–S3 roles remain unchanged. S4 is never a `count-level pass`; the Basilosaurus S4 explicitly excludes representative use because the far foreflipper is occluded.
+
 ## Fixed Loop
 
 1. Pick the next taxon from an already represented clade or ecosystem neighbor.
