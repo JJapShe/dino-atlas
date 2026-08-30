@@ -1191,8 +1191,8 @@ const dinosaurs = [
     region: "중국 랴오닝",
     length: 0.5,
     knowledgeLevel: 2,
-    imageSlots: 3,
-    reviewStatus: "3장 갤러리 · 초기 포유류 체형 검토 · 프시타코사우루스 섭식은 살해 증거 아님",
+    imageSlots: 5,
+    reviewStatus: "5장 갤러리 · 초기 포유류 체형 검토 · S4·S5 anatomy review · 프시타코사우루스 섭식은 살해 증거 아님",
     summary:
       "전기 백악기 중국의 튼튼한 초기 포유류입니다. 한 표본의 배 속에서 어린 프시타코사우루스 뼈가 발견되어 중생대 포유류도 작은 척추동물을 먹었다는 강한 증거가 되었습니다. 다만 그 공룡을 직접 사냥해 죽였는지, 이미 죽은 사체를 먹었는지는 알 수 없으므로 공격 장면으로 단정하지 않습니다.",
     features: {
@@ -8441,6 +8441,8 @@ const generatedImageSamples = {
       metadataRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json",
       representativeEligible: false,
     },
+    {kind:"anatomy review",title:"레페노마무스 낮은 전방 네 사지 구조",body:"의현층 숲 가장자리에서 낮고 튼튼한 몸, 짧은 네 사지와 긴 꼬리를 보는 S4입니다. 현생 수달·오소리·설치류의 얼굴을 피했고 먹이·사냥 장면은 넣지 않았습니다. 털·색·완전한 발은 비교복원이며 대표 승격은 금지합니다.",source:"assets/dinosaurs/repenomamus-robustus-low-front-fourlimb-anatomy-imagegen-v2.png",variant:"낮은 전방 네 사지 구조 이미지 생성 v2",src:"assets/dinosaurs/repenomamus-robustus-low-front-fourlimb-anatomy-imagegen-v2.png",gallerySlot:4,galleryRole:"identity-anatomy",phenotype:"walnut-coarsecoat-d",habitatKey:"early-cretaceous-yixian-lake-margin",sourceAttribution:"OpenAI built-in image generation; peer-reviewed Repenomamus sources supplied factual constraints only",licenseRecord:"Generated project asset; no external artwork or copyrighted reconstruction used as generation input",generationPromptRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/repenomamus-robustus-s4",generationSeed:"service-assigned, not exposed",generationWorkflow:"OpenAI image_gen anatomy-led low-front pass; original-size head, four-limb, foot, tail, crop, text and watermark audit",reviewStatus:"원본 크기 anatomy-review 수용 · 낮고 긴 몸/4지/긴 꼬리 판독 · 대표 승격 금지",formation:"Yixian Formation",anatomyEvidenceBoundary:"robust low body and cranial-dental identity are fossil-led; full limbs, feet, tail soft tissue, ears, nose and coat include reconstruction",colorEvidence:"all color and coat placement are hypothetical",metadataRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json",representativeEligible:false},
+    {kind:"anatomy review",title:"레페노마무스 화산재 호숫가 원경 생태",body:"화산재가 가볍게 내리는 의현층 호숫가의 S5입니다. 앞 개체는 낮고 긴 몸·네 다리·긴 꼬리를 보존하고, 호수의 작은 물고기는 이름을 붙이지 않은 비접촉 환경 단서입니다. 사냥·사체·직접 종 공존을 주장하지 않습니다.",source:"assets/dinosaurs/repenomamus-robustus-ash-lake-fish-context-ecology-imagegen-v2.png",variant:"화산재 호숫가 물고기 원경 생태 이미지 생성 v2",src:"assets/dinosaurs/repenomamus-robustus-ash-lake-fish-context-ecology-imagegen-v2.png",gallerySlot:5,galleryRole:"habitat-ecology",phenotype:"ash-russet-coat-e",habitatKey:"early-cretaceous-yixian-ash-lake",sourceAttribution:"OpenAI built-in image generation; Yixian Formation context supplied factual constraints only",licenseRecord:"Generated project asset; no external artwork or copyrighted reconstruction used as generation input",generationPromptRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/repenomamus-robustus-s5",generationSeed:"service-assigned, not exposed",generationWorkflow:"OpenAI image_gen ecology pass; original-size focal limb, tail, background separation, crop, text and watermark audit",reviewStatus:"원본 크기 anatomy-review 수용 · 주 피사체 4지/긴 꼬리 판독 · 배경 물고기·행동·색은 삽화 · 대표 승격 금지",formation:"Yixian Formation",locality:"formation-level volcanic-lake-margin reconstruction; exact lake, ashfall and background association are hypothetical",behaviorEvidence:"walking and lake-margin setting are visual hypotheses",evidenceBoundary:"juvenile Psittacosaurus gut contents support ingestion but not a specific hunt; no prey is depicted",colorEvidence:"all color and coat placement are hypothetical",metadataRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json",representativeEligible:false},
   ],
   "lystrosaurus-murrayi": [
     {

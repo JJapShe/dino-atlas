@@ -1538,7 +1538,9 @@
         "reviewMethod": "Independent original-size four-limb, four-foot, tail, habitat, behavior-boundary, crop, and artifact audit",
         "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
         "reviewedAt": "2026-08-07T10:11:42.734Z"
-      }
+      },
+      "4": {"status":"approved","source":"assets/dinosaurs/repenomamus-robustus-low-front-fourlimb-anatomy-imagegen-v2.png","role":"identity-anatomy","subrole":"gallery-only low front four-limb comparison","reason":"One low elongated robust body, four readable limbs and one continuous long tail pass review without modern-mammal facial drift.","reviewMethod":"Original-size head, four-limb, foot, tail, modern-mammal-drift, crop, text and watermark audit","reviewBatch":"2026-08-31-three-slot-ecology-enrichment-v2","reviewedAt":"2026-08-31","claimBoundary":"Body plan is fossil-led; complete feet, ears, nose, coat, color and posture are reconstructed and not representative-eligible."},
+      "5": {"status":"approved","source":"assets/dinosaurs/repenomamus-robustus-ash-lake-fish-context-ecology-imagegen-v2.png","role":"habitat-ecology","subrole":"gallery-only ashfall lake context with distant unnamed fish","reason":"Focal low body, four limbs and tail remain readable; fish are distant unnamed non-contact environmental context.","reviewMethod":"Original-size focal anatomy, background separation, crop, text and watermark audit","reviewBatch":"2026-08-31-three-slot-ecology-enrichment-v2","reviewedAt":"2026-08-31","claimBoundary":"Focal body plan is fossil-led; ashfall, background association, behavior, color and posture are illustrative and not representative-eligible."}
     },
     "herrerasaurus-ischigualastensis": {
       "1": {

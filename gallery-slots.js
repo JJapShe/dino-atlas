@@ -1522,6 +1522,26 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "early-cretaceous-yixian-root-shelter",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/repenomamus-robustus-low-front-fourlimb-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only low front four-limb comparison",
+      "claimBoundary": "Body plan is fossil-led; complete feet, ears, nose, coat, color and posture are reconstructed and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "early-cretaceous-yixian-lake-margin",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/repenomamus-robustus-ash-lake-fish-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "gallerySubrole": "gallery-only ashfall lake context with distant unnamed fish",
+      "claimBoundary": "Focal body plan is fossil-led; ashfall, background association, behavior, color and posture are illustrative and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "early-cretaceous-yixian-ash-lake",
+      "expectedKind": "anatomy review"
     }
   ],
   "herrerasaurus-ischigualastensis": [
