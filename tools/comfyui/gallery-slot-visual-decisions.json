@@ -455,6 +455,26 @@
         "reviewBatch": "2026-08-24-cenozoic-famous-life-expansion-v1",
         "reviewedAt": "2026-08-24",
         "claimBoundary": "Broad habitat and possible group context only; exact social structure and movement are illustrative."
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/megaloceros-giganteus-low-rearthreequarter-mineral-lick-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "One focal male retains a fully visible palmated antler pair, four limbs, four hooves and a short tail.",
+        "reviewMethod": "Original-size antler-pair, limb, hoof, tail, crop and artifact audit",
+        "reviewBatch": "2026-08-31-three-slot-five-gallery-enrichment-v1",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "Mineral-lick behavior, weather and all colors are illustrative; not representative-eligible."
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/megaloceros-giganteus-high-frontthreequarter-river-mammoth-context-ecology-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "One focal male retains a complete palmated antler pair, four limbs, hooves and short tail; distant mammoths are separated.",
+        "reviewMethod": "Original-size antler-pair, limb, hoof, tail, background-separation, crop and artifact audit",
+        "reviewBatch": "2026-08-31-three-slot-five-gallery-enrichment-v1",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "Mammoth family, association and behavior are illustrative; not representative-eligible."
       }
     },
     "macrauchenia-patachonica": {
@@ -523,6 +543,26 @@
         "reviewBatch": "2026-08-24-cenozoic-famous-life-expansion-v1",
         "reviewedAt": "2026-08-24",
         "claimBoundary": "Broad habitat context only; the distant herbivore is not count-level evidence and no prey relationship is asserted."
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/varanus-priscus-low-frontthreequarter-diprotodontid-context-ecology-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "One focal monitor retains four limbs and a continuous long tail; the distant herbivore is non-contacting.",
+        "reviewMethod": "Original-size limb, toe, tail, separation and crop audit",
+        "reviewBatch": "2026-08-31-three-slot-five-gallery-enrichment-v1",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "Behavior and ecological association are illustrative; not representative-eligible."
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/varanus-priscus-high-rearthreequarter-waterhole-bird-context-ecology-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "One focal monitor retains four limbs and a continuous tail with tail tip inside frame; waterbirds remain well separated.",
+        "reviewMethod": "Original-size four-limb, toe, tail-tip, background-separation, crop and artifact audit",
+        "reviewBatch": "2026-08-31-three-slot-five-gallery-enrichment-v1",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "Waterbird response and exact waterhole community are illustrative; not representative-eligible."
       }
     },
     "arthropleura-armata": {
@@ -1240,6 +1280,26 @@
         "reviewMethod": "Original-size shell, animal-count, habitat, co-occurrence-boundary, crop, and artifact audit",
         "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
         "reviewedAt": "2026-08-07T10:11:42.734Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/asteroceras-obtusum-faceon-ribbed-shelf-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "One complete rounded planispiral shell retains one center, one aperture and continuous radial ribs to the outer rim.",
+        "reviewMethod": "Original-size single-center, aperture, rib-continuity, crop and artifact audit",
+        "reviewBatch": "2026-08-31-three-slot-five-gallery-enrichment-v1",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "Soft body, color and posture are illustrative; not representative-eligible."
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/asteroceras-obtusum-leftthreequarter-rise-fish-context-ecology-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "One focal shell retains a single planispiral center, aperture and radial ribs; distant fish silhouettes remain separated.",
+        "reviewMethod": "Original-size single-center, aperture, rib, separation, crop and artifact audit",
+        "reviewBatch": "2026-08-31-three-slot-five-gallery-enrichment-v1",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "Fish, association and rising posture are illustrative; not representative-eligible."
       }
     },
     "passaloteuthis-bisulcata": {

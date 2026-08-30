@@ -287,6 +287,24 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "late-pleistocene-eurasian-open-parkland",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/megaloceros-giganteus-low-rearthreequarter-mineral-lick-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "claimBoundary": "Mineral-lick behavior, weather and all colors are illustrative; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-eurasian-wet-parkland",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/megaloceros-giganteus-high-frontthreequarter-river-mammoth-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "claimBoundary": "Mammoth family, association and behavior are illustrative; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-eurasian-river-parkland",
+      "expectedKind": "anatomy review"
     }
   ],
   "macrauchenia-patachonica": [
@@ -348,6 +366,24 @@ window.gallerySlotAssignments = {
       "claimBoundary": "Broad habitat context only; the distant herbivore is not count-level evidence and no prey relationship is asserted.",
       "phenotype": "canonical-a",
       "habitatKey": "pleistocene-eastern-australian-open-woodland",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/varanus-priscus-low-frontthreequarter-diprotodontid-context-ecology-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "claimBoundary": "Behavior and ecological association are illustrative; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "pleistocene-australian-open-woodland-context",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/varanus-priscus-high-rearthreequarter-waterhole-bird-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "claimBoundary": "Waterbird response and exact waterhole community are illustrative; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "pleistocene-australian-waterhole-bird-context",
       "expectedKind": "anatomy review"
     }
   ],
@@ -999,6 +1035,24 @@ window.gallerySlotAssignments = {
       "galleryRole": "habitat-ecology",
       "phenotype": "canonical-a",
       "habitatKey": "early-jurassic-crinoid-shelf",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/asteroceras-obtusum-faceon-ribbed-shelf-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "claimBoundary": "Soft body, color and posture are illustrative; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "early-jurassic-sunlit-shelf",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/asteroceras-obtusum-leftthreequarter-rise-fish-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "claimBoundary": "Fish, association and rising posture are illustrative; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "early-jurassic-open-water-column",
       "expectedKind": "anatomy review"
     }
   ],

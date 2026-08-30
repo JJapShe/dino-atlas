@@ -84,6 +84,54 @@
       "workflow": "OpenAI built-in image generation; original-size saber, limb, tail and separation review",
       "sources": ["Florida Museum Smilodon fatalis", "McHenry et al. 2007"],
       "review": "accepted anatomy review; non-representative; behavior and association illustrative"
+    },
+    "varanus-priscus-s4": {
+      "asset": "assets/dinosaurs/varanus-priscus-low-frontthreequarter-diprotodontid-context-ecology-imagegen-v2.png",
+      "promptSummary": "Low front-three-quarter open woodland reference; four limbs and one continuous tail; distant diprotodontid is non-contact context.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size limb, tail and separation review",
+      "sources": ["Australian Museum Megalania", "Australian Museum Prehistoric Australia"],
+      "review": "accepted anatomy review; non-representative; background association illustrative"
+    },
+    "varanus-priscus-s5": {
+      "asset": "assets/dinosaurs/varanus-priscus-high-rearthreequarter-waterhole-bird-context-ecology-imagegen-v2.png",
+      "promptSummary": "High rear-three-quarter waterhole reference; four limbs and full tail remain visible; distant waterbirds are separated context.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size four-limb, tail-tip, separation and crop review",
+      "sources": ["Australian Museum Megalania", "Australian Museum Prehistoric Australia"],
+      "review": "accepted anatomy review; non-representative; waterbird response and association illustrative"
+    },
+    "megaloceros-giganteus-s4": {
+      "asset": "assets/dinosaurs/megaloceros-giganteus-low-rearthreequarter-mineral-lick-anatomy-imagegen-v2.png",
+      "promptSummary": "Low rear-three-quarter wet parkland reference with one complete palmated-antler male, four limbs, hooves and short tail.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size antler-pair, limb, hoof, tail and crop review",
+      "sources": ["Natural History Museum Irish elk", "Lister 1994"],
+      "review": "accepted anatomy review; non-representative; mineral-lick behavior and weather illustrative"
+    },
+    "megaloceros-giganteus-s5": {
+      "asset": "assets/dinosaurs/megaloceros-giganteus-high-frontthreequarter-river-mammoth-context-ecology-imagegen-v2.png",
+      "promptSummary": "High front-three-quarter river-parkland reference with full palmated antler pair and a distant separated mammoth family.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size antler-pair, limb, hoof, tail, separation and crop review",
+      "sources": ["Natural History Museum Irish elk", "Lister 1994"],
+      "review": "accepted anatomy review; non-representative; mammoth association and behavior illustrative"
+    },
+    "asteroceras-obtusum-s4": {
+      "asset": "assets/dinosaurs/asteroceras-obtusum-faceon-ribbed-shelf-anatomy-imagegen-v2.png",
+      "promptSummary": "Near-face-on shallow-shelf shell reference with one planispiral center, one aperture and continuous radial ribs.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size single-center, aperture, rib-continuity and crop review",
+      "sources": ["British Geological Survey ammonites guide", "Oxford University Museum specimen J.01194"],
+      "review": "accepted anatomy review; non-representative; soft body, color and posture illustrative"
+    },
+    "asteroceras-obtusum-s5": {
+      "asset": "assets/dinosaurs/asteroceras-obtusum-leftthreequarter-rise-fish-context-ecology-imagegen-v2.png",
+      "promptSummary": "Left-three-quarter water-column rise with one complete ribbed planispiral shell and distant separated anonymous fish context.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size single-center, aperture, rib, separation and crop review",
+      "sources": ["British Geological Survey ammonites guide", "Oxford University Museum specimen J.01194"],
+      "review": "accepted anatomy review; non-representative; fish and rising behavior illustrative"
     }
   },
   "rejected": {}
