@@ -1392,6 +1392,24 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "early-triassic-postflood-horsetail",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/lystrosaurus-murrayi-low-front-tuskpair-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "claimBoundary": "Skin, color and posture reconstructed; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "early-triassic-redbed-plain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/lystrosaurus-murrayi-river-dicynodont-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "claimBoundary": "Distant animal and behavior illustrative non-contact context; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "early-triassic-channel-context",
+      "expectedKind": "anatomy review"
     }
   ],
   "cynognathus-crateronotus": [
