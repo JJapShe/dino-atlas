@@ -148,6 +148,38 @@
       "workflow": "OpenAI built-in image generation; original-size trunk, two-tusk, limb, foot, tail, separation and crop review",
       "sources": ["National Park Service American Mastodon", "Natural History Museum mastodon overview"],
       "review": "accepted anatomy review; non-representative; bison association and behavior illustrative"
+    },
+    "meganeuropsis-permiana-s4": {
+      "asset": "assets/dinosaurs/meganeuropsis-permiana-perched-horsetail-fourwing-anatomy-imagegen-v2.png",
+      "promptSummary": "Perched griffinfly reference with two forewings, two hindwings, six legs and one continuous abdomen against horsetails.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size wing-pair, leg-count, abdomen and crop review",
+      "sources": ["Smithsonian National Museum of Natural History Meganeura", "National Park Service Permian insects"],
+      "review": "accepted anatomy review; non-representative; pose, color and plants illustrative"
+    },
+    "meganeuropsis-permiana-s5": {
+      "asset": "assets/dinosaurs/meganeuropsis-permiana-high-flight-wetland-amphibian-context-ecology-imagegen-v2.png",
+      "promptSummary": "High flight wetland scene preserving two forewings, two hindwings, six legs and a distant separated amphibian context.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size wing-pair, leg-count, abdomen, separation and crop review",
+      "sources": ["Smithsonian National Museum of Natural History Meganeura", "National Park Service Permian insects"],
+      "review": "accepted anatomy review; non-representative; amphibian association and behavior illustrative"
+    },
+    "jaekelopterus-rhenaniae-s4": {
+      "asset": "assets/dinosaurs/jaekelopterus-rhenaniae-high-rear-paddle-tailplate-anatomy-imagegen-v2.png",
+      "promptSummary": "High rear oblique Early Devonian channel reference with one cheliceral-claw pair, four walking-leg pairs, one paddle pair and broad tail plate.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size chelicera, leg-row, paddle, tail-plate and crop review",
+      "sources": ["Braddy et al. 2008 Jaekelopterus", "Museum fur Naturkunde eurypterid overview"],
+      "review": "accepted anatomy review; non-representative; color, pose and channel reconstruction illustrative"
+    },
+    "jaekelopterus-rhenaniae-s5": {
+      "asset": "assets/dinosaurs/jaekelopterus-rhenaniae-side-channel-armoredfish-context-ecology-imagegen-v2.png",
+      "promptSummary": "Side-channel ecology reference with readable chelicerae, appendage plan, paddle and tail plate; distant armored fish remains non-contact context.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size chelicera, paddle, tail-plate, separation and crop review",
+      "sources": ["Braddy et al. 2008 Jaekelopterus", "Museum fur Naturkunde eurypterid overview"],
+      "review": "accepted anatomy review; non-representative; fish identity, association and behavior illustrative"
     }
   },
   "rejected": {}

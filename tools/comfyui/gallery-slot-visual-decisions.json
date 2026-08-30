@@ -423,6 +423,26 @@
         "reviewBatch": "2026-08-24-paleozoic-famous-life-expansion-v1",
         "reviewedAt": "2026-08-24",
         "claimBoundary": "Ecology context only; fish identity, submerged wood, water and behavior are hypothetical and the slot is not representative-eligible."
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/jaekelopterus-rhenaniae-high-rear-paddle-tailplate-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "One focal pterygotid retains a single cheliceral-claw pair, four walking-leg pairs, one rear swimming-paddle pair and a broad tail plate in a distinct high rear view.",
+        "reviewMethod": "Original-size chelicera, walking-leg, paddle, telson, body-continuity, crop, text and watermark audit",
+        "reviewBatch": "2026-08-31-three-slot-five-gallery-enrichment-v1",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "Exact appendage perspective, color, posture and river setting are reconstructed; not representative-eligible."
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/jaekelopterus-rhenaniae-side-channel-armoredfish-context-ecology-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "The focal pterygotid retains its cheliceral-claw pair, appendage plan, paddle and tail plate while a distant armored fish remains spatially separated.",
+        "reviewMethod": "Original-size focal appendage, paddle, telson, background-separation, crop, text and watermark audit",
+        "reviewBatch": "2026-08-31-three-slot-five-gallery-enrichment-v1",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "Fish identity, association and behavior are illustrative non-contact context; not representative-eligible."
       }
     },
     "megaloceros-giganteus": {

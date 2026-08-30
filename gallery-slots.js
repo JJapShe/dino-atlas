@@ -274,6 +274,24 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "early-devonian-river-channel-ecology",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/jaekelopterus-rhenaniae-high-rear-paddle-tailplate-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "claimBoundary": "Exact appendage perspective, color, posture and river setting are reconstructed; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "early-devonian-gravel-channel",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/jaekelopterus-rhenaniae-side-channel-armoredfish-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "claimBoundary": "Fish identity, association and behavior are illustrative non-contact context; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "early-devonian-armoredfish-channel-context",
+      "expectedKind": "anatomy review"
     }
   ],
   "megaloceros-giganteus": [

@@ -220,8 +220,8 @@ const dinosaurs = [
     sizeLabel: "최대 몸길이 추정",
     sizeDisplay: "거대 집게 비례로 약 2.5 m 추정",
     knowledgeLevel: 2,
-    imageSlots: 3,
-    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 고생대 전용",
+    imageSlots: 5,
+    reviewStatus: "5장 갤러리 · S1 count-level pass · S2 review hold · S3 habitat ecology · S4·S5 anatomy review · 고생대 전용",
     summary:
       "야이켈롭테루스는 전기 데본기의 거대한 프테리고투스류 바다전갈입니다. 앞쪽의 큰 집게와 가느다란 보행다리, 한 쌍의 수영 패들, 방향을 잡는 넓은 꼬리판을 지녔습니다. 약 2.5 m라는 최대치는 46 cm짜리 집게 화석을 가까운 친척의 비율과 비교한 추정치입니다.",
     features: {
@@ -6634,6 +6634,16 @@ const generatedImageSamples = {
       anatomyEvidenceBoundary: "focal gross anatomy is readable; distant fish identity, behavior and environmental details remain hypothetical",
       metadataRecord: "tools/comfyui/paleozoic-famous-life-expansion-20260824.json",
       representativeEligible: false,
+    },
+    {
+      kind: "anatomy review", title: "야이켈롭테루스 높은 후방 사선 수영 패들·꼬리판",
+      body: "전기 데본기 자갈 수로의 높은 후방 사선 구조 참조입니다. 큰 협각 한 쌍, 가느다란 보행다리 네 쌍, 뒤쪽 수영 패들 한 쌍과 넓은 꼬리판이 한 몸에 이어집니다.",
+      source: "assets/dinosaurs/jaekelopterus-rhenaniae-high-rear-paddle-tailplate-anatomy-imagegen-v2.png", variant: "높은 후방 사선 수영 패들 꼬리판 구조 참조 이미지 생성 v2", src: "assets/dinosaurs/jaekelopterus-rhenaniae-high-rear-paddle-tailplate-anatomy-imagegen-v2.png", gallerySlot: 4, galleryRole: "identity-anatomy", phenotype: "river-slate-d", habitatKey: "early-devonian-gravel-channel", sourceAttribution: "OpenAI built-in image generation; pterygotid morphology studies supplied constraints only", licenseRecord: "Generated project asset; no external artwork, named-artist style, logo or watermark was used", generationPromptRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/jaekelopterus-rhenaniae-s4", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image generation; original-size chelicera, leg-row, paddle, tail-plate and crop review", reviewStatus: "원본 크기 anatomy-review 수용 · 협각/보행지 4쌍/패들 1쌍/꼬리판 판독 · 색·자세 가설 · 대표 승격 금지", locality: "broad Early Devonian river-channel reconstruction", anatomyEvidenceBoundary: "focal gross appendage plan is readable; exact leg count in perspective and color remain reconstructed", colorEvidence: "all colors are hypothetical", metadataRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json", representativeEligible: false,
+    },
+    {
+      kind: "anatomy review", title: "야이켈롭테루스와 먼 갑주어의 수로 생태",
+      body: "넓은 전기 데본기 수로를 지나는 한 야이켈롭테루스와 먼 갑주어 실루엣의 비접촉 맥락입니다. 큰 협각, 보행다리·수영 패들·꼬리판을 비교하며 직접 포식 행동은 뜻하지 않습니다.",
+      source: "assets/dinosaurs/jaekelopterus-rhenaniae-side-channel-armoredfish-context-ecology-imagegen-v2.png", variant: "측면 수로 먼 갑주어 비접촉 생태 이미지 생성 v2", src: "assets/dinosaurs/jaekelopterus-rhenaniae-side-channel-armoredfish-context-ecology-imagegen-v2.png", gallerySlot: 5, galleryRole: "interaction", phenotype: "teal-channel-e", habitatKey: "early-devonian-armoredfish-channel-context", sourceAttribution: "OpenAI built-in image generation; pterygotid morphology and Early Devonian context studies supplied constraints only", licenseRecord: "Generated project asset; no external artwork, named-artist style, logo or watermark was used", generationPromptRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/jaekelopterus-rhenaniae-s5", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image generation; original-size chelicera, paddle, tail-plate, separation and crop review", reviewStatus: "원본 크기 anatomy-review 수용 · 협각/보행지/패들/꼬리판 판독 · 먼 갑주어·행동은 삽화 · 대표 승격 금지", locality: "broad Early Devonian river-channel reconstruction", behaviorEvidence: "distant fish is illustrative non-contact context; no pursuit or predation is asserted", anatomyEvidenceBoundary: "focal appendage plan is readable; distant fish is not count-level evidence", colorEvidence: "all colors are hypothetical", metadataRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json", representativeEligible: false,
     },
   ],
   "megaloceros-giganteus": [
