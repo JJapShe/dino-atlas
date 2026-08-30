@@ -68,6 +68,22 @@
       "workflow": "OpenAI built-in image generation; original-size identity and composition review",
       "sources": ["Natural History Museum Archaeopteryx", "Foth et al. 2014"],
       "review": "accepted anatomy review; non-representative; flight performance remains uncertain"
+    },
+    "otodus-megalodon-s4": {
+      "asset": "assets/dinosaurs/otodus-megalodon-two-dorsal-high-rear-oblique-ecology-imagegen-v2.png",
+      "promptSummary": "High rear-three-quarter Neogene open-ocean reference with the large first and small second dorsal fin separately visible; distant whale is non-contact context.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size two-dorsal and full-frame review",
+      "sources": ["Smithsonian Ocean Megalodon", "Shimada et al. 2025"],
+      "review": "accepted anatomy review; non-representative; all complete-body proportions remain provisional"
+    },
+    "smilodon-fatalis-s4": {
+      "asset": "assets/dinosaurs/smilodon-fatalis-low-frontthreequarter-bison-context-ecology-imagegen-v2.png",
+      "promptSummary": "Low front-three-quarter wet-woodland walk with two upper sabers, robust forequarters and short tail; distant bovid is non-contact context.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size saber, limb, tail and separation review",
+      "sources": ["Florida Museum Smilodon fatalis", "McHenry et al. 2007"],
+      "review": "accepted anatomy review; non-representative; behavior and association illustrative"
     }
   },
   "rejected": {}

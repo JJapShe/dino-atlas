@@ -637,6 +637,15 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "late-pleistocene-dry-wash-open-woodland",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/smilodon-fatalis-low-frontthreequarter-bison-context-ecology-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "claimBoundary": "Behavior and ecological association are illustrative; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "pleistocene-rain-woodland-context",
+      "expectedKind": "anatomy review"
     }
   ],
   "mammut-americanum": [
@@ -855,6 +864,15 @@ window.gallerySlotAssignments = {
       "claimBoundary": "The scene proves no attack, prey preference, exact individual size relation, locality, or coexistence event.",
       "phenotype": "canonical-a",
       "habitatKey": "neogene-distant-whale-open-ocean",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/otodus-megalodon-two-dorsal-high-rear-oblique-ecology-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "claimBoundary": "Body model and ecological background remain provisional; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "neogene-open-ocean-two-dorsal",
       "expectedKind": "anatomy review"
     }
   ],

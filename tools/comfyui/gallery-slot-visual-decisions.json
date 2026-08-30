@@ -840,7 +840,8 @@
         "reviewMethod": "Original-size foreground-cat and distant-bovid count, non-contact separation, upper-saber, four-limb, four-paw, short-tail, habitat, behavior-boundary, crop, and artifact audit",
         "reviewBatch": "2026-08-08-cenozoic-life-phase-a1",
         "reviewedAt": "2026-08-07T16:22:10.000Z"
-      }
+      },
+      "4": { "status": "approved", "source": "assets/dinosaurs/smilodon-fatalis-low-frontthreequarter-bison-context-ecology-imagegen-v2.png", "role": "identity-anatomy", "reason": "Upper saber pair, robust forequarters, four limbs and short tail are readable; distant bovid is non-contacting.", "reviewMethod": "Original-size saber, limb, tail, background separation and crop audit", "reviewBatch": "2026-08-30-three-slot-ecology-interaction-enrichment-v2", "reviewedAt": "2026-08-30", "claimBoundary": "Behavior and ecological association are illustrative; not representative-eligible." }
     },
     "mammut-americanum": {
       "1": {
@@ -1096,7 +1097,8 @@
         "reviewedAt": "2026-08-10T00:45:00.000Z",
         "gallerySubrole": "gallery-only non-contact shark-whale context",
         "claimBoundary": "The scene proves no attack, prey preference, exact individual size relation, locality, or coexistence event."
-      }
+      },
+      "4": { "status": "approved", "source": "assets/dinosaurs/otodus-megalodon-two-dorsal-high-rear-oblique-ecology-imagegen-v2.png", "role": "identity-anatomy", "reason": "Both dorsal fins are separately readable at original size.", "reviewMethod": "Original-size two-dorsal, fin, tail, crop and artifact audit", "reviewBatch": "2026-08-30-three-slot-ecology-interaction-enrichment-v2", "reviewedAt": "2026-08-30", "claimBoundary": "Body model and ecological background remain provisional; not representative-eligible." }
     },
     "coelodonta-antiquitatis": {
       "1": {

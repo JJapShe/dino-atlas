@@ -591,8 +591,8 @@ const dinosaurs = [
     sizeLabel: "몸길이",
     sizeDisplay: "약 1.5~1.8 m(표본별 차이)",
     knowledgeLevel: 1,
-    imageSlots: 3,
-    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 신생대 전용",
+    imageSlots: 4,
+    reviewStatus: "4장 갤러리 · S1 count-level pass · S2 review hold · S3 habitat ecology · S4 anatomy review · 신생대 전용",
     summary:
       "스밀로돈은 공룡이 사라진 뒤 플라이스토세 아메리카에 살았던 검치고양이입니다. 현생 호랑이 그 자체가 아니며, 위턱의 길고 납작한 송곳니 한 쌍과 깊은 가슴, 굵은 목, 강건한 앞다리, 짧은 꼬리가 특징입니다. 털색과 무늬, 단독 또는 무리 생활 여부는 아직 확실하지 않습니다.",
     features: {
@@ -837,8 +837,8 @@ const dinosaurs = [
     sizeLabel: "전체길이 추정",
     sizeDisplay: "연구별로 대형 성체 약 15 m 안팎; 최대 약 24.3 m는 잠정 추정",
     knowledgeLevel: 1,
-    imageSlots: 3,
-    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 2025 장신형 비교복원 잠정 적용",
+    imageSlots: 4,
+    reviewStatus: "4장 갤러리 · S1 count-level pass · S2 review hold · S3 habitat ecology · S4 anatomy review · 2025 장신형 비교복원 잠정 적용",
     summary:
       "메갈로돈은 신진기 바다에 살았던 거대한 악상어목 오토두스과 상어입니다. 넓고 두꺼우며 가장자리에 잔 톱니가 난 삼각형 이빨과 큰 척추 중심체가 주된 화석 증거입니다. 완전한 골격이 없어 몸은 확정되지 않았으며, 화면은 백상아리 복제 대신 2025년 제안된 더 길고 유선형인 잠정 비교복원을 사용합니다.",
     features: {
@@ -7549,6 +7549,7 @@ const generatedImageSamples = {
       metadataRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json",
       representativeEligible: false,
     },
+    { kind: "anatomy review", title: "메갈로돈 두 등지느러미 높은 사선 바다", body: "큰 제1·작은 제2 등지느러미가 모두 보이는 장신형 비교복원 생태 참조입니다. 먼 고래는 비접촉 환경 맥락입니다.", source: "assets/dinosaurs/otodus-megalodon-two-dorsal-high-rear-oblique-ecology-imagegen-v2.png", variant: "두 등지느러미 높은 후방 사선 비접촉 생태 이미지 생성 v2", src: "assets/dinosaurs/otodus-megalodon-two-dorsal-high-rear-oblique-ecology-imagegen-v2.png", gallerySlot: 4, galleryRole: "identity-anatomy", phenotype: "slate-blue-d", habitatKey: "neogene-open-ocean-two-dorsal", sourceAttribution: "OpenAI built-in image generation; fossil and 2025 comparative sources constrained anatomy only", licenseRecord: "Generated project asset; no external artwork used", generationPromptRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/otodus-megalodon-s4", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image generation; original-size two-dorsal review", reviewStatus: "원본 크기 anatomy-review 수용 · 큰 제1·작은 제2 등지느러미 판독 · 대표 승격 금지", locality: "broad Neogene ocean reconstruction", anatomyEvidenceBoundary: "body and fin proportions remain provisional comparative reconstruction", colorEvidence: "all colors hypothetical", metadataRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json", representativeEligible: false },
   ],
   "coelodonta-antiquitatis": [
     {
@@ -8073,6 +8074,7 @@ const generatedImageSamples = {
       metadataRecord: "tools/comfyui/cenozoic-life-expansion-20260808-phase-a1.json",
       representativeEligible: false,
     },
+    { kind: "anatomy review", title: "스밀로돈 비 뒤 숲과 먼 들소", body: "강건한 앞부분과 위턱 검치 한 쌍을 읽는 낮은 전방 사선 생태 참조입니다. 먼 초식동물은 비접촉 맥락입니다.", source: "assets/dinosaurs/smilodon-fatalis-low-frontthreequarter-bison-context-ecology-imagegen-v2.png", variant: "낮은 전방 사선 먼 들소 비접촉 생태 이미지 생성 v2", src: "assets/dinosaurs/smilodon-fatalis-low-frontthreequarter-bison-context-ecology-imagegen-v2.png", gallerySlot: 4, galleryRole: "identity-anatomy", phenotype: "rain-tawny-d", habitatKey: "pleistocene-rain-woodland-context", sourceAttribution: "OpenAI built-in image generation; museum sources constrained anatomy only", licenseRecord: "Generated project asset; no external artwork used", generationPromptRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/smilodon-fatalis-s4", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image generation; original-size saber, limb and tail review", reviewStatus: "원본 크기 anatomy-review 수용 · 검치 두 개/네 다리·짧은 꼬리 판독 · 대표 승격 금지", locality: "broad Late Pleistocene woodland reconstruction", anatomyEvidenceBoundary: "coat, behavior and background animal reconstructed", colorEvidence: "all colors hypothetical", metadataRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json", representativeEligible: false },
   ],
   "dimetrodon-grandis": [
     {
