@@ -1063,7 +1063,9 @@
         "reviewedAt": "2026-08-07T19:06:34.925Z",
         "gallerySubrole": "gallery-only non-contact coexistence reference",
         "claimBoundary": "Both genera occurred in Pleistocene South America, but this exact locality, spacing, shared moment, and behavior remain hypothetical."
-      }
+      },
+      "4": {"status":"approved","source":"assets/dinosaurs/glyptodon-reticulatus-low-rear-rosette-tail-anatomy-imagegen-v2.png","role":"identity-anatomy","reason":"Focal glyptodont retains rigid rosette carapace, four stout limbs and non-clubbed ringed tail.","reviewMethod":"Original-size anatomy audit","reviewBatch":"2026-08-31-three-slot-five-gallery-enrichment-v1","reviewedAt":"2026-08-31","claimBoundary":"Genus-level anatomy only; posture and color reconstructed; not representative-eligible."},
+      "5": {"status":"approved","source":"assets/dinosaurs/glyptodon-reticulatus-river-macrauchenia-context-ecology-imagegen-v2.png","role":"interaction","reason":"Focal glyptodont remains complete; distant Macrauchenia is river-separated.","reviewMethod":"Original-size focal anatomy and separation audit","reviewBatch":"2026-08-31-three-slot-five-gallery-enrichment-v1","reviewedAt":"2026-08-31","claimBoundary":"Distant animal and behavior illustrative non-contact context; not representative-eligible."}
     },
     "anomalocaris-canadensis": {
       "1": {

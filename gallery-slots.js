@@ -920,6 +920,24 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "late-pleistocene-pampas-glyptodon-megatherium",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/glyptodon-reticulatus-low-rear-rosette-tail-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "claimBoundary": "Genus-level anatomy only; posture and color reconstructed; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-south-american-scrub",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/glyptodon-reticulatus-river-macrauchenia-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "claimBoundary": "Distant animal and behavior illustrative non-contact context; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-south-american-river-context",
+      "expectedKind": "anatomy review"
     }
   ],
   "anomalocaris-canadensis": [
