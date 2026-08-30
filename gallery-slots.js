@@ -30,6 +30,24 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "early-permian-mosaic-pools",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/meganeuropsis-permiana-perched-horsetail-fourwing-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "claimBoundary": "Venation, color and vegetation are illustrative; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "early-permian-horsetail-wetland",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/meganeuropsis-permiana-high-flight-wetland-amphibian-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "claimBoundary": "Amphibian, flight moment and association are illustrative; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "early-permian-pool-amphibian-context",
+      "expectedKind": "anatomy review"
     }
   ],
   "helicoprion-davisii": [

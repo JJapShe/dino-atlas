@@ -173,7 +173,9 @@
         "reviewBatch": "2026-08-26-paleozoic-cenozoic-insect-expansion-v1",
         "reviewedAt": "2026-08-26",
         "claimBoundary": "Ecology is illustrative and not representative-eligible."
-      }
+      },
+      "4": { "status": "approved", "source": "assets/dinosaurs/meganeuropsis-permiana-perched-horsetail-fourwing-anatomy-imagegen-v2.png", "role": "identity-anatomy", "reason": "One focal griffinfly retains four separate wings, six thoracic legs and one long segmented abdomen.", "reviewMethod": "Original-size four-wing, six-leg, abdomen and crop audit", "reviewBatch": "2026-08-31-three-slot-five-gallery-enrichment-v1", "reviewedAt": "2026-08-31", "claimBoundary": "Venation, color and vegetation are illustrative; not representative-eligible." },
+      "5": { "status": "approved", "source": "assets/dinosaurs/meganeuropsis-permiana-high-flight-wetland-amphibian-context-ecology-imagegen-v2.png", "role": "interaction", "reason": "One focal griffinfly retains four wings, six legs and a long abdomen; distant amphibian remains separated.", "reviewMethod": "Original-size four-wing, six-leg, separation and crop audit", "reviewBatch": "2026-08-31-three-slot-five-gallery-enrichment-v1", "reviewedAt": "2026-08-31", "claimBoundary": "Amphibian, flight moment and association are illustrative; not representative-eligible." }
     },
     "helicoprion-davisii": {
       "1": {

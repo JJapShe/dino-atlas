@@ -16,8 +16,8 @@ const dinosaurs = [
     sizeLabel: "최대 날개폭 추정",
     sizeDisplay: "약 71 cm",
     knowledgeLevel: 2,
-    imageSlots: 3,
-    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 고생대 전용",
+    imageSlots: 5,
+    reviewStatus: "5장 갤러리 · S1 count-level pass · S2 review hold · S3 habitat ecology · S4·S5 anatomy review · 고생대 전용",
     summary:
       "메가뉴롭시스는 전기 페름기의 거대한 그리핀플라이입니다. 알려진 가장 큰 곤충 후보 가운데 하나로, 날개폭은 약 71 cm로 추정됩니다. 현대 잠자리와 닮았지만 같은 무리를 그대로 크게 만든 동물은 아니며, 네 장의 날개와 여섯 다리, 긴 마디 배를 기준으로 복원합니다.",
     features: {
@@ -6290,6 +6290,18 @@ const generatedImageSamples = {
       generationPromptRecord: "tools/comfyui/paleozoic-cenozoic-insect-expansion-20260826.json#records/meganeuropsis-permiana-ecology-v1", generationSeed: "service-assigned, not exposed",
       generationWorkflow: "OpenAI image_gen ecology composition; focal anatomy and non-contact review", reviewStatus: "원본 크기 anatomy-review 수용 · 초점 개체 전신 판독 · 식생/군집/행동 가설 · 대표 승격 금지",
       locality: "generalized early Permian wetland", anatomyEvidenceBoundary: "focal body plan is readable; background taxa and exact ecology are hypothetical", metadataRecord: "tools/comfyui/paleozoic-cenozoic-insect-expansion-20260826.json", representativeEligible: false,
+    },
+    {
+      kind: "anatomy review", title: "메가뉴롭시스 말꼬리식물 위 네 날개 구조",
+      body: "전기 페름기 습지의 말꼬리식물 줄기에 앉은 한 메가뉴롭시스입니다. 가슴에서 따로 이어지는 네 날개, 여섯 다리와 긴 마디 배를 비교하는 구조 참조이며, 날개맥·색·정확한 식생은 복원입니다.",
+      source: "assets/dinosaurs/meganeuropsis-permiana-perched-horsetail-fourwing-anatomy-imagegen-v2.png", variant: "말꼬리식물 위 낮은 사선 네 날개 구조 참조 이미지 생성 v2", src: "assets/dinosaurs/meganeuropsis-permiana-perched-horsetail-fourwing-anatomy-imagegen-v2.png", gallerySlot: 4, galleryRole: "identity-anatomy", phenotype: "pale-reed-d", habitatKey: "early-permian-horsetail-wetland",
+      sourceAttribution: "OpenAI built-in image generation; Smithsonian and NPS sources supplied griffinfly constraints only", licenseRecord: "Generated project asset; no external artwork, named-artist style, logo or watermark was used", generationPromptRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/meganeuropsis-permiana-s4", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image generation; original-size four-wing, six-leg, abdomen and crop review", reviewStatus: "원본 크기 anatomy-review 수용 · 네 날개/여섯 다리/긴 마디 배 판독 · 날개맥·색·식생 가설 · 대표 승격 금지", locality: "broad early Permian wetland reconstruction", anatomyEvidenceBoundary: "four wings, six legs and segmented abdomen are readable; exact venation and color remain reconstructed", colorEvidence: "all colors are hypothetical", metadataRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json", representativeEligible: false,
+    },
+    {
+      kind: "anatomy review", title: "메가뉴롭시스와 먼 양서류의 페름기 습지 비행",
+      body: "한 메가뉴롭시스가 물웅덩이 위를 낮게 비행하고, 먼 둑의 작은 양서류는 분리된 환경 맥락인 장면입니다. 네 날개·여섯 다리·긴 마디 배를 비교하며 직접 상호작용이나 사냥 장면은 뜻하지 않습니다.",
+      source: "assets/dinosaurs/meganeuropsis-permiana-high-flight-wetland-amphibian-context-ecology-imagegen-v2.png", variant: "높은 사선 습지 비행 먼 양서류 비접촉 생태 이미지 생성 v2", src: "assets/dinosaurs/meganeuropsis-permiana-high-flight-wetland-amphibian-context-ecology-imagegen-v2.png", gallerySlot: 5, galleryRole: "interaction", phenotype: "bronze-pool-e", habitatKey: "early-permian-pool-amphibian-context",
+      sourceAttribution: "OpenAI built-in image generation; Smithsonian and NPS sources supplied griffinfly constraints only", licenseRecord: "Generated project asset; no external artwork, named-artist style, logo or watermark was used", generationPromptRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/meganeuropsis-permiana-s5", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image generation; original-size four-wing, six-leg, separation and crop review", reviewStatus: "원본 크기 anatomy-review 수용 · 네 날개/여섯 다리/긴 마디 배 판독 · 먼 양서류·행동은 삽화 · 대표 승격 금지", locality: "broad early Permian wetland reconstruction", behaviorEvidence: "the distant amphibian is illustrative non-contact context; no pursuit or interaction is asserted", anatomyEvidenceBoundary: "the focal griffinfly retains four wings and six legs; the distant animal is not count-level evidence", colorEvidence: "all colors are hypothetical", metadataRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json", representativeEligible: false,
     },
   ],
   "helicoprion-davisii": [
