@@ -1476,6 +1476,26 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "triassic-storm-channel",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/cynognathus-crateronotus-low-front-canine-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only low front three-quarter dentition and limb comparison",
+      "claimBoundary": "Skull and dentition cues are fossil-led; integument, color, complete feet and posture are reconstructed and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "triassic-burgersdorp-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/cynognathus-crateronotus-river-amphibian-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "gallerySubrole": "gallery-only dusk river context with distant unnamed amphibians",
+      "claimBoundary": "Focal identity cues are fossil-led; background association, behavior, color and posture are illustrative and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "triassic-braided-river-context",
+      "expectedKind": "anatomy review"
     }
   ],
   "repenomamus-robustus": [

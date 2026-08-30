@@ -1487,6 +1487,28 @@
         "reviewMethod": "Original-size skull silhouette, limb, foot, tail, habitat, behavior-boundary, crop, and artifact audit",
         "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
         "reviewedAt": "2026-08-07T10:11:42.734Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/cynognathus-crateronotus-low-front-canine-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "subrole": "gallery-only low front three-quarter dentition and limb comparison",
+        "reason": "Long low skull, differentiated canine and postcanine cues, four sturdy limbs and one long tail remain readable without modern-dog facial drift.",
+        "reviewMethod": "Original-size skull, dentition, bilateral limb, foot, tail, modern-mammal-drift, crop, text and watermark audit",
+        "reviewBatch": "2026-08-31-three-slot-ecology-enrichment-v2",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "Skull and dentition cues are fossil-led; integument, color, complete feet and posture are reconstructed and not representative-eligible."
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/cynognathus-crateronotus-river-amphibian-context-ecology-imagegen-v2.png",
+        "role": "habitat-ecology",
+        "subrole": "gallery-only dusk river context with distant unnamed amphibians",
+        "reason": "Focal long skull, limbs and tail remain readable; distant background silhouettes are water-separated, unnamed environmental context.",
+        "reviewMethod": "Original-size focal anatomy, background separation, crop, text and watermark audit",
+        "reviewBatch": "2026-08-31-three-slot-ecology-enrichment-v2",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "Focal identity cues are fossil-led; background association, behavior, color and posture are illustrative and not representative-eligible."
       }
     },
     "repenomamus-robustus": {
