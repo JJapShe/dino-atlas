@@ -683,6 +683,24 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "oligocene-central-asian-open-woodland",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/paraceratherium-transouralicum-high-rear-browse-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "claimBoundary": "Soft tissue, color and posture reconstructed; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "oligocene-central-asian-alluvial-plain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/paraceratherium-transouralicum-river-rhinocerotoid-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "claimBoundary": "Distant animal and behavior illustrative non-contact context; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "oligocene-central-asian-river-context",
+      "expectedKind": "anatomy review"
     }
   ],
   "mammuthus-primigenius": [

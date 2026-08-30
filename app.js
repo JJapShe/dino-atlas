@@ -522,8 +522,8 @@ const dinosaurs = [
     sizeLabel: "몸길이·어깨높이",
     sizeDisplay: "몸길이 약 7~8 m · 어깨높이 약 4~5 m 추정",
     knowledgeLevel: 2,
-    imageSlots: 3,
-    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 신생대 전용",
+    imageSlots: 5,
+    reviewStatus: "5장 갤러리 · S1 count-level pass · S2 review hold · S3 habitat ecology · S4·S5 anatomy review · 신생대 전용",
     summary:
       "파라케라테리움은 올리고세 아시아에 살았던 거대한 뿔 없는 코뿔소 친척입니다. 작은 머리와 긴 목, 높은 어깨, 길고 튼튼한 네 다리로 높은 가지를 먹을 수 있었습니다. 기린·코끼리·낙타가 아니며 정확한 몸무게와 피부색은 추정 범위가 큽니다.",
     features: {
@@ -7457,6 +7457,8 @@ const generatedImageSamples = {
       metadataRecord: "tools/comfyui/documentary-famous-life-expansion-20260811.json",
       representativeEligible: false,
     },
+    {kind:"anatomy review",title:"파라케라테리움 높은 후방 사선 무각 전신",body:"높은 후방 사선에서 작은 무각 머리, 긴 목, 높은 어깨와 네 다리·짧은 꼬리를 비교하는 참조입니다.",source:"assets/dinosaurs/paraceratherium-transouralicum-high-rear-browse-anatomy-imagegen-v2.png",variant:"높은 후방 사선 무각 긴 목 전신 참조 이미지 생성 v2",src:"assets/dinosaurs/paraceratherium-transouralicum-high-rear-browse-anatomy-imagegen-v2.png",gallerySlot:4,galleryRole:"identity-anatomy",phenotype:"pale-dust-d",habitatKey:"oligocene-central-asian-alluvial-plain",sourceAttribution:"OpenAI built-in image generation; paraceratheriid sources supplied constraints only",licenseRecord:"Generated project asset; no external artwork, named-artist style, logo or watermark was used",generationPromptRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/paraceratherium-transouralicum-s4",generationSeed:"service-assigned, not exposed",generationWorkflow:"OpenAI image generation; original-size horn-absence, neck, limb, toe and tail review",reviewStatus:"원본 크기 anatomy-review 수용 · 무각/긴 목/4지·한 꼬리 판독 · 대표 승격 금지",anatomyEvidenceBoundary:"gross hornless rhinocerotoid body plan is fossil-led; soft tissue, color and posture reconstructed",colorEvidence:"all colors hypothetical",metadataRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json",representativeEligible:false},
+    {kind:"anatomy review",title:"파라케라테리움과 먼 코뿔소류 강변 생태",body:"석양의 강변에서 앞쪽 파라케라테리움과 강 건너 작은 코뿔소류형 동물을 분리한 비접촉 환경 참조입니다.",source:"assets/dinosaurs/paraceratherium-transouralicum-river-rhinocerotoid-context-ecology-imagegen-v2.png",variant:"강변 먼 코뿔소류 비접촉 생태 이미지 생성 v2",src:"assets/dinosaurs/paraceratherium-transouralicum-river-rhinocerotoid-context-ecology-imagegen-v2.png",gallerySlot:5,galleryRole:"interaction",phenotype:"amber-river-e",habitatKey:"oligocene-central-asian-river-context",sourceAttribution:"OpenAI built-in image generation; paraceratheriid and broad Oligocene context sources supplied constraints only",licenseRecord:"Generated project asset; no external artwork, named-artist style, logo or watermark was used",generationPromptRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/paraceratherium-transouralicum-s5",generationSeed:"service-assigned, not exposed",generationWorkflow:"OpenAI image generation; original-size focal anatomy, separation and crop review",reviewStatus:"원본 크기 anatomy-review 수용 · 무각/긴 목/4지·한 꼬리 판독 · 먼 동물·행동은 삽화 · 대표 승격 금지",behaviorEvidence:"distant animal is non-contact environmental context; no association asserted",anatomyEvidenceBoundary:"focal Paraceratherium readable; distant animal not count-level evidence",colorEvidence:"all colors hypothetical",metadataRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json",representativeEligible:false},
   ],
   "anomalocaris-canadensis": [
     {

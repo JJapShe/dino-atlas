@@ -855,7 +855,9 @@
         "reviewBatch": "2026-08-11-documentary-famous-life-expansion-v1",
         "reviewedAt": "2026-08-11T08:28:08.000Z",
         "claimBoundary": "Broad Oligocene habitat and plausible high-browse context only; exact plant and behavior are not directly evidenced and the scene is never representative-eligible."
-      }
+      },
+      "4": {"status":"approved","source":"assets/dinosaurs/paraceratherium-transouralicum-high-rear-browse-anatomy-imagegen-v2.png","role":"identity-anatomy","reason":"One hornless focal animal retains long neck, high shoulder, four limbs and a short tail.","reviewMethod":"Original-size anatomy audit","reviewBatch":"2026-08-31-three-slot-five-gallery-enrichment-v1","reviewedAt":"2026-08-31","claimBoundary":"Soft tissue, color and posture reconstructed; not representative-eligible."},
+      "5": {"status":"approved","source":"assets/dinosaurs/paraceratherium-transouralicum-river-rhinocerotoid-context-ecology-imagegen-v2.png","role":"interaction","reason":"Focal animal remains complete; distant rhinocerotoid context is river-separated.","reviewMethod":"Original-size focal anatomy and separation audit","reviewBatch":"2026-08-31-three-slot-five-gallery-enrichment-v1","reviewedAt":"2026-08-31","claimBoundary":"Distant animal and behavior illustrative non-contact context; not representative-eligible."}
     },
     "mammuthus-primigenius": {
       "1": {
