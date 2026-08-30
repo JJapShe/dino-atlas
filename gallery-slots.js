@@ -372,6 +372,24 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "late-pleistocene-patagonian-open-steppe",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/macrauchenia-patachonica-low-frontthreequarter-threetoe-wetsteppe-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "claimBoundary": "Nasal soft tissue, coat, color, pose and wet-steppe setting are reconstructed; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-patagonian-wet-scrub-steppe",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/macrauchenia-patachonica-high-river-groundsloth-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "claimBoundary": "Ground-sloth identity, association and behavior are illustrative non-contact context; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-patagonian-river-context",
+      "expectedKind": "anatomy review"
     }
   ],
   "varanus-priscus": [

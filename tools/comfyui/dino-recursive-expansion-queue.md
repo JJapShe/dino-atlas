@@ -6,13 +6,14 @@
 - A follow-up S4 review added Otodus megalodon (with its two dorsal fins independently readable) and Smilodon fatalis (upper saber pair, robust forequarters and short tail). Their distant whale/bovid scenes are non-contact ecology context only.
 - Each new S4 is an original, non-representative `identity-anatomy` reference with a clearly different camera family: forward underwater approach, high oblique reef turn, low post-rain floodplain walk, and rear three-quarter winter-steppe family movement.
 - Contemporaneous animals appear only as spatially separate ecology context: Burgess shelf fauna, distant Devonian fish, distant Edaphosaurus and distant woolly rhinoceros. No scene claims observed social behavior, pursuit, predation, competition or exact coexistence event.
-- Next queue unit: continue the same review gate across the remaining 19 three-slot taxa, prioritizing LV1 familiar taxa before rare shell subtypes. Do not promote an S4 or use it as a representative without a separate anatomy pass.
+- Next queue unit: continue the same review gate across the remaining 18 three-slot taxa, prioritizing LV1 familiar taxa before rare shell subtypes. Do not promote an S4 or use it as a representative without a separate anatomy pass.
 - Varanus priscus is the first 3-to-5 completion: S4 uses a distant non-contact diprotodontid context; S5 uses a distant waterbird waterhole context. Both remain non-representative anatomy-review references.
 - Megaloceros giganteus is the second 3-to-5 completion: S4 isolates the palmated-antler structure at a wet mineral patch; S5 uses a river-separated distant mammoth context. Both remain non-representative anatomy-review references.
 - Asteroceras obtusum is the third 3-to-5 completion: S4 isolates the single planispiral center, aperture and radial ribs; S5 shifts to a left-three-quarter water-column context with distant anonymous fish. Both remain non-representative anatomy-review references.
 - Mammut americanum is the fourth 3-to-5 completion: S4 holds the lower broad head, trunk and upper tusks in a wet woodland; S5 shifts to a high rear riverbank composition with distant separated bison. Both remain non-representative anatomy-review references.
 - Meganeuropsis permiana is the fifth 3-to-5 completion: S4 is a perched four-wing and six-leg anatomy view; S5 is a high wetland flight frame with distant amphibian context. Both remain non-representative anatomy-review references.
 - Jaekelopterus rhenaniae is the sixth 3-to-5 completion: S4 uses a high rear appendage-and-tail-plate view; S5 uses a side-channel frame with distant armored-fish context. Both remain non-representative anatomy-review references.
+- Macrauchenia patachonica is the seventh 3-to-5 completion: S4 uses a low front-three-quarter wet-steppe anatomy frame; S5 shifts to a high riverbank view with distant separated ground-sloth context. Both remain non-representative anatomy-review references.
 
 ## 2026-08-30 — Paleozoic/Cenozoic S4 ecology richness
 

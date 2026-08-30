@@ -531,6 +531,26 @@
         "reviewBatch": "2026-08-24-cenozoic-famous-life-expansion-v1",
         "reviewedAt": "2026-08-24",
         "claimBoundary": "Broad ecology only; the distant ground sloth is not count-level evidence and browsing is illustrative."
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/macrauchenia-patachonica-low-frontthreequarter-threetoe-wetsteppe-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "reason": "One complete focal litoptern retains a small head, long neck, conservative short nasal pad, four limbs, readable three-toed feet and one tail in a distinct low front view.",
+        "reviewMethod": "Original-size head, neck, nasal-pad boundary, limb, three-toe, tail, crop, text and watermark audit",
+        "reviewBatch": "2026-08-31-three-slot-five-gallery-enrichment-v1",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "Nasal soft tissue, coat, color, pose and wet-steppe setting are reconstructed; not representative-eligible."
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/macrauchenia-patachonica-high-river-groundsloth-context-ecology-imagegen-v2.png",
+        "role": "interaction",
+        "reason": "The focal litoptern retains its head, long neck, four limbs, readable toe groups and tail; the ground sloth is distant across the river.",
+        "reviewMethod": "Original-size focal head, neck, limb, toe, tail, background-separation, crop, text and watermark audit",
+        "reviewBatch": "2026-08-31-three-slot-five-gallery-enrichment-v1",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "Ground-sloth identity, association and behavior are illustrative non-contact context; not representative-eligible."
       }
     },
     "varanus-priscus": {

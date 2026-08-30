@@ -180,6 +180,22 @@
       "workflow": "OpenAI built-in image generation; original-size chelicera, paddle, tail-plate, separation and crop review",
       "sources": ["Braddy et al. 2008 Jaekelopterus", "Museum fur Naturkunde eurypterid overview"],
       "review": "accepted anatomy review; non-representative; fish identity, association and behavior illustrative"
+    },
+    "macrauchenia-patachonica-s4": {
+      "asset": "assets/dinosaurs/macrauchenia-patachonica-low-frontthreequarter-threetoe-wetsteppe-anatomy-imagegen-v2.png",
+      "promptSummary": "Low front-three-quarter wet-scrub steppe reference with short conservative nasal pad, long neck, four limbs, three-toed feet and one tail.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size head, neck, limb, three-toe and tail review",
+      "sources": ["Natural History Museum Macrauchenia 3D specimen programme", "Natural History Museum Collection Macrauchenia patachonica"],
+      "review": "accepted anatomy review; non-representative; nasal soft tissue, coat, pose and color illustrative"
+    },
+    "macrauchenia-patachonica-s5": {
+      "asset": "assets/dinosaurs/macrauchenia-patachonica-high-river-groundsloth-context-ecology-imagegen-v2.png",
+      "promptSummary": "High three-quarter Patagonian riverbank view with a readable focal litoptern and a distant separated ground-sloth context.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size focal toe, tail, separation and crop review",
+      "sources": ["Natural History Museum Macrauchenia 3D specimen programme", "Natural History Museum Collection Macrauchenia patachonica"],
+      "review": "accepted anatomy review; non-representative; distant animal, association and behavior illustrative"
     }
   },
   "rejected": {}
