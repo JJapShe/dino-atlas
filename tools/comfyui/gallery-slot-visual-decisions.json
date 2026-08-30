@@ -1427,7 +1427,9 @@
         "reviewMethod": "Original-size ten-arm, mantle, animal-count, non-contact prey, habitat, crop, and artifact audit",
         "reviewBatch": "2026-08-07-mesozoic-life-initial-gallery",
         "reviewedAt": "2026-08-07T10:11:42.734Z"
-      }
+      },
+      "4": {"status":"approved","source":"assets/dinosaurs/passaloteuthis-bisulcata-internal-rostrum-cutaway-anatomy-imagegen-v2.png","role":"identity-anatomy","subrole":"gallery-only internal rostrum and phragmocone cutaway","reason":"The internal chambered phragmocone and posterior rostrum remain inside one mantle rather than forming an external horn.","reviewMethod":"Original-size internal-skeleton boundary, mantle, posterior, crop, text and watermark audit","reviewBatch":"2026-08-31-three-slot-ecology-enrichment-v2","reviewedAt":"2026-08-31","claimBoundary":"Internal skeleton is fossil-led; transparent mantle, arms, fins, color and posture are reconstructed and not representative-eligible."},
+      "5": {"status":"approved","source":"assets/dinosaurs/passaloteuthis-bisulcata-ammonite-crustacean-context-ecology-imagegen-v2.png","role":"interaction","subrole":"gallery-only separated ammonite and crustacean shelf context","reason":"One focal mantle and posterior remain readable; small ammonite and crustaceans remain separated non-contact period-level context.","reviewMethod":"Original-size focal body, background separation, crop, text and watermark audit","reviewBatch":"2026-08-31-three-slot-ecology-enrichment-v2","reviewedAt":"2026-08-31","claimBoundary":"Focal mantle silhouette is reconstructed from fossils; detailed arms, background association, behavior and color are illustrative and not representative-eligible."}
     },
     "lystrosaurus-murrayi": {
       "1": {

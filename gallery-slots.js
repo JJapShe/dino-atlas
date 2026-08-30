@@ -1242,6 +1242,26 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "early-jurassic-shale-shelf",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/passaloteuthis-bisulcata-internal-rostrum-cutaway-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only internal rostrum and phragmocone cutaway",
+      "claimBoundary": "Internal skeleton is fossil-led; transparent mantle, arms, fins, color and posture are reconstructed and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "early-jurassic-shale-shelf",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/passaloteuthis-bisulcata-ammonite-crustacean-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "gallerySubrole": "gallery-only separated ammonite and crustacean shelf context",
+      "claimBoundary": "Focal mantle silhouette is reconstructed from fossils; detailed arms, background association, behavior and color are illustrative and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "early-jurassic-european-shelf",
+      "expectedKind": "anatomy review"
     }
   ],
   "nipponites-mirabilis": [

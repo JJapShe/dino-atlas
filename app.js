@@ -994,8 +994,8 @@ const dinosaurs = [
     sizeLabel: "전신 길이",
     sizeDisplay: "약 35.5 cm(연질부 표본 기준)",
     knowledgeLevel: 2,
-    imageSlots: 3,
-    reviewStatus: "3장 갤러리 · 10개 갈고리 팔/내부 로스트룸 검토 · 연체부 비교복원",
+    imageSlots: 5,
+    reviewStatus: "5장 갤러리 · 10개 갈고리 팔/내부 로스트룸 검토 · S4·S5 anatomy review · 연체부 비교복원",
     summary:
       "전기 쥐라기 유럽 바다의 벨렘나이트로, 오징어를 닮은 몸 안쪽에 단단한 내부 골격을 지녔습니다. 흔히 총알처럼 보이는 화석은 꼬리 쪽 내부 골격인 로스트룸입니다. 팔은 열 개이고 작은 갈고리가 있었으며, 현대 오징어처럼 특별히 긴 촉수 두 개를 덧붙이지 않는 복원을 기준으로 삼습니다.",
     features: {
@@ -8834,6 +8834,8 @@ const generatedImageSamples = {
       metadataRecord: "tools/comfyui/mesozoic-life-expansion-20260807.json",
       representativeEligible: false,
     },
+    {kind:"anatomy review",title:"벨렘나이트 내부 로스트룸·방 구조 단면",body:"외투막 일부를 투명하게 보아 몸 안쪽의 원뿔형 방과 뒤쪽 로스트룸을 비교하는 S4입니다. 로스트룸은 외부 뿔이 아니라 내부 골격으로 표시하며, 팔 수·지느러미·색은 대표 판정에 쓰지 않는 비교복원 경계입니다.",source:"assets/dinosaurs/passaloteuthis-bisulcata-internal-rostrum-cutaway-anatomy-imagegen-v2.png",variant:"내부 로스트룸 방 구조 단면 이미지 생성 v2",src:"assets/dinosaurs/passaloteuthis-bisulcata-internal-rostrum-cutaway-anatomy-imagegen-v2.png",gallerySlot:4,galleryRole:"identity-anatomy",phenotype:"shale-sepia-cutaway-d",habitatKey:"early-jurassic-shale-shelf",sourceAttribution:"OpenAI built-in image generation; BGS and Klug et al. 2024 supplied fossil anatomy constraints only",licenseRecord:"Generated project asset; no external artwork copied or used as image input",generationPromptRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/passaloteuthis-bisulcata-s4",generationSeed:"service-assigned, not exposed",generationWorkflow:"OpenAI image_gen reference-guided internal-skeleton cutaway pass; original-size rostrum boundary and crop review",reviewStatus:"원본 크기 anatomy-review 수용 · 내부 방/로스트룸 경계 판독 · 팔 배열·지느러미·색은 가설 · 대표 승격 금지",formation:"Lower Toarcian marine strata",anatomyEvidenceBoundary:"internal phragmocone and rostrum are fossil-led; mantle transparency, arms, fins and color are reconstructed",metadataRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json",representativeEligible:false},
+    {kind:"anatomy review",title:"벨렘나이트 암모나이트·갑각류 원경 생태",body:"셰일 해저 위 암모나이트와 작은 갑각류를 멀리 둔 S5입니다. 주 피사체는 한 외투막과 뒤쪽 끝을 유지하며, 해저 동물은 직접 포획이나 특정 종 공존을 주장하지 않는 비접촉 환경 맥락입니다.",source:"assets/dinosaurs/passaloteuthis-bisulcata-ammonite-crustacean-context-ecology-imagegen-v2.png",variant:"암모나이트 갑각류 원경 생태 이미지 생성 v2",src:"assets/dinosaurs/passaloteuthis-bisulcata-ammonite-crustacean-context-ecology-imagegen-v2.png",gallerySlot:5,galleryRole:"interaction",phenotype:"teal-shale-context-e",habitatKey:"early-jurassic-european-shelf",sourceAttribution:"OpenAI built-in image generation; period-level marine context and project-approved identity supplied constraints only",licenseRecord:"Generated project asset; project-owned representative supplied identity geometry only; no external artwork copied",generationPromptRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/passaloteuthis-bisulcata-s5",generationSeed:"service-assigned, not exposed",generationWorkflow:"OpenAI image_gen reference-guided ecology pass; original-size focal body and background separation review",reviewStatus:"원본 크기 anatomy-review 수용 · 주 피사체 한 몸/비접촉 배경 판독 · 팔 세부·공존·행동은 삽화 · 대표 승격 금지",formation:"Lower Jurassic marine shelf",cooccurrenceConfidence:"ammonite and crustaceans are unnamed period-level context, not a documented encounter",anatomyEvidenceBoundary:"focal mantle and posterior silhouette are readable; detailed arm count, fins and all background animals are not identity evidence",metadataRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json",representativeEligible:false},
   ],
   "nipponites-mirabilis": [
     {
