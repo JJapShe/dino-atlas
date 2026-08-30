@@ -872,8 +872,8 @@ const dinosaurs = [
     sizeLabel: "몸길이",
     sizeDisplay: "약 3.2~3.8 m · 어깨높이 약 1.8~2 m",
     knowledgeLevel: 2,
-    imageSlots: 3,
-    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 신생대 전용",
+    imageSlots: 5,
+    reviewStatus: "5장 갤러리 · S1 count-level pass · S2 review hold · S3 habitat ecology · S4·S5 anatomy review · 신생대 전용",
     summary:
       "털코뿔소는 후기 플라이스토세 유라시아의 차갑고 건조한 매머드 스텝에 살았습니다. 높은 어깨와 앞으로 낮아지는 머리, 작은 귀, 두꺼운 털, 넓은 평면과 좁은 가장자리를 지닌 길고 좌우 압축된 칼날형 앞뿔과 더 작은 뒤뿔이 특징입니다. 얼어붙은 몸과 동굴 그림이 연조직 복원에 도움을 주지만 털색·무늬와 정확한 무리 행동은 확정되지 않았습니다.",
     features: {
@@ -7792,6 +7792,8 @@ const generatedImageSamples = {
       metadataRecord: "tools/comfyui/paleozoic-cenozoic-famous-life-expansion-20260810.json",
       representativeEligible: false,
     },
+    {kind:"anatomy review",title:"털코뿔소 높은 후방 사선 납작한 앞뿔",body:"높은 어깨·긴 납작한 앞뿔과 작은 뒤뿔, 네 다리·짧은 꼬리를 비교하는 전신 참조입니다.",source:"assets/dinosaurs/coelodonta-antiquitatis-high-rear-flattenedhorn-anatomy-imagegen-v2.png",variant:"높은 후방 사선 긴 납작한 앞뿔 참조 이미지 생성 v2",src:"assets/dinosaurs/coelodonta-antiquitatis-high-rear-flattenedhorn-anatomy-imagegen-v2.png",gallerySlot:4,galleryRole:"identity-anatomy",phenotype:"snow-umber-d",habitatKey:"late-pleistocene-mammoth-steppe",sourceAttribution:"OpenAI built-in image generation; woolly-rhinoceros sources supplied constraints only",licenseRecord:"Generated project asset; no external artwork, named-artist style, logo or watermark was used",generationPromptRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/coelodonta-antiquitatis-s4",generationSeed:"service-assigned, not exposed",generationWorkflow:"OpenAI image generation; original-size horn, shoulder, limb and tail review",reviewStatus:"원본 크기 anatomy-review 수용 · 두 뿔/높은 어깨·4지/짧은 꼬리 판독 · 대표 승격 금지",anatomyEvidenceBoundary:"gross horn configuration and body plan fossil-led; fur, color and stance reconstructed",colorEvidence:"all colors hypothetical",metadataRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json",representativeEligible:false},
+    {kind:"anatomy review",title:"털코뿔소와 먼 털매머드 얼음 수로 생태",body:"얼음 수로로 분리된 털코뿔소와 먼 털매머드의 비접촉 환경 참조입니다.",source:"assets/dinosaurs/coelodonta-antiquitatis-river-mammoth-context-ecology-imagegen-v2.png",variant:"얼음 수로 먼 털매머드 비접촉 생태 이미지 생성 v2",src:"assets/dinosaurs/coelodonta-antiquitatis-river-mammoth-context-ecology-imagegen-v2.png",gallerySlot:5,galleryRole:"interaction",phenotype:"frost-river-e",habitatKey:"late-pleistocene-mammoth-steppe-river-context",sourceAttribution:"OpenAI built-in image generation; broad mammoth-steppe sources supplied constraints only",licenseRecord:"Generated project asset; no external artwork, named-artist style, logo or watermark was used",generationPromptRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/coelodonta-antiquitatis-s5",generationSeed:"service-assigned, not exposed",generationWorkflow:"OpenAI image generation; original-size focal anatomy and separation review",reviewStatus:"원본 크기 anatomy-review 수용 · 주 피사체 두 뿔·4지·짧은 꼬리 판독 · 먼 동물·행동은 삽화 · 대표 승격 금지",behaviorEvidence:"distant mammoth is non-contact environmental context; no association asserted",anatomyEvidenceBoundary:"focal rhino readable; distant mammoth not count-level evidence",colorEvidence:"all colors hypothetical",metadataRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json",representativeEligible:false},
   ],
   "arctodus-simus": [
     {

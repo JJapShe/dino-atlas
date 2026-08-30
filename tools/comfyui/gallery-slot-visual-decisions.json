@@ -1224,7 +1224,9 @@
         "reviewedAt": "2026-08-10T00:45:00.000Z",
         "gallerySubrole": "gallery-only grazing and distant-mammoth coexistence reference",
         "claimBoundary": "Grazing, mammoth family relationship, exact coexistence moment, coat, snow, breath, plants and random tracks are illustrative."
-      }
+      },
+      "4": {"status":"approved","source":"assets/dinosaurs/coelodonta-antiquitatis-high-rear-flattenedhorn-anatomy-imagegen-v2.png","role":"identity-anatomy","reason":"Focal woolly rhinoceros retains high withers, laterally compressed long front horn, smaller rear horn, four limbs and short tail.","reviewMethod":"Original-size anatomy audit","reviewBatch":"2026-08-31-three-slot-five-gallery-enrichment-v1","reviewedAt":"2026-08-31","claimBoundary":"Coat, color and pose reconstructed; not representative-eligible."},
+      "5": {"status":"approved","source":"assets/dinosaurs/coelodonta-antiquitatis-river-mammoth-context-ecology-imagegen-v2.png","role":"interaction","reason":"Focal rhino remains complete; distant woolly mammoth is river-separated.","reviewMethod":"Original-size focal anatomy and separation audit","reviewBatch":"2026-08-31-three-slot-five-gallery-enrichment-v1","reviewedAt":"2026-08-31","claimBoundary":"Distant mammoth and behavior illustrative non-contact context; not representative-eligible."}
     },
     "dimetrodon-grandis": {
       "1": {

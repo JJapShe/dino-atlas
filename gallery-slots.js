@@ -1083,6 +1083,24 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "late-pleistocene-woolly-rhino-distant-mammoth-family",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/coelodonta-antiquitatis-high-rear-flattenedhorn-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "claimBoundary": "Coat, color and pose reconstructed; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-mammoth-steppe",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/coelodonta-antiquitatis-river-mammoth-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "claimBoundary": "Distant mammoth and behavior illustrative non-contact context; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-mammoth-steppe-river-context",
+      "expectedKind": "anatomy review"
     }
   ],
   "dimetrodon-grandis": [
