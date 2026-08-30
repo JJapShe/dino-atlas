@@ -4222,8 +4222,8 @@ const dinosaurs = [
     region: "북아메리카",
     length: 9.0,
     knowledgeLevel: 2,
-    imageSlots: 3,
-    reviewStatus: "3장 문헌·해부학 검수",
+    imageSlots: 5,
+    reviewStatus: "5장 문헌·해부학 검수 · S4·S5 anatomy review",
     summary:
       "투메디슨층의 대형 사우롤로푸스아과 하드로사우루스류입니다. 넓은 무치 오리주둥이, 두개골 지붕을 가로지르는 낮고 넓은 고형 볏, 깊은 몸통, 미튼형 앞손과 세 주발가락 뒷발을 핵심 단서로 봅니다. 둥지와 어린 개체·집단 산란지 화석은 알려져 있지만, 특정 성체의 직접 양육 순간은 복원 가설로 분리합니다.",
     features: {
@@ -23316,6 +23316,8 @@ const generatedImageSamples = {
       ],
       metadataRecord: "tools/comfyui/maiasaura-peeblesorum-initial-gallery-batch-20260803.json",
     },
+    {kind:"anatomy review",title:"마이아사우라 네 사지 접지 진흙벌 구조",body:"대표와 다른 전방 삼사분면에서 낮은 횡방향 볏, 넓은 부리, 깊은 몸통과 네 사지 접지·한 꼬리를 비교하는 S4입니다. 앞손·뒷발의 연조직·색·자세는 복원이며 대표 승격은 금지합니다.",source:"assets/dinosaurs/maiasaura-peeblesorum-fourlimb-mudflat-anatomy-imagegen-v2.png",variant:"네 사지 접지 진흙벌 구조 이미지 생성 v2",src:"assets/dinosaurs/maiasaura-peeblesorum-fourlimb-mudflat-anatomy-imagegen-v2.png",gallerySlot:4,galleryRole:"identity-anatomy",phenotype:"olive-ochre-mudflat-d",habitatKey:"two-medicine-upland-mudflat",sourceAttribution:"OpenAI built-in image generation; published Maiasaura anatomy and nesting studies supplied factual constraints only",licenseRecord:"Generated project asset; no external artwork copied or used as image input",generationPromptRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/maiasaura-peeblesorum-s4",generationSeed:"service-assigned, not exposed",generationWorkflow:"OpenAI image_gen reference-guided anatomy pass; original-size crest, limb, hand, foot, tail, crop, text and watermark audit",reviewStatus:"원본 크기 anatomy-review 수용 · 낮은 횡방향 볏/4지/한 꼬리 판독 · 대표 승격 금지",formation:"Two Medicine Formation",anatomyEvidenceBoundary:"cranial crest, bill, body and broad limb-plan cues are fossil-led; exact soft tissues, hand surface, feet, color and posture are reconstructed",colorEvidence:"all colors and pattern placement are hypothetical",metadataRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json",representativeEligible:false},
+    {kind:"anatomy review",title:"마이아사우라 수로 너머 무리 원경 생태",body:"수로로 분리된 먼 하드로사우루스 실루엣과 앞의 성체를 함께 보는 S5입니다. 앞 개체의 부리·낮은 횡방향 볏·네 사지·꼬리를 우선 확인하며, 물 건너 개체는 종과 사회 행동을 확정하지 않는 무리 수준의 비접촉 환경 단서입니다.",source:"assets/dinosaurs/maiasaura-peeblesorum-river-herd-context-ecology-imagegen-v2.png",variant:"수로 너머 무리 원경 생태 이미지 생성 v2",src:"assets/dinosaurs/maiasaura-peeblesorum-river-herd-context-ecology-imagegen-v2.png",gallerySlot:5,galleryRole:"interaction",phenotype:"slate-russet-river-herd-e",habitatKey:"two-medicine-braided-river-context",sourceAttribution:"OpenAI built-in image generation; formation context and Maiasaura identity sources supplied constraints only",licenseRecord:"Generated project asset; project-owned approved representative supplied identity geometry only; no external artwork copied",generationPromptRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/maiasaura-peeblesorum-s5",generationSeed:"service-assigned, not exposed",generationWorkflow:"OpenAI image_gen reference-guided ecology pass; original-size focal anatomy, water separation, crop, text and watermark audit",reviewStatus:"원본 크기 anatomy-review 수용 · 주 피사체 4지/한 꼬리 판독 · 먼 무리·행동은 삽화 · 대표 승격 금지",formation:"Two Medicine Formation",locality:"formation-level braided-river reconstruction; exact herd membership, behavior and moment are hypothetical",behaviorEvidence:"water-separated herd context only; no direct maternal, guarding or feeding behavior asserted",anatomyEvidenceBoundary:"focal identity cues are readable; distant silhouettes are not identity evidence",colorEvidence:"all colors and pattern placement are hypothetical",metadataRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json",representativeEligible:false},
   ],
   "parasaurolophus-walkeri": [
     {

@@ -7154,6 +7154,26 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "two-medicine-nesting-ground",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/maiasaura-peeblesorum-fourlimb-mudflat-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only four-limb mudflat anatomy comparison",
+      "claimBoundary": "Cranial and body cues are fossil-led; soft tissues, hand surfaces, feet, color and posture are reconstructed and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "two-medicine-upland-mudflat",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/maiasaura-peeblesorum-river-herd-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "gallerySubrole": "gallery-only water-separated distant herd context",
+      "claimBoundary": "Focal identity cues are fossil-led; distant herd membership, behavior, color and exact association are illustrative and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "two-medicine-braided-river-context",
+      "expectedKind": "anatomy review"
     }
   ],
   "parasaurolophus-walkeri": [
