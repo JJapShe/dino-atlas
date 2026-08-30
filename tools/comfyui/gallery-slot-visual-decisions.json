@@ -995,7 +995,9 @@
         "reviewedAt": "2026-08-07T19:06:34.925Z",
         "gallerySubrole": "gallery-only tripod-browsing ecology reference",
         "claimBoundary": "Tripod support is anatomically plausible, but this exact stance, duration, plant, place, and event remain hypothetical."
-      }
+      },
+      "4": {"status":"approved","source":"assets/dinosaurs/megatherium-americanum-low-rear-thicktail-anatomy-imagegen-v2.png","role":"identity-anatomy","reason":"One quadrupedal ground sloth retains deep torso, long clawed forelimbs, massive pelvis and one thick tail.","reviewMethod":"Original-size anatomy audit","reviewBatch":"2026-08-31-three-slot-five-gallery-enrichment-v1","reviewedAt":"2026-08-31","claimBoundary":"Fur, color and gait reconstructed; not representative-eligible."},
+      "5": {"status":"approved","source":"assets/dinosaurs/megatherium-americanum-river-macrauchenia-context-ecology-imagegen-v2.png","role":"interaction","reason":"Focal ground sloth remains complete; distant Macrauchenia is water-separated.","reviewMethod":"Original-size focal anatomy and separation audit","reviewBatch":"2026-08-31-three-slot-five-gallery-enrichment-v1","reviewedAt":"2026-08-31","claimBoundary":"Distant animal and behavior illustrative non-contact context; not representative-eligible."}
     },
     "arctodus-simus": {
       "1": {

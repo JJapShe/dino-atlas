@@ -846,6 +846,24 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "late-pleistocene-pampas-shrub-browse",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/megatherium-americanum-low-rear-thicktail-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "claimBoundary": "Fur, color and gait reconstructed; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-south-american-open-woodland",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/megatherium-americanum-river-macrauchenia-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "claimBoundary": "Distant animal and behavior illustrative non-contact context; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-south-american-river-context",
+      "expectedKind": "anatomy review"
     }
   ],
   "arctodus-simus": [

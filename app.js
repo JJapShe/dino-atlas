@@ -661,8 +661,8 @@ const dinosaurs = [
     sizeLabel: "전체길이",
     sizeDisplay: "약 6 m · 약 4~5 t",
     knowledgeLevel: 2,
-    imageSlots: 3,
-    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 신생대 전용",
+    imageSlots: 5,
+    reviewStatus: "5장 갤러리 · S1 count-level pass · S2 review hold · S3 habitat ecology · S4·S5 anatomy review · 신생대 전용",
     summary:
       "메가테리움은 플라이스토세 남아메리카의 열린 초원과 관목지에 살았던 코끼리만 한 거대땅늘보입니다. 큰 골반과 굵은 뒷다리, 긴 앞다리의 큰 발톱, 두꺼운 근육질 꼬리가 특징이며 평소에는 네 발로 걸었습니다. 높은 가지를 먹는 장면은 뒷다리와 꼬리로 몸을 받친 정지 자세로 복원하는 것이 안전합니다.",
     features: {
@@ -8095,6 +8095,8 @@ const generatedImageSamples = {
       metadataRecord: "tools/comfyui/cenozoic-life-expansion-20260808-phase-a2.json",
       representativeEligible: false,
     },
+    {kind:"anatomy review",title:"메가테리움 낮은 후방 사선 굵은 꼬리 참조",body:"사족보행 전신에서 깊은 몸통·큰 골반·큰 앞발톱과 굵은 꼬리를 비교합니다.",source:"assets/dinosaurs/megatherium-americanum-low-rear-thicktail-anatomy-imagegen-v2.png",variant:"낮은 후방 사선 굵은 꼬리 사족보행 참조 이미지 생성 v2",src:"assets/dinosaurs/megatherium-americanum-low-rear-thicktail-anatomy-imagegen-v2.png",gallerySlot:4,galleryRole:"identity-anatomy",phenotype:"golden-scrub-d",habitatKey:"late-pleistocene-south-american-open-woodland",sourceAttribution:"OpenAI built-in image generation; Megatherium sources supplied constraints only",licenseRecord:"Generated project asset; no external artwork, named-artist style, logo or watermark was used",generationPromptRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/megatherium-americanum-s4",generationSeed:"service-assigned, not exposed",generationWorkflow:"OpenAI image generation; original-size limb, claw, pelvis and tail review",reviewStatus:"원본 크기 anatomy-review 수용 · 사족보행/굵은 꼬리·큰 앞발톱 판독 · 대표 승격 금지",anatomyEvidenceBoundary:"gross body plan fossil-led; fur, color and gait reconstructed",colorEvidence:"all colors hypothetical",metadataRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json",representativeEligible:false},
+    {kind:"anatomy review",title:"메가테리움과 먼 마크라우케니아 강변 생태",body:"강가의 메가테리움과 강 건너 작은 마크라우케니아를 분리한 비접촉 환경 참조입니다.",source:"assets/dinosaurs/megatherium-americanum-river-macrauchenia-context-ecology-imagegen-v2.png",variant:"강변 먼 마크라우케니아 비접촉 생태 이미지 생성 v2",src:"assets/dinosaurs/megatherium-americanum-river-macrauchenia-context-ecology-imagegen-v2.png",gallerySlot:5,galleryRole:"interaction",phenotype:"dusk-river-e",habitatKey:"late-pleistocene-south-american-river-context",sourceAttribution:"OpenAI built-in image generation; broad Quaternary context sources supplied constraints only",licenseRecord:"Generated project asset; no external artwork, named-artist style, logo or watermark was used",generationPromptRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/megatherium-americanum-s5",generationSeed:"service-assigned, not exposed",generationWorkflow:"OpenAI image generation; original-size focal anatomy and separation review",reviewStatus:"원본 크기 anatomy-review 수용 · 주 피사체 사족보행·굵은 꼬리 판독 · 먼 동물·행동은 삽화 · 대표 승격 금지",behaviorEvidence:"distant animal non-contact context; no association asserted",anatomyEvidenceBoundary:"focal Megatherium readable; distant animal not count-level evidence",colorEvidence:"all colors hypothetical",metadataRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json",representativeEligible:false},
   ],
   "mammuthus-primigenius": [
     {
