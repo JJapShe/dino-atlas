@@ -1273,6 +1273,26 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "late-cretaceous-japanese-silty-shelf",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/nipponites-mirabilis-vertical-open-loop-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only vertical open-loop topology review",
+      "claimBoundary": "Shell topology is fossil-led; soft anatomy, color and posture are reconstructed and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-cretaceous-japanese-shelf",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/nipponites-mirabilis-slope-fish-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "gallerySubrole": "gallery-only slope context with separated background fish",
+      "claimBoundary": "Shell topology is fossil-led; background association, soft anatomy, color and posture are illustrative and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-cretaceous-japanese-shelf-slope",
+      "expectedKind": "anatomy review"
     }
   ],
   "diplomoceras-maximum": [

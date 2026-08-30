@@ -37,6 +37,28 @@
         "reviewBatch": "2026-08-28-distinctive-cephalopod-subtypes-v1",
         "reviewedAt": "2026-08-28",
         "claimBoundary": "Ecology and posture are illustrative; not representative-eligible."
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/nipponites-mirabilis-vertical-open-loop-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "subrole": "gallery-only vertical open-loop topology review",
+        "reason": "One continuous ribbed tube passes through multiple separated open loops and ends at one aperture with one head.",
+        "reviewMethod": "Original-size shell-continuity, aperture, head, crop, text and watermark audit",
+        "reviewBatch": "2026-08-31-three-slot-ecology-enrichment-v2",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "Shell topology is fossil-led; soft anatomy, color and posture are reconstructed and not representative-eligible."
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/nipponites-mirabilis-slope-fish-context-ecology-imagegen-v2.png",
+        "role": "habitat-ecology",
+        "subrole": "gallery-only slope context with separated background fish",
+        "reason": "A complete focal continuous shell, one aperture and one head remain readable; fish and bivalves are separated background context.",
+        "reviewMethod": "Original-size focal topology, background separation, crop, text and watermark audit",
+        "reviewBatch": "2026-08-31-three-slot-ecology-enrichment-v2",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "Shell topology is fossil-led; background association, soft anatomy, color and posture are illustrative and not representative-eligible."
       }
     },
     "diplomoceras-maximum": {
