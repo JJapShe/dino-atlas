@@ -93,6 +93,28 @@
         "reviewBatch": "2026-08-28-distinctive-cephalopod-subtypes-v1",
         "reviewedAt": "2026-08-28",
         "claimBoundary": "Orientation and ecology illustrative; not representative-eligible."
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/diplomoceras-maximum-broadside-paperclip-anatomy-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "subrole": "gallery-only broadside single-U shell comparison",
+        "reason": "One continuous ribbed shell retains one broad U-bend, two separated shafts, one aperture and one head.",
+        "reviewMethod": "Original-size shell-topology, U-bend, shaft-end, aperture, crop, text and watermark audit",
+        "reviewBatch": "2026-08-31-three-slot-ecology-enrichment-v2",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "Paperclip shell geometry is fossil-led; soft anatomy, color and orientation are reconstructed and not representative-eligible."
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/diplomoceras-maximum-low-shelf-fish-context-ecology-imagegen-v2.png",
+        "role": "habitat-ecology",
+        "subrole": "gallery-only cold shelf context with separated background fauna",
+        "reason": "The complete focal shell retains one U-bend and one aperture; fish and seafloor fauna remain distant non-contact context.",
+        "reviewMethod": "Original-size full-shell, U-bend, background separation, crop, text and watermark audit",
+        "reviewBatch": "2026-08-31-three-slot-ecology-enrichment-v2",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "Shell geometry is fossil-led; soft anatomy, posture and background association are illustrative and not representative-eligible."
       }
     },
     "megateuthis-elliptica": {

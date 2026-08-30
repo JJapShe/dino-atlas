@@ -1324,6 +1324,26 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "maastrichtian-antarctic-drift",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/diplomoceras-maximum-broadside-paperclip-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only broadside single-U shell comparison",
+      "claimBoundary": "Paperclip shell geometry is fossil-led; soft anatomy, color and orientation are reconstructed and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "maastrichtian-antarctic-open-shelf",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/diplomoceras-maximum-low-shelf-fish-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "gallerySubrole": "gallery-only cold shelf context with separated background fauna",
+      "claimBoundary": "Shell geometry is fossil-led; soft anatomy, posture and background association are illustrative and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "maastrichtian-antarctic-shelf",
+      "expectedKind": "anatomy review"
     }
   ],
   "megateuthis-elliptica": [
