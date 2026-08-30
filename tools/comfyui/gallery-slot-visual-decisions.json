@@ -914,7 +914,9 @@
         "reviewedAt": "2026-08-07T19:06:34.925Z",
         "gallerySubrole": "gallery-only ecology and behavior reference",
         "claimBoundary": "Woody browsing is evidence-led at broad scale; the pictured plant, pose, place, and moment remain hypothetical."
-      }
+      },
+      "4": { "status": "approved", "source": "assets/dinosaurs/mammut-americanum-low-frontthreequarter-wetwoodland-anatomy-imagegen-v2.png", "role": "identity-anatomy", "reason": "One mastodon retains low broad head, trunk, two upper tusks, level back, four limbs and short tail.", "reviewMethod": "Original-size trunk, two-tusk, limb, foot, tail and crop audit", "reviewBatch": "2026-08-31-three-slot-five-gallery-enrichment-v1", "reviewedAt": "2026-08-31", "claimBoundary": "Coat, water, vegetation and pose are illustrative; not representative-eligible." },
+      "5": { "status": "approved", "source": "assets/dinosaurs/mammut-americanum-high-rearthreequarter-river-bison-context-ecology-imagegen-v2.png", "role": "interaction", "reason": "One focal mastodon retains low broad head, trunk, two upper tusks, four limbs and short tail; distant bison remain separated.", "reviewMethod": "Original-size trunk, two-tusk, limb, foot, tail, separation and crop audit", "reviewBatch": "2026-08-31-three-slot-five-gallery-enrichment-v1", "reviewedAt": "2026-08-31", "claimBoundary": "Bison, association and behavior are illustrative; not representative-eligible." }
     },
     "megatherium-americanum": {
       "1": {

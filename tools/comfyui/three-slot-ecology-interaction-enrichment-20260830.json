@@ -132,6 +132,22 @@
       "workflow": "OpenAI built-in image generation; original-size single-center, aperture, rib, separation and crop review",
       "sources": ["British Geological Survey ammonites guide", "Oxford University Museum specimen J.01194"],
       "review": "accepted anatomy review; non-representative; fish and rising behavior illustrative"
+    },
+    "mammut-americanum-s4": {
+      "asset": "assets/dinosaurs/mammut-americanum-low-frontthreequarter-wetwoodland-anatomy-imagegen-v2.png",
+      "promptSummary": "Low front-three-quarter wet-woodland view with low broad head, trunk, two upper tusks, level back, four limbs and short tail.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size trunk, two-tusk, limb, foot, tail and crop review",
+      "sources": ["National Park Service American Mastodon", "Natural History Museum mastodon overview"],
+      "review": "accepted anatomy review; non-representative; coat, water and pose illustrative"
+    },
+    "mammut-americanum-s5": {
+      "asset": "assets/dinosaurs/mammut-americanum-high-rearthreequarter-river-bison-context-ecology-imagegen-v2.png",
+      "promptSummary": "High rear-three-quarter riverbank view with distant separated bison as non-contact environmental context.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size trunk, two-tusk, limb, foot, tail, separation and crop review",
+      "sources": ["National Park Service American Mastodon", "Natural History Museum mastodon overview"],
+      "review": "accepted anatomy review; non-representative; bison association and behavior illustrative"
     }
   },
   "rejected": {}

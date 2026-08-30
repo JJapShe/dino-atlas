@@ -626,8 +626,8 @@ const dinosaurs = [
     sizeLabel: "어깨높이",
     sizeDisplay: "약 3 m",
     knowledgeLevel: 2,
-    imageSlots: 3,
-    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 신생대 전용",
+    imageSlots: 5,
+    reviewStatus: "5장 갤러리 · S1 count-level pass · S2 review hold · S3 habitat ecology · S4·S5 anatomy review · 신생대 전용",
     summary:
       "아메리카마스토돈은 플라이스토세 북아메리카의 숲과 습지 가장자리에서 잎과 잔가지를 먹던 장비목 포유류입니다. 털매머드보다 등이 평평하고 머리가 낮고 넓으며, 두 개의 비교적 짧은 위턱 엄니가 완만하게 위로 굽습니다. 털색과 무늬, 정확한 무리 행동은 화석만으로 확정할 수 없습니다.",
     features: {
@@ -7930,6 +7930,22 @@ const generatedImageSamples = {
       colorEvidence: "warm brown coat, wet mud, green foliage and all color placement are hypothetical",
       metadataRecord: "tools/comfyui/cenozoic-life-expansion-20260808-phase-a2.json",
       representativeEligible: false,
+    },
+    {
+      kind: "anatomy review", title: "아메리카마스토돈 안개 낀 얕은 숲 물웅덩이",
+      body: "비 뒤 얕은 숲 물웅덩이에 선 한 마스토돈입니다. 낮고 넓은 머리, 한 코, 완만히 위로 굽는 위턱 엄니 두 개, 평평한 등, 네 기둥형 다리와 짧은 꼬리를 읽는 구조 참조이며, 털색·자세·식생은 복원입니다.",
+      source: "assets/dinosaurs/mammut-americanum-low-frontthreequarter-wetwoodland-anatomy-imagegen-v2.png", variant: "안개 낀 습윤 숲 낮은 전방 사선 구조 참조 이미지 생성 v2", src: "assets/dinosaurs/mammut-americanum-low-frontthreequarter-wetwoodland-anatomy-imagegen-v2.png",
+      gallerySlot: 4, galleryRole: "identity-anatomy", phenotype: "mist-brown-d", habitatKey: "late-pleistocene-wet-woodland-pool",
+      sourceAttribution: "OpenAI built-in image generation; NPS, museum and peer-reviewed mastodon sources supplied factual constraints only", licenseRecord: "Generated project asset; no external artwork, named-artist style, logo or watermark was used", generationPromptRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/mammut-americanum-s4", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image generation; original-size trunk, two-tusk, limb, foot, tail and crop review",
+      reviewStatus: "원본 크기 anatomy-review 수용 · 한 코/두 엄니/4지·4발/짧은 꼬리 판독 · 털색·자세 가설 · 대표 승격 금지", locality: "broad Late Pleistocene eastern North American wet woodland reconstruction", anatomyEvidenceBoundary: "low broad head, level back, trunk, two upper tusks, four limbs and short tail are evidence-led; soft tissue remains reconstructed", colorEvidence: "all coat, water and vegetation colors are hypothetical", metadataRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json", representativeEligible: false,
+    },
+    {
+      kind: "anatomy review", title: "아메리카마스토돈과 먼 들소의 강변 황혼",
+      body: "강 너머 먼 들소 무리와 분리된 채 걷는 한 마스토돈의 후기 플라이스토세 숲 가장자리 장면입니다. 마스토돈의 낮은 등, 한 코와 두 위굽음 엄니, 네 다리·짧은 꼬리를 비교하며, 들소와 행동은 비접촉 환경 맥락일 뿐입니다.",
+      source: "assets/dinosaurs/mammut-americanum-high-rearthreequarter-river-bison-context-ecology-imagegen-v2.png", variant: "높은 후방 사선 강 건너 먼 들소 비접촉 생태 이미지 생성 v2", src: "assets/dinosaurs/mammut-americanum-high-rearthreequarter-river-bison-context-ecology-imagegen-v2.png",
+      gallerySlot: 5, galleryRole: "interaction", phenotype: "autumn-river-e", habitatKey: "late-pleistocene-eastern-river-woodland",
+      sourceAttribution: "OpenAI built-in image generation; NPS, museum and peer-reviewed mastodon sources supplied factual constraints only", licenseRecord: "Generated project asset; no external artwork, named-artist style, logo or watermark was used", generationPromptRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/mammut-americanum-s5", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image generation; original-size trunk, two-tusk, limb, foot, tail, separation and crop review",
+      reviewStatus: "원본 크기 anatomy-review 수용 · 한 코/두 엄니/4지·4발/짧은 꼬리 판독 · 먼 들소·행동은 삽화 · 대표 승격 금지", locality: "broad Late Pleistocene eastern North American river-woodland reconstruction", behaviorEvidence: "the distant bison are illustrative non-contact environmental context; no shared group or event is asserted", anatomyEvidenceBoundary: "the focal mastodon retains its low broad head, level back, trunk, two upper tusks, four limbs and short tail; distant animals are not count-level evidence", colorEvidence: "all coat, sky, water and plant colors are hypothetical", metadataRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json", representativeEligible: false,
     },
   ],
   "megatherium-americanum": [

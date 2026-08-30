@@ -710,6 +710,24 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "late-pleistocene-wetland-woodland-browse",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/mammut-americanum-low-frontthreequarter-wetwoodland-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "claimBoundary": "Coat, water, vegetation and pose are illustrative; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-wet-woodland-pool",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/mammut-americanum-high-rearthreequarter-river-bison-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "claimBoundary": "Bison, association and behavior are illustrative; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-eastern-river-woodland",
+      "expectedKind": "anatomy review"
     }
   ],
   "megatherium-americanum": [
