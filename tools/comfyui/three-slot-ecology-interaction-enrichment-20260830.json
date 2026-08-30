@@ -196,7 +196,9 @@
       "workflow": "OpenAI built-in image generation; original-size focal toe, tail, separation and crop review",
       "sources": ["Natural History Museum Macrauchenia 3D specimen programme", "Natural History Museum Collection Macrauchenia patachonica"],
       "review": "accepted anatomy review; non-representative; distant animal, association and behavior illustrative"
-    }
+    },
+    "inostrancevia-alexandri-s4": {"asset":"assets/dinosaurs/inostrancevia-alexandri-low-frontthreequarter-saberpair-anatomy-imagegen-v2.png","promptSummary":"Low front three-quarter gorgonopsian anatomy view with one upper saber pair, four limbs and a continuous tail.","seed":"service-assigned, not exposed","workflow":"OpenAI built-in image generation; original-size anatomy review","sources":["Natural History Museum Gorgonopsian extinction survivors","Kammerer et al. 2023"],"review":"accepted anatomy review; non-representative; soft tissue, color and stance illustrative"},
+    "inostrancevia-alexandri-s5": {"asset":"assets/dinosaurs/inostrancevia-alexandri-river-scutosaurus-context-ecology-imagegen-v2.png","promptSummary":"Misty riverbank frame with focal Inostrancevia and water-separated armored-herbivore context.","seed":"service-assigned, not exposed","workflow":"OpenAI built-in image generation; original-size focal anatomy and separation review","sources":["Natural History Museum Gorgonopsian extinction survivors","Kammerer et al. 2023"],"review":"accepted anatomy review; non-representative; distant animal and behavior illustrative"}
   },
   "rejected": {}
 }

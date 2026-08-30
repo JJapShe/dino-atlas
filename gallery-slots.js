@@ -552,6 +552,24 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "north-dvina-late-permian-floodplain",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/inostrancevia-alexandri-low-frontthreequarter-saberpair-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "claimBoundary": "Reconstructed color and posture; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-permian-north-dvina-floodplain",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/inostrancevia-alexandri-river-scutosaurus-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "claimBoundary": "Distant animal and behavior are illustrative non-contact context; not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-permian-north-dvina-river-context",
+      "expectedKind": "anatomy review"
     }
   ],
   "titanoboa-cerrejonensis": [

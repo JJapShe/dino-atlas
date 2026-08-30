@@ -729,7 +729,9 @@
         "reviewBatch": "2026-08-11-documentary-famous-life-expansion-v1",
         "reviewedAt": "2026-08-11T08:28:08.000Z",
         "claimBoundary": "Gallery anatomy and habitat review only; exact toe pose, locomotion, soft tissue, plants and event are reconstructed and not representative evidence."
-      }
+      },
+      "4": {"status":"approved","source":"assets/dinosaurs/inostrancevia-alexandri-low-frontthreequarter-saberpair-anatomy-imagegen-v2.png","role":"identity-anatomy","reason":"Complete focal gorgonopsian with one upper saber pair, four limbs and continuous tail.","reviewMethod":"Original-size anatomy audit","reviewBatch":"2026-08-31-three-slot-five-gallery-enrichment-v1","reviewedAt":"2026-08-31","claimBoundary":"Reconstructed color and posture; not representative-eligible."},
+      "5": {"status":"approved","source":"assets/dinosaurs/inostrancevia-alexandri-river-scutosaurus-context-ecology-imagegen-v2.png","role":"interaction","reason":"Focal animal is complete; distant armored herbivore is water-separated.","reviewMethod":"Original-size focal anatomy and separation audit","reviewBatch":"2026-08-31-three-slot-five-gallery-enrichment-v1","reviewedAt":"2026-08-31","claimBoundary":"Distant animal and behavior are illustrative non-contact context; not representative-eligible."}
     },
     "titanoboa-cerrejonensis": {
       "1": {
