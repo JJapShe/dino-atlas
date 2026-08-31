@@ -1395,6 +1395,26 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "museum-anatomy-reference",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/megateuthis-elliptica-anterior-phragmocone-cutaway-anatomy-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only internal-shell direction comparison",
+      "claimBoundary": "Hard-part order is evidence-led; transparent mantle, exact scale, arm details and coloration are illustrative and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "museum-anatomy-reference",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/megateuthis-elliptica-deep-shelf-ammonite-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "gallerySubrole": "gallery-only non-contact shelf context",
+      "claimBoundary": "The background animals are period-level illustrative context; arm count, fin form, behavior and any association are not asserted or representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "bajocian-european-shelf-ammonite-context",
+      "expectedKind": "anatomy review"
     }
   ],
   "duvalia-dilatata": [
