@@ -183,7 +183,9 @@
         "reviewBatch": "2026-08-28-distinctive-cephalopod-subtypes-v1",
         "reviewedAt": "2026-08-28",
         "claimBoundary": "Diagnostic geometry is diagnosis-led; exact mineral surface illustrative, not representative-eligible."
-      }
+      },
+      "4": {"status":"approved","source":"assets/dinosaurs/duvalia-dilatata-oblique-dorsal-groove-rostrum-imagegen-v2.png","role":"identity-anatomy","subrole":"gallery-only oblique dorsal-groove rostrum comparison","reason":"One strongly laterally compressed rostrum retains a single apex, anterior cavity and dorsal groove in a camera distinct from S3.","reviewMethod":"Original-size single-object, compression, groove, cavity, crop, text and watermark audit","reviewBatch":"2026-08-31-three-slot-ecology-enrichment-v2","reviewedAt":"2026-08-31","claimBoundary":"Diagnostic geometry is diagnosis-led; exact mineral color, texture and perspective are illustrative and not representative-eligible."},
+      "5": {"status":"approved","source":"assets/dinosaurs/duvalia-dilatata-ammonite-carbonate-context-ecology-imagegen-v2.png","role":"interaction","subrole":"gallery-only separated ammonite carbonate-shelf context","reason":"One focal mantle and posterior remain readable; distant ammonite is non-contact period-level context.","reviewMethod":"Original-size focal body, background separation, crop, text and watermark audit","reviewBatch":"2026-08-31-three-slot-ecology-enrichment-v2","reviewedAt":"2026-08-31","claimBoundary":"Focal mantle silhouette is comparative; arms, fins, behavior, exact association and color are illustrative and not representative-eligible."}
     },
     "meganeuropsis-permiana": {
       "1": {

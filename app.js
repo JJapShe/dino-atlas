@@ -1110,8 +1110,8 @@ const dinosaurs = [
     sizeLabel: "전신 비교복원",
     sizeDisplay: "약 40 cm 가설; 로스트룸은 수 cm~10 cm급",
     knowledgeLevel: 3,
-    imageSlots: 3,
-    reviewStatus: "3장 갤러리 · 좌우로 납작한 로스트룸 구조 참조 포함 · 연체부 비교복원",
+    imageSlots: 5,
+    reviewStatus: "5장 갤러리 · 좌우로 납작한 로스트룸 구조 참조 포함 · S4·S5 anatomy review · 연체부 비교복원",
     summary:
       "전기 백악기 테티스해의 벨렘나이트입니다. 가장 단단하게 남는 내부 로스트룸이 둥근 총알보다 좌우로 납작하고 위아래로 깊은 잎 또는 창날 같은 형태여서 다른 벨렘나이트와 구별됩니다. 살아 있는 전신 길이와 지느러미·색은 직접 증거가 부족하므로 보수적인 비교복원으로 표시합니다.",
     features: {
@@ -9192,6 +9192,8 @@ const generatedImageSamples = {
       metadataRecord: "tools/comfyui/distinctive-cephalopod-subtypes-20260828.json",
       representativeEligible: false,
     },
+    {kind:"anatomy review",title:"듀발리아 등쪽 홈 사선 로스트룸 구조",body:"기존 측면 참조와 다른 사선 위쪽 시점에서 앞쪽 공동·길고 얕은 등쪽 홈·단일 꼭짓점을 비교하는 S4입니다. 좌우로 납작하고 위아래로 깊은 내부 구조를 보여 주며, 광물색과 표면은 삽화입니다.",source:"assets/dinosaurs/duvalia-dilatata-oblique-dorsal-groove-rostrum-imagegen-v2.png",variant:"등쪽 홈 사선 로스트룸 구조 이미지 생성 v2",src:"assets/dinosaurs/duvalia-dilatata-oblique-dorsal-groove-rostrum-imagegen-v2.png",gallerySlot:4,galleryRole:"identity-anatomy",phenotype:"pale-calcite-groove-d",habitatKey:"museum-fossil-structure-reference",sourceAttribution:"OpenAI built-in image generation; Duvalia diagnoses supplied compressed-rostrum constraints only",licenseRecord:"Generated project asset; no specimen photograph copied",generationPromptRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/duvalia-dilatata-s4",generationSeed:"service-assigned, not exposed",generationWorkflow:"OpenAI image_gen reference-guided fossil-structure pass; original-size single object, compression, cavity, groove and crop review",reviewStatus:"원본 크기 anatomy-review 수용 · 단일 납작 로스트룸/공동/등쪽 홈 판독 · 대표 승격 금지",anatomyEvidenceBoundary:"compressed outline, alveolar cavity and dorsal groove are diagnosis-led; exact color, surface texture and perspective are illustrative",metadataRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json",representativeEligible:false},
+    {kind:"anatomy review",title:"듀발리아 암모나이트 원경 탄산염 대륙붕 생태",body:"작은 암모나이트를 멀리 둔 전기 백악기 대륙붕의 S5입니다. 주 피사체의 외투막과 뒤쪽 끝을 보수적으로 두고, 암모나이트는 포획이나 직접 공존을 주장하지 않는 비접촉 환경 단서입니다.",source:"assets/dinosaurs/duvalia-dilatata-ammonite-carbonate-context-ecology-imagegen-v2.png",variant:"암모나이트 원경 탄산염 대륙붕 생태 이미지 생성 v2",src:"assets/dinosaurs/duvalia-dilatata-ammonite-carbonate-context-ecology-imagegen-v2.png",gallerySlot:5,galleryRole:"interaction",phenotype:"ochre-blue-carbonate-e",habitatKey:"early-cretaceous-tethyan-carbonate-shelf",sourceAttribution:"OpenAI built-in image generation; period-level marine context and project-approved body identity supplied constraints only",licenseRecord:"Generated project asset; project-owned representative supplied identity geometry only; no external artwork copied",generationPromptRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/duvalia-dilatata-s5",generationSeed:"service-assigned, not exposed",generationWorkflow:"OpenAI image_gen reference-guided ecology pass; original-size focal body and background separation review",reviewStatus:"원본 크기 anatomy-review 수용 · 주 피사체 한 몸/비접촉 배경 판독 · 팔·지느러미·공존·행동은 삽화 · 대표 승격 금지",cooccurrenceConfidence:"ammonite is unnamed period-level context, not a documented encounter",anatomyEvidenceBoundary:"focal mantle silhouette is comparative; detailed arms, fins and background association are not identity evidence",metadataRecord:"tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json",representativeEligible:false},
   ],
   "archaeopteryx-lithographica": [
     {

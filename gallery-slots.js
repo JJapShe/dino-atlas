@@ -1426,6 +1426,26 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "museum-fossil-structure-reference",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/duvalia-dilatata-oblique-dorsal-groove-rostrum-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only oblique dorsal-groove rostrum comparison",
+      "claimBoundary": "Diagnostic geometry is diagnosis-led; exact mineral color, texture and perspective are illustrative and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "museum-fossil-structure-reference",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/duvalia-dilatata-ammonite-carbonate-context-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "gallerySubrole": "gallery-only separated ammonite carbonate-shelf context",
+      "claimBoundary": "Focal mantle silhouette is comparative; arms, fins, behavior, exact association and color are illustrative and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "early-cretaceous-tethyan-carbonate-shelf",
+      "expectedKind": "anatomy review"
     }
   ],
   "lystrosaurus-murrayi": [
