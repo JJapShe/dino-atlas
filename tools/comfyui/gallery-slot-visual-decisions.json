@@ -1120,6 +1120,28 @@
         "reviewedAt": "2026-08-08T02:05:25.920Z",
         "gallerySubrole": "gallery-only non-aggressive foraging reference",
         "claimBoundary": "Broad omnivory is plausible, but roots, insect grubs, log investigation, exact diet choice, place, and moment remain hypothetical."
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/arctodus-simus-bearskull-lateral-structure-reference-imagegen-v2.png",
+        "role": "identity-anatomy",
+        "subrole": "gallery-only skull structure comparison",
+        "reason": "The reference model reads as one high broad bear cranium with short nasals leading into a deep broad moderate muzzle, normal bear-like canines and molars, and no modern living-animal body silhouette.",
+        "reviewMethod": "Original-size high-broad cranium, deep muzzle, bear tooth form, crop, text and watermark audit",
+        "reviewBatch": "2026-08-31-three-slot-ecology-enrichment-v2",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "It is a project-generated comparative model, not a specimen image; exact sutures, dental wear, proportions and all soft tissue are illustrative and not representative-eligible."
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/arctodus-simus-bluehour-river-silhouette-ecology-imagegen-v2.png",
+        "role": "interaction",
+        "subrole": "gallery-only non-contact river silhouette context",
+        "reason": "One compact bear-shaped silhouette with four limbs and a short tail remains distinct on a gravel bar while distant unnamed grazers stay water-separated.",
+        "reviewMethod": "Original-size silhouette continuity, limb count, short-tail, water-separation, crop, text and watermark audit",
+        "reviewBatch": "2026-08-31-three-slot-ecology-enrichment-v2",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "Distance deliberately prevents detailed anatomy claims; all coat, gait, background animals, association and behavior are illustrative and not representative-eligible."
       }
     },
     "glyptodon-reticulatus": {

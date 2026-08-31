@@ -696,8 +696,8 @@ const dinosaurs = [
     sizeLabel: "몸길이",
     sizeDisplay: "약 2.5~3 m(성별·개체 차이)",
     knowledgeLevel: 2,
-    imageSlots: 3,
-    reviewStatus: "3장 갤러리 · S1 count-level pass · S2 review hold · S3 anatomy review · 신생대 전용",
+    imageSlots: 5,
+    reviewStatus: "5장 갤러리 · S1 count-level pass · S2 review hold · S3 서식지 · S4 두개골 구조 · S5 먼 실루엣 생태 · 신생대 전용",
     summary:
       "거대짧은얼굴곰은 플라이스토세 북아메리카에 살았던 매우 큰 안경곰아과 곰입니다. 깊고 넓은 주둥이와 짧은 코뼈 때문에 얼굴이 짧아 보였지만 불독처럼 납작하지 않았고, 현생 불곰처럼 길고 낮은 몸통이나 둥근 어깨 혹보다 비교적 짧은 등과 체중을 받치는 튼튼한 네 다리로 복원하는 것이 안전합니다. 지역에 따라 고기와 식물을 모두 이용한 잡식성이었을 가능성이 큽니다.",
     features: {
@@ -7878,6 +7878,22 @@ const generatedImageSamples = {
       colorEvidence: "dark umber coat, tawny edge light, vegetation and all color placement are hypothetical",
       metadataRecord: "tools/comfyui/arctodus-simus-bodyplan-correction-20260808.json",
       representativeEligible: false,
+    },
+    {
+      kind: "anatomy review",
+      title: "거대짧은얼굴곰 넓은 두개골·깊은 주둥이 구조 참조",
+      body: "높고 넓은 뇌두개와 짧은 코뼈에서 이어지는 깊고 넓은 곰형 주둥이, 보통 길이의 곰형 송곳니와 넓은 어금니를 비교하는 S4 구조 참조입니다. 이는 교육용 비교 모형으로, 실제 표본 사진이나 직접 복제물이 아닙니다. 정확한 두개골 세부·치아 마모·연조직은 이 이미지로 확정하지 않으며 대표로 승격하지 않습니다.",
+      source: "assets/dinosaurs/arctodus-simus-bearskull-lateral-structure-reference-imagegen-v2.png", variant: "넓은 두개골 깊은 주둥이 측면 구조 참조 이미지 생성 v2", src: "assets/dinosaurs/arctodus-simus-bearskull-lateral-structure-reference-imagegen-v2.png", gallerySlot: 4, galleryRole: "identity-anatomy", phenotype: "bone-charcoal-skull-d", habitatKey: "museum-structure-reference",
+      sourceAttribution: "OpenAI built-in image generation; peer-reviewed Arctodus cranial studies supplied broad comparison constraints only", licenseRecord: "Generated project asset; no external specimen photograph, scan or artwork copied", generationPromptRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/arctodus-simus-s4", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image generation; original-size high-broad cranium, deep muzzle, bear molar and crop review", reviewStatus: "원본 크기 structure-reference 수용 · 넓은 두개골/깊은 곰형 주둥이/일반 곰형 치열 판독 · 대표 승격 금지",
+      locality: "museum-style comparative anatomy illustration; no real specimen or locality is depicted", anatomyEvidenceBoundary: "broad cranial and rostral direction is evidence-led; exact sutures, dental wear, element proportions and all soft tissues are reconstructed", metadataRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json", representativeEligible: false,
+    },
+    {
+      kind: "anatomy review",
+      title: "거대짧은얼굴곰과 먼 초식동물의 푸른 황혼 강변",
+      body: "푸른 황혼의 넓은 강 자갈톱에서 한 거대짧은얼굴곰 실루엣이 지나가고, 먼 반대편의 작은 초식동물 실루엣은 물길로 분리된 환경 단서로만 보입니다. 거리와 빛 때문에 털·발가락·정확한 몸 비율은 주장하지 않으며, 접근·사냥·먹이·군집 행동을 뜻하지 않습니다.",
+      source: "assets/dinosaurs/arctodus-simus-bluehour-river-silhouette-ecology-imagegen-v2.png", variant: "푸른 황혼 강변 먼 초식동물 비접촉 실루엣 생태 이미지 생성 v2", src: "assets/dinosaurs/arctodus-simus-bluehour-river-silhouette-ecology-imagegen-v2.png", gallerySlot: 5, galleryRole: "interaction", phenotype: "bluehour-river-e", habitatKey: "late-pleistocene-north-american-river-context",
+      sourceAttribution: "OpenAI built-in image generation; broad Late Pleistocene North American context only", licenseRecord: "Generated project asset; no external artwork, named-artist style, logo or watermark was used", generationPromptRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/arctodus-simus-s5", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image generation; original-size full-silhouette, water-separation and crop review", reviewStatus: "원본 크기 anatomy-review 수용 · 한 곰형 실루엣/네 다리/짧은 꼬리·물길 분리 판독 · 먼 동물·행동은 삽화 · 대표 승격 금지",
+      locality: "generalized Late Pleistocene North American river plain; exact place, season and fauna are hypothetical", cooccurrenceConfidence: "unnamed distant grazers are broad environmental context rather than a documented direct encounter", behaviorEvidence: "no encounter, predation, scavenging, feeding or social relationship is asserted", anatomyEvidenceBoundary: "the silhouette conveys only a broad compact bear outline; coat, distal anatomy, exact gait and background animals are not count-level evidence", colorEvidence: "all sky, water, silhouette and vegetation colors are hypothetical", metadataRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json", representativeEligible: false,
     },
   ],
   "glyptodon-reticulatus": [

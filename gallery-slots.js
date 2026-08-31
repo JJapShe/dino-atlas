@@ -912,6 +912,26 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "late-pleistocene-open-woodland-log-forage",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/arctodus-simus-bearskull-lateral-structure-reference-imagegen-v2.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only skull structure comparison",
+      "claimBoundary": "It is a project-generated comparative model, not a specimen image; exact sutures, dental wear, proportions and all soft tissue are illustrative and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "museum-structure-reference",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/arctodus-simus-bluehour-river-silhouette-ecology-imagegen-v2.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "gallerySubrole": "gallery-only non-contact river silhouette context",
+      "claimBoundary": "Distance deliberately prevents detailed anatomy claims; all coat, gait, background animals, association and behavior are illustrative and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "late-pleistocene-north-american-river-context",
+      "expectedKind": "anatomy review"
     }
   ],
   "glyptodon-reticulatus": [
