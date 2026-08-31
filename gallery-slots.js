@@ -4903,6 +4903,26 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "kem-kem-delta-channel",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/carcharodontosaurus-saharicus-smooth-longlow-skull-anatomy-imagegen-v3.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only smooth skull and tooth direction review",
+      "claimBoundary": "The skull-led Moroccan identity is illustrated conservatively; soft tissue, scale pattern, eye color and all postcranium remain comparative and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "kem-kem-skull-reference",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/carcharodontosaurus-saharicus-sunrise-floodplain-silhouette-ecology-imagegen-v3.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "gallerySubrole": "gallery-only non-contact floodplain silhouette context",
+      "claimBoundary": "The silhouette deliberately cannot verify detailed cranial or postcranial anatomy; all background animals, association and behavior are illustrative and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "kem-kem-floodplain-silhouette-context",
+      "expectedKind": "anatomy review"
     }
   ],
   "giganotosaurus-carolinii": [

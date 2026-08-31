@@ -9184,6 +9184,28 @@
         "reviewMethod": "Original-size full-frame, primary silhouette, limb-count, foot visibility, tail-continuity, habitat, secondary-animal, Tameryraptor-boundary, crop, and artifact inspection",
         "reviewBatch": "2026-08-06-recognition-taxa-initial-gallery-1",
         "reviewedAt": "2026-08-06T09:06:37.134Z"
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/carcharodontosaurus-saharicus-smooth-longlow-skull-anatomy-imagegen-v3.png",
+        "role": "identity-anatomy",
+        "subrole": "gallery-only smooth skull and tooth direction review",
+        "reason": "One long low carcharodontosaurid skull has a smooth unornamented crown and neck plus laterally compressed blade-like teeth; no crest, horn, spikes, sail or armor appears.",
+        "reviewMethod": "Original-size long-low skull, smooth crown, tooth direction, crop, text and watermark audit",
+        "reviewBatch": "2026-08-31-three-slot-ecology-enrichment-v2",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "The skull-led Moroccan identity is illustrated conservatively; soft tissue, scale pattern, eye color and all postcranium remain comparative and not representative-eligible."
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/carcharodontosaurus-saharicus-sunrise-floodplain-silhouette-ecology-imagegen-v3.png",
+        "role": "interaction",
+        "subrole": "gallery-only non-contact floodplain silhouette context",
+        "reason": "One large smooth-backed biped silhouette is separated by a broad channel from distant small sauropod silhouettes in a distinct dawn composition.",
+        "reviewMethod": "Original-size silhouette continuity, one-tail, water-separation, crop, text and watermark audit",
+        "reviewBatch": "2026-08-31-three-slot-ecology-enrichment-v2",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "The silhouette deliberately cannot verify detailed cranial or postcranial anatomy; all background animals, association and behavior are illustrative and not representative-eligible."
       }
     },
     "giganotosaurus-carolinii": {

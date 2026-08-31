@@ -2973,8 +2973,8 @@ const dinosaurs = [
     region: "모로코·북아프리카",
     length: 12.5,
     knowledgeLevel: 2,
-    imageSlots: 3,
-    reviewStatus: "3장 갤러리 · S1 대표 통과 · S2 review hold · S3 anatomy review · 비교복원 경계",
+    imageSlots: 5,
+    reviewStatus: "5장 갤러리 · S1 대표 통과 · S2 review hold · S3 서식지 · S4 두개골 검토 · S5 실루엣 생태 · 비교복원 경계",
     summary:
       "세노마눔절 모로코 켐켐층군의 대형 카르카로돈토사우루스과 수각류입니다. 길고 낮은 두개골과 옆으로 납작하며 톱니가 있는 큰 치아가 핵심 직접 단서입니다. 2025년 이집트 표본이 Tameryraptor로 분리된 뒤의 모로코 C. saharicus 기준을 사용하며, 두개골 밖의 몸통·사지·꼬리는 근연종 기반 비교복원으로 표시합니다. 현재 v2 전신은 이 경계를 유지한 독립 원본 크기 count-level 검수를 통과한 대표입니다.",
     features: {
@@ -15236,6 +15236,22 @@ const generatedImageSamples = {
       colorEvidence: "color, pattern, and habitat lighting are hypothetical",
       metadataRecord: "tools/comfyui/recognition-taxa-expansion-20260806.json",
       representativeEligible: false,
+    },
+    {
+      kind: "anatomy review",
+      title: "카르카로돈토사우루스 매끈한 긴·낮은 두개골 검토",
+      body: "모로코 C. saharicus의 길고 낮은 두개골과 길게 뻗은 주둥이, 옆으로 납작한 칼날형 이빨을 가까이 비교하는 S4입니다. 머리와 짧은 목은 매끈한 작은 비늘만 두고 볏·뿔·등가시·피부 갑옷은 넣지 않았습니다. 전신과 연조직 비율은 이 두개골 검토본으로 확정하지 않으며, 2025년 분리된 Tameryraptor의 형질을 섞지 않습니다.",
+      source: "assets/dinosaurs/carcharodontosaurus-saharicus-smooth-longlow-skull-anatomy-imagegen-v3.png", variant: "매끈한 긴 낮은 두개골 측면 해부 검토 이미지 생성 v3", src: "assets/dinosaurs/carcharodontosaurus-saharicus-smooth-longlow-skull-anatomy-imagegen-v3.png", gallerySlot: 4, galleryRole: "identity-anatomy", phenotype: "sand-slate-skull-d", habitatKey: "kem-kem-skull-reference",
+      sourceAttribution: "OpenAI built-in image generation; Moroccan C. saharicus cranial literature supplied identity constraints only", licenseRecord: "Generated project asset; no external artwork or fossil figure copied", generationPromptRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/carcharodontosaurus-saharicus-s4", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image generation; original-size long-low skull, smooth crown, tooth and crop review", reviewStatus: "원본 크기 anatomy-review 수용 · 길고 낮은 두개골/매끈한 머리·목/칼날형 치아 판독 · 대표 승격 금지",
+      formation: "Kem Kem Group", locality: "Moroccan Kem Kem formation-level reconstruction; exact lighting and soft tissues are hypothetical", anatomyEvidenceBoundary: "cranial proportion and blade-like tooth direction are identity-led; soft tissue, external scale pattern and all postcranium remain reconstructed", taxonomicBoundary: "Egyptian material separated as Tameryraptor in 2025 is excluded from this Moroccan C. saharicus guide", colorEvidence: "all skin color and eye color are hypothetical", metadataRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json", representativeEligible: false,
+    },
+    {
+      kind: "anatomy review",
+      title: "카르카로돈토사우루스와 먼 용각류의 켐켐 일출 생태",
+      body: "일출의 넓은 켐켐 범람원에서 카르카로돈토사우루스는 떨어진 모래톱을 지나고, 먼 용각류 실루엣은 넓은 물길 건너의 환경 단서로만 보입니다. 빛 때문에 이 장면의 세부 두개골·피부·사지 형질은 확정하지 않으며, 추적·사냥·상호작용은 뜻하지 않습니다.",
+      source: "assets/dinosaurs/carcharodontosaurus-saharicus-sunrise-floodplain-silhouette-ecology-imagegen-v3.png", variant: "일출 범람원 먼 용각류 비접촉 실루엣 생태 이미지 생성 v3", src: "assets/dinosaurs/carcharodontosaurus-saharicus-sunrise-floodplain-silhouette-ecology-imagegen-v3.png", gallerySlot: 5, galleryRole: "interaction", phenotype: "sunrise-silhouette-e", habitatKey: "kem-kem-floodplain-silhouette-context",
+      sourceAttribution: "OpenAI built-in image generation; Kem Kem floodplain and broad Cenomanian fauna context only", licenseRecord: "Generated project asset; no external artwork, named-artist style, logo or watermark was used", generationPromptRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/carcharodontosaurus-saharicus-s5", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image generation; original-size silhouette continuity, water separation and crop review", reviewStatus: "원본 크기 anatomy-review 수용 · 한 수각류 실루엣/한 꼬리/물길 분리 판독 · 먼 용각류·행동은 삽화 · 대표 승격 금지",
+      formation: "Kem Kem Group", locality: "generalized Cenomanian North African floodplain; exact place, season and animal association are hypothetical", cooccurrenceConfidence: "distant sauropods are broad contemporaneous environmental context only, not a documented encounter", behaviorEvidence: "no approach, pursuit, predation, feeding or social relationship is asserted", anatomyEvidenceBoundary: "the focal silhouette conveys only a conservative large-biped outline; details of skull, skin, limbs and background taxa are not count-level evidence", taxonomicBoundary: "this scene does not add postcranial claims or Tameryraptor traits to Moroccan C. saharicus", colorEvidence: "all light, shadow and environment colors are hypothetical", metadataRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json", representativeEligible: false,
     },
   ],
   "giganotosaurus-carolinii": [
