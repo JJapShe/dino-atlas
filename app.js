@@ -50,8 +50,8 @@ const dinosaurs = [
     sizeLabel: "몸길이 추정",
     sizeDisplay: "전신 화석이 없어 비교복원에 따라 크게 달라짐; 단일 확정값 없음",
     knowledgeLevel: 2,
-    imageSlots: 3,
-    reviewStatus: "3장 갤러리 · S1 단일 정중앙 상승 C자 치열 대표 승인 · S2 review hold · S3 anatomy review · 고생대 전용",
+    imageSlots: 5,
+    reviewStatus: "5장 갤러리 · S1 단일 정중앙 상승 C자 치열 대표 승인 · S2 review hold · S3·S4 중앙 치열 검토 · S5 닫힌 입 비접촉 생태 · 고생대 전용",
     summary:
       "헬리코프리온은 페름기의 연골어류 친척입니다. 하나의 연속된 나선 치열이 아래턱 정중앙을 차지하며, 살아 있을 때는 바깥쪽 기능치가 열린 C자·쉼표 모양으로 휘고 양끝과 오래된 안쪽 코일은 턱 연골과 살 속에 잠겼던 것으로 복원합니다. 구강 바닥에서는 이 치열을 받치는 한 치관 너비의 좁은 정중앙 능선만 솟고, 그 양옆에는 좌우 아래턱 판이나 U자 입술 다리 없이 어두운 빈 공간이 남도록 표현했습니다. 정확한 연부조직 윤곽과 몸통·지느러미는 비교복원입니다.",
     features: {
@@ -6334,6 +6334,20 @@ const generatedImageSamples = {
       generationPromptRecord: "tools/comfyui/helicoprion-single-midline-ridge-correction-20260827.json#records/helicoprion-davisii-ecology-v7", generationSeed: "service-assigned, not exposed",
       generationWorkflow: "OpenAI image_gen ecology variation plus targeted extra-dorsal cleanup; one slim midline C ridge, black space on both sides, distant non-contact fauna, full-body and crop review", reviewStatus: "원본 크기 anatomy-review 수용 · 단일 정중앙 상승 능선/양옆 열린 구강/부분 C자/등지느러미 하나/전신/비접촉 판독 · 먹이·군집·몸통 가설 · 대표 승격 금지",
       locality: "generalized early Permian marine shelf", anatomyEvidenceBoundary: "the open cavity and narrow curved median ridge are readable; exact mouth rim, buried coil, prey identity, behavior and postcranial proportions are hypothetical", metadataRecord: "tools/comfyui/helicoprion-single-midline-ridge-correction-20260827.json", representativeEligible: false,
+    },
+    {
+      kind: "anatomy review", title: "헬리코프리온 정면 사선 단일 중앙 치열 능선 검토",
+      body: "넓게 열린 어두운 구강 안에서 한 치관 너비의 단일 정중앙 치열 능선만 부분 C자 호로 솟는지를 보는 S4입니다. 능선 양옆은 빈 구강으로 남고 양끝·오래된 안쪽 코일은 턱 조직에 잠겨 있습니다. 이 장면은 입술과 연골의 정확한 윤곽·몸통 비율을 확정하지 않으며 대표로 승격하지 않습니다.",
+      source: "assets/dinosaurs/helicoprion-davisii-median-ridge-openmouth-anatomy-imagegen-v8.png", variant: "단일 정중앙 C자 치열 능선 전면 사선 검토 이미지 생성 v8", src: "assets/dinosaurs/helicoprion-davisii-median-ridge-openmouth-anatomy-imagegen-v8.png", gallerySlot: 4, galleryRole: "identity-anatomy", phenotype: "slate-openmouth-d", habitatKey: "early-permian-marine-anatomy-reference",
+      sourceAttribution: "OpenAI built-in image generation; CT and functional studies supplied median-whorl anatomy constraints only", licenseRecord: "Generated project asset; no external scientific figure or artwork copied", generationPromptRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/helicoprion-davisii-s4", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image generation; original-size single-midline ridge, bilateral open-mouth space, partial-C and fin-count review", reviewStatus: "원본 크기 anatomy-review 수용 · 단일 정중앙 능선/양옆 열린 구강/부분 C자/등지느러미 하나 판독 · 대표 승격 금지",
+      locality: "generalized early Permian marine shelf", anatomyEvidenceBoundary: "singular median whorl direction is evidence-led; exact lip, cartilage, buried turn, body form, fins, color and scale remain reconstructed", metadataRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json", representativeEligible: false,
+    },
+    {
+      kind: "anatomy review", title: "헬리코프리온 닫힌 입과 먼 두족류의 페름기 바다",
+      body: "입을 닫은 헬리코프리온이 넓은 바다를 지나고, 작은 두족류와 물고기는 멀리 분리된 환경 단서로만 보입니다. 치열은 닫힌 턱 안에 감춰 두어 생태 장면에서 잘못된 좌우 치열로 읽히지 않게 했습니다. 먹이 선택·추적·상호작용은 뜻하지 않습니다.",
+      source: "assets/dinosaurs/helicoprion-davisii-closed-mouth-cephalopod-context-ecology-imagegen-v8.png", variant: "닫힌 입 먼 두족류 비접촉 생태 이미지 생성 v8", src: "assets/dinosaurs/helicoprion-davisii-closed-mouth-cephalopod-context-ecology-imagegen-v8.png", gallerySlot: 5, galleryRole: "interaction", phenotype: "blue-openwater-e", habitatKey: "early-permian-openwater-cephalopod-context",
+      sourceAttribution: "OpenAI built-in image generation; Early Permian marine setting and Helicoprion constraints only", licenseRecord: "Generated project asset; no external artwork, named-artist style, logo or watermark was used", generationPromptRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json#records/helicoprion-davisii-s5", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image generation; original-size full-body, closed-mouth, one-dorsal, separation and crop review", reviewStatus: "원본 크기 anatomy-review 수용 · 닫힌 입/등지느러미 하나/한 몸·꼬리 판독 · 먼 두족류·물고기·행동은 삽화 · 대표 승격 금지",
+      locality: "generalized early Permian open sea", cooccurrenceConfidence: "unnamed cephalopods and fish are broad period-level background context rather than a documented encounter", behaviorEvidence: "no feeding, pursuit, prey choice or association is asserted", anatomyEvidenceBoundary: "the closed-mouth focal body is readable; hidden oral anatomy and all background animals are not count-level evidence", colorEvidence: "all pigmentation, light and habitat details are hypothetical", metadataRecord: "tools/comfyui/three-slot-ecology-interaction-enrichment-20260830.json", representativeEligible: false,
     },
   ],
   "titanomyrma-lubei": [

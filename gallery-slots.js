@@ -79,6 +79,26 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "early-permian-cephalopod-school",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/helicoprion-davisii-median-ridge-openmouth-anatomy-imagegen-v8.png",
+      "gallerySlot": 4,
+      "galleryRole": "identity-anatomy",
+      "gallerySubrole": "gallery-only additional median-whorl review",
+      "claimBoundary": "The single median-whorl direction is evidence-led; exact lips, cartilage, buried geometry, body form, fins and color are reconstructed and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "early-permian-marine-anatomy-reference",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/helicoprion-davisii-closed-mouth-cephalopod-context-ecology-imagegen-v8.png",
+      "gallerySlot": 5,
+      "galleryRole": "interaction",
+      "gallerySubrole": "gallery-only closed-mouth non-contact open-water context",
+      "claimBoundary": "Oral anatomy is intentionally hidden; background animals, all interactions, behavior, body proportions, fins and color are illustrative and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "early-permian-openwater-cephalopod-context",
+      "expectedKind": "anatomy review"
     }
   ],
   "titanomyrma-lubei": [

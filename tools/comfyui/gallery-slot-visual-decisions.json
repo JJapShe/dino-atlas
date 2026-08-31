@@ -277,6 +277,28 @@
         "reviewBatch": "2026-08-27-helicoprion-single-midline-ridge-correction-v7",
         "reviewedAt": "2026-08-27",
         "claimBoundary": "Prey identity, behavior, exact oral rim and soft tissue, buried coil and postcranial proportions are illustrative; not representative-eligible."
+      },
+      "4": {
+        "status": "approved",
+        "source": "assets/dinosaurs/helicoprion-davisii-median-ridge-openmouth-anatomy-imagegen-v8.png",
+        "role": "identity-anatomy",
+        "subrole": "gallery-only additional median-whorl review",
+        "reason": "One crown-width median tooth-bearing ridge rises in a partial C curve inside a dark oral cavity, with empty black space on both sides and no paired lower-jaw tooth shelves.",
+        "reviewMethod": "Original-size single-midline-ridge, bilateral open-mouth space, partial-C, no-paired-jaw, one-dorsal, crop, text and watermark audit",
+        "reviewBatch": "2026-08-31-three-slot-ecology-enrichment-v2",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "The single median-whorl direction is evidence-led; exact lips, cartilage, buried geometry, body form, fins and color are reconstructed and not representative-eligible."
+      },
+      "5": {
+        "status": "approved",
+        "source": "assets/dinosaurs/helicoprion-davisii-closed-mouth-cephalopod-context-ecology-imagegen-v8.png",
+        "role": "interaction",
+        "subrole": "gallery-only closed-mouth non-contact open-water context",
+        "reason": "A full closed-mouth Helicoprion has one dorsal fin and a complete body, while distant unnamed cephalopods and fish remain clearly separated in a distinct composition.",
+        "reviewMethod": "Original-size full-body, closed-mouth, one-dorsal, separation, crop, text and watermark audit",
+        "reviewBatch": "2026-08-31-three-slot-ecology-enrichment-v2",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "Oral anatomy is intentionally hidden; background animals, all interactions, behavior, body proportions, fins and color are illustrative and not representative-eligible."
       }
     },
     "titanomyrma-lubei": {
