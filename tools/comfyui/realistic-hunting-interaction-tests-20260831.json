@@ -1,0 +1,44 @@
+{
+  "batch": "2026-08-31 realistic hunting interaction tests",
+  "policy": "All images are non-graphic, anatomy-review-only test scenes. They cannot replace representative art, and spacing is used to avoid claiming a direct attack, injury, successful predation, or observed event.",
+  "records": {
+    "velociraptor-mongoliensis-protoceratops-s8": {
+      "asset": "assets/dinosaurs/velociraptor-mongoliensis-protoceratops-noncontact-leap-interaction-imagegen-v1.png",
+      "promptSummary": "Djadokhta dune-margin scene with one feathered Velociraptor leaping before contact toward one four-limbed Protoceratops, with raised sickle claws and open space between them.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size raptor limb, raised-second-toe, feather, Protoceratops limb, separation and crop review",
+      "sources": ["Djadokhta Formation association context", "Velociraptor and Protoceratops anatomy guides"],
+      "review": "accepted anatomy review; non-representative; exact behavior, interaction and outcome illustrative, non-graphic"
+    },
+    "tyrannosaurus-rex-edmontosaurus-s8": {
+      "asset": "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-channel-stalk-interaction-imagegen-v1.png",
+      "promptSummary": "Terminal Cretaceous channel scene with a separated T. rex on one bank and Edmontosaurus across shallow water, presenting only a stalking-tension test before contact.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size T. rex two-finger arm, limb, tail, hadrosaur body, water separation and crop review",
+      "sources": ["Hell Creek regional taxon context", "Tyrannosaurus and Edmontosaurus anatomy guides"],
+      "review": "accepted anatomy review; non-representative; exact pairing, behavior and outcome illustrative, non-graphic"
+    },
+    "tyrannosaurus-rex-triceratops-s9": {
+      "asset": "assets/dinosaurs/tyrannosaurus-rex-triceratops-drycreek-standoff-interaction-imagegen-v1.png",
+      "promptSummary": "Terminal Cretaceous dry-creek standoff with separated T. rex and low-headed Triceratops, presenting defensive tension before any contact.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size T. rex two-finger arm, grounded limbs, Triceratops horn-frill-limb, separation and crop review",
+      "sources": ["Hell Creek regional taxon context", "Tyrannosaurus and Triceratops anatomy guides"],
+      "review": "accepted anatomy review; non-representative; exact encounter, defensive behavior and outcome illustrative, non-graphic"
+    },
+    "allosaurus-fragilis-camptosaurus-s8": {
+      "asset": "assets/dinosaurs/allosaurus-fragilis-camptosaurus-sandbar-watch-interaction-imagegen-v1.png",
+      "promptSummary": "Morrison Formation forest-edge scene with one low-standing Allosaurus and one full Camptosaurus on the far sandbar, separated by a shallow braided channel before any contact.",
+      "seed": "service-assigned, not exposed",
+      "workflow": "OpenAI built-in image generation; original-size Allosaurus low-brow, three-finger arm, limb, tail, Camptosaurus full-body, separation and crop review",
+      "sources": ["Morrison Formation taxon context", "Allosaurus and Camptosaurus anatomy guides"],
+      "review": "accepted anatomy review; non-representative; exact pairing, behavior and outcome illustrative, non-graphic"
+    }
+  },
+  "rejected": {
+    "arctodus-modern-bear-drift": "Several live-body Arctodus drafts were not promoted because the rounded shoulder or barrel silhouette resembled a living grizzly too closely.",
+    "carcharodontosaurus-ornament-drift": "Several full-body Carcharodontosaurus drafts were not promoted because they introduced dorsal scutes, bumps, or non-conservative head/body forms.",
+    "deinonychus-tenontosaurus-missing-taxon": "The otherwise legible non-contact draft was not promoted because Deinonychus and Tenontosaurus are not catalog taxa in this build.",
+    "tarbosaurus-saurolophus-channel-duplication": "The otherwise legible Tarbosaurus draft was not promoted because it repeats the existing river-separated Saurolophus composition rather than adding meaningful camera or action diversity."
+  }
+}

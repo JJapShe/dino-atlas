@@ -1693,8 +1693,8 @@ const dinosaurs = [
     region: "북아메리카",
     length: 8.5,
     knowledgeLevel: 1,
-    imageSlots: 7,
-    reviewStatus: "7장 갤러리 · S7 해부 검토",
+    imageSlots: 8,
+    reviewStatus: "8장 갤러리 · S7 해부 검토 · S8 캄프토사우루스 비접촉 관찰 검토",
     summary:
       "모리슨층의 대형 수각류로, 티라노사우루스보다 길고 낮은 머리, 눈앞의 작은 한 쌍 눈물뼈 돌기, 강한 세 손가락 앞다리가 핵심 구분점입니다.",
     features: {
@@ -2891,8 +2891,8 @@ const dinosaurs = [
     region: "북아메리카",
     length: 12.3,
     knowledgeLevel: 1,
-    imageSlots: 7,
-    reviewStatus: "7장 갤러리 · S7 해부 검토",
+    imageSlots: 9,
+    reviewStatus: "9장 갤러리 · S7 해부 검토 · S8 추적 · S9 방어 대치 검토",
     summary:
       "후기 백악기 헬크리크의 대형 수각류입니다. 옆에서 깊고 뒤쪽이 매우 넓으며 주둥이로 갈수록 좁아지는 두개골, 입을 다물면 이빨을 덮는 입술, 매우 작은 두 손가락 앞다리와 비늘 외피를 핵심 단서로 봅니다.",
     features: {
@@ -3689,8 +3689,8 @@ const dinosaurs = [
     region: "몽골",
     length: 2.0,
     knowledgeLevel: 1,
-    imageSlots: 7,
-    reviewStatus: "7장 갤러리 · S7 해부 검토",
+    imageSlots: 8,
+    reviewStatus: "8장 갤러리 · S7 해부 검토 · S8 프로토케라톱스 비접촉 도약 검토",
     summary:
       "드자도흐타층의 소형 드로마에오사우루스류로, 길고 낮은 이빨 주둥이와 깃털 달린 앞다리, 들어 올린 둘째 발가락 낫발톱이 핵심입니다.",
     features: {
@@ -11993,6 +11993,31 @@ const generatedImageSamples = {
       variant: "검수 생성",
       src: "assets/dinosaurs/allosaurus-fragilis.png",
     },
+    {
+      kind: "anatomy review",
+      title: "알로사우루스와 캄프토사우루스의 모래톱 너머 관찰",
+      body: "모리슨층의 얕은 망상 수로를 사이에 두고 한 알로사우루스가 숲 가장자리에서 몸을 낮추고, 한 캄프토사우루스는 반대편 모래톱에 선 장면입니다. 물길과 빈 공간이 둘을 분리하며, 쫓기·물림·접촉·상처는 없습니다. 사냥 성공이나 실제 만남을 말하지 않는 무유혈 관찰-긴장도 테스트입니다.",
+      source: "assets/dinosaurs/allosaurus-fragilis-camptosaurus-sandbar-watch-interaction-imagegen-v1.png",
+      variant: "캄프토사우루스 모래톱 너머 비접촉 관찰 검수 이미지 생성 v1",
+      src: "assets/dinosaurs/allosaurus-fragilis-camptosaurus-sandbar-watch-interaction-imagegen-v1.png",
+      gallerySlot: 8,
+      galleryRole: "interaction",
+      phenotype: "sunset-sandbar-hunt-test-h",
+      habitatKey: "morrison-braided-channel-watch-test",
+      sourceAttribution: "OpenAI built-in image generation; Morrison Formation taxon and anatomy constraints only",
+      licenseRecord: "Generated project asset; no external artwork, named-artist style, logo or watermark was used",
+      generationPromptRecord: "tools/comfyui/realistic-hunting-interaction-tests-20260831.json#records/allosaurus-fragilis-camptosaurus-s8",
+      generationSeed: "service-assigned, not exposed",
+      generationWorkflow: "OpenAI image generation; original-size Allosaurus skull, three-finger arm, limb, tail, Camptosaurus full-body and water-separation review",
+      reviewStatus: "원본 크기 anatomy-review 수용 · 알로사우루스 낮은 눈두덩·세 손가락/두 다리·꼬리와 캄프토사우루스 전신·물길 분리 판독 · 사냥 행동은 삽화 · 대표 승격 금지",
+      locality: "generalized Late Jurassic Morrison Formation floodplain",
+      cooccurrenceConfidence: "both taxa occur in the Morrison Formation, while this exact pairing and location are illustrative",
+      behaviorEvidence: "watching posture is a narrative test only; no observed chase, contact, injury, predation or outcome is asserted",
+      anatomyEvidenceBoundary: "both bodies remain readable but fine fingers, feet and exact stance are reconstructed",
+      colorEvidence: "all color, light, water and vegetation are hypothetical",
+      metadataRecord: "tools/comfyui/realistic-hunting-interaction-tests-20260831.json",
+      representativeEligible: false,
+    },
   ],
   "marshosaurus-bicentesimus": [
     {
@@ -14916,6 +14941,22 @@ const generatedImageSamples = {
       reviewStatus: "scene-scale anatomy, ecology, composition and responsive review supported; published for ecosystem use only",
       metadataRecord: "tools/comfyui/kpg-dim-sky-ecosystem-scene-20260803.json",
       representativeEligible: false,
+    },
+    {
+      kind: "anatomy review",
+      title: "티라노사우루스와 에드몬토사우루스의 물길 건너 추적",
+      body: "해 질 무렵 한 티라노사우루스가 가까운 진흙 둑에서 조심스레 접근하고, 한 에드몬토사우루스는 얕은 물길 건너 갈대에서 고개를 든 장면입니다. 접촉·물림·추격·상처는 없으며, 물길이 둘을 분리합니다. 두 종의 같은 순간 행동이나 실제 사냥 성공을 뜻하지 않는 무유혈 사냥-긴장도 테스트입니다.",
+      source: "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-channel-stalk-interaction-imagegen-v1.png", variant: "에드몬토사우루스 물길 건너 비접촉 추적 검수 이미지 생성 v1", src: "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-channel-stalk-interaction-imagegen-v1.png", gallerySlot: 8, galleryRole: "interaction", phenotype: "dusk-channel-hunt-test-h", habitatKey: "hell-creek-channel-stalk-test",
+      sourceAttribution: "OpenAI built-in image generation; Hell Creek taxon and anatomy constraints only", licenseRecord: "Generated project asset; no external artwork, named-artist style, logo or watermark was used", generationPromptRecord: "tools/comfyui/realistic-hunting-interaction-tests-20260831.json#records/tyrannosaurus-rex-edmontosaurus-s8", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image generation; original-size two-finger arm, limb, tail, water-separation and non-contact review", reviewStatus: "원본 크기 anatomy-review 수용 · 티라노 두 손가락·두 다리·꼬리/에드몬토사우루스 전신·물길 분리 판독 · 사냥 성공·행동은 삽화 · 대표 승격 금지",
+      locality: "generalized terminal Cretaceous western North American floodplain", cooccurrenceConfidence: "both taxa occur in broadly overlapping terminal Cretaceous North American contexts, but this exact pairing and location are illustrative", behaviorEvidence: "stalking intent is a narrative test only; no observed chase, contact, injury, predation or outcome is asserted", anatomyEvidenceBoundary: "both bodies remain readable but fine digits, foot details and exact posture are not count-level evidence", colorEvidence: "all color, light, water and vegetation are hypothetical", metadataRecord: "tools/comfyui/realistic-hunting-interaction-tests-20260831.json", representativeEligible: false,
+    },
+    {
+      kind: "anatomy review",
+      title: "티라노사우루스와 트리케라톱스의 마른 개울 대치",
+      body: "마른 개울을 사이에 두고 한 티라노사우루스가 몸을 낮추고, 한 트리케라톱스는 머리를 낮춰 방어 자세를 취한 비접촉 장면입니다. 둘은 여러 몸길이만큼 떨어져 있고 물림·돌진·상처는 없습니다. 실제 공격이나 승패를 말하지 않는 방어 반응 테스트 장면입니다.",
+      source: "assets/dinosaurs/tyrannosaurus-rex-triceratops-drycreek-standoff-interaction-imagegen-v1.png", variant: "트리케라톱스 마른 개울 비접촉 대치 검수 이미지 생성 v1", src: "assets/dinosaurs/tyrannosaurus-rex-triceratops-drycreek-standoff-interaction-imagegen-v1.png", gallerySlot: 9, galleryRole: "interaction", phenotype: "overcast-defense-test-i", habitatKey: "hell-creek-drycreek-defense-test",
+      sourceAttribution: "OpenAI built-in image generation; Hell Creek taxon and anatomy constraints only", licenseRecord: "Generated project asset; no external artwork, named-artist style, logo or watermark was used", generationPromptRecord: "tools/comfyui/realistic-hunting-interaction-tests-20260831.json#records/tyrannosaurus-rex-triceratops-s9", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image generation; original-size two-finger arm, grounded limbs, three-horn frill, separation and non-contact review", reviewStatus: "원본 크기 anatomy-review 수용 · 티라노 두 손가락·두 다리·꼬리/트리케라톱스 프릴·세 뿔·네 다리 판독 · 공격·행동은 삽화 · 대표 승격 금지",
+      locality: "generalized terminal Cretaceous western North American open woodland", cooccurrenceConfidence: "both taxa occur in broadly overlapping terminal Cretaceous North American contexts, but this exact encounter and setting are illustrative", behaviorEvidence: "the defensive posture is a visual test only; no observed confrontation, charging, injury or outcome is asserted", anatomyEvidenceBoundary: "full bodies and primary structures are readable, while distal anatomy and exact stance remain reconstructed", colorEvidence: "all color, light, plants and terrain are hypothetical", metadataRecord: "tools/comfyui/realistic-hunting-interaction-tests-20260831.json", representativeEligible: false,
     },
   ],
   "yutyrannus-huali": [
@@ -21597,6 +21638,14 @@ const generatedImageSamples = {
       variant: "검수용 생성",
       src: "assets/dinosaurs/velociraptor-mongoliensis.png",
     },
+    {
+      kind: "anatomy review",
+      title: "벨로키랍토르와 프로토케라톱스의 비접촉 도약",
+      body: "한 벨로키랍토르가 사구 가장자리에서 낮게 도약하고, 한 프로토케라톱스는 네 다리로 방어한 채 맞선 장면입니다. 올라간 낫발톱은 닿기 전이며 두 동물 사이에 빈 공간이 있습니다. 피·물림·부상은 없고, 실제 싸움 화석을 그대로 재현하거나 이 장면의 결과를 말하지 않는 무유혈 사냥-긴장도 테스트입니다.",
+      source: "assets/dinosaurs/velociraptor-mongoliensis-protoceratops-noncontact-leap-interaction-imagegen-v1.png", variant: "프로토케라톱스 비접촉 도약 사냥 긴장도 검수 이미지 생성 v1", src: "assets/dinosaurs/velociraptor-mongoliensis-protoceratops-noncontact-leap-interaction-imagegen-v1.png", gallerySlot: 8, galleryRole: "interaction", phenotype: "dune-leap-hunt-test-h", habitatKey: "djadokhta-protoceratops-context-test",
+      sourceAttribution: "OpenAI built-in image generation; Djadokhta Formation taxon and anatomy constraints only", licenseRecord: "Generated project asset; no external artwork, named-artist style, logo or watermark was used", generationPromptRecord: "tools/comfyui/realistic-hunting-interaction-tests-20260831.json#records/velociraptor-mongoliensis-protoceratops-s8", generationSeed: "service-assigned, not exposed", generationWorkflow: "OpenAI image generation; original-size feathered forelimb, raised second toe, four-limb Protoceratops, separation and crop review", reviewStatus: "원본 크기 anatomy-review 수용 · 깃털 앞다리/올라간 낫발톱·한 꼬리/프로토케라톱스 네 다리·작은 프릴 판독 · 접촉·사냥 결과는 삽화 · 대표 승격 금지",
+      locality: "generalized Late Cretaceous Mongolian dune-margin reconstruction", cooccurrenceConfidence: "the two taxa have well-known broad Djadokhta Formation association, while this exact instant is illustrative", behaviorEvidence: "the leap stops before contact; no direct reconstruction of a specific fossil fight, injury or outcome is asserted", anatomyEvidenceBoundary: "the principal limbs and focal raptor feathering are readable, while fine digits, exact plumage and posture remain reconstructed", colorEvidence: "all color, light, sand and vegetation are hypothetical", metadataRecord: "tools/comfyui/realistic-hunting-interaction-tests-20260831.json", representativeEligible: false,
+    },
   ],
   "brachiosaurus-altithorax": [
     {
@@ -26983,6 +27032,8 @@ const gallerySlotRoleLabels = {
   interaction: "생태 상호작용",
   "social-growth-defense": "사회·성장·방어",
   "alternate-habitat-behavior": "대체 서식지·행동",
+  "realistic-hunting-test": "비접촉 사냥 긴장도",
+  "defense-tension-test": "비접촉 방어 대치",
 };
 
 const gallerySlotAssignmentProblems = [];
@@ -27120,6 +27171,8 @@ const publicGalleryRoleLabels = Object.freeze({
   interaction: "함께 살던 생물",
   "social-growth-defense": "무리와 행동",
   "alternate-habitat-behavior": "다양한 장면",
+  "realistic-hunting-test": "사냥 전 긴장감",
+  "defense-tension-test": "서로 맞선 순간",
 });
 
 function getPublicGalleryFallback(dino, role) {
@@ -27135,6 +27188,8 @@ function getPublicGalleryFallback(dino, role) {
     interaction: "같은 시대와 지역의 생물들이 서로 거리를 두고 살아가는 모습을 상상해 구성했습니다.",
     "social-growth-defense": "무리 생활과 행동은 화석으로 모두 알 수 없으므로, 가능한 생태 장면 가운데 하나로 표현했습니다.",
     "alternate-habitat-behavior": `${dino.koreanName}을 다른 거리와 방향에서 살펴볼 수 있는 복원 장면입니다.`,
+    "realistic-hunting-test": "두 생물이 안전한 거리를 둔 채 서로를 살피는 모습을 상상해 구성했습니다. 실제 사냥의 결과를 보여 주는 장면은 아닙니다.",
+    "defense-tension-test": "두 생물이 거리를 둔 채 조심스럽게 마주 보는 모습을 상상해 구성했습니다. 실제 싸움이나 승패를 뜻하지는 않습니다.",
   };
   return fallbacks[role] || `${dino.koreanName}의 모습을 보여 주는 과학 복원 그림입니다.`;
 }

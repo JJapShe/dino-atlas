@@ -22,6 +22,8 @@ const SLOT_ROLES = [
   { slot: 5, key: "interaction", label: "ecological interaction", kind: "anatomy review" },
   { slot: 6, key: "social-growth-defense", label: "social, growth, or defense", kind: "anatomy review" },
   { slot: 7, key: "alternate-habitat-behavior", label: "alternate habitat or behavior", kind: "anatomy review" },
+  { slot: 8, key: "realistic-hunting-test", label: "realistic low-contact hunting test", kind: "anatomy review" },
+  { slot: 9, key: "defense-tension-test", label: "defense-tension interaction test", kind: "anatomy review" },
 ];
 const RICHNESS_MIN_IMAGES = 6;
 const LEVEL_ONE_RICHNESS_TARGET = 7;

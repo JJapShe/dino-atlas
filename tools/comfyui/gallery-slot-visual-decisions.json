@@ -2683,6 +2683,15 @@
         "reviewMethod": "Original-size full-frame inspection against both identity checklists after rejecting the generic first attempt and long-necked v2; the v3 edit, project-internal approved identity references, and NPS exact-taxon Carnegie Quarry records were cross-checked",
         "reviewBatch": "2026-08-02-lv1-portrait-ecology-batch-1",
         "reviewedAt": "2026-08-02T08:52:50.309Z"
+      },
+      "8": {
+        "status": "approved",
+        "source": "assets/dinosaurs/allosaurus-fragilis-camptosaurus-sandbar-watch-interaction-imagegen-v1.png",
+        "role": "interaction",
+        "reason": "The low-contact Morrison interaction test keeps the Allosaurus low brow ridges, three-finger forelimb, two hind limbs and full tail readable while a full Camptosaurus is separated across the shallow channel. It makes no contact, injury or outcome claim.",
+        "reviewMethod": "Original-size full-frame inspection of skull, visible forelimb, hind limbs, tail, Camptosaurus full body, channel separation and artifact scan",
+        "reviewBatch": "2026-08-31-realistic-hunting-interaction-tests-v1",
+        "reviewedAt": "2026-08-31T16:49:00.000Z"
       }
     },
     "marshosaurus-bicentesimus": {
@@ -5172,6 +5181,28 @@
         "reviewMethod": "Original-size full-frame inspection against both identity checklists plus the Hell Creek exact-taxon contact evidence; non-contact composition, full tails, visible feet, and representative-promotion prohibition were checked",
         "reviewBatch": "2026-08-02-lv1-portrait-ecology-batch-1",
         "reviewedAt": "2026-08-02T08:24:18.961Z"
+      },
+      "8": {
+        "status": "approved",
+        "source": "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-channel-stalk-interaction-imagegen-v1.png",
+        "role": "interaction",
+        "subrole": "gallery-only non-contact stalking-tension test",
+        "reason": "A full Tyrannosaurus with tiny two-finger arms and a full Edmontosaurus remain separated by shallow water; the frame contains no contact, bite, injury or outcome.",
+        "reviewMethod": "Original-size T. rex forelimb, limb, tail, Edmontosaurus body, water-separation, non-contact, crop, text and watermark audit",
+        "reviewBatch": "2026-08-31-realistic-hunting-interaction-tests-v1",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "Stalking is narrative tension only; exact encounter, behavior, result, soft tissues and colors are illustrative and not representative-eligible."
+      },
+      "9": {
+        "status": "approved",
+        "source": "assets/dinosaurs/tyrannosaurus-rex-triceratops-drycreek-standoff-interaction-imagegen-v1.png",
+        "role": "interaction",
+        "subrole": "gallery-only non-contact defense-tension test",
+        "reason": "A two-finger Tyrannosaurus and a four-limbed three-horned Triceratops stay many body lengths apart across a dry creek with no contact or injury.",
+        "reviewMethod": "Original-size T. rex forelimb, tail, Triceratops horn-frill-limb, separation, non-contact, crop, text and watermark audit",
+        "reviewBatch": "2026-08-31-realistic-hunting-interaction-tests-v1",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "Defensive posture is a visual test only; exact encounter, action, outcome, soft tissues and colors are illustrative and not representative-eligible."
       }
     },
     "spinosaurus-aegyptiacus": {
@@ -6646,6 +6677,17 @@
         "reviewMethod": "Original-size full-frame inspection against both identity checklists plus the AMNH Fighting Dinosaurs record; full silhouettes, spatial separation, non-contact behavior, tail continuity, and representative-promotion prohibition were checked",
         "reviewBatch": "2026-08-02-lv1-portrait-ecology-batch-1",
         "reviewedAt": "2026-08-02T08:24:18.961Z"
+      },
+      "8": {
+        "status": "approved",
+        "source": "assets/dinosaurs/velociraptor-mongoliensis-protoceratops-noncontact-leap-interaction-imagegen-v1.png",
+        "role": "interaction",
+        "subrole": "gallery-only non-contact leap-tension test",
+        "reason": "One feathered Velociraptor shows two forelimbs, two hind limbs, raised sickle-claw cues and one tail before contact with one four-limbed small-frilled Protoceratops; open space remains between them.",
+        "reviewMethod": "Original-size raptor feather, limb, raised-second-toe, tail, Protoceratops limb-frill, separation, non-contact, crop, text and watermark audit",
+        "reviewBatch": "2026-08-31-realistic-hunting-interaction-tests-v1",
+        "reviewedAt": "2026-08-31",
+        "claimBoundary": "The leap stops before contact and is not a reconstruction of a particular fossil fight; behavior, outcome, fine digits, plumage and color are illustrative and not representative-eligible."
       }
     },
     "triceratops-horridus": {

@@ -2600,6 +2600,14 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "morrison-carnegie-braided-channel",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/allosaurus-fragilis-camptosaurus-sandbar-watch-interaction-imagegen-v1.png",
+      "gallerySlot": 8,
+      "galleryRole": "realistic-hunting-test",
+      "phenotype": "canonical-a",
+      "habitatKey": "morrison-braided-channel-watch-test",
+      "expectedKind": "anatomy review"
     }
   ],
   "marshosaurus-bicentesimus": [
@@ -4812,6 +4820,26 @@ window.gallerySlotAssignments = {
       "phenotype": "canonical-a",
       "habitatKey": "hell-creek-misty-wet-meadow",
       "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/tyrannosaurus-rex-edmontosaurus-channel-stalk-interaction-imagegen-v1.png",
+      "gallerySlot": 8,
+      "galleryRole": "realistic-hunting-test",
+      "gallerySubrole": "gallery-only non-contact stalking-tension test",
+      "claimBoundary": "Stalking is narrative tension only; exact encounter, behavior, result, soft tissues and colors are illustrative and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "hell-creek-channel-stalk-test",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/tyrannosaurus-rex-triceratops-drycreek-standoff-interaction-imagegen-v1.png",
+      "gallerySlot": 9,
+      "galleryRole": "defense-tension-test",
+      "gallerySubrole": "gallery-only non-contact defense-tension test",
+      "claimBoundary": "Defensive posture is a visual test only; exact encounter, action, outcome, soft tissues and colors are illustrative and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "hell-creek-drycreek-defense-test",
+      "expectedKind": "anatomy review"
     }
   ],
   "yutyrannus-huali": [
@@ -6293,6 +6321,16 @@ window.gallerySlotAssignments = {
       "galleryRole": "alternate-habitat-behavior",
       "phenotype": "canonical-a",
       "habitatKey": "djadokhta-dust-front",
+      "expectedKind": "anatomy review"
+    },
+    {
+      "source": "assets/dinosaurs/velociraptor-mongoliensis-protoceratops-noncontact-leap-interaction-imagegen-v1.png",
+      "gallerySlot": 8,
+      "galleryRole": "realistic-hunting-test",
+      "gallerySubrole": "gallery-only non-contact leap-tension test",
+      "claimBoundary": "The leap stops before contact and is not a reconstruction of a particular fossil fight; behavior, outcome, fine digits, plumage and color are illustrative and not representative-eligible.",
+      "phenotype": "canonical-a",
+      "habitatKey": "djadokhta-protoceratops-context-test",
       "expectedKind": "anatomy review"
     }
   ],
