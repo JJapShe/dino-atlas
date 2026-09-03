@@ -40,6 +40,7 @@ const appSource = read("app.js");
 const policySource = read("access-policy.js");
 const publicHtml = read("index.html");
 const adminHtml = read("admin.html");
+const styles = read("styles.css");
 const workflow = read(".github/workflows/deploy-pages.yml");
 
 const dinosaurs = vm.runInNewContext(`(${extractArrayLiteral(appSource, "dinosaurs")})`, Object.create(null));
@@ -49,7 +50,7 @@ const policy = policyContext.globalThis.dinoAtlasAccessPolicy;
 
 assert.ok(policy, "access policy was not exported");
 assert.equal(policy.schemaVersion, "dino-atlas-access-v1");
-assert.equal(policy.defaultTier, "free");
+assert.equal(policy.defaultTier, "subscriber", "public atlas must open with the full catalog enabled");
 assert.equal(policy.freeTaxonIds.length, 30, "free catalog must remain an intentional 30-taxon set");
 assert.equal(new Set(policy.freeTaxonIds).size, policy.freeTaxonIds.length, "free IDs must be unique");
 
@@ -58,7 +59,14 @@ const missingFreeIds = policy.freeTaxonIds.filter((id) => !knownIds.has(id));
 assert.equal(missingFreeIds.length, 0, `free IDs missing from dinosaurs: ${missingFreeIds.join(", ")}`);
 
 assert.match(publicHtml, /data-app-mode="public"/);
+assert.match(publicHtml, /data-access-tier="subscriber"/);
+assert.match(publicHtml, /data-access-scope="all"/);
 assert.doesNotMatch(publicHtml, /id="reviewView"|id="assetReviewView"|data-view="review"|data-view="assetReview"/);
+assert.match(
+  styles,
+  /body\[data-access-tier="subscriber"\]\s+\[data-access-scope-controls\]\s*\{[\s\S]*?display:\s*none;/,
+  "free/full scope switch must remain hidden while the full catalog is the default",
+);
 assert.match(adminHtml, /data-app-mode="admin"/);
 assert.match(adminHtml, /id="reviewView"/);
 assert.match(adminHtml, /id="assetReviewView"/);

@@ -34,7 +34,7 @@
 
   global.dinoAtlasAccessPolicy = Object.freeze({
     schemaVersion: "dino-atlas-access-v1",
-    defaultTier: "free",
+    defaultTier: "subscriber",
     freeTaxonIds: Object.freeze(freeTaxonIds),
     tiers: Object.freeze({
       free: Object.freeze({

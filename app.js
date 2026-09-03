@@ -5900,7 +5900,7 @@ const appLocationParams = new URLSearchParams(window.location.search);
 const isLocalAppHost = ["localhost", "127.0.0.1"].includes(window.location.hostname);
 const isAdminMode = document.body.dataset.appMode === "admin";
 const accessPolicy = globalThis.dinoAtlasAccessPolicy || {
-  defaultTier: "free",
+  defaultTier: "subscriber",
   freeTaxonIds: [],
   tiers: {
     free: { label: "무료 탐험", catalogScope: "free" },
@@ -28793,12 +28793,12 @@ function renderAccessControls() {
   const tierButton = $(".access-tier-button");
   if (productModeLabel) {
     productModeLabel.textContent = subscriber
-      ? "구독 전체판"
+      ? "전체 도감"
       : state.accessScope === "all"
         ? "전체 도감 미리보기"
         : "무료 탐험판";
   }
-  if (tierBadge) tierBadge.textContent = subscriber ? "전체 도감 이용 중" : "무료 탐험";
+  if (tierBadge) tierBadge.textContent = subscriber ? "모든 생물 열림" : "무료 탐험";
   if (tierNote) {
     tierNote.textContent = subscriber
       ? `${fullCount}종 모두 열림`

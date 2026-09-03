@@ -892,6 +892,10 @@ body[data-active-view="motion"] .metric-row {
   min-width: 154px;
 }
 
+body[data-access-tier="subscriber"] [data-access-scope-controls] {
+  display: none;
+}
+
 .access-scope-controls button {
   display: flex;
   min-width: 0;
