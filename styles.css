@@ -457,6 +457,14 @@ h3 {
   padding: 16px;
 }
 
+.mobile-classification-filter {
+  display: none;
+}
+
+.mobile-era-filter {
+  display: none;
+}
+
 .panel-heading,
 .catalog-toolbar,
 .topbar,
@@ -6043,7 +6051,131 @@ body.subscription-open {
 
 @media (max-width: 520px) {
   body[data-active-view="atlas"] .map-panel.mode-timeline .map-inspector {
-    flex-basis: clamp(176px, 34dvh, 270px);
+    flex-basis: clamp(220px, 40dvh, 320px);
     padding: 12px;
+  }
+}
+
+/* Keep the primary navigation consistent with the other public views on desktop. */
+@media (min-width: 1101px) {
+  body[data-active-view="atlas"] .app-shell,
+  body[data-active-view="atlas"] .app-shell.atlas-sidebar-expanded {
+    --sidebar-width: 248px;
+  }
+
+  body[data-active-view="atlas"] .sidebar,
+  body[data-active-view="atlas"] .app-shell.atlas-sidebar-expanded .sidebar {
+    gap: 18px;
+    padding: 18px;
+  }
+
+  body[data-active-view="atlas"] .brand,
+  body[data-active-view="atlas"] .app-shell.atlas-sidebar-expanded .brand {
+    justify-content: flex-start;
+  }
+
+  body[data-active-view="atlas"] .brand-copy,
+  body[data-active-view="atlas"] .app-shell.atlas-sidebar-expanded .brand-copy {
+    display: block;
+  }
+
+  body[data-active-view="atlas"] .sidebar-panel,
+  body[data-active-view="atlas"] .app-shell.atlas-sidebar-expanded .sidebar-panel {
+    display: grid;
+  }
+
+  body[data-active-view="atlas"] .nav-tab,
+  body[data-active-view="atlas"] .app-shell.atlas-sidebar-expanded .nav-tab {
+    min-height: 40px;
+    justify-content: flex-start;
+    padding: 0 14px;
+    font-size: inherit;
+    line-height: normal;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  body[data-active-view="atlas"] .sidebar-drawer-close,
+  body[data-active-view="atlas"] .app-shell.atlas-sidebar-expanded .sidebar-drawer-close {
+    display: none;
+  }
+}
+
+@media (min-width: 1500px) {
+  body[data-active-view="atlas"] .app-shell,
+  body[data-active-view="atlas"] .app-shell.atlas-sidebar-expanded {
+    --sidebar-width: 268px;
+  }
+}
+
+/* Mobile: move classification into the filter drawer and reclaim vertical space. */
+@media (max-width: 720px) {
+  body[data-active-view="atlas"] .atlas-classification-strip {
+    display: none;
+  }
+
+  body[data-active-view="atlas"] .mobile-classification-filter {
+    display: grid;
+    gap: 8px;
+  }
+
+  body[data-active-view="atlas"] .mobile-era-filter {
+    display: grid;
+    gap: 8px;
+  }
+
+  body[data-active-view="atlas"] .map-toolbar > #mapEraControls {
+    display: none;
+  }
+
+  body[data-active-view="atlas"] .sidebar-classification-strip {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7px;
+    overflow: visible;
+    padding: 0;
+  }
+
+  body[data-active-view="atlas"] .sidebar-classification-strip button {
+    width: 100%;
+    min-height: 38px;
+    justify-content: space-between;
+    padding-inline: 9px;
+  }
+
+  body[data-active-view="atlas"] .sidebar-era-controls {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7px;
+  }
+
+  body[data-active-view="atlas"] .sidebar-era-controls button {
+    width: 100%;
+    min-height: 38px;
+  }
+
+  body[data-active-view="atlas"] .map-controls #toggleAtlasSidebar {
+    width: auto;
+    min-width: 94px;
+    gap: 6px;
+    padding-inline: 10px;
+  }
+
+  body[data-active-view="atlas"] #toggleAtlasSidebar .map-control-label {
+    display: inline;
+  }
+
+  body[data-active-view="atlas"] .map-panel.mode-timeline .inspector-header {
+    grid-template-columns: minmax(110px, 42%) minmax(0, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  body[data-active-view="atlas"] .map-panel.mode-timeline .inspector-header .dummy-image {
+    min-height: 110px;
+  }
+
+  body[data-active-view="atlas"] .nav-tabs {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }

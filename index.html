@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dino Atlas · 생명 탐험 지도</title>
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="./styles.css?v=20260904-mobile-fixed-detail-v1" />
+    <link rel="stylesheet" href="./styles.css?v=20260904-unified-nav-compact-filters-v2" />
   </head>
   <body data-app-mode="public" data-access-tier="subscriber" data-access-scope="all" data-active-view="atlas" data-atlas-realm="mesozoic">
     <div class="app-shell">
@@ -76,6 +76,12 @@
               <button data-level="4" type="button" aria-label="LV4 연구자">LV4</button>
             </div>
             <p class="level-filter-help" id="levelFilterHelp">LV1 스타 · LV2 도감 단골 · LV3 탐험가 · LV4 연구자</p>
+          </div>
+          <div class="filter-group mobile-classification-filter" id="mobileClassificationFilter">
+            <span class="field-label">생물 분류</span>
+          </div>
+          <div class="filter-group mobile-era-filter" id="mobileEraFilter">
+            <span class="field-label">시기</span>
           </div>
         </section>
       </aside>
@@ -251,7 +257,7 @@
                 </button>
               </div>
               <div class="map-controls" aria-label="Map controls">
-                <button id="toggleAtlasSidebar" class="icon-button map-control-with-label" type="button" title="탐색 패널 열기" aria-label="탐색 패널 열기" aria-expanded="false" aria-controls="primarySidebar"><span class="button-icon icon-menu" aria-hidden="true"></span><span class="map-control-label">탐색</span></button>
+                <button id="toggleAtlasSidebar" class="icon-button map-control-with-label" type="button" title="시기·분류와 필터 열기" aria-label="시기·분류와 필터 열기" aria-expanded="false" aria-controls="primarySidebar"><span class="button-icon icon-menu" aria-hidden="true"></span><span class="map-control-label">시기·분류</span></button>
                 <button id="zoomOut" class="icon-button" type="button" title="축소" aria-label="축소"><span class="button-icon icon-minus" aria-hidden="true"></span></button>
                 <span id="zoomLevel">100%</span>
                 <button id="zoomIn" class="icon-button" type="button" title="확대" aria-label="확대"><span class="button-icon icon-plus" aria-hidden="true"></span></button>
@@ -548,7 +554,7 @@
   <script src="./motion-m1-samples.js?v=20260807-subject-motion-policy-v1"></script>
   <script src="./motion-m2-samples.js?v=20260807-subject-motion-policy-v1"></script>
   <script src="./motion-m2-i2v-samples.js?v=20260807-giganotosaurus-subject-motion-v1"></script>
-  <script src="./app.js?v=20260904-mobile-fixed-detail-v1"></script>
+  <script src="./app.js?v=20260904-unified-nav-compact-filters-v2"></script>
     <script src="./atlas-layout.js?v=20260731-resizable-inspector-v1"></script>
   </body>
 </html>

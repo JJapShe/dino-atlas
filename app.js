@@ -28734,6 +28734,31 @@ function renderClassificationTabs() {
   });
 }
 
+function setupMobileAtlasFilters() {
+  const classificationTarget = $("#mobileClassificationFilter");
+  const classificationSource = $(".atlas-classification-strip");
+  if (
+    classificationTarget &&
+    classificationSource &&
+    !classificationTarget.querySelector("[data-classification-tabs]")
+  ) {
+    const mobileTabs = classificationSource.cloneNode(true);
+    mobileTabs.className = "classification-strip sidebar-classification-strip";
+    mobileTabs.setAttribute("aria-label", "분류군별 생물 보기");
+    classificationTarget.append(mobileTabs);
+  }
+
+  const eraTarget = $("#mobileEraFilter");
+  const eraSource = $("#mapEraControls");
+  if (eraTarget && eraSource && !eraTarget.querySelector(".sidebar-era-controls")) {
+    const mobileEras = eraSource.cloneNode(true);
+    mobileEras.removeAttribute("id");
+    mobileEras.classList.add("sidebar-era-controls");
+    mobileEras.setAttribute("aria-label", "시기별 생물 보기");
+    eraTarget.append(mobileEras);
+  }
+}
+
 function centerActiveClassificationTab(strip, behavior = "smooth") {
   if (!strip) return;
   const button = strip.querySelector(`[data-classification="${state.classification}"]`);
@@ -30536,7 +30561,9 @@ function applyMapUiState() {
   const selectedName = getFilteredDinosaurs().length
     ? getSelectedDino()?.koreanName || "선택 생물"
     : "선택 생물";
-  const sidebarAction = state.map.sidebarExpanded ? "탐색 패널 접기" : "탐색 패널 열기";
+  const sidebarAction = state.map.sidebarExpanded
+    ? "시기·분류와 필터 접기"
+    : "시기·분류와 필터 열기";
   const inspectorAction = state.map.inspectorCollapsed ? "정보 열기" : "정보 접기";
   sidebarButton.setAttribute("aria-expanded", String(state.map.sidebarExpanded));
   sidebarButton.setAttribute("aria-label", sidebarAction);
@@ -36528,22 +36555,28 @@ function bindMapEvents() {
   $("#zoomIn").addEventListener("click", () => zoomMap(state.map.scale + 0.12));
   $("#focusMapSelection").addEventListener("click", () => focusSelectedMapNode());
   $("#resetMap").addEventListener("click", fitMapToViewport);
-  $("#mapEraControls").addEventListener("click", (event) => {
-    const button = event.target.closest("[data-map-scope]");
-    if (!button) return;
-    if (state.map.mode === "timeline") {
-      state.map.scope = button.dataset.mapScope;
-      renderTimelineBrowse();
-      renderDetail();
-      renderMapScopeControls();
-      $("#timelineBrowse").scrollTop = 0;
-      return;
-    }
-    if (button.dataset.mapScope === "all") {
-      fitMapToViewport();
-      return;
-    }
-    fitMapScope(button.dataset.mapScope);
+  $$(".map-era-controls").forEach((controls) => {
+    controls.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-map-scope]");
+      if (!button) return;
+      if (state.map.mode === "timeline") {
+        state.map.scope = button.dataset.mapScope;
+        renderTimelineBrowse();
+        renderDetail();
+        renderMapScopeControls();
+        $("#timelineBrowse").scrollTop = 0;
+      } else if (button.dataset.mapScope === "all") {
+        fitMapToViewport();
+      } else {
+        fitMapScope(button.dataset.mapScope);
+      }
+      if (
+        controls.classList.contains("sidebar-era-controls") &&
+        window.matchMedia("(max-width: 720px)").matches
+      ) {
+        setAtlasSidebarExpanded(false);
+      }
+    });
   });
   $("#toggleMapInspector").addEventListener("click", () =>
     setMapInspectorCollapsed(!state.map.inspectorCollapsed, { userInitiated: true }),
@@ -36940,6 +36973,12 @@ function bindEvents() {
       renderAll();
       refitAtlasAfterFilter();
       requestAnimationFrame(() => centerActiveClassificationTab(tabs));
+      if (
+        tabs.classList.contains("sidebar-classification-strip") &&
+        window.matchMedia("(max-width: 720px)").matches
+      ) {
+        setAtlasSidebarExpanded(false);
+      }
     });
   });
 
@@ -36983,6 +37022,7 @@ if (initialTaxon && matchesAccessScope(initialTaxon)) {
   state.map.scope = initialTaxon.era || "all";
 }
 
+setupMobileAtlasFilters();
 bindEvents();
 setView(state.view);
 if (!isAdminMode) applyMapUiState();
