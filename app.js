@@ -30954,7 +30954,8 @@ function setAtlasSidebarExpanded(expanded) {
 function syncResponsiveMapInspector() {
   const panel = $("#atlasView .map-panel");
   if (!panel || state.map.expanded || state.map.inspectorUserSet) return;
-  const shouldCollapse = window.matchMedia("(max-width: 1100px)").matches;
+  const shouldCollapse =
+    state.map.mode === "tree" && window.matchMedia("(max-width: 1100px)").matches;
   if (state.map.inspectorCollapsed === shouldCollapse) return;
   state.map.inspectorCollapsed = shouldCollapse;
   applyMapUiState();
